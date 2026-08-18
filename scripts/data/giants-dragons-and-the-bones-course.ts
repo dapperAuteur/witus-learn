@@ -46,7 +46,7 @@ They are fossils. Mostly the bones and teeth of Pleistocene mammals: rhinoceros,
 
 ## Start with what that means
 
-This course is going to spend a lot of time on Europeans looking at large bones and guessing. Before any of that, notice that there was an established, commercial, geographically organised trade in fossil material running for centuries in China, with a name for the substance, a place in the pharmacopoeia, a supply chain, and people who knew which hillsides produced it.
+This course is going to spend a lot of time on Europeans looking at large bones and guessing. Before any of that, notice that there was an established, commercial, geographically organized trade in fossil material running for centuries in China, with a name for the substance, a place in the pharmacopoeia, a supply chain, and people who knew which hillsides produced it.
 
 Dragon bone appears in the Chinese materia medica tradition from early on, and Li Shizhen's *Bencao gangmu* of 1596 discusses it at length, including where it is found and how to tell good material from bad. That is not a superstition about dragons. That is a monograph entry with sourcing notes.
 
@@ -64,13 +64,13 @@ Here is where this course starts earning its keep, because this material is repe
 
 **Documented.** Zhoukoudian, southwest of Beijing, includes a hill locally called 龍骨山, Longgushan, Dragon Bone Hill. The name is local and predates the excavations. Johan Gunnar Andersson, a Swedish geologist working in China as a mining adviser, became interested in the fossil sites there, and systematic excavation from 1921 onward eventually produced the material named *Sinanthropus pekinensis* and now classified as *Homo erectus*.
 
-**Not documented, or at least not the way it is usually told.** The clean chain, "a scientist bought a human fossil in a Chinese pharmacy and it led him straight to Peking Man," compresses roughly twenty years, several people, two countries and a great deal of ordinary geology into a single causal arrow. Schlosser's famous tooth was not a Peking Man tooth; it is generally taken to have been an ape's. Andersson was in China for mining, not on Schlosser's errand. The interest in Chinese fossils that Schlosser's monograph stimulated is real and traceable; a direct line from that specific tooth to that specific hill is a story, and a good one, and it should be labelled as one.
+**Not documented, or at least not the way it is usually told.** The clean chain, "a scientist bought a human fossil in a Chinese pharmacy and it led him straight to Peking Man," compresses roughly twenty years, several people, two countries and a great deal of ordinary geology into a single causal arrow. Schlosser's famous tooth was not a Peking Man tooth; it is generally taken to have been an ape's. Andersson was in China for mining, not on Schlosser's errand. The interest in Chinese fossils that Schlosser's monograph stimulated is real and traceable; a direct line from that specific tooth to that specific hill is a story, and a good one, and it should be labeled as one.
 
 ## Why open the course here
 
 Two reasons.
 
-First, because a course about what people did with bones should not begin with Europeans. The knowledge was there, organised, commercial and old, and the European story joins it late.
+First, because a course about what people did with bones should not begin with Europeans. The knowledge was there, organized, commercial and old, and the European story joins it late.
 
 Second, because you have just watched this course do the thing it is going to ask you to do for eighteen lessons: separate what is on the record from what has accreted onto it, and say which is which out loud rather than smoothing the seam.
 
@@ -176,7 +176,7 @@ What is missing from it is the connecting evidence. Specifically:
 
 **No ancient source makes the link.** No Greek or Roman writer says, or implies, that these skulls prompted the story. The connection is entirely a modern reconstruction of what ancient people must have thought.
 
-**The literary cyclops is not skull-shaped.** Polyphemus in the *Odyssey* is a herdsman. He keeps sheep, milks them, makes cheese, lives in a cave, has neighbours and a father. Hesiod's Cyclopes are smiths who forge Zeus's thunderbolt. These are characters in a social world, not an anatomical inference; the single eye is one feature among many.
+**The literary cyclops is not skull-shaped.** Polyphemus in the *Odyssey* is a herdsman. He keeps sheep, milks them, makes cheese, lives in a cave, has neighbors and a father. Hesiod's Cyclopes are smiths who forge Zeus's thunderbolt. These are characters in a social world, not an anatomical inference; the single eye is one feature among many.
 
 **The direction of the argument cannot be tested.** If someone in Bronze Age Sicily did look at a skull and think "giant," that fact left no trace we can find. The hypothesis makes no prediction that would fail.
 
@@ -194,7 +194,7 @@ That is a perfectly respectable thing to hold. It is not the same thing as a fac
 
 ## Why this lesson is here
 
-Because the next lesson is a much bigger version of exactly this, with a real published fight attached, and it will be easier to follow if you have already practised on a small one.
+Because the next lesson is a much bigger version of exactly this, with a real published fight attached, and it will be easier to follow if you have already practiced on a small one.
 
 :::reveal What is the large central opening in an elephant skull, and why does it matter here? ||| It is the nasal cavity that houses the base of the trunk, not an eye socket. It matters because it is the observable fact the cyclops suggestion is built on, and it is genuinely conspicuous on a weathered skull.
 
@@ -544,13 +544,13 @@ Rewrite it so that a reader who reads only your version comes away believing exa
       section: "Section 2 · Reasoning well from the premises you have",
       body: `In 1705, on the east bank of the Hudson River at Claverack in the colony of New York, a large tooth came out of the ground. Accounts of the time put its weight at close to five pounds. It passed through a few hands locally, reportedly sold at one point for a small measure of rum, and reached Albany.
 
-There it came to the attention of Edward Hyde, Viscount Cornbury, the colonial governor. Cornbury sent it to London, labelled as the tooth of a giant.
+There it came to the attention of Edward Hyde, Viscount Cornbury, the colonial governor. Cornbury sent it to London, labeled as the tooth of a giant.
 
 ## Why a governor wrote "giant" on a box
 
 Not because he was foolish. Because it was the best available identification, and because a widely trusted historical source said giants had existed.
 
-Genesis 6:4 states that there were giants in the earth in those days. For an educated English or colonial reader in 1705, scripture was not a separate compartment labelled faith. It was, among other things, the oldest and most complete historical record of the early world available in Europe, corroborated in places by classical authors, and treated as evidence in the ordinary way. If your best historical source reports very large humans before the Flood, and a tooth turns up that is far too large for any human you have seen, you have a hypothesis with independent textual support.
+Genesis 6:4 states that there were giants in the earth in those days. For an educated English or colonial reader in 1705, scripture was not a separate compartment labeled faith. It was, among other things, the oldest and most complete historical record of the early world available in Europe, corroborated in places by classical authors, and treated as evidence in the ordinary way. If your best historical source reports very large humans before the Flood, and a tooth turns up that is far too large for any human you have seen, you have a hypothesis with independent textual support.
 
 ## Cotton Mather takes it up
 
@@ -633,7 +633,7 @@ Every one of those is an institution as much as an idea: a museum, a journal, a 
 
 Mather is also the reason that a great many Bostonians survived the smallpox epidemic of 1721.
 
-He had read, in the Royal Society's *Philosophical Transactions*, accounts of inoculation practised in the Ottoman world. He had also been told about the practice, in detail, by Onesimus, a West African man he enslaved, who described having been inoculated in Africa. Mather advocated inoculation publicly. The physicians of Boston were, with one exception, against it. Zabdiel Boylston carried it out, and the mortality among those inoculated was dramatically lower than among the uninoculated population.
+He had read, in the Royal Society's *Philosophical Transactions*, accounts of inoculation practiced in the Ottoman world. He had also been told about the practice, in detail, by Onesimus, a West African man he enslaved, who described having been inoculated in Africa. Mather advocated inoculation publicly. The physicians of Boston were, with one exception, against it. Zabdiel Boylston carried it out, and the mortality among those inoculated was dramatically lower than among the uninoculated population.
 
 Sit with the arrangement of that. A minister accepted West African medical testimony as evidence, against the near-unanimous view of the credentialled physicians of his city, and was right. He also held that man in slavery, which is not a footnote and does not cancel out, and the two facts belong in the same paragraph because they were true of the same person at the same time.
 
@@ -773,7 +773,7 @@ A very large American animal was useful to him. The next lesson is about why.
 
 Two things that sit awkwardly together, which is why they are worth holding.
 
-**He updated in public, in print, at cost.** A sitting Vice President published a paper and attached a note saying his central identification was probably wrong. That is the behaviour the whole enterprise runs on, and it is rarer than it should be.
+**He updated in public, in print, at cost.** A sitting Vice President published a paper and attached a note saying his central identification was probably wrong. That is the behavior the whole enterprise runs on, and it is rarer than it should be.
 
 **He was not a neutral party.** He wanted the answer to come out a particular way, for reasons that had nothing to do with the bones. Both are true, and the second does not cancel the first. What matters is that the evidence reached him in a form he could not argue with, and that he had built a habit of saying so.
 
@@ -803,7 +803,7 @@ Cornelius de Pauw extended it to people, arguing in the late 1760s that Indigeno
 
 ## Take the argument seriously first
 
-It was not a slur dressed up as science, at least not at the start. Buffon had a genuine research programme behind it: the idea that environment shapes organisms, that a species is a thing that can vary with its conditions, and that a continent has a natural history of its own. Those are productive ideas, and the last of them survives.
+It was not a slur dressed up as science, at least not at the start. Buffon had a genuine research program behind it: the idea that environment shapes organisms, that a species is a thing that can vary with its conditions, and that a continent has a natural history of its own. Those are productive ideas, and the last of them survives.
 
 He also had data of a kind: specimen weights and measurements from collections, and reports from correspondents. His American sample was thin, drawn heavily from a small number of animals that had actually crossed the Atlantic, but a thin sample is a defect in the evidence rather than a defect in the reasoning.
 
@@ -851,7 +851,7 @@ That is not a scandal about the past. It is the ordinary condition of evidence, 
           prompt:
             "What did Jefferson do to his own Megalonyx paper before it was published, and why does it matter?",
           answer:
-            "He added a postscript saying the animal was probably of the sloth kind after seeing an account of Cuvier's Megatherium. It matters because updating in public, in print, at cost, is the behaviour the whole enterprise runs on.",
+            "He added a postscript saying the animal was probably of the sloth kind after seeing an account of Cuvier's Megatherium. It matters because updating in public, in print, at cost, is the behavior the whole enterprise runs on.",
         },
         {
           prompt:
@@ -1140,7 +1140,7 @@ The accurate statement is narrower and more useful: **"discovered" describes an 
 When you meet the word, ask three questions in order.
 
 1. Discovered by whom, and to whom was it previously unknown?
-2. What system is doing the recognising: a journal, a museum, a court, a market?
+2. What system is doing the recognizing: a journal, a museum, a court, a market?
 3. What did that system require of the claimant, and who could meet those requirements?
 
 The third one is the sharpest, because it turns a question about individuals into a question about mechanism, and mechanisms are checkable.
@@ -1242,7 +1242,7 @@ The blue markers cluster in the eighteenth and nineteenth centuries, in Europe a
             color: "#1d4ed8",
             title: "American Philosophical Society, Philadelphia",
             description:
-              "OUT OF THE GROUND: nothing. This is where the claws were read. SAID HERE: Jefferson's memoir on the Great Claw, delivered in March 1797, with a postscript added before publication conceding the animal was probably sloth-like. NOW UNDERSTOOD AS: the room where an American statesman corrected himself in print, which is the behaviour the whole enterprise runs on.",
+              "OUT OF THE GROUND: nothing. This is where the claws were read. SAID HERE: Jefferson's memoir on the Great Claw, delivered in March 1797, with a postscript added before publication conceding the animal was probably sloth-like. NOW UNDERSTOOD AS: the room where an American statesman corrected himself in print, which is the behavior the whole enterprise runs on.",
           },
           {
             id: "dakota-badlands",
@@ -1272,7 +1272,7 @@ The blue markers cluster in the eighteenth and nineteenth centuries, in Europe a
             color: "#15803d",
             title: "Anyang, the Yinxu site",
             description:
-              "OUT OF THE GROUND: inscribed ox scapulae and turtle plastrons, sold in the same trade as fossil dragon bone. SAID AT THE TIME: medicine, until scholars recognised the marks on some pieces as writing. NOW UNDERSTOOD AS: Shang dynasty divination records, the oldest substantial body of Chinese writing. The traditional account of the 1899 recognition is disputed in its details, and the date is plotted for that traditional account rather than for a settled event.",
+              "OUT OF THE GROUND: inscribed ox scapulae and turtle plastrons, sold in the same trade as fossil dragon bone. SAID AT THE TIME: medicine, until scholars recognized the marks on some pieces as writing. NOW UNDERSTOOD AS: Shang dynasty divination records, the oldest substantial body of Chinese writing. The traditional account of the 1899 recognition is disputed in its details, and the date is plotted for that traditional account rather than for a settled event.",
           },
           {
             id: "flaming-cliffs",
@@ -1557,7 +1557,7 @@ The crowds kept coming anyway. That gap, between a question being settled and a 
           prompt:
             "Ask the three questions this course gives for any use of the word \"discovery.\"",
           answer:
-            "Discovered by whom, and previously unknown to whom? What system is doing the recognising: a journal, a museum, a court, a market? And what did that system require of the claimant, so who could meet those requirements?",
+            "Discovered by whom, and previously unknown to whom? What system is doing the recognizing: a journal, a museum, a court, a market? And what did that system require of the claimant, so who could meet those requirements?",
         },
         {
           prompt:
@@ -1761,7 +1761,7 @@ That is not because nothing happened. Lesson 11 said it and the map lesson said 
             options: [
               "George Hull had it carved from Iowa gypsum and buried on his cousin's farm",
               "A quarry crew abandoned an unfinished monument on the site during a strike",
-              "A travelling showman lost it from a wagon and the crate was buried by a flood",
+              "A traveling showman lost it from a wagon and the crate was buried by a flood",
               "A local sculptor carved it as a memorial and it was buried when the church moved",
             ],
             correctIndex: 0,
@@ -1952,7 +1952,7 @@ Six things. Each one is a question this course has taught you to ask.
 
 ## What to submit
 
-Around 700 to 1000 words, organised under those six headings, plus an APA 7 reference list.
+Around 700 to 1000 words, organized under those six headings, plus an APA 7 reference list.
 
 Cite the primary description as a publication, not as the website you read about it on, though you may cite the website separately for what it gave you. Where you used a museum or survey page, cite that page.
 

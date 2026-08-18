@@ -48,7 +48,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
   title: "Baltimore: The Whole Chain",
   description:
-    "A cited, high-school-and-up site course on one American city that holds every link of the housing-segregation chain within its own limits: racial zoning, restrictive covenants, redlining, and a highway driven through the middle of a Black neighbourhood and then abandoned. Baltimore is uniquely useful because you do not have to leave town to see the whole sequence. Its two prerequisites, The Green Book: How to Read a Route and Indiana Avenue: A District and What Replaced It, teach the method and the idea of an instrument, a specific legal power exercised by a specific body under a specific statute leaving a specific document. This course lines up four such instruments as one lineage aimed at one end, and then does the harder thing: it tests whether the sequence is really as clean as it sounds. It is not. The ordinance was a chain of four laws, not one. The covenants ran alongside the zoning rather than after it. The redlining map's direct causal role is disputed by the historians who have read the lending records. Teaching that untidiness is the point, because a chain you can check is worth more than a story you cannot. You will read the ordinance, the covenant language, the map and the highway plan, walk the unfinished trench as an unusually legible absence, find the plan being written for that ground right now, look up a real Baltimore parcel in the state's own records, and write a piece of grounded nonfiction about one block. A 360 tour of the corridor is planned and will be added to the Now section when it is captured.",
+    "A cited, high-school-and-up site course on one American city that holds every link of the housing-segregation chain within its own limits: racial zoning, restrictive covenants, redlining, and a highway driven through the middle of a Black neighborhood and then abandoned. Baltimore is uniquely useful because you do not have to leave town to see the whole sequence. Its two prerequisites, The Green Book: How to Read a Route and Indiana Avenue: A District and What Replaced It, teach the method and the idea of an instrument, a specific legal power exercised by a specific body under a specific statute leaving a specific document. This course lines up four such instruments as one lineage aimed at one end, and then does the harder thing: it tests whether the sequence is really as clean as it sounds. It is not. The ordinance was a chain of four laws, not one. The covenants ran alongside the zoning rather than after it. The redlining map's direct causal role is disputed by the historians who have read the lending records. Teaching that untidiness is the point, because a chain you can check is worth more than a story you cannot. You will read the ordinance, the covenant language, the map and the highway plan, walk the unfinished trench as an unusually legible absence, find the plan being written for that ground right now, look up a real Baltimore parcel in the state's own records, and write a piece of grounded nonfiction about one block. A 360 tour of the corridor is planned and will be added to the Now section when it is captured.",
   lessons: [
     // ═══════════════════════════════════════════════════════════════════════════════════════
     // SECTION 1 · Then  (beat 1: US and state/local history. who lived where, and why)
@@ -59,17 +59,17 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
       section: "Section 1 · Then",
       body: `**Start with the two prerequisites.** This course assumes you have finished *The Green Book: How to Read a Route*, which taught a method, and *Indiana Avenue: A District and What Replaced It*, which taught the six-beat template and one idea above all: an **instrument** is a specific legal power, exercised by a specific body, under a specific statute, leaving a specific document. Indiana Avenue traced five instruments in one corridor. **Baltimore is the course where you can watch four of them line up as a single chain, and never leave the city to do it.**
 
-**The place.** The historic centre of Black Baltimore is a cluster of west-side neighbourhoods usually grouped as **Old West Baltimore**: Upton, Harlem Park, Sandtown-Winchester, Druid Heights, Marble Hill, and the blocks around **Pennsylvania Avenue** and **Druid Hill Avenue**. It was, for the first half of the twentieth century, one of the largest and most established Black communities on the east coast, and a National Register historic district records it as such (Maryland Historical Trust, n.d.).
+**The place.** The historic center of Black Baltimore is a cluster of west-side neighborhoods usually grouped as **Old West Baltimore**: Upton, Harlem Park, Sandtown-Winchester, Druid Heights, Marble Hill, and the blocks around **Pennsylvania Avenue** and **Druid Hill Avenue**. It was, for the first half of the twentieth century, one of the largest and most established Black communities on the east coast, and a National Register historic district records it as such (Maryland Historical Trust, n.d.).
 
-**Why the community was concentrated there is the whole point of this course.** A district does not become overwhelmingly one race by accident. Black Baltimoreans were **confined** to specific blocks, first by custom, then by law, then by contract, then by the mortgage market, and the density and vitality of Old West Baltimore is the direct product of that confinement. The neighbourhood was crowded because its edges were held shut. **Hold that sentence. Everything in Section 3 is the machinery behind it.**
+**Why the community was concentrated there is the whole point of this course.** A district does not become overwhelmingly one race by accident. Black Baltimoreans were **confined** to specific blocks, first by custom, then by law, then by contract, then by the mortgage market, and the density and vitality of Old West Baltimore is the direct product of that confinement. The neighborhood was crowded because its edges were held shut. **Hold that sentence. Everything in Section 3 is the machinery behind it.**
 
 **Who lived there, precisely.** Two things were true at once, and a course that keeps only one is lying.
 1. **A confined community.** People who could not buy, rent, or borrow where they wished, packed into an ageing housing stock that the same city would later measure as substandard and use that measurement as a reason to clear it. You saw this circularity in the Indiana Avenue blight lesson. Baltimore built the circle earlier and more explicitly than almost anywhere.
 2. **A complete and accomplished society.** The same blocks produced **Thurgood Marshall**, who grew up on Division Street in Old West Baltimore before he argued *Brown v. Board of Education* and joined the Supreme Court; the composer and pianist **Eubie Blake**; and the singer **Billie Holiday**, who spent much of her childhood in Baltimore. The Black weekly the **Baltimore Afro-American**, founded in 1892 by **John H. Murphy Sr.**, grew into one of the most widely circulated Black newspapers in the country from offices in this part of the city (Maryland Center for History and Culture, n.d.).
 
-**The Druid Hill Avenue and McCulloh Street corridor** held the community's professional and civic elite, and it is where this course's first instrument was triggered. In the summer of 1910 a Black lawyer named **W. Ashbie Hawkins** bought a house at **1834 McCulloh Street** and arranged for his law partner **George W. F. McMechen**, a graduate of Yale Law School, to live in it. The block was white. **The white neighbours did not move; they organised, and they went to City Hall.** What they got is instrument one, and Section 3 reads the ordinance itself. For now, notice only this: the address that set off the nation's first residential segregation law was a Black professional's house on a good street. **The instruments in this course were aimed most sharply at Black success, not Black poverty.**
+**The Druid Hill Avenue and McCulloh Street corridor** held the community's professional and civic elite, and it is where this course's first instrument was triggered. In the summer of 1910 a Black lawyer named **W. Ashbie Hawkins** bought a house at **1834 McCulloh Street** and arranged for his law partner **George W. F. McMechen**, a graduate of Yale Law School, to live in it. The block was white. **The white neighbors did not move; they organized, and they went to City Hall.** What they got is instrument one, and Section 3 reads the ordinance itself. For now, notice only this: the address that set off the nation's first residential segregation law was a Black professional's house on a good street. **The instruments in this course were aimed most sharply at Black success, not Black poverty.**
 
-**A warning about tone, which is a research instruction and not a courtesy.** The people who built Old West Baltimore have living descendants, and their neighbourhood organisations are active right now. Do not write about this place as a vanished golden age. Write about what people built, name them where the record names them, and keep the vanishing for the parts you can document. **Every framing choice in this course is checkable against a source, and so should yours be.**
+**A warning about tone, which is a research instruction and not a courtesy.** The people who built Old West Baltimore have living descendants, and their neighborhood organizations are active right now. Do not write about this place as a vanished golden age. Write about what people built, name them where the record names them, and keep the vanishing for the parts you can document. **Every framing choice in this course is checkable against a source, and so should yours be.**
 
 ## Sources
 - Maryland Center for History and Culture. (n.d.). *Baltimore's pursuit of fair housing: A brief history*. https://www.mdhistory.org/baltimores-pursuit-of-fair-housing-a-brief-history/
@@ -84,7 +84,7 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
 
 **The street.** **Pennsylvania Avenue**, running northwest through Upton, was the commercial and entertainment spine of Black Baltimore, so central that people called it simply "The Avenue," the same nickname Indianapolis gave Indiana Avenue. In 2019 the state of Maryland designated the area around it as **Maryland's first Black Arts District** (Visit Baltimore, n.d.). That designation is a present-day civic act with a date and a sponsor, exactly the kind of public record the method course taught you to read.
 
-**Why a corridor like this existed is the same reason Indiana Avenue existed.** A segregated city refused Black customers at its downtown theatres, hotels and lunch counters, so Black Baltimore built its own, in a district where it could not be turned away. That is why the Green Book, the travel guide at the centre of your first course, listed businesses here: a Black traveller arriving in Baltimore needed to know which hotels and restaurants would take them, and The Avenue is where many of the answers were.
+**Why a corridor like this existed is the same reason Indiana Avenue existed.** A segregated city refused Black customers at its downtown theatres, hotels and lunch counters, so Black Baltimore built its own, in a district where it could not be turned away. That is why the Green Book, the travel guide at the center of your first course, listed businesses here: a Black traveler arriving in Baltimore needed to know which hotels and restaurants would take them, and The Avenue is where many of the answers were.
 
 **Three anchors on the street, each leaving a different kind of record.**
 
@@ -92,7 +92,7 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
 
 **The Arch Social Club, 2426 Pennsylvania Avenue.** Founded in 1905, it is described as one of the oldest continuously operating Black social clubs in the United States, and it is still there, still on The Avenue (Visit Baltimore, n.d.). **A surviving institution is a different kind of evidence than a monument**, and knowing which one you are looking at is the single most useful thing you can carry into the Now tour.
 
-**The Avenue's Black-owned lodging.** The corridor's Black-owned hotels are the businesses a travel guide most cared about, because lodging was the category the Green Book kept longest. This is the link back to your method course: **a Black traveller's Baltimore ran through these blocks because most of the rest of the city was closed to them.**
+**The Avenue's Black-owned lodging.** The corridor's Black-owned hotels are the businesses a travel guide most cared about, because lodging was the category the Green Book kept longest. This is the link back to your method course: **a Black traveler's Baltimore ran through these blocks because most of the rest of the city was closed to them.**
 
 **What this corridor does not prove, and the trap to avoid.** Naming the famous venues is not the same as reading the Green Book. If you want to make a Green Book claim about Baltimore, **read it out of a digitized edition and carry the city with the street**, exactly as the method course insisted when it caught you putting a French Lick hotel on Indianapolis's Indiana Avenue. Baltimore has more than one "Avenue," and Pennsylvania Avenue runs through several cities in the United States. **A listing is only located when you carry the city.** Do not assert a street number and a year from memory. Look it up.
 
@@ -103,7 +103,7 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
       recallContent: [
         {
           prompt: "What is Old West Baltimore, and why was the Black community concentrated there?",
-          answer: "A cluster of west-side neighbourhoods (Upton, Harlem Park, Sandtown-Winchester, Druid Heights, Marble Hill and the Pennsylvania and Druid Hill Avenue blocks) that formed the historic centre of Black Baltimore. It was concentrated because Black Baltimoreans were confined there by custom, law, contract and the mortgage market. The density is the product of the confinement.",
+          answer: "A cluster of west-side neighborhoods (Upton, Harlem Park, Sandtown-Winchester, Druid Heights, Marble Hill and the Pennsylvania and Druid Hill Avenue blocks) that formed the historic center of Black Baltimore. It was concentrated because Black Baltimoreans were confined there by custom, law, contract and the mortgage market. The density is the product of the confinement.",
         },
         {
           prompt: "Name three people who came out of Old West Baltimore.",
@@ -111,7 +111,7 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
         },
         {
           prompt: "What happened at 1834 McCulloh Street in the summer of 1910?",
-          answer: "The Black lawyer W. Ashbie Hawkins bought the house and had his law partner George W. F. McMechen, a Yale Law graduate, move into it on a white block. The white neighbours organised and pushed City Hall to pass a segregation ordinance. The trigger was a Black professional on a good street.",
+          answer: "The Black lawyer W. Ashbie Hawkins bought the house and had his law partner George W. F. McMechen, a Yale Law graduate, move into it on a white block. The white neighbors organized and pushed City Hall to pass a segregation ordinance. The trigger was a Black professional on a good street.",
         },
         {
           prompt: "Which two prerequisite courses does this one build on, and what does each teach?",
@@ -127,11 +127,11 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
 
 **The press.** The **Baltimore Afro-American**, founded in **1892** by **John H. Murphy Sr.**, a formerly enslaved man, grew into one of the most influential Black newspapers in the country and is still publishing today, one of the longest-running Black family-owned newspapers in the United States (Maryland Center for History and Culture, n.d.). **A newspaper is an archive.** When Section 5 sends you looking for what a community said about a decision at the time it was made, the Afro-American is the first place to look for Black Baltimore, the way the *Indianapolis Recorder* was for Indianapolis.
 
-**The professions and the fight.** Old West Baltimore was a base for the legal and civic campaign against segregation, not only a target of it. **W. Ashbie Hawkins**, the lawyer whose McCulloh Street purchase triggered the 1910 ordinance, spent years fighting the ordinances in court, and Section 3 shows one of those cases winning. The Baltimore branch of the **NAACP** became one of the most active in the country. **Credit the resistance as carefully as you document the instruments.** People here did not simply have things done to them. They organised, they litigated, and on the zoning ordinance they eventually won.
+**The professions and the fight.** Old West Baltimore was a base for the legal and civic campaign against segregation, not only a target of it. **W. Ashbie Hawkins**, the lawyer whose McCulloh Street purchase triggered the 1910 ordinance, spent years fighting the ordinances in court, and Section 3 shows one of those cases winning. The Baltimore branch of the **NAACP** became one of the most active in the country. **Credit the resistance as carefully as you document the instruments.** People here did not simply have things done to them. They organized, they litigated, and on the zoning ordinance they eventually won.
 
-**Health, worship and mutual aid.** Because white hospitals refused or segregated Black patients, Black Baltimore supported its own medical institutions and training for Black nurses and doctors. Because the neighbourhood was dense and church-centred, its large congregations on and around Druid Hill Avenue were civic institutions as much as religious ones, providing meeting halls, mutual-aid networks and the organising base for everything above. **The domestic and the institutional overlap here**, exactly as the Indiana Avenue typology lesson warned: an ordinary rowhouse could hold a doctor's office, a rooming operation run by a widow, or a meeting that planned a lawsuit.
+**Health, worship and mutual aid.** Because white hospitals refused or segregated Black patients, Black Baltimore supported its own medical institutions and training for Black nurses and doctors. Because the neighborhood was dense and church-centered, its large congregations on and around Druid Hill Avenue were civic institutions as much as religious ones, providing meeting halls, mutual-aid networks and the organizing base for everything above. **The domestic and the institutional overlap here**, exactly as the Indiana Avenue typology lesson warned: an ordinary rowhouse could hold a doctor's office, a rooming operation run by a widow, or a meeting that planned a lawsuit.
 
-**Why this lesson comes before Section 3, and not after.** It would be easy to build a course that is only a catalogue of instruments, a tour of harm. **That course would be both incomplete and inaccurate**, because it would miss half of what the record contains. The people confined to Old West Baltimore built a press that outlasted the ordinance, a legal campaign that beat the ordinance, and a cultural corridor that shaped American music. **When you reach the Write assignment, this is the material that keeps your piece from being ruin porn.** A block is not only what was taken from it. It is also what the people on it made.
+**Why this lesson comes before Section 3, and not after.** It would be easy to build a course that is only a catalog of instruments, a tour of harm. **That course would be both incomplete and inaccurate**, because it would miss half of what the record contains. The people confined to Old West Baltimore built a press that outlasted the ordinance, a legal campaign that beat the ordinance, and a cultural corridor that shaped American music. **When you reach the Write assignment, this is the material that keeps your piece from being ruin porn.** A block is not only what was taken from it. It is also what the people on it made.
 
 ## Sources
 - Maryland Center for History and Culture. (n.d.). *Baltimore's pursuit of fair housing: A brief history*. https://www.mdhistory.org/baltimores-pursuit-of-fair-housing-a-brief-history/
@@ -298,7 +298,7 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
               "Rosemont, Edmondson Village and Walbrook on the far west only",
             ],
             correctIndex: 1,
-            explanation: "These west-side neighbourhoods around Pennsylvania and Druid Hill Avenues formed the historic centre of Black Baltimore. Roland Park and Guilford are the covenant suburbs of Section 3.",
+            explanation: "These west-side neighborhoods around Pennsylvania and Druid Hill Avenues formed the historic center of Black Baltimore. Roland Park and Guilford are the covenant suburbs of Section 3.",
             sourceLessonSlug: "bc-neighbourhoods",
           },
           {
@@ -349,13 +349,13 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
       section: "Section 2 · Built",
       body: `Beat 2 of the site template asks: **why does it look like that?** In Baltimore the answer is the rowhouse, and reading the rowhouse tells you more about the community than any single monument.
 
-**The form.** Baltimore is, more than almost any American city, a city of **rowhouses**: long unbroken blocks of attached brick houses, most of them two or three stories, one or two rooms deep, sharing side walls with their neighbours. The type filled the city between the 1790s and the 1930s because it was cheap to build in quantity, efficient to heat, and it put homeownership within reach of working people (Hayward & Belfoure, 2001).
+**The form.** Baltimore is, more than almost any American city, a city of **rowhouses**: long unbroken blocks of attached brick houses, most of them two or three stories, one or two rooms deep, sharing side walls with their neighbors. The type filled the city between the 1790s and the 1930s because it was cheap to build in quantity, efficient to heat, and it put homeownership within reach of working people (Hayward & Belfoure, 2001).
 
 **Two details you can read on the street, and what each encodes.**
 
 **The marble steps.** Baltimore rowhouses are famous for white marble stoops, kept scrubbed. That maintenance is not decoration. **It is a public statement of care and respectability made by people the wider city refused to respect**, and it is one of the clearest surviving pieces of evidence that a confined community took pride in its ground. When you write, do not read a clean stoop as quaint. Read it as a message.
 
-**Formstone.** Beginning in the late 1930s, many Baltimore rowhouses were clad in **Formstone**, a moulded cement facing that imitates rough-cut stone. It was patented in 1937 by Albert Knight, and the filmmaker John Waters, a Baltimorean, called it "the polyester of brick" (Baltimore Heritage, n.d.). Formstone is a marker of a working-class, mid-century, often immigrant and Black rowhouse Baltimore, and preservationists now argue over whether removing it to expose the original brick erases that history. **That argument is a Section 2 lesson in itself: the "original" surface is a choice about which past to keep.**
+**Formstone.** Beginning in the late 1930s, many Baltimore rowhouses were clad in **Formstone**, a molded cement facing that imitates rough-cut stone. It was patented in 1937 by Albert Knight, and the filmmaker John Waters, a Baltimorean, called it "the polyester of brick" (Baltimore Heritage, n.d.). Formstone is a marker of a working-class, mid-century, often immigrant and Black rowhouse Baltimore, and preservationists now argue over whether removing it to expose the original brick erases that history. **That argument is a Section 2 lesson in itself: the "original" surface is a choice about which past to keep.**
 
 **The alley house, which is the part that carries the segregation story.** Behind the main streets, on narrow interior alleys, Baltimore built much smaller two-story houses, often one room per floor. **These alley houses were the cheapest housing in the city, and they were disproportionately where the poorest residents, including many Black families, were pushed.** A single block could therefore hold a hierarchy: substantial houses facing the avenue, and cramped alley houses behind them. **The built form encodes the confinement.** When the city later measured Old West Baltimore as overcrowded and substandard, the alley houses were a large part of what it was measuring, and, as in Indianapolis, the measurement of a condition the city itself had produced became the justification for clearing it.
 
@@ -372,11 +372,11 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
         },
         {
           prompt: "How was Old West Baltimore a base of resistance, not only a target?",
-          answer: "W. Ashbie Hawkins and others fought the segregation ordinances in court and won cases against them, and the Baltimore NAACP branch became one of the most active in the country. People organised and litigated rather than only having things done to them.",
+          answer: "W. Ashbie Hawkins and others fought the segregation ordinances in court and won cases against them, and the Baltimore NAACP branch became one of the most active in the country. People organized and litigated rather than only having things done to them.",
         },
         {
           prompt: "Why does this course put 'what the community built' before the instruments in Section 3?",
-          answer: "Because a course that is only a catalogue of harm is both incomplete and inaccurate. The people confined here built a lasting press, a winning legal campaign and a cultural corridor, and that material keeps a Write piece from becoming ruin porn.",
+          answer: "Because a course that is only a catalog of harm is both incomplete and inaccurate. The people confined here built a lasting press, a winning legal campaign and a cultural corridor, and that material keeps a Write piece from becoming ruin porn.",
         },
       ],
     },
@@ -409,7 +409,7 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
         },
         {
           prompt: "What is Formstone, and why do preservationists argue about it?",
-          answer: "A moulded cement facing imitating stone, patented in 1937 and applied to many rowhouses; John Waters called it the polyester of brick. Removing it to expose original brick can erase a working-class, mid-century Black and immigrant history, so the original surface is a choice about which past to keep.",
+          answer: "A molded cement facing imitating stone, patented in 1937 and applied to many rowhouses; John Waters called it the polyester of brick. Removing it to expose original brick can erase a working-class, mid-century Black and immigrant history, so the original surface is a choice about which past to keep.",
         },
         {
           prompt: "How does the alley house carry the segregation story?",
@@ -425,7 +425,7 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
 
 **The block as a document.** By now you can read a Baltimore block as evidence. The **rowhouse** type tells you the city was built for working people at scale. The **alley house** behind the street tells you there was a hierarchy inside the district, and that the poorest, many of them Black, were given the least room. The **marble steps** tell you the residents refused to be read as their conditions. The **ground rent** tells you the land was a layered legal object before any segregation instrument touched it. **None of that needs a plaque. It is all readable on the street, which is exactly what beat 4 will ask you to do.**
 
-**What survives, and why it is uneven.** As in Indianapolis, what stands today survived for particular reasons, and the reasons are the lesson. Some of Old West Baltimore is protected inside a **National Register historic district**; individual landmarks like the Arch Social Club still operate; and the Royal Theatre is a monument on a cleared site. **Survival on this ground correlates with organisation, ownership and timing, not with importance.** The Royal Theatre was one of the most important buildings on The Avenue and it is gone, because it was in the path of urban renewal and designation arrived too late. That pattern, that the most significant thing is often the thing that did not survive, is why beat 4 tells you to read absence as carefully as presence.
+**What survives, and why it is uneven.** As in Indianapolis, what stands today survived for particular reasons, and the reasons are the lesson. Some of Old West Baltimore is protected inside a **National Register historic district**; individual landmarks like the Arch Social Club still operate; and the Royal Theatre is a monument on a cleared site. **Survival on this ground correlates with organization, ownership and timing, not with importance.** The Royal Theatre was one of the most important buildings on The Avenue and it is gone, because it was in the path of urban renewal and designation arrived too late. That pattern, that the most significant thing is often the thing that did not survive, is why beat 4 tells you to read absence as carefully as presence.
 
 **Now the part everyone gets wrong: what a historic designation actually does.**
 
@@ -473,9 +473,9 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
 
 **The headline.** In 1910 Baltimore passed what is **widely described as the first residential racial segregation ordinance in the United States** (Power, 1983). That sentence is true, and it is also a compression of a much messier seven-year fight, so hold the headline lightly until you have read the record under it.
 
-**The trigger, which you already met.** The ordinance was a direct response to the McCulloh Street purchase in Section 1: a Black lawyer moved his Yale-educated law partner onto a white block, the white neighbours organised, and the City Council answered with a law. **The instrument was aimed at a Black professional buying a good house, not at anyone's poverty.**
+**The trigger, which you already met.** The ordinance was a direct response to the McCulloh Street purchase in Section 1: a Black lawyer moved his Yale-educated law partner onto a white block, the white neighbors organized, and the City Council answered with a law. **The instrument was aimed at a Black professional buying a good house, not at anyone's poverty.**
 
-**What the ordinance actually said.** The original measure, Ordinance No. 610, barred any Black resident from moving onto a block where most residents were white, and any white resident from moving onto a block where most residents were Black, and it reached churches and schools as well as homes (Power, 1983). It did not desegregate anything or create anything. **It froze the colour of a block as of the day it passed**, and made moving across that line a criminal act.
+**What the ordinance actually said.** The original measure, Ordinance No. 610, barred any Black resident from moving onto a block where most residents were white, and any white resident from moving onto a block where most residents were Black, and it reached churches and schools as well as homes (Power, 1983). It did not desegregate anything or create anything. **It froze the color of a block as of the day it passed**, and made moving across that line a criminal act.
 
 **Now the part the headline hides: it was not one law, it was four.** The ordinances of 1910 to 1913 are a **chain**, because the courts kept striking them and the Council kept redrafting (Power, 1983; Baltimore Heritage, n.d.).
 1. **Ordinance No. 610, signed in December 1910.** Struck down as defectively drafted.
@@ -545,7 +545,7 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
         },
         {
           prompt: "What did the original Ordinance No. 610 actually do?",
-          answer: "It barred a Black resident from moving onto a majority-white block and a white resident from moving onto a majority-Black block, reaching churches and schools too. It did not create anything; it froze each block's colour as of the day it passed and criminalised crossing that line.",
+          answer: "It barred a Black resident from moving onto a majority-white block and a white resident from moving onto a majority-Black block, reaching churches and schools too. It did not create anything; it froze each block's color as of the day it passed and criminalised crossing that line.",
         },
         {
           prompt: "Who signed the first ordinance, and why is that a lesson in verifying?",
@@ -563,14 +563,14 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
       section: "Section 3 · Powers",
       body: `The third instrument is the one everybody has heard of and the one this course is most careful about, because **the popular story is stronger than the evidence for it, and the honest version is more useful anyway.**
 
-**The famous object.** In **1937** the federal **Home Owners' Loan Corporation (HOLC)** produced a "Residential Security Map" of Baltimore, grading neighbourhoods from **A (green, "best")** through **B (blue)** and **C (yellow)** down to **D (red, "hazardous")** (Nelson et al., n.d.). Baltimore is a canonical map city: the covenant suburbs of the last lesson, Roland Park, Guilford and Homeland, are green and blue, and the confined neighbourhoods of Old West Baltimore are yellow and red. The written "area descriptions" behind the colours name race directly, treating the presence of Black residents as a lending hazard (Nelson et al., n.d.). **This is why the map is such powerful teaching evidence: the government wrote its mindset down and coloured it in.**
+**The famous object.** In **1937** the federal **Home Owners' Loan Corporation (HOLC)** produced a "Residential Security Map" of Baltimore, grading neighborhoods from **A (green, "best")** through **B (blue)** and **C (yellow)** down to **D (red, "hazardous")** (Nelson et al., n.d.). Baltimore is a canonical map city: the covenant suburbs of the last lesson, Roland Park, Guilford and Homeland, are green and blue, and the confined neighborhoods of Old West Baltimore are yellow and red. The written "area descriptions" behind the colors name race directly, treating the presence of Black residents as a lending hazard (Nelson et al., n.d.). **This is why the map is such powerful teaching evidence: the government wrote its mindset down and colored it in.**
 
 **Now the disputed part, which most retellings skip.** The tidy claim is: **the HOLC map redlined Baltimore and caused its decline.** Scholars who read the lending records dispute the direct causal step (Hillier, 2003). Three findings sit against the tidy story:
 1. **The HOLC maps were largely confidential.** They were internal federal documents, not circulars handed to every corner bank, so a simple "lenders used this map to deny loans" story is hard to support (Hillier, 2003).
 2. **HOLC's own lending went into red areas.** The agency that drew the red actually made refinancing loans inside it, which is not what a pure redlining account predicts (Hillier, 2003).
 3. **The private-market damage is better traced to a different federal body**, the Federal Housing Administration, discussed below.
 
-**But do not overcorrect into "the map did nothing."** Later quantitative work comparing the graded boundaries finds they carried **some independent, long-run effect** on segregation and disinvestment, even after accounting for what neighbourhoods were like beforehand (Aaronson et al., 2021). **So the map is real evidence with real downstream correlation.** What it is not is a proven single cause. Teach it as the clearest surviving picture of official attitude, and as a boundary that mattered, without claiming it single-handedly emptied West Baltimore.
+**But do not overcorrect into "the map did nothing."** Later quantitative work comparing the graded boundaries finds they carried **some independent, long-run effect** on segregation and disinvestment, even after accounting for what neighborhoods were like beforehand (Aaronson et al., 2021). **So the map is real evidence with real downstream correlation.** What it is not is a proven single cause. Teach it as the clearest surviving picture of official attitude, and as a boundary that mattered, without claiming it single-handedly emptied West Baltimore.
 
 **The instrument whose own words settle the question: the FHA manual.** If the HOLC map is a picture, the **Federal Housing Administration Underwriting Manual** is a confession, and it is the better-documented instrument because it tells you in federal print exactly what it required. The FHA insured a huge share of the private mortgage market, so its rules shaped where capital flowed nationwide. Its 1938 manual states plainly:
 - "If a neighborhood is to retain stability, it is necessary that properties shall continue to be occupied by the same social and racial classes" (Federal Housing Administration, 1938, section 937).
@@ -612,13 +612,13 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
       section: "Section 3 · Powers",
       body: `The fourth instrument is the one you can still stand in, and it is why Baltimore is the best single city for this course. **The zoning was struck by courts. The covenants were disabled by Shelley. The highway was actually built, and then abandoned halfway, so it is the one link in the chain that is still physically open.**
 
-**What was built.** In the late 1960s and early 1970s the city cut a **1.4-mile** sunken expressway, the **Franklin-Mulberry** section of **US 40**, through West Baltimore, in the neighbourhoods around **Rosemont, Harlem Park and Franklin Square** (Congress for the New Urbanism, n.d.; Baltimore City Department of Transportation, 2022). It was meant to be one leg of a downtown expressway system linking Interstate 70 to the harbour. **That system was never finished.** Organised community and environmental opposition stopped the larger plan, and the leg that was built simply ends, carrying local traffic into a trench and back out. The nickname is the finding: the **"Highway to Nowhere."**
+**What was built.** In the late 1960s and early 1970s the city cut a **1.4-mile** sunken expressway, the **Franklin-Mulberry** section of **US 40**, through West Baltimore, in the neighborhoods around **Rosemont, Harlem Park and Franklin Square** (Congress for the New Urbanism, n.d.; Baltimore City Department of Transportation, 2022). It was meant to be one leg of a downtown expressway system linking Interstate 70 to the harbor. **That system was never finished.** Organised community and environmental opposition stopped the larger plan, and the leg that was built simply ends, carrying local traffic into a trench and back out. The nickname is the finding: the **"Highway to Nowhere."**
 
 **The human cost, with its owner and its uncertainty attached.** The commonly reported demolition and displacement figures for the corridor are **about 971 homes, 62 businesses, and one school**, with roughly **1,500 residents** displaced (Baltimore City Department of Transportation, 2022; Congress for the New Urbanism, n.d.). **Handle these numbers the way Section 1 handled the Green Book listings: give them their owner and do not smooth them.** Two honest cautions:
 - **The block count varies by source.** Some accounts describe roughly **twenty** demolished blocks; others count about **fourteen** contiguous blocks. The difference is not an error to resolve by averaging; it is what happens when different tellings count the demolition footprint versus the built corridor length. **Report the range and its cause.**
 - **These are demolition and displacement counts, not a survey of everything the corridor was.** They tell you how much was cleared. They do not tell you what was lost in a fuller sense, and no such census has been read into this course.
 
-**Why this instrument is different from the other three.** The ordinance and the covenants were tools that aimed at Black neighbourhoods and, in law, failed: struck down and disabled. The highway is the tool that **succeeded at the clearance and then failed at its own stated purpose.** It displaced 1,500 people to build a road that was supposed to carry traffic downtown, and it never carried that traffic, because the rest of the road was never built. **A cleared neighbourhood and no working highway to show for it** is a specific kind of harm, and it is the reason the trench reads today as an unusually legible absence. You will look straight at it in Section 4.
+**Why this instrument is different from the other three.** The ordinance and the covenants were tools that aimed at Black neighborhoods and, in law, failed: struck down and disabled. The highway is the tool that **succeeded at the clearance and then failed at its own stated purpose.** It displaced 1,500 people to build a road that was supposed to carry traffic downtown, and it never carried that traffic, because the rest of the road was never built. **A cleared neighborhood and no working highway to show for it** is a specific kind of harm, and it is the reason the trench reads today as an unusually legible absence. You will look straight at it in Section 4.
 
 **The instrument's authors, so you can name them.** A highway is not a natural feature. Its route was chosen by transportation officials and adopted through a planning and right-of-way process, and that process left records: alignment studies, right-of-way maps, condemnation filings. **When you can name the body that chose the line, the highway stops being a disaster that happened and becomes a decision that somebody made**, which is the whole posture of beat 3. Those right-of-way maps are public, and they are on the list of sources this course has not yet fully read.
 
@@ -631,7 +631,7 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
       recallContent: [
         {
           prompt: "What was the 1937 HOLC map of Baltimore, and why is it strong teaching evidence?",
-          answer: "A federal Residential Security Map grading neighbourhoods A (green) to D (red), with the covenant suburbs green and blue and Old West Baltimore yellow and red. Its written area descriptions name race as a lending hazard, so it is the government's own mindset written down and coloured in.",
+          answer: "A federal Residential Security Map grading neighborhoods A (green) to D (red), with the covenant suburbs green and blue and Old West Baltimore yellow and red. Its written area descriptions name race as a lending hazard, so it is the government's own mindset written down and colored in.",
         },
         {
           prompt: "Why do scholars dispute the tidy claim that the HOLC map caused Baltimore's decline?",
@@ -696,7 +696,7 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
       recallContent: [
         {
           prompt: "What is the Highway to Nowhere, and why was it left unfinished?",
-          answer: "A 1.4-mile sunken section of US 40 (Franklin-Mulberry) cut through West Baltimore around Rosemont, Harlem Park and Franklin Square in the late 1960s and early 1970s. It was meant to link Interstate 70 to the harbour, but community and environmental opposition stopped the larger system, so the built leg just ends in a trench.",
+          answer: "A 1.4-mile sunken section of US 40 (Franklin-Mulberry) cut through West Baltimore around Rosemont, Harlem Park and Franklin Square in the late 1960s and early 1970s. It was meant to link Interstate 70 to the harbor, but community and environmental opposition stopped the larger system, so the built leg just ends in a trench.",
         },
         {
           prompt: "What are the reported displacement figures, and how should you handle them?",
@@ -704,7 +704,7 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
         },
         {
           prompt: "How is the highway instrument different from the zoning and covenant instruments?",
-          answer: "The ordinance and covenants aimed at Black neighbourhoods and then failed in law, struck down and disabled. The highway succeeded at the clearance and then failed at its own purpose: it displaced 1,500 people for a road that never carried the downtown traffic, because the rest of it was never built.",
+          answer: "The ordinance and covenants aimed at Black neighborhoods and then failed in law, struck down and disabled. The highway succeeded at the clearance and then failed at its own purpose: it displaced 1,500 people for a road that never carried the downtown traffic, because the rest of it was never built.",
         },
         {
           prompt: "What turns the highway from a disaster that happened into a decision someone made?",
@@ -764,7 +764,7 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
               "A federal statute enforced through the U.S. Justice Department",
               "A private promise written into the deed that binds every future owner",
               "A recurring tax the property owner had to pay the city each year",
-              "An official colour-coded map grading the neighbourhood by risk",
+              "An official color-coded map grading the neighborhood by risk",
             ],
             correctIndex: 1,
             explanation: "It rides in the deed, so it lives in the same land records as the ground rent from Section 2, and the record-reading skill transfers.",
@@ -810,7 +810,7 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
             prompt: "Which findings make scholars dispute the tidy 'the HOLC map redlined Baltimore' story?",
             options: [
               "The Baltimore security map was in fact never actually drawn",
-              "The map only ever covered the city's white neighbourhoods",
+              "The map only ever covered the city's white neighborhoods",
               "Baltimore, unlike other cities, never had a security map",
               "The maps were confidential, and HOLC lent into the red areas",
             ],
@@ -937,7 +937,7 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
 
 **6. Count the markers and plaques, and read who wrote them.** A historical marker is a public record with an author, a date and a sponsor. **A marker tells you what a community and an agency agreed to say in public, in a particular year.** Note the sponsor's name every time.
 
-**7. Look at who is on the street.** This is a working district with residents, students, workers and visitors. **Describe them as they would describe themselves, or do not describe them.** A 360 tour is a photograph of strangers in a public place, and the ethics of writing about it are the ethics of writing about neighbours.
+**7. Look at who is on the street.** This is a working district with residents, students, workers and visitors. **Describe them as they would describe themselves, or do not describe them.** A 360 tour is a photograph of strangers in a public place, and the ethics of writing about it are the ethics of writing about neighbors.
 
 ## What the tour cannot show you
 
@@ -967,7 +967,7 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
 
 **Blue: the Franklin-Mulberry Highway to Nowhere**, plotted at an approximate point on the West Baltimore corridor.
 
-**Amber: four other American Black districts** cut by a highway. In cities across the country, highway construction displaced Black households and destroyed homes, churches, schools and businesses, and in some places a road was used deliberately as a barrier between white and Black neighbourhoods (Archer, 2020; Rothstein, 2017). **These four are here to stop you reading Baltimore as a local misfortune.** It is a local instance of a national method, and Baltimore's own case even carries the same two nicknames, "Black Wall Street" and "the Harlem of the South," that recur across these places.
+**Amber: four other American Black districts** cut by a highway. In cities across the country, highway construction displaced Black households and destroyed homes, churches, schools and businesses, and in some places a road was used deliberately as a barrier between white and Black neighborhoods (Archer, 2020; Rothstein, 2017). **These four are here to stop you reading Baltimore as a local misfortune.** It is a local instance of a national method, and Baltimore's own case even carries the same two nicknames, "Black Wall Street" and "the Harlem of the South," that recur across these places.
 
 **Green: two archives.** The Maryland State Archives in Annapolis holds land records, plats and state papers, the same class of record where the ground rents of Section 2 and the covenants of Section 3 physically live. The Digital Scholarship Lab at the University of Richmond hosts Mapping Inequality, where the 1937 HOLC "Residential Security Map" of Baltimore from Section 3 is digitized (Nelson et al., n.d.). **Knowing where a record physically lives is part of knowing that it exists.**
 
@@ -999,7 +999,7 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
             title: "Rondo, Saint Paul, Minnesota",
             color: "#b45309",
             description:
-              "Interstate 94 was routed through Rondo, Saint Paul's Black centre. It is the most cited American case of a highway taking a Black neighbourhood, and the community's own reconnection campaign is active today. Same instrument as lesson 11, a different city.",
+              "Interstate 94 was routed through Rondo, Saint Paul's Black center. It is the most cited American case of a highway taking a Black neighborhood, and the community's own reconnection campaign is active today. Same instrument as lesson 11, a different city.",
           },
           {
             id: "bc-overtown",
@@ -1070,7 +1070,7 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
 
 **Question 3: the area plan, and this is where Baltimore is different.** In Indianapolis, beat 5 ended on a plan that had run for years and adopted nothing. Here the honest answer is the opposite: **there is money on this ground and a project underway.**
 
-- The city launched **West Baltimore United**, led by the **Baltimore City Department of Transportation**, to plan the retrofit of the US 40 corridor and reconnect the neighbourhoods the trench divided (Baltimore City Department of Transportation, 2022).
+- The city launched **West Baltimore United**, led by the **Baltimore City Department of Transportation**, to plan the retrofit of the US 40 corridor and reconnect the neighborhoods the trench divided (Baltimore City Department of Transportation, 2022).
 - A first, smaller **Reconnecting Communities** grant paid for a planning feasibility and concept design study, on the order of two million dollars (Office of U.S. Senator Chris Van Hollen, 2025).
 - Then, on **January 7, 2025**, Maryland's congressional delegation announced **about 85.5 million dollars** (the release states 85,511,803.50 dollars) from the U.S. Department of Transportation's **Reconnecting Communities Program**, funded through the 2021 Infrastructure Investment and Jobs Act, for the first phase of construction. The stated uses are to **build a cap over one block of the highway, tear down existing ramps, and add safety improvements at key intersections** (Office of U.S. Senator Chris Van Hollen, 2025).
 
@@ -1121,15 +1121,15 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
 
 **A quirk you have to know first.** Baltimore City does not number parcels the way most counties do. Its account is built from a **Ward, Section, Block and Lot** rather than a single county parcel number, so when the record shows those four fields together, that is the parcel identifier, not four separate facts (Maryland State Department of Assessments and Taxation, n.d.). **Every county's tool has a local quirk like this, and finding it is part of the skill.**
 
-**Your target: the Arch Social Club, 2426 Pennsylvania Avenue, Baltimore.** It is a safe address to practise on: it is a public institution founded in 1905, one of the oldest continuously operating Black social clubs in the country, its address is published by the club and by the city's arts district, and you are not exposing anybody's home (Visit Baltimore, n.d.).
+**Your target: the Arch Social Club, 2426 Pennsylvania Avenue, Baltimore.** It is a safe address to practice on: it is a public institution founded in 1905, one of the oldest continuously operating Black social clubs in the country, its address is published by the club and by the city's arts district, and you are not exposing anybody's home (Visit Baltimore, n.d.).
 
 **Work through these, then answer the questions below.**
 1. Find **2426 Pennsylvania Avenue** in the SDAT Real Property Data Search under Baltimore City. Read off the **Ward, Section, Block and Lot** and write them down exactly.
 2. Find the **owner of record**, the **year built** if the card gives one, and the **total assessed value**.
-3. Compare the **owner of record** to the name of the organisation that operates the building. **They may not match, and if they do not, that is normal and it is a finding**, not an error.
+3. Compare the **owner of record** to the name of the organization that operates the building. **They may not match, and if they do not, that is normal and it is a finding**, not an error.
 4. Note whether the record shows a **ground rent** on the property. Section 2 taught you what that lease is; here is where it appears in the record.
 5. Open the **Baltimore City GIS** and locate the same parcel. Note which **council district** and **planning area** it sits in, and whether the map shows a **historic district** boundary over it.
-6. Walk the block a short way in each direction along The Avenue and count how many neighbouring parcels are **institutionally or publicly owned**.
+6. Walk the block a short way in each direction along The Avenue and count how many neighboring parcels are **institutionally or publicly owned**.
 
 **The habits this builds, which transfer to any American county.** Every county has an assessor and most have a GIS. **The names of the tools change and the four facts do not: the parcel identifier, the owner of record, the assessed value, and which overlapping jurisdictions the parcel sits in.** Learn to find those four and you can research any address in the country.
 
@@ -1318,7 +1318,7 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
               "A private commercial developer building along the corridor",
               "A city effort to retrofit the US 40 corridor and reconnect it",
               "The formal name given to the original 1910 zoning ordinance",
-              "A neighbourhood association organised to oppose the project",
+              "A neighborhood association organized to oppose the project",
             ],
             correctIndex: 1,
             explanation: "It is the city-led planning and construction effort attached to the Highway to Nowhere, funded first by a planning grant and then by a construction grant.",
@@ -1341,7 +1341,7 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
             options: [
               "As a fully completed and operating light-rail transit line",
               "As proposed, not final: light rail recommended in June 2024",
-              "As a project that has been permanently cancelled for good",
+              "As a project that has been permanently canceled for good",
               "As a transit plan wholly unrelated to the trench corridor",
             ],
             correctIndex: 1,
@@ -1466,7 +1466,7 @@ The essay, plus a short **source list** in APA 7: every date, dollar figure, gra
         },
         {
           prompt: "What is West Baltimore United, and what two federal grants are attached to it?",
-          answer: "A Baltimore City Department of Transportation effort to retrofit the US 40 corridor and reconnect the divided neighbourhoods. A first Reconnecting Communities grant on the order of two million dollars paid for a planning and concept study, and on January 7, 2025 the delegation announced about 85.5 million dollars from the USDOT Reconnecting Communities Program for the first construction phase: a cap over one block, ramp removal and safety work.",
+          answer: "A Baltimore City Department of Transportation effort to retrofit the US 40 corridor and reconnect the divided neighborhoods. A first Reconnecting Communities grant on the order of two million dollars paid for a planning and concept study, and on January 7, 2025 the delegation announced about 85.5 million dollars from the USDOT Reconnecting Communities Program for the first construction phase: a cap over one block, ramp removal and safety work.",
         },
         {
           prompt: "How does the course treat the Red Line's connection to the trench, and why?",

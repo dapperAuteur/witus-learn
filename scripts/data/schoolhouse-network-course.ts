@@ -48,7 +48,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const SCHOOLHOUSE_NETWORK_COURSE: AuthoredCourse = {
   title: "The Schoolhouse Network",
   description:
-    "A cited, high-school-and-up course on the Rosenwald school building program: roughly five thousand school buildings raised across the segregated South in the early twentieth century, on a matching model that combined a Chicago philanthropist's grant, public tax money, and cash, land and labour raised by Black communities themselves. It is the counterpart to The Gym and the Color Line, which teaches what a boundary did to schooling; this course teaches what communities built, and it runs on one hard rule stated in its first lesson: never use a positive to soften a negative. A school raised by people who were simultaneously being taxed for schools their children could not attend is not a happy ending, and this course does not offer it as one. The claim is co-occurrence, not balance. You will verify the famous numbers and find that the sources disagree about the building count, the date range and even the number of students served, then learn why they disagree. You will read the matching model as a four-column budget and work out what share the communities actually paid, which is the figure that complicates the way this story is usually told. You will read two real school cards out of the Julius Rosenwald Fund archive at Fisk University. You will learn why the buildings look the way they do, down to the orientation, the window banks and the two permitted interior paint schemes, because the light was the design problem. You will meet the people who raised the money and taught in the rooms. Then you will hold the program's calendar against the rest of the record for the same years, find a surviving school near you in the federal and state registers, and write a piece of grounded nonfiction about one building and the budget line that raised it. Prerequisite: The Green Book: How to Read a Route, which teaches the method this course applies. A 360 tour of a restored schoolhouse is planned and will be added to the Now section when it is captured.",
+    "A cited, high-school-and-up course on the Rosenwald school building program: roughly five thousand school buildings raised across the segregated South in the early twentieth century, on a matching model that combined a Chicago philanthropist's grant, public tax money, and cash, land and labor raised by Black communities themselves. It is the counterpart to The Gym and the Color Line, which teaches what a boundary did to schooling; this course teaches what communities built, and it runs on one hard rule stated in its first lesson: never use a positive to soften a negative. A school raised by people who were simultaneously being taxed for schools their children could not attend is not a happy ending, and this course does not offer it as one. The claim is co-occurrence, not balance. You will verify the famous numbers and find that the sources disagree about the building count, the date range and even the number of students served, then learn why they disagree. You will read the matching model as a four-column budget and work out what share the communities actually paid, which is the figure that complicates the way this story is usually told. You will read two real school cards out of the Julius Rosenwald Fund archive at Fisk University. You will learn why the buildings look the way they do, down to the orientation, the window banks and the two permitted interior paint schemes, because the light was the design problem. You will meet the people who raised the money and taught in the rooms. Then you will hold the program's calendar against the rest of the record for the same years, find a surviving school near you in the federal and state registers, and write a piece of grounded nonfiction about one building and the budget line that raised it. Prerequisite: The Green Book: How to Read a Route, which teaches the method this course applies. A 360 tour of a restored schoolhouse is planned and will be added to the Now section when it is captured.",
   lessons: [
     // ═══════════════════════════════════════════════════════════════════════════════════════
     // SECTION 1 · Then
@@ -63,7 +63,7 @@ export const SCHOOLHOUSE_NETWORK_COURSE: AuthoredCourse = {
 
 This course is about something that was built. Thousands of school buildings went up across the American South in the early twentieth century, for Black children, in a region that was refusing to build them. It is a real achievement with a real record, and it deserves to be taught with the same evidence standard as any demolition.
 
-**It is not a consolation prize, and this course will not offer it as one.** A community that raised cash, donated land, cut its own lumber and gave its own labour to put up a schoolhouse was, at the same moment, paying taxes into a public school system that spent a fraction as much on its children as on other people's. **Those two facts are not a balance. They are a co-occurrence.** Both were happening, at the same time, in the same counties, to the same people.
+**It is not a consolation prize, and this course will not offer it as one.** A community that raised cash, donated land, cut its own lumber and gave its own labor to put up a schoolhouse was, at the same moment, paying taxes into a public school system that spent a fraction as much on its children as on other people's. **Those two facts are not a balance. They are a co-occurrence.** Both were happening, at the same time, in the same counties, to the same people.
 
 **What that rule forbids, specifically.** It forbids the sentence "but they built schools anyway," used to close a paragraph about exclusion. It forbids treating a building as an answer to a budget. It forbids the moral about resilience, which is a compliment paid to people instead of an account of what was done to them. **A positive is evidence about itself and nothing else.** That is the same discipline the Green Book method course applied to a listing: a listing proves a business existed, not that a city was fair.
 
@@ -73,11 +73,11 @@ This course is about something that was built. Thousands of school buildings wen
 
 **A definition, from a federal statute.** The Julius Rosenwald and the Rosenwald Schools Act of 2020 defines the term in law: a Rosenwald School means "any of the 5,357 schools and related buildings constructed in 15 southern States during the period of 1912 through 1932 by the philanthropy of Julius Rosenwald" (Pub. L. No. 116-336, 2021, sec. 2(a)(1)). **Hold onto that last clause. Lesson 3 and lesson 6 are going to test it against the money.**
 
-**A definition from the record.** A Rosenwald school was a school building for Black students, mostly rural, built to a standardised plan issued first by Tuskegee Normal and Industrial Institute and later by the Julius Rosenwald Fund's southern office in Nashville, and paid for from **four separate sources at once**: a grant from Rosenwald or his Fund, public tax money, contributions from the local Black community, and contributions from local white residents (Obenauer & Brown, 2015; Weathers, 2008).
+**A definition from the record.** A Rosenwald school was a school building for Black students, mostly rural, built to a standardized plan issued first by Tuskegee Normal and Industrial Institute and later by the Julius Rosenwald Fund's southern office in Nashville, and paid for from **four separate sources at once**: a grant from Rosenwald or his Fund, public tax money, contributions from the local Black community, and contributions from local white residents (Obenauer & Brown, 2015; Weathers, 2008).
 
 **The Fund's money was never most of the money.** The North Carolina documentation form states it plainly: aid from the Rosenwald Fund "often subsidized only fifteen to twenty percent of a building's total cost" (Obenauer & Brown, 2015, p. 3). Section 2 of this course is entirely about the other eighty percent.
 
-## How to recognise one
+## How to recognize one
 
 The plan books specified enough that a surviving building is often identifiable from the road. From the National Register documentation form for North Carolina (Obenauer & Brown, 2015, pp. 53-55):
 
@@ -92,7 +92,7 @@ The plan books specified enough that a surviving building is often identifiable 
 | **A movable partition between two classrooms** | So the school could become a meeting hall outside school hours |
 | **A site of at least two acres** | The Fund's recommended minimum, school in one corner |
 
-**That last row is the one people miss.** These buildings were community centres by design. The partition folded back, and the room that taught children on Tuesday held the county's Black civic life on Friday. **A building is evidence of what a community intended to do in it.**
+**That last row is the one people miss.** These buildings were community centers by design. The partition folded back, and the room that taught children on Tuesday held the county's Black civic life on Friday. **A building is evidence of what a community intended to do in it.**
 
 ## What this course does, and does not do
 
@@ -199,7 +199,7 @@ Daniel Aaronson and Bhashkar Mazumder studied the program's effect using census 
         },
         {
           prompt: "Why does the movable partition matter beyond construction detail?",
-          answer: "Because it made the building a community centre by design. The room that taught children opened into a meeting hall for the county's Black civic life outside school hours, which is evidence of what the community intended to do in it.",
+          answer: "Because it made the building a community center by design. The room that taught children opened into a meeting hall for the county's Black civic life outside school hours, which is evidence of what the community intended to do in it.",
         },
       ],
     },
@@ -211,13 +211,13 @@ Daniel Aaronson and Bhashkar Mazumder studied the program's effect using census 
 
 ## The proposal came from Tuskegee
 
-**Julius Rosenwald**, president of Sears, Roebuck and Company, marked his fiftieth birthday in 1912 by giving away **687,500 dollars** to various charitable organisations, of which **25,000 dollars** went to Tuskegee Normal and Industrial Institute (Obenauer & Brown, 2015, p. 6). **2,800 dollars of that gift was left unappropriated.**
+**Julius Rosenwald**, president of Sears, Roebuck and Company, marked his fiftieth birthday in 1912 by giving away **687,500 dollars** to various charitable organizations, of which **25,000 dollars** went to Tuskegee Normal and Industrial Institute (Obenauer & Brown, 2015, p. 6). **2,800 dollars of that gift was left unappropriated.**
 
 **Booker T. Washington wrote to Rosenwald on 12 June 1912** suggesting the unspent balance be used to build six schools, on the model of the small country school building work Tuskegee had begun in 1910. He enclosed an outline titled "Scheme for Helping Colored Schools" with five points (Obenauer & Brown, 2015, p. 6):
 
 1. Start the work in various states, with the county as the seat of operations.
 2. Put a man in charge of the fund who works through county officials.
-3. Start in a few favourable counties, and include building schoolhouses, extending school terms and raising teachers' salaries.
+3. Start in a few favorable counties, and include building schoolhouses, extending school terms and raising teachers' salaries.
 4. **Take care to keep any county from relying on the fund, so that each county is stimulated to do more for itself than before.**
 5. Have the person in charge discuss with white leaders the possibility of securing larger support for the education of colored people.
 
@@ -231,11 +231,11 @@ Daniel Aaronson and Bhashkar Mazumder studied the program's effect using census 
 |---|---|
 | Rosenwald's grant | 300.00 |
 | Local African Americans, cash | 150.00 |
-| Local African Americans, labour valued at | 142.50 |
+| Local African Americans, labor valued at | 142.50 |
 | Local white citizens | 350.00 |
 | **Total** | **942.50** |
 
-Public officials then maintained the building. **Look at what that table already tells you.** Rosenwald's grant is under a third. Local Black residents put in 292 dollars and 50 cents, nearly half of it as their own labour valued in dollars. **That valuation practice is important and it recurs for twenty years: labour counted, and it was counted at a price.**
+Public officials then maintained the building. **Look at what that table already tells you.** Rosenwald's grant is under a third. Local Black residents put in 292 dollars and 50 cents, nearly half of it as their own labor valued in dollars. **That valuation practice is important and it recurs for twenty years: labor counted, and it was counted at a price.**
 
 ## Who ran it, and when it changed hands
 
@@ -337,7 +337,7 @@ Historian **James D. Anderson** argues in *The Education of Blacks in the South,
               "Any segregated school for Black students in the American South built between the two world wars",
             ],
             correctIndex: 0,
-            explanation: "The statutory definition is worth memorising because of its last clause, which attributes all 5,357 buildings to one man's philanthropy.",
+            explanation: "The statutory definition is worth memorizing because of its last clause, which attributes all 5,357 buildings to one man's philanthropy.",
             sourceLessonSlug: "sn-what-a-rosenwald-school-was",
           },
           {
@@ -355,8 +355,8 @@ Historian **James D. Anderson** argues in *The Education of Blacks in the South,
           {
             prompt: "Why does the movable partition between classrooms matter to a historian?",
             options: [
-              "It shows the buildings were cheaply constructed and easy to reconfigure when enrolment fell",
-              "It made the school a community centre by design, opening into a hall for civic life outside school hours",
+              "It shows the buildings were cheaply constructed and easy to reconfigure when enrollment fell",
+              "It made the school a community center by design, opening into a hall for civic life outside school hours",
               "It was required by state fire codes in most of the fifteen states where the program operated",
               "It allowed a two-teacher school to be converted into a teacherage or a shop building after desegregation closed it in the 1960s",
             ],
@@ -397,7 +397,7 @@ Historian **James D. Anderson** argues in *The Education of Blacks in the South,
               "That roughly ten schools were reclassified as teacherages between the two publication dates",
             ],
             correctIndex: 0,
-            explanation: "A ten-unit slip in a six-digit figure is a transcription error, which tells you the figure is travelling by copy. Cite the account you actually read.",
+            explanation: "A ten-unit slip in a six-digit figure is a transcription error, which tells you the figure is traveling by copy. Cite the account you actually read.",
             sourceLessonSlug: "sn-the-famous-numbers",
           },
           {
@@ -405,7 +405,7 @@ Historian **James D. Anderson** argues in *The Education of Blacks in the South,
             options: [
               "The two figures were compiled twenty years apart, and buildings were demolished in between",
               "817 counts all Rosenwald buildings in the state and 794 counts schools only",
-              "817 includes buildings in neighbouring states administered from the North Carolina office",
+              "817 includes buildings in neighboring states administered from the North Carolina office",
               "794 counts only the schools that were still standing when the documentation form was written",
             ],
             correctIndex: 1,
@@ -454,10 +454,10 @@ Historian **James D. Anderson** argues in *The Education of Blacks in the South,
               "The whole cost, with local contributions applied to furnishing and equipment afterwards",
               "300 dollars, with 292.50 from local African Americans and 350 from local white citizens",
               "Half the cost, matched dollar for dollar by the local school board and the county officials who maintained it",
-              "142 dollars and 50 cents, the same amount as the labour contributed by local residents",
+              "142 dollars and 50 cents, the same amount as the labor contributed by local residents",
             ],
             correctIndex: 1,
-            explanation: "Of the local Black contribution, 150 dollars was cash and 142.50 was labour valued in dollars. Labour counted, and it was counted at a price.",
+            explanation: "Of the local Black contribution, 150 dollars was cash and 142.50 was labor valued in dollars. Labour counted, and it was counted at a price.",
             sourceLessonSlug: "sn-washington-rosenwald-credit",
           },
           {
@@ -506,7 +506,7 @@ Every completed Rosenwald building has a budget with the same shape. The Fund's 
 |---|---|---|
 | **Rosenwald** | Julius Rosenwald personally, then the Julius Rosenwald Fund | A capped grant, initially up to 350 dollars per new schoolhouse |
 | **Public** | The county or state, out of tax revenue | Usually the largest single column |
-| **Negroes** | The local Black community | Cash, land, materials, and labour valued in dollars |
+| **Negroes** | The local Black community | Cash, land, materials, and labor valued in dollars |
 | **Whites** | Local white residents | Required by the Fund, and frequently zero |
 
 **Those are the archive's own column headings, reproduced here as the record's language rather than this course's.** When you cite a card, quote the heading and say it is the heading.
@@ -516,7 +516,7 @@ Every completed Rosenwald building has a budget with the same shape. The Fund's 
 From the documentation forms (Obenauer & Brown, 2015; Weathers, 2008; Oklahoma Historical Society, n.d.-a):
 
 1. **A site**, with the Fund recommending a minimum of **two acres**, the building placed in one corner so the rest could hold a playground, a garden or agricultural plot, the privies and a well.
-2. **A matching contribution** from the local Black community, in cash, land, materials or labour.
+2. **A matching contribution** from the local Black community, in cash, land, materials or labor.
 3. **A contribution from local white residents**, which the North Carolina form describes as **a requirement of aid from the Fund** (Obenauer & Brown, 2015, p. 4).
 4. **A public commitment**: local and state education funds toward construction, and an agreement by the public school authority to **operate and maintain** the school as part of the public system.
 5. **Required equipment**: blackboards along one or two walls of each classroom, patent desks, cloakrooms and two sanitary privies (Obenauer & Brown, 2015, p. 54).
@@ -537,10 +537,10 @@ From the documentation forms (Obenauer & Brown, 2015; Weathers, 2008; Oklahoma H
 This part is documented in specifics, and the specifics are better than any summary of them.
 
 - **Educational rallies and box parties.** A box party was part of an educational rally: baked goods and handmade items, including dolls, were placed in boxes and bid on by anyone in the community (Obenauer & Brown, 2015, pp. 23-24).
-- **Divided labour, and not as neatly as it is usually told.** Box parties were often a way women raised money while men contributed physical labour. **Historian Mary Hoffschwelle is quoted in the same passage correcting the tidy version: "Although the men committed themselves as the heads of their families, women and children put in their labour as well"** (quoted in Obenauer & Brown, 2015, p. 24).
+- **Divided labor, and not as neatly as it is usually told.** Box parties were often a way women raised money while men contributed physical labor. **Historian Mary Hoffschwelle is quoted in the same passage correcting the tidy version: "Although the men committed themselves as the heads of their families, women and children put in their labour as well"** (quoted in Obenauer & Brown, 2015, p. 24).
 - **Crops and livestock.** A North Carolinian wrote in 1924: "An acre of cotton may be planted and the profits from the sale of it applied on the school. In many sections hogs and chickens are raised by the community to obtain money for buildings" (quoted in Obenauer & Brown, 2015, p. 25).
 - **Materials cut, hauled, milled and delivered by the community that gave them.** The same 1924 account records that at **Lumber Bridge, in Robeson County**, "the people gave seventy thousand feet of lumber for framing and sheathing. This was cut from their own hands, hauled by their own teams to a saw mill owned by themselves, sawed by bill, and laid down on a school lot purchased with their own funds" (quoted in Obenauer & Brown, 2015, p. 25).
-- **The church.** In many communities the church donated the two or more acres the Fund required, and church elders organised the campaign. The documentation form quotes the reason: in a region where white residents discouraged Black participation in nearly any organised activity, "churches provided the single strong institutional framework for Afro-American endeavors" (quoted in Obenauer & Brown, 2015, p. 23).
+- **The church.** In many communities the church donated the two or more acres the Fund required, and church elders organized the campaign. The documentation form quotes the reason: in a region where white residents discouraged Black participation in nearly any organized activity, "churches provided the single strong institutional framework for Afro-American endeavors" (quoted in Obenauer & Brown, 2015, p. 23).
 
 **Now apply the rule from lesson 1 to that list.** Every item on it is an achievement, and every item on it is also a measurement of what a public system was refusing to pay for. **Do not close this lesson with the lumber.** Close it with the question the next lesson answers: **how much of the total did that add up to, and what does the total mean?**
 
@@ -555,7 +555,7 @@ This part is documented in specifics, and the specifics are better than any summ
         },
         {
           prompt: "Break down the budget of the first Rosenwald school at Loachapoka, Alabama, March 1913.",
-          answer: "Total 942 dollars 50 cents: Rosenwald's grant 300, local African Americans 150 in cash plus labour valued at 142.50, and local white citizens 350. Public officials then maintained the building.",
+          answer: "Total 942 dollars 50 cents: Rosenwald's grant 300, local African Americans 150 in cash plus labor valued at 142.50, and local white citizens 350. Public officials then maintained the building.",
         },
         {
           prompt: "What happened to the program's administration in 1920, and what prompted it?",
@@ -601,7 +601,7 @@ Two National Register documentation forms, prepared eight years and two states a
 
 **2. This course could not verify the public-funds figure that usually completes the table.** You will frequently see "18.1 million dollars in public funds" attached to this program. **No institutional source read for this course states it**, and the course will not repeat a number it has not seen sourced. What the verified totals support is only this: **28.5 million total, minus 4.7 and minus 4.3, leaves about 19.5 million from public tax revenue and white contributions combined.** If you need the split, go and find it, and cite where you found it.
 
-**3. Labour was counted at a valuation, and somebody chose the valuation.** At Loachapoka in 1913, local Black residents' labour was entered on the budget at **142 dollars 50 cents** (Obenauer & Brown, 2015, p. 6). **That is a price somebody set for other people's work.** The records read for this course do not say who set it or on what basis. **A contribution figure that includes valued labour is partly an accounting decision**, and you should say so whenever you quote one.
+**3. Labour was counted at a valuation, and somebody chose the valuation.** At Loachapoka in 1913, local Black residents' labor was entered on the budget at **142 dollars 50 cents** (Obenauer & Brown, 2015, p. 6). **That is a price somebody set for other people's work.** The records read for this course do not say who set it or on what basis. **A contribution figure that includes valued labor is partly an accounting decision**, and you should say so whenever you quote one.
 
 **4. A national percentage is not a school.** Lesson 7 shows two real school cards where the community share was 3.5 percent and 10.5 percent. **Neither is 16.5 percent. The average is an average.**
 
@@ -667,7 +667,7 @@ The same documentation form states it directly:
         },
         {
           prompt: "List three things a community had to produce before a Rosenwald grant existed at all.",
-          answer: "A site of at least two acres with the building in one corner; a matching contribution from the local Black community in cash, land, materials or labour; a contribution from local white residents, which the Fund required; a public commitment of tax funds and an agreement by the school authority to operate and maintain the school; and the required equipment, including blackboards, desks, cloakrooms and two sanitary privies.",
+          answer: "A site of at least two acres with the building in one corner; a matching contribution from the local Black community in cash, land, materials or labor; a contribution from local white residents, which the Fund required; a public commitment of tax funds and an agreement by the school authority to operate and maintain the school; and the required equipment, including blackboards, desks, cloakrooms and two sanitary privies.",
         },
         {
           prompt: "The Fund's bus grants required an eight-month school term and teachers paid at least 60 dollars a month. What does that tell you?",
@@ -675,11 +675,11 @@ The same documentation form states it directly:
         },
         {
           prompt: "How did communities actually raise their share? Give three documented methods.",
-          answer: "Educational rallies and box parties where baked and handmade goods were bid on; planting an acre of cotton or raising hogs and chickens for the school; and giving materials and labour directly, as at Lumber Bridge in Robeson County where the community cut, hauled and milled seventy thousand feet of lumber and laid it on a lot it had bought.",
+          answer: "Educational rallies and box parties where baked and handmade goods were bid on; planting an acre of cotton or raising hogs and chickens for the school; and giving materials and labor directly, as at Lumber Bridge in Robeson County where the community cut, hauled and milled seventy thousand feet of lumber and laid it on a lot it had bought.",
         },
         {
           prompt: "Why does this course quote Hoffschwelle's correction about who contributed labour?",
-          answer: "Because the tidy version says women raised money at box parties while men gave labour. Hoffschwelle notes that although men committed themselves as heads of families, women and children put in their labour as well.",
+          answer: "Because the tidy version says women raised money at box parties while men gave labor. Hoffschwelle notes that although men committed themselves as heads of families, women and children put in their labor as well.",
         },
       ],
     },
@@ -742,11 +742,11 @@ From the digitised card (Fisk University, n.d.-b):
 
 **1. The average is an average.** Nationally the Black community share was about 16.5 percent. At Oak Grove it was 3.5 percent and at Capitol Heights 10.5 percent. **No school was the average school.** If you write "Black communities paid 16.5 percent of the cost of these schools," you are describing a sum, not a building. **Describe whichever one you actually mean.**
 
-**2. Two similar schools, five years apart, are not comparable without work.** Both are two-teacher plans on two acres in Maryland. One cost 2,850 dollars and one cost 4,750. **This course has not adjusted either figure for inflation and has not established why they differ.** Site, materials, labour costs, plan revision and local prices are all candidates. **Naming what you have not established is part of the report.**
+**2. Two similar schools, five years apart, are not comparable without work.** Both are two-teacher plans on two acres in Maryland. One cost 2,850 dollars and one cost 4,750. **This course has not adjusted either figure for inflation and has not established why they differ.** Site, materials, labor costs, plan revision and local prices are all candidates. **Naming what you have not established is part of the report.**
 
-**3. The card records money and not people.** It does not say how the 500 dollars was raised, over how long, by how many households, or what anybody gave up. **It does not record refusals**, so you cannot see who was asked and said no, or who was never asked. It does not record whether the labour column exists on this card because no labour was given or because nobody wrote it down. **A budget line is the shadow a campaign leaves. It is not the campaign.**
+**3. The card records money and not people.** It does not say how the 500 dollars was raised, over how long, by how many households, or what anybody gave up. **It does not record refusals**, so you cannot see who was asked and said no, or who was never asked. It does not record whether the labor column exists on this card because no labor was given or because nobody wrote it down. **A budget line is the shadow a campaign leaves. It is not the campaign.**
 
-**4. The headings are historical evidence in themselves.** "Negroes" and "Whites" are the card's own printed column headings. **They tell you the program's accounting was organised by race at the level of the form**, which is a fact about the administrative world these buildings were raised in, and it is worth stating plainly rather than paraphrasing away.
+**4. The headings are historical evidence in themselves.** "Negroes" and "Whites" are the card's own printed column headings. **They tell you the program's accounting was organized by race at the level of the form**, which is a fact about the administrative world these buildings were raised in, and it is worth stating plainly rather than paraphrasing away.
 
 ## How to do this yourself
 
@@ -834,7 +834,7 @@ From the digitised card (Fisk University, n.d.-b):
             options: [
               "Seventy thousand feet of lumber, cut by hand, hauled by their own teams to a mill they owned, laid on a lot they had bought",
               "A cash sum raised at a long series of box parties and educational rallies held across the county over the course of one winter",
-              "Two acres of land donated by the local church, along with the labour of every household in the district",
+              "Two acres of land donated by the local church, along with the labor of every household in the district",
               "The full cost of the building, which the county then declined to accept into the public school system",
             ],
             correctIndex: 0,
@@ -844,13 +844,13 @@ From the digitised card (Fisk University, n.d.-b):
           {
             prompt: "Why does the course quote Hoffschwelle's correction to the box-party account?",
             options: [
-              "Because the tidy division of women raising money and men giving labour leaves out that women and children put in labour as well",
+              "Because the tidy division of women raising money and men giving labor leaves out that women and children put in labor as well",
               "Because box parties were much less common than the educational rallies held in the other fourteen states where the program operated",
               "Because the amounts raised at box parties were too small to appear in the surviving Fund records",
               "Because the practice was borrowed from white school improvement leagues operating in the same counties",
             ],
             correctIndex: 0,
-            explanation: "Although the men committed themselves as heads of their families, women and children put in their labour as well.",
+            explanation: "Although the men committed themselves as heads of their families, women and children put in their labor as well.",
             sourceLessonSlug: "sn-money-matching-model",
           },
           {
@@ -916,13 +916,13 @@ From the digitised card (Fisk University, n.d.-b):
           {
             prompt: "Why is 'labour valued at 142 dollars 50 cents' a figure to handle carefully?",
             options: [
-              "Because labour contributions were recorded only in Alabama and cannot be compared across states",
+              "Because labor contributions were recorded only in Alabama and cannot be compared across states",
               "Because it is a price somebody set for other people's work, and the records do not say who or on what basis",
-              "Because the Fund refused to count labour toward a match after the program moved to Nashville in 1920",
-              "Because the value of unpaid labour cannot honestly be converted into dollars without a published contemporary wage series",
+              "Because the Fund refused to count labor toward a match after the program moved to Nashville in 1920",
+              "Because the value of unpaid labor cannot honestly be converted into dollars without a published contemporary wage series",
             ],
             correctIndex: 1,
-            explanation: "A contribution figure that includes valued labour is partly an accounting decision, and you should say so whenever you quote one.",
+            explanation: "A contribution figure that includes valued labor is partly an accounting decision, and you should say so whenever you quote one.",
             sourceLessonSlug: "sn-money-the-share",
           },
           {
@@ -991,12 +991,12 @@ From the digitised card (Fisk University, n.d.-b):
 
 Published by **Tuskegee Normal and Industrial Institute**, drafted by Tuskegee's staff architect **Robert R. Taylor** and **W. A. Hazel** (Obenauer & Brown, 2015, p. 7).
 
-**Taylor is worth knowing about.** He enrolled at the Massachusetts Institute of Technology in 1888 and graduated with the class of 1892, the first known Black student to attend and graduate from MIT, and he is regarded as the first academically trained African American architect. He was recruited to Tuskegee by Booker T. Washington and spent a forty-year career there (MIT Black History, n.d.). **The standardised plan that shaped thousands of schools for Black children in the segregated South was drawn by a Black architect at a Black institution.** That is a fact about authorship and it belongs in any account of this program.
+**Taylor is worth knowing about.** He enrolled at the Massachusetts Institute of Technology in 1888 and graduated with the class of 1892, the first known Black student to attend and graduate from MIT, and he is regarded as the first academically trained African American architect. He was recruited to Tuskegee by Booker T. Washington and spent a forty-year career there (MIT Black History, n.d.). **The standardized plan that shaped thousands of schools for Black children in the segregated South was drawn by a Black architect at a Black institution.** That is a fact about authorship and it belongs in any account of this program.
 
 **What the book contained** (Obenauer & Brown, 2015, p. 7):
 - Designs for a **one-teacher school**, two variations of a **five-teacher school**, a **central school** and a **training school**
 - An **industrial building**, a **privy**, and **two homes for teachers**
-- Windows **grouped into batteries** to maximise natural light
+- Windows **grouped into batteries** to maximize natural light
 - Buildings **raised on short piers** for ventilation and moisture control
 - **Folding doors** in the one-teacher plan between workroom and classroom, so the space could open up for events, and a provision for a **future classroom addition**
 
@@ -1012,7 +1012,7 @@ In August and September 1919, **Fletcher B. Dresslar**, professor at Peabody Col
 
 **Origin.** Plans drafted by Dresslar were first published by **Tennessee's Department of Education in 1921** as a bulletin called *Community School Plans*, then brought to Nashville by **Samuel L. Smith** and redrawn for the Rosenwald Fund by **J. E. Crain** and **E. M. Tisdale**, issued one at a time in four-page pamphlets and "made available upon request to black and white schools alike" (Obenauer & Brown, 2015, p. 11).
 
-**Hold that last clause.** The plan books drawn for Black schools in the segregated South were distributed to white schools too. **A standard that was good enough to be used across the colour line, in a system built to keep the schools unequal, is a fact worth stating without decorating.**
+**Hold that last clause.** The plan books drawn for Black schools in the segregated South were distributed to white schools too. **A standard that was good enough to be used across the color line, in a system built to keep the schools unequal, is a fact worth stating without decorating.**
 
 **The editions, and what each one changed** (Obenauer & Brown, 2015, pp. 11-14, 53-54):
 
@@ -1021,8 +1021,8 @@ In August and September 1919, **Fletcher B. Dresslar**, professor at Peabody Col
 | **Fall 1921** | First Fund edition, issued as separate four-page pamphlets |
 | **1924** | An entirely new booklet, **seventeen plans**, one to seven classrooms, for grades one through seven or eight, plus contractor specifications for teacherages |
 | **By 1927** | Teacherage designs of four, five and six rooms in Colonial Revival or Craftsman style |
-| **1928** | Smith called Crain and Tisdale back to emphasise **larger** schools: a new ten-teacher plan, and all three-teacher and larger plans drafted with brick facades |
-| **1931** | Final revision by **Walter R. McCormick** with Crain: larger, more permanent buildings, mostly Georgian Colonial Revival, room arrangements standardised at three-teacher and above, every plan including a **community room** for meetings, health clinics and home economics, and every plan designed to make future additions easier |
+| **1928** | Smith called Crain and Tisdale back to emphasize **larger** schools: a new ten-teacher plan, and all three-teacher and larger plans drafted with brick facades |
+| **1931** | Final revision by **Walter R. McCormick** with Crain: larger, more permanent buildings, mostly Georgian Colonial Revival, room arrangements standardized at three-teacher and above, every plan including a **community room** for meetings, health clinics and home economics, and every plan designed to make future additions easier |
 
 **The 1931 edition is the program describing its own future and getting it wrong.** It was drawn for urban schools and for rural consolidation. **The Fund ended the building program the next year.**
 
@@ -1068,11 +1068,11 @@ Through the 1920s the program aided the construction of **more than four hundred
         },
         {
           prompt: "Name four things a Rosenwald school card does not record.",
-          answer: "How the money was raised, over how long, by how many households, and who refused. It also does not say whether a blank labour column means no labour was given or that nobody wrote it down. A budget line is the shadow a campaign leaves, not the campaign.",
+          answer: "How the money was raised, over how long, by how many households, and who refused. It also does not say whether a blank labor column means no labor was given or that nobody wrote it down. A budget line is the shadow a campaign leaves, not the campaign.",
         },
         {
           prompt: "Why does this course reproduce the card's column headings rather than paraphrasing them?",
-          answer: "Because 'Negroes' and 'Whites' are the form's own printed headings, and they show that the program's accounting was organised by race at the level of the paperwork. That is evidence about the administrative world these buildings were raised in.",
+          answer: "Because 'Negroes' and 'Whites' are the form's own printed headings, and they show that the program's accounting was organized by race at the level of the paperwork. That is evidence about the administrative world these buildings were raised in.",
         },
       ],
     },
@@ -1091,17 +1091,17 @@ From the North Carolina documentation form's description of Community School Pla
 3. **Windows on the pupils' left.** Floor plans **always showed seating arrangements with the windows at the pupils' left side, so that their writing arms would not cast shadows on their desk tops.** That single specification tells you the Fund was thinking about a right-handed child's hand at the moment of writing.
 4. **No cross lighting.** Windows were deliberately confined so that light did not come from two opposing directions.
 5. **Breeze windows.** For some plans Smith added windows **high under the eaves of exterior walls**, placed there to avoid cross lighting, or **above the blackboard on interior walls**, designed to pull air across the room and into an adjacent hallway or classroom.
-6. **Window shades specified.** Shade **arrangements, colours and translucence** were specified to maximise interior illumination.
+6. **Window shades specified.** Shade **arrangements, colors and translucence** were specified to maximize interior illumination.
 
 ## The paint rules, which are stricter than you expect
 
-**The Fund permitted only two interior paint treatments**, chosen to maximise interior light (Obenauer & Brown, 2015, p. 54):
+**The Fund permitted only two interior paint treatments**, chosen to maximize interior light (Obenauer & Brown, 2015, p. 54):
 - a **cream ceiling with buff walls** and walnut-stained wainscoting or dado, or
 - an **ivory cream ceiling with light gray walls** and walnut-stained wainscoting or dado.
 
 **By 1922 the Fund was sending paint chips with its plan books.** For exteriors, three schemes were specified: "white trimmed in gray or gray trimmed in white would be attractive. If it is desired to use a wood preservative stain, a nut brown trimmed in white or cream would be satisfactory" (quoted in Obenauer & Brown, 2015, p. 54).
 
-**A foundation mailing paint chips to rural counties is a serious fact about how standardisation actually travels.** The plan is not the drawing. The plan is the drawing plus the colour plus the shade fabric plus the instruction to pay "careful attention to window framing, double flooring, and the building's underpinnings" (quoted in Obenauer & Brown, 2015, p. 54).
+**A foundation mailing paint chips to rural counties is a serious fact about how standardization actually travels.** The plan is not the drawing. The plan is the drawing plus the color plus the shade fabric plus the instruction to pay "careful attention to window framing, double flooring, and the building's underpinnings" (quoted in Obenauer & Brown, 2015, p. 54).
 
 ## The building's body
 
@@ -1174,7 +1174,7 @@ Most designs in *Community School Plans* included an **industrial room**, intend
 
 **Nathan Carter Newbold**, a white educator, became North Carolina's state agent for Negro rural schools and directed the state's Division of Negro Education. He persuaded legislators and local communities to allocate funds and disbursed the state's early Rosenwald money (Obenauer & Brown, 2015, pp. 20-22).
 
-**Charles H. Moore** of Greensboro became Newbold's **first African American assistant in 1918** and organised **school improvement leagues** across the state, which ran competitive money-raising campaigns (Obenauer & Brown, 2015, pp. 21, 23).
+**Charles H. Moore** of Greensboro became Newbold's **first African American assistant in 1918** and organized **school improvement leagues** across the state, which ran competitive money-raising campaigns (Obenauer & Brown, 2015, pp. 21, 23).
 
 **William Frontis Credle** ran schoolhouse planning for both Black and white communities and was successful enough that Smith recruited him to Nashville in 1929 to help administer the whole southern program. The form records Rosenwald joking, "Go ahead and employ him. He is building so many schools in North Carolina we will save money by bringing him into our office" (quoted in Obenauer & Brown, 2015, p. 22).
 
@@ -1184,7 +1184,7 @@ Most designs in *Community School Plans* included an **industrial room**, intend
 - He came to public instruction through his wife, **Marie G. Davis**, principal of Charlotte's Black **Fairview School**, where he helped train young elementary teachers in his spare time.
 - After retiring from teaching in **1920** he became North Carolina's **Supervisor of Rosenwald Buildings**.
 - He crossed the state's **500-mile length by automobile**, sometimes away from home for weeks, generating support community by community. Historian Thomas W. Hanchett's assessment, quoted in the form, is that Davis "almost single-handedly" generated the support for Rosenwald schools across North Carolina (Obenauer & Brown, 2015, pp. 22-23).
-- **By 1921 he had worked out that the local church was the decisive ally**, because in a region where white residents discouraged Black participation in nearly any organised activity, "churches provided the single strong institutional framework for Afro-American endeavors" (quoted in Obenauer & Brown, 2015, p. 23). In many communities the church donated the two acres.
+- **By 1921 he had worked out that the local church was the decisive ally**, because in a region where white residents discouraged Black participation in nearly any organized activity, "churches provided the single strong institutional framework for Afro-American endeavors" (quoted in Obenauer & Brown, 2015, p. 23). In many communities the church donated the two acres.
 
 **Davis in 1927, quoted in the documentation form:** "White people in our state are not asked to sweat blood [so] that their children may be helped through the schools to be good citizens" (quoted in Obenauer & Brown, 2015, p. 23).
 
@@ -1202,7 +1202,7 @@ The Rosenwald program did not stand alone. It ran alongside the **Peabody Educat
 
 **The Jeanes teacher is the role most worth knowing, and it has a founder with a name.**
 
-**Virginia Estelle Randolph** was born in Richmond in **May 1870** and began teaching at the Mountain Road School in **Henrico County, Virginia**. In **October 1908 she became the first countywide Jeanes Supervising Industrial Teacher in the South**, travelling weekly to more than twenty Black schools in the county, sharing teaching methods, establishing school improvement leagues and drawing communities into the classroom. Her approach became known as **the Henrico Plan**, and a thousand copies of it were distributed to supervisors across the South. She died on **16 March 1958**. The **Virginia Randolph Home Economics Cottage**, built in 1937, became a museum in her memory and was designated a **National Historic Landmark in 1974** (Encyclopedia Virginia, n.d.).
+**Virginia Estelle Randolph** was born in Richmond in **May 1870** and began teaching at the Mountain Road School in **Henrico County, Virginia**. In **October 1908 she became the first countywide Jeanes Supervising Industrial Teacher in the South**, traveling weekly to more than twenty Black schools in the county, sharing teaching methods, establishing school improvement leagues and drawing communities into the classroom. Her approach became known as **the Henrico Plan**, and a thousand copies of it were distributed to supervisors across the South. She died on **16 March 1958**. The **Virginia Randolph Home Economics Cottage**, built in 1937, became a museum in her memory and was designated a **National Historic Landmark in 1974** (Encyclopedia Virginia, n.d.).
 
 **A Jeanes teacher was a supervisor of other teachers, in a system that did not otherwise supervise them.** That is a professional infrastructure, built inside an exclusion, and it is the reason the Rosenwald buildings had anybody trained to put in them.
 
@@ -1220,7 +1220,7 @@ The North Carolina form describes the before and after directly. Previously teac
 
 **The plan books carry their authors: Taylor, Hazel, Dresslar, Smith, Crain, Tisdale, McCormick.** The state offices carry Newbold, Moore, Credle and Davis. The cards carry a county, an application number and four dollar figures.
 
-**The carpenters do not appear.** Neither do the teamsters who hauled the lumber at Lumber Bridge, the women whose labour Hoffschwelle had to correct the record to include, the children who worked on the sites, or the households that gave a week's wages. **Between five thousand buildings and a card file, the names of nearly everyone who built them are missing from this particular archive.**
+**The carpenters do not appear.** Neither do the teamsters who hauled the lumber at Lumber Bridge, the women whose labor Hoffschwelle had to correct the record to include, the children who worked on the sites, or the households that gave a week's wages. **Between five thousand buildings and a card file, the names of nearly everyone who built them are missing from this particular archive.**
 
 **That is a finding about the archive, not a gap in the history**, and it points at where the real work is: county deed books, church minute books, Black newspapers, school improvement league records, and the memories held by descendant communities and alumni associations who are, right now, the people restoring these buildings. **Section 5 sends you to them.**
 
@@ -1231,7 +1231,7 @@ The North Carolina form describes the before and after directly. Previously teac
       recallContent: [
         {
           prompt: "What was the design problem these buildings were solving, and give three rules that follow from it.",
-          answer: "Daylight, because most rural areas had no electricity. The plans specified a north-south or east-west orientation to catch light from one direction, grouped banks of tall double-hung sash windows, no cross lighting, seating with the windows on the pupils' left so writing arms cast no shadow, breeze windows high under the eaves or above the blackboard, and specified window shade colours and translucence.",
+          answer: "Daylight, because most rural areas had no electricity. The plans specified a north-south or east-west orientation to catch light from one direction, grouped banks of tall double-hung sash windows, no cross lighting, seating with the windows on the pupils' left so writing arms cast no shadow, breeze windows high under the eaves or above the blackboard, and specified window shade colors and translucence.",
         },
         {
           prompt: "How many interior paint treatments did the Fund permit, and what did it start posting in 1922?",
@@ -1270,7 +1270,7 @@ Two columns, one calendar. **Neither column is a comment on the other. Read down
 
 | Years | The building record | The other record on the same calendar |
 |---|---|---|
-| **1909 and 1913** | March 1913: the first Rosenwald school opens at Loachapoka, Alabama, for 942 dollars 50 cents, of which local Black residents contributed 292.50 including labour valued at 142.50 (Obenauer & Brown, 2015, p. 6) | Four years earlier, Alabama's public spending is recorded by the National Park Service at about 20 dollars per white student against 67 cents per Black student (National Park Service, n.d.) |
+| **1909 and 1913** | March 1913: the first Rosenwald school opens at Loachapoka, Alabama, for 942 dollars 50 cents, of which local Black residents contributed 292.50 including labor valued at 142.50 (Obenauer & Brown, 2015, p. 6) | Four years earlier, Alabama's public spending is recorded by the National Park Service at about 20 dollars per white student against 67 cents per Black student (National Park Service, n.d.) |
 | **1920 to 1932** | Oklahoma builds 198 Rosenwald buildings in 44 counties: 176 schoolhouses, 16 teacherages, 6 shops (Oklahoma Historical Society, n.d.-a) | 31 May and 1 June 1921: over eighteen hours the Greenwood district of Tulsa is destroyed, more than a thousand homes and businesses burned, credible death estimates ranging from fifty to three hundred, the vast majority of Tulsa's Black population made homeless, thousands living in tents through the winter of 1921 to 1922 (Oklahoma Historical Society, n.d.-b) |
 | **1921 to 1932** | Florida builds 140 Rosenwald funded schools and auxiliary buildings (Florida Department of State, n.d.-a) | January 1923: the Black community at Rosewood, Levy County, Florida is destroyed. Seventy years later the Florida Board of Regents commissions a documented history, submitted 22 December 1993, and the legislature passes Chapter 94-359 compensating survivors and descendants (Florida Department of State, n.d.-b; Jones et al., 1993) |
 | **1927** | Community School Plans now includes teacherage designs of four, five and six rooms, and ten-teacher plans and larger are being approved (Obenauer & Brown, 2015, pp. 12, 16) | 21 November 1927: in *Gong Lum v. Rice* the Supreme Court holds that a Chinese American child, a United States citizen, is not denied equal protection by being classed among the races assigned to schools separate from those provided for whites (Gong Lum v. Rice, 1927) |
@@ -1340,7 +1340,7 @@ Take any subject in the route series and build the table: **a year column, a "wh
         },
         {
           prompt: "Who was Virginia Estelle Randolph, and what was the Henrico Plan?",
-          answer: "Born May 1870 in Richmond, she became the first countywide Jeanes Supervising Industrial Teacher in the South in October 1908, in Henrico County, Virginia, travelling weekly to more than twenty Black schools. Her approach became the Henrico Plan and a thousand copies were distributed to supervisors across the South. She died 16 March 1958.",
+          answer: "Born May 1870 in Richmond, she became the first countywide Jeanes Supervising Industrial Teacher in the South in October 1908, in Henrico County, Virginia, traveling weekly to more than twenty Black schools. Her approach became the Henrico Plan and a thousand copies were distributed to supervisors across the South. She died 16 March 1958.",
         },
         {
           prompt: "What two cautions does the course attach to the claim that Rosenwald schools had better-trained teachers?",
@@ -1348,7 +1348,7 @@ Take any subject in the route series and build the table: **a year column, a "wh
         },
         {
           prompt: "Whom does this archive fail to name, and what kind of finding is that?",
-          answer: "The carpenters, the teamsters, the women whose labour had to be corrected back into the record, the children, and the households that gave a week's wages. That is a finding about the archive, and it points to county deed books, church minute books, Black newspapers, school improvement league records and descendant communities.",
+          answer: "The carpenters, the teamsters, the women whose labor had to be corrected back into the record, the children, and the households that gave a week's wages. That is a finding about the archive, and it points to county deed books, church minute books, Black newspapers, school improvement league records and descendant communities.",
         },
       ],
     },
@@ -1356,7 +1356,7 @@ Take any subject in the route series and build the table: **a year column, a "wh
       slug: "sn-map",
       title: "13 · Map: the program's places, and the same calendar elsewhere",
       section: "Section 4 · At the same time",
-      body: `**Read this before you touch the map, because the map's limits and its colour scheme are both part of the lesson.**
+      body: `**Read this before you touch the map, because the map's limits and its color scheme are both part of the lesson.**
 
 ## What this map can and cannot do
 
@@ -1366,7 +1366,7 @@ Take any subject in the route series and build the table: **a year column, a "wh
 
 **And 5,357 buildings cannot be mapped as dots on a world projection at all.** A distributed construction program across fifteen states is not a set of pins. **If you want the real geography, you want a state-by-state count and a county list**, and lesson 2 gave you four states' worth to start from.
 
-## The colour scheme, which is the argument
+## The color scheme, which is the argument
 
 **Blue: the program's own places.** Where the money came from, where the plans were drawn, where the archive is.
 
@@ -1374,7 +1374,7 @@ Take any subject in the route series and build the table: **a year column, a "wh
 
 **Amber: one state, both records.** Two markers where the building record and the other record are documented in the same state within the same years. **These are the markers that make the point, because they cannot be read as two separate stories about two separate places.**
 
-**There is no ordering implied by the colours and no arithmetic between them.** Three blue markers and two red markers do not mean anything is three to two. **A map cannot weigh a record and this one is not trying to.**
+**There is no ordering implied by the colors and no arithmetic between them.** Three blue markers and two red markers do not mean anything is three to two. **A map cannot weigh a record and this one is not trying to.**
 
 ## Sources
 - Florida Department of State, Division of Historical Resources. (n.d.-a). *Okahumpka Rosenwald School*. https://dos.fl.gov/historical/preservation/national-register/recent-national-register-listings/okahumpka-rosenwald-school/
@@ -1447,7 +1447,7 @@ Take any subject in the route series and build the table: **a year column, a "wh
             title: "Washington, D.C.: Gong Lum v. Rice, 21 November 1927",
             color: "#b91c1c",
             description:
-              "The legal frame the buildings stood inside. Gong Lum, a taxpaying resident of the Rosedale school district in Bolivar County, Mississippi, sought to enrol his daughter Martha, a nine-year-old United States citizen of Chinese descent, in Rosedale's school for white children. The Supreme Court held that she was not denied equal protection by being classed among the races assigned to schools separate from those provided for whites. Submitted 12 October and decided 21 November 1927, the same year the Fund's plan books added four, five and six-room teacherages and began approving ten-teacher schools. The Court sat in the Capitol in 1927; its own building did not open until 1935. Approximate point for the Capitol.",
+              "The legal frame the buildings stood inside. Gong Lum, a taxpaying resident of the Rosedale school district in Bolivar County, Mississippi, sought to enroll his daughter Martha, a nine-year-old United States citizen of Chinese descent, in Rosedale's school for white children. The Supreme Court held that she was not denied equal protection by being classed among the races assigned to schools separate from those provided for whites. Submitted 12 October and decided 21 November 1927, the same year the Fund's plan books added four, five and six-room teacherages and began approving ten-teacher schools. The Court sat in the Capitol in 1927; its own building did not open until 1935. Approximate point for the Capitol.",
           },
         ],
       },
@@ -1496,7 +1496,7 @@ Take any subject in the route series and build the table: **a year column, a "wh
 
 **4. Look at what the building is standing on.** Brick piers or a raised masonry foundation, put there to limit rising damp. **A building sitting flat on a slab has either been altered or is not what you think it is.**
 
-**5. Find the partition.** Between two classrooms, look for a wider-than-usual opening, a seam in the wall, a track in the floor or ceiling, or a pair of doors that fold. **The room becoming a hall is the community centre thesis of lesson 1, and it leaves physical evidence.**
+**5. Find the partition.** Between two classrooms, look for a wider-than-usual opening, a seam in the wall, a track in the floor or ceiling, or a pair of doors that fold. **The room becoming a hall is the community center thesis of lesson 1, and it leaves physical evidence.**
 
 **6. Find the industrial room, and think about it.** Usually a distinct room with its own character. **Lesson 10 gave you three readings of what that room was for. Standing in it does not settle which reading is right**, and you should notice the pull to let a nice room settle an argument.
 
@@ -1504,16 +1504,16 @@ Take any subject in the route series and build the table: **a year column, a "wh
 
 **8. Read every sign, plaque and marker, and record who wrote it.** A historical marker is a public document with an author, a date and a sponsor. **It tells you what a community and an agency agreed to say in public, in a particular year.** Note the sponsor's name every time.
 
-**9. Look for who is using the building now.** A church, a community centre, a museum, a private home, a barn, a storage shed, nothing. **Each of those is a different chapter and a different set of records.**
+**9. Look for who is using the building now.** A church, a community center, a museum, a private home, a barn, a storage shed, nothing. **Each of those is a different chapter and a different set of records.**
 
 **10. Look for the restoration work itself.** New sills, new sash, replaced siding, a new roof, a fundraising sign, scaffolding. **A building being repaired is a live civic project with a budget, a committee and usually a website**, and that is the thing lesson 15 sends you to find.
 
 ## What the tour cannot show you
 
 - **It cannot show you the budget.** You cannot photograph 100 dollars raised at a box party. **The card at Fisk has it. The building does not.**
-- **It cannot show you a school year.** Term length, enrolment, how far children walked, whether there was a bus. **Those are in the state's education reports.**
+- **It cannot show you a school year.** Term length, enrollment, how far children walked, whether there was a bus. **Those are in the state's education reports.**
 - **It cannot show you the teacher.** Names, training, salary and tenure are in county and state school records and in the Black press.
-- **It cannot show you who is not in the room.** Children who could not attend because the term was short, the walk was long, or the family needed the labour. **Absence is not photographable and it is not therefore absent from the history.**
+- **It cannot show you who is not in the room.** Children who could not attend because the term was short, the walk was long, or the family needed the labor. **Absence is not photographable and it is not therefore absent from the history.**
 - **It cannot show you the other column.** **Nothing in a well-restored schoolhouse tells you what the state was spending per child that year.** Lesson 12 is the reason you carry that number with you.
 
 ## The tone instruction, which is a research instruction
@@ -1537,7 +1537,7 @@ Take any subject in the route series and build the table: **a year column, a "wh
         },
         {
           prompt: "What do the three marker colours mean, and what do they deliberately not mean?",
-          answer: "Blue is the program's own places, red is the other record on the same calendar, and amber is one state where both records are documented in the same years. The colours imply no ordering and no arithmetic: three blue and two red do not make anything three to two.",
+          answer: "Blue is the program's own places, red is the other record on the same calendar, and amber is one state where both records are documented in the same years. The colors imply no ordering and no arithmetic: three blue and two red do not make anything three to two.",
         },
         {
           prompt: "Why are the amber markers the ones that make the point?",
@@ -1561,9 +1561,9 @@ Take any subject in the route series and build the table: **a year column, a "wh
 
 The buildings did not fail. **The school system they were built inside was dismantled, and they went with it.**
 
-After **Brown v. Board of Education** in 1954, and through the school consolidation of the 1950s and the desegregation of the 1960s and 1970s, counties closed their Rosenwald schools. Some buildings were folded into desegregation plans. Most were not. **Many were abandoned; others became community centres, churches, private homes, barns and storage sheds** (National Park Service, n.d.; National Trust for Historic Preservation, n.d.-a).
+After **Brown v. Board of Education** in 1954, and through the school consolidation of the 1950s and the desegregation of the 1960s and 1970s, counties closed their Rosenwald schools. Some buildings were folded into desegregation plans. Most were not. **Many were abandoned; others became community centers, churches, private homes, barns and storage sheds** (National Park Service, n.d.; National Trust for Historic Preservation, n.d.-a).
 
-**This is a knot and you should feel it as one.** A legal victory against segregated schooling is why a network of community-built schools was closed, and in many places why Black principals and teachers lost their positions and Black communities lost the institution at their centre. **That is not an argument against desegregation and this course is not making one.** It is the observation that **a remedy and a loss can be the same event**, which is a fact about how institutional change actually lands, and it is the exact structural twin of the design rule you have been working with. **Do not simplify it in either direction.**
+**This is a knot and you should feel it as one.** A legal victory against segregated schooling is why a network of community-built schools was closed, and in many places why Black principals and teachers lost their positions and Black communities lost the institution at their center. **That is not an argument against desegregation and this course is not making one.** It is the observation that **a remedy and a loss can be the same event**, which is a fact about how institutional change actually lands, and it is the exact structural twin of the design rule you have been working with. **Do not simplify it in either direction.**
 
 ## What preservation has done, and the instrument it used
 
@@ -1581,7 +1581,7 @@ Several states have prepared **National Register of Historic Places multiple pro
 
 ## The federal picture, stated carefully
 
-**What has happened:** the **Julius Rosenwald and the Rosenwald Schools Act of 2020**, Public Law 116-336, was approved on **13 January 2021**. It directs the Secretary of the Interior to conduct a **special resource study** of sites associated with Julius Rosenwald's life and legacy, to evaluate national significance, determine suitability and feasibility of designating the study area as a unit of the National Park System including an interpretive centre in or near Chicago, consider other preservation alternatives, consult interested parties, and identify cost estimates. The report is due **not later than three years after funds are first made available** for the study (Pub. L. No. 116-336, 2021, sec. 2).
+**What has happened:** the **Julius Rosenwald and the Rosenwald Schools Act of 2020**, Public Law 116-336, was approved on **13 January 2021**. It directs the Secretary of the Interior to conduct a **special resource study** of sites associated with Julius Rosenwald's life and legacy, to evaluate national significance, determine suitability and feasibility of designating the study area as a unit of the National Park System including an interpretive center in or near Chicago, consider other preservation alternatives, consult interested parties, and identify cost estimates. The report is due **not later than three years after funds are first made available** for the study (Pub. L. No. 116-336, 2021, sec. 2).
 
 **What has not happened:** **a study authorisation is not a park.** As this course is written, a **Julius Rosenwald and Rosenwald Schools National Historical Park has not been established.** Bills to establish one, **S. 3925 and H.R. 8887 in the 119th Congress**, were introduced in 2026 and the National Trust's own updates page describes them as pending legislation it is asking the public to support (National Trust for Historic Preservation, n.d.-b; U.S. Congress, 2026a, 2026b).
 
@@ -1620,7 +1620,7 @@ The 2020 Act names specific sites for special emphasis in the study. **This is a
 2. **Your state historic preservation office.** Ask whether a **Rosenwald multiple property documentation form** exists for your state. If it does, it has a county list.
 3. **The National Register of Historic Places**, searchable through the National Park Service, for individually listed schools and their nominations. **A nomination is a free, detailed, footnoted monograph about one building.**
 4. **The National Trust's Rosenwald Schools program** (https://savingplaces.org/places/rosenwald-schools), for current preservation projects and who is running them.
-5. **Local stewards.** County historical societies, alumni associations, churches and descendant family groups. **Many surviving schools are being restored by exactly these organisations, and they know things no archive holds.**
+5. **Local stewards.** County historical societies, alumni associations, churches and descendant family groups. **Many surviving schools are being restored by exactly these organizations, and they know things no archive holds.**
 6. **County records.** Deed books for the two acres, school board minutes for the closure, and the local Black newspaper for the campaign that raised the money.
 
 **Then write down, before you go any further, the three things you now know and the three things you do not.** That list is the beginning of the assignment in Section 6.
@@ -1645,7 +1645,7 @@ The 2020 Act names specific sites for special emphasis in the study. **This is a
         },
         {
           prompt: "Name three things a 360 tour of a schoolhouse cannot show you.",
-          answer: "The budget, since you cannot photograph 100 dollars raised at a box party; the school year, meaning term length, enrolment and how far children walked; the teacher's name, training and salary; who is not in the room; and what the state was spending per child that year.",
+          answer: "The budget, since you cannot photograph 100 dollars raised at a box party; the school year, meaning term length, enrollment and how far children walked; the teacher's name, training and salary; who is not in the room; and what the state was spending per child that year.",
         },
         {
           prompt: "State the two rules that follow from these buildings being live places rather than ruins.",
@@ -1671,7 +1671,7 @@ The 2020 Act names specific sites for special emphasis in the study. **This is a
               "J. E. Crain and E. M. Tisdale, the draughtsmen who redrew Tennessee's state plans for the Rosenwald Fund",
             ],
             correctIndex: 2,
-            explanation: "The standardised plan that shaped thousands of schools for Black children in the segregated South was drawn by a Black architect at a Black institution.",
+            explanation: "The standardized plan that shaped thousands of schools for Black children in the segregated South was drawn by a Black architect at a Black institution.",
             sourceLessonSlug: "sn-built-the-plans",
           },
           {
@@ -1714,7 +1714,7 @@ The 2020 Act names specific sites for special emphasis in the study. **This is a
             prompt: "How many interior paint treatments did the Fund permit, and why?",
             options: [
               "One, to reduce cost and to make bulk purchasing possible for the counties administering grants",
-              "Two, both chosen to maximise interior light, with paint chips posted out from 1922",
+              "Two, both chosen to maximize interior light, with paint chips posted out from 1922",
               "Three, matching the three exterior schemes specified in the same edition of the plan book",
               "None, since interior finishes were left entirely to the local school board and its contractor",
             ],
@@ -1750,7 +1750,7 @@ The 2020 Act names specific sites for special emphasis in the study. **This is a
             prompt: "What was a Jeanes Supervising Industrial Teacher, and who was the first?",
             options: [
               "A supervisor of other teachers in a system with no other supervision; Virginia Estelle Randolph, from October 1908 in Henrico County",
-              "A travelling instructor employed by the Rosenwald Fund to inspect newly completed school buildings and to certify each of them as fit for grant payment",
+              "A traveling instructor employed by the Rosenwald Fund to inspect newly completed school buildings and to certify each of them as fit for grant payment",
               "A county officer appointed under state law to allocate Jeanes Fund money between Black and white rural schools",
               "A teacher trained at Tuskegee and placed in a one-teacher Rosenwald school for a fixed term of three years",
             ],
@@ -1812,7 +1812,7 @@ The 2020 Act names specific sites for special emphasis in the study. **This is a
               "Between a third and a half, mostly the larger masonry schools built after the 1928 revisions",
               "About 10 to 12 percent",
               "Rather more than half, though most have been altered beyond recognition since the 1960s",
-              "An unknown share, because no organisation has attempted a comprehensive survey since 1932",
+              "An unknown share, because no organization has attempted a comprehensive survey since 1932",
             ],
             correctIndex: 1,
             explanation: "That is roughly five hundred to six hundred and fifty buildings out of five thousand three hundred and fifty-seven.",
@@ -1821,7 +1821,7 @@ The 2020 Act names specific sites for special emphasis in the study. **This is a
           {
             prompt: "How does this course describe the relationship between desegregation and the closure of these schools?",
             options: [
-              "As an argument against desegregation, which cost these communities the institution that stood at their centre",
+              "As an argument against desegregation, which cost these communities the institution that stood at their center",
               "As an unrelated coincidence, since consolidation would have closed the schools in any case",
               "As a knot: a remedy and a loss can be the same event, and it must not be simplified either way",
               "As outside the scope of the course, which ends with the Fund's building program in 1932",
@@ -1863,7 +1863,7 @@ Write **900 to 1,300 words** of creative nonfiction about **one Rosenwald school
 
 "Rosenwald schools" is a topic. **A subject is one building in one county with one card.** Use lesson 15's six steps to find one. **A school near you is almost always the better choice**, because you can go and stand in front of it and because the local records are reachable.
 
-**If you cannot find one near you, use one of the fourteen named in Public Law 116-336.** They have federal provenance, published documentation and, in several cases, active stewardship organisations.
+**If you cannot find one near you, use one of the fourteen named in Public Law 116-336.** They have federal provenance, published documentation and, in several cases, active stewardship organizations.
 
 **If you cannot visit, that is a constraint you disclose in the piece**, and it changes what you may honestly claim.
 
@@ -1882,7 +1882,7 @@ Four columns: **source, amount, share of total, citation.** Get the amounts from
 
 Two columns, one calendar, a source in every cell.
 
-**Column one: the building record.** The year the school was funded, the year it opened, the plan type, the cost, the community share, the term length if you can find it, the enrolment, the teachers, the closure, what happened to the building afterward.
+**Column one: the building record.** The year the school was funded, the year it opened, the plan type, the cost, the community share, the term length if you can find it, the enrollment, the teachers, the closure, what happened to the building afterward.
 
 **Column two: the other record, in the same county or the same state, in the same years.** **Your first stop is the per-pupil spending figures**, which most states published by race in this period and which state archives hold. Then: the school term length for white and Black schools, transport provision, teacher salaries, and whatever else your state's own education reports separated by race.
 
@@ -1915,7 +1915,7 @@ Pick one and commit.
 2. **No composite or imagined characters.** Real, cited people only. Booker T. Washington, Julius Rosenwald, Robert R. Taylor, W. A. Hazel, Fletcher Dresslar, Samuel L. Smith, J. E. Crain, E. M. Tisdale, Clinton J. Calloway, Margaret Murray Washington, Nathan Carter Newbold, Charles H. Moore, William Frontis Credle, George E. Davis, Marie G. Davis, George T. Rouson, Virginia Estelle Randolph, Edwin Embree. **That is more than enough material.**
 3. **No invented dialogue**, including "she might have said."
 4. **Living people describe themselves.** The grandchildren of the people who built these schools are alive, and many of them are the ones restoring the buildings. **Quote a published interview with a citation, or interview somebody and say that you did.** Never assign words, feelings or motives to a living person.
-5. **Children are not public figures.** If the building is a school today, or a community centre used by children, **no named child, no photograph tied to a name, no address**.
+5. **Children are not public figures.** If the building is a school today, or a community center used by children, **no named child, no photograph tied to a name, no address**.
 6. **No ruin porn and no lost golden age.** A collapsing schoolhouse is not a metaphor. It is a building with an owner, a condition assessment and, sometimes, a fundraising target.
 7. **And the rule this course exists for: no triumph-only version either.** **A community paying twice for one school is not a story about resilience.** You may not close on the lumber, the box party, the acre of cotton or the restoration ribbon. **If your last paragraph makes a reader feel better than your fourth paragraph did, go back and check whether you moved a fact or only moved it later.**
 8. **No "but" between the two records.** Say both. Date both. Cite both. Stop.
@@ -1937,7 +1937,7 @@ A short, checkable piece in which every sentence is either something you read in
       recallContent: [
         {
           prompt: "What is the estimated survival rate of the 5,357 buildings, and what closed them?",
-          answer: "The National Trust estimates 10 to 12 percent survive, roughly five hundred to six hundred and fifty buildings. They closed with school consolidation in the 1950s and desegregation in the 1960s and 1970s after Brown v. Board of Education, and most were abandoned or repurposed as community centres, churches, homes, barns and storage.",
+          answer: "The National Trust estimates 10 to 12 percent survive, roughly five hundred to six hundred and fifty buildings. They closed with school consolidation in the 1950s and desegregation in the 1960s and 1970s after Brown v. Board of Education, and most were abandoned or repurposed as community centers, churches, homes, barns and storage.",
         },
         {
           prompt: "What is a National Register multiple property documentation form, and what is it not?",
@@ -1998,7 +1998,7 @@ A short, checkable piece in which every sentence is either something you read in
 - **The Rosenwald Fund card file itself, at scale.** Two cards were read here. There are roughly five thousand. **Anyone who reads a county's worth and publishes the four columns has made an original contribution.**
 - **State education department annual reports**, which published per-pupil spending, term length and teacher salaries by race for exactly these years.
 - **County deed books**, for the two acres and who conveyed them.
-- **Church minute books**, where the campaigns were organised.
+- **Church minute books**, where the campaigns were organized.
 - **The Black press**, which covered rallies, box parties, openings and closures for the communities they were about.
 - **School improvement league records**, if any survive.
 - **The other states' National Register multiple property documentation forms**, several of which are free PDFs.
@@ -2039,7 +2039,7 @@ A short, checkable piece in which every sentence is either something you read in
         },
         {
           prompt: "What are the rules about living people and about children?",
-          answer: "Living people describe themselves: quote a published interview with a citation or interview somebody and say you did, never assigning words, feelings or motives. And children are not public figures: no named child, no photograph tied to a name, no address, even if the building is a school or community centre today.",
+          answer: "Living people describe themselves: quote a published interview with a citation or interview somebody and say you did, never assigning words, feelings or motives. And children are not public figures: no named child, no photograph tied to a name, no address, even if the building is a school or community center today.",
         },
       ],
     },

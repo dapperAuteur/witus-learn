@@ -75,7 +75,7 @@ Two halves. **The first half teaches you to READ a constitution on three axes:**
 | Axis | The question | Where in the course |
 |---|---|---|
 | **Horizontal** | Who holds executive power, and how is it tied to the legislature? | Section 2 |
-| **Territorial** | Is power divided across territory (federal) or held at the centre (unitary)? | Section 3 |
+| **Territorial** | Is power divided across territory (federal) or held at the center (unitary)? | Section 3 |
 | **Form** | Is it one written, hard-to-change document, or scattered and easily changed? | Section 3 |
 
 **The second half teaches you how a constitution gets MADE**, through four real cases on four different routes (Section 4), before you see the whole world on a map and classify one yourself (Section 5). Read the machinery first, then watch it being built.
@@ -105,9 +105,9 @@ Two halves. **The first half teaches you to READ a constitution on three axes:**
 
 The middle two jobs point in opposite directions and it is worth holding them apart.
 
-**Distribute is about power BETWEEN state bodies.** It says the legislature makes law, the executive carries it out, the courts judge disputes, and (in a federation) the centre does these things and the regions do those. This is the machinery Sections 2 and 3 take apart.
+**Distribute is about power BETWEEN state bodies.** It says the legislature makes law, the executive carries it out, the courts judge disputes, and (in a federation) the center does these things and the regions do those. This is the machinery Sections 2 and 3 take apart.
 
-**Limit is about power BETWEEN the state and the person.** A bill of rights, due-process guarantees, and hard limits on what any branch may do are the state fencing itself in. **A constitution that only distributes power and never limits it can organise a very efficient tyranny.** The two jobs are separate achievements, and a country can be strong on one and weak on the other.
+**Limit is about power BETWEEN the state and the person.** A bill of rights, due-process guarantees, and hard limits on what any branch may do are the state fencing itself in. **A constitution that only distributes power and never limits it can organize a very efficient tyranny.** The two jobs are separate achievements, and a country can be strong on one and weak on the other.
 
 ## Entrench: the job that makes it a constitution and not a statute
 
@@ -160,7 +160,7 @@ This is the question that sorts the world's democracies into the three big famil
 
 ## Question 2 (territorial): federal or unitary?
 
-Does the constitution divide power across territory so that regional governments hold guaranteed powers of their own (**federal**), or does it keep sovereignty at the centre and let regions exist on the centre's terms (**unitary**)? Course 1 taught that in the United States "cities are creatures of the state." This question asks the level up: are the STATES creatures of the nation, or co-sovereigns the nation cannot abolish? **A later course in this path develops the middle layer in depth; here you learn to spot which model a constitution chose**, in Section 3.
+Does the constitution divide power across territory so that regional governments hold guaranteed powers of their own (**federal**), or does it keep sovereignty at the center and let regions exist on the center's terms (**unitary**)? Course 1 taught that in the United States "cities are creatures of the state." This question asks the level up: are the STATES creatures of the nation, or co-sovereigns the nation cannot abolish? **A later course in this path develops the middle layer in depth; here you learn to spot which model a constitution chose**, in Section 3.
 
 ## Question 3 (form): codified or uncodified, rigid or flexible?
 
@@ -193,7 +193,7 @@ A real constitution answers all three questions simultaneously, and the answers 
         },
         {
           prompt: "What is the difference between the 'distribute' job and the 'limit' job?",
-          answer: "Distribute is about power BETWEEN state bodies (which branch or level does what). Limit is about power BETWEEN the state and the person (rights and hard limits). A constitution that distributes but never limits can organise an efficient tyranny.",
+          answer: "Distribute is about power BETWEEN state bodies (which branch or level does what). Limit is about power BETWEEN the state and the person (rights and hard limits). A constitution that distributes but never limits can organize an efficient tyranny.",
         },
         {
           prompt: "Why does entrenchment 'make it a constitution and not a statute'?",
@@ -314,7 +314,7 @@ A real constitution answers all three questions simultaneously, and the answers 
               "Popular or unpopular",
             ],
             correctIndex: 0,
-            explanation: "Federal divides power across territory so regions hold guaranteed powers of their own; unitary keeps sovereignty at the centre and lets regions exist on the centre's terms.",
+            explanation: "Federal divides power across territory so regions hold guaranteed powers of their own; unitary keeps sovereignty at the center and lets regions exist on the center's terms.",
             sourceLessonSlug: "constitute-three-questions",
           },
           {
@@ -370,7 +370,7 @@ A real constitution answers all three questions simultaneously, and the answers 
             options: [
               "The state and the person",
               "One court and another court",
-              "Two neighbouring countries",
+              "Two neighboring countries",
               "The capital and the regions",
             ],
             correctIndex: 0,
@@ -386,7 +386,7 @@ A real constitution answers all three questions simultaneously, and the answers 
               "Presidential, unitary, uncodified",
             ],
             correctIndex: 2,
-            explanation: "A prime minister who sits in and answers to Parliament (parliamentary), sovereignty at the centre (unitary, with devolution), and no single written document (uncodified, flexible).",
+            explanation: "A prime minister who sits in and answers to Parliament (parliamentary), sovereignty at the center (unitary, with devolution), and no single written document (uncodified, flexible).",
             sourceLessonSlug: "constitute-three-questions",
           },
         ],
@@ -424,7 +424,7 @@ Parliamentary systems almost always **split the two top roles.** The **head of g
 
 ## The trade-off, stated fairly
 
-Parliamentary government is often praised for **flexibility and accountability**: a government that loses its majority or its competence can be replaced quickly, without waiting years for a fixed term to run out, and the executive can almost always pass its programme because it holds a legislative majority by definition. The classic worry is the mirror image: **where majorities are unstable, governments can fall often and rule briefly**, and a prime minister with a solid majority faces fewer of the hard checks a separate legislature imposes. Section 2's next lesson puts the presidential answer beside it. This is structural description, not legal advice.
+Parliamentary government is often praised for **flexibility and accountability**: a government that loses its majority or its competence can be replaced quickly, without waiting years for a fixed term to run out, and the executive can almost always pass its program because it holds a legislative majority by definition. The classic worry is the mirror image: **where majorities are unstable, governments can fall often and rule briefly**, and a prime minister with a solid majority faces fewer of the hard checks a separate legislature imposes. Section 2's next lesson puts the presidential answer beside it. This is structural description, not legal advice.
 
 ## Sources
 - Lijphart, A. (1999). Patterns of democracy: Government forms and performance in thirty-six countries. Yale University Press.
@@ -440,7 +440,7 @@ Parliamentary government is often praised for **flexibility and accountability**
         },
         {
           prompt: "Which classification question does 'federal versus unitary' answer, and which job of a constitution does it probe?",
-          answer: "The territorial question (Question 2). It probes the 'distribute' job: whether power is divided across territory so regions hold guaranteed powers of their own, or kept at the centre with regions on the centre's terms.",
+          answer: "The territorial question (Question 2). It probes the 'distribute' job: whether power is divided across territory so regions hold guaranteed powers of their own, or kept at the center with regions on the center's terms.",
         },
       ],
     },
@@ -519,7 +519,7 @@ Scholars do not agree that "semi-presidential" names one coherent thing, and the
 | **It is really two types** | Shugart and Carey split it into "premier-presidential" (the premier answers only to the assembly) and "president-parliamentary" (the premier answers to BOTH the president and the assembly), which behave very differently |
 | **The label misleads** | Some argue that on any given day these systems ACT presidential or parliamentary, so classifying by the fixed rules can hide how power really flows |
 
-**All three positions have serious support.** Shugart and Carey's distinction matters because a president-parliamentary system, where the president can dismiss a premier who still holds the assembly's confidence, concentrates far more power in the president than the premier-presidential version does (Shugart & Carey, 1992). Robert Elgie, who catalogued these systems, defines them by the constitutional rules (an elected fixed-term president plus a premier and cabinet accountable to the legislature) precisely so the category does not dissolve into case-by-case judgment calls (Elgie, 2011). **So is France "semi-presidential"? Yes under Duverger's and Elgie's rule-based definition; and the more useful answer names WHICH sub-type and notes that cohabitation makes it behave differently at different times.** State the definition, name the dispute, keep them apart. This is comparative description, not legal advice.
+**All three positions have serious support.** Shugart and Carey's distinction matters because a president-parliamentary system, where the president can dismiss a premier who still holds the assembly's confidence, concentrates far more power in the president than the premier-presidential version does (Shugart & Carey, 1992). Robert Elgie, who cataloged these systems, defines them by the constitutional rules (an elected fixed-term president plus a premier and cabinet accountable to the legislature) precisely so the category does not dissolve into case-by-case judgment calls (Elgie, 2011). **So is France "semi-presidential"? Yes under Duverger's and Elgie's rule-based definition; and the more useful answer names WHICH sub-type and notes that cohabitation makes it behave differently at different times.** State the definition, name the dispute, keep them apart. This is comparative description, not legal advice.
 
 ## Sources
 - Duverger, M. (1980). A new political system model: Semi-presidential government. European Journal of Political Research, 8(2), 165-187.
@@ -839,34 +839,34 @@ Amendment difficulty is a genuine design trade-off, and neither extreme is safe.
       slug: "constitute-federal-unitary",
       title: "11 · Federal and unitary: dividing power across territory",
       section: "Section 3 · Written or unwritten, federal or unitary",
-      body: `The last two lessons read a constitution's form. This one reads its territorial axis: **does the constitution divide power across the map, or keep it at the centre?** Course 1 taught the vertical stack inside one country; this lesson asks the constitutional question one level up, and a later course in this path takes the middle layer apart in full. Here you learn to spot the model from the document.
+      body: `The last two lessons read a constitution's form. This one reads its territorial axis: **does the constitution divide power across the map, or keep it at the center?** Course 1 taught the vertical stack inside one country; this lesson asks the constitutional question one level up, and a later course in this path takes the middle layer apart in full. Here you learn to spot the model from the document.
 
 ## The two models
 
 | Model | Where sovereignty sits | The regional layer's power |
 |---|---|---|
-| **Federal** | Divided by the constitution between centre and regions | Guaranteed by the constitution; the region is a co-sovereign the centre cannot abolish |
-| **Unitary** | At the centre | Whatever the centre grants; the region exists on the centre's terms |
+| **Federal** | Divided by the constitution between center and regions | Guaranteed by the constitution; the region is a co-sovereign the center cannot abolish |
+| **Unitary** | At the center | Whatever the center grants; the region exists on the center's terms |
 
 **In a federal system the constitution itself splits authority**, so states, provinces, or Laender hold powers of their own that the national government cannot simply take away, and changing the split requires amending the constitution. The United States, Germany, Canada, India, Brazil, and Australia are federal. **In a unitary system sovereignty stays with the central government**, which may create regions and hand them tasks but can also reorganise or abolish them by ordinary law. France, Japan, and New Zealand are unitary.
 
-## The test: what happens to the region in a fight with the centre?
+## The test: what happens to the region in a fight with the center?
 
-The clean way to tell them apart is course 1's fourth question aimed at the region's very existence. **Ask: can the centre, acting alone, abolish the region or strip its powers?**
+The clean way to tell them apart is course 1's fourth question aimed at the region's very existence. **Ask: can the center, acting alone, abolish the region or strip its powers?**
 - If **no**, because the region's powers are entrenched in the constitution and only a constitutional amendment could remove them, the system is **federal.**
-- If **yes**, because the region holds its powers by ordinary grant the centre can revoke, the system is **unitary.**
+- If **yes**, because the region holds its powers by ordinary grant the center can revoke, the system is **unitary.**
 
-This is the same move course 1 made about US cities ("creatures of the state"), lifted to the national level. **In a federation the states are NOT creatures of the nation; in a unitary state the regions ARE creatures of the centre.** The territorial axis is that contrast, written into the constitution.
+This is the same move course 1 made about US cities ("creatures of the state"), lifted to the national level. **In a federation the states are NOT creatures of the nation; in a unitary state the regions ARE creatures of the center.** The territorial axis is that contrast, written into the constitution.
 
 ## A caution: the label can hide the practice
 
 Federal and unitary are the poles, and real countries blur toward the middle in ways worth flagging rather than smoothing over.
-- A unitary state can **devolve** sweeping powers to regional parliaments (the United Kingdom gave Scotland, Wales, and Northern Ireland real legislatures) and still be unitary, because those powers were granted by ordinary statute the centre could in principle reclaim. **Devolution is not federalism**: the test is whether the grant is entrenched or revocable.
+- A unitary state can **devolve** sweeping powers to regional parliaments (the United Kingdom gave Scotland, Wales, and Northern Ireland real legislatures) and still be unitary, because those powers were granted by ordinary statute the center could in principle reclaim. **Devolution is not federalism**: the test is whether the grant is entrenched or revocable.
 - Some federal constitutions centralise heavily in practice, and some countries (Spain is the standard hard case) genuinely resist the label, which is exactly the kind of contested classification this path teaches you to hold rather than force. **Report what the document entrenches; flag what is disputed.**
 
 ## Why this axis sits beside the others
 
-A constitution's territorial choice interacts with everything else in the course. **A rigid, codified, federal constitution (Germany, the United States) locks the centre-region split into hard higher law**; a flexible, uncodified, unitary arrangement (the United Kingdom) leaves even the existence of a regional parliament ultimately in the centre's hands. **The three axes are one portrait**: how executive power is held, how territory is divided, and how firmly the whole thing is fixed. Section 4 now turns from reading constitutions to watching them get made. This is comparative description, not legal advice.
+A constitution's territorial choice interacts with everything else in the course. **A rigid, codified, federal constitution (Germany, the United States) locks the center-region split into hard higher law**; a flexible, uncodified, unitary arrangement (the United Kingdom) leaves even the existence of a regional parliament ultimately in the center's hands. **The three axes are one portrait**: how executive power is held, how territory is divided, and how firmly the whole thing is fixed. Section 4 now turns from reading constitutions to watching them get made. This is comparative description, not legal advice.
 
 ## Sources
 - U.S. Const. amend. X. https://constitution.congress.gov/constitution/amendment-10/
@@ -1000,7 +1000,7 @@ A constitution's territorial choice interacts with everything else in the course
               "Held only during emergencies",
             ],
             correctIndex: 1,
-            explanation: "The constitution itself splits authority, so the region is a co-sovereign whose powers the centre cannot simply take; changing the split needs a constitutional amendment.",
+            explanation: "The constitution itself splits authority, so the region is a co-sovereign whose powers the center cannot simply take; changing the split needs a constitutional amendment.",
             sourceLessonSlug: "constitute-federal-unitary",
           },
           {
@@ -1009,7 +1009,7 @@ A constitution's territorial choice interacts with everything else in the course
               "Hold a national election",
               "Collect any taxes at all",
               "Abolish the region or its powers",
-              "Sign a treaty with a neighbour",
+              "Sign a treaty with a neighbor",
             ],
             correctIndex: 2,
             explanation: "If no (powers are entrenched, removable only by amendment), it is federal. If yes (powers are an ordinary revocable grant), it is unitary. It is course 1's 'creatures of the state', one level up.",
@@ -1024,7 +1024,7 @@ A constitution's territorial choice interacts with everything else in the course
               "Identical in every region",
             ],
             correctIndex: 2,
-            explanation: "The UK gave Scotland, Wales, and NI real legislatures by ordinary statute the centre could in principle reclaim. The test is whether the grant is entrenched or revocable, not how much power it holds.",
+            explanation: "The UK gave Scotland, Wales, and NI real legislatures by ordinary statute the center could in principle reclaim. The test is whether the grant is entrenched or revocable, not how much power it holds.",
             sourceLessonSlug: "constitute-federal-unitary",
           },
           {
@@ -1036,7 +1036,7 @@ A constitution's territorial choice interacts with everything else in the course
               "Italy, Spain, Portugal",
             ],
             correctIndex: 1,
-            explanation: "The US, Germany, Canada, India, Brazil, and Australia entrench a centre-region split. France, Japan, and New Zealand keep sovereignty at the centre and are unitary.",
+            explanation: "The US, Germany, Canada, India, Brazil, and Australia entrench a center-region split. France, Japan, and New Zealand keep sovereignty at the center and are unitary.",
             sourceLessonSlug: "constitute-federal-unitary",
           },
           {
@@ -1118,15 +1118,15 @@ As you study the four cases, hold two questions from the reading half of the cou
       recallContent: [
         {
           prompt: "State the federal-versus-unitary test using course 1's fourth question.",
-          answer: "Ask whether the centre, acting alone, can abolish the region or strip its powers. If no (powers entrenched, removable only by amendment), it is federal. If yes (powers a revocable ordinary grant), it is unitary. It is 'creatures of the state' lifted to the national level.",
+          answer: "Ask whether the center, acting alone, can abolish the region or strip its powers. If no (powers entrenched, removable only by amendment), it is federal. If yes (powers a revocable ordinary grant), it is unitary. It is 'creatures of the state' lifted to the national level.",
         },
         {
           prompt: "Why is devolution not the same as federalism?",
-          answer: "Devolved powers (Scotland, Wales, Northern Ireland) are granted by ordinary statute the centre could in principle reclaim, so the region is still the centre's creature. Federalism entrenches the region's powers in the constitution. The test is whether the grant is entrenched or revocable.",
+          answer: "Devolved powers (Scotland, Wales, Northern Ireland) are granted by ordinary statute the center could in principle reclaim, so the region is still the center's creature. Federalism entrenches the region's powers in the constitution. The test is whether the grant is entrenched or revocable.",
         },
         {
           prompt: "How do the three axes combine into 'one portrait'?",
-          answer: "They read how executive power is held (horizontal), how territory is divided (federal or unitary), and how firmly the whole thing is fixed (codified/uncodified, rigid/flexible). A rigid codified federal constitution locks in a centre-region split; a flexible uncodified unitary one leaves even a regional parliament in the centre's hands.",
+          answer: "They read how executive power is held (horizontal), how territory is divided (federal or unitary), and how firmly the whole thing is fixed (codified/uncodified, rigid/flexible). A rigid codified federal constitution locks in a center-region split; a flexible uncodified unitary one leaves even a regional parliament in the center's hands.",
         },
       ],
     },
@@ -1192,7 +1192,7 @@ By the early 1990s apartheid was ending, but the transition faced a trust proble
 
 Multiparty negotiations produced an **interim Constitution (the Constitution of the Republic of South Africa Act 200 of 1993)**, which took effect for the first democratic elections in **April 1994** that brought Nelson Mandela's government to power. But the interim constitution did something unusual: it did not settle the final text. Instead it **fixed 34 Constitutional Principles that the eventual final constitution would HAVE to satisfy**, covering democracy, rights, the rule of law, and the basic shape of the state (Constitution of the Republic of South Africa Act 200 of 1993).
 
-**This is the negotiated-transition innovation.** The parties could not agree on every detail of a final constitution up front, so they agreed instead on the PRINCIPLES the final document must honour, and then let a democratically elected body write the details, bound by those principles. **They locked in the guardrails before they knew who would win.**
+**This is the negotiated-transition innovation.** The parties could not agree on every detail of a final constitution up front, so they agreed instead on the PRINCIPLES the final document must honor, and then let a democratically elected body write the details, bound by those principles. **They locked in the guardrails before they knew who would win.**
 
 ## Stage two: an elected assembly, and a court that had to certify
 
@@ -1372,7 +1372,7 @@ Put the two side by side and the four-route taxonomy earns its fourth row.
               "Applied to Germany and Japan too",
             ],
             correctIndex: 0,
-            explanation: "The parties could not agree every detail up front, so they locked in the principles the final text must honour, then let an elected assembly draft the details bound by those guardrails.",
+            explanation: "The parties could not agree every detail up front, so they locked in the principles the final text must honor, then let an elected assembly draft the details bound by those guardrails.",
             sourceLessonSlug: "constitute-south-africa-1996",
           },
           {
@@ -1483,7 +1483,7 @@ Put the two side by side and the four-route taxonomy earns its fourth row.
       section: "Section 5 · See it, then trace and classify one",
       body: `**Read this before the map, because the map's limits are part of the lesson.** A constitutional system is a property of a whole country, an AREA, not a point, so this map fills each country's area by its executive family (the choropleth layer), with a capital-city marker on top that carries the detail. Read the fills first, then tap a marker. The dots are **approximate points placed to show a pattern, not addresses**, so do not use them to find a building.
 
-## What the colours mean
+## What the colors mean
 
 The fills, and the markers on them, are grouped by the course's FIRST axis, how executive power is held, because that is the sharpest single sorter of the world's democracies:
 
@@ -1491,19 +1491,19 @@ The fills, and the markers on them, are grouped by the course's FIRST axis, how 
 
 **Amber markers: parliamentary.** The executive is drawn from the legislature and survives on its confidence. The United Kingdom, Germany, Japan, South Africa, and New Zealand. Notice how different these five are on the OTHER axes, which is the point: same executive family, very different constitutions.
 
-**Purple marker: semi-presidential.** A separately elected president and a prime minister answerable to the legislature at once, drawn in its own colour because Section 2 taught that this category is genuinely contested. France.
+**Purple marker: semi-presidential.** A separately elected president and a prime minister answerable to the legislature at once, drawn in its own color because Section 2 taught that this category is genuinely contested. France.
 
 ## Read the other two axes in the descriptions
 
 Colour carries only the first axis. Each marker's description carries the other two (territorial and form) plus, where relevant, the MAKING route from Section 4, so the map ties the whole course together:
 
-- The **federal** cases (the United States, Germany, Brazil) against the **unitary** ones (France, Japan, New Zealand, and the United Kingdom at its centre).
+- The **federal** cases (the United States, Germany, Brazil) against the **unitary** ones (France, Japan, New Zealand, and the United Kingdom at its center).
 - The **uncodified** cluster (the United Kingdom and New Zealand here, with Israel the third from Lesson 9) against the codified majority.
 - The four **making** cases sit on the map too: the United States (convention, 1787), South Africa (negotiated, 1996), Japan (imposed, 1947), and Germany (reconstruction, 1949).
 
 ## What the map cannot show, and what that proves
 
-**It cannot show that two same-coloured dots are opposite in every other way.** Amber Germany and amber New Zealand are both parliamentary, yet one is federal, codified, and rigid, and the other is unitary, uncodified, and flexible. **Colour carries one axis; the portrait needs all three**, which is exactly why the capstone asks you to write all three out for a country of your choosing, from its documents. Read the legend, then go classify one. This is comparative description, not legal advice.
+**It cannot show that two same-colored dots are opposite in every other way.** Amber Germany and amber New Zealand are both parliamentary, yet one is federal, codified, and rigid, and the other is unitary, uncodified, and flexible. **Colour carries one axis; the portrait needs all three**, which is exactly why the capstone asks you to write all three out for a country of your choosing, from its documents. Read the legend, then go classify one. This is comparative description, not legal advice.
 
 ## Sources
 - Lijphart, A. (1999). Patterns of democracy: Government forms and performance in thirty-six countries. Yale University Press.
@@ -1580,7 +1580,7 @@ Colour carries only the first axis. Each marker's description carries the other 
             title: "Semi-presidential: France (Paris)",
             color: "#7c3aed",
             description:
-              "Drawn in its own colour because semi-presidential is a genuinely contested category (Lesson 7). Under the 1958 Constitution of the Fifth Republic a separately elected president shares executive power with a prime minister who must hold the confidence of the National Assembly; in 'cohabitation' the system tilts parliamentary. Unitary and codified. Scholars dispute whether 'semi-presidential' names one type or two. Coordinates are approximate.",
+              "Drawn in its own color because semi-presidential is a genuinely contested category (Lesson 7). Under the 1958 Constitution of the Fifth Republic a separately elected president shares executive power with a prime minister who must hold the confidence of the National Assembly; in 'cohabitation' the system tilts parliamentary. Unitary and codified. Scholars dispute whether 'semi-presidential' names one type or two. Coordinates are approximate.",
           },
         ],
         // The choropleth (plans/49): fill the whole country AREA by executive family, because a
@@ -1636,10 +1636,10 @@ Place the constitution on the three axes, citing the clause for each:
 | Axis | What to determine, and where to look |
 |---|---|
 | **Horizontal** | Presidential, parliamentary, or semi-presidential: who holds executive power and how it links to the legislature |
-| **Territorial** | Federal or unitary: can the centre, alone, abolish the region or strip its powers? |
+| **Territorial** | Federal or unitary: can the center, alone, abolish the region or strip its powers? |
 | **Form** | Codified or uncodified, and rigid or flexible: is it one entrenched document, and how hard is it to amend? |
 
-**Quote the clause that settles each axis** where you can (the article vesting executive power, the amendment article, the provision dividing the centre from the regions). If your country is a hard case on any axis (a contested semi-presidential label, a federal-or-unitary blur), do not fake a clean answer: state what the document establishes and name precisely what is disputed.
+**Quote the clause that settles each axis** where you can (the article vesting executive power, the amendment article, the provision dividing the center from the regions). If your country is a hard case on any axis (a contested semi-presidential label, a federal-or-unitary blur), do not fake a clean answer: state what the document establishes and name precisely what is disputed.
 
 ## Rules you do not get to break
 
@@ -1651,7 +1651,7 @@ Place the constitution on the three axes, citing the clause for each:
 
 ## What good looks like
 
-A one-page profile in which the making route is named and dated from the record, the system is placed on all three axes with a clause cited for each, and every contested point is labelled as contested rather than smoothed over. **If you took a constitution you thought you understood and showed, from its own text and its own founding record, both HOW it was made and exactly WHAT kind of system it is, you have done what this course set out to teach: you learned to read the document course 1 kept walking the chain up to, and to see where it came from.**
+A one-page profile in which the making route is named and dated from the record, the system is placed on all three axes with a clause cited for each, and every contested point is labeled as contested rather than smoothed over. **If you took a constitution you thought you understood and showed, from its own text and its own founding record, both HOW it was made and exactly WHAT kind of system it is, you have done what this course set out to teach: you learned to read the document course 1 kept walking the chain up to, and to see where it came from.**
 
 ## Sources
 - U.S. Const. art. V; art. VII. https://constitution.congress.gov/

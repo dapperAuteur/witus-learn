@@ -38,7 +38,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const WHAT_A_BUSINESS_ENTITY_IS_COURSE: AuthoredCourse = {
   title: "What a Business Entity Actually Is",
   description:
-    "A cited, high-school-and-up method course on how a business is formed. It is not legal or tax advice, and it says so throughout: it teaches you what to ASK a lawyer or accountant, not the answer for your situation. The organising idea is that any business entity is a bundle of FOUR decisions: who pays the debts (liability), who pays the tax (taxation), who owns it and how ownership moves (ownership and transfer), and who gets to decide (governance). Every form on earth, in every country, is a different answer to those four, so a learner who holds the four questions can read a form they have never seen. You will learn to read the FORMATION DOCUMENTS as primary sources: the articles of organization or incorporation, the operating agreement or bylaws, and the state's own filing portal. Then you take a first pass over the US forms (sole proprietorship, partnership, LLC and C-corporation) and settle the single most common misunderstanding in the subject: the S-corp is a TAX ELECTION, not an entity type. This is the general case of which the shipped course 'What They Built' is a worked example, where fraternal orders and building-and-loan associations turned out to be entity choices. The capstone asks you to pick a form for a real scenario and defend it against the four decisions.",
+    "A cited, high-school-and-up method course on how a business is formed. It is not legal or tax advice, and it says so throughout: it teaches you what to ASK a lawyer or accountant, not the answer for your situation. The organizing idea is that any business entity is a bundle of FOUR decisions: who pays the debts (liability), who pays the tax (taxation), who owns it and how ownership moves (ownership and transfer), and who gets to decide (governance). Every form on earth, in every country, is a different answer to those four, so a learner who holds the four questions can read a form they have never seen. You will learn to read the FORMATION DOCUMENTS as primary sources: the articles of organization or incorporation, the operating agreement or bylaws, and the state's own filing portal. Then you take a first pass over the US forms (sole proprietorship, partnership, LLC and C-corporation) and settle the single most common misunderstanding in the subject: the S-corp is a TAX ELECTION, not an entity type. This is the general case of which the shipped course 'What They Built' is a worked example, where fraternal orders and building-and-loan associations turned out to be entity choices. The capstone asks you to pick a form for a real scenario and defend it against the four decisions.",
   lessons: [
     // ═══════════════════════════════════════════════════════════════════════════════════════
     // SECTION 1 · What an entity actually is  (the concept, the four decisions, the not-advice rule)
@@ -72,9 +72,9 @@ Here it is in one sentence, and everything else is a consequence of it.
 
 ## Why this matters, and where it came from
 
-If the four decisions are universal, then **you do not have to memorise a list of forms.** You have to hold four questions. Handed a form you have never seen, in a state you have never worked in or a country whose language you do not read, you ask the four and you can place it. That is the transferable skill this course exists to give you.
+If the four decisions are universal, then **you do not have to memorize a list of forms.** You have to hold four questions. Handed a form you have never seen, in a state you have never worked in or a country whose language you do not read, you ask the four and you can place it. That is the transferable skill this course exists to give you.
 
-There is a worked example already in this catalogue. The course **"What They Built: Black Business Districts"** taught that when banks would not lend to Black communities, those communities financed themselves through **fraternal orders, industrial insurance companies, and building-and-loan associations**. Those were not just cultural institutions. **They were entity choices**, picked because of what the law let each form do: a mutual benefit society could pool many small dues into investable reserves, an insurer was legally required to hold assets, a building-and-loan could take deposits and make loans. **Read that course again after this one** and you will see the four decisions running underneath every institution in it.
+There is a worked example already in this catalog. The course **"What They Built: Black Business Districts"** taught that when banks would not lend to Black communities, those communities financed themselves through **fraternal orders, industrial insurance companies, and building-and-loan associations**. Those were not just cultural institutions. **They were entity choices**, picked because of what the law let each form do: a mutual benefit society could pool many small dues into investable reserves, an insurer was legally required to hold assets, a building-and-loan could take deposits and make loans. **Read that course again after this one** and you will see the four decisions running underneath every institution in it.
 
 ## What you will do, section by section
 
@@ -102,7 +102,7 @@ There is a worked example already in this catalogue. The course **"What They Bui
 
 **A business entity is a separate legal person.** Not a person the way you are, but a person the way the law counts persons: something that can, **in its own name**, own property, owe money, sign a contract, sue, and be sued. When you form an entity you are, quite literally, **creating a new legal person** that did not exist yesterday and that is not the same as you.
 
-That is the move at the centre of this whole subject. A business is not automatically a separate person. Some forms make it one and some do not, and **that single difference drives most of the four decisions.** A form where the business is a fully separate person can shield you from its debts, be taxed on its own, be owned in shares, and be governed by a board. A form where the business is just **you, doing business** cannot do any of those things, because there is no second person there to do them.
+That is the move at the center of this whole subject. A business is not automatically a separate person. Some forms make it one and some do not, and **that single difference drives most of the four decisions.** A form where the business is a fully separate person can shield you from its debts, be taxed on its own, be owned in shares, and be governed by a board. A form where the business is just **you, doing business** cannot do any of those things, because there is no second person there to do them.
 
 ## Two ways to picture it
 
@@ -747,7 +747,7 @@ Three habits, all descendants of the "read the record" discipline:
 
 Hold this, because it reframes the whole subject: **limited liability was invented, and relatively recently.** For most of commercial history, if your venture failed, you paid, personally and completely. The idea that an owner could risk only what they invested and walk away from the rest is a **policy choice** that societies made on purpose, to encourage people to start risky ventures. **It can be, and in places has been, made differently.** Treating it as natural is a mistake; it is a lever someone pulled.
 
-This course will not hang that history on a memorised date, because dates are exactly what the course refuses to assert from memory. What matters for the method is the concept: **the wall is granted by law, on conditions, and the conditions matter.**
+This course will not hang that history on a memorized date, because dates are exactly what the course refuses to assert from memory. What matters for the method is the concept: **the wall is granted by law, on conditions, and the conditions matter.**
 
 ## The wall has gaps, and pretending it does not is dangerous
 
@@ -853,7 +853,7 @@ Ownership has different names and different shapes depending on the form, and th
 | **LLC** | a member | a membership interest, often a percentage |
 | **Corporation** | a shareholder | shares of stock |
 
-**Shares are the invention that makes wide ownership possible.** Dividing ownership into standardised shares is what lets a business have hundreds or millions of owners who never meet, because a share is a clean, countable, tradeable unit. A partnership interest is not standardised the same way, which is one reason partnerships stay small.
+**Shares are the invention that makes wide ownership possible.** Dividing ownership into standardized shares is what lets a business have hundreds or millions of owners who never meet, because a share is a clean, countable, tradeable unit. A partnership interest is not standardized the same way, which is one reason partnerships stay small.
 
 ## Transfer is where control actually lives
 
@@ -950,7 +950,7 @@ Ask: **who decides, for day-to-day matters and for the big ones?** The owners di
         },
         {
           prompt: "What makes shares the invention that allows wide ownership?",
-          answer: "Shares are a standardised, countable, tradeable unit, so a business can have many owners who never meet. A partnership interest is not standardised the same way, which is one reason partnerships stay small.",
+          answer: "Shares are a standardized, countable, tradeable unit, so a business can have many owners who never meet. A partnership interest is not standardized the same way, which is one reason partnerships stay small.",
         },
         {
           prompt: "How were the mutual benefit societies in 'What They Built' an ownership-and-transfer design?",
@@ -1051,7 +1051,7 @@ Ask: **who decides, for day-to-day matters and for the big ones?** The owners di
             prompt: "In a corporation, an owner's stake is measured in:",
             options: ["shares of stock", "membership units", "partner points", "voting halls"],
             correctIndex: 0,
-            explanation: "Shares are a standardised, countable, tradeable unit, which is what allows a corporation to have many owners who never meet.",
+            explanation: "Shares are a standardized, countable, tradeable unit, which is what allows a corporation to have many owners who never meet.",
             sourceLessonSlug: "wbe-ownership-transfer",
           },
           {
@@ -1242,12 +1242,12 @@ This lands with almost everyone: **the LLC, the default form for new American sm
 
 - **Liability:** **limited.** Like the LLC, the corporation is a separate legal person with a wall; owners (shareholders) are generally not personally liable for its debts, subject to the usual gaps.
 - **Taxation:** **entity-level, and this is what "C" means.** A C-corporation is its own taxpayer: it pays tax on its profit, and when it distributes profit as dividends, **shareholders may be taxed again.** That is the double taxation from Section 3, and it is the C-corp's defining tax feature. Whether it is a drawback depends on facts an accountant weighs.
-- **Ownership and transfer:** owners are **shareholders** holding **shares of stock.** Shares are standardised and, in principle, freely transferable, which is precisely why the corporation is the vehicle for wide outside investment. A private corporation can still restrict transfer through a shareholder agreement, but the share is built to move.
+- **Ownership and transfer:** owners are **shareholders** holding **shares of stock.** Shares are standardized and, in principle, freely transferable, which is precisely why the corporation is the vehicle for wide outside investment. A private corporation can still restrict transfer through a shareholder agreement, but the share is built to move.
 - **Governance:** **delegated**, in a standard three-layer shape. **Shareholders elect a board of directors; the board sets direction and hires officers; the officers run the company.** This separation of ownership from control is what lets a corporation have thousands of owners and still function.
 
 ## Why the C-corp exists: it is the investment machine
 
-The C-corp's combination, a hard liability wall, standardised tradeable shares, and delegated governance, is exactly what large-scale outside investment needs. **Investors want to buy a clean unit (a share), risk only what they paid (limited liability), and not have to run the company (delegated governance).** The C-corp gives all three, which is why nearly every company that raises significant venture capital or goes public is one. Its cost is the entity-level tax and more formality (a board, meetings, records). **The form is a trade: more tax and more paperwork in exchange for the ability to raise money widely.**
+The C-corp's combination, a hard liability wall, standardized tradeable shares, and delegated governance, is exactly what large-scale outside investment needs. **Investors want to buy a clean unit (a share), risk only what they paid (limited liability), and not have to run the company (delegated governance).** The C-corp gives all three, which is why nearly every company that raises significant venture capital or goes public is one. Its cost is the entity-level tax and more formality (a board, meetings, records). **The form is a trade: more tax and more paperwork in exchange for the ability to raise money widely.**
 
 ## Reading a C-corp against the others
 
@@ -1291,7 +1291,7 @@ Set it beside the LLC and the difference is clean:
       slug: "wbe-s-corp-election",
       title: "17 · The S-corp is a tax election, not an entity type",
       section: "Section 4 · A first pass over the US forms",
-      body: `This is the single most misunderstood point in the entire subject, and it gets its own lesson because getting it wrong quietly corrupts everything else. Here is the sentence to memorise:
+      body: `This is the single most misunderstood point in the entire subject, and it gets its own lesson because getting it wrong quietly corrupts everything else. Here is the sentence to memorize:
 
 **An S-corp is not a type of entity. It is a federal tax election that an eligible entity makes.**
 
@@ -1333,7 +1333,7 @@ Get this right and the separate-levers idea from the whole course clicks into pl
         },
         {
           prompt: "Why does the C-corp exist, and what is its trade?",
-          answer: "It is the investment machine: a hard liability wall, standardised tradeable shares, and delegated governance are exactly what wide outside investment needs. The trade is entity-level tax and more formality in exchange for the ability to raise money widely.",
+          answer: "It is the investment machine: a hard liability wall, standardized tradeable shares, and delegated governance are exactly what wide outside investment needs. The trade is entity-level tax and more formality in exchange for the ability to raise money widely.",
         },
         {
           prompt: "Set beside each other, where do the LLC and the C-corp agree and where do they diverge?",
@@ -1341,7 +1341,7 @@ Get this right and the separate-levers idea from the whole course clicks into pl
         },
         {
           prompt: "What does 'freely transferable shares' let a corporation do?",
-          answer: "Have thousands of owners who never meet, because a share is a clean, standardised, tradeable unit, which is why the corporation is the vehicle for wide outside investment.",
+          answer: "Have thousands of owners who never meet, because a share is a clean, standardized, tradeable unit, which is why the corporation is the vehicle for wide outside investment.",
         },
       ],
     },
@@ -1450,7 +1450,7 @@ Get this right and the separate-levers idea from the whole course clicks into pl
               "skipping the board",
             ],
             correctIndex: 0,
-            explanation: "A hard wall, standardised tradeable shares, and delegated governance are exactly what large-scale outside investment needs.",
+            explanation: "A hard wall, standardized tradeable shares, and delegated governance are exactly what large-scale outside investment needs.",
             sourceLessonSlug: "wbe-c-corp",
           },
           {

@@ -79,7 +79,7 @@ Practicalities: resupply points are towns, which means the schedule is shaped by
 
 This is where the popular version of river travel is most misleading.
 
-**Fishing requires a licence in every state on this route, and the licence is per state.** A journey crossing several state lines crosses several licensing regimes. Rules on species, size, season and method vary, as do advisories about eating what you catch from particular stretches, which exist for a reason on a river carrying this much.
+**Fishing requires a license in every state on this route, and the license is per state.** A journey crossing several state lines crosses several licensing regimes. Rules on species, size, season and method vary, as do advisories about eating what you catch from particular stretches, which exist for a reason on a river carrying this much.
 
 **Foraging on land requires permission or legal access**, which returns you to lesson 1. Gathering on private ground without permission is trespass regardless of what you gather. Rules on public land vary by managing agency, and many conservation areas restrict or prohibit it.
 
@@ -180,7 +180,7 @@ A stove is reliable and a fire is not, because dry fuel is not guaranteed and op
 Three things in particular must be checked against an authoritative source, every time, because they change:
 
 - **Access and camping rules**, which vary by state, by land type and by season.
-- **Fishing licences and consumption advisories**, which are per state and are updated.
+- **Fishing licenses and consumption advisories**, which are per state and are updated.
 - **Fire restrictions**, which change with conditions.
 
 Each of those is owned by an agency. Read it from the agency.

@@ -13,7 +13,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const RIVER_THE_OHIO_AND_THE_LINE_COURSE: AuthoredCourse = {
   title: "The Ohio, and the Line",
   description:
-    "For decades the Ohio River was the border between slavery and freedom, and more people escaped through this valley than through any other region of the country. The expedition crosses that line in its first days, travelling the opposite way. What the river meant, who ran the networks on the northern bank, and why a river makes such a strange border.",
+    "For decades the Ohio River was the border between slavery and freedom, and more people escaped through this valley than through any other region of the country. The expedition crosses that line in its first days, traveling the opposite way. What the river meant, who ran the networks on the northern bank, and why a river makes such a strange border.",
   lessons: [
     {
       slug: "a-river-that-was-a-legal-line",
@@ -55,11 +55,11 @@ That absence is worth sitting with. The most consequential border in the region'
 
 Two names worth knowing, both because of what they did and because of who they were.
 
-**George DeBaptiste** and **Elijah Anderson** were Black activists who organised networks based at Madison, Indiana, with contacts on the Kentucky side who helped with the crossing itself. From Madison, an interracial group of guides moved people north through refuges across Jefferson, Ripley and Decatur counties.
+**George DeBaptiste** and **Elijah Anderson** were Black activists who organized networks based at Madison, Indiana, with contacts on the Kentucky side who helped with the crossing itself. From Madison, an interracial group of guides moved people north through refuges across Jefferson, Ripley and Decatur counties.
 
-Note the structure. This was not a matter of sympathetic strangers stumbled upon by luck. It was **organised, with people positioned on both banks**, which required communication across a border that made such communication a crime.
+Note the structure. This was not a matter of sympathetic strangers stumbled upon by luck. It was **organized, with people positioned on both banks**, which required communication across a border that made such communication a crime.
 
-There were other crossings. Many people crossed from Louisville, Kentucky to New Albany, Indiana, and travelled north from there.
+There were other crossings. Many people crossed from Louisville, Kentucky to New Albany, Indiana, and traveled north from there.
 
 ## Who took the risk
 
@@ -77,7 +77,7 @@ You will find the story attached to the origin of the phrase "Underground Railro
 
 When you read an account of this period, ask **who is named and who is not**, and ask what the named person's role actually was. Networks like this are frequently remembered through their most documented participants rather than their most important ones.
 
-:::reveal Who organised the network at Madison, Indiana, and why does that detail matter? ||| George DeBaptiste and Elijah Anderson, Black activists with contacts on the Kentucky side. It matters because it shows the work was organised by the people most at risk, not stumbled upon.
+:::reveal Who organised the network at Madison, Indiana, and why does that detail matter? ||| George DeBaptiste and Elijah Anderson, Black activists with contacts on the Kentucky side. It matters because it shows the work was organized by the people most at risk, not stumbled upon.
 
 :::reveal What question should you ask of any account of this period? ||| Who is named and who is not, and what the named person actually did. These networks are often remembered through their best-documented participants rather than their most important ones.`,
       recallContent: [
@@ -97,7 +97,7 @@ When you read an account of this period, ask **who is named and who is not**, an
       slug: "crossing-the-other-way",
       title: "3 · Crossing it the other way",
       section: "Section 2 · The expedition's crossing",
-      body: `In the first days of the journey the paddlers will move from the Wabash onto the Ohio and begin travelling south, downstream, with the current helping them.
+      body: `In the first days of the journey the paddlers will move from the Wabash onto the Ohio and begin traveling south, downstream, with the current helping them.
 
 They will cross the line going the wrong way, easily, and with no consequence at all.
 
@@ -137,7 +137,7 @@ That is the point. The most consequential border in this region's history has no
           {
             prompt: "What made the Ohio River significant in the decades before the Civil War?",
             options: [
-              "It was the fastest route north, so escape by water was quicker than travelling overland",
+              "It was the fastest route north, so escape by water was quicker than traveling overland",
               "It was the boundary between a slave state and a free state, so crossing changed a person's legal status",
               "It marked the limit of federal jurisdiction, beyond which slave law could not be enforced",
               "It was the northern edge of the region where plantation agriculture was profitable",
@@ -158,14 +158,14 @@ That is the point. The most consequential border in this region's history has no
             ],
             correctIndex: 0,
             explanation:
-              "Safety and legal status are different things. The crossing changed status and reduced danger without ending it, which is exactly why organised networks were necessary.",
+              "Safety and legal status are different things. The crossing changed status and reduced danger without ending it, which is exactly why organized networks were necessary.",
             sourceLessonSlug: "a-river-that-was-a-legal-line",
           },
           {
             prompt: "What does the structure of the Madison network tell us?",
             options: [
               "That escape depended mainly on chance encounters with sympathetic strangers",
-              "That it was organised, with coordinated contacts on both banks of the river",
+              "That it was organized, with coordinated contacts on both banks of the river",
               "That most assistance was arranged and funded from northern cities far from the border",
               "That crossings were concentrated in winter when the river could be crossed on ice",
             ],
@@ -205,7 +205,7 @@ That the Ohio was the legal boundary between slave and free states, that the bor
 
 **Numbers.** Estimates of how many people escaped vary widely and always will. The activity was clandestine by necessity, so the records that survive are partial and skewed toward what was written down by people who were not the ones taking the risk. Any confident total should be treated with suspicion, including confident totals in textbooks.
 
-**Attribution.** Because documentation favours people who left papers, the historical record over-represents some participants and under-represents others, particularly Black participants whose work was deliberately unrecorded for their own safety. When you read that a particular person "ran" a network, ask how that was established.
+**Attribution.** Because documentation favors people who left papers, the historical record over-represents some participants and under-represents others, particularly Black participants whose work was deliberately unrecorded for their own safety. When you read that a particular person "ran" a network, ask how that was established.
 
 **Etymology.** The Tice Davids story as the origin of the phrase "Underground Railroad" is widely repeated and hard to verify. This course tells it as a story about a story for that reason.
 

@@ -48,7 +48,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const TRIBAL_NATIONS_GOVERNANCE_COURSE: AuthoredCourse = {
   title: "Tribal Nations and Indigenous Governance",
   description:
-    "The course that develops the one correction most civics teaching gets wrong: a tribal nation is not a rung on the federal, state, and local ladder at all. It is a separate sovereign, and its authority is pre-existing and inherent, older than the United States, not delegated down a stack the way a city's power is delegated from a state. Course 1 of this path, Who Has the Power to Do This?, introduced that idea in a single section; this course earns it in full, and with the care such content requires. You will learn where tribal sovereignty comes from and why the Marshall Court called the nations domestic dependent nations; why treaties rank as supreme law under the Supremacy Clause and how courts read them; how nations govern today, the Indian Reorganization Act of 1934 and its model constitutions set against traditional and customary governance, with the Haudenosaunee Confederacy as a named living case; and the hard legal edges, Public Law 280, McGirt v. Oklahoma, and Alaska Native corporations, which are corporations rather than reservations and are the sharpest crossover between this path and the business-forms path. This course leads with nations' own words and Indigenous scholarship, treats the 574 federally recognised tribes as 574 distinct governments, and stops deliberately short of any nation's ceremonies or restricted internal detail, because that is not the course's to give. It teaches how to read authority. It is not legal advice.",
+    "The course that develops the one correction most civics teaching gets wrong: a tribal nation is not a rung on the federal, state, and local ladder at all. It is a separate sovereign, and its authority is pre-existing and inherent, older than the United States, not delegated down a stack the way a city's power is delegated from a state. Course 1 of this path, Who Has the Power to Do This?, introduced that idea in a single section; this course earns it in full, and with the care such content requires. You will learn where tribal sovereignty comes from and why the Marshall Court called the nations domestic dependent nations; why treaties rank as supreme law under the Supremacy Clause and how courts read them; how nations govern today, the Indian Reorganization Act of 1934 and its model constitutions set against traditional and customary governance, with the Haudenosaunee Confederacy as a named living case; and the hard legal edges, Public Law 280, McGirt v. Oklahoma, and Alaska Native corporations, which are corporations rather than reservations and are the sharpest crossover between this path and the business-forms path. This course leads with nations' own words and Indigenous scholarship, treats the 574 federally recognized tribes as 574 distinct governments, and stops deliberately short of any nation's ceremonies or restricted internal detail, because that is not the course's to give. It teaches how to read authority. It is not legal advice.",
   lessons: [
     // ===================================================================================
     // SECTION 1 - A separate sovereign, not a rung on the ladder
@@ -65,7 +65,7 @@ export const TRIBAL_NATIONS_GOVERNANCE_COURSE: AuthoredCourse = {
 
 ## Two boundaries that are specific to this subject
 
-**One. There is no single "Native American government."** There are, by the Department of the Interior's own count, **574 federally recognised tribal nations** in the United States, each a distinct government with its own history, territory, laws, and relationship to the United States (U.S. Department of the Interior, Bureau of Indian Affairs, 2024). Some also hold recognition from a state and not the federal government; some are not recognised at all. **When this course makes a specific claim, it names a specific nation**, because "the tribes" governed as one is a fiction, and a harmful one. Five hundred and seventy-four governments are not a demographic. They are five hundred and seventy-four governments.
+**One. There is no single "Native American government."** There are, by the Department of the Interior's own count, **574 federally recognized tribal nations** in the United States, each a distinct government with its own history, territory, laws, and relationship to the United States (U.S. Department of the Interior, Bureau of Indian Affairs, 2024). Some also hold recognition from a state and not the federal government; some are not recognized at all. **When this course makes a specific claim, it names a specific nation**, because "the tribes" governed as one is a fiction, and a harmful one. Five hundred and seventy-four governments are not a demographic. They are five hundred and seventy-four governments.
 
 **Two. This course stops before ceremony and restricted knowledge, on purpose.** Many nations govern in part through traditional, spiritual, and ceremonial practice. This course will teach **that** such governance exists, **whose** it is, and **why** it matters, and then it will stop. **You will not find ceremonial procedure, restricted internal protocol, or "how a nation runs its own council" here.** Where a nation publishes something about its own government, this course quotes the nation. Where it does not, this course does not go hunting for an outsider's description to print instead. **The silence is deliberate, and it is a form of respect, not an omission**, and the right way to learn more is to listen to the nations themselves, not to read more outside commentary about them.
 
@@ -149,7 +149,7 @@ Here the honest teaching move is to name a disagreement rather than smooth it ov
 
 ## Why the trust duty is not charity
 
-**The trust responsibility is a duty the United States owes, not a favour it grants.** It arises from the treaties and from the taking of Native land, and courts have at times enforced it against the government for money damages when it mismanaged tribal resources. Reading it as generosity gets the direction of obligation backwards. **It is the price of the promises the United States made**, which is the doorway into Section 2, because those promises are treaties, and treaties are supreme law.
+**The trust responsibility is a duty the United States owes, not a favor it grants.** It arises from the treaties and from the taking of Native land, and courts have at times enforced it against the government for money damages when it mismanaged tribal resources. Reading it as generosity gets the direction of obligation backwards. **It is the price of the promises the United States made**, which is the doorway into Section 2, because those promises are treaties, and treaties are supreme law.
 
 ## Sources
 - Cherokee Nation v. Georgia, 30 U.S. (5 Pet.) 1 (1831). https://supreme.justia.com/cases/federal/us/30/1/
@@ -199,7 +199,7 @@ Here the honest teaching move is to name a disagreement rather than smooth it ov
               "About a dozen nations",
             ],
             correctIndex: 0,
-            explanation: "There are 574 federally recognised tribal nations, each a distinct government. 'The tribes' governed as one is a fiction; specific claims name specific nations.",
+            explanation: "There are 574 federally recognized tribal nations, each a distinct government. 'The tribes' governed as one is a fiction; specific claims name specific nations.",
             sourceLessonSlug: "tribal-what-this-is",
           },
           {
@@ -253,7 +253,7 @@ Here the honest teaching move is to name a disagreement rather than smooth it ov
           {
             prompt: "The federal 'trust responsibility' toward tribal nations is best understood as:",
             options: [
-              "A duty owed, not a favour given",
+              "A duty owed, not a favor given",
               "A charity the government offers",
               "A tax break for the states",
               "A rule invented in the 1950s",
@@ -355,7 +355,7 @@ Here the honest teaching move is to name a disagreement rather than smooth it ov
               "The count changes every week",
             ],
             correctIndex: 1,
-            explanation: "574 federally recognised nations each have their own history, territory, and laws. Treating them as one monolith is a fiction, and a harmful one, so claims name specific nations.",
+            explanation: "574 federally recognized nations each have their own history, territory, and laws. Treating them as one monolith is a fiction, and a harmful one, so claims name specific nations.",
             sourceLessonSlug: "tribal-what-this-is",
           },
         ],
@@ -380,11 +380,11 @@ This was not a handful of documents. **Between the Treaty with the Delawares at 
 
 ## 1871: Congress ends treaty-making, but not the treaties
 
-In 1871 Congress attached a rider to an appropriations act declaring that no tribal nation would thereafter be recognised as an independent power "with whom the United States may contract by treaty" (Act of March 3, 1871, 16 Stat. 566, codified at 25 U.S.C. sec. 71). **Read the limit precisely, because people overstate it.** The 1871 Act ended the making of new treaties. **It did not, and could not, cancel the treaties already ratified.** Those remain in force as supreme law today, and courts still enforce them. After 1871 the United States dealt with nations largely through statutes and agreements instead, but the standing treaties kept their rank.
+In 1871 Congress attached a rider to an appropriations act declaring that no tribal nation would thereafter be recognized as an independent power "with whom the United States may contract by treaty" (Act of March 3, 1871, 16 Stat. 566, codified at 25 U.S.C. sec. 71). **Read the limit precisely, because people overstate it.** The 1871 Act ended the making of new treaties. **It did not, and could not, cancel the treaties already ratified.** Those remain in force as supreme law today, and courts still enforce them. After 1871 the United States dealt with nations largely through statutes and agreements instead, but the standing treaties kept their rank.
 
 ## Why this matters for the method
 
-When course 1 built its chain of authority, it put treaties near the top and said "tribal treaties live here." **This is the payoff.** If you are reading an action that touches a tribal nation, a ratified treaty is not background colour. It is operative supreme law that can beat a conflicting state statute outright, and it is often the specific document the whole dispute is about. **Find the treaty, then read what the nation reserved**, and you are most of the way to the answer.
+When course 1 built its chain of authority, it put treaties near the top and said "tribal treaties live here." **This is the payoff.** If you are reading an action that touches a tribal nation, a ratified treaty is not background color. It is operative supreme law that can beat a conflicting state statute outright, and it is often the specific document the whole dispute is about. **Find the treaty, then read what the nation reserved**, and you are most of the way to the answer.
 
 ## Sources
 - U.S. Const. art. I, sec. 8, cl. 3. https://constitution.congress.gov/constitution/article-1/section-8/
@@ -394,7 +394,7 @@ When course 1 built its chain of authority, it put treaties near the top and sai
       recallContent: [
         {
           prompt: "What is the federal 'trust responsibility,' and is it charity?",
-          answer: "A duty of protection and good faith the United States owes tribal nations, described in Seminole Nation v. United States (1942) as 'the most exacting fiduciary standards.' It is not charity; it is the price of the promises made in treaties and the taking of land, a duty owed rather than a favour given.",
+          answer: "A duty of protection and good faith the United States owes tribal nations, described in Seminole Nation v. United States (1942) as 'the most exacting fiduciary standards.' It is not charity; it is the price of the promises made in treaties and the taking of land, a duty owed rather than a favor given.",
         },
         {
           prompt: "Name the two-part tension in federal Indian law the course tells you to hold.",
@@ -419,7 +419,7 @@ Over many decades the Supreme Court settled on three rules for reading treaties 
 | Canon | What it means |
 |---|---|
 | **Read as the tribe understood it** | Interpret terms as the nation would have understood them at signing, not by fine legal English |
-| **Ambiguities favour the tribe** | Doubtful language is resolved in the nation's favour |
+| **Ambiguities favor the tribe** | Doubtful language is resolved in the nation's favor |
 | **A grant FROM the tribe, not TO it** | A treaty reserves to the nation everything it did not clearly give away |
 
 **That third canon is the reserved-rights idea, and it is the one that surprises people.** A treaty is not the United States handing rights down to a nation. It is the nation ceding some things and **keeping everything else.** The Court put it plainly in the water context: when a nation set aside a reservation, it implicitly reserved enough water to make the land usable, whether or not the treaty said so, because the reservation would be pointless without it (Winters v. United States, 1908). Rights the treaty never mentions can still exist, because they were never surrendered.
@@ -498,7 +498,7 @@ Behind both the canons and these cases sits one rule you should carry out of thi
           {
             prompt: "The Act of 1871 is best summarised as:",
             options: [
-              "It cancelled all prior treaties",
+              "It canceled all prior treaties",
               "It made tribes into US counties",
               "It ended new treaty-making only",
               "It handed Indian policy to states",
@@ -511,7 +511,7 @@ Behind both the canons and these cases sits one rule you should carry out of thi
             prompt: "A 'reserved right' in a treaty is best described as something the nation:",
             options: [
               "Received as a gift from Congress",
-              "Bought from a neighbouring state",
+              "Bought from a neighboring state",
               "Was granted after 1871 by statute",
               "Held back and never surrendered",
             ],
@@ -524,11 +524,11 @@ Behind both the canons and these cases sits one rule you should carry out of thi
             options: [
               "Against the tribe's position",
               "By strict modern legal English",
-              "In the tribe's favour",
+              "In the tribe's favor",
               "However the state prefers",
             ],
             correctIndex: 2,
-            explanation: "Ambiguities favour the tribe; terms are read as the nation would have understood them at signing; and a treaty is a grant from, not to, the tribe.",
+            explanation: "Ambiguities favor the tribe; terms are read as the nation would have understood them at signing; and a treaty is a grant from, not to, the tribe.",
             sourceLessonSlug: "tribal-reading-treaties",
           },
           {
@@ -657,7 +657,7 @@ The General Allotment Act of 1887, the **Dawes Act**, set out to break up commun
 
 ## The Indian Reorganization Act of 1934
 
-The reversal was the **Indian Reorganization Act of 1934**, also called the Wheeler-Howard Act (Indian Reorganization Act of 1934, 48 Stat. 984, codified at 25 U.S.C. sec. 5101 and following). Driven by Commissioner of Indian Affairs John Collier, it **ended allotment**, allowed nations to **adopt written constitutions**, and let them **organise as federally chartered corporations** to hold property and do business. Each nation voted whether to come under the Act at all. It was, on its face, a restoration of self-government after fifty years of dismantling.
+The reversal was the **Indian Reorganization Act of 1934**, also called the Wheeler-Howard Act (Indian Reorganization Act of 1934, 48 Stat. 984, codified at 25 U.S.C. sec. 5101 and following). Driven by Commissioner of Indian Affairs John Collier, it **ended allotment**, allowed nations to **adopt written constitutions**, and let them **organize as federally chartered corporations** to hold property and do business. Each nation voted whether to come under the Act at all. It was, on its face, a restoration of self-government after fifty years of dismantling.
 
 ## The catch, named by Indigenous scholars
 
@@ -674,7 +674,7 @@ Because the Act was optional, the map of tribal government today is uneven. Many
       recallContent: [
         {
           prompt: "State the three Indian canons of construction.",
-          answer: "(1) Read a treaty as the nation would have understood it at signing; (2) resolve ambiguities in the nation's favour; (3) treat it as a grant FROM the tribe, not TO it, so the nation reserves everything it did not clearly give away.",
+          answer: "(1) Read a treaty as the nation would have understood it at signing; (2) resolve ambiguities in the nation's favor; (3) treat it as a grant FROM the tribe, not TO it, so the nation reserves everything it did not clearly give away.",
         },
         {
           prompt: "What is the clear-statement rule, and why does it follow from retained sovereignty?",
@@ -706,11 +706,11 @@ Tribal governments today sit along a range, and it helps to see the ends and the
 | **Non-IRA written constitution** | A nation's own written charter, adopted outside the 1934 template |
 | **Traditional or customary** | Leadership chosen and law made by the nation's own long-standing practice |
 
-**Most real governments mix these.** A nation may run an elected council for federal contracting and courts while also recognising traditional authority and customary law. The point is not to sort a nation into a box. It is to know that **the form is a choice a nation made about its own government**, and that the choice carries history.
+**Most real governments mix these.** A nation may run an elected council for federal contracting and courts while also recognizing traditional authority and customary law. The point is not to sort a nation into a box. It is to know that **the form is a choice a nation made about its own government**, and that the choice carries history.
 
 ## The Navajo Nation: traditional law inside a modern government
 
-The Navajo Nation (Dine) rejected the IRA and built one of the largest tribal governments in the country, today with three branches and an elected Navajo Nation Council. And it has done something worth studying: in 2002 the Navajo Nation Council **enacted the Dine Fundamental Laws**, formally recognising the traditional, customary, natural, and common law of the Dine as the foundation of Navajo law (Navajo Nation Council, 2002, Title 1, Navajo Nation Code). **This is a nation publishing its own law**, weaving traditional Dine principles into a modern legal code on its own terms, which is why it is safe and right to cite: the Navajo Nation chose to make it public.
+The Navajo Nation (Dine) rejected the IRA and built one of the largest tribal governments in the country, today with three branches and an elected Navajo Nation Council. And it has done something worth studying: in 2002 the Navajo Nation Council **enacted the Dine Fundamental Laws**, formally recognizing the traditional, customary, natural, and common law of the Dine as the foundation of Navajo law (Navajo Nation Council, 2002, Title 1, Navajo Nation Code). **This is a nation publishing its own law**, weaving traditional Dine principles into a modern legal code on its own terms, which is why it is safe and right to cite: the Navajo Nation chose to make it public.
 
 ## Self-determination is the present tense
 
@@ -727,7 +727,7 @@ None of this is history. Since the **Indian Self-Determination and Education Ass
         },
         {
           prompt: "What did the Indian Reorganization Act of 1934 do, and what is the catch Indigenous scholars name?",
-          answer: "It ended allotment and let nations adopt written constitutions and organise as federally chartered corporations. Deloria and Lytle note it offered self-government on a Washington-drafted, Anglo-American template, often with actions subject to Secretary of the Interior approval, embedding federal forms and oversight.",
+          answer: "It ended allotment and let nations adopt written constitutions and organize as federally chartered corporations. Deloria and Lytle note it offered self-government on a Washington-drafted, Anglo-American template, often with actions subject to Secretary of the Interior approval, embedding federal forms and oversight.",
         },
         {
           prompt: "Which large nation rejected the IRA, and in what year?",
@@ -764,7 +764,7 @@ You will often hear that the Haudenosaunee Great Law shaped the United States Co
 
 ## A living government, present tense
 
-Finally, the point the whole course keeps making: this is not history. The Haudenosaunee **assert a sovereignty they say they never surrendered, and they act on it today.** They issue their own **Haudenosaunee passports**, and their national teams have traveled internationally on them, a working, present-tense claim of nationhood that a state or a city could never make (Haudenosaunee Confederacy, n.d.). The traditional Grand Council also coexists, at times in tension, with elected councils that United States and Canadian law recognise on Haudenosaunee territory, which is itself a live illustration of this section's theme: the imposed form and the traditional form, side by side, in one living nation.
+Finally, the point the whole course keeps making: this is not history. The Haudenosaunee **assert a sovereignty they say they never surrendered, and they act on it today.** They issue their own **Haudenosaunee passports**, and their national teams have traveled internationally on them, a working, present-tense claim of nationhood that a state or a city could never make (Haudenosaunee Confederacy, n.d.). The traditional Grand Council also coexists, at times in tension, with elected councils that United States and Canadian law recognize on Haudenosaunee territory, which is itself a live illustration of this section's theme: the imposed form and the traditional form, side by side, in one living nation.
 
 ## Sources
 - Haudenosaunee Confederacy. (n.d.). Who we are; The Great Law of Peace; Values. https://www.haudenosauneeconfederacy.com
@@ -777,7 +777,7 @@ Finally, the point the whole course keeps making: this is not history. The Haude
         },
         {
           prompt: "How did the Navajo Nation weave traditional law into a modern government?",
-          answer: "In 2002 the Navajo Nation Council enacted the Dine Fundamental Laws (Title 1, Navajo Nation Code), formally recognising the traditional, customary, natural, and common law of the Dine as the foundation of Navajo law. It is the Nation publishing its own law, so it is right to cite.",
+          answer: "In 2002 the Navajo Nation Council enacted the Dine Fundamental Laws (Title 1, Navajo Nation Code), formally recognizing the traditional, customary, natural, and common law of the Dine as the foundation of Navajo law. It is the Nation publishing its own law, so it is right to cite.",
         },
         {
           prompt: "What does the Indian Self-Determination Act of 1975 mean for how nations govern now?",
@@ -814,7 +814,7 @@ Finally, the point the whole course keeps making: this is not history. The Haude
               "Settlement Claims Act",
             ],
             correctIndex: 0,
-            explanation: "The IRA (Wheeler-Howard Act, 48 Stat. 984) ended allotment and let nations adopt written constitutions and organise as federally chartered corporations.",
+            explanation: "The IRA (Wheeler-Howard Act, 48 Stat. 984) ended allotment and let nations adopt written constitutions and organize as federally chartered corporations.",
             sourceLessonSlug: "tribal-allotment-and-ira",
           },
           {
@@ -895,7 +895,7 @@ Finally, the point the whole course keeps making: this is not history. The Haude
               "A statewide popular vote",
               "The federal Interior Secretary",
               "The clan mothers of the clan",
-              "A neighbouring nation's council",
+              "A neighboring nation's council",
             ],
             correctIndex: 2,
             explanation: "The Confederacy publishes that the women of a clan choose the chief and can remove him if he fails the people. Leadership is not simple majority election, nor life tenure at will.",
@@ -946,7 +946,7 @@ Finally, the point the whole course keeps making: this is not history. The Haude
               "Identical to a US county board",
             ],
             correctIndex: 2,
-            explanation: "Governments sit along a range and often mix an elected council with recognised traditional authority and customary law. The form is a choice the nation made, carrying history.",
+            explanation: "Governments sit along a range and often mix an elected council with recognized traditional authority and customary law. The form is a choice the nation made, carrying history.",
             sourceLessonSlug: "tribal-ira-vs-traditional",
           },
           {
@@ -1006,7 +1006,7 @@ Other states were allowed to **opt in**. The crucial defect, from a sovereignty 
 
 ## The partial repair, and why it is only partial
 
-Congress later recognised the consent problem. The **Indian Civil Rights Act of 1968** provided that any FUTURE state assumption of jurisdiction under Public Law 280 would require the **consent of the affected tribe**, and it allowed states to give jurisdiction back through **retrocession** (Indian Civil Rights Act of 1968, Pub. L. 90-284). **Read the fix precisely.** It required consent going forward and opened a path to return jurisdiction, but it did not automatically undo the jurisdiction already transferred in 1953. The result is a patchwork: some nations are under state jurisdiction they never agreed to, some have had it retroceded, and the map is nation-by-nation.
+Congress later recognized the consent problem. The **Indian Civil Rights Act of 1968** provided that any FUTURE state assumption of jurisdiction under Public Law 280 would require the **consent of the affected tribe**, and it allowed states to give jurisdiction back through **retrocession** (Indian Civil Rights Act of 1968, Pub. L. 90-284). **Read the fix precisely.** It required consent going forward and opened a path to return jurisdiction, but it did not automatically undo the jurisdiction already transferred in 1953. The result is a patchwork: some nations are under state jurisdiction they never agreed to, some have had it retroceded, and the map is nation-by-nation.
 
 ## Reading Public Law 280 with the tension
 
@@ -1084,7 +1084,7 @@ The **Alaska Native Claims Settlement Act of 1971** settled the aboriginal land 
 
 ## Lead with an Alaska Native voice
 
-Because this is Native land and Native money, the course leads with an Alaska Native architect of the settlement, not an outside commentator. **William L. Iggiagruk Hensley (Inupiaq)** was one of the principal Native leaders who shaped ANCSA and has written about it directly (Hensley, 2009). The Alaska Federation of Natives, the statewide Native organisation, drove the negotiations. ANCSA is defended and criticised from within Alaska Native communities to this day: defended as a settlement that kept a large land base and built lasting Native institutions, criticised because a corporation with shareholders is a different thing from a sovereign with citizens, and because shares and land could be exposed to loss in ways a reservation is not. **Both readings come from Alaska Native people**, and the course presents it as their debate, not an outsider's verdict.
+Because this is Native land and Native money, the course leads with an Alaska Native architect of the settlement, not an outside commentator. **William L. Iggiagruk Hensley (Inupiaq)** was one of the principal Native leaders who shaped ANCSA and has written about it directly (Hensley, 2009). The Alaska Federation of Natives, the statewide Native organization, drove the negotiations. ANCSA is defended and criticized from within Alaska Native communities to this day: defended as a settlement that kept a large land base and built lasting Native institutions, criticized because a corporation with shareholders is a different thing from a sovereign with citizens, and because shares and land could be exposed to loss in ways a reservation is not. **Both readings come from Alaska Native people**, and the course presents it as their debate, not an outsider's verdict.
 
 ## The corporation is not a reservation, and a case proves it
 
@@ -1092,7 +1092,7 @@ Here is the precise, load-bearing legal point, and it is why this belongs in a g
 
 ## Two more precisions, so you do not overstate
 
-**One. Alaska still has tribes.** ANCSA created corporations, but it did not abolish tribal governments: there are well over 200 federally recognised tribes in Alaska, which exist alongside the corporations. Sovereignty and the corporation are two different structures over the same communities. **Two. Alaska has almost no reservations.** The near-total absence of reservations is the point of ANCSA, and the lone major exception, the **Metlakatla / Annette Islands Reserve**, predates and sits outside the ANCSA settlement. **So the Alaska picture is: many tribal governments, many Native corporations, and, almost uniquely, almost no reservation land.** To read power in Alaska you must ask which structure you are looking at, a tribe, a corporation, or the one reserve, because they answer "who has the power?" in three different ways.
+**One. Alaska still has tribes.** ANCSA created corporations, but it did not abolish tribal governments: there are well over 200 federally recognized tribes in Alaska, which exist alongside the corporations. Sovereignty and the corporation are two different structures over the same communities. **Two. Alaska has almost no reservations.** The near-total absence of reservations is the point of ANCSA, and the lone major exception, the **Metlakatla / Annette Islands Reserve**, predates and sits outside the ANCSA settlement. **So the Alaska picture is: many tribal governments, many Native corporations, and, almost uniquely, almost no reservation land.** To read power in Alaska you must ask which structure you are looking at, a tribe, a corporation, or the one reserve, because they answer "who has the power?" in three different ways.
 
 ## Sources
 - Alaska Native Claims Settlement Act of 1971, Pub. L. 92-203, 85 Stat. 688 (codified at 43 U.S.C. sec. 1601 et seq.).
@@ -1150,7 +1150,7 @@ Here is the precise, load-bearing legal point, and it is why this belongs in a g
             options: [
               "Tribal consent, and allowing retrocession",
               "A vote of the United States Senate",
-              "Approval by the neighbouring state",
+              "Approval by the neighboring state",
               "A brand new treaty with each nation",
             ],
             correctIndex: 0,
@@ -1280,13 +1280,13 @@ Here is the precise, load-bearing legal point, and it is why this belongs in a g
           {
             prompt: "Besides corporations, what governing structures still exist in Alaska?",
             options: [
-              "Over 200 federally recognised tribes",
+              "Over 200 federally recognized tribes",
               "Fifty small reservations statewide",
               "One consolidated super-tribe",
               "No tribal governments at all",
             ],
             correctIndex: 0,
-            explanation: "ANCSA created corporations but did not abolish tribes; there are well over 200 federally recognised tribes in Alaska alongside the corporations, and almost no reservation land.",
+            explanation: "ANCSA created corporations but did not abolish tribes; there are well over 200 federally recognized tribes in Alaska alongside the corporations, and almost no reservation land.",
             sourceLessonSlug: "tribal-alaska-native-corporations",
           },
           {
@@ -1313,9 +1313,9 @@ Here is the precise, load-bearing legal point, and it is why this belongs in a g
       section: "Section 5 - See it, then map your own",
       body: `**Read this before the map, because the map's limits ARE the lesson.** This platform draws markers as fixed-size dots on a world projection. The coordinates below are **approximate points placed to show a pattern, not addresses**, and, more important here, **a point is a stand-in for an AREA.** A tribal nation governs territory, and territory is a shape, not a dot. Until this platform gains a polygon (boundary) map layer, which the plan for this path notes these courses are the first content to genuinely need, hold the shape in your head while you read the dots.
 
-## What the map shows, and why it is one colour
+## What the map shows, and why it is one color
 
-Every marker on this map is drawn in the **same single colour**, and that is the whole point. **These are not shades of the state, county, and city ladder.** They are a **separate layer**: separate sovereigns whose authority is inherent and pre-existing, not delegated down the federal stack. Course 1's map put the vertical stack in blue and drew the tribal nation in a different colour to make exactly this point in one case. This map is that different-coloured layer, standing on its own. **Rendering any of these as one more rung of the state ladder would not be a simplification; it would be a factual error about where the authority comes from**, which is the claim the entire course has been making in words.
+Every marker on this map is drawn in the **same single color**, and that is the whole point. **These are not shades of the state, county, and city ladder.** They are a **separate layer**: separate sovereigns whose authority is inherent and pre-existing, not delegated down the federal stack. Course 1's map put the vertical stack in blue and drew the tribal nation in a different color to make exactly this point in one case. This map is that different-colored layer, standing on its own. **Rendering any of these as one more rung of the state ladder would not be a simplification; it would be a factual error about where the authority comes from**, which is the claim the entire course has been making in words.
 
 ## The five points, and what each one teaches
 
@@ -1323,7 +1323,7 @@ Every marker on this map is drawn in the **same single colour**, and that is the
 - **The Muscogee (Creek) Nation** (near Okmulgee, Oklahoma), the McGirt nation, whose reservation the Supreme Court confirmed endures across much of eastern Oklahoma, over the same ground as the State of Oklahoma.
 - **The Onondaga Nation** (near Syracuse, New York), the central fire of the Haudenosaunee Confederacy, a union of sovereigns older than the United States.
 - **The Oglala Lakota / Pine Ridge** (southwestern South Dakota), one large reservation among the several hundred distinct nations, a reminder that this layer is not one government but many.
-- **An Alaska Native corporation region** (near Utqiagvik, Alaska), where the settlement ran through a CORPORATION rather than a reservation, the Path A to Path B crossover drawn as a point that is deliberately the same colour, because it is the same layer of "not the state ladder," reached by a different legal road.
+- **An Alaska Native corporation region** (near Utqiagvik, Alaska), where the settlement ran through a CORPORATION rather than a reservation, the Path A to Path B crossover drawn as a point that is deliberately the same color, because it is the same layer of "not the state ladder," reached by a different legal road.
 
 ## What the map cannot show
 
@@ -1342,7 +1342,7 @@ Every marker on this map is drawn in the **same single colour**, and that is the
             title: "Navajo Nation (near Window Rock, Arizona)",
             color: "#7c3aed",
             description:
-              "The largest reservation by area, seat of the Navajo Nation government near Window Rock. The Navajo Nation rejected the 1934 Indian Reorganization Act template in a 1935 referendum and later, in 2002, enacted its own Dine Fundamental Laws, weaving traditional Dine law into a modern legal code on its own terms. Drawn in the tribal-layer colour because its authority is inherent and pre-existing, not a rung on the state ladder. This point is a stand-in for a large governed AREA, not an address; coordinates are approximate.",
+              "The largest reservation by area, seat of the Navajo Nation government near Window Rock. The Navajo Nation rejected the 1934 Indian Reorganization Act template in a 1935 referendum and later, in 2002, enacted its own Dine Fundamental Laws, weaving traditional Dine law into a modern legal code on its own terms. Drawn in the tribal-layer color because its authority is inherent and pre-existing, not a rung on the state ladder. This point is a stand-in for a large governed AREA, not an address; coordinates are approximate.",
           },
           {
             id: "tribal-map-muscogee",
@@ -1369,7 +1369,7 @@ Every marker on this map is drawn in the **same single colour**, and that is the
             title: "Oglala Lakota / Pine Ridge (South Dakota)",
             color: "#7c3aed",
             description:
-              "One large reservation among the 574 federally recognised nations, included precisely to make the point that this layer is not one government but many distinct governments. Same colour as the others because it is the same kind of authority, a separate sovereign, not a shade of the county or state ladder. Coordinates are approximate points placed to show the pattern, standing in for an area rather than marking a building.",
+              "One large reservation among the 574 federally recognized nations, included precisely to make the point that this layer is not one government but many distinct governments. Same color as the others because it is the same kind of authority, a separate sovereign, not a shade of the county or state ladder. Coordinates are approximate points placed to show the pattern, standing in for an area rather than marking a building.",
           },
           {
             id: "tribal-map-ancsa",
@@ -1378,7 +1378,7 @@ Every marker on this map is drawn in the **same single colour**, and that is the
             title: "An Alaska Native corporation region (near Utqiagvik, Alaska)",
             color: "#7c3aed",
             description:
-              "Alaska's far north, in the region of an Alaska Native regional corporation created under the Alaska Native Claims Settlement Act of 1971. Here the settlement ran through a CORPORATION with shareholders and a board, not a reservation: Alaska v. Native Village of Venetie (1998) held that ANCSA corporate land is not Indian country. Drawn the same colour as the others because it is still the separate-sovereign layer, reached by a different legal road, and a point cannot honestly show that corporate 'territory' is private property, not governed land. Coordinates are approximate.",
+              "Alaska's far north, in the region of an Alaska Native regional corporation created under the Alaska Native Claims Settlement Act of 1971. Here the settlement ran through a CORPORATION with shareholders and a board, not a reservation: Alaska v. Native Village of Venetie (1998) held that ANCSA corporate land is not Indian country. Drawn the same color as the others because it is still the separate-sovereign layer, reached by a different legal road, and a point cannot honestly show that corporate 'territory' is private property, not governed land. Coordinates are approximate.",
           },
         ],
       },
@@ -1403,7 +1403,7 @@ Whose land are you on? **Do not guess, and do not rely on memory.** Use primary 
 | Record | What to write |
 |---|---|
 | **The nation's name** | As the nation itself writes it, if published |
-| **Recognition status** | Federally recognised, state recognised, or neither |
+| **Recognition status** | Federally recognized, state recognized, or neither |
 | **Nearest governed land** | The reservation, trust land, or, in Alaska, the corporation region and any tribe |
 
 **If you are in Alaska, name all three structures where they apply**: the tribe, the Native corporation region, and (rarely) a reserve, because they answer "who has the power?" differently. That distinction is the course's sharpest lesson; show that you can make it.

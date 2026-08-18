@@ -52,20 +52,20 @@ export const JIM_CROW_EXPORT_COURSE: AuthoredCourse = {
       section: "Section 1 · The claim, and how to hold it",
       body: `**Start with the prerequisite.** This course assumes you have finished at least one of the United States city courses, and it is written against *Indiana Avenue: A District and What Replaced It*. That course taught you to ask a specific question about a specific block: **who decided, under which instrument, on what record.** It taught you that a blight designation is a legal instrument with a statute behind it, a body that voted, and a date. **This course asks whether instruments like those were exportable.** The answer, for a narrow and well documented set of them, is yes, and the whole difficulty of this course is saying that precisely enough to be true.
 
-**The claim, stated as narrowly as the sources allow.** In the first half of the twentieth century the United States was, in the technical sense, a world leader in writing race into statute. It had race-based immigration quotas, a naturalisation bar keyed to colour, several kinds of second-class citizenship, and marriage bans enforced by criminal penalty in about thirty states. **Other governments building race law noticed, studied the American statutes, wrote them up, and argued about them in their own policy meetings.** That is the claim. It is about legal technique, and it is about study, argument and selective adaptation.
+**The claim, stated as narrowly as the sources allow.** In the first half of the twentieth century the United States was, in the technical sense, a world leader in writing race into statute. It had race-based immigration quotas, a naturalisation bar keyed to color, several kinds of second-class citizenship, and marriage bans enforced by criminal penalty in about thirty states. **Other governments building race law noticed, studied the American statutes, wrote them up, and argued about them in their own policy meetings.** That is the claim. It is about legal technique, and it is about study, argument and selective adaptation.
 
 **Two ways this gets abused, and this course is built to block both.**
 
 **Abuse one: "America equals Nazi Germany."** The claim above becomes, in careless hands, the assertion that the Nazis copied Jim Crow, or that the Holocaust was an American export. **The sources do not support that**, and the leading scholar of the German half spends a great deal of his book saying so. James Q. Whitman writes that "there was certainly never anything remotely like unmixed admiration for America among the Nazis," and that "[t]he Nazis were never interested in simply replicating the United States in Central Europe" (Whitman, 2017, p. 5). He is equally direct about the reverse inference: "None of this is to suggest that America was a Nazi country in the 1930s" (Whitman, 2017, p. 15). **A course that reports the study and drops the selection is not reporting the evidence. It is using it.**
 
-**Abuse two: comparison as a way of minimising Jim Crow.** The mirror error is subtler and just as common. If the destination of every comparison is "but the Nazis were worse," then American segregation gets graded on a curve and quietly downgraded to a regional embarrassment. **This course refuses that too.** The Equal Justice Initiative documented 4,075 racial terror lynchings of African Americans in twelve southern states between 1877 and 1950 (Equal Justice Initiative, 2017). That is not a footnote to somebody else's history. It is the thing itself, and no comparison in this course is offered as a reason to look away from it.
+**Abuse two: comparison as a way of minimizing Jim Crow.** The mirror error is subtler and just as common. If the destination of every comparison is "but the Nazis were worse," then American segregation gets graded on a curve and quietly downgraded to a regional embarrassment. **This course refuses that too.** The Equal Justice Initiative documented 4,075 racial terror lynchings of African Americans in twelve southern states between 1877 and 1950 (Equal Justice Initiative, 2017). That is not a footnote to somebody else's history. It is the thing itself, and no comparison in this course is offered as a reason to look away from it.
 
 **The two claims this course makes, and why they are kept apart.**
 
 | | **A. Nazi Germany** | **B. Apartheid South Africa** |
 |---|---|---|
 | **What is claimed** | Nazi lawyers studied American race law in detail while drafting the Nuremberg Laws, and selectively drew on it | Parallel development from a shared colonial parent, with documented mutual observation running in both directions |
-| **Strongest evidence** | A stenographic transcript of a closed policy meeting on 5 June 1934, plus the published Nazi legal literature | Comparative legal history, plus named individuals who travelled, observed and published in each direction |
+| **Strongest evidence** | A stenographic transcript of a closed policy meeting on 5 June 1934, plus the published Nazi legal literature | Comparative legal history, plus named individuals who traveled, observed and published in each direction |
 | **What is NOT claimed** | That the Nazis copied American law, or that American law caused the Holocaust | That South Africa copied Jim Crow |
 | **Where it is taught here** | Section 3 | Section 4 |
 
@@ -100,8 +100,8 @@ export const JIM_CROW_EXPORT_COURSE: AuthoredCourse = {
 | **5. Resemblance only** | The two look alike | Nothing. This rung is not a claim about causation at all |
 
 **Where this course puts its two claims.**
-- **Germany.** Rung 2, solidly, and Whitman argues for a piece of rung 1 as well. He is careful about that last step, and his hedge is worth memorising: **"It is even possible, indeed likely, that the Nuremberg Laws themselves reflect direct American influence"** (Whitman, 2017, p. 5). *Possible, indeed likely* is not *proved*. **A hedge in a scholarly sentence is data. Read hedges the way you read numbers.**
-- **South Africa.** Rungs 3 and 4, with named people on rung 3 travelling in both directions. **Not rung 2, and not rung 1.**
+- **Germany.** Rung 2, solidly, and Whitman argues for a piece of rung 1 as well. He is careful about that last step, and his hedge is worth memorizing: **"It is even possible, indeed likely, that the Nuremberg Laws themselves reflect direct American influence"** (Whitman, 2017, p. 5). *Possible, indeed likely* is not *proved*. **A hedge in a scholarly sentence is data. Read hedges the way you read numbers.**
+- **South Africa.** Rungs 3 and 4, with named people on rung 3 traveling in both directions. **Not rung 2, and not rung 1.**
 
 **One more distinction, because it is the one people skip.** There is a difference between a claim about a **document** and a claim about the **world**. "The transcript of the 5 June 1934 meeting records a long discussion of American anti-miscegenation statutes" is a claim about a document, and it is either true or false about that document. "American law caused the Nuremberg Laws" is a claim about the world, and it requires a great deal more. **The first claim is nearly bulletproof. The second is contested. Most bad writing on this subject proves the first and asserts the second.**
 
@@ -114,7 +114,7 @@ export const JIM_CROW_EXPORT_COURSE: AuthoredCourse = {
         },
         {
           prompt: "What are the two opposite abuses this course is built to block?",
-          answer: "First, the claim that America equals Nazi Germany or that the Nazis simply copied Jim Crow. Second, using the comparison to minimise Jim Crow by grading it on a curve against something worse.",
+          answer: "First, the claim that America equals Nazi Germany or that the Nazis simply copied Jim Crow. Second, using the comparison to minimize Jim Crow by grading it on a curve against something worse.",
         },
         {
           prompt: "Quote Whitman on whether the Nazis wanted to reproduce the United States.",
@@ -149,9 +149,9 @@ export const JIM_CROW_EXPORT_COURSE: AuthoredCourse = {
 **Rule 6. No invented anything.** No invented statistic, quotation, person or date. Where a figure was in circulation but could not be verified against an authoritative source, it has been left out rather than guessed. **You will notice one or two places where this course tells you a number exists and declines to print it. That is the rule working, not the course being coy.**
 
 **What this course is a companion to, rather than a repeat of.** Two shipped courses already carry the transnational Black political thread, and this one deliberately does not restate them.
-- ***Pan-Africanism*** carries the organised political movement across borders: the congresses, the parties, the leaders, the arguments among them.
+- ***Pan-Africanism*** carries the organized political movement across borders: the congresses, the parties, the leaders, the arguments among them.
 - ***Afrocentricity*** carries the intellectual and cultural frame.
-- **This course is the legal-technique thread only.** It is about statutes, drafting meetings, commissioned research and citation. When you reach the anti-apartheid material in lesson 16 you will see the three threads touch, and the right move there is to go and read the other two courses rather than expect this one to summarise them.
+- **This course is the legal-technique thread only.** It is about statutes, drafting meetings, commissioned research and citation. When you reach the anti-apartheid material in lesson 16 you will see the three threads touch, and the right move there is to go and read the other two courses rather than expect this one to summarize them.
 
 **One thing to carry into section 2.** The export claim only means something if you already know what was being exported. That is the next two lessons, and they are a recap of instruments the city courses established, not new assertions. **Ground first, then the claim.**
 
@@ -190,13 +190,13 @@ export const JIM_CROW_EXPORT_COURSE: AuthoredCourse = {
       section: "Section 2 · What America built",
       body: `**This lesson asserts nothing new.** It is a recap of instruments the United States courses already established, gathered in one place so that section 3's claim rests on ground you have already walked. **If the export claim is going to mean anything, you have to be able to say what was being studied.**
 
-**Start with the first federal statute on citizenship, because the phrase is short and it does the work.** The Naturalization Act of 1790 opened naturalisation to "any alien, being a free white person" who had resided in the United States for two years, was of good character, and swore to support the Constitution (Naturalization Act of 1790, 1 Stat. 103). **Four words in a founding statute made colour a condition of becoming an American.** That race bar was not fully removed from naturalisation law until the Immigration and Nationality Act of 1952, and even then the new law "only allotted new Asian quotas based on race, instead of nationality" (US Department of State, Office of the Historian, n.d.-b).
+**Start with the first federal statute on citizenship, because the phrase is short and it does the work.** The Naturalization Act of 1790 opened naturalisation to "any alien, being a free white person" who had resided in the United States for two years, was of good character, and swore to support the Constitution (Naturalization Act of 1790, 1 Stat. 103). **Four words in a founding statute made color a condition of becoming an American.** That race bar was not fully removed from naturalisation law until the Immigration and Nationality Act of 1952, and even then the new law "only allotted new Asian quotas based on race, instead of nationality" (US Department of State, Office of the Historian, n.d.-b).
 
 **Then exclusion by law, aimed at a named group.** The Chinese Exclusion Act of 1882 suspended the immigration of Chinese labourers and barred Chinese immigrants from naturalisation. **It is the first American statute to exclude an immigrant group by name**, and it created the legal category that the 1924 Act would later generalise.
 
-**Then the quota system, which is the piece that mattered most abroad.** The Immigration Act of 1924, usually called the Johnson-Reed Act, allotted immigration visas to "two percent of the total number of people of each nationality in the United States as of the 1890 national census," a base year chosen deliberately: the Act "pushed back the year on which quota calculations were based from 1910 to 1890," which favoured northern and western Europe and cut southern and eastern European arrivals sharply (US Department of State, Office of the Historian, n.d.-a). It also barred "any alien who by virtue of race or nationality was ineligible for citizenship," which, given the 1790 race bar still on the books, ended Japanese immigration outright (US Department of State, Office of the Historian, n.d.-a).
+**Then the quota system, which is the piece that mattered most abroad.** The Immigration Act of 1924, usually called the Johnson-Reed Act, allotted immigration visas to "two percent of the total number of people of each nationality in the United States as of the 1890 national census," a base year chosen deliberately: the Act "pushed back the year on which quota calculations were based from 1910 to 1890," which favored northern and western Europe and cut southern and eastern European arrivals sharply (US Department of State, Office of the Historian, n.d.-a). It also barred "any alien who by virtue of race or nationality was ineligible for citizenship," which, given the 1790 race bar still on the books, ended Japanese immigration outright (US Department of State, Office of the Historian, n.d.-a).
 
-**Read the two statutes together and you see the technique, which is the thing that travelled.** The 1790 Act made race a condition of citizenship. The 1924 Act made ineligibility for citizenship a condition of entry. **Neither statute has to say "we are excluding this race" in the exclusion clause, because the racial work was already done upstream.** That is a piece of legal engineering, and it is exactly the sort of thing a foreign ministry researching race law would write down.
+**Read the two statutes together and you see the technique, which is the thing that traveled.** The 1790 Act made race a condition of citizenship. The 1924 Act made ineligibility for citizenship a condition of entry. **Neither statute has to say "we are excluding this race" in the exclusion clause, because the racial work was already done upstream.** That is a piece of legal engineering, and it is exactly the sort of thing a foreign ministry researching race law would write down.
 
 **Then the third and least discussed instrument: citizenship that is not full citizenship.** Whitman puts it plainly: the United States "stood at the forefront in the creation of forms of de jure and de facto second-class citizenship for blacks, Filipinos, Chinese, and others" (Whitman, 2017, p. 12). **The category matters more than any single statute.** A person could be a national of the United States, subject to its jurisdiction, and still not hold the political rights of a citizen. **Hold that category in your head until lesson 10**, because the first of the two Nuremberg Laws is a citizenship law, and it works by creating exactly that kind of second tier.
 
@@ -220,7 +220,7 @@ export const JIM_CROW_EXPORT_COURSE: AuthoredCourse = {
         },
         {
           prompt: "Which two shipped courses is this one a companion to, and what does each carry?",
-          answer: "Pan-Africanism carries the organised political movement across borders. Afrocentricity carries the intellectual and cultural frame. This course carries the legal-technique thread only.",
+          answer: "Pan-Africanism carries the organized political movement across borders. Afrocentricity carries the intellectual and cultural frame. This course carries the legal-technique thread only.",
         },
         {
           prompt: "What does rule 4, do not extend an argument past its subject, forbid in practice?",
@@ -230,7 +230,7 @@ export const JIM_CROW_EXPORT_COURSE: AuthoredCourse = {
     },
     {
       slug: "ex-marriage-and-segregation",
-      title: "5 · What America built: marriage, and the colour line in public",
+      title: "5 · What America built: marriage, and the color line in public",
       section: "Section 2 · What America built",
       body: `The second half of the recap, and the half that turns out to matter most to section 3.
 
@@ -244,7 +244,7 @@ export const JIM_CROW_EXPORT_COURSE: AuthoredCourse = {
 
 **Segregation, and a warning about where it fits.** *Plessy v. Ferguson* in 1896 upheld a Louisiana statute requiring separate railway accommodation by race and gave the country the phrase "separate but equal." Statutory segregation then spread across schooling, transport, public accommodation, prisons, voter rolls and tax rolls. **Here is the warning.** Section 3 will show you that segregation is **not** where the German interest concentrated, and Whitman says so bluntly: "Segregation is not what counts most" (Whitman, 2017, p. 11), because "[t]he Nuremberg Laws said nothing about segregation" (Whitman, 2017, p. 11). **Most popular writing on this topic gets this exactly backwards**, asks whether the Nazis copied Jim Crow buses and schools, finds little, and either declares the whole question closed or fudges it.
 
-**So what did the American colour line look like from outside?** One answer is on the record, and it is an uncomfortable one to read: an official Nazi handbook article of 1934 listed, with evident astonishment, American statutes assigning white and colored children to different schools, requiring race on birth, marriage and death certificates, and separating waiting rooms, railway cars, sleeping cars, street cars, buses, steamships "and even in prisons," with separate voter lists and separate tax assessment in Arkansas (Kier, as quoted in Stolleis, 2018; Whitman, 2017). **A German Nazi lawyer thought American segregation was excessive.** Lesson 9 is about what that reaction did and did not lead to.
+**So what did the American color line look like from outside?** One answer is on the record, and it is an uncomfortable one to read: an official Nazi handbook article of 1934 listed, with evident astonishment, American statutes assigning white and colored children to different schools, requiring race on birth, marriage and death certificates, and separating waiting rooms, railway cars, sleeping cars, street cars, buses, steamships "and even in prisons," with separate voter lists and separate tax assessment in Arkansas (Kier, as quoted in Stolleis, 2018; Whitman, 2017). **A German Nazi lawyer thought American segregation was excessive.** Lesson 9 is about what that reaction did and did not lead to.
 
 **The recap in one line, so you can carry it into section 3.** By the early 1930s the United States had, on the public statute books, a race bar in naturalisation, race-based immigration quotas, several forms of second-class citizenship, criminal anti-miscegenation law in about thirty states, and statutory segregation across public life. **All of it was published. None of it was secret. That is the whole reason a foreign ministry could study it.**
 
@@ -255,11 +255,11 @@ export const JIM_CROW_EXPORT_COURSE: AuthoredCourse = {
       recallContent: [
         {
           prompt: "What did the Naturalization Act of 1790 require, and what is the phrase to remember?",
-          answer: "It opened naturalisation to \"any alien, being a free white person\" resident for two years, of good character, who swore to support the Constitution. Four words in a founding statute made colour a condition of becoming an American.",
+          answer: "It opened naturalisation to \"any alien, being a free white person\" resident for two years, of good character, who swore to support the Constitution. Four words in a founding statute made color a condition of becoming an American.",
         },
         {
           prompt: "How did the Immigration Act of 1924 build its quotas, and what did the ineligibility clause do?",
-          answer: "Two percent of the number of people of each nationality present at the 1890 census, a base year pushed back from 1910 to favour northern and western Europe. It also barred any alien ineligible for citizenship by race or nationality, which ended Japanese immigration.",
+          answer: "Two percent of the number of people of each nationality present at the 1890 census, a base year pushed back from 1910 to favor northern and western Europe. It also barred any alien ineligible for citizenship by race or nationality, which ended Japanese immigration.",
         },
         {
           prompt: "Why is the 1790 and 1924 pairing described as a piece of legal engineering?",
@@ -299,7 +299,7 @@ export const JIM_CROW_EXPORT_COURSE: AuthoredCourse = {
           {
             prompt: "This course is built to block two opposite abuses. What are they?",
             options: [
-              "Equating America with Nazi Germany, and minimising Jim Crow by comparison",
+              "Equating America with Nazi Germany, and minimizing Jim Crow by comparison",
               "Overstating the South African evidence, and understating the Australian material",
               "Citing primary sources, and citing secondary sources",
               "Discussing citizenship law, and discussing marriage law",
@@ -395,7 +395,7 @@ export const JIM_CROW_EXPORT_COURSE: AuthoredCourse = {
           {
             prompt: "The Immigration Act of 1924 based its quotas on which census year, and why does the choice matter?",
             options: [
-              "1890, because pushing the base year back from 1910 favoured northern Europe",
+              "1890, because pushing the base year back from 1910 favored northern Europe",
               "1920, because it was the most recent national count available to the Congress of the day",
               "1870, because it predated Reconstruction",
               "1900, because it was a round number at the turn of the century",
@@ -461,7 +461,7 @@ export const JIM_CROW_EXPORT_COURSE: AuthoredCourse = {
               "Segregation was repealed in the United States before 1933",
             ],
             correctIndex: 0,
-            explanation: "Whitman (2017, p. 11) argues that scholars looking for a Jim Crow influence on Nazi segregation are asking the wrong question, because segregation was not central to the Nazi programme.",
+            explanation: "Whitman (2017, p. 11) argues that scholars looking for a Jim Crow influence on Nazi segregation are asking the wrong question, because segregation was not central to the Nazi program.",
             sourceLessonSlug: "ex-marriage-and-segregation",
           },
         ],
@@ -526,7 +526,7 @@ export const JIM_CROW_EXPORT_COURSE: AuthoredCourse = {
       slug: "ex-krieger-and-kier",
       title: "8 · The researchers: who actually read the American statutes",
       section: "Section 3 · Germany studied it",
-      body: `A ministry memo does not write itself. **Two named researchers stand behind the American material in the German record, and knowing who they were is the difference between a rumour and a citation.**
+      body: `A ministry memo does not write itself. **Two named researchers stand behind the American material in the German record, and knowing who they were is the difference between a rumor and a citation.**
 
 **Heinrich Krieger, the man who went and looked.** Krieger was a young Nazi lawyer who spent two semesters as an exchange student at the University of Arkansas Law School in 1933 and 1934. He was immersed enough in American law to publish an English-language article, "Principles of the Indian Law," in the *George Washington Law Review* in 1935 (Whitman, 2017). Returning to Germany, he became a fellow at an institute in Düsseldorf under the Interior Ministry, and it was there that his work came to the attention of Gürtner's Justice Ministry (Whitman, 2017). **The material Gürtner quoted at the 5 June 1934 meeting most likely came from Krieger's article "Das Rassenrecht in den Vereinigten Staaten," published in mid-1934 in the technical administrative-law journal *Verwaltungsarchiv*** (Whitman, 2017; Stolleis, 2018). He expanded it into a book of the same title in 1936, backed by roughly 350 pages of study of American statutes and case law (Whitman, 2017; Stolleis, 2018).
 
@@ -548,7 +548,7 @@ On classification: some states counted descent "for up to three generations," fi
 
 **2. It was written for Germans.** Whitman argues Kier's chapter "cannot have been meant for a foreign audience," being a dense Fraktur text with limited foreign circulation and intended "to guide and inspire domestic Nazi deliberations" (Whitman, 2017). **That is the argument that separates study from propaganda, and it is an argument about the physical document, which is the strongest kind.**
 
-**3. South Africa is in the brief, and it is ranked second.** Kier's commission covered the United States, South Africa and Australia. Krieger later joined the National Socialist Office of Race Policy, travelled to South-West Africa, and gathered material for a monograph on South Africa (Whitman, 2017). **And Krieger's own summary judgement, as Stolleis reports it, was that there were only two real centres of race law in the world, the United States and Germany, with South Africa at the margin (Stolleis, 2018).** Hold that. **It is the honest bridge to section 4, and it points the opposite way from the popular version of this story.**
+**3. South Africa is in the brief, and it is ranked second.** Kier's commission covered the United States, South Africa and Australia. Krieger later joined the National Socialist Office of Race Policy, traveled to South-West Africa, and gathered material for a monograph on South Africa (Whitman, 2017). **And Krieger's own summary judgment, as Stolleis reports it, was that there were only two real centers of race law in the world, the United States and Germany, with South Africa at the margin (Stolleis, 2018).** Hold that. **It is the honest bridge to section 4, and it points the opposite way from the popular version of this story.**
 
 ## Sources
 - Stolleis, M. (2018). Lehrmeister Amerika [America the schoolmaster]. *Rechtsgeschichte / Legal History*, *26*, 489 to 492. https://doi.org/10.12946/rg26/489-492
@@ -589,19 +589,19 @@ On classification: some states counted descent "for up to three generations," fi
 - A **1934 German book written as a guide for teachers** on how to present Nazi race policy to pupils praised American seriousness about racial purity while noting that it led "in certain cases to human hardness," the illustration being a person of predominantly white appearance who was nonetheless classified as Black. (The original passage uses a racial slur at that point; it is omitted here, and the omission is deliberate rather than an accident of quotation.) (Whitman, 2017)
 - A **1936 article written for German teachers of English** likewise praised the American commitment to legislating racial purity but blanched at "the unforgiving hardness of the social usage" that counted anyone with a drop of African ancestry as Black (Whitman, 2017).
 
-**Whitman's verdict on what that meant for the borrowing.** "The one-drop rule was too harsh for the Nazis," he writes, with the qualification that at least one fanatic, Achim Gercke, favoured something like it, and he draws the consequence: "for that reason alone the influence of American classification schemes was inevitably limited" (Whitman, 2017).
+**Whitman's verdict on what that meant for the borrowing.** "The one-drop rule was too harsh for the Nazis," he writes, with the qualification that at least one fanatic, Achim Gercke, favored something like it, and he draws the consequence: "for that reason alone the influence of American classification schemes was inevitably limited" (Whitman, 2017).
 
-**Now the sentence that should stop you from misreading this as a compliment to the United States.** Whitman writes that scholars who see parallels between American and Nazi racial classification schemes are wrong, and gives the reason: **"only because they understate the relative severity of American law"** (Whitman, 2017). **The Nazis did not settle on a milder rule because America was cruel and they were kind. They settled on a different rule because their target population was different and because a rule that harsh was, in their judgement, unworkable for it.** That is a statement about Nazi cost-benefit reasoning, not about American mercy, and treating it as exoneration is the second-commonest abuse of this material after the first.
+**Now the sentence that should stop you from misreading this as a compliment to the United States.** Whitman writes that scholars who see parallels between American and Nazi racial classification schemes are wrong, and gives the reason: **"only because they understate the relative severity of American law"** (Whitman, 2017). **The Nazis did not settle on a milder rule because America was cruel and they were kind. They settled on a different rule because their target population was different and because a rule that harsh was, in their judgment, unworkable for it.** That is a statement about Nazi cost-benefit reasoning, not about American mercy, and treating it as exoneration is the second-commonest abuse of this material after the first.
 
-**The second reason unmodified borrowing was impossible: the targets did not match.** Nazi authors argued that American law could rely on what one anonymous 1935 writer called "mostly clear color lines," while German Jews were not visually distinguishable in the same way and maintained identity through culture rather than colour (Whitman, 2017). **From this the Nazi literature drew a conclusion that should turn your stomach and that you should still record accurately**, namely that the German "problem" was therefore harder and more insidious than the American one.
+**The second reason unmodified borrowing was impossible: the targets did not match.** Nazi authors argued that American law could rely on what one anonymous 1935 writer called "mostly clear color lines," while German Jews were not visually distinguishable in the same way and maintained identity through culture rather than color (Whitman, 2017). **From this the Nazi literature drew a conclusion that should turn your stomach and that you should still record accurately**, namely that the German "problem" was therefore harder and more insidious than the American one.
 
-**Whitman's bottom line, which is the sentence to memorise for the quiz and for arguments.**
+**Whitman's bottom line, which is the sentence to memorize for the quiz and for arguments.**
 
 > The bottom line is that the Nazis regarded American classification schemes as too harsh, and the American race problem as too different, for any unmodified borrowing to have taken place. But what ultimately matters is that they knew that there was an American example, and indeed the example that they turned to first, and over and over again. (Whitman, 2017)
 
-**Both halves of that sentence are the finding.** The first half is the limit on the claim. The second half is the claim. **A course that gives you only the first half is minimising. A course that gives you only the second half is agitating. This course gives you the sentence.**
+**Both halves of that sentence are the finding.** The first half is the limit on the claim. The second half is the claim. **A course that gives you only the first half is minimizing. A course that gives you only the second half is agitating. This course gives you the sentence.**
 
-**A test you can apply to any writing you meet on this subject.** Ask: does it contain the words *too harsh*, or any equivalent? **If a piece asserts that the Nazis modelled their race law on America and never mentions that they rejected the American classification rule as excessive, the writer either has not read the book or is not telling you what is in it.** That test is cheap, it is fast, and it works.
+**A test you can apply to any writing you meet on this subject.** Ask: does it contain the words *too harsh*, or any equivalent? **If a piece asserts that the Nazis modeled their race law on America and never mentions that they rejected the American classification rule as excessive, the writer either has not read the book or is not telling you what is in it.** That test is cheap, it is fast, and it works.
 
 ## Sources
 - Whitman, J. Q. (2017). *Hitler's American model: The United States and the making of Nazi race law*. Princeton University Press.`,
@@ -624,7 +624,7 @@ On classification: some states counted descent "for up to three generations," fi
         },
         {
           prompt: "Where did South Africa sit in the German research, according to Krieger's own summary?",
-          answer: "At the margin. Krieger judged that there were only two real centres of race law in the world, the United States and Germany, with South Africa peripheral, even though he later travelled to South-West Africa and gathered material on South Africa.",
+          answer: "At the margin. Krieger judged that there were only two real centers of race law in the world, the United States and Germany, with South Africa peripheral, even though he later traveled to South-West Africa and gathered material on South Africa.",
         },
       ],
     },
@@ -687,7 +687,7 @@ On classification: some states counted descent "for up to three generations," fi
         },
         {
           prompt: "What cheap test can you run on any piece of writing about this subject?",
-          answer: "Check whether it contains the words too harsh or an equivalent. If a piece says the Nazis modelled their race law on America and never mentions that they rejected the American classification rule as excessive, the writer has not read the book or is not reporting it.",
+          answer: "Check whether it contains the words too harsh or an equivalent. If a piece says the Nazis modeled their race law on America and never mentions that they rejected the American classification rule as excessive, the writer has not read the book or is not reporting it.",
         },
       ],
     },
@@ -714,12 +714,12 @@ On classification: some states counted descent "for up to three generations," fi
 
 **The sharpest published qualifier comes from a friendly reviewer, which is why it is worth more.** Michael Stolleis, one of Germany's leading legal historians, reviewed the book in *Rechtsgeschichte* in 2018 and largely accepted its findings. His summing-up sentence is the one to keep: **"Gewiss hätte es für die Nationalsozialisten dieses Modells nicht bedurft, aber da es vorhanden war, wurde es auch genutzt"** (Stolleis, 2018, p. 492), which reads in English as: certainly the National Socialists would not have needed this model, but since it was there, it was used as well. **That is a precise statement of a modest claim, and it is compatible with everything in section 3.** Stolleis also notices the political shape of the book's American reception, suggesting the enthusiasm carried an implication that American society should examine its own past and present rather than only pointing at Nazi Germany (Stolleis, 2018).
 
-**The limitation you should have spotted three paragraphs ago.** **Every critic quoted in the table above is quoted from Whitman.** He chose the sentences, he set them up, and he answers them on the next page. **That is normal scholarly practice and it is still a one-sided window.** If this question matters to you, the honest next step is to read Guettel's 2012 book and Rethmeier's dissertation yourself, and to read the published reviews rather than only the book. Three you can start with: S. J. Wiesen in the *American Historical Review* (2018), K. F. Ledford in *Holocaust and Genocide Studies* (2019), and Stolleis (2018). **This course has read Stolleis in full and characterises only Stolleis. The other two are named as places to go, not summarised second hand.**
+**The limitation you should have spotted three paragraphs ago.** **Every critic quoted in the table above is quoted from Whitman.** He chose the sentences, he set them up, and he answers them on the next page. **That is normal scholarly practice and it is still a one-sided window.** If this question matters to you, the honest next step is to read Guettel's 2012 book and Rethmeier's dissertation yourself, and to read the published reviews rather than only the book. Three you can start with: S. J. Wiesen in the *American Historical Review* (2018), K. F. Ledford in *Holocaust and Genocide Studies* (2019), and Stolleis (2018). **This course has read Stolleis in full and characterises only Stolleis. The other two are named as places to go, not summarized second hand.**
 
 **What a live disagreement looks like, and how to hold one.**
 1. **The documentary claims are not in dispute.** Nobody argues that the transcript is a forgery or that Kier's table is not in the handbook. **Both sides agree about the documents.**
 2. **The dispute is about what the documents mean.** Were the American references formative or decorative? **That is an interpretive question, and interpretive questions do not get settled by producing one more document.**
-3. **Both sides have a motivated reading available to them**, and you should notice yours. If you want America implicated, Whitman is convenient. If you want America exonerated, Guettel is. **Preferring the conclusion you wanted is the failure mode; naming it in advance is the defence.**
+3. **Both sides have a motivated reading available to them**, and you should notice yours. If you want America implicated, Whitman is convenient. If you want America exonerated, Guettel is. **Preferring the conclusion you wanted is the failure mode; naming it in advance is the defense.**
 4. **The safest formulations are the specific ones.** "Nazi lawyers studied American race law in detail while drafting the Nuremberg Laws" is defensible on any reading. "American race law caused the Nuremberg Laws" is not. **Write the first.**
 
 ## Sources
@@ -734,7 +734,7 @@ On classification: some states counted descent "for up to three generations," fi
         },
         {
           prompt: "What did the Blood Law's sections 1 and 5 do, and which American package do they resemble structurally?",
-          answer: "Section 1 forbade marriages between Jews and nationals of German or related blood, made them null and void even if concluded abroad to evade the law, and section 5 punished violation with imprisonment at hard labour. That is civil invalidity plus criminal penalty, the American anti-miscegenation package.",
+          answer: "Section 1 forbade marriages between Jews and nationals of German or related blood, made them null and void even if concluded abroad to evade the law, and section 5 punished violation with imprisonment at hard labor. That is civil invalidity plus criminal penalty, the American anti-miscegenation package.",
         },
         {
           prompt: "What threshold did the 14 November 1935 regulation settle on, and what had the radicals wanted?",
@@ -884,7 +884,7 @@ On classification: some states counted descent "for up to three generations," fi
             options: [
               "Because the Nazis were lying about their real view in order to embarrass American diplomats at the League of Nations",
               "Because Whitman later withdrew the claim in the paperback edition of his book",
-              "Because it reflects Nazi judgement about workability, and understating American severity is the error",
+              "Because it reflects Nazi judgment about workability, and understating American severity is the error",
               "Because no German source actually says it, and the whole passage is a later invention",
             ],
             correctIndex: 2,
@@ -909,7 +909,7 @@ On classification: some states counted descent "for up to three generations," fi
               "That we do not know what part, if any, the American model played here",
               "That the German drafters certainly took the rule from Texas case law reported by Krieger",
               "That the parallel is a coincidence with no possible route of transmission at all",
-              "That the Cable Act was itself modelled on an earlier German statute",
+              "That the Cable Act was itself modeled on an earlier German statute",
             ],
             correctIndex: 0,
             explanation: "He had a striking parallel and a plausible route, and he wrote that we do not know. That is the standard this course asks you to write to.",
@@ -955,7 +955,7 @@ On classification: some states counted descent "for up to three generations," fi
 
 **What the sources support instead, stated up front so the rest of the section is checkable against it.**
 1. **A shared parent.** South African segregation law and American segregation law both descend, in part, from the same imperial legal world, and South Africa's own segregation framework was legislated under British dominion government decades before the word apartheid existed. **Lesson 14.**
-2. **Documented mutual observation, running in both directions.** Named people travelled, watched and published, and at least one important current ran from South Africa **to** the American South rather than the other way. **Lesson 15.**
+2. **Documented mutual observation, running in both directions.** Named people traveled, watched and published, and at least one important current ran from South Africa **to** the American South rather than the other way. **Lesson 15.**
 3. **Explicit cross-citation between the freedom movements**, which is a different phenomenon again and is the best documented thing in the whole section. **Lesson 16.**
 
 **Why the evidence is different in kind, not just weaker.** In section 3 there was a room, a date, a stenographer and a ministry memo. **There is no equivalent single document here, and the honest thing is to say so plainly rather than to hunt for a substitute.** What there is instead is a body of comparative legal history and a set of biographies. Two books define the field:
@@ -965,7 +965,7 @@ On classification: some states counted descent "for up to three generations," fi
 
 **Read what those two books are doing.** Neither is a transmission study. **Both are comparisons**, which is rung 4 and rung 5 territory on the ladder from lesson 2: parallel development from partly shared conditions and a partly shared legal ancestor. **That is a real finding. It is just not the finding people arrive expecting.**
 
-**One piece of evidence from section 3 that legitimately crosses over, and its exact weight.** Herbert Kier's commission at the Kaiser Wilhelm Institute covered "the United States, South Africa and Australia" (Stolleis, 2018), and Heinrich Krieger later travelled to South-West Africa for the National Socialist Office of Race Policy and gathered material for a monograph on South Africa (Whitman, 2017). **So Nazi researchers did look at South Africa.** And Krieger's own conclusion, as Stolleis reports it, was that the world had **two** real centres of race law, the United States and Germany, with South Africa at the margin (Stolleis, 2018).
+**One piece of evidence from section 3 that legitimately crosses over, and its exact weight.** Herbert Kier's commission at the Kaiser Wilhelm Institute covered "the United States, South Africa and Australia" (Stolleis, 2018), and Heinrich Krieger later traveled to South-West Africa for the National Socialist Office of Race Policy and gathered material for a monograph on South Africa (Whitman, 2017). **So Nazi researchers did look at South Africa.** And Krieger's own conclusion, as Stolleis reports it, was that the world had **two** real centers of race law, the United States and Germany, with South Africa at the margin (Stolleis, 2018).
 
 **Notice how little that gets you, and notice it in both directions.** It tells you a German researcher's ranking in the 1930s. **It is not evidence that South Africa borrowed from anybody, and it is not evidence that it did not.** It is evidence about what one Nazi comparativist thought. **Treating a third party's ranking as a finding about the country ranked is a mistake worth naming, because it is easy to make and hard to see.**
 
@@ -1013,7 +1013,7 @@ On classification: some states counted descent "for up to three generations," fi
 | **Natives (Urban Areas) Act** (Act No. 21 of 1923) | 1923 | Segregated urban residential space by race and created influx control over African movement into towns |
 | **Native Administration Act** (Act No. 38 of 1927) | 1927 | Made the Governor-General "supreme chief" of all Africans, with power to govern them by proclamation |
 
-**The 1923 Act had a commission behind it, and the commission's principle is the thing to remember.** The Stallard Commission of 1922 held that Africans should be in the urban industrial areas only in order to work, and should leave when the work was done (South African History Online, n.d.-a). **That is a principle about labour and residence, not about seating or drinking fountains.** It is the ancestor of the pass laws, and its lineage is the colonial administration of a labouring population, not the American colour line in public accommodation.
+**The 1923 Act had a commission behind it, and the commission's principle is the thing to remember.** The Stallard Commission of 1922 held that Africans should be in the urban industrial areas only in order to work, and should leave when the work was done (South African History Online, n.d.-a). **That is a principle about labor and residence, not about seating or drinking fountains.** It is the ancestor of the pass laws, and its lineage is the colonial administration of a labouring population, not the American color line in public accommodation.
 
 **Now the 1927 Act, which is the giveaway.** A statute that names the **Governor-General** as supreme chief of all Africans and lets him legislate for them by proclamation is not an American instrument at all. **The United States had no Governor-General.** This is indirect rule: the classic technique of British colonial native administration, in which a colonial authority governs a subject population through a separate legal channel. **When you see that in the statute book, you are looking at the parent.**
 
@@ -1066,17 +1066,17 @@ On classification: some states counted descent "for up to three generations," fi
         },
         {
           prompt: "Where did Krieger rank South Africa, and what does that ranking prove?",
-          answer: "At the margin, behind the United States and Germany as the two real centres of race law. It proves what one Nazi comparativist thought. It is not evidence that South Africa borrowed from anybody, in either direction.",
+          answer: "At the margin, behind the United States and Germany as the two real centers of race law. It proves what one Nazi comparativist thought. It is not evidence that South Africa borrowed from anybody, in either direction.",
         },
       ],
     },
     {
       slug: "ex-mutual-sight",
-      title: "15 · Mutual sight: who travelled, who watched, and which way it ran",
+      title: "15 · Mutual sight: who traveled, who watched, and which way it ran",
       section: "Section 4 · South Africa: parallel, parent, and mutual sight",
       body: `Parallel development did not mean mutual ignorance. **People crossed the ocean on purpose to look, and the traffic is documented by name.**
 
-**Maurice Smethurst Evans, who went the other way.** Evans was a British immigrant to South Africa in 1875, described by his American republisher as a founder of the Union of South Africa in 1910, and by then a leading authority on racial policy in colonial Africa. **In 1914 he travelled through the American South to study race relations there**, and in 1915 he published the results as *Black and White in the Southern States: A Study of the Race Problem in the United States from a South African Point of View* (University of South Carolina Press, n.d.).
+**Maurice Smethurst Evans, who went the other way.** Evans was a British immigrant to South Africa in 1875, described by his American republisher as a founder of the Union of South Africa in 1910, and by then a leading authority on racial policy in colonial Africa. **In 1914 he traveled through the American South to study race relations there**, and in 1915 he published the results as *Black and White in the Southern States: A Study of the Race Problem in the United States from a South African Point of View* (University of South Carolina Press, n.d.).
 
 **Read the subtitle again.** *From a South African point of view.* **The observer is South African and the object of study is the United States.** The book is "one of the earliest studies in comparative race relations" and was "the first to connect the experience of the American South" to South African conditions, and it was reissued with an introduction by George M. Fredrickson (University of South Carolina Press, n.d.).
 
@@ -1153,8 +1153,8 @@ On classification: some states counted descent "for up to three generations," fi
 
 **That is a citation.** It is public, it is deliberate, it names its sources, and it was delivered in the legislature of the country being cited. **Compare it with the evidence in lesson 7: a closed meeting, a stenographer, and a memo nobody outside the ministry was meant to read.** Both are real evidence of transnational influence. **They are opposite in kind, and the difference tells you something about the two phenomena.** A regime borrowing a technique of exclusion has no reason to advertise it. **A movement borrowing courage has every reason to.**
 
-**Where to go next, and why this course stops here.** Three of the names in that passage, **Du Bois, Garvey and King**, are the spine of other courses in this catalogue, and summarising them here would do them badly.
-- ***Pan-Africanism*** carries the organised political movement across borders, including Garvey and Du Bois and the congresses. **The transnational Black political thread is that course's job.**
+**Where to go next, and why this course stops here.** Three of the names in that passage, **Du Bois, Garvey and King**, are the spine of other courses in this catalog, and summarizing them here would do them badly.
+- ***Pan-Africanism*** carries the organized political movement across borders, including Garvey and Du Bois and the congresses. **The transnational Black political thread is that course's job.**
 - ***Afrocentricity*** carries the intellectual and cultural frame.
 - **This course carries the legal-technique thread and stops at the edge of theirs.** When Mandela names Garvey in the United States Capitol, you have arrived at the border between this course and those. **Cross it.**
 
@@ -1167,7 +1167,7 @@ On classification: some states counted descent "for up to three generations," fi
       recallContent: [
         {
           prompt: "Who was Maurice Evans, what did he do in 1914, and what did he publish?",
-          answer: "A British immigrant to South Africa in 1875 and a figure in the founding of the Union in 1910. He travelled the American South in 1914 and published Black and White in the Southern States in 1915, subtitled a study from a South African point of view.",
+          answer: "A British immigrant to South Africa in 1875 and a figure in the founding of the Union in 1910. He traveled the American South in 1914 and published Black and White in the Southern States in 1915, subtitled a study from a South African point of view.",
         },
         {
           prompt: "What did Evans conclude about the American South, and why does it matter?",
@@ -1212,7 +1212,7 @@ On classification: some states counted descent "for up to three generations," fi
             prompt: "What kind of studies are Fredrickson (1981) and Cell (1982)?",
             options: [
               "Transmission studies tracing statutes as they moved between the two countries",
-              "Legal casebooks compiled for the use of practising attorneys in both jurisdictions",
+              "Legal casebooks compiled for the use of practicing attorneys in both jurisdictions",
               "Comparisons, sitting on the parallel-development rungs of the ladder",
               "Memoirs written by participants in the events they describe",
             ],
@@ -1265,7 +1265,7 @@ On classification: some states counted descent "for up to three generations," fi
               "That mixed marriages should be void and criminally punishable throughout South Africa",
             ],
             correctIndex: 2,
-            explanation: "It is a principle about labour and residence, and it is the ancestor of influx control and the pass laws, not of the American colour line in public accommodation.",
+            explanation: "It is a principle about labor and residence, and it is the ancestor of influx control and the pass laws, not of the American color line in public accommodation.",
             sourceLessonSlug: "ex-colonial-parent",
           },
           {
@@ -1344,7 +1344,7 @@ On classification: some states counted descent "for up to three generations," fi
             prompt: "Who issued the Appeal for Action Against Apartheid on 10 December 1962, and what did it ask for?",
             options: [
               "Albert Luthuli and Martin Luther King Jr., asking for demonstrations, sanctions and a boycott",
-              "The United Nations General Assembly, asking member states to expel South Africa from the organisation",
+              "The United Nations General Assembly, asking member states to expel South Africa from the organization",
               "The American Committee on Africa alone, asking Congress to impose a trade embargo at once",
               "Nelson Mandela and John F. Kennedy, asking for an arms embargo on the South African government",
             ],
@@ -1423,7 +1423,7 @@ On classification: some states counted descent "for up to three generations," fi
         },
         {
           prompt: "Why does this course stop at the edge of the Pan-Africanism and Afrocentricity courses?",
-          answer: "Because Du Bois, Garvey and King are the spine of those courses and summarising them here would do them badly. This course carries the legal-technique thread only.",
+          answer: "Because Du Bois, Garvey and King are the spine of those courses and summarizing them here would do them badly. This course carries the legal-technique thread only.",
         },
       ],
     },
@@ -1467,7 +1467,7 @@ On classification: some states counted descent "for up to three generations," fi
 |---|---|
 | **Have I said which rung of the ladder my claim is on?** | The reader cannot tell whether you found a transcript or a resemblance |
 | **Have I included the fact that most cuts against my conclusion?** | You are advocating, not reporting |
-| **Would the scholar I disagree with recognise my summary of their position?** | You have built a straw version and beaten it |
+| **Would the scholar I disagree with recognize my summary of their position?** | You have built a straw version and beaten it |
 
 **And one last framing, which is the reason the course was built this way.** Whitman writes that we may feel a need "to identify a true nefandum, an abyss of unexampled modern horror against which we can define ourselves" (Whitman, 2017, p. 14). **Both misuses serve that need in opposite ways.** One makes America part of the abyss so the writer can stand outside it. The other keeps the abyss safely foreign so the writer can stand outside it. **Standing outside it is the thing both are for, and the discipline of naming instruments and dates is what stops you.**
 
@@ -1507,11 +1507,11 @@ On classification: some states counted descent "for up to three generations," fi
 
 **1. Comparative research before legislation is normal, and normality is the point.** Whitman quotes Konrad Zweigert and Hein Kötz, the leading postwar German comparative lawyers, on how legislation actually gets made: "Legislators all over the world have found that on many matters good laws cannot be produced without the assistance of comparative law," and "[e]ver since the second half of the nineteenth century legislation in Germany has been preceded by extensive comparative legal research." Whitman's addition is the sting: this description "is just as pertinent to the making of bad laws as it is to the making of good ones" (Whitman, 2017). **A ministry commissioning a survey of foreign statutes is not a conspiracy. It is Tuesday.** Which is precisely why the survey is worth reading.
 
-**2. Legal techniques are modular in a way that ideologies are not.** You cannot transplant a worldview. **You can absolutely transplant a drafting device.** Look back at what actually crossed: a threshold rule for classifying people by descent, a two-tier citizenship, a criminal marriage prohibition with an anti-evasion clause, a quota formula keyed to a census year. **Each of those is a component**, and a component can be picked up by a regime with a different history, a different target population, and a different justification. **That is the transferable lesson, and it is why "our law is nothing like theirs" is a weak defence when the question was about a component.**
+**2. Legal techniques are modular in a way that ideologies are not.** You cannot transplant a worldview. **You can absolutely transplant a drafting device.** Look back at what actually crossed: a threshold rule for classifying people by descent, a two-tier citizenship, a criminal marriage prohibition with an anti-evasion clause, a quota formula keyed to a census year. **Each of those is a component**, and a component can be picked up by a regime with a different history, a different target population, and a different justification. **That is the transferable lesson, and it is why "our law is nothing like theirs" is a weak defense when the question was about a component.**
 
 **3. The most uncomfortable finding in the book is not about racism at all.** Whitman argues that what appealed to Nazi lawyers included the **American legal style**: the open-endedness and flexibility of common-law method, judge-made law, and the legal realism that was fashionable in New Deal America as well as in Nazi Germany. Freisler praised American jurisprudence as one that "would suit us perfectly," and Whitman writes that what attracted Nazi lawyers "was not just American racism but American legal culture" (Whitman, 2017). **Flexibility is a feature until you ask flexible in whose hands.** That is a question worth carrying to any argument about legal innovation.
 
-**4. The reception of the argument is part of the argument.** Michael Stolleis, reviewing the book from Germany, noticed that its warm American reception seemed to carry an implication: that American society should reflect critically on its own past and present rather than only pointing at Nazi Germany (Stolleis, 2018). He also closes his review by observing that a sharper light on the American share of discrimination by colour, religion, sex and language makes visible that the whole business was not banished on 8 May 1945 (Stolleis, 2018). **Notice that a German legal historian is the one making that point about America, and notice that noticing it does not settle whether he is right.**
+**4. The reception of the argument is part of the argument.** Michael Stolleis, reviewing the book from Germany, noticed that its warm American reception seemed to carry an implication: that American society should reflect critically on its own past and present rather than only pointing at Nazi Germany (Stolleis, 2018). He also closes his review by observing that a sharper light on the American share of discrimination by color, religion, sex and language makes visible that the whole business was not banished on 8 May 1945 (Stolleis, 2018). **Notice that a German legal historian is the one making that point about America, and notice that noticing it does not settle whether he is right.**
 
 **5. What to do with all of this, concretely.** When you next meet the phrase "modelled on" in a news story about a law, treat it as a claim that needs the same handling this course has given its two claims.
 
@@ -1525,7 +1525,7 @@ On classification: some states counted descent "for up to three generations," fi
 
 **The last of those five is the one this course has used most.** It broke the easy story about apartheid in lesson 14, it dated the Nuremberg definition against the radicals' proposal in lesson 10, and it is the same test that broke a proposed argument in the Indiana Avenue course. **A table of dates is the cheapest research instrument there is, and it wins arguments that rhetoric cannot.**
 
-**Why this belongs at the end of a series about American cities.** The city courses taught that racial outcomes on one block were made by named decisions under named instruments. **This course asked whether those instruments were exportable, and found that at least some of them were studied abroad as the leading example of the type.** That reframes the city courses without changing a word in them: **a country whose race law was catalogued by foreign ministries as the world's most developed example cannot treat its own segregation as a local embarrassment.** It was, in the technical sense that this course has been careful to define, a model.
+**Why this belongs at the end of a series about American cities.** The city courses taught that racial outcomes on one block were made by named decisions under named instruments. **This course asked whether those instruments were exportable, and found that at least some of them were studied abroad as the leading example of the type.** That reframes the city courses without changing a word in them: **a country whose race law was cataloged by foreign ministries as the world's most developed example cannot treat its own segregation as a local embarrassment.** It was, in the technical sense that this course has been careful to define, a model.
 
 ## Sources
 - Stolleis, M. (2018). Lehrmeister Amerika [America the schoolmaster]. *Rechtsgeschichte / Legal History*, *26*, 489 to 492. https://doi.org/10.12946/rg26/489-492
@@ -1549,7 +1549,7 @@ On classification: some states counted descent "for up to three generations," fi
         },
         {
           prompt: "Give the three questions of the self-test.",
-          answer: "Have I said which rung of the ladder my claim is on? Have I included the fact that most cuts against my conclusion? Would the scholar I disagree with recognise my summary of their position?",
+          answer: "Have I said which rung of the ladder my claim is on? Have I included the fact that most cuts against my conclusion? Would the scholar I disagree with recognize my summary of their position?",
         },
       ],
     },
@@ -1564,13 +1564,13 @@ On classification: some states counted descent "for up to three generations," fi
 - **Nazi eugenics and the American eugenics movement.** Whitman names Stefan Kühl's *The Nazi Connection: Eugenics, American Racism, and German National Socialism* (1994), which showed an active traffic between American and Nazi eugenicists into the late 1930s, and named American figures whose works were standard citations in Germany (Whitman, 2017, p. 8). **That is a separate literature with a separate evidence base and it deserves its own course, not a paragraph here.**
 - **Lebensraum and the American conquest of the West.** Whitman reports that Nazi leaders repeatedly invoked American westward expansion when speaking of their own conquests, quotes Hitler doing so in a 1928 speech, notes Hans Frank calling the Jews of Ukraine "Indians" in 1942, and quotes Norman Rich's conclusion that American westward expansion "served as the model for Hitler's entire conception of Lebensraum" (Whitman, 2017, pp. 9 to 10). **Whitman also notes that there are historians who deny the significance of those quotations.** This course did not adjudicate that, because it is not a claim about legal technique.
 - **Australia, Brazil, and British colonial law more broadly.** Whitman's conclusion gestures at all three as further places where inequality was created by statute along biological lines, and Kier's 1933 research brief covered Australia alongside the United States and South Africa (Stolleis, 2018). **Neither is followed up here.**
-- **The transnational Black political movement.** ***Pan-Africanism*** is the course for that, and ***Afrocentricity*** is the course for the intellectual and cultural frame. **This course cross-links to them and deliberately does not summarise them.**
+- **The transnational Black political movement.** ***Pan-Africanism*** is the course for that, and ***Afrocentricity*** is the course for the intellectual and cultural frame. **This course cross-links to them and deliberately does not summarize them.**
 - **The American domestic story.** The city courses do that work, and this course assumed it.
 
 **Things this course looked for and would not print.**
 1. **Apartheid officials publicly invoking the American example.** Discussed in lesson 15. The best evidence located was a cartoon reproduced in a journalistic piece. **Below the floor, so left out.**
 2. **The House and Senate override tallies for the Comprehensive Anti-Apartheid Act of 1986.** Published sources consulted disagreed. **The dates and the public law number are given instead.**
-3. **Any characterisation of the Wiesen and Ledford reviews of Whitman.** They are named in lesson 11 as places to go. **They were not read in full here, so they are not summarised.**
+3. **Any characterisation of the Wiesen and Ledford reviews of Whitman.** They are named in lesson 11 as places to go. **They were not read in full here, so they are not summarized.**
 
 **The unopened sources, which are the actual next work.** Every item on this list is real, and none of it was read for this course.
 
@@ -1593,7 +1593,7 @@ On classification: some states counted descent "for up to three generations," fi
 - **Spot both misuses from their missing pieces**, rather than from their tone.
 - **Say "we do not know" in writing**, which is the single hardest sentence in this course and the one Whitman writes at the moment his own argument would most like him not to.
 
-**The last thing, and the reason the course exists.** The instruments in section 2 were not hidden. They were published statutes in a democratic republic, printed in volumes anyone could order, and a foreign ministry ordered them, catalogued them, and argued about them in a room with a stenographer. **The most disturbing fact in this whole subject is not that anything was concealed. It is that nothing was.** Whatever else you take from this course, take that: **the record of how a country governs race is public, and someone is always reading it.**
+**The last thing, and the reason the course exists.** The instruments in section 2 were not hidden. They were published statutes in a democratic republic, printed in volumes anyone could order, and a foreign ministry ordered them, cataloged them, and argued about them in a room with a stenographer. **The most disturbing fact in this whole subject is not that anything was concealed. It is that nothing was.** Whatever else you take from this course, take that: **the record of how a country governs race is public, and someone is always reading it.**
 
 ## Sources
 - Stolleis, M. (2018). Lehrmeister Amerika [America the schoolmaster]. *Rechtsgeschichte / Legal History*, *26*, 489 to 492. https://doi.org/10.12946/rg26/489-492
@@ -1617,7 +1617,7 @@ On classification: some states counted descent "for up to three generations," fi
         },
         {
           prompt: "How does this course reframe the city courses without changing a word in them?",
-          answer: "A country whose race law was catalogued by foreign ministries as the world's most developed example of the type cannot treat its own segregation as a local embarrassment. It was, in the technical sense the course defines, a model.",
+          answer: "A country whose race law was cataloged by foreign ministries as the world's most developed example of the type cannot treat its own segregation as a local embarrassment. It was, in the technical sense the course defines, a model.",
         },
       ],
     },

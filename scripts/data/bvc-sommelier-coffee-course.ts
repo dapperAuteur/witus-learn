@@ -118,9 +118,9 @@ const FLIGHT_2: Flight = {
   ],
   procedure: [
     "Cup all four together using the Flight 1 protocol. Same grind, same ratio, same water, same time. Process is the only variable you are allowing.",
-    "Score acidity and body on all four FIRST, before any flavour note.",
+    "Score acidity and body on all four FIRST, before any flavor note.",
     "Ask of each: how much does this taste like FRUIT, and how much does it taste like the fruit FERMENTED?",
-    "Write down which cup is cleanest, meaning the one where each flavour is most distinct from the others. Clean cup is a real scored attribute and it is not the same as tasty.",
+    "Write down which cup is cleanest, meaning the one where each flavor is most distinct from the others. Clean cup is a real scored attribute and it is not the same as tasty.",
     "Come back at twenty minutes. Natural and anaerobic lots often fall apart as they cool, while a good washed coffee holds together.",
   ],
   lookFor:
@@ -140,7 +140,7 @@ const FLIGHT_3: Flight = {
     { role: "Dark roast", target: "A dark roast or espresso roast", priceUsd: "14-20" },
   ],
   procedure: [
-    "Look at the beans before you grind. Note colour, and note whether the surface is dry or oily. Oil on the surface means the roast went far enough to push oils out, which is a roast reading you can take with your eyes.",
+    "Look at the beans before you grind. Note color, and note whether the surface is dry or oily. Oil on the surface means the roast went far enough to push oils out, which is a roast reading you can take with your eyes.",
     "Cup all three. Score acidity, bitterness, body and sweetness.",
     "Watch what happens to acidity as the roast darkens, and watch what happens to body. They move in opposite directions, and that trade is the whole decision a roaster is making.",
     "Now ask the question that matters: on the dark roast, can you tell where the coffee came from at all? Usually you cannot, and that is the honest cost of the style.",
@@ -162,7 +162,7 @@ const FLIGHT_4: Flight = {
   ],
   procedure: [
     "Brew the same coffee four times, changing ONLY the grind: very coarse, coarse, medium, fine. Keep the dose, the water, the temperature and the total brew time identical.",
-    "Taste them in order. Write one word for each before you analyse anything.",
+    "Taste them in order. Write one word for each before you analyze anything.",
     "Find the two failure states at the ends. Too coarse and the water runs through without dissolving enough: the cup is sour, thin, salty and it finishes fast. That is UNDER-extracted.",
     "Too fine and the water dissolves too much, including compounds you do not want: bitter, hollow, drying, and it lingers unpleasantly. That is OVER-extracted.",
     "The middle is not a single point, it is a range, and inside that range there is a spot you personally like. Find yours and write the grind setting down. That number is worth more than any bag of coffee you will buy this year.",
@@ -186,7 +186,7 @@ const FLIGHT_5: Flight = {
   ],
   procedure: [
     "Brew the same coffee three times, identically, changing only the water.",
-    "Taste the distilled brew first. Most people find it flat, hollow and strangely sour: with almost no minerals, water extracts poorly and there is nothing to carry the flavour.",
+    "Taste the distilled brew first. Most people find it flat, hollow and strangely sour: with almost no minerals, water extracts poorly and there is nothing to carry the flavor.",
     "Taste the tap and the mineral brews against it. Note which one gives more sweetness and more body.",
     "Read the mineral label and write down the numbers next to your notes. Over a few months of doing this you build your own reference.",
     "If your tap water is very hard, look inside your kettle. Scale is the same chemistry showing up somewhere less delicious.",
@@ -214,7 +214,7 @@ const FLIGHT_6: Flight = {
     "If you brew the fresh one within about three days of roasting, notice the opposite problem: carbon dioxide still escaping, a wildly bubbling bloom and an uneven, sometimes sour cup. Fresh has a floor as well as a ceiling.",
   ],
   lookFor:
-    "You can taste staleness as an absence rather than a flavour, and you never buy a bag without a roast date again.",
+    "You can taste staleness as an absence rather than a flavor, and you never buy a bag without a roast date again.",
   alternate: "Runs unchanged with decaf. Decaf actually stales faster in most people's experience, so the effect is, if anything, louder.",
 };
 
@@ -247,7 +247,7 @@ const FLIGHT_7: Flight = {
 export const BVC_SOMMELIER_COFFEE_COURSE: AuthoredCourse = {
   title: "BVC Taster: Coffee",
   description:
-    "Learn to taste coffee systematically and brew it repeatably: the cupping protocol used across the specialty trade and the attributes it scores, what acidity actually means in a cup and why it is a virtue, the two commercial species and the varieties that matter, how altitude and climate reach the cup, what washing, natural drying, honey processing and anaerobic fermentation each do, how to read a roast and hear what it costs you, extraction as something you can taste and correct, water as the ingredient nobody buys, what a bag's label legally promises and what certifications do and do not fix, the origins that set the reference points, the honest economics of the C price and why your $5 cup does not reach the farmer, brewing and espresso, the defects worth recognising, and blind deduction. The sequel to BVC Season 1, Episode 1, which covers coffee's history and economics. Eight flights with budgets and substitutes, and a caffeine-free path through every drill. Not affiliated with, and not exam preparation for, any certifying body.",
+    "Learn to taste coffee systematically and brew it repeatably: the cupping protocol used across the specialty trade and the attributes it scores, what acidity actually means in a cup and why it is a virtue, the two commercial species and the varieties that matter, how altitude and climate reach the cup, what washing, natural drying, honey processing and anaerobic fermentation each do, how to read a roast and hear what it costs you, extraction as something you can taste and correct, water as the ingredient nobody buys, what a bag's label legally promises and what certifications do and do not fix, the origins that set the reference points, the honest economics of the C price and why your $5 cup does not reach the farmer, brewing and espresso, the defects worth recognizing, and blind deduction. The sequel to BVC Season 1, Episode 1, which covers coffee's history and economics. Eight flights with budgets and substitutes, and a caffeine-free path through every drill. Not affiliated with, and not exam preparation for, any certifying body.",
   lessons: [
     // ══════════════ MODULE 1 · BEFORE YOU BREW ══════════════
     {
@@ -269,9 +269,9 @@ This is the other half: tasting it, brewing it, and buying it well.
 
 **What this course refuses to be**
 
-It is **not affiliated with the Specialty Coffee Association, the Coffee Quality Institute, or any Q Grader programme, and it is not preparation for their examinations.** The arc it follows is informed by what those public protocols cover, because the trade has converged on them, and saying so is more useful than pretending to have invented a method.
+It is **not affiliated with the Specialty Coffee Association, the Coffee Quality Institute, or any Q Grader program, and it is not preparation for their examinations.** The arc it follows is informed by what those public protocols cover, because the trade has converged on them, and saying so is more useful than pretending to have invented a method.
 
-It also names no roasters. Roasters change, lots sell out in weeks, and a course with favourites would be stale within a season and would read like advertising.
+It also names no roasters. Roasters change, lots sell out in weeks, and a course with favorites would be stale within a season and would read like advertising.
 
 **How the flights work.** Eight flights, most of them three or four bags in the sixteen to twenty-four dollar range, which is roughly what specialty coffee costs. Several flights reuse bags from earlier ones, so the real total is lower than the sum. Each card tells you the budget, what to ask for, and what to accept instead.
 
@@ -284,20 +284,20 @@ ${COFFEE_METHOD_NOTE}
 
 **And a note on what to call yourself, because the honest answer is more interesting than the title.**
 
-Every vice on this shelf has a real expert title, and most of them are **owned certification marks belonging to programmes this course has nothing to do with.**
+Every vice on this shelf has a real expert title, and most of them are **owned certification marks belonging to programs this course has nothing to do with.**
 
 | Vice | The real title | What it actually is |
 | --- | --- | --- |
 | Wine | **Sommelier** | The one word that escaped into common use. Generic, unowned, and now borrowed by cheese, water and olive oil |
-| Beer | **Cicerone** | A trademarked certification. Its own programme states the word is reserved for people who have passed it and should not be used as a synonym for beer expert |
+| Beer | **Cicerone** | A trademarked certification. Its own program states the word is reserved for people who have passed it and should not be used as a synonym for beer expert |
 | Coffee | **Q Grader** | A Coffee Quality Institute certification. The generic job word underneath it is *cupper* |
 | Chocolate | **Chocolate taster** | Taught by dedicated institutes; *chocolatier* is a maker, which is a different job |
-| Cannabis | **Interpener** | A specific institute's programme term |
+| Cannabis | **Interpener** | A specific institute's program term |
 | Sake | **Kikisake-shi** | A Japanese certification, and the closest true parallel to a sommelier |
 
 So this course is called a **Taster** course, which is the plain English for what you are actually doing, and it is a word nobody owns.
 
-**How this relates to those programmes, stated plainly:** it is not any of them, it does not prepare you for their exams, and finishing it entitles you to call yourself nothing. What it does is teach the same underlying skill they all test, which is tasting systematically and describing accurately. If you later sit one of those exams, this will have helped. That is a claim about the subject, not a promise about a result, and anyone who tells you a course can hand you a protected title is selling you something.
+**How this relates to those programs, stated plainly:** it is not any of them, it does not prepare you for their exams, and finishing it entitles you to call yourself nothing. What it does is teach the same underlying skill they all test, which is tasting systematically and describing accurately. If you later sit one of those exams, this will have helped. That is a claim about the subject, not a promise about a result, and anyone who tells you a course can hand you a protected title is selling you something.
 ## Sources
 - Specialty Coffee Association. (n.d.). *Protocols and best practices*. https://sca.coffee/research/protocols-best-practices
 - International Coffee Organization. (n.d.). *Statistics*. https://ico.org`,
@@ -310,14 +310,14 @@ So this course is called a **Taster** course, which is the plain English for wha
         {
           prompt: "This course names one thing it flatly refuses to claim about itself. What is it?",
           answer:
-            "That it is affiliated with, or preparation for, any certifying body such as the Specialty Coffee Association, the Coffee Quality Institute or a Q Grader programme. It follows a similar arc because the trade has converged on those protocols, and it says so rather than implying an endorsement.",
+            "That it is affiliated with, or preparation for, any certifying body such as the Specialty Coffee Association, the Coffee Quality Institute or a Q Grader program. It follows a similar arc because the trade has converged on those protocols, and it says so rather than implying an endorsement.",
         },
       ],
       body: `Four beliefs get in the way of learning to taste coffee, and all four are worth dismantling before you cup anything.
 
 **1. "Acidity" is not sourness, and it is not a defect.** In coffee, acidity is the bright, juicy, mouth-watering quality that makes a cup taste alive: citric, malic and other organic acids, the same family that makes an apple pleasant rather than dull. High-grown coffees have more of it, and the trade prizes it. What people mean when they complain about "acidic coffee" is usually one of two different things: an UNDER-extracted brew, which is genuinely sour and thin, or heartburn, which is about their stomach rather than the cup. Learning to separate bright from sour is Module 2's whole job.
 
-**2. Dark roast is not stronger.** Not in caffeine, and not in anything else except roast flavour. Caffeine is fairly stable through roasting, so the "strong coffee" people mean is the taste of the ROAST: smoke, char, bitterness, body. Meanwhile, the darker you roast, the more of the bean's own origin character you burn off. There is nothing wrong with wanting that. There is something wrong with a shop implying you are getting more coffee for it.
+**2. Dark roast is not stronger.** Not in caffeine, and not in anything else except roast flavor. Caffeine is fairly stable through roasting, so the "strong coffee" people mean is the taste of the ROAST: smoke, char, bitterness, body. Meanwhile, the darker you roast, the more of the bean's own origin character you burn off. There is nothing wrong with wanting that. There is something wrong with a shop implying you are getting more coffee for it.
 
 **3. Espresso is not a bean, it is a brewing method.** Any coffee can be pulled as espresso. "Espresso roast" is a roaster's suggestion, not a category of plant, and plenty of the world's best espresso is a light-roasted single origin.
 
@@ -325,7 +325,7 @@ So this course is called a **Taster** course, which is the plain English for wha
 
 **One more, because it costs people the most money.** A grinder improves your coffee more than better beans do, up to a surprisingly high price point. Grinding unevenly means some particles over-extract while others under-extract, in the same cup, and no bean survives that. If you are choosing between a twenty-four dollar bag and a better grinder, buy the grinder.
 
-:::reveal Someone says they avoid light roasts because they find them too acidic and prefer strong dark roast coffee. Name the two separate misunderstandings in that sentence. ||| First, acidity in coffee is the bright, juicy, mouth-watering quality from organic acids, and what they dislike is more likely under-extraction, which is genuinely sour and thin and is a brewing fault rather than a roast level. Second, dark roast is not stronger: caffeine is fairly stable through roasting, so what they are calling strength is roast flavour, smoke and bitterness and body, and the darker roast has actually burned off more of the coffee's own character.
+:::reveal Someone says they avoid light roasts because they find them too acidic and prefer strong dark roast coffee. Name the two separate misunderstandings in that sentence. ||| First, acidity in coffee is the bright, juicy, mouth-watering quality from organic acids, and what they dislike is more likely under-extraction, which is genuinely sour and thin and is a brewing fault rather than a roast level. Second, dark roast is not stronger: caffeine is fairly stable through roasting, so what they are calling strength is roast flavor, smoke and bitterness and body, and the darker roast has actually burned off more of the coffee's own character.
 
 ## Sources
 - Specialty Coffee Association. (n.d.). *Protocols and best practices*. https://sca.coffee/research/protocols-best-practices
@@ -337,17 +337,17 @@ So this course is called a **Taster** course, which is the plain English for wha
       section: "Module 1 · Before you brew",
       body: `The same physiology lesson the wine side of this series teaches, because it is the same equipment.
 
-**Most of tasting is smelling.** The tongue reports a short list: sweet, sour, salty, bitter, umami, plus physical sensations like temperature, burn and astringency. Everything you call flavour beyond that list is odour, arriving through the back of the throat as you swallow. That route is retronasal olfaction, and it runs on a large family of odorant receptor genes described by Buck and Axel (1991), work that later took the Nobel Prize in Physiology or Medicine (Nobel Assembly, 2004).
+**Most of tasting is smelling.** The tongue reports a short list: sweet, sour, salty, bitter, umami, plus physical sensations like temperature, burn and astringency. Everything you call flavor beyond that list is odor, arriving through the back of the throat as you swallow. That route is retronasal olfaction, and it runs on a large family of odorant receptor genes described by Buck and Axel (1991), work that later took the Nobel Prize in Physiology or Medicine (Nobel Assembly, 2004).
 
 **Which is exactly why cuppers slurp.** Spraying coffee across the palate aerosolises it and pushes far more aroma up that retronasal route. It is not theatre, it is the point.
 
-**Naming is the hard part, and it is learnable.** Describing an odour is much harder than detecting or recognising one, and trained panels improve mostly by fixing shared reference points to words (Lawless & Heymann, 2010). A tasting protocol is an agreement about what words mean.
+**Naming is the hard part, and it is learnable.** Describing an odor is much harder than detecting or recognizing one, and trained panels improve mostly by fixing shared reference points to words (Lawless & Heymann, 2010). A tasting protocol is an agreement about what words mean.
 
-**The flavour wheel, and how to use it without lying to yourself.** The coffee trade has a widely used flavour wheel, revised in 2016 alongside a sensory lexicon developed with World Coffee Research, which arranges descriptors from broad (fruity) to specific (blackberry). Use it from the INSIDE OUT: commit to a broad category you are confident in, then move outward only as far as your nose will honestly take you. Starting at the rim and reaching for "dried blackcurrant" produces notes that impress people and teach you nothing.
+**The flavor wheel, and how to use it without lying to yourself.** The coffee trade has a widely used flavor wheel, revised in 2016 alongside a sensory lexicon developed with World Coffee Research, which arranges descriptors from broad (fruity) to specific (blackberry). Use it from the INSIDE OUT: commit to a broad category you are confident in, then move outward only as far as your nose will honestly take you. Starting at the rim and reaching for "dried blackcurrant" produces notes that impress people and teach you nothing.
 
 **Four rules for this whole course**
 
-1. **Score structure before flavour.** Acidity, sweetness, body and bitterness are close to measurable. Flavour is associative and personal.
+1. **Score structure before flavor.** Acidity, sweetness, body and bitterness are close to measurable. Flavour is associative and personal.
 2. **Use your own references.** If it smells like the cereal you ate as a child, write that.
 3. **Always taste comparatively.** One coffee alone teaches almost nothing. Two side by side teach the difference.
 4. **Write before you speak.** In a group, whoever speaks first sets everyone else's note.
@@ -358,7 +358,7 @@ Now run Flight 0. It requires no coffee at all, and every later flight leans on 
 
 ${flightCard(FLIGHT_0, ALT)}
 
-:::reveal Why does slurping loudly from a cupping spoon genuinely improve what you perceive, rather than just looking professional? ||| It aerosolises the coffee and sprays it across the whole palate, which drives far more aroma up the retronasal route from the back of the throat to the nose. Since most of what people call flavour is odour arriving that way rather than taste from the tongue, the slurp is delivering the majority of the information you are trying to collect.
+:::reveal Why does slurping loudly from a cupping spoon genuinely improve what you perceive, rather than just looking professional? ||| It aerosolises the coffee and sprays it across the whole palate, which drives far more aroma up the retronasal route from the back of the throat to the nose. Since most of what people call flavor is odor arriving that way rather than taste from the tongue, the slurp is delivering the majority of the information you are trying to collect.
 
 ## Sources
 - Buck, L., & Axel, R. (1991). A novel multigene family may encode odorant receptors: A molecular basis for odor recognition. *Cell, 65*(1), 175-187. https://doi.org/10.1016/0092-8674(91)90418-X
@@ -391,7 +391,7 @@ ${flightCard(FLIGHT_0, ALT)}
             prompt: "Is a dark roast stronger in caffeine than a light roast?",
             options: [
               "Yes, roasting concentrates caffeine substantially in the bean",
-              "No, caffeine is fairly stable through roasting, so strength means roast flavour",
+              "No, caffeine is fairly stable through roasting, so strength means roast flavor",
               "Yes, but only when the beans are ground finer than filter grind",
               "No, because caffeine is entirely destroyed during the roasting process",
             ],
@@ -423,7 +423,7 @@ ${flightCard(FLIGHT_0, ALT)}
             ],
             correctIndex: 1,
             explanation:
-              "Most of what people call flavour is odour reaching the nose from the back of the throat. Spraying the coffee across the whole palate delivers far more of that information, which is why the technique survives despite sounding ridiculous.",
+              "Most of what people call flavor is odor reaching the nose from the back of the throat. Spraying the coffee across the whole palate delivers far more of that information, which is why the technique survives despite sounding ridiculous.",
             sourceLessonSlug: "coffee-your-palate-is-trainable",
           },
           {
@@ -471,7 +471,7 @@ ${flightCard(FLIGHT_0, ALT)}
               "Cupping scores are invalid unless the equipment is certified",
               "Identical equipment is required to calculate an extraction yield",
               "So the only variable is the one being tested, which is what a flight is",
-              "Because coffee absorbs flavour from differently shaped ceramics",
+              "Because coffee absorbs flavor from differently shaped ceramics",
             ],
             correctIndex: 2,
             explanation:
@@ -483,12 +483,12 @@ ${flightCard(FLIGHT_0, ALT)}
             options: [
               "That an ordinary drinker can learn to cup coffee reliably",
               "That comparative tasting beats tasting a single coffee alone",
-              "That structure should be scored before flavour is described",
+              "That structure should be scored before flavor is described",
               "That it is affiliated with or preparation for any certifying body",
             ],
             correctIndex: 3,
             explanation:
-              "Lesson 1 states there is no affiliation with the SCA, the Coffee Quality Institute or any Q Grader programme. The other three are things the course actively teaches.",
+              "Lesson 1 states there is no affiliation with the SCA, the Coffee Quality Institute or any Q Grader program. The other three are things the course actively teaches.",
             sourceLessonSlug: "coffee-how-this-works",
           },
           {
@@ -532,13 +532,13 @@ ${flightCard(FLIGHT_0, ALT)}
 4. **Skim and settle.** Remove the foam and floating grounds.
 5. **Taste as it cools.** Start when it is cool enough to slurp, and come back at intervals. Coffee changes more as it cools than almost any other drink, and defects in particular tend to appear late.
 
-**What the trade scores.** The classic SCA cupping form scores ten attributes, each on a scale that runs to ten, giving a total out of one hundred: fragrance and aroma, flavour, aftertaste, acidity, body, balance, uniformity, clean cup, sweetness, and an overall judgement. **A coffee scoring 80 or above is what the specialty trade means by "specialty."**
+**What the trade scores.** The classic SCA cupping form scores ten attributes, each on a scale that runs to ten, giving a total out of one hundred: fragrance and aroma, flavor, aftertaste, acidity, body, balance, uniformity, clean cup, sweetness, and an overall judgment. **A coffee scoring 80 or above is what the specialty trade means by "specialty."**
 
 **And what is replacing it.** The SCA has since developed the **Coffee Value Assessment**, which separates what a cup IS from how much you like it, splitting assessment into descriptive, affective, physical and extrinsic components. It matters here for one reason that outlives any form: describing and judging are different acts, and running them together is how tasting notes turn into marketing. A course that taught only the older form would be teaching a snapshot.
 
 **The three attributes worth explaining, because they are not obvious**
 
-- **Clean cup** does not mean tasty. It means the absence of interfering flavours, so each thing you taste is distinct. A very tasty coffee can be an unclean cup.
+- **Clean cup** does not mean tasty. It means the absence of interfering flavors, so each thing you taste is distinct. A very tasty coffee can be an unclean cup.
 - **Uniformity** compares the cups of the SAME coffee. Cuppers brew several, because one defective bean can ruin a single cup and tell you nothing about the lot.
 - **Balance** asks whether the attributes support each other or fight. Bright acidity with no sweetness to carry it is unbalanced, even though acidity is a virtue.
 
@@ -553,7 +553,7 @@ ${flightCard(FLIGHT_0, ALT)}
       slug: "coffee-scoring-the-cup",
       title: "6 · Scoring a cup, and telling bitter from astringent",
       section: "Module 2 · The cup",
-      body: `Score structure first, flavour second, exactly as the wine course does, and for the same reason: structure is close to measurable and flavour is associative.
+      body: `Score structure first, flavor second, exactly as the wine course does, and for the same reason: structure is close to measurable and flavor is associative.
 
 ${STRUCTURE.filter((c) => ["acid", "sweetness", "body", "finish"].includes(c.key))
   .map((c) => `**${c.label}.** ${c.physically.replace("from the grape", "from the fruit and the roast")}\n\n*Where you feel it:* ${c.feltAs}\n\n*Calibrate against:* ${c.calibrateWith}`)
@@ -572,7 +572,7 @@ ${STRUCTURE.filter((c) => ["acid", "sweetness", "body", "finish"].includes(c.key
 
 If your mouth feels rough and dry after the coffee is gone, that is astringency, and it is one of the most reliable signs of over-extraction there is.
 
-**Aftertaste, the attribute everyone skips.** Count the seconds after you swallow or spit until the flavour actually stops, and note whether what LINGERS is pleasant. Plenty of coffees taste good and finish badly, leaving ash or drying bitterness behind, and a long clean finish is one of the most honest quality signals available to a beginner.
+**Aftertaste, the attribute everyone skips.** Count the seconds after you swallow or spit until the flavor actually stops, and note whether what LINGERS is pleasant. Plenty of coffees taste good and finish badly, leaving ash or drying bitterness behind, and a long clean finish is one of the most honest quality signals available to a beginner.
 
 **Sweetness in coffee is real and it is not sugar.** No meaningful sugar survives roasting in the form you would measure, yet good coffee genuinely reads sweet, from aroma compounds and from the absence of competing harshness. Sweetness is one of the best single indicators of both good farming and good roasting, and it is the first thing that disappears when either goes wrong.
 
@@ -591,7 +591,7 @@ If your mouth feels rough and dry after the coffee is gone, that is astringency,
 
 **Why the supermarket bag is in the flight.** Not to sneer at it. It is there because a control makes the other two legible: without something flat to compare against, "fruity" and "clean" are just words you read in this course. Plenty of people run this flight and discover the cheap bag is fine, which is a legitimate and useful result.
 
-**What to write, in this order.** Fragrance from the dry grounds. Aroma at the crust break. Then acidity, sweetness, body, bitterness, aftertaste and clean cup. Then, and only then, flavour descriptors, from the inside of the wheel outward.
+**What to write, in this order.** Fragrance from the dry grounds. Aroma at the crust break. Then acidity, sweetness, body, bitterness, aftertaste and clean cup. Then, and only then, flavor descriptors, from the inside of the wheel outward.
 
 **Taste them three times.** Hot enough to slurp, then at about ten minutes, then at twenty. Write separately each time. This single habit teaches more than any reading, because coffee's character shifts across that window and defects in particular show up late.
 
@@ -640,14 +640,14 @@ ${flightCard(FLIGHT_1, ALT)}
           {
             prompt: "What does clean cup actually measure?",
             options: [
-              "The absence of interfering flavours, so each element stays distinct",
+              "The absence of interfering flavors, so each element stays distinct",
               "How pleasant the coffee tastes to the majority of a tasting panel",
               "Whether the cupping vessels were sterilised before the session",
               "The clarity of the liquid once the grounds have fully settled",
             ],
             correctIndex: 0,
             explanation:
-              "Clean cup is not the same as tasty. A very enjoyable coffee can be an unclean cup, which is why the attribute is scored separately from flavour and from the overall judgement.",
+              "Clean cup is not the same as tasty. A very enjoyable coffee can be an unclean cup, which is why the attribute is scored separately from flavor and from the overall judgment.",
             sourceLessonSlug: "coffee-the-cupping-protocol",
           },
           {
@@ -725,7 +725,7 @@ ${flightCard(FLIGHT_1, ALT)}
             ],
             correctIndex: 1,
             explanation:
-              "Running description and judgement together is how tasting notes turn into sales copy. That principle outlives any particular scoring form, which is why the course teaches both rather than only the older one.",
+              "Running description and judgment together is how tasting notes turn into sales copy. That principle outlives any particular scoring form, which is why the course teaches both rather than only the older one.",
             sourceLessonSlug: "coffee-the-cupping-protocol",
           },
           {
@@ -779,7 +779,7 @@ ${flightCard(FLIGHT_1, ALT)}
 - **Caturra, Catuai, Mundo Novo.** Bourbon and Typica derivatives bred for yield and manageability. The backbone of Latin American production.
 - **Gesha (also spelled Geisha).** Ethiopian in origin, famous since a Panamanian farm won with it in the early 2000s. Floral, tea-like, and priced far beyond every other variety, which makes it a useful lesson in how much of coffee's price is scarcity and reputation.
 - **SL28 and SL34.** Selected in Kenya, responsible for the blackcurrant intensity that makes Kenyan coffee recognisable.
-- **Ethiopian landraces.** Often labelled "heirloom," which is a catch-all rather than a variety: Ethiopia holds the species' wild genetic diversity, and much of it is simply not catalogued.
+- **Ethiopian landraces.** Often labeled "heirloom," which is a catch-all rather than a variety: Ethiopia holds the species' wild genetic diversity, and much of it is simply not cataloged.
 - **Castillo, Catimor and other hybrids.** Bred with robusta parentage for leaf rust resistance. Long dismissed on cup quality, increasingly disputed, and central to the survival of farms.
 
 **The honest frame.** Variety matters less in coffee than in wine, because process and roast are louder. It matters most at the extremes, Gesha and SL28, and least in the middle. Do not build a shopping strategy on it.
@@ -831,9 +831,9 @@ ${flightCard(FLIGHT_1, ALT)}
 | **Natural** (dry) | The whole cherry is dried intact, then hulled | Heavier body, lower perceived acidity, pronounced fruit, sometimes fermented or boozy notes |
 | **Honey** (pulped natural) | Pulped, but some mucilage left on during drying | Between the two, and the amount left on is the dial |
 | **Anaerobic / carbonic maceration** | Cherries sealed in oxygen-free tanks before drying, often with controlled temperature and time | Intense, distinctive, sometimes cinnamon or tropical or fermented. Divisive by design |
-| **Wet hulled** (giling basah) | Hulled at a higher moisture content, an Indonesian practice | Heavy body, low acidity, earthy and savoury. The classic Sumatran profile |
+| **Wet hulled** (giling basah) | Hulled at a higher moisture content, an Indonesian practice | Heavy body, low acidity, earthy and savory. The classic Sumatran profile |
 
-**Two things worth understanding rather than memorising.**
+**Two things worth understanding rather than memorizing.**
 
 **Fermentation is happening in every one of these.** Even a washed coffee ferments, in a tank, to break down the mucilage. The difference between processes is how much fermentation, with how much oxygen, at what temperature, and for how long. Once you see the axis, "anaerobic natural" stops being a marketing phrase and becomes a set of dials.
 
@@ -841,7 +841,7 @@ ${flightCard(FLIGHT_1, ALT)}
 
 **The honest caveat about the loud modern processes.** Heavily manipulated ferments can produce cups so distinctive that the origin becomes irrelevant, which is exactly the criticism levelled at heavy oak in wine. Some are extraordinary. Some are covering for ordinary coffee. The question to ask is the same one the wine course asks about oak: is there enough coffee underneath to carry it?
 
-**Drying, which nobody talks about and which ruins more coffee than any of the above.** However the fruit came off, the beans must dry slowly and evenly to a stable moisture content. Dry too fast and the bean is damaged, too slow and mould and off-flavours develop, unevenly and the coffee will not store. Most defects you will meet were born during drying.
+**Drying, which nobody talks about and which ruins more coffee than any of the above.** However the fruit came off, the beans must dry slowly and evenly to a stable moisture content. Dry too fast and the bean is damaged, too slow and mold and off-flavors develop, unevenly and the coffee will not store. Most defects you will meet were born during drying.
 
 ${flightCard(FLIGHT_2, ALT)}
 
@@ -855,9 +855,9 @@ ${flightCard(FLIGHT_2, ALT)}
       slug: "coffee-roasting",
       title: "12 · Roasting: the decision you taste most",
       section: "Module 3 · The bean",
-      body: `Green coffee smells of hay and tastes of almost nothing. Everything you recognise as coffee is created in the roaster, which makes roasting the single loudest decision in the chain.
+      body: `Green coffee smells of hay and tastes of almost nothing. Everything you recognize as coffee is created in the roaster, which makes roasting the single loudest decision in the chain.
 
-**What is actually happening.** Heat drives off moisture, then the bean's sugars and amino acids react. **Maillard reactions** between sugars and amino acids generate hundreds of aroma compounds, and **caramelisation** breaks sugars down further. Both build flavour and both consume the sugars responsible for sweetness, which is the central tension of roasting: go far enough to develop flavour, not so far that you spend all the sweetness.
+**What is actually happening.** Heat drives off moisture, then the bean's sugars and amino acids react. **Maillard reactions** between sugars and amino acids generate hundreds of aroma compounds, and **caramelisation** breaks sugars down further. Both build flavor and both consume the sugars responsible for sweetness, which is the central tension of roasting: go far enough to develop flavor, not so far that you spend all the sweetness.
 
 **The audible landmarks.** As water turns to steam and pressure builds, beans crack audibly. **First crack** marks the point where the bean has expanded and the coffee becomes drinkable. **Second crack**, later, is the bean's structure breaking down further, and oils migrate to the surface. Light roasts finish after first crack, medium between the two, dark at or past second crack.
 
@@ -873,13 +873,13 @@ ${flightCard(FLIGHT_2, ALT)}
 | Roast character | Minimal | Present | Dominant: smoke, char |
 | Surface | Dry | Dry | Often oily |
 
-**Development, the concept that matters more than colour.** A bean can be dark on the outside and under-developed on the inside if the roast moved too fast. Under-developed coffee tastes of raw cereal, grass and a papery sourness that is easy to mistake for a bad bean or a bad brew. Colour alone does not tell you the roast was good, which is the same lesson the wine course teaches about colour depth.
+**Development, the concept that matters more than color.** A bean can be dark on the outside and under-developed on the inside if the roast moved too fast. Under-developed coffee tastes of raw cereal, grass and a papery sourness that is easy to mistake for a bad bean or a bad brew. Colour alone does not tell you the roast was good, which is the same lesson the wine course teaches about color depth.
 
 **Quakers.** Underripe or defective beans that fail to brown and stay pale in a finished roast. In a light roast you can see them, and they taste of peanut and cardboard. Picking them out of a bag by hand before grinding is a five-second habit worth having.
 
 ${flightCard(FLIGHT_3, ALT)}
 
-:::reveal A coffee looks convincingly dark but tastes of raw cereal, grass and a papery sourness. What most likely went wrong, and why is colour not enough to diagnose it? ||| The roast was probably under-developed: the beans browned on the outside without the inside progressing far enough, usually because the roast moved too fast. Colour reports only the surface, so a bean can be dark outside and raw inside, which is why development rather than colour is the concept that matters. It is the same reason depth of colour does not tell you a wine's structure.
+:::reveal A coffee looks convincingly dark but tastes of raw cereal, grass and a papery sourness. What most likely went wrong, and why is colour not enough to diagnose it? ||| The roast was probably under-developed: the beans browned on the outside without the inside progressing far enough, usually because the roast moved too fast. Colour reports only the surface, so a bean can be dark outside and raw inside, which is why development rather than color is the concept that matters. It is the same reason depth of color does not tell you a wine's structure.
 
 ## Sources
 - Folmer, B. (Ed.). (2017). *The craft and science of coffee*. Academic Press.
@@ -969,7 +969,7 @@ ${flightCard(FLIGHT_3, ALT)}
             ],
             correctIndex: 0,
             explanation:
-              "Dry too fast and the bean is damaged, too slow and mould and off-flavours develop, unevenly and the coffee will not store. Most defects a taster meets were born during drying.",
+              "Dry too fast and the bean is damaged, too slow and mold and off-flavors develop, unevenly and the coffee will not store. Most defects a taster meets were born during drying.",
             sourceLessonSlug: "coffee-processing",
           },
           {
@@ -995,7 +995,7 @@ ${flightCard(FLIGHT_3, ALT)}
             ],
             correctIndex: 2,
             explanation:
-              "It happens when the roast moves too fast, and it produces a papery sourness easy to mistake for a bad bean or a bad brew. Colour reports only the surface, which is why development matters more than colour.",
+              "It happens when the roast moves too fast, and it produces a papery sourness easy to mistake for a bad bean or a bad brew. Colour reports only the surface, which is why development matters more than color.",
             sourceLessonSlug: "coffee-roasting",
           },
           {
@@ -1050,14 +1050,14 @@ ${flightCard(FLIGHT_3, ALT)}
         {
           prompt: "Name the two chemical processes that build flavour during roasting, and the tension between them.",
           answer:
-            "Maillard reactions between sugars and amino acids, and caramelisation of sugars. Both generate aroma compounds and both consume the sugars responsible for sweetness, so the roaster has to go far enough to develop flavour without spending all the sweetness.",
+            "Maillard reactions between sugars and amino acids, and caramelisation of sugars. Both generate aroma compounds and both consume the sugars responsible for sweetness, so the roaster has to go far enough to develop flavor without spending all the sweetness.",
         },
       ],
       body: `Brewing is dissolving. Water passes through ground coffee and takes soluble compounds with it, and almost everything that goes wrong at home is a question of how much it took.
 
 **Two numbers describe any brew.**
 
-- **Extraction yield:** what percentage of the coffee's mass ended up dissolved in the cup. Take too little and you get the sour, thin, salty flavours that come out first. Take too much and you also pull the bitter, harsh, drying compounds that come out last.
+- **Extraction yield:** what percentage of the coffee's mass ended up dissolved in the cup. Take too little and you get the sour, thin, salty flavors that come out first. Take too much and you also pull the bitter, harsh, drying compounds that come out last.
 - **Strength:** how concentrated the resulting liquid is, measured as total dissolved solids. Strength is about how it hits you, yield is about WHICH compounds you got.
 
 Those are independent. A weak cup can be over-extracted and a strong cup can be under-extracted, which is why "make it stronger" so often makes coffee worse: people grind finer, pull more of the bitter end, and get a strong cup of the wrong compounds.
@@ -1098,9 +1098,9 @@ ${flightCard(FLIGHT_4, ALT)}
       section: "Module 4 · Brewing",
       body: `**A cup of coffee is about ninety-eight percent water**, and most people spend nothing on it and everything on beans. That ratio is backwards.
 
-**What water does.** Minerals in water actively participate in extraction: certain ions bind and carry flavour compounds, so water with almost nothing in it extracts poorly and produces a hollow, oddly sour cup. Water with too much, especially high carbonate hardness, buffers the coffee's acidity away and leaves it flat, as well as scaling your equipment.
+**What water does.** Minerals in water actively participate in extraction: certain ions bind and carry flavor compounds, so water with almost nothing in it extracts poorly and produces a hollow, oddly sour cup. Water with too much, especially high carbonate hardness, buffers the coffee's acidity away and leaves it flat, as well as scaling your equipment.
 
-**What to aim for.** The SCA publishes a water standard for brewing, and the practically useful version is: aim for a moderate mineral content, low carbonate hardness, no chlorine, no off-odours. If you want one number to steer by, a total dissolved solids figure in the neighbourhood of 150 mg per litre is the commonly cited target, and the range around it matters more than the number itself. Local water varies enormously, which is exactly why the same beans taste different at your house and your friend's.
+**What to aim for.** The SCA publishes a water standard for brewing, and the practically useful version is: aim for a moderate mineral content, low carbonate hardness, no chlorine, no off-odors. If you want one number to steer by, a total dissolved solids figure in the neighborhood of 150 mg per liter is the commonly cited target, and the range around it matters more than the number itself. Local water varies enormously, which is exactly why the same beans taste different at your house and your friend's.
 
 **Practical fixes, cheapest first.** A simple carbon filter removes chlorine, which is the single most common water fault. If your water is very hard, cutting it with distilled or using a bottled water with printed mineral content is a large upgrade. Do not use distilled alone.
 
@@ -1119,7 +1119,7 @@ ${flightCard(FLIGHT_4, ALT)}
 
 ${flightCard(FLIGHT_5, ALT)}
 
-:::reveal Why does coffee brewed with distilled water taste hollow and oddly sour rather than simply pure? ||| Because minerals actively participate in extraction: certain ions bind and carry flavour compounds out of the grounds, so water with nothing in it extracts poorly. The result is a cup missing the compounds that would have given it sweetness and body, which reads as hollow, and with the sour early-extracting notes left relatively exposed. Pure water is not neutral, it is an ingredient doing its job badly.
+:::reveal Why does coffee brewed with distilled water taste hollow and oddly sour rather than simply pure? ||| Because minerals actively participate in extraction: certain ions bind and carry flavor compounds out of the grounds, so water with nothing in it extracts poorly. The result is a cup missing the compounds that would have given it sweetness and body, which reads as hollow, and with the sour early-extracting notes left relatively exposed. Pure water is not neutral, it is an ingredient doing its job badly.
 
 ## Sources
 - Specialty Coffee Association. (n.d.). *Water quality standard*. https://sca.coffee/research/protocols-best-practices
@@ -1141,7 +1141,7 @@ ${flightCard(FLIGHT_5, ALT)}
 
 1. **Buy less, more often.** No storage method beats not needing storage.
 2. **Airtight and opaque, at room temperature.** Oxygen and light are the enemies.
-3. **Do not keep it in the fridge.** It is humid and full of odours, and coffee takes on both.
+3. **Do not keep it in the fridge.** It is humid and full of odors, and coffee takes on both.
 4. **The freezer is genuinely good, with one rule.** Freezing whole beans in airtight portions preserves them well. The rule is: take out only what you will use and do not refreeze, because each cycle condenses moisture onto the beans.
 5. **Grind immediately before brewing.** This is worth more than every other storage decision combined.
 
@@ -1149,7 +1149,7 @@ ${flightCard(FLIGHT_5, ALT)}
 
 ${flightCard(FLIGHT_6, ALT)}
 
-:::reveal Why is the freezer acceptable for coffee storage while the fridge is not, and what is the one rule? ||| The fridge is humid and full of strong odours, and coffee readily takes on both, so it damages the beans while barely slowing staling. A freezer, by contrast, slows the chemistry substantially and works well for whole beans in airtight portions. The rule is to take out only what you will use and never refreeze, because each cycle to room temperature and back condenses moisture onto the beans.
+:::reveal Why is the freezer acceptable for coffee storage while the fridge is not, and what is the one rule? ||| The fridge is humid and full of strong odors, and coffee readily takes on both, so it damages the beans while barely slowing staling. A freezer, by contrast, slows the chemistry substantially and works well for whole beans in airtight portions. The rule is to take out only what you will use and never refreeze, because each cycle to room temperature and back condenses moisture onto the beans.
 
 ## Sources
 - Folmer, B. (Ed.). (2017). *The craft and science of coffee*. Academic Press.
@@ -1235,7 +1235,7 @@ This is the drill that pays for the course. Diagnosing a cup is the difference b
             answer: "the fridge",
             accept: ["fridge", "refrigerator", "the refrigerator"],
             explanation:
-              "Humid and full of odours, both of which coffee takes on, while barely slowing staling. The freezer is fine for airtight portions never refrozen.",
+              "Humid and full of odors, both of which coffee takes on, while barely slowing staling. The freezer is fine for airtight portions never refrozen.",
           },
           {
             prompt: "Your brew is strong but harsh. Which lever do you change before touching the dose?",
@@ -1278,7 +1278,7 @@ This is the drill that pays for the course. Diagnosing a cup is the difference b
             ],
             correctIndex: 1,
             explanation:
-              "Those flavours are the early-extracting compounds, so the brew stopped too soon. Increasing extraction pulls the sweeter, rounder compounds that come later.",
+              "Those flavors are the early-extracting compounds, so the brew stopped too soon. Increasing extraction pulls the sweeter, rounder compounds that come later.",
             sourceLessonSlug: "coffee-extraction",
           },
           {
@@ -1298,9 +1298,9 @@ This is the drill that pays for the course. Diagnosing a cup is the difference b
             prompt: "Why does distilled water make a hollow, oddly sour cup?",
             options: [
               "Because it boils at a lower temperature than mineral water",
-              "Because it carries no minerals to bind and carry flavour compounds",
+              "Because it carries no minerals to bind and carry flavor compounds",
               "Because it dissolves too much, causing rapid over-extraction",
-              "Because it reacts with the paper filter to produce off flavours",
+              "Because it reacts with the paper filter to produce off flavors",
             ],
             correctIndex: 1,
             explanation:
@@ -1310,14 +1310,14 @@ This is the drill that pays for the course. Diagnosing a cup is the difference b
           {
             prompt: "What does staling do to coffee?",
             options: [
-              "Makes it taste rancid and visibly changes the colour of the beans",
+              "Makes it taste rancid and visibly changes the color of the beans",
               "Increases bitterness sharply while leaving aroma intact",
               "Raises acidity as the oils oxidise into organic acids",
               "Makes it taste like less: aroma flattens, sweetness fades, paper appears",
             ],
             correctIndex: 3,
             explanation:
-              "Staling is an absence rather than a flavour, which is why it is easy to miss without a fresh comparison. Ground coffee stales in days because grinding multiplies exposed surface area.",
+              "Staling is an absence rather than a flavor, which is why it is easy to miss without a fresh comparison. Ground coffee stales in days because grinding multiplies exposed surface area.",
             sourceLessonSlug: "coffee-freshness-and-storage",
           },
           {
@@ -1325,12 +1325,12 @@ This is the drill that pays for the course. Diagnosing a cup is the difference b
             options: [
               "Airtight, opaque, room temperature, and grind immediately before brewing",
               "Refrigerate in the original bag once it has been opened",
-              "Decant into a clear glass jar so you can monitor the bean colour",
-              "Grind the whole bag at once to minimise exposure during use",
+              "Decant into a clear glass jar so you can monitor the bean color",
+              "Grind the whole bag at once to minimize exposure during use",
             ],
             correctIndex: 0,
             explanation:
-              "The fridge is humid and full of odours coffee absorbs. Freezing works for airtight portions that are never refrozen, and grinding fresh outweighs every other storage decision.",
+              "The fridge is humid and full of odors coffee absorbs. Freezing works for airtight portions that are never refrozen, and grinding fresh outweighs every other storage decision.",
             sourceLessonSlug: "coffee-freshness-and-storage",
           },
           {
@@ -1403,14 +1403,14 @@ This is the drill that pays for the course. Diagnosing a cup is the difference b
       ],
       body: `**Read a bag in this order.** Roast date first, because everything else is moot if the coffee is old. Then origin specificity: a country is weak, a region is better, a named cooperative or farm and a lot number is a seller telling you they know where it came from. Then process, then variety, then altitude. Ignore the adjectives on the front.
 
-**What the words legally promise, which in most markets is very little.** Unlike wine, coffee has almost no appellation law. There are exceptions worth knowing: **Jamaica Blue Mountain**, **Kona** and **Colombian coffee** all have protection schemes, and Kona in particular has been the subject of repeated fraud litigation over blends labelled to imply far more Kona content than they contained. But there is no general framework, and the words "artisan," "small batch," "gourmet," "premium" and "specialty roasted" mean nothing enforceable.
+**What the words legally promise, which in most markets is very little.** Unlike wine, coffee has almost no appellation law. There are exceptions worth knowing: **Jamaica Blue Mountain**, **Kona** and **Colombian coffee** all have protection schemes, and Kona in particular has been the subject of repeated fraud litigation over blends labeled to imply far more Kona content than they contained. But there is no general framework, and the words "artisan," "small batch," "gourmet," "premium" and "specialty roasted" mean nothing enforceable.
 
 **The certifications, and what each one actually addresses**
 
 | Mark | What it addresses | What it does not |
 | --- | --- | --- |
 | **Fairtrade** | A minimum price floor and a community premium, paid to certified cooperatives | Guarantee cup quality, or cover farms outside cooperatives |
-| **Organic** | Prohibited inputs and certified practice | Say anything about price paid, labour, or quality |
+| **Organic** | Prohibited inputs and certified practice | Say anything about price paid, labor, or quality |
 | **Rainforest Alliance** | Environmental and some social criteria | Set a price floor |
 | **Direct trade** | A roaster's own claim about buying relationships | Anything verifiable, since it is not a certification and has no standard |
 | **Smallholder / cooperative language** | Often accurate | Carry any audited meaning by itself |
@@ -1430,7 +1430,7 @@ This is the drill that pays for the course. Diagnosing a cup is the difference b
     },
     {
       slug: "coffee-faults-and-defects",
-      title: "20 · Defects worth recognising",
+      title: "20 · Defects worth recognizing",
       section: "Module 5 · Buying and deduction",
       body: `A defect is not "a coffee I dislike." Knowing the specific ones lets you return a bag with confidence and, just as importantly, not blame a roaster for a brewing error.
 
@@ -1469,12 +1469,12 @@ This is the drill that pays for the course. Diagnosing a cup is the difference b
 | Origin | Common reference profile |
 | --- | --- |
 | **Ethiopia** | Floral, citrus and stone fruit when washed, intense berry when natural. Tea-like body. The species' homeland and its genetic reservoir |
-| **Kenya** | Blackcurrant, tomato-like savoury acidity, heavy and structured. SL28 and SL34 drive the signature |
+| **Kenya** | Blackcurrant, tomato-like savory acidity, heavy and structured. SL28 and SL34 drive the signature |
 | **Rwanda and Burundi** | Floral and clean, with the potato defect as a known risk |
 | **Colombia** | Balanced, caramel sweetness, moderate to bright acidity. Enormous internal variation by region |
 | **Brazil** | Low acidity, heavy body, chocolate and nuts. Mostly natural or pulped natural, and the volume backbone of the world |
 | **Guatemala, Honduras, El Salvador, Costa Rica** | Balanced and clean, chocolate and orchard fruit, often altitude graded |
-| **Indonesia (Sumatra)** | Earthy, savoury, herbal, very low acidity, heavy body, from wet hulling |
+| **Indonesia (Sumatra)** | Earthy, savory, herbal, very low acidity, heavy body, from wet hulling |
 | **Yemen** | Wild, dried fruit, spice, funk. Historically central and now scarce |
 
 **How to run a blind, and what to expect.** The order of difficulty is the important part: **process is easiest, roast level next, origin hardest.** Anyone who reliably calls farms blind is doing something other than what they claim.
@@ -1560,7 +1560,7 @@ ${flightCard(FLIGHT_7, ALT)}
           {
             prompt: "How do you distinguish a ferment defect from a well made natural process coffee?",
             options: [
-              "By the colour of the brewed liquid in the cup",
+              "By the color of the brewed liquid in the cup",
               "Defective ferment appears only in washed coffees",
               "A natural coffee never shows any fruit character at all",
               "Intentional fruit is integrated and pleasant, defective ferment is sharp and hollow",
@@ -1606,14 +1606,14 @@ ${flightCard(FLIGHT_7, ALT)}
             ],
             correctIndex: 2,
             explanation:
-              "Wet hulling, or giling basah, produces the classic Indonesian profile. Kenya is blackcurrant and savoury acidity, Ethiopia floral or berry depending on process.",
+              "Wet hulling, or giling basah, produces the classic Indonesian profile. Kenya is blackcurrant and savory acidity, Ethiopia floral or berry depending on process.",
             sourceLessonSlug: "coffee-origins-blind",
           },
           {
             prompt: "What is the most informative thing a specialty roaster can put on a bag, per this course?",
             options: [
               "A published price paid and a lot traceable to a producer",
-              "A certification logo from a recognised international scheme",
+              "A certification logo from a recognized international scheme",
               "A cupping score printed to one decimal place",
               "A detailed list of tasting notes from the head roaster",
             ],
@@ -1643,7 +1643,7 @@ ${flightCard(FLIGHT_7, ALT)}
       title: "23 · Capstone: buy, brew, and defend three coffees",
       section: "Module 5 · Buying and deduction",
       lessonType: "assignment",
-      body: `One assignment, three bags, and a written defence. Nobody can complete it by reading, and the caffeine-free path completes it fully.
+      body: `One assignment, three bags, and a written defense. Nobody can complete it by reading, and the caffeine-free path completes it fully.
 
 **The brief.** You are choosing coffee for yourself for a month, with a total budget of sixty US dollars for three bags. Buy, brew, cup and defend.
 
@@ -1683,7 +1683,7 @@ ${flightCard(FLIGHT_7, ALT)}
 
 **Process is a set of dials**, not a ranking: how much fermentation, with how much oxygen, for how long, and then how the fruit came off. Drying ruins more coffee than any other stage.
 
-**Roasting is the loudest decision**, and development matters more than colour. A dark surface can hide a raw interior.
+**Roasting is the loudest decision**, and development matters more than color. A dark surface can hide a raw interior.
 
 **Extraction and strength are independent.** Sour and thin means extract more, bitter and drying means extract less, weak but not sour means use more coffee. Reach for grind first.
 

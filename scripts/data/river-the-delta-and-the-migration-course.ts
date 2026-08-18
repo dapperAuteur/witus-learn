@@ -9,7 +9,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const RIVER_THE_DELTA_AND_THE_MIGRATION_COURSE: AuthoredCourse = {
   title: "The Delta, and the Way North",
   description:
-    "A century after the trade that carried people south, the movement reversed. Millions left the South, and from the Mississippi Delta the way out ran on rails that paralleled the river the expedition is paddling. How the route worked, how word travelled, and why this is the third direction on one corridor.",
+    "A century after the trade that carried people south, the movement reversed. Millions left the South, and from the Mississippi Delta the way out ran on rails that paralleled the river the expedition is paddling. How the route worked, how word traveled, and why this is the third direction on one corridor.",
   lessons: [
     {
       slug: "the-third-direction",
@@ -53,7 +53,7 @@ What is not visible from the water is that this landscape is one of the great po
     },
     {
       slug: "how-word-travelled",
-      title: "2 · How word travelled",
+      title: "2 · How word traveled",
       section: "Section 1 · The way out",
       body: `A migration of that size is not a mood. It is millions of individual decisions, and each one required information: that there was work, where, what it paid, and how to get there.
 
@@ -63,23 +63,23 @@ The *Chicago Defender* was a Black newspaper published in Chicago. It campaigned
 
 Getting it into the South was the problem, because in many places its distribution was actively obstructed.
 
-The solution was the **Pullman porters**. Porters worked the trains running between Chicago and the South. They carried copies of the *Defender* with them and left them where people would find them. A newspaper that could not be mailed travelled in the luggage of the men who worked the route it advertised.
+The solution was the **Pullman porters**. Porters worked the trains running between Chicago and the South. They carried copies of the *Defender* with them and left them where people would find them. A newspaper that could not be mailed traveled in the luggage of the men who worked the route it advertised.
 
-The *Defender* also organised **migrant clubs** and arranged **group discounts on train fares**, which turned an individual leap into something a group could do together.
+The *Defender* also organized **migrant clubs** and arranged **group discounts on train fares**, which turned an individual leap into something a group could do together.
 
 ## Why this detail matters
 
 Two reasons, and both transfer well beyond this subject.
 
-**Information is infrastructure.** The rails made the journey physically possible. The newspaper made it thinkable, by turning a rumour into a schedule with a price on it. A route nobody knows about is not a route.
+**Information is infrastructure.** The rails made the journey physically possible. The newspaper made it thinkable, by turning a rumor into a schedule with a price on it. A route nobody knows about is not a route.
 
-**Networks route around obstruction.** The paper's circulation was obstructed, so it moved by a channel nobody controlled: the workers on the trains themselves. That is a general pattern, and it is worth recognising when you meet it elsewhere.
+**Networks route around obstruction.** The paper's circulation was obstructed, so it moved by a channel nobody controlled: the workers on the trains themselves. That is a general pattern, and it is worth recognizing when you meet it elsewhere.
 
 ## The chain, once it starts
 
 Migration is self-reinforcing. One person goes, finds work, writes home, and sends money. The next person has somewhere to arrive, a contact, and better information. The cost and risk of leaving falls with every person who has already gone.
 
-That is why migrations accelerate, and why they concentrate: people go where people they know already are, which is how particular southern counties came to have particular northern neighbourhoods.
+That is why migrations accelerate, and why they concentrate: people go where people they know already are, which is how particular southern counties came to have particular northern neighborhoods.
 
 ## Going deeper
 
@@ -95,7 +95,7 @@ they built.
         {
           prompt: "What two things did the Defender provide besides encouragement?",
           answer:
-            "Train schedules and fares, and organised migrant clubs with group discounts on fares.",
+            "Train schedules and fares, and organized migrant clubs with group discounts on fares.",
         },
         {
           prompt: "State the general principle behind the porters carrying the paper.",
@@ -117,7 +117,7 @@ they built.
               "Steamboat traffic north along the Mississippi toward St. Louis and beyond",
               "The Illinois Central railway and its subsidiary, running roughly 800 miles across the Delta",
               "Highway routes built during the same period to connect southern farms to northern markets",
-              "Organised bus services chartered by northern employers seeking agricultural labour",
+              "Organised bus services chartered by northern employers seeking agricultural labor",
             ],
             correctIndex: 1,
             explanation:
@@ -134,7 +134,7 @@ they built.
             ],
             correctIndex: 1,
             explanation:
-              "The paper travelled in the luggage of the men who worked the route it advertised, which is a clean example of a network routing around an obstruction.",
+              "The paper traveled in the luggage of the men who worked the route it advertised, which is a clean example of a network routing around an obstruction.",
             sourceLessonSlug: "how-word-travelled",
           },
           {
@@ -142,7 +142,7 @@ they built.
             options: [
               "It involved far larger numbers of people over a much shorter period of time",
               "It was legal, open movement out of segregation and debt rather than clandestine escape from enslavement",
-              "It was organised by institutions rather than being undertaken by individuals acting alone",
+              "It was organized by institutions rather than being undertaken by individuals acting alone",
               "It ended in cities rather than in the rural free states that earlier escapes reached",
             ],
             correctIndex: 1,
@@ -160,7 +160,7 @@ they built.
             ],
             correctIndex: 1,
             explanation:
-              "Each person who has already gone provides somewhere to arrive, a contact and better information, which is how particular southern counties came to have particular northern neighbourhoods.",
+              "Each person who has already gone provides somewhere to arrive, a contact and better information, which is how particular southern counties came to have particular northern neighborhoods.",
             sourceLessonSlug: "how-word-travelled",
           },
         ],
@@ -172,7 +172,7 @@ they built.
       section: "Section 2 · Sources and further work",
       body: `## What this course covered, and what it did not
 
-This is a course about **a route**, not about the Great Migration. It covered how people left the Delta and how word travelled, because those are the parts that happen alongside the water the expedition is on.
+This is a course about **a route**, not about the Great Migration. It covered how people left the Delta and how word traveled, because those are the parts that happen alongside the water the expedition is on.
 
 It did not cover why people left in the detail that deserves, what they found on arrival, what they built, or what it cost. Those are the subject of \`great-migration\` and \`great-migration-and-the-world\` on this platform, and this course would do them badly in the space available.
 

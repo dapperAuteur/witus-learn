@@ -8,7 +8,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const RIVER_FINDING_YOUR_WAY_COURSE: AuthoredCourse = {
   title: "Finding Your Way, and Losing It",
   description:
-    "How navigation actually works on a large river, why capable people still get lost, and what to do when a plan fails, resources run short, or the group stops agreeing. The judgement half of an expedition, which is the half that decides how it ends.",
+    "How navigation actually works on a large river, why capable people still get lost, and what to do when a plan fails, resources run short, or the group stops agreeing. The judgment half of an expedition, which is the half that decides how it ends.",
   lessons: [
     {
       slug: "you-cannot-get-lost-on-a-river",
@@ -70,7 +70,7 @@ The people this happens to are not reckless. They are people who correctly ident
 
 **Decide the turn-back rule before you need it.** In advance, when nothing is at stake: at what point do we stop for the day, take the layover, call for a resupply, or end the trip?
 
-A rule set in advance survives contact with the desire to keep going. A judgement made at the moment does not, because at the moment you are tired, invested and want to be finished.
+A rule set in advance survives contact with the desire to keep going. A judgment made at the moment does not, because at the moment you are tired, invested and want to be finished.
 
 ## Groups
 
@@ -86,7 +86,7 @@ When it arrives, resist the urge to judge them. Ask instead: **what did they bel
 
 :::reveal What is the failure mode that turns a problem into an accident? ||| Committing further because you have already committed. Each decision feels like progress and each reduces the margin that absorbs the next surprise.
 
-:::reveal Why set a turn-back rule in advance? ||| Because at the moment of decision you are tired, invested and want to finish. A rule set when nothing is at stake survives that; a judgement made in the moment does not.`,
+:::reveal Why set a turn-back rule in advance? ||| Because at the moment of decision you are tired, invested and want to finish. A rule set when nothing is at stake survives that; a judgment made in the moment does not.`,
       recallContent: [
         {
           prompt: "Name the three recurring plan failures on a long trip.",
@@ -102,7 +102,7 @@ When it arrives, resist the urge to judge them. Ask instead: **what did they bel
     },
     {
       slug: "quiz-finding-your-way",
-      title: "3 · Knowledge check: judgement",
+      title: "3 · Knowledge check: judgment",
       section: "Section 2 · Judgement under pressure",
       quiz: {
         shuffleOptions: true,
@@ -126,7 +126,7 @@ When it arrives, resist the urge to judge them. Ask instead: **what did they bel
               "Noticing usually happens near dark, when options are already limited",
               "The hours before it were spent confidently wrong, and every decision since inherits the error",
               "Recognising the problem causes people to panic and make worse choices immediately",
-              "By then you have usually travelled beyond the range of any rescue",
+              "By then you have usually traveled beyond the range of any rescue",
             ],
             correctIndex: 1,
             explanation:
@@ -156,7 +156,7 @@ When it arrives, resist the urge to judge them. Ask instead: **what did they bel
             ],
             correctIndex: 1,
             explanation:
-              "At the decision point you are tired, invested and want to be finished, which is exactly when judgement is least reliable. A rule made in advance is not subject to that pressure.",
+              "At the decision point you are tired, invested and want to be finished, which is exactly when judgment is least reliable. A rule made in advance is not subject to that pressure.",
             sourceLessonSlug: "when-the-plan-fails",
           },
         ],
@@ -168,13 +168,13 @@ When it arrives, resist the urge to judge them. Ask instead: **what did they bel
       section: "Section 2 · Judgement under pressure",
       body: `## What this course is, and is not
 
-It is about **judgement**, which is why it is scenario-based and why almost nothing in it is a fact to memorise. It is not navigation instruction and not a safety qualification. Learning to navigate requires doing it under supervision, and learning to handle a river requires water.
+It is about **judgment**, which is why it is scenario-based and why almost nothing in it is a fact to memorize. It is not navigation instruction and not a safety qualification. Learning to navigate requires doing it under supervision, and learning to handle a river requires water.
 
 ## The one claim worth checking yourself
 
 The turn-back rule idea, and the pattern of incremental commitment that defeats it, is not unique to rivers. It appears in mountaineering, aviation and diving literature under various names, and the accident reports of all three are full of it.
 
-That convergence is the best evidence that it is a real pattern rather than folklore, and reading one field's accident reports is a fast way to recognise it in your own.
+That convergence is the best evidence that it is a real pattern rather than folklore, and reading one field's accident reports is a fast way to recognize it in your own.
 
 ## Sources
 

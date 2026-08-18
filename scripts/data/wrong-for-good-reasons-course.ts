@@ -121,7 +121,7 @@ Educated Europeans knew the earth was a sphere, continuously, from antiquity thr
 
 ## The evidence, which is not obscure
 
-**Aristotle**, writing around 350 BCE, gives arguments in *On the Heavens*: the earth throws a curved shadow on the moon during a lunar eclipse, always curved, at every eclipse; and travelling north or south changes which stars are visible, which only happens on a curved surface.
+**Aristotle**, writing around 350 BCE, gives arguments in *On the Heavens*: the earth throws a curved shadow on the moon during a lunar eclipse, always curved, at every eclipse; and traveling north or south changes which stars are visible, which only happens on a curved surface.
 
 **Ptolemy's** astronomical work, the standard technical reference for well over a thousand years, treats the earth as a sphere and reproduces the arguments.
 
@@ -129,7 +129,7 @@ Educated Europeans knew the earth was a sphere, continuously, from antiquity thr
 
 **Sacrobosco's** *De sphaera mundi*, written around 1230, was the standard astronomy textbook in European universities for roughly four centuries. It opens by arguing that the earth is a sphere. This is not a specialist document. It is the thing students were taught from.
 
-**Dante**, in the early 1300s, writes a poem whose entire architecture depends on a spherical earth with a centre that things fall toward.
+**Dante**, in the early 1300s, writes a poem whose entire architecture depends on a spherical earth with a center that things fall toward.
 
 And there is the object monarchs held in coronation portraits: a sphere with a cross on it, the *globus cruciger*, meaning earthly rule. A flat-earth culture does not put a ball in the king's hand and call it the world.
 
@@ -197,7 +197,7 @@ Lesson 4 is about who invented it.
 
 Eratosthenes of Cyrene knew two things. At Syene, far up the Nile, the sun at noon on the summer solstice stood directly overhead, casting no shadow down a vertical well. At Alexandria, on the same day at the same hour, a vertical rod did cast a shadow, at an angle of about one fiftieth of a full circle, roughly seven degrees.
 
-If the earth is a sphere and the sun is far enough away that its rays arrive effectively parallel, then that angle is the angle between Alexandria and Syene as seen from the centre of the earth. One fiftieth of the circle. So the distance between the two cities is one fiftieth of the way around.
+If the earth is a sphere and the sun is far enough away that its rays arrive effectively parallel, then that angle is the angle between Alexandria and Syene as seen from the center of the earth. One fiftieth of the circle. So the distance between the two cities is one fiftieth of the way around.
 
 The reported distance was about 5,000 stades. Multiply by fifty and you get 250,000 stades. He is reported to have used 252,000, probably because it divides neatly by sixty.
 
@@ -250,7 +250,7 @@ Which is lesson 7. A wrong number, once it has an authority's name on it, can tr
         {
           prompt: "Name one piece of evidence ancient and medieval writers used to argue the earth is a sphere.",
           answer:
-            "The curved shadow the earth throws on the moon at every lunar eclipse, or the fact that travelling north or south changes which stars are visible.",
+            "The curved shadow the earth throws on the moon at every lunar eclipse, or the fact that traveling north or south changes which stars are visible.",
         },
         {
           prompt: "Why does the standard medieval textbook settle the question of what was actually taught?",
@@ -285,7 +285,7 @@ Which is lesson 7. A wrong number, once it has an authority's name on it, can tr
             options: [
               "It shifts the burden of proof onto the other person",
               "It commits you to nothing that could actually happen",
-              "It confuses a scientific claim with a moral judgement",
+              "It confuses a scientific claim with a moral judgment",
               "It relies on evidence that has not been published yet",
             ],
             correctIndex: 1,
@@ -375,7 +375,7 @@ Which is lesson 7. A wrong number, once it has an authority's name on it, can tr
             prompt: "How does Eratosthenes's method reach us at all?",
             options: [
               "Through Cleomedes, a teacher retelling it much later",
-              "Through Ptolemy, who copied it into his star catalogue",
+              "Through Ptolemy, who copied it into his star catalog",
               "Through a surviving manuscript in his own hand at Alexandria",
               "Through an inscription recording the survey at Syene",
             ],
@@ -456,7 +456,7 @@ Nobody argued about the shape of the earth, because there was nothing to argue a
 
 ## Why this was so hard to catch
 
-Irving said, in general terms in his preface, that he had allowed himself some latitude in filling out and colouring scenes. That is an honest note, and it is also nearly useless to a reader, because it does not say **which** scenes.
+Irving said, in general terms in his preface, that he had allowed himself some latitude in filling out and coloring scenes. That is an honest note, and it is also nearly useless to a reader, because it does not say **which** scenes.
 
 That is the mechanism worth taking away. A fabricated passage sitting inside a book of genuine documents is almost undetectable from the inside. Everything around it checks out. The reader has no reason to test this paragraph rather than the previous one, and the book has given them no way to tell the difference.
 
@@ -523,7 +523,7 @@ This is where the course's own method has to be applied to the people who got it
 
 **Draper** wrote in the immediate aftermath of the First Vatican Council of 1870 and the Syllabus of Errors of 1864. His target was specific and contemporary: the political and doctrinal claims being made by the Catholic Church of his own decade. He was not writing a detached history of the Middle Ages. He was writing a polemic about the 1870s, and he said so.
 
-**White** had a concrete institutional grievance. Cornell was founded as a nonsectarian university, and it was attacked from pulpits for being godless. White wrote, by his own account, in defence of the institution he was building and of the principle that a university should be free of doctrinal control.
+**White** had a concrete institutional grievance. Cornell was founded as a nonsectarian university, and it was attacked from pulpits for being godless. White wrote, by his own account, in defense of the institution he was building and of the principle that a university should be free of doctrinal control.
 
 Neither man was a hack. Both had a real fight on their hands. Neither of those things makes their history correct.
 
@@ -604,7 +604,7 @@ There is nothing wrong with a tertiary source. Most of what any of us knows arri
 
 A tertiary source cites another tertiary source, which cites a third, which cites the first. The chain loops without ever touching a document.
 
-You can detect this, and the detection is a physical activity rather than a judgement. **Try to walk down the ladder.** Each step should get you closer to something produced at the time. If two steps in a row keep you at the same level, stop and say so out loud: "the trail goes cold at a 1953 encyclopedia entry that gives no source." That sentence is a real research result. It is not a failure.
+You can detect this, and the detection is a physical activity rather than a judgment. **Try to walk down the ladder.** Each step should get you closer to something produced at the time. If two steps in a row keep you at the same level, stop and say so out loud: "the trail goes cold at a 1953 encyclopedia entry that gives no source." That sentence is a real research result. It is not a failure.
 
 ## A four-step procedure you can actually run
 
@@ -681,7 +681,7 @@ Historians differ over the precise arithmetic, and Columbus's own statements are
 
 ## His critics were right
 
-The commission judged the ocean too wide for a ship to cross with the provisions it could carry. On the evidence available, that judgement was correct. On the water, it would have been correct: no crew in 1492 could have survived an unbroken crossing of the true distance.
+The commission judged the ocean too wide for a ship to cross with the provisions it could carry. On the evidence available, that judgment was correct. On the water, it would have been correct: no crew in 1492 could have survived an unbroken crossing of the true distance.
 
 He survived because two continents were in the way, at approximately the distance he had expected Asia to be.
 
@@ -703,7 +703,7 @@ He was not careless, and he was not making things up. Every number he used came 
 
 **That is the tell.** When every uncertainty in a case resolves in the direction the person wanted, you are watching selection, not weighing. It is nearly invisible from the inside, because each individual choice is defensible and has a citation attached.
 
-You will do this. So will everyone reading this. The only defence is to notice the pattern rather than to audit each choice, because each choice will survive an audit.
+You will do this. So will everyone reading this. The only defense is to notice the pattern rather than to audit each choice, because each choice will survive an audit.
 
 ## One thing this course will not skip
 
@@ -763,7 +763,7 @@ The voyages that followed had consequences for the people already living in the 
             ],
             correctIndex: 0,
             explanation:
-              "On the evidence available, that judgement was correct, and on the water it would have been correct.",
+              "On the evidence available, that judgment was correct, and on the water it would have been correct.",
             sourceLessonSlug: "irving-1828",
           },
           {
@@ -789,7 +789,7 @@ The voyages that followed had consequences for the people already living in the 
             ],
             correctIndex: 0,
             explanation:
-              "Irving's preface admits some colouring in general terms, which is honest and nearly useless, because it never says which scenes.",
+              "Irving's preface admits some coloring in general terms, which is honest and nearly useless, because it never says which scenes.",
             sourceLessonSlug: "irving-1828",
           },
           {
@@ -909,11 +909,11 @@ The voyages that followed had consequences for the people already living in the 
       section: "Section 3 · Reasonably wrong",
       body: `Here is a claim this course is going to defend, and it is not a paradox or a provocation.
 
-**On the evidence available before the seventeenth century, a stationary earth was the better-supported position.** Not a superstition. Not a concession to authority. The position the observations favoured.
+**On the evidence available before the seventeenth century, a stationary earth was the better-supported position.** Not a superstition. Not a concession to authority. The position the observations favored.
 
 ## What anybody could check
 
-**You do not feel the earth move.** If it turns once a day, a point on the equator is travelling at over a thousand miles an hour, and you feel nothing. To answer that objection you need a physics in which uniform motion is not felt, and no such physics existed. Without it, "we would feel it" is not stubbornness. It is an observation with no available explanation.
+**You do not feel the earth move.** If it turns once a day, a point on the equator is traveling at over a thousand miles an hour, and you feel nothing. To answer that objection you need a physics in which uniform motion is not felt, and no such physics existed. Without it, "we would feel it" is not stubbornness. It is an observation with no available explanation.
 
 **Things fall straight down.** Drop a stone from a tower and it lands at the base. On a turning earth, the tower moves while the stone falls, so it should land behind. Again, the answer requires a mechanics nobody had.
 
@@ -925,7 +925,7 @@ If the earth swings around a large orbit, then over six months you view the sky 
 
 Astronomers looked. They looked hard, for centuries, with the best instruments available. Nothing shifted.
 
-The Copernican answer was that the stars must be so enormously far away that the shift is too small to see. That answer is correct. It is also, in 1600, a very large unevidenced commitment made specifically to rescue a theory from a failed prediction, which is exactly the move a well-trained sceptic is supposed to be suspicious of.
+The Copernican answer was that the stars must be so enormously far away that the shift is too small to see. That answer is correct. It is also, in 1600, a very large unevidenced commitment made specifically to rescue a theory from a failed prediction, which is exactly the move a well-trained skeptic is supposed to be suspicious of.
 
 ## Tycho Brahe's version, which is sharper still
 
@@ -933,9 +933,9 @@ Tycho Brahe was the finest observational astronomer of his age. He measured the 
 
 He then did the arithmetic. If the stars are far enough away to hide parallax, then a disc of that apparent size means a star physically larger than the earth's entire orbit. That struck him as absurd, and he concluded, from his measurements, that the earth does not move.
 
-His measurement was real. His arithmetic was right. His conclusion was wrong, because the apparent disc is an artefact of how light behaves in the eye and the instrument, and there was no way for anyone in 1600 to know that.
+His measurement was real. His arithmetic was right. His conclusion was wrong, because the apparent disc is an artifact of how light behaves in the eye and the instrument, and there was no way for anyone in 1600 to know that.
 
-Read that again, because it is the centre of this course: **he followed his measurement, and the measurement was the thing misleading him.** The people who turned out to be right had to set a measurement aside, and at the time they had no good reason for setting it aside.
+Read that again, because it is the center of this course: **he followed his measurement, and the measurement was the thing misleading him.** The people who turned out to be right had to set a measurement aside, and at the time they had no good reason for setting it aside.
 
 ## When the objection was actually answered
 
@@ -998,7 +998,7 @@ Early telescopic work produced several. The details belong to the other course. 
 
 "We would feel it" and "the stone lands at the base of the tower" are objections about **motion**, not about the sky. No telescope can answer them. They were answered by a mechanics in which uniform motion is not felt and in which the same law governs a falling stone and an orbiting moon. That arrived with Newton's *Principia* in 1687.
 
-This is the single most useful item in the lesson, and it generalises: **a long-standing objection is often retired by a change in a neighbouring field, by people who were not working on your argument.** You will see the same thing happen to Wegener in lesson 12.
+This is the single most useful item in the lesson, and it generalises: **a long-standing objection is often retired by a change in a neighboring field, by people who were not working on your argument.** You will see the same thing happen to Wegener in lesson 12.
 
 **3. Instruments improving until the decisive measurement becomes possible.**
 
@@ -1020,7 +1020,7 @@ That is worth sitting with, because it is at odds with how almost everybody imag
 
 ## Two habits
 
-**When a long dispute will not move, ask what could come from a neighbouring field.** Most long disputes end that way rather than by anyone winning on the original ground.
+**When a long dispute will not move, ask what could come from a neighboring field.** Most long disputes end that way rather than by anyone winning on the original ground.
 
 **When you find yourself adding a condition to save a belief, count the conditions.** One is fine and often correct. A growing list is a diagnosis, and it is the same diagnosis whether the belief is yours or somebody else's.
 
@@ -1063,7 +1063,7 @@ The theory held that illness arises from foul air given off by decaying matter. 
 
 Sit with that. A theory of causation that was wrong pointed at the right actions, because it pointed at the right **places**. Being wrong about the mechanism did not stop it being useful, and being useful did not make it right.
 
-**John Snow, 1854.** Snow argued cholera travelled in water, and made the case with a map of cases around a Soho pump and a comparison between households supplied by different water companies. It is one of the finest pieces of reasoning in the history of medicine.
+**John Snow, 1854.** Snow argued cholera traveled in water, and made the case with a map of cases around a Soho pump and a comparison between households supplied by different water companies. It is one of the finest pieces of reasoning in the history of medicine.
 
 It did not carry the day. An official inquiry the following year rejected his conclusion.
 
@@ -1077,17 +1077,17 @@ The theory held that combustible bodies contain a substance, phlogiston, release
 
 **Look at how much it explained.** Why a flame goes out in a sealed jar: the air becomes saturated and can take no more. Why metals heated in air turn to a crumbly calx, and why heating that calx with charcoal restores the metal: charcoal is rich in phlogiston and gives it back. Why substances that burn well resemble one another: they are rich in the same thing.
 
-That is a genuine theory. It organised a large body of observations, guided laboratory practice, and made predictions that came true. Joseph Priestley, one of the finest experimentalists of the century, worked within it his whole life and never abandoned it. He was not a fool, and he was not being stubborn about nothing.
+That is a genuine theory. It organized a large body of observations, guided laboratory practice, and made predictions that came true. Joseph Priestley, one of the finest experimentalists of the century, worked within it his whole life and never abandoned it. He was not a fool, and he was not being stubborn about nothing.
 
 **What killed it was a number.** Metals gain weight when they calcine. If burning releases a substance, the residue should weigh less, and it weighs more. Defenders tried to absorb this, including by proposing that phlogiston had negative weight, which is the sound a theory makes under strain.
 
 Lavoisier's quantitative work, weighing everything including the gases, absorbed the same fact without strain, and the oxygen account replaced it.
 
-Historians of chemistry have argued at length that phlogiston was a productive research programme rather than a superstition, and that the change was not a simple triumph of evidence over folly.
+Historians of chemistry have argued at length that phlogiston was a productive research program rather than a superstition, and that the change was not a simple triumph of evidence over folly.
 
 ## What the two have in common
 
-**Being superseded is not the same as being stupid.** Both theories organised real observations and produced real gains, and the people who held them had reasons they could state.
+**Being superseded is not the same as being stupid.** Both theories organized real observations and produced real gains, and the people who held them had reasons they could state.
 
 **What ended each one was a measurement the theory could not absorb, plus a rival offering a specific mechanism.** Weight gained on calcination in one case. An identified organism and a water route in the other. Not an argument. A number, and something to put in its place.
 
@@ -1213,7 +1213,7 @@ Nobody built either instrument to test continental drift. That is the most impor
 
 ## The prediction that could have failed
 
-**Harry Hess, 1962.** He proposed that new ocean floor forms at the ridge and spreads outward, carrying the continents with it rather than pushing them through anything. He called his own paper an essay in geopoetry, which is a careful scientist labelling a speculation as a speculation.
+**Harry Hess, 1962.** He proposed that new ocean floor forms at the ridge and spreads outward, carrying the continents with it rather than pushing them through anything. He called his own paper an essay in geopoetry, which is a careful scientist labeling a speculation as a speculation.
 
 **Fred Vine and Drummond Matthews, 1963.** They made it checkable. If the seafloor spreads while the earth's magnetic field periodically reverses, then new rock cooling at the ridge records the field direction of its moment, and the result should be a pattern of magnetic stripes, **symmetrical about the ridge axis**. Lawrence Morley reached the same idea independently and could not get it published.
 
@@ -1239,7 +1239,7 @@ That is not a story about a stubborn establishment being outlived. It is a story
 
 This is the part that matters most for lesson 13.
 
-Plate tectonics did not tell Jeffreys to be quiet. It **supplied the thing his calculation had shown was missing.** The continents do not plough through the ocean floor. The floor itself moves, generated at the ridges and consumed at the trenches, and the continents ride on it.
+Plate tectonics did not tell Jeffreys to be quiet. It **supplied the thing his calculation had shown was missing.** The continents do not plow through the ocean floor. The floor itself moves, generated at the ridges and consumed at the trenches, and the continents ride on it.
 
 The objection was met on its own terms, by a mechanism that did not exist when the objection was made.
 
@@ -1249,7 +1249,7 @@ That is the shape to demand of any currently rejected claim: not sympathy, and n
 
 :::reveal What made the Vine and Matthews proposal strong? ||| It was specific and risky and made in advance: symmetrical magnetic stripes either side of a spreading ridge, which could have come back asymmetric, absent or irregular, and did not.
 
-:::reveal How was Jeffreys's mechanism objection finally answered? ||| It was met, not ignored. The continents do not plough through the ocean floor; the floor itself spreads from the ridges and carries them.
+:::reveal How was Jeffreys's mechanism objection finally answered? ||| It was met, not ignored. The continents do not plow through the ocean floor; the floor itself spreads from the ridges and carries them.
 
 ## Sources
 - Felt, H. (2012). *Soundings: The story of the remarkable woman who mapped the ocean floor*. Henry Holt.
@@ -1265,7 +1265,7 @@ That is the shape to demand of any currently rejected claim: not sympathy, and n
         {
           prompt: "What was the objection to Wegener, and was it a good objection?",
           answer:
-            "Mechanism. His proposed forces were orders of magnitude too weak and continents could not plough through oceanic crust. Jeffreys was right, and the conclusion he used the objection to reject was still true.",
+            "Mechanism. His proposed forces were orders of magnitude too weak and continents could not plow through oceanic crust. Jeffreys was right, and the conclusion he used the objection to reject was still true.",
         },
       ],
     },
@@ -1273,7 +1273,7 @@ That is the shape to demand of any currently rejected claim: not sympathy, and n
       slug: "they-laughed-at-galileo",
       title: "13 · They laughed at Galileo",
       section: "Section 3 · Reasonably wrong",
-      body: `You have just read a story about a man who was right and was dismissed for decades. That story is the single most-used defence of every bad idea in circulation, and this lesson exists because the previous two would be irresponsible without it.
+      body: `You have just read a story about a man who was right and was dismissed for decades. That story is the single most-used defense of every bad idea in circulation, and this lesson exists because the previous two would be irresponsible without it.
 
 ## The argument, in its usual form
 
@@ -1289,7 +1289,7 @@ Being rejected is not evidence of being right.
 
 The set of rejected claims contains a small number that were later vindicated and an enormous number that were rejected because they were wrong and stayed wrong. Reaching into that set, pulling out Wegener, and reasoning from him is choosing your evidence after you already know the answer. It is the same move lesson 7 named in Columbus's arithmetic, applied to a reference class instead of a number.
 
-The base rates are lopsided and they are not a secret. Peer review, expert judgement and replication reject a great deal, and the overwhelming majority of what they reject stays rejected on the merits. A filter with a high accuracy rate does not become suspect because it has a known failure rate. Every filter has one.
+The base rates are lopsided and they are not a secret. Peer review, expert judgment and replication reject a great deal, and the overwhelming majority of what they reject stays rejected on the merits. A filter with a high accuracy rate does not become suspect because it has a known failure rate. Every filter has one.
 
 ## What actually distinguishes Wegener from a crank
 
@@ -1307,7 +1307,7 @@ Not the rejection. Five things, and this is the list to keep.
 
 **That ending is the thing the crank's story never has.** The crank's evidence in year thirty is the same evidence as in year one, restated, and the claim of suppression has grown to fill the space where new evidence should have gone. Nobody ever goes out with a new instrument and finds the thing.
 
-So the one-line version, worth memorising:
+So the one-line version, worth memorizing:
 
 **Wegener is not famous for having been rejected. He is famous for what the ocean floor said when somebody finally looked.**
 
@@ -1333,7 +1333,7 @@ Then ask all three about a claim you hold. Lesson 18 will require it in writing.
 
 People who currently reject a well-supported claim are not automatically cranks either. Some are early. Some are careful. Some are working from a body of evidence you have not seen, which was true of Jeffreys and true of Tycho Brahe.
 
-The three questions are for sorting claims. They are not for sorting people, and a course that ends with its students confidently labelling other people has taught the opposite of what it meant to.
+The three questions are for sorting claims. They are not for sorting people, and a course that ends with its students confidently labeling other people has taught the opposite of what it meant to.
 
 :::reveal Why is "they laughed at Galileo" a bad argument? ||| Because rejection is not evidence of correctness. Most rejected claims are rejected for being wrong, and picking out the few famous vindications afterwards is choosing evidence once you already know the answer.
 
@@ -1385,12 +1385,12 @@ The three questions are for sorting claims. They are not for sorting people, and
             options: [
               "That the earth does not move, because such stars would be impossibly large",
               "That the stars lie at varying distances arranged in concentric shells",
-              "That the planets and the stars must share a single centre of motion",
+              "That the planets and the stars must share a single center of motion",
               "That his instruments were too coarse to settle the question either way",
             ],
             correctIndex: 0,
             explanation:
-              "He followed a real measurement to a wrong conclusion. The apparent disc is an artefact nobody in 1600 could have known about.",
+              "He followed a real measurement to a wrong conclusion. The apparent disc is an artifact nobody in 1600 could have known about.",
             sourceLessonSlug: "geocentrism-was-good-science",
           },
           {
@@ -1449,7 +1449,7 @@ The three questions are for sorting claims. They are not for sorting people, and
             prompt: "Why was miasma a reasonable inference from the evidence available?",
             options: [
               "Disease genuinely clustered where filth and decay were worst",
-              "Physicians had isolated an airborne agent from marsh vapours",
+              "Physicians had isolated an airborne agent from marsh vapors",
               "Sealed rooms were shown to protect their occupants from cholera",
               "Outbreaks were recorded only during periods of still, warm air",
             ],
@@ -1494,7 +1494,7 @@ The three questions are for sorting claims. They are not for sorting people, and
             ],
             correctIndex: 0,
             explanation:
-              "Jeffreys was right that the forces were orders of magnitude too small and that continents could not plough through oceanic crust.",
+              "Jeffreys was right that the forces were orders of magnitude too small and that continents could not plow through oceanic crust.",
             sourceLessonSlug: "wegener-right-and-dismissed",
           },
           {
@@ -1570,7 +1570,7 @@ That is the same shape as parallax in lesson 8 and the magnetometer in lesson 12
 
 A 2016 study using DNA and spectroscopic analysis concluded that the specimens came from a single source and pointed to Dawson. Several other candidates have been argued over the decades.
 
-The attribution is an inference from physical evidence, and the balance of that evidence favours Dawson. This course will not state it more strongly than the evidence does, and you should be suspicious of any account that does.
+The attribution is an inference from physical evidence, and the balance of that evidence favors Dawson. This course will not state it more strongly than the evidence does, and you should be suspicious of any account that does.
 
 ## Why this lesson sits next to Wegener
 
@@ -1630,7 +1630,7 @@ All three of those factors mattered. It is not a story with a single villain, an
 
 ## The precision this demands
 
-**None of these people was rejected because their opponents were stupid or wicked.** The proxies in use were reasonable proxies. Training predicts competence. Shipboard survey work was, for bad reasons, closed to women, and the exclusion did the damage rather than any judgement about Tharp's soundings. A claim without a mechanism genuinely is harder to act on.
+**None of these people was rejected because their opponents were stupid or wicked.** The proxies in use were reasonable proxies. Training predicts competence. Shipboard survey work was, for bad reasons, closed to women, and the exclusion did the damage rather than any judgment about Tharp's soundings. A claim without a mechanism genuinely is harder to act on.
 
 What makes it serious is that the failures are **systematic** rather than random. A random error scatters. A systematic one lands repeatedly on the same kind of person, so the same people pay the cost again and again, and the field loses the same category of contribution again and again without ever noticing a pattern.
 
@@ -1638,7 +1638,7 @@ What makes it serious is that the failures are **systematic** rather than random
 
 The suppressed genius is itself a story shape, and story shapes attract embellishment. Lesson 6 explained why.
 
-Barbara McClintock is routinely described as ignored and ridiculed for decades. Historians working from her correspondence and from the actual citation record have argued that the picture is considerably more complicated, and that she was an established and honoured scientist whose work was difficult and unfamiliar rather than dismissed.
+Barbara McClintock is routinely described as ignored and ridiculed for decades. Historians working from her correspondence and from the actual citation record have argued that the picture is considerably more complicated, and that she was an established and honored scientist whose work was difficult and unfamiliar rather than dismissed.
 
 Even the who-gets-believed genre generates its own myths, and they are attractive myths, because they flatter the person retelling them. Check these stories exactly the way you would check any other. That is not a betrayal of the point. It is the point.
 
@@ -1805,7 +1805,7 @@ Start at your state department of education website. Find the state board's page
 
 Because a correction reaches a classroom through this machinery or it does not reach one at all.
 
-Irving's invented scene travelled to generations of students through textbooks. Textbooks are revised, on schedules, by identifiable bodies, in meetings that are open by law. Knowing where that machinery is, is the difference between having an opinion about what students are taught and being able to participate in the decision.
+Irving's invented scene traveled to generations of students through textbooks. Textbooks are revised, on schedules, by identifiable bodies, in meetings that are open by law. Knowing where that machinery is, is the difference between having an opinion about what students are taught and being able to participate in the decision.
 
 ## And to be clear about scope
 
@@ -1901,7 +1901,7 @@ This course does not have a position to offer you on any live curriculum dispute
           {
             prompt: "How does the course state the attribution of the Piltdown forgery?",
             options: [
-              "The evidence favours Dawson, and it is an inference rather than a proof",
+              "The evidence favors Dawson, and it is an inference rather than a proof",
               "The forger has never been narrowed below a list of eight candidates",
               "A 2016 study established Dawson's authorship beyond further dispute",
               "The question was settled by the original 1953 investigating team",
@@ -2042,7 +2042,7 @@ Roughly 700 to 1,000 words, in six parts.
 
 **4. Name what would make you abandon it entirely.** These are usually different, and the difference is informative. If nothing would, write that down and say why, because that is a real and reportable finding about the kind of belief it is.
 
-**5. Say who would have to be wrong for you to be right, and how confident you are that they are.** If your claim is contested by people who have looked at this professionally, say so, name what their best argument is in its strongest form, and say what you make of it. Lesson 8's geocentrists and lesson 11's Jeffreys are the standard here: state the opposing case well enough that someone holding it would recognise it.
+**5. Say who would have to be wrong for you to be right, and how confident you are that they are.** If your claim is contested by people who have looked at this professionally, say so, name what their best argument is in its strongest form, and say what you make of it. Lesson 8's geocentrists and lesson 11's Jeffreys are the standard here: state the opposing case well enough that someone holding it would recognize it.
 
 **6. Name one thing you could actually check this week,** and say where you would look.
 
@@ -2058,7 +2058,7 @@ Roughly 700 to 1,000 words, in six parts.
 - **Candour in part 2.** Nobody has examined the evidence for most of what they believe, including your instructor. Pretending otherwise is the failure mode.
 - **Specificity in parts 3 and 4.** Could someone else go and run your test? That is the bar.
 - **Fairness in part 5.** The opposing case has to be stated in a form its holders would accept.
-- **Feasibility in part 6.** Something you could genuinely do, not a research programme.
+- **Feasibility in part 6.** Something you could genuinely do, not a research program.
 
 Cite anything you rely on in APA 7, with a short reference list, and follow lesson 6's rule: put the source inside the sentence, and mark the trail where it goes cold.
 

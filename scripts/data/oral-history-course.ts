@@ -77,7 +77,7 @@ export const ORAL_HISTORY_COURSE: AuthoredCourse = {
 
 **They were wrong about the date, and Portelli's argument is that the error is the most valuable thing in the recording.** The community had relocated the death to the moment that mattered to them, the layoffs, because that is where the death made sense as part of their own history. **The mistake is not noise in the data. It is the data**, and it tells you something a correct date never could: what that community understood its own defeat to be (Portelli, 1991).
 
-**The general principle:** an oral history's value is not only in what it says happened. It is also in what the narrator believes, how they organise it, what they emphasise, and what they cannot say. **The divergence between memory and record is a finding, not a defect.**
+**The general principle:** an oral history's value is not only in what it says happened. It is also in what the narrator believes, how they organize it, what they emphasize, and what they cannot say. **The divergence between memory and record is a finding, not a defect.**
 
 **What this does NOT license**, and the distinction matters:
 
@@ -108,7 +108,7 @@ export const ORAL_HISTORY_COURSE: AuthoredCourse = {
 
 **What to do before you record**
 
-**1. Learn the context, not the person.** The industry, the neighbourhood, the war, the strike, the migration. **You are building the ability to hear what matters when they say it**, and to ask the second question. A narrator saying "then they closed the second shift" means nothing to an interviewer who does not know what the second shift was.
+**1. Learn the context, not the person.** The industry, the neighborhood, the war, the strike, the migration. **You are building the ability to hear what matters when they say it**, and to ask the second question. A narrator saying "then they closed the second shift" means nothing to an interviewer who does not know what the second shift was.
 
 **2. Build a chronology of the checkable.** Dates, places, names, from documents. Not to test them: to orient yourself, and to know which divergences are worth noting later.
 
@@ -173,7 +173,7 @@ export const ORAL_HISTORY_COURSE: AuthoredCourse = {
             prompt: "Which of the six decisions does oral history take out of the interviewer's hands?",
             options: [
               "The owner: the narrator owns their own account, always",
-              "The turn, which the archive determines when it catalogues the recording",
+              "The turn, which the archive determines when it catalogs the recording",
               "Withholding, since nothing may be held back from a narrator",
               "Scene and summary, which the transcription process fixes",
             ],
@@ -308,7 +308,7 @@ export const ORAL_HISTORY_COURSE: AuthoredCourse = {
 
 **The silence, again, and here it does more than it did in documentary.** In a documentary interview silence produces a better quote. **In an oral history it produces the material nobody else has**, because a life-review session is long enough that the narrator moves past what they have told before. Wait. Four seconds, not two.
 
-**And the specific thing to do when a narrator cries.** Do not stop recording reflexively, do not apologise, and do not rush to comfort them, all of which say the same thing: that this should not have happened. **Stay quiet, be present, let the pause run.** Then offer, genuinely: "Would you like to stop for a minute?" **Their answer decides it and yours does not.** Most narrators continue, and many say afterwards that it was the part they wanted recorded.
+**And the specific thing to do when a narrator cries.** Do not stop recording reflexively, do not apologize, and do not rush to comfort them, all of which say the same thing: that this should not have happened. **Stay quiet, be present, let the pause run.** Then offer, genuinely: "Would you like to stop for a minute?" **Their answer decides it and yours does not.** Most narrators continue, and many say afterwards that it was the part they wanted recorded.
 
 **What to avoid**
 
@@ -390,7 +390,7 @@ export const ORAL_HISTORY_COURSE: AuthoredCourse = {
 
 **Interviewing family**, which is where most people start and where the specific traps are: you share the assumptions, so you skip the explanations a stranger would need and the recording is unusable to anyone outside the family. **Ask the obvious questions anyway** ("what was your mother's name", "what did Dad do at the plant"), even when you know. You also carry a shared history, which means the hard questions are harder and the answers may be shaped to protect you. **Naming that out loud at the start helps** more than it sounds like it will.
 
-**The obligation that outlives the interview.** A narrator gave you their account on the strength of what you told them. **If the project changes, whether that is a different repository, an online publication that was not discussed, or a use they would not recognise, go back and ask.** That is the same consent-as-a-process rule the documentary course states, and here it reaches further, because oral histories are designed to last decades.
+**The obligation that outlives the interview.** A narrator gave you their account on the strength of what you told them. **If the project changes, whether that is a different repository, an online publication that was not discussed, or a use they would not recognize, go back and ask.** That is the same consent-as-a-process rule the documentary course states, and here it reaches further, because oral histories are designed to last decades.
 
 :::reveal A narrator signed a deed of gift in 2010 for a project that deposited recordings with a local historical society. In 2026 the project wants to publish them online in full. What does the course say? ||| Go back and ask. The 2010 consent was given on the strength of what they were told, and a narrator picturing a reading room has not consented to a search result: online reach and permanence are the specific things people have no model for. It is the same consent-as-a-process rule the documentary course states, and it reaches further here because oral histories are designed to last decades, so the gap between what was described and what is now proposed can be a generation wide.
 
@@ -418,12 +418,12 @@ export const ORAL_HISTORY_COURSE: AuthoredCourse = {
 **The defaults this course recommends**, stated as defaults rather than rules:
 
 1. **Near-verbatim.** Keep false starts and repetitions; drop only the interviewer's own "mm-hm". **Mark long pauses, laughter and crying**, because they carry meaning that the words do not.
-2. **Never standardise a narrator's grammar or dialect.** This is the one with the most at stake. **Rewriting how someone speaks into how you think they should have is the most patronising thing you can do to an oral history**, and it disproportionately falls on working-class and minority-language narrators. Transcribe what was said.
+2. **Never standardize a narrator's grammar or dialect.** This is the one with the most at stake. **Rewriting how someone speaks into how you think they should have is the most patronising thing you can do to an oral history**, and it disproportionately falls on working-class and minority-language narrators. Transcribe what was said.
 3. **Note what is not language**: [pause], [laughs], [long silence], [inaudible 00:14:22], [phone rings]. Timestamp the inaudible so someone can go and try again.
 4. **Timestamp every few minutes.** It is what makes the transcript usable against the audio.
 5. **Offer review, and say what review means.** If they may correct facts but not rewrite their speech, say that up front. **A narrator who returns a rewritten transcript was not told the terms.**
 
-**On automatic transcription.** It is now good enough to be a genuine first pass, and it is a first pass. It reliably mangles names, places, dialect and anything specialised, which in an oral history is the material. **Correct it against the audio, all the way through, or the errors become the record.**
+**On automatic transcription.** It is now good enough to be a genuine first pass, and it is a first pass. It reliably mangles names, places, dialect and anything specialized, which in an oral history is the material. **Correct it against the audio, all the way through, or the errors become the record.**
 
 **And the thing to hold onto:** where the transcript and the audio disagree, **the audio is the record.** Say so in the front matter, so a future user knows which object they are actually citing.
 
@@ -564,7 +564,7 @@ export const ORAL_HISTORY_COURSE: AuthoredCourse = {
               "Standardise it so the narrator is not embarrassed by the printed version",
               "Standardise it only where a reader would otherwise misunderstand the sense",
               "Offer the narrator the choice of standardising their own speech at review",
-              "Never standardise it: transcribe what was said",
+              "Never standardize it: transcribe what was said",
             ],
             correctIndex: 3,
             explanation:
@@ -581,7 +581,7 @@ export const ORAL_HISTORY_COURSE: AuthoredCourse = {
       lessonType: "assignment",
       body: `**Do the whole thing once, end to end, with one real person.** A partial oral history teaches almost nothing: the discipline is in the parts people skip.
 
-**Choose a narrator you can actually sit with**, and who has time for at least ninety minutes. A relative, a neighbour, a colleague near retirement, someone at a community organisation. **Someone with an ordinary life is a better first narrator than someone famous**, because you will not be tempted to let their reputation do the work.
+**Choose a narrator you can actually sit with**, and who has time for at least ninety minutes. A relative, a neighbor, a colleague near retirement, someone at a community organization. **Someone with an ordinary life is a better first narrator than someone famous**, because you will not be tempted to let their reputation do the work.
 
 **What to submit.**
 
@@ -625,7 +625,7 @@ export const ORAL_HISTORY_COURSE: AuthoredCourse = {
 
 **The narrator owns their words.** The deed of gift transfers them, names permitted uses (say **online** out loud), and sets restrictions. Consent is a process here too, and it reaches decades.
 
-**The transcript is a derivative.** Near-verbatim, pauses and laughter marked, **dialect never standardised**, and the audio is the record.
+**The transcript is a derivative.** Near-verbatim, pauses and laughter marked, **dialect never standardized**, and the audio is the record.
 
 :::reveal Without looking back, state the Trastulli finding and the practice it produces. ||| Terni workers remembered Luigi Trastulli dying at the 1953 mass layoffs rather than the 1949 demonstration where he was actually killed, because the layoffs were where his death made sense in the community's own history; Portelli argued the error was the most valuable thing in the recording. The practice: do not argue in the room, ask a neutral clarifying question at most once, record the account exactly as given, and put the divergence in the metadata where a future user will find it rather than in the recording or in nowhere.
 

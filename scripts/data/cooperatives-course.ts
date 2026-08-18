@@ -37,7 +37,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const COOPERATIVES_COURSE: AuthoredCourse = {
   title: "Cooperatives",
   description:
-    "A cited, high-school-and-up course on the business form most people have used without ever reading: the cooperative. It is not legal, tax or financial advice, and it says so throughout. The organising idea is one line, and the whole course is a consequence of it: a cooperative answers the ownership and governance questions with ONE MEMBER, ONE VOTE, not one share, one vote, which makes capital the servant of the members rather than their master. You will read the co-op against the four decisions from course 1 (liability, taxation, ownership and transfer, governance), then meet the Rochdale Pioneers who opened a store in 1844 and left behind the principles the world still uses, codified today as the seven cooperative principles of the International Co-operative Alliance. You will learn the five main types, worker, consumer, producer, housing and purchasing, and then study three worked cases that prove the form is not a curiosity: Mondragon, one of the largest worker cooperatives in the world, and the honest debate about whether it still lives up to its ideals; the rural electric cooperatives that, under the Rural Electrification Act of 1936, brought power to an America the private utilities would not serve; and the credit union, a financial cooperative built under the Federal Credit Union Act of 1934 that a large share of Americans belong to without thinking of it as a co-op at all. The last section takes on the money and governance question head on: how a co-op shares surplus through patronage dividends, why raising member capital is its hardest problem, and how the whole structure can be reversed through demutualisation, the same move the building societies made in the financing course. The capstone asks you to design a cooperative for a real scenario and defend its member governance against a plain corporation, in the language of the four decisions. Where accounts disagree, this course teaches the disagreement rather than smoothing it over.",
+    "A cited, high-school-and-up course on the business form most people have used without ever reading: the cooperative. It is not legal, tax or financial advice, and it says so throughout. The organizing idea is one line, and the whole course is a consequence of it: a cooperative answers the ownership and governance questions with ONE MEMBER, ONE VOTE, not one share, one vote, which makes capital the servant of the members rather than their master. You will read the co-op against the four decisions from course 1 (liability, taxation, ownership and transfer, governance), then meet the Rochdale Pioneers who opened a store in 1844 and left behind the principles the world still uses, codified today as the seven cooperative principles of the International Co-operative Alliance. You will learn the five main types, worker, consumer, producer, housing and purchasing, and then study three worked cases that prove the form is not a curiosity: Mondragon, one of the largest worker cooperatives in the world, and the honest debate about whether it still lives up to its ideals; the rural electric cooperatives that, under the Rural Electrification Act of 1936, brought power to an America the private utilities would not serve; and the credit union, a financial cooperative built under the Federal Credit Union Act of 1934 that a large share of Americans belong to without thinking of it as a co-op at all. The last section takes on the money and governance question head on: how a co-op shares surplus through patronage dividends, why raising member capital is its hardest problem, and how the whole structure can be reversed through demutualization, the same move the building societies made in the financing course. The capstone asks you to design a cooperative for a real scenario and defend its member governance against a plain corporation, in the language of the four decisions. Where accounts disagree, this course teaches the disagreement rather than smoothing it over.",
   lessons: [
     // ═══════════════════════════════════════════════════════════════════════════════════════
     // SECTION 1 · What a cooperative is  (the four decisions, and the one-member-one-vote answer)
@@ -88,7 +88,7 @@ It has consequences you can predict before you read another word:
 | **1. The concept** | Read a co-op against the four decisions, with one member one vote as the answer |
 | **2. Principles and types** | The Rochdale Pioneers, the seven principles, and the five main co-op types |
 | **3. Worked cases** | Mondragon, rural electric co-ops, and the credit union |
-| **4. Money and governance** | Patronage dividends, member capital, and demutualisation risk |
+| **4. Money and governance** | Patronage dividends, member capital, and demutualization risk |
 | **5. The capstone** | Design a co-op for a scenario and defend its member governance against a corporation |
 
 **One more time, because it is the rule:** this is a course about how to read a business form, not advice about your money or your business. Keep a professional in the picture for anything real.
@@ -120,7 +120,7 @@ Set the two rules side by side, because the contrast is the definition:
 
 Here is the part people miss. In a corporation, the owner and the customer are usually **different people**: shareholders in one place, customers in another, and the company's job is to take money from the customers and return profit to the shareholders. **In a cooperative, the owner and the user are the same person.** A member of a credit union is both an owner of the credit union and a borrower or saver at it. A member of a farm co-op both owns it and sells crops through it. A member of a consumer co-op both owns the store and shops at it.
 
-**This dual identity is why a co-op is run for member benefit rather than for outside profit.** There is no separate group of investors to satisfy, because the members are the investors, and what the members want is not a dividend on capital but a good deal as users: fair prices, a fair market for their crop, a loan they can get, a service that exists at all. **The co-op does not maximise profit extracted from its users, because its users own it.** That single sentence explains most of what co-ops do differently.
+**This dual identity is why a co-op is run for member benefit rather than for outside profit.** There is no separate group of investors to satisfy, because the members are the investors, and what the members want is not a dividend on capital but a good deal as users: fair prices, a fair market for their crop, a loan they can get, a service that exists at all. **The co-op does not maximize profit extracted from its users, because its users own it.** That single sentence explains most of what co-ops do differently.
 
 ## What this does to "profit"
 
@@ -189,14 +189,14 @@ Cooperatives are frequently taxed under **special rules** built around the patro
 
 ## Why the full read matters
 
-Handed any organisation that calls itself a co-op, run the four:
+Handed any organization that calls itself a co-op, run the four:
 
 1. **Liability.** Is it incorporated under a co-op statute (usually a wall) or an informal arrangement (maybe not)?
 2. **Taxation.** Is surplus returned to members by patronage, and taxed to whom? (Then send the specifics to a professional.)
 3. **Ownership and transfer.** Is ownership a membership tied to use, or has it quietly become tradeable stock? (If it has, ask whether it is still really a co-op.)
 4. **Governance.** One member one vote, or has voting drifted toward one share one vote?
 
-**That last parenthetical in questions 3 and 4 is a real test**, not a formality. An organisation can wear the word "co-op" and have quietly become something else, and Section 4's lesson on demutualisation is exactly that story. The four decisions are how you check whether the label still fits. And, as always, reading the form is not advice about using it.
+**That last parenthetical in questions 3 and 4 is a real test**, not a formality. An organization can wear the word "co-op" and have quietly become something else, and Section 4's lesson on demutualization is exactly that story. The four decisions are how you check whether the label still fits. And, as always, reading the form is not advice about using it.
 
 ## Sources
 - International Co-operative Alliance. (n.d.). *Cooperative identity, values & principles*. https://ica.coop/en/cooperatives/cooperative-identity
@@ -408,7 +408,7 @@ Handed any organisation that calls itself a co-op, run the four:
 
 ## Toad Lane, 1844
 
-**On 21 December 1844, a group of working people in Rochdale, in the north of England, opened a small store at 31 Toad Lane** (Encyclopaedia Britannica, n.d.). They were the **Rochdale Society of Equitable Pioneers**, and they were mostly weavers and other tradesmen squeezed by low wages and by shops that sold adulterated goods on credit at high prices. They pooled small amounts of capital, opened a shop stocked at first with a few staples (butter, sugar, flour, oatmeal), and sold to themselves and their neighbours.
+**On 21 December 1844, a group of working people in Rochdale, in the north of England, opened a small store at 31 Toad Lane** (Encyclopaedia Britannica, n.d.). They were the **Rochdale Society of Equitable Pioneers**, and they were mostly weavers and other tradesmen squeezed by low wages and by shops that sold adulterated goods on credit at high prices. They pooled small amounts of capital, opened a shop stocked at first with a few staples (butter, sugar, flour, oatmeal), and sold to themselves and their neighbors.
 
 **The founder count is traditionally given as 28**, and you will see that number everywhere, but treat it as the traditional figure rather than a precise headcount, because accounts of exactly who counted as a founder vary (Encyclopaedia Britannica, n.d.). This course carries the figure with its owner: **traditionally 28**, not "exactly 28 and no argument."
 
@@ -461,7 +461,7 @@ The Rochdale rules spread because they were **practical, not just principled.** 
         },
         {
           prompt: "What real test hides in the ownership and governance questions when reading a co-op?",
-          answer: "Whether the label still fits. An organisation can call itself a co-op while ownership has quietly become tradeable stock or voting has drifted to one share one vote. The four decisions are how you check, and demutualisation is exactly that story.",
+          answer: "Whether the label still fits. An organization can call itself a co-op while ownership has quietly become tradeable stock or voting has drifted to one share one vote. The four decisions are how you check, and demutualization is exactly that story.",
         },
       ],
     },
@@ -469,7 +469,7 @@ The Rochdale rules spread because they were **practical, not just principled.** 
       slug: "coop-seven-principles",
       title: "6 · The seven cooperative principles",
       section: "Section 2 · Principles and types",
-      body: `The Rochdale rules did not stay a local list. They were carried worldwide, debated, and eventually codified into a formal international standard. Today that standard is the **seven cooperative principles**, and knowing them lets you check any organisation's claim to be a co-op against a definition, not a vibe.
+      body: `The Rochdale rules did not stay a local list. They were carried worldwide, debated, and eventually codified into a formal international standard. Today that standard is the **seven cooperative principles**, and knowing them lets you check any organization's claim to be a co-op against a definition, not a vibe.
 
 ## Where the seven come from
 
@@ -502,7 +502,7 @@ The principles turn "is this really a co-op?" from an opinion into a checklist. 
 3. **Does surplus come back by patronage with limited return on capital** (principle 3), or does it flow to investors by stake?
 4. **Is the co-op still self-governing** (principle 4), or has an outside funder taken effective control?
 
-**If an organisation fails principles 1 through 4, calling it a co-op is a stretch**, whatever its name says. Principles 5, 6 and 7 are about how a genuine co-op behaves in the world; principles 1 through 4 are the structural core that the four decisions from course 1 test directly. **The seven principles and the four decisions are two views of the same object**, and a reader who holds both can check a claim from either side. This is a definition to read with, not advice to act on.
+**If an organization fails principles 1 through 4, calling it a co-op is a stretch**, whatever its name says. Principles 5, 6 and 7 are about how a genuine co-op behaves in the world; principles 1 through 4 are the structural core that the four decisions from course 1 test directly. **The seven principles and the four decisions are two views of the same object**, and a reader who holds both can check a claim from either side. This is a definition to read with, not advice to act on.
 
 ## Sources
 - International Co-operative Alliance. (n.d.). *Cooperative identity, values & principles*. https://ica.coop/en/cooperatives/cooperative-identity
@@ -510,7 +510,7 @@ The principles turn "is this really a co-op?" from an opinion into a checklist. 
       recallContent: [
         {
           prompt: "What happened at Toad Lane in 1844, and who were the people involved?",
-          answer: "On 21 December 1844 the Rochdale Society of Equitable Pioneers, mostly weavers and tradesmen squeezed by low wages and high-priced adulterated goods, opened a small store at 31 Toad Lane in Rochdale, England, pooling small capital to sell staples to themselves and their neighbours.",
+          answer: "On 21 December 1844 the Rochdale Society of Equitable Pioneers, mostly weavers and tradesmen squeezed by low wages and high-priced adulterated goods, opened a small store at 31 Toad Lane in Rochdale, England, pooling small capital to sell staples to themselves and their neighbors.",
         },
         {
           prompt: "What was the dividend on purchases, and why was it the move that mattered?",
@@ -532,7 +532,7 @@ The principles turn "is this really a co-op?" from an opinion into a checklist. 
       section: "Section 2 · Principles and types",
       body: `One member, one vote is the constant. **What changes from one kind of co-op to the next is who the members are**, and that single variable produces the five main types. This lesson covers the first two, and the trick to keeping them straight is to ask, every time: **who uses this co-op, and therefore who owns and votes in it?**
 
-## The organising question: who are the members?
+## The organizing question: who are the members?
 
 | Type | The members are... | So they own and control it as... |
 |---|---|---|
@@ -552,9 +552,9 @@ Run it against the four decisions:
 
 - **Ownership and transfer:** owned by the workers, usually through a membership that comes with the job and cannot be sold to an outsider. You become an owner by being hired and accepted as a member, not by buying in from the market.
 - **Governance:** one worker, one vote. Management is usually hired and delegated to, but it answers to a worker-elected board.
-- **Patronage:** surplus is typically shared among worker-members by their labour (for example by hours worked or pay), because **their "use" of the co-op is their work.**
+- **Patronage:** surplus is typically shared among worker-members by their labor (for example by hours worked or pay), because **their "use" of the co-op is their work.**
 
-**The point a worker co-op proves** is that a firm does not have to separate the people who do the work from the people who own it. Most companies put labour on one side and capital on the other; a worker co-op puts them in the same hands. The largest and most studied example, Mondragon, gets its own lesson in Section 3.
+**The point a worker co-op proves** is that a firm does not have to separate the people who do the work from the people who own it. Most companies put labor on one side and capital on the other; a worker co-op puts them in the same hands. The largest and most studied example, Mondragon, gets its own lesson in Section 3.
 
 ## Consumer cooperatives: the customers are the members
 
@@ -640,7 +640,7 @@ Worker and consumer co-ops can sit in the same industry and get confused, so use
         },
         {
           prompt: "In a worker co-op, who are the members, and how is surplus typically shared?",
-          answer: "The employees are the members: the people who do the work own the business and vote one worker, one vote, electing the board that hires management. Surplus is typically shared by their labour (hours worked or pay), because their use of the co-op is their work.",
+          answer: "The employees are the members: the people who do the work own the business and vote one worker, one vote, electing the board that hires management. Surplus is typically shared by their labor (hours worked or pay), because their use of the co-op is their work.",
         },
         {
           prompt: "How is a consumer co-op the direct descendant of Rochdale, and how does surplus come back?",
@@ -859,7 +859,7 @@ Mondragon is not just "a big worker co-op." It built institutions to solve the p
 
 ## The debate, taught rather than hidden
 
-Mondragon is admired, and it is also seriously criticised, and you do not understand it if you only hear the praise. The genuine debates include (Whyte & Whyte, 1991):
+Mondragon is admired, and it is also seriously criticized, and you do not understand it if you only hear the praise. The genuine debates include (Whyte & Whyte, 1991):
 
 - **Non-member workers.** Mondragon's retail and international operations have employed many people who are **not worker-members**, which critics argue dilutes the very principle the group is famous for. How many workers are true members, versus employees of co-op-owned but non-cooperative subsidiaries, is a real and recurring criticism.
 - **Global subsidiaries.** As the group expanded abroad, it acquired conventional (non-cooperative) companies, raising the question of whether a co-op that owns ordinary firms abroad is still living its model.
@@ -917,7 +917,7 @@ The response was a cooperative one, enabled by New Deal policy. President Frankl
 
 ## What it accomplished
 
-The result was one of the fastest infrastructure transformations in American history. Rural electrification went from that small minority of farms in the 1930s to the great majority within about two decades, as cooperative lines reached places no company had wired (U.S. Department of Agriculture, n.d.; America's Electric Cooperatives, n.d.). **This course keeps the later percentages and the count of co-ops general rather than pinned to a memorised figure**, because the exact numbers vary by source and year, but the shape is not in doubt: **a form of business that a market rejected as unprofitable electrified a continent's countryside, because the members served it themselves.**
+The result was one of the fastest infrastructure transformations in American history. Rural electrification went from that small minority of farms in the 1930s to the great majority within about two decades, as cooperative lines reached places no company had wired (U.S. Department of Agriculture, n.d.; America's Electric Cooperatives, n.d.). **This course keeps the later percentages and the count of co-ops general rather than pinned to a memorized figure**, because the exact numbers vary by source and year, but the shape is not in doubt: **a form of business that a market rejected as unprofitable electrified a continent's countryside, because the members served it themselves.**
 
 ## Why this case matters to the whole path
 
@@ -967,7 +967,7 @@ Against the four decisions:
 
 The idea is older than the American version and was imported. **Credit cooperatives were pioneered in nineteenth-century Germany**, where Friedrich Wilhelm Raiffeisen built rural credit cooperatives (his Heddesdorf society dates to the 1860s) and Hermann Schulze-Delitzsch built urban ones (Moody & Fite, 1984). The model reached North America through **Alphonse Desjardins, a Quebec journalist who founded a caisse populaire in Levis, Quebec**, at the turn of the twentieth century. **Sources differ on the exact date, commonly given as 1900, with its first transactions in 1901**, and this course carries the disagreement rather than picking one silently (Moody & Fite, 1984).
 
-Desjardins then helped a group in the United States organise the first American credit union, **St. Mary's Bank in Manchester, New Hampshire, whose founding is commonly dated to 1908, though some sources give 1909** (Moody & Fite, 1984; NCUA, n.d.). The movement was championed in the United States by the Boston merchant **Edward Filene** and the organiser **Roy Bergengren**, whose work led to state credit union laws and then a federal one.
+Desjardins then helped a group in the United States organize the first American credit union, **St. Mary's Bank in Manchester, New Hampshire, whose founding is commonly dated to 1908, though some sources give 1909** (Moody & Fite, 1984; NCUA, n.d.). The movement was championed in the United States by the Boston merchant **Edward Filene** and the organiser **Roy Bergengren**, whose work led to state credit union laws and then a federal one.
 
 ## The Federal Credit Union Act of 1934
 
@@ -1312,11 +1312,11 @@ Co-ops have invented ways to attract capital without giving away control, and ea
       slug: "coop-demutualisation",
       title: "16 · Demutualisation: the entity choice reversed",
       section: "Section 4 · The money and governance question",
-      body: `The last teaching lesson closes a loop the financing course opened. **A cooperative is a choice, and a choice can be un-made.** The reversal has a name, demutualisation, and understanding it is the final test of whether you can read the co-op form, because it is the moment a co-op stops being one.
+      body: `The last teaching lesson closes a loop the financing course opened. **A cooperative is a choice, and a choice can be un-made.** The reversal has a name, demutualization, and understanding it is the final test of whether you can read the co-op form, because it is the moment a co-op stops being one.
 
-## What demutualisation is
+## What demutualization is
 
-**Demutualisation is the conversion of a member-owned cooperative or mutual into an investor-owned company.** The members who used to own the business one-member-one-vote are converted into ordinary shareholders (or bought out), and control passes from members-as-users to shareholders-as-investors. **In the language of the four decisions, demutualisation rewrites decisions three and four**: ownership changes from a membership tied to use into tradeable stock, and governance changes from one member, one vote into one share, one vote. **The label "co-op" comes off, whatever the sign still says.**
+**Demutualisation is the conversion of a member-owned cooperative or mutual into an investor-owned company.** The members who used to own the business one-member-one-vote are converted into ordinary shareholders (or bought out), and control passes from members-as-users to shareholders-as-investors. **In the language of the four decisions, demutualization rewrites decisions three and four**: ownership changes from a membership tied to use into tradeable stock, and governance changes from one member, one vote into one share, one vote. **The label "co-op" comes off, whatever the sign still says.**
 
 Course 4 already showed you this happening. Its lesson on building societies taught that many British building societies and American savings and loans **demutualised**, converting from member-owned mutuals into shareholder-owned banks and distributing windfalls to members in the process (Mason, 2004). **This course is naming the general move that case was an instance of.**
 
@@ -1332,13 +1332,13 @@ Demutualisation is usually driven by the exact tension the last lesson described
 
 ## The reframing this completes
 
-Section 1 said the co-op form buys democratic control and pays for it in harder access to capital. Demutualisation is what happens when an organisation decides **it would rather have the capital.** And that is exactly the reframing course 1 made about the LLC and course 4 made about the mutual:
+Section 1 said the co-op form buys democratic control and pays for it in harder access to capital. Demutualisation is what happens when an organization decides **it would rather have the capital.** And that is exactly the reframing course 1 made about the LLC and course 4 made about the mutual:
 
 > **These structures are choices, not facts of nature, and a choice can be un-made.**
 
 The LLC was invented recently; limited liability was a policy decision; the mutual form was a response to exclusion; and the cooperative is a deliberate answer on ownership and governance that a co-op can, by a members' vote, decide to stop giving. **Nothing about a co-op is permanent.** It persists only as long as its members choose the co-op answer over the investor answer, which is why the seven principles include autonomy and independence, and why reading the four decisions on a self-described co-op is a live test and not a formality.
 
-## Reading for demutualisation risk
+## Reading for demutualization risk
 
 When you look at any large, old, capital-rich mutual or co-op, you can now ask the question that predicts its future:
 
@@ -1570,7 +1570,7 @@ When you look at any large, old, capital-rich mutual or co-op, you can now ask t
       title: "18 · Capstone: design a co-op and defend it against a corporation",
       section: "Section 5 · Design and defend a cooperative",
       lessonType: "assignment",
-      body: `You have the whole picture now: the co-op answers ownership and governance with one member, one vote; its surplus returns by patronage; its capital is patient and member-built; and its structure can be reversed by demutualisation. This capstone asks you to **use** all of it, not to give advice.
+      body: `You have the whole picture now: the co-op answers ownership and governance with one member, one vote; its surplus returns by patronage; its capital is patient and member-built; and its structure can be reversed by demutualization. This capstone asks you to **use** all of it, not to give advice.
 
 ## The assignment
 
@@ -1602,7 +1602,7 @@ Pick **one scenario** below (or write your own that is just as concrete). In **7
 
 **4. Answer the money question honestly.** Say where your co-op's capital comes from (membership shares, retained patronage, member loans, outside debt, a cooperative lender) and **admit the trade**: it cannot sell equity to outside investors without giving away the control that makes it a co-op, so it will grow more slowly than a venture-funded competitor. A piece that pretends the co-op has no cost has not understood the course.
 
-**5. Defend it against demutualisation.** In one short paragraph, say how your design guards against the day some future members are offered a windfall to convert the co-op into an investor-owned company and cash out the common capital. (Limited-equity rules, a strong autonomy clause, member education, an asset lock: name at least one and say what it does.)
+**5. Defend it against demutualization.** In one short paragraph, say how your design guards against the day some future members are offered a windfall to convert the co-op into an investor-owned company and cash out the common capital. (Limited-equity rules, a strong autonomy clause, member education, an asset lock: name at least one and say what it does.)
 
 **6. State the limit.** One clear sentence that your piece is an exercise in reasoning, not legal, tax or financial advice, and that a real decision belongs with licensed professionals.
 

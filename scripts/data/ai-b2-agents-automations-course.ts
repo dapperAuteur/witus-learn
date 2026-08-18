@@ -549,7 +549,7 @@ Shipping is the start of the loop, not the end of it: **measure → manage → i
           {
             prompt: "Why must you put a hard cap on an agent's loop iterations?",
             options: [
-              "To make the model's behaviour fully deterministic",
+              "To make the model's behavior fully deterministic",
               "Because an unbounded loop is OWASP LLM10, runaway cost",
               "Because caps make the agent considerably more accurate",
               "Because it removes the need for any tracing at all",

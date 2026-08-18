@@ -31,14 +31,14 @@ const NOT_LEGAL_ADVICE = `> **This is education about the law, not legal advice.
 export const CIVIC_DOCUMENTATION_COURSE: AuthoredCourse = {
   title: "Civic Documentation: Recording What Happened in Public",
   description:
-    "Public meetings decide budgets, contracts, zoning, policing and schools, and most of them happen in rooms with nobody watching. This course teaches the discipline of documenting them: what a public body actually is, how to read an agenda before you go, how to behave in the room, what open-meetings law protects and what it does not, note-taking to a standard a stranger can use, recording and photography with consent, interviewing after the gavel, and revising notes before memory fades. It covers where documentation ends and reporting begins, why that line protects you, and what defamation and the fair report privilege mean for someone publishing notes. Built on the Documenters Field Guide published by City Bureau, whose programme trains and pays people to do exactly this work, with Indianapolis and Mirror Indy as the worked local example. Not affiliated with City Bureau or any local Documenters programme. Education about the law, not legal advice.",
+    "Public meetings decide budgets, contracts, zoning, policing and schools, and most of them happen in rooms with nobody watching. This course teaches the discipline of documenting them: what a public body actually is, how to read an agenda before you go, how to behave in the room, what open-meetings law protects and what it does not, note-taking to a standard a stranger can use, recording and photography with consent, interviewing after the gavel, and revising notes before memory fades. It covers where documentation ends and reporting begins, why that line protects you, and what defamation and the fair report privilege mean for someone publishing notes. Built on the Documenters Field Guide published by City Bureau, whose program trains and pays people to do exactly this work, with Indianapolis and Mirror Indy as the worked local example. Not affiliated with City Bureau or any local Documenters program. Education about the law, not legal advice.",
   lessons: [
     // ══════════════ MODULE 1 · WHY PUBLIC MEETINGS ══════════════
     {
       slug: "civdoc-the-gap",
       title: "1 · The room nobody is in",
       section: "Module 1 · Why public meetings",
-      body: `A zoning board meets on a Tuesday afternoon and approves something that changes a neighbourhood for thirty years. A school board votes on a closure. A police oversight body hears a complaint. Each of these is open to the public by law, announced in advance by law, and minuted by law.
+      body: `A zoning board meets on a Tuesday afternoon and approves something that changes a neighborhood for thirty years. A school board votes on a closure. A police oversight body hears a complaint. Each of these is open to the public by law, announced in advance by law, and minuted by law.
 
 **And frequently nobody is there.** Not the public, and increasingly not a reporter either, because covering a three-hour meeting where nothing may happen is expensive and local newsrooms have shrunk.
 
@@ -48,11 +48,11 @@ That gap is what this course is about.
 
 **Why that restraint is the skill.** This is course four in a storytelling series, and the previous three taught you to find the change, shape material, and build to a turn. **This course teaches the opposite discipline, and teaches it deliberately:** record what happened. Do not find the arc. Do not decide what it means.
 
-Both instincts are worth having, and a writer who has felt both pulls is better at each. **Knowing when NOT to make a story out of something is a craft skill**, not a moral decoration, and this is the course where you practise it.
+Both instincts are worth having, and a writer who has felt both pulls is better at each. **Knowing when NOT to make a story out of something is a craft skill**, not a moral decoration, and this is the course where you practice it.
 
-**Where this comes from.** The method taught here is the one used by **Documenters**, a programme launched by **City Bureau** in Chicago in **2018** to, in its own words, "train and pay people to monitor local government, contribute to the public record, and hold power to account." The Documenters Network now spans more than twenty local news and community organisations and has trained more than three thousand people (City Bureau, n.d.).
+**Where this comes from.** The method taught here is the one used by **Documenters**, a program launched by **City Bureau** in Chicago in **2018** to, in its own words, "train and pay people to monitor local government, contribute to the public record, and hold power to account." The Documenters Network now spans more than twenty local news and community organizations and has trained more than three thousand people (City Bureau, n.d.).
 
-**This course is not affiliated with City Bureau or with any local Documenters programme.** It teaches the practice from their published Field Guide, cites it throughout, and points you at the real programme, which pays people to do this.
+**This course is not affiliated with City Bureau or with any local Documenters program.** It teaches the practice from their published Field Guide, cites it throughout, and points you at the real program, which pays people to do this.
 
 **Go and look at their work, not just at this course.** The method here belongs to them, and they are better placed to teach you the parts that change:
 
@@ -63,7 +63,7 @@ Both instincts are worth having, and a writer who has felt both pulls is better 
 
 **If you finish this course, the useful next step is to apply to them**, not to read another course. They train you further, they pay you, and your notes enter a public record that people actually use.
 
-**The local example throughout is Indianapolis**, where the programme is run by **Mirror Indy**. Every Indianapolis specific is paired with how to find the equivalent where you live, because the method is the transferable part.
+**The local example throughout is Indianapolis**, where the program is run by **Mirror Indy**. Every Indianapolis specific is paired with how to find the equivalent where you live, because the method is the transferable part.
 
 ${NOT_LEGAL_ADVICE}
 
@@ -117,21 +117,21 @@ ${NOT_LEGAL_ADVICE}
       section: "Module 1 · Why public meetings",
       body: `One detail of the Documenters model is worth a lesson of its own, because it is the part most often skipped when people describe civic journalism: **documenters are paid.**
 
-The Field Guide states the programme's purpose as training and paying people to monitor local government. Pay is a set rate based on the length of the meeting, **plus additional time for pre-research and editing** (City Bureau, n.d.).
+The Field Guide states the program's purpose as training and paying people to monitor local government. Pay is a set rate based on the length of the meeting, **plus additional time for pre-research and editing** (City Bureau, n.d.).
 
 **Why that matters more than it sounds**
 
-**1. It sets the standard of the work.** The note-taking guidance says the programme expects "reasonably concise and thorough notes in line with that time allotment." You are not asked for a transcript or an investigation. You are asked for a professional job of a defined size, and knowing the size is what lets you do it well.
+**1. It sets the standard of the work.** The note-taking guidance says the program expects "reasonably concise and thorough notes in line with that time allotment." You are not asked for a transcript or an investigation. You are asked for a professional job of a defined size, and knowing the size is what lets you do it well.
 
 **2. It changes who can do it.** Unpaid civic work selects for people with spare afternoons, which is a narrow and unrepresentative group. Paying for it opens the work to people who could not otherwise attend a Tuesday afternoon meeting, and those are frequently the people most affected by what the meeting decides.
 
-**3. It creates an obligation.** You are being compensated for a specific thing, which the AI guidance in Lesson 18 names precisely: **your perspective and synthesis as a witness and community member.** That is what the money is for, and it is why the programme is strict about not outsourcing it.
+**3. It creates an obligation.** You are being compensated for a specific thing, which the AI guidance in Lesson 18 names precisely: **your perspective and synthesis as a witness and community member.** That is what the money is for, and it is why the program is strict about not outsourcing it.
 
 **What the pay does not do** is make you press. A documenter attends as a member of the public, with the public's rights, which Lesson 8 covers. The pay is not a credential and does not grant access.
 
-**How to actually join**, which the Field Guide covers in its "Using Documenters.org" section: sign up on documenters.org, attend an orientation or workshop, then apply for assignments through the platform and submit your work there. Whether a programme exists near you depends on the city, and there are roughly thirty at present, including Indianapolis.
+**How to actually join**, which the Field Guide covers in its "Using Documenters.org" section: sign up on documenters.org, attend an orientation or workshop, then apply for assignments through the platform and submit your work there. Whether a program exists near you depends on the city, and there are roughly thirty at present, including Indianapolis.
 
-**And if there is no programme near you**, the work is still available. Public meetings are public whether or not anyone is paying you to attend, and the rest of this course teaches the practice rather than the platform.
+**And if there is no program near you**, the work is still available. Public meetings are public whether or not anyone is paying you to attend, and the rest of this course teaches the practice rather than the platform.
 
 **Do this now rather than at the end.** Open [documenters.org](https://documenters.org) and find out whether your city has a programme. It takes two minutes, and it changes how you read the rest of this course: if there is one, everything here is preparation for work you can actually be paid for, and you will want to check their local guide alongside these lessons. If there is not, you are learning a practice you can still use, and you will be reading for transferable method rather than for a specific programme's standards.
 
@@ -206,7 +206,7 @@ The Field Guide states the programme's purpose as training and paying people to 
             options: [
               "Paid work attracts applicants with formal journalism training",
               "Unpaid work selects for people with free weekday afternoons",
-              "Payment allows programmes to require longer, more detailed notes",
+              "Payment allows programs to require longer, more detailed notes",
               "Paid documenters are granted access that the public does not have",
             ],
             correctIndex: 1,
@@ -219,12 +219,12 @@ The Field Guide states the programme's purpose as training and paying people to 
             options: [
               "No, you attend as a member of the public with the public's rights",
               "Yes, paid documenters hold press credentials for that body",
-              "Yes, but only for meetings the programme has registered in advance",
+              "Yes, but only for meetings the program has registered in advance",
               "It depends on whether the body has adopted a media policy",
             ],
             correctIndex: 0,
             explanation:
-              "The pay is not a credential. Your rights in the room are the rights any resident has, which is the subject of the behaviour and open-meetings lessons.",
+              "The pay is not a credential. Your rights in the room are the rights any resident has, which is the subject of the behavior and open-meetings lessons.",
             sourceLessonSlug: "civdoc-trained-and-paid",
           },
           {
@@ -250,7 +250,7 @@ The Field Guide states the programme's purpose as training and paying people to 
             ],
             correctIndex: 3,
             explanation:
-              "That framing is why the programme is strict about not outsourcing the takeaways, and it is the reasoning behind its AI guidelines.",
+              "That framing is why the program is strict about not outsourcing the takeaways, and it is the reasoning behind its AI guidelines.",
             sourceLessonSlug: "civdoc-trained-and-paid",
           },
           {
@@ -263,20 +263,20 @@ The Field Guide states the programme's purpose as training and paying people to 
             ],
             correctIndex: 0,
             explanation:
-              "It teaches the practice from the published Field Guide, cites it, and points learners at the real programme, which pays people to do this work.",
+              "It teaches the practice from the published Field Guide, cites it, and points learners at the real program, which pays people to do this work.",
             sourceLessonSlug: "civdoc-the-gap",
           },
           {
             prompt: "What should a learner do if there is no Documenters programme in their city?",
             options: [
-              "Wait until a programme launches locally before attending meetings",
+              "Wait until a program launches locally before attending meetings",
               "Attend anyway, since public meetings are public regardless",
-              "Apply to a programme in another city and cover meetings remotely",
-              "Request that their city council establish a programme first",
+              "Apply to a program in another city and cover meetings remotely",
+              "Request that their city council establish a program first",
             ],
             correctIndex: 1,
             explanation:
-              "The course teaches the practice rather than the platform. Roughly thirty programmes exist, including Indianapolis, and the work is available with or without one.",
+              "The course teaches the practice rather than the platform. Roughly thirty programs exist, including Indianapolis, and the work is available with or without one.",
             sourceLessonSlug: "civdoc-trained-and-paid",
           },
         ],
@@ -317,7 +317,7 @@ The Field Guide states the programme's purpose as training and paying people to 
 
 **One warning.** Pre-research tells you what to expect, and meetings routinely depart from expectation: an item is pulled, a public comment period turns into the story, someone resigns. **Do not let the pre-brief become a plan you follow past the evidence.** It is a way of arriving informed, not a script.
 
-:::reveal Pre-research told you items 4 and 7 would matter, and the meeting is dominated by an unexpected forty minutes of public comment on something else. What do you do? ||| Follow the meeting. The pre-brief is a way of arriving informed, not a script to execute, and forty minutes of public comment IS what happened at that meeting whether or not you predicted it. Note the substance of the comment, who spoke and why they were concerned, and still capture the outcomes of items 4 and 7 since those were the formal business. The pre-research has not been wasted: it is what let you recognise that the comment period was a departure worth recording.
+:::reveal Pre-research told you items 4 and 7 would matter, and the meeting is dominated by an unexpected forty minutes of public comment on something else. What do you do? ||| Follow the meeting. The pre-brief is a way of arriving informed, not a script to execute, and forty minutes of public comment IS what happened at that meeting whether or not you predicted it. Note the substance of the comment, who spoke and why they were concerned, and still capture the outcomes of items 4 and 7 since those were the formal business. The pre-research has not been wasted: it is what let you recognize that the comment period was a departure worth recording.
 
 ## Sources
 - City Bureau. (2024, October 11). *Note-taking assignment tips*. Documenters Field Guide. https://fieldguide.documenters.org/
@@ -335,9 +335,9 @@ The Field Guide states the programme's purpose as training and paying people to 
 2. **A central municipal calendar.** Many cities aggregate all boards and commissions in one place.
 3. **A legislative-information portal.** Larger cities use systems that hold agendas, packets and votes together, which are the best source when they exist.
 4. **The clerk.** If nothing is published usefully, the clerk's office knows the schedule and is generally helpful. Asking is normal.
-5. **Documenters.org**, if a programme covers your city, which also shows which meetings are already assigned.
+5. **Documenters.org**, if a program covers your city, which also shows which meetings are already assigned.
 
-**The bodies worth knowing**, beyond city council: school board, zoning and planning, police oversight or accountability, transit, library, parks, health, housing authority, and the budget or finance committee. **The smaller ones are frequently the least covered and the most consequential**, since a planning commission decides more about a neighbourhood's next decade than most council votes.
+**The bodies worth knowing**, beyond city council: school board, zoning and planning, police oversight or accountability, transit, library, parks, health, housing authority, and the budget or finance committee. **The smaller ones are frequently the least covered and the most consequential**, since a planning commission decides more about a neighborhood's next decade than most council votes.
 
 **Finding your state's open meetings act**, which is the more valuable of the two skills:
 
@@ -349,7 +349,7 @@ The Field Guide states the programme's purpose as training and paying people to 
 
 **Two national resources the Field Guide itself points to**, both from the Reporters Committee for Freedom of the Press: a first amendment handbook including a summary of libel law, and a guide to open government laws across states (City Bureau, n.d.).
 
-**For Indianapolis specifically**, the relevant law is Indiana's open door statute, and the local Documenters programme is run by Mirror Indy. Marion County bodies worth knowing include the City-County Council and its committees, the school boards of the townships and IPS, the Metropolitan Development Commission for zoning, and the transit and library boards. **Apply the same five steps above to your own county if you are elsewhere**, which is the transferable part.
+**For Indianapolis specifically**, the relevant law is Indiana's open door statute, and the local Documenters program is run by Mirror Indy. Marion County bodies worth knowing include the City-County Council and its committees, the school boards of the townships and IPS, the Metropolitan Development Commission for zoning, and the transit and library boards. **Apply the same five steps above to your own county if you are elsewhere**, which is the transferable part.
 
 :::reveal Why does the course tell you to find the EXCEPTIONS in your state's act, not just the rules? ||| Because bodies may legitimately close part of a meeting, usually in what is called executive or closed session, and knowing when that is lawful stops you from recording an accusation you cannot support. If you are asked to leave, the Field Guide's guidance is to comply, ask for an explanation and record it in your notes, and you can only assess that explanation if you know what the act actually permits. Not knowing the exceptions makes you either credulous or wrongly suspicious, and both damage the record.
 
@@ -449,7 +449,7 @@ This drill produces something you will actually use: the beginning of a jurisdic
               "health board",
             ],
             explanation:
-              "The smaller bodies are frequently least covered and most consequential; a planning commission shapes a neighbourhood's next decade.",
+              "The smaller bodies are frequently least covered and most consequential; a planning commission shapes a neighborhood's next decade.",
           },
           {
             prompt: "Who do you contact when nothing useful is published online?",
@@ -482,7 +482,7 @@ This drill produces something you will actually use: the beginning of a jurisdic
         {
           prompt: "Name three of the five ways to find when a public body is meeting.",
           answer:
-            "Any three of: the body's own page with its calendar and agendas, a central municipal calendar aggregating all boards, a legislative-information portal, asking the clerk's office directly, and documenters.org where a programme covers the city.",
+            "Any three of: the body's own page with its calendar and agendas, a central municipal calendar aggregating all boards, a legislative-information portal, asking the clerk's office directly, and documenters.org where a program covers the city.",
         },
       ],
       body: `You are attending as **a member of the public**, with a member of the public's rights. Not press, not an official, and not an inspector. Almost everything about conduct follows from that.
@@ -492,7 +492,7 @@ This drill produces something you will actually use: the beginning of a jurisdic
 - **You may attend**, because the meeting is open by law.
 - **You may take notes.** Nobody's permission is required.
 - **You may usually record**, subject to the body's reasonable rules, which Lesson 9 covers.
-- **You may not disrupt.** A body may set reasonable rules to minimise disruption and those apply to you.
+- **You may not disrupt.** A body may set reasonable rules to minimize disruption and those apply to you.
 - **You have no special right of access** to anything the public does not have: no closed sessions, no documents that are not public.
 
 **Arrive early.** You want the agenda in hand if paper copies are out, a seat where you can hear and see, an idea of where officials sit and who is who, and the chance to ask a staff member how public comment works at this body, which varies enormously.
@@ -501,7 +501,7 @@ This drill produces something you will actually use: the beginning of a jurisdic
 
 **Moving around.** The Field Guide's photography guidance explicitly says you may move about the room to capture the best images. Do it between items rather than mid-vote, and do not stand where you block anyone's view of the proceedings.
 
-**If someone asks who you are.** Say so plainly: you are documenting the meeting for the public record, and if you are on assignment for a programme, name it. **There is nothing to be evasive about**, and evasiveness creates suspicion that accuracy does not deserve.
+**If someone asks who you are.** Say so plainly: you are documenting the meeting for the public record, and if you are on assignment for a program, name it. **There is nothing to be evasive about**, and evasiveness creates suspicion that accuracy does not deserve.
 
 **If you are asked to leave.** The Field Guide is specific and its advice is good: **comply, but ask for an explanation and record it in your notes** (City Bureau, n.d.). Arguing with a chair achieves nothing, cannot be won in the room, and turns you into the story. The explanation, written down, is what allows anyone to assess afterwards whether the closure was lawful. **That note is more valuable than the part of the meeting you missed.**
 
@@ -524,7 +524,7 @@ ${NOT_LEGAL_ADVICE}
 **Your right to record is usually protected by your state's open meetings act**, and it is usually qualified. The Field Guide's summary, using its two worked states:
 
 - **Illinois.** The Code of Civil Procedure provides that any person may record the proceedings at meetings required to be open, by tape, film or other means. **But** the authority holding the meeting shall prescribe reasonable rules governing that right.
-- **Michigan.** The Open Meetings Act likewise protects recording by audio or video including live broadcast, and a public body may establish reasonable rules to minimise disruption (City Bureau, n.d.).
+- **Michigan.** The Open Meetings Act likewise protects recording by audio or video including live broadcast, and a public body may establish reasonable rules to minimize disruption (City Bureau, n.d.).
 
 **So the pattern to expect anywhere:** a protected right, plus the body's power to set reasonable rules about how you exercise it. **Find the body's media policy before you go**, because "reasonable rules" is where the practical constraints live: where cameras may stand, whether tripods are allowed, whether you must sit in a particular area.
 
@@ -565,7 +565,7 @@ Recording the meeting is one thing. Recording two officials talking in the corri
 
 **1. Do your pre-research.** Covered in Lesson 5. Read the agenda and any documentation before you go.
 
-**2. Create a system.** Keywords, phrases and short sentences are fine, and the Guide says so explicitly: stick to them to maximise how much you record. Raw notes become a fuller submission later. **Record audio and jot timestamps for anything you want to double-check**, which is the single most useful habit in the list.
+**2. Create a system.** Keywords, phrases and short sentences are fine, and the Guide says so explicitly: stick to them to maximize how much you record. Raw notes become a fuller submission later. **Record audio and jot timestamps for anything you want to double-check**, which is the single most useful habit in the list.
 
 **3. Listen and learn.** Concentrate on accuracy and on hearing different perspectives. Not just the officials: the room.
 
@@ -575,7 +575,7 @@ Recording the meeting is one thing. Recording two officials talking in the corri
 
 **6. Review and edit.** Make it legible, clarify anything ambiguous, and **do not wait**. The Guide's reasoning: useful details fade from memory. Lesson 16 is entirely about this step.
 
-**The freedom the Guide grants**, which surprises people: note however works for you. Abbreviate, use shorthand, draw. **The constraint is not the method, it is the output**, which must be organised and revised for readers afterwards.
+**The freedom the Guide grants**, which surprises people: note however works for you. Abbreviate, use shorthand, draw. **The constraint is not the method, it is the output**, which must be organized and revised for readers afterwards.
 
 **Two habits worth adding, both cheap**
 
@@ -671,7 +671,7 @@ Recording the meeting is one thing. Recording two officials talking in the corri
             ],
             correctIndex: 2,
             explanation:
-              "Both worked states protect recording and allow the body reasonable rules to minimise disruption. Those rules are where practical constraints live, so find the media policy before you go.",
+              "Both worked states protect recording and allow the body reasonable rules to minimize disruption. Those rules are where practical constraints live, so find the media policy before you go.",
             sourceLessonSlug: "civdoc-know-your-rights",
           },
           {
@@ -736,7 +736,7 @@ Recording the meeting is one thing. Recording two officials talking in the corri
             ],
             correctIndex: 1,
             explanation:
-              "The constraint is the output rather than the method: notes must be organised and revised for readers afterwards, but how you capture them in the room is yours.",
+              "The constraint is the output rather than the method: notes must be organized and revised for readers afterwards, but how you capture them in the room is yours.",
             sourceLessonSlug: "civdoc-notetaking-one",
           },
           {
@@ -788,7 +788,7 @@ Recording the meeting is one thing. Recording two officials talking in the corri
             ],
             correctIndex: 0,
             explanation:
-              "Name the programme too if you are on assignment. There is nothing to be evasive about, and evasiveness creates suspicion that accuracy does not deserve.",
+              "Name the program too if you are on assignment. There is nothing to be evasive about, and evasiveness creates suspicion that accuracy does not deserve.",
             sourceLessonSlug: "civdoc-behaviour",
           },
         ],
@@ -807,7 +807,7 @@ Recording the meeting is one thing. Recording two officials talking in the corri
             "Someone who did not attend the meeting should be able to understand what happened from your notes. It is the test for whether a note is finished, whether a detail belongs, and whether an abbreviation is acceptable.",
         },
       ],
-      body: `Three capture skills, each with its own purpose and its own restraint. The Field Guide notes that not every local programme offers every assignment type, so check yours.
+      body: `Three capture skills, each with its own purpose and its own restraint. The Field Guide notes that not every local program offers every assignment type, so check yours.
 
 **Audio.** Its purpose is **verification, not transcription.** You record so you can check a figure, confirm a quotation, and settle what was actually said. That is why the timestamp habit from Lesson 10 matters: a three-hour recording you have to scrub through is much less useful than four noted timestamps.
 
@@ -819,7 +819,7 @@ The Field Guide recommends taking photos and says you may move about the room to
 
 A useful and underused shot: **the agenda, the room, and any projected slide carrying figures.** Those three make your notes verifiable later.
 
-**Live reporting**, where a programme runs it, means publishing as the meeting happens, usually as short posts. It is a different discipline from note-taking and it has one hard rule: **you cannot revise what you have already published**, at least not invisibly.
+**Live reporting**, where a program runs it, means publishing as the meeting happens, usually as short posts. It is a different discipline from note-taking and it has one hard rule: **you cannot revise what you have already published**, at least not invisibly.
 
 So live reporting demands more caution, not less:
 - **Post outcomes, not predictions.** "The board voted 5-2 to approve" is safe. "It looks like this will pass" is not.
@@ -840,7 +840,7 @@ So live reporting demands more caution, not less:
       slug: "civdoc-interviewing",
       title: "14 · Talking to people after the gavel",
       section: "Module 4 · Capture and after",
-      body: `Interviewing is a separate assignment type in some programmes and a small necessary skill in all of them, because the commonest reason to approach anyone is the one the Field Guide names: **to check the spelling of a name.**
+      body: `Interviewing is a separate assignment type in some programs and a small necessary skill in all of them, because the commonest reason to approach anyone is the one the Field Guide names: **to check the spelling of a name.**
 
 **The minimum interaction, and it is most of what you will do.** Approach after the meeting, say who you are and what you are doing, and ask them to spell their name. That is it. It takes twenty seconds and it prevents the single most common error in published notes.
 
@@ -854,7 +854,7 @@ So live reporting demands more caution, not less:
 **What not to do**
 
 - **Do not press someone who declines.** They owe you nothing. A resident at a public meeting is not a public figure, and the fact that they spoke on the record does not oblige them to speak to you.
-- **Do not offer to keep something off the record** unless you are certain what that means in your programme and will honour it exactly.
+- **Do not offer to keep something off the record** unless you are certain what that means in your program and will honor it exactly.
 - **Do not argue**, even when you know something they have said is factually wrong. You are recording what they said, not adjudicating it.
 
 **Officials are a different case.** They are doing public business and may be asked to account for it. Even so, a documenter asking an official a question is close to the boundary of the role: **you are recording the meeting rather than conducting an investigation.** Asking a chair to clarify what a motion did is squarely inside the job. Asking them to defend a decision is reporting, which Lesson 17 addresses.
@@ -891,7 +891,7 @@ So live reporting demands more caution, not less:
 
 **What good notes look like when finished:** agenda order, outcomes findable, names spelled right, numbers checked, acronyms expanded, uncertainty flagged rather than hidden, links out, and nothing asserted that did not happen.
 
-**On editing by others.** In the Documenters programme, notes are reviewed and edited by staff before publication (City Bureau, n.d.). That is a real safety net and it is not a reason to submit less carefully: an editor who has to reconstruct your meaning is an editor who may reconstruct it wrongly, and they were not in the room.
+**On editing by others.** In the Documenters program, notes are reviewed and edited by staff before publication (City Bureau, n.d.). That is a real safety net and it is not a reason to submit less carefully: an editor who has to reconstruct your meaning is an editor who may reconstruct it wrongly, and they were not in the room.
 
 :::reveal Why is the revision pass done the same day rather than when you have time later in the week? ||| Because what fades first is precisely what makes notes usable: which of two speakers said something, whether a figure was thousands or millions, which item an argument actually attached to, and what your own shorthand meant. Those are unrecoverable later even with a recording, since the recording will not tell you what an abbreviation you invented in the room was for. The Field Guide's own reasoning is that useful details fade, and delay converts a fast tidy-up into a reconstruction.
 
@@ -944,12 +944,12 @@ The Guide adds the point that makes this practical rather than abstract: **if yo
       slug: "civdoc-ai-usage",
       title: "17 · AI, and what you are actually being paid for",
       section: "Module 4 · Capture and after",
-      body: `The Documenters AI Usage Guidelines were last updated **April 2026**, which makes them among the more current pieces of thinking on this in civic journalism. They are worth studying as reasoning rather than memorising as rules (City Bureau, 2026).
+      body: `The Documenters AI Usage Guidelines were last updated **April 2026**, which makes them among the more current pieces of thinking on this in civic journalism. They are worth studying as reasoning rather than memorizing as rules (City Bureau, 2026).
 
 **The three rules, in brief**
 
 1. **Generative AI may not take the place of your presence or perspective.** You must witness every meeting you are assigned, in person or remotely. Submitting an AI-generated transcription or summary as your assignment is not acceptable, and citing an AI summary as your source is not acceptable.
-2. **Permitted uses are set out in their FAQs**, and if a specific case is unclear, ask programme staff.
+2. **Permitted uses are set out in their FAQs**, and if a specific case is unclear, ask program staff.
 3. **Any AI usage must be disclosed on submission.** Their example wording: "AI was used in this assignment to..."
 
 **Where the line falls, from their own FAQs**
@@ -957,7 +957,7 @@ The Guide adds the point that makes this practical rather than abstract: **if yo
 | Use | Their answer |
 | --- | --- |
 | Transcription tools to refresh memory, clarify what you missed, or check accuracy | **Yes**, and they encourage it, with cross-checking against other reliable sources. They recommend submitting the transcription for transparency |
-| Completing an assignment only from a transcript, without attending | **No.** Transcripts contain mistakes, and your witnessing of conversation, behaviour and tone is an essential input |
+| Completing an assignment only from a transcript, without attending | **No.** Transcripts contain mistakes, and your witnessing of conversation, behavior and tone is an essential input |
 | Submitting an AI summary as your notes | **No** |
 | Submitting AI-identified themes in place of your takeaways | **No** |
 | Grammar checkers that flag errors and suggest fixes | **Fine** |
@@ -971,7 +971,7 @@ The Guide adds the point that makes this practical rather than abstract: **if yo
 
 **The practical disclosure habit.** If you use a transcription tool, say so and attach the transcript. One line, at submission, naming what you used and for what. It costs nothing and it is the difference between a tool and a secret.
 
-:::reveal The AI guidance permits transcription tools but forbids working only from a transcript. Reconcile those, using their reasoning. ||| A transcript is a record of words, and it is a useful check against your own notes, which is why it is encouraged and why they suggest submitting it. What it cannot record is the witnessing: the tone, the behaviour, what the room did, what was conspicuously avoided, which of several items the people present actually cared about. Their reasoning is that your perspective and synthesis as a witness and community member is what you are engaged and compensated for, so a transcript can verify your account but can never substitute for having been there.
+:::reveal The AI guidance permits transcription tools but forbids working only from a transcript. Reconcile those, using their reasoning. ||| A transcript is a record of words, and it is a useful check against your own notes, which is why it is encouraged and why they suggest submitting it. What it cannot record is the witnessing: the tone, the behavior, what the room did, what was conspicuously avoided, which of several items the people present actually cared about. Their reasoning is that your perspective and synthesis as a witness and community member is what you are engaged and compensated for, so a transcript can verify your account but can never substitute for having been there.
 
 ## Sources
 - City Bureau. (2026, April 1). *AI usage guidelines*. Documenters Field Guide. https://fieldguide.documenters.org/`,
@@ -1016,7 +1016,7 @@ The Guide adds the point that makes this practical rather than abstract: **if yo
               "A substantially accurate report of an official proceeding",
               "Any statement made by an elected official at a public meeting",
               "Notes published by a credentialed member of the press only",
-              "Opinions clearly labelled as the writer's own conclusions",
+              "Opinions clearly labeled as the writer's own conclusions",
             ],
             correctIndex: 0,
             explanation:
@@ -1029,7 +1029,7 @@ The Guide adds the point that makes this practical rather than abstract: **if yo
               "Because the accused official can demand a correction otherwise",
               "Because omitting the response may put you outside the fair report privilege",
               "Because public comment must always be balanced with official response",
-              "Because programme staff will reject notes containing accusations",
+              "Because program staff will reject notes containing accusations",
             ],
             correctIndex: 1,
             explanation:
@@ -1040,7 +1040,7 @@ The Guide adds the point that makes this practical rather than abstract: **if yo
             prompt: "Who can be exposed if defamatory material appears in your notes?",
             options: [
               "Only the person who originally made the statement at the meeting",
-              "Only the publishing organisation, which holds editorial responsibility",
+              "Only the publishing organization, which holds editorial responsibility",
               "Nobody, since notes of a public meeting are automatically privileged",
               "Both you and your local Documenters site",
             ],
@@ -1059,7 +1059,7 @@ The Guide adds the point that makes this practical rather than abstract: **if yo
             ],
             correctIndex: 0,
             explanation:
-              "Transcripts contain mistakes, and your witnessing of conversation, behaviour and tone is an essential input. Transcription tools are encouraged as a check on your notes, not a substitute for attending.",
+              "Transcripts contain mistakes, and your witnessing of conversation, behavior and tone is an essential input. Transcription tools are encouraged as a check on your notes, not a substitute for attending.",
             sourceLessonSlug: "civdoc-ai-usage",
           },
           {
@@ -1068,7 +1068,7 @@ The Guide adds the point that makes this practical rather than abstract: **if yo
               "AI summaries are frequently inaccurate about numbers and votes",
               "Programme staff cannot verify AI-generated content before publication",
               "Your perspective and synthesis is what you are engaged and compensated for",
-              "Publishing AI content would breach the programme's funding conditions",
+              "Publishing AI content would breach the program's funding conditions",
             ],
             correctIndex: 2,
             explanation:
@@ -1146,7 +1146,7 @@ The Guide adds the point that makes this practical rather than abstract: **if yo
 
 **What a strong submission looks like.** Outcomes unmistakable, one honest fact-versus-inference correction, uncertainty flagged rather than hidden, and a reader who could answer the question. **Notes that admit "the figure was not clearly audible" score higher than notes that quietly guess**, because the first is usable and the second is a trap for whoever cites it later.
 
-**If you want to do this for money**, and there is a programme in your city, apply at documenters.org. In Indianapolis that is Mirror Indy. This course is not affiliated with them and cannot put you forward; what it can do is make sure you arrive knowing the work.
+**If you want to do this for money**, and there is a program in your city, apply at documenters.org. In Indianapolis that is Mirror Indy. This course is not affiliated with them and cannot put you forward; what it can do is make sure you arrive knowing the work.
 
 ${NOT_LEGAL_ADVICE}`,
     },

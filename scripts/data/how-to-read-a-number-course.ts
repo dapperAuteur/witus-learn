@@ -197,7 +197,7 @@ Notice that the denominator is where the disenfranchised go. Whether someone bar
 
 Once you see it, it is everywhere.
 
-**Unemployment.** The headline rate (which the Bureau of Labor Statistics labels U-3) counts people without work who are actively looking. It excludes people who gave up looking, and it counts someone working part-time who wants full-time work as employed. BLS also publishes a broader measure, U-6, which includes those groups. Both are real, both are published monthly by the same agency, and they tell different stories about the same labour market.
+**Unemployment.** The headline rate (which the Bureau of Labor Statistics labels U-3) counts people without work who are actively looking. It excludes people who gave up looking, and it counts someone working part-time who wants full-time work as employed. BLS also publishes a broader measure, U-6, which includes those groups. Both are real, both are published monthly by the same agency, and they tell different stories about the same labor market.
 
 **Graduation rates.** Out of students who started, or students who were still enrolled at the end? A school that loses students improves on the second measure by losing them.
 
@@ -271,7 +271,7 @@ McDonald, M. P. (n.d.). *United States Elections Project: Voter turnout methodol
             ],
             correctIndex: 0,
             explanation:
-              "Small bases bounce. When a per-capita ranking is topped by places you have never heard of, suspect the size of the denominator before you suspect the finding. The other options are real reporting artefacts, but none of them explains a swing from first to last in a single year.",
+              "Small bases bounce. When a per-capita ranking is topped by places you have never heard of, suspect the size of the denominator before you suspect the finding. The other options are real reporting artifacts, but none of them explains a swing from first to last in a single year.",
             sourceLessonSlug: "counts-rates-per-capita",
           },
           {
@@ -437,7 +437,7 @@ It does not cover:
 - **A badly worded question.** Wording moves answers, sometimes by a lot.
 - **Who could be reached.** If a whole group is hard to contact, no sample size fixes it.
 - **Who chose to answer.** People who agree to a survey differ from people who decline, and the difference is not random.
-- **Who is modelled as likely to vote.** In election polling this is a judgment call by the pollster, and reasonable pollsters make it differently.
+- **Who is modeled as likely to vote.** In election polling this is a judgment call by the pollster, and reasonable pollsters make it differently.
 - **Anything that went wrong in processing.**
 
 So the margin of error is a **lower bound on uncertainty**, computed under an assumption of pure random sampling that no real survey achieves. A poll with a margin of plus or minus three points is uncertain by at least three points, and probably more.
@@ -471,7 +471,7 @@ Pew Research Center. (n.d.). *U.S. survey methodology*. https://www.pewresearch.
       recallContent: [
         {
           prompt: "A margin of error covers one source of uncertainty. Which one, and name two it does not cover.",
-          answer: "It covers random sampling error only. It does not cover question wording, who could be reached, who chose to answer, or likely-voter modelling.",
+          answer: "It covers random sampling error only. It does not cover question wording, who could be reached, who chose to answer, or likely-voter modeling.",
         },
       ],
       body: `This catalog asks one question of every archive it touches: *whose voice is missing from this record, and why?* A survey is an archive built on purpose, and the question works identically.
@@ -528,9 +528,9 @@ Pew Research Center. (n.d.). *Why survey response rates matter*. https://www.pew
 
 ## The civic version
 
-Suppose districts with more of some public programme show better outcomes on some measure. Before concluding the programme works, ask:
+Suppose districts with more of some public program show better outcomes on some measure. Before concluding the program works, ask:
 
-- Did the programme go to places that were **already** doing better, or already doing worse? Programmes are rarely assigned at random, and how they were assigned usually explains a lot.
+- Did the program go to places that were **already** doing better, or already doing worse? Programmes are rarely assigned at random, and how they were assigned usually explains a lot.
 - Did the same places also change something else at the same time?
 - Is the measured outcome the thing you care about, or a proxy that could move independently of it?
 
@@ -589,10 +589,10 @@ National Institutes of Health. (n.d.). *Understanding clinical studies*. https:/
           {
             prompt: "Neighbourhoods that received a new city programme show better outcomes than those that did not. Before crediting the programme, what is the first thing to establish?",
             options: [
-              "How neighbourhoods were selected for the programme, since selection rarely happens at random",
+              "How neighborhoods were selected for the program, since selection rarely happens at random",
               "Whether the outcome difference is large enough to be visible on a chart of both groups",
-              "Whether the programme was funded from local or federal sources during the study period",
-              "Whether residents in both groups were aware that the programme was being evaluated",
+              "Whether the program was funded from local or federal sources during the study period",
+              "Whether residents in both groups were aware that the program was being evaluated",
             ],
             correctIndex: 0,
             explanation:
@@ -734,7 +734,7 @@ Several numbers try to capture how skewed a map is.
 
 **The efficiency gap**, proposed by Stephanopoulos and McGhee, compares wasted votes between parties and expresses the difference as a share of total votes. It is a genuine attempt to put a number on partisan skew.
 
-Be careful how you hold this one. **The efficiency gap is a proposed academic measure, not an adopted legal standard.** It has been criticised on technical grounds, and courts have not made it a test.
+Be careful how you hold this one. **The efficiency gap is a proposed academic measure, not an adopted legal standard.** It has been criticized on technical grounds, and courts have not made it a test.
 
 ## What the Supreme Court actually held
 

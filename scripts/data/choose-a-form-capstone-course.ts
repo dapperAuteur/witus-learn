@@ -63,7 +63,7 @@ Because of that rule, this course also refuses to invent. It names no statute se
 3. **Ownership and transfer.** Who owns it, and how does a piece move from one person to another?
 4. **Governance.** Who gets to decide? The owners directly, a manager, a board?
 
-You do not have to memorise a menu of forms. You hold four questions, and the forms become readable, including forms you have never seen and foreign ones.
+You do not have to memorize a menu of forms. You hold four questions, and the forms become readable, including forms you have never seen and foreign ones.
 
 ## What the path handed you, and what you do with it now
 
@@ -114,7 +114,7 @@ Most of the story in a scenario is not structural. Branding, the product, the st
 | "It runs on donations and a mission, not on profit" | Ownership and taxation (a nonprofit has no owners) |
 | "It is small, simple, and just starting" | Taxation and governance (keep it light) |
 
-**One fact can flip a whole decision.** "They want outside investors" turns the ownership question from "keep it in known hands" to "standardised, tradeable shares," and that alone can change the recommended form. Reading for the flipping fact is what you practise next.
+**One fact can flip a whole decision.** "They want outside investors" turns the ownership question from "keep it in known hands" to "standardised, tradeable shares," and that alone can change the recommended form. Reading for the flipping fact is what you practice next.
 
 ## "It depends" is a professional sentence, not a dodge
 
@@ -168,7 +168,7 @@ Notice you have not named a form yet, and you already know the two things that m
 
 ## Set aside what is not structural
 
-The same scenario probably mentions the food being great, a catchy cart name, and weekend hours. **None of that touches the four decisions**, so it does not change the form. A common beginner error is to let colourful facts drive a structural choice. Discipline is sorting the paragraph into "moves a decision" and "does not," and only the first pile chooses a form.
+The same scenario probably mentions the food being great, a catchy cart name, and weekend hours. **None of that touches the four decisions**, so it does not change the form. A common beginner error is to let colorful facts drive a structural choice. Discipline is sorting the paragraph into "moves a decision" and "does not," and only the first pile chooses a form.
 
 ## Name the flipping fact
 
@@ -206,7 +206,7 @@ Finally, look for the one fact that would change everything if it were there. Ad
 
 **2. Defend it against all four decisions, one at a time, for THIS scenario.** Not "an LLC has limited liability" in the abstract, but "for these two friends and this cart, the wall matters because of the slip-and-sue risk, and here is where it could still leak." A short paragraph each, in order: liability, taxation, ownership and transfer, governance.
 
-**3. Defend it against one specific alternative.** This is the part that separates a defense from a preference. **Name one form you seriously considered and rejected, and beat it in the language of the four.** "Why not a C-corp here? Because on taxation and governance, its entity-level tax and board formality buy nothing for a two-person cart." "Why not a plain LLC there? Because on governance, it does not give the members the one-vote-each rule they asked for." A defense with no named alternative is just a favourite.
+**3. Defend it against one specific alternative.** This is the part that separates a defense from a preference. **Name one form you seriously considered and rejected, and beat it in the language of the four.** "Why not a C-corp here? Because on taxation and governance, its entity-level tax and board formality buy nothing for a two-person cart." "Why not a plain LLC there? Because on governance, it does not give the members the one-vote-each rule they asked for." A defense with no named alternative is just a favorite.
 
 **4. Point at the primary source.** Say which document or portal you would actually read to confirm the form works in a real state: the state's filing portal, the articles or operating agreement, the relevant agency page. **The four decisions are universal; the paperwork is local**, and you close that gap by naming where you would verify, not by asserting a local detail from memory.
 
@@ -246,7 +246,7 @@ The defense method has one absolute rule, carried from the whole path: **when yo
       slug: "cfc-the-menu",
       title: "5 · The menu you carry into the defense",
       section: "Section 1 · From scenario to a defended form",
-      body: `A defense is only as good as the options you can compare. So before the worked scenarios, here is the whole menu the path handed you, laid out as answers to the four decisions. **You are not memorising it. You are confirming you can place any of these with the four questions**, because the alternative you beat in a defense will come from this menu.
+      body: `A defense is only as good as the options you can compare. So before the worked scenarios, here is the whole menu the path handed you, laid out as answers to the four decisions. **You are not memorizing it. You are confirming you can place any of these with the four questions**, because the alternative you beat in a defense will come from this menu.
 
 ## The US forms (course 2)
 
@@ -371,7 +371,7 @@ In a defense you will do two things with this table: **place your chosen form** 
             prompt: "'They want outside investors' most flips which decision?",
             options: ["ownership", "liability", "taxation", "location"],
             correctIndex: 0,
-            explanation: "Outside investment pushes ownership and transfer toward standardised, tradeable shares, which is a corporate feature.",
+            explanation: "Outside investment pushes ownership and transfer toward standardized, tradeable shares, which is a corporate feature.",
             sourceLessonSlug: "cfc-read-scenario",
           },
           {
@@ -542,7 +542,7 @@ You would confirm the choice against **the state's corporation statute and the c
 | Decision | What the facts say |
 |---|---|
 | **Liability** | A real operating business, so the members want a wall. Points to an incorporated form. |
-| **Taxation** | Conceptual here: it depends on how the cooperative is organised and what it elects, an accountant's question. |
+| **Taxation** | Conceptual here: it depends on how the cooperative is organized and what it elects, an accountant's question. |
 | **Ownership and transfer** | Member ownership, tied to working there, not tradeable shares sold to outsiders. |
 | **Governance** | The flipping fact: an equal say for each member regardless of money. This is one member one vote, and it is driving. |
 
@@ -550,7 +550,7 @@ The driver is unmistakable: **governance, one member one vote.**
 
 ## Name the form
 
-A plausible choice is a **worker cooperative**, where the state recognises a cooperative form, or a cooperative organised under another available statute where it does not. **Not advice**, a demonstration. The choice follows the driving decision: the members asked for one vote each, and the cooperative is the form built around exactly that.
+A plausible choice is a **worker cooperative**, where the state recognises a cooperative form, or a cooperative organized under another available statute where it does not. **Not advice**, a demonstration. The choice follows the driving decision: the members asked for one vote each, and the cooperative is the form built around exactly that.
 
 ## Defend it against the four
 
@@ -561,7 +561,7 @@ A plausible choice is a **worker cooperative**, where the state recognises a coo
 
 ## Beat one alternative
 
-**Why not an ordinary corporation with equal shares?** At first it looks equivalent: give every worker the same number of shares and everyone is equal. But that is still **one share one vote**, and shares can be bought, sold, and accumulated, so over time control can concentrate in whoever ends up holding more, which is exactly what the members did not want. **The cooperative's one member one vote is durable and tied to participation**, not to a share count that can drift. On decisions three and four, the equal-shares corporation quietly fails the requirement the cooperative meets by design. That is the defense: same first impression, opposite behaviour on the decisions the members cared about.
+**Why not an ordinary corporation with equal shares?** At first it looks equivalent: give every worker the same number of shares and everyone is equal. But that is still **one share one vote**, and shares can be bought, sold, and accumulated, so over time control can concentrate in whoever ends up holding more, which is exactly what the members did not want. **The cooperative's one member one vote is durable and tied to participation**, not to a share count that can drift. On decisions three and four, the equal-shares corporation quietly fails the requirement the cooperative meets by design. That is the defense: same first impression, opposite behavior on the decisions the members cared about.
 
 ## Point at the source, and state the limit
 
@@ -573,7 +573,7 @@ A plausible choice is a **worker cooperative**, where the state recognises a coo
       recallContent: [
         {
           prompt: "What was the driving decision in the venture-founder scenario, and why?",
-          answer: "Ownership and transfer, because the flipping fact was outside investors, employee equity, and shares changing hands. Priced rounds and option pools assume standardised, tradeable shares.",
+          answer: "Ownership and transfer, because the flipping fact was outside investors, employee equity, and shares changing hands. Priced rounds and option pools assume standardized, tradeable shares.",
         },
         {
           prompt: "Which form did the venture defense choose, and what honest cost did it name?",
@@ -608,18 +608,18 @@ A plausible choice is a **nonprofit corporation that then applies for federal ta
 
 ## Defend it against the four
 
-- **Liability.** A nonprofit corporation is a separate legal person with a wall, so the volunteers and board are generally shielded from the organisation's debts, subject to the usual gaps.
-- **Taxation.** This is the load-bearing part, and it has two moves. First, **tax-exempt status is not automatic**: the organisation applies, and the tax authority grants it, so "we are a nonprofit" and "we are tax-exempt" are different sentences. Second, **the category controls the politics fight.** The tutoring-and-food charity path and a more advocacy-and-politics path fall under different parts of the 501(c) family, and those categories differ in what political activity they permit. So the residents' argument about endorsing candidates is really an argument about **which tax-exempt category** they want, and it is answered by that choice, not by the entity. The defense names the categories generally and routes the exact rules to the primary source, never asserting a threshold (Internal Revenue Service, n.d.-b).
+- **Liability.** A nonprofit corporation is a separate legal person with a wall, so the volunteers and board are generally shielded from the organization's debts, subject to the usual gaps.
+- **Taxation.** This is the load-bearing part, and it has two moves. First, **tax-exempt status is not automatic**: the organization applies, and the tax authority grants it, so "we are a nonprofit" and "we are tax-exempt" are different sentences. Second, **the category controls the politics fight.** The tutoring-and-food charity path and a more advocacy-and-politics path fall under different parts of the 501(c) family, and those categories differ in what political activity they permit. So the residents' argument about endorsing candidates is really an argument about **which tax-exempt category** they want, and it is answered by that choice, not by the entity. The defense names the categories generally and routes the exact rules to the primary source, never asserting a threshold (Internal Revenue Service, n.d.-b).
 - **Ownership and transfer.** The structural fact: **a nonprofit has no equity owners.** Nobody owns it, no shares, no membership interests to sell. That is why donations, not investment, fund it, and why there is no "cashing out." Getting this right is most of understanding a nonprofit.
 - **Governance.** A board runs it, under fiduciary duty, and any voting members have the say the bylaws give them. Governance looks like a corporation's delegated shape, minus the shareholders, because there are no shareholders.
 
 ## Beat one alternative
 
-**Why not a for-profit LLC or corporation with a strong mission?** Because on taxation and ownership, a for-profit is the wrong pile for this scenario. It cannot offer donors the treatment a tax-exempt organisation can, it is built around owners who take profit (which this program does not have), and a mission statement is not the same thing as tax-exempt status. **The residents do not want a mission-flavoured business; they want an organisation with no owners that runs on donations**, and that is the nonprofit, not a for-profit wearing a mission. The alternative fails on decision three (owners) and on the taxation-as-status point.
+**Why not a for-profit LLC or corporation with a strong mission?** Because on taxation and ownership, a for-profit is the wrong pile for this scenario. It cannot offer donors the treatment a tax-exempt organization can, it is built around owners who take profit (which this program does not have), and a mission statement is not the same thing as tax-exempt status. **The residents do not want a mission-flavored business; they want an organization with no owners that runs on donations**, and that is the nonprofit, not a for-profit wearing a mission. The alternative fails on decision three (owners) and on the taxation-as-status point.
 
 ## Point at the source, and state the limit
 
-You would read the **state's nonprofit corporation statute** to form the entity and the tax authority's guidance on **types of tax-exempt organisations** to place the category, then take the politics question to a lawyer, because the exact rules are specific and change (Internal Revenue Service, n.d.-b). And the limit: this is reasoning, not legal, tax, or financial advice.
+You would read the **state's nonprofit corporation statute** to form the entity and the tax authority's guidance on **types of tax-exempt organizations** to place the category, then take the politics question to a lawyer, because the exact rules are specific and change (Internal Revenue Service, n.d.-b). And the limit: this is reasoning, not legal, tax, or financial advice.
 
 ## Sources
 - Internal Revenue Service. (n.d.-a). *Charities and nonprofits*. https://www.irs.gov/charities-and-nonprofits
@@ -673,7 +673,7 @@ You would read the **state's nonprofit corporation statute** to form the entity 
             prompt: "The venture-track founders most need ownership that is:",
             options: ["locked down", "member based", "tradeable stock", "donation based"],
             correctIndex: 2,
-            explanation: "Priced rounds, employee option grants and outside investors call for standardised, transferable shares, a corporate feature.",
+            explanation: "Priced rounds, employee option grants and outside investors call for standardized, transferable shares, a corporate feature.",
             sourceLessonSlug: "cfc-scenario-venture",
           },
           {
@@ -776,7 +776,7 @@ Pick **one scenario** below (or write your own that is just as concrete). In **7
 | **20%** | Defense against one specific, real alternative, argued in the language of the four decisions |
 | **10%** | Primary source named, the not-advice limit stated, and an honest "it depends" wherever the answer truly turns on a missing fact |
 
-A passing piece clears every row. The **20% alternative row is where most of the thinking shows**, because it is the part that proves you weighed a real trade-off rather than reached for a favourite.
+A passing piece clears every row. The **20% alternative row is where most of the thinking shows**, because it is the part that proves you weighed a real trade-off rather than reached for a favorite.
 
 ## Rules you do not get to break
 

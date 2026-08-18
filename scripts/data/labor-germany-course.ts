@@ -95,17 +95,17 @@ Now look at who the bargaining parties are. On one side, an **industrial union**
 
 **So: when a company joins the employers' association, the company becomes bound by whatever that association signs.** Not the company's workers. The *company*.
 
-**How many German employers are in an association? A lot.** OECD/AIAS puts **employer-organisation density at 65.7% (2018)**, that is, employers covering about two-thirds of employees belong to one. Compare that to the 14.1% of *workers* who belong to a union (2024), and the mystery dissolves. **Germany's coverage rate is high because the employers are organized, not because the workers are.**
+**How many German employers are in an association? A lot.** OECD/AIAS puts **employer-organization density at 65.7% (2018)**, that is, employers covering about two-thirds of employees belong to one. Compare that to the 14.1% of *workers* who belong to a union (2024), and the mystery dissolves. **Germany's coverage rate is high because the employers are organized, not because the workers are.**
 
 **Then a second step, which is where the last piece clicks.** Strictly, TVG § 4(1) says the agreement's terms apply *"zwischen den beiderseits Tarifgebundenen"*, between parties bound **on both sides**. Read literally, a non-union worker at a member company is not legally entitled to the agreement. In practice German employers hand the agreement's terms to **everyone** in the firm, usually through a **reference clause** written into each individual employment contract. Why would an employer volunteer that? Think about it for ten seconds and you will get there yourself: if the union contract applied *only to union members*, the union would have the greatest recruiting pitch in industrial history. Paying non-members less than members is how you build a union. So employers don't.
 
-**And now the correction that most summaries of Germany get wrong.** You may have heard that European coverage is high because governments **extend** collective agreements by law to non-member firms. That is true of **France**. It is **not** how Germany does it. Germany *has* an extension power, the **Allgemeinverbindlicherklärung** under **TVG § 5**, by which the Federal Ministry of Labour and Social Affairs, acting in agreement with a committee of employer and union peak organisations, can declare an agreement generally binding. But OECD/AIAS's own country note describes German extension as **"rather exceptional, used in some industries only,"** citing high thresholds and employer veto power in the committee. Political scientists have written an entire paper on precisely this, *why Germany abstains* from the extension tool its neighbours lean on (Günther & Höpner, 2023).
+**And now the correction that most summaries of Germany get wrong.** You may have heard that European coverage is high because governments **extend** collective agreements by law to non-member firms. That is true of **France**. It is **not** how Germany does it. Germany *has* an extension power, the **Allgemeinverbindlicherklärung** under **TVG § 5**, by which the Federal Ministry of Labour and Social Affairs, acting in agreement with a committee of employer and union peak organizations, can declare an agreement generally binding. But OECD/AIAS's own country note describes German extension as **"rather exceptional, used in some industries only,"** citing high thresholds and employer veto power in the committee. Political scientists have written an entire paper on precisely this, *why Germany abstains* from the extension tool its neighbors lean on (Günther & Höpner, 2023).
 
 **So the German mechanism, in one line:** *the employer joins the association → the association signs the sectoral agreement → the employer is bound → the employer applies it to everyone in the building.* No worker had to join anything. No minister had to sign anything.
 
 Hold onto that, because it also tells you exactly **how the system breaks**, and it does break. If coverage rides on employers staying in the association, then coverage collapses the moment employers find a way to be in the association *without* being bound by the agreement. They found one. Section 5.
 
-:::reveal Germany has a legal power to extend a collective agreement to firms that never signed it (TVG § 5). So why is it wrong to say that extension is what produces Germany's ~49% coverage? ||| Because Germany barely uses it. OECD/AIAS calls German extension "rather exceptional, used in some industries only." Coverage comes overwhelmingly from employers voluntarily belonging to employers' associations (employer-organisation density 65.7%, 2018), which binds them under TVG § 3(1), plus contractual reference clauses that pass the terms on to non-members. Heavy use of statutory extension is the FRENCH model, not the German one.
+:::reveal Germany has a legal power to extend a collective agreement to firms that never signed it (TVG § 5). So why is it wrong to say that extension is what produces Germany's ~49% coverage? ||| Because Germany barely uses it. OECD/AIAS calls German extension "rather exceptional, used in some industries only." Coverage comes overwhelmingly from employers voluntarily belonging to employers' associations (employer-organization density 65.7%, 2018), which binds them under TVG § 3(1), plus contractual reference clauses that pass the terms on to non-members. Heavy use of statutory extension is the FRENCH model, not the German one.
 
 ## Sources
 - Günther, W., & Höpner, M. (2023). Why does Germany abstain from statutory bargaining extensions? Explaining the exceptional German erosion of collective wage bargaining. *Economic and Industrial Democracy, 44*(1), 88–108. https://doi.org/10.1177/0143831X211065783
@@ -130,7 +130,7 @@ Hold onto that, because it also tells you exactly **how the system breaks**, and
       section: "Section 1 · The number that reframes everything",
       body: `If you have taken **The History of Unions: America and the World**, the anchor course of this track, you already own the tool you need. It ends by handing you four questions you can ask of any country on earth:
 
-1. **Who is allowed to organise?**
+1. **Who is allowed to organize?**
 2. **Who is excluded?**
 3. **Who bargains with whom, and at what level?**
 4. **What happens to you if you try?**
@@ -139,9 +139,9 @@ Hold onto that, because it also tells you exactly **how the system breaks**, and
 
 Here are Germany's answers, in advance. Everything after this lesson is the detail.
 
-**Q1, Who is allowed to organise?** Essentially everyone. **Article 9(3) of the Basic Law** (*Grundgesetz*), Germany's constitution, guarantees "the right to form associations to safeguard and improve working and economic conditions… to every individual and to every occupation or profession," and then says something remarkable: **"Agreements that restrict or seek to impair this right shall be null and void; measures directed to this end shall be unlawful"** (Basic Law, Art. 9(3), official English translation). Not "the employer commits an unfair labor practice." **Null and void.** The freedom to combine is a constitutional right that runs against private parties, not only against the state. Germany ratified ILO Convention No. 87 (freedom of association) on **20 March 1957** and Convention No. 98 (right to organise and bargain collectively) on **8 June 1956** (International Labour Organization [ILO], NORMLEX).
+**Q1, Who is allowed to organize?** Essentially everyone. **Article 9(3) of the Basic Law** (*Grundgesetz*), Germany's constitution, guarantees "the right to form associations to safeguard and improve working and economic conditions… to every individual and to every occupation or profession," and then says something remarkable: **"Agreements that restrict or seek to impair this right shall be null and void; measures directed to this end shall be unlawful"** (Basic Law, Art. 9(3), official English translation). Not "the employer commits an unfair labor practice." **Null and void.** The freedom to combine is a constitutional right that runs against private parties, not only against the state. Germany ratified ILO Convention No. 87 (freedom of association) on **20 March 1957** and Convention No. 98 (right to organize and bargain collectively) on **8 June 1956** (International Labour Organization [ILO], NORMLEX).
 
-**Q2, Who is excluded?** Fewer people than in the US, but the exclusions are real and you should know them before anybody sells you a fairy tale. **Executive staff** (*leitende Angestellte*) are outside the Works Constitution Act (**BetrVG § 5(3)**). So are **religious communities and their charitable and educational institutions**, *"irrespective of their legal form"* (**BetrVG § 118(2)**), and in Germany that carve-out is not small, because the churches' welfare organisations are among the country's largest employers. Compare that to the anchor course's account of the **National Labor Relations Act's 1935 exclusion of agricultural and domestic workers**: a class of worker defined *by statute* as outside the system everyone else is in. Different country, different class of worker, **same mechanism**. Every labor law has a door, and every door has people standing outside it.
+**Q2, Who is excluded?** Fewer people than in the US, but the exclusions are real and you should know them before anybody sells you a fairy tale. **Executive staff** (*leitende Angestellte*) are outside the Works Constitution Act (**BetrVG § 5(3)**). So are **religious communities and their charitable and educational institutions**, *"irrespective of their legal form"* (**BetrVG § 118(2)**), and in Germany that carve-out is not small, because the churches' welfare organizations are among the country's largest employers. Compare that to the anchor course's account of the **National Labor Relations Act's 1935 exclusion of agricultural and domestic workers**: a class of worker defined *by statute* as outside the system everyone else is in. Different country, different class of worker, **same mechanism**. Every labor law has a door, and every door has people standing outside it.
 
 **Q3, Who bargains with whom, and at what level?** This is the question Germany answers differently, and it answers it **twice**:
 - **Above the firm:** an industrial union and an employers' association, bargaining for a whole **sector** (lesson 2). This is where pay comes from.
@@ -151,7 +151,7 @@ Germans call that two-channel structure the **dual system** (*duales System*), a
 
 **Q4, What happens to you if you try?** In Germany, obstructing a works-council election or interfering with a works council is a **criminal offence** punishable by up to **one year's imprisonment or a fine** (**BetrVG § 119**). Read that again, not a fine on the company, a **crime**. Whether that is actually *enforced* is a different and much less flattering question, and lesson 7 asks it honestly.
 
-:::reveal Germany's Basic Law says private agreements that restrict the right to combine are "null and void." Why is that a stronger statement than "the employer has committed an unfair labor practice"? ||| Because it strikes the agreement down by operation of law rather than creating a claim someone has to win. The constitutional right runs directly against private parties, not only against the state, so a contract term that impairs the freedom to organise has no legal effect at all, without any tribunal having to order a remedy first.
+:::reveal Germany's Basic Law says private agreements that restrict the right to combine are "null and void." Why is that a stronger statement than "the employer has committed an unfair labor practice"? ||| Because it strikes the agreement down by operation of law rather than creating a claim someone has to win. The constitutional right runs directly against private parties, not only against the state, so a contract term that impairs the freedom to organize has no legal effect at all, without any tribunal having to order a remedy first.
 
 ## Sources
 - Basic Law for the Federal Republic of Germany, Art. 9(3) [official English translation]. Bundesministerium der Justiz. https://www.gesetze-im-internet.de/englisch_gg/englisch_gg.html
@@ -198,7 +198,7 @@ Germans call that two-channel structure the **dual system** (*duales System*), a
             prompt:
               "An American student sees that German density is ~14% and concludes German workers must have weak protections. What has the student got wrong?",
             options: [
-              "Nothing is wrong; union density is the only labour statistic that actually matters",
+              "Nothing is wrong; union density is the only labor statistic that actually matters",
               "They assumed coverage is built out of union members, true in the US but false in Germany",
               "German density is really about 60%, and the published 14% figure is a well-known error",
               "Germany has almost no collective agreements, so its workers really are unprotected",
@@ -231,14 +231,14 @@ Germans call that two-channel structure the **dual system** (*duales System*), a
             ],
             correctIndex: 1,
             explanation:
-              "It is the employers' side of the sectoral bargaining table. Employer-organisation density was 65.7% in 2018, that, not union membership, is what carries German coverage.",
+              "It is the employers' side of the sectoral bargaining table. Employer-organization density was 65.7% in 2018, that, not union membership, is what carries German coverage.",
             sourceLessonSlug: "germany-how-coverage-works",
           },
           {
             prompt:
               "True or false: Germany's high bargaining coverage is mainly produced by the government legally extending agreements to non-member firms.",
             options: [
-              "True, statutory extension by the labour ministry is exactly how German coverage is produced",
+              "True, statutory extension by the labor ministry is exactly how German coverage is produced",
               "False, Germany has that power (TVG § 5) but OECD/AIAS calls its actual use 'rather exceptional'",
               "True, every German collective agreement is automatically extended by law to non-member firms",
               "False, Germany has no statutory power to extend a collective agreement to anyone at all",
@@ -254,7 +254,7 @@ Germans call that two-channel structure the **dual system** (*duales System*), a
             options: [
               "No, the sectoral agreement legally binds only the workers who are actual union members",
               "Yes, the employer is bound and applies the terms to everyone via a reference clause",
-              "Only if a labour court specifically orders the employer to extend the terms to her",
+              "Only if a labor court specifically orders the employer to extend the terms to her",
               "Only if more than half of her immediate colleagues are themselves paid-up union members",
             ],
             correctIndex: 1,
@@ -280,7 +280,7 @@ Germans call that two-channel structure the **dual system** (*duales System*), a
             options: [
               "They are permitted, provided the employer and the worker both consent to them",
               "They are null and void, and measures aimed at that end are also unlawful",
-              "They must first be reviewed and approved by the federal labour ministry",
+              "They must first be reviewed and approved by the federal labor ministry",
               "They are valid but punishable by an administrative fine of up to €10,000",
             ],
             correctIndex: 1,
@@ -326,7 +326,7 @@ Germans call that two-channel structure the **dual system** (*duales System*), a
           {
             prompt: "Which of the four questions from the anchor course does Germany answer most distinctively?",
             options: [
-              "Question 1, who is allowed to organise a union at all",
+              "Question 1, who is allowed to organize a union at all",
               "Question 2, who is excluded from the system entirely",
               "Question 3, who bargains with whom, and at what level",
               "Question 4, what happens to you if you dare to try",
@@ -392,7 +392,7 @@ Five people. Not five hundred. **Any German workplace with five employees can ha
 
 **So what *is* the union's relationship to it?** Informal and enormous. Unions run the training, supply the legal support, and put up candidates, and in practice a large share of works councillors in unionised sectors *are* union members. But that is sociology, not law. **Legally, the works council is the workforce's body, not the union's.** The union bargains the sector from outside; the works council governs the workplace from inside. Two channels. Section 4 shows you the seam where they meet.
 
-**And the exclusions, so nobody sells you the fairy-tale version.** **Executive staff** (*leitende Angestellte*) are outside the Act (§ 5(3)), they get a separate representative committee. And under **§ 118(2)**, the Act **"does not apply to religious communities or to their charitable and educational institutions irrespective of their legal form."** In a country where the churches' welfare arms are among the largest employers, that is not a footnote. § 118(1) also limits the Act's reach in "tendency" establishments, political, union, religious, charitable, educational, scientific, artistic, and news/opinion organisations.
+**And the exclusions, so nobody sells you the fairy-tale version.** **Executive staff** (*leitende Angestellte*) are outside the Act (§ 5(3)), they get a separate representative committee. And under **§ 118(2)**, the Act **"does not apply to religious communities or to their charitable and educational institutions irrespective of their legal form."** In a country where the churches' welfare arms are among the largest employers, that is not a footnote. § 118(1) also limits the Act's reach in "tendency" establishments, political, union, religious, charitable, educational, scientific, artistic, and news/opinion organizations.
 
 :::reveal An American hears "works council" and pictures the local union chapter. Give the two sharpest reasons that picture is wrong. ||| (1) It is elected by ALL employees, not by union members, it can exist, and frequently does, in a workplace with no union at all. (2) Its powers come from a statute (the BetrVG), not from a contract the union had to win at the bargaining table. It is the workforce's statutory body, not the union's branch.
 
@@ -403,7 +403,7 @@ Five people. Not five hundred. **Any German workplace with five employees can ha
       slug: "germany-three-tiers",
       title: "5 · Informed, consulted, or actually consulted? The three tiers",
       section: "Section 2 · Channel one, the works council (Betriebsrat)",
-      body: `**This is the most important lesson in Section 2, and it turns on a distinction that sloppy writing destroys.** "Information," "consultation," and "co-determination" are **not** three words for the same thing. They are three completely different amounts of power, and the German statute is scrupulous about which is which. If you can hold these apart, you can read any country's labour law and immediately see how much a worker representative body can actually *do*.
+      body: `**This is the most important lesson in Section 2, and it turns on a distinction that sloppy writing destroys.** "Information," "consultation," and "co-determination" are **not** three words for the same thing. They are three completely different amounts of power, and the German statute is scrupulous about which is which. If you can hold these apart, you can read any country's labor law and immediately see how much a worker representative body can actually *do*.
 
 Here is the ladder, with the sections that put each rung there.
 
@@ -436,7 +436,7 @@ Stop and appreciate what that does. Deadlock does **not** default to the employe
 
 **Now read the chapeau of § 87(1) again**, because it is doing quiet work: *"in so far as they are not prescribed by legislation or collective agreement."* If the sectoral collective agreement already fixes a matter, the works council has nothing to co-determine there. **That is the seam between the two channels**, and Section 4 is about it. Note especially what is *not* on the fourteen-item list: **the level of wages**, and **the length of the working week**. Those belong to the union and the employers' association, upstairs. The works council co-determines the *structure* of pay (how bonus rates are set), not the *amount*.
 
-:::reveal An employer wants to install software that logs every keystroke and ranks employees by output. Under the BetrVG, does the works council get to be informed, consulted, or does it get to say no? ||| It gets to say **no**. Technical devices designed to monitor employee behaviour or performance are item 6 on the § 87(1) co-determination list, the employer cannot introduce them without the works council's agreement, and if the two deadlock, the conciliation committee decides and its award REPLACES agreement (§ 87(2)). This is the top tier, not consultation.
+:::reveal An employer wants to install software that logs every keystroke and ranks employees by output. Under the BetrVG, does the works council get to be informed, consulted, or does it get to say no? ||| It gets to say **no**. Technical devices designed to monitor employee behavior or performance are item 6 on the § 87(1) co-determination list, the employer cannot introduce them without the works council's agreement, and if the two deadlock, the conciliation committee decides and its award REPLACES agreement (§ 87(2)). This is the top tier, not consultation.
 
 ## Sources
 - Betriebsverfassungsgesetz [Works Constitution Act] (Germany), §§ 87, 90, 92, 106 [official English translation]. Bundesministerium der Justiz. https://www.gesetze-im-internet.de/englisch_betrvg/englisch_betrvg.html`,
@@ -499,7 +499,7 @@ That is neither the caricature ("German workers run the company") nor its opposi
         {
           prompt: "Name three of the fourteen matters in BetrVG § 87(1) where the works council has genuine co-determination.",
           answer:
-            "Any three of: rules of operation and employee conduct; start/end of daily working hours and breaks; temporary short-time or extended hours; time/place/form of pay; holiday principles and the leave schedule; technical devices that monitor employee behaviour or performance; accident prevention and health protection; establishment-level remuneration arrangements; piece and bonus rates; principles of group work; the structuring of mobile (remote) work.",
+            "Any three of: rules of operation and employee conduct; start/end of daily working hours and breaks; temporary short-time or extended hours; time/place/form of pay; holiday principles and the leave schedule; technical devices that monitor employee behavior or performance; accident prevention and health protection; establishment-level remuneration arrangements; piece and bonus rates; principles of group work; the structuring of mobile (remote) work.",
         },
         {
           prompt: "What happens when the employer and works council deadlock on a § 87(1) matter?",
@@ -536,7 +536,7 @@ Three honest reasons, in ascending order of discomfort.
 
 > "The following offences are **punishable by a term of imprisonment not exceeding one year or a fine**: 1. interfering with an election to the works council… or influencing such elections by inflicting or threatening reprisals or granting or promising incentives, 2. **obstructing or interfering with the activities of the works council**… 3. prejudicing or favouring a member… by reason of his office."
 
-An American student should stop here, because there is nothing like this in US law. Fire a worker for organising in the United States and the employer faces a civil proceeding. Obstruct a works council in Germany and the responsible person faces **prison**.
+An American student should stop here, because there is nothing like this in US law. Fire a worker for organizing in the United States and the employer faces a civil proceeding. Obstruct a works council in Germany and the responsible person faces **prison**.
 
 **And now the part that stops this from being propaganda.** Look at **§ 119(2)**:
 
@@ -611,7 +611,7 @@ Read that against the reality. The crime is *obstructing the formation of a work
             options: [
               "No, an information right always carries a works-council veto with it",
               "Yes, information means the employer must tell you, not that you can stop it",
-              "Only after the employer first obtains a formal order from the labour court",
+              "Only after the employer first obtains a formal order from the labor court",
               "Only if the union representing the sector formally agrees to the plan",
             ],
             correctIndex: 1,
@@ -664,7 +664,7 @@ Read that against the reality. The crime is *obstructing the formation of a work
             options: [
               "The employer pays a €10,000 administrative fine",
               "The dismissal is null and void, it has no legal effect",
-              "The works council may appeal to a labour court within 30 days",
+              "The works council may appeal to a labor court within 30 days",
               "Nothing; consultation is optional",
             ],
             correctIndex: 1,
@@ -692,7 +692,7 @@ Read that against the reality. The crime is *obstructing the formation of a work
               "They are simply two alternative names for one and the same restructuring document, with no difference",
               "The Interessenausgleich cannot be forced on the employer, but the Sozialplan can be imposed on deadlock",
               "The Sozialplan is voluntary for the employer, while the Interessenausgleich is legally binding",
-              "Both the Interessenausgleich and the Sozialplan can be imposed on the employer by the labour court",
+              "Both the Interessenausgleich and the Sozialplan can be imposed on the employer by the labor court",
             ],
             correctIndex: 1,
             explanation:
@@ -730,13 +730,13 @@ Read that against the reality. The crime is *obstructing the formation of a work
             ],
             correctIndex: 0,
             explanation:
-              "IAB (2023) via ETUI. Co-determination is the air you breathe at Volkswagen and a rumour at a 30-person logistics firm.",
+              "IAB (2023) via ETUI. Co-determination is the air you breathe at Volkswagen and a rumor at a 30-person logistics firm.",
             sourceLessonSlug: "germany-works-council-reach",
           },
           {
             prompt: "In Germany, obstructing a works-council election is…",
             options: [
-              "A civil matter for the labour court, resolved by a reinstatement order",
+              "A civil matter for the labor court, resolved by a reinstatement order",
               "A criminal offence punishable by up to one year in prison or a fine (§ 119)",
               "Entirely permitted whenever the employer objects to the union involved",
               "Punishable only by an automatic administrative fine of up to €10,000",
@@ -859,7 +859,7 @@ So on the supervisory board of a 25,000-employee German company, out of **twenty
 
 **And one seat on the workers' bench is not quite a worker.** **§ 15(1)** of the Act ends with a sentence that is easy to skim and important not to: *"**Dem Aufsichtsrat muss ein leitender Angestellter angehören**"*, **the supervisory board must include a senior executive** (*leitender Angestellter*), and that seat comes out of the *employee* allocation. Remember who leitende Angestellte are: **the people the Works Constitution Act explicitly excludes from the works council** (BetrVG § 5(3)). A senior manager sits on the workers' bench, by law.
 
-**One more thing the 1976 Act does that has no American parallel at all.** **§ 33** requires that the *management* board, the Vorstand, the people who actually run the company, include an **Arbeitsdirektor**, a **labour director**, "as an equal member." Every co-determined German company of this size has, on its executive team, someone whose brief is the workforce, sitting as a full peer of the finance and operations chiefs.
+**One more thing the 1976 Act does that has no American parallel at all.** **§ 33** requires that the *management* board, the Vorstand, the people who actually run the company, include an **Arbeitsdirektor**, a **labor director**, "as an equal member." Every co-determined German company of this size has, on its executive team, someone whose brief is the workforce, sitting as a full peer of the finance and operations chiefs.
 
 **How many companies are we talking about?** In **2025**, **670** German companies had a parity-co-determined supervisory board under the 1976 Act, up from 667 in 2024, and down from a peak of **767 in 2002** (Hans-Böckler-Stiftung, 2025). Lesson 11 asks why the number went the wrong way.
 
@@ -905,7 +905,7 @@ Read that again. **If the two sides cannot agree, the shareholders get the chair
 
 **The chair gets two votes. The deputy expressly does not.** The same rule appears again at § 27(4) for the specific, and rather important, question of **appointing the management board**.
 
-Put the three steps together and you have the machine: **equal seats, deadlock, re-vote, deadlock, and the shareholder-appointed chair breaks the tie in the shareholders' favour.** So on any question the two sides genuinely, finally disagree about, **the shareholders win.**
+Put the three steps together and you have the machine: **equal seats, deadlock, re-vote, deadlock, and the shareholder-appointed chair breaks the tie in the shareholders' favor.** So on any question the two sides genuinely, finally disagree about, **the shareholders win.**
 
 **That is not a loophole. It is a design decision, taken deliberately in 1976**, and it is the reason the Act survived its constitutional challenge. **Nine companies and twenty-nine employer and business associations took the 1976 Act to the Federal Constitutional Court**, arguing it was an unconstitutional invasion of property rights. On **1 March 1979** the Court rejected them (BVerfG, 1 BvR 532/77 and joined cases), holding among other things that the Basic Law is economically neutral, and its reasoning leaned on exactly the machinery above: because the chair breaks the tie, the Act does **not** give the workforce dominance over the owners. **The casting vote is not an oversight. It is the thing that made the law constitutional.**
 
@@ -923,7 +923,7 @@ Twenty-five years before the 1976 Act, in the ruins of the Ruhr, the **Montan-Mi
 
 There is no shareholder chair with a second vote. There is an **eleventh member**, and § 4(2) says who that person may *not* be: not a representative or employee of a union, an employers' association, or their peak bodies; not someone who held such a post in the last year; not an employee or employer *in the company*; and **not someone with a substantial economic interest in the company**. In other words, a **genuinely neutral** eleventh person, elected by the other ten. **When the board splits 5-5, the tie is broken by someone who belongs to neither side.**
 
-And § 13(1) goes further than the 1976 Act ever did. The *Arbeitsdirektor*, the labour director on the **management** board, **"kann nicht gegen die Stimmen der Mehrheit der nach § 6 gewählten Aufsichtsratsmitglieder bestellt werden"**: he or she **cannot be appointed against the votes of the majority of the employee-elected supervisory board members.** The workers hold a veto over who the labour director is. Under the 1976 Act (§ 33) they do not.
+And § 13(1) goes further than the 1976 Act ever did. The *Arbeitsdirektor*, the labor director on the **management** board, **"kann nicht gegen die Stimmen der Mehrheit der nach § 6 gewählten Aufsichtsratsmitglieder bestellt werden"**: he or she **cannot be appointed against the votes of the majority of the employee-elected supervisory board members.** The workers hold a veto over who the labor director is. Under the 1976 Act (§ 33) they do not.
 
 **That is real parity, and it exists in German law, and it applies to coal and steel.** Why there? Because of *when*. In 1951 the coal and steel industries of the Ruhr were the strategic heart of West German reindustrialisation, the Allies were still deciding what to do with them, and the unions had the leverage of that moment. **They got a better deal than anyone got afterwards, because they asked at the only time the answer was going to be yes.** That is a lesson about power, not about Germany.
 
@@ -945,7 +945,7 @@ And § 13(1) goes further than the 1976 Act ever did. The *Arbeitsdirektor*, the
         {
           prompt: "How is the 1951 coal-and-steel supervisory board different?",
           answer:
-            "Eleven members: 4 shareholder + 1, 4 employee + 1, and a genuinely NEUTRAL eleventh member who may not be tied to either side (§ 4). Ties are broken by someone who belongs to neither camp, and the labour director cannot be appointed against the majority of the employee-elected members (§ 13(1)). That is real parity.",
+            "Eleven members: 4 shareholder + 1, 4 employee + 1, and a genuinely NEUTRAL eleventh member who may not be tied to either side (§ 4). Ties are broken by someone who belongs to neither camp, and the labor director cannot be appointed against the majority of the employee-elected members (§ 13(1)). That is real parity.",
         },
       ],
     },
@@ -1019,7 +1019,7 @@ And § 13(1) goes further than the 1976 Act ever did. The *Arbeitsdirektor*, the
           {
             prompt: "Under MitbestG § 27(2), what happens if the supervisory board cannot elect a chair by a two-thirds majority?",
             options: [
-              "A labour court then steps in and appoints an independent neutral chair",
+              "A labor court then steps in and appoints an independent neutral chair",
               "The shareholder side elects the chair; the employees elect only the deputy",
               "The employee members elect the chair, and shareholders take the deputy",
               "The chair's seat simply stays empty until the two sides eventually agree",
@@ -1033,7 +1033,7 @@ And § 13(1) goes further than the 1976 Act ever did. The *Arbeitsdirektor*, the
             options: [
               "The chair, and the statute says expressly that the deputy does NOT",
               "The deputy chair, who is elected by the employee side of the board",
-              "The labour director, who sits on the company's management board",
+              "The labor director, who sits on the company's management board",
               "Nobody at all; on a tie the motion before the board simply fails",
             ],
             correctIndex: 0,
@@ -1071,13 +1071,13 @@ And § 13(1) goes further than the 1976 Act ever did. The *Arbeitsdirektor*, the
             prompt: "What extra power do workers have under the 1951 Act that they do NOT have under the 1976 Act?",
             options: [
               "The right to call a strike from inside the company boardroom whenever it deadlocks",
-              "The labour director cannot be appointed against the employee-elected members (§ 13(1))",
+              "The labor director cannot be appointed against the employee-elected members (§ 13(1))",
               "A standing power to veto any dividends the company pays out to its shareholders",
               "A permanent outright majority of all the seats on the company's supervisory board",
             ],
             correctIndex: 1,
             explanation:
-              "A workers' veto over who the Arbeitsdirektor is. The 1976 Act (§ 33) requires a labour director but gives workers no such veto.",
+              "A workers' veto over who the Arbeitsdirektor is. The 1976 Act (§ 33) requires a labor director but gives workers no such veto.",
             sourceLessonSlug: "germany-casting-vote-and-montan",
           },
           {
@@ -1096,8 +1096,8 @@ And § 13(1) goes further than the 1976 Act ever did. The *Arbeitsdirektor*, the
             prompt: "What is an Arbeitsdirektor?",
             options: [
               "The elected head of the establishment's works council, its chief officer",
-              "A labour director sitting as an equal member of the management board (§ 33)",
-              "A federal government inspector who audits the company's labour practices",
+              "A labor director sitting as an equal member of the management board (§ 33)",
+              "A federal government inspector who audits the company's labor practices",
               "The chair of the supervisory board, always chosen by the shareholders",
             ],
             correctIndex: 1,
@@ -1173,7 +1173,7 @@ Germans call this **Tarifvorrang**, the *primacy of the collective agreement*. A
 
 **Think about what it prevents.** Without it, an employer under pressure would go straight to the works council, a body made of its own employees, who cannot strike, who work in the building, whose kids go to the local school, and negotiate a cheaper deal on pay than the union got at sector level. Every firm would do this. Within a decade the sectoral agreement would be worthless and the works council would have become the instrument for undercutting it. **§ 77(3) makes that illegal.** Pay is the union's, and the works council may not trade it away.
 
-So the division of labour is exact:
+So the division of labor is exact:
 
 - **The union decides how much you are paid, and how many hours you work.** It bargains for the sector, and it can strike.
 - **The works council decides how the place is run**, shifts, monitoring, health and safety, discipline, bonus *structures*, remote work, and it can force those to a binding decision without ever downing tools.
@@ -1221,7 +1221,7 @@ Here the course has to be careful, because **Germany has no statute that grants 
 - **Basic Law Art. 9(3)**, which guarantees the right to combine "to safeguard and improve working and economic conditions" to every individual and every occupation, and voids any agreement that impairs it; and
 - **decades of case law from the Federal Labour Court** (*Bundesarbeitsgericht*), which built the German law of industrial action on top of that constitutional guarantee.
 
-**This course is not going to cite you a case name for that, because it did not retrieve one, and a fabricated citation is worse than an honest gap.** What you should take away is the *shape* of the judge-made rules, which is well established and which German labour lawyers will all recognise:
+**This course is not going to cite you a case name for that, because it did not retrieve one, and a fabricated citation is worse than an honest gap.** What you should take away is the *shape* of the judge-made rules, which is well established and which German labor lawyers will all recognize:
 
 - **A strike must be led by a union.** Spontaneous, unofficial walkouts, what Americans call **wildcat strikes**, are not protected industrial action in Germany.
 - **A strike must aim at a collective agreement.** It must be about something a *Tarifvertrag* could lawfully settle. A **purely political strike**, a strike against a government policy rather than an employer, is not protected.
@@ -1360,7 +1360,7 @@ That is not a criticism. It might be the best bargain any working class ever str
               "A warning strike during a bargaining round after the peace obligation has lapsed",
               "A union strike aimed at a new collective agreement",
               "A spontaneous, unofficial walkout not led by a union ('wildcat strike')",
-              "A strike organised by IG Metall over pay",
+              "A strike organized by IG Metall over pay",
             ],
             correctIndex: 2,
             explanation:
@@ -1425,7 +1425,7 @@ That is not a criticism. It might be the best bargain any working class ever str
               "Nothing at all, since the firm's own works council can simply agree to the lower rate itself",
               "An opening clause in the sectoral collective agreement that expressly authorises the deviation",
               "Formal prior permission granted by the company's supervisory board and its shareholders",
-              "A binding court order from the competent regional labour court authorising the pay cut",
+              "A binding court order from the competent regional labor court authorising the pay cut",
             ],
             correctIndex: 1,
             explanation:
@@ -1501,11 +1501,11 @@ Until the 1990s, the rule was simple: if you were a member of an employers' asso
 
 Then, facing member firms threatening to walk out over inflexible agreements, the associations invented a way to keep them: **membership *ohne Tarifbindung***, **"OT membership,"** membership **without collective-bargaining obligation**. You stay in the association. You get the legal advice, the lobbying, the services, the information. **You are simply not bound by the agreement the association signs.**
 
-It was introduced as a stopgap to stop the bleeding. It became the norm. It has been studied extensively, Jirjahn (2022) analyses what drives firms to choose it, and its consequences show up directly in the numbers above: **the employers' association can still look strong while the agreement it negotiates covers fewer and fewer people.** Germany did not lose coverage because workers stopped joining unions. **Coverage was never made of union members.** It is being lost because employers found the exit that did not require them to leave.
+It was introduced as a stopgap to stop the bleeding. It became the norm. It has been studied extensively, Jirjahn (2022) analyzes what drives firms to choose it, and its consequences show up directly in the numbers above: **the employers' association can still look strong while the agreement it negotiates covers fewer and fewer people.** Germany did not lose coverage because workers stopped joining unions. **Coverage was never made of union members.** It is being lost because employers found the exit that did not require them to leave.
 
 ## The extension tool Germany won't use
 
-Remember TVG § 5 from lesson 2, the power to declare an agreement **generally binding**, which would sweep the OT firms and the non-members back in. Germany has it. **Germany barely uses it** ("rather exceptional, used in some industries only", OECD/AIAS), and Günther and Höpner (2023) wrote a paper whose title is the whole story: *"Why does Germany abstain from statutory bargaining extensions? Explaining the exceptional German erosion of collective wage bargaining."* Part of the answer is structural: the § 5 procedure requires the Ministry to act **in agreement with a committee** made up of three representatives each from the employer and union peak organisations, so **the employers' side sits on the committee that would have to approve binding the employers.**
+Remember TVG § 5 from lesson 2, the power to declare an agreement **generally binding**, which would sweep the OT firms and the non-members back in. Germany has it. **Germany barely uses it** ("rather exceptional, used in some industries only", OECD/AIAS), and Günther and Höpner (2023) wrote a paper whose title is the whole story: *"Why does Germany abstain from statutory bargaining extensions? Explaining the exceptional German erosion of collective wage bargaining."* Part of the answer is structural: the § 5 procedure requires the Ministry to act **in agreement with a committee** made up of three representatives each from the employer and union peak organizations, so **the employers' side sits on the committee that would have to approve binding the employers.**
 
 ## And then Germany had to build a floor it never needed
 
@@ -1513,7 +1513,7 @@ Here is the consequence, and it is the most elegant proof in this whole course t
 
 For most of its post-war history, **Germany had no national minimum wage.** It didn't need one. **The collective agreement *was* the wage floor**, when 76% of West German workers were covered, a legislated minimum would have been redundant for three out of four of them.
 
-Then coverage fell. And a country with no national minimum wage and only half its workers covered has, by definition, **a large and growing hole where the bottom of the labour market used to be.**
+Then coverage fell. And a country with no national minimum wage and only half its workers covered has, by definition, **a large and growing hole where the bottom of the labor market used to be.**
 
 So on **1 January 2015**, Germany introduced a **statutory national minimum wage** under the **Mindestlohngesetz (MiLoG)**, at **€8.50 an hour**. It has been raised repeatedly since; it stands at **€13.90 an hour from 1 January 2026**, and is legislated to rise to **€14.60 from 1 January 2027**.
 
@@ -1590,7 +1590,7 @@ Now the finding. The Hans-Böckler-Stiftung's Institute for Co-determination and
         {
           prompt: "Why did Germany introduce a statutory minimum wage in 2015 when it had never needed one?",
           answer:
-            "Because the collective agreement used to BE the wage floor. When coverage fell far enough, a hole opened at the bottom of the labour market, and the state had to build with law (MiLoG, €8.50 from 1 Jan 2015; €13.90 from 1 Jan 2026) what the contract used to build on its own.",
+            "Because the collective agreement used to BE the wage floor. When coverage fell far enough, a hole opened at the bottom of the labor market, and the state had to build with law (MiLoG, €8.50 from 1 Jan 2015; €13.90 from 1 Jan 2026) what the contract used to build on its own.",
         },
       ],
     },
@@ -1713,7 +1713,7 @@ Now the finding. The Hans-Böckler-Stiftung's Institute for Co-determination and
           {
             prompt: "How does converting to a European Company (SE) let a firm avoid parity co-determination?",
             options: [
-              "An SE is entirely exempt from every part of German labour and co-determination law alike",
+              "An SE is entirely exempt from every part of German labor and co-determination law alike",
               "Board participation is frozen at conversion, so a firm converts while small, then grows freely",
               "Every SE must by law be registered and headquartered in Luxembourg, safely outside Germany",
               "An SE has no supervisory board at all, so there are simply no board seats to allocate",
@@ -1807,7 +1807,7 @@ Read those three together and the headline writes itself: **board-level co-deter
 
 ## The wider review
 
-That is one institution (the board). Jäger, Noy and Schoefer (2022), *What Does Codetermination Do?*, in *ILR Review*, stepped back and reviewed the broader empirical literature on German co-determination, works councils included. Their synthesis lands in the same place: the effects on wages, productivity and profits are **modest**, and co-determination is better understood as a set of institutions that **enable long-run cooperation** between labour and management than as a lever that redistributes large amounts of money or power. It coincides with Germany's cooperative, low-conflict industrial relations; it does not, by itself, transform who gets what.
+That is one institution (the board). Jäger, Noy and Schoefer (2022), *What Does Codetermination Do?*, in *ILR Review*, stepped back and reviewed the broader empirical literature on German co-determination, works councils included. Their synthesis lands in the same place: the effects on wages, productivity and profits are **modest**, and co-determination is better understood as a set of institutions that **enable long-run cooperation** between labor and management than as a lever that redistributes large amounts of money or power. It coincides with Germany's cooperative, low-conflict industrial relations; it does not, by itself, transform who gets what.
 
 ## Why "modest" is the most interesting possible answer
 
@@ -1839,11 +1839,11 @@ But the mirror-image claim, that co-determination is the secret engine of high G
       slug: "germany-two-critiques-and-your-verdict",
       title: "16 · Two critiques, and your job now",
       section: "Section 6 · The verdict, what co-determination actually does",
-      body: `A course that ended on "the effects are modest, the end" would be dodging the argument, not settling it. The modest-effects finding is a **fact**; what you make of it is a **judgement**, and educated people make it in two opposite directions. Here are both, stated as fairly as this course can state them, because you should be able to argue either before you pick.
+      body: `A course that ended on "the effects are modest, the end" would be dodging the argument, not settling it. The modest-effects finding is a **fact**; what you make of it is a **judgment**, and educated people make it in two opposite directions. Here are both, stated as fairly as this course can state them, because you should be able to argue either before you pick.
 
 ## The critique from the right: it is a cost firms pay to escape
 
-The efficiency critique says co-determination and sectoral bargaining make the German labour market **rigid**, hard to hire, hard to fire, hard to adjust, and split the workforce into protected **insiders** (covered, works-councilled, hard to dismiss) and exposed **outsiders** (the uncovered near-half from Section 5, the temps, the tech sector at ~11% coverage). And it makes an argument the previous section handed it for free: **look at what firms actually do.** They convert to European Companies to freeze board representation. They take *OT-Mitgliedschaft* to escape the agreement. They wear foreign legal forms. A firm that engineers its way out of an institution is telling you, in the only language that never lies, its own behaviour, that it experiences the institution as a **burden**. That is real, and it is the strongest single fact on this side of the table.
+The efficiency critique says co-determination and sectoral bargaining make the German labor market **rigid**, hard to hire, hard to fire, hard to adjust, and split the workforce into protected **insiders** (covered, works-councilled, hard to dismiss) and exposed **outsiders** (the uncovered near-half from Section 5, the temps, the tech sector at ~11% coverage). And it makes an argument the previous section handed it for free: **look at what firms actually do.** They convert to European Companies to freeze board representation. They take *OT-Mitgliedschaft* to escape the agreement. They wear foreign legal forms. A firm that engineers its way out of an institution is telling you, in the only language that never lies, its own behavior, that it experiences the institution as a **burden**. That is real, and it is the strongest single fact on this side of the table.
 
 **The reply from the evidence (lesson 15) is just as real:** the predicted efficiency *damage* does not show up. Firms may dislike co-determination, but co-determined firms are not less productive, less profitable, or shorter-lived. "They try to avoid it" and "it does measurable harm" are different claims, and only the first survives contact with the data. You are allowed to hold both.
 
@@ -1857,14 +1857,14 @@ The opposite critique grants that co-determination is real and says that is exac
 
 You came in with two numbers you could not explain. You can now explain them, and a great deal more:
 
-- **Who is allowed to organise, who is excluded, who bargains with whom, and what happens if you try**, the anchor course's four questions, answered for Germany in Section 1. (If you have not taken **The History of Unions: America and the World**, take it next; it is where those four questions come from, and this course did not repeat their derivation.)
+- **Who is allowed to organize, who is excluded, who bargains with whom, and what happens if you try**, the anchor course's four questions, answered for Germany in Section 1. (If you have not taken **The History of Unions: America and the World**, take it next; it is where those four questions come from, and this course did not repeat their derivation.)
 - The difference between **information, consultation and co-determination**, three amounts of power that sloppy writing turns into synonyms, and you will now never misread again.
 - Why **14% density and ~49% coverage** are not a contradiction but a design, and why that design is **eroding**.
 - And now a **verdict you can defend**: co-determination is a real institution with modest measured effects, admired and escaped at the same time, and worth neither a postcard nor a takedown.
 
 That last one is the whole point of the Workers' Rights track. Germany is one answer to "who decides?", a good one, an eroding one, an argued-over one. **The next country you study will answer it differently**, and the tool for comparing them is the one you now hold. The natural next step in the track is the Nordic model (Sweden and Denmark), where, as lesson 13 flagged, the same fight over whether the *law* or the *contract* should hold up the floor is being had from the other side. Same question. Different plumbing.
 
-:::reveal State the two opposite critiques of German co-determination in one line each, and the fact that answers each. ||| From the right: it is a rigid cost that splits workers into insiders and outsiders, answered by firms' own escape behaviour (SE conversions, OT-membership), but undercut by evidence showing no productivity or survival damage. From the left: it is a golden cage that trades the strike (§ 74(2)) and the casting vote (§ 29(2)) for cooperation and buys industrial peace by incorporating workers, answered by the erosion itself, since firms fight hard to escape an institution the critique calls toothless.
+:::reveal State the two opposite critiques of German co-determination in one line each, and the fact that answers each. ||| From the right: it is a rigid cost that splits workers into insiders and outsiders, answered by firms' own escape behavior (SE conversions, OT-membership), but undercut by evidence showing no productivity or survival damage. From the left: it is a golden cage that trades the strike (§ 74(2)) and the casting vote (§ 29(2)) for cooperation and buys industrial peace by incorporating workers, answered by the erosion itself, since firms fight hard to escape an institution the critique calls toothless.
 
 ## Sources
 - Betriebsverfassungsgesetz [Works Constitution Act] (Germany), § 74(2) [official English translation]. Bundesministerium der Justiz. https://www.gesetze-im-internet.de/englisch_betrvg/englisch_betrvg.html
@@ -1958,7 +1958,7 @@ That last one is the whole point of the Workers' Rights track. Germany is one an
             ],
             correctIndex: 1,
             explanation:
-              "The review lands where the boardroom study does: modest measured effects; co-determination coincides with cooperative labour relations rather than transforming distribution.",
+              "The review lands where the boardroom study does: modest measured effects; co-determination coincides with cooperative labor relations rather than transforming distribution.",
             sourceLessonSlug: "germany-what-the-evidence-says",
           },
           {
@@ -2023,7 +2023,7 @@ That last one is the whole point of the Workers' Rights track. Germany is one an
             options: [
               "The five-employee election threshold and the standard four-year works-council term",
               "The works council cannot strike, and the shareholder chair keeps the casting vote",
-              "The mandatory finance committee and the co-determined labour director on the board",
+              "The mandatory finance committee and the co-determined labor director on the board",
               "The individual contract's reference clause and the sector agreement's opening clause",
             ],
             correctIndex: 1,

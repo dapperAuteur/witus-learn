@@ -456,7 +456,7 @@ Which means the honest answer to "does tennis use robot line judges?" is: **at t
       slug: "tennis-groundstrokes",
       title: "8 · Groundstrokes: the forehand, and the two different backhands",
       section: "Section 2 · Hitting the ball",
-      body: `A **groundstroke** is any ball you hit after it bounces once. It is the majority of the shots you will ever play, and it comes in two flavours, forehand and backhand, that are not mirror images of each other.
+      body: `A **groundstroke** is any ball you hit after it bounces once. It is the majority of the shots you will ever play, and it comes in two flavors, forehand and backhand, that are not mirror images of each other.
 
 **The forehand.** The dominant-side groundstroke, and for most players the shot they build a game around. The chain the USTA teaches is **legs → hips → torso → shoulder → arm → racquet**: power is generated from the ground up and passed along the body, not manufactured by the arm (USTA Player Development, n.d.). If you are arming the ball, you have skipped the first four links.
 
@@ -500,7 +500,7 @@ Neither is correct. The two-hander is easier to learn, better on high balls, and
       slug: "tennis-serve-and-return-technique",
       title: "9 · The serve and the return: the two shots that touch every single point",
       section: "Section 2 · Hitting the ball",
-      body: `Lesson 4 covered what the **rules** say about the serve. This lesson is about **hitting** it, and about the shot on the other side of the net, which is the most under-practised stroke in tennis.
+      body: `Lesson 4 covered what the **rules** say about the serve. This lesson is about **hitting** it, and about the shot on the other side of the net, which is the most under-practiced stroke in tennis.
 
 **Every point in tennis begins with a serve and a return. Every single one.** That is worth sitting with, because it means these two shots are guaranteed to appear in 100% of points, while your beautiful running forehand appears in some of them. Practice time in most clubs is allocated in almost exactly the reverse order.
 
@@ -741,7 +741,7 @@ Most recreational players do *hit → admire → panic*. They stand and watch th
             options: [
               "Hitting the first serve more softly",
               "Spin that makes it dip in and kick",
-              "Aiming for the centre line every single time",
+              "Aiming for the center line every single time",
               "Standing further behind the baseline",
             ],
             correctIndex: 1,
@@ -804,14 +804,14 @@ Most recreational players do *hit → admire → panic*. They stand and watch th
           {
             prompt: "After you hit a shot, where should you recover to?",
             options: [
-              "Exactly the centre mark, every time",
+              "Exactly the center mark, every time",
               "Toward the middle of their reply angles",
               "Stay right where you hit from, to watch the shot",
               "The net, always",
             ],
             correctIndex: 1,
             explanation:
-              "Not the geometric centre, the middle of the opponent's available angles. And the habit that ruins this is standing to admire your own shot, which costs you the split step and the first step to the next ball.",
+              "Not the geometric center, the middle of the opponent's available angles. And the habit that ruins this is standing to admire your own shot, which costs you the split step and the first step to the next ball.",
             sourceLessonSlug: "tennis-footwork-and-recovery",
           },
         ],
@@ -840,18 +840,18 @@ Sit with the first row. **Seven points in ten are over by the fourth shot.** In 
 3. The server's next ball, **"Serve +1"**
 4. The returner's next ball, **"Return +1"**
 
-O'Shannessy calls these **The First 4 Shots**, and his central observation about coaching is a genuinely uncomfortable one: **these are the shots that get practised least and matter most.** Go to any club and watch. Two players rally crosscourt from the baseline for forty minutes, which is training for the ~10% of points that reach 9+ shots, and then play a match in which 70% of points are decided in the first four balls they never rehearsed.
+O'Shannessy calls these **The First 4 Shots**, and his central observation about coaching is a genuinely uncomfortable one: **these are the shots that get practiced least and matter most.** Go to any club and watch. Two players rally crosscourt from the baseline for forty minutes, which is training for the ~10% of points that reach 9+ shots, and then play a match in which 70% of points are decided in the first four balls they never rehearsed.
 
 **Important calibration, so you don't over-claim this.** That 70/20/10 split comes from **men's professional (ATP) match data**. It is *not* a measured fact about your high-school match, and this course will not pretend otherwise, comparable public rally-length data for recreational play essentially does not exist. But the *structural* point survives the change of level, and in fact **gets stronger**: at lower levels, serves and returns produce even more errors, so points end even sooner. If 70% is the professional figure, the recreational figure is not lower.
 
-**What this changes about how you practise.** If you accept the data, the ordinary club practice routine is close to backwards. The rational allocation is to spend most of your time on:
+**What this changes about how you practice.** If you accept the data, the ordinary club practice routine is close to backwards. The rational allocation is to spend most of your time on:
 - serving (both first and second),
 - returning (both first and second serves),
 - and the **one ball after each** of those.
 
 **What this does NOT mean.** It does not mean rallying is worthless, or that fitness doesn't matter, or that you should try to end every point in two shots by swinging wildly. It means the **first four shots deserve the practice time they currently don't get**, and that the player who wins the short points usually wins the match.
 
-:::reveal In men's professional tennis, roughly what share of points end within 0-4 shots, and what are those four shots called? ||| Roughly **70%** (with ~20% running 5-8 shots and ~10% going 9+). The four are the **serve**, the **return**, the server's next ball (**"Serve +1"**), and the returner's next ball (**"Return +1"**), what Craig O'Shannessy calls **The First 4 Shots**. They're the shots practised least and decisive most.
+:::reveal In men's professional tennis, roughly what share of points end within 0-4 shots, and what are those four shots called? ||| Roughly **70%** (with ~20% running 5-8 shots and ~10% going 9+). The four are the **serve**, the **return**, the server's next ball (**"Serve +1"**), and the returner's next ball (**"Return +1"**), what Craig O'Shannessy calls **The First 4 Shots**. They're the shots practiced least and decisive most.
 
 ## Sources
 - O'Shannessy, C. (n.d.). *ATP world articles: Tennis data & analytics*. Brain Game Tennis. https://braingametennis.com/media/atp-infosys-brain-game/
@@ -864,7 +864,7 @@ O'Shannessy calls these **The First 4 Shots**, and his central observation about
         },
         {
           prompt: "Which two shots appear in 100% of tennis points?",
-          answer: "The serve and the return. Every point begins with both, yet they're among the least-practised shots at most clubs.",
+          answer: "The serve and the return. Every point begins with both, yet they're among the least-practiced shots at most clubs.",
         },
       ],
     },
@@ -891,9 +891,9 @@ That is it. That's the pattern that wins an enormous share of professional point
 
 The mirror image. Against a **second serve**, the returner is the one with the advantage, and the standard failure is to waste it by trying to hit a winner off the return itself. The better model:
 1. **Return +1 thinking**: hit a return that's *deep and aggressive but safe*, deliberately setting up the next ball.
-2. **Then attack** with the +1 shot, from a balanced position, with the server now on defence.
+2. **Then attack** with the +1 shot, from a balanced position, with the server now on defense.
 
-The returner's cardinal sin is going for too much on the return of a second serve, turning the biggest advantage in the game into an unforced error, and handing back a point they were statistically favoured to win.
+The returner's cardinal sin is going for too much on the return of a second serve, turning the biggest advantage in the game into an unforced error, and handing back a point they were statistically favored to win.
 
 **Why "just get it back deep" is real strategy, not cowardice.** A deep ball takes away your opponent's ability to attack, because they must hit from behind the baseline, where the angles available to them are small. A short ball hands them the whole court. "Deep" is not a consolation prize for players who can't hit winners; **depth is the mechanism by which you take the opponent's options away.**
 
@@ -921,7 +921,7 @@ The returner's cardinal sin is going for too much on the return of a second serv
       section: "Section 3 · Strategy: how points are actually won",
       body: `Tennis strategy is, to an unreasonable degree, just **geometry that most players never do**. Three facts about the shape of the court explain an enormous share of who wins.
 
-**Fact 1, The net is lower in the middle.** The net is **3 feet (0.914 m) high at the centre** and **3 feet 6 inches (1.07 m) at the posts** (ITF, 2026, Rule 1). It **sags six inches**. So a crosscourt ball crosses a *lower* net than a down-the-line ball.
+**Fact 1, The net is lower in the middle.** The net is **3 feet (0.914 m) high at the center** and **3 feet 6 inches (1.07 m) at the posts** (ITF, 2026, Rule 1). It **sags six inches**. So a crosscourt ball crosses a *lower* net than a down-the-line ball.
 
 **Fact 2, The court is longer on the diagonal.** Obviously, but nobody uses it: the diagonal of the singles court is meaningfully longer than its straight length. So a crosscourt ball has **more court to land in**.
 
@@ -935,13 +935,13 @@ Which is why **crosscourt is the percentage rally ball, and down-the-line is the
 
 **Fact 3, Depth compresses your opponent's angles.** Think about where your opponent stands. If they're forced to hit from **behind the baseline**, the angles available to them are narrow, from back there, a sharp crosscourt simply doesn't geometrically exist. If you hit **short**, they can step inside the court, and from there the whole court opens up: sharp angles, drop shots, and approach shots all become available.
 
-So **depth is defence and offence at the same time.** It's not the exciting shot, but it is the shot that decides whether your opponent gets to play the exciting one.
+So **depth is defense and offence at the same time.** It's not the exciting shot, but it is the shot that decides whether your opponent gets to play the exciting one.
 
 **And the myth to kill: "winners win matches."** At every level below professional, matches are decided overwhelmingly by **errors, not winners**, the ball that goes into the net or long is worth exactly as much to your opponent as their best forehand. The player who understands the geometry is simply **choosing targets with more margin**: over the low part of the net, into the long part of the court, deep enough that the reply is weak. That is "percentage tennis," and it beats prettier tennis with dreary regularity.
 
 **One honest note on the numbers.** This lesson gives you the *court dimensions* from the ITF rulebook (ITF, 2026, Rule 1), which are exact and verifiable. It deliberately does **not** hand you a made-up statistic like "X% of amateur points end in unforced errors", that number gets thrown around constantly with no source behind it, and this course won't add to the pile. The geometry stands on its own without it.
 
-:::reveal Why is a crosscourt ball the "percentage" shot? Give both geometric reasons, with the net heights. ||| Two reasons, and both are arithmetic. **(1) Lower net:** the net is **3 ft (0.914 m) at the centre** and **3 ft 6 in (1.07 m) at the posts** (ITF, 2026, Rule 1), it sags six inches, so a crosscourt ball crosses a *lower* net. **(2) Longer court:** the diagonal is longer than the straight length, so a crosscourt ball has *more court to land in*. Down-the-line gives you the opposite of both: a higher net and a shorter court, which is why it's the higher-risk attacking shot, to be taken only off a ball you're ahead of.
+:::reveal Why is a crosscourt ball the "percentage" shot? Give both geometric reasons, with the net heights. ||| Two reasons, and both are arithmetic. **(1) Lower net:** the net is **3 ft (0.914 m) at the center** and **3 ft 6 in (1.07 m) at the posts** (ITF, 2026, Rule 1), it sags six inches, so a crosscourt ball crosses a *lower* net. **(2) Longer court:** the diagonal is longer than the straight length, so a crosscourt ball has *more court to land in*. Down-the-line gives you the opposite of both: a higher net and a shorter court, which is why it's the higher-risk attacking shot, to be taken only off a ball you're ahead of.
 
 ## Sources
 - International Tennis Federation. (2026). *ITF rules of tennis 2026*. https://www.itftennis.com/media/7221/2026-rules-of-tennis-english.pdf
@@ -994,7 +994,7 @@ Which retro-justifies Lesson 10: a player with no volley is not a full doubles p
         {
           prompt: "What are the two geometric reasons crosscourt is the percentage shot?",
           answer:
-            "The net is lower in the middle (3 ft centre vs 3 ft 6 in at the posts, it sags six inches), and the court is longer on the diagonal. Lower net, more court.",
+            "The net is lower in the middle (3 ft center vs 3 ft 6 in at the posts, it sags six inches), and the court is longer on the diagonal. Lower net, more court.",
         },
         {
           prompt: "When should you change direction and hit down the line?",
@@ -1028,7 +1028,7 @@ Which retro-justifies Lesson 10: a player with no volley is not a full doubles p
             ],
             correctIndex: 1,
             explanation:
-              "The serve, the return, the server's next ball (Serve +1), and the returner's next ball (Return +1). O'Shannessy's point: these are practised least and matter most.",
+              "The serve, the return, the server's next ball (Serve +1), and the returner's next ball (Return +1). O'Shannessy's point: these are practiced least and matter most.",
             sourceLessonSlug: "tennis-the-first-4-shots",
           },
           {
@@ -1047,7 +1047,7 @@ Which retro-justifies Lesson 10: a player with no volley is not a full doubles p
           {
             prompt: "Why is the standard club practice routine (long crosscourt baseline rallies) close to backwards?",
             options: [
-              "Rallying is worthless and should never be practised",
+              "Rallying is worthless and should never be practiced",
               "It drills rare long rallies, not the first four",
               "Crosscourt is a bad shot",
               "Because fitness doesn't matter in tennis",
@@ -1093,7 +1093,7 @@ Which retro-justifies Lesson 10: a player with no volley is not a full doubles p
             ],
             correctIndex: 2,
             explanation:
-              "Against a second serve the returner is statistically favoured. Hit a deep, aggressive but SAFE return that sets up the next ball, then attack with the +1.",
+              "Against a second serve the returner is statistically favored. Hit a deep, aggressive but SAFE return that sets up the next ball, then attack with the +1.",
             sourceLessonSlug: "tennis-serve-plus-one",
           },
           {
@@ -1106,20 +1106,20 @@ Which retro-justifies Lesson 10: a player with no volley is not a full doubles p
             ],
             correctIndex: 1,
             explanation:
-              "Depth is the mechanism by which you take away the opponent's options. It's defence and offence simultaneously.",
+              "Depth is the mechanism by which you take away the opponent's options. It's defense and offence simultaneously.",
             sourceLessonSlug: "tennis-serve-plus-one",
           },
           {
             prompt: "How high is the net at the centre, and at the posts?",
             options: [
-              "3 ft at the centre; 3 ft 6 in at the posts",
-              "3 ft 6 in at the centre; 3 ft at the posts",
+              "3 ft at the center; 3 ft 6 in at the posts",
+              "3 ft 6 in at the center; 3 ft at the posts",
               "3 ft everywhere",
-              "4 ft at the centre; 3 ft at the posts",
+              "4 ft at the center; 3 ft at the posts",
             ],
             correctIndex: 0,
             explanation:
-              "3 ft (0.914 m) at the centre, 3 ft 6 in (1.07 m) at the posts, it sags six inches (ITF, 2026, Rule 1). That sag is half the reason crosscourt is the percentage shot.",
+              "3 ft (0.914 m) at the center, 3 ft 6 in (1.07 m) at the posts, it sags six inches (ITF, 2026, Rule 1). That sag is half the reason crosscourt is the percentage shot.",
             sourceLessonSlug: "tennis-court-geometry",
           },
           {
@@ -1408,7 +1408,7 @@ The first **Grand Slam** of the Open era was the **1968 French Championships** i
           {
             prompt: "Why was the French Championships, though founded in 1891, the last of the four to become a true international major?",
             options: [
-              "It was cancelled for its first thirty years",
+              "It was canceled for its first thirty years",
               "It was closed to foreign players until 1925",
               "It didn't allow women until 1968",
               "It wasn't played on clay until 1925",

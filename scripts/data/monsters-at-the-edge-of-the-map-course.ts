@@ -81,7 +81,7 @@ All three are flat pictures of places. Only one of them is trying to do what you
 
 ## The road map on your phone
 
-Its job is to get you somewhere. It is judged by whether the turn is where it says the turn is. Accuracy of position is the entire point, and everything else (colour, labels, the little icons) exists to serve it.
+Its job is to get you somewhere. It is judged by whether the turn is where it says the turn is. Accuracy of position is the entire point, and everything else (color, labels, the little icons) exists to serve it.
 
 ## The portolan chart
 
@@ -91,11 +91,11 @@ That emptiness is not ignorance. It is **editing**. The chart leaves out what it
 
 ## The mappa mundi
 
-A large medieval world map, of which the finest surviving example is at Hereford Cathedral in England, made around 1300. Jerusalem sits at the centre. East is at the top, not north. Paradise appears as a real place. Scattered across it are historical events, biblical scenes, animals, and peoples described by ancient authors.
+A large medieval world map, of which the finest surviving example is at Hereford Cathedral in England, made around 1300. Jerusalem sits at the center. East is at the top, not north. Paradise appears as a real place. Scattered across it are historical events, biblical scenes, animals, and peoples described by ancient authors.
 
 Judged as a road map, it is a catastrophe. You could not get anywhere with it.
 
-But it was never a road map. A mappa mundi is closer to an encyclopaedia arranged geographically: a picture of what the world contains and what it means, with history and scripture and natural history laid out in space because space was a convenient way to organise them. It answers "what is the world, and what is it for," not "how do I get to Genoa."
+But it was never a road map. A mappa mundi is closer to an encyclopaedia arranged geographically: a picture of what the world contains and what it means, with history and scripture and natural history laid out in space because space was a convenient way to organize them. It answers "what is the world, and what is it for," not "how do I get to Genoa."
 
 ## The test you can carry out of here
 
@@ -121,7 +121,7 @@ This is called reading for **genre**, and it is the most portable skill in this 
         {
           prompt: "Why is east at the top of the Hereford Mappa Mundi rather than north?",
           answer:
-            "Because it is organised around meaning rather than navigation. East, toward Paradise as it was understood, takes the honoured position at the top, and Jerusalem sits at the centre.",
+            "Because it is organized around meaning rather than navigation. East, toward Paradise as it was understood, takes the honored position at the top, and Jerusalem sits at the center.",
         },
       ],
     },
@@ -131,13 +131,13 @@ This is called reading for **genre**, and it is the most portable skill in this 
       section: "Section 1 · The phrase, and the genre",
       body: `
 :::figure https://res.cloudinary.com/devdash54321/image/upload/v1786281337/witus/courses/here-be-dragons/monsters-at-the-edge-of-the-map/t-o-map-1472.jpg ||| A circle divided by a T shape into three labelled parts: Asia across the top half, Europe and Africa below. ||| The T-O diagram from the 1472 printing of Isidore's Etymologiae. A schematic of how three landmasses relate, not an attempt at a coastline, and judging it as a survey is the category error the lesson names. ||| Isidore of Seville. T and O map Guntherus Ziner 1472.jpg. Public domain. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:T_and_O_map_Guntherus_Ziner_1472.jpg
-There is a medieval diagram that gets reproduced constantly as proof that people had no idea what the world looked like. It is a circle with a T inside it, dividing the circle into three parts labelled Asia, Europe and Africa. It is called a **T-O map**, and it comes from a text by Isidore of Seville, a Spanish bishop writing in the 600s. It appears in the printed edition of his *Etymologiae* published in Augsburg in 1472, which is where most people have seen it.
+There is a medieval diagram that gets reproduced constantly as proof that people had no idea what the world looked like. It is a circle with a T inside it, dividing the circle into three parts labeled Asia, Europe and Africa. It is called a **T-O map**, and it comes from a text by Isidore of Seville, a Spanish bishop writing in the 600s. It appears in the printed edition of his *Etymologiae* published in Augsburg in 1472, which is where most people have seen it.
 
 It looks like a child's drawing. That is the trap.
 
 ## What it actually is
 
-A T-O map is a **schematic**. It shows a relationship, not a shape. Three landmasses, divided by two waterways and a sea, surrounded by ocean. It is the medieval equivalent of a subway map or an organisational chart: nobody thinks the London Underground map is a claim about the true distance between stations.
+A T-O map is a **schematic**. It shows a relationship, not a shape. Three landmasses, divided by two waterways and a sea, surrounded by ocean. It is the medieval equivalent of a subway map or an organizational chart: nobody thinks the London Underground map is a claim about the true distance between stations.
 
 Isidore, in the same body of work, discusses the earth as a sphere. He was not confused about the shape of the world. He was drawing a diagram of how its parts relate, in a book that was an encyclopaedia, for readers who wanted the relationship and not the coastline.
 
@@ -149,7 +149,7 @@ Reading a schematic as a survey is a **category error**. It is not a small mista
 
 Not on medieval maps. You will make it on a chart in a news article, a diagram in a company report, a simplified figure in a textbook. Something built to show a relationship will be read as a claim about magnitude, and it will be either you or the person who made it who benefits from the confusion.
 
-The medieval version is a safe place to practise, because nothing is at stake and the error is easy to see once it is named.
+The medieval version is a safe place to practice, because nothing is at stake and the error is easy to see once it is named.
 
 :::reveal What kind of object is a T-O map? ||| A schematic. It shows how three landmasses relate to each other and to the surrounding ocean, the way a subway map shows connections rather than true distances.
 
@@ -211,7 +211,7 @@ The medieval version is a safe place to practise, because nothing is at stake an
             options: ["Jerusalem", "Rome", "Hereford", "The Mediterranean Sea"],
             correctIndex: 0,
             explanation:
-              "Jerusalem occupies the centre, and east is at the top. The arrangement encodes meaning rather than navigation.",
+              "Jerusalem occupies the center, and east is at the top. The arrangement encodes meaning rather than navigation.",
             sourceLessonSlug: "what-a-map-is-for",
           },
           {
@@ -220,7 +220,7 @@ The medieval version is a safe place to practise, because nothing is at stake an
               "What is the world, and what does it mean",
               "How do I sail from Genoa to Alexandria",
               "Where is the border between two kingdoms",
-              "How deep is the water in this harbour",
+              "How deep is the water in this harbor",
             ],
             correctIndex: 0,
             explanation:
@@ -310,7 +310,7 @@ The medieval version is a safe place to practise, because nothing is at stake an
             options: [
               "On a simplified chart or diagram in a news article or company report",
               "On a national census table",
-              "On a photograph of a historical artefact",
+              "On a photograph of a historical artifact",
               "On a transcript of a recorded interview",
             ],
             correctIndex: 0,
@@ -331,17 +331,17 @@ The medieval version is a safe place to practise, because nothing is at stake an
       section: "Section 2 · Reading the maps",
       body: `
 :::figure https://res.cloudinary.com/devdash54321/image/upload/v1786281337/witus/courses/here-be-dragons/monsters-at-the-edge-of-the-map/hereford-mappa-mundi.jpg ||| A large circular medieval world map drawn on vellum, dense with figures, buildings, animals and text. ||| The Hereford Mappa Mundi, about 1300. East at the top, Jerusalem at the centre, and a real river, a scriptural event and a creature from a Roman encyclopaedia sharing one surface with no visible seam. ||| Unknown. Hereford Mappa Mundi 1300.jpg. Public domain. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Hereford_Mappa_Mundi_1300.jpg
-Around 1300, someone drew the world on a single sheet of calfskin about 1.6 metres tall. It still hangs in Hereford Cathedral. It is the largest medieval map of its kind to survive intact, and it rewards the kind of slow looking this course is asking you to practise.
+Around 1300, someone drew the world on a single sheet of calfskin about 1.6 metres tall. It still hangs in Hereford Cathedral. It is the largest medieval map of its kind to survive intact, and it rewards the kind of slow looking this course is asking you to practice.
 
 ## Start with the frame, not the content
 
-East at the top. Jerusalem at the centre. Christ presiding over the whole sheet from above the rim, with the saved on one side and the damned on the other.
+East at the top. Jerusalem at the center. Christ presiding over the whole sheet from above the rim, with the saved on one side and the damned on the other.
 
-Before a single place name is read, the object has already told you its organising principle: **this is a picture of a world inside a story**. Position on this map means importance and meaning, not latitude.
+Before a single place name is read, the object has already told you its organizing principle: **this is a picture of a world inside a story**. Position on this map means importance and meaning, not latitude.
 
 ## Now the content
 
-Britain and Ireland are down in the bottom left, cramped against the edge of the frame, which is roughly where they belong on a map centred on Jerusalem and shaped like this. The Mediterranean is recognisable. So are the Nile and the Red Sea.
+Britain and Ireland are down in the bottom left, cramped against the edge of the frame, which is roughly where they belong on a map centered on Jerusalem and shaped like this. The Mediterranean is recognisable. So are the Nile and the Red Sea.
 
 Scattered across it: the Tower of Babel. The route of the Exodus. Animals, some ordinary and some not. And in the southern and eastern margins, the peoples that ancient authors had described and that lesson 11 will deal with directly.
 
@@ -357,7 +357,7 @@ Which of the things on this map did its maker believe he had good evidence for, 
 
 You will not fully answer that. But asking it turns the map from a curiosity into a document with an author who made choices, and that is the difference between looking and reading.
 
-:::reveal What does position on the Hereford map encode? ||| Importance and meaning rather than latitude. Jerusalem is central and east is at the top because the map is organised around a story, not around navigation.
+:::reveal What does position on the Hereford map encode? ||| Importance and meaning rather than latitude. Jerusalem is central and east is at the top because the map is organized around a story, not around navigation.
 
 :::reveal The map puts a scriptural event, a real river, and a creature from a Roman encyclopaedia on one surface. What does that reflect? ||| A different idea of what counts as knowledge about a place, in which what happened there and what is true of it are not filed separately.
 
@@ -425,7 +425,7 @@ If your model is "monsters mean ignorance," this object breaks it immediately. S
 
 ## What the monsters are doing
 
-Chet Van Duzer, who has catalogued sea monsters across surviving maps more thoroughly than anyone, finds that they are rarely inventions from nothing. They are typically drawn from three places: written authorities the mapmaker trusted, garbled reports of real animals, and earlier maps.
+Chet Van Duzer, who has cataloged sea monsters across surviving maps more thoroughly than anyone, finds that they are rarely inventions from nothing. They are typically drawn from three places: written authorities the mapmaker trusted, garbled reports of real animals, and earlier maps.
 
 And they serve purposes:
 
@@ -460,7 +460,7 @@ Lesson 6 gave you three jobs a sea monster can do. This lesson turns that into s
 
 ## Every element on a made thing is there because someone put it there
 
-That sounds obvious and it is constantly forgotten. A map is not a natural object that grew. Somebody chose the projection, the centre, the extent, the colours, what to name, what to leave unnamed, and what to draw in the blank parts. Each of those is a decision with a reason, and the reasons are not all about accuracy.
+That sounds obvious and it is constantly forgotten. A map is not a natural object that grew. Somebody chose the projection, the center, the extent, the colors, what to name, what to leave unnamed, and what to draw in the blank parts. Each of those is a decision with a reason, and the reasons are not all about accuracy.
 
 Some are about **cost**: engraving is expensive, so what earns its space?
 
@@ -472,7 +472,7 @@ Some are about **inheritance**: the mapmaker copied an earlier map, because that
 
 ## Applying it where it stings
 
-Take any chart in any modern annual report. Someone chose where the vertical axis starts. Someone chose which years to include. Someone chose whether the comparison bar is your competitor's best year or their worst. Someone chose the colour that reads as "good."
+Take any chart in any modern annual report. Someone chose where the vertical axis starts. Someone chose which years to include. Someone chose whether the comparison bar is your competitor's best year or their worst. Someone chose the color that reads as "good."
 
 None of those choices is a lie. All of them are argument. The document is not neutral and was never trying to be, and the mistake is not that it argues but that you read it as if it did not.
 
@@ -551,7 +551,7 @@ That is not a disclaimer to skim. It is the same point as the empty interior of 
             color: "#1d4ed8",
             title: "Hereford Mappa Mundi, England",
             description:
-              "Where the largest intact medieval world map of its kind still hangs. East at the top, Jerusalem at the centre, and history, scripture and natural history laid out in space. Lesson 4 reads it closely.",
+              "Where the largest intact medieval world map of its kind still hangs. East at the top, Jerusalem at the center, and history, scripture and natural history laid out in space. Lesson 4 reads it closely.",
           },
           {
             id: "jerusalem",
@@ -559,9 +559,9 @@ That is not a disclaimer to skim. It is the same point as the empty interior of 
             lng: 35.229,
             year: 1300,
             color: "#1d4ed8",
-            title: "Jerusalem, the centre of the mappa mundi",
+            title: "Jerusalem, the center of the mappa mundi",
             description:
-              "Not the geographic centre of anything. The centre of an argument about meaning. Position on a mappa mundi encodes importance, which is why reading it as a road map produces nonsense.",
+              "Not the geographic center of anything. The center of an argument about meaning. Position on a mappa mundi encodes importance, which is why reading it as a road map produces nonsense.",
           },
           {
             id: "venice",
@@ -601,7 +601,7 @@ That is not a disclaimer to skim. It is the same point as the empty interior of 
             color: "#b45309",
             title: "The marvels of the Book of John Mandeville",
             description:
-              "The most popular travel book in medieval Europe described wonders across Asia. Its author had, as far as anyone can establish, compiled it from other books rather than travelled. Lesson 10 is about what that does to a text read as testimony.",
+              "The most popular travel book in medieval Europe described wonders across Asia. Its author had, as far as anyone can establish, compiled it from other books rather than traveled. Lesson 10 is about what that does to a text read as testimony.",
           },
           {
             id: "timbuktu",
@@ -699,7 +699,7 @@ That is not a disclaimer to skim. It is the same point as the empty interior of 
               "Coordinates for thousands of places, and projection instructions",
               "Illustrated descriptions of the peoples of each province",
               "A day-by-day narrative of a voyage around the Mediterranean",
-              "A catalogue of the animals found in each named region",
+              "A catalog of the animals found in each named region",
             ],
             correctIndex: 0,
             explanation: "A dataset and a method, not a picture book.",
@@ -754,7 +754,7 @@ That is not a disclaimer to skim. It is the same point as the empty interior of 
             ],
             correctIndex: 0,
             explanation:
-              "The map organises a world inside a story. Jerusalem at the centre and east at the top follow from that.",
+              "The map organises a world inside a story. Jerusalem at the center and east at the top follow from that.",
             sourceLessonSlug: "hereford-close-reading",
           },
           {
@@ -824,7 +824,7 @@ That is not a disclaimer to skim. It is the same point as the empty interior of 
 
 You have met this story. It is in the *Physiologus*, a Greek Christian text about animals and their moral meanings that circulated from roughly the second to fourth century CE. It is in the Irish *Navigatio Sancti Brendani*, where Brendan's monks land on the creature and return to it each year. It is in the Sinbad voyages. It is drawn on the Carta Marina in 1539. It reaches Milton in the seventeenth century.
 
-## Follow what actually travelled
+## Follow what actually traveled
 
 Not an observation. A **story**, copied from text to text for well over a thousand years, picking up local detail at each stop and losing its origin.
 
@@ -842,7 +842,7 @@ This is not a medieval problem. It is the single most common failure in modern i
 
 When something is widely repeated, the useful question is not "how many sources say this." It is **"how many independent sources say this, and what is the earliest one?"**
 
-Following a claim back to its earliest form is a skill you can practise in an afternoon, and it will change what you believe more than almost anything else in this series.
+Following a claim back to its earliest form is a skill you can practice in an afternoon, and it will change what you believe more than almost anything else in this series.
 
 ## What is fair to the mapmaker
 
@@ -877,7 +877,7 @@ He was not being credulous by the standards available to him. The story came wit
 
 ## The book
 
-Sometime around the 1350s or 1360s, a book appeared describing a journey through the Holy Land and onward across Asia. It is usually called the *Book of John Mandeville*, after the knight who narrates it. It was wildly successful, survives in hundreds of manuscripts, was translated into many languages, and was read for centuries as a real traveller's account.
+Sometime around the 1350s or 1360s, a book appeared describing a journey through the Holy Land and onward across Asia. It is usually called the *Book of John Mandeville*, after the knight who narrates it. It was wildly successful, survives in hundreds of manuscripts, was translated into many languages, and was read for centuries as a real traveler's account.
 
 Its author almost certainly did not make the journey. Scholars have traced long stretches to earlier texts, including genuine travel accounts by people who did go. Even the identity of "Sir John Mandeville" is unresolved.
 
@@ -885,9 +885,9 @@ Its author almost certainly did not make the journey. Scholars have traced long 
 
 Read a sentence from a genuine report and a sentence from a compilation and they can look identical. What differs is not style. It is **standing**: whether the person writing had any way of knowing.
 
-The book creates standing with technique. A narrator with a name and a nationality. First person. Dates and itineraries. Small confiding admissions. Occasional scepticism about one marvel, which purchases credibility for the next twenty.
+The book creates standing with technique. A narrator with a name and a nationality. First person. Dates and itineraries. Small confiding admissions. Occasional skepticism about one marvel, which purchases credibility for the next twenty.
 
-That last one is worth naming, because it is still in constant use: **strategic scepticism**. A writer who doubts one thing seems like a careful person, and their assent then carries weight it has not earned. Watch for it in advertising, in political speech, and in any account that says "now, I was sceptical at first."
+That last one is worth naming, because it is still in constant use: **strategic skepticism**. A writer who doubts one thing seems like a careful person, and their assent then carries weight it has not earned. Watch for it in advertising, in political speech, and in any account that says "now, I was sceptical at first."
 
 ## Why this belongs in a course about maps
 
@@ -913,7 +913,7 @@ Ask it of a medieval travel narrative. Then ask it of the next confident account
     },
     {
       slug: "plinys-monstrous-races",
-      title: "11 · Pliny's catalogue of people nobody had met",
+      title: "11 · Pliny's catalog of people nobody had met",
       section: "Section 3 · How a description travels",
       body: `Around 77 CE, Pliny the Elder completed the *Natural History*, an enormous compilation of everything he could gather about the world. In its seventh book he describes peoples living at the edges of the known world.
 
@@ -939,7 +939,7 @@ That is a claim about distance and difference, and it is doing work long before 
 
 The next lesson is the hinge of this course and, arguably, of the whole series. Europeans eventually reached the places where the monstrous races were supposed to live and found people. Ordinary people, with cities, laws, farming, trade, religion and history.
 
-The catalogue did not simply get discarded when it met reality. Some of its vocabulary and some of its logic transferred onto the actual people who were found there.
+The catalog did not simply get discarded when it met reality. Some of its vocabulary and some of its logic transferred onto the actual people who were found there.
 
 Hold on to two things before you turn the page. First, Pliny is not the villain: he was compiling reports in the first century and mostly said where they came from. Second, and less comfortable: a description does not need to be believed to be **useful**. It only needs to be available at the moment someone needs a reason.
 
@@ -994,14 +994,14 @@ Hold on to two things before you turn the page. First, Pliny is not the villain:
               "How many experts have declined to contradict it",
             ],
             correctIndex: 0,
-            explanation: "Following a claim back to its earliest form is a skill you can practise in an afternoon.",
+            explanation: "Following a claim back to its earliest form is a skill you can practice in an afternoon.",
             sourceLessonSlug: "the-whale-that-is-an-island",
           },
           {
             prompt: "What is known about the author of the Book of John Mandeville?",
             options: [
               "The identity is unresolved and the journey almost certainly was not made",
-              "He was a Flemish physician who travelled as far as Persia",
+              "He was a Flemish physician who traveled as far as Persia",
               "He was a Venetian merchant writing under a pen name",
               "He was a monk who copied a genuine account word for word",
             ],
@@ -1033,7 +1033,7 @@ Hold on to two things before you turn the page. First, Pliny is not the villain:
             ],
             correctIndex: 0,
             explanation:
-              "Strategic scepticism. It is still in constant use, and the phrase to watch for is some version of \"I was sceptical at first.\"",
+              "Strategic skepticism. It is still in constant use, and the phrase to watch for is some version of \"I was sceptical at first.\"",
             sourceLessonSlug: "the-eyewitness-who-wasnt",
           },
           {
@@ -1106,7 +1106,7 @@ Hold on to two things before you turn the page. First, Pliny is not the villain:
             options: [
               "It only needs to be available when someone needs a reason",
               "It only needs to appear in a printed rather than handwritten source",
-              "It only needs to be endorsed by a recognised authority",
+              "It only needs to be endorsed by a recognized authority",
               "It only needs to be translated into the local language",
             ],
             correctIndex: 0,
@@ -1131,7 +1131,7 @@ Hold on to two things before you turn the page. First, Pliny is not the villain:
 
 Europeans sailed to the places where the monstrous races were supposed to live. They found people: cities, laws, agriculture, long-distance trade, religion, scholarship, recorded history. Not a single one of Pliny's descriptions was there to be found, because there had never been anything to find.
 
-You might expect the catalogue to be quietly retired at that point. Something else happened alongside that. The *category* survived the failure of its contents.
+You might expect the catalog to be quietly retired at that point. Something else happened alongside that. The *category* survived the failure of its contents.
 
 The specific claims about headless men fell away. What persisted was the older, structural idea underneath them, the one lesson 11 named: **at the edge of the world, people stop being like us.** That frame was already built, already familiar, already carried a thousand years of authority, and it was available at the exact moment enormous economic interests needed a reason.
 
@@ -1165,7 +1165,7 @@ This platform has courses that take the next step in detail, with sources: how t
 
 :::reveal State the narrow, accurate claim about the relationship between the frame and the interest. ||| The frame did not create the interest, and the interest could not have been publicly defended so easily without the frame.
 
-:::reveal Why does the course refuse to treat the map monsters as quaint? ||| Because the margin of a map is where a culture practises describing people it does not have to answer to, and that practised habit was ready to hand when describing distant people became profitable.
+:::reveal Why does the course refuse to treat the map monsters as quaint? ||| Because the margin of a map is where a culture practises describing people it does not have to answer to, and that practiced habit was ready to hand when describing distant people became profitable.
 
 ## Sources
 - Friedman, J. B. (2000). *The monstrous races in medieval art and thought*. Syracuse University Press.
@@ -1191,7 +1191,7 @@ He meant it as satire about bad writing. It is also an accurate description of a
 
 The blank interior was not the starting condition that knowledge gradually filled in. In important respects it was a **development**.
 
-The Catalan Atlas of 1375 shows the ruler of Mali holding a gold nugget, in a region drawn with detail and evident respect, because the information travelled to Mediterranean mapmakers along Saharan trade routes that connected real places. Fourteenth-century European mapmakers knew that West Africa contained wealthy, organised states, and drew them.
+The Catalan Atlas of 1375 shows the ruler of Mali holding a gold nugget, in a region drawn with detail and evident respect, because the information traveled to Mediterranean mapmakers along Saharan trade routes that connected real places. Fourteenth-century European mapmakers knew that West Africa contained wealthy, organized states, and drew them.
 
 Later European maps of the interior are in places emptier than that.
 
@@ -1199,11 +1199,11 @@ Later European maps of the interior are in places emptier than that.
 
 Several things at once, and none of them is simply "nobody knew."
 
-**A change in standard.** As the coordinate grid took hold, information that could not be tied to a measured position began to look like hearsay. That is a defensible instinct with an indefensible consequence: a real city known through trade testimony gets dropped in favour of nothing, and nothing is not more accurate than an approximate position.
+**A change in standard.** As the coordinate grid took hold, information that could not be tied to a measured position began to look like hearsay. That is a defensible instinct with an indefensible consequence: a real city known through trade testimony gets dropped in favor of nothing, and nothing is not more accurate than an approximate position.
 
 **A change in who counted as a source.** Knowledge from African, Arab and Ottoman informants was progressively discounted as European mapmaking professionalised around European observation.
 
-**A change in what the map was for.** Maps increasingly served states and companies with claims to press. An interior shown as populated and organised is an interior belonging to someone. An interior shown as empty is an interior available.
+**A change in what the map was for.** Maps increasingly served states and companies with claims to press. An interior shown as populated and organized is an interior belonging to someone. An interior shown as empty is an interior available.
 
 ## The historian's phrase for it
 
@@ -1248,7 +1248,7 @@ A course that spends thirteen lessons on European maps risks leaving an impressi
 
 ## Stick charts
 
-Navigators in the Marshall Islands built frameworks of sticks and shells that encode how ocean swells bend around and between islands. They are not pictures of coastlines. They are models of **wave behaviour**, which is the thing a navigator on that ocean actually needs.
+Navigators in the Marshall Islands built frameworks of sticks and shells that encode how ocean swells bend around and between islands. They are not pictures of coastlines. They are models of **wave behavior**, which is the thing a navigator on that ocean actually needs.
 
 They were, by most accounts, studied on land and left behind on the voyage, because the point was to install the pattern in the navigator's head. That is a completely coherent design decision that a culture used to carrying its knowledge on paper finds counterintuitive.
 
@@ -1260,13 +1260,13 @@ The settlement of the Pacific involved deliberate long-distance voyaging across 
 
 ## And elsewhere
 
-Islamic geography produced sophisticated cartographic and coordinate work over centuries, some of which fed directly into what Europe later inherited. Chinese cartography has its own long tradition. Indigenous mapping in the Americas, Australia and the Arctic encoded route, season, resource and law in forms that European observers frequently failed to recognise as maps at all, sometimes because they were not on paper.
+Islamic geography produced sophisticated cartographic and coordinate work over centuries, some of which fed directly into what Europe later inherited. Chinese cartography has its own long tradition. Indigenous mapping in the Americas, Australia and the Arctic encoded route, season, resource and law in forms that European observers frequently failed to recognize as maps at all, sometimes because they were not on paper.
 
 ## The point, stated carefully
 
 This is not a list of counterexamples to make anyone feel better. It is a correction to a specific and consequential error, which is treating **the survival of a document** as evidence about **the existence of knowledge**.
 
-European mapping produced objects that entered archives, got catalogued, and survived. That is a fact about a documentary tradition and about institutions. It is not a fact about who understood their world.
+European mapping produced objects that entered archives, got cataloged, and survived. That is a fact about a documentary tradition and about institutions. It is not a fact about who understood their world.
 
 Lesson 8 said the same thing about its own green markers. It is worth saying twice, because it is the correction most likely to slip.
 
@@ -1301,7 +1301,7 @@ c. 615 | claim | Isidore's Etymologiae, later printed with the T-O diagram
 c. 1000 | evidence | Great Zimbabwe is being built and occupied
 c. 1200 | evidence | Marshall Islands navigators are reading swell patterns
 c. 1300 | claim | The Hereford Mappa Mundi draws Pliny's peoples in its margins
-1327 | evidence | Mansa Musa's Mali is a documented, wealthy, organised state
+1327 | evidence | Mansa Musa's Mali is a documented, wealthy, organized state
 1360 | claim | The Book of John Mandeville is compiled and read as testimony
 1375 | claim | The Catalan Atlas draws Mali's ruler with respect and detail
 1409 | claim | Ptolemy's Geography returns to Latin-reading Europe
@@ -1319,7 +1319,7 @@ Three things worth naming.
 
 **The lower track is thin, and that is a finding about archives rather than about the world.** Great Zimbabwe and the stick charts are on this timeline at all only because later investigation put them there. Almost everything comparable is missing, and lesson 14 is about why.
 
-**The 1375 entry is on the upper track and is not a failure.** A European map drew Mali well, from testimony that travelled a trade route. That is what good practice looked like with the sources available, and it is the strongest evidence in the course that the later blankness was a choice rather than a limit.
+**The 1375 entry is on the upper track and is not a failure.** A European map drew Mali well, from testimony that traveled a trade route. That is what good practice looked like with the sources available, and it is the strongest evidence in the course that the later blankness was a choice rather than a limit.
 
 ## The habit to take from this
 
@@ -1417,7 +1417,7 @@ When someone shows you a timeline of discovery, ask what the second track would 
             ],
             correctIndex: 0,
             explanation:
-              "It draws Mali's ruler with a gold nugget, from information that travelled Saharan trade routes.",
+              "It draws Mali's ruler with a gold nugget, from information that traveled Saharan trade routes.",
             sourceLessonSlug: "the-blank-interior",
           },
           {
@@ -1437,7 +1437,7 @@ When someone shows you a timeline of discovery, ask what the second track would 
             prompt: "What did J. B. Harley mean by the silences of a map?",
             options: [
               "That absences are deliberate and readable, so a silence is a statement",
-              "That mapmakers were legally forbidden from labelling any contested border",
+              "That mapmakers were legally forbidden from labeling any contested border",
               "That printed maps omitted the local pronunciation of the place names",
               "That surveyors withheld their measurements from rival publishing houses",
             ],
@@ -1455,7 +1455,7 @@ When someone shows you a timeline of discovery, ask what the second track would 
             ],
             correctIndex: 0,
             explanation:
-              "Models of wave behaviour, which is what a navigator on that ocean actually needs. Not pictures of coastlines.",
+              "Models of wave behavior, which is what a navigator on that ocean actually needs. Not pictures of coastlines.",
             sourceLessonSlug: "who-was-mapping-whom",
           },
           {
@@ -1476,7 +1476,7 @@ When someone shows you a timeline of discovery, ask what the second track would 
             options: [
               "Knew, or wrote down in a form that survived in an archive",
               "Knew, or merely suspected without any supporting proof at all",
-              "Knew, or were taught it by an authority they already recognised",
+              "Knew, or were taught it by an authority they already recognized",
               "Knew, or simply agreed on among themselves without checking",
             ],
             correctIndex: 0,

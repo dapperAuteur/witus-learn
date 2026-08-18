@@ -421,7 +421,7 @@ Because you cannot understand the modern sport's politics, Olympic eligibility, 
             options: [
               "They failed to qualify through the regional playoff bracket",
               "The U.K. refused visas on their Haudenosaunee passports",
-              "The Manchester tournament was cancelled that year for funding",
+              "The Manchester tournament was canceled that year for funding",
               "They were suspended by World Lacrosse for a rules violation",
             ],
             correctIndex: 1,
@@ -2314,7 +2314,7 @@ Every barrier in this lesson is also an opening. A sport with an equipment gate 
             options: [
               "Beginner, Intermediate, Advanced, and Expert grade tiers",
               "Bronze, Silver, Gold, and Platinum, formerly Levels 1-3",
-              "A, B, and C grade coaching licences, as in soccer",
+              "A, B, and C grade coaching licenses, as in soccer",
               "There is only one single level for every active coach",
             ],
             correctIndex: 1,

@@ -54,7 +54,7 @@ export const FORMS_OF_GOVERNMENT_COURSE: AuthoredCourse = {
       slug: "forms-what-this-is",
       title: "1 · Classification is an argument, not a vocabulary quiz",
       section: "Section 1 · Why classification is contested",
-      body: `Most people learn "forms of government" as a list to memorise: democracy, monarchy, oligarchy, theocracy, republic, autocracy. You match the word to the definition, you pass the test, and you carry away the idea that every country has one true label sitting on it like a name tag. **This course exists to replace that idea with a more honest and far more useful one: which label a government gets is a contested argument, and learning to read the argument is the real skill.**
+      body: `Most people learn "forms of government" as a list to memorize: democracy, monarchy, oligarchy, theocracy, republic, autocracy. You match the word to the definition, you pass the test, and you carry away the idea that every country has one true label sitting on it like a name tag. **This course exists to replace that idea with a more honest and far more useful one: which label a government gets is a contested argument, and learning to read the argument is the real skill.**
 
 ## First, what this builds on
 
@@ -107,7 +107,7 @@ There is a genuine, centuries-old split in political thought about what the word
 
 Whenever you meet a claim that a country "is" some form of government, ask these three, in order. They are to this course what the four questions were to course 1.
 
-1. **Who made this classification?** A university project, a US-based advocacy organisation, a business intelligence unit, a single researcher. The maker has a definition, a vantage point, and a purpose.
+1. **Who made this classification?** A university project, a US-based advocacy organization, a business intelligence unit, a single researcher. The maker has a definition, a vantage point, and a purpose.
 2. **What does it actually measure?** Elections only, or rights too? Formal rules, or how they work in practice? A single score, or many sub-scores?
 3. **Where does it disagree with another classification?** The most informative fact about a ranking is often the case where it splits from a rival, because the split shows you exactly what each one values.
 
@@ -412,9 +412,9 @@ From this grid the modern vocabulary keeps six terms, though it uses several dif
 - **Autocracy**: a modern umbrella term (not one of Aristotle's six) for rule by one person or a tight group with unchecked power. It overlaps Aristotle's tyranny.
 - **Oligarchy**: rule by a small group, often defined by wealth. Kept close to Aristotle's meaning.
 - **Aristocracy**: literally "rule of the best"; in practice it came to mean rule by a hereditary noble class.
-- **Democracy** and **polity**: modern usage merges these and reverses Aristotle's judgement, making "democracy" the aspirational term for popular self-rule.
+- **Democracy** and **polity**: modern usage merges these and reverses Aristotle's judgment, making "democracy" the aspirational term for popular self-rule.
 
-**Notice that "republic" and "theocracy" are not on Aristotle's grid at all.** They answer different questions, and they are the next lesson and the one after. For now, hold the grid: two axes, count of rulers and purpose of rule, and the fact that our most important word once meant its near-opposite. **The vocabulary is a historical artefact, not a clean logical system, which is one more reason no single label settles anything.**
+**Notice that "republic" and "theocracy" are not on Aristotle's grid at all.** They answer different questions, and they are the next lesson and the one after. For now, hold the grid: two axes, count of rulers and purpose of rule, and the fact that our most important word once meant its near-opposite. **The vocabulary is a historical artifact, not a clean logical system, which is one more reason no single label settles anything.**
 
 ## Sources
 - Aristotle. (c. 350 BCE/2009). Politics (B. Jowett, Trans.), Book III, chs. 6-8. http://classics.mit.edu/Aristotle/politics.html
@@ -481,7 +481,7 @@ This matters for Section 3 because **the modern projects overwhelmingly use "dem
         },
         {
           prompt: "Where do 'republic' and 'theocracy' sit on Aristotle's grid, and what does that tell you?",
-          answer: "Neither is on the grid at all: they answer different questions from the count-of-rulers/purpose axes. That is a sign the classical vocabulary is a historical artefact, not a clean logical system, which is one more reason no single label settles a classification.",
+          answer: "Neither is on the grid at all: they answer different questions from the count-of-rulers/purpose axes. That is a sign the classical vocabulary is a historical artifact, not a clean logical system, which is one more reason no single label settles a classification.",
         },
       ],
     },
@@ -610,7 +610,7 @@ Pull the section together. **Every classical label answers one narrow question (
             options: [
               "How many citizens may vote",
               "Which party controls congress",
-              "How the army is organised",
+              "How the army is organized",
               "Whose the state is, public or king's",
             ],
             correctIndex: 3,
@@ -757,7 +757,7 @@ You will meet each in detail in the next two lessons. Here they are together, so
 | **Freedom House** | Freedom House (US) | Free / Partly Free / Not Free |
 | **EIU Democracy Index** | Economist Intelligence Unit (UK) | Full / flawed / hybrid / authoritarian |
 
-**Read the "who runs it" column first, because it is the answer to Section 1's first question.** One is a large academic project; one grew from a political scientist's dataset; one is a US-based organisation that began in the 1940s; one is the research arm of a business publication. Four different makers, four different purposes, four different vantage points. **None of that makes them worthless, and none of it makes them interchangeable.**
+**Read the "who runs it" column first, because it is the answer to Section 1's first question.** One is a large academic project; one grew from a political scientist's dataset; one is a US-based organization that began in the 1940s; one is the research arm of a business publication. Four different makers, four different purposes, four different vantage points. **None of that makes them worthless, and none of it makes them interchangeable.**
 
 ## What "measure democracy" even means
 
@@ -808,7 +808,7 @@ Hold three questions ready for each project: **what does it count as democracy, 
 
 ## Polity: measure the core, in one number
 
-**The Polity project** (its current version is Polity5, produced by the Center for Systemic Peace in the United States) takes the opposite path. It focuses on a few **core institutional features of how authority is organised**, and combines them into a single score on a **21-point scale from -10 to +10** (Marshall & Gurr, 2020).
+**The Polity project** (its current version is Polity5, produced by the Center for Systemic Peace in the United States) takes the opposite path. It focuses on a few **core institutional features of how authority is organized**, and combines them into a single score on a **21-point scale from -10 to +10** (Marshall & Gurr, 2020).
 
 | Polity band | Score range | Label |
 |---|---|---|
@@ -852,11 +852,11 @@ Polity builds that score from features such as **how the chief executive is recr
       slug: "forms-freedomhouse-eiu",
       title: "11 · Freedom House and the EIU Democracy Index",
       section: "Section 3 · The measurement projects: V-Dem, Polity, Freedom House, EIU",
-      body: `Now the other pair. Freedom House and the EIU Democracy Index are the two classifications a general reader is most likely to have heard quoted, because both produce a clean, headline-friendly label for every country each year. Both are useful and both have been criticised, and knowing what each actually measures is what lets you read a headline that cites them.
+      body: `Now the other pair. Freedom House and the EIU Democracy Index are the two classifications a general reader is most likely to have heard quoted, because both produce a clean, headline-friendly label for every country each year. Both are useful and both have been criticized, and knowing what each actually measures is what lets you read a headline that cites them.
 
 ## Freedom House: measuring freedom, not just democracy
 
-**Freedom House** is a US-based organisation, founded in the 1940s, whose annual report **Freedom in the World** rates countries on political rights and civil liberties. Note the framing: its subject is **freedom**, which is broader than democratic procedure. A country is scored on two clusters (Freedom House, 2024):
+**Freedom House** is a US-based organization, founded in the 1940s, whose annual report **Freedom in the World** rates countries on political rights and civil liberties. Note the framing: its subject is **freedom**, which is broader than democratic procedure. A country is scored on two clusters (Freedom House, 2024):
 
 | Cluster | Points | Covers |
 |---|---|---|
@@ -865,7 +865,7 @@ Polity builds that score from features such as **how the chief executive is recr
 
 The two combine into a **0 to 100 global freedom score**, and each country is given a status of **Free, Partly Free, or Not Free** (Freedom House, 2024). The methodology is grounded in the rights framework of the Universal Declaration of Human Rights, and scores are set by analysts and outside advisers rather than by a large expert crowd or a single algorithm.
 
-**Freedom House has also been criticised, and the critique is part of reading it honestly.** Scholars have questioned its transparency and argued that its choices reflect a particular, US-associated vantage point (Giannone, 2010). **Naming that is not dismissing the source**; it is exactly Section 1's first question (who made this, and from what vantage point?) applied to a specific project. Weigh Freedom House as what it is: a serious, long-running, rights-focused rating produced by an organisation with a mission and a location, not a neutral instrument that fell from the sky.
+**Freedom House has also been criticized, and the critique is part of reading it honestly.** Scholars have questioned its transparency and argued that its choices reflect a particular, US-associated vantage point (Giannone, 2010). **Naming that is not dismissing the source**; it is exactly Section 1's first question (who made this, and from what vantage point?) applied to a specific project. Weigh Freedom House as what it is: a serious, long-running, rights-focused rating produced by an organization with a mission and a location, not a neutral instrument that fell from the sky.
 
 ## The EIU Democracy Index: five categories, four regime types
 
@@ -927,7 +927,7 @@ Even given a definition, projects choose different indicators. **Freedom House m
 
 ## Reason 3: different people (or models) assign the scores
 
-**Who codes changes the code.** V-Dem uses thousands of country experts aggregated through a measurement model that weights reliability. Freedom House uses in-house analysts and outside advisers. Polity applies a coding scheme through its researchers. The EIU uses expert assessment plus some survey data. **These are different judgement processes, and on the hard, in-between cases, different judges reach different calls.** A crowd-plus-model and a small analyst team can look at the same messy country and land a notch apart, honestly.
+**Who codes changes the code.** V-Dem uses thousands of country experts aggregated through a measurement model that weights reliability. Freedom House uses in-house analysts and outside advisers. Polity applies a coding scheme through its researchers. The EIU uses expert assessment plus some survey data. **These are different judgment processes, and on the hard, in-between cases, different judges reach different calls.** A crowd-plus-model and a small analyst team can look at the same messy country and land a notch apart, honestly.
 
 ## Reason 4: different scales and thresholds
 
@@ -1093,7 +1093,7 @@ When you see two projects disagree about a country, **run the four reasons as a 
             options: [
               "Publish in different months",
               "Employ different numbers of staff",
-              "Use different data centres",
+              "Use different data centers",
               "Define democracy differently",
             ],
             correctIndex: 3,
@@ -1121,7 +1121,7 @@ When you see two projects disagree about a country, **run the four reasons as a 
               "Different thresholds between categories",
             ],
             correctIndex: 2,
-            explanation: "Reason 3: a crowd-plus-model, a small analyst team, and a coding scheme are different judgement processes, and on the hard in-between cases different judges reach different calls.",
+            explanation: "Reason 3: a crowd-plus-model, a small analyst team, and a coding scheme are different judgment processes, and on the hard in-between cases different judges reach different calls.",
             sourceLessonSlug: "forms-why-they-disagree",
           },
           {
@@ -1174,7 +1174,7 @@ The most influential precise concept came from Steven Levitsky and Lucan Way, wh
 
 ## A related idea: illiberal democracy
 
-A neighbouring concept is Fareed Zakaria's **illiberal democracy**: a country that holds real elections but does not protect the liberal package of rights, rule of law, and limits on power (Zakaria, 1997). **Notice how illiberal democracy maps onto Section 1's two definitions.** By the minimalist, elections-first definition it counts as a democracy; by the thicker, liberal definition it does not. **The term illiberal democracy is that disagreement compressed into two words**, which is why it is so useful and so argued over.
+A neighboring concept is Fareed Zakaria's **illiberal democracy**: a country that holds real elections but does not protect the liberal package of rights, rule of law, and limits on power (Zakaria, 1997). **Notice how illiberal democracy maps onto Section 1's two definitions.** By the minimalist, elections-first definition it counts as a democracy; by the thicker, liberal definition it does not. **The term illiberal democracy is that disagreement compressed into two words**, which is why it is so useful and so argued over.
 
 ## Why this is exactly where the indices split
 
@@ -1267,7 +1267,7 @@ This is the more dangerous direction, and it is where Section 4's earlier lesson
 
 ## The skill: read practice, not just the parchment
 
-Put both directions together and the rule is one sentence: **classify a government by how power actually works there, not by the formal features it displays.** This is why the measurement projects work so hard to code **practice**, whether elections are actually fair, whether courts are actually independent, whether the press can actually criticise, rather than just reading the constitution. A constitution can promise everything and deliver nothing, or look austere and house a thriving democracy. **The parchment is evidence; the practice is the finding.**
+Put both directions together and the rule is one sentence: **classify a government by how power actually works there, not by the formal features it displays.** This is why the measurement projects work so hard to code **practice**, whether elections are actually fair, whether courts are actually independent, whether the press can actually criticize, rather than just reading the constitution. A constitution can promise everything and deliver nothing, or look austere and house a thriving democracy. **The parchment is evidence; the practice is the finding.**
 
 | The formal label says | The reality can be | The lesson |
 |---|---|---|
@@ -1506,7 +1506,7 @@ That is not an accusation; it is a fact to hold while you read any of their rank
 
 ## What the map cannot show
 
-**It cannot show the scores, and that is on purpose.** A map coloured by each country's "democracy score" would quietly pick ONE project's classification and present it as the truth, which is the exact error this whole course exists to prevent. The plan for this path notes these comparative courses are the first content that will need a polygon (choropleth) map layer; even when that ships, a responsible version would have to show **which project's** classification it is drawing, and ideally let you switch between them to see the disagreement. **A single-source democracy map is a definition wearing the costume of a fact.** Until the layer exists that can show the disagreement honestly, this map shows the makers instead, which is the more important lesson anyway.
+**It cannot show the scores, and that is on purpose.** A map colored by each country's "democracy score" would quietly pick ONE project's classification and present it as the truth, which is the exact error this whole course exists to prevent. The plan for this path notes these comparative courses are the first content that will need a polygon (choropleth) map layer; even when that ships, a responsible version would have to show **which project's** classification it is drawing, and ideally let you switch between them to see the disagreement. **A single-source democracy map is a definition wearing the costume of a fact.** Until the layer exists that can show the disagreement honestly, this map shows the makers instead, which is the more important lesson anyway.
 
 ## What the map cannot show, part two
 
@@ -1543,7 +1543,7 @@ That is not an accusation; it is a fact to hold while you read any of their rank
             title: "Freedom House (Washington, D.C., United States)",
             color: "#b45309",
             description:
-              "Freedom House, a US-based organisation founded in the 1940s, publishes Freedom in the World, rating political rights (up to 40) and civil liberties (up to 60) for a 0 to 100 freedom score and a Free, Partly Free, or Not Free status. Its subject is freedom, broader than elections. Scholars have critiqued its transparency and vantage point (Giannone, 2010), which is Section 1's first question applied to one project. Coordinates are approximate.",
+              "Freedom House, a US-based organization founded in the 1940s, publishes Freedom in the World, rating political rights (up to 40) and civil liberties (up to 60) for a 0 to 100 freedom score and a Free, Partly Free, or Not Free status. Its subject is freedom, broader than elections. Scholars have critiqued its transparency and vantage point (Giannone, 2010), which is Section 1's first question applied to one project. Coordinates are approximate.",
           },
           {
             id: "forms-map-eiu",
@@ -1564,7 +1564,7 @@ That is not an accusation; it is a fact to hold while you read any of their rank
       lessonType: "assignment",
       body: `You have the whole course: the classical vocabulary, the four measurement projects, the four reasons they diverge, and the hard cases where they diverge most. Now use all of it on one real country. **Pick a country, find how two of the four projects currently classify it, and explain the gap between them from the published methodologies.** The finding is not a verdict on the country. **The finding is the explanation of why two careful projects see it differently.**
 
-**One boundary before you start, and it is the heart of this course: use the CURRENT published reports, not any number from memory, including any number you think you remember from this course.** This course taught you methods on purpose and withheld scores on purpose. Your job is to go read the live classifications yourself and reason about them. Treat the country and its people with neutrality throughout: you are analysing institutions, not judging a nation.
+**One boundary before you start, and it is the heart of this course: use the CURRENT published reports, not any number from memory, including any number you think you remember from this course.** This course taught you methods on purpose and withheld scores on purpose. Your job is to go read the live classifications yourself and reason about them. Treat the country and its people with neutrality throughout: you are analyzing institutions, not judging a nation.
 
 ## The assignment
 

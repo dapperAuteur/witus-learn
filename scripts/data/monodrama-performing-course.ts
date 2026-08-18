@@ -102,7 +102,7 @@ export const MONODRAMA_PERFORMING_COURSE: AuthoredCourse = {
 
 - **Reach for a shelf** and the ceiling exists.
 - **Step around something** twice, in the same spot, and there is furniture there.
-- **Change how you stand** and the floor changes: a slight brace reads as a bus, a lowered centre reads as a boat.
+- **Change how you stand** and the floor changes: a slight brace reads as a bus, a lowered center reads as a boat.
 
 **The rule that makes it work is consistency.** If the door is stage left, it is stage left all evening. **Audiences track invisible geography with startling accuracy** and lose trust the moment it moves. The most common failure in solo work is a set that drifts, and the performer is always the last to notice.
 
@@ -294,7 +294,7 @@ That second one is the whole technique. A verb like "to accuse" changes your voi
 
 **Status, which is a separate lever.** Keith Johnstone's *Impro* (1979) treats status as something played rather than possessed: raising or lowering yourself relative to whoever you are speaking to. In a solo piece your status relative to the AUDIENCE is a live choice and most performers never make it. Are you above them, confiding downward? Below them, explaining yourself? Level? **Changing it mid-piece is one of the strongest available effects**, and a piece played at one status for an hour will feel monotonous no matter how good the writing is.
 
-**The psychological gesture.** Michael Chekhov's technique (1953): find one physical gesture that embodies the whole want of a section, practise it fully, then shrink it until it is invisible and lives underneath the speaking. It sounds mystical and is intensely practical, and it is the best tool available for a section you understand intellectually but cannot make land.
+**The psychological gesture.** Michael Chekhov's technique (1953): find one physical gesture that embodies the whole want of a section, practice it fully, then shrink it until it is invisible and lives underneath the speaking. It sounds mystical and is intensely practical, and it is the best tool available for a section you understand intellectually but cannot make land.
 
 :::reveal A section is flat. You understand it and you have rehearsed it. What are the two questions to ask, and which is the more common failure? ||| What do I want here, stated as something another person could give or withhold, and what am I DOING to get it, stated as an active verb. The verb is the more common failure: a performer who has not chosen one defaults to describing, and describing is exactly what flat sounds like. Trying three different verbs on the same lines produces an audible difference immediately, without you having to manage voice, posture or timing directly.
 
@@ -317,7 +317,7 @@ That second one is the whole technique. A verb like "to accuse" changes your voi
 2. **One-note pitch.** Nerves narrow the range, and a narrow range is monotonous whatever the material. This is the commonest reason a well-written piece feels long.
 3. **Running out mid-thought.** A breath plan that works at a desk collapses when adrenaline shortens your breath.
 
-**Mark your script for breath.** Genuinely mark it: where you breathe, and which are the long sentences you must take a full breath before. **Do this before memorising**, because you will memorise the breathing along with the words, and retrofitting it later is much harder.
+**Mark your script for breath.** Genuinely mark it: where you breathe, and which are the long sentences you must take a full breath before. **Do this before memorizing**, because you will memorize the breathing along with the words, and retrofitting it later is much harder.
 
 **Pace, and the pause.** Nerves speed you up, universally. Two counters that work:
 
@@ -328,7 +328,7 @@ Linklater's *Freeing the Natural Voice* (1976) is the standard reference for the
 
 **Practical care for a run.** Water rather than throat sweets, which numb you into pushing harder. Warm up before, and warm DOWN after, which almost nobody does. If you are hoarse, that is information rather than an inconvenience, and performing through it is how a temporary problem becomes a lasting one.
 
-:::reveal Why does the course insist you mark breath BEFORE memorising rather than after? ||| Because you memorise the breathing along with the words: the pattern of where you inhale becomes part of the muscle memory of the text. Retrofitting a breath plan afterwards means fighting a habit you have already trained, which is much harder than establishing it correctly the first time. It also matters because adrenaline shortens your breath in performance, so a plan that was never deliberate will collapse exactly when you need it.
+:::reveal Why does the course insist you mark breath BEFORE memorising rather than after? ||| Because you memorize the breathing along with the words: the pattern of where you inhale becomes part of the muscle memory of the text. Retrofitting a breath plan afterwards means fighting a habit you have already trained, which is much harder than establishing it correctly the first time. It also matters because adrenaline shortens your breath in performance, so a plan that was never deliberate will collapse exactly when you need it.
 
 ## Sources
 - Linklater, K. (1976). *Freeing the natural voice*. Drama Book Specialists.
@@ -338,11 +338,11 @@ Linklater's *Freeing the Natural Voice* (1976) is the standard reference for the
       slug: "mono2-memorisation",
       title: "7 · Memorisation that survives nerves",
       section: "Module 2 · The performance",
-      body: `A solo performer has no one to throw them a line. That single fact changes how you should memorise.
+      body: `A solo performer has no one to throw them a line. That single fact changes how you should memorize.
 
-**Rote memorisation is the fragile kind.** Learning the text as a sequence of sounds works until adrenaline interrupts the sequence, and then there is nothing underneath it. Performers who go blank have almost always memorised words rather than structure.
+**Rote memorisation is the fragile kind.** Learning the text as a sequence of sounds works until adrenaline interrupts the sequence, and then there is nothing underneath it. Performers who go blank have almost always memorized words rather than structure.
 
-**What to memorise instead, in this order:**
+**What to memorize instead, in this order:**
 
 1. **The sequence of wants.** What you are trying to get, section by section. If you know you are trying to make them understand she was not that woman, you can find your way back to the words.
 2. **The turns.** The moments where something changes. These are the load-bearing beams of the piece.
@@ -362,7 +362,7 @@ Linklater's *Freeing the Natural Voice* (1976) is the standard reference for the
 
 - **Stop and breathe.** An audience reads a confident pause as intention. Two seconds is nothing.
 - **Go to the want.** Say what your speaker is trying to do, in your own words if necessary. You wrote this; you can paraphrase it.
-- **Do not apologise or comment.** Breaking to say "sorry" ends the piece for the audience far more completely than a pause does.
+- **Do not apologize or comment.** Breaking to say "sorry" ends the piece for the audience far more completely than a pause does.
 
 **And the reassurance that is actually true:** the audience does not know your script. A dropped sentence is invisible to everyone but you. The performances people remember as disasters are almost always ones where the performer visibly panicked, not ones where a line went missing.
 
@@ -385,7 +385,7 @@ Linklater's *Freeing the Natural Voice* (1976) is the standard reference for the
             options: [
               "The performer has not chosen an active verb and is describing",
               "The writing needs to be cut and rewritten from scratch",
-              "The performer has memorised the section too thoroughly",
+              "The performer has memorized the section too thoroughly",
               "The lighting state does not match the emotional tone",
             ],
             correctIndex: 0,
@@ -412,7 +412,7 @@ Linklater's *Freeing the Natural Voice* (1976) is the standard reference for the
               "A method for projecting the voice without strain",
               "A live choice about position relative to the audience, changeable mid-piece",
               "A way of ranking characters by social importance in the script",
-              "A technique for memorising long passages of text",
+              "A technique for memorizing long passages of text",
             ],
             correctIndex: 1,
             explanation:
@@ -435,7 +435,7 @@ Linklater's *Freeing the Natural Voice* (1976) is the standard reference for the
           {
             prompt: "Why mark breath into the script before memorising?",
             options: [
-              "Because you memorise the breathing along with the words",
+              "Because you memorize the breathing along with the words",
               "Because breath marks help a director follow the script",
               "Because it shortens the total memorisation time required",
               "Because adrenaline makes breathing irrelevant in performance",
@@ -468,7 +468,7 @@ Linklater's *Freeing the Natural Voice* (1976) is the standard reference for the
             ],
             correctIndex: 0,
             explanation:
-              "An audience reads a confident pause as intention. Breaking to apologise ends the piece for them far more completely than the pause itself does, and they do not know the script anyway.",
+              "An audience reads a confident pause as intention. Breaking to apologize ends the piece for them far more completely than the pause itself does, and they do not know the script anyway.",
             sourceLessonSlug: "mono2-memorisation",
           },
           {
@@ -501,7 +501,7 @@ Linklater's *Freeing the Natural Voice* (1976) is the standard reference for the
             prompt: "What does the course say about the pause after a hard line?",
             options: [
               "It is where the audience does the work, and cutting it robs them",
-              "It should be minimised to keep the piece moving",
+              "It should be minimized to keep the piece moving",
               "It should be filled with a physical action to avoid dead air",
               "It matters only in comedy, where timing is structural",
             ],
@@ -608,7 +608,7 @@ If you have one usable effect, spend it on the turn.
 
 **Tell someone.** If the material is heavy, one person should know what you are performing and roughly when. Solo touring is isolating by design.
 
-**And the honest note about content warnings.** They are contested, and the practical case for them here is narrow and strong: you are alone with an audience with no cast to manage a reaction, and someone leaving distressed mid-piece is a situation you will be handling by yourself while continuing to perform. A brief note in the programme costs you nothing.
+**And the honest note about content warnings.** They are contested, and the practical case for them here is narrow and strong: you are alone with an audience with no cast to manage a reaction, and someone leaving distressed mid-piece is a situation you will be handling by yourself while continuing to perform. A brief note in the program costs you nothing.
 
 :::reveal What is the difference between performing a difficult memory and re-living it, and why does audience response make the distinction hard to hold? ||| Performing means remaining in control of the telling: you are describing the day rather than being back inside it. Re-living means the event is happening to you again in front of people, and audiences usually read that as frightening rather than moving. It is hard to hold because audiences respond strongly to visible distress, which creates a feedback loop where the more the piece costs you, the better it can seem to be going, so the incentive runs precisely against your interest.
 
@@ -641,7 +641,7 @@ If you have one usable effect, spend it on the turn.
 
 **If the material is heavy**, include a line on how you handled the ten minutes after, per Lesson 11.
 
-**What a strong submission looks like.** Specific evidence rather than impressions, at least one cut, and at least one defended decision. **A performance that went badly and was analysed honestly scores higher than one that went well and was not**, because only the first one contains the work.`,
+**What a strong submission looks like.** Specific evidence rather than impressions, at least one cut, and at least one defended decision. **A performance that went badly and was analyzed honestly scores higher than one that went well and was not**, because only the first one contains the work.`,
     },
     {
       slug: "mono2-review-and-sources",
@@ -659,9 +659,9 @@ If you have one usable effect, spend it on the turn.
 
 **Every line is doing something.** What do I want, and what am I doing to get it, as an active verb. Objective is want; action is how; obstacle is what makes it hard. Status is a live choice and a piece at one status feels monotonous.
 
-**Voice is athletic.** Support from the diaphragm. Mark breath before memorising. Nerves narrow range and speed you up, and the pause after a hard line is where the audience does the work.
+**Voice is athletic.** Support from the diaphragm. Mark breath before memorizing. Nerves narrow range and speed you up, and the pause after a hard line is where the audience does the work.
 
-**Memorise wants, turns and transitions before words.** Knowing the want gives you a detour; knowing the words gives you one path. When you blank: stop, breathe, go to the want, do not apologise.
+**Memorise wants, turns and transitions before words.** Knowing the want gives you a detour; knowing the words gives you one path. When you blank: stop, breathe, go to the want, do not apologize.
 
 **Solo rehearsal entrenches.** Record and watch in three focused passes. Ask two narrow questions. Change one variable. Leave it alone. Trust the structure over your enthusiasm.
 

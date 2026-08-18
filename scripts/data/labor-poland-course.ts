@@ -60,9 +60,9 @@ export const LABOR_POLAND_COURSE: AuthoredCourse = {
 
 Read those two rows again, because the distance between them is the strangest fact in this whole track.
 
-**Row one is one of the great stories of the twentieth century.** A single trade union, in a country of about 36 million people, signed up something like **ten million members in a little over a year** (European Solidarity Centre). Not ten million voters. Ten million people who joined an organisation the government had spent thirty-five years insisting was unnecessary, because, the government said, Poland was *already* a workers' state. This was the largest membership organisation the communist bloc ever produced, and it produced it in **opposition** to the state that ruled it.
+**Row one is one of the great stories of the twentieth century.** A single trade union, in a country of about 36 million people, signed up something like **ten million members in a little over a year** (European Solidarity Centre). Not ten million voters. Ten million people who joined an organization the government had spent thirty-five years insisting was unnecessary, because, the government said, Poland was *already* a workers' state. This was the largest membership organization the communist bloc ever produced, and it produced it in **opposition** to the state that ruled it.
 
-**Row two is what that same movement's country looks like now.** Fewer than one Polish worker in ten carries a union card. Collective bargaining reaches barely more (Section 5 has the exact figure). By the ordinary measuring sticks of this course, the ones you learned in the anchor, Poland today has a **weak** labour movement.
+**Row two is what that same movement's country looks like now.** Fewer than one Polish worker in ten carries a union card. Collective bargaining reaches barely more (Section 5 has the exact figure). By the ordinary measuring sticks of this course, the ones you learned in the anchor, Poland today has a **weak** labor movement.
 
 **How does a country go from the first row to the second?** That question is the course. And the answer is not "the union failed." The answer is much more interesting, and much more uncomfortable, than that.
 
@@ -83,7 +83,7 @@ Read those two rows again, because the distance between them is the strangest fa
       section: "Section 1 · The paradox that runs the whole course",
       body: `If you have taken **The History of Unions: America and the World**, the anchor course of this track, you already own the tool this course runs on. It hands you four questions you can ask of any country on earth:
 
-1. **Who is allowed to organise?**
+1. **Who is allowed to organize?**
 2. **Who is excluded?**
 3. **Who bargains with whom, and at what level?**
 4. **What happens to you if you try?**
@@ -92,17 +92,17 @@ Read those two rows again, because the distance between them is the strangest fa
 
 Here are Poland's answers in advance. Everything after this lesson is the detail, and notice how the answers **change** between 1980 and today, which no other country in this track does so violently.
 
-**Q1, Who is allowed to organise?** This is the question Poland turns into world history. In a **one-party communist state**, the honest answer in 1980 was: *nobody, independently.* The only legal unions were run by the Party and existed to transmit its decisions downward, not to represent workers upward. So when Polish workers demanded a union **"independent of the Party,"** they were not asking for better pay. They were asking for a centre of organised power the Party did not control, which, in a state that claimed total authority, is indistinguishable from asking **who governs.** That is why this course exists. **In a one-party state, Question 1 *is* the question of the state itself.** After 1989, the answer flipped completely: Poland became a democracy where anyone may organise, and, as you will see, hardly anyone does.
+**Q1, Who is allowed to organize?** This is the question Poland turns into world history. In a **one-party communist state**, the honest answer in 1980 was: *nobody, independently.* The only legal unions were run by the Party and existed to transmit its decisions downward, not to represent workers upward. So when Polish workers demanded a union **"independent of the Party,"** they were not asking for better pay. They were asking for a center of organized power the Party did not control, which, in a state that claimed total authority, is indistinguishable from asking **who governs.** That is why this course exists. **In a one-party state, Question 1 *is* the question of the state itself.** After 1989, the answer flipped completely: Poland became a democracy where anyone may organize, and, as you will see, hardly anyone does.
 
-**Q2, Who is excluded?** In 1980, everyone, from independent organisation, that was the point. Today the exclusions are subtler and, for a modern worker, more consequential: a very large share of Polish workers are employed not on a **Labour Code contract** but on a **civil-law contract**, the "junk contracts" of Section 6, which places them outside much of labour law, including, in practice, the machinery of collective bargaining. Every labour system has a door, and people standing outside it. In Poland the door is not marked "agricultural worker," as in the anchor's account of the US New Deal. It is marked "you are not technically an employee."
+**Q2, Who is excluded?** In 1980, everyone, from independent organization, that was the point. Today the exclusions are subtler and, for a modern worker, more consequential: a very large share of Polish workers are employed not on a **Labour Code contract** but on a **civil-law contract**, the "junk contracts" of Section 6, which places them outside much of labor law, including, in practice, the machinery of collective bargaining. Every labor system has a door, and people standing outside it. In Poland the door is not marked "agricultural worker," as in the anchor's account of the US New Deal. It is marked "you are not technically an employee."
 
 **Q3, Who bargains with whom, and at what level?** Here is Poland's quiet tragedy, and the mirror image of the Germany course. Germany bargains for whole **sectors**, above the firm, which is why a seventh of German workers being union members produces coverage for half of them. Poland bargains, when it bargains at all, **company by company**, and a company agreement in Poland generally requires a union to exist *inside that company* first (ETUI, 2023). Sectoral agreements have all but vanished. So coverage cannot outrun membership the way it does in Germany; it tracks it, low, and falling. Section 5 is this question.
 
-**Q4, What happens to you if you try?** In 1981, the answer was **martial law**: the union banned, thousands interned, and at the Wujek colliery nine striking miners **shot dead** (Section 3). That is the most extreme answer to Question 4 in the entire Wave-1 group of this track, and it is why the course teaches the repression and not only the victory. Today the answer is an ordinary democratic one, you may organise freely, and the everyday obstacles are the ones a low-density, fragmented system throws up, not tanks.
+**Q4, What happens to you if you try?** In 1981, the answer was **martial law**: the union banned, thousands interned, and at the Wujek colliery nine striking miners **shot dead** (Section 3). That is the most extreme answer to Question 4 in the entire Wave-1 group of this track, and it is why the course teaches the repression and not only the victory. Today the answer is an ordinary democratic one, you may organize freely, and the everyday obstacles are the ones a low-density, fragmented system throws up, not tanks.
 
-**One map for the whole course.** Watch each of these four answers move: from a one-party state where organising *was* revolution, through the revolution itself, to a democracy where the right to organise is secure and the *practice* of it has quietly withered. That arc, right won, workplace lost, is the thing worth carrying out of here.
+**One map for the whole course.** Watch each of these four answers move: from a one-party state where organizing *was* revolution, through the revolution itself, to a democracy where the right to organize is secure and the *practice* of it has quietly withered. That arc, right won, workplace lost, is the thing worth carrying out of here.
 
-:::reveal In a normal democracy, "who is allowed to organise?" and "who governs the country?" are two separate questions. Why were they the SAME question in communist Poland in 1980? ||| Because the state was a one-party state that claimed total authority and permitted only Party-run unions. An *independent* union would be a large centre of organised power outside the Party's control, which, in a state built on the Party controlling everything, is the same thing as an alternative government. So demanding a free union was, structurally, demanding to break the Party's monopoly on power.
+:::reveal In a normal democracy, "who is allowed to organise?" and "who governs the country?" are two separate questions. Why were they the SAME question in communist Poland in 1980? ||| Because the state was a one-party state that claimed total authority and permitted only Party-run unions. An *independent* union would be a large center of organized power outside the Party's control, which, in a state built on the Party controlling everything, is the same thing as an alternative government. So demanding a free union was, structurally, demanding to break the Party's monopoly on power.
 
 ## Sources
 - European Trade Union Institute. (2023). *Poland: Trade unions developing after a decline* (Chapter 22). In *Trade unions in the European Union*. https://www.etui.org/sites/default/files/2023-06/Chapter22_Poland_Trade%20unions%20developing%20after%20a%20decline_2023.pdf
@@ -111,7 +111,7 @@ Here are Poland's answers in advance. Everything after this lesson is the detail
         {
           prompt: "What was Solidarność's approximate peak membership, and when?",
           answer:
-            "About 10 million members at its peak in September 1981, roughly a third of Poland's population and around 80% of wage earners (European Solidarity Centre). The largest membership organisation the communist bloc ever produced.",
+            "About 10 million members at its peak in September 1981, roughly a third of Poland's population and around 80% of wage earners (European Solidarity Centre). The largest membership organization the communist bloc ever produced.",
         },
         {
           prompt: "What is Poland's trade union density today, and how does it rank in the EU?",
@@ -133,7 +133,7 @@ Here are Poland's answers in advance. Everything after this lesson is the detail
             options: ["About 1 million", "About 10 million", "About 100,000", "About 30 million"],
             correctIndex: 1,
             explanation:
-              "About 10 million at its peak in September 1981, roughly a third of Poland and around 80% of wage earners (European Solidarity Centre). The largest membership organisation the communist bloc ever produced.",
+              "About 10 million at its peak in September 1981, roughly a third of Poland and around 80% of wage earners (European Solidarity Centre). The largest membership organization the communist bloc ever produced.",
             sourceLessonSlug: "poland-the-paradox",
           },
           {
@@ -198,7 +198,7 @@ Here are Poland's answers in advance. Everything after this lesson is the detail
             ],
             correctIndex: 0,
             explanation:
-              "An independent, self-governing union was a centre of organised power the Party did not control, indistinguishable, in a one-party state, from a challenge to who governs.",
+              "An independent, self-governing union was a center of organized power the Party did not control, indistinguishable, in a one-party state, from a challenge to who governs.",
             sourceLessonSlug: "poland-four-questions",
           },
           {
@@ -232,7 +232,7 @@ Here are Poland's answers in advance. Everything after this lesson is the detail
             options: [
               "A modest fine and a formal warning from the factory Party cell",
               "Martial law, the union banned, thousands interned, miners shot dead",
-              "Nothing; organising outside the Party had always been legal",
+              "Nothing; organizing outside the Party had always been legal",
               "Automatic promotion and a state medal for strike organisers",
             ],
             correctIndex: 1,
@@ -258,7 +258,7 @@ Here are Poland's answers in advance. Everything after this lesson is the detail
             options: ["About one in a hundred", "About one-third", "About three-quarters", "Everyone"],
             correctIndex: 1,
             explanation:
-              "Roughly a third of the population and about 80% of wage earners (European Solidarity Centre), a scale of organisation with almost no parallel anywhere.",
+              "Roughly a third of the population and about 80% of wage earners (European Solidarity Centre), a scale of organization with almost no parallel anywhere.",
             sourceLessonSlug: "poland-the-paradox",
           },
           {
@@ -284,7 +284,7 @@ Here are Poland's answers in advance. Everything after this lesson is the detail
             ],
             correctIndex: 1,
             explanation:
-              "A state that called itself a *workers'* state could not easily explain why actual workers were forbidden to organise themselves. That contradiction was the opening Solidarność drove through.",
+              "A state that called itself a *workers'* state could not easily explain why actual workers were forbidden to organize themselves. That contradiction was the opening Solidarność drove through.",
             sourceLessonSlug: "poland-four-questions",
           },
           {
@@ -329,11 +329,11 @@ Here are Poland's answers in advance. Everything after this lesson is the detail
 **The pattern, before 1980.** Polish workers had already learned that the pressure valve was a strike over prices, and that the state's reflex was violence:
 
 - **December 1970.** The government announced steep food-price rises days before Christmas. Workers in the Baltic port cities, Gdańsk, Gdynia, Szczecin, walked out and marched. The army and militia opened fire. Dozens were killed (the official and historical counts differ; the toll ran to at least several dozen). The scar of **1970**, especially in Gdynia, is central to everything that follows.
-- **June 1976.** Another attempt to raise prices set off strikes at **Radom** and the **Ursus** tractor works near Warsaw. This time the regime backed off the price rise, but arrested, beat and sacked participants. Out of the defence of those workers grew **KOR**, the Workers' Defence Committee: intellectuals and activists who provided legal and financial help to persecuted workers. **KOR is the hinge**, it linked the workers to the dissident intelligentsia and taught a crucial tactical lesson.
+- **June 1976.** Another attempt to raise prices set off strikes at **Radom** and the **Ursus** tractor works near Warsaw. This time the regime backed off the price rise, but arrested, beat and sacked participants. Out of the defense of those workers grew **KOR**, the Workers' Defence Committee: intellectuals and activists who provided legal and financial help to persecuted workers. **KOR is the hinge**, it linked the workers to the dissident intelligentsia and taught a crucial tactical lesson.
 
 **And here is the lesson the workers drew from 1970**, which changed everything in 1980: *do not march.* In 1970 they had left the workplaces and taken to the streets, where they could be shot. In 1980 they would **stay inside the factory** and hold an **occupation strike**, sit down at the workplace, control the gates, let no one provoke a fight in the open. A sit-in inside a shipyard is far harder for a government to fire on than a march down a boulevard. The **discipline of August 1980, no alcohol, no violence, stay inside, negotiate, was a deliberate answer to December 1970.**
 
-**One more piece of Polish exceptionalism, because it matters.** In **October 1978**, a Pole, Karol Wojtyła, became **Pope John Paul II**, and in **June 1979** he made a nine-day pilgrimage home. Millions attended open-air Masses organised almost entirely by Poles themselves, with the regime standing aside. For a country used to being told that nothing happened without the Party, the sight of the nation organising itself, peacefully, in numbers the state could not match, was electric. It did not cause Solidarność, but it is part of why Poles in 1980 believed a mass movement independent of the Party was even thinkable.
+**One more piece of Polish exceptionalism, because it matters.** In **October 1978**, a Pole, Karol Wojtyła, became **Pope John Paul II**, and in **June 1979** he made a nine-day pilgrimage home. Millions attended open-air Masses organized almost entirely by Poles themselves, with the regime standing aside. For a country used to being told that nothing happened without the Party, the sight of the nation organizing itself, peacefully, in numbers the state could not match, was electric. It did not cause Solidarność, but it is part of why Poles in 1980 believed a mass movement independent of the Party was even thinkable.
 
 So the strikers of August 1980 were experienced, disciplined, and connected to allies. They were not going to march, and they were not going to settle for a pay rise. Lesson 4 is what they asked for instead.
 
@@ -347,7 +347,7 @@ So the strikers of August 1980 were experienced, disciplined, and connected to a
         {
           prompt: "What are the anchor course's four questions?",
           answer:
-            "(1) Who is allowed to organise? (2) Who is excluded? (3) Who bargains with whom, and at what level? (4) What happens to you if you try? Poland's answers to all four move violently between 1980 and today.",
+            "(1) Who is allowed to organize? (2) Who is excluded? (3) Who bargains with whom, and at what level? (4) What happens to you if you try? Poland's answers to all four move violently between 1980 and today.",
         },
         {
           prompt: "How does Poland answer Question 3 (level of bargaining) differently from Germany?",
@@ -362,7 +362,7 @@ So the strikers of August 1980 were experienced, disciplined, and connected to a
       section: "Section 2 · August 1980, the strike that started it",
       body: `On **14 August 1980**, work stopped at the **Lenin Shipyard** in **Gdańsk**. The immediate spark was a firing: **Anna Walentynowicz**, a crane operator and known activist, had been dismissed months before her pension, and the workers struck partly to get her reinstated. An electrician named **Lech Wałęsa**, himself sacked from the yard years earlier, climbed over the wall to join and was chosen to lead. Keep those two names; the course returns to how differently history has treated them.
 
-**What made Gdańsk 1980 different from every earlier strike was not the shipyard. It was what happened next door.** When the shipyard management started to offer the Lenin workers a deal to end *their* strike, the strike leaders made a decision that turned a labour dispute into a revolution: **they refused to settle alone.** Dozens, then hundreds of other workplaces across the region had walked out in sympathy. Rather than take their own raise and go home, the shipyard workers formed an **Inter-factory Strike Committee**, in Polish, the *Międzyzakładowy Komitet Strajkowy*, or **MKS**, to bargain **on behalf of all of them at once.** Solidarity between factories was the whole idea; it is where the union got its name.
+**What made Gdańsk 1980 different from every earlier strike was not the shipyard. It was what happened next door.** When the shipyard management started to offer the Lenin workers a deal to end *their* strike, the strike leaders made a decision that turned a labor dispute into a revolution: **they refused to settle alone.** Dozens, then hundreds of other workplaces across the region had walked out in sympathy. Rather than take their own raise and go home, the shipyard workers formed an **Inter-factory Strike Committee**, in Polish, the *Międzyzakładowy Komitet Strajkowy*, or **MKS**, to bargain **on behalf of all of them at once.** Solidarity between factories was the whole idea; it is where the union got its name.
 
 **The MKS drew up 21 demands** and posted them, hand-lettered on two large plywood boards, on **Gate No. 2** of the shipyard. Those boards survive, and in **2003 UNESCO inscribed them on its Memory of the World register**, the same register that holds the Magna Carta and Beethoven's Ninth. That means the 21 Demands are a **citable primary artifact**, not a legend: you can read what the workers actually asked for, in the order they asked for it.
 
@@ -372,11 +372,11 @@ So the strikers of August 1980 were experienced, disciplined, and connected to a
 
 Only **after** that came the right to strike (demand 2), free speech (demand 3), the reinstatement of sacked workers (demand 4), and (much further down the list) pay, food supplies, pensions and health care.
 
-**Sit with demand number one, because it is the reason this course exists.** These were not full-time revolutionaries. They were shipyard workers who could have gone home with a raise. Instead, the first thing they wrote down, ahead of wages, ahead of bread, was the right to an **organisation of their own that the Party did not control.** They understood, better than most political theorists, that in their system every other demand was worthless without that one: a pay rise the Party could grant it could also take back, but a free union could keep fighting for the next one. **The instrument mattered more than any single outcome.**
+**Sit with demand number one, because it is the reason this course exists.** These were not full-time revolutionaries. They were shipyard workers who could have gone home with a raise. Instead, the first thing they wrote down, ahead of wages, ahead of bread, was the right to an **organization of their own that the Party did not control.** They understood, better than most political theorists, that in their system every other demand was worthless without that one: a pay rise the Party could grant it could also take back, but a free union could keep fighting for the next one. **The instrument mattered more than any single outcome.**
 
 **One detail that shows how deep the hypocrisy ran.** Demand 1 cited **ILO Convention No. 87**, the international treaty guaranteeing freedom of association, *because Poland had already ratified it, back in 1957.* The workers were not asking for a new right. They were asking the government to obey a treaty it had signed twenty-three years earlier and ignored ever since. That is a move you will see again and again in this track: the floor exists on paper; the fight is to make it real.
 
-:::reveal Of the 21 Demands posted at the Gdańsk shipyard in August 1980, the very first was not about wages, food, or even the right to strike. What was it, and why did the workers put it first? ||| Demand 1 was the acceptance of *free trade unions independent of the Party and employers* (citing ILO Convention No. 87). They put it first because every other gain was worthless without it: a pay rise the Party granted it could revoke, but an independent union could keep fighting for the next demand and the next. The instrument of self-organisation mattered more than any single outcome, which is precisely why it terrified the state.
+:::reveal Of the 21 Demands posted at the Gdańsk shipyard in August 1980, the very first was not about wages, food, or even the right to strike. What was it, and why did the workers put it first? ||| Demand 1 was the acceptance of *free trade unions independent of the Party and employers* (citing ILO Convention No. 87). They put it first because every other gain was worthless without it: a pay rise the Party granted it could revoke, but an independent union could keep fighting for the next demand and the next. The instrument of self-organization mattered more than any single outcome, which is precisely why it terrified the state.
 
 ## Sources
 - UNESCO. (n.d.). *Twenty-one demands, Gdańsk, August 1980: The birth of the Solidarity trade union*. Memory of the World Register. https://www.unesco.org/en/memory-world/twenty-one-demands-gdansk-august-1980-birth-solidarity-trades-union-massive-social-movement
@@ -386,7 +386,7 @@ Only **after** that came the right to strike (demand 2), free speech (demand 3),
         {
           prompt: "What were the December 1970 and June 1976 events, and why do they matter for 1980?",
           answer:
-            "Both were worker uprisings against government food-price rises, Baltic ports in 1970 (met with army gunfire, dozens killed) and Radom/Ursus in 1976 (price rise withdrawn, but participants beaten and sacked, giving rise to the KOR defence committee). They taught the 1980 strikers to stay inside the factory rather than march, and connected workers to dissident allies.",
+            "Both were worker uprisings against government food-price rises, Baltic ports in 1970 (met with army gunfire, dozens killed) and Radom/Ursus in 1976 (price rise withdrawn, but participants beaten and sacked, giving rise to the KOR defense committee). They taught the 1980 strikers to stay inside the factory rather than march, and connected workers to dissident allies.",
         },
         {
           prompt: "Why did a 'workers' state' have no channel for worker grievances?",
@@ -415,7 +415,7 @@ Follow this carefully, because it is exactly the kind of detail that gets report
 
 That is what "who may organise?" looks like when the answer is genuinely up for grabs: not a vote, but a ten-million-strong movement, a general-strike threat, and a supreme court, fighting over a single paragraph.
 
-:::reveal When a Warsaw court tried to register Solidarność in October 1980, it inserted a clause into the union's own statute acknowledging the Communist Party's "leading role." Why did the union fight this all the way to the Supreme Court rather than accept it to get registered? ||| Because a clause in the union's *own founding charter* affirming Party supremacy would make it an independent union in name only, a Party body in law. Solidarność existed precisely to be a centre of power the Party did not control. It threatened a general strike, and on 10 November 1980 the Supreme Court struck the clause out of the statute, relegating the reference to a harmless appendix quoting the Gdańsk Agreement. Where the sentence sat was the difference between a real union and a decorative one.
+:::reveal When a Warsaw court tried to register Solidarność in October 1980, it inserted a clause into the union's own statute acknowledging the Communist Party's "leading role." Why did the union fight this all the way to the Supreme Court rather than accept it to get registered? ||| Because a clause in the union's *own founding charter* affirming Party supremacy would make it an independent union in name only, a Party body in law. Solidarność existed precisely to be a center of power the Party did not control. It threatened a general strike, and on 10 November 1980 the Supreme Court struck the clause out of the statute, relegating the reference to a harmless appendix quoting the Gdańsk Agreement. Where the sentence sat was the difference between a real union and a decorative one.
 
 ## Sources
 - U.S. Bureau of Labor Statistics. (1989, September). *How Poland's Solidarity won freedom of association*. Monthly Labor Review. https://www.bls.gov/opub/mlr/1989/09/art5full.pdf
@@ -448,7 +448,7 @@ That is what "who may organise?" looks like when the answer is genuinely up for 
               "They marched at night through Gdańsk to avoid the army patrols",
               "They held an occupation strike, staying inside and holding the gates",
               "They fought the ZOMO riot militia with improvised petrol bombs",
-              "They fled the country and organised from Sweden and West Germany",
+              "They fled the country and organized from Sweden and West Germany",
             ],
             correctIndex: 1,
             explanation:
@@ -474,11 +474,11 @@ That is what "who may organise?" looks like when the answer is genuinely up for 
               "A secret police unit that infiltrated the shipyards",
               "The Workers' Defence Committee, aiding persecuted workers",
               "A Party-run union federation set up in Radom in 1976",
-              "A NATO advisory body on Eastern European labour law",
+              "A NATO advisory body on Eastern European labor law",
             ],
             correctIndex: 1,
             explanation:
-              "KOR is the hinge that connected workers to dissident allies, one reason the 1980 movement was so much better organised than earlier revolts.",
+              "KOR is the hinge that connected workers to dissident allies, one reason the 1980 movement was so much better organized than earlier revolts.",
             sourceLessonSlug: "poland-workers-state",
           },
           {
@@ -504,7 +504,7 @@ That is what "who may organise?" looks like when the answer is genuinely up for 
             ],
             correctIndex: 1,
             explanation:
-              "Refusing to settle alone and bargaining for everyone together turned a single labour dispute into a national movement, and named it.",
+              "Refusing to settle alone and bargaining for everyone together turned a single labor dispute into a national movement, and named it.",
             sourceLessonSlug: "poland-21-demands",
           },
           {
@@ -556,7 +556,7 @@ That is what "who may organise?" looks like when the answer is genuinely up for 
             ],
             correctIndex: 1,
             explanation:
-              "Signed by Wałęsa and deputy PM Jagielski. It was a union right, not yet a political revolution, but it cracked the Party's monopoly on organisation.",
+              "Signed by Wałęsa and deputy PM Jagielski. It was a union right, not yet a political revolution, but it cracked the Party's monopoly on organization.",
             sourceLessonSlug: "poland-gdansk-agreement",
           },
           {
@@ -569,7 +569,7 @@ That is what "who may organise?" looks like when the answer is genuinely up for 
             ],
             correctIndex: 1,
             explanation:
-              "Merging into NSZZ 'Solidarność' is why the membership figures are so staggering, everyone was joining the same organisation.",
+              "Merging into NSZZ 'Solidarność' is why the membership figures are so staggering, everyone was joining the same organization.",
             sourceLessonSlug: "poland-gdansk-agreement",
           },
           {
@@ -615,13 +615,13 @@ That is what "who may organise?" looks like when the answer is genuinely up for 
             prompt: "How did the June 1979 papal pilgrimage of John Paul II contribute to the climate of 1980?",
             options: [
               "It funded the 1980 strike directly from Vatican funds",
-              "Millions organised themselves peacefully for open-air Masses",
+              "Millions organized themselves peacefully for open-air Masses",
               "It ordered Polish Catholics to strike the following summer",
               "It had no measurable effect on the August 1980 strikes",
             ],
             correctIndex: 1,
             explanation:
-              "The course is careful: the pilgrimage did not *cause* Solidarność, but the sight of the nation organising itself outside the Party helped Poles believe such a movement was possible.",
+              "The course is careful: the pilgrimage did not *cause* Solidarność, but the sight of the nation organizing itself outside the Party helped Poles believe such a movement was possible.",
             sourceLessonSlug: "poland-workers-state",
           },
           {
@@ -648,17 +648,17 @@ That is what "who may organise?" looks like when the answer is genuinely up for 
       section: "Section 3 · Triumph, and the state's answer",
       body: `Between the Gdańsk Agreement and what came next lie about **sixteen months**, from **September 1980 to December 1981**, when Solidarność existed **legally**, out in the open, ten million strong. It is worth pausing on this window, because it is the only time in the story when the union got to simply *be* a union in a communist country, and because understanding how alive it was makes what happened next land properly.
 
-**What ten million members actually meant.** Solidarność was never only a labour union in these months. With roughly a third of the population carrying a card, it became something closer to an entire **parallel society**: it ran its own printing presses and bulletins in a country of state media; it debated openly in a country of enforced silence; it organised, argued, and elected its own leaders democratically in a country that had not held a free election in decades. Historians sometimes call this period the **"carnival of Solidarity"**, a burst of self-organisation and free expression that Poles had not experienced in their adult lives.
+**What ten million members actually meant.** Solidarność was never only a labor union in these months. With roughly a third of the population carrying a card, it became something closer to an entire **parallel society**: it ran its own printing presses and bulletins in a country of state media; it debated openly in a country of enforced silence; it organized, argued, and elected its own leaders democratically in a country that had not held a free election in decades. Historians sometimes call this period the **"carnival of Solidarity"**, a burst of self-organization and free expression that Poles had not experienced in their adult lives.
 
 **But it was not a holiday, and the course will not pretend it was.** Three pressures built through 1981:
 
 1. **The economy was collapsing.** Poland was deep in debt and mismanagement; shortages worsened; rationing spread to basic goods. A union cannot bargain its way out of empty shelves, and the daily reality for members was queues, not victories.
-2. **The state kept testing the limits.** In **March 1981**, in the **Bydgoszcz** crisis, police beat Solidarity activists, nearly triggering a general strike and showing how fragile the settlement was. Farmers had to fight their own battle to register **Rural Solidarity** (*NSZZ Rolników Indywidualnych "Solidarność"*), finally recognised in **May 1981**.
+2. **The state kept testing the limits.** In **March 1981**, in the **Bydgoszcz** crisis, police beat Solidarity activists, nearly triggering a general strike and showing how fragile the settlement was. Farmers had to fight their own battle to register **Rural Solidarity** (*NSZZ Rolników Indywidualnych "Solidarność"*), finally recognized in **May 1981**.
 3. **Moscow was watching.** An independent mass movement in a Warsaw Pact country was exactly the thing the Soviet Union had crushed with tanks in **Hungary (1956)** and **Czechoslovakia (1968)**. The threat of Soviet military intervention hung over every decision Solidarność made, and it shaped the union's caution.
 
 So the sixteen months were exhilarating and precarious at the same time: a genuine democratic explosion happening inside a police state that was going broke, watched by a superpower with a history of sending in the army. Something was going to give. In December 1981, it did, and not from the direction most feared.
 
-:::reveal Why do historians sometimes call the sixteen months of legal Solidarność the "carnival of Solidarity", and what makes that phrase only half the truth? ||| Because with a third of the country as members, Solidarność became a parallel society, free presses, open debate, democratic elections, things Poles had not known in their adult lives, an exhilarating burst of self-organisation. But it is only half the truth because those same months were shadowed by a collapsing economy and rationing, state provocations like the Bydgoszcz beatings, and the constant threat of Soviet military intervention. It was a democratic explosion inside a bankrupt police state watched by a superpower, thrilling and precarious at once.
+:::reveal Why do historians sometimes call the sixteen months of legal Solidarność the "carnival of Solidarity", and what makes that phrase only half the truth? ||| Because with a third of the country as members, Solidarność became a parallel society, free presses, open debate, democratic elections, things Poles had not known in their adult lives, an exhilarating burst of self-organization. But it is only half the truth because those same months were shadowed by a collapsing economy and rationing, state provocations like the Bydgoszcz beatings, and the constant threat of Soviet military intervention. It was a democratic explosion inside a bankrupt police state watched by a superpower, thrilling and precarious at once.
 
 ## Sources
 - European Solidarity Centre. (n.d.). *How did Solidarność (Solidarity) come to be?* https://ecs.gda.pl/en/how-did-solidarnosc-solidarity-come-to-be/
@@ -682,7 +682,7 @@ So the sixteen months were exhilarating and precarious at the same time: a genui
       section: "Section 3 · Triumph, and the state's answer",
       body: `This is the lesson the triumphant version leaves out, and it is why this course teaches the repression and not only the victory. **The most important thing a student can carry out of the Poland story is that Solidarność did not win in a straight line. It was crushed first, and stayed crushed for most of a decade.**
 
-**In the early hours of 13 December 1981**, General **Wojciech Jaruzelski**, who by then held all three of the top posts (head of the Party, prime minister, and defence minister), declared **martial law** (*stan wojenny*). Power passed to a **Military Council of National Salvation** (the **WRON**). Overnight:
+**In the early hours of 13 December 1981**, General **Wojciech Jaruzelski**, who by then held all three of the top posts (head of the Party, prime minister, and defense minister), declared **martial law** (*stan wojenny*). Power passed to a **Military Council of National Salvation** (the **WRON**). Overnight:
 
 - Solidarność was **suspended**, its offices seized, its presses shut, telephones cut, travel between regions banned, a curfew imposed.
 - Roughly **ten thousand** Solidarity activists and advisers were **interned** without trial, including most of the national leadership and **Lech Wałęsa** himself.
@@ -690,7 +690,7 @@ So the sixteen months were exhilarating and precarious at the same time: a genui
 
 **And then the killing that the course refuses to round off.** At the **Wujek coal mine** in Katowice, miners occupied the pit and struck against martial law. On **16 December 1981**, three days in, police and army units moved in, and officers **opened fire on the miners, killing nine and wounding many more.** They were unarmed. Name the toll plainly: **nine dead men at Wujek** is the single sharpest answer to the anchor's Question 4, *what happens to you if you try?*, anywhere in the Wave-1 courses.
 
-**The union did not die, but it went underground.** Formally, Solidarność was not just suspended but **outlawed by statute on 8 October 1982**, when a new trade-union law dissolved it. Martial law itself was **suspended at the end of 1982 and formally lifted on 22 July 1983.** Through those years and beyond, Solidarność survived as an **underground organisation**, clandestine presses, smuggled funds, an entire secret civil society, while its leaders moved in and out of detention. In **1983, Lech Wałęsa was awarded the Nobel Peace Prize** (his wife accepted it; he feared he would not be allowed back into Poland if he travelled). In **October 1984**, the secret police **abducted and murdered Father Jerzy Popiełuszko**, a priest closely associated with the movement, a killing that, unusually, led to a public trial of the officers responsible, and that hardened opposition further.
+**The union did not die, but it went underground.** Formally, Solidarność was not just suspended but **outlawed by statute on 8 October 1982**, when a new trade-union law dissolved it. Martial law itself was **suspended at the end of 1982 and formally lifted on 22 July 1983.** Through those years and beyond, Solidarność survived as an **underground organization**, clandestine presses, smuggled funds, an entire secret civil society, while its leaders moved in and out of detention. In **1983, Lech Wałęsa was awarded the Nobel Peace Prize** (his wife accepted it; he feared he would not be allowed back into Poland if he traveled). In **October 1984**, the secret police **abducted and murdered Father Jerzy Popiełuszko**, a priest closely associated with the movement, a killing that, unusually, led to a public trial of the officers responsible, and that hardened opposition further.
 
 **Hold the whole shape of this in your head, because it is the honest one.** A union of ten million was defeated by a state willing to use its army against it, and it spent roughly seven years, 1982 to 1989, banned, hunted, and operating in secret. When Solidarność finally won, it did **not** win because it was never beaten. It won because it **survived being beaten**, and because the state that beat it eventually ran out of money and options. That is a harder and truer story than "the workers marched and freedom came," and it is the one worth knowing.
 
@@ -704,7 +704,7 @@ So the sixteen months were exhilarating and precarious at the same time: a genui
         {
           prompt: "What made Solidarność, in 1980-81, 'more than a union'?",
           answer:
-            "With ~10 million members it became a parallel society, running independent presses and bulletins, debating openly, and electing its leaders democratically inside a one-party state. The 'carnival of Solidarity' was a burst of free self-organisation Poles had not known in their adult lives.",
+            "With ~10 million members it became a parallel society, running independent presses and bulletins, debating openly, and electing its leaders democratically inside a one-party state. The 'carnival of Solidarity' was a burst of free self-organization Poles had not known in their adult lives.",
         },
         {
           prompt: "What three pressures built during 1981?",
@@ -733,13 +733,13 @@ So the sixteen months were exhilarating and precarious at the same time: a genui
             prompt: "What is meant by the 'carnival of Solidarity'?",
             options: [
               "A music festival the union sponsored in Gdańsk each summer",
-              "The 1980-81 burst of free self-organisation and open debate",
+              "The 1980-81 burst of free self-organization and open debate",
               "The street celebrations that followed the 1989 election",
               "A Party propaganda campaign mocking the shipyard strikers",
             ],
             correctIndex: 1,
             explanation:
-              "With a third of the country as members, the union became far more than a labour organisation, an entire free civil society inside a one-party state.",
+              "With a third of the country as members, the union became far more than a labor organization, an entire free civil society inside a one-party state.",
             sourceLessonSlug: "poland-sixteen-months",
           },
           {
@@ -838,7 +838,7 @@ So the sixteen months were exhilarating and precarious at the same time: a genui
             ],
             correctIndex: 0,
             explanation:
-              "His wife accepted it; he feared he would not be allowed back into Poland if he travelled to collect it himself.",
+              "His wife accepted it; he feared he would not be allowed back into Poland if he traveled to collect it himself.",
             sourceLessonSlug: "poland-martial-law",
           },
           {
@@ -885,7 +885,7 @@ So the sixteen months were exhilarating and precarious at the same time: a genui
             options: ["May 1981", "1976", "1989", "1970"],
             correctIndex: 0,
             explanation:
-              "NSZZ Rolników Indywidualnych 'Solidarność' was recognised in May 1981, after its own registration struggle, part of the movement's spread beyond industry.",
+              "NSZZ Rolników Indywidualnych 'Solidarność' was recognized in May 1981, after its own registration struggle, part of the movement's spread beyond industry.",
             sourceLessonSlug: "poland-sixteen-months",
           },
           {
@@ -912,12 +912,12 @@ So the sixteen months were exhilarating and precarious at the same time: a genui
       section: "Section 4 · 1989, the union at the table",
       body: `By the late 1980s the Polish state was **exhausted and broke.** The economy that martial law was supposed to stabilise had not recovered; foreign debt was crushing; and a fresh **wave of strikes in 1988**, this time led partly by a younger generation, showed that repression had bought time, not peace. The regime faced a choice it had spent a decade avoiding: keep suppressing a movement it could not kill, or **talk to it.** It chose to talk. That decision is the most remarkable thing about Poland's transition, and Solidarność's role in it is why this course exists.
 
-**The Round Table.** From **6 February to 5 April 1989**, the government sat across an actual round table from the still-technically-illegal Solidarność, the union it had banned seven years earlier, and negotiated the terms of sharing power. Think about how strange that is: the state's designated negotiating partner for the future of the country was **a trade union.** Not an army, not a rival party, not a foreign power. A union of workers was the institution with enough legitimacy and organisation to speak for the society against the state.
+**The Round Table.** From **6 February to 5 April 1989**, the government sat across an actual round table from the still-technically-illegal Solidarność, the union it had banned seven years earlier, and negotiated the terms of sharing power. Think about how strange that is: the state's designated negotiating partner for the future of the country was **a trade union.** Not an army, not a rival party, not a foreign power. A union of workers was the institution with enough legitimacy and organization to speak for the society against the state.
 
 **The deal.** The Round Table produced two headline outcomes:
 
-1. **Solidarność was relegalised**, allowed to exist and organise again.
-2. **Partly-free elections** were scheduled. The compromise was carefully rigged in the Party's favour: in the lower house (the **Sejm**), only **35% of the seats** would be openly contested, the Party and its allies reserved the other 65% for themselves. But a brand-new upper house, the **Senate**, would be **entirely freely elected.** The Party expected to manage the outcome.
+1. **Solidarność was relegalised**, allowed to exist and organize again.
+2. **Partly-free elections** were scheduled. The compromise was carefully rigged in the Party's favor: in the lower house (the **Sejm**), only **35% of the seats** would be openly contested, the Party and its allies reserved the other 65% for themselves. But a brand-new upper house, the **Senate**, would be **entirely freely elected.** The Party expected to manage the outcome.
 
 **The election, 4 June 1989.** It did not go as the Party expected. Voting for Solidarity's Citizens' Committee candidates, Poles delivered a landslide so total it broke the arrangement: Solidarność won **every single one** of the 35% of Sejm seats it was allowed to contest, and **99 of the 100 seats** in the freely-elected Senate. The communist candidates, even running unopposed on the reserved list, were humiliated when voters crossed their names off. The "managed" election had become a **referendum on communist rule, and communism lost.**
 
@@ -927,7 +927,7 @@ So the sixteen months were exhilarating and precarious at the same time: a genui
 
 And that, precisely, is where its troubles began. Winning the country turned out to be the easy part. Lesson 9 is the bill.
 
-:::reveal In 1989 the Polish communist government needed a negotiating partner to arrange a transition. Why is it so striking that the partner was a trade union? ||| Because in most transitions the state bargains with an army, a rival party, or a foreign power. In Poland the institution with enough legitimacy and organisation to speak for the whole society against the state was a *union of workers*, Solidarność. It negotiated partly-free elections at the Round Table, won them in a landslide on 4 June 1989, and formed the first non-communist government in the Soviet bloc. A trade union was the primary vehicle of a national political revolution, which no other country in this track can show.
+:::reveal In 1989 the Polish communist government needed a negotiating partner to arrange a transition. Why is it so striking that the partner was a trade union? ||| Because in most transitions the state bargains with an army, a rival party, or a foreign power. In Poland the institution with enough legitimacy and organization to speak for the whole society against the state was a *union of workers*, Solidarność. It negotiated partly-free elections at the Round Table, won them in a landslide on 4 June 1989, and formed the first non-communist government in the Soviet bloc. A trade union was the primary vehicle of a national political revolution, which no other country in this track can show.
 
 ## Sources
 - European Solidarity Centre. (n.d.). *How did Solidarność (Solidarity) come to be?* https://ecs.gda.pl/en/how-did-solidarnosc-solidarity-come-to-be/
@@ -960,7 +960,7 @@ The Mazowiecki government inherited an economy in freefall: hyperinflation, empt
 
 **Read that as the mechanism it is, not just an irony.** The very shipyard that produced Solidarność, the Gdańsk yard, faced restructuring and decline in the years after the movement it birthed took power. A union that had promised workers dignity and security found itself, in office, administering insecurity to them. Many members felt betrayed, and the movement began to **fracture**: the moral authority of "Solidarity" splintered into competing camps almost immediately, in a 1990 feud between the Wałęsa and Mazowiecki wings that Poles called the **"war at the top"** (*wojna na górze*).
 
-**This is the deepest lesson in the course, so let it sit.** It is possible for a union to win the largest political victory a union has ever won and, by that very victory, be placed in the position of hurting the workers it represents. Solidarność was not corrupt and it was not stupid; it faced a genuinely broken economy with no painless options. But **the workplace and the country are different battlefields, and winning one can cost you the other.** Poland won its freedom and, in the same decade, began losing the dense, organised, bargaining labour movement that had delivered it. Section 5 counts what was lost.
+**This is the deepest lesson in the course, so let it sit.** It is possible for a union to win the largest political victory a union has ever won and, by that very victory, be placed in the position of hurting the workers it represents. Solidarność was not corrupt and it was not stupid; it faced a genuinely broken economy with no painless options. But **the workplace and the country are different battlefields, and winning one can cost you the other.** Poland won its freedom and, in the same decade, began losing the dense, organized, bargaining labor movement that had delivered it. Section 5 counts what was lost.
 
 :::reveal Solidarność won the country in 1989. Why is the "shock therapy" that followed the most uncomfortable, and most important, part of the whole story? ||| Because the government the union formed adopted the Balcerowicz Plan (in force 1 January 1990), which freed prices and cut subsidies overnight, and the pain fell hardest on the industrial workers who had built Solidarność. Unemployment went from an official zero to 16.4% by 1993 (GUS) as the state factories and shipyards shrank. A union that promised workers security found itself, in office, administering insecurity to them. Winning the country and holding the workplace turned out to be different battles, and Poland shows you can win one and lose the other.
 
@@ -977,7 +977,7 @@ The Mazowiecki government inherited an economy in freefall: hyperinflation, empt
         {
           prompt: "In the vocabulary of the four questions, what did Poland 1989 resolve?",
           answer:
-            "Question 1, 'who may organise?', resolved at national scale. A trade union was the primary vehicle that negotiated a communist state out of power and formed the government that replaced it. No other course in the track shows a union as the engine of a national political revolution.",
+            "Question 1, 'who may organize?', resolved at national scale. A trade union was the primary vehicle that negotiated a communist state out of power and formed the government that replaced it. No other course in the track shows a union as the engine of a national political revolution.",
         },
       ],
     },
@@ -1012,7 +1012,7 @@ The Mazowiecki government inherited an economy in freefall: hyperinflation, empt
             ],
             correctIndex: 1,
             explanation:
-              "The institution with enough legitimacy and organisation to speak for society against the state was a union of workers, which is the whole point of the course.",
+              "The institution with enough legitimacy and organization to speak for society against the state was a union of workers, which is the whole point of the course.",
             sourceLessonSlug: "poland-round-table",
           },
           {
@@ -1034,7 +1034,7 @@ The Mazowiecki government inherited an economy in freefall: hyperinflation, empt
               "The communists won comfortably, taking both new chambers",
               "Solidarity won every contestable Sejm seat and 99 Senate seats",
               "A narrow Solidarity win in the Gdańsk and Warsaw regions",
-              "The election was cancelled after the first round of voting",
+              "The election was canceled after the first round of voting",
             ],
             correctIndex: 1,
             explanation:
@@ -1072,7 +1072,7 @@ The Mazowiecki government inherited an economy in freefall: hyperinflation, empt
             options: [
               "A plan to nationalise all heavy industry in 1990",
               "The 'shock therapy' package of 1 January 1990",
-              "A Soviet aid programme agreed in January 1990",
+              "A Soviet aid program agreed in January 1990",
               "A plan to ban private business after 1990",
             ],
             correctIndex: 1,
@@ -1116,7 +1116,7 @@ The Mazowiecki government inherited an economy in freefall: hyperinflation, empt
             ],
             correctIndex: 1,
             explanation:
-              "Poland won its freedom and, in the same decade, began losing the organised labour movement that delivered it. That is the deepest lesson here.",
+              "Poland won its freedom and, in the same decade, began losing the organized labor movement that delivered it. That is the deepest lesson here.",
             sourceLessonSlug: "poland-shock-therapy",
           },
           {
@@ -1194,15 +1194,15 @@ The Mazowiecki government inherited an economy in freefall: hyperinflation, empt
 | --- | --- |
 | Trade union **density** (members as a share of employees) | **9.4%** (2022) |
 | Collective bargaining **coverage** | **11.6%** (2023) |
-| **Employer-organisation** density | **56.3%** (2022) |
+| **Employer-organization** density | **56.3%** (2022) |
 
 *(All three: OECD/AIAS ICTWSS database, country note for Poland. Other bodies put coverage a little higher, ETUI reports around 13%, but the picture is the same wherever you look.)*
 
 **Start with the comparison this whole track is built to let you make.** Go back to the Germany course's opening table. Germany: density ~14%, coverage ~49%, coverage more than three times membership. Poland: density ~9%, coverage ~12%, coverage barely above membership. **Same rough density; completely different coverage.** Why?
 
-**Because Poland answers Question 3 the opposite way from Germany, and you now know exactly what that means.** Recall the German machine: employers join an employers' association → the association signs a *sectoral* agreement → every member firm is bound → the terms reach all their workers. That is why German coverage floats free of German membership. Poland has the employers' side of that machine, employer-organisation density is a respectable **56.3%**, but it has almost none of the **sectoral bargaining** that would turn it into coverage. **Sector-level agreements in Poland have dwindled to a handful.** Bargaining happens, when it happens at all, **company by company.**
+**Because Poland answers Question 3 the opposite way from Germany, and you now know exactly what that means.** Recall the German machine: employers join an employers' association → the association signs a *sectoral* agreement → every member firm is bound → the terms reach all their workers. That is why German coverage floats free of German membership. Poland has the employers' side of that machine, employer-organization density is a respectable **56.3%**, but it has almost none of the **sectoral bargaining** that would turn it into coverage. **Sector-level agreements in Poland have dwindled to a handful.** Bargaining happens, when it happens at all, **company by company.**
 
-**And company-level bargaining has a built-in ceiling that sectoral bargaining does not.** In Poland, a company collective agreement generally requires a **trade union to exist inside that particular company** (ETUI, 2023). Now layer on a fact about the Polish economy: around **70% of employees work in small and medium-sized firms, and nearly half of those in micro-enterprises** (ETUI). Unions are rare in small firms, they are hard to organise and easy to discourage. So the bargaining mechanism Poland relies on simply **cannot reach most of the workforce**, because most of the workforce is in firms too small to have a union in the first place. Coverage is chained to membership, and membership is low.
+**And company-level bargaining has a built-in ceiling that sectoral bargaining does not.** In Poland, a company collective agreement generally requires a **trade union to exist inside that particular company** (ETUI, 2023). Now layer on a fact about the Polish economy: around **70% of employees work in small and medium-sized firms, and nearly half of those in micro-enterprises** (ETUI). Unions are rare in small firms, they are hard to organize and easy to discourage. So the bargaining mechanism Poland relies on simply **cannot reach most of the workforce**, because most of the workforce is in firms too small to have a union in the first place. Coverage is chained to membership, and membership is low.
 
 **This is the structural reason the two numbers in Lesson 1 sit so far apart.** It is not that Poles are apathetic or that Solidarność "gave up." It is that the transition rebuilt Polish industrial relations on a **decentralised, firm-by-firm** model, the opposite of the sectoral model that lets a country like Germany protect half its workers with a seventh of them as members. Coverage that was around **30% in the 1990s has fallen to roughly 12-13% today** (ETUI). The revolution delivered democracy and, eventually, prosperity. It did not deliver a strong bargaining system, and by the design that emerged, it almost could not.
 
@@ -1241,11 +1241,11 @@ The Mazowiecki government inherited an economy in freefall: hyperinflation, empt
 
 That three-way split is itself part of the weakness Lesson 10 described: bargaining power that might be concentrated is instead divided among rival federations that do not always cooperate.
 
-**Second, the politics, stated as fact and dated.** Since the 1990s, NSZZ "Solidarność" has been openly aligned with the **national-catholic right** in Polish politics. It has publicly backed candidates and parties of that camp, for example, it campaigned for the **Law and Justice (PiS)** party's candidate, Lech Kaczyński, in the **2005** presidential election, and it has cooperated with PiS since (Eurofound). A union that was founded as a broad, cross-ideological movement of *the whole society* against the state has, in the democratic era, become a **partisan actor** identified with one side of a bitterly divided politics. You do not have to have an opinion about Polish politics to see that this is a very different institution from the ten-million-strong national movement of 1980, and to understand why some Poles who revere the 1980 Solidarność feel estranged from the organisation that carries its name today.
+**Second, the politics, stated as fact and dated.** Since the 1990s, NSZZ "Solidarność" has been openly aligned with the **national-catholic right** in Polish politics. It has publicly backed candidates and parties of that camp, for example, it campaigned for the **Law and Justice (PiS)** party's candidate, Lech Kaczyński, in the **2005** presidential election, and it has cooperated with PiS since (Eurofound). A union that was founded as a broad, cross-ideological movement of *the whole society* against the state has, in the democratic era, become a **partisan actor** identified with one side of a bitterly divided politics. You do not have to have an opinion about Polish politics to see that this is a very different institution from the ten-million-strong national movement of 1980, and to understand why some Poles who revere the 1980 Solidarność feel estranged from the organization that carries its name today.
 
 **Third, and this is the paragraph the proposal for this course specifically asked for, the contested legacy, which the course will name and then leave to Poland.** The meaning of Solidarność's history is **actively fought over in Polish public life.** In particular, the personal record of **Lech Wałęsa** is the subject of a long-running and fierce dispute: there are contested allegations, which Wałęsa denies, that in the early 1970s, before the movement, he was a paid informer for the communist security service under the codename "Bolek." Polish historians, courts, and institutions have argued about the authenticity and meaning of the relevant files for years, and it remains a live, polarising controversy. **This course does not adjudicate it.** It is not our place, from the outside, to declare who is right about a disputed chapter of another country's national memory. What you should carry away is only this: **the facts of 1980-1989 in this course are firmly established and sourced; the *meaning and personal reckonings* of that era are still being argued in Poland, and honest teaching says so rather than pretending the argument is settled.**
 
-**Put the whole section together.** Poland is a democracy where anyone may organise, and where, measured by density, coverage, fragmentation, and the drift of its most famous union into partisan politics, the organised labour movement is weak and divided. The country that a union set free is not, today, a country of strong unions. That is not a paradox to be explained away. **It is the honest ending, and it is the most important thing this course has to teach: a movement can win the state and still lose the workplace, and winning the first does not guarantee keeping the second.**
+**Put the whole section together.** Poland is a democracy where anyone may organize, and where, measured by density, coverage, fragmentation, and the drift of its most famous union into partisan politics, the organized labor movement is weak and divided. The country that a union set free is not, today, a country of strong unions. That is not a paradox to be explained away. **It is the honest ending, and it is the most important thing this course has to teach: a movement can win the state and still lose the workplace, and winning the first does not guarantee keeping the second.**
 
 :::reveal How should a careful course handle the fierce Polish dispute over Lech Wałęsa's alleged 1970s security-service file? ||| It should name that the dispute exists, note that the allegations are contested and that Wałęsa denies them, and then decline to adjudicate, because the facts of 1980-1989 are well established and sourced, but the personal reckonings and the meaning of that era are still being argued in Poland today. Honest teaching states plainly what is settled and what is contested, rather than pretending an active national controversy has a verdict.
 
@@ -1257,7 +1257,7 @@ That three-way split is itself part of the weakness Lesson 10 described: bargain
         {
           prompt: "Give Poland's union density, bargaining coverage, and employer-organisation density, with years and source.",
           answer:
-            "Density 9.4% (2022), bargaining coverage 11.6% (2023), employer-organisation density 56.3% (2022), all OECD/AIAS ICTWSS. Coverage is barely above membership, unlike Germany where it is over three times membership.",
+            "Density 9.4% (2022), bargaining coverage 11.6% (2023), employer-organization density 56.3% (2022), all OECD/AIAS ICTWSS. Coverage is barely above membership, unlike Germany where it is over three times membership.",
         },
         {
           prompt: "Why is Polish coverage 'chained to' its low membership, when Germany's is not?",
@@ -1305,7 +1305,7 @@ That three-way split is itself part of the weakness Lesson 10 described: bargain
             ],
             correctIndex: 1,
             explanation:
-              "Poland has the employers' side of the German machine but not the sectoral agreements, so the organisation doesn't convert into coverage.",
+              "Poland has the employers' side of the German machine but not the sectoral agreements, so the organization doesn't convert into coverage.",
             sourceLessonSlug: "poland-density-collapse",
           },
           {
@@ -1318,7 +1318,7 @@ That three-way split is itself part of the weakness Lesson 10 described: bargain
             ],
             correctIndex: 1,
             explanation:
-              "The mechanism can't reach most of the workforce, because most of the workforce is in firms too small to organise. Coverage is chained to membership.",
+              "The mechanism can't reach most of the workforce, because most of the workforce is in firms too small to organize. Coverage is chained to membership.",
             sourceLessonSlug: "poland-density-collapse",
           },
           {
@@ -1473,19 +1473,19 @@ That three-way split is itself part of the weakness Lesson 10 described: bargain
       slug: "poland-junk-contracts",
       title: "12 · The rhyme: 'junk contracts' and the move you have seen before",
       section: "Section 6 · The rhyme, and the skill you keep",
-      body: `Here is the lesson that pays off the whole *track*, not just this course. Once you have seen it in Poland, you will recognise it everywhere, and recognising it is the single most useful skill a workers'-rights course can give you.
+      body: `Here is the lesson that pays off the whole *track*, not just this course. Once you have seen it in Poland, you will recognize it everywhere, and recognizing it is the single most useful skill a workers'-rights course can give you.
 
 **The Polish version is called *umowy śmieciowe*, "junk contracts" (literally "trash contracts").** To understand them, you need one distinction in Polish law:
 
-- An **employment contract**, *umowa o pracę*, is governed by the **Labour Code** (*Kodeks pracy*). It comes with the protections you would expect: paid annual leave, notice periods, working-time limits, the minimum wage, sick and maternity entitlements, full social-security contributions, and access to the **labour courts** if something goes wrong.
-- A **civil-law contract**, most commonly the *umowa zlecenie* (a "contract of mandate") or *umowa o dzieło* (a "contract for a specific task"), is governed instead by the **Civil Code** (*Kodeks cywilny*). It is meant for genuinely independent, one-off, or freelance work. Historically it carried **none** of the Labour Code's protections: no paid leave, no notice, limited or no social-security contributions, and no labour-court jurisdiction. (Poland has since bolted on some fixes, a minimum hourly rate for *umowa zlecenie* was introduced in 2017, but the gap in protection remains wide.)
+- An **employment contract**, *umowa o pracę*, is governed by the **Labour Code** (*Kodeks pracy*). It comes with the protections you would expect: paid annual leave, notice periods, working-time limits, the minimum wage, sick and maternity entitlements, full social-security contributions, and access to the **labor courts** if something goes wrong.
+- A **civil-law contract**, most commonly the *umowa zlecenie* (a "contract of mandate") or *umowa o dzieło* (a "contract for a specific task"), is governed instead by the **Civil Code** (*Kodeks cywilny*). It is meant for genuinely independent, one-off, or freelance work. Historically it carried **none** of the Labour Code's protections: no paid leave, no notice, limited or no social-security contributions, and no labor-court jurisdiction. (Poland has since bolted on some fixes, a minimum hourly rate for *umowa zlecenie* was introduced in 2017, but the gap in protection remains wide.)
 
-**Now the move.** For years, large numbers of Polish employers took people who were doing **ordinary, employee-like, day-in-day-out jobs**, and hired them on a **civil-law contract** instead of an employment contract. The worker shows up at the same time every day, uses the company's tools, takes the company's orders, and does the company's core work, every functional test of an "employee", but on paper they are a "contractor" performing a "task." That paper reclassification lets the employer **escape the Labour Code**: cheaper, more disposable labour, outside much of labour law, and (crucially for this course) **outside the collective-bargaining system**, because those protections and structures attach to *employees*. Poland leaned on this so heavily that economists describe a **"dual" labour market**, and the practice has been a live political fight for over a decade (the term went mainstream around 2011-2012). Reforms to curb it, including giving labour inspectors power to **reclassify** disguised employment, have been debated and staged into the mid-2020s, tied to EU funding conditions; the exact status keeps moving, so treat any single "it's fixed now" claim with caution and check the date.
+**Now the move.** For years, large numbers of Polish employers took people who were doing **ordinary, employee-like, day-in-day-out jobs**, and hired them on a **civil-law contract** instead of an employment contract. The worker shows up at the same time every day, uses the company's tools, takes the company's orders, and does the company's core work, every functional test of an "employee", but on paper they are a "contractor" performing a "task." That paper reclassification lets the employer **escape the Labour Code**: cheaper, more disposable labor, outside much of labor law, and (crucially for this course) **outside the collective-bargaining system**, because those protections and structures attach to *employees*. Poland leaned on this so heavily that economists describe a **"dual" labor market**, and the practice has been a live political fight for over a decade (the term went mainstream around 2011-2012). Reforms to curb it, including giving labor inspectors power to **reclassify** disguised employment, have been debated and staged into the mid-2020s, tied to EU funding conditions; the exact status keeps moving, so treat any single "it's fixed now" claim with caution and check the date.
 
 **And here is why you already understand this, even if you have never heard a Polish word before.** Look at what the move *is*, stripped of the local vocabulary: **an employer uses a legal form to place a worker outside the category that carries the protections.** Now recall the rest of the track:
 
 - **The United States** (the anchor course): **misclassification.** Call a worker an "independent contractor" rather than an "employee," and they fall outside the National Labor Relations Act, the minimum wage, overtime, the same escape, through a different door.
-- **Mexico** (its own course): the **protection contract.** A company signs a collective agreement with a friendly or phantom union before workers even organise, so that a *real* union is legally blocked. Again: a legal form that leaves the worker outside genuine protection while *appearing* to be inside it.
+- **Mexico** (its own course): the **protection contract.** A company signs a collective agreement with a friendly or phantom union before workers even organize, so that a *real* union is legally blocked. Again: a legal form that leaves the worker outside genuine protection while *appearing* to be inside it.
 - **Poland: the junk contract.** A civil-law contract that keeps an employee-in-all-but-name outside the Labour Code.
 
 **Three countries, three names, one structural move.** The details are completely different, a US contractor, a Mexican phantom union, a Polish civil-law contract, but the *shape* is identical: **the fight is not "is there a protection?" but "is this worker inside or outside the category the protection attaches to?"** That question, *whose category is it, and does it actually cover the person doing the work?*, is the thing this whole track has been quietly teaching you to ask. Poland just gives it one of its clearest names.
@@ -1515,24 +1515,24 @@ That three-way split is itself part of the weakness Lesson 10 described: bargain
       section: "Section 6 · The rhyme, and the skill you keep",
       body: `You could forget every date in this course, the 21 Demands, 10 November 1980, 13 December 1981, 4 June 1989, and still have gotten the valuable thing, if you keep the **method**. So let's make it explicit by running the anchor's four questions across the whole Polish story one last time, and watching the answers move.
 
-**Q1, Who is allowed to organise?**
+**Q1, Who is allowed to organize?**
 - *1980:* No one independently, which is why demanding a free union was demanding to break the Party's monopoly on power. Question 1 *was* the question of the state.
 - *Today:* Everyone. Poland is a democracy with full freedom of association. And yet density is ~9% (2022). **The right can be secure and barely used at the same time** — a pairing you should now expect, not find surprising.
 
 **Q2, Who is excluded?**
-- *1980:* Everyone, from independent organisation.
+- *1980:* Everyone, from independent organization.
 - *Today:* Workers pushed onto **civil-law "junk contracts,"** outside the Labour Code and the bargaining system, the same *structural* exclusion the US runs through misclassification.
 
 **Q3, Who bargains with whom, and at what level?**
-- The hinge of the whole comparison with Germany: Poland bargains **company by company**, sectoral agreements have withered, and coverage (~12%, 2023) is therefore chained to low membership. **Always find the *level* of bargaining before you judge the *strength* of a labour movement.**
+- The hinge of the whole comparison with Germany: Poland bargains **company by company**, sectoral agreements have withered, and coverage (~12%, 2023) is therefore chained to low membership. **Always find the *level* of bargaining before you judge the *strength* of a labor movement.**
 
 **Q4, What happens to you if you try?**
 - *1981:* Martial law, internment, nine dead at Wujek, the most violent answer in the Wave-1 courses.
-- *Today:* An ordinary democratic answer, you may organise; the obstacles are structural, not martial.
+- *Today:* An ordinary democratic answer, you may organize; the obstacles are structural, not martial.
 
-**And the transferable habit this course adds to your kit, on top of the four questions:** *when a labour movement looks mysteriously weak, look for the legal form that moves workers out of the protected category, and look for the level at which bargaining happens.* Those two structural facts, the exclusion move and the bargaining level, explain more about a country's real worker power than any amount of rhetoric about culture or national character. You saw the plumbing beat the culture in the Germany and Nordic courses. **In Poland you saw something even sharper: a movement can win the entire state and still, through the structures that come afterward, lose the workplace.** Carry that, and you can walk into a country you have never studied and ask the right questions first.
+**And the transferable habit this course adds to your kit, on top of the four questions:** *when a labor movement looks mysteriously weak, look for the legal form that moves workers out of the protected category, and look for the level at which bargaining happens.* Those two structural facts, the exclusion move and the bargaining level, explain more about a country's real worker power than any amount of rhetoric about culture or national character. You saw the plumbing beat the culture in the Germany and Nordic courses. **In Poland you saw something even sharper: a movement can win the entire state and still, through the structures that come afterward, lose the workplace.** Carry that, and you can walk into a country you have never studied and ask the right questions first.
 
-One last cross-link. This course was **history and structure**, *how did this happen, and why is Poland's labour system shaped this way?* Its companion, **Know Your Rights at Work**, is the present-tense, practical one, *what do I actually do on the job on Monday?* If Poland's story moved you, that is the course that turns the feeling into something you can use.
+One last cross-link. This course was **history and structure**, *how did this happen, and why is Poland's labor system shaped this way?* Its companion, **Know Your Rights at Work**, is the present-tense, practical one, *what do I actually do on the job on Monday?* If Poland's story moved you, that is the course that turns the feeling into something you can use.
 
 :::reveal Beyond the four questions, what is the transferable habit this course adds, the two structural facts that explain a country's real worker power better than talk of "culture"? ||| First, the *exclusion move*: look for the legal form that shifts workers out of the protected category (junk contracts, misclassification, phantom unions). Second, the *bargaining level*: find out whether bargaining happens at the sector or only the single firm, because the level caps how far coverage can reach beyond membership. Those two facts, who is defined out, and at what level anyone bargains, tell you more than any amount of rhetoric about national character.
 
@@ -1543,7 +1543,7 @@ One last cross-link. This course was **history and structure**, *how did this ha
         {
           prompt: "What is a Polish 'junk contract' (umowa śmieciowa), and how does it dodge the Labour Code?",
           answer:
-            "A civil-law contract (umowa zlecenie or umowa o dzieło, under the Civil Code) used to hire someone doing ordinary employee-like work, instead of an employment contract (umowa o pracę, under the Labour Code). Because labour protections and collective bargaining attach to 'employees,' the paper reclassification puts the worker outside paid leave, notice, full social security, labour courts, and bargaining.",
+            "A civil-law contract (umowa zlecenie or umowa o dzieło, under the Civil Code) used to hire someone doing ordinary employee-like work, instead of an employment contract (umowa o pracę, under the Labour Code). Because labor protections and collective bargaining attach to 'employees,' the paper reclassification puts the worker outside paid leave, notice, full social security, labor courts, and bargaining.",
         },
         {
           prompt: "State the one structural move shared by Polish junk contracts, US misclassification, and Mexican protection contracts.",
@@ -1580,7 +1580,7 @@ These are the specific, checkable facts this course wants in your head, the ones
             prompt: "Demand number one was not about pay. It was the right to form free trade unions ___ of the Communist Party.",
             answer: "independent",
             explanation:
-              "In a one-party state, an independent union is a centre of power outside the Party, which made 'who may organise?' the same question as 'who governs?'",
+              "In a one-party state, an independent union is a center of power outside the Party, which made 'who may organize?' the same question as 'who governs?'",
           },
           {
             prompt: "The agreement conceding independent unions was signed on 31 August 1980. It is known as the ___ Agreement.",
@@ -1594,7 +1594,7 @@ These are the specific, checkable facts this course wants in your head, the ones
             answer: "10",
             accept: ["ten", "10 million", "ten million"],
             explanation:
-              "About a third of Poland's population, the largest membership organisation the communist bloc ever produced.",
+              "About a third of Poland's population, the largest membership organization the communist bloc ever produced.",
           },
           {
             prompt: "On 13 December 1981, General Wojciech ___ declared martial law and banned the union.",
@@ -1673,11 +1673,11 @@ These are the specific, checkable facts this course wants in your head, the ones
               "The umowa o pracę (employment contract)",
               "The umowa zlecenie (contract of mandate)",
               "The umowa o dzieło (contract for a task)",
-              "None, Poland has no labour code",
+              "None, Poland has no labor code",
             ],
             correctIndex: 0,
             explanation:
-              "The umowa o pracę brings paid leave, notice, minimum wage, social security and labour-court access. Civil-law contracts (zlecenie, o dzieło) sit under the Civil Code instead.",
+              "The umowa o pracę brings paid leave, notice, minimum wage, social security and labor-court access. Civil-law contracts (zlecenie, o dzieło) sit under the Civil Code instead.",
             sourceLessonSlug: "poland-junk-contracts",
           },
           {
@@ -1690,7 +1690,7 @@ These are the specific, checkable facts this course wants in your head, the ones
             ],
             correctIndex: 1,
             explanation:
-              "The worker does ordinary employee work but, on paper, is a 'contractor', outside paid leave, notice, full social security, labour courts and collective bargaining.",
+              "The worker does ordinary employee work but, on paper, is a 'contractor', outside paid leave, notice, full social security, labor courts and collective bargaining.",
             sourceLessonSlug: "poland-junk-contracts",
           },
           {
@@ -1732,15 +1732,15 @@ These are the specific, checkable facts this course wants in your head, the ones
             ],
             correctIndex: 1,
             explanation:
-              "The whole track trains you to ask 'whose category is it, and does it cover the person doing the work?', the sharpest single diagnostic in labour law.",
+              "The whole track trains you to ask 'whose category is it, and does it cover the person doing the work?', the sharpest single diagnostic in labor law.",
             sourceLessonSlug: "poland-junk-contracts",
           },
           {
             prompt: "Running Question 1 across Poland: what is the striking pairing in the answer 'today'?",
             options: [
               "Organising is banned, yet density is above 30%",
-              "Everyone may organise, yet density is only about 9%",
-              "Only farmers may organise, and density is ~30%",
+              "Everyone may organize, yet density is only about 9%",
+              "Only farmers may organize, and density is ~30%",
               "Organising still requires Party approval today",
             ],
             correctIndex: 1,
@@ -1751,7 +1751,7 @@ These are the specific, checkable facts this course wants in your head, the ones
           {
             prompt: "What is the transferable habit the course adds on top of the four questions?",
             options: [
-              "Judge a labour movement by its rhetoric and slogans",
+              "Judge a labor movement by its rhetoric and slogans",
               "Look for the exclusion move and the LEVEL of bargaining",
               "Assume national culture explains most of the outcome",
               "Count only the number of strike days lost each year",
@@ -1767,7 +1767,7 @@ These are the specific, checkable facts this course wants in your head, the ones
               "A country where workers sit on every company board",
               "A movement can win the entire state and lose the workplace",
               "A country where the union runs the unemployment fund",
-              "A country with almost no labour law worth the name",
+              "A country with almost no labor law worth the name",
             ],
             correctIndex: 1,
             explanation:
@@ -1792,7 +1792,7 @@ These are the specific, checkable facts this course wants in your head, the ones
             options: [
               "Because junk contracts have never really existed in law",
               "Because reforms have been staged and debated into the 2020s",
-              "Because Poland has no labour ministry to enforce it",
+              "Because Poland has no labor ministry to enforce it",
               "Because the EU has banned the topic from public debate",
             ],
             correctIndex: 1,

@@ -571,7 +571,7 @@ Record your real numbers and your "why did it miss?" notes in your notebook. You
             prompt: "Why must you test your model on examples it has NEVER seen before?",
             options: [
               "To make the final score look as high as it possibly can",
-              "Because testing on training examples only shows memorising",
+              "Because testing on training examples only shows memorizing",
               "Because brand new examples are always much easier",
               "There is no reason at all, since any test will do fine",
             ],
@@ -626,7 +626,7 @@ Record your real numbers and your "why did it miss?" notes in your notebook. You
               "The model simply dislikes unripe fruit for some reason",
               "You gave it many more 'ripe' examples than 'unripe' ones",
               "Bias is completely impossible in any AI model at all",
-              "The fruit itself was simply much too colourful",
+              "The fruit itself was simply much too colorful",
             ],
             correctIndex: 1,
             explanation:

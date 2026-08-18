@@ -114,7 +114,7 @@ U.S. Geological Survey. (n.d.). *Effects of urban development on floods*. https:
       ],
       body: `If you can have only one number about a river, take **discharge**: the volume of water passing a point per unit of time.
 
-Conceptually it is the width of the flow, times its depth, times how fast it is moving. Widen the channel and the same discharge flows more slowly; narrow it and the same water speeds up. That relationship explains a great deal of river behaviour, including why a river that looks placid in a wide reach turns dangerous in a narrow one carrying exactly the same water.
+Conceptually it is the width of the flow, times its depth, times how fast it is moving. Widen the channel and the same discharge flows more slowly; narrow it and the same water speeds up. That relationship explains a great deal of river behavior, including why a river that looks placid in a wide reach turns dangerous in a narrow one carrying exactly the same water.
 
 **You will not calculate one in this course.** You will read them, which is the skill that transfers.
 
@@ -501,7 +501,7 @@ U.S. Geological Survey. (n.d.). *Invasive carp research*. https://www.usgs.gov/`
 
 **Features.** Cut banks, point bars, meanders, braided reaches, oxbows, confluences, levees, revetments and locks are all visible and photographable, and the eye is a perfectly good instrument for them. A photo of a raw undercut bank opposite a sand slope is a direct observation of lesson 5.
 
-**Change along the route.** A single trip travelling the length of a system produces something a fixed gauge cannot: a continuous impression of how the river changes character. Where it widens, slows, silts up, gets warmer, gets busier.
+**Change along the route.** A single trip traveling the length of a system produces something a fixed gauge cannot: a continuous impression of how the river changes character. Where it widens, slows, silts up, gets warmer, gets busier.
 
 **The human river.** Barge traffic, riprap, outfalls, industry on the bank, towns turned toward or away from the water.
 
@@ -560,7 +560,7 @@ The **Clean Water Act** is the main federal statute. Two mechanisms matter for t
 
 A TMDL is a budget. **A budget is not an enforcement mechanism.**
 
-For point sources, the budget flows into permits, which are enforceable. For **nonpoint** sources, which is where most of lesson 10's nitrogen comes from, there is generally no permit to attach it to. Agricultural runoff is largely addressed through voluntary programmes and incentives rather than mandates.
+For point sources, the budget flows into permits, which are enforceable. For **nonpoint** sources, which is where most of lesson 10's nitrogen comes from, there is generally no permit to attach it to. Agricultural runoff is largely addressed through voluntary programs and incentives rather than mandates.
 
 So the structure is: a diagnosis with real legal force behind it, and for the largest contributor, a remedy that is mostly voluntary. That is not a hidden scandal; it is the visible design, and it is why lesson 10's problem persists while point-source pollution improved dramatically.
 
@@ -578,7 +578,7 @@ That last one is not a footnote, and the Civics course *Tribal Nations and Gover
 
 Because the science alone determines nothing. A watershed is a physical system embedded in a jurisdictional one, and the boundaries do not line up: watersheds cross state lines, and a river's problems are basin-scale while nearly all authority is not.
 
-:::reveal Point-source pollution improved dramatically under the Clean Water Act while nutrient runoff did not. What structural difference explains it? ||| A pipe can be permitted, and a permit is enforceable with limits attached. Diffuse runoff from many farms has no equivalent permit, so it is addressed largely through voluntary programmes and incentives. The diagnosis has force; for the largest contributor, the remedy mostly does not.
+:::reveal Point-source pollution improved dramatically under the Clean Water Act while nutrient runoff did not. What structural difference explains it? ||| A pipe can be permitted, and a permit is enforceable with limits attached. Diffuse runoff from many farms has no equivalent permit, so it is addressed largely through voluntary programs and incentives. The diagnosis has force; for the largest contributor, the remedy mostly does not.
 
 ## Sources
 
@@ -649,7 +649,7 @@ U.S. Environmental Protection Agency. (n.d.). *Nonpoint source pollution*. https
             prompt: "Point-source pollution improved dramatically under the Clean Water Act while agricultural nutrient runoff did not. What structural difference best explains the gap?",
             options: [
               "A pipe can be permitted with enforceable limits; diffuse runoff has no equivalent permit and is addressed largely voluntarily",
-              "Nutrient runoff was not recognised as pollution under the statute until long after the point-source rules took effect",
+              "Nutrient runoff was not recognized as pollution under the statute until long after the point-source rules took effect",
               "Agricultural runoff is regulated by individual states, and no state has yet chosen to set limits on it",
               "Nutrients break down naturally in transit, so regulators concluded that limiting them at source would have no effect",
             ],

@@ -1526,7 +1526,7 @@ Your Course Handicap is calculated from your Index using that specific set of te
       ],
       body: `Golf as we know it took shape in **Scotland**, and the first solid documentary evidence of it is wonderfully unflattering: **the government trying to ban it.**
 
-**The 1457 Act.** An Act of the Scottish Parliament ordered that "the fut bal ande the golf" be "cryit doun", cried down, suppressed, so that men would go and practise **archery** instead, archery being useful for national defence and golf being, in Parliament's view, a waste of an afternoon (Records of the Parliaments of Scotland, 1457/1458). The Act is dated **6 March 1457** in the old style, which is why you will also see it dated **1458**; Scotland began its year in March at the time, so both dates refer to the same document.
+**The 1457 Act.** An Act of the Scottish Parliament ordered that "the fut bal ande the golf" be "cryit doun", cried down, suppressed, so that men would go and practice **archery** instead, archery being useful for national defense and golf being, in Parliament's view, a waste of an afternoon (Records of the Parliaments of Scotland, 1457/1458). The Act is dated **6 March 1457** in the old style, which is why you will also see it dated **1458**; Scotland began its year in March at the time, so both dates refer to the same document.
 
 Two things are worth noticing. First, **a law banning golf is proof that golf was already popular.** Nobody bans a thing nobody does. Second, you will see a tidy modernized English version of this Act quoted everywhere as if it were the manuscript. It is a translation. **Go and read the actual record**, linked in the Sources below, and notice how different a primary source looks from the quotation people pass around. That habit, checking the thing itself, is what this whole section is about.
 
@@ -1574,7 +1574,7 @@ Two things are worth noticing. First, **a law banning golf is proof that golf wa
 
 **The feathery.** Boiled feathers stuffed into a stitched leather pouch, made by hand. A skilled craftsman could make a handful in a day, so they were **brutally expensive**, a single ball could cost more than a club. They also went soggy in the rain and burst. The feathery made golf a rich man's game by simple arithmetic: **if you lose three balls in a round, you have to be able to afford to lose three balls.**
 
-**The guttie (1848).** Made from **gutta-percha**, a rubbery latex from a Malaysian tree, which could be heated, moulded, and (crucially) **remoulded when it got knocked out of shape.** It was **dramatically cheaper** than the feathery, and it did more to open golf to ordinary people than any rule ever passed. Its inventor is genuinely **disputed**: the USGA credits **Robert Adams**, while a very widely repeated version of the story attaches a longer clerical name to him that the primary sources do not support (USGA, n.d.). This course names it as disputed rather than picking the popular answer.
+**The guttie (1848).** Made from **gutta-percha**, a rubbery latex from a Malaysian tree, which could be heated, molded, and (crucially) **remoulded when it got knocked out of shape.** It was **dramatically cheaper** than the feathery, and it did more to open golf to ordinary people than any rule ever passed. Its inventor is genuinely **disputed**: the USGA credits **Robert Adams**, while a very widely repeated version of the story attaches a longer clerical name to him that the primary sources do not support (USGA, n.d.). This course names it as disputed rather than picking the popular answer.
 
 Golfers soon noticed that a **scuffed, nicked** guttie flew better than a smooth new one. That observation, that surface roughness makes a ball fly *further*, is the direct ancestor of the **dimple**, and it was discovered by accident, by players who could not afford new balls.
 
@@ -1624,7 +1624,7 @@ Be precise about what that meant, because it is easy to underrate. The PGA was n
 
 In **1948**, Spiller, **Ted Rhodes**, and **Madison Gunter** qualified for the **Richmond Open** in California and were then **barred** from playing on the grounds of the Caucasian-only clause. They sued.
 
-**They did not win.** This matters, and most retellings get it wrong. **The suit was withdrawn**, not decided in their favour, after the PGA promised to stop discriminating. **The PGA then broke that promise**, by simply changing the *form* of its events rather than its rules, which is the subject of Lesson 26. Spiller had traded a lawsuit for a promise, and got nothing.
+**They did not win.** This matters, and most retellings get it wrong. **The suit was withdrawn**, not decided in their favor, after the PGA promised to stop discriminating. **The PGA then broke that promise**, by simply changing the *form* of its events rather than its rules, which is the subject of Lesson 26. Spiller had traded a lawsuit for a promise, and got nothing.
 
 *(One correction while we are here: Madison Gunter was an **amateur**, not a professional, though he is often described as one.)*
 
@@ -1966,7 +1966,7 @@ The 1990 **PGA Championship** was scheduled at **Shoal Creek**, in Birmingham, A
 
 Shoal Creek admitted **Louis J. Willie**, as an **honorary** member. Read that carefully. **Not a full member. A partial concession**, offered under commercial pressure, which is exactly what a partial concession is for.
 
-**Roughly one month later, Augusta National admitted its first Black member: Ron Townsend, in 1990**, and, to be precise where precision favours them, **as a full member.**
+**Roughly one month later, Augusta National admitted its first Black member: Ron Townsend, in 1990**, and, to be precise where precision favors them, **as a full member.**
 
 **Ask yourself what actually moved these institutions.** Not *Brown*. Not the Fourteenth Amendment. Not thirty years of Black golfers being excellent in public. **Television advertising revenue.** You may draw your own conclusions about what that says, but do not look away from it.
 
@@ -1975,7 +1975,7 @@ Shoal Creek admitted **Louis J. Willie**, as an **honorary** member. Read that c
 **And the women.**
 
 - **Augusta National admitted its first women members on 20 August 2012: Condoleezza Rice and Darla Moore.** A decade earlier, chairman **Hootie Johnson** had said the club might one day admit a woman, but **"not at the point of a bayonet."**
-- **The Royal & Ancient Golf Club**, the club, remember, not the governing body, **voted to admit women on 18 September 2014**, with **85%** in favour. It had been founded in 1754.
+- **The Royal & Ancient Golf Club**, the club, remember, not the governing body, **voted to admit women on 18 September 2014**, with **85%** in favor. It had been founded in 1754.
 - **Muirfield** voted in **2016** and **failed**, at **64%**. The R&A promptly **removed it from the rota of courses that host The Open**, the most valuable thing a British links course has. Muirfield voted again in **2017** and passed at **80.2%**, and was **reinstated**. **The first 12 women members joined on 1 July 2019**, **275 years after the club was founded.**
 
 **Notice the mechanism in the Muirfield story**, because it is the same one as Shoal Creek: the club changed when **exclusion started costing it something it valued**. A vote failed on principle in 2016. The same men, asked the same question after losing The Open, produced a completely different answer in 2017.
@@ -2013,7 +2013,7 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
             prompt: "What did the Scottish Parliament's 1457 Act actually do about golf?",
             options: [
               "Established the first standardized 18-hole course",
-              "Ordered it 'cried down' so men would practise archery",
+              "Ordered it 'cried down' so men would practice archery",
               "Created the first written code of Rules of Golf",
               "Founded the Royal & Ancient Golf Club of St Andrews",
             ],

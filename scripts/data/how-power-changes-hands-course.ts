@@ -176,7 +176,7 @@ A **wasted vote** is a vote that elects nobody. Under FPTP there are two kinds: 
 
 ## District magnitude
 
-**District magnitude** is the number of seats elected from one district. This one number does more to shape an outcome than almost anything else. A **single-member district** (magnitude 1) elects one person and is the home of FPTP and instant-runoff. A **multi-member district** (magnitude 5, 10, 150) elects many and is where proportional representation lives, because you cannot divide one seat proportionally. **The larger the district magnitude, the more proportional the result can be**, and the political scientist Gary Cox summarised the ceiling as a rule of thumb: the number of viable competitors tends toward **district magnitude plus one** (Cox, 1997).
+**District magnitude** is the number of seats elected from one district. This one number does more to shape an outcome than almost anything else. A **single-member district** (magnitude 1) elects one person and is the home of FPTP and instant-runoff. A **multi-member district** (magnitude 5, 10, 150) elects many and is where proportional representation lives, because you cannot divide one seat proportionally. **The larger the district magnitude, the more proportional the result can be**, and the political scientist Gary Cox summarized the ceiling as a rule of thumb: the number of viable competitors tends toward **district magnitude plus one** (Cox, 1997).
 
 ## Threshold
 
@@ -320,7 +320,7 @@ Put them together and you can describe any system in one breath. **Does winning 
               "The magnitude, plus one",
             ],
             correctIndex: 3,
-            explanation: "Cox (1997) summarised the ceiling as district magnitude plus one. A single-member district (magnitude 1) tends toward two viable competitors; larger magnitudes allow more.",
+            explanation: "Cox (1997) summarized the ceiling as district magnitude plus one. A single-member district (magnitude 1) tends toward two viable competitors; larger magnitudes allow more.",
             sourceLessonSlug: "power-changes-vocabulary",
           },
           {
@@ -464,7 +464,7 @@ FPTP's great virtue is that a voter marks one name and a child can understand th
 
 ## The law, stated correctly
 
-The French scholar Maurice Duverger put it plainly: **the simple-majority single-ballot system**, which is FPTP, **favours the two-party system** (Duverger, 1954). That is the law. Read what it does and does not claim. It says FPTP *tends toward* two dominant parties. **It does not say proportional representation causes two parties (PR does the opposite), and it does not say FPTP guarantees exactly two parties everywhere (it does not).** Getting the direction right is half the battle: **FPTP pushes toward few, PR permits many.**
+The French scholar Maurice Duverger put it plainly: **the simple-majority single-ballot system**, which is FPTP, **favors the two-party system** (Duverger, 1954). That is the law. Read what it does and does not claim. It says FPTP *tends toward* two dominant parties. **It does not say proportional representation causes two parties (PR does the opposite), and it does not say FPTP guarantees exactly two parties everywhere (it does not).** Getting the direction right is half the battle: **FPTP pushes toward few, PR permits many.**
 
 ## The two engines behind it
 
@@ -544,7 +544,7 @@ Spoilers and gerrymanders look like different problems and are the same one wear
       recallContent: [
         {
           prompt: "State Duverger's law correctly, including the direction of the effect.",
-          answer: "The simple-majority single-ballot system (FPTP) favours the two-party system: FPTP tends toward few parties. It does NOT say PR causes two parties (PR permits many), nor that FPTP guarantees exactly two everywhere.",
+          answer: "The simple-majority single-ballot system (FPTP) favors the two-party system: FPTP tends toward few parties. It does NOT say PR causes two parties (PR permits many), nor that FPTP guarantees exactly two everywhere.",
         },
         {
           prompt: "Name and describe the two engines behind Duverger's law.",
@@ -621,7 +621,7 @@ Spoilers and gerrymanders look like different problems and are the same one wear
               "Has no effect on parties",
             ],
             correctIndex: 1,
-            explanation: "FPTP favours (tends toward) two parties. It does not guarantee exactly two everywhere, and it is the opposite of PR, which permits many parties.",
+            explanation: "FPTP favors (tends toward) two parties. It does not guarantee exactly two everywhere, and it is the opposite of PR, which permits many parties.",
             sourceLessonSlug: "power-changes-duverger",
           },
           {
@@ -773,7 +773,7 @@ The one wrinkle worth knowing now: **who decides the order in which a party's ca
 
 ## The natural threshold, before any legal one
 
-Even with no legal threshold, PR has a **natural threshold** set by district magnitude: to win one of, say, 10 seats you need roughly a tenth of the vote. **The larger the district, the lower the natural threshold, and the more proportional the result.** The Netherlands is the extreme case: it treats the entire country as a **single 150-seat district**, so the natural threshold is about **0.67 percent**, one seat's worth, and almost any organised group can win representation (Kiesraad, n.d.). That is proportionality turned nearly all the way up.
+Even with no legal threshold, PR has a **natural threshold** set by district magnitude: to win one of, say, 10 seats you need roughly a tenth of the vote. **The larger the district, the lower the natural threshold, and the more proportional the result.** The Netherlands is the extreme case: it treats the entire country as a **single 150-seat district**, so the natural threshold is about **0.67 percent**, one seat's worth, and almost any organized group can win representation (Kiesraad, n.d.). That is proportionality turned nearly all the way up.
 
 ## What PR does to how power changes hands
 
@@ -836,7 +836,7 @@ If magnitude decides how low a party can go by arithmetic, the **legal threshold
 
 ## The two dials together
 
-Magnitude and threshold interact, and a designer uses both. **You can build a system that is technically PR but favours big parties (small districts, high threshold), or one that represents nearly everyone (one big district, tiny threshold).** Most real PR systems sit somewhere in between, and where they sit is a **policy choice with consequences**, not a fact of nature. This is the same lesson the whole course keeps teaching: **the rule is a set of dials someone turned on purpose, and turning them changes who ends up in the room when power is shared out.**
+Magnitude and threshold interact, and a designer uses both. **You can build a system that is technically PR but favors big parties (small districts, high threshold), or one that represents nearly everyone (one big district, tiny threshold).** Most real PR systems sit somewhere in between, and where they sit is a **policy choice with consequences**, not a fact of nature. This is the same lesson the whole course keeps teaching: **the rule is a set of dials someone turned on purpose, and turning them changes who ends up in the room when power is shared out.**
 
 ## Why the dials matter for power changing hands
 
@@ -1022,7 +1022,7 @@ Teach the wrinkle. Occasionally a party wins **more district seats than its prop
               "A ranked-choice single seat",
             ],
             correctIndex: 2,
-            explanation: "One 150-seat national district gives a natural threshold of about 0.67 percent (one seat), so almost any organised group wins representation. Proportionality turned nearly all the way up.",
+            explanation: "One 150-seat national district gives a natural threshold of about 0.67 percent (one seat), so almost any organized group wins representation. Proportionality turned nearly all the way up.",
             sourceLessonSlug: "power-changes-party-list",
           },
           {
@@ -1137,7 +1137,7 @@ Teach the wrinkle. Occasionally a party wins **more district seats than its prop
             prompt: "In MMP, the 'top-up' seats are added so that each party's:",
             options: [
               "Local members all keep seats",
-              "District wins are cancelled out",
+              "District wins are canceled out",
               "Leader picks the whole list",
               "Total matches its party vote",
             ],
@@ -1240,7 +1240,7 @@ A **coup d'etat** is an attempt by actors **already inside the state**, most oft
 - **It is fast and narrow.** A coup typically targets the top: seize the capital, the broadcast stations, the leader, and announce that the government has changed.
 - **It often leaves the deeper order intact.** The class structure, the economy, and much of the bureaucracy can survive a coup unchanged; what changes is who commands them.
 
-Because coups are a recognisable, recurring event, scholars have built **datasets** of them. The Powell and Thyne dataset catalogues coup attempts worldwide since 1950 using a consistent definition, which is what makes cross-country comparison possible in the first place (Powell & Thyne, 2011). **The point for this course: a coup is a change of controllers, not a change of the system they control.**
+Because coups are a recognisable, recurring event, scholars have built **datasets** of them. The Powell and Thyne dataset catalogs coup attempts worldwide since 1950 using a consistent definition, which is what makes cross-country comparison possible in the first place (Powell & Thyne, 2011). **The point for this course: a coup is a change of controllers, not a change of the system they control.**
 
 ## The revolution: transformation from below
 
@@ -1254,7 +1254,7 @@ A **revolution** in the strong sense is not a fast palace seizure but a **mass-b
 
 ## Why the labels are contested, and how to handle it
 
-Here is where care is required, because **the words "coup" and "revolution" carry judgement.** Calling an event a "revolution" tends to legitimise it as the people rising; calling the same event a "coup" tends to delegitimise it as an illegitimate seizure, and partisans of every stripe choose the word that flatters their side. **This course's discipline is the one from the election half: describe the mechanism, attribute the label, and do not launder a preference as a fact.** For any specific modern case, note who moved (insiders or a mass movement), how fast, and how deep the change went, and report that competing actors call it different things. **The analysis is in the mechanism; the label is often the fight.**
+Here is where care is required, because **the words "coup" and "revolution" carry judgment.** Calling an event a "revolution" tends to legitimise it as the people rising; calling the same event a "coup" tends to delegitimise it as an illegitimate seizure, and partisans of every stripe choose the word that flatters their side. **This course's discipline is the one from the election half: describe the mechanism, attribute the label, and do not launder a preference as a fact.** For any specific modern case, note who moved (insiders or a mass movement), how fast, and how deep the change went, and report that competing actors call it different things. **The analysis is in the mechanism; the label is often the fight.**
 
 ## The shared trait, and the limit
 
@@ -1315,7 +1315,7 @@ Because it shows that **the alternative to seizing power is designing its transf
         },
         {
           prompt: "Why can scholars build datasets of coups, and what makes that possible?",
-          answer: "Because a coup is a recognisable, recurring event with a consistent definition (an illegal, overt attempt by the military or other state elites to unseat the sitting leader). Powell and Thyne's dataset catalogues coup attempts worldwide since 1950 using that definition, which enables cross-country comparison.",
+          answer: "Because a coup is a recognisable, recurring event with a consistent definition (an illegal, overt attempt by the military or other state elites to unseat the sitting leader). Powell and Thyne's dataset catalogs coup attempts worldwide since 1950 using that definition, which enables cross-country comparison.",
         },
         {
           prompt: "How should this course handle the contested labels 'coup' versus 'revolution' for a modern case?",
@@ -1423,7 +1423,7 @@ Two cautions. **First, a term limit only works if the rest of the system enforce
               "A recognisable, defined event",
             ],
             correctIndex: 3,
-            explanation: "A consistent definition (an illegal, overt attempt by the military or other state elites to unseat the leader) lets datasets like Powell and Thyne's catalogue coups since 1950 for comparison.",
+            explanation: "A consistent definition (an illegal, overt attempt by the military or other state elites to unseat the leader) lets datasets like Powell and Thyne's catalog coups since 1950 for comparison.",
             sourceLessonSlug: "power-changes-coups-revolutions",
           },
           {
@@ -1435,7 +1435,7 @@ Two cautions. **First, a term limit only works if the rest of the system enforce
               "Refuses to discuss the event at all",
             ],
             correctIndex: 1,
-            explanation: "The words carry judgement, so the course describes the mechanism (who moved, how fast, how deep), attributes the label to whoever uses it, and does not launder a preference as a fact.",
+            explanation: "The words carry judgment, so the course describes the mechanism (who moved, how fast, how deep), attributes the label to whoever uses it, and does not launder a preference as a fact.",
             sourceLessonSlug: "power-changes-coups-revolutions",
           },
           {
@@ -1568,9 +1568,9 @@ Two cautions. **First, a term limit only works if the rest of the system enforce
       slug: "power-changes-map",
       title: "19 · Map: the world's electoral systems, by family",
       section: "Section 5 · Put the machine to work",
-      body: `**Read this before the map, because the map's limits are part of the lesson.** This platform draws markers as fixed-size dots on a world projection, so the coordinates below are **approximate points placed at capitals to show a pattern, not addresses.** Each marker stands for a whole country's system for its main elected chamber, which is a national rule and not a single building. Read the colours, not the positions.
+      body: `**Read this before the map, because the map's limits are part of the lesson.** This platform draws markers as fixed-size dots on a world projection, so the coordinates below are **approximate points placed at capitals to show a pattern, not addresses.** Each marker stands for a whole country's system for its main elected chamber, which is a national rule and not a single building. Read the colors, not the positions.
 
-## What the colours mean
+## What the colors mean
 
 The markers are grouped by the **family** each country uses for its principal legislative chamber, which is the whole first half of the course expressed as a legend:
 
@@ -1578,15 +1578,15 @@ The markers are grouped by the **family** each country uses for its principal le
 
 **Green markers: the proportional family (seats in proportion to votes).** The Netherlands (one 150-seat national district, near-total proportionality) and Israel (nationwide list PR with a 3.25 percent threshold). Green is the family built to shrink the votes-to-seats gap, where coalitions are the normal way a government forms.
 
-**Amber marker: ranked-choice / instant-runoff.** Australia (House of Representatives, by the alternative vote since 1918). Amber sits beside blue, not green: it is majoritarian, a single-seat rule that fixes the spoiler by transfer, but it is drawn in its own colour to make the point that it is not proportional.
+**Amber marker: ranked-choice / instant-runoff.** Australia (House of Representatives, by the alternative vote since 1918). Amber sits beside blue, not green: it is majoritarian, a single-seat rule that fixes the spoiler by transfer, but it is drawn in its own color to make the point that it is not proportional.
 
 **Purple markers: mixed-member proportional.** Germany (the Bundestag) and New Zealand (which adopted MMP in 1993 and first used it in 1996). Purple is the family that runs a local tier and a proportional tier together and lets the party vote set the totals, refusing the trade-off the others accept.
 
 ## What the map cannot show
 
-**It cannot show the family as a shape.** An electoral system is a national rule, not a place, so a single dot at a capital is a stand-in for a whole country's law. The plan for this path notes that comparative courses like this one are the first content that genuinely wants a polygon (choropleth) layer, a country filled by the colour of its system, rather than pins; until that ships, read each dot as "this country's rule", not "this spot".
+**It cannot show the family as a shape.** An electoral system is a national rule, not a place, so a single dot at a capital is a stand-in for a whole country's law. The plan for this path notes that comparative courses like this one are the first content that genuinely wants a polygon (choropleth) layer, a country filled by the color of its system, rather than pins; until that ships, read each dot as "this country's rule", not "this spot".
 
-**It cannot show the dials.** Two green PR countries can behave very differently because their magnitude and threshold are set differently (the Netherlands at about 0.67 percent, Israel at 3.25), and the colour cannot show that. **The colour tells you the family; the dials you carry from Section 3.** With the families in view, close the course by taking one real contest and re-running it under a second rule.
+**It cannot show the dials.** Two green PR countries can behave very differently because their magnitude and threshold are set differently (the Netherlands at about 0.67 percent, Israel at 3.25), and the color cannot show that. **The color tells you the family; the dials you carry from Section 3.** With the families in view, close the course by taking one real contest and re-running it under a second rule.
 
 ## Sources
 - Reynolds, A., Reilly, B., & Ellis, A. (2005). Electoral system design: The new International IDEA handbook. International Institute for Democracy and Electoral Assistance. https://www.idea.int/publications/catalogue/electoral-system-design-new-international-idea-handbook
@@ -1705,7 +1705,7 @@ Re-run the contest under the second rule the way Lesson 2 did: state the rule, a
 
 ## Step 4. Say what changed, and why the rule caused it
 
-State plainly whether the winner or the seat balance changed, and **name the mechanism** from the course that did the work: a manufactured majority, wasted votes, a threshold that excluded a party, a transfer that rescued one, a district magnitude that favoured the big parties. **The explanation is the point.** "It changed" is a result; "it changed because the 5 percent threshold denied party X its proportional seats" is an analysis.
+State plainly whether the winner or the seat balance changed, and **name the mechanism** from the course that did the work: a manufactured majority, wasted votes, a threshold that excluded a party, a transfer that rescued one, a district magnitude that favored the big parties. **The explanation is the point.** "It changed" is a result; "it changed because the 5 percent threshold denied party X its proportional seats" is an analysis.
 
 ## Rules you do not get to break
 
@@ -1717,7 +1717,7 @@ State plainly whether the winner or the seat balance changed, and **name the mec
 
 ## What good looks like
 
-A one-page comparison in which a real contest is named and sourced, its actual result is stated under the real rule, a second rule is applied step by step to the same real numbers, the change (or the absence of change) is shown, and the mechanism that caused it is named, with every assumption labelled. **If you took a real election whose winner everyone thinks of as simply "the winner", and showed from the official returns that a different rule would have seated someone else, you have proved the thing this course set out to teach: the winner is the votes AND the rule, and you cannot separate them after the fact.**
+A one-page comparison in which a real contest is named and sourced, its actual result is stated under the real rule, a second rule is applied step by step to the same real numbers, the change (or the absence of change) is shown, and the mechanism that caused it is named, with every assumption labeled. **If you took a real election whose winner everyone thinks of as simply "the winner", and showed from the official returns that a different rule would have seated someone else, you have proved the thing this course set out to teach: the winner is the votes AND the rule, and you cannot separate them after the fact.**
 
 ## Sources
 - Reynolds, A., Reilly, B., & Ellis, A. (2005). Electoral system design: The new International IDEA handbook. International Institute for Democracy and Electoral Assistance. https://www.idea.int/publications/catalogue/electoral-system-design-new-international-idea-handbook

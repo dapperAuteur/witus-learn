@@ -90,14 +90,14 @@ export const HOW_THE_TOOLS_TRAVELLED_COURSE: AuthoredCourse = {
       slug: "htt-taxonomy",
       title: "2 · Six kinds of connection, ranked",
       section: "Section 1 · The Test",
-      body: `**Not all links are equal, and treating them as equal is how a good argument turns into a bad one.** This lesson gives you the taxonomy the rest of the course runs on. Learn the six categories and the rule under them, and you can grade any claim of transmission you meet, in this catalogue or anywhere else.
+      body: `**Not all links are equal, and treating them as equal is how a good argument turns into a bad one.** This lesson gives you the taxonomy the rest of the course runs on. Learn the six categories and the rule under them, and you can grade any claim of transmission you meet, in this catalog or anywhere else.
 
 ## The six kinds, strongest first
 
 | Rank | Kind | What it means | What proves it |
 |---|---|---|---|
 | **1** | **Source to use** | A court, a legislature or an agency in one place authorises a tool; another place applies it | The authorising document, and the tool in use elsewhere with dates that run the right way |
-| **2** | **Model to copy** | A place runs a programme that others deliberately imitate | Evidence of the imitating, not only of the admiring: a plan, a delegation with a report, a borrowed provision |
+| **2** | **Model to copy** | A place runs a program that others deliberately imitate | Evidence of the imitating, not only of the admiring: a plan, a delegation with a report, a borrowed provision |
 | **3** | **Doctrine pair** | Two decisions from two places that bound one question from opposite ends | Both opinions, read for what each actually holds |
 | **4** | **Person to place** | One named individual carries a practice between places | The person documented in both places, with dates, and the practice documented in their hands |
 | **5** | **Instrument lineage** | The same tool evolving across places over time | Each stage sourced, and the handover between stages sourced, which is the hard part |
@@ -167,12 +167,12 @@ export const HOW_THE_TOOLS_TRAVELLED_COURSE: AuthoredCourse = {
 
 **It is cheap because you usually already have the dates.** It takes an hour, and an hour spent here saves you from publishing something a reader can break in a minute.
 
-**The Pittsburgh course ran exactly this test on its own title** and found Indianapolis identifying a neighbourhood as blighted in 1945 and demolishing it in 1948, on the same timeline as Pittsburgh's rather than after it. **Parallel adoption, not a copy-chain.** Section 3 runs the same test on this course's flagship claim, with the same result.
+**The Pittsburgh course ran exactly this test on its own title** and found Indianapolis identifying a neighborhood as blighted in 1945 and demolishing it in 1948, on the same timeline as Pittsburgh's rather than after it. **Parallel adoption, not a copy-chain.** Section 3 runs the same test on this course's flagship claim, with the same result.
 
-## Question 2. Mechanism. By what physical route would the influence have travelled?
+## Question 2. Mechanism. By what physical route would the influence have traveled?
 
 A cause needs a channel. **Name it.** For a claim about cities, the plausible channels are short and countable:
-- **Money.** A federal grant programme, a matching formula, a trust fund.
+- **Money.** A federal grant program, a matching formula, a trust fund.
 - **Law.** A binding opinion, a statute, a regulation, a model code adopted by reference.
 - **Paper.** A published plan, a manual, a report, a professional journal.
 - **People.** A planner, an official, a consultant, a delegation that went home and wrote something.
@@ -187,7 +187,7 @@ A cause needs a channel. **Name it.** For a claim about cities, the plausible ch
 
 ## Question 4. Alternative cause. What else would produce the same result?
 
-**The last question is the one people skip, and it is the one that matters most for this series.** If a shared federal statute funded both places, then both places doing the same thing is exactly what you would expect **whether or not** either had ever heard of the other. **A common upstream is the alternative explanation for almost every city-to-city resemblance in this catalogue**, which is why Section 2 reads that upstream before Section 3 draws a single line between two cities.
+**The last question is the one people skip, and it is the one that matters most for this series.** If a shared federal statute funded both places, then both places doing the same thing is exactly what you would expect **whether or not** either had ever heard of the other. **A common upstream is the alternative explanation for almost every city-to-city resemblance in this catalog**, which is why Section 2 reads that upstream before Section 3 draws a single line between two cities.
 
 **Two other alternatives to keep in view.**
 - **Parallel invention.** Two places facing the same problem with the same legal materials in the same decade will often reach the same answer independently. That is not transmission. **It is convergence**, and it is extremely common in American law, where fifty legislatures work in parallel on the same national problem.
@@ -203,7 +203,7 @@ A cause needs a channel. **Name it.** For a claim about cities, the plausible ch
 | 1 and 3 but not 4 | **Confounded** | Report the common upstream as the better explanation |
 | Chronology only | **Rhyme** | Use the word "rhyme" and stop |
 
-**One habit that outlasts every fact in this course.** When a claim fails a test, **report the failure in the write-up.** The failure is a finding. Every course in this series has published one, and the catalogue is more trustworthy because of it, not less.
+**One habit that outlasts every fact in this course.** When a claim fails a test, **report the failure in the write-up.** The failure is a finding. Every course in this series has published one, and the catalog is more trustworthy because of it, not less.
 
 ## Sources
 - Berman v. Parker, 348 U.S. 26 (1954). https://www.law.cornell.edu/supremecourt/text/348/26
@@ -284,7 +284,7 @@ A cause needs a channel. **Name it.** For a claim about cities, the plausible ch
             options: [
               "Thematic rhyme, because resemblance across many places is the most widely observed pattern",
               "Instrument lineage, because it covers the longest span of time and the most instruments",
-              "Model to copy, because a programme that others imitate leaves the largest documentary trail",
+              "Model to copy, because a program that others imitate leaves the largest documentary trail",
               "Source to use",
             ],
             correctIndex: 3,
@@ -333,7 +333,7 @@ A cause needs a channel. **Name it.** For a claim about cities, the plausible ch
               "Admiration is evidence of reputation; copying needs evidence of a copy",
               "There is no practical difference, because a city that is admired is by definition being imitated",
               "Admiration is documented in newspapers while copying is documented only in private correspondence",
-              "Copying is what happens between neighbouring cities, and admiration is what happens across long distances",
+              "Copying is what happens between neighboring cities, and admiration is what happens across long distances",
             ],
             correctIndex: 0,
             explanation: "More than seventy delegations came to study Pittsburgh's renewal, which is documented and real, and \"other cities copied Pittsburgh's clearance\" still failed a date table.",
@@ -355,7 +355,7 @@ A cause needs a channel. **Name it.** For a claim about cities, the plausible ch
             prompt: "Which question does the test ask FIRST, and why?",
             options: [
               "Document, because a claim without paper behind it is not worth spending any further time on",
-              "Alternative cause, because a common federal upstream explains most resemblances in this catalogue",
+              "Alternative cause, because a common federal upstream explains most resemblances in this catalog",
               "Mechanism, because naming the channel is what turns a resemblance into an argument",
               "Chronology, because it is the cheapest test and it kills more theses than anything else",
             ],
@@ -378,13 +378,13 @@ A cause needs a channel. **Name it.** For a claim about cities, the plausible ch
           {
             prompt: "What is the fourth question of the test, the one people skip?",
             options: [
-              "Whether the two places are close enough together for officials to have travelled between them easily",
+              "Whether the two places are close enough together for officials to have traveled between them easily",
               "Whether the sources you are relying on are primary rather than secondary documents",
               "Alternative cause: what else would produce the same result",
               "Whether the outcome in the second city was worse than the outcome in the first city was",
             ],
             correctIndex: 2,
-            explanation: "A common federal upstream is the alternative explanation for nearly every city-to-city resemblance in this catalogue, which is why Section 2 reads that upstream first.",
+            explanation: "A common federal upstream is the alternative explanation for nearly every city-to-city resemblance in this catalog, which is why Section 2 reads that upstream first.",
             sourceLessonSlug: "htt-the-test",
           },
           {
@@ -420,7 +420,7 @@ A cause needs a channel. **Name it.** For a claim about cities, the plausible ch
               "Rewrite the claim as a question so that the reader is left to decide the matter for themselves",
             ],
             correctIndex: 2,
-            explanation: "Every course in this series has published one, and the catalogue is more trustworthy because of it, not less.",
+            explanation: "Every course in this series has published one, and the catalog is more trustworthy because of it, not less.",
             sourceLessonSlug: "htt-the-test",
           },
         ],
@@ -433,7 +433,7 @@ A cause needs a channel. **Name it.** For a claim about cities, the plausible ch
       slug: "htt-act-1949",
       title: "5 · The Housing Act of 1949: the money that paid for the clearance",
       section: "Section 2 · The Federal Upstream",
-      body: `**Section 1 told you not to draw a line without a mechanism. This section is the mechanism.** Before you can grade any claim that one city influenced another, you have to know what both cities were being offered from above, because **a shared offer explains a shared behaviour without either city ever hearing of the other.** That is the fourth question of the test, and this whole section is the answer to it.
+      body: `**Section 1 told you not to draw a line without a mechanism. This section is the mechanism.** Before you can grade any claim that one city influenced another, you have to know what both cities were being offered from above, because **a shared offer explains a shared behavior without either city ever hearing of the other.** That is the fourth question of the test, and this whole section is the answer to it.
 
 **The instrument.** The **Housing Act of 1949**, Public Law 81-171, **63 Stat. 413**, approved **July 15, 1949**. **Title I** is the one this series keeps running into: it is captioned slum clearance and community development and redevelopment, and it created the national money for what everybody would soon call urban renewal (Housing Act of 1949).
 
@@ -463,20 +463,20 @@ The Act opens with a **declaration of national housing policy**, now codified at
 
 **Step 4 is the one to understand, because it is the whole invention.** Cleared inner-city land generally could not be sold for what it cost to assemble and clear. **The gap between those two numbers is the "net project cost,"** and the federal capital grant covered up to **two thirds** of it, with the locality supplying local grants-in-aid worth at least **one third** of aggregate net project costs (Housing Act of 1949).
 
-**Now say what that meant to a city council.** For every three dollars of loss on the deal, **the city found one and Washington found two.** No city in this series had to invent that arrangement, argue for it, or borrow it from a neighbour. **It was a standing federal offer, open in every state at once, from 1949.**
+**Now say what that meant to a city council.** For every three dollars of loss on the deal, **the city found one and Washington found two.** No city in this series had to invent that arrangement, argue for it, or borrow it from a neighbor. **It was a standing federal offer, open in every state at once, from 1949.**
 
 ## What this does to your grading of claims
 
 **This is the single most useful fact in the course for testing a connection**, and it cuts against most of the exciting ones.
 
-- **It is a funding stream**, which lesson 2 listed as one of the four things that make a documented line. So a city taking Title I money is connected to the federal programme by a document. **That connection is easy and real.**
+- **It is a funding stream**, which lesson 2 listed as one of the four things that make a documented line. So a city taking Title I money is connected to the federal program by a document. **That connection is easy and real.**
 - **It is also the alternative cause.** If two cities cleared two Black districts within a few years of each other, **the shared federal cheque is a complete explanation of the timing**, and you need something more to argue that either city influenced the other. **The Pittsburgh course reached exactly this conclusion about its own headline.**
 
 **The transferable habit.** When two places do the same thing at the same time, **look for the shared cheque before you look for the shared idea.** Money leaves better records than influence does, and it is usually the true answer.
 
 ## The half of this Act that this series talks about less
 
-**The 1949 Act had two halves.** Title I paid for clearance. **Title III authorised a large public housing programme, on the order of 810,000 units over six years.** How many of those units were actually built, how quickly, and how well they matched what clearance removed, is a real historical question with a literature behind it, and **this course has not answered it** (von Hoffman, 2000). **Naming the other half is not a defence of the Act. It is a refusal to describe a statute by only the part that fits the argument.**
+**The 1949 Act had two halves.** Title I paid for clearance. **Title III authorised a large public housing program, on the order of 810,000 units over six years.** How many of those units were actually built, how quickly, and how well they matched what clearance removed, is a real historical question with a literature behind it, and **this course has not answered it** (von Hoffman, 2000). **Naming the other half is not a defense of the Act. It is a refusal to describe a statute by only the part that fits the argument.**
 
 ## Sources
 - Housing Act of 1949, Pub. L. No. 81-171, 63 Stat. 413 (1949). https://www.govinfo.gov/content/pkg/STATUTE-63/pdf/STATUTE-63-Pg413.pdf
@@ -485,11 +485,11 @@ The Act opens with a **declaration of national housing policy**, now codified at
       recallContent: [
         {
           prompt: "Name the four questions of the test, in order.",
-          answer: "Chronology (does the cause come before the effect), mechanism (by what route would influence have travelled), document (where is the paper), and alternative cause (what else would produce the same result).",
+          answer: "Chronology (does the cause come before the effect), mechanism (by what route would influence have traveled), document (where is the paper), and alternative cause (what else would produce the same result).",
         },
         {
           prompt: "Which four channels can a mechanism run through?",
-          answer: "Money (a grant programme, a matching formula, a trust fund), law (an opinion, a statute, a regulation, a model code), paper (a plan, a manual, a report, a journal), and people (a planner, an official, a consultant, a delegation).",
+          answer: "Money (a grant program, a matching formula, a trust fund), law (an opinion, a statute, a regulation, a model code), paper (a plan, a manual, a report, a journal), and people (a planner, an official, a consultant, a delegation).",
         },
         {
           prompt: "If a claim passes mechanism, document and alternative cause but fails chronology, what may you write?",
@@ -501,7 +501,7 @@ The Act opens with a **declaration of national housing policy**, now codified at
         },
         {
           prompt: "What should you do when your own claim fails a test?",
-          answer: "Report the failure in the write-up, because the failure is a finding. Every course in this series has published one, and the catalogue is more trustworthy for it.",
+          answer: "Report the failure in the write-up, because the failure is a finding. Every course in this series has published one, and the catalog is more trustworthy for it.",
         },
       ],
     },
@@ -509,17 +509,17 @@ The Act opens with a **declaration of national housing policy**, now codified at
       slug: "htt-act-1954",
       title: "6 · The Housing Act of 1954: the year the word changed",
       section: "Section 2 · The Federal Upstream",
-      body: `Five years later Congress rewrote the programme, and the rewrite matters for two reasons: **it changed what the money could be spent on, and it changed what the thing was called.** Both changes travelled to every city in this series.
+      body: `Five years later Congress rewrote the program, and the rewrite matters for two reasons: **it changed what the money could be spent on, and it changed what the thing was called.** Both changes traveled to every city in this series.
 
 **The instrument.** The **Housing Act of 1954**, Public Law 83-560, **68 Stat. 590**, approved **August 2, 1954** (Housing Act of 1954).
 
-**Hold that date next to one you already know.** *Berman v. Parker* was decided on **November 22, 1954** (Berman v. Parker, 1954). **The statute that rebuilt the programme and the opinion that made the programme constitutionally safe are three and a half months apart in the same year.** 1954 is the hinge of this entire series, and Section 3 is about the second half of it.
+**Hold that date next to one you already know.** *Berman v. Parker* was decided on **November 22, 1954** (Berman v. Parker, 1954). **The statute that rebuilt the program and the opinion that made the program constitutionally safe are three and a half months apart in the same year.** 1954 is the hinge of this entire series, and Section 3 is about the second half of it.
 
 ## Change one: the name
 
-The 1949 programme was **urban redevelopment**: find a slum, clear it, rebuild. The 1954 Act reoriented federal intervention away from that narrower clearance-and-public-housing mandate toward a broader strategy, **urban renewal**, which added **rehabilitation and conservation** of existing neighbourhoods to demolition, and which leaned harder on **private** redevelopers to do the building (Housing Act of 1954).
+The 1949 program was **urban redevelopment**: find a slum, clear it, rebuild. The 1954 Act reoriented federal intervention away from that narrower clearance-and-public-housing mandate toward a broader strategy, **urban renewal**, which added **rehabilitation and conservation** of existing neighborhoods to demolition, and which leaned harder on **private** redevelopers to do the building (Housing Act of 1954).
 
-**A change of name is not cosmetic when the name is in a statute.** After 1954 the local agency in almost every city in this series is an **urban renewal** agency, applying for **urban renewal** funds, under an **urban renewal** plan. **When you find that vocabulary in a local record, you have found a federal programme, and you can date the document from the word alone.** That is a small, genuinely useful research skill.
+**A change of name is not cosmetic when the name is in a statute.** After 1954 the local agency in almost every city in this series is an **urban renewal** agency, applying for **urban renewal** funds, under an **urban renewal** plan. **When you find that vocabulary in a local record, you have found a federal program, and you can date the document from the word alone.** That is a small, genuinely useful research skill.
 
 ## Change two: the workable program
 
@@ -533,11 +533,11 @@ The 1954 Act attached a condition. To receive federal urban renewal aid, a local
 
 The Act also put the **Federal Housing Administration** to work inside renewal areas. **Section 220** provided FHA mortgage insurance for housing built or rehabilitated in urban renewal areas, and **Section 221** provided insurance aimed at housing for families displaced by government action (Housing Act of 1954).
 
-**Notice the shape of that.** The same federal agency whose underwriting rules helped make those neighbourhoods unlendable in the first place, which is lesson 7, was now insuring the mortgages on what replaced them. **Both facts are about the same agency, and a course that reports only one of them is reporting half an instrument.**
+**Notice the shape of that.** The same federal agency whose underwriting rules helped make those neighborhoods unlendable in the first place, which is lesson 7, was now insuring the mortgages on what replaced them. **Both facts are about the same agency, and a course that reports only one of them is reporting half an instrument.**
 
 ## What this lesson is NOT claiming
 
-**It is not claiming that the 1954 Act caused any particular clearance.** Indianapolis had been demolishing near Indiana Avenue since 1948, six years earlier, under Indiana's own 1945 machinery. **The 1954 Act reshaped and re-funded a programme that was already running.** What it gives you is a mechanism and a vocabulary, and lesson 3 warned you to keep those separate from causation.
+**It is not claiming that the 1954 Act caused any particular clearance.** Indianapolis had been demolishing near Indiana Avenue since 1948, six years earlier, under Indiana's own 1945 machinery. **The 1954 Act reshaped and re-funded a program that was already running.** What it gives you is a mechanism and a vocabulary, and lesson 3 warned you to keep those separate from causation.
 
 ## Sources
 - Housing Act of 1954, Pub. L. No. 83-560, 68 Stat. 590 (1954).
@@ -547,7 +547,7 @@ The Act also put the **Federal Housing Administration** to work inside renewal a
       recallContent: [
         {
           prompt: "Give the citation and date of the Housing Act of 1949, and what Title I did.",
-          answer: "Public Law 81-171, 63 Stat. 413, approved July 15, 1949. Title I created the national money for slum clearance and urban redevelopment, the programme everyone soon called urban renewal.",
+          answer: "Public Law 81-171, 63 Stat. 413, approved July 15, 1949. Title I created the national money for slum clearance and urban redevelopment, the program everyone soon called urban renewal.",
         },
         {
           prompt: "What is the operative word in the 1949 declaration of policy, and why?",
@@ -563,7 +563,7 @@ The Act also put the **Federal Housing Administration** to work inside renewal a
         },
         {
           prompt: "What was the other half of the 1949 Act, and what does this course say about it?",
-          answer: "Title III authorised a large public housing programme, on the order of 810,000 units over six years. How many were built, how fast, and how well they matched what clearance removed is a real question this course has not answered. Naming the other half is a refusal to describe a statute by only the part that fits the argument.",
+          answer: "Title III authorised a large public housing program, on the order of 810,000 units over six years. How many were built, how fast, and how well they matched what clearance removed is a real question this course has not answered. Naming the other half is a refusal to describe a statute by only the part that fits the argument.",
         },
       ],
     },
@@ -587,7 +587,7 @@ The 1938 manual states plainly:
 
 ## Why this course leans on the manual and is careful with the map
 
-**The famous object in this story is the other one:** the Home Owners' Loan Corporation "Residential Security" maps of the late 1930s, with their green, blue, yellow and red neighbourhoods. They are vivid, they are online, and their written area descriptions name race directly.
+**The famous object in this story is the other one:** the Home Owners' Loan Corporation "Residential Security" maps of the late 1930s, with their green, blue, yellow and red neighborhoods. They are vivid, they are online, and their written area descriptions name race directly.
 
 **The Baltimore course, which had to teach both, found the tidy causal story about the maps is disputed.** Scholars who read the lending records point out that the maps were largely confidential internal documents and that HOLC itself lent inside the red areas, which is not what a simple redlining account predicts (Hillier, 2003). **Later quantitative work does find the graded boundaries carried some independent long-run effect** (Aaronson et al., 2021). So the map is real evidence with real downstream correlation, and it is **not** a proven single cause.
 
@@ -595,9 +595,9 @@ The 1938 manual states plainly:
 
 ## What the manual explains that nothing else in this course does
 
-**Go back to the surveys the Berman opinion recited**: 64.3 percent of dwellings beyond repair, 60.3 percent with no baths, 83.8 percent lacking central heating (Berman v. Parker, 1954). **Those measurements were real.** The DC course's central idea is that **the condition and its cause can be the same policy at two different dates**: a neighbourhood is starved of mortgage capital for a generation, its housing decays, and the decay is then the legal basis for clearing the people who lived through it.
+**Go back to the surveys the Berman opinion recited**: 64.3 percent of dwellings beyond repair, 60.3 percent with no baths, 83.8 percent lacking central heating (Berman v. Parker, 1954). **Those measurements were real.** The DC course's central idea is that **the condition and its cause can be the same policy at two different dates**: a neighborhood is starved of mortgage capital for a generation, its housing decays, and the decay is then the legal basis for clearing the people who lived through it.
 
-**The manual is the paper trail for the first half of that circle.** It is the federal document instructing that capital should avoid exactly the neighbourhoods that Title I money would later be spent clearing. **Both instruments are federal, they run twenty years apart, and they point at the same blocks.**
+**The manual is the paper trail for the first half of that circle.** It is the federal document instructing that capital should avoid exactly the neighborhoods that Title I money would later be spent clearing. **Both instruments are federal, they run twenty years apart, and they point at the same blocks.**
 
 **Be precise about what that is and is not.** It is a documented, quotable federal policy of racial underwriting, and it is a genuine common upstream. **It is not a proof that any specific parcel in any specific city was denied a specific loan**, which would need that city's lending records, and no such record has been read into this course.
 
@@ -610,11 +610,11 @@ The 1938 manual states plainly:
       recallContent: [
         {
           prompt: "Give the citation and date of the Housing Act of 1954, and why the date matters.",
-          answer: "Public Law 83-560, 68 Stat. 590, approved August 2, 1954. Berman v. Parker was decided on November 22, 1954, so the statute that rebuilt the programme and the opinion that made it constitutionally safe are three and a half months apart in the same year.",
+          answer: "Public Law 83-560, 68 Stat. 590, approved August 2, 1954. Berman v. Parker was decided on November 22, 1954, so the statute that rebuilt the program and the opinion that made it constitutionally safe are three and a half months apart in the same year.",
         },
         {
           prompt: "What changed about the name in 1954, and why is that useful to a researcher?",
-          answer: "Urban redevelopment became urban renewal, adding rehabilitation and conservation to demolition and leaning harder on private redevelopers. After 1954 the vocabulary in a local record tells you that you have found a federal programme, and you can date the document from the word alone.",
+          answer: "Urban redevelopment became urban renewal, adding rehabilitation and conservation to demolition and leaning harder on private redevelopers. After 1954 the vocabulary in a local record tells you that you have found a federal program, and you can date the document from the word alone.",
         },
         {
           prompt: "What was the workable program, and what kind of mechanism is it?",
@@ -622,11 +622,11 @@ The 1938 manual states plainly:
         },
         {
           prompt: "What did Sections 220 and 221 of the 1954 Act do, and what is the irony in them?",
-          answer: "Section 220 provided FHA mortgage insurance for housing built or rehabilitated in urban renewal areas, and Section 221 aimed insurance at housing for families displaced by government action. The same agency whose underwriting rules helped make those neighbourhoods unlendable was now insuring the mortgages on what replaced them.",
+          answer: "Section 220 provided FHA mortgage insurance for housing built or rehabilitated in urban renewal areas, and Section 221 aimed insurance at housing for families displaced by government action. The same agency whose underwriting rules helped make those neighborhoods unlendable was now insuring the mortgages on what replaced them.",
         },
         {
           prompt: "What is lesson 6 careful NOT to claim?",
-          answer: "That the 1954 Act caused any particular clearance. Indianapolis had been demolishing near Indiana Avenue since 1948 under Indiana's own 1945 machinery. The Act reshaped and re-funded a programme already running, and a mechanism is not the same thing as a cause.",
+          answer: "That the 1954 Act caused any particular clearance. Indianapolis had been demolishing near Indiana Avenue since 1948 under Indiana's own 1945 machinery. The Act reshaped and re-funded a program already running, and a mechanism is not the same thing as a cause.",
         },
       ],
     },
@@ -648,24 +648,24 @@ The **Federal-Aid Highway Act of 1956**, Public Law 84-627, **70 Stat. 374**, si
 
 And when the first routes were selected, the process was not purely civilian: on **August 2, 1947**, Commissioner MacDonald and Federal Works Administrator Philip B. Fleming announced the selection of the first **37,700 miles**, routes proposed by the state highway agencies and **reviewed by the Department of Defense** (Federal Highway Administration, n.d.-a).
 
-**This is the documented hinge between two halves of this catalogue.** The war courses in this series describe a country organised for national defence; the city courses describe neighbourhoods cut by roads. **The Interstate system is where those two subjects are the same subject**, and you do not have to infer it from atmosphere: the defence rationale is in the 1944 Act's language, in the 1947 review by the Defense Department, and in the 1956 name.
+**This is the documented hinge between two halves of this catalog.** The war courses in this series describe a country organized for national defense; the city courses describe neighborhoods cut by roads. **The Interstate system is where those two subjects are the same subject**, and you do not have to infer it from atmosphere: the defense rationale is in the 1944 Act's language, in the 1947 review by the Defense Department, and in the 1956 name.
 
-**Now hold it honestly, which is the discipline of this whole course.** The defence rationale is **real and documented**. It is also **not** a proof that any particular route was chosen for defence reasons, and there are famous folk claims about the system (that a fixed fraction of it had to be straight enough to land aircraft, for example) that this course has not verified and therefore does not repeat. **Cite the name and the statute. Do not decorate them.**
+**Now hold it honestly, which is the discipline of this whole course.** The defense rationale is **real and documented**. It is also **not** a proof that any particular route was chosen for defense reasons, and there are famous folk claims about the system (that a fixed fraction of it had to be straight enough to land aircraft, for example) that this course has not verified and therefore does not repeat. **Cite the name and the statute. Do not decorate them.**
 
 ## What the 1956 Act actually did to cities, and what it did not
 
 **What it did: it changed the price.** Under a **90 percent federal share**, a state or city choosing an urban Interstate alignment was spending roughly **ten cents on the dollar** of the construction cost. **A dedicated trust fund meant the money did not have to be fought for annually.** If you want a single sentence for why so much urban highway got built so fast after 1956, it is that one, and it is a funding stream, which lesson 2 counts as a documented line.
 
-**What it did not do: choose anybody's route.** **Alignments were proposed by state highway agencies**, and in **September 1955** the Bureau of Public Roads published *General Location of National System of Interstate Highways Including All Additional Routes at Urban Areas*, known as **"the Yellow Book" for the colour of its cover**, containing maps showing where the urban Interstates would go (Federal Highway Administration, n.d.-b). **So the routes existed on paper before the money did.** Nothing in the 1956 statute names a neighbourhood in Indianapolis, Baltimore or Washington.
+**What it did not do: choose anybody's route.** **Alignments were proposed by state highway agencies**, and in **September 1955** the Bureau of Public Roads published *General Location of National System of Interstate Highways Including All Additional Routes at Urban Areas*, known as **"the Yellow Book" for the color of its cover**, containing maps showing where the urban Interstates would go (Federal Highway Administration, n.d.-b). **So the routes existed on paper before the money did.** Nothing in the 1956 statute names a neighborhood in Indianapolis, Baltimore or Washington.
 
 **That distinction is the entire reason this lesson exists.** The Act is a **funding and framework instrument**. The **alignment decision** is a separate instrument, taken locally and at the state level, and the city courses in this series are where you go to read one.
 
 ## The pattern in the alignments, and how to state it
 
-Deborah Archer's study of highways and racial equity documents that urban interstates were **repeatedly routed through Black neighbourhoods**, and takes its title from the placard carried in the Washington freeway revolt, "white men's roads through black men's homes" (Archer, 2020). **That pattern is documented and it is not in dispute here.**
+Deborah Archer's study of highways and racial equity documents that urban interstates were **repeatedly routed through Black neighborhoods**, and takes its title from the placard carried in the Washington freeway revolt, "white men's roads through black men's homes" (Archer, 2020). **That pattern is documented and it is not in dispute here.**
 
 **But say it in the right order, or you will have made a claim you cannot carry.**
-- **Sourceable:** a federal Act made urban highway construction cheap for states, a federal publication mapped urban routes in 1955, and the alignments that were then chosen fell disproportionately on Black neighbourhoods across many cities (Archer, 2020; Federal Highway Administration, n.d.-a, n.d.-b).
+- **Sourceable:** a federal Act made urban highway construction cheap for states, a federal publication mapped urban routes in 1955, and the alignments that were then chosen fell disproportionately on Black neighborhoods across many cities (Archer, 2020; Federal Highway Administration, n.d.-a, n.d.-b).
 - **Not sourced here:** that the 1956 statute directed, required or contemplated that outcome. **The Act's text does not do that**, and a claim about intent needs the records of the bodies that actually drew the lines.
 
 **The method, which is the same one you met in lesson 3.** A common upstream that made a choice cheap is not the same as the choice. **Name the upstream, then go find who chose.**
@@ -690,7 +690,7 @@ Deborah Archer's study of highways and racial equity documents that urban inters
         },
         {
           prompt: "How does the manual explain the survey figures Berman recited?",
-          answer: "It is the paper trail for the first half of the circle. Federal policy instructed capital to avoid the very neighbourhoods Title I money would later clear, so a neighbourhood starved of mortgage capital decayed, and the decay became the legal basis for clearing the people who lived through it.",
+          answer: "It is the paper trail for the first half of the circle. Federal policy instructed capital to avoid the very neighborhoods Title I money would later clear, so a neighborhood starved of mortgage capital decayed, and the decay became the legal basis for clearing the people who lived through it.",
         },
         {
           prompt: "What does the manual NOT prove?",
@@ -716,7 +716,7 @@ Deborah Archer's study of highways and racial equity documents that urban inters
               "Public Law 93-198, 87 Stat. 774, signed on the twenty-fourth day of December in 1973",
             ],
             correctIndex: 2,
-            explanation: "Title I of that Act created the national money for slum clearance and urban redevelopment, the programme soon called urban renewal.",
+            explanation: "Title I of that Act created the national money for slum clearance and urban redevelopment, the program soon called urban renewal.",
             sourceLessonSlug: "htt-act-1949",
           },
           {
@@ -725,7 +725,7 @@ Deborah Archer's study of highways and racial equity documents that urban inters
               "\"Through,\" because clearance is written into the goal as the way it will be reached",
               "\"Decent,\" because the standard of a decent home was never defined anywhere in the statute itself",
               "\"Feasible,\" because it gave every locality an unlimited amount of time to reach the stated goal",
-              "\"Welfare,\" because it placed the whole programme under the general welfare clause of the Constitution",
+              "\"Welfare,\" because it placed the whole program under the general welfare clause of the Constitution",
             ],
             correctIndex: 0,
             explanation: "The Act promises a decent home and a suitable living environment, and names elimination of substandard housing \"through the clearance of slums and blighted areas.\" Both halves are one sentence.",
@@ -748,8 +748,8 @@ Deborah Archer's study of highways and racial equity documents that urban inters
             options: [
               "Up to two thirds federal, with local grants-in-aid worth at least one third",
               "Evenly, half and half, with the state government contributing whatever remained after the split",
-              "Entirely federal, since a local agency could not lawfully contribute to a federal grant programme",
-              "Ninety percent federal and ten percent local, the same formula the highway programme later used",
+              "Entirely federal, since a local agency could not lawfully contribute to a federal grant program",
+              "Ninety percent federal and ten percent local, the same formula the highway program later used",
             ],
             correctIndex: 0,
             explanation: "For every three dollars of loss on the deal the city found one and Washington found two, as a standing offer open in every state from 1949.",
@@ -776,7 +776,7 @@ Deborah Archer's study of highways and racial equity documents that urban inters
               "Community development became community improvement, a change of wording with no legal consequence at all",
             ],
             correctIndex: 0,
-            explanation: "It also leaned harder on private redevelopers. When you find that vocabulary in a local record you have found a federal programme, and you can date the document from the word.",
+            explanation: "It also leaned harder on private redevelopers. When you find that vocabulary in a local record you have found a federal program, and you can date the document from the word.",
             sourceLessonSlug: "htt-act-1954",
           },
           {
@@ -785,7 +785,7 @@ Deborah Archer's study of highways and racial equity documents that urban inters
               "A schedule setting out the order in which a city would demolish the buildings inside a project area",
               "A federal review of every local condemnation filing before the taking could proceed to a court",
               "A package of local commitments: a plan, a zoning ordinance and map, and code enforcement",
-              "An agreement between two or more neighbouring cities to coordinate their renewal programmes regionally",
+              "An agreement between two or more neighboring cities to coordinate their renewal programs regionally",
             ],
             correctIndex: 2,
             explanation: "It is money converted into law at a distance. A city that wanted the grant produced the plan, the map, the code and the enforcement machinery, to a federal specification.",
@@ -796,23 +796,23 @@ Deborah Archer's study of highways and racial equity documents that urban inters
             options: [
               "They are the dates on which Congress and the Court respectively considered the District of Columbia's budget",
               "The Housing Act of 1954 and Berman v. Parker are three and a half months apart in the same year",
-              "They mark the beginning and the end of the first full federal fiscal year of the renewal programme",
+              "They mark the beginning and the end of the first full federal fiscal year of the renewal program",
               "They are the dates the Indianapolis Redevelopment Commission designated two separate blighted areas",
             ],
             correctIndex: 1,
-            explanation: "The statute that rebuilt the programme and the opinion that made it constitutionally safe fall in the same year. 1954 is the hinge of the series.",
+            explanation: "The statute that rebuilt the program and the opinion that made it constitutionally safe fall in the same year. 1954 is the hinge of the series.",
             sourceLessonSlug: "htt-act-1954",
           },
           {
             prompt: "What did Sections 220 and 221 of the Housing Act of 1954 do?",
             options: [
               "Provided FHA mortgage insurance in renewal areas, and for families displaced by government action",
-              "Created two new federal agencies to administer the clearance and the rehousing halves of the programme",
+              "Created two new federal agencies to administer the clearance and the rehousing halves of the program",
               "Set the maximum percentage of a project area that could be devoted to non-residential redevelopment uses",
               "Required each locality to prove that displaced families had been rehoused before any grant was paid out",
             ],
             correctIndex: 0,
-            explanation: "The same agency whose underwriting rules helped make those neighbourhoods unlendable was now insuring the mortgages on what replaced them.",
+            explanation: "The same agency whose underwriting rules helped make those neighborhoods unlendable was now insuring the mortgages on what replaced them.",
             sourceLessonSlug: "htt-act-1954",
           },
           {
@@ -830,7 +830,7 @@ Deborah Archer's study of highways and racial equity documents that urban inters
           {
             prompt: "Why does this course build its redlining argument on the manual rather than on the HOLC maps?",
             options: [
-              "Because the maps were destroyed and the manual is the only surviving document from that programme",
+              "Because the maps were destroyed and the manual is the only surviving document from that program",
               "Because the manual was published in every major newspaper while the maps were never made public at all",
               "The manual's words are undisputed, while the maps' direct causal role is contested by scholars",
               "Because the maps covered only a handful of cities and none of the cities studied in this course series",
@@ -848,7 +848,7 @@ Deborah Archer's study of highways and racial equity documents that urban inters
               "It establishes that the survey categories were written by Congress rather than by the local housing agency",
             ],
             correctIndex: 0,
-            explanation: "A neighbourhood starved of mortgage capital decayed, and the decay became the legal basis for clearing the people who lived through it. The condition and its cause are the same policy at two dates.",
+            explanation: "A neighborhood starved of mortgage capital decayed, and the decay became the legal basis for clearing the people who lived through it. The condition and its cause are the same policy at two dates.",
             sourceLessonSlug: "htt-fha-manual",
           },
           {
@@ -867,7 +867,7 @@ Deborah Archer's study of highways and racial equity documents that urban inters
             prompt: "Where does the defence rationale for the Interstate system first appear in the record?",
             options: [
               "In the 1944 Act, which described routes located to serve the National Defense",
-              "In the 1956 Act alone, since no earlier highway legislation mentioned national defence in any form",
+              "In the 1956 Act alone, since no earlier highway legislation mentioned national defense in any form",
               "In a 1961 executive order issued after the system was already substantially under construction nationally",
               "In the Yellow Book of 1955, which was prepared jointly by the Bureau of Public Roads and the Army",
             ],
@@ -897,7 +897,7 @@ Deborah Archer's study of highways and racial equity documents that urban inters
       slug: "htt-berman-the-source",
       title: "10 · The source: what Berman v. Parker authorised",
       section: "Section 3 · Source to Use, Worked",
-      body: `**Source to use is the strongest kind of connection, and this section works one all the way through, both to show you how it is done and to show you what it looks like when a favourite edge partly breaks.** This lesson is the source end. The next lesson is the test.
+      body: `**Source to use is the strongest kind of connection, and this section works one all the way through, both to show you how it is done and to show you what it looks like when a favorite edge partly breaks.** This lesson is the source end. The next lesson is the test.
 
 **The instrument.** *Berman v. Parker*, **348 U.S. 26**, decided **November 22, 1954**, by a **unanimous** Court, in an opinion by Justice **William O. Douglas**. It came out of the clearance of Southwest Washington under the District of Columbia Redevelopment Act of 1945, and the prerequisite DC course reads it lesson by lesson (Berman v. Parker, 1954).
 
@@ -909,11 +909,11 @@ Deborah Archer's study of highways and racial equity documents that urban inters
 
 > "The concept of the public welfare is broad and inclusive... The values it represents are spiritual as well as physical, aesthetic as well as monetary. It is within the power of the legislature to determine that the community should be beautiful as well as healthy, spacious as well as clean, well-balanced as well as carefully patrolled." (Berman v. Parker, 1954.)
 
-**Move two: the area may be taken as a whole.** The Court held that community redevelopment programmes **"need not, by force of the Constitution, be on a piecemeal basis,"** so an owner cannot defeat an area-wide plan by pointing at his own lot (Berman v. Parker, 1954).
+**Move two: the area may be taken as a whole.** The Court held that community redevelopment programs **"need not, by force of the Constitution, be on a piecemeal basis,"** so an owner cannot defeat an area-wide plan by pointing at his own lot (Berman v. Parker, 1954).
 
 **Move three: the cleared land may go to a private company.** The Court held that **"the public end may be as well or better served through an agency of private enterprise than through a department of government"** (Berman v. Parker, 1954).
 
-**Read those three together and you have the machine the whole route series keeps meeting.** Designate an area. Take all of it, including the parts that are fine. Hand it to a developer. **Before November 1954 the third move was genuinely arguable. After it, it was the design of the programme rather than an abuse of it.**
+**Read those three together and you have the machine the whole route series keeps meeting.** Designate an area. Take all of it, including the parts that are fine. Hand it to a developer. **Before November 1954 the third move was genuinely arguable. After it, it was the design of the program rather than an abuse of it.**
 
 ## Why this is a source node and not just a local ruling
 
@@ -921,13 +921,13 @@ Deborah Archer's study of highways and racial equity documents that urban inters
 
 | Later decision | What it allowed | Relation to Berman |
 |---|---|---|
-| **Poletown**, Michigan Supreme Court, 1981 | Detroit condemning an entire working neighbourhood for a General Motors plant | A state application in the deferential spirit Berman established; Michigan overruled it in 2004 |
+| **Poletown**, Michigan Supreme Court, 1981 | Detroit condemning an entire working neighborhood for a General Motors plant | A state application in the deferential spirit Berman established; Michigan overruled it in 2004 |
 | **Hawaii Housing Authority v. Midkiff**, 467 U.S. 229 (1984) | Hawaii compelling large landowners to sell to their tenants | Relied on Berman for a public-use test satisfied by any rational relation to a conceivable public purpose |
 | **Kelo v. City of New London**, 545 U.S. 469 (2005) | New London taking well-maintained, non-blighted homes for a private economic-development plan | Cited Berman and Midkiff; the tool that began as slum clearance reached sound houses |
 
 **Notice what makes those three edges strong, and remember it.** **They are citations.** A later court naming an earlier case is the cleanest documented line that exists: it is a piece of paper in which the receiving place says, in its own words, where it got the tool. **You do not have to infer transmission when a judge writes it down.**
 
-**So the strongest single edge running out of Washington in this whole catalogue is not the one you would expect.** It is not DC to Indianapolis, the pairing this series was built around. **It is DC to New London**, because *Kelo* cites *Berman* by name and the Indianapolis record, as far as this course has read it, does not.
+**So the strongest single edge running out of Washington in this whole catalog is not the one you would expect.** It is not DC to Indianapolis, the pairing this series was built around. **It is DC to New London**, because *Kelo* cites *Berman* by name and the Indianapolis record, as far as this course has read it, does not.
 
 **Hold that thought for exactly one lesson.** The next one takes the DC-to-Indianapolis edge, which is the reason both those courses exist, and runs the four-question test on it in public.
 
@@ -951,7 +951,7 @@ Deborah Archer's study of highways and racial equity documents that urban inters
         },
         {
           prompt: "State the sourceable version and the unsourced version of the highway claim.",
-          answer: "Sourceable: a federal Act made urban highway construction cheap, a federal publication mapped urban routes in 1955, and the alignments chosen fell disproportionately on Black neighbourhoods across many cities. Not sourced here: that the 1956 statute directed or contemplated that outcome. Its text does not, and intent needs the records of the bodies that drew the lines.",
+          answer: "Sourceable: a federal Act made urban highway construction cheap, a federal publication mapped urban routes in 1955, and the alignments chosen fell disproportionately on Black neighborhoods across many cities. Not sourced here: that the 1956 statute directed or contemplated that outcome. Its text does not, and intent needs the records of the bodies that drew the lines.",
         },
         {
           prompt: "Why does a 90 percent federal share matter to a city's choice?",
@@ -978,14 +978,14 @@ Deborah Archer's study of highways and racial equity documents that urban inters
 | 1952 | Southwest "Area B" renewal plan approved | Washington |
 | August 2, 1954 | Housing Act of 1954 | Federal |
 | **November 22, 1954** | ***Berman v. Parker* decided** | Washington |
-| 1954, 1956 | Further Indianapolis blight designations; medical centre expansion | Indianapolis |
+| 1954, 1956 | Further Indianapolis blight designations; medical center expansion | Indianapolis |
 | 1958 | The joint university campus plan proposed | Indianapolis |
 
 **The strong claim fails here, and it fails badly.** Indiana had its **own** blight machinery in **1945** and was demolishing homes near the Avenue in **1948**, **six years before** *Berman* was decided (Encyclopedia of Indianapolis, n.d.; Berman v. Parker, 1954). **A cause cannot postdate effects that were already under way.** Indianapolis was not waiting for Washington's permission, because Indianapolis already had Indiana's.
 
 ## Question 2. Mechanism
 
-**This one passes.** The channel is **law**: a Supreme Court decision changes what arguments can be made against a practice everywhere, immediately, without anybody travelling anywhere. That is a real and well-understood route of transmission.
+**This one passes.** The channel is **law**: a Supreme Court decision changes what arguments can be made against a practice everywhere, immediately, without anybody traveling anywhere. That is a real and well-understood route of transmission.
 
 ## Question 3. Document
 
@@ -1010,7 +1010,7 @@ Here is the accurate claim, and it is smaller and better than the one we started
 ## The three sentences worth carrying out of this course
 
 1. **An instrument that arrives after a practice is not its cause. It is its insurance.** That sentence will save you from a large fraction of the bad transmission claims you will meet.
-2. **The most famous edge in a catalogue is often the one most loosely stated**, precisely because everyone already believes it and nobody re-tests it.
+2. **The most famous edge in a catalog is often the one most loosely stated**, precisely because everyone already believes it and nobody re-tests it.
 3. **A weakened claim that survives is worth more than a strong claim that does not**, and reporting the weakening is what makes the rest of your work believable.
 
 **One comparison to close on.** The DC-to-New London edge from lesson 10 passes all four questions, because *Kelo* cites *Berman* in writing. The DC-to-Indianapolis edge, the one this series is built around, **passes three and fails one, and needs a trip to the Indianapolis Redevelopment Commission's minutes to close the third.** **The edge everybody cares about is weaker than the edge nobody mentions.** That is normal, it is worth saying out loud, and it is why you run the test on the claims you like best rather than only on the ones you doubt.
@@ -1110,7 +1110,7 @@ The Seventh Circuit's own sentence does the work:
         },
         {
           prompt: "State the verdict and the reclassified edge.",
-          answer: "Berman did not cause the clearance; it insured it. The edge stays source-to-use, but what was used is not the clearance, which was already running. What travelled is the legal security of the clearance: after November 1954 the tool could no longer be beaten on public-use grounds.",
+          answer: "Berman did not cause the clearance; it insured it. The edge stays source-to-use, but what was used is not the clearance, which was already running. What traveled is the legal security of the clearance: after November 1954 the tool could no longer be beaten on public-use grounds.",
         },
         {
           prompt: "Give the sentence about instruments that arrive late.",
@@ -1197,13 +1197,13 @@ The Seventh Circuit's own sentence does the work:
       slug: "htt-pittsburgh-model-line",
       title: "14 · Pittsburgh: true as to emulation, false as to a copy-chain",
       section: "Section 4 · The Other Strong Lines",
-      body: `**Model to copy is rank 2 in the taxonomy, and this catalogue has exactly one serious candidate for it.** The Pittsburgh course tested that candidate on itself and published the result. **This lesson carries that result forward without improving it, which is the harder discipline and the reason this course can be trusted about anything else.**
+      body: `**Model to copy is rank 2 in the taxonomy, and this catalog has exactly one serious candidate for it.** The Pittsburgh course tested that candidate on itself and published the result. **This lesson carries that result forward without improving it, which is the harder discipline and the reason this course can be trusted about anything else.**
 
 ## What is documented, and it is a lot
 
-**Pittsburgh was early.** The **Allegheny Conference on Community Development** formed in **1944**, the **Pennsylvania Urban Redevelopment Law** passed in **1945**, the **Urban Redevelopment Authority** of Pittsburgh was incorporated on **November 18, 1946**, and **Gateway Center was underway by the start of the 1950s**, all **before** the federal Housing Act of 1949 created the national programme (Neumann, 2016; Urban Redevelopment Authority of Pittsburgh, n.d.).
+**Pittsburgh was early.** The **Allegheny Conference on Community Development** formed in **1944**, the **Pennsylvania Urban Redevelopment Law** passed in **1945**, the **Urban Redevelopment Authority** of Pittsburgh was incorporated on **November 18, 1946**, and **Gateway Center was underway by the start of the 1950s**, all **before** the federal Housing Act of 1949 created the national program (Neumann, 2016; Urban Redevelopment Authority of Pittsburgh, n.d.).
 
-**Pittsburgh was studied.** The historian Tracy Neumann documents that **"in the 1950s and 1960s, more than seventy national and international delegations of urban policy tourists who hoped to replicate the Renaissance arrived in Pittsburgh,"** including visitors from Dayton and Detroit and officials from Canada, Australia, Brazil, Belgium, Germany and Scotland, and concludes that Pittsburgh's postwar renewal programme **"made it a popular model for other aging industrial cities in the 1950s and 1960s"** (Neumann, 2016).
+**Pittsburgh was studied.** The historian Tracy Neumann documents that **"in the 1950s and 1960s, more than seventy national and international delegations of urban policy tourists who hoped to replicate the Renaissance arrived in Pittsburgh,"** including visitors from Dayton and Detroit and officials from Canada, Australia, Brazil, Belgium, Germany and Scotland, and concludes that Pittsburgh's postwar renewal program **"made it a popular model for other aging industrial cities in the 1950s and 1960s"** (Neumann, 2016).
 
 **So "Pittsburgh was celebrated and visited as a model" is not a guess. It is documented, by a named historian, with a number attached.**
 
@@ -1215,7 +1215,7 @@ The Seventh Circuit's own sentence does the work:
 
 **Question 2, mechanism.** The delegations are a real channel: people, and the reports they took home. **But look at what they came for.** Neumann's own sentence says they came to see **"how Democratic mayors and Republican businessmen had worked together to scrub clean the streets and skies of the dirty, polluted, and flood-prone city"** (Neumann, 2016). **They came for the partnership and the clean-up: smoke control, flood control, Gateway Center.**
 
-**Question 3, document.** Admiration is documented. **A copied plan in another city's file is not**, in anything this course or its sibling could verify. **A delegation admiring Gateway Center is not a city carrying home a manual for clearing a Black neighbourhood.**
+**Question 3, document.** Admiration is documented. **A copied plan in another city's file is not**, in anything this course or its sibling could verify. **A delegation admiring Gateway Center is not a city carrying home a manual for clearing a Black neighborhood.**
 
 **Question 4, alternative cause.** And here is the finishing blow, and it is Section 2 of this course. **The Housing Act of 1949 funded the clearance instruments nationally and Berman upheld them nationally in 1954.** Cities did not need Pittsburgh's example. **They needed federal money and their own state law, and they had both.**
 
@@ -1225,7 +1225,7 @@ The Seventh Circuit's own sentence does the work:
 
 Pittsburgh **assembled and showcased the public-private redevelopment machine early and visibly, and was genuinely emulated as a model of that partnership.** It is one of the prominent early reference cases for elite business power and elected government running a city's rebuilding together. **The playbook written in Pittsburgh is the partnership playbook**, not a step-by-step manual every later city followed to empty its Black district.
 
-**What travelled city to city was a reputation. What travelled to every city at once was a federal programme.**
+**What traveled city to city was a reputation. What traveled to every city at once was a federal program.**
 
 ## Why this lesson is a test of the capstone rather than of Pittsburgh
 
@@ -1292,13 +1292,13 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
 
 **This much is documented and worth teaching.** For seven years one man chaired the federal planning commission for the national capital while running a firm that wrote comprehensive plans for hundreds of American jurisdictions, across at least twenty states. **That is a real channel through which planning practice moved**, and it is exactly the sort of thing lesson 3 means by the "paper" and "people" mechanisms.
 
-**What it is not.** It is **not** evidence that Bartholomew caused any clearance in this catalogue, and this course does not say he did. **A channel is a road. It is not proof that a particular vehicle drove down it.**
+**What it is not.** It is **not** evidence that Bartholomew caused any clearance in this catalog, and this course does not say he did. **A channel is a road. It is not proof that a particular vehicle drove down it.**
 
 ## The honest finding, and it is the most useful thing in this lesson
 
 **This course did not find a documented individual who carried a specific clearance decision from one city in this series to another.** Not a planner, not a commissioner, not a consultant. **It looked, and it is reporting an absence.**
 
-**An absence is a finding when you can say where you looked and where you did not.** So: **the Harland Bartholomew and Associates planning reports at Cornell have not been read into this course**, and they cover Indiana and Kentucky among twenty states. Neither have the project files of the redevelopment agencies in any of these cities, nor the membership rolls and conference programmes of the professional planning bodies whose meetings these officials attended. **Any of those could close this category, and one afternoon in the right box could do it.**
+**An absence is a finding when you can say where you looked and where you did not.** So: **the Harland Bartholomew and Associates planning reports at Cornell have not been read into this course**, and they cover Indiana and Kentucky among twenty states. Neither have the project files of the redevelopment agencies in any of these cities, nor the membership rolls and conference programs of the professional planning bodies whose meetings these officials attended. **Any of those could close this category, and one afternoon in the right box could do it.**
 
 **One last warning, because this is where careful people get careless.** **A famous name is the most seductive evidence there is**, because the career is easy to verify and the causation is not, and a reader will accept the second because you demonstrated the first. **Verify the biography, and then test the link separately.** They are two different jobs.
 
@@ -1314,11 +1314,11 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
         },
         {
           prompt: "What did those delegations actually come to replicate?",
-          answer: "The public-private partnership and the downtown clean-up: how Democratic mayors and Republican businessmen worked together, plus smoke control, flood control and Gateway Center. Not a manual for clearing a Black neighbourhood.",
+          answer: "The public-private partnership and the downtown clean-up: how Democratic mayors and Republican businessmen worked together, plus smoke control, flood control and Gateway Center. Not a manual for clearing a Black neighborhood.",
         },
         {
           prompt: "State the verdict on the Pittsburgh model claim.",
-          answer: "True as to emulation, false as to a copy-chain. Pittsburgh assembled and showcased the public-private machine early and visibly and was genuinely emulated as a model of that partnership. The playbook written there is the partnership playbook. What travelled city to city was a reputation; what travelled to every city at once was a federal programme.",
+          answer: "True as to emulation, false as to a copy-chain. Pittsburgh assembled and showcased the public-private machine early and visibly and was genuinely emulated as a model of that partnership. The playbook written there is the partnership playbook. What traveled city to city was a reputation; what traveled to every city at once was a federal program.",
         },
         {
           prompt: "Why is this lesson described as a test of the capstone rather than of Pittsburgh?",
@@ -1360,7 +1360,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
               "That the government may exercise eminent domain at all within the boundaries of the District of Columbia",
             ],
             correctIndex: 2,
-            explanation: "The Court held the public end may be as well or better served through an agency of private enterprise. After Berman, public taking followed by private rebuilding was the design of the programme rather than an abuse of it.",
+            explanation: "The Court held the public end may be as well or better served through an agency of private enterprise. After Berman, public taking followed by private rebuilding was the design of the program rather than an abuse of it.",
             sourceLessonSlug: "htt-berman-the-source",
           },
           {
@@ -1378,7 +1378,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
           {
             prompt: "What is the accurate, reclassified version of the Berman-to-Indianapolis edge?",
             options: [
-              "Berman insured the clearance rather than causing it, and what travelled was legal security",
+              "Berman insured the clearance rather than causing it, and what traveled was legal security",
               "There is no relationship of any kind between the two, and the two courses should not be taught together",
               "Berman was decided because of what had already happened in Indianapolis during the preceding decade",
               "Indianapolis officials attended the argument in Berman and returned home to begin the clearance work",
@@ -1475,7 +1475,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
             prompt: "State the verdict on the claim that other cities copied Pittsburgh.",
             options: [
               "True in every respect, because more than seventy delegations came to Pittsburgh to study the Renaissance",
-              "False in every respect, because no evidence exists that Pittsburgh's programme was noticed elsewhere",
+              "False in every respect, because no evidence exists that Pittsburgh's program was noticed elsewhere",
               "Unresolvable, because the records that would settle it were destroyed when the Civic Arena was demolished",
               "True as to emulation, false as to a copy-chain",
             ],
@@ -1539,7 +1539,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
 
 **One caution the sibling course insists on and this one repeats.** **Not every federal property is an exclusive-jurisdiction enclave.** Jurisdiction can be exclusive, concurrent, partial or merely proprietary, depending on what the state ceded and what the United States accepted at acquisition. **Neither course has read this post's jurisdictional history, and neither asserts one.**
 
-**The taxation half is simple and enormous.** A state may not tax an instrumentality of the federal government, a principle running back to *McCulloch v. Maryland* (1819). **Federal property does not appear on a county's tax rolls.** The U.S. Department of Education puts the consequence in one sentence when explaining why a school aid programme exists: **"Because federally owned property does not generate taxes, the revenue for the school district is dramatically reduced, but the school district is required to educate the same number of students as before the Federal property was acquired"** (U.S. Department of Education, n.d.).
+**The taxation half is simple and enormous.** A state may not tax an instrumentality of the federal government, a principle running back to *McCulloch v. Maryland* (1819). **Federal property does not appear on a county's tax rolls.** The U.S. Department of Education puts the consequence in one sentence when explaining why a school aid program exists: **"Because federally owned property does not generate taxes, the revenue for the school district is dramatically reduced, but the school district is required to educate the same number of students as before the Federal property was acquired"** (U.S. Department of Education, n.d.).
 
 **Now the arithmetic.** By **1982** the post had over **10,000 civilian and military personnel** and was the **fifth largest employer in Indianapolis**; in the early 1990s it was **the largest employer in Lawrence** with nearly 10,000 employees (Hankins, 2020; Encyclopedia of Indianapolis, n.d.). **The largest employer in the city contributed nothing to the property tax base while generating demand for roads, housing and schools.**
 
@@ -1561,7 +1561,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
 
 **Claim A: the Federal Property and Administrative Services Act of 1949 and the Housing Act of 1949 are connected because they are the same year.** **Verdict: rhyme.** Two statutes in one busy postwar Congress is a shared moment, not a documented line between them. **Nothing in this course shows one referring to the other.** It is a genuinely interesting coincidence and it is still a coincidence until somebody produces the paper.
 
-**Claim B: Fort Harrison connects to Indiana Avenue because both are federal decisions imposed on people with no vote in them.** **Verdict: rhyme, and a sharp one.** The DC course made exactly this observation about Southwest, whose residents had no vote in the Congress that authorised their clearance, and it warned against overclaiming, because cities whose residents could vote cleared Black neighbourhoods too. **A shared structural feature across three sites is a pattern worth naming, and it is not transmission.**
+**Claim B: Fort Harrison connects to Indiana Avenue because both are federal decisions imposed on people with no vote in them.** **Verdict: rhyme, and a sharp one.** The DC course made exactly this observation about Southwest, whose residents had no vote in the Congress that authorised their clearance, and it warned against overclaiming, because cities whose residents could vote cleared Black neighborhoods too. **A shared structural feature across three sites is a pattern worth naming, and it is not transmission.**
 
 **Claim C: the same federal government acted on Lawrence and on Indianapolis, through different instruments.** **Verdict: true, documented, and not a city-to-city connection at all.**
 
@@ -1570,7 +1570,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
 **There are two directions of connection, and this course has been quietly about the difference the whole time.**
 
 - **A horizontal connection runs city to city.** Louisville to Baltimore. Detroit to Indianapolis. Washington to New London. **These are the rare ones, and every one that survived the test in Section 4 survived because a court wrote a citation.**
-- **A vertical connection runs from the upstream to a place.** Title I money to a redevelopment commission. The Underwriting Manual to a valuator. BRAC to a township. **These are everywhere, and they are the true shape of this catalogue.**
+- **A vertical connection runs from the upstream to a place.** Title I money to a redevelopment commission. The Underwriting Manual to a valuator. BRAC to a township. **These are everywhere, and they are the true shape of this catalog.**
 
 **Here is the payoff of the whole course.** **Most of what looks like city-to-city transmission is two vertical lines from the same source, seen edge-on.** Two cities that both took Title I money and both cleared a Black district are not connected to each other. **They are each connected to Washington**, and the resemblance between them is the shadow that casts.
 
@@ -1625,7 +1625,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
 
 **Purple, at the Capitol: the upstream.** One marker stands for the whole of Section 2: the Housing Acts of 1949 and 1954, the FHA Underwriting Manual, the Federal-Aid Highway Act of 1956, and the Court that decided *Berman*.
 
-**Blue: source nodes.** Places where a tool was authorised or, in Pittsburgh's case, claimed to have been. **Pittsburgh is drawn in the same colour as the others and it does not have the same standing**, which lesson 14 explained and this map cannot show, so read the description before you believe the colour.
+**Blue: source nodes.** Places where a tool was authorised or, in Pittsburgh's case, claimed to have been. **Pittsburgh is drawn in the same color as the others and it does not have the same standing**, which lesson 14 explained and this map cannot show, so read the description before you believe the color.
 
 **Amber: use nodes.** Places where a tool was applied.
 
@@ -1666,7 +1666,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
             title: "The federal upstream, Washington, D.C.",
             color: "#7e22ce",
             description:
-              "One marker for the whole of Section 2. The Housing Act of 1949 (63 Stat. 413) created the national money for clearance and paid up to two thirds of net project cost. The Housing Act of 1954 (68 Stat. 590) renamed the programme urban renewal and made aid conditional on a workable program. The FHA Underwriting Manual set the terms on which private mortgage capital would and would not enter a neighbourhood. The Federal-Aid Highway Act of 1956 renamed the system the National System of Interstate and Defense Highways, set the federal share at 90 percent and created the Highway Trust Fund. And the Court that decided Berman v. Parker sat here. Nearly every resemblance between the other markers on this map runs through this one.",
+              "One marker for the whole of Section 2. The Housing Act of 1949 (63 Stat. 413) created the national money for clearance and paid up to two thirds of net project cost. The Housing Act of 1954 (68 Stat. 590) renamed the program urban renewal and made aid conditional on a workable program. The FHA Underwriting Manual set the terms on which private mortgage capital would and would not enter a neighborhood. The Federal-Aid Highway Act of 1956 renamed the system the National System of Interstate and Defense Highways, set the federal share at 90 percent and created the Highway Trust Fund. And the Court that decided Berman v. Parker sat here. Nearly every resemblance between the other markers on this map runs through this one.",
           },
           {
             id: "htt-southwest-dc",
@@ -1686,7 +1686,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
             title: "Detroit, Michigan: the source of Milliken",
             color: "#1d4ed8",
             description:
-              "Milliken v. Bradley, 418 U.S. 717, decided 25 July 1974, held that before school district boundaries may be set aside for a cross-district remedy it must be shown that a violation in one district produced a significant segregative effect in another. Its own escape clause, for lines deliberately drawn on the basis of race, is the door Indianapolis went through. This is the source node with the cleanest documented use in the whole catalogue.",
+              "Milliken v. Bradley, 418 U.S. 717, decided 25 July 1974, held that before school district boundaries may be set aside for a cross-district remedy it must be shown that a violation in one district produced a significant segregative effect in another. Its own escape clause, for lines deliberately drawn on the basis of race, is the door Indianapolis went through. This is the source node with the cleanest documented use in the whole catalog.",
           },
           {
             id: "htt-louisville",
@@ -1705,7 +1705,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
             title: "Lower Hill District, Pittsburgh: the contested model node",
             color: "#1d4ed8",
             description:
-              "Read the description before you believe the colour. Pittsburgh assembled the public-private redevelopment machine early (Allegheny Conference 1944, Pennsylvania law 1945, URA incorporated November 1946) and more than seventy delegations came to study the Renaissance. But the sibling course found that what they came for was the partnership and the downtown clean-up, and that the clearance instruments spread through the federal Housing Act of 1949 and parallel state laws instead. True as to emulation, false as to a copy-chain. No line is drawn from this marker.",
+              "Read the description before you believe the color. Pittsburgh assembled the public-private redevelopment machine early (Allegheny Conference 1944, Pennsylvania law 1945, URA incorporated November 1946) and more than seventy delegations came to study the Renaissance. But the sibling course found that what they came for was the partnership and the downtown clean-up, and that the clearance instruments spread through the federal Housing Act of 1949 and parallel state laws instead. True as to emulation, false as to a copy-chain. No line is drawn from this marker.",
           },
           {
             id: "htt-indiana-avenue",
@@ -1742,7 +1742,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
             title: "Fort Trumbull, New London, Connecticut",
             color: "#b45309",
             description:
-              "Where the Berman standard arrived in 2005. Kelo v. City of New London allowed the taking of well-maintained, non-blighted homes for a private economic-development plan, citing Berman and Midkiff. This is the cleanest documented edge running out of Washington in the whole catalogue, and it is cleaner than the DC-to-Indianapolis edge the series was built around, because the receiving court wrote the citation down.",
+              "Where the Berman standard arrived in 2005. Kelo v. City of New London allowed the taking of well-maintained, non-blighted homes for a private economic-development plan, citing Berman and Midkiff. This is the cleanest documented edge running out of Washington in the whole catalog, and it is cleaner than the DC-to-Indianapolis edge the series was built around, because the receiving court wrote the citation down.",
           },
           {
             id: "htt-honolulu",
@@ -1752,7 +1752,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
             title: "Honolulu, Hawaii",
             color: "#b45309",
             description:
-              "Hawaii Housing Authority v. Midkiff, 467 U.S. 229 (1984), upheld a state law compelling large landowners to sell to their tenants, relying on Berman for a public-use requirement satisfied whenever a taking is rationally related to a conceivable public purpose. A second citation edge out of Southwest Washington, and a reminder that the instrument travelled to uses very unlike slum clearance.",
+              "Hawaii Housing Authority v. Midkiff, 467 U.S. 229 (1984), upheld a state law compelling large landowners to sell to their tenants, relying on Berman for a public-use requirement satisfied whenever a taking is rationally related to a conceivable public purpose. A second citation edge out of Southwest Washington, and a reminder that the instrument traveled to uses very unlike slum clearance.",
           },
           {
             id: "htt-philadelphia",
@@ -1847,7 +1847,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
             id: "htt-vertical-baltimore",
             color: "#7e22ce",
             title: "The upstream to Baltimore",
-            description: "The FHA Underwriting Manual's racial underwriting rules, Title I renewal money, and the highway programme that paid for the trench through West Baltimore.",
+            description: "The FHA Underwriting Manual's racial underwriting rules, Title I renewal money, and the highway program that paid for the trench through West Baltimore.",
             coords: [
               [38.8899, -77.0091],
               [39.293, -76.645],
@@ -1921,7 +1921,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
 
 **Section 5 gave you the shape: the graph is a star.** Now take the consequence seriously. **When one hub reaches many places, those places will resemble each other**, and every pair of them will show a correlation. **None of those correlations is evidence that either place influenced the other.**
 
-**This cuts both ways and the second way is easy to miss.** It is a reason to doubt city-to-city claims, **and** it is a reason to be careful about the upstream claim itself. **"Both cities took federal money and both cleared a Black district" does not by itself establish that the federal money caused the clearance in either city.** It establishes that the money was there. **Question 4 has to be asked about your own favourite explanation, not only about the ones you are trying to knock down.**
+**This cuts both ways and the second way is easy to miss.** It is a reason to doubt city-to-city claims, **and** it is a reason to be careful about the upstream claim itself. **"Both cities took federal money and both cleared a Black district" does not by itself establish that the federal money caused the clearance in either city.** It establishes that the money was there. **Question 4 has to be asked about your own favorite explanation, not only about the ones you are trying to knock down.**
 
 ## Limit two: parallel invention is real, common, and boring
 
@@ -1943,9 +1943,9 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
 
 **Written out, so that nobody has to guess.**
 1. **No intent.** Nothing here shows what any redevelopment commission, highway department or zoning board meant to do. **Intent needs the minutes, and no commission's minutes have been read into this series.**
-2. **No alignment claim.** The 1956 Act did not direct any route through any neighbourhood; its text does not do that, and the alignment decisions were made elsewhere.
+2. **No alignment claim.** The 1956 Act did not direct any route through any neighborhood; its text does not do that, and the alignment decisions were made elsewhere.
 3. **No causal claim from Berman to any clearance.** Only to the legal security of clearance, from November 1954 onward.
-4. **No copy-chain out of Pittsburgh.** Emulation of a partnership, yes. A clearance manual travelling city to city, no.
+4. **No copy-chain out of Pittsburgh.** Emulation of a partnership, yes. A clearance manual traveling city to city, no.
 5. **No person-carried link.** The category is open and the archive that might close it is named on the map.
 6. **No accounting of how much.** This course cannot tell you what share of any city's outcome is federal, what share is state, and what share is local. **It can tell you the instruments existed and which edges are documented. Proportions would need quantitative work nobody here has done.**
 
@@ -1995,7 +1995,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
       title: "20 · Practice: grade the claim",
       section: "Section 6 · What This Does Not Prove",
       lessonType: "exercise",
-      body: `**This drill is the vocabulary and the dates, typed rather than recognised.** Type the missing word, name, number or year and check. The next lesson is where you use them on something of your own.
+      body: `**This drill is the vocabulary and the dates, typed rather than recognized.** Type the missing word, name, number or year and check. The next lesson is where you use them on something of your own.
 
 **One reminder before you start.** Every answer below is either a category from lesson 2, a question from lesson 3, or a fact from a statute, a manual or an opinion this course quoted. **If an answer surprises you, go back to the lesson it came from rather than accepting it here**, because being able to type the word is not the same as being able to defend it.
 
@@ -2037,7 +2037,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
             prompt: "The fourth question, the one people skip, asks what ___ cause would produce the same result.",
             answer: "alternative",
             accept: ["alternative", "other", "alternate"],
-            explanation: "A common federal upstream is the alternative explanation for nearly every city-to-city resemblance in this catalogue.",
+            explanation: "A common federal upstream is the alternative explanation for nearly every city-to-city resemblance in this catalog.",
           },
           {
             prompt: "The federal statute that created the national money for slum clearance is the Housing Act of ___.",
@@ -2073,7 +2073,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
             prompt: "The 1956 highway statute renamed the system the National System of Interstate and ___ Highways.",
             answer: "Defense",
             accept: ["defense", "defence"],
-            explanation: "The defence rationale runs back to the 1944 Act's own language and to the Department of Defense review of the first 37,700 miles announced in 1947.",
+            explanation: "The defense rationale runs back to the 1944 Act's own language and to the Department of Defense review of the first 37,700 miles announced in 1947.",
           },
           {
             prompt: "The 1956 Act set the federal share of project cost at ___ percent.",
@@ -2185,7 +2185,7 @@ Take **one proposed connection between two places** that you believe, or want to
         },
         {
           prompt: "Name three things this course specifically does not establish.",
-          answer: "Any body's intent, since no commission's minutes have been read; that the 1956 Act directed any route through any neighbourhood; that Berman caused any clearance rather than securing it; a copy-chain out of Pittsburgh; any person-carried link; and what share of any city's outcome is federal, state or local.",
+          answer: "Any body's intent, since no commission's minutes have been read; that the 1956 Act directed any route through any neighborhood; that Berman caused any clearance rather than securing it; a copy-chain out of Pittsburgh; any person-carried link; and what share of any city's outcome is federal, state or local.",
         },
         {
           prompt: "What is the opposite error, and what is the standard?",

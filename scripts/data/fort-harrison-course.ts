@@ -55,7 +55,7 @@ export const FORT_HARRISON_COURSE: AuthoredCourse = {
 
 **How it got here is a siting decision, and siting decisions are the whole course in miniature.** The Historic American Buildings Survey documentation records the sequence. In March 1901 **Lieutenant Colonel Russell B. Harrison** came home to Indianapolis for his father's funeral and learned that the **U.S. Arsenal at Indianapolis**, a fixture of Indiana military life since 1861, was being phased out. He went to Washington to argue for its continued use. Late in 1901 a military board recommended converting the Arsenal into a battalion post, which would house part of an Army that had roughly doubled in size during the Spanish-American War (Fife & Salmon, n.d., pp. 2-3).
 
-**Then the neighbours objected.** The Arsenal's 75-acre tract was on the east side of Indianapolis, and the National Register nomination is blunt about what happened: the Arsenal plan "was opposed by the city's residents because of its proximity to their growing residential and business communities" (McGillem et al., 1993, sec. 8, p. 1). Russell Harrison proposed the alternative: sell the Arsenal grounds and buy farmland outside the city. **A post nobody wanted next door went to where the land was cheap and the neighbours were few.** Hold onto that sentence. It is the same logic Section 3 of course 1 taught about highway alignments, running in the opposite political direction.
+**Then the neighbors objected.** The Arsenal's 75-acre tract was on the east side of Indianapolis, and the National Register nomination is blunt about what happened: the Arsenal plan "was opposed by the city's residents because of its proximity to their growing residential and business communities" (McGillem et al., 1993, sec. 8, p. 1). Russell Harrison proposed the alternative: sell the Arsenal grounds and buy farmland outside the city. **A post nobody wanted next door went to where the land was cheap and the neighbors were few.** Hold onto that sentence. It is the same logic Section 3 of course 1 taught about highway alignments, running in the opposite political direction.
 
 **The purchase, and your first documented disagreement.** Four institutional sources describe the land acquisition and they do not agree.
 
@@ -97,17 +97,17 @@ export const FORT_HARRISON_COURSE: AuthoredCourse = {
 
 ## The First World War: a place that made officers
 
-When the United States entered the war in 1917 the post became a training centre, and it filled fast. **An estimated 12,000 men were on the ground at the height of the activity in June 1917.** Three **Officer Training Camps** ran three months of intensive drill and instruction, the first with an enrolment of **5,200 men**. The grounds were dug with a network of practice trenches and their support systems. **Medical Officers Training Camps** followed, and then an **Engineers Training Camp** that prepared up to **9,000 men**, mostly as railroad specialists (Fife & Salmon, n.d., p. 4). By **1918** the post was an **Army railroad transport centre**, and the service and utility buildings surviving from that year reflect it (McGillem et al., 1993, sec. 8, p. 3).
+When the United States entered the war in 1917 the post became a training center, and it filled fast. **An estimated 12,000 men were on the ground at the height of the activity in June 1917.** Three **Officer Training Camps** ran three months of intensive drill and instruction, the first with an enrollment of **5,200 men**. The grounds were dug with a network of practice trenches and their support systems. **Medical Officers Training Camps** followed, and then an **Engineers Training Camp** that prepared up to **9,000 men**, mostly as railroad specialists (Fife & Salmon, n.d., p. 4). By **1918** the post was an **Army railroad transport center**, and the service and utility buildings surviving from that year reflect it (McGillem et al., 1993, sec. 8, p. 3).
 
-**The hospital, and a name you will recognise.** The Indianapolis pharmaceutical company **Eli Lilly** contributed **$25,000** to establish **Base Hospital 32** at the post, one of **33 voluntary base hospitals** organised nationally before the United States entered the war. Staffed by local doctors and nurses, it set up a **500-bed hospital in France** (Fife & Salmon, n.d., p. 4). In **October 1917** the post hosted a medical convention of roughly **1,300 officers and 2,000 enlisted men**, with the Surgeon General of the Army, the Surgeon General of the Public Health Service, and British and French medical experts speaking.
+**The hospital, and a name you will recognize.** The Indianapolis pharmaceutical company **Eli Lilly** contributed **$25,000** to establish **Base Hospital 32** at the post, one of **33 voluntary base hospitals** organized nationally before the United States entered the war. Staffed by local doctors and nurses, it set up a **500-bed hospital in France** (Fife & Salmon, n.d., p. 4). In **October 1917** the post hosted a medical convention of roughly **1,300 officers and 2,000 enlisted men**, with the Surgeon General of the Army, the Surgeon General of the Public Health Service, and British and French medical experts speaking.
 
-**Then the influenza.** **General Hospital No. 25** was established in 1918 to treat injured troops coming home. The HABS narrative records that "mortality from the influenza epidemic, then raging across the country, was high," and that the hospital later specialised in treating troops suffering from what the document calls shell shock. **It closed in September 1919** (Fife & Salmon, n.d., p. 4). **Notice what that source does and does not give you.** It gives a fact about mortality with no number attached. **A course that supplied a number here would be inventing one**, and this one will not. The count exists somewhere in Army medical records and this course has not read them.
+**Then the influenza.** **General Hospital No. 25** was established in 1918 to treat injured troops coming home. The HABS narrative records that "mortality from the influenza epidemic, then raging across the country, was high," and that the hospital later specialized in treating troops suffering from what the document calls shell shock. **It closed in September 1919** (Fife & Salmon, n.d., p. 4). **Notice what that source does and does not give you.** It gives a fact about mortality with no number attached. **A course that supplied a number here would be inventing one**, and this one will not. The count exists somewhere in Army medical records and this course has not read them.
 
 ## Between the wars: citizenship camps, conservation, and an airfield
 
 The **National Defense Act of 1920** reorganised the Army into nine corps areas. The post was first named headquarters of area five, but Ohio had taken that designation by 1922 (Fife & Salmon, n.d., p. 5). **A headquarters is an assignment, and assignments move.** It becomes the home of the **11th Infantry**, founded in 1798 and garrisoned here until **1941**, along with the **3rd Field Artillery** and the **5th Tank Platoon**. When the Ohio River flooded in **1937**, troops from the 11th worked the relief effort in Cincinnati, Louisville and river towns including Lawrenceburg, Indiana.
 
-**Citizens' Military Training Camps** ran here for **sixteen years beginning in 1925**. The Army marketed them, in the face of anti-military public feeling, as "schools in citizenship." Each participant got a month of free transportation, uniforms, laundry, shoes and meals, and once the Depression started the rosters filled on the first day of enrolment (Fife & Salmon, n.d., p. 5). **At its peak the camp here reached 3,450 participants** (National Park Service continuation sheet for Camp Glenn, as cited in Hankins, 2020, p. 14 n.26).
+**Citizens' Military Training Camps** ran here for **sixteen years beginning in 1925**. The Army marketed them, in the face of anti-military public feeling, as "schools in citizenship." Each participant got a month of free transportation, uniforms, laundry, shoes and meals, and once the Depression started the rosters filled on the first day of enrollment (Fife & Salmon, n.d., p. 5). **At its peak the camp here reached 3,450 participants** (National Park Service continuation sheet for Camp Glenn, as cited in Hankins, 2020, p. 14 n.26).
 
 **The Civilian Conservation Corps** made the post **Indiana's district headquarters**, where companies assembled before moving to their assigned locations (Hankins, 2020, p. 14). Lesson 3 takes up what the CCC's presence here documents about race, because that is where the strongest specific evidence sits.
 
@@ -115,9 +115,9 @@ The **National Defense Act of 1920** reorganised the Army into nine corps areas.
 
 ## The Second World War: too small to train, so it counted people instead
 
-By the autumn of 1940 the Army had decided the post was **too small to train troops for modern warfare**. Instead it became a **midwest induction and reception centre** and a logistical support hub (Fife & Salmon, n.d., p. 6). **That is a demotion that turned into a bigger job.** The Encyclopedia of Indianapolis records that the reception centre became the largest in the country before the function was transferred to Camp Atterbury in 1944 (Encyclopedia of Indianapolis, n.d.-a).
+By the autumn of 1940 the Army had decided the post was **too small to train troops for modern warfare**. Instead it became a **midwest induction and reception center** and a logistical support hub (Fife & Salmon, n.d., p. 6). **That is a demotion that turned into a bigger job.** The Encyclopedia of Indianapolis records that the reception center became the largest in the country before the function was transferred to Camp Atterbury in 1944 (Encyclopedia of Indianapolis, n.d.-a).
 
-Around that core the Army opened or enlarged specialised schools: the **Finance School**, the **Chaplain School**, and the **Baker and Cooks School**, plus a large hospital complex, **Billings General Hospital**, which no longer stands (McGillem et al., 1993, sec. 8, p. 3).
+Around that core the Army opened or enlarged specialized schools: the **Finance School**, the **Chaplain School**, and the **Baker and Cooks School**, plus a large hospital complex, **Billings General Hospital**, which no longer stands (McGillem et al., 1993, sec. 8, p. 3).
 
 **A prisoner of war camp, with dates that do not agree.**
 
@@ -128,9 +128,9 @@ Around that core the Army opened or enlarged specialised schools: the **Finance 
 | National Register nomination (McGillem et al., 1993, sec. 8, p. 3) | 1944-45, at the Camp Glenn complex |
 | Hankins (2020, p. 15) | 1943-44 |
 
-**Two of four say it started in 1943 and two say 1944.** The nomination adds the detail that puts a shape on it: the Italian and German prisoners "worked as construction and maintenance workers throughout the Fort." **Prisoner of war labour is a documented feature of American home-front infrastructure**, and if you write about this post you should say so with the dates attributed rather than smoothed.
+**Two of four say it started in 1943 and two say 1944.** The nomination adds the detail that puts a shape on it: the Italian and German prisoners "worked as construction and maintenance workers throughout the Fort." **Prisoner of war labor is a documented feature of American home-front infrastructure**, and if you write about this post you should say so with the dates attributed rather than smoothed.
 
-**An Army Disciplinary Barracks** also operated here, which Hankins dates **1944 to 1947** (2020, p. 16, citing Bower). **A post is a workplace, a school, a hospital, a prison and a neighbourhood at once**, and beat 2 will show you that all five of those are legible in the plan.
+**An Army Disciplinary Barracks** also operated here, which Hankins dates **1944 to 1947** (2020, p. 16, citing Bower). **A post is a workplace, a school, a hospital, a prison and a neighborhood at once**, and beat 2 will show you that all five of those are legible in the plan.
 
 ## Sources
 - Encyclopedia of Indianapolis. (n.d.-a). *Fort Benjamin Harrison*. https://indyencyclopedia.org/fort-benjamin-harrison/
@@ -172,9 +172,9 @@ Around that core the Army opened or enlarged specialised schools: the **Finance 
 
 The post served as **Indiana's district headquarters for the CCC**, the place where companies assembled before going to their assigned work (Hankins, 2020, p. 14). Two facts frame what that meant. **Indiana had fifty-six CCC companies, of which eight were African American.** And although "the legislation that created the CCC prohibited discrimination due to race, color, and creed, the CCC followed the normative patterns of segregated military personnel with white officers and technical staff supervising black enrollees in segregated camps" (Hankins, 2020, pp. 14-15).
 
-**Read that sentence twice.** A statute banning discrimination and a practice of segregation existed at the same time, in the same programme, on the same ground. **A written prohibition is not an outcome.** That is a civics lesson you can carry to any policy in this course.
+**Read that sentence twice.** A statute banning discrimination and a practice of segregation existed at the same time, in the same program, on the same ground. **A written prohibition is not an outcome.** That is a civics lesson you can carry to any policy in this course.
 
-**An all-African American company arrived at this post in 1936**, moving from Fort Knox, Kentucky, and specialising in reforestation and soil conservation. Its documented work here included cutting and clearing timber to allow new growth and straightening waterways to prevent soil erosion (Hankins, 2020, p. 15, citing Bower; Fife & Salmon, n.d., p. 5).
+**An all-African American company arrived at this post in 1936**, moving from Fort Knox, Kentucky, and specializing in reforestation and soil conservation. Its documented work here included cutting and clearing timber to allow new growth and straightening waterways to prevent soil erosion (Hankins, 2020, p. 15, citing Bower; Fife & Salmon, n.d., p. 5).
 
 **The company's number is itself a disagreement.** Hankins gives **Company 3350**, citing Bower's Army command history and the company's own newsletter. The HABS documentation gives **Company 3550** (Fife & Salmon, n.d., p. 5). **This course uses 3350 and tells you why:** Hankins cites two documents that name the company directly, including one the company produced. **That is a reason, not a certainty**, and CCC company rosters in the National Archives would settle it.
 
@@ -186,9 +186,9 @@ The post served as **Indiana's district headquarters for the CCC**, the place wh
 
 The Army's **Chaplain School** opened here with its first class of **75 chaplains on 2 February 1942**, running a 28-day session of about 200 hours of instruction; after four sessions the school moved to Harvard University and grew from 75 students to 450 (U.S. Army chaplaincy history, as reported in secondary accounts; see the caution below).
 
-In **April 1942** the photographer **Jack Delano** documented the school. The photographs are held in the **Farm Security Administration and Office of War Information collection at the Library of Congress**, and the Library's own catalogue summary for the group describes the school's students as **Jewish, Catholic, and Negro and white Protestant** students training together for field service, in classes on map reading, first aid, chemical warfare and graves registration, and in conducting services and mass (Delano, 1942).
+In **April 1942** the photographer **Jack Delano** documented the school. The photographs are held in the **Farm Security Administration and Office of War Information collection at the Library of Congress**, and the Library's own catalog summary for the group describes the school's students as **Jewish, Catholic, and Negro and white Protestant** students training together for field service, in classes on map reading, first aid, chemical warfare and graves registration, and in conducting services and mass (Delano, 1942).
 
-**That is a primary source, and it is doing something specific.** In 1942 the Army was segregated. **These photographs are the Library of Congress's own catalogue evidence that this particular school, on this particular post, was not.** Historic Indianapolis, reading the same images seventy years later, put it this way: "when these were taken, the armed services were firmly segregated, except, apparently, for the Chaplain training classes" (Browne, 2012).
+**That is a primary source, and it is doing something specific.** In 1942 the Army was segregated. **These photographs are the Library of Congress's own catalog evidence that this particular school, on this particular post, was not.** Historic Indianapolis, reading the same images seventy years later, put it this way: "when these were taken, the armed services were firmly segregated, except, apparently, for the Chaplain training classes" (Browne, 2012).
 
 **Handle that carefully, in two directions at once.** It is real evidence about one school in one month. **It is not evidence that the post was integrated**, and it is not evidence that the men in those pictures were housed, fed or promoted equally. **A photograph of a room proves who was in the room.**
 
@@ -199,13 +199,13 @@ This is the part that most writing about military posts leaves out, and it is th
 - **The two major preservation documents for this post say nothing about race.** The 1993 National Register nomination and the HABS documentation describe the post's social hierarchy in detail, by **rank**, and never mention race, segregation or Black soldiers at all. **That is a fact about the documents.** National Register nominations of that era routinely evaluated architectural integrity and military function without asking who was allowed where, and knowing that tells you not to treat a nomination's silence as evidence of absence.
 - **The state historical marker and the Encyclopedia of Indianapolis entry are also silent** on segregation at this post (Indiana Historical Bureau, 1996; Encyclopedia of Indianapolis, n.d.-a).
 - **The 1917 Officer Training Camps.** The Army trained Black officer candidates in 1917 at a separate camp at **Fort Des Moines, Iowa**. Whether Black candidates were present at, excluded from, or routed away from the three Officer Training Camps held **at this post** in 1917 is **not stated in any source read for this course.** That is an open question with a findable answer: the camp rosters survive in the National Archives.
-- **The Second World War reception centre.** This post processed inductees at scale. **Whether they were received, housed and assigned by race here is not documented in the sources read for this course**, although the Army as an institution assigned by race throughout the war.
+- **The Second World War reception center.** This post processed inductees at scale. **Whether they were received, housed and assigned by race here is not documented in the sources read for this course**, although the Army as an institution assigned by race throughout the war.
 
-**The national frame, so you know what the local silence sits inside.** President Truman signed **Executive Order 9981 on 26 July 1948**, declaring "there shall be equality of treatment and opportunity for all persons in the armed services without regard to race, color, religion or national origin," and creating a committee to recommend the regulation changes needed to carry it out (Exec. Order No. 9981, 1948). **Desegregation of the Army was not immediate**; it was completed in **1954** with the deactivation of the last all-Black unit (National Archives, n.d.). **Note where this post was during those years:** deactivated after the Second World War, briefly under Air Force control, and reopened by the Army in 1950 as an administrative and training centre.
+**The national frame, so you know what the local silence sits inside.** President Truman signed **Executive Order 9981 on 26 July 1948**, declaring "there shall be equality of treatment and opportunity for all persons in the armed services without regard to race, color, religion or national origin," and creating a committee to recommend the regulation changes needed to carry it out (Exec. Order No. 9981, 1948). **Desegregation of the Army was not immediate**; it was completed in **1954** with the deactivation of the last all-Black unit (National Archives, n.d.). **Note where this post was during those years:** deactivated after the Second World War, briefly under Air Force control, and reopened by the Army in 1950 as an administrative and training center.
 
-**The research instruction, which is the point of the lesson.** If you want to answer the question this lesson could not, the records exist and are requestable: **CCC company rosters and camp inspection reports; Army post general orders and station lists; the reception centre's processing records; and the Indianapolis Recorder**, the city's Black newspaper, which covered the war and the fort's workforce in real time. **None of those were read here.** Saying so is not a weakness in the course. **It is the difference between a finding and a guess.**
+**The research instruction, which is the point of the lesson.** If you want to answer the question this lesson could not, the records exist and are requestable: **CCC company rosters and camp inspection reports; Army post general orders and station lists; the reception center's processing records; and the Indianapolis Recorder**, the city's Black newspaper, which covered the war and the fort's workforce in real time. **None of those were read here.** Saying so is not a weakness in the course. **It is the difference between a finding and a guess.**
 
-**A caution about one citation above.** The Chaplain School's founding dates in the first paragraph of item 2 come from secondary reporting of the Army chaplaincy's own institutional history, whose official page could not be retrieved while this lesson was written. **Treat the 2 February 1942 date and the class sizes as good leads to confirm, not as settled facts**, and confirm them against the Army chaplaincy's published history before you repeat them. **The Delano photographs and the Library of Congress catalogue record are the solid half of that item.**
+**A caution about one citation above.** The Chaplain School's founding dates in the first paragraph of item 2 come from secondary reporting of the Army chaplaincy's own institutional history, whose official page could not be retrieved while this lesson was written. **Treat the 2 February 1942 date and the class sizes as good leads to confirm, not as settled facts**, and confirm them against the Army chaplaincy's published history before you repeat them. **The Delano photographs and the Library of Congress catalog record are the solid half of that item.**
 
 ## Sources
 - Browne, T. B. (2012, April 2). *IndyView revisited: Fort Benjamin Harrison, 1942*. Historic Indianapolis. https://historicindianapolis.com/indyview-revisited-fort-benjamin-harrison-1942/
@@ -220,11 +220,11 @@ This is the part that most writing about military posts leaves out, and it is th
       recallContent: [
         {
           prompt: "What did the post do in the First World War, and how many men were on it at the peak?",
-          answer: "It was a training centre. About 12,000 men were on the ground at the height of activity in June 1917, running three Officer Training Camps, Medical Officers Training Camps, and an Engineers Training Camp of up to 9,000 men trained mostly as railroad specialists.",
+          answer: "It was a training center. About 12,000 men were on the ground at the height of activity in June 1917, running three Officer Training Camps, Medical Officers Training Camps, and an Engineers Training Camp of up to 9,000 men trained mostly as railroad specialists.",
         },
         {
           prompt: "What was Base Hospital 32, and who paid for it?",
-          answer: "One of 33 voluntary base hospitals organised nationally before the United States entered the war, established here with a $25,000 contribution from Eli Lilly and staffed by local doctors and nurses. It ran a 500-bed hospital in France.",
+          answer: "One of 33 voluntary base hospitals organized nationally before the United States entered the war, established here with a $25,000 contribution from Eli Lilly and staffed by local doctors and nurses. It ran a 500-bed hospital in France.",
         },
         {
           prompt: "The HABS documentation says influenza mortality at General Hospital No. 25 was high. Why does this course give no number?",
@@ -232,7 +232,7 @@ This is the part that most writing about military posts leaves out, and it is th
         },
         {
           prompt: "Why did the post become an induction centre rather than a training camp in the Second World War?",
-          answer: "By autumn 1940 the Army had decided it was too small to train troops for modern warfare, so it became a midwest induction and reception centre and a logistical support hub, plus specialised Finance, Chaplain, and Baker and Cooks schools.",
+          answer: "By autumn 1940 the Army had decided it was too small to train troops for modern warfare, so it became a midwest induction and reception center and a logistical support hub, plus specialized Finance, Chaplain, and Baker and Cooks schools.",
         },
         {
           prompt: "What is the disagreement about the prisoner of war camp, and what detail does the National Register nomination add?",
@@ -260,7 +260,7 @@ This is the part that most writing about military posts leaves out, and it is th
               "The War Department had already sold the Arsenal grounds to a private buyer before the military board reported",
             ],
             correctIndex: 2,
-            explanation: "The National Register nomination records the opposition explicitly. A post nobody wanted next door went where the land was cheap and the neighbours were few.",
+            explanation: "The National Register nomination records the opposition explicitly. A post nobody wanted next door went where the land was cheap and the neighbors were few.",
             sourceLessonSlug: "fh-why-a-post",
           },
           {
@@ -305,14 +305,14 @@ This is the part that most writing about military posts leaves out, and it is th
             prompt: "The First World War Engineers Training Camp at this post prepared up to 9,000 men, mostly as:",
             options: ["Pilots", "Cavalry troopers", "Railroad specialists", "Artillery observers for the field batteries stationed at the post"],
             correctIndex: 2,
-            explanation: "By 1918 the post was an Army railroad transport centre, and service and utility buildings surviving from that year reflect the function.",
+            explanation: "By 1918 the post was an Army railroad transport center, and service and utility buildings surviving from that year reflect the function.",
             sourceLessonSlug: "fh-two-wars",
           },
           {
             prompt: "What was Base Hospital 32?",
             options: [
               "The post's permanent hospital, built with appropriated funds during the original 1906 to 1910 construction period and still standing inside the historic district, where it later served as the Soldier Support Center headquarters",
-              "One of 33 voluntary base hospitals organised nationally before United States entry, established here with a $25,000 Eli Lilly contribution, which ran a 500-bed hospital in France",
+              "One of 33 voluntary base hospitals organized nationally before United States entry, established here with a $25,000 Eli Lilly contribution, which ran a 500-bed hospital in France",
               "A prisoner of war infirmary",
               "The Army's influenza quarantine ward",
             ],
@@ -335,13 +335,13 @@ This is the part that most writing about military posts leaves out, and it is th
           {
             prompt: "What was the post's main role in the Second World War, and why?",
             options: [
-              "A midwest induction and reception centre plus logistical support, because the Army judged it too small to train troops for modern warfare",
+              "A midwest induction and reception center plus logistical support, because the Army judged it too small to train troops for modern warfare",
               "The Army's largest armour and mechanised cavalry training school, replacing the tank platoon stationed here between the wars with a full training brigade",
               "A shipyard for inland vessels",
               "An aircraft assembly plant",
             ],
             correctIndex: 0,
-            explanation: "The reception centre became the largest in the country before the function moved to Camp Atterbury in 1944. A demotion turned into a bigger job.",
+            explanation: "The reception center became the largest in the country before the function moved to Camp Atterbury in 1944. A demotion turned into a bigger job.",
             sourceLessonSlug: "fh-two-wars",
           },
           {
@@ -361,7 +361,7 @@ This is the part that most writing about military posts leaves out, and it is th
             options: [
               "The statute required segregated camps",
               "The statute was silent on race",
-              "The CCC operated integrated companies in Indiana, which is why eight of the state's fifty-six companies appear in the enrolment records without any racial designation at all",
+              "The CCC operated integrated companies in Indiana, which is why eight of the state's fifty-six companies appear in the enrollment records without any racial designation at all",
               "The statute prohibited discrimination by race, color and creed while the practice was segregated camps with white officers and technical staff supervising Black enrollees",
             ],
             correctIndex: 3,
@@ -372,7 +372,7 @@ This is the part that most writing about military posts leaves out, and it is th
             prompt: "What is documented about the all-African American CCC company at this post?",
             options: [
               "It was numbered 3350, and no source disagrees",
-              "It arrived in 1936 from Fort Knox specialising in reforestation and soil conservation; Hankins numbers it 3350 and the HABS documentation numbers it 3550",
+              "It arrived in 1936 from Fort Knox specializing in reforestation and soil conservation; Hankins numbers it 3350 and the HABS documentation numbers it 3550",
               "It was numbered 3550, confirmed against National Archives rosters",
               "The company's number was never recorded, so it appears in the Army command history and in the National Register nomination only as an unnumbered conservation detail working out of the district headquarters",
             ],
@@ -428,11 +428,11 @@ This is the part that most writing about military posts leaves out, and it is th
       section: "Section 2 · Built",
       body: `Beat 2 asks: **why does it look like that?** On Indiana Avenue the answer began with a diagonal drawn on an 1821 plat. Here it begins with an office in Washington that drew the same buildings for the whole country.
 
-**Who designed it.** The National Register nomination names the architect on the form: **Army Quartermaster Corps** (McGillem et al., 1993, sec. 8). The overall layout and the buildings both came from **standardised plans used nationwide during the first decade of the twentieth century** (McGillem et al., 1993, sec. 8, p. 2). **There is no signature architect and that is the finding**, not a gap. The nomination says so directly: "Their architects were unknown members of a large organization, and their designs were duplicated at numerous installations throughout the United States" (McGillem et al., 1993, sec. 8, p. 4).
+**Who designed it.** The National Register nomination names the architect on the form: **Army Quartermaster Corps** (McGillem et al., 1993, sec. 8). The overall layout and the buildings both came from **standardized plans used nationwide during the first decade of the twentieth century** (McGillem et al., 1993, sec. 8, p. 2). **There is no signature architect and that is the finding**, not a gap. The nomination says so directly: "Their architects were unknown members of a large organization, and their designs were duplicated at numerous installations throughout the United States" (McGillem et al., 1993, sec. 8, p. 4).
 
 **Hold onto the consequence.** The nomination goes on to say that because of this, the individual buildings "lack the architectural significance necessary for inclusion, individually, in the National Register." **They qualify as a group and not one at a time.** That is a specific, transferable idea: **significance can live in a pattern rather than in an object**, and a district listing is the instrument that recognises it.
 
-**The plan, in one sentence from a 1907 newspaper.** A contemporary account described a "military city housed in thirty beautiful buildings of brick and stone, set on a horseshoe curve, with a parade ground in the center" (*Indianapolis Star*, 14 July 1907, as cited in Fife & Salmon, n.d., pp. 3-4). **Horseshoe curve, parade ground in the centre.** That is the plan, and everything else hangs off it.
+**The plan, in one sentence from a 1907 newspaper.** A contemporary account described a "military city housed in thirty beautiful buildings of brick and stone, set on a horseshoe curve, with a parade ground in the center" (*Indianapolis Star*, 14 July 1907, as cited in Fife & Salmon, n.d., pp. 3-4). **Horseshoe curve, parade ground in the center.** That is the plan, and everything else hangs off it.
 
 **The parade ground is the organ that does the work.** It sits in the western part of the district, surrounded by large trees that shade the officers' residences on its edge, and it is ringed by **Lawton Road**. **Kent Road** crosses it on a diagonal, on a concrete bridge built as part of the original complex. A **bandstand added in 1939** completes the picture (McGillem et al., 1993, sec. 7, p. 2). The HABS documentation makes the comparison explicit: the parade ground's plan "is evocative of the type of configuration made popular by Olmsted and his successors in town and city planning" (Fife & Salmon, n.d., p. 8).
 
@@ -461,7 +461,7 @@ This is the part that most writing about military posts leaves out, and it is th
       recallContent: [
         {
           prompt: "What is the strongest documented item about race specific to this post, and what year?",
-          answer: "An all-African American Civilian Conservation Corps company arrived here in 1936 from Fort Knox, Kentucky, specialising in reforestation and soil conservation, at a post that served as Indiana's CCC district headquarters.",
+          answer: "An all-African American Civilian Conservation Corps company arrived here in 1936 from Fort Knox, Kentucky, specializing in reforestation and soil conservation, at a post that served as Indiana's CCC district headquarters.",
         },
         {
           prompt: "The CCC's enabling legislation prohibited discrimination by race, color and creed. What actually happened?",
@@ -469,7 +469,7 @@ This is the part that most writing about military posts leaves out, and it is th
         },
         {
           prompt: "What do the April 1942 Chaplain School photographs document, and what do they not document?",
-          answer: "The Library of Congress catalogue summary describes Jewish, Catholic, and Negro and white Protestant students training together, which is evidence that this school was not segregated in that month. It is not evidence that the post was integrated, or that housing, food and promotion were equal.",
+          answer: "The Library of Congress catalog summary describes Jewish, Catholic, and Negro and white Protestant students training together, which is evidence that this school was not segregated in that month. It is not evidence that the post was integrated, or that housing, food and promotion were equal.",
         },
         {
           prompt: "What do the National Register nomination and the HABS documentation say about race at this post?",
@@ -477,7 +477,7 @@ This is the part that most writing about military posts leaves out, and it is th
         },
         {
           prompt: "Name the records that would answer what this lesson could not.",
-          answer: "CCC company rosters and camp inspection reports, Army post general orders and station lists, the reception centre's processing records, and the Indianapolis Recorder. None of them were read for this course.",
+          answer: "CCC company rosters and camp inspection reports, Army post general orders and station lists, the reception center's processing records, and the Indianapolis Recorder. None of them were read for this course.",
         },
         {
           prompt: "What is Executive Order 9981, and when was Army desegregation actually completed?",
@@ -515,7 +515,7 @@ This is the part that most writing about military posts leaves out, and it is th
 | Stables | 2 | **139** |
 | Wagon sheds (now one building) | 2 | **60H** |
 
-**Eighteen officers' houses drawn from three plans.** That is the federal government building housing at scale, and it is the same logic that produced standardised post offices, lighthouses and federal courthouses. **If you find plan 75-G at another post, you are looking at a sibling of the barracks here**, which is a genuinely powerful research handle and one almost nobody uses.
+**Eighteen officers' houses drawn from three plans.** That is the federal government building housing at scale, and it is the same logic that produced standardized post offices, lighthouses and federal courthouses. **If you find plan 75-G at another post, you are looking at a sibling of the barracks here**, which is a genuinely powerful research handle and one almost nobody uses.
 
 **The shared material vocabulary, which is how a district holds together.** Every original building uses the same kit (McGillem et al., 1993, sec. 7, p. 1; Fife & Salmon, n.d., pp. 8-9):
 
@@ -528,7 +528,7 @@ This is the part that most writing about military posts leaves out, and it is th
 
 **Style: Colonial Revival**, which the nomination reads as expressing "the country's nostalgic/nationalistic attitude of the time and its need to re-establish fundamentals after a chaotic period of great economic, industrial and artistic growth" (McGillem et al., 1993, sec. 8, p. 2). **That is an interpretation, not a measurement.** It is a reasonable and conventional reading of Colonial Revival, and you should attribute it to the nomination rather than repeat it as fact.
 
-**One street-name fact that is a dating tool.** The post's streets were originally **named for heroes of the Spanish-American War**, and in **1939** they were renamed to honour commanders and men who had been stationed here and distinguished themselves in action (McGillem et al., 1993, sec. 8, p. 2; Fife & Salmon, n.d., pp. 5-6). **A street name on a map is evidence of when the map was made**, and a post that renames its streets is telling you which past it wants to remember. **Lawton, Otis, Greene, Shafter, Aultman, Kent, Birtz, Walker, Glenn: those names are a document.** Who each one was, and which of the two naming rounds each belongs to, is a research task this course leaves to you and does not guess at.
+**One street-name fact that is a dating tool.** The post's streets were originally **named for heroes of the Spanish-American War**, and in **1939** they were renamed to honor commanders and men who had been stationed here and distinguished themselves in action (McGillem et al., 1993, sec. 8, p. 2; Fife & Salmon, n.d., pp. 5-6). **A street name on a map is evidence of when the map was made**, and a post that renames its streets is telling you which past it wants to remember. **Lawton, Otis, Greene, Shafter, Aultman, Kent, Birtz, Walker, Glenn: those names are a document.** Who each one was, and which of the two naming rounds each belongs to, is a research task this course leaves to you and does not guess at.
 
 **What ornament will not tell you.** The nomination reads rank off these buildings in fine detail and **never asks who was permitted to hold which rank.** Lesson 3 already showed you that the same document is silent on race. **Put those two observations together and you have the single most important habit in architectural research: a building records the distinctions its builders chose to encode, and is silent about the ones they took for granted.**
 
@@ -538,11 +538,11 @@ This is the part that most writing about military posts leaves out, and it is th
       recallContent: [
         {
           prompt: "Who is named as the architect of this post, and why does that matter for how it was listed?",
-          answer: "The Army Quartermaster Corps, working from standardised plans used nationwide. The nomination says the buildings lack the architectural significance for individual listing, so they qualify as a district. Significance can live in a pattern rather than an object.",
+          answer: "The Army Quartermaster Corps, working from standardized plans used nationwide. The nomination says the buildings lack the architectural significance for individual listing, so they qualify as a district. Significance can live in a pattern rather than an object.",
         },
         {
           prompt: "Describe the plan in the terms a 1907 newspaper used, and name the road that rings it.",
-          answer: "A military city in thirty brick and stone buildings set on a horseshoe curve with a parade ground in the centre. Lawton Road follows the perimeter of the parade ground; Kent Road crosses it on a diagonal on an original concrete bridge.",
+          answer: "A military city in thirty brick and stone buildings set on a horseshoe curve with a parade ground in the center. Lawton Road follows the perimeter of the parade ground; Kent Road crosses it on a diagonal on an original concrete bridge.",
         },
         {
           prompt: "Why did the HABS surveyors compare the parade ground to Olmsted-style planning, and what does that tell you?",
@@ -580,13 +580,13 @@ This is the part that most writing about military posts leaves out, and it is th
 - **Periods of significance: 1906-1910, 1920-1937, 1938-1945.** Significant date: **1908**
 - **Ownership at the time of nomination: public, federal**
 
-**Look at the "areas of significance" line again.** *Community Planning and Development* is on there beside *Military* and *Architecture*. **The people who wrote this nomination understood that this post is a planning artifact**, and that is your licence to teach it as one.
+**Look at the "areas of significance" line again.** *Community Planning and Development* is on there beside *Military* and *Architecture*. **The people who wrote this nomination understood that this post is a planning artifact**, and that is your license to teach it as one.
 
 **2. Camp Edwin F. Glenn.** A separate district, listed **1 December 1995**, National Register reference number **95001360**. Its nomination form lists two other names for it that tell you its whole history in six words: **Citizens' Military Training Camp** and **Fort Harrison Prisoner of War Camp**. The form counts **19 buildings and 360 structures, 379 resources in total**, and records the property as **publicly owned by the federal government**. The National Park Service's supplementary listing record notes an amendment: the nomination had not indicated a level of significance, and the state historic preservation office said **state significance** was appropriate, so the form was amended to add it (Indiana Division of Historic Preservation and Archaeology, 1995).
 
 **That amendment is a small, perfect illustration of how listing works.** A nomination is a **negotiated document**. A consultant writes it, a state office reviews it, a federal agency comments, the Keeper of the National Register acts, and corrections get made on continuation sheets that stay in the file forever. **All of it is public and all of it is readable**, which is why this course quotes the forms rather than paraphrasing summaries of them.
 
-**3. And one building listed by itself, first.** The post's **interurban railway station**, Building 616, built in **1908**, was already listed on the National Register before either district, as a good example of an early twentieth-century local interurban station (McGillem et al., 1993, sec. 7, p. 2; the HABS documentation dates the individual nomination to **1984**, Fife & Salmon, n.d., p. 8). **A commuter rail station on an Army post is worth pausing on.** It means the post was connected to Indianapolis by scheduled public transport from the year it opened, which is a fact about labour, supply and daily life that no photograph of a parade ground will tell you.
+**3. And one building listed by itself, first.** The post's **interurban railway station**, Building 616, built in **1908**, was already listed on the National Register before either district, as a good example of an early twentieth-century local interurban station (McGillem et al., 1993, sec. 7, p. 2; the HABS documentation dates the individual nomination to **1984**, Fife & Salmon, n.d., p. 8). **A commuter rail station on an Army post is worth pausing on.** It means the post was connected to Indianapolis by scheduled public transport from the year it opened, which is a fact about labor, supply and daily life that no photograph of a parade ground will tell you.
 
 ## What listing does when the landowner is the United States
 
@@ -659,7 +659,7 @@ Here is the mechanism, and it is genuinely different from the private-owner case
 1. **Not every federal property is an exclusive-jurisdiction enclave.** Jurisdiction over a given installation can be exclusive, concurrent, partial or merely proprietary, and it depends on **what the state ceded and what the United States accepted, at the time of acquisition**. **This course has not read the jurisdictional history of this specific post and does not assert one.** If you need it, the answer lives in Indiana's cession statutes and the Army's real property records.
 2. **"Federal land" is a legal status, not a fence.** The practical experience of it changes with each of those categories, which is exactly why you have to look it up rather than assume.
 
-**Half two, and this one is simple and enormous: the local government cannot tax it.** The principle is as old as *McCulloch v. Maryland* (1819), in which the Supreme Court held that a state may not tax an instrumentality of the federal government. **Federal property does not appear on a county's tax rolls.** The U.S. Department of Education says it in one plain sentence when explaining why a school aid programme exists: "Because federally owned property does not generate taxes, the revenue for the school district is dramatically reduced, but the school district is required to educate the same number of students as before the Federal property was acquired" (U.S. Department of Education, n.d.).
+**Half two, and this one is simple and enormous: the local government cannot tax it.** The principle is as old as *McCulloch v. Maryland* (1819), in which the Supreme Court held that a state may not tax an instrumentality of the federal government. **Federal property does not appear on a county's tax rolls.** The U.S. Department of Education says it in one plain sentence when explaining why a school aid program exists: "Because federally owned property does not generate taxes, the revenue for the school district is dramatically reduced, but the school district is required to educate the same number of students as before the Federal property was acquired" (U.S. Department of Education, n.d.).
 
 ## Now do the arithmetic that this course is really about
 
@@ -724,7 +724,7 @@ Put the numbers from Section 1 next to that rule.
       section: "Section 3 · Powers",
       body: `Congress knows what lesson 8 described, and has legislated about it. **The substitutes are the instrument, and knowing their names is the difference between complaining about a problem and reading the file on it.**
 
-## Impact Aid, the oldest federal K-12 programme
+## Impact Aid, the oldest federal K-12 program
 
 **What it is.** Impact Aid sits in **Title VII of the Elementary and Secondary Education Act** and pays school districts affected by a federal presence. It has two limbs that people constantly confuse, and the distinction is the lesson.
 
@@ -739,7 +739,7 @@ Put the numbers from Section 1 next to that rule.
 1. **The 1938 cut-off does real work.** Property the federal government acquired **before 1938** does not generate a Section 7002 claim. **This post's land was bought around 1903 to 1908.** Whether the school district serving it ever qualified under Section 7002, and on what basis, is a **question this course did not answer and you should not assume either way.** The applications are filed annually and are public.
 2. **Eligibility is not payment.** These are **formula grants subject to appropriation**, which is a phrase you should learn to notice. **A district can be eligible for a full entitlement and receive a fraction of it**, every year, for decades. Anyone writing about federal impact on a school district must distinguish **what the formula says is owed** from **what Congress actually appropriated**.
 
-**The transferable point.** When a government exempts something from tax, **it usually creates a programme to compensate the loser, and that programme is almost always smaller, later, and more conditional than the exemption.** You will find the same pattern behind payments in lieu of taxes for federal public lands, behind non-profit hospital and university host agreements, and behind every tax abatement a city grants a developer. **Find the exemption, then find the compensation, then compare their sizes. That is a whole method.**
+**The transferable point.** When a government exempts something from tax, **it usually creates a program to compensate the loser, and that program is almost always smaller, later, and more conditional than the exemption.** You will find the same pattern behind payments in lieu of taxes for federal public lands, behind non-profit hospital and university host agreements, and behind every tax abatement a city grants a developer. **Find the exemption, then find the compensation, then compare their sizes. That is a whole method.**
 
 ## The annexation of 1970, which is the local twist
 
@@ -762,7 +762,7 @@ Here is where this post gets genuinely interesting, and where it links to the re
 
 **What the annexation bought, in hindsight.** Twenty-one years later the base closed. **When roughly 2,500 acres of federal ground came back onto the market, it came back inside the corporate limits of the City of Lawrence**, because of a decision taken in 1970. **Whether anyone intended that is not documented in any source read here.** What is documented is the sequence, and the sequence is the point: **a jurisdictional decision made when land is worthless to you determines who benefits when it becomes valuable.** That single sentence is the most portable thing in this course.
 
-**The relationship was not only fiscal, and the record shows it.** The post ran a "Partners in Education" programme with the Lawrence Township School District that put high school computer science students on the fort's computer system, and by the early 1980s roughly **ten percent of Lawrence High School students were connected to the military through activities at the fort** (Hankins, 2020, pp. 20-21). Soldiers coached and umpired in Lawrence's Little League. **A base is a neighbour as well as a landowner**, and any account that keeps only the ledger is missing most of the relationship.
+**The relationship was not only fiscal, and the record shows it.** The post ran a "Partners in Education" program with the Lawrence Township School District that put high school computer science students on the fort's computer system, and by the early 1980s roughly **ten percent of Lawrence High School students were connected to the military through activities at the fort** (Hankins, 2020, pp. 20-21). Soldiers coached and umpired in Lawrence's Little League. **A base is a neighbor as well as a landowner**, and any account that keeps only the ledger is missing most of the relationship.
 
 ## Sources
 - Encyclopedia of Indianapolis. (n.d.-c). *Lawrence*. https://indyencyclopedia.org/lawrence/
@@ -815,7 +815,7 @@ A base is a district's largest employer. Every member of Congress has an overwhe
 
 **1988: the round that made it stronger.** An earlier commission operated in **1988**, and its effect here ran the other way. **BRAC 1988 brought new jobs to Fort Harrison** and proposed moving additional functions in, and the post came out of it looking like "a financially viable installation and a major contribution to Lawrence Township and Marion County's" economy (Hankins, 2020, pp. 25-26). **A base that survives one round is not safe; it is simply not yet on the next list.** That is a genuinely important thing to understand about any recurring review process.
 
-**1991: the list.** Secretary of Defense **Dick Cheney's** recommendations put the post on the closure list, and the announcement "shocked the communities of Indianapolis and Lawrence" (Hankins, 2020, p. 29). The specialisation that had kept the post alive for forty years, administration and finance training, was also what made it look consolidatable.
+**1991: the list.** Secretary of Defense **Dick Cheney's** recommendations put the post on the closure list, and the announcement "shocked the communities of Indianapolis and Lawrence" (Hankins, 2020, p. 29). The specialization that had kept the post alive for forty years, administration and finance training, was also what made it look consolidatable.
 
 **The campaign to save it, which is the civics.** It was serious and it involved everyone you would expect: the mayors of Indianapolis and Lawrence, the Indiana congressional delegation, the Indiana chapter of the Association of the United States Army, and a study by the **General Accounting Office** suggesting there was no suitable reason to close the post. A BRAC commissioner visited the fort on **29 May 1991** before the public hearing, and a public meeting followed at the Indiana Government Center (Hankins, 2020, pp. 30-34).
 
@@ -893,13 +893,13 @@ In 1991 roughly **2,500 acres** inside a growing metropolitan county were about 
 
 ## Step 1: a local body to write the plan
 
-The first move was **the Fort Benjamin Harrison Transition Task Force**, with Lawrence's Mayor **Thomas Schneider** as executive director. It was formed quickly and deliberately: Schneider wanted it stood up by **December 1991** to qualify for a **$100,000 grant from the Defense Office of Economic Adjustment** (Hankins, 2020, p. 33). **Notice that the deadline was a funding deadline.** Federal money for reuse planning is available on a schedule, and communities that organise fast get it.
+The first move was **the Fort Benjamin Harrison Transition Task Force**, with Lawrence's Mayor **Thomas Schneider** as executive director. It was formed quickly and deliberately: Schneider wanted it stood up by **December 1991** to qualify for a **$100,000 grant from the Defense Office of Economic Adjustment** (Hankins, 2020, p. 33). **Notice that the deadline was a funding deadline.** Federal money for reuse planning is available on a schedule, and communities that organize fast get it.
 
-**By February 1992** the task force had a strategic plan, a timeline and **five subcommittees**: natural and historic resources and environment; economic impact; social and human services; neighbourhood operations and services; and education. They reported to the full task force monthly, and the whole effort ran on **seven sequential steps** aiming at a finished redevelopment plan by **May 1994** (Hankins, 2020, pp. 33-34). **Most military reuse plans take years longer** (Hankins, 2020, p. 35).
+**By February 1992** the task force had a strategic plan, a timeline and **five subcommittees**: natural and historic resources and environment; economic impact; social and human services; neighborhood operations and services; and education. They reported to the full task force monthly, and the whole effort ran on **seven sequential steps** aiming at a finished redevelopment plan by **May 1994** (Hankins, 2020, pp. 33-34). **Most military reuse plans take years longer** (Hankins, 2020, p. 35).
 
-**Who sat on the environmental subcommittee is the most instructive membership list in this course**, because it shows exactly whose interests were represented when the land's future was decided. It included the Indiana DNR Division of Nature Preserves, the Indianapolis Department of Metropolitan Development and Planning, the U.S. Department of Agriculture's soil conservation division, U.S. Fish and Wildlife, Groups Advocating Urban Greenspace Environments, neighbourhood associations of Lawrence Township, the Indiana chapter of the Nature Conservancy, the U.S. Army, the Hoosier Environmental Council, the City of Lawrence's park board, the fort's own natural resource management division, the Sierra Club, the Audubon Society, and Mayor Schneider (Hankins, 2020, pp. 35-36).
+**Who sat on the environmental subcommittee is the most instructive membership list in this course**, because it shows exactly whose interests were represented when the land's future was decided. It included the Indiana DNR Division of Nature Preserves, the Indianapolis Department of Metropolitan Development and Planning, the U.S. Department of Agriculture's soil conservation division, U.S. Fish and Wildlife, Groups Advocating Urban Greenspace Environments, neighborhood associations of Lawrence Township, the Indiana chapter of the Nature Conservancy, the U.S. Army, the Hoosier Environmental Council, the City of Lawrence's park board, the fort's own natural resource management division, the Sierra Club, the Audubon Society, and Mayor Schneider (Hankins, 2020, pp. 35-36).
 
-**Count the sovereigns in that room: federal, state, county, city, township, plus non-governmental organisations.** That is what it takes to decide the future of a piece of federal ground, and **every one of them was there because somebody put them there.**
+**Count the sovereigns in that room: federal, state, county, city, township, plus non-governmental organizations.** That is what it takes to decide the future of a piece of federal ground, and **every one of them was there because somebody put them there.**
 
 ## Step 2: prove the land is worth keeping
 
@@ -925,7 +925,7 @@ Between **April and June 1992** the subcommittee inventoried what was there. The
 
 **The transfer, in 1995, was a lease and not a gift.** The Army transferred **1,700 of the 2,500 acres** to the Indiana Department of Natural Resources under an **interim lease at a recurring lease price**, renewable in **four-year periods**, with covenants protecting the land against **deforestation, mining, soil erosion and pollution** and requiring **historic preservation and archaeological work** (Hankins, 2020, pp. 44-45, citing the Army's interim lease document). **Read the covenants as the instrument.** The conditions on the land were written by the party giving it up, and they bind the state that took it.
 
-**The park opened in October 1996**, and its interpretive centre opened in **1999** (Hankins, 2020, pp. 47-48, 52). The Indiana DNR describes **Fort Harrison State Park** today as a **1,700-acre** park containing **two national historic districts** (Indiana Department of Natural Resources, n.d.).
+**The park opened in October 1996**, and its interpretive center opened in **1999** (Hankins, 2020, pp. 47-48, 52). The Indiana DNR describes **Fort Harrison State Park** today as a **1,700-acre** park containing **two national historic districts** (Indiana Department of Natural Resources, n.d.).
 
 ## Step 5: the other 800 acres, and a taxing district
 
@@ -939,7 +939,7 @@ The remaining roughly **800 acres**, mostly the already-developed part, went to 
 
 **Environmental cleanup.** A **BRAC Cleanup Team** was formed in **1994** with a BRAC environmental coordinator and representatives of the **Environmental Protection Agency** and the **Indiana Department of Environmental Management**. It coordinated an ordnance and explosives search, because one site had been a **grenade range**, and a **24-acre landfill** west of the Camp Glenn area was **closed and sealed in 1991** with continued EPA monitoring (Hankins, 2020, pp. 42-43). **You cannot convey what you have not cleaned**, and cleanup schedules routinely govern the pace of a base conversion.
 
-**Demolition and investment.** More than **one million square feet of buildings were demolished**, and the American Forces Press Service reported that the **City of Lawrence invested $250 million in the 550-acre main post area**, with **more than 100 new companies and civic organisations** arriving within four years (Sample, 2005). **Treat those as attributed figures from a Defense Department news outlet writing a success story.** They are worth reporting and worth labelling.
+**Demolition and investment.** More than **one million square feet of buildings were demolished**, and the American Forces Press Service reported that the **City of Lawrence invested $250 million in the 550-acre main post area**, with **more than 100 new companies and civic organizations** arriving within four years (Sample, 2005). **Treat those as attributed figures from a Defense Department news outlet writing a success story.** They are worth reporting and worth labeling.
 
 ## The chain, in one table
 
@@ -1052,7 +1052,7 @@ The remaining roughly **800 acres**, mostly the already-developed part, went to 
               "That eligibility is not payment: a district can be eligible for a full entitlement and receive a fraction of it for years",
             ],
             correctIndex: 3,
-            explanation: "Always separate what the formula says is owed from what Congress actually appropriated. The same distinction applies to most federal formula programmes.",
+            explanation: "Always separate what the formula says is owed from what Congress actually appropriated. The same distinction applies to most federal formula programs.",
             sourceLessonSlug: "fh-powers-tax-base",
           },
           {
@@ -1136,7 +1136,7 @@ The remaining roughly **800 acres**, mostly the already-developed part, went to 
               "Nothing; surplus federal land goes straight to public auction, and any park use has to be negotiated afterwards by whoever wins the bidding",
             ],
             correctIndex: 2,
-            explanation: "For a park conveyance the Department of the Interior assesses the land and the transfer runs through the National Park Service programme now called Federal Lands to Parks.",
+            explanation: "For a park conveyance the Department of the Interior assesses the land and the transfer runs through the National Park Service program now called Federal Lands to Parks.",
             sourceLessonSlug: "fh-powers-conveyance",
           },
           {
@@ -1199,7 +1199,7 @@ The remaining roughly **800 acres**, mostly the already-developed part, went to 
 
 ## What to look for, in order
 
-**1. Find the parade ground, and stand in the middle of it.** You know it is the organising element of the whole plan: a horseshoe of buildings around an open centre, ringed by **Lawton Road**, crossed on a diagonal by **Kent Road** on an original concrete bridge, with a **bandstand added in 1939** (McGillem et al., 1993, sec. 7, p. 2). **Ask the beat-2 question from the middle: which side has the most ornament?** The answer should be the north and west sides, where the senior officers lived. **If the tour lets you turn, you can read a rank hierarchy in a single rotation.** Almost nothing else in this course is that directly observable.
+**1. Find the parade ground, and stand in the middle of it.** You know it is the organizing element of the whole plan: a horseshoe of buildings around an open center, ringed by **Lawton Road**, crossed on a diagonal by **Kent Road** on an original concrete bridge, with a **bandstand added in 1939** (McGillem et al., 1993, sec. 7, p. 2). **Ask the beat-2 question from the middle: which side has the most ornament?** The answer should be the north and west sides, where the senior officers lived. **If the tour lets you turn, you can read a rank hierarchy in a single rotation.** Almost nothing else in this course is that directly observable.
 
 **2. Count porch columns and window heads.** The ornament ladder from lesson 6 is legible from outside every building: elaborate verandas and detail on senior officers' quarters, simpler trim on bachelor officers' quarters, "little ornamentation except for their columned porches and stylized brick work above the windows" on the enlisted barracks, and nothing at all on the warehouses and stables. **Rank the buildings you see before you look up what they were, then check yourself.**
 
@@ -1213,11 +1213,11 @@ The remaining roughly **800 acres**, mostly the already-developed part, went to 
 
 **7. Read every sign, and note who paid for it.** State historical markers, park interpretive panels, National Register plaques, reuse authority signage and city of Lawrence signage will all be present, and **they are different institutions saying different things about the same ground.** The Indiana state historical marker here was installed in **1996**, marker number **49.1996.1** (Indiana Historical Bureau, 1996). **Note the sponsor every time. A marker is a public statement with an author and a date.**
 
-**8. Look for the CCC's work, which you cannot see.** Lesson 3 documented an all-African American CCC company that cut and cleared timber to allow new growth and straightened waterways to prevent erosion here from 1936. **That labour is inside the forest you are looking at and is invisible in it.** The park's own interpretation is thin on this point: Hankins found that the Camp Glenn area, which preserves the parade ground, the Citizens' Military Training Camp and the CCC headquarters, "does not address or interpret the military's role in inadvertently reforesting and saving the land that became a state park" (2020, p. 49). **When you find an interpretive panel, ask what it leaves out. That gap is a finding you can report to the agency that owns the sign.**
+**8. Look for the CCC's work, which you cannot see.** Lesson 3 documented an all-African American CCC company that cut and cleared timber to allow new growth and straightened waterways to prevent erosion here from 1936. **That labor is inside the forest you are looking at and is invisible in it.** The park's own interpretation is thin on this point: Hankins found that the Camp Glenn area, which preserves the parade ground, the Citizens' Military Training Camp and the CCC headquarters, "does not address or interpret the military's role in inadvertently reforesting and saving the land that became a state park" (2020, p. 49). **When you find an interpretive panel, ask what it leaves out. That gap is a finding you can report to the agency that owns the sign.**
 
 ## What the tour cannot show you
 
-- **It cannot show you jurisdiction.** Three different landlords hold parts of this ground and none of them has a colour. Lesson 15 tells you how to find the line.
+- **It cannot show you jurisdiction.** Three different landlords hold parts of this ground and none of them has a color. Lesson 15 tells you how to find the line.
 - **It cannot show you a tax status.** A parcel that pays and a parcel that does not look identical.
 - **It cannot show you what was demolished.** More than a million square feet came down in the conversion (Sample, 2005). **You cannot photograph an absence.**
 - **It cannot show you who was allowed where.** The buildings encode rank and are silent on race, exactly as lesson 6 warned.
@@ -1273,7 +1273,7 @@ The remaining roughly **800 acres**, mostly the already-developed part, went to 
 
 **Blue: Fort Benjamin Harrison itself**, plotted at an approximate point. Its detail carries the whole arc in a paragraph.
 
-**Amber: four other American military installations that closed and were converted**, each of which used some part of the same toolkit you learned in Section 3: a closure commission, a local redevelopment authority, environmental cleanup, historic districts, and public benefit conveyances. **These are here to stop you reading this post as a local story.** Base closure and conversion is a national programme that reshaped dozens of American communities across four commission rounds in the 1980s and 1990s, and it happened to each of them under the same statutes.
+**Amber: four other American military installations that closed and were converted**, each of which used some part of the same toolkit you learned in Section 3: a closure commission, a local redevelopment authority, environmental cleanup, historic districts, and public benefit conveyances. **These are here to stop you reading this post as a local story.** Base closure and conversion is a national program that reshaped dozens of American communities across four commission rounds in the 1980s and 1990s, and it happened to each of them under the same statutes.
 
 **Green: two record repositories.** Washington is where the National Register and the Historic American Buildings Survey records live, and where the base closure commission reported. **Knowing where a record physically lives is part of knowing it exists.**
 
@@ -1295,7 +1295,7 @@ The remaining roughly **800 acres**, mostly the already-developed part, went to 
             title: "Fort Benjamin Harrison, Lawrence, Marion County, Indiana",
             color: "#1d4ed8",
             description:
-              "The subject of this course. Roughly 2,400 acres of Lawrence Township farmland bought by the United States around 1903 to 1908, built out from Quartermaster Corps stock plans between 1906 and 1910, and held by the federal government for most of the twentieth century. Officer and engineer training in the First World War, a midwest induction centre, three specialist schools and a prisoner of war camp in the Second, then forty years as the Army's finance and administration centre. Annexed by the City of Lawrence in 1970. Listed for closure by the 1991 base realignment commission. Today the same ground carries a 1,700-acre state park, a redevelopment district under a state reuse authority, and a federal finance centre that never left.",
+              "The subject of this course. Roughly 2,400 acres of Lawrence Township farmland bought by the United States around 1903 to 1908, built out from Quartermaster Corps stock plans between 1906 and 1910, and held by the federal government for most of the twentieth century. Officer and engineer training in the First World War, a midwest induction center, three specialist schools and a prisoner of war camp in the Second, then forty years as the Army's finance and administration center. Annexed by the City of Lawrence in 1970. Listed for closure by the 1991 base realignment commission. Today the same ground carries a 1,700-acre state park, a redevelopment district under a state reuse authority, and a federal finance center that never left.",
           },
           {
             id: "fh-fort-sheridan",
@@ -1304,7 +1304,7 @@ The remaining roughly **800 acres**, mostly the already-developed part, went to 
             title: "Fort Sheridan, Lake County, Illinois",
             color: "#b45309",
             description:
-              "Closed under an earlier round of the same programme, and directly connected to this post: the 1991 commission revised a 1988 recommendation that had moved U.S. Army Recruiting Command from Fort Sheridan to Fort Benjamin Harrison, sending it to Fort Knox instead. Its lakefront historic district and its conversion to housing and open space make it the closest structural sibling to the case in this course. Same statutes, different market.",
+              "Closed under an earlier round of the same program, and directly connected to this post: the 1991 commission revised a 1988 recommendation that had moved U.S. Army Recruiting Command from Fort Sheridan to Fort Benjamin Harrison, sending it to Fort Knox instead. Its lakefront historic district and its conversion to housing and open space make it the closest structural sibling to the case in this course. Same statutes, different market.",
           },
           {
             id: "fh-fort-ord",
@@ -1313,7 +1313,7 @@ The remaining roughly **800 acres**, mostly the already-developed part, went to 
             title: "Fort Ord, Monterey County, California",
             color: "#b45309",
             description:
-              "A far larger closure from the same programme, whose reuse produced a university campus and a national monument on former training land. It is the best comparison for the central mechanism of this course, because most of Fort Ord's conserved land, like Fort Harrison's forest, survived development only because a federal owner needed it empty and paid no property tax on it.",
+              "A far larger closure from the same program, whose reuse produced a university campus and a national monument on former training land. It is the best comparison for the central mechanism of this course, because most of Fort Ord's conserved land, like Fort Harrison's forest, survived development only because a federal owner needed it empty and paid no property tax on it.",
           },
           {
             id: "fh-fort-mcclellan",
@@ -1322,7 +1322,7 @@ The remaining roughly **800 acres**, mostly the already-developed part, went to 
             title: "Fort McClellan, Calhoun County, Alabama",
             color: "#b45309",
             description:
-              "Another Army post closed under the base realignment programme and handed to a local redevelopment authority. It is the case to read when you want to see how far environmental cleanup obligations can govern the pace of a conversion, which is the step lesson 11 covers in a single paragraph and which in practice can run for decades.",
+              "Another Army post closed under the base realignment program and handed to a local redevelopment authority. It is the case to read when you want to see how far environmental cleanup obligations can govern the pace of a conversion, which is the step lesson 11 covers in a single paragraph and which in practice can run for decades.",
           },
           {
             id: "fh-presidio",
@@ -1367,7 +1367,7 @@ The remaining roughly **800 acres**, mostly the already-developed part, went to 
 
 The most striking thing about this post today is that **one former installation carries at least three different kinds of owner at once**, and they are not the same kind of thing.
 
-**1. The state park.** The **Indiana Department of Natural Resources** runs **Fort Harrison State Park**, described by the agency as a **1,700-acre** park with walking and jogging trails, picnic sites, fishing access to Fall Creek, a nature centre, a dog park, a golf course and **two national historic districts** (Indiana Department of Natural Resources, n.d.). Lesson 11 showed you that the land arrived under an interim lease with covenants attached. **A state park is a state agency answering to a state legislature, and its planning documents are state documents.**
+**1. The state park.** The **Indiana Department of Natural Resources** runs **Fort Harrison State Park**, described by the agency as a **1,700-acre** park with walking and jogging trails, picnic sites, fishing access to Fall Creek, a nature center, a dog park, a golf course and **two national historic districts** (Indiana Department of Natural Resources, n.d.). Lesson 11 showed you that the land arrived under an interim lease with covenants attached. **A state park is a state agency answering to a state legislature, and its planning documents are state documents.**
 
 **2. The redevelopment district.** The **Fort Harrison Reuse Authority**, created in **1995** under **Indiana Code 36-7-30**, bought roughly **800 acres for $9 million** and operates within an **indefinite special taxing district** levying special benefit taxes for reuse purposes (Fort Harrison Reuse Authority, n.d.). **This is a creature of state statute doing local development**, and it has its own governing board, its own budget and its own meetings.
 
@@ -1405,7 +1405,7 @@ The City of Lawrence's own municipal code contains a section titled **Cooperatio
 
 **The park is heavily used and growing more so.** Annual visitation rose from **653,889 in 2008** to **973,599 in 2017** (Indiana Division of State Parks statistics, as cited in Hankins, 2020, p. 46). **A number with an owner and a method beats an impression**, and those two figures come from the agency's own counts.
 
-**The redevelopment worked, by the measures its promoters chose.** The American Forces Press Service reported that **more than 100 new companies and civic organisations** arrived within four years, that the **City of Lawrence invested $250 million in the 550-acre main post area**, and that **more than one million square feet of buildings were demolished** (Sample, 2005). **Read those as attributed claims in a Defense Department success story**, which is exactly what they are, and go to the reuse authority's own annual reports if you want audited figures.
+**The redevelopment worked, by the measures its promoters chose.** The American Forces Press Service reported that **more than 100 new companies and civic organizations** arrived within four years, that the **City of Lawrence invested $250 million in the 550-acre main post area**, and that **more than one million square feet of buildings were demolished** (Sample, 2005). **Read those as attributed claims in a Defense Department success story**, which is exactly what they are, and go to the reuse authority's own annual reports if you want audited figures.
 
 **And the interpretation is contested, which is the live question.** Hankins's central criticism, from a public history thesis, is that the park "carries its military past in its name, and military history is a key component of that place; yet, the current layout of the park and available interpretation means that visitors often do not encounter or learn about its military history," and that the Camp Glenn area "does not address or interpret the military's role in inadvertently reforesting and saving the land that became a state park" (2020, pp. 48-49). **That is an argument with an author**, and it is the most actionable thing in this lesson: **an interpretive gap in a state park is a comment you can make to a state agency**, and interpretive plans get revised.
 
@@ -1423,7 +1423,7 @@ The City of Lawrence's own municipal code contains a section titled **Cooperatio
       recallContent: [
         {
           prompt: "Why was the transition task force formed by December 1991 specifically?",
-          answer: "To qualify for a $100,000 grant from the Defense Office of Economic Adjustment. The deadline was a funding deadline, and communities that organise fast get the reuse planning money.",
+          answer: "To qualify for a $100,000 grant from the Defense Office of Economic Adjustment. The deadline was a funding deadline, and communities that organize fast get the reuse planning money.",
         },
         {
           prompt: "What did the 1992 inventory find, and what explains it?",
@@ -1431,7 +1431,7 @@ The City of Lawrence's own municipal code contains a section titled **Cooperatio
         },
         {
           prompt: "What is a public benefit conveyance, and who decides?",
-          answer: "Under the Federal Property and Administrative Services Act of 1949 the government must consider conveyances for park, recreation and natural resource protection before disposal. For a park the Department of the Interior assesses it and the transfer runs through the National Park Service programme now called Federal Lands to Parks. The alternative is sale at fair market value.",
+          answer: "Under the Federal Property and Administrative Services Act of 1949 the government must consider conveyances for park, recreation and natural resource protection before disposal. For a park the Department of the Interior assesses it and the transfer runs through the National Park Service program now called Federal Lands to Parks. The alternative is sale at fair market value.",
         },
         {
           prompt: "What did the National Park Service decide in August 1992?",
@@ -1463,10 +1463,10 @@ The City of Lawrence's own municipal code contains a section titled **Cooperatio
 - **The Marion County Assessor's property cards**: https://maps.indy.gov/AssessorPropertyCards/ . Search by state parcel number, owner name or address.
 - **The National Register nomination and the HABS documentation** for this post, both linked in the sources of lessons 5 through 7. **Read a primary document alongside a database and you will catch things neither shows alone.**
 
-**Your target: the Major General Emmett J. Bean Federal Center, 8899 East 56th Street, Indianapolis.** It is a safe address to practise on for the same reason the Walker Building was safe in course 1: **it is a public institutional building whose address is published by the agency that occupies it, and nobody's home is exposed.**
+**Your target: the Major General Emmett J. Bean Federal Center, 8899 East 56th Street, Indianapolis.** It is a safe address to practice on for the same reason the Walker Building was safe in course 1: **it is a public institutional building whose address is published by the agency that occupies it, and nobody's home is exposed.**
 
 **Work through these, then answer the questions below.**
-1. Find the address in **MapIndy** and look at the parcel outline. **Note its size relative to its neighbours.** Compare what you see with the dimensions in lesson 13.
+1. Find the address in **MapIndy** and look at the parcel outline. **Note its size relative to its neighbors.** Compare what you see with the dimensions in lesson 13.
 2. Read off the **state parcel number**, exactly, including punctuation.
 3. Open the **Assessor's property card** for that parcel. **Look for the owner of record and the assessed value, and expect at least one of them to behave differently from a commercial parcel.** Whatever you find, write down what the record actually says rather than what you predicted.
 4. In MapIndy, turn on political boundaries and note which **township**, **city**, **council district** and **school district** the parcel sits in. **You should end up with more boundaries than you expected. That is the point of lesson 15.**
@@ -1616,7 +1616,7 @@ The City of Lawrence's own municipal code contains a section titled **Cooperatio
             prompt: "Which five facts should you pull for any parcel on a former installation?",
             options: [
               "Parcel number, owner of record, assessed value, the overlapping jurisdictions it sits in, and whether it is inside a designated district",
-              "Square footage, roof age, paint colour, street name and zip code",
+              "Square footage, roof age, paint color, street name and zip code",
               "Architect, contractor, original construction cost, the current tenant of record and the remaining term on the lease, together with the building's most recent appraisal",
               "Zoning code alone",
             ],
@@ -1701,7 +1701,7 @@ The City of Lawrence's own municipal code contains a section titled **Cooperatio
             options: [
               "As independently audited totals, since the Defense Department verifies every redevelopment figure it publishes against the reuse authority's annual financial statements before releasing them",
               "As too unreliable to mention",
-              "As attributed claims in a Defense Department success story, worth reporting and worth labelling, with the reuse authority's own reports as the place to look for audited figures",
+              "As attributed claims in a Defense Department success story, worth reporting and worth labeling, with the reuse authority's own reports as the place to look for audited figures",
               "As the reuse authority's official position",
             ],
             correctIndex: 2,
@@ -1712,7 +1712,7 @@ The City of Lawrence's own municipal code contains a section titled **Cooperatio
             prompt: "Why is the interpretive criticism of the state park actionable rather than merely academic?",
             options: [
               "Because it proves the park should be closed",
-              "Because correcting a state park's interpretive programme requires an act of the Indiana General Assembly amending the department's enabling statute, which is why no interpretive plan has been revised since the park opened",
+              "Because correcting a state park's interpretive program requires an act of the Indiana General Assembly amending the department's enabling statute, which is why no interpretive plan has been revised since the park opened",
               "Because state parks are exempt from public comment",
               "Because interpretive plans get revised, so a documented gap in a state park's interpretation is a comment a member of the public can make to a state agency",
             ],
@@ -1735,7 +1735,7 @@ The City of Lawrence's own municipal code contains a section titled **Cooperatio
           {
             prompt: "Why does this course publish a virtual_tour lesson before a tour URL exists?",
             options: [
-              "Because the tour was cancelled",
+              "Because the tour was canceled",
               "Because the platform requires a placeholder lesson",
               "Because beat 4 is a drop-in: the course is complete and teachable with the other five beats, and a tour embed URL is authoritative external data that is never guessed",
               "Because the tour is optional in this series and will never be added, so the lesson body has to carry the whole of beat 4 on its own permanently, without any media of any kind",
@@ -1822,11 +1822,11 @@ Pick one and commit, because mixing them makes place writing mushy.
 1. **No invented detail.** Not a date, a name, a quotation, a unit designation, a street number or a statistic. **If a source does not say it, you do not write it.** This includes atmospheric invention: you do not know what the barracks smelled like in 1918.
 2. **No composite or imagined characters, and no invented dialogue**, including "he might have said." The real record already gives you Russell B. Harrison, Earl J. Schoen, Lester Cain, Mayor Morris Settles, Mayor Thomas Schneider, subcommittee chairman Robert Baker and Governor Evan Bayh. **That is more than enough material.**
 3. **Military history gets no adventure framing.** The men who trained here went to two wars and many did not come back. **Veterans and their descendants are living**, and some of them are in Lawrence right now. Write about training, supply, money and land, which is what this post actually did, and do not borrow drama the record does not supply.
-4. **The prisoners of war were people.** Italian and German prisoners were held and worked here. Write them as documented labour under confinement, not as colour.
+4. **The prisoners of war were people.** Italian and German prisoners were held and worked here. Write them as documented labor under confinement, not as color.
 5. **The segregation material is handled at the standard of lesson 3 or not at all.** Two documented items about this post and an honest list of what is missing. **Do not import a paragraph about the segregated wartime Army and let a reader think it describes this ground.** If you want to write about segregation here, **go to the archives lesson 3 named**, and then you will have something new.
 6. **Private homes are private.** Much of the former post is now housing. Do not publish a current resident's name with their address.
 7. **Say what you did to a number.** If you converted acreage, adjusted for inflation, or combined figures from two sources, say so and say how.
-8. **Credit the labour.** The forest people admire today was cut, cleared and drained in part by a segregated CCC company whose members were not free to serve in an integrated one. **A piece that praises the park without naming who worked it is an incomplete report.**
+8. **Credit the labor.** The forest people admire today was cut, cleared and drained in part by a segregated CCC company whose members were not free to serve in an integrated one. **A piece that praises the park without naming who worked it is an incomplete report.**
 
 ## What good looks like
 A short, checkable piece in which every sentence is either something you read in a named source or something you clearly mark as unresolved, and in which the prose is still good. **Those two standards do not conflict.** Eighteen officers' houses drawn from three government plans; a commission that closed a base and in the same paragraph told the Secretary of Defense he had misapplied his own criterion; a forest that survived because nobody had to pay tax on it: **none of that needs decorating.**
@@ -1878,8 +1878,8 @@ A short, checkable piece in which every sentence is either something you read in
 | **6. Write** | Wrote grounded nonfiction under an evidence standard | Publish something the next researcher can build on |
 
 **What you can do that you could not do before.**
-- Explain why federal land pays no property tax, and name the two programmes that partly compensate for it.
-- Explain the one design feature that makes base closure politically possible, and recognise the same architecture in other policy.
+- Explain why federal land pays no property tax, and name the two programs that partly compensate for it.
+- Explain the one design feature that makes base closure politically possible, and recognize the same architecture in other policy.
 - Distinguish a **public benefit conveyance** from a sale at fair market value, and say who decides between them.
 - Recognise that a **National Register listing on federal land** triggers Section 106 consultation rather than a demolition veto, and that the HABS record you read is itself a product of that process.
 - Say why the largest tract of forest in central Indiana exists, in one sentence about taxation.

@@ -28,7 +28,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const HOW_WE_KNOW_WHATS_OUT_THERE_COURSE: AuthoredCourse = {
   title: "How We Know What's Out There",
   description:
-    "Astronomy taught as evidence rather than as facts to memorise. Start where navigation ends, with finding yourself by the sky, then climb the distance ladder one rung at a time: parallax, spectra, variable stars, exploding stars, redshift. Finish able to take any number in a popular astronomy article and trace it back to the thing somebody actually measured. No equations.",
+    "Astronomy taught as evidence rather than as facts to memorize. Start where navigation ends, with finding yourself by the sky, then climb the distance ladder one rung at a time: parallax, spectra, variable stars, exploding stars, redshift. Finish able to take any number in a popular astronomy article and trace it back to the thing somebody actually measured. No equations.",
   lessons: [
     // ── Part 1 ─────────────────────────────────────────────────────────────────────────────────
     {
@@ -45,7 +45,7 @@ export const HOW_WE_KNOW_WHATS_OUT_THERE_COURSE: AuthoredCourse = {
 
 Notice what a navigator actually needs. Not a theory of stars. They need a **table**: where each body will be, at what time, on what date, for years into the future.
 
-Producing that table is astronomical labour. Somebody observes, somebody calculates, somebody publishes, and a ship's captain on the other side of an ocean stakes lives on the arithmetic. The almanac is the oldest working relationship between astronomy and everybody else, and it is a useful thing to hold onto: **for most of history, the reason to study the sky carefully was that people needed to get somewhere.**
+Producing that table is astronomical labor. Somebody observes, somebody calculates, somebody publishes, and a ship's captain on the other side of an ocean stakes lives on the arithmetic. The almanac is the oldest working relationship between astronomy and everybody else, and it is a useful thing to hold onto: **for most of history, the reason to study the sky carefully was that people needed to get somewhere.**
 
 :::reveal A navigator measures Polaris at 40 degrees above the horizon. What do they now know, and what do they still not know? ||| They know they are at roughly 40 degrees north latitude. They know nothing at all about their longitude, which requires comparing their local time against the time at a reference meridian, and therefore requires a clock that kept that reference time accurately across the whole voyage.
 
@@ -118,7 +118,7 @@ Maryland Center for History and Culture. (n.d.). *Benjamin Banneker collection*.
 You cannot go there. You cannot bring it back. You cannot run the experiment again with one thing changed. For almost everything in the universe, you have exactly three kinds of measurement:
 
 - **Where it appears to be**, an angle on the sky.
-- **How bright it appears**, and in which colours.
+- **How bright it appears**, and in which colors.
 - **How those change** over time.
 
 That is the whole input. Every other number you have ever read about a star, its distance, its mass, its temperature, its composition, its age, is **inferred** from those, through a chain of reasoning that can be examined and can be wrong.
@@ -155,7 +155,7 @@ National Institute of Standards and Technology. (n.d.). *Measurement uncertainty
       recallContent: [
         {
           prompt: "Astronomy gets three kinds of raw measurement. What are they?",
-          answer: "An angle on the sky, an apparent brightness including its colours, and how those change over time. Everything else is inferred.",
+          answer: "An angle on the sky, an apparent brightness including its colors, and how those change over time. Everything else is inferred.",
         },
       ],
       body: `Hold up a finger and look at it with one eye, then the other. It jumps against the background. That jump is parallax, and its size depends on how far away the finger is.
@@ -196,7 +196,7 @@ NASA. (n.d.). *Parallax and the cosmic distance ladder*. https://science.nasa.go
           answer: "Because it is the only rung close to a direct geometric measurement. Every rung above it is calibrated against it, so an error low down propagates all the way up.",
         },
       ],
-      body: `Spread starlight out into its colours and something unexpected appears: the smooth band of colour is interrupted by sharp dark lines, always in the same places for the same material.
+      body: `Spread starlight out into its colors and something unexpected appears: the smooth band of color is interrupted by sharp dark lines, always in the same places for the same material.
 
 :::figure https://res.cloudinary.com/devdash54321/image/upload/v1786416008/witus/courses/science-and-math/how-we-know-whats-out-there/solar-spectrum-absorption-lines.jpg ||| The visible spectrum of the Sun, cut into horizontal strips and stacked one above another against black. The topmost strip is deep red, and the colours run down through orange, yellow, green and blue to faint violet at the bottom. Every strip is crossed by many fine dark vertical lines of varying width and darkness, some isolated and some in tight groups. ||| The Sun's own spectrum, sliced into strips so the whole of it fits on one page. The dark lines are the entire subject of this lesson: each one is light that never arrived, absorbed on the way out by a particular element. Count how many there are, then remember that before anyone could read them, the composition of the stars was the standard example of a thing humans could never know. ||| NSO/AURA/NSF. Solar spectrum, visible (noao-01771).jpg. CC BY 4.0. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Solar_spectrum,_visible_(noao-01771).jpg
 
@@ -210,7 +210,7 @@ Before this, the composition of the stars was a standard example of something hu
 |---|---|
 | Which absorption lines are present | Which elements are there |
 | How strong the lines are | Temperature and pressure conditions, with care |
-| The overall colour balance | Surface temperature |
+| The overall color balance | Surface temperature |
 | Lines shifted from their laboratory positions | Motion toward or away from us |
 
 That last row deserves its own emphasis. The pattern of lines is fixed by physics, so if you see the whole pattern sitting at longer wavelengths than it should, something has stretched the light on its way here. That shift is measurable, and it becomes the top rung of the ladder in lesson 11.
@@ -289,7 +289,7 @@ It is not a cloud. Most stars fall along a single diagonal band, with two smalle
 - **Giants**, up and to the right: cool but very luminous, which means they must be enormous, because a cool surface emitting that much light needs a great deal of surface.
 - **White dwarfs**, down and to the left: hot but faint, so they must be tiny.
 
-Nobody designed this. It emerged from plotting measurements, and *then* had to be explained. The explanation turned out to be stellar evolution: the diagram is not a catalogue of kinds of star, it is a **snapshot of a population at different stages of life**.
+Nobody designed this. It emerged from plotting measurements, and *then* had to be explained. The explanation turned out to be stellar evolution: the diagram is not a catalog of kinds of star, it is a **snapshot of a population at different stages of life**.
 
 That reinterpretation is the good part. A pattern in data got taken seriously as a fact needing explanation, and the explanation turned out to be about time.
 
@@ -326,22 +326,22 @@ At Harvard College Observatory, from the late nineteenth century onward, that wo
 Among them:
 
 - **Williamina Fleming**, who began as a domestic employee in the director's household, was put to work on the plates, and went on to classify many thousands of stellar spectra and to be placed in charge of the plate collection.
-- **Annie Jump Cannon**, who reorganised the classification into the sequence that is still in use, and applied it to a catalogue of enormous scale.
+- **Annie Jump Cannon**, who reorganised the classification into the sequence that is still in use, and applied it to a catalog of enormous scale.
 - **Henrietta Swan Leavitt**, whose work is the next lesson.
 
-## The labour arrangement is part of the science
+## The labor arrangement is part of the science
 
-They were paid a fraction of what a man in comparable work earned. Credit for the resulting catalogues frequently attached to the observatory's director. Several were college-educated in an era when the career their education pointed toward was closed to them, which is exactly why they were available so cheaply.
+They were paid a fraction of what a man in comparable work earned. Credit for the resulting catalogs frequently attached to the observatory's director. Several were college-educated in an era when the career their education pointed toward was closed to them, which is exactly why they were available so cheaply.
 
-None of that is a footnote to the astronomy. **It is why the astronomy happened at that scale.** A project requiring painstaking examination of hundreds of thousands of spectra was affordable because the labour was underpaid, and it was underpaid because of who was doing it.
+None of that is a footnote to the astronomy. **It is why the astronomy happened at that scale.** A project requiring painstaking examination of hundreds of thousands of spectra was affordable because the labor was underpaid, and it was underpaid because of who was doing it.
 
-That is an uncomfortable sentence and it is a true one. The catalogue is a genuine achievement, the arrangement that produced it was exploitative, and both statements have to be held at once. This catalog's labour courses make the same move about other industries; the observatory is not exempt from it.
+That is an uncomfortable sentence and it is a true one. The catalog is a genuine achievement, the arrangement that produced it was exploitative, and both statements have to be held at once. This catalog's labor courses make the same move about other industries; the observatory is not exempt from it.
 
 ## What survives
 
 Cannon's classification sequence is still taught and still used. The plate collection is still consulted, because a photographic plate from the 1890s is a measurement of a sky that no longer exists and cannot be re-observed.
 
-:::reveal What is the argument that the Harvard Computers' pay was not incidental to the science but structural to it? ||| The classification project required examining an enormous number of plates by eye. That was affordable only because the labour was cheap, and it was cheap because educated women were excluded from the careers their training pointed toward. The scale of the result depended on the inequity that produced the workforce.
+:::reveal What is the argument that the Harvard Computers' pay was not incidental to the science but structural to it? ||| The classification project required examining an enormous number of plates by eye. That was affordable only because the labor was cheap, and it was cheap because educated women were excluded from the careers their training pointed toward. The scale of the result depended on the inequity that produced the workforce.
 
 ## Sources
 
@@ -463,9 +463,9 @@ This is where almost every popular account goes wrong, so be precise.
 
 **It does not mean** galaxies are flying outward through space away from a central point where something happened. There is no such point, and we are not near it.
 
-**It means** the distances between things are increasing everywhere. Space itself is expanding, and light travelling through it gets stretched along the way. Every observer anywhere sees distant galaxies receding, which is why "where was the centre" is a question with no location as an answer.
+**It means** the distances between things are increasing everywhere. Space itself is expanding, and light traveling through it gets stretched along the way. Every observer anywhere sees distant galaxies receding, which is why "where was the centre" is a question with no location as an answer.
 
-The standard image is dots on a balloon being inflated: every dot moves away from every other dot, no dot is the centre, and the surface has no edge. Like every analogy it breaks if pushed, but the part it gets right is the part people get wrong.
+The standard image is dots on a balloon being inflated: every dot moves away from every other dot, no dot is the center, and the surface has no edge. Like every analogy it breaks if pushed, but the part it gets right is the part people get wrong.
 
 ## Whose law
 
@@ -475,7 +475,7 @@ The relationship is commonly called Hubble's law, after Edwin Hubble's 1929 pape
 
 That is not housekeeping. It is a live example of something this catalog says constantly: **who gets remembered depends heavily on what language they published in, which journal, and who was reading.** The physics does not care. The naming does, and the naming is what most people learn.
 
-:::reveal Someone asks where the centre of the expansion is, since everything appears to be moving away from us. What is wrong with the question? ||| It assumes expansion means objects flying outward through space from a point. Space itself is expanding everywhere, so every observer anywhere sees the same recession. There is no centre to locate, and our seeing galaxies recede in all directions is what any observer would see.
+:::reveal Someone asks where the centre of the expansion is, since everything appears to be moving away from us. What is wrong with the question? ||| It assumes expansion means objects flying outward through space from a point. Space itself is expanding everywhere, so every observer anywhere sees the same recession. There is no center to locate, and our seeing galaxies recede in all directions is what any observer would see.
 
 ## Sources
 
@@ -588,7 +588,7 @@ National Science Foundation. (n.d.). *Neutron star merger observations and heavy
       ],
       body: `Things orbiting a central mass move more slowly the further out they are. The outer planets take longer and travel slower than the inner ones, because gravity weakens with distance. A galaxy, with most of its visible matter concentrated toward the middle, ought to behave the same way.
 
-Working with Kent Ford, **Vera Rubin** measured how fast material orbits at different distances from the centres of spiral galaxies, using spectra to read the motion. The outer regions were not slowing down as expected. They kept moving at roughly the same speed far out.
+Working with Kent Ford, **Vera Rubin** measured how fast material orbits at different distances from the centers of spiral galaxies, using spectra to read the motion. The outer regions were not slowing down as expected. They kept moving at roughly the same speed far out.
 
 The result was reproduced across many galaxies. It is now one of the most robust observations in astronomy.
 
