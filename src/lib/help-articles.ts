@@ -208,6 +208,11 @@ There is deliberately **no expected date** on that page. A missed date is worse 
 
 ## Marking courses vetted (platform owner only)
 
+**Finding the queue:** it is in the menu twice, in the site header under **Teach** and in the **Admin**
+sidebar. Both entries are called **Courses to vet** and both land on the same list
+(\`/teach?status=unvetted\`). Only the platform owner sees either one. The **Courses published** tile
+on the Admin home also links there whenever something is waiting.
+
 On **/teach**, tick the courses you want, then choose **Mark vetted** or **Mark unvetted**. Both work
 on any number of courses at once. Use the **Vetted** and **Unvetted** filters to find what still needs
 review, and the small **🕒 coming soon** tag on a row tells you at a glance.

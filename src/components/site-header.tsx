@@ -6,6 +6,7 @@ import { getActiveLearner } from "@/lib/active-learner";
 import { listManagedChildren } from "@/db/queries/family";
 import { listCategories } from "@/db/queries/catalog";
 import { tenantHasMapData } from "@/db/queries/map";
+import { VETTING_QUEUE } from "@/lib/admin-nav";
 import { SignOutButton } from "./sign-out-button";
 import { ThemeToggle } from "./theme-toggle";
 import { MobileNav } from "./mobile-nav";
@@ -79,8 +80,16 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
   // standards links point at the same shared dataset from opposite ends: the per-state finder
   // (pick a state) and the cross-state explorer (one searchable table across every state). One
   // array feeds both the desktop dropdown (NavMenu) and the mobile drawer (MobileNav).
+  //
+  // "Courses to vet" is gated on `owner`, NOT canTeach: it is /teach with the unvetted filter
+  // preselected, and the bulk Mark vetted / Mark unvetted buttons waiting there are platform-owner
+  // -only server-side, so an instructor following it would reach a queue they cannot act on. The
+  // flag comes from the same server-side isPlatformOwner(session) call the Admin link already uses
+  // — no extra query, and no client-side role guess. Its href + label come from VETTING_QUEUE so
+  // this entry and the admin rail's stay the same destination, worded the same way.
   const teachItems: NavItem[] = [
     ...(session && canTeach ? [{ href: "/teach", label: "Teach", accent: true }] : []),
+    ...(session && owner ? [{ href: VETTING_QUEUE.href, label: VETTING_QUEUE.label }] : []),
     ...(session && canTeach ? [{ href: "/help", label: "Help" }] : []),
     ...(session && canTeach ? [{ href: "/academic-standards", label: "Standards by state" }] : []),
     ...(session && canTeach ? [{ href: "/academic-standards/matrix", label: "Standards explorer" }] : []),
