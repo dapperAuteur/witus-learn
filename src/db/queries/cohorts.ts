@@ -128,3 +128,43 @@ export async function removeMember(tenantId: string, cohortId: string, userId: s
       ),
     );
 }
+
+/** Invites into a cohort that have not been accepted yet, oldest first. Tenant-scoped, so a
+ *  roster never lists another brand's outstanding invites. */
+export async function listPendingInvites(tenantId: string, cohortId: string): Promise<CohortInvite[]> {
+  return db
+    .select()
+    .from(cohortInvites)
+    .where(
+      and(
+        eq(cohortInvites.tenantId, tenantId),
+        eq(cohortInvites.cohortId, cohortId),
+        isNull(cohortInvites.acceptedAt),
+      ),
+    )
+    .orderBy(cohortInvites.invitedAt);
+}
+
+/** Refresh a pending invite for re-sending: bumps `invitedAt` and KEEPS the token stable, so the
+ *  link already sitting in the student's inbox keeps working — "resend" re-delivers, it never
+ *  invalidates. Returns null when the invite is missing, already accepted, or belongs to another
+ *  tenant/cohort (the caller 404s; never a redirect, which would leak existence). */
+export async function refreshInvite(
+  tenantId: string,
+  cohortId: string,
+  inviteId: string,
+): Promise<CohortInvite | null> {
+  const [row] = await db
+    .update(cohortInvites)
+    .set({ invitedAt: new Date() })
+    .where(
+      and(
+        eq(cohortInvites.id, inviteId),
+        eq(cohortInvites.tenantId, tenantId),
+        eq(cohortInvites.cohortId, cohortId),
+        isNull(cohortInvites.acceptedAt),
+      ),
+    )
+    .returning();
+  return row ?? null;
+}

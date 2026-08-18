@@ -4,8 +4,9 @@ import { forbidden } from "next/navigation";
 import { requireUserPage } from "@/lib/session";
 import { isTenantAdmin } from "@/lib/api";
 import { getScopedDb } from "@/db/scoped";
-import { getCohort, listMembers } from "@/db/queries/cohorts";
+import { getCohort, listMembers, listPendingInvites } from "@/db/queries/cohorts";
 import { listPresent } from "@/db/queries/live-chat";
+import { getSiteUrl } from "@/lib/site-url";
 import { CohortRoster } from "@/components/cohort-roster";
 
 export async function generateMetadata({
@@ -32,9 +33,11 @@ export default async function CohortRosterPage({ params }: { params: Promise<{ i
   // Any signed-in user manages only their own cohorts; brand admins/owner see any.
   if (cohort.ownerId !== session.user.id && !(await isTenantAdmin(session, sdb.tenantId))) forbidden();
 
-  const [members, present] = await Promise.all([
+  const [members, present, pendingInvites, siteUrl] = await Promise.all([
     listMembers(sdb.tenantId, cohort.id),
     listPresent(sdb.tenantId),
+    listPendingInvites(sdb.tenantId, cohort.id),
+    getSiteUrl(),
   ]);
   const presentIds = new Set(present.map((p) => p.userId));
 
@@ -75,6 +78,12 @@ export default async function CohortRosterPage({ params }: { params: Promise<{ i
             userId: m.userId,
             displayName: m.displayName,
             present: presentIds.has(m.userId),
+          }))}
+          pendingInvites={pendingInvites.map((i) => ({
+            id: i.id,
+            email: i.email,
+            invitedAt: i.invitedAt.toISOString().slice(0, 10),
+            url: `${siteUrl}/join/${i.token}`,
           }))}
         />
       </div>
