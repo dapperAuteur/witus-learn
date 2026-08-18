@@ -323,7 +323,7 @@ sessions for the school.`,
     slug: "cohorts",
     title: "Run a private class with Cohorts",
     category: "Live",
-    keywords: ["cohort", "class", "roster", "invite", "home school", "homeschool", "students", "who's here", "presence"],
+    keywords: ["cohort", "class", "roster", "invite", "home school", "homeschool", "students", "who's here", "presence", "adjust grade", "override", "regrade"],
     body: `# Cohorts
 
 **/cohorts** lets any signed-in user, not just brand admins, run a private class: the
@@ -336,7 +336,17 @@ home-school use case (a parent asks you to teach their child + classmates live).
 4. The roster shows **● here** next to any student currently present on /live, so you can see who
    showed up in real time. Remove a student from the roster at any time.
 
-You see only your own classes; brand admins/owner can see any class on the school.`,
+You see only your own classes; brand admins/owner can see any class on the school.
+
+## Adjusting a grade (without rewriting it)
+
+On the class report (**/cohorts/[id] → report**), every row has an **Adjust** control: adjust a
+quiz score, or mark a course complete (display only, no certificate). A **reason is required**
+and stays on record. Nothing is ever edited or deleted: your adjustment is a new entry on top,
+the student's real attempt stays underneath, and every report (yours, the family view, the CSV)
+shows the adjusted value **with a visible marker and your reason**. The student sees both values
+on their own dashboard. A wrong adjustment is fixed by saving a newer one. Course statistics
+keep measuring real attempts only.`,
   },
   {
     slug: "family",
@@ -637,6 +647,40 @@ need one. They only ever show published, public content.
 - **Course view (for partner apps).** \`/embed/course/<courseId>\` is a chromeless page listing
   the course's published lessons with a "Continue" link out to the full course, the visual
   companion to the API above.`,
+  },
+  {
+    slug: "admin-home-and-brand-settings",
+    title: "Your admin home and brand settings",
+    category: "Operator",
+    keywords: ["admin", "dashboard", "overview", "settings", "flags", "accent", "branding", "paths", "leads", "coming soon"],
+    body: `# Your admin home and brand settings
+
+## At a glance (/admin)
+
+The admin landing opens with your school's headline numbers: learners, active enrollments,
+courses published (with how many are still unvetted), completions, open problem reports, and
+interest and leads. Each number links to the page where you act on it, so "3 open problem
+reports" takes you straight to the triage list. The platform owner also sees new curriculum
+feedback, media awaiting review, and upcoming live sessions. A tile with an open queue is
+outlined in your accent color. The full tool list is right below, and the sidebar still reaches
+everything.
+
+## Brand settings (/admin/settings)
+
+Brand admins can change the school themselves, no code change and no support ticket:
+
+- **Name, tagline, accent colors**, with a live preview. Changes apply on the next page load.
+- **Gamification dose**: off, light (streaks and mastery), or full (adds XP, levels, badges).
+- **AI tutor**: turn the tutor and sentence coach off for this brand.
+- **Age gate**: require an age check before entering the site.
+- **Coming soon**: show a launch holding page instead of the catalog. While it is on, the
+  "notify me" form collects signups even if the lead funnel toggle is off.
+- **Commodity Map**: the interactive origins map at /explore (needs seeded map data).
+- **Learning paths**: puts /paths in the menu; build the tracks at **Admin → Learning paths**.
+- **Lead funnel**: accept "notify me" signups; the list lands at **Admin → Interest & leads**.
+
+Every setting applies only to your school. Settings save through your own domain, so nothing
+here can read or change another brand.`,
   },
 ];
 

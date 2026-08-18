@@ -16,6 +16,8 @@ const Schema = z.object({
   comingSoon: z.boolean().optional(),
   commodityMap: z.boolean().optional(),
   requiresAgeGate: z.boolean().optional(),
+  paths: z.boolean().optional(),
+  leadFunnel: z.boolean().optional(),
 });
 
 // PATCH /api/admin/tenant — update the CURRENT tenant's branding + flags. Tenant is
@@ -42,6 +44,8 @@ export async function PATCH(req: Request) {
   if (d.aiTutor !== undefined) flags.aiTutor = d.aiTutor;
   if (d.comingSoon !== undefined) flags.comingSoon = d.comingSoon;
   if (d.commodityMap !== undefined) flags.commodityMap = d.commodityMap;
+  if (d.paths !== undefined) flags.paths = d.paths;
+  if (d.leadFunnel !== undefined) flags.leadFunnel = d.leadFunnel;
 
   await db
     .update(tenants)

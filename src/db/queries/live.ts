@@ -1,5 +1,5 @@
 import "server-only";
-import { and, asc, desc, eq } from "drizzle-orm";
+import { and, asc, desc, eq, gte, or, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import { courses } from "@/db/schema/courses";
 import { liveSessions, type LiveSession } from "@/db/schema/learning";
@@ -30,6 +30,21 @@ export async function listLiveForCourse(tenantId: string, courseId: string): Pro
     .from(liveSessions)
     .where(and(eq(liveSessions.tenantId, tenantId), eq(liveSessions.courseId, courseId)))
     .orderBy(desc(liveSessions.isLive), asc(liveSessions.scheduledAt), desc(liveSessions.createdAt));
+}
+
+/** Count of live-now or still-upcoming sessions for one tenant — the /admin landing headline
+ * number. Tenant-scoped like every other read here (fan-out already gave each school its own row). */
+export async function countUpcomingLiveSessions(tenantId: string): Promise<number> {
+  const [row] = await db
+    .select({ count: sql<number>`count(*)`.mapWith(Number) })
+    .from(liveSessions)
+    .where(
+      and(
+        eq(liveSessions.tenantId, tenantId),
+        or(eq(liveSessions.isLive, true), gte(liveSessions.scheduledAt, new Date())),
+      ),
+    );
+  return row?.count ?? 0;
 }
 
 export async function listLiveForAdmin(tenantId: string): Promise<LiveSession[]> {

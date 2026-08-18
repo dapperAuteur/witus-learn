@@ -1,5 +1,5 @@
 import "server-only";
-import { and, desc, eq } from "drizzle-orm";
+import { and, desc, eq, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import { mediaAssets, type MediaAsset } from "@/db/schema";
 import type { MediaKind, MediaStatus } from "@/lib/media-verify";
@@ -54,6 +54,15 @@ export async function upsertMediaAsset(v: UpsertMediaAsset): Promise<MediaAsset>
     })
     .returning();
   return row;
+}
+
+/** Count of assets still awaiting review for one tenant — the /admin landing headline number. */
+export async function countPendingMediaAssets(tenantId: string): Promise<number> {
+  const [row] = await db
+    .select({ count: sql<number>`count(*)`.mapWith(Number) })
+    .from(mediaAssets)
+    .where(and(eq(mediaAssets.tenantId, tenantId), eq(mediaAssets.status, "pending")));
+  return row?.count ?? 0;
 }
 
 /** Every asset for one tenant, newest first. Nothing here crosses a tenant boundary. */

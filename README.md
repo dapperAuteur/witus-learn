@@ -337,8 +337,13 @@ PII). Brand_admin/platform-owner only, tenant-scoped like every other read
 (`tests/isolation/gradebook-rollup.db.test.ts`). The cohort roster (`/cohorts/[id]`) now also
 lists **pending invites** with a copyable join link and a **Resend** action that re-delivers the
 same token (nothing already shared is invalidated). Editing grades, quiz attempts, or completions
-is deliberately NOT built: plans/50 defers destructive edits in favor of a future
-override/annotation row so the audit trail stays honest.
+WAS deferred to an override/annotation design — now shipped (plans/66, approved 2026-08-18):
+teachers write **append-only grade overrides** (adjust a quiz score, mark a course complete —
+display only, no certificate) with a required reason. The real attempt is never edited; every
+surface that honors overrides (cohort report + CSV, family report, the learner's own dashboard)
+shows the adjusted value with a visible marker and the reason, corrections are newer rows
+(latest wins), and platform/course-level statistics never consult overrides
+([src/lib/overrides.ts](src/lib/overrides.ts), migration `0053`).
 
 ## Self-serve custom domains
 
@@ -481,6 +486,28 @@ Migration `0048_nebulous_vermin.sql` creates the table (`pnpm db:migrate:prod` a
 The owner can also download each document's typeset **PDF** (uploaded by `sync-library.mjs` from
 the sibling `<name>.pdf`; migration `0052` adds the columns) from the list rows or the reader
 header — attachment download, no caching.
+
+## Admin home + self-serve brand settings
+
+The `/admin` landing is a consolidated dashboard: headline tenant-scoped counts (learners, active
+enrollments, courses published with the unvetted remainder, completions, open problem reports,
+leads; the owner also sees new curriculum feedback, media awaiting review, and upcoming live
+sessions), each linking to its surface, above the full tool grid. `/admin/settings` self-serve
+flags now also include **Learning paths** (`flags.paths`) and **Lead funnel** (`flags.leadFunnel`)
+alongside the existing set. Deployment-identity flags (`recruiting`, `surface`, `aiProvider`,
+`ecosystemSso`, `firstParty`) stay deliberately out of self-serve.
+
+## Lesson maps: county and tribal-area atlases
+
+The lesson-map choropleth gained two lazy-loaded atlases (plans/49 remainder):
+`atlas: "us-counties"` (5-digit county FIPS, US Census cartographic boundaries via the existing
+`us-atlas` package, own async chunk) and `atlas: "us-aiannh"` (American Indian / Alaska Native /
+Native Hawaiian areas from the Census 2024 AIANNH boundary file, in-repo simplified TopoJSON,
+381 KB, own chunk). The AIANNH layer is separately styled (its own dark outline over a neutral
+state base, never a shade of the state ladder, because a tribal nation is a separate sovereign)
+and draws only boundaries plus each area's official Census name: every color and claim must come
+from the lesson's own cited `regionLegend`. Pure join/legend helpers in
+[src/lib/map-atlas.ts](src/lib/map-atlas.ts).
 
 ## Specialization credentials
 
