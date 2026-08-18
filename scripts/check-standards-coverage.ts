@@ -42,6 +42,7 @@ const BACKLOG: Record<string, string> = {
   "knot-tying": "OUT OF SCOPE, practical skill, no academic standard claimed",
   "off-grid-survival": "OUT OF SCOPE, practical skill, no academic standard claimed",
   "broadcasting-break-in": "OUT OF SCOPE, vocational, no academic standard claimed",
+  "voice-acting": "OUT OF SCOPE, vocational, no academic standard claimed",
   // Pre-registered. This one is seeded from scripts/seed-sommelier.ts rather than
   // scripts/seed-courses.ts, so `registered` below does not currently see it and the entry is
   // inert. It is written here anyway because this is where the next author looks for the
