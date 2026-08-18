@@ -487,6 +487,28 @@ The owner can also download each document's typeset **PDF** (uploaded by `sync-l
 the sibling `<name>.pdf`; migration `0052` adds the columns) from the list rows or the reader
 header — attachment download, no caching.
 
+## Admin home + self-serve brand settings
+
+The `/admin` landing is a consolidated dashboard: headline tenant-scoped counts (learners, active
+enrollments, courses published with the unvetted remainder, completions, open problem reports,
+leads; the owner also sees new curriculum feedback, media awaiting review, and upcoming live
+sessions), each linking to its surface, above the full tool grid. `/admin/settings` self-serve
+flags now also include **Learning paths** (`flags.paths`) and **Lead funnel** (`flags.leadFunnel`)
+alongside the existing set. Deployment-identity flags (`recruiting`, `surface`, `aiProvider`,
+`ecosystemSso`, `firstParty`) stay deliberately out of self-serve.
+
+## Lesson maps: county and tribal-area atlases
+
+The lesson-map choropleth gained two lazy-loaded atlases (plans/49 remainder):
+`atlas: "us-counties"` (5-digit county FIPS, US Census cartographic boundaries via the existing
+`us-atlas` package, own async chunk) and `atlas: "us-aiannh"` (American Indian / Alaska Native /
+Native Hawaiian areas from the Census 2024 AIANNH boundary file, in-repo simplified TopoJSON,
+381 KB, own chunk). The AIANNH layer is separately styled (its own dark outline over a neutral
+state base, never a shade of the state ladder, because a tribal nation is a separate sovereign)
+and draws only boundaries plus each area's official Census name: every color and claim must come
+from the lesson's own cited `regionLegend`. Pure join/legend helpers in
+[src/lib/map-atlas.ts](src/lib/map-atlas.ts).
+
 ## Specialization credentials
 
 Named three-course tracks (shared research core + craft medium + subject, per the Documentarian

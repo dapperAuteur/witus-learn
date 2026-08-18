@@ -5,6 +5,18 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- ✅ **Consolidated /admin dashboard + self-serve flags** (\`feat/admin-consolidation\`, branch 1
+  of the Admin/Operator workstream): an At-a-glance stat strip (learners, enrollments, published
+  vs unvetted, completions, open reports, leads; owner also sees new feedback, pending media,
+  upcoming live), every number linking to its surface, above the untouched tool grid. Settings
+  gained the two remaining self-serve flags (paths, leadFunnel); no migration (tenants.flags).
+- ✅ **County + tribal-area map atlases** (\`feat/map-county-tribal-layers\`, plans/49 remainder):
+  \`atlas: "us-counties"\` (us-atlas counties-10m, own async chunk) and \`atlas: "us-aiannh"\`
+  (Census 2024 AIANNH boundaries, in-repo 381KB TopoJSON, own chunk; separately styled layer,
+  never a shade of the state ladder; the layer draws boundaries + official Census names ONLY,
+  every claim comes from the lesson's cited regionLegend). Deferred with reasons in the branch:
+  converting the tribal-nations-governance stopgap map (needs its content pass), semantic zoom
+  (no zoom plumbing exists), first county-level lesson.
 - ✅ **Grade overrides, append-only** (\`feat/grade-overrides\`, plans/66 approved by BAM
   2026-08-18; migration **0053**): teachers adjust a quiz score or mark a course complete
   (display only, NO certificate, decision 2b) via an override ROW with a required reason: the
@@ -1294,9 +1306,11 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
 - ⚪ **Paid streaming/media infra DEFERRED**: Mux / Cloudflare Stream (a thin media-library over a
   provider, spec \`plans/media-library-service.md\`) is **on hold until there are paying users**. Until
   then streaming stays **free**: the app embeds BAM's existing Viloud / Wave.Video player, no new spend.
-- 🟡 **Admin/Operator workstream** (scheduled next): a consolidated \`/admin\` dashboard unifying the
-  owner links (domains/live/paths/leads/roadmap) + **tenant settings** (flags: gamification dose,
-  AI tutor, age-gate, coming-soon, **accent/branding**) + **marketing** (campaigns/promos). ~2-3 branches.
+- 🟡 **Admin/Operator workstream, branches 2-3** (branch 1 SHIPPED, see the consolidated /admin
+  entry above): branch 2 = marketing consolidation under /admin/marketing (email campaigns beyond
+  promo codes); branch 3 (optional) = richer branding self-serve (logoUrl/favicon/OG default, all
+  already supported in TenantTheme). Deployment-identity flags (recruiting, surface, aiProvider,
+  ecosystemSso, firstParty) stay deliberately owner-only, never tenant self-serve.
 - ⚪ **Schools: Trade School + ElementaryMBA stay separate, bridged**: ElementaryMBA's HS end graduates
   into Trade School via a learning path (not merged).
 - ⚪ **Documentarian program** (BVC): a course *family* teaching **trusted, cited documentation**, built
