@@ -7,7 +7,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
 ## Platform
 - ✅ **Grade overrides, append-only** (\`feat/grade-overrides\`, plans/66 approved by BAM
   2026-08-18; migration **0053**): teachers adjust a quiz score or mark a course complete
-  (display only, NO certificate, decision 2b) via an override ROW with a required reason — the
+  (display only, NO certificate, decision 2b) via an override ROW with a required reason: the
   real attempt is never edited, corrections are newer rows (latest wins), and every honoring
   surface (cohort report + CSV, /family, the learner dashboard which shows BOTH values) renders
   the visible adjusted marker. Course-level aggregates never consult overrides (decision 3).
