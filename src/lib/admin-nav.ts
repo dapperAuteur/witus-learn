@@ -9,12 +9,34 @@ export interface AdminNavItem {
   ownerOnly?: boolean;
 }
 
+/**
+ * The vetting queue is ONE destination reached from TWO menus — the admin rail (ADMIN_NAV, below)
+ * and the site header's "Teach" dropdown + mobile drawer (site-header.tsx). Both read the href and
+ * the label from here so the two menus can never drift into reading like two different places.
+ *
+ * It is not an `/admin/*` page: the queue is `/teach` with its status filter preselected, which is
+ * where the bulk "Mark vetted" / "Mark unvetted" buttons already live. Those buttons are platform
+ * -owner-only server-side, so both menu entries are owner-gated too (`ownerOnly` here, `owner` in
+ * the header) — a brand admin offered the link would land on a queue they cannot act on.
+ */
+export const VETTING_QUEUE = {
+  href: "/teach?status=unvetted",
+  label: "Courses to vet",
+} as const;
+
 export const ADMIN_NAV: AdminNavItem[] = [
   {
     href: "/admin/overview",
     title: "Operator overview",
     desc: "Open reports, curriculum feedback, recent leads + enrollments, migration status.",
     icon: "📡",
+    ownerOnly: true,
+  },
+  {
+    href: VETTING_QUEUE.href,
+    title: VETTING_QUEUE.label,
+    desc: "Courses awaiting review, showing learners a Coming soon page until you mark them vetted.",
+    icon: "🔍",
     ownerOnly: true,
   },
   { href: "/admin/dashboard", title: "Dashboard", desc: "Learners, enrollments, completions + roster.", icon: "📊" },
