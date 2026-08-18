@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { LessonRecorder } from "./lesson-recorder";
+import { CameraPreview, LessonRecorder } from "./lesson-recorder";
 
 export interface ScriptLesson {
   id: string;
@@ -15,6 +15,9 @@ export interface ScriptLesson {
 //  • Teleprompter: full-screen auto-scrolling text with adjustable speed, text size, a mirror
 //    toggle (for beam-splitter rigs), AND an embedded in-app recorder so you can record and read
 //    at the same time (the overlay used to hide the per-lesson record buttons underneath it).
+//    In video mode the recorder hands its live camera stream up here and a mirrored self-view
+//    docks at the TOP of the overlay, next to a phone's front lens, so reading the scroll keeps
+//    the speaker's eyes near the camera.
 // The script is generated server-side (src/lib/narration.ts) and passed in; regenerating the
 // page always reflects the current lessons.
 export function RecordingScriptView({
@@ -104,6 +107,9 @@ function Teleprompter({
   const [speed, setSpeed] = useState(60); // pixels per second
   const [fontSize, setFontSize] = useState(40); // px
   const [mirror, setMirror] = useState(false);
+  // Live camera stream while the embedded recorder is in video mode (null otherwise). The
+  // recorder owns the stream lifecycle; we only render the self-view.
+  const [camStream, setCamStream] = useState<MediaStream | null>(null);
   // Which lesson the embedded recorder attaches to — default to the first not-yet-recorded one.
   const [recordLessonId, setRecordLessonId] = useState<string>(
     () => lessons.find((l) => !l.recordedAt)?.id ?? lessons[0]?.id ?? "",
@@ -181,6 +187,21 @@ function Teleprompter({
       {/* A center reading guide line */}
       <div className="pointer-events-none absolute left-0 right-0 top-1/2 border-t-2 border-red-500/60" />
 
+      {/* Video mode: mirrored self-view docked at the top, where a phone's front lens sits.
+          pointer-events-none so tap-to-play on the text underneath keeps working. */}
+      {camStream ? (
+        <div className="pointer-events-none absolute left-1/2 top-2 z-10 w-full max-w-[70vw] -translate-x-1/2 text-center sm:max-w-xs">
+          <CameraPreview
+            stream={camStream}
+            className="mx-auto max-h-28 w-auto max-w-full rounded-lg border border-white/30 sm:max-h-36"
+          />
+          <p className="mx-auto mt-1 max-w-xs text-[11px] leading-snug text-white/70">
+            Recording. Prop the phone so the camera sits just above these words, then read the
+            scroll and your eyes stay near the lens. Preview is mirrored; the video isn’t.
+          </p>
+        </div>
+      ) : null}
+
       {/* In-app recorder — record while you read (used to be hidden behind this overlay). */}
       {lessons.length > 0 ? (
         <div className="flex flex-wrap items-center justify-center gap-3 border-t border-neutral-800 bg-neutral-900 px-4 py-2 text-sm text-white">
@@ -207,6 +228,7 @@ function Teleprompter({
               lessonId={recordLessonId}
               courseLabel={courseLabel}
               lessonLabel={lessons.find((l) => l.id === recordLessonId)?.title}
+              onPreviewStream={setCamStream}
             />
           ) : null}
         </div>

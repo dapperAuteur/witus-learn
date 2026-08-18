@@ -129,7 +129,10 @@ evidence is thin.
 thinnest.
 
 **A good answer** is specific about what is collected, who can see it, how long it is kept, whether it
-trains anything, and what happens when you leave.
+trains anything, and what happens when you leave. It can also say, precisely, who can see a
+student's own notes and annotations on the lessons, and how a family takes that work with them
+when they go. Student work is data too, and the vendor who has thought about it can answer in one
+sentence.
 
 **A bad answer** points at a privacy policy.
 
@@ -229,6 +232,13 @@ citation cannot be marked verified without writing down what was found. Invited 
 course's sources without being given access to anything else. Quiz banks are measured on both the
 position and the length strategy, and a bank that can be beaten fails the build. Standards claims
 carry a rule that a course must either map to a standard or state in one line why it does not.
+
+Student work stays the student's: notes and annotations are private to their author unless the
+author shares a specific note with a teacher, one note at a time; guardians see what a teacher sent
+their child and nothing the child wrote privately; and every learner can download their own notes
+as a plain file whenever they like. And on the rare occasion we open a course before its source
+review has finished, every page of that course says so, in words, until the review is done. The
+review queue does not quietly shrink to fit a launch calendar.
 
 **We would rather you ask us the seven questions than take our word for any of it.** That is the point
 of writing them down.

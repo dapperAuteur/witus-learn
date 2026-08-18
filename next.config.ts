@@ -22,6 +22,29 @@ const nextConfig: NextConfig = {
       { source: "/standards/:path*", destination: "/academic-standards/:path*", permanent: true },
     ];
   },
+  // Framing policy (plans/embeddable-widget-backlog.md "Security — framing"): the /embed/*
+  // family is the ONLY surface a third-party site may iframe (the paste-anywhere course card
+  // and the trusted-consumer course view), so it alone gets `frame-ancestors *`. Every other
+  // route is clickjacking surface (login, admin, checkout) and is pinned to same-origin
+  // framing with both the CSP directive and the legacy X-Frame-Options. The split is done with
+  // two disjoint source matchers rather than an override pair because X-Frame-Options has no
+  // "allow everyone" value to override WITH — omitting it on /embed/* is the only correct form.
+  async headers() {
+    return [
+      {
+        source: "/embed/:path*",
+        headers: [{ key: "Content-Security-Policy", value: "frame-ancestors *" }],
+      },
+      {
+        // Everything that is not under /embed/. Negative lookahead keeps the two rules disjoint.
+        source: "/((?!embed/).*)",
+        headers: [
+          { key: "X-Frame-Options", value: "SAMEORIGIN" },
+          { key: "Content-Security-Policy", value: "frame-ancestors 'self'" },
+        ],
+      },
+    ];
+  },
 };
 
 // Wrap with Sentry's build plugin. It's safe with no Sentry env set: without SENTRY_AUTH_TOKEN it

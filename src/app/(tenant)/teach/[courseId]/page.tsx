@@ -95,6 +95,9 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
           <Link href={`${courseHref}/submissions`} className="underline" style={{ color: "var(--accent)" }}>
             Submissions
           </Link>
+          <Link href={`${courseHref}/embed`} className="underline" style={{ color: "var(--accent)" }}>
+            Embed
+          </Link>
           <Link href={`/course/${course.id}`} className="underline" style={{ color: "var(--accent)" }}>
             View public page →
           </Link>

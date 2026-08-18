@@ -73,7 +73,7 @@ export function RecordingProgress({
                 {i + 1}. {l.title}
               </span>
             </div>
-            {/* Record in-app (audio, offline-safe). A successful upload ticks the checkbox. */}
+            {/* Record in-app (audio or video, offline-safe). A successful upload ticks the checkbox. */}
             <div className="pl-6">
               <LessonRecorder
                 courseId={courseId}
@@ -87,9 +87,10 @@ export function RecordingProgress({
         ))}
       </ul>
       <p className="mt-2 text-xs text-neutral-500">
-        Record each lesson right here (audio), or tick it if you recorded elsewhere. Recordings are
-        saved on your device first and upload when you’re online, nothing is lost if you lose
-        connection. Your progress persists across sittings.
+        Record each lesson right here (audio or video), or tick it if you recorded elsewhere.
+        Recordings are saved on your device first and upload when you’re online, nothing is lost if
+        you lose connection, and nothing is published automatically. Your progress persists across
+        sittings.
       </p>
     </details>
   );

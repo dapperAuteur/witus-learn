@@ -15,6 +15,8 @@ describe.skipIf(!HAS_DB)("api/v1 is tenant-scoped by API key, not host (content 
   let acmeCourseId = "";
   let bvcLessonId = "";
   let acmeLessonId = "";
+  /** Fixture courses this run temporarily VETTED (restored to null in afterAll). */
+  const tempVettedCourseIds: string[] = [];
   let bvcKeyId = "";
   let bvcRawKey = "";
   let acmeKeyId = "";
@@ -44,6 +46,18 @@ describe.skipIf(!HAS_DB)("api/v1 is tenant-scoped by API key, not host (content 
       .limit(1);
     bvcCourseId = bc[0]!.id;
     acmeCourseId = ac[0]!.id;
+
+    // The api-v1 LESSON reads additionally require the course to be VETTED (plans/52), which
+    // post-dates this test. The dev DB legitimately has zero vetted courses until BAM works
+    // through the review queue, so rather than depend on that state, temporarily vet the two
+    // fixture courses and restore vetted_at = null in afterAll — the same mint-and-clean-up
+    // philosophy as the throwaway lessons and keys below.
+    for (const picked of [bc[0]!, ac[0]!]) {
+      if (picked.vettedAt == null) {
+        await db.update(courses).set({ vettedAt: new Date() }).where(eq(courses.id, picked.id));
+        tempVettedCourseIds.push(picked.id);
+      }
+    }
 
     // A PUBLISHED lesson within each of those courses. Rather than assume the seed data has
     // one (Acme's seed course has zero published lessons today), mint our own throwaway
@@ -90,6 +104,10 @@ describe.skipIf(!HAS_DB)("api/v1 is tenant-scoped by API key, not host (content 
     const { inArray } = await import("drizzle-orm");
     await db.delete(tenantApiKeys).where(inArray(tenantApiKeys.id, [bvcKeyId, acmeKeyId].filter(Boolean)));
     await db.delete(lessons).where(inArray(lessons.id, [bvcLessonId, acmeLessonId].filter(Boolean)));
+    if (tempVettedCourseIds.length > 0) {
+      const { courses } = await import("@/db/schema");
+      await db.update(courses).set({ vettedAt: null }).where(inArray(courses.id, tempVettedCourseIds));
+    }
   });
 
   it("a key resolves to its OWN tenant only", async () => {
