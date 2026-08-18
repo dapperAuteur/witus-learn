@@ -51,7 +51,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const WHAT_THEY_BUILT_COURSE: AuthoredCourse = {
   title: "What They Built: Black Business Districts",
   description:
-    "A cited, high-school-and-up course on Black business districts as economies rather than as backdrops to their own destruction: Parrish Street and Hayti in Durham, Jackson Ward in Richmond, Sweet Auburn in Atlanta, Greenwood in Tulsa, and Bronzeville in Chicago. You will read them the way you would read any local economy, out of business records, charters, insurance filings, city directories and National Register nominations: which firms existed, what they sold, who capitalised them, and what the numbers do and do not support. The centre of the course is the question nobody teaches, which is an economics question and not a sentimental one: how do you finance a business district when banks will not lend to you? The answer runs through fraternal orders, industrial insurance, building and loan associations and a generation of chartered banks, and it is documented down to the dollar in places. The course also states its own rule out loud and holds to it: a positive is never used to soften a negative. What was built and what was taken were happening at the same time, in the same country, often to the same people, and this course teaches the co-occurrence without editorialising it into balance. Prerequisite: The Green Book: How to Read a Route.",
+    "A cited, high-school-and-up course on Black business districts as economies rather than as backdrops to their own destruction: Parrish Street and Hayti in Durham, Jackson Ward in Richmond, Sweet Auburn in Atlanta, Greenwood in Tulsa, and Bronzeville in Chicago. You will read them the way you would read any local economy, out of business records, charters, insurance filings, city directories and National Register nominations: which firms existed, what they sold, who capitalised them, and what the numbers do and do not support. The center of the course is the question nobody teaches, which is an economics question and not a sentimental one: how do you finance a business district when banks will not lend to you? The answer runs through fraternal orders, industrial insurance, building and loan associations and a generation of chartered banks, and it is documented down to the dollar in places. The course also states its own rule out loud and holds to it: a positive is never used to soften a negative. What was built and what was taken were happening at the same time, in the same country, often to the same people, and this course teaches the co-occurrence without editorialising it into balance. Prerequisite: The Green Book: How to Read a Route.",
   lessons: [
     // ═══════════════════════════════════════════════════════════════════════════════════════
     // SECTION 1 · Read a district  (what a business district IS, and where its numbers live)
@@ -60,7 +60,7 @@ export const WHAT_THEY_BUILT_COURSE: AuthoredCourse = {
       slug: "wtb-the-rule",
       title: "1 · What this course is for, and the rule it runs on",
       section: "Section 1 · Read a district",
-      body: `**Start with the prerequisite.** This course assumes you have finished *The Green Book: How to Read a Route*. That course taught a method: open a digitized edition, read a listing down to its abbreviations and its silences, chain listings into a route, read a gap as evidence, and research an address forward to what stands there now. **This course keeps the discipline and changes the record.** Instead of a travel guide you will read charters, insurance filings, city directories, business surveys and National Register nominations, and you will ask an economist's question about a place rather than a traveller's.
+      body: `**Start with the prerequisite.** This course assumes you have finished *The Green Book: How to Read a Route*. That course taught a method: open a digitized edition, read a listing down to its abbreviations and its silences, chain listings into a route, read a gap as evidence, and research an address forward to what stands there now. **This course keeps the discipline and changes the record.** Instead of a travel guide you will read charters, insurance filings, city directories, business surveys and National Register nominations, and you will ask an economist's question about a place rather than a traveler's.
 
 **What this course is about.** Black business districts, taught as economies. Not as scenery, not as a prologue to their own removal, and not as a mood. Which firms existed. What they sold. Who put up the money. What the books say. Where the record is thin and where it is unusually good.
 
@@ -85,7 +85,7 @@ Read that again, because it governs every page that follows and it is the reason
 | Where the record disagrees with itself | A tidy narrative that hides the disagreement |
 | The calendar, so you can see two things running at once | A ledger where the columns cancel |
 
-**One more thing this course refuses to do.** It will not write about these districts as vanished golden ages. Several of them are functioning neighbourhoods with residents, business associations and planning processes running right now, and one of the institutions in this course is in the middle of a corporate transaction this quarter. **The past tense is a research choice, not a default**, and this course uses the present tense whenever the present is what is true.
+**One more thing this course refuses to do.** It will not write about these districts as vanished golden ages. Several of them are functioning neighborhoods with residents, business associations and planning processes running right now, and one of the institutions in this course is in the middle of a corporate transaction this quarter. **The past tense is a research choice, not a default**, and this course uses the present tense whenever the present is what is true.
 
 ## The two questions you will be able to answer
 
@@ -132,7 +132,7 @@ Du Bois then adds the layer above retail: "black Durham has in addition to this 
 
 **Two errors to avoid from here on, both of which are common in published writing about these places.**
 
-1. **The catalogue error.** Listing famous names (a theatre, a hotel, a bandleader) and calling that a district. Fame is not distribution. **A district is proved by the boring firms**, the cobblers and the coal dealers, because those are the ones that prove people lived their whole lives inside the boundary.
+1. **The catalog error.** Listing famous names (a theatre, a hotel, a bandleader) and calling that a district. Fame is not distribution. **A district is proved by the boring firms**, the cobblers and the coal dealers, because those are the ones that prove people lived their whole lives inside the boundary.
 2. **The eulogy error.** Writing about the district only in the past tense, in an elegiac register, as though its ending were the point of its existence. **A firm that traded for forty years is a forty-year fact.** How it ended is a separate fact with separate evidence.
 
 **One caution about the word district itself.** It has a legal meaning as well as a common one. When you read "Jackson Ward Historic District" or "Black Metropolis-Bronzeville District" you are reading a **designated boundary drawn by a preservation agency in a specific year**, not the boundary the community used. Section 6 works that distinction properly. For now: **when you see the word, ask who drew the line and in what year.**
@@ -166,7 +166,7 @@ Du Bois then adds the layer above retail: "black Durham has in addition to this 
       section: "Section 1 · Read a district",
       body: `You cannot count a district you cannot find. This lesson is the record list, in the order a working researcher uses it, with what each source can and cannot prove.
 
-**1. The city directory.** Published annually, organised by name and often by street and by trade. Directories are how most of the business counts you will meet in this course were produced. The Tulsa City-County Library's Greenwood exhibit, for example, publishes a 1921 breakdown down to **41 grocery and meat markets, 30 restaurants, 11 boarding and rooming houses, 9 billiard halls and 5 hotels** (Tulsa City-County Library, n.d.).
+**1. The city directory.** Published annually, organized by name and often by street and by trade. Directories are how most of the business counts you will meet in this course were produced. The Tulsa City-County Library's Greenwood exhibit, for example, publishes a 1921 breakdown down to **41 grocery and meat markets, 30 restaurants, 11 boarding and rooming houses, 9 billiard halls and 5 hotels** (Tulsa City-County Library, n.d.).
 - **Proves:** a firm was listed at an address in a year.
 - **Does not prove:** that the firm was Black owned, that it was still open, or that every firm was listed. Directories were compiled by canvassers and by subscription, and coverage was uneven.
 
@@ -221,7 +221,7 @@ Du Bois then adds the layer above retail: "black Durham has in addition to this 
         },
         {
           prompt: "What are the catalogue error and the eulogy error?",
-          answer: "The catalogue error is listing famous names and calling that a district; the boring firms prove it instead. The eulogy error is writing only in the past tense, in an elegiac register, as though the ending were the point.",
+          answer: "The catalog error is listing famous names and calling that a district; the boring firms prove it instead. The eulogy error is writing only in the past tense, in an elegiac register, as though the ending were the point.",
         },
         {
           prompt: "When you read the word 'district' in a designation name, what should you immediately ask?",
@@ -267,9 +267,9 @@ Du Bois then adds the layer above retail: "black Durham has in addition to this 
           {
             prompt: "Why is the shape of a course catalogue a problem the plan calls structural rather than tonal?",
             options: [
-              "Because course descriptions and catalogue blurbs are written by marketing staff rather than by the people who author the lessons",
+              "Because course descriptions and catalog blurbs are written by marketing staff rather than by the people who author the lessons",
               "Because a learner who takes six clearance courses in a row could conclude this history is only things done to people",
-              "Because catalogues are sorted alphabetically",
+              "Because catalogs are sorted alphabetically",
               "Because tone is subjective",
             ],
             correctIndex: 1,
@@ -450,7 +450,7 @@ Du Bois then adds the layer above retail: "black Durham has in addition to this 
 
 **Read one order's balance sheet.** The Grand Fountain of the United Order of True Reformers was founded in Richmond on **January 11, 1881** by **William Washington Browne**, a formerly enslaved man, Union Army veteran, teacher and Methodist minister. By **1892 it had 765 chapters and more than 40,000 members**, and by the early 1900s it had branches in **24 states**. Members bought death-benefit certificates for **1 dollar 50 cents**, which initially paid heirs **100 dollars** and later **50 dollars**. By the early 1900s the order had **paid out more than one million dollars in death benefits** (Encyclopedia Virginia, n.d.-a).
 
-**Now look at what that order owned**, because this is the part that turns a benefit society into an economy: **a 50-room hotel; retail stores selling groceries, farm implements and goods its own members manufactured; three farms; fourteen meeting halls; an office building at 604 to 608 North Second Street in Richmond, built in 1891; a newspaper, the *Reformer*; a 634-acre old folks home established in 1898; and a five-storey building in Washington, D.C., completed in 1902** (Encyclopedia Virginia, n.d.-a).
+**Now look at what that order owned**, because this is the part that turns a benefit society into an economy: **a 50-room hotel; retail stores selling groceries, farm implements and goods its own members manufactured; three farms; fourteen meeting halls; an office building at 604 to 608 North Second Street in Richmond, built in 1891; a newspaper, the *Reformer*; a 634-acre old folks home established in 1898; and a five-story building in Washington, D.C., completed in 1902** (Encyclopedia Virginia, n.d.-a).
 
 **That is vertical integration**, and it is the single most efficient answer to exclusion in this entire course. If white landlords will not rent you a hall, own the hall. If white newspapers will not carry your advertising, own the paper. **Every one of those assets is also collateral**, which matters enormously in Section 4.
 
@@ -503,7 +503,7 @@ The **Independent Order of St. Luke** was, when **Maggie Lena Walker** was elect
       section: "Section 2 · The institutions",
       body: `The Black press is usually taught as a voice. It was also **a firm with a payroll, a printing plant, a distribution network, an advertising rate card and a circulation figure**, and reading it that way tells you things the voice framing cannot.
 
-**Start with why a district needs a paper at all.** Advertising is how a business tells strangers it exists. If the daily papers will not sell you display advertising, or will only run your notice in a segregated column, then **your firm is invisible to everyone outside your own block**. A district newspaper fixes that, and it does it as a commercial transaction rather than a favour.
+**Start with why a district needs a paper at all.** Advertising is how a business tells strangers it exists. If the daily papers will not sell you display advertising, or will only run your notice in a segregated column, then **your firm is invisible to everyone outside your own block**. A district newspaper fixes that, and it does it as a commercial transaction rather than a favor.
 
 **So a Black newspaper's advertising pages are a business directory that somebody paid to be in**, which makes them a different and in some ways better source than a city directory. **A canvasser may miss you. An advertiser paid.**
 
@@ -531,7 +531,7 @@ The **Independent Order of St. Luke** was, when **Maggie Lena Walker** was elect
 
 ## The church and the order, in one paragraph each, because they are the other two publishers
 
-**The church.** Denominational publishing houses printed hymnals, Sunday school material and periodicals, and Du Bois's 1907 Atlanta University study catalogues church "publications" alongside land values and assets when it measures denominations (Du Bois, 1907). **A denomination with a printing house is a manufacturer.**
+**The church.** Denominational publishing houses printed hymnals, Sunday school material and periodicals, and Du Bois's 1907 Atlanta University study catalogs church "publications" alongside land values and assets when it measures denominations (Du Bois, 1907). **A denomination with a printing house is a manufacturer.**
 
 **The fraternal order.** Beyond the *Reformer*, orders printed ritual books, certificates and membership records. **Those certificates are financial instruments**, and where they survive they are among the most under-used business records in American history.
 
@@ -556,7 +556,7 @@ When you research any firm in any of these districts, **go to the local Black ne
         },
         {
           prompt: "What did the Grand Fountain of the United Order of True Reformers own besides its bank?",
-          answer: "A 50-room hotel, retail stores, three farms, fourteen meeting halls, an office building on North Second Street in Richmond built in 1891, the Reformer newspaper, a 634-acre old folks home from 1898, and a five-storey building in Washington, D.C., completed in 1902.",
+          answer: "A 50-room hotel, retail stores, three farms, fourteen meeting halls, an office building on North Second Street in Richmond built in 1891, the Reformer newspaper, a 634-acre old folks home from 1898, and a five-story building in Washington, D.C., completed in 1902.",
         },
         {
           prompt: "What three things did Maggie Lena Walker announce on August 20, 1901, and did she build them?",
@@ -577,7 +577,7 @@ When you research any firm in any of these districts, **go to the local Black ne
       section: "Section 3 · Five districts",
       body: `Durham gets taught first because it has the best documentation, and because the best of that documentation is a primary source you can read in ten minutes.
 
-## The four blocks and the neighbourhood
+## The four blocks and the neighborhood
 
 Two distinct places, routinely confused, and you should keep them apart.
 - **Parrish Street**, four blocks in downtown Durham, was the **financial and office district**: insurance, banking, professional offices.
@@ -618,7 +618,7 @@ In January 1912 **W. E. B. Du Bois** published *The Upbuilding of Black Durham* 
 
 **Stop on the bank line, because it is the most instructive number in this course.** **17,000 dollars deposited by 500 different persons is an average of 34 dollars a person.** That is not a rich man's bank. **It is five hundred people of modest means, pooling.** The paid-in capital of 11,000 dollars is the shareholders' own money at risk. **Those two figures together are the entire economics of Section 4 in one sentence.**
 
-## Du Bois's explanation, which is an argument and must be labelled as one
+## Du Bois's explanation, which is an argument and must be labeled as one
 
 Du Bois credits three founders: "a minister with college training, a physician with professional training, and a barber who saved his money" (Du Bois, 1912). But he says the greatest factor was something else: **the disposition of ordinary white Durham to leave Black enterprise alone**, which he renders as "Hands off" and "give them a chance," and he credits the influence of Trinity College in making white Durham willing to see black Durham rise (Du Bois, 1912).
 
@@ -705,7 +705,7 @@ The **Durham Freeway**, originally the East-West Expressway and now **North Caro
 
 ## The store that closed, which is the most honest paragraph in this course
 
-**The Saint Luke Emporium opened in April 1905 and closed in 1911, and Encyclopedia Virginia gives two causes at once: organised opposition from white retailers, and reluctance among Black consumers to shop there** (Encyclopedia Virginia, n.d.-b).
+**The Saint Luke Emporium opened in April 1905 and closed in 1911, and Encyclopedia Virginia gives two causes at once: organized opposition from white retailers, and reluctance among Black consumers to shop there** (Encyclopedia Virginia, n.d.-b).
 
 **Both halves. Write both halves.** A course that reports only the white retailers' campaign is telling a comfortable story about an external enemy. A course that reports only the consumer reluctance is telling an uglier and equally incomplete one. **The record says both, and a six-year run that ended for two reasons at once is exactly the kind of fact this course exists to teach properly.**
 
@@ -758,7 +758,7 @@ Consolidated was, at the time of its purchase in **2005**, the oldest continuous
 
 ## The name and the claim
 
-**"Sweet Auburn" was coined by John Wesley Dobbs**, a civic leader and the neighbourhood's unofficial mayor, to mark the avenue's standing as a national centre of African American commerce (New Georgia Encyclopedia, n.d.-a).
+**"Sweet Auburn" was coined by John Wesley Dobbs**, a civic leader and the neighborhood's unofficial mayor, to mark the avenue's standing as a national center of African American commerce (New Georgia Encyclopedia, n.d.-a).
 
 **In 1956, *Fortune* magazine described Auburn Avenue as "the richest Negro street in the world"** (New Georgia Encyclopedia, n.d.-a). **That is a quotation from a business magazine, in a year, and it is a claim about relative wealth that nobody has ever rigorously tested.** Use it the way you would use any trade-press superlative: **as evidence of reputation, not of measured wealth.** Attribute it every time.
 
@@ -812,7 +812,7 @@ The ***Atlanta Daily World*** was founded as the *Atlanta World* by **W. A. Scot
         },
         {
           prompt: "Why did the Saint Luke Emporium close, and why must both causes be reported?",
-          answer: "Organised opposition from white retailers and reluctance among Black consumers to shop there. Reporting only the first tells a comfortable story about an external enemy; reporting only the second tells an uglier and equally incomplete one. The record says both.",
+          answer: "Organized opposition from white retailers and reluctance among Black consumers to shop there. Reporting only the first tells a comfortable story about an external enemy; reporting only the second tells an uglier and equally incomplete one. The record says both.",
         },
         {
           prompt: "Jackson Ward's cast-iron porches are described as the richest display of ornamental ironwork in Virginia. What does that prove about the local economy?",
@@ -834,7 +834,7 @@ The ***Atlanta Daily World*** was founded as the *Atlanta World* by **W. A. Scot
 
 Tulsa was small and then it was not. **Its population ran 1,390 in 1900, 18,182 in 1910 and 72,075 in 1920**, and by 1920 the city hosted **over 400 petroleum companies** (Oklahoma Historical Society, n.d.). **The Greenwood District held about 11,000 residents in 1920** (Oklahoma Historical Society, n.d.).
 
-**That is an oil boom town, and a boom town is a specific economic environment**: wages are high, labour is short, housing is scarce, and money moves. **Greenwood was not built in a quiet place. It was built inside one of the fastest growing local economies in the country**, which is part of why it grew as fast as it did.
+**That is an oil boom town, and a boom town is a specific economic environment**: wages are high, labor is short, housing is scarce, and money moves. **Greenwood was not built in a quiet place. It was built inside one of the fastest growing local economies in the country**, which is part of why it grew as fast as it did.
 
 **The legal environment was equally specific.** Oklahoma's first legislative action upon statehood, **Senate Bill One**, formalised segregation between African Americans and whites throughout the state (Oklahoma Historical Society, n.d.). **Both facts at once: a boom, and a statute.**
 
@@ -875,7 +875,7 @@ The Tulsa City-County Library's Black Wall Street exhibit publishes a breakdown 
 
 ## 1921, named plainly and in one place
 
-On May 31 and June 1, 1921, a white mob destroyed the district. **This course is not the course that teaches that event**, and it will not summarise it in a paragraph, because a paragraph would be an insult to the scholarship. **The Oklahoma Commission to Study the Tulsa Race Riot of 1921 was authorised by the state legislature in 1997 and submitted its report on February 28, 2001.** Read the report.
+On May 31 and June 1, 1921, a white mob destroyed the district. **This course is not the course that teaches that event**, and it will not summarize it in a paragraph, because a paragraph would be an insult to the scholarship. **The Oklahoma Commission to Study the Tulsa Race Riot of 1921 was authorised by the state legislature in 1997 and submitted its report on February 28, 2001.** Read the report.
 
 **Two business facts from the aftermath belong in this course, because they are about capital.**
 
@@ -1073,7 +1073,7 @@ On May 31 and June 1, 1921, a white mob destroyed the district. **This course is
               "A hospital, a school and a library",
               "A bank, a newspaper and a department store",
               "A bank, a hotel and an insurance company",
-              "A newspaper, a printing plant and a chain of neighbourhood grocery stores",
+              "A newspaper, a printing plant and a chain of neighborhood grocery stores",
             ],
             correctIndex: 1,
             explanation: "She built all three: the St. Luke Herald from 1902, the Saint Luke Penny Savings Bank chartered July 28, 1903, and the Saint Luke Emporium from April 1905.",
@@ -1084,7 +1084,7 @@ On May 31 and June 1, 1921, a white mob destroyed the district. **This course is
             options: [
               "A fire and an uninsured loss",
               "The 1907 financial panic and a rent increase",
-              "Organised white retailer opposition, and Black consumer reluctance to shop there",
+              "Organized white retailer opposition, and Black consumer reluctance to shop there",
               "Competition from a larger department store that opened two blocks away in 1909 and undercut its prices",
             ],
             correctIndex: 2,
@@ -1097,7 +1097,7 @@ On May 31 and June 1, 1921, a white mob destroyed the district. **This course is
               "Georgia had raised capital requirements for such businesses, which put it in trouble",
               "Its founder had died without an heir",
               "He won a lawsuit against its directors",
-              "The state insurance commissioner ordered it sold to a Black owner as a condition of its licence",
+              "The state insurance commissioner ordered it sold to a Black owner as a condition of its license",
             ],
             correctIndex: 0,
             explanation: "He was the person who was liquid at the moment the rule bit. He incorporated it with assets of 5,000 dollars, grown to over 400,000 by 1922.",
@@ -1133,7 +1133,7 @@ On May 31 and June 1, 1921, a white mob destroyed the district. **This course is
               "41 grocery and meat markets",
               "6 real estate, loan and insurance agents",
               "5 hotels",
-              "15 physicians and surgeons practising in the district",
+              "15 physicians and surgeons practicing in the district",
             ],
             correctIndex: 1,
             explanation: "Agents writing insurance and arranging loans mean a district connected to outside capital markets through intermediaries, a different structure from Durham's locally chartered institutions.",
@@ -1197,7 +1197,7 @@ On May 31 and June 1, 1921, a white mob destroyed the district. **This course is
       slug: "wtb-money-problem",
       title: "13 · The money question, stated properly",
       section: "Section 4 · The money question",
-      body: `This is the centre of the course. **If you take one thing away from all twenty-two lessons, take this one**, because it is a real economics problem, it was solved, and almost nobody is taught how.
+      body: `This is the center of the course. **If you take one thing away from all twenty-two lessons, take this one**, because it is a real economics problem, it was solved, and almost nobody is taught how.
 
 ## State the problem the way a banker would
 
@@ -1211,7 +1211,7 @@ On May 31 and June 1, 1921, a white mob destroyed the district. **This course is
 
 **Options 4 and 5 both require an institution that will lend to you or invest in you.** Take those away and you are left with 1, 2 and 3, all of which depend on somebody in your circle already having capital. **That is the definition of a poverty trap, and it is a machine rather than a misfortune.**
 
-**Now add the constraint these districts actually faced.** Banks would not lend. Insurers would not write policies, or wrote them at higher prices. Wholesale suppliers would not extend trade credit. **And the properties you might have pledged as collateral sat in neighbourhoods whose values the lending industry had already decided to discount.** Each one of those is a separate closed door, and closing any one of them is enough to stop most businesses from starting.
+**Now add the constraint these districts actually faced.** Banks would not lend. Insurers would not write policies, or wrote them at higher prices. Wholesale suppliers would not extend trade credit. **And the properties you might have pledged as collateral sat in neighborhoods whose values the lending industry had already decided to discount.** Each one of those is a separate closed door, and closing any one of them is enough to stop most businesses from starting.
 
 **So how did more than a hundred banks, several substantial insurance companies and thousands of firms come into existence anyway?**
 
@@ -1219,7 +1219,7 @@ On May 31 and June 1, 1921, a white mob destroyed the district. **This course is
 
 **They built the institution BEFORE they needed the loan.**
 
-That is the whole trick, and it is worth staring at, because it inverts the order everybody assumes. **The usual sequence is: have a business idea, then go to the bank.** The sequence in this course is: **organise a society, collect small regular payments from a large number of people, accumulate a reserve, get the reserve chartered and regulated, and then lend it to yourselves.**
+That is the whole trick, and it is worth staring at, because it inverts the order everybody assumes. **The usual sequence is: have a business idea, then go to the bank.** The sequence in this course is: **organize a society, collect small regular payments from a large number of people, accumulate a reserve, get the reserve chartered and regulated, and then lend it to yourselves.**
 
 **Read the Durham founders again with that sequence in mind.** Du Bois names them as "a minister with college training, a physician with professional training, and a barber who saved his money" (Du Bois, 1912). **Read the roles rather than the men.**
 - **The minister** has a congregation, which is a member list and a reputation.
@@ -1244,7 +1244,7 @@ Section 4 works each of these. Learn the list now.
 
 **These strategies worked, and they had structural limits that no amount of effort could overcome.** Naming those limits is not pessimism, it is the second half of the economics.
 
-- **A neighbourhood bank carries concentrated risk.** Its depositors work for the same employers, own property in the same market, and are hit by the same shocks at the same time. **Diversification is the one thing a segregated bank cannot buy.**
+- **A neighborhood bank carries concentrated risk.** Its depositors work for the same employers, own property in the same market, and are hit by the same shocks at the same time. **Diversification is the one thing a segregated bank cannot buy.**
 - **Deposits leak.** Money deposited in a district gets spent outside it, at firms that bank elsewhere. Mehrsa Baradaran's *The Color of Money* argues that this makes the multiplier work against a segregated community rather than for it (Baradaran, 2017). **That is an argument by a named scholar and you should engage it as one.**
 - **Regulatory thresholds are expensive.** Only five Black-owned insurers held legal reserve status by 1922 (New Georgia Encyclopedia, n.d.-b). **A capital requirement is neutral on its face and brutal in effect on anyone starting from zero.**
 - **The customer is not captive in the way people assume.** The Saint Luke Emporium closed in 1911 partly because Black consumers did not shop there (Encyclopedia Virginia, n.d.-b). **A shared identity is not a business model.**
@@ -1352,7 +1352,7 @@ Later figures from the same company: **by 1945 it was worth 14 million dollars w
         },
         {
           prompt: "Name three structural limits these strategies could not overcome.",
-          answer: "Any three of: a neighbourhood bank cannot diversify its risk; deposits leak out of the district, which Baradaran argues turns the multiplier against a segregated community; regulatory capital thresholds are brutal for anyone starting from zero; and a shared identity is not a business model, as the Saint Luke Emporium showed.",
+          answer: "Any three of: a neighborhood bank cannot diversify its risk; deposits leak out of the district, which Baradaran argues turns the multiplier against a segregated community; regulatory capital thresholds are brutal for anyone starting from zero; and a shared identity is not a business model, as the Saint Luke Emporium showed.",
         },
       ],
     },
@@ -1370,7 +1370,7 @@ Later figures from the same company: **by 1945 it was worth 14 million dollars w
 
 1. **It creates its own capital.** No outside depositor is needed, because members' monthly payments are the funding.
 2. **It underwrites on knowledge, not on paper.** Members know whether you pay your debts, which substitutes for the credit files and appraisals a bank would use, and which is precisely what an excluded borrower cannot supply.
-3. **The collateral problem is smaller.** The association lends against a house it will happily take back and re-lend on inside its own community, so a lender's discount on neighbourhood property matters less.
+3. **The collateral problem is smaller.** The association lends against a house it will happily take back and re-lend on inside its own community, so a lender's discount on neighborhood property matters less.
 
 **A worked example.** The **Berean Building and Loan Association** was founded in **1888** at the Berean Presbyterian Church in Philadelphia by the **Reverend Matthew Anderson**. **By 1909 it managed more than 150,000 dollars of stock on behalf of 700 members**, it helped **more than 300 families** buy homes, it had an integrated board, and it came through the Depression (Presbyterian Historical Society, n.d.).
 
@@ -1396,7 +1396,7 @@ A bank is a different animal in three specific ways, and each difference has a c
 
 ## The national picture, and how to check it yourself
 
-The figure you will see quoted everywhere is that **134 Black-owned banks were organised between 1888 and 1934**, a count that traces back to **Abram L. Harris's 1936 study *The Negro as Capitalist***. **Cite Harris, not the blog that repeated him**, and note that a count of banks organised is not a count of banks operating at any one moment.
+The figure you will see quoted everywhere is that **134 Black-owned banks were organized between 1888 and 1934**, a count that traces back to **Abram L. Harris's 1936 study *The Negro as Capitalist***. **Cite Harris, not the blog that repeated him**, and note that a count of banks organized is not a count of banks operating at any one moment.
 
 **For the present, do not take a number from a secondary source at all.** **The FDIC publishes a quarterly list of Minority Depository Institutions with an ownership category for each**, and that list is the authority (Federal Deposit Insurance Corporation, n.d.). **Download the current quarter and count it yourself.** Any number you read in an article is a snapshot of the quarter its author downloaded, and this sector consolidates: **the July 2026 announcement that Optus Financial and M&F Bancorp intend to merge would, if it closes, reduce the count by one and produce the largest institution in the category** (Banking Dive, 2026).
 
@@ -1447,8 +1447,8 @@ The figure you will see quoted everywhere is that **134 Black-owned banks were o
 - **Who says it?** Popular articles, business blogs and some educational material.
 - **What is the citation?** Overwhelmingly "historians estimate", "reports suggest", or nothing at all.
 - **Is there a primary source?** **No primary source is offered by any of the popular versions.**
-- **Do the versions agree?** **They differ by a factor of five.** A figure quoted as 19 in one place and 100 in another is not a measurement, it is a rumour with a number attached.
-- **Is it even measurable?** Money velocity within a neighbourhood is extraordinarily hard to measure in a modern economy with electronic payments. **In 1921, with cash, no serious method existed.**
+- **Do the versions agree?** **They differ by a factor of five.** A figure quoted as 19 in one place and 100 in another is not a measurement, it is a rumor with a number attached.
+- **Is it even measurable?** Money velocity within a neighborhood is extraordinarily hard to measure in a modern economy with electronic payments. **In 1921, with cash, no serious method existed.**
 
 **Verdict: cut it. Do not soften it to "some sources say." Do not use it with a hedge.** A number with no source, no method and a fivefold spread should not appear in your writing at all.
 
@@ -1523,7 +1523,7 @@ Use this on any claim, in any subject.
         },
         {
           prompt: "Where does the figure of 134 Black-owned banks organised between 1888 and 1934 come from, and what is its limit?",
-          answer: "Abram L. Harris's 1936 study The Negro as Capitalist. Cite Harris rather than the article that repeated him, and note that banks organised is not the same as banks operating at any one moment.",
+          answer: "Abram L. Harris's 1936 study The Negro as Capitalist. Cite Harris rather than the article that repeated him, and note that banks organized is not the same as banks operating at any one moment.",
         },
         {
           prompt: "How should you establish how many Black-owned banks exist today?",
@@ -1570,7 +1570,7 @@ The same record, in full, with every entry sourced elsewhere in the course:
 | **1888 to 1889** | The True Reformers bank is chartered March 2, 1888 and opens April 3, 1889 in Richmond | |
 | **1899 to 1910** | North Carolina Mutual grows from under 1,000 dollars of business to 250,000 dollars of income, with 200,000 members | |
 | **1903 to 1905** | Walker charters St. Luke Penny Savings on July 28, 1903 and opens the Saint Luke Emporium in April 1905 | Georgia raises capital requirements, wrecking small mutual aid associations, which is why Herndon can buy one in 1905 |
-| **1905 to 1911** | Atlanta Mutual grows from 5,000 dollars of assets | The Saint Luke Emporium closes in 1911, under organised white retailer opposition and Black consumer reluctance |
+| **1905 to 1911** | Atlanta Mutual grows from 5,000 dollars of assets | The Saint Luke Emporium closes in 1911, under organized white retailer opposition and Black consumer reluctance |
 | **1906 to 1907** | Gurley buys 40 acres in Tulsa and sells to Black buyers; Mechanics and Farmers is chartered February 25, 1907 | Oklahoma's Senate Bill One, the state's first legislative act, formalises segregation |
 | **1921** | Greenwood holds 108 businesses, 33 professionals, 24 craftspeople and 26 service workers; Citizens Trust opens on Auburn Avenue August 16; Binga takes a state charter | Greenwood is destroyed; roughly 1,400 suits for over 4 million dollars follow, and insurers decline under riot clauses |
 | **1922** | Atlanta Life reaches legal reserve status with over 400,000 dollars of assets; Overton commissions his building on South State Street | |
@@ -1620,7 +1620,7 @@ The same record, in full, with every entry sourced elsewhere in the course:
       recallContent: [
         {
           prompt: "Why is the Greenwood dollar-circulation figure cut rather than hedged?",
-          answer: "No primary source is offered by any popular version, the versions differ by a factor of five, and neighbourhood money velocity was not measurable by any method available in 1921. A number with no source, no method and a fivefold spread should not appear at all.",
+          answer: "No primary source is offered by any popular version, the versions differ by a factor of five, and neighborhood money velocity was not measurable by any method available in 1921. A number with no source, no method and a fivefold spread should not appear at all.",
         },
         {
           prompt: "What do you lose by cutting it, and what replaces it?",
@@ -1656,7 +1656,7 @@ The same record, in full, with every entry sourced elsewhere in the course:
 
 **Blue: the five districts.** Each marker's detail carries what the district held, in its own numbers, and the date on which it was designated if it was.
 
-**Amber: two places that show the network was wider than five cities.** Philadelphia carries the building and loan association, which is the capital instrument most often left out of this story. Washington carries both the bank that opened first in 1888 and the five-storey building a Richmond fraternal order put up there in 1902. **Amber is here to stop you reading these five districts as five isolated local scenes.** They were nodes.
+**Amber: two places that show the network was wider than five cities.** Philadelphia carries the building and loan association, which is the capital instrument most often left out of this story. Washington carries both the bank that opened first in 1888 and the five-story building a Richmond fraternal order put up there in 1902. **Amber is here to stop you reading these five districts as five isolated local scenes.** They were nodes.
 
 **What this map cannot show.** **Absence.** Every marker exists because something was recorded and somebody later wrote it up. **How many districts are not on this map is a question this course cannot answer and will not guess at**, and the honest version of that sentence is that the five here are the five that have been written about most, which is a fact about scholarship as well as about business.
 
@@ -1733,7 +1733,7 @@ The same record, in full, with every entry sourced elsewhere in the course:
             title: "Washington, D.C.: Capital Savings Bank and the True Reformer Building",
             color: "#b45309",
             description:
-              "Two reasons this city belongs on a map of Black business districts. The Capital Savings Bank of Washington opened on October 17, 1888, which is why Richmond's True Reformers bank is described as the first chartered rather than the first to open. And in 1902 that same Richmond fraternal order completed a five-storey building here, which tells you the order thought of itself as operating in more than one city. Note the crowding: this marker, Richmond and Philadelphia sit closer together than this map can cleanly separate, which is a limitation the lesson names rather than hides.",
+              "Two reasons this city belongs on a map of Black business districts. The Capital Savings Bank of Washington opened on October 17, 1888, which is why Richmond's True Reformers bank is described as the first chartered rather than the first to open. And in 1902 that same Richmond fraternal order completed a five-story building here, which tells you the order thought of itself as operating in more than one city. Note the crowding: this marker, Richmond and Philadelphia sit closer together than this map can cleanly separate, which is a limitation the lesson names rather than hides.",
           },
         ],
       },
@@ -1756,7 +1756,7 @@ The same record, in full, with every entry sourced elsewhere in the course:
               "They relied on philanthropy from outside the community",
             ],
             correctIndex: 1,
-            explanation: "Organise a society, collect small regular payments from many people, accumulate a reserve, get it chartered and regulated, then lend it to yourselves.",
+            explanation: "Organize a society, collect small regular payments from many people, accumulate a reserve, get it chartered and regulated, then lend it to yourselves.",
             sourceLessonSlug: "wtb-money-problem",
           },
           {
@@ -1792,7 +1792,7 @@ The same record, in full, with every entry sourced elsewhere in the course:
               "A lack of demand for loans among the people who live and work inside its own market area",
             ],
             correctIndex: 2,
-            explanation: "Concentrated risk is inherent to a neighbourhood bank, and no amount of effort removes it.",
+            explanation: "Concentrated risk is inherent to a neighborhood bank, and no amount of effort removes it.",
             sourceLessonSlug: "wtb-money-problem",
           },
           {
@@ -1876,7 +1876,7 @@ The same record, in full, with every entry sourced elsewhere in the course:
               "The Federal Reserve's Partnership for Progress minority banking timeline",
             ],
             correctIndex: 0,
-            explanation: "Cite Harris rather than the article that repeated him, and note that banks organised is not banks operating at any one moment.",
+            explanation: "Cite Harris rather than the article that repeated him, and note that banks organized is not banks operating at any one moment.",
             sourceLessonSlug: "wtb-building-and-loan",
           },
           {
@@ -1995,7 +1995,7 @@ The same record, in full, with every entry sourced elsewhere in the course:
 
 ## What to go see, and how to behave when you get there
 
-**All five districts are places you can visit, and four of the five are functioning neighbourhoods with residents.**
+**All five districts are places you can visit, and four of the five are functioning neighborhoods with residents.**
 
 - **Durham:** Parrish Street, the M&F building, marker G-116, and the Hayti area south of downtown.
 - **Richmond:** Jackson Ward, its cast-iron porches, Second Street, and the **Maggie L. Walker National Historic Site**, operated by the National Park Service (National Park Service, n.d.-b).
@@ -2004,9 +2004,9 @@ The same record, in full, with every entry sourced elsewhere in the course:
 - **Chicago:** the nine designated properties listed above, which can be walked in an afternoon.
 
 **Four rules for visiting, and they are not optional.**
-1. **These are neighbourhoods, not exhibits.** People live in them. Do not photograph into windows and do not knock uninvited.
-2. **Read what the community publishes about itself first.** Neighbourhood associations, heritage centres and business districts all publish, and their account is the one to start from.
-3. **Do not narrate a place as ruined.** A street with vacancies on it is a street with a market condition, and a resident hearing you call their neighbourhood a ruin will correctly conclude you are a tourist.
+1. **These are neighborhoods, not exhibits.** People live in them. Do not photograph into windows and do not knock uninvited.
+2. **Read what the community publishes about itself first.** Neighborhood associations, heritage centers and business districts all publish, and their account is the one to start from.
+3. **Do not narrate a place as ruined.** A street with vacancies on it is a street with a market condition, and a resident hearing you call their neighborhood a ruin will correctly conclude you are a tourist.
 4. **Name what is operating.** If a firm on that street is open today, that is the most interesting fact available to you, and it is the one visitors most reliably miss.
 
 ## Sources
@@ -2033,7 +2033,7 @@ The same record, in full, with every entry sourced elsewhere in the course:
         },
         {
           prompt: "Why are Philadelphia and Washington on the map at all?",
-          answer: "Philadelphia carries the Berean Building and Loan Association, the capital instrument most often left out. Washington carries the Capital Savings Bank that opened first in 1888 and the five-storey building a Richmond fraternal order put up there in 1902. They stop you reading the five districts as isolated local scenes.",
+          answer: "Philadelphia carries the Berean Building and Loan Association, the capital instrument most often left out. Washington carries the Capital Savings Bank that opened first in 1888 and the five-story building a Richmond fraternal order put up there in 1902. They stop you reading the five districts as isolated local scenes.",
         },
         {
           prompt: "What must you never write between an achievement and a harm?",
@@ -2099,7 +2099,7 @@ Use Section 4's five strategies as your checklist: **savings, family, retained p
 
 1. **Lead with a specific.** A charter date, a line in a directory, a dollar figure. Not a mood.
 2. **Give every figure an owner, a date and a scope.** Every single one.
-3. **Name the instrument.** Not "they raised money" but "they organised a mutual benefit association and chartered a bank against its reserves", if you can source it.
+3. **Name the instrument.** Not "they raised money" but "they organized a mutual benefit association and chartered a bank against its reserves", if you can source it.
 4. **Attribute an argument as an argument.** Du Bois's explanation of Durham is a case being made in 1912. **Quote it and engage it. Do not launder it into your own narration.**
 5. **Use the present tense for the present.** If the firm or its successor operates today, that is present-tense material.
 6. **One paragraph, minimum, on what you could not establish.** Required, not optional.
@@ -2143,7 +2143,7 @@ A short, checkable piece in which every sentence is either something you read in
         },
         {
           prompt: "Give the four rules for visiting one of these districts.",
-          answer: "They are neighbourhoods and not exhibits, so no photographing into windows and no uninvited knocking. Read what the community publishes about itself first. Do not narrate the place as ruined. And name what is operating today.",
+          answer: "They are neighborhoods and not exhibits, so no photographing into windows and no uninvited knocking. Read what the community publishes about itself first. Do not narrate the place as ruined. And name what is operating today.",
         },
         {
           prompt: "Name four of the nine properties in the Black Metropolis-Bronzeville District.",
@@ -2172,7 +2172,7 @@ A short, checkable piece in which every sentence is either something you read in
 ## What this course deliberately did not cover, and why
 
 - **The legal instruments of clearance.** Blight designation, eminent domain, highway alignment, urban renewal areas and university land assembly are named here and taught nowhere in this course. **They are the subject of the route series**, and the Indiana Avenue course teaches them one at a time with the statute attached. **Splitting them out is deliberate: putting the instruments in this course would have turned a course about building into a course about demolition, which is the failure mode the whole plan was written to avoid.**
-- **The 1921 Tulsa Race Massacre.** Named, dated, sourced to the Oklahoma Commission's report of February 28, 2001, and not summarised. **A paragraph would be an insult to the scholarship.**
+- **The 1921 Tulsa Race Massacre.** Named, dated, sourced to the Oklahoma Commission's report of February 28, 2001, and not summarized. **A paragraph would be an insult to the scholarship.**
 - **Every other district.** There were many more than five. **The five here are the five with the most written about them**, which is a fact about scholarship and not about business.
 - **Black business outside districts.** Farms, funeral homes, contractors and professional practices existed everywhere, including in places with no district at all. **A district is one form of Black enterprise, not the form.**
 - **Women's businesses as a subject in their own right.** Maggie Walker is here because she chartered a bank. **The beauty industry, boarding houses, restaurants and dressmaking were overwhelmingly women's businesses and this course names them only in passing.** That is a real gap and it is the most obvious next course.

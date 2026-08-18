@@ -82,7 +82,7 @@ Second, and this is the through-line of the entire course: **Sweden is not Denma
       section: "Section 1 · The wage floor that isn't a law",
       body: `If you have taken **The History of Unions: America and the World**, the anchor of this track, you already own the tool. It ends by handing you four questions you can ask of any country:
 
-1. **Who is allowed to organise?**
+1. **Who is allowed to organize?**
 2. **Who is excluded?**
 3. **Who bargains with whom, and at what level?**
 4. **What happens to you if you try?**
@@ -91,17 +91,17 @@ Second, and this is the through-line of the entire course: **Sweden is not Denma
 
 Here are Sweden's and Denmark's answers in advance. Everything after this is the detail.
 
-**Q1, Who is allowed to organise?** Essentially everyone, easily, and with very high take-up. This is where the startling number lives. In the early 2020s, trade-union density, the share of workers who are union *members*, was around **65% in Sweden** and around **67% in Denmark** (OECD/AIAS ICTWSS, figures for roughly 2019-2022). Compare that to **10.0%** in the United States in 2025 (Bureau of Labor Statistics [BLS], 2026). But hold the applause: "everyone may organise" is *also* true in plenty of countries stuck at 10% density, so the freedom to organise is not what explains the number. Section 2 finds the thing that does, and it is a piece of plumbing, not a national personality trait.
+**Q1, Who is allowed to organize?** Essentially everyone, easily, and with very high take-up. This is where the startling number lives. In the early 2020s, trade-union density, the share of workers who are union *members*, was around **65% in Sweden** and around **67% in Denmark** (OECD/AIAS ICTWSS, figures for roughly 2019-2022). Compare that to **10.0%** in the United States in 2025 (Bureau of Labor Statistics [BLS], 2026). But hold the applause: "everyone may organize" is *also* true in plenty of countries stuck at 10% density, so the freedom to organize is not what explains the number. Section 2 finds the thing that does, and it is a piece of plumbing, not a national personality trait.
 
 **Q2, Who is excluded?** Fewer people than in the U.S., but the exclusions are real and you should know them before anyone sells you a fairy tale. The collective-agreement floor only protects you if there *is* an agreement covering your workplace, and coverage, while very high (Sweden around **88%**, Denmark around **82%**, OECD/AIAS, ~2018-2019), is not universal. The people outside it are disproportionately **migrant workers, platform/gig workers, and employees of firms that never signed an agreement**, and because the floor is a contract rather than a law, being outside the contract can mean being outside the floor entirely. That is Section 6, and it is the honest heart of the course.
 
 **Q3, Who bargains with whom, and at what level?** This is the question the Nordics answer differently from America, and it has two parts:
 - **The level:** bargaining is largely **sectoral** (Sweden) and a mix of sectoral and cross-sectoral (Denmark), a union federation and an employers' federation set terms for a whole industry at once, which is why coverage far exceeds any single workplace vote.
-- **The referee:** there mostly *isn't* one. Where the U.S. has the National Labor Relations Board and Germany has a dense statute, Sweden and Denmark run on **self-regulation**, the two sides govern the labour market by agreement, and the state stays out by tradition. Section 3 tells you the two founding treaties that set that up: **Saltsjöbaden (Sweden, 1938)** and the **September Compromise (Denmark, 1899)**.
+- **The referee:** there mostly *isn't* one. Where the U.S. has the National Labor Relations Board and Germany has a dense statute, Sweden and Denmark run on **self-regulation**, the two sides govern the labor market by agreement, and the state stays out by tradition. Section 3 tells you the two founding treaties that set that up: **Saltsjöbaden (Sweden, 1938)** and the **September Compromise (Denmark, 1899)**.
 
 **Q4, What happens to you if you try?** Broadly, you are protected, and, unusually, your *side* is allowed to fight hard. The weapon that American law bans, the **sympathy strike**, is legal here, and Section 4 makes that the sharpest comparison in the whole track. Section 5 then watches it used, live, against a company that won't sign.
 
-:::reveal Sweden's and Denmark's union DENSITY is around two-thirds. Why does "everyone is allowed to organise" NOT explain that number? ||| Because the freedom to organise is also true in many countries stuck near 10% density (the U.S. among them). Legal freedom to join a union is common; two-thirds actually joining is rare. So the high number must be explained by something other than the mere legal right, a specific institution that makes joining the default. That institution is the Ghent system (Section 2).
+:::reveal Sweden's and Denmark's union DENSITY is around two-thirds. Why does "everyone is allowed to organise" NOT explain that number? ||| Because the freedom to organize is also true in many countries stuck near 10% density (the U.S. among them). Legal freedom to join a union is common; two-thirds actually joining is rare. So the high number must be explained by something other than the mere legal right, a specific institution that makes joining the default. That institution is the Ghent system (Section 2).
 
 ## Sources
 - OECD/AIAS. (n.d.). *ICTWSS database — country notes: Sweden; Denmark; Norway*. Organisation for Economic Co-operation and Development. https://www.oecd.org/en/data/datasets/oecd-aias-ictwss-database.html
@@ -186,14 +186,14 @@ Here are Sweden's and Denmark's answers in advance. Everything after this is the
           {
             prompt: "Why does 'everyone is allowed to organise' fail to explain Sweden's and Denmark's ~two-thirds density?",
             options: [
-              "The legal right to organise is also common in countries near 10% density, so it cannot explain two-thirds",
+              "The legal right to organize is also common in countries near 10% density, so it cannot explain two-thirds",
               "Because measured union density in Sweden and Denmark is actually far lower, closer to one-third",
               "Because Swedish and Danish law effectively compels most workers to join a union on taking a job",
-              "Because in practice only migrant and public-sector employees are actually permitted to organise there",
+              "Because in practice only migrant and public-sector employees are actually permitted to organize there",
             ],
             correctIndex: 0,
             explanation:
-              "The legal right to organise is nearly universal and does not predict high membership. Something else makes joining the default, the Ghent system.",
+              "The legal right to organize is nearly universal and does not predict high membership. Something else makes joining the default, the Ghent system.",
             sourceLessonSlug: "nordic-four-questions",
           },
           {
@@ -225,8 +225,8 @@ Here are Sweden's and Denmark's answers in advance. Everything after this is the
           {
             prompt: "What does 'self-regulation' mean for Q3 (the referee) in Sweden and Denmark?",
             options: [
-              "A government board modelled on the US NLRB certifies every union and supervises each bargaining round",
-              "There is largely no state referee; the two sides govern the labour market by agreement, not statute",
+              "A government board modeled on the US NLRB certifies every union and supervises each bargaining round",
+              "There is largely no state referee; the two sides govern the labor market by agreement, not statute",
               "The EU sets all wages centrally, and both countries simply administer the figure fixed in Brussels",
               "Employers' confederations alone write the rules, and unions merely administer them without bargaining",
             ],
@@ -238,10 +238,10 @@ Here are Sweden's and Denmark's answers in advance. Everything after this is the
           {
             prompt: "The course repeatedly insists on one methodological habit about Sweden and Denmark. Which?",
             options: [
-              "Treat Sweden and Denmark as one interchangeable 'Scandinavia' with essentially a single labour model",
+              "Treat Sweden and Denmark as one interchangeable 'Scandinavia' with essentially a single labor model",
               "Keep them distinct: they run unemployment funds differently and made their founding peace decades apart",
-              "Assume Denmark always leads on labour reform and Sweden reliably copies its agreements a few years later",
-              "Ignore Norway entirely, since it shares neither the culture nor the welfare state of its two neighbours",
+              "Assume Denmark always leads on labor reform and Sweden reliably copies its agreements a few years later",
+              "Ignore Norway entirely, since it shares neither the culture nor the welfare state of its two neighbors",
             ],
             correctIndex: 1,
             explanation:
@@ -251,7 +251,7 @@ Here are Sweden's and Denmark's answers in advance. Everything after this is the
           {
             prompt: "Which of the four anchor questions do Sweden and Denmark answer most distinctively on the WEAPONS side (Q4)?",
             options: [
-              "They ban all strikes outright and settle every labour dispute through compulsory state arbitration",
+              "They ban all strikes outright and settle every labor dispute through compulsory state arbitration",
               "They permit the sympathy strike, a weapon US law bans, so a dispute can spread to neutral firms",
               "They require formal government approval and a lengthy cooling-off period before any strike begins",
               "They allow only individual workplace grievances, never collective or sympathy industrial action",
@@ -266,8 +266,8 @@ Here are Sweden's and Denmark's answers in advance. Everything after this is the
             options: [
               "Because Norway has the highest union density anywhere in the world, far above Sweden and Denmark",
               "Because Norway is a Nordic country WITHOUT the Ghent system, so its lower density isolates Ghent's effect",
-              "Because Norway, unlike its Nordic neighbours, does set a statutory national minimum wage by law",
-              "Because Norway sits outside Scandinavia and so falls outside the Nordic labour model altogether",
+              "Because Norway, unlike its Nordic neighbors, does set a statutory national minimum wage by law",
+              "Because Norway sits outside Scandinavia and so falls outside the Nordic labor model altogether",
             ],
             correctIndex: 1,
             explanation:
@@ -297,7 +297,7 @@ Here are Sweden's and Denmark's answers in advance. Everything after this is the
             ],
             correctIndex: 1,
             explanation:
-              "Headlines round off. The honest version notes edge cases while keeping the real, load-bearing fact front and centre.",
+              "Headlines round off. The honest version notes edge cases while keeping the real, load-bearing fact front and center.",
             sourceLessonSlug: "nordic-no-minimum-wage",
           },
           {
@@ -306,7 +306,7 @@ Here are Sweden's and Denmark's answers in advance. Everything after this is the
               "A contract the workers themselves negotiated, sector by sector, and can enforce",
               "Law passed by a legislature, so the whole fight happens in a legislature",
               "A decision handed down by the relevant employers' association for that industry",
-              "A binding ruling issued by a specialist labour court, not the ordinary courts",
+              "A binding ruling issued by a specialist labor court, not the ordinary courts",
             ],
             correctIndex: 1,
             explanation:
@@ -330,9 +330,9 @@ Here is the mechanism, and it is almost embarrassingly simple.
 
 That is the whole trick. **The union is bundled with a service people actually want**, income protection against unemployment, and the bundling makes membership the norm rather than the exception.
 
-Compare the American worker's decision. In the U.S., joining a union is a *separate, deliberate, often risky* act: there is usually no union at your workplace, you would have to help *build* one, and (as the anchor course's Question 4 lessons show) you can be fired for trying. In Ghent-system Sweden or Denmark, membership is not a brave act. **It is what you tick on the form when you sort out your unemployment insurance.** Same freedom to organise on paper; a completely different default in practice.
+Compare the American worker's decision. In the U.S., joining a union is a *separate, deliberate, often risky* act: there is usually no union at your workplace, you would have to help *build* one, and (as the anchor course's Question 4 lessons show) you can be fired for trying. In Ghent-system Sweden or Denmark, membership is not a brave act. **It is what you tick on the form when you sort out your unemployment insurance.** Same freedom to organize on paper; a completely different default in practice.
 
-**This is why the anchor course says density in these countries is "not primarily a story about how much workers love unions. It is a story about who runs the unemployment system."** Institutions shape behaviour. If you change *who administers the unemployment cheque*, you change the union numbers, and Section 2's next two lessons prove that with, respectively, a country that never adopted Ghent (Norway) and a year Sweden partly dismantled it (2007).
+**This is why the anchor course says density in these countries is "not primarily a story about how much workers love unions. It is a story about who runs the unemployment system."** Institutions shape behavior. If you change *who administers the unemployment cheque*, you change the union numbers, and Section 2's next two lessons prove that with, respectively, a country that never adopted Ghent (Norway) and a year Sweden partly dismantled it (2007).
 
 **Three honest complications, because the simple story is never the whole story.**
 
@@ -355,7 +355,7 @@ Compare the American worker's decision. In the U.S., joining a union is a *separ
         {
           prompt: "What is the 'referee' difference between the US/German systems and the Nordic one (Q3)?",
           answer:
-            "The U.S. has the NLRB and Germany has a dense statute; Sweden and Denmark largely have no state referee. The two sides self-regulate the labour market by agreement, and the state stays out by tradition, set up by Saltsjöbaden (1938) and the September Compromise (1899).",
+            "The U.S. has the NLRB and Germany has a dense statute; Sweden and Denmark largely have no state referee. The two sides self-regulate the labor market by agreement, and the state stays out by tradition, set up by Saltsjöbaden (1938) and the September Compromise (1899).",
         },
       ],
     },
@@ -363,11 +363,11 @@ Compare the American worker's decision. In the U.S., joining a union is a *separ
       slug: "nordic-norway-experiment",
       title: "4 · Norway: the Nordic country that skipped Ghent",
       section: "Section 2 · The plumbing, the Ghent system",
-      body: `If the Ghent system really is the lever, then a Nordic country *without* it should have visibly lower density, same welfare-state culture, same egalitarian reputation, same neighbourhood, but a different unemployment-insurance plumbing. That country exists. It is **Norway**.
+      body: `If the Ghent system really is the lever, then a Nordic country *without* it should have visibly lower density, same welfare-state culture, same egalitarian reputation, same neighborhood, but a different unemployment-insurance plumbing. That country exists. It is **Norway**.
 
 **Norway does not have a Ghent system.** Its unemployment insurance is a public, state-run scheme, not administered through union-linked funds. And its union density sits at around **50%** in the early 2020s (OECD/AIAS ICTWSS), high by world standards, far above the U.S. **10.0%** (2025), but clearly and consistently **below** Sweden's ~65% and Denmark's ~67%.
 
-Line them up, because this is as close to a controlled experiment as comparative labour policy ever gets:
+Line them up, because this is as close to a controlled experiment as comparative labor policy ever gets:
 
 | Country | Ghent system? | Union density (early 2020s) |
 | --- | --- | --- |
@@ -380,7 +380,7 @@ Three countries that are otherwise about as similar as three countries can be, c
 **Now the honesty, because a course that oversells its natural experiment is doing the thing it warns you against.**
 
 - **Norway's ~50% is still high**, and Norwegian bargaining coverage is also high (~65-70%, OECD/AIAS). So Ghent is not the *only* thing holding Nordic density up, strong sectoral bargaining and a deep norm of membership do real work in all three countries. The claim is that Ghent adds roughly another 15 points on top, not that it explains everything.
-- **This is observational, not a laboratory.** You cannot randomly assign a country to have Ghent. Other differences between Norway and its neighbours exist, and a careful person says "the evidence is *consistent with* a large Ghent effect," not "this proves it." The next lesson is stronger evidence precisely because it watches *one country change its own plumbing* and measures what happened.
+- **This is observational, not a laboratory.** You cannot randomly assign a country to have Ghent. Other differences between Norway and its neighbors exist, and a careful person says "the evidence is *consistent with* a large Ghent effect," not "this proves it." The next lesson is stronger evidence precisely because it watches *one country change its own plumbing* and measures what happened.
 
 Still: hold the table in your head. When someone tells you high union membership is a matter of national character, the right response is a question, *what does that country's unemployment system look like?* Norway's answer is the reason the question is a good one.
 
@@ -408,7 +408,7 @@ Still: hold the table in your head. When someone tells you high union membership
       section: "Section 2 · The plumbing, the Ghent system",
       body: `The Norway comparison is suggestive. This lesson is the closer, because instead of comparing two countries it watches **one country change its own plumbing and measures the result**, and the result is the strongest single piece of evidence for the Ghent effect anywhere.
 
-**What happened.** In January 2007, a new centre-right government in Sweden (the Alliance, under Prime Minister Fredrik Reinfeldt) reformed the *a-kassa*. The core change was to the **membership fees**: fees were raised substantially and, crucially, **differentiated**, funds in sectors with higher unemployment now charged their members more. For workers in some industries the monthly cost of belonging to their unemployment fund jumped sharply, more or less overnight.
+**What happened.** In January 2007, a new center-right government in Sweden (the Alliance, under Prime Minister Fredrik Reinfeldt) reformed the *a-kassa*. The core change was to the **membership fees**: fees were raised substantially and, crucially, **differentiated**, funds in sectors with higher unemployment now charged their members more. For workers in some industries the monthly cost of belonging to their unemployment fund jumped sharply, more or less overnight.
 
 Remember what the a-kassa is bundled with. If the price of the unemployment fund spikes, some people do the math and drop the fund, and because the fund is the thing that made union membership the default, **dropping the fund loosens the tie to the union.** So the theory makes a clean prediction: raise a-kassa fees, and union density should fall.
 
@@ -462,14 +462,14 @@ Sit with what that gives you. This is not two different countries with a hundred
           {
             prompt: "Why does the same legal 'freedom to organise' produce ~65% density in Sweden but ~10% in the US?",
             options: [
-              "Swedish law directly compels workers to join a recognised union as a condition of most employment",
+              "Swedish law directly compels workers to join a recognized union as a condition of most employment",
               "In Sweden joining is ticked when you insure against unemployment; in the US it is a separate, risky act",
               "US federal law legally bars most private-sector workers from belonging to any union of any kind",
               "Sweden simply counts its union members far more generously than the United States counts its own",
             ],
             correctIndex: 1,
             explanation:
-              "Ghent makes membership the path of least resistance. American organising is a brave, separate act with no bundled service attached.",
+              "Ghent makes membership the path of least resistance. American organizing is a brave, separate act with no bundled service attached.",
             sourceLessonSlug: "nordic-ghent-system",
           },
           {
@@ -477,12 +477,12 @@ Sit with what that gives you. This is not two different countries with a hundred
             options: [
               "Explain union membership numbers by each country's national character",
               "Look for the plumbing (the institutions) before reaching for the culture",
-              "Assume all the Nordic countries are essentially identical in labour terms",
+              "Assume all the Nordic countries are essentially identical in labor terms",
               "Ignore unemployment insurance entirely and study only the wage statutes",
             ],
             correctIndex: 1,
             explanation:
-              "Institutions shape behaviour. Change who administers the unemployment cheque and you change the union numbers.",
+              "Institutions shape behavior. Change who administers the unemployment cheque and you change the union numbers.",
             sourceLessonSlug: "nordic-ghent-system",
           },
           {
@@ -496,8 +496,8 @@ Sit with what that gives you. This is not two different countries with a hundred
           {
             prompt: "How does Norway function as a natural experiment for the Ghent effect?",
             options: [
-              "It has the highest union density in the entire world despite having essentially no organised unions",
-              "It is Nordic with a strong welfare state but no Ghent system, and its ~50% density sits below its neighbours'",
+              "It has the highest union density in the entire world despite having essentially no organized unions",
+              "It is Nordic with a strong welfare state but no Ghent system, and its ~50% density sits below its neighbors'",
               "It sets a statutory national minimum wage and has almost no sectoral collective bargaining at all",
               "It has banned unemployment insurance altogether, which is why its union density is comparatively low",
             ],
@@ -640,17 +640,17 @@ Sit with what that gives you. This is not two different countries with a hundred
       slug: "nordic-saltsjobaden",
       title: "6 · Sweden, 1938: the state agrees to stay out (Saltsjöbaden)",
       section: "Section 3 · Self-regulation, the state that stepped back by agreement",
-      body: `You now know *that* Swedish wages are set by contract rather than by law (Section 1) and *why* Swedish unions are strong enough to do the setting (Section 2). This section answers the remaining question: **how did a country decide, on purpose, that the government would stay out of the labour market?** In Sweden, the answer has a place-name attached: **Saltsjöbaden**.
+      body: `You now know *that* Swedish wages are set by contract rather than by law (Section 1) and *why* Swedish unions are strong enough to do the setting (Section 2). This section answers the remaining question: **how did a country decide, on purpose, that the government would stay out of the labor market?** In Sweden, the answer has a place-name attached: **Saltsjöbaden**.
 
 **The background is not gentle.** The 1920s and early 1930s in Sweden were years of hard, sometimes violent industrial conflict. The low point came in May **1931** at **Ådalen**, where soldiers opened fire on a workers' demonstration and **five people were killed** (the Ådalen shootings). Sweden in that decade had, relative to its size, some of the highest strike and lockout figures in the industrialised world. This is important context, because the calm, consensual "Swedish model" people admire today was not a national temperament, **it was a settlement that hard conflict forced.**
 
-**The political pressure.** From 1932 the Social Democrats governed Sweden, and their preference was clear: they would rather the two sides of industry **regulate themselves** than have the state legislate the details of labour relations, but if the parties could not keep the peace, the government was prepared to step in with laws. That threat of legislation hung over the negotiating table. The union confederation (**LO**, *Landsorganisationen*) and the employers' confederation (**SAF**, *Svenska Arbetsgivareföreningen*) each preferred to keep control of their own affairs rather than hand the rulebook to politicians.
+**The political pressure.** From 1932 the Social Democrats governed Sweden, and their preference was clear: they would rather the two sides of industry **regulate themselves** than have the state legislate the details of labor relations, but if the parties could not keep the peace, the government was prepared to step in with laws. That threat of legislation hung over the negotiating table. The union confederation (**LO**, *Landsorganisationen*) and the employers' confederation (**SAF**, *Svenska Arbetsgivareföreningen*) each preferred to keep control of their own affairs rather than hand the rulebook to politicians.
 
 **The deal.** In December **1938**, LO and SAF signed the **Basic Agreement** (*Saltsjöbadsavtalet* / *Huvudavtalet*), named after the seaside resort of Saltsjöbaden where they negotiated it. It was not a wage deal. It was a **treaty about how to have disputes**: procedures for negotiation, rules for handling conflicts, limits on industrial action that would harm third parties or essential functions, and a shared commitment to settle things between themselves rather than through the state.
 
-The phrase Swedes use for what came out of it is **"the spirit of Saltsjöbaden"** (*Saltsjöbadsandan*), a norm of pragmatic, businesslike cooperation between organised labour and organised capital, both strong, both disciplined, both preferring the negotiating table to the legislature *and* to the street.
+The phrase Swedes use for what came out of it is **"the spirit of Saltsjöbaden"** (*Saltsjöbadsandan*), a norm of pragmatic, businesslike cooperation between organized labor and organized capital, both strong, both disciplined, both preferring the negotiating table to the legislature *and* to the street.
 
-**Here is why this matters for everything else in the course.** The absence of a minimum-wage law, the absence of an American-style state referee, the whole "self-regulation" answer to Question 3, none of that is a gap where a law should be. **It is a deliberately maintained space, created by an agreement between two organised sides who both decided they would rather govern the labour market themselves.** Self-regulation only works if *both* sides are strong and organised enough to make and keep bargains. Weaken either side badly enough, say, let union density erode (Section 6), and the space that self-regulation fills starts to look like a vacuum. Which is when someone reaches for a law.
+**Here is why this matters for everything else in the course.** The absence of a minimum-wage law, the absence of an American-style state referee, the whole "self-regulation" answer to Question 3, none of that is a gap where a law should be. **It is a deliberately maintained space, created by an agreement between two organized sides who both decided they would rather govern the labor market themselves.** Self-regulation only works if *both* sides are strong and organized enough to make and keep bargains. Weaken either side badly enough, say, let union density erode (Section 6), and the space that self-regulation fills starts to look like a vacuum. Which is when someone reaches for a law.
 
 :::reveal What was the Saltsjöbaden Basic Agreement (1938), and why does the course call the "Swedish model" a settlement rather than a national temperament? ||| It was a 1938 agreement between the union confederation LO and the employers' confederation SAF setting the rules for how to conduct and resolve industrial disputes, the foundation of Swedish self-regulation ("the spirit of Saltsjöbaden"). The course calls it a settlement because it followed a decade of intense, sometimes deadly conflict (the Ådalen shootings, 1931) and a government threat to legislate, the consensus was forced by conflict and a shared preference to keep the state out, not inherited from a calm national character.
 
@@ -673,22 +673,22 @@ The phrase Swedes use for what came out of it is **"the spirit of Saltsjöbaden"
     },
     {
       slug: "nordic-september-compromise",
-      title: "7 · Denmark, 1899: the constitution of the labour market",
+      title: "7 · Denmark, 1899: the constitution of the labor market",
       section: "Section 3 · Self-regulation, the state that stepped back by agreement",
       body: `Denmark got to self-regulation the same way Sweden did, through a founding agreement after a brutal fight, but it got there **almost forty years earlier**, and that head start is one of the real differences between the two countries this course keeps insisting on.
 
-**The fight.** In **1899**, Denmark saw one of the largest labour conflicts, relative to the size of the country, in European history: the **Great Lockout of 1899** (*Storlockouten*). Employers, newly organised, locked out tens of thousands of workers across many trades for about **four months** in a trial of strength with the young union movement. Both sides had recently built national organisations, the employers' confederation **DA** (*Dansk Arbejdsgiverforening*, founded 1896) and the union confederation then called **De samvirkende Fagforbund** (DsF, founded 1898, the ancestor of today's Danish LO/FH).
+**The fight.** In **1899**, Denmark saw one of the largest labor conflicts, relative to the size of the country, in European history: the **Great Lockout of 1899** (*Storlockouten*). Employers, newly organized, locked out tens of thousands of workers across many trades for about **four months** in a trial of strength with the young union movement. Both sides had recently built national organizations, the employers' confederation **DA** (*Dansk Arbejdsgiverforening*, founded 1896) and the union confederation then called **De samvirkende Fagforbund** (DsF, founded 1898, the ancestor of today's Danish LO/FH).
 
 **The deal.** The lockout ended in September 1899 with the **September Compromise** (*Septemberforliget*), signed on **5 September 1899**. It is one of the oldest agreements of its kind anywhere, and Danes call it exactly what it is: **"the constitution of the labour market"** (*arbejdsmarkedets grundlov*). Two reciprocal recognitions sat at its core:
 
-- **The employers recognised the workers' right to organise**, to form and belong to unions and to be represented by them.
-- **The unions recognised the employers' "right to manage and direct work"** (*ledelsesretten*), the principle that, subject to the agreements, it is the employer who organises and directs the work.
+- **The employers recognized the workers' right to organize**, to form and belong to unions and to be represented by them.
+- **The unions recognized the employers' "right to manage and direct work"** (*ledelsesretten*), the principle that, subject to the agreements, it is the employer who organises and directs the work.
 
-That trade, *we recognise your unions; you recognise our authority to run the business*, plus a framework for how conflicts must be conducted, became the permanent foundation of the Danish system. It has been revised many times since, but it has never been replaced, and it is why Denmark, like Sweden, runs on agreements between organised parties rather than on a labour code handed down by the state.
+That trade, *we recognize your unions; you recognize our authority to run the business*, plus a framework for how conflicts must be conducted, became the permanent foundation of the Danish system. It has been revised many times since, but it has never been replaced, and it is why Denmark, like Sweden, runs on agreements between organized parties rather than on a labor code handed down by the state.
 
-**Why the forty-year gap matters, Sweden is not Denmark.** Denmark's founding settlement (1899) predates Sweden's (1938) by a generation. Danish self-regulation is therefore older, more deeply habitual, and built even more around the *cross-sectoral* peak organisations (DA and the union confederation) negotiating the ground rules for everyone. It is also part of why Danish flexicurity (Section 4), a genuinely distinctive Danish invention, could take root: a labour market where dismissal was governed by agreement rather than by protective statute had room to make "easy to fire, but well cushioned" into a deliberate national bargain. Sweden's model, by contrast, grew a stronger statutory layer in the 1970s (including its Employment Protection Act and its Co-determination Act). **Same family, different houses.**
+**Why the forty-year gap matters, Sweden is not Denmark.** Denmark's founding settlement (1899) predates Sweden's (1938) by a generation. Danish self-regulation is therefore older, more deeply habitual, and built even more around the *cross-sectoral* peak organizations (DA and the union confederation) negotiating the ground rules for everyone. It is also part of why Danish flexicurity (Section 4), a genuinely distinctive Danish invention, could take root: a labor market where dismissal was governed by agreement rather than by protective statute had room to make "easy to fire, but well cushioned" into a deliberate national bargain. Sweden's model, by contrast, grew a stronger statutory layer in the 1970s (including its Employment Protection Act and its Co-determination Act). **Same family, different houses.**
 
-:::reveal What was the September Compromise (Denmark, 1899), and what two reciprocal recognitions did it contain? ||| It was the 1899 agreement between the employers' confederation DA and the union confederation (then De samvirkende Fagforbund) that ended the Great Lockout, "the constitution of the Danish labour market." Its core trade: employers recognised the workers' right to organise, and unions recognised the employers' right to manage and direct work (ledelsesretten), within a framework of rules for conducting disputes.
+:::reveal What was the September Compromise (Denmark, 1899), and what two reciprocal recognitions did it contain? ||| It was the 1899 agreement between the employers' confederation DA and the union confederation (then De samvirkende Fagforbund) that ended the Great Lockout, "the constitution of the Danish labour market." Its core trade: employers recognized the workers' right to organize, and unions recognized the employers' right to manage and direct work (ledelsesretten), within a framework of rules for conducting disputes.
 
 ## Sources
 - Due, J., Madsen, J. S., & Jensen, C. S. (1994). *The Survival of the Danish Model: A Historical Sociological Analysis of the Danish System of Collective Bargaining*. DJØF Publishing.
@@ -713,17 +713,17 @@ That trade, *we recognise your unions; you recognise our authority to run the bu
       section: "Section 3 · Self-regulation, the state that stepped back by agreement",
       body: `Put Section 1 (no minimum-wage law) together with this section (self-regulation) and a practical question falls out: *if there's no statute and no wage board, who actually decides what the floor is this year, and what stops a firm from simply ignoring it?* Here is the machinery.
 
-**1. Bargaining happens at the sector level, and one sector leads.** A union federation and an employers' association negotiate an agreement for a whole industry, metalworking, retail, transport, hotels, including its minimum rates. In Sweden, manufacturing/export industry deliberately settles **first**, and its settlement sets the norm, the **"mark"** (*märket*), that the other sectors are expected to follow. This norm-setting role was formalised in Sweden's **Industrial Agreement** (*Industriavtalet*) of **1997**. Denmark runs a similar pattern, with industry (organised on the union side around CO-industri and on the employer side around the Confederation of Danish Industry, DI) leading the round. The point of letting the internationally exposed sector go first is discipline: wages across the economy stay tethered to what the country's exporters can actually afford.
+**1. Bargaining happens at the sector level, and one sector leads.** A union federation and an employers' association negotiate an agreement for a whole industry, metalworking, retail, transport, hotels, including its minimum rates. In Sweden, manufacturing/export industry deliberately settles **first**, and its settlement sets the norm, the **"mark"** (*märket*), that the other sectors are expected to follow. This norm-setting role was formalised in Sweden's **Industrial Agreement** (*Industriavtalet*) of **1997**. Denmark runs a similar pattern, with industry (organized on the union side around CO-industri and on the employer side around the Confederation of Danish Industry, DI) leading the round. The point of letting the internationally exposed sector go first is discipline: wages across the economy stay tethered to what the country's exporters can actually afford.
 
-**2. There is no legal extension, and that is the deep contrast with Germany and France.** In Germany, coverage rides on employers belonging to employers' associations; in France, the state *extends* agreements by decree to cover everyone. **Sweden and Denmark do neither by law.** There is no government mechanism that automatically stretches a collective agreement to a firm that never signed one. Coverage is high (Section 1) because organisation is high and because signing agreements is the overwhelming norm, **not because a law forces it.**
+**2. There is no legal extension, and that is the deep contrast with Germany and France.** In Germany, coverage rides on employers belonging to employers' associations; in France, the state *extends* agreements by decree to cover everyone. **Sweden and Denmark do neither by law.** There is no government mechanism that automatically stretches a collective agreement to a firm that never signed one. Coverage is high (Section 1) because organization is high and because signing agreements is the overwhelming norm, **not because a law forces it.**
 
 **3. So what makes a hold-out firm comply? Not a court order, a conflict.** If a company refuses to sign the relevant collective agreement, the union's tool is **industrial action**: a strike by any of its members in the firm, and (this is the Nordic superpower, and the whole of Section 4) **sympathy action** by *other* unions to pressure the hold-out from every side (blocking its deliveries, refusing to service it, and so on). The aim is to make operating without an agreement more painful than signing one. That is how a contract-based floor is enforced in a country that refuses to legislate it: **collectively, by pressure, not by the state.** Keep this firmly in mind, because Section 5 is one long, real, unfinished example of exactly this machinery being turned on a company (Tesla) that will not sign.
 
-**4. The peace obligation is the price of the deal.** Self-regulation is not a licence for permanent warfare. Once a collective agreement is in force, the parties bound by it owe a **peace obligation** (*fredsplikt* in Swedish), they may not take industrial action over matters the agreement covers, for the life of the agreement. In Sweden this duty sits in the **Co-determination Act** (*Medbestämmandelagen*, MBL, SFS 1976:580), which governs the right of association, collective bargaining, and industrial action. Sympathy action is permitted as an *exception*, and generally only in support of a **lawful primary conflict**, a crucial limit we will unpack in Section 4. Disputes about whether a party has breached an agreement or the peace obligation are decided by a specialist **Labour Court** (Sweden's *Arbetsdomstolen*, established 1928; Denmark's *Arbejdsretten*), not by ordinary courts or a government agency.
+**4. The peace obligation is the price of the deal.** Self-regulation is not a license for permanent warfare. Once a collective agreement is in force, the parties bound by it owe a **peace obligation** (*fredsplikt* in Swedish), they may not take industrial action over matters the agreement covers, for the life of the agreement. In Sweden this duty sits in the **Co-determination Act** (*Medbestämmandelagen*, MBL, SFS 1976:580), which governs the right of association, collective bargaining, and industrial action. Sympathy action is permitted as an *exception*, and generally only in support of a **lawful primary conflict**, a crucial limit we will unpack in Section 4. Disputes about whether a party has breached an agreement or the peace obligation are decided by a specialist **Labour Court** (Sweden's *Arbetsdomstolen*, established 1928; Denmark's *Arbejdsretten*), not by ordinary courts or a government agency.
 
-**One line to carry out of Section 3:** the Nordic wage floor is set by organised sectors bargaining under a self-imposed constitution, enforced by collective pressure rather than by statute, and disciplined by a peace obligation and a specialist labour court. No minimum-wage law required, but a great deal of organisation, and a great deal of history, required instead.
+**One line to carry out of Section 3:** the Nordic wage floor is set by organized sectors bargaining under a self-imposed constitution, enforced by collective pressure rather than by statute, and disciplined by a peace obligation and a specialist labor court. No minimum-wage law required, but a great deal of organization, and a great deal of history, required instead.
 
-:::reveal With no minimum-wage law and no legal extension, what makes a Swedish or Danish firm that refuses to sign a collective agreement actually comply? ||| Collective pressure, not the state. The union takes industrial action, a strike, plus sympathy action by other unions (blocking deliveries, refusing to service the firm), to make operating without an agreement more costly than signing one. Coverage rides on high organisation and the norm of signing, disciplined by a peace obligation once an agreement is in force and adjudicated by a specialist labour court.
+:::reveal With no minimum-wage law and no legal extension, what makes a Swedish or Danish firm that refuses to sign a collective agreement actually comply? ||| Collective pressure, not the state. The union takes industrial action, a strike, plus sympathy action by other unions (blocking deliveries, refusing to service the firm), to make operating without an agreement more costly than signing one. Coverage rides on high organization and the norm of signing, disciplined by a peace obligation once an agreement is in force and adjudicated by a specialist labor court.
 
 ## Sources
 - Lag (1976:580) om medbestämmande i arbetslivet [Employment (Co-determination in the Workplace) Act / MBL] (Sweden). Sveriges riksdag. https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/lag-1976580-om-medbestammande-i-arbetslivet_sfs-1976-580
@@ -733,12 +733,12 @@ That trade, *we recognise your unions; you recognise our authority to run the bu
         {
           prompt: "What is the September Compromise (1899), and why is it called 'the constitution of the labour market'?",
           answer:
-            "The 1899 Danish agreement between the employers' confederation DA and the union confederation that ended the Great Lockout. It is the founding, never-replaced framework of Danish self-regulation: employers recognised the right to organise, unions recognised the employer's right to manage and direct work (ledelsesret), within agreed rules for disputes.",
+            "The 1899 Danish agreement between the employers' confederation DA and the union confederation that ended the Great Lockout. It is the founding, never-replaced framework of Danish self-regulation: employers recognized the right to organize, unions recognized the employer's right to manage and direct work (ledelsesret), within agreed rules for disputes.",
         },
         {
           prompt: "Give one way the timing of the two founding agreements marks Denmark as distinct from Sweden.",
           answer:
-            "Denmark's settlement (1899) predates Sweden's (1938) by about forty years, so Danish self-regulation is older and built even more around cross-sectoral peak organisations, part of why the distinctively Danish flexicurity bargain (easy dismissal, well cushioned) could take root, while Sweden grew a stronger statutory layer in the 1970s.",
+            "Denmark's settlement (1899) predates Sweden's (1938) by about forty years, so Danish self-regulation is older and built even more around cross-sectoral peak organizations, part of why the distinctively Danish flexicurity bargain (easy dismissal, well cushioned) could take root, while Sweden grew a stronger statutory layer in the 1970s.",
         },
       ],
     },
@@ -793,7 +793,7 @@ That trade, *we recognise your unions; you recognise our authority to run the bu
             prompt: "In the Swedish model, what does self-regulation require of BOTH sides to function?",
             options: [
               "That both sides stay weak, leaving the state to step in and set the terms",
-              "That both sides be strong and organised enough to make and keep bargains",
+              "That both sides be strong and organized enough to make and keep bargains",
               "That the state set all wages centrally and referee every industrial dispute",
               "That unions keep almost no members, so employers can set terms freely",
             ],
@@ -807,8 +807,8 @@ That trade, *we recognise your unions; you recognise our authority to run the bu
             options: [
               "Denmark's first statutory national minimum-wage law, formally enacted by parliament in 1899",
               "The 1899 agreement that ended the Great Lockout, 'the constitution of the Danish labour market'",
-              "A Swedish labour law of 1899 that first legalised trade unions across the whole country",
-              "An 1899 EU treaty establishing common labour standards across the member states of Europe",
+              "A Swedish labor law of 1899 that first legalised trade unions across the whole country",
+              "An 1899 EU treaty establishing common labor standards across the member states of Europe",
             ],
             correctIndex: 1,
             explanation:
@@ -818,14 +818,14 @@ That trade, *we recognise your unions; you recognise our authority to run the bu
           {
             prompt: "What two reciprocal recognitions sat at the core of the September Compromise?",
             options: [
-              "The state formally recognised the unions, and in return the unions recognised the authority of the state",
-              "Employers recognised the workers' right to organise; unions recognised the employers' right to manage work",
-              "Both sides recognised and jointly agreed to enforce a new statutory national minimum wage for workers",
-              "Employers recognised Denmark's place in the EU, and the unions in turn recognised its NATO membership",
+              "The state formally recognized the unions, and in return the unions recognized the authority of the state",
+              "Employers recognized the workers' right to organize; unions recognized the employers' right to manage work",
+              "Both sides recognized and jointly agreed to enforce a new statutory national minimum wage for workers",
+              "Employers recognized Denmark's place in the EU, and the unions in turn recognized its NATO membership",
             ],
             correctIndex: 1,
             explanation:
-              "We recognise your unions; you recognise our authority to run the business, plus agreed rules for how conflicts must be conducted.",
+              "We recognize your unions; you recognize our authority to run the business, plus agreed rules for how conflicts must be conducted.",
             sourceLessonSlug: "nordic-september-compromise",
           },
           {
@@ -858,13 +858,13 @@ That trade, *we recognise your unions; you recognise our authority to run the bu
             prompt: "How do Sweden and Denmark differ from Germany and France on extending agreements to non-signatory firms?",
             options: [
               "They extend every collective agreement to non-signatory firms by government decree, exactly as France does",
-              "They have NO legal extension; coverage is high because organisation is high and signing is the norm, not law",
+              "They have NO legal extension; coverage is high because organization is high and signing is the norm, not law",
               "They copy the German mechanism exactly, so coverage rides on firms belonging to employers' associations",
               "They legally require every single firm to sign the relevant sector collective agreement by national statute",
             ],
             correctIndex: 1,
             explanation:
-              "France extends by decree; Germany rides on employer-association membership; Sweden and Denmark rely on organisation and pressure, not legal extension.",
+              "France extends by decree; Germany rides on employer-association membership; Sweden and Denmark rely on organization and pressure, not legal extension.",
             sourceLessonSlug: "nordic-sectoral-wage-setting",
           },
           {
@@ -903,7 +903,7 @@ That trade, *we recognise your unions; you recognise our authority to run the bu
             ],
             correctIndex: 1,
             explanation:
-              "Sweden's Arbetsdomstolen (established 1928); Denmark has the equivalent Arbejdsretten. Specialist labour courts, not a government agency.",
+              "Sweden's Arbetsdomstolen (established 1928); Denmark has the equivalent Arbejdsretten. Specialist labor courts, not a government agency.",
             sourceLessonSlug: "nordic-sectoral-wage-setting",
           },
           {
@@ -936,13 +936,13 @@ That trade, *we recognise your unions; you recognise our authority to run the bu
             prompt: "What single line summarises how the Nordic wage floor is maintained?",
             options: [
               "A single national statute fixes the wage floor, and the police and the courts then enforce it directly",
-              "Organised sectors bargain under self-regulation, enforced by collective pressure rather than by statute",
+              "Organized sectors bargain under self-regulation, enforced by collective pressure rather than by statute",
               "The EU sets the wage floor centrally and legally extends it to every single firm in both countries",
               "Employers set the wage floor unilaterally, and unions simply administer whatever figure they choose",
             ],
             correctIndex: 1,
             explanation:
-              "No minimum-wage law required, but a great deal of organisation and history required instead.",
+              "No minimum-wage law required, but a great deal of organization and history required instead.",
             sourceLessonSlug: "nordic-sectoral-wage-setting",
           },
         ],
@@ -962,7 +962,7 @@ That trade, *we recognise your unions; you recognise our authority to run the bu
 
 **Leg 2, Security (of income, not of the specific job).** If you lose your job, you land on a relatively **generous unemployment benefit** (*dagpenge*), historically replacing a high share of a lower earner's previous wage (up to a cap). The security is not "you keep this job"; it is "losing this job does not wreck you."
 
-**Leg 3, Active labour-market policy.** The state spends heavily on **activation**: retraining, guidance, job-search support, and requirements to take part. The point is to move you from the old job to a new one quickly rather than parking you on benefits.
+**Leg 3, Active labor-market policy.** The state spends heavily on **activation**: retraining, guidance, job-search support, and requirements to take part. The point is to move you from the old job to a new one quickly rather than parking you on benefits.
 
 Put the three together and you get the pitch: **workers give up job security and get employment security instead**, the confidence that if this job ends, there is a cushion and a fast route to the next one. The number Danes point to is **mobility**: a large share of the Danish workforce changes jobs in any given year, and unemployment spells have historically been short. It is a genuinely different answer to "how do you protect a worker?", *not by making the job hard to lose, but by making job loss survivable and temporary.*
 
@@ -973,9 +973,9 @@ Put the three together and you get the pitch: **workers give up job security and
 
 So the honest verdict, dated: flexicurity is a real and coherent bargain, not a free lunch and not a fairy tale, and the security side of it has been quietly thinning, which is exactly the thing that would turn a good trade into a bad one. Whether it still delivers what it promises is a live Danish argument, and you should treat anyone who tells you it is simply a triumph *or* simply a con as selling you something.
 
-**The Sweden-is-not-Denmark footnote, so you don't overgeneralise.** Sweden does **not** run classic Danish flexicurity. Sweden has meaningfully **stronger statutory job protection**, its Employment Protection Act (*Lagen om anställningsskydd*, LAS, 1982), with "last in, first out" seniority rules at its core, though even that was loosened in a 2022 reform that made dismissals somewhat easier in exchange for stronger retraining rights. "Nordic" is not one labour market. It is at least two.
+**The Sweden-is-not-Denmark footnote, so you don't overgeneralise.** Sweden does **not** run classic Danish flexicurity. Sweden has meaningfully **stronger statutory job protection**, its Employment Protection Act (*Lagen om anställningsskydd*, LAS, 1982), with "last in, first out" seniority rules at its core, though even that was loosened in a 2022 reform that made dismissals somewhat easier in exchange for stronger retraining rights. "Nordic" is not one labor market. It is at least two.
 
-:::reveal What is Danish "flexicurity," and why must it be taught as a trade rather than a free lunch? ||| The "golden triangle": (1) easy hiring and firing, (2) a relatively generous unemployment benefit (dagpenge), and (3) heavy active labour-market policy (retraining/activation). Workers trade job security for employment security, a cushion plus a fast route to the next job. It must be taught as a trade because it only protects workers if the benefit and retraining legs stay strong; weaken them and only easy-firing remains. And they have been trimmed, the 2010 reform cut the dagpenge period from four years to two.
+:::reveal What is Danish "flexicurity," and why must it be taught as a trade rather than a free lunch? ||| The "golden triangle": (1) easy hiring and firing, (2) a relatively generous unemployment benefit (dagpenge), and (3) heavy active labor-market policy (retraining/activation). Workers trade job security for employment security, a cushion plus a fast route to the next job. It must be taught as a trade because it only protects workers if the benefit and retraining legs stay strong; weaken them and only easy-firing remains. And they have been trimmed, the 2010 reform cut the dagpenge period from four years to two.
 
 ## Sources
 - Madsen, P. K. (2004). The Danish model of "flexicurity": Experiences and lessons. *Transfer: European Review of Labour and Research, 10*(2), 187–207. https://doi.org/10.1177/102425890401000205
@@ -1003,9 +1003,9 @@ So the honest verdict, dated: flexicurity is a real and coherent bargain, not a 
 
 **In the United States, the sympathy strike and the secondary boycott are illegal.** The anchor course teaches this directly: the **Taft-Hartley Act of 1947** added **§ 8(b)(4)** to the National Labor Relations Act, which bars a union from pressuring a **neutral** business, one that is not the employer the union actually has its dispute with, to force it to stop dealing with that employer. If autoworkers have a fight with Company A, they may not lawfully strike or boycott **Company B** to squeeze A. The anchor calls that ban the removal of "one of labor's most powerful weapons," and notes the strange exception it created: farm workers, excluded from the NLRA in 1935, were *also* outside its secondary-boycott ban, which is exactly why the United Farm Workers' grape boycott was lawful when the same tactic would have been illegal for a steelworkers' union.
 
-**In Sweden and Denmark, that weapon is legal.** A union whose members are *not* themselves in dispute with a company may lawfully take **sympathy action** (*sympatiåtgärder*) to support another union's **lawful primary conflict**, refusing to make deliveries to the targeted firm, refusing to service its equipment, refusing to handle its goods. In Sweden the framework sits in the **Co-determination Act** (MBL, 1976:580): parties bound by a collective agreement owe a peace obligation, **but sympathy action in support of a lawful primary dispute is a recognised exception** to it. Denmark's system permits sympathy conflict on the same broad logic.
+**In Sweden and Denmark, that weapon is legal.** A union whose members are *not* themselves in dispute with a company may lawfully take **sympathy action** (*sympatiåtgärder*) to support another union's **lawful primary conflict**, refusing to make deliveries to the targeted firm, refusing to service its equipment, refusing to handle its goods. In Sweden the framework sits in the **Co-determination Act** (MBL, 1976:580): parties bound by a collective agreement owe a peace obligation, **but sympathy action in support of a lawful primary dispute is a recognized exception** to it. Denmark's system permits sympathy conflict on the same broad logic.
 
-**Feel the size of this difference.** The American ban confines a labour dispute to the two parties directly involved: the union and its own employer, in a ring, and everyone else must be left alone. The Nordic rule lets a dispute **radiate**. If a company refuses to sign an agreement, it is not just facing the one union whose members it employs, it can find its trucks unloaded by nobody, its mail undelivered, its machines unserviced, because *other* workers, in *other* companies, in *other* unions, are lawfully refusing to touch anything connected to it. **The neutral party the American statute protects is, in the Nordic model, precisely the pressure point.**
+**Feel the size of this difference.** The American ban confines a labor dispute to the two parties directly involved: the union and its own employer, in a ring, and everyone else must be left alone. The Nordic rule lets a dispute **radiate**. If a company refuses to sign an agreement, it is not just facing the one union whose members it employs, it can find its trucks unloaded by nobody, its mail undelivered, its machines unserviced, because *other* workers, in *other* companies, in *other* unions, are lawfully refusing to touch anything connected to it. **The neutral party the American statute protects is, in the Nordic model, precisely the pressure point.**
 
 And now connect it back to Section 3, because this is not a curiosity, **it is load-bearing.** Remember the puzzle: with no minimum-wage law and no legal extension of agreements, what actually forces a hold-out firm to sign? The answer was "collective pressure, not the state." **The legal sympathy strike is what makes that pressure strong enough to work.** A self-regulating system that refuses to legislate the wage floor needs a way to bring a refusing employer to the table, and sympathy action is that way. Ban it, as U.S. law does, and the whole self-regulation model loses the teeth that make signing an agreement the rational choice. This is why the same countries that keep the state *out* of wage-setting keep sympathy action *in*: the second is what makes the first enforceable.
 
@@ -1021,7 +1021,7 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
         {
           prompt: "Name the three legs of Danish flexicurity (the 'golden triangle') and the trade it offers workers.",
           answer:
-            "(1) Easy hiring and firing; (2) a relatively generous unemployment benefit (dagpenge); (3) heavy active labour-market policy (retraining/activation). Workers trade JOB security for EMPLOYMENT security, losing a job is survivable and temporary rather than wrecking.",
+            "(1) Easy hiring and firing; (2) a relatively generous unemployment benefit (dagpenge); (3) heavy active labor-market policy (retraining/activation). Workers trade JOB security for EMPLOYMENT security, losing a job is survivable and temporary rather than wrecking.",
         },
         {
           prompt: "Give the clearest evidence that flexicurity's 'security' side has thinned.",
@@ -1031,7 +1031,7 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
         {
           prompt: "How does Sweden differ from Denmark on job protection?",
           answer:
-            "Sweden does not run classic Danish flexicurity; it has stronger statutory job protection via the Employment Protection Act (LAS, 1982) with 'last in, first out' seniority, though a 2022 reform loosened dismissals somewhat in exchange for stronger retraining rights. 'Nordic' is at least two different labour markets.",
+            "Sweden does not run classic Danish flexicurity; it has stronger statutory job protection via the Employment Protection Act (LAS, 1982) with 'last in, first out' seniority, though a 2022 reform loosened dismissals somewhat in exchange for stronger retraining rights. 'Nordic' is at least two different labor markets.",
         },
       ],
     },
@@ -1047,7 +1047,7 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
             prompt: "Which country's model is 'flexicurity,' and what are its three legs?",
             options: [
               "Sweden's: strong statutory job protection, low unemployment benefits, and no active retraining at all",
-              "Denmark's: easy hiring/firing, a generous unemployment benefit (dagpenge), and active labour-market policy",
+              "Denmark's: easy hiring/firing, a generous unemployment benefit (dagpenge), and active labor-market policy",
               "Norway's: a statutory national minimum wage, high import tariffs, and essentially no trade unions",
               "A single US federal program combining easy firing, generous benefits and mandatory job retraining",
             ],
@@ -1105,7 +1105,7 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
             ],
             correctIndex: 1,
             explanation:
-              "'Nordic' is at least two labour markets. LAS (1982) was itself loosened somewhat in a 2022 reform in exchange for stronger retraining rights.",
+              "'Nordic' is at least two labor markets. LAS (1982) was itself loosened somewhat in a 2022 reform in exchange for stronger retraining rights.",
             sourceLessonSlug: "nordic-flexicurity",
           },
           {
@@ -1150,7 +1150,7 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "Why is the legal sympathy strike LOAD-BEARING for Nordic self-regulation?",
             options: [
-              "It actually isn't load-bearing at all; it is just a colourful historical curiosity with no real effect",
+              "It actually isn't load-bearing at all; it is just a colorful historical curiosity with no real effect",
               "Because the wage floor rests on collective pressure, not statute, and sympathy action makes that pressure bite",
               "Because the sympathy strike directly replaces the unemployment fund as the engine of union membership",
               "Because the sympathy strike is what sets each sector's minimum wage directly, with no bargaining needed",
@@ -1191,7 +1191,7 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
             options: [
               "Because agricultural produce such as grapes is specifically exempt from all US secondary-boycott rules",
               "Because farm workers were excluded from the NLRA in 1935, so they also fell outside its secondary-boycott ban",
-              "Because the United Farm Workers were granted a special one-off exemption by the federal labour board",
+              "Because the United Farm Workers were granted a special one-off exemption by the federal labor board",
               "Because the Taft-Hartley Act had simply not yet been passed at the time of the grape boycott campaign",
             ],
             correctIndex: 1,
@@ -1249,21 +1249,21 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
       section: "Section 5 · The stress test, Tesla in Sweden",
       body: `**Read this whole lesson as dated, contested, and unfinished.** It is about a dispute that was still going on as this course was written in **2026**, more than two years after it began. Nothing here is settled history. Every claim carries a date, the course declares **no winner**, and you should **re-check the current state before you rely on any of it.** The dispute is valuable precisely because it is the Nordic model being tested in real time, not a museum piece.
 
-**The set-up.** Tesla sells and services cars in Sweden, but does not manufacture there; the Swedish operation is service centres and sales. Tesla, as a matter of company policy worldwide, does not sign collective agreements. That policy ran straight into the machinery you learned in Sections 3 and 4: in Sweden, a firm that will not sign gets brought to the table not by a law, there is none, but by industrial action, including **legal sympathy action**.
+**The set-up.** Tesla sells and services cars in Sweden, but does not manufacture there; the Swedish operation is service centers and sales. Tesla, as a matter of company policy worldwide, does not sign collective agreements. That policy ran straight into the machinery you learned in Sections 3 and 4: in Sweden, a firm that will not sign gets brought to the table not by a law, there is none, but by industrial action, including **legal sympathy action**.
 
 **The primary conflict.** On **27 October 2023**, the metalworkers' union **IF Metall** put its members who service Tesla vehicles, roughly 130 mechanics, **on strike**, after Tesla declined to sign a collective agreement covering them. On its own, a strike by ~130 mechanics is not much leverage against a global company. So the rest of the model switched on.
 
 **The sympathy actions (from November 2023 onward), and this is the part to watch, because it is Section 4 made real:**
 - **Dockworkers** refused to **unload Tesla cars** arriving at Swedish ports (reported from around mid-November 2023).
-- **PostNord**, the postal service, stopped delivering mail to Tesla, **including the licence plates** that newly registered cars legally require (from around **20 November 2023**). In Sweden, plates are issued through official channels and physically distributed by post; stop the post, and you have found a genuine choke point.
+- **PostNord**, the postal service, stopped delivering mail to Tesla, **including the license plates** that newly registered cars legally require (from around **20 November 2023**). In Sweden, plates are issued through official channels and physically distributed by post; stop the post, and you have found a genuine choke point.
 - **Electricians** (the union Elektrikerna) refused to do service and repair work at Tesla sites and, reportedly, on some charging infrastructure; **cleaners** stopped cleaning Tesla premises; **painters** and other trades added their own blockades over the following weeks.
 - The action **spread across the Nordics**: transport and dockworker unions in **Denmark, Norway and Finland** announced they would refuse to handle Tesla vehicles bound for Sweden (from around December 2023), turning a Swedish dispute into a regional one.
 
-**The counter-moves, dated and described carefully.** Tesla did not simply absorb it. The company went to court over the **licence plates**, arguing it was unlawful for the state's distribution to be blocked, and sued both the postal service and the Swedish Transport Agency (from late November 2023). The licence-plate question produced **conflicting interim court rulings** in late 2023, the course will not walk you through a blow-by-blow it cannot fully verify, and simply notes that the plate fight became a legal sub-battle in its own right. Tesla's CEO publicly called the situation "insane" (November 2023). Tesla continued to operate, sourcing services and workarounds where it could.
+**The counter-moves, dated and described carefully.** Tesla did not simply absorb it. The company went to court over the **license plates**, arguing it was unlawful for the state's distribution to be blocked, and sued both the postal service and the Swedish Transport Agency (from late November 2023). The license-plate question produced **conflicting interim court rulings** in late 2023, the course will not walk you through a blow-by-blow it cannot fully verify, and simply notes that the plate fight became a legal sub-battle in its own right. Tesla's CEO publicly called the situation "insane" (November 2023). Tesla continued to operate, sourcing services and workarounds where it could.
 
 **Where it stood at this course's writing (2026).** More than two years in, **the dispute was unresolved.** Tesla had **not** signed a collective agreement; the strike and various sympathy actions were, in different forms, **still active or intermittently renewed**; and **neither side had "won."** That is the honest status, and it is deliberately the status this course leaves you with. If you want to know how it turned out, that is a research task for *you*, in your present, not a fact this course will pretend to have.
 
-:::reveal Summarise the Tesla dispute in Sweden, and state its status the way this course insists you must. ||| On 27 October 2023, IF Metall struck over Tesla's refusal to sign a collective agreement for its ~130 Swedish service mechanics; from November 2023 legal sympathy actions spread, dockworkers refused to unload Tesla cars, PostNord stopped delivering mail including licence plates, electricians/cleaners/painters joined, and transport unions in Denmark, Norway and Finland blocked Tesla vehicles bound for Sweden. Status (as of this course's writing in 2026, and to be re-checked): unresolved, Tesla had not signed, actions continued, and neither side had won. Every claim is dated; the course declares no winner.
+:::reveal Summarise the Tesla dispute in Sweden, and state its status the way this course insists you must. ||| On 27 October 2023, IF Metall struck over Tesla's refusal to sign a collective agreement for its ~130 Swedish service mechanics; from November 2023 legal sympathy actions spread, dockworkers refused to unload Tesla cars, PostNord stopped delivering mail including license plates, electricians/cleaners/painters joined, and transport unions in Denmark, Norway and Finland blocked Tesla vehicles bound for Sweden. Status (as of this course's writing in 2026, and to be re-checked): unresolved, Tesla had not signed, actions continued, and neither side had won. Every claim is dated; the course declares no winner.
 
 ## Sources
 - IF Metall. (2023–). *Conflict with Tesla / Tesla-konflikten* [union party to the dispute — read as an interested primary source, not a neutral one]. Industrifacket Metall. https://www.ifmetall.se/
@@ -1294,7 +1294,7 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
 
 **Test 3, Whose problem is a global non-signatory?** The dispute is also a story about **coordination**, which is why it spread to Denmark, Norway and Finland. A single national union movement may not be able to move a multinational; a coordinated Nordic (and potentially European) one has a better chance. Watch, in your own present, whether the response stays national or becomes genuinely cross-border, because that tells you something about the future of the whole model in a world of multinational employers.
 
-**Why this belongs at the end of the "how it works" story and right before the "honest limits" section.** Everything in Sections 1-4 explains a system that was built for, and largely by, an economy of nationally rooted firms and organised employers who accepted the rules of the game. Tesla is what it looks like when a very large, very mobile firm **declines to accept those rules** and the model has to decide whether its 20th-century tools still work. Section 6 then widens that same worry: it is not only defiant multinationals who sit outside the agreements, so do migrant workers, platform workers, and the employees of the growing number of firms that never signed. **The Tesla dispute is the dramatic version of the quiet problem Section 6 is about.**
+**Why this belongs at the end of the "how it works" story and right before the "honest limits" section.** Everything in Sections 1-4 explains a system that was built for, and largely by, an economy of nationally rooted firms and organized employers who accepted the rules of the game. Tesla is what it looks like when a very large, very mobile firm **declines to accept those rules** and the model has to decide whether its 20th-century tools still work. Section 6 then widens that same worry: it is not only defiant multinationals who sit outside the agreements, so do migrant workers, platform workers, and the employees of the growing number of firms that never signed. **The Tesla dispute is the dramatic version of the quiet problem Section 6 is about.**
 
 **The discipline this section is really teaching.** Notice what the course did *not* do: it did not tell you who wins, did not predict an outcome, and did not turn a live, contested dispute into a tidy morality tale. That restraint is the point. When you write or argue about an ongoing event, **date every claim, name what is contested, cite interested parties as interested, and refuse to declare a winner the record has not yet produced.** The parallel courses in this very track shipped a fabricated quote and a mis-copied court outcome that were caught only by checking. On a live story, the temptation to tidy is strongest and the cost of being wrong is highest. **Check; don't recall; don't tidy.**
 
@@ -1308,7 +1308,7 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
         {
           prompt: "When and why did IF Metall strike against Tesla, and why was a ~130-mechanic strike enough to matter?",
           answer:
-            "On 27 October 2023, over Tesla's refusal to sign a collective agreement for its Swedish service mechanics. The small primary strike mattered because legal sympathy action multiplied it, dockworkers, PostNord (mail and licence plates), electricians, cleaners and painters, plus transport unions across the Nordics refusing to handle Tesla vehicles.",
+            "On 27 October 2023, over Tesla's refusal to sign a collective agreement for its Swedish service mechanics. The small primary strike mattered because legal sympathy action multiplied it, dockworkers, PostNord (mail and license plates), electricians, cleaners and painters, plus transport unions across the Nordics refusing to handle Tesla vehicles.",
         },
         {
           prompt: "What is the course's required way of stating the Tesla dispute's status?",
@@ -1355,7 +1355,7 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
             prompt: "What was the significance of PostNord halting deliveries to Tesla (from ~20 November 2023)?",
             options: [
               "It halted Tesla's advertising and marketing mail campaigns across Sweden, denting its brand image",
-              "It cut off mail INCLUDING the licence plates newly registered cars legally require, a real choke point",
+              "It cut off mail INCLUDING the license plates newly registered cars legally require, a real choke point",
               "It was a purely symbolic gesture that had no practical effect at all on Tesla's Swedish operations",
               "It raised Tesla's shipping and courier costs slightly, but caused no real operational disruption",
             ],
@@ -1471,10 +1471,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "Why does the course refuse to walk through the licence-plate court rulings blow-by-blow?",
             options: [
-              "Because the licence-plate court rulings are entirely irrelevant to the substance of the labour dispute",
+              "Because the license-plate court rulings are entirely irrelevant to the substance of the labor dispute",
               "Because the interim rulings were conflicting and could not be fully verified, so it asserts no chain of outcomes",
-              "Because Tesla in fact won every single one of the licence-plate court rulings, making the story one-sided",
-              "Because the Swedish unions in fact won every single licence-plate ruling, making the account one-sided",
+              "Because Tesla in fact won every single one of the license-plate court rulings, making the story one-sided",
+              "Because the Swedish unions in fact won every single license-plate ruling, making the account one-sided",
             ],
             correctIndex: 1,
             explanation:
@@ -1485,9 +1485,9 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
             prompt: "Tesla operates in Sweden as…",
             options: [
               "A large car factory with thousands of assembly workers",
-              "Sales and service centres, it does not manufacture in Sweden",
+              "Sales and service centers, it does not manufacture in Sweden",
               "A large retail bank with branches across Swedish cities",
-              "A government defence contractor supplying the Swedish state",
+              "A government defense contractor supplying the Swedish state",
             ],
             correctIndex: 1,
             explanation:
@@ -1533,7 +1533,7 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
 
 **Erosion, part one: density is falling.** The two-thirds figure you have been carrying is *down from a higher peak.* In Sweden, union density stood around **85% in the mid-1990s** and is around **65%** now (Kjellberg; OECD/AIAS), the 2007 a-kassa reform (Section 2) is a big part of that fall, but the drift has been long and broad. Denmark has declined from a higher mid-1990s peak to around **67%**. High by world standards, yes. But "Nordic unions are strong" and "Nordic unions are weakening" are **both true**, and a course that gives you only the first has handed you a postcard.
 
-**Erosion, part two: the bundle is coming apart, and here Denmark is the sharper case.** Recall that the Ghent effect works because the unemployment fund is *linked* to the union (Section 2), and that the funds are not *legally* the unions. Denmark has seen the rise of **cross-sector "alternative" unions and unemployment funds**, organisations that sell you the a-kasse and a cheap, no-strings membership **without** the traditional bargaining union attached. They are sometimes called "yellow" unions by the established movement. For a worker who just wants the insurance, they are a rational buy; for the model, they are a slow leak, because they capture the *fund* while detaching it from the *bargaining power* that the fund was quietly financing. This is the erosion mechanism Section 2 predicted, happening in real life, more in Denmark than in Sweden.
+**Erosion, part two: the bundle is coming apart, and here Denmark is the sharper case.** Recall that the Ghent effect works because the unemployment fund is *linked* to the union (Section 2), and that the funds are not *legally* the unions. Denmark has seen the rise of **cross-sector "alternative" unions and unemployment funds**, organizations that sell you the a-kasse and a cheap, no-strings membership **without** the traditional bargaining union attached. They are sometimes called "yellow" unions by the established movement. For a worker who just wants the insurance, they are a rational buy; for the model, they are a slow leak, because they capture the *fund* while detaching it from the *bargaining power* that the fund was quietly financing. This is the erosion mechanism Section 2 predicted, happening in real life, more in Denmark than in Sweden.
 
 **The outsiders: who the contract floor was never covering.** Because the wage floor is a *contract*, it protects the people the contract reaches, and leaves the rest exposed. Three groups sit outside, and they are growing:
 
@@ -1541,7 +1541,7 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
 2. **Platform and gig workers.** The model assumes an employer to bargain with. Platform work blurs whether there is one, and where a rider or driver is classed as self-employed, the collective-agreement floor may not reach them at all. This is the same structural gap the India course in this track is built around, showing up at the rich end of the world.
 3. **Workers at firms that simply never signed.** Coverage is ~82-88%, not 100% (Section 1). The uncovered slice is disproportionately small firms, new sectors, and (as Tesla showed at the top end) determined non-signatories.
 
-**Sweden is not Denmark, one last time.** The erosion has a different flavour in each: Denmark's most visible leak is the alternative-union/a-kasse split; Sweden's sharpest shock was the 2007 fee reform and its posted-work reckoning in Laval. Same disease family, different symptoms, which is exactly why the course refused, from lesson 1, to blur them into "Scandinavia."
+**Sweden is not Denmark, one last time.** The erosion has a different flavor in each: Denmark's most visible leak is the alternative-union/a-kasse split; Sweden's sharpest shock was the 2007 fee reform and its posted-work reckoning in Laval. Same disease family, different symptoms, which is exactly why the course refused, from lesson 1, to blur them into "Scandinavia."
 
 :::reveal Give the three groups that sit OUTSIDE the Nordic collective-agreement floor, and the case that shows the migrant-worker limit. ||| (1) Migrant/posted workers, with the limit shown by the Laval case (CJEU, C-341/05, 2007), where the CJEU held Swedish union blockade action against a Latvian firm's posted workers a disproportionate restriction on the freedom to provide services (prompting Sweden's 2010 "Lex Laval"); (2) platform/gig workers, where there may be no employer to bargain with; (3) workers at firms that never signed an agreement (coverage is ~82-88%, not 100%).
 
@@ -1577,13 +1577,13 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
 
 **Why on earth would unions do this? Because they understood the lesson of this entire course.** Their fear was not the carve-out on the page; it was the **precedent**. If the EU establishes that it may legislate about wages at all, then the thing Sweden and Denmark built, a wage floor that is a *contract*, kept deliberately outside the reach of any legislature (Section 1), defended by self-regulation (Section 3) and collective pressure (Section 4), has a new legislature reaching toward it. A statutory floor, even a generous one, even an optional one, is a standing invitation to let the *state* (or Brussels) set wages, which over time would hollow out the reason to belong to a union that bargains them. **Remember lesson 1: a floor written into law can become a ceiling, and it can also become a substitute for the union itself.** The Nordic unions were protecting the *mechanism*, not refusing the money, they would rather negotiate a high floor forever than be handed one and lose the bargaining table that produced it.
 
-That is the whole course in one paradox. **The strongest labour movements in the developed world fought a minimum-wage law to protect a labour model in which there is no minimum-wage law, because the law would weaken the movement that makes the no-law model work.** If that sentence makes sense to you now, you have learned the thing this course exists to teach.
+That is the whole course in one paradox. **The strongest labor movements in the developed world fought a minimum-wage law to protect a labor model in which there is no minimum-wage law, because the law would weaken the movement that makes the no-law model work.** If that sentence makes sense to you now, you have learned the thing this course exists to teach.
 
 ---
 
 ## The four questions, one last time
 
-**Q1, Who may organise?** Everyone, and (uniquely) about **two-thirds actually do** (Sweden ~65%, Denmark ~67%, early 2020s), because the **Ghent system** makes joining the default. Norway, without Ghent, sits around half.
+**Q1, Who may organize?** Everyone, and (uniquely) about **two-thirds actually do** (Sweden ~65%, Denmark ~67%, early 2020s), because the **Ghent system** makes joining the default. Norway, without Ghent, sits around half.
 
 **Q2, Who is excluded?** Whoever the *contract* doesn't reach: migrant/posted workers (see *Laval*), platform workers, and employees of the ~15-18% of workplaces with no agreement. Because the floor is a contract, being outside the contract can mean being outside the floor.
 
@@ -1627,8 +1627,8 @@ That is the whole course in one paradox. **The strongest labour movements in the
             options: [
               "It is completely perfect, entirely permanent, and universally applied to every single worker",
               "It is genuinely impressive, it is eroding, and it has always had people standing outside it",
-              "It is quietly failing, fundamentally fraudulent, and now essentially finished as a labour model",
-              "It is essentially identical to the US, German and French labour models in almost every respect",
+              "It is quietly failing, fundamentally fraudulent, and now essentially finished as a labor model",
+              "It is essentially identical to the US, German and French labor models in almost every respect",
             ],
             correctIndex: 1,
             explanation:
@@ -1651,7 +1651,7 @@ That is the whole course in one paradox. **The strongest labour movements in the
           {
             prompt: "How do Danish 'alternative' unions and unemployment funds erode the model?",
             options: [
-              "By pushing negotiated wages up much too fast, which then prices Danish workers out of the labour market",
+              "By pushing negotiated wages up much too fast, which then prices Danish workers out of the labor market",
               "They sell the a-kasse without the bargaining union attached, capturing the fund but not its bargaining power",
               "By banning strikes outright, which strips the traditional bargaining unions of their single main weapon",
               "By legally forcing every Danish worker into one single state-run union, thereby crowding out all the rest",
@@ -1755,9 +1755,9 @@ That is the whole course in one paradox. **The strongest labour movements in the
           {
             prompt: "State the course's central paradox.",
             options: [
-              "Weak and poorly organised unions somehow managed to build an unusually strong statutory minimum wage",
-              "The strongest labour movements fought a minimum-wage law to protect a model that has no minimum-wage law",
-              "The state took over setting all wages directly, and organised trade unions simply vanished entirely",
+              "Weak and poorly organized unions somehow managed to build an unusually strong statutory minimum wage",
+              "The strongest labor movements fought a minimum-wage law to protect a model that has no minimum-wage law",
+              "The state took over setting all wages directly, and organized trade unions simply vanished entirely",
               "Employers themselves demanded a statutory minimum wage, while the unions flatly refused higher pay",
             ],
             correctIndex: 1,
@@ -1768,7 +1768,7 @@ That is the whole course in one paradox. **The strongest labour movements in the
           {
             prompt: "What is the single methodological habit the course wants you to keep?",
             options: [
-              "Explain labour outcomes mainly by each country's national character",
+              "Explain labor outcomes mainly by each country's national character",
               "Look for the plumbing (institutions) before reaching for the culture",
               "Always trust official government sources over any independent ones",
               "Assume all the Nordic countries are essentially one and the same",
@@ -1794,10 +1794,10 @@ That is the whole course in one paradox. **The strongest labour movements in the
           {
             prompt: "Which course does the lesson recommend next to see a DIFFERENT answer to Q3?",
             options: [
-              "The India course, on informal work and platform labour markets",
+              "The India course, on informal work and platform labor markets",
               "'Germany: Workers on the Board', co-determination and works councils",
-              "The China course, on state-run unions and its national labour law",
-              "A Tesla investor briefing on the Swedish labour dispute's costs",
+              "The China course, on state-run unions and its national labor law",
+              "A Tesla investor briefing on the Swedish labor dispute's costs",
             ],
             correctIndex: 1,
             explanation:
@@ -1851,7 +1851,7 @@ That is the whole course in one paradox. **The strongest labour movements in the
               "Fill in with a year: Sweden reformed its a-kassa (raising and differentiating fees) in January ____, after which density fell sharply.",
             answer: "2007",
             accept: ["2007"],
-            hint: "Reinfeldt's centre-right Alliance government.",
+            hint: "Reinfeldt's center-right Alliance government.",
             explanation:
               "After the 2007 reform, density fell from ~77% (2006) to ~71% (2008), the strongest single evidence for the Ghent effect (Kjellberg).",
           },
@@ -1921,7 +1921,7 @@ That is the whole course in one paradox. **The strongest labour movements in the
             accept: ["denmark"],
             hint: "The 'golden triangle.'",
             explanation:
-              "Flexicurity is Danish. Sweden has stronger statutory job protection (the Employment Protection Act, LAS, 1982). 'Nordic' is at least two labour markets.",
+              "Flexicurity is Danish. Sweden has stronger statutory job protection (the Employment Protection Act, LAS, 1982). 'Nordic' is at least two labor markets.",
           },
           {
             prompt:

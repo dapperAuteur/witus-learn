@@ -83,7 +83,7 @@ One more distinction, because it matters for reading numbers later. **Union memb
 
 Here they are.
 
-**1. Who is allowed to organise?**
+**1. Who is allowed to organize?**
 Is forming a union legal? For everyone, or only for some people? Can you form *your own* union, or must you join the one the state already runs? Can you form more than one? (Hold on to that last one. It is the question that separates Sweden from China.)
 
 **2. Who is excluded?**
@@ -97,11 +97,11 @@ The honest one. Can you be fired? Sued? Blacklisted? Arrested? Deported? Killed?
 
 ---
 
-Practise on a country you already live in or have heard of. You will not have the answers yet. Notice which of the four you cannot answer, that is the shape of what you are about to learn.
+Practice on a country you already live in or have heard of. You will not have the answers yet. Notice which of the four you cannot answer, that is the shape of what you are about to learn.
 
 A note on evidence, since we are about to spend a course on a subject people argue about. **Labor history is politically contested.** Both "unions built the middle class" and "unions destroyed American industry" are things adults will say to you with total confidence. This course's rule, which you should steal: *every number gets a year and a source; where the record genuinely does not settle a question, we say that it does not, rather than picking the version we like.* You will see that rule get its hardest test in the very next section.
 
-:::reveal Name the four questions you can ask about labor in any country. ||| (1) Who is allowed to organise? (2) Who is excluded? (3) Who bargains with whom, and at what level? (4) What happens to you if you try?
+:::reveal Name the four questions you can ask about labor in any country. ||| (1) Who is allowed to organize? (2) Who is excluded? (3) Who bargains with whom, and at what level? (4) What happens to you if you try?
 
 ## Sources
 - International Labour Organization. (n.d.). *Freedom of association*. https://www.ilo.org/topics/freedom-association-and-collective-bargaining
@@ -186,13 +186,13 @@ A note on evidence, since we are about to spend a course on a subject people arg
             prompt: "Which of these is the FIRST of the four questions this course teaches you to ask about any country?",
             options: [
               "How many union members does it have?",
-              "Who is allowed to organise?",
+              "Who is allowed to organize?",
               "Is the country rich or poor?",
               "Does it have a minimum wage?",
             ],
             correctIndex: 1,
             explanation:
-              "Question 1 is \"Who is allowed to organise?\", including whether workers may form their own union, or must join one the state already runs.",
+              "Question 1 is \"Who is allowed to organize?\", including whether workers may form their own union, or must join one the state already runs.",
             sourceLessonSlug: "the-four-questions",
           },
           {
@@ -231,7 +231,7 @@ A note on evidence, since we are about to spend a course on a subject people arg
             ],
             correctIndex: 1,
             explanation:
-              "Every country has a legal answer to what happens when you organise, and a real one. Where they diverge, an honest course says so and shows its evidence.",
+              "Every country has a legal answer to what happens when you organize, and a real one. Where they diverge, an honest course says so and shows its evidence.",
             sourceLessonSlug: "the-four-questions",
           },
           {
@@ -302,7 +302,7 @@ A note on evidence, since we are about to spend a course on a subject people arg
           {
             prompt: "Which question would you ask to figure out why some workers in a country have no union protection AT ALL, even though unions are legal there?",
             options: [
-              "Question 1, who is allowed to organise?",
+              "Question 1, who is allowed to organize?",
               "Question 2, who is excluded?",
               "Question 3, who bargains with whom?",
               "Question 4, what happens to you if you try?",
@@ -412,7 +412,7 @@ Four men were executed for a killing the state never proved any of them committe
 
 And **May 1** became **International Workers' Day** across much of the world, in memory of Haymarket, which is why most countries mark labor's holiday on May 1 and the United States, which is where it happened, does not.
 
-> **A word on that last fact**, because it is a favourite of confident people. You will hear that an American president deliberately moved the labor holiday to September to bury the memory of Haymarket. Be careful. The **September** date came from union parades and state holiday laws in the 1880s — Oregon passed the first state Labor Day law in 1887 — well before Congress made the first Monday in September a federal holiday on **June 28, 1894** (U.S. Department of Labor, n.d.). The *motives* of the men who voted for it are a matter of interpretation. The *dates* are not. Keep those apart.
+> **A word on that last fact**, because it is a favorite of confident people. You will hear that an American president deliberately moved the labor holiday to September to bury the memory of Haymarket. Be careful. The **September** date came from union parades and state holiday laws in the 1880s — Oregon passed the first state Labor Day law in 1887 — well before Congress made the first Monday in September a federal holiday on **June 28, 1894** (U.S. Department of Labor, n.d.). The *motives* of the men who voted for it are a matter of interpretation. The *dates* are not. Keep those apart.
 
 :::reveal Who threw the bomb at Haymarket on May 4, 1886? ||| Nobody knows. The state never identified or produced the bomb-thrower; the prosecution's theory was that the defendants had incited an unknown person, and the judge instructed the jury that the bomber's identity did not matter. Four men were executed anyway. Any source that names the bomber with confidence is going beyond the evidence.
 
@@ -799,7 +799,7 @@ Cut out. Not by an oversight. **By a clause.**
 
 **Why this is not a technicality.**
 
-In the 1930s, agricultural and domestic labour were the occupations in which Black Americans, the great majority of whom still lived in the rural South, were overwhelmingly concentrated. To write "not agricultural laborers, not domestic servants" into a statute in 1935 was to write a very large share of Black workers out of the country's central labor law without ever using a racial word. Mexican and Mexican-American farm workers in the Southwest were removed by the same clause.
+In the 1930s, agricultural and domestic labor were the occupations in which Black Americans, the great majority of whom still lived in the rural South, were overwhelmingly concentrated. To write "not agricultural laborers, not domestic servants" into a statute in 1935 was to write a very large share of Black workers out of the country's central labor law without ever using a racial word. Mexican and Mexican-American farm workers in the Southwest were removed by the same clause.
 
 The same exclusions appear in the **Social Security Act of 1935** and, in a different form, the **Fair Labor Standards Act of 1938**, the minimum-wage and overtime law. It is a pattern, not a coincidence.
 
@@ -807,7 +807,7 @@ The same exclusions appear in the **Social Security Act of 1935** and, in a diff
 
 - **The text is not in dispute.** You just read it.
 - **The effect is not in dispute.** It excluded a disproportionate share of Black and Latino workers, and that is measurable.
-- **The motive is a historical argument.** The most influential scholarly case that the exclusion was a deliberate, race-conscious concession is Juan Perea's *The Echoes of Slavery* (2011), which traces the price Southern Democrats — who chaired the key congressional committees — demanded for supporting New Deal legislation. Other scholars point out that similar exclusions existed in earlier labour statutes and were also defended on administrative grounds. **You do not have to resolve that to see clearly.** A law can be racially devastating in effect whether or not you can prove what was in a particular senator's head, and the effect is what the workers lived.
+- **The motive is a historical argument.** The most influential scholarly case that the exclusion was a deliberate, race-conscious concession is Juan Perea's *The Echoes of Slavery* (2011), which traces the price Southern Democrats — who chaired the key congressional committees — demanded for supporting New Deal legislation. Other scholars point out that similar exclusions existed in earlier labor statutes and were also defended on administrative grounds. **You do not have to resolve that to see clearly.** A law can be racially devastating in effect whether or not you can prove what was in a particular senator's head, and the effect is what the workers lived.
 
 **The consequence: organizing outside the law.**
 
@@ -1385,7 +1385,7 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
     {
       slug: "unions-own-exclusion-history",
       section: "Section 5 · The parts a comfortable course skips",
-      title: "16 · The colour bar: unions' own history of exclusion",
+      title: "16 · The color bar: unions' own history of exclusion",
       recallContent: [
         {
           prompt: "What was the US union membership rate in 2025, and what was it in 1983?",
@@ -1418,7 +1418,7 @@ Read that holding carefully. The Supreme Court in 1944 had to *invent a rule* th
 
 The pattern is different but the mechanism is the same. Women were kept out of the craft apprenticeships that led to skilled, well-paid trades. Contracts negotiated by unions maintained **separate seniority lines** by sex, so a woman could not bid on a "man's" job no matter how long she had been there. Unions bargained for a "family wage", a wage for a male breadwinner, which was an argument *for* paying women less. And some of the largest unions in the country were majority-women organizations run almost entirely by men.
 
-**When did this become illegal?** Not in 1935. **Title VII of the Civil Rights Act of 1964** made it an unlawful employment practice for a **labor organization**, expressly, not just an employer, to exclude or segregate members, or to classify them, on the basis of race, colour, religion, sex, or national origin (42 U.S.C. § 2000e-2(c)). Congress had to name unions in the statute.
+**When did this become illegal?** Not in 1935. **Title VII of the Civil Rights Act of 1964** made it an unlawful employment practice for a **labor organization**, expressly, not just an employer, to exclude or segregate members, or to classify them, on the basis of race, color, religion, sex, or national origin (42 U.S.C. § 2000e-2(c)). Congress had to name unions in the statute.
 
 **And it goes right to the top.** In August 1963, the AFL-CIO's executive council **declined to endorse the March on Washington for Jobs and Freedom.** Walter Reuther of the United Auto Workers moved for a strong endorsement; among the federation's leadership only **A. Philip Randolph**, whom you meet in the next lesson, supported him. AFL-CIO president George Meany would not back the march. The UAW endorsed it anyway, and Reuther spoke from the podium (King Institute, Stanford, n.d.).
 
@@ -1460,13 +1460,13 @@ The pattern is different but the mechanism is the same. Women were kept out of t
 
 Notice the mechanism. **He got it by threatening to withhold and to mobilize.** That is a labor tactic, applied to a civil-rights demand, by a union president.
 
-**1963.** Randolph is the chief architect of the **March on Washington for Jobs and Freedom**, and his lieutenant Bayard Rustin organizes it. Look at the name. **"For Jobs and Freedom."** The economic half is in the title, and it is the half that gets dropped. It was a march for a higher minimum wage, for a jobs programme, for the right to work, as much as for the right to vote.
+**1963.** Randolph is the chief architect of the **March on Washington for Jobs and Freedom**, and his lieutenant Bayard Rustin organizes it. Look at the name. **"For Jobs and Freedom."** The economic half is in the title, and it is the half that gets dropped. It was a march for a higher minimum wage, for a jobs program, for the right to work, as much as for the right to vote.
 
 ---
 
 **And then Memphis.**
 
-**February 1, 1968.** Two Memphis sanitation workers, **Echol Cole and Robert Walker**, take shelter from the rain in the back of a garbage truck, because Black sanitation workers were not permitted to shelter in white neighbourhoods. The compactor malfunctions and crushes them to death. The city pays their families almost nothing.
+**February 1, 1968.** Two Memphis sanitation workers, **Echol Cole and Robert Walker**, take shelter from the rain in the back of a garbage truck, because Black sanitation workers were not permitted to shelter in white neighborhoods. The compactor malfunctions and crushes them to death. The city pays their families almost nothing.
 
 **February 12, 1968.** Roughly 1,300 Black sanitation workers walk out. They are asking for union recognition, **AFSCME Local 1733**, for a living wage, and for the city to stop treating them as disposable. Mayor Henry Loeb refuses to recognize the union.
 
@@ -1474,7 +1474,7 @@ They carry signs that say four words:
 
 > ### I AM A MAN
 
-That is the entire demand. It is a wage demand and it is a demand to be recognised as a human being, and the strikers understood, better than most people who quote them now, that in their lives those were the same demand.
+That is the entire demand. It is a wage demand and it is a demand to be recognized as a human being, and the strikers understood, better than most people who quote them now, that in their lives those were the same demand.
 
 **Martin Luther King Jr. came to Memphis to support that strike.** He came in March. He came back on **April 3, 1968**, and delivered the speech remembered as "I've Been to the Mountaintop", to a hall of striking sanitation workers.
 
@@ -1510,7 +1510,7 @@ He was there because 1,300 garbage collectors wanted a union.
         {
           prompt: "What is the full name of the 1963 March on Washington, and why does the course insist on it?",
           answer:
-            "The March on Washington for Jobs and Freedom. The economic half is in the title and is the half routinely dropped, it was a march for a higher minimum wage and a jobs programme as well as for voting rights.",
+            "The March on Washington for Jobs and Freedom. The economic half is in the title and is the half routinely dropped, it was a march for a higher minimum wage and a jobs program as well as for voting rights.",
         },
       ],
       body: `There is one more thing a comfortable course leaves out, and this one is uncomfortable in the other direction.
@@ -1661,7 +1661,7 @@ Which is exactly the skill the rest of this course is going to make you use on s
             ],
             correctIndex: 1,
             explanation:
-              "The economic half is in the title, and it is the half that gets dropped. It was a march for a higher minimum wage and a jobs programme as well as for the vote.",
+              "The economic half is in the title, and it is the half that gets dropped. It was a march for a higher minimum wage and a jobs program as well as for the vote.",
             sourceLessonSlug: "randolph-to-memphis",
           },
           {
@@ -1695,7 +1695,7 @@ Which is exactly the skill the rest of this course is going to make you use on s
             options: ["WE SHALL OVERCOME", "I AM A MAN", "UNION NOW", "JOBS AND FREEDOM"],
             correctIndex: 1,
             explanation:
-              "Four words that were simultaneously a wage demand and a demand to be recognised as a human being. The strikers understood those were the same demand.",
+              "Four words that were simultaneously a wage demand and a demand to be recognized as a human being. The strikers understood those were the same demand.",
             sourceLessonSlug: "randolph-to-memphis",
           },
           {
@@ -1783,11 +1783,11 @@ Start with the number, because it is startling. In 2024, trade union density was
 
 Why?
 
-**Q1, Who may organise?** Everyone, easily. But that is true in a lot of countries with 10% density, so it is not the explanation.
+**Q1, Who may organize?** Everyone, easily. But that is true in a lot of countries with 10% density, so it is not the explanation.
 
 **The real explanation is a piece of plumbing called the Ghent system.** In Denmark, Sweden, Finland, Iceland, and partly Belgium, **unemployment insurance is administered by union-affiliated funds**, not (only) by the state. To be insured against losing your job, you deal with an institution linked to your union, and joining the union is the natural, socially default step. The OECD (2025) is blunt about it: the countries where union membership is at or near 50% are essentially *the Ghent countries*, plus Norway.
 
-That is a devastating little fact, and you should let it change how you think. **Density in these countries is not primarily a story about how much workers love unions. It is a story about who runs the unemployment system.** Institutions shape behaviour. If you want to explain a country's union numbers, look for the plumbing before you reach for the culture.
+That is a devastating little fact, and you should let it change how you think. **Density in these countries is not primarily a story about how much workers love unions. It is a story about who runs the unemployment system.** Institutions shape behavior. If you want to explain a country's union numbers, look for the plumbing before you reach for the culture.
 
 **Q3, Who bargains with whom?** **Sectoral bargaining.** A union federation and an employers' federation negotiate for an entire *industry* at once, and the resulting agreement covers the firms in it. The consequence is remarkable: **Denmark and Sweden have no statutory national minimum wage at all.** Not because they don't believe in wage floors, because the wage floor is set by collective agreement, industry by industry, and covers nearly everybody without a law being needed (European Commission, 2022).
 
@@ -1873,7 +1873,7 @@ Toyota's workers have a Toyota union. Its members are the regular employees of T
 
 **Ask Question 3.** Who bargains with whom? The company's union bargains with the company. So the union's fortunes are tied, tightly and directly, to the firm's fortunes. If the company does badly, the union does badly. **This produces cooperation.** Japan's strike rates are among the lowest in the industrialized world, and Japanese unions have historically accepted restructuring in exchange for protecting the jobs of their members.
 
-**Then how does anyone get a raise?** Through a mechanism with no American equivalent: the **shuntō**, the "spring labour offensive." Every spring, enterprise unions across the whole economy bargain at roughly the same time. The national federation, **RENGO**, the Japanese Trade Union Confederation, formed in 1989, sets a target, big exporters settle first, and their settlement becomes the benchmark everyone else negotiates against. It is a way of getting *coordinated*, economy-wide wage-setting out of a movement organized company by company. In the 2024 shuntō, RENGO reported an average wage increase above **5%**, its highest in over three decades, after decades of near-flat wages (JILPT, 2025).
+**Then how does anyone get a raise?** Through a mechanism with no American equivalent: the **shuntō**, the "spring labor offensive." Every spring, enterprise unions across the whole economy bargain at roughly the same time. The national federation, **RENGO**, the Japanese Trade Union Confederation, formed in 1989, sets a target, big exporters settle first, and their settlement becomes the benchmark everyone else negotiates against. It is a way of getting *coordinated*, economy-wide wage-setting out of a movement organized company by company. In the 2024 shuntō, RENGO reported an average wage increase above **5%**, its highest in over three decades, after decades of near-flat wages (JILPT, 2025).
 
 **And now Question 2, which is where the model bleeds.**
 
@@ -1899,7 +1899,7 @@ Japan's estimated unionization rate was **16.1% as of June 30, 2024**, the lowes
         {
           prompt: "What is the shuntō, and what problem does it solve?",
           answer:
-            "Japan's annual 'spring labour offensive': enterprise unions across the economy bargain at roughly the same time, with RENGO setting a target and big exporters' settlements becoming the benchmark. It produces coordinated, economy-wide wage-setting from a movement organized company by company.",
+            "Japan's annual 'spring labor offensive': enterprise unions across the economy bargain at roughly the same time, with RENGO setting a target and big exporters' settlements becoming the benchmark. It produces coordinated, economy-wide wage-setting from a movement organized company by company.",
         },
         {
           prompt: "What was Japan's estimated unionization rate as of June 2024?",
@@ -1914,7 +1914,7 @@ It is not a weak union. It is a **different kind of object**, and calling it a "
 
 **Run the four questions, straight down the statute.**
 
-**Q1, Who is allowed to organise?** Under China's **Trade Union Law**, trade unions operate **under the leadership of the Communist Party of China**, and the ACFTU is the single, unified national trade union organization. A union at a workplace must **affiliate to the ACFTU**, and establishing one requires **approval from the trade union body at the next level up**.
+**Q1, Who is allowed to organize?** Under China's **Trade Union Law**, trade unions operate **under the leadership of the Communist Party of China**, and the ACFTU is the single, unified national trade union organization. A union at a workplace must **affiliate to the ACFTU**, and establishing one requires **approval from the trade union body at the next level up**.
 
 So: you may join a union. You may not found an **independent** one. There is one union, its structure runs upward to a federation, and that federation's leadership relationship is defined by law as running to the party.
 
@@ -1922,11 +1922,11 @@ So: you may join a union. You may not found an **independent** one. There is one
 
 **Q3, Who bargains with whom?** The workplace union is, structurally, part of an apparatus whose loyalties the law defines. When a dispute pits workers against an employer, particularly a state-linked employer, or a major local one, the union is not a straightforwardly independent party to it. In practice the ACFTU does a great deal of real work, welfare administration, legal aid, some wage negotiation, and it would be a caricature to say it does nothing for workers. **But it is not, and is not designed to be, an organization whose first duty is to its members against the state.**
 
-**Q4, What happens to you if you try?** The right to strike appeared in China's 1975 and 1978 constitutions. It was **removed from the 1982 Constitution** and is not a constitutional right today (Chang & Brown, 2017). Strikes still happen, a lot of them, but they happen *outside* any legal framework that protects the people who join them. Workers who attempt to organize independently, and the labour NGOs and activists who assist them, have been detained; international bodies including the ILO's supervisory machinery and the International Trade Union Confederation have raised this repeatedly (ITUC, n.d.).
+**Q4, What happens to you if you try?** The right to strike appeared in China's 1975 and 1978 constitutions. It was **removed from the 1982 Constitution** and is not a constitutional right today (Chang & Brown, 2017). Strikes still happen, a lot of them, but they happen *outside* any legal framework that protects the people who join them. Workers who attempt to organize independently, and the labor NGOs and activists who assist them, have been detained; international bodies including the ILO's supervisory machinery and the International Trade Union Confederation have raised this repeatedly (ITUC, n.d.).
 
 **And the international marker.** China has **not ratified** ILO Convention No. **87** (Freedom of Association and Protection of the Right to Organise, 1948) or Convention No. **98** (Right to Organise and Collective Bargaining, 1949), the two conventions that define the international floor you will meet in Section 7 (ILO NORMLEX, n.d.).
 
-**Why this lesson is in the course.** Not to score a political point. Because it teaches you the sharpest possible version of **Question 1**. In most of this course, "who may organise?" has been a question about *obstacles*, cost, retaliation, exclusion, hostile employers. In China it is a question about **definition**: the thing you are permitted to join is not the thing an American or a Swede means by the word.
+**Why this lesson is in the course.** Not to score a political point. Because it teaches you the sharpest possible version of **Question 1**. In most of this course, "who may organize?" has been a question about *obstacles*, cost, retaliation, exclusion, hostile employers. In China it is a question about **definition**: the thing you are permitted to join is not the thing an American or a Swede means by the word.
 
 When you compare countries, the word "union" is not a fixed unit. **Check what the institution actually is before you compare the numbers.** A membership figure means nothing if you have not asked who the organization answers to.
 
@@ -1949,7 +1949,7 @@ When you compare countries, the word "union" is not a fixed unit. **Check what t
         {
           prompt: "Which two ILO conventions has China not ratified, and what do they cover?",
           answer:
-            "Convention No. 87 (freedom of association and the right to organise, 1948) and Convention No. 98 (the right to organise and bargain collectively, 1949).",
+            "Convention No. 87 (freedom of association and the right to organize, 1948) and Convention No. 98 (the right to organize and bargain collectively, 1949).",
         },
         {
           prompt: "What happened to the right to strike in China's constitution?",
@@ -1975,7 +1975,7 @@ The state's answer came on **13 December 1981**: **martial law**. Solidarity was
 
 And then it won. The **Round Table talks** of February-April **1989** produced partly free elections in **June 1989**, which Solidarity's candidates swept. Poland became the first Soviet-bloc country to break, and the rest of the bloc followed within months.
 
-**Sit with what that means.** A trade union, a *trade union*, was the instrument that ended communist rule in Poland. Question 1 ("who may organise?") turned out, in a one-party state, to be the same question as "who governs?"
+**Sit with what that means.** A trade union, a *trade union*, was the instrument that ended communist rule in Poland. Question 1 ("who may organize?") turned out, in a one-party state, to be the same question as "who governs?"
 
 ---
 
@@ -1985,7 +1985,7 @@ Under apartheid, Black South Africans could not vote. Black trade unions were, f
 
 In **1973**, a wave of strikes broke out in **Durban**, large, spreading, and impossible to ignore. In **1979**, the government-appointed **Wiehahn Commission** recommended that Black trade unions be granted **legal recognition** and brought into the registration system. The regime's reasoning was **control**: unregistered Black unions were growing anyway, and a registered union can be regulated. In **1985**, the **Congress of South African Trade Unions (COSATU)** was founded, and it turned that legal opening into a weapon.
 
-Because Black workers had **no vote**, the union became the political vehicle. COSATU's strikes and "stayaways" were not only about wages; they were about apartheid. **In a country where you cannot vote, withdrawing your labour is the ballot you have.** COSATU, allied with the ANC and the United Democratic Front, became one of the central engines of the movement that ended apartheid in 1994.
+Because Black workers had **no vote**, the union became the political vehicle. COSATU's strikes and "stayaways" were not only about wages; they were about apartheid. **In a country where you cannot vote, withdrawing your labor is the ballot you have.** COSATU, allied with the ANC and the United Democratic Front, became one of the central engines of the movement that ended apartheid in 1994.
 
 **And then it got complicated, which is the part you must not skip.** After 1994 COSATU entered a formal governing alliance with the ANC, the party it had helped bring to power. A union federation allied to the governing party is in a genuinely difficult position: it must bargain with a state run by its own allies. That tension is live and **actively contested in South African politics today**, and it is not this course's job to adjudicate it. In **August 2012**, police killed **34 striking miners at Marikana**; a judicial commission of inquiry reported in **2015**, and responsibility for what happened remains politically contested and litigated. It is a reminder that a union movement's relationship to a state it helped create does not stay simple.
 
@@ -1993,7 +1993,7 @@ Because Black workers had **no vote**, the union became the political vehicle. C
 
 **What both cases teach.** When workers have no other legal channel, no vote, no party, no free press, **the union becomes the channel**, and the state understands that perfectly well. That is why authoritarian governments so often permit *a* union and forbid *an independent* one. They are not confused about what a union is. They know exactly what it is.
 
-:::reveal Why did a trade union become the vehicle for democratic change in both Poland and apartheid South Africa? ||| Because in each case workers had no other legal channel, no free vote, no independent party, no free press. When the union is the only organization the state has failed to control, "who may organise?" becomes the same question as "who governs?", which is precisely why authoritarian states permit a union but forbid an independent one.
+:::reveal Why did a trade union become the vehicle for democratic change in both Poland and apartheid South Africa? ||| Because in each case workers had no other legal channel, no free vote, no independent party, no free press. When the union is the only organization the state has failed to control, "who may organize?" becomes the same question as "who governs?", which is precisely why authoritarian states permit a union but forbid an independent one.
 
 ## Sources
 - UNESCO. (n.d.). *Twenty-one demands, Gdańsk, August 1980: The birth of the Solidarity trade union*. Memory of the World Register. https://www.unesco.org/en/memory-world/twenty-one-demands-gdansk-august-1980-birth-solidarity-trades-union-massive-social-movement
@@ -2009,12 +2009,12 @@ Because Black workers had **no vote**, the union became the political vehicle. C
       recallContent: [
         {
           prompt: "What was the first of Solidarity's 21 Demands at Gdańsk in August 1980?",
-          answer: "The right to form free trade unions, independent of the Communist Party. Not pay, the right to organise.",
+          answer: "The right to form free trade unions, independent of the Communist Party. Not pay, the right to organize.",
         },
         {
           prompt: "Why did COSATU's strikes function as politics in apartheid South Africa?",
           answer:
-            "Because Black South Africans could not vote. In a country where you cannot vote, withdrawing your labour is the ballot you have.",
+            "Because Black South Africans could not vote. In a country where you cannot vote, withdrawing your labor is the ballot you have.",
         },
       ],
       body: `The last stop is the hardest, and the course would be dishonest without it. Everywhere else in this section, workers had *some* answer to Question 4, *what happens if you try?* Here, for a very large number of people, the answer is close to: **everything you have.**
@@ -2027,7 +2027,7 @@ Across much of the Gulf, migrant workers, who in several of these countries are 
 
 **What has changed, and this is real, and you should say so.**
 
-Qatar, under sustained international scrutiny and in a formal programme with the ILO, made substantial legal reforms in 2020:
+Qatar, under sustained international scrutiny and in a formal program with the ILO, made substantial legal reforms in 2020:
 
 - **Law No. 17 of 2020** introduced a **non-discriminatory minimum wage**, the first in the region, of **QAR 1,000 per month**, plus allowances for food and accommodation where the employer does not provide them.
 - **Law No. 19 of 2020** **removed the No-Objection Certificate requirement**, so a migrant worker can change jobs without needing the employer's permission. Exit-permit requirements had been removed earlier.
@@ -2042,7 +2042,7 @@ So run the four questions honestly, as of **2026**:
 
 | | Answer |
 |---|---|
-| **Q1, who may organise?** | Nationals. Migrant workers, who are most of the workforce, may not form or join a trade union. |
+| **Q1, who may organize?** | Nationals. Migrant workers, who are most of the workforce, may not form or join a trade union. |
 | **Q2, who is excluded?** | The majority of the people doing the work. |
 | **Q3, who bargains with whom?** | Largely, nobody bargains. There are consultative joint committees; there is a minimum wage set by law. |
 | **Q4, what happens if you try?** | Your legal presence in the country has historically depended on your employer. Reforms have loosened that; enforcement is contested. |
@@ -2078,7 +2078,7 @@ The mechanism is not exotic. It is the oldest one there is.
             options: [
               "A system of sectoral bargaining used in Belgium",
               "Unemployment insurance run by union funds",
-              "A treaty setting minimum labour standards in Europe",
+              "A treaty setting minimum labor standards in Europe",
               "A form of board-level worker representation",
             ],
             correctIndex: 1,
@@ -2160,7 +2160,7 @@ The mechanism is not exotic. It is the oldest one there is.
               "The union's own national leadership committee",
               "ALL employees in a workplace, not just members",
               "The company's private shareholders only",
-              "The federal labour ministry in Berlin",
+              "The federal labor ministry in Berlin",
             ],
             correctIndex: 1,
             explanation:
@@ -2197,7 +2197,7 @@ The mechanism is not exotic. It is the oldest one there is.
             prompt: "What is Japan's shuntō?",
             options: [
               "A federal law requiring annual national wage increases",
-              "The 'spring labour offensive' of enterprise unions",
+              "The 'spring labor offensive' of enterprise unions",
               "A total ban on all strikes during springtime",
               "A government-run national wage board",
             ],
@@ -2242,7 +2242,7 @@ The mechanism is not exotic. It is the oldest one there is.
             ],
             correctIndex: 1,
             explanation:
-              "Not pay, the right to organise. In a one-party state, Question 1 (\"who may organise?\") turned out to be the same question as \"who governs?\"",
+              "Not pay, the right to organize. In a one-party state, Question 1 (\"who may organize?\") turned out to be the same question as \"who governs?\"",
             sourceLessonSlug: "solidarity-and-cosatu",
           },
           {
@@ -2255,7 +2255,7 @@ The mechanism is not exotic. It is the oldest one there is.
             ],
             correctIndex: 1,
             explanation:
-              "COSATU (founded 1985) turned that legal opening into a weapon. Because Black South Africans could not vote, withdrawing labour was the ballot they had.",
+              "COSATU (founded 1985) turned that legal opening into a weapon. Because Black South Africans could not vote, withdrawing labor was the ballot they had.",
             sourceLessonSlug: "solidarity-and-cosatu",
           },
           {
@@ -2335,14 +2335,14 @@ Some conventions are designated **fundamental**. There were **eight** for decade
 | Principle | Core conventions |
 |---|---|
 | Freedom of association & collective bargaining | **C087** (1948), **C098** (1949) |
-| Elimination of forced labour | C029 (1930), C105 (1957) |
-| Abolition of child labour | C138 (1973), C182 (1999) |
+| Elimination of forced labor | C029 (1930), C105 (1957) |
+| Abolition of child labor | C138 (1973), C182 (1999) |
 | Elimination of discrimination at work | C100 (1951), C111 (1958) |
 | A safe and healthy working environment | C155 (1981), C187 (2006), *added 2022* |
 
 **Now the uncomfortable table, and it is the reason this lesson exists.**
 
-**The United States has ratified only two of the fundamental conventions**, C105 (abolition of forced labour) and C182 (worst forms of child labour). **It has not ratified C087 or C098**, the freedom-of-association and collective-bargaining conventions. Neither has China. Neither has Qatar (ILO NORMLEX, n.d.).
+**The United States has ratified only two of the fundamental conventions**, C105 (abolition of forced labor) and C182 (worst forms of child labor). **It has not ratified C087 or C098**, the freedom-of-association and collective-bargaining conventions. Neither has China. Neither has Qatar (ILO NORMLEX, n.d.).
 
 That should stop you. Three countries that could hardly be more different, on the same list, on the two conventions that are the heart of everything this course has been about.
 
@@ -2358,7 +2358,7 @@ Two things, and be precise about both.
 
 **The floor is a floor the way a line painted on the ground is a fence.**
 
-:::reveal Which two of the ILO's ten fundamental conventions has the United States NOT ratified, and who else has not? ||| C087 (freedom of association, 1948) and C098 (the right to organise and bargain collectively, 1949). The US has ratified only two fundamental conventions in total (C105 and C182). China and Qatar have also not ratified C087 or C098.
+:::reveal Which two of the ILO's ten fundamental conventions has the United States NOT ratified, and who else has not? ||| C087 (freedom of association, 1948) and C098 (the right to organize and bargain collectively, 1949). The US has ratified only two fundamental conventions in total (C105 and C182). China and Qatar have also not ratified C087 or C098.
 
 ## Sources
 - International Labour Organization. (n.d.). *Conventions, protocols and recommendations*. https://www.ilo.org/international-labour-standards/conventions-protocols-and-recommendations
@@ -2391,7 +2391,7 @@ You now have a tool that works on any country, including ones this course never 
 
 ## The four questions
 
-**1. Who is allowed to organise?**
+**1. Who is allowed to organize?**
 Is forming a union legal? For everyone, or some? Can you found your **own** union, or only join the one that exists? Can there be more than one?
 *(This is what separated Sweden from China. It is also what Solidarity's very first demand was about.)*
 
@@ -2417,7 +2417,7 @@ Do not take a country's word for it, and do not take an activist's. Triangulate.
 | **ILO NORMLEX** (normlex.ilo.org) | Which conventions a country has ratified. Free, official, unarguable. Start here. |
 | **ILOSTAT** (ilostat.ilo.org) | Union density and collective bargaining coverage, by country and year. |
 | **OECD/AIAS ICTWSS database** | Density, coverage and bargaining structure for OECD countries. |
-| **The country's own labour statute** | The actual text. Boring, and decisive. |
+| **The country's own labor statute** | The actual text. Boring, and decisive. |
 | **US Dept of State country human rights reports** | Annual, per country, includes a freedom-of-association section. Written by a government, read accordingly. |
 | **ITUC Global Rights Index** | Annual rating of workers' rights. Written by a trade-union federation, read accordingly. |
 | **ILO Committee on Freedom of Association case reports** | Actual complaints, actual findings, against actual governments. |
@@ -2446,7 +2446,7 @@ That person is very hard to fool.
 
 > **Where to go next.** For what your rights are on the job **today** — protected concerted activity, retaliation, at-will employment, and how to read a contract — take the companion course, ***Know Your Rights at Work***. This course told you where those rights came from and who was cut out of them. That one tells you what to do on Monday.
 
-:::reveal What single check would tell you fastest whether a country's stated commitment to workers' rights is more than words? ||| Look up its ratifications in ILO NORMLEX, specifically Conventions 87 and 98, and then, separately, check what the country's own labour statute actually says about who may form a union. Ratification is free and official; the statute is decisive. Then triangulate two motivated sources (e.g. the State Department and the ITUC) and go looking in the gap between them.
+:::reveal What single check would tell you fastest whether a country's stated commitment to workers' rights is more than words? ||| Look up its ratifications in ILO NORMLEX, specifically Conventions 87 and 98, and then, separately, check what the country's own labor statute actually says about who may form a union. Ratification is free and official; the statute is decisive. Then triangulate two motivated sources (e.g. the State Department and the ITUC) and go looking in the gap between them.
 
 ## Sources
 - International Labour Organization. (n.d.). *NORMLEX: Information system on international labour standards*. https://normlex.ilo.org/
@@ -2525,7 +2525,7 @@ These are the specific, checkable facts this course wants in your head, the ones
           {
             prompt: "The Memphis strikers' placards read \"I AM A ___.\"",
             answer: "man",
-            explanation: "Simultaneously a wage demand and a demand to be recognised as a human being. The strikers understood those were the same demand.",
+            explanation: "Simultaneously a wage demand and a demand to be recognized as a human being. The strikers understood those were the same demand.",
           },
           {
             prompt: "Permanent replacement of economic strikers was made lawful in the private sector not by Reagan in 1981 but by the Supreme Court in NLRB v. Mackay Radio in ___ (year).",
@@ -2563,7 +2563,7 @@ These are the specific, checkable facts this course wants in your head, the ones
             prompt: "Solidarity's very first demand at Gdańsk in August 1980 was not about pay. It was the right to form free trade unions ___ of the Communist Party.",
             answer: "independent",
             explanation:
-              "In a one-party state, \"who may organise?\" turned out to be the same question as \"who governs?\" Poland's communist government fell in 1989.",
+              "In a one-party state, \"who may organize?\" turned out to be the same question as \"who governs?\" Poland's communist government fell in 1989.",
           },
         ],
       },
@@ -2621,7 +2621,7 @@ These are the specific, checkable facts this course wants in your head, the ones
             ],
             correctIndex: 1,
             explanation:
-              "Five principles: freedom of association and collective bargaining; elimination of forced labour; abolition of child labour; elimination of discrimination; and (since 2022) a safe and healthy working environment.",
+              "Five principles: freedom of association and collective bargaining; elimination of forced labor; abolition of child labor; elimination of discrimination; and (since 2022) a safe and healthy working environment.",
             sourceLessonSlug: "the-ilo-and-how-weakly-it-binds",
           },
           {
@@ -2668,7 +2668,7 @@ These are the specific, checkable facts this course wants in your head, the ones
             ],
             correctIndex: 1,
             explanation:
-              "NORMLEX lists every ratification. Start there, then read the country's own labour statute, which is boring, and decisive.",
+              "NORMLEX lists every ratification. Start there, then read the country's own labor statute, which is boring, and decisive.",
             sourceLessonSlug: "apply-the-four-questions",
           },
           {
@@ -2713,7 +2713,7 @@ These are the specific, checkable facts this course wants in your head, the ones
           {
             prompt: "Which question of the four explains why Germany, with a union membership rate close to America's, has roughly five times the bargaining coverage?",
             options: [
-              "Q1, who is allowed to organise a union?",
+              "Q1, who is allowed to organize a union?",
               "Q2, who is excluded?",
               "Q3, who bargains with whom, at what level?",
               "Q4, what happens to you if you dare to try?",
@@ -2726,7 +2726,7 @@ These are the specific, checkable facts this course wants in your head, the ones
           {
             prompt: "Which question of the four connects the NLRA's \"agricultural laborer\" clause, Qatar's migrant workforce, Japan's non-regular workers, and the AFL's apprenticeships?",
             options: [
-              "Q1, who is allowed to organise?",
+              "Q1, who is allowed to organize?",
               "Q2, who is excluded?",
               "Q3, who bargains with whom?",
               "Q4, what happens to you if you try?",
@@ -2742,7 +2742,7 @@ These are the specific, checkable facts this course wants in your head, the ones
               "To make you pro-union",
               "To make you anti-union",
               "To make you the person who asks the questions",
-              "To prepare you for a career in labour law",
+              "To prepare you for a career in labor law",
             ],
             correctIndex: 2,
             explanation:

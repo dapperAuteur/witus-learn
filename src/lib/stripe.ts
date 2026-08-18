@@ -45,6 +45,44 @@ export async function ensureCoursePrice(
   return price.id;
 }
 
+/**
+ * The Stripe PRODUCT for a course (created + cached if missing), without creating a Price.
+ *
+ * A codeless promotion charges an amount that is not the course's list price, and the honest way to
+ * do that is an ad-hoc `price_data` line item on the Checkout Session, NOT rewriting the cached
+ * `stripe_price_id` (which would leave the list price unrepresented the moment the sale ends) and
+ * certainly not rewriting `courses.price`. `price_data` still needs a product to hang off, so this
+ * gives it the same one the list price uses.
+ */
+export async function ensureCourseProduct(
+  stripe: Stripe,
+  tenantId: string,
+  course: Course,
+): Promise<string> {
+  if (course.stripeProductId) return course.stripeProductId;
+  const product = await stripe.products.create({
+    name: course.title,
+    metadata: { course_id: course.id },
+  });
+  await updateCourse(tenantId, course.id, { stripeProductId: product.id });
+  return product.id;
+}
+
+/** The Stripe product for a bundle (created + cached if missing). Mirrors ensureCourseProduct. */
+export async function ensureBundleProduct(
+  stripe: Stripe,
+  tenantId: string,
+  bundle: Bundle,
+): Promise<string> {
+  if (bundle.stripeProductId) return bundle.stripeProductId;
+  const product = await stripe.products.create({
+    name: bundle.title,
+    metadata: { bundle_id: bundle.id },
+  });
+  await updateBundleStripe(tenantId, bundle.id, { stripeProductId: product.id });
+  return product.id;
+}
+
 // ── Connect (instructor payouts) ─────────────────────────────────────────────
 
 /** Existing Connect account id, or a new Express account for the instructor. */
@@ -96,7 +134,19 @@ export async function createCourseCheckout(opts: {
   tenant: TenantRecord;
   course: Course;
   userId: string;
-  priceId: string;
+  /** The cached list price. Required unless a promotional amount is passed instead. */
+  priceId?: string | null;
+  /**
+   * A codeless promotion's resolved amount, in cents, ALWAYS re-computed on the server. When set,
+   * the session is built from an ad-hoc price_data line item at this amount (see
+   * ensureCourseProduct) instead of the cached list price, so the stored list price is never
+   * overwritten by a sale.
+   */
+  saleAmountCents?: number | null;
+  /** The course's Stripe product, required with saleAmountCents. */
+  productId?: string | null;
+  /** The promotion that produced saleAmountCents, recorded on the session for reconciliation. */
+  promotionId?: string | null;
   siteUrl: string;
   connectAccountId?: string | null;
   feePercent?: number;
@@ -109,6 +159,9 @@ export async function createCourseCheckout(opts: {
     course,
     userId,
     priceId,
+    saleAmountCents,
+    productId,
+    promotionId,
     siteUrl,
     connectAccountId,
     feePercent = 0,
@@ -117,7 +170,9 @@ export async function createCourseCheckout(opts: {
   } = opts;
   const isSub = course.priceType === "subscription";
   const descriptor = tenant.stripe.statementDescriptor;
-  const amountCents = Math.round(Number(course.price) * 100);
+  // The Connect transfer and the platform fee follow what is actually charged, not the list price:
+  // a fee computed on $19 for a $9 sale would overdraw the payment.
+  const amountCents = saleAmountCents ?? Math.round(Number(course.price) * 100);
 
   const paymentIntentData: Stripe.Checkout.SessionCreateParams.PaymentIntentData = {};
   if (!isSub && descriptor) paymentIntentData.statement_descriptor_suffix = descriptor.slice(0, 22);
@@ -140,7 +195,14 @@ export async function createCourseCheckout(opts: {
 
   const session = await stripe.checkout.sessions.create({
     mode: isSub ? "subscription" : "payment",
-    line_items: [{ price: priceId, quantity: 1 }],
+    line_items: [
+      saleAmountCents != null && productId
+        ? {
+            price_data: { currency: "usd", unit_amount: saleAmountCents, product: productId },
+            quantity: 1,
+          }
+        : { price: priceId as string, quantity: 1 },
+    ],
     // Fulfill on return (backstop for the webhook, which can lag or, in dev, never arrive). The verify
     // route enrolls idempotently and redirects to the now-unlocked course. See /api/checkout/verify.
     success_url: `${siteUrl}/api/checkout/verify?session_id={CHECKOUT_SESSION_ID}`,
@@ -152,6 +214,7 @@ export async function createCourseCheckout(opts: {
       tenant_id: tenant.id,
       attempt_number: "1",
       ...(promoId ? { promo_id: promoId } : {}),
+      ...(promotionId ? { promotion_id: promotionId } : {}),
     },
     ...(couponId ? { discounts: [{ coupon: couponId }] } : {}),
     ...(Object.keys(paymentIntentData).length ? { payment_intent_data: paymentIntentData } : {}),
@@ -226,12 +289,28 @@ export async function createBundleCheckout(opts: {
   tenant: TenantRecord;
   bundle: Bundle;
   userId: string;
-  priceId: string;
+  priceId?: string | null;
+  /** Resolved codeless-promotion amount in cents; see createCourseCheckout. */
+  saleAmountCents?: number | null;
+  productId?: string | null;
+  promotionId?: string | null;
   siteUrl: string;
   couponId?: string | null;
   promoId?: string | null;
 }): Promise<string | null> {
-  const { stripe, tenant, bundle, userId, priceId, siteUrl, couponId, promoId } = opts;
+  const {
+    stripe,
+    tenant,
+    bundle,
+    userId,
+    priceId,
+    saleAmountCents,
+    productId,
+    promotionId,
+    siteUrl,
+    couponId,
+    promoId,
+  } = opts;
   const isSub = bundle.priceType === "subscription";
   const descriptor = tenant.stripe.statementDescriptor;
 
@@ -240,7 +319,14 @@ export async function createBundleCheckout(opts: {
 
   const session = await stripe.checkout.sessions.create({
     mode: isSub ? "subscription" : "payment",
-    line_items: [{ price: priceId, quantity: 1 }],
+    line_items: [
+      saleAmountCents != null && productId
+        ? {
+            price_data: { currency: "usd", unit_amount: saleAmountCents, product: productId },
+            quantity: 1,
+          }
+        : { price: priceId as string, quantity: 1 },
+    ],
     // Same verify-on-return backstop as a course; it enrolls the buyer in every member course and
     // sends them to /my-courses. See /api/checkout/verify.
     success_url: `${siteUrl}/api/checkout/verify?session_id={CHECKOUT_SESSION_ID}`,
@@ -251,6 +337,7 @@ export async function createBundleCheckout(opts: {
       user_id: userId,
       tenant_id: tenant.id,
       ...(promoId ? { promo_id: promoId } : {}),
+      ...(promotionId ? { promotion_id: promotionId } : {}),
     },
     ...(couponId ? { discounts: [{ coupon: couponId }] } : {}),
     ...(Object.keys(paymentIntentData).length ? { payment_intent_data: paymentIntentData } : {}),

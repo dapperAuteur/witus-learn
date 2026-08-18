@@ -1311,7 +1311,7 @@ Answer with one word unless the item says otherwise. Spelling is forgiving. When
       ],
       body: `You now have both halves. Here is the assembled protocol, which is what the intervention studies actually administer.
 
-The clearest published description of the procedure is in the methods of the exercise trial: participants **named their most important wish** in the target domain, **mentally elaborated the most positive aspect** they associated with realising it, then **named and elaborated the most critical obstacle**, and finally **formed three implementation intentions** (Stadler, Oettingen, & Gollwitzer, 2009). That is the four-step protocol, and Oettingen's team teaches the same four steps to the public under the four ordinary words **wish, outcome, obstacle, plan**.
+The clearest published description of the procedure is in the methods of the exercise trial: participants **named their most important wish** in the target domain, **mentally elaborated the most positive aspect** they associated with realizing it, then **named and elaborated the most critical obstacle**, and finally **formed three implementation intentions** (Stadler, Oettingen, & Gollwitzer, 2009). That is the four-step protocol, and Oettingen's team teaches the same four steps to the public under the four ordinary words **wish, outcome, obstacle, plan**.
 
 | Step | What you produce | Why it is there |
 | --- | --- | --- |
@@ -1334,7 +1334,7 @@ The clearest published description of the procedure is in the methods of the exe
 - **Obstacle:** I never log my hours as I go, so when invoicing day comes I cannot face reconstructing the month, and I put it off.
 - **Plan:** If I close my laptop at the end of a working day, then I will log that day's hours before I stand up.
 
-Notice what that plan is *not*. It is not "invoice on time." It is not "be more organised." It attacks the **obstacle**, which was never the invoicing at all. It was the logging. That is what the obstacle step is for: it moves the intervention from the place where the pain shows up to the place where the failure actually happens.
+Notice what that plan is *not*. It is not "invoice on time." It is not "be more organized." It attacks the **obstacle**, which was never the invoicing at all. It was the logging. That is what the obstacle step is for: it moves the intervention from the place where the pain shows up to the place where the failure actually happens.
 
 (This mapping of the four steps onto getting paid as a freelancer is BAM's, from the *She Clocked In* series, and it is a correct and non-trivial application of the method.)
 
@@ -1582,7 +1582,7 @@ Answer with one word. Spelling is forgiving.`,
             options: [
               "There is honestly no real difference between the two at all",
               "A label is a word; elaboration is the vivid room, hour, and feeling",
-              "Labelling is the research-backed method; elaboration is folk advice",
+              "Labeling is the research-backed method; elaboration is folk advice",
               "Elaboration means writing out at least 500 full words on it",
             ],
             correctIndex: 1,
@@ -1724,7 +1724,7 @@ Answer with one word. Spelling is forgiving.`,
             prompt: "This course tells you to go and use the free WOOP app and website. What is the accompanying disclosure?",
             options: [
               "That the whole course earns a sales commission from it",
-              "That it has no affiliation with or licence from Oettingen's team",
+              "That it has no affiliation with or license from Oettingen's team",
               "That the official WOOP app is often really quite unreliable",
               "That using the WOOP app is required to pass the course",
             ],
@@ -1824,7 +1824,7 @@ Here is a more useful way to feel it. A standard way to translate an effect size
 
 **The one moderator that did reach significance is worth your attention, because it is actionable.** How the intervention was *delivered* mattered: **face-to-face with an experimenter, g = 0.465; delivered by document, g = 0.277.** Doing it with a person appears to work better than doing it alone with a worksheet. (Note that this is a comparison *across* studies, not a randomized test of delivery method, so treat it as a strong hint rather than a proof.) If you can run the method with a coach, a teacher, or a friend who will ask you the obstacle question and not accept "no time" as an answer, do that.
 
-**A second, independent meta-analysis agrees on the order of magnitude.** Cross and Sheffield (2019), reviewing mental contrasting for health behavior change, found an adjusted **g = 0.28** at up to 4 weeks and **g = 0.38** at up to 3 months. Different reviewers, different inclusion criteria, same neighbourhood. That convergence is genuinely reassuring, and it is one of the better reasons to take the method seriously.
+**A second, independent meta-analysis agrees on the order of magnitude.** Cross and Sheffield (2019), reviewing mental contrasting for health behavior change, found an adjusted **g = 0.28** at up to 4 weeks and **g = 0.38** at up to 3 months. Different reviewers, different inclusion criteria, same neighborhood. That convergence is genuinely reassuring, and it is one of the better reasons to take the method seriously.
 
 **So: is it real?** Yes, and the honest sentence is this one. **MCII is a free, five-minute, self-administered intervention with a small-to-medium effect on goal attainment that has been found by two independent meta-analytic teams, in a literature whose own meta-analysts flag probable publication bias and a small number of studies.** That is a good thing to have in your life. It is not a superpower, and anyone who sells it to you as one has stopped reporting the research and started marketing it.
 
@@ -1874,7 +1874,7 @@ That is a genuinely important null result and this course is not going to bury i
 
 **Open question 3: How much of this has been shown outside the lab that invented it?**
 
-Look at the author lists in Lesson 21's table. Notice how often the same two names appear. That is not a scandal and it is not an accusation. It is normal in a young research programme: the people who develop a method are the people who first test it, and they are usually the ones who care enough to run the studies.
+Look at the author lists in Lesson 21's table. Notice how often the same two names appear. That is not a scandal and it is not an accusation. It is normal in a young research program: the people who develop a method are the people who first test it, and they are usually the ones who care enough to run the studies.
 
 But it does mean you should ask the standard question, and keep asking it: **has this been replicated by researchers with no stake in the theory?** The best available answers are encouraging rather than conclusive: **Cross and Sheffield (2019)** is an independent meta-analytic team who found effects in the same range, and **Abdulla and Woods (2021)** is an independent group who found the basic effect to be unimpressive against active alternatives. Independent work exists, it does not all point the same way, and that is exactly what a live scientific question looks like from the inside.
 

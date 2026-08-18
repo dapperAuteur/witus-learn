@@ -48,7 +48,7 @@ export const GYM_COLOR_LINE_COURSE: AuthoredCourse = {
     // ═══════════════════════════════════════════════════════════════════════════════════════
     {
       slug: "gcl-hoosier-hysteria",
-      title: "1 · A state that organised itself around a school gym",
+      title: "1 · A state that organized itself around a school gym",
       section: "Section 1 · Then",
       body: `**Where this course sits.** You have finished *The Green Book: How to Read a Route*, which taught the method, and *Indiana Avenue: A District and What Replaced It*, which applied it to one corridor and asked who decided. That course ended by testing an argument against a chronology and reporting that half of it failed. **The half that survived was schools.** This is that course, and it is where the argument actually pays.
 
@@ -83,17 +83,17 @@ export const GYM_COLOR_LINE_COURSE: AuthoredCourse = {
 
 **The decision.** On **22 December 1922**, the Indianapolis Board of School Commissioners adopted a resolution authorising the construction of a "Colored High School." Judge S. Hugh Dillin's 1971 findings record that the resolution came "with impetus provided by a petition from the Indianapolis Chamber of Commerce" (*United States v. Board of School Commissioners*, 1971, p. 663). **Note who is in that sentence.** A chamber of commerce is a business association, not a school authority, and it is on the record asking a school board to segregate a school system that was not yet segregated at the high school level.
 
-**Who else pushed.** The Encyclopedia of Indianapolis names the Federation of Community Civic Clubs, the Chamber of Commerce, the White Supremacy League and the Mapleton Civic Association among the organisations supporting a separate school, and notes the **1924** election of Ku Klux Klan members to local offices as the climate in which the project proceeded (Encyclopedia of Indianapolis, n.d.-a).
+**Who else pushed.** The Encyclopedia of Indianapolis names the Federation of Community Civic Clubs, the Chamber of Commerce, the White Supremacy League and the Mapleton Civic Association among the organizations supporting a separate school, and notes the **1924** election of Ku Klux Klan members to local offices as the climate in which the project proceeded (Encyclopedia of Indianapolis, n.d.-a).
 
 **Who fought it, and lost.** The NAACP sued in the name of an Indianapolis resident, **Archie Greathouse**, "charging that students would not receive an equal education in a separate school." **The suit and the appeal both failed**, and construction went ahead (Encyclopedia of Indianapolis, n.d.-a). Keep this. It is the same shape as the state NAACP's position recorded in course 1: the objection was made at the time, in public, by named people, and it was overruled. **Nobody in this story had to wait for hindsight.**
 
-**What opened.** Crispus Attucks High School opened in **September 1927** under principal **Matthias Nolcox**, who recruited faculty from Black colleges across the South. Enrolment came in at **1,350** rather than the anticipated 1,000, and staff had to be increased the following year (Encyclopedia of Indianapolis, n.d.-a).
+**What opened.** Crispus Attucks High School opened in **September 1927** under principal **Matthias Nolcox**, who recruited faculty from Black colleges across the South. Enrollment came in at **1,350** rather than the anticipated 1,000, and staff had to be increased the following year (Encyclopedia of Indianapolis, n.d.-a).
 
 **And what the opening did legally.** Dillin's findings are blunt: "When such school, Crispus Attucks, was opened in September, 1927, **all Negro high school students were forthwith compelled to attend it, regardless of their place of residence in the city**" (*United States v. Board of School Commissioners*, 1971, p. 663). One school, one race, one city, and no exceptions for where you lived.
 
 **The detail most retellings skip, and it is about buses.** In **1935**, the 1869 Indiana school act was amended again "to require the Board to provide transportation for Negro students required to travel more than a certain distance **by reason of its segregation policies**" (*United States v. Board of School Commissioners*, 1971, p. 663). **Read that carefully.** School buses were provided in Indianapolis in the 1930s in order to make segregation work at city scale. Forty-six years later the same city would be ordered to run buses to undo it. **The vehicle is not the policy. The assignment rule is the policy.**
 
-**The state law underneath all of it.** Indiana's General Assembly enacted a law in **1869** providing for the education of Black children for the first time, and providing for them to be organised into separate schools. In **1874** the Indiana Supreme Court held in *Cory v. Carter* that under that act Black children were not entitled to admission to the common schools provided for white students. An **1877** amendment required admission to white schools only if no separate school of comparable grade was provided (*United States v. Board of School Commissioners*, 1971, pp. 661-662; Encyclopedia of Indianapolis, n.d.-b).
+**The state law underneath all of it.** Indiana's General Assembly enacted a law in **1869** providing for the education of Black children for the first time, and providing for them to be organized into separate schools. In **1874** the Indiana Supreme Court held in *Cory v. Carter* that under that act Black children were not entitled to admission to the common schools provided for white students. An **1877** amendment required admission to white schools only if no separate school of comparable grade was provided (*United States v. Board of School Commissioners*, 1971, pp. 661-662; Encyclopedia of Indianapolis, n.d.-b).
 
 **Then Indiana changed its own law, on paper, in 1949.** Chapter 186 of the Acts of 1949 declared it "the public policy of the State of Indiana to provide, furnish, and make available equal, nonsegregated, nondiscriminatory educational opportunities and facilities for all," and "to abolish, eliminate and prohibit segregated and separate schools or school districts on the basis of race, creed or color." Dillin observed that "the State completely anticipated and completely adopted the holding in *Brown I*," five years early (*United States v. Board of School Commissioners*, 1971, pp. 674-675).
 
@@ -151,7 +151,7 @@ export const GYM_COLOR_LINE_COURSE: AuthoredCourse = {
 
 ## The disagreement you must keep: what happened after the 1955 game
 
-**Three sources, three versions.** All three agree the celebration ended at **Northwestern Park**, in the Black neighbourhood. They do not agree about the Circle.
+**Three sources, three versions.** All three agree the celebration ended at **Northwestern Park**, in the Black neighborhood. They do not agree about the Circle.
 
 **Version 1, the Encyclopedia of Indianapolis (n.d.-a).** The players, coaches and cheerleaders rode two fire trucks from Butler Fieldhouse "south on Meridian Street to Monument Circle." Mayor **Alex Clark** greeted them there and said, "Crispus Attucks is very happy with Indianapolis tonight and happy with the spirit of cooperation everyone is showing us." Clark then carried the trophy and led a procession toward Northwestern Park, where 25,000 fans gathered.
 
@@ -262,10 +262,10 @@ export const GYM_COLOR_LINE_COURSE: AuthoredCourse = {
           {
             prompt: "What happened to Black high school students in Indianapolis when Attucks opened in September 1927?",
             options: [
-              "They could choose between Attucks and their neighbourhood school",
+              "They could choose between Attucks and their neighborhood school",
               "They were compelled to attend Attucks regardless of where they lived",
               "Only those living within two miles of Attucks were assigned there",
-              "Enrolment at Attucks stayed voluntary until the 1949 state act",
+              "Enrollment at Attucks stayed voluntary until the 1949 state act",
             ],
             correctIndex: 1,
             explanation: "The court's words are 'forthwith compelled to attend it, regardless of their place of residence in the city.'",
@@ -461,10 +461,10 @@ A high school gym seating eight thousand people in a town far smaller than eight
 **Now the finding.** "Because of the small size of the Attucks site (**8.4 acres**), a waiver had to be secured from the State Board of Education. This waiver was obtained, **with the proviso that no more than 2,200 students attend Attucks**; nevertheless, **in 1967-68 Attucks enrolled 2,394 students, 2,393 Negro and one white**" (*United States v. Board of School Commissioners*, 1971, p. 686 n.67).
 
 **Read that footnote three times.** It contains, in one paragraph:
-1. **A site under a third of the state's own minimum for its enrolment.**
+1. **A site under a third of the state's own minimum for its enrollment.**
 2. **A waiver, meaning the state knew and signed off.**
 3. **A cap attached to the waiver, at 2,200.**
-4. **An enrolment 194 students over that cap.**
+4. **An enrollment 194 students over that cap.**
 5. **A racial composition of 2,393 to 1.**
 
 **None of that is an inference. It is a footnote in a federal opinion, and you can read it in five minutes.**
@@ -489,7 +489,7 @@ A high school gym seating eight thousand people in a town far smaller than eight
 
 ## The present, which is why this is not a lament
 
-In **May 2026**, Indianapolis Public Schools announced a **44 million dollar** expansion of the Crispus Attucks campus: about **25 million dollars** donated by **Indiana University Health** and about **20 million dollars** from IPS bonds. It includes a **new gym meeting IHSAA standards, seating roughly 2,400**, with home and visitor locker rooms, indoor concessions and a weight room, plus a healthcare lab, a technology lab, and an atrium connecting the original building to the new south-campus addition. **Attucks is currently the only IPS high school with just one gym.** Completion is expected in **2028**, just over a century after the school opened. Enrolment is about **1,200**, roughly **65 percent Black and 28 percent Hispanic** (Chalkbeat Indiana, 2026a; WFYI, 2026a).
+In **May 2026**, Indianapolis Public Schools announced a **44 million dollar** expansion of the Crispus Attucks campus: about **25 million dollars** donated by **Indiana University Health** and about **20 million dollars** from IPS bonds. It includes a **new gym meeting IHSAA standards, seating roughly 2,400**, with home and visitor locker rooms, indoor concessions and a weight room, plus a healthcare lab, a technology lab, and an atrium connecting the original building to the new south-campus addition. **Attucks is currently the only IPS high school with just one gym.** Completion is expected in **2028**, just over a century after the school opened. Enrollment is about **1,200**, roughly **65 percent Black and 28 percent Hispanic** (Chalkbeat Indiana, 2026a; WFYI, 2026a).
 
 **Put the two numbers side by side and you have this section.** A state whose largest high school gym seats **8,424**. A school that in 1967-68 held **2,394** students on **8.4 acres**. And a **2,400-seat** gym arriving in **2028**. **Those are not rhetorical numbers. They are all cited, and the comparison is yours to make.**
 
@@ -584,7 +584,7 @@ In **May 2026**, Indianapolis Public Schools announced a **44 million dollar** e
         },
         {
           prompt: "Correct the popular claim that Attucks had no gymnasium.",
-          answer: "It had a gymnasium from the 1938 addition and a second from 1966. The accurate version is that it had gyms on a site about a third of the state's own minimum for its enrolment, and played its biggest games in Butler Fieldhouse.",
+          answer: "It had a gymnasium from the 1938 addition and a second from 1966. The accurate version is that it had gyms on a site about a third of the state's own minimum for its enrollment, and played its biggest games in Butler Fieldhouse.",
         },
       ],
     },
@@ -626,7 +626,7 @@ Judge S. Hugh Dillin, sitting in the Southern District of Indiana, made this fin
 
 > "Students in Negro elementary schools were given options to Crispus Attucks when other, predominantly white high schools were closer and more accessible. **White students in optional zones almost always attended white schools**." (1971, p. 666.)
 
-**That is the mechanism in three sentences.** Draw an optional zone precisely where the neighbourhoods mix. Offer a choice. **Individual choices then do the sorting that an assignment rule would have had to do openly**, and the district's hands look clean because it assigned nobody.
+**That is the mechanism in three sentences.** Draw an optional zone precisely where the neighborhoods mix. Offer a choice. **Individual choices then do the sorting that an assignment rule would have had to do openly**, and the district's hands look clean because it assigned nobody.
 
 **A rule that transfers to any district, any decade.** **When a rule is optional, ask who exercises the option and in which direction.** A policy that is facially neutral and statistically one-directional is doing work, and the direction is the evidence.
 
@@ -642,7 +642,7 @@ Two findings from the same opinion, both in footnotes, both devastating:
 
 ## The rest of the toolkit, in the court's own list
 
-Dillin catalogued the techniques the board used after 1954: "attendance zone boundary changes, the construction of additions, the construction of new schools, the provision of transportation or the adjustment of existing transportation, alteration in grade structures, and the location or relocation of special education classes in elementary schools. **Often these techniques were combined**" (1971, p. 665).
+Dillin cataloged the techniques the board used after 1954: "attendance zone boundary changes, the construction of additions, the construction of new schools, the provision of transportation or the adjustment of existing transportation, alteration in grade structures, and the location or relocation of special education classes in elementary schools. **Often these techniques were combined**" (1971, p. 665).
 
 **Six instruments, and the sixth is special education class placement.** The court found the board "has shifted these classes in some instances and failed to shift them in other instances, **always with a resulting increase in racial segregation**" (1971, p. 666).
 
@@ -703,7 +703,7 @@ The Seventh Circuit records that this rule was "finally recognized by statute in
 2. **"Prima facie."** The school extension is now presumed rather than automatic, which means it can be rebutted.
 3. **"Subject to a separate remonstrance."** **A remonstrance is a formal objection filed by affected parties that can block or delay an action.** Adding a remonstrance right to a step that used to be automatic does not forbid anything. **It just makes the thing stoppable, by whoever shows up.**
 
-**Then a 1969 act tightened it further**, limiting the School City of Indianapolis to enlarging its territory by agreement with the losing school corporation or by unilateral annexation, **both subject to remonstrance**, and cancelling pending annexations by legislative fiat (1971, pp. 676-677).
+**Then a 1969 act tightened it further**, limiting the School City of Indianapolis to enlarging its territory by agreement with the losing school corporation or by unilateral annexation, **both subject to remonstrance**, and canceling pending annexations by legislative fiat (1971, pp. 676-677).
 
 **And here is the court's conclusion about the pair of them:**
 
@@ -731,7 +731,7 @@ The question this course carries is: **how do school district lines make a schoo
         },
         {
           prompt: "What is an optional attendance zone, and what did the court find it did?",
-          answer: "An area whose students may choose between two schools. Drawn precisely where neighbourhoods mixed, it let individual choices do the sorting: white students in optional zones almost always attended white schools, and Black students were given options to Attucks even when whiter schools were closer.",
+          answer: "An area whose students may choose between two schools. Drawn precisely where neighborhoods mixed, it let individual choices do the sorting: white students in optional zones almost always attended white schools, and Black students were given options to Attucks even when whiter schools were closer.",
         },
         {
           prompt: "Give the two transfer rules the court found, and why neither mentions race.",
@@ -775,14 +775,14 @@ Mayor **Richard Lugar** said the 162-page bill would die in the General Assembly
 
 ## The numbers on each side of the line in 1969
 
-| | Black share of enrolment, 1969 |
+| | Black share of enrollment, 1969 |
 |---|---|
 | **Township school districts** | about **2.6 percent** |
 | **Indianapolis Public Schools** | **more than one third** |
 
 (Chalkbeat Indiana, 2016.)
 
-**And the trend inside IPS, from the Seventh Circuit's own recital:** nonwhite enrolment was **18.9 percent in 1950**, **26 percent in 1960**, **35.9 percent in 1970**, and **41.1 percent** at the time of the 1973 trial (*United States v. Board of School Commissioners*, 1974, p. 74).
+**And the trend inside IPS, from the Seventh Circuit's own recital:** nonwhite enrollment was **18.9 percent in 1950**, **26 percent in 1960**, **35.9 percent in 1970**, and **41.1 percent** at the time of the 1973 trial (*United States v. Board of School Commissioners*, 1974, p. 74).
 
 ## The finding that makes this a mechanism rather than a coincidence
 
@@ -800,7 +800,7 @@ Judge Dillin, in the 1973 remedy phase, considered whether the surrounding distr
 - **Incorporated cities and towns over 5,000**, leaving **Beech Grove, Lawrence, Southport and Speedway** independent.
 - **The nine townships**, which continue as separate governments and are the territorial basis for eight of the county's eleven school districts.
 - Several municipal corporations, and the county court system.
-- The act also **barred annexation into neighbouring counties**, a restriction needed to get the votes.
+- The act also **barred annexation into neighboring counties**, a restriction needed to get the votes.
 
 **Fifty separate and overlapping governmental units remain within Marion County, with more than 61 taxing districts** (Wachter, 2014; Encyclopedia of Indianapolis, n.d.-d).
 
@@ -814,7 +814,7 @@ Judge Dillin, in the 1973 remedy phase, considered whether the surrounding distr
       recallContent: [
         {
           prompt: "What was Indiana's historic coterminous rule, and when was it recognised by statute?",
-          answer: "When a city expanded its corporate limits, the school city succeeded to the township trustee's school powers, so the boundaries of a school city and a civil city were the same. The Seventh Circuit records the rule as finally recognised by statute in 1931.",
+          answer: "When a city expanded its corporate limits, the school city succeeded to the township trustee's school powers, so the boundaries of a school city and a civil city were the same. The Seventh Circuit records the rule as finally recognized by statute in 1931.",
         },
         {
           prompt: "What did the 1961 Act do, and to which county did it apply?",
@@ -850,7 +850,7 @@ Judge Dillin, in the 1973 remedy phase, considered whether the surrounding distr
 | **12 to 21 July 1971** | First trial before Judge S. Hugh Dillin |
 | **18 August 1971** | Dillin finds IPS guilty of unlawful segregation: **de jure**, not de facto. Orders Crispus Attucks High School desegregated, and orders the State of Indiana and the other Marion County districts added as defendants |
 | **1 February 1973** | The Seventh Circuit affirms |
-| **20 July 1973** | After a second trial, Dillin imputes the violation to **the State of Indiana** and holds that a remedy requires crossing district lines. Orders each defendant district to receive Black students equal to **5 percent** of its prior-year enrolment |
+| **20 July 1973** | After a second trial, Dillin imputes the violation to **the State of Indiana** and holds that a remedy requires crossing district lines. Orders each defendant district to receive Black students equal to **5 percent** of its prior-year enrollment |
 | **25 July 1974** | **Milliken v. Bradley** is decided. Lesson 12 is about that day |
 | **21 August 1974** | The Seventh Circuit reverses the remedy **beyond** the Uni-Gov line, vacates and remands the remedy **inside** it, and affirms everything else |
 | **1 August 1975** | On remand, Dillin holds Milliken does **not** bar a Marion County remedy, because Unigov, by not extending IPS boundaries when it extended the city's, inhibited desegregation |
@@ -880,7 +880,7 @@ Judge Dillin, in the 1973 remedy phase, considered whether the surrounding distr
 
 ## The sentence a federal appellate judge wrote in 1997
 
-Twenty-nine years into the case, the Seventh Circuit summarised the whole thing in one sentence:
+Twenty-nine years into the case, the Seventh Circuit summarized the whole thing in one sentence:
 
 > "in 1969, when by a law known as 'Uni-Gov' the Indiana legislature extended the boundaries of the City of Indianapolis to make them coterminous with those of Marion County, **the boundaries of IPS were deliberately not extended, in order to prevent black public schoolchildren from being in the same school district as white ones**." (*United States v. Board of School Commissioners*, 1997, p. 509.)
 
@@ -890,7 +890,7 @@ The same opinion records the district judge's estimate that but for the violatio
 
 ## What the case did not do
 
-**It did not merge the districts.** Marion County still has eleven school corporations. **It did not survive its own success**: enrolment in IPS fell from about **108,000 students in 1971** to about **47,000 by the early 1990s** and to roughly **21,000** in district-run schools today (Chalkbeat Indiana, 2025b). **And it did not settle the argument**, which is why Section 5 sends you to a decision being taken about these same boundaries this year.
+**It did not merge the districts.** Marion County still has eleven school corporations. **It did not survive its own success**: enrollment in IPS fell from about **108,000 students in 1971** to about **47,000 by the early 1990s** and to roughly **21,000** in district-run schools today (Chalkbeat Indiana, 2025b). **And it did not settle the argument**, which is why Section 5 sends you to a decision being taken about these same boundaries this year.
 
 **One judgment this course will not make.** Whether the remedy was worth it is a question about values, and the record here does not settle it. The Encyclopedia's own summary reports an assessment that bused students received improved educational opportunities while "the neighborhoods and schools from which they were bused suffered as a result" (Encyclopedia of Indianapolis, n.d.-e). **That is a contested assessment with an owner, and it is reported here as one.**
 
@@ -931,9 +931,9 @@ The same opinion records the district judge's estimate that but for the violatio
 
 ## The facts, briefly and without embellishment
 
-Detroit's schools were found by the district court to be unlawfully segregated, and the State of Michigan was implicated in it. The district court concluded that a remedy confined to Detroit could not work, and ordered a metropolitan plan covering Detroit **plus 53 of the 85 outlying suburban school districts.** Detroit's own enrolment in 1970 was roughly **63.6 percent** Black and **34.8 percent** white, out of about **289,763** students (*Milliken v. Bradley*, 1974).
+Detroit's schools were found by the district court to be unlawfully segregated, and the State of Michigan was implicated in it. The district court concluded that a remedy confined to Detroit could not work, and ordered a metropolitan plan covering Detroit **plus 53 of the 85 outlying suburban school districts.** Detroit's own enrollment in 1970 was roughly **63.6 percent** Black and **34.8 percent** white, out of about **289,763** students (*Milliken v. Bradley*, 1974).
 
-**Hold that structure in your head, because it is the Indianapolis structure.** One central district, heavily Black, with a ring of separate, heavily white districts around it, and a judge who concludes that the ring is the reason a remedy inside the centre cannot work.
+**Hold that structure in your head, because it is the Indianapolis structure.** One central district, heavily Black, with a ring of separate, heavily white districts around it, and a judge who concludes that the ring is the reason a remedy inside the center cannot work.
 
 ## What the Court held, in its own words
 
@@ -1026,12 +1026,12 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
 
 | Date | Event | Source |
 |---|---|---|
-| **1869** | Indiana provides for the education of Black children, organised into separate schools | 1971 opinion, pp. 661-662 |
+| **1869** | Indiana provides for the education of Black children, organized into separate schools | 1971 opinion, pp. 661-662 |
 | **1874** | *Cory v. Carter*: Black children not entitled to admission to the common schools for white students | 1971 opinion, p. 662 |
 | **22 December 1922** | Board resolution authorising a "Colored High School," on a Chamber of Commerce petition | 1971 opinion, p. 663 |
 | **September 1927** | Attucks opens; all Black high school students compelled to attend regardless of residence | 1971 opinion, p. 663 |
-| **1931** | The coterminous rule (civil city boundary equals school city boundary) recognised by statute | 1974 opinion, p. 71 |
-| **1935** | Transportation required for Black students travelling farther "by reason of its segregation policies" | 1971 opinion, p. 663 |
+| **1931** | The coterminous rule (civil city boundary equals school city boundary) recognized by statute | 1974 opinion, p. 71 |
+| **1935** | Transportation required for Black students traveling farther "by reason of its segregation policies" | 1971 opinion, p. 663 |
 | **15 August 1942** | IHSAA admits Black, parochial, private and institutional schools | IHSAA, n.d.-b |
 | **1949** | Chapter 186 declares segregated schools and school districts abolished | 1971 opinion, pp. 674-675 |
 | **1954 to 1971** | Approximately **350** boundary changes, **more than 90 percent** promoting segregation | 1971 opinion, p. 668 |
@@ -1063,7 +1063,7 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
 
 **Unigov did not segregate the Indianapolis schools. It made an existing segregation permanent, at the one moment when Indiana's own default rule would have dissolved it.**
 
-**That sentence has a counterfactual in it, and the counterfactual is a statute rather than a guess.** Under the Indiana common law rule recognised by statute in 1931, a civil annexation carried school annexation with it automatically. **Unigov was the largest civil annexation in the state's history.** Under the old rule, the school district would have grown to the county with the city. The 1961 act, for Marion County alone, made school annexation stoppable. The 1969 acts made it, in Dillin's words, "virtually nil." **And then the city grew anyway, without its schools.**
+**That sentence has a counterfactual in it, and the counterfactual is a statute rather than a guess.** Under the Indiana common law rule recognized by statute in 1931, a civil annexation carried school annexation with it automatically. **Unigov was the largest civil annexation in the state's history.** Under the old rule, the school district would have grown to the county with the city. The 1961 act, for Marion County alone, made school annexation stoppable. The 1969 acts made it, in Dillin's words, "virtually nil." **And then the city grew anyway, without its schools.**
 
 **So the honest formulation is not weaker than the one proposed. It is sharper**, and it survives every date in the table above.
 
@@ -1071,7 +1071,7 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
 
 **Course 1 ran this test and reported a failure. This course runs it and reports a hold.** If the test had returned "confirmed" both times, it would not be a test. It would be a ritual. **A method you only ever use to agree with yourself is not a method.**
 
-**And notice what the two results together produce.** Not "Unigov ruined Indianapolis," which is false, and not "Unigov did nothing," which is also false, but a specific division of labour between instruments: **designation, eminent domain and land assembly took the buildings; the attendance zone, the district line and a statutory carve-out took the children.** Different tools, different bodies, different records, one metro.
+**And notice what the two results together produce.** Not "Unigov ruined Indianapolis," which is false, and not "Unigov did nothing," which is also false, but a specific division of labor between instruments: **designation, eminent domain and land assembly took the buildings; the attendance zone, the district line and a statutory carve-out took the children.** Different tools, different bodies, different records, one metro.
 
 ## Three corrections this course makes to claims in circulation
 
@@ -1152,9 +1152,9 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "What did the court find optional attendance zones actually did?",
             options: [
-              "They equalised enrolment between crowded and half-empty schools",
+              "They equalised enrollment between crowded and half-empty schools",
               "They let white students in mixed zones keep choosing white schools",
-              "They were used only in the all-Black neighbourhoods of the city",
+              "They were used only in the all-Black neighborhoods of the city",
               "They applied only to students living over two miles from a school",
             ],
             correctIndex: 1,
@@ -1179,7 +1179,7 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
               "School districts had to match the county lines, fixed in 1869",
               "School districts were drawn by the state board, starting in 1949",
               "Attendance zones had to match the city's ward lines, from 1922",
-              "A city's annexations extended its school city too, recognised in 1931",
+              "A city's annexations extended its school city too, recognized in 1931",
             ],
             correctIndex: 3,
             explanation: "One boundary, one electorate, one tax base, one school system. A city could not grow its tax base and leave its schools behind, because the law did not let the two come apart.",
@@ -1249,7 +1249,7 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
             prompt: "Who was ultimately held liable for funding the Marion County-wide desegregation remedy?",
             options: [
               "Indianapolis Public Schools alone, from its own local budget",
-              "The eight township districts, split in proportion to enrolment",
+              "The eight township districts, split in proportion to enrollment",
               "The federal government, under Title IV of the Civil Rights Act",
               "The State of Indiana, which alone bore the constitutional liability",
             ],
@@ -1361,7 +1361,7 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
 
 **2. It cannot show you a date.** Every addition, every renovation, every closed wing happened at a time, and the tour has no clock.
 
-**3. It cannot show you who paid.** A gym built on a 2015 bond, a gym built on a 1938 federal works programme and a gym built on a 2026 hospital donation look identical from the floor.
+**3. It cannot show you who paid.** A gym built on a 2015 bond, a gym built on a 1938 federal works program and a gym built on a 2026 hospital donation look identical from the floor.
 
 **4. It cannot show you who is not there.** You cannot photograph the students assigned to a different building. **Everything the tour does not contain is a question for Section 5, not an answer.**
 
@@ -1418,7 +1418,7 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
 
 **Coordinates on this map are approximate city points, not surveyed locations.** Do not use them to find an address. Use them to see the shape of the argument, and use the boundary files when you need a line.
 
-**Two cases are named here but not marked, because at this scale they would sit on top of their neighbours.** **Louisville and Jefferson County, Kentucky**, where the city and county systems merged in 1975 under state board action and a federal court order, is four degrees from Indianapolis and would collide with it. **Richmond, Virginia**, where a district judge ordered Richmond consolidated with Henrico and Chesterfield counties in January 1972, the Fourth Circuit reversed in June 1972, and an equally divided Supreme Court left that reversal standing in 1973, would collide with Wilmington. **A map that hides two of its best examples is telling you to go get a better map.**
+**Two cases are named here but not marked, because at this scale they would sit on top of their neighbors.** **Louisville and Jefferson County, Kentucky**, where the city and county systems merged in 1975 under state board action and a federal court order, is four degrees from Indianapolis and would collide with it. **Richmond, Virginia**, where a district judge ordered Richmond consolidated with Henrico and Chesterfield counties in January 1972, the Fourth Circuit reversed in June 1972, and an equally divided Supreme Court left that reversal standing in 1973, would collide with Wilmington. **A map that hides two of its best examples is telling you to go get a better map.**
 
 ## Sources
 - Bradley v. School Board of the City of Richmond, 462 F.2d 1058 (4th Cir. 1972). https://law.justia.com/cases/federal/appellate-courts/F2/462/1058/280802/
@@ -1438,7 +1438,7 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
             title: "Indianapolis and Marion County, Indiana",
             color: "#1d4ed8",
             description:
-              "The subject of this course. Indiana's historic rule made a city's boundary and its school district's boundary the same shape, recognised by statute in 1931. A 1961 act, applying to Marion County only, made school annexation merely prima facie and subject to remonstrance. The 1969 Unigov statute then expanded the city to nearly the whole county while expressly leaving the school district where it was. Eleven school corporations remain inside one consolidated city: Indianapolis Public Schools, eight township corporations, Beech Grove and Speedway. A federal court found in 1975 and again in 1978 that this arrangement inhibited desegregation, and inter-district busing ran from 1981 to 2016.",
+              "The subject of this course. Indiana's historic rule made a city's boundary and its school district's boundary the same shape, recognized by statute in 1931. A 1961 act, applying to Marion County only, made school annexation merely prima facie and subject to remonstrance. The 1969 Unigov statute then expanded the city to nearly the whole county while expressly leaving the school district where it was. Eleven school corporations remain inside one consolidated city: Indianapolis Public Schools, eight township corporations, Beech Grove and Speedway. A federal court found in 1975 and again in 1978 that this arrangement inhibited desegregation, and inter-district busing ran from 1981 to 2016.",
           },
           {
             id: "gcl-detroit",
@@ -1447,7 +1447,7 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
             title: "Detroit, Michigan: Milliken v. Bradley (1974)",
             color: "#b91c1c",
             description:
-              "The rule that governs every other marker here. A district court ordered a metropolitan desegregation plan covering Detroit plus 53 of the 85 outlying suburban districts. On 25 July 1974 the Supreme Court held, 5 to 4, that before the boundaries of separate and autonomous school districts may be set aside, it must first be shown that a violation in one district produced a significant segregative effect in another. Detroit's 1970 enrolment was about 63.6 percent Black and 34.8 percent white out of roughly 289,763 students. Milliken is why an inter-district remedy is rare, and its own exception for lines deliberately drawn on the basis of race is the door Indianapolis went through.",
+              "The rule that governs every other marker here. A district court ordered a metropolitan desegregation plan covering Detroit plus 53 of the 85 outlying suburban districts. On 25 July 1974 the Supreme Court held, 5 to 4, that before the boundaries of separate and autonomous school districts may be set aside, it must first be shown that a violation in one district produced a significant segregative effect in another. Detroit's 1970 enrollment was about 63.6 percent Black and 34.8 percent white out of roughly 289,763 students. Milliken is why an inter-district remedy is rare, and its own exception for lines deliberately drawn on the basis of race is the door Indianapolis went through.",
           },
           {
             id: "gcl-wilmington",
@@ -1503,7 +1503,7 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
 
 **Here is the detail that surprises almost everybody, and it is the single most useful fact in this lesson.** The IPS boundary is **not** a township boundary and it is **not** the old city limit. **Seven townships have land inside the IPS boundary**: Lawrence, Wayne, Washington, Warren, Pike, Decatur and Perry (Chalkbeat Indiana, 2025a). **The line is a fossil.** It is roughly where the City of Indianapolis stopped growing its schools, frozen by the 1961 and 1969 acts and by Unigov, and it now cuts across seven separate townships without matching any of them.
 
-**How many children are inside it.** Roughly **49,000** K-12 public school students live within IPS boundaries. About **40 percent** of them attend charter schools, and IPS-run schools enrol about **21,000** (Chalkbeat Indiana, 2025b). **Note the disagreement in circulation**: coverage of the 2026 legislation describes the system as serving "nearly 43,000 students" (WFYI, n.d.). **Those two numbers are not a contradiction, they are two different counts**: students who live inside the line, versus students actually enrolled in schools the arrangement covers. **When two figures for "how many kids" differ, the first question is always what each one counted.**
+**How many children are inside it.** Roughly **49,000** K-12 public school students live within IPS boundaries. About **40 percent** of them attend charter schools, and IPS-run schools enroll about **21,000** (Chalkbeat Indiana, 2025b). **Note the disagreement in circulation**: coverage of the 2026 legislation describes the system as serving "nearly 43,000 students" (WFYI, n.d.). **Those two numbers are not a contradiction, they are two different counts**: students who live inside the line, versus students actually enrolled in schools the arrangement covers. **When two figures for "how many kids" differ, the first question is always what each one counted.**
 
 **The trend, for scale.** IPS enrolled about **108,000** students in 1971, about **47,000** by the early 1990s, and roughly **21,000** in district-run schools today (Chalkbeat Indiana, 2025b).
 
@@ -1515,7 +1515,7 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
 
 **Local property tax supports the funds that pay for buildings and buses.** A school corporation levies for its **operations fund**, for **debt service** on bonds and leases, and, if voters approve one, for an **operating referendum levy** under **Indiana Code section 20-46-1** or a **school safety referendum levy** under **section 20-46-9** (Indiana Department of Local Government Finance, 2023).
 
-**Now do the arithmetic that this whole course has been building toward.** A property tax levy raises **rate multiplied by assessed value inside the line**. **Two districts with identical rates and identical children raise different amounts of money if different parcels are inside them.** A district with a shopping centre, a hospital campus and high-value housing inside its boundary can build a fieldhouse. A district without them cannot, at the same rate, no matter how much its community wants one. **That is not a metaphor for the argument in Section 3. It is the same argument, in the present tense, with a tax bill attached.**
+**Now do the arithmetic that this whole course has been building toward.** A property tax levy raises **rate multiplied by assessed value inside the line**. **Two districts with identical rates and identical children raise different amounts of money if different parcels are inside them.** A district with a shopping center, a hospital campus and high-value housing inside its boundary can build a fieldhouse. A district without them cannot, at the same rate, no matter how much its community wants one. **That is not a metaphor for the argument in Section 3. It is the same argument, in the present tense, with a tax bill attached.**
 
 **Three live changes, all dated.**
 
@@ -1567,7 +1567,7 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
         },
         {
           prompt: "State the surviving claim about Unigov and schools as precisely as the record allows.",
-          answer: "Unigov did not segregate the schools. It made an existing segregation permanent at the one moment Indiana's own default rule would have dissolved it, because under the rule recognised by statute in 1931 a civil annexation carried school annexation automatically, and Unigov was the largest civil annexation in the state's history.",
+          answer: "Unigov did not segregate the schools. It made an existing segregation permanent at the one moment Indiana's own default rule would have dissolved it, because under the rule recognized by statute in 1931 a civil annexation carried school annexation automatically, and Unigov was the largest civil annexation in the state's history.",
         },
         {
           prompt: "Which three effects fail the test, and why?",
@@ -1604,14 +1604,14 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
 2. Turn on the **district boundary** layer. **Find the nearest point where the district boundary runs, and note which district is on the other side of it.** How far is it from the school?
 3. In **MapIndy**, enter the school's location and turn on **township**, **city council district** and **school district** as separate layers. **Confirm for yourself that those three boundaries are three different shapes over the same ground.** Section 3 explained why.
 4. Identify **which township the school physically sits in**, and confirm that this is **not** the same thing as which school corporation it belongs to. **Seven townships have land inside the IPS boundary.**
-5. In **Indiana GPS**, pull enrolment and demographic figures for this school. Then pull the same figures for **one township high school** in Marion County. **Put the two side by side.** Do not draw a conclusion yet. Write down what each number is a count of, and for what year.
+5. In **Indiana GPS**, pull enrollment and demographic figures for this school. Then pull the same figures for **one township high school** in Marion County. **Put the two side by side.** Do not draw a conclusion yet. Write down what each number is a count of, and for what year.
 6. In the **EDGE boundary files**, download the composite file for a recent school year and one from the 1990s. **Compare the district boundary across those years.** If it did not move, that is a finding: this line has now survived a Supreme Court decision, a federal desegregation order and thirty-five years of busing.
 7. Find out whether the district has held an **operating referendum**, when, and what the result was. Then check whether the resolution was adopted before or after **10 May 2023**, because that date decides whether charter schools share the revenue in Marion County.
 8. Find the **next public meeting** of the body that governs this district, and check whether the agenda is posted. **Attending one is the cheapest civic act there is.**
 
 **The habits this builds, which transfer to any American district.** The tool names change from state to state and the four facts do not: **which district a school is in, where that district's boundary runs, which overlapping jurisdictions cover the same ground, and which fund pays for the building.** Learn to find those four and you can research any school in the country.
 
-**One rule you do not get to break.** **Do not run this drill on a child.** Do not attach a named student to an address, a school assignment or a demographic figure in anything you publish. Practise on institutions, boundaries and public bodies. **A school is a public body. A student is not.**
+**One rule you do not get to break.** **Do not run this drill on a child.** Do not attach a named student to an address, a school assignment or a demographic figure in anything you publish. Practice on institutions, boundaries and public bodies. **A school is a public body. A student is not.**
 
 ## Sources
 - City of Indianapolis and Marion County. (n.d.). *MapIndy*. https://maps.indy.gov/MapIndy/
@@ -1627,7 +1627,7 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
             prompt: "The federal agency that publishes school district boundary files is the National Center for ___ Statistics.",
             answer: "Education",
             accept: ["education", "nces"],
-            explanation: "Its EDGE programme publishes composite district boundary files for school years from 1989-90 through 2024-25.",
+            explanation: "Its EDGE program publishes composite district boundary files for school years from 1989-90 through 2024-25.",
           },
           {
             prompt: "The NCES public map for finding a school and its district is the School and District ___.",
@@ -1892,13 +1892,13 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "The exercise ends with one rule you do not get to break. What is it?",
             options: [
-              "Never once criticise a sitting school board in your writing",
+              "Never once criticize a sitting school board in your writing",
               "Never attach a named student to an address or a school assignment",
               "Never download the district's public boundary files yourself",
               "Never attend any public board meeting without prior permission",
             ],
             correctIndex: 1,
-            explanation: "Practise on institutions, boundaries and public bodies. A school is a public body. A student is not.",
+            explanation: "Practice on institutions, boundaries and public bodies. A school is a public body. A student is not.",
             sourceLessonSlug: "gcl-next-exercise-district",
           },
         ],
@@ -2024,7 +2024,7 @@ A short, checkable piece in which every sentence is either something you read in
 - **Distinguish a claim about a document from a claim about the world.** "The court found more than 90 percent of about 350 boundary changes promoted segregation" is the first. "Indianapolis schools were segregated by accident" is the second, and the record contradicts it.
 - **Read a funding formula as a boundary question.** Rate multiplied by assessed value inside the line.
 - **Find any school's district, and any district's boundary file**, in any state.
-- **Recognise that a proposal not yet adopted is where a citizen has the most leverage**, whether it is a redevelopment plan or a boundary change.
+- **Recognize that a proposal not yet adopted is where a citizen has the most leverage**, whether it is a redevelopment plan or a boundary change.
 
 ## What this course deliberately did not cover, and why
 

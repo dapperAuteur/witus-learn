@@ -55,8 +55,8 @@ Three situations, and they are real advantages rather than consolations:
 Also real, and worth naming:
 
 - When the measurement genuinely requires calibrated equipment and training, and the protocol pretends otherwise.
-- When the data is collected and nobody ever analyses it, which happens more than anyone likes to admit.
-- When participation is the actual goal and the data is a by-product. That can be a perfectly good outreach programme. It is not a study, and calling it one sets the participants up to be disappointed.
+- When the data is collected and nobody ever analyzes it, which happens more than anyone likes to admit.
+- When participation is the actual goal and the data is a by-product. That can be a perfectly good outreach program. It is not a study, and calling it one sets the participants up to be disappointed.
 
 ## Three kinds of study
 
@@ -238,7 +238,7 @@ U.S. Environmental Protection Agency. (n.d.). *Volunteer monitoring quality assu
 |---|---|---|
 | **Convenience** | Measure where it is easy | The easy places are systematically unusual |
 | **Systematic** | A fixed rule: every 10 metres, every Tuesday | A rule can coincide with a pattern in the thing |
-| **Random** | Chosen by chance within a defined area | Harder to organise; can miss rare things entirely |
+| **Random** | Chosen by chance within a defined area | Harder to organize; can miss rare things entirely |
 | **Stratified** | Divide into types, then sample within each | More design work, usually worth it |
 
 ## The convenience trap
@@ -349,7 +349,7 @@ National Oceanic and Atmospheric Administration. (n.d.). *Marine debris monitori
 
 **A negative control.** Measure something that should NOT respond. If your supposedly specific effect shows up there too, something is wrong with your method rather than out in the world. *Cost:* almost nothing, and it is badly underused.
 
-**A blind count.** The person counting does not know which group a sample is from. *Cost:* organisation. **Benefit:** larger than people expect, because expectation genuinely changes what people record, without any dishonesty at all.
+**A blind count.** The person counting does not know which group a sample is from. *Cost:* organization. **Benefit:** larger than people expect, because expectation genuinely changes what people record, without any dishonesty at all.
 
 ## The honest framing
 
@@ -487,7 +487,7 @@ None of these is hard when agreed in advance. All of them are painful afterwards
 
 The person who walked the transect every month for two years is a contributor. Naming only the person who did the analysis is a choice, and a common one.
 
-This catalog has a whole track on people whose labour became someone else's credit. **A citizen-science project that repeats the pattern while calling itself community science has not noticed what it is doing.**
+This catalog has a whole track on people whose labor became someone else's credit. **A citizen-science project that repeats the pattern while calling itself community science has not noticed what it is doing.**
 
 ## When not to publish a location
 

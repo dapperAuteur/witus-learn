@@ -59,7 +59,7 @@ export const WHERE_WE_RESTED_COURSE: AuthoredCourse = {
       section: "Section 1 · Why these places existed",
       body: `**This course has a prerequisite, and it is not decoration.** Take **The Green Book: How to Read a Route** (\`green-book-how-to-read-a-route\`) first. That course teaches you to open a digitized edition, read a listing down to its abbreviations, chain listings into a route, and read a gap as evidence. It is the method course for everything in this series.
 
-**This course is its companion, and the difference between them is one preposition.** The Green Book told a traveller **where they could stop**. This course is about the places Black Americans **owned**, so that they would not have to ask.
+**This course is its companion, and the difference between them is one preposition.** The Green Book told a traveler **where they could stop**. This course is about the places Black Americans **owned**, so that they would not have to ask.
 
 ## The rule this course runs on
 
@@ -76,9 +76,9 @@ Read that again, because it governs every lesson here and it is the reason this 
 The condition these places answered was not one law. It was a stack of instruments, and naming them is the difference between "there was racism" and "here is the document."
 
 - **Statute, and its nullification.** California had a civil rights statute. In 1912 a Black man named Caleb Holden was charged one dollar for a beer while his white companion was charged a nickel. The Los Angeles City Attorney, John W. Shenk, was asked to look into it and declared that businesses had the right to charge whatever they desired and could change their prices at will. A letter to the editor of The Liberator wrote that Shenk "completely nullified the Civil Rights bill in this state" (City of Manhattan Beach History Advisory Board, 2021). **A statute you cannot enforce is a fact about the enforcement, not about the statute.**
-- **Zoning.** In 1921 Secretary of Commerce Herbert Hoover organised an Advisory Committee on Zoning and distributed a manual nationwide on why cities should adopt zoning ordinances (Rothstein, 2017, as cited in City of Manhattan Beach History Advisory Board, 2021).
-- **Private covenants and trade rules.** In 1924 the National Association of Real Estate Boards adopted a code of ethics stating that a realtor should never be instrumental in introducing into a neighbourhood members of any race or nationality whose presence would clearly be detrimental to property values. It stayed in effect into the 1950s (Rothstein, 2017, as cited in City of Manhattan Beach History Advisory Board, 2021).
-- **Sundown towns.** Towns adopted policies forbidding Black people from being inside the town limits after dark. Two of Manhattan Beach's South Bay neighbours, Hawthorne and Inglewood, were sundown towns (Loewen, 2005, as cited in City of Manhattan Beach History Advisory Board, 2021).
+- **Zoning.** In 1921 Secretary of Commerce Herbert Hoover organized an Advisory Committee on Zoning and distributed a manual nationwide on why cities should adopt zoning ordinances (Rothstein, 2017, as cited in City of Manhattan Beach History Advisory Board, 2021).
+- **Private covenants and trade rules.** In 1924 the National Association of Real Estate Boards adopted a code of ethics stating that a realtor should never be instrumental in introducing into a neighborhood members of any race or nationality whose presence would clearly be detrimental to property values. It stayed in effect into the 1950s (Rothstein, 2017, as cited in City of Manhattan Beach History Advisory Board, 2021).
+- **Sundown towns.** Towns adopted policies forbidding Black people from being inside the town limits after dark. Two of Manhattan Beach's South Bay neighbors, Hawthorne and Inglewood, were sundown towns (Loewen, 2005, as cited in City of Manhattan Beach History Advisory Board, 2021).
 - **Leases, and arrest.** A city could lease its own beach to a private man who would then post "No Trespassing" and have the police arrest swimmers. Manhattan Beach did exactly that in 1927, and lesson 13 walks through the summer it produced (City of Manhattan Beach History Advisory Board, 2021).
 - **Violence.** The city's own report quotes SurveyLA: the final and most long-lasting mechanism of segregation was white violence and intimidation, ranging from polite requests to leave to bombs, vandalism and death threats (City of Manhattan Beach History Advisory Board, 2021).
 
@@ -198,7 +198,7 @@ Then he **subdivided the tract and sold lots**, to family and friends first (Fre
 
 ## The first buildings
 
-Charles Douglass **built the first cottage in 1894** (Town of Highland Beach, n.d.). He also built **Twin Oaks**, a two-and-a-half-storey Queen Anne frame house with a wraparound porch and a corner tower, in **1894 to 1895**, for his father. **Frederick Douglass died in February 1895, before it was finished** (Maryland Historical Trust, n.d.; Town of Highland Beach, n.d.).
+Charles Douglass **built the first cottage in 1894** (Town of Highland Beach, n.d.). He also built **Twin Oaks**, a two-and-a-half-story Queen Anne frame house with a wraparound porch and a corner tower, in **1894 to 1895**, for his father. **Frederick Douglass died in February 1895, before it was finished** (Maryland Historical Trust, n.d.; Town of Highland Beach, n.d.).
 
 The Maryland Historical Trust's National Register entry records the tradition that Frederick Douglass designed the house with a second-floor balcony to give a view east toward the Eastern Shore, where he had been born. **Read the phrase "according to tradition" carefully.** The Trust is telling you it is a community account, not a documented design record. **That is exactly the honesty this course wants from you.**
 
@@ -249,7 +249,7 @@ Guests and residents recorded by the town include Paul Robeson, Robert and Mary 
 
 ## Who founded it
 
-**The Idlewild Resort Company was formed in 1912 by four white couples.** Erastus and Flora Branch and Adelbert and Isabelle Branch of White Cloud, Michigan; Wilbur M. and Mayme Lemon and A. E. and Madolin Wright of Chicago. They organised the company to turn roughly **2,700 acres of cutover timberland in Lake County, Michigan**, into a resort marketed to the middle-class and professional Black communities of Detroit and Chicago (Terry Wantz Historical Research Center, n.d.; The Cultural Landscape Foundation, n.d.).
+**The Idlewild Resort Company was formed in 1912 by four white couples.** Erastus and Flora Branch and Adelbert and Isabelle Branch of White Cloud, Michigan; Wilbur M. and Mayme Lemon and A. E. and Madolin Wright of Chicago. They organized the company to turn roughly **2,700 acres of cutover timberland in Lake County, Michigan**, into a resort marketed to the middle-class and professional Black communities of Detroit and Chicago (Terry Wantz Historical Research Center, n.d.; The Cultural Landscape Foundation, n.d.).
 
 **The community says this about itself, in these words, on its own website:** Idlewild was "Founded in 1912 by white land developers who marketed Idlewild as a resort community for blacks during the Jim Crow segregation era" (Idlewild Michigan, n.d.).
 
@@ -257,7 +257,7 @@ Guests and residents recorded by the town include Paul Robeson, Robert and Mary 
 
 ## The product
 
-The company **surveyed its first plat in 1915** and began marketing lots in tracts adjacent to **Idlewild Lake**, about 100 acres, and near **Paradise Lake**, about 42 acres. An eight-acre island in Idlewild Lake, **Island Park**, later Williams Island, became the social centre, reached first by footbridges. **A clubhouse went up in 1916**, followed by an electrical plant, cottages and venues (The Cultural Landscape Foundation, n.d.).
+The company **surveyed its first plat in 1915** and began marketing lots in tracts adjacent to **Idlewild Lake**, about 100 acres, and near **Paradise Lake**, about 42 acres. An eight-acre island in Idlewild Lake, **Island Park**, later Williams Island, became the social center, reached first by footbridges. **A clubhouse went up in 1916**, followed by an electrical plant, cottages and venues (The Cultural Landscape Foundation, n.d.).
 
 **The sales terms are the most quoted business fact about Idlewild, and they need a caveat.** Secondary accounts consistently report **lots of 25 by 100 feet at 35 dollars**, sold on terms of **6 dollars down and 1 dollar a week**, and report that the company **recruited Black sales agents by giving them a lot for every lot they sold**. **This course has not checked those terms against the recorded 1915 plat or against a deed.** The Lake County Register of Deeds is where they would be checked, and if you want to make an original contribution to Idlewild's history rather than restate it, that is the errand.
 
@@ -267,7 +267,7 @@ The company **surveyed its first plat in 1915** and began marketing lots in trac
 
 The company advertised in Black newspapers, the **Chicago Defender** among them. The Cultural Landscape Foundation credits **W.E.B. Du Bois** with making Idlewild nationally known through an article in **The Crisis in 1921** (The Cultural Landscape Foundation, n.d.).
 
-Early property owners named by the community and by the local historical research centre include **Dr. Daniel Hale Williams**, the Chicago surgeon who founded Provident Hospital; **W.E.B. Du Bois**; the novelist **Charles Waddell Chesnutt**; **Madam C. J. Walker**; and **Violette Neatley Anderson**, whom the community's own site describes as the first Black woman attorney in Chicago (Idlewild Michigan, n.d.; Terry Wantz Historical Research Center, n.d.).
+Early property owners named by the community and by the local historical research center include **Dr. Daniel Hale Williams**, the Chicago surgeon who founded Provident Hospital; **W.E.B. Du Bois**; the novelist **Charles Waddell Chesnutt**; **Madam C. J. Walker**; and **Violette Neatley Anderson**, whom the community's own site describes as the first Black woman attorney in Chicago (Idlewild Michigan, n.d.; Terry Wantz Historical Research Center, n.d.).
 
 **That roster is the marketing asset.** A lot company selling to a national Black market needed exactly one thing: proof that people whose judgment the market trusted had already bought.
 
@@ -431,9 +431,9 @@ There is **no founder**, **no founding year**, and **no Black developer** to nam
 
 The **Vineyard Grove Company**, formed by wealthy residents, laid out the **Highlands** section of what became Oak Bluffs around **1869 to 1870**, dividing it into roughly **700 small parcels of about 70 by 30 feet**, as a Methodist summer vacation community (Burnett, n.d.; Martha's Vineyard Magazine, 2016).
 
-**The plan did not work.** When Methodist development faltered in an economic downturn, the company made a deal with a smaller **Baptist** organisation to hold revivals there. A **wooden open tabernacle was built in 1877**, on a site where the **New England Black Baptist Association** had held meetings (Burnett, n.d.; Martha's Vineyard Magazine, 2016).
+**The plan did not work.** When Methodist development faltered in an economic downturn, the company made a deal with a smaller **Baptist** organization to hold revivals there. A **wooden open tabernacle was built in 1877**, on a site where the **New England Black Baptist Association** had held meetings (Burnett, n.d.; Martha's Vineyard Magazine, 2016).
 
-**That is the hinge.** Historians Robert and Karen Hayden credit the 1877 tabernacle with the Highlands becoming **the first summer neighbourhood for vacationing and homeowning Black people** in the early 1900s (Hayden & Hayden, as cited in Martha's Vineyard Magazine, 2016). **A failed Methodist subdivision, rescued by a Baptist revival ground, became the place where Black families could buy.** Nobody planned that.
+**That is the hinge.** Historians Robert and Karen Hayden credit the 1877 tabernacle with the Highlands becoming **the first summer neighborhood for vacationing and homeowning Black people** in the early 1900s (Hayden & Hayden, as cited in Martha's Vineyard Magazine, 2016). **A failed Methodist subdivision, rescued by a Baptist revival ground, became the place where Black families could buy.** Nobody planned that.
 
 ## The deeds, counted
 
@@ -463,7 +463,7 @@ The **Vineyard Grove Company**, formed by wealthy residents, laid out the **High
 
 ## The Inkwell, and the name
 
-The town beach in Oak Bluffs is known as **the Inkwell**. **The name was applied by white people as an insult**, referring to the skin colour of the people swimming there. **It was taken up by the swimmers.** BlackPast calls it the most famous of the beaches across the United States to transform an odious nickname into an emblem of pride (BlackPast, n.d.-a).
+The town beach in Oak Bluffs is known as **the Inkwell**. **The name was applied by white people as an insult**, referring to the skin color of the people swimming there. **It was taken up by the swimmers.** BlackPast calls it the most famous of the beaches across the United States to transform an odious nickname into an emblem of pride (BlackPast, n.d.-a).
 
 **Use the name, because the community uses it.** The Martha's Vineyard African American Heritage Trail describes the Inkwell as a beautiful swimming spot along Beach Road that has traditionally been a meeting place for African American families and visitors, busy from a dawn swimming group onward through July and August (Martha's Vineyard African American Heritage Trail, n.d.). **That is a present-tense description of a working beach, and it is the community's own.**
 
@@ -471,9 +471,9 @@ The town beach in Oak Bluffs is known as **the Inkwell**. **The name was applied
 
 Oak Bluffs is a **town of Massachusetts**. Its Black property owners do not govern it and never claimed to. **So the institution they built is an association rather than a government.**
 
-**The Cottagers, Inc.** was founded in **1956** by **Thelma Garland Smith** with friends, in response to criticism that African Americans did not care about the island or contribute to community needs. It is a philanthropic volunteer organisation of **100 African American women homeowners** supporting charitable, educational and community service projects on the island, and it operates **Cottagers' Corner**. The Vineyard Gazette covered its sixtieth anniversary in 2016 and its seventieth in 2026 (Vineyard Gazette, 2016; Vineyard Gazette, 2026).
+**The Cottagers, Inc.** was founded in **1956** by **Thelma Garland Smith** with friends, in response to criticism that African Americans did not care about the island or contribute to community needs. It is a philanthropic volunteer organization of **100 African American women homeowners** supporting charitable, educational and community service projects on the island, and it operates **Cottagers' Corner**. The Vineyard Gazette covered its sixtieth anniversary in 2016 and its seventieth in 2026 (Vineyard Gazette, 2016; Vineyard Gazette, 2026).
 
-**Read the membership requirement closely: homeowners.** The Cottagers is an organisation of property owners, which makes it the direct cousin of Idlewild's Lot Owners Association and American Beach's Property Owners Association. **Three communities, three different legal shapes, and the same instinct: if you own the ground, form the body.**
+**Read the membership requirement closely: homeowners.** The Cottagers is an organization of property owners, which makes it the direct cousin of Idlewild's Lot Owners Association and American Beach's Property Owners Association. **Three communities, three different legal shapes, and the same instinct: if you own the ground, form the body.**
 
 The **African American Heritage Trail of Martha's Vineyard** was established in **1998** and now carries much of the interpretive work (National Trust for Historic Preservation, n.d.).
 
@@ -635,7 +635,7 @@ The **African American Heritage Trail of Martha's Vineyard** was established in 
             options: [
               "Average the three figures together",
               "Use the largest, since the others must undercount",
-              "Discard all three of them as unreliable rumour",
+              "Discard all three of them as unreliable rumor",
               "Report each figure with its owner and its scope",
             ],
             correctIndex: 3,
@@ -675,7 +675,7 @@ The **African American Heritage Trail of Martha's Vineyard** was established in 
               "A failed Methodist subdivision, then an 1877 Baptist tabernacle",
             ],
             correctIndex: 3,
-            explanation: "The Vineyard Grove Company platted about 700 small parcels around 1870 for a Methodist community; when that faltered it partnered with a Baptist organisation, and the tabernacle drew Black vacationers who then bought.",
+            explanation: "The Vineyard Grove Company platted about 700 small parcels around 1870 for a Methodist community; when that faltered it partnered with a Baptist organization, and the tabernacle drew Black vacationers who then bought.",
             sourceLessonSlug: "wwr-oak-bluffs-deeds",
           },
           {
@@ -715,13 +715,13 @@ Willa Bruce's very first operation at Manhattan Beach, advertised in the Liberat
 
 **Read this slowly, because it explains what segregation actually cost people.**
 
-Willa Bruce's guests in 1912 arrived to find that she **rented bathing suits and provided access to bathing showers and dressing tents** (City of Manhattan Beach History Advisory Board, 2021). By **1916** the Bruces had built a **two-storey frame building with a kitchen, a dance floor and other amenities**, and by **1923** there were three buildings across their two lots (City of Manhattan Beach History Advisory Board, 2021).
+Willa Bruce's guests in 1912 arrived to find that she **rented bathing suits and provided access to bathing showers and dressing tents** (City of Manhattan Beach History Advisory Board, 2021). By **1916** the Bruces had built a **two-story frame building with a kitchen, a dance floor and other amenities**, and by **1923** there were three buildings across their two lots (City of Manhattan Beach History Advisory Board, 2021).
 
 **You cannot swim if you cannot change.** A public beach with no bath house you are allowed to use is not a public beach. **So the first product of a Black beach business was a room with a door on it**, and the second was the towel.
 
 **Now look at what the city did about it.** On **June 5, 1924**, the same day the Board of Trustees passed Ordinance 276 declaring its intention to acquire Blocks 5 and 12 by condemnation, it passed **ordinances 273 to 275**, which prohibited new or additional bath houses and commercialised amusements near the Strand without Trustee approval, and prohibited dressing or undressing in any vehicle or temporary structure on the beach (City of Manhattan Beach History Advisory Board, 2021).
 
-**Read those two facts as one decision.** The city moved against the land and against the business model on the same day, and the business model was a place to change your clothes. **When you can name the product, you can recognise the instrument aimed at it.**
+**Read those two facts as one decision.** The city moved against the land and against the business model on the same day, and the business model was a place to change your clothes. **When you can name the product, you can recognize the instrument aimed at it.**
 
 ## 4. A dance floor
 
@@ -729,7 +729,7 @@ Willa Bruce's guests in 1912 arrived to find that she **rented bathing suits and
 
 **American Beach's is Evans' Rendezvous**, a nightclub on the ocean, still standing and, the Park Service notes, **not available for touring** (National Park Service, n.d.-b).
 
-**And the Bruces had a dance floor in 1916**, inside a two-storey building on 33 and one-third feet of beach frontage.
+**And the Bruces had a dance floor in 1916**, inside a two-story building on 33 and one-third feet of beach frontage.
 
 ## 5. The lot itself
 
@@ -767,7 +767,7 @@ Willa Bruce's guests in 1912 arrived to find that she **rented bathing suits and
         },
         {
           prompt: "Where does the name the Inkwell come from, and how should a writer handle it?",
-          answer: "White people applied it as an insult about the skin colour of the swimmers, and the swimmers took it up as a name of pride. Use it, because the community uses it, and say where the name came from.",
+          answer: "White people applied it as an insult about the skin color of the swimmers, and the swimmers took it up as a name of pride. Use it, because the community uses it, and say where the name came from.",
         },
         {
           prompt: "What do the Cottagers, the Idlewild Lot Owners Association and the American Beach Property Owners Association have in common?",
@@ -888,7 +888,7 @@ American Beach is unincorporated in **Nassau County**. There is an **American Be
 **Notice who holds the pen.** The zoning is the county's. The community participates. **Participation and authority are different things, and knowing which one you have is the whole skill.**
 
 **4. Property owners inside a town they do not control. Oak Bluffs, Massachusetts.**
-Oak Bluffs is a town of Massachusetts with its own government, and Black property owners there have never claimed to run it. **So the institution they built is voluntary: The Cottagers, Inc., founded in 1956 by Thelma Garland Smith with friends, a philanthropic organisation of 100 African American women homeowners** (Vineyard Gazette, 2016).
+Oak Bluffs is a town of Massachusetts with its own government, and Black property owners there have never claimed to run it. **So the institution they built is voluntary: The Cottagers, Inc., founded in 1956 by Thelma Garland Smith with friends, a philanthropic organization of 100 African American women homeowners** (Vineyard Gazette, 2016).
 
 **5. Private lots inside a city governed by other people. Bruce's Beach, California.**
 The Bruces held two lots. There was no township of theirs, no association, no municipality of theirs. **Every relevant power sat with the Manhattan Beach Board of Trustees**, and in 1923 a real estate agent named George Lindsey and, in the minutes' phrase, several civic leaders, petitioned that board to purchase Blocks 5 and 12 (City of Manhattan Beach History Advisory Board, 2021).
@@ -917,7 +917,7 @@ The Bruces held two lots. There was no township of theirs, no association, no mu
 
 - **Five cases are not a sample.** You cannot derive a rule about American municipalities from five communities selected because they are well documented.
 - **Incorporation is not armour.** Highland Beach incorporated in **1922** and Bruce's Beach was condemned in **1924**, and nothing about the first prevented the second, because they are in different states and unrelated. More to the point, the rest of this route series is full of incorporated places whose Black districts were taken anyway, by states, counties and highway departments that outrank a city.
-- **The causation runs the other way as often as not.** A community that could organise a charter was already a community with money, lawyers and time.
+- **The causation runs the other way as often as not.** A community that could organize a charter was already a community with money, lawyers and time.
 
 **The claim that survives all of that is narrower and still worth having: legal shape determines who has to be persuaded, and which instrument they must use to move you.** It does not determine whether they succeed. **Knowing which body has the power is how you know which meeting to attend**, and that is the difference between a history course and a civics course.
 
@@ -1115,7 +1115,7 @@ The Bruces held two lots. There was no township of theirs, no association, no mu
               "Incorporating as a municipality protects a Black community from ever being taken",
               "Legal shape determines who must be persuaded and which instrument they must use",
               "Property owners associations are more effective than municipal governments",
-              "Communities that organised early always kept their land and their businesses",
+              "Communities that organized early always kept their land and their businesses",
             ],
             correctIndex: 1,
             explanation: "It does not determine whether they succeed. Five well-documented cases are not a sample, and incorporation is not armour.",
@@ -1191,9 +1191,9 @@ The Bruces held two lots. There was no township of theirs, no association, no mu
 | **June 17, 1912** | Bruce Beach Front opens: soda pop, lunches, bathing suits, showers, dressing tents | The arrival of Black guests causes agitation among some white property owners, and confrontation with guests reaching the ocean |
 | **1912** | The Idlewild Resort Company is formed to sell lots to Black buyers | The Los Angeles City Attorney's opinion in the Caleb Holden matter guts the state civil rights bill in practice |
 | **1913** | | Segregation approved in federal government offices |
-| **1915 to 1916** | Idlewild's first plat surveyed; Idlewild clubhouse built; the Bruces build a two-storey building with a kitchen and dance floor | |
+| **1915 to 1916** | Idlewild's first plat surveyed; Idlewild clubhouse built; the Bruces build a two-story building with a kitchen and dance floor | |
 | **1919 to 1923** | The Prioleaus, Elizabeth Patterson, Mary Sanders and the Johnsons buy lots in Block 12 | 1921: Lindsey approaches the Board of Trustees about the increasing number of Black people in Manhattan Beach |
-| **Aug 1921** | The Idlewild Lot Owners Association is incorporated and takes over the resort | The federal Advisory Committee on Zoning is organised and its manual distributed nationwide |
+| **Aug 1921** | The Idlewild Lot Owners Association is incorporated and takes over the resort | The federal Advisory Committee on Zoning is organized and its manual distributed nationwide |
 | **May 12, 1922** | Highland Beach incorporates as a municipality | |
 | **Nov to Dec 1923** | | Lindsey and civic leaders petition to purchase Blocks 5 and 12; owners of Blocks 5 and 12 petition against it |
 | **1924** | | The realtors' national code of ethics adopted; a Klan lecture advertised in January; Ordinance 276 and ordinances 273 to 275 passed June 5; Ordinance 282; the city files its condemnation suit in November |
@@ -1280,7 +1280,7 @@ Officer **Haddock** then testified that Bessonette had given him specific orders
 
 ## Read the summer with the procedure
 
-**Left column, what was built or owned:** a ten-room boarding house opened and advertised; a legal defence organised and won on appeal; a beach lease repealed and a parking ordinance overturned by the same council that passed it; a family that stayed after an arson attempt.
+**Left column, what was built or owned:** a ten-room boarding house opened and advertised; a legal defense organized and won on appeal; a beach lease repealed and a parking ordinance overturned by the same council that passed it; a family that stayed after an arson attempt.
 
 **Right column, what was done:** a business surrendered and demolished; a public beach leased to a private man so that swimmers could be arrested; twenty-five people's names taken; a student jailed in a wet swimsuit; four men convicted; a house set on fire; a cross burned.
 
@@ -1413,7 +1413,7 @@ Here is why the evidence does not carry it.
 |---|---|---|
 | **Feb 19, 1912** | Deed | Willa Bruce buys **Lot 8, Block 5**, Peck's Manhattan Beach Tract, from Henry Willard for **1,225 dollars**. The parcel is 33 and one-third by 105 feet |
 | **June 17, 1912** | Advertisement in the Liberator | "Bruce Beach Front" opens |
-| **1916** | Building | A two-storey frame building with a kitchen and dance floor |
+| **1916** | Building | A two-story frame building with a kitchen and dance floor |
 | **1919 to 1923** | Deeds | **Major George and Ethel Prioleau** buy the southern half of lot 4, Block 12; **Elizabeth Patterson** the northern half; **Mary Sanders** lot 6; **Milton B. and Anna Johnson** lot 1. **Four more Black-owned properties, all in Block 12** |
 | **1920** | Deed | Willa Bruce buys lot 9 of Block 5 |
 | **Nov 15, 1923** | Petition to the Board of Trustees | George Lindsey and civic leaders ask the city to purchase Blocks 5 and 12 |
@@ -1444,8 +1444,8 @@ Here is why the evidence does not carry it.
 
 **The story that the land sat empty for thirty years is wrong in detail, and the city's own report corrects it from the minutes.**
 
-- **July 21, 1932.** The City petitions the County for help funding a City Park between the Strand and Highland, using County Welfare and Stabilization Program labour.
-- **February 1933.** The City files plans to use **Reconstruction Finance Corporation** funds for a beachfront park, requesting thousands of "man days" of relief labour block by block.
+- **July 21, 1932.** The City petitions the County for help funding a City Park between the Strand and Highland, using County Welfare and Stabilization Program labor.
+- **February 1933.** The City files plans to use **Reconstruction Finance Corporation** funds for a beachfront park, requesting thousands of "man days" of relief labor block by block.
 - **August 11, 1933.** The Manhattan Beach News reports the Beach Front Park has been graded and its terraced surface planted.
 - **1938 and 1940.** A volleyball court is approved; residents argue about tennis courts that are not level.
 - **1945.** A children's story hour runs at the playground at Highland and 26th.
@@ -1736,7 +1736,7 @@ Here is why the evidence does not carry it.
 
 **1. Find the lot lines, because the lot is the product.** Section 2 taught you that four of these communities were sold lot by lot. **So look for the evidence of the plat in what you can see**: fence lines, hedges, driveway cuts, the rhythm of house spacing, the width of a street.
 
-A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak Bluffs Highlands parcel produce visibly different streets. **Ask of any block: how wide is a lot here, and does every house sit on one lot or on three?** A house sitting on three lots means somebody bought out their neighbours, and that is a transaction with a date.
+A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak Bluffs Highlands parcel produce visibly different streets. **Ask of any block: how wide is a lot here, and does every house sit on one lot or on three?** A house sitting on three lots means somebody bought out their neighbors, and that is a transaction with a date.
 
 **2. Find the boundary, and name what is on the other side of it.** Every community in this course has an edge where it stops and something else begins: a resort, a national forest, a state park, a subdivision built later, a county facility. **The boundary is where the interesting decisions happened.** Note whether the change is gradual or abrupt, because abrupt means a line was drawn.
 
@@ -1748,7 +1748,7 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
 
 **6. Look for what is being decided right now.** A rezoning notice, a hearing sign, construction fencing, a survey stake, a public meeting flyer. **American Beach has a county planning process running and a National Historic Landmark study under way** (Nassau County, n.d.; National Park Service, n.d.-c). **Every one of those has a docket and a comment period.**
 
-**7. Look at who is there, and then stop looking.** These are working communities. **Describe people as they would describe themselves, or do not describe them.** The ethics of writing about a 360 tour of a residential street are the ethics of writing about your neighbours.
+**7. Look at who is there, and then stop looking.** These are working communities. **Describe people as they would describe themselves, or do not describe them.** The ethics of writing about a 360 tour of a residential street are the ethics of writing about your neighbors.
 
 ## What a tour cannot show you, which is most of this course
 
@@ -1868,7 +1868,7 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
             title: "Oak Bluffs and the Inkwell, Dukes County, Massachusetts",
             color: "#1d4ed8",
             description:
-              "No founder and no founding date. The Vineyard Grove Company platted the Highlands into roughly 700 parcels of about 70 by 30 feet around 1870 for a Methodist summer community; when that faltered a Baptist organisation held revivals there and a tabernacle went up in 1877, and Black vacationers began buying. Jeffrey Burnett's deed-based Highlands map identifies 129 deeds in which people of African descent bought or sold land across 22 properties, from Dr. Samuel T. Brimingham in August 1870 onward. Shearer Cottage opened as a 12-room inn in 1912, after Henrietta Shearer ran a laundry for ten years, was listed in the Green Book, and is still owned by Shearer descendants. The Inkwell is the town beach, named as an insult and taken up as a name of pride. The Cottagers, Inc., 100 African American women homeowners, was founded in 1956 and marked seventy years in 2026. Black owners hold property in a town they do not govern, so the institution is voluntary rather than municipal.",
+              "No founder and no founding date. The Vineyard Grove Company platted the Highlands into roughly 700 parcels of about 70 by 30 feet around 1870 for a Methodist summer community; when that faltered a Baptist organization held revivals there and a tabernacle went up in 1877, and Black vacationers began buying. Jeffrey Burnett's deed-based Highlands map identifies 129 deeds in which people of African descent bought or sold land across 22 properties, from Dr. Samuel T. Brimingham in August 1870 onward. Shearer Cottage opened as a 12-room inn in 1912, after Henrietta Shearer ran a laundry for ten years, was listed in the Green Book, and is still owned by Shearer descendants. The Inkwell is the town beach, named as an insult and taken up as a name of pride. The Cottagers, Inc., 100 African American women homeowners, was founded in 1956 and marked seventy years in 2026. Black owners hold property in a town they do not govern, so the institution is voluntary rather than municipal.",
           },
           {
             id: "wwr-bruces-beach",
@@ -1877,7 +1877,7 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
             title: "Bruce's Beach, Manhattan Beach, Los Angeles County, California",
             color: "#1d4ed8",
             description:
-              "Willa Bruce bought Lot 8 of Block 5, Peck's Manhattan Beach Tract, on February 19, 1912 for 1,225 dollars, a parcel 33 and one-third by 105 feet, and opened selling soda pop, lunches, rented bathing suits, showers and dressing tents. A two-storey building with a kitchen and dance floor followed in 1916, and lot 9 in 1920. Four other Black families bought in Block 12 between 1919 and 1923. On June 5, 1924 the Board of Trustees passed Ordinance 276 declaring the intention to condemn both blocks, and ordinances 273 to 275 restricting bath houses and beach changing. Final judgment June 10, 1929 awarded the Bruces 14,500 dollars; most of the condemned lots were white-owned and the largest award went to three white owners. The State took the land in 1948 for public beach or park use only; the County acquired it in 1995. SB 796 was signed September 30, 2021 and the Board returned Lots 8 and 9 to the heirs on July 20, 2022. The family sold back to the County for nearly 20 million dollars in 2023. The park that carries the name is Block 12 and is still the city's.",
+              "Willa Bruce bought Lot 8 of Block 5, Peck's Manhattan Beach Tract, on February 19, 1912 for 1,225 dollars, a parcel 33 and one-third by 105 feet, and opened selling soda pop, lunches, rented bathing suits, showers and dressing tents. A two-story building with a kitchen and dance floor followed in 1916, and lot 9 in 1920. Four other Black families bought in Block 12 between 1919 and 1923. On June 5, 1924 the Board of Trustees passed Ordinance 276 declaring the intention to condemn both blocks, and ordinances 273 to 275 restricting bath houses and beach changing. Final judgment June 10, 1929 awarded the Bruces 14,500 dollars; most of the condemned lots were white-owned and the largest award went to three white owners. The State took the land in 1948 for public beach or park use only; the County acquired it in 1995. SB 796 was signed September 30, 2021 and the Board returned Lots 8 and 9 to the heirs on July 20, 2022. The family sold back to the County for nearly 20 million dollars in 2023. The park that carries the name is Block 12 and is still the city's.",
           },
           {
             id: "wwr-chicago",
@@ -1919,7 +1919,7 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
         },
         {
           prompt: "What is the first thing the brief tells you to look for, and why?",
-          answer: "The lot lines, because the lot was the product. Fence lines, hedges, driveway cuts and house spacing are the visible evidence of a plat, and a house sitting on three lots means somebody bought out their neighbours on a date you can find.",
+          answer: "The lot lines, because the lot was the product. Fence lines, hedges, driveway cuts and house spacing are the visible evidence of a plat, and a house sitting on three lots means somebody bought out their neighbors on a date you can find.",
         },
         {
           prompt: "What assumption does the whole brief run on?",
@@ -1945,7 +1945,7 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
 
 **What is there:** an unincorporated community in Yates Township with a **National Register historic district listed in 1979**, a **Lot Owners Association dating to August 1921**, an **African American Chamber of Commerce founded in 2000**, a **Michigan Historical Commission marker**, and residents the community describes as year-round residents, fourth and fifth generation Idlewilders, seasonal visitors and newcomers (Idlewild Michigan, n.d.; National Park Service, n.d.-e; The Historical Marker Database, n.d.).
 
-**What you can visit:** the **Idlewild Historic and Cultural Center**, plus summer events and festivals the community runs. **Two sources disagree about the Center's date**: the Terry Wantz Historical Research Center says it was established in 2003, and the community's own site says it opened in 2019 (Terry Wantz Historical Research Center, n.d.; Idlewild Michigan, n.d.). **That is very likely an organisation founded in one year and a building opened in another, and the Center itself is the place to confirm it.**
+**What you can visit:** the **Idlewild Historic and Cultural Center**, plus summer events and festivals the community runs. **Two sources disagree about the Center's date**: the Terry Wantz Historical Research Center says it was established in 2003, and the community's own site says it opened in 2019 (Terry Wantz Historical Research Center, n.d.; Idlewild Michigan, n.d.). **That is very likely an organization founded in one year and a building opened in another, and the Center itself is the place to confirm it.**
 
 ## American Beach, Florida
 
@@ -1974,7 +1974,7 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
 ## Five rules for visiting any of these places
 
 1. **Assume it is somebody's home until you have evidence otherwise.** Most of what you can see is private property, and in four of the five that is the majority of the community.
-2. **Contact the stewarding organisation before you arrive.** Every place above has a named museum, association or agency. **Ask them what they want visitors to do.**
+2. **Contact the stewarding organization before you arrive.** Every place above has a named museum, association or agency. **Ask them what they want visitors to do.**
 3. **Spend money.** These were businesses and several still are. **A museum admission, a room at Shearer Cottage, a meal: the economics of preservation are not abstract.**
 4. **Photograph buildings from public ground. Do not photograph people without asking.** A residential street is not a set.
 5. **Read the sponsor on every plaque and write it down.** It tells you who was in the room when the wording was agreed.
@@ -2100,7 +2100,7 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
         },
         {
           prompt: "State three of the five rules for visiting.",
-          answer: "Assume it is somebody's home; contact the stewarding organisation before you arrive; spend money, because the economics of preservation are not abstract; photograph buildings from public ground and not people without asking; and read and record the sponsor on every plaque.",
+          answer: "Assume it is somebody's home; contact the stewarding organization before you arrive; spend money, because the economics of preservation are not abstract; photograph buildings from public ground and not people without asking; and read and record the sponsor on every plaque.",
         },
       ],
     },

@@ -105,11 +105,11 @@ Here's the upside of understanding all this: it tells you exactly where *you* be
 A strong creative prompt usually names four things. Remember **S.T.A.R.**:
 
 - **Subject**: what's actually in it. ("A lighthouse on a cliff at dawn.")
-- **Tone/Style**: the mood and the look or sound. ("Moody, painterly, muted blue-grey palette." Or for music: "slow, hopeful, solo piano.")
+- **Tone/Style**: the mood and the look or sound. ("Moody, painterly, muted blue-gray palette." Or for music: "slow, hopeful, solo piano.")
 - **Audience/Purpose**: who it's for and why. ("Cover art for a short story about loneliness.")
 - **Restrictions**: what to include or avoid, length, format. ("No text in the image. Vertical. Keep it simple.")
 
-Compare: *"a lighthouse"* versus *"A lighthouse on a cliff at dawn, moody and painterly, muted blue-grey, as cover art for a short story about loneliness, vertical, no text, keep it simple."* Same tool, completely different result.
+Compare: *"a lighthouse"* versus *"A lighthouse on a cliff at dawn, moody and painterly, muted blue-gray, as cover art for a short story about loneliness, vertical, no text, keep it simple."* Same tool, completely different result.
 
 Two habits separate good creative AI work from lazy creative AI work:
 

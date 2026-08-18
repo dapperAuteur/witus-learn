@@ -351,7 +351,7 @@ Three shapes that work at this length:
 
 **Short form as a laboratory, which is the argument for writing them even if you want to write full-lengths.** A ten-minute play is the cheapest possible test of a structural idea. You can find out whether a premise has an engine, whether a relationship is legible, and whether an ending shape works, in a week rather than a year. **Writers who work only at full length find out the same things after twelve months of investment**, when it is much more expensive to abandon.
 
-**The production reality**, which is genuinely relevant to what you choose to write. Short plays get staged through festivals and evenings of short work, and those programmes generally favour small casts, minimal sets, and pieces that need almost no technical support, because ten pieces share one stage in one night. A ten-minute play with six actors and a set change is a good play that will be produced rarely. **That is a constraint worth knowing before you write rather than after**, and it is not an argument for writing worse plays, only for knowing what the form's economics reward.
+**The production reality**, which is genuinely relevant to what you choose to write. Short plays get staged through festivals and evenings of short work, and those programs generally favor small casts, minimal sets, and pieces that need almost no technical support, because ten pieces share one stage in one night. A ten-minute play with six actors and a set change is a good play that will be produced rarely. **That is a constraint worth knowing before you write rather than after**, and it is not an argument for writing worse plays, only for knowing what the form's economics reward.
 
 :::reveal You are asked to expand a working ten-minute play into a one-act. What is the right move, and what is the warning attached? ||| The right move is to find the complication the short version could not afford: a second want in tension with the first, a third character who changes the dynamic, or a false resolution that then collapses. Adding scenes before and after just produces a short play with padding. The warning is that not every short piece wants to be longer: a ten-minute play that works completely is a finished thing, the pressure to expand is usually commercial, and a good short turned into a mediocre one-act is a common and avoidable loss.
 
@@ -398,7 +398,7 @@ Three shapes that work at this length:
             prompt: "Why is the two-hander described as an economic fact as well as an artistic one?",
             options: [
               "Two-handers reliably command higher royalties than ensemble plays do",
-              "Festival programmes require every submission to have exactly two speaking roles",
+              "Festival programs require every submission to have exactly two speaking roles",
               "Two actors, one set and no interval make it the most producible serious theatre",
               "Two-person scenes are considerably quicker to write than group scenes are",
             ],
@@ -462,7 +462,7 @@ Three shapes that work at this length:
           {
             prompt: "What is the warning attached to expanding a working short play?",
             options: [
-              "Longer plays are considerably harder to place with festival programmes",
+              "Longer plays are considerably harder to place with festival programs",
               "Expansion requires the existing dialogue to be rewritten entirely",
               "Audiences now prefer short work in most contemporary theatre venues",
               "Not every short wants to be longer; the pressure is usually commercial",
@@ -488,8 +488,8 @@ Three shapes that work at this length:
           {
             prompt: "What production reality shapes what short plays get staged?",
             options: [
-              "Festival programmes require every play to run under eight minutes",
-              "Programmes favour small casts, minimal sets and little technical support",
+              "Festival programs require every play to run under eight minutes",
+              "Programs favor small casts, minimal sets and little technical support",
               "Only plays whose scripts are already published are eligible for programming",
               "Venues require a director to already be attached at the point of submission",
             ],

@@ -15,7 +15,7 @@ export const RIVER_TELLING_THE_RIVER_COURSE: AuthoredCourse = {
       slug: "two-accounts-one-place",
       title: "1 · Two accounts of the same place",
       section: "Section 1 · What the forms do",
-      body: `The team was asked for something most expeditions do not produce: **a factual log entry and a piece of fiction, written from the same place on the same day**, kept in separate files and labelled.
+      body: `The team was asked for something most expeditions do not produce: **a factual log entry and a piece of fiction, written from the same place on the same day**, kept in separate files and labeled.
 
 That pairing is the most useful teaching object this series has, because the difference between the two forms is normally invisible. Read separately, both just look like writing about a river.
 
@@ -37,7 +37,7 @@ Its power is exactly its freedom, and so is its danger.
 
 That is the entire ethic in one line, and almost every failure in this area is a failure of that one rule: invented detail in a factual piece, or fiction presented in a way that lets a reader take it for record.
 
-The team's material is labelled, in the filename, every time. Not once at the top of a folder. Every file.
+The team's material is labeled, in the filename, every time. Not once at the top of a folder. Every file.
 
 ## Where this gets hardest
 
@@ -151,12 +151,12 @@ You may imagine. You may write from a perspective not your own. You may reconstr
             options: [
               "Invent dialogue for a named historical person, where it matches the spirit of the record",
               "Alter a documented fact about a place or law where the change serves the story",
-              "Imagine the interior life of a person who left no written account, clearly labelled as imagined",
+              "Imagine the interior life of a person who left no written account, clearly labeled as imagined",
               "Present a reconstruction as a record where the underlying research was thorough",
             ],
             correctIndex: 2,
             explanation:
-              "Reaching into experiences the record cannot hold is exactly what fiction is for on this route. The obligation is labelling, not abstinence. The other three are the failures the lesson names.",
+              "Reaching into experiences the record cannot hold is exactly what fiction is for on this route. The obligation is labeling, not abstinence. The other three are the failures the lesson names.",
             sourceLessonSlug: "what-neither-form-may-do",
           },
         ],
@@ -175,7 +175,7 @@ You may imagine. You may write from a perspective not your own. You may reconstr
 Produce **two short pieces about it**:
 
 1. **A factual account.** What is there, what happened there, what you could establish and from what sources. Cited. Anything you could not settle is flagged as unsettled rather than smoothed over.
-2. **A short imaginative piece from the same place.** Clearly labelled as fiction. It may go where the record cannot.
+2. **A short imaginative piece from the same place.** Clearly labeled as fiction. It may go where the record cannot.
 
 Then **one paragraph** on what the second could do that the first could not, and what the first could do that the second could not.
 
@@ -217,7 +217,7 @@ The expedition is a way of watching that happen at four miles an hour. What you 
         {
           prompt: "What two pieces does the capstone require, and what must separate them?",
           answer:
-            "A cited factual account and a clearly labelled imaginative piece about the same place. A reader must be able to tell which is which without being told twice.",
+            "A cited factual account and a clearly labeled imaginative piece about the same place. A reader must be able to tell which is which without being told twice.",
         },
       ],
     },

@@ -9,7 +9,10 @@ import { loadTenantInterest } from "@/db/queries/leads";
 import { countByCourse } from "@/lib/lead-interest";
 import { hasOutbox } from "@/lib/ecosystem-webhook";
 import { brandName } from "@/lib/branding";
+import { listBundles } from "@/db/queries/bundles";
+import { toSaleView } from "@/lib/sale-pricing";
 import { MarketingAdmin, type PromoView } from "@/components/marketing-admin";
+import { SalesAdmin, type SaleTarget } from "@/components/sales-admin";
 import { CampaignComposer, type CampaignView } from "@/components/campaign-composer";
 import { AnnouncementComposer } from "@/components/announcement-composer";
 
@@ -27,14 +30,18 @@ export default async function MarketingPage() {
   const tenant = sdb.tenant;
   const brand = brandName(tenant);
 
-  const [promoRows, audience, campaignRows, shares, interest, allCourses] = await Promise.all([
-    listPromos(tenant.id, session.user.id),
-    getAudienceCounts(tenant.id),
-    listCampaigns(tenant.id),
-    getShareStats(tenant.id),
-    loadTenantInterest(tenant.id),
-    sdb.listCourses({ includeUnpublished: true, sort: "newest" }),
-  ]);
+  const [promoRows, audience, campaignRows, shares, interest, allCourses, saleRows, bundleRows] =
+    await Promise.all([
+      listPromos(tenant.id, session.user.id),
+      getAudienceCounts(tenant.id),
+      listCampaigns(tenant.id),
+      getShareStats(tenant.id),
+      loadTenantInterest(tenant.id),
+      sdb.listCourses({ includeUnpublished: true, sort: "newest" }),
+      // Codeless sales for THIS tenant, and the bundles a sale can target.
+      sdb.listPromotions(),
+      listBundles(tenant.id, { includeUnpublished: true }),
+    ]);
 
   const promos: PromoView[] = promoRows.map((p) => ({
     code: p.code,
@@ -42,6 +49,18 @@ export default async function MarketingPage() {
     courseId: p.courseId ?? null,
     maxUses: p.maxUses ?? null,
     expiresAt: p.expiresAt ? new Date(p.expiresAt).toISOString() : null,
+  }));
+  const now = new Date();
+  const sales = saleRows.map((s) => toSaleView(s, now));
+  const saleCourses: SaleTarget[] = allCourses.map((c) => ({
+    id: c.id,
+    title: c.title,
+    kind: "course" as const,
+  }));
+  const saleBundles: SaleTarget[] = bundleRows.map((b) => ({
+    id: b.id,
+    title: b.title,
+    kind: "bundle" as const,
   }));
   const campaigns: CampaignView[] = campaignRows.map((c) => ({
     id: c.id,
@@ -157,6 +176,20 @@ export default async function MarketingPage() {
         </h2>
         <div className="mt-3">
           <MarketingAdmin initial={promos} />
+        </div>
+      </section>
+
+      <section aria-labelledby="mkt-sales" className="mt-10">
+        <h2 id="mkt-sales" className="text-lg font-bold">
+          Sales and promotions
+        </h2>
+        <p className="mt-1 text-sm text-neutral-500">
+          Discounts that need <strong>no code</strong>. The course or bundle page shows the old price
+          struck through beside the new one, and checkout charges the new price. The list price you
+          set on the course is never overwritten, so a sale always ends cleanly.
+        </p>
+        <div className="mt-3">
+          <SalesAdmin initial={sales} courses={saleCourses} bundles={saleBundles} />
         </div>
       </section>
 

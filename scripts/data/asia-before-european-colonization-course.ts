@@ -576,7 +576,7 @@ That sequence, precisely: **Aurangzeb**, the last of the powerful emperors, died
             options: [
               "It was forgotten in India and deciphered only in 1837 by Prinsep",
               "It remained in continuous everyday use in India down to the present",
-              "It was banned by the Guptas in favour of Sanskrit in Devanagari",
+              "It was banned by the Guptas in favor of Sanskrit in Devanagari",
               "It was never written down and survives only in oral recitation",
             ],
             correctIndex: 0,

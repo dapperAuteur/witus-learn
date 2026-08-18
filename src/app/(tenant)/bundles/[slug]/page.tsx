@@ -6,7 +6,9 @@ import { getSession } from "@/lib/session";
 import { getActiveLearner } from "@/lib/active-learner";
 import { getBundleBySlug } from "@/db/queries/bundles";
 import { isEnrolled } from "@/db/queries/enrollment";
+import { bundlePriceView, formatPrice } from "@/lib/sale-pricing";
 import { BundleBuyButton } from "@/components/bundle-buy-button";
+import { PriceTag } from "@/components/price-tag";
 import { ComingSoonBadge } from "@/components/coming-soon-course";
 import { isVettingLocked } from "@/lib/vetting";
 
@@ -20,9 +22,8 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 }
 
 function priceLabel(price: string | number, priceType: string): string {
-  if (Number(price) === 0 || priceType === "free") return "Free";
-  const n = Number(price);
-  const amount = `$${n % 1 === 0 ? n.toFixed(0) : n.toFixed(2)}`;
+  const amount = formatPrice(Number(price));
+  if (amount === "Free" || priceType === "free") return "Free";
   return priceType === "subscription" ? `${amount}/mo` : amount;
 }
 
@@ -42,6 +43,14 @@ export default async function BundlePage({ params }: Params) {
     : courses.map(() => false);
   const ownsAll = courses.length > 0 && enrolledFlags.every(Boolean);
 
+  // Codeless promotions for THIS tenant, re-resolved server-side at /api/bundles/[slug]/buy, so the
+  // amount charged is the amount shown here.
+  const promotions = await sdb.listActivePromotions();
+  const priceView = bundlePriceView(bundle, sdb.tenantId, promotions);
+  const buyLabel = priceView.isFree
+    ? "Free"
+    : priceLabel(priceView.effectivePrice, bundle.priceType);
+
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
       <Link href="/bundles" className="text-sm text-neutral-500 hover:underline">
@@ -55,14 +64,20 @@ export default async function BundlePage({ params }: Params) {
         {courses.length} course{courses.length === 1 ? "" : "s"}, one purchase, enrolls you in all of them.
       </p>
 
+      {priceView.discounted && !ownsAll ? (
+        <p className="mt-6 text-lg">
+          <PriceTag view={priceView} suffix={bundle.priceType === "subscription" ? "/mo" : ""} showName />
+        </p>
+      ) : null}
+
       {session ? (
-        <BundleBuyButton slug={bundle.slug} priceLabel={priceLabel(bundle.price, bundle.priceType)} owned={ownsAll} />
+        <BundleBuyButton slug={bundle.slug} priceLabel={buyLabel} owned={ownsAll} />
       ) : (
         <p className="mt-6 text-sm">
           <Link href="/login" className="font-medium underline" style={{ color: "var(--accent)" }}>
             Sign in
           </Link>{" "}
-          to get this bundle ({priceLabel(bundle.price, bundle.priceType)}).
+          to get this bundle ({buyLabel}).
         </p>
       )}
 

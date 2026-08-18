@@ -34,6 +34,15 @@ import {
 } from "@/db/queries/lesson-locations";
 import { listPublishedLessonSearchRows } from "@/db/queries/course-search";
 import {
+  bundleBelongsToTenant,
+  courseBelongsToTenant,
+  createPromotion,
+  endPromotionNow,
+  listActivePromotions,
+  listPromotions,
+  type CreatePromotionInput,
+} from "@/db/queries/promotions";
+import {
   createNote,
   createTeacherNote,
   deleteOwnNote,
@@ -124,6 +133,39 @@ export class ScopedDb {
   /** Stamp `announced_at` on the given courses (tenant-scoped). Returns the ids updated. */
   markCoursesAnnounced(courseIds: string[], at: Date = new Date()) {
     return markCoursesAnnounced(this.tenantId, courseIds, at);
+  }
+
+  // ── Codeless promotions (the "Sales and promotions" panel) ─────────────────
+  // Price cuts that need no promo code. Scoped here like every other catalog read, so a sale one
+  // brand is running is invisible to (and inapplicable on) another brand's catalog, and an id from
+  // another tenant ends nothing.
+
+  /** Every promotion this tenant has created, newest first, with the target's title. */
+  listPromotions() {
+    return listPromotions(this.tenantId);
+  }
+
+  /** Promotions live right now for this tenant. Feed these to resolvePrice(). */
+  listActivePromotions(now?: Date) {
+    return listActivePromotions(this.tenantId, now);
+  }
+
+  createPromotion(input: CreatePromotionInput) {
+    return createPromotion(this.tenantId, input);
+  }
+
+  /** Stamp ended_at. Undefined when the id is not this tenant's (or is already ended). */
+  endPromotion(id: string, now?: Date) {
+    return endPromotionNow(this.tenantId, id, now);
+  }
+
+  /** Target guards: the FK cannot check the tenant, so the route must. */
+  ownsCourse(courseId: string) {
+    return courseBelongsToTenant(this.tenantId, courseId);
+  }
+
+  ownsBundle(bundleId: string) {
+    return bundleBelongsToTenant(this.tenantId, bundleId);
   }
 
   // ── Invite-to-audit (plans/52 §5) ──────────────────────────────────────────

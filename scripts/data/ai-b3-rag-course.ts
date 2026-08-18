@@ -529,7 +529,7 @@ The decisions that matter:
               "A chunking error; fix it by switching to considerably larger chunks",
               "Indirect prompt injection; treat retrieved text as data, never instructions",
               "A pgvector index bug; rebuild the whole index to clear out the text",
-              "Normal behaviour for RAG systems; no particular defence is required",
+              "Normal behavior for RAG systems; no particular defense is required",
             ],
             correctIndex: 1,
             explanation:

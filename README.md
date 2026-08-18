@@ -564,6 +564,25 @@ other Civics-category course links to the Civics slice of the catalog; anything 
 link ([src/lib/civics-nav.ts](src/lib/civics-nav.ts)). Course pages also carry an **"Also available
 in a bundle"** aside with a *Get the bundle* CTA that lands on the bundle page rather than charging
 in place, plus linked paths and series.
+## Sales and promotions (no code needed)
+
+Brand admins can put a course, a bundle, or the whole school on sale from `/admin/marketing`:
+percent off, dollars off, or free, starting now or on a date, ending on a date or running
+indefinitely until ended by hand. The catalog shows the list price struck through beside the new
+one, and **checkout re-resolves the price on the server**, so the amount charged is always the
+amount shown. The course's list price is never overwritten, so ending a sale restores it exactly.
+Promo codes still work alongside sales. Subscription pricing is deliberately out of scope until
+the recurring-discount rule is decided ([src/lib/sale-pricing.ts](src/lib/sale-pricing.ts),
+migration `0054`).
+
+## Catalog prose is US English
+
+A 2026-08-19 sweep converted 3,421 UK spellings to US across 118 course files, touching only
+display fields. Machine-readable and history-keyed strings were left alone by construction: no
+slug, quiz prompt, `:::reveal` question, accepted-answer list, URL, bibliography entry or verbatim
+quotation changed (the US Constitution's "good Behaviour", the International Labour Organization's
+own name, and 143 other proper nouns included). What remains is logged with file and line in the
+sweep's own report.
 
 ## Specialization credentials
 
@@ -652,8 +671,8 @@ Owner-only view of how the catalog hangs together, answering the two questions s
 rebuilt from live rows on every load, so a course added or a prerequisite set in `/admin/paths` a
 minute ago is already in it and there is no regeneration step to forget. Edges come from
 `course_prerequisites` (required, solid with an arrow; recommended, dashed with an arrow) and the
-`ENTITIES` registry (two courses covering the same person, case, law or concept, the line labelled
-with the entity's name). Category drives colour and clustering. **Entity links are code, so they
+`ENTITIES` registry (two courses covering the same person, case, law or concept, the line labeled
+with the entity's name). Category drives color and clustering. **Entity links are code, so they
 move on deploy, not on save**, and the page says so rather than implying otherwise.
 
 Two pictures, both deterministic trigonometry with **no `d3-force` and no new dependency**, so the

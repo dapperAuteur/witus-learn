@@ -197,7 +197,7 @@ And the cyclic, steady-state picture that made his case so elegant was also a co
       section: "Section 1 · How the earth got old",
       body: `
 :::figure https://res.cloudinary.com/devdash54321/image/upload/v1786281374/witus/courses/here-be-dragons/deep-time-and-the-dinosaur-renaissance/william-smith-geological-map.jpg ||| A large hand-coloured geological map of England and Wales, with strata shown as bands of different colours. ||| William Smith's 1815 map: the first time strata were a picture rather than an argument. Smith was first, went uncredited by the institution, and was imprisoned for debt while his work circulated. ||| William Smith (1769-1839). Geological map Britain William Smith 1815.jpg. Public domain. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Geological_map_Britain_William_Smith_1815.jpg
-In 1815 a canal surveyor published a hand-coloured geological map of England and Wales, about 2.6 metres tall, showing the strata beneath the surface in bands of colour. It was called *A Delineation of the Strata of England and Wales with part of Scotland*, and there had never been anything like it at that scale.
+In 1815 a canal surveyor published a hand-colored geological map of England and Wales, about 2.6 metres tall, showing the strata beneath the surface in bands of color. It was called *A Delineation of the Strata of England and Wales with part of Scotland*, and there had never been anything like it at that scale.
 
 ## How he knew
 
@@ -245,7 +245,7 @@ The Geological Society awarded him its first Wollaston Medal in 1831, sixteen ye
         {
           prompt: "Last lesson: how did Hutton's theory reach a nineteenth-century readership?",
           answer:
-            "Through John Playfair's 1802 restatement. Hutton's own prose was nearly impenetrable, so the argument travelled on someone else's clarity.",
+            "Through John Playfair's 1802 restatement. Hutton's own prose was nearly impenetrable, so the argument traveled on someone else's clarity.",
         },
       ],
     },
@@ -441,7 +441,7 @@ The rule that makes a field notebook a distinct kind of writing is this: **separ
 
 A working entry looks less like prose than like a form. Date, locality, stratigraphic position, a sketch with a scale, a measured description. Then, marked off, the interpretation: what you think it is, what you think happened here, what you would need in order to check.
 
-Joseph Grinnell, who ran the Museum of Vertebrate Zoology at Berkeley from 1908, formalised this into a system that is still taught: a dated journal of what happened, a separate set of species accounts, a catalogue of specimens keyed to both, and the standing instruction to write it up the same day while you still remember which of your certainties you actually saw.
+Joseph Grinnell, who ran the Museum of Vertebrate Zoology at Berkeley from 1908, formalised this into a system that is still taught: a dated journal of what happened, a separate set of species accounts, a catalog of specimens keyed to both, and the standing instruction to write it up the same day while you still remember which of your certainties you actually saw.
 
 That last part is the whole discipline. Memory does not store observation and inference separately. Paper can.
 
@@ -491,11 +491,11 @@ Mary Anning, born in 1799, worked that shore for a living from childhood until h
 
 **An ichthyosaur, 1811 to 1812.** Her brother Joseph found a skull in the cliff. Mary located and excavated the rest of the animal roughly a year later. A description of that specimen appeared in the *Philosophical Transactions of the Royal Society* in 1814, written by Everard Home. The Annings are not named in it.
 
-**The first known complete plesiosaur, 1823.** This one was strange enough that Georges Cuvier in Paris, the most authoritative comparative anatomist alive, initially suspected a forgery: the neck had too many vertebrae to be credible. He was applying exactly the scepticism a specialist should apply to an implausible specimen from a commercial dealer. He examined the evidence, including a drawing sent from the Geological Society, and accepted it. The episode is often told as Cuvier insulting her. It is better read as a claim being tested and surviving the test.
+**The first known complete plesiosaur, 1823.** This one was strange enough that Georges Cuvier in Paris, the most authoritative comparative anatomist alive, initially suspected a forgery: the neck had too many vertebrae to be credible. He was applying exactly the skepticism a specialist should apply to an implausible specimen from a commercial dealer. He examined the evidence, including a drawing sent from the Geological Society, and accepted it. The episode is often told as Cuvier insulting her. It is better read as a claim being tested and surviving the test.
 
 **The first British pterosaur, 1828.** Described by William Buckland, who named it *Pterodactylus macronyx*; it is now *Dimorphodon*.
 
-**Coprolites.** Anning noticed that certain conical stones found in the abdominal region of ichthyosaur skeletons contained fish bones and scales. Buckland took up the observation, published on it in 1829, coined the term coprolite, and credited her. That is fossil faeces recognised as fossil faeces, which turns a curiosity into a direct record of what an extinct animal ate.
+**Coprolites.** Anning noticed that certain conical stones found in the abdominal region of ichthyosaur skeletons contained fish bones and scales. Buckland took up the observation, published on it in 1829, coined the term coprolite, and credited her. That is fossil faeces recognized as fossil faeces, which turns a curiosity into a direct record of what an extinct animal ate.
 
 ## What kind of work this was
 
@@ -541,7 +541,7 @@ Mary Anning was never a Fellow. She could not have been: the Society did not adm
 
 So the sequence was structural rather than personal. Anning found and prepared the specimen. A Fellow bought it, or borrowed it, or was shown it. The Fellow described it in print. The Fellow's name attached to the animal, permanently, through the naming conventions that make a scientific name include its author.
 
-Some of those men behaved well. Buckland credited her observation when he published on coprolites in 1829. De la Beche raised money for her. Several of them acknowledged in letters, in private, how much they owed her. The British Association for the Advancement of Science, with government support, granted her an annuity from 1838, and when she died De la Beche read a eulogy to the Geological Society, an honour it had not previously given to a woman or to a non-member.
+Some of those men behaved well. Buckland credited her observation when he published on coprolites in 1829. De la Beche raised money for her. Several of them acknowledged in letters, in private, how much they owed her. The British Association for the Advancement of Science, with government support, granted her an annuity from 1838, and when she died De la Beche read a eulogy to the Geological Society, an honor it had not previously given to a woman or to a non-member.
 
 None of that changes the structure. Personal decency operating inside a closed institution produces gratitude, not authorship.
 
@@ -607,7 +607,7 @@ It is frequently dated to 1841, including in places that ought to know better, b
 
 ## What naming is
 
-Owen was not labelling a shelf. He was asserting that these three animals share features that make them one natural group, distinct from lizards and crocodiles, and he named the features: a sacrum with several fused vertebrae, and limbs held under the body rather than sprawling.
+Owen was not labeling a shelf. He was asserting that these three animals share features that make them one natural group, distinct from lizards and crocodiles, and he named the features: a sacrum with several fused vertebrae, and limbs held under the body rather than sprawling.
 
 That does four things at once.
 
@@ -655,7 +655,7 @@ The conclusion did not survive. Owen also opposed Darwin's account after 1859 an
             prompt: "Why is a fossil that arrives with no field notes close to worthless as evidence?",
             options: [
               "Collecting destroys the context the research questions are about",
-              "Museums are required to reject specimens lacking a written catalogue entry",
+              "Museums are required to reject specimens lacking a written catalog entry",
               "Undocumented bone cannot be scanned, sectioned or measured for publication",
               "The chemical preparation used on unlabelled specimens damages the original tissue",
             ],
@@ -683,7 +683,7 @@ The conclusion did not survive. Owen also opposed Darwin's account after 1859 an
               "Because you soon forget which certainties you actually saw",
               "Because ink applied to damp field paper becomes illegible within a week",
               "Because museum accession rules required notes to be dated on the day of collection",
-              "Because specimens had to be catalogued before they could be shipped to the museum",
+              "Because specimens had to be cataloged before they could be shipped to the museum",
             ],
             correctIndex: 0,
             explanation:
@@ -735,7 +735,7 @@ The conclusion did not survive. Owen also opposed Darwin's account after 1859 an
               "She was written out, then rewritten as a saint",
               "Her finds were reattributed to her brother by later museum curators",
               "Her correspondence was destroyed and reconstructed from secondhand accounts",
-              "Her specimens were catalogued under a dealer's name until the twentieth century",
+              "Her specimens were cataloged under a dealer's name until the twentieth century",
             ],
             correctIndex: 0,
             explanation:
@@ -785,7 +785,7 @@ The conclusion did not survive. Owen also opposed Darwin's account after 1859 an
             prompt: "In what year did the name Dinosauria first appear in print?",
             options: [
               "1842",
-              "1841, in the meeting programme",
+              "1841, in the meeting program",
               "1839, in a letter to the Geological Society",
               "1854, in the Crystal Palace guidebook",
             ],
@@ -825,7 +825,7 @@ They are also one of the most consequential objects in the history of public sci
 
 When the Crystal Palace was moved from Hyde Park to Sydenham after the Great Exhibition, the new site included a geological display. Benjamin Waterhouse Hawkins, a sculptor and natural history illustrator, built the animals in iron, brick and cement, working under Richard Owen's scientific direction. They opened to the public in 1854.
 
-Nothing like it had been attempted anywhere. These were the first attempts anywhere to restore extinct animals at full size as living creatures rather than as skeletons or diagrams. On the last day of 1853, before the *Iguanodon* was finished, Hawkins held a dinner for about twenty guests inside the mould of its body, which tells you exactly how the project understood itself: as a spectacle with an argument inside it.
+Nothing like it had been attempted anywhere. These were the first attempts anywhere to restore extinct animals at full size as living creatures rather than as skeletons or diagrams. On the last day of 1853, before the *Iguanodon* was finished, Hawkins held a dinner for about twenty guests inside the mold of its body, which tells you exactly how the project understood itself: as a spectacle with an argument inside it.
 
 ## What is wrong with them
 
@@ -920,7 +920,7 @@ Cope died in 1897. Marsh died in 1899. Both were close to broke.
 
 ## The reason this is in this course
 
-Nothing here required anyone to lie. Both men were serious scientists doing real work under a system that paid for a particular behaviour, and they produced that behaviour. The next lesson is about the bill.
+Nothing here required anyone to lie. Both men were serious scientists doing real work under a system that paid for a particular behavior, and they produced that behavior. The next lesson is about the bill.
 
 :::reveal Name two behaviours the Marsh and Cope competition rewarded, and what each cost. ||| Speed over completeness, so a name on a fragment beat a careful description; and secrecy over sharing, so quarry locations were concealed even from other scientists. Volume over verification and territory over collaboration are the other two.
 
@@ -979,7 +979,7 @@ Look at what the system rewarded: publication count, priority, speed, exclusive 
 
 Then look at anything that runs on similar metrics now. A research field ranked on publication counts. A newsroom paid by the first post. A team measured on tickets closed. A model of the world assembled from documents nobody can trace back.
 
-In none of those cases does anybody have to lie. You get the behaviour you pay for, and what quietly stops being produced is whatever only the checker needed.
+In none of those cases does anybody have to lie. You get the behavior you pay for, and what quietly stops being produced is whatever only the checker needed.
 
 **The question to carry: what does this system reward, and what does that make invisible?**
 
@@ -1028,7 +1028,7 @@ Riggs published that in 1903. Not in the 1970s, and not because of a museum publ
 
 Because publication is not the same as circulation, which is a theme this course keeps returning to.
 
-The American Museum of Natural History mounted its great sauropod in 1905 and labelled it *Brontosaurus*. Museums, encyclopaedias, films, toys and cartoons used the name for most of the twentieth century. In 1989 the United States Postal Service issued a stamp reading "Brontosaurus" and received enough complaint to make the newspapers, which prompted Stephen Jay Gould to write an essay defending the public's attachment to the name while explaining why specialists had dropped it.
+The American Museum of Natural History mounted its great sauropod in 1905 and labeled it *Brontosaurus*. Museums, encyclopaedias, films, toys and cartoons used the name for most of the twentieth century. In 1989 the United States Postal Service issued a stamp reading "Brontosaurus" and received enough complaint to make the newspapers, which prompted Stephen Jay Gould to write an essay defending the public's attachment to the name while explaining why specialists had dropped it.
 
 So for roughly ninety years the technical literature said one thing and the world said another, and both groups were being perfectly reasonable. The literature was following priority. The public was using a name that had been given to them by the institutions that were now correcting them.
 
@@ -1054,7 +1054,7 @@ Learning to see when a dispute is about the world and when it is about the categ
 
 :::reveal Who argued that Brontosaurus was a junior synonym of Apatosaurus, and when? ||| Elmer Riggs, in 1903, on the grounds that the differences were consistent with the Apatosaurus type being a younger individual of the same kind of animal. Priority then gave the older name.
 
-:::reveal Why did the name Brontosaurus stay in public use for most of the twentieth century? ||| Because publication is not circulation. Museums, films, encyclopaedias and toys kept using it, including the AMNH mount labelled Brontosaurus from 1905.
+:::reveal Why did the name Brontosaurus stay in public use for most of the twentieth century? ||| Because publication is not circulation. Museums, films, encyclopaedias and toys kept using it, including the AMNH mount labeled Brontosaurus from 1905.
 
 :::reveal What exactly is being argued about in the Brontosaurus dispute, and what is NOT being argued about? ||| Not the fossils: the anatomy and the relationships are largely agreed. The argument is about where to draw the boundary called genus on a branching tree, which is a question about a ranking convention.
 
@@ -1117,7 +1117,7 @@ Learning to see when a dispute is about the world and when it is about the categ
               "Dozens of largely complete articulated Iguanodon skeletons",
               "The first fossilised Iguanodon eggs found anywhere in Europe",
               "A set of trackways establishing how fast the animals could travel",
-              "Skin impressions showing the colour pattern of a large ornithopod",
+              "Skin impressions showing the color pattern of a large ornithopod",
             ],
             correctIndex: 0,
             explanation:
@@ -1169,7 +1169,7 @@ Learning to see when a dispute is about the world and when it is about the categ
               "Field data, so many specimens cannot be tied to a horizon",
               "Bone damaged by the dynamite used to open the Wyoming quarries faster",
               "Correspondence destroyed by both men's estates after their deaths",
-              "Casts and moulds discarded when the two museums reorganised their stores",
+              "Casts and molds discarded when the two museums reorganised their stores",
             ],
             correctIndex: 0,
             explanation:
@@ -1317,13 +1317,13 @@ To use that claw, the animal has to stand on one leg and strike with the other, 
 
 And the tail is stiffened along most of its length by long bony rods, so it cannot drag limply. It is held out behind as a rigid counterweight, which is what the species name refers to.
 
-Put those together and you do not have a sluggish reptile. You have an agile, fast, actively predatory animal whose whole skeleton is organised around balance and speed. There is no version of this animal that lounges in a swamp.
+Put those together and you do not have a sluggish reptile. You have an agile, fast, actively predatory animal whose whole skeleton is organized around balance and speed. There is no version of this animal that lounges in a swamp.
 
 ## The second thing Ostrom noticed
 
 Working on *Deinonychus*, Ostrom kept seeing bird anatomy: in the wrist, the shoulder girdle, the hand, the pelvis and the foot.
 
-In 1970 he identified a specimen in the Teyler Museum in Haarlem, catalogued as a pterosaur, as an *Archaeopteryx*, the fourth known at the time. Handling both animals put the resemblance in front of him constantly, and across the 1970s he argued the case in detail: birds are the descendants of small theropod dinosaurs.
+In 1970 he identified a specimen in the Teyler Museum in Haarlem, cataloged as a pterosaur, as an *Archaeopteryx*, the fourth known at the time. Handling both animals put the resemblance in front of him constantly, and across the 1970s he argued the case in detail: birds are the descendants of small theropod dinosaurs.
 
 ## Why that argument had been available for a century and had not won
 
@@ -1414,7 +1414,7 @@ That is what progress usually looks like. Not one picture swapped for another, b
         {
           prompt: "Last lesson: what about Deinonychus made the old picture untenable?",
           answer:
-            "A light build, a large recurved sickle claw held clear of the ground, which requires balancing on one leg to strike, and a tail stiffened by bony rods into a rigid counterweight. The skeleton is organised around balance and speed.",
+            "A light build, a large recurved sickle claw held clear of the ground, which requires balancing on one leg to strike, and a tail stiffened by bony rods into a rigid counterweight. The skeleton is organized around balance and speed.",
         },
         {
           prompt: "Last lesson: state the general rule the course draws from Heilmann's clavicle objection.",
@@ -1449,15 +1449,15 @@ The filaments on *Sinosauropteryx* are not obviously feathers to the eye. A grou
 
 That objection was answerable, and the answer is the good part.
 
-Under an electron microscope the filaments contain small structures matching **melanosomes**, the pigment-bearing organelles found in feathers and hair, and they are arranged inside the filament rather than in the skin below it. Collagen has no equivalent. In 2010 two teams used melanosome shape, which correlates with colour in living birds, to reconstruct plumage patterns: a *Sinosauropteryx* with a ginger and white banded tail, and an *Anchiornis* with a dark body, striped wings and a reddish crown.
+Under an electron microscope the filaments contain small structures matching **melanosomes**, the pigment-bearing organelles found in feathers and hair, and they are arranged inside the filament rather than in the skin below it. Collagen has no equivalent. In 2010 two teams used melanosome shape, which correlates with color in living birds, to reconstruct plumage patterns: a *Sinosauropteryx* with a ginger and white banded tail, and an *Anchiornis* with a dark body, striped wings and a reddish crown.
 
-An objection that was published in a journal, tested with a new instrument, and answered with a result that also produced the colour of a Cretaceous animal is about as good as this process gets.
+An objection that was published in a journal, tested with a new instrument, and answered with a result that also produced the color of a Cretaceous animal is about as good as this process gets.
 
 ## The forgery, which belongs here
 
 In 1999 a specimen from Liaoning was presented at a press conference and published in a popular magazine as a missing link between dinosaurs and birds, under the name Archaeoraptor.
 
-It was a composite. Someone had assembled it from at least two animals, and the tail belonged to a *Microraptor*. Xu Xing raised the alarm after recognising the tail; a CT study published in *Nature* in 2001 documented the construction in detail.
+It was a composite. Someone had assembled it from at least two animals, and the tail belonged to a *Microraptor*. Xu Xing raised the alarm after recognizing the tail; a CT study published in *Nature* in 2001 documented the construction in detail.
 
 Two things to take from it, and both matter.
 
@@ -1469,7 +1469,7 @@ That last point closes a loop this course opened in lesson 5. Liaoning fossils a
 
 :::reveal Why is it significant that feathers turned up on the specific animals they did? ||| Because the skeletal phylogeny had already identified those animals as close relatives of birds. The feathers appeared where the existing tree predicted them, rather than scattered at random through the group.
 
-:::reveal What was the collagen objection to Sinosauropteryx, and how was it answered? ||| That the filaments were degraded skin collagen, a real preservational effect. Electron microscopy found melanosomes inside the filaments, which collagen lacks, and their shape was later used to reconstruct the animal's colour.
+:::reveal What was the collagen objection to Sinosauropteryx, and how was it answered? ||| That the filaments were degraded skin collagen, a real preservational effect. Electron microscopy found melanosomes inside the filaments, which collagen lacks, and their shape was later used to reconstruct the animal's color.
 
 :::reveal What are the two lessons of the Archaeoraptor forgery? ||| That the field caught it quickly using its own methods, and that it got as far as it did by going to a press conference instead of peer review, on a specimen bought through the trade with no provenance.
 
@@ -1552,7 +1552,7 @@ That last point closes a loop this course opened in lesson 5. Liaoning fossils a
             ],
             correctIndex: 0,
             explanation:
-              "The species name antirrhopus means counterbalancing. A tail that cannot drag limply belongs to an animal organised around balance and speed.",
+              "The species name antirrhopus means counterbalancing. A tail that cannot drag limply belongs to an animal organized around balance and speed.",
             sourceLessonSlug: "ostrom-and-deinonychus",
           },
           {
@@ -1643,7 +1643,7 @@ That last point closes a loop this course opened in lesson 5. Liaoning fossils a
             ],
             correctIndex: 0,
             explanation:
-              "Their shape was later used to reconstruct plumage colour. A published objection tested with a new instrument and answered is about as good as this process gets.",
+              "Their shape was later used to reconstruct plumage color. A published objection tested with a new instrument and answered is about as good as this process gets.",
             sourceLessonSlug: "feathers-at-liaoning",
           },
         ],
@@ -1692,7 +1692,7 @@ The hypothesis met serious opposition, particularly from paleontologists, and th
 
 **And the answer to that second point is itself a beautiful piece of method.** In 1982 Philip Signor and Jere Lipps pointed out that the last fossil of a species is almost never the last individual of the species, because rare things are sampled poorly near the top of their range. So a genuinely instantaneous extinction will look gradual in an incomplete record, every time. That effect now carries their names.
 
-Notice what happened there. An observation that appeared to refute the hypothesis turned out to be a predictable artefact of how sampling works. That did not prove the impact hypothesis. It removed one objection to it, which is a smaller and more honest thing.
+Notice what happened there. An observation that appeared to refute the hypothesis turned out to be a predictable artifact of how sampling works. That did not prove the impact hypothesis. It removed one objection to it, which is a smaller and more honest thing.
 
 :::reveal What were the Alvarez team originally trying to measure, and what did they find instead? ||| How long the boundary clay took to accumulate, using meteoritic iridium falling at a steady rate as a clock. They found iridium about thirty times higher than the surrounding rock, which is an anomaly rather than a slow clock.
 
@@ -1713,7 +1713,7 @@ Notice what happened there. An observation that appeared to refute the hypothesi
         {
           prompt: "Last lesson: what does the Archaeoraptor episode show about how the field checks itself?",
           answer:
-            "It was caught quickly by the field using its own methods, after Xu Xing recognised the tail. And it got as far as it did precisely by bypassing peer review, on a specimen from the trade with no provenance.",
+            "It was caught quickly by the field using its own methods, after Xu Xing recognized the tail. And it got as far as it did precisely by bypassing peer review, on a specimen from the trade with no provenance.",
         },
       ],
     },
@@ -1751,11 +1751,11 @@ In 2010 a review paper in *Science* with forty-one authors concluded that the Ch
 
 This section is not a list of fringe doubts. Every item here is argued in the mainstream literature by people with data.
 
-**The Deccan Traps.** One of the largest volcanic provinces on earth erupted across this interval in what is now India, releasing carbon dioxide and sulfur on a scale capable of driving climate change on its own. Nobody disputes that it happened. What is disputed is what it did. Two papers published in the same issue of *Science* in 2019, using different dating approaches, reached different conclusions about the eruption's tempo relative to the boundary and therefore about how much of the environmental damage it can account for. There is also a live proposal that the impact itself altered the eruption's behaviour, which would make the two causes one interacting system rather than rivals.
+**The Deccan Traps.** One of the largest volcanic provinces on earth erupted across this interval in what is now India, releasing carbon dioxide and sulfur on a scale capable of driving climate change on its own. Nobody disputes that it happened. What is disputed is what it did. Two papers published in the same issue of *Science* in 2019, using different dating approaches, reached different conclusions about the eruption's tempo relative to the boundary and therefore about how much of the environmental damage it can account for. There is also a live proposal that the impact itself altered the eruption's behavior, which would make the two causes one interacting system rather than rivals.
 
 **Whether ecosystems were already stressed.** A sustained minority position, associated most prominently with Gerta Keller, holds that the impact predates the boundary and that Deccan volcanism did most of the work. That reading is not accepted by most workers, and it is not a fringe publication record either. The dispute is about correlating sections and about how to read reworked sediment, which are technical questions with technical answers that have not converged.
 
-**The kill mechanism.** Given an impact, what actually killed things? Sulfate aerosols cooling the planet for years, soot from burning biomass, immediate thermal pulse, ocean acidification, and darkness shutting down photosynthesis have all been modelled, and the relative contributions and durations differ substantially between models.
+**The kill mechanism.** Given an impact, what actually killed things? Sulfate aerosols cooling the planet for years, soot from burning biomass, immediate thermal pulse, ocean acidification, and darkness shutting down photosynthesis have all been modeled, and the relative contributions and durations differ substantially between models.
 
 **Why these survived and not those.** Birds came through and other dinosaurs did not. Crocodilians came through. Ammonites did not. Explanations exist for each and no single filter accounts for the whole pattern.
 
@@ -1824,7 +1824,7 @@ Read the shape before you read the commentary. The distance between a claim and 
 1982 | evidence | Signor and Lipps show why abrupt extinctions look gradual
 1991 | evidence | Hildebrand and colleagues identify Chicxulub as the crater
 1998 | evidence | Liaoning yields non-avian dinosaurs preserved with feathers
-2010 | evidence | Melanosomes give the colour of a Cretaceous animal's plumage
+2010 | evidence | Melanosomes give the color of a Cretaceous animal's plumage
 2013 | evidence | Argon dating ties impact and boundary within about 32,000 years
 2015 | claim | Tschopp and colleagues propose reinstating Brontosaurus
 2019 | evidence | Two Science papers date Deccan eruptions and disagree
@@ -1844,7 +1844,7 @@ When you meet any confident statement about the deep past, or about anything you
 
 What is the claim, and when was it made? What evidence could test it, and did that evidence exist yet? If it did exist, was it in a place the claimant could reach?
 
-Most of the time, the interesting answer is not that someone was foolish. It is that the two tracks were further apart than anyone realised at the time, which is a condition we are also in and cannot see from the inside.
+Most of the time, the interesting answer is not that someone was foolish. It is that the two tracks were further apart than anyone realized at the time, which is a condition we are also in and cannot see from the inside.
 
 :::reveal Why does Penfield's 1981 anomaly sit on the evidence track a decade before it is used? ||| It was a petroleum geophysics result presented in a petroleum context. The evidence existed and the people who needed it were not reading that literature.
 
@@ -2036,7 +2036,7 @@ This is not an exercise in catching your old books out. It is the exercise this 
 
 Any dinosaur you have a specific childhood memory of: a book, a toy, a film, a museum visit, a poster on a classroom wall. You need a **dated source** for the old picture, so pick one you can identify. A book with a publication date is ideal. If the source is a film or an exhibit, the release or opening date will do.
 
-Good candidates, because each has a documented revision behind it: *Apatosaurus* and its head, *Iguanodon* and its thumb, *Velociraptor* and its covering, *Tyrannosaurus* and its posture, *Spinosaurus* and its habits, *Stegosaurus* and its plates, *Triceratops* and its herding behaviour. You are not limited to these.
+Good candidates, because each has a documented revision behind it: *Apatosaurus* and its head, *Iguanodon* and its thumb, *Velociraptor* and its covering, *Tyrannosaurus* and its posture, *Spinosaurus* and its habits, *Stegosaurus* and its plates, *Triceratops* and its herding behavior. You are not limited to these.
 
 ## What to submit
 
@@ -2059,7 +2059,7 @@ Around 800 to 1,200 words, in six parts.
 - **Accuracy of part 1**, including whether the source is real, dated and cited.
 - **Quality of part 2.** Does it identify actual historical reasoning, or does it condescend? An answer amounting to "they did not know any better" scores poorly, because it is not an explanation.
 - **Specificity of part 3.** A named, cited piece of evidence, not a vague reference to later research.
-- **Honesty of part 5.** Is the disagreement described in terms its participants would recognise?
+- **Honesty of part 5.** Is the disagreement described in terms its participants would recognize?
 - **Concreteness of part 6.** Is the evidence you name something that could actually be found?
 
 Cite in APA 7 with a reference list. Cite papers as papers and your childhood source as the object it is.

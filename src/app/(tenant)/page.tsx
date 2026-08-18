@@ -3,6 +3,7 @@ import { getScopedDb } from "@/db/scoped";
 import { getSession } from "@/lib/session";
 import { getLearnerDashboard, getWeeklyLeaderboard } from "@/db/queries/dashboard";
 import { brandName } from "@/lib/branding";
+import { coursePriceView } from "@/lib/sale-pricing";
 import { CourseCard } from "@/components/course-card";
 import { ShareButton } from "@/components/share-button";
 import { LearnerDashboardView } from "@/components/learner-dashboard";
@@ -46,7 +47,12 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
     }
   }
 
-  const [courses, categories] = await Promise.all([sdb.listCourses(), sdb.listCategories()]);
+  // Active codeless promotions for THIS tenant, resolved per card below. One query for the page.
+  const [courses, categories, promotions] = await Promise.all([
+    sdb.listCourses(),
+    sdb.listCategories(),
+    sdb.listActivePromotions(),
+  ]);
   const featured = courses.filter((c) => c.isFeatured);
   const countByCategory = new Map<string, number>();
   for (const c of courses) if (c.category) countByCategory.set(c.category, (countByCategory.get(c.category) ?? 0) + 1);
@@ -221,7 +227,7 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
           <h2 className="mb-3 text-lg font-semibold">Featured</h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {featured.map((c) => (
-              <CourseCard key={c.id} course={c} />
+              <CourseCard key={c.id} course={c} price={coursePriceView(c, tenant.id, promotions)} />
             ))}
           </div>
         </section>

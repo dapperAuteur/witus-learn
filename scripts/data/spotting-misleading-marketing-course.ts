@@ -145,7 +145,7 @@ How to read reviews like a pro:
       body: `A **dark pattern** is an interface designed to **trick you into doing something you didn't mean to**: spend more, share more data, or stay subscribed. In its 2022 staff report **Bringing Dark Patterns to Light**, the FTC grouped the most common ones into four families:
 
 - **Misleading or disguised ads**: an "ad" dressed up as a normal article, search result, or system message; a giant green "Download" button that isn't the real one.
-- **Hard-to-cancel / subscription traps**: easy to sign up in one click, but cancelling means calls, mazes, or "are you *sure*?" guilt screens. (Signing up and cancelling should be roughly equally easy.)
+- **Hard-to-cancel / subscription traps**: easy to sign up in one click, but canceling means calls, mazes, or "are you *sure*?" guilt screens. (Signing up and canceling should be roughly equally easy.)
 - **Buried terms & junk fees**: the price balloons with "service," "convenience," or "processing" fees that only appear at the final checkout step (sometimes called **drip pricing**).
 - **Tricked into sharing data**: pre-checked boxes, confusing "Accept all" vs. a hidden "Reject," and **confirmshaming** ("No thanks, I don't like saving money").
 

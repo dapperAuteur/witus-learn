@@ -71,7 +71,7 @@ export const TWO_RACETRACKS_COURSE: AuthoredCourse = {
 
 ## Track one: the Indianapolis Motor Speedway
 
-**The idea and the company.** The Encyclopedia of Indianapolis dates Carl Graham Fisher's conception of the track to **1906**, and says he formed the **Indianapolis Motor Speedway Company in 1909** with three partners: **Arthur Newby** of the National Motor Vehicle Company, **Frank Wheeler** of the Wheeler-Schebler Carburetor Company, and **James A. Allison** of the Prest-O-Lite Company (Encyclopedia of Indianapolis, n.d.-a). The Cultural Landscape Foundation dates the initial proposal to **1905** and the company's formation to **1906** (Cultural Landscape Foundation, n.d.). **Two reputable sources, two sets of dates, and this course does not pick one.** Note the disagreement and move on; it is not load-bearing for anything that follows, which is exactly why it is a safe place to practise noticing one.
+**The idea and the company.** The Encyclopedia of Indianapolis dates Carl Graham Fisher's conception of the track to **1906**, and says he formed the **Indianapolis Motor Speedway Company in 1909** with three partners: **Arthur Newby** of the National Motor Vehicle Company, **Frank Wheeler** of the Wheeler-Schebler Carburetor Company, and **James A. Allison** of the Prest-O-Lite Company (Encyclopedia of Indianapolis, n.d.-a). The Cultural Landscape Foundation dates the initial proposal to **1905** and the company's formation to **1906** (Cultural Landscape Foundation, n.d.). **Two reputable sources, two sets of dates, and this course does not pick one.** Note the disagreement and move on; it is not load-bearing for anything that follows, which is exactly why it is a safe place to practice noticing one.
 
 **The ground.** The facility opened on farmland roughly five miles northwest of the city (Encyclopedia of Indianapolis, n.d.-a). Its address today is **4790 W. 16th Street**, and the Cultural Landscape Foundation puts the site at about **560 acres** (Encyclopedia of Indianapolis, n.d.-a; Cultural Landscape Foundation, n.d.).
 
@@ -91,7 +91,7 @@ export const TWO_RACETRACKS_COURSE: AuthoredCourse = {
 
 **Between 1924 and 1936, the biggest annually staged Black sporting event in the United States was run on the dirt mile**, because the 500-mile race on the brick oval would not admit Black drivers. The Encyclopedia of Indianapolis states it in one sentence: "Indianapolis Motor Speedway officials did not allow African Americans to participate in the Indianapolis 500-Mile Race" (Encyclopedia of Indianapolis, n.d.-c). The Speedway's own website, writing about that period in 2021, states it too: "1920s America was racially segregated, and the Indy 500, like all major league sports during the era, was whites only" (Indianapolis Motor Speedway, 2021).
 
-**Notice who is saying that second sentence.** It is the institution itself, on its own website, about its own history. **A source that is admitting something against its own interest is stronger evidence than a source that has nothing to lose**, and recognising that is a research skill you will use far outside this course.
+**Notice who is saying that second sentence.** It is the institution itself, on its own website, about its own history. **A source that is admitting something against its own interest is stronger evidence than a source that has nothing to lose**, and recognizing that is a research skill you will use far outside this course.
 
 **And notice what neither sentence contains.** Neither one names a rule. Neither one names a body that wrote the rule, a date it was adopted, or a document it is written in. **Section 3 goes looking for that document.** What happens there is the reason this course exists.
 
@@ -109,11 +109,11 @@ export const TWO_RACETRACKS_COURSE: AuthoredCourse = {
       section: "Section 1 · Then",
       body: `When a door is held shut, one response is to knock. Another is to build a door. **This lesson is about the second one, and it is a construction story rather than a grievance story.**
 
-**The organisation, first, because the organisation is the point.** In **1924** a group of Indianapolis men founded the **Colored Speedway Association**. The Encyclopedia of Indianapolis names them: **William Rucker**, known as "Prez," along with **Harry Dunnington, George LeMon, Oscar E. Schilling, Earnest Jay Butler, Alvin D. Smith and Harry A. Earl** (Encyclopedia of Indianapolis, n.d.-c). **Seven names, on the record, for an organisation founded to run motor races.** That is a board of directors, not a spontaneous gathering, and treating it as one is the difference between reading this as history and reading it as folklore.
+**The organization, first, because the organization is the point.** In **1924** a group of Indianapolis men founded the **Colored Speedway Association**. The Encyclopedia of Indianapolis names them: **William Rucker**, known as "Prez," along with **Harry Dunnington, George LeMon, Oscar E. Schilling, Earnest Jay Butler, Alvin D. Smith and Harry A. Earl** (Encyclopedia of Indianapolis, n.d.-c). **Seven names, on the record, for an organization founded to run motor races.** That is a board of directors, not a spontaneous gathering, and treating it as one is the difference between reading this as history and reading it as folklore.
 
 **The race.** The association's annual event was a **100-mile race on the one-mile dirt track at the Indiana State Fairgrounds**. Its first running was **August 2, 1924** (Encyclopedia of Indianapolis, n.d.-c).
 
-**The name came from a newspaper, which tells you what the press was for.** The Encyclopedia records that "the race coined its nickname from a Chicago Defender sportswriter by the name of Frank A. 'Fay' Young" (Encyclopedia of Indianapolis, n.d.-c). The *Chicago Defender* was the most widely circulated Black newspaper in the country, and the same paper's reach is the hinge of the Great Migration courses in this catalogue. **An event without coverage is a local picnic. An event a national paper names is a national event**, and the naming was itself an act of institution-building.
+**The name came from a newspaper, which tells you what the press was for.** The Encyclopedia records that "the race coined its nickname from a Chicago Defender sportswriter by the name of Frank A. 'Fay' Young" (Encyclopedia of Indianapolis, n.d.-c). The *Chicago Defender* was the most widely circulated Black newspaper in the country, and the same paper's reach is the hinge of the Great Migration courses in this catalog. **An event without coverage is a local picnic. An event a national paper names is a national event**, and the naming was itself an act of institution-building.
 
 **What the first race looked like, from the companion site to the documentary.** The 1924 field had **27 entrants**, mostly from Indianapolis with several from Chicago and one from St. Louis. **Malcolm Hannon won** in the Barber-Warnock Ford Special at an average of **63.5 miles per hour**, with **John Simmons** second in a Fronty Ford. Drivers raced under names like "Wild Bill" Jeffries, A. J. "Speed King" Russell, "Cowboy" Moore and Jack "Long Shot" Sargent, in cars called the Ghost Special, the Dreamland Duesenberg and the Lewis Special (PBS, n.d.-a). An article published by the American Automobile Association in 2021 puts the first race's crowd at **12,000** and calls it "the largest sporting event held for African Americans up to that point" (Sheldon, 2021).
 
@@ -167,7 +167,7 @@ export const TWO_RACETRACKS_COURSE: AuthoredCourse = {
 
 ## Charlie Wiggins, who built the car he was not allowed to race
 
-**The life, from the Encyclopedia of Indianapolis entry written by Todd Gould.** **Charles Edwin "Charlie" Wiggins was born July 15, 1897, in the Baptisttown neighbourhood of Evansville, Indiana.** He moved to Indianapolis in **1923** with his wife **Roberta**, worked at **Louis Sagalowsky's auto repair shop**, built his race car, the **Wiggins Special**, there, and eventually owned and operated the garage himself. **He died March 11, 1979, and is buried at Crown Hill Cemetery in Indianapolis** (Encyclopedia of Indianapolis, n.d.-d).
+**The life, from the Encyclopedia of Indianapolis entry written by Todd Gould.** **Charles Edwin "Charlie" Wiggins was born July 15, 1897, in the Baptisttown neighborhood of Evansville, Indiana.** He moved to Indianapolis in **1923** with his wife **Roberta**, worked at **Louis Sagalowsky's auto repair shop**, built his race car, the **Wiggins Special**, there, and eventually owned and operated the garage himself. **He died March 11, 1979, and is buried at Crown Hill Cemetery in Indianapolis** (Encyclopedia of Indianapolis, n.d.-d).
 
 **Read that sequence again, because it is the part most retellings skip.** He was a **mechanic who owned his shop**. The racing came out of the trade, and the trade outlasted the racing by forty-three years. **A man who buys the shop he was hired into is a business story**, and it belongs in the record next to everything that was refused him.
 
@@ -186,9 +186,9 @@ export const TWO_RACETRACKS_COURSE: AuthoredCourse = {
 
 ## Joie Ray, who got the license
 
-**Joseph Reynolds "Joie" Ray Jr. was born September 29, 1923, in Louisville, Kentucky, and died April 13, 2007.** On **April 6, 1947**, at Mitchell, Indiana, he became the first African American driver to compete alongside white drivers in a sanctioned sprint car race, run by the Midwest Dirt Track Racing Association. He drove his first **AAA-sanctioned** race on **June 26, 1949**, at **Salem Speedway** in Indiana, qualifying thirteenth and finishing eighth. He raced midgets, sprint cars and stock cars into the 1960s, was inducted into the Hoosier Auto Racing Fans Hall of Fame in 1995, and was recognised at the **2003 Indianapolis 500** as a driver who helped end the colour barrier in motorsport (African Americans in Motorsports, n.d.).
+**Joseph Reynolds "Joie" Ray Jr. was born September 29, 1923, in Louisville, Kentucky, and died April 13, 2007.** On **April 6, 1947**, at Mitchell, Indiana, he became the first African American driver to compete alongside white drivers in a sanctioned sprint car race, run by the Midwest Dirt Track Racing Association. He drove his first **AAA-sanctioned** race on **June 26, 1949**, at **Salem Speedway** in Indiana, qualifying thirteenth and finishing eighth. He raced midgets, sprint cars and stock cars into the 1960s, was inducted into the Hoosier Auto Racing Fans Hall of Fame in 1995, and was recognized at the **2003 Indianapolis 500** as a driver who helped end the color barrier in motorsport (African Americans in Motorsports, n.d.).
 
-**One caution about this paragraph.** Accounts disagree about **whether Ray's first licence came from the AAA in 1946 or 1947, and whether the association that first licensed him was the AAA or its successor**. The source above says one thing; other summaries say another. **A licence is a document with a date on it, held by an organisation**, which means this is a resolvable question and nobody in this course has resolved it. Treat the 1947 and 1949 dates above as this source's dates. Section 3 explains why the licence, and not the trophy, is the thing to chase.
+**One caution about this paragraph.** Accounts disagree about **whether Ray's first license came from the AAA in 1946 or 1947, and whether the association that first licensed him was the AAA or its successor**. The source above says one thing; other summaries say another. **A license is a document with a date on it, held by an organization**, which means this is a resolvable question and nobody in this course has resolved it. Treat the 1947 and 1949 dates above as this source's dates. Section 3 explains why the license, and not the trophy, is the thing to chase.
 
 ## Willy T. Ribbs and George Mack, and the number
 
@@ -200,7 +200,7 @@ export const TWO_RACETRACKS_COURSE: AuthoredCourse = {
 
 **Do the subtraction yourself, because it teaches something.** Eighty calendar years and seventy-five runnings means **the race was not held in six of them.** The Encyclopedia of Indianapolis accounts for four, recording that the track "deteriorated dreadfully during four years of total inactivity during World War II" (Encyclopedia of Indianapolis, n.d.-a). **This course has not confirmed the other missing years, and you should look them up before you cite them.** A number that does not reconcile is a question, not an error.
 
-**And do not round the eighty off into a slogan.** It is a measurement, and like every measurement in this course it has a definition attached: it counts **starters in the 500-mile race at this track**, not entries attempted, not licences held, not other events at other tracks. **Say what you counted.** Section 3 is about what filled those eighty years, and it is not a rule.
+**And do not round the eighty off into a slogan.** It is a measurement, and like every measurement in this course it has a definition attached: it counts **starters in the 500-mile race at this track**, not entries attempted, not licenses held, not other events at other tracks. **Say what you counted.** Section 3 is about what filled those eighty years, and it is not a rule.
 
 ## Sources
 - African Americans in Motorsports. (n.d.). *Joie Ray*. https://aaim1.com/african-american-racing-history-joie-ray
@@ -414,7 +414,7 @@ export const TWO_RACETRACKS_COURSE: AuthoredCourse = {
             options: [
               "Every motor race ever staged at either of the two Indianapolis tracks since 1892",
               "Entries attempted by Black drivers at the Indianapolis 500 over those eighty years",
-              "Racing licences issued to Black drivers by the AAA and USAC across those same years",
+              "Racing licenses issued to Black drivers by the AAA and USAC across those same years",
               "Starters in the 500-mile race at this track, between 1911 and Ribbs's start in 1991",
             ],
             correctIndex: 3,
@@ -476,11 +476,11 @@ The Speedway was **listed on the National Register of Historic Places in 1975** 
         },
         {
           prompt: "Who was Joie Ray, and what is unresolved about his licensing?",
-          answer: "The first African American driver to race alongside white drivers in a sanctioned sprint car race, at Mitchell, Indiana, on April 6, 1947, and an AAA competitor from June 26, 1949, at Salem Speedway. Accounts disagree about whether his first licence came in 1946 or 1947 and whether the AAA or its successor issued it. A licence is a dated document, so the question is resolvable and has not been resolved here.",
+          answer: "The first African American driver to race alongside white drivers in a sanctioned sprint car race, at Mitchell, Indiana, on April 6, 1947, and an AAA competitor from June 26, 1949, at Salem Speedway. Accounts disagree about whether his first license came in 1946 or 1947 and whether the AAA or its successor issued it. A license is a dated document, so the question is resolvable and has not been resolved here.",
         },
         {
           prompt: "Give the headline number, and its definition.",
-          answer: "Eighty calendar years between the first 500-mile race in 1911 and Willy T. Ribbs starting the 1991 race, which was the 75th running. The definition counts starters in the 500-mile race at this track, not entries attempted or licences held. The six missing years are a question: the Encyclopedia accounts for four as total inactivity during the Second World War, and this course has not confirmed the rest.",
+          answer: "Eighty calendar years between the first 500-mile race in 1911 and Willy T. Ribbs starting the 1991 race, which was the 75th running. The definition counts starters in the 500-mile race at this track, not entries attempted or licenses held. The six missing years are a question: the Encyclopedia accounts for four as total inactivity during the Second World War, and this course has not confirmed the rest.",
         },
       ],
     },
@@ -571,8 +571,8 @@ The Encyclopedia entry describes Speedway as a middle-class town and **does not 
 
 ## What commemorates the second track
 
-- **A historical marker at the Indiana State Fairgrounds** records the mile track's racing history, erected by the **Indiana Racing Memorial Association**, a private organisation (Historical Marker Database, n.d.-b).
-- **A marker for Charlie Wiggins stands in Evansville**, erected by the same organisation in **2018** (Historical Marker Database, n.d.-a).
+- **A historical marker at the Indiana State Fairgrounds** records the mile track's racing history, erected by the **Indiana Racing Memorial Association**, a private organization (Historical Marker Database, n.d.-b).
+- **A marker for Charlie Wiggins stands in Evansville**, erected by the same organization in **2018** (Historical Marker Database, n.d.-a).
 - **A public petition addressed to the Indiana Historical Bureau** asks for the Gold and Glory Sweepstakes to be commemorated at the Fairgrounds (Change.org, n.d.). **A petition is a request, not a decision.** This course has not confirmed its outcome, and finding out is a genuinely useful piece of homework.
 
 **Read the sponsors, not just the texts.** In course 1 you learned that a marker records what a community and an agency agreed to say in public in a particular year. **Here, two of the three commemorations were placed by a private racing-history association rather than by the state**, and the third is a citizen request to the state body that approves markers. **Who paid for the sign is part of what the sign says.**
@@ -642,7 +642,7 @@ The Encyclopedia entry describes Speedway as a middle-class town and **does not 
 
 **2. USAC.** The AAA "abruptly announced it would dissolve its Contest Board at year's end" in 1955, after the Le Mans disaster and the death of driver Bill Vukovich. Indianapolis Motor Speedway president **Anton "Tony" Hulman Jr.**, who had owned the track since November 1945, unveiled a replacement at a private meeting on **August 5, 1955**, announced it publicly five days later, and the **United States Auto Club was established on September 16, 1955**. **USAC sanctioned the Indianapolis 500 beginning in 1956** (Encyclopedia of Indianapolis, n.d.-a, n.d.-f).
 
-**Stop and look at what just happened structurally.** **The owner of the racetrack created the organisation that sanctions the race at his racetrack.** That is not an accusation, it is the documented sequence, and the Encyclopedia states it in a paragraph about an emergency. **Notice how quickly authority over a sport can be reconstituted, and by whom, when the previous holder walks away.**
+**Stop and look at what just happened structurally.** **The owner of the racetrack created the organization that sanctions the race at his racetrack.** That is not an accusation, it is the documented sequence, and the Encyclopedia states it in a paragraph about an emergency. **Notice how quickly authority over a sport can be reconstituted, and by whom, when the previous holder walks away.**
 
 **3. The Indy Racing League.** USAC's role at the 500 "ended in 1997 when the Indy Racing League took control following its 1996 founding by IMS owner **Tony George**" (Encyclopedia of Indianapolis, n.d.-f). **Same structure, second time: the track's owner founds the sanctioning body.**
 
@@ -685,7 +685,7 @@ The Encyclopedia entry describes Speedway as a middle-class town and **does not 
         },
         {
           prompt: "Who placed the two historical markers connected to this story, and why does the sponsor matter?",
-          answer: "The Indiana Racing Memorial Association, a private organisation, placed both the Fairgrounds mile marker and the 2018 Charlie Wiggins marker in Evansville. Who paid for the sign is part of what the sign says.",
+          answer: "The Indiana Racing Memorial Association, a private organization, placed both the Fairgrounds mile marker and the 2018 Charlie Wiggins marker in Evansville. Who paid for the sign is part of what the sign says.",
         },
       ],
     },
@@ -695,25 +695,25 @@ The Encyclopedia entry describes Speedway as a middle-class town and **does not 
       section: "Section 3 · Powers",
       body: `To start a race you must pass several separate gates, each held by a different party, each with its own record or lack of one. **Exclusion does not need all of them. It needs one.**
 
-## Gate 1 · The competition licence
+## Gate 1 · The competition license
 
 **A sanctioning body licenses the people who compete under its rules.** The Encyclopedia of Indianapolis lists licensing among USAC's core functions, alongside rules, sanctioning and safety standards (Encyclopedia of Indianapolis, n.d.-f), and the AAA Contest Board did the same work before it.
 
-**A licence is the cleanest gate there is, because it is issued or it is not, and either way somebody knows.** The documented turning point is late: sources place **Joie Ray's first licence in the late 1940s**, and his first race under AAA sanction on **June 26, 1949, at Salem Speedway** (African Americans in Motorsports, n.d.). **Before that, this course found no Black driver holding a competition licence from the body that sanctioned the Indianapolis 500.**
+**A license is the cleanest gate there is, because it is issued or it is not, and either way somebody knows.** The documented turning point is late: sources place **Joie Ray's first license in the late 1940s**, and his first race under AAA sanction on **June 26, 1949, at Salem Speedway** (African Americans in Motorsports, n.d.). **Before that, this course found no Black driver holding a competition license from the body that sanctioned the Indianapolis 500.**
 
 **Note the shape of that sentence.** "This course found no record of X" is not the same claim as "X did not happen." **It is a claim about a search.** Say which one you are making, every time.
 
 ## Gate 2 · Registration and entry approval
 
-Even with a licence, an entry has to be accepted. **This gate has a documented instance and it is the best single piece of evidence in Section 3.**
+Even with a license, an entry has to be accepted. **This gate has a documented instance and it is the best single piece of evidence in Section 3.**
 
-Paul Mullins, writing on the Indianapolis colour line and citing the ***Indianapolis Recorder***, records that **Charlie Wiggins and Sumner "Red" Oliver attempted to enter a car at Dayton Speedway and were rejected because they lacked AAA registration**, and that officials indicated they could register for dirt track races the following summer (Mullins, 2015).
+Paul Mullins, writing on the Indianapolis color line and citing the ***Indianapolis Recorder***, records that **Charlie Wiggins and Sumner "Red" Oliver attempted to enter a car at Dayton Speedway and were rejected because they lacked AAA registration**, and that officials indicated they could register for dirt track races the following summer (Mullins, 2015).
 
 **Read that carefully, because it is subtle and it is the whole mechanism.** Nobody in that account says a word about race. **The refusal is procedural.** The men lacked a registration; the registration is issued by the body; the body sets the terms; and the outcome is that two Black competitors do not race. **A gate that turns on paperwork you were not able to obtain looks, in the record, exactly like a gate that turns on paperwork you failed to obtain.** That ambiguity is not a bug in the system. It is what the system is for.
 
 ## Gate 3 · Membership in the association
 
-A contest board is an organ of a membership organisation. **Whether membership in that organisation was a formal prerequisite to competing, and whether membership rules restricted applicants by race, is a question this course could not answer from its sources.** Do not fill that in from what you assume. **The membership rules of a national motor club in the 1920s are a document, and if somebody finds it, this lesson gets better.**
+A contest board is an organ of a membership organization. **Whether membership in that organization was a formal prerequisite to competing, and whether membership rules restricted applicants by race, is a question this course could not answer from its sources.** Do not fill that in from what you assume. **The membership rules of a national motor club in the 1920s are a document, and if somebody finds it, this lesson gets better.**
 
 ## Gate 4 · The venue's own gate
 
@@ -725,13 +725,13 @@ The Encyclopedia of Indianapolis states it as a fact about people rather than a 
 
 ## Gate 5 · Money, which never closed
 
-The four gates above are permission gates. **The fifth is capital, and it applies to everyone.** You need a car, an engine programme, a crew, entry fees, transport, insurance, and something to sell a sponsor. **Charlie Wiggins built his car, the Wiggins Special, out of parts, in the shop where he worked** (Encyclopedia of Indianapolis, n.d.-d), and the field he raced in used hand-me-down machinery. **Sixty years later, Willy T. Ribbs qualified for the 1991 race on his last attempt after blowing engines on a tight budget** (Motorsport Magazine, n.d.), and **George Mack made the 2002 field on his final Bump Day run** (RACER, 2021).
+The four gates above are permission gates. **The fifth is capital, and it applies to everyone.** You need a car, an engine program, a crew, entry fees, transport, insurance, and something to sell a sponsor. **Charlie Wiggins built his car, the Wiggins Special, out of parts, in the shop where he worked** (Encyclopedia of Indianapolis, n.d.-d), and the field he raced in used hand-me-down machinery. **Sixty years later, Willy T. Ribbs qualified for the 1991 race on his last attempt after blowing engines on a tight budget** (Motorsport Magazine, n.d.), and **George Mack made the 2002 field on his final Bump Day run** (RACER, 2021).
 
-**Three drivers, three eras, three finishes decided partly by money.** Section 3 will not tell you that money is the same thing as a colour bar, because it is not, and pretending otherwise would let a real and separate barrier hide behind a metaphor. **What it will tell you is that when a permission gate closes, the capital gate is still there behind it**, and a course that only counts the first one will declare victory too early.
+**Three drivers, three eras, three finishes decided partly by money.** Section 3 will not tell you that money is the same thing as a color bar, because it is not, and pretending otherwise would let a real and separate barrier hide behind a metaphor. **What it will tell you is that when a permission gate closes, the capital gate is still there behind it**, and a course that only counts the first one will declare victory too early.
 
 ## The research move
 
-**When you want to know why somebody was not admitted, do not start with the outcome. Enumerate the gates, name the holder of each, and ask what record each one generates.** For this sport the answer is: a licence register, an entry list, a membership roll, and nothing at all. **Three of those four are documents somebody keeps.** That is your search.
+**When you want to know why somebody was not admitted, do not start with the outcome. Enumerate the gates, name the holder of each, and ask what record each one generates.** For this sport the answer is: a license register, an entry list, a membership roll, and nothing at all. **Three of those four are documents somebody keeps.** That is your search.
 
 ## Sources
 - African Americans in Motorsports. (n.d.). *Joie Ray*. https://aaim1.com/african-american-racing-history-joie-ray
@@ -790,14 +790,14 @@ The four gates above are permission gates. **The fifth is capital, and it applie
 
 ## What this course looked for, and did not find
 
-**It looked for a published AAA Contest Board rule barring Black drivers**: a rulebook clause, a minuted resolution, a bulletin, a licence application with a race question on it. **It did not find one in any source it read.**
+**It looked for a published AAA Contest Board rule barring Black drivers**: a rulebook clause, a minuted resolution, a bulletin, a license application with a race question on it. **It did not find one in any source it read.**
 
-**And it found something stronger about a weaker claim.** Paul Mullins, writing on the Indianapolis colour line, quotes the ***Indianapolis Recorder*** of **October 1947** reporting that AAA officials stated **"there has never before been anytime that the A.A.A. has ever barred any contestant by reason of race, creed or any other cause."** Mullins reads that statement as exposing what the paper called a "gentleman's agreement" against Black participation, rather than a formal code (Mullins, 2015).
+**And it found something stronger about a weaker claim.** Paul Mullins, writing on the Indianapolis color line, quotes the ***Indianapolis Recorder*** of **October 1947** reporting that AAA officials stated **"there has never before been anytime that the A.A.A. has ever barred any contestant by reason of race, creed or any other cause."** Mullins reads that statement as exposing what the paper called a "gentleman's agreement" against Black participation, rather than a formal code (Mullins, 2015).
 
 **Now handle that quotation properly, because how you handle it is the lesson.**
 
 1. **It is a statement by an interested party.** The AAA is describing its own conduct, in public, in 1947, to a Black newspaper that was asking pointed questions. **A denial from the accused is evidence about what the accused was willing to say, not proof of what happened.**
-2. **It is also not nothing.** If the association had a published rule, that answer would have been an obvious lie easily rebutted by producing the rulebook. **The fact that officials chose "there was never a rule" as their defence is itself weak evidence that there was never a rule.**
+2. **It is also not nothing.** If the association had a published rule, that answer would have been an obvious lie easily rebutted by producing the rulebook. **The fact that officials chose "there was never a rule" as their defense is itself weak evidence that there was never a rule.**
 3. **And both of those can be true while the exclusion was total.** Look back at lesson 9. **Four separate gates could each produce a refusal without anyone writing "no Black drivers" anywhere.**
 
 ## The verdict, stated plainly
@@ -826,7 +826,7 @@ The four gates above are permission gates. **The fifth is capital, and it applie
 
 **None of these has been read into this course. All of them exist somewhere.**
 - **AAA Contest Board rulebooks, bulletins and minutes** for the 1910s through the 1950s.
-- **Licence registers and entry lists** for the Indianapolis 500 in that period, including rejected entries.
+- **License registers and entry lists** for the Indianapolis 500 in that period, including rejected entries.
 - **The full runs of the *Indianapolis Recorder* and the *Chicago Defender***, which covered both tracks and asked the questions nobody else asked.
 - **USAC's founding bylaws of 1955**, which would show what the successor body wrote down at the moment it was free to write anything.
 
@@ -842,7 +842,7 @@ The four gates above are permission gates. **The fifth is capital, and it applie
       recallContent: [
         {
           prompt: "Name the five gates a driver has to pass, and who holds each.",
-          answer: "The competition licence and registration or entry approval, both held by the sanctioning body; membership in the association; the venue's own gate, held by the private owner; and capital, which is held by nobody and closes on everyone.",
+          answer: "The competition license and registration or entry approval, both held by the sanctioning body; membership in the association; the venue's own gate, held by the private owner; and capital, which is held by nobody and closes on everyone.",
         },
         {
           prompt: "What is the documented entry-approval instance in this lesson?",
@@ -872,7 +872,7 @@ The four gates above are permission gates. **The fifth is capital, and it applie
       section: "Section 3 · Powers",
       body: `Exclusion is one instrument. **The response to it is another**, and it is the one this course wants you to be able to see, because it is routinely described as a consolation and it is nothing of the kind.
 
-**Course 1 taught you this move already.** When the Indianapolis Redevelopment Commission cleared Pat Ward's Bottom, the Flanner House agency answered with a self-help home ownership programme: roughly 300 dollars down and about 1,200 hours of labour to earn equity in a house. **A community answering a taking by building an institution is a documented pattern, not a sentiment**, and the Colored Speedway Association is the same pattern applied to a sport.
+**Course 1 taught you this move already.** When the Indianapolis Redevelopment Commission cleared Pat Ward's Bottom, the Flanner House agency answered with a self-help home ownership program: roughly 300 dollars down and about 1,200 hours of labor to earn equity in a house. **A community answering a taking by building an institution is a documented pattern, not a sentiment**, and the Colored Speedway Association is the same pattern applied to a sport.
 
 ## What it costs to build a racing championship from nothing
 
@@ -880,7 +880,7 @@ Work down this list and notice that **every line is a real acquisition somebody 
 
 | What you need | What they did | Source |
 |---|---|---|
-| **An organisation** | Founded the Colored Speedway Association in 1924, with seven named principals | Encyclopedia of Indianapolis, n.d.-c |
+| **An organization** | Founded the Colored Speedway Association in 1924, with seven named principals | Encyclopedia of Indianapolis, n.d.-c |
 | **A venue you do not own** | Rented the one-mile dirt track at the Indiana State Fairgrounds | Encyclopedia of Indianapolis, n.d.-c |
 | **A fallback venue** | In 1931, Walnut Gardens Speedway in Mooresville, offered by founder Harry Earl for one dollar | PBS, n.d.-c |
 | **A date** | An annual summer fixture, at times on the July 4 holiday | PBS, n.d.-c |
@@ -914,7 +914,7 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
 
 ## The rule to carry out of Section 3
 
-**When you find a parallel institution in any field, read it as evidence about the main institution.** A separate league, a separate hospital, a separate bank, a separate school, a separate travel guide: **each one is a functioning organisation, built by named people at real cost, and each one exists because a door was held shut.** The Green Book itself, in the prerequisite course, is the purest example: **a publishing business whose entire product was a workaround.**
+**When you find a parallel institution in any field, read it as evidence about the main institution.** A separate league, a separate hospital, a separate bank, a separate school, a separate travel guide: **each one is a functioning organization, built by named people at real cost, and each one exists because a door was held shut.** The Green Book itself, in the prerequisite course, is the purest example: **a publishing business whose entire product was a workaround.**
 
 **And credit the builders.** Seven men incorporated a racing association in 1924. A mechanic built a car in the shop where he worked and won with it four times. A national newspaper named the race and carried it to eight states. **None of that is consolation. All of it is construction**, and a course that files it under loss has misread its own evidence.
 
@@ -939,7 +939,7 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
         },
         {
           prompt: "Give the three ways to handle that quotation correctly.",
-          answer: "It is a denial from an interested party and so is evidence about what they were willing to say; choosing 'there was never a rule' as a defence is itself weak evidence that there was no rule to produce; and both can be true while the exclusion was total, because four separate gates can each refuse without anyone writing it down.",
+          answer: "It is a denial from an interested party and so is evidence about what they were willing to say; choosing 'there was never a rule' as a defense is itself weak evidence that there was no rule to produce; and both can be true while the exclusion was total, because four separate gates can each refuse without anyone writing it down.",
         },
         {
           prompt: "State the three-sentence verdict this course adopts.",
@@ -1002,11 +1002,11 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
 
 **So the civic question this course opened with is unusually measurable.** "Who is admitted to a sport" has a number attached, published annually, for over a century. **Compare that with course 1**, where the question "how many buildings did the Avenue lose" has no answer at all because no survey was ever run. **When a field publishes its own counts, use them, and hold it to them.**
 
-**One present-day fact, offered as a fact and not as an evaluation.** In 2021 the Speedway's own website quoted **Jimmie McMillian, chief diversity officer of Penske Entertainment**, on Charlie Wiggins (Indianapolis Motor Speedway, 2021). **That an organisation has an officer with that title is a documented fact. Whether the outcomes have changed is a separate, countable question**, and the count is the only thing that can answer it. **Do not accept a job title as a result, and do not dismiss one either. Count.**
+**One present-day fact, offered as a fact and not as an evaluation.** In 2021 the Speedway's own website quoted **Jimmie McMillian, chief diversity officer of Penske Entertainment**, on Charlie Wiggins (Indianapolis Motor Speedway, 2021). **That an organization has an officer with that title is a documented fact. Whether the outcomes have changed is a separate, countable question**, and the count is the only thing that can answer it. **Do not accept a job title as a result, and do not dismiss one either. Count.**
 
 ## The three method lessons of Section 3
 
-1. **Enumerate the gates before you assign a cause.** Licence, entry, membership, venue, capital. Each has a holder and a record, or a documented lack of one.
+1. **Enumerate the gates before you assign a cause.** License, entry, membership, venue, capital. Each has a holder and a record, or a documented lack of one.
 2. **Distinguish an outcome from an instrument.** Eighty years without a Black starter is an outcome. A rule is an instrument. **This course established the first and could not establish the second, and said so.**
 3. **Measure the interval between the opening and the change.** It is where the real barrier usually lives.
 
@@ -1020,11 +1020,11 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
       recallContent: [
         {
           prompt: "Which course 1 example is the same pattern as the Colored Speedway Association?",
-          answer: "The Flanner House self-help home ownership programme, which answered the clearance of Pat Ward's Bottom with about 300 dollars down and roughly 1,200 hours of labour toward equity. A community answering a taking by building an institution is a documented pattern.",
+          answer: "The Flanner House self-help home ownership program, which answered the clearance of Pat Ward's Bottom with about 300 dollars down and roughly 1,200 hours of labor toward equity. A community answering a taking by building an institution is a documented pattern.",
         },
         {
           prompt: "List five things the Colored Speedway Association had to acquire to run a championship.",
-          answer: "An organisation with named principals, a venue it did not own, a fallback venue, a fixed date, a field of entrants, cars, a name and audience through the Black press, and medical provision.",
+          answer: "An organization with named principals, a venue it did not own, a fallback venue, a fixed date, a field of entrants, cars, a name and audience through the Black press, and medical provision.",
         },
         {
           prompt: "What can a parallel institution match, and what can it not?",
@@ -1036,7 +1036,7 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
         },
         {
           prompt: "State the rule about parallel institutions.",
-          answer: "Read a parallel institution as evidence about the main one. A separate league, hospital, bank, school or travel guide is a functioning organisation built by named people at real cost, and it exists because a door was held shut. Credit the construction rather than filing it under loss.",
+          answer: "Read a parallel institution as evidence about the main one. A separate league, hospital, bank, school or travel guide is a functioning organization built by named people at real cost, and it exists because a door was held shut. Credit the construction rather than filing it under loss.",
         },
       ],
     },
@@ -1101,7 +1101,7 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
             prompt: "Name the five gates a driver must pass, in this course's framing.",
             options: [
               "Qualifying speed, minimum car weight, engine size, fuel type, and the chosen tyre",
-              "A competition licence, entry approval, association membership, the venue's gate, and capital",
+              "A competition license, entry approval, association membership, the venue's gate, and capital",
               "A driving test, a medical exam, a personal interview, an entry fee, and a sponsor",
               "The state, the county, the town, the track owner, and the sanctioning series itself",
             ],
@@ -1113,9 +1113,9 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
             prompt: "What happened when Charlie Wiggins and Sumner 'Red' Oliver tried to enter a car at Dayton Speedway?",
             options: [
               "They were admitted without any objection at the gate and finished second in the race",
-              "The entire race meeting was cancelled that afternoon before any car took the track",
+              "The entire race meeting was canceled that afternoon before any car took the track",
               "They were rejected for lacking AAA registration, and told to register for dirt races later",
-              "They were rejected by a written colour rule that officials quoted to them at the gate",
+              "They were rejected by a written color rule that officials quoted to them at the gate",
             ],
             correctIndex: 2,
             explanation: "The refusal is procedural and mentions no race at all, which is exactly what makes it hard to attack and easy to run. Reported by the Indianapolis Recorder as cited by Mullins.",
@@ -1130,7 +1130,7 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
               "That a sanctioning body's written policy barred Black drivers",
             ],
             correctIndex: 3,
-            explanation: "The course looked for a rulebook clause, a minuted resolution, a bulletin or a licence application with a race question and found none in any source it read.",
+            explanation: "The course looked for a rulebook clause, a minuted resolution, a bulletin or a license application with a race question and found none in any source it read.",
             sourceLessonSlug: "tr-powers-the-written-rule",
           },
           {
@@ -1187,7 +1187,7 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
               "The 1956 blight declaration covering some 38 acres",
               "The Unigov statute's population threshold rule",
               "Hoosier Realty Corporation's quiet land purchases",
-              "The Flanner House self-help home ownership programme",
+              "The Flanner House self-help home ownership program",
             ],
             correctIndex: 3,
             explanation: "A community answering a taking by building an institution is a documented pattern rather than a sentiment.",
@@ -1266,9 +1266,9 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
 
 **6. Find the boundary between the track and the Town of Speedway.** Somewhere the private property ends and a municipality of about 4.2 square miles begins. **That line separates two completely different legal regimes**, which Section 5 spells out, and it is invisible in a photograph. **Note where you think it runs, then check it on a parcel map and see how wrong you were.**
 
-**7. Read every marker, plaque, name and honour roll, and note who put it there.** Who is commemorated, in what medium, and by which sponsor? **Then note who is not.** This course has given you names that belong to this sport in this city: Charlie Wiggins, Malcolm Hannon, Bill Carson, Sumner "Red" Oliver, Joie Ray, Willy T. Ribbs, George Mack. **Look for them. Record what you find and what you do not, precisely, without adjectives.**
+**7. Read every marker, plaque, name and honor roll, and note who put it there.** Who is commemorated, in what medium, and by which sponsor? **Then note who is not.** This course has given you names that belong to this sport in this city: Charlie Wiggins, Malcolm Hannon, Bill Carson, Sumner "Red" Oliver, Joie Ray, Willy T. Ribbs, George Mack. **Look for them. Record what you find and what you do not, precisely, without adjectives.**
 
-**8. Look at the people, and describe them the way they would describe themselves.** This is a working venue with employees, members, residents and visitors. A 360 tour is a photograph of strangers in a public place, and the ethics of writing about it are the ethics of writing about neighbours.
+**8. Look at the people, and describe them the way they would describe themselves.** This is a working venue with employees, members, residents and visitors. A 360 tour is a photograph of strangers in a public place, and the ethics of writing about it are the ethics of writing about neighbors.
 
 ## What this tour cannot show you, and where the other track is
 
@@ -1315,13 +1315,13 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
 
 **This platform's lesson map draws the whole world.** A marker is a fixed-size dot on a world projection, so two points need to be roughly two degrees apart, on the order of 200 kilometres, before they separate visually. **The two racetracks in this course's title are about seven miles apart.** At world scale they are the same dot, and pretending otherwise would be a worse lesson than admitting it.
 
-**So this map does a different job, and it is the right one for this subject.** The Indianapolis Motor Speedway is a **site**. The Gold and Glory Sweepstakes was a **circuit**: an organisation that rented tracks, drew fields from an eight-state region, and was covered by a national newspaper published in another city. **You cannot map a circuit with one pin, and every time somebody tells you this story as "a race at the fairgrounds" they have quietly shrunk it to a site.**
+**So this map does a different job, and it is the right one for this subject.** The Indianapolis Motor Speedway is a **site**. The Gold and Glory Sweepstakes was a **circuit**: an organization that rented tracks, drew fields from an eight-state region, and was covered by a national newspaper published in another city. **You cannot map a circuit with one pin, and every time somebody tells you this story as "a race at the fairgrounds" they have quietly shrunk it to a site.**
 
 **Blue and violet: the two subjects**, plotted at approximate points about seven miles apart. Their details carry the comparison this whole course is built on.
 
-**Amber: four other places this story actually happened.** A borrowed track in a small town, a birthplace and the marker that stands there, the track where a licence finally turned into a start, and a speedway in another state where an entry was refused for want of a registration. **Take those four away and you have a local anecdote instead of a circuit.**
+**Amber: four other places this story actually happened.** A borrowed track in a small town, a birthplace and the marker that stands there, the track where a license finally turned into a start, and a speedway in another state where an entry was refused for want of a registration. **Take those four away and you have a local anecdote instead of a circuit.**
 
-**Green: two archives.** Indianapolis, where the state library and the state historical marker programme sit, and Chicago, where the newspaper that named the race was published. **Knowing where a record physically lives is part of knowing that it exists.**
+**Green: two archives.** Indianapolis, where the state library and the state historical marker program sit, and Chicago, where the newspaper that named the race was published. **Knowing where a record physically lives is part of knowing that it exists.**
 
 **Coordinates on this map are approximate points, not surveyed locations.** Do not use them to find an address. Use them to see the shape of the circuit, and use a county GIS or an assessor's property card when you need a parcel.
 
@@ -1371,7 +1371,7 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
             title: "Evansville, Indiana",
             color: "#b45309",
             description:
-              "Charles Edwin 'Charlie' Wiggins was born here on July 15, 1897, in the Baptisttown neighbourhood, and moved to Indianapolis in 1923. A historical marker was erected in Evansville in 2018 by the Indiana Racing Memorial Association, a private organisation rather than a state body. Read the sponsor of a marker as carefully as you read its text: who paid for the sign is part of what the sign says.",
+              "Charles Edwin 'Charlie' Wiggins was born here on July 15, 1897, in the Baptisttown neighborhood, and moved to Indianapolis in 1923. A historical marker was erected in Evansville in 2018 by the Indiana Racing Memorial Association, a private organization rather than a state body. Read the sponsor of a marker as carefully as you read its text: who paid for the sign is part of what the sign says.",
           },
           {
             id: "tr-salem",
@@ -1380,7 +1380,7 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
             title: "Salem Speedway, Salem, Indiana",
             color: "#b45309",
             description:
-              "Where a licence turned into a start. Joie Ray drove his first race under AAA sanction here on June 26, 1949, qualifying thirteenth and finishing eighth. Accounts disagree about the year of his first licence and about which association issued it, which is a resolvable question nobody in this course has resolved. Note the distance in time from this pin to 1991, when a Black driver first started the Indianapolis 500: the permission gate opened roughly forty-two years before the outcome changed.",
+              "Where a license turned into a start. Joie Ray drove his first race under AAA sanction here on June 26, 1949, qualifying thirteenth and finishing eighth. Accounts disagree about the year of his first license and about which association issued it, which is a resolvable question nobody in this course has resolved. Note the distance in time from this pin to 1991, when a Black driver first started the Indianapolis 500: the permission gate opened roughly forty-two years before the outcome changed.",
           },
           {
             id: "tr-dayton",
@@ -1398,7 +1398,7 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
             title: "Indiana State Library and Indiana Historical Bureau, Indianapolis",
             color: "#15803d",
             description:
-              "Where the state's own record lives, and where the state historical marker programme is administered. A public petition asks the Indiana Historical Bureau to commemorate the Gold and Glory Sweepstakes at the fairgrounds; a petition is a request rather than a decision, and confirming its outcome is real homework. Indiana newspaper runs, including the Indianapolis Recorder, are also where the 1947 AAA statement in lesson 10 can be checked against the paper itself rather than against a quotation of it.",
+              "Where the state's own record lives, and where the state historical marker program is administered. A public petition asks the Indiana Historical Bureau to commemorate the Gold and Glory Sweepstakes at the fairgrounds; a petition is a request rather than a decision, and confirming its outcome is real homework. Indiana newspaper runs, including the Indianapolis Recorder, are also where the 1947 AAA statement in lesson 10 can be checked against the paper itself rather than against a quotation of it.",
           },
           {
             id: "tr-chicago",
@@ -1434,7 +1434,7 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
 
 **What that means for a citizen, stated without sentiment.** **There is no public meeting, no published agenda, no comment period and no records request** for a private company's decisions about its own property and its own sanctioning rules. **A citizen's leverage over a private owner is commercial and reputational, not civic.** That is not a complaint. It is the correct description of the regime, and mistaking it for a civic one wastes your time.
 
-**Where public process does touch this ground.** Anything requiring a permit, a rezoning, a variance, a road closure, a liquor licence or public money runs through a government, and **that government is the Town of Speedway**, not the City of Indianapolis. **The National Historic Landmark designation adds federal review only where federal money or a federal permit is involved** (National Park Service, n.d.).
+**Where public process does touch this ground.** Anything requiring a permit, a rezoning, a variance, a road closure, a liquor license or public money runs through a government, and **that government is the Town of Speedway**, not the City of Indianapolis. **The National Historic Landmark designation adds federal review only where federal money or a federal permit is involved** (National Park Service, n.d.).
 
 ## Ground B · The Town of Speedway: a municipality of about 4.2 square miles
 
@@ -1506,7 +1506,7 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
         },
         {
           prompt: "How should you treat the existence of a chief diversity officer at Penske Entertainment?",
-          answer: "As a documented fact about an organisation, not as a result. Whether outcomes changed is a separate countable question. Do not accept a job title as a result and do not dismiss one either. Count.",
+          answer: "As a documented fact about an organization, not as a result. Whether outcomes changed is a separate countable question. Do not accept a job title as a result and do not dismiss one either. Count.",
         },
       ],
     },
@@ -1539,7 +1539,7 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
 
 **The habits this builds, which transfer to any American county.** **Ownership, jurisdiction, adopted plan, deciding body, meeting schedule.** The names of the tools change from state to state; those five facts do not.
 
-**One rule you do not get to break.** **Do not run this drill on somebody's home and publish the result.** Practise on institutional and commercial addresses. A parcel record is public, and a current occupant's name attached to their address in a piece of writing is a different act from a public record sitting in a county database. This is the same rule the method course applied to tourist homes and course 1 applied to the Avenue.
+**One rule you do not get to break.** **Do not run this drill on somebody's home and publish the result.** Practice on institutional and commercial addresses. A parcel record is public, and a current occupant's name attached to their address in a piece of writing is a different act from a public record sitting in a county database. This is the same rule the method course applied to tourist homes and course 1 applied to the Avenue.
 
 ## Sources
 - City of Indianapolis and Marion County. (n.d.). *MapIndy*. https://maps.indy.gov/MapIndy/
@@ -1754,7 +1754,7 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
             prompt: "Which five facts transfer to researching any site in any American county?",
             options: [
               "Ownership, jurisdiction, adopted plan, deciding body, and meeting schedule",
-              "Square footage, roof age, paint colour, the street name, and the zip code",
+              "Square footage, roof age, paint color, the street name, and the zip code",
               "Architect, contractor, original build cost, current tenant, and the insurer",
               "Only the local zoning code that currently happens to apply to the parcel",
             ],
@@ -1852,7 +1852,7 @@ Write **900 to 1,300 words** of creative nonfiction about **one race, one driver
 
 ## Step 1 · Choose one, and choose small
 "Racing and race in America" is not a subject, it is a topic. **These are subjects:**
-- **The 1931 Gold and Glory Sweepstakes at Walnut Gardens Speedway**, a 50-mile race on a track lent for one dollar by a man who sat on the organising board.
+- **The 1931 Gold and Glory Sweepstakes at Walnut Gardens Speedway**, a 50-mile race on a track lent for one dollar by a man who sat on the organizing board.
 - **One entry refusal at Dayton Speedway**, and the word "registration."
 - **The 1936 race, cut from 100 miles to 50**, and the thirteen cars on the fourth turn of the second lap.
 - **One yard of brick**, and the 3.2 million it stands for.
@@ -1868,7 +1868,7 @@ Course 1's lesson 13 killed a good argument with a table of dates. **This course
 Pick one and commit, because mixing them is what makes place writing mushy.
 - **A biography of an event.** One race, from entry list to finishing order.
 - **A biography of a builder.** A person who made something: a car, an association, a garage, a newspaper column.
-- **A history of a gate.** One licence, one registration, one entry approval, one refusal, followed to whatever document exists.
+- **A history of a gate.** One license, one registration, one entry approval, one refusal, followed to whatever document exists.
 - **A report on a present.** What is on the ground now, who governs it, what plan is being written, what a public meeting sounded like.
 - **A piece about the record itself.** What you could and could not find, and what the gap means.
 
@@ -1890,11 +1890,11 @@ Pick one and commit, because mixing them is what makes place writing mushy.
 4. **Do not novelise the crash.** The 1936 pileup injured real people whose descendants are living, and the sources give you a turn, a lap, a car count and a consequence. **Write those. Do not write the flames.** A writer who reaches for spectacle at the exact moment the evidence runs out has told you what the piece is really for.
 5. **Credit what was built.** Seven men founded an association. A mechanic bought the shop he was hired into and built a winning car in it. A newspaper named a race and carried it to eight states. **A piece that inventories only refusal is an incomplete report.**
 6. **No ruin porn and no lost golden age.** The Gold and Glory Sweepstakes was a working promotion with thin margins, not a paradise, and its end has a documented double cause: Depression finances and one crash.
-7. **Handle living organisations fairly.** The Speedway, its current owner, the Town of Speedway and the Indiana State Fair Commission all exist today and all have positions. **Quote what they say, cite where they said it, and separate what an organisation says from what its records show.**
+7. **Handle living organizations fairly.** The Speedway, its current owner, the Town of Speedway and the Indiana State Fair Commission all exist today and all have positions. **Quote what they say, cite where they said it, and separate what an organization says from what its records show.**
 8. **Say what you did to a number.** Averaged, converted, adjusted for inflation, or rounded: say so and say how.
 
 ## What good looks like
-A short, checkable piece in which every sentence is either something you read in a named source or something you clearly mark as unresolved, and in which the prose is still good. **Those two standards do not conflict.** A man who built his car in the shop where he worked and won a national championship four times, a race shortened by half so ambulances could reach the fourth turn, a track lent for one dollar, a single yard of brick standing for 3.2 million, and forty-two years between a licence and a start: **none of that needs decorating.**
+A short, checkable piece in which every sentence is either something you read in a named source or something you clearly mark as unresolved, and in which the prose is still good. **Those two standards do not conflict.** A man who built his car in the shop where he worked and won a national championship four times, a race shortened by half so ambulances could reach the fourth turn, a track lent for one dollar, a single yard of brick standing for 3.2 million, and forty-two years between a license and a start: **none of that needs decorating.**
 
 ## Sources
 - Encyclopedia of Indianapolis. (n.d.-c). *Gold and Glory Sweepstakes*. https://indyencyclopedia.org/gold-and-glory-sweepstakes/
@@ -1905,7 +1905,7 @@ A short, checkable piece in which every sentence is either something you read in
       recallContent: [
         {
           prompt: "What is the difference between a topic and a subject in this assignment?",
-          answer: "'Racing and race in America' is a topic. 'The 1931 Gold and Glory Sweepstakes at Walnut Gardens Speedway, a 50-mile race on a track lent for one dollar by a man on the organising board' is a subject. Smaller is better.",
+          answer: "'Racing and race in America' is a topic. 'The 1931 Gold and Glory Sweepstakes at Walnut Gardens Speedway, a 50-mile race on a track lent for one dollar by a man on the organizing board' is a subject. Smaller is better.",
         },
         {
           prompt: "What are the four columns of the table you build before writing, and which one matters most?",
@@ -1942,7 +1942,7 @@ A short, checkable piece in which every sentence is either something you read in
 
 ## What you can do that you could not do before
 
-- **Recognise a sanctioning body** as an instrument, and know that its defining feature is that it need not leave a record.
+- **Recognize a sanctioning body** as an instrument, and know that its defining feature is that it need not leave a record.
 - **Tell an outcome from an instrument**, and say which one your evidence supports.
 - **Read a parallel institution as evidence about the main one**, and credit its builders by name.
 - **Notice a statute renamed rather than repealed.** "Area needing redevelopment" is where "blighted" went, and condemnation is still on the list of acquisition methods.
@@ -1962,7 +1962,7 @@ A short, checkable piece in which every sentence is either something you read in
 
 **None of these has been read into this course. All of them exist somewhere.**
 - **AAA Contest Board rulebooks, bulletins and minutes**, and **USAC's founding bylaws of 1955**.
-- **Indianapolis 500 entry lists and licence registers**, including refused entries.
+- **Indianapolis 500 entry lists and license registers**, including refused entries.
 - **The full runs of the *Indianapolis Recorder* and the *Chicago Defender***, which is also where the unnamed Sweepstakes cities would be found.
 - **The Indiana State Fair Commission's minutes**, including whatever was said when the mile was resurfaced in 2019.
 - **The Indianapolis Motor Speedway's National Historic Landmark nomination**, for its boundary, period of significance and contributing features.

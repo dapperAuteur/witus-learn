@@ -118,7 +118,7 @@ What is left is the story and one person telling it. If the story does not work,
 - **I Am My Own Wife** (Doug Wright, 2003). One actor, many roles, built from interviews with a real person, and openly about the difficulty of telling that person's story.
 - **Every Brilliant Thing** (Duncan Macmillan with Jonny Donahoe, 2013). Direct address in which the audience is given explicit roles to play. The best available demonstration of Lesson 5.
 
-**Choosing.** Ask what the material needs rather than what sounds impressive. If the story lives in one hour of one night, the dramatic monologue is doing you a favour. If it ranges over decades, direct address will stop you fighting the form. If it is somebody else's testimony, you are in the third row of the table and the ethics arrive with it.
+**Choosing.** Ask what the material needs rather than what sounds impressive. If the story lives in one hour of one night, the dramatic monologue is doing you a favor. If it ranges over decades, direct address will stop you fighting the form. If it is somebody else's testimony, you are in the third row of the table and the ethics arrive with it.
 
 :::reveal Your material ranges over twenty years and needs the speaker to comment on their younger self. Which form fits, and what does it obligate you to do? ||| Direct address, because a dramatic monologue has to motivate everything from the present situation and would fight a twenty-year range. What it obligates you to do is decide who the audience IS to the speaker: direct address without a defined listener drifts into lecture. Krapp's Last Tape solves the same problem differently, by making a tape recorder the second presence, which is worth studying if you want the range without breaking the fourth wall.
 
@@ -322,7 +322,7 @@ Your speaker is talking. **To whom?** Not in the abstract. In the room, tonight,
 
 **The craft problem: "it really happened" is not an argument.**
 
-Real events come with a built-in defence that ruins drafts. A scene is doing nothing, and the writer keeps it because it is what occurred. But an audience cannot see what occurred, only what is on stage, and the stage does not care about accuracy for its own sake. **Every element still has to earn its place against the change**, exactly as if you had invented it.
+Real events come with a built-in defense that ruins drafts. A scene is doing nothing, and the writer keeps it because it is what occurred. But an audience cannot see what occurred, only what is on stage, and the stage does not care about accuracy for its own sake. **Every element still has to earn its place against the change**, exactly as if you had invented it.
 
 The reverse is also true and less often said: **shaping real material is not lying.** Compressing three conversations into one, moving an event, cutting a person, are all standard and legitimate. What is not legitimate is asserting something false about someone who exists.
 
@@ -343,7 +343,7 @@ Questions worth answering before you draft, not after:
 
 **Where this connects to the rest of the series.** The documentary and civic-documentation courses teach the opposite discipline: record what happened and do not shape it. A writer who has felt both pulls is better at each. **Knowing when not to make a story out of something is a craft skill**, not a moral decoration.
 
-:::reveal A vivid scene in your draft shows your father at his worst. It is true and it is the best writing in the piece. What is the test? ||| Whether it is necessary to the change. True and vivid is not sufficient: everything on stage has to earn its place against what the piece is actually about, and real material gets no exemption from that. If the scene carries the change, it stays and you accept what it costs. If it is there because it is strong writing about a real person at their worst, it is doing you a favour and doing him harm, and it goes.
+:::reveal A vivid scene in your draft shows your father at his worst. It is true and it is the best writing in the piece. What is the test? ||| Whether it is necessary to the change. True and vivid is not sufficient: everything on stage has to earn its place against what the piece is actually about, and real material gets no exemption from that. If the scene carries the change, it stays and you accept what it costs. If it is there because it is strong writing about a real person at their worst, it is doing you a favor and doing him harm, and it goes.
 
 ## Sources
 - Smith, A. D. (1993). *Fires in the mirror: Crown Heights, Brooklyn and other identities*. Anchor Books.
@@ -384,7 +384,7 @@ Questions worth answering before you draft, not after:
 
 Most drafts are too heavy on summary, because summary is what happens when you tell someone about your life. Scene is what happens when you show it, and it costs more words per minute of story, which is exactly why it is worth reserving.
 
-**The rule that holds.** Scene the moments the change runs through. Summarise everything else. If a passage is not carrying the change, it does not need real time.
+**The rule that holds.** Scene the moments the change runs through. Summarize everything else. If a passage is not carrying the change, it does not need real time.
 
 **What a monodrama can do that almost nothing else can:** move between the two mid-sentence, and let the speaker comment on the scene while playing it. *"He said, and I remember thinking he had never once used my name, he said..."* That is summary, scene and interpretation in one breath. It is the form's greatest advantage.
 
@@ -431,7 +431,7 @@ That happens when the speaker's account contains evidence against itself. A deta
               "Real events must be presented exactly as they occurred",
               "Shaping is legitimate; asserting something false about a real person is not",
               "Any alteration of real events constitutes fabrication",
-              "Real material should be avoided in favour of invention",
+              "Real material should be avoided in favor of invention",
             ],
             correctIndex: 1,
             explanation:
@@ -448,7 +448,7 @@ That happens when the speaker's account contains evidence against itself. A deta
             ],
             correctIndex: 2,
             explanation:
-              "Real material gets no exemption from earning its place. True and vivid is not sufficient; if the scene is not carrying the change it is doing the writer a favour and the subject harm.",
+              "Real material gets no exemption from earning its place. True and vivid is not sufficient; if the scene is not carrying the change it is doing the writer a favor and the subject harm.",
             sourceLessonSlug: "mono-truth-and-permission",
           },
           {
@@ -555,7 +555,7 @@ That happens when the speaker's account contains evidence against itself. A deta
         {
           prompt: "State the rule for choosing between scene and summary.",
           answer:
-            "Scene the moments the change runs through, and summarise everything else. Scene costs more words per minute of story, so it is reserved for what is carrying the change; a passage that is not carrying it does not need real time.",
+            "Scene the moments the change runs through, and summarize everything else. Scene costs more words per minute of story, so it is reserved for what is carrying the change; a passage that is not carrying it does not need real time.",
         },
       ],
       body: `Structure is not a template. It is the answer to one question: **what makes the audience keep wanting the next minute?** Four answers that reliably work.
@@ -570,7 +570,7 @@ That happens when the speaker's account contains evidence against itself. A deta
 *Buys:* range, plus a present-tense engine.
 *Costs:* the frame has to change too, or the present becomes a device.
 
-**3. The list, the lesson, or the tour.** The speaker has an organising pretext: a list they are reading, a subject they are explaining, a place they are showing you. *Every Brilliant Thing* uses a list of reasons to stay alive.
+**3. The list, the lesson, or the tour.** The speaker has an organizing pretext: a list they are reading, a subject they are explaining, a place they are showing you. *Every Brilliant Thing* uses a list of reasons to stay alive.
 
 *Buys:* enormous freedom of movement, and a natural relationship with the audience.
 *Costs:* a list is not a story. **The change has to run underneath it**, and if it does not, you have a very good talk.
@@ -761,7 +761,7 @@ The practical test: **mark every point in your draft where the texture changes.*
 
 **Read it aloud, standing, before you submit.** Not optional, and it will change the draft. Note in your submission what standing up taught you that the page did not.
 
-**What a strong submission looks like.** A clear change, a listener you can name, at least one moment scened rather than summarised, an ending that does not explain itself, and honesty about what did not work. **A draft with an admitted weakness scores better than one claiming none**, because the first can be revised and the second cannot.
+**What a strong submission looks like.** A clear change, a listener you can name, at least one moment scened rather than summarized, an ending that does not explain itself, and honesty about what did not work. **A draft with an admitted weakness scores better than one claiming none**, because the first can be revised and the second cannot.
 
 **Monodrama II** takes this draft and puts it on its feet: direct address as a physical problem, staging with nothing, rehearsing alone, and what changes when the audience is real.`,
     },
@@ -783,7 +783,7 @@ The practical test: **mark every point in your draft where the texture changes.*
 
 **A named detail beats a built set**, because the audience constructs the rest. Fix one transition signal and never vary it.
 
-**Scene what the change runs through; summarise the rest.** A solo speaker can always explain, which is the form's greatest temptation.
+**Scene what the change runs through; summarize the rest.** A solo speaker can always explain, which is the form's greatest temptation.
 
 **Unreliability only works if the audience can detect it.** Plant the evidence early.
 

@@ -106,9 +106,11 @@ export async function listBundleMemberships(
 export async function listBundlesForCourse(
   tenantId: string,
   courseId: string,
-): Promise<{ slug: string; title: string; price: string; priceType: string }[]> {
+): Promise<{ id: string; slug: string; title: string; price: string; priceType: string }[]> {
   return db
     .select({
+      // id is here so the course page can resolve a bundle-scoped promotion for this bundle.
+      id: bundles.id,
       slug: bundles.slug,
       title: bundles.title,
       price: bundles.price,

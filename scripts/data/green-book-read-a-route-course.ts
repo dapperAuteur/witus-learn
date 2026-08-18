@@ -480,7 +480,7 @@ Every one of those headings appears in the 1940 edition (Green, 1940). A guide t
               "By flatly refusing to serve white customers",
               "By driving clients to vote and holding NAACP mail",
               "By printing and distributing the Green Book",
-              "By operating as informal neighbourhood courts",
+              "By operating as informal neighborhood courts",
             ],
             correctIndex: 1,
             explanation: "Salon staff drove clients to voting booths and let NAACP literature be delivered to the salon rather than to clients' homes, which carried risk.",
@@ -847,7 +847,7 @@ The publisher is telling you directly that the gaps in his book are partly a gap
             options: [
               "In the big cities that had the most listings",
               "Crossing smaller towns in the rural South and West",
-              "In the Harlem neighbourhood of New York City",
+              "In the Harlem neighborhood of New York City",
               "On long transatlantic ocean liner crossings",
             ],
             correctIndex: 1,
@@ -1169,7 +1169,7 @@ The first sentence is a claim about the world that you have not proved. The seco
       slug: "gbr-map",
       title: "14 · Map: cities the Green Book leaned on",
       section: "Section 5 · The map",
-      body: `Click any marker for its detail. **This map is a sample, not the book.** More than ten thousand businesses were listed across thirty years, and no map of twenty-two points can represent that. What this map can do is show you three different kinds of evidence side by side, so you can practise telling them apart.
+      body: `Click any marker for its detail. **This map is a sample, not the book.** More than ten thousand businesses were listed across thirty years, and no map of twenty-two points can represent that. What this map can do is show you three different kinds of evidence side by side, so you can practice telling them apart.
 
 **Blue markers: the highest-volume cities.** New York, Detroit, Chicago, and Los Angeles carried the most listings, because they had the largest Black populations (National Park Service, n.d.-b). Remember lesson 9: these are the places the guide mattered least, because a traveler arriving there had options anyway.
 
@@ -1177,7 +1177,7 @@ The first sentence is a claim about the world that you have not proved. The seco
 
 **Amber markers: route evidence from the 1940 edition.** Tulsa, Amarillo, Deming, and San Bernardino are the four points that make lesson 11 concrete. Amarillo is the last listed U.S. 66 stop going west; San Bernardino is the next one; Deming is the whole of New Mexico that year and it is nowhere near the road.
 
-**Coordinates on this map are approximate city centres, taken from OpenStreetMap's gazetteer**, not the coordinates of individual buildings. Do not use them to find an address. Use them to see the shape of the evidence.
+**Coordinates on this map are approximate city centers, taken from OpenStreetMap's gazetteer**, not the coordinates of individual buildings. Do not use them to find an address. Use them to see the shape of the evidence.
 
 **What the map cannot show you.** It cannot show absence, because a marker only exists where something was recorded. Every empty stretch on this map is a question from lesson 12, not an answer.
 
@@ -1822,12 +1822,12 @@ Use these headings.
 2. **Say which edition, and how you read it.** Image or transcription (lesson 8).
 3. **Do not state a survival rate.** Not for your town, not for the country. See lesson 16.
 4. **Do not turn a person into a character.** The women behind "Mrs. E. Latimore" were real, and the record is thin. Write what the record supports and leave the rest alone.
-5. **Living communities describe themselves.** If the neighbourhood is still there, use the name and terms the people who live there use, and say where you got them.
+5. **Living communities describe themselves.** If the neighborhood is still there, use the name and terms the people who live there use, and say where you got them.
 6. **Private homes are private.** A tourist home was somebody's house, and today it is probably still somebody's house. Photograph from the public sidewalk, do not publish the current occupants' names, and do not knock unless you have been invited.
 7. **Buildings move.** The Latimore Tourist Home is the reminder: the National Park Service's page for it, last updated in 2021, records plans to move the building to a nearby park (National Park Service, n.d.-c). Whether, when, and where it moved is exactly the kind of thing you verify rather than assume, so check the current status before you write that it stands at 318 South Houston Avenue.
 
 ## What good looks like
-A short, checkable report in which every sentence is either something you read in a source you name, or something you clearly mark as unresolved. That is a harder and better piece of work than a colourful narrative, and it is the only kind that the next researcher can build on.
+A short, checkable report in which every sentence is either something you read in a source you name, or something you clearly mark as unresolved. That is a harder and better piece of work than a colorful narrative, and it is the only kind that the next researcher can build on.
 
 ## Sources
 - National Park Service. (n.d.-b). *Green Book properties listed in the National Register of Historic Places*. https://www.nps.gov/articles/green-book-properties-listed-in-the-national-register-of-historic-places.htm
@@ -1861,7 +1861,7 @@ A short, checkable report in which every sentence is either something you read i
 **What you can do that you could not do before.**
 - Name the edition and the page for any claim you make about the guide.
 - Tell the difference between a claim about the book and a claim about the world, and write only the one your evidence supports.
-- Recognise that density and usefulness run in opposite directions, so a heat map of listings is not a map of where the guide mattered.
+- Recognize that density and usefulness run in opposite directions, so a heat map of listings is not a map of where the guide mattered.
 - Treat a gap as a question with three testable answers rather than as a conclusion.
 - Follow one address from a page of small type to a parcel record and, where the record allows, to the decision that changed it.
 
