@@ -3,10 +3,19 @@
 import { useEffect, useMemo, useState } from "react";
 import { geoAlbersUsa, geoNaturalEarth1, geoPath } from "d3-geo";
 import type { GeoProjection } from "d3-geo";
-import { feature } from "topojson-client";
+import { feature, mesh } from "topojson-client";
 import type { FeatureCollection, LineString, Polygon } from "geojson";
 import type { GeometryCollection, Topology } from "topojson-specification";
 import worldData from "world-atlas/countries-110m.json";
+import {
+  aiannhTitle,
+  atlasFeatureKey,
+  legendColors,
+  regionFill,
+  usAtlasOf,
+  type MapAtlasId,
+  type UsAtlasId,
+} from "@/lib/map-atlas";
 
 // CentOS map_content (coords are [lat, lng]).
 interface Marker {
@@ -34,8 +43,10 @@ interface Shape {
  *  (a form of government, a municipal-authority regime) is an area, not a point. Colours and the
  *  legend come from `MapContent.regionLegend`. */
 interface RegionLayer {
-  /** The topojson feature id to fill. For the world atlas: the ISO 3166-1 numeric country code
-   *  (e.g. "840"). For the us-states atlas: the 2-digit state FIPS code (e.g. "18" for Indiana). */
+  /** The topojson feature id to fill. Per atlas: "world" uses the ISO 3166-1 numeric country code
+   *  (e.g. "840"); "us-states" the 2-digit state FIPS (e.g. "18" for Indiana); "us-counties" the
+   *  5-digit county FIPS (e.g. "18097" for Marion County, IN); "us-aiannh" the 4-digit Census
+   *  AIANNH area code (e.g. "2430" for the Navajo Nation Reservation). */
   featureId: string;
   /** Category name; its colour comes from `MapContent.regionLegend`. */
   category: string;
@@ -44,10 +55,16 @@ interface RegionLayer {
   /** See Marker.year. */
   year?: number;
   /** Which polygon atlas this region belongs to (plans/49). "world" fills a country on the Natural
-   *  Earth world map (the default). "us-states" fills a US state on a geoAlbersUsa map, loaded from
-   *  `us-atlas/states-10m.json`. A lesson is either a world map or a US map, never both: the first
-   *  region's atlas picks the projection and the ~2 MB states atlas loads only when one is present. */
-  atlas?: "world" | "us-states";
+   *  Earth world map (the default). The US atlases render on a geoAlbersUsa map: "us-states" fills
+   *  a state (from `us-atlas/states-10m.json`, ~115 KB), "us-counties" a county (from
+   *  `us-atlas/counties-10m.json`, ~840 KB, with state borders drawn for orientation), and
+   *  "us-aiannh" an American Indian / Alaska Native / Native Hawaiian area (from the in-repo
+   *  `src/data/us-aiannh-500k.topo.json`, ~380 KB, US Census cartographic boundary data) drawn as
+   *  its OWN separately-styled layer over a neutral state base, never a shade of the state ladder.
+   *  A lesson is ONE map: the first region's atlas picks the projection, and a US topology only
+   *  loads (lazily) when a region targets it, so world-map lessons never pay for any of them.
+   *  Provenance and key rules: `src/lib/map-atlas.ts`. */
+  atlas?: MapAtlasId;
 }
 export interface MapContent {
   markers?: Marker[];
@@ -69,73 +86,113 @@ const US_WIDTH = 960;
 const US_HEIGHT = 600;
 const flip = (coords: [number, number][]): [number, number][] => coords.map(([lat, lng]) => [lng, lat]);
 const hasYear = (e: { year?: number }): e is { year: number } => typeof e.year === "number";
-// A US region is keyed by 2-digit FIPS; pad so "1" and "01" both match. World ids are already the
-// zero-padded 3-digit strings the atlas ships, so they are compared as-is.
-const usKey = (id: string) => id.padStart(2, "0");
 
 interface MapGeo {
   land: FeatureCollection;
   path: ReturnType<typeof geoPath>;
   project: GeoProjection;
+  /** Features of the CHOROPLETH atlas, keyed for the join (see `atlasFeatureKey`). */
   featuresById: Map<string, FeatureCollection["features"][number]>;
+  /** Border meshes drawn over the fills (the county grid + state lines on a us-counties map).
+   *  Meshes instead of per-feature strokes because a counties base would otherwise be ~3,200 SVG
+   *  paths; the merged land + two meshes draw the same picture in three. */
+  borders: { d: string; width: number }[];
   width: number;
   height: number;
 }
 
 // Renders a lesson's map_content (producer markers + trade-route lines + production polygons + a
-// choropleth `regions` layer) on either a Natural Earth WORLD map or, when any region targets the
-// `us-states` atlas, a geoAlbersUsa map of the United States. Click a marker for its detail. When any
-// element carries a `year`, a time-slider appears and the map reveals elements as of the chosen year
-// (an element with no year always shows). Backwards-compatible: a map with no us-states regions and
-// no years renders exactly as before, and never loads the heavy states atlas.
+// choropleth `regions` layer) on either a Natural Earth WORLD map or, when any region targets a US
+// atlas (us-states / us-counties / us-aiannh), a geoAlbersUsa map of the United States. Click a
+// marker for its detail. When any element carries a `year`, a time-slider appears and the map
+// reveals elements as of the chosen year (an element with no year always shows). Backwards-
+// compatible: a map with no US regions and no years renders exactly as before, and never loads the
+// heavy US topojson files.
 export function MapLessonContent({ content }: { content: MapContent }) {
   const [active, setActive] = useState<Marker | null>(null);
 
-  // A lesson is either a world map or a US map; the first us-states region flips the whole map. World
-  // maps never touch the ~2 MB states atlas, keeping their bundle tiny.
-  const isUsMap = useMemo(
-    () => (content.regions ?? []).some((r) => r.atlas === "us-states"),
-    [content.regions],
-  );
+  // A lesson is either a world map or a US map; the first region with a US atlas flips the whole
+  // map (see `usAtlasOf`). World maps never touch the US topojson files, keeping their bundle tiny.
+  const usAtlas = useMemo<UsAtlasId | undefined>(() => usAtlasOf(content.regions), [content.regions]);
+  const isUsMap = usAtlas !== undefined;
 
-  // The US states topojson (~2 MB) is loaded lazily, ONLY for a US map, via dynamic import, so a
-  // world-country lesson never pays for it. Null until it resolves.
+  // The US topojson files are loaded lazily, ONLY for a US map, via dynamic import, so a
+  // world-country lesson never pays for them. The base topology is states (~115 KB) for us-states
+  // and us-aiannh maps, counties (~840 KB) for us-counties. Null until it resolves.
   const [usTopo, setUsTopo] = useState<Topology | null>(null);
+  // The tribal-areas topology (~380 KB, in-repo; provenance in src/lib/map-atlas.ts), only for a
+  // us-aiannh map. It joins the lesson's regions; the states base underneath stays neutral.
+  const [aiannhTopo, setAiannhTopo] = useState<Topology | null>(null);
   useEffect(() => {
-    if (!isUsMap || usTopo) return;
+    if (!usAtlas) return;
     let cancelled = false;
-    void import("us-atlas/states-10m.json").then((m) => {
-      if (!cancelled) setUsTopo(((m as { default?: unknown }).default ?? m) as unknown as Topology);
-    });
+    const asTopo = (m: unknown) => ((m as { default?: unknown }).default ?? m) as unknown as Topology;
+    if (!usTopo) {
+      const load = usAtlas === "us-counties"
+        ? import("us-atlas/counties-10m.json")
+        : import("us-atlas/states-10m.json");
+      void load.then((m) => {
+        if (!cancelled) setUsTopo(asTopo(m));
+      });
+    }
+    if (usAtlas === "us-aiannh" && !aiannhTopo) {
+      void import("@/data/us-aiannh-500k.topo.json").then((m) => {
+        if (!cancelled) setAiannhTopo(asTopo(m));
+      });
+    }
     return () => {
       cancelled = true;
     };
-  }, [isUsMap, usTopo]);
+  }, [usAtlas, usTopo, aiannhTopo]);
 
   // Projection, path, land polygons, and the id -> feature index for the choropleth join. Picks the
-  // atlas from the lesson: world by default, us-states when a us-states region is present. Returns
-  // null while the US atlas is still loading (the world atlas is bundled, so it is never null).
+  // atlas from the lesson: world by default, a geoAlbersUsa US map when a US region is present.
+  // Returns null while a US topology is still loading (the world atlas is bundled, never null).
   const geo = useMemo<MapGeo | null>(() => {
-    if (isUsMap) {
+    if (usAtlas === "us-counties") {
       if (!usTopo) return null;
+      const counties = feature(usTopo, usTopo.objects.counties as GeometryCollection) as unknown as FeatureCollection;
+      const projection = geoAlbersUsa().fitSize([US_WIDTH, US_HEIGHT], counties);
+      const path = geoPath(projection);
+      // The neutral base is the single merged nation outline; the county grid and the heavier
+      // state lines are drawn as two meshes over the fills (see MapGeo.borders).
+      const land = feature(usTopo, usTopo.objects.nation as GeometryCollection) as unknown as FeatureCollection;
+      const borders = [
+        { d: path(mesh(usTopo, usTopo.objects.counties as GeometryCollection, (a, b) => a !== b)) ?? "", width: 0.25 },
+        { d: path(mesh(usTopo, usTopo.objects.states as GeometryCollection, (a, b) => a !== b)) ?? "", width: 0.7 },
+      ].filter((b) => b.d);
+      const featuresById = new Map(counties.features.map((f) => [String(f.id), f] as const));
+      return { land, path, project: projection, featuresById, borders, width: US_WIDTH, height: US_HEIGHT };
+    }
+    if (usAtlas === "us-states" || usAtlas === "us-aiannh") {
+      if (!usTopo || (usAtlas === "us-aiannh" && !aiannhTopo)) return null;
       const land = feature(usTopo, usTopo.objects.states as GeometryCollection) as unknown as FeatureCollection;
       const projection = geoAlbersUsa().fitSize([US_WIDTH, US_HEIGHT], land);
-      const featuresById = new Map(land.features.map((f) => [usKey(String(f.id)), f] as const));
-      return { land, path: geoPath(projection), project: projection, featuresById, width: US_WIDTH, height: US_HEIGHT };
+      // us-states joins against the states themselves; us-aiannh joins against the tribal areas,
+      // keyed by the Census GEOID each feature carries (the states underneath are only context).
+      const joinFeatures =
+        usAtlas === "us-aiannh" && aiannhTopo
+          ? (feature(aiannhTopo, aiannhTopo.objects.aiannh as GeometryCollection) as unknown as FeatureCollection).features
+          : land.features;
+      const featuresById = new Map(
+        joinFeatures.map((f) => {
+          const props = f.properties as { GEOID?: string } | null;
+          const id = usAtlas === "us-aiannh" ? props?.GEOID ?? f.id : f.id;
+          return [atlasFeatureKey(usAtlas, String(id)), f] as const;
+        }),
+      );
+      return { land, path: geoPath(projection), project: projection, featuresById, borders: [], width: US_WIDTH, height: US_HEIGHT };
     }
     const topo = worldData as unknown as Topology;
     const land = feature(topo, topo.objects.countries as GeometryCollection) as FeatureCollection;
     const projection = geoNaturalEarth1().fitSize([WORLD_WIDTH, WORLD_HEIGHT], land);
     // For the choropleth: look up a country feature by its ISO 3166-1 numeric id, to fill by area.
     const featuresById = new Map(land.features.map((f) => [String(f.id), f] as const));
-    return { land, path: geoPath(projection), project: projection, featuresById, width: WORLD_WIDTH, height: WORLD_HEIGHT };
-  }, [isUsMap, usTopo]);
+    return { land, path: geoPath(projection), project: projection, featuresById, borders: [], width: WORLD_WIDTH, height: WORLD_HEIGHT };
+  }, [usAtlas, usTopo, aiannhTopo]);
 
   // Category -> fill colour for the regions choropleth; also drives the legend.
-  const regionColor = useMemo(
-    () => new Map((content.regionLegend ?? []).map((r) => [r.category, r.color] as const)),
-    [content.regionLegend],
-  );
+  const regionColor = useMemo(() => legendColors(content.regionLegend), [content.regionLegend]);
 
   // Distinct event years across every element, sorted. Empty when nothing is dated (no slider then).
   const years = useMemo<number[]>(() => {
@@ -214,17 +271,35 @@ export function MapLessonContent({ content }: { content: MapContent }) {
           <path key={i} d={geo.path(f) ?? undefined} fill="#eef2f7" stroke="#fff" strokeWidth={0.4} />
         ))}
 
-        {/* Choropleth fills (plans/49): whole areas (a country, or a US state) coloured by category,
-            on top of the neutral land. A comparative property is an area, not a point. */}
+        {/* Choropleth fills (plans/49): whole areas (a country, a US state, a county, or a tribal
+            area) coloured by category, on top of the neutral land. A comparative property is an
+            area, not a point. The us-aiannh layer is styled apart from the state/county ladder (its
+            own dark outline over the neutral state base) because a tribal nation is a separate
+            sovereign, not another rung: its tooltip leads with the area's official Census name, and
+            everything else it says comes from the lesson's own legend and labels. */}
         {(content.regions ?? []).filter(visible).map((r) => {
-          const f = geo.featuresById.get(isUsMap ? usKey(r.featureId) : r.featureId);
+          const f = geo.featuresById.get(atlasFeatureKey(usAtlas ?? "world", r.featureId));
           if (!f) return null;
+          const tribal = usAtlas === "us-aiannh";
+          const censusName = tribal ? (f.properties as { NAMELSAD?: string } | null)?.NAMELSAD : undefined;
           return (
-            <path key={`region-${r.featureId}`} d={geo.path(f) ?? undefined} fill={regionColor.get(r.category) ?? "#c7cdd6"} fillOpacity={0.85} stroke="#fff" strokeWidth={0.5}>
-              <title>{r.label ?? r.category}</title>
+            <path
+              key={`region-${r.featureId}`}
+              d={geo.path(f) ?? undefined}
+              fill={regionFill(regionColor, r.category)}
+              fillOpacity={tribal ? 0.9 : 0.85}
+              stroke={tribal ? "#44403c" : "#fff"}
+              strokeWidth={tribal ? 0.8 : 0.5}
+            >
+              <title>{tribal ? aiannhTitle(censusName, r.label ?? r.category) : r.label ?? r.category}</title>
             </path>
           );
         })}
+
+        {/* Border meshes over the fills (us-counties: the county grid + heavier state lines). */}
+        {geo.borders.map((b, i) => (
+          <path key={`borders-${i}`} d={b.d} fill="none" stroke="#fff" strokeWidth={b.width} />
+        ))}
 
         {(content.polygons ?? []).filter(visible).map((p) => {
           const poly: Polygon = { type: "Polygon", coordinates: [flip(p.coords)] };
@@ -260,7 +335,7 @@ export function MapLessonContent({ content }: { content: MapContent }) {
         })}
       </svg>
       ) : (
-        // US atlas still loading (world atlas is bundled, so this only shows for a us-states map).
+        // US topology still loading (the world atlas is bundled, so this only shows for a US map).
         <div
           className="flex aspect-8/5 w-full items-center justify-center rounded-lg bg-slate-50 text-sm text-neutral-500"
           role="status"
