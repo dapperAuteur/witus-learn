@@ -5,6 +5,10 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- ✅ **Library PDF download** (\`feat/library-pdf-download\`, migration **0052**): each owner-library
+  ebook is downloadable as its typeset PDF from /admin/library (synced alongside the markdown by
+  scripts/sync-library.mjs from the sibling <name>.pdf, owner-only, attachment + no-store). Port of
+  witus.online's 2026-08-06 implementation.
 - ✅ **School gradebook roll-up + roster CRUD** (\`feat/school-rollup-and-roster-crud\`, plans/50
   Phase 3's safe half): /admin/gradebook (one row per learner across the school, CSV export,
   brand_admin+), and the cohort roster's pending-invite list with Resend (same token, nothing
@@ -546,11 +550,16 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
 - ✅ **Growing Belts latitude bands**: starts with 3 commodities, toggle the rest on/off (show-all /
   reset-to-3), and overlapping bands **blend** (mix-blend multiply) with a key explaining the mixed
   colors. (\`GrowingBeltsMap\`.)
-- ⚪ **Gated specialization credentials**: a *real* credential (not just a completion badge): earned by
-  finishing **shared core + one medium course + one subject course**, then surfaced on the learner
-  profile in-app. Builds on the existing certificates system + CYOA branching; generalizes to any
-  course family. First consumer is the **Documentarian program** (see Content). Plan:
-  \`plans/future/12-documentarian-program.md\`.
+- ✅ **Gated specialization credentials** (\`feat/specialization-credentials\`): a *real* credential
+  earned by finishing **shared core + one medium course + one subject course**, surfaced on the
+  learner dashboard (earned + in-progress with the remaining courses) and, earned-only, on the
+  /family child report. Definitions are committed typed course-slug triples in
+  \`src/lib/specializations.ts\` (launch triples use the shipped catalog; plan 12's own courses get
+  ADDED triples when built, never silent rewrites); award/progress is computed at read time from
+  course_completions (no new table, NO migration), tenant-scoped in getSpecializations() and pinned
+  by tests/specializations.test.ts. Each earned leg links to its existing /verify/[token] course
+  credential; the specialization mints no token. UI copy states it is an internal platform record,
+  not an external certification. Plan: \`plans/future/12-documentarian-program.md\`.
 - ✅ **My Field Log** (\`feat/field-log-schema\`): a per-user documentation-project workspace for the
   Documentarian program: projects with story **legs** (sites/nodes of a chain, e.g. cocoa farm → factory
   → corporate office), a **link-only capture log** + **consent ledger**, **crews** (co-owned projects),
