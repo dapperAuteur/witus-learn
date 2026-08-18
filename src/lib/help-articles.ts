@@ -575,7 +575,7 @@ See **user-task 42** in the repo for prod details.`,
     slug: "api-keys-and-embedding",
     title: "Embed your courses in another app (API keys)",
     category: "Operator",
-    keywords: ["api", "api key", "embed", "wanderlearn", "integration", "external", "bearer", "token"],
+    keywords: ["api", "api key", "embed", "wanderlearn", "integration", "external", "bearer", "token", "iframe", "snippet", "widget", "wordpress"],
     body: `# Embed your courses in another app
 
 If another app's backend wants to read your school's **published** courses (title, description,
@@ -600,11 +600,20 @@ Send it as \`Authorization: Bearer <key>\` on every request.
 If a key is compromised or no longer needed, click **Revoke** next to it on **/admin/api-keys**.
 Revoking is immediate and permanent (create a new key if you need to reconnect later).
 
-## A lighter option: the iframe embed
-For a quick visual embed with no backend integration, another app can point an \`<iframe>\` at
-\`https://learn.witus.online/embed/course/<courseId>\`, a chromeless page listing the course's
-published lessons with a "Continue on Learn.WitUS" link out to the full course. No API key needed;
-it only ever shows published, public content.`,
+## The lighter option: paste-anywhere embeds (no key at all)
+For a visual embed with no backend integration, use an \`<iframe>\`. **Never put an API key in an
+iframe snippet or any client-side HTML**: keys are server-side secrets, and these embeds don't
+need one. They only ever show published, public content.
+
+- **Course card (recommended, any site).** Open your course under **/teach** and click **Embed**
+  to get a ready-made copy-paste snippet pointing at \`/embed/card/<courseId>\` on your school's
+  own domain: a small branded card (title, description, price) linking back to your course page.
+  Paste it into any website (WordPress, a co-op site, a blog). A course that isn't vetted yet
+  shows its public "Coming soon" face; anything unpublished or non-public shows nothing. Clicks
+  from the card back to your course are counted in that course's **Link usage** panel.
+- **Course view (for partner apps).** \`/embed/course/<courseId>\` is a chromeless page listing
+  the course's published lessons with a "Continue" link out to the full course, the visual
+  companion to the API above.`,
   },
 ];
 
