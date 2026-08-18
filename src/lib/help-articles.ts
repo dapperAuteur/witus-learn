@@ -652,7 +652,7 @@ need one. They only ever show published, public content.
     slug: "admin-home-and-brand-settings",
     title: "Your admin home and brand settings",
     category: "Operator",
-    keywords: ["admin", "dashboard", "overview", "settings", "flags", "accent", "branding", "paths", "leads", "coming soon"],
+    keywords: ["admin", "dashboard", "overview", "settings", "flags", "accent", "branding", "paths", "leads", "coming soon", "logo", "favicon", "wordmark", "social card", "theme color"],
     body: `# Your admin home and brand settings
 
 ## At a glance (/admin)
@@ -670,6 +670,20 @@ everything.
 Brand admins can change the school themselves, no code change and no support ticket:
 
 - **Name, tagline, accent colors**, with a live preview. Changes apply on the next page load.
+- **Identity and images**: everything a school needs to look like itself, each with a preview,
+  and each optional (leave a field empty to fall back to the platform default):
+  - **Wordmark**: the text in the site header, when you want it different from the full name.
+  - **Short name**: the label under the app icon when a learner installs your school as an app.
+  - **Theme color**: tints the browser chrome and the installed-app splash screen.
+  - **Logo URL**: a square image (512x512 or larger) used as the installed-app icon and in the
+    structured data search engines read.
+  - **Favicon URL**: the small browser-tab icon.
+  - **Default social card URL**: the 1200x630 image shown when your home page is shared on
+    social platforms. If you leave it empty, the platform generates a branded card for you.
+  - Image fields take **https URLs only**; upload the file to your media host (for example
+    Cloudinary) first, then paste the URL and check the preview that appears under the field.
+  - The **Saved brand** card at the top of the page shows how the saved logo, wordmark,
+    tagline, and accent render together right now.
 - **Gamification dose**: off, light (streaks and mastery), or full (adds XP, levels, badges).
 - **AI tutor**: turn the tutor and sentence coach off for this brand.
 - **Age gate**: require an age check before entering the site.
