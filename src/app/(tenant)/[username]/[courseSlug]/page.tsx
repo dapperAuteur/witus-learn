@@ -22,6 +22,9 @@ import {
 import { listGlossary, listSources } from "@/db/queries/pedagogy";
 import { getPathsForCourse } from "@/db/queries/paths";
 import { listBundlesForCourse } from "@/db/queries/bundles";
+import { listActivePromotions } from "@/db/queries/promotions";
+import { bundlePriceView, coursePriceView, formatPrice } from "@/lib/sale-pricing";
+import { PriceTag } from "@/components/price-tag";
 import { listLiveForCourse } from "@/db/queries/live";
 import { LivePlayer } from "@/components/live-player";
 import { GlossaryList } from "@/components/glossary-list";
@@ -119,12 +122,16 @@ export default async function CourseBySlugPage({ params }: Params) {
     return <AgeGate brand={brandName(view.tenant)} hasSafety={Boolean(view.tenant.legal.safetyUrl)} />;
   }
 
-  const [glossary, sources, prerequisites, courseBundles] = await Promise.all([
+  const [glossary, sources, prerequisites, courseBundles, promotions] = await Promise.all([
     listGlossary(course.id),
     listSources(course.id),
     listPrerequisites(course.id),
     listBundlesForCourse(course.tenantId, course.id),
+    // Codeless promotions live for THIS tenant. The same resolution runs again server-side in
+    // /api/courses/[id]/enroll, so what the page shows is what Stripe is asked to charge.
+    listActivePromotions(course.tenantId),
   ]);
+  const priceView = coursePriceView(course, course.tenantId, promotions);
   const unmetPrereqIds = view.activeLearnerId
     ? new Set((await getUnmetRequired(view.activeLearnerId, course.id)).map((c) => c.id))
     : new Set<string>();
@@ -348,8 +355,8 @@ export default async function CourseBySlugPage({ params }: Params) {
                   {b.title}
                 </Link>
                 <span className="text-neutral-500">
-                  {" "}
-                  · {Number(b.price) > 0 ? `$${b.price}` : "Free"}
+                  {" · "}
+                  <PriceTag view={bundlePriceView(b, course.tenantId, promotions)} />
                   {b.priceType === "subscription" ? " subscription" : ""}
                 </span>
               </li>
@@ -440,16 +447,24 @@ export default async function CourseBySlugPage({ params }: Params) {
           recorded: no progress, no quiz scores, no certificate.
         </p>
       ) : view.session && course.isPublished ? (
-        <CourseActions
-          courseId={course.id}
-          enrolled={view.isEnrolled}
-          isFree={isFreeCourse(course)}
-          priceType={course.priceType as "free" | "one_time" | "subscription"}
-          priceLabel={isFreeCourse(course) ? "Free" : `$${course.price}`}
-          allComplete={
-            lessons.length > 0 && lessons.every((l) => completedLessonIds.has(l.id))
-          }
-        />
+        <>
+          {/* A live sale is stated ABOVE the button as well as inside it, so the offer (and what it
+              was before) is readable without hovering or reading the CTA's label. */}
+          {priceView.discounted && !view.isEnrolled ? (
+            <p className="mt-6 text-lg">
+              <PriceTag view={priceView} showName />
+            </p>
+          ) : null}
+          <CourseActions
+            courseId={course.id}
+            enrolled={view.isEnrolled}
+            // A promotion that takes the price to zero enrolls free: no card, no Stripe session.
+            isFree={priceView.isFree}
+            priceType={course.priceType as "free" | "one_time" | "subscription"}
+            priceLabel={priceView.isFree ? "Free" : formatPrice(priceView.effectivePrice)}
+            allComplete={lessons.length > 0 && lessons.every((l) => completedLessonIds.has(l.id))}
+          />
+        </>
       ) : !view.session && course.isPublished ? (
         <p className="mt-6 text-sm">
           <Link href="/login" className="underline">

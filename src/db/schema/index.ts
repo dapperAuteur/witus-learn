@@ -22,6 +22,7 @@ export * from "./research-checks";
 export * from "./citation-checks";
 export * from "./ebook-approvals";
 export * from "./bundles";
+export * from "./promotions";
 export * from "./auditors";
 export * from "./library";
 export * from "./media-assets";

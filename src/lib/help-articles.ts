@@ -521,10 +521,64 @@ You can also save the draft as a campaign draft.
 Create brand-wide percentage discount codes (mirrored to a Stripe coupon when Stripe is
 configured), list active codes, and remove them.
 
+## Sales and promotions
+Discounts that need **no code**. See the **Sales and promotions** help article.
+
 ## Email campaigns
 Compose and save campaign drafts with a live audience count (leads or enrolled learners).
 **Sending is intentionally disabled** until the audience, consent, and unsubscribe rules are
 decided; until then, send a saved draft through your own email tool.`,
+  },
+  {
+    slug: "sales-and-promotions",
+    title: "Sales and promotions (no promo code needed)",
+    category: "Growth",
+    keywords: [
+      "sale",
+      "sales",
+      "promotion",
+      "discount",
+      "price",
+      "free course",
+      "percent off",
+      "bundle discount",
+      "codeless",
+      "strike through",
+    ],
+    body: `# Sales and promotions (/admin/marketing)
+
+A **sale** is a price cut with **no code to type**. Everyone who opens the course or bundle
+page sees the new price, with the old one struck through beside it. A **promo code** is the
+other half: a code you give to one person or one list. Both work at the same time, and a code
+still discounts a course that is already on sale.
+
+## Starting a sale
+In **Sales and promotions**, fill in:
+
+- **Name**, what you would call it out loud ("Back to school"). Learners see it beside the price.
+- **Applies to**, one course, one bundle, or everything in your school.
+- **Discount**, percent off, dollars off, or **Free**.
+- **Starts**, leave blank to start immediately.
+- **Ends**, **leave blank to run indefinitely** and stop it yourself with **End now**.
+
+## What learners see
+The list price appears struck through in red, and the sale price beside it in green (or
+**Free**). Screen readers announce it as "was $19, now $9", so nobody hears the old price as
+the real one. Checkout charges the sale price, and a sale that reaches **Free** enrolls the
+learner straight away with no card and no payment step.
+
+## Rules worth knowing
+- **A sale on one course beats a school-wide sale** on that course, even if the school-wide
+  one is bigger. Your specific decision about that course wins.
+- Otherwise, when two sales overlap, the **bigger discount** applies.
+- A sale **never raises a price** and **never charges for an already-free course**.
+- Sales do not apply to **subscription** pricing yet.
+- Your **list price is never overwritten**. Ending a sale puts the original price straight
+  back, because it was never changed in the first place.
+
+## Ending one
+**End now** stops it immediately and prices return to normal. The sale stays in the list,
+marked ended, so you can still see what you offered and when.`,
   },
   {
     slug: "streaming-and-multistream",

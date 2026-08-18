@@ -379,6 +379,13 @@
       "when": 1787049335430,
       "tag": "0053_unknown_absorbing_man",
       "breakpoints": true
+    },
+    {
+      "idx": 54,
+      "version": "7",
+      "when": 1787086392549,
+      "tag": "0054_needy_marauders",
+      "breakpoints": true
     }
   ]
 }

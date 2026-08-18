@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { requireTenant } from "@/lib/tenant";
 import { getInstructorProfile } from "@/db/queries/authoring";
+import { listActivePromotions } from "@/db/queries/promotions";
+import { coursePriceView } from "@/lib/sale-pricing";
 import { CourseCard } from "@/components/course-card";
 
 type Params = { params: Promise<{ username: string }> };
@@ -23,6 +25,8 @@ export default async function InstructorProfilePage({ params }: Params) {
   if (!data) notFound();
 
   const { profile, courses } = data;
+  // Same tenant id the profile was read with, so a promotion can only ever come from this brand.
+  const promotions = await listActivePromotions(tenant.id);
   return (
     <main className="mx-auto max-w-5xl px-4 py-10">
       <Link href="/instructors" className="text-sm text-neutral-500 hover:underline">
@@ -63,7 +67,7 @@ export default async function InstructorProfilePage({ params }: Params) {
       <h2 className="mt-8 mb-3 text-lg font-semibold">Courses</h2>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {courses.map((c) => (
-          <CourseCard key={c.id} course={c} />
+          <CourseCard key={c.id} course={c} price={coursePriceView(c, tenant.id, promotions)} />
         ))}
       </div>
     </main>
