@@ -548,6 +548,23 @@ whenever something is waiting, and any unvetted course carries an owner-only CTA
 the course manager, with a one-click **Mark this course vetted** button, so review happens where
 the course is rather than after a walk to another surface.
 
+## Review boards collapse by course
+
+`/admin/citations`, `/audit/citations` and `/admin/research` group by course and start collapsed,
+each summary line carrying its own counts (`12 sources, 3 unverified`, `5 checks, 3 open`), so a
+reviewer picks the course with outstanding work without scrolling past the finished ones. Nothing
+auto-expands on a multi-course board: with most citations still unverified, "open the groups with
+work" would expand nearly everything and undo the point. The per-course "show only unchecked"
+filter lives inside the panel it filters, so collapsing cannot defeat it.
+
+## Civics courses link back to their index
+
+A `state-civics-<code>` course links back to `/civics`, the map that is actually its index; any
+other Civics-category course links to the Civics slice of the catalog; anything else gets no extra
+link ([src/lib/civics-nav.ts](src/lib/civics-nav.ts)). Course pages also carry an **"Also available
+in a bundle"** aside with a *Get the bundle* CTA that lands on the bundle page rather than charging
+in place, plus linked paths and series.
+
 ## Specialization credentials
 
 Named three-course tracks (shared research core + craft medium + subject, per the Documentarian

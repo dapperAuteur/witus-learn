@@ -2,6 +2,11 @@
 
 import { useMemo, useState } from "react";
 import { CITATION_STATUS_LABEL, type Citation, type CitationStatus } from "@/lib/citations";
+import {
+  citationGroupSummary,
+  countReviewGroup,
+  reviewGroupStartsOpen,
+} from "@/lib/review-lists";
 import { ReviewContext } from "@/components/review-context";
 
 // The citation verification list, shared by the owner board (/admin/citations) and the auditor board
@@ -11,6 +16,10 @@ import { ReviewContext } from "@/components/review-context";
 // The interaction is deliberately dense rather than pretty. There are 675 citations staged today and
 // several thousand to come, so the job is throughput: the link is one click, the status is one
 // select, and the note is one box. Anything more elaborate makes a 200-citation course unfinishable.
+//
+// Each course is a COLLAPSED <details> for the same reason: expanded, the board is one scroll of
+// several hundred cards and picking a course to work on means paging past every other course. The
+// summary line carries the counts so collapsing hides the cards, not the queue.
 
 export interface CitationRow extends Citation {
   status: CitationStatus;
@@ -154,47 +163,72 @@ export function CitationList({
   courseSlug,
   courseTitle,
   rows,
+  groupCount = 1,
 }: {
   courseSlug: string;
   courseTitle: string;
   rows: CitationRow[];
+  /** How many courses are on this board, so a one-course board does not open collapsed and empty. */
+  groupCount?: number;
 }) {
   const [onlyOpen, setOnlyOpen] = useState(true);
   const shown = useMemo(
     () => (onlyOpen ? rows.filter((r) => r.status === "unverified") : rows),
     [onlyOpen, rows],
   );
-  const done = rows.length - rows.filter((r) => r.status === "unverified").length;
+  const counts = useMemo(
+    () => countReviewGroup(rows, (r) => r.status === "unverified"),
+    [rows],
+  );
+  // The <details> is controlled rather than left to the browser: this component re-renders whenever
+  // the "show only unchecked" box is ticked, and an uncontrolled panel that React later patches can
+  // snap shut mid-review. onToggle keeps the state and the element in step in both directions.
+  const [open, setOpen] = useState(() => reviewGroupStartsOpen(counts, groupCount));
+  const done = counts.total - counts.open;
   const toggleId = `only-open-${courseSlug}`;
 
   return (
-    <section className="mt-10">
-      <h2 className="text-lg font-semibold tracking-tight">{courseTitle}</h2>
-      <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
-        {done} of {rows.length} checked.
-      </p>
-      <div className="mt-2 flex items-center gap-2">
-        <input
-          id={toggleId}
-          type="checkbox"
-          checked={onlyOpen}
-          onChange={(e) => setOnlyOpen(e.target.checked)}
-          className="h-4 w-4"
-        />
-        <label htmlFor={toggleId} className="text-sm">
-          Show only unchecked
-        </label>
-      </div>
-      <ul className="mt-4 space-y-3">
-        {shown.map((r) => (
-          <CitationItem key={r.key} row={r} />
-        ))}
-      </ul>
-      {shown.length === 0 ? (
-        <p className="mt-3 text-sm text-neutral-600 dark:text-neutral-400">
-          Nothing left unchecked in this course.
+    <details
+      open={open}
+      onToggle={(e) => setOpen(e.currentTarget.open)}
+      className="group mt-4 rounded-lg border border-neutral-200 dark:border-neutral-800"
+    >
+      <summary className="flex min-h-11 cursor-pointer list-none flex-wrap items-center gap-x-2 gap-y-1 px-4 py-2 focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-12">
+        <span aria-hidden="true" className="text-xs transition-transform group-open:rotate-90">
+          ▶
+        </span>
+        <h2 className="text-base font-semibold tracking-tight sm:text-lg">{courseTitle}</h2>
+        <span className="text-sm text-neutral-600 dark:text-neutral-400">
+          {citationGroupSummary(counts)}
+        </span>
+      </summary>
+      <div className="px-4 pb-4">
+        <p className="text-sm text-neutral-600 dark:text-neutral-400">
+          {done} of {counts.total} checked.
         </p>
-      ) : null}
-    </section>
+        <div className="mt-2 flex items-center gap-2">
+          <input
+            id={toggleId}
+            type="checkbox"
+            checked={onlyOpen}
+            onChange={(e) => setOnlyOpen(e.target.checked)}
+            className="h-4 w-4"
+          />
+          <label htmlFor={toggleId} className="text-sm">
+            Show only unchecked
+          </label>
+        </div>
+        <ul className="mt-4 space-y-3">
+          {shown.map((r) => (
+            <CitationItem key={r.key} row={r} />
+          ))}
+        </ul>
+        {shown.length === 0 ? (
+          <p className="mt-3 text-sm text-neutral-600 dark:text-neutral-400">
+            Nothing left unchecked in this course.
+          </p>
+        ) : null}
+      </div>
+    </details>
   );
 }

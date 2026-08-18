@@ -5,6 +5,11 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- ✅ **BAM's 2026-08-18 in-app feedback, first wave**: the citation and source-check boards
+  collapse by course with open counts on every summary line (a phone-navigable board of several
+  hundred citations); state-civics courses link back to /civics (other Civics courses to the
+  catalog slice); and the course page's bundle aside gained a Get-the-bundle CTA plus a line
+  saying what the bundle enrolls you in. Codeless promotions (the fourth note) are in progress.
 - ✅ **Vetting is reachable and actionable** (\`fix/vetting-queue-button\` merged +
   \`feat/unvetted-vet-cta\`): the /admin published-courses tile links to /teach?status=unvetted
   when courses await review, the teach catalog preselects that filter from the URL, "Courses to
