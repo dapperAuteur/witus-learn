@@ -1,4 +1,4 @@
-// Offline-first store for in-app lesson recordings. Captured audio is written to IndexedDB
+// Offline-first store for in-app lesson recordings. Captured audio/video is written to IndexedDB
 // immediately (survives tab close / connection loss) and drained to Cloudinary when back online.
 // One pending recording per lesson, keyed by lessonId. A recording is one or more ordered PARTS
 // (a long take is split into <cap parts at record time). No external dependency — raw IndexedDB.
@@ -13,6 +13,8 @@ export interface PendingRecording {
   /** Ordered parts, each under the upload cap. A normal take is a single part. */
   parts: Blob[];
   mime: string;
+  /** "audio" | "video". Absent on takes saved before video existed (those are audio). */
+  mode?: "audio" | "video";
   durationSeconds: number;
   createdAt: number;
 }
