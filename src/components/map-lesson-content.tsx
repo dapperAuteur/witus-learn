@@ -67,6 +67,10 @@ interface RegionLayer {
   atlas?: MapAtlasId;
 }
 export interface MapContent {
+  /** Explicit projection/base atlas for the whole lesson map. Needed when a map has MARKERS but
+   *  no regions (nothing to infer from): the Green Book cities map sets "us-states" so US cities
+   *  render on the US projection instead of a dot cluster on the world map. */
+  atlas?: MapAtlasId;
   markers?: Marker[];
   lines?: Shape[];
   polygons?: Shape[];
@@ -113,7 +117,10 @@ export function MapLessonContent({ content }: { content: MapContent }) {
 
   // A lesson is either a world map or a US map; the first region with a US atlas flips the whole
   // map (see `usAtlasOf`). World maps never touch the US topojson files, keeping their bundle tiny.
-  const usAtlas = useMemo<UsAtlasId | undefined>(() => usAtlasOf(content.regions), [content.regions]);
+  const usAtlas = useMemo<UsAtlasId | undefined>(
+    () => usAtlasOf(content.regions, content.atlas),
+    [content.regions, content.atlas],
+  );
   const isUsMap = usAtlas !== undefined;
 
   // The US topojson files are loaded lazily, ONLY for a US map, via dynamic import, so a
@@ -268,7 +275,7 @@ export function MapLessonContent({ content }: { content: MapContent }) {
       {geo ? (
       <svg viewBox={`0 0 ${geo.width} ${geo.height}`} className={`w-full rounded-lg ${isUsMap ? "bg-slate-50" : "bg-sky-50"}`} role="img" aria-label={isUsMap ? "Lesson map of the United States" : "Lesson map"}>
         {geo.land.features.map((f, i) => (
-          <path key={i} d={geo.path(f) ?? undefined} fill="#eef2f7" stroke="#fff" strokeWidth={0.4} />
+          <path key={i} d={geo.path(f) ?? undefined} fill="#e7ecf3" stroke="#94a3b8" strokeWidth={0.5} />
         ))}
 
         {/* Choropleth fills (plans/49): whole areas (a country, a US state, a county, or a tribal
