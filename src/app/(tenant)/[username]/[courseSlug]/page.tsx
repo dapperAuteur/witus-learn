@@ -357,17 +357,32 @@ export default async function CourseBySlugPage({ params }: Params) {
           className="mt-4 rounded-lg border border-neutral-200 bg-neutral-50 p-4 text-sm dark:border-neutral-800 dark:bg-neutral-900"
         >
           <p className="font-medium">Also available in a bundle</p>
-          <ul className="mt-2 space-y-1">
+          <p className="mt-1 text-xs text-neutral-500">
+            Buying the bundle enrolls you in this course and everything else in it.
+          </p>
+          <ul className="mt-2 space-y-2">
             {courseBundles.map((b) => (
-              <li key={b.slug}>
-                <Link href={`/bundles/${b.slug}`} className="underline" style={{ color: "var(--accent)" }}>
-                  {b.title}
-                </Link>
-                <span className="text-neutral-500">
-                  {" "}
-                  · {Number(b.price) > 0 ? `$${b.price}` : "Free"}
-                  {b.priceType === "subscription" ? " subscription" : ""}
+              <li key={b.slug} className="flex flex-wrap items-center justify-between gap-2">
+                <span>
+                  <Link href={`/bundles/${b.slug}`} className="underline" style={{ color: "var(--accent)" }}>
+                    {b.title}
+                  </Link>
+                  <span className="text-neutral-500">
+                    {" "}
+                    · {Number(b.price) > 0 ? `$${b.price}` : "Free"}
+                    {b.priceType === "subscription" ? " subscription" : ""}
+                  </span>
                 </span>
+                {/* The CTA lands on the bundle page, where the real purchase happens: a button
+                    that charged straight from here would buy something the learner has not seen
+                    the contents of. */}
+                <Link
+                  href={`/bundles/${b.slug}`}
+                  className="inline-flex min-h-11 items-center justify-center rounded-md px-3 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-12"
+                  style={{ backgroundColor: "var(--accent)", color: "var(--accent-fg, #fff)" }}
+                >
+                  {Number(b.price) > 0 ? "Get the bundle" : "Open the bundle"}
+                </Link>
               </li>
             ))}
           </ul>
