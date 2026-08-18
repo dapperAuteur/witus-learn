@@ -59,34 +59,46 @@ Edit a lesson, make your changes, and click **Save lesson**.`,
   },
   {
     slug: "record-audio-in-app",
-    title: "Record lesson audio in the app",
+    title: "Record lesson audio or video in the app",
     category: "Recording",
-    keywords: ["record", "microphone", "audio", "offline", "upload", "cloudinary"],
-    body: `# Record lesson audio in the app
+    keywords: ["record", "microphone", "camera", "audio", "video", "offline", "upload", "cloudinary"],
+    body: `# Record lesson audio or video in the app
 
-Open a course → **Recording script** → the recording checklist. Each lesson has a **🎙 Record audio**
-button.
+Open a course → **Recording script** → the recording checklist. Each lesson has a **🎙 Record
+audio** and a **🎥 Record video** button; both modes are first-class, pick per lesson (a lesson
+that's mostly a table or a map is often better as audio; a talking-head explainer suits video).
 
 - Recording is **offline-first**: your take is saved on your device immediately and uploads when
-  you're back online, nothing is lost if you close the tab or drop your connection.
+  you're back online, nothing is lost if you close the tab or drop your connection. Nothing is
+  **published** automatically either; uploading only attaches the file to the lesson.
 - **Pause/Resume**, hit **⏸ Pause** to stop for a moment and **▶ Resume** to keep the same take
   going. Record a whole course across several sittings; paused time isn't counted in the length.
 - Status shows **recording → saved locally → uploading → uploaded ✓** (or *retry* on failure).
-- A take **auto-stops / auto-splits** just under the 100 MB limit into ordered parts.
-- A successful upload attaches the audio to the lesson and ticks it **recorded**.
+- A take **auto-stops / auto-splits** just under the 100 MB limit into ordered parts. Video fills
+  that much faster than audio (roughly 4 to 6 minutes of 720p per part), which is fine: a long
+  take just becomes more parts, played back in order.
+- A successful upload attaches the audio/video to the lesson (setting its lesson type to match)
+  and ticks it **recorded**.
 - **⬇ Download** saves the take to your device as a backup, handy if an upload keeps failing.
 - Uploaded files get a **readable name** in Cloudinary (\`witus/recordings/<course>/<lesson>\`), so
   you can find them later instead of hunting through random ids.
 
+**Video specifics.** Video records at 720p from the front camera with a live self-view. The
+preview is **mirrored so you look natural; the saved file is not mirrored**. Keep the preview (or
+the teleprompter text) as close to the lens as you can so your eyes stay on camera. While a video
+take records, the app asks the phone to keep the screen awake.
+
 Uploads need Cloudinary configured and an HTTPS URL (the deployed site). If an upload fails, the red
 error now shows **Cloudinary's exact reason**, usually the upload preset isn't set to *Unsigned*
-(see the operator runbook / user-task 43).`,
+(see the operator runbook / user-task 43). Video goes through the **same** upload preset and the
+same 100 MB per-asset plan cap as audio; if the preset is restricted to certain formats, the error
+will say so.`,
   },
   {
     slug: "recording-scripts-teleprompter",
     title: "Recording scripts & teleprompter",
     category: "Recording",
-    keywords: ["script", "teleprompter", "read", "narration", "mark recorded"],
+    keywords: ["script", "teleprompter", "read", "narration", "video", "camera", "mark recorded"],
     body: `# Recording scripts & teleprompter
 
 The **Recording script** page turns your lessons into a clean read-aloud script (regenerated from
@@ -95,8 +107,15 @@ text-size, and mirror controls. Tick lessons off as you record them, progress is
 sittings.
 
 **Record while you read:** the teleprompter has a built-in recorder, pick the lesson from the
-**Recording to** dropdown in its control bar and hit **🎙 Record**, so you capture audio without
-leaving the full-screen script. Space = play/pause the scroll, ↑/↓ = speed, Esc = exit.`,
+**Recording to** dropdown in its control bar and hit **🎙 Record audio** or **🎥 Record video**, so
+you capture a take without leaving the full-screen script. Space = play/pause the scroll,
+↑/↓ = speed, Esc = exit.
+
+**Video in the teleprompter:** choosing 🎥 puts a small **mirrored self-view at the top** of the
+screen, right where a phone's front camera sits. Prop the phone in portrait with the lens just
+above the scrolling words: reading the script then naturally keeps your eyes near the lens, which
+is the whole point of a teleprompter. The self-view is mirrored for you only, the recorded video
+isn't flipped.`,
   },
   {
     slug: "set-pricing",

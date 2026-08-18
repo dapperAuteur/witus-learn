@@ -7,30 +7,62 @@ import {
   savePending,
   type PendingRecording,
 } from "@/lib/recording-store";
+import {
+  downloadExtension,
+  fallbackMime,
+  formatSeconds,
+  mediaConstraints,
+  modeFromMime,
+  pickRecordingMime,
+  type RecordingMode,
+} from "@/lib/recording-media";
 import { buildPublicId, formatBytes, MAX_UPLOAD_BYTES, uploadToCloudinary } from "@/lib/cloudinary-upload";
 
 // When the CURRENT part nears the cap, finalize it and roll into a new part (a hair under the
 // cap so every part uploads). A long take becomes several ordered parts, played back seamlessly.
+// Video hits this far sooner than audio (a 720p take runs roughly 15-25 MB per minute), so a
+// long video lesson simply becomes more parts; the pipeline is the same.
 const PART_ROLLOVER_BYTES = MAX_UPLOAD_BYTES - 4 * 1024 * 1024;
 
-// In-app, offline-first, per-lesson audio recorder.
+// In-app, offline-first, per-lesson recorder with two first-class modes, audio and video.
 //  capture (MediaRecorder) → persist to IndexedDB immediately → upload to Cloudinary when online
-//  → attach to the lesson (contentUrl [+ mediaParts] + lessonType=audio + mark recorded).
+//  → attach to the lesson (contentUrl [+ mediaParts] + lessonType=audio|video + mark recorded).
 // A recording over the plan's upload cap is split into ordered <cap parts AT RECORD TIME (the
 // MediaRecorder is rotated), so no take is ever cut off. Nothing is lost if the tab closes or
-// you're offline: parts wait in IndexedDB and drain when connectivity returns.
+// you're offline: parts wait in IndexedDB and drain when connectivity returns. Nothing here
+// publishes anything: uploading attaches the file to the (still unpublished-as-it-was) lesson.
+// Video specifics: 720p front camera (plan 60 decision), a live self-view that is MIRRORED FOR
+// PREVIEW ONLY (the recorded file is not mirrored), and a best-effort screen wake lock so a
+// propped-up phone doesn't sleep mid-take.
 type Status = "idle" | "recording" | "local" | "offline" | "uploading" | "uploaded" | "error";
 
-function pickMime(): string {
-  const candidates = ["audio/webm;codecs=opus", "audio/webm", "audio/mp4", "audio/ogg"];
-  if (typeof MediaRecorder === "undefined") return "";
-  return candidates.find((m) => MediaRecorder.isTypeSupported(m)) ?? "";
+/** Best-effort screen wake lock (mobile: a propped phone dims and sleeps mid-take without it). */
+async function requestWakeLock(): Promise<WakeLockSentinel | null> {
+  try {
+    if (typeof navigator !== "undefined" && "wakeLock" in navigator) {
+      return await navigator.wakeLock.request("screen");
+    }
+  } catch {
+    /* not supported / denied (e.g. battery saver) — recording still works */
+  }
+  return null;
 }
 
-function fmt(seconds: number): string {
-  const s = Math.floor(seconds % 60);
-  const m = Math.floor(seconds / 60);
-  return `${m}:${s.toString().padStart(2, "0")}`;
+/** Live camera self-view. Mirrored so the speaker looks natural; the recording itself is NOT
+ *  mirrored (the raw stream goes to MediaRecorder, this transform is preview-only). */
+export function CameraPreview({ stream, className }: { stream: MediaStream; className?: string }) {
+  return (
+    <video
+      ref={(el) => {
+        if (el && el.srcObject !== stream) el.srcObject = stream;
+      }}
+      autoPlay
+      muted
+      playsInline
+      aria-label="Live camera preview (mirrored)"
+      className={`-scale-x-100 bg-black ${className ?? ""}`}
+    />
+  );
 }
 
 export function LessonRecorder({
@@ -39,6 +71,7 @@ export function LessonRecorder({
   onUploaded,
   courseLabel,
   lessonLabel,
+  onPreviewStream,
 }: {
   courseId: string;
   lessonId: string;
@@ -46,14 +79,19 @@ export function LessonRecorder({
   /** Course + lesson names → a readable Cloudinary public_id (else a random id). */
   courseLabel?: string;
   lessonLabel?: string;
+  /** When provided, the parent renders the camera self-view (gets the live stream while a video
+   *  take records, then null). When absent the recorder renders its own inline preview. */
+  onPreviewStream?: (stream: MediaStream | null) => void;
 }) {
   const [status, setStatus] = useState<Status>("idle");
   const [progress, setProgress] = useState(0);
   const [elapsed, setElapsed] = useState(0);
-  const [paused, setPaused] = useState(false); // recording paused (mic still held, no audio captured)
+  const [paused, setPaused] = useState(false); // recording paused (devices still held, nothing captured)
   const [bytes, setBytes] = useState(0);
   const [parts, setParts] = useState(0); // finalized parts so far (multi-part takes)
   const [error, setError] = useState<string | null>(null);
+  const [mode, setMode] = useState<RecordingMode>("audio");
+  const [previewStream, setPreviewStream] = useState<MediaStream | null>(null);
 
   const recorderRef = useRef<MediaRecorder | null>(null);
   const streamRef = useRef<MediaStream | null>(null);
@@ -66,6 +104,7 @@ export function LessonRecorder({
   const elapsedRef = useRef(0); // ACTIVE seconds recorded (excludes paused gaps)
   const startedAtRef = useRef(0);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const wakeLockRef = useRef<WakeLockSentinel | null>(null);
 
   // Upload each part in order, then attach the lesson (contentUrl mirrors part 1; mediaParts holds
   // the full ordered list when there's more than one). Clears local copy only on success.
@@ -97,13 +136,15 @@ export function LessonRecorder({
           urls.push(url);
         }
 
+        // Takes saved before `mode` existed carry no mode field: infer audio/video from the mime.
+        const lessonType = rec.mode ?? modeFromMime(rec.mime);
         const patch = await fetch(`/api/courses/${courseId}/lessons/${lessonId}`, {
           method: "PATCH",
           headers: { "content-type": "application/json" },
           body: JSON.stringify({
             contentUrl: urls[0],
             mediaParts: urls.length > 1 ? urls.map((url) => ({ url })) : null,
-            lessonType: "audio",
+            lessonType,
             recorded: true,
             durationSeconds: Math.round(rec.durationSeconds) || null,
           }),
@@ -146,6 +187,43 @@ export function LessonRecorder({
     return () => window.removeEventListener("online", onOnline);
   }, [status, lessonId, upload]);
 
+  // Unmount mid-take (e.g. the teleprompter's lesson switch remounts this component via `key`):
+  // finalize instead of leaking a live camera/mic. Marking finishing makes the recorder's onstop
+  // persist what it has and hand the parent back a null preview stream; the pending take then
+  // uploads (or waits in IndexedDB). Refs only — safe under StrictMode's double-invoke.
+  const onPreviewStreamRef = useRef(onPreviewStream);
+  useEffect(() => {
+    onPreviewStreamRef.current = onPreviewStream;
+  }, [onPreviewStream]);
+  useEffect(() => {
+    return () => {
+      if (recorderRef.current && recorderRef.current.state !== "inactive") {
+        finishingRef.current = true;
+        if (recorderRef.current.state === "paused") recorderRef.current.resume();
+        recorderRef.current.stop();
+      }
+      streamRef.current?.getTracks().forEach((t) => t.stop());
+      void wakeLockRef.current?.release().catch(() => {});
+      wakeLockRef.current = null;
+      onPreviewStreamRef.current?.(null);
+    };
+  }, []);
+
+  // The wake lock is dropped when the tab backgrounds; re-acquire it when a video take comes
+  // back into view (the listener mutates only refs, no state).
+  useEffect(() => {
+    if (status !== "recording" || mode !== "video") return;
+    const onVisible = () => {
+      if (document.visibilityState === "visible") {
+        void requestWakeLock().then((wl) => {
+          if (wl) wakeLockRef.current = wl;
+        });
+      }
+    };
+    document.addEventListener("visibilitychange", onVisible);
+    return () => document.removeEventListener("visibilitychange", onVisible);
+  }, [status, mode]);
+
   function stopTimer() {
     if (timerRef.current) {
       clearInterval(timerRef.current);
@@ -153,12 +231,18 @@ export function LessonRecorder({
     }
   }
 
-  async function startRecording() {
+  function clearPreview() {
+    setPreviewStream(null);
+    onPreviewStream?.(null);
+  }
+
+  async function startRecording(nextMode: RecordingMode) {
     setError(null);
+    setMode(nextMode);
     try {
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const stream = await navigator.mediaDevices.getUserMedia(mediaConstraints(nextMode));
       streamRef.current = stream;
-      const mime = pickMime();
+      const mime = pickRecordingMime(nextMode);
       partsRef.current = [];
       chunksRef.current = [];
       partBytesRef.current = 0;
@@ -169,6 +253,11 @@ export function LessonRecorder({
       setParts(0);
       setBytes(0);
       setPaused(false);
+      if (nextMode === "video") {
+        setPreviewStream(stream);
+        onPreviewStream?.(stream);
+        wakeLockRef.current = await requestWakeLock();
+      }
 
       // Persist the growing recording after each part finalizes — nothing is lost on a crash.
       async function persist(): Promise<PendingRecording> {
@@ -176,8 +265,9 @@ export function LessonRecorder({
           lessonId,
           courseId,
           parts: [...partsRef.current],
-          mime: mime || "audio/webm",
-          // Active seconds only — a paused stretch adds no audio, so it shouldn't add duration.
+          mime: mime || fallbackMime(nextMode),
+          mode: nextMode,
+          // Active seconds only — a paused stretch adds no media, so it shouldn't add duration.
           durationSeconds: elapsedRef.current,
           createdAt: Date.now(),
         };
@@ -202,7 +292,7 @@ export function LessonRecorder({
           }
         };
         mr.onstop = async () => {
-          const blob = new Blob(chunksRef.current, { type: mime || "audio/webm" });
+          const blob = new Blob(chunksRef.current, { type: mime || fallbackMime(nextMode) });
           if (blob.size > 0) {
             partsRef.current.push(blob);
             setParts(partsRef.current.length);
@@ -211,6 +301,9 @@ export function LessonRecorder({
           if (finishingRef.current) {
             stopTimer();
             streamRef.current?.getTracks().forEach((t) => t.stop());
+            clearPreview();
+            void wakeLockRef.current?.release().catch(() => {});
+            wakeLockRef.current = null;
             setStatus("local");
             void upload(rec);
           } else {
@@ -236,13 +329,18 @@ export function LessonRecorder({
       mr.start(2000); // emit data every 2s so we can track size + roll parts near the cap
       setStatus("recording");
     } catch {
-      setError("Couldn't access the microphone. Check the browser permission.");
+      setError(
+        nextMode === "video"
+          ? "Couldn't access the camera and microphone. Check the browser permissions."
+          : "Couldn't access the microphone. Check the browser permission.",
+      );
+      clearPreview();
       setStatus("idle");
     }
   }
 
-  // Pause/resume the take (multi-session recording): MediaRecorder.pause() keeps the mic + the
-  // in-progress blob, emits no audio while paused, and stitches seamlessly on resume — so a
+  // Pause/resume the take (multi-session recording): MediaRecorder.pause() keeps the devices + the
+  // in-progress blob, emits nothing while paused, and stitches seamlessly on resume — so a
   // course can be recorded across several sittings without stopping/re-uploading.
   function togglePause() {
     const mr = recorderRef.current;
@@ -293,7 +391,7 @@ export function LessonRecorder({
     }
     if (!blobs.length) return;
     const slug = buildPublicId(courseLabel, lessonLabel ?? lessonId)?.replace(/\//g, "-") || `lesson-${lessonId}`;
-    const ext = (mime ?? "").includes("mp4") ? "m4a" : (mime ?? "").includes("ogg") ? "ogg" : "webm";
+    const ext = downloadExtension(mime, modeFromMime(mime));
     blobs.forEach((blob, i) => {
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
@@ -306,20 +404,31 @@ export function LessonRecorder({
     });
   }
 
-  const btn = "min-h-9 rounded-md border border-neutral-300 px-3 text-sm dark:border-neutral-700";
+  const btn = "min-h-11 rounded-md border border-neutral-300 px-3 text-sm dark:border-neutral-700";
   const canDownload = ["local", "uploading", "offline", "uploaded", "error"].includes(status);
 
   return (
     <div className="mt-1 flex flex-wrap items-center gap-2 text-sm">
       {status === "idle" ? (
-        <button type="button" onClick={startRecording} className={btn}>🎙 Record audio</button>
+        <>
+          <button type="button" onClick={() => startRecording("audio")} className={btn}>
+            🎙 Record audio
+          </button>
+          <button type="button" onClick={() => startRecording("video")} className={btn}>
+            🎥 Record video
+          </button>
+        </>
       ) : null}
 
       {status === "recording" ? (
         <>
-          <span className={`inline-flex items-center gap-1.5 font-medium ${paused ? "text-amber-600" : "text-red-600"}`}>
+          <span
+            role="status"
+            className={`inline-flex items-center gap-1.5 font-medium ${paused ? "text-amber-600" : "text-red-600"}`}
+          >
             <span className={`h-2 w-2 rounded-full ${paused ? "bg-amber-500" : "animate-pulse bg-red-600"}`} />
-            {fmt(elapsed)}{paused ? " · paused" : ""}
+            {formatSeconds(elapsed)}
+            {paused ? " · paused" : ""}
           </span>
           <span className="text-xs text-neutral-500">
             {formatBytes(bytes)}
@@ -329,6 +438,24 @@ export function LessonRecorder({
             {paused ? "▶ Resume" : "⏸ Pause"}
           </button>
           <button type="button" onClick={stopRecording} className={btn}>■ Stop</button>
+          {mode === "video" && previewStream && !onPreviewStream ? (
+            <div className="w-full">
+              <CameraPreview
+                stream={previewStream}
+                className="max-h-40 w-full max-w-xs rounded-lg border border-neutral-300 dark:border-neutral-700"
+              />
+              <p className="mt-1 max-w-xs text-xs text-neutral-500">
+                Mirrored preview only, the saved video isn’t flipped. Keep this preview right next to
+                your camera so your eyes stay near the lens.
+              </p>
+            </div>
+          ) : null}
+          {mode === "video" ? (
+            <p className="w-full text-xs text-neutral-500">
+              Saved on this device while you record; uploads to this lesson when you stop. Nothing is
+              published automatically.
+            </p>
+          ) : null}
         </>
       ) : null}
 
@@ -362,7 +489,7 @@ export function LessonRecorder({
       ) : null}
 
       {canDownload ? (
-        <button type="button" onClick={downloadRecording} className={btn} title="Save the audio file to this device">
+        <button type="button" onClick={downloadRecording} className={btn} title="Save the recording to this device">
           ⬇ Download
         </button>
       ) : null}
