@@ -43,6 +43,7 @@ import { CourseSearch } from "@/components/course-search";
 import { ComingSoonCourseFace } from "@/components/coming-soon-course";
 import { UnvettedDisclosure } from "@/components/unvetted-disclosure";
 import { isOpenWhileUnvetted, isUnvetted } from "@/lib/vetting";
+import { civicsBackLink } from "@/lib/civics-nav";
 import { isPlatformOwner } from "@/lib/session";
 import { VetCourseCta } from "@/components/vet-course-cta";
 
@@ -103,6 +104,8 @@ export default async function CourseBySlugPage({ params }: Params) {
   // PATCH strips the field for everyone else anyway). Only asked when it could show something.
   const ownerNeedsToVet =
     isUnvetted(course) && view.session ? await isPlatformOwner(view.session.user.id) : false;
+
+  const civicsBack = civicsBackLink(course);
 
   const courseLives = await listLiveForCourse(course.tenantId, course.id);
 
@@ -276,9 +279,22 @@ export default async function CourseBySlugPage({ params }: Params) {
       {jsonLd ? (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       ) : null}
-      <Link href="/" className="text-sm text-neutral-500 hover:underline">
-        ← Back to catalog
-      </Link>
+      {/* A civics course's real index is the state map (or the Civics catalog slice), not the
+          whole catalog: arriving from /civics and having no way back was reported 2026-08-18. */}
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+        <Link href="/" className="text-sm text-neutral-500 hover:underline">
+          ← Back to catalog
+        </Link>
+        {civicsBack ? (
+          <Link
+            href={civicsBack.href}
+            className="inline-flex min-h-11 items-center text-sm hover:underline pointer-coarse:min-h-12"
+            style={{ color: "var(--accent)" }}
+          >
+            ← {civicsBack.label}
+          </Link>
+        ) : null}
+      </div>
       {course.seriesTitle || seasonMeta ? (
         <p className="mt-6 text-xs uppercase tracking-wide text-neutral-500">
           {/* The series name LINKS to its page: a learner who reads "part of X" should be able to
