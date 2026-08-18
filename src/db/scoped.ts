@@ -32,6 +32,7 @@ import {
   listLessonLocations,
   type LessonBodyRef,
 } from "@/db/queries/lesson-locations";
+import { listPublishedLessonSearchRows } from "@/db/queries/course-search";
 import {
   createNote,
   createTeacherNote,
@@ -188,6 +189,13 @@ export class ScopedDb {
   /** Bodies of specific lessons, for this tenant, so a board can quote the prose around an item. */
   listLessonBodies(refs: readonly LessonBodyRef[]) {
     return listLessonBodies(this.tenantId, refs);
+  }
+
+  // ── In-course search (plans/61 §5) ─────────────────────────────────────────
+
+  /** PUBLISHED lessons of one of THIS tenant's courses, with bodies, for in-course search. */
+  listPublishedLessonSearchRows(courseId: string) {
+    return listPublishedLessonSearchRows(this.tenantId, courseId);
   }
 
   // ── Connection graph (/admin/graph, plans/57) ──────────────────────────────

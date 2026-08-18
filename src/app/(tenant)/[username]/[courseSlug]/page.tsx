@@ -38,6 +38,7 @@ import { hasAgeConsentCookie } from "@/lib/age-gate";
 import { AgeGate } from "@/components/age-gate";
 import { brandName } from "@/lib/branding";
 import { CourseStandards } from "@/components/course-standards";
+import { CourseSearch } from "@/components/course-search";
 import { ComingSoonCourseFace } from "@/components/coming-soon-course";
 
 type Params = { params: Promise<{ username: string; courseSlug: string }> };
@@ -467,6 +468,16 @@ export default async function CourseBySlugPage({ params }: Params) {
               </li>
             ))}
           </ul>
+        </section>
+      ) : null}
+
+      {/* In-course search (plans/61 §5): only for viewers who can read the content — the API
+          enforces the same gate server-side. Deliberately described as searching text, self-checks
+          and image DESCRIPTIONS (alt/caption/credit), never as "image search". */}
+      {(view.isEnrolled || isEditor || view.isAuditor) && lessons.length > 0 ? (
+        <section className="mt-8">
+          <h2 className="mb-3 text-lg font-semibold">Search this course</h2>
+          <CourseSearch courseId={course.id} basePath={base} />
         </section>
       ) : null}
 
