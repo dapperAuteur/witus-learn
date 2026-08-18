@@ -32,6 +32,27 @@ import {
   listLessonLocations,
   type LessonBodyRef,
 } from "@/db/queries/lesson-locations";
+import { listPublishedLessonSearchRows } from "@/db/queries/course-search";
+import {
+  createNote,
+  createTeacherNote,
+  deleteOwnNote,
+  getLessonBodyText,
+  listNoteShares,
+  listNotesSharedWithTeacher,
+  listOwnCourseNotes,
+  listOwnLessonNotes,
+  listSentTeacherNotes,
+  listTeacherNotesForStudent,
+  listTeacherNotesSentToStudent,
+  listTeachersForLearner,
+  searchNotesInCourse,
+  shareNoteWithTeacher,
+  unshareNote,
+  updateOwnNote,
+  type CreateNoteInput,
+  type CreateTeacherNoteInput,
+} from "@/db/queries/notes";
 
 /**
  * The mandatory tenant-scoped data-access chokepoint.
@@ -170,11 +191,89 @@ export class ScopedDb {
     return listLessonBodies(this.tenantId, refs);
   }
 
+  // ── In-course search (plans/61 §5) ─────────────────────────────────────────
+
+  /** PUBLISHED lessons of one of THIS tenant's courses, with bodies, for in-course search. */
+  listPublishedLessonSearchRows(courseId: string) {
+    return listPublishedLessonSearchRows(this.tenantId, courseId);
+  }
+
   // ── Connection graph (/admin/graph, plans/57) ──────────────────────────────
 
   /** Every prerequisite relationship inside THIS tenant, both ends scoped. Ids only. */
   listPrerequisiteEdges() {
     return listTenantPrerequisiteEdges(this.tenantId);
+  }
+
+  // ── Notes and inline annotations (plans/61) ────────────────────────────────
+  // Visibility rules live in src/db/queries/notes.ts; every method here bakes in tenant_id, so no
+  // route can read or write a note outside its own tenant. The rules in one line: authors see
+  // their own; a teacher sees a personal note only through an explicit share row; a student sees
+  // a teacher note only through cohort membership (minus narrowing); guardians see teacher-sent
+  // notes only, gated by isGuardianOf in the route.
+
+  listOwnLessonNotes(authorId: string, lessonId: string) {
+    return listOwnLessonNotes(this.tenantId, authorId, lessonId);
+  }
+
+  listOwnCourseNotes(authorId: string, courseId: string) {
+    return listOwnCourseNotes(this.tenantId, authorId, courseId);
+  }
+
+  createNote(input: Omit<CreateNoteInput, "tenantId">) {
+    return createNote({ tenantId: this.tenantId, ...input });
+  }
+
+  updateOwnNote(authorId: string, noteId: string, body: string) {
+    return updateOwnNote(this.tenantId, authorId, noteId, body);
+  }
+
+  deleteOwnNote(authorId: string, noteId: string) {
+    return deleteOwnNote(this.tenantId, authorId, noteId);
+  }
+
+  listTeachersForLearner(learnerId: string) {
+    return listTeachersForLearner(this.tenantId, learnerId);
+  }
+
+  shareNoteWithTeacher(authorId: string, noteId: string, teacherUserId: string) {
+    return shareNoteWithTeacher(this.tenantId, authorId, noteId, teacherUserId);
+  }
+
+  unshareNote(authorId: string, noteId: string, teacherUserId: string) {
+    return unshareNote(this.tenantId, authorId, noteId, teacherUserId);
+  }
+
+  listNoteShares(authorId: string, noteIds: string[]) {
+    return listNoteShares(this.tenantId, authorId, noteIds);
+  }
+
+  listNotesSharedWithTeacher(teacherUserId: string, lessonId: string) {
+    return listNotesSharedWithTeacher(this.tenantId, teacherUserId, lessonId);
+  }
+
+  createTeacherNote(input: Omit<CreateTeacherNoteInput, "tenantId">) {
+    return createTeacherNote({ tenantId: this.tenantId, ...input });
+  }
+
+  listTeacherNotesForStudent(studentUserId: string, lessonId: string) {
+    return listTeacherNotesForStudent(this.tenantId, studentUserId, lessonId);
+  }
+
+  listSentTeacherNotes(teacherUserId: string, lessonId: string) {
+    return listSentTeacherNotes(this.tenantId, teacherUserId, lessonId);
+  }
+
+  listTeacherNotesSentToStudent(studentUserId: string) {
+    return listTeacherNotesSentToStudent(this.tenantId, studentUserId);
+  }
+
+  searchNotesInCourse(viewerId: string, courseId: string, query: string) {
+    return searchNotesInCourse(this.tenantId, viewerId, courseId, query);
+  }
+
+  getLessonBodyText(lessonId: string) {
+    return getLessonBodyText(this.tenantId, lessonId);
   }
 }
 

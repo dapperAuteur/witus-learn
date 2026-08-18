@@ -56,7 +56,7 @@ export function LessonPlayer({
         return lesson.textContent ? (
           <div className="space-y-4">
             {player}
-            <LessonBody text={lesson.textContent} courseId={lesson.courseId} lessonId={lesson.id} trackRecall={trackRecall} />
+            <LessonBody text={lesson.textContent} courseId={lesson.courseId} lessonId={lesson.id} trackRecall={trackRecall} blockAnchors />
           </div>
         ) : (
           player
@@ -95,7 +95,7 @@ export function LessonPlayer({
       return lesson.textContent ? (
         <div className="space-y-4">
           {player}
-          <LessonBody text={lesson.textContent} courseId={lesson.courseId} lessonId={lesson.id} trackRecall={trackRecall} />
+          <LessonBody text={lesson.textContent} courseId={lesson.courseId} lessonId={lesson.id} trackRecall={trackRecall} blockAnchors />
         </div>
       ) : (
         player
@@ -105,7 +105,7 @@ export function LessonPlayer({
     case "text":
     case "assignment":
       return lesson.textContent ? (
-        <LessonBody text={lesson.textContent} courseId={lesson.courseId} lessonId={lesson.id} trackRecall={trackRecall} />
+        <LessonBody text={lesson.textContent} courseId={lesson.courseId} lessonId={lesson.id} trackRecall={trackRecall} blockAnchors />
       ) : (
         <Empty />
       );
@@ -125,7 +125,7 @@ export function LessonPlayer({
       return (
         <div className="space-y-4">
           {lesson.textContent ? (
-            <LessonBody text={lesson.textContent} courseId={lesson.courseId} lessonId={lesson.id} trackRecall={trackRecall} />
+            <LessonBody text={lesson.textContent} courseId={lesson.courseId} lessonId={lesson.id} trackRecall={trackRecall} blockAnchors />
           ) : null}
           <ExercisePlayer content={ex} />
           <SentenceEvaluator courseId={lesson.courseId} />
@@ -150,7 +150,7 @@ export function LessonPlayer({
           ) : null}
           {lesson.textContent ? (
             <div className="mt-4">
-              <LessonBody text={lesson.textContent} courseId={lesson.courseId} lessonId={lesson.id} trackRecall={trackRecall} />
+              <LessonBody text={lesson.textContent} courseId={lesson.courseId} lessonId={lesson.id} trackRecall={trackRecall} blockAnchors />
             </div>
           ) : mc ? null : (
             <Empty />
@@ -185,6 +185,7 @@ export function LessonPlayer({
                 courseId={lesson.courseId}
                 lessonId={lesson.id}
                 trackRecall={trackRecall}
+                blockAnchors
               />
             </div>
           ) : null}

@@ -257,6 +257,44 @@ changes. Tenant-scoped end to end: standards are keyed by course slug and resolv
 requesting tenant's own published catalog, so a brand can never surface a standard its courses
 don't back.
 
+## Notes, inline annotations, and class notes
+
+Every signed-in learner gets a **My notes** panel on every lesson (private by default, stated in
+words next to each note), plus **inline annotations**: select lesson text → "Add note" pins the
+note to that exact passage and highlights it. Anchoring is quote + ~30 chars of context + a
+content-derived block id ([src/lib/block-id.ts](src/lib/block-id.ts), stamped by the markdown
+renderer), so an anchor survives edits elsewhere in the lesson; when the quoted passage itself is
+rewritten the note is kept and shown as "the text this was attached to has changed", never
+dropped ([src/lib/annotations.ts](src/lib/annotations.ts) recomputes this at read time — nothing
+is persisted, so restoring the text un-orphans the note).
+
+Sharing is deliberately narrow (plans/61): a student shares a single note with a teacher (an
+owner of a cohort they belong to), revocably — never a bulk toggle, never student↔student. A
+teacher attaches a note to a lesson for a cohort or a subset of it (one `audience` model), which
+renders in those students' panels on that lesson: **content, not messaging** — no notification,
+no inbox, no email. Guardians see teacher-sent notes on the family report; a child's own notes
+stay private unless the child shares them. Notes are searchable per course and exportable as
+markdown with quoted passages and lesson links (`/api/courses/[id]/notes/export`).
+
+All queries live in [src/db/queries/notes.ts](src/db/queries/notes.ts) behind the scoped DAL;
+`tests/isolation/notes.db.test.ts` pins the visibility rules (cross-tenant, cross-author,
+unshared-note, and recipient-narrowing leakage all fail the suite).
+## In-course search
+
+Every course page shows a **"Search this course"** box to viewers who can read the content
+(enrolled learners, the instructor/owner, invited auditors). It searches the **published lessons of
+that one course**: lesson titles, body prose, `:::reveal` self-checks (question + answer), and the
+text attached to `:::figure` images: **alt text, captions, and credits, never the URL**. That last
+part is deliberate phrasing (plans/61 §5): the app greps the text attached to an image, not the
+image, so no surface calls it "image search". Exact-phrase matches rank above all-words matches and
+title matches rank highest, with a ~60-character snippet around the first match.
+
+The ranking is a pure module ([src/lib/course-search.ts](src/lib/course-search.ts), unit-tested in
+`tests/course-search.test.ts`); the lesson read is tenant-scoped through `ScopedDb`
+(`listPublishedLessonSearchRows`, isolation-tested in `tests/isolation/course-search.db.test.ts`);
+the API is `GET /api/courses/[id]/search?q=` (404 across tenants, 403 for anyone who can't read the
+content, 400 outside 2 to 200 characters).
+
 ## Self-serve custom domains
 
 At `/admin/domains`, a school's **brand_admin** maps a domain to their tenant entirely self-serve,

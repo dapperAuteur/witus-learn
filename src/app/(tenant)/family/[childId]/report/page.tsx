@@ -21,9 +21,13 @@ export default async function FamilyReportPage({ params }: { params: Promise<{ c
   // THE gate — every per-child read is preceded by isGuardianOf (see src/db/queries/family.ts).
   if (!(await isGuardianOf(sdb.tenantId, session.user.id, childId))) forbidden();
 
-  const [rows, childName] = await Promise.all([
+  const [rows, childName, teacherNotes] = await Promise.all([
     getLearnerGradebook(sdb.tenantId, childId),
     getLearnerName(childId),
+    // Teacher-SENT notes only (plans/61 §0, decided 2026-08-10): a guardian sees what a teacher
+    // sent their child, never the child's own private notes — those stay the child's unless the
+    // child shares them, and that distinction is stated on the page.
+    sdb.listTeacherNotesSentToStudent(childId),
   ]);
 
   return (
@@ -77,6 +81,33 @@ export default async function FamilyReportPage({ params }: { params: Promise<{ c
           </tbody>
         </table>
         </div>
+
+        {teacherNotes.length > 0 ? (
+          <section className="mt-8" aria-label="Notes from teachers">
+            <h2 className="text-lg font-semibold">Notes from teachers</h2>
+            <p className="mt-1 text-xs text-neutral-500">
+              What a teacher attached to a lesson for {childName}. Your child&rsquo;s own notes are
+              private to them unless they share them.
+            </p>
+            <ul className="mt-3 space-y-2">
+              {teacherNotes.map((n) => (
+                <li key={n.id} className="rounded-lg border border-neutral-200 p-3 text-sm dark:border-neutral-800">
+                  {n.quote ? (
+                    <blockquote className="mb-1 border-l-2 border-neutral-300 pl-2 text-xs italic text-neutral-500">
+                      {n.quote}
+                    </blockquote>
+                  ) : null}
+                  <p className="whitespace-pre-wrap wrap-break-word">{n.body}</p>
+                  <p className="mt-1 text-xs text-neutral-500">
+                    {n.authorName ?? "A teacher"}
+                    {n.lessonTitle ? ` · on "${n.lessonTitle}"` : ""} ·{" "}
+                    {n.createdAt.toISOString().slice(0, 10)}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
       </div>
     </main>
   );
