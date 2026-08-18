@@ -31,12 +31,15 @@ export function LessonBody({
   courseId,
   lessonId,
   trackRecall = false,
+  blockAnchors = false,
 }: {
   text: string;
   courseId?: string | null;
   lessonId?: string | null;
   /** True when the viewer is a signed-in learner whose self-grades should be recorded. */
   trackRecall?: boolean;
+  /** Stamp prose blocks with content-derived ids for inline annotations (plans/61). */
+  blockAnchors?: boolean;
 }) {
   const ctx = { courseId, lessonId };
   const lines = text.split("\n");
@@ -46,7 +49,7 @@ export function LessonBody({
   const flush = (key: string) => {
     if (buf.join("").trim().length > 0) {
       blocks.push(
-        <Markdown key={key} linkContext={ctx}>
+        <Markdown key={key} linkContext={ctx} blockAnchors={blockAnchors}>
           {buf.join("\n")}
         </Markdown>,
       );

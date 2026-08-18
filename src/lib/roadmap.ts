@@ -5,6 +5,15 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- ✅ **Notes, inline annotations, sharing, and note search** (plans/61, four branches bundled;
+  migration **0050**): private per-lesson notes with select-to-annotate (quote + context +
+  content-derived block ids from the renderer; an edited passage ORPHANS the note visibly, never
+  deletes it), per-note student→teacher sharing (explicit, revocable, no bulk toggle),
+  teacher→cohort notes (one audience model: cohort, subset, or one student; content attached to
+  the lesson, deliberately NOT messaging: no notification/inbox/email), guardian visibility of
+  teacher-sent notes on the family report, per-course note search, and markdown export. The
+  visibility rules live in src/db/queries/notes.ts and are pinned by
+  tests/isolation/notes.db.test.ts.
 - ✅ **Science & Math track, Wave 1** (\`feat/science-math-wave-1\`, a NEW category and the
   \`science-and-math\` series): four courses that each complement what the catalog already has rather
   than sitting beside it. **SCI-01 How to Read a Number** serves the 34 Civics courses, which all
