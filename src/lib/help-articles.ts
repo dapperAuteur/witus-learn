@@ -466,6 +466,39 @@ server received it.`,
 - **Link usage**, the course page shows how often outbound links get clicked (counts only).`,
   },
   {
+    slug: "marketing-tools",
+    title: "Marketing: promo codes, announcements, and demand",
+    category: "Growth",
+    keywords: ["marketing", "promo code", "discount", "announce", "campaign", "email", "leads", "demand", "shares"],
+    body: `# Marketing tools (/admin/marketing)
+
+One brand-admin page collects every marketing lever that exists today. Everything on it is
+scoped to your school only.
+
+## Signals
+The top row shows your captured **leads** (with a link to Interest & leads), the courses with
+the most people **waiting**, and how often the in-app **Share** buttons were used, by channel.
+
+## Course announcements
+See which published courses have not been announced yet, then open the **announcement
+manager** to send a batch to the WitUS Outbox as social-post drafts (nothing publishes
+automatically; you pick the profiles in the Outbox).
+
+**Compose announcement** drafts a new-course email from the course's real title and
+description: pick a course, edit the subject and message, then **copy** them or **open in
+your email app**. Nothing sends from inside the app; you send it through your own email tool.
+You can also save the draft as a campaign draft.
+
+## Promo codes
+Create brand-wide percentage discount codes (mirrored to a Stripe coupon when Stripe is
+configured), list active codes, and remove them.
+
+## Email campaigns
+Compose and save campaign drafts with a live audience count (leads or enrolled learners).
+**Sending is intentionally disabled** until the audience, consent, and unsubscribe rules are
+decided; until then, send a saved draft through your own email tool.`,
+  },
+  {
     slug: "streaming-and-multistream",
     title: "Streaming: always-on stream + multistream to socials",
     category: "Live",
