@@ -230,6 +230,12 @@ verification lists are pages in the app. Invited reviewers can verify a course's
 being given the keys to anything else, and neither list can be closed without writing down what was
 found.
 
+Two smaller examples of the same principle. The in-course search box tells learners it searches
+image descriptions, alt text, captions and credits, because that is what it actually does; a box
+that promised image search and grepped captions would be judged on the promise. And when a lesson's
+text changes under a learner's highlighted note, the note is kept and marked as displaced, never
+silently deleted: their notes are their work, not ours to tidy.
+
 That is the argument, and it is deliberately checkable rather than asserted: **the platform makes the
 honest thing structural.** Not because rigour is a feature people ask for, but because in a market
 where content is free, the only thing left worth selling is whether it is true.
