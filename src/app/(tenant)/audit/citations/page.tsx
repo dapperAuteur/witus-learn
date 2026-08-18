@@ -89,6 +89,7 @@ export default async function AuditCitationsPage() {
               courseSlug={g.courseSlug}
               courseTitle={g.courseTitle}
               rows={rows}
+              groupCount={groups.length}
             />
           );
         })

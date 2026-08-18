@@ -46,6 +46,11 @@ export default async function CitationsPage() {
         courses.
       </p>
       <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+        Courses start collapsed. Each summary line says how many sources the course holds and how many
+        of them are still unverified, so you can pick one to work through without scrolling past the
+        rest.
+      </p>
+      <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
         Looking for the questions Claude flagged for you instead?{" "}
         <Link href="/admin/research" className="underline">
           Source checks
@@ -72,6 +77,7 @@ export default async function CitationsPage() {
             courseSlug={g.courseSlug}
             courseTitle={g.courseTitle}
             rows={rows}
+            groupCount={groups.length}
           />
         );
       })}
