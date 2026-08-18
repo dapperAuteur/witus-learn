@@ -41,7 +41,9 @@ import { CourseStandards } from "@/components/course-standards";
 import { CourseSearch } from "@/components/course-search";
 import { ComingSoonCourseFace } from "@/components/coming-soon-course";
 import { UnvettedDisclosure } from "@/components/unvetted-disclosure";
-import { isOpenWhileUnvetted } from "@/lib/vetting";
+import { isOpenWhileUnvetted, isUnvetted } from "@/lib/vetting";
+import { isPlatformOwner } from "@/lib/session";
+import { VetCourseCta } from "@/components/vet-course-cta";
 
 type Params = { params: Promise<{ username: string; courseSlug: string }> };
 
@@ -95,6 +97,11 @@ export default async function CourseBySlugPage({ params }: Params) {
       />
     );
   }
+
+  // Vetting is the platform owner's own review, so the "needs vetting" CTA is owner-only (the
+  // PATCH strips the field for everyone else anyway). Only asked when it could show something.
+  const ownerNeedsToVet =
+    isUnvetted(course) && view.session ? await isPlatformOwner(view.session.user.id) : false;
 
   const courseLives = await listLiveForCourse(course.tenantId, course.id);
 
@@ -307,6 +314,8 @@ export default async function CourseBySlugPage({ params }: Params) {
       ) : null}
 
       {isOpenWhileUnvetted(course) ? <UnvettedDisclosure /> : null}
+
+      {ownerNeedsToVet ? <VetCourseCta courseId={course.id} courseTitle={course.title} /> : null}
 
       <CourseStandards courseSlug={courseSlug} />
 
