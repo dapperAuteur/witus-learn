@@ -21,6 +21,7 @@ import {
 } from "@/components/offline-selection";
 import { listGlossary, listSources } from "@/db/queries/pedagogy";
 import { getPathsForCourse } from "@/db/queries/paths";
+import { listBundlesForCourse } from "@/db/queries/bundles";
 import { listLiveForCourse } from "@/db/queries/live";
 import { LivePlayer } from "@/components/live-player";
 import { GlossaryList } from "@/components/glossary-list";
@@ -111,17 +112,16 @@ export default async function CourseBySlugPage({ params }: Params) {
     return <AgeGate brand={brandName(view.tenant)} hasSafety={Boolean(view.tenant.legal.safetyUrl)} />;
   }
 
-  const [glossary, sources, prerequisites] = await Promise.all([
+  const [glossary, sources, prerequisites, courseBundles] = await Promise.all([
     listGlossary(course.id),
     listSources(course.id),
     listPrerequisites(course.id),
+    listBundlesForCourse(course.tenantId, course.id),
   ]);
   const unmetPrereqIds = view.activeLearnerId
     ? new Set((await getUnmetRequired(view.activeLearnerId, course.id)).map((c) => c.id))
     : new Set<string>();
-  const meta = [course.seriesTitle, course.seasonNumber ? `Season ${course.seasonNumber}` : null]
-    .filter(Boolean)
-    .join(" · ");
+  const seasonMeta = course.seasonNumber ? `Season ${course.seasonNumber}` : null;
   const base = `/${username}/${courseSlug}`;
   const completedCount = lessons.filter((l) => completedLessonIds.has(l.id)).length;
   const percent = lessons.length > 0 ? Math.round((completedCount / lessons.length) * 100) : 0;
@@ -272,7 +272,23 @@ export default async function CourseBySlugPage({ params }: Params) {
       <Link href="/" className="text-sm text-neutral-500 hover:underline">
         ← Back to catalog
       </Link>
-      {meta ? <p className="mt-6 text-xs uppercase tracking-wide text-neutral-500">{meta}</p> : null}
+      {course.seriesTitle || seasonMeta ? (
+        <p className="mt-6 text-xs uppercase tracking-wide text-neutral-500">
+          {/* The series name LINKS to its page: a learner who reads "part of X" should be able to
+              go see X (BAM 2026-08-18). Series with no slug (older rows) stay plain text. */}
+          {course.seriesTitle ? (
+            course.seriesSlug ? (
+              <Link href={`/series/${course.seriesSlug}`} className="underline" style={{ color: "var(--accent)" }}>
+                {course.seriesTitle}
+              </Link>
+            ) : (
+              course.seriesTitle
+            )
+          ) : null}
+          {course.seriesTitle && seasonMeta ? " · " : null}
+          {seasonMeta}
+        </p>
+      ) : null}
       <div className="mt-1 flex items-start justify-between gap-3">
         <h1 className="text-3xl font-bold">{course.title}</h1>
         {course.isPublished && course.visibility !== "private" ? (
@@ -309,6 +325,29 @@ export default async function CourseBySlugPage({ params }: Params) {
       {isOpenWhileUnvetted(course) ? <UnvettedDisclosure /> : null}
 
       <CourseStandards courseSlug={courseSlug} />
+
+      {courseBundles.length > 0 ? (
+        <aside
+          aria-label="Bundles including this course"
+          className="mt-4 rounded-lg border border-neutral-200 bg-neutral-50 p-4 text-sm dark:border-neutral-800 dark:bg-neutral-900"
+        >
+          <p className="font-medium">Also available in a bundle</p>
+          <ul className="mt-2 space-y-1">
+            {courseBundles.map((b) => (
+              <li key={b.slug}>
+                <Link href={`/bundles/${b.slug}`} className="underline" style={{ color: "var(--accent)" }}>
+                  {b.title}
+                </Link>
+                <span className="text-neutral-500">
+                  {" "}
+                  · {Number(b.price) > 0 ? `$${b.price}` : "Free"}
+                  {b.priceType === "subscription" ? " subscription" : ""}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </aside>
+      ) : null}
 
       {coursePaths.map((p) => {
         const next = p.courses[p.position]; // position is 1-based, so this is the course AFTER it

@@ -97,6 +97,35 @@ export async function listBundleMemberships(
   return all.map((b) => ({ slug: b.slug, title: b.title, courseIds: byBundle.get(b.id) ?? [] }));
 }
 
+/**
+ * PUBLISHED bundles that contain one course, for the course page's "also in a bundle" links
+ * (BAM 2026-08-18). Tenant-scoped on both sides of the join like every other read here, so a
+ * course can never surface another tenant's bundle. Unpublished bundles are withheld: a link to
+ * a bundle nobody can buy is a dead end, and its price is not an offer we are making yet.
+ */
+export async function listBundlesForCourse(
+  tenantId: string,
+  courseId: string,
+): Promise<{ slug: string; title: string; price: string; priceType: string }[]> {
+  return db
+    .select({
+      slug: bundles.slug,
+      title: bundles.title,
+      price: bundles.price,
+      priceType: bundles.priceType,
+    })
+    .from(bundleCourses)
+    .innerJoin(bundles, eq(bundles.id, bundleCourses.bundleId))
+    .where(
+      and(
+        eq(bundleCourses.courseId, courseId),
+        eq(bundles.tenantId, tenantId),
+        eq(bundles.isPublished, true),
+      ),
+    )
+    .orderBy(asc(bundles.title));
+}
+
 /** Cache the Stripe product/price on the bundle (mirrors updateCourse), tenant-scoped. */
 export async function updateBundleStripe(
   tenantId: string,
