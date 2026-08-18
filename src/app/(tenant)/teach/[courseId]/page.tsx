@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { getScopedDb } from "@/db/scoped";
 import { canEditCourse } from "@/lib/api";
 import { getMembership, getSession, isPlatformOwner } from "@/lib/session";
+import { VetCourseCta } from "@/components/vet-course-cta";
 import { hasStripe } from "@/lib/env";
 import { listLessons, listModules, listTenantInstructors } from "@/db/queries/authoring";
 import { listLinkUsage } from "@/db/queries/link-clicks";
@@ -126,6 +127,9 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
               See who is waiting →
             </Link>
           ) : null}
+          {/* Mark it vetted from here, where the course is actually worked on: the walk to /teach
+              and back is the friction that let the review queue sit (BAM 2026-08-18). */}
+          {owner ? <VetCourseCta courseId={course.id} variant="inline" /> : null}
         </div>
       ) : null}
 
