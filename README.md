@@ -306,6 +306,18 @@ The ranking is a pure module ([src/lib/course-search.ts](src/lib/course-search.t
 the API is `GET /api/courses/[id]/search?q=` (404 across tenants, 403 for anyone who can't read the
 content, 400 outside 2 to 200 characters).
 
+## School gradebook roll-up + roster CRUD (plans/50 Phase 3, the safe half)
+
+**`/admin/gradebook`** shows the tenant admin one row per learner across the whole school
+(courses enrolled, lessons completed, best-quiz average, cohort membership), with a CSV export at
+`/api/admin/gradebook.csv` (attachment download, `Cache-Control: no-store` — exports are student
+PII). Brand_admin/platform-owner only, tenant-scoped like every other read
+(`tests/isolation/gradebook-rollup.db.test.ts`). The cohort roster (`/cohorts/[id]`) now also
+lists **pending invites** with a copyable join link and a **Resend** action that re-delivers the
+same token (nothing already shared is invalidated). Editing grades, quiz attempts, or completions
+is deliberately NOT built: plans/50 defers destructive edits in favor of a future
+override/annotation row so the audit trail stays honest.
+
 ## Self-serve custom domains
 
 At `/admin/domains`, a school's **brand_admin** maps a domain to their tenant entirely self-serve,

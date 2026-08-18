@@ -5,6 +5,11 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- ✅ **School gradebook roll-up + roster CRUD** (\`feat/school-rollup-and-roster-crud\`, plans/50
+  Phase 3's safe half): /admin/gradebook (one row per learner across the school, CSV export,
+  brand_admin+), and the cohort roster's pending-invite list with Resend (same token, nothing
+  already shared is invalidated). Grade/score EDITING deliberately not built: plans/50 defers
+  destructive edits to a BAM decision on override/annotation rows, so the audit trail stays honest.
 - ✅ **"Live but unvetted" flag** (\`feat/allow-unvetted-public\`, plans/52's last open item;
   migration **0051**): the owner opens an unvetted course's content to the public NOW, behind a
   visible review-in-progress disclosure on the landing page and every lesson. Every gate asks the
