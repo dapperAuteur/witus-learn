@@ -65,7 +65,7 @@ export default async function EmbedSnippetPage({ params }: { params: Promise<{ c
             The public card only renders <strong>published</strong> courses with{" "}
             <strong>public</strong> visibility. Right now this course is{" "}
             {course.isPublished ? `visibility "${course.visibility}"` : "not published"}, so the
-            embed shows a not-found page wherever it is pasted. You can still copy the snippet — it
+            embed shows a not-found page wherever it is pasted. You can still copy the snippet: it
             starts working the moment the course is published and public.
           </p>
         </div>
@@ -107,7 +107,7 @@ export default async function EmbedSnippetPage({ params }: { params: Promise<{ c
 
       <p className="mt-8 text-xs text-neutral-500">
         Looking for a deeper integration (another app reading your catalog as JSON)? That is the
-        API-key path — see the help article &quot;Embed your courses in another app&quot; under
+        API-key path, see the help article &quot;Embed your courses in another app&quot; under
         /help.
       </p>
     </main>
