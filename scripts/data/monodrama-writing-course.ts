@@ -48,7 +48,7 @@ What is left is the story and one person telling it. If the story does not work,
 - Decide who your audience is to your speaker, which is the question that determines tone, tense, and what may be said aloud.
 - Build a place and a time with language alone, on an empty stage.
 - Choose deliberately between scene and summary instead of drifting into whichever comes easily.
-- Place a turn and write an ending that is about the change rather than merely stopping.
+- Place a turn (the moment the story's direction changes: one of the six shared terms Lesson 2 defines) and write an ending that is about the change rather than merely stopping.
 - Finish a performable draft.
 
 **What this course is not.** It is not a performance course. Standing in a room, direct address as a physical problem, staging with nothing, and rehearsing alone are Monodrama II. It is also not a course in autobiography: your own life is a legitimate source and it is not the only one, and Lesson 4 is blunt about why "it really happened" is not an argument for keeping something.
@@ -308,7 +308,7 @@ Your speaker is talking. **To whom?** Not in the abstract. In the room, tonight,
 
 **And you may change it deliberately.** A piece can begin in private thought and break into direct appeal at the turn. That is powerful precisely because it is a rupture. It works when it is a decision and fails when it is drift.
 
-:::reveal A draft is fluent, moving, and somehow inert on stage. The address is never defined. Explain the mechanism of the failure. ||| With no defined listener, nothing is at stake in the act of telling: the speaker would say the same words the same way to a mirror, a diary or a stadium, so speaking costs them nothing. Drama needs the telling itself to be difficult or risky. Defining the listener ("she is talking to the daughter who did not come") gives every line a test, would she say that, and would she say it that way, and it makes the speech an action rather than a delivery.
+:::reveal A draft is fluent and moving, yet somehow inert on stage, and the writer never defined who the speaker is talking to. Why does an undefined listener make a piece inert? ||| With no defined listener, nothing is at stake in the act of telling: the speaker would say the same words the same way to a mirror, a diary or a stadium, so speaking costs them nothing. Drama needs the telling itself to be difficult or risky. Defining the listener ("she is talking to the daughter who did not come") gives every line a test, would she say that, and would she say it that way, and it makes the speech an action rather than a delivery.
 
 ## Sources
 - Macmillan, D., with Donahoe, J. (2015). *Every brilliant thing*. Oberon Books.
