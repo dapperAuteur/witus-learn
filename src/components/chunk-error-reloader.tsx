@@ -18,7 +18,8 @@ import { useEffect } from "react";
  * reload itself can't recover (a real outage, not a stale build) — one failed reload beats a tab that
  * reloads forever. Mounted once in the root layout, so it covers every tenant page.
  */
-const GUARD_KEY = "witus:chunk-reload-at";
+export const CHUNK_RELOAD_GUARD_KEY = "witus:chunk-reload-at";
+const GUARD_KEY = CHUNK_RELOAD_GUARD_KEY;
 const COOLDOWN_MS = 10_000;
 
 export function isChunkLoadError(reason: unknown): boolean {
