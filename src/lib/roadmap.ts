@@ -7,9 +7,12 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
 ## Platform
 - ✅ **Vetting is reachable and actionable** (\`fix/vetting-queue-button\` merged +
   \`feat/unvetted-vet-cta\`): the /admin published-courses tile links to /teach?status=unvetted
-  when courses await review, the teach catalog preselects that filter from the URL, and every
-  unvetted course carries an owner-only CTA (course page + course manager) with a one-click Mark
-  vetted button. Reported regression: the consolidated dashboard had pointed at /courses.
+  when courses await review, the teach catalog preselects that filter from the URL, "Courses to
+  vet" appears in BOTH the admin rail and the site menu (owner-only, one shared constant), and
+  every unvetted course carries an owner-only CTA (course page + course manager) with a one-click
+  Mark vetted button. Help now also carries instructor-facing steps for getting a course approved
+  (they cannot self-approve, by design) plus committed video-tutorial narration scripts beside
+  each help article, guarded so every article is covered or explicitly unwritten. Reported regression: the consolidated dashboard had pointed at /courses.
 - ✅ **Course pages link to bundles and series** (\`feat/course-bundle-path-links\`): new
   tenant-scoped listBundlesForCourse (PUBLISHED bundles only) feeds an "Also available in a
   bundle" aside; the series line now links to /series/[slug]. Paths already linked.

@@ -540,7 +540,9 @@ unvetted course still shows no offers of any kind.
 ## Vetting: finding and clearing the queue
 
 `/teach?status=unvetted` is the vetting queue, preselected from the URL, with the owner-only bulk
-**Mark vetted** controls. The `/admin` home tile for published courses links straight there
+**Mark vetted** controls, reachable as **"Courses to vet"** from both the admin rail and the
+signed-in site menu (owner-only in both: an instructor offered the link would reach a queue whose
+buttons reject them; both menus read one shared `VETTING_QUEUE` constant so they cannot drift). The `/admin` home tile for published courses links straight there
 whenever something is waiting, and any unvetted course carries an owner-only CTA
 ([src/components/vet-course-cta.tsx](src/components/vet-course-cta.tsx)) on the course page and in
 the course manager, with a one-click **Mark this course vetted** button, so review happens where
