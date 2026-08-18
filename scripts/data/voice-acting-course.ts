@@ -667,10 +667,10 @@ Shure. (n.d.). *Microphone techniques for recording*. https://www.shure.com/`,
           {
             prompt: "What does a modest off-axis mic angle trade, and for what?",
             options: [
-              "It trades low-frequency warmth for a higher noise floor",
-              "It trades recording volume for protection against clipping",
+              "It trades low-frequency warmth for a noticeably higher noise floor in the recording",
+              "It trades several decibels of recording volume for stronger protection against clipping",
               "It trades a little brightness for much less pop and sibilance exposure",
-              "It trades stereo width for a more focused mono recording",
+              "It trades the recording's stereo width for a tighter and more focused mono image",
             ],
             correctIndex: 2,
             explanation:
@@ -680,9 +680,9 @@ Shure. (n.d.). *Microphone techniques for recording*. https://www.shure.com/`,
           {
             prompt: "Why does this course rank the room above the microphone in upgrade priority?",
             options: [
-              "Rooms depreciate more slowly than microphone technology does",
-              "Most mics ship with software that corrects for room problems",
-              "Treated rooms make gain staging unnecessary during long sessions",
+              "Room treatment holds its value for decades while microphone technology depreciates within a few years",
+              "Most microphones now ship with correction software that compensates for a room's acoustic problems",
+              "A treated room makes careful gain staging unnecessary, even across long recording sessions",
               "A mic cannot subtract the room it hears, so a better mic records bad reflections in higher fidelity",
             ],
             correctIndex: 3,
@@ -719,10 +719,10 @@ Shure. (n.d.). *Microphone techniques for recording*. https://www.shure.com/`,
           {
             prompt: "Why does gain get set against the loudest expected delivery rather than the average one?",
             options: [
-              "Quiet passages sound better when the gain is set slightly high",
-              "Meters respond too slowly to show average levels accurately",
+              "Quiet conversational passages sound noticeably better when the gain is set slightly high",
+              "Level meters respond too slowly to display a read's average loudness with any accuracy",
               "Clipping at the digital ceiling is permanent, while quiet audio can simply be raised later",
-              "Most interfaces apply compression that evens out any loud peaks",
+              "Most audio interfaces apply automatic compression that evens out unexpectedly loud peaks",
             ],
             correctIndex: 2,
             explanation:
@@ -732,10 +732,10 @@ Shure. (n.d.). *Microphone techniques for recording*. https://www.shure.com/`,
           {
             prompt: "Which habit does this course say outranks any gear purchase?",
             options: [
-              "Upgrading from a USB microphone to an XLR microphone early",
+              "Upgrading early from a USB microphone to an XLR microphone with a dedicated interface",
               "Recording room tone and listening back at honest volume before ending a session",
-              "Buying a hardware de-esser to control sibilance at the source",
-              "Using a paid DAW rather than free recording software",
+              "Buying a dedicated hardware de-esser to control sibilance before it reaches the recording",
+              "Using a professionally licensed paid DAW rather than one of the free recording programs",
             ],
             correctIndex: 1,
             explanation:
@@ -937,10 +937,10 @@ U.S. Bureau of Labor Statistics. (2024). *Announcers and DJs*. Occupational Outl
           {
             prompt: "How does this course characterize the pay-to-play casting platforms?",
             options: [
-              "A scam to avoid entirely in favor of agent representation",
+              "A scam that working performers avoid entirely in favor of agent representation",
               "A real entry channel to use with a measured budget and clear eyes on its rate pressure",
-              "The only route through which beginners can reach paid work",
-              "A union-run service that enforces minimum rates on every job",
+              "The only realistic route through which beginning performers can reach their first paid work",
+              "A union-operated casting service that enforces minimum rates on every job it lists",
             ],
             correctIndex: 1,
             explanation:
@@ -950,10 +950,10 @@ U.S. Bureau of Labor Statistics. (2024). *Announcers and DJs*. Occupational Outl
           {
             prompt: "Why does the demo come after training rather than before?",
             options: [
-              "Casting platforms refuse demos from performers without credits",
-              "Demo producers require proof of completed coursework first",
+              "The casting platforms refuse to list demos from performers without professional credits",
+              "Reputable demo producers require proof of completed coursework before booking a session",
               "A demo records your current ceiling, so cutting one before the ceiling rises wastes the money",
-              "Agents legally cannot submit demos from non-union performers",
+              "Talent agents are legally barred from submitting demos recorded by non-union performers",
             ],
             correctIndex: 2,
             explanation:
@@ -963,9 +963,9 @@ U.S. Bureau of Labor Statistics. (2024). *Announcers and DJs*. Occupational Outl
           {
             prompt: "What is the honest reason this course gives for auditioning being 'the job'?",
             options: [
-              "Auditions pay a small fee that adds up to steady base income",
-              "Unions require a minimum number of auditions per quarter",
-              "Casting keeps files of every audition for future direct bookings",
+              "Each audition pays a small reading fee, which adds up to a steady base income over time",
+              "The performers' unions require members to complete a minimum number of auditions per quarter",
+              "Casting offices keep files of every submitted audition to draw on for future direct bookings",
               "The submitted-to-booked ratio is lopsided for everyone, so submitting is the recurring daily work",
             ],
             correctIndex: 3,
