@@ -351,6 +351,13 @@
       "when": 1786281281602,
       "tag": "0049_typical_the_leader",
       "breakpoints": true
+    },
+    {
+      "idx": 50,
+      "version": "7",
+      "when": 1787027002224,
+      "tag": "0050_lying_nighthawk",
+      "breakpoints": true
     }
   ]
 }

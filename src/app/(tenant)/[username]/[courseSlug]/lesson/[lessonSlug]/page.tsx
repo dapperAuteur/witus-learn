@@ -9,6 +9,7 @@ import { MarkCompleteButton } from "@/components/mark-complete-button";
 import { RecallPlayer } from "@/components/recall-player";
 import { ProgressBar } from "@/components/progress-bits";
 import { CurriculumFeedback } from "@/components/curriculum-feedback";
+import { NotesPanel } from "@/components/notes-panel";
 import { AssignmentSubmit } from "@/components/assignment-submit";
 import { getSubmission } from "@/db/queries/assignments";
 import { buildCrossroads } from "@/lib/crossroads";
@@ -344,6 +345,10 @@ export default async function LessonPage({ params }: Params) {
           ))}
         </p>
       ) : null}
+
+      {/* Personal notes (plans/61). Auditors record nothing, so they get no notes panel; the
+          API refuses their writes regardless. */}
+      {access.open && canRecord ? <NotesPanel courseId={view.course.id} lessonId={lesson.id} /> : null}
 
       {access.open && view.session ? (
         <CurriculumFeedback courseId={view.course.id} lessonId={lesson.id} />
