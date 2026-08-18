@@ -32,11 +32,15 @@ export function adminStatTiles(c: AdminHomeCounts): AdminStatTile[] {
     { href: "/admin/dashboard", label: "Learners", value: s.learners },
     { href: "/admin/dashboard", label: "Active enrollments", value: s.enrollments },
     {
-      href: "/courses",
+      // The vetting queue, not the public catalog: this tile is where the owner goes to mark
+      // courses vetted, and losing that button was a reported regression (2026-08-18). With
+      // nothing waiting it still lands on /teach, the management surface.
+      href: s.unvettedCourses > 0 ? "/teach?status=unvetted" : "/teach",
       label: "Courses published",
       value: s.publishedCourses,
       hint:
-        `of ${s.courses} total` + (s.unvettedCourses > 0 ? ` · ${s.unvettedCourses} unvetted` : ""),
+        `of ${s.courses} total` + (s.unvettedCourses > 0 ? ` · ${s.unvettedCourses} unvetted, review them` : ""),
+      attention: s.unvettedCourses > 0,
     },
     { href: "/admin/gradebook", label: "Completions", value: s.completions },
     {

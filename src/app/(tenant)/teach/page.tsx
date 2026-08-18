@@ -11,7 +11,12 @@ export const metadata: Metadata = { title: "Teach" };
 
 // Minimal instructor surface: create a course + list your own (drafts + published).
 // The full authoring dashboard (modules/lessons/quizzes) builds on the CRUD APIs.
-export default async function TeachPage() {
+export default async function TeachPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ status?: string }>;
+}) {
+  const { status } = await searchParams;
   const tenant = await requireTenant();
   const session = await getSession();
 
@@ -138,6 +143,7 @@ export default async function TeachPage() {
             instructorLabel: labelFor(c),
           }))}
           canVet={owner}
+          initialStatus={status}
         />
       )}
     </main>
