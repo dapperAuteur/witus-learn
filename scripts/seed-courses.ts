@@ -24,6 +24,7 @@ import { CROQUET_COURSE } from "./data/croquet-course";
 import { SURVIVAL_COURSE } from "./data/survival-course";
 import { FOOTBALL_COURSE } from "./data/football-course";
 import { BROADCASTING_COURSE } from "./data/broadcasting-course";
+import { VOICE_ACTING_COURSE } from "./data/voice-acting-course";
 import { GOLF_COURSE } from "./data/golf-course";
 import { HOODOO_COURSE } from "./data/hoodoo-course";
 import { HOODOO_COMPLETE_COURSE } from "./data/hoodoo-complete-course";
@@ -856,6 +857,12 @@ async function main() {
     { slug: "croquet", course: CROQUET_COURSE, category: "Sports" },
     { slug: "off-grid-survival", course: SURVIVAL_COURSE, category: "Survival" },
     { slug: "broadcasting-break-in", course: BROADCASTING_COURSE, category: "Careers & Media" },
+    // Voice Acting: The Instrument (plans/65 Phase 1). Career-craft sibling of broadcasting-break-in:
+    // the instrument end to end (breath/folds/articulators, health, mic, room, script analysis,
+    // genres, business). Deliberately promises no coaching, community, or work; quotes no rates
+    // (points at the community rate guides instead). Becomes VOICE-01 when a second VOICE course
+    // ships; a one-course series badge would promise a track that does not exist yet.
+    { slug: "voice-acting", course: VOICE_ACTING_COURSE, category: "Careers & Media" },
     { slug: "hoodoo-tradition-of-resistance", course: HOODOO_COURSE, category: "Culture & History" },
     { slug: "hoodoo-complete", course: HOODOO_COMPLETE_COURSE, category: "Culture & History" },
     // The Great Migration — homeschool-friendly cultural history, companion to Hoodoo (how

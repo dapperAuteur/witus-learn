@@ -268,7 +268,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   lesson recording** (offline-first audio: MediaRecorder → IndexedDB → queued Cloudinary upload →
   auto-attach + mark recorded). Migration 0020.
 
-- 🔧 **Media verification** (\`feat/admin-media-verify\`): owner-only **/admin/media**, the third
+- ✅ **Media verification** (\`feat/admin-media-verify\`): owner-only **/admin/media**, the third
   review list beside Citations and Source checks, and the one that covers what neither of those can.
   Every uploaded **image, video, audio file and document** is registered in the tenant-scoped
   \`media_assets\` table (migration **0049**) with its **provenance triple** (credit, rights status,
@@ -281,7 +281,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   a foreign-tenant id rather than redirecting. Pure clearance logic in \`src/lib/media-verify.ts\`
   (\`isCourseMediaCleared\`), unit-tested plus an isolation test.
 
-- 🔧 **Review context, "where in the course is this?"** (\`feat/review-lesson-context\`, **no
+- ✅ **Review context, "where in the course is this?"** (\`feat/review-lesson-context\`, **no
   migration**): every review surface was asking for a judgment call on a fragment cut out of its
   lesson. Citations showed a bare APA string and asked whether it supports *what the lesson claims*;
   Source checks asked about a hedge without showing the sentence that hedges; Media showed a picture
@@ -302,7 +302,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   catalog; an ambiguous slug links to nothing, matching \`getCourseByIdOrSlug\`. The auditor board
   feeds the lookup from the same groups that already encode the grant, so it cannot widen it.
 
-- 🔧 **Connection graph** (\`feat/admin-connection-graph\`, **no migration**): owner-only
+- ✅ **Connection graph** (\`feat/admin-connection-graph\`, **no migration**): owner-only
   **/admin/graph**, which answers the two questions a 180-course catalog cannot answer by scrolling:
   *what is this course connected to*, and *what is connected to nothing?* **Derived at request time**
   from live rows, never stored, so there is no regeneration step to forget and no stale copy to
@@ -331,7 +331,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   \`src/lib/ecosystem.ts\` because it isn't registered in the canonical \`gemini/witus/lib/products.ts\`
   yet (don't assert a guessed URL). CHECK BACK: once RideWitUS is registered there / goes public,
   add its real \`slug\` + \`href\` + \`tagline\` to \`ECOSYSTEM_PRODUCTS\` so it appears in the cross-promo picker.
-- 🔧 **UI/UX overhaul**: north star **active-practice / mastery** (Duolingo + Brilliant + Khan).
+- ✅ **UI/UX overhaul**: north star **active-practice / mastery** (Duolingo + Brilliant + Khan).
   Decisions locked: home = **Direction B (mastery dashboard)**; lesson loop = **one idea → drill →
   coach → next**; gamification = **light layer now** (streaks/goal/mastery), **XP + badges Phase 2**,
   **leaderboards/leagues = per-tenant toggle**; accent = **per-tenant + disciplined**, feedback
@@ -342,7 +342,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   dashboard restyle). **Phase 3c done** (login card + schools cards + skip-to-content link; lang/alt/
   labels/aria/focus-visible verified). **Only remaining:** final **accent/tone values** (deferred to
   BAM) + any deeper a11y polish. The active-practice redesign is essentially complete. BAM likes CentOS.
-- 🔧 **Accessibility / WCAG**: global \`:focus-visible\` ring + \`prefers-reduced-motion\` shipped;
+- ✅ **Accessibility / WCAG**: global \`:focus-visible\` ring + \`prefers-reduced-motion\` shipped;
   labeled copy controls; \`role=status\` aria-live form feedback. Remaining: full contrast audit +
   a comprehensive keyboard/screen-reader sweep across every surface.
 - ✅ **Offline support (PWA)**: conservative per-origin service worker (network-first navigation +
@@ -577,7 +577,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   Tenant isolation is tested (a bundle 404s across tenants and never surfaces another tenant's course).
   Promos and ecosystem cross-promo (CentenarianOS, FlashLearnAI) already worked and are unchanged.
   **After merge: \`pnpm db:migrate:prod\`, then \`pnpm seed:bundles\`.**
-- 🔧 **Price-change check and warning** (\`src/lib/price-change.ts\`, no migration). A price is
+- ✅ **Price-change check and warning** (\`src/lib/price-change.ts\`, no migration). A price is
   changeable from two places, \`/admin/pricing\` and a course's own settings form, and until now both
   saved silently, so a free funnel course could be made paid by a stray click and nobody would know
   what that did. One pure helper now classifies a proposed change (free to paid, paid to free, an
@@ -593,7 +593,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   (\`src/lib/gating.ts\` checks enrollment before price, and no price path touches enrollments), with
   the subscription case worded honestly, since a deleted Stripe subscription does cancel that
   enrollment.
-- 🔧 **Bundle proposals + the bundle-sales gap** (\`src/lib/bundles.ts\`, on \`/admin/pricing\`).
+- ✅ **Bundle proposals + the bundle-sales gap** (\`src/lib/bundles.ts\`, on \`/admin/pricing\`).
   Six themed bundles (the full route series, Black History Through Place, Civics Essentials, the state
   civics collection, the two structural paths, and the global labor series), each with an APP price and
   a TpT price and a separate justification for each channel; app savings are computed live from the
@@ -603,7 +603,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   SALES: the app cannot yet sell a bundle, because it is a payments feature with a prod migration and a
   webhook that grants paid access, so it is scoped as its own reviewed branch in \`plans/48\` rather
   than rushed. Prices are recommendations; nothing changes a live price.
-- 🔧 **Market comparison on /admin/pricing** (\`src/lib/market-comparison.ts\`, owner-only). Every
+- ✅ **Market comparison on /admin/pricing** (\`src/lib/market-comparison.ts\`, owner-only). Every
   competing product a price recommendation is reasoned against, with a clickable link, the price, the
   DATE it was gathered, and an honest alike/different pair for each. Written because the pricing page
   named comparisons ("well below Coursera's $39-79") that the owner could not see, click, or check,
@@ -614,7 +614,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   competitor is genuinely better, because a table where we win every row is useless for setting a
   price. Anchors also render per bundle. Seeded with the drone/360 vocational market (Drone Launch
   Academy, Pilot Institute, Udemy) plus the catalog-wide Coursera anchor.
-- 🔧 **Proposed pricing** (\`/admin/pricing\`, owner-only): a fair-and-competitive price
+- ✅ **Proposed pricing** (\`/admin/pricing\`, owner-only): a fair-and-competitive price
   recommendation for every course, in five tiers (Free, Foundation $9, Core $19, Premium $29,
   Certification prep $39), assigned by category with per-course overrides (US Civics 101 free as a
   funnel; the Green Book flagship and the two capstones at Premium; FAA Part 107 at Certification;
@@ -642,7 +642,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   no-signup demo. The homeschool page asserts no state's requirements; the community page carries the
   "communities educating themselves" heritage generally and points to the catalog's cited history
   courses for specifics. Still notes: the Teachers Pay Teachers course packets.
-- 🔧 **Unvetted courses, "Coming soon"** (\`feat/unvetted-coming-soon\`, **migration 0041**): a nullable
+- ✅ **Unvetted courses, "Coming soon"** (\`feat/unvetted-coming-soon\`, **migration 0041**): a nullable
   \`courses.vetted_at\` records that the platform owner personally reviewed a course. NULL = unvetted,
   and the migration deliberately does **not backfill**, so every existing course reads as unvetted the
   moment it runs (that IS the bulk "move them all to Coming soon" request). An unvetted course keeps a
@@ -669,7 +669,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   an email tool. Filters resolve only against the requesting tenant's own courses and bundles, so an
   id from another school selects nobody. **Vetting a course does NOT auto-email its waiting list**
   (BAM's decision): the list is his to mail when he chooses.
-- 🔧 **Invite-to-audit** (\`feat/course-auditors\`, **migration 0042**): the last open seat in plans/52.
+- ✅ **Invite-to-audit** (\`feat/course-auditors\`, **migration 0042**): the last open seat in plans/52.
   The owner, or a course's own instructor, invites an email from the course's \`/teach/<course>\` page;
   the invitee follows a link, accepts, signs in with that address, and can then **read every lesson of
   that ONE unvetted course** while everyone else still sees the public "Coming soon" page. The gate
@@ -687,7 +687,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   hides mark-complete, recall and assignment submission, and the quiz renders every question with
   "this quiz is not scored". A grant confers **nothing once the course is vetted**, so a forgotten
   invite is not free access forever. Revoke is one click and takes effect on the next request.
-- 🔧 **Platform + demo landing pages** (\`feat/platform-demo-landing\`): two public marketing pages,
+- ✅ **Platform + demo landing pages** (\`feat/platform-demo-landing\`): two public marketing pages,
   shown only on Learn.WitUS itself (\`tenant.flags.recruiting\`, 404 elsewhere so a white-label school
   never advertises the platform underneath it): **\`/platform\`** pitches Learn.WitUS as a product for
   prospective school operators (own domain, cited/media-rich courses, live classes + cohorts, parent
@@ -699,7 +699,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   (dev only) \`acme.localhost\` on the dev port; if none exists yet the button degrades to a "not
   published yet" note instead of a dead link. Linked from a new **Demo** nav item, the home page's
   recruiting block, and the ecosystem footer. No migration.
-- 🔧 **The standards finder honours \`?course=\` without a state** (\`fix/standards-course-without-state\`):
+- ✅ **The standards finder honours \`?course=\` without a state** (\`fix/standards-course-without-state\`):
   every course page (and every "Coming soon" landing page) links to \`/academic-standards?course=<slug>\`
   under "See the full standards detail for this course", and that URL used to land on the generic state
   chooser, which **ignored the course param entirely**. Someone who asked "where does THIS course count?"
@@ -720,7 +720,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   helpers \`standardsHref\` / \`courseJurisdictions\` plus 5 isolation tests. No migration.
 
 ## Content
-- 🔧 **Lesson images that carry their own provenance** (\`feat/figure-directive\`): a new
+- ✅ **Lesson images that carry their own provenance** (\`feat/figure-directive\`): a new
   \`:::figure <url> ||| <alt> ||| <caption> ||| <credit>\` directive, plus \`pnpm check:figures\` in
   \`pnpm lint\` (a ratchet, no grandfathered list, and none should ever be added). Markdown's own
   \`![]()\` renders an image but has nowhere to put a CREDIT, and in this catalog an unattributed
@@ -733,7 +733,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   all public domain or CC0, registered into /admin/media by the new \`pnpm register:media\` and
   awaiting approval. Renders a semantic \`<figure>\`/\`<figcaption>\` so the caption is
   programmatically tied to the image rather than merely near it. No migration.
-- 🔧 **The catalog's first CONCEPT entities** (\`feat/dragons-shared-surfaces\`, \`plans/58\` §5).
+- ✅ **The catalog's first CONCEPT entities** (\`feat/dragons-shared-surfaces\`, \`plans/58\` §5).
   Direct answer to what /admin/graph found: 20 of 22 categories were islands, because a case, a law
   or a place can only link courses that share a period and a geography. A CONCEPT links courses that
   share neither, which is the only edge type that can cross a category boundary. Four added, and two
@@ -747,7 +747,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   Every course listed was checked against the actual lesson text first. Also adds a second
   \`:::timeline\` lane pair to the catalog rail (**claim vs evidence**, free-form lane strings so no
   code change) and 7 globe pins. No migration.
-- 🔧 **Here Be Dragons: how we learned what the world is** (\`content/here-be-dragons-series\`,
+- ✅ **Here Be Dragons: how we learned what the world is** (\`content/here-be-dragons-series\`,
   \`plans/58\`). **Five courses, 109 lessons**, Culture & History, aimed squarely at the grades 9-12
   **homeschool/teacher market**. Monsters at the Edge of the Map (20) · Giants, Dragons, and the
   Bones They Came From (22) · Deep Time and the Dinosaur Renaissance (25) · Wrong for Good Reasons
@@ -788,7 +788,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   115/119 → **120/123**. Images are deliberately absent: the \`:::figure\` directive and its guard
   have not shipped, and the public-domain scans are **operator task 243**. Every lesson stands on
   its text.
-- 🔧 **Course codes: a catalog that says where to start** (\`feat/storytelling-true-track\`,
+- ✅ **Course codes: a catalog that says where to start** (\`feat/storytelling-true-track\`,
   migration 0047, task 235). Courses and categories now render in **curriculum order by default**
   (category \`sort_order\`, then position within a series, then title; "Newest" is still one click
   away but it is an owner's view, not a learner's), and every course in a series carries a **code
@@ -802,7 +802,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   **badge, never a title prefix**: the title is also the OG card, the JSON-LD name and the
   citation-list heading, so \`"STORY-T3 · Documentary"\` would break a search for "Documentary" in
   all of them. A half-coded series degrades to a plain list rather than to a page missing courses.
-- 🔧 **/series, the course-paths front door** (\`feat/storytelling-true-track\`). \`/series/<slug>\`
+- ✅ **/series, the course-paths front door** (\`feat/storytelling-true-track\`). \`/series/<slug>\`
   could already explain one path, but nothing linked to it and nothing listed the others, so a
   learner had to already know a series existed to find the page explaining it: the menu-orphan
   failure one level up. \`/series\` now lists every series this tenant publishes with the two facts
@@ -811,7 +811,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   series NAME is information about another school; two isolation cases added, one for the series
   list and one proving the curriculum sort's category join cannot pull a foreign sort_order (a leak
   whose only symptom would be a wrong ORDER, with no foreign course returned).
-- 🔧 **Storytelling series COMPLETE, ten courses** (\`feat/storytelling-true-track\`). Courses #6-#10
+- ✅ **Storytelling series COMPLETE, ten courses** (\`feat/storytelling-true-track\`). Courses #6-#10
   finish both tracks and the capstone. **News storytelling** (\`T2\`): news may select and arrange
   but never invent, so the ethics are made of choices rather than lies. **Documentary** (\`T3\`):
   Nichols' modes as promises, consent as a process rather than an event, and an edit whose
@@ -823,7 +823,17 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   capstone, which reads the True track backwards and lands the series' hardest point, that a thing
   which looks unproduced was produced to look unproduced, so roughness is no grounds for belief and
   the real grounds are sourcing, disclosure, method and accountability.
-- 🔧 **BVC Sommelier series, course #1: Wine** (\`feat/bvc-sommelier-wine\`, plans/53). A skills sequel
+- ✅ **Voice Acting: The Instrument** (\`content/voice-acting\`, plans/65 Phase 1). 18 lessons in
+  Careers & Media, the career-craft sibling of \`broadcasting-break-in\`: how the voice works
+  (power/source/filter, cited to Titze and NIDCD), vocal health with clinical referrals to SLPs,
+  articulation (plosives, sibilance, over-enunciation, an honest lisp section), mic technique, room
+  treatment on a budget, levels, script analysis (Berry's one-listener discipline), the genre map,
+  and a business lesson that quotes NO rates (points at the GVAA community guide and SAG-AFTRA) and
+  promises no coaching, community, or work, unlike the live-cohort school whose syllabus inspired
+  it. Four shuffled 8-question banks, reveals + recall throughout, standards-excused as vocational.
+  Seeded by \`pnpm seed:courses\`; citations staged AFTER seeding (the extractor reads the DB); gets
+  code VOICE-01 when a second VOICE course ships. BAM sets price + vetted state in the admin UI.
+- ✅ **BVC Sommelier series, course #1: Wine** (\`feat/bvc-sommelier-wine\`, plans/53). A skills sequel
   to BVC S2E9 "Wine: Blood of the Earth": that episode teaches wine's history, this one teaches
   tasting and choosing. 52 lessons in 12 modules at WSET-2-ish depth (the four-stage grid and six
   structural components, ~20 grapes sorted by structure, climate and an honest account of terroir,
@@ -835,7 +845,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   Ships with a shared scaffold (\`scripts/lib/sommelier.ts\` + \`seriesSlug\`/\`freePreviewCount\` on the
   authored-course seeder) that the chocolate, coffee, tea, beer, whiskey, rum and cannabis courses
   inherit. Seeded by \`pnpm seed:sommelier\`. BAM sets the price and the vetted state in the admin UI.
-- 🔧 **BVC Sommelier #2 and #3: Coffee and Chocolate** (\`feat/sommelier-coffee-chocolate\`). The first
+- ✅ **BVC Sommelier #2 and #3: Coffee and Chocolate** (\`feat/sommelier-coffee-chocolate\`). The first
   **un-gated** courses in the series, deliberately: wine sits behind a 21+ wall, so the series needed a
   front door that does not. **Coffee** (24 lessons, 8 flights, sequel to S1E1) teaches the cupping
   protocol, acidity as a virtue, extraction as something you can taste and correct, water as the
@@ -845,7 +855,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   clusters, and the labour and living-income facts with sources. Each carries a required parallel path
   for non-consumers (caffeine-free, dairy-free/lower-sugar) via the generalised \`Flight.alternate\`
   field on the shared scaffold. Both seeded by \`pnpm seed:sommelier\`.
-- 🔧 **"Also discussed in" on lesson pages, and a year brush on the globe** (plans/45 follow-ups). A
+- ✅ **"Also discussed in" on lesson pages, and a year brush on the globe** (plans/45 follow-ups). A
   lesson that NAMES a cross-course entity now carries a quiet "Also discussed in other courses" line
   linking to the entity page, matched by scanning the lesson text (no per-lesson tagging), tenant-scoped
   and shown only when at least two of the tenant's courses cover it. And the globe gained a year brush
@@ -854,7 +864,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   and an "as of" slider reveals the dated places over time while undated pins always show, so place and
   time move together. Years are a curated seed drawn from the courses; the set grows as more pins earn
   a defensible date.
-- 🔧 **Cross-course entities, surfaced in search** (plans/45 Part 3). Eleven people, cases, laws, and
+- ✅ **Cross-course entities, surfaced in search** (plans/45 Part 3). Eleven people, cases, laws, and
   concepts the route series and its capstone argue about (Berman v. Parker, Milliken, Buchanan,
   Shelley, Kelo, the 1949/1956/1964 Acts, Unigov, Dillon's Rule, building-and-loans, North Carolina
   Mutual, the Great Migration) now have an ENTITY PAGE at \`/e/<slug>\` listing every course that
@@ -864,7 +874,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   tenant has at least two of its courses. Curated seed in code (\`src/lib/entities.ts\`), so no
   migration; the DB-backed author-declared model stays the plans/45 follow-up. Timeline panel added to
   \`/globe\` too, the doctrinal-and-policy spine on one axis beside the map.
-- 🔧 **The explore globe** (plans/45, \`/globe\`). A rotating, draggable orthographic globe of the
+- ✅ **The explore globe** (plans/45, \`/globe\`). A rotating, draggable orthographic globe of the
   places our courses are about, where zoom controls pin DENSITY (semantic zoom, not just dot size): far
   out shows only tier-1 hubs, zoom in reveals the rest. Drag rotates, wheel/buttons/arrow-keys zoom, and
   a pin on the far hemisphere is culled with \`geoDistance > PI/2\`. It is a projection swap on the
@@ -875,7 +885,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   publishes the course it points to. Linked from /explore (\`Spin the globe\`). Pins are a curated set
   of real course locations (\`src/lib/globe-pins.ts\`); coordinates are ordinary city/site coordinates,
   several reused from the verified How the Tools Travelled map, nothing invented.
-- 🔧 **Map time-slider** (plans/44 Option B). The map lesson gains an optional \`year\` on any marker,
+- ✅ **Map time-slider** (plans/44 Option B). The map lesson gains an optional \`year\` on any marker,
   line, or polygon; when present, a Play button and a year slider appear and the map reveals elements
   as of the chosen year, so a learner watches the pins light up over time (diffusion). An element with
   no year always shows, so every existing map renders exactly as before. Play steps through the
@@ -883,7 +893,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   dated doctrinal markers now light up in order, 1917 Buchanan BEFORE the 1949 federal upstream, which
   is the course's own chronology point (an instrument that arrives after a practice is not its cause).
   All six years are verified from the course text. Next in plans/45: the explore-map globe.
-- 🔧 **Visual timelines: the \`:::timeline\` block** (plans/44 Option C, the cheapest first step). A
+- ✅ **Visual timelines: the \`:::timeline\` block** (plans/44 Option C, the cheapest first step). A
   fenced block inside any lesson body renders a vertical, dated list on one shared time axis, so a
   course can SHOW co-occurrence (two things happening at once) instead of asserting it. Syntax mirrors
   the \`:::reveal\` family: \`:::timeline Optional title\` then \`year | lane | text\` (or
@@ -1054,7 +1064,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   These courses also **cut** load-bearing claims rather than repeat them: Rosenwald's ubiquitous
   "$18.1 million in public funds" and Greenwood's "a dollar circulated 19 times", both cut on method,
   the second turned into the worked example of a claim to refuse. **Re-run \`pnpm seed:courses\`.**
-- 🔧 **The "longest option" tell: measured, guarded, and FAA fixed** (\`fix/longest-option-tell\`).
+- ✅ **The "longest option" tell: measured, guarded, and FAA fixed** (\`fix/longest-option-tell\`).
   The sibling of the answer-position tell below, and the same defect from the other direction: the
   right answer collects the qualifier and the "because" clause while the distractors stay short, so a
   learner can **click the longest option without reading the prompt**. \`shuffleOptions\` does NOT
@@ -1169,7 +1179,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
 - ✅ **"Read Your Body's Data" metrics tracker, decided: keep on CentOS.** The course logs daily
   numbers in CentenarianOS's tracker (\`centenarianos.com/dashboard/metrics\`); the course now links
   learners there directly. witus does NOT build its own tracker (ecosystem: metrics live in CentOS).
-- ✅ **Deepen the languages** (in branch): per-tense fill-in EXERCISES (forgiving on accents) +
+- ✅ **Deepen the languages**: per-tense fill-in EXERCISES (forgiving on accents) +
   a **sentence-evaluating coach**: the learner writes a sentence and the AI checks grammar/word-order
   grounded only in the course, cites the rule, and gives a next prompt.
 - ✅ **Language DIALOGUE lessons** (es/fr/pt/it): a "Dialogues" section per course with 3 realistic
@@ -1242,7 +1252,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   unverified in fact-checking (Philadelphia's "500%" figure, a Ray Atkeson 1943 photo attribution)
   were cut/softened rather than asserted. Ships with the **Great Migration map** (see Platform
   Maps). \`pnpm seed:courses\` picks it up. Companion to Hoodoo + Civics.
-- 🔧 **The Great Migration: How Six Million People Remade America (and the World)** (Culture &
+- ✅ **The Great Migration: How Six Million People Remade America (and the World)** (Culture &
   History, \`content/great-migration-world\`). A high-school-level companion to the homeschool
   Great Migration course above, built on Isabel Wilkerson's three-family frame (Ida Mae Gladney,
   George Starling, Robert Foster) with an explicit GLOBAL pillar. 8 sections, 29 lessons (20
@@ -1257,7 +1267,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   hedged, and the Philadelphia "500%" flagged as a verify, do not repeat moment. \`pnpm seed:courses\`
   picks it up. Distinct slug (\`great-migration-and-the-world\`), file, and export from the course
   above; cross-links Hoodoo, History of Unions, and Pan-Africanism.
-- 🔧 **The Green Book: How to Read a Route** (Culture & History,
+- ✅ **The Green Book: How to Read a Route** (Culture & History,
   \`content/green-book-read-a-route\`). **Opens the route-courses series**
   (\`plans/37-green-book-route-courses.md\`, Phase 1, course 1) and is the **prerequisite for every
   later site course** in it. Deliberately a METHOD course, not a site tour: high-school-and-up
@@ -1279,7 +1289,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   survey exists. A genuine source disagreement (which edition first carried the Latimore) is kept
   and taught rather than smoothed. Closes with a research assignment on a real address.
   \`pnpm seed:courses\` picks it up; no migration.
-- 🔧 **Indiana Avenue: A District and What Replaced It** (Culture & History,
+- ✅ **Indiana Avenue: A District and What Replaced It** (Culture & History,
   \`content/indiana-avenue\`). **The PILOT SITE COURSE of the route-courses series**
   (\`plans/37-green-book-route-courses.md\` §1) and course 1 of the Indianapolis cluster
   (\`plans/39-indianapolis-pilot-cluster.md\`). It is the first course to run the **six-beat site
@@ -1322,7 +1332,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   NATIONAL and says so: the lesson map renders a world projection, so a nine-block corridor is
   smaller than one marker, and the limitation becomes the beat-5 lesson about matching map scale to
   question. \`pnpm seed:courses\` picks it up; no migration.
-- 🔧 **Training the Colonizer: The Knowledge That Was Taken** (Culture & History,
+- ✅ **Training the Colonizer: The Knowledge That Was Taken** (Culture & History,
   \`content/training-the-colonizer\`). What enslaved and colonized people taught their enslavers, for
   high school students. 6 sections: rice and the **Black Rice debate** (Carney 2001 taught AS a debate
   beside Eltis, Morgan & Richardson 2007, no winner), indigo and cattle, building and ironwork,
@@ -1330,7 +1340,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   watercraft. The through-line, stated plainly: the knowledge was coerced, uncredited, and
   uncompensated. Cited (Carney, Wood, Littlefield, Dawson, Harris, Twitty); building attributions
   given as documented labor, not design. \`pnpm seed:courses\` picks it up.
-- 🔧 **Clean: A Global History of Bathing and Soap** (Culture & History, \`content/history-of-bathing\`).
+- ✅ **Clean: A Global History of Bathing and Soap** (Culture & History, \`content/history-of-bathing\`).
   Bathing and soap across traditions, for high school students. 8 sections: Rome (oil and strigil, no
   body soap), the Islamic hammam and hard soap (Aleppo and Nablus), the Indus Great Bath and Japan,
   the Finnish sauna and the Mesoamerican temazcal, Europe's LATER retreat from bathing and slow
@@ -1338,7 +1348,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   bathed" myth on trial and refutes it (a \`:::reveal\` and quiz items test the nuance). Vivid-but-thin
   claims (Moctezuma "twice a day" per Andres de Tapia) are attributed and hedged. Cited (Ashenburg
   2007, Smith 2007, Brown 2009, UNESCO ICH). \`pnpm seed:courses\` picks it up.
-- 🔧 **The History of Unions: America and the World** (Culture & History, \`content/history-of-unions\`),
+- ✅ **The History of Unions: America and the World** (Culture & History, \`content/history-of-unions\`),
   the **anchor of the workers'-rights track**, for high school students. 7 sections · 22 teaching
   lessons · 7 quizzes (15-18-question banks, above the 10-question attempt cap so retries rotate) ·
   1 exercise. The US arc (Knights/AFL → **Haymarket** → Homestead/Pullman → **Triangle** → the
@@ -1360,7 +1370,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   lawful from *Mackay Radio*, **1938**). Registered in \`seed-courses.ts\`; **no migration**,
   \`pnpm seed:courses\`. Cross-links to *Know Your Rights at Work*. Track proposal (11 country
   courses, 3 build waves) at \`/admin/future\`.
-- 🔧 **Germany: Workers on the Board** (Culture & History, \`content/labor-germany\`): **Wave 1** of
+- ✅ **Germany: Workers on the Board** (Culture & History, \`content/labor-germany\`): **Wave 1** of
   the workers'-rights country track, hanging off the anchor above (it does **not** re-tell the
   anchor's German lesson, it cross-links it). 6 sections · 16 teaching lessons · 6 quizzes
   (15-question banks, above the 10-question attempt cap) · 16 \`:::reveal\` self-checks. The payload
@@ -1379,7 +1389,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   right and the "golden cage" critique from the left. Cited to the German statutes themselves,
   Destatis, IAB, OECD/AIAS, ETUI and the Hans-Böckler-Stiftung. Registered in \`seed-courses.ts\`;
   **no migration**, \`pnpm seed:courses\`.
-- 🔧 **Mexico: The Protection Contract, and the Trade Deal That Came for It** (Culture & History,
+- ✅ **Mexico: The Protection Contract, and the Trade Deal That Came for It** (Culture & History,
   \`content/labor-mexico\`), **Wave 1 of the workers'-rights country track** and the **answer to the
   anchor's bleak ILO lesson** ("the floor is made of paper"). 5 sections · 10 teaching lessons ·
   5 quizzes (15-16-question banks, above the 10-question attempt cap so retries rotate) · 1 exercise.
@@ -1404,7 +1414,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   quantified** (no reliable count exists, and the course says so), and an unverifiable "BBB" petition
   named in an early draft was **cut rather than cited**. Registered in \`seed-courses.ts\`; **no
   migration**, \`pnpm seed:courses\`. Cross-links to the anchor and *Know Your Rights at Work*.
-- 🔧 **Sweden & Denmark: The Wage Floor That Isn't a Law** (Culture & History, \`content/labor-nordics\`),
+- ✅ **Sweden & Denmark: The Wage Floor That Isn't a Law** (Culture & History, \`content/labor-nordics\`),
   **Wave 1 of the workers'-rights track**, a country course hanging off the anchor, for high school
   students. 6 sections · 14 teaching lessons · 6 quizzes (14-15-question banks, above the 10-question
   attempt cap so retries rotate) · 1 exercise (diagnose-the-mechanism). The reframe: **neither country
@@ -1423,7 +1433,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   ETUI, Eurofound, Kjellberg, the national confederations, and the EU directive text. Registered in
   \`seed-courses.ts\`; **no migration**, \`pnpm seed:courses\`. Sibling of the (separately branched)
   Germany course; cross-links the anchor and *Know Your Rights at Work*.
-- 🔧 **Poland: Solidarność, When a Union Brought Down a State** (Culture & History,
+- ✅ **Poland: Solidarność, When a Union Brought Down a State** (Culture & History,
   \`content/labor-poland\`), Wave 1 of the workers'-rights **country track**, for high school
   students. **6 sections · 13 teaching lessons · 1 exercise · 6 quizzes** (15-question banks, above
   the 10-question attempt cap so retries rotate; every question carries \`explanation\` +
@@ -1443,7 +1453,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   contracts" (\`umowy śmieciowe\`) rhyme** with US misclassification + Mexican protection contracts,
   the track's payoff. Cited to UNESCO, the European Solidarity Centre, GUS, OECD/AIAS, ETUI and
   Eurofound. Registered in \`seed-courses.ts\`; **no migration**, \`pnpm seed:courses\`.
-- 🔧 **India: When Most Workers Have No Employer** (Culture & History, \`content/labor-india\`),
+- ✅ **India: When Most Workers Have No Employer** (Culture & History, \`content/labor-india\`),
   **Wave 2 of the workers'-rights country track**, and the proposal's "single most important course
   in the track": the course where **"worker = employee with an employer" breaks**. **6 sections ·
   14 teaching lessons · 6 quizzes** (15-question banks, above the 10-question attempt cap so
@@ -1469,7 +1479,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   83→3 hazardous list; no current count asserted, the 2021 census was postponed). Cited to the
   ILO/PLFS, the Codes' text, parliamentary answers, Supreme Court judgments and SEWA's own record.
   Registered in \`seed-courses.ts\`; **no migration**, \`pnpm seed:courses\`.
-- 🔧 **South Korea: Democracy, the Chaebol, and the Lawsuit as a Weapon** (Culture & History,
+- ✅ **South Korea: Democracy, the Chaebol, and the Lawsuit as a Weapon** (Culture & History,
   \`content/labor-south-korea\`), **Wave 2 of the workers'-rights country track**, for high school
   students. **6 sections · 15 teaching lessons · 6 quizzes** (14-15-question banks, above the
   10-question attempt cap so retries rotate; every question carries \`explanation\` +
@@ -1495,7 +1505,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   enterprise bargaining with **no extension mechanism**; ILO **C87/C98 ratified only 20 Apr
   2021**. Cited to Statistics Korea, MOEL, OECD/AIAS, ILO/NORMLEX, MOFA and the Korean + legal
   press. Registered in \`seed-courses.ts\`; **no migration**, \`pnpm seed:courses\`.
-- 🔧 **Brazil: State-Chartered Unions, a Union-Made President, and the 2017 Rupture** (Culture &
+- ✅ **Brazil: State-Chartered Unions, a Union-Made President, and the 2017 Rupture** (Culture &
   History, \`content/labor-brazil\`), **Wave 2** of the workers'-rights country track, hanging off
   the anchor. **6 sections · 11 teaching lessons · 6 quizzes** (15-question banks, above the
   10-question attempt cap so retries rotate; every question carries \`explanation\` +
@@ -1519,7 +1529,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   (Penal Code art. 149, conditions, not chains), the **GEFM** (68,000+ rescued since 1995; 2,772
   in 2025, +38%, Repórter Brasil reporting MTE data) and the public **"lista suja"** (Oct 2025:
   +159 employers). Registered in \`seed-courses.ts\`; **no migration**, \`pnpm seed:courses\`.
-- 🔧 **Chile: A Labor System Designed to Be Weak** (Culture & History, \`content/labor-chile\`),
+- ✅ **Chile: A Labor System Designed to Be Weak** (Culture & History, \`content/labor-chile\`),
   **Wave 2** of the workers'-rights country track, and the learner's recommended **LAST** country
   course. **6 sections · 14 teaching lessons · 6 quizzes** (15-question banks; every question
   carries \`explanation\` + \`sourceLessonSlug\`) **· 1 exercise** ("name the design"). The one course
@@ -1545,7 +1555,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   En contra; Servel). Cited to OECD/AIAS, BCN/LeyChile, Dirección del Trabajo, Memoria Chilena,
   Servel, Fundación Sol, Álvarez (2012) and Piñera (1990). Registered in \`seed-courses.ts\`;
   **no migration**, \`pnpm seed:courses\`.
-- 🔧 **South Africa: The Union That Helped End Apartheid, Then Joined the Government** (Culture &
+- ✅ **South Africa: The Union That Helped End Apartheid, Then Joined the Government** (Culture &
   History, \`content/labor-south-africa\`), **Wave 2** of the workers'-rights **country track**, for
   high school students. ⚠️ **NEEDS A SOUTH AFRICAN REVIEWER BEFORE PROMOTION** (per the track
   proposal): Marikana is still litigated and the ANC-SACP-COSATU alliance is a live domestic
@@ -1575,7 +1585,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   counter-case stated. Cited to SAHO, the O'Malley Archives, the statutes, Stats SA, the ILO,
   Wilson (1972) and the Marikana Commission report. Registered in \`seed-courses.ts\`; **no
   migration**, \`pnpm seed:courses\` (after review sign-off for promotion).
-- 🔧 **Africa Before Colonization: The Documented Record** (Culture & History,
+- ✅ **Africa Before Colonization: The Documented Record** (Culture & History,
   \`content/africa-precolonial\`), the **anchor of the precolonial-Africa track** (from BAM's
   \`world.md\` queue). **7 sections · 16 teaching lessons · 7 quizzes** (15-16-question banks, above
   the 10-question attempt cap so retries rotate; every question carries \`explanation\` +
@@ -1607,7 +1617,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   records and UNESCO World Heritage documentation. Registered in \`seed-courses.ts\`; **no
   migration**, \`pnpm seed:courses\`. Track proposal (7 follow-on courses + build order) at
   \`plans/future-courses/africa-precolonial-track-proposal.md\` → \`/admin/future\`.
-- 🔧 **Afrocentricity: How to Evaluate a Contested Paradigm** (Culture & History, \`content/afrocentricity\`),
+- ✅ **Afrocentricity: How to Evaluate a Contested Paradigm** (Culture & History, \`content/afrocentricity\`),
   the **anchor of a proposed Afrocentricity track** (\`plans/future-courses/afrocentricity-track-proposal.md\`,
   renders at \`/admin/future\`), for high school students. **6 sections · 15 teaching lessons · 6 quizzes**
   (15-question banks, above the 10-question attempt cap so retries rotate; 90 questions) · 15 \`:::reveal\`
@@ -1630,7 +1640,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   Lefkowitz, Howe, Appiah, Gilroy, mainstream Egyptology and the 2017 aDNA paper (APA 7 + a \`## Sources\`
   list on every lesson). Registered in \`seed-courses.ts\`; **no migration**, \`pnpm seed:courses\`. The
   natural home for BAM's source note \`plans/future-courses/he-did-the-work/Molefi-Kete-Asante.md\`.
-- 🔧 **Pan-Africanism: The Idea, the Movement, the Reckoning** (Culture & History,
+- ✅ **Pan-Africanism: The Idea, the Movement, the Reckoning** (Culture & History,
   \`content/pan-africanism\`), the **anchor of the Pan-Africanism track**
   (\`plans/future-courses/pan-africanism-track-proposal.md\`, renders at \`/admin/future\`), for high
   school students. **6 sections · 16 teaching lessons · 6 quizzes** (15-question banks, above the
@@ -1667,7 +1677,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   Constitutive Act, Meredith, Schmidt, Chevannes, Edmonds, Kesteloot, and Sharpley-Whiting (APA 7 +
   a \`## Sources\` list on every lesson). Registered in \`seed-courses.ts\`; **no migration**,
   \`pnpm seed:courses\`.
-- 🔧 **Pre-Columbian Mesoamerica: Cities, Calendars, and the People Who Are Still Here** (Culture &
+- ✅ **Pre-Columbian Mesoamerica: Cities, Calendars, and the People Who Are Still Here** (Culture &
   History, \`content/precolumbian-mesoamerica\`), the **anchor of the Pre-Columbian Mesoamerica
   track** (7 follow-on courses proposed at
   \`plans/future-courses/precolumbian-mesoamerica-track-proposal.md\`). **7 sections · 17 teaching
@@ -1709,7 +1719,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   sources, Martin & Grube, Cowgill, Smith, Restall, Townsend, INAH reporting, Nature/Science
   papers, the Popol Vuh and Florentine Codex in scholarly translation, and UNESCO. Registered in
   \`seed-courses.ts\`; **no migration**, \`pnpm seed:courses\` (task 109).
-- 🔧 **Asia Before European Colonization: The Center of Gravity** (Culture & History,
+- ✅ **Asia Before European Colonization: The Center of Gravity** (Culture & History,
   \`content/precolonial-asia\`), the **anchor of the precolonial-Asia track** (from BAM's
   \`world.md\` queue), for high school students. **7 sections · 17 teaching lessons · 7 quizzes**
   (15-question banks, above the 10-question attempt cap so retries rotate; 105 questions, every one
@@ -1765,7 +1775,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   (no NGF standalone Black-participation %, because none exists, the absence is taught as the
   finding; no U.S. Women's Amateur handicap limit, because it couldn't be verified).
   \`pnpm seed:courses\` picks it up. First of the five sports courses.
-- 🔧 **Croquet** (\`content/croquet-course\`, Sports): 36 lessons across **8 sectioned modules**
+- ✅ **Croquet** (\`content/croquet-course\`, Sports): 36 lessons across **8 sectioned modules**
   (28 teaching + 8 section quizzes, each quiz a **15-question bank** so the 10-question attempt cap
   actually rotates; every question carries \`sourceLessonSlug\`). The load-bearing constraint:
   **croquet is not one game.** Golf Croquet and Association Croquet (WCF), American Six-Wicket
@@ -1888,7 +1898,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   determinative OTB evidence**; suit dismissed June 2023; resolved Aug 2023) and **no invented
   rates or salaries**, numbers carry a year + source or were cut. Re-run \`pnpm seed:courses\`;
   **no migration**.
-- 🔧 **/explore is a landing page now** (\`feat/explore-landing\`): the Commodity Map page was an
+- ✅ **/explore is a landing page now** (\`feat/explore-landing\`): the Commodity Map page was an
   \`<h1>\`, one sentence, and the map: a tool page that explained nothing and asked for nothing. It
   now answers **what is this → what will my student learn → why trust it → what next**, for the
   people who actually buy (parents, teachers, homeschoolers), each addressed on their own terms.
@@ -1906,7 +1916,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   copy is per-tenant overridable via \`platform_settings\`
   (\`explore_headline\`/\`explore_subhead\`/\`explore_intro\`) with brand-neutral defaults, **no
   migration**. Metadata/OG/JSON-LD tenant-scoped. Mobile-first (no 320px overflow; ≥44px targets).
-- 🔧 **/explore: pricing conversation + the map fixes** (\`feat/explore-pricing-contact\`): closes
+- ✅ **/explore: pricing conversation + the map fixes** (\`feat/explore-pricing-contact\`): closes
   three of the four open questions from \`plans/user-tasks/73\` and three map reports.
   **Age range: answered**, "Designed for high school students" now sits under the \`<h1>\` and in the
   FAQ, per-tenant overridable via \`platform_settings.explore_audience\` (**no migration**).
@@ -1930,7 +1940,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   return; and **sharing /explore now previews the actual map** (\`/api/og?map=1\` renders the tenant's
   OWN pins via d3-geo → SVG → data URI, falling back to the branded card if it has no pins).
 - 🎉 **All 51 jurisdictions mapped: the academic-standards fan-out is COMPLETE** (\`feat/standards-nd-sd\`, \`feat/standards-vt-wy\`, \`feat/standards-sd\`, \`feat/standards-wy\`). The finder and matrix now cover every US state plus the District of Columbia, and \`NEXT_UP\` is empty. The final four: **North Dakota (34 standards, 19 full, 15 partial)**, bespoke social studies with no-registration voting and a low-threshold initiative; **South Dakota (34 standards, 29 full, 5 partial)**, whose revised 2023 \`9-12.C.17\` anchors South Dakota and Native American government nearly 1:1 to \`state-civics-sd\`; **Vermont (17 standards, 5 full, 12 partial)**, the social-studies edge case that adopted the national C3 Framework rather than publishing its own codes (mapped honestly onto the general civics indicators, with the Vermont-specific gap documented), plus its independent-republic origin and 1777 adult-slavery ban; and **Wyoming (17 standards, 5 full, 12 partial)**, whose \`SS12.1.5\` names both the United States and Wyoming constitutions, giving the flagship a real home (the 1889 constitution, the five-officer plural executive with no lieutenant governor). No migration, no seed.
-- 🔧 **West Virginia + Maine mapped** (\`feat/standards-wv-me\`); the standards finder now covers **43
+- ✅ **West Virginia + Maine mapped** (\`feat/standards-wv-me\`); the standards finder now covers **43
   jurisdictions**, and \`/academic-standards?state=WV\` and \`?state=ME\` flip from "not mapped yet" to
   real pages. **West Virginia** is mixed and mostly bespoke: it adopted THEN repealed the Common Core
   (2015 to 2016), so its ELA is now West Virginia's own (codes ELA.11.x, mapped bespoke and never
@@ -1954,7 +1964,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   framework (Maine reorganized and reworded the Common Core into its own strands, so it is mapped
   bespoke rather than aliased). Maine's Economics and Geography strands are deferred to a later pass.
   \`NEXT_UP\` advances to **North Dakota and South Dakota**. No migration, no seed.
-- 🔧 **Rhode Island + Alaska mapped** (\`feat/standards-ri-ak\`); the standards finder now covers **43
+- ✅ **Rhode Island + Alaska mapped** (\`feat/standards-ri-ak\`); the standards finder now covers **43
   jurisdictions**, and \`/academic-standards?state=RI\` and \`?state=AK\` flip from "not mapped yet" to
   real pages. **Rhode Island (19 civics standards, 5 full, 14 partial)** is inherit-heavy: it adopts
   the shared Common Core ELA (adopted July 1, 2010) and NGSS (Rhode Island was the first state to
@@ -1972,7 +1982,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   from the Common Core), so they are mapped as an own framework, not an alias; and its **2019 science**
   standards reproduce NGSS HS-ESS3-1 verbatim, so NGSS is adopted. Both states publish honest reject
   lists (tribal governance, international affairs). NEXT_UP advances to North Dakota + South Dakota.
-- 🔧 **Delaware + Montana mapped** (\`feat/standards-de-mt\`); the standards finder now covers **43
+- ✅ **Delaware + Montana mapped** (\`feat/standards-de-mt\`); the standards finder now covers **43
   jurisdictions**, and \`/academic-standards?state=DE\` and \`?state=MT\` flip from "not mapped yet" to
   real pages. **Delaware (20 standards, 8 full)** is inherit-heavy with a bespoke social-studies
   frame: the mapped codes are the Grades 9-12 End of Cluster Expectations of the **Delaware Social
@@ -1995,7 +2005,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   and American Indian standard and clause is faithfully rejected, because the catalog teaches neither
   tribal governments nor American Indian history, and published loudly under "What we don't claim."
   **NEXT_UP advances to North Dakota and South Dakota.**
-- 🔧 **Iowa + Mississippi mapped** (\`feat/standards-ia-ms\`); the standards finder now covers **34
+- ✅ **Iowa + Mississippi mapped** (\`feat/standards-ia-ms\`); the standards finder now covers **34
   jurisdictions**, and \`/academic-standards?state=IA\` and \`?state=MS\` flip from "not mapped yet" to
   real pages. **Iowa (23 standards, 14 full, 9 partial)** is inherit-heavy with a bespoke
   social-studies frame: the mapped codes are the High School Civics/Government (SS.9-12.Gov) and
@@ -2022,7 +2032,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   verbatim) and math, and Mississippi's science (its own 2018 standards, NOT NGSS), math, and
   RI.11-12.6 (in MS's separate ELA document) are deferred rather than blind-aliased. \`NEXT_UP\`
   advances to **Idaho and West Virginia**. No migration, no seed.
-- 🔧 **New Mexico + Nevada mapped** (\`feat/standards-nm-nv\`); the standards finder now covers **34
+- ✅ **New Mexico + Nevada mapped** (\`feat/standards-nm-nv\`); the standards finder now covers **34
   jurisdictions**, and \`/academic-standards?state=NM\` and \`?state=NV\` flip from "not mapped yet" to
   real pages. Both states INHERIT Common Core ELA (adopted 2010) and NGSS (New Mexico's 2018 NM STEM
   Ready!, Nevada's 2014 NVACSS), mapped once in \`shared/\`, and add bespoke social-studies frames.
@@ -2042,7 +2052,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   from byte-faithful government/district mirrors (recorded in each file header; \`sourceUrl\` is the
   canonical DOE link). Coverage is honest full/partial with a per-state "What we don't claim" reject
   list. \`NEXT_UP\` advances to **Idaho and West Virginia**. No migration, no seed.
-- 🔧 **Nebraska mapped** (\`feat/standards-ks-ne\`); the standards finder now covers 34 jurisdictions,
+- ✅ **Nebraska mapped** (\`feat/standards-ks-ne\`); the standards finder now covers 34 jurisdictions,
   and \`/academic-standards?state=NE\` flips from "not mapped yet" to a real page (8 standards in 1
   bespoke framework, 5 full, 3 partial). Nebraska is a notable NON-adopter of the Common Core, so it
   is bespoke-heavy: no shared framework is adopted. The mapped codes are the **High School Civics**
@@ -2059,7 +2069,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   method (SS HS.1.2.f). Honest gaps published: Nebraska's ELA and math (Nebraska's own, not Common
   Core) and its 2017 science (Nebraska's own, NGSS-influenced but not verbatim) are deferred rather
   than blind-aliased. \`NEXT_UP\` advances to **Idaho and West Virginia**. No migration, no seed.
-- 🔧 **Kansas mapped** (\`feat/standards-ks-ne\`); the standards finder now covers 33 jurisdictions,
+- ✅ **Kansas mapped** (\`feat/standards-ks-ne\`); the standards finder now covers 33 jurisdictions,
   and \`/academic-standards?state=KS\` flips from "not mapped yet" to a real page (15 standards across
   3 frameworks, 7 full, 8 partial). Kansas is UNUSUAL: the **Kansas Standards for History,
   Government, and Social Studies (2013)** are deliberately skills, not content. Five thematic
@@ -2076,7 +2086,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   codes, so the shared file is adopted with Kansas aliases), and its science is the NGSS, adopted
   verbatim in 2013 (one claim, HS-ESS3-1, partial). Math is not taught, and a 2020 revision of the
   social-studies standards is flagged for teachers to confirm current codes. No migration, no seed.
-- 🔧 **Alabama + Louisiana mapped, both bespoke-heavy** (\`feat/standards-al-la\`); the standards
+- ✅ **Alabama + Louisiana mapped, both bespoke-heavy** (\`feat/standards-al-la\`); the standards
   finder now covers 28 jurisdictions, and \`/academic-standards?state=AL\` and \`?state=LA\` flip from
   "not mapped yet" to real pages. **Alabama (16 standards, 3 full, 13 partial)** writes its own
   standards and adopts neither Common Core nor NGSS: the mapped codes are the two required grade-12
@@ -2095,7 +2105,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   Louisiana's ELA, math, and science (2017, NGSS-based but Louisiana's own) are deferred rather than
   blind-aliased, because the rule is compare-before-aliasing and those documents were not fetched this
   pass. \`NEXT_UP\` advances to **Iowa and Mississippi**. No migration, no seed.
-- 🔧 **Kentucky + Oregon mapped** (\`feat/standards-ky-or\`); \`/academic-standards?state=KY\` and
+- ✅ **Kentucky + Oregon mapped** (\`feat/standards-ky-or\`); \`/academic-standards?state=KY\` and
   \`?state=OR\` flip from "not mapped yet" to real pages. **Kentucky (14 standards, 7 full, 7
   partial):** the **Kentucky Academic Standards (KAS) for Social Studies (2019)**, Kentucky's own
   inquiry and C3-based framework, transcribed verbatim from KDE's document. Its High School Civics
@@ -2115,7 +2125,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   its June 2019 literacy revision, four strands verbatim and 11-12.RH.6 carrying Oregon's asterisk
   revision to "differing perspectives") and the NGSS for science as a lead state (one aliased claim,
   HS.ESS3.1, partial). No migration, no seed.
-- 🔧 **Oklahoma + Utah mapped** (\`feat/standards-ok-ut\`); the standards finder now covers **28
+- ✅ **Oklahoma + Utah mapped** (\`feat/standards-ok-ut\`); the standards finder now covers **28
   jurisdictions**, and \`/academic-standards?state=OK\` and \`?state=UT\` flip from "not mapped yet" to
   real pages. **Oklahoma (bespoke-heavy, 36 standards across 5 frameworks, 12 full):** the **Oklahoma
   Academic Standards for Social Studies (adopted 2019)**, transcribed verbatim from OSDE's own PDF.
@@ -2138,7 +2148,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   are verbatim, mapped as OWN frameworks; but its 2023 ELA revision reworded RI.11-12.6, so the
   shared Common Core file is not adopted wholesale, and Utah's SEEd science is not verbatim NGSS and
   is deferred. **NEXT_UP advances to Iowa and Mississippi.**
-- 🔧 **Maryland + Colorado mapped** (\`feat/standards-md-co\`); the standards finder now covers 22
+- ✅ **Maryland + Colorado mapped** (\`feat/standards-md-co\`); the standards finder now covers 22
   jurisdictions, and \`/academic-standards?state=MD\` and \`?state=CO\` flip from "not mapped yet" to
   real pages. **Maryland (bespoke civics, inherited ELA and science):** the **High School American
   Government Framework** (MSDE, revised June 2025), transcribed verbatim from MSDE's own PDF via a
@@ -2162,7 +2172,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   published in its \`notClaimed\`); Maryland's US and World History and Colorado's History, Geography,
   and Economics standards are deferred (fetch-and-verify-or-don't-cite). **\`NEXT_UP\` advanced past
   MD/CO to AL/LA.** No migration, no seed.
-- 🔧 **Minnesota and Wisconsin mapped, both fully bespoke** (\`feat/standards-mn-wi\`).
+- ✅ **Minnesota and Wisconsin mapped, both fully bespoke** (\`feat/standards-mn-wi\`).
   \`/academic-standards?state=MN\` and \`?state=WI\` flip from "not mapped yet" to real pages.
   **Minnesota (16 standards, 10 full, 6 partial)** maps the **2021 Minnesota Academic Standards in
   Social Studies**, Citizenship and Government strand, high school, transcribed verbatim from MDE's
@@ -2179,7 +2189,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   method maps to the Inquiry and History source-analysis indicators. Wisconsin's science (2017,
   NGSS-based but its own reorganization) and its own ELA are published as honest deferred gaps, not
   aliased. \`NEXT_UP\` advances to **AL/LA**.
-- 🔧 **Missouri mapped, fully bespoke** (\`feat/standards-mo-md\`). \`/academic-standards?state=MO\`
+- ✅ **Missouri mapped, fully bespoke** (\`feat/standards-mo-md\`). \`/academic-standards?state=MO\`
   flips from "not mapped yet" to a real page. Missouri withdrew from the Common Core, so its ELA and
   math are Missouri's own and its science is Missouri's own (not NGSS); the mapped codes are all
   **High School Government** Grade Level Expectations from the **Missouri Learning Standards for
@@ -2189,7 +2199,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   City of St. Louis) plus the civics ladder; ELA and science are published as honest deferred gaps.
   **Maryland was deferred** (the pass ended before MD) and re-queued at the front of \`NEXT_UP\`. No
   migration, no seed.
-- 🔧 **Connecticut + South Carolina mapped** (\`feat/standards-ct-sc\`). \`/academic-standards?state=CT\`
+- ✅ **Connecticut + South Carolina mapped** (\`feat/standards-ct-sc\`). \`/academic-standards?state=CT\`
   and \`?state=SC\` flip from "not mapped yet" to real pages. **Connecticut is inherit-heavy**: it kept
   the Common Core (as the CT Core Standards, 2010) for ELA and adopted the NGSS (2015) for science, so
   both shared frameworks are adopted verbatim, and its one bespoke frame is the 2015 Social Studies
@@ -2204,7 +2214,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   Legislature electing judges, the large plural executive, Home Rule counties) plus the civics ladder,
   with ELA and science published as honest deferred gaps. \`NEXT_UP\` advances to Alabama and Louisiana.
   No migration, no seed.
-- 🔧 **Illinois + Michigan mapped, states #10 and #11, both heavy inheriters** (\`feat/standards-il-mi\`),
+- ✅ **Illinois + Michigan mapped, states #10 and #11, both heavy inheriters** (\`feat/standards-il-mi\`),
   \`/academic-standards?state=IL\` and \`?state=MI\` flip from "not mapped yet" to real pages. Both
   states adopted the shared multi-state frameworks, so we **INHERIT** rather than re-map: Illinois
   adopted the Common Core for ELA (June 24, 2010) and the NGSS for science (Jan 2014, an NGSS lead
@@ -2228,7 +2238,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   Michigan's era-based World/US History and Economics strands are **deferred** (their multi-column
   PDF layout risks non-verbatim transcription, verbatim-or-nothing), and tribal governments are
   not taught (C3.2.3 partial, C3.2.4 not claimed). \`NEXT_UP\` advances to **NC/VA**.
-- 🔧 **Cross-state standards explorer + route rename** (\`feat/standards-matrix\`). The per-state
+- ✅ **Cross-state standards explorer + route rename** (\`feat/standards-matrix\`). The per-state
   finder moved from \`/standards\` to **\`/academic-standards\`** (a 308 redirect keeps old links and
   shares working), and a companion **\`/academic-standards/matrix\`** now flattens **every
   (state x standard x course)** alignment this tenant can back into one browsable table. It answers
@@ -2249,7 +2259,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   rendered on **every** state's shared framing box is now state-generic (the Indiana specifics still
   live on Indiana's own page, in \`data/in.ts\`). Nothing hardcoded per state, so OH/GA appear the
   moment their data files land. **No migration, no seed.**
-- 🔧 **Standards alignment** (\`feat/explore-standards\`): a \`/academic-standards\` page, linked from
+- ✅ **Standards alignment** (\`feat/explore-standards\`): a \`/academic-standards\` page, linked from
   \`/explore\`, answering the one question a teacher or a reporting homeschooler asks first: *which
   requirements does this meet, and which lesson meets them?* **41 standards (21 fully covered, 20
   partially) across 9 frameworks in 2 jurisdictions**, each with its **exact code**, the
@@ -2268,7 +2278,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   **this** tenant's published courses, so a Season-1-only school (Learn.WitUS, ElementaryMBA) can
   never surface a Season 2/3 standard, and a tenant hosting none of the curriculum **404s**.
   Printable + one-click copy-as-plain-text for state filings. **No migration.**
-- 🔧 **State-standards finder + Indiana across the whole catalog**
+- ✅ **State-standards finder + Indiana across the whole catalog**
   (\`feat/standards-finder-indiana\`), \`/academic-standards\` is now the tool the note asked for: a teacher,
   homeschooler, or admin **picks their state** and sees which courses meet which of that state's
   standards, filterable by **subject** and **course** (server-rendered link filters, shareable,
@@ -2296,7 +2306,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   Arizona is one new data file + regenerate, **zero hand-edited code change**. 18 isolation tests
   incl. claims-fully-wired and filter-never-readmits proofs. **No migration, no seed.**
 
-- 🔧 **North Carolina + Virginia mapped, both fully bespoke** (\`feat/standards-nc-va\`),
+- ✅ **North Carolina + Virginia mapped, both fully bespoke** (\`feat/standards-nc-va\`),
   \`/academic-standards?state=NC\` and \`?state=VA\` flip from "not mapped yet" to real pages: two new
   data files + \`pnpm gen:standards\`, zero code change. **North Carolina: 31 standards (7 full, 24
   partial)**, the NC Standard Course of Study is North Carolina's OWN framework (not Common Core, not
@@ -2321,7 +2331,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   retrievable from an acceptable source this pass** (fetch-or-don't-cite). **NEXT_UP advanced OH/GA →
   WA/NJ** (⚠️ merge-coordinates with the other in-flight standards branches, which also edit that line).
   **No migration, no seed.**
-- 🔧 **Arizona + Arkansas mapped, states #3 and #4, proving the concept-hub price**
+- ✅ **Arizona + Arkansas mapped, states #3 and #4, proving the concept-hub price**
   (\`feat/standards-az-ar\`), \`/academic-standards?state=AZ\` and \`?state=AR\` now render real pages: two new
   data files + \`pnpm gen:standards\`, zero code change, exactly as the model promised. **Arizona: 46
   standards (22 full, 24 partial) across 6 ADE frameworks**, the 2018 History & Social Science
@@ -2341,7 +2351,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   say so; Arizona's HS.C2.5 (AZ-vs-US rights comparison) is rejected despite being the flagship's
   home framework; U.S. History Since 1929 starts too late for the Gilded Age labor units. **No
   migration, no seed.**
-- 🔧 **Ohio + Georgia mapped, states #10 and #11** (\`feat/standards-oh-ga\`, task 130),
+- ✅ **Ohio + Georgia mapped, states #10 and #11** (\`feat/standards-oh-ga\`, task 130),
   \`/standards?state=OH\` and \`?state=GA\` flip from "not mapped yet" to real pages: two new data
   files + \`pnpm gen:standards\`, zero code change. **Ohio: 50 standards (25 full, 25 partial) across
   7 frameworks**, all six of Ohio's Adopted-2018 high-school social-studies courses as their own
@@ -2367,7 +2377,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   standard is genuine verbatim text**. **NEXT_UP advanced OH/GA → MI/IL** (⚠️ one-line conflict risk
   vs the parallel \`feat/standards-matrix\` branch, which may also edit that line). **No migration,
   no seed.**
-- 🔧 **Massachusetts + Tennessee mapped, states #10 and #11, both fully bespoke** (\`feat/standards-ma-tn\`),
+- ✅ **Massachusetts + Tennessee mapped, states #10 and #11, both fully bespoke** (\`feat/standards-ma-tn\`),
   \`/academic-standards?state=MA\` and \`?state=TN\` flip from "not mapped yet" to real pages: two new
   data files + \`pnpm gen:standards\`, zero code change. **Massachusetts: 35 standards (18 full, 17
   partial) across 7 frameworks** from the **2018 History and Social Science Framework**, Massachusetts
@@ -2393,7 +2403,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   Supreme-Court / weak veto / no-initiative / voting rules, are published loudly in each \`notClaimed\`
   list. **NEXT_UP advanced past MA/TN → MO/MD** (⚠️ merge-coordinates with the other in-flight standards
   branches, which also edit that line). **No migration, no seed.**
-- 🔧 **Texas + Florida mapped, states #8 and #9, both fully bespoke** (\`feat/standards-tx-fl\`),
+- ✅ **Texas + Florida mapped, states #8 and #9, both fully bespoke** (\`feat/standards-tx-fl\`),
   \`/academic-standards?state=TX\` and \`?state=FL\` flip from "not mapped yet" to real pages. **Texas: 56
   standards (31 full, 25 partial) across 8 TEKS frameworks**, Texas writes its own TEKS for every
   subject and has **never** adopted Common Core or NGSS. Confirmed the current social-studies TEKS
@@ -2418,7 +2428,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   direct-democracy benchmark. **NEXT_UP advanced NY/PA → OH/GA** (⚠️ merge-coordinates with
   \`feat/standards-ny-pa\`, which also edits that line). **No migration, no seed.**
 
-- 🔧 **New York + Pennsylvania mapped, states #6 and #7** (\`feat/standards-ny-pa\`),
+- ✅ **New York + Pennsylvania mapped, states #6 and #7** (\`feat/standards-ny-pa\`),
   \`/academic-standards?state=NY\` and \`?state=PA\` now render real pages: two new data files +
   \`pnpm gen:standards\`, zero code change. Every document fetched **directly from the DOEs** (no
   Wayback, nysed.gov and pdesas.org both served us). **New York: 43 standards (16 full, 27 partial)
@@ -2439,7 +2449,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   **name the Pennsylvania Constitution** (5.1.12.D/E), giving that flagship a better home than CA/NY.
   \`state-civics-ny\`/\`state-civics-pa\` flagship claims added to \`claims.ts\`. Gates green
   (tsc/lint/test/build all 0). **No migration, no seed.** Next up flagged: **Texas, Florida.**
-- 🔧 **Standards before filters** (\`feat/standards-above-filters\`): on a mapped state page
+- ✅ **Standards before filters** (\`feat/standards-above-filters\`): on a mapped state page
   (\`/academic-standards?state=XX\`) the alignment itself now sits **above** the filter controls. A
   teacher who picks their state used to scroll past subject chips and a by-course \`<details>\` before
   seeing a single standard; filters are refinement, not content. New order: header (state, intro,
@@ -2456,7 +2466,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   still the boundary and \`filterGroups\` still only narrows what \`scopeAlignments\` allowed. Scope is
   the per-state view only; the picker and the matrix are unchanged. **No migration, no seed.**
 
-- 🔧 **Owner library** (\`feat/admin-library\`, **migration 0048**): an owner-only \`/admin/library\`
+- ✅ **Owner library** (\`feat/admin-library\`, **migration 0048**): an owner-only \`/admin/library\`
   reading room for the private job-prep ebooks (interview prep, the commercial playbook) that live
   as local markdown outside this public repo. \`node scripts/sync-library.mjs <files...>\` upserts
   them into \`library_documents\` (platform-level, deliberately no tenant_id); list + reader render
@@ -2465,9 +2475,10 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   content arrives only via the sync script, never git.
 
 ## Operator
-- 🟡 Merge open branches → \`db:migrate:prod\` → \`seed:bvc:real\` / \`seed:map\` / \`seed:owner\`
-  → regen embeddings. Set \`PLATFORM_OWNER_EMAIL=bam@awews.com\`.
-- ⚪ After merging the health/vetting work: \`pnpm gen:health\` → \`seed:health\` / \`seed:speedway\`.
+- 🟡 All branches merged as of 2026-08-17 (none remain open) → \`db:migrate:prod\` →
+  \`seed:bvc:real\` / \`seed:map\` / \`seed:owner\` → regen embeddings. Set
+  \`PLATFORM_OWNER_EMAIL=bam@awews.com\`.
+- ⚪ Health/vetting work merged: \`pnpm gen:health\` → \`seed:health\` / \`seed:speedway\`.
 - ✅ **Authoritative-values rule**: added to ecosystem + repo CLAUDE.md (never assert guessed external
   values; born from the DNS A-record false-negative). Still TODO: commit the ecosystem copy in \`gemini/\`.
 - ⚪ Inform CentOS that witus-learn hosts BVC.
