@@ -823,6 +823,16 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   capstone, which reads the True track backwards and lands the series' hardest point, that a thing
   which looks unproduced was produced to look unproduced, so roughness is no grounds for belief and
   the real grounds are sourcing, disclosure, method and accountability.
+- ✅ **Voice Acting: The Instrument** (\`content/voice-acting\`, plans/65 Phase 1). 18 lessons in
+  Careers & Media, the career-craft sibling of \`broadcasting-break-in\`: how the voice works
+  (power/source/filter, cited to Titze and NIDCD), vocal health with clinical referrals to SLPs,
+  articulation (plosives, sibilance, over-enunciation, an honest lisp section), mic technique, room
+  treatment on a budget, levels, script analysis (Berry's one-listener discipline), the genre map,
+  and a business lesson that quotes NO rates (points at the GVAA community guide and SAG-AFTRA) and
+  promises no coaching, community, or work, unlike the live-cohort school whose syllabus inspired
+  it. Four shuffled 8-question banks, reveals + recall throughout, standards-excused as vocational.
+  Seeded by \`pnpm seed:courses\`; citations staged AFTER seeding (the extractor reads the DB); gets
+  code VOICE-01 when a second VOICE course ships. BAM sets price + vetted state in the admin UI.
 - ✅ **BVC Sommelier series, course #1: Wine** (\`feat/bvc-sommelier-wine\`, plans/53). A skills sequel
   to BVC S2E9 "Wine: Blood of the Earth": that episode teaches wine's history, this one teaches
   tasting and choosing. 52 lessons in 12 modules at WSET-2-ish depth (the four-stage grid and six
