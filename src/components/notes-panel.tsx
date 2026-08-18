@@ -53,10 +53,15 @@ export function NotesPanel({ courseId, lessonId }: { courseId: string; lessonId:
   }, [url]);
 
   useEffect(() => {
-    refetch();
-    const onChanged = () => refetch();
-    window.addEventListener(NOTES_CHANGED_EVENT, onChanged);
-    return () => window.removeEventListener(NOTES_CHANGED_EVENT, onChanged);
+    const load = () => void refetch();
+    // The initial load is deferred a tick so the effect body itself sets no state (the React
+    // effect rule); after that the panel only refetches on the annotation layer's event.
+    const t = setTimeout(load, 0);
+    window.addEventListener(NOTES_CHANGED_EVENT, load);
+    return () => {
+      clearTimeout(t);
+      window.removeEventListener(NOTES_CHANGED_EVENT, load);
+    };
   }, [refetch]);
 
   async function addNote(e: React.FormEvent) {
