@@ -206,6 +206,29 @@ A course that has **not** been vetted shows learners a **"Coming soon" page** in
 
 There is deliberately **no expected date** on that page. A missed date is worse than no date.
 
+## If you are the instructor: getting your course approved
+
+You cannot mark your own course vetted, and that is deliberate: vetting means *someone else*
+reviewed it. Here is the path.
+
+1. **Finish the course.** Every lesson published, quizzes in place, and the \`## Sources\` block
+   filled in on any lesson that makes a factual claim.
+2. **Check it against the guards.** Ask the platform owner to run the content checks (they fail
+   the build on a quiz answerable without reading, a broken self-check card, a figure with no
+   credit), or watch for their feedback if they run them for you.
+3. **Get a second pair of eyes.** On your course manager, **Invite to audit** lets you invite
+   someone by email to read the whole course while it is still Coming soon. They can read
+   everything and change nothing, and their quiz clicks never touch your course statistics.
+4. **Tell the platform owner it is ready.** The banner on your course manager shows how many
+   people have already asked to be notified when it opens, which is the most useful thing you can
+   send along with the request.
+5. **They mark it vetted**, and the lessons open to everyone at once. Nobody loses access at any
+   point in this process: people already enrolled keep the full course throughout.
+
+**While you wait**, your course is not invisible. Its landing page stays public and indexable with
+the title, description and the standards it meets, plus the notify-me form, so the waiting list
+builds before launch.
+
 ## Marking courses vetted (platform owner only)
 
 **Finding the queue:** it is in the menu twice, in the site header under **Teach** and in the **Admin**
