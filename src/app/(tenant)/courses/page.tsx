@@ -9,6 +9,7 @@ import { isWitusBrandedHost } from "@/lib/witus-host";
 import { ecosystemProductBySlug } from "@/lib/ecosystem";
 import { matchEntities } from "@/lib/entities";
 import { isVettingLocked } from "@/lib/vetting";
+import { coursePriceView } from "@/lib/sale-pricing";
 import { CourseCard } from "@/components/course-card";
 
 const TITLE = "Courses";
@@ -52,9 +53,11 @@ export default async function CoursesPage({ searchParams }: { searchParams: Sear
   const membership = session ? ((await getMembership(session.user.id, sdb.tenantId)) ?? "") : "";
   const isEditor = owner || ["instructor", "brand_admin"].includes(membership);
 
-  const [rawCourses, categories] = await Promise.all([
+  const [rawCourses, categories, promotions] = await Promise.all([
     sdb.listCourses({ q: sp.q, category: sp.category, sort, includeUnpublished: isEditor }),
     sdb.listCategories(),
+    // Active codeless promotions for THIS tenant only; each card resolves its own price from them.
+    sdb.listActivePromotions(),
   ]);
   // Cross-course entities that match the search (plans/45 Part 3): a person/case/law the query names
   // is its own result type ("Milliken v. Bradley, appears in 3 courses"), not scattered lesson hits.
@@ -192,7 +195,7 @@ export default async function CoursesPage({ searchParams }: { searchParams: Sear
                     {badge}
                   </span>
                 ) : null}
-                <CourseCard course={c} />
+                <CourseCard course={c} price={coursePriceView(c, sdb.tenantId, promotions)} />
               </div>
             );
           })}

@@ -8,7 +8,14 @@ import {
   validatePromo,
 } from "@/db/queries/connect";
 import { isFreeCourse } from "@/lib/gating";
-import { createCourseCheckout, createPromoCoupon, ensureCoursePrice, getStripe } from "@/lib/stripe";
+import {
+  createCourseCheckout,
+  createPromoCoupon,
+  ensureCoursePrice,
+  ensureCourseProduct,
+  getStripe,
+} from "@/lib/stripe";
+import { coursePriceView } from "@/lib/sale-pricing";
 import { getSiteUrl } from "@/lib/site-url";
 import { getActiveLearner } from "@/lib/active-learner";
 
@@ -54,15 +61,30 @@ export async function POST(req: Request, { params }: { params: Promise<{ id: str
     );
   }
 
-  if (isFreeCourse(course)) {
+  // Codeless promotions, resolved HERE on the server from this tenant's own rows. The page's price
+  // is never trusted (nothing about it is even sent), so a stale tab or a forged request cannot buy
+  // a course at a price that is not currently on offer.
+  const priceView = coursePriceView(
+    course,
+    sdb.tenantId,
+    await sdb.listActivePromotions(),
+  );
+
+  // Free by list price, or free because a promotion took it to zero: enroll directly, no Stripe.
+  if (isFreeCourse(course) || priceView.isFree) {
     const enrollment = await enrollFree(sdb.tenantId, learner.id, id);
-    return json({ enrolled: true, enrollment }, 201);
+    return json({ enrolled: true, enrollment, promotionId: priceView.promotion?.id ?? null }, 201);
   }
 
   // Paid → Stripe Checkout (the webhook confirms enrollment on payment).
   const stripe = getStripe();
   if (!stripe) return errorJson("Payments are not configured", 503);
-  const priceId = await ensureCoursePrice(stripe, sdb.tenantId, course);
+  // On sale → charge the resolved amount via an ad-hoc line item; otherwise the cached list price.
+  // Either way `courses.price` (the owner's list price) is left exactly as it is.
+  const onSale = priceView.discounted;
+  const saleAmountCents = onSale ? Math.round(priceView.effectivePrice * 100) : null;
+  const productId = onSale ? await ensureCourseProduct(stripe, sdb.tenantId, course) : null;
+  const priceId = onSale ? null : await ensureCoursePrice(stripe, sdb.tenantId, course);
 
   // Optional promo code from the request body.
   const body = (await req.json().catch(() => ({}))) as { promo_code?: unknown };
@@ -88,6 +110,9 @@ export async function POST(req: Request, { params }: { params: Promise<{ id: str
     course,
     userId: learner.id,
     priceId,
+    saleAmountCents,
+    productId,
+    promotionId: priceView.promotion?.id ?? null,
     siteUrl: await getSiteUrl(),
     connectAccountId,
     feePercent,
