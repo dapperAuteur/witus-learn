@@ -48,17 +48,25 @@ function priceLabel(c: CatalogCourse): string {
 //
 // `canVet` is the platform owner. Vetting is owner-only server-side (the PATCH route strips the
 // field for everyone else), so the buttons are hidden rather than shown-and-silently-ignored.
+const STATUSES: Status[] = ["all", "published", "draft", "private", "hold", "vetted", "unvetted"];
+
 export function TeacherCatalog({
   courses,
   canVet = false,
+  initialStatus,
 }: {
   courses: CatalogCourse[];
   canVet?: boolean;
+  /** Preselect a status filter from the URL (?status=unvetted), so the admin tile and any
+   *  bookmark can land directly on the vetting queue. Unknown values fall back to "all". */
+  initialStatus?: string;
 }) {
   const router = useRouter();
   const [rows, setRows] = useState(courses);
   const [query, setQuery] = useState("");
-  const [status, setStatus] = useState<Status>("all");
+  const [status, setStatus] = useState<Status>(
+    STATUSES.includes(initialStatus as Status) ? (initialStatus as Status) : "all",
+  );
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [busy, setBusy] = useState(false);
   const [priceInput, setPriceInput] = useState("");
@@ -168,7 +176,7 @@ export function TeacherCatalog({
           aria-label="Search your courses"
           className="min-h-9 flex-1 rounded-md border border-neutral-300 px-3 text-sm dark:border-neutral-700 dark:bg-neutral-900"
         />
-        {(["all", "published", "draft", "private", "hold", "vetted", "unvetted"] as Status[]).map((s) => (
+        {STATUSES.map((s) => (
           <button
             key={s}
             type="button"

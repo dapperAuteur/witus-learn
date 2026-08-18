@@ -31,7 +31,7 @@ describe("adminStatTiles", () => {
     expect(hrefs).toEqual([
       "/admin/dashboard",
       "/admin/dashboard",
-      "/courses",
+      "/teach?status=unvetted",
       "/admin/gradebook",
       "/admin/reports",
       "/admin/leads",
@@ -49,17 +49,21 @@ describe("adminStatTiles", () => {
     expect(byHref["/admin/live"]?.value).toBe(1);
   });
 
-  it("published-courses tile carries the total and the unvetted count in its hint", () => {
-    const tile = adminStatTiles(counts()).find((t) => t.href === "/courses");
+  it("published-courses tile is the vetting-queue button when courses await review", () => {
+    const tile = adminStatTiles(counts()).find((t) => t.label === "Courses published");
+    expect(tile?.href).toBe("/teach?status=unvetted");
     expect(tile?.value).toBe(7);
-    expect(tile?.hint).toBe("of 10 total · 2 unvetted");
+    expect(tile?.hint).toBe("of 10 total · 2 unvetted, review them");
+    expect(tile?.attention).toBe(true);
   });
 
-  it("omits the unvetted note when nothing is unvetted", () => {
+  it("lands on plain /teach with no unvetted note when nothing awaits review", () => {
     const c = counts();
     c.stats = { ...c.stats, unvettedCourses: 0 };
-    const tile = adminStatTiles(c).find((t) => t.href === "/courses");
+    const tile = adminStatTiles(c).find((t) => t.label === "Courses published");
+    expect(tile?.href).toBe("/teach");
     expect(tile?.hint).toBe("of 10 total");
+    expect(tile?.attention).toBe(false);
   });
 
   it("flags open queues for attention only when non-zero", () => {
