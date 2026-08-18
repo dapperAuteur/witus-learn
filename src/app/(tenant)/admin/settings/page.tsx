@@ -21,6 +21,8 @@ export default async function SettingsPage() {
     comingSoon: tenant.flags.comingSoon ?? false,
     commodityMap: tenant.flags.commodityMap === true,
     requiresAgeGate: tenant.requiresAgeGate,
+    paths: tenant.flags.paths === true,
+    leadFunnel: tenant.flags.leadFunnel === true,
   };
 
   return (

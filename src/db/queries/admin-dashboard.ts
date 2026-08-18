@@ -13,6 +13,7 @@ export interface AdminStats {
   enrollments: number; // active enrollments
   courses: number; // total courses in this school
   publishedCourses: number;
+  unvettedCourses: number; // vetted_at IS NULL — published-but-unvetted shows "Coming soon" publicly
   completions: number; // completion records for this school's courses
 }
 
@@ -29,6 +30,7 @@ export async function getAdminStats(tenantId: string): Promise<AdminStats> {
     .select({
       courses: sql<number>`count(*)`.mapWith(Number),
       published: sql<number>`count(*) filter (where ${courses.isPublished})`.mapWith(Number),
+      unvetted: sql<number>`count(*) filter (where ${courses.vettedAt} is null)`.mapWith(Number),
     })
     .from(courses)
     .where(eq(courses.tenantId, tenantId));
@@ -45,6 +47,7 @@ export async function getAdminStats(tenantId: string): Promise<AdminStats> {
     enrollments: Number(enr?.enrollments ?? 0),
     courses: Number(crs?.courses ?? 0),
     publishedCourses: Number(crs?.published ?? 0),
+    unvettedCourses: Number(crs?.unvetted ?? 0),
     completions: Number(comp?.completions ?? 0),
   };
 }

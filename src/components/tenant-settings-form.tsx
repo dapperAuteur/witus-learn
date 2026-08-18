@@ -12,6 +12,8 @@ export interface TenantSettings {
   comingSoon: boolean;
   commodityMap: boolean;
   requiresAgeGate: boolean;
+  paths: boolean;
+  leadFunnel: boolean;
 }
 
 // Edit the current brand's branding + feature flags. Saving updates the tenant the
@@ -92,6 +94,8 @@ export function TenantSettingsForm({ initial }: { initial: TenantSettings }) {
           <Toggle label="Age gate" checked={s.requiresAgeGate} onChange={(v) => set("requiresAgeGate", v)} hint="Require an age check before entering." />
           <Toggle label="Coming soon" checked={s.comingSoon} onChange={(v) => set("comingSoon", v)} hint="Show a launch holding page instead of the catalog." />
           <Toggle label="Commodity Map" checked={s.commodityMap} onChange={(v) => set("commodityMap", v)} hint="Show the interactive origins map at /explore and feature it on the home page (needs map data, pnpm seed:map)." />
+          <Toggle label="Learning paths" checked={s.paths} onChange={(v) => set("paths", v)} hint="Show /paths in the menu; sequence the tracks at Admin → Learning paths." />
+          <Toggle label="Lead funnel" checked={s.leadFunnel} onChange={(v) => set("leadFunnel", v)} hint='Accept "notify me" signups (always on while Coming soon is on); the list lands at Admin → Interest & leads.' />
         </div>
       </section>
 
