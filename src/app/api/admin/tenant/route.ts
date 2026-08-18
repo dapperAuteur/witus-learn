@@ -3,14 +3,16 @@ import { eq } from "drizzle-orm";
 import { apiContext, errorJson, isTenantAdmin } from "@/lib/api";
 import { db } from "@/db/client";
 import { tenants } from "@/db/schema";
-
-const HEX = /^#[0-9a-fA-F]{6}$/;
+import { applyThemePatch, HEX_COLOR as HEX, ThemePatchSchema } from "@/lib/theme-settings";
 
 const Schema = z.object({
   name: z.string().min(1).max(120).optional(),
   tagline: z.string().max(200).nullable().optional(),
   accent: z.string().regex(HEX).optional(),
   accentFg: z.string().regex(HEX).optional(),
+  // Brand identity (wordmark, shortName, logoUrl, faviconUrl, ogDefaultUrl, themeColor).
+  // "" clears a key back to the platform default; URLs must be https.
+  ...ThemePatchSchema.shape,
   gamification: z.enum(["off", "light", "full"]).optional(),
   aiTutor: z.boolean().optional(),
   comingSoon: z.boolean().optional(),
@@ -32,7 +34,7 @@ export async function PATCH(req: Request) {
   if (!parsed.success) return errorJson("Invalid input", 400);
   const d = parsed.data;
 
-  const theme = { ...sdb.tenant.theme };
+  const theme = applyThemePatch(sdb.tenant.theme, d);
   if (d.name !== undefined) theme.name = d.name;
   const colors = { ...(theme.colors ?? {}) };
   if (d.accent !== undefined) colors.accent = d.accent;

@@ -206,7 +206,35 @@ A course that has **not** been vetted shows learners a **"Coming soon" page** in
 
 There is deliberately **no expected date** on that page. A missed date is worse than no date.
 
+## If you are the instructor: getting your course approved
+
+You cannot mark your own course vetted, and that is deliberate: vetting means *someone else*
+reviewed it. Here is the path.
+
+1. **Finish the course.** Every lesson published, quizzes in place, and the \`## Sources\` block
+   filled in on any lesson that makes a factual claim.
+2. **Check it against the guards.** Ask the platform owner to run the content checks (they fail
+   the build on a quiz answerable without reading, a broken self-check card, a figure with no
+   credit), or watch for their feedback if they run them for you.
+3. **Get a second pair of eyes.** On your course manager, **Invite to audit** lets you invite
+   someone by email to read the whole course while it is still Coming soon. They can read
+   everything and change nothing, and their quiz clicks never touch your course statistics.
+4. **Tell the platform owner it is ready.** The banner on your course manager shows how many
+   people have already asked to be notified when it opens, which is the most useful thing you can
+   send along with the request.
+5. **They mark it vetted**, and the lessons open to everyone at once. Nobody loses access at any
+   point in this process: people already enrolled keep the full course throughout.
+
+**While you wait**, your course is not invisible. Its landing page stays public and indexable with
+the title, description and the standards it meets, plus the notify-me form, so the waiting list
+builds before launch.
+
 ## Marking courses vetted (platform owner only)
+
+**Finding the queue:** it is in the menu twice, in the site header under **Teach** and in the **Admin**
+sidebar. Both entries are called **Courses to vet** and both land on the same list
+(\`/teach?status=unvetted\`). Only the platform owner sees either one. The **Courses published** tile
+on the Admin home also links there whenever something is waiting.
 
 On **/teach**, tick the courses you want, then choose **Mark vetted** or **Mark unvetted**. Both work
 on any number of courses at once. Use the **Vetted** and **Unvetted** filters to find what still needs
@@ -466,6 +494,39 @@ server received it.`,
 - **Link usage**, the course page shows how often outbound links get clicked (counts only).`,
   },
   {
+    slug: "marketing-tools",
+    title: "Marketing: promo codes, announcements, and demand",
+    category: "Growth",
+    keywords: ["marketing", "promo code", "discount", "announce", "campaign", "email", "leads", "demand", "shares"],
+    body: `# Marketing tools (/admin/marketing)
+
+One brand-admin page collects every marketing lever that exists today. Everything on it is
+scoped to your school only.
+
+## Signals
+The top row shows your captured **leads** (with a link to Interest & leads), the courses with
+the most people **waiting**, and how often the in-app **Share** buttons were used, by channel.
+
+## Course announcements
+See which published courses have not been announced yet, then open the **announcement
+manager** to send a batch to the WitUS Outbox as social-post drafts (nothing publishes
+automatically; you pick the profiles in the Outbox).
+
+**Compose announcement** drafts a new-course email from the course's real title and
+description: pick a course, edit the subject and message, then **copy** them or **open in
+your email app**. Nothing sends from inside the app; you send it through your own email tool.
+You can also save the draft as a campaign draft.
+
+## Promo codes
+Create brand-wide percentage discount codes (mirrored to a Stripe coupon when Stripe is
+configured), list active codes, and remove them.
+
+## Email campaigns
+Compose and save campaign drafts with a live audience count (leads or enrolled learners).
+**Sending is intentionally disabled** until the audience, consent, and unsubscribe rules are
+decided; until then, send a saved draft through your own email tool.`,
+  },
+  {
     slug: "streaming-and-multistream",
     title: "Streaming: always-on stream + multistream to socials",
     category: "Live",
@@ -652,7 +713,7 @@ need one. They only ever show published, public content.
     slug: "admin-home-and-brand-settings",
     title: "Your admin home and brand settings",
     category: "Operator",
-    keywords: ["admin", "dashboard", "overview", "settings", "flags", "accent", "branding", "paths", "leads", "coming soon"],
+    keywords: ["admin", "dashboard", "overview", "settings", "flags", "accent", "branding", "paths", "leads", "coming soon", "logo", "favicon", "wordmark", "social card", "theme color"],
     body: `# Your admin home and brand settings
 
 ## At a glance (/admin)
@@ -670,6 +731,20 @@ everything.
 Brand admins can change the school themselves, no code change and no support ticket:
 
 - **Name, tagline, accent colors**, with a live preview. Changes apply on the next page load.
+- **Identity and images**: everything a school needs to look like itself, each with a preview,
+  and each optional (leave a field empty to fall back to the platform default):
+  - **Wordmark**: the text in the site header, when you want it different from the full name.
+  - **Short name**: the label under the app icon when a learner installs your school as an app.
+  - **Theme color**: tints the browser chrome and the installed-app splash screen.
+  - **Logo URL**: a square image (512x512 or larger) used as the installed-app icon and in the
+    structured data search engines read.
+  - **Favicon URL**: the small browser-tab icon.
+  - **Default social card URL**: the 1200x630 image shown when your home page is shared on
+    social platforms. If you leave it empty, the platform generates a branded card for you.
+  - Image fields take **https URLs only**; upload the file to your media host (for example
+    Cloudinary) first, then paste the URL and check the preview that appears under the field.
+  - The **Saved brand** card at the top of the page shows how the saved logo, wordmark,
+    tagline, and accent render together right now.
 - **Gamification dose**: off, light (streaks and mastery), or full (adds XP, levels, badges).
 - **AI tutor**: turn the tutor and sentence coach off for this brand.
 - **Age gate**: require an age check before entering the site.

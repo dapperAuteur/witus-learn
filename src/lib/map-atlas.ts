@@ -48,7 +48,13 @@ const KEY_WIDTH: Record<UsAtlasId, number> = {
  * atlas simply never join (their ids are not in the loaded topology). This is what keeps the
  * heavy US topojson files out of the bundle for every world-map lesson.
  */
-export function usAtlasOf(regions: readonly AtlasRegionRef[] | undefined): UsAtlasId | undefined {
+export function usAtlasOf(
+  regions: readonly AtlasRegionRef[] | undefined,
+  explicit?: MapAtlasId,
+): UsAtlasId | undefined {
+  // A lesson may name its atlas directly (markers-only maps have no regions to scan: the Green
+  // Book cities map rendered US cities on the world projection until 2026-08-18's report).
+  if (explicit && explicit !== "world") return explicit;
   for (const r of regions ?? []) {
     if (r.atlas && r.atlas !== "world") return r.atlas;
   }

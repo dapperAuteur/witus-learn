@@ -1186,6 +1186,7 @@ The first sentence is a claim about the world that you have not proved. The seco
 - National Park Service. (n.d.-b). *Green Book properties listed in the National Register of Historic Places*. https://www.nps.gov/articles/green-book-properties-listed-in-the-national-register-of-historic-places.htm
 - OpenStreetMap contributors. (n.d.). *Nominatim gazetteer*. https://nominatim.openstreetmap.org/`,
       mapContent: {
+        atlas: "us-states",
         markers: [
           {
             id: "gbr-harlem",

@@ -5,6 +5,29 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- ✅ **Vetting is reachable and actionable** (\`fix/vetting-queue-button\` merged +
+  \`feat/unvetted-vet-cta\`): the /admin published-courses tile links to /teach?status=unvetted
+  when courses await review, the teach catalog preselects that filter from the URL, "Courses to
+  vet" appears in BOTH the admin rail and the site menu (owner-only, one shared constant), and
+  every unvetted course carries an owner-only CTA (course page + course manager) with a one-click
+  Mark vetted button. Help now also carries instructor-facing steps for getting a course approved
+  (they cannot self-approve, by design) plus committed video-tutorial narration scripts beside
+  each help article, guarded so every article is covered or explicitly unwritten. Reported regression: the consolidated dashboard had pointed at /courses.
+- ✅ **Course pages link to bundles and series** (\`feat/course-bundle-path-links\`): new
+  tenant-scoped listBundlesForCourse (PUBLISHED bundles only) feeds an "Also available in a
+  bundle" aside; the series line now links to /series/[slug]. Paths already linked.
+- ✅ **Marketing consolidation** (\`feat/admin-marketing\`, Admin workstream branch 2):
+  /admin/marketing gathers leads/shares/announcements/promo codes/campaign drafts and adds a
+  Compose-announcement drafter (copy + mailto, nothing sends in-app). Bulk sending stays unbuilt
+  pending seven audience/consent/deliverability decisions filed for BAM.
+- ✅ **Brand self-serve** (\`feat/admin-branding\`, branch 3): wordmark, short name, theme color,
+  logo, favicon, default OG card, with previews and https-only validation. Only keys with a
+  verified consumer are exposed.
+- ✅ **Feedback sweep, round 2** (2026-08-18): problem_reports new 26 -> 0, lesson_feedback open
+  8 -> 0. Chunk-load reports are now suppressed unless a reload FAILED to fix them
+  (\`fix/chunk-report-noise\`), which answers the standing "did a refresh help?" question with
+  data; plus the monodrama reveal/vocabulary fixes, the repeat-submit fix, and the Green Book map
+  contrast + US-base fix.
 - ✅ **Consolidated /admin dashboard + self-serve flags** (\`feat/admin-consolidation\`, branch 1
   of the Admin/Operator workstream): an At-a-glance stat strip (learners, enrollments, published
   vs unvetted, completions, open reports, leads; owner also sees new feedback, pending media,
