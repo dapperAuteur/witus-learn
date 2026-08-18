@@ -11,6 +11,8 @@ import { ProgressBar } from "@/components/progress-bits";
 import { CurriculumFeedback } from "@/components/curriculum-feedback";
 import { NotesPanel } from "@/components/notes-panel";
 import { AnnotationLayer } from "@/components/annotation-layer";
+import { UnvettedDisclosure } from "@/components/unvetted-disclosure";
+import { isOpenWhileUnvetted } from "@/lib/vetting";
 import { AssignmentSubmit } from "@/components/assignment-submit";
 import { getSubmission } from "@/db/queries/assignments";
 import { buildCrossroads } from "@/lib/crossroads";
@@ -243,6 +245,7 @@ export default async function LessonPage({ params }: Params) {
                 when a parent is studying as one), so Continue can point at the lesson they were
                 really on instead of the first gap in the syllabus. Never a completion. Signed-out
                 learners simply don't render it — no ping, no error. */}
+            {isOpenWhileUnvetted(view.course) ? <UnvettedDisclosure /> : null}
             {canRecord ? <LessonViewPing courseId={view.course.id} lessonId={lesson.id} /> : null}
             {/* Open with recall: quiz the PREVIOUS lesson before this one's content. */}
             {Array.isArray(lesson.recallContent) && lesson.recallContent.length > 0 && canRecord ? (

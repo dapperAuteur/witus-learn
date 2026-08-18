@@ -1,0 +1,1 @@
+ALTER TABLE "courses" ADD COLUMN "allow_unvetted_public" boolean DEFAULT false NOT NULL;

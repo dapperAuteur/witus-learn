@@ -195,6 +195,19 @@ review, and the small **🕒 coming soon** tag on a row tells you at a glance.
 
 Marking a course vetted a second time does **not** change the date it was first vetted.
 
+## Opening a course before its review finishes ("live but unvetted", owner only)
+
+Sometimes a course should open now, review still in progress. Next to the vetting buttons on
+**/teach**, **Open while unvetted** flips exactly that: the full course opens to the public, and
+every page of it carries a visible "review in progress" notice so nobody mistakes it for a
+reviewed course. **Close while unvetted** returns it to the Coming soon page (enrollees keep
+access, as always).
+
+Two things the switch never changes: the course still counts as unvetted in your review queue
+(the notice is the point, not a workaround), and the **public API keeps withholding its lessons
+until it is actually vetted**, because an external site republishing them cannot show your
+notice. Once you mark the course vetted, the flag stops meaning anything.
+
 ## Who is waiting
 
 Open a course you have not vetted (**/teach → the course**) and the banner at the top says how many

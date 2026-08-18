@@ -4,7 +4,7 @@ import { apiContext, errorJson, json } from "@/lib/api";
 import { addCourseNotifySignup } from "@/db/queries/leads";
 import { sendToInbox } from "@/lib/ecosystem-webhook";
 import { checkRateLimit, clientIp } from "@/lib/rate-limit";
-import { isUnvetted } from "@/lib/vetting";
+import { isVettingLocked } from "@/lib/vetting";
 
 // POST /api/course-notify, "tell me when this course opens", from the public landing page of an
 // UNVETTED course. Email only: these are strangers, and the address is the whole value, so asking
@@ -54,7 +54,7 @@ export async function POST(req: Request) {
   if (!course) return errorJson("Not found", 404);
   // Only an unvetted, published course has a "Coming soon" page to sign up from. Anything else
   // 404s rather than explaining itself: there is nothing for a stranger to learn here.
-  if (!course.isPublished || course.visibility === "private" || !isUnvetted(course)) {
+  if (!course.isPublished || course.visibility === "private" || !isVettingLocked(course)) {
     return errorJson("Not found", 404);
   }
 

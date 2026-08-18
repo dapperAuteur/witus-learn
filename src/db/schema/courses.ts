@@ -82,6 +82,12 @@ export const courses = pgTable(
     // plans/52 for the decision record. Owner-only to set (PATCH /api/courses/[id]
     // takes a boolean and stamps the time server-side; never a client timestamp).
     vettedAt: timestamp("vetted_at", { withTimezone: true }),
+    // "Live but unvetted" (plans/52's one deferred field): the owner explicitly opens this
+    // course's content to the public BEFORE its review finishes. The course renders with an
+    // honest not-yet-reviewed disclosure instead of the Coming-soon face. Owner-only to set,
+    // like vetted_at; meaningless (ignored) once vetted_at is stamped. The api-v1 syndication
+    // reads deliberately do NOT honor it: external consumers keep the stricter vetted-only bar.
+    allowUnvettedPublic: boolean("allow_unvetted_public").notNull().default(false),
     // When set, the course is HELD: a clear UI banner shows this reason and publishing is
     // blocked until it clears (e.g. "vet culturally" or "swap copyrighted source for open").
     // NULL = no hold.

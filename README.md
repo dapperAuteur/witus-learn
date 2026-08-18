@@ -195,6 +195,17 @@ no price, no enroll button. Full access is **owner OR the course's own instructo
 existing enrollment OR an invited auditor** (un-vetting must never revoke access from someone
 mid-course).
 
+**Live but unvetted** (`courses.allow_unvetted_public`, owner-only): the one deferred field from
+plans/52. When the owner flips it on an unvetted course, the course's content opens to the public
+NOW, with a visible review-in-progress disclosure on the landing page and every lesson
+([src/components/unvetted-disclosure.tsx](src/components/unvetted-disclosure.tsx)); "Coming soon"
+badges, the notify-me form, and the vetting locks all stand down (`isVettingLocked` in
+[src/lib/vetting.ts](src/lib/vetting.ts) is what every gate now asks; `isUnvetted` keeps reporting
+the truthful review status). Two deliberate exceptions: `/api/v1` keeps the stricter vetted-only
+bar (an external consumer republishing lessons cannot show our disclosure), and invited auditors
+stay read-only on the course while it remains unvetted. Toggled in bulk from `/teach`
+("Open while unvetted" / "Close while unvetted", owner-only, enforced server-side in the PATCH).
+
 **Invite-to-audit** (`course_auditors`): from a course's `/teach/<course>` page, the owner or its
 instructor invites an email to **read one unvetted course** before it opens. A pending invite grants
 nothing; accepting does. Grants are per tenant and per course. Auditors are **read-only**, no

@@ -4,8 +4,8 @@ import { isFreeCourse, lessonAccess } from "@/lib/gating";
 // vettedAt is set on both fixtures: an unvetted course locks every lesson (see the
 // "unvetted course" cases below), which would otherwise mask what these tests measure.
 const VETTED = new Date("2026-07-29T00:00:00Z");
-const free = { isPublished: true, isSequential: false, priceType: "free", price: "0", vettedAt: VETTED };
-const paid = { isPublished: true, isSequential: false, priceType: "one_time", price: "10", vettedAt: VETTED };
+const free = { isPublished: true, isSequential: false, priceType: "free", price: "0", vettedAt: VETTED, allowUnvettedPublic: false };
+const paid = { isPublished: true, isSequential: false, priceType: "one_time", price: "10", vettedAt: VETTED, allowUnvettedPublic: false };
 const lesson = (over: Partial<{ id: string; isPublished: boolean; isFreePreview: boolean }> = {}) => ({
   id: "L",
   isPublished: true,
@@ -64,6 +64,14 @@ describe("lessonAccess", () => {
     const unvetted = { ...free, vettedAt: null };
     expect(lessonAccess(unvetted, lesson(), ctx({ isEnrolled: true })).open).toBe(true);
     expect(lessonAccess(unvetted, lesson(), ctx({ isEditor: true })).open).toBe(true);
+  });
+
+  it("an unvetted course flagged allow_unvetted_public opens to a stranger (live but unvetted)", () => {
+    const flagged = { ...free, vettedAt: null, allowUnvettedPublic: true };
+    expect(lessonAccess(flagged, lesson(), ctx()).open).toBe(true);
+    // The flag opens the VETTING lock only: a paid course still locks behind enrollment.
+    const flaggedPaid = { ...paid, vettedAt: null, allowUnvettedPublic: true };
+    expect(lessonAccess(flaggedPaid, lesson(), ctx())).toEqual({ open: false, reason: "locked" });
   });
 
   it("isFreeCourse", () => {

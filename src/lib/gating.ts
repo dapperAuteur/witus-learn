@@ -1,5 +1,5 @@
 import type { Course, Lesson } from "@/db/schema";
-import { isUnvetted } from "@/lib/vetting";
+import { isVettingLocked } from "@/lib/vetting";
 
 // Pure lesson-gating logic (no next/headers) so it can be unit-tested. Rule:
 //   editor → everything · unpublished → locked · unvetted → locked (before free-preview,
@@ -30,7 +30,10 @@ export function isFreeCourse(course: Pick<Course, "priceType" | "price">): boole
 }
 
 export function lessonAccess(
-  course: Pick<Course, "isPublished" | "isSequential" | "priceType" | "price" | "vettedAt">,
+  course: Pick<
+    Course,
+    "isPublished" | "isSequential" | "priceType" | "price" | "vettedAt" | "allowUnvettedPublic"
+  >,
   lesson: Pick<Lesson, "id" | "isPublished" | "isFreePreview">,
   ctx: LessonAccessCtx,
 ): { open: boolean; reason?: LessonLockReason } {
@@ -44,7 +47,9 @@ export function lessonAccess(
   // The auditor branch is INSIDE the unvetted check on purpose: the grant exists to review a course
   // before it opens, so once the course is vetted it confers nothing and the auditor is an ordinary
   // visitor facing the ordinary paywall. Otherwise a stale grant would be free access forever.
-  if (isUnvetted(course)) {
+  // isVettingLocked, not isUnvetted: an owner-flagged "live but unvetted" course is open here
+  // (the lesson page shows the review-in-progress disclosure instead of a lock).
+  if (isVettingLocked(course)) {
     if (ctx.isAuditor) return { open: true };
     if (!ctx.isEnrolled) return { open: false, reason: "unvetted" };
   }
