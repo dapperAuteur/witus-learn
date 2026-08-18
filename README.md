@@ -548,6 +548,26 @@ whenever something is waiting, and any unvetted course carries an owner-only CTA
 the course manager, with a one-click **Mark this course vetted** button, so review happens where
 the course is rather than after a walk to another surface.
 
+## Sales and promotions (no code needed)
+
+Brand admins can put a course, a bundle, or the whole school on sale from `/admin/marketing`:
+percent off, dollars off, or free, starting now or on a date, ending on a date or running
+indefinitely until ended by hand. The catalog shows the list price struck through beside the new
+one, and **checkout re-resolves the price on the server**, so the amount charged is always the
+amount shown. The course's list price is never overwritten, so ending a sale restores it exactly.
+Promo codes still work alongside sales. Subscription pricing is deliberately out of scope until
+the recurring-discount rule is decided ([src/lib/sale-pricing.ts](src/lib/sale-pricing.ts),
+migration `0054`).
+
+## Catalog prose is US English
+
+A 2026-08-19 sweep converted 3,421 UK spellings to US across 118 course files, touching only
+display fields. Machine-readable and history-keyed strings were left alone by construction: no
+slug, quiz prompt, `:::reveal` question, accepted-answer list, URL, bibliography entry or verbatim
+quotation changed (the US Constitution's "good Behaviour", the International Labour Organization's
+own name, and 143 other proper nouns included). What remains is logged with file and line in the
+sweep's own report.
+
 ## Specialization credentials
 
 Named three-course tracks (shared research core + craft medium + subject, per the Documentarian

@@ -5,6 +5,16 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- ✅ **Codeless sales and promotions** (\`feat/codeless-promotions\`, migration **0054**):
+  per-course, per-bundle and brand-wide price cuts (percent, amount, or free) with optional
+  start/end windows or an indefinite run plus a manual End now, shown as a struck list price
+  beside the new one, and RESOLVED SERVER-SIDE at checkout so the charge always matches the
+  display. courses.price (the owner's list price) is never overwritten. Promo codes unaffected;
+  subscription pricing deliberately out of scope pending the recurring-discount rule.
+- ✅ **US-English sweep of the catalog** (\`fix/us-spelling-sweep\`): 3,421 conversions across 118
+  course files, display fields only. Zero slugs, quiz prompts, reveal questions, accept-lists,
+  URLs, bibliography entries or verbatim quotations touched (verified line by line, not asserted).
+  Needs \`seed:courses\` + \`seed:sommelier\` + regenerated citations after merge.
 - ✅ **Vetting is reachable and actionable** (\`fix/vetting-queue-button\` merged +
   \`feat/unvetted-vet-cta\`): the /admin published-courses tile links to /teach?status=unvetted
   when courses await review, the teach catalog preselects that filter from the URL, "Courses to
