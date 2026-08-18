@@ -128,6 +128,7 @@ export const TUTORIAL_SCRIPTS: TutorialScript[] = [
     ],
   },
   // Every other help article is covered by the guard, unwritten until someone records it.
+  placeholder("sales-and-promotions", "Running a sale without a promo code"),
   placeholder("getting-started", "Getting started as a teacher"),
   placeholder("create-a-course", "Creating a course"),
   placeholder("add-and-edit-lessons", "Adding and editing lessons"),
