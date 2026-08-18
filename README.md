@@ -57,6 +57,18 @@ field the consumer must display; see [src/lib/disclaimer.ts](src/lib/disclaimer.
 consumer's guide, `plans/wanderlearn-embed-integration.md`. A chromeless
 `/embed/course/[id]` iframe view is also available for embedding without calling the API directly.
 
+**Paste-anywhere course card (no key).** `/embed/card/[courseId]` is a public, unauthenticated,
+chromeless course card (title, description, price or Coming-soon state, click-through to the
+course page on the tenant's own domain) designed to be iframed by ANY third-party site.
+Instructors get a copy-paste snippet at `/teach/[courseId]/embed` (linked "Embed" from the course
+manager). Published + public courses only; a vetting-locked course renders its public Coming-soon
+face (no price, no offer); anything else 404s, never redirects. No API key appears anywhere in
+the snippet — keys stay server-side on the `/api/v1` path. Framing headers are scoped in
+`next.config.ts`: `/embed/*` alone sends `Content-Security-Policy: frame-ancestors *`; every
+other route now sends `X-Frame-Options: SAMEORIGIN` + `frame-ancestors 'self'` (clickjacking
+hardening — nothing outside `/embed/*` was ever meant to be framed by strangers). Click-throughs
+are counted by the existing `/api/link/click` counter (`utm_source=embed-card`).
+
 ## Health check (`/api/health`)
 
 **Point the uptime monitor here, not at the homepage.** A monitor on `/` can return 200 from a CDN
@@ -290,6 +302,16 @@ markdown with quoted passages and lesson links (`/api/courses/[id]/notes/export`
 All queries live in [src/db/queries/notes.ts](src/db/queries/notes.ts) behind the scoped DAL;
 `tests/isolation/notes.db.test.ts` pins the visibility rules (cross-tenant, cross-author,
 unshared-note, and recipient-narrowing leakage all fail the suite).
+## In-app recording: audio and video
+
+In-app lesson recording captures **video as well as audio**: 720p front-camera capture with a
+mirrored live self-view (the saved file is not mirrored), the same offline-first
+IndexedDB → Cloudinary pipeline with automatic sub-100 MB part splitting, and a teleprompter
+self-view docked at the top of the screen so reading the script keeps the speaker's eyes near
+the lens. `lessonType` is set to `audio` or `video` to match the take. Uploads reuse the
+existing unsigned Cloudinary preset (`auto/upload`), so no new media infra; if the preset is
+ever format-restricted, the recorder surfaces Cloudinary's exact error in-UI.
+
 ## In-course search
 
 Every course page shows a **"Search this course"** box to viewers who can read the content

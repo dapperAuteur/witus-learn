@@ -5,6 +5,21 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- ✅ **In-app VIDEO recording with teleprompter self-view** (\`feat/video-recording-teleprompter\`,
+  plan 60 phase 2 of 3): 720p front camera, mirrored preview (file unmirrored), wake lock, same
+  IndexedDB→Cloudinary pipeline and part rotation, teleprompter self-view docked at the lens.
+  Fixed a pre-existing camera/mic leak on mid-take unmount. Still open from plan 60: camera flip,
+  portrait lock, camera-behind-script surface, remembered mode. Editing (brightness/contrast) CUT
+  by BAM 2026-08-10.
+- ✅ **Public paste-anywhere embed** (\`feat/public-embed-widget\`): any site can iframe a
+  tenant-branded course card (/embed/card/[id]); snippet builder at /teach/[courseId]/embed. No
+  key in any snippet; vetting-locked courses show the Coming-soon face; framing headers scoped so
+  ONLY /embed/* is frameable (clickjacking hardening everywhere else, new). Deferred (each needs
+  a migration or a DB-aware proxy): per-tenant framing allowlist, embed impression counts.
+  Click-throughs tracked via /api/link/click (utm_source=embed-card).
+- ✅ **api-v1 db suite self-vets its fixtures** (\`fix/api-v1-db-test-vetted\`): the 2 standing
+  failures were the test predating plans/52's vetted-only reads, not DB drift; state restored
+  after each run.
 - ✅ **School gradebook roll-up + roster CRUD** (\`feat/school-rollup-and-roster-crud\`, plans/50
   Phase 3's safe half): /admin/gradebook (one row per learner across the school, CSV export,
   brand_admin+), and the cohort roster's pending-invite list with Resend (same token, nothing
