@@ -323,7 +323,7 @@ sessions for the school.`,
     slug: "cohorts",
     title: "Run a private class with Cohorts",
     category: "Live",
-    keywords: ["cohort", "class", "roster", "invite", "home school", "homeschool", "students", "who's here", "presence"],
+    keywords: ["cohort", "class", "roster", "invite", "home school", "homeschool", "students", "who's here", "presence", "adjust grade", "override", "regrade"],
     body: `# Cohorts
 
 **/cohorts** lets any signed-in user, not just brand admins, run a private class: the
@@ -336,7 +336,17 @@ home-school use case (a parent asks you to teach their child + classmates live).
 4. The roster shows **● here** next to any student currently present on /live, so you can see who
    showed up in real time. Remove a student from the roster at any time.
 
-You see only your own classes; brand admins/owner can see any class on the school.`,
+You see only your own classes; brand admins/owner can see any class on the school.
+
+## Adjusting a grade (without rewriting it)
+
+On the class report (**/cohorts/[id] → report**), every row has an **Adjust** control: adjust a
+quiz score, or mark a course complete (display only, no certificate). A **reason is required**
+and stays on record. Nothing is ever edited or deleted: your adjustment is a new entry on top,
+the student's real attempt stays underneath, and every report (yours, the family view, the CSV)
+shows the adjusted value **with a visible marker and your reason**. The student sees both values
+on their own dashboard. A wrong adjustment is fixed by saving a newer one. Course statistics
+keep measuring real attempts only.`,
   },
   {
     slug: "family",

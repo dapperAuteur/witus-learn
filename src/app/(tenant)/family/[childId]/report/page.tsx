@@ -6,6 +6,7 @@ import { getScopedDb } from "@/db/scoped";
 import { isGuardianOf } from "@/db/queries/family";
 import { getLearnerGradebook, getLearnerName } from "@/db/queries/gradebook";
 import { PrintButton } from "@/components/print-button";
+import { AdjustedMark } from "@/components/adjusted-mark";
 
 export const metadata: Metadata = { title: "Family report" };
 
@@ -64,10 +65,28 @@ export default async function FamilyReportPage({ params }: { params: Promise<{ c
           </thead>
           <tbody>
             {rows.map((r) => (
-              <tr key={r.courseTitle} className="border-b border-neutral-100">
-                <td className="py-1.5 pr-4">{r.courseTitle}</td>
-                <td className="py-1.5 pr-4">{r.lessonsCompleted}</td>
-                <td className="py-1.5 pr-4">{r.bestQuiz === null ? "" : `${r.bestQuiz}%`}</td>
+              <tr key={r.courseId} className="border-b border-neutral-100">
+                <td className="py-1.5 pr-4">
+                  {r.courseTitle}
+                  {r.courseMarkedComplete ? (
+                    <AdjustedMark label="marked complete by teacher" reason={r.courseMarkedComplete.reason} />
+                  ) : null}
+                </td>
+                <td className="py-1.5 pr-4">
+                  {r.lessonsCompleted}
+                  {r.originalLessonsCompleted != null ? (
+                    <AdjustedMark label={`teacher-adjusted from ${r.originalLessonsCompleted}`} reason="Includes teacher adjustments" />
+                  ) : null}
+                </td>
+                <td className="py-1.5 pr-4">
+                  {r.bestQuiz === null ? "" : `${r.bestQuiz}%`}
+                  {r.adjusted ? (
+                    <AdjustedMark
+                      label={`teacher-adjusted${r.originalBestQuiz != null ? ` from ${r.originalBestQuiz}%` : ""}`}
+                      reason={r.adjusted.reason}
+                    />
+                  ) : null}
+                </td>
                 <td className="py-1.5">{r.enrolledAt.toISOString().slice(0, 10)}</td>
               </tr>
             ))}

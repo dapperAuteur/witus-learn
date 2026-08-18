@@ -337,8 +337,13 @@ PII). Brand_admin/platform-owner only, tenant-scoped like every other read
 (`tests/isolation/gradebook-rollup.db.test.ts`). The cohort roster (`/cohorts/[id]`) now also
 lists **pending invites** with a copyable join link and a **Resend** action that re-delivers the
 same token (nothing already shared is invalidated). Editing grades, quiz attempts, or completions
-is deliberately NOT built: plans/50 defers destructive edits in favor of a future
-override/annotation row so the audit trail stays honest.
+WAS deferred to an override/annotation design — now shipped (plans/66, approved 2026-08-18):
+teachers write **append-only grade overrides** (adjust a quiz score, mark a course complete —
+display only, no certificate) with a required reason. The real attempt is never edited; every
+surface that honors overrides (cohort report + CSV, family report, the learner's own dashboard)
+shows the adjusted value with a visible marker and the reason, corrections are newer rows
+(latest wins), and platform/course-level statistics never consult overrides
+([src/lib/overrides.ts](src/lib/overrides.ts), migration `0053`).
 
 ## Self-serve custom domains
 

@@ -6,6 +6,8 @@ import { getScopedDb } from "@/db/scoped";
 import { getCohort } from "@/db/queries/cohorts";
 import { getCohortGradebook } from "@/db/queries/gradebook";
 import { PrintButton } from "@/components/print-button";
+import { GradeAdjust } from "@/components/grade-adjust";
+import { AdjustedMark } from "@/components/adjusted-mark";
 
 export const metadata: Metadata = { title: "Cohort report" };
 
@@ -50,22 +52,50 @@ export default async function CohortReportPage({ params }: { params: Promise<{ i
               <th className="py-2 pr-4">Course</th>
               <th className="py-2 pr-4">Lessons completed</th>
               <th className="py-2 pr-4">Best quiz</th>
-              <th className="py-2">Enrolled</th>
+              <th className="py-2 pr-4">Enrolled</th>
+              <th className="py-2 print:hidden">Adjust</th>
             </tr>
           </thead>
           <tbody>
             {rows.map((r) => (
-              <tr key={`${r.student}-${r.courseTitle}`} className="border-b border-neutral-100">
+              <tr key={`${r.userId}-${r.courseId}`} className="border-b border-neutral-100">
                 <td className="py-1.5 pr-4">{r.student}</td>
-                <td className="py-1.5 pr-4">{r.courseTitle}</td>
-                <td className="py-1.5 pr-4">{r.lessonsCompleted}</td>
-                <td className="py-1.5 pr-4">{r.bestQuiz === null ? "" : `${r.bestQuiz}%`}</td>
-                <td className="py-1.5">{r.enrolledAt.toISOString().slice(0, 10)}</td>
+                <td className="py-1.5 pr-4">
+                  {r.courseTitle}
+                  {r.courseMarkedComplete ? (
+                    <AdjustedMark label="marked complete" reason={r.courseMarkedComplete.reason} />
+                  ) : null}
+                </td>
+                <td className="py-1.5 pr-4">
+                  {r.lessonsCompleted}
+                  {r.originalLessonsCompleted != null ? (
+                    <AdjustedMark label={`adjusted from ${r.originalLessonsCompleted}`} reason="Includes teacher adjustments" />
+                  ) : null}
+                </td>
+                <td className="py-1.5 pr-4">
+                  {r.bestQuiz === null ? "" : `${r.bestQuiz}%`}
+                  {r.adjusted ? (
+                    <AdjustedMark
+                      label={`adjusted${r.originalBestQuiz != null ? ` from ${r.originalBestQuiz}%` : ""}`}
+                      reason={r.adjusted.reason}
+                    />
+                  ) : null}
+                </td>
+                <td className="py-1.5 pr-4">{r.enrolledAt.toISOString().slice(0, 10)}</td>
+                <td className="py-1.5 print:hidden">
+                  <GradeAdjust
+                    cohortId={cohort.id}
+                    studentUserId={r.userId}
+                    courseId={r.courseId}
+                    courseTitle={r.courseTitle}
+                    currentBest={r.originalBestQuiz !== undefined ? r.originalBestQuiz : r.bestQuiz}
+                  />
+                </td>
               </tr>
             ))}
             {rows.length === 0 ? (
               <tr>
-                <td colSpan={5} className="py-3 text-neutral-500">
+                <td colSpan={6} className="py-3 text-neutral-500">
                   No enrolled students yet.
                 </td>
               </tr>
