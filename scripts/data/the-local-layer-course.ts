@@ -104,11 +104,11 @@ John Forrest Dillon, an Iowa Supreme Court judge, stated the rule in City of Cli
 2. Those **necessarily or fairly implied** in, or incident to, the powers expressly granted;
 3. Those **essential** to the declared objects and purposes of the corporation, not merely convenient, but indispensable.
 
-**Then comes the clause that does most of the work.** Where there is a reasonable, substantial doubt about whether a power was granted, **the doubt is resolved against the corporation, and the power is denied** (Cornell Legal Information Institute, n.d.). Read parts 1 to 3 and you might think a city has room to move. Read the tie-breaker and you see the room close: **in a genuine grey area, the city loses.**
+**Then comes the clause that does most of the work.** Where there is a reasonable, substantial doubt about whether a power was granted, **the doubt is resolved against the corporation, and the power is denied** (Cornell Legal Information Institute, n.d.). Read parts 1 to 3 and you might think a city has room to move. Read the tie-breaker and you see the room close: **in a genuine gray area, the city loses.**
 
 ## Why the tie-breaker is the whole doctrine
 
-Most interesting government questions live in grey areas, because no charter can list every future problem. **A strict Dillon's Rule reading says: if the grant is unclear, the city may not act.** So a Dillon's Rule city that wants to try something its charter did not foresee, a new fee, a new regulation, a new kind of contract, must first find express or fairly implied authority, or go to the state and ask for it. Dillon himself described local governments as the creatures, and in effect the tenants at will, of the legislatures that made them.
+Most interesting government questions live in gray areas, because no charter can list every future problem. **A strict Dillon's Rule reading says: if the grant is unclear, the city may not act.** So a Dillon's Rule city that wants to try something its charter did not foresee, a new fee, a new regulation, a new kind of contract, must first find express or fairly implied authority, or go to the state and ask for it. Dillon himself described local governments as the creatures, and in effect the tenants at will, of the legislatures that made them.
 
 ## The historical mess the rule answered
 
@@ -116,7 +116,7 @@ Dillon's Rule did not arrive in a vacuum. In the nineteenth century, states char
 
 ## How to use this when you read an action
 
-When a city acts in a grey area and someone challenges it, **you are watching Dillon's Rule get applied.** The challenger says the power was never clearly granted; the city says it was fairly implied or essential. Knowing the doctrine tells you what the fight is actually about: not whether the city acted wisely, but **whether the state's grant reaches this far, with the doubt counting against the city.** This is a description of how to read the dispute. It is not legal advice about how any particular dispute comes out.
+When a city acts in a gray area and someone challenges it, **you are watching Dillon's Rule get applied.** The challenger says the power was never clearly granted; the city says it was fairly implied or essential. Knowing the doctrine tells you what the fight is actually about: not whether the city acted wisely, but **whether the state's grant reaches this far, with the doubt counting against the city.** This is a description of how to read the dispute. It is not legal advice about how any particular dispute comes out.
 
 ## Sources
 - City of Clinton v. Cedar Rapids & Missouri River R.R. Co., 24 Iowa 455 (1868). https://www.law.cornell.edu/wex/city_of_clinton_v._cedar_rapids_and_missouri_railroad_company_(1868)
@@ -286,13 +286,13 @@ When a local ordinance is challenged as preempted, the questions are concrete: *
           {
             prompt: "Under Dillon's Rule, a reasonable, substantial doubt about a city's power is resolved:",
             options: [
-              "In favour of the city acting",
+              "In favor of the city acting",
               "Against the city, denying it",
               "By a vote of the residents",
               "By the county commission",
             ],
             correctIndex: 1,
-            explanation: "The tie-breaker does most of the doctrine's work: in a genuine grey area the city loses, so it cannot act on unclear authority.",
+            explanation: "The tie-breaker does most of the doctrine's work: in a genuine gray area the city loses, so it cannot act on unclear authority.",
             sourceLessonSlug: "local-dillons-rule",
           },
           {
@@ -566,7 +566,7 @@ Council-manager government trades one thing for another, and honest reading name
 |---|---|
 | Professional, trained administration | A directly elected chief executive to vote out |
 | A manager insulated from patronage | A single clear political owner of outcomes |
-| A board-and-executive division of labour | The simplicity of "elect the boss" |
+| A board-and-executive division of labor | The simplicity of "elect the boss" |
 
 **So the accountability runs indirectly.** You do not vote for the manager; you vote for the council that hires the manager. If you want the administration to change course, you change the council, and the council changes the manager. It is common among American cities above a few thousand people, according to the professional surveys, and rarer at the very largest cities, which lean mayor-council (International City/County Management Association, n.d.). Reading it well means knowing that the most powerful administrator in town holds no elected office. This is structure, not legal advice.
 
@@ -1219,7 +1219,7 @@ Town meeting is the **counter-example that proves the point of the whole path.**
       section: "Section 4 · Two answers, and a case study",
       body: `Now the far pole from the town meeting. In one town, the residents are the legislature. In this case study, a state legislature reorganized a major city's whole government by statute, and the residents of that city never got to vote on it. **Unigov is the purest demonstration in this course of the fact course 1 taught and this course develops: in the United States, a city is a creature of the state.**
 
-The Indianapolis route cluster in this catalogue already teaches Unigov, as a chronology test for one corridor, Indiana Avenue. **This lesson teaches it as the structural case**: not what Unigov did to any one street, but how the state had the power to do it at all.
+The Indianapolis route cluster in this catalog already teaches Unigov, as a chronology test for one corridor, Indiana Avenue. **This lesson teaches it as the structural case**: not what Unigov did to any one street, but how the state had the power to do it at all.
 
 ## What happened
 
@@ -1504,31 +1504,31 @@ Unigov ties this whole course together. The **state** had the power to reorganiz
       slug: "local-map-home-rule-states",
       title: "19 · Map: the fifty states by home-rule regime",
       section: "Section 5 · See it, then map your own",
-      body: `**Read this before the map, because the map's limits are the lesson.** This is a teaching aid, not a legal determination. It colours each state by the regime under which its cities and towns hold power, the home-rule-versus-Dillon's-Rule question from Section 1, drawn as a choropleth so you can see the rough national pattern at a glance. But Section 1 also taught that this question is a **spectrum, not a switch** (Lesson 3), and any three-colour map of a spectrum is a simplification. **Do not use this map to decide what your city may lawfully do.** Read the caveats, read the colours as a rough landscape, and settle any real question against your own state's constitution and statutes.
+      body: `**Read this before the map, because the map's limits are the lesson.** This is a teaching aid, not a legal determination. It colors each state by the regime under which its cities and towns hold power, the home-rule-versus-Dillon's-Rule question from Section 1, drawn as a choropleth so you can see the rough national pattern at a glance. But Section 1 also taught that this question is a **spectrum, not a switch** (Lesson 3), and any three-color map of a spectrum is a simplification. **Do not use this map to decide what your city may lawfully do.** Read the caveats, read the colors as a rough landscape, and settle any real question against your own state's constitution and statutes.
 
-## What the three colours mean
+## What the three colors mean
 
 Section 1 taught that a state can hand its localities a broad, standing grant of power (**home rule**) or make them ask permission for anything not clearly granted (**Dillon's Rule**), and that most states do some of each. This map sorts the fifty states into three honest buckets:
 
-| Colour | Category | What it means |
+| Color | Category | What it means |
 |---|---|---|
 | **Blue** | Home rule (broad) | The standard references list the state as a home-rule state that does not apply Dillon's Rule to its municipalities |
 | **Amber** | Dillon's Rule (limited) | The references list the state as a Dillon's Rule state, with no broad home-rule grant |
-| **Grey** | Mixed / contested | The state applies home rule to some governments or powers and Dillon's Rule to others, or the sources genuinely disagree, or its status could not be placed with confidence |
+| **Gray** | Mixed / contested | The state applies home rule to some governments or powers and Dillon's Rule to others, or the sources genuinely disagree, or its status could not be placed with confidence |
 
-**The grey bucket is the honest one, and it is deliberately the largest.** It holds the many states that are genuinely a blend, plus every state this map could not confidently sort. That is the point, not a cop-out: Section 1's whole argument is that "your state is a Dillon's Rule state" is a starting hypothesis, not a fact, so a state that cannot be placed cleanly is coloured as unsettled rather than forced into a binary. Better honest and vague than confidently wrong.
+**The gray bucket is the honest one, and it is deliberately the largest.** It holds the many states that are genuinely a blend, plus every state this map could not confidently sort. That is the point, not a cop-out: Section 1's whole argument is that "your state is a Dillon's Rule state" is a starting hypothesis, not a fact, so a state that cannot be placed cleanly is colored as unsettled rather than forced into a binary. Better honest and vague than confidently wrong.
 
 ## Why even the counts disagree
 
-There is no single agreed list, and the disagreement is itself the lesson. The National League of Cities, summarising the standard fifty-state survey, counts roughly 31 Dillon's Rule states, about 10 home-rule states, 8 states that apply Dillon's Rule only to certain municipalities, and Florida as a special case (home rule for everything except taxation) (National League of Cities, n.d.; Krane, Rigos & Hill, 2001). A widely cited Brookings analysis, reading the same underlying survey, instead counts 39 Dillon's Rule states, 10 that reject it, and Florida as uncertain (Richardson, Gough & Puentes, 2003). **Same country, same era, different totals**, because the authors measure slightly different things. This map follows the more cautious reading and pushes every genuinely-mixed or uncertain state into grey, which is why blue and amber here are small, confident groups and grey is everything else.
+There is no single agreed list, and the disagreement is itself the lesson. The National League of Cities, summarizing the standard fifty-state survey, counts roughly 31 Dillon's Rule states, about 10 home-rule states, 8 states that apply Dillon's Rule only to certain municipalities, and Florida as a special case (home rule for everything except taxation) (National League of Cities, n.d.; Krane, Rigos & Hill, 2001). A widely cited Brookings analysis, reading the same underlying survey, instead counts 39 Dillon's Rule states, 10 that reject it, and Florida as uncertain (Richardson, Gough & Puentes, 2003). **Same country, same era, different totals**, because the authors measure slightly different things. This map follows the more cautious reading and pushes every genuinely-mixed or uncertain state into gray, which is why blue and amber here are small, confident groups and gray is everything else.
 
 ## Read Indiana, the course's own case
 
-Notice that **Indiana is grey**, not amber. After Section 4, where the state redrew Indianapolis by statute with no referendum, it is tempting to call Indiana a flat Dillon's Rule state. But Indiana also grants its localities a limited home rule, so the honest colour is mixed. And Unigov is the reminder that even a home-rule grant sits under the state's power to reorganise local government at all. The grey states are exactly where you must do the most reading before you claim anything about them.
+Notice that **Indiana is gray**, not amber. After Section 4, where the state redrew Indianapolis by statute with no referendum, it is tempting to call Indiana a flat Dillon's Rule state. But Indiana also grants its localities a limited home rule, so the honest color is mixed. And Unigov is the reminder that even a home-rule grant sits under the state's power to reorganise local government at all. The gray states are exactly where you must do the most reading before you claim anything about them.
 
 ## What the map cannot show, and what that proves
 
-**It cannot show the spectrum inside a single colour.** Two blue states can entrench home rule very differently (constitutional versus legislative, from Lesson 4), and two grey states can be mixed for opposite reasons. Colour carries one rough sort; the real answer for any state needs its constitution and statutes, which is exactly where the capstone sends you. This map is where the course's caution becomes a picture: it points you at the documents, it does not stand in for them. It is not legal advice.
+**It cannot show the spectrum inside a single color.** Two blue states can entrench home rule very differently (constitutional versus legislative, from Lesson 4), and two gray states can be mixed for opposite reasons. Color carries one rough sort; the real answer for any state needs its constitution and statutes, which is exactly where the capstone sends you. This map is where the course's caution becomes a picture: it points you at the documents, it does not stand in for them. It is not legal advice.
 
 ## Sources
 - National League of Cities. (n.d.). Cities 101: Delegation of power. https://www.nlc.org/resource/cities-101-delegation-of-power/
@@ -1717,7 +1717,7 @@ The map places, over Marion County, Indiana, the governments that still sit on t
 
 ## The assignment
 
-Produce a **local-layer map of your own address**: a labelled list (or an actual sketch) of every local government and special district with authority over it, each with its type, its enabling document, how its governing body is chosen, and who can overturn its acts. Aim for **completeness over polish.** The finding is the count and the sources, not the prose.
+Produce a **local-layer map of your own address**: a labeled list (or an actual sketch) of every local government and special district with authority over it, each with its type, its enabling document, how its governing body is chosen, and who can overturn its acts. Aim for **completeness over polish.** The finding is the count and the sources, not the prose.
 
 ## Step 1. The general-purpose governments
 
@@ -1766,7 +1766,7 @@ For every entry, answer the method from course 1:
 
 ## What good looks like
 
-A complete, sourced inventory in which every local government over your address has a name, a type, a document, a way its board is chosen, and an overturn answer, and in which the blanks are labelled rather than filled with guesses. **If you found a special district you had never heard of that taxes you, learned how its board is chosen, and can name the document that created it, you have done exactly what this course set out to teach: you made the invisible layer legible over the one address that is yours.**
+A complete, sourced inventory in which every local government over your address has a name, a type, a document, a way its board is chosen, and an overturn answer, and in which the blanks are labeled rather than filled with guesses. **If you found a special district you had never heard of that taxes you, learned how its board is chosen, and can name the document that created it, you have done exactly what this course set out to teach: you made the invisible layer legible over the one address that is yours.**
 
 ## Sources
 - U.S. Census Bureau. (2017). 2017 Census of Governments, Organization component. https://www.census.gov/programs-surveys/cog.html

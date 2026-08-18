@@ -88,7 +88,7 @@ function CitationItem({ row }: { row: CitationRow }) {
         </p>
       ) : (
         <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
-          No link in this entry. Verify it against a library or publisher catalogue.
+          No link in this entry. Verify it against a library or publisher catalog.
         </p>
       )}
 

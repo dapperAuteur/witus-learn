@@ -70,7 +70,7 @@ That is not a softer version of the business. In Texas it is the only lawful ver
 
 ${NOT_LEGAL_ADVICE}
 
-:::reveal A course about a business model is itself a product in that business's ecosystem. What should you do with that fact while taking this one? ||| Weigh the claims against the incentive: this course profits from your interest in the field, so its optimistic statements deserve more scepticism than its discouraging ones. Notice which way it errs. A course that tells you the business is fee-capped, deadline-driven and closed to non-attorneys in Texas is giving away reasons not to buy, which is weak evidence in its favour, and it is exactly the test you should apply to every other course you meet in this field.
+:::reveal A course about a business model is itself a product in that business's ecosystem. What should you do with that fact while taking this one? ||| Weigh the claims against the incentive: this course profits from your interest in the field, so its optimistic statements deserve more skepticism than its discouraging ones. Notice which way it errs. A course that tells you the business is fee-capped, deadline-driven and closed to non-attorneys in Texas is giving away reasons not to buy, which is weak evidence in its favor, and it is exactly the test you should apply to every other course you meet in this field.
 
 ## Sources
 - *Tyler v. Hennepin County*, 598 U.S. 631 (2023). https://www.supremecourt.gov/opinions/22pdf/22-166_8n59.pdf`,
@@ -348,9 +348,9 @@ Geraldine Tyler was 94 years old.
       section: "Module 2 · The people, the ethics, the industry",
       body: `Florida caps compensation on an assigned foreclosure surplus at **12 percent**. Georgia caps recovery fees on state-held unclaimed property at **10 percent**. Texas prohibits a non-attorney from charging **anything at all** to obtain excess proceeds for an owner.
 
-Legislatures do not write numbers like that in the abstract. **Each one is a response to conduct that happened**, at enough scale, to enough people, that a legislature acted. Read as a compliance checklist, the caps are an obstacle. Read as a record, they tell you exactly which behaviours this industry produced when it was unregulated.
+Legislatures do not write numbers like that in the abstract. **Each one is a response to conduct that happened**, at enough scale, to enough people, that a legislature acted. Read as a compliance checklist, the caps are an obstacle. Read as a record, they tell you exactly which behaviors this industry produced when it was unregulated.
 
-**The five practices that sit on the line.** Named so you recognise them when a competitor, a partner or a training course presents them as technique. Each is paired with the version that does the same job honestly.
+**The five practices that sit on the line.** Named so you recognize them when a competitor, a partner or a training course presents them as technique. Each is paired with the version that does the same job honestly.
 
 **1. Withholding the source of the funds.** "We have located funds belonging to you" without saying what or where. The purpose is to make you necessary. *The honest version:* name the office and the case number, and let them verify. You will lose some people who then file alone. You will convert more of the ones who stay, and you will not have built a business on a fact you were hiding.
 
@@ -373,7 +373,7 @@ Legislatures do not write numbers like that in the abstract. **Each one is a res
     },
     {
       slug: "surplus-community-and-referral",
-      title: "8 · Being a good neighbour is also the marketing",
+      title: "8 · Being a good neighbor is also the marketing",
       section: "Module 2 · The people, the ethics, the industry",
       body: `**Know the free help, by name, before you charge anyone.** These exist in every state and most people you contact will not know about them:
 
@@ -386,7 +386,7 @@ Legislatures do not write numbers like that in the abstract. **Each one is a res
 
 **This is a small world.** County clerks talk to each other and remember names. Homeowners talk to their families, and families in the situations that produce surplus tend to be dealing with more than one property. A single reputation for honesty in one county is worth more over five years than the handful of files it costs you.
 
-**Serve your own community first.** Two reasons, one practical and one not. Practically, trust already exists and referral chains are short. Less practically: the people receiving the least honest letters are usually the people with the least access to a lawyer, and a course built on the Detroit evidence should say plainly that showing up honestly for those neighbourhoods is worth doing on its own terms.
+**Serve your own community first.** Two reasons, one practical and one not. Practically, trust already exists and referral chains are short. Less practically: the people receiving the least honest letters are usually the people with the least access to a lawyer, and a course built on the Detroit evidence should say plainly that showing up honestly for those neighborhoods is worth doing on its own terms.
 
 **What this looks like operationally.** Keep a written list of the free options for every county you work, put them in the free guide you hand out (Module 5), and log every referral you make. That log is also your best answer if a regulator or a client ever asks what you told people.
 
@@ -409,7 +409,7 @@ Legislatures do not write numbers like that in the abstract. **Each one is a res
             prompt: "What did Atuahene and Berry find about Detroit's tax foreclosures?",
             options: [
               "Roughly 10 percent were attributable to unconstitutional over-assessment",
-              "That foreclosure rates were evenly distributed across all neighbourhoods",
+              "That foreclosure rates were evenly distributed across all neighborhoods",
               "That the majority of foreclosed owners successfully claimed their surplus",
               "That assessment practices complied fully with the Michigan Constitution",
             ],
@@ -467,7 +467,7 @@ Legislatures do not write numbers like that in the abstract. **Each one is a res
             ],
             correctIndex: 0,
             explanation:
-              "Legislatures do not write those numbers in the abstract. Read as a compliance checklist the caps are an obstacle; read as a record they tell you which behaviours this field produced.",
+              "Legislatures do not write those numbers in the abstract. Read as a compliance checklist the caps are an obstacle; read as a record they tell you which behaviors this field produced.",
             sourceLessonSlug: "surplus-fee-caps-as-history",
           },
           {
@@ -1005,7 +1005,7 @@ There is also a rebuttable presumption that the owner of record when the lis pen
               "Whether finders are regulated for county-held excess funds specifically",
               "Whether excess funds are generated by tax sales in Georgia at all",
               "Which county office is responsible for holding excess funds before transfer",
-              "Whether the state operates an unclaimed property programme",
+              "Whether the state operates an unclaimed property program",
             ],
             correctIndex: 0,
             explanation:
@@ -1088,7 +1088,7 @@ There is also a rebuttable presumption that the owner of record when the lis pen
 
 **What to measure.** Guides sent, guides that led to a self-filed claim, and guides that converted to paid work. **Track the second number deliberately, and be pleased when it is high.** It is evidence that the model works, it is what you will point to when a regulator or a client asks how you operate, and over time it is the only marketing that compounds.
 
-:::reveal Someone reads your free guide, files their own claim, and pays you nothing. Why does this course count that as a success rather than a loss? ||| Because it is the model working as designed: the person got their money, which is the point, and it cost you a document you had already written for the county. It also produces the evidence that makes the whole approach credible, a track record of people you helped for free, which is what you show a regulator or a sceptical client. And it is the marketing that compounds, because that person tells others in a field where almost nobody has a good experience to report.
+:::reveal Someone reads your free guide, files their own claim, and pays you nothing. Why does this course count that as a success rather than a loss? ||| Because it is the model working as designed: the person got their money, which is the point, and it cost you a document you had already written for the county. It also produces the evidence that makes the whole approach credible, a track record of people you helped for free, which is what you show a regulator or a skeptical client. And it is the marketing that compounds, because that person tells others in a field where almost nobody has a good experience to report.
 
 ## Sources
 - Fla. Stat. § 45.033 (2025). *Sale or assignment of rights to surplus funds in a property subject to foreclosure*. https://www.flsenate.gov/Laws/Statutes/2025/0045.033
@@ -1107,8 +1107,8 @@ There is also a rebuttable presumption that the owner of record when the lis pen
 **The questions to bring your lawyer.** The review is worth several times more with a specific list. In priority order:
 
 1. In this state, may a non-attorney charge a fee to assist with a surplus or excess funds claim, and under what structure?
-2. Does any registration, bonding or licence apply to that activity here?
-3. **Where is the line between preparing a claim and practising law in this state?**
+2. Does any registration, bonding or license apply to that activity here?
+3. **Where is the line between preparing a claim and practicing law in this state?**
 4. Is there a mandatory disclosure, a required contract form, or a waiting period after the sale?
 5. May client funds pass through my account, or must the office pay the owner directly?
 6. What must my agreement contain, and what would void it?
@@ -1183,7 +1183,7 @@ There is also a rebuttable presumption that the owner of record when the lis pen
             ],
             correctIndex: 0,
             explanation:
-              "It is the model working as designed, it builds the track record you show a regulator or a sceptical client, and it is the marketing that compounds.",
+              "It is the model working as designed, it builds the track record you show a regulator or a skeptical client, and it is the marketing that compounds.",
             sourceLessonSlug: "surplus-the-free-guide",
           },
           {
@@ -1348,7 +1348,7 @@ ${NOT_LEGAL_ADVICE}`,
 
 **Two things this course deliberately did not resolve**, and you should know they are open rather than assume they were covered: whether Georgia regulates finders for county-held excess funds as distinct from state-held unclaimed property, and Florida's tax deed claim timing, which is reported here from secondary sources rather than read against the primary text.
 
-**A closing note.** This course told you the business is fee-capped, deadline-driven, closed to non-attorney fee-charging in Texas, and that a large share of the money in the field is made selling training rather than recovering funds. It did that because a course teaching disclosure has to practise it. Apply the same test to the next one you take.
+**A closing note.** This course told you the business is fee-capped, deadline-driven, closed to non-attorney fee-charging in Texas, and that a large share of the money in the field is made selling training rather than recovering funds. It did that because a course teaching disclosure has to practice it. Apply the same test to the next one you take.
 
 ## Sources
 

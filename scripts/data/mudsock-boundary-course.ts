@@ -76,7 +76,7 @@ export const MUDSOCK_BOUNDARY_COURSE: AuthoredCourse = {
 
 **Now do the thing this course is actually teaching, which is to treat a name as a lead rather than a fact.**
 
-**1. A nickname has no author and no date.** "Mudsock" was never on a plat, a post office register, or an incorporation ordinance. It is a thing people called a place. That makes it real and it makes it unciteable in the way a deed is citeable. **The swampy-soil explanation above has a source. The more colourful retelling you will hear locally, that horses came out of the mud with brown socks on their legs, is a retelling, and this course has not found a primary source for it.** Repeat the first. Attribute the second as a story people tell.
+**1. A nickname has no author and no date.** "Mudsock" was never on a plat, a post office register, or an incorporation ordinance. It is a thing people called a place. That makes it real and it makes it unciteable in the way a deed is citeable. **The swampy-soil explanation above has a source. The more colorful retelling you will hear locally, that horses came out of the mud with brown socks on their legs, is a retelling, and this course has not found a primary source for it.** Repeat the first. Attribute the second as a story people tell.
 
 **2. The name was not unique to this place.** Local reporting notes that other Indiana communities, including Dundee in Madison County, were also called Mudsock. **A place nickname is a common noun before it is a proper one.** If you search records on the name alone you will collect the wrong county, which is exactly the mistake course 1 warned about when it found a Green Book hotel on an "Indiana Avenue" a hundred miles from Indianapolis. **Always carry the county.**
 
@@ -462,7 +462,7 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
 
 **3. The lot, the setback and the frontage.** Minimum lot width, minimum front setback, minimum square footage. These numbers live in a zoning ordinance. **Change one number and you change what can be built, who can afford it, and how many households fit on an acre.** A minimum lot size is a price floor with a survey attached.
 
-**Now the national context, because none of this was invented in Hamilton County.** Richard Rothstein's account of government produced segregation documents how federal underwriting practice, subdivision covenants and public policy shaped who could buy into new suburban development across the twentieth century (Rothstein, 2017). **Course 1 used the same book to explain why a neighbourhood measured as blighted.** It is the same book because it is the same system seen from the other end: **the policies that made one place uninsurable made another place financeable**, and both effects are documented in the same literature.
+**Now the national context, because none of this was invented in Hamilton County.** Richard Rothstein's account of government produced segregation documents how federal underwriting practice, subdivision covenants and public policy shaped who could buy into new suburban development across the twentieth century (Rothstein, 2017). **Course 1 used the same book to explain why a neighborhood measured as blighted.** It is the same book because it is the same system seen from the other end: **the policies that made one place uninsurable made another place financeable**, and both effects are documented in the same literature.
 
 **What that does and does not license you to say.** It licenses you to say that American suburban development happened inside a national policy framework with documented racial effects. **It does not license you to assert anything about the covenants on any specific Hamilton County subdivision that you have not read.** Recorded covenants are public documents held by the county recorder. **If you want to make a claim about one, go read it.** That is a real research assignment and this course is not going to do it for you or pretend it has.
 
@@ -506,7 +506,7 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
 
 **Do the arithmetic on a real enrollment and the consequence appears immediately.** Fishers High School reported **3,664 students** in 2023-24. Under a formula of that shape, a school of that size needs a site measured in tens of acres before you add a stadium, practice fields, tennis courts and parking for a student body that mostly drives. **A site that large is not available in a built up area at a price a school board will pay.** So it gets bought at the edge, where land is cheap, which is where the next subdivision is going anyway.
 
-**The US Environmental Protection Agency's smart growth programme states the downstream effect plainly**: "As new development often occurs around key destinations, such as schools, decisions about where schools will be located are likely to impact an area's future land use, transportation patterns, and infrastructure investments," and "School location can affect how far students, parents, teachers, and staff have to travel to and from school" (U.S. Environmental Protection Agency, n.d.).
+**The US Environmental Protection Agency's smart growth program states the downstream effect plainly**: "As new development often occurs around key destinations, such as schools, decisions about where schools will be located are likely to impact an area's future land use, transportation patterns, and infrastructure investments," and "School location can affect how far students, parents, teachers, and staff have to travel to and from school" (U.S. Environmental Protection Agency, n.d.).
 
 **Read that as an instrument, in the sense course 1 defined.** A school siting standard is a rule, adopted by a body, that produces a predictable result: **large peripheral campuses reachable mainly by car.** Nobody in that chain voted for sprawl. **They voted for an acreage standard**, which is how most land use outcomes actually happen.
 
@@ -639,7 +639,7 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
 - **Yes to the first:** Fishers reorganizes "as a city in combination with Fall Creek Township," with **nine at large council members who elect a mayor from among themselves and hire a city manager.** This held whether or not the second question passed.
 - **No to the first and yes to the second:** Fishers becomes a **second class city**, with "six district councilors, three at large councilors and an elected mayor" (Indianapolis Business Journal, 2012).
 
-**Two organised campaigns.** "Reorganize Fishers" backed the merger with Fall Creek Township, arguing it would "eliminate a layer of government and save the city $1 million per year," and held an Indiana Chamber of Commerce endorsement. "City Yes" backed the second class city, arguing that an "elected mayor and district councilors would provide independence along with checks and balances" (Indianapolis Business Journal, 2012).
+**Two organized campaigns.** "Reorganize Fishers" backed the merger with Fall Creek Township, arguing it would "eliminate a layer of government and save the city $1 million per year," and held an Indiana Chamber of Commerce endorsement. "City Yes" backed the second class city, arguing that an "elected mayor and district councilors would provide independence along with checks and balances" (Indianapolis Business Journal, 2012).
 
 **The results, from Hamilton County's own published election summary.**
 
@@ -654,7 +654,7 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
 
 **Four things worth taking out of that vote, in order of how transferable they are.**
 
-**1. Ballot structure is a form of power.** A voter who wanted an elected mayor had to vote **no** on one question and **yes** on another. **A voter who voted yes to both got the opposite of an elected mayor.** Nobody wrote that ballot to deceive anyone; it is a faithful rendering of two separate statutory processes that happened to run at once. **But the design determined outcomes**, and noticing ballot design is a civic skill you should practise on every referendum you ever see, including the one lesson 16 puts in front of you.
+**1. Ballot structure is a form of power.** A voter who wanted an elected mayor had to vote **no** on one question and **yes** on another. **A voter who voted yes to both got the opposite of an elected mayor.** Nobody wrote that ballot to deceive anyone; it is a faithful rendering of two separate statutory processes that happened to run at once. **But the design determined outcomes**, and noticing ballot design is a civic skill you should practice on every referendum you ever see, including the one lesson 16 puts in front of you.
 
 **2. Turnout differed between the two questions on the same ballot.** 37,580 votes on the first, 36,221 on the second. **1,359 people who voted on one did not vote on the other.** That is a small, checkable, entirely ordinary fact, and it is the kind of fact you will only ever find in the official returns rather than in coverage of them. **Go to the returns.**
 
@@ -709,7 +709,7 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
 
 **Read that source's interest before you read its facts.** That table comes from a memo written by the **Indiana Association of Cities and Towns**, the lobbying association for Indiana municipalities, prepared for legislators during a fight over annexation law. It is a "misconceptions and facts" document, which is to say **advocacy**. Its statutory citations are checkable and useful; its framing ("Involuntary is a misnomer") is an argument, and it should be attributed as one. **Reading a source's interest is not cynicism. It is the same move as noticing who paid for a consultant's report**, and course 1's beat 5 lesson had you do it to a city planning contract.
 
-**Remonstrance is the defence, and the thresholds changed in 2015.** Under **Senate Enrolled Act 330 (2015)**, effective July 1, 2015, remonstrating landowners get a two tier test: **at 51 percent opposition they can obtain a court hearing, and at 65 percent the annexation process ends.** Previously 65 percent was needed merely to get into court. The act also required that signatures on a remonstrance petition be **dated after the ordinance is adopted**, and created an exception where "the municipality declares the annexation is for economic development," which took effect at the end of 2016 (The Indiana Lawyer, 2015).
+**Remonstrance is the defense, and the thresholds changed in 2015.** Under **Senate Enrolled Act 330 (2015)**, effective July 1, 2015, remonstrating landowners get a two tier test: **at 51 percent opposition they can obtain a court hearing, and at 65 percent the annexation process ends.** Previously 65 percent was needed merely to get into court. The act also required that signatures on a remonstrance petition be **dated after the ordinance is adopted**, and created an exception where "the municipality declares the annexation is for economic development," which took effect at the end of 2016 (The Indiana Lawyer, 2015).
 
 **Now the part that matters more than all of the above, and that hardly anybody knows: the remonstrance waiver.**
 
@@ -717,7 +717,7 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
 
 **Lesson 5 told you a waiver gets recorded alongside a plat. Here is what that costs.**
 
-**Case one: Geist, 2007 to 2010.** In January 2007 the Town of Fishers proposed annexing the unincorporated area around Geist Reservoir, roughly **2,200 homes**. Residents organised as the **Geist United Opposition**, collected **1,700 signatures** and litigated. A threshold question reached **Judge Steven Nation of the Hamilton Superior Court**: the Geist interveners had filed petitions to incorporate as East Geist and West Geist, and argued that their filings came first. Nation held that Fishers "took the 'first step' towards its annexation of the disputed area when its Town Council introduced and conducted a first reading" of the annexation ordinance, applying a "first instituted" rule traced to *Taylor v. City of Ft. Wayne*, 47 Ind. 274 (1874). Fishers' counsel described the holding as meaning "a simple meeting with an ordinance introduction" (The Indiana Lawyer, 2007). **On December 31, 2008 a judge ruled Fishers could annex the area; on January 20, 2009 the opponents announced they would not appeal**, ending a four year fight. **The annexation took effect January 2, 2010** and the area was first taxed in 2011 (Encyclopedia of Indianapolis, n.d.-d).
+**Case one: Geist, 2007 to 2010.** In January 2007 the Town of Fishers proposed annexing the unincorporated area around Geist Reservoir, roughly **2,200 homes**. Residents organized as the **Geist United Opposition**, collected **1,700 signatures** and litigated. A threshold question reached **Judge Steven Nation of the Hamilton Superior Court**: the Geist interveners had filed petitions to incorporate as East Geist and West Geist, and argued that their filings came first. Nation held that Fishers "took the 'first step' towards its annexation of the disputed area when its Town Council introduced and conducted a first reading" of the annexation ordinance, applying a "first instituted" rule traced to *Taylor v. City of Ft. Wayne*, 47 Ind. 274 (1874). Fishers' counsel described the holding as meaning "a simple meeting with an ordinance introduction" (The Indiana Lawyer, 2007). **On December 31, 2008 a judge ruled Fishers could annex the area; on January 20, 2009 the opponents announced they would not appeal**, ending a four year fight. **The annexation took effect January 2, 2010** and the area was first taxed in 2011 (Encyclopedia of Indianapolis, n.d.-d).
 
 **Case two: the southeast annexation, 2024 to 2026, and this one is the teaching case.**
 
@@ -732,7 +732,7 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
 
 **Do the arithmetic on the waivers, because it is the whole lesson.** SEA 330 says 65 percent opposition ends an annexation. **74 percent of the parcels had already, permanently and in writing, given up the right to be counted in that percentage.** Nobody in 2024 did anything improper. **The outcome was decided at the moment the sewer went in.**
 
-**Two voices from the record, kept because they disagree.** Mayor **Scott Fadness** called it "a large annexation by a lot of measures" and a "significant addition to the community." Resident **Diana Callahan** said, "We already get a lot of the services Fishers offers…so I don't really expect much to change." **Tonya Davis, president of the Fortville Town Council in neighbouring Hancock County, said of her own town's interest in the area: "We got shut down pretty fast…we're not going to get the chance to do that"** (Indianapolis Business Journal, 2024). **A city annexing is also a city pre-empting**, and the second effect is invisible unless somebody from the next town says so out loud.
+**Two voices from the record, kept because they disagree.** Mayor **Scott Fadness** called it "a large annexation by a lot of measures" and a "significant addition to the community." Resident **Diana Callahan** said, "We already get a lot of the services Fishers offers…so I don't really expect much to change." **Tonya Davis, president of the Fortville Town Council in neighboring Hancock County, said of her own town's interest in the area: "We got shut down pretty fast…we're not going to get the chance to do that"** (Indianapolis Business Journal, 2024). **A city annexing is also a city pre-empting**, and the second effect is invisible unless somebody from the next town says so out loud.
 
 **Three things about annexation that a learner usually has wrong.**
 
@@ -791,13 +791,13 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
 
 **Now the Hamilton County half, and the clause that makes this course possible.**
 
-**Unigov barred annexation into neighbouring counties**, a restriction that was needed to get the votes (Wachter, 2014). **Read that slowly.** The 1969 statute that let Indianapolis expand to fill Marion County simultaneously **made it legally impossible for Indianapolis to expand beyond it.** Hamilton County was placed permanently out of reach of the city's boundary in the same act that dissolved the boundary inside Marion County.
+**Unigov barred annexation into neighboring counties**, a restriction that was needed to get the votes (Wachter, 2014). **Read that slowly.** The 1969 statute that let Indianapolis expand to fill Marion County simultaneously **made it legally impossible for Indianapolis to expand beyond it.** Hamilton County was placed permanently out of reach of the city's boundary in the same act that dissolved the boundary inside Marion County.
 
 **Which means the two ends of the arrow are these, and they are both about lines rather than buildings:**
 - **Inside Marion County**, city limits were erased and school district lines were kept, so the school district became the boundary that mattered.
 - **At the county line**, the city's power to annex was switched off entirely, so **the only municipalities that could grow into this ground were the ones already in it.** Fishers, Carmel, Westfield and Noblesville could annex. Indianapolis could not.
 
-**And Hamilton Southeastern Schools sits on the other side of that line.** The district serves Fishers and portions of neighbouring Noblesville, on township based territory in the southeastern part of the county. Its consolidation, reported as taking place in the 1960s under exactly the reorganization process described above, has the same property every Indiana district has: **it is drawn on township geometry, not on municipal geometry, and it did not move when the city moved.**
+**And Hamilton Southeastern Schools sits on the other side of that line.** The district serves Fishers and portions of neighboring Noblesville, on township based territory in the southeastern part of the county. Its consolidation, reported as taking place in the 1960s under exactly the reorganization process described above, has the same property every Indiana district has: **it is drawn on township geometry, not on municipal geometry, and it did not move when the city moved.**
 
 **Here is the concrete consequence, and it is the thing to carry out of this lesson.** The City of Fishers annexed the Geist area in 2010 and 994 acres in the southeast in 2025. **Neither annexation changed a single student's school district.** Municipal boundaries and school boundaries are **two different maps of the same ground, changed by two different bodies, under two different statutes, on two different schedules.** A household can wake up in a new city and the same school district. **That is the ordinary condition of American suburban life and almost nobody can describe it.**
 
@@ -919,7 +919,7 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
         },
         {
           prompt: "What did Unigov do about annexation into neighbouring counties, and why is that the hinge of this course?",
-          answer: "It barred annexation into neighbouring counties, a restriction needed to get the votes. The same statute that erased city limits inside Marion County made Hamilton County permanently unreachable by Indianapolis, so only municipalities already in the county could grow into this ground.",
+          answer: "It barred annexation into neighboring counties, a restriction needed to get the votes. The same statute that erased city limits inside Marion County made Hamilton County permanently unreachable by Indianapolis, so only municipalities already in the county could grow into this ground.",
         },
         {
           prompt: "Did the 2010 Geist annexation or the 2025 southeast annexation change anyone's school district?",
@@ -952,7 +952,7 @@ Fishers High School and Hamilton Southeastern High School are:
 
 ## Test 2 · Does the corrected Unigov spine explain the county's separateness? **Yes, and strongly.**
 
-Course 1 established two clauses of the 1969 act. First, **school districts were excluded**, stated at the time by the mayor and by the school board president as the price of passage. Second, the act **barred annexation into neighbouring counties** (Wachter, 2014). **The second clause is a fact about Hamilton County written into an Indianapolis statute.** From January 1, 1970, the city that had just erased every municipal boundary inside its own county was legally unable to cross the line into this one. **Whatever else Unigov did, it fixed this county's political independence in statute.** That half needs no softening.
+Course 1 established two clauses of the 1969 act. First, **school districts were excluded**, stated at the time by the mayor and by the school board president as the price of passage. Second, the act **barred annexation into neighboring counties** (Wachter, 2014). **The second clause is a fact about Hamilton County written into an Indianapolis statute.** From January 1, 1970, the city that had just erased every municipal boundary inside its own county was legally unable to cross the line into this one. **Whatever else Unigov did, it fixed this county's political independence in statute.** That half needs no softening.
 
 ## Test 3 · Chronology. Did Unigov cause the suburban growth? **No.**
 
@@ -1112,7 +1112,7 @@ Four jurisdictional boundaries cross this ground: the municipal limit, the towns
               "A court order that permits a pending annexation to move ahead",
               "A recorded document giving up the right to object to annexation",
               "A written promise by a city not to raise taxes after annexing",
-              "A petition signed by neighbours who support a coming annexation",
+              "A petition signed by neighbors who support a coming annexation",
             ],
             correctIndex: 1,
             explanation: "It runs with the land, so later buyers inherit it, usually without knowing. The city extends a pipe and the owner signs away a political right.",
@@ -1167,7 +1167,7 @@ Four jurisdictional boundaries cross this ground: the municipal limit, the towns
               "The consolidation of 31 city departments into six",
               "The 250,000 population threshold",
               "The exclusion of Beech Grove, Lawrence, Southport and Speedway",
-              "The bar on annexation into neighbouring counties",
+              "The bar on annexation into neighboring counties",
             ],
             correctIndex: 3,
             explanation: "From January 1, 1970 the city that had just erased municipal boundaries inside Marion County was legally unable to cross into Hamilton County, so only municipalities already in the county could grow into this ground.",
@@ -1203,7 +1203,7 @@ Four jurisdictional boundaries cross this ground: the municipal limit, the towns
               "Property owned by a registered nonprofit group",
               "Funds approved by voters in a public referendum",
               "Any levy adopted unanimously by a county council",
-              "Farmland enrolled in a conservation programme",
+              "Farmland enrolled in a conservation program",
             ],
             correctIndex: 1,
             explanation: "This is the whole reason school referenda exist in Indiana. A referendum is the only legal door in a constitutional wall.",
@@ -1247,11 +1247,11 @@ Four jurisdictional boundaries cross this ground: the municipal limit, the towns
 
 **1. Find an edge and ask which edge it is.** The single most useful habit in this course. Every time the built environment changes character, ask **which of the four boundaries you are standing on**: a municipal limit, a township line, a school corporation line, or a taxing district. **Usually it is none of them**, because most visible edges are the edge of a subdivision, which is a private plat rather than a jurisdiction. **Learning to be disappointed by an edge is the skill.**
 
-**2. Count the connections between subdivisions.** Stand at the boundary between two neighbourhoods and count how many streets cross it. **Often the answer is zero, or one.** That is the street hierarchy from lesson 5, and it is written into an ordinance. Note where a street stubs out at a treeline, because **a stub is a future connection somebody drew and has not built.**
+**2. Count the connections between subdivisions.** Stand at the boundary between two neighborhoods and count how many streets cross it. **Often the answer is zero, or one.** That is the street hierarchy from lesson 5, and it is written into an ordinance. Note where a street stubs out at a treeline, because **a stub is a future connection somebody drew and has not built.**
 
 **3. Look for the age of the road, not the age of the houses.** Section line roads on a mile grid are the oldest thing in view, older than every building around them, and they came from the federal land survey. **Where a road bends off the grid, something made it bend**, usually water, a railroad, or a reservoir.
 
-**4. Find the sewer.** Manhole covers, lift stations, the boundary between a neighbourhood on municipal sewer and one on septic. **You are looking at the line that lesson 9 said decides annexations.** A sewer boundary is a political boundary with a twenty year fuse.
+**4. Find the sewer.** Manhole covers, lift stations, the boundary between a neighborhood on municipal sewer and one on septic. **You are looking at the line that lesson 9 said decides annexations.** A sewer boundary is a political boundary with a twenty year fuse.
 
 **5. Look at the school sites and estimate the acreage.** How much of the campus is building, how much is parking, how much is field. **Then ask how a fourteen year old without a car reaches it.** That is not a rhetorical question. It has an answer, and the answer is a bus route with a published map.
 
@@ -1259,7 +1259,7 @@ Four jurisdictional boundaries cross this ground: the municipal limit, the towns
 
 **7. Look at the reservoir edge, if the tour reaches it.** Where does public access end and private frontage begin? **Who owns the water, who owns the bank, and who is allowed on it** are three separate questions with three separate answers, and lesson 7 gave you the entity that once held all three.
 
-**8. Look at who is on the street, and describe them as they would describe themselves, or not at all.** A tour is a photograph of strangers in a public place. **The ethics of writing about it are the ethics of writing about neighbours**, and they do not change because the neighbourhood is affluent.
+**8. Look at who is on the street, and describe them as they would describe themselves, or not at all.** A tour is a photograph of strangers in a public place. **The ethics of writing about it are the ethics of writing about neighbors**, and they do not change because the neighborhood is affluent.
 
 ## What the tour cannot show you
 
@@ -1397,7 +1397,7 @@ Four jurisdictional boundaries cross this ground: the municipal limit, the towns
             title: "Indianapolis: the state records and the agencies",
             color: "#15803d",
             description:
-              "Where the state half of this course is kept. The Indiana General Assembly passed the 1959 School Reorganization Act, the 1969 Unigov statute with its bar on annexation into neighbouring counties, Senate Enrolled Act 330 of 2015 on remonstrance, and Senate Enrolled Act 1 of 2025 on property taxes. The Department of Local Government Finance administers the constitutional tax caps and publishes the historic school referenda list, and Indiana Gateway publishes every local unit's budget, levy and rate.",
+              "Where the state half of this course is kept. The Indiana General Assembly passed the 1959 School Reorganization Act, the 1969 Unigov statute with its bar on annexation into neighboring counties, Senate Enrolled Act 330 of 2015 on remonstrance, and Senate Enrolled Act 1 of 2025 on property taxes. The Department of Local Government Finance administers the constitutional tax caps and publishes the historic school referenda list, and Indiana Gateway publishes every local unit's budget, levy and rate.",
           },
         ],
       },
@@ -1446,7 +1446,7 @@ Course 1 gave four questions that work for any American parcel. **Here is what e
 
 **Two habits to carry.**
 
-**First, find the document with the number in it.** A fiscal plan, a budget, a levy certification, a referendum resolution. **A number without a document is a rumour**, and every number in this lesson has a document behind it.
+**First, find the document with the number in it.** A fiscal plan, a budget, a levy certification, a referendum resolution. **A number without a document is a rumor**, and every number in this lesson has a document behind it.
 
 **Second, re-check everything above before you rely on it.** Referendum rates get amended. Plans get updated. Contracts get extended. **Every date and figure in this lesson has a source and a date attached, and you should verify all of them.** That instruction is not a disclaimer. It is the method.
 
@@ -1465,7 +1465,7 @@ Course 1 gave four questions that work for any American parcel. **Here is what e
         },
         {
           prompt: "Which half of the proposed Unigov spine holds for Hamilton County, and why?",
-          answer: "The governance half. Unigov excluded school districts and barred annexation into neighbouring counties, so from January 1, 1970 Indianapolis was legally unable to cross into Hamilton County. That fixed this county's political independence in statute.",
+          answer: "The governance half. Unigov excluded school districts and barred annexation into neighboring counties, so from January 1, 1970 Indianapolis was legally unable to cross into Hamilton County. That fixed this county's political independence in statute.",
         },
         {
           prompt: "What does the chronology test show about Unigov and suburban growth?",
@@ -1497,15 +1497,15 @@ Course 1 gave four questions that work for any American parcel. **Here is what e
 - **Indiana Gateway for Government Units**: https://gateway.ifionline.org/ . Operated as a partnership between the State of Indiana and the Indiana Business Research Center at IU's Kelley School of Business. Its Taxpayer Portal shows assessed values, tax bills and referendum calculators, and its report search and data download reach every local unit's budget, levy and rate (Indiana Gateway, n.d.).
 - **The Department of Local Government Finance's historic school tax levy referenda list**: https://www.in.gov/dlgf/referendum-information/historic-school-tax-levy-referenda/ . Every Indiana school referendum, with its findings, resolution, revenue spending plan and certified result.
 
-**Your target: a public building, not a home.** Pick a school, a library, a city hall, a fire station or a park building in Fishers or Noblesville. **Do not run this drill on somebody's house and publish the result.** A parcel record is public; a current occupant's name attached to their address in a piece of writing is a different act. **This is the same rule course 1 applied to the Green Book tourist homes, and it does not relax because the neighbourhood is affluent.**
+**Your target: a public building, not a home.** Pick a school, a library, a city hall, a fire station or a park building in Fishers or Noblesville. **Do not run this drill on somebody's house and publish the result.** A parcel record is public; a current occupant's name attached to their address in a piece of writing is a different act. **This is the same rule course 1 applied to the Green Book tourist homes, and it does not relax because the neighborhood is affluent.**
 
 **Work through these, then answer the questions below.**
 1. Find the parcel in Hamilton County property records. Write down the **state parcel number** exactly, including punctuation.
-2. Read off the **owner of record** and the **assessed value**. Compare the owner of record to the name of the organisation that occupies the building. **If they differ, that is normal and it is a finding.**
+2. Read off the **owner of record** and the **assessed value**. Compare the owner of record to the name of the organization that occupies the building. **If they differ, that is normal and it is a finding.**
 3. Find the **taxing district** the parcel sits in. Then list every unit that levies on it: county, township, city or town if any, school corporation, library, and any special district. **Count them.** Course 1 noted that Marion County has more than 61 taxing districts; **find out how many Hamilton County has, from Gateway.**
 4. In Gateway, pull **Hamilton Southeastern Schools' certified levy and rate** for the most recent year available. Compare the referendum rate to the total rate. **What share of the bill is the referendum?**
 5. Look up the **circuit breaker credit** on the parcel, if any. That is the dollar figure the caps are removing from a local unit's revenue.
-6. In the DLGF referenda list, find **every Hamilton Southeastern referendum** and note the year, the rate asked and the result. Then find one **neighbouring district's** referenda and compare.
+6. In the DLGF referenda list, find **every Hamilton Southeastern referendum** and note the year, the rate asked and the result. Then find one **neighboring district's** referenda and compare.
 7. Ask the boundary question: **is this parcel inside the city limits? Which township? Which school corporation? Which council district?** Write down all four and notice that they are four different shapes.
 
 **The habits this builds, which transfer to any American county.** Every county has an assessor, a recorder and an auditor, and most have a GIS and an online property search. **The names of the tools change and the facts do not: parcel number, owner of record, assessed value, taxing district, and the list of units that levy on it.** Learn to find those five and you can research any address in the country.
@@ -1577,7 +1577,7 @@ Course 1 gave four questions that work for any American parcel. **Here is what e
           },
           {
             prompt: "Unigov barred Indianapolis from annexing into ___ counties, which is why Hamilton County was out of reach.",
-            answer: "neighbouring",
+            answer: "neighboring",
             accept: ["neighboring", "adjacent", "other", "surrounding"],
             explanation: "The restriction was needed to get the votes. The same statute that erased municipal boundaries inside Marion County fixed the county line as a limit.",
           },
@@ -1651,9 +1651,9 @@ Course 1 gave four questions that work for any American parcel. **Here is what e
             prompt: "Which five facts should you pull for any parcel in any American county?",
             options: [
               "Parcel number, owner, assessed value, taxing district, and its levies",
-              "Square footage, roof age, paint colour, street name and school",
+              "Square footage, roof age, paint color, street name and school",
               "Architect, contractor, original cost, current tenant and zoning",
-              "Purchase price, mortgage lender, insurer, and two neighbours' names",
+              "Purchase price, mortgage lender, insurer, and two neighbors' names",
             ],
             correctIndex: 0,
             explanation: "The names of the tools change from county to county; those five facts do not.",
@@ -1716,7 +1716,7 @@ Course 1 gave four questions that work for any American parcel. **Here is what e
               "A prior amendment to the city's comprehensive land use plan",
             ],
             correctIndex: 0,
-            explanation: "The Fishers southeast annexation's fiscal plan is dated September 5, 2024 and is published on the city's website. A number without a document is a rumour.",
+            explanation: "The Fishers southeast annexation's fiscal plan is dated September 5, 2024 and is published on the city's website. A number without a document is a rumor.",
             sourceLessonSlug: "ms-next-live",
           },
           {
@@ -1728,7 +1728,7 @@ Course 1 gave four questions that work for any American parcel. **Here is what e
               "Because the county assessor refuses all residential requests",
             ],
             correctIndex: 2,
-            explanation: "It is the same rule course 1 applied to the Green Book tourist homes, and it does not relax because the neighbourhood is affluent.",
+            explanation: "It is the same rule course 1 applied to the Green Book tourist homes, and it does not relax because the neighborhood is affluent.",
             sourceLessonSlug: "ms-next-exercise",
           },
           {
@@ -1736,7 +1736,7 @@ Course 1 gave four questions that work for any American parcel. **Here is what e
             options: [
               "A school district attendance line marked on the ground",
               "A township boundary line between two civil townships",
-              "A municipal city limit between two neighbouring cities",
+              "A municipal city limit between two neighboring cities",
               "A subdivision edge, a private plat and not a jurisdiction",
             ],
             correctIndex: 3,
@@ -1759,7 +1759,7 @@ Course 1 gave four questions that work for any American parcel. **Here is what e
             prompt: "Name the four things a virtual tour of this ground cannot show you.",
             options: [
               "A boundary, a tax rate, a waiver, a decision",
-              "Colour, texture, scale, shadow and season",
+              "Color, texture, scale, shadow and season",
               "Buildings, streets, signs, trees and vehicles",
               "Weather, time of day, traffic, cars and noise",
             ],
@@ -1912,7 +1912,7 @@ A short, checkable piece in which every sentence is either something you read in
 - **The Crispus Attucks and high school gymnasium story.** It is course 2 of this cluster, and it is where the segregation half of the school district argument actually lives. **This course carries the boundary mechanics; that one carries the schools.**
 - **The Speedway and the exclusion story attached to it.** Course 3.
 - **Benjamin Harrison and federal voting rights.** Course 5. **Fort Harrison and the federal government as landowner.** Course 6.
-- **The interior politics of Hamilton Southeastern Schools.** Board elections, curriculum disputes and personnel are live local issues with organised participants on several sides, and **a course about boundary instruments has no business narrating them from a distance.**
+- **The interior politics of Hamilton Southeastern Schools.** Board elections, curriculum disputes and personnel are live local issues with organized participants on several sides, and **a course about boundary instruments has no business narrating them from a distance.**
 - **Any claim about the intent behind a specific plat, covenant, annexation or district line.** The recorded documents exist; **none has been read into this course**, and lesson 12 says so in the text.
 - **Any claim that a tax base moved from one county to another.** Refused in lesson 11 and again in lesson 12. **No longitudinal study was found, so no such claim is made.**
 

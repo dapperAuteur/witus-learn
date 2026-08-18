@@ -56,7 +56,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const GOVERNMENTS_WITHOUT_STATES_COURSE: AuthoredCourse = {
   title: "Governments Without States",
   description:
-    "Course 7 of the path whose method course, Who Has the Power to Do This?, taught the four questions (who acted, under what authority, where the power comes from, who can overturn it) and the vertical stack of national and subnational government. This course is about the authority that stack leaves out: governance that happens in bodies that are NOT sovereign states. It opens with the question underneath the whole subject, what even makes a state a state, teaching the Montevideo Convention's four criteria (1933) and the long argument between the declarative and constitutive theories of recognition. Then it climbs above the state to the supranational bodies: the European Union, which is neither a country nor an ordinary treaty organisation but its own autonomous legal order (Van Gend en Loos, 1963; Costa v ENEL, 1964); the United Nations, an organisation of sovereign equals rather than a world government (UN Charter, 1945); and the African Union (2002), successor to the OAU. Then it turns to the hardest case, unrecognised and contested states, taught neutrally: the course describes the recognition disagreement, attributes each claim, reports the documented facts, and does not adjudicate anyone's status. Finally it comes down BELOW the state to self-governing communities, the homeowners association that governs by covenant, the housing co-op that governs by membership, the union that governs by collective bargaining, and the mutual-aid network that governs by voluntary agreement, which is the hand-off to the business path, because each holds its power through an entity and an instrument rather than through sovereignty. It closes with a capstone: find a body with real authority over someone that is not a sovereign state, and map where its power comes from. This course teaches how to read authority. It is not legal advice, and it does not take sides in any sovereignty dispute.",
+    "Course 7 of the path whose method course, Who Has the Power to Do This?, taught the four questions (who acted, under what authority, where the power comes from, who can overturn it) and the vertical stack of national and subnational government. This course is about the authority that stack leaves out: governance that happens in bodies that are NOT sovereign states. It opens with the question underneath the whole subject, what even makes a state a state, teaching the Montevideo Convention's four criteria (1933) and the long argument between the declarative and constitutive theories of recognition. Then it climbs above the state to the supranational bodies: the European Union, which is neither a country nor an ordinary treaty organization but its own autonomous legal order (Van Gend en Loos, 1963; Costa v ENEL, 1964); the United Nations, an organization of sovereign equals rather than a world government (UN Charter, 1945); and the African Union (2002), successor to the OAU. Then it turns to the hardest case, unrecognised and contested states, taught neutrally: the course describes the recognition disagreement, attributes each claim, reports the documented facts, and does not adjudicate anyone's status. Finally it comes down BELOW the state to self-governing communities, the homeowners association that governs by covenant, the housing co-op that governs by membership, the union that governs by collective bargaining, and the mutual-aid network that governs by voluntary agreement, which is the hand-off to the business path, because each holds its power through an entity and an instrument rather than through sovereignty. It closes with a capstone: find a body with real authority over someone that is not a sovereign state, and map where its power comes from. This course teaches how to read authority. It is not legal advice, and it does not take sides in any sovereignty dispute.",
   lessons: [
     // ═══════════════════════════════════════════════════════════════════════════════════════
     // SECTION 1 · What even is a state?
@@ -87,7 +87,7 @@ Course 1 gave you four questions to ask of any government action: **who acted, u
 | The United Nations | The UN Charter, a treaty among sovereign states |
 | A contested state | Effective control on the ground, with recognition disputed |
 | A homeowners association | A recorded covenant and the state's contract and property law |
-| A union | A federal labour statute and the union's own constitution |
+| A union | A federal labor statute and the union's own constitution |
 
 **Read the right-hand column as the spine of the course.** For every body we meet, the question is the same one course 1 asked of a city council: find the instrument, then find its source. What changes is that the source is a treaty, a covenant, or a recognition dispute, instead of a state constitution.
 
@@ -120,11 +120,11 @@ Article 1 says: "The state as a person of international law should possess the f
 
 ## What the criteria deliberately leave out
 
-Read the list again and notice what is NOT on it. **The Convention does not require a minimum size, a particular kind of government, a stable border, or the approval of any other country.** A microstate with a few thousand people qualifies on population. A state with a contested border can still have a "defined territory," because the criterion asks for territory, not for undisputed territory. And crucially, **nothing in Article 1 says a state must be recognised by anyone.** That omission is not an accident, and the next article makes it explicit.
+Read the list again and notice what is NOT on it. **The Convention does not require a minimum size, a particular kind of government, a stable border, or the approval of any other country.** A microstate with a few thousand people qualifies on population. A state with a contested border can still have a "defined territory," because the criterion asks for territory, not for undisputed territory. And crucially, **nothing in Article 1 says a state must be recognized by anyone.** That omission is not an accident, and the next article makes it explicit.
 
 ## Article 3: statehood as a fact, not a permission
 
-The Convention goes on, in Article 3, to state a principle that will run through this whole course: **"The political existence of the state is independent of recognition by the other states."** (Montevideo Convention, 1933, art. 3.) On this view, a state that meets the four criteria simply IS a state, whether or not its neighbours acknowledge it, the way a mountain is a mountain whether or not anyone has mapped it. **That is a bold claim, and it is contested**, which is exactly why the next lesson exists. For now, hold the Convention's own position: statehood is something you HAVE by meeting the criteria, not something you are GIVEN by being recognised.
+The Convention goes on, in Article 3, to state a principle that will run through this whole course: **"The political existence of the state is independent of recognition by the other states."** (Montevideo Convention, 1933, art. 3.) On this view, a state that meets the four criteria simply IS a state, whether or not its neighbors acknowledge it, the way a mountain is a mountain whether or not anyone has mapped it. **That is a bold claim, and it is contested**, which is exactly why the next lesson exists. For now, hold the Convention's own position: statehood is something you HAVE by meeting the criteria, not something you are GIVEN by being recognized.
 
 ## The honest caveat about Montevideo
 
@@ -143,7 +143,7 @@ Two precisions, because this course does not launder a tidy rule. First, **the M
         },
         {
           prompt: "For a body without a state, what does the course say you should still look for?",
-          answer: "The same thing as for a city council: the instrument and its source. The EU traces to its treaties and its own legal order, the UN to the Charter, a contested state to effective control with recognition disputed, an HOA to a recorded covenant and state law, a union to a labour statute plus its own constitution.",
+          answer: "The same thing as for a city council: the instrument and its source. The EU traces to its treaties and its own legal order, the UN to the Charter, a contested state to effective control with recognition disputed, an HOA to a recorded covenant and state law, a union to a labor statute plus its own constitution.",
         },
       ],
     },
@@ -155,24 +155,24 @@ Two precisions, because this course does not launder a tidy rule. First, **the M
 
 ## The declarative theory: recognition just acknowledges a fact
 
-The **declarative theory** is Montevideo's own position. It holds that **statehood is a question of fact: an entity becomes a state the moment it meets the criteria, and recognition by other states merely ACKNOWLEDGES a state that already exists.** Recognition, on this view, is like a birth certificate. The certificate records the birth; it does not cause it. A declarativist looks at an entity with a population, a territory, a government, and the capacity to conduct foreign affairs, and says: this is a state, and other countries recognising it only confirm what is already true.
+The **declarative theory** is Montevideo's own position. It holds that **statehood is a question of fact: an entity becomes a state the moment it meets the criteria, and recognition by other states merely ACKNOWLEDGES a state that already exists.** Recognition, on this view, is like a birth certificate. The certificate records the birth; it does not cause it. A declarativist looks at an entity with a population, a territory, a government, and the capacity to conduct foreign affairs, and says: this is a state, and other countries recognizing it only confirm what is already true.
 
 ## The constitutive theory: recognition helps MAKE the state
 
-The **constitutive theory** holds the opposite. It says that **an entity becomes a state, as a full subject of international law, only insofar as it is RECOGNISED by existing states.** Recognition does not acknowledge a fact; it helps constitute the fact. On this view, meeting the four criteria is necessary but not enough. Until the community of states accepts you, you are not yet fully a state in the eyes of the law, however effectively you govern. **The constitutivist looks at the same effective entity and says: it may govern, but whether it is a STATE depends on whether others treat it as one.**
+The **constitutive theory** holds the opposite. It says that **an entity becomes a state, as a full subject of international law, only insofar as it is RECOGNIZED by existing states.** Recognition does not acknowledge a fact; it helps constitute the fact. On this view, meeting the four criteria is necessary but not enough. Until the community of states accepts you, you are not yet fully a state in the eyes of the law, however effectively you govern. **The constitutivist looks at the same effective entity and says: it may govern, but whether it is a STATE depends on whether others treat it as one.**
 
 ## The two theories, side by side
 
 | | Declarative theory | Constitutive theory |
 |---|---|---|
-| **What makes a state** | Meeting the criteria (a fact) | Meeting the criteria AND being recognised |
+| **What makes a state** | Meeting the criteria (a fact) | Meeting the criteria AND being recognized |
 | **What recognition does** | Acknowledges an existing state | Helps bring the state into legal being |
 | **Montevideo says** | This (art. 3) | Not this |
 | **The weakness critics point to** | Ignores how much recognition matters in reality | Lets existing states gatekeep who counts |
 
 ## Why neither side simply wins
 
-Each theory has a serious problem, and an honest course names both. **The declarative theory struggles with reality:** an entity that meets every Montevideo criterion but that no other state will deal with cannot open an embassy, join most organisations, sign most treaties, or borrow from most banks, so calling it a full state feels hollow. **The constitutive theory struggles with fairness and logic:** if recognition makes a state, then existing states are gatekeepers who can deny statehood for political reasons, and an entity could be a state to the countries that recognise it and not a state to the ones that do not, which is a strange thing for a fact of law to be.
+Each theory has a serious problem, and an honest course names both. **The declarative theory struggles with reality:** an entity that meets every Montevideo criterion but that no other state will deal with cannot open an embassy, join most organizations, sign most treaties, or borrow from most banks, so calling it a full state feels hollow. **The constitutive theory struggles with fairness and logic:** if recognition makes a state, then existing states are gatekeepers who can deny statehood for political reasons, and an entity could be a state to the countries that recognize it and not a state to the ones that do not, which is a strange thing for a fact of law to be.
 
 **Most modern practice sits somewhere in between.** It leans declarative in principle (Montevideo's criteria are the starting test) while admitting that recognition has enormous practical weight, so an unrecognised entity may satisfy the criteria and still be locked out of the things statehood is supposed to buy. **That messy middle is not a failure to decide. It is the actual state of the law**, and Section 3 is where you will watch it operate on real, disputed cases, always attributing claims and never pretending the argument is settled.
 
@@ -264,7 +264,7 @@ Each theory has a serious problem, and an honest course names both. **The declar
           {
             prompt: "According to Montevideo, a valid 'defined territory' requires that the state's borders be:",
             options: [
-              "Approved by all of its close neighbours",
+              "Approved by all of its close neighbors",
               "Drawn by an international court order",
               "Present, even if some are disputed",
               "Larger than a stated minimum area",
@@ -301,7 +301,7 @@ Each theory has a serious problem, and an honest course names both. **The declar
             prompt: "The CONSTITUTIVE theory of recognition holds that an entity becomes a full state:",
             options: [
               "The instant it meets the four criteria",
-              "Only insofar as existing states recognise it",
+              "Only insofar as existing states recognize it",
               "As soon as it declares its own independence",
               "Whenever its population votes to become one",
             ],
@@ -330,7 +330,7 @@ Each theory has a serious problem, and an honest course names both. **The declar
               "Requires a state to have fixed borders",
             ],
             correctIndex: 2,
-            explanation: "An entity meeting every criterion but which no state will deal with cannot open embassies, join organisations, or borrow abroad, so calling it a full state feels hollow.",
+            explanation: "An entity meeting every criterion but which no state will deal with cannot open embassies, join organizations, or borrow abroad, so calling it a full state feels hollow.",
             sourceLessonSlug: "gws-recognition",
           },
           {
@@ -362,7 +362,7 @@ Each theory has a serious problem, and an honest course names both. **The declar
             options: [
               "That the state have a permanent population",
               "That the state have some form of government",
-              "That other states formally recognise it",
+              "That other states formally recognize it",
               "That the state have a defined territory",
             ],
             correctIndex: 2,
@@ -389,13 +389,13 @@ Each theory has a serious problem, and an honest course names both. **The declar
     // ═══════════════════════════════════════════════════════════════════════════════════════
     {
       slug: "gws-supranational-spectrum",
-      title: "5 · Treaty organisation versus supranational body",
+      title: "5 · Treaty organization versus supranational body",
       section: "Section 2 · Governance above the state: supranational bodies",
-      body: `Now climb ABOVE the state. When countries want to act together, they build organisations, and those organisations come in two very different kinds. **Telling the two kinds apart is the tool you need for the rest of Section 2**, because the European Union is famous precisely for being the second kind when almost everything else is the first.
+      body: `Now climb ABOVE the state. When countries want to act together, they build organizations, and those organizations come in two very different kinds. **Telling the two kinds apart is the tool you need for the rest of Section 2**, because the European Union is famous precisely for being the second kind when almost everything else is the first.
 
-## The ordinary kind: an intergovernmental organisation
+## The ordinary kind: an intergovernmental organization
 
-Most international bodies are **intergovernmental**: they are built by a treaty among sovereign states, and they act by the AGREEMENT of those states. The members send representatives who negotiate; decisions usually need consensus or a heavy majority; and, crucially, **the organisation does not make law that reaches inside a member country and binds its citizens directly.** It binds the member STATES, on the international plane, and each state then decides how to carry the obligation out at home. The World Trade Organization, most UN bodies, and the great majority of alliances and unions work this way. **The sovereignty stays with the members; the organisation is their shared instrument.**
+Most international bodies are **intergovernmental**: they are built by a treaty among sovereign states, and they act by the AGREEMENT of those states. The members send representatives who negotiate; decisions usually need consensus or a heavy majority; and, crucially, **the organization does not make law that reaches inside a member country and binds its citizens directly.** It binds the member STATES, on the international plane, and each state then decides how to carry the obligation out at home. The World Trade Organization, most UN bodies, and the great majority of alliances and unions work this way. **The sovereignty stays with the members; the organization is their shared instrument.**
 
 ## The rarer kind: a supranational body
 
@@ -403,7 +403,7 @@ A **supranational** body is different in degree so large it becomes a difference
 
 ## The two kinds, side by side
 
-| | Intergovernmental organisation | Supranational body |
+| | Intergovernmental organization | Supranational body |
 |---|---|---|
 | **Built by** | A treaty among states | A treaty among states |
 | **Who it binds** | The member states, internationally | The states AND, in strong cases, their citizens directly |
@@ -418,18 +418,18 @@ The three bodies in this section sit at different points on this line, and namin
 
 - **The United Nations** is intergovernmental. It is built on the "sovereign equality" of its members, and (with one important exception you will meet) it acts by agreement rather than by ruling over its members' internal affairs.
 - **The African Union** is largely intergovernmental too, though its founding act claims some powers that reach further than its predecessor's did.
-- **The European Union** is the world's clearest supranational body, and the reason it gets its own lesson is that its own court declared, very early, that it is not an ordinary international organisation at all. **That declaration is the next lesson**, and this spectrum is the frame you will read it against.
+- **The European Union** is the world's clearest supranational body, and the reason it gets its own lesson is that its own court declared, very early, that it is not an ordinary international organization at all. **That declaration is the next lesson**, and this spectrum is the frame you will read it against.
 
 ## Sources
 - Charter of the United Nations, art. 2(1) (1945). https://www.un.org/en/about-us/un-charter/full-text`,
       recallContent: [
         {
           prompt: "State the difference between the declarative and constitutive theories of recognition in one sentence each.",
-          answer: "Declarative: an entity becomes a state by meeting the Montevideo criteria, and recognition only acknowledges a state that already exists. Constitutive: an entity becomes a full state only insofar as existing states recognise it, so recognition helps constitute the state.",
+          answer: "Declarative: an entity becomes a state by meeting the Montevideo criteria, and recognition only acknowledges a state that already exists. Constitutive: an entity becomes a full state only insofar as existing states recognize it, so recognition helps constitute the state.",
         },
         {
           prompt: "Why does neither theory of recognition simply win?",
-          answer: "The declarative theory understates how much recognition matters in reality (an unrecognised entity is locked out of embassies, organisations, and banks). The constitutive theory lets existing states gatekeep and makes statehood relative (a state to some, not to others). Practice sits in the unresolved middle.",
+          answer: "The declarative theory understates how much recognition matters in reality (an unrecognised entity is locked out of embassies, organizations, and banks). The constitutive theory lets existing states gatekeep and makes statehood relative (a state to some, not to others). Practice sits in the unresolved middle.",
         },
         {
           prompt: "How does the course say it will handle contested states, given the recognition argument?",
@@ -441,9 +441,9 @@ The three bodies in this section sit at different points on this line, and namin
       slug: "gws-eu-legal-order",
       title: "6 · The European Union: its own legal order",
       section: "Section 2 · Governance above the state: supranational bodies",
-      body: `The European Union is the reason this section exists. **It is neither a country nor an ordinary treaty organisation, and it has been telling the world so, through its own court, since the 1960s.** Getting this lesson right means holding two facts at once: the EU was built by sovereign states signing treaties, exactly like any international body, AND it grew into something no ordinary treaty organisation is, a body whose law operates directly inside its members. How both can be true is the whole lesson.
+      body: `The European Union is the reason this section exists. **It is neither a country nor an ordinary treaty organization, and it has been telling the world so, through its own court, since the 1960s.** Getting this lesson right means holding two facts at once: the EU was built by sovereign states signing treaties, exactly like any international body, AND it grew into something no ordinary treaty organization is, a body whose law operates directly inside its members. How both can be true is the whole lesson.
 
-## Built by treaties, like any organisation
+## Built by treaties, like any organization
 
 The EU's authority traces, in classic method-course fashion, to documents you can name and date. The three that matter most:
 
@@ -453,19 +453,19 @@ The EU's authority traces, in classic method-course fashion, to documents you ca
 | **Maastricht Treaty** (Treaty on European Union) | 1992 | Created the European Union itself and EU citizenship |
 | **Treaty of Lisbon** | 2007 | Restructured the Union and streamlined how it decides |
 
-(Treaty of Rome, 1957; Treaty on European Union, 1992; Treaty of Lisbon, 2007.) **So far this looks intergovernmental:** sovereign states, signing treaties, building an organisation. If the story stopped here, the EU would be a very ambitious version of the ordinary kind. It does not stop here, because of what its court did with those treaties.
+(Treaty of Rome, 1957; Treaty on European Union, 1992; Treaty of Lisbon, 2007.) **So far this looks intergovernmental:** sovereign states, signing treaties, building an organization. If the story stopped here, the EU would be a very ambitious version of the ordinary kind. It does not stop here, because of what its court did with those treaties.
 
 ## Van Gend en Loos (1963): a new legal order with direct effect
 
-In 1963 a Dutch company argued that an EEC Treaty provision gave it rights a national customs authority had to respect. The question reached the European Court of Justice, and the Court's answer changed what the EU is. It held that the Treaty was **"a new legal order of international law for the benefit of which the states have limited their sovereign rights, albeit within limited fields,"** and that its provisions could create rights for individuals which national courts must protect (Van Gend en Loos, Case 26/62, 1963). **This is the doctrine of DIRECT EFFECT:** EU law does not just bind the member states as governments; it can reach their citizens directly and be enforced in their own national courts. **No ordinary treaty organisation works this way.** A citizen normally cannot walk into a national court and enforce a treaty their government signed; after Van Gend en Loos, a citizen of a member state can do exactly that with much of EU law.
+In 1963 a Dutch company argued that an EEC Treaty provision gave it rights a national customs authority had to respect. The question reached the European Court of Justice, and the Court's answer changed what the EU is. It held that the Treaty was **"a new legal order of international law for the benefit of which the states have limited their sovereign rights, albeit within limited fields,"** and that its provisions could create rights for individuals which national courts must protect (Van Gend en Loos, Case 26/62, 1963). **This is the doctrine of DIRECT EFFECT:** EU law does not just bind the member states as governments; it can reach their citizens directly and be enforced in their own national courts. **No ordinary treaty organization works this way.** A citizen normally cannot walk into a national court and enforce a treaty their government signed; after Van Gend en Loos, a citizen of a member state can do exactly that with much of EU law.
 
 ## Costa v ENEL (1964): the primacy of EU law
 
-One year later the Court took the second decisive step. In a dispute over an Italian electricity nationalisation, it held that EU law has **PRIMACY**: a law "stemming from the treaty, an independent source of law, could not, because of its special and original nature, be overridden by domestic legal provisions" (Costa v ENEL, Case 6/64, 1964). **Where valid EU law and a national law conflict within the fields the treaties cover, the EU law prevails.** Put direct effect and primacy together and you have the supranational core: EU law operates inside the member states, reaches their citizens, and outranks conflicting national law in its own fields. **That is why the EU is not an ordinary treaty organisation. Its members did not just agree to cooperate; they created a legal order that operates above their own.**
+One year later the Court took the second decisive step. In a dispute over an Italian electricity nationalisation, it held that EU law has **PRIMACY**: a law "stemming from the treaty, an independent source of law, could not, because of its special and original nature, be overridden by domestic legal provisions" (Costa v ENEL, Case 6/64, 1964). **Where valid EU law and a national law conflict within the fields the treaties cover, the EU law prevails.** Put direct effect and primacy together and you have the supranational core: EU law operates inside the member states, reaches their citizens, and outranks conflicting national law in its own fields. **That is why the EU is not an ordinary treaty organization. Its members did not just agree to cooperate; they created a legal order that operates above their own.**
 
 ## But not a country either
 
-Be equally precise the other way. **The EU is not a state, and does not claim to be one.** It has no general sovereignty; it holds only the powers ("competences") the member states conferred by treaty, and matters outside those fields stay national. Its members remain sovereign states with their own seats at the UN, their own armies, and the acknowledged right to leave, which one member exercised. **So the EU sits in a category almost by itself:** more than an international organisation because its law binds inside its members, less than a state because it holds only conferred powers and its members remain sovereign. The word scholars use is **sui generis**, meaning "of its own kind." **It is the clearest real example of a government without a state**, and reading its authority is simply the method: find the instrument (a directive, a regulation, a treaty article), then find its source (the treaties, as read by the Court that built this legal order).
+Be equally precise the other way. **The EU is not a state, and does not claim to be one.** It has no general sovereignty; it holds only the powers ("competences") the member states conferred by treaty, and matters outside those fields stay national. Its members remain sovereign states with their own seats at the UN, their own armies, and the acknowledged right to leave, which one member exercised. **So the EU sits in a category almost by itself:** more than an international organization because its law binds inside its members, less than a state because it holds only conferred powers and its members remain sovereign. The word scholars use is **sui generis**, meaning "of its own kind." **It is the clearest real example of a government without a state**, and reading its authority is simply the method: find the instrument (a directive, a regulation, a treaty article), then find its source (the treaties, as read by the Court that built this legal order).
 
 ## Sources
 - Treaty establishing the European Economic Community (Treaty of Rome), 1957. https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:11957E
@@ -476,11 +476,11 @@ Be equally precise the other way. **The EU is not a state, and does not claim to
       recallContent: [
         {
           prompt: "What is the difference between an intergovernmental organisation and a supranational body?",
-          answer: "Both are built by a treaty among states. An intergovernmental organisation binds the member states internationally and acts by agreement, with sovereignty staying with the members. A supranational body can bind a member that voted no, and in strong cases makes law that takes effect inside the member states and reaches their citizens directly, because a slice of sovereignty was transferred upward.",
+          answer: "Both are built by a treaty among states. An intergovernmental organization binds the member states internationally and acts by agreement, with sovereignty staying with the members. A supranational body can bind a member that voted no, and in strong cases makes law that takes effect inside the member states and reaches their citizens directly, because a slice of sovereignty was transferred upward.",
         },
         {
           prompt: "Where do the UN, the AU, and the EU sit on that spectrum?",
-          answer: "The UN is intergovernmental (built on sovereign equality). The African Union is largely intergovernmental, though its founding act claims some further-reaching powers. The EU is the clearest supranational body, and its own court declared it is not an ordinary international organisation.",
+          answer: "The UN is intergovernmental (built on sovereign equality). The African Union is largely intergovernmental, though its founding act claims some further-reaching powers. The EU is the clearest supranational body, and its own court declared it is not an ordinary international organization.",
         },
         {
           prompt: "Both kinds of body start from the same thing. What is it, and what differs?",
@@ -490,9 +490,9 @@ Be equally precise the other way. **The EU is not a state, and does not claim to
     },
     {
       slug: "gws-united-nations",
-      title: "7 · The United Nations: an organisation of sovereign equals",
+      title: "7 · The United Nations: an organization of sovereign equals",
       section: "Section 2 · Governance above the state: supranational bodies",
-      body: `The United Nations is the body most people picture when they imagine a "world government," and the most important thing this lesson does is take that picture away. **The UN is not a world government. It is an organisation OF sovereign states, built on their equality, and it was designed on purpose not to rule over them.** Understanding what it can and cannot do is a direct application of Section 2's spectrum: the UN is intergovernmental, with one sharp exception.
+      body: `The United Nations is the body most people picture when they imagine a "world government," and the most important thing this lesson does is take that picture away. **The UN is not a world government. It is an organization OF sovereign states, built on their equality, and it was designed on purpose not to rule over them.** Understanding what it can and cannot do is a direct application of Section 2's spectrum: the UN is intergovernmental, with one sharp exception.
 
 ## Built on sovereign equality
 
@@ -504,7 +504,7 @@ The **General Assembly** is where all members sit and each has one vote. But its
 
 ## The one place the UN can bind: the Security Council
 
-Here is the exception that keeps the UN from being purely intergovernmental. Under **Chapter VII of the Charter, the Security Council can make DECISIONS that members are legally bound to carry out**, including sanctions and the authorisation of force, when it determines there is a threat to peace. Article 25 is the hook: members "agree to accept and carry out the decisions of the Security Council" (UN Charter, 1945, art. 25). **So the Security Council, unlike the General Assembly, can bind.** But notice the design around it: the Council has five permanent members (China, France, Russia, the United Kingdom, and the United States), and each holds a **veto**, so the one part of the UN that can truly command is deliberately gated by the agreement of the great powers. **The UN was built so that binding force requires the consent of the permanent five**, which is sovereignty reasserting itself at the very point where the organisation is strongest.
+Here is the exception that keeps the UN from being purely intergovernmental. Under **Chapter VII of the Charter, the Security Council can make DECISIONS that members are legally bound to carry out**, including sanctions and the authorisation of force, when it determines there is a threat to peace. Article 25 is the hook: members "agree to accept and carry out the decisions of the Security Council" (UN Charter, 1945, art. 25). **So the Security Council, unlike the General Assembly, can bind.** But notice the design around it: the Council has five permanent members (China, France, Russia, the United Kingdom, and the United States), and each holds a **veto**, so the one part of the UN that can truly command is deliberately gated by the agreement of the great powers. **The UN was built so that binding force requires the consent of the permanent five**, which is sovereignty reasserting itself at the very point where the organization is strongest.
 
 ## Reading the UN with the method
 
@@ -520,7 +520,7 @@ Here is the exception that keeps the UN from being purely intergovernmental. Und
       recallContent: [
         {
           prompt: "Why is the EU 'not a country and not an ordinary treaty organisation'?",
-          answer: "Not an ordinary treaty organisation because its law has direct effect (it reaches citizens in national courts, Van Gend en Loos, 1963) and primacy over conflicting national law (Costa v ENEL, 1964), operating inside the members. Not a country because it holds only conferred competences, has no general sovereignty, and its members remain sovereign states that can leave. It is sui generis.",
+          answer: "Not an ordinary treaty organization because its law has direct effect (it reaches citizens in national courts, Van Gend en Loos, 1963) and primacy over conflicting national law (Costa v ENEL, 1964), operating inside the members. Not a country because it holds only conferred competences, has no general sovereignty, and its members remain sovereign states that can leave. It is sui generis.",
         },
         {
           prompt: "Name the three EU founding treaties and their years.",
@@ -536,7 +536,7 @@ Here is the exception that keeps the UN from being purely intergovernmental. Und
       slug: "gws-african-union",
       title: "8 · The African Union: a continent's shared body",
       section: "Section 2 · Governance above the state: supranational bodies",
-      body: `The third body in this section shows that regional union is not a European invention, and that a shared body can be designed to reach further into its members than its predecessor did. **The African Union is the continent-wide organisation of African states, launched in 2002 as the successor to an older body**, and reading its founding document against the UN and the EU is a good final exercise for Section 2.
+      body: `The third body in this section shows that regional union is not a European invention, and that a shared body can be designed to reach further into its members than its predecessor did. **The African Union is the continent-wide organization of African states, launched in 2002 as the successor to an older body**, and reading its founding document against the UN and the EU is a good final exercise for Section 2.
 
 ## From the OAU to the AU
 
@@ -563,7 +563,7 @@ Place the AU on Section 2's spectrum. In its core design it is largely **intergo
       recallContent: [
         {
           prompt: "Is the United Nations a world government? Explain using the method.",
-          answer: "No. The UN is an organisation of sovereign equals (Charter art. 2(1)), built by a treaty. The General Assembly generally only recommends; it does not legislate over members. Only the Security Council can bind members (art. 25, Chapter VII), and it is gated by the five permanent members' vetoes. The UN has only the authority the Charter grants.",
+          answer: "No. The UN is an organization of sovereign equals (Charter art. 2(1)), built by a treaty. The General Assembly generally only recommends; it does not legislate over members. Only the Security Council can bind members (art. 25, Chapter VII), and it is gated by the five permanent members' vetoes. The UN has only the authority the Charter grants.",
         },
         {
           prompt: "What is the one place the UN can make binding decisions, and how is it limited?",
@@ -622,13 +622,13 @@ Place the AU on Section 2's spectrum. In its core design it is largely **intergo
           {
             prompt: "The European Union is best described as:",
             options: [
-              "An ordinary treaty organisation like most",
+              "An ordinary treaty organization like most",
               "A sovereign country in its own right",
               "A department of the United Nations",
               "A sui generis supranational legal order",
             ],
             correctIndex: 3,
-            explanation: "It is more than an international organisation (its law binds inside members) and less than a state (only conferred powers), so scholars call it sui generis, of its own kind.",
+            explanation: "It is more than an international organization (its law binds inside members) and less than a state (only conferred powers), so scholars call it sui generis, of its own kind.",
             sourceLessonSlug: "gws-eu-legal-order",
           },
           {
@@ -777,7 +777,7 @@ Place the AU on Section 2's spectrum. In its core design it is largely **intergo
 
 ## The gap the whole section is about
 
-Recall the two theories. The declarative theory says statehood is a fact you HAVE by meeting the Montevideo criteria; the constitutive theory says statehood is something existing states GIVE you by recognition. **Most of the time these point the same way:** an entity meets the criteria and is widely recognised, and it is simply a state, uncontroversially. The hard cases are the ones where the two come apart, **where an entity has EFFECTIVENESS (it controls a territory, governs a population, functions from day to day) but lacks RECOGNITION (many or all other states will not accept it as a state).** That gap between effectiveness and recognition is the entire subject of Section 3.
+Recall the two theories. The declarative theory says statehood is a fact you HAVE by meeting the Montevideo criteria; the constitutive theory says statehood is something existing states GIVE you by recognition. **Most of the time these point the same way:** an entity meets the criteria and is widely recognized, and it is simply a state, uncontroversially. The hard cases are the ones where the two come apart, **where an entity has EFFECTIVENESS (it controls a territory, governs a population, functions from day to day) but lacks RECOGNITION (many or all other states will not accept it as a state).** That gap between effectiveness and recognition is the entire subject of Section 3.
 
 ## Two words you need: de facto and de jure
 
@@ -788,11 +788,11 @@ International law borrows two Latin phrases to mark this gap, and they are worth
 | **De facto** | "In fact" | Governs and controls territory as a matter of fact |
 | **De jure** | "In law / by right" | Accepted as a state as a matter of law and recognition |
 
-**An entity can be one without the other.** A body can exercise de facto control over territory for decades while much of the world declines to recognise it de jure. And, more rarely, an entity can hold de jure recognition from some states while lacking effective control over the territory it claims. **The recognition disagreement lives in the space between these two words**, and naming which one a claim is about is half of thinking clearly here.
+**An entity can be one without the other.** A body can exercise de facto control over territory for decades while much of the world declines to recognize it de jure. And, more rarely, an entity can hold de jure recognition from some states while lacking effective control over the territory it claims. **The recognition disagreement lives in the space between these two words**, and naming which one a claim is about is half of thinking clearly here.
 
 ## Recognition is a spectrum, not a switch
 
-The second correction to intuition: **recognition is not on-or-off.** Between "recognised by everyone" and "recognised by no one" lies a wide middle. An entity might be recognised by a handful of states, or by a large bloc but not by its immediate neighbour, or recognised at one time and de-recognised later as other governments change their positions. **Recognition is also bilateral and political:** each state decides for itself whom to recognise, and it can and does change its mind. So "is this a state?" often has no single global answer, only a map of which governments say yes, which say no, and which stay deliberately silent.
+The second correction to intuition: **recognition is not on-or-off.** Between "recognized by everyone" and "recognized by no one" lies a wide middle. An entity might be recognized by a handful of states, or by a large bloc but not by its immediate neighbor, or recognized at one time and de-recognized later as other governments change their positions. **Recognition is also bilateral and political:** each state decides for itself whom to recognize, and it can and does change its mind. So "is this a state?" often has no single global answer, only a map of which governments say yes, which say no, and which stay deliberately silent.
 
 ## The rule this section runs on
 
@@ -834,15 +834,15 @@ Contested situations are not all alike. It helps to sort them by where the effec
 
 | Pattern | The gap |
 |---|---|
-| **Functions, little or no recognition** | Effective de facto control, but few or no states recognise it as independent |
-| **Recognised by many, not by all** | A large number of states recognise it; others, often including a claimant state, do not |
-| **Recognised by one, or a few** | Recognised only by a single state or a small group, disputed by most |
+| **Functions, little or no recognition** | Effective de facto control, but few or no states recognize it as independent |
+| **Recognized by many, not by all** | A large number of states recognize it; others, often including a claimant state, do not |
+| **Recognized by one, or a few** | Recognized only by a single state or a small group, disputed by most |
 
 **Read these as patterns, not rankings.** They describe how the recognition disagreement is distributed, not who deserves what. Now, cases, each stated under the three-part rule.
 
-## Kosovo: recognised by many, and a narrow court opinion
+## Kosovo: recognized by many, and a narrow court opinion
 
-The documented facts: **Kosovo's assembly issued a declaration of independence on 17 February 2008.** Many states have recognised Kosovo; others, including Serbia, do not, and Serbia regards Kosovo as part of its territory. In 2010 the International Court of Justice, asked by the UN General Assembly for an advisory opinion, found that **the declaration of independence "did not violate international law"** (ICJ, Kosovo advisory opinion, 22 July 2010). **The precise scope matters and is easy to overstate:** the Court answered a narrow question about the declaration itself. It expressly did not rule on whether Kosovo is a state, nor on the legality or consequences of other states recognising it, treating recognition as a separate, largely political question. **So the documented facts are a declaration, a division among recognising and non-recognising states, and a narrowly framed court opinion. The status is contested, and this course does not resolve it.**
+The documented facts: **Kosovo's assembly issued a declaration of independence on 17 February 2008.** Many states have recognized Kosovo; others, including Serbia, do not, and Serbia regards Kosovo as part of its territory. In 2010 the International Court of Justice, asked by the UN General Assembly for an advisory opinion, found that **the declaration of independence "did not violate international law"** (ICJ, Kosovo advisory opinion, 22 July 2010). **The precise scope matters and is easy to overstate:** the Court answered a narrow question about the declaration itself. It expressly did not rule on whether Kosovo is a state, nor on the legality or consequences of other states recognizing it, treating recognition as a separate, largely political question. **So the documented facts are a declaration, a division among recognizing and non-recognizing states, and a narrowly framed court opinion. The status is contested, and this course does not resolve it.**
 
 ## Somaliland: effective function, minimal recognition
 
@@ -850,7 +850,7 @@ The documented facts: **Somaliland declared independence from Somalia in 1991** 
 
 ## Taiwan: the recognition question shaped by "One China"
 
-The documented facts, attributed carefully: **the authorities on Taiwan (the Republic of China) administer Taiwan with a permanent population, a defined territory, and a functioning government.** As a matter of recognition, only a small and changing number of governments maintain formal diplomatic recognition of the Republic of China as a state; **the People's Republic of China regards Taiwan as part of China's territory (the "One China" position), and most governments maintain unofficial relations with Taiwan while recognising the PRC.** This is a case where the fourth Montevideo criterion, capacity to enter into relations with other states, is directly shaped by other states' recognition choices. **The course states the administration, states the competing positions, attributes each, and takes no side.**
+The documented facts, attributed carefully: **the authorities on Taiwan (the Republic of China) administer Taiwan with a permanent population, a defined territory, and a functioning government.** As a matter of recognition, only a small and changing number of governments maintain formal diplomatic recognition of the Republic of China as a state; **the People's Republic of China regards Taiwan as part of China's territory (the "One China" position), and most governments maintain unofficial relations with Taiwan while recognizing the PRC.** This is a case where the fourth Montevideo criterion, capacity to enter into relations with other states, is directly shaped by other states' recognition choices. **The course states the administration, states the competing positions, attributes each, and takes no side.**
 
 ## What the cases have in common
 
@@ -878,7 +878,7 @@ Strip away the specifics and every case has the same skeleton: **an entity with 
       slug: "gws-membership-not-statehood",
       title: "12 · Membership is not statehood",
       section: "Section 3 · Unrecognised and contested states",
-      body: `People often use "is it a member of the UN?" as a shortcut for "is it a state?" **The shortcut is unreliable, and understanding why closes Section 3.** Membership in an organisation and statehood are two different things, decided by two different processes, and pulling them apart is the last tool you need to read the recognition question clearly.
+      body: `People often use "is it a member of the UN?" as a shortcut for "is it a state?" **The shortcut is unreliable, and understanding why closes Section 3.** Membership in an organization and statehood are two different things, decided by two different processes, and pulling them apart is the last tool you need to read the recognition question clearly.
 
 ## How UN membership actually works
 
@@ -899,9 +899,9 @@ There is also a status short of membership. The UN recognises **permanent observ
 |---|---|
 | Is it a state? | The Montevideo criteria and the recognition disagreement (Section 1) |
 | Is it a UN member? | A Security Council recommendation (with the veto) plus a two-thirds Assembly vote |
-| Is it recognised by country Z? | Country Z's own political decision, which it can change |
+| Is it recognized by country Z? | Country Z's own political decision, which it can change |
 
-**Read the three rows as three separate questions with three separate answers.** They often line up, which is why the shortcut feels reliable, but in exactly the contested cases where you most want an answer, they can come apart: an entity can be a UN member and still have its status disputed by some, or can govern effectively for decades and never be admitted. **The clean lesson to carry out of Section 3: "state," "UN member," and "recognised by country Z" are three different statuses, and treating any one as a stand-in for another is where clear thinking about the recognition question goes wrong.**
+**Read the three rows as three separate questions with three separate answers.** They often line up, which is why the shortcut feels reliable, but in exactly the contested cases where you most want an answer, they can come apart: an entity can be a UN member and still have its status disputed by some, or can govern effectively for decades and never be admitted. **The clean lesson to carry out of Section 3: "state," "UN member," and "recognized by country Z" are three different statuses, and treating any one as a stand-in for another is where clear thinking about the recognition question goes wrong.**
 
 ## Sources
 - Charter of the United Nations, arts. 4, 18 (1945). https://www.un.org/en/about-us/un-charter/full-text
@@ -910,7 +910,7 @@ There is also a status short of membership. The UN recognises **permanent observ
       recallContent: [
         {
           prompt: "In a contested case, what three things does the course do, using Kosovo as the example?",
-          answer: "It states documented facts (a declaration of independence on 17 February 2008; the ICJ's 22 July 2010 advisory opinion that the declaration did not violate international law, on a narrow question that did not rule on statehood or recognition), attributes the competing claims (many states recognise Kosovo; Serbia and others do not, and Serbia regards it as part of its territory), and does not resolve the status.",
+          answer: "It states documented facts (a declaration of independence on 17 February 2008; the ICJ's 22 July 2010 advisory opinion that the declaration did not violate international law, on a narrow question that did not rule on statehood or recognition), attributes the competing claims (many states recognize Kosovo; Serbia and others do not, and Serbia regards it as part of its territory), and does not resolve the status.",
         },
         {
           prompt: "What does Somaliland illustrate about the effectiveness-recognition gap?",
@@ -963,14 +963,14 @@ There is also a status short of membership. The UN recognises **permanent observ
               "A permanent status that never changes",
             ],
             correctIndex: 1,
-            explanation: "Between recognised by everyone and by no one lies a wide middle; each state decides for itself and can change its mind, so there is often no single global answer.",
+            explanation: "Between recognized by everyone and by no one lies a wide middle; each state decides for itself and can change its mind, so there is often no single global answer.",
             sourceLessonSlug: "gws-recognition-in-practice",
           },
           {
             prompt: "The three-part neutrality rule for this section is to report facts, attribute claims, and:",
             options: [
               "Decide which side is finally correct",
-              "Recommend which states should recognise",
+              "Recommend which states should recognize",
               "Not adjudicate the contested status",
               "Rank the entities by their strength",
             ],
@@ -987,7 +987,7 @@ There is also a status short of membership. The UN recognises **permanent observ
               "The year 1963 in Addis Ababa",
             ],
             correctIndex: 0,
-            explanation: "Kosovo's assembly issued a declaration of independence on 17 February 2008. Many states recognise Kosovo; others, including Serbia, do not.",
+            explanation: "Kosovo's assembly issued a declaration of independence on 17 February 2008. Many states recognize Kosovo; others, including Serbia, do not.",
             sourceLessonSlug: "gws-contested-neutrally",
           },
           {
@@ -996,7 +996,7 @@ There is also a status short of membership. The UN recognises **permanent observ
               "Made Kosovo a full member of the UN",
               "Did not violate international law",
               "Settled Kosovo's statehood for good",
-              "Bound every state to recognise Kosovo",
+              "Bound every state to recognize Kosovo",
             ],
             correctIndex: 1,
             explanation: "The Court answered a narrow question: the declaration itself did not violate international law. It expressly did NOT rule on whether Kosovo is a state or on recognition.",
@@ -1032,7 +1032,7 @@ There is also a status short of membership. The UN recognises **permanent observ
               "Recommendation of the Security Council",
               "Ruling from the International Court",
               "Signature on the Montevideo Convention",
-              "Petition from a neighbouring state",
+              "Petition from a neighboring state",
             ],
             correctIndex: 0,
             explanation: "Under Charter Articles 4 and 18, admission needs a Security Council recommendation (so any permanent member can veto) and a two-thirds General Assembly vote.",
@@ -1120,7 +1120,7 @@ There is also a status short of membership. The UN recognises **permanent observ
       slug: "gws-hoas-private-government",
       title: "14 · The homeowners association: government by covenant",
       section: "Section 4 · Governance beside the state: self-governing communities",
-      body: `Now come all the way down from the United Nations to your own street. **Some of the most direct governance in most people's lives comes from a body that is not a government at all: the homeowners association (HOA).** It can make rules about what you do with your property, levy charges you must pay, fine you for breaking its rules, and in many places place a lien on your home and, in the hardest cases, foreclose. That is real authority over real people, exercised by a private organisation. Section 4 is about bodies like this, and it is the deliberate hand-off to the business path, because their power comes from an ENTITY and an INSTRUMENT rather than from sovereignty.
+      body: `Now come all the way down from the United Nations to your own street. **Some of the most direct governance in most people's lives comes from a body that is not a government at all: the homeowners association (HOA).** It can make rules about what you do with your property, levy charges you must pay, fine you for breaking its rules, and in many places place a lien on your home and, in the hardest cases, foreclose. That is real authority over real people, exercised by a private organization. Section 4 is about bodies like this, and it is the deliberate hand-off to the business path, because their power comes from an ENTITY and an INSTRUMENT rather than from sovereignty.
 
 ## Where an HOA's power actually comes from
 
@@ -1132,7 +1132,7 @@ The HOA's authority is often described as resting on CONSENT: you agreed to the 
 
 ## The line that makes an HOA not a government: state action
 
-Here is the legal boundary that keeps an HOA on the private side of the line, and it matters. **Most constitutional rights restrain GOVERNMENTS, not private parties.** The First Amendment binds the state; it does not, in general, bind your neighbour or a private club. Because an HOA is private, courts generally hold that **the constitutional limits that bind a city do not bind an HOA in the same way**, which is why an HOA can enforce rules (about signs, flags, or paint colours) that a city might not be able to impose.
+Here is the legal boundary that keeps an HOA on the private side of the line, and it matters. **Most constitutional rights restrain GOVERNMENTS, not private parties.** The First Amendment binds the state; it does not, in general, bind your neighbor or a private club. Because an HOA is private, courts generally hold that **the constitutional limits that bind a city do not bind an HOA in the same way**, which is why an HOA can enforce rules (about signs, flags, or paint colors) that a city might not be able to impose.
 
 **But the line is not absolute, and the leading case shows why.** In **Marsh v. Alabama (1946), the Supreme Court held that a company town, privately owned, could not use trespass law to bar someone from distributing literature on its streets, because the town performed the functions of an ordinary municipality and the more an owner opens property to public use the more its rights are bounded by the rights of those who use it** (Marsh v. Alabama, 326 U.S. 501, 1946). Marsh established that a private entity performing a **public function** can, in some circumstances, be treated as a **state actor** and held to constitutional limits. **Courts have generally been reluctant to extend Marsh broadly to ordinary HOAs**, so the usual rule stands that an HOA is private, but Marsh marks the edge: when a private government looks and acts enough like a public one, the private/public line can blur. **That blur is precisely the "governments without states" question, asked at the scale of a subdivision.**
 
@@ -1153,7 +1153,7 @@ Notice what reading an HOA required: not international law, but the law of **ent
         },
         {
           prompt: "Name the three separate statuses the course says must not be used as proxies for each other.",
-          answer: "'State' (turns on the Montevideo criteria and the recognition disagreement), 'UN member' (turns on a Security Council recommendation plus a two-thirds Assembly vote), and 'recognised by country Z' (turns on Z's own political decision, which it can change). They often line up but can come apart in contested cases.",
+          answer: "'State' (turns on the Montevideo criteria and the recognition disagreement), 'UN member' (turns on a Security Council recommendation plus a two-thirds Assembly vote), and 'recognized by country Z' (turns on Z's own political decision, which it can change). They often line up but can come apart in contested cases.",
         },
       ],
     },
@@ -1161,7 +1161,7 @@ Notice what reading an HOA required: not international law, but the law of **ent
       slug: "gws-cooperatives",
       title: "15 · Cooperatives: government by membership",
       section: "Section 4 · Governance beside the state: self-governing communities",
-      body: `The HOA governed by a covenant tied to property. A **cooperative** governs by MEMBERSHIP, and the difference between those two sources of authority is worth a lesson, because it introduces the rule that defines an entire family of organisations: **one member, one vote.** Co-ops are self-governing communities whose power comes from belonging, and reading them is again a matter of entity and instrument, deep in Path B's territory.
+      body: `The HOA governed by a covenant tied to property. A **cooperative** governs by MEMBERSHIP, and the difference between those two sources of authority is worth a lesson, because it introduces the rule that defines an entire family of organizations: **one member, one vote.** Co-ops are self-governing communities whose power comes from belonging, and reading them is again a matter of entity and instrument, deep in Path B's territory.
 
 ## What a cooperative is
 
@@ -1186,7 +1186,7 @@ Bring it home to housing, next to the HOA from the last lesson, because the cont
 
 ## The through-line to the business path
 
-Co-ops make the hand-off explicit, because a cooperative IS a business form. Whether an organisation can even BE a co-op, and on what terms, depends on the entity types a given state or country recognises, which is a Path B question end to end. **The governance rule that defines a co-op, one member one vote versus one share one vote, is precisely the distinction Path B's governance course turns on.** So when you read a self-governing community that runs on membership rather than on property or sovereignty, you have already crossed into the business path, and this course is walking you to the door.
+Co-ops make the hand-off explicit, because a cooperative IS a business form. Whether an organization can even BE a co-op, and on what terms, depends on the entity types a given state or country recognises, which is a Path B question end to end. **The governance rule that defines a co-op, one member one vote versus one share one vote, is precisely the distinction Path B's governance course turns on.** So when you read a self-governing community that runs on membership rather than on property or sovereignty, you have already crossed into the business path, and this course is walking you to the door.
 
 ## Sources
 - International Cooperative Alliance. Cooperative identity, values and principles. https://www.ica.coop/en/cooperatives/cooperative-identity`,
@@ -1209,15 +1209,15 @@ Co-ops make the hand-off explicit, because a cooperative IS a business form. Whe
       slug: "gws-unions-mutual-aid",
       title: "16 · Unions and mutual aid: government by agreement",
       section: "Section 4 · Governance beside the state: self-governing communities",
-      body: `Two more self-governing communities complete the section, and complete the hand-off to the business path. A **labour union** governs the terms of work through collective bargaining backed by statute; a **mutual-aid network** governs a community's shared support through voluntary agreement backed by nothing but the members' commitment. They sit at opposite ends of how much the state stands behind a non-state community, which makes them the right pair to finish on.
+      body: `Two more self-governing communities complete the section, and complete the hand-off to the business path. A **labor union** governs the terms of work through collective bargaining backed by statute; a **mutual-aid network** governs a community's shared support through voluntary agreement backed by nothing but the members' commitment. They sit at opposite ends of how much the state stands behind a non-state community, which makes them the right pair to finish on.
 
 ## The union: real authority, backed by a statute
 
-A union is a self-governing organisation of workers, and in the United States its authority has a specific and readable legal source. The **National Labor Relations Act (the Wagner Act) of 1935** established a framework under which workers may organise and bargain collectively (National Labor Relations Act, 1935). Its most striking governance feature: **when a union is selected by the workers in a bargaining unit, it becomes their EXCLUSIVE bargaining representative, empowered to negotiate the terms and conditions of employment for everyone in the unit** (NLRA, 1935). **Read that carefully. A private membership organisation gains, by federal statute, the authority to speak for an entire workplace in setting the terms of the job**, including for workers who did not personally vote for it. That is genuine governance, and its source is the classic pair: a statute (the NLRA) plus the union's own governing document (its constitution and bylaws). A union is a government-like body without a state, and the method reads it cleanly: the instrument is the collective bargaining agreement; the source is the NLRA and the union's constitution.
+A union is a self-governing organization of workers, and in the United States its authority has a specific and readable legal source. The **National Labor Relations Act (the Wagner Act) of 1935** established a framework under which workers may organize and bargain collectively (National Labor Relations Act, 1935). Its most striking governance feature: **when a union is selected by the workers in a bargaining unit, it becomes their EXCLUSIVE bargaining representative, empowered to negotiate the terms and conditions of employment for everyone in the unit** (NLRA, 1935). **Read that carefully. A private membership organization gains, by federal statute, the authority to speak for an entire workplace in setting the terms of the job**, including for workers who did not personally vote for it. That is genuine governance, and its source is the classic pair: a statute (the NLRA) plus the union's own governing document (its constitution and bylaws). A union is a government-like body without a state, and the method reads it cleanly: the instrument is the collective bargaining agreement; the source is the NLRA and the union's constitution.
 
 ## Mutual aid: government by pure agreement
 
-At the other end sits the **mutual-aid network**: people organising to support one another directly, through voluntary, usually horizontal, cooperation, disaster relief, community food distribution, shared care, without necessarily forming any legal entity at all. The idea has a long lineage; the naturalist Peter Kropotkin argued in **Mutual Aid: A Factor of Evolution (1902)** that cooperation is as natural and important a force as competition (Kropotkin, 1902). **A mutual-aid network's authority rests on the thinnest possible source: the agreement and commitment of its participants.** No treaty, no recognition, no covenant tied to land, no enabling statute, often not even a corporation. **It governs a community only as far as the members choose to be governed by it**, which makes it the purest case in the whole course of authority that exists because people accept it, and stops the moment they do not.
+At the other end sits the **mutual-aid network**: people organizing to support one another directly, through voluntary, usually horizontal, cooperation, disaster relief, community food distribution, shared care, without necessarily forming any legal entity at all. The idea has a long lineage; the naturalist Peter Kropotkin argued in **Mutual Aid: A Factor of Evolution (1902)** that cooperation is as natural and important a force as competition (Kropotkin, 1902). **A mutual-aid network's authority rests on the thinnest possible source: the agreement and commitment of its participants.** No treaty, no recognition, no covenant tied to land, no enabling statute, often not even a corporation. **It governs a community only as far as the members choose to be governed by it**, which makes it the purest case in the whole course of authority that exists because people accept it, and stops the moment they do not.
 
 ## The whole section on one line
 
@@ -1226,7 +1226,7 @@ Line up the four communities of Section 4 by where their power comes from, and t
 | Community | Source of authority | How much the state stands behind it |
 |---|---|---|
 | **Homeowners association** | A recorded covenant plus property and contract law | A great deal (courts enforce liens) |
-| **Cooperative** | A member-owned entity and its governing documents | Substantial (recognised entity form) |
+| **Cooperative** | A member-owned entity and its governing documents | Substantial (recognized entity form) |
 | **Union** | A federal statute plus the union's constitution | Substantial (statutory bargaining power) |
 | **Mutual-aid network** | The voluntary agreement of its members | Little or none |
 
@@ -1291,7 +1291,7 @@ Here is the seam. **Path A, this path, taught you to read the authority of gover
             options: [
               "Governments, not private parties",
               "Private clubs, not governments",
-              "Every organisation without exception",
+              "Every organization without exception",
               "Only foreign states, not domestic ones",
             ],
             correctIndex: 0,
@@ -1373,7 +1373,7 @@ Here is the seam. **Path A, this path, taught you to read the authority of gover
           {
             prompt: "A union's authority, read with the method, traces to:",
             options: [
-              "A labour statute plus the union's constitution",
+              "A labor statute plus the union's constitution",
               "A treaty ratified by the United Nations",
               "Recognition by other unions in the industry",
               "The inherent sovereignty of the workers",
@@ -1403,7 +1403,7 @@ Here is the seam. **Path A, this path, taught you to read the authority of gover
               "None of the four backed by the state at all",
             ],
             correctIndex: 2,
-            explanation: "The HOA (enforced liens), the co-op (recognised entity), and the union (statutory power) have substantial state backing; the mutual-aid network runs on consent with little or none.",
+            explanation: "The HOA (enforced liens), the co-op (recognized entity), and the union (statutory power) have substantial state backing; the mutual-aid network runs on consent with little or none.",
             sourceLessonSlug: "gws-unions-mutual-aid",
           },
           {
@@ -1411,7 +1411,7 @@ Here is the seam. **Path A, this path, taught you to read the authority of gover
             options: [
               "Competition is the only force in nature",
               "Cooperation is a natural, important force",
-              "Only the state can organise any support",
+              "Only the state can organize any support",
               "Charity should replace all self-help",
             ],
             correctIndex: 1,
@@ -1452,7 +1452,7 @@ Here is the seam. **Path A, this path, taught you to read the authority of gover
       slug: "gws-worked-example",
       title: "18 · A worked example, start to finish",
       section: "Section 5 · Put it to work",
-      body: `Before the capstone, run the whole course once, end to end, on a single body that is not a sovereign state. The example below is a composite illustration built to exercise the method, not a report about a specific named organisation; when you do the capstone you will use a real body of your own choosing.
+      body: `Before the capstone, run the whole course once, end to end, on a single body that is not a sovereign state. The example below is a composite illustration built to exercise the method, not a report about a specific named organization; when you do the capstone you will use a real body of your own choosing.
 
 ## The body
 
@@ -1480,11 +1480,11 @@ Notice what you did NOT do. You did not decide whether the HOA's rule was fair, 
       recallContent: [
         {
           prompt: "How does a union govern, and where does its authority come from?",
-          answer: "A union is a self-governing organisation of workers. Under the National Labor Relations Act (1935), a union chosen by a bargaining unit becomes the exclusive bargaining representative, empowered to negotiate the terms of employment for everyone in the unit, including those who did not vote for it. Its source is a statute (the NLRA) plus the union's own constitution; the instrument is the collective bargaining agreement.",
+          answer: "A union is a self-governing organization of workers. Under the National Labor Relations Act (1935), a union chosen by a bargaining unit becomes the exclusive bargaining representative, empowered to negotiate the terms of employment for everyone in the unit, including those who did not vote for it. Its source is a statute (the NLRA) plus the union's own constitution; the instrument is the collective bargaining agreement.",
         },
         {
           prompt: "Rank the four Section 4 communities by how much the state stands behind them.",
-          answer: "From most to least: the homeowners association (courts enforce liens), the cooperative (a recognised entity form) and the union (statutory bargaining power) both substantial, and the mutual-aid network (voluntary agreement of members) with little or no state backing. All four hold power through an entity or an agreement you can read.",
+          answer: "From most to least: the homeowners association (courts enforce liens), the cooperative (a recognized entity form) and the union (statutory bargaining power) both substantial, and the mutual-aid network (voluntary agreement of members) with little or no state backing. All four hold power through an entity or an agreement you can read.",
         },
         {
           prompt: "Where exactly is the hand-off to the business path?",
@@ -1511,7 +1511,7 @@ Choose one with real authority over someone. Good hunting grounds, one per secti
 
 | Family | Examples to look for |
 |---|---|
-| **Above the state** | A supranational or international body: a regional union, an international organisation |
+| **Above the state** | A supranational or international body: a regional union, an international organization |
 | **Contested** | An entity whose statehood is disputed (handle under the neutrality rule) |
 | **Beside or below** | An HOA, a housing co-op, a union, a professional licensing body, a mutual-aid group |
 

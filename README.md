@@ -635,8 +635,8 @@ Owner-only view of how the catalog hangs together, answering the two questions s
 rebuilt from live rows on every load, so a course added or a prerequisite set in `/admin/paths` a
 minute ago is already in it and there is no regeneration step to forget. Edges come from
 `course_prerequisites` (required, solid with an arrow; recommended, dashed with an arrow) and the
-`ENTITIES` registry (two courses covering the same person, case, law or concept, the line labelled
-with the entity's name). Category drives colour and clustering. **Entity links are code, so they
+`ENTITIES` registry (two courses covering the same person, case, law or concept, the line labeled
+with the entity's name). Category drives color and clustering. **Entity links are code, so they
 move on deploy, not on save**, and the page says so rather than implying otherwise.
 
 Two pictures, both deterministic trigonometry with **no `d3-force` and no new dependency**, so the

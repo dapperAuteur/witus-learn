@@ -51,11 +51,11 @@ export const FINANCING_WITHOUT_ACCESS_COURSE: AuthoredCourse = {
 
 **When the capital system excludes you, you invent an entity.**
 
-That is the whole course in one sentence. A bank will not lend to you, an insurer will not write your policy, a lender will not take your neighbourhood as collateral, or your faith will not let you take interest at all. So instead of borrowing from the institution, **you and the people around you become the institution.** You pool small regular payments, you accumulate a reserve, and you lend or pay it out to yourselves. The specific shape changes from Ghana to Gujarat to Glasgow. The move does not.
+That is the whole course in one sentence. A bank will not lend to you, an insurer will not write your policy, a lender will not take your neighborhood as collateral, or your faith will not let you take interest at all. So instead of borrowing from the institution, **you and the people around you become the institution.** You pool small regular payments, you accumulate a reserve, and you lend or pay it out to yourselves. The specific shape changes from Ghana to Gujarat to Glasgow. The move does not.
 
 ## Where you have already seen this, if you took the earlier courses
 
-**The shipped course *What They Built* is one worked example of this idea.** It taught that Black communities in Durham, Richmond, Atlanta, Tulsa and Chicago, shut out of white banks and insurers, financed themselves through **fraternal orders, industrial insurance companies and building and loan associations**. That course made one argument that this one now generalises: those institutions "are not colour. They are entity types, chosen because of what the law let each one do."
+**The shipped course *What They Built* is one worked example of this idea.** It taught that Black communities in Durham, Richmond, Atlanta, Tulsa and Chicago, shut out of white banks and insurers, financed themselves through **fraternal orders, industrial insurance companies and building and loan associations**. That course made one argument that this one now generalises: those institutions "are not color. They are entity types, chosen because of what the law let each one do."
 
 **And the method course, *What a Business Entity Actually Is*, gave you the tool to read them.** It taught that any entity is a bundle of **four decisions**: who pays the debts (liability), who pays the tax (taxation), who owns it and how ownership moves (ownership and transfer), and who gets to decide (governance). **Every institution in this course is a different set of answers to those four questions**, chosen under a constraint. Hold the four decisions in your head and a friendly society, a chit fund and an Islamic bank all become readable.
 
@@ -67,7 +67,7 @@ The reason to pull this out into its own course is that **the exclusion is not o
 |---|---|---|
 | Working people in industrial Britain | Cost and refusal of commercial insurance | Friendly societies, burial clubs |
 | Excluded communities in the United States | Banks that would not lend, insurers that would not write | Fraternal benefit societies, industrial insurers, building and loans |
-| Migrants and neighbours worldwide | No access to formal banking at all | Rotating savings and credit associations |
+| Migrants and neighbors worldwide | No access to formal banking at all | Rotating savings and credit associations |
 | Observant Muslims | A prohibition on interest itself | Murabaha, mudaraba, musharaka, sukuk, takaful |
 
 **Read the right-hand column as a set of answers to the same question**, and the point of the course arrives on its own: the interest-charging bank you were raised to treat as the natural way to finance a business is **one option among many**, and most of humanity has, at some point, financed itself another way.
@@ -118,7 +118,7 @@ Put the three together and you can read any of these institutions on sight:
 
 > **A financing workaround is a pool that substitutes social collateral for financial collateral, built by the people a specific door was closed to.**
 
-Everything from here is a variation on that sentence. A friendly society pools dues and enforces with the lodge. A building and loan pools monthly subscriptions and enforces with neighbours who know whether you pay your debts. A rotating pot pools everyone's contribution and enforces with reputation. An Islamic bank pools by sharing the risk of a real venture instead of lending at interest. **Same sentence, five machines.**
+Everything from here is a variation on that sentence. A friendly society pools dues and enforces with the lodge. A building and loan pools monthly subscriptions and enforces with neighbors who know whether you pay your debts. A rotating pot pools everyone's contribution and enforces with reputation. An Islamic bank pools by sharing the risk of a real venture instead of lending at interest. **Same sentence, five machines.**
 
 ## What this reading does not do
 
@@ -208,7 +208,7 @@ It does not tell you the workaround was a good deal. Social collateral **can be 
             options: [
               "Because the topic is required by an outside standard",
               "Because the exclusion and the answer both take many forms",
-              "Because it is the longest history in the catalogue",
+              "Because it is the longest history in the catalog",
               "Because banks asked for the subject to be covered",
             ],
             correctIndex: 1,
@@ -410,11 +410,11 @@ This is a description of a historical entity type, not a recommendation to join 
 
 ## The friendly society
 
-**In Britain, the friendly society is the direct ancestor.** A friendly society is a mutual club whose members pay regular subscriptions and draw benefits in sickness, old age and death, above all a payment large enough to cover a decent funeral. They grew out of trade guilds and local box clubs, and by the eighteenth and nineteenth centuries they were the **main form of self-organised welfare for working people** who could not afford, or were not offered, commercial insurance (Gosden, 1961).
+**In Britain, the friendly society is the direct ancestor.** A friendly society is a mutual club whose members pay regular subscriptions and draw benefits in sickness, old age and death, above all a payment large enough to cover a decent funeral. They grew out of trade guilds and local box clubs, and by the eighteenth and nineteenth centuries they were the **main form of self-organized welfare for working people** who could not afford, or were not offered, commercial insurance (Gosden, 1961).
 
-**The state recognised them early.** The **Friendly Societies Act 1793**, often called Rose's Act after the member of Parliament who carried it, gave registered societies legal standing and some protection for their funds (Friendly Societies Act 1793). That is worth pausing on: **a legal category was created specifically to hold the pooled savings of people the ordinary financial system did not serve.** The entity was recognised because the need was real.
+**The state recognized them early.** The **Friendly Societies Act 1793**, often called Rose's Act after the member of Parliament who carried it, gave registered societies legal standing and some protection for their funds (Friendly Societies Act 1793). That is worth pausing on: **a legal category was created specifically to hold the pooled savings of people the ordinary financial system did not serve.** The entity was recognized because the need was real.
 
-## The affiliated orders, and how the model travelled
+## The affiliated orders, and how the model traveled
 
 British friendly societies grew into large **affiliated orders** with hundreds of local lodges under a central body: the **Independent Order of Oddfellows** and the **Ancient Order of Foresters** are the best known, and both spread across the English-speaking world, carried by migration into Australia, New Zealand, North America and elsewhere (Gosden, 1961). **This is the same lodge structure you met in the American fraternal society in lesson 4**, because it is, quite literally, the same tradition transplanted.
 
@@ -641,7 +641,7 @@ Industrial insurance was a mass-market business for everyone. **In Britain the P
             options: [
               "Members lost all interest in decent funerals",
               "The state began providing the benefits directly",
-              "A law abolished mutual organisations entirely",
+              "A law abolished mutual organizations entirely",
               "Commercial insurers bought every one of them",
             ],
             correctIndex: 1,
@@ -739,11 +739,11 @@ Industrial insurance was a mass-market business for everyone. **In Britain the P
 
 **2. It underwrites on knowledge, not on paper.** The members know whether you pay your debts, whether you keep steady work, whether your word is good. **That local knowledge substitutes for the credit files and appraisals a bank would demand**, which matters enormously, because an excluded borrower is precisely the person who cannot supply those papers. This is social collateral doing the work of financial collateral, exactly as lesson 2 predicted.
 
-**3. Its collateral problem is smaller.** The association lends against a house it would be willing to take back and re-lend on inside its own community. So when the wider lending industry discounts the value of property in a redlined neighbourhood, that discount hurts the building and loan less, because it is not trying to sell the house to an outside market.
+**3. Its collateral problem is smaller.** The association lends against a house it would be willing to take back and re-lend on inside its own community. So when the wider lending industry discounts the value of property in a redlined neighborhood, that discount hurts the building and loan less, because it is not trying to sell the house to an outside market.
 
 ## Why this was the route into homeownership under exclusion
 
-The door here was the mortgage market itself. **Banks would not write home loans in neighbourhoods they had marked as risky, and excluded families could not get a conventional mortgage on ordinary terms.** The building and loan was the answer, and *What They Built* documented one in full: **the Berean Building and Loan Association, founded in 1888 at the Berean Presbyterian Church in Philadelphia by the Reverend Matthew Anderson.** By 1909 it managed more than 150,000 dollars of stock on behalf of 700 members, it helped more than 300 families buy homes, it had an integrated board, and it came through the Depression (Presbyterian Historical Society, n.d.).
+The door here was the mortgage market itself. **Banks would not write home loans in neighborhoods they had marked as risky, and excluded families could not get a conventional mortgage on ordinary terms.** The building and loan was the answer, and *What They Built* documented one in full: **the Berean Building and Loan Association, founded in 1888 at the Berean Presbyterian Church in Philadelphia by the Reverend Matthew Anderson.** By 1909 it managed more than 150,000 dollars of stock on behalf of 700 members, it helped more than 300 families buy homes, it had an integrated board, and it came through the Depression (Presbyterian Historical Society, n.d.).
 
 **Look at the chain in that one sentence, because it is the whole argument.** A **church** produces a **building and loan**, which produces **home ownership**, which produces **collateral**, which finally produces **the ability to borrow for a business.** The excluded family climbs the ladder one rung at a time, and the building and loan is the rung that turns a renter into an owner.
 
@@ -787,11 +787,11 @@ A building and loan is not a bank and its shares are not a bank deposit. **Its f
 
 **In the United States the same entity appeared as the building and loan association and, later, the savings and loan.** The association most often named as the first is the **Oxford Provident Building Association, founded in 1831 in the Frankford section of Philadelphia**, and from it grew the whole savings and loan industry that financed a large share of American homeownership (Mason, 2004). **This is the same tradition as Ketley's Birmingham society**, arriving in a different country and adapting to its housing market, and the Berean association from lesson 8 is one instance of it built by an excluded community.
 
-## The entity choice that got reversed: demutualisation
+## The entity choice that got reversed: demutualization
 
 Here is the lesson the global history teaches that the single case does not. **A building society is a mutual, owned by its members. It does not have to stay one.** Through the late twentieth century, many British building societies and American savings and loans **demutualised**, converting from member-owned mutuals into ordinary shareholder-owned banks, distributing windfalls to members in the process (Mason, 2004).
 
-**Read that against the four decisions and you can see exactly what changed.** Demutualisation is a change to the **ownership** decision and the **governance** decision: one member one vote becomes one share one vote, and the members who used to own the institution become customers of a company owned by shareholders. **The entity that was invented to serve people the market excluded was converted back into a market institution.** Whether that was good or bad is a genuine debate, and this course does not settle it. What it insists on is the reading: **the mutual form is a choice, not a fact of nature, and a choice can be un-made.** That is the same reframing the path's timeline makes about the LLC, that these structures are recent, revisable policy rather than natural law.
+**Read that against the four decisions and you can see exactly what changed.** Demutualization is a change to the **ownership** decision and the **governance** decision: one member one vote becomes one share one vote, and the members who used to own the institution become customers of a company owned by shareholders. **The entity that was invented to serve people the market excluded was converted back into a market institution.** Whether that was good or bad is a genuine debate, and this course does not settle it. What it insists on is the reading: **the mutual form is a choice, not a fact of nature, and a choice can be un-made.** That is the same reframing the path's timeline makes about the LLC, that these structures are recent, revisable policy rather than natural law.
 
 ## The cousin you will meet in the cooperatives course
 
@@ -1022,13 +1022,13 @@ Every institution in this section is the same machine: **members pool committed 
       slug: "fwa-rosca-mechanism",
       title: "11 · How a rotating savings and credit association works",
       section: "Section 4 · ROSCAs worldwide",
-      body: `Everything so far has had a charter, an office, a lodge or a route. This section is about the workaround stripped down to nothing but people and a rule, and it is, on some measures, **the most widely practised financial institution in the world**.
+      body: `Everything so far has had a charter, an office, a lodge or a route. This section is about the workaround stripped down to nothing but people and a rule, and it is, on some measures, **the most widely practiced financial institution in the world**.
 
 ## The mechanism, in full
 
 **A rotating savings and credit association, or ROSCA, is a fixed group of people who each put a fixed sum into a common pot every period, and each period one member takes the whole pot, until everyone has had a turn.** Then the cycle can end or begin again.
 
-Work a simple example. Ten neighbours each put in ten units a month. Every month the pot is a hundred units, and one member takes all of it. After ten months everyone has paid a hundred and everyone has received a hundred. **Nobody has paid interest, nobody has earned interest, and yet real credit has changed hands.**
+Work a simple example. Ten neighbors each put in ten units a month. Every month the pot is a hundred units, and one member takes all of it. After ten months everyone has paid a hundred and everyone has received a hundred. **Nobody has paid interest, nobody has earned interest, and yet real credit has changed hands.**
 
 ## Why it is savings and credit at the same time
 
@@ -1054,7 +1054,7 @@ The one real design decision is **who gets the pot when**, and the world's ROSCA
 
 ## What enforces it
 
-**A ROSCA usually has no legal contract and no court behind it.** What makes a member keep paying after they have already collected their pot is **social collateral in its purest form**: the group is made of people who know each other, and a member who absconds after collecting is not just a defaulter but is finished among their own neighbours, family or congregation. This is lesson 2's swap taken to the limit: **there is no financial collateral at all, only the standing of the members.**
+**A ROSCA usually has no legal contract and no court behind it.** What makes a member keep paying after they have already collected their pot is **social collateral in its purest form**: the group is made of people who know each other, and a member who absconds after collecting is not just a defaulter but is finished among their own neighbors, family or congregation. This is lesson 2's swap taken to the limit: **there is no financial collateral at all, only the standing of the members.**
 
 ## The entity question, which has a surprising answer
 
@@ -1110,13 +1110,13 @@ Every one of these is a rotating savings and credit association, or a very close
 | **Gam'eya** | Egypt |
 | **Tontine** | Francophone West and Central Africa |
 
-**Read that list slowly, because the length of it is the argument.** The point is not to memorise the words. The point is that a Ghanaian market trader, a Mexican factory worker, a Korean shopkeeper and an Egyptian civil servant, none of whom taught the others, are all running the identical machine from lesson 11.
+**Read that list slowly, because the length of it is the argument.** The point is not to memorize the words. The point is that a Ghanaian market trader, a Mexican factory worker, a Korean shopkeeper and an Egyptian civil servant, none of whom taught the others, are all running the identical machine from lesson 11.
 
 ## Two that are worth a closer look
 
 **The susu comes in two forms, and they are often confused.** One is the rotating pot you already understand. The other is a **daily-deposit susu**, run by a susu collector who visits traders in a market, takes a small fixed deposit every day, and returns the accumulated sum at the end of the month, keeping roughly one day's deposit as a fee. **That second form is not rotation at all; it is a savings-and-safekeeping service** for people with no bank. Naming the difference is the kind of precision this course asks for: the same word covers a pure ROSCA and a paid savings service, and they are not the same entity.
 
-**The chit fund is the auction ROSCA from lesson 11, formalised and regulated.** In India the chit fund is a large, organised industry, and it is governed by national legislation, the **Chit Funds Act, 1982**, which regulates registered chit funds and the conduct of the foreman who runs them (Chit Funds Act, 1982). **This is a ROSCA that grew all the way up into a licensed financial sector**, which is the opposite end of the spectrum from the informal neighbourhood pot, and it shows that the workaround does not have to stay informal.
+**The chit fund is the auction ROSCA from lesson 11, formalised and regulated.** In India the chit fund is a large, organized industry, and it is governed by national legislation, the **Chit Funds Act, 1982**, which regulates registered chit funds and the conduct of the foreman who runs them (Chit Funds Act, 1982). **This is a ROSCA that grew all the way up into a licensed financial sector**, which is the opposite end of the spectrum from the informal neighborhood pot, and it shows that the workaround does not have to stay informal.
 
 ## The disagreement this course promised you: the word "tontine"
 
@@ -1137,7 +1137,7 @@ Now the case where the record genuinely disagrees with itself, and lesson 1 said
 
 ## Women, migration, and why ROSCAs persist
 
-Two more findings from the literature, both well documented. **ROSCAs are, in many societies, disproportionately run and used by women**, who were and are the group most often shut out of formal banking, and the standard scholarly collection on the subject is organised entirely around that fact (Ardener & Burman, 1995). And **ROSCAs travel with migration**: immigrant communities carry the institution with them, which is why a Jamaican "partner" turns up in London and a Mexican "tanda" turns up in California. **The workaround crosses the border in people's heads**, needing no infrastructure to reassemble on the other side.
+Two more findings from the literature, both well documented. **ROSCAs are, in many societies, disproportionately run and used by women**, who were and are the group most often shut out of formal banking, and the standard scholarly collection on the subject is organized entirely around that fact (Ardener & Burman, 1995). And **ROSCAs travel with migration**: immigrant communities carry the institution with them, which is why a Jamaican "partner" turns up in London and a Mexican "tanda" turns up in California. **The workaround crosses the border in people's heads**, needing no infrastructure to reassemble on the other side.
 
 **As always, this is description, not advice.** An informal ROSCA in any country carries the counterparty risk lesson 11 named, and a regulated one like an Indian chit fund carries its own rules and its own history of both legitimate operation and fraud. Read the mechanism; do not read an endorsement.
 
@@ -1218,7 +1218,7 @@ Two more findings from the literature, both well documented. **ROSCAs are, in ma
               "Social collateral: standing among people who know you",
             ],
             correctIndex: 3,
-            explanation: "A member who absconds after collecting is finished among their own neighbours; it is lesson 2's swap taken to its limit.",
+            explanation: "A member who absconds after collecting is finished among their own neighbors; it is lesson 2's swap taken to its limit.",
             sourceLessonSlug: "fwa-rosca-mechanism",
           },
           {
@@ -1326,7 +1326,7 @@ Two more findings from the literature, both well documented. **ROSCAs are, in ma
               "Run and used by women shut out of banking",
             ],
             correctIndex: 3,
-            explanation: "The standard scholarly collection on ROSCAs is organised entirely around women's use of them, the group most often shut out of formal banking.",
+            explanation: "The standard scholarly collection on ROSCAs is organized entirely around women's use of them, the group most often shut out of formal banking.",
             sourceLessonSlug: "fwa-rosca-worldwide",
           },
           {
@@ -1389,7 +1389,7 @@ The path this course sits in makes one reframing over and over: **the financial 
 
 ## The honest disagreement, taught rather than hidden
 
-**There is a real and open debate, much of it among Muslim scholars and economists, about whether some modern products marketed as Islamic actually satisfy the principle or merely reproduce interest in a different wrapper.** El-Gamal, a leading academic in the field, argues that a good deal of contemporary Islamic finance is "form over substance": arrangements engineered to look different from an interest loan while delivering the same economic result (El-Gamal, 2006). Scholars from inside the tradition, including Usmani, have themselves criticised particular structures and practices as falling short (Usmani, 2002). **This course does not resolve that debate, and it would be dishonest to present the system as free of internal criticism.** You should know the debate exists, and you should read any specific product with the same question the critics ask: does the risk really move, or only the paperwork?
+**There is a real and open debate, much of it among Muslim scholars and economists, about whether some modern products marketed as Islamic actually satisfy the principle or merely reproduce interest in a different wrapper.** El-Gamal, a leading academic in the field, argues that a good deal of contemporary Islamic finance is "form over substance": arrangements engineered to look different from an interest loan while delivering the same economic result (El-Gamal, 2006). Scholars from inside the tradition, including Usmani, have themselves criticized particular structures and practices as falling short (Usmani, 2002). **This course does not resolve that debate, and it would be dishonest to present the system as free of internal criticism.** You should know the debate exists, and you should read any specific product with the same question the critics ask: does the risk really move, or only the paperwork?
 
 ## Sources
 - Usmani, M. T. (2002). *An introduction to Islamic finance*. Kluwer Law International.
@@ -1409,7 +1409,7 @@ The path this course sits in makes one reframing over and over: **the financial 
         },
         {
           prompt: "Why are ROSCAs disproportionately used by women, and how do they cross borders?",
-          answer: "Women are the group most often shut out of formal banking, so they use ROSCAs heavily; the standard scholarly collection is organised around that fact. ROSCAs travel with migration, carried in people's heads and needing no infrastructure, so a Jamaican partner appears in London and a Mexican tanda in California.",
+          answer: "Women are the group most often shut out of formal banking, so they use ROSCAs heavily; the standard scholarly collection is organized around that fact. ROSCAs travel with migration, carried in people's heads and needing no infrastructure, so a Jamaican partner appears in London and a Mexican tanda in California.",
         },
       ],
     },
@@ -1427,7 +1427,7 @@ The path this course sits in makes one reframing over and over: **the financial 
 |---|---|---|
 | **Murabaha** | The financier buys the asset and resells it to the client at a disclosed cost-plus-markup, paid in instalments | Profit on a real sale, not interest on a loan |
 | **Ijara** | The financier buys the asset and leases it to the client for a rent | Rent for the use of a real asset it owns |
-| **Mudaraba** | One party provides capital, the other provides labour and expertise; profits are shared by an agreed ratio, and a loss of capital falls on the provider of capital | A share of the venture's actual profit |
+| **Mudaraba** | One party provides capital, the other provides labor and expertise; profits are shared by an agreed ratio, and a loss of capital falls on the provider of capital | A share of the venture's actual profit |
 | **Musharaka** | Both parties contribute capital to a joint venture and share profit and loss | A share of a jointly owned venture |
 | **Sukuk** | Certificates giving holders ownership of a share in an underlying asset or venture, which generates the return | Income produced by the owned asset |
 | **Takaful** | Participants contribute to a pooled fund and mutually guarantee one another against defined losses | A cooperative pool, not a premium for interest-bearing reserves |
@@ -1440,7 +1440,7 @@ The path this course sits in makes one reframing over and over: **the financial 
 
 ## Sukuk, because it is the one people mislabel
 
-**Sukuk are often called "Islamic bonds," and that label is close enough to be useful and wrong enough to mislead.** A conventional bond is a debt: the issuer owes the holder a fixed interest coupon and the principal back. **A sukuk is structured instead as ownership**: the holder owns a share of a real asset, project or pool, and the return is the income that asset generates, not a promised interest coupon (Usmani, 2002; El-Gamal, 2006). The distinction is the whole point, because it is what keeps the instrument on the right side of the prohibition, and it is also, again, contested in practice, since some sukuk have been criticised for being structured to imitate conventional debt.
+**Sukuk are often called "Islamic bonds," and that label is close enough to be useful and wrong enough to mislead.** A conventional bond is a debt: the issuer owes the holder a fixed interest coupon and the principal back. **A sukuk is structured instead as ownership**: the holder owns a share of a real asset, project or pool, and the return is the income that asset generates, not a promised interest coupon (Usmani, 2002; El-Gamal, 2006). The distinction is the whole point, because it is what keeps the instrument on the right side of the prohibition, and it is also, again, contested in practice, since some sukuk have been criticized for being structured to imitate conventional debt.
 
 ## Takaful, and a satisfying loop back to the start of the course
 
@@ -1472,7 +1472,7 @@ Step back and notice what all six structures share. **None of them changes the c
         },
         {
           prompt: "What internal disagreement does the course teach rather than hide?",
-          answer: "That there is an open debate, much of it among Muslim scholars and economists, over whether some products marketed as Islamic satisfy the principle or merely reproduce interest in a different wrapper. El-Gamal calls much of it form over substance, and scholars inside the tradition including Usmani have criticised particular structures. The course does not resolve it.",
+          answer: "That there is an open debate, much of it among Muslim scholars and economists, over whether some products marketed as Islamic satisfy the principle or merely reproduce interest in a different wrapper. El-Gamal calls much of it form over substance, and scholars inside the tradition including Usmani have criticized particular structures. The course does not resolve it.",
         },
       ],
     },
@@ -1553,7 +1553,7 @@ Step back and notice what all six structures share. **None of them changes the c
               "Have been banned in every Muslim-majority country",
             ],
             correctIndex: 2,
-            explanation: "El-Gamal calls much of it form over substance, and scholars inside the tradition have themselves criticised particular structures.",
+            explanation: "El-Gamal calls much of it form over substance, and scholars inside the tradition have themselves criticized particular structures.",
             sourceLessonSlug: "fwa-riba-and-risk",
           },
           {
@@ -1608,12 +1608,12 @@ Step back and notice what all six structures share. **None of them changes the c
             prompt: "In a mudaraba, if the venture loses money, the loss of capital falls on:",
             options: [
               "The provider of the capital in the venture",
-              "The provider of the labour and expertise",
+              "The provider of the labor and expertise",
               "The government that licensed the venture",
               "Every customer of the venture equally",
             ],
             correctIndex: 0,
-            explanation: "One party provides capital and the other labour and expertise; profits are shared by ratio, but a capital loss falls on the capital provider.",
+            explanation: "One party provides capital and the other labor and expertise; profits are shared by ratio, but a capital loss falls on the capital provider.",
             sourceLessonSlug: "fwa-murabaha-sukuk",
           },
           {
@@ -1777,7 +1777,7 @@ A short, checkable piece in which every sentence is either something you read in
 - **Cooperatives and credit unions.** Named repeatedly, taught here only in passing, because the path's **cooperatives course** owns them. The credit union is the building and loan's sibling and belongs there.
 - **Modern microfinance.** The Grameen Bank and the wider microcredit movement are the institutionalised, often for-profit descendants of the group-lending idea, and they carry their own large and genuine debate about whether they liberate or indebt. **That is a course in itself**, and this one only points at it.
 - **Fintech versions.** App-based rotating savings, digital stokvels and online lending circles are the same ROSCA with a server in the middle, and they raise new questions about who holds the money and who is liable when the app fails. Named, not taught.
-- **The frauds in detail.** This course warned, in every section that needed it, that social collateral can be exploited and that informal schemes have been turned into outright fraud. **It did not catalogue the scams**, because a catalogue of scams is a different course and teaching the mechanism honestly is the better protection.
+- **The frauds in detail.** This course warned, in every section that needed it, that social collateral can be exploited and that informal schemes have been turned into outright fraud. **It did not catalog the scams**, because a catalog of scams is a different course and teaching the mechanism honestly is the better protection.
 - **A verdict.** This course does not tell you these workarounds were good or bad, efficient or exploitative, a triumph or a tragedy. **They were answers to closed doors**, some ingenious, some fragile, some later reversed or abused, and the reading is the product, not a moral.
 
 ## Where this connects, so the path holds together

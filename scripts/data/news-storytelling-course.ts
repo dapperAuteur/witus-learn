@@ -50,7 +50,7 @@ Which is why the ethics of journalism are mostly about selection rather than abo
 
 **What this course is not.** It is not a substitute for a newsroom, a law degree, or your jurisdiction's media law. It is the craft layer: how to shape true material honestly.
 
-:::reveal Almost nobody in news fabricates, yet news misleads regularly. Explain the mechanism using the permission ladder. ||| The permission is to select and arrange, and that permission is enormous: what is included, what leads, whose voice appears, what context sits beside a number, and where the piece stops all change what a reader believes without a single false sentence being written. So the failures are made of choices rather than of inventions, which is why the ethics of journalism are mostly about selection. It also means "everything I wrote was true" is not a defence of a misleading piece.
+:::reveal Almost nobody in news fabricates, yet news misleads regularly. Explain the mechanism using the permission ladder. ||| The permission is to select and arrange, and that permission is enormous: what is included, what leads, whose voice appears, what context sits beside a number, and where the piece stops all change what a reader believes without a single false sentence being written. So the failures are made of choices rather than of inventions, which is why the ethics of journalism are mostly about selection. It also means "everything I wrote was true" is not a defense of a misleading piece.
 
 ## Sources
 - Kovach, B., & Rosenstiel, T. (2014). *The elements of journalism: What newspeople should know and the public should expect* (3rd ed.). Three Rivers Press.
@@ -229,7 +229,7 @@ From How Stories Work: the owner is the person the change happens to. A policy h
             options: [
               "When the subject is technical and readers may not follow it",
               "When no individual has agreed to be named in the piece",
-              "When the outlet's style guide favours institutional framing",
+              "When the outlet's style guide favors institutional framing",
               "When the event genuinely has no owner and is information",
             ],
             correctIndex: 3,
@@ -283,7 +283,7 @@ From How Stories Work: the owner is the person the change happens to. A policy h
 
 **Attribute everything that is not established fact.** The bar for "established" is lower than beginners think for things like dates and public records, and higher than they think for anything contested, characterised, or inferred.
 
-**On the record and its neighbours.** These terms are used inconsistently across newsrooms, which is exactly why you agree them explicitly rather than assuming:
+**On the record and its neighbors.** These terms are used inconsistently across newsrooms, which is exactly why you agree them explicitly rather than assuming:
 
 - **On the record.** Everything is usable, with the name.
 - **On background.** Usable, attributed to a description rather than a name.
@@ -302,7 +302,7 @@ From How Stories Work: the owner is the person the change happens to. A policy h
 | Correct an obvious stumble, per your outlet's policy | Tidy grammar so someone sounds unlike themselves |
 | Translate, saying you have | Translate silently |
 
-**The governing test:** would the speaker recognise this as what they said and meant? **A paraphrase inside quotation marks is an error**, and it is the kind that destroys trust in everything else in the piece.
+**The governing test:** would the speaker recognize this as what they said and meant? **A paraphrase inside quotation marks is an error**, and it is the kind that destroys trust in everything else in the piece.
 
 **On tidying speech, which is genuinely contested.** Everyone speaks in fragments and false starts. Cleaning them can be a courtesy and can also erase how someone actually talks, which in practice falls hardest on people who do not speak like reporters. **Whatever your policy is, apply it to everybody**, because applying it selectively is where it becomes a way of making some people sound less credible than others.
 
@@ -318,7 +318,7 @@ From How Stories Work: the owner is the person the change happens to. A policy h
       slug: "news-numbers",
       title: "6 · Numbers, and the context that makes them mean something",
       section: "Module 2 · The craft",
-      body: `A number in a news story is doing rhetorical work whether or not you intended it. **The same true figure can support opposite impressions depending on what sits beside it**, and choosing that neighbour is squarely inside the select-and-arrange permission.
+      body: `A number in a news story is doing rhetorical work whether or not you intended it. **The same true figure can support opposite impressions depending on what sits beside it**, and choosing that neighbor is squarely inside the select-and-arrange permission.
 
 **The four questions to ask of any figure before it goes in**
 
@@ -333,7 +333,7 @@ From How Stories Work: the owner is the person the change happens to. A policy h
 
 **Risk needs a baseline.** "Doubles your risk" means nothing without the starting risk. Doubling a very small number leaves a very small number, and this is the single commonest failure in health and safety coverage.
 
-**Attribution applies to numbers too**, and beginners forget it because a figure feels like a fact rather than a claim. **Who produced it, by what method, and do they have an interest in the answer?** A number from an advocacy organisation may be perfectly good and the reader is entitled to know where it came from.
+**Attribution applies to numbers too**, and beginners forget it because a figure feels like a fact rather than a claim. **Who produced it, by what method, and do they have an interest in the answer?** A number from an advocacy organization may be perfectly good and the reader is entitled to know where it came from.
 
 **The habit that catches most errors: say the number out loud in plain words** and ask whether it is plausible. Is that a lot? Does that per-person figure make sense? Most published numerical errors are off by an order of magnitude and would not survive being spoken aloud.
 
@@ -381,7 +381,7 @@ From How Stories Work: the owner is the person the change happens to. A policy h
       section: "Module 2 · The craft",
       body: `**Every outlet gets things wrong.** What differs is whether there is a route for it, and how visible the route is.
 
-**A correction is a craft act, not an embarrassment.** The reasoning is the same one behind the source checks in this catalogue: **an error nobody has recorded is an error that will be repeated**, by you and by everyone who cites you.
+**A correction is a craft act, not an embarrassment.** The reasoning is the same one behind the source checks in this catalog: **an error nobody has recorded is an error that will be repeated**, by you and by everyone who cites you.
 
 **What a good correction contains**
 
@@ -394,7 +394,7 @@ From How Stories Work: the owner is the person the change happens to. A policy h
 
 **The asymmetry worth understanding.** A correction never reaches everyone the error reached. That is not an argument against correcting; it is an argument for getting it right the first time, and specifically for **slowing down on the details that will do the most harm if wrong**: names, numbers, accusations, and anything about a private person.
 
-**Harm, and the questions worth asking before publication.** The SPJ code's formulation is to minimise harm and to treat sources and subjects as human beings deserving of respect (Society of Professional Journalists, 2014). Practically:
+**Harm, and the questions worth asking before publication.** The SPJ code's formulation is to minimize harm and to treat sources and subjects as human beings deserving of respect (Society of Professional Journalists, 2014). Practically:
 
 - **Is this person public or private?** A public official acting in office has accepted scrutiny. A private individual has not, and the bar for naming them is higher.
 - **What does naming add?** Sometimes a great deal. Sometimes nothing the story needs.
@@ -450,7 +450,7 @@ From How Stories Work: the owner is the person the change happens to. A policy h
             options: [
               "Whether the edit improves clarity for a general reader",
               "Whether the outlet's style guide permits the change",
-              "Whether the speaker would recognise it as what they said and meant",
+              "Whether the speaker would recognize it as what they said and meant",
               "Whether the original wording was grammatically correct",
             ],
             correctIndex: 2,
@@ -477,7 +477,7 @@ From How Stories Work: the owner is the person the change happens to. A policy h
               "The raw numbers, so the reader can see the base",
               "The confidence interval around the estimate",
               "The name of the agency that collected the data",
-              "A comparison with a neighbouring jurisdiction",
+              "A comparison with a neighboring jurisdiction",
             ],
             correctIndex: 0,
             explanation:
@@ -559,7 +559,7 @@ From How Stories Work: the owner is the person the change happens to. A policy h
       lessonType: "assignment",
       body: `Take one real, verifiable event and write it twice: **once as a straight news story, once as a narrative piece.** The comparison is the assignment.
 
-**Choose material you can actually verify.** A public meeting you attended, a documented local decision, an event with a public record. **Not something you would have to take on trust**, because the point is to practise the discipline of verification rather than to practise writing.
+**Choose material you can actually verify.** A public meeting you attended, a documented local decision, an event with a public record. **Not something you would have to take on trust**, because the point is to practice the discipline of verification rather than to practice writing.
 
 **What to submit.**
 
@@ -595,7 +595,7 @@ From How Stories Work: the owner is the person the change happens to. A policy h
 
 **Attribute everything not established.** Agree interview terms up front. Anonymity is a cost, and tell the reader why the source is unnamed.
 
-**Quotation: would the speaker recognise it as what they said and meant?** Apply any tidying policy to everybody, because applied selectively it decides who sounds credible.
+**Quotation: would the speaker recognize it as what they said and meant?** Apply any tidying policy to everybody, because applied selectively it decides who sounds credible.
 
 **Numbers: compared to what, per what, since when, how certain.** Raw numbers beside percentages. A baseline beside any risk. Attribute figures, and do not publish one you cannot explain in a sentence.
 

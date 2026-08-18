@@ -547,9 +547,9 @@ Arduino. (n.d.). *About Arduino* (on-device ML with TensorFlow Lite). https://ww
             prompt:
               "What is the difference between programmed rules and learned behavior?",
             options: [
-              "Rules are written by a person; learned behaviour finds patterns",
+              "Rules are written by a person; learned behavior finds patterns",
               "They are in truth exactly the same thing as one another",
-              "Learned behaviour is always more predictable than rules",
+              "Learned behavior is always more predictable than rules",
               "Rules can only ever be run on board an actual Mars rover",
             ],
             correctIndex: 0,
@@ -604,7 +604,7 @@ Arduino. (n.d.). *About Arduino* (on-device ML with TensorFlow Lite). https://ww
               "In a tool like micro:bit CreateAI, how do you teach the robot a new skill?",
             options: [
               "Write many hundreds of if/else rules out by hand",
-              "Collect labelled examples, then train, test and improve",
+              "Collect labeled examples, then train, test and improve",
               "Buy a more expensive and considerably faster board",
               "Wait for the robot to learn on its own with no examples",
             ],

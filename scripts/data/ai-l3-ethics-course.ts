@@ -291,7 +291,7 @@ Ethics asks us to see this hidden supply chain, not just the magic at the end of
       section: "Part 4 · AI & society",
       body: `Beyond any single decision, AI reshapes the systems we all live inside. Three deserve special attention.
 
-**Jobs and work.** AI automates and augments tasks, shifting which skills are valued, displacing some roles while creating others, and changing the balance of power between workers and employers. The ethical issues are *distribution* (who gains, who's left behind) and *transition* (retraining, safety nets). UNESCO devotes attention to AI's impact on **labour markets** and calls for protecting workers through the change (UNESCO, 2021).
+**Jobs and work.** AI automates and augments tasks, shifting which skills are valued, displacing some roles while creating others, and changing the balance of power between workers and employers. The ethical issues are *distribution* (who gains, who's left behind) and *transition* (retraining, safety nets). UNESCO devotes attention to AI's impact on **labor markets** and calls for protecting workers through the change (UNESCO, 2021).
 
 **Democracy and discourse.** Recommendation and ranking systems decide what billions of people see. Optimizing purely for **engagement** can amplify outrage, deepen polarization, and trap people in narrow feedback loops, a representational and societal harm operating at population scale. Who sees what, chosen by an optimization target nobody voted on, is a democratic question.
 
@@ -434,7 +434,7 @@ The goal isn't fear or refusal, it's **responsible use**: use AI's power while p
             options: [
               "The algorithm itself, entirely on its own",
               "No one at all, since the whole thing is automated",
-              "A human or an organisation; responsibility stays with people",
+              "A human or an organization; responsibility stays with people",
               "The end user of the system, and nobody else",
             ],
             correctIndex: 2,
@@ -461,7 +461,7 @@ The goal isn't fear or refusal, it's **responsible use**: use AI's power while p
               "Which is a real, often-overlooked cost behind large AI models?",
             options: [
               "Nothing much, because AI is essentially weightless",
-              "Large electricity and water use, and low-paid labelling work",
+              "Large electricity and water use, and low-paid labeling work",
               "Only the price of your monthly subscription fee",
               "Just a very slightly slower internet connection",
             ],

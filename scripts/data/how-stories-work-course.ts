@@ -22,7 +22,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const HOW_STORIES_WORK_COURSE: AuthoredCourse = {
   title: "How Stories Work",
   description:
-    "Six decisions survive translation into any medium: the change, the owner, want and obstacle, withholding, scene and summary, and the turn. This is the core of the Storytelling series and it was written last on purpose, after the specialised courses had already put those six terms under pressure in a solo play, a ten-minute drama and a set of public meeting notes. It teaches each decision in depth, shows the same one operating in forms that look nothing alike, and is honest about what does NOT transfer: the things that are genuinely properties of a medium rather than of story. It covers structure as a promise to an audience, why most drafts fail at the change rather than the sentence, the ethics of telling stories about real people, and the discipline of knowing when not to make a story at all. Ends with a diagnostic you can run on any draft in any form.",
+    "Six decisions survive translation into any medium: the change, the owner, want and obstacle, withholding, scene and summary, and the turn. This is the core of the Storytelling series and it was written last on purpose, after the specialized courses had already put those six terms under pressure in a solo play, a ten-minute drama and a set of public meeting notes. It teaches each decision in depth, shows the same one operating in forms that look nothing alike, and is honest about what does NOT transfer: the things that are genuinely properties of a medium rather than of story. It covers structure as a promise to an audience, why most drafts fail at the change rather than the sentence, the ethics of telling stories about real people, and the discipline of knowing when not to make a story at all. Ends with a diagnostic you can run on any draft in any form.",
   lessons: [
     // ══════════════ MODULE 1 · THE SIX ══════════════
     {
@@ -37,7 +37,7 @@ export const HOW_STORIES_WORK_COURSE: AuthoredCourse = {
 
 - **Monodrama** removes the structural crutches. One performer, no scene partner, no subplot, no ensemble. **Every one of the six decisions is exposed at once**, because there is nothing to hide a weak one behind.
 - **Short-form drama** removes the time. In ten minutes you cannot establish, develop and resolve, so you are forced to discover what an audience will assume without being told.
-- **Civic documentation** removes the licence to shape at all. Record what happened; do not find the arc. **It teaches the six terms by forbidding you to use them**, which turns out to be the sharpest way to see what they were doing.
+- **Civic documentation** removes the license to shape at all. Record what happened; do not find the arc. **It teaches the six terms by forbidding you to use them**, which turns out to be the sharpest way to see what they were doing.
 
 **The risk of that order**, and it is real: a core written afterwards has to be retrofitted to whatever vocabulary the earlier courses happened to invent. **So the vocabulary was fixed before any of them was written.** Six terms, defined once, and no course in the series was allowed to invent a synonym. Where a form had its own traditional word (a beat, a reveal, a peripeteia, a lede) the course named it and mapped it back.
 
@@ -49,7 +49,7 @@ Which means this course is not a summary bolted on. **It is the thing the other 
 
 **And it is honest about what does not transfer.** Some things are genuinely properties of a medium rather than of story, and Lesson 11 says which.
 
-:::reveal Why does teaching "a story needs a change" in the abstract usually fail, and what did this series do instead? ||| Because in the abstract everyone agrees with it and it has nowhere to bite, so the same person writes a changeless draft the following week. The series instead put the idea under pressure first: monodrama removes the crutches that hide a missing change, short form removes the time to disguise it, and documentation forbids shaping altogether. The terms were fixed in advance so the core could be written last as a synthesis rather than retrofitted to whatever the specialised courses had invented.
+:::reveal Why does teaching "a story needs a change" in the abstract usually fail, and what did this series do instead? ||| Because in the abstract everyone agrees with it and it has nowhere to bite, so the same person writes a changeless draft the following week. The series instead put the idea under pressure first: monodrama removes the crutches that hide a missing change, short form removes the time to disguise it, and documentation forbids shaping altogether. The terms were fixed in advance so the core could be written last as a synthesis rather than retrofitted to whatever the specialized courses had invented.
 
 ## Sources
 - Ball, D. (1983). *Backwards and forwards: A technical manual for reading plays*. Southern Illinois University Press.
@@ -63,7 +63,7 @@ Which means this course is not a summary bolted on. **It is the thing the other 
         {
           prompt: "Name what each of the three specialised courses removes, and what removing it exposes.",
           answer:
-            "Monodrama removes the structural crutches (no scene partner, subplot or ensemble), exposing all six decisions at once. Short form removes the time, forcing you to learn what an audience will assume. Civic documentation removes the licence to shape at all, which teaches the terms by forbidding their use.",
+            "Monodrama removes the structural crutches (no scene partner, subplot or ensemble), exposing all six decisions at once. Short form removes the time, forcing you to learn what an audience will assume. Civic documentation removes the license to shape at all, which teaches the terms by forbidding their use.",
         },
       ],
       body: `**The change is what is different at the end from the beginning.** A story with no change is an anecdote, and this is the first question asked of any draft in any course in this series.
@@ -76,7 +76,7 @@ It is also the question most drafts fail, and they fail it while being well writ
 
 **2. "Something happened."** An event is not a change. A car crash in which everyone recovers and nothing is different afterwards is an incident.
 
-**3. "The character learned something."** Sometimes true and usually a dodge, because it is unfalsifiable. **Push it to behaviour:** what can they now do, or refuse to do, that they could not before?
+**3. "The character learned something."** Sometimes true and usually a dodge, because it is unfalsifiable. **Push it to behavior:** what can they now do, or refuse to do, that they could not before?
 
 **The test that works.** Write the sentence: *"At the start, X. At the end, Y."* If Y is only "and now they have been through it," keep pushing.
 
@@ -95,7 +95,7 @@ Not the narrator, not the most interesting person present: the one the change ha
 - **In news storytelling**, the owner is frequently misidentified. A story about a policy is a story about nobody. **A story about the person the policy happens to has an owner**, and the policy is the obstacle.
 - **In civic documentation you do not get an owner at all**, because you are not permitted to decide whose story the meeting was. That constraint is exactly why documentation is not storytelling, and knowing the difference is what stops you smuggling a narrative into a public record.
 
-:::reveal A draft follows a neighbourhood through a rezoning. Everyone is affected, nobody in particular is followed, and it feels flat. Diagnose it in the vocabulary. ||| It has a change without an OWNER: something is different at the end, but it belongs to a group, and groups do not want things or face obstacles, people do. The fix is to find the person the change runs through and let the neighbourhood be visible through them. It is the same error as a news story about a policy rather than about the person the policy happens to, and in both cases the abstraction is what makes it flat rather than the subject being uninteresting.
+:::reveal A draft follows a neighbourhood through a rezoning. Everyone is affected, nobody in particular is followed, and it feels flat. Diagnose it in the vocabulary. ||| It has a change without an OWNER: something is different at the end, but it belongs to a group, and groups do not want things or face obstacles, people do. The fix is to find the person the change runs through and let the neighborhood be visible through them. It is the same error as a news story about a policy rather than about the person the policy happens to, and in both cases the abstraction is what makes it flat rather than the subject being uninteresting.
 
 ## Sources
 - Ball, D. (1983). *Backwards and forwards: A technical manual for reading plays*. Southern Illinois University Press.
@@ -181,13 +181,13 @@ Not the narrator, not the most interesting person present: the one the change ha
             prompt: "Why was this core course written after the specialised ones?",
             options: [
               "Fundamentals taught abstractly sound obvious and have nowhere to bite",
-              "The specialised courses were commissioned before the core was planned",
+              "The specialized courses were commissioned before the core was planned",
               "Core material is harder to write and needed the most preparation",
-              "Learners consistently prefer to begin with a specialised subject",
+              "Learners consistently prefer to begin with a specialized subject",
             ],
             correctIndex: 0,
             explanation:
-              "Everyone agrees a story needs a change, then writes a changeless draft. The specialised courses put the terms under pressure first, and the vocabulary was fixed in advance so the core could be a synthesis rather than a retrofit.",
+              "Everyone agrees a story needs a change, then writes a changeless draft. The specialized courses put the terms under pressure first, and the vocabulary was fixed in advance so the core could be a synthesis rather than a retrofit.",
             sourceLessonSlug: "hsw-written-last",
           },
           {
@@ -200,7 +200,7 @@ Not the narrator, not the most interesting person present: the one the change ha
             ],
             correctIndex: 2,
             explanation:
-              "Pushing 'they learned something' to behaviour is the fix, because behaviour is falsifiable. A change in the audience is not a change in the story, and an event that leaves nothing different is an incident.",
+              "Pushing 'they learned something' to behavior is the fix, because behavior is falsifiable. A change in the audience is not a change in the story, and an event that leaves nothing different is an incident.",
             sourceLessonSlug: "hsw-change-and-owner",
           },
           {
@@ -285,13 +285,13 @@ Not the narrator, not the most interesting person present: the one the change ha
             prompt: "How should 'the character learned something' be handled?",
             options: [
               "Accept it, since internal change is the strongest kind",
-              "Push it to behaviour: what can they now do or refuse to do?",
+              "Push it to behavior: what can they now do or refuse to do?",
               "Replace it with an external event that causes the learning",
               "State it explicitly in the closing lines so it is unmissable",
             ],
             correctIndex: 1,
             explanation:
-              "As written it is unfalsifiable, which is why it is usually a dodge. Behaviour can be shown, checked and disagreed with, which is what makes it usable.",
+              "As written it is unfalsifiable, which is why it is usually a dodge. Behavior can be shown, checked and disagreed with, which is what makes it usable.",
             sourceLessonSlug: "hsw-change-and-owner",
           },
           {
@@ -325,7 +325,7 @@ Not the narrator, not the most interesting person present: the one the change ha
       ],
       body: `**Scene is real time, shown. Summary is compressed, told.** Choosing between them is the most frequent craft decision in any medium, and it is made unconsciously more often than any other.
 
-**The rule that holds across every form in this series:** scene what the change runs through, summarise everything else.
+**The rule that holds across every form in this series:** scene what the change runs through, summarize everything else.
 
 **Why the default drifts toward summary.** Summary is how we naturally recount: we tell people about our lives rather than showing them. It is also faster per unit of story, which makes it feel efficient. **The cost is that summary cannot be disagreed with.** When you are told a man was cruel you either accept it or you do not; when you are shown one cruel thing he did, you conclude it yourself, and a conclusion you reached is one you believe.
 
@@ -334,13 +334,13 @@ Not the narrator, not the most interesting person present: the one the change ha
 | Form | Tendency | The risk |
 | --- | --- | --- |
 | **Monodrama** | Can move between them mid-sentence, which is its great advantage | The speaker can always explain, so the whole piece becomes told |
-| **Short form** | Almost all scene, because there is no time to summarise and then also show | Nothing establishes, so the audience is lost for the first minute |
+| **Short form** | Almost all scene, because there is no time to summarize and then also show | Nothing establishes, so the audience is lost for the first minute |
 | **News storytelling** | Mostly summary, with one or two scenes doing enormous work | The scene chosen is decorative rather than load-bearing |
 | **Documentation** | Neither, exactly. It is a record | Drifting into scene, which means you have started constructing |
 
 **That last row is worth pausing on.** A set of meeting notes is not summary in the storytelling sense, because summary implies compression toward a point, and a record has no point it is compressing toward. **When notes start to feel like scene, something has usually gone wrong:** you have selected for vividness, which is a narrative instinct arriving where it is not wanted.
 
-**The one-scene rule for factual work.** In news or documentary, the single most valuable structural decision is which moment gets scened. Everything else can be summarised. **Choose the moment where the change becomes visible**, not the most dramatic moment, which are different and frequently confused.
+**The one-scene rule for factual work.** In news or documentary, the single most valuable structural decision is which moment gets scened. Everything else can be summarized. **Choose the moment where the change becomes visible**, not the most dramatic moment, which are different and frequently confused.
 
 **A practical diagnostic for any draft.** Mark every passage S for scene or Y for summary. Then check: do the S passages coincide with where the change runs? If your scenes are clustered at the beginning, you have written an establishing sequence and then told the rest.
 
@@ -433,9 +433,9 @@ Not the narrator, not the most interesting person present: the one the change ha
           {
             prompt: "What is the rule for choosing between scene and summary?",
             options: [
-              "Scene what the change runs through; summarise everything else",
+              "Scene what the change runs through; summarize everything else",
               "Alternate them evenly so the pace does not become monotonous",
-              "Scene the opening and closing; summarise the middle",
+              "Scene the opening and closing; summarize the middle",
               "Use scene for dialogue and summary for everything else",
             ],
             correctIndex: 0,
@@ -557,7 +557,7 @@ Not the narrator, not the most interesting person present: the one the change ha
             ],
             correctIndex: 0,
             explanation:
-              "The most dramatic moment and the moment the change becomes visible are different and frequently confused. Everything else can be summarised.",
+              "The most dramatic moment and the moment the change becomes visible are different and frequently confused. Everything else can be summarized.",
             sourceLessonSlug: "hsw-scene-and-summary",
           },
         ],
@@ -628,7 +628,7 @@ Not the narrator, not the most interesting person present: the one the change ha
 
 **And the honest admission.** A writer excellent in one form is not automatically competent in another, and the gap is almost never the six. **It is these.** Knowing which is which is what stops you either dismissing your own experience or over-trusting it.
 
-:::reveal A stage piece is adapted for short-form video and fails, though the story is unchanged. Which medium-specific properties most likely broke it? ||| The exit cost and the rate of information, working together. A theatre audience has already committed and leaving is socially expensive, which buys patience the writer never had to earn; a feed audience has committed nothing and leaves for free, so an opening that was fine on stage now loses them in seconds. The density that felt right in a room is also likely wrong on a phone. The six decisions travelled intact, which is exactly why the failure is confusing: the story is fine and the delivery assumptions were never reset.
+:::reveal A stage piece is adapted for short-form video and fails, though the story is unchanged. Which medium-specific properties most likely broke it? ||| The exit cost and the rate of information, working together. A theatre audience has already committed and leaving is socially expensive, which buys patience the writer never had to earn; a feed audience has committed nothing and leaves for free, so an opening that was fine on stage now loses them in seconds. The density that felt right in a room is also likely wrong on a phone. The six decisions traveled intact, which is exactly why the failure is confusing: the story is fine and the delivery assumptions were never reset.
 
 ## Sources
 - Brook, P. (1968). *The empty space*. MacGibbon & Kee.
@@ -651,7 +651,7 @@ Not the narrator, not the most interesting person present: the one the change ha
 | **Documentary and journalism** | Select and arrange | Invent, or omit material that changes the meaning |
 | **Documentation** | Record | Shape, interpret, or omit important information |
 
-**The line that survives all four**, and it is the one worth memorising: **shaping is not lying; asserting something false about a real person is.** Compressing three conversations into one is standard. Putting words in a real mouth is not.
+**The line that survives all four**, and it is the one worth memorizing: **shaping is not lying; asserting something false about a real person is.** Compressing three conversations into one is standard. Putting words in a real mouth is not.
 
 **Four questions before you use someone**, from the monodrama course and applicable everywhere:
 
@@ -823,7 +823,7 @@ This is the diagnostic to run on any draft, in any medium, before you touch a se
       section: "Module 4 · Close",
       body: `**The six, and they are the whole course**
 
-1. **The change.** What is different at the end. No change, no story. Push "they learned something" to behaviour.
+1. **The change.** What is different at the end. No change, no story. Push "they learned something" to behavior.
 2. **The owner.** Whose change it is. Not the narrator, not the most interesting person, and never a group.
 3. **Want and obstacle.** Both concrete enough to point at. Could someone succeed or fail at it in ten minutes? Give an institution a face.
 4. **Withholding.** What the audience does not know yet and when they learn it. They must know something is missing. Real withholding makes earlier material richer.
@@ -842,7 +842,7 @@ This is the diagnostic to run on any draft, in any medium, before you touch a se
 
 **And the last thing, which is the series' argument.** You now have two instincts: the one that finds the arc, and the one that refuses to. **Knowing which a situation deserves is the skill.** Sometimes the useful thing is not a story at all. It is a record somebody else can use.
 
-:::reveal Without looking back, give the six-question diagnostic you would run on any draft in any medium. ||| What is different at the end from the beginning? Whose change is it? What did they want, and what was in the way? What did the audience not know, and when did they learn it? Where does the change become irreversible? And which moments are scened rather than summarised, and do those coincide with where the change runs? If a draft cannot answer those, no amount of sentence work will save it.
+:::reveal Without looking back, give the six-question diagnostic you would run on any draft in any medium. ||| What is different at the end from the beginning? Whose change is it? What did they want, and what was in the way? What did the audience not know, and when did they learn it? Where does the change become irreversible? And which moments are scened rather than summarized, and do those coincide with where the change runs? If a draft cannot answer those, no amount of sentence work will save it.
 
 ## Sources
 - Aristotle. (1996). *Poetics* (M. Heath, Trans.). Penguin. (Original work composed ca. 335 BCE)

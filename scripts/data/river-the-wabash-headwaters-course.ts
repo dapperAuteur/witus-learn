@@ -12,7 +12,7 @@ export const RIVER_WABASH_HEADWATERS_COURSE: AuthoredCourse = {
     {
       slug: "everything-upstream",
       title: "1 · Everything upstream arrives downstream",
-      section: "Section 1 · How water gets organised",
+      section: "Section 1 · How water gets organized",
       body: `Stand anywhere outdoors and rain falls on you. That water goes somewhere, and where it goes was decided long before you got there, by the shape of the land.
 
 A **watershed** is the area of land that drains to one point. Every watershed is inside a bigger one. The stream behind a school drains to a creek, the creek to a river, the river to a bigger river, and eventually to an ocean. If you are standing in the Mississippi basin, water from under your feet can reach the Gulf of Mexico without ever leaving the system.
@@ -44,7 +44,7 @@ We come back to that at the end of the series. For now, hold the shape.
     {
       slug: "why-rivers-bend",
       title: "2 · Why rivers bend, and why they move",
-      section: "Section 1 · How water gets organised",
+      section: "Section 1 · How water gets organized",
       body: `A river running across flat ground does not stay straight, and the reason is worth understanding because it explains most of what the paddlers will see.
 
 Water moving around even a slight curve travels **faster on the outside** of the bend and **slower on the inside**. Fast water carries material. Slow water drops it.

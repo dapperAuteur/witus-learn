@@ -425,11 +425,11 @@ Ask someone how many governments have authority over their home, and they will s
 
 ## The one that is not a rung
 
-**Tribal nations do not appear in the table above, and that is deliberate.** They are not a fourth-and-a-half layer between the state and the local. They are a **separate sovereign**, with a direct, government-to-government relationship to the federal government, and authority that comes from their own pre-existing sovereignty rather than from any grant in that stack (Worcester v. Georgia, 1832). Section 4 is entirely about why the ladder metaphor breaks here, and the map lesson draws the tribal layer in a different colour on purpose, because rendering it as one more rung would be a factual error.
+**Tribal nations do not appear in the table above, and that is deliberate.** They are not a fourth-and-a-half layer between the state and the local. They are a **separate sovereign**, with a direct, government-to-government relationship to the federal government, and authority that comes from their own pre-existing sovereignty rather than from any grant in that stack (Worcester v. Georgia, 1832). Section 4 is entirely about why the ladder metaphor breaks here, and the map lesson draws the tribal layer in a different color on purpose, because rendering it as one more rung would be a factual error.
 
 ## Why the stack is the answer to Question 1
 
-When you meet a government action, the stack tells you where to start looking for the body. A pothole, a permit, a parking rule: local. A criminal code, a driver's licence, a school-funding formula: usually state. A passport, a tariff, an immigration rule, an interstate matter: federal. **Guessing the layer narrows the search from ninety thousand bodies to a handful**, and then Question 1 is just naming which body on that rung.
+When you meet a government action, the stack tells you where to start looking for the body. A pothole, a permit, a parking rule: local. A criminal code, a driver's license, a school-funding formula: usually state. A passport, a tariff, an immigration rule, an interstate matter: federal. **Guessing the layer narrows the search from ninety thousand bodies to a handful**, and then Question 1 is just naming which body on that rung.
 
 **But the stack only tells you where power SITS. It does not tell you how firmly it is held.** A state's authority is entrenched in the federal constitution; a city's authority is held at the pleasure of the state. Both sit on the ladder, but they are held on completely different terms, and that difference is Section 3.
 
@@ -477,7 +477,7 @@ In McCulloch v. Maryland the Court did two things that look opposite and are not
 - **Where is the power from?** The Constitution, directly, or a statute that traces to the Constitution.
 - **Who can overturn it?** A court (judicial review), a later Congress (repeal), a constitutional amendment, or the President's veto before enactment.
 
-**The federal layer is the cleanest place to practise the method**, because its authority is written down in one short document you can read in an afternoon. The lower you go in the stack, the more the documents multiply, which is exactly why the method matters more at the bottom than at the top.
+**The federal layer is the cleanest place to practice the method**, because its authority is written down in one short document you can read in an afternoon. The lower you go in the stack, the more the documents multiply, which is exactly why the method matters more at the bottom than at the top.
 
 ## Sources
 - U.S. Const. art. I, § 8. https://constitution.congress.gov/constitution/article-1/section-8/
@@ -505,13 +505,13 @@ In McCulloch v. Maryland the Court did two things that look opposite and are not
       section: "Section 2 · The vertical stack",
       body: `The middle of the stack is where most of the government that touches daily life actually lives. Criminal law, property law, family law, most licensing, schools, roads, policing: these are overwhelmingly state functions, because the state holds the broad power and the nation holds the fenced one.
 
-## The reserved power, stated once and worth memorising
+## The reserved power, stated once and worth memorizing
 
 The Tenth Amendment is one sentence: "The powers not delegated to the United States by the Constitution, nor prohibited by it to the States, are reserved to the States respectively, or to the people" (U.S. Const. amend. X). **A state does not go looking for a clause that grants it power. It acts, and the only question is whether some higher rule forbids the action.** That default is the reason state government is the workhorse of the stack.
 
 ## The police power is a name, not a metaphor
 
-The **police power** is the traditional name for a state's general authority to legislate for the health, safety, morals, and general welfare of its people. It has nothing to do with police officers specifically. It is the power behind a state's building codes, its speed limits, its professional licences, its public-health orders, its zoning enabling laws, and its criminal statutes. **When a state body answers Question 2 with "the police power," it is claiming the broad reserved authority, and the burden is on whoever challenges it to find a prohibition, not on the state to find a grant.**
+The **police power** is the traditional name for a state's general authority to legislate for the health, safety, morals, and general welfare of its people. It has nothing to do with police officers specifically. It is the power behind a state's building codes, its speed limits, its professional licenses, its public-health orders, its zoning enabling laws, and its criminal statutes. **When a state body answers Question 2 with "the police power," it is claiming the broad reserved authority, and the burden is on whoever challenges it to find a prohibition, not on the state to find a grant.**
 
 ## What limits a state, since a grant does not
 
@@ -680,7 +680,7 @@ Here is the sentence the whole next section rests on. **A state's authority is e
               "Its broad power over health and welfare",
             ],
             correctIndex: 3,
-            explanation: "It has nothing to do with police officers specifically. It is the general power to legislate for health, safety, morals, and welfare, behind building codes, licences, zoning, and criminal law.",
+            explanation: "It has nothing to do with police officers specifically. It is the general power to legislate for health, safety, morals, and welfare, behind building codes, licenses, zoning, and criminal law.",
             sourceLessonSlug: "power-the-state",
           },
           {
@@ -710,7 +710,7 @@ Here is the sentence the whole next section rests on. **A state's authority is e
           {
             prompt: "Which is a limit on state power, since a grant is not required for a state to act?",
             options: [
-              "A neighbouring state's statutes",
+              "A neighboring state's statutes",
               "A city ordinance passed nearby",
               "A valid federal law within its lane",
               "A private company's own rules",
@@ -771,7 +771,7 @@ When a city body acts, its authority does not come from itself. It comes from a 
 
 ## Why this is the engine of the route series
 
-A city passing a 1910 segregation ordinance was exercising delegated power under its charter. A city using a blight designation to condemn a block was exercising delegated power. A city annexing its neighbour was exercising delegated power. **Every one of those route-series instruments traces up to a charter, and every charter traces up to a state.** And the same rule that let the state hand a city the power to zone lets the state, today, take that power back by preemption. **The mechanism that built the harms and the mechanism that can undo local action are the same mechanism, read in two directions.** That is why this lesson sits at the centre of the course.
+A city passing a 1910 segregation ordinance was exercising delegated power under its charter. A city using a blight designation to condemn a block was exercising delegated power. A city annexing its neighbor was exercising delegated power. **Every one of those route-series instruments traces up to a charter, and every charter traces up to a state.** And the same rule that let the state hand a city the power to zone lets the state, today, take that power back by preemption. **The mechanism that built the harms and the mechanism that can undo local action are the same mechanism, read in two directions.** That is why this lesson sits at the center of the course.
 
 ## The care this fact requires
 
@@ -805,7 +805,7 @@ A city passing a 1910 segregation ordinance was exercising delegated power under
 
 The doctrine is named for **John Forrest Dillon**, an Iowa Supreme Court judge who stated it in City of Clinton v. Cedar Rapids and Missouri River Railroad Company, and then systematised it in his treatise on municipal corporations (City of Clinton v. Cedar Rapids & Missouri River R.R. Co., 1868). Dillon's Rule holds that a municipal corporation possesses only three kinds of power: those **granted in express words**, those **necessarily or fairly implied** in the powers expressly granted, and those **essential** to the declared purposes of the corporation. And it adds a tie-breaker that does most of the work: **where there is a reasonable, substantial doubt about whether a power was granted, the doubt is resolved against the city, and the power is denied** (Cornell Legal Information Institute, n.d.).
 
-**That last clause is the whole doctrine in practice.** A city under a strict Dillon's Rule reading cannot act in a grey area. If the grant is unclear, the city loses. Dillon summed up the relationship by calling local governments the creatures, and in effect the tenants at will, of their legislatures.
+**That last clause is the whole doctrine in practice.** A city under a strict Dillon's Rule reading cannot act in a gray area. If the grant is unclear, the city loses. Dillon summed up the relationship by calling local governments the creatures, and in effect the tenants at will, of their legislatures.
 
 ## The Cooley Doctrine, the road not taken
 
@@ -814,14 +814,14 @@ Not every judge agreed. **Thomas M. Cooley**, of the Michigan Supreme Court, arg
 | | Dillon's Rule | The Cooley Doctrine |
 |---|---|---|
 | **Source of local power** | Delegated by the state | Inherent right of local self-government |
-| **Doubt is resolved** | Against the city | In favour of local control |
+| **Doubt is resolved** | Against the city | In favor of local control |
 | **The city is** | A creature of the legislature | A community with its own sphere |
 
 **Which one won?** As a matter of general United States law, **Dillon's Rule prevailed.** Hunter v. City of Pittsburgh (last lesson) reflects the Dillon view, and it is the majority approach. But **Cooley's idea did not vanish; it went into the home-rule movement**, which is the next lesson. Home rule is, in a real sense, Cooley's argument written into state constitutions after Dillon won in the courts.
 
 ## How to use this when you read an action
 
-When a city acts in a grey area and someone challenges it, **you are watching Dillon's Rule get applied.** The challenger says the power was never clearly granted; the city says it was fairly implied or essential. **Knowing the doctrine tells you what the fight is actually about:** not whether the city acted wisely, but whether the state's grant reaches this far. And knowing Cooley tells you that reasonable people built a whole alternative on the other premise, so the outcome is a policy choice a state made, not a law of nature.
+When a city acts in a gray area and someone challenges it, **you are watching Dillon's Rule get applied.** The challenger says the power was never clearly granted; the city says it was fairly implied or essential. **Knowing the doctrine tells you what the fight is actually about:** not whether the city acted wisely, but whether the state's grant reaches this far. And knowing Cooley tells you that reasonable people built a whole alternative on the other premise, so the outcome is a policy choice a state made, not a law of nature.
 
 ## A precision note
 
@@ -859,7 +859,7 @@ Under home rule, a state's constitution or statutes give qualifying local govern
 
 **Missouri built the first version of this into a state constitution.** The Missouri Constitution of 1875 let St. Louis frame its own charter, making St. Louis widely described as the first home-rule city, and Missouri the pioneer of constitutional (as opposed to purely legislative) home rule (Missouri Const. of 1875; Ballotpedia, n.d.). Other states followed, each on its own terms.
 
-## The two flavours, because the difference matters for Question 4
+## The two flavors, because the difference matters for Question 4
 
 | | Constitutional home rule | Legislative home rule |
 |---|---|---|
@@ -873,7 +873,7 @@ Under home rule, a state's constitution or statutes give qualifying local govern
 
 Here is the fact that keeps home rule honest. **Even a home-rule city can be overridden by the state through preemption.** When a state legislature passes a law on a subject and declares (or a court finds) that the state has occupied the field, a conflicting local ordinance falls, home rule or not. **The reason traces straight back to Lesson 9: the city is still a creature of the state, and the state's law outranks the city's within the state's own hierarchy.**
 
-Preemption is why a home-rule city can pass a local minimum wage, a plastic-bag rule, a rent-control measure, or a local labour standard, and then watch the state legislature nullify it. **The city had the power to act; the state had the power to take the subject away.** Both facts are true at once, and the method reads them cleanly: the city acted under its charter (Questions 1 to 3), and the state overturned it by preemption (Question 4).
+Preemption is why a home-rule city can pass a local minimum wage, a plastic-bag rule, a rent-control measure, or a local labor standard, and then watch the state legislature nullify it. **The city had the power to act; the state had the power to take the subject away.** Both facts are true at once, and the method reads them cleanly: the city acted under its charter (Questions 1 to 3), and the state overturned it by preemption (Question 4).
 
 ## Reading it in practice
 
@@ -1009,13 +1009,13 @@ Special districts are hard to see for structural reasons, not accidental ones:
           {
             prompt: "The tie-breaker clause that does most of Dillon's Rule's work is that reasonable doubt about a city's power is resolved:",
             options: [
-              "In favour of the city always",
+              "In favor of the city always",
               "By a vote of local residents",
               "Against the city, denying the power",
               "By the governor's office directly",
             ],
             correctIndex: 2,
-            explanation: "Under a strict Dillon's Rule reading, if the grant is unclear the city loses. A city cannot act in a genuine grey area.",
+            explanation: "Under a strict Dillon's Rule reading, if the grant is unclear the city loses. A city cannot act in a genuine gray area.",
             sourceLessonSlug: "power-dillon-vs-cooley",
           },
           {
@@ -1183,7 +1183,7 @@ The Supreme Court said so early, in the Marshall Court's Cherokee cases. In Cher
 
 ## The map makes this literal
 
-The map lesson at the end of this course draws the tribal layer in a **different colour** from the vertical stack, and it does so on purpose. In eastern Oklahoma, the same ground can sit inside a state, a county, a city, several special districts, **and** a tribal reservation at once. The stack layers are rungs of one ladder. **The tribal nation is a second ladder standing on the same floor.** Drawing it as one more rung would not be a simplification; it would be a factual error about where the authority comes from.
+The map lesson at the end of this course draws the tribal layer in a **different color** from the vertical stack, and it does so on purpose. In eastern Oklahoma, the same ground can sit inside a state, a county, a city, several special districts, **and** a tribal reservation at once. The stack layers are rungs of one ladder. **The tribal nation is a second ladder standing on the same floor.** Drawing it as one more rung would not be a simplification; it would be a factual error about where the authority comes from.
 
 ## Sources
 - Cherokee Nation v. Georgia, 30 U.S. (5 Pet.) 1 (1831). https://supreme.justia.com/cases/federal/us/30/1/
@@ -1230,7 +1230,7 @@ You will often hear that when the Court decided Worcester v. Georgia, President 
 
 ## The care rule, stated plainly
 
-This section introduces tribal sovereignty as a matter of authority: where it comes from, and why it is not a rung on the ladder. **It deliberately stops there.** It does not describe any nation's ceremonies, internal governance procedures, or restricted knowledge, and the fuller course in this path is written to lead with tribal nations' own words and Indigenous scholarship, and to treat the many federally recognised tribes as many distinct governments rather than one. **The silence about internal detail here is deliberate, and it is part of getting the subject right.**
+This section introduces tribal sovereignty as a matter of authority: where it comes from, and why it is not a rung on the ladder. **It deliberately stops there.** It does not describe any nation's ceremonies, internal governance procedures, or restricted knowledge, and the fuller course in this path is written to lead with tribal nations' own words and Indigenous scholarship, and to treat the many federally recognized tribes as many distinct governments rather than one. **The silence about internal detail here is deliberate, and it is part of getting the subject right.**
 
 ## Sources
 - U.S. Const. art. I, § 8, cl. 3. https://constitution.congress.gov/constitution/article-1/section-8/
@@ -1250,7 +1250,7 @@ This section introduces tribal sovereignty as a matter of authority: where it co
         },
         {
           prompt: "Why does the course say the tribal nation is 'a second ladder on the same floor'?",
-          answer: "Because the same ground can sit inside a state, county, city, and districts AND a tribal reservation at once. The stack is one ladder of delegated power; the tribal nation is a separate sovereign, so the map draws it in a different colour rather than as one more rung.",
+          answer: "Because the same ground can sit inside a state, county, city, and districts AND a tribal reservation at once. The stack is one ladder of delegated power; the tribal nation is a separate sovereign, so the map draws it in a different color rather than as one more rung.",
         },
       ],
     },
@@ -1412,7 +1412,7 @@ This section introduces tribal sovereignty as a matter of authority: where it co
               "Because the quote was actually true",
               "The decision failed to protect the Cherokee",
               "Because Georgia obeyed the ruling",
-              "The removals were later cancelled",
+              "The removals were later canceled",
             ],
             correctIndex: 1,
             explanation: "The real facts stand without the fabricated line: the decision did not protect the Cherokee, the Indian Removal Act of 1830 had passed, and forced removals followed.",
@@ -1507,17 +1507,17 @@ Notice what you did not do. You did not decide whether raising the wage was a go
 
 ## What the map shows
 
-The map places, over one region, the layers of government that can hold authority over the same ground, plus one marker that is deliberately a different colour because it is a different KIND of thing.
+The map places, over one region, the layers of government that can hold authority over the same ground, plus one marker that is deliberately a different color because it is a different KIND of thing.
 
 **Blue markers: the vertical stack.** The national layer (shown at the U.S. Capitol to make the point that it is remote yet supreme within its enumerated powers), the state, the county, the city, and a special district. Read down the blue markers and you are reading Sections 2 and 3: enumerated, reserved, delegated, single-purpose. Each blue marker answers to the one above it.
 
-**The green marker: a separate sovereign.** The Muscogee (Creek) Nation, seated at Okmulgee, Oklahoma, is not a rung on the blue ladder. It is drawn in a different colour because its authority is inherent and pre-existing, not delegated down the stack. And it is placed in eastern Oklahoma on purpose: after McGirt v. Oklahoma (2020), much of that ground, including part of the city of Tulsa, lies within the Muscogee reservation AND within the State of Oklahoma at the same time. **Two sovereigns, one floor.** Rendering the green marker as one more shade of blue would be a factual error, which is exactly the claim Section 4 made in words and this map makes in colour.
+**The green marker: a separate sovereign.** The Muscogee (Creek) Nation, seated at Okmulgee, Oklahoma, is not a rung on the blue ladder. It is drawn in a different color because its authority is inherent and pre-existing, not delegated down the stack. And it is placed in eastern Oklahoma on purpose: after McGirt v. Oklahoma (2020), much of that ground, including part of the city of Tulsa, lies within the Muscogee reservation AND within the State of Oklahoma at the same time. **Two sovereigns, one floor.** Rendering the green marker as one more shade of blue would be a factual error, which is exactly the claim Section 4 made in words and this map makes in color.
 
 ## What the map cannot show
 
 **It cannot show overlap as area.** A reservation, a city, a county, and a water district are shapes that lie on top of one another, and a dot cannot draw a shape. The plan for this path notes that these courses are the first content that genuinely needs a polygon map layer rather than pins; until that ships, hold the overlap in your head while you read the dots.
 
-**It cannot show how firmly each power is held.** The blue markers look alike, but the state is entrenched in the federal constitution and the city is a creature of the state. Colour shows the sovereign/stack distinction; it cannot show the entrenchment distinction inside the stack. That one you carry from Section 3.
+**It cannot show how firmly each power is held.** The blue markers look alike, but the state is entrenched in the federal constitution and the city is a creature of the state. Color shows the sovereign/stack distinction; it cannot show the entrenchment distinction inside the stack. That one you carry from Section 3.
 
 ## Sources
 - U.S. Census Bureau. (2017). 2017 Census of Governments, Organization component. https://www.census.gov/programs-surveys/cog.html
@@ -1577,7 +1577,7 @@ The map places, over one region, the layers of government that can hold authorit
             title: "A separate sovereign (Muscogee (Creek) Nation, Okmulgee)",
             color: "#047857",
             description:
-              "Drawn in a different colour because it is a different kind of authority, not a rung on the blue ladder. The Muscogee (Creek) Nation's sovereignty is inherent and pre-existing, older than the United States, and the relationship is government-to-government, resting on treaties that rank as supreme law (Article VI). After McGirt v. Oklahoma (2020), much of eastern Oklahoma, including part of Tulsa, lies within the Muscogee reservation AND the State of Oklahoma at once: two sovereigns over one floor. Coordinates are approximate.",
+              "Drawn in a different color because it is a different kind of authority, not a rung on the blue ladder. The Muscogee (Creek) Nation's sovereignty is inherent and pre-existing, older than the United States, and the relationship is government-to-government, resting on treaties that rank as supreme law (Article VI). After McGirt v. Oklahoma (2020), much of eastern Oklahoma, including part of Tulsa, lies within the Muscogee reservation AND the State of Oklahoma at once: two sovereigns over one floor. Coordinates are approximate.",
           },
         ],
       },
@@ -1593,7 +1593,7 @@ The map places, over one region, the layers of government that can hold authorit
 
 ## The assignment
 
-Produce a **stack map of your own block**: a labelled list (or an actual sketch) of every government with authority over it, each with its layer, its enabling document, and who can overturn its acts. Aim for **completeness over polish.** The finding is the count and the sources, not the prose.
+Produce a **stack map of your own block**: a labeled list (or an actual sketch) of every government with authority over it, each with its layer, its enabling document, and who can overturn its acts. Aim for **completeness over polish.** The finding is the count and the sources, not the prose.
 
 ## Step 1. List the layers, top to bottom
 
@@ -1647,7 +1647,7 @@ For every entry, answer the method:
 
 ## What good looks like
 
-A complete, sourced inventory in which every government over your block has a name, a layer, a document, and an overturn answer, and in which the blanks are labelled rather than filled with guesses. **If you found a district you had never heard of that taxes you, and you can name the document that created it, you have done exactly what this course set out to teach: you found the instrument, then you found its source.**
+A complete, sourced inventory in which every government over your block has a name, a layer, a document, and an overturn answer, and in which the blanks are labeled rather than filled with guesses. **If you found a district you had never heard of that taxes you, and you can name the document that created it, you have done exactly what this course set out to teach: you found the instrument, then you found its source.**
 
 ## Sources
 - U.S. Census Bureau. (2017). 2017 Census of Governments, Organization component. https://www.census.gov/programs-surveys/cog.html

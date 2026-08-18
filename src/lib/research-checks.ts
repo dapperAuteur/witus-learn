@@ -219,13 +219,13 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     course: "bvc-taster-chocolate",
     lesson: "choc-ethics",
     quote:
-      "estimated approximately 1.56 million children in child labour in cocoa production in those two countries in the 2018/19 season, with a large majority engaged in hazardous work as defined by the survey",
-    title: "Chocolate: the 1.56 million child labour figure and its survey years",
+      "estimated approximately 1.56 million children in child labor in cocoa production in those two countries in the 2018/19 season, with a large majority engaged in hazardous work as defined by the survey",
+    title: "Chocolate: the 1.56 million child labor figure and its survey years",
     severity: "high",
     question:
-      "Does the NORC at the University of Chicago report state approximately 1.56 million children in child labour in cocoa production in Côte d'Ivoire and Ghana, and for which survey year?",
+      "Does the NORC at the University of Chicago report state approximately 1.56 million children in child labor in cocoa production in Côte d'Ivoire and Ghana, and for which survey year?",
     claim:
-      "The course states roughly 1.56 million children in child labour in cocoa in those two countries in 2018/19, with a large majority in hazardous work.",
+      "The course states roughly 1.56 million children in child labor in cocoa in those two countries in 2018/19, with a large majority in hazardous work.",
     stakes:
       "This is the most serious factual claim in the sommelier series and it concerns real harm to real children. Getting the number or the years wrong, in either direction, is worse than not citing a number at all. It is also the claim most likely to be quoted back at BAM.",
     needs: [
@@ -233,7 +233,7 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "The exact survey year or years it covers",
       "Whether a more recent NORC or successor survey has since superseded it",
     ],
-    where: ["norc.org, the cocoa child labour report", "US Department of Labor, which commissioned it"],
+    where: ["norc.org, the cocoa child labor report", "US Department of Labor, which commissioned it"],
   },
 
   // ── Storytelling / Documentarian ──────────────────────────────────────────────────────────────
@@ -243,15 +243,15 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     title: "Documenters: tell City Bureau and Mirror Indy the course exists",
     severity: "medium",
     question:
-      "Are City Bureau and Mirror Indy content for a paid course to teach the Documenters practice from their published Field Guide, citing it and directing learners to apply to the real programme?",
+      "Are City Bureau and Mirror Indy content for a paid course to teach the Documenters practice from their published Field Guide, citing it and directing learners to apply to the real program?",
     claim:
       "The planned Civic Documentation course is built on the Field Guide's structure and standards, cites them, and sends learners to documenters.org to apply. It claims no endorsement and no affiliation.",
     stakes:
-      "The course is a benefit to them, since it produces trained applicants for a programme that trains and pays people. That is exactly why it should not arrive as a surprise. It is also a rights question about how much of the Guide may be quoted rather than taught.",
+      "The course is a benefit to them, since it produces trained applicants for a program that trains and pays people. That is exactly why it should not arrive as a surprise. It is also a rights question about how much of the Guide may be quoted rather than taught.",
     needs: [
       "A reply from City Bureau (documenters@citybureau.org) and Mirror Indy (documenters@mirrorindy.org)",
       "Any wording they want used, or want avoided, when the course names them",
-      "Whether they object to the course pointing learners at the Indianapolis programme",
+      "Whether they object to the course pointing learners at the Indianapolis program",
     ],
     where: [
       "documenters@citybureau.org and documenters@mirrorindy.org",
@@ -287,17 +287,17 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     title: "Baltimore: are the grant figures still current?",
     severity: "low",
     question:
-      "Are the grant amounts and programme names cited in the Baltimore course still accurate, and are the programmes still running?",
+      "Are the grant amounts and program names cited in the Baltimore course still accurate, and are the programs still running?",
     claim:
       "The course tells the learner to re-check every figure before relying on it, since grants change.",
     stakes:
-      "Grant programmes change or close, and a learner acting on a closed programme wastes real effort. Low severity only because the lesson already tells them to check.",
+      "Grant programs change or close, and a learner acting on a closed program wastes real effort. Low severity only because the lesson already tells them to check.",
     needs: [
-      "For each programme named: still running, yes or no",
+      "For each program named: still running, yes or no",
       "Current amounts if changed",
-      "The programme page URL and the date checked",
+      "The program page URL and the date checked",
     ],
-    where: ["The administering agency's own site for each programme"],
+    where: ["The administering agency's own site for each program"],
   },
 
   // ── Pricing anchors (src/lib/market-comparison.ts) ───────────────────────────────────────────
@@ -438,7 +438,7 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     claim:
       "Lesson 5 (the press release) cites it as: National Aeronautics and Space Administration. (1996, August 7). Meteorite yields evidence of primitive life on early Mars. The date and the event are solid. The exact release TITLE is the part that was not verified against NASA's own archive.",
     stakes:
-      "Lesson 5 is the course's worked example of institutional voice, and it teaches students to trace a claim back to its source document. A misquoted title in the one lesson about citing precisely would be the most self-undermining error the course could ship. It is also an ELA capstone whose standards claims rest on modelling WHST.11-12.8.",
+      "Lesson 5 is the course's worked example of institutional voice, and it teaches students to trace a claim back to its source document. A misquoted title in the one lesson about citing precisely would be the most self-undermining error the course could ship. It is also an ELA capstone whose standards claims rest on modeling WHST.11-12.8.",
     needs: [
       "The verbatim release title",
       "The release date and any release number",

@@ -93,7 +93,7 @@ Read the second row again. Convention 87 dates from **1948**. Poland, the commun
       section: "Section 1 · The paradox that runs the whole course",
       body: `If you have taken **The History of Unions: America and the World**, the anchor of this track, you own the tool this course runs on: four questions you can ask of any country on earth.
 
-1. **Who is allowed to organise?**
+1. **Who is allowed to organize?**
 2. **Who is excluded?**
 3. **Who bargains with whom, and at what level?**
 4. **What happens to you if you try?**
@@ -102,7 +102,7 @@ Read the second row again. Convention 87 dates from **1948**. Poland, the commun
 
 Here are Korea's answers in advance. Everything after this lesson is the detail.
 
-**Q1, Who is allowed to organise?** Under the developmental dictatorship (1961-1987): in form, unions existed, one legal federation, kept close to the state; in substance, independent organising was treated as subversion, and emergency legislation of the early 1970s suspended effective bargaining and strike rights outright. After 1987: organising is a constitutional right (the Korean constitution names workers' rights to **independent association, collective bargaining and collective action**). But watch the fine print of *who counts as a worker*, it decides everything in this country.
+**Q1, Who is allowed to organize?** Under the developmental dictatorship (1961-1987): in form, unions existed, one legal federation, kept close to the state; in substance, independent organizing was treated as subversion, and emergency legislation of the early 1970s suspended effective bargaining and strike rights outright. After 1987: organizing is a constitutional right (the Korean constitution names workers' rights to **independent association, collective bargaining and collective action**). But watch the fine print of *who counts as a worker*, it decides everything in this country.
 
 **Q2, Who is excluded?** This is Korea's defining answer, and the track's oldest move wearing a new uniform. The anchor taught you the US New Deal's carve-out (farm and domestic workers written out of the Wagner Act); Poland showed you civil-law "junk contracts." Korea runs the same play at extraordinary scale: **38.2% of wage workers are "non-regular"**, fixed-term, part-time, dispatched, in-house subcontracted, or "specially employed" like truck drivers who are legally self-employed businesses (August 2025, Statistics Korea). Many of them stand outside effective union protection, and some, the truckers of Section 5, are outside the legal definition of "worker" entirely, so their strikes are not legally strikes.
 
@@ -122,7 +122,7 @@ Here are Korea's answers in advance. Everything after this lesson is the detail.
         {
           prompt: "When did South Korea ratify ILO Conventions 87 and 98, and when did they enter into force?",
           answer:
-            "Korea deposited the ratifications (together with Convention 29 on forced labour) on 20 April 2021; they entered into force one year later, on 20 April 2022, thirty years after Korea joined the ILO in 1991 promising to ratify them, and seventy-three years after Convention 87 was written.",
+            "Korea deposited the ratifications (together with Convention 29 on forced labor) on 20 April 2021; they entered into force one year later, on 20 April 2022, thirty years after Korea joined the ILO in 1991 promising to ratify them, and seventy-three years after Convention 87 was written.",
         },
         {
           prompt: "What two present-day 'catches' does the course say came with the unions Korean workers won in 1987?",
@@ -1559,7 +1559,7 @@ Notice what the package is: **a point-by-point answer to this course's Section 5
       slug: "korea-ilo-2021",
       title: "14 · 2021: signing the floor, thirty years late",
       section: "Section 6 · The scorecard, and the skill you keep",
-      body: `Return now to the fact this course opened with, because you can finally read it properly: **on 20 April 2021, South Korea deposited its ratifications of ILO Conventions 87 and 98** (freedom of association; the right to organise and bargain collectively), together with Convention 29 on forced labour. They entered into force on **20 April 2022**, and (a detail worth knowing) under Article 6(1) of Korea's constitution, ratified treaties carry **the same effect as domestic statute** (Kim & Chang). Thirty years after joining the ILO in 1991 with a promise to ratify, the promise was kept.
+      body: `Return now to the fact this course opened with, because you can finally read it properly: **on 20 April 2021, South Korea deposited its ratifications of ILO Conventions 87 and 98** (freedom of association; the right to organize and bargain collectively), together with Convention 29 on forced labor. They entered into force on **20 April 2022**, and (a detail worth knowing) under Article 6(1) of Korea's constitution, ratified treaties carry **the same effect as domestic statute** (Kim & Chang). Thirty years after joining the ILO in 1991 with a promise to ratify, the promise was kept.
 
 **Why did it take thirty years?** Not forgetfulness. Ratifying would have meant admitting that specific, defended features of Korean labor law contradicted the conventions, and each was somebody's fortress:
 
@@ -1613,7 +1613,7 @@ Three readings, and then the skill.
 
 **Reading three: the walls have a population.** Whatever the insiders win, 38.2% of wage workers stand structurally outside it (August 2025, Statistics Korea), and the sharpest edge of them, the "specially employed," stand outside the word *worker* itself. Korea's labor question in the 2020s is not "will the unions win?" It is **"who is inside the category?"**, which is precisely why the yellow envelope law aimed its first clause at the definition of *employer* and why every count in this course keeps returning to the boundary line.
 
-**The four questions, answered one last time.** *Who may organise?* Anyone the law calls a worker, a category fought over sentence by sentence. *Who is excluded?* The non-regular 38.2%, above all the specially employed. *Who bargains, at what level?* Enterprise unions, company by company, nothing extending. *What happens if you try?* For workers: the damages suit, now curbed on paper by a March 2026 law whose real effect is unproven. For non-workers: administrative orders with criminal teeth. **Every answer runs through a definition.** That is Korea's signature.
+**The four questions, answered one last time.** *Who may organize?* Anyone the law calls a worker, a category fought over sentence by sentence. *Who is excluded?* The non-regular 38.2%, above all the specially employed. *Who bargains, at what level?* Enterprise unions, company by company, nothing extending. *What happens if you try?* For workers: the damages suit, now curbed on paper by a March 2026 law whose real effect is unproven. For non-workers: administrative orders with criminal teeth. **Every answer runs through a definition.** That is Korea's signature.
 
 **The skill you keep.** From Germany you took *find the bargaining level*. From Poland, *find the legal form that moves workers out of the protected category*. Korea gives you the third tool, and it may be the sharpest: **find out what happens after the strike ends.** Not the confrontation, the paperwork. Who gets sued, for how much, under what liability rule; whose assets can be frozen while the case runs; which strikers were ever legally "on strike" at all. A country's labor law shows you its true face not on the day workers walk out, but in the years of consequences afterward. Ask that question of any country, including your own, and you will see past both the headbands and the press releases.
 
@@ -1760,7 +1760,7 @@ Three readings, and then the skill.
             ],
             correctIndex: 0,
             explanation:
-              "Who may organise, who is excluded, who bargains, and what happens after, in Korea each one is decided by a statutory category's boundary line.",
+              "Who may organize, who is excluded, who bargains, and what happens after, in Korea each one is decided by a statutory category's boundary line.",
             sourceLessonSlug: "korea-scorecard",
           },
           {

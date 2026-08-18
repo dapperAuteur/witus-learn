@@ -523,7 +523,7 @@ The honest move is to lead with **SOM**, not TAM. Anyone can claim a giant TAM; 
             prompt: "Which research job can AI genuinely help with, and which can it NEVER do?",
             options: [
               "It can be a real customer, but it cannot draft questions",
-              "It can prep questions and summarise, but never BE a customer",
+              "It can prep questions and summarize, but never BE a customer",
               "It can do everything, so you can skip the interviews",
               "It can only ever invent personas and nothing else at all",
             ],

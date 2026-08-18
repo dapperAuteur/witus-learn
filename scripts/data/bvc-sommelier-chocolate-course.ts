@@ -99,8 +99,8 @@ const FLIGHT_2: Flight = {
   procedure: [
     "All four at the same percentage, ideally 70, and from as few makers as you can manage. Percentage and maker are the variables you are holding still.",
     "Taste blind if someone will unwrap them for you. Origin bars are the flight where knowing the label most distorts the note.",
-    "Score acidity FIRST on all four, before flavour. Madagascar in particular tends to arrive with a citric brightness people do not expect from chocolate, and finding it is the moment the course usually clicks.",
-    "Then score bitterness and astringency, then look for flavour: red fruit, dried fruit, nuts, earth, smoke, floral, spice.",
+    "Score acidity FIRST on all four, before flavor. Madagascar in particular tends to arrive with a citric brightness people do not expect from chocolate, and finding it is the moment the course usually clicks.",
+    "Then score bitterness and astringency, then look for flavor: red fruit, dried fruit, nuts, earth, smoke, floral, spice.",
     "Write which one you would buy again and why, in plain language, without using the word notes.",
   ],
   lookFor:
@@ -122,8 +122,8 @@ const FLIGHT_3: Flight = {
   procedure: [
     "Taste the two bars against each other. Score acidity and astringency first. Long conching drives off volatile acids, so the industrial bar is usually rounder, smoother and quieter, and the craft bar louder and sometimes rougher.",
     "Decide honestly which you prefer, and notice that the answer is allowed to be the industrial one. Smoothness is a real achievement, not a compromise.",
-    "Now the two cocoa powders. Mix each with a little hot water and compare colour and taste side by side.",
-    "The alkalised one will be darker and markedly less sharp. That is Dutching, and it is a chemical decision made for colour and mildness.",
+    "Now the two cocoa powders. Mix each with a little hot water and compare color and taste side by side.",
+    "The alkalised one will be darker and markedly less sharp. That is Dutching, and it is a chemical decision made for color and mildness.",
     "Read all four ingredient lists. Count how many things are in each, and note where lecithin, vanilla and added cocoa butter appear.",
   ],
   lookFor:
@@ -145,7 +145,7 @@ const FLIGHT_4: Flight = {
     "Take bar two, melt about half of it gently, then let it set at room temperature with no tempering at all. Leave it overnight.",
     "Compare them. The untempered piece will be dull rather than glossy, will bend or crumble rather than snap, and will feel waxy and slow to melt in your mouth. Same chocolate, same ingredients, entirely different product.",
     "Now cycle the rest of bar two: warm it in a pocket or a warm room until it softens slightly, cool it, repeat over a couple of days.",
-    "Look for the greyish white film of FAT BLOOM appearing. Taste it. Note that it is not spoiled and not dangerous, and that the texture is ruined anyway.",
+    "Look for the grayish white film of FAT BLOOM appearing. Taste it. Note that it is not spoiled and not dangerous, and that the texture is ruined anyway.",
   ],
   lookFor:
     "You can explain snap and gloss as consequences of crystal form rather than as signs of quality ingredients.",
@@ -166,7 +166,7 @@ const FLIGHT_5: Flight = {
   ],
   procedure: [
     "Someone else unwraps and numbers them. If you are alone, unwrap them into numbered foil the day before so you have forgotten the order.",
-    "Work the grid in silence on each: appearance and snap, aroma, melt, then acidity, bitterness, astringency, sweetness, then flavour, then finish.",
+    "Work the grid in silence on each: appearance and snap, aroma, melt, then acidity, bitterness, astringency, sweetness, then flavor, then finish.",
     "Commit in writing on each bar to: milk or dark, a rough percentage band, and whether it is craft or industrial. In that order, because that is the order of difficulty.",
     "Only after those three, guess at origin, and hedge deliberately: a character (bright and fruity, earthy and nutty) is a better answer than a country.",
     "Reveal all five at once. For every wrong call, write the ONE observation that should have redirected you.",
@@ -182,7 +182,7 @@ const FLIGHT_5: Flight = {
 export const BVC_SOMMELIER_CHOCOLATE_COURSE: AuthoredCourse = {
   title: "BVC Taster: Chocolate",
   description:
-    "Learn to taste chocolate systematically and buy it knowingly: the grid of appearance, snap, aroma, melt, flavour and finish, why the percentage on a wrapper is a recipe ratio rather than a quality score, what cacao genetics actually say now that the old Criollo and Forastero framework has been superseded, how fermentation and drying at origin create most of the flavour before a maker touches the bean, what roasting, conching, alkalising and tempering each decide, why a bar snaps and shines and what bloom really is, what the standards of identity legally require in the United States and the EU, which label words mean nothing, the ethics the category cannot avoid including child labour and the living income differential, food pairing, and blind deduction. The sequel to BVC Season 1, Episode 3, which covers chocolate's history. Six flights with budgets and substitutes, and a dairy-free, lower-sugar path through every drill. Not affiliated with, and not exam preparation for, any certifying body.",
+    "Learn to taste chocolate systematically and buy it knowingly: the grid of appearance, snap, aroma, melt, flavor and finish, why the percentage on a wrapper is a recipe ratio rather than a quality score, what cacao genetics actually say now that the old Criollo and Forastero framework has been superseded, how fermentation and drying at origin create most of the flavor before a maker touches the bean, what roasting, conching, alkalising and tempering each decide, why a bar snaps and shines and what bloom really is, what the standards of identity legally require in the United States and the EU, which label words mean nothing, the ethics the category cannot avoid including child labor and the living income differential, food pairing, and blind deduction. The sequel to BVC Season 1, Episode 3, which covers chocolate's history. Six flights with budgets and substitutes, and a dairy-free, lower-sugar path through every drill. Not affiliated with, and not exam preparation for, any certifying body.",
   lessons: [
     // ══════════════ MODULE 1 · BEFORE YOU TASTE ══════════════
     {
@@ -199,8 +199,8 @@ This is the other half: tasting it, and buying it knowingly.
 - Find acidity in chocolate, which most people do not know is there.
 - Read an ingredient list and say what the maker decided, separately from what the bean brought.
 - Explain what a percentage legally means, and why it is not a quality score.
-- Recognise bloom, poor temper and over-conching, and know which are faults and which are choices.
-- Speak accurately about the category's labour and income problems, with sources rather than vibes.
+- Recognize bloom, poor temper and over-conching, and know which are faults and which are choices.
+- Speak accurately about the category's labor and income problems, with sources rather than vibes.
 
 **What this course refuses to be.** Not affiliated with any certifying body, not exam preparation, and not a health course. Chocolate carries a large and noisy literature of health claims. This course makes none, in either direction.
 
@@ -208,7 +208,7 @@ This is the other half: tasting it, and buying it knowingly.
 
 A percentage on a wrapper tells you what proportion of the bar came from the cacao bean: cocoa mass and cocoa butter combined. **It is a recipe ratio, not a quality measure, and not reliably an intensity measure either.**
 
-Here is why. Two bars can both say 70 percent. One gets there with mostly cocoa mass, which is where the bitterness, astringency and flavour live. The other gets there with a large share of added cocoa butter, which is fat: smooth, rich, and comparatively neutral. The second bar is softer, sweeter-seeming and much less intense, and the number is identical. Meanwhile the remaining 30 percent is mostly sugar in both.
+Here is why. Two bars can both say 70 percent. One gets there with mostly cocoa mass, which is where the bitterness, astringency and flavor live. The other gets there with a large share of added cocoa butter, which is fat: smooth, rich, and comparatively neutral. The second bar is softer, sweeter-seeming and much less intense, and the number is identical. Meanwhile the remaining 30 percent is mostly sugar in both.
 
 So the percentage tells you roughly how much sugar is NOT in the bar, which is genuinely useful, and it tells you very little else. The ingredient list, in order, tells you more. Flight 1 makes you taste this rather than take my word for it.
 
@@ -223,20 +223,20 @@ ${CHOCOLATE_METHOD_NOTE}
 
 **And a note on what to call yourself, because the honest answer is more interesting than the title.**
 
-Every vice on this shelf has a real expert title, and most of them are **owned certification marks belonging to programmes this course has nothing to do with.**
+Every vice on this shelf has a real expert title, and most of them are **owned certification marks belonging to programs this course has nothing to do with.**
 
 | Vice | The real title | What it actually is |
 | --- | --- | --- |
 | Wine | **Sommelier** | The one word that escaped into common use. Generic, unowned, and now borrowed by cheese, water and olive oil |
-| Beer | **Cicerone** | A trademarked certification. Its own programme states the word is reserved for people who have passed it and should not be used as a synonym for beer expert |
+| Beer | **Cicerone** | A trademarked certification. Its own program states the word is reserved for people who have passed it and should not be used as a synonym for beer expert |
 | Coffee | **Q Grader** | A Coffee Quality Institute certification. The generic job word underneath it is *cupper* |
 | Chocolate | **Chocolate taster** | Taught by dedicated institutes; *chocolatier* is a maker, which is a different job |
-| Cannabis | **Interpener** | A specific institute's programme term |
+| Cannabis | **Interpener** | A specific institute's program term |
 | Sake | **Kikisake-shi** | A Japanese certification, and the closest true parallel to a sommelier |
 
 So this course is called a **Taster** course, which is the plain English for what you are actually doing, and it is a word nobody owns.
 
-**How this relates to those programmes, stated plainly:** it is not any of them, it does not prepare you for their exams, and finishing it entitles you to call yourself nothing. What it does is teach the same underlying skill they all test, which is tasting systematically and describing accurately. If you later sit one of those exams, this will have helped. That is a claim about the subject, not a promise about a result, and anyone who tells you a course can hand you a protected title is selling you something.
+**How this relates to those programs, stated plainly:** it is not any of them, it does not prepare you for their exams, and finishing it entitles you to call yourself nothing. What it does is teach the same underlying skill they all test, which is tasting systematically and describing accurately. If you later sit one of those exams, this will have helped. That is a claim about the subject, not a promise about a result, and anyone who tells you a course can hand you a protected title is selling you something.
 ## Sources
 - U.S. Food and Drug Administration. (n.d.). *Cacao products* (21 C.F.R. Part 163). https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-163
 - Council Directive 2000/36/EC of the European Parliament and of the Council of 23 June 2000 relating to cocoa and chocolate products intended for human consumption. *Official Journal of the European Communities, L 197*, 19-25.
@@ -253,7 +253,7 @@ So this course is called a **Taster** course, which is the plain English for wha
             "It tells you what proportion of the bar came from the cacao bean, cocoa mass and cocoa butter combined, which means it roughly tells you how much sugar is NOT in the bar. It does not tell you quality, and it is not a reliable intensity measure, because a bar can reach the same number with mostly cocoa mass (intense) or with a large share of added cocoa butter (soft and mild).",
         },
       ],
-      body: `The physiology is the same as the rest of this series: the tongue reports a short list of tastes, and everything else you call flavour is odour arriving through the back of the throat as you swallow, on the retronasal route that runs on the odorant receptor gene family described by Buck and Axel (1991).
+      body: `The physiology is the same as the rest of this series: the tongue reports a short list of tastes, and everything else you call flavor is odor arriving through the back of the throat as you swallow, on the retronasal route that runs on the odorant receptor gene family described by Buck and Axel (1991).
 
 **What makes chocolate different from wine and coffee is that it arrives solid**, and has to become liquid in your mouth before any of that can happen. Which makes MELT the central event, and cocoa butter the reason.
 
@@ -269,7 +269,7 @@ So this course is called a **Taster** course, which is the plain English for wha
 
 **Palate fatigue is faster here than anywhere else in this series.** Fat coats the mouth and stays, sugar accumulates, and bitterness builds. Five or six samples is a real session. Cleanse with plain water, take breaks, and be suspicious of any note you wrote after the sixth bar.
 
-**The four rules, unchanged from the rest of the series.** Score structure before flavour. Use your own references. Always taste comparatively. Write before you speak.
+**The four rules, unchanged from the rest of the series.** Score structure before flavor. Use your own references. Always taste comparatively. Write before you speak.
 
 Now run Flight 0.
 
@@ -284,11 +284,11 @@ ${flightCard(FLIGHT_0, ALT)}
     },
     {
       slug: "choc-the-grid",
-      title: "3 · The grid: appearance, snap, aroma, melt, flavour, finish",
+      title: "3 · The grid: appearance, snap, aroma, melt, flavor, finish",
       section: "Module 1 · Before you taste",
       body: `Six stages, in order, for the same reason every tasting system in this series fixes an order: it runs from the least suggestible evidence to the most.
 
-**1. Appearance.** Look at the surface. A well tempered bar is glossy and even. Dull, streaked, greyish or white-filmed means poor temper or bloom, and Lesson 12 separates those. Colour ranges from pale reddish brown to almost black, and it reports roast level, origin and whether cocoa was alkalised, not quality.
+**1. Appearance.** Look at the surface. A well tempered bar is glossy and even. Dull, streaked, grayish or white-filmed means poor temper or bloom, and Lesson 12 separates those. Color ranges from pale reddish brown to almost black, and it reports roast level, origin and whether cocoa was alkalised, not quality.
 
 **2. Snap.** Break a piece near your ear. A properly tempered dark bar gives a clean, sharp crack. A dull thud or a bend means the crystal structure is wrong, or the bar is warm, or it has a high milk or fat content, which softens the snap legitimately. Milk chocolate should not be expected to snap like dark.
 
@@ -299,7 +299,7 @@ ${flightCard(FLIGHT_0, ALT)}
 
 **4. Melt.** Put it on your tongue, press it to the roof of your mouth, and do not chew. Time it roughly. Note the speed, the temperature at which it gives, and the texture as it goes: creamy, waxy, greasy, gritty, or clean.
 
-**5. Flavour and structure.** As it melts, score:
+**5. Flavor and structure.** As it melts, score:
 
 | Component | What you are looking for |
 | --- | --- |
@@ -307,13 +307,13 @@ ${flightCard(FLIGHT_0, ALT)}
 | **Astringency** | A texture, a drying grip on the gums. From polyphenols, and often from under-fermented beans |
 | **Acidity** | Real and often overlooked. Bright and fruity when it comes from fermentation, sharp and sour when there was too much of it |
 | **Sweetness** | The sugar, and the inverse of the percentage |
-| **Flavour** | Only now, and from broad to specific |
+| **Flavor** | Only now, and from broad to specific |
 
 **6. Finish.** Wait. Chocolate's finish is longer than almost anything you will taste, often a full minute or more, and it changes as it goes. Note what LINGERS: fruit, nuts and cocoa are good company, while a chalky, dusty or bitter-only finish is not.
 
 **The one thing to write down every time.** Whether the bar got better or worse as it melted. Bars that open big and collapse are common, and bars that start quiet and bloom into a long finish are the ones worth buying again.
 
-:::reveal A milk chocolate bar bends rather than snapping. Name the two possible explanations and say which one is a fault. ||| Either the bar is poorly tempered or has bloomed, which is a fault in the crystal structure, or it simply has a high milk and fat content that legitimately softens the snap, which is not a fault at all. Milk chocolate should not be expected to crack like a dark bar. Appearance settles it: a poorly tempered or bloomed bar is also dull, streaked or greyish, where a well made milk bar stays glossy while still bending.
+:::reveal A milk chocolate bar bends rather than snapping. Name the two possible explanations and say which one is a fault. ||| Either the bar is poorly tempered or has bloomed, which is a fault in the crystal structure, or it simply has a high milk and fat content that legitimately softens the snap, which is not a fault at all. Milk chocolate should not be expected to crack like a dark bar. Appearance settles it: a poorly tempered or bloomed bar is also dull, streaked or grayish, where a well made milk bar stays glossy while still bending.
 
 ## Sources
 - Beckett, S. T., Fowler, M. S., & Ziegler, G. R. (Eds.). (2017). *Beckett's industrial chocolate manufacture and use* (5th ed.). Wiley-Blackwell.
@@ -337,7 +337,7 @@ ${flightCard(FLIGHT_0, ALT)}
 
 ${flightCard(FLIGHT_1, ALT)}
 
-:::reveal Two dark bars both say 70 percent. One lists cocoa mass, sugar, cocoa butter. The other lists cocoa mass, sugar, cocoa butter as a much larger share. Predict how they differ in the mouth. ||| The second will be softer, faster melting, richer and noticeably less intense, because cocoa butter is fat and comparatively neutral while cocoa mass carries the bitterness, astringency and flavour. Both bars are still about 30 percent sugar, so the difference is not sweetness, it is how much of the cacao portion is actually flavour-bearing solids rather than fat.
+:::reveal Two dark bars both say 70 percent. One lists cocoa mass, sugar, cocoa butter. The other lists cocoa mass, sugar, cocoa butter as a much larger share. Predict how they differ in the mouth. ||| The second will be softer, faster melting, richer and noticeably less intense, because cocoa butter is fat and comparatively neutral while cocoa mass carries the bitterness, astringency and flavor. Both bars are still about 30 percent sugar, so the difference is not sweetness, it is how much of the cacao portion is actually flavor-bearing solids rather than fat.
 
 ## Sources
 - U.S. Food and Drug Administration. (n.d.). *Cacao products* (21 C.F.R. Part 163). https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-163
@@ -374,7 +374,7 @@ ${flightCard(FLIGHT_1, ALT)}
             ],
             correctIndex: 1,
             explanation:
-              "Cocoa mass carries bitterness, astringency and flavour, while cocoa butter is comparatively neutral fat. Both count toward the percentage, so the ingredient list is more informative than the number.",
+              "Cocoa mass carries bitterness, astringency and flavor, while cocoa butter is comparatively neutral fat. Both count toward the percentage, so the ingredient list is more informative than the number.",
             sourceLessonSlug: "choc-how-this-works",
           },
           {
@@ -419,10 +419,10 @@ ${flightCard(FLIGHT_1, ALT)}
           {
             prompt: "In what order does the tasting grid proceed?",
             options: [
-              "Appearance, snap, aroma, melt, flavour, finish",
-              "Aroma, flavour, appearance, snap, melt, finish",
-              "Snap, flavour, finish, aroma, appearance, melt",
-              "Flavour, finish, melt, aroma, snap, appearance",
+              "Appearance, snap, aroma, melt, flavor, finish",
+              "Aroma, flavor, appearance, snap, melt, finish",
+              "Snap, flavor, finish, aroma, appearance, melt",
+              "Flavor, finish, melt, aroma, snap, appearance",
             ],
             correctIndex: 0,
             explanation:
@@ -494,7 +494,7 @@ ${flightCard(FLIGHT_1, ALT)}
         {
           prompt: "Name the six stages of the chocolate tasting grid in order, and say why the order is fixed.",
           answer:
-            "Appearance, snap, aroma, melt, flavour and structure, then finish. The order runs from least suggestible evidence to most, so a taster observes what is physically there before deciding what the bar is and then finding evidence for that decision.",
+            "Appearance, snap, aroma, melt, flavor and structure, then finish. The order runs from least suggestible evidence to most, so a taster observes what is physically there before deciding what the bar is and then finding evidence for that decision.",
         },
       ],
       body: `Open almost any chocolate book and you will meet three names: **Criollo**, rare and fine and ancient; **Forastero**, bulk and hardy and dull; and **Trinitario**, a hybrid of the two. It is a tidy story, it maps neatly onto a quality hierarchy, and it is out of date.
@@ -505,15 +505,15 @@ ${flightCard(FLIGHT_1, ALT)}
 
 **Why it matters rather than being pedantry.** Three reasons:
 
-1. **The quality hierarchy was never reliable.** Fine flavour is not the property of one ancient noble variety, and treating Criollo as automatically superior is the chocolate equivalent of assuming an expensive appellation guarantees a good bottle.
-2. **Amelonado is most of the world's chocolate.** The cluster behind the bulk West African crop is one of ten, and it was selected for yield and hardiness rather than flavour. That is a farming and economic story, not a genetic verdict on the beans.
+1. **The quality hierarchy was never reliable.** Fine flavor is not the property of one ancient noble variety, and treating Criollo as automatically superior is the chocolate equivalent of assuming an expensive appellation guarantees a good bottle.
+2. **Amelonado is most of the world's chocolate.** The cluster behind the bulk West African crop is one of ten, and it was selected for yield and hardiness rather than flavor. That is a farming and economic story, not a genetic verdict on the beans.
 3. **Nacional, in Ecuador, is a genuinely distinct cluster** with a famous floral character, and it nearly disappeared to disease in the early twentieth century. Its survival and rediscovery is the story people usually attach to Criollo.
 
 **What to do with this as a taster.** Treat variety claims on a wrapper the way the wine course tells you to treat "old vines": possibly true, rarely verifiable, and much less predictive than the things you can taste. **Fermentation and roast will tell you more about a bar than its genetics will.**
 
 **Where cacao grows.** Within roughly twenty degrees of the equator, in hot, humid, shaded conditions. West Africa, principally Cote d'Ivoire and Ghana, grows the majority of the world crop. Latin America, Indonesia, and a long tail of smaller origins make up the rest. That concentration is the economic fact underneath everything in Module 4, and Episode 3 covered how it came to be.
 
-:::reveal Why is calling a bar "Criollo" weaker evidence than it looks? ||| Because the Criollo, Forastero and Trinitario scheme has been superseded: the genetics resolve cacao into ten clusters, and Forastero in particular was a bucket holding most of the species' actual diversity. So Criollo names one cluster rather than a quality tier, fine flavour is not exclusive to it, and the claim is rarely verifiable on a wrapper anyway. Fermentation and roast are far more predictive of what you will taste.
+:::reveal Why is calling a bar "Criollo" weaker evidence than it looks? ||| Because the Criollo, Forastero and Trinitario scheme has been superseded: the genetics resolve cacao into ten clusters, and Forastero in particular was a bucket holding most of the species' actual diversity. So Criollo names one cluster rather than a quality tier, fine flavor is not exclusive to it, and the claim is rarely verifiable on a wrapper anyway. Fermentation and roast are far more predictive of what you will taste.
 
 ## Sources
 - Motamayor, J. C., Lachenaud, P., da Silva e Mota, J. W., Loor, R., Kuhn, D. N., Brown, J. S., & Schnell, R. J. (2008). Geographic and genetic population differentiation of the Amazonian chocolate tree (Theobroma cacao L.). *PLoS ONE, 3*(10), e3311. https://doi.org/10.1371/journal.pone.0003311
@@ -521,24 +521,24 @@ ${flightCard(FLIGHT_1, ALT)}
     },
     {
       slug: "choc-fermentation",
-      title: "7 · Fermentation and drying: where the flavour is actually made",
+      title: "7 · Fermentation and drying: where the flavor is actually made",
       section: "Module 2 · The bean and the place",
-      body: `Here is the fact that reorganises how most people think about chocolate: **a raw cacao bean does not taste of chocolate.** It is bitter, astringent and vegetal. Nearly all of what you recognise as chocolate flavour is created after harvest, in fermentation and roasting, and the first of those happens at origin, usually on the farm, often by hand.
+      body: `Here is the fact that reorganises how most people think about chocolate: **a raw cacao bean does not taste of chocolate.** It is bitter, astringent and vegetal. Nearly all of what you recognize as chocolate flavor is created after harvest, in fermentation and roasting, and the first of those happens at origin, usually on the farm, often by hand.
 
 **What happens in a fermentation heap or box.** The beans are removed from the pod surrounded by a sweet white pulp, and piled into boxes, heaps or baskets, typically for several days.
 
 1. **Yeasts** consume the sugars in the pulp, with little oxygen available, producing ethanol.
 2. **Lactic acid bacteria** follow.
 3. **Acetic acid bacteria** convert the ethanol to acetic acid, and this stage generates heat.
-4. **The heat and acid penetrate the bean and kill the embryo.** That is the essential event: it ends the seed's dormancy and releases enzymes that break proteins into the amino acids and peptides which become chocolate flavour when roasted.
+4. **The heat and acid penetrate the bean and kill the embryo.** That is the essential event: it ends the seed's dormancy and releases enzymes that break proteins into the amino acids and peptides which become chocolate flavor when roasted.
 
-**So fermentation does not add chocolate flavour. It creates the PRECURSORS**, and roasting later converts them. Under-ferment and there is nothing for the roast to work with: the bar is astringent, flat and vegetal no matter how skilled the maker. Over-ferment and you get sour, hammy or putrid off-notes.
+**So fermentation does not add chocolate flavor. It creates the PRECURSORS**, and roasting later converts them. Under-ferment and there is nothing for the roast to work with: the bar is astringent, flat and vegetal no matter how skilled the maker. Over-ferment and you get sour, hammy or putrid off-notes.
 
 **Which is why this lesson matters commercially.** The single largest quality lever in chocolate sits with the farmer and the cooperative, days after harvest, using equipment that costs almost nothing. And it is the part of the chain furthest from where the money is. A maker who pays for well fermented beans is paying for the thing that most determines the bar, and a maker who does not cannot fix it downstream.
 
-**Drying.** After fermentation the beans are dried, usually in the sun over days, down to a moisture content low enough to store and ship safely. Too fast and acetic acid stays trapped in the bean, leaving a sour bar. Too slow, or in damp conditions, and mould and off-flavours develop. As in coffee, drying is where a great deal of otherwise good product is lost quietly.
+**Drying.** After fermentation the beans are dried, usually in the sun over days, down to a moisture content low enough to store and ship safely. Too fast and acetic acid stays trapped in the bean, leaving a sour bar. Too slow, or in damp conditions, and mold and off-flavors develop. As in coffee, drying is where a great deal of otherwise good product is lost quietly.
 
-:::reveal Someone says a chocolate maker "creates the flavour" of a bar. Correct that, using the actual sequence. ||| Most of it is created before the maker sees the beans. A raw cacao bean is bitter, astringent and vegetal, and fermentation at origin is what generates the flavour PRECURSORS: yeasts produce ethanol, bacteria convert it to acetic acid, the heat and acid kill the embryo, and enzymes break proteins into amino acids and peptides. Roasting later converts those precursors into chocolate flavour. A maker who buys under-fermented beans cannot repair them downstream, which is why the largest quality lever sits with the farmer.
+:::reveal Someone says a chocolate maker "creates the flavour" of a bar. Correct that, using the actual sequence. ||| Most of it is created before the maker sees the beans. A raw cacao bean is bitter, astringent and vegetal, and fermentation at origin is what generates the flavor PRECURSORS: yeasts produce ethanol, bacteria convert it to acetic acid, the heat and acid kill the embryo, and enzymes break proteins into amino acids and peptides. Roasting later converts those precursors into chocolate flavor. A maker who buys under-fermented beans cannot repair them downstream, which is why the largest quality lever sits with the farmer.
 
 ## Sources
 - Beckett, S. T., Fowler, M. S., & Ziegler, G. R. (Eds.). (2017). *Beckett's industrial chocolate manufacture and use* (5th ed.). Wiley-Blackwell.
@@ -554,10 +554,10 @@ ${flightCard(FLIGHT_1, ALT)}
 | --- | --- |
 | **Madagascar** | Bright citric and red fruit acidity. The origin that most reliably convinces people chocolate has acidity |
 | **Ecuador** | Floral and nutty, particularly the Nacional cluster's jasmine-like character |
-| **Venezuela** | Nutty, mellow, low acidity, often held up as the classic fine flavour origin |
+| **Venezuela** | Nutty, mellow, low acidity, often held up as the classic fine flavor origin |
 | **Peru and Bolivia** | Varied and increasingly prominent, often red fruit with moderate acidity |
 | **Dominican Republic** | Earthy, tobacco, moderate acidity, and a large organic and fair trade supply |
-| **Ghana and Cote d'Ivoire** | The classic straightforward cocoa flavour most people grew up with. Well fermented Ghanaian in particular is a benchmark for the flavour people mean by "chocolatey" |
+| **Ghana and Cote d'Ivoire** | The classic straightforward cocoa flavor most people grew up with. Well fermented Ghanaian in particular is a benchmark for the flavor people mean by "chocolatey" |
 | **Tanzania** | Often bright and fruity, which surprises people expecting a West African profile |
 | **Vietnam** | Fruity and spiced, and one of the more recent origins to be taken seriously |
 | **Papua New Guinea** | Smoky, from beans commonly dried over wood fires, which is a PROCESS marker rather than a place one |
@@ -584,7 +584,7 @@ ${flightCard(FLIGHT_2, ALT)}
         {
           prompt: "What does fermentation actually produce, and what happens if a maker buys under-fermented beans?",
           answer:
-            "It produces the flavour PRECURSORS rather than chocolate flavour itself: enzymes released when the embryo dies break proteins into amino acids and peptides, which roasting later converts. Under-fermented beans give the roast nothing to work with, so the bar stays astringent, flat and vegetal, and no downstream skill can repair it.",
+            "It produces the flavor PRECURSORS rather than chocolate flavor itself: enzymes released when the embryo dies break proteins into amino acids and peptides, which roasting later converts. Under-fermented beans give the roast nothing to work with, so the bar stays astringent, flat and vegetal, and no downstream skill can repair it.",
         },
       ],
       body: `Everything from here is the maker's decision, and learning to hear those decisions separately from the bean is this course's version of telling grape from oak.
@@ -605,7 +605,7 @@ ${flightCard(FLIGHT_2, ALT)}
 
 **Long conching makes chocolate smoother, rounder and quieter.** That is the whole trade. A heavily conched industrial bar is remarkably consistent and comparatively characterless, and a lightly conched craft bar keeps more acidity and origin character and sometimes more roughness. Flight 3 makes you taste both and, importantly, allows you to prefer the industrial one.
 
-**Alkalisation, or Dutching.** Treating cocoa with an alkali darkens the colour and reduces acidity and bitterness, producing the dark, mellow cocoa powder used in a great deal of baking. Worth knowing for three reasons: it changes flavour substantially, it changes colour dramatically, and it reduces flavanol content, which is a fact about the process rather than a claim about health.
+**Alkalisation, or Dutching.** Treating cocoa with an alkali darkens the color and reduces acidity and bitterness, producing the dark, mellow cocoa powder used in a great deal of baking. Worth knowing for three reasons: it changes flavor substantially, it changes color dramatically, and it reduces flavanol content, which is a fact about the process rather than a claim about health.
 
 ${flightCard(FLIGHT_3, ALT)}
 
@@ -628,7 +628,7 @@ ${flightCard(FLIGHT_3, ALT)}
 - A hard, clean **snap**.
 - A glossy **surface**.
 - A melting point just below body temperature, so it holds its shape in your hand and melts on your tongue.
-- **Contraction** on setting, which is how a moulded bar releases from its mould.
+- **Contraction** on setting, which is how a molded bar releases from its mold.
 
 **Tempering is the process of getting there.** Melt the chocolate fully to erase all existing crystals, cool it to encourage crystal formation, briefly warm it again to melt off the unstable low-numbered forms, and hold it there. What survives is a seed of Form V crystals, and the rest of the fat follows their structure as it sets. Skip it and you get a mix of unstable forms: dull, soft, bendy, waxy in the mouth, and quick to bloom.
 
@@ -636,7 +636,7 @@ ${flightCard(FLIGHT_3, ALT)}
 
 | | **Fat bloom** | **Sugar bloom** |
 | --- | --- | --- |
-| Looks like | Greyish white, streaky or blotchy, often soft-edged | White, gritty, crystalline, sometimes sparkly |
+| Looks like | Grayish white, streaky or blotchy, often soft-edged | White, gritty, crystalline, sometimes sparkly |
 | Caused by | Temperature swings or poor temper; fat migrates and recrystallises into the more stable Form VI | Moisture on the surface dissolving sugar, which recrystallises when it dries |
 | Where from | A warm car, a windowsill, repeated warming and cooling, or untempered chocolate | A fridge, condensation, a humid room |
 | Fixable | Not really, though it can be re-melted and re-tempered | No |
@@ -644,11 +644,11 @@ ${flightCard(FLIGHT_3, ALT)}
 
 **Neither is spoilage, and neither is dangerous.** Both ruin the texture, and both are usually a storage failure rather than a manufacturing one, which means most bloomed chocolate was ruined after it was sold.
 
-**Which gives you the storage rules.** Cool, stable, dry and dark, ideally somewhere in the mid-teens Celsius, wrapped, away from strong smells, since cocoa butter readily absorbs odours. **Not the fridge**, which is humid and causes sugar bloom, and not a warm room that cycles. If you must refrigerate in a hot climate, seal the bar in an airtight container and let it return to room temperature before opening, so condensation forms on the container rather than on the chocolate.
+**Which gives you the storage rules.** Cool, stable, dry and dark, ideally somewhere in the mid-teens Celsius, wrapped, away from strong smells, since cocoa butter readily absorbs odors. **Not the fridge**, which is humid and causes sugar bloom, and not a warm room that cycles. If you must refrigerate in a hot climate, seal the bar in an airtight container and let it return to room temperature before opening, so condensation forms on the container rather than on the chocolate.
 
 ${flightCard(FLIGHT_4, ALT)}
 
-:::reveal A bar has a greyish, streaky film. Your friend says it has gone off. Give the accurate answer, including which kind of bloom and what caused it. ||| It has not gone off and it is not dangerous. Greyish, streaky and soft-edged is FAT bloom: temperature swings or poor temper let the cocoa butter migrate and recrystallise into a more stable form, which wrecks the gloss and the texture while leaving the chocolate safe to eat. Gritty, crystalline white would be SUGAR bloom instead, from moisture dissolving surface sugar which then recrystallises, typically from a fridge or a humid room. Both are usually storage failures after purchase rather than manufacturing faults.
+:::reveal A bar has a greyish, streaky film. Your friend says it has gone off. Give the accurate answer, including which kind of bloom and what caused it. ||| It has not gone off and it is not dangerous. Grayish, streaky and soft-edged is FAT bloom: temperature swings or poor temper let the cocoa butter migrate and recrystallise into a more stable form, which wrecks the gloss and the texture while leaving the chocolate safe to eat. Gritty, crystalline white would be SUGAR bloom instead, from moisture dissolving surface sugar which then recrystallises, typically from a fridge or a humid room. Both are usually storage failures after purchase rather than manufacturing faults.
 
 ## Sources
 - Wille, R. L., & Lutton, E. S. (1966). Polymorphism of cocoa butter. *Journal of the American Oil Chemists' Society, 43*(8), 491-496. https://doi.org/10.1007/BF02641273
@@ -679,8 +679,8 @@ ${flightCard(FLIGHT_4, ALT)}
           {
             prompt: "What does fermentation contribute to chocolate flavour?",
             options: [
-              "The flavour precursors, which roasting later converts",
-              "The finished chocolate flavour, which roasting merely preserves",
+              "The flavor precursors, which roasting later converts",
+              "The finished chocolate flavor, which roasting merely preserves",
               "The sweetness, by converting starches into simple sugars",
               "The cocoa butter, which is generated by the acetic bacteria",
             ],
@@ -712,7 +712,7 @@ ${flightCard(FLIGHT_4, ALT)}
             ],
             correctIndex: 0,
             explanation:
-              "Nearly everything recognisable as chocolate flavour is created after harvest, in fermentation and then roasting. That fact reorganises how most people think about the whole product.",
+              "Nearly everything recognisable as chocolate flavor is created after harvest, in fermentation and then roasting. That fact reorganises how most people think about the whole product.",
             sourceLessonSlug: "choc-fermentation",
           },
           {
@@ -747,7 +747,7 @@ ${flightCard(FLIGHT_4, ALT)}
               "Fat bloom appears only on milk chocolate, sugar bloom only on dark",
               "Fat bloom smells rancid, sugar bloom has no aroma at all",
               "Fat bloom is safe to eat, sugar bloom indicates spoilage",
-              "Fat bloom is greyish and streaky, sugar bloom is gritty and crystalline",
+              "Fat bloom is grayish and streaky, sugar bloom is gritty and crystalline",
             ],
             correctIndex: 3,
             explanation:
@@ -764,7 +764,7 @@ ${flightCard(FLIGHT_4, ALT)}
             ],
             correctIndex: 0,
             explanation:
-              "Cool, stable, dry and dark is the target, and cocoa butter also absorbs odours readily. If a hot climate forces refrigeration, seal the bar airtight and let it warm before opening.",
+              "Cool, stable, dry and dark is the target, and cocoa butter also absorbs odors readily. If a hot climate forces refrigeration, seal the bar airtight and let it warm before opening.",
             sourceLessonSlug: "choc-tempering-and-bloom",
           },
           {
@@ -783,8 +783,8 @@ ${flightCard(FLIGHT_4, ALT)}
           {
             prompt: "What does alkalisation, or Dutching, do?",
             options: [
-              "Darkens the colour, reduces acidity and bitterness, and lowers flavanol content",
-              "Increases acidity in order to brighten the flavour of bulk commodity cocoa",
+              "Darkens the color, reduces acidity and bitterness, and lowers flavanol content",
+              "Increases acidity in order to brighten the flavor of bulk commodity cocoa",
               "Replaces the cocoa butter entirely with a cheaper vegetable fat substitute",
               "Sterilises the cocoa so that it can be stored safely without refrigeration",
             ],
@@ -809,7 +809,7 @@ ${flightCard(FLIGHT_4, ALT)}
           {
             prompt: "Which origin most reliably convinces people that chocolate has real acidity?",
             options: [
-              "Ghana, the benchmark for classic cocoa flavour",
+              "Ghana, the benchmark for classic cocoa flavor",
               "Venezuela, known for nutty and mellow character",
               "Madagascar, with bright citric and red fruit acidity",
               "Papua New Guinea, with its smoky character",
@@ -832,12 +832,12 @@ ${flightCard(FLIGHT_4, ALT)}
         {
           prompt: "Name the four properties Form V crystallisation gives a chocolate bar.",
           answer:
-            "A hard clean snap, a glossy surface, a melting point just below body temperature so it holds shape in the hand and melts on the tongue, and contraction on setting so a moulded bar releases from its mould.",
+            "A hard clean snap, a glossy surface, a melting point just below body temperature so it holds shape in the hand and melts on the tongue, and contraction on setting so a molded bar releases from its mold.",
         },
       ],
       body: `Chocolate has standards of identity, which is more legal structure than coffee has and far less than wine. They set minimum compositions, and they are the only part of a wrapper that is enforceable.
 
-**United States**, under 21 CFR Part 163. The regulations set minimums for each named product: sweet chocolate must contain at least a stated minimum of chocolate liquor, milk chocolate must contain both a minimum of chocolate liquor and a minimum of milk solids, and white chocolate is defined by minimum cocoa butter and milk solids with a maximum sugar content. The important consequence for a shopper is that "milk chocolate" and "white chocolate" are legally defined terms rather than descriptions, and a product failing the minimums must be sold under a different name, which is why some products are labelled "chocolatey" or "made with chocolate."
+**United States**, under 21 CFR Part 163. The regulations set minimums for each named product: sweet chocolate must contain at least a stated minimum of chocolate liquor, milk chocolate must contain both a minimum of chocolate liquor and a minimum of milk solids, and white chocolate is defined by minimum cocoa butter and milk solids with a maximum sugar content. The important consequence for a shopper is that "milk chocolate" and "white chocolate" are legally defined terms rather than descriptions, and a product failing the minimums must be sold under a different name, which is why some products are labeled "chocolatey" or "made with chocolate."
 
 **European Union**, under Directive 2000/36/EC. The thresholds are higher: chocolate must contain a stated minimum of total dry cocoa solids, with separate minimums for cocoa butter and for fat-free cocoa solids, and milk chocolate has its own lower total. The directive also permits a small proportion of specified vegetable fats other than cocoa butter, which was a genuinely contested political fight when it was agreed and which some producing countries opposed.
 
@@ -847,10 +847,10 @@ ${flightCard(FLIGHT_4, ALT)}
 
 - **"Belgian" and "Swiss."** Neither guarantees quality. Both are strong national reputations attached to industries, and both cover excellent and mediocre products.
 - **"Artisan," "gourmet," "luxury," "premium."** Nothing.
-- **"Raw."** Not meaningfully defined, and difficult to reconcile with fermentation, which generates real heat, and with the roasting that develops flavour.
+- **"Raw."** Not meaningfully defined, and difficult to reconcile with fermentation, which generates real heat, and with the roasting that develops flavor.
 - **"Single origin."** Usually accurate and only as specific as it says. A country is weak, a region better, a named cooperative or estate best.
 - **"Bean to bar."** Means the maker bought beans and did everything themselves rather than melting someone else's couverture. Not a certification, generally used honestly, and not by itself a quality claim.
-- **"Couverture."** This one is real: it denotes chocolate with a high cocoa butter content, formulated for fluidity so it can coat and mould well. It describes a technical property, not a quality tier.
+- **"Couverture."** This one is real: it denotes chocolate with a high cocoa butter content, formulated for fluidity so it can coat and mold well. It describes a technical property, not a quality tier.
 
 **How to read a wrapper, in order.** Ingredients first, in their listed order, since they are the compositional truth. Then the percentage, read as a ratio rather than a score. Then origin specificity. Then any traceability the maker chooses to publish. Then, last and least, the adjectives on the front.
 
@@ -866,11 +866,11 @@ ${flightCard(FLIGHT_4, ALT)}
       section: "Module 4 · Labels, ethics, choosing",
       body: `Episode 3 covered how cacao moved from Mesoamerica to West Africa. This lesson covers what that concentration means now, because a course that teaches you to appreciate chocolate and says nothing about how it is produced is teaching you to look away.
 
-**The labour problem, with a number and a source.** A study conducted by NORC at the University of Chicago, commissioned to measure child labour in cocoa growing areas of Cote d'Ivoire and Ghana, estimated approximately **1.56 million children in child labour in cocoa production** in those two countries in the 2018/19 season, with a large majority engaged in hazardous work as defined by the survey (NORC, 2020). The figure had not fallen over the period the report examined, despite two decades of industry commitments dating to the Harkin-Engel Protocol of 2001.
+**The labor problem, with a number and a source.** A study conducted by NORC at the University of Chicago, commissioned to measure child labor in cocoa growing areas of Cote d'Ivoire and Ghana, estimated approximately **1.56 million children in child labor in cocoa production** in those two countries in the 2018/19 season, with a large majority engaged in hazardous work as defined by the survey (NORC, 2020). The figure had not fallen over the period the report examined, despite two decades of industry commitments dating to the Harkin-Engel Protocol of 2001.
 
 Two things must be said alongside that number, because both are true and neither cancels the other:
 
-1. **Most of this is family farm labour under extreme poverty**, not the trafficking imagery often used to describe it, though trafficking exists too. The distinction matters because the remedies differ: poverty-driven family labour responds to income, and trafficking requires enforcement.
+1. **Most of this is family farm labor under extreme poverty**, not the trafficking imagery often used to describe it, though trafficking exists too. The distinction matters because the remedies differ: poverty-driven family labor responds to income, and trafficking requires enforcement.
 2. **Income is the root variable.** Cocoa farming incomes in the two largest producing countries have been widely documented as falling below living income benchmarks, and a farmer who cannot pay an adult worker uses their children.
 
 **The living income differential.** In 2019, Ghana and Cote d'Ivoire, who together grow most of the world's cocoa, jointly imposed a fixed premium per tonne on cocoa sales, explicitly to raise farmer income rather than leaving it to the world price. It is one of the few producer-side interventions of its kind in any commodity, and its effectiveness has been contested since, partly because buyers can reduce other differentials to offset it. It is worth knowing because it is producing countries acting collectively, which is exactly what Episode 3's economics implied was missing.
@@ -881,7 +881,7 @@ Two things must be said alongside that number, because both are true and neither
 
 **What this course will not do.** It will not tell you to stop eating chocolate, and it will not pretend that buying a twelve dollar bar fixes a structural problem in a commodity chain. It will tell you that the information exists, that some makers publish it, and that asking is free.
 
-:::reveal Why does the distinction between family farm labour under poverty and trafficking matter practically, rather than being a way to soften the number? ||| Because the two require different remedies. Poverty-driven family labour responds to farmer income: if a household can afford to hire adult workers and keep children in school, the behaviour changes, which is why the living income differential and published prices paid are the relevant levers. Trafficking requires enforcement and monitoring instead. Treating all of it as one phenomenon leads to interventions aimed at the wrong mechanism, and both forms exist.
+:::reveal Why does the distinction between family farm labour under poverty and trafficking matter practically, rather than being a way to soften the number? ||| Because the two require different remedies. Poverty-driven family labor responds to farmer income: if a household can afford to hire adult workers and keep children in school, the behavior changes, which is why the living income differential and published prices paid are the relevant levers. Trafficking requires enforcement and monitoring instead. Treating all of it as one phenomenon leads to interventions aimed at the wrong mechanism, and both forms exist.
 
 ## Sources
 - NORC at the University of Chicago. (2020). *Assessing progress in reducing child labor in cocoa production in cocoa growing areas of Côte d'Ivoire and Ghana*. https://www.norc.org
@@ -960,7 +960,7 @@ The habit being built is separating the enforceable from the decorative, which i
               "the cocoa butter bar, less cocoa mass",
             ],
             explanation:
-              "Cocoa mass carries bitterness, astringency and flavour. Reaching the same percentage with fat produces a softer, richer, less intense bar.",
+              "Cocoa mass carries bitterness, astringency and flavor. Reaching the same percentage with fat produces a softer, richer, less intense bar.",
           },
           {
             prompt: "Greyish, streaky film on a bar left in a warm car. Which bloom, and is it dangerous?",
@@ -1043,7 +1043,7 @@ The habit being built is separating the enforceable from the decorative, which i
       title: "16 · Capstone: buy, taste, and defend four bars",
       section: "Module 4 · Labels, ethics, choosing",
       lessonType: "assignment",
-      body: `One assignment, four bars, a written defence. Nobody can complete it by reading, and the dairy-free path completes it fully.
+      body: `One assignment, four bars, a written defense. Nobody can complete it by reading, and the dairy-free path completes it fully.
 
 **The brief.** You are assembling a tasting for four people, with a total budget of forty US dollars for four bars, chosen so the set teaches something rather than simply being four things you like.
 
@@ -1051,7 +1051,7 @@ The habit being built is separating the enforceable from the decorative, which i
 
 **1. Four bars, with reasoning.** For each: what you bought, what it cost, and WHY. State what variable your set holds constant and what it varies (percentage, origin, maker, process). A set that varies everything at once teaches nothing, and saying which variable you controlled is most of the grade.
 
-**2. A full tasting note on each**, on the grid from Lesson 3: appearance, snap, aroma, melt, then bitterness, astringency, acidity, sweetness, then flavour, then finish. Every score defended by a sensation, not by the wrapper.
+**2. A full tasting note on each**, on the grid from Lesson 3: appearance, snap, aroma, melt, then bitterness, astringency, acidity, sweetness, then flavor, then finish. Every score defended by a sensation, not by the wrapper.
 
 **3. An ingredient-list analysis.** For each bar, what the list tells you about the maker's decisions: cocoa mass versus added cocoa butter, lecithin, vanilla, and where sugar falls in the order. Then say which bar the list predicted correctly and which one surprised you.
 
@@ -1059,7 +1059,7 @@ The habit being built is separating the enforceable from the decorative, which i
 
 **5. The sourcing question, honestly.** For one bar, write what you can actually establish about where the beans came from and what was paid. "The maker publishes nothing and I could not find out" is a legitimate and useful finding that scores as well as a fully traceable bar.
 
-**6. One pairing, tested.** Pick a mechanism from Lesson 14, predict what will happen, run it, and report what actually moved. A pairing that failed, analysed honestly, scores as well as one that worked.
+**6. One pairing, tested.** Pick a mechanism from Lesson 14, predict what will happen, run it, and report what actually moved. A pairing that failed, analyzed honestly, scores as well as one that worked.
 
 **The dairy-free, lower-sugar version.** Use four dark bars at 70 percent and above, which are almost always dairy free, and hold the percentage constant while varying origin or maker. The blind call drops the milk-versus-dark step and keeps the other three. Graded identically.
 
@@ -1073,7 +1073,7 @@ The habit being built is separating the enforceable from the decorative, which i
 
 **Let it melt, never chew.** Chocolate arrives solid, and melt is how aroma reaches the retronasal route. Cocoa butter is nearly solid at room temperature and nearly melted at body temperature, which is the entire trick.
 
-**The grid runs appearance, snap, aroma, melt, flavour and structure, finish**, least suggestible evidence first. Texture is data. Finish is longer than almost anything you will taste.
+**The grid runs appearance, snap, aroma, melt, flavor and structure, finish**, least suggestible evidence first. Texture is data. Finish is longer than almost anything you will taste.
 
 **Bitterness is a taste, astringency is a texture**, and astringency often means under-fermented beans.
 
@@ -1085,15 +1085,15 @@ The habit being built is separating the enforceable from the decorative, which i
 
 **Conching is the industrial-versus-craft tell.** Long conching means smoother, rounder, quieter. Preferring it is allowed.
 
-**Tempering means Form V**, which alone gives snap, gloss, the right melting point and contraction. Fat bloom is greyish and streaky from temperature swings, sugar bloom is gritty from moisture, neither is dangerous, both are usually storage failures after purchase.
+**Tempering means Form V**, which alone gives snap, gloss, the right melting point and contraction. Fat bloom is grayish and streaky from temperature swings, sugar bloom is gritty from moisture, neither is dangerous, both are usually storage failures after purchase.
 
 **Standards of identity set minimum compositions** in the US and EU and nothing more. Belgian, Swiss, artisan, premium and raw guarantee nothing. Couverture and bean to bar mean something specific.
 
-**The ethics are not optional context.** Roughly 1.56 million children were estimated in child labour in cocoa in Cote d'Ivoire and Ghana in 2018/19, income is the root variable, and published prices paid beat logos.
+**The ethics are not optional context.** Roughly 1.56 million children were estimated in child labor in cocoa in Cote d'Ivoire and Ghana in 2018/19, income is the root variable, and published prices paid beat logos.
 
 **Pairing:** bitter adds to bitter, sweet must not be outgunned, salt suppresses bitterness, and chocolate goes LAST in any mixed tasting because fat coats the palate.
 
-:::reveal Without looking back, explain why an 85 percent bar is not necessarily more intense than a 70 percent one, and name the one thing you would read instead. ||| Because the percentage counts cocoa mass and cocoa butter together, and only cocoa mass carries bitterness, astringency and flavour. A maker can reach 85 percent with a large share of added cocoa butter, producing a softer, richer, milder bar than a 70 percent bar built mostly from mass. The thing to read instead is the ingredient list in its listed order, since ingredients are declared by descending weight and will show you where the cocoa butter sits.
+:::reveal Without looking back, explain why an 85 percent bar is not necessarily more intense than a 70 percent one, and name the one thing you would read instead. ||| Because the percentage counts cocoa mass and cocoa butter together, and only cocoa mass carries bitterness, astringency and flavor. A maker can reach 85 percent with a large share of added cocoa butter, producing a softer, richer, milder bar than a 70 percent bar built mostly from mass. The thing to read instead is the ingredient list in its listed order, since ingredients are declared by descending weight and will show you where the cocoa butter sits.
 
 ## Sources
 
@@ -1109,7 +1109,7 @@ The habit being built is separating the enforceable from the decorative, which i
 - Motamayor, J. C., Lachenaud, P., da Silva e Mota, J. W., Loor, R., Kuhn, D. N., Brown, J. S., & Schnell, R. J. (2008). Geographic and genetic population differentiation of the Amazonian chocolate tree (Theobroma cacao L.). *PLoS ONE, 3*(10), e3311. https://doi.org/10.1371/journal.pone.0003311
 - Wille, R. L., & Lutton, E. S. (1966). Polymorphism of cocoa butter. *Journal of the American Oil Chemists' Society, 43*(8), 491-496. https://doi.org/10.1007/BF02641273
 
-**Labour and trade**
+**Labor and trade**
 - Fairtrade International. (n.d.). *Cocoa standards and minimum prices*. https://www.fairtrade.net
 - NORC at the University of Chicago. (2020). *Assessing progress in reducing child labor in cocoa production in cocoa growing areas of Côte d'Ivoire and Ghana*. https://www.norc.org`,
     },

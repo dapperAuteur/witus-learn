@@ -202,7 +202,7 @@ They were the **Iroquois Nationals** until June 2022, when the organization drop
 
 ### Sovereignty is the whole story
 
-**2010.** Travelling to the world championship in Manchester on **Haudenosaunee passports**, documents Haudenosaunee people have used internationally since the 1970s, the team was refused visas by the United Kingdom. The U.S. Secretary of State issued a one-time waiver guaranteeing the players could re-enter the United States; the U.K. still would not admit them. Players born inside U.S. borders were offered U.S. passports and **refused them**, because carrying another nation's document was, to them, a denial of who they are. The team forfeited its games and did not play (CBC News, 2010).
+**2010.** Traveling to the world championship in Manchester on **Haudenosaunee passports**, documents Haudenosaunee people have used internationally since the 1970s, the team was refused visas by the United Kingdom. The U.S. Secretary of State issued a one-time waiver guaranteeing the players could re-enter the United States; the U.K. still would not admit them. Players born inside U.S. borders were offered U.S. passports and **refused them**, because carrying another nation's document was, to them, a denial of who they are. The team forfeited its games and did not play (CBC News, 2010).
 
 Sit with the cost of that. A world championship, given up, over a document.
 
@@ -421,7 +421,7 @@ Because you cannot understand the modern sport's politics, Olympic eligibility, 
             options: [
               "They failed to qualify through the regional playoff bracket",
               "The U.K. refused visas on their Haudenosaunee passports",
-              "The Manchester tournament was cancelled that year for funding",
+              "The Manchester tournament was canceled that year for funding",
               "They were suspended by World Lacrosse for a rules violation",
             ],
             correctIndex: 1,
@@ -2314,7 +2314,7 @@ Every barrier in this lesson is also an opening. A sport with an equipment gate 
             options: [
               "Beginner, Intermediate, Advanced, and Expert grade tiers",
               "Bronze, Silver, Gold, and Platinum, formerly Levels 1-3",
-              "A, B, and C grade coaching licences, as in soccer",
+              "A, B, and C grade coaching licenses, as in soccer",
               "There is only one single level for every active coach",
             ],
             correctIndex: 1,

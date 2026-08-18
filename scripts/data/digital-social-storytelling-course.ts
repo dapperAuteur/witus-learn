@@ -23,7 +23,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const DIGITAL_SOCIAL_STORYTELLING_COURSE: AuthoredCourse = {
   title: "Digital and social storytelling",
   description:
-    "Every other form in this series gets an audience that has already agreed to pay attention. This one does not: attention is re-earned every few seconds, by someone holding a phone, sound off, mid-scroll, who did not choose your story and can leave at no cost. This course teaches what that constraint does to structure rather than what any platform currently rewards. The cold open and why the first three seconds are a structural problem and not a trick, the loop, designing for sound-off, the algorithmic middle that stands between a maker and an audience, serialization and the promise a series makes, comments as part of the text rather than a reaction to it, the ethics of a form built for spread including the corrections problem, and what survives a platform's death. Built on the six decisions from How Stories Work, with platform specifics labelled and dated because they are the part that rots.",
+    "Every other form in this series gets an audience that has already agreed to pay attention. This one does not: attention is re-earned every few seconds, by someone holding a phone, sound off, mid-scroll, who did not choose your story and can leave at no cost. This course teaches what that constraint does to structure rather than what any platform currently rewards. The cold open and why the first three seconds are a structural problem and not a trick, the loop, designing for sound-off, the algorithmic middle that stands between a maker and an audience, serialization and the promise a series makes, comments as part of the text rather than a reaction to it, the ethics of a form built for spread including the corrections problem, and what survives a platform's death. Built on the six decisions from How Stories Work, with platform specifics labeled and dated because they are the part that rots.",
   lessons: [
     {
       slug: "ds-the-constraint",
@@ -89,7 +89,7 @@ The commonest failure: **the setup that explains the setup.** "So today I want t
 
 - **The clean loop:** the last frame matches the first, so a rewatch is seamless. Novelty, and it works once per audience.
 - **The productive loop, which is the real one:** the ending gives the viewer information that changes what the opening meant, **so the rewatch is a different experience.** This is withholding used across the join, and it is the most sophisticated move the form has.
-- **The false loop:** withholding the payoff so a viewer has to rewatch to catch it. **It buys a second view and spends trust**, and audiences have learned to recognise it. Use once, if at all.
+- **The false loop:** withholding the payoff so a viewer has to rewatch to catch it. **It buys a second view and spends trust**, and audiences have learned to recognize it. Use once, if at all.
 
 **3. Sound-off design.** Assume muted. Not because sound does not matter, but because **the first decision to keep watching is made before anyone turns it on.**
 
@@ -100,7 +100,7 @@ The commonest failure: **the setup that explains the setup.** "So today I want t
 
 **And the honest caveat about all three.** These are responses to constraints, and constraints differ by container and change over time. **When the constraint changes, the technique should change with it**, which is why this lesson taught the constraint first and the technique second, and why you should be suspicious of anyone teaching the reverse.
 
-:::reveal What is a productive loop, and how does it differ from a false one? ||| A productive loop is an ending that gives the viewer information which changes what the opening meant, so a rewatch is a genuinely different experience: it is withholding used across the join between end and beginning, and it is the most sophisticated move the form has. A false loop withholds the payoff so the viewer must rewatch to catch it at all, which buys a second view at the cost of trust, and audiences have learned to recognise the manoeuvre. The first rewards the rewatch; the second requires it.
+:::reveal What is a productive loop, and how does it differ from a false one? ||| A productive loop is an ending that gives the viewer information which changes what the opening meant, so a rewatch is a genuinely different experience: it is withholding used across the join between end and beginning, and it is the most sophisticated move the form has. A false loop withholds the payoff so the viewer must rewatch to catch it at all, which buys a second view at the cost of trust, and audiences have learned to recognize the manoeuvre. The first rewards the rewatch; the second requires it.
 
 ## Sources
 - Bordwell, D., & Thompson, K. (2020). *Film art: An introduction* (12th ed.). McGraw-Hill.
@@ -116,7 +116,7 @@ The commonest failure: **the setup that explains the setup.** "So today I want t
 
 1. **You do not choose your audience; a system selects it.** So you cannot assume shared context, and a piece that requires knowing who you are will fail with most of the people shown it.
 2. **The selection optimises for something, and it is not your goal.** Platforms optimise for engagement of some kind. **Your goals and that objective overlap partially, never completely**, and the gap is where the pressure lives.
-3. **The pressure is real and it is on the WORK.** The form that gets distributed gets imitated, which is how an entire medium comes to sound the same. Naming it is the defence.
+3. **The pressure is real and it is on the WORK.** The form that gets distributed gets imitated, which is how an entire medium comes to sound the same. Naming it is the defense.
 4. **It changes without notice, and nobody outside knows why.** Which is exactly why a course built on current rules would be worthless to you.
 
 **What follows for the work, and this is the practical content:**
@@ -266,7 +266,7 @@ The commonest failure: **the setup that explains the setup.** "So today I want t
             options: [
               "Post consistently enough that the system learns your account",
               "Build something that survives the middle: an audience and body of work you control",
-              "Specialise in whichever format the platforms currently favour",
+              "Specialize in whichever format the platforms currently favor",
               "Match your output to the length the container is optimised for",
             ],
             correctIndex: 1,
@@ -382,7 +382,7 @@ The commonest failure: **the setup that explains the setup.** "So today I want t
 
 **The test this course offers**, and it is one you can actually run in the seconds this form gives you: **can the person in this piece answer it?** Someone with a comparable audience effectively can. A stranger, a private individual, a person in distress, cannot. **The bigger the asymmetry, the higher the bar** for publishing at all.
 
-**And the thing this form makes easy that is worth resisting.** The pieces that travel furthest are frequently the ones that make an audience feel certain about someone they have never met. **You will notice, if you watch your own metrics, that your most-shared work is your most confident work.** That is a pressure, it is measurable, and being able to name it is most of the defence.
+**And the thing this form makes easy that is worth resisting.** The pieces that travel furthest are frequently the ones that make an audience feel certain about someone they have never met. **You will notice, if you watch your own metrics, that your most-shared work is your most confident work.** That is a pressure, it is measurable, and being able to name it is most of the defense.
 
 :::reveal What is the corrections asymmetry in this form, and what practice does it require? ||| A correction never travels as far as the claim: the original reached a hundred thousand people selected by a recommendation system, while the correction reaches only the fraction who follow you, so the error stays in circulation unattached to it indefinitely. The practice is front-loaded: check before publishing to a higher standard than the form's norms, and then correct in the ORIGINAL where the platform allows it, by editing the caption or replacing the file, because that is the only move that reaches anyone arriving later. Post the separate correction as well, and never quietly delete.
 
@@ -396,7 +396,7 @@ The commonest failure: **the setup that explains the setup.** "So today I want t
       section: "Module 2 · Structure and audience",
       body: `**Platforms end.** They shut down, change their terms, delete archives, lose acquisitions, or simply stop showing your work to anyone. **A body of work that exists only inside one is on loan**, and this lesson is about what you own.
 
-**What you do not own, however it feels:** your account, your followers, your archive as hosted, your reach, your comment history. **All of it is a licence, revocable, and the terms can change without your agreement.** This is not cynicism; it is what the terms of service say.
+**What you do not own, however it feels:** your account, your followers, your archive as hosted, your reach, your comment history. **All of it is a license, revocable, and the terms can change without your agreement.** This is not cynicism; it is what the terms of service say.
 
 **What you do own, and it is the whole list:**
 
@@ -419,7 +419,7 @@ The commonest failure: **the setup that explains the setup.** "So today I want t
 
 **And the closing note this whole track has been building toward.** Attention here is rented, from the platform and from the viewer, seconds at a time. **The work does not have to be.** The constraint shapes the form; it does not have to shape the ambition.
 
-:::reveal List what a maker actually owns, and the strategic rule that follows. ||| The files, kept as full-quality masters off the platform and backed up; a way to reach the audience that you control, most durably an email list or your own site; the craft, which transfers between platforms; and the relationships with people who will look for you. Everything else, including the account, the followers, the hosted archive and the reach, is a revocable licence whose terms can change without your agreement. The rule: treat every platform as rented distribution and never as your archive, and make work that means something outside its container.
+:::reveal List what a maker actually owns, and the strategic rule that follows. ||| The files, kept as full-quality masters off the platform and backed up; a way to reach the audience that you control, most durably an email list or your own site; the craft, which transfers between platforms; and the relationships with people who will look for you. Everything else, including the account, the followers, the hosted archive and the reach, is a revocable license whose terms can change without your agreement. The rule: treat every platform as rented distribution and never as your archive, and make work that means something outside its container.
 
 ## Sources
 - Jenkins, H., Ford, S., & Green, J. (2013). *Spreadable media: Creating value and meaning in a networked culture*. New York University Press.
@@ -547,7 +547,7 @@ The commonest failure: **the setup that explains the setup.** "So today I want t
             ],
             correctIndex: 0,
             explanation:
-              "Everything else on that list is a revocable licence whose terms can change without your agreement. Keeping masters is the most-skipped step in the medium.",
+              "Everything else on that list is a revocable license whose terms can change without your agreement. Keeping masters is the most-skipped step in the medium.",
             sourceLessonSlug: "ds-what-survives",
           },
           {
@@ -579,7 +579,7 @@ The commonest failure: **the setup that explains the setup.** "So today I want t
 
 **1. Three finished pieces**, each under two minutes.
 - **Piece A: a cold open.** Cut the first five seconds after you finish and submit the cut version. Say in one line what was lost, if anything.
-- **Piece B: a productive loop.** The ending must change what the opening meant. **Say in one line what a rewatch reveals**, and be honest if it does not work: a failed productive loop analysed is worth more than a clean loop that was easy.
+- **Piece B: a productive loop.** The ending must change what the opening meant. **Say in one line what a rewatch reveals**, and be honest if it does not work: a failed productive loop analyzed is worth more than a clean loop that was easy.
 - **Piece C: your choice of technique**, with the constraint it is answering named explicitly.
 
 **All three must work with the sound off**, with correct captions you wrote rather than accepted.

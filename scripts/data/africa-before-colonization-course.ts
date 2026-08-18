@@ -610,7 +610,7 @@ And the pyramids: the royal cemeteries of Kush, at El-Kurru, Nuri, and Meroë, h
             ],
             correctIndex: 0,
             explanation:
-              "The Kephalaia shows how third-century outsiders ranked Aksum (alongside Rome and Persia). The course cites it for what it is: perception, precisely labelled.",
+              "The Kephalaia shows how third-century outsiders ranked Aksum (alongside Rome and Persia). The course cites it for what it is: perception, precisely labeled.",
             sourceLessonSlug: "africa-aksum",
           },
         ],
@@ -830,7 +830,7 @@ One deliberate correction before the quiz: these three states were succession IN
               "A Moroccan force that crossed the Sahara and won at Tondibi",
               "A Portuguese naval invasion sailing up the Niger river",
               "The Almoravid conquest of the whole middle Niger valley",
-              "A long succession war with the neighbouring Mali empire",
+              "A long succession war with the neighboring Mali empire",
             ],
             correctIndex: 0,
             explanation:
@@ -2206,7 +2206,7 @@ And the correction was also work, and it is worth naming who did it. Decolonizat
             options: [
               "UNESCO's General History of Africa; Fauvelle; Thornton",
               "Hegel, Trevor-Roper, Seligman, and also Frobenius",
-              "Only nineteenth-century European travellers' diaries",
+              "Only nineteenth-century European travelers' diaries",
               "Social media threads, curated for engagement only",
             ],
             correctIndex: 0,

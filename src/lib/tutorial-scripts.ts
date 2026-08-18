@@ -134,7 +134,7 @@ export const TUTORIAL_SCRIPTS: TutorialScript[] = [
   placeholder("record-audio-in-app", "Recording audio and video in the app"),
   placeholder("recording-scripts-teleprompter", "Recording with the teleprompter"),
   placeholder("set-pricing", "Setting a price"),
-  placeholder("categories", "Organising the catalog with categories"),
+  placeholder("categories", "Organizing the catalog with categories"),
   placeholder("publish-visibility-holds", "Publishing, visibility, and holds"),
   placeholder("quick-recall", "Quick recall"),
   placeholder("ai-tools-embeddings-audit", "The AI instructor tools"),

@@ -52,7 +52,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const THE_MIDDLE_LAYER_COURSE: AuthoredCourse = {
   title: "The Middle Layer: States, Provinces, and Regions",
   description:
-    "The course about the level of government between the nation and the locality: the US state, the German Land, the Canadian province, the Spanish autonomous community, and the devolved nations of the United Kingdom. It is course 4 of the path whose method course, Who Has the Power to Do This?, already taught the four questions and the vertical stack, and it sits directly above course 5, The Local Layer. Its one load-bearing idea is the difference between federalism and devolution, taught as entrenched versus delegated. A United States state is a co-sovereign: its existence and its equal representation in the Senate are bolted into the Constitution, and the federal government cannot abolish it. Scotland's powers, by contrast, come from the Scotland Act 1998, an ordinary Act of the Westminster Parliament that, under the doctrine of parliamentary sovereignty, Parliament could in principle repeal. That distinction, whether a middle-layer government holds its power by constitutional entitlement or by a statute the centre can rewrite, is the whole lesson. You will learn the US reserved powers and the anti-commandeering doctrine, why a state cannot be abolished, and interstate compacts; then Germany's Laender and the Bundesrat, Canada's provinces under the Constitution Acts of 1867 and 1982, and Spain's contested estado autonomico; then the United Kingdom's asymmetric devolution and the sovereignty question at its heart. It closes with a map of federal, devolved, and unitary systems and a capstone: classify a real subnational government as entrenched-federal or devolved, and defend it from the primary documents. This course teaches how to read authority. It is not legal advice.",
+    "The course about the level of government between the nation and the locality: the US state, the German Land, the Canadian province, the Spanish autonomous community, and the devolved nations of the United Kingdom. It is course 4 of the path whose method course, Who Has the Power to Do This?, already taught the four questions and the vertical stack, and it sits directly above course 5, The Local Layer. Its one load-bearing idea is the difference between federalism and devolution, taught as entrenched versus delegated. A United States state is a co-sovereign: its existence and its equal representation in the Senate are bolted into the Constitution, and the federal government cannot abolish it. Scotland's powers, by contrast, come from the Scotland Act 1998, an ordinary Act of the Westminster Parliament that, under the doctrine of parliamentary sovereignty, Parliament could in principle repeal. That distinction, whether a middle-layer government holds its power by constitutional entitlement or by a statute the center can rewrite, is the whole lesson. You will learn the US reserved powers and the anti-commandeering doctrine, why a state cannot be abolished, and interstate compacts; then Germany's Laender and the Bundesrat, Canada's provinces under the Constitution Acts of 1867 and 1982, and Spain's contested estado autonomico; then the United Kingdom's asymmetric devolution and the sovereignty question at its heart. It closes with a map of federal, devolved, and unitary systems and a capstone: classify a real subnational government as entrenched-federal or devolved, and defend it from the primary documents. This course teaches how to read authority. It is not legal advice.",
   lessons: [
     // ═══════════════════════════════════════════════════════════════════════════════════════
     // SECTION 1 · The middle layer, and the whole lesson
@@ -82,7 +82,7 @@ Now hold that against a second case. **Scotland has a parliament with real power
 | | A US STATE (entrenched) | SCOTLAND (delegated) |
 |---|---|---|
 | **Where its power comes from** | The Constitution itself | An Act of the UK Parliament |
-| **Can the centre abolish it?** | No | In principle, yes, by statute |
+| **Can the center abolish it?** | No | In principle, yes, by statute |
 | **Default rule** | Holds all power not given away | Holds the power the statute grants |
 | **Who can take the power back** | Only a constitutional amendment | The same Parliament that gave it |
 
@@ -111,7 +111,7 @@ The United States is the classic case. The states predate the federal government
 
 ## Devolution: power granted by a statute
 
-In a **devolved** system, a **unitary** state (one where sovereignty legally rests in the centre) hands some of its power to a regional body **by ordinary legislation.** The regional parliament is real and can be powerful, but its authority is a grant, and the sovereign centre that made the grant can, as a matter of law, amend or revoke it by passing another statute. **The power is delegated, not surrendered.**
+In a **devolved** system, a **unitary** state (one where sovereignty legally rests in the center) hands some of its power to a regional body **by ordinary legislation.** The regional parliament is real and can be powerful, but its authority is a grant, and the sovereign center that made the grant can, as a matter of law, amend or revoke it by passing another statute. **The power is delegated, not surrendered.**
 
 The United Kingdom is the classic case. The Scottish Parliament, the Senedd in Wales, and the Northern Ireland Assembly were each created by an Act of the Westminster Parliament in 1998 (Scotland Act 1998, c. 46; Government of Wales Act 1998; Northern Ireland Act 1998). And the Scotland Act says so in its own text: section 28(7) provides that the Act "does not affect the power of the Parliament of the United Kingdom to make laws for Scotland" (Scotland Act 1998, c. 46, s. 28(7)). **The statute that creates the devolved parliament also preserves the sovereign's power over it.**
 
@@ -122,9 +122,9 @@ You cannot tell federalism from devolution by how much power the region has, or 
 | Ask this | Federal answer | Devolved answer |
 |---|---|---|
 | Where is the region's power anchored? | In the constitution | In a statute |
-| Can the centre abolish the region alone? | No | In principle, yes |
+| Can the center abolish the region alone? | No | In principle, yes |
 | What does it take to change the division? | A constitutional amendment | An Act of the central legislature |
-| Is the centre still legally sovereign over it? | No, sovereignty is divided | Yes, sovereignty stays central |
+| Is the center still legally sovereign over it? | No, sovereignty is divided | Yes, sovereignty stays central |
 
 **A powerful devolved parliament is still delegated. A weak-looking state is still entrenched.** That is the whole trick, and it is why "how much can this region do?" is the wrong first question. The right first question is "on what terms does it hold whatever it does?"
 
@@ -139,7 +139,7 @@ It decides what happens in a crisis. If a central government and a middle-layer 
       recallContent: [
         {
           prompt: "State the one contrast this whole course is built on.",
-          answer: "A US state is a co-sovereign whose power is entrenched in the Constitution (the federal government cannot abolish it), while a devolved parliament like Scotland's holds power granted by an ordinary statute the sovereign centre could in principle repeal. Entrenched versus delegated.",
+          answer: "A US state is a co-sovereign whose power is entrenched in the Constitution (the federal government cannot abolish it), while a devolved parliament like Scotland's holds power granted by an ordinary statute the sovereign center could in principle repeal. Entrenched versus delegated.",
         },
         {
           prompt: "How is a US STATE different from a US CITY, in terms of course 5's lesson?",
@@ -161,11 +161,11 @@ It decides what happens in a crisis. If a central government and a middle-layer 
 
 | Type | Where sovereignty sits | The middle layer's power |
 |---|---|---|
-| **Unitary** | In the centre | Whatever the centre grants; administrative, and revocable |
-| **Devolved (unitary with devolution)** | In the centre | Real and legislative, but granted by statute and legally revocable |
+| **Unitary** | In the center | Whatever the center grants; administrative, and revocable |
+| **Devolved (unitary with devolution)** | In the center | Real and legislative, but granted by statute and legally revocable |
 | **Federal** | Divided by the constitution | Guaranteed by the constitution; the unit is a co-sovereign |
 
-**A purely unitary state** may still have regions, provinces, or departments, but they exist to administer the centre's decisions, and the centre can create, merge, or abolish them by ordinary law. France is often cited here: it has regions, but in **2016 the French state reduced its metropolitan regions from 22 to 13 by ordinary legislation** (Loi n. 2015-29 of 16 January 2015), redrawing the middle layer without any region's consent. That is the unitary signature: the middle layer is the centre's to rearrange, the regional echo of the "cities are creatures of the state" rule you met in course 5.
+**A purely unitary state** may still have regions, provinces, or departments, but they exist to administer the center's decisions, and the center can create, merge, or abolish them by ordinary law. France is often cited here: it has regions, but in **2016 the French state reduced its metropolitan regions from 22 to 13 by ordinary legislation** (Loi n. 2015-29 of 16 January 2015), redrawing the middle layer without any region's consent. That is the unitary signature: the middle layer is the center's to rearrange, the regional echo of the "cities are creatures of the state" rule you met in course 5.
 
 **A devolved state** is a unitary state that has handed legislative power to regional parliaments. The power is real, but the map you drew last lesson still applies: it is delegated.
 
@@ -173,7 +173,7 @@ It decides what happens in a crisis. If a central government and a middle-layer 
 
 ## The spectrum is real, and so is the argument about it
 
-The reason this is a spectrum and not four labelled boxes is that **real countries blur the lines, and honest scholars disagree about where some of them fall.** You will meet three hard cases in this course:
+The reason this is a spectrum and not four labeled boxes is that **real countries blur the lines, and honest scholars disagree about where some of them fall.** You will meet three hard cases in this course:
 
 - **Canada** was designed in 1867 to be centralist, yet became one of the most decentralised federations in the world through decades of judicial interpretation. Which fact is the "real" Canada is a genuine debate (Lesson 10).
 - **Spain** calls itself neither federal nor unitary; its 1978 Constitution built an "estado autonomico" (state of autonomies) that many scholars call quasi-federal and others call a decentralised unitary state. The label is contested on purpose (Lesson 11).
@@ -183,7 +183,7 @@ The reason this is a spectrum and not four labelled boxes is that **real countri
 
 ## What to carry into Section 2
 
-The tool is set. **Federalism entrenches the middle layer in the constitution; devolution delegates power to it by statute; a unitary state keeps the middle layer as its own administrative creation.** Section 2 takes the clearest federal case, the United States, and shows precisely how the entrenchment is built, because you cannot recognise entrenchment abroad until you have seen it assembled at home.
+The tool is set. **Federalism entrenches the middle layer in the constitution; devolution delegates power to it by statute; a unitary state keeps the middle layer as its own administrative creation.** Section 2 takes the clearest federal case, the United States, and shows precisely how the entrenchment is built, because you cannot recognize entrenchment abroad until you have seen it assembled at home.
 
 ## Sources
 - Watts, R. L. (2008). Comparing federal systems (3rd ed.). McGill-Queen's University Press.
@@ -192,15 +192,15 @@ The tool is set. **Federalism entrenches the middle layer in the constitution; d
       recallContent: [
         {
           prompt: "What is federalism, and how does it differ from devolution at the root?",
-          answer: "In federalism the constitution itself divides authority, so the middle-layer unit is a co-sovereign whose core powers are guaranteed and cannot be unilaterally removed; changing the division needs a constitutional amendment. Devolution grants power to a region by ordinary statute, which the sovereign centre can in principle amend or revoke.",
+          answer: "In federalism the constitution itself divides authority, so the middle-layer unit is a co-sovereign whose core powers are guaranteed and cannot be unilaterally removed; changing the division needs a constitutional amendment. Devolution grants power to a region by ordinary statute, which the sovereign center can in principle amend or revoke.",
         },
         {
           prompt: "What is the test that tells federalism and devolution apart, regardless of how much power the region has?",
-          answer: "Ask course 1's fourth question about the region's very existence: where is its power anchored (constitution vs statute), can the centre abolish it alone (no vs in principle yes), what changes the division (an amendment vs a central statute), and is the centre still legally sovereign over it.",
+          answer: "Ask course 1's fourth question about the region's very existence: where is its power anchored (constitution vs statute), can the center abolish it alone (no vs in principle yes), what changes the division (an amendment vs a central statute), and is the center still legally sovereign over it.",
         },
         {
           prompt: "Why does the entrenched/delegated distinction matter in a crisis, not just on paper?",
-          answer: "If the centre and a middle-layer government collide, an entrenched unit can force the fight into the constitution and the courts, while a delegated unit can in the last resort be legislated out of the way. That is a real difference in power even when the day-to-day looks the same.",
+          answer: "If the center and a middle-layer government collide, an entrenched unit can force the fight into the constitution and the courts, while a delegated unit can in the last resort be legislated out of the way. That is a real difference in power even when the day-to-day looks the same.",
         },
       ],
     },
@@ -227,25 +227,25 @@ The tool is set. **Federalism entrenches the middle layer in the constitution; d
           {
             prompt: "In a federal system, the middle-layer unit's core powers come from:",
             options: [
-              "An ordinary act of the centre",
+              "An ordinary act of the center",
               "The constitution itself",
               "A grant from the president",
               "A vote of the other regions",
             ],
             correctIndex: 1,
-            explanation: "The constitution divides authority, so the unit is a co-sovereign holding power in its own right, not at the centre's pleasure.",
+            explanation: "The constitution divides authority, so the unit is a co-sovereign holding power in its own right, not at the center's pleasure.",
             sourceLessonSlug: "middle-entrenched-vs-delegated",
           },
           {
             prompt: "In a devolved system, the regional parliament's authority is best described as:",
             options: [
-              "Surrendered by the centre forever",
+              "Surrendered by the center forever",
               "Older than the central state",
               "Granted by a statute, revocable",
               "Fixed by an ancient treaty",
             ],
             correctIndex: 2,
-            explanation: "Devolution hands power to a region by ordinary legislation; the sovereign centre can in principle amend or revoke it by another statute. The power is delegated, not surrendered.",
+            explanation: "Devolution hands power to a region by ordinary legislation; the sovereign center can in principle amend or revoke it by another statute. The power is delegated, not surrendered.",
             sourceLessonSlug: "middle-entrenched-vs-delegated",
           },
           {
@@ -254,7 +254,7 @@ The tool is set. **Federalism entrenches the middle layer in the constitution; d
               "A state is larger and richer",
               "A state has more employees",
               "A city elects more officials",
-              "A state is not the centre's creature",
+              "A state is not the center's creature",
             ],
             correctIndex: 3,
             explanation: "A city is a creature of the state, which can remake or abolish it. A state is a co-sovereign: Washington did not create it and cannot abolish it or simply strip its powers.",
@@ -312,7 +312,7 @@ The tool is set. **Federalism entrenches the middle layer in the constitution; d
             prompt: "In a purely UNITARY state, the middle layer (regions, provinces) is:",
             options: [
               "A co-sovereign like a US state",
-              "The centre's to redraw by ordinary law",
+              "The center's to redraw by ordinary law",
               "Protected by the constitution",
               "Older than the central government",
             ],
@@ -329,7 +329,7 @@ The tool is set. **Federalism entrenches the middle layer in the constitution; d
               "Ordinary central legislation",
             ],
             correctIndex: 3,
-            explanation: "France redrew its middle layer by ordinary law without any region's consent, the unitary signature: the middle layer is the centre's to rearrange.",
+            explanation: "France redrew its middle layer by ordinary law without any region's consent, the unitary signature: the middle layer is the center's to rearrange.",
             sourceLessonSlug: "middle-federal-unitary-spectrum",
           },
           {
@@ -361,7 +361,7 @@ The tool is set. **Federalism entrenches the middle layer in the constitution; d
             options: [
               "When a region designs its flag",
               "When tourists visit the region",
-              "When the centre and region collide",
+              "When the center and region collide",
               "When the region holds a festival",
             ],
             correctIndex: 2,
@@ -444,7 +444,7 @@ This is analysis of the structure of authority, not legal advice about any parti
       recallContent: [
         {
           prompt: "Name the three broad types on the spectrum, and where sovereignty sits in each.",
-          answer: "Unitary (sovereignty in the centre; the middle layer is administrative and revocable), devolved (sovereignty in the centre, but regions hold real legislative power granted by statute and legally revocable), and federal (sovereignty divided by the constitution; the unit is a co-sovereign).",
+          answer: "Unitary (sovereignty in the center; the middle layer is administrative and revocable), devolved (sovereignty in the center, but regions hold real legislative power granted by statute and legally revocable), and federal (sovereignty divided by the constitution; the unit is a co-sovereign).",
         },
         {
           prompt: "Why is France's 2016 reduction of its regions the 'unitary signature'?",
@@ -524,11 +524,11 @@ Compacts are the active tool; three constitutional clauses form the passive fram
 | **Privileges and Immunities** (Art. IV, s. 2, cl. 1) | A state generally may not discriminate against citizens of other states in basic rights |
 | **Extradition** (Art. IV, s. 2, cl. 2) | A person charged in one state and found in another is to be returned on demand |
 
-**Read these as the plumbing of co-sovereignty.** Fifty sovereigns would grind to a halt if a marriage, a judgment, or a driver's licence stopped at the state line, so the Constitution requires a baseline of mutual recognition. **The states are separate enough to need these rules and joined enough to be bound by them.** That is what a federation is: not one government and not fifty countries, but co-sovereigns under a shared constitution.
+**Read these as the plumbing of co-sovereignty.** Fifty sovereigns would grind to a halt if a marriage, a judgment, or a driver's license stopped at the state line, so the Constitution requires a baseline of mutual recognition. **The states are separate enough to need these rules and joined enough to be bound by them.** That is what a federation is: not one government and not fifty countries, but co-sovereigns under a shared constitution.
 
 ## Why this belongs in the middle-layer course
 
-Horizontal federalism is the feature you will look for, or miss, abroad. **Germany's Laender, Canada's provinces, and Spain's autonomous communities each deal sideways in their own way, and the rules differ.** Some federations centralise these functions; others leave them to the units; devolved systems often route everything back through the sovereign centre. When you meet a middle layer, ask not only "how does it deal with the centre?" but "how does it deal with its neighbours, and who wrote those rules?" **A layer that can bind its neighbours by compact, subject only to the centre's consent, is holding a genuinely sovereign kind of power.** This is description of structure, not legal advice.
+Horizontal federalism is the feature you will look for, or miss, abroad. **Germany's Laender, Canada's provinces, and Spain's autonomous communities each deal sideways in their own way, and the rules differ.** Some federations centralise these functions; others leave them to the units; devolved systems often route everything back through the sovereign center. When you meet a middle layer, ask not only "how does it deal with the center?" but "how does it deal with its neighbors, and who wrote those rules?" **A layer that can bind its neighbors by compact, subject only to the center's consent, is holding a genuinely sovereign kind of power.** This is description of structure, not legal advice.
 
 ## Sources
 - U.S. Const. art. I, s. 10. https://constitution.congress.gov/constitution/article-1/section-10/
@@ -754,7 +754,7 @@ Horizontal federalism is the feature you will look for, or miss, abroad. **Germa
 
 Germany's constitution is the **Grundgesetz** (Basic Law) of 1949. It declares in Article 20 that "the Federal Republic of Germany is a democratic and social federal state," and it distributes legislative power so that, under Articles 30 and 70, **the Laender hold the power to legislate wherever the Basic Law does not assign it to the Federation** (Grundgesetz, arts. 20, 30, 70). **That is the same residual-power move as the US Tenth Amendment**: the states keep what is not federal. Each Land has its own constitution, its own parliament (Landtag), and its own government.
 
-## The Bundesrat: the middle layer inside the centre
+## The Bundesrat: the middle layer inside the center
 
 Here is where Germany diverges sharply from the US, and the difference is worth reading slowly. The US Senate represents the states but is **elected by the people** of each state. Germany's **Bundesrat is different: it is composed of members of the Land GOVERNMENTS, not elected separately at all** (Grundgesetz, art. 51; Bundesrat, n.d.). The people who sit in the Bundesrat are ministers of the state cabinets, and each Land instructs its delegation how to vote.
 
@@ -775,7 +775,7 @@ Germany also entrenches its federalism in text, and arguably more firmly than th
 
 ## A design difference, not a ranking
 
-One honest caution. German federalism is often described as **administrative or executive federalism**: much law is made at the federal level and then **carried out by the Laender**, whereas US "dual federalism" more often has each level running its own programs. **Neither is more federal than the other; they are different divisions of labour.** The Laender's power shows up less in passing their own separate laws and more in administering federal ones and in the Bundesrat veto. When you classify a system, resist ranking by a single yardstick: measure entrenchment (is the unit protected?) and participation (does it sit inside the centre?) separately, because Germany scores high on both by a route the US does not use. This is comparative description, not legal advice.
+One honest caution. German federalism is often described as **administrative or executive federalism**: much law is made at the federal level and then **carried out by the Laender**, whereas US "dual federalism" more often has each level running its own programs. **Neither is more federal than the other; they are different divisions of labor.** The Laender's power shows up less in passing their own separate laws and more in administering federal ones and in the Bundesrat veto. When you classify a system, resist ranking by a single yardstick: measure entrenchment (is the unit protected?) and participation (does it sit inside the center?) separately, because Germany scores high on both by a route the US does not use. This is comparative description, not legal advice.
 
 ## Sources
 - Grundgesetz [GG] [Basic Law], arts. 20, 30, 51, 70, 79(3). Basic Law for the Federal Republic of Germany. https://www.gesetze-im-internet.de/englisch_gg/
@@ -791,7 +791,7 @@ One honest caution. German federalism is often described as **administrative or 
         },
         {
           prompt: "What sideways question should you ask of any foreign middle layer?",
-          answer: "Not only how it deals with the centre, but how it deals with its neighbours and who wrote those rules. A layer that can bind its neighbours by compact, subject only to the centre's consent, holds a genuinely sovereign kind of power.",
+          answer: "Not only how it deals with the center, but how it deals with its neighbors and who wrote those rules. A layer that can bind its neighbors by compact, subject only to the center's consent, holds a genuinely sovereign kind of power.",
         },
       ],
     },
@@ -803,11 +803,11 @@ One honest caution. German federalism is often described as **administrative or 
 
 ## The division of powers, 1867
 
-Canada's founding constitution is the **Constitution Act, 1867** (originally the British North America Act, 1867). It divides legislative authority between the federal Parliament and the provinces by two lists: **Section 91 enumerates federal powers** (among them trade and commerce, criminal law, banking, and defence), and **Section 92 enumerates provincial powers** (among them property and civil rights, and municipal institutions), with education under Section 93 (Constitution Act, 1867, ss. 91-93). **Like a US state or a German Land, a Canadian province holds real, constitutionally assigned powers that the federal Parliament cannot simply take.**
+Canada's founding constitution is the **Constitution Act, 1867** (originally the British North America Act, 1867). It divides legislative authority between the federal Parliament and the provinces by two lists: **Section 91 enumerates federal powers** (among them trade and commerce, criminal law, banking, and defense), and **Section 92 enumerates provincial powers** (among them property and civil rights, and municipal institutions), with education under Section 93 (Constitution Act, 1867, ss. 91-93). **Like a US state or a German Land, a Canadian province holds real, constitutionally assigned powers that the federal Parliament cannot simply take.**
 
 ## The residual power runs the OTHER way
 
-Here is the design choice that makes Canada worth teaching next to the US. In the United States, the residual power (whatever is not enumerated) sits with the **states.** In Canada, the opening words of Section 91 give the federal Parliament power to make laws for the **"Peace, Order, and good Government of Canada"** in relation to all matters not assigned to the provinces (Constitution Act, 1867, s. 91). **The residue is FEDERAL.** Canada's framers, watching the United States tear itself apart in a civil war in the 1860s, deliberately built a stronger centre: they put the leftover power at the top, not the bottom. **On paper, Canada in 1867 was the more centralist federation.**
+Here is the design choice that makes Canada worth teaching next to the US. In the United States, the residual power (whatever is not enumerated) sits with the **states.** In Canada, the opening words of Section 91 give the federal Parliament power to make laws for the **"Peace, Order, and good Government of Canada"** in relation to all matters not assigned to the provinces (Constitution Act, 1867, s. 91). **The residue is FEDERAL.** Canada's framers, watching the United States tear itself apart in a civil war in the 1860s, deliberately built a stronger center: they put the leftover power at the top, not the bottom. **On paper, Canada in 1867 was the more centralist federation.**
 
 ## But interpretation pushed power to the provinces
 
@@ -815,7 +815,7 @@ The paper design is not where Canada ended up. For decades, Canada's final court
 
 ## 1982: bringing the constitution home
 
-Until 1982, Canada could not fully amend its own constitution; changes needed an Act of the UK Parliament, a leftover of the country's origins. The **Constitution Act, 1982 "patriated" the constitution**, bringing it under Canadian control, adding the Canadian Charter of Rights and Freedoms and, for the first time, a domestic **amending formula** (Constitution Act, 1982). That formula entrenches the federal balance: the general rule requires the agreement of the federal Parliament and **two-thirds of the provinces representing at least half the population** (the "7/50" rule), so **neither Ottawa nor any one province can rewrite the division of powers alone.** That is entrenchment in the US sense: the middle layer's powers are protected by a hard-to-change constitution, not held at the centre's pleasure.
+Until 1982, Canada could not fully amend its own constitution; changes needed an Act of the UK Parliament, a leftover of the country's origins. The **Constitution Act, 1982 "patriated" the constitution**, bringing it under Canadian control, adding the Canadian Charter of Rights and Freedoms and, for the first time, a domestic **amending formula** (Constitution Act, 1982). That formula entrenches the federal balance: the general rule requires the agreement of the federal Parliament and **two-thirds of the provinces representing at least half the population** (the "7/50" rule), so **neither Ottawa nor any one province can rewrite the division of powers alone.** That is entrenchment in the US sense: the middle layer's powers are protected by a hard-to-change constitution, not held at the center's pleasure.
 
 ## Quebec, and the limits of consensus
 
@@ -836,7 +836,7 @@ The patriation of 1982 carries a permanent asterisk. **Quebec's government did n
         },
         {
           prompt: "What is 'administrative federalism', and why should you not rank it against US 'dual federalism'?",
-          answer: "In Germany much law is made federally and carried out by the Laender, whereas US dual federalism more often has each level running its own programs. Neither is more federal; they are different divisions of labour. Measure entrenchment and participation separately rather than by one yardstick.",
+          answer: "In Germany much law is made federally and carried out by the Laender, whereas US dual federalism more often has each level running its own programs. Neither is more federal; they are different divisions of labor. Measure entrenchment and participation separately rather than by one yardstick.",
         },
       ],
     },
@@ -866,7 +866,7 @@ Here is the disagreement, laid out plainly, because it is the point of the lesso
 
 ## Asymmetry: the units are not all the same
 
-Unlike the US equal-footing rule, **Spain's autonomy is deliberately asymmetric.** Some communities, the "historic nationalities" such as Catalonia, the Basque Country, and Galicia, reached autonomy by a faster constitutional route than others (Spanish Const., 1978, arts. 143, 151). And the **Basque Country and Navarre have a distinct fiscal arrangement** (the foral system, or concierto and convenio economico) under which they collect most of their own taxes and remit a negotiated share to the centre, an arrangement no other community has. **Spain, unlike the US, decided on purpose that its units should not be identical.** Asymmetry is a legitimate federal design choice, and Spain is its sharpest European example.
+Unlike the US equal-footing rule, **Spain's autonomy is deliberately asymmetric.** Some communities, the "historic nationalities" such as Catalonia, the Basque Country, and Galicia, reached autonomy by a faster constitutional route than others (Spanish Const., 1978, arts. 143, 151). And the **Basque Country and Navarre have a distinct fiscal arrangement** (the foral system, or concierto and convenio economico) under which they collect most of their own taxes and remit a negotiated share to the center, an arrangement no other community has. **Spain, unlike the US, decided on purpose that its units should not be identical.** Asymmetry is a legitimate federal design choice, and Spain is its sharpest European example.
 
 ## The Catalan question, taught with care
 
@@ -879,7 +879,7 @@ Spain's design has been tested hardest by **Catalonia.** The essentials, stated 
       recallContent: [
         {
           prompt: "How did Canada's 1867 design differ from the US on residual power, and why?",
-          answer: "In the US the residual power sits with the states; in Canada the opening of Section 91 gives the federal Parliament the 'Peace, Order, and good Government' residue. Canada's framers, watching the US Civil War, deliberately built a stronger centre by putting the leftover power at the top.",
+          answer: "In the US the residual power sits with the states; in Canada the opening of Section 91 gives the federal Parliament the 'Peace, Order, and good Government' residue. Canada's framers, watching the US Civil War, deliberately built a stronger center by putting the leftover power at the top.",
         },
         {
           prompt: "Why is 'is Canada centralist or decentralised?' a teach-the-disagreement question?",
@@ -944,7 +944,7 @@ Spain's design has been tested hardest by **Catalonia.** The essentials, stated 
               "Never enforced at all",
             ],
             correctIndex: 1,
-            explanation: "Law is often made at the federal level and carried out by the Laender, a different division of labour from US dual federalism, not a lesser kind of federalism.",
+            explanation: "Law is often made at the federal level and carried out by the Laender, a different division of labor from US dual federalism, not a lesser kind of federalism.",
             sourceLessonSlug: "middle-germany",
           },
           {
@@ -968,7 +968,7 @@ Spain's design has been tested hardest by **Catalonia.** The essentials, stated 
               "British monarch alone",
             ],
             correctIndex: 2,
-            explanation: "The 'Peace, Order, and good Government' clause gives Ottawa the leftover power. Canada's framers, watching the US Civil War, built a stronger centre on paper.",
+            explanation: "The 'Peace, Order, and good Government' clause gives Ottawa the leftover power. Canada's framers, watching the US Civil War, built a stronger center on paper.",
             sourceLessonSlug: "middle-canada",
           },
           {
@@ -1089,7 +1089,7 @@ Spain's design has been tested hardest by **Catalonia.** The essentials, stated 
       slug: "middle-devolution",
       title: "13 · The United Kingdom: powers granted by statute",
       section: "Section 4 · Devolution: powers on loan",
-      body: `Now the other pole. Everything in Sections 2 and 3 was a federation, where the middle layer's power is anchored in a constitution. The United Kingdom is the course's clearest case of the opposite: **devolution, where a sovereign centre lends power to regional parliaments by ordinary statute.** Scotland, Wales, and Northern Ireland each got a real parliament in 1998, and each holds its power on the delegated terms Lesson 2 described.
+      body: `Now the other pole. Everything in Sections 2 and 3 was a federation, where the middle layer's power is anchored in a constitution. The United Kingdom is the course's clearest case of the opposite: **devolution, where a sovereign center lends power to regional parliaments by ordinary statute.** Scotland, Wales, and Northern Ireland each got a real parliament in 1998, and each holds its power on the delegated terms Lesson 2 described.
 
 ## Three settlements, one year, no symmetry
 
@@ -1155,7 +1155,7 @@ Here is the most elegant thing in the course. Parliament, wanting to reassure Sc
 
 ## Where the courts have drawn the line
 
-The limits are not merely theoretical; courts enforce them. When the Scottish government asked whether the Scottish Parliament could legislate for an independence referendum on its own, the UK Supreme Court held that it **could not**, because such a Bill would relate to matters **reserved** to Westminster, namely the Union of the Kingdoms and the UK Parliament (Reference by the Lord Advocate, 2022). The 2014 independence referendum had only been possible because Westminster **temporarily granted the power** to hold it. **A US state needs no one's permission to exercise its reserved powers; a devolved parliament's biggest questions run back to the centre.** That is the delegated condition, enforced.
+The limits are not merely theoretical; courts enforce them. When the Scottish government asked whether the Scottish Parliament could legislate for an independence referendum on its own, the UK Supreme Court held that it **could not**, because such a Bill would relate to matters **reserved** to Westminster, namely the Union of the Kingdoms and the UK Parliament (Reference by the Lord Advocate, 2022). The 2014 independence referendum had only been possible because Westminster **temporarily granted the power** to hold it. **A US state needs no one's permission to exercise its reserved powers; a devolved parliament's biggest questions run back to the center.** That is the delegated condition, enforced.
 
 ## The honest contested edge
 
@@ -1177,7 +1177,7 @@ One caution, to teach rather than hide. **A minority of judges and scholars have
         },
         {
           prompt: "In a devolved action, who can overturn it, and which line separates devolution from federalism?",
-          answer: "The devolved body's own repeal, the courts (if it exceeds the statutory grant), and in the last legal resort the UK Parliament, which retains the power to legislate and in principle to amend the settlement. That last line, the sovereign centre's retained power, is where devolution and federalism part company.",
+          answer: "The devolved body's own repeal, the courts (if it exceeds the statutory grant), and in the last legal resort the UK Parliament, which retains the power to legislate and in principle to amend the settlement. That last line, the sovereign center's retained power, is where devolution and federalism part company.",
         },
       ],
     },
@@ -1191,10 +1191,10 @@ One caution, to teach rather than hide. **A minority of judges and scholars have
 
 | Model | What the statute or constitution lists | Who gets the unforeseen power |
 |---|---|---|
-| **Reserved powers** | The matters kept for the CENTRE; everything else is the region's | The region (the residue falls to it) |
-| **Conferred powers** | The matters GIVEN to the region; everything else stays central | The centre (the residue stays with it) |
+| **Reserved powers** | The matters kept for the CENTER; everything else is the region's | The region (the residue falls to it) |
+| **Conferred powers** | The matters GIVEN to the region; everything else stays central | The center (the residue stays with it) |
 
-**This is the residual-power question from Section 2, wearing work clothes.** Under a **reserved-powers** model, the drafters name what the centre keeps, and anything not named is the region's by default: a broad, generous grant. Under a **conferred-powers** model, the drafters name what the region gets, and anything not named stays with the centre: a narrower, list-bound grant. **The difference never shows up on the powers the drafters thought of. It decides everything they missed.**
+**This is the residual-power question from Section 2, wearing work clothes.** Under a **reserved-powers** model, the drafters name what the center keeps, and anything not named is the region's by default: a broad, generous grant. Under a **conferred-powers** model, the drafters name what the region gets, and anything not named stays with the center: a narrower, list-bound grant. **The difference never shows up on the powers the drafters thought of. It decides everything they missed.**
 
 ## The UK ran the natural experiment
 
@@ -1202,7 +1202,7 @@ The UK is unusually useful here because its own settlements have used different 
 
 - **Scotland** started with a **reserved-powers** model: the Scotland Act 1998 lists the matters reserved to Westminster (in Schedule 5), and everything not reserved is devolved (Scotland Act 1998, c. 46, sch. 5). A generous default.
 - **Wales** started with a **conferred-powers** model: the early settlement listed the subjects on which the Welsh body could legislate, and anything not listed stayed at Westminster. A narrower default.
-- Then **Wales switched.** The Wales Act 2017 moved Wales to a **reserved-powers** model, aligning it more closely with Scotland (Wales Act 2017, c. 4). **The switch itself is the lesson: the drafters recognised that reserved-powers is the more generous design, and moved Wales onto it.**
+- Then **Wales switched.** The Wales Act 2017 moved Wales to a **reserved-powers** model, aligning it more closely with Scotland (Wales Act 2017, c. 4). **The switch itself is the lesson: the drafters recognized that reserved-powers is the more generous design, and moved Wales onto it.**
 
 This distinction is not unique to the UK. It is the same choice as the US-versus-Canada residual question from Section 2: **the US reserved the residue to the states (a reserved-powers instinct at the federal level), while Canada's 1867 text gave the residue to Ottawa (a conferred-powers instinct toward the provinces).** One axis, appearing in both federal and devolved systems.
 
@@ -1210,8 +1210,8 @@ This distinction is not unique to the UK. It is the same choice as the US-versus
 
 Put the two axes side by side, because a real government sits on both at once:
 
-- **Axis 1, entrenched or delegated:** is the power anchored in a constitution or granted by a statute the centre can rewrite?
-- **Axis 2, reserved or conferred:** does the region get the unforeseen powers, or does the centre?
+- **Axis 1, entrenched or delegated:** is the power anchored in a constitution or granted by a statute the center can rewrite?
+- **Axis 2, reserved or conferred:** does the region get the unforeseen powers, or does the center?
 
 A government can be **delegated but reserved-powers** (Scotland: its power is a revocable grant, yet within that grant the default runs generously to Scotland). A government can be **entrenched but with a centralising residue** (Canada's provinces: constitutionally protected, yet the leftover power sits federally). **Neither axis alone tells you how strong the middle layer really is; you need both.** When you classify the government in your capstone, you will place it on axis 1 (the course's headline) and note where it sits on axis 2, because a reader who knows only one has half the picture. This is comparative description, not legal advice.
 
@@ -1230,7 +1230,7 @@ A government can be **delegated but reserved-powers** (Scotland: its power is a 
         },
         {
           prompt: "What did the 2022 Lord Advocate reference decide, and what does it show about devolution's condition?",
-          answer: "The UK Supreme Court held the Scottish Parliament could not legislate for an independence referendum on its own, because it would relate to reserved matters (the Union and the UK Parliament). The 2014 vote was possible only because Westminster temporarily granted the power. A devolved parliament's biggest questions run back to the centre.",
+          answer: "The UK Supreme Court held the Scottish Parliament could not legislate for an independence referendum on its own, because it would relate to reserved matters (the Union and the UK Parliament). The 2014 vote was possible only because Westminster temporarily granted the power. A devolved parliament's biggest questions run back to the center.",
         },
       ],
     },
@@ -1342,7 +1342,7 @@ A government can be **delegated but reserved-powers** (Scotland: its power is a 
             prompt: "Under a RESERVED-powers model, the statute lists what the centre keeps, so:",
             options: [
               "The region gets the leftover power",
-              "The centre gets the leftover power",
+              "The center gets the leftover power",
               "No power is ever left over",
               "A court assigns each new power",
             ],
@@ -1355,7 +1355,7 @@ A government can be **delegated but reserved-powers** (Scotland: its power is a 
             options: [
               "The region by default",
               "The regional courts",
-              "The centre by default",
+              "The center by default",
               "The local councils",
             ],
             correctIndex: 2,
@@ -1432,25 +1432,25 @@ A government can be **delegated but reserved-powers** (Scotland: its power is a 
       slug: "middle-map",
       title: "17 · Map: federal, devolved, and unitary systems",
       section: "Section 5 · See it, then classify one",
-      body: `**Read this before the map, because the map's limits are part of the lesson.** This platform draws markers as fixed-size dots on a world projection, so the coordinates below are **approximate points placed to show a pattern, not addresses.** Do not use them to find a building. And this is the course where a dot is least adequate, because a state, a Land, a province, or an autonomous community is an **area**, not a point. The plan for this path notes that these comparative courses are the first content that genuinely needs a polygon (choropleth) map layer rather than pins; until that ships, read the colours, not the positions.
+      body: `**Read this before the map, because the map's limits are part of the lesson.** This platform draws markers as fixed-size dots on a world projection, so the coordinates below are **approximate points placed to show a pattern, not addresses.** Do not use them to find a building. And this is the course where a dot is least adequate, because a state, a Land, a province, or an autonomous community is an **area**, not a point. The plan for this path notes that these comparative courses are the first content that genuinely needs a polygon (choropleth) map layer rather than pins; until that ships, read the colors, not the positions.
 
-## What the colours mean
+## What the colors mean
 
 The markers are grouped by **how the middle layer holds its power**, which is the whole course expressed as a legend:
 
-**Blue markers: entrenched federal (co-sovereign).** A US state, a German Land, and a Canadian province. Each holds power guaranteed by a constitution the centre cannot rewrite alone. These are the Section 2 and early Section 3 cases.
+**Blue markers: entrenched federal (co-sovereign).** A US state, a German Land, and a Canadian province. Each holds power guaranteed by a constitution the center cannot rewrite alone. These are the Section 2 and early Section 3 cases.
 
 **Amber markers: devolved (delegated by statute).** Scotland, Wales, and Northern Ireland. Each holds real, sometimes sweeping power, granted by an Act of the Westminster Parliament that in principle Parliament could amend. Same map position as a powerful state, opposite terms underneath.
 
-**Purple marker: contested classification.** Catalonia, in Spain's estado autonomico, drawn in its own colour on purpose, exactly as course 1 drew the tribal layer differently, because honest scholars disagree whether Spain is federal, quasi-federal, or a decentralised unitary state. The colour is the course refusing to pretend a contested case is settled.
+**Purple marker: contested classification.** Catalonia, in Spain's estado autonomico, drawn in its own color on purpose, exactly as course 1 drew the tribal layer differently, because honest scholars disagree whether Spain is federal, quasi-federal, or a decentralised unitary state. The color is the course refusing to pretend a contested case is settled.
 
-**Green marker: unitary (the middle layer is the centre's to redraw).** A French region. France has regions, but in 2016 it reduced them from 22 to 13 by ordinary law, the unitary signature: the middle layer exists at the centre's convenience, the regional echo of "cities are creatures of the state."
+**Green marker: unitary (the middle layer is the center's to redraw).** A French region. France has regions, but in 2016 it reduced them from 22 to 13 by ordinary law, the unitary signature: the middle layer exists at the center's convenience, the regional echo of "cities are creatures of the state."
 
 ## What the map cannot show, and what that proves
 
-**It cannot show the terms of power, which is the whole point.** A blue US-state dot and an amber Scotland dot can look equally important on the map, and represent opposite kinds of authority: one entrenched, one delegated. **Colour is doing the work the position cannot.** Read the legend, not the geography.
+**It cannot show the terms of power, which is the whole point.** A blue US-state dot and an amber Scotland dot can look equally important on the map, and represent opposite kinds of authority: one entrenched, one delegated. **Color is doing the work the position cannot.** Read the legend, not the geography.
 
-**It cannot show the second axis.** Nothing in a dot's colour tells you whether the unit is reserved-powers or conferred-powers (Lesson 15). Scotland (amber) is reserved-powers; Canada's province (blue) sits under a centralising residue. That distinction you carry in your head. **The map is a prompt for the classification you are about to do, not a substitute for it.** Now classify one yourself.
+**It cannot show the second axis.** Nothing in a dot's color tells you whether the unit is reserved-powers or conferred-powers (Lesson 15). Scotland (amber) is reserved-powers; Canada's province (blue) sits under a centralising residue. That distinction you carry in your head. **The map is a prompt for the classification you are about to do, not a substitute for it.** Now classify one yourself.
 
 ## Sources
 - Watts, R. L. (2008). Comparing federal systems (3rd ed.). McGill-Queen's University Press.
@@ -1520,7 +1520,7 @@ The markers are grouped by **how the middle layer holds its power**, which is th
             title: "Contested classification: Catalonia (Spain, Barcelona)",
             color: "#7c3aed",
             description:
-              "Drawn in its own colour because Spain's estado autonomico genuinely resists classification: scholars read it as federal in all but name, quasi-federal, or a decentralised unitary state. Catalonia has a Statute of Autonomy and broad self-government, yet Article 2 grounds the state in the indissoluble unity of the Spanish Nation. The 2010 Constitutional Court ruling, the 2017 referendum ruled unlawful, and the Article 155 intervention are the documented flashpoints. The colour is the course refusing to pretend a contested case is settled. Coordinates are approximate.",
+              "Drawn in its own color because Spain's estado autonomico genuinely resists classification: scholars read it as federal in all but name, quasi-federal, or a decentralised unitary state. Catalonia has a Statute of Autonomy and broad self-government, yet Article 2 grounds the state in the indissoluble unity of the Spanish Nation. The 2010 Constitutional Court ruling, the 2017 referendum ruled unlawful, and the Article 155 intervention are the documented flashpoints. The color is the course refusing to pretend a contested case is settled. Coordinates are approximate.",
           },
           {
             id: "middle-map-france-region",
@@ -1529,7 +1529,7 @@ The markers are grouped by **how the middle layer holds its power**, which is th
             title: "Unitary: a French region (metropolitan France, Paris)",
             color: "#047857",
             description:
-              "France has regions, but sovereignty rests in the centre: in 2016 France reduced its metropolitan regions from 22 to 13 by ordinary legislation, without any region's consent. That is the unitary signature, the middle layer exists at the centre's convenience and can be redrawn by ordinary law, the regional echo of 'cities are creatures of the state' from course 5. Coordinates are approximate.",
+              "France has regions, but sovereignty rests in the center: in 2016 France reduced its metropolitan regions from 22 to 13 by ordinary legislation, without any region's consent. That is the unitary signature, the middle layer exists at the center's convenience and can be redrawn by ordinary law, the regional echo of 'cities are creatures of the state' from course 5. Coordinates are approximate.",
           },
         ],
       },
@@ -1557,16 +1557,16 @@ Ask the Lesson 2 questions of the unit's very existence:
 
 | Question | What you are looking for |
 |---|---|
-| **Where is its power anchored?** | A constitution the centre cannot rewrite alone, or a statute it can? |
-| **Can the centre abolish it alone?** | If yes in principle, it is delegated; if no, it is entrenched |
+| **Where is its power anchored?** | A constitution the center cannot rewrite alone, or a statute it can? |
+| **Can the center abolish it alone?** | If yes in principle, it is delegated; if no, it is entrenched |
 | **What changes the division of powers?** | A constitutional amendment, or an ordinary central statute? |
-| **Is the centre still legally sovereign over it?** | If sovereignty is divided, federal; if it stays central, devolved or unitary |
+| **Is the center still legally sovereign over it?** | If sovereignty is divided, federal; if it stays central, devolved or unitary |
 
 **Then run the US entrenchment checklist from Lesson 6 as a stress test:** is the unit's existence protected, its territory protected, its status equal to its peers, its self-government guaranteed? Few units answer yes to all four; note which it fails.
 
 ## Step 3. Place it on Axis 2: reserved or conferred?
 
-Does the founding document list what the centre keeps (reserved: the residue falls to the unit) or what the unit gets (conferred: the residue stays central)? **Cite the schedule or article that draws the line.** Note that a unit can be delegated on Axis 1 but reserved-powers on Axis 2 (Scotland), or entrenched on Axis 1 but sit under a centralising residue on Axis 2 (a Canadian province). Both axes, or you have half the picture.
+Does the founding document list what the center keeps (reserved: the residue falls to the unit) or what the unit gets (conferred: the residue stays central)? **Cite the schedule or article that draws the line.** Note that a unit can be delegated on Axis 1 but reserved-powers on Axis 2 (Scotland), or entrenched on Axis 1 but sit under a centralising residue on Axis 2 (a Canadian province). Both axes, or you have half the picture.
 
 ## Step 4. Defend it against the strongest counter-reading
 
@@ -1582,7 +1582,7 @@ Does the founding document list what the centre keeps (reserved: the residue fal
 
 ## What good looks like
 
-A one-page classification in which the unit is named, its founding clause is quoted, it is placed on both axes with citations, and the placement is defended against the strongest opposite reading, with contested points labelled as contested rather than smoothed over. **If you took a government you thought was obviously "a state like any other" and showed, from its own founding document, exactly whether it holds its power by constitutional right or by a statute the centre could rewrite, you have done what this course set out to teach: you learned to tell entrenched from delegated, which is the whole difference between a co-sovereign and a tenant.**
+A one-page classification in which the unit is named, its founding clause is quoted, it is placed on both axes with citations, and the placement is defended against the strongest opposite reading, with contested points labeled as contested rather than smoothed over. **If you took a government you thought was obviously "a state like any other" and showed, from its own founding document, exactly whether it holds its power by constitutional right or by a statute the center could rewrite, you have done what this course set out to teach: you learned to tell entrenched from delegated, which is the whole difference between a co-sovereign and a tenant.**
 
 ## Sources
 - U.S. Const. amend. X; art. V. https://constitution.congress.gov/constitution/amendment-10/

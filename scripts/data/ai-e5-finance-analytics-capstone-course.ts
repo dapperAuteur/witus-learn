@@ -380,7 +380,7 @@ A projection is a *story about the future*, and the future doesn't read your spr
             options: [
               "Trust it, because AI is very good at doing maths",
               "Re-add the totals yourself; a text predictor can be wrong",
-              "Delete your receipts, since the AI has organised it",
+              "Delete your receipts, since the AI has organized it",
               "Paste your full bank account number in so it can check",
             ],
             correctIndex: 1,
@@ -469,7 +469,7 @@ A projection is a *story about the future*, and the future doesn't read your spr
           {
             prompt: "A chatbot confidently answers your business-tax question. How should you treat it?",
             options: [
-              "As final, since 'the chatbot told me' is a defence",
+              "As final, since 'the chatbot told me' is a defense",
               "As possibly wrong or out of date; ask a qualified human",
               "Ignore taxes entirely until you are much bigger",
               "Trust it, because it certainly sounded very sure",

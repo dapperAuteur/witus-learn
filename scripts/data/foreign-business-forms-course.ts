@@ -120,7 +120,7 @@ Every economy has to answer the same four questions, because they are not about 
 
 ## Two moves that make foreign reading reliable
 
-- **Translate the DECISION, not the word.** Do not try to memorise that "SARL means LLC." That mapping is loose and it misleads. Instead ask what the SARL does on liability, tax, ownership, and governance, and let the answers place it. A form is its four answers, not its nearest English nickname.
+- **Translate the DECISION, not the word.** Do not try to memorize that "SARL means LLC." That mapping is loose and it misleads. Instead ask what the SARL does on liability, tax, ownership, and governance, and let the answers place it. A form is its four answers, not its nearest English nickname.
 - **Watch for a fifth thing that is not one of the four.** Some countries bolt on a feature the four decisions do not capture on their own, like a legal requirement that workers sit on the board, or that profits can never be paid out. When you meet one, flag it as an **extra**, because those extras are usually the whole point of the form and the part that does not translate.
 
 ## Reading any foreign form, in order
@@ -543,8 +543,8 @@ The amount of employee representation depends on the company's size, and the cou
 
 Set it beside the US answer and the choice is stark:
 
-- **In the US**, there is **no** legal requirement for workers to sit on a company's board. Governance runs shareholders to board to officers, with labour's voice coming, if at all, through unions and collective bargaining **outside** the boardroom.
-- **In Germany**, large-company governance **reserves board seats for workers by law**, so labour has a voice **inside** the room where managers are hired and overseen.
+- **In the US**, there is **no** legal requirement for workers to sit on a company's board. Governance runs shareholders to board to officers, with labor's voice coming, if at all, through unions and collective bargaining **outside** the boardroom.
+- **In Germany**, large-company governance **reserves board seats for workers by law**, so labor has a voice **inside** the room where managers are hired and overseen.
 
 Neither is an accident. Each is a deliberate answer to "who gets to decide," and each has consequences: for how restructurings and layoffs are debated, for how long companies plan, for whose interests directors weigh. This is why the plan places Mitbestimmung next to the unions track: **it is worker power expressed as corporate governance instead of, or alongside, collective bargaining.**
 
@@ -745,7 +745,7 @@ Neither is an accident. Each is a deliberate answer to "who gets to decide," and
               "a yearly bonus",
             ],
             correctIndex: 2,
-            explanation: "US law mandates no worker seats on company boards; labour's voice comes, if at all, through unions and bargaining outside the boardroom.",
+            explanation: "US law mandates no worker seats on company boards; labor's voice comes, if at all, through unions and bargaining outside the boardroom.",
             sourceLessonSlug: "fbf-mitbestimmung",
           },
           {
@@ -789,7 +789,7 @@ Neither is an accident. Each is a deliberate answer to "who gets to decide," and
 
 - **Liability: limited**, the same wall as the SARL.
 - **Taxation: entity-level** by default, again with options left to a professional.
-- **Ownership and transfer: actions (shares).** Unlike the SARL's parts sociales, the SAS issues **actions**, and its structure is friendlier to bringing in investors, which is one reason startups favour it. But note the limit: an SAS **cannot offer its shares to the public**; the traditional public, listable form is the **SA (société anonyme)**, France's classic stock corporation.
+- **Ownership and transfer: actions (shares).** Unlike the SARL's parts sociales, the SAS issues **actions**, and its structure is friendlier to bringing in investors, which is one reason startups favor it. But note the limit: an SAS **cannot offer its shares to the public**; the traditional public, listable form is the **SA (société anonyme)**, France's classic stock corporation.
 - **Governance: this is the headline.** The SAS gives founders **broad freedom to design governance in the bylaws** (the **statuts**). Where the SARL is largely fixed by statute, the SAS lets the owners write their own rules for who decides what, subject to a few required roles such as a president. That contractual freedom is the SAS's whole appeal.
 
 ## The lesson: same wall, opposite feel
@@ -825,7 +825,7 @@ Put them side by side and the four decisions do their job:
         },
         {
           prompt: "How does the US answer on workers and boards differ from Germany's?",
-          answer: "US law requires no worker seats on company boards; labour's voice comes, if at all, through unions and collective bargaining outside the boardroom. Germany reserves board seats for workers by law, putting labour inside the room where managers are overseen.",
+          answer: "US law requires no worker seats on company boards; labor's voice comes, if at all, through unions and collective bargaining outside the boardroom. Germany reserves board seats for workers by law, putting labor inside the room where managers are overseen.",
         },
       ],
     },
@@ -850,7 +850,7 @@ Put them side by side and the four decisions do their job:
 
 Here is the detail worth carrying, and it echoes the LLC lesson from courses 1 and 2. For a long time, Japan set a **minimum-capital barrier** to forming a company, which kept many would-be founders out. In a company-law reform in the **mid-2000s**, Japan **removed that minimum-capital barrier** and reorganised its company forms, making it far easier to start a company with very little capital. This course states that **conceptually** and names **no figure**, because the specific amounts are values it will not assert.
 
-**Why this matters:** it is another proof of the course's central claim. Whether it takes a pile of capital to form a company is **not a law of nature**; it is a policy dial a country can turn, and Japan turned it. The same reform also introduced a new **LLC-like form**, the **godo kaisha (GK)**, modelled on the American LLC, giving Japan a flexible, member-run alternative to the share-based KK. So Japan's menu, like every menu in this course, is a set of recent, revisable choices, not an eternal given.
+**Why this matters:** it is another proof of the course's central claim. Whether it takes a pile of capital to form a company is **not a law of nature**; it is a policy dial a country can turn, and Japan turned it. The same reform also introduced a new **LLC-like form**, the **godo kaisha (GK)**, modeled on the American LLC, giving Japan a flexible, member-run alternative to the share-based KK. So Japan's menu, like every menu in this course, is a set of recent, revisable choices, not an eternal given.
 
 **Reading these on sight:** "KK" or "Kabushiki Kaisha" is the standard Japanese stock corporation (shares, wall, directors, private or public); "GK" or "Godo Kaisha" is the newer LLC-style form. The clean part is that the KK reads like a corporation; the instructive part is that Japan's minimum-capital rule was a choice it changed. And, as ever, this is reading, not advice; a real Japanese venture takes advice in Japan.
 
@@ -904,7 +904,7 @@ The course keeps the membership numbers **general** ("millions of members," "a l
 
 Because it is the clearest proof that **a form's importance is itself a policy and cultural choice, not a property of the form.** The cooperative exists in US law too; Americans simply built their economy so that it stays at the margins, while the Nordic countries built theirs so that it sits in the middle. Nobody outlawed the US co-op and nobody mandated the Nordic one. Over generations, through law, culture, and habit, the two societies gave the same form very different weight, and that is exactly the kind of consequential choice this course exists to make visible.
 
-**Reading this on sight:** when you meet a Nordic grocery chain, dairy giant, or bank and find it is owned by its **members** and run **one member, one vote**, you are seeing co-op density in action, the same form the US menu keeps in the corner placed at the centre. And the through-line to course 3 is direct: the co-op you will study there is not a museum piece; somewhere, it is how the economy mainly runs. As always, this is understanding a choice, not advising anyone to make it.
+**Reading this on sight:** when you meet a Nordic grocery chain, dairy giant, or bank and find it is owned by its **members** and run **one member, one vote**, you are seeing co-op density in action, the same form the US menu keeps in the corner placed at the center. And the through-line to course 3 is direct: the co-op you will study there is not a museum piece; somewhere, it is how the economy mainly runs. As always, this is understanding a choice, not advising anyone to make it.
 
 ## Sources
 - International Cooperative Alliance. (n.d.). *Facts and figures*. https://www.ica.coop/en/cooperatives/facts-and-figures
@@ -920,7 +920,7 @@ Because it is the clearest proof that **a form's importance is itself a policy a
         },
         {
           prompt: "What LLC-like form did Japan's reform introduce?",
-          answer: "The godo kaisha (GK), modelled on the American LLC: a flexible, member-run alternative to the share-based kabushiki kaisha.",
+          answer: "The godo kaisha (GK), modeled on the American LLC: a flexible, member-run alternative to the share-based kabushiki kaisha.",
         },
         {
           prompt: "When a US reader sees 'K.K.' after a company name, what is a reasonable first read?",
@@ -1017,7 +1017,7 @@ Because it is the clearest proof that **a form's importance is itself a policy a
               "community company",
             ],
             correctIndex: 0,
-            explanation: "The godo kaisha (GK) is modelled on the US LLC: a flexible, member-run alternative to the share-based KK.",
+            explanation: "The godo kaisha (GK) is modeled on the US LLC: a flexible, member-run alternative to the share-based KK.",
             sourceLessonSlug: "fbf-japan-kk",
           },
           {
@@ -1130,12 +1130,12 @@ Because it is the clearest proof that **a form's importance is itself a policy a
 
 ## The state-owned enterprise (SOE)
 
-A **state-owned enterprise**, or **SOE**, is a business the **state owns and controls.** China has many, and the largest ones matter enormously to its economy. Many are organised as companies under China's company law, so they have a corporate shell, but the crucial reading is in ownership and governance:
+A **state-owned enterprise**, or **SOE**, is a business the **state owns and controls.** China has many, and the largest ones matter enormously to its economy. Many are organized as companies under China's company law, so they have a corporate shell, but the crucial reading is in ownership and governance:
 
 - **Liability: generally limited**, in the sense that the SOE is usually a company with its own legal personality.
 - **Taxation: entity-level**, as a company. This course names no rate.
 - **Ownership and transfer: the state is the owner.** For large central SOEs, state ownership is exercised through a government body (the State-owned Assets Supervision and Administration Commission, **SASAC**, at the central level, with local counterparts). Ownership does not sit with private shareholders in the way a US reader assumes; the ultimate owner is the state.
-- **Governance: this is the second surprise.** Beyond the ordinary corporate organs, the **Chinese Communist Party has a formal, institutional role in the governance of many Chinese firms**, including SOEs, typically through an internal Party organisation or committee within the company. This is a well-documented feature of the Chinese corporate landscape, and it means the lines of real decision-making can run outside the org chart a Western reader would draw.
+- **Governance: this is the second surprise.** Beyond the ordinary corporate organs, the **Chinese Communist Party has a formal, institutional role in the governance of many Chinese firms**, including SOEs, typically through an internal Party organization or committee within the company. This is a well-documented feature of the Chinese corporate landscape, and it means the lines of real decision-making can run outside the org chart a Western reader would draw.
 
 ## Why this breaks the US template
 
@@ -1146,7 +1146,7 @@ Run the US template over an SOE and two columns simply do not fit:
 | **Ownership** | Private shareholders | The state, via a government body |
 | **Governance** | Shareholders to board to officers | Corporate organs plus a formal Party role |
 
-**The state as the ultimate owner of major businesses**, and **an institutional Party role inside corporate governance**, are answers to the ownership and governance decisions that the American menu has no slot for. This is not a criticism dressed as a lesson; it is the course's method applied honestly. When you read a Chinese SOE, you must widen decisions three and four to include an owner (the state) and a decider (the Party organisation) that a US form would never list.
+**The state as the ultimate owner of major businesses**, and **an institutional Party role inside corporate governance**, are answers to the ownership and governance decisions that the American menu has no slot for. This is not a criticism dressed as a lesson; it is the course's method applied honestly. When you read a Chinese SOE, you must widen decisions three and four to include an owner (the state) and a decider (the Party organization) that a US form would never list.
 
 ## Keeping it accurate, and keeping it humble
 
@@ -1155,7 +1155,7 @@ Two honesty notes, because this is a subject where confident foreign summaries g
 - **China's system is large and varied.** There are central SOEs and local SOEs, wholly state-owned firms and mixed-ownership firms where the state and private investors both hold stakes, and the balance between them has shifted over time through policy. The course teaches the **shape** (state ownership is major; the Party has a governance role) and leaves the specifics, which change with policy, to specialists.
 - **This is description, not endorsement or condemnation.** The point is to read the form as it is, using the four decisions widened to fit, exactly as the course would read any other.
 
-**Reading this on sight:** a major Chinese enterprise whose ultimate owner is a state body, and inside which a Party organisation has a formal governance role, is a state-owned enterprise, an answer to "who owns it" and "who decides" that the US menu cannot express. The next lesson takes China's second invention, the one built precisely because **foreign** owners are kept out of certain sectors. And the rule stands: this is reading a system, not advice about operating in it, which is work for professionals in that jurisdiction.
+**Reading this on sight:** a major Chinese enterprise whose ultimate owner is a state body, and inside which a Party organization has a formal governance role, is a state-owned enterprise, an answer to "who owns it" and "who decides" that the US menu cannot express. The next lesson takes China's second invention, the one built precisely because **foreign** owners are kept out of certain sectors. And the rule stands: this is reading a system, not advice about operating in it, which is work for professionals in that jurisdiction.
 
 ## Sources
 - Organisation for Economic Co-operation and Development. (n.d.). *State-owned enterprises*. https://www.oecd.org/corporate/
@@ -1194,7 +1194,7 @@ China restricts or prohibits foreign ownership in certain sectors (internet and 
 **VIE** stands for **variable interest entity**, a term that comes from accounting. The structure works, in concept, like this:
 
 - A **foreign-listed holding company** is set up **outside** China (very often in the Cayman Islands). Foreign investors buy shares in **this** company.
-- The actual Chinese operating business (the one holding the restricted licences) is a **separate Chinese company**, owned on paper by Chinese individuals, not by the foreign holding company.
+- The actual Chinese operating business (the one holding the restricted licenses) is a **separate Chinese company**, owned on paper by Chinese individuals, not by the foreign holding company.
 - The two are tied together by a **web of contracts**: service and management agreements, loan agreements, equity-pledge agreements, and powers of attorney. Through these contracts, the offshore holding company is meant to capture the **economic benefits** of the Chinese business and exert **control** over it, **without formally owning its equity.**
 
 **So the foreign investor owns shares in an offshore company that has contractual claims on a Chinese business it does not legally own.** The ownership decision has been answered with a stack of contracts standing in for equity. That is why the VIE is **not an entity type**: it is a **contractual arrangement layered on top of two real companies.** Calling the VIE "a kind of Chinese company" is a category error; it is a structure, not a form.
@@ -1215,7 +1215,7 @@ This is the part to hold honestly, because it is genuinely unsettled:
       recallContent: [
         {
           prompt: "How does a Chinese state-owned enterprise stretch the ownership and governance decisions?",
-          answer: "Ownership: the ultimate owner is the state, exercised through a government body (SASAC at the central level) rather than private shareholders. Governance: beyond the ordinary corporate organs, the Communist Party has a formal, institutional role in many firms, typically through an internal Party organisation, so real decision-making can run outside the visible org chart.",
+          answer: "Ownership: the ultimate owner is the state, exercised through a government body (SASAC at the central level) rather than private shareholders. Governance: beyond the ordinary corporate organs, the Communist Party has a formal, institutional role in many firms, typically through an internal Party organization, so real decision-making can run outside the visible org chart.",
         },
         {
           prompt: "Why does a Chinese SOE break the US template for reading a company?",
@@ -1250,14 +1250,14 @@ A **private limited company** is the standard form for a serious Indian small or
 
 ## The Section 8 company: a not-for-profit built as a company
 
-Now India's instructive form. A **Section 8 company** is a **not-for-profit organised as a company**, named after the section of India's Companies Act that creates it. It is formed to promote purposes such as commerce, art, science, education, research, sports, social welfare, religion, or charity. Against the four decisions:
+Now India's instructive form. A **Section 8 company** is a **not-for-profit organized as a company**, named after the section of India's Companies Act that creates it. It is formed to promote purposes such as commerce, art, science, education, research, sports, social welfare, religion, or charity. Against the four decisions:
 
 - **Liability: limited**, like any company.
 - **Taxation: entity-level** as a company, though not-for-profits may qualify for specific tax treatment this course leaves to a professional.
 - **Ownership and transfer: members, but constrained.** It has members, but it carries a **non-distribution constraint**: it must **apply its profits (and any other income) to promoting its objects** and is **prohibited from paying dividends to its members.** Surplus goes back into the mission, not out to owners.
-- **Governance: a board**, directing the organisation toward its stated charitable objects.
+- **Governance: a board**, directing the organization toward its stated charitable objects.
 
-**Here is the pattern worth seeing.** The Section 8 company is India's answer to the same question the US answers with the **nonprofit corporation** from course 2: how do you build a mission-driven organisation with a corporate wall but no owners taking profit? Both answer with a **company that cannot distribute profit to members.** The names differ ("Section 8 company" in India, "nonprofit corporation" plus a 501(c) tax status in the US), and the tax mechanics differ, but the **core move, an owner-less, non-distributing company devoted to a purpose, recurs across both menus.** That recurrence is itself a finding: some answers to the four decisions are common enough to appear worldwide under different names.
+**Here is the pattern worth seeing.** The Section 8 company is India's answer to the same question the US answers with the **nonprofit corporation** from course 2: how do you build a mission-driven organization with a corporate wall but no owners taking profit? Both answer with a **company that cannot distribute profit to members.** The names differ ("Section 8 company" in India, "nonprofit corporation" plus a 501(c) tax status in the US), and the tax mechanics differ, but the **core move, an owner-less, non-distributing company devoted to a purpose, recurs across both menus.** That recurrence is itself a finding: some answers to the four decisions are common enough to appear worldwide under different names.
 
 **Reading these on sight:** an Indian "private limited" company is a close-held corporation (wall, shares not public, board-run); a "Section 8" company is a not-for-profit company that cannot pay profits out to members, India's cousin of the US nonprofit corporation. If the private limited felt familiar and the Section 8 company felt like the nonprofit lesson in a new language, that is the point: after a course of divergences, India shows how much also **converges.** And the rule holds to the end: this is reading India's forms, not advising anyone to use one, which is a job for an Indian professional.
 
@@ -1297,7 +1297,7 @@ Now India's instructive form. A **Section 8 company** is a **not-for-profit orga
               "public market",
               "founding family",
               "state",
-              "labour union",
+              "labor union",
             ],
             correctIndex: 2,
             explanation: "For large central SOEs, state ownership is exercised through a government body (SASAC), not by private shareholders.",
@@ -1312,7 +1312,7 @@ Now India's instructive form. A **Section 8 company** is a **not-for-profit orga
               "customer council",
             ],
             correctIndex: 0,
-            explanation: "The Party typically has an institutional role through an internal organisation, so real decision-making can run outside the visible corporate org chart.",
+            explanation: "The Party typically has an institutional role through an internal organization, so real decision-making can run outside the visible corporate org chart.",
             sourceLessonSlug: "fbf-china-soe",
           },
           {
@@ -1432,7 +1432,7 @@ Now India's instructive form. A **Section 8 company** is a **not-for-profit orga
               "tax election",
             ],
             correctIndex: 2,
-            explanation: "It is a not-for-profit organised as a company, named after the section of the Companies Act that creates it.",
+            explanation: "It is a not-for-profit organized as a company, named after the section of the Companies Act that creates it.",
             sourceLessonSlug: "fbf-india",
           },
           {
@@ -1495,7 +1495,7 @@ Pick **one foreign form** below (or another from this course). In **700 to 1,100
 1. **The German AG with co-determination.** A public stock corporation with a two-tier board and workers seated on the supervisory board by law.
 2. **The UK community interest company.** A limited company for social enterprise, with a community-interest test and an asset lock.
 3. **The French SAS.** A flexible joint-stock company whose governance is designed in the bylaws, popular with startups.
-4. **The Indian Section 8 company.** A not-for-profit organised as a company, barred from paying dividends to members.
+4. **The Indian Section 8 company.** A not-for-profit organized as a company, barred from paying dividends to members.
 5. **The Chinese VIE structure.** A contractual arrangement linking a foreign-listed offshore holding company to a restricted Chinese business.
 
 ## What your piece must contain

@@ -190,8 +190,8 @@ export default async function ExplorePage() {
             stats.freeCourses === stats.courses
               ? `Every one of the ${stats.courses} ${plural(stats.courses, "course")} here is currently free. Each course page shows its own price. For a class, a co-op, or a school, pricing is a conversation, ask us below and we will answer with a number for the number of students you actually have.`
               : stats.freeCourses > 0
-                ? `${stats.freeCourses} of the ${stats.courses} ${plural(stats.courses, "course")} here are free; the rest are paid. Every course page shows its price before you enrol. For a class, a co-op, or a school, ask us about pricing below.`
-                : "Every course page shows its price before you enrol. For a class, a co-op, or a school, ask us about pricing below.",
+                ? `${stats.freeCourses} of the ${stats.courses} ${plural(stats.courses, "course")} here are free; the rest are paid. Every course page shows its price before you enroll. For a class, a co-op, or a school, ask us about pricing below.`
+                : "Every course page shows its price before you enroll. For a class, a co-op, or a school, ask us about pricing below.",
         }
       : null,
     {
@@ -220,7 +220,7 @@ export default async function ExplorePage() {
     stats.sources > 0
       ? {
           q: "How do I know the content is accurate?",
-          a: `Every course publishes its bibliography, and individual claims are tracked against the source that backs them, ${stats.sources} ${plural(stats.sources, "source")} across the catalogue so far. Open any course, scroll to Sources, and check them. They are there to be used, not admired.`,
+          a: `Every course publishes its bibliography, and individual claims are tracked against the source that backs them, ${stats.sources} ${plural(stats.sources, "source")} across the catalog so far. Open any course, scroll to Sources, and check them. They are there to be used, not admired.`,
         }
       : null,
     tenant.requiresAgeGate
@@ -331,7 +331,7 @@ export default async function ExplorePage() {
             {
               n: 3,
               t: "Take the course",
-              d: "From the episode, enrol in the full course: lessons, quizzes, and recall practice, with progress saved as you go.",
+              d: "From the episode, enroll in the full course: lessons, quizzes, and recall practice, with progress saved as you go.",
             },
           ].map((s) => (
             <li key={s.n} className={card}>
@@ -555,8 +555,8 @@ export default async function ExplorePage() {
             The citation habit is deliberate too. Researchers assessing students&apos; ability to
             judge online information have found that students frequently struggle to evaluate the
             credibility of the sources they encounter (McGrew et al., 2018). A course that shows its
-            sources, and invites you to follow them, is a course a student can practise that
-            judgement on.
+            sources, and invites you to follow them, is a course a student can practice that
+            judgment on.
           </p>
           <p className="text-sm text-neutral-600 dark:text-neutral-400">
             We make no claims about test scores or learning gains for this curriculum. We have not
@@ -601,7 +601,7 @@ export default async function ExplorePage() {
       </section>
 
       {/* 8. FAQ — ONLY questions this repo can answer truthfully. Cost, logins, cohorts and
-             accuracy all come from real behaviour. What we cannot ground (hours per week) is
+             accuracy all come from real behavior. What we cannot ground (hours per week) is
              ABSENT rather than guessed. Standards alignment is now grounded — see section 5b. */}
       <section className="mt-14" aria-labelledby="faq-heading">
         <h2 id="faq-heading" className="text-2xl font-bold">
@@ -631,7 +631,7 @@ export default async function ExplorePage() {
         <p className="mt-4 text-sm text-neutral-600 dark:text-neutral-400">
           Something we haven&apos;t answered?{" "}
           <Link href="/help" className={textLink} style={accent}>
-            Read the help centre
+            Read the help center
           </Link>
           , or{" "}
           <a href="#pricing" className={textLink} style={accent}>

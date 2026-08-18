@@ -53,7 +53,7 @@ There is no villain in that four-step chain. There is a fertiliser decision made
       slug: "problems-with-no-author",
       title: "2 · Problems with no author",
       section: "Section 2 · Why it is hard",
-      body: `The hypoxic zone belongs to a category worth being able to recognise, because once you can, you see it constantly.
+      body: `The hypoxic zone belongs to a category worth being able to recognize, because once you can, you see it constantly.
 
 **Nobody caused it, and everybody did.** No individual contribution is significant. The aggregate is severe. Nobody can fix it by acting alone, and everyone acting alone is exactly how it is produced.
 
@@ -69,7 +69,7 @@ There is no villain in that four-step chain. There is a fertiliser decision made
 
 ## What has been tried
 
-There is a federal and state task force established in the 1990s specifically to address this, which tells you two things: it has been recognised as a serious problem for decades, and it has not been solved.
+There is a federal and state task force established in the 1990s specifically to address this, which tells you two things: it has been recognized as a serious problem for decades, and it has not been solved.
 
 That combination is characteristic of this class of problem, and it is worth sitting with rather than skipping past.
 
@@ -91,7 +91,7 @@ This is the most portable idea in the entire series, and the river is a uniquely
         {
           prompt: "Why does looking for someone to blame actively mislead here?",
           answer:
-            "Because the harm is the sum of reasonable individual actions. Blame points at people whose behaviour was normal and away from the structure that aggregates it.",
+            "Because the harm is the sum of reasonable individual actions. Blame points at people whose behavior was normal and away from the structure that aggregates it.",
         },
       ],
     },
@@ -167,7 +167,7 @@ You may have expected a figure for the size of the zone. There is one, it is mea
 
 **It is deliberately not in this course**, for a reason that is itself part of the lesson: **the measured extent varies substantially from year to year**, driven by rainfall, nutrient loading and storms. A course that stated one year's figure as though it were the fact would be doing exactly what the research course on this platform warns against, and it would be out of date within a year of publication.
 
-If you want the number, go to the agency that measures it. It is published every summer, with its methodology, by the organisations below. **Read it with its year attached.**
+If you want the number, go to the agency that measures it. It is published every summer, with its methodology, by the organizations below. **Read it with its year attached.**
 
 That habit, refusing to freeze a moving value into a sentence, is worth more than the number itself.
 

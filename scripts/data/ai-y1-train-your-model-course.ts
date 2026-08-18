@@ -478,7 +478,7 @@ You've gone from "AI is magic" to training, testing, and thinking hard about a m
           {
             prompt: "In ML terms, what is a \"label\"?",
             options: [
-              "A clue the model looks at, such as the colour",
+              "A clue the model looks at, such as the color",
               "The right-answer category you are teaching it",
               "A bug found inside the trained model",
               "The button that turns the webcam on",

@@ -505,7 +505,7 @@ This is NIST's **"Measure"** function in practice: you don't assert the system i
             prompt:
               "Your model needs to answer questions about your help-center docs, which change weekly. Best tool?",
             options: [
-              "Fine-tuning the model on the help-centre docs each week",
+              "Fine-tuning the model on the help-center docs each week",
               "RAG retrieval, which keeps knowledge fresh and citable",
               "Full fine-tuning repeated at the end of every week",
               "A higher sampling temperature on every request",
@@ -560,7 +560,7 @@ This is NIST's **"Measure"** function in practice: you don't assert the system i
               "Training loss keeps dropping but validation performance is stalling and declining. What's happening?",
             options: [
               "The model is generalising unusually well to the unseen data",
-              "Overfitting: it is memorising the training data, not the pattern",
+              "Overfitting: it is memorizing the training data, not the pattern",
               "The learning rate has been set far too low for this training run",
               "The dataset is simply far too large for this model's size",
             ],
@@ -601,7 +601,7 @@ This is NIST's **"Measure"** function in practice: you don't assert the system i
               "The weights for an open model are downloadable. Can you ship a commercial product on it?",
             options: [
               "Yes, downloadable weights always mean unlimited commercial use",
-              "Not necessarily; read the licence, 'open weights' is not 'do anything'",
+              "Not necessarily; read the license, 'open weights' is not 'do anything'",
               "Never, because open models can never be used commercially at all",
               "Only if you fine-tune the model first on your own proprietary data",
             ],

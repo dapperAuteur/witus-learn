@@ -497,7 +497,7 @@ The defense against all three is the loop you've now built: a **versioned eval s
             options: [
               "It is perfectly objective and entirely unbiased always",
               "It has verbosity and position biases, and can be injected",
-              "It removes the need for any labelled dataset at all",
+              "It removes the need for any labeled dataset at all",
               "It is always much cheaper than exact-match scoring too",
             ],
             correctIndex: 1,
@@ -522,7 +522,7 @@ The defense against all three is the loop you've now built: a **versioned eval s
             prompt: "Why must you log the model and prompt version with each request, and redact before storing logs?",
             options: [
               "To make the stored logs a great deal longer than before",
-              "So you can tie a behaviour change to the change that caused it",
+              "So you can tie a behavior change to the change that caused it",
               "Because the model provider requires you to do it that way",
               "To deliberately increase the token cost of each request",
             ],

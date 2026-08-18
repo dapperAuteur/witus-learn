@@ -22,15 +22,15 @@ export const RIVER_SOLD_DOWN_THE_RIVER_COURSE: AuthoredCourse = {
       section: "Section 1 · The trade",
       body: `People use "sold down the river" to mean betrayed. The phrase comes from this river, and its original meaning was literal.
 
-**Down** meant transfer from north to south: from the Upper South, where the enslaved population was large and the demand for labour had fallen, to the lower Mississippi, where cotton and sugar had created enormous demand. The Mississippi was the route.
+**Down** meant transfer from north to south: from the Upper South, where the enslaved population was large and the demand for labor had fallen, to the lower Mississippi, where cotton and sugar had created enormous demand. The Mississippi was the route.
 
 To be sold down the river meant being put on a boat, or walked overland in a coffle, and carried to a market in a place you had never been, hundreds of miles from anyone you knew.
 
 ## Why it was feared specifically
 
-Conditions on the lower Mississippi were understood at the time to be far harsher: brutal labour, high mortality from disease, heat. The Deep South had a reputation among enslaved people, and it was accurate.
+Conditions on the lower Mississippi were understood at the time to be far harsher: brutal labor, high mortality from disease, heat. The Deep South had a reputation among enslaved people, and it was accurate.
 
-But the fear was not principally about labour conditions. **It was about permanence of separation.** A sale downriver ended relationships. Parents and children, husbands and wives, siblings. Distance and the absence of any legal standing meant that in practice such a separation was final.
+But the fear was not principally about labor conditions. **It was about permanence of separation.** A sale downriver ended relationships. Parents and children, husbands and wives, siblings. Distance and the absence of any legal standing meant that in practice such a separation was final.
 
 That is what the phrase carries, and it is why it survived into ordinary speech as a word for the deepest kind of betrayal.
 
@@ -46,7 +46,7 @@ Sit with that second figure. It means the threat was not an abstraction or a rar
 
 It will not dramatise. There is no need. The documented facts of the trade are as affecting as anything that could be written about them, and adding intensity to them would be a way of making the writer present in something that is not about the writer.
 
-:::reveal What did "down" originally mean in "sold down the river"? ||| Transfer from the Upper South to the lower Mississippi, where demand for labour on cotton and sugar plantations was enormous.
+:::reveal What did "down" originally mean in "sold down the river"? ||| Transfer from the Upper South to the lower Mississippi, where demand for labor on cotton and sugar plantations was enormous.
 
 :::reveal Why was being sold downriver feared above other outcomes? ||| Because it ended relationships permanently. Distance and the absence of legal standing made separation from family final.`,
     },
@@ -107,14 +107,14 @@ The instruction they were given is to document them plainly: a steady frame of t
           {
             prompt: "In the original sense of the phrase, what did 'down the river' describe?",
             options: [
-              "Transfer from the Upper South to the lower Mississippi, where labour demand was enormous",
+              "Transfer from the Upper South to the lower Mississippi, where labor demand was enormous",
               "Being sent to work on the boats themselves rather than on land",
               "Escape attempts made by floating downstream toward the Gulf and open water",
               "Removal from a household in a city to an outlying agricultural property nearby",
             ],
             correctIndex: 0,
             explanation:
-              "It is a direction of travel on this specific river, from a region of falling labour demand to one of enormous demand created by cotton and sugar.",
+              "It is a direction of travel on this specific river, from a region of falling labor demand to one of enormous demand created by cotton and sugar.",
             sourceLessonSlug: "the-phrase",
           },
           {

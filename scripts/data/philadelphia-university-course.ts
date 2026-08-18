@@ -51,7 +51,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
   title: "Philadelphia: The University and the Block",
   description:
-    "A cited, high-school-and-up site course on the Black Bottom in West Philadelphia: the working-class Black neighbourhood that was certified as blighted and cleared in the 1960s so that a consortium of universities led by the University of Pennsylvania could build the University City Science Center, the nation's first urban research park. This is the second metro-spine course after the Indianapolis pilot, and it exists to test one argument: that the Black Bottom is Indiana Avenue's closest twin anywhere, because the instrument that did the work at both campuses is the same, a university assembling land through a public redevelopment authority under a 1945 state blight statute. The prerequisite courses teach the method and the model: The Green Book: How to Read a Route teaches you to read a record and research an address forward, and Indiana Avenue: A District and What Replaced It found that a university plus a redevelopment authority, not the highway, cleared that corridor. This course draws the comparison explicitly and stays precise about what is parallel and what is merely similar. You will learn the certification instrument under Pennsylvania's Urban Redevelopment Law, eminent domain and federal urban-renewal financing, and the West Philadelphia Corporation as the university's land-assembly surrogate; you will handle, with care and by way of the official commission report, a second and very different West Philadelphia decision, the MOVE bombing of 1985; you will look up a real parcel in the city's own Atlas, find the live civics of Penn's payments to the schools, and write a piece of grounded nonfiction. A 360 tour of the corridor is planned and will be added to the Now section when it is captured.",
+    "A cited, high-school-and-up site course on the Black Bottom in West Philadelphia: the working-class Black neighborhood that was certified as blighted and cleared in the 1960s so that a consortium of universities led by the University of Pennsylvania could build the University City Science Center, the nation's first urban research park. This is the second metro-spine course after the Indianapolis pilot, and it exists to test one argument: that the Black Bottom is Indiana Avenue's closest twin anywhere, because the instrument that did the work at both campuses is the same, a university assembling land through a public redevelopment authority under a 1945 state blight statute. The prerequisite courses teach the method and the model: The Green Book: How to Read a Route teaches you to read a record and research an address forward, and Indiana Avenue: A District and What Replaced It found that a university plus a redevelopment authority, not the highway, cleared that corridor. This course draws the comparison explicitly and stays precise about what is parallel and what is merely similar. You will learn the certification instrument under Pennsylvania's Urban Redevelopment Law, eminent domain and federal urban-renewal financing, and the West Philadelphia Corporation as the university's land-assembly surrogate; you will handle, with care and by way of the official commission report, a second and very different West Philadelphia decision, the MOVE bombing of 1985; you will look up a real parcel in the city's own Atlas, find the live civics of Penn's payments to the schools, and write a piece of grounded nonfiction. A 360 tour of the corridor is planned and will be added to the Now section when it is captured.",
   lessons: [
     // ═══════════════════════════════════════════════════════════════════════════════════════
     // SECTION 1 · Then  (beat 1: US and state/local history)
@@ -62,17 +62,17 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
       section: "Section 1 · Then",
       body: `**Start with the two courses behind this one.** This course assumes you have finished *The Green Book: How to Read a Route*, which taught a method: read a record down to its silences, chain a route, read a gap as evidence, research an address forward, and give every figure its owner. It also assumes *Indiana Avenue: A District and What Replaced It*, which took that method to one corridor and found something specific. **On Indiana Avenue the popular story blamed the interstate, but the record blamed a university assembling land through a redevelopment authority.** This course goes to a second campus to ask whether that instrument travels. It does, and West Philadelphia is where you can see it most clearly, because here there is no highway to argue about.
 
-**The place.** The **Black Bottom** was a predominantly working-class and working-poor African American neighbourhood in West Philadelphia, a mix of homes and small commerce spread across the blocks north and south of Market Street west of the University of Pennsylvania (Puckett, n.d.-a). It is the ground under what is now called University City.
+**The place.** The **Black Bottom** was a predominantly working-class and working-poor African American neighborhood in West Philadelphia, a mix of homes and small commerce spread across the blocks north and south of Market Street west of the University of Pennsylvania (Puckett, n.d.-a). It is the ground under what is now called University City.
 
-**Whose word "Black Bottom" is, and why that matters.** The name was the residents' own term for their neighbourhood, not a label a planner stamped on a map (Puckett, n.d.-a). That distinction is a research instruction. **A neighbourhood people name for themselves and a redevelopment area a government draws are two different objects**, and this course keeps them apart on purpose: Section 3 shows that the legal boundary was precise to the block, while the remembered Black Bottom had edges that former residents still describe differently from one another. When you read that "the Black Bottom was cleared," ask immediately: cleared as the residents drew it, or as the Redevelopment Authority certified it? They are not the same shape.
+**Whose word "Black Bottom" is, and why that matters.** The name was the residents' own term for their neighborhood, not a label a planner stamped on a map (Puckett, n.d.-a). That distinction is a research instruction. **A neighborhood people name for themselves and a redevelopment area a government draws are two different objects**, and this course keeps them apart on purpose: Section 3 shows that the legal boundary was precise to the block, while the remembered Black Bottom had edges that former residents still describe differently from one another. When you read that "the Black Bottom was cleared," ask immediately: cleared as the residents drew it, or as the Redevelopment Authority certified it? They are not the same shape.
 
-**Who lived there, from the census the clearance itself produced.** In the blocks the Science Center would take, a 1960 count found that **non-white households occupied 333 of 429 dwelling units, about 77.6 percent** (University of Pennsylvania University Archives, n.d.). Hold that number next to Indiana Avenue's, where 77 percent of residents were identified as Black by 1920 (Encyclopedia of Indianapolis, n.d.). **Two Black neighbourhoods, two cities, the same order of magnitude, forty years apart.** That is the first sign you are looking at a pattern rather than a coincidence.
+**Who lived there, from the census the clearance itself produced.** In the blocks the Science Center would take, a 1960 count found that **non-white households occupied 333 of 429 dwelling units, about 77.6 percent** (University of Pennsylvania University Archives, n.d.). Hold that number next to Indiana Avenue's, where 77 percent of residents were identified as Black by 1920 (Encyclopedia of Indianapolis, n.d.). **Two Black neighborhoods, two cities, the same order of magnitude, forty years apart.** That is the first sign you are looking at a pattern rather than a coincidence.
 
-**What the neighbourhood was to the people in it.** The community advocate Walter Palmer, who grew up there, described a place where residents felt safe enough to "walk on the street 2 o'clock, 3 o'clock in the morning" (Palmer, as quoted in Puckett, n.d.-a). Read that the way *Indiana Avenue* taught you to read a business list: not as nostalgia, but as evidence of a functioning social fabric. A place where people know each other well enough to be out at three in the morning is infrastructure for ordinary safety, and it does not show up on a survey form that measures plumbing and building age.
+**What the neighborhood was to the people in it.** The community advocate Walter Palmer, who grew up there, described a place where residents felt safe enough to "walk on the street 2 o'clock, 3 o'clock in the morning" (Palmer, as quoted in Puckett, n.d.-a). Read that the way *Indiana Avenue* taught you to read a business list: not as nostalgia, but as evidence of a functioning social fabric. A place where people know each other well enough to be out at three in the morning is infrastructure for ordinary safety, and it does not show up on a survey form that measures plumbing and building age.
 
-**One difference from Indiana Avenue, stated now so you do not blur it later.** Indiana Avenue was primarily a **commercial and cultural corridor**, a business street with Green Book listings and a jazz scene. The Black Bottom was primarily a **residential neighbourhood**. That difference changes what was lost and how it is counted: on the Avenue you count businesses and listings, and here you count households and renters. **The instrument is the twin. The thing it acted on is a cousin, not a twin**, and Section 3 will hold that line carefully.
+**One difference from Indiana Avenue, stated now so you do not blur it later.** Indiana Avenue was primarily a **commercial and cultural corridor**, a business street with Green Book listings and a jazz scene. The Black Bottom was primarily a **residential neighborhood**. That difference changes what was lost and how it is counted: on the Avenue you count businesses and listings, and here you count households and renters. **The instrument is the twin. The thing it acted on is a cousin, not a twin**, and Section 3 will hold that line carefully.
 
-**A warning about tone, which is a research instruction.** The people of the Black Bottom have living descendants who organise today as the Black Bottom Tribe and who are still asking the city for a marker (Bond, 2023). Do not write about this neighbourhood as a vanished golden age, and do not write about it as a slum that needed clearing. **Write what people built, name them where the record names them, and keep the vanishing for the parts you can document.** Every framing choice in this course is checkable against a source, and so should yours be.
+**A warning about tone, which is a research instruction.** The people of the Black Bottom have living descendants who organize today as the Black Bottom Tribe and who are still asking the city for a marker (Bond, 2023). Do not write about this neighborhood as a vanished golden age, and do not write about it as a slum that needed clearing. **Write what people built, name them where the record names them, and keep the vanishing for the parts you can document.** Every framing choice in this course is checkable against a source, and so should yours be.
 
 ## Sources
 - Bond, M. (2023, June 8). *Black Bottom Tribe fights for a sign of their lost community in West Philly*. WHYY. https://whyy.org/articles/as-building-boom-continues-in-west-philly-black-bottom-tribe-fights-for-a-sign-of-the-community-they-lost/
@@ -82,13 +82,13 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
     },
     {
       slug: "pa-then-reading-the-record",
-      title: "2 · Reading the neighbourhood, and the disagreement in the numbers",
+      title: "2 · Reading the neighborhood, and the disagreement in the numbers",
       section: "Section 1 · Then",
-      body: `Now apply the method. You are going to read one neighbourhood out of the records its own clearance produced, and then notice that the records do not agree with each other. **The disagreement is not a problem to solve. It is the lesson.**
+      body: `Now apply the method. You are going to read one neighborhood out of the records its own clearance produced, and then notice that the records do not agree with each other. **The disagreement is not a problem to solve. It is the lesson.**
 
-**Where the numbers come from.** Federal urban renewal required a survey. To take an area, the Redevelopment Authority had to document who and what was in it, so the clearest census of the Black Bottom is the one the Authority compiled in order to clear it (University of Pennsylvania University Archives, n.d.). That is a recurring irony of this kind of history: **the best record of a neighbourhood is often the paperwork of its removal**, which is exactly why *The Green Book* course told you to research an address forward through the documents of the people who acted on it.
+**Where the numbers come from.** Federal urban renewal required a survey. To take an area, the Redevelopment Authority had to document who and what was in it, so the clearest census of the Black Bottom is the one the Authority compiled in order to clear it (University of Pennsylvania University Archives, n.d.). That is a recurring irony of this kind of history: **the best record of a neighborhood is often the paperwork of its removal**, which is exactly why *The Green Book* course told you to research an address forward through the documents of the people who acted on it.
 
-**The one number almost everyone agrees on.** The redevelopment zone that took the neighbourhood was called **University Redevelopment Area Unit 3**, and **2,653 people are known to have been displaced from it, roughly 78 percent of them African American, for the most part renters** (Puckett, n.d.-b). That figure has an owner, a scope, and a source, which is the standard this course holds every figure to.
+**The one number almost everyone agrees on.** The redevelopment zone that took the neighborhood was called **University Redevelopment Area Unit 3**, and **2,653 people are known to have been displaced from it, roughly 78 percent of them African American, for the most part renters** (Puckett, n.d.-b). That figure has an owner, a scope, and a source, which is the standard this course holds every figure to.
 
 **Now watch the same event produce five different numbers, and learn to sort them.** Ask, of each, one question: **what exactly is being counted, and over what area?**
 
@@ -102,11 +102,11 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
 
 (University of Pennsylvania University Archives, n.d.; Puckett, n.d.-a, n.d.-b.)
 
-**Those numbers are not in conflict. They are answers to different questions.** 666 and 2,653 differ by a factor of four not because someone lied but because one counts a single project and the other counts an entire redevelopment area. **The 10,000 figure is the loosest**, an outer bound for the whole neighbourhood over a longer span, and it is the one to handle most carefully, exactly the way *Indiana Avenue* handled the "17,000 displaced" newspaper figure: attribute it, state its scope, and do not adopt it as if it were a survey. **This course does not pick a single "Black Bottom displacement number," because there is no single question that all five are answering.**
+**Those numbers are not in conflict. They are answers to different questions.** 666 and 2,653 differ by a factor of four not because someone lied but because one counts a single project and the other counts an entire redevelopment area. **The 10,000 figure is the loosest**, an outer bound for the whole neighborhood over a longer span, and it is the one to handle most carefully, exactly the way *Indiana Avenue* handled the "17,000 displaced" newspaper figure: attribute it, state its scope, and do not adopt it as if it were a survey. **This course does not pick a single "Black Bottom displacement number," because there is no single question that all five are answering.**
 
-**A boundary is contested the same way a count is.** The Redevelopment Authority's Unit 3 had a legal boundary precise to the block, which Section 3 gives exactly. The residents' Black Bottom did not. As one community history puts it, the boundaries "were never fixed and different people have different memories," with the neighbourhood generally remembered as running west from around 32nd or 33rd Street (The Black Bottom, n.d.). **When you write about where the Black Bottom was, say whose boundary you mean**, the government's or the neighbourhood's, because a reader cannot tell which one you are using unless you tell them.
+**A boundary is contested the same way a count is.** The Redevelopment Authority's Unit 3 had a legal boundary precise to the block, which Section 3 gives exactly. The residents' Black Bottom did not. As one community history puts it, the boundaries "were never fixed and different people have different memories," with the neighborhood generally remembered as running west from around 32nd or 33rd Street (The Black Bottom, n.d.). **When you write about where the Black Bottom was, say whose boundary you mean**, the government's or the neighborhood's, because a reader cannot tell which one you are using unless you tell them.
 
-**What the record does not settle.** It does not tell you what every family thought, where each one went, or what the corner felt like on an ordinary evening. Palmer's memory of a safe street is one person's testimony, cited as testimony. **A displacement count is a fact about a document; a neighbourhood is a fact about people**, and the gap between those two things is the space every later section of this course works in.
+**What the record does not settle.** It does not tell you what every family thought, where each one went, or what the corner felt like on an ordinary evening. Palmer's memory of a safe street is one person's testimony, cited as testimony. **A displacement count is a fact about a document; a neighborhood is a fact about people**, and the gap between those two things is the space every later section of this course works in.
 
 ## Sources
 - Puckett, J. L. (n.d.-a). *The University City Science Center and the Black Bottom*. West Philadelphia Collaborative History, University of Pennsylvania Graduate School of Education. https://collaborativehistory.gse.upenn.edu/stories/university-city-science-center-and-black-bottom
@@ -116,25 +116,25 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
       recallContent: [
         {
           prompt: "What was the Black Bottom, and where was it?",
-          answer: "A predominantly working-class and working-poor African American neighbourhood in West Philadelphia, a mix of homes and small commerce north and south of Market Street west of the University of Pennsylvania. It is the ground under what is now University City.",
+          answer: "A predominantly working-class and working-poor African American neighborhood in West Philadelphia, a mix of homes and small commerce north and south of Market Street west of the University of Pennsylvania. It is the ground under what is now University City.",
         },
         {
           prompt: "Why does it matter that 'Black Bottom' was the residents' own word?",
-          answer: "Because a neighbourhood people name for themselves and a redevelopment area a government draws are two different objects with two different boundaries. The remembered Black Bottom had fuzzy edges; the legal Unit 3 was precise to the block. Keeping them apart is the research discipline.",
+          answer: "Because a neighborhood people name for themselves and a redevelopment area a government draws are two different objects with two different boundaries. The remembered Black Bottom had fuzzy edges; the legal Unit 3 was precise to the block. Keeping them apart is the research discipline.",
         },
         {
           prompt: "What did the 1960 census of the future Science Center blocks find, and what Indianapolis figure does it echo?",
-          answer: "Non-white households occupied 333 of 429 dwelling units, about 77.6 percent. It echoes Indiana Avenue being about 77 percent Black by 1920: two Black neighbourhoods, same order of magnitude, forty years apart.",
+          answer: "Non-white households occupied 333 of 429 dwelling units, about 77.6 percent. It echoes Indiana Avenue being about 77 percent Black by 1920: two Black neighborhoods, same order of magnitude, forty years apart.",
         },
         {
           prompt: "What is the key difference between the Black Bottom and Indiana Avenue, and what does it change?",
-          answer: "Indiana Avenue was primarily a commercial and cultural corridor; the Black Bottom was primarily a residential neighbourhood. It changes what was lost and how it is counted: businesses and listings on the Avenue, households and renters here. The instrument is the twin; the thing it acted on is a cousin.",
+          answer: "Indiana Avenue was primarily a commercial and cultural corridor; the Black Bottom was primarily a residential neighborhood. It changes what was lost and how it is counted: businesses and listings on the Avenue, households and renters here. The instrument is the twin; the thing it acted on is a cousin.",
         },
       ],
     },
     {
       slug: "pa-quiz-then",
-      title: "3 · Quiz: the neighbourhood",
+      title: "3 · Quiz: the neighborhood",
       section: "Section 1 · Then",
       quiz: {
         passingScore: 70,
@@ -148,19 +148,19 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
             options: [
               "A commercial and jazz corridor like Indiana Avenue",
               "A university research park opened in the late 1920s",
-              "A working-class Black residential neighbourhood near Penn",
+              "A working-class Black residential neighborhood near Penn",
               "A city-run public housing project opened around 1955",
             ],
             correctIndex: 2,
-            explanation: "It was a residential neighbourhood, a mix of homes and small commerce, which is the key difference from Indiana Avenue's business corridor.",
+            explanation: "It was a residential neighborhood, a mix of homes and small commerce, which is the key difference from Indiana Avenue's business corridor.",
             sourceLessonSlug: "pa-then-black-bottom",
           },
           {
             prompt: "Why does the course insist 'Black Bottom' was the residents' own word?",
             options: [
-              "Because a self-named neighbourhood and a legally drawn redevelopment area are two different objects",
+              "Because a self-named neighborhood and a legally drawn redevelopment area are two different objects",
               "Because the Redevelopment Authority coined the name and printed it on its 1960 blight survey maps",
-              "Because it proves the neighbourhood was too small to be drawn on the city's official planning maps",
+              "Because it proves the neighborhood was too small to be drawn on the city's official planning maps",
               "Because the name appears as an official government label on the 1960 federal census form itself",
             ],
             correctIndex: 0,
@@ -177,9 +177,9 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "Walter Palmer's memory that residents felt safe enough to walk the street at 2 or 3 in the morning is used in this course as:",
             options: [
-              "Proof that crime never once occurred anywhere in the neighbourhood",
+              "Proof that crime never once occurred anywhere in the neighborhood",
               "Cited testimony to a functioning social fabric a survey cannot measure",
-              "A documented reason the neighbourhood's clearance was fully justified",
+              "A documented reason the neighborhood's clearance was fully justified",
               "An invented atmospheric detail carrying no cited source behind it",
             ],
             correctIndex: 1,
@@ -211,7 +211,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
               "The Redevelopment Authority deliberately destroyed the displacement records",
               "The five circulating figures each count a different thing over a different area",
               "The real displacement total remains a sealed municipal secret to this day",
-              "Nobody ever actually counted the residents displaced from the neighbourhood",
+              "Nobody ever actually counted the residents displaced from the neighborhood",
             ],
             correctIndex: 1,
             explanation: "666, 550 to 700, half of 2,653, 2,653, and 'as high as 10,000' each count a different thing over a different scope. Teaching that is the point.",
@@ -222,7 +222,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
             options: [
               "Adopted as the single definitive Black Bottom displacement total",
               "Averaged together with the 2,653 Unit 3 figure to split the difference",
-              "Attributed as an outer bound for the whole neighbourhood, not a survey",
+              "Attributed as an outer bound for the whole neighborhood, not a survey",
               "Ignored entirely as an unusable and worthless made-up estimate",
             ],
             correctIndex: 2,
@@ -234,11 +234,11 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
             options: [
               "Because the Redevelopment Authority was a demographic research institution",
               "Because federal urban renewal required a survey before an area could be taken",
-              "Because the neighbourhood's residents refused to be counted by anyone else",
+              "Because the neighborhood's residents refused to be counted by anyone else",
               "Because the University of Pennsylvania funded its own private census study",
             ],
             correctIndex: 1,
-            explanation: "A recurring irony: the best record of a neighbourhood is often the documentation of its clearance.",
+            explanation: "A recurring irony: the best record of a neighborhood is often the documentation of its clearance.",
             sourceLessonSlug: "pa-then-reading-the-record",
           },
           {
@@ -250,7 +250,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
               "Entirely unknown to every former resident and historian alike today",
             ],
             correctIndex: 1,
-            explanation: "A remembered neighbourhood has fuzzy edges; the legal redevelopment area did not. When you write where it was, say whose boundary you mean.",
+            explanation: "A remembered neighborhood has fuzzy edges; the legal redevelopment area did not. When you write where it was, say whose boundary you mean.",
             sourceLessonSlug: "pa-then-reading-the-record",
           },
           {
@@ -286,7 +286,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
               "Both are facts about documents rather than about any people",
             ],
             correctIndex: 1,
-            explanation: "A count is a fact about a document; a neighbourhood is a fact about people. Later sections work in the gap between them.",
+            explanation: "A count is a fact about a document; a neighborhood is a fact about people. Later sections work in the gap between them.",
             sourceLessonSlug: "pa-then-reading-the-record",
           },
           {
@@ -305,7 +305,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
               "The Powelton Renewal Tract",
             ],
             correctIndex: 1,
-            explanation: "Unit 3 is the legal object with the precise boundary; the Black Bottom is the remembered neighbourhood. The course keeps the two apart.",
+            explanation: "Unit 3 is the legal object with the precise boundary; the Black Bottom is the remembered neighborhood. The course keeps the two apart.",
             sourceLessonSlug: "pa-then-reading-the-record",
           },
         ],
@@ -320,15 +320,15 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
       section: "Section 2 · Built",
       body: `Beat 2 of the site template asks: **why does it look like that?** For West Philadelphia the answer starts before any building, with a name, because here the naming came first and the buildings were built to make the name true.
 
-**The catalyst, and a caution about it.** In April 1958 a Korean doctoral student, In-Ho Oh, was robbed and killed near the Penn campus. The universities and hospitals of the area used the shock of that crime to organise, and in **1959 they founded the West Philadelphia Corporation** (Puckett, n.d.-a). **Notice the shape of that sentence and be careful with it.** A real crime became the public reason for an institutional land programme. This course does not claim the founders were insincere about safety, and it does not let "it started with a murder" stand in for the decades of acquisition that followed. Both facts are true at once, and Section 3 is about the second one.
+**The catalyst, and a caution about it.** In April 1958 a Korean doctoral student, In-Ho Oh, was robbed and killed near the Penn campus. The universities and hospitals of the area used the shock of that crime to organize, and in **1959 they founded the West Philadelphia Corporation** (Puckett, n.d.-a). **Notice the shape of that sentence and be careful with it.** A real crime became the public reason for an institutional land program. This course does not claim the founders were insincere about safety, and it does not let "it started with a murder" stand in for the decades of acquisition that followed. Both facts are true at once, and Section 3 is about the second one.
 
-**The name.** The corporation and its partners promoted the label **"University City"** for the district, and the University City Science Center took the district's new name into its own (Puckett, n.d.-a; Tomek, n.d.). A place called the Black Bottom is a neighbourhood with residents. A place called University City is a campus with an institution. **Renaming is the first move of an expansion, because it changes what kind of thing the ground is understood to be**, and a learner who watched *Indiana Avenue* rename the Avenue's neighbourhoods "Midtown" already knows to treat a new district name as evidence rather than as geography.
+**The name.** The corporation and its partners promoted the label **"University City"** for the district, and the University City Science Center took the district's new name into its own (Puckett, n.d.-a; Tomek, n.d.). A place called the Black Bottom is a neighborhood with residents. A place called University City is a campus with an institution. **Renaming is the first move of an expansion, because it changes what kind of thing the ground is understood to be**, and a learner who watched *Indiana Avenue* rename the Avenue's neighborhoods "Midtown" already knows to treat a new district name as evidence rather than as geography.
 
 **What was built, as a building type.** The **University City Science Center**, incorporated in the fall of **1963**, was the nation's first and largest urban research park (Tomek, n.d.; Puckett, n.d.-a). A research park is a specific typology: laboratory and office buildings, set on superblocks, oriented to institutions and to parking rather than to a street of front doors. Its architecture is the opposite of the Black Bottom's rowhouse fabric, and that opposition is the point. **A rowhouse block is addressed to the sidewalk; a research campus is addressed to the institution.** You can read the change of power in the change of built form without knowing a single date.
 
 **A controversy Indianapolis did not have, and it belongs in beat 2 because it is about what the buildings were for.** When Penn students occupied College Hall in February 1969, they were protesting two things at once: the displacement of the Black Bottom, and **classified war research** connected to the Science Center (University of Pennsylvania University Archives, n.d.). Keep those two grievances distinct and cited, because they are different claims. But note the pairing, because *plans/37* flagged exactly this hinge: the postwar campus and the postwar defense complex were often the same institutions, and a building can be an instrument of expansion at home and of research for a war abroad at the same time. **Indianapolis's campus was a campus. Philadelphia's research park carried a second argument on its back**, and honest history keeps both.
 
-**The transferable skill of this lesson.** Before you ask who cleared a neighbourhood, ask **what the replacement was built to be**, because the building type tells you who the ground was re-addressed to. A rowhouse serves a household. A research park serves an institution and, here, in part a defense contract. **The typology is the motive, made visible.**
+**The transferable skill of this lesson.** Before you ask who cleared a neighborhood, ask **what the replacement was built to be**, because the building type tells you who the ground was re-addressed to. A rowhouse serves a household. A research park serves an institution and, here, in part a defense contract. **The typology is the motive, made visible.**
 
 ## Sources
 - Puckett, J. L. (n.d.-a). *The University City Science Center and the Black Bottom*. West Philadelphia Collaborative History, University of Pennsylvania Graduate School of Education. https://collaborativehistory.gse.upenn.edu/stories/university-city-science-center-and-black-bottom
@@ -337,7 +337,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
       recallContent: [
         {
           prompt: "Why is the clearest census of the Black Bottom the one the Redevelopment Authority made?",
-          answer: "Because federal urban renewal required a survey before an area could be taken, so the best record of the neighbourhood is the paperwork of its removal. That is why the method course said to research an address forward through the documents of the people who acted on it.",
+          answer: "Because federal urban renewal required a survey before an area could be taken, so the best record of the neighborhood is the paperwork of its removal. That is why the method course said to research an address forward through the documents of the people who acted on it.",
         },
         {
           prompt: "What is the one displacement figure with a clear owner and scope, and what does it cover?",
@@ -353,7 +353,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
         },
         {
           prompt: "When you say where the Black Bottom was, what must you specify?",
-          answer: "Whose boundary you mean. The Redevelopment Authority's Unit 3 had a legal boundary precise to the block; the residents' remembered neighbourhood did not. A reader cannot tell which you are using unless you say.",
+          answer: "Whose boundary you mean. The Redevelopment Authority's Unit 3 had a legal boundary precise to the block; the residents' remembered neighborhood did not. A reader cannot tell which you are using unless you say.",
         },
       ],
     },
@@ -365,9 +365,9 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
 
 :::figure https://res.cloudinary.com/devdash54321/image/upload/v1786413278/witus/courses/route-place-histories/philadelphia-the-university-and-the-block/black-bottom-mosaic-philadelphia.jpg ||| A tiled mosaic memorial wall set against a concrete structure. At the left, two hands hold a red heart lettered BLACK BOTTOM. The centre shows a street map of the neighbourhood in terracotta and black tile. Above it a yellow mechanical digger faces a row of small houses, and at the right children are shown skipping. Panels of lettered tiles carry text describing a community that once existed between 32nd Street and Walnut, and stating that urban renewal destroyed it. Dead leaves are heaped at the base. ||| The Black Bottom memorial mosaic. Read it as a document rather than as decoration: the neighbourhood survives here as a map, a heart, and a sentence about what happened to it, mounted on the structure that stands where it was. The digger is in the picture, facing the houses. ||| Austinmurphy. Black-Bottom-mosaic-2014.JPG. CC BY-SA 3.0. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Black-Bottom-mosaic-2014.JPG
 
-**What replaced the Black Bottom.** By the end of **1967** the Market Street corridor had been leveled for the Science Center and for **University City High School** (Puckett, n.d.-b). The Science Center rose on the blocks between roughly 34th and 38th Streets on Market, and it kept growing for decades into the research campus that stands there now (Tomek, n.d.). Where 429 dwelling units had held families, by 1970 only 15 dwelling units remained in the Science Center area (University of Pennsylvania University Archives, n.d.). **That is the substitution in one line: a neighbourhood of homes became a campus of laboratories.**
+**What replaced the Black Bottom.** By the end of **1967** the Market Street corridor had been leveled for the Science Center and for **University City High School** (Puckett, n.d.-b). The Science Center rose on the blocks between roughly 34th and 38th Streets on Market, and it kept growing for decades into the research campus that stands there now (Tomek, n.d.). Where 429 dwelling units had held families, by 1970 only 15 dwelling units remained in the Science Center area (University of Pennsylvania University Archives, n.d.). **That is the substitution in one line: a neighborhood of homes became a campus of laboratories.**
 
-**Now the control case, and it is what makes West Philadelphia teach so well.** In the same years, the **same** Redevelopment Authority ran a renewal project a few miles east in **Society Hill**, and it did almost the reverse. Instead of clearing the old fabric, the Authority acquired hundreds of dilapidated historic rowhouses and sold them cheaply to buyers who agreed to restore them to strict standards, working with a newly created Historical Commission (Encyclopedia of Greater Philadelphia, n.d.-a). **The buildings in Society Hill were largely saved. The people mostly were not.** The neighbourhood went from well below the poverty line to one of the city's most affluent, and most of the existing lower-income residents and businesses were displaced anyway (Encyclopedia of Greater Philadelphia, n.d.-a).
+**Now the control case, and it is what makes West Philadelphia teach so well.** In the same years, the **same** Redevelopment Authority ran a renewal project a few miles east in **Society Hill**, and it did almost the reverse. Instead of clearing the old fabric, the Authority acquired hundreds of dilapidated historic rowhouses and sold them cheaply to buyers who agreed to restore them to strict standards, working with a newly created Historical Commission (Encyclopedia of Greater Philadelphia, n.d.-a). **The buildings in Society Hill were largely saved. The people mostly were not.** The neighborhood went from well below the poverty line to one of the city's most affluent, and most of the existing lower-income residents and businesses were displaced anyway (Encyclopedia of Greater Philadelphia, n.d.-a).
 
 **Put the two projects side by side, because the pair is the lesson.**
 
@@ -379,7 +379,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
 | The residents | Displaced | Largely displaced |
 | The result | A research campus | An affluent historic district |
 
-**Read the bottom two rows together.** Preservation and clearance are opposite treatments of the buildings, and they produced the **same** treatment of the people. **That is the finding, and it is uncomfortable in a useful way**: the variable that determined whether a neighbourhood was razed or restored was not "is the fabric worth saving," it was what the ground was wanted for and who was wanted on it. Society Hill's rowhouses were wanted, so they were kept; its poorer residents were not, so they went. The Black Bottom's rowhouses were not wanted, so they were cleared; its residents were not wanted either. **Displacement was the constant. The building's fate was the variable.** A course that only studied clearance would have missed that, which is why the control case matters.
+**Read the bottom two rows together.** Preservation and clearance are opposite treatments of the buildings, and they produced the **same** treatment of the people. **That is the finding, and it is uncomfortable in a useful way**: the variable that determined whether a neighborhood was razed or restored was not "is the fabric worth saving," it was what the ground was wanted for and who was wanted on it. Society Hill's rowhouses were wanted, so they were kept; its poorer residents were not, so they went. The Black Bottom's rowhouses were not wanted, so they were cleared; its residents were not wanted either. **Displacement was the constant. The building's fate was the variable.** A course that only studied clearance would have missed that, which is why the control case matters.
 
 **What this does to a naive preservation story.** It is tempting to conclude that the Black Bottom's tragedy was that no one designated its buildings in time, the way *Indiana Avenue* showed designation arriving after the clearance. Society Hill complicates that. **Designation and preservation are tools, and a tool serves whoever holds it.** Section 3 is about who held the tools here.
 
@@ -391,11 +391,11 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
       recallContent: [
         {
           prompt: "What was the West Philadelphia Corporation, and what event preceded its founding?",
-          answer: "A corporation founded in 1959 by the area's universities and hospitals to coordinate land and redevelopment. Its founding followed the 1958 robbery and killing of Korean doctoral student In-Ho Oh, which the institutions used to organise.",
+          answer: "A corporation founded in 1959 by the area's universities and hospitals to coordinate land and redevelopment. Its founding followed the 1958 robbery and killing of Korean doctoral student In-Ho Oh, which the institutions used to organize.",
         },
         {
           prompt: "Why does the course treat the renaming of the district as evidence?",
-          answer: "Because renaming the Black Bottom as University City changes what kind of thing the ground is understood to be, from a neighbourhood with residents to a campus with an institution. A new district name is the first move of an expansion.",
+          answer: "Because renaming the Black Bottom as University City changes what kind of thing the ground is understood to be, from a neighborhood with residents to a campus with an institution. A new district name is the first move of an expansion.",
         },
         {
           prompt: "What kind of building type is a research park, and how does it differ from the Black Bottom's fabric?",
@@ -440,7 +440,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
       recallContent: [
         {
           prompt: "State the Black Bottom substitution in one line, with the numbers.",
-          answer: "A neighbourhood of homes became a campus of laboratories: the Market corridor was leveled by the end of 1967 for the Science Center and University City High School, and where 429 dwelling units had stood, only 15 remained in the Science Center area by 1970.",
+          answer: "A neighborhood of homes became a campus of laboratories: the Market corridor was leveled by the end of 1967 for the Science Center and University City High School, and where 429 dwelling units had stood, only 15 remained in the Science Center area by 1970.",
         },
         {
           prompt: "Why is Society Hill the course's control case?",
@@ -509,7 +509,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
 
 **On Indiana Avenue, the surrogate was Hoosier Realty Corporation**, a nonprofit that Indiana University formed in 1962 and that went on to acquire more than 2,000 houses and lots. The lesson there was: land assembly gets more expensive the moment the seller knows who is buying and why, so an institution buys through a separate name, and the deed records do not always say what you expect. **Follow the entity, not the institution.**
 
-**In West Philadelphia, the surrogate is the West Philadelphia Corporation.** Founded in 1959, it was a coalition **funded and run primarily by the University of Pennsylvania**, with Drexel Institute of Technology, the Philadelphia College of Pharmacy and Science, Presbyterian Hospital, and an osteopathic medical school as junior partners (Puckett, n.d.-a). It controlled the Unit 3 redevelopment and acted, in one historian's words, as Penn's surrogate to ensure the neighbourhood's "attractiveness, stability, and vitality" (Puckett, n.d.-b). And the residents saw exactly what it was: one, Felton Newman, told a hearing that **"the West Philadelphia Corporation is a front for the University of Pennsylvania"** (Newman, as quoted in University of Pennsylvania University Archives, n.d.). **A citizen named the instrument correctly, at the time, on the record.**
+**In West Philadelphia, the surrogate is the West Philadelphia Corporation.** Founded in 1959, it was a coalition **funded and run primarily by the University of Pennsylvania**, with Drexel Institute of Technology, the Philadelphia College of Pharmacy and Science, Presbyterian Hospital, and an osteopathic medical school as junior partners (Puckett, n.d.-a). It controlled the Unit 3 redevelopment and acted, in one historian's words, as Penn's surrogate to ensure the neighborhood's "attractiveness, stability, and vitality" (Puckett, n.d.-b). And the residents saw exactly what it was: one, Felton Newman, told a hearing that **"the West Philadelphia Corporation is a front for the University of Pennsylvania"** (Newman, as quoted in University of Pennsylvania University Archives, n.d.). **A citizen named the instrument correctly, at the time, on the record.**
 
 **Here is where precision earns its keep, because the two surrogates are parallel but not identical.** Do not flatten them.
 
@@ -517,10 +517,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
 |---|---|---|
 | Formed by | Indiana University alone | A coalition, Penn dominant, with junior partners |
 | Founded | 1962 | 1959 |
-| Original stated purpose | A land-acquisition vehicle | Neighbourhood safety and stability after a 1958 killing, then land |
+| Original stated purpose | A land-acquisition vehicle | Neighborhood safety and stability after a 1958 killing, then land |
 | Relationship to the campus | The university's own shell | A multi-institution consortium the university funded and ran |
 
-**The parallel is real: in both cities a university did its neighbourhood land work through a nonprofit intermediary rather than only in its own name.** The difference is real too: Hoosier Realty was a single university's dedicated shell, while the West Philadelphia Corporation was a consortium with a broader founding mission that became a land programme. **If you say "Penn used a shell company exactly like Indiana University did," you have overclaimed.** The honest sentence is: both universities worked through a surrogate nonprofit, and the surrogates differed in structure and origin. That sentence is more useful precisely because it is more careful.
+**The parallel is real: in both cities a university did its neighborhood land work through a nonprofit intermediary rather than only in its own name.** The difference is real too: Hoosier Realty was a single university's dedicated shell, while the West Philadelphia Corporation was a consortium with a broader founding mission that became a land program. **If you say "Penn used a shell company exactly like Indiana University did," you have overclaimed.** The honest sentence is: both universities worked through a surrogate nonprofit, and the surrogates differed in structure and origin. That sentence is more useful precisely because it is more careful.
 
 **Put the three instruments in order and the mechanism is complete.** The Planning Commission **certifies** blight. The Redevelopment Authority **condemns, clears, and conveys** with federal money. A university, working through a **surrogate nonprofit**, is the coalition partner and eventual beneficiary of the ground. **Certification plus condemnation plus a university surrogate is the machine**, and it is the same machine *Indiana Avenue* reverse-engineered, running here without a highway anywhere in the diagram.
 
@@ -556,23 +556,23 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
       body: `The plan behind this course proposed that the Black Bottom is **Indiana Avenue's closest twin anywhere** (plans/41). *Indiana Avenue* taught you to take a good argument apart before you trust it, so take this one apart. The right test is not "does it feel similar." It is: **sort every claim into parallel, merely similar, or different, and cite each one.**
 
 **What is genuinely parallel, and this is the strong column.**
-1. **A university drove the clearing of a Black neighbourhood.** Indiana University in Indianapolis; the University of Pennsylvania in Philadelphia. Documented in both (Encyclopedia of Indianapolis, n.d.; Puckett, n.d.-a).
+1. **A university drove the clearing of a Black neighborhood.** Indiana University in Indianapolis; the University of Pennsylvania in Philadelphia. Documented in both (Encyclopedia of Indianapolis, n.d.; Puckett, n.d.-a).
 2. **The land was worked through a surrogate nonprofit tied to the university.** Hoosier Realty Corporation; the West Philadelphia Corporation (previous lesson).
 3. **A public redevelopment body used blight and eminent domain to acquire and clear.** The Indianapolis Redevelopment Commission; the Redevelopment Authority of the City of Philadelphia (Puckett, n.d.-a).
 4. **The enabling blight statute was passed by the state legislature in 1945 in both states.** Indiana's blight law; the Pennsylvania Urban Redevelopment Law of May 24, 1945 (Commonwealth of Pennsylvania, 1945). **This is the single most exact parallel in the two courses.**
 
 **What is merely similar, meaning it rhymes but is not the same object.**
-1. **The thing cleared.** Indiana Avenue was a commercial and cultural corridor; the Black Bottom was a residential neighbourhood. Both were Black districts about 77 percent Black in their census snapshots, but one is counted in businesses and the other in households.
+1. **The thing cleared.** Indiana Avenue was a commercial and cultural corridor; the Black Bottom was a residential neighborhood. Both were Black districts about 77 percent Black in their census snapshots, but one is counted in businesses and the other in households.
 2. **The surrogate's structure.** A single-university shell versus a multi-institution consortium (previous lesson).
 3. **The demographic snapshot.** About 77 percent Black on the Avenue by 1920; about 78 percent of Unit 3's displaced were African American. Close, but measured differently, at different dates, of different populations. **Similar is not identical, and a careful writer says which.**
 
 **What is genuinely different, and naming it is what keeps the twin claim honest.**
-1. **No highway.** On Indiana Avenue the interstate was a real instrument acting on the surrounding neighbourhoods, and the popular story wrongly promoted it to chief cause. In West Philadelphia there is no highway in the clearance at all. **This is why Philadelphia is the cleaner case: it isolates the university-and-authority instrument with no highway to confuse the reader.**
+1. **No highway.** On Indiana Avenue the interstate was a real instrument acting on the surrounding neighborhoods, and the popular story wrongly promoted it to chief cause. In West Philadelphia there is no highway in the clearance at all. **This is why Philadelphia is the cleaner case: it isolates the university-and-authority instrument with no highway to confuse the reader.**
 2. **The federal channel.** Highway funds in the Indianapolis story; an urban-renewal grant to the Redevelopment Authority here (lesson 7).
 3. **A defense-research controversy.** Philadelphia's research park carried a classified-research grievance that the 1969 sit-in protested; Indianapolis's campus did not (lesson 4).
 4. **The certifying body.** In Pennsylvania the Planning Commission certifies blight and the Authority clears; the split of those two roles is a Pennsylvania particular.
 
-**Now the verdict, stated plainly.** **The twin claim holds, and it holds most strongly at the level of the instrument.** The machine, a university plus a surrogate plus a redevelopment authority plus a 1945 state blight statute, is the same machine in both cities, and Philadelphia runs it without the highway that muddied Indianapolis. **The twin claim overreaches only if you let "twin" mean "identical."** The neighbourhoods differ, the surrogates differ, the federal channels differ, and one city has a war-research overlay the other lacks. **A twin is not a clone.** The honest headline is the one the plan actually needs: *the instrument that cleared Indiana Avenue is confirmed at a second campus, in a form clean enough to prove the pattern was a program.*
+**Now the verdict, stated plainly.** **The twin claim holds, and it holds most strongly at the level of the instrument.** The machine, a university plus a surrogate plus a redevelopment authority plus a 1945 state blight statute, is the same machine in both cities, and Philadelphia runs it without the highway that muddied Indianapolis. **The twin claim overreaches only if you let "twin" mean "identical."** The neighborhoods differ, the surrogates differ, the federal channels differ, and one city has a war-research overlay the other lacks. **A twin is not a clone.** The honest headline is the one the plan actually needs: *the instrument that cleared Indiana Avenue is confirmed at a second campus, in a form clean enough to prove the pattern was a program.*
 
 **The method lesson, which outlasts both cities.** When someone offers you a compelling parallel, do not accept it or reject it whole. **Build the three columns, parallel, similar, different, and make them cite.** A parallel that survives that sorting is worth stating with confidence. A parallel that dissolves into "merely similar" in every row was a vibe. This one has a full strong column, so it survives.
 
@@ -587,7 +587,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
         },
         {
           prompt: "How is the West Philadelphia Corporation parallel to Hoosier Realty Corporation, and how does it differ?",
-          answer: "Parallel: both let a university do neighbourhood land work through a nonprofit intermediary rather than only in its own name. Different: Hoosier Realty was Indiana University's own single-university shell formed as a land vehicle, while the West Philadelphia Corporation was a multi-institution consortium Penn funded and ran, founded first for safety after a 1958 killing.",
+          answer: "Parallel: both let a university do neighborhood land work through a nonprofit intermediary rather than only in its own name. Different: Hoosier Realty was Indiana University's own single-university shell formed as a land vehicle, while the West Philadelphia Corporation was a multi-institution consortium Penn funded and ran, founded first for safety after a 1958 killing.",
         },
         {
           prompt: "What is the overclaim to avoid, and the careful sentence to use instead?",
@@ -605,7 +605,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
       section: "Section 3 · Powers",
       body: `West Philadelphia holds a second decision that people often place beside the Black Bottom because it is the same city, the same part of town, and the same broad injustice. **This lesson exists to teach you not to do that carelessly.** The MOVE bombing is a real, documented, and grievous municipal decision, and it is **not** part of the university-expansion story. Handling it correctly is itself the lesson of this section: **precision about what belongs to which decision.**
 
-**What is documented, stated plainly and once.** On **13 May 1985**, after an armed standoff, **Philadelphia police dropped an explosive device from a helicopter onto the roof of the house at 6221 Osage Avenue**, the headquarters of the Black liberation and back-to-nature group MOVE, in the **Cobbs Creek** neighbourhood of West Philadelphia. The device started a fire that the authorities allowed to burn. **Eleven people died, six adults and five children. More than 60 homes were destroyed and more than 250 people were left homeless** (Tomek, n.d.-b). Those are the facts, and they are enough. This lesson will not dramatise them further.
+**What is documented, stated plainly and once.** On **13 May 1985**, after an armed standoff, **Philadelphia police dropped an explosive device from a helicopter onto the roof of the house at 6221 Osage Avenue**, the headquarters of the Black liberation and back-to-nature group MOVE, in the **Cobbs Creek** neighborhood of West Philadelphia. The device started a fire that the authorities allowed to burn. **Eleven people died, six adults and five children. More than 60 homes were destroyed and more than 250 people were left homeless** (Tomek, n.d.-b). Those are the facts, and they are enough. This lesson will not dramatise them further.
 
 **Why it has an official record, which is what makes it teachable at all.** The mayor convened the **Philadelphia Special Investigation Commission**, known as the MOVE Commission, which held weeks of televised hearings and **issued its report on 6 March 1986**. The commission concluded that dropping a bomb on an occupied rowhouse was "unconscionable" and that the tactics were "grossly negligent" (Tomek, n.d.-b). **Because there is a commission report, this is documentable rather than only remembered**, which is the standard this whole course holds. **Read the report.** This lesson deliberately does not paraphrase the deaths of children from second-hand accounts or reproduce victim lists that vary between sources; the commission's own report, and the archival scholarship built on it, are where a learner should go, and this course points you there rather than standing between you and it.
 
@@ -624,9 +624,9 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
 
 **They share a city and a race of the victims and nothing about the instrument.** One is land assembly for an institution. The other is lethal force in a standoff. **Collapsing them into "West Philadelphia did terrible things to Black people" is true as a sentiment and useless as history**, because it hides the two entirely different mechanisms a citizen would have to confront to prevent a repeat of either. The whole point of the Powers section is that mechanisms differ and each leaves its own record.
 
-**Second: tone is accountability, not spectacle.** The children who died on Osage Avenue have surviving relatives and neighbours who are alive now. There is no lesson in the flames. The lesson is in the sentence the commission wrote, "unconscionable," and in the fact that a city produced an official finding against itself. **Write about this, if you write about it at all, as an accountability record: who decided, what body reviewed it, what the review concluded, and what changed or did not.** That is the same instrument-and-record discipline as the rest of the section, applied to a case where the stakes are human lives rather than city blocks.
+**Second: tone is accountability, not spectacle.** The children who died on Osage Avenue have surviving relatives and neighbors who are alive now. There is no lesson in the flames. The lesson is in the sentence the commission wrote, "unconscionable," and in the fact that a city produced an official finding against itself. **Write about this, if you write about it at all, as an accountability record: who decided, what body reviewed it, what the review concluded, and what changed or did not.** That is the same instrument-and-record discipline as the rest of the section, applied to a case where the stakes are human lives rather than city blocks.
 
-**Why it is in this course at all.** Because a metro-spine course claims to teach you to read a whole city's decisions, and a reader who has only the Black Bottom might reach for the bombing as "more of the same." It is not more of the same. **It is a different power, in a different neighbourhood, with a different record, and knowing that is knowing the city.**
+**Why it is in this course at all.** Because a metro-spine course claims to teach you to read a whole city's decisions, and a reader who has only the Black Bottom might reach for the bombing as "more of the same." It is not more of the same. **It is a different power, in a different neighborhood, with a different record, and knowing that is knowing the city.**
 
 ## Sources
 - Philadelphia Special Investigation Commission. (1986, March 6). *Report of the Philadelphia Special Investigation Commission (MOVE Commission)*.
@@ -634,11 +634,11 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
       recallContent: [
         {
           prompt: "Name the four genuinely parallel features of Indianapolis and Philadelphia.",
-          answer: "A university drove the clearing of a Black neighbourhood; the land was worked through a surrogate nonprofit tied to the university; a public redevelopment body used blight and eminent domain; and both states passed their enabling blight statute in 1945. The 1945 statutes are the most exact parallel.",
+          answer: "A university drove the clearing of a Black neighborhood; the land was worked through a surrogate nonprofit tied to the university; a public redevelopment body used blight and eminent domain; and both states passed their enabling blight statute in 1945. The 1945 statutes are the most exact parallel.",
         },
         {
           prompt: "Give two features that are 'merely similar' rather than parallel.",
-          answer: "The thing cleared (a commercial corridor versus a residential neighbourhood) and the surrogate's structure (a single-university shell versus a multi-institution consortium). Also the demographic snapshots, close but measured differently at different dates.",
+          answer: "The thing cleared (a commercial corridor versus a residential neighborhood) and the surrogate's structure (a single-university shell versus a multi-institution consortium). Also the demographic snapshots, close but measured differently at different dates.",
         },
         {
           prompt: "What is genuinely different, and why does the absence of a highway make Philadelphia the cleaner case?",
@@ -646,7 +646,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
         },
         {
           prompt: "State the verdict on the twin claim.",
-          answer: "It holds, most strongly at the level of the instrument, which is the same machine in both cities. It overreaches only if 'twin' is taken to mean 'identical': the neighbourhoods, surrogates and federal channels differ, and one city has a war-research overlay. A twin is not a clone.",
+          answer: "It holds, most strongly at the level of the instrument, which is the same machine in both cities. It overreaches only if 'twin' is taken to mean 'identical': the neighborhoods, surrogates and federal channels differ, and one city has a war-research overlay. A twin is not a clone.",
         },
         {
           prompt: "What is the durable method lesson for handling a compelling parallel?",
@@ -666,7 +666,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "This course defines an 'instrument' as:",
             options: [
-              "Any broad historical cause or force lying behind a neighbourhood change",
+              "Any broad historical cause or force lying behind a neighborhood change",
               "A specific legal power exercised by a specific body under a specific statute",
               "A newspaper account describing how a particular civic decision was made",
               "A physical measuring tool used in land surveying and building work",
@@ -746,9 +746,9 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
             prompt: "What was the West Philadelphia Corporation, in a resident's words at the time?",
             options: [
               "'A front for the University of Pennsylvania,' per Felton Newman",
-              "A neighbourhood improvement club with no university ties",
+              "A neighborhood improvement club with no university ties",
               "An independent federal urban renewal and housing agency",
-              "A grassroots neighbourhood tenants' rights organization",
+              "A grassroots neighborhood tenants' rights organization",
             ],
             correctIndex: 0,
             explanation: "The coalition was funded and run primarily by Penn and controlled Unit 3 as its surrogate. A citizen named the instrument correctly, on the record.",
@@ -769,13 +769,13 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "The 'twin' claim between the Black Bottom and Indiana Avenue holds most strongly at the level of:",
             options: [
-              "The neighbourhoods, which were completely identical in every way",
+              "The neighborhoods, which were completely identical in every way",
               "The instrument: the same university, surrogate, and authority machine",
               "The federal funding channel, which was exactly the same in both",
               "The surrogate's structure, which was precisely the same in both",
             ],
             correctIndex: 1,
-            explanation: "A twin is not a clone. The instrument is the same; the neighbourhoods, surrogates and federal channels differ, and Philadelphia adds a war-research overlay.",
+            explanation: "A twin is not a clone. The instrument is the same; the neighborhoods, surrogates and federal channels differ, and Philadelphia adds a war-research overlay.",
             sourceLessonSlug: "pa-powers-the-twin",
           },
           {
@@ -869,7 +869,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
 
 **4. Look for the name, not just the buildings.** Signage, banners, and building names will say "University City" and "Science Center." **The renaming you studied in Section 2 is still doing work on every sign.** Note where the word "University City" appears and whether any marker anywhere says "Black Bottom." As of recent reporting, descendants were still asking the city for exactly such a sign.
 
-**5. Read who is on the street.** This is a working district of students, researchers, workers, and residents of the surrounding blocks. **Describe people as they would describe themselves, or do not describe them.** A 360 tour is a photograph of strangers in a public place, and the ethics of writing about it are the ethics of writing about neighbours.
+**5. Read who is on the street.** This is a working district of students, researchers, workers, and residents of the surrounding blocks. **Describe people as they would describe themselves, or do not describe them.** A 360 tour is a photograph of strangers in a public place, and the ethics of writing about it are the ethics of writing about neighbors.
 
 **6. Look for what is being built right now.** Construction fencing, a zoning notice, a leasing banner, a public-meeting sign. **Every one of those is a live document with a case number**, and Section 5 teaches you how to look them up in the city's own Atlas.
 
@@ -919,7 +919,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
 
 **Violet: the MOVE bombing site in Cobbs Creek**, plotted at an approximate point on the residential block, deliberately not at an exact house number, because people live there now. It is a **different** West Philadelphia decision, and it has its own color so you never file it under the clearance.
 
-**Amber: four campuses where a university or institution drove neighbourhood clearance or conflict.** These are here to stop you reading Philadelphia as a local misfortune. **A university assembling land through a redevelopment authority was a national program, not a Penn peculiarity**, and these markers are leads to verify in each city's own records, not findings this course has proven.
+**Amber: four campuses where a university or institution drove neighborhood clearance or conflict.** These are here to stop you reading Philadelphia as a local misfortune. **A university assembling land through a redevelopment authority was a national program, not a Penn peculiarity**, and these markers are leads to verify in each city's own records, not findings this course has proven.
 
 **Green: two record repositories.** The City of Philadelphia's own files, where the blight certification and Redevelopment Authority records for Unit 3 live, and the Penn University Archives, which hold the Science Center's planning papers. **Knowing where a record physically lives is part of knowing that it exists.**
 
@@ -940,7 +940,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
             title: "Black Bottom / University City, Philadelphia, Pennsylvania",
             color: "#1d4ed8",
             description:
-              "The subject of this course. A working-class, predominantly African American neighbourhood in West Philadelphia, about 78 percent non-white in the 1960 census of the future Science Center blocks. Certified as blighted and cleared as University Redevelopment Area Unit 3: the Redevelopment Authority condemned the properties in 1966 and demolished them in 1967 and 1968, with about 2,653 people known to have been displaced from Unit 3 and roughly 78 percent of them African American. The land became the University City Science Center, the nation's first urban research park, developed by a coalition led by the University of Pennsylvania through the West Philadelphia Corporation.",
+              "The subject of this course. A working-class, predominantly African American neighborhood in West Philadelphia, about 78 percent non-white in the 1960 census of the future Science Center blocks. Certified as blighted and cleared as University Redevelopment Area Unit 3: the Redevelopment Authority condemned the properties in 1966 and demolished them in 1967 and 1968, with about 2,653 people known to have been displaced from Unit 3 and roughly 78 percent of them African American. The land became the University City Science Center, the nation's first urban research park, developed by a coalition led by the University of Pennsylvania through the West Philadelphia Corporation.",
           },
           {
             id: "pa-move",
@@ -985,7 +985,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
             title: "Morningside Heights, New York, New York",
             color: "#b45309",
             description:
-              "Columbia University's planned gymnasium in Morningside Park set off the 1968 campus and community protests, a case of institutional expansion into a Black neighbourhood's shared ground. Not identical to a redevelopment-authority clearance, which is the point of sorting parallel from merely similar; included as a lead so the pattern is not read as unique to Penn.",
+              "Columbia University's planned gymnasium in Morningside Park set off the 1968 campus and community protests, a case of institutional expansion into a Black neighborhood's shared ground. Not identical to a redevelopment-authority clearance, which is the point of sorting parallel from merely similar; included as a lead so the pattern is not read as unique to Penn.",
           },
           {
             id: "pa-city-records",
@@ -1033,7 +1033,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
 - **Penn's contribution is real money and the largest private gift in the School District's history** (WHYY, 2020).
 - **Critics call it a donation, not a PILOT**, because it is time-limited, directed by the giver, and far below what property tax on the portfolio would yield. Some have called for Penn to pay about 40 percent of its notional tax bill, which they estimate near 40 million dollars a year, roughly four times what Penn pledged (Hechinger Report, 2020).
 
-**Why this is the right beat-5 question for this course specifically.** Section 3 established that a university expanded onto a cleared Black neighbourhood using public instruments and federal money. **The PILOT fight is the present-tense continuation of the same relationship**: an institution that grew by public means, now exempt from the tax that funds the schools of the city it grew in. You do not have to decide the fight to see that it is the same relationship at a later date, which is exactly the move *Indiana Avenue* made when it showed the district was cleared under one electorate and governed since under another.
+**Why this is the right beat-5 question for this course specifically.** Section 3 established that a university expanded onto a cleared Black neighborhood using public instruments and federal money. **The PILOT fight is the present-tense continuation of the same relationship**: an institution that grew by public means, now exempt from the tax that funds the schools of the city it grew in. You do not have to decide the fight to see that it is the same relationship at a later date, which is exactly the move *Indiana Avenue* made when it showed the district was cleared under one electorate and governed since under another.
 
 **Question 4: who decides, and when.** The **City Planning Commission** adopts the comprehensive plan and its district plans; **City Council** legislates zoning and approves major redevelopment; the PILOT question is a matter of negotiation and public pressure rather than a single vote. All of these meet in public and keep public records. **A live argument means the meetings are still happening**, which is where a citizen has leverage.
 
@@ -1047,7 +1047,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
       recallContent: [
         {
           prompt: "State the documented facts of 13 May 1985, once and plainly.",
-          answer: "Philadelphia police dropped an explosive device from a helicopter onto the roof of 6221 Osage Avenue, the MOVE headquarters, in the Cobbs Creek neighbourhood. The resulting fire was allowed to burn. Eleven people died, six adults and five children; more than 60 homes were destroyed and more than 250 people left homeless.",
+          answer: "Philadelphia police dropped an explosive device from a helicopter onto the roof of 6221 Osage Avenue, the MOVE headquarters, in the Cobbs Creek neighborhood. The resulting fire was allowed to burn. Eleven people died, six adults and five children; more than 60 homes were destroyed and more than 250 people left homeless.",
         },
         {
           prompt: "What official record exists, and what did it conclude?",
@@ -1074,19 +1074,19 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
 - **Atlas**, the City of Philadelphia's official property map: https://atlas.phila.gov/ . Enter an address and read parcel boundaries, ownership, the Office of Property Assessment value, zoning, deeds, and permits, all in one place (City of Philadelphia, n.d.-a).
 - **The Office of Property Assessment (OPA) property search**: https://property.phila.gov/ . Search by address or OPA account number and read the public assessment record (City of Philadelphia, n.d.-b).
 
-**Your target: 3401 Market Street, Philadelphia**, the University City Science Center building that a City Council ordinance granted to the Science Center on January 12, 1965 (University of Pennsylvania University Archives, n.d.). It is a documented, institution-occupied address on the cleared Unit 3 ground, which makes it a safe place to practise: it is a public-facing building, its address is in the public record, and you are not exposing anyone's home.
+**Your target: 3401 Market Street, Philadelphia**, the University City Science Center building that a City Council ordinance granted to the Science Center on January 12, 1965 (University of Pennsylvania University Archives, n.d.). It is a documented, institution-occupied address on the cleared Unit 3 ground, which makes it a safe place to practice: it is a public-facing building, its address is in the public record, and you are not exposing anyone's home.
 
 **Work through these, then answer the questions below.**
 1. Find **3401 Market Street** in Atlas and look at the parcel outline and its footprint. Compare it in your mind to a rowhouse lot: **an institutional parcel and a rowhouse lot are different sizes, and that difference is the clearance made visible.**
 2. Read off the **OPA account number**. Write it down exactly.
 3. Find the **owner of record**, the **assessed value**, and, if shown, the building's **use or category**.
-4. Compare the **owner of record** to the organisation that operates the building. **They may not match, and if they do not, that is normal and it is a finding**, exactly as the surrogate-nonprofit lesson predicted.
+4. Compare the **owner of record** to the organization that operates the building. **They may not match, and if they do not, that is normal and it is a finding**, exactly as the surrogate-nonprofit lesson predicted.
 5. In Atlas, read the parcel's **zoning**, then ask whether that zoning matches what the University/Southwest District Plan says the area should be. **A plan and a zoning code that disagree is where a development fight lives.**
-6. Walk the parcel a block in each direction along Market Street and count how many neighbouring parcels are **institutionally owned**. That count is the footprint of the campus that replaced the neighbourhood.
+6. Walk the parcel a block in each direction along Market Street and count how many neighboring parcels are **institutionally owned**. That count is the footprint of the campus that replaced the neighborhood.
 
 **The habits this builds, which transfer to any American city.** The names of the tools change from city to city and the facts do not: **parcel or account number, owner of record, assessed value, and the zoning versus the plan.** Learn to find those four and you can research any address in the country. Philadelphia calls its map Atlas and its assessor the OPA; Indianapolis called them MapIndy and the Marion County Assessor. Same four facts.
 
-**One rule you do not get to break.** **Do not run this drill on somebody's home and publish the result.** A parcel record is public, and a current occupant's name attached to their address in a piece of writing is a different thing from a public record sitting in a city database. Practise on institutional and commercial addresses. This is the same rule *The Green Book* applied to tourist homes and *Indiana Avenue* applied to parcels, and it is the same restraint the MOVE lesson used in refusing to pin an exact house on the map.
+**One rule you do not get to break.** **Do not run this drill on somebody's home and publish the result.** A parcel record is public, and a current occupant's name attached to their address in a piece of writing is a different thing from a public record sitting in a city database. Practice on institutional and commercial addresses. This is the same rule *The Green Book* applied to tourist homes and *Indiana Avenue* applied to parcels, and it is the same restraint the MOVE lesson used in refusing to pin an exact house on the map.
 
 ## Sources
 - City of Philadelphia. (n.d.-a). *Atlas*. https://atlas.phila.gov/
@@ -1160,7 +1160,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
             prompt: "The 1985 police action that this course keeps separate from the university-expansion story is the ___ bombing.",
             answer: "MOVE",
             accept: ["move"],
-            explanation: "A different instrument (police power) in a different neighbourhood (Cobbs Creek), documented by the 1986 Special Investigation Commission report. Not part of the Black Bottom clearance.",
+            explanation: "A different instrument (police power) in a different neighborhood (Cobbs Creek), documented by the 1986 Special Investigation Commission report. Not part of the Black Bottom clearance.",
           },
           {
             prompt: "The constitutional amendment requiring just compensation for a taking is the ___ Amendment.",
@@ -1226,7 +1226,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
             prompt: "Which four facts should you pull for any parcel in any American city?",
             options: [
               "Architect, contractor, original cost, and current tenant",
-              "Square footage, paint colour, roof age, and street name",
+              "Square footage, paint color, roof age, and street name",
               "Parcel number, owner of record, assessed value, and the zoning",
               "Only the zoning code, and nothing else about the parcel",
             ],
@@ -1243,7 +1243,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
               "It sits entirely outside the Philadelphia municipal limits",
             ],
             correctIndex: 0,
-            explanation: "A City Council ordinance granted the Science Center that building in 1965. The rule: practise on institutional and commercial addresses, never someone's home.",
+            explanation: "A City Council ordinance granted the Science Center that building in 1965. The rule: practice on institutional and commercial addresses, never someone's home.",
             sourceLessonSlug: "pa-next-exercise-parcel",
           },
           {
@@ -1345,7 +1345,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "Why does this course publish a virtual_tour lesson before the tour URL exists?",
             options: [
-              "Because the planned 360 tour was permanently cancelled",
+              "Because the planned 360 tour was permanently canceled",
               "Because the course platform strictly requires a placeholder",
               "Because the tour is entirely optional and will never be added",
               "Because beat 4 is a drop-in: the course is complete without it",
@@ -1425,15 +1425,15 @@ Pick one and commit, because mixing them is what makes place writing mushy.
 1. **No invented detail.** Not a date, a name, a quotation, a street number, or a statistic. **If a source does not say it, you do not write it.** This includes atmospheric invention: you do not know what the block smelled like in 1962.
 2. **No composite or imagined characters.** Real, cited people only. Walter Palmer's testimony, Felton Newman's line at the hearing, the institutions named in the record: that is more than enough material.
 3. **No invented dialogue**, including "she might have said."
-4. **Living communities describe themselves.** Use the names and terms the people who lived and work there use, and say where you got them. The Black Bottom Tribe is organising now.
+4. **Living communities describe themselves.** Use the names and terms the people who lived and work there use, and say where you got them. The Black Bottom Tribe is organizing now.
 5. **Handle MOVE only with the report open, or not at all.** If your piece touches the 1985 bombing, work from the Special Investigation Commission report, keep the tone accountability rather than spectacle, and do not reproduce victim details from second-hand lists. If you cannot meet that standard within your scope, point the reader to the report and move on. **This is not optional; it is the condition of writing about it.**
-6. **No ruin porn, and no lost golden age.** A neighbourhood that a university and a redevelopment authority cleared was not a paradise, and its removal was not a natural death. Both framings flatter the writer and cheat the subject.
+6. **No ruin porn, and no lost golden age.** A neighborhood that a university and a redevelopment authority cleared was not a paradise, and its removal was not a natural death. Both framings flatter the writer and cheat the subject.
 7. **Credit what was built and who resisted.** The safe streets Palmer described, the residents who named the West Philadelphia Corporation correctly at the hearings, the students who sat in at College Hall, the descendants asking for a marker. A piece that only inventories loss is an incomplete report.
 8. **Private homes are private.** Do not publish a current resident's name with their address, and do not pin the MOVE block to a house.
 9. **Say what you did to a number.** If you adjusted a 1966 dollar figure for inflation, say so and say how.
 
 ## What good looks like
-A short, checkable piece in which every sentence is either something you read in a named source or something you clearly mark as unresolved, and in which the prose is still good. **Those two standards do not conflict.** Two states passing a blight law in the same year, a resident telling a hearing the corporation was a front, a neighbourhood of 429 households becoming a campus with 15: **none of that needs decorating.**
+A short, checkable piece in which every sentence is either something you read in a named source or something you clearly mark as unresolved, and in which the prose is still good. **Those two standards do not conflict.** Two states passing a blight law in the same year, a resident telling a hearing the corporation was a front, a neighborhood of 429 households becoming a campus with 15: **none of that needs decorating.**
 
 ## Sources
 - Puckett, J. L. (n.d.-a). *The University City Science Center and the Black Bottom*. West Philadelphia Collaborative History, University of Pennsylvania Graduate School of Education. https://collaborativehistory.gse.upenn.edu/stories/university-city-science-center-and-black-bottom
@@ -1470,7 +1470,7 @@ A short, checkable piece in which every sentence is either something you read in
 
 | Beat | What you did here | What it confirmed about the method |
 |---|---|---|
-| **1. Then** | Read a neighbourhood out of the census of its own clearance, and sorted five displacement figures | A count is a fact about a document; teach the disagreement rather than picking |
+| **1. Then** | Read a neighborhood out of the census of its own clearance, and sorted five displacement figures | A count is a fact about a document; teach the disagreement rather than picking |
 | **2. Built** | Read the research-park typology and the Society Hill control case | The building's fate was the variable; displacement was the constant |
 | **3. Powers** | Learned certification, eminent domain and the university surrogate, and sorted the twin | The same 1945-statute machine ran in both cities; a twin is not a clone |
 | **4. Now** | Built an observation brief and a map that admits its own limits | Match the tool to the question; the world map cannot see a corridor |
@@ -1479,7 +1479,7 @@ A short, checkable piece in which every sentence is either something you read in
 
 **What you can do that you could not before.**
 - Confirm an instrument at a second site, and state precisely how the second case is parallel, merely similar, and different.
-- Recognise that two states passing a blight law in the same year is evidence of a shared federal program, not a coincidence.
+- Recognize that two states passing a blight law in the same year is evidence of a shared federal program, not a coincidence.
 - Hold a control case (Society Hill) next to a clearance and see which variable actually moved.
 - Keep two decisions in one city distinct (the Black Bottom clearance and the MOVE bombing) instead of collapsing them into a mood.
 - Read a present-day fight (PILOTs) as the continuation of a documented past relationship.
@@ -1493,7 +1493,7 @@ A short, checkable piece in which every sentence is either something you read in
 
 **The unopened sources, which are the next real work.** The Philadelphia City Planning Commission's blight certification for Unit 3. The Redevelopment Authority's Unit 3 project files. The University of Pennsylvania trustees' minutes across the redevelopment years. The West Philadelphia Corporation's own records. **All public or requestable, and none read into this course.** If you want to make an original contribution rather than restate one, that is the list.
 
-**One last thing about the place.** The people of the Black Bottom built a neighbourhood safe enough to walk at three in the morning, and a university built a research park on top of it using a certification, a condemnation, a federal grant, and a surrogate corporation a resident correctly called a front. **Most of the rowhouses are gone. The record of who lived in them, who took them, and under which instrument is not**, and it is sitting in a census, a set of hearings, a state statute, a planning file, and a city property database, waiting for somebody to read it properly. **That is the whole method, and it is why this course exists, and why it points at a second city to prove the first was not alone.**
+**One last thing about the place.** The people of the Black Bottom built a neighborhood safe enough to walk at three in the morning, and a university built a research park on top of it using a certification, a condemnation, a federal grant, and a surrogate corporation a resident correctly called a front. **Most of the rowhouses are gone. The record of who lived in them, who took them, and under which instrument is not**, and it is sitting in a census, a set of hearings, a state statute, a planning file, and a city property database, waiting for somebody to read it properly. **That is the whole method, and it is why this course exists, and why it points at a second city to prove the first was not alone.**
 
 ## Sources
 - Commonwealth of Pennsylvania. (1945). *Urban Redevelopment Law, Act of May 24, 1945, P.L. 991, No. 385*. Pennsylvania General Assembly. https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/1945/0/0385..HTM
@@ -1519,7 +1519,7 @@ A short, checkable piece in which every sentence is either something you read in
         },
         {
           prompt: "Why is the PILOT fight the right beat-5 question for this course?",
-          answer: "Because it is the present-tense continuation of the same relationship Section 3 established: a university that grew onto a cleared Black neighbourhood by public means and federal money is now exempt from the tax that funds the city's schools. Same relationship, later date.",
+          answer: "Because it is the present-tense continuation of the same relationship Section 3 established: a university that grew onto a cleared Black neighborhood by public means and federal money is now exempt from the tax that funds the city's schools. Same relationship, later date.",
         },
       ],
     },

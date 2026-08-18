@@ -49,11 +49,11 @@ export const INDIANA_AVENUE_COURSE: AuthoredCourse = {
       section: "Section 1 · Then",
       body: `**Start with the prerequisite.** This course assumes you have finished *The Green Book: How to Read a Route*. That course taught a method: open a digitized edition, read a listing down to its abbreviations and its silences, chain listings into a route, read a gap as evidence, and research an address forward to what stands there now. **This course applies that method to one place**, and then goes one step further than the method course could: it asks who decided what happened to the place, and shows you where that decision is written down.
 
-**The place.** Indiana Avenue is one of four diagonal streets on Alexander Ralston's 1821 plat of Indianapolis, running northwest out of the Mile Square from the corner of Illinois and Ohio streets. Over the second half of the nineteenth century and the first decades of the twentieth it became the commercial and social centre of Black Indianapolis. By 1880 the census recorded 115 of the Avenue's residents as Black or "mulatto." **By 1920, 77 percent of the Avenue's residents were identified as Black** (Encyclopedia of Indianapolis, n.d.-a).
+**The place.** Indiana Avenue is one of four diagonal streets on Alexander Ralston's 1821 plat of Indianapolis, running northwest out of the Mile Square from the corner of Illinois and Ohio streets. Over the second half of the nineteenth century and the first decades of the twentieth it became the commercial and social center of Black Indianapolis. By 1880 the census recorded 115 of the Avenue's residents as Black or "mulatto." **By 1920, 77 percent of the Avenue's residents were identified as Black** (Encyclopedia of Indianapolis, n.d.-a).
 
 **What it held.** A 1916 study counted, within eight blocks, "33 restaurants, 33 saloons, 26 grocery stores, 17 barbers/hair stylists, 16 tailors and clothing retailers, 14 cobblers, 13 dry goods stores, as well as drugstores, pawnbrokers, pool halls, funeral parlors, and offices of lawyers, physicians, dentists, and real estate agents" (Thornbrough, as cited in Borland & Linebarger, 2025, pp. 14-15). Read that list slowly. It is not a strip of nightclubs. It is a complete local economy: you could eat, get your shoes fixed, buy a suit, see a doctor, hire a lawyer, bury a relative, and borrow money, without leaving the corridor and without being refused service.
 
-**Why that mattered is the whole point.** The historic context prepared for the Indiana Department of Natural Resources puts the reason plainly: by building businesses inside their own neighbourhoods, Black Americans "were able to exist without facing the near constant humiliation, disrespect, and animosity they regularly encountered in the world at large" (Borland & Linebarger, 2025, p. 27). A district like this is not only culture. It is infrastructure for ordinary dignity.
+**Why that mattered is the whole point.** The historic context prepared for the Indiana Department of Natural Resources puts the reason plainly: by building businesses inside their own neighborhoods, Black Americans "were able to exist without facing the near constant humiliation, disrespect, and animosity they regularly encountered in the world at large" (Borland & Linebarger, 2025, p. 27). A district like this is not only culture. It is infrastructure for ordinary dignity.
 
 **Who it was for, precisely.** Two audiences at once, and the difference matters when you read the record.
 1. **Residents.** The people who lived in the surrounding blocks, including Ransom Place immediately to the north and the Lockefield Gardens apartments that opened in February 1938 (Encyclopedia of Indianapolis, n.d.-b, n.d.-c).
@@ -61,7 +61,7 @@ export const INDIANA_AVENUE_COURSE: AuthoredCourse = {
 
 **The Avenue was also a place white Indianapolis came to.** The DNR context notes that the Avenue's theatres, vaudeville houses and dance halls "often attracted both Black and white customers" (Borland & Linebarger, 2025, p. 27). Hold onto that: a segregated city still had a corridor its white residents chose to visit, which is a fact about the Avenue's pull rather than about the city's fairness.
 
-**A warning about tone, which is a research instruction and not a courtesy.** The people who built this district have living descendants, and their neighbourhood organisations are active right now. Do not write about the Avenue as a vanished golden age. Write about what people built, name them where the record names them, and keep the vanishing for the parts you can document. **Every framing choice in this course is checkable against a source, and so should yours be.**
+**A warning about tone, which is a research instruction and not a courtesy.** The people who built this district have living descendants, and their neighborhood organizations are active right now. Do not write about the Avenue as a vanished golden age. Write about what people built, name them where the record names them, and keep the vanishing for the parts you can document. **Every framing choice in this course is checkable against a source, and so should yours be.**
 
 ## Sources
 - Borland, A., & Linebarger, E. (2025). *Green Book sites in Indiana, 1936-1967* [National Register of Historic Places multiple property documentation form]. Gray & Pape, Inc., for the Indiana Department of Natural Resources, Division of Historic Preservation and Archaeology. https://www.in.gov/dnr/historic-preservation/files/hp-Green-Book-Sites-in-Indiana.pdf
@@ -167,11 +167,11 @@ Two of those venue names should look familiar. **Sunset Terrace opened in Decemb
 
 **The housing.** **Lockefield Gardens opened in February 1938**: 748 units in 24 buildings, two to four stories, on 22 acres, built by the federal Public Works Administration at a cost of about 3 million dollars (Encyclopedia of Indianapolis, n.d.-c). It was among the first federal public housing projects in the United States, and the Encyclopedia describes all three of Indianapolis's early projects as sources of community pride when they opened (Borland & Linebarger, 2025, p. 27).
 
-**Here is a live disagreement to keep rather than smooth.** The Encyclopedia of Indianapolis gives Lockefield **748 units**. SAVI, the data service run by the Polis Center, refers to the **798 units** of Lockefield in its analysis of the neighbourhood's population change (SAVI, n.d.). Fifty units is not a rounding error. **Neither source is obviously wrong and this course does not pick one.** When you write about Lockefield, give the number you used and say where you got it, which is the only honest move available.
+**Here is a live disagreement to keep rather than smooth.** The Encyclopedia of Indianapolis gives Lockefield **748 units**. SAVI, the data service run by the Polis Center, refers to the **798 units** of Lockefield in its analysis of the neighborhood's population change (SAVI, n.d.). Fifty units is not a rounding error. **Neither source is obviously wrong and this course does not pick one.** When you write about Lockefield, give the number you used and say where you got it, which is the only honest move available.
 
-**The school.** **Crispus Attucks High School opened in 1927 as the only high school for Black students in a segregated Indianapolis.** The state NAACP chapter had fought its creation, fearing that a separate school would guarantee inferior facilities and coursework, and the DNR context notes that the school nevertheless "became and remains a source of Black excellence and pride" (Borland & Linebarger, 2025, p. 28). **Both halves of that sentence are true at once, and a course that drops either half is lying by omission.** Attucks gets its own course in this series; here it is a neighbour and a landmark.
+**The school.** **Crispus Attucks High School opened in 1927 as the only high school for Black students in a segregated Indianapolis.** The state NAACP chapter had fought its creation, fearing that a separate school would guarantee inferior facilities and coursework, and the DNR context notes that the school nevertheless "became and remains a source of Black excellence and pride" (Borland & Linebarger, 2025, p. 28). **Both halves of that sentence are true at once, and a course that drops either half is lying by omission.** Attucks gets its own course in this series; here it is a neighbor and a landmark.
 
-**The self-help housing, which is the part most retellings skip.** When the Indianapolis Redevelopment Commission cleared the neighbourhood behind Crispus Attucks known as Pat Ward's Bottom, the Black social service agency **Flanner House** offered displaced residents a route back to ownership: **300 dollars down and roughly 1,200 hours of labour to earn equity in a house**. The programme drew national attention and let some families stay in the area (Encyclopedia of Indianapolis, n.d.-e). Section 3 covers the clearance. Put the response in your notes now, because **the record of what people built in reply is as documented as the record of what was taken**, and it is routinely left out.
+**The self-help housing, which is the part most retellings skip.** When the Indianapolis Redevelopment Commission cleared the neighborhood behind Crispus Attucks known as Pat Ward's Bottom, the Black social service agency **Flanner House** offered displaced residents a route back to ownership: **300 dollars down and roughly 1,200 hours of labor to earn equity in a house**. The program drew national attention and let some families stay in the area (Encyclopedia of Indianapolis, n.d.-e). Section 3 covers the clearance. Put the response in your notes now, because **the record of what people built in reply is as documented as the record of what was taken**, and it is routinely left out.
 
 ## Sources
 - Borland, A., & Linebarger, E. (2025). *Green Book sites in Indiana, 1936-1967* [National Register of Historic Places multiple property documentation form]. Gray & Pape, Inc., for the Indiana Department of Natural Resources, Division of Historic Preservation and Archaeology. https://www.in.gov/dnr/historic-preservation/files/hp-Green-Book-Sites-in-Indiana.pdf
@@ -366,7 +366,7 @@ Two of those venue names should look familiar. **Sunset Terrace opened in Decemb
               "Nothing; the agency opposed the clearance and left",
             ],
             correctIndex: 1,
-            explanation: "The Flanner House self-help home programme drew national attention and allowed some displaced families to stay in the area.",
+            explanation: "The Flanner House self-help home program drew national attention and allowed some displaced families to stay in the area.",
             sourceLessonSlug: "ia-music-and-institutions",
           },
         ],
@@ -385,7 +385,7 @@ Two of those venue names should look familiar. **Sunset Terrace opened in Decemb
 
 | Category | Subtypes | Where they sat |
 |---|---|---|
-| **Domestic** | Tourist homes, beauty parlors in private homes, barber shops in private homes | Inside Black residential neighbourhoods |
+| **Domestic** | Tourist homes, beauty parlors in private homes, barber shops in private homes | Inside Black residential neighborhoods |
 | **Commercial** | Hotels, motels, restaurants, drive-ins, taverns, night clubs, liquor stores, drug stores, garages, service stations, dry cleaners, tailors, barber shops and beauty parlors in commercial buildings | On corridors like this one |
 | **District** | A group of associated resources evaluated together | Where enough survives to read as a whole |
 
@@ -422,7 +422,7 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
         },
         {
           prompt: "What did Flanner House offer residents displaced from Pat Ward's Bottom?",
-          answer: "A path to home ownership: about 300 dollars down and roughly 1,200 hours of labour to earn equity in a house. It drew national attention and let some families remain in the area.",
+          answer: "A path to home ownership: about 300 dollars down and roughly 1,200 hours of labor to earn equity in a house. It drew national attention and let some families remain in the area.",
         },
       ],
     },
@@ -438,9 +438,9 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
 
 **Why the shape.** A flatiron plan is a response to a site, not a style choice: a diagonal street cutting a rectangular grid leaves triangular lots, and a building that fills one is triangular. **Indiana Avenue's diagonal, drawn on Ralston's 1821 plat, is the reason this building has the plan it has.** The 1821 survey decision is still visible in the massing of a 1927 building. That is beat 2 working exactly as intended: the geometry of a plat becomes the shape of a room.
 
-**Who built it.** Madam C. J. Walker acquired the triangular parcel after 1916 and died in 1919, eight years before the building opened. Construction was carried through by her daughter **A'Lelia Walker** and the Walker company's general manager and attorney **Freeman B. Ransom** (Encyclopedia of Indianapolis, n.d.-f). Ransom is the same man the Ransom Place neighbourhood is named for (Encyclopedia of Indianapolis, n.d.-b). **A Black-owned manufacturing company financed a monumental commercial building on its own corridor, and completed it after its founder's death.** That is a construction fact and it is also an answer to the question of who built Indiana Avenue.
+**Who built it.** Madam C. J. Walker acquired the triangular parcel after 1916 and died in 1919, eight years before the building opened. Construction was carried through by her daughter **A'Lelia Walker** and the Walker company's general manager and attorney **Freeman B. Ransom** (Encyclopedia of Indianapolis, n.d.-f). Ransom is the same man the Ransom Place neighborhood is named for (Encyclopedia of Indianapolis, n.d.-b). **A Black-owned manufacturing company financed a monumental commercial building on its own corridor, and completed it after its founder's death.** That is a construction fact and it is also an answer to the question of who built Indiana Avenue.
 
-**What was inside.** The Encyclopedia calls it "a city within a city": the Walker manufacturing plant and corporate offices, a pharmacy, a beauty salon, a barbershop, a cosmetology school, a restaurant, medical offices, a ballroom, and a **1,500-seat theatre** whose interior carried Egyptian, Moorish and West African inspired woodcarving (Encyclopedia of Indianapolis, n.d.-f). **A single building reproducing an entire district's programme is what a district under segregation produces.** The reasons the Avenue held a complete economy are the reasons this building held one.
+**What was inside.** The Encyclopedia calls it "a city within a city": the Walker manufacturing plant and corporate offices, a pharmacy, a beauty salon, a barbershop, a cosmetology school, a restaurant, medical offices, a ballroom, and a **1,500-seat theatre** whose interior carried Egyptian, Moorish and West African inspired woodcarving (Encyclopedia of Indianapolis, n.d.-f). **A single building reproducing an entire district's program is what a district under segregation produces.** The reasons the Avenue held a complete economy are the reasons this building held one.
 
 **Designation history, which is the leverage.**
 - **Indiana Register of Historic Places: 1979**
@@ -485,7 +485,7 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
 
 **1. The Walker Building, 617 Indiana Avenue.** A National Historic Landmark since 1991, restored twice, in continuous cultural use as the Madam Walker Legacy Center (Encyclopedia of Indianapolis, n.d.-f). It survived because it was monumental, because it was owned by an institution that fought for it, and because money was raised.
 
-**2. Ransom Place.** A six-block residential neighbourhood immediately north of the Avenue, running roughly from 10th Street to St. Clair Street and from Paca Street to Dr. Martin Luther King Jr. Street, developed in the 1880s and 1890s alongside the Avenue's growth. **Listed on the National Register in 1992**, named for Freeman B. Ransom. After listing, the neighbourhood saw historic houses repaired and new houses built on vacant lots (Encyclopedia of Indianapolis, n.d.-b). It survived because it was residential, because it was organised, and because the listing arrived while there was still something to list.
+**2. Ransom Place.** A six-block residential neighborhood immediately north of the Avenue, running roughly from 10th Street to St. Clair Street and from Paca Street to Dr. Martin Luther King Jr. Street, developed in the 1880s and 1890s alongside the Avenue's growth. **Listed on the National Register in 1992**, named for Freeman B. Ransom. After listing, the neighborhood saw historic houses repaired and new houses built on vacant lots (Encyclopedia of Indianapolis, n.d.-b). It survived because it was residential, because it was organized, and because the listing arrived while there was still something to list.
 
 **3. Seven Lockefield Gardens buildings.** In 1980 a redevelopment agreement was reached and the seven remaining original buildings were designated a local Indianapolis historic district that same year, then rehabilitated. **All but those seven of the original 24 buildings were demolished in 1983.** The site was redeveloped with 11 new buildings holding 493 total units, of which **199 are inside the historic structures** (Encyclopedia of Indianapolis, n.d.-c). It survived partially, and only after a fight.
 
@@ -545,14 +545,14 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
 
 **Instrument one is designation.** Before a government can clear an area, it usually has to declare the area to be something. In Indiana the word was **blighted**, and the machinery was set up by the **Indiana General Assembly in 1945**.
 
-**How it ran here.** The neighbourhood behind Crispus Attucks High School was known as **Pat Ward's Bottom**, a Black community of small, tightly packed houses. It was **identified as blighted by the Indiana General Assembly in 1945**, and the **Indianapolis Redevelopment Commission** chose it for its first slum clearance project. **Demolition of homes began there in 1948** (Encyclopedia of Indianapolis, n.d.-e).
+**How it ran here.** The neighborhood behind Crispus Attucks High School was known as **Pat Ward's Bottom**, a Black community of small, tightly packed houses. It was **identified as blighted by the Indiana General Assembly in 1945**, and the **Indianapolis Redevelopment Commission** chose it for its first slum clearance project. **Demolition of homes began there in 1948** (Encyclopedia of Indianapolis, n.d.-e).
 
-**Then it ran again, and larger.** In **1956**, Indiana University's Medical Center expansion prompted the **Indianapolis Redevelopment Commission to declare almost 38 acres of neighbourhoods blighted and substandard** (Paschall, 2020, citing the commission's action; the same 1956 figure appears in local reporting on the Avenue). The Encyclopedia of Indianapolis separately records properties designated as blighted in **1954 and 1956** in this area (Encyclopedia of Indianapolis, n.d.-a).
+**Then it ran again, and larger.** In **1956**, Indiana University's Medical Center expansion prompted the **Indianapolis Redevelopment Commission to declare almost 38 acres of neighborhoods blighted and substandard** (Paschall, 2020, citing the commission's action; the same 1956 figure appears in local reporting on the Avenue). The Encyclopedia of Indianapolis separately records properties designated as blighted in **1954 and 1956** in this area (Encyclopedia of Indianapolis, n.d.-a).
 
 **Now look at what the word does, because this is the transferable part.**
 
 1. **"Blighted" is a legal conclusion, not a description.** It is reached by a body, on a record, using criteria written into a statute. Once reached, it unlocks powers that do not otherwise exist: acquisition, clearance, resale to a redeveloper.
-2. **The criteria are usually about physical condition**, things like age, overcrowding, plumbing, fire risk. **Those criteria correlate strongly with where a city has refused to lend, insure, or invest.** A neighbourhood denied mortgage capital for thirty years will measure as deteriorated, and then the measurement becomes the justification. **The finding and the cause can be the same policy at two different dates.**
+2. **The criteria are usually about physical condition**, things like age, overcrowding, plumbing, fire risk. **Those criteria correlate strongly with where a city has refused to lend, insure, or invest.** A neighborhood denied mortgage capital for thirty years will measure as deteriorated, and then the measurement becomes the justification. **The finding and the cause can be the same policy at two different dates.**
 3. **A designation is appealable and it is public.** Somebody voted. There are minutes. There is a boundary map with a legal description. **All of it is a public record you can request.**
 
 **The research move.** If you want to know why a block is gone, do not start with the demolition. **Start with the designation**, because the designation is dated, bounded, and minuted, and everything else follows from it. Ask: who declared it, under what statute, on what date, with what boundary, on what evidence, and who was in the room.
@@ -567,7 +567,7 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
       recallContent: [
         {
           prompt: "Name the three documented surviving fragments of the historic fabric, and one reason each survived.",
-          answer: "The Walker Building (monumental, institutionally owned, money raised); Ransom Place (residential, organised, listed in 1992 while there was still something to list); and seven Lockefield Gardens buildings (locally designated in 1980, rehabilitated, the other 17 demolished in 1983).",
+          answer: "The Walker Building (monumental, institutionally owned, money raised); Ransom Place (residential, organized, listed in 1992 while there was still something to list); and seven Lockefield Gardens buildings (locally designated in 1980, rehabilitated, the other 17 demolished in 1983).",
         },
         {
           prompt: "What is the uncomfortable finding in the Lockefield demolition chronology?",
@@ -621,7 +621,7 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
         },
         {
           prompt: "What was Pat Ward's Bottom, and what happened to it?",
-          answer: "A Black neighbourhood of small tightly packed houses behind Crispus Attucks High School. Identified as blighted by the Indiana General Assembly in 1945, chosen by the Indianapolis Redevelopment Commission for its first slum clearance, with demolition beginning in 1948.",
+          answer: "A Black neighborhood of small tightly packed houses behind Crispus Attucks High School. Identified as blighted by the Indiana General Assembly in 1945, chosen by the Indianapolis Redevelopment Commission for its first slum clearance, with demolition beginning in 1948.",
         },
         {
           prompt: "Why is 'blighted' a legal conclusion rather than a description?",
@@ -647,14 +647,14 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
 1. **The overwhelming majority of the money was federal, so the incentive to build was enormous** and the local cost of building was small.
 2. **The line itself was largely a state and local choice.** Blaming "the federal government" for a specific route skips the people who actually drew it.
 
-**Why routes went where they did.** Deborah N. Archer's study of highway construction and racial equity documents both patterns: highways were run through Black neighbourhoods, displacing households and destroying homes, churches, schools and businesses, and in other places the highway itself was used as a barrier to separate white and Black communities (Archer, 2020). **Cheap land, low political resistance, and land already designated blighted are the three things that made a route attractive**, and all three describe segregated Black districts by design.
+**Why routes went where they did.** Deborah N. Archer's study of highway construction and racial equity documents both patterns: highways were run through Black neighborhoods, displacing households and destroying homes, churches, schools and businesses, and in other places the highway itself was used as a barrier to separate white and Black communities (Archer, 2020). **Cheap land, low political resistance, and land already designated blighted are the three things that made a route attractive**, and all three describe segregated Black districts by design.
 
 **Indianapolis, with the dates that are documented.**
 - **1957.** The state announced it would plan freeways connecting downtown Indianapolis to the outer belt system, the road that became I-465 (Historic Indianapolis, n.d.).
 - **Early 1960s.** The state began purchasing homes and commercial buildings in the highway right of way (Historic Indianapolis, n.d.).
 - **Late 1960s to early 1970s.** I-65 and I-70 were built through the city. Historic Indianapolis dates the I-65 work to **1968 to 1971** (Historic Indianapolis, n.d.).
 - **1975.** The **inner loop**, the roughly 4.5-mile downtown ring formed by I-65 and I-70, opened (WRTV, n.d.; Indianapolis Monthly, 2020).
-- Neighbourhoods named in reporting as cut by the two interstates include the Southside, Fountain Square, Fletcher Place, Martindale-Brightwood, the Old Northside, St. Joseph, and **Ransom Place** (WRTV, n.d.; Historic Indianapolis, n.d.).
+- Neighborhoods named in reporting as cut by the two interstates include the Southside, Fountain Square, Fletcher Place, Martindale-Brightwood, the Old Northside, St. Joseph, and **Ransom Place** (WRTV, n.d.; Historic Indianapolis, n.d.).
 
 **The figure everyone quotes, handled properly.** You will see "17,000 residents displaced and 8,000 buildings demolished" attached to Indianapolis interstate construction. **WRTV attributes that figure to an Indianapolis Star article of October 15, 1976** (WRTV, n.d.). Three cautions before you use it:
 1. **It is city-wide**, covering roughly 31 miles of interstate inside I-465 including the inner loop. **It is not an Indiana Avenue figure.**
@@ -663,7 +663,7 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
 
 **One local measurement that is method-transparent.** Census data for the tract closest to I-70 on the Southside shows population falling from **4,225 residents in 1960 to 1,661 in 1970** (WRTV, n.d.). That is a decennial census count for a defined tract, so you know exactly what it measures. **A smaller, well-defined number beats a large, unsourced one every time.**
 
-**Now the hard part, and the reason this lesson is here.** The popular account of Indiana Avenue says the interstate destroyed it. **That is not what the sources this course could verify actually say.** The Encyclopedia of Indianapolis entry on Indiana Avenue does not name highway construction among the causes of the Avenue's loss at all; it names the 1958 campus plan, the blight designations, Indiana University's parcel purchases, and the Lockefield demolition (Encyclopedia of Indianapolis, n.d.-a). **The interstate is documented as taking neighbourhoods around the Avenue, including Ransom Place, and as changing the district's setting. The Avenue's own commercial fabric is documented as going to designation and to campus assembly.** The next lesson takes the campus, and lesson 13 tests the whole argument.
+**Now the hard part, and the reason this lesson is here.** The popular account of Indiana Avenue says the interstate destroyed it. **That is not what the sources this course could verify actually say.** The Encyclopedia of Indianapolis entry on Indiana Avenue does not name highway construction among the causes of the Avenue's loss at all; it names the 1958 campus plan, the blight designations, Indiana University's parcel purchases, and the Lockefield demolition (Encyclopedia of Indianapolis, n.d.-a). **The interstate is documented as taking neighborhoods around the Avenue, including Ransom Place, and as changing the district's setting. The Avenue's own commercial fabric is documented as going to designation and to campus assembly.** The next lesson takes the campus, and lesson 13 tests the whole argument.
 
 ## Sources
 - Archer, D. N. (2020). "White men's roads through Black men's homes": Advancing racial equity through highway reconstruction. *Vanderbilt Law Review, 73*(5). https://scholarship.law.vanderbilt.edu/vlr/vol73/iss5/1/
@@ -713,7 +713,7 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
 
 **Why a nonprofit realty corporation, and not the university's own name on the deeds?** Because **land assembly gets more expensive the moment the seller knows who is buying and why.** A buyer that appears to be an ordinary private company pays ordinary prices. This is a standard technique, it is legal, and **it is also the single most useful thing in this lesson**, because it tells you that the deed records will not always say what you expect. **Follow the corporate entity, not the institution's name.**
 
-**Now put the two instruments in the right order.** A blight designation makes land acquirable and clearable. A university with a state charter, a nonprofit acquisition vehicle, a trustees' resolution, and a governor willing to authorise condemnation can then assemble it. **Designation plus assembly is the mechanism.** The highway is a separate instrument operating on the surrounding neighbourhoods over an overlapping period.
+**Now put the two instruments in the right order.** A blight designation makes land acquirable and clearable. A university with a state charter, a nonprofit acquisition vehicle, a trustees' resolution, and a governor willing to authorise condemnation can then assemble it. **Designation plus assembly is the mechanism.** The highway is a separate instrument operating on the surrounding neighborhoods over an overlapping period.
 
 **What is on that ground now.** Reporting describes the area around the Avenue today as "sprawling lawns, concrete plazas and gargantuan buildings" for the university, with a few historical markers (Mirror Indy & Open Campus, 2024). And the institution itself has changed again: **on July 1, 2024, IUPUI was realigned into two separate campuses, IU Indianapolis and Purdue University in Indianapolis**, following a definitive agreement signed by both boards of trustees on **June 14, 2023** (Indiana University Indianapolis, n.d.). **The entity that assembled the land no longer exists under that name**, which is exactly the kind of fact that breaks a naive records search and which you now know to expect.
 
@@ -743,7 +743,7 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
         },
         {
           prompt: "What does the popular account say destroyed Indiana Avenue, and what do the verifiable sources say?",
-          answer: "The popular account says the interstate did. The Encyclopedia of Indianapolis entry on Indiana Avenue does not name highways among the causes at all; it names the 1958 campus plan, blight designations, IU's parcel purchases and the Lockefield demolition. The interstate is documented as taking surrounding neighbourhoods including Ransom Place.",
+          answer: "The popular account says the interstate did. The Encyclopedia of Indianapolis entry on Indiana Avenue does not name highways among the causes at all; it names the 1958 campus plan, blight designations, IU's parcel purchases and the Lockefield demolition. The interstate is documented as taking surrounding neighborhoods including Ransom Place.",
         },
       ],
     },
@@ -764,7 +764,7 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
 - **Incorporated cities and towns over 5,000 people**, leaving **Beech Grove, Lawrence, Southport and Speedway** independent (Wachter, 2014).
 - **The nine townships**, which continue as separate governments and are the territorial basis for eight of the county's eleven school districts (Encyclopedia of Indianapolis, n.d.-g).
 - Several municipal corporations, and the county court system.
-- The law also **barred annexation into neighbouring counties**, a restriction needed to get the votes (Wachter, 2014).
+- The law also **barred annexation into neighboring counties**, a restriction needed to get the votes (Wachter, 2014).
 
 **Fifty separate and overlapping governmental units remain within Marion County, with more than 61 taxing districts** (Wachter, 2014). Consolidation is a word that does far less than it sounds like.
 
@@ -930,7 +930,7 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
               "Only very old buildings can ever qualify",
             ],
             correctIndex: 1,
-            explanation: "A neighbourhood denied mortgage capital for decades measures as deteriorated, and the measurement then justifies clearance.",
+            explanation: "A neighborhood denied mortgage capital for decades measures as deteriorated, and the measurement then justifies clearance.",
             sourceLessonSlug: "ia-powers-blight",
           },
           {
@@ -975,7 +975,7 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
               "Congress, by a separate statute for each city",
               "The state highway department, with local officials",
               "The federal Bureau of Public Roads directly",
-              "The affected neighbourhoods, by referendum",
+              "The affected neighborhoods, by referendum",
             ],
             correctIndex: 1,
             explanation: "Roughly 90 percent of the money was federal, but the line itself was largely a state and local choice, which is why the alignment decision has identifiable authors.",
@@ -1002,7 +1002,7 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
               "A single 1970 city-county consolidation law",
             ],
             correctIndex: 1,
-            explanation: "That entry does not name highway construction among the Avenue's causes at all, which is why this course separates the corridor's fabric from the surrounding neighbourhoods.",
+            explanation: "That entry does not name highway construction among the Avenue's causes at all, which is why this course separates the corridor's fabric from the surrounding neighborhoods.",
             sourceLessonSlug: "ia-powers-alignment",
           },
           {
@@ -1085,7 +1085,7 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
 
 **1. Count the historic buildings, and locate the gaps.** You know the listed district is about 3 acres and eleven buildings in the 500 block, and that the Green Book entries run from 233 to 1005 Indiana Avenue (Borland & Linebarger, 2025; Encyclopedia of Indianapolis, n.d.-a). **Ask of every stretch between those numbers: is there a pre-1935 building here, and if not, what is?** The four answers that matter are a newer building, a parking lot or surface lot, a lawn or plaza, and a road. **Each one is a different decision.**
 
-**2. Find the flatiron, and look at what is beside it.** The Walker Building's triangular plan is the 1821 plat still visible in 1927 brick. Then look at its neighbours on both sides. **A landmark with no context is a different kind of evidence than a landmark in a block**, and which one you are looking at is the single most informative thing in the tour.
+**2. Find the flatiron, and look at what is beside it.** The Walker Building's triangular plan is the 1821 plat still visible in 1927 brick. Then look at its neighbors on both sides. **A landmark with no context is a different kind of evidence than a landmark in a block**, and which one you are looking at is the single most informative thing in the tour.
 
 **3. Look for the boundary between the corridor and the campus.** Somewhere the fabric changes from street-fronting commercial buildings to institutional buildings set back behind lawns and plazas. **That boundary is a land-assembly line, and it has a date.** Note where it runs.
 
@@ -1095,7 +1095,7 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
 
 **6. Look for what is being built right now.** Construction fencing, a rezoning notice, a public hearing sign, a leasing banner. **Every one of those is a live document with a case number**, and Section 5 teaches you how to look them up.
 
-**7. Look at who is on the street.** This is a working district with residents, students, workers and visitors. **Describe them as they would describe themselves, or do not describe them.** A 360 tour is a photograph of strangers in a public place, and the ethics of writing about it are the ethics of writing about neighbours.
+**7. Look at who is on the street.** This is a working district with residents, students, workers and visitors. **Describe them as they would describe themselves, or do not describe them.** A 360 tour is a photograph of strangers in a public place, and the ethics of writing about it are the ethics of writing about neighbors.
 
 ## What the tour cannot show you
 
@@ -1166,7 +1166,7 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
             title: "Indiana Avenue, Indianapolis, Indiana",
             color: "#1d4ed8",
             description:
-              "The subject of this course. A diagonal on Ralston's 1821 plat that became the Black commercial and cultural centre of Indianapolis, 77 percent Black by 1920, holding more than 180 businesses in eight blocks in 1916 and about 30 Green Book listings between 233 and 1005 Indiana Avenue. What survives on the National Register is the 3-acre, eleven-building Indiana Avenue Historic District listed in 1987, plus the Walker Building (National Historic Landmark, 1991), Ransom Place (listed 1992) and seven of Lockefield Gardens' original 24 buildings. Most of the rest went to blight designation and to university land assembly between 1948 and the 1980s.",
+              "The subject of this course. A diagonal on Ralston's 1821 plat that became the Black commercial and cultural center of Indianapolis, 77 percent Black by 1920, holding more than 180 businesses in eight blocks in 1916 and about 30 Green Book listings between 233 and 1005 Indiana Avenue. What survives on the National Register is the 3-acre, eleven-building Indiana Avenue Historic District listed in 1987, plus the Walker Building (National Historic Landmark, 1991), Ransom Place (listed 1992) and seven of Lockefield Gardens' original 24 buildings. Most of the rest went to blight designation and to university land assembly between 1948 and the 1980s.",
           },
           {
             id: "ia-rondo",
@@ -1175,7 +1175,7 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
             title: "Rondo, Saint Paul, Minnesota",
             color: "#b45309",
             description:
-              "The alignment instrument. Interstate 94 was routed through the Rondo neighbourhood, Saint Paul's Black centre. Reporting on the neighbourhood's displacement is the reason Rondo is the most cited American case of a highway taking a Black district, and the community's own reconnection campaign is active today. Same instrument as lesson 10, different city.",
+              "The alignment instrument. Interstate 94 was routed through the Rondo neighborhood, Saint Paul's Black center. Reporting on the neighborhood's displacement is the reason Rondo is the most cited American case of a highway taking a Black district, and the community's own reconnection campaign is active today. Same instrument as lesson 10, different city.",
           },
           {
             id: "ia-overtown",
@@ -1298,19 +1298,19 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
 - **MapIndy**, the official GIS for the Consolidated City of Indianapolis and Marion County: https://maps.indy.gov/MapIndy/ . Enter an address, an intersection or a parcel number and read parcel boundaries, political boundaries, street centrelines and aerial imagery.
 - **The Marion County Assessor's property cards**: https://maps.indy.gov/AssessorPropertyCards/ . Search by state parcel number, owner name or address and read the public property card.
 
-**Your target: 617 Indiana Avenue, Indianapolis, the Madam C. J. Walker Building.** It is a National Historic Landmark, so it is a safe address to practise on: it is a public building, its address is published by the institution that occupies it, and you are not exposing anybody's home.
+**Your target: 617 Indiana Avenue, Indianapolis, the Madam C. J. Walker Building.** It is a National Historic Landmark, so it is a safe address to practice on: it is a public building, its address is published by the institution that occupies it, and you are not exposing anybody's home.
 
 **Work through these, then answer the questions below.**
 1. Find **617 Indiana Avenue** in MapIndy and look at the parcel outline. **Is it triangular?** Compare it against lesson 6's explanation of why.
 2. Read off the **state parcel number**. Write it down exactly, including punctuation.
 3. Open the Assessor's property card for that parcel and find the **owner of record**, the **year built** if the card gives one, and the **assessed value**.
-4. Compare the **owner of record** to the name of the organisation that operates the building. **They may not match, and if they do not, that is normal and it is a finding.**
+4. Compare the **owner of record** to the name of the organization that operates the building. **They may not match, and if they do not, that is normal and it is a finding.**
 5. In MapIndy, turn on political boundaries and note which **township**, **council district** and **school district** the parcel is in. **Section 3 explained why those three boundaries are not the same shape.**
-6. Walk the parcel outline a block in each direction along the Avenue and count how many neighbouring parcels are **institutionally owned**.
+6. Walk the parcel outline a block in each direction along the Avenue and count how many neighboring parcels are **institutionally owned**.
 
 **The habits this builds, which transfer to any American county.** Every county has an assessor and most have a GIS. **The names of the tools change and the four facts do not: parcel number, owner of record, assessed value, and which overlapping jurisdictions the parcel sits in.** Learn to find those four and you can research any address in the country.
 
-**One rule you do not get to break.** **Do not run this drill on somebody's home and publish the result.** A parcel record is public, and a current occupant's name attached to their address in a piece of writing is a different thing from a public record sitting in a county database. Practise on institutional and commercial addresses. This is the same rule the method course applied to tourist homes.
+**One rule you do not get to break.** **Do not run this drill on somebody's home and publish the result.** A parcel record is public, and a current occupant's name attached to their address in a piece of writing is a different thing from a public record sitting in a county database. Practice on institutional and commercial addresses. This is the same rule the method course applied to tourist homes.
 
 ## Sources
 - City of Indianapolis and Marion County. (n.d.-a). *MapIndy*. https://maps.indy.gov/MapIndy/
@@ -1342,7 +1342,7 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
             prompt: "The building you practise on in this drill is at ___ Indiana Avenue.",
             answer: "617",
             accept: ["617 indiana avenue", "617 indiana ave"],
-            explanation: "The Madam C. J. Walker Building, a National Historic Landmark and a safe public address to practise on.",
+            explanation: "The Madam C. J. Walker Building, a National Historic Landmark and a safe public address to practice on.",
           },
           {
             prompt: "The plan a rezoning petition is judged against is the ___ plan.",
@@ -1449,7 +1449,7 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
           {
             prompt: "Which four facts should you pull for any parcel in any American county?",
             options: [
-              "Square footage, paint colour, roof age, and street name",
+              "Square footage, paint color, roof age, and street name",
               "Parcel number, owner, assessed value, and jurisdictions",
               "Architect, contractor, original cost, and current tenant",
               "The zoning code, lot shape, and the street frontage",
@@ -1487,7 +1487,7 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
             options: [
               "Formally adopted in 2023 and now being implemented",
               "Announced 2023, still unfinished, nothing yet adopted",
-              "Cancelled outright by the city council in 2024",
+              "Canceled outright by the city council in 2024",
               "Adopted directly by the Indiana General Assembly",
             ],
             correctIndex: 1,
@@ -1557,7 +1557,7 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
           {
             prompt: "Name three things a 360 tour of a place cannot show you.",
             options: [
-              "Colour, texture, and scale",
+              "Color, texture, and scale",
               "A date, an owner, an intention, and absence",
               "Buildings, streets, and signs",
               "Weather, season, and time of day",
@@ -1569,7 +1569,7 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
           {
             prompt: "Why does this course publish a virtual_tour lesson before the tour URL exists?",
             options: [
-              "Because the tour was cancelled",
+              "Because the tour was canceled",
               "Because beat 4 is a drop-in: a site course is complete and teachable with the other five beats, and the body serves as the observation brief meanwhile",
               "Because the platform requires a placeholder",
               "Because the tour is optional and will never be added",
@@ -1647,7 +1647,7 @@ Pick one and commit, because mixing them is what makes place writing mushy.
 1. **No invented detail.** Not a date, a name, a quotation, a street number, or a statistic. **If a source does not say it, you do not write it.** This includes atmospheric invention: you do not know what the room smelled like.
 2. **No composite or imagined characters.** Real, cited people only. The Green Book table gives you real proprietors; the Walker Building gives you A'Lelia Walker and Freeman Ransom; the Temple family case gives you a documented condemnation. **That is more than enough material.**
 3. **No invented dialogue**, including "he might have said."
-4. **Living communities describe themselves.** Use the names and terms the people who live and work there use, and say where you got them. **Ransom Place is somebody's neighbourhood today.**
+4. **Living communities describe themselves.** Use the names and terms the people who live and work there use, and say where you got them. **Ransom Place is somebody's neighborhood today.**
 5. **No ruin porn, and no lost golden age.** A district that ran a complete economy under segregation was not a paradise, and its removal was not a natural death. **Both of those framings flatter the writer and cheat the subject.**
 6. **Credit what was built.** Walker's building, Ransom's law practice, the Flanner House self-help houses, the musicians who came up in the jam sessions, the Indianapolis Recorder. **A piece that only inventories loss is an incomplete report.**
 7. **Private homes are private.** Do not publish a current resident's name with their address, do not photograph into windows, and do not knock uninvited.
@@ -1704,10 +1704,10 @@ A short, checkable piece in which every sentence is either something you read in
 - Test a historical thesis against a chronology, and report it when the thesis loses.
 - Distinguish a claim about a document from a claim about the world. **"The Green Book lists 30 Avenue businesses" is the first. "There were 30 Black businesses on the Avenue" is the second, and it is false.**
 - Find the four facts about any parcel in any American county.
-- Recognise that a plan not yet adopted is where a citizen has the most leverage.
+- Recognize that a plan not yet adopted is where a citizen has the most leverage.
 
 **What this course deliberately did not cover, and why.**
-- **Crispus Attucks High School** appears here as a neighbour and as the school the NAACP fought to prevent and then took pride in. **It gets its own course**, because a segregated school, a 1955 state championship, and what the building is today is more than a paragraph can carry.
+- **Crispus Attucks High School** appears here as a neighbor and as the school the NAACP fought to prevent and then took pride in. **It gets its own course**, because a segregated school, a 1955 state championship, and what the building is today is more than a paragraph can carry.
 - **The Walker Building's interior and the Walker company's own business history** are named here only as far as they touch the corridor. Also a course of its own.
 - **The Indianapolis school desegregation case** appears only where it touches Unigov and Lockefield. **The school and suburb pair is the next pair of courses in this cluster**, because that is where the surviving half of the argument in lesson 13 actually closes.
 - **Any total for how many buildings the Avenue lost.** No such survey has been read into this course. **The three figures in circulation for city-wide displacement disagree because they count different things, and this course refuses to manufacture a corridor-level number from them.**
