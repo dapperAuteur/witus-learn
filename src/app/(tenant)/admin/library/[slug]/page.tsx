@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { requirePlatformOwner } from "@/lib/session";
+import { formatBytes } from "@/lib/format-bytes";
 import { getLibraryDocument } from "@/db/queries/library";
 import { Markdown } from "@/components/markdown";
 
@@ -25,16 +26,27 @@ export default async function AdminLibraryDocumentPage({
   const { slug } = await params;
   const doc = await getLibraryDocument(slug);
   if (!doc) notFound();
+  const size = doc.hasPdf ? formatBytes(doc.pdfBytes) : null;
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
-      <div className="mb-6 flex items-center justify-between gap-3 text-sm">
+      <div className="mb-6 flex flex-wrap items-center justify-between gap-3 text-sm">
         <Link href="/admin/library" className="underline">
           Back to Library
         </Link>
-        <span className="text-xs text-neutral-500">
-          Updated {dateFmt.format(doc.updatedAt)} UTC
-        </span>
+        <div className="flex items-center gap-3">
+          {doc.hasPdf ? (
+            <a
+              href={`/admin/library/${doc.slug}/download`}
+              className="inline-flex min-h-11 items-center rounded-lg border border-neutral-200 px-3 text-xs font-semibold transition-colors hover:border-neutral-400 dark:border-neutral-800 dark:hover:border-neutral-500"
+            >
+              Download PDF{size ? ` (${size})` : ""}
+            </a>
+          ) : null}
+          <span className="text-xs text-neutral-500">
+            Updated {dateFmt.format(doc.updatedAt)} UTC
+          </span>
+        </div>
       </div>
       <article>
         <Markdown>{doc.content}</Markdown>

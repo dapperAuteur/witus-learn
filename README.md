@@ -478,6 +478,21 @@ render it through the same safe `Markdown` component lessons use. The table is p
 `tenant_id`), both pages sit behind `requirePlatformOwner()`, and nothing tenant-scoped or public
 links to it, so no school ever sees a byte of it. Mirrors `/admin/library` on witus.online.
 Migration `0048_nebulous_vermin.sql` creates the table (`pnpm db:migrate:prod` after merging).
+The owner can also download each document's typeset **PDF** (uploaded by `sync-library.mjs` from
+the sibling `<name>.pdf`; migration `0052` adds the columns) from the list rows or the reader
+header — attachment download, no caching.
+
+## Specialization credentials
+
+Named three-course tracks (shared research core + craft medium + subject, per the Documentarian
+program's architecture in `plans/future/12`) earned automatically when all three courses are
+complete. Definitions are committed typed course-slug triples in
+[src/lib/specializations.ts](src/lib/specializations.ts); award and progress are **computed at
+read time from `course_completions`** (no new table), tenant-scoped so a triple with any leg
+unpublished in the requesting tenant simply does not exist there. Shown on the learner dashboard
+(earned + in-progress with the remaining courses) and the Family view (earned only). Each earned
+leg links to its existing `/verify/[token]` course credential; the specialization mints no token
+and is deliberately presented as an internal platform record, never an external certification.
 
 ## Media verification (`/admin/media`)
 
