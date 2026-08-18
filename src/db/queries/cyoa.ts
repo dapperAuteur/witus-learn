@@ -1,4 +1,4 @@
-import { and, eq, isNotNull, ne, sql } from "drizzle-orm";
+import { and, eq, isNotNull, ne, or, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import { courses, lessonEmbeddings, lessons } from "@/db/schema";
 import { vectorLiteral } from "@/lib/ai/embeddings";
@@ -102,7 +102,9 @@ export async function matchLessonsGlobal(
         eq(courses.tenantId, tenantFilter),
         eq(courses.allowCrossCourseCyoa, true),
         eq(courses.isPublished, true),
-        isNotNull(courses.vettedAt),
+        // Vetted, OR owner-flagged "live but unvetted" (plans/52): either way the lesson URL a
+        // crossroads hands out actually opens, which is the property this filter protects.
+        or(isNotNull(courses.vettedAt), eq(courses.allowUnvettedPublic, true)),
         eq(lessons.isPublished, true),
         ne(lessons.id, excludeLessonId),
         ne(lessons.courseId, excludeCourseId),

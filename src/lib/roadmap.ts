@@ -5,6 +5,18 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- ✅ **School gradebook roll-up + roster CRUD** (\`feat/school-rollup-and-roster-crud\`, plans/50
+  Phase 3's safe half): /admin/gradebook (one row per learner across the school, CSV export,
+  brand_admin+), and the cohort roster's pending-invite list with Resend (same token, nothing
+  already shared is invalidated). Grade/score EDITING deliberately not built: plans/50 defers
+  destructive edits to a BAM decision on override/annotation rows, so the audit trail stays honest.
+- ✅ **"Live but unvetted" flag** (\`feat/allow-unvetted-public\`, plans/52's last open item;
+  migration **0051**): the owner opens an unvetted course's content to the public NOW, behind a
+  visible review-in-progress disclosure on the landing page and every lesson. Every gate asks the
+  new \`isVettingLocked\` (vetting lock minus the flag) while \`isUnvetted\` keeps reporting the
+  truthful review status for badges, the review queue, and auditors (who stay read-only until the
+  course is actually vetted). api-v1 DELIBERATELY keeps the vetted-only bar: syndication cannot
+  carry the disclosure. Bulk toggled from /teach, owner-only, enforced server-side. Closes plans/52.
 - ✅ **Notes, inline annotations, sharing, and note search** (plans/61, four branches bundled;
   migration **0050**): private per-lesson notes with select-to-annotate (quote + context +
   content-derived block ids from the renderer; an edited passage ORPHANS the note visibly, never

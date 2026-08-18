@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Course } from "@/db/schema";
 import { formatCourseCode } from "@/lib/series-code";
-import { isUnvetted } from "@/lib/vetting";
+import { isVettingLocked } from "@/lib/vetting";
 import { ComingSoonBadge } from "./coming-soon-course";
 import { ProgressBar } from "./progress-bits";
 
@@ -75,7 +75,7 @@ export function CourseCard({
               {progress >= 100 ? "Completed ✓" : `${progress}% complete`}
             </p>
           </div>
-        ) : isUnvetted(course) ? (
+        ) : isVettingLocked(course) ? (
           <ComingSoonBadge />
         ) : (
           <p className="text-xs font-medium" style={{ color: "var(--accent)" }}>

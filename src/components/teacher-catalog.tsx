@@ -215,6 +215,24 @@ export function TeacherCatalog({
               >
                 Mark unvetted
               </button>
+              <button
+                type="button"
+                disabled={busy}
+                onClick={() => bulk({ allowUnvettedPublic: true }, "Open while unvetted")}
+                title="Live but unvetted: the full course opens to the public NOW, with a review-in-progress notice on its pages. The syndication API still withholds it until vetted."
+                className={btn}
+              >
+                Open while unvetted
+              </button>
+              <button
+                type="button"
+                disabled={busy}
+                onClick={() => bulk({ allowUnvettedPublic: false }, "Close while unvetted")}
+                title="Back to the default: unvetted courses show the Coming soon page (enrollees keep access)"
+                className={btn}
+              >
+                Close while unvetted
+              </button>
             </>
           ) : null}
           <span className="flex items-center gap-1">

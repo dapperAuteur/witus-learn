@@ -9,6 +9,15 @@ interface Member {
   present: boolean;
 }
 
+interface PendingInvite {
+  id: string;
+  email: string;
+  /** YYYY-MM-DD of the last send (creation or most recent resend). */
+  invitedAt: string;
+  /** The invite's join URL, so the teacher can re-share it without email. */
+  url: string;
+}
+
 // Click-to-copy chip for the generated invite URL.
 function Copyable({ value }: { value: string }) {
   const [copied, setCopied] = useState(false);
@@ -111,9 +120,78 @@ function GuardianInvite({ cohortId, studentUserId }: { cohortId: string; student
   );
 }
 
+// One not-yet-accepted invite: the email, when it was last sent, the copyable join link, and a
+// "Resend" that POSTs to /api/cohorts/[id]/invites/[inviteId]/resend (plans/50, Phase 3 roster
+// CRUD). Resending re-delivers the SAME link — nothing already shared is invalidated — and, like
+// the create flow, the link is surfaced to copy/share when email delivery isn't configured.
+function PendingInviteRow({ cohortId, invite }: { cohortId: string; invite: PendingInvite }) {
+  const [busy, setBusy] = useState(false);
+  const [status, setStatus] = useState<"idle" | "emailed" | "link-only" | "error">("idle");
+
+  async function resend() {
+    setBusy(true);
+    setStatus("idle");
+    try {
+      const res = await fetch(`/api/cohorts/${cohortId}/invites/${invite.id}/resend`, { method: "POST" });
+      const data = await res.json().catch(() => ({}));
+      setStatus(res.ok ? (data.emailed ? "emailed" : "link-only") : "error");
+    } catch {
+      setStatus("error");
+    }
+    setBusy(false);
+  }
+
+  return (
+    <li className="py-2 text-sm">
+      <div className="flex items-center justify-between gap-3">
+        <span className="min-w-0 break-words">
+          {invite.email}
+          <span className="ml-2 text-xs text-neutral-500">invited {invite.invitedAt}</span>
+        </span>
+        <button
+          type="button"
+          onClick={resend}
+          disabled={busy}
+          className="min-h-11 shrink-0 rounded px-2 text-xs font-medium hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-60"
+          style={{ color: "var(--accent)" }}
+        >
+          {busy ? "Resending…" : "Resend"}
+        </button>
+      </div>
+      <div className="mt-1">
+        <Copyable value={invite.url} />
+      </div>
+      {status === "emailed" ? (
+        <p role="status" className="mt-1 text-xs text-green-700 dark:text-green-400">
+          ✓ Invite emailed again.
+        </p>
+      ) : null}
+      {status === "link-only" ? (
+        <p role="status" className="mt-1 text-xs text-amber-700 dark:text-amber-400">
+          Email delivery isn&apos;t set up yet, copy and share the link above directly.
+        </p>
+      ) : null}
+      {status === "error" ? (
+        <p role="alert" className="mt-1 text-xs text-red-600">
+          Couldn&apos;t resend that invite. Try again.
+        </p>
+      ) : null}
+    </li>
+  );
+}
+
 // A cohort's roster: invite-by-email form (shows the resulting invite URL to copy/share),
-// the member list ("● here" if present in /live right now), and a remove control.
-export function CohortRoster({ cohortId, members }: { cohortId: string; members: Member[] }) {
+// pending invites (copy link / resend), the member list ("● here" if present in /live right
+// now), and a remove control.
+export function CohortRoster({
+  cohortId,
+  members,
+  pendingInvites = [],
+}: {
+  cohortId: string;
+  members: Member[];
+  pendingInvites?: PendingInvite[];
+}) {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [busy, setBusy] = useState(false);
@@ -135,6 +213,8 @@ export function CohortRoster({ cohortId, members }: { cohortId: string; members:
     if (res.ok) {
       setEmail("");
       setInvite({ url: data.inviteUrl, emailed: Boolean(data.emailed) });
+      // The new invite also appears in the server-rendered "Pending invites" list below.
+      router.refresh();
     } else {
       setErr(data.error ?? "Couldn't send that invite. Try again.");
     }
@@ -186,6 +266,21 @@ export function CohortRoster({ cohortId, members }: { cohortId: string; members:
           </div>
         ) : null}
       </form>
+
+      {pendingInvites.length > 0 ? (
+        <div>
+          <h2 className="font-semibold">Pending invites</h2>
+          <p className="mt-1 text-xs text-neutral-500">
+            Sent but not accepted yet. Resend re-delivers the same link, so anything already
+            shared keeps working.
+          </p>
+          <ul className="mt-2 divide-y divide-neutral-200 dark:divide-neutral-800">
+            {pendingInvites.map((i) => (
+              <PendingInviteRow key={i.id} cohortId={cohortId} invite={i} />
+            ))}
+          </ul>
+        </div>
+      ) : null}
 
       <div>
         <h2 className="font-semibold">Students</h2>

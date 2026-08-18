@@ -7,7 +7,7 @@ import { isCourseAuditor } from "@/db/queries/course-auditors";
 import { AUDITOR_READ_ONLY_MESSAGE, isReadOnlyAuditor } from "@/lib/auditors";
 import type { Session } from "@/lib/auth";
 import { getMembership, getSession, isPlatformOwner } from "@/lib/session";
-import { canSeeUnvettedContent, isUnvetted } from "@/lib/vetting";
+import { canSeeUnvettedContent, isUnvetted, isVettingLocked } from "@/lib/vetting";
 
 export const json = (data: unknown, status = 200) => NextResponse.json(data, { status });
 export const errorJson = (error: string, status: number) => json({ error }, status);
@@ -96,7 +96,9 @@ export async function canSeeUnvettedCourse(
   session: Session | null,
   course: Course,
 ): Promise<boolean> {
-  if (!isUnvetted(course)) return true;
+  // isVettingLocked, not isUnvetted: an owner-flagged "live but unvetted" course is open to
+  // everyone (the pages carry the review-in-progress disclosure instead).
+  if (!isVettingLocked(course)) return true;
   if (!session) return false;
   const isOwnerOrInstructor =
     course.instructorId === session.user.id || (await isPlatformOwner(session.user.id));

@@ -51,6 +51,9 @@ const PatchSchema = z.object({
   // can't backdate a review (the date is a trust signal shown to educators). Stripped below for
   // anyone but the platform owner. false = back to "Coming soon".
   vetted: z.boolean().optional(),
+  // Owner-only, like `vetted`: "live but unvetted" (plans/52). Opens the course's content to the
+  // public before review finishes, behind an on-page disclosure. Stripped for non-owners below.
+  allowUnvettedPublic: z.boolean().optional(),
   // Admin-only (stripped / validated below for non-admins)
   isFeatured: z.boolean().optional(),
   featuredOrder: z.number().int().nullable().optional(),
@@ -136,6 +139,12 @@ export async function PATCH(req: Request, { params }: Params) {
     if (await isPlatformOwner(session.user.id)) {
       patch.vettedAt = wantVetted ? (course.vettedAt ?? new Date()) : null;
     }
+  }
+  // Same authority as vetting itself: opening an UNREVIEWED course to the public is the platform
+  // owner's risk to take, never an instructor's or brand_admin's. This one IS a column, so for
+  // anyone else it is stripped rather than translated.
+  if ("allowUnvettedPublic" in patch && !(await isPlatformOwner(session.user.id))) {
+    delete patch.allowUnvettedPublic;
   }
 
   // Featured flags are admin-only.

@@ -8,7 +8,7 @@ import { resolveTenant } from "@/lib/tenant";
 import { isWitusBrandedHost } from "@/lib/witus-host";
 import { ecosystemProductBySlug } from "@/lib/ecosystem";
 import { matchEntities } from "@/lib/entities";
-import { isUnvetted } from "@/lib/vetting";
+import { isVettingLocked } from "@/lib/vetting";
 import { CourseCard } from "@/components/course-card";
 
 const TITLE = "Courses";
@@ -182,7 +182,7 @@ export default async function CoursesPage({ searchParams }: { searchParams: Sear
                   ? "⚠️ On hold"
                   : !c.isPublished
                     ? "Draft"
-                    : isUnvetted(c)
+                    : isVettingLocked(c)
                       ? "🕒 Coming soon"
                       : null;
             return (
