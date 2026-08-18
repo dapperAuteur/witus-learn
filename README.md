@@ -509,6 +509,43 @@ and draws only boundaries plus each area's official Census name: every color and
 from the lesson's own cited `regionLegend`. Pure join/legend helpers in
 [src/lib/map-atlas.ts](src/lib/map-atlas.ts).
 
+## Marketing tools (`/admin/marketing`)
+
+One surface for the growth levers that exist: lead and interest signals (top courses by people
+waiting), share counts by channel, which published courses have not been announced yet (linking
+the existing `/teach/announce` batch tool), promo-code management, and email-campaign drafts. A
+**Compose announcement** form drafts a course announcement from the course's own title,
+description, and URL, with copy-to-clipboard and a `mailto:` fallback: sending happens through
+BAM's own email tool for now, and the page says so. Bulk sending is deliberately unbuilt until
+seven audience/consent/deliverability decisions are made (recorded in the branch notes), because
+list hygiene failures would put the transactional magic-link mail at risk.
+
+## Brand self-serve (`/admin/settings`)
+
+Brand admins self-serve the full brand identity: name, tagline, accent colors, wordmark, PWA
+short name, theme color, logo, favicon, and the default social card, each with a live preview and
+https-only URL validation, plus a server-rendered "Saved brand" card showing how the stored
+identity renders today. Only theme keys with a verified consumer are exposed: a setting that
+silently does nothing is worse than no setting (`manifestUrl` stays a DB-level escape hatch on
+purpose, since a self-serve external manifest is an easy installability-breaker).
+
+## Course pages link to their bundles and series
+
+A course page shows the paths it belongs to (linked), the series it is part of (linked when the
+course carries a series slug), and an **"Also available in a bundle"** aside listing every
+PUBLISHED bundle containing it, each linking to `/bundles/[slug]` with its price. Unpublished
+bundles are withheld (a link nobody can buy is a dead end), and the Coming-soon face of an
+unvetted course still shows no offers of any kind.
+
+## Vetting: finding and clearing the queue
+
+`/teach?status=unvetted` is the vetting queue, preselected from the URL, with the owner-only bulk
+**Mark vetted** controls. The `/admin` home tile for published courses links straight there
+whenever something is waiting, and any unvetted course carries an owner-only CTA
+([src/components/vet-course-cta.tsx](src/components/vet-course-cta.tsx)) on the course page and in
+the course manager, with a one-click **Mark this course vetted** button, so review happens where
+the course is rather than after a walk to another surface.
+
 ## Specialization credentials
 
 Named three-course tracks (shared research core + craft medium + subject, per the Documentarian
