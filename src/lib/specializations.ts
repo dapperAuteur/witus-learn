@@ -49,7 +49,41 @@ export interface SpecializationDef {
   subject: string;
 }
 
-export const SPECIALIZATIONS: readonly SpecializationDef[] = [
+/** One leg of a PROGRAM specialization: any number of courses, each with a human label. */
+export interface SpecializationLeg {
+  /** Short human label for the leg ("Orientation", "Sleep", "Capstone"); replaces the fixed
+   *  core/medium/subject role vocabulary for programs longer than a triple. */
+  label: string;
+  courseSlug: string;
+}
+
+/**
+ * An N-leg program specialization (plans/67: the WELL series is 8 courses). Lives ALONGSIDE the
+ * three-leg triples: existing defs and every earned combination stay byte-for-byte untouched
+ * (the add-never-rewrite rule above). Earned = all legs complete, same read-time computation.
+ */
+export interface ProgramSpecializationDef {
+  slug: string;
+  title: string;
+  /** One sentence. No efficacy claims, no external-credential language. */
+  description: string;
+  /** 3..N legs, in display order. */
+  legs: SpecializationLeg[];
+}
+
+export type AnySpecializationDef = SpecializationDef | ProgramSpecializationDef;
+
+export function isProgramDef(def: AnySpecializationDef): def is ProgramSpecializationDef {
+  return "legs" in def;
+}
+
+/** A def's legs in canonical order, triples normalized through the fixed role vocabulary. */
+export function legsOf(def: AnySpecializationDef): SpecializationLeg[] {
+  if (isProgramDef(def)) return def.legs;
+  return SPECIALIZATION_ROLES.map((role) => ({ label: role, courseSlug: def[role] }));
+}
+
+export const SPECIALIZATIONS: readonly AnySpecializationDef[] = [
   {
     slug: "documentary-history",
     title: "Documentary and Public History",
@@ -92,7 +126,8 @@ export interface CompletionRef {
 }
 
 export interface SpecializationCourseStatus {
-  role: SpecializationRole;
+  /** The leg's label: "core" | "medium" | "subject" for triples, the leg label for programs. */
+  role: string;
   courseSlug: string;
   title: string;
   completed: boolean;
@@ -104,13 +139,13 @@ export interface SpecializationStatus {
   slug: string;
   title: string;
   description: string;
-  /** True only when ALL THREE courses are completed. Never imply otherwise in UI. */
+  /** True only when EVERY leg is completed. Never imply otherwise in UI. */
   earned: boolean;
   /** The date the LAST of the three was completed (null until earned). */
   earnedAt: Date | null;
-  /** 0 to 3. */
+  /** Completed legs, 0..legs.length. */
   completedCount: number;
-  /** All three legs in core, medium, subject order. */
+  /** Every leg in definition order. */
   courses: SpecializationCourseStatus[];
   /** The legs not yet completed (empty when earned). */
   remaining: SpecializationCourseStatus[];
@@ -118,9 +153,9 @@ export interface SpecializationStatus {
 
 /** Every course slug any definition references, deduped, for the query layer's IN filter. */
 export function specializationCourseSlugs(
-  defs: readonly SpecializationDef[] = SPECIALIZATIONS,
+  defs: readonly AnySpecializationDef[] = SPECIALIZATIONS,
 ): string[] {
-  return [...new Set(defs.flatMap((d) => [d.core, d.medium, d.subject]))];
+  return [...new Set(defs.flatMap((d) => legsOf(d).map((l) => l.courseSlug)))];
 }
 
 /**
@@ -130,23 +165,18 @@ export function specializationCourseSlugs(
  * tenant's identically-slugged course can never earn or advance a specialization here.
  */
 export function computeSpecializations(
-  defs: readonly SpecializationDef[],
+  defs: readonly AnySpecializationDef[],
   published: ReadonlyMap<string, PublishedCourseRef>,
   completions: ReadonlyMap<string, CompletionRef>,
 ): SpecializationStatus[] {
   const out: SpecializationStatus[] = [];
   for (const def of defs) {
-    const slugs: Record<SpecializationRole, string> = {
-      core: def.core,
-      medium: def.medium,
-      subject: def.subject,
-    };
+    const legs = legsOf(def);
     // Resolve only against this tenant's published catalog; a partial match means the
     // specialization does not exist on this host.
-    if (!SPECIALIZATION_ROLES.every((role) => published.has(slugs[role]))) continue;
+    if (!legs.every((leg) => published.has(leg.courseSlug))) continue;
 
-    const courses: SpecializationCourseStatus[] = SPECIALIZATION_ROLES.map((role) => {
-      const courseSlug = slugs[role];
+    const courses: SpecializationCourseStatus[] = legs.map(({ label: role, courseSlug }) => {
       // Count a completion only for a slug in the published set (defense in depth on top of
       // the query layer's tenant filter).
       const completion = published.has(courseSlug) ? (completions.get(courseSlug) ?? null) : null;

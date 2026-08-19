@@ -8,6 +8,7 @@ import {
   type CompletionRef,
   type PublishedCourseRef,
   type SpecializationDef,
+  legsOf,
 } from "@/lib/specializations";
 
 const DEF: SpecializationDef = {
@@ -130,11 +131,13 @@ describe("tenant scoping", () => {
 });
 
 describe("the committed definitions", () => {
-  it("every definition has a distinct slug and three distinct course legs", () => {
+  it("every definition has a distinct slug and distinct course legs (3 or more)", () => {
     const slugs = SPECIALIZATIONS.map((d) => d.slug);
     expect(new Set(slugs).size).toBe(slugs.length);
     for (const d of SPECIALIZATIONS) {
-      expect(new Set([d.core, d.medium, d.subject]).size).toBe(3);
+      const legs = legsOf(d).map((l) => l.courseSlug);
+      expect(legs.length).toBeGreaterThanOrEqual(3);
+      expect(new Set(legs).size).toBe(legs.length);
     }
   });
 
@@ -153,9 +156,73 @@ describe("the committed definitions", () => {
     const slugs = specializationCourseSlugs(SPECIALIZATIONS);
     expect(new Set(slugs).size).toBe(slugs.length);
     for (const d of SPECIALIZATIONS) {
-      expect(slugs).toContain(d.core);
-      expect(slugs).toContain(d.medium);
-      expect(slugs).toContain(d.subject);
+      for (const leg of legsOf(d)) expect(slugs).toContain(leg.courseSlug);
     }
+  });
+});
+
+describe("program specializations (N legs, plans/67)", () => {
+  const program = {
+    slug: "test-program",
+    title: "Test Program",
+    description: "An N-leg program for the widened engine.",
+    legs: [
+      { label: "Orientation", courseSlug: "p-0" },
+      { label: "Craft", courseSlug: "p-1" },
+      { label: "Sleep", courseSlug: "p-2" },
+      { label: "Mind", courseSlug: "p-3" },
+      { label: "Capstone", courseSlug: "p-4" },
+    ],
+  };
+  const published = new Map(program.legs.map((l) => [l.courseSlug, { title: l.label }]));
+  const done = (slugs: string[], at = new Date("2026-08-19T00:00:00Z")) =>
+    new Map(slugs.map((s) => [s, { completedAt: at }]));
+
+  it("earns only when EVERY leg is complete, with earnedAt = the last completion", () => {
+    const later = new Date("2026-08-20T00:00:00Z");
+    const completions = new Map([
+      ...done(["p-0", "p-1", "p-2", "p-3"]),
+      ["p-4", { completedAt: later }] as const,
+    ]);
+    const [st] = computeSpecializations([program], published, completions);
+    expect(st.earned).toBe(true);
+    expect(st.earnedAt?.getTime()).toBe(later.getTime());
+    expect(st.completedCount).toBe(5);
+    expect(st.courses.map((c) => c.role)).toEqual(["Orientation", "Craft", "Sleep", "Mind", "Capstone"]);
+  });
+
+  it("reports partial progress with exactly the remaining legs, in order", () => {
+    const [st] = computeSpecializations([program], published, done(["p-0", "p-2"]));
+    expect(st.earned).toBe(false);
+    expect(st.completedCount).toBe(2);
+    expect(st.remaining.map((c) => c.courseSlug)).toEqual(["p-1", "p-3", "p-4"]);
+  });
+
+  it("drops the program entirely when any leg is unpublished in the tenant", () => {
+    const partial = new Map(published);
+    partial.delete("p-3");
+    expect(computeSpecializations([program], partial, done(["p-0"]))).toHaveLength(0);
+  });
+
+  it("mixes with legacy triples without touching their shape", () => {
+    const triple: SpecializationDef = {
+      slug: "t",
+      title: "Triple",
+      description: "legacy",
+      core: "c",
+      medium: "m",
+      subject: "s",
+    };
+    const pub = new Map([
+      ...published,
+      ["c", { title: "C" }] as const,
+      ["m", { title: "M" }] as const,
+      ["s", { title: "S" }] as const,
+    ]);
+    const out = computeSpecializations([triple, program], pub, done(["c", "m", "s"]));
+    expect(out).toHaveLength(2);
+    expect(out[0].earned).toBe(true);
+    expect(out[0].courses.map((c) => c.role)).toEqual(["core", "medium", "subject"]);
+    expect(out[1].earned).toBe(false);
   });
 });

@@ -213,7 +213,7 @@ export default async function DashboardPage() {
           <div className="mt-6">
             <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">Specializations</h3>
             <p className="mt-1 text-xs text-neutral-500">
-              A specialization is earned here by completing all three of its courses. It is a record on
+              A specialization is earned here by completing all of its courses. It is a record on
               this site, not an external certification or license.
             </p>
             <ul className="mt-3 space-y-3">
