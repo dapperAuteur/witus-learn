@@ -115,6 +115,7 @@ import { THE_RIVER_AND_THE_WATERSHED_COURSE } from "./data/the-river-and-the-wat
 import { HOW_TO_RESEARCH_COURSE } from "./data/how-to-research-course";
 import { ARCHIVES_AND_FINDING_AIDS_COURSE } from "./data/archives-and-finding-aids-course";
 import { DOCUMENTS_AGAINST_PEOPLE_COURSE } from "./data/documents-against-people-course";
+import { GENEALOGY_SELF_AND_COMMUNITY_COURSE } from "./data/genealogy-self-and-community-course";
 import { FACT_CHECKING_COURSE } from "./data/fact-checking-course";
 import { RESEARCH_AS_A_JOB_COURSE } from "./data/research-as-a-job-course";
 import { RESEARCHER_CAPSTONE_COURSE } from "./data/researcher-capstone-course";
@@ -859,6 +860,26 @@ async function main() {
     seriesOrder: 9,
     seriesCode: "RSRCH",
     seriesPosition: "99",
+  });
+
+  // Genealogy for yourself and your community. Plan: plans/70-genealogy-course.md.
+  //
+  // NOT a duplicate of RSRCH-03. That course teaches tracing a person as a professional method, in
+  // the third person, for a client, and its lesson 8 opens the 1870 problem and moves on. This one
+  // starts there: for this research the obstacle IS the subject. First person, and the emotional
+  // contract is different, which is why lesson 13 exists to say that a line ending is a fact about a
+  // system rather than a failure of the researcher.
+  //
+  // Culture & History rather than Research & Reporting on purpose: this is personal and community
+  // work, and it belongs beside the Great Migration courses rather than beside a professional trade.
+  // No series code yet; if a genealogy track follows, this becomes its -00.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "genealogy-for-yourself-and-your-community",
+    course: GENEALOGY_SELF_AND_COMMUNITY_COURSE,
+    category: "Culture & History",
+    navigationMode: "linear",
   });
 
   // ── Science & Math, Wave 1 ───────────────────────────────────────────────────────────────────
