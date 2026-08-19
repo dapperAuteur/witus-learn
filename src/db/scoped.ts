@@ -36,14 +36,14 @@ import { listPublishedLessonSearchRows } from "@/db/queries/course-search";
 import {
   bundleBelongsToTenant,
   courseBelongsToTenant,
-  addCourseToPromotion,
+  addItemToPromotion,
   createPromotion,
   endPromotionNow,
   listActivePromotions,
   getPublicPromotionBySlug,
   listPromotions,
   listPublicPromotions,
-  removeCourseFromPromotion,
+  removeItemFromPromotion,
   type CreatePromotionInput,
 } from "@/db/queries/promotions";
 import {
@@ -174,14 +174,15 @@ export class ScopedDb {
     return getPublicPromotionBySlug(this.tenantId, slug);
   }
 
-  /** Add a course to a running `courses` campaign. Tenant-checked on both the sale and the course. */
-  addCourseToPromotion(promotionId: string, courseId: string) {
-    return addCourseToPromotion(this.tenantId, promotionId, courseId);
+  /** Name a course or bundle in a sale: a member of a campaign, or an exception to a brand-wide
+   *  sale. Tenant-checked on both the sale and the item. */
+  addItemToPromotion(promotionId: string, item: { kind: "course" | "bundle"; id: string }) {
+    return addItemToPromotion(this.tenantId, promotionId, item);
   }
 
-  /** Remove a course from a campaign. */
-  removeCourseFromPromotion(promotionId: string, courseId: string) {
-    return removeCourseFromPromotion(this.tenantId, promotionId, courseId);
+  /** Un-name one item. Touches exactly one row, so everything else in the sale is unaffected. */
+  removeItemFromPromotion(promotionId: string, item: { kind: "course" | "bundle"; id: string }) {
+    return removeItemFromPromotion(this.tenantId, promotionId, item);
   }
 
   ownsCourse(courseId: string) {

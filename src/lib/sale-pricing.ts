@@ -24,13 +24,17 @@ export interface PromotionLike {
   endedAt: Date | string | null;
   createdAt?: Date | string | null;
   /**
-   * Members of a `scope: 'courses'` campaign, supplied by the query layer from `promotion_courses`.
+   * The courses this promotion NAMES, from `promotion_courses`. What that means depends on scope:
+   * members of a `courses` campaign, or EXCEPTIONS to a `tenant` brand-wide sale.
    *
-   * OPTIONAL, AND ABSENCE MEANS EMPTY, WHICH IS THE SAFE DIRECTION. A caller that forgets to load
-   * the membership makes the campaign apply to nothing, so a course shows its list price. The
-   * opposite default would silently discount the entire catalog on a plumbing mistake.
+   * OPTIONAL, AND ABSENCE IS THE SAFE DIRECTION IN BOTH READINGS. Unloaded on a campaign means it
+   * covers nothing, so courses show list prices. Unloaded on a brand-wide sale means no
+   * exceptions, so the sale behaves exactly as it did before exceptions existed. Neither failure
+   * silently discounts something that should not be discounted.
    */
   courseIds?: readonly string[] | null;
+  /** The bundles this promotion names, read the same way. */
+  bundleIds?: readonly string[] | null;
 }
 
 export interface PriceView {
@@ -107,14 +111,16 @@ export function promotionCoversTarget(
   p: PromotionLike,
   target: { kind: "course" | "bundle"; id: string },
 ): boolean {
-  if (p.scope === "tenant") return true;
+  const named =
+    target.kind === "course" ? (p.courseIds ?? []) : (p.bundleIds ?? []);
+  // Brand-wide: everything EXCEPT the things it names. Naming nothing is the ordinary case and
+  // behaves exactly as a tenant sale did before exceptions existed.
+  if (p.scope === "tenant") return !named.includes(target.id);
   if (p.scope === "course") return target.kind === "course" && p.courseId === target.id;
   if (p.scope === "bundle") return target.kind === "bundle" && p.bundleId === target.id;
-  // A campaign covers exactly its members, and only courses: a bundle is priced by its own row.
-  // No members means it covers nothing, which is what an unloaded membership also produces.
-  if (p.scope === "courses") {
-    return target.kind === "course" && (p.courseIds ?? []).includes(target.id);
-  }
+  // Campaign: exactly the things it names, courses and bundles alike. Naming nothing covers
+  // nothing, which is both a normal starting state and what an unloaded membership produces.
+  if (p.scope === "courses") return named.includes(target.id);
   return false;
 }
 

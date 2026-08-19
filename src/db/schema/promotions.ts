@@ -94,7 +94,21 @@ export const promotions = pgTable(
 );
 
 /**
- * Membership of a `scope: 'courses'` promotion. One row per course in the campaign.
+ * The courses a promotion NAMES. What naming means depends on the scope, and this is the one piece
+ * of cleverness in the schema, so it is spelled out:
+ *
+ *   scope 'courses'  a row is a MEMBER.    The sale covers exactly these.
+ *   scope 'tenant'   a row is an EXCEPTION. The sale covers everything EXCEPT these.
+ *
+ * WHY ONE TABLE AND NOT AN `excluded` BOOLEAN. A flag would be meaningless in one scope and
+ * required in the other, so every reader would have to know which combinations are real anyway.
+ * One table with a scope-dependent reading has a single source of truth, and the interpretation
+ * lives in exactly one function (promotionCoversTarget in src/lib/sale-pricing.ts). The admin UI
+ * labels it correctly for the scope, so nobody operating it has to hold this in their head.
+ *
+ * Either way, REMOVING A ROW ONLY AFFECTS THAT ONE COURSE. Membership rows are independent, so
+ * taking a course out of a campaign, or lifting an exception on a brand-wide sale, leaves every
+ * other course priced exactly as it was.
  *
  * WHY A JOIN TABLE AND NOT A COURSE-SCOPED ROW PER COURSE. The campaign has to be one object:
  * ending it, renaming it, or changing the discount must be a single action, and the admin list has
@@ -120,5 +134,28 @@ export const promotionCourses = pgTable(
   (t) => [primaryKey({ columns: [t.promotionId, t.courseId] })],
 );
 
+/**
+ * The bundles a promotion names. Same scope-dependent reading as `promotion_courses`: members of a
+ * campaign, or exceptions to a brand-wide sale.
+ *
+ * Bundles get their own table rather than sharing one with a polymorphic id, so the database can
+ * enforce that the target exists and clean up after a deletion, which is the same reasoning as the
+ * two real foreign keys on `promotions` itself.
+ */
+export const promotionBundles = pgTable(
+  "promotion_bundles",
+  {
+    promotionId: uuid("promotion_id")
+      .notNull()
+      .references(() => promotions.id, { onDelete: "cascade" }),
+    bundleId: uuid("bundle_id")
+      .notNull()
+      .references(() => bundles.id, { onDelete: "cascade" }),
+    addedAt: timestamp("added_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [primaryKey({ columns: [t.promotionId, t.bundleId] })],
+);
+
 export type Promotion = typeof promotions.$inferSelect;
+export type PromotionBundle = typeof promotionBundles.$inferSelect;
 export type PromotionCourse = typeof promotionCourses.$inferSelect;

@@ -123,6 +123,83 @@ describe("precedence: course beats campaign beats tenant", () => {
   });
 });
 
+describe("removing an item affects only that item", () => {
+  // BAM's question: can something be taken out of a promo without disturbing what is still in it?
+  // Membership is a set, so removal is set subtraction, and these assert that directly on the
+  // pricing layer rather than trusting the delete statement.
+  const twoMembers = campaign({ courseIds: ["c1", "c2"] });
+  const afterRemoval = campaign({ courseIds: ["c2"] });
+
+  it("the removed course goes back to its list price", () => {
+    expect(price([twoMembers], "c1").effectivePrice).toBe(75);
+    expect(price([afterRemoval], "c1").effectivePrice).toBe(100);
+  });
+
+  it("every other member is priced exactly as before", () => {
+    const before = price([twoMembers], "c2");
+    const after = price([afterRemoval], "c2");
+    expect(after.effectivePrice).toBe(before.effectivePrice);
+    expect(after.promotion?.id).toBe(before.promotion?.id);
+  });
+
+  it("removing the last member leaves a valid, empty campaign rather than a broken one", () => {
+    const empty = campaign({ courseIds: [] });
+    expect(price([empty], "c2").effectivePrice).toBe(100);
+    expect(price([empty], "c2").discounted).toBe(false);
+  });
+});
+
+describe("brand-wide sales can name exceptions", () => {
+  // For a `tenant` sale the named set is read as EXCLUSIONS, which is how something is taken out of
+  // a sale that otherwise covers everything.
+  const everything: PromotionLike = {
+    ...base,
+    id: "p-tenant",
+    name: "Everything 50% off",
+    scope: "tenant",
+    kind: "percent",
+    value: 50,
+  };
+
+  it("covers everything when it names nothing, exactly as before exceptions existed", () => {
+    expect(price([everything], "c9").effectivePrice).toBe(50);
+  });
+
+  it("skips a named course and leaves the rest discounted", () => {
+    const withException = { ...everything, courseIds: ["c1"] };
+    expect(price([withException], "c1").effectivePrice).toBe(100);
+    expect(price([withException], "c2").effectivePrice).toBe(50);
+  });
+
+  it("excludes bundles by name too", () => {
+    const withException = { ...everything, bundleIds: ["b1"] };
+    expect(promotionCoversTarget(withException, { kind: "bundle", id: "b1" })).toBe(false);
+    expect(promotionCoversTarget(withException, { kind: "bundle", id: "b2" })).toBe(true);
+  });
+
+  it("an unloaded exception set means no exceptions, which never over-charges", () => {
+    // The safe direction for a tenant sale is the opposite of a campaign's: failing to load must
+    // leave the advertised brand-wide discount intact rather than quietly removing it.
+    expect(price([everything], "c1").effectivePrice).toBe(50);
+  });
+});
+
+describe("campaigns can hold bundles as well as courses", () => {
+  it("covers a named bundle", () => {
+    const c = campaign({ courseIds: [], bundleIds: ["b1"] });
+    expect(promotionCoversTarget(c, { kind: "bundle", id: "b1" })).toBe(true);
+    expect(promotionCoversTarget(c, { kind: "bundle", id: "b2" })).toBe(false);
+  });
+
+  it("naming a bundle does not put its member courses on sale by itself", () => {
+    // A bundle is a separate product with its own price; discounting it says nothing about buying
+    // the courses individually, and pretending otherwise would advertise a price checkout would not
+    // honour.
+    const c = campaign({ courseIds: [], bundleIds: ["b1"] });
+    expect(price([c], "c1").effectivePrice).toBe(100);
+  });
+});
+
 describe("campaign invariants hold with the rest of the rules", () => {
   it("an ended campaign stops discounting", () => {
     const ended = campaign({ endedAt: new Date("2026-05-01") });

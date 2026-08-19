@@ -23,6 +23,7 @@ export function SalesAdmin({
 }) {
   const [sales, setSales] = useState<SaleView[]>(initial);
   const [name, setName] = useState("");
+  const [slug, setSlug] = useState("");
   const [scope, setScope] = useState<"tenant" | "course" | "bundle" | "courses">("course");
   const [targetId, setTargetId] = useState("");
   const [kind, setKind] = useState<"percent" | "amount" | "free">("percent");
@@ -55,8 +56,11 @@ export function SalesAdmin({
       headers: { "content-type": "application/json" },
       body: JSON.stringify({
         name: name.trim(),
+        // A slug is what gives a sale its public page at /sale/<slug>. Blank means no page, which
+        // is right for a one-off discount that is a price rather than a campaign.
+        slug: slug.trim() || null,
         scope,
-        targetId: scope === "tenant" ? null : targetId || null,
+        targetId: scope === "tenant" || scope === "courses" ? null : targetId || null,
         kind,
         value: kind === "free" ? null : Number(value),
         startsAt: toIso(startsAt),
@@ -68,6 +72,7 @@ export function SalesAdmin({
       const title = targets.find((t) => t.id === sale.targetId)?.title ?? null;
       setSales((s) => [{ ...sale, targetTitle: sale.targetTitle ?? title }, ...s]);
       setName("");
+      setSlug("");
       setStatus(`"${sale.name}" saved. It is ${sale.status}.`);
     } else {
       const j = await res.json().catch(() => ({}));
@@ -94,10 +99,10 @@ export function SalesAdmin({
   // rather than from a refetch, because the server returns ok and the client already knows the id.
   async function setMembership(sale: SaleView, courseId: string, add: boolean) {
     setError(null);
-    const res = await fetch(`/api/admin/sales/${sale.id}/courses`, {
+    const res = await fetch(`/api/admin/sales/${sale.id}/items`, {
       method: add ? "POST" : "DELETE",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ courseId }),
+      body: JSON.stringify({ kind: "course", id: courseId }),
     });
     if (!res.ok) {
       setError(add ? "Could not add that course." : "Could not remove that course.");
@@ -155,6 +160,23 @@ export function SalesAdmin({
             />
           </label>
 
+          <label className="text-sm font-medium" htmlFor={`${ids}-slug`}>
+            Public page address <span className="font-normal text-neutral-500">(optional)</span>
+            <input
+              id={`${ids}-slug`}
+              value={slug}
+              onChange={(e) => setSlug(e.target.value)}
+              pattern="[a-z0-9]+(?:-[a-z0-9]+)*"
+              maxLength={60}
+              placeholder="back-to-school"
+              className={field}
+            />
+            <span className="mt-1 block text-xs font-normal text-neutral-500">
+              Leave blank for no page. With a slug the sale gets a shareable page at{" "}
+              <code>/sale/{slug || "your-slug"}</code> and is listed on <code>/sale</code>.
+            </span>
+          </label>
+
           <label className="text-sm font-medium" htmlFor={`${ids}-scope`}>
             Applies to
             <select
@@ -175,8 +197,16 @@ export function SalesAdmin({
 
           {scope === "courses" ? (
             <p className="text-sm text-neutral-600 sm:col-span-2 dark:text-neutral-400">
-              A campaign starts empty and you add courses to it as they are vetted. Ending it, or
-              changing the discount, then applies to every course in it at once.
+              A campaign starts empty and you add courses to it as they are vetted, below. Ending it
+              applies to every course in it at once, and taking one course out leaves the rest
+              exactly as they were.
+            </p>
+          ) : null}
+
+          {scope === "tenant" ? (
+            <p className="text-sm text-neutral-600 sm:col-span-2 dark:text-neutral-400">
+              Covers every course and bundle. Once created you can name exceptions below, to hold
+              individual items out of the sale without affecting anything else.
             </p>
           ) : null}
 
@@ -324,10 +354,19 @@ export function SalesAdmin({
                   ) : null}
                   </div>
 
-                  {/* Campaign membership. Shown for a live campaign only: adding a course to an
-                      ended sale would change nothing and reads as though it might. */}
-                  {s.scope === "courses" && s.status !== "ended" ? (
+                  {/* The sale's named courses. Live sales only: adding a course to an ended sale
+                      would change nothing while reading as though it might.
+
+                      The SAME control serves two opposite meanings, which is why the labels below
+                      are computed from the scope rather than hard-coded. On a campaign a named
+                      course is a member and is on sale; on a school-wide sale a named course is an
+                      exception and is held OUT of it. Removing either touches one row and leaves
+                      every other course priced exactly as it was. */}
+                  {(s.scope === "courses" || s.scope === "tenant") && s.status !== "ended" ? (
                     <div className="mt-3 border-t border-neutral-200 pt-3 dark:border-neutral-800">
+                      <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-neutral-400">
+                        {s.scope === "courses" ? "In this sale" : "Excluded from this sale"}
+                      </p>
                       {s.courseIds.length > 0 ? (
                         <ul className="flex flex-wrap gap-2">
                           {s.courseIds.map((cid) => (
@@ -339,7 +378,11 @@ export function SalesAdmin({
                               <button
                                 type="button"
                                 onClick={() => setMembership(s, cid, false)}
-                                aria-label={`Remove ${courses.find((c) => c.id === cid)?.title ?? "course"} from ${s.name}`}
+                                aria-label={
+                                  s.scope === "courses"
+                                    ? `Remove ${courses.find((c) => c.id === cid)?.title ?? "course"} from ${s.name}`
+                                    : `Put ${courses.find((c) => c.id === cid)?.title ?? "course"} back into ${s.name}`
+                                }
                                 className="min-h-11 rounded-full px-2 text-neutral-500 hover:text-neutral-900 focus-visible:outline-2 focus-visible:outline-offset-2 dark:hover:text-neutral-100"
                               >
                                 &times;
@@ -349,12 +392,14 @@ export function SalesAdmin({
                         </ul>
                       ) : (
                         <p className="text-sm text-neutral-500">
-                          No courses in this campaign yet. Add them as they are vetted.
+                          {s.scope === "courses"
+                            ? "No courses in this campaign yet. Add them as they are vetted."
+                            : "No exceptions. This sale currently covers every course."}
                         </p>
                       )}
 
                       <label className="mt-2 block text-sm font-medium">
-                        Add a course
+                        {s.scope === "courses" ? "Add a course to this sale" : "Hold a course out of this sale"}
                         <select
                           value=""
                           onChange={(e) => {

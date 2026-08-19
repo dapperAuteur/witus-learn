@@ -3,7 +3,7 @@ import { and, desc, eq, inArray, isNotNull, isNull, or, sql } from "drizzle-orm"
 import { db } from "@/db/client";
 import { bundles } from "@/db/schema/bundles";
 import { courses } from "@/db/schema/courses";
-import { promotionCourses, promotions, type Promotion } from "@/db/schema/promotions";
+import { promotionBundles, promotionCourses, promotions, type Promotion } from "@/db/schema/promotions";
 import type { PromotionKind, PromotionScope } from "@/lib/sale-pricing";
 
 // Codeless promotions, tenant-scoped like every other catalog read. Every function here takes
@@ -22,32 +22,55 @@ import type { PromotionKind, PromotionScope } from "@/lib/sale-pricing";
  */
 async function membershipByPromotion(
   promotionIds: readonly string[],
-): Promise<Map<string, string[]>> {
-  const out = new Map<string, string[]>();
-  if (promotionIds.length === 0) return out;
-  const rows = await db
-    .select({ promotionId: promotionCourses.promotionId, courseId: promotionCourses.courseId })
-    .from(promotionCourses)
-    .where(inArray(promotionCourses.promotionId, [...promotionIds]));
-  for (const r of rows) {
-    const list = out.get(r.promotionId);
-    if (list) list.push(r.courseId);
-    else out.set(r.promotionId, [r.courseId]);
-  }
-  return out;
+): Promise<{ courses: Map<string, string[]>; bundles: Map<string, string[]> }> {
+  const courses = new Map<string, string[]>();
+  const bundles = new Map<string, string[]>();
+  if (promotionIds.length === 0) return { courses, bundles };
+  const ids = [...promotionIds];
+  const push = (m: Map<string, string[]>, k: string, v: string) => {
+    const list = m.get(k);
+    if (list) list.push(v);
+    else m.set(k, [v]);
+  };
+  const [courseRows, bundleRows] = await Promise.all([
+    db
+      .select({ promotionId: promotionCourses.promotionId, courseId: promotionCourses.courseId })
+      .from(promotionCourses)
+      .where(inArray(promotionCourses.promotionId, ids)),
+    db
+      .select({ promotionId: promotionBundles.promotionId, bundleId: promotionBundles.bundleId })
+      .from(promotionBundles)
+      .where(inArray(promotionBundles.promotionId, ids)),
+  ]);
+  for (const r of courseRows) push(courses, r.promotionId, r.courseId);
+  for (const r of bundleRows) push(bundles, r.promotionId, r.bundleId);
+  return { courses, bundles };
 }
 
-/** Attach `courseIds` to campaign rows. Non-campaign scopes get an empty array, never undefined. */
-async function withMembership<T extends Promotion>(rows: T[]): Promise<(T & { courseIds: string[] })[]> {
-  const campaignIds = rows.filter((r) => r.scope === "courses").map((r) => r.id);
-  const members = await membershipByPromotion(campaignIds);
-  return rows.map((r) => ({ ...r, courseIds: members.get(r.id) ?? [] }));
+/**
+ * Attach the named courses and bundles to every row that can have them.
+ *
+ * BOTH set-shaped scopes are loaded, not just campaigns: a `tenant` sale's named rows are its
+ * EXCEPTIONS, and forgetting to load those would silently apply a brand-wide discount to something
+ * deliberately excluded. Single-target scopes get empty arrays rather than undefined, so callers
+ * never have to distinguish "none" from "not loaded".
+ */
+async function withMembership<T extends Promotion>(
+  rows: T[],
+): Promise<(T & { courseIds: string[]; bundleIds: string[] })[]> {
+  const setShaped = rows.filter((r) => r.scope === "courses" || r.scope === "tenant").map((r) => r.id);
+  const { courses, bundles } = await membershipByPromotion(setShaped);
+  return rows.map((r) => ({
+    ...r,
+    courseIds: courses.get(r.id) ?? [],
+    bundleIds: bundles.get(r.id) ?? [],
+  }));
 }
 
 /** Every promotion this tenant has ever created, newest first, with the target's title for the UI. */
 export async function listPromotions(
   tenantId: string,
-): Promise<(Promotion & { targetTitle: string | null; courseIds: string[] })[]> {
+): Promise<(Promotion & { targetTitle: string | null; courseIds: string[]; bundleIds: string[] })[]> {
   const rows = await db
     .select({
       promotion: promotions,
@@ -75,7 +98,7 @@ export async function listPromotions(
 export async function listActivePromotions(
   tenantId: string,
   now: Date = new Date(),
-): Promise<(Promotion & { courseIds: string[] })[]> {
+): Promise<(Promotion & { courseIds: string[]; bundleIds: string[] })[]> {
   const rows = await db
     .select()
     .from(promotions)
@@ -104,9 +127,12 @@ export interface CreatePromotionInput {
   startsAt?: Date | null;
   endsAt?: Date | null;
   createdBy?: string | null;
-  /** Initial members for a `courses` campaign. May be empty: a campaign can start with nothing in
-   *  it and have courses added as they are vetted, which is the whole point of the scope. */
+  /** Courses to name at creation. Members for a campaign, exceptions for a brand-wide sale. May be
+   *  empty: a campaign that starts with nothing in it and fills up as courses are vetted is the
+   *  whole point of the scope. */
   courseIds?: readonly string[] | null;
+  /** Bundles to name at creation, read the same way. */
+  bundleIds?: readonly string[] | null;
 }
 
 export async function createPromotion(
@@ -129,47 +155,76 @@ export async function createPromotion(
       createdBy: input.createdBy ?? null,
     })
     .returning();
-  if (input.scope === "courses" && input.courseIds?.length) {
+  const setShaped = input.scope === "courses" || input.scope === "tenant";
+  if (setShaped && input.courseIds?.length) {
     await db
       .insert(promotionCourses)
       .values(input.courseIds.map((courseId) => ({ promotionId: row.id, courseId })))
+      .onConflictDoNothing();
+  }
+  if (setShaped && input.bundleIds?.length) {
+    await db
+      .insert(promotionBundles)
+      .values(input.bundleIds.map((bundleId) => ({ promotionId: row.id, bundleId })))
       .onConflictDoNothing();
   }
   return row;
 }
 
 /**
- * Add a course to a running campaign. This is the operation the whole scope exists for: a sale is
- * announced, courses are vetted over the following weeks, and each one joins with a single click.
+ * Add a course or bundle to a promotion's named set.
  *
- * Tenant-checked on BOTH sides. The promotion must belong to this tenant and so must the course,
- * because a join table is exactly where a cross-tenant row would otherwise be insertable and would
- * then price another brand's course from this brand's sale.
+ * WHAT "NAMED" MEANS DEPENDS ON THE SCOPE, and both are legitimate operations:
+ *   · campaign (`courses`)  the item JOINS the sale
+ *   · brand-wide (`tenant`) the item is EXCLUDED from the sale
+ * Single-target scopes have no set, so this refuses them rather than silently doing nothing.
  *
- * Idempotent: adding a course twice is a no-op rather than an error, since the button that calls
- * this can be pressed twice.
+ * Tenant-checked on BOTH sides. A join table is exactly where a crafted request could otherwise
+ * attach another brand's course to this brand's sale and price it from here.
+ *
+ * Idempotent: the button can be pressed twice, and the second press is a no-op rather than a
+ * duplicate-key error.
  */
-export async function addCourseToPromotion(
+export async function addItemToPromotion(
   tenantId: string,
   promotionId: string,
-  courseId: string,
+  item: { kind: "course" | "bundle"; id: string },
 ): Promise<boolean> {
   const [promo] = await db
     .select({ id: promotions.id, scope: promotions.scope })
     .from(promotions)
     .where(and(eq(promotions.tenantId, tenantId), eq(promotions.id, promotionId)))
     .limit(1);
-  if (!promo || promo.scope !== "courses") return false;
-  if (!(await courseBelongsToTenant(tenantId, courseId))) return false;
-  await db.insert(promotionCourses).values({ promotionId, courseId }).onConflictDoNothing();
+  if (!promo || (promo.scope !== "courses" && promo.scope !== "tenant")) return false;
+
+  if (item.kind === "course") {
+    if (!(await courseBelongsToTenant(tenantId, item.id))) return false;
+    await db
+      .insert(promotionCourses)
+      .values({ promotionId, courseId: item.id })
+      .onConflictDoNothing();
+    return true;
+  }
+  if (!(await bundleBelongsToTenant(tenantId, item.id))) return false;
+  await db.insert(promotionBundles).values({ promotionId, bundleId: item.id }).onConflictDoNothing();
   return true;
 }
 
-/** Remove a course from a campaign. Tenant-checked the same way. */
-export async function removeCourseFromPromotion(
+/**
+ * Remove one course or bundle from a promotion's named set.
+ *
+ * THE PROPERTY THAT MATTERS, and the reason this is one delete rather than a rewrite: removing an
+ * item touches EXACTLY ONE ROW. Every other course and bundle in the promotion keeps its pricing
+ * unchanged, the promotion itself is untouched, and its window and discount are unaffected. Taking
+ * a course out of a running campaign therefore cannot disturb anything a learner is currently
+ * being shown for the others.
+ *
+ * Deleting a row that is not there is not an error: the sale simply does not name that item.
+ */
+export async function removeItemFromPromotion(
   tenantId: string,
   promotionId: string,
-  courseId: string,
+  item: { kind: "course" | "bundle"; id: string },
 ): Promise<boolean> {
   const [promo] = await db
     .select({ id: promotions.id })
@@ -177,10 +232,19 @@ export async function removeCourseFromPromotion(
     .where(and(eq(promotions.tenantId, tenantId), eq(promotions.id, promotionId)))
     .limit(1);
   if (!promo) return false;
+
+  if (item.kind === "course") {
+    await db
+      .delete(promotionCourses)
+      .where(
+        and(eq(promotionCourses.promotionId, promotionId), eq(promotionCourses.courseId, item.id)),
+      );
+    return true;
+  }
   await db
-    .delete(promotionCourses)
+    .delete(promotionBundles)
     .where(
-      and(eq(promotionCourses.promotionId, promotionId), eq(promotionCourses.courseId, courseId)),
+      and(eq(promotionBundles.promotionId, promotionId), eq(promotionBundles.bundleId, item.id)),
     );
   return true;
 }
@@ -230,7 +294,7 @@ export async function bundleBelongsToTenant(tenantId: string, bundleId: string):
 export async function getPublicPromotionBySlug(
   tenantId: string,
   slug: string,
-): Promise<(Promotion & { courseIds: string[] }) | undefined> {
+): Promise<(Promotion & { courseIds: string[]; bundleIds: string[] }) | undefined> {
   const [row] = await db
     .select()
     .from(promotions)
@@ -250,7 +314,7 @@ export async function getPublicPromotionBySlug(
  */
 export async function listPublicPromotions(
   tenantId: string,
-): Promise<(Promotion & { courseIds: string[] })[]> {
+): Promise<(Promotion & { courseIds: string[]; bundleIds: string[] })[]> {
   const rows = await db
     .select()
     .from(promotions)

@@ -36,9 +36,11 @@ const PostSchema = z
     scope: z.enum(["course", "bundle", "tenant", "courses"]),
     /** Required for a course/bundle sale, forbidden for a brand-wide or campaign one. */
     targetId: z.string().uuid().nullable().optional(),
-    /** Initial members of a `courses` campaign. May be empty: a campaign is meant to be filled
-     *  over time as courses are vetted, so starting with none is a normal state, not an error. */
+    /** Courses to name at creation. Members of a campaign, or exceptions to a brand-wide sale.
+     *  May be empty: a campaign filled over time as courses are vetted is the point of the scope. */
     courseIds: z.array(z.string().uuid()).max(200).optional(),
+    /** Bundles to name at creation, read the same way. */
+    bundleIds: z.array(z.string().uuid()).max(200).optional(),
     kind: z.enum(["percent", "amount", "free"]),
     value: z.number().nullable().optional(),
     /** Null / omitted → starts immediately. */
@@ -82,7 +84,12 @@ export async function POST(req: Request) {
   }
   // Every member of a campaign is tenant-checked before the promotion is created, so a crafted
   // request cannot seed another brand's course into this brand's sale.
-  if (d.scope === "courses" && d.courseIds?.length) {
+  if ((d.scope === "courses" || d.scope === "tenant") && d.bundleIds?.length) {
+    for (const id of d.bundleIds) {
+      if (!(await ctx.sdb.ownsBundle(id))) return errorJson("Not found", 404);
+    }
+  }
+  if ((d.scope === "courses" || d.scope === "tenant") && d.courseIds?.length) {
     for (const id of d.courseIds) {
       if (!(await ctx.sdb.ownsCourse(id))) {
         return errorJson("Not found", 404);
@@ -94,7 +101,12 @@ export async function POST(req: Request) {
   }
   // Same check for every initial member of a campaign. A join table is exactly where a foreign
   // course id would otherwise be insertable, and it would then be priced by this brand's sale.
-  if (d.scope === "courses" && d.courseIds?.length) {
+  if ((d.scope === "courses" || d.scope === "tenant") && d.bundleIds?.length) {
+    for (const id of d.bundleIds) {
+      if (!(await ctx.sdb.ownsBundle(id))) return errorJson("Not found", 404);
+    }
+  }
+  if ((d.scope === "courses" || d.scope === "tenant") && d.courseIds?.length) {
     for (const id of d.courseIds) {
       if (!(await ctx.sdb.ownsCourse(id))) return errorJson("Not found", 404);
     }
@@ -104,7 +116,8 @@ export async function POST(req: Request) {
     name: d.name,
     scope: d.scope,
     slug: d.slug ?? null,
-    courseIds: d.scope === "courses" ? (d.courseIds ?? []) : null,
+    courseIds: d.courseIds ?? null,
+    bundleIds: d.bundleIds ?? null,
     courseId: d.scope === "course" ? d.targetId! : null,
     bundleId: d.scope === "bundle" ? d.targetId! : null,
     kind: d.kind,
