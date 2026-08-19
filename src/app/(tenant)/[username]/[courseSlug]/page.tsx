@@ -385,6 +385,7 @@ export default async function CourseBySlugPage({ params }: Params) {
                     <PriceTag view={bundleView} />
                     {b.priceType === "subscription" ? " subscription" : ""}
                   </span>
+                </span>
                 {/* The CTA lands on the bundle page, where the real purchase happens: a button
                     that charged straight from here would buy something the learner has not seen
                     the contents of. */}
