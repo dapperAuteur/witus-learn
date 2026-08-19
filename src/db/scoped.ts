@@ -36,10 +36,12 @@ import { listPublishedLessonSearchRows } from "@/db/queries/course-search";
 import {
   bundleBelongsToTenant,
   courseBelongsToTenant,
+  addCourseToPromotion,
   createPromotion,
   endPromotionNow,
   listActivePromotions,
   listPromotions,
+  removeCourseFromPromotion,
   type CreatePromotionInput,
 } from "@/db/queries/promotions";
 import {
@@ -160,6 +162,16 @@ export class ScopedDb {
   }
 
   /** Target guards: the FK cannot check the tenant, so the route must. */
+  /** Add a course to a running `courses` campaign. Tenant-checked on both the sale and the course. */
+  addCourseToPromotion(promotionId: string, courseId: string) {
+    return addCourseToPromotion(this.tenantId, promotionId, courseId);
+  }
+
+  /** Remove a course from a campaign. */
+  removeCourseFromPromotion(promotionId: string, courseId: string) {
+    return removeCourseFromPromotion(this.tenantId, promotionId, courseId);
+  }
+
   ownsCourse(courseId: string) {
     return courseBelongsToTenant(this.tenantId, courseId);
   }

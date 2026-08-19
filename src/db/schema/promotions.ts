@@ -1,5 +1,5 @@
 import { sql } from "drizzle-orm";
-import { check, numeric, pgTable, text, timestamp, uuid } from "drizzle-orm/pg-core";
+import { check, numeric, pgTable, primaryKey, text, timestamp, uuid } from "drizzle-orm/pg-core";
 import { users } from "./auth";
 import { bundles } from "./bundles";
 import { courses } from "./courses";
@@ -27,7 +27,17 @@ export const promotions = pgTable(
       .references(() => tenants.id, { onDelete: "cascade" }),
     /** Owner-facing label, shown in the admin list and on the price ("Summer sale"). */
     name: text("name").notNull(),
-    /** 'course' | 'bundle' | 'tenant' (tenant = brand-wide, every course and bundle). */
+    /**
+     * 'course' | 'bundle' | 'tenant' | 'courses'.
+     *
+     * · course / bundle  one target, named by the column below.
+     * · tenant           brand-wide: every course and every bundle.
+     * · courses          a MEMBER LIST, held in `promotion_courses`. This is the shape a running
+     *                    campaign needs ("Back to school", courses added as they are vetted): one
+     *                    row that is the sale, with a set that grows. The alternative, one
+     *                    course-scoped row per course, makes ending the sale an N-times job and
+     *                    leaves no object that IS the campaign.
+     */
     scope: text("scope").notNull(),
     // The target is two real foreign keys rather than one polymorphic id, so the database enforces
     // that the target exists and cleans the promotion up when it is deleted. The CHECK below makes
@@ -49,13 +59,15 @@ export const promotions = pgTable(
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
   (t) => [
-    check("promotions_scope_chk", sql`${t.scope} in ('course','bundle','tenant')`),
-    // Exactly one target for a scoped promotion, and none for a brand-wide one.
+    check("promotions_scope_chk", sql`${t.scope} in ('course','bundle','tenant','courses')`),
+    // Exactly one target for a single-target promotion, and none for the two set-shaped scopes.
+    // 'courses' carries no target column: its membership lives in `promotion_courses`, so a row
+    // with members and a stray course_id would be ambiguous about which one counted.
     check(
       "promotions_target_chk",
       sql`(${t.scope} = 'course' and ${t.courseId} is not null and ${t.bundleId} is null)
        or (${t.scope} = 'bundle' and ${t.bundleId} is not null and ${t.courseId} is null)
-       or (${t.scope} = 'tenant' and ${t.courseId} is null and ${t.bundleId} is null)`,
+       or (${t.scope} in ('tenant','courses') and ${t.courseId} is null and ${t.bundleId} is null)`,
     ),
     check("promotions_kind_chk", sql`${t.kind} in ('percent','amount','free')`),
     // value present iff the kind needs one; percent within 1..100; amount strictly positive.
@@ -72,4 +84,32 @@ export const promotions = pgTable(
   ],
 );
 
+/**
+ * Membership of a `scope: 'courses'` promotion. One row per course in the campaign.
+ *
+ * WHY A JOIN TABLE AND NOT A COURSE-SCOPED ROW PER COURSE. The campaign has to be one object:
+ * ending it, renaming it, or changing the discount must be a single action, and the admin list has
+ * to show one sale rather than forty. Adding a course to a running sale is then an insert here,
+ * which is exactly the workflow of vetting courses over the weeks a promotion runs.
+ *
+ * Cascades both ways on purpose: deleting the promotion removes its membership, and deleting a
+ * course removes it from every sale rather than leaving a row pointing at nothing.
+ */
+export const promotionCourses = pgTable(
+  "promotion_courses",
+  {
+    promotionId: uuid("promotion_id")
+      .notNull()
+      .references(() => promotions.id, { onDelete: "cascade" }),
+    courseId: uuid("course_id")
+      .notNull()
+      .references(() => courses.id, { onDelete: "cascade" }),
+    /** When this course joined the sale. Kept so the campaign's own history is readable. */
+    addedAt: timestamp("added_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  // The composite key is also the uniqueness guarantee: a course cannot be added to one sale twice.
+  (t) => [primaryKey({ columns: [t.promotionId, t.courseId] })],
+);
+
 export type Promotion = typeof promotions.$inferSelect;
+export type PromotionCourse = typeof promotionCourses.$inferSelect;

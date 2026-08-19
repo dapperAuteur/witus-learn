@@ -24,9 +24,12 @@ export async function GET() {
 const PostSchema = z
   .object({
     name: z.string().trim().min(2).max(80),
-    scope: z.enum(["course", "bundle", "tenant"]),
-    /** Required for a course/bundle sale, forbidden for a brand-wide one. */
+    scope: z.enum(["course", "bundle", "tenant", "courses"]),
+    /** Required for a course/bundle sale, forbidden for a brand-wide or campaign one. */
     targetId: z.string().uuid().nullable().optional(),
+    /** Initial members of a `courses` campaign. May be empty: a campaign is meant to be filled
+     *  over time as courses are vetted, so starting with none is a normal state, not an error. */
+    courseIds: z.array(z.string().uuid()).max(200).optional(),
     kind: z.enum(["percent", "amount", "free"]),
     value: z.number().nullable().optional(),
     /** Null / omitted → starts immediately. */
@@ -36,9 +39,10 @@ const PostSchema = z
   })
   // The same rules the DB CHECK constraints enforce, restated here so the admin gets a readable
   // message instead of a 500 from Postgres.
-  .refine((d) => (d.scope === "tenant" ? !d.targetId : Boolean(d.targetId)), {
-    message: "Pick a course or bundle for a targeted sale.",
-  })
+  .refine(
+    (d) => (d.scope === "tenant" || d.scope === "courses" ? !d.targetId : Boolean(d.targetId)),
+    { message: "Pick a course or bundle for a targeted sale." },
+  )
   .refine((d) => (d.kind === "free" ? d.value == null : typeof d.value === "number"), {
     message: "A percent or amount sale needs a value.",
   })
@@ -70,12 +74,20 @@ export async function POST(req: Request) {
   if (d.scope === "bundle" && !(await ctx.sdb.ownsBundle(d.targetId!))) {
     return errorJson("Not found", 404);
   }
+  // Same check for every initial member of a campaign. A join table is exactly where a foreign
+  // course id would otherwise be insertable, and it would then be priced by this brand's sale.
+  if (d.scope === "courses" && d.courseIds?.length) {
+    for (const id of d.courseIds) {
+      if (!(await ctx.sdb.ownsCourse(id))) return errorJson("Not found", 404);
+    }
+  }
 
   const row = await ctx.sdb.createPromotion({
     name: d.name,
     scope: d.scope,
     courseId: d.scope === "course" ? d.targetId! : null,
     bundleId: d.scope === "bundle" ? d.targetId! : null,
+    courseIds: d.scope === "courses" ? (d.courseIds ?? []) : null,
     kind: d.kind,
     value: d.kind === "free" ? null : d.value!,
     startsAt: d.startsAt ? new Date(d.startsAt) : null,

@@ -23,7 +23,7 @@ export function SalesAdmin({
 }) {
   const [sales, setSales] = useState<SaleView[]>(initial);
   const [name, setName] = useState("");
-  const [scope, setScope] = useState<"tenant" | "course" | "bundle">("course");
+  const [scope, setScope] = useState<"tenant" | "course" | "bundle" | "courses">("course");
   const [targetId, setTargetId] = useState("");
   const [kind, setKind] = useState<"percent" | "amount" | "free">("percent");
   const [value, setValue] = useState("20");
@@ -90,6 +90,35 @@ export function SalesAdmin({
     }
   }
 
+  // Membership of a campaign. Optimistic on success only: the list is re-set from what we sent
+  // rather than from a refetch, because the server returns ok and the client already knows the id.
+  async function setMembership(sale: SaleView, courseId: string, add: boolean) {
+    setError(null);
+    const res = await fetch(`/api/admin/sales/${sale.id}/courses`, {
+      method: add ? "POST" : "DELETE",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ courseId }),
+    });
+    if (!res.ok) {
+      setError(add ? "Could not add that course." : "Could not remove that course.");
+      return;
+    }
+    setSales((list) =>
+      list.map((x) =>
+        x.id === sale.id
+          ? {
+              ...x,
+              courseIds: add
+                ? [...x.courseIds, courseId]
+                : x.courseIds.filter((c) => c !== courseId),
+            }
+          : x,
+      ),
+    );
+    const title = courses.find((c) => c.id === courseId)?.title ?? "That course";
+    setStatus(add ? `${title} added to "${sale.name}".` : `${title} removed from "${sale.name}".`);
+  }
+
   const groups: { key: SaleView["status"]; label: string }[] = [
     { key: "active", label: "Running now" },
     { key: "scheduled", label: "Scheduled" },
@@ -139,11 +168,19 @@ export function SalesAdmin({
             >
               <option value="course">One course</option>
               <option value="bundle">One bundle</option>
+              <option value="courses">A campaign (add courses over time)</option>
               <option value="tenant">Everything in this school</option>
             </select>
           </label>
 
-          {scope !== "tenant" ? (
+          {scope === "courses" ? (
+            <p className="text-sm text-neutral-600 sm:col-span-2 dark:text-neutral-400">
+              A campaign starts empty and you add courses to it as they are vetted. Ending it, or
+              changing the discount, then applies to every course in it at once.
+            </p>
+          ) : null}
+
+          {scope === "course" || scope === "bundle" ? (
             <label className="text-sm font-medium" htmlFor={`${ids}-target`}>
               {scope === "course" ? "Course" : "Bundle"}
               <select
@@ -219,7 +256,11 @@ export function SalesAdmin({
 
         <button
           type="submit"
-          disabled={busy || name.trim().length < 2 || (scope !== "tenant" && !targetId)}
+          disabled={
+            busy ||
+            name.trim().length < 2 ||
+            ((scope === "course" || scope === "bundle") && !targetId)
+          }
           className="mt-4 min-h-11 rounded-md px-4 font-medium focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-60"
           style={{ backgroundColor: "var(--accent)", color: "var(--accent-fg, #fff)" }}
         >
@@ -252,13 +293,16 @@ export function SalesAdmin({
               {rows.map((s) => (
                 <li
                   key={s.id}
-                  className="flex flex-col gap-2 rounded-xl border border-neutral-200 px-4 py-3 sm:flex-row sm:items-center sm:justify-between dark:border-neutral-800"
+                  className="rounded-xl border border-neutral-200 px-4 py-3 dark:border-neutral-800"
                 >
+                  <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
                   <div className="min-w-0">
                     <span className="font-semibold">{s.name}</span>
                     <span className="ml-2 text-sm text-neutral-500">
                       {describeSale(s.kind, s.value)} ·{" "}
-                      {s.scope === "tenant"
+                      {s.scope === "courses"
+                        ? `campaign, ${s.courseIds?.length ?? 0} course${(s.courseIds?.length ?? 0) === 1 ? "" : "s"}`
+                        : s.scope === "tenant"
                         ? "whole school"
                         : (s.targetTitle ?? (s.scope === "course" ? "one course" : "one bundle"))}
                       {s.startsAt ? ` · from ${new Date(s.startsAt).toLocaleString()}` : ""}
@@ -277,6 +321,58 @@ export function SalesAdmin({
                     >
                       End now
                     </button>
+                  ) : null}
+                  </div>
+
+                  {/* Campaign membership. Shown for a live campaign only: adding a course to an
+                      ended sale would change nothing and reads as though it might. */}
+                  {s.scope === "courses" && s.status !== "ended" ? (
+                    <div className="mt-3 border-t border-neutral-200 pt-3 dark:border-neutral-800">
+                      {s.courseIds.length > 0 ? (
+                        <ul className="flex flex-wrap gap-2">
+                          {s.courseIds.map((cid) => (
+                            <li
+                              key={cid}
+                              className="flex items-center gap-1 rounded-full border border-neutral-300 py-1 pl-3 pr-1 text-sm dark:border-neutral-700"
+                            >
+                              {courses.find((c) => c.id === cid)?.title ?? "Course"}
+                              <button
+                                type="button"
+                                onClick={() => setMembership(s, cid, false)}
+                                aria-label={`Remove ${courses.find((c) => c.id === cid)?.title ?? "course"} from ${s.name}`}
+                                className="min-h-11 rounded-full px-2 text-neutral-500 hover:text-neutral-900 focus-visible:outline-2 focus-visible:outline-offset-2 dark:hover:text-neutral-100"
+                              >
+                                &times;
+                              </button>
+                            </li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <p className="text-sm text-neutral-500">
+                          No courses in this campaign yet. Add them as they are vetted.
+                        </p>
+                      )}
+
+                      <label className="mt-2 block text-sm font-medium">
+                        Add a course
+                        <select
+                          value=""
+                          onChange={(e) => {
+                            if (e.target.value) setMembership(s, e.target.value, true);
+                          }}
+                          className={field}
+                        >
+                          <option value="">Choose one…</option>
+                          {courses
+                            .filter((c) => !s.courseIds.includes(c.id))
+                            .map((c) => (
+                              <option key={c.id} value={c.id}>
+                                {c.title}
+                              </option>
+                            ))}
+                        </select>
+                      </label>
+                    </div>
                   ) : null}
                 </li>
               ))}

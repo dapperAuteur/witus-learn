@@ -6,7 +6,7 @@
 // Named sale-pricing.ts because "sale" is what the surface is called in the admin UI ("Sales and
 // promotions"); the table is `promotions` because it sits beside `promo_codes`.
 
-export type PromotionScope = "course" | "bundle" | "tenant";
+export type PromotionScope = "course" | "bundle" | "tenant" | "courses";
 export type PromotionKind = "percent" | "amount" | "free";
 
 /** The shape this module needs. The Drizzle row satisfies it (numeric columns arrive as strings). */
@@ -23,6 +23,14 @@ export interface PromotionLike {
   endsAt: Date | string | null;
   endedAt: Date | string | null;
   createdAt?: Date | string | null;
+  /**
+   * Members of a `scope: 'courses'` campaign, supplied by the query layer from `promotion_courses`.
+   *
+   * OPTIONAL, AND ABSENCE MEANS EMPTY, WHICH IS THE SAFE DIRECTION. A caller that forgets to load
+   * the membership makes the campaign apply to nothing, so a course shows its list price. The
+   * opposite default would silently discount the entire catalog on a plumbing mistake.
+   */
+  courseIds?: readonly string[] | null;
 }
 
 export interface PriceView {
@@ -102,6 +110,11 @@ export function promotionCoversTarget(
   if (p.scope === "tenant") return true;
   if (p.scope === "course") return target.kind === "course" && p.courseId === target.id;
   if (p.scope === "bundle") return target.kind === "bundle" && p.bundleId === target.id;
+  // A campaign covers exactly its members, and only courses: a bundle is priced by its own row.
+  // No members means it covers nothing, which is what an unloaded membership also produces.
+  if (p.scope === "courses") {
+    return target.kind === "course" && (p.courseIds ?? []).includes(target.id);
+  }
   return false;
 }
 
@@ -125,10 +138,18 @@ export function applyPromotion(p: PromotionLike, listPrice: number): number {
 /**
  * PRECEDENCE, when several promotions apply to the same course or bundle:
  *
- *   1. MOST SPECIFIC SCOPE WINS. A course-scoped (or bundle-scoped) sale beats a brand-wide one,
- *      even when the brand-wide one is deeper. The specific row is the deliberate decision about
- *      THIS product, so a blanket "20% off everything" must not quietly override "this course is
- *      free this week", in either direction.
+ *   1. MOST SPECIFIC SCOPE WINS, on three levels rather than two:
+ *
+ *        course / bundle  (2)  a decision about THIS product
+ *        courses          (1)  a campaign this product was deliberately added to
+ *        tenant           (0)  a blanket offer over everything
+ *
+ *      A course-scoped sale beats a campaign, and a campaign beats a brand-wide sale, even when the
+ *      broader one is deeper. The narrower row is the more deliberate decision, so a blanket
+ *      "20% off everything" must not quietly override "this course is free this week", in either
+ *      direction. A campaign sits in the middle for the same reason: adding a course to Back to
+ *      School is a choice about that course, and putting it above tenant but below a single-course
+ *      row keeps the most specific intent winning.
  *   2. Within the same specificity, the LARGEST DISCOUNT wins (lowest resulting price). Two
  *      overlapping brand-wide sales are almost always an operator mistake, and the reading that
  *      never overcharges is the honest one.
@@ -169,7 +190,11 @@ export function resolvePrice(input: ResolveInput): PriceView {
   );
   if (candidates.length === 0) return plain;
 
-  const specificity = (p: PromotionLike) => (p.scope === "tenant" ? 0 : 1);
+  const specificity = (p: PromotionLike) => {
+    if (p.scope === "tenant") return 0;
+    if (p.scope === "courses") return 1;
+    return 2; // course | bundle
+  };
   const best = Math.max(...candidates.map(specificity));
   const scoped = candidates.filter((p) => specificity(p) === best);
 
@@ -215,6 +240,8 @@ export interface SaleView {
   endsAt: string | null;
   endedAt: string | null;
   status: "scheduled" | "active" | "ended";
+  /** Member course ids, for a `courses` campaign. Empty for every other scope. */
+  courseIds: string[];
 }
 
 const iso = (v: Date | string | null | undefined): string | null =>
@@ -237,6 +264,7 @@ export function toSaleView(
     endsAt: iso(row.endsAt),
     endedAt: iso(row.endedAt),
     status: promotionStatus(row, now),
+    courseIds: [...(row.courseIds ?? [])],
   };
 }
 
