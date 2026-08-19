@@ -113,7 +113,11 @@ import { HOW_WE_KNOW_WHATS_OUT_THERE_COURSE } from "./data/how-we-know-whats-out
 import { INTRO_TO_CITIZEN_SCIENCE_COURSE } from "./data/intro-to-citizen-science-course";
 import { THE_RIVER_AND_THE_WATERSHED_COURSE } from "./data/the-river-and-the-watershed-course";
 import { HOW_TO_RESEARCH_COURSE } from "./data/how-to-research-course";
+import { ARCHIVES_AND_FINDING_AIDS_COURSE } from "./data/archives-and-finding-aids-course";
+import { FACT_CHECKING_COURSE } from "./data/fact-checking-course";
 import { RESEARCH_AS_A_JOB_COURSE } from "./data/research-as-a-job-course";
+import { SEARCH_CRAFT_COURSE } from "./data/search-craft-course";
+import { TRACING_A_PERSON_COURSE } from "./data/tracing-a-person-course";
 import { RIGHTS_PERMISSIONS_CLEARANCES_COURSE } from "./data/rights-permissions-clearances-course";
 // Here Be Dragons (plans/58), course 1 of 5. Culture & History, grades 9-12.
 import { MONSTERS_AT_THE_EDGE_OF_THE_MAP_COURSE } from "./data/monsters-at-the-edge-of-the-map-course";
@@ -708,6 +712,79 @@ async function main() {
     seriesOrder: 1,
     seriesCode: "RSRCH",
     seriesPosition: "00",
+  });
+
+  // NOTE: these are written out longhand rather than through a helper. A helper was tidier and made
+  // them INVISIBLE to scripts/check-series-codes.ts, which parses this file textually: the coded
+  // course count silently stopped rising. A guard that cannot see a registration is not a guard, and
+  // that is worth more than the repetition.
+  //
+  // RSRCH-01. The biggest speed multiplier in the track, and the one almost nobody was taught. Its
+  // through-line is that a query is a HYPOTHESIS about how somebody else described the thing, which
+  // is what keeps it from being a list of operators that would date badly.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "search-craft",
+    course: SEARCH_CRAFT_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "researcher",
+    seriesTitle: "The Researcher",
+    seriesOrder: 2,
+    seriesCode: "RSRCH",
+    seriesPosition: "01",
+  });
+
+  // RSRCH-02. The standalone Archives & Records course the Documentarian program already wanted
+  // (plans/future/12). It lives here because reading a finding aid is a research skill first, and
+  // all four documentation paths need it.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "archives-and-finding-aids",
+    course: ARCHIVES_AND_FINDING_AIDS_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "researcher",
+    seriesTitle: "The Researcher",
+    seriesOrder: 3,
+    seriesCode: "RSRCH",
+    seriesPosition: "02",
+  });
+
+  // RSRCH-03. Lesson 8, "the records that were never made", is the lesson this course exists to
+  // earn: the standard record ladder was built for people the state counted as full persons, and a
+  // course teaching the ladder without saying so would teach a method that silently fails for a
+  // large share of the people this catalog is about.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "tracing-a-person-through-records",
+    course: TRACING_A_PERSON_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "researcher",
+    seriesTitle: "The Researcher",
+    seriesOrder: 4,
+    seriesCode: "RSRCH",
+    seriesPosition: "03",
+  });
+
+  // RSRCH-04. The most directly hireable course in the track. Its whole discipline is one habit:
+  // verify against the SOURCE, never against another account that repeats the claim.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "fact-checking-as-a-discipline",
+    course: FACT_CHECKING_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "researcher",
+    seriesTitle: "The Researcher",
+    seriesOrder: 5,
+    seriesCode: "RSRCH",
+    seriesPosition: "04",
   });
 
   // RSRCH-05. Every failure mode in it is one this catalog actually hit while sourcing its own
