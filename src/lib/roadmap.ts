@@ -5,6 +5,15 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- ✅ **WELL infrastructure** (\`feat/well-infrastructure\`, plans/67 branch 1; NO migration):
+  insert-only \`visibility\`/\`publishHoldReason\` on the authored-course seeder (public flip
+  survives re-seeds); the private study loop actually works (enroll + complete + dashboard were
+  hard-gated on isPublished; now owner/instructor-scoped via canAccessCourse, so private courses
+  mint real verify tokens); the CERT_DISCLAIMERS registry + landing-page notice (canonical "not
+  affiliated with NASM/NBHWC" fact; follow-up filed to adopt on nasm-cpt/ces/cnc); the
+  specialization engine widened to N-leg programs alongside the untouched triples, private
+  courses excluded from legs. Course authoring starts when BAM's research dossiers land
+  (task 264).
 - ✅ **BAM's 2026-08-18 in-app feedback, first wave**: the citation and source-check boards
   collapse by course with open counts on every summary line (a phone-navigable board of several
   hundred citations); state-civics courses link back to /civics (other Civics courses to the

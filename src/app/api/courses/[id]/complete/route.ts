@@ -1,4 +1,4 @@
-import { apiContext, auditorReadOnlyBlock, canEditCourse, errorJson, json } from "@/lib/api";
+import { apiContext, auditorReadOnlyBlock, canAccessCourse, canEditCourse, errorJson, json } from "@/lib/api";
 import { createCompletion, hasCompletedAllLessons, isEnrolled } from "@/db/queries/enrollment";
 import { sendCompletionEmail } from "@/lib/emails";
 import { getSiteUrl } from "@/lib/site-url";
@@ -17,7 +17,12 @@ export async function POST(_req: Request, { params }: { params: Promise<{ id: st
   const learner = (await getActiveLearner(session))!;
 
   const course = await sdb.getCourseById(id);
-  if (!course || !course.isPublished) return errorJson("Not found", 404);
+  if (!course) return errorJson("Not found", 404);
+  // Mirrors the enroll gate (plans/67): the owner/instructor completing their own private course
+  // mints a real verification token; everyone else gets the same 404 as before.
+  if (!course.isPublished && !(await canAccessCourse(session, sdb.tenantId, course))) {
+    return errorJson("Not found", 404);
+  }
 
   // An invited auditor (plans/52 section 5) earns no certificate: the certificate is a claim about
   // a learner, and an auditor deliberately records no progress to back one. Checked before the

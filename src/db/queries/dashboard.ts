@@ -1,5 +1,5 @@
 import "server-only";
-import { and, desc, eq, gte, inArray, isNotNull, sql } from "drizzle-orm";
+import { and, desc, eq, gte, inArray, isNotNull, ne, or, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import {
   courseCompletions,
@@ -139,7 +139,10 @@ export async function getLearnerDashboard(tenantId: string, userId: string): Pro
         eq(enrollments.tenantId, tenantId),
         eq(enrollments.userId, userId),
         eq(enrollments.status, "active"),
-        eq(courses.isPublished, true),
+        // Published, OR the requesting user's own course: the owner studying their private WELL
+        // program (plans/67) must see it on their dashboard. Leak-free by construction: the extra
+        // rows are courses this user instructs, still inside the tenant filter above.
+        or(eq(courses.isPublished, true), eq(courses.instructorId, userId)),
       ),
     )
     .orderBy(desc(enrollments.enrolledAt));
@@ -356,7 +359,14 @@ export async function getSpecializations(
     .select({ id: courses.id, slug: courses.slug, title: courses.title })
     .from(courses)
     .where(
-      and(eq(courses.tenantId, tenantId), inArray(courses.slug, slugs), eq(courses.isPublished, true)),
+      and(
+        eq(courses.tenantId, tenantId),
+        inArray(courses.slug, slugs),
+        eq(courses.isPublished, true),
+        // Defense in depth (plans/67): a private course can never be a specialization leg, so a
+        // program is invisible until its public flip even if a def names it early.
+        ne(courses.visibility, "private"),
+      ),
     );
 
   const published = new Map<string, PublishedCourseRef>();

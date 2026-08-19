@@ -104,6 +104,10 @@ Every customer-facing surface must pass before it can merge:
     the start or the capstone, a lettered position with no track name, and a prefix shared by two
     series. It is **not** a ratchet and has no exception map: codes are new, so every code that
     exists was written under this rule and there is nothing to grandfather.
+- **A course that names an external certification body registers a `CERT_DISCLAIMERS` entry**
+  ([src/lib/cert-disclaimer.ts](src/lib/cert-disclaimer.ts)) in the same branch that ships it, so
+  "not affiliated with X" is a page fact the landing page renders, never prose an author forgets
+  (the NASM-prep family shipped with zero-to-inconsistent disclaimers; the registry ends that).
 - No fabricated characters: real, cited figures or second-person address.
 - No "AI tells": no em/en dashes (use commas/periods/parentheses/colons), no ornate filler.
   Four things keep their dashes, because changing them would be an error, not a style fix:

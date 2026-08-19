@@ -584,6 +584,17 @@ quotation changed (the US Constitution's "good Behaviour", the International Lab
 own name, and 143 other proper nouns included). What remains is logged with file and line in the
 sweep's own report.
 
+## Private study programs (owner-only courses)
+
+`seedAuthoredCourse` accepts insert-only `visibility: "private"` + `publishHoldReason`: the
+course is born unpublished and owner/instructor-only, invisible on every public surface
+(catalog, series, sitemap via `includeInSitemap`, api-v1, embeds, specializations), while the
+owner can still enroll, study, and complete it — completions mint real `/verify/[token]`
+credentials. Insert-only means the later PUBLIC FLIP in the admin UI survives every re-seed
+(same rationale as `price`). First consumer: the WELL wellness-coaching series (plans/67).
+Pinned by `tests/isolation/private-course.db.test.ts`. Courses that name external certification
+bodies render a canonical not-affiliated notice from the `CERT_DISCLAIMERS` registry.
+
 ## Specialization credentials
 
 Named three-course tracks (shared research core + craft medium + subject, per the Documentarian

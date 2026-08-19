@@ -57,6 +57,17 @@ export async function seedAuthoredCourse(
      */
     price?: number;
     priceType?: "free" | "one_time" | "subscription";
+    /**
+     * Initial visibility, applied **on FIRST INSERT ONLY**, exactly like `price` above and for the
+     * same reason: publishing state is owner-editable in the admin UI, and the PUBLIC FLIP of a
+     * private program (plans/67, the WELL series) must survive every later re-seed. `"private"`
+     * additionally writes `isPublished: false` / `publishedAt: null`, because the catalog surfaces
+     * filter on isPublished alone (the hoodoo-complete semantics; see scripts/seed-courses.ts,
+     * whose POST-SEED updates deliberately re-assert privacy every run and must stay as they are).
+     */
+    visibility?: "public" | "private";
+    /** Insert-only, with `visibility`: the honest banner reason on a held course. */
+    publishHoldReason?: string;
   },
 ): Promise<string> {
   const { tenantId, instructorId, slug, course, category } = opts;
@@ -90,8 +101,11 @@ export async function seedAuthoredCourse(
         slug,
         description: course.description,
         category,
-        isPublished: true,
-        publishedAt: new Date(),
+        // A private course is born unpublished (catalog surfaces filter on isPublished alone).
+        isPublished: opts.visibility === "private" ? false : true,
+        publishedAt: opts.visibility === "private" ? null : new Date(),
+        ...(opts.visibility != null ? { visibility: opts.visibility } : {}),
+        ...(opts.publishHoldReason != null ? { publishHoldReason: opts.publishHoldReason } : {}),
         navigationMode,
         // Insert-only pricing (see the option's doc comment). Omitted values fall through to the
         // schema defaults, which are price "0" / priceType "free".

@@ -1,4 +1,4 @@
-import { apiContext, auditorReadOnlyBlock, canEditCourse, errorJson, json } from "@/lib/api";
+import { apiContext, auditorReadOnlyBlock, canAccessCourse, canEditCourse, errorJson, json } from "@/lib/api";
 import { enrollFree, isEnrolled } from "@/db/queries/enrollment";
 import { getUnmetRequired } from "@/db/queries/prerequisites";
 import {
@@ -32,7 +32,13 @@ export async function POST(req: Request, { params }: { params: Promise<{ id: str
   const learner = (await getActiveLearner(session))!;
 
   const course = await sdb.getCourseById(id);
-  if (!course || !course.isPublished) return errorJson("Not found", 404);
+  if (!course) return errorJson("Not found", 404);
+  // Unpublished (which includes private, plans/67: the owner's WELL study program) is enrollable
+  // ONLY by whoever could edit it anyway: the platform owner or the course's own instructor. For
+  // everyone else it stays a plain 404, never a hint that the course exists.
+  if (!course.isPublished && !(await canAccessCourse(session, sdb.tenantId, course))) {
+    return errorJson("Not found", 404);
+  }
 
   if (await isEnrolled(learner.id, id)) {
     return json({ enrolled: true });

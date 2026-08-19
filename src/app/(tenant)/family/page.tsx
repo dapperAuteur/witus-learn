@@ -14,7 +14,7 @@ interface ChildView {
   recallAccuracy: number;
   quizAvg: number;
   credentials: { courseTitle: string; completedAt: Date }[];
-  /** EARNED specializations only (all three courses complete), never partial progress. */
+  /** EARNED specializations only (every course complete), never partial progress. */
   specializations: { title: string; earnedAt: Date }[];
   attendance: { cohortName: string; days: string[] }[];
 }
@@ -145,7 +145,7 @@ export default async function FamilyPage() {
                       Specializations
                     </h4>
                     <p className="mt-0.5 text-xs text-neutral-500">
-                      Earned by completing all three courses in a track. A record on this site, not an
+                      Earned by completing every course in a track. A record on this site, not an
                       external certification.
                     </p>
                     <ul className="mt-1 space-y-1 text-sm">
