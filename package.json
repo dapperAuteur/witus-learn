@@ -35,6 +35,7 @@
     "seed:langchain": "tsx --env-file=.env.local scripts/seed-langchain.ts",
     "seed:faa": "tsx --env-file=.env.local scripts/seed-faa.ts",
     "seed:bvc:real": "tsx --env-file=.env.local scripts/seed-bvc-real.ts",
+    "seed:well": "tsx --env-file=.env.local scripts/seed-well.ts",
     "seed:sommelier": "tsx --env-file=.env.local scripts/seed-sommelier.ts",
     "gen:health": "tsx scripts/gen-health-data.ts",
     "seed:health": "tsx --env-file=.env.local scripts/seed-health.ts",

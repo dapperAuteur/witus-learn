@@ -49,6 +49,12 @@ const BACKLOG: Record<string, string> = {
   // standards decision on a course, and because it goes live automatically if the BVC Sommelier
   // series is ever registered in the file this check scans.
   "bvc-taster-wine": "OUT OF SCOPE, vocational and 21+, no K-12 academic standard claimed",
+  // WELL program (plans/67): adult professional education, PRIVATE owner-only study courses.
+  // Seeded from scripts/seed-well.ts, so `registered` below does not see them and these entries
+  // are inert; written here because this is where the next author looks for the standards
+  // decision. Revisit at the public flip.
+  "well-orientation-scope": "OUT OF SCOPE, adult professional education, private owner-only (plans/67)",
+  "well-coaching-psychology": "OUT OF SCOPE, adult professional education, private owner-only (plans/67)",
   // Adult professional/consumer education. Like the sommelier entry above, this one is currently
   // INERT: `registered` below only matches the shorthand `{ slug: "..." }` form, and this course is
   // registered through a seedAuthoredCourse call, so the guard never sees it. Written down anyway
