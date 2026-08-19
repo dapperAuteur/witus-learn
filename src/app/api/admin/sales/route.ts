@@ -24,9 +24,23 @@ export async function GET() {
 const PostSchema = z
   .object({
     name: z.string().trim().min(2).max(80),
-    scope: z.enum(["course", "bundle", "tenant"]),
-    /** Required for a course/bundle sale, forbidden for a brand-wide one. */
+    /** Optional URL slug: gives this sale a public page at /sale/<slug>. Omit for a sale that is
+     *  just a price and does not need a landing page of its own. */
+    slug: z
+      .string()
+      .trim()
+      .regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, "Use lowercase letters, numbers and hyphens.")
+      .max(60)
+      .nullable()
+      .optional(),
+    scope: z.enum(["course", "bundle", "tenant", "courses"]),
+    /** Required for a course/bundle sale, forbidden for a brand-wide or campaign one. */
     targetId: z.string().uuid().nullable().optional(),
+    /** Courses to name at creation. Members of a campaign, or exceptions to a brand-wide sale.
+     *  May be empty: a campaign filled over time as courses are vetted is the point of the scope. */
+    courseIds: z.array(z.string().uuid()).max(200).optional(),
+    /** Bundles to name at creation, read the same way. */
+    bundleIds: z.array(z.string().uuid()).max(200).optional(),
     kind: z.enum(["percent", "amount", "free"]),
     value: z.number().nullable().optional(),
     /** Null / omitted → starts immediately. */
@@ -36,9 +50,10 @@ const PostSchema = z
   })
   // The same rules the DB CHECK constraints enforce, restated here so the admin gets a readable
   // message instead of a 500 from Postgres.
-  .refine((d) => (d.scope === "tenant" ? !d.targetId : Boolean(d.targetId)), {
-    message: "Pick a course or bundle for a targeted sale.",
-  })
+  .refine(
+    (d) => (d.scope === "tenant" || d.scope === "courses" ? !d.targetId : Boolean(d.targetId)),
+    { message: "Pick a course or bundle for a targeted sale." },
+  )
   .refine((d) => (d.kind === "free" ? d.value == null : typeof d.value === "number"), {
     message: "A percent or amount sale needs a value.",
   })
@@ -67,13 +82,42 @@ export async function POST(req: Request) {
   if (d.scope === "course" && !(await ctx.sdb.ownsCourse(d.targetId!))) {
     return errorJson("Not found", 404);
   }
+  // Every member of a campaign is tenant-checked before the promotion is created, so a crafted
+  // request cannot seed another brand's course into this brand's sale.
+  if ((d.scope === "courses" || d.scope === "tenant") && d.bundleIds?.length) {
+    for (const id of d.bundleIds) {
+      if (!(await ctx.sdb.ownsBundle(id))) return errorJson("Not found", 404);
+    }
+  }
+  if ((d.scope === "courses" || d.scope === "tenant") && d.courseIds?.length) {
+    for (const id of d.courseIds) {
+      if (!(await ctx.sdb.ownsCourse(id))) {
+        return errorJson("Not found", 404);
+      }
+    }
+  }
   if (d.scope === "bundle" && !(await ctx.sdb.ownsBundle(d.targetId!))) {
     return errorJson("Not found", 404);
+  }
+  // Same check for every initial member of a campaign. A join table is exactly where a foreign
+  // course id would otherwise be insertable, and it would then be priced by this brand's sale.
+  if ((d.scope === "courses" || d.scope === "tenant") && d.bundleIds?.length) {
+    for (const id of d.bundleIds) {
+      if (!(await ctx.sdb.ownsBundle(id))) return errorJson("Not found", 404);
+    }
+  }
+  if ((d.scope === "courses" || d.scope === "tenant") && d.courseIds?.length) {
+    for (const id of d.courseIds) {
+      if (!(await ctx.sdb.ownsCourse(id))) return errorJson("Not found", 404);
+    }
   }
 
   const row = await ctx.sdb.createPromotion({
     name: d.name,
     scope: d.scope,
+    slug: d.slug ?? null,
+    courseIds: d.courseIds ?? null,
+    bundleIds: d.bundleIds ?? null,
     courseId: d.scope === "course" ? d.targetId! : null,
     bundleId: d.scope === "bundle" ? d.targetId! : null,
     kind: d.kind,

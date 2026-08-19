@@ -337,3 +337,141 @@ describe("presentation helpers", () => {
     });
   });
 });
+
+// ── Campaign promotions (`scope: 'courses'`) ────────────────────────────────────────────────────
+//
+// The shape a running back-to-school sale needs: ONE promotion whose membership grows as courses
+// are vetted. The pricing risk is entirely in two places, so both are covered hard here:
+//
+//   1. A campaign with no membership loaded must cover NOTHING. `courseIds` is optional on
+//      PromotionLike, and if absence were read as "everything" a plumbing mistake in the query
+//      layer would silently discount the whole catalog.
+//   2. Precedence now has three levels rather than two. A campaign must beat a brand-wide sale and
+//      must lose to a single-course sale, in BOTH directions, so that the narrower decision always
+//      wins even when the broader one is deeper.
+
+describe("campaign promotions (scope: courses)", () => {
+  const campaign = (over: Partial<PromotionLike> = {}) =>
+    promo({ id: "camp", scope: "courses", courseIds: [COURSE], ...over });
+
+  const view = (promotions: PromotionLike[], listPrice = 100) =>
+    resolvePrice({
+      tenantId: TENANT,
+      target: { kind: "course", id: COURSE },
+      listPrice,
+      priceType: "one_time",
+      promotions,
+      now: NOW,
+    });
+
+  it("discounts a course that is a member", () => {
+    const r = view([campaign({ kind: "percent", value: 25 })]);
+    expect(r.effectivePrice).toBe(75);
+    expect(r.discounted).toBe(true);
+    expect(r.promotion?.id).toBe("camp");
+  });
+
+  it("leaves a course that is not a member at its list price", () => {
+    const r = view([campaign({ courseIds: ["some-other-course"] })]);
+    expect(r.effectivePrice).toBe(100);
+    expect(r.discounted).toBe(false);
+  });
+
+  it("covers NOTHING when the membership was never loaded", () => {
+    // The dangerous direction. An unloaded membership must fail closed.
+    const r = view([campaign({ courseIds: undefined })]);
+    expect(r.effectivePrice).toBe(100);
+    expect(r.discounted).toBe(false);
+  });
+
+  it("covers nothing when the membership is explicitly empty", () => {
+    // A campaign announced before any course is vetted is a normal state, not an error.
+    const r = view([campaign({ courseIds: [] })]);
+    expect(r.effectivePrice).toBe(100);
+  });
+
+  it("never applies to a bundle, even when a bundle id collides with a member course id", () => {
+    const r = resolvePrice({
+      tenantId: TENANT,
+      target: { kind: "bundle", id: COURSE },
+      listPrice: 100,
+      priceType: "one_time",
+      promotions: [campaign()],
+      now: NOW,
+    });
+    expect(r.effectivePrice).toBe(100);
+  });
+
+  it("ignores a campaign belonging to another tenant", () => {
+    const r = view([campaign({ tenantId: OTHER, kind: "free" })]);
+    expect(r.effectivePrice).toBe(100);
+  });
+
+  it("respects the window like any other promotion", () => {
+    const ended = campaign({ endedAt: new Date("2026-08-17T00:00:00Z") });
+    expect(view([ended]).effectivePrice).toBe(100);
+    const scheduled = campaign({ startsAt: new Date("2026-09-01T00:00:00Z") });
+    expect(view([scheduled]).effectivePrice).toBe(100);
+  });
+
+  describe("precedence: campaign sits between tenant-wide and single-course", () => {
+    it("beats a DEEPER brand-wide sale", () => {
+      const r = view([
+        promo({ id: "brand", scope: "tenant", kind: "percent", value: 50 }),
+        campaign({ kind: "percent", value: 10 }),
+      ]);
+      expect(r.promotion?.id).toBe("camp");
+      expect(r.effectivePrice).toBe(90);
+    });
+
+    it("still beats a brand-wide sale when the campaign is the deeper one", () => {
+      const r = view([
+        promo({ id: "brand", scope: "tenant", kind: "percent", value: 10 }),
+        campaign({ kind: "percent", value: 50 }),
+      ]);
+      expect(r.promotion?.id).toBe("camp");
+      expect(r.effectivePrice).toBe(50);
+    });
+
+    it("loses to a SHALLOWER single-course sale", () => {
+      const r = view([
+        campaign({ kind: "percent", value: 50 }),
+        promo({ id: "one", scope: "course", courseId: COURSE, kind: "percent", value: 10 }),
+      ]);
+      expect(r.promotion?.id).toBe("one");
+      expect(r.effectivePrice).toBe(90);
+    });
+
+    it("loses to a deeper single-course sale too", () => {
+      const r = view([
+        campaign({ kind: "percent", value: 10 }),
+        promo({ id: "one", scope: "course", courseId: COURSE, kind: "free" }),
+      ]);
+      expect(r.promotion?.id).toBe("one");
+      expect(r.effectivePrice).toBe(0);
+    });
+
+    it("takes the largest discount when two campaigns both include the course", () => {
+      const r = view([
+        campaign({ id: "c1", kind: "percent", value: 20 }),
+        campaign({ id: "c2", kind: "percent", value: 40 }),
+      ]);
+      expect(r.promotion?.id).toBe("c2");
+      expect(r.effectivePrice).toBe(60);
+    });
+  });
+
+  it("keeps the invariants: never raises a price, never charges a free course", () => {
+    expect(view([campaign({ kind: "amount", value: 500 })]).effectivePrice).toBe(0);
+    const alreadyFree = resolvePrice({
+      tenantId: TENANT,
+      target: { kind: "course", id: COURSE },
+      listPrice: 0,
+      priceType: "free",
+      promotions: [campaign({ kind: "percent", value: 50 })],
+      now: NOW,
+    });
+    expect(alreadyFree.isFree).toBe(true);
+    expect(alreadyFree.discounted).toBe(false);
+  });
+});

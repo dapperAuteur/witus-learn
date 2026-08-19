@@ -58,6 +58,7 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
     // honest "no multi-course paths yet" on a school that has none, which is a true answer rather
     // than a dead link, and it is how a learner discovers a series exists at all.
     { href: "/series", label: "Course paths" },
+    { href: "/sale", label: "Sales" },
     ...(hasCivics ? [{ href: "/civics", label: "Civics" }] : []),
     ...(hasLanguages ? [{ href: "/languages", label: "Languages" }] : []),
     ...(showMap ? [{ href: "/explore", label: "Explore" }] : []),

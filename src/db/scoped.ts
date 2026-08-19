@@ -36,10 +36,14 @@ import { listPublishedLessonSearchRows } from "@/db/queries/course-search";
 import {
   bundleBelongsToTenant,
   courseBelongsToTenant,
+  addItemToPromotion,
   createPromotion,
   endPromotionNow,
   listActivePromotions,
+  getPublicPromotionBySlug,
   listPromotions,
+  listPublicPromotions,
+  removeItemFromPromotion,
   type CreatePromotionInput,
 } from "@/db/queries/promotions";
 import {
@@ -160,6 +164,27 @@ export class ScopedDb {
   }
 
   /** Target guards: the FK cannot check the tenant, so the route must. */
+  /** Every promotion with a public page, for /sale. Includes ended ones; the page says so. */
+  listPublicPromotions() {
+    return listPublicPromotions(this.tenantId);
+  }
+
+  /** One public campaign by slug, for /sale/<slug>. Undefined (so: 404) across tenants. */
+  getPublicPromotionBySlug(slug: string) {
+    return getPublicPromotionBySlug(this.tenantId, slug);
+  }
+
+  /** Name a course or bundle in a sale: a member of a campaign, or an exception to a brand-wide
+   *  sale. Tenant-checked on both the sale and the item. */
+  addItemToPromotion(promotionId: string, item: { kind: "course" | "bundle"; id: string }) {
+    return addItemToPromotion(this.tenantId, promotionId, item);
+  }
+
+  /** Un-name one item. Touches exactly one row, so everything else in the sale is unaffected. */
+  removeItemFromPromotion(promotionId: string, item: { kind: "course" | "bundle"; id: string }) {
+    return removeItemFromPromotion(this.tenantId, promotionId, item);
+  }
+
   ownsCourse(courseId: string) {
     return courseBelongsToTenant(this.tenantId, courseId);
   }
