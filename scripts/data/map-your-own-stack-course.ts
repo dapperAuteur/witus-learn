@@ -61,7 +61,7 @@ export const MAP_YOUR_OWN_STACK_COURSE: AuthoredCourse = {
 
 ## And a second boundary, specific to this course: no private data
 
-The capstone maps YOUR block, but **the finding is the list of governments and their documents, not a parcel record.** You are never asked to publish your address, your neighbours' addresses, or anyone's private property data, and neither is the worked example in Section 3. **The stack is public; the parcel is private, and this course keeps them apart on purpose.**
+The capstone maps YOUR block, but **the finding is the list of governments and their documents, not a parcel record.** You are never asked to publish your address, your neighbors' addresses, or anyone's private property data, and neither is the worked example in Section 3. **The stack is public; the parcel is private, and this course keeps them apart on purpose.**
 
 ## What the path already gave you
 
@@ -246,7 +246,7 @@ Most of the government that touches daily life is state law: property, family, m
 
 ## The middle-layer caveat for learners outside the United States
 
-If your block is not in the United States, this rung behaves differently, and course 4 is the reason. **A US state's powers are entrenched in the federal constitution; a devolved region's powers come from an ordinary act the central parliament could in principle repeal.** So a learner in Scotland, in a Spanish autonomous community, or in a Canadian province reads the same rung on a different footing: find the devolution statute or the federal constitution that sets the region's powers, and note whether the centre could reclaim them. The method is identical; the answer to Question 4 is not.
+If your block is not in the United States, this rung behaves differently, and course 4 is the reason. **A US state's powers are entrenched in the federal constitution; a devolved region's powers come from an ordinary act the central parliament could in principle repeal.** So a learner in Scotland, in a Spanish autonomous community, or in a Canadian province reads the same rung on a different footing: find the devolution statute or the federal constitution that sets the region's powers, and note whether the center could reclaim them. The method is identical; the answer to Question 4 is not.
 
 ## Sources
 - U.S. Const. art. VI. https://constitution.congress.gov/constitution/article-6/
@@ -300,7 +300,7 @@ Course 5 taught that the name over the door tells you almost nothing; the **form
         },
         {
           prompt: "How does this rung read differently for a learner outside the United States?",
-          answer: "A US state's powers are entrenched in the federal constitution; a devolved region's come from an ordinary act the centre could in principle repeal. So you find the devolution statute or constitution and note whether the centre could reclaim the powers. Same method, different answer to Question 4.",
+          answer: "A US state's powers are entrenched in the federal constitution; a devolved region's come from an ordinary act the center could in principle repeal. So you find the devolution statute or constitution and note whether the center could reclaim the powers. Same method, different answer to Question 4.",
         },
       ],
     },
@@ -353,7 +353,7 @@ The 2017 Census of Governments counted about 90,000 local governments in the Uni
 
 ## The separate sovereign: ask, name, and stop
 
-**Ask whether your block is within, or adjacent to, the territory of a tribal nation.** This is a separate question with a separate answer, not a rung on your stack. The authoritative finding aid is the **Bureau of Indian Affairs**, which maintains the record of federally recognised tribes, and the treaty record, which ranks as supreme law (Worcester v. Georgia, 1832; U.S. Const. art. VI). If a nation is present, **name it, record that its authority is inherent and government-to-government rather than delegated from your state, and stop there.**
+**Ask whether your block is within, or adjacent to, the territory of a tribal nation.** This is a separate question with a separate answer, not a rung on your stack. The authoritative finding aid is the **Bureau of Indian Affairs**, which maintains the record of federally recognized tribes, and the treaty record, which ranks as supreme law (Worcester v. Georgia, 1832; U.S. Const. art. VI). If a nation is present, **name it, record that its authority is inherent and government-to-government rather than delegated from your state, and stop there.**
 
 Carry course 6's restraint rule exactly. **Do not describe any nation's internal governance, ceremonies, or restricted knowledge.** For the capstone, naming the sovereign and its separate status is the whole task. Lead with the nation's own account and with Indigenous scholarship, and treat recognition status as a checkable question you resolve against the record, not an assumption you make.
 
@@ -475,7 +475,7 @@ The last kind is the one hiding closest to home. If you live under a **homeowner
               "come from a repealable act",
             ],
             correctIndex: 3,
-            explanation: "A US state's powers are entrenched in the federal constitution; a devolved region's come from an ordinary act the centre could in principle repeal. Same method, different answer to Question 4.",
+            explanation: "A US state's powers are entrenched in the federal constitution; a devolved region's come from an ordinary act the center could in principle repeal. Same method, different answer to Question 4.",
             sourceLessonSlug: "stack-federal-state-records",
           },
           {
@@ -535,7 +535,7 @@ The last kind is the one hiding closest to home. If you live under a **homeowner
               "United States Census map",
             ],
             correctIndex: 2,
-            explanation: "The Bureau of Indian Affairs maintains the record of federally recognised tribes, and the treaty record ranks as supreme law. You name the nation, note its separate status, and stop.",
+            explanation: "The Bureau of Indian Affairs maintains the record of federally recognized tribes, and the treaty record ranks as supreme law. You name the nation, note its separate status, and stop.",
             sourceLessonSlug: "stack-sovereign-and-community",
           },
           {
@@ -600,7 +600,7 @@ Because it collapses two rungs into one. **San Francisco is a consolidated city 
 
 **Special districts.** This is where the surprises would be. A block in San Francisco sits under the **San Francisco Unified School District**, a single-purpose school government, and under a regional transit special district, the **San Francisco Bay Area Rapid Transit District (BART)**, whose elected board governs a service that crosses several counties. Each has its own governing documents; each traces to a California enabling statute. **You would confirm the exact statutory citation against the California codes rather than assume it**, which is the authoritative-values discipline: the record, not a guess, gives the section number.
 
-**The separate-sovereign question.** You still must ask it. The San Francisco Peninsula is widely documented as the ancestral homeland of the **Ramaytush Ohlone**, and the honest research step is to check the Bureau of Indian Affairs record of federally recognised tribes and the treaty record for any current territorial jurisdiction over the block, and to lead with the people's own account for the ancestral-homeland fact. For this urban block the research points to no reservation currently exercising territorial jurisdiction, and you would record THAT, sourced, rather than either inventing a jurisdiction or skipping the question.
+**The separate-sovereign question.** You still must ask it. The San Francisco Peninsula is widely documented as the ancestral homeland of the **Ramaytush Ohlone**, and the honest research step is to check the Bureau of Indian Affairs record of federally recognized tribes and the treaty record for any current territorial jurisdiction over the block, and to lead with the people's own account for the ancestral-homeland fact. For this urban block the research points to no reservation currently exercising territorial jurisdiction, and you would record THAT, sourced, rather than either inventing a jurisdiction or skipping the question.
 
 **The community layer.** If the block is under a homeowners association or in a condominium, its recorded CC&Rs or declaration, on file with the city and county recorder, are the primary record for that authority.
 
@@ -769,7 +769,7 @@ Each column is one of the method's four questions, and the rows are the six kind
               "copy another district's act over",
             ],
             correctIndex: 1,
-            explanation: "A labelled blank you can fill later is honest; a confident wrong answer corrupts the whole map. Name the record that would settle it.",
+            explanation: "A labeled blank you can fill later is honest; a confident wrong answer corrupts the whole map. Name the record that would settle it.",
             sourceLessonSlug: "stack-reading-what-you-find",
           },
           {
@@ -878,11 +878,11 @@ Each column is one of the method's four questions, and the rows are the six kind
       lessonType: "assignment",
       body: `This is the assignment the whole path was built for. **Document every government with authority over the block you live on, from the primary record.** Most people find six to twelve, and are surprised by half. It is the same move as the route series and course 1: go find the document.
 
-**Two boundaries before you start, because a capstone is where people forget them.** First, **this is a research exercise in reading authority, not legal advice.** You are building an inventory of who has power over your block and where that power comes from; you are not determining anyone's legal rights, including your own. Second, **the deliverable is the list of governments and their documents, never a private parcel record.** Do not publish your address, your neighbours' addresses, or anyone's parcel data. The stack is public; the parcel is private.
+**Two boundaries before you start, because a capstone is where people forget them.** First, **this is a research exercise in reading authority, not legal advice.** You are building an inventory of who has power over your block and where that power comes from; you are not determining anyone's legal rights, including your own. Second, **the deliverable is the list of governments and their documents, never a private parcel record.** Do not publish your address, your neighbors' addresses, or anyone's parcel data. The stack is public; the parcel is private.
 
 ## The assignment
 
-Produce a **stack map of your own block**: a labelled table (or a sketch) of every government with authority over it, with the five columns from Lesson 11 filled for each. **Completeness over polish.** The finding is the count and the sources, not the prose.
+Produce a **stack map of your own block**: a labeled table (or a sketch) of every government with authority over it, with the five columns from Lesson 11 filled for each. **Completeness over polish.** The finding is the count and the sources, not the prose.
 
 ## Step 1. The upper stack
 
@@ -911,11 +911,11 @@ If you live under an HOA, a co-op, or a condominium, add it: the body, and its p
 | **Coverage** | Only the naive three (city, state, nation) | Adds the special districts and asks the sovereign and community questions | Every applicable kind of authority is present, including the ones you were surprised by |
 | **Primary records** | Entries cite summaries or nothing | Most entries name a primary record | Every entry names the primary record and its finding aid |
 | **The four questions** | Only the body is named | Body, authority, and document filled | All five columns filled or honestly blank, with who-can-overturn showing entrenched versus revocable |
-| **Honesty of blanks** | Guesses fill the gaps | Some blanks labelled "not yet found" | "Did not find" and "does not exist" kept distinct; no value another system owns is asserted from memory |
+| **Honesty of blanks** | Guesses fill the gaps | Some blanks labeled "not yet found" | "Did not find" and "does not exist" kept distinct; no value another system owns is asserted from memory |
 | **Care and boundaries** | Missing, or reproduces restricted detail | States "not legal advice" | Names the sovereign with restraint, publishes no parcel data, and flags disagreements as claims to check |
 | **The surprise** | None noted | Notes one government you did not expect | Names which surprised you and why, tying it back to the layer the path predicted you would miss |
 
-**A capstone that hits "Excellent" across the row is a complete, sourced inventory** in which every government over your block has a name, a kind, a document, a way its body is chosen, and an overturn answer, in which the blanks are labelled rather than guessed, and in which you can point to the one you never knew governed you and name the document that created it.
+**A capstone that hits "Excellent" across the row is a complete, sourced inventory** in which every government over your block has a name, a kind, a document, a way its body is chosen, and an overturn answer, in which the blanks are labeled rather than guessed, and in which you can point to the one you never knew governed you and name the document that created it.
 
 ## What you have when you finish
 

@@ -52,7 +52,7 @@ export const LABOR_CHILE_COURSE: AuthoredCourse = {
       slug: "chile-designed-not-evolved",
       title: "1 · Designed, not evolved: why Chile is the last course",
       section: "Section 1 · A labor code with an author",
-      body: `Every labor system you have met in this track so far *evolved*. America's grew out of Haymarket and the Wagner Act and Taft-Hartley, each layer a reaction to the last. Sweden's and Denmark's grew out of founding truces between organised workers and organised employers. Nobody sat down one year and drew the whole thing.
+      body: `Every labor system you have met in this track so far *evolved*. America's grew out of Haymarket and the Wagner Act and Taft-Hartley, each layer a reaction to the last. Sweden's and Denmark's grew out of founding truces between organized workers and organized employers. Nobody sat down one year and drew the whole thing.
 
 **Chile is the exception, and that is the entire reason this course exists.** The core of Chile's labor system was written in **1979**, under the military dictatorship of Augusto Pinochet, by a named person, **José Piñera**, a Harvard-trained economist appointed Minister of Labor at age 30, as a deliberate, coherent package called the **Plan Laboral** ("Labor Plan"). It had a stated goal. Its author published a book defending it and defends it to this day. And its central architecture, collective bargaining confined by law to the **single firm**, never the industry, survived the dictatorship, survived the return to democracy in 1990, survived a major reform in 2016, and survived two attempts to rewrite the constitution in 2022 and 2023. You will read today's design in today's numbers before this course is over: union density around **16%** and collective-bargaining coverage around **19.3%** in **2023** (OECD/AIAS ICTWSS, in OECD, 2025), against an OECD coverage average of about **33.5%** (2023/24).
 
@@ -68,7 +68,7 @@ Here are the anchor course's **four questions**, asked of Chile in advance. Ever
 
 | Question | Chile's answer (the short version) |
 | --- | --- |
-| **1 · Who is allowed to organise?** | Almost everyone, freely, since 1979, deliberately including *multiple competing unions inside one firm*. Freedom used as fragmentation. |
+| **1 · Who is allowed to organize?** | Almost everyone, freely, since 1979, deliberately including *multiple competing unions inside one firm*. Freedom used as fragmentation. |
 | **2 · Who is excluded?** | The subcontracted, above all, workers placed *outside* the bargaining unit by contracting structure (Section 5), plus the informal. |
 | **3 · Who bargains with whom, at what level?** | A union (or a non-union "negotiating group") with a single employer, at the **firm level only**. Sectoral bargaining is not part of the legal architecture. This is the design's heart. |
 | **4 · What happens to you if you try?** | Historically: replacement, until 2017, employers could replace strikers, and under the original 1979 rules a long strike could legally end your employment. Since Ley 20.940 (in force 2017), replacement is banned; the firm-level cage remains. |
@@ -92,9 +92,9 @@ Here are the anchor course's **four questions**, asked of Chile in advance. Ever
 
 **How many died is genuinely contested, and the dispute is itself worth teaching.** Contemporary official counts put the dead at around **126**, that figure comes from the Iquique hospital administrator's count, and a telegram sent to the president within hours claimed only 30 (Archivo Nacional de Chile; Memoria Chilena). Later estimates run far higher, and Chilean social memory, fixed by the *Cantata de Santa María de Iquique*, the 1969 composition by Luis Advis that most Chileans know by heart, says **3,600**. Historians generally treat the official count as too low and the Cantata's number as memory rather than measurement; the honest statement is that **hundreds died at minimum, the true toll is unknown, and the state counted its victims carelessly because it could** (Memoria Chilena, n.d.; on the competing counts, see the scholarship collected by Chile's Archivo Nacional). This course will not pick a number. It will teach you to notice when a number is contested and why.
 
-**Then the building.** Out of the nitrate era's mutual-aid societies and resistance societies grew federations, then national confederations. In **1953** the strands merged into the **CUT**, the *Central Única de Trabajadores*, a single national union center spanning blue-collar, white-collar, and public workers. Union membership climbed for two decades: by **1973**, Chile's union density reached roughly **34%**, the highest in its history, up from the mid-20s just a decade earlier (Fundación Sol, 2015; Memoria Chilena, n.d.). By the CUT's own account, at the time of the coup it represented on the order of **940,000 workers across some 6,700 unions** (CUT, n.d., the organisation's own history, cited as such).
+**Then the building.** Out of the nitrate era's mutual-aid societies and resistance societies grew federations, then national confederations. In **1953** the strands merged into the **CUT**, the *Central Única de Trabajadores*, a single national union center spanning blue-collar, white-collar, and public workers. Union membership climbed for two decades: by **1973**, Chile's union density reached roughly **34%**, the highest in its history, up from the mid-20s just a decade earlier (Fundación Sol, 2015; Memoria Chilena, n.d.). By the CUT's own account, at the time of the coup it represented on the order of **940,000 workers across some 6,700 unions** (CUT, n.d., the organization's own history, cited as such).
 
-**And labor stood near the center of national politics.** In 1970 Chileans elected the Socialist **Salvador Allende** president at the head of a left coalition in which the unions were a pillar; in 1971 Chile's Congress approved the nationalization of the copper industry, the country's economic crown. Whatever you think of that political project, and Chileans still argue about it, hard, the structural fact matters for this course: **by the early 1970s organised labor in Chile was strong, centralised, sectorally organised, and politically consequential.** Copper and nitrate had taught Chilean workers to bargain *as an industry*, and the CUT gave them one national voice.
+**And labor stood near the center of national politics.** In 1970 Chileans elected the Socialist **Salvador Allende** president at the head of a left coalition in which the unions were a pillar; in 1971 Chile's Congress approved the nationalization of the copper industry, the country's economic crown. Whatever you think of that political project, and Chileans still argue about it, hard, the structural fact matters for this course: **by the early 1970s organized labor in Chile was strong, centralised, sectorally organized, and politically consequential.** Copper and nitrate had taught Chilean workers to bargain *as an industry*, and the CUT gave them one national voice.
 
 That is what stood on 10 September 1973. Keep the shape of it in mind, centralised, industrial, political, because the 1979 design (Section 3) reads almost point-for-point as its negation.
 
@@ -211,7 +211,7 @@ That is what stood on 10 September 1973. Keep the shape of it in mind, centralis
               "A dynamite blast in the nearby nitrate works killed hundreds of the striking mine workers",
               "Troops under General Silva Renard opened fire on striking nitrate workers at the school",
               "The CUT national union confederation was founded there by the assembled nitrate strikers",
-              "Chile's first legally recognised collective wage agreement was signed at the school that day",
+              "Chile's first legally recognized collective wage agreement was signed at the school that day",
             ],
             correctIndex: 1,
             explanation:
@@ -273,7 +273,7 @@ That is what stood on 10 September 1973. Keep the shape of it in mind, centralis
           {
             prompt: "Which THREE properties of the pre-1973 movement does the course say the 1979 design reads as a negation of?",
             options: [
-              "That it was rural, only informally organised, and largely apolitical in its whole character",
+              "That it was rural, only informally organized, and largely apolitical in its whole character",
               "That it was centralised (one confederation), sectoral (copper as one), and politically strong",
               "That it was foreign-led, formally illegal under Chilean law, and reliant on armed violence",
               "That it was small, fragmented into firm-sized units, and locked tightly at the single firm",
@@ -293,7 +293,7 @@ That is what stood on 10 September 1973. Keep the shape of it in mind, centralis
             ],
             correctIndex: 1,
             explanation:
-              "Nitrate mining made Chile's export economy and its labor movement, brutal conditions, company scrip, and the organising they provoked.",
+              "Nitrate mining made Chile's export economy and its labor movement, brutal conditions, company scrip, and the organizing they provoked.",
             sourceLessonSlug: "chile-before-1973",
           },
           {
@@ -335,18 +335,18 @@ That is what stood on 10 September 1973. Keep the shape of it in mind, centralis
 
 What happened next to the labor movement was not a side effect of the coup. It was one of its objects.
 
-**The head was cut off within days.** By **Decree Law No. 12**, in September 1973, the junta cancelled the legal status of the **CUT**, the national union center you met in the last lesson, with its roughly 940,000 affiliated workers, outlawed it, and seized its assets (CUT, n.d.; Memoria Chilena, n.d.). Collective bargaining was suspended. Union elections were banned. Union meetings required permission and could be attended by police. Wages, which sectors like copper had negotiated, were now set by government decree. The labor relations system that had taken seventy years to build stopped existing in about two weeks, and for the next six years, Chile simply had **no functioning collective bargaining at all** (a vacuum that becomes important in the next lesson).
+**The head was cut off within days.** By **Decree Law No. 12**, in September 1973, the junta canceled the legal status of the **CUT**, the national union center you met in the last lesson, with its roughly 940,000 affiliated workers, outlawed it, and seized its assets (CUT, n.d.; Memoria Chilena, n.d.). Collective bargaining was suspended. Union elections were banned. Union meetings required permission and could be attended by police. Wages, which sectors like copper had negotiated, were now set by government decree. The labor relations system that had taken seventy years to build stopped existing in about two weeks, and for the next six years, Chile simply had **no functioning collective bargaining at all** (a vacuum that becomes important in the next lesson).
 
 **The people were next, and this must be said plainly.** Chile's National Commission on Truth and Reconciliation, the **Rettig Commission**, created after the return to democracy, and its successor body documented more than **3,000 people killed or disappeared** by agents of the dictatorship over its span (Comisión Nacional de Verdad y Reconciliación, 1991, and the follow-up Corporation's consolidated findings). Union officers, shop-floor delegates, and labor activists were heavily represented among the victims, especially in the first months: being a union leader in a mine, a factory, or a farm in late 1973 was, in itself, enough to put a person on a list. Two named cases stand for thousands. **Víctor Jara**, the singer-songwriter whose music was woven through the labor and student movements, was detained in the days after the coup, tortured, and killed in the Estadio Chile; Chilean courts convicted former officers for his murder decades later. And in **1982**, **Tucapel Jiménez**, president of the public employees' association **ANEF** and by then an open critic of the regime's labor policy, was murdered by state intelligence agents, a crime for which Chilean courts, again decades later, convicted the men responsible.
 
 Two disciplines for reading this lesson, because this is the most painful material in the course:
 
 - **These are findings, not allegations.** The numbers above come from Chile's own official truth commissions, created by Chile's own democracy, and the named cases ended in criminal convictions in Chilean courts. This is about as far from contested history as the twentieth century gets. Chileans dispute much about the Allende years and the dictatorship's economics; the fact of the killings is documented by the Chilean state itself.
-- **Do not let the numbers do the flattening.** The dictatorship's repression fell on the whole society, not only on unionists, and the labor movement was not merely a victim organization; it later became one of the first forces to organise open resistance (the copper miners' confederation called the first mass national protest against the regime in **May 1983**, which grew into the protest cycle of the mid-1980s). Both halves are true and this course will hold both.
+- **Do not let the numbers do the flattening.** The dictatorship's repression fell on the whole society, not only on unionists, and the labor movement was not merely a victim organization; it later became one of the first forces to organize open resistance (the copper miners' confederation called the first mass national protest against the regime in **May 1983**, which grew into the protest cycle of the mid-1980s). Both halves are true and this course will hold both.
 
 Here is the point to carry into the next lesson. **By 1978, Chile's old labor system had been physically and legally annihilated, but nothing had been built in its place.** A dictatorship that presented itself abroad as modernizing could not indefinitely run a labor market with no labor law. Something would have to be written. The only question was what, and by whom.
 
-:::reveal What happened to the CUT after the coup, and what do Chile's own truth commissions document about the human toll of the dictatorship? ||| The junta cancelled the CUT's legal status by Decree Law No. 12 (September 1973), outlawed it and seized its assets; collective bargaining was suspended and union elections banned. The Rettig Commission (1991) and its successor documented more than 3,000 people killed or disappeared by the dictatorship, with union officers and labor activists heavily represented, especially in the first months, findings of the Chilean state itself, not allegations.
+:::reveal What happened to the CUT after the coup, and what do Chile's own truth commissions document about the human toll of the dictatorship? ||| The junta canceled the CUT's legal status by Decree Law No. 12 (September 1973), outlawed it and seized its assets; collective bargaining was suspended and union elections banned. The Rettig Commission (1991) and its successor documented more than 3,000 people killed or disappeared by the dictatorship, with union officers and labor activists heavily represented, especially in the first months, findings of the Chilean state itself, not allegations.
 
 ## Sources
 - Comisión Nacional de Verdad y Reconciliación. (1991). *Informe de la Comisión Nacional de Verdad y Reconciliación* [Rettig Report]. Gobierno de Chile. https://bibliotecadigital.indh.cl/handle/123456789/170
@@ -362,7 +362,7 @@ Here is the point to carry into the next lesson. **By 1978, Chile's old labor sy
         {
           prompt: "Why does the pre-1973 movement's SHAPE (not just its size) matter for reading the Plan Laboral?",
           answer:
-            "Because it was centralised (one national confederation), industrially organised (copper and nitrate bargained as sectors), and politically consequential (a pillar of Allende's coalition), and the 1979 design reads almost point-for-point as the negation of exactly those three properties.",
+            "Because it was centralised (one national confederation), industrially organized (copper and nitrate bargained as sectors), and politically consequential (a pillar of Allende's coalition), and the 1979 design reads almost point-for-point as the negation of exactly those three properties.",
         },
       ],
     },
@@ -376,7 +376,7 @@ Here is the point to carry into the next lesson. **By 1978, Chile's old labor sy
 
 **The response.** At the end of 1978, Pinochet appointed the young economist **José Piñera** Minister of Labor, with, as the scholarship on the episode puts it, the mission of stopping the boycott and building new labor institutions (Álvarez, 2012). Piñera moved fast. In mid-1979 the government issued the decree laws of the **Plan Laboral**; once the framework restoring legal union activity and collective bargaining was announced, **the AFL-CIO suspended the boycott**.
 
-Read that sequence carefully, because both of its halves matter and honest people emphasise different ones:
+Read that sequence carefully, because both of its halves matter and honest people emphasize different ones:
 
 - **Half one: international labor solidarity worked.** A dictatorship that had annihilated its labor movement was forced, by pressure from workers in *other countries*, to restore legal unions and legal bargaining. If the anchor course's ILO lesson left you bleak about international enforcement, here is a case where the informal kind, a boycott threat, moved a military government in months. File it next to the USMCA mechanism from the Mexico course as the track's rare good news about cross-border leverage.
 - **Half two: the regime turned compliance into architecture.** The junta did not concede the old system back. It used the moment to write a *new* one, a labor code that satisfied the formal demand ("unions and bargaining must be legal again") while deliberately engineering the result it wanted ("...and organised labor must never again be what it was in 1973"). The boycott forced *a* labor law into existence; the dictatorship decided *which* labor law.
@@ -393,7 +393,7 @@ One more piece of context you need before Section 3, because it is part of the h
         {
           prompt: "By what instrument and when was the CUT dissolved, and what else was shut down with it?",
           answer:
-            "Decree Law No. 12, September 1973, the junta cancelled the CUT's legal status, outlawed it, and seized its assets. Collective bargaining was suspended, union elections banned, meetings put under police supervision, and wages set by decree. Chile then had no functioning collective bargaining for six years.",
+            "Decree Law No. 12, September 1973, the junta canceled the CUT's legal status, outlawed it, and seized its assets. Collective bargaining was suspended, union elections banned, meetings put under police supervision, and wages set by decree. Chile then had no functioning collective bargaining for six years.",
         },
         {
           prompt: "Name the two documented cases the course uses to stand for the repression of labor figures, and why they are 'findings, not allegations.'",
@@ -427,7 +427,7 @@ One more piece of context you need before Section 3, because it is part of the h
             prompt: "By what instrument was the CUT dissolved?",
             options: [
               "A binding national plebiscite held under the terms of the earlier 1925 constitution",
-              "Decree Law No. 12 (September 1973), which cancelled its legal status and seized its assets",
+              "Decree Law No. 12 (September 1973), which canceled its legal status and seized its assets",
               "The 1979 Plan Laboral, whose Decree Law 2758 dissolved the national confederation",
               "A formal ruling by Chile's Supreme Court declaring the union confederation unlawful",
             ],
@@ -616,20 +616,20 @@ One more piece of context you need before Section 3, because it is part of the h
       section: "Section 3 · The Plan Laboral, 1979",
       body: `Now read the blueprint. The **Plan Laboral** arrived as a package of **eight decree laws**, one in 1978 and seven in July 1979 (Álvarez, 2012). Two of them carry the architecture, and they are worth knowing by number, the way an American student knows "Wagner" and "Taft-Hartley":
 
-- **Decree Law 2756 (1979)** — union organisations: who may form a union, of what kind, funded how.
+- **Decree Law 2756 (1979)** — union organizations: who may form a union, of what kind, funded how.
 - **Decree Law 2758 (1979)** — collective bargaining: who bargains with whom, over what, and what a strike is allowed to be.
 
 (The 1978 piece, **Decree Law 2200**, had already rewritten *individual* employment law, contracts and dismissal, in the direction of flexibility. Keep your eye on the two 1979 laws; they are the collective architecture.)
 
 **Design move 1: bargaining is locked to the single firm.** Under DL 2758, collective bargaining happens between **one employer** and a union **within that firm**. Industry-wide bargaining, copper as a sector, construction as a sector, the kind of bargaining that built the pre-1973 movement and that runs the Nordic model, was simply **not part of the legal machinery**: federations and confederations of unions were barred from bargaining on behalf of their members (Álvarez, 2012). Remember the anchor's Question 3, *who bargains with whom, at what level?* The Plan Laboral answers it with a wall: at the firm. Only at the firm.
 
-**Design move 2: pluralism as fragmentation.** DL 2756 permitted, this will sound generous until you think about it, **multiple competing unions inside a single firm**, with voluntary membership and funding only from voluntary dues. The same firm could face several unions, each bargaining separately, potentially producing **as many negotiations as there were unions in one workplace** (Álvarez, 2012). Where the Wagner Act model channels workers into one exclusive bargaining agent, and the Nordic model concentrates them into strong sector federations, the Chilean design *multiplies* worker organisations while *dividing* what each can do. More unions, less union.
+**Design move 2: pluralism as fragmentation.** DL 2756 permitted, this will sound generous until you think about it, **multiple competing unions inside a single firm**, with voluntary membership and funding only from voluntary dues. The same firm could face several unions, each bargaining separately, potentially producing **as many negotiations as there were unions in one workplace** (Álvarez, 2012). Where the Wagner Act model channels workers into one exclusive bargaining agent, and the Nordic model concentrates them into strong sector federations, the Chilean design *multiplies* worker organizations while *dividing* what each can do. More unions, less union.
 
 **Design move 3: the non-union competitor.** DL 2758 also allowed **"negotiating groups"** (*grupos negociadores*), ad hoc groups of workers, not unions at all, to bargain collectively with the employer. So even inside the firm, the union has a competitor the employer may prefer to deal with. Hold this one in your mind: it will still be alive in 2016, when a reform tries to kill it and Chile's Constitutional Court keeps it breathing (Section 4).
 
 **Design move 4: desynchronisation.** Bargaining timing was staggered firm by firm, so that negotiations across an industry never came due together (Álvarez, 2012). No common expiry, no common fight, a design detail that quietly forecloses even *informal* sectoral coordination.
 
-Step back and look at the whole. The scholarship summarises the Plan's declared pillars as: **bargaining at the firm level; strikes that do not paralyse; union "freedom" (pluralism); and union depoliticisation** (Álvarez, 2012). Every one of those pillars is the negation of a property the 1973 movement had. Centralised? Now atomised. Sectoral? Now firm-locked. Political? Now confined to "matters within the firm." That is what it means to say this system was *designed*: the correspondence is not a coincidence you infer, it is a specification you can read.
+Step back and look at the whole. The scholarship summarises the Plan's declared pillars as: **bargaining at the firm level; strikes that do not paralyze; union "freedom" (pluralism); and union depoliticisation** (Álvarez, 2012). Every one of those pillars is the negation of a property the 1973 movement had. Centralised? Now atomised. Sectoral? Now firm-locked. Political? Now confined to "matters within the firm." That is what it means to say this system was *designed*: the correspondence is not a coincidence you infer, it is a specification you can read.
 
 One fairness note before the strike lesson. **None of these moves reads as shocking to an American.** The United States also bargains firm by firm (mostly), also lacks sectoral bargaining, and also permits striker replacement (anchor course, PATCO lesson). Part of what the Plan Laboral did was import familiar decentralised, adversarial machinery. The difference, and Section 6 turns this into the course's final argument, is *provenance and purpose*: in Chile the machinery was chosen, all at once, by a dictatorship that had just physically destroyed the alternative, with the stated aim of preventing its return. Same furniture; very different architect.
 
@@ -648,15 +648,15 @@ One fairness note before the strike lesson. **None of these moves reads as shock
         {
           prompt: "State both halves of the boycott-to-Plan sequence that 'honest people emphasise differently.'",
           answer:
-            "Half one: international solidarity worked, foreign union pressure forced a dictatorship to restore legal unions and bargaining within months. Half two: the regime turned compliance into architecture, it wrote a new code that met the formal demand while engineering organised labor's permanent weakness. The boycott forced A labor law; the dictatorship chose WHICH one.",
+            "Half one: international solidarity worked, foreign union pressure forced a dictatorship to restore legal unions and bargaining within months. Half two: the regime turned compliance into architecture, it wrote a new code that met the formal demand while engineering organized labor's permanent weakness. The boycott forced A labor law; the dictatorship chose WHICH one.",
         },
       ],
     },
     {
       slug: "chile-strike-that-cannot-win",
-      title: "6 · The strike that must not paralyse",
+      title: "6 · The strike that must not paralyze",
       section: "Section 3 · The Plan Laboral, 1979",
-      body: `The anchor's Question 4, *what happens to you if you try?*, gets the Plan Laboral's most explicit engineering. The designers said it themselves, as a pillar: strikes should be legal, and strikes should **not paralyse** (Álvarez, 2012). Here is how DL 2758 built a strike that cannot win.
+      body: `The anchor's Question 4, *what happens to you if you try?*, gets the Plan Laboral's most explicit engineering. The designers said it themselves, as a pillar: strikes should be legal, and strikes should **not paralyze** (Álvarez, 2012). Here is how DL 2758 built a strike that cannot win.
 
 **Move 1: the struck firm keeps running.** DL 2758 expressly allowed the employer to **hire replacement workers during a strike** (Álvarez, 2012). A strike whose work is being done by someone else is a demonstration, not a stoppage. The economic clock that a strike is supposed to start, every day costs the employer output, barely ticks.
 
@@ -666,7 +666,7 @@ One fairness note before the strike lesson. **None of these moves reads as shock
 
 Put the three together and run the game out in your head. You strike; the firm hires replacements and production continues; you earn nothing; the firm may lock you out; and at day 59 the law converts your persistence into your resignation. **The rational move is almost never to strike, which was the design.** The strike is not banned (banning it was what the boycott was about); it is *permitted and defeated in advance*. This is a theme you have seen throughout the track: the sophisticated modern way to remove a right is not to prohibit it, but to keep it formally available while engineering its failure.
 
-**Now the American mirror, because you should feel this one land close to home.** The anchor course taught you *NLRB v. Mackay Radio* (1938): permanently replacing economic strikers has been lawful in the United States for most of a century, and after PATCO (1981) employers actually used it. So striker replacement is not some exotic dictatorship invention, **the world's oldest continuous democracy runs a version of the same rule.** What Chile shows you is the same mechanism with its intent printed on the label. In the US, replacement law *accreted*, a Supreme Court aside, decades of dormancy, a norm shift. In Chile, replacement was *drawn*, one clause in a coherent design whose author stated the goal: strikes that do not paralyse. Mechanically similar; forensically, night and day. And that is precisely why this course keeps insisting on provenance: **when you find a rule like this in any country's law, including yours, the question is not just "what does it do?" but "who put it there, and what did they want?"**
+**Now the American mirror, because you should feel this one land close to home.** The anchor course taught you *NLRB v. Mackay Radio* (1938): permanently replacing economic strikers has been lawful in the United States for most of a century, and after PATCO (1981) employers actually used it. So striker replacement is not some exotic dictatorship invention, **the world's oldest continuous democracy runs a version of the same rule.** What Chile shows you is the same mechanism with its intent printed on the label. In the US, replacement law *accreted*, a Supreme Court aside, decades of dormancy, a norm shift. In Chile, replacement was *drawn*, one clause in a coherent design whose author stated the goal: strikes that do not paralyze. Mechanically similar; forensically, night and day. And that is precisely why this course keeps insisting on provenance: **when you find a rule like this in any country's law, including yours, the question is not just "what does it do?" but "who put it there, and what did they want?"**
 
 *(Where did the rules go from here? The 59-day trapdoor did not survive democracy, and striker replacement itself was finally banned by Ley 20.940, in force April 2017, nearly forty years after it was drawn. Section 4 tells that story, including how much of the surrounding architecture the ban left standing.)*
 
@@ -680,12 +680,12 @@ Put the three together and run the game out in your head. You strike; the firm h
         {
           prompt: "Which two decree laws carry the Plan Laboral's collective architecture, and what does each govern?",
           answer:
-            "DL 2756 (1979) governs union organisations, union types, voluntary membership, multiple unions per firm, voluntary dues. DL 2758 (1979) governs collective bargaining, firm-level only, federations barred from bargaining, negotiating groups permitted, and the strike rules. (DL 2200 of 1978 had already flexibilised individual contracts.)",
+            "DL 2756 (1979) governs union organizations, union types, voluntary membership, multiple unions per firm, voluntary dues. DL 2758 (1979) governs collective bargaining, firm-level only, federations barred from bargaining, negotiating groups permitted, and the strike rules. (DL 2200 of 1978 had already flexibilised individual contracts.)",
         },
         {
           prompt: "Why does the course call the Plan's union pluralism 'fragmentation' rather than freedom?",
           answer:
-            "Because permitting multiple competing unions inside one firm, each bargaining separately, funded only by voluntary dues, with non-union negotiating groups as competitors, multiplies worker organisations while dividing their power: as many parallel negotiations as unions in a workplace. More unions, less union.",
+            "Because permitting multiple competing unions inside one firm, each bargaining separately, funded only by voluntary dues, with non-union negotiating groups as competitors, multiplies worker organizations while dividing their power: as many parallel negotiations as unions in a workplace. More unions, less union.",
         },
       ],
     },
@@ -708,7 +708,7 @@ That is a real case. It is made by serious people, it contains true statements, 
 
 **Against claim 2:** firm-level bargaining *as a choice available to workers* is one thing, as a **legal ceiling workers may not bargain past**, it is another. The Nordic exporters set the norm first because their unions *chose* that discipline and can revisit it; Chilean workers were *forbidden* the sectoral level outright. And the promised firm-level vitality did not arrive: the OECD's 2025 review describes Chilean bargaining as **atomised, fragmented, and uncoordinated**, with **coverage of 19.3% (2023)**, among the lowest in the OECD (average ~33.5%, 2023/24). Four and a half decades is a long time to wait for a design to start delivering its advertised benefits to the people it governs.
 
-**Against claim 3:** the depoliticisation was **asymmetric**. Unions were confined to the firm; employers and their associations remained free to organise nationally, fund politics, and shape legislation, and did. A rule that depoliticises one side of a power relationship does not produce apolitical outcomes; it produces the other side's politics.
+**Against claim 3:** the depoliticisation was **asymmetric**. Unions were confined to the firm; employers and their associations remained free to organize nationally, fund politics, and shape legislation, and did. A rule that depoliticises one side of a power relationship does not produce apolitical outcomes; it produces the other side's politics.
 
 **Against claim 4:** "social peace in the private sector," achieved 1979-1990, was peace under a dictatorship that had recently killed union leaders, suppression reads as peace in any ledger. And the growth argument faces an attribution problem its defenders rarely engage: Chile's post-1985 boom followed massive reforms across the whole economy plus a copper cycle; isolating the labor code's contribution is somewhere between hard and impossible, and the code's *measurable* legacy, density 16%, coverage 19.3% (2023, OECD/AIAS), is not a labor market working well for labor.
 
@@ -729,7 +729,7 @@ That is a real case. It is made by serious people, it contains true statements, 
         {
           prompt: "How does Chile's 1979 replacement rule compare with US law, and why does the course say the difference is 'provenance'?",
           answer:
-            "Mechanically they rhyme: NLRB v. Mackay Radio (1938) made permanent replacement of economic strikers lawful in the US, and post-PATCO employers used it. But the US rule accreted through doctrine and norm shifts; Chile's was drawn deliberately, one clause in a coherent design whose author stated the goal, strikes that do not paralyse. Same furniture, different architect, so always ask who put the rule there and why.",
+            "Mechanically they rhyme: NLRB v. Mackay Radio (1938) made permanent replacement of economic strikers lawful in the US, and post-PATCO employers used it. But the US rule accreted through doctrine and norm shifts; Chile's was drawn deliberately, one clause in a coherent design whose author stated the goal, strikes that do not paralyze. Same furniture, different architect, so always ask who put the rule there and why.",
         },
       ],
     },
@@ -744,7 +744,7 @@ That is a real case. It is made by serious people, it contains true statements, 
           {
             prompt: "Which two 1979 decree laws carry the Plan Laboral's collective architecture?",
             options: [
-              "DL 2756 (union organisations) and DL 2758 (collective bargaining)",
+              "DL 2756 (union organizations) and DL 2758 (collective bargaining)",
               "Decree Law No. 12 of 1973 and the individual-contract law DL 2200",
               "Ley 20.940 of 2016 and the subcontracting law, Ley 20.123 of 2006",
               "The US Wagner Act of 1935 and the Taft-Hartley Act passed in 1947",
@@ -770,7 +770,7 @@ That is a real case. It is made by serious people, it contains true statements, 
           {
             prompt: "How did the Plan Laboral use union PLURALISM?",
             options: [
-              "It flatly banned any single firm from having more than one recognised union at a time",
+              "It flatly banned any single firm from having more than one recognized union at a time",
               "It allowed multiple competing unions inside one firm, dividing the workers' bargaining power",
               "It required every union in the whole country to affiliate with one national confederation",
               "It made union membership legally compulsory for every worker employed at a given firm",
@@ -810,7 +810,7 @@ That is a real case. It is made by serious people, it contains true statements, 
             prompt: "What were the Plan Laboral's declared pillars, per the scholarship?",
             options: [
               "Sectoral bargaining, guaranteed strike pay, a single union monopoly, and political unions",
-              "Firm-level bargaining; strikes that don't paralyse; union pluralism; union depoliticisation",
+              "Firm-level bargaining; strikes that don't paralyze; union pluralism; union depoliticisation",
               "Nationalisation, wage indexation, central economic planning, and guaranteed full employment",
               "Co-determination, elected works councils, Ghent unemployment funds, and Nordic flexicurity",
             ],
@@ -829,7 +829,7 @@ That is a real case. It is made by serious people, it contains true statements, 
             ],
             correctIndex: 1,
             explanation:
-              "Replacement plus lockout meant the struck firm kept running while the strikers' costs mounted, a strike engineered not to paralyse.",
+              "Replacement plus lockout meant the struck firm kept running while the strikers' costs mounted, a strike engineered not to paralyze.",
             sourceLessonSlug: "chile-strike-that-cannot-win",
           },
           {
@@ -957,9 +957,9 @@ Because, this is the uncomfortable, load-bearing fact, **it largely couldn't, an
 
 **3. The governing coalition chose caution.** The center-left *Concertación* governed for twenty straight years (1990-2010), and its economic teams, governing in the shadow of both the dictatorship and hyperinflationary neighbors, prized stability, investment, and growth, and treated the flexible labor market as part of that machine. The Chile that entered the OECD in 2010 did so with the Plan Laboral's skeleton intact not only because the right defended it, but because much of the center had made its peace with it.
 
-**4. And the movement that might have forced the issue had been remade small.** This is the design closing its own loop. The labor movement that could have mobilised to demand structural reform was, by 1990, a movement organised in firm-sized fragments under exactly the rules that make mass sectoral mobilisation hardest. A system designed to atomise had, among its products, the weakness of the constituency for un-designing it. The CUT never regained anything near its pre-1973 weight (the numbers are in Section 5).
+**4. And the movement that might have forced the issue had been remade small.** This is the design closing its own loop. The labor movement that could have mobilised to demand structural reform was, by 1990, a movement organized in firm-sized fragments under exactly the rules that make mass sectoral mobilisation hardest. A system designed to atomise had, among its products, the weakness of the constituency for un-designing it. The CUT never regained anything near its pre-1973 weight (the numbers are in Section 5).
 
-**The habit to take from this lesson:** when you see an institution outlive the regime that created it, don't reach first for "consensus" or "inertia" as explanations. Ask **what was constitutionally locked, who benefited from the lock, and whether the people harmed by it retained the organised power to force it open.** In Chile, the answers were: a great deal; a coherent coalition; and (by design) no.
+**The habit to take from this lesson:** when you see an institution outlive the regime that created it, don't reach first for "consensus" or "inertia" as explanations. Ask **what was constitutionally locked, who benefited from the lock, and whether the people harmed by it retained the organized power to force it open.** In Chile, the answers were: a great deal; a coherent coalition; and (by design) no.
 
 :::reveal Give the four reasons the Plan Laboral's architecture survived the return to democracy in 1990. ||| (1) The 1980 Constitution locked the doors, designated senators and an engineered electoral system gave the right a Senate veto for the transition's first 15+ years; (2) the reforms that could pass (1990-91's Ley 19.069, then 2001) were real but marginal, the 59-day trapdoor died and strikes became indefinite, but replacement stayed lawful and bargaining stayed firm-locked; (3) the governing Concertación itself chose caution, treating the flexible labor market as part of the growth machine; (4) the movement that might have forced structural change had been remade small by the very rules it needed to change, the design closed its own loop.
 
@@ -977,7 +977,7 @@ Because, this is the uncomfortable, load-bearing fact, **it largely couldn't, an
         {
           prompt: "What is the asymmetry problem with the 'depoliticisation' claim?",
           answer:
-            "Only one side was depoliticised: unions were confined to firm-level economics while employers and their associations remained free to organise nationally, fund politics, and shape legislation. Depoliticising one side of a power relationship doesn't remove politics, it hands the politics to the other side.",
+            "Only one side was depoliticised: unions were confined to firm-level economics while employers and their associations remained free to organize nationally, fund politics, and shape legislation. Depoliticising one side of a power relationship doesn't remove politics, it hands the politics to the other side.",
         },
       ],
     },
@@ -989,7 +989,7 @@ Because, this is the uncomfortable, load-bearing fact, **it largely couldn't, an
 
 **What changed, and one change is genuinely big.**
 
-- **Striker replacement was banned.** The rule you have tracked since 1979, the employer keeps producing while you strike, was finally reversed: Ley 20.940 **prohibits replacing striking workers**, whether with external hires or by shuffling internal personnel, recognising what Chilean lawyers call the **"huelga efectiva"**, the effective strike (Dirección del Trabajo, n.d.). Thirty-eight years after DL 2758 drew the replacement clause, and 79 years after *Mackay Radio* blessed the American version, Chile deleted its copy. On the anchor's Question 4, this is the largest single improvement in the course.
+- **Striker replacement was banned.** The rule you have tracked since 1979, the employer keeps producing while you strike, was finally reversed: Ley 20.940 **prohibits replacing striking workers**, whether with external hires or by shuffling internal personnel, recognizing what Chilean lawyers call the **"huelga efectiva"**, the effective strike (Dirección del Trabajo, n.d.). Thirty-eight years after DL 2758 drew the replacement clause, and 79 years after *Mackay Radio* blessed the American version, Chile deleted its copy. On the anchor's Question 4, this is the largest single improvement in the course.
 - **Bargaining rights were extended and proceduralised**, expanded rights to information from the employer, a floor for negotiations (the expiring agreement as the baseline for a new one, in defined circumstances), mandatory mediation options, and rules requiring **union agreement before union-won benefits are extended to non-members**, ending the old practice of employers unilaterally handing the union's wins to everyone, which had made membership look pointless.
 
 **What didn't change, the architecture.**
@@ -1001,7 +1001,7 @@ Read the 2016 story at the altitude this course has been teaching. A center-left
 
 *(Since then, dated for the record: a 2023 law, Ley 21.561, published 26 April 2023, is phasing the standard workweek down from 45 to 40 hours by 2028. Real, and again: hours, not architecture.)*
 
-:::reveal What did Ley 20.940 (in force 1 April 2017) change, and in what two ways did the 1979 architecture survive it? ||| It banned striker replacement, external or internal, recognising the "effective strike," extended information/procedural rights, and required union agreement before union-won benefits go to non-members. But (1) bargaining stayed locked at the firm level, no sectoral bargaining was established, and the OECD in 2025 still calls the system fragmented and uncoordinated; and (2) the Constitutional Tribunal (9 May 2016, Rol 3016-16) struck down union titularity before the law took effect, keeping the 1979 non-union "negotiating groups" alive.
+:::reveal What did Ley 20.940 (in force 1 April 2017) change, and in what two ways did the 1979 architecture survive it? ||| It banned striker replacement, external or internal, recognizing the "effective strike," extended information/procedural rights, and required union agreement before union-won benefits go to non-members. But (1) bargaining stayed locked at the firm level, no sectoral bargaining was established, and the OECD in 2025 still calls the system fragmented and uncoordinated; and (2) the Constitutional Tribunal (9 May 2016, Rol 3016-16) struck down union titularity before the law took effect, keeping the 1979 non-union "negotiating groups" alive.
 
 ## Sources
 - Dirección del Trabajo (Chile). (n.d.). *Reforma al sistema de relaciones laborales: Ley 20.940*. https://www.dt.gob.cl/legislacion/1624/w3-propertyvalue-160691.html
@@ -1283,7 +1283,7 @@ Carry the fingerprint idea into the next lesson, because the design has one more
 
 **The mechanics.** A principal company (*empresa principal*), the mine, the supermarket chain, the forestry giant, contracts out chunks of its own operation to contractor firms. The workers dig the principal's copper, stock the principal's shelves, cut the principal's timber, but their **legal employer is the contractor**. Now run the Plan Laboral's rules over them. With whom may they bargain? *Their employer*, the contractor: a thin company that does not set the budget, does not own the mine, and can be swapped for another contractor at renewal time. The entity with the actual power over their conditions, the principal, is, legally, a stranger to them. **In a firm-level-only system, defining which firm employs you decides whether your bargaining rights mean anything.** Subcontracting turns Question 3 (*who bargains with whom?*) into a shell game.
 
-You have seen this move before, in country after country, and now it has a family name. **The put-them-outside move:** when beating organised workers inside the system is expensive, redefine the workers so the system no longer applies. The anchor taught it as the NLRA's farm-and-domestic carve-out and modern **misclassification** ("you're not an employee, you're an independent contractor"). Mexico did it with **protection contracts** (the union exists, it just isn't yours). Poland does it with **junk contracts** (a civil-law contract instead of an employment one). Across the Global South it appears as **informality**, no employer of record at all. Chile's version is distinctive because it interlocks with the 1979 architecture: *the narrower the legal bargaining unit, the more you can achieve by nudging workers just past its edge.* A design that confines power to the firm makes "which firm?" the whole fight.
+You have seen this move before, in country after country, and now it has a family name. **The put-them-outside move:** when beating organized workers inside the system is expensive, redefine the workers so the system no longer applies. The anchor taught it as the NLRA's farm-and-domestic carve-out and modern **misclassification** ("you're not an employee, you're an independent contractor"). Mexico did it with **protection contracts** (the union exists, it just isn't yours). Poland does it with **junk contracts** (a civil-law contract instead of an employment one). Across the Global South it appears as **informality**, no employer of record at all. Chile's version is distinctive because it interlocks with the 1979 architecture: *the narrower the legal bargaining unit, the more you can achieve by nudging workers just past its edge.* A design that confines power to the firm makes "which firm?" the whole fight.
 
 **Chile regulated it, after it had already reshaped the labor market.** **Ley 20.123** (published 14 October 2006, in force 14 January 2007) defined subcontracted work, regulated temporary-services firms, and made the principal company **jointly or subsidiarily liable** for contractors' labor and social-security obligations (Dirección del Trabajo, n.d.; BCN). Real protections, pay claims against a vanished contractor can now reach the principal. But note precisely what the law did *not* do: it did not give subcontracted workers bargaining rights **toward the principal**. The liability follows the money; the bargaining table does not.
 
@@ -1431,7 +1431,7 @@ You have seen this move before, in country after country, and now it has a famil
             ],
             correctIndex: 1,
             explanation:
-              "When beating organised workers inside the system is expensive, move them outside it. The family resemblance across the track now has a Chilean member.",
+              "When beating organized workers inside the system is expensive, move them outside it. The family resemblance across the track now has a Chilean member.",
             sourceLessonSlug: "chile-subcontratacion",
           },
           {
@@ -1537,15 +1537,15 @@ And the outcomes could not be further apart:
 
 **Same statutory surface. Opposite worlds. The difference is who made the statute silent, and why.**
 
-In **Sweden and Denmark**, the state is absent from the bargaining table because the organised parties **pushed it out and locked the door from the inside**. Saltsjöbaden (1938) and the September Compromise (1899) were treaties between two strong sides who preferred to govern the labor market themselves; sectoral bargaining exists not because law commands it but because ~two-thirds-density unions and near-universally organised employers *choose* it, enforce it with legal sympathy action, and renew it every bargaining round. The statute is silent the way a referee is silent at a chess match between grandmasters.
+In **Sweden and Denmark**, the state is absent from the bargaining table because the organized parties **pushed it out and locked the door from the inside**. Saltsjöbaden (1938) and the September Compromise (1899) were treaties between two strong sides who preferred to govern the labor market themselves; sectoral bargaining exists not because law commands it but because ~two-thirds-density unions and near-universally organized employers *choose* it, enforce it with legal sympathy action, and renew it every bargaining round. The statute is silent the way a referee is silent at a chess match between grandmasters.
 
 In **Chile**, the state is absent from the *sectoral* level because it **stood in the doorway and barred it**. DL 2758 did not neglect to provide industry bargaining, it locked bargaining to the firm, barred federations from the table, and (until 2017) armed employers with replacement. The statute is "silent" above the firm the way a wall is silent: it has nothing to say because it exists to stop movement. And the enforcement weapon that makes the Nordic contract-floor work, **sympathy action, spreading a dispute to pressure a hold-out from every side**, has no Chilean counterpart: Chile's lawful strike lives only *inside* a firm's own regulated bargaining round, precisely where the Nordic weapon lives *outside* it.
 
 Even the membership plumbing points opposite ways. The Nordics run **default-in**: the Ghent system bundles union membership with unemployment insurance, so joining is the path of least resistance. The Plan Laboral built **default-out**: voluntary dues, competing unions splitting the workplace, a non-union bargaining alternative, and, until 2017, employers extending union-won gains to non-members for free, making membership economically irrational on purpose.
 
-**Here is the methodological payload, and it is the most transferable sentence in the track:** *you cannot read a labor statute, anyone's, by its text alone.* Two systems with the same textual silence are opposites, because one silence was won by workers strong enough not to need the law, and the other was imposed to keep workers too weak to use it. To know which you are looking at, you must ask the historian's questions: who wrote this, against what background, over whose objection, and who has the organised power today. Text tells you the rules. Only provenance tells you the game.
+**Here is the methodological payload, and it is the most transferable sentence in the track:** *you cannot read a labor statute, anyone's, by its text alone.* Two systems with the same textual silence are opposites, because one silence was won by workers strong enough not to need the law, and the other was imposed to keep workers too weak to use it. To know which you are looking at, you must ask the historian's questions: who wrote this, against what background, over whose objection, and who has the organized power today. Text tells you the rules. Only provenance tells you the game.
 
-:::reveal Sweden/Denmark and Chile share the same statutory surface, no sectoral bargaining mandated, no extension mechanism, with opposite outcomes. State the opposite causes, precisely. ||| In Sweden and Denmark the statute is silent because strong organised parties pushed the state out by treaty (September Compromise 1899, Saltsjöbaden 1938) and built sectoral bargaining themselves, by contract, enforced with legal sympathy action, sustained by Ghent-driven ~two-thirds density. In Chile the statute confines because a dictatorship's designer locked bargaining to the firm (DL 2758), barred federations from the table, and built default-out membership plumbing. One silence was won by strength; the other was imposed to prevent it, text tells you the rules, provenance tells you the game.
+:::reveal Sweden/Denmark and Chile share the same statutory surface, no sectoral bargaining mandated, no extension mechanism, with opposite outcomes. State the opposite causes, precisely. ||| In Sweden and Denmark the statute is silent because strong organized parties pushed the state out by treaty (September Compromise 1899, Saltsjöbaden 1938) and built sectoral bargaining themselves, by contract, enforced with legal sympathy action, sustained by Ghent-driven ~two-thirds density. In Chile the statute confines because a dictatorship's designer locked bargaining to the firm (DL 2758), barred federations from the table, and built default-out membership plumbing. One silence was won by strength; the other was imposed to prevent it, text tells you the rules, provenance tells you the game.
 
 ## Sources
 - OECD. (2025). *Enhancing sectoral collective bargaining in Chile* (OECD Reviews of Labour Market and Social Policies). OECD Publishing. https://www.oecd.org/en/publications/enhancing-sectoral-collective-bargaining-in-chile_454f4167-en/
@@ -1612,25 +1612,25 @@ That durability, whatever one thinks of it, and Chileans think everything of it,
 
 **Chile, closed, the four questions, final answers:**
 
-1. **Who is allowed to organise?** Nearly everyone, freely, in as many competing unions per firm as workers care to form, a pluralism designed in 1979 to fragment, and still fragmenting: thousands of small unions, atomised bargaining (OECD, 2025).
+1. **Who is allowed to organize?** Nearly everyone, freely, in as many competing unions per firm as workers care to form, a pluralism designed in 1979 to fragment, and still fragmenting: thousands of small unions, atomised bargaining (OECD, 2025).
 2. **Who is excluded?** The subcontracted, whose lawful bargaining counterparty is a firm without power over them; the informal; and every worker whose employer's shape puts them past the edge of a firm-sized bargaining unit.
 3. **Who bargains with whom, at what level?** A union, or a non-union group the Constitutional Tribunal kept alive in 2016, with a single employer, at the firm, on staggered clocks. No sectoral table exists in law; the one approximation of it (Codelco, 2007) was built outside the law by the excluded.
 4. **What happens to you if you try?** Since April 2017: you may strike, and you may no longer be replaced, the design's sharpest tooth, drawn after 38 years. What remains is the cage the tooth defended: a strike confined to one firm's bargaining round, in a system where the firm may not be where power lives.
 
-**And the tool.** You have now read a labor system whose intent is printed on the label, named author, stated goals, measurable results. Here is why that was worth a whole course: **it calibrates you.** Every other system you will ever encounter, including the one you live under, presents itself as nobody's decision: accreted, natural, just-how-things-are. Chile teaches you what design *looks like* in the wild: rules that all lean the same direction; "freedoms" that fragment; procedures that desynchronise; penalties that make a right unusable without banning it; political locks that protect the whole arrangement from revision. Once you have seen those patterns where they were confessed, you can recognise them where they are denied.
+**And the tool.** You have now read a labor system whose intent is printed on the label, named author, stated goals, measurable results. Here is why that was worth a whole course: **it calibrates you.** Every other system you will ever encounter, including the one you live under, presents itself as nobody's decision: accreted, natural, just-how-things-are. Chile teaches you what design *looks like* in the wild: rules that all lean the same direction; "freedoms" that fragment; procedures that desynchronise; penalties that make a right unusable without banning it; political locks that protect the whole arrangement from revision. Once you have seen those patterns where they were confessed, you can recognize them where they are denied.
 
 So here is the assignment the entire track has been building to. **Go re-read your own country's labor law**, for most students on this platform, that means going back to the anchor course's American arc, and interrogate it like a Chilean statute:
 
 - Bargaining level: who fixed it there, and when, and against whose preference?
 - Striker replacement: *Mackay Radio* wrote Chile's rule into American law in 1938, and no Congress has deleted it. Chile deleted its copy in 2016. What does that comparison do to "just how things are"?
-- Exclusions: who is your system's subcontracted-Codelco-miner, formally free to organise, structurally unable to reach the party with power?
+- Exclusions: who is your system's subcontracted-Codelco-miner, formally free to organize, structurally unable to reach the party with power?
 - And the Chilean question, the one this course exists to install: **if this system had a named author, what would you say they wanted?**
 
-A labor system is an answer to the question "how much organised power should working people have?" Chile's was written by a man who answered *less*, said so, and built well. Whatever your country's answer is, someone gave it, in statutes, court rulings, and quiet structural choices, whether or not they signed their work the way José Piñera signed his. You now know how to find them. That is what this track was for.
+A labor system is an answer to the question "how much organized power should working people have?" Chile's was written by a man who answered *less*, said so, and built well. Whatever your country's answer is, someone gave it, in statutes, court rulings, and quiet structural choices, whether or not they signed their work the way José Piñera signed his. You now know how to find them. That is what this track was for.
 
 *(Where to from here: the anchor's closing lesson, "Apply the four questions," pairs with this one; "Know Your Rights at Work" covers what you can do on Monday. And this course's numbers will age, the OECD updates density and coverage regularly, Chilean politics is live, and the 40-hour phase-in completes in 2028. Re-check before you quote.)*
 
-:::reveal What does the course mean by saying Chile 'calibrates' you for reading every other labor system? ||| Chile is the system where design is confessed, named author, stated goals, measurable results, so it teaches you what engineered weakness looks like: rules leaning one direction, freedoms that fragment, desynchronised procedures, rights kept legal but unusable, political locks against revision. Systems that present themselves as nobody's decision ('just how things are') hide the same kinds of choices; having read one labeled example, you can now recognise the patterns unlabeled, starting with your own country's statute.
+:::reveal What does the course mean by saying Chile 'calibrates' you for reading every other labor system? ||| Chile is the system where design is confessed, named author, stated goals, measurable results, so it teaches you what engineered weakness looks like: rules leaning one direction, freedoms that fragment, desynchronised procedures, rights kept legal but unusable, political locks against revision. Systems that present themselves as nobody's decision ('just how things are') hide the same kinds of choices; having read one labeled example, you can now recognize the patterns unlabeled, starting with your own country's statute.
 
 ## Sources
 - OECD. (2025). *Enhancing sectoral collective bargaining in Chile* (OECD Reviews of Labour Market and Social Policies). OECD Publishing. https://www.oecd.org/en/publications/enhancing-sectoral-collective-bargaining-in-chile_454f4167-en/
@@ -1680,7 +1680,7 @@ A labor system is an answer to the question "how much organised power should wor
             ],
             correctIndex: 1,
             explanation:
-              "The referee's silence: two-thirds-density unions and organised employers govern the labor market themselves and renew that choice every round.",
+              "The referee's silence: two-thirds-density unions and organized employers govern the labor market themselves and renew that choice every round.",
             sourceLessonSlug: "chile-vs-nordics",
           },
           {
@@ -1719,7 +1719,7 @@ A labor system is an answer to the question "how much organised power should wor
             ],
             correctIndex: 1,
             explanation:
-              "Two identical silences can be opposites. Ask who wrote it, against what background, over whose objection, and who holds organised power now.",
+              "Two identical silences can be opposites. Ask who wrote it, against what background, over whose objection, and who holds organized power now.",
             sourceLessonSlug: "chile-vs-nordics",
           },
           {
@@ -1766,7 +1766,7 @@ A labor system is an answer to the question "how much organised power should wor
             options: [
               "The Constitutional Convention's draft constitution was, in the event, narrowly approved",
               "The Convention's draft was rejected 61.86% to 38.14%, with mandatory voting, record turnout",
-              "The scheduled constitutional plebiscite was, at the last minute, postponed and cancelled",
+              "The scheduled constitutional plebiscite was, at the last minute, postponed and canceled",
               "The dictatorship-era 1980 Constitution was itself abolished outright by the popular vote",
             ],
             correctIndex: 1,
@@ -1849,7 +1849,7 @@ A labor system is an answer to the question "how much organised power should wor
             ],
             correctIndex: 1,
             explanation:
-              "Every labor system answers 'how much organised power should working people have?', someone gave your country's answer, signed or unsigned. Now you know how to find them.",
+              "Every labor system answers 'how much organized power should working people have?', someone gave your country's answer, signed or unsigned. Now you know how to find them.",
             sourceLessonSlug: "chile-last-course-close",
           },
         ],
@@ -1901,7 +1901,7 @@ A labor system is an answer to the question "how much organised power should wor
             accept: ["20.940", "20940", "Ley 20.940", "ley 20940", "Law 20.940"],
             hint: "Published 8 September 2016.",
             explanation:
-              "Ley 20.940 recognised the 'huelga efectiva', no external or internal replacement, while leaving the firm-level architecture intact.",
+              "Ley 20.940 recognized the 'huelga efectiva', no external or internal replacement, while leaving the firm-level architecture intact.",
           },
           {
             prompt: "Which body struck down union titularity on 9 May 2016, keeping non-union 'negotiating groups' alive?",

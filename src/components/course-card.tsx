@@ -1,8 +1,10 @@
 import Link from "next/link";
 import type { Course } from "@/db/schema";
 import { formatCourseCode } from "@/lib/series-code";
+import type { PriceView } from "@/lib/sale-pricing";
 import { isVettingLocked } from "@/lib/vetting";
 import { ComingSoonBadge } from "./coming-soon-course";
+import { PriceTag } from "./price-tag";
 import { ProgressBar } from "./progress-bits";
 
 // Catalog / profile / my-courses card. Pass `progress` (0–100) for an enrolled
@@ -16,10 +18,17 @@ export function CourseCard({
   course,
   progress,
   href,
+  price,
 }: {
   course: Course;
   progress?: number;
   href?: string;
+  /**
+   * Resolved price for this course, from coursePriceView() with the tenant's ACTIVE promotions.
+   * Omitted (a surface that has not loaded promotions) falls back to the list price, which is the
+   * safe direction: the card can under-promise, never over-promise.
+   */
+  price?: PriceView;
 }) {
   const meta = [course.seriesTitle, course.seasonNumber ? `Season ${course.seasonNumber}` : null]
     .filter(Boolean)
@@ -77,6 +86,10 @@ export function CourseCard({
           </div>
         ) : isVettingLocked(course) ? (
           <ComingSoonBadge />
+        ) : price ? (
+          <p className="text-xs font-medium">
+            <PriceTag view={price} />
+          </p>
         ) : (
           <p className="text-xs font-medium" style={{ color: "var(--accent)" }}>
             {isFree ? "Free" : `$${course.price}`}

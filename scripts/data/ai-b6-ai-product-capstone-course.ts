@@ -570,7 +570,7 @@ Do the writing offline, then run the confirmation drill below, and finish with t
           {
             prompt: "Why pin the model version and prompt as versioned config before you ship?",
             options: [
-              "It makes the model's behaviour fully deterministic",
+              "It makes the model's behavior fully deterministic",
               "So you can re-run evals before adopting a provider's update",
               "It lowers the per-token price you are charged",
               "It removes any need to build a kill switch at all",

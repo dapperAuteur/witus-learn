@@ -1488,7 +1488,7 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "Why does this course publish a virtual_tour lesson before the tour URL exists?",
             options: [
-              "Because the planned 360 tour was formally cancelled and so it will now simply never be captured or published",
+              "Because the planned 360 tour was formally canceled and so it will now simply never be captured or published",
               "Because the course platform strictly requires an empty placeholder lesson to sit in every content section",
               "Because the tour is entirely optional and, by firm editorial policy, is never actually going to be added",
               "Beat 4 is a drop-in: the course is complete with its other beats; the body is the brief until the tour lands",

@@ -44,7 +44,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const DC_BERMAN_COURSE: AuthoredCourse = {
   title: "Washington, DC: Where the Instrument Was Blessed",
   description:
-    "A cited, high-school-and-up site course on Southwest Washington, DC, and Berman v. Parker (1954), the Supreme Court decision that made clearing land as \"blighted\" constitutionally safe across the whole country. The pilot course in this series found that a blight designation and land assembly, not the highway, actually cleared Indiana Avenue in Indianapolis. This is the course where that tool was authorised. Its prerequisites, The Green Book: How to Read a Route and Indiana Avenue: A District and What Replaced It, teach a method and apply it to one corridor; this course reads the opinion that licensed the method, quotes its operative language accurately, and is honest about what it did and did not hold, including that the plaintiff was a department store owner rather than a displaced resident. You will walk Southwest DC before clearance and read the surveys the Court relied on, see the modernist superblocks that replaced a working neighbourhood, learn the instruments beat by beat, trace the holding forward to Kelo and back to Indiana Avenue while testing that link against a chronology, meet the freeway revolt that is one of the few victories in this series, learn why the people whose homes were cleared could not vote for the Congress that governed them, look up a real DC parcel, and write grounded nonfiction about one block. A 360 tour of the waterfront is planned and will be added to the Now section when it is captured.",
+    "A cited, high-school-and-up site course on Southwest Washington, DC, and Berman v. Parker (1954), the Supreme Court decision that made clearing land as \"blighted\" constitutionally safe across the whole country. The pilot course in this series found that a blight designation and land assembly, not the highway, actually cleared Indiana Avenue in Indianapolis. This is the course where that tool was authorised. Its prerequisites, The Green Book: How to Read a Route and Indiana Avenue: A District and What Replaced It, teach a method and apply it to one corridor; this course reads the opinion that licensed the method, quotes its operative language accurately, and is honest about what it did and did not hold, including that the plaintiff was a department store owner rather than a displaced resident. You will walk Southwest DC before clearance and read the surveys the Court relied on, see the modernist superblocks that replaced a working neighborhood, learn the instruments beat by beat, trace the holding forward to Kelo and back to Indiana Avenue while testing that link against a chronology, meet the freeway revolt that is one of the few victories in this series, learn why the people whose homes were cleared could not vote for the Congress that governed them, look up a real DC parcel, and write grounded nonfiction about one block. A 360 tour of the waterfront is planned and will be added to the Now section when it is captured.",
   lessons: [
     // ═══════════════════════════════════════════════════════════════════════════════════════
     // SECTION 1 · Then  (beat 1: US and state/local history)
@@ -55,13 +55,13 @@ export const DC_BERMAN_COURSE: AuthoredCourse = {
       section: "Section 1 · Then",
       body: `**Start with the two prerequisites.** This course assumes you have finished *The Green Book: How to Read a Route*, which taught a method, and *Indiana Avenue: A District and What Replaced It*, which applied that method to one corridor and found something specific. On Indiana Avenue the popular story blamed the interstate, but the verifiable record showed the buildings went to a **blight designation** and to land assembly, not to the highway. **This course is where that blight tool was made constitutionally safe for the entire country.** The place is Southwest Washington, and the document is *Berman v. Parker*, decided in 1954.
 
-**The place.** Southwest is the smallest of Washington's four quadrants, a low, flat wedge of land between the U.S. Capitol and the confluence of the Potomac and the Anacostia rivers. It began as a working river port and grew into a densely built, mixed neighbourhood of row houses and alley dwellings. By the middle of the twentieth century it was one of the most crowded parts of the city and one of the poorest, and it was **majority Black: 69 percent of Southwest's residents were African American in 1950** (WTTW, n.d.).
+**The place.** Southwest is the smallest of Washington's four quadrants, a low, flat wedge of land between the U.S. Capitol and the confluence of the Potomac and the Anacostia rivers. It began as a working river port and grew into a densely built, mixed neighborhood of row houses and alley dwellings. By the middle of the twentieth century it was one of the most crowded parts of the city and one of the poorest, and it was **majority Black: 69 percent of Southwest's residents were African American in 1950** (WTTW, n.d.).
 
 **Who lived there, precisely.** Not one community but several sharing a few hundred acres. African American families, many descended from people who had come to the capital during and after slavery; Jewish and other immigrant merchants along the commercial streets; and a working-class population that historian and travel writer alike described as poor but rooted. **The writer James Baldwin later gave the national name for what happened to places like it, calling urban renewal "Negro removal"** (WTTW, n.d.). Hold that phrase for Section 3, where you will see the legal machinery that produced it.
 
-**What it held.** A functioning neighbourhood: churches, corner groceries, taverns, fraternal halls, a fish market on the Maine Avenue waterfront that predates the clearance and still operates, and the row-house streets and named alley communities where people actually lived. It was not a monument district. **It was a place where roughly 23,000 people lived their whole lives**, which is exactly why beat 1 asks you to establish what was there before anyone called it a problem (Boundary Stones, 2022).
+**What it held.** A functioning neighborhood: churches, corner groceries, taverns, fraternal halls, a fish market on the Maine Avenue waterfront that predates the clearance and still operates, and the row-house streets and named alley communities where people actually lived. It was not a monument district. **It was a place where roughly 23,000 people lived their whole lives**, which is exactly why beat 1 asks you to establish what was there before anyone called it a problem (Boundary Stones, 2022).
 
-**A warning about the word you are about to meet.** In Section 3 the government's own documents call this neighbourhood **blighted** and **substandard**, and they back the words with a housing survey. Those surveys are real and the conditions they measured were real: crowding, outside toilets, houses without baths. **But a measured condition is not the same as a verdict about the people who lived in it**, and the reformers who photographed Southwest's alleys had been calling them a threat for fifty years before the bulldozers arrived. Read the surveys as evidence, and read the language around the surveys as an argument.
+**A warning about the word you are about to meet.** In Section 3 the government's own documents call this neighborhood **blighted** and **substandard**, and they back the words with a housing survey. Those surveys are real and the conditions they measured were real: crowding, outside toilets, houses without baths. **But a measured condition is not the same as a verdict about the people who lived in it**, and the reformers who photographed Southwest's alleys had been calling them a threat for fifty years before the bulldozers arrived. Read the surveys as evidence, and read the language around the surveys as an argument.
 
 **A warning about tone, which is a research instruction and not a courtesy.** The residents of Southwest have living descendants, and a 1966 study you will meet in lesson 3 followed the scattered families by name. Do not write about Southwest as a vanished golden age, and do not write about it as a slum that deserved what it got. **Write about what people built, name it where the record names it, and keep every framing choice checkable against a source**, which is the standard the first two courses set and the one this course holds.
 
@@ -74,21 +74,21 @@ export const DC_BERMAN_COURSE: AuthoredCourse = {
       slug: "dc-the-surveys",
       title: "2 · What the surveys said, and how to read one",
       section: "Section 1 · Then",
-      body: `Before a government clears a neighbourhood it measures it, and the measurement becomes the justification. **This lesson reads the measurement the way the method course taught you to read a Green Book listing: for what it counts, what it leaves out, and what its silences mean.**
+      body: `Before a government clears a neighborhood it measures it, and the measurement becomes the justification. **This lesson reads the measurement the way the method course taught you to read a Green Book listing: for what it counts, what it leaves out, and what its silences mean.**
 
 **The alley-dwelling tradition.** Washington had a distinctive housing form, the **alley dwelling**: small houses built in the interiors of city blocks, behind the street-facing row houses, reached through narrow passages. Many were occupied by African American families and, earlier, by immigrants. For half a century, reformers, from the Progressive Era housing surveys through the federally chartered Alley Dwelling Authority of the 1930s, had defined the alleys as unhealthy and dangerous. **The reform tradition and the clearance tradition are the same tradition at two dates**, and Southwest is where it reached its conclusion (AAG, n.d.; WTTW, n.d.).
 
-**The conditions were real.** In the early twentieth century Southwest was a densely populated working-class neighbourhood lined with alley dwellings **where half the houses lacked indoor plumbing** (WTTW, n.d.). That is a genuine deprivation and this course does not minimise it. The families who lived without a private toilet or a bath were not living in a myth.
+**The conditions were real.** In the early twentieth century Southwest was a densely populated working-class neighborhood lined with alley dwellings **where half the houses lacked indoor plumbing** (WTTW, n.d.). That is a genuine deprivation and this course does not minimize it. The families who lived without a private toilet or a bath were not living in a myth.
 
-**Now read the survey that the Supreme Court itself would recite.** When the clearance of Southwest was challenged, the opinion in *Berman v. Parker* set out the physical findings for the area, and the numbers are worth reading exactly because a court treated them as the fact base for demolishing a neighbourhood. The opinion reports that in the area **64.3 percent of the dwellings were beyond repair, 18.4 percent needed major repairs, and only 17.3 percent were satisfactory**; and that **57.8 percent had outside toilets, 60.3 percent had no baths, 29.3 percent lacked electricity, 82.2 percent had no wash basins or laundry tubs, and 83.8 percent lacked central heating** (Berman v. Parker, 1954).
+**Now read the survey that the Supreme Court itself would recite.** When the clearance of Southwest was challenged, the opinion in *Berman v. Parker* set out the physical findings for the area, and the numbers are worth reading exactly because a court treated them as the fact base for demolishing a neighborhood. The opinion reports that in the area **64.3 percent of the dwellings were beyond repair, 18.4 percent needed major repairs, and only 17.3 percent were satisfactory**; and that **57.8 percent had outside toilets, 60.3 percent had no baths, 29.3 percent lacked electricity, 82.2 percent had no wash basins or laundry tubs, and 83.8 percent lacked central heating** (Berman v. Parker, 1954).
 
 **Three things a careful reader does with that block of numbers.**
 
 **1. Notice what it measures, which is fabric.** Every figure is about the building: its roof, its plumbing, its wiring. **Not one figure is about the residents, the businesses, the churches, or whether the community worked.** A survey that counts only fabric can only ever recommend replacing fabric. This is the same limit you met in the Indiana Avenue course: a survey form measures buildings and needs other records for everything else.
 
-**2. Ask where the conditions came from.** A neighbourhood does not lack central heating and indoor plumbing by accident. It lacks them after decades in which owners did not invest, banks did not lend, and the city did not require or fund improvements, much of it along the colour line the first two courses documented. **The condition and its cause can be the same policy at two different dates**, and then the condition is used to justify clearing the people who suffered it. That circularity is the single most important idea in this course, and Section 3 names the instrument that runs on it.
+**2. Ask where the conditions came from.** A neighborhood does not lack central heating and indoor plumbing by accident. It lacks them after decades in which owners did not invest, banks did not lend, and the city did not require or fund improvements, much of it along the color line the first two courses documented. **The condition and its cause can be the same policy at two different dates**, and then the condition is used to justify clearing the people who suffered it. That circularity is the single most important idea in this course, and Section 3 names the instrument that runs on it.
 
-**3. Keep the survey and the verdict apart.** The survey says the buildings were in poor repair. It does not say the neighbourhood should be demolished and its people dispersed. **That second step is a decision, made by a body, under a statute, and it is the subject of Section 3.** The numbers do not make the decision. People make the decision and cite the numbers.
+**3. Keep the survey and the verdict apart.** The survey says the buildings were in poor repair. It does not say the neighborhood should be demolished and its people dispersed. **That second step is a decision, made by a body, under a statute, and it is the subject of Section 3.** The numbers do not make the decision. People make the decision and cite the numbers.
 
 **What the survey cannot tell you, and where to go instead.** It cannot tell you who owned the buildings, who the landlords were, how many residents were tenants versus owners, or where the people went. **For where they went, a real study exists**, and lesson 3 reads it.
 
@@ -99,7 +99,7 @@ export const DC_BERMAN_COURSE: AuthoredCourse = {
       recallContent: [
         {
           prompt: "Where is Southwest, geographically, and what was it originally?",
-          answer: "The smallest of Washington's four quadrants, a low flat wedge between the U.S. Capitol and the confluence of the Potomac and Anacostia rivers. It began as a working river port and grew into a dense mixed neighbourhood of row houses and alley dwellings.",
+          answer: "The smallest of Washington's four quadrants, a low flat wedge between the U.S. Capitol and the confluence of the Potomac and Anacostia rivers. It began as a working river port and grew into a dense mixed neighborhood of row houses and alley dwellings.",
         },
         {
           prompt: "What was the racial composition of Southwest in 1950, and roughly how many people lived there?",
@@ -123,7 +123,7 @@ export const DC_BERMAN_COURSE: AuthoredCourse = {
       slug: "dc-people-and-institutions",
       title: "3 · The community, and where it went",
       section: "Section 1 · Then",
-      body: `A neighbourhood is people and institutions, not a housing-condition table. This lesson records what Southwest held, and then reads the one study that followed the residents out.
+      body: `A neighborhood is people and institutions, not a housing-condition table. This lesson records what Southwest held, and then reads the one study that followed the residents out.
 
 **What was there.** A complete working community on a few hundred acres: churches and synagogues, corner stores and taverns, fraternal lodges, the Maine Avenue fish market on the waterfront, and the dense residential streets and named alley communities where families had lived for generations (Boundary Stones, 2022; WTTW, n.d.). The clearance that Section 2 measured would eventually level, by the most cited estimate, **99 percent of the buildings across about 560 acres, displacing roughly 23,000 residents and about 1,500 businesses** (Boundary Stones, 2022).
 
@@ -134,11 +134,11 @@ export const DC_BERMAN_COURSE: AuthoredCourse = {
 - **The community was scattered.** Thursz described residents dispersed "as leaves on a windy autumn day," not resettled together but broken apart across the city (Thursz, 1966, as described in Boundary Stones, 2022; The Southwester, 2024).
 - **Housing quality rose and household finances fell.** Many families did move into physically better housing, but **57 percent reported paying more for it than they had paid in Southwest**, with most of those paying at least 20 dollars more a month and some more than 40 (Thursz, 1966, as reported in The Southwester, 2024).
 - **Employment worsened.** The share of household heads not working **rose from 52 percent before displacement to 62 percent after**, in part because people now lived farther from where they worked (Thursz, 1966, as reported in The Southwester, 2024).
-- **Where they went mattered.** Displaced residents did not generally move to wealthy, well-served neighbourhoods; they moved to areas that would themselves face increasing segregation and disinvestment (The Southwester, 2024).
+- **Where they went mattered.** Displaced residents did not generally move to wealthy, well-served neighborhoods; they moved to areas that would themselves face increasing segregation and disinvestment (The Southwester, 2024).
 
-**Why this study is the honest heart of beat 1.** Urban renewal was sold as slum clearance for the benefit of slum residents. Thursz measured the residents afterward and found better plumbing bought at the price of higher rent, worse employment, and a shattered community. **That is not a golden-age lament and it is not a defence of the clearance; it is a measured outcome with an author and a date**, which is the only kind of claim this course lets you make.
+**Why this study is the honest heart of beat 1.** Urban renewal was sold as slum clearance for the benefit of slum residents. Thursz measured the residents afterward and found better plumbing bought at the price of higher rent, worse employment, and a shattered community. **That is not a golden-age lament and it is not a defense of the clearance; it is a measured outcome with an author and a date**, which is the only kind of claim this course lets you make.
 
-**Credit what was built, not only what was lost.** Southwest was a neighbourhood people made, with congregations, businesses, and civic life that predated the planners and, in the case of the fish market, outlived them. **A course that inventories only loss is an incomplete report**, and the assignment in Section 6 will hold you to crediting what people built here.
+**Credit what was built, not only what was lost.** Southwest was a neighborhood people made, with congregations, businesses, and civic life that predated the planners and, in the case of the fish market, outlived them. **A course that inventories only loss is an incomplete report**, and the assignment in Section 6 will hold you to crediting what people built here.
 
 ## Sources
 - Boundary Stones (WETA). (2022, July 21). *The cost of urban renewal in Southwest DC*. https://boundarystones.weta.org/2022/07/21/cost-urban-renewal-southwest-dc
@@ -160,17 +160,17 @@ export const DC_BERMAN_COURSE: AuthoredCourse = {
         },
         {
           prompt: "State the circularity at the centre of this course.",
-          answer: "A neighbourhood lacks plumbing and heating after decades of withheld investment, refused lending, and unenforced standards, much of it along the colour line. The condition is then used to justify clearing the people who suffered it. The condition and its cause are the same policy at two dates.",
+          answer: "A neighborhood lacks plumbing and heating after decades of withheld investment, refused lending, and unenforced standards, much of it along the color line. The condition is then used to justify clearing the people who suffered it. The condition and its cause are the same policy at two dates.",
         },
         {
           prompt: "Does a housing survey, by itself, decide that a neighbourhood should be demolished?",
-          answer: "No. The survey reports the condition of the buildings. Demolishing the neighbourhood and dispersing its people is a separate decision made by a body under a statute, which is the subject of Section 3. People make the decision and cite the numbers.",
+          answer: "No. The survey reports the condition of the buildings. Demolishing the neighborhood and dispersing its people is a separate decision made by a body under a statute, which is the subject of Section 3. People make the decision and cite the numbers.",
         },
       ],
     },
     {
       slug: "dc-quiz-then",
-      title: "4 · Quiz: the neighbourhood",
+      title: "4 · Quiz: the neighborhood",
       section: "Section 1 · Then",
       quiz: {
         passingScore: 70,
@@ -202,7 +202,7 @@ export const DC_BERMAN_COURSE: AuthoredCourse = {
             prompt: "The phrase \"Negro removal,\" applied to urban renewal, is associated with which writer?",
             options: ["Langston Hughes", "Ralph Ellison", "James Baldwin", "Zora Neale Hurston"],
             correctIndex: 2,
-            explanation: "James Baldwin gave the national name for what urban renewal did to Black neighbourhoods.",
+            explanation: "James Baldwin gave the national name for what urban renewal did to Black neighborhoods.",
             sourceLessonSlug: "dc-what-it-was",
           },
           {
@@ -229,7 +229,7 @@ export const DC_BERMAN_COURSE: AuthoredCourse = {
             options: [
               "The residents' incomes and how much rent each household paid",
               "The building fabric: its plumbing, wiring and state of repair",
-              "The rate of neighbourhood crime recorded by the police",
+              "The rate of neighborhood crime recorded by the police",
               "The number of local businesses and church congregations",
             ],
             correctIndex: 1,
@@ -335,7 +335,7 @@ export const DC_BERMAN_COURSE: AuthoredCourse = {
           {
             prompt: "Why does this course insist you credit what Southwest's residents built, not only what was lost?",
             options: [
-              "To make the neighbourhood's history read as cheerful and uplifting",
+              "To make the neighborhood's history read as cheerful and uplifting",
               "Because the cleared buildings were nationally famous landmarks",
               "Because a report of only loss is incomplete: the churches predated the planners",
               "Because the redevelopment planners themselves requested the credit be given",
@@ -352,7 +352,7 @@ export const DC_BERMAN_COURSE: AuthoredCourse = {
     // ═══════════════════════════════════════════════════════════════════════════════════════
     {
       slug: "dc-built-plan",
-      title: "5 · The plan that replaced a neighbourhood",
+      title: "5 · The plan that replaced a neighborhood",
       section: "Section 2 · Built",
       body: `Beat 2 asks why the new place looks the way it does. In Southwest the answer starts not with a building but with a **plan**, and with the fact that two very different plans competed to shape the same cleared ground.
 
@@ -362,13 +362,13 @@ export const DC_BERMAN_COURSE: AuthoredCourse = {
 - An early plan associated with the architect **Chloethiel Woodard Smith** proposed, in 1952, a scheme that treated the waterfront and the residential blocks with a designer's care (Docomomo US, n.d.).
 - A competing plan came in 1954 from the developer **William Zeckendorf** and his firm's architect **I. M. Pei**, which reorganised the area around large blocks, a central commercial spine, and a monumental plaza leading from the Mall to the water (Docomomo US, n.d.).
 
-The eventual redevelopment drew on both, and the built result is the physical argument of a whole era of American planning: **replace a fine-grained neighbourhood of small lots and many owners with a coarse-grained landscape of large blocks and few owners.** That is not a matter of taste. It is a matter of who can afford to build at that scale, which is a civics question wearing an architecture costume.
+The eventual redevelopment drew on both, and the built result is the physical argument of a whole era of American planning: **replace a fine-grained neighborhood of small lots and many owners with a coarse-grained landscape of large blocks and few owners.** That is not a matter of taste. It is a matter of who can afford to build at that scale, which is a civics question wearing an architecture costume.
 
 **The governing idea: the superblock.** The plans dissolved the old street grid into **superblocks**, large parcels in which through-traffic is pushed to the edges and the interior is given to buildings, parking, and landscaped courts. Smith's waterfront scheme, for example, divided the area south of M Street into east and west superblocks, reserved the riverbank for parks, and linked the district to the Mall (Docomomo US, n.d.; HillRag, 2017). **A superblock is a decision about the street, and the street is the most democratic thing a city owns**, because anyone may walk it. Replacing a public grid with private courts changes who controls the space between buildings.
 
-**Why this typology, and why then.** The postwar planning consensus held that the old neighbourhood was the disease and a cleared, rebuilt, rationally zoned district was the cure. **It was not enough, in that view, to repair bad buildings; the whole area had to be redesigned.** You will see the Supreme Court adopt exactly this reasoning, almost in these words, in lesson 9. Hold the thought: **the shape of these superblocks is the physical form of a legal holding you are about to read.**
+**Why this typology, and why then.** The postwar planning consensus held that the old neighborhood was the disease and a cleared, rebuilt, rationally zoned district was the cure. **It was not enough, in that view, to repair bad buildings; the whole area had to be redesigned.** You will see the Supreme Court adopt exactly this reasoning, almost in these words, in lesson 9. Hold the thought: **the shape of these superblocks is the physical form of a legal holding you are about to read.**
 
-**One caution before the next lesson.** It is tempting to judge the new Southwest as good or bad architecture and stop there. Resist that. **The question beat 2 actually asks is what a building type does**, not whether it is handsome. A superblock of towers set in landscaped courts can be genuinely well designed and still have replaced a neighbourhood whose residents were not asked whether they wanted to leave. Both of those are true, and lesson 6 holds them together.
+**One caution before the next lesson.** It is tempting to judge the new Southwest as good or bad architecture and stop there. Resist that. **The question beat 2 actually asks is what a building type does**, not whether it is handsome. A superblock of towers set in landscaped courts can be genuinely well designed and still have replaced a neighborhood whose residents were not asked whether they wanted to leave. Both of those are true, and lesson 6 holds them together.
 
 ## Sources
 - Docomomo US. (n.d.). *The Southwest urban renewal area in Washington, D.C.* https://docomomo-us.org/news/the-southwest-urban-renewal-area-in-washington-d-c
@@ -389,7 +389,7 @@ The eventual redevelopment drew on both, and the built result is the physical ar
         },
         {
           prompt: "Why is the Thursz study the honest heart of beat 1?",
-          answer: "Because renewal was sold as slum clearance for the benefit of slum residents, and Thursz measured the residents afterward: better plumbing bought at the price of higher rent, worse employment, and a scattered community. It is a measured outcome with an author and a date, not a lament or a defence.",
+          answer: "Because renewal was sold as slum clearance for the benefit of slum residents, and Thursz measured the residents afterward: better plumbing bought at the price of higher rent, worse employment, and a scattered community. It is a measured outcome with an author and a date, not a lament or a defense.",
         },
         {
           prompt: "What did Thursz say happened to the community as a whole?",
@@ -416,7 +416,7 @@ The eventual redevelopment drew on both, and the built result is the physical ar
 
 (Docomomo US, n.d.; HillRag, 2017.)
 
-**Two names to hold, because they recur.** **Chloethiel Woodard Smith** designed both Capitol Park and Harbour Square and was one of the most significant women in American modernist practice (The Cultural Landscape Foundation, n.d.). **I. M. Pei**, through the Zeckendorf plan, shaped the commercial and civic heart of the district. **A cleared neighbourhood became a portfolio for major architects.** That is a real cultural fact about Southwest, and it is also the reason the district is so often written about from the top down, as a design achievement, rather than from the ground up, as a removal.
+**Two names to hold, because they recur.** **Chloethiel Woodard Smith** designed both Capitol Park and Harbour Square and was one of the most significant women in American modernist practice (The Cultural Landscape Foundation, n.d.). **I. M. Pei**, through the Zeckendorf plan, shaped the commercial and civic heart of the district. **A cleared neighborhood became a portfolio for major architects.** That is a real cultural fact about Southwest, and it is also the reason the district is so often written about from the top down, as a design achievement, rather than from the ground up, as a removal.
 
 **The landscape is not decoration; it is the point.** In these superblocks the ground between the buildings, the lawns, the courts, the plantings by figures like Dan Kiley, does the work the street used to do. **The private landscaped court is what replaced the public alley and the public sidewalk**, and that substitution is the deepest thing beat 2 has to teach here: the new Southwest is beautiful in exactly the places the old Southwest was public.
 
@@ -445,7 +445,7 @@ The eventual redevelopment drew on both, and the built result is the physical ar
         },
         {
           prompt: "What postwar idea justified redesigning the whole area rather than repairing buildings, and where do you meet it again?",
-          answer: "The view that the old neighbourhood itself was the disease and only a cleared, rebuilt, rationally zoned district was the cure. The Supreme Court adopts almost the same reasoning in lesson 9.",
+          answer: "The view that the old neighborhood itself was the disease and only a cleared, rebuilt, rationally zoned district was the cure. The Supreme Court adopts almost the same reasoning in lesson 9.",
         },
       ],
     },
@@ -457,9 +457,9 @@ The eventual redevelopment drew on both, and the built result is the physical ar
 
 **The survivors, from the record.** When Harbour Square was built between 1964 and 1966, the design incorporated several eighteenth-century buildings rather than demolishing them: **Wheat Row**, four attached brick houses at 1315, 1317, 1319, and 1321 Fourth Street S.W., built about 1794 and believed to be the first row houses in Washington; and the **Lewis House** and **Barney House**. With their inclusion, Harbour Square became **Washington's earliest example of incorporating historic landmark buildings into a larger new development** (DC Historic Sites, n.d.; Wheat Row, n.d.). Nearby, the **Thomas Law House**, built between 1794 and 1796, was likewise among the very few buildings spared (Thomas Law House, n.d.).
 
-**Now read who built the survivors, because it is the sharp point of this lesson.** Wheat Row was put up around 1794 by the **Greenleaf Syndicate**, the land speculators, including Robert Morris, a financier of the American Revolution, who at one point owned a third of the saleable land in the new capital (Wheat Row, n.d.). These are **Federal-era houses of the founding gentry**. The Thomas Law House takes its name from a man who married a granddaughter of Martha Washington. **The buildings preserved out of a majority-Black working neighbourhood were the oldest and most genteel structures in it, the ones connected to the city's white founders**, and they were saved by being folded into a modernist superblock as objects of design.
+**Now read who built the survivors, because it is the sharp point of this lesson.** Wheat Row was put up around 1794 by the **Greenleaf Syndicate**, the land speculators, including Robert Morris, a financier of the American Revolution, who at one point owned a third of the saleable land in the new capital (Wheat Row, n.d.). These are **Federal-era houses of the founding gentry**. The Thomas Law House takes its name from a man who married a granddaughter of Martha Washington. **The buildings preserved out of a majority-Black working neighborhood were the oldest and most genteel structures in it, the ones connected to the city's white founders**, and they were saved by being folded into a modernist superblock as objects of design.
 
-**Compare that honestly with the Indiana Avenue course.** On Indiana Avenue the one structure that survived and was landmarked was the **Walker Building**, built by a Black-owned company, a monument to the community that made the district. In Southwest the structures that survived were **not** built by the displaced community; they predated it and belonged to the founders' era. **Both cities preserved something and cleared a living neighbourhood around it, but they preserved opposite things**, and the difference tells you that preservation saves what a given era decides is worth saving, which is itself a decision worth examining.
+**Compare that honestly with the Indiana Avenue course.** On Indiana Avenue the one structure that survived and was landmarked was the **Walker Building**, built by a Black-owned company, a monument to the community that made the district. In Southwest the structures that survived were **not** built by the displaced community; they predated it and belonged to the founders' era. **Both cities preserved something and cleared a living neighborhood around it, but they preserved opposite things**, and the difference tells you that preservation saves what a given era decides is worth saving, which is itself a decision worth examining.
 
 **What designation does, and what it does not.** As the Indiana Avenue course established, the levels of historic recognition are not equal in power.
 
@@ -468,7 +468,7 @@ The eventual redevelopment drew on both, and the built result is the physical ar
 | **National Register of Historic Places** | The Keeper of the National Register, on a nomination | Recognition; triggers federal review when federal money or a permit is involved; opens some tax credits | It does not stop a private owner from demolishing the building |
 | **DC historic landmark or district** | The DC Historic Preservation Review Board under DC law | This is the level that regulates: it reviews exterior changes and demolition through a permit process | Only as strong as the local law and the board enforcing it |
 
-**The timing rule, again.** The clearance of Southwest ran through the 1950s and 1960s. **The District's own historic-preservation law dates from 1978**, after the neighbourhood was gone. As in Indianapolis, **preservation arrived too late to protect what was cleared and in time only to protect what replaced it**, which is why several of the modernist superblocks now carry landmark status while the neighbourhood they replaced has none. That is not a coincidence. It is the ordinary sequence in American cities, and beat 3 is about the instruments that ran while preservation law did not yet exist.
+**The timing rule, again.** The clearance of Southwest ran through the 1950s and 1960s. **The District's own historic-preservation law dates from 1978**, after the neighborhood was gone. As in Indianapolis, **preservation arrived too late to protect what was cleared and in time only to protect what replaced it**, which is why several of the modernist superblocks now carry landmark status while the neighborhood they replaced has none. That is not a coincidence. It is the ordinary sequence in American cities, and beat 3 is about the instruments that ran while preservation law did not yet exist.
 
 ## Sources
 - DC Historic Sites (DC Preservation League). (n.d.). *Harbour Square*. https://historicsites.dcpreservation.org/items/show/731
@@ -532,7 +532,7 @@ The eventual redevelopment drew on both, and the built result is the physical ar
         },
         {
           prompt: "Who originally built Wheat Row, and why does that matter to this lesson?",
-          answer: "The Greenleaf Syndicate, land speculators including Robert Morris, around 1794. It matters because the buildings preserved from a majority-Black working neighbourhood were the oldest, most genteel structures, tied to the city's white founders, not anything the displaced community built.",
+          answer: "The Greenleaf Syndicate, land speculators including Robert Morris, around 1794. It matters because the buildings preserved from a majority-Black working neighborhood were the oldest, most genteel structures, tied to the city's white founders, not anything the displaced community built.",
         },
         {
           prompt: "How does what survived in Southwest differ from what survived on Indiana Avenue?",
@@ -544,7 +544,7 @@ The eventual redevelopment drew on both, and the built result is the physical ar
         },
         {
           prompt: "When did DC's historic-preservation law take effect relative to the clearance, and what follows?",
-          answer: "DC's preservation law dates from 1978, after Southwest was cleared. So preservation arrived too late to protect what was cleared and in time only to protect what replaced it, which is why the modernist superblocks can carry landmark status while the old neighbourhood has none.",
+          answer: "DC's preservation law dates from 1978, after Southwest was cleared. So preservation arrived too late to protect what was cleared and in time only to protect what replaced it, which is why the modernist superblocks can carry landmark status while the old neighborhood has none.",
         },
       ],
     },
@@ -568,9 +568,9 @@ The eventual redevelopment drew on both, and the built result is the physical ar
 1. **It did not hold that 712 Fourth Street was a slum.** It held that it did not need to be, so long as it sat inside an area designated for redevelopment as a whole.
 2. **It did not decide what anyone should be paid.** Compensation is a separate question, litigated case by case.
 3. **It did not rule on whether the plan was wise.** The Court expressly said, in the same opinion, that it does not sit to judge whether a particular project is desirable.
-4. **It was not brought by the people it most affected.** The 23,000 displaced residents of Southwest were not the plaintiffs. **The named party was a business, and the decision that authorised removing a neighbourhood turned on a store.**
+4. **It was not brought by the people it most affected.** The 23,000 displaced residents of Southwest were not the plaintiffs. **The named party was a business, and the decision that authorised removing a neighborhood turned on a store.**
 
-**What the beauty language really licensed.** The line about the capital being "beautiful as well as sanitary" is often quoted as an inspiring defence of civic design. Read in place, it does harder work: **it says a government may take your property because the area could look and function better, not only because your building is unsafe.** That is the doctrine that made "blight" elastic, and lesson 11 follows it forward to the day it reached ordinary, well-kept homes.
+**What the beauty language really licensed.** The line about the capital being "beautiful as well as sanitary" is often quoted as an inspiring defense of civic design. Read in place, it does harder work: **it says a government may take your property because the area could look and function better, not only because your building is unsafe.** That is the doctrine that made "blight" elastic, and lesson 11 follows it forward to the day it reached ordinary, well-kept homes.
 
 ## Sources
 - Berman v. Parker, 348 U.S. 26 (1954). https://www.law.cornell.edu/supremecourt/text/348/26
@@ -587,7 +587,7 @@ The eventual redevelopment drew on both, and the built result is the physical ar
         },
         {
           prompt: "Why was the statute passed by Congress rather than a city council?",
-          answer: "Because the District had no home rule: in 1945 Washington had no elected mayor or council, and Congress legislated for the city directly. The people of Southwest had no vote in the legislature that authorised clearing their neighbourhood.",
+          answer: "Because the District had no home rule: in 1945 Washington had no elected mayor or council, and Congress legislated for the city directly. The people of Southwest had no vote in the legislature that authorised clearing their neighborhood.",
         },
         {
           prompt: "When was Southwest's Area B plan approved, and what was its status among DC renewal areas?",
@@ -615,7 +615,7 @@ The eventual redevelopment drew on both, and the built result is the physical ar
 
 **3. It leaves a paper trail.** Offers, appraisals, condemnation filings, and settlements are court and agency records. **This is the most checkable instrument in the section**, which is why lesson 18 has you look up a real parcel.
 
-**The honest asymmetry, which Berman did not touch.** *Berman* resolved whether the taking was lawful. It said nothing about whether the compensation made anyone whole, and the Thursz study in lesson 3 is the answer it left blank: **owners were paid for buildings, but tenants, who were most of Southwest, owned no building to be paid for**, and the relocation they received did not preserve the community or hold their housing costs down. **A lawful taking with just compensation for the owner can still shatter a neighbourhood of renters**, and that gap between "the owner was paid" and "the residents were made whole" is where the human cost of this instrument actually sits.
+**The honest asymmetry, which Berman did not touch.** *Berman* resolved whether the taking was lawful. It said nothing about whether the compensation made anyone whole, and the Thursz study in lesson 3 is the answer it left blank: **owners were paid for buildings, but tenants, who were most of Southwest, owned no building to be paid for**, and the relocation they received did not preserve the community or hold their housing costs down. **A lawful taking with just compensation for the owner can still shatter a neighborhood of renters**, and that gap between "the owner was paid" and "the residents were made whole" is where the human cost of this instrument actually sits.
 
 **A note on comparison across time.** Relocation standards for federally funded projects were later raised by the **Uniform Relocation Assistance and Real Property Acquisition Policies Act of 1970**. Most of the Southwest clearance predates it. **When you compare a 1950s taking to a 1970s one, you are comparing two legal regimes**, and saying so is part of getting the history right, exactly as the Indiana Avenue course insisted.
 
@@ -649,14 +649,14 @@ The eventual redevelopment drew on both, and the built result is the physical ar
     },
     {
       slug: "dc-powers-travels",
-      title: "11 · How the holding travelled, and testing the link to Indiana Avenue",
+      title: "11 · How the holding traveled, and testing the link to Indiana Avenue",
       section: "Section 3 · Powers",
       body: `*Berman* was a District of Columbia case about one cleared quadrant. **Its importance is that it did not stay there.** This lesson follows the holding forward to other cities and then back to Indiana Avenue, and it applies the same test the pilot course used on its own argument: **line up the dates and see whether the proposed cause comes before its effect.**
 
 **Forward: three stops on the road from Berman.**
 - **Hawaii Housing Authority v. Midkiff, 467 U.S. 229 (1984).** A unanimous Court upheld Hawaii's law forcing large landowners to sell to their tenants, relying on *Berman* for the proposition that the public-use requirement is satisfied whenever the taking is "rationally related to a conceivable public purpose" (Kelo v. New London, 2005, discussing Midkiff and Berman).
-- **Poletown, 1981.** The Michigan Supreme Court let Detroit condemn an entire working neighbourhood for a General Motors plant, in the deferential spirit *Berman* had established. It was a state case, and Michigan later overruled it in 2004, but for two decades it was a model other cities studied.
-- **Kelo v. City of New London, 545 U.S. 469 (2005).** This is the destination. The Court, citing *Berman* and *Midkiff*, allowed New London to condemn **well-maintained, non-blighted homes** for a private economic-development plan. **The tool that started as slum clearance in Southwest had travelled all the way to taking sound houses for economic growth.** Justice O'Connor's dissent warned that under this logic "nothing is to prevent the State from replacing any Motel 6 with a Ritz-Carlton," and public backlash led many states to amend their eminent-domain laws (Kelo v. New London, 2005).
+- **Poletown, 1981.** The Michigan Supreme Court let Detroit condemn an entire working neighborhood for a General Motors plant, in the deferential spirit *Berman* had established. It was a state case, and Michigan later overruled it in 2004, but for two decades it was a model other cities studied.
+- **Kelo v. City of New London, 545 U.S. 469 (2005).** This is the destination. The Court, citing *Berman* and *Midkiff*, allowed New London to condemn **well-maintained, non-blighted homes** for a private economic-development plan. **The tool that started as slum clearance in Southwest had traveled all the way to taking sound houses for economic growth.** Justice O'Connor's dissent warned that under this logic "nothing is to prevent the State from replacing any Motel 6 with a Ritz-Carlton," and public backlash led many states to amend their eminent-domain laws (Kelo v. New London, 2005).
 
 **That is the honest measure of Berman's reach.** It did not merely bless one clearance. **It set the standard of deference that made "public use" almost impossible to lose on**, and fifty years later that standard reached ordinary homeowners in Connecticut.
 
@@ -677,7 +677,7 @@ The eventual redevelopment drew on both, and the built result is the physical ar
 
 **Where the claim holds, in its accurate form.** *Berman* resolved, for the whole country, the **constitutional** question that a challenger anywhere might have raised: does taking non-blighted property inside a designated area, and handing it to a private developer, violate the Fifth Amendment? After November 1954 the answer was settled: **no.** So the tool Indianapolis was already using could no longer be struck down on public-use grounds, in Indiana or anywhere else. **Berman did not start the machine. It guaranteed the machine could not be stopped by that particular argument.** That is a smaller claim than "Washington licensed Indiana Avenue," it is defensible, and it is the one this course makes.
 
-**The method, which outlasts every fact here.** Build the chronology before the argument. A weaker claim that survives a date check beats a stronger claim that fails one. And when your favourite thesis partly breaks, **report the break**: that is the finding, not a failure, and it is exactly what the Indiana Avenue course did to its own proposed spine.
+**The method, which outlasts every fact here.** Build the chronology before the argument. A weaker claim that survives a date check beats a stronger claim that fails one. And when your favorite thesis partly breaks, **report the break**: that is the finding, not a failure, and it is exactly what the Indiana Avenue course did to its own proposed spine.
 
 ## Sources
 - Berman v. Parker, 348 U.S. 26 (1954). https://www.law.cornell.edu/supremecourt/text/348/26
@@ -712,9 +712,9 @@ The eventual redevelopment drew on both, and the built result is the physical ar
       section: "Section 3 · Powers",
       body: `The fourth instrument is the one the Indiana Avenue course examined at length: the **alignment decision**, the choice of where to run an urban interstate. In Washington it produced both a clearance and, unusually for this series, a **victory**.
 
-**First, the clearance.** The Southwest renewal did not only build superblocks. It also built a **freeway**. The Southeast and Southwest Freeway was driven through the cleared quadrant, and it is counted among the outcomes of the Southwest project along with the relocation of Maine Avenue and the waterfront parks (Docomomo US, n.d.). **So in Southwest the highway and the renewal were the same operation.** The freeway that carries commuters over the old neighbourhood today is part of what replaced it. **Do not file DC under "the city that beat the highways" without this asterisk**: Southwest itself did not beat them.
+**First, the clearance.** The Southwest renewal did not only build superblocks. It also built a **freeway**. The Southeast and Southwest Freeway was driven through the cleared quadrant, and it is counted among the outcomes of the Southwest project along with the relocation of Maine Avenue and the waterfront parks (Docomomo US, n.d.). **So in Southwest the highway and the renewal were the same operation.** The freeway that carries commuters over the old neighborhood today is part of what replaced it. **Do not file DC under "the city that beat the highways" without this asterisk**: Southwest itself did not beat them.
 
-**Then, the plan for the rest of the city.** In the 1950s and 1960s planners proposed a complete freeway network threaded through the District, including the **North Central Freeway**, the **Northeast Freeway**, and the **Three Sisters Bridge** across the Potomac. As documented in the Indiana Avenue course through Deborah Archer's study, urban interstates were repeatedly routed through Black neighbourhoods, and these DC routes ran toward predominantly Black communities including Takoma and Brookland (Archer, 2020; Federal Highway Administration, n.d.).
+**Then, the plan for the rest of the city.** In the 1950s and 1960s planners proposed a complete freeway network threaded through the District, including the **North Central Freeway**, the **Northeast Freeway**, and the **Three Sisters Bridge** across the Potomac. As documented in the Indiana Avenue course through Deborah Archer's study, urban interstates were repeatedly routed through Black neighborhoods, and these DC routes ran toward predominantly Black communities including Takoma and Brookland (Archer, 2020; Federal Highway Administration, n.d.).
 
 **Then, the revolt, which is the rare win.** A grassroots coalition, the **Emergency Committee on the Transportation Crisis (ECTC)**, fought the freeways through the 1960s and early 1970s. **Reginald Booker** chaired it and **Sammie Abbott** served as its strategist and spokesman (Federal Highway Administration, n.d.; Boundary Stones, 2018). Abbott's poster gave the movement, and this whole series, its sharpest phrase: **"White men's roads through black men's homes"** (Archer, 2020; Boundary Stones, 2018). The coalition combined direct action, including a sit-in at the Three Sisters Bridge construction site, with lawsuits and studies, and it promoted rail transit as the alternative.
 
@@ -723,7 +723,7 @@ The eventual redevelopment drew on both, and the built result is the physical ar
 - The money and political energy shifted toward the **Metro** rail system, which the coalition had championed as the alternative.
 - The fight helped move national transportation policy away from an inflexible insistence on urban freeways (Federal Highway Administration, n.d.).
 
-**Now hold the victory honestly, because that is the discipline of this series.** The revolt saved Brookland, Takoma, Shaw, and other neighbourhoods from the roads that were still on the drawing board. **It did not save Southwest, because Southwest's freeway was built first, in the same operation that cleared the quadrant.** DC is genuinely a rare victory in this catalogue, alongside places like Chicano Park in San Diego, and the victory came for the neighbourhoods whose fight came late enough to win. **A win that arrives after your own block is gone is still a win for the next block, and both halves of that sentence are true.**
+**Now hold the victory honestly, because that is the discipline of this series.** The revolt saved Brookland, Takoma, Shaw, and other neighborhoods from the roads that were still on the drawing board. **It did not save Southwest, because Southwest's freeway was built first, in the same operation that cleared the quadrant.** DC is genuinely a rare victory in this catalog, alongside places like Chicano Park in San Diego, and the victory came for the neighborhoods whose fight came late enough to win. **A win that arrives after your own block is gone is still a win for the next block, and both halves of that sentence are true.**
 
 ## Sources
 - Archer, D. N. (2020). "White men's roads through Black men's homes": Advancing racial equity through highway reconstruction. *Vanderbilt Law Review, 73*(5). https://scholarship.law.vanderbilt.edu/vlr/vol73/iss5/1/
@@ -733,11 +733,11 @@ The eventual redevelopment drew on both, and the built result is the physical ar
       recallContent: [
         {
           prompt: "Name the three cases the Berman holding travelled through, and what each allowed.",
-          answer: "Midkiff (1984) upheld Hawaii forcing landowners to sell to tenants; Poletown (1981, Michigan) let Detroit condemn a neighbourhood for a GM plant; and Kelo (2005) allowed New London to take well-maintained, non-blighted homes for private economic development.",
+          answer: "Midkiff (1984) upheld Hawaii forcing landowners to sell to tenants; Poletown (1981, Michigan) let Detroit condemn a neighborhood for a GM plant; and Kelo (2005) allowed New London to take well-maintained, non-blighted homes for private economic development.",
         },
         {
           prompt: "What was the significance of Kelo relative to Berman's origin?",
-          answer: "The tool that began as slum clearance in Southwest had travelled to taking sound, non-blighted houses for economic growth. Kelo cited Berman and Midkiff, and O'Connor's dissent warned the logic could replace any modest use with a fancier one.",
+          answer: "The tool that began as slum clearance in Southwest had traveled to taking sound, non-blighted houses for economic growth. Kelo cited Berman and Midkiff, and O'Connor's dissent warned the logic could replace any modest use with a fancier one.",
         },
         {
           prompt: "Why does the simple claim that Berman caused Indiana Avenue's clearance fail?",
@@ -749,7 +749,7 @@ The eventual redevelopment drew on both, and the built result is the physical ar
         },
         {
           prompt: "What is the method lesson from testing this link?",
-          answer: "Build the chronology before the argument; a weaker claim that survives a date check beats a stronger one that fails it; and when a favourite thesis partly breaks, report the break, because that is the finding, not a failure.",
+          answer: "Build the chronology before the argument; a weaker claim that survives a date check beats a stronger one that fails it; and when a favorite thesis partly breaks, report the break, because that is the finding, not a failure.",
         },
       ],
     },
@@ -770,9 +770,9 @@ The eventual redevelopment drew on both, and the built result is the physical ar
 - **Congress kept the power to review and overturn the District's local laws**, and to intervene in its budget.
 - **District residents still have no voting representation in Congress.** Since 1971 they have had a single **nonvoting delegate** in the House (Congress.gov, n.d.).
 
-**Why this belongs in a course about a demolished neighbourhood.** Beat 5, next section, asks who governs this ground today, and the honest answer for Washington has a permanent asterisk that Indianapolis does not: **the ground is governed, in the last instance, by a Congress the governed cannot vote for.** The Zoning Commission you will meet in lesson 17 still, by law, seats federal members. **The instrument here is not a bulldozer. It is the franchise, or its absence**, and it is the deepest reason Southwest could be cleared so completely with so little a resident could do about it.
+**Why this belongs in a course about a demolished neighborhood.** Beat 5, next section, asks who governs this ground today, and the honest answer for Washington has a permanent asterisk that Indianapolis does not: **the ground is governed, in the last instance, by a Congress the governed cannot vote for.** The Zoning Commission you will meet in lesson 17 still, by law, seats federal members. **The instrument here is not a bulldozer. It is the franchise, or its absence**, and it is the deepest reason Southwest could be cleared so completely with so little a resident could do about it.
 
-**A caution about causation, kept in the spirit of lesson 11.** Do not overclaim. **Cities with full voting rights cleared Black neighbourhoods too**, as the Indiana Avenue course documented in a city whose residents could vote. The absence of the franchise did not, by itself, cause the Southwest clearance, and asserting that it did would be exactly the kind of tidy, unproven spine this series is built to resist. **What is true, and checkable, is narrower and still damning: the people of Southwest bore a clearance authorised by a legislature they had no vote in, and they had no ballot with which to answer it.** That is the claim the record supports.
+**A caution about causation, kept in the spirit of lesson 11.** Do not overclaim. **Cities with full voting rights cleared Black neighborhoods too**, as the Indiana Avenue course documented in a city whose residents could vote. The absence of the franchise did not, by itself, cause the Southwest clearance, and asserting that it did would be exactly the kind of tidy, unproven spine this series is built to resist. **What is true, and checkable, is narrower and still damning: the people of Southwest bore a clearance authorised by a legislature they had no vote in, and they had no ballot with which to answer it.** That is the claim the record supports.
 
 ## Sources
 - District of Columbia Home Rule Act, Pub. L. No. 93-198, 87 Stat. 774 (1973). https://dccouncil.gov/dc-home-rule/
@@ -839,9 +839,9 @@ The eventual redevelopment drew on both, and the built result is the physical ar
             prompt: "Why was the statute that cleared Southwest passed by Congress, not a city council?",
             options: [
               "Because the District had no home rule; Congress legislated for it directly",
-              "Because the redevelopment project crossed into neighbouring Maryland",
+              "Because the redevelopment project crossed into neighboring Maryland",
               "Because the elected city council studied the plan but refused to act",
-              "Because the President personally ordered the neighbourhood cleared",
+              "Because the President personally ordered the neighborhood cleared",
             ],
             correctIndex: 0,
             explanation: "Washington had no elected mayor or council in 1945, so the people of Southwest had no vote in the legislature that authorised the clearance.",
@@ -850,7 +850,7 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "Who was the plaintiff in Berman v. Parker?",
             options: [
-              "A family displaced from one of the neighbourhood's alley dwellings",
+              "A family displaced from one of the neighborhood's alley dwellings",
               "The Redevelopment Land Agency, the body that acquired the land",
               "A tenants' union representing the renters across Area B",
               "The owner of a department store at 712 Fourth Street S.W., not a dwelling",
@@ -924,7 +924,7 @@ The eventual redevelopment drew on both, and the built result is the physical ar
             options: [
               "Whether the taking of Southwest was lawful at all under the Fifth Amendment",
               "Whether compensation made residents whole, especially tenants who owned no building",
-              "Who designed the modernist superblocks that later replaced the neighbourhood",
+              "Who designed the modernist superblocks that later replaced the neighborhood",
               "When the Southeast-Southwest Freeway through the quadrant was finally opened",
             ],
             correctIndex: 1,
@@ -964,7 +964,7 @@ The eventual redevelopment drew on both, and the built result is the physical ar
               "Because the Metro rail system the coalition wanted was never built at all",
             ],
             correctIndex: 0,
-            explanation: "Southwest's freeway and its clearance were the same operation. The revolt saved other neighbourhoods, not Southwest.",
+            explanation: "Southwest's freeway and its clearance were the same operation. The revolt saved other neighborhoods, not Southwest.",
             sourceLessonSlug: "dc-powers-freeway-revolt",
           },
           {
@@ -988,7 +988,7 @@ The eventual redevelopment drew on both, and the built result is the physical ar
               "The clearance itself restored full voting rights to all of the District's residents",
             ],
             correctIndex: 2,
-            explanation: "Overclaiming that the lack of a vote caused the clearance would fail, since cities whose residents could vote cleared Black neighbourhoods too. The narrower claim is checkable and still damning.",
+            explanation: "Overclaiming that the lack of a vote caused the clearance would fail, since cities whose residents could vote cleared Black neighborhoods too. The narrower claim is checkable and still damning.",
             sourceLessonSlug: "dc-powers-home-rule",
           },
         ],
@@ -1016,23 +1016,23 @@ The eventual redevelopment drew on both, and the built result is the physical ar
 
 **1. Read the grain of the streets.** Section 2 taught the difference between a fine grain of small lots and many owners and a coarse grain of superblocks and few owners. **Look for the seam where one becomes the other.** In much of Southwest the through-streets give way to large blocks with buildings set back behind lawns and internal courts. **Every place the old grid does not continue is a place a superblock replaced it**, and that is a decision with a date.
 
-**2. Find the survivors, and notice they do not match.** Wheat Row and the Thomas Law House are Federal-era brick houses from the 1790s, folded into or standing beside modernist superblocks. **When you find them, ask the lesson 7 question out loud: why did these survive when a whole neighbourhood did not?** The answer is on the plaque and in the date, and it is not flattering to the idea that preservation saves what matters most.
+**2. Find the survivors, and notice they do not match.** Wheat Row and the Thomas Law House are Federal-era brick houses from the 1790s, folded into or standing beside modernist superblocks. **When you find them, ask the lesson 7 question out loud: why did these survive when a whole neighborhood did not?** The answer is on the plaque and in the date, and it is not flattering to the idea that preservation saves what matters most.
 
 **3. Look up, and look for the freeway.** The Southeast and Southwest Freeway runs through the quadrant. **Where the tour shows an overpass, an embankment, a wall, or a street that stops at the edge of the roadway, note it.** Lesson 12 established that in Southwest the highway was part of the clearance, not a separate later insult. A street that ends at the freeway is right-of-way, and right-of-way is on a map you can request.
 
 **4. Walk the water, and ask who it is for now.** The Southwest waterfront has been rebuilt again in this century as The Wharf, a large private development you will study in lesson 17. **Look at how you reach the water: through a public promenade, or between private buildings, or past a security desk.** The most important civic question about a waterfront is whether an ordinary person can stand at its edge without buying anything, and a tour can show you the answer.
 
-**5. Count the markers and read who wrote them.** Historical markers are a public record with an author, a date, and a sponsor. **Note the sponsor's name every time.** A marker tells you what a community and an agency agreed to say in public, in a particular year, about a neighbourhood most of whose residents were removed.
+**5. Count the markers and read who wrote them.** Historical markers are a public record with an author, a date, and a sponsor. **Note the sponsor's name every time.** A marker tells you what a community and an agency agreed to say in public, in a particular year, about a neighborhood most of whose residents were removed.
 
 **6. Look for what is being built right now.** Construction fencing, a zoning notice, a public-hearing sign, a leasing banner. **Every one of those is a live document with a case number**, and Section 5 teaches you how to look them up in the District's own records.
 
-**7. Look at who is on the street.** This is a working part of the city, with residents, workers, and visitors. **Describe them as they would describe themselves, or do not describe them.** A 360 tour is a photograph of strangers in a public place, and the ethics of writing about it are the ethics of writing about neighbours.
+**7. Look at who is on the street.** This is a working part of the city, with residents, workers, and visitors. **Describe them as they would describe themselves, or do not describe them.** A 360 tour is a photograph of strangers in a public place, and the ethics of writing about it are the ethics of writing about neighbors.
 
 ## What the tour cannot show you
 
 - **It cannot show you a date.** Every change you notice happened at a time, and the tour has no clock. Beat 3 gave you the dates; beat 5 gives you the record.
 - **It cannot show you an owner.** A building's occupant is not its owner, and neither is on the facade. The parcel record has it.
-- **It cannot show you the neighbourhood that was here.** You cannot photograph a demolished alley community. **Almost everything this course is about is, by definition, not in the tour**, which is the truest thing beat 4 can teach about a place cleared this completely.
+- **It cannot show you the neighborhood that was here.** You cannot photograph a demolished alley community. **Almost everything this course is about is, by definition, not in the tour**, which is the truest thing beat 4 can teach about a place cleared this completely.
 
 **Write down your five most confident observations before the tour arrives, based on this brief and on the map lesson that follows. Then check them.** Being wrong on the record about a place you had not yet seen is a better teacher than being right about one you had.
 
@@ -1069,11 +1069,11 @@ The eventual redevelopment drew on both, and the built result is the physical ar
 
 **That limitation is the most useful thing on this page.** The right map for a parcel question is not a world map. It is the District's own geographic information system and the Office of Tax and Revenue's real-property tools, which lesson 18 puts you to work in. **Choosing the right scale of map for your question is a research skill.**
 
-**So this map does the job it can do well.** It marks Southwest, and then it marks the places the *Berman* holding reached, because the argument of this course is that a single opinion decided in one small quadrant travelled across the country.
+**So this map does the job it can do well.** It marks Southwest, and then it marks the places the *Berman* holding reached, because the argument of this course is that a single opinion decided in one small quadrant traveled across the country.
 
 **Blue: Southwest Washington itself**, plotted at an approximate point on the cleared ground.
 
-**Amber: four places the instrument was used or authorised.** Indiana Avenue is the sibling course, where the blight tool did the work; New London and Detroit are where the *Berman* standard of deference travelled in *Kelo* and *Poletown*; Overtown is a clearance-and-highway district of the kind the Indiana Avenue map already taught you to read. **These are here to show that Southwest is not a local misfortune but the origin point of a national doctrine.**
+**Amber: four places the instrument was used or authorised.** Indiana Avenue is the sibling course, where the blight tool did the work; New London and Detroit are where the *Berman* standard of deference traveled in *Kelo* and *Poletown*; Overtown is a clearance-and-highway district of the kind the Indiana Avenue map already taught you to read. **These are here to show that Southwest is not a local misfortune but the origin point of a national doctrine.**
 
 **Green: two archives.** The federal record of *Berman*, the National Register, and the Historic American Buildings Survey documentation of Southwest all live in the federal collections in Washington; the District's own Redevelopment Land Agency photographs and the freeway-revolt records live in the DC Public Library's People's Archive. **Knowing where a record physically lives is part of knowing that it exists.**
 
@@ -1121,7 +1121,7 @@ The eventual redevelopment drew on both, and the built result is the physical ar
             title: "Poletown, Detroit, Michigan",
             color: "#b45309",
             description:
-              "In 1981 the Michigan Supreme Court let Detroit condemn an entire working neighbourhood for a General Motors plant, in the deferential spirit Berman had established. Michigan later overruled the decision in 2004, but for two decades it was a model other cities studied. A state application of the doctrine this course traces from Southwest.",
+              "In 1981 the Michigan Supreme Court let Detroit condemn an entire working neighborhood for a General Motors plant, in the deferential spirit Berman had established. Michigan later overruled the decision in 2004, but for two decades it was a model other cities studied. A state application of the doctrine this course traces from Southwest.",
           },
           {
             id: "dc-overtown",
@@ -1159,7 +1159,7 @@ The eventual redevelopment drew on both, and the built result is the physical ar
         },
         {
           prompt: "What do the amber markers on this map have in common?",
-          answer: "They are places the Berman holding reached: Indiana Avenue where the blight tool did the work, New London and Detroit where the deference standard travelled in Kelo and Poletown, and Overtown as part of the national clearance-and-highway pattern. Southwest is the origin point of a national doctrine.",
+          answer: "They are places the Berman holding reached: Indiana Avenue where the blight tool did the work, New London and Detroit where the deference standard traveled in Kelo and Poletown, and Overtown as part of the national clearance-and-highway pattern. Southwest is the origin point of a national doctrine.",
         },
         {
           prompt: "What do the two green markers represent, and why include them?",
@@ -1192,7 +1192,7 @@ The eventual redevelopment drew on both, and the built result is the physical ar
 
 **Question 3: what is actually happening on the ground.** The Southwest waterfront has been redeveloped again in this century as **The Wharf**, by the developer partnership **Hoffman-Madison Waterfront**, selected by the District in 2006. Its first phase opened in **October 2017** and its second phase in **October 2022** (Hoffman-Madison Waterfront, 2017; The Wharf, n.d.). **Notice the shape of the story: public land assembled by a redevelopment agency, conveyed to a private developer, rebuilt at large scale.** That is the *Berman* pattern from lesson 10 running again, in the same quadrant, seventy years later, this time for a waterfront of restaurants and hotels rather than modernist housing. **Whether that is renewal or displacement in a new key is exactly the kind of question beat 5 wants you to ask with the records open, not to answer from a slogan.**
 
-**Question 4: who decides, and where you stand.** For a Southwest parcel the bodies are the **Zoning Commission** (zoning and large planned-unit developments), the **Office of Planning** (the comprehensive plan and long-range planning), and, at the neighbourhood scale, the **Advisory Neighborhood Commission**. Southwest sits in **Ward 6**, and its ANC, **6D**, is made up of elected local commissioners whose single-member districts cover a few blocks each. **An ANC's recommendations are advisory, but agencies must give them great weight, and its meetings are the cheapest civic act there is**, which is where a resident's leverage is highest and the cost of showing up is lowest.
+**Question 4: who decides, and where you stand.** For a Southwest parcel the bodies are the **Zoning Commission** (zoning and large planned-unit developments), the **Office of Planning** (the comprehensive plan and long-range planning), and, at the neighborhood scale, the **Advisory Neighborhood Commission**. Southwest sits in **Ward 6**, and its ANC, **6D**, is made up of elected local commissioners whose single-member districts cover a few blocks each. **An ANC's recommendations are advisory, but agencies must give them great weight, and its meetings are the cheapest civic act there is**, which is where a resident's leverage is highest and the cost of showing up is lowest.
 
 **The honest limits of this lesson.** Plans are amended, developers change, and contracts are extended. **Every date and body above has a source and a date attached, and you should re-check all of them before you rely on any of them.** That instruction is not a disclaimer. It is the method, and in a city whose zoning still answers partly to Congress, it is also a reminder that "who governs this ground" has a longer answer here than almost anywhere else in the country.
 
@@ -1220,7 +1220,7 @@ The eventual redevelopment drew on both, and the built result is the physical ar
         },
         {
           prompt: "What is the honest, checkable claim about the franchise and the clearance, and what would be overclaiming?",
-          answer: "Checkable: the people of Southwest bore a clearance authorised by a legislature they had no vote in and had no ballot to answer it with. Overclaiming: that the lack of the franchise caused the clearance, since cities whose residents could vote cleared Black neighbourhoods too.",
+          answer: "Checkable: the people of Southwest bore a clearance authorised by a legislature they had no vote in and had no ballot to answer it with. Overclaiming: that the lack of the franchise caused the clearance, since cities whose residents could vote cleared Black neighborhoods too.",
         },
       ],
     },
@@ -1237,18 +1237,18 @@ The eventual redevelopment drew on both, and the built result is the physical ar
 
 **A DC-specific thing to learn first, because it is the local version of the Indiana Avenue "carry the city" trap.** The District does not identify a parcel by a single lot number. It uses **Square, Suffix, and Lot**, written **SSL**: the "Square" is the historic city block from the L'Enfant plan, and the "Lot" is the parcel within it. **A DC address without its SSL is only half-located**, exactly as a Green Book listing without its city was only half-located. Learn to read the SSL and you can find any parcel in the District.
 
-**Your target: Arena Stage, a public theatre in Southwest Washington.** It is a safe address to practise on: it is a public arts institution, its location is published by the organisation that occupies it, and you are not exposing anybody's home. **Do not guess its street number.** Part of the exercise is finding it.
+**Your target: Arena Stage, a public theatre in Southwest Washington.** It is a safe address to practice on: it is a public arts institution, its location is published by the organization that occupies it, and you are not exposing anybody's home. **Do not guess its street number.** Part of the exercise is finding it.
 
 **Work through these, then answer the questions below.**
 1. Find **Arena Stage in Southwest Washington** and read off its street address from the institution's own listing, then locate it in the District's real-property map.
 2. Read off the parcel's **Square, Suffix, and Lot (SSL)**. Write it down exactly.
-3. Open the property record and find the **owner of record**, the **assessed value**, and the **use code**. Compare the owner of record to the name of the organisation that operates the building. **They may not match, and if they do not, that is normal and it is a finding.**
+3. Open the property record and find the **owner of record**, the **assessed value**, and the **use code**. Compare the owner of record to the name of the organization that operates the building. **They may not match, and if they do not, that is normal and it is a finding.**
 4. Turn on administrative layers and note which **Ward**, which **Advisory Neighborhood Commission**, and which **ANC single-member district** the parcel sits in. **Section 3 explained why, in this city, the body above all of them still seats federal members.**
-5. Walk the map a block in each direction and count how many neighbouring parcels are **institutionally or federally owned**. Southwest holds a great deal of both.
+5. Walk the map a block in each direction and count how many neighboring parcels are **institutionally or federally owned**. Southwest holds a great deal of both.
 
 **The habits this builds, which transfer to any American jurisdiction.** Every jurisdiction has an assessor or a tax office and most have a GIS. **The names of the tools change and the four facts do not: the parcel identifier, the owner of record, the assessed value, and which overlapping jurisdictions the parcel sits in.** Learn to find those four and you can research any address in the country.
 
-**One rule you do not get to break.** **Do not run this drill on somebody's home and publish the result.** A parcel record is public, and a current occupant's name attached to their address in a piece of writing is a different thing from a public record sitting in a database. Practise on institutional, commercial, and public addresses. This is the same rule the method course applied to tourist homes and the Indiana Avenue course applied to residential parcels.
+**One rule you do not get to break.** **Do not run this drill on somebody's home and publish the result.** A parcel record is public, and a current occupant's name attached to their address in a piece of writing is a different thing from a public record sitting in a database. Practice on institutional, commercial, and public addresses. This is the same rule the method course applied to tourist homes and the Indiana Avenue course applied to residential parcels.
 
 ## Sources
 - DC Office of Tax and Revenue. (n.d.). *Real property tax database search*. https://otr.cfo.dc.gov/page/real-property-tax-database-search
@@ -1280,7 +1280,7 @@ The eventual redevelopment drew on both, and the built result is the physical ar
             prompt: "The public institution you practise on in this drill is ___ Stage, a theatre in Southwest.",
             answer: "Arena",
             accept: ["arena", "arena stage"],
-            explanation: "A public arts institution whose location is published by the organisation itself, so no one's home is exposed.",
+            explanation: "A public arts institution whose location is published by the organization itself, so no one's home is exposed.",
           },
           {
             prompt: "The plan a rezoning petition is judged against is the ___ Plan.",
@@ -1399,7 +1399,7 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "Which four facts should you pull for any parcel in any jurisdiction?",
             options: [
-              "The paint colour, the roof age, the total square footage, and the full street name",
+              "The paint color, the roof age, the total square footage, and the full street name",
               "The architect, the contractor, the original build cost, and the current tenant",
               "Only the zoning code and the current use that applies to the parcel",
               "The parcel identifier, the owner of record, the assessed value, and the jurisdictions",
@@ -1485,7 +1485,7 @@ The eventual redevelopment drew on both, and the built result is the physical ar
             options: [
               "A natural landscape feature of the old riverbank that predates the entire city grid",
               "A large federal park that stood on exactly this ground long before the clearance",
-              "A place where a superblock replaced the old fine-grained neighbourhood, a dated decision",
+              "A place where a superblock replaced the old fine-grained neighborhood, a dated decision",
               "Nothing checkable, since old street patterns leave behind no dated record",
             ],
             correctIndex: 2,
@@ -1508,7 +1508,7 @@ The eventual redevelopment drew on both, and the built result is the physical ar
             prompt: "Why does this course publish a virtual_tour lesson before the tour URL exists?",
             options: [
               "Because beat 4 is a drop-in: the course is complete without it, the body is the brief",
-              "Because the planned 360 tour of the Southwest waterfront was cancelled",
+              "Because the planned 360 tour of the Southwest waterfront was canceled",
               "Because the platform strictly requires a placeholder lesson to occupy this slot",
               "Because the planned 360 tour will never actually be added to this whole course",
             ],
@@ -1557,7 +1557,7 @@ The eventual redevelopment drew on both, and the built result is the physical ar
 Write **900 to 1,300 words** of creative nonfiction about **one block, one building, or one address** in or near Southwest Washington. Every factual sentence must be checkable against a source you name. **The form is literary; the standard of evidence is the one Section 3 used on a Supreme Court opinion.**
 
 ## Step 1 · Choose one address, and choose small
-Pick from the survivors in lesson 7 (Wheat Row, the Thomas Law House), from the *Berman* record (the department store at 712 Fourth Street S.W.), from the Southwest waterfront and The Wharf, or from a parcel you found in lesson 18. **Smaller is better.** "Southwest" is not a subject, it is a topic. **712 Fourth Street S.W., where a department store owner took the clearance of a neighbourhood to the Supreme Court and lost, is a subject.**
+Pick from the survivors in lesson 7 (Wheat Row, the Thomas Law House), from the *Berman* record (the department store at 712 Fourth Street S.W.), from the Southwest waterfront and The Wharf, or from a parcel you found in lesson 18. **Smaller is better.** "Southwest" is not a subject, it is a topic. **712 Fourth Street S.W., where a department store owner took the clearance of a neighborhood to the Supreme Court and lost, is a subject.**
 
 If you do not live in Washington and cannot visit, that is not a disqualification. **It is a constraint you disclose in the piece**, and it changes what you can honestly claim.
 
@@ -1575,7 +1575,7 @@ Pick one and commit, because mixing them is what makes place writing mushy.
 
 ## Step 4 · Write it, under these craft rules
 1. **Lead with a specific.** A street number, a percentage from the survey, a date on a document. Not a mood.
-2. **Name the instrument every time you name a loss.** "The neighbourhood was cleared" is weak. "The Redevelopment Land Agency acquired it under the 1945 Act, and Berman v. Parker held the taking lawful" is strong, if you can source it.
+2. **Name the instrument every time you name a loss.** "The neighborhood was cleared" is weak. "The Redevelopment Land Agency acquired it under the 1945 Act, and Berman v. Parker held the taking lawful" is strong, if you can source it.
 3. **Give a figure its owner.** Not "23,000 people were displaced" but "the local histories compiled by WETA's Boundary Stones put displacement from the Southwest renewal at about 23,000 residents."
 4. **Attribute an argument as an argument.** James Baldwin called urban renewal "Negro removal" (WTTW, n.d.). **You may quote and engage that. You may not launder it into your own narration as though it were a finding.** The distinction between a documented chronology and an interpretive frame is the most important thing in this section.
 5. **Quote the opinion exactly, or not at all.** If you use *Berman*, use its real words. Douglas wrote that public welfare is "broad and inclusive." **Do not improve the quotation, and do not attribute to the Court a holding it did not reach**, which lesson 9 spelled out.
@@ -1587,13 +1587,13 @@ Pick one and commit, because mixing them is what makes place writing mushy.
 2. **No composite or imagined characters.** Real, cited people only. The record gives you A'Lelia Walker's counterpart here in the founders whose houses survived, the department-store owner who sued, and the scattered families Daniel Thursz counted. **That is more than enough material.**
 3. **No invented dialogue**, including "he might have said."
 4. **Living communities describe themselves.** Southwest has residents and descendants now. Use the names and terms the people who live and work there use, and say where you got them.
-5. **No ruin porn, and no lost golden age.** A neighbourhood that lacked indoor plumbing was not a paradise, and its clearance was not a natural death or a simple rescue. **Both of those framings flatter the writer and cheat the subject.** The Thursz study is your guard against both.
-6. **Credit what was built.** The congregations, the businesses, the fish market that outlived the bulldozers, the freeway revolt that saved other neighbourhoods. **A piece that only inventories loss is an incomplete report.**
+5. **No ruin porn, and no lost golden age.** A neighborhood that lacked indoor plumbing was not a paradise, and its clearance was not a natural death or a simple rescue. **Both of those framings flatter the writer and cheat the subject.** The Thursz study is your guard against both.
+6. **Credit what was built.** The congregations, the businesses, the fish market that outlived the bulldozers, the freeway revolt that saved other neighborhoods. **A piece that only inventories loss is an incomplete report.**
 7. **Private homes are private.** Do not publish a current resident's name with their address, do not photograph into windows, and do not knock uninvited. Wheat Row is somebody's home today.
 8. **Say what you did to a number.** If you adjusted a 1950s dollar figure for inflation, say so and say how.
 
 ## What good looks like
-A short, checkable piece in which every sentence is either something you read in a named source or something you clearly mark as unresolved, and in which the prose is still good. **Those two standards do not conflict.** A store owner who lost at the Supreme Court and gave his name to the case that cleared a neighbourhood he did not live in; a 1790s row house saved because it was old while the living blocks around it were not; a survey of percentages a court read aloud before a bulldozer moved: **none of that needs decorating.**
+A short, checkable piece in which every sentence is either something you read in a named source or something you clearly mark as unresolved, and in which the prose is still good. **Those two standards do not conflict.** A store owner who lost at the Supreme Court and gave his name to the case that cleared a neighborhood he did not live in; a 1790s row house saved because it was old while the living blocks around it were not; a survey of percentages a court read aloud before a bulldozer moved: **none of that needs decorating.**
 
 ## Sources
 - Berman v. Parker, 348 U.S. 26 (1954). https://www.law.cornell.edu/supremecourt/text/348/26
@@ -1619,7 +1619,7 @@ A short, checkable piece in which every sentence is either something you read in
         },
         {
           prompt: "Why does the assignment ban both ruin porn and the lost-golden-age frame, and what guards against both?",
-          answer: "Because a neighbourhood without indoor plumbing was not a paradise, and its clearance was not a natural death or a simple rescue. Both framings flatter the writer and cheat the subject. The Thursz study, which measured real outcomes, is the guard.",
+          answer: "Because a neighborhood without indoor plumbing was not a paradise, and its clearance was not a natural death or a simple rescue. Both framings flatter the writer and cheat the subject. The Thursz study, which measured real outcomes, is the guard.",
         },
       ],
     },
@@ -1642,7 +1642,7 @@ A short, checkable piece in which every sentence is either something you read in
 - Read the actual opinion behind a doctrine, rather than a summary of it, and quote it accurately.
 - Separate what a case held from what it is popularly said to have held. **Berman held that an area may be taken as a whole and conveyed to a private developer. It did not hold that any particular building was a slum**, and it was brought by a store owner, not a displaced family.
 - Test a cross-city link against a chronology and report the weaker, true version. **Berman did not cause Indiana Avenue's clearance; it backstopped the tool nationwide.**
-- Recognise the *Berman* pattern, public taking then private rebuilding, when it runs again, as it does at The Wharf.
+- Recognize the *Berman* pattern, public taking then private rebuilding, when it runs again, as it does at The Wharf.
 - Ask who holds the vote over a piece of ground, and notice when the answer is "not the people who live on it."
 
 **What this course deliberately did not cover, and why.**

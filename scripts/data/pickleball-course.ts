@@ -774,7 +774,7 @@ USA Pickleball is candid that it is still deciding. Its stated reason for the 20
 **Why the line wins.** It comes straight out of the specs. The net is **34 inches at the center and 36 inches at the sidelines** (USA Pickleball, 2026, Rules 3.B.6-3.B.7), and the non-volley zone is only **7 feet deep** (Rule 3.A.4.c). Do the geometry:
 
 - If you are standing at the kitchen line, a ball at chest height is **above** the net. You can hit **down**. A ball hit downward is very hard to return.
-- If you are standing at your baseline, 22 feet back, almost every ball you hit must travel **upward** to clear a net you are far away from. A ball travelling upward arrives at your opponent's paddle at a comfortable height, and they are standing at the net, so they hit it down at you.
+- If you are standing at your baseline, 22 feet back, almost every ball you hit must travel **upward** to clear a net you are far away from. A ball traveling upward arrives at your opponent's paddle at a comfortable height, and they are standing at the net, so they hit it down at you.
 
 That is the whole thing. **Court position converts directly into shot quality.** The team at the line is hitting down; the team at the baseline is hitting up; up loses.
 

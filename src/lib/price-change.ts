@@ -229,7 +229,7 @@ export function assessPriceChange(
       code: "subscribers-keep-billing",
       level: "critical",
       message:
-        "Existing subscribers are NOT cancelled by this change. This app never calls the Stripe subscription API, so anyone already subscribed keeps being billed the old amount until someone cancels them in the Stripe dashboard.",
+        "Existing subscribers are NOT canceled by this change. This app never calls the Stripe subscription API, so anyone already subscribed keeps being billed the old amount until someone cancels them in the Stripe dashboard.",
     });
   } else if (wasSubscription && nowSubscription) {
     warnings.push({
@@ -247,7 +247,7 @@ export function assessPriceChange(
       code: "subscription-access-is-revocable",
       level: "warning",
       message:
-        "Access bought as a subscription is not permanent the way a one-time purchase is: when the Stripe subscription is deleted, the webhook marks that enrollment cancelled and the learner loses the course.",
+        "Access bought as a subscription is not permanent the way a one-time purchase is: when the Stripe subscription is deleted, the webhook marks that enrollment canceled and the learner loses the course.",
     });
   } else if (wasSubscription) {
     warnings.push({

@@ -45,7 +45,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const FOOTBALL_COURSE: AuthoredCourse = {
   title: "Football: Play It, Read It, Work In It",
   description:
-    "A complete, cited football course for high school students, the game most of the world calls football and the United States calls soccer. How to actually play it (first touch, passing, dribbling, finishing, defending, goalkeeping); how to think about it (formations, possession, pressing, transitions, set pieces); the 17 Laws and who really writes them (The IFAB, not FIFA); the history, told honestly, from ball games that long predate England, to the 1863 codification, to the Football Association's 50-year ban on women's football; how the leagues and governing bodies actually fit together worldwide; the money, the labour, and the contested human cost; and the honest, concrete opportunities for amateurs and entrepreneurs, refereeing, coaching badges, running a club, and the jobs that actually exist around a game almost nobody makes a living playing.",
+    "A complete, cited football course for high school students, the game most of the world calls football and the United States calls soccer. How to actually play it (first touch, passing, dribbling, finishing, defending, goalkeeping); how to think about it (formations, possession, pressing, transitions, set pieces); the 17 Laws and who really writes them (The IFAB, not FIFA); the history, told honestly, from ball games that long predate England, to the 1863 codification, to the Football Association's 50-year ban on women's football; how the leagues and governing bodies actually fit together worldwide; the money, the labor, and the contested human cost; and the honest, concrete opportunities for amateurs and entrepreneurs, refereeing, coaching badges, running a club, and the jobs that actually exist around a game almost nobody makes a living playing.",
   lessons: [
     // ────────────────── SECTION 1 · THE GAME, THE NAME, AND THE PITCH ──────────────────
     {
@@ -108,9 +108,9 @@ Compare that to a basketball court or a tennis court, where the dimensions are e
 | Penalty area, from the goal line | 16.5 m (18 yds) |
 | Goal area ("six-yard box"), from the goal line | 5.5 m (6 yds) |
 | Penalty mark, from the goal line | 11 m (12 yds) |
-| Centre circle radius (and the distance opponents must retreat at most restarts) | 9.15 m (10 yds) |
+| Center circle radius (and the distance opponents must retreat at most restarts) | 9.15 m (10 yds) |
 
-That last number, **9.15 m / 10 yds**, is worth memorising. It is the "keep back" distance at kick-offs, corners, and free kicks, and it is the radius of the centre circle. The circle is not decoration; it is a ruler.
+That last number, **9.15 m / 10 yds**, is worth memorizing. It is the "keep back" distance at kick-offs, corners, and free kicks, and it is the radius of the center circle. The circle is not decoration; it is a ruler.
 
 **One more line in Law 1 that decides arguments:** "Measurements are from the **outside** of the lines as the lines are **part of the area they enclose**" (IFAB, 2026, Law 1). So the touchline is part of the field. A ball resting on the line is *in*. A foul committed on the penalty-area line is committed **inside** the penalty area, and that is a penalty kick, not a free kick. People lose games over this.
 
@@ -137,7 +137,7 @@ That is a "size 5" ball, the adult ball. Younger age groups use size 4 and size 
         },
         {
           prompt: "How far must opponents retreat at most restarts, and where else does that number appear?",
-          answer: "9.15 m (10 yds), the same number as the radius of the centre circle and the penalty arc.",
+          answer: "9.15 m (10 yds), the same number as the radius of the center circle and the penalty arc.",
         },
         {
           prompt: "How wide and how high is the goal?",
@@ -158,19 +158,19 @@ Everything beyond "one goalkeeper" is **not law, it is choice.** The Laws do not
 **The goalkeeper.** The only player who may handle the ball, and **only inside their own penalty area** (IFAB, 2026, Law 12). Outside it, the goalkeeper is subject to exactly the same handball restrictions as anyone else. A modern goalkeeper is also expected to be the team's first passer and to sweep up behind a high defensive line.
 
 **Defenders (the back line).**
-- **Centre-backs** (usually two, sometimes three). Defend the middle, win headers, start attacks with passes out from the back.
+- **Center-backs** (usually two, sometimes three). Defend the middle, win headers, start attacks with passes out from the back.
 - **Full-backs** (left and right). Defend the flanks and, in most modern systems, provide the team's width when attacking. Physically, the hardest running job on the pitch.
-- **Wing-backs.** A full-back in a system with three centre-backs, expected to cover the entire touchline, defending and attacking.
+- **Wing-backs.** A full-back in a system with three center-backs, expected to cover the entire touchline, defending and attacking.
 
 **Midfielders (the engine room).**
-- **Defensive midfielder** (the "6", the "pivot", the "holding" midfielder). Sits in front of the defence, screens the space, recycles possession, and is usually the first person to foul someone to stop a counter-attack.
-- **Central midfielder** (the "8"). Box-to-box. Links defence and attack, arrives late in the penalty area.
-- **Attacking midfielder** (the "10"). Operates between the opponent's midfield and defence, the hardest space in football to mark.
+- **Defensive midfielder** (the "6", the "pivot", the "holding" midfielder). Sits in front of the defense, screens the space, recycles possession, and is usually the first person to foul someone to stop a counter-attack.
+- **Central midfielder** (the "8"). Box-to-box. Links defense and attack, arrives late in the penalty area.
+- **Attacking midfielder** (the "10"). Operates between the opponent's midfield and defense, the hardest space in football to mark.
 - **Wingers.** Attack from the flanks, either to cross or to cut inside and shoot.
 
 **Forwards.**
-- **Centre-forward / striker (the "9")**. Scores, holds the ball up with their back to goal, and (in the modern game) is the first defender, because pressing starts at the front.
-- **False nine.** A centre-forward who deliberately drops deep, dragging a centre-back out of position and opening a hole for a midfielder to run into.
+- **Center-forward / striker (the "9")**. Scores, holds the ball up with their back to goal, and (in the modern game) is the first defender, because pressing starts at the front.
+- **False nine.** A center-forward who deliberately drops deep, dragging a center-back out of position and opening a hole for a midfielder to run into.
 
 **About those numbers.** "The 6," "the 8," "the 10," "the 9" come from the old habit of assigning shirt numbers 1-11 by position. The **shirt numbers are gone**, squads now number into the nineties, but **the positional numbers survive as vocabulary**, and coaches, scouts and commentators still use them constantly. If someone says a team "has no proper 6," they mean it has no holding midfielder.
 
@@ -188,7 +188,7 @@ Everything beyond "one goalkeeper" is **not law, it is choice.** The Laws do not
         {
           prompt: "How many positions do the Laws of the Game define?",
           answer:
-            "One, the goalkeeper. Every other position (centre-back, the 6, the 10, the winger) is coaching convention, not law.",
+            "One, the goalkeeper. Every other position (center-back, the 6, the 10, the winger) is coaching convention, not law.",
         },
       ],
     },
@@ -200,7 +200,7 @@ Everything beyond "one goalkeeper" is **not law, it is choice.** The Laws do not
 
 **But the clock never stops**, and this is the single biggest difference between football and almost every American sport. There are no timeouts. The referee does not stop the clock for a throw-in, a substitution, or an injury. Instead, **Law 7 requires the referee to make an "allowance for time lost"** in each half, for substitutions, injuries and treatment, time-wasting, disciplinary sanctions, drinks breaks, VAR delays, and goal celebrations (IFAB, 2026, Law 7).
 
-That allowance is **added time** (also called stoppage time or injury time), and the amount is **the referee's judgement**. The fourth official holds up a board showing the *minimum* to be played. The referee can play more. **The referee, not the board, ends the half.**
+That allowance is **added time** (also called stoppage time or injury time), and the amount is **the referee's judgment**. The fourth official holds up a board showing the *minimum* to be played. The referee can play more. **The referee, not the board, ends the half.**
 
 The 2026/27 Laws pushed further against time-wasting: the "countdown" principle, where a visible countdown pressures a player to restart play within a set time, was **extended to throw-ins and goal kicks** (IFAB, 2026, Law changes 2026/27). Football is quietly at war with the stalling that a running clock invites.
 
@@ -220,7 +220,7 @@ When a competition does need a winner, Law 10 gives the tools:
 
 So a 0-0 draw is a legitimate, complete, finished football match. American viewers often find that maddening. It is the sport working as designed.
 
-:::reveal The board says "+4". The referee plays 6 minutes and 20 seconds and then blows for full time. Has the referee broken the Law? ||| No. Law 7 makes the allowance for time lost **the referee's judgement**; the fourth official's board shows the **minimum** additional time, not a maximum. The referee ends the half, not the board.
+:::reveal The board says "+4". The referee plays 6 minutes and 20 seconds and then blows for full time. Has the referee broken the Law? ||| No. Law 7 makes the allowance for time lost **the referee's judgment**; the fourth official's board shows the **minimum** additional time, not a maximum. The referee ends the half, not the board.
 
 ## Sources
 - International Football Association Board. (2026). *Laws of the game 2026/27*. https://downloads.theifab.com/downloads/laws-of-the-game-202627-single-pages?l=en`,
@@ -345,7 +345,7 @@ So a 0-0 draw is a legitimate, complete, finished football match. American viewe
             options: ["Eleven", "Four, defender, midfielder, forward, goalkeeper", "One, the goalkeeper", "None"],
             correctIndex: 2,
             explanation:
-              "Law 3 requires that one of the eleven is the goalkeeper. Every other role, centre-back, the 6, the 10, the winger, is coaching convention, and formations are choices, not law.",
+              "Law 3 requires that one of the eleven is the goalkeeper. Every other role, center-back, the 6, the 10, the winger, is coaching convention, and formations are choices, not law.",
             sourceLessonSlug: "football-positions-and-shape",
           },
           {
@@ -367,7 +367,7 @@ So a 0-0 draw is a legitimate, complete, finished football match. American viewe
               "The outfield player wearing squad shirt number 6",
               "The holding midfielder screening the back line",
               "The sixth substitute listed on the teamsheet",
-              "The centre-forward leading the attacking line",
+              "The center-forward leading the attacking line",
             ],
             correctIndex: 1,
             explanation:
@@ -469,7 +469,7 @@ The whole point of a first touch is to **buy yourself time and space**. Three id
 | **Inside of the foot** | Accurate, flat, low power | The default. The vast majority of passes in any match. |
 | **Laces (instep)** | Power and distance, driven flat | Long switches of play, hard passes into a striker |
 | **Outside of the foot** | Disguise, bend away from a defender | Quick, no-backlift passes; threading a ball round a marker |
-| **Chipped / lofted** | Height over a defender or a line | Over a compact defence; over a pressing line to a runner |
+| **Chipped / lofted** | Height over a defender or a line | Over a compact defense; over a pressing line to a runner |
 
 **Weight of pass.** A pass has a *speed*, and choosing it is a decision as real as choosing a target. Too soft and a defender gets there first. Too hard and your team-mate cannot control it. The rule of thumb: **pass to the foot that keeps your team-mate facing forwards**, and **pass hard into pressure, soft into space**. If your team-mate is being closed down, a firm pass gives them time; a firm pass into empty space just gives the ball away.
 
@@ -573,7 +573,7 @@ A **driven shot**, the standard shot on goal, is struck with the **laces**, not 
 1. **Distance**, how far you are from goal.
 2. **Angle**, how much of the goal you can actually see.
 
-This is the intuition behind **expected goals (xG)**, the modelling metric now used across professional football: every shot is assigned a probability of scoring based on where it was taken from and how it was taken. You do not need the maths. You need the conclusion, and the conclusion is blunt: **a tap-in from six yards is worth more than a spectacular effort from thirty, every time.** A striker's real job is not to shoot brilliantly. It is to **arrive in the places where boring chances happen.**
+This is the intuition behind **expected goals (xG)**, the modeling metric now used across professional football: every shot is assigned a probability of scoring based on where it was taken from and how it was taken. You do not need the maths. You need the conclusion, and the conclusion is blunt: **a tap-in from six yards is worth more than a spectacular effort from thirty, every time.** A striker's real job is not to shoot brilliantly. It is to **arrive in the places where boring chances happen.**
 
 That reframes what "being a good finisher" means. It is:
 
@@ -622,7 +622,7 @@ Note also: Law 12 says that **if an offence involves contact, it is penalised by
 
 **The four jobs of a defender, in order.**
 
-1. **Press / close the space.** Get to the attacker *fast* while the ball is travelling to them, then **slow down** in the last few steps. Arriving at full sprint means you get skinned; arriving under control means you get to defend.
+1. **Press / close the space.** Get to the attacker *fast* while the ball is traveling to them, then **slow down** in the last few steps. Arriving at full sprint means you get skinned; arriving under control means you get to defend.
 2. **Set your body.** Stand **side-on**, not square. Side-on lets you turn and run with them; square means you have to pivot, and you will lose. Knees bent, weight on the balls of your feet.
 3. **Show them somewhere.** You cannot cover both sides. So **choose**, angle your body so the only way past you is the way you *want* them to go: onto their weak foot, towards the touchline, away from goal, into a team-mate. A defender who "shows the winger outside" has already half-won the duel. The touchline is a defender's best team-mate; it does half the tackling.
 4. **Be patient.** Do not dive in. The moment you commit, you are beaten if you miss. **Wait for the mistake**, a heavy touch, a head-down moment, a pass into your feet. Then take the ball.
@@ -675,9 +675,9 @@ Note also: Law 12 says that **if an offence involves contact, it is penalised by
 
 **2. A positioner.** Most saves are made before the shot, by standing in the right place. **Narrow the angle**: move off your line towards the ball so you cut down how much of the goal the striker can see. A goalkeeper glued to the line makes every shot look spectacular and lets in easy goals.
 
-**3. A sweeper.** With a high defensive line, the space behind the defence is yours. Read the through-ball, come out, clear it, with your **feet** if you are outside the area, because outside the area you may not use your hands, and a goalkeeper who forgets that gets sent off for handling to deny an obvious goal-scoring opportunity (Law 12).
+**3. A sweeper.** With a high defensive line, the space behind the defense is yours. Read the through-ball, come out, clear it, with your **feet** if you are outside the area, because outside the area you may not use your hands, and a goalkeeper who forgets that gets sent off for handling to deny an obvious goal-scoring opportunity (Law 12).
 
-**4. A first passer.** Modern goalkeepers start attacks. Short passes to the centre-backs, longer passes into midfield. This is genuinely dangerous, mistakes here become goals, and it is why goalkeepers are now selected partly on their feet.
+**4. A first passer.** Modern goalkeepers start attacks. Short passes to the center-backs, longer passes into midfield. This is genuinely dangerous, mistakes here become goals, and it is why goalkeepers are now selected partly on their feet.
 
 **5. The organiser.** The goalkeeper is the only player who can see the entire pitch and every team-mate at once. **Talk.** Set the wall. Push the line up. Call the offside trap. Communication is the most under-taught goalkeeping skill and the cheapest one to get good at.
 
@@ -809,7 +809,7 @@ Note also: Law 12 says that **if an offence involves contact, it is penalised by
             ],
             correctIndex: 1,
             explanation:
-              "Distance and angle are the core of expected-goals (xG) modelling. The practical conclusion: a boring six-yard tap-in is worth far more than a spectacular 30-yard effort. A striker's real skill is ARRIVING where boring chances happen.",
+              "Distance and angle are the core of expected-goals (xG) modeling. The practical conclusion: a boring six-yard tap-in is worth far more than a spectacular 30-yard effort. A striker's real skill is ARRIVING where boring chances happen.",
             sourceLessonSlug: "football-shooting-and-finishing",
           },
           {
@@ -937,7 +937,7 @@ A change to the Laws requires a **three-quarters majority** at the Annual Genera
 
 FIFA has 4 votes. It needs 6. **So FIFA cannot change a single Law of the Game on its own.** It must persuade at least **two of the four British associations** to vote with it. And the four British associations together have 4 votes, so they cannot change a Law without FIFA either. **Neither side can move without the other.** That deadlock is not a bug; it is the design. It makes the Laws deliberately, stubbornly hard to change.
 
-This is genuinely strange, and worth sitting with: a global sport played by hundreds of millions of people has its rulebook controlled by a committee on which **four small British associations hold half the votes**. It is a colonial artefact of the game's origins that has simply never been dismantled, and it is the actual, current, legal structure of world football.
+This is genuinely strange, and worth sitting with: a global sport played by hundreds of millions of people has its rulebook controlled by a committee on which **four small British associations hold half the votes**. It is a colonial artifact of the game's origins that has simply never been dismantled, and it is the actual, current, legal structure of world football.
 
 **The two meetings.**
 - The **Annual Business Meeting (ABM)**, typically in **November**, decides which topics go to the AGM and approves experiments with proposed Law changes.
@@ -1047,7 +1047,7 @@ Note the timing: the position is judged **at the moment the ball is played by th
 
 And the Law goes further, defining what "deliberate play" means: the player had **control** of the ball with the possibility of passing it, gaining possession, or clearing it, and it explicitly adds that **an inaccurate or unsuccessful pass or clearance does not stop it being a deliberate play.** A defender who tries to head the ball clear and shanks it into an offside striker's path has **deliberately played** it. **No offside.** The goal stands. This causes fury in stadiums every week, and it is exactly what the Law says.
 
-The Law even gives the indicators of "control": the ball travelled from a distance and the player had a clear view of it; it was not moving quickly; its direction was not unexpected; the player had time to coordinate their body movement (not an instinctive stretch or jump); and a ball on the ground is easier to play than one in the air.
+The Law even gives the indicators of "control": the ball traveled from a distance and the player had a clear view of it; it was not moving quickly; its direction was not unexpected; the player had time to coordinate their body movement (not an instinctive stretch or jump); and a ball on the ground is easier to play than one in the air.
 
 ---
 
@@ -1272,7 +1272,7 @@ All **opponents must stand at least 2 m (2 yds)** from that point (IFAB, 2026, L
 
 **Law 16 · The Goal Kick.** Awarded when the ball wholly crosses the goal line, **last touched by an attacker**, without a goal being scored. The ball is kicked from **any point within the goal area**, and it is in play **as soon as it is kicked and clearly moves**. Opponents must be **outside the penalty area** until then, and because the ball is in play the instant it moves, **it does not have to leave the penalty area first.**
 
-That rule change is why you now see goalkeepers passing five yards to a centre-back standing inside the six-yard box, a shape that would have been illegal not long ago. **No offside directly from a goal kick.** A goal *can* be scored directly from a goal kick, but only against the opponents.
+That rule change is why you now see goalkeepers passing five yards to a center-back standing inside the six-yard box, a shape that would have been illegal not long ago. **No offside directly from a goal kick.** A goal *can* be scored directly from a goal kick, but only against the opponents.
 
 **Law 17 · The Corner Kick.** Awarded when the ball wholly crosses the goal line, **last touched by a defender**, without a goal. Taken from the corner arc; **the flagpost must not be moved**. Opponents must be at least **9.15 m (10 yds)** away. **A goal can be scored directly from a corner kick** (against the opponents), and there is **no offside directly from a corner.**
 
@@ -1385,7 +1385,7 @@ This is deliberately unglamorous. The old "contested drop ball," where two playe
               "Offside, because the attacker gained an advantage",
               "Goal, a deliberate play resets offside even if mishit",
               "Indirect free kick awarded to the defending team",
-              "A dropped ball to restart play for the defence",
+              "A dropped ball to restart play for the defense",
             ],
             correctIndex: 1,
             explanation:
@@ -1516,30 +1516,30 @@ Remember from Lesson 3: **no Law mentions formations.** They are pure choice.
 
 | Formation | Shape | What it is good at | What it gives up |
 | --- | --- | --- | --- |
-| **4-4-2** | Two banks of four, two strikers | Simple, compact, defensively solid; two strikers occupy two centre-backs | Outnumbered in central midfield (2 v 3) against most modern shapes |
-| **4-3-3** | Back four, midfield three, front three | Width high up, pressing triggers, three midfielders control the centre | Full-backs get exposed when the wingers stay high |
-| **4-2-3-1** | Back four, **double pivot**, a 10 and two wingers, one striker | Very stable, two holding midfielders screen the defence | The lone striker can get isolated |
-| **3-5-2** | Three centre-backs, wing-backs, three central midfielders | Overloads midfield; wing-backs provide all the width | Enormous physical demand on wing-backs; wide areas exposed if they are caught upfield |
-| **4-4-2 diamond** | Back four, midfield diamond, two strikers | Dominates the centre; a 10 behind two strikers | Almost **no natural width**, full-backs must supply it all |
+| **4-4-2** | Two banks of four, two strikers | Simple, compact, defensively solid; two strikers occupy two center-backs | Outnumbered in central midfield (2 v 3) against most modern shapes |
+| **4-3-3** | Back four, midfield three, front three | Width high up, pressing triggers, three midfielders control the center | Full-backs get exposed when the wingers stay high |
+| **4-2-3-1** | Back four, **double pivot**, a 10 and two wingers, one striker | Very stable, two holding midfielders screen the defense | The lone striker can get isolated |
+| **3-5-2** | Three center-backs, wing-backs, three central midfielders | Overloads midfield; wing-backs provide all the width | Enormous physical demand on wing-backs; wide areas exposed if they are caught upfield |
+| **4-4-2 diamond** | Back four, midfield diamond, two strikers | Dominates the center; a 10 behind two strikers | Almost **no natural width**, full-backs must supply it all |
 
 **Now the important part, and it is the part TV coverage never says.**
 
 **A formation is not a shape. It is at least three shapes.** The graphic before kick-off is nearly a lie. A team lines up as one thing **in possession**, a different thing **out of possession**, and something else again **in transition**.
 
-The clearest example: a "4-3-3" defending often becomes a **4-5-1**, the two wingers drop into the midfield line, and the front three is suddenly a front one. Meanwhile a "4-3-3" *attacking* frequently becomes a **2-3-5**, the full-backs push high or tuck inside, one midfielder drops between the centre-backs, and five players occupy the last line. Same eleven, same "formation," three completely different structures inside a single minute.
+The clearest example: a "4-3-3" defending often becomes a **4-5-1**, the two wingers drop into the midfield line, and the front three is suddenly a front one. Meanwhile a "4-3-3" *attacking* frequently becomes a **2-3-5**, the full-backs push high or tuck inside, one midfielder drops between the center-backs, and five players occupy the last line. Same eleven, same "formation," three completely different structures inside a single minute.
 
 So when someone tells you a team "plays 4-3-3," they have told you almost nothing. The real questions are:
 
-1. **Where does the width come from?** Wingers, or full-backs, or wing-backs? Somebody must stretch the pitch, or the defence never has to move.
-2. **Who protects the space in front of the centre-backs?** If nobody does, the team is one pass from being cut open.
-3. **Who occupies the space between the opponent's midfield and defence?** That is where matches are won, and it is the hardest area of the pitch to defend.
+1. **Where does the width come from?** Wingers, or full-backs, or wing-backs? Somebody must stretch the pitch, or the defense never has to move.
+2. **Who protects the space in front of the center-backs?** If nobody does, the team is one pass from being cut open.
+3. **Who occupies the space between the opponent's midfield and defense?** That is where matches are won, and it is the hardest area of the pitch to defend.
 4. **When we lose the ball, how many players are behind it?** This is the question that decides whether an ambitious attacking shape is brave or reckless.
 
 **The principle underneath everything.** Football is a game of **creating numerical superiority**, getting more players than the opposition in the area where the ball is. Every formation is a bet about **where** you want to be strong and **where** you can afford to be weak. There is no correct formation, only a formation that suits the players you actually have and the opponent you are actually facing.
 
 Which is the honest coaching answer, and the one that will serve you best if you ever pick a team: **choose the shape that fits your players.** A 3-5-2 with wing-backs who cannot run is not a 3-5-2. It is a disaster with a nice diagram.
 
-:::reveal Someone tells you their team "plays 4-3-3." Why does that sentence tell you almost nothing? ||| Because a formation is **at least three different shapes**: one in possession, one out of possession, one in transition. A 4-3-3 typically defends as a **4-5-1** (wingers drop in) and attacks as something like a **2-3-5** (full-backs push up, a midfielder drops in). The real questions are where the **width** comes from, who **screens** the centre-backs, who occupies the space **between the lines**, and how many players are **behind the ball** when possession is lost.
+:::reveal Someone tells you their team "plays 4-3-3." Why does that sentence tell you almost nothing? ||| Because a formation is **at least three different shapes**: one in possession, one out of possession, one in transition. A 4-3-3 typically defends as a **4-5-1** (wingers drop in) and attacks as something like a **2-3-5** (full-backs push up, a midfielder drops in). The real questions are where the **width** comes from, who **screens** the center-backs, who occupies the space **between the lines**, and how many players are **behind the ball** when possession is lost.
 
 ## Sources
 - International Football Association Board. (2026). *Laws of the game 2026/27*. https://downloads.theifab.com/downloads/laws-of-the-game-202627-single-pages?l=en`,
@@ -1564,12 +1564,12 @@ Which is the honest coaching answer, and the one that will serve you best if you
 
 The naive answer, "go forwards", is the reason most amateur teams look like a firework display and lose 3-0. Here is the real one.
 
-**The purpose of possession is to MOVE the opposition.** A defence that never has to move is impossible to break down. A defence that has been pulled ten yards to the left has a hole ten yards to the right. **You are not passing the ball to the ball. You are passing the ball to drag people.**
+**The purpose of possession is to MOVE the opposition.** A defense that never has to move is impossible to break down. A defense that has been pulled ten yards to the left has a hole ten yards to the right. **You are not passing the ball to the ball. You are passing the ball to drag people.**
 
 **The four principles.**
 
 **1. Width and depth: make the pitch as big as you can.**
-Push players to both touchlines and get somebody in behind. This forces the defence to **spread horizontally** (covering the width) and **drop vertically** (respecting the runner in behind). A stretched defence has gaps between its players. A compact one does not. Teams that attack with everyone in a bunch in the middle are making the defenders' job trivially easy.
+Push players to both touchlines and get somebody in behind. This forces the defense to **spread horizontally** (covering the width) and **drop vertically** (respecting the runner in behind). A stretched defense has gaps between its players. A compact one does not. Teams that attack with everyone in a bunch in the middle are making the defenders' job trivially easy.
 
 **2. Create the passing triangle.**
 The player on the ball should always have **at least two** passing options at different angles. If the only pass available is a straight line, a single defender can block it. Triangles mean a defender must choose, and choosing means being wrong about something. This is what coaches mean by "support the ball", and it is why the player *without* the ball is usually the one who has made the mistake when a possession breaks down.
@@ -1578,15 +1578,15 @@ The player on the ball should always have **at least two** passing options at di
 The most valuable real estate on a football pitch is the strip of grass **between the opposition's midfield line and their defensive line**. Why? Because a player receiving there is **facing the goal** with **defenders behind them**, and the midfielders who should mark them are, by definition, in front of them and running the wrong way. This is why the "10" exists, and why the modern game obsesses over "receiving between the lines" and "playing through the lines."
 
 **4. Switch the play.**
-The single most under-used weapon in amateur football. When the opposition has shuffled everyone across to your right side to squeeze you, the whole **left** is empty. A long, flat pass across the pitch, a **switch**, forces the entire defence to sprint sideways and re-organise, and defences are at their most disorganised while moving. Grind them left, then punish them right.
+The single most under-used weapon in amateur football. When the opposition has shuffled everyone across to your right side to squeeze you, the whole **left** is empty. A long, flat pass across the pitch, a **switch**, forces the entire defense to sprint sideways and re-organize, and defenses are at their most disorganised while moving. Grind them left, then punish them right.
 
-**Building from the back.** Modern teams pass out from the goalkeeper rather than launching the ball long. It looks like showing off. It is not. The purpose is to **invite the press**: if the opposition come forward to hunt the ball, they leave space behind themselves, and one pass through the press means you are attacking a stretched, unbalanced defence with numbers. Law 16 makes this deliberately easier, a goal kick is in play as soon as it is kicked and clearly moves, and opponents must be outside the penalty area (IFAB, 2026, Law 16).
+**Building from the back.** Modern teams pass out from the goalkeeper rather than launching the ball long. It looks like showing off. It is not. The purpose is to **invite the press**: if the opposition come forward to hunt the ball, they leave space behind themselves, and one pass through the press means you are attacking a stretched, unbalanced defense with numbers. Law 16 makes this deliberately easier, a goal kick is in play as soon as it is kicked and clearly moves, and opponents must be outside the penalty area (IFAB, 2026, Law 16).
 
-**But it is a genuine risk**, and this is the honest bit: playing out from the back with players who cannot execute it is how a team concedes an idiotic goal. If your centre-backs cannot pass under pressure, **do not do it**. A long ball into a channel is not a moral failure. It is a legitimate strategy, and some very good teams are built on it.
+**But it is a genuine risk**, and this is the honest bit: playing out from the back with players who cannot execute it is how a team concedes an idiotic goal. If your center-backs cannot pass under pressure, **do not do it**. A long ball into a channel is not a moral failure. It is a legitimate strategy, and some very good teams are built on it.
 
 **The counter-argument, stated fairly.** There is an entire, respectable school of football, direct play, second balls, set pieces, pressing high and going long, that wins matches and trophies. Possession is **not** a virtue in itself. A team that has 70% of the ball and does nothing with it has simply found an elaborate way to pass sideways. **What matters is what possession produces**: shots from good positions (Lesson 7).
 
-:::reveal Your opponents have crowded every player over to your right wing to trap you. What is the most valuable pass on the pitch, and why? ||| A **switch of play**, a long, flat pass to the completely empty **left** side. Defences are at their most disorganised while moving sideways, and forcing the whole block to sprint across the pitch and re-set is what creates the gap. Grinding them to one side and then punishing the other is the point of moving the ball at all.
+:::reveal Your opponents have crowded every player over to your right wing to trap you. What is the most valuable pass on the pitch, and why? ||| A **switch of play**, a long, flat pass to the completely empty **left** side. Defenses are at their most disorganised while moving sideways, and forcing the whole block to sprint across the pitch and re-set is what creates the gap. Grinding them to one side and then punishing the other is the point of moving the ball at all.
 
 ## Sources
 - International Football Association Board. (2026). *Laws of the game 2026/27*. https://downloads.theifab.com/downloads/laws-of-the-game-202627-single-pages?l=en`,
@@ -1594,7 +1594,7 @@ The single most under-used weapon in amateur football. When the opposition has s
         {
           prompt: "What is the actual purpose of keeping possession?",
           answer:
-            "To MOVE the opposition. A defence that never has to move cannot be broken down; a defence dragged ten yards left has a hole ten yards right. Possession that doesn't move anyone is just elaborate sideways passing.",
+            "To MOVE the opposition. A defense that never has to move cannot be broken down; a defense dragged ten yards left has a hole ten yards right. Possession that doesn't move anyone is just elaborate sideways passing.",
         },
         {
           prompt: "Why is the space 'between the lines' so valuable?",
@@ -1604,7 +1604,7 @@ The single most under-used weapon in amateur football. When the opposition has s
         {
           prompt: "Why do teams play out from the back rather than launching it long?",
           answer:
-            "To invite the press. If opponents come forward to hunt the ball, they leave space behind, and one pass through the press means attacking a stretched defence with numbers. But it is a real risk: if your defenders can't pass under pressure, don't do it.",
+            "To invite the press. If opponents come forward to hunt the ball, they leave space behind, and one pass through the press means attacking a stretched defense with numbers. But it is a real risk: if your defenders can't pass under pressure, don't do it.",
         },
       ],
     },
@@ -1626,7 +1626,7 @@ The single most under-used weapon in amateur football. When the opposition has s
 - **The price:** you have surrendered territory and initiative. You will spend the match defending, and if you concede, you must come out of your shell and become vulnerable.
 - **This is not cowardice.** It is a completely legitimate, often brilliant strategy, especially against a stronger team, and it pairs naturally with the counter-attack.
 
-**Compactness: the concept underneath both.** In either plan, the distances between your defensive line, your midfield line, and your forward line must stay **short**. If your defence drops and your forwards do not, you have opened a 40-yard gap through the middle of your own team and the opposition will simply play in it. **The whole team moves as one block**, up together, back together, across together. Amateur teams lose because they stretch; good teams look like a net being dragged around.
+**Compactness: the concept underneath both.** In either plan, the distances between your defensive line, your midfield line, and your forward line must stay **short**. If your defense drops and your forwards do not, you have opened a 40-yard gap through the middle of your own team and the opposition will simply play in it. **The whole team moves as one block**, up together, back together, across together. Amateur teams lose because they stretch; good teams look like a net being dragged around.
 
 **The offside trap.** A defensive line can step **up** in unison at the moment a pass is played, leaving the striker in an offside position. This is legal and effective, and it is a **high-risk play**, because a single defender who does not step (or steps late) plays everyone onside, and the entire line is then behind the ball with a striker running free. Remember Law 11: the position is judged **at the moment the ball is played by the team-mate**, and **level is onside** (IFAB, 2026, Law 11). The trap has to be *early* and it has to be *together*.
 
@@ -1636,13 +1636,13 @@ The single most under-used weapon in amateur football. When the opposition has s
 
 A **transition** is the moment possession changes hands. There are two.
 
-**Transition to defence (you have just LOST the ball).** This is the most dangerous moment in football, and it is not close. Why? Because you were **attacking**, which means your players are spread out, pushed high, out of position, and off balance. The opposition are, at that exact instant, **facing a disorganised team**.
+**Transition to defense (you have just LOST the ball).** This is the most dangerous moment in football, and it is not close. Why? Because you were **attacking**, which means your players are spread out, pushed high, out of position, and off balance. The opposition are, at that exact instant, **facing a disorganised team**.
 
-The response is the **counter-press**: the instant you lose the ball, the nearest two or three players attack the ball immediately and ferociously, not to tackle so much as to **deny the opponent the time to look up and start the counter**. If you win it back in those first seconds, you are attacking a defence that has already begun to think about attacking. If you fail, at least you have slowed the break long enough for your team to get back.
+The response is the **counter-press**: the instant you lose the ball, the nearest two or three players attack the ball immediately and ferociously, not to tackle so much as to **deny the opponent the time to look up and start the counter**. If you win it back in those first seconds, you are attacking a defense that has already begun to think about attacking. If you fail, at least you have slowed the break long enough for your team to get back.
 
-**Transition to attack (you have just WON the ball).** The mirror image. The opposition were attacking; they are spread out and disorganised. **This is the best attacking moment you will get all match**, and it lasts about five seconds. A team that wins the ball and immediately passes it sideways has thrown that moment away. A team that wins the ball and drives forward at speed is a **counter-attack**, and counter-attacks are efficient precisely because the defence has not yet re-formed.
+**Transition to attack (you have just WON the ball).** The mirror image. The opposition were attacking; they are spread out and disorganised. **This is the best attacking moment you will get all match**, and it lasts about five seconds. A team that wins the ball and immediately passes it sideways has thrown that moment away. A team that wins the ball and drives forward at speed is a **counter-attack**, and counter-attacks are efficient precisely because the defense has not yet re-formed.
 
-**This is why the transition moments matter more than the possession phases.** A very well-organised defence, given time to set, is genuinely hard to break down. A defence caught in transition is not organised at all. The best teams in the world are not the ones with the prettiest passing, they are the ones who are **ruthless in the five seconds after the ball changes hands, in both directions.**
+**This is why the transition moments matter more than the possession phases.** A very well-organized defense, given time to set, is genuinely hard to break down. A defense caught in transition is not organized at all. The best teams in the world are not the ones with the prettiest passing, they are the ones who are **ruthless in the five seconds after the ball changes hands, in both directions.**
 
 :::reveal What is the most dangerous moment for a team, and why? ||| **The moment they LOSE the ball.** Because they were attacking, so their players are spread out, pushed high, out of position, and off balance. The opposition are, at that instant, facing a disorganised team. The response is the **counter-press**: attack the ball immediately with the nearest players to deny the opponent time to look up and start their counter.
 
@@ -1657,7 +1657,7 @@ The response is the **counter-press**: the instant you lose the ball, the neares
         {
           prompt: "Why is compactness the concept underneath both the high press and the low block?",
           answer:
-            "Because the distances between your defensive, midfield and forward lines must stay short. If the defence drops and the forwards don't, you have opened a 40-yard hole through your own team. The whole block moves as one.",
+            "Because the distances between your defensive, midfield and forward lines must stay short. If the defense drops and the forwards don't, you have opened a 40-yard hole through your own team. The whole block moves as one.",
         },
         {
           prompt: "Why is the offside trap high-risk?",
@@ -1763,27 +1763,27 @@ Almost everybody watches the ball. The ball is the least informative object on t
           {
             prompt: "Which of these is the weakness of a 4-4-2 against most modern shapes?",
             options: [
-              "It leaves a team with no genuine recognised strikers",
+              "It leaves a team with no genuine recognized strikers",
               "It is outnumbered in central midfield (two against three)",
               "It cannot properly defend against most set pieces",
               "It is outright illegal under the Laws of the Game",
             ],
             correctIndex: 1,
             explanation:
-              "4-4-2 is compact and simple and its two strikers occupy two centre-backs, but two central midfielders against three is a losing count in the area that matters most.",
+              "4-4-2 is compact and simple and its two strikers occupy two center-backs, but two central midfielders against three is a losing count in the area that matters most.",
             sourceLessonSlug: "football-formations",
           },
           {
             prompt: "What is the actual purpose of keeping possession of the ball?",
             options: [
               "To run down the match clock and kill off the game",
-              "To MOVE the opposition; a static defence cannot break",
+              "To MOVE the opposition; a static defense cannot break",
               "To improve the team's overall passing statistics",
               "To gradually tire out the opposition's goalkeeper",
             ],
             correctIndex: 1,
             explanation:
-              "You are not passing the ball to the ball; you are passing it to drag people. A defence pulled ten yards left has a hole ten yards right. Possession that moves nobody is just elaborate sideways passing.",
+              "You are not passing the ball to the ball; you are passing it to drag people. A defense pulled ten yards left has a hole ten yards right. Possession that moves nobody is just elaborate sideways passing.",
             sourceLessonSlug: "football-in-possession",
           },
           {
@@ -1809,7 +1809,7 @@ Almost everybody watches the ball. The ball is the least informative object on t
             ],
             correctIndex: 1,
             explanation:
-              "It is a deliberate trap, made easier by Law 16 (the ball is in play the instant it is kicked and clearly moves; opponents must be outside the area). But it is a genuine risk: if your centre-backs can't pass under pressure, don't do it.",
+              "It is a deliberate trap, made easier by Law 16 (the ball is in play the instant it is kicked and clearly moves; opponents must be outside the area). But it is a genuine risk: if your center-backs can't pass under pressure, don't do it.",
             sourceLessonSlug: "football-in-possession",
           },
           {
@@ -1822,7 +1822,7 @@ Almost everybody watches the ball. The ball is the least informative object on t
             ],
             correctIndex: 1,
             explanation:
-              "Defences are at their most disorganised while moving sideways. Grind them to one side, then punish the other. The switch is the single most under-used weapon in amateur football.",
+              "Defenses are at their most disorganised while moving sideways. Grind them to one side, then punish the other. The switch is the single most under-used weapon in amateur football.",
             sourceLessonSlug: "football-in-possession",
           },
           {
@@ -1940,11 +1940,11 @@ Almost everybody watches the ball. The ball is the least informative object on t
       section: "Section 5 · Where the game came from",
       body: `**Football was not invented in England.** England **codified** it. Those are different claims, and collapsing them is how a lot of football history gets told badly.
 
-Human beings have been kicking objects at, over, and past each other for a very long time, on every inhabited continent. What England did in 1863 was write **one set of rules** that other people agreed to use, an act of standardisation, not creation. That act was genuinely world-changing. But it was not the beginning of football.
+Human beings have been kicking objects at, over, and past each other for a very long time, on every inhabited continent. What England did in 1863 was write **one set of rules** that other people agreed to use, an act of standardization, not creation. That act was genuinely world-changing. But it was not the beginning of football.
 
-**Cuju.** The oldest ball game FIFA itself recognises is **cuju** (蹴鞠, literally "kick ball"), played in China. FIFA's position is careful and worth quoting in its own terms: cuju is **"the earliest form of football for which there is scientific evidence"** (FIFA, n.d.). During the **Han dynasty (206 BCE - 220 CE)**, cuju spread from the army to the royal court and the upper classes, and the games were **standardised, with established rules** (FIFA, n.d.).
+**Cuju.** The oldest ball game FIFA itself recognises is **cuju** (蹴鞠, literally "kick ball"), played in China. FIFA's position is careful and worth quoting in its own terms: cuju is **"the earliest form of football for which there is scientific evidence"** (FIFA, n.d.). During the **Han dynasty (206 BCE - 220 CE)**, cuju spread from the army to the royal court and the upper classes, and the games were **standardized, with established rules** (FIFA, n.d.).
 
-Notice what that means. **Standardised, ruled ball-kicking is roughly two thousand years older than England.** The English contribution is real, but it is a contribution to a very long story, not the first page of it.
+Notice what that means. **Standardized, ruled ball-kicking is roughly two thousand years older than England.** The English contribution is real, but it is a contribution to a very long story, not the first page of it.
 
 **Other games, honestly stated.** Many cultures played ball games that resemble football to a greater or lesser degree, among them **kemari** in Japan, **episkyros** and **harpastum** in the Greek and Roman worlds, and a family of rough, large-scale **"mob football"** games played across medieval Europe, in which whole villages contested a ball across open country with few rules and frequent injuries.
 
@@ -1955,9 +1955,9 @@ Anyone who draws you a tidy family tree from Han China to Wembley is selling you
 **Why England, and why then?** Two specific pressures, and they are unglamorous:
 
 1. **The public schools.** Different English schools played different football games with wildly different rules, some allowed carrying the ball, some allowed **"hacking"** (kicking an opponent in the shins), some did not. When boys from different schools met at university, they could not play each other, because nobody could agree on what the game was. That is a coordination problem, and coordination problems get solved by committees.
-2. **Industrialisation.** Factories, railways, and the six-day working week produced something new: large numbers of urban workers with **Saturday afternoons free**, in **cities**, connected by **trains**. That is the exact recipe for organised, regular, spectator sport, teams that can travel to each other and crowds that can turn up to watch. Football did not spread because it was beautiful. It spread because the railway timetable made it possible.
+2. **Industrialisation.** Factories, railways, and the six-day working week produced something new: large numbers of urban workers with **Saturday afternoons free**, in **cities**, connected by **trains**. That is the exact recipe for organized, regular, spectator sport, teams that can travel to each other and crowds that can turn up to watch. Football did not spread because it was beautiful. It spread because the railway timetable made it possible.
 
-:::reveal Did England invent football? ||| **No, England CODIFIED it.** Ball games are close to a human universal and arose independently in many cultures; FIFA itself recognises the Chinese game **cuju** (standardised, with rules, during the Han dynasty, 206 BCE-220 CE) as the earliest form of football for which there is scientific evidence. What England did in 1863 was write **one rulebook that others agreed to use**, an act of standardisation, and the thing that let the game go global.
+:::reveal Did England invent football? ||| **No, England CODIFIED it.** Ball games are close to a human universal and arose independently in many cultures; FIFA itself recognises the Chinese game **cuju** (standardized, with rules, during the Han dynasty, 206 BCE-220 CE) as the earliest form of football for which there is scientific evidence. What England did in 1863 was write **one rulebook that others agreed to use**, an act of standardization, and the thing that let the game go global.
 
 ## Sources
 - FIFA. (n.d.). *The origins of football*. Retrieved July 2026, from https://inside.fifa.com/
@@ -1966,7 +1966,7 @@ Anyone who draws you a tidy family tree from Han China to Wembley is selling you
         {
           prompt: "What is cuju, and what exactly does FIFA claim about it?",
           answer:
-            "A Chinese kicking game. FIFA's careful claim is that cuju is 'the earliest form of football for which there is scientific evidence', standardised with established rules during the Han dynasty (206 BCE-220 CE).",
+            "A Chinese kicking game. FIFA's careful claim is that cuju is 'the earliest form of football for which there is scientific evidence', standardized with established rules during the Han dynasty (206 BCE-220 CE).",
         },
         {
           prompt: "Is there a traceable line of descent from cuju to modern football?",
@@ -1981,7 +1981,7 @@ Anyone who draws you a tidy family tree from Han China to Wembley is selling you
       section: "Section 5 · Where the game came from",
       body: `**Monday 26 October 1863. The Freemasons' Tavern, Great Queen Street, London.**
 
-**Ebenezer Morley**, a solicitor and sportsman, met representatives of a dozen London and suburban clubs, having proposed that football should have **one standardised set of rules**. Out of that meeting the **Football Association (The FA)** was formed, and the original Laws of the Game began to take shape (FIFA, n.d.). The first match played under the new FA rules took place on **19 December 1863** (FIFA, n.d.).
+**Ebenezer Morley**, a solicitor and sportsman, met representatives of a dozen London and suburban clubs, having proposed that football should have **one standardized set of rules**. Out of that meeting the **Football Association (The FA)** was formed, and the original Laws of the Game began to take shape (FIFA, n.d.). The first match played under the new FA rules took place on **19 December 1863** (FIFA, n.d.).
 
 That is the founding moment of the sport you are learning. It is not a stadium, a trophy, or a genius. It is **a meeting in a pub about rules**, and it worked because a rulebook is the only thing that lets strangers play each other.
 
@@ -1992,7 +1992,7 @@ The FA's founders did not agree with each other. The arguments were about two th
 1. **Handling.** Should a player be allowed to **run with the ball in their hands**?
 2. **Hacking.** Should a player be allowed to **kick an opponent in the shins**?
 
-The clubs that wanted to keep handling and hacking walked away. **Blackheath** withdrew rather than give them up. The clubs that stayed produced a game of **kicking and dribbling**, with no carrying the ball. The clubs that left eventually organised themselves into **rugby football**.
+The clubs that wanted to keep handling and hacking walked away. **Blackheath** withdrew rather than give them up. The clubs that stayed produced a game of **kicking and dribbling**, with no carrying the ball. The clubs that left eventually organized themselves into **rugby football**.
 
 So **football and rugby are siblings**, not distant relations. They were the same argument until 1863, and they separated over the question of whether you may pick the ball up. The word "soccer", from *assoc.*, exists **precisely to mark this split** (Lesson 1). Without rugby, nobody would ever have needed the word.
 
@@ -2018,7 +2018,7 @@ Three years later, on **17 April 1888**, twelve clubs meeting in Manchester crea
 | **1913** | FIFA joins The IFAB |
 | **1930** | The first **FIFA World Cup**, in Uruguay |
 
-:::reveal Football and rugby split in 1863 over two specific questions. What were they? ||| **(1) Handling**, should a player be allowed to run with the ball in their hands? And **(2) hacking**, should a player be allowed to kick an opponent in the shins? The clubs that wanted to keep both (including **Blackheath**) walked out and eventually organised rugby football. The clubs that stayed produced a kicking-and-dribbling game, and the word "soccer," from *assoc.*, exists precisely to mark that split.
+:::reveal Football and rugby split in 1863 over two specific questions. What were they? ||| **(1) Handling**, should a player be allowed to run with the ball in their hands? And **(2) hacking**, should a player be allowed to kick an opponent in the shins? The clubs that wanted to keep both (including **Blackheath**) walked out and eventually organized rugby football. The clubs that stayed produced a kicking-and-dribbling game, and the word "soccer," from *assoc.*, exists precisely to mark that split.
 
 ## Sources
 - FIFA. (n.d.). *London's football history: Laws of the Game*. Retrieved July 2026, from https://inside.fifa.com/news/london-s-football-history-laws-of-the-game-2902981
@@ -2028,7 +2028,7 @@ Three years later, on **17 April 1888**, twelve clubs meeting in Manchester crea
         {
           prompt: "Where and when was the Football Association founded, and by whom was it proposed?",
           answer:
-            "26 October 1863, at the Freemasons' Tavern in London. Ebenezer Morley, a solicitor and sportsman, proposed that football should have one standardised set of rules and met representatives of a dozen clubs.",
+            "26 October 1863, at the Freemasons' Tavern in London. Ebenezer Morley, a solicitor and sportsman, proposed that football should have one standardized set of rules and met representatives of a dozen clubs.",
         },
         {
           prompt: "When did The FA legalise professionalism, and why does it matter?",
@@ -2046,13 +2046,13 @@ Three years later, on **17 April 1888**, twelve clubs meeting in Manchester crea
       slug: "football-global-spread",
       title: "21 · How the game went global, and why the best of it is not European",
       section: "Section 5 · Where the game came from",
-      body: `Football travelled the world along the routes of **British trade and empire**: sailors, railway engineers, mining companies, bankers, teachers and missionaries carried a ball and a rulebook to every port they worked in. That is the standard story and it is true as far as it goes.
+      body: `Football traveled the world along the routes of **British trade and empire**: sailors, railway engineers, mining companies, bankers, teachers and missionaries carried a ball and a rulebook to every port they worked in. That is the standard story and it is true as far as it goes.
 
 **But it is only half the story, and the second half is the interesting one.**
 
 Everywhere the game landed, **local people took it and made it their own**, and in most places they got very good at it very fast, often specifically by beating the people who brought it. Football did not stay a British export. It became a genuinely global vernacular, and the places it landed in reshaped it:
 
-- **South America**, Argentina, Brazil, Uruguay, did not merely adopt football; it developed a distinct playing culture and then dominated the world stage. **Uruguay won the first World Cup, in 1930**, as hosts, beating Argentina 4-2 in the final (FIFA, n.d.). The idea that the game's centre of gravity has always been European is simply false, and it was false almost immediately.
+- **South America**, Argentina, Brazil, Uruguay, did not merely adopt football; it developed a distinct playing culture and then dominated the world stage. **Uruguay won the first World Cup, in 1930**, as hosts, beating Argentina 4-2 in the final (FIFA, n.d.). The idea that the game's center of gravity has always been European is simply false, and it was false almost immediately.
 - **Africa** has produced generations of world-class players and a fiercely competitive continental game, while remaining, as Section 7 will show, on the wrong end of the sport's economics.
 - **Asia** hosts some of the largest football audiences on Earth and a rapidly growing professional infrastructure.
 
@@ -2069,7 +2069,7 @@ Everywhere the game landed, **local people took it and made it their own**, and 
 
 **And, for accuracy:** the **2026 FIFA World Cup** is being played across **Canada, Mexico and the United States** with an expanded format, **48 teams** and **104 matches**, replacing the old 32-team, eight-group structure with **12 groups of four** (FIFA, n.d.). It is happening as this course is published, so this course is not going to tell you who won it.
 
-:::reveal Which country won the first FIFA World Cup, in which year, and why does that fact matter to how we tell football's history? ||| **Uruguay**, in **1930**, as hosts, beating Argentina 4-2 in the final. It matters because it demolishes the assumption that the game's centre of gravity has always been European. South America did not merely adopt football; it developed its own playing culture and dominated the world stage **immediately**.
+:::reveal Which country won the first FIFA World Cup, in which year, and why does that fact matter to how we tell football's history? ||| **Uruguay**, in **1930**, as hosts, beating Argentina 4-2 in the final. It matters because it demolishes the assumption that the game's center of gravity has always been European. South America did not merely adopt football; it developed its own playing culture and dominated the world stage **immediately**.
 
 ## Sources
 - FIFA. (n.d.). *1930 FIFA World Cup Uruguay*. Retrieved July 2026, from https://www.fifa.com/
@@ -2182,7 +2182,7 @@ The women's game today is growing fast: the **2023 FIFA Women's World Cup** in A
             ],
             correctIndex: 1,
             explanation:
-              "The distinction matters. Codifying is not creating. What England did in 1863 was standardise, and standardisation is exactly what let the game go global.",
+              "The distinction matters. Codifying is not creating. What England did in 1863 was standardize, and standardization is exactly what let the game go global.",
             sourceLessonSlug: "football-before-1863",
           },
           {
@@ -2195,7 +2195,7 @@ The women's game today is growing fast: the **2023 FIFA Women's World Cup** in A
             ],
             correctIndex: 1,
             explanation:
-              "Note the precision: 'the earliest form for which there is SCIENTIFIC EVIDENCE'. During the Han dynasty (206 BCE-220 CE) cuju was standardised with established rules. That is not the same as claiming a traceable line of descent, and there isn't one.",
+              "Note the precision: 'the earliest form for which there is SCIENTIFIC EVIDENCE'. During the Han dynasty (206 BCE-220 CE) cuju was standardized with established rules. That is not the same as claiming a traceable line of descent, and there isn't one.",
             sourceLessonSlug: "football-before-1863",
           },
           {
@@ -2221,7 +2221,7 @@ The women's game today is growing fast: the **2023 FIFA Women's World Cup** in A
             ],
             correctIndex: 1,
             explanation:
-              "Ebenezer Morley, a solicitor, met representatives of a dozen clubs there, having proposed one standardised set of rules. The first match under FA rules followed on 19 December 1863.",
+              "Ebenezer Morley, a solicitor, met representatives of a dozen clubs there, having proposed one standardized set of rules. The first match under FA rules followed on 19 December 1863.",
             sourceLessonSlug: "football-1863-and-the-fa",
           },
           {
@@ -2234,7 +2234,7 @@ The women's game today is growing fast: the **2023 FIFA Women's World Cup** in A
             ],
             correctIndex: 1,
             explanation:
-              "Blackheath and others withdrew rather than give up handling and hacking, and eventually organised rugby football. Football and rugby are siblings, and the word 'soccer' exists precisely to mark that split.",
+              "Blackheath and others withdrew rather than give up handling and hacking, and eventually organized rugby football. Football and rugby are siblings, and the word 'soccer' exists precisely to mark that split.",
             sourceLessonSlug: "football-1863-and-the-fa",
           },
           {
@@ -2268,7 +2268,7 @@ The women's game today is growing fast: the **2023 FIFA Women's World Cup** in A
             options: ["Brazil, the hosts, in 1950", "Uruguay, the hosts, in 1930", "England, the hosts, in 1966", "Italy, the hosts, in 1934"],
             correctIndex: 1,
             explanation:
-              "Uruguay beat Argentina 4-2 in the 1930 final in Montevideo. It demolishes the assumption that football's centre of gravity has always been European, South America was dominant almost immediately.",
+              "Uruguay beat Argentina 4-2 in the 1930 final in Montevideo. It demolishes the assumption that football's center of gravity has always been European, South America was dominant almost immediately.",
             sourceLessonSlug: "football-global-spread",
           },
           {
@@ -2365,7 +2365,7 @@ The women's game today is growing fast: the **2023 FIFA Women's World Cup** in A
     {
       slug: "football-who-runs-what",
       title: "23 · Who runs what: the five layers of football governance",
-      section: "Section 6 · How the sport is organised",
+      section: "Section 6 · How the sport is organized",
       body: `Football's governance is **routinely blurred**, by journalists, by broadcasters, and by other courses. Here it is, exactly, in five layers. Learn this table and you will be more precise about football than most people who write about it professionally.
 
 | Layer | Who | What they actually control |
@@ -2373,7 +2373,7 @@ The women's game today is growing fast: the **2023 FIFA Women's World Cup** in A
 | **1. The Laws** | **The IFAB** | The 17 Laws of the Game. **Nothing else.** |
 | **2. The world body** | **FIFA** | 211 member associations; the World Cup and other global competitions; the international **transfer** system; four of The IFAB's eight votes |
 | **3. Confederations** | **UEFA · CONMEBOL · CAF · CONCACAF · AFC · OFC** | Continental competitions and continental governance |
-| **4. National associations** | The FA (England), U.S. Soccer, the DFB (Germany), the CBF (Brazil)… | The game inside one country: national teams, referees, coaching licences, the domestic pyramid, discipline |
+| **4. National associations** | The FA (England), U.S. Soccer, the DFB (Germany), the CBF (Brazil)… | The game inside one country: national teams, referees, coaching licenses, the domestic pyramid, discipline |
 | **5. Leagues and clubs** | The Premier League, MLS, the NWSL, Liga MX… | Their own competition rules, the ones the Laws leave to the "competition" |
 
 **The confederations, in full** (FIFA, n.d.):
@@ -2438,8 +2438,8 @@ Once you see this, football's rules stop being confusing. There is one rulebook 
     {
       slug: "football-the-pyramid",
       title: "24 · The pyramid: promotion, relegation, and why American leagues are different",
-      section: "Section 6 · How the sport is organised",
-      body: `Most of the football world is organised as a **pyramid**, and the pyramid is the single biggest structural difference between football and American sport.
+      section: "Section 6 · How the sport is organized",
+      body: `Most of the football world is organized as a **pyramid**, and the pyramid is the single biggest structural difference between football and American sport.
 
 **How it works.** Divisions are stacked. At the end of each season, the **best teams in a division are promoted** to the one above, and the **worst are relegated** to the one below. In England, the ladder runs from the **Premier League** down through the **EFL Championship**, **League One**, **League Two**, into the **National League**, and then keeps going, through regional divisions, right down to genuinely local amateur football.
 
@@ -2491,7 +2491,7 @@ That last point deserves emphasis, because pyramid romantics skip it: **open pyr
     {
       slug: "football-leagues-and-competitions",
       title: "25 · The leagues and competitions worth knowing, men's and women's",
-      section: "Section 6 · How the sport is organised",
+      section: "Section 6 · How the sport is organized",
       body: `**Three different kinds of competition run at the same time**, and confusing them is the most common way to sound lost in a football conversation.
 
 | Type | What it is | Example |
@@ -2525,7 +2525,7 @@ But **do not mistake wealth for the whole game.** Enormous football cultures wit
 | **Liga F** | Spain |
 | **Frauen-Bundesliga** | Germany |
 
-**One concrete, verifiable difference worth knowing:** the **NWSL abolished its college draft.** The NCAA's own research now notes that the NWSL is excluded from its professional-probability tables because the league has **discontinued its draft** (NCAA Research, 2026). Players now enter as **free agents**, negotiating with any club, a genuinely significant labour change, and the sort of concrete detail that separates someone who follows the women's game from someone who says they support it.
+**One concrete, verifiable difference worth knowing:** the **NWSL abolished its college draft.** The NCAA's own research now notes that the NWSL is excluded from its professional-probability tables because the league has **discontinued its draft** (NCAA Research, 2026). Players now enter as **free agents**, negotiating with any club, a genuinely significant labor change, and the sort of concrete detail that separates someone who follows the women's game from someone who says they support it.
 
 ---
 
@@ -2551,7 +2551,7 @@ But **do not mistake wealth for the whole game.** Enormous football cultures wit
 
 **And the current one:** the **2026 FIFA World Cup**, hosted by **Canada, Mexico and the United States**, is the first with **48 teams** and **104 matches**, 12 groups of four, with the top two from each group plus the eight best third-placed teams advancing to a round of 32 (FIFA, n.d.). It is being played as this course is published. **This course is not going to tell you who won it**, go and find out, and notice that a source which *does* tell you, without checking, is a source that guesses.
 
-:::reveal What genuinely significant labour change has the NWSL made, and how do you know it is true rather than rumour? ||| It **abolished its college draft**, players now enter the league as **free agents** who can negotiate with any club. You know it because the **NCAA's own research** now excludes the NWSL from its professional-probability tables on the explicit grounds that the league has **discontinued its draft**. That is a governing body documenting the change in its own published methodology, not a rumour.
+:::reveal What genuinely significant labour change has the NWSL made, and how do you know it is true rather than rumour? ||| It **abolished its college draft**, players now enter the league as **free agents** who can negotiate with any club. You know it because the **NCAA's own research** now excludes the NWSL from its professional-probability tables on the explicit grounds that the league has **discontinued its draft**. That is a governing body documenting the change in its own published methodology, not a rumor.
 
 ## Sources
 - FIFA. (n.d.). *How the FIFA World Cup 26 will work with 48 teams*. Retrieved July 2026, from https://www.fifa.com/en/articles/article-fifa-world-cup-2026-mexico-canada-usa-new-format-tournament-football-soccer
@@ -2572,8 +2572,8 @@ But **do not mistake wealth for the whole game.** Enormous football cultures wit
     },
     {
       slug: "football-quiz-section-6",
-      title: "Section 6 quiz · How the sport is organised",
-      section: "Section 6 · How the sport is organised",
+      title: "Section 6 quiz · How the sport is organized",
+      section: "Section 6 · How the sport is organized",
       quiz: {
         passingScore: 70,
         shuffleOptions: true,
@@ -2771,7 +2771,7 @@ But **do not mistake wealth for the whole game.** Enormous football cultures wit
     {
       slug: "football-transfers-and-academies",
       title: "26 · Transfers and academies: how a player becomes an asset",
-      section: "Section 7 · Money, labour, and the cost of the game",
+      section: "Section 7 · Money, labor, and the cost of the game",
       body: `In most sports, a player under contract simply plays out that contract. In football, a club that wants a player who is under contract at another club **buys the contract**, and the price is the **transfer fee**.
 
 **How a transfer actually works.**
@@ -2783,7 +2783,7 @@ But **do not mistake wealth for the whole game.** Enormous football cultures wit
 
 The fee goes **to the selling club**, not to the player. The player gets **wages** and, usually, a **signing-on fee**.
 
-**And a player whose contract has EXPIRED costs nothing.** They are a **free agent** and may sign with anyone. This is the single most important economic fact in football's labour market, and it is the reason a club will often sell a star with one year left rather than lose them for nothing next summer. Contract length is leverage.
+**And a player whose contract has EXPIRED costs nothing.** They are a **free agent** and may sign with anyone. This is the single most important economic fact in football's labor market, and it is the reason a club will often sell a star with one year left rather than lose them for nothing next summer. Contract length is leverage.
 
 **The numbers, cited.**
 
@@ -2800,15 +2800,15 @@ A professional club's **academy** recruits children, often from the age of eight
 
 This is a genuinely rational business. It is also where the ethics get uncomfortable, and you should understand why:
 
-- **The failure rate is enormous.** The overwhelming majority of children who enter a professional academy will **not** become professional footballers. They will be released, often as teenagers, often after years in which football has been the organising principle of their entire life and education has been the thing they fitted around it.
-- **A released 16-year-old has an identity problem, not just a career problem.** This is a well-recognised welfare issue in the game, and clubs are increasingly required to provide educational and aftercare support. Whether they do it well is a fair question to ask of any academy you or a friend are considering.
-- **A child in an academy is, on the club's balance sheet, a speculative asset.** That is not a slur. It is an accurate description of the incentive, and the incentive explains a great deal of the behaviour in this section.
+- **The failure rate is enormous.** The overwhelming majority of children who enter a professional academy will **not** become professional footballers. They will be released, often as teenagers, often after years in which football has been the organizing principle of their entire life and education has been the thing they fitted around it.
+- **A released 16-year-old has an identity problem, not just a career problem.** This is a well-recognized welfare issue in the game, and clubs are increasingly required to provide educational and aftercare support. Whether they do it well is a fair question to ask of any academy you or a friend are considering.
+- **A child in an academy is, on the club's balance sheet, a speculative asset.** That is not a slur. It is an accurate description of the incentive, and the incentive explains a great deal of the behavior in this section.
 
 **Solidarity and training compensation.** FIFA's transfer system does try to send money back down the chain: when a player is transferred internationally, a proportion is meant to flow to the clubs that **trained** them between roughly the ages of 12 and 23. In principle this rewards the small club that found a talent at eleven. In practice, whether small clubs, especially outside Europe, actually receive what they are owed is a persistent and legitimate complaint.
 
 **The honest summary.** The transfer system is a market in **human beings' registrations**, in which the people being valued **do not receive the fee**. It has produced enormous wealth, a genuinely global talent pipeline, and (as the next lesson shows) a set of incentives that lead directly to the exploitation of children.
 
-:::reveal Why will a club often sell its best player one year before their contract expires, rather than keeping them for the final season? ||| Because a player whose contract has **expired** becomes a **free agent** and can leave **for nothing**. Selling with a year left is the club's last chance to convert the player into a fee. Contract length is leverage, it is the single most important economic fact in football's labour market.
+:::reveal Why will a club often sell its best player one year before their contract expires, rather than keeping them for the final season? ||| Because a player whose contract has **expired** becomes a **free agent** and can leave **for nothing**. Selling with a year left is the club's last chance to convert the player into a fee. Contract length is leverage, it is the single most important economic fact in football's labor market.
 
 ## Sources
 - ESPN. (2025, January 26). *How Chelsea broke the women's transfer record to sign USWNT star Girma*. https://www.espn.com/soccer/story/_/id/43557138/how-chelsea-broke-world-record-sign-naomi-girma-san-diego-wave
@@ -2835,7 +2835,7 @@ This is a genuinely rational business. It is also where the ethics get uncomfort
     {
       slug: "football-agents-minors-and-exploitation",
       title: "27 · Agents, minors, and the trade in other people's children",
-      section: "Section 7 · Money, labour, and the cost of the game",
+      section: "Section 7 · Money, labor, and the cost of the game",
       body: `Here is a market with the following properties:
 
 - The prize is **life-changing wealth**.
@@ -2860,7 +2860,7 @@ With narrow, listed exceptions, including:
 - **(c)** The player lives **within 50 km of a national border** and the new club is within 50 km of the same border on the other side (with both associations consenting).
 - Plus provision for **refugees and protected persons**.
 
-Read exception (b) again. It is the rule that says: **if you take a 16-year-old's childhood, you owe them a fallback.** Whether that obligation is honoured in practice is one of the sharpest questions in the sport.
+Read exception (b) again. It is the rule that says: **if you take a 16-year-old's childhood, you owe them a fallback.** Whether that obligation is honored in practice is one of the sharpest questions in the sport.
 
 **Why Article 19 exists at all:** because without it, clubs would simply buy children internationally, and a large number would be discarded far from home.
 
@@ -2896,11 +2896,11 @@ That figure describes a **hidden population**, people engaged in an activity tha
 - The **scale is genuinely contested**, and **nobody has a reliable count**.
 - **A course that gives you a confident number is telling you something it cannot know.**
 
-That is a less satisfying lesson than a big scary statistic. It is also a **better** one, and it is the whole point of a cited education: **learning to say "the exploitation is documented; the number is not" is a harder and more valuable skill than memorising a figure that might be invented.**
+That is a less satisfying lesson than a big scary statistic. It is also a **better** one, and it is the whole point of a cited education: **learning to say "the exploitation is documented; the number is not" is a harder and more valuable skill than memorizing a figure that might be invented.**
 
 **Agent regulation** is a live and contested area. FIFA has re-introduced a licensing system requiring agents to pass an examination, but parts of the accompanying regulations, in particular attempts to **cap agents' commissions**, have been **challenged in courts and in arbitration**, and their status has shifted. **If you need the current position, check FIFA's own published regulations and the relevant rulings, do not take it from a course, including this one.** That is not evasion; it is the honest state of the question.
 
-:::reveal Why does this course refuse to state that 15,000 young African players are trafficked each year? ||| Because it describes a **hidden population**, unrecorded, often illegal, invisible to official statistics, and estimates of hidden populations are unreliable in **both directions**. Researchers of football migration caution that these figures must be treated with care. What IS true: **the exploitation is real, documented and serious; the scale is genuinely contested; and nobody has a reliable count.** Saying "the exploitation is documented, the number is not" is harder, and far more valuable, than memorising a figure that may be invented.
+:::reveal Why does this course refuse to state that 15,000 young African players are trafficked each year? ||| Because it describes a **hidden population**, unrecorded, often illegal, invisible to official statistics, and estimates of hidden populations are unreliable in **both directions**. Researchers of football migration caution that these figures must be treated with care. What IS true: **the exploitation is real, documented and serious; the scale is genuinely contested; and nobody has a reliable count.** Saying "the exploitation is documented, the number is not" is harder, and far more valuable, than memorizing a figure that may be invented.
 
 ## Sources
 - Esson, J. (2015). Better off at home? Rethinking responses to trafficked West African footballers in Europe. *Journal of Ethnic and Migration Studies, 41*(3), 512-530. https://doi.org/10.1080/1369183X.2014.927733
@@ -2922,8 +2922,8 @@ That is a less satisfying lesson than a big scary statistic. It is also a **bett
     {
       slug: "football-qatar-2022",
       title: "28 · Qatar 2022: four numbers, four different questions",
-      section: "Section 7 · Money, labour, and the cost of the game",
-      body: `The 2022 FIFA World Cup in Qatar required an enormous construction programme, stadiums, but also a metro, roads, hotels and an entire new city, built overwhelmingly by **migrant workers** from South and Southeast Asia and East Africa.
+      section: "Section 7 · Money, labor, and the cost of the game",
+      body: `The 2022 FIFA World Cup in Qatar required an enormous construction program, stadiums, but also a metro, roads, hotels and an entire new city, built overwhelmingly by **migrant workers** from South and Southeast Asia and East Africa.
 
 **How many of them died?**
 
@@ -2965,7 +2965,7 @@ This is where the dispute stops being about arithmetic and starts being about **
 
 **So the honest conclusion is not a number. It is this:**
 
-> **The true toll of the labour that built Qatar 2022 is genuinely unknown — and it is unknown in large part because the deaths were not investigated. The absence of a reliable figure is not a neutral gap in the data. It is itself the finding.**
+> **The true toll of the labor that built Qatar 2022 is genuinely unknown — and it is unknown in large part because the deaths were not investigated. The absence of a reliable figure is not a neutral gap in the data. It is itself the finding.**
 
 That is a harder sentence than "6,500 workers died." It is also the true one, and the one you can defend.
 
@@ -2999,7 +2999,7 @@ That is a harder sentence than "6,500 workers died." It is also the true one, an
     {
       slug: "football-pay-to-play",
       title: "29 · Pay-to-play: how American youth football gates access by income",
-      section: "Section 7 · Money, labour, and the cost of the game",
+      section: "Section 7 · Money, labor, and the cost of the game",
       body: `Everything in this section so far has been about somewhere else. This one is about **the United States**, and it is probably the part of this course most likely to be about **you**.
 
 **In most of the world, football is the cheapest sport there is.** A ball, some grass, two piles of jumpers for goalposts. That is the entire barrier to entry, which is exactly why the game is played everywhere, by everyone, and why so many of its greatest players came from places with no money at all.
@@ -3043,7 +3043,7 @@ A child from a household earning over $100,000 is **substantially more likely** 
 
 In **1921**, the FA did not ban women from playing football. It **locked them out of the grounds**, and without grounds there were no crowds, no revenue, and no pathway.
 
-In the **United States today**, nobody bans poor children from playing football. **The pathway simply costs money they do not have**, and without the club, the travel, and the tournaments, they are invisible to the scouts, the college coaches, and the national team programme.
+In the **United States today**, nobody bans poor children from playing football. **The pathway simply costs money they do not have**, and without the club, the travel, and the tournaments, they are invisible to the scouts, the college coaches, and the national team program.
 
 **Different century. Different mechanism. Same result: the people who control access decide who gets to play.**
 
@@ -3084,8 +3084,8 @@ This is why the pay-to-play problem is a **talent** problem as well as a **justi
     },
     {
       slug: "football-quiz-section-7",
-      title: "Section 7 quiz · Money, labour, and the cost of the game",
-      section: "Section 7 · Money, labour, and the cost of the game",
+      title: "Section 7 quiz · Money, labor, and the cost of the game",
+      section: "Section 7 · Money, labor, and the cost of the game",
       quiz: {
         passingScore: 70,
         shuffleOptions: true,
@@ -3113,7 +3113,7 @@ This is why the pay-to-play problem is a **talent** problem as well as a **justi
             ],
             correctIndex: 1,
             explanation:
-              "Contract length is leverage, the single most important economic fact in football's labour market.",
+              "Contract length is leverage, the single most important economic fact in football's labor market.",
             sourceLessonSlug: "football-transfers-and-academies",
           },
           {
@@ -3165,7 +3165,7 @@ This is why the pay-to-play problem is a **talent** problem as well as a **justi
             ],
             correctIndex: 1,
             explanation:
-              "It is the rule that says: if you take a 16-year-old's childhood, you owe them a fallback. Whether that obligation is honoured in practice is one of the sharpest questions in the sport.",
+              "It is the rule that says: if you take a 16-year-old's childhood, you owe them a fallback. Whether that obligation is honored in practice is one of the sharpest questions in the sport.",
             sourceLessonSlug: "football-agents-minors-and-exploitation",
           },
           {
@@ -3178,7 +3178,7 @@ This is why the pay-to-play problem is a **talent** problem as well as a **justi
             ],
             correctIndex: 1,
             explanation:
-              "The figure describes a hidden population, unrecorded, often illegal, invisible to statistics. Researchers of football migration caution that such numbers must be handled with care. The exploitation is documented; the SCALE is not. Learning to say that is more valuable than memorising a number.",
+              "The figure describes a hidden population, unrecorded, often illegal, invisible to statistics. Researchers of football migration caution that such numbers must be handled with care. The exploitation is documented; the SCALE is not. Learning to say that is more valuable than memorizing a number.",
             sourceLessonSlug: "football-agents-minors-and-exploitation",
           },
           {
@@ -3303,7 +3303,7 @@ If you are a high school student who loves football, **refereeing is the single 
 **How to actually start (United States).**
 
 1. **Age.** You must be **at least 13** to create a profile in the **U.S. Soccer Learning Center** (South Texas Soccer Referees, n.d.).
-2. **The course.** The entry-level qualification is the **Grassroots referee** licence: an **online component of roughly 4.5 hours** plus an **in-person field session** (South Texas Soccer Referees, n.d.).
+2. **The course.** The entry-level qualification is the **Grassroots referee** license: an **online component of roughly 4.5 hours** plus an **in-person field session** (South Texas Soccer Referees, n.d.).
 3. **The cost.** It varies by state association. The South Texas association publishes a **$55** total fee for the first-time referee course; other associations publish different figures, and some bundle a starter kit. **Check your own state association's published fee, do not assume this one applies to you.**
 4. **Background check.** Required **only if you are 18 or older** (South Texas Soccer Referees, n.d.).
 5. **Gear.** A whistle, a watch, cards, a notebook, and a uniform. Law 5 actually specifies the compulsory equipment, whistle, watch, red and yellow cards, and a means of keeping a record of the match (IFAB, 2026, Law 5).
@@ -3317,7 +3317,7 @@ Rates are set by **each league or association**, not nationally, so the honest w
 
 **Recreational league:**
 
-| Age group | Centre referee | Assistant referee |
+| Age group | Center referee | Assistant referee |
 | --- | --- | --- |
 | U9-U10 | $30 | $15 |
 | U11-U12 | $35 | $20 |
@@ -3327,7 +3327,7 @@ Rates are set by **each league or association**, not nationally, so the honest w
 
 **Higher-level competitive leagues (NCSL / ECNL-RL / EDP):**
 
-| Age group | Centre referee | Assistant referee |
+| Age group | Center referee | Assistant referee |
 | --- | --- | --- |
 | U11-U12 | $70 | $35-40 |
 | U13-U14 | $75 | $35-45 |
@@ -3359,7 +3359,7 @@ Refereeing has a **ladder**, exactly like coaching. Grassroots → regional → 
 
 And even if you never climb it: **you will learn the Laws better than any player you ever meet, you will get paid every weekend of your teens, and you will understand football from the inside.**
 
-:::reveal You are 15, you have $55, and you want to earn money from football this season. What is the single most direct path, and what is the first thing you should do? ||| **Become a referee.** You can create a U.S. Soccer Learning Center profile from age **13**; the Grassroots licence takes roughly **4.5 hours online plus an in-person field session**; and a published scale like SYA's (Spring 2025) pays a centre referee **$30 at U9-U10 up to $90 at U17-U19** in top competitive leagues, often several games in one morning. **First step: look up YOUR state association's published course fee and referee pay scale** (they differ) and register for the next Grassroots course.
+:::reveal You are 15, you have $55, and you want to earn money from football this season. What is the single most direct path, and what is the first thing you should do? ||| **Become a referee.** You can create a U.S. Soccer Learning Center profile from age **13**; the Grassroots license takes roughly **4.5 hours online plus an in-person field session**; and a published scale like SYA's (Spring 2025) pays a center referee **$30 at U9-U10 up to $90 at U17-U19** in top competitive leagues, often several games in one morning. **First step: look up YOUR state association's published course fee and referee pay scale** (they differ) and register for the next Grassroots course.
 
 ## Sources
 - International Football Association Board. (2026). *Laws of the game 2026/27*, Law 5. https://downloads.theifab.com/downloads/laws-of-the-game-202627-single-pages?l=en
@@ -3370,12 +3370,12 @@ And even if you never climb it: **you will learn the Laws better than any player
         {
           prompt: "What is the minimum age to start the US Soccer grassroots referee pathway, and what does the course involve?",
           answer:
-            "13, you must be at least 13 to create a U.S. Soccer Learning Center profile. The Grassroots licence is roughly 4.5 hours of online learning plus an in-person field session. A background check is required only from age 18.",
+            "13, you must be at least 13 to create a U.S. Soccer Learning Center profile. The Grassroots license is roughly 4.5 hours of online learning plus an in-person field session. A background check is required only from age 18.",
         },
         {
           prompt: "Roughly what does refereeing pay, and how should you find your own rate?",
           answer:
-            "One published example (SYA, Virginia, Spring 2025): $30 for a U9-U10 centre up to $90 for a U17-U19 centre in top competitive leagues, with several games often scheduled in one morning. Rates are set locally, look up YOUR association's published scale.",
+            "One published example (SYA, Virginia, Spring 2025): $30 for a U9-U10 center up to $90 for a U17-U19 center in top competitive leagues, with several games often scheduled in one morning. Rates are set locally, look up YOUR association's published scale.",
         },
         {
           prompt: "What is the single best defence against being shouted at as a young referee?",
@@ -3388,7 +3388,7 @@ And even if you never climb it: **you will learn the Laws better than any player
       slug: "football-coaching-badges",
       title: "31 · Coaching: the licensing ladder, and how to get on it",
       section: "Section 8 · Opportunities for amateurs and entrepreneurs",
-      body: `Coaching is a **licensed profession**, and the licence ladder is public, structured, and open to a teenager. You do **not** need to have been a professional player. Many excellent coaches were not, and some of the best managers in the world barely played at all.
+      body: `Coaching is a **licensed profession**, and the license ladder is public, structured, and open to a teenager. You do **not** need to have been a professional player. Many excellent coaches were not, and some of the best managers in the world barely played at all.
 
 ---
 
@@ -3399,34 +3399,34 @@ It starts free and gets progressively more demanding:
 | Level | What it is |
 | --- | --- |
 | **Introduction to Grassroots Coaching** | A short, **free** online module. This is the front door, anyone can walk through it today. |
-| **Grassroots licences: 4v4, 7v7, 9v9, 11v11** | Short (around two-hour) courses, each tied to a game format. Available online and in person. **Two must be taken in person**, and one of those in-person courses must be the **11v11**, before you can move up. |
-| **National D Licence** | The **first formal licence** and the step from grassroots into competitive coaching, a multi-week course combining in-person sessions, virtual meetings, assignments and mentoring with a licensed U.S. Soccer educator. |
-| **National C Licence** | Aimed at coaching in the roughly U13-U17 environment. |
-| **National B Licence** | A months-long course focused on player and team development in a performance environment. Requires holding the C for a period, several years' coaching experience, and an active coaching role with access to 11v11 training. |
-| **National A Licence** | Typically split into **A-Youth** (developing the future professional player) and **A-Senior** (high-performance senior environments). |
-| **Pro Licence** | The top qualification, for coaching at the professional level (MLS, NWSL, USL, national teams). |
+| **Grassroots licenses: 4v4, 7v7, 9v9, 11v11** | Short (around two-hour) courses, each tied to a game format. Available online and in person. **Two must be taken in person**, and one of those in-person courses must be the **11v11**, before you can move up. |
+| **National D License** | The **first formal license** and the step from grassroots into competitive coaching, a multi-week course combining in-person sessions, virtual meetings, assignments and mentoring with a licensed U.S. Soccer educator. |
+| **National C License** | Aimed at coaching in the roughly U13-U17 environment. |
+| **National B License** | A months-long course focused on player and team development in a performance environment. Requires holding the C for a period, several years' coaching experience, and an active coaching role with access to 11v11 training. |
+| **National A License** | Typically split into **A-Youth** (developing the future professional player) and **A-Senior** (high-performance senior environments). |
+| **Pro License** | The top qualification, for coaching at the professional level (MLS, NWSL, USL, national teams). |
 
-**Outside the US**, the equivalent ladder in Europe runs under **UEFA's coaching convention**, with licences commonly labelled **C → B → A → Pro**, administered by each **national association** (The FA in England, the DFB in Germany, and so on). **The exact names, prerequisites and costs are set by that national association, look them up at the source for the country you are in.** Do not take a course's word for it, including this one.
+**Outside the US**, the equivalent ladder in Europe runs under **UEFA's coaching convention**, with licenses commonly labeled **C → B → A → Pro**, administered by each **national association** (The FA in England, the DFB in Germany, and so on). **The exact names, prerequisites and costs are set by that national association, look them up at the source for the country you are in.** Do not take a course's word for it, including this one.
 
 ---
 
 **Why this is a genuinely good route for a young person.**
 
-- **You can start now.** The introductory module is free and online. The grassroots licences are short and cheap relative to almost any other professional qualification.
-- **The work exists immediately.** Youth clubs, camps, and recreational leagues need coaches constantly, and a licensed 17-year-old who is reliable, safe and organised is genuinely employable.
-- **It compounds.** Every licence unlocks the next, and every season of coaching is a prerequisite for the level above. A person who starts the ladder at 16 and keeps going is, at 26, ten years into a licensed career while their peers are just starting one.
+- **You can start now.** The introductory module is free and online. The grassroots licenses are short and cheap relative to almost any other professional qualification.
+- **The work exists immediately.** Youth clubs, camps, and recreational leagues need coaches constantly, and a licensed 17-year-old who is reliable, safe and organized is genuinely employable.
+- **It compounds.** Every license unlocks the next, and every season of coaching is a prerequisite for the level above. A person who starts the ladder at 16 and keeps going is, at 26, ten years into a licensed career while their peers are just starting one.
 - **It is transferable.** Everything coaching teaches, planning a session, holding a room, giving feedback, managing conflict with parents, is a management skill in a tracksuit.
 
 ---
 
 **How to actually be good at it, briefly.**
 
-- **Maximise touches.** The single most common mistake in youth coaching is drills in which twelve children stand in a line and one child touches the ball. **Small-sided games** with lots of repetitions beat elaborate exercises. If your session has a queue in it, redesign the session.
+- **Maximize touches.** The single most common mistake in youth coaching is drills in which twelve children stand in a line and one child touches the ball. **Small-sided games** with lots of repetitions beat elaborate exercises. If your session has a queue in it, redesign the session.
 - **Let them play.** Children learn football by playing football. A session that is 80% talking is a session about you.
 - **Coach the decision, not just the outcome.** "Good pass" teaches nothing. "You saw the switch was on, good decision" teaches the thing you actually want repeated.
 - **Safeguarding is not paperwork.** Background checks, certification, never being alone with a child, knowing your club's reporting procedure. It is the **most important part of the job** and the part that ends careers when it is neglected. Take it seriously from your very first session.
 
-:::reveal You are 16 and want to start coaching. What is the very first, free step, and what is the constraint on climbing past the grassroots level? ||| The **free online "Introduction to Grassroots Coaching" module**, that is the front door, and you can do it today. Then the grassroots licences (**4v4, 7v7, 9v9, 11v11**). The constraint: **two of the grassroots courses must be taken IN PERSON, and one of those must be the 11v11 course**, before you can progress to the **National D Licence**, the first formal licence and the step into competitive coaching.
+:::reveal You are 16 and want to start coaching. What is the very first, free step, and what is the constraint on climbing past the grassroots level? ||| The **free online "Introduction to Grassroots Coaching" module**, that is the front door, and you can do it today. Then the grassroots licenses (**4v4, 7v7, 9v9, 11v11**). The constraint: **two of the grassroots courses must be taken IN PERSON, and one of those must be the 11v11 course**, before you can progress to the **National D License**, the first formal license and the step into competitive coaching.
 
 ## Sources
 - U.S. Soccer. (2018, August 15). *7v7, 9v9 and 11v11 online courses complete new U.S. Soccer grassroots coaching pathway*. https://www.ussoccer.com/stories/2018/08/7v7-9v9-and-11v11-online-courses-complete-new-us-soccer-grassroots-coaching-pathway
@@ -3436,12 +3436,12 @@ It starts free and gets progressively more demanding:
         {
           prompt: "What is the first step on the U.S. Soccer coaching ladder, and what does it cost?",
           answer:
-            "The 'Introduction to Grassroots Coaching' online module, it is free and short. From there: the 4v4, 7v7, 9v9 and 11v11 grassroots licences, then the National D Licence.",
+            "The 'Introduction to Grassroots Coaching' online module, it is free and short. From there: the 4v4, 7v7, 9v9 and 11v11 grassroots licenses, then the National D License.",
         },
         {
           prompt: "What is the most common mistake in youth coaching?",
           answer:
-            "Drills where twelve children queue and one touches the ball. Maximise touches, small-sided games with lots of repetitions beat elaborate exercises. If your session has a queue in it, redesign the session.",
+            "Drills where twelve children queue and one touches the ball. Maximize touches, small-sided games with lots of repetitions beat elaborate exercises. If your session has a queue in it, redesign the session.",
         },
       ],
     },
@@ -3540,7 +3540,7 @@ So: **anyone who quotes you a precise "X% of high school players turn pro" figur
       slug: "football-starting-a-club-or-league",
       title: "33 · Building something: clubs, futsal leagues, and the entrepreneur's route in",
       section: "Section 8 · Opportunities for amateurs and entrepreneurs",
-      body: `The most underrated fact about football: **the barriers to STARTING something are astonishingly low.** You need a ball, some people, and a place. Everything else is organisation, and organisation is a skill, not a birthright.
+      body: `The most underrated fact about football: **the barriers to STARTING something are astonishingly low.** You need a ball, some people, and a place. Everything else is organization, and organization is a skill, not a birthright.
 
 ---
 
@@ -3549,8 +3549,8 @@ So: **anyone who quotes you a precise "X% of high school players turn pro" figur
 A team is eleven people who agree to turn up. (Or seven, or five.) What it actually requires is:
 
 - **A place to play**, a school field, a park, a community pitch. Ask. Councils, schools and parks departments have pitches sitting empty most of the week, and are often startled that a young person has bothered to ask about them.
-- **A way to affiliate.** To play in an organised league, a team usually needs to affiliate with the local league or state association, which brings **registration** and, importantly, **insurance**. Look up your state association's requirements. This is where "a group of mates" becomes "a club."
-- **A treasurer.** Even if it is you. Money going in and out of a shared pot needs one person accountable for it, from day one, with a written record. This is the point at which most amateur organisations fail, and it is entirely avoidable.
+- **A way to affiliate.** To play in an organized league, a team usually needs to affiliate with the local league or state association, which brings **registration** and, importantly, **insurance**. Look up your state association's requirements. This is where "a group of mates" becomes "a club."
+- **A treasurer.** Even if it is you. Money going in and out of a shared pot needs one person accountable for it, from day one, with a written record. This is the point at which most amateur organizations fail, and it is entirely avoidable.
 
 ---
 
@@ -3561,7 +3561,7 @@ A team is eleven people who agree to turn up. (Or seven, or five.) What it actua
 | Futsal's property | Why it matters commercially |
 | --- | --- |
 | **Indoors** | It is **weather-proof**. Your season does not get rained off, which means your revenue does not get rained off. |
-| **Small court** | You can run it in a **school gym, a community centre, a basketball court**, spaces that already exist, that are empty in the evenings, and that can be hired cheaply. |
+| **Small court** | You can run it in a **school gym, a community center, a basketball court**, spaces that already exist, that are empty in the evenings, and that can be hired cheaply. |
 | **Five-a-side** | You need **ten people**, not twenty-two. Filling a fixture is far easier. |
 | **Short matches** | You can run **many games in one evening** on one court, which is what makes the economics work. |
 | **Genuinely develops players** | The small court and heavy ball force **close control, fast decisions and constant touches**. It is not a watered-down version of football; it is a superb training environment for it. |
@@ -3575,14 +3575,14 @@ A team is eleven people who agree to turn up. (Or seven, or five.) What it actua
 **Other things a young person can genuinely build.**
 
 - **Coach a camp.** School holidays, younger children, parents who need childcare. Get licensed (Lesson 31), get safeguarded, charge a fair rate. This is a real, common, first business.
-- **Run a tournament.** A one-day, small-sided tournament with an entry fee per team. Logistically demanding, financially simple, and an outstanding thing to have organised at seventeen.
-- **Provide a service to clubs that already exist.** Clubs need: photography, video, social media, a website, matchday programmes, kit printing, sponsorship packages. Most amateur clubs are run by volunteers who are exhausted and would gladly pay someone competent. **Walk into a local club and ask what they cannot get done.** That question is the origin of a large number of real businesses.
+- **Run a tournament.** A one-day, small-sided tournament with an entry fee per team. Logistically demanding, financially simple, and an outstanding thing to have organized at seventeen.
+- **Provide a service to clubs that already exist.** Clubs need: photography, video, social media, a website, matchday programs, kit printing, sponsorship packages. Most amateur clubs are run by volunteers who are exhausted and would gladly pay someone competent. **Walk into a local club and ask what they cannot get done.** That question is the origin of a large number of real businesses.
 
 ---
 
-**The honest warning.** Everything above is real, and all of it is **work**. Booking courts, chasing fees, writing fixture lists, dealing with a team that drops out in week three. **The football is the easy part.** But the person who has organised a futsal league at seventeen has done something almost nobody their age has done, and can prove it, and that is worth considerably more than a trophy.
+**The honest warning.** Everything above is real, and all of it is **work**. Booking courts, chasing fees, writing fixture lists, dealing with a team that drops out in week three. **The football is the easy part.** But the person who has organized a futsal league at seventeen has done something almost nobody their age has done, and can prove it, and that is worth considerably more than a trophy.
 
-:::reveal Why is a futsal league a better first venture than an outdoor 11-a-side league? ||| Because almost every commercial risk is smaller. It is **indoors** (weather-proof, your revenue can't be rained off), it fits in **spaces that already exist and sit empty in the evenings** (a school gym, a community centre), it needs only **ten players** to fill a fixture rather than twenty-two, and **short matches** let you run many games on one court in one evening, which is what makes the economics work. Your downside is **one night's court hire**, and you'll know within one evening whether it's a business or a hobby.
+:::reveal Why is a futsal league a better first venture than an outdoor 11-a-side league? ||| Because almost every commercial risk is smaller. It is **indoors** (weather-proof, your revenue can't be rained off), it fits in **spaces that already exist and sit empty in the evenings** (a school gym, a community center), it needs only **ten players** to fill a fixture rather than twenty-two, and **short matches** let you run many games on one court in one evening, which is what makes the economics work. Your downside is **one night's court hire**, and you'll know within one evening whether it's a business or a hobby.
 
 ## Sources
 - U.S. Soccer. (n.d.). *U.S. Soccer Learning Center*. Retrieved July 2026, from https://learning.ussoccer.com/`,
@@ -3617,9 +3617,9 @@ A professional club fields eleven players. It **employs**, directly or through t
 
 **Grounds and pitch management.** A **groundskeeper** is an applied scientist. Soil, drainage, grass species, seed, irrigation, disease, fertiliser, mowing height, wear patterns, and (increasingly) hybrid natural/artificial surfaces (which Law 1 explicitly permits where competition rules allow). Every club, school, university, park and stadium needs its pitches maintained. It is **skilled**, **licensed** in places, **outdoors**, and there is genuine demand. Almost no teenager considers it, which is precisely the point.
 
-**Sports medicine and performance.** Physiotherapists, athletic trainers, doctors, sports scientists, strength and conditioning coaches, nutritionists, and (a fast-growing area) **rehabilitation** and **injury-prevention** specialists. These are qualified professions with real training routes, and they exist at every level from a college programme upward.
+**Sports medicine and performance.** Physiotherapists, athletic trainers, doctors, sports scientists, strength and conditioning coaches, nutritionists, and (a fast-growing area) **rehabilitation** and **injury-prevention** specialists. These are qualified professions with real training routes, and they exist at every level from a college program upward.
 
-**Performance analysis.** The person who codes every match, tags every event, builds the opposition report, and hands the coach the clips that decide the team talk. **This is now a standard role at professional clubs**, and it is one of the most accessible ways in for a young person who is good with a laptop, because the entry test is a **portfolio**, not a CV. **Analyse a match. Write it up. Publish it. Do it again.** Do that fifty times and you have something almost nobody else applying has.
+**Performance analysis.** The person who codes every match, tags every event, builds the opposition report, and hands the coach the clips that decide the team talk. **This is now a standard role at professional clubs**, and it is one of the most accessible ways in for a young person who is good with a laptop, because the entry test is a **portfolio**, not a CV. **Analyze a match. Write it up. Publish it. Do it again.** Do that fifty times and you have something almost nobody else applying has.
 
 **Data and recruitment analytics.** Clubs employ statisticians and data scientists to value players and model outcomes (expected goals, from Lesson 7, is the most famous product of this field). If you like maths and football, this is a real, growing, well-paid job, and it did not exist twenty-five years ago.
 
@@ -3627,7 +3627,7 @@ A professional club fields eleven players. It **employs**, directly or through t
 
 **Media, broadcast and content.** Commentary, journalism, podcasting, video, social media, club channels. Every club and league is now also a **media company**. The barrier to producing football media is currently **zero**, and the barrier to being **good** at it is the only real filter.
 
-**Club operations, commercial and community.** Ticketing, sponsorship, matchday operations, merchandise, community programmes, safeguarding, finance, and running the actual organisation. **These are ordinary professional jobs, in football.** A club needs an accountant just as much as a hospital does.
+**Club operations, commercial and community.** Ticketing, sponsorship, matchday operations, merchandise, community programs, safeguarding, finance, and running the actual organization. **These are ordinary professional jobs, in football.** A club needs an accountant just as much as a hospital does.
 
 **Kit, equipment, facilities, security, hospitality.** Real jobs. Real people. Every matchday.
 
@@ -3653,7 +3653,7 @@ You are extremely unlikely to be paid to play football. You are **very likely in
 
 **Almost nobody makes a living playing. The surrounding industry is where the jobs actually are, and it is enormous.** Go and find your part of it.
 
-:::reveal You want a job in football analysis and you are 17 with no contacts. What is the entry test, and what should you do this week? ||| The entry test is a **portfolio, not a CV**, nobody is checking your credentials, they are checking your work. So: **analyse a match. Write it up. Publish it. Do it again.** Do that fifty times and you have something almost nobody else applying has. The same logic applies to scouting (write reports on players in your own local league) and to football media (the barrier to producing it is zero; the barrier to being good at it is the only filter).
+:::reveal You want a job in football analysis and you are 17 with no contacts. What is the entry test, and what should you do this week? ||| The entry test is a **portfolio, not a CV**, nobody is checking your credentials, they are checking your work. So: **analyze a match. Write it up. Publish it. Do it again.** Do that fifty times and you have something almost nobody else applying has. The same logic applies to scouting (write reports on players in your own local league) and to football media (the barrier to producing it is zero; the barrier to being good at it is the only filter).
 
 ## Sources
 - International Football Association Board. (2026). *Laws of the game 2026/27*, Law 1. https://downloads.theifab.com/downloads/laws-of-the-game-202627-single-pages?l=en
@@ -3662,7 +3662,7 @@ You are extremely unlikely to be paid to play football. You are **very likely in
         {
           prompt: "What is the entry test for a job in football analysis or scouting?",
           answer:
-            "A PORTFOLIO, not a CV. Analyse a match, write it up, publish it, repeat. Write scouting reports on players in your own local league. Nobody will stop you, and it is literally what the job is.",
+            "A PORTFOLIO, not a CV. Analyze a match, write it up, publish it, repeat. Write scouting reports on players in your own local league. Nobody will stop you, and it is literally what the job is.",
         },
         {
           prompt: "What dominates the costs of a lower-league club, and what is the structural trap?",
@@ -3697,7 +3697,7 @@ You are extremely unlikely to be paid to play football. You are **very likely in
             options: [
               "A full four-year formal refereeing apprenticeship",
               "An online part of roughly 4.5 hours plus a field session",
-              "A single written exam only, taken at a FIFA centre",
+              "A single written exam only, taken at a FIFA center",
               "Having played competitively at college level first",
             ],
             correctIndex: 1,
@@ -3729,14 +3729,14 @@ You are extremely unlikely to be paid to play football. You are **very likely in
           {
             prompt: "What is the free first step on the U.S. Soccer coaching ladder?",
             options: [
-              "The National D coaching Licence, taken in person",
+              "The National D coaching License, taken in person",
               "The 'Introduction to Grassroots Coaching' online module",
-              "The more advanced UEFA B coaching Licence course",
-              "The elite professional-level Pro Licence course",
+              "The more advanced UEFA B coaching License course",
+              "The elite professional-level Pro License course",
             ],
             correctIndex: 1,
             explanation:
-              "A short, free online module, the front door, and you can walk through it today. Then the 4v4, 7v7, 9v9 and 11v11 grassroots licences, then the National D.",
+              "A short, free online module, the front door, and you can walk through it today. Then the 4v4, 7v7, 9v9 and 11v11 grassroots licenses, then the National D.",
             sourceLessonSlug: "football-coaching-badges",
           },
           {
@@ -3762,7 +3762,7 @@ You are extremely unlikely to be paid to play football. You are **very likely in
             ],
             correctIndex: 1,
             explanation:
-              "Maximise touches. Children learn football by playing football, and a session that is 80% talking is a session about you.",
+              "Maximize touches. Children learn football by playing football, and a session that is 80% talking is a session about you.",
             sourceLessonSlug: "football-coaching-badges",
           },
           {
@@ -3810,7 +3810,7 @@ You are extremely unlikely to be paid to play football. You are **very likely in
           {
             prompt: "Why is a futsal league an unusually good first business for a young person?",
             options: [
-              "Because it supposedly requires no organisation at all",
+              "Because it supposedly requires no organization at all",
               "Indoor and weather-proof, and needs only ten players a game",
               "Because futsal courts are entirely free almost everywhere",
               "Because it needs no referee or match officials at all",
@@ -3836,10 +3836,10 @@ You are extremely unlikely to be paid to play football. You are **very likely in
           {
             prompt: "You are 17, want to work in football analysis, and have no contacts. What is the entry test?",
             options: [
-              "A recognised university degree in sports science",
-              "A PORTFOLIO, not a CV: analyse, write, publish, repeat",
+              "A recognized university degree in sports science",
+              "A PORTFOLIO, not a CV: analyze, write, publish, repeat",
               "Having previously played at a top academy level",
-              "A formally registered FIFA player-agent licence",
+              "A formally registered FIFA player-agent license",
             ],
             correctIndex: 1,
             explanation:

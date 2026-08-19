@@ -1258,7 +1258,7 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
               "A right to intervene in grave circumstances: war crimes, genocide",
               "The permanent inviolability of all member governments and rulers",
               "The Union's right to collect taxes directly from African citizens",
-              "The abolition of all national armies in favour of one AU force",
+              "The abolition of all national armies in favor of one AU force",
             ],
             correctIndex: 0,
             explanation:
@@ -1460,8 +1460,8 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
             prompt: "Which set of facts about Senghor does the course teach TOGETHER, per its both-hands rule?",
             options: [
               "Senegal's first president and academician, AND single-party rule",
-              "Only his literary honours, since his politics are quite irrelevant",
-              "Only the Dia imprisonment, since all his honours were propaganda",
+              "Only his literary honors, since his politics are quite irrelevant",
+              "Only the Dia imprisonment, since all his honors were propaganda",
               "That he led the Gold Coast to independence as Ghana in March 1957",
             ],
             correctIndex: 0,

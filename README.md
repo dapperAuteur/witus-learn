@@ -548,6 +548,42 @@ whenever something is waiting, and any unvetted course carries an owner-only CTA
 the course manager, with a one-click **Mark this course vetted** button, so review happens where
 the course is rather than after a walk to another surface.
 
+## Review boards collapse by course
+
+`/admin/citations`, `/audit/citations` and `/admin/research` group by course and start collapsed,
+each summary line carrying its own counts (`12 sources, 3 unverified`, `5 checks, 3 open`), so a
+reviewer picks the course with outstanding work without scrolling past the finished ones. Nothing
+auto-expands on a multi-course board: with most citations still unverified, "open the groups with
+work" would expand nearly everything and undo the point. The per-course "show only unchecked"
+filter lives inside the panel it filters, so collapsing cannot defeat it.
+
+## Civics courses link back to their index
+
+A `state-civics-<code>` course links back to `/civics`, the map that is actually its index; any
+other Civics-category course links to the Civics slice of the catalog; anything else gets no extra
+link ([src/lib/civics-nav.ts](src/lib/civics-nav.ts)). Course pages also carry an **"Also available
+in a bundle"** aside with a *Get the bundle* CTA that lands on the bundle page rather than charging
+in place, plus linked paths and series.
+## Sales and promotions (no code needed)
+
+Brand admins can put a course, a bundle, or the whole school on sale from `/admin/marketing`:
+percent off, dollars off, or free, starting now or on a date, ending on a date or running
+indefinitely until ended by hand. The catalog shows the list price struck through beside the new
+one, and **checkout re-resolves the price on the server**, so the amount charged is always the
+amount shown. The course's list price is never overwritten, so ending a sale restores it exactly.
+Promo codes still work alongside sales. Subscription pricing is deliberately out of scope until
+the recurring-discount rule is decided ([src/lib/sale-pricing.ts](src/lib/sale-pricing.ts),
+migration `0054`).
+
+## Catalog prose is US English
+
+A 2026-08-19 sweep converted 3,421 UK spellings to US across 118 course files, touching only
+display fields. Machine-readable and history-keyed strings were left alone by construction: no
+slug, quiz prompt, `:::reveal` question, accepted-answer list, URL, bibliography entry or verbatim
+quotation changed (the US Constitution's "good Behaviour", the International Labour Organization's
+own name, and 143 other proper nouns included). What remains is logged with file and line in the
+sweep's own report.
+
 ## Specialization credentials
 
 Named three-course tracks (shared research core + craft medium + subject, per the Documentarian
@@ -635,8 +671,8 @@ Owner-only view of how the catalog hangs together, answering the two questions s
 rebuilt from live rows on every load, so a course added or a prerequisite set in `/admin/paths` a
 minute ago is already in it and there is no regeneration step to forget. Edges come from
 `course_prerequisites` (required, solid with an arrow; recommended, dashed with an arrow) and the
-`ENTITIES` registry (two courses covering the same person, case, law or concept, the line labelled
-with the entity's name). Category drives colour and clustering. **Entity links are code, so they
+`ENTITIES` registry (two courses covering the same person, case, law or concept, the line labeled
+with the entity's name). Category drives color and clustering. **Entity links are code, so they
 move on deploy, not on save**, and the page says so rather than implying otherwise.
 
 Two pictures, both deterministic trigonometry with **no `d3-force` and no new dependency**, so the

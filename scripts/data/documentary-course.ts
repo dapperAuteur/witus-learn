@@ -19,7 +19,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const DOCUMENTARY_COURSE: AuthoredCourse = {
   title: "Documentary",
   description:
-    "A documentary is a relationship that lasts long enough to change, and that is its central craft problem as much as its central ethical one. This course covers what documentary actually claims about the world, the recognised modes and what each one implicitly promises a viewer, access and the consent that has to be renewed rather than signed once, how structure is found in material rather than scripted in advance, interviewing at depth including the uses of silence, archive as evidence, the ethics of the edit where every honest film shapes and the question is how, the signals that keep reenactment and music honest, and who the film is finally for when the participant, the funder and the audience want different things. Built on the six decisions from How Stories Work, with the field's own account of its dilemmas rather than a list of rules.",
+    "A documentary is a relationship that lasts long enough to change, and that is its central craft problem as much as its central ethical one. This course covers what documentary actually claims about the world, the recognized modes and what each one implicitly promises a viewer, access and the consent that has to be renewed rather than signed once, how structure is found in material rather than scripted in advance, interviewing at depth including the uses of silence, archive as evidence, the ethics of the edit where every honest film shapes and the question is how, the signals that keep reenactment and music honest, and who the film is finally for when the participant, the funder and the audience want different things. Built on the six decisions from How Stories Work, with the field's own account of its dilemmas rather than a list of rules.",
   lessons: [
     {
       slug: "doc-what-it-claims",
@@ -126,7 +126,7 @@ export const DOCUMENTARY_COURSE: AuthoredCourse = {
 
 **Which means the practical craft is anticipating.** You cannot film what you did not attend. Experienced makers over-film around anticipated turning points and accept the waste, because a missed turn cannot be recovered.
 
-**The edit is where the film is written**, and the ratio is brutal: hundreds of hours to ninety minutes. From How Stories Work: scene what the change runs through, summarise everything else. In documentary summary is narration, montage, a title card. **Every minute of scene you keep is a minute you are claiming carries the change.**
+**The edit is where the film is written**, and the ratio is brutal: hundreds of hours to ninety minutes. From How Stories Work: scene what the change runs through, summarize everything else. In documentary summary is narration, montage, a title card. **Every minute of scene you keep is a minute you are claiming carries the change.**
 
 :::reveal Your proposal said the film was about a woman winning a campaign. Two years in, she lost. What are your options, and which is the dishonest one? ||| The honest options are that the film is now about the attempt, the cost, or what losing revealed, all of which are real films with real changes. The dishonest one is keeping the original shape and cutting toward an implied triumph, using a hopeful ending or selective framing to leave the viewer with a false impression while every shot remains genuine. The rule is that you may change what you think the story is; you may not change what happened to fit the plan you arrived with.
 
@@ -342,7 +342,7 @@ export const DOCUMENTARY_COURSE: AuthoredCourse = {
 
 **The test that resolves most cases**, and it is the same as the news one: **am I selecting and arranging, or am I supplying?** A cut that removes a boring minute is arranging. A cut that manufactures a causal link is supplying.
 
-**The second test, for the cases the first does not settle:** would the participant recognise the person on screen as themselves? Not "would they like it." Recognise.
+**The second test, for the cases the first does not settle:** would the participant recognize the person on screen as themselves? Not "would they like it." Recognize.
 
 **On reenactment.** Legitimate and long-established, and its honesty lives entirely in the **signalling**. A reenactment a viewer might mistake for actual footage is a deception whatever the intent. Visual grammar, an on-screen note, or a narration line all work; **choosing none is choosing to mislead.**
 
@@ -350,7 +350,7 @@ export const DOCUMENTARY_COURSE: AuthoredCourse = {
 
 **The honest framing to carry out of this lesson.** The Honest Truths study found makers describing exactly these dilemmas as the daily substance of the work rather than as rare crises (Aufderheide, Jaszi, & Chandra, 2009). **A maker who reports never facing an ethical decision in an edit is a maker not noticing them.**
 
-:::reveal A frankenbite uses only words the person actually said. Why is it indefensible in documentary? ||| Because the sentence assembled is one they never said, so it puts words in a real mouth, which is the line every form in the True track shares. Using genuine fragments does not help: the meaning of a sentence is a property of the whole utterance, so a constructed sentence is a new claim attributed to a real person. It fails the supplying test, and it also fails the second test, since the speaker would not recognise the statement as something they said.
+:::reveal A frankenbite uses only words the person actually said. Why is it indefensible in documentary? ||| Because the sentence assembled is one they never said, so it puts words in a real mouth, which is the line every form in the True track shares. Using genuine fragments does not help: the meaning of a sentence is a property of the whole utterance, so a constructed sentence is a new claim attributed to a real person. It fails the supplying test, and it also fails the second test, since the speaker would not recognize the statement as something they said.
 
 ## Sources
 - Aufderheide, P., Jaszi, P., & Chandra, M. (2009). *Honest truths: Documentary filmmakers on ethical challenges in their work*. Center for Social Media, American University.
@@ -371,13 +371,13 @@ export const DOCUMENTARY_COURSE: AuthoredCourse = {
 **Where each pressure actually bites**
 
 - **Funding shapes subject before it shapes content.** The commonest influence is not a funder demanding a conclusion; it is which films get made at all. Worth naming, because it is invisible in any individual project.
-- **Advocacy funding is the sharpest case.** A film funded by an organisation with a position is not disqualified, and it does need **disclosure**, which is cheap and protects the film's credibility more than it costs.
+- **Advocacy funding is the sharpest case.** A film funded by an organization with a position is not disqualified, and it does need **disclosure**, which is cheap and protects the film's credibility more than it costs.
 - **Participant pressure is strongest at the end**, when they see it. This is why the screening policy from Lesson 2 belongs at the start.
 - **Audience pressure is the subtlest**: the pull toward the shape that plays well, which is usually more resolved and more triumphant than the material supports.
 
 **The question that resolves most conflicts:** **who bears the consequences?** The funder moves on. The audience watches and moves on. **The participant lives in the town where the film is set**, with the people who will see it. That asymmetry does not mean the participant gets an editorial veto, and it does mean their interest weighs more than the other two when they conflict.
 
-**Disclosure as the cheap general answer.** Who paid, what access was granted in exchange, whether anyone had approval rights, whether reenactment was used. **A film that says how it was made is harder to attack and easier to believe**, which is the same argument the citation work in this catalogue makes.
+**Disclosure as the cheap general answer.** Who paid, what access was granted in exchange, whether anyone had approval rights, whether reenactment was used. **A film that says how it was made is harder to attack and easier to believe**, which is the same argument the citation work in this catalog makes.
 
 **Distribution changes the ethics.** A film shown once at a local screening and a film permanently on a global platform are different objects with different consequences for the people in them. **The consent conversation in Lesson 2 should name the intended distribution**, and be revisited if it widens.
 
@@ -413,7 +413,7 @@ export const DOCUMENTARY_COURSE: AuthoredCourse = {
           {
             prompt: "Which question produces material rather than a position?",
             options: [
-              "How did that period affect your view of the organisation?",
+              "How did that period affect your view of the organization?",
               "Walk me through that morning",
               "Would you say you felt let down by the outcome?",
               "What would you want people to understand about this?",
@@ -481,11 +481,11 @@ export const DOCUMENTARY_COURSE: AuthoredCourse = {
               "Would a lawyer approve the sequence before broadcast?",
               "Would the funder consider it consistent with the commission?",
               "Would another documentary maker have made the same cut?",
-              "Would the participant recognise the person on screen as themselves?",
+              "Would the participant recognize the person on screen as themselves?",
             ],
             correctIndex: 3,
             explanation:
-              "Recognise, not like. It is a test about accuracy of representation rather than about whether the portrayal is flattering.",
+              "Recognize, not like. It is a test about accuracy of representation rather than about whether the portrayal is flattering.",
             sourceLessonSlug: "doc-the-edit",
           },
           {
@@ -507,18 +507,18 @@ export const DOCUMENTARY_COURSE: AuthoredCourse = {
               "Decline the funding, since advocacy money disqualifies the film",
               "Disclose it, which costs little and protects credibility",
               "Disclose only if a viewer asks after a screening",
-              "Balance it by seeking funding from an opposing organisation",
+              "Balance it by seeking funding from an opposing organization",
             ],
             correctIndex: 1,
             explanation:
-              "Advocacy funding is not disqualifying. A film that says how it was made is harder to attack and easier to believe, which is the same argument the catalogue's citation work makes.",
+              "Advocacy funding is not disqualifying. A film that says how it was made is harder to attack and easier to believe, which is the same argument the catalog's citation work makes.",
             sourceLessonSlug: "doc-who-its-for",
           },
           {
             prompt: "Why does distribution change the ethics of a film?",
             options: [
               "Wider distribution requires additional music, archive and location clearances before release",
-              "Platforms impose their own editorial standards, which override the maker's judgement on the cut",
+              "Platforms impose their own editorial standards, which override the maker's judgment on the cut",
               "A local screening and a permanent global platform have different consequences for participants",
               "Audiences in different territories interpret the same material differently, changing its meaning",
             ],
@@ -537,13 +537,13 @@ export const DOCUMENTARY_COURSE: AuthoredCourse = {
       lessonType: "assignment",
       body: `You are not being asked to make a documentary. **You are being asked to plan one to the standard that would let you make it honestly**, which is the part most first films skip.
 
-**Choose a real subject you could actually access.** Someone or something within reach: a local organisation, a person you know who has a story, an event you could attend repeatedly. **Not a famous subject you have no route to**, because the access plan is half the assignment.
+**Choose a real subject you could actually access.** Someone or something within reach: a local organization, a person you know who has a story, an event you could attend repeatedly. **Not a famous subject you have no route to**, because the access plan is half the assignment.
 
 **What to submit.**
 
 **1. The subject, in two sentences**, and why you.
 
-**2. Your best guess at the six**, clearly labelled as a guess: the change you expect, the likely owner, want and obstacle, what you would withhold, and where the turn might be. **Then a paragraph on what you would do if the material contradicted every one of them.**
+**2. Your best guess at the six**, clearly labeled as a guess: the change you expect, the likely owner, want and obstacle, what you would withhold, and where the turn might be. **Then a paragraph on what you would do if the material contradicted every one of them.**
 
 **3. The mode, and the promise it makes.** Which of Nichols' modes, and what that implicitly promises a viewer. Then: what would break that promise, in your specific film?
 
@@ -575,13 +575,13 @@ export const DOCUMENTARY_COURSE: AuthoredCourse = {
 
 **Interview to obtain a person.** Ask for scenes rather than summaries, ask the obvious question, ask for full sentences, and use silence. People say the true thing in the second hour.
 
-**Every film is shaped; the question is how.** The tests: am I selecting and arranging or supplying, and would the participant recognise themselves? **The frankenbite, the false chronology, the reaction transplant and the absent context all use genuine footage and all cross the line.**
+**Every film is shaped; the question is how.** The tests: am I selecting and arranging or supplying, and would the participant recognize themselves? **The frankenbite, the false chronology, the reaction transplant and the absent context all use genuine footage and all cross the line.**
 
 **Signal reenactment and archive.** Choosing not to is choosing to mislead.
 
 **When the funder, participant and audience conflict, ask who bears the consequences.** The participant is the only one who cannot walk away. Disclose how the film was made.
 
-:::reveal Without looking back, name the two tests for an editing decision and one move that fails both. ||| Am I selecting and arranging, or supplying? And would the participant recognise the person on screen as themselves? The frankenbite fails both: assembling a sentence from words spoken at different times supplies a statement that was never made, and the speaker would not recognise it as something they said. The same pair catches the false chronology, the reaction transplant and the removed qualification, all of which use entirely genuine footage.
+:::reveal Without looking back, name the two tests for an editing decision and one move that fails both. ||| Am I selecting and arranging, or supplying? And would the participant recognize the person on screen as themselves? The frankenbite fails both: assembling a sentence from words spoken at different times supplies a statement that was never made, and the speaker would not recognize it as something they said. The same pair catches the false chronology, the reaction transplant and the removed qualification, all of which use entirely genuine footage.
 
 ## Sources
 - Aufderheide, P. (2007). *Documentary film: A very short introduction*. Oxford University Press.

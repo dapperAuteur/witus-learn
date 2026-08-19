@@ -860,7 +860,7 @@ Recall Section 2's discipline: that is a **ceiling on** the protection-contract 
           {
             prompt: "What does USMCA Annex 23-A, paragraph 1 say about WHY Mexico is adopting these measures?",
             options: [
-              "That they fulfil the mandate the people of Mexico gave in the elections",
+              "That they fulfill the mandate the people of Mexico gave in the elections",
               "That the United States required them as a condition of the trade deal",
               "That the ILO ordered them after a formal complaint by U.S. unions",
               "That Mexican employers requested them in order to attract investment",

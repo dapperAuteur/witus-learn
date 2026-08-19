@@ -749,7 +749,7 @@ She was **the UFW's chief contract negotiator**, the person actually at the tabl
 
 **1. Legislate what you cannot bargain for.** Before the union was even a union, Huerta was lobbying in Sacramento. Working with allies in the legislature in the early 1960s, she helped win **disability insurance and public assistance for California farm workers regardless of citizenship** (DHF, n.d.). If you cannot win a benefit at the bargaining table, win it in the statute book, and the employer has to obey it anyway.
 
-**2. Organize house to house.** The UFW was built through **house meetings**, one worker's kitchen, a handful of neighbours, a conversation. This is slow, and it is the only thing that works. An organization built out of relationships survives a lost strike. An organization built out of a mailing list does not.
+**2. Organize house to house.** The UFW was built through **house meetings**, one worker's kitchen, a handful of neighbors, a conversation. This is slow, and it is the only thing that works. An organization built out of relationships survives a lost strike. An organization built out of a mailing list does not.
 
 **3. Strike, and know that the strike alone may not be enough.** On **September 8, 1965**, over 800 Filipino farm workers of the **Agricultural Workers Organizing Committee (AWOC)**, led by **Larry Itliong** and Ben Gines, walked out of ten grape vineyards around Delano, California (National Park Service [NPS], n.d.). *The Filipino workers struck first.* This is routinely left out of the story, and leaving it out is a small dishonesty that has become a large one. On **September 16, 1965**, Mexican Independence Day, the NFWA membership voted overwhelmingly to join them (NPS, n.d.).
 
@@ -802,7 +802,7 @@ On **March 18, 2026**, *The New York Times* published an investigation into **C�
 
 She also said: **"Cesar's actions do not reflect the values of our community and our movement."** (Figueroa, 2026)
 
-**What followed.** The **United Farm Workers** and the **UFW Foundation** cancelled all César Chávez Day activities, and the union and the Cesar Chavez Foundation said they would set up a confidential channel for people who wanted to report harm, and a process for accountability measures (NPR, 2026). On **March 26, 2026**, eight days after the story broke, the California Legislature voted unanimously in the Senate, 37-0, to **rename the state's March 31 holiday from César Chávez Day to Farmworkers Day**, and Governor Newsom signed it into law immediately (CalMatters, 2026; PBS News, 2026).
+**What followed.** The **United Farm Workers** and the **UFW Foundation** canceled all César Chávez Day activities, and the union and the Cesar Chavez Foundation said they would set up a confidential channel for people who wanted to report harm, and a process for accountability measures (NPR, 2026). On **March 26, 2026**, eight days after the story broke, the California Legislature voted unanimously in the Senate, 37-0, to **rename the state's March 31 holiday from César Chávez Day to Farmworkers Day**, and Governor Newsom signed it into law immediately (CalMatters, 2026; PBS News, 2026).
 
 **What this course will not do.**
 
@@ -822,7 +822,7 @@ It would be easy to file this under "history," or under "sad news about a famous
 
 - **The powerful person who is on your side of the fight is still a powerful person.** A union, a boss, a coach, a mentor, a movement you believe in, none of these is a guarantee of safety, and *believing in the cause is exactly the pressure that keeps people quiet.* Huerta named that pressure precisely: she was protecting the work.
 - **This is why procedure matters more than personality.** Section 1 taught you that a grievance procedure ending before a **neutral third party** is what gives every other clause its teeth. That is not a boring administrative detail. It is the *entire* answer to "what do I do when the person who wronged me is the person everybody admires?" A process you can use without the permission of the powerful is the only kind worth having, and it has to exist *inside* the organization, not just against the employer.
-- **An institution that cannot be criticized cannot be trusted.** The instinct to protect a good movement from a true story is the instinct that lets harm continue inside it. The UFW's response, cancelling the celebrations, opening a reporting channel, is what taking that seriously looks like at the start. Whether it works is a question for the record, later.
+- **An institution that cannot be criticized cannot be trusted.** The instinct to protect a good movement from a true story is the instinct that lets harm continue inside it. The UFW's response, canceling the celebrations, opening a reporting channel, is what taking that seriously looks like at the start. Whether it works is a question for the record, later.
 
 **A movement is not a saint.** The person who built the power can also be harmed inside it. **Both are true, and neither one cancels the other.** You are allowed, you are *required*, to hold both.
 
@@ -1457,7 +1457,7 @@ You are a freelance camera operator with one client. You are a contractor whose 
             prompt: "Why are flight attendants NOT covered by the National Labor Relations Act?",
             options: [
               "NLRA § 2(3) excludes employees covered by the Railway Labor Act",
-              "They are formally classified as travelling independent contractors",
+              "They are formally classified as traveling independent contractors",
               "They are formally classified as onboard cabin crew supervisors",
               "They cross many state lines, so no single federal law applies",
             ],
@@ -1721,7 +1721,7 @@ When a document asks for your image, voice, name, likeness, or work product, **f
         {
           prompt: "What does a \"reasonably specific description\" requirement do to a digital-replica consent?",
           answer:
-            "It defeats blanket consent. The employer must say what, specifically, it will do with your likeness, rather than taking a perpetual, irrevocable licence \"for any purpose.\"",
+            "It defeats blanket consent. The employer must say what, specifically, it will do with your likeness, rather than taking a perpetual, irrevocable license \"for any purpose.\"",
         },
         {
           prompt: "How long was the 2023 SAG-AFTRA strike, and who led it?",
@@ -1924,7 +1924,7 @@ Fill in each blank, then check. Spelling and capitalization are forgiving.
             options: [
               "A clear consent with a \"reasonably specific description\" of the use",
               "A quick verbal agreement made informally on the set that day",
-              "A broad blanket licence for absolutely any purpose, in perpetuity",
+              "A broad blanket license for absolutely any purpose, in perpetuity",
               "Nothing at all, consent is not required if you are already employed",
             ],
             correctIndex: 0,
@@ -1948,10 +1948,10 @@ Fill in each blank, then check. Spelling and capitalization are forgiving.
           {
             prompt: "In a contract, what does \"in any media now known or hereafter devised\" do?",
             options: [
-              "Extends the licence to technologies that do not exist yet",
-              "Limits the licence strictly to current technology only",
+              "Extends the license to technologies that do not exist yet",
+              "Limits the license strictly to current technology only",
               "Requires renegotiation each time the technology changes",
-              "Restricts the licence only to broadcast television use",
+              "Restricts the license only to broadcast television use",
             ],
             correctIndex: 0,
             explanation: "It is one of the most consequential phrases in modern contracts, and it is easy to skim past.",
@@ -1961,7 +1961,7 @@ Fill in each blank, then check. Spelling and capitalization are forgiving.
             prompt: "A freelance contract takes a \"perpetual, irrevocable, worldwide, royalty-free, sublicensable\" licence to your work. What have you given up?",
             options: [
               "It forever, everywhere, with no payment, and transferable to third parties",
-              "Just a limited one-year licence that you can freely cancel at any time",
+              "Just a limited one-year license that you can freely cancel at any time",
               "Nothing at all, these are standard boilerplate terms with no legal effect",
               "Only the exclusive right to sell copies of the work yourself directly",
             ],
@@ -2013,7 +2013,7 @@ Fill in each blank, then check. Spelling and capitalization are forgiving.
             options: [
               "It did not ban AI, but made its output not count and let writers refuse it",
               "It fully banned all use of AI across film and television productions",
-              "It required the studios to pay a per-use AI licence fee to the Guild",
+              "It required the studios to pay a per-use AI license fee to the Guild",
               "It deliberately took no formal position at all on the use of AI tools",
             ],
             correctIndex: 0,

@@ -45,7 +45,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const US_BUSINESS_FORMS_COURSE: AuthoredCourse = {
   title: "The US Forms: Sole Prop to Corporation",
   description:
-    "A cited, high-school-and-up survey of the US business forms, and the direct sequel to 'What a Business Entity Actually Is.' It is not legal or tax advice, and it says so throughout: it teaches you what to ASK a lawyer or accountant, not the answer for your situation. Course 1 gave you the method, that any entity is a bundle of FOUR decisions (who pays the debts, who pays the tax, who owns it and how ownership moves, and who decides). This course applies that method across the actual US menu: the sole proprietorship and general partnership you can fall into without filing, the limited partnership and the LLP that add a liability wall, the LLC that became the modern default, the C-corporation built to raise money, and the nonprofits, where 501(c)(3), (c)(4) and (c)(6) are three different deals with three different rules on donations and politics. Two ideas get a full lesson each because they are the most misunderstood in the subject. First, the S-corp is a TAX ELECTION, not an entity type: it changes only how a business is taxed and leaves liability, ownership and governance to the entity underneath it. Second, a benefit corporation (a legal form a state recognises) is not the same thing as a Certified B Corp (a private certification granted by the nonprofit B Lab), two different things that most content blurs. The organising insight is that a real menu mixes three kinds of thing, an entity, a tax status, and a private certification, and telling them apart is most of the skill. The capstone asks you to match a real scenario to a form and defend it against the four decisions, and against a specific alternative you rejected.",
+    "A cited, high-school-and-up survey of the US business forms, and the direct sequel to 'What a Business Entity Actually Is.' It is not legal or tax advice, and it says so throughout: it teaches you what to ASK a lawyer or accountant, not the answer for your situation. Course 1 gave you the method, that any entity is a bundle of FOUR decisions (who pays the debts, who pays the tax, who owns it and how ownership moves, and who decides). This course applies that method across the actual US menu: the sole proprietorship and general partnership you can fall into without filing, the limited partnership and the LLP that add a liability wall, the LLC that became the modern default, the C-corporation built to raise money, and the nonprofits, where 501(c)(3), (c)(4) and (c)(6) are three different deals with three different rules on donations and politics. Two ideas get a full lesson each because they are the most misunderstood in the subject. First, the S-corp is a TAX ELECTION, not an entity type: it changes only how a business is taxed and leaves liability, ownership and governance to the entity underneath it. Second, a benefit corporation (a legal form a state recognises) is not the same thing as a Certified B Corp (a private certification granted by the nonprofit B Lab), two different things that most content blurs. The organizing insight is that a real menu mixes three kinds of thing, an entity, a tax status, and a private certification, and telling them apart is most of the skill. The capstone asks you to match a real scenario to a form and defend it against the four decisions, and against a specific alternative you rejected.",
   lessons: [
     // ═══════════════════════════════════════════════════════════════════════════════════════
     // SECTION 1 · How to read the US menu  (recap the four decisions; the three-kinds-of-thing frame)
@@ -129,9 +129,9 @@ For each form ahead, run the four questions in order and write the answer in pla
 - **Liability and taxation are separate questions.** The clearest proof is the LLC, which holds a wall while letting owners choose the tax. Keep the two columns apart in your head or the S-corp lesson will not land.
 - **Ownership and transfer is set mostly in the private rulebook.** Two businesses in the same form can be built oppositely. The form sets the default; the operating agreement or bylaws set the detail.
 
-## Why the grid beats a memorised list
+## Why the grid beats a memorized list
 
-You are about to meet ten-odd rows. **Do not memorise them as a list.** A list goes stale, varies by state, and does not travel to a foreign form. The grid does not, because the four columns are the questions the forms are answers to. If you finish this course able to fill the four columns for any form you are handed, you have the transferable skill, and the specific US names are just this country's labels on a universal set of choices.
+You are about to meet ten-odd rows. **Do not memorize them as a list.** A list goes stale, varies by state, and does not travel to a foreign form. The grid does not, because the four columns are the questions the forms are answers to. If you finish this course able to fill the four columns for any form you are handed, you have the transferable skill, and the specific US names are just this country's labels on a universal set of choices.
 
 And the limit, one more time: filling the grid tells you what a form **is**, not what you **should** form. That second question depends on facts this course cannot see, and it belongs to a professional.
 
@@ -169,7 +169,7 @@ And the limit, one more time: filling the grid tells you what a form **is**, not
 
 **Pile two: a TAX STATUS you elect.** Not a business at all, but a **tax treatment laid on top of an entity** by the federal tax authority. It answers **one decision, taxation**, and leaves the other three to the entity underneath. The **S-corp election** is this. So is a **501(c) tax-exempt status** for a nonprofit. You cannot "be" only a tax status any more than you can be only a coat of paint; there has to be an entity under it.
 
-**Pile three: a private CERTIFICATION.** A **badge granted by a private organisation**, not by any government. It answers **none of the four decisions** by itself. A **Certified B Corp** is this: a certification from a nonprofit called B Lab. It says the business met a private standard. It does not change what the business legally is.
+**Pile three: a private CERTIFICATION.** A **badge granted by a private organization**, not by any government. It answers **none of the four decisions** by itself. A **Certified B Corp** is this: a certification from a nonprofit called B Lab. It says the business met a private standard. It does not change what the business legally is.
 
 ## The one table to keep
 
@@ -177,7 +177,7 @@ And the limit, one more time: filling the grid tells you what a form **is**, not
 |---|---|---|---|
 | **Entity** | The state (or default) | All four | Sole prop, partnership, LLC, C-corp, benefit corp |
 | **Tax status you elect** | The federal tax authority | One (taxation) | S-corp election, 501(c) exemption |
-| **Private certification** | A private organisation | None | Certified B Corp |
+| **Private certification** | A private organization | None | Certified B Corp |
 
 **Read the middle and bottom rows twice.** A tax status and a certification each ride on an entity; neither is an entity. That is why two sentences you will hear constantly are both broken:
 
@@ -264,7 +264,7 @@ So when a form confuses you, **ask which pile it is in first.** Is this a legal 
           {
             prompt: "A business form, in this course, is best pictured as:",
             options: [
-              "a memorised name",
+              "a memorized name",
               "a marketing label",
               "a row of four cells",
               "a single tax rate",
@@ -838,7 +838,7 @@ And the rule, because a real choice is near: whether an LLC is right for you, in
       slug: "usf-s-corp-election",
       title: "11 · The S-corp is a tax election, not an entity type",
       section: "Section 3 · The LLC and the S-corp election",
-      body: `This is the single most misunderstood point in the whole subject, and it gets its own lesson because getting it wrong quietly corrupts everything else on the menu. Course 1 planted the sentence; this course drives it home in the middle of the real forms, where it does the most work. Memorise it:
+      body: `This is the single most misunderstood point in the whole subject, and it gets its own lesson because getting it wrong quietly corrupts everything else on the menu. Course 1 planted the sentence; this course drives it home in the middle of the real forms, where it does the most work. Memorize it:
 
 **An S-corp is not a type of entity. It is a federal tax election that an eligible entity makes.**
 
@@ -1093,12 +1093,12 @@ And the not-advice rule is at maximum volume here, because this is where people 
 
 - **Liability: limited.** The corporation is a separate legal person with a wall; owners, called **shareholders**, are generally not personally liable for its debts, subject to the usual gaps.
 - **Taxation: entity-level, and this is what "C" means.** A C-corporation is its own taxpayer: it pays tax on its profit, and when it distributes profit as dividends, **shareholders may be taxed again.** That is the **double taxation** from course 1, the C-corp's defining tax feature. Whether it is a drawback depends on facts an accountant weighs.
-- **Ownership and transfer: shareholders holding shares of stock.** Shares are standardised and, in principle, freely transferable, which is exactly why the corporation is the vehicle for wide outside investment. A private corporation can still restrict transfer through a shareholder agreement, but the share is built to move.
+- **Ownership and transfer: shareholders holding shares of stock.** Shares are standardized and, in principle, freely transferable, which is exactly why the corporation is the vehicle for wide outside investment. A private corporation can still restrict transfer through a shareholder agreement, but the share is built to move.
 - **Governance: delegated, in a three-layer shape.** **Shareholders elect a board of directors; the board sets direction and hires officers; the officers run the company.** This separation of ownership from control is what lets a corporation have thousands of owners and still function.
 
 ## Why the C-corp exists
 
-Its combination, a hard wall, standardised tradeable shares, and delegated governance, is exactly what large-scale outside investment needs. **Investors want to buy a clean unit (a share), risk only what they paid (limited liability), and not have to run the company (delegated governance).** The C-corp gives all three, which is why nearly every company that raises significant venture capital or goes public is one. Its cost is the entity-level tax and more formality: a board, meetings, records. **The form is a trade: more tax and more paperwork in exchange for the ability to raise money widely.**
+Its combination, a hard wall, standardized tradeable shares, and delegated governance, is exactly what large-scale outside investment needs. **Investors want to buy a clean unit (a share), risk only what they paid (limited liability), and not have to run the company (delegated governance).** The C-corp gives all three, which is why nearly every company that raises significant venture capital or goes public is one. Its cost is the entity-level tax and more formality: a board, meetings, records. **The form is a trade: more tax and more paperwork in exchange for the ability to raise money widely.**
 
 ## C-corp beside LLC, one more time
 
@@ -1142,27 +1142,27 @@ Its combination, a hard wall, standardised tradeable shares, and delegated gover
 
 ## Layer one: the entity, and the non-distribution constraint
 
-Most nonprofits are organised as a **nonprofit corporation** under state law: a corporation formed the usual way, with a board, that has agreed to a defining limit. That limit is the **non-distribution constraint**: a nonprofit may earn a surplus, but it **cannot distribute profit to owners**, because it has **no owners** in the equity sense. There are no shares and no members taking dividends; any surplus must go back into the mission. Run it through the four decisions and it reads cleanly: **liability** is limited like any corporation, **governance** is a board, **ownership** is nobody (the non-distribution constraint replaces owners), and **taxation** is the second layer.
+Most nonprofits are organized as a **nonprofit corporation** under state law: a corporation formed the usual way, with a board, that has agreed to a defining limit. That limit is the **non-distribution constraint**: a nonprofit may earn a surplus, but it **cannot distribute profit to owners**, because it has **no owners** in the equity sense. There are no shares and no members taking dividends; any surplus must go back into the mission. Run it through the four decisions and it reads cleanly: **liability** is limited like any corporation, **governance** is a board, **ownership** is nobody (the non-distribution constraint replaces owners), and **taxation** is the second layer.
 
 **"Nonprofit" does not mean "makes no profit."** It means no one gets to pocket the surplus. That single correction clears up most of the public confusion about the form.
 
 ## Layer two: the federal tax-exempt status, 501(c)
 
-A nonprofit entity can apply to the IRS for **tax-exempt status** under a paragraph of Internal Revenue Code section 501(c). Exemption broadly means the organisation does not pay federal income tax on income tied to its exempt purpose. Which paragraph it qualifies under decides what it may do and how donations are treated. Three matter most.
+A nonprofit entity can apply to the IRS for **tax-exempt status** under a paragraph of Internal Revenue Code section 501(c). Exemption broadly means the organization does not pay federal income tax on income tied to its exempt purpose. Which paragraph it qualifies under decides what it may do and how donations are treated. Three matter most.
 
 | Status | Typical purpose | Are donations deductible as charity? | Political campaign activity |
 |---|---|---|---|
 | **501(c)(3)** | Charitable, religious, educational, scientific | Generally **yes**, to the donor | **Absolutely barred** from campaign intervention |
-| **501(c)(4)** | Social welfare organisations | Generally **no** | **May** take part, within limits, if not its primary activity |
+| **501(c)(4)** | Social welfare organizations | Generally **no** | **May** take part, within limits, if not its primary activity |
 | **501(c)(6)** | Business leagues, chambers, trade associations | Generally **no** as charity | **May** take part, within limits |
 
 ## The two distinctions that carry the whole lesson
 
-**First: tax-EXEMPT is not tax-DEDUCTIBLE.** These are different questions about different taxpayers. *Exempt* asks whether the **organisation** pays tax on its own income; all three of the above are broadly exempt. *Deductible* asks whether a **donor** can subtract a gift on their own return; generally only a gift to a **501(c)(3)** is deductible as a charitable contribution. So a social-welfare group and a chamber of commerce can be tax-exempt organisations while gifts to them are **not** charitable deductions for the giver. Confusing the two is the most common nonprofit error, and it is exactly the "who pays the tax" column asked twice, once of the entity and once of the donor.
+**First: tax-EXEMPT is not tax-DEDUCTIBLE.** These are different questions about different taxpayers. *Exempt* asks whether the **organization** pays tax on its own income; all three of the above are broadly exempt. *Deductible* asks whether a **donor** can subtract a gift on their own return; generally only a gift to a **501(c)(3)** is deductible as a charitable contribution. So a social-welfare group and a chamber of commerce can be tax-exempt organizations while gifts to them are **not** charitable deductions for the giver. Confusing the two is the most common nonprofit error, and it is exactly the "who pays the tax" column asked twice, once of the entity and once of the donor.
 
-**Second: the campaign line.** A **501(c)(3) is absolutely prohibited from intervening in a political campaign**, which means it **cannot endorse or oppose candidates for office.** This is a bright line, not a soft guideline (Internal Revenue Service, n.d.-c). A (c)(4) or a (c)(6) has more room and **may** engage in some political campaign activity within limits, as long as it is not the organisation's primary activity. So the idea that a charity can endorse a candidate is simply wrong for a (c)(3); it is the classic distractor, and now you know why it fails.
+**Second: the campaign line.** A **501(c)(3) is absolutely prohibited from intervening in a political campaign**, which means it **cannot endorse or oppose candidates for office.** This is a bright line, not a soft guideline (Internal Revenue Service, n.d.-c). A (c)(4) or a (c)(6) has more room and **may** engage in some political campaign activity within limits, as long as it is not the organization's primary activity. So the idea that a charity can endorse a candidate is simply wrong for a (c)(3); it is the classic distractor, and now you know why it fails.
 
-The specific limits, on lobbying amounts, on how much political activity a (c)(4) may do, on what qualifies for each status, are federal rules with detail this course will not assert from memory. Read the IRS pages below and, for a real organisation, work with a professional. What you carry away is the shape: **a nonprofit is an owner-less entity plus a 501(c) status, the letter after 501(c) changes the donation and political rules, and exempt is not the same as deductible.**
+The specific limits, on lobbying amounts, on how much political activity a (c)(4) may do, on what qualifies for each status, are federal rules with detail this course will not assert from memory. Read the IRS pages below and, for a real organization, work with a professional. What you carry away is the shape: **a nonprofit is an owner-less entity plus a 501(c) status, the letter after 501(c) changes the donation and political rules, and exempt is not the same as deductible.**
 
 ## Sources
 - Internal Revenue Service. (n.d.-a). *Exemption requirements: 501(c)(3) organizations*. https://www.irs.gov/charities-non-profits/charitable-organizations/exemption-requirements-501c3-organizations
@@ -1176,7 +1176,7 @@ The specific limits, on lobbying amounts, on how much political activity a (c)(4
         },
         {
           prompt: "Why does the C-corp exist, and what is its trade?",
-          answer: "It is the investment machine: a hard wall, standardised tradeable shares, and delegated governance are exactly what wide outside investment needs. The trade is entity-level tax and more formality in exchange for the ability to raise money widely.",
+          answer: "It is the investment machine: a hard wall, standardized tradeable shares, and delegated governance are exactly what wide outside investment needs. The trade is entity-level tax and more formality in exchange for the ability to raise money widely.",
         },
         {
           prompt: "How do the 'C' and 'S' labels reinforce lesson 3's frame?",
@@ -1205,7 +1205,7 @@ The specific limits, on lobbying amounts, on how much political activity a (c)(4
               "partners",
             ],
             correctIndex: 2,
-            explanation: "Shareholders hold shares of stock, a standardised unit built to move, which is why the corporation suits wide investment.",
+            explanation: "Shareholders hold shares of stock, a standardized unit built to move, which is why the corporation suits wide investment.",
             sourceLessonSlug: "usf-c-corp",
           },
           {
@@ -1253,7 +1253,7 @@ The specific limits, on lobbying amounts, on how much political activity a (c)(4
               "charitable giving",
             ],
             correctIndex: 0,
-            explanation: "A hard wall, standardised tradeable shares, and delegated governance are exactly what large-scale outside investment needs.",
+            explanation: "A hard wall, standardized tradeable shares, and delegated governance are exactly what large-scale outside investment needs.",
             sourceLessonSlug: "usf-c-corp",
           },
           {
@@ -1337,7 +1337,7 @@ The specific limits, on lobbying amounts, on how much political activity a (c)(4
               "family trust",
             ],
             correctIndex: 2,
-            explanation: "Business leagues, chambers of commerce and trade associations organise under (c)(6) to promote a common business interest.",
+            explanation: "Business leagues, chambers of commerce and trade associations organize under (c)(6) to promote a common business interest.",
             sourceLessonSlug: "usf-nonprofits",
           },
           {
@@ -1390,7 +1390,7 @@ The specific limits, on lobbying amounts, on how much political activity a (c)(4
 
 ## What a benefit corporation is
 
-A **benefit corporation** is a **corporate entity form recognised by state statute.** It is a corporation, formed by filing with the state like any other, with one built-in difference: its charter commits it to pursuing a **public benefit** alongside profit, and its **directors are legally allowed, and generally required, to weigh the interests of people beyond the shareholders** (workers, community, environment) when they make decisions. An ordinary corporation's board is usually focused on shareholder interests; a benefit corporation's board is given a broader mandate by law.
+A **benefit corporation** is a **corporate entity form recognized by state statute.** It is a corporation, formed by filing with the state like any other, with one built-in difference: its charter commits it to pursuing a **public benefit** alongside profit, and its **directors are legally allowed, and generally required, to weigh the interests of people beyond the shareholders** (workers, community, environment) when they make decisions. An ordinary corporation's board is usually focused on shareholder interests; a benefit corporation's board is given a broader mandate by law.
 
 Most benefit-corporation statutes also add an **accountability element**: the company must consider its stated benefit and, in many statutes, report on it. The details of that reporting are state-specific and this course will not assert them from memory; the point that travels is that the public-benefit purpose is written into the **legal** structure, not just the marketing.
 
@@ -1420,15 +1420,15 @@ So the benefit corporation is a genuine entity: a corporation with a legally wid
         },
         {
           prompt: "Explain the difference between tax-exempt and tax-deductible.",
-          answer: "Tax-exempt asks whether the organisation pays tax on its own income; all three main 501(c) types broadly do not. Tax-deductible asks whether a donor can subtract a gift on their return; generally only gifts to a 501(c)(3) qualify as charitable deductions.",
+          answer: "Tax-exempt asks whether the organization pays tax on its own income; all three main 501(c) types broadly do not. Tax-deductible asks whether a donor can subtract a gift on their return; generally only gifts to a 501(c)(3) qualify as charitable deductions.",
         },
         {
           prompt: "On endorsing candidates, how do (c)(3), (c)(4) and (c)(6) differ?",
-          answer: "A 501(c)(3) is absolutely barred from campaign intervention and cannot endorse or oppose candidates. A (c)(4) or (c)(6) may take part in some political campaign activity within limits, as long as it is not the organisation's primary activity.",
+          answer: "A 501(c)(3) is absolutely barred from campaign intervention and cannot endorse or oppose candidates. A (c)(4) or (c)(6) may take part in some political campaign activity within limits, as long as it is not the organization's primary activity.",
         },
         {
           prompt: "What is a typical 501(c)(6), and what is a typical 501(c)(3)?",
-          answer: "A (c)(6) is a business league, chamber of commerce or trade association promoting a common business interest. A (c)(3) is a charitable, religious, educational or scientific organisation, and gifts to it are generally deductible.",
+          answer: "A (c)(6) is a business league, chamber of commerce or trade association promoting a common business interest. A (c)(3) is a charitable, religious, educational or scientific organization, and gifts to it are generally deductible.",
         },
       ],
     },
@@ -1436,11 +1436,11 @@ So the benefit corporation is a genuine entity: a corporation with a legally wid
       slug: "usf-certified-b-corp",
       title: "17 · The Certified B Corp: a private certification",
       section: "Section 5 · Benefit corporation vs Certified B Corp",
-      body: `Now the thing with the confusingly similar name. A **Certified B Corporation**, or **Certified B Corp**, is **not a legal form.** It is a **private certification** granted by a nonprofit organisation called **B Lab** to companies that meet its standard for social and environmental performance, accountability, and transparency. It is pile three: a badge, conferred by a private body, that by itself answers **none** of the four decisions.
+      body: `Now the thing with the confusingly similar name. A **Certified B Corporation**, or **Certified B Corp**, is **not a legal form.** It is a **private certification** granted by a nonprofit organization called **B Lab** to companies that meet its standard for social and environmental performance, accountability, and transparency. It is pile three: a badge, conferred by a private body, that by itself answers **none** of the four decisions.
 
 ## What the certification is, and is not
 
-- **What it is:** a mark that an independent private organisation has assessed the company against a published standard (commonly known as the B Impact Assessment) and found it meets the bar. It functions as a **trust signal**, like other private certifications a company might display.
+- **What it is:** a mark that an independent private organization has assessed the company against a published standard (commonly known as the B Impact Assessment) and found it meets the bar. It functions as a **trust signal**, like other private certifications a company might display.
 - **What it is not:** it is **not granted by any government**, it does **not** create or change a legal entity, and it does **not** by itself alter liability, taxation, ownership, or governance. A company does not "become" anything legally new by earning it.
 
 Because the certification rides on top of whatever the company already is, **any entity type can hold it.** A Certified B Corp might be an LLC, a C-corporation, or a benefit corporation underneath. When you meet one, you still have to ask which pile-one entity it actually is before you know its liability or governance. The badge tells you it met a standard, not what it legally is.
@@ -1457,11 +1457,11 @@ Here is the whole confusion in one table. Read it twice; it is the payoff of the
 | **Does it set any of the four decisions?** | Yes, all four (governance modified) | None by itself |
 | **Can any entity type hold it?** | No, it is its own corporate form | Yes, it rides on an existing entity |
 
-**A company can be one, both, or neither.** It can be a benefit corporation without B Lab certification, a Certified B Corp organised as a plain LLC, both at once, or neither. They are independent because one is a legal status from a government and the other is a private assessment.
+**A company can be one, both, or neither.** It can be a benefit corporation without B Lab certification, a Certified B Corp organized as a plain LLC, both at once, or neither. They are independent because one is a legal status from a government and the other is a private assessment.
 
 ## One genuine connection, kept conceptual
 
-There is a real link worth naming carefully. B Lab's certification includes a **legal-accountability requirement**: to keep the badge, a company is expected to bake stakeholder consideration into its governing documents, which **in places where the benefit-corporation form exists can mean adopting it.** So the two things touch. But touching is not being the same: the **requirement to adopt stakeholder governance** comes from a private certifier's rules, while the **legal form** comes from a state. The exact current requirement is B Lab's to set and change, so confirm it with B Lab rather than trusting a remembered version. The distinction to keep is clean: **one name is a legal entity a state creates; the other is a certification a private organisation grants**, and blurring them is the error this section exists to fix.
+There is a real link worth naming carefully. B Lab's certification includes a **legal-accountability requirement**: to keep the badge, a company is expected to bake stakeholder consideration into its governing documents, which **in places where the benefit-corporation form exists can mean adopting it.** So the two things touch. But touching is not being the same: the **requirement to adopt stakeholder governance** comes from a private certifier's rules, while the **legal form** comes from a state. The exact current requirement is B Lab's to set and change, so confirm it with B Lab rather than trusting a remembered version. The distinction to keep is clean: **one name is a legal entity a state creates; the other is a certification a private organization grants**, and blurring them is the error this section exists to fix.
 
 ## Sources
 - B Lab. (n.d.). *B Corp certification*. https://www.bcorporation.net/
@@ -1469,7 +1469,7 @@ There is a real link worth naming carefully. B Lab's certification includes a **
       recallContent: [
         {
           prompt: "What is a benefit corporation, and which pile is it in?",
-          answer: "It is a corporate entity form recognised by state statute (pile one): a corporation, formed by filing with the state, whose charter commits it to a public benefit and whose directors are legally allowed and generally required to weigh interests beyond shareholders.",
+          answer: "It is a corporate entity form recognized by state statute (pile one): a corporation, formed by filing with the state, whose charter commits it to a public benefit and whose directors are legally allowed and generally required to weigh interests beyond shareholders.",
         },
         {
           prompt: "Which single decision-column does the benefit corporation change, and which does it not?",
@@ -1502,7 +1502,7 @@ There is a real link worth naming carefully. B Lab's certification includes a **
               "trade name filing",
             ],
             correctIndex: 2,
-            explanation: "It is pile one: a corporate entity form recognised by state statute, formed by filing with the state.",
+            explanation: "It is pile one: a corporate entity form recognized by state statute, formed by filing with the state.",
             sourceLessonSlug: "usf-benefit-corporation",
           },
           {
@@ -1677,7 +1677,7 @@ Pick **one scenario** below (or write your own that is just as concrete). In **7
 
 ## The scenarios
 
-1. **Three lawyers opening a firm.** Three licensed attorneys want to practise together and share profits, and each is worried about being personally ruined if a different partner is sued for malpractice.
+1. **Three lawyers opening a firm.** Three licensed attorneys want to practice together and share profits, and each is worried about being personally ruined if a different partner is sued for malpractice.
 2. **A fund manager and passive investors.** One experienced operator wants to run a small real-estate fund, raising money from a handful of investors who want to put in cash, cap their downside, and stay out of management.
 3. **A mission-driven products company that will raise money.** Founders want to sell goods, commit the company in law to an environmental mission, and eventually take outside investment, and they keep hearing the phrase "B Corp."
 4. **A neighborhood group serving the community.** Residents want to run a food-and-tutoring program funded by donations, and they are arguing about whether they will be allowed to endorse candidates in the next local election.

@@ -45,7 +45,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const LABOR_INDIA_COURSE: AuthoredCourse = {
   title: "India: When Most Workers Have No Employer",
   description:
-    "Every tool in the anchor course, the election, the contract, the grievance procedure, the duty to bargain, assumes one thing so basic it is never said out loud: that a worker is an employee, and an employee has an employer. India is where that assumption breaks. About 90% of Indian workers are in informal employment (India Employment Report 2024, ILO and the Institute for Human Development, built on the government's own Periodic Labour Force Survey): no written contract, no social security, often no identifiable employer at all. This course teaches what that number means and where it comes from; the full legal machine India built on paper (a union with seven members, a constitution that guarantees association, and a Supreme Court that found no fundamental right to strike); union federations that each belong to a political party, a third politics-and-labor entanglement to set against Poland and China; SEWA, the Self-Employed Women's Association, which since 1972 has organised millions of women who have no employer to bargain with, the one institutional invention in this track built for exactly that; the 2019-2020 Labour Codes that folded 29 laws into four and then waited five years to come into force (taught dated, because the states are still writing their rules); the first legal recognition of gig and platform workers anywhere in this track; and the honest part, caste and labor, the sewer deaths a ministry reported to Parliament in the same breath as 'no manual scavenging,' and child labor's real progress and real limits. Cited to the ILO, the Periodic Labour Force Survey, the Codes' own text, parliamentary answers, and SEWA's own record. A country course in the Workers' Rights track, take \"The History of Unions: America and the World\" first.",
+    "Every tool in the anchor course, the election, the contract, the grievance procedure, the duty to bargain, assumes one thing so basic it is never said out loud: that a worker is an employee, and an employee has an employer. India is where that assumption breaks. About 90% of Indian workers are in informal employment (India Employment Report 2024, ILO and the Institute for Human Development, built on the government's own Periodic Labour Force Survey): no written contract, no social security, often no identifiable employer at all. This course teaches what that number means and where it comes from; the full legal machine India built on paper (a union with seven members, a constitution that guarantees association, and a Supreme Court that found no fundamental right to strike); union federations that each belong to a political party, a third politics-and-labor entanglement to set against Poland and China; SEWA, the Self-Employed Women's Association, which since 1972 has organized millions of women who have no employer to bargain with, the one institutional invention in this track built for exactly that; the 2019-2020 Labour Codes that folded 29 laws into four and then waited five years to come into force (taught dated, because the states are still writing their rules); the first legal recognition of gig and platform workers anywhere in this track; and the honest part, caste and labor, the sewer deaths a ministry reported to Parliament in the same breath as 'no manual scavenging,' and child labor's real progress and real limits. Cited to the ILO, the Periodic Labour Force Survey, the Codes' own text, parliamentary answers, and SEWA's own record. A country course in the Workers' Rights track, take \"The History of Unions: America and the World\" first.",
   lessons: [
     // ────────────── SECTION 1 · THE NUMBER THAT BREAKS THE MACHINE ──────────────
     {
@@ -54,7 +54,7 @@ export const LABOR_INDIA_COURSE: AuthoredCourse = {
       section: "Section 1 · The number that breaks the machine",
       body: `Think back to the anchor course, **The History of Unions: America and the World**, and list the machinery it taught you: the union election. The collective agreement. The grievance procedure. The duty to bargain. The unfair-dismissal claim. Now notice the one assumption every single piece of that machinery rests on, so basic it is never said out loud:
 
-**A worker is an employee. An employee has an employer. The employer is who you organise against, bargain with, and file against.**
+**A worker is an employee. An employee has an employer. The employer is who you organize against, bargain with, and file against.**
 
 This course is about the country where that assumption breaks, not at the edges, but for **roughly nine workers out of ten.**
 
@@ -69,11 +69,11 @@ This course is about the country where that assumption breaks, not at the edges,
 
 Why is the second number bigger than the first? Because **formal firms hire informally too.** A cleaner working inside a registered factory, supplied by a contractor, with no provident fund and no paper trail, holds a formal-*sector* job and an informal *employment relationship*. The 90% is the more honest measure of how work is actually experienced, and it is the one this course means when it says "informal."
 
-**What "informal" means concretely.** Not "illegal," and not "unemployed." It means: **no written contract. No paid leave. No provident fund (India's retirement system) and no employer health insurance. No notice period, because there is nothing to give notice under.** Frequently, no fixed workplace, and no single person or firm you could point to as "the employer." The street vendor buys her vegetables at dawn and owes nobody a timesheet. The construction worker is picked up at a morning labour market by a contractor who was himself hired by a subcontractor. The home-based worker rolls incense sticks or stitches garments at piece rates for a middleman she may never meet twice. The domestic worker has an employer of a kind, but one invisible to nearly every labour statute India has ever written.
+**What "informal" means concretely.** Not "illegal," and not "unemployed." It means: **no written contract. No paid leave. No provident fund (India's retirement system) and no employer health insurance. No notice period, because there is nothing to give notice under.** Frequently, no fixed workplace, and no single person or firm you could point to as "the employer." The street vendor buys her vegetables at dawn and owes nobody a timesheet. The construction worker is picked up at a morning labor market by a contractor who was himself hired by a subcontractor. The home-based worker rolls incense sticks or stitches garments at piece rates for a middleman she may never meet twice. The domestic worker has an employer of a kind, but one invisible to nearly every labor statute India has ever written.
 
 **One honest caveat, before you get attached to the number.** Informality statistics are genuinely contested. Different bodies draw the line differently, by enterprise registration, by social-security coverage, by written contract, and the headline percentage moves with the definition. That is exactly why this course names its source (ILO/PLFS), its year (2024), and its definition (no social security or employment benefits), and why you should refuse any bare "X% of Indians work informally" that arrives without all three. The lesson generalises: **a statistic without a definition is a vibe.**
 
-Scale, for orientation: India has been the world's **most populous country** since 2023 (United Nations, 2023). You will sometimes read that it has "the world's largest workforce", this course does not assert that, because it depends on definitions and China's labour force is of comparable size. Most populous country is enough: nine-tenths informality here is not a rounding error in the world's labour story. It may be the main plot.
+Scale, for orientation: India has been the world's **most populous country** since 2023 (United Nations, 2023). You will sometimes read that it has "the world's largest workforce", this course does not assert that, because it depends on definitions and China's labor force is of comparable size. Most populous country is enough: nine-tenths informality here is not a rounding error in the world's labor story. It may be the main plot.
 
 :::reveal The India Employment Report 2024 gives two numbers, about 82% and about 90%. What does each measure, and why is the second bigger? ||| About 82% is the share of workers in the informal SECTOR, unregistered/unincorporated enterprises. About 90% is the share in informal EMPLOYMENT, jobs with no social security or employment benefits, wherever they sit. The second is bigger because formal firms also hire informally: a contract cleaner inside a registered factory holds a formal-sector job and an informal employment relationship.
 
@@ -86,23 +86,23 @@ Scale, for orientation: India has been the world's **most populous country** sin
       slug: "india-law-on-paper",
       title: "2 · The law on paper: a complete machine most workers never touch",
       section: "Section 1 · The number that breaks the machine",
-      body: `Here is the twist a first-time student never expects: India's problem is **not** an absence of labour law. India has one of the oldest and most elaborate bodies of labour law in the world. The problem is who the machine can *see*.
+      body: `Here is the twist a first-time student never expects: India's problem is **not** an absence of labor law. India has one of the oldest and most elaborate bodies of labor law in the world. The problem is who the machine can *see*.
 
 **The machine, piece by piece.**
 
 **The Trade Unions Act, 1926.** Passed under British rule, a year *after* the anchor course's American story reached the Wagner Act's predecessors, and still, until the new Codes, the registration law for every Indian union. Its threshold was famously low: **any seven members** of a union could apply to register it (§ 4). A 2001 amendment raised the bar for unions of workers: registration now also requires **at least 10% of the workforce or 100 workers of the establishment or industry, whichever is less**, still subject to the minimum of seven (Trade Unions (Amendment) Act, 2001). Hold that number: *seven people can be a union.* It matters enormously in lesson 6, because the Act does not actually say those seven need a common employer.
 
-**The Industrial Disputes Act, 1947.** Passed in the year of independence: conciliation officers, labour tribunals, rules for lay-off, retrenchment and closure, including, in its later form, a requirement that larger factories get **government permission before mass lay-offs**. (The threshold and its 2020 tripling are a Section 4 story.)
+**The Industrial Disputes Act, 1947.** Passed in the year of independence: conciliation officers, labor tribunals, rules for lay-off, retrenchment and closure, including, in its later form, a requirement that larger factories get **government permission before mass lay-offs**. (The threshold and its 2020 tripling are a Section 4 story.)
 
 **The Factories Act, 1948; the Minimum Wages Act, 1948.** Safety, hours and welfare for factories; minimum wages, but the Minimum Wages Act covered only **"scheduled employments,"** occupations a government had listed, so a worker in an unlisted occupation had no statutory wage floor at all. Remember that gap: the 2019 Code on Wages exists largely to close it (Section 4).
 
 **The Constitution of India (1950), Article 19(1)(c)** guarantees all citizens the right **"to form associations or unions"**, a fundamental right, sitting next to speech and assembly. But note what is *not* there: the Supreme Court held in **T.K. Rangarajan v. Government of Tamil Nadu (2003)**, the case of roughly 170,000 Tamil Nadu government employees dismissed en masse for striking, that government employees have **"no fundamental, legal, moral or equitable right"** to strike. Forming the union is a constitutional right; using its sharpest tool is not.
 
-**And the international floor?** India was a **founding member of the ILO in 1919** and has ratified six of the eight core conventions, including both child-labour conventions, ratified in 2017. But it has **never ratified Convention No. 87** (freedom of association) **or Convention No. 98** (collective bargaining), the same two conventions the anchor course called the floor. The government's own stated reason is worth reading precisely because it is candid: ratification would grant rights, to strike, to criticise government policy openly, to join foreign federations, that India's **statutory rules for government servants prohibit** (Press Information Bureau, 2017). File that alongside the anchor's ILO lesson: the country with the world's most famous informal workforce is out of step with the formal floor *because of its most formal workers*.
+**And the international floor?** India was a **founding member of the ILO in 1919** and has ratified six of the eight core conventions, including both child-labor conventions, ratified in 2017. But it has **never ratified Convention No. 87** (freedom of association) **or Convention No. 98** (collective bargaining), the same two conventions the anchor course called the floor. The government's own stated reason is worth reading precisely because it is candid: ratification would grant rights, to strike, to criticize government policy openly, to join foreign federations, that India's **statutory rules for government servants prohibit** (Press Information Bureau, 2017). File that alongside the anchor's ILO lesson: the country with the world's most famous informal workforce is out of step with the formal floor *because of its most formal workers*.
 
-**Now the catch, and it is the whole course.** Reread the machine above and notice what every part assumes: an **establishment**. An **industry**. An **employer** to be conciliated with, to seek permission, to pay the scheduled wage. The machine is real, elaborate, and pointed at the formal fraction of the economy. For the roughly nine-in-ten in informal employment (lesson 1), there is no establishment to register at, no employer to dispute with, no schedule their occupation appears on. **India did not forget to build labour law. It built a cathedral, on the tenth of the ground where the law could see people standing.**
+**Now the catch, and it is the whole course.** Reread the machine above and notice what every part assumes: an **establishment**. An **industry**. An **employer** to be conciliated with, to seek permission, to pay the scheduled wage. The machine is real, elaborate, and pointed at the formal fraction of the economy. For the roughly nine-in-ten in informal employment (lesson 1), there is no establishment to register at, no employer to dispute with, no schedule their occupation appears on. **India did not forget to build labor law. It built a cathedral, on the tenth of the ground where the law could see people standing.**
 
-:::reveal India guarantees union-forming as a fundamental constitutional right, yet has never ratified ILO Conventions 87 and 98. What is the government's own stated reason? ||| Its statutory rules for government servants. Ratifying would mean granting government employees rights those rules prohibit, striking, openly criticising government policy, freely joining foreign organisations, so India stays a non-ratifier of the freedom-of-association floor (its stated position as of 2017), even while Article 19(1)(c) protects forming unions.
+:::reveal India guarantees union-forming as a fundamental constitutional right, yet has never ratified ILO Conventions 87 and 98. What is the government's own stated reason? ||| Its statutory rules for government servants. Ratifying would mean granting government employees rights those rules prohibit, striking, openly criticizing government policy, freely joining foreign organizations, so India stays a non-ratifier of the freedom-of-association floor (its stated position as of 2017), even while Article 19(1)(c) protects forming unions.
 
 ## Sources
 - The Trade Unions Act, 1926 (India), § 4, as amended by the Trade Unions (Amendment) Act, 2001. India Code. https://www.indiacode.nic.in/bitstream/123456789/20965/1/the_trade_unions_act,_1926.pdf
@@ -128,14 +128,14 @@ Scale, for orientation: India has been the world's **most populous country** sin
       section: "Section 1 · The number that breaks the machine",
       body: `If you have taken the anchor course, you own the four questions. If you haven't: take it after this, the questions come from there, and this course does not re-derive them.
 
-1. **Who is allowed to organise?**
+1. **Who is allowed to organize?**
 2. **Who is excluded?**
 3. **Who bargains with whom, and at what level?**
 4. **What happens to you if you try?**
 
 Here are India's answers in advance. Everything after this lesson is the detail, and watch what informality does to each question as it passes through.
 
-**Q1, Who is allowed to organise?** On paper, nearly everyone: Article 19(1)(c) makes forming associations a fundamental right, and seven members can register a union (lesson 2). India is, on this axis, genuinely open, no single state-run federation as in China, no licensing of who may exist as in the Gulf. But the paper right is thinner than it looks: no ratification of ILO Conventions 87/98, and no fundamental right to strike (Rangarajan, 2003).
+**Q1, Who is allowed to organize?** On paper, nearly everyone: Article 19(1)(c) makes forming associations a fundamental right, and seven members can register a union (lesson 2). India is, on this axis, genuinely open, no single state-run federation as in China, no licensing of who may exist as in the Gulf. But the paper right is thinner than it looks: no ratification of ILO Conventions 87/98, and no fundamental right to strike (Rangarajan, 2003).
 
 **Q2, Who is excluded?** Now compare the exclusions you have already met in this track. The American Wagner Act **wrote its exclusion into the statute**: agricultural and domestic workers, named and carved out. Germany's Works Constitution Act **names its doors too**: executives, church-run institutions. India's great exclusion is different in kind, **it is not written anywhere, because it does not need to be.** The law simply speaks of establishments, industries, employers, and the roughly 90% in informal employment stand outside the vocabulary itself. Nobody excluded the street vendor from the Industrial Disputes Act; there was never an "industrial dispute" she could be party to. Call this the difference between a **statutory door** and a **structural one**: a statutory exclusion can be repealed in an afternoon; a structural exclusion has nothing to repeal.
 
@@ -145,7 +145,7 @@ Here are India's answers in advance. Everything after this lesson is the detail,
 
 Keep the four questions in hand. Sections 2 through 5 are India's long answers; Section 6 asks you to give the short ones back.
 
-:::reveal The anchor course showed exclusion written into statutes (the Wagner Act's agricultural and domestic carve-out). Why does India's biggest exclusion have no section number to point to? ||| Because it is structural, not statutory. India's labour machine speaks of establishments, industries and employers, and roughly 90% of workers, being informally employed, fall outside that vocabulary without anyone writing them out. A statutory exclusion can be repealed; a structural one has nothing to repeal, which is why the fix required inventing new institutions rather than amending old ones.
+:::reveal The anchor course showed exclusion written into statutes (the Wagner Act's agricultural and domestic carve-out). Why does India's biggest exclusion have no section number to point to? ||| Because it is structural, not statutory. India's labor machine speaks of establishments, industries and employers, and roughly 90% of workers, being informally employed, fall outside that vocabulary without anyone writing them out. A statutory exclusion can be repealed; a structural one has nothing to repeal, which is why the fix required inventing new institutions rather than amending old ones.
 
 ## Sources
 - International Labour Organization & Institute for Human Development. (2024). *India Employment Report 2024: Youth employment, education and skills*. ILO. https://www.ilo.org/sites/default/files/2024-08/India%20Employment%20-%20web_8%20April.pdf
@@ -211,7 +211,7 @@ Keep the four questions in hand. Sections 2 through 5 are India's long answers; 
           {
             prompt: "Why does this course insist any informality statistic carry a source, a year, AND a definition?",
             options: [
-              "Because India's labour statistics are officially secret and cannot be quoted",
+              "Because India's labor statistics are officially secret and cannot be quoted",
               "Because bodies define informality differently, so the headline percentage swings",
               "Because the informality figure has stayed frozen and never once changed since 1947",
               "Because the ILO forbids quoting any figure without its own written permission",
@@ -244,7 +244,7 @@ Keep the four questions in hand. Sections 2 through 5 are India's long answers; 
             ],
             correctIndex: 1,
             explanation:
-              "The PLFS is India's official household labour-force survey, the domestic data the ILO/IHD report is built on.",
+              "The PLFS is India's official household labor-force survey, the domestic data the ILO/IHD report is built on.",
             sourceLessonSlug: "india-nine-in-ten",
           },
           {
@@ -284,27 +284,27 @@ Keep the four questions in hand. Sections 2 through 5 are India's long answers; 
           {
             prompt: "Which two ILO core conventions has India never ratified, and what is the government's stated reason?",
             options: [
-              "The two child-labour conventions, citing deep rural and family-farm poverty everywhere",
+              "The two child-labor conventions, citing deep rural and family-farm poverty everywhere",
               "Conventions 87 and 98, citing statutory restrictions binding on government servants",
-              "The two forced-labour conventions, citing the persistence of prison and bonded labour",
+              "The two forced-labor conventions, citing the persistence of prison and bonded labor",
               "None of them, since India has in fact ratified all eight of the core ILO conventions",
             ],
             correctIndex: 1,
             explanation:
-              "India has ratified six of eight core conventions (both child-labour ones in 2017) but not 87/98, because ratifying would grant government servants rights their service rules prohibit.",
+              "India has ratified six of eight core conventions (both child-labor ones in 2017) but not 87/98, because ratifying would grant government servants rights their service rules prohibit.",
             sourceLessonSlug: "india-law-on-paper",
           },
           {
             prompt: "What is the 'catch' in India's elaborate labour-law machine?",
             options: [
-              "The labour laws were drafted but in the end were never actually passed by Parliament at all",
+              "The labor laws were drafted but in the end were never actually passed by Parliament at all",
               "Every part assumes an establishment, an industry, an employer, only the formal fraction",
-              "The labour laws apply only inside Delhi and a small handful of other union territories",
+              "The labor laws apply only inside Delhi and a small handful of other union territories",
               "The machine already reaches every single Indian worker equally, formal and informal alike",
             ],
             correctIndex: 1,
             explanation:
-              "India built a cathedral of labour law, on the tenth of the ground where the law could see people standing.",
+              "India built a cathedral of labor law, on the tenth of the ground where the law could see people standing.",
             sourceLessonSlug: "india-law-on-paper",
           },
           {
@@ -327,7 +327,7 @@ Keep the four questions in hand. Sections 2 through 5 are India's long answers; 
               "Their employer's own human-resources department, exactly as in the formal sector",
               "Usually the state (welfare boards, schemes) or the city, since there is no employer",
               "The International Labour Organization, which bargains on the informal worker's behalf",
-              "Nobody at all, because informal workers are legally forbidden from organising at all",
+              "Nobody at all, because informal workers are legally forbidden from organizing at all",
             ],
             correctIndex: 1,
             explanation:
@@ -351,9 +351,9 @@ Keep the four questions in hand. Sections 2 through 5 are India's long answers; 
             prompt: "Why does this course refuse to call India's workforce 'the world's largest'?",
             options: [
               "Because India's total workforce is in fact tiny by any international comparison",
-              "Because the claim depends on definitions and China's labour force is comparable in size",
+              "Because the claim depends on definitions and China's labor force is comparable in size",
               "Because the United Nations has expressly forbidden making that particular comparison",
-              "Because no workforce or labour-force statistics of any kind exist for India at all",
+              "Because no workforce or labor-force statistics of any kind exist for India at all",
             ],
             correctIndex: 1,
             explanation:
@@ -371,7 +371,7 @@ Keep the four questions in hand. Sections 2 through 5 are India's long answers; 
       section: "Section 2 · The unions that exist, and the parties that own them",
       body: `Before this course reaches the workers the law cannot see, meet the unions the law *can* see, because they are strange in their own way, and the strangeness is a third data point in a pattern this track has been building.
 
-**The landscape.** India's union movement is organised into **central trade union organisations (CTUOs)**, national federations that pull together thousands of registered enterprise- and industry-level unions. The big ones, with founding dates and the detail that matters:
+**The landscape.** India's union movement is organized into **central trade union organizations (CTUOs)**, national federations that pull together thousands of registered enterprise- and industry-level unions. The big ones, with founding dates and the detail that matters:
 
 | Federation | Founded | Political family |
 | --- | --- | --- |
@@ -381,7 +381,7 @@ Keep the four questions in hand. Sections 2 through 5 are India's long answers; 
 | **BMS**, Bharatiya Mazdoor Sangh | 1955 | The RSS (Rashtriya Swayamsevak Sangh), the ideological parent of the governing BJP |
 | **CITU**, Centre of Indian Trade Unions | 1970 | The Communist Party of India (Marxist), after the communist split |
 
-Read the right-hand column again. **Every major federation is tied to a political party or political family.** AITUC predates independence, Indian unionism is older than the Indian state, and INTUC was founded in 1947, the year of independence, precisely so that the Congress party would have a labour wing that communists did not control. When India's communists split in 1964, the union movement split with them (CITU, 1970). And the BMS was built by the RSS as an explicitly non-Marxist, "nationalist" labour organisation, today aligned with the family of the governing party, which puts it in the extraordinary position of being a union federation whose political parent runs the government it must bargain against.
+Read the right-hand column again. **Every major federation is tied to a political party or political family.** AITUC predates independence, Indian unionism is older than the Indian state, and INTUC was founded in 1947, the year of independence, precisely so that the Congress party would have a labor wing that communists did not control. When India's communists split in 1964, the union movement split with them (CITU, 1970). And the BMS was built by the RSS as an explicitly non-Marxist, "nationalist" labor organization, today aligned with the family of the governing party, which puts it in the extraordinary position of being a union federation whose political parent runs the government it must bargain against.
 
 **Now place this on the track's map, because you have seen politics-and-unions entangled twice before, and neither time looked like this.** In **Poland**, the union came first and *created* a political force: Solidarność brought down the party-state. In **China**, the party came first and *owns* the union: the ACFTU is an organ of the party-state, and no second federation may exist. **India is a third arrangement: many parties, each with its own union.** The union movement is free, plural, competitive, and *divided along party lines*, so that workers in the same factory may belong to rival federations whose first loyalty runs to rival parties. Competition guarantees independence from the state; it also guarantees fragmentation.
 
@@ -417,15 +417,15 @@ Read the right-hand column again. **Every major federation is tied to a politica
 
 Stop at that number and do to it what this course did to the 90% in lesson 1.
 
-**What "250 million" is:** the organisers' own estimate, announced around the strike. **What it is not:** a turnstile count. Nobody counts a one-day strike across a country of 1.4 billion; there is no register of strikers, no independent audit, and much of the claimed participation is in sectors, agricultural labour, construction, street vending, where "on strike" and "not working today" cannot be told apart from outside. Similar claims accompanied earlier general strikes (2016, 2019, 2020, 2022), each billed at 150-250 million. **This course neither repeats the number as fact nor dismisses it as fiction: it attributes it.** "The unions claimed over 250 million" is a true sentence; "250 million struck" is an unverifiable one. That is not pedantry, it is the difference between reporting and amplifying, and you now know to apply it to every "largest strike in history" headline you will ever read.
+**What "250 million" is:** the organisers' own estimate, announced around the strike. **What it is not:** a turnstile count. Nobody counts a one-day strike across a country of 1.4 billion; there is no register of strikers, no independent audit, and much of the claimed participation is in sectors, agricultural labor, construction, street vending, where "on strike" and "not working today" cannot be told apart from outside. Similar claims accompanied earlier general strikes (2016, 2019, 2020, 2022), each billed at 150-250 million. **This course neither repeats the number as fact nor dismisses it as fiction: it attributes it.** "The unions claimed over 250 million" is a true sentence; "250 million struck" is an unverifiable one. That is not pedantry, it is the difference between reporting and amplifying, and you now know to apply it to every "largest strike in history" headline you will ever read.
 
 **Even discounted heavily, though, something real is happening, and it is worth seeing what.** These strikes reliably shut down banks, mines, ports and state transport across whole regions; even skeptical coverage concedes participation in the tens of millions. That would make them among the largest coordinated work stoppages anywhere on earth. So hold both facts at once: Indian unions represent a *small verified fraction* of a workforce that is 90% informal, and they can produce, at intervals, the biggest strikes in the world.
 
-**How can both be true? Because the Indian general strike is a different instrument from the strikes in the anchor course.** Homestead, Pullman, the Flint sit-down, those were strikes *against an employer*, aimed at a contract. The Indian *bharat bandh* is a strike **against a government, aimed at policy**: labour codes, privatisation, minimum-wage demands, social-security coverage. It is bargaining conducted at the only table where India's fragmented, party-tied federations all sit on the same side, and, crucially, it is the one form of industrial action an **informal worker can join**, because you need no employer to stay home, shut your stall, or march. The paradox of lesson 4 resolves: federations too divided to bargain jointly with any employer, representing a workforce mostly outside employment, converge once every year or two on the single act that requires neither unity of contract nor an employer at all.
+**How can both be true? Because the Indian general strike is a different instrument from the strikes in the anchor course.** Homestead, Pullman, the Flint sit-down, those were strikes *against an employer*, aimed at a contract. The Indian *bharat bandh* is a strike **against a government, aimed at policy**: labor codes, privatisation, minimum-wage demands, social-security coverage. It is bargaining conducted at the only table where India's fragmented, party-tied federations all sit on the same side, and, crucially, it is the one form of industrial action an **informal worker can join**, because you need no employer to stay home, shut your stall, or march. The paradox of lesson 4 resolves: federations too divided to bargain jointly with any employer, representing a workforce mostly outside employment, converge once every year or two on the single act that requires neither unity of contract nor an employer at all.
 
 **Note the irony in the target.** The unions' central demand in 2025 was repeal of the Labour Codes, laws whose stated purpose includes *extending* rights (a universal minimum wage, social security for gig workers) to the informal majority. Why would unions strike against that? Section 4 lays out what the Codes actually say, what the federations object to, and why the honest answer is "both sides have a case", dated, as always.
 
-:::reveal "Over 250 million workers joined the 9 July 2025 general strike." What is the epistemically careful version of that sentence, and why? ||| "The organising unions claimed over 250 million participants." The figure is the organisers' own estimate, there is no independent count of a one-day strike across a country of 1.4 billion, and in informal sectors striking is indistinguishable from not working that day. Attribute the number; don't assert or dismiss it.
+:::reveal "Over 250 million workers joined the 9 July 2025 general strike." What is the epistemically careful version of that sentence, and why? ||| "The organizing unions claimed over 250 million participants." The figure is the organisers' own estimate, there is no independent count of a one-day strike across a country of 1.4 billion, and in informal sectors striking is indistinguishable from not working that day. Attribute the number; don't assert or dismiss it.
 
 ## Sources
 - ITUC-Asia Pacific. (2025, July). *Bharat Bandh: India's workers rise in unprecedented unity against anti-labour policies*. https://www.ituc-ap.org/news-and-updates/bharat-bandh-indias-workers-rise-in-unprecedented-unity-against-anti-labour-policies
@@ -456,9 +456,9 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
             prompt: "What is a CTUO in the Indian labour landscape?",
             options: [
               "A statutory government wage board that fixes minimum wages sector by sector",
-              "A central trade union organisation, a national federation of registered unions",
+              "A central trade union organization, a national federation of registered unions",
               "A type of collective agreement signed at national level across an industry",
-              "A specialised labour court that adjudicates industrial disputes and lay-offs",
+              "A specialized labor court that adjudicates industrial disputes and lay-offs",
             ],
             correctIndex: 1,
             explanation:
@@ -470,7 +470,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
             options: [
               "INTUC, meaning Indian trade unionism only began at independence in 1947",
               "AITUC, meaning Indian unionism is older than the Indian state itself",
-              "BMS, meaning organised Indian trade unionism began only with the RSS",
+              "BMS, meaning organized Indian trade unionism began only with the RSS",
               "CITU, meaning Indian unionism began with the 1964 communist party split",
             ],
             correctIndex: 1,
@@ -482,7 +482,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
             prompt: "Why was INTUC founded in 1947?",
             options: [
               "To merge every existing Indian union into one single national federation",
-              "So the Congress party would have a labour wing not controlled by communists",
+              "So the Congress party would have a labor wing not controlled by communists",
               "To represent India's central-government employees and no other workers",
               "As a formal precondition of India's admission to the ILO in that year",
             ],
@@ -501,7 +501,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
             ],
             correctIndex: 1,
             explanation:
-              "The BMS (founded 1955) belongs to the RSS family, as does the governing BJP, a labour wing and a government grown from the same root.",
+              "The BMS (founded 1955) belongs to the RSS family, as does the governing BJP, a labor wing and a government grown from the same root.",
             sourceLessonSlug: "india-federations-and-parties",
           },
           {
@@ -534,13 +534,13 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
             prompt: "What is the trade-off of India's many-parties-many-unions arrangement?",
             options: [
               "Independence from the state, but at the price of fragmentation into rival party-tied unions",
-              "Unity across the movement, but bought at the price of total state control of labour",
+              "Unity across the movement, but bought at the price of total state control of labor",
               "Very high union membership, but bought at the price of the unions' outright illegality",
               "There is genuinely no trade-off at all; the arrangement carries no cost whatsoever",
             ],
             correctIndex: 0,
             explanation:
-              "Competition guarantees no single party-state can own labour; it also means workers in one factory may belong to federations loyal to rival parties.",
+              "Competition guarantees no single party-state can own labor; it also means workers in one factory may belong to federations loyal to rival parties.",
             sourceLessonSlug: "india-federations-and-parties",
           },
           {
@@ -586,7 +586,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
             prompt: "What exactly is the '250 million' figure attached to the 9 July 2025 strike?",
             options: [
               "An official government census that physically counted every one of the strikers",
-              "The organising unions' own claimed figure, attributed by this course, not asserted",
+              "The organizing unions' own claimed figure, attributed by this course, not asserted",
               "An independent, ILO-audited head count of the strikers, verified afterward",
               "The total registered trade-union membership across the whole of India today",
             ],
@@ -614,7 +614,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
               "It does not differ from the anchor course's strikes in any meaningful way at all",
               "It is aimed at the government and its policies, not at any employer or a contract",
               "It is aimed squarely at large foreign-owned multinational companies operating in India",
-              "It is aimed at the labour courts and industrial tribunals rather than at any employer",
+              "It is aimed at the labor courts and industrial tribunals rather than at any employer",
             ],
             correctIndex: 1,
             explanation:
@@ -626,7 +626,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
             options: [
               "Because the law specifically exempts all informal workers from the 14-day strike notice",
               "Because it needs no employer: staying home or shutting a stall needs no employment tie",
-              "Because the organising unions directly pay the informal workers a daily wage to join in",
+              "Because the organizing unions directly pay the informal workers a daily wage to join in",
               "Because a general strike always falls on an existing public holiday, so no work is lost",
             ],
             correctIndex: 1,
@@ -659,17 +659,17 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
       section: "Section 3 · SEWA, the union with no employer to strike against",
       body: `Here is the lesson the whole track has been waiting for, the one institutional invention built for exactly the place where "worker = employee" breaks.
 
-**The setting.** Ahmedabad, in the state of Gujarat: one of the historic centres of Indian textile manufacturing, and home to the **Textile Labour Association (TLA)**, the mill-workers' union that grew out of the 1918 Ahmedabad mill strike in which Mohandas Gandhi was an adviser, and whose first president was Anasuya Sarabhai. A completely conventional union: mills, employers, members, disputes.
+**The setting.** Ahmedabad, in the state of Gujarat: one of the historic centers of Indian textile manufacturing, and home to the **Textile Labour Association (TLA)**, the mill-workers' union that grew out of the 1918 Ahmedabad mill strike in which Mohandas Gandhi was an adviser, and whose first president was Anasuya Sarabhai. A completely conventional union: mills, employers, members, disputes.
 
-**The person.** **Ela Bhatt (1933-2022)**, a young labour lawyer on the TLA's staff, who came to head its women's wing. Doing that job, she kept meeting women the union had no category for: head-loaders carrying cloth between wholesale markets for per-trip payments; cart-pullers; used-garment dealers; home-based stitchers paid by the piece through middlemen. They worked in and around the textile trade the TLA existed to organise, and not one of them was anyone's employee. No mill on their pay records, no pay records at all.
+**The person.** **Ela Bhatt (1933-2022)**, a young labor lawyer on the TLA's staff, who came to head its women's wing. Doing that job, she kept meeting women the union had no category for: head-loaders carrying cloth between wholesale markets for per-trip payments; cart-pullers; used-garment dealers; home-based stitchers paid by the piece through middlemen. They worked in and around the textile trade the TLA existed to organize, and not one of them was anyone's employee. No mill on their pay records, no pay records at all.
 
-**The move.** In 1972 Bhatt and these workers founded the **Self-Employed Women's Association, SEWA**, and applied to register it as a **trade union** under the Trade Unions Act, 1926. The Labour Department's objection was the entire subject of this course stated as bureaucracy: *a union, surely, requires an employer to struggle against, against whom would this union be directed?* SEWA's answer, which its members have repeated for fifty years: **a union is not defined by its adversary but by its purpose, organising workers, as workers, for their own development.** The registration went through: SEWA records its registration as a trade union on **12 April 1972** (SEWA, n.d.). Remember lesson 2: the 1926 Act asks for seven members; **it nowhere requires that they share an employer.** A colonial-era statute written for a world of mills turned out to contain, unnoticed for half a century, the legal space for a union of the employer-less.
+**The move.** In 1972 Bhatt and these workers founded the **Self-Employed Women's Association, SEWA**, and applied to register it as a **trade union** under the Trade Unions Act, 1926. The Labour Department's objection was the entire subject of this course stated as bureaucracy: *a union, surely, requires an employer to struggle against, against whom would this union be directed?* SEWA's answer, which its members have repeated for fifty years: **a union is not defined by its adversary but by its purpose, organizing workers, as workers, for their own development.** The registration went through: SEWA records its registration as a trade union on **12 April 1972** (SEWA, n.d.). Remember lesson 2: the 1926 Act asks for seven members; **it nowhere requires that they share an employer.** A colonial-era statute written for a world of mills turned out to contain, unnoticed for half a century, the legal space for a union of the employer-less.
 
-**What it became.** SEWA today reports **3.78 million members across 20 states** (SEWA, n.d.), street vendors, home-based workers, waste pickers, agricultural labourers, domestic workers, construction workers. Treat that figure with the discipline this course has drilled: it is **SEWA's own count**, not an audited one. But even discounted, hold it against lesson 4's landscape, the last *verified* membership of India's largest conventional federation was about 6.2 million (2002), and every conventional federation's verified base is dwarfed by its claims. By any honest reading, **a union of women who have no employers is one of the largest workers' organisations in India**, and, unlike every federation in lesson 4's table, **it belongs to no political party.**
+**What it became.** SEWA today reports **3.78 million members across 20 states** (SEWA, n.d.), street vendors, home-based workers, waste pickers, agricultural labourers, domestic workers, construction workers. Treat that figure with the discipline this course has drilled: it is **SEWA's own count**, not an audited one. But even discounted, hold it against lesson 4's landscape, the last *verified* membership of India's largest conventional federation was about 6.2 million (2002), and every conventional federation's verified base is dwarfed by its claims. By any honest reading, **a union of women who have no employers is one of the largest workers' organizations in India**, and, unlike every federation in lesson 4's table, **it belongs to no political party.**
 
-**Why this matters beyond India.** Every model in this track so far, Wagner elections, German works councils, Nordic Ghent funds, even Solidarność, organises people *through their employment*. SEWA is the track's one working answer to the question the other eleven courses never have to ask: *how do you organise workers when there is no employer in the picture at all?* The next lesson takes the machine apart.
+**Why this matters beyond India.** Every model in this track so far, Wagner elections, German works councils, Nordic Ghent funds, even Solidarność, organises people *through their employment*. SEWA is the track's one working answer to the question the other eleven courses never have to ask: *how do you organize workers when there is no employer in the picture at all?* The next lesson takes the machine apart.
 
-:::reveal The Labour Department's 1972 objection to registering SEWA states this course's central theme as bureaucracy. What was the objection, and what was SEWA's answer? ||| Objection: a union needs an employer to struggle against, against whom would a union of the self-employed be directed? Answer: a union is defined by its purpose, not its adversary, organising workers, as workers, for their own development. The Trade Unions Act, 1926 requires seven members, not a shared employer, and SEWA registered on 12 April 1972.
+:::reveal The Labour Department's 1972 objection to registering SEWA states this course's central theme as bureaucracy. What was the objection, and what was SEWA's answer? ||| Objection: a union needs an employer to struggle against, against whom would a union of the self-employed be directed? Answer: a union is defined by its purpose, not its adversary, organizing workers, as workers, for their own development. The Trade Unions Act, 1926 requires seven members, not a shared employer, and SEWA registered on 12 April 1972.
 
 ## Sources
 - Self-Employed Women's Association. (n.d.). *About us*. https://www.sewa.org/about-us/
@@ -684,7 +684,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
         {
           prompt: "How do Indian general strikes differ in TARGET from the strikes in the anchor course (Homestead, Pullman, Flint)?",
           answer:
-            "Anchor-course strikes ran against an employer, aimed at a contract. The Indian bharat bandh runs against the government, aimed at policy, labour codes, privatisation, social security. It is bargaining with the state, by the only means available to a fragmented movement.",
+            "Anchor-course strikes ran against an employer, aimed at a contract. The Indian bharat bandh runs against the government, aimed at policy, labor codes, privatisation, social security. It is bargaining with the state, by the only means available to a fragmented movement.",
         },
       ],
     },
@@ -692,20 +692,20 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
       slug: "india-sewa-how",
       title: "7 · How do you bargain with nobody? The SEWA method",
       section: "Section 3 · SEWA, the union with no employer to strike against",
-      body: `A union's toolkit, as the anchor course taught it: organise, certify, bargain, strike, grieve. Every verb aims at an employer. SEWA had to rebuild the toolkit for workers who have none, and the rebuild is the most instructive piece of labour-institution engineering in this track.
+      body: `A union's toolkit, as the anchor course taught it: organize, certify, bargain, strike, grieve. Every verb aims at an employer. SEWA had to rebuild the toolkit for workers who have none, and the rebuild is the most instructive piece of labor-institution engineering in this track.
 
 **SEWA's own formulation is "struggle and development"**, a union *and* a web of member-owned institutions, because for the self-employed, half of what a contract would provide has to be built instead.
 
-**Tool 1, the identity card.** The most underrated object in this course. A SEWA membership card is often the first document a member has ever held that names her as a *worker*. For a street vendor facing a policeman confiscating her cart, or a head-loader disputing a payment, a card, an organisation that will answer for her, converts an invisible person into a represented one. Recall lesson 3: informal retaliation (eviction, confiscation, harassment) is Question 4 for the informal worker. The card is the counter-tool.
+**Tool 1, the identity card.** The most underrated object in this course. A SEWA membership card is often the first document a member has ever held that names her as a *worker*. For a street vendor facing a policeman confiscating her cart, or a head-loader disputing a payment, a card, an organization that will answer for her, converts an invisible person into a represented one. Recall lesson 3: informal retaliation (eviction, confiscation, harassment) is Question 4 for the informal worker. The card is the counter-tool.
 
 **Tool 2, replace the missing counterparty.** No employer? Then find the entity that actually controls the member's livelihood, and bargain *there*:
 - For **piece-rate home workers**, the counterparty is the middleman and the trader chain, SEWA runs campaigns over piece rates, the informal economy's version of a wage claim.
-- For **street vendors**, it is the **municipality** that controls the street. SEWA has fought vendors' eviction battles from city offices up into the courts, and that decades-long fight fed into a national statute: the **Street Vendors (Protection of Livelihood and Regulation of Street Vending) Act, 2014**, which for the first time gave vendors a statutory framework, including town vending committees with mandated vendor representation (the Act sets it at 40 per cent of members). A law, note, that regulates *cities*, not employers: labour law with the employer deleted.
-- For **everyone**, the residual counterparty is **the state**, lobbying workers onto welfare boards and social-security schemes. When lesson 12 reaches e-Shram, India's national registry of informal workers, you will recognise whose logic it borrows.
+- For **street vendors**, it is the **municipality** that controls the street. SEWA has fought vendors' eviction battles from city offices up into the courts, and that decades-long fight fed into a national statute: the **Street Vendors (Protection of Livelihood and Regulation of Street Vending) Act, 2014**, which for the first time gave vendors a statutory framework, including town vending committees with mandated vendor representation (the Act sets it at 40 per cent of members). A law, note, that regulates *cities*, not employers: labor law with the employer deleted.
+- For **everyone**, the residual counterparty is **the state**, lobbying workers onto welfare boards and social-security schemes. When lesson 12 reaches e-Shram, India's national registry of informal workers, you will recognize whose logic it borrows.
 
 **Tool 3, build what the contract would have contained.** A formal job carries credit-worthiness, insurance, childcare, a pension. SEWA builds each as a member-owned institution: the **SEWA Cooperative Bank**, founded in 1974 out of thousands of members' tiny share contributions, because no commercial bank would lend to an undocumented vegetable seller; insurance (VimoSEWA), childcare cooperatives, producer and vendor cooperatives that let members bypass the middleman entirely. This is the piece with no equivalent anywhere else in the track: **the union as a substitute for the employment relationship itself**, not just a party to it. (Nearest cousin: the Nordic Ghent funds, services binding members to the union, but those top up a formal system; SEWA's institutions stand in for an absent one.)
 
-**Tool 4, export the category.** SEWA took "the self-employed are workers" to the international level: Ela Bhatt co-founded **WIEGO** (Women in Informal Employment: Globalizing and Organizing, 1997), SEWA helped build **HomeNet**, the international alliance of home-based workers' organisations, and that alliance's campaigning contributed to the ILO's **Home Work Convention, 1996 (No. 177)**, the first ILO convention recognising home-based workers, and the ILO's **Recommendation 204 (2015)** on formalising the informal economy now frames the issue globally. The definitional fight a Gujarat labour department lost in 1972 has since been fought, and largely won, at the ILO.
+**Tool 4, export the category.** SEWA took "the self-employed are workers" to the international level: Ela Bhatt co-founded **WIEGO** (Women in Informal Employment: Globalizing and Organizing, 1997), SEWA helped build **HomeNet**, the international alliance of home-based workers' organizations, and that alliance's campaigning contributed to the ILO's **Home Work Convention, 1996 (No. 177)**, the first ILO convention recognizing home-based workers, and the ILO's **Recommendation 204 (2015)** on formalising the informal economy now frames the issue globally. The definitional fight a Gujarat labor department lost in 1972 has since been fought, and largely won, at the ILO.
 
 **What the method costs.** Note what is absent from all four tools: a collective *agreement*. SEWA wins rates, laws, seats and services, it cannot win a contract, because there is no counterparty capable of signing one for its members as a class. That gap is the honest subject of the next lesson.
 
@@ -720,12 +720,12 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
         {
           prompt: "SEWA, who founded it, when, where, and under what law did it register?",
           answer:
-            "Ela Bhatt (1933-2022), a labour lawyer from the Textile Labour Association's women's wing, founded the Self-Employed Women's Association in Ahmedabad in 1972. It registered as a trade union under the Trade Unions Act, 1926 (SEWA records 12 April 1972) after arguing a union needs a purpose, not an employer.",
+            "Ela Bhatt (1933-2022), a labor lawyer from the Textile Labour Association's women's wing, founded the Self-Employed Women's Association in Ahmedabad in 1972. It registered as a trade union under the Trade Unions Act, 1926 (SEWA records 12 April 1972) after arguing a union needs a purpose, not an employer.",
         },
         {
           prompt: "How big is SEWA, and how should that figure be treated?",
           answer:
-            "SEWA reports 3.78 million members across 20 states, its own count, attributed not audited. Even discounted, it is one of India's largest workers' organisations, and unlike the major federations it is tied to no political party.",
+            "SEWA reports 3.78 million members across 20 states, its own count, attributed not audited. Even discounted, it is one of India's largest workers' organizations, and unlike the major federations it is tied to no political party.",
         },
       ],
     },
@@ -737,9 +737,9 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
 
 **What SEWA proves.**
 
-**1. "Worker" and "employee" are different categories, as a matter of demonstrated fact, not theory.** Three-plus million self-employed women organised, registered, banked, insured and represented for five decades is an existence proof. The anchor course's machinery assumes the two categories coincide; SEWA is the standing demonstration that they need not.
+**1. "Worker" and "employee" are different categories, as a matter of demonstrated fact, not theory.** Three-plus million self-employed women organized, registered, banked, insured and represented for five decades is an existence proof. The anchor course's machinery assumes the two categories coincide; SEWA is the standing demonstration that they need not.
 
-**2. The four questions still work, they just return different answers.** Who may organise? Anyone with seven members and a purpose (the 1972 registration). Who is excluded? Nobody by statute, but note honestly who the model reaches less well: SEWA organises women, by design, rooted in the reality that informal work is disproportionately women's work; parallel organising of informal men has been thinner everywhere. Who bargains with whom? Middlemen, municipalities, the state, lesson 7. What happens if you try? Harassment and eviction still, but now with a card, a lawyer, and three million co-members behind you.
+**2. The four questions still work, they just return different answers.** Who may organize? Anyone with seven members and a purpose (the 1972 registration). Who is excluded? Nobody by statute, but note honestly who the model reaches less well: SEWA organises women, by design, rooted in the reality that informal work is disproportionately women's work; parallel organizing of informal men has been thinner everywhere. Who bargains with whom? Middlemen, municipalities, the state, lesson 7. What happens if you try? Harassment and eviction still, but now with a card, a lawyer, and three million co-members behind you.
 
 **3. Services build unions where statutes don't.** The Nordic course showed the Ghent effect: unions that administer unemployment funds keep members. SEWA is the same law operating at the opposite end of the world's income distribution: the bank, the insurance, the childcare are why members stay. **Where the law gives a union nothing to deliver, a union that wants members must deliver something itself.**
 
@@ -747,11 +747,11 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
 
 **1. It has not produced a collective agreement, because it cannot.** There is no employer-side entity capable of binding itself to pay every head-loader in Ahmedabad a set rate. SEWA wins *rates* in specific markets, *laws* like the 2014 Street Vendors Act, *seats* on boards, *services*, but nothing in its toolkit does what the German sectoral agreement or even a single Wagner-Act contract does: create enforceable terms that attach to the work itself. The absence is structural, and you should hear in it lesson 3's theme again: **no counterparty, no contract.**
 
-**2. Membership is not coverage.** 3.78 million (self-reported) is vast as organising and small as arithmetic: India's informal workforce is measured in the hundreds of millions. SEWA changes its members' lives; it has not changed the *aggregate* condition of Indian informal labour, and fifty years in, the model's spread, real, and international, is still nowhere near the scale of the problem.
+**2. Membership is not coverage.** 3.78 million (self-reported) is vast as organizing and small as arithmetic: India's informal workforce is measured in the hundreds of millions. SEWA changes its members' lives; it has not changed the *aggregate* condition of Indian informal labor, and fifty years in, the model's spread, real, and international, is still nowhere near the scale of the problem.
 
 **3. It is not a substitute for the state.** SEWA's own strategy concedes this: half its energy goes into pushing the state to build what only the state can, social security, registries, statutory protections. The Labour Codes of Section 4, whatever else they are, are the state finally moving on that terrain: a social-security code that claims to cover the unorganised, a registry (e-Shram) with over 300 million workers on it. Whether that is the SEWA logic scaled up, or a thin imitation of it, is a question you will be equipped to argue in three lessons.
 
-**The one-line verdict to carry forward:** SEWA proves organising the employer-less is possible and shows the working method, identity, substituted counterparties, member-built institutions, while proving, by its own hardest limit, that *bargaining* in the anchor course's sense still requires the one thing nine-tenths of India's workers do not have.
+**The one-line verdict to carry forward:** SEWA proves organizing the employer-less is possible and shows the working method, identity, substituted counterparties, member-built institutions, while proving, by its own hardest limit, that *bargaining* in the anchor course's sense still requires the one thing nine-tenths of India's workers do not have.
 
 :::reveal SEWA has never signed a collective agreement in fifty years. Why not, and why does this course treat that as a finding rather than a failure? ||| Because no counterparty exists that could bind itself to terms for its members as a class, no employer, no employers' association. No counterparty, no contract: the absence is structural, not a strategic shortfall. It is the cleanest single demonstration of what informality removes, which is exactly the finding this course exists to teach.
 
@@ -768,7 +768,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
         {
           prompt: "Name the 2014 statute SEWA's vendor battles helped produce, and what is odd about it as labour law.",
           answer:
-            "The Street Vendors (Protection of Livelihood and Regulation of Street Vending) Act, 2014, with town vending committees whose membership must be 40% vendors. It is labour law with the employer deleted: it regulates cities, not employers.",
+            "The Street Vendors (Protection of Livelihood and Regulation of Street Vending) Act, 2014, with town vending committees whose membership must be 40% vendors. It is labor law with the employer deleted: it regulates cities, not employers.",
         },
       ],
     },
@@ -784,7 +784,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
             prompt: "Who founded SEWA, and from inside what organisation?",
             options: [
               "Anasuya Sarabhai, from inside the Indian National Congress party in Ahmedabad",
-              "Ela Bhatt, a labour lawyer heading the Textile Labour Association's women's wing",
+              "Ela Bhatt, a labor lawyer heading the Textile Labour Association's women's wing",
               "A committee of the International Labour Organization, working out of Geneva",
               "The Gujarat state Labour Department, as an official state-government scheme",
             ],
@@ -803,13 +803,13 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
             ],
             correctIndex: 1,
             explanation:
-              "The objection is this course's theme stated as bureaucracy. SEWA's answer: a union is defined by its purpose, organising workers for their own development, not by its adversary.",
+              "The objection is this course's theme stated as bureaucracy. SEWA's answer: a union is defined by its purpose, organizing workers for their own development, not by its adversary.",
             sourceLessonSlug: "india-sewa-1972",
           },
           {
             prompt: "What feature of the Trade Unions Act, 1926 made SEWA's registration legally possible?",
             options: [
-              "A special statutory exemption written specifically for women's organisations",
+              "A special statutory exemption written specifically for women's organizations",
               "The Act requires seven members but nowhere requires that they share an employer",
               "A 1971 amendment that specifically extended the Act to cover the self-employed",
               "The Act simply does not apply anywhere within the state of Gujarat at all",
@@ -823,7 +823,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
             prompt: "How does this course treat SEWA's reported membership of 3.78 million across 20 states?",
             options: [
               "As a fully audited membership figure formally certified by the central government",
-              "As SEWA's own count, attributed, and still evidence of a very large organisation",
+              "As SEWA's own count, attributed, and still evidence of a very large organization",
               "As an official membership estimate produced and published by the ILO in Geneva",
               "As a figure SEWA has deliberately falsified in order to inflate its own size",
             ],
@@ -842,7 +842,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
             ],
             correctIndex: 1,
             explanation:
-              "Question 4 for informal workers is confiscation, eviction, harassment. An identity backed by an organisation that will answer for you is the counter-tool.",
+              "Question 4 for informal workers is confiscation, eviction, harassment. An identity backed by an organization that will answer for you is the counter-tool.",
             sourceLessonSlug: "india-sewa-how",
           },
           {
@@ -862,7 +862,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
             prompt: "What is legally odd about the Street Vendors Act, 2014 as a piece of labour law?",
             options: [
               "It contains no penalties and no enforcement mechanism of any single kind whatsoever",
-              "It regulates municipalities rather than employers: labour law with the employer deleted",
+              "It regulates municipalities rather than employers: labor law with the employer deleted",
               "It applies only within the single state of Gujarat and nowhere else in all of India",
               "It was drafted and written entirely by SEWA rather than by any state legislature",
             ],
@@ -887,7 +887,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "Which international instruments carry the definitional fight SEWA started in 1972?",
             options: [
-              "The USMCA Rapid Response Labour Mechanism, enforced through trade sanctions",
+              "The USMCA Rapid Response Labor Mechanism, enforced through trade sanctions",
               "The ILO Home Work Convention, 1996 (No. 177) and Recommendation 204 of 2015",
               "The Geneva Conventions on the treatment of prisoners and civilians in war",
               "The Paris Agreement on limiting global greenhouse-gas emissions worldwide",
@@ -927,7 +927,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
             prompt: "What does this course concede when it says 'membership is not coverage' about SEWA?",
             options: [
               "That SEWA's own members are not in fact real workers at all under any Indian law",
-              "3.78 million is vast as organising but tiny against a workforce of hundreds of millions",
+              "3.78 million is vast as organizing but tiny against a workforce of hundreds of millions",
               "That SEWA's total membership has been steadily falling every single year for a decade",
               "That real coverage always requires the direct backing of an allied political party",
             ],
@@ -953,7 +953,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
             prompt: "SEWA organises women, by design. What honest observation does the course attach to that?",
             options: [
               "Men are entirely and legally barred from doing any informal work throughout India",
-              "Informal work is disproportionately women's work; organising informal men stayed thinner",
+              "Informal work is disproportionately women's work; organizing informal men stayed thinner",
               "Women make up only a very small minority of all of India's informal-sector workers",
               "The women-only design was directly imposed on SEWA by the central government by law",
             ],
@@ -966,7 +966,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
             prompt: "What one-line verdict on SEWA does this course ask you to carry forward?",
             options: [
               "SEWA ultimately failed because it never once managed to sign a collective contract",
-              "Organising the employer-less works and SEWA shows how, but bargaining needs an employer",
+              "Organizing the employer-less works and SEWA shows how, but bargaining needs an employer",
               "SEWA is really a political party in waiting, biding its time before contesting polls",
               "SEWA's whole model only works inside the single home state of Gujarat, nowhere else",
             ],
@@ -984,22 +984,22 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
       slug: "india-codes-what",
       title: "9 · Twenty-nine laws, four Codes",
       section: "Section 4 · The Labour Codes, 29 laws, four Codes, one long wait",
-      body: `Lesson 2 showed you the cathedral: a century's accumulation of labour statutes, the 1926 Act, the 1947 Act, the 1948 Acts, and dozens more, each with its own definitions, thresholds, registers and inspectors. Between 2019 and 2020, India's Parliament did something governments had discussed for decades: it repealed **29 central labour laws** and folded them into **four Codes**. Whatever you end up thinking of them, they are the largest rewrite of labour law in Indian history, and you should first meet them as text.
+      body: `Lesson 2 showed you the cathedral: a century's accumulation of labor statutes, the 1926 Act, the 1947 Act, the 1948 Acts, and dozens more, each with its own definitions, thresholds, registers and inspectors. Between 2019 and 2020, India's Parliament did something governments had discussed for decades: it repealed **29 central labor laws** and folded them into **four Codes**. Whatever you end up thinking of them, they are the largest rewrite of labor law in Indian history, and you should first meet them as text.
 
-**1 · The Code on Wages, 2019** (passed August 2019), absorbs the Minimum Wages Act 1948, the Payment of Wages Act 1936, the Payment of Bonus Act 1965 and the Equal Remuneration Act 1976. Its headline change answers lesson 2 directly: the minimum wage becomes **universal**. The "scheduled employments" gate is gone, every wage worker, in listed occupations or not, is entitled to a minimum wage, and the Code adds a national **floor wage** below which no state's minimum may fall. On paper, this is the single largest extension of a labour right toward the informal workforce in the country's history. (Keep the italics on *on paper*, lesson 10 is about the gap between enactment and reach.)
+**1 · The Code on Wages, 2019** (passed August 2019), absorbs the Minimum Wages Act 1948, the Payment of Wages Act 1936, the Payment of Bonus Act 1965 and the Equal Remuneration Act 1976. Its headline change answers lesson 2 directly: the minimum wage becomes **universal**. The "scheduled employments" gate is gone, every wage worker, in listed occupations or not, is entitled to a minimum wage, and the Code adds a national **floor wage** below which no state's minimum may fall. On paper, this is the single largest extension of a labor right toward the informal workforce in the country's history. (Keep the italics on *on paper*, lesson 10 is about the gap between enactment and reach.)
 
 **2 · The Industrial Relations Code, 2020**, absorbs the Trade Unions Act 1926, the Industrial Employment (Standing Orders) Act 1946 and the Industrial Disputes Act 1947. Three changes carry most of the controversy:
-- **The 100 becomes 300.** Establishments needing **prior government permission** for lay-offs, retrenchment or closure: the threshold rises from 100 workers to **300**, with governments empowered to raise it further. Employers' case: the 100-worker rule froze hiring, firms stayed small or hired contract labour to duck it. Unions' case: it strips job-security review from every factory between 100 and 300.
+- **The 100 becomes 300.** Establishments needing **prior government permission** for lay-offs, retrenchment or closure: the threshold rises from 100 workers to **300**, with governments empowered to raise it further. Employers' case: the 100-worker rule froze hiring, firms stayed small or hired contract labor to duck it. Unions' case: it strips job-security review from every factory between 100 and 300.
 - **The strike notice goes universal.** A **14-day advance notice** before any strike, previously required only in public utility services, now applies to **all establishments**, with wide no-strike windows while conciliation and adjudication are pending. Unions read this as making the lawful lightning strike impossible.
 - **The negotiating union.** A union with **51% of workers** on the muster roll becomes the **sole negotiating union**, India's first general statutory recognition rule (before this, recognition was largely a matter of state laws and codes of practice). With multiple party-tied rivals in one plant (lesson 4), a 51% single winner is rare, failing that, the Code provides a negotiating *council* of the larger unions.
 
-**3 · The Occupational Safety, Health and Working Conditions Code, 2020**, absorbs 13 laws including the Factories Act 1948, the Contract Labour Act 1970 and the Inter-State Migrant Workmen Act 1979: one licensing-and-safety regime for factories, contractors and migrant labour.
+**3 · The Occupational Safety, Health and Working Conditions Code, 2020**, absorbs 13 laws including the Factories Act 1948, the Contract Labour Act 1970 and the Inter-State Migrant Workmen Act 1979: one licensing-and-safety regime for factories, contractors and migrant labor.
 
 **4 · The Code on Social Security, 2020**, absorbs nine laws including the provident fund and state-insurance Acts and the Unorganised Workers' Social Security Act 2008, and, for the first time in any Indian statute, defines and covers **gig workers and platform workers**. That is lesson 11's story.
 
-**Why unions struck against this (lesson 5) while the government calls it historic:** the Codes genuinely extend *floors* (universal minimum wage, social-security ambitions) while genuinely raising *thresholds* (300 workers, 14-day notice, longer no-strike windows). Whether that trade reads as modernisation or as de-fanging depends on which half of the package reaches you, a universal wage floor means most to the informal nine-tenths; the threshold changes cost most to the organised tenth that actually strikes. Hold both halves; refuse the headline versions of either.
+**Why unions struck against this (lesson 5) while the government calls it historic:** the Codes genuinely extend *floors* (universal minimum wage, social-security ambitions) while genuinely raising *thresholds* (300 workers, 14-day notice, longer no-strike windows). Whether that trade reads as modernisation or as de-fanging depends on which half of the package reaches you, a universal wage floor means most to the informal nine-tenths; the threshold changes cost most to the organized tenth that actually strikes. Hold both halves; refuse the headline versions of either.
 
-:::reveal The IR Code raised the prior-permission threshold from 100 to 300 workers. Give the employers' argument and the unions' argument for and against, both in one line each. ||| Employers: the 100-worker rule froze firms below the threshold and pushed them into contract labour, raising it unfreezes hiring. Unions: every establishment between 100 and 300 workers loses government review of lay-offs and closure, job security shrinks for exactly the plants where unions exist.
+:::reveal The IR Code raised the prior-permission threshold from 100 to 300 workers. Give the employers' argument and the unions' argument for and against, both in one line each. ||| Employers: the 100-worker rule froze firms below the threshold and pushed them into contract labor, raising it unfreezes hiring. Unions: every establishment between 100 and 300 workers loses government review of lay-offs and closure, job security shrinks for exactly the plants where unions exist.
 
 ## Sources
 - The Code on Wages, 2019 (India), No. 29 of 2019. India Code. https://www.indiacode.nic.in/
@@ -1011,7 +1011,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
         {
           prompt: "State SEWA's existence proof and its structural limit in one line each.",
           answer:
-            "Proof: workers without employers can be organised at scale, three-plus million members, five decades, a working method. Limit: they cannot be brought under a collective agreement, because no counterparty exists to sign one, no counterparty, no contract.",
+            "Proof: workers without employers can be organized at scale, three-plus million members, five decades, a working method. Limit: they cannot be brought under a collective agreement, because no counterparty exists to sign one, no counterparty, no contract.",
         },
         {
           prompt: "How does SEWA illustrate the same law as the Nordic Ghent system?",
@@ -1034,13 +1034,13 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
 - **December 2025, May 2026:** draft central *rules* published (30 December 2025); **final Central Rules notified 8 May 2026**.
 - **As of mid-2026:** state rules remain **uneven**, a majority of states and union territories have notified rules for at least one Code, several large states are still at the draft stage, and there is no single common commencement date for every state-dependent provision.
 
-**Why did a government with a parliamentary majority wait five years to switch on its own flagship reform?** Several forces, all documented and none sufficient alone. The Codes were politically contested from birth, the union federations, including at times the **BMS, the federation aligned with the governing party's own family** (lesson 4), demanded changes or repeal, and lesson 5's general strikes kept the pressure public. The COVID-19 pandemic consumed the machinery's first years. And structurally: **labour sits on the Concurrent List of India's Constitution**, both the central government and every state legislate on it, and the Codes are built to run on *rules* that each state must write for itself. Switching on the Codes before states wrote rules would have produced a vacuum where the repealed laws had been. The federal plumbing, not any single villain, explains most of the five years, and explains why even now "in force" means different things in different states.
+**Why did a government with a parliamentary majority wait five years to switch on its own flagship reform?** Several forces, all documented and none sufficient alone. The Codes were politically contested from birth, the union federations, including at times the **BMS, the federation aligned with the governing party's own family** (lesson 4), demanded changes or repeal, and lesson 5's general strikes kept the pressure public. The COVID-19 pandemic consumed the machinery's first years. And structurally: **labor sits on the Concurrent List of India's Constitution**, both the central government and every state legislate on it, and the Codes are built to run on *rules* that each state must write for itself. Switching on the Codes before states wrote rules would have produced a vacuum where the repealed laws had been. The federal plumbing, not any single villain, explains most of the five years, and explains why even now "in force" means different things in different states.
 
 **Extract the method, because you will use it on every country you ever study.** Between "passed" and "protecting an actual worker" a law crosses at least four thresholds, **enacted → in force → rules framed → enforced**, and a claim about the law is meaningless until you know which threshold it refers to. "India has a universal minimum wage" was false-in-practice from 2019 to 2025 despite being on the statute book, and its truth **today** varies by state rule-making. Compare the track's siblings: Mexico's 2019 reform came with a hard deadline (all contracts legitimised by May 2023) and an external enforcer (the USMCA mechanism); India's reform had neither, and took five years to cross threshold two. **A dated claim is the only honest kind.** This course was written in mid-2026 and says so; if you are reading it later, the state-rules map has almost certainly moved, check it, don't trust us.
 
-**And who does the wait fall on?** Notice the asymmetry: the organised tenth kept its old protections through the gap (the old laws stayed in force). The informal nine-tenths, whose universal minimum wage and social-security coverage existed only inside the un-commenced Codes, absorbed the entire five-year delay. The workers with the least were the ones waiting on the plumbing.
+**And who does the wait fall on?** Notice the asymmetry: the organized tenth kept its old protections through the gap (the old laws stayed in force). The informal nine-tenths, whose universal minimum wage and social-security coverage existed only inside the un-commenced Codes, absorbed the entire five-year delay. The workers with the least were the ones waiting on the plumbing.
 
-:::reveal 'India enacted a universal minimum wage in 2019.' Walk that claim through the four thresholds, enacted, in force, rules framed, enforced, with dates. ||| Enacted: August 2019 (Code on Wages passed). In force: not until 21 November 2025, a five-year gap in which the old scheduled-employments regime kept operating. Rules framed: final Central Rules 8 May 2026, with STATE rules still uneven as of mid-2026 (labour is a concurrent subject). Enforced: varies by state and is the threshold to check at the time you read this. The claim is true or false depending on which threshold, which is why undated claims about the Codes are worthless.
+:::reveal 'India enacted a universal minimum wage in 2019.' Walk that claim through the four thresholds, enacted, in force, rules framed, enforced, with dates. ||| Enacted: August 2019 (Code on Wages passed). In force: not until 21 November 2025, a five-year gap in which the old scheduled-employments regime kept operating. Rules framed: final Central Rules 8 May 2026, with STATE rules still uneven as of mid-2026 (labor is a concurrent subject). Enforced: varies by state and is the threshold to check at the time you read this. The claim is true or false depending on which threshold, which is why undated claims about the Codes are worthless.
 
 ## Sources
 - Ministry of Labour & Employment, Government of India. (2025, November 21). Commencement of the four Labour Codes [Notification, as reported]. https://labour.gov.in/
@@ -1056,7 +1056,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
         {
           prompt: "What did the Code on Wages, 2019 do to the 'scheduled employments' gap?",
           answer:
-            "Closed it: the minimum wage became universal instead of applying only to occupations a government had listed, with a national floor wage below which no state minimum may fall, on paper, the largest extension of a labour right toward the informal workforce in Indian history.",
+            "Closed it: the minimum wage became universal instead of applying only to occupations a government had listed, with a national floor wage below which no state minimum may fall, on paper, the largest extension of a labor right toward the informal workforce in Indian history.",
         },
       ],
     },
@@ -1068,7 +1068,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
 
 **The definitions (Code on Social Security, 2020, § 2).** A **"gig worker"** is a person who earns from work arrangements **"outside of traditional employer-employee relationship."** A **"platform worker"** is a gig worker whose arrangement runs through an online platform. An **"aggregator"** is the digital intermediary, the app, connecting buyers of a service with its providers. Read the gig-worker definition twice, because something remarkable is happening in it: **the statute defines the worker by the absence of an employer.** Everything lesson 2's cathedral assumed, this definition negates, and instead of pretending the category doesn't exist, the law finally names it. It is lesson 1's ~90%, or rather its app-mediated sliver, written into § 2.
 
-**The money.** The Code directs that schemes for gig and platform workers be funded in part by the aggregators themselves: a contribution of **1-2% of an aggregator's annual turnover, capped at 5% of the amount paid or payable to its gig and platform workers**, into a social-security fund. Registration runs through **e-Shram**, the national database of unorganised workers launched in **August 2021**, which by **July 2025** recorded **over 30.9 crore (309 million) registered workers** (Press Information Bureau, 2025). Pause on that number the way this course has taught you to: it is a count of *registrations on a self-declaration portal*, not of benefits delivered, but as a measure of how many people raised their hand when the state finally asked who works informally, it is staggering. Recognise the playbook, too: registration, identity, a welfare fund attached to the worker rather than to any employer, **the SEWA logic of lesson 7, run at national scale by the state.**
+**The money.** The Code directs that schemes for gig and platform workers be funded in part by the aggregators themselves: a contribution of **1-2% of an aggregator's annual turnover, capped at 5% of the amount paid or payable to its gig and platform workers**, into a social-security fund. Registration runs through **e-Shram**, the national database of unorganised workers launched in **August 2021**, which by **July 2025** recorded **over 30.9 crore (309 million) registered workers** (Press Information Bureau, 2025). Pause on that number the way this course has taught you to: it is a count of *registrations on a self-declaration portal*, not of benefits delivered, but as a measure of how many people raised their hand when the state finally asked who works informally, it is staggering. Recognize the playbook, too: registration, identity, a welfare fund attached to the worker rather than to any employer, **the SEWA logic of lesson 7, run at national scale by the state.**
 
 **What the recognition is not.** The Code gives gig workers *social security schemes*, not a minimum wage (that lives in the Code on Wages, keyed to employment), not working-time limits, not collective-bargaining rights. India has, in effect, answered the question the United States has litigated for a decade, *is a gig worker an employee?*, by statute, and the answer is **"no, but they get a third category with welfare attached."** Compare the anchor's misclassification wars: the American fight is over pushing gig workers *into* the employee box; India built a box *between* employee and invisible. Advocates of the approach call it realism, coverage without a definitional war. Critics call it entrenchment, informality, now with a statutory blessing and a discount social-security rate. Both readings are live; this course holds them open.
 
@@ -1086,12 +1086,12 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
         {
           prompt: "The Labour Codes' four-threshold timeline, dated.",
           answer:
-            "Enacted 2019 (Wages) and 2020 (the other three); brought into force 21 November 2025; final Central Rules 8 May 2026; state rules still uneven as of mid-2026 because labour is on the Concurrent List and every state writes its own rules. 'In force' means different things in different states.",
+            "Enacted 2019 (Wages) and 2020 (the other three); brought into force 21 November 2025; final Central Rules 8 May 2026; state rules still uneven as of mid-2026 because labor is on the Concurrent List and every state writes its own rules. 'In force' means different things in different states.",
         },
         {
           prompt: "Who absorbed the five-year commencement delay, and why is that asymmetric?",
           answer:
-            "The informal nine-tenths. The organised tenth kept its old-law protections through the gap; the universal minimum wage and gig social security existed only inside the un-commenced Codes, so the workers with the least did all the waiting.",
+            "The informal nine-tenths. The organized tenth kept its old-law protections through the gap; the universal minimum wage and gig social security existed only inside the un-commenced Codes, so the workers with the least did all the waiting.",
         },
       ],
     },
@@ -1106,14 +1106,14 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "What did India's four Labour Codes do to the existing body of central labour law?",
             options: [
-              "Added four brand-new labour laws on top of the existing body of laws",
-              "Repealed and consolidated 29 central labour laws into just four Codes",
-              "Transferred the entire body of central labour law over to the states",
-              "Abolished essentially all of India's central labour law altogether",
+              "Added four brand-new labor laws on top of the existing body of laws",
+              "Repealed and consolidated 29 central labor laws into just four Codes",
+              "Transferred the entire body of central labor law over to the states",
+              "Abolished essentially all of India's central labor law altogether",
             ],
             correctIndex: 1,
             explanation:
-              "Wages (2019), Industrial Relations, OSH, and Social Security (2020), the largest rewrite of labour law in Indian history, replacing 29 statutes.",
+              "Wages (2019), Industrial Relations, OSH, and Social Security (2020), the largest rewrite of labor law in Indian history, replacing 29 statutes.",
             sourceLessonSlug: "india-codes-what",
           },
           {
@@ -1126,7 +1126,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
             ],
             correctIndex: 1,
             explanation:
-              "Under the 1948 Act, no listing meant no wage floor. The Code universalises the entitlement, on paper the largest extension of a labour right toward the informal workforce ever.",
+              "Under the 1948 Act, no listing meant no wage floor. The Code universalises the entitlement, on paper the largest extension of a labor right toward the informal workforce ever.",
             sourceLessonSlug: "india-codes-what",
           },
           {
@@ -1178,7 +1178,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
             ],
             correctIndex: 1,
             explanation:
-              "The floor extensions mean most to the informal nine-tenths; the threshold changes cost most to the organised tenth. Headline versions of either half mislead.",
+              "The floor extensions mean most to the informal nine-tenths; the threshold changes cost most to the organized tenth. Headline versions of either half mislead.",
             sourceLessonSlug: "india-codes-what",
           },
           {
@@ -1199,7 +1199,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
             options: [
               "The President's power to veto and indefinitely delay the commencement order",
               "Labour is on the Concurrent List, so every state must write its own rules",
-              "Indian labour law can take effect only after a nationwide public referendum",
+              "Indian labor law can take effect only after a nationwide public referendum",
               "The Supreme Court had suspended all four of the Codes for the whole period",
             ],
             correctIndex: 1,
@@ -1223,7 +1223,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "Who absorbed the cost of the five-year gap between enactment and commencement?",
             options: [
-              "The organised tenth, who entirely lost all of their old protections during the gap",
+              "The organized tenth, who entirely lost all of their old protections during the gap",
               "The informal nine-tenths, whose wage floor existed only inside the un-commenced Codes",
               "Employers, who were forced to pay double the compliance costs throughout the gap",
               "Nobody at all, since the five-year commencement gap in fact carried no real cost",
@@ -1265,7 +1265,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
               "Social-security schemes and welfare-fund coverage of the usual statutory sort",
               "A clear statutory definition of the gig worker written into the Code text itself",
               "Minimum wage, working-time limits and collective bargaining: it is welfare only",
-              "Registration and enrolment on the national e-Shram portal for unorganised workers",
+              "Registration and enrollment on the national e-Shram portal for unorganised workers",
             ],
             correctIndex: 2,
             explanation:
@@ -1277,7 +1277,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
             options: [
               "Karnataka, which imposed a flat 10% payroll tax on all of the aggregators",
               "Rajasthan (2023), a welfare cess of 1-2% per transaction on aggregators",
-              "Kerala, which imposed a single flat annual licence fee on the aggregators",
+              "Kerala, which imposed a single flat annual license fee on the aggregators",
               "Gujarat, which imposed no levy of any kind at all on any of the aggregators",
             ],
             correctIndex: 1,
@@ -1307,22 +1307,22 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
       slug: "india-caste-and-labor",
       title: "12 · Caste and labor: who is in the sewer",
       section: "Section 5 · The honest part, caste, the sewer, and the child",
-      body: `Every course in this track has an honest part, the chapter the brochure version leaves out. Germany's was the coverage collapse; Mexico's was the protection contract. India's honest part is that its labour market is not only divided into formal and informal. It is also divided by **caste**, and the division runs *through* the informal economy, not alongside it.
+      body: `Every course in this track has an honest part, the chapter the brochure version leaves out. Germany's was the coverage collapse; Mexico's was the protection contract. India's honest part is that its labor market is not only divided into formal and informal. It is also divided by **caste**, and the division runs *through* the informal economy, not alongside it.
 
-**The one paragraph of background this course needs.** Caste is a hereditary system of social ranking in South Asia that historically assigned not just status but **occupation**, including a category of communities forced into work others deemed "polluting": sanitation, leatherwork, the removal of human waste and animal carcasses. B.R. Ambedkar, the economist and jurist who chaired the drafting of India's Constitution, and who was born into one of these communities, put the labour point in one line this course cannot improve on: caste "is not merely a division of labour. It is also a division of labourers" (Ambedkar, 1936). India's Constitution outlaws the system's sharpest edge, **Article 17: "Untouchability" is abolished and its practice in any form is forbidden**, and its schedules give the historically excluded communities their administrative names: **Scheduled Castes (SC)**, about 16.6% of the population, and **Scheduled Tribes (ST)**, about 8.6% (Census of India, 2011).
+**The one paragraph of background this course needs.** Caste is a hereditary system of social ranking in South Asia that historically assigned not just status but **occupation**, including a category of communities forced into work others deemed "polluting": sanitation, leatherwork, the removal of human waste and animal carcasses. B.R. Ambedkar, the economist and jurist who chaired the drafting of India's Constitution, and who was born into one of these communities, put the labor point in one line this course cannot improve on: caste "is not merely a division of labour. It is also a division of labourers" (Ambedkar, 1936). India's Constitution outlaws the system's sharpest edge, **Article 17: "Untouchability" is abolished and its practice in any form is forbidden**, and its schedules give the historically excluded communities their administrative names: **Scheduled Castes (SC)**, about 16.6% of the population, and **Scheduled Tribes (ST)**, about 8.6% (Census of India, 2011).
 
 **Now watch what the data does when the state finally counts.** Manual removal of human excreta, "manual scavenging", has been banned twice: by the **Employment of Manual Scavengers and Construction of Dry Latrines (Prohibition) Act, 1993**, and again, with rehabilitation duties added, by the **Prohibition of Employment as Manual Scavengers and their Rehabilitation Act, 2013**, which also prohibits hazardous cleaning of sewers and septic tanks without protective equipment. Two prohibitions, thirty years apart, so is it over? In **July 2024**, the Ministry of Social Justice and Empowerment told the **Rajya Sabha** (Parliament's upper house) two things in the same breath, and you should hold them side by side:
 
 - There are **no reports of the practice of manual scavenging** *as defined by the 2013 Act*.
 - **377 people died cleaning sewers and septic tanks between 2019 and 2023** (Rajya Sabha, July 2024).
 
-Both sentences can be true at once, and seeing how is a skill this course has been building since lesson 1: **the Act's definition of "manual scavenger" centres on human excreta in insanitary latrines, a person who dies inside a sewer or septic tank is counted under a different label, "hazardous cleaning."** The practice persists; the definition files it elsewhere. This is the same lesson as the 82%-versus-90% and the 250 million: *a number without its definition is a vibe*, and here the definitional gap is not an academic point. It is 377 deaths reported to Parliament by the same ministry reporting the practice extinguished. The Supreme Court has twice put money on the reality: **Safai Karamchari Andolan v. Union of India (2014)** ordered ₹10 lakh compensation for every sewer death since 1993, and **Dr. Balram Singh v. Union of India (2023)** directed that compensation for sewer deaths rise to **₹30 lakh** (about US$36,000).
+Both sentences can be true at once, and seeing how is a skill this course has been building since lesson 1: **the Act's definition of "manual scavenger" centers on human excreta in insanitary latrines, a person who dies inside a sewer or septic tank is counted under a different label, "hazardous cleaning."** The practice persists; the definition files it elsewhere. This is the same lesson as the 82%-versus-90% and the 250 million: *a number without its definition is a vibe*, and here the definitional gap is not an academic point. It is 377 deaths reported to Parliament by the same ministry reporting the practice extinguished. The Supreme Court has twice put money on the reality: **Safai Karamchari Andolan v. Union of India (2014)** ordered ₹10 lakh compensation for every sewer death since 1993, and **Dr. Balram Singh v. Union of India (2023)** directed that compensation for sewer deaths rise to **₹30 lakh** (about US$36,000).
 
 **And who is in the sewer?** In 2023-24 the government launched **NAMASTE** (National Action for Mechanised Sanitation Ecosystem), a scheme to profile, equip and rehabilitate sewer and septic-tank workers. Its own profiling data, reported to the **Lok Sabha in December 2024**: of **54,574** sewer and septic-tank workers profiled and validated by that date, **67.9% were Scheduled Castes**, and roughly **92% were SC, ST or OBC (Other Backward Classes) combined** (Lok Sabha, December 2024). Set 67.9% against the SC population share of 16.6% and the point makes itself: **this is not a random draw of poor workers. It is occupational assignment by descent, surviving inside the informal economy two constitutional generations after Article 17.**
 
 **Connect it to the course's spine.** Lesson 3 called India's great exclusion *structural*, the law's vocabulary never reaches the informal worker. This lesson adds the map: **the structural exclusion has a caste geography.** Who ends up in the informal economy's worst work, the sewer, the waste heap, the tannery, is not caste-neutral, which means "formalise the economy" and "annihilate caste-assigned work" are related but *not identical* projects. A universal minimum wage (Section 4) prices the work; it does not reassign who is compelled by descent and lack of alternatives to do it. The 2013 Act's own architecture concedes this: half the statute is prohibition, the other half is **rehabilitation**, alternative livelihoods, because banning the work without replacing the income only criminalises the worker.
 
-:::reveal In July 2024 the same ministry told Parliament there were 'no reports of manual scavenging as defined by the 2013 Act' AND that 377 people died cleaning sewers and septic tanks in 2019-2023. How are both sentences true at once? ||| Because of the definition: the Act's 'manual scavenger' centres on removing human excreta from insanitary latrines, while deaths inside sewers and septic tanks are filed under a different label, 'hazardous cleaning.' The practice persists; the definitional boundary files it elsewhere. Same discipline as the 90% and the 250 million: a number means nothing without its definition, here the gap is 377 deaths wide.
+:::reveal In July 2024 the same ministry told Parliament there were 'no reports of manual scavenging as defined by the 2013 Act' AND that 377 people died cleaning sewers and septic tanks in 2019-2023. How are both sentences true at once? ||| Because of the definition: the Act's 'manual scavenger' centers on removing human excreta from insanitary latrines, while deaths inside sewers and septic tanks are filed under a different label, 'hazardous cleaning.' The practice persists; the definitional boundary files it elsewhere. Same discipline as the 90% and the 250 million: a number means nothing without its definition, here the gap is 377 deaths wide.
 
 ## Sources
 - Ambedkar, B. R. (1936). *Annihilation of caste*. Self-published address. https://ccnmtl.columbia.edu/projects/mmt/ambedkar/
@@ -1352,16 +1352,16 @@ Both sentences can be true at once, and seeing how is a skill this course has be
       section: "Section 5 · The honest part, caste, the sewer, and the child",
       body: `The second honest chapter is child labor, and here the honest version cuts both ways: the progress is real, and so are the limits. This course refuses both the horror-story version (nothing has changed) and the brochure version (it is solved). As always: numbers with dates, laws with thresholds.
 
-**The progress, dated.** India's census, the only full count there is, recorded **12.7 million working children aged 5-14 in 2001** and **10.1 million in 2011** (Census of India, 2011): a decline of roughly a fifth in a decade in which the child population grew. Behind the decline sits a real policy architecture. The **Right of Children to Free and Compulsory Education Act, 2009 (RTE)** made schooling ages 6-14 a legal entitlement from April 2010, and a child in school is the single most reliable non-worker there is. In **2017**, India ratified both ILO child-labour conventions, **No. 138** (minimum age) and **No. 182** (worst forms), the two core conventions lesson 2 noted it *had* signed, in the same breath as the two it has not. And in **2016**, Parliament amended the 1986 child-labour statute into the **Child and Adolescent Labour (Prohibition and Regulation) Act**: employment of children **under 14 is now prohibited in all occupations**, and adolescents (14-18) are barred from hazardous work. On paper, you know this course's next move, that is a complete ban, aligned with the RTE age.
+**The progress, dated.** India's census, the only full count there is, recorded **12.7 million working children aged 5-14 in 2001** and **10.1 million in 2011** (Census of India, 2011): a decline of roughly a fifth in a decade in which the child population grew. Behind the decline sits a real policy architecture. The **Right of Children to Free and Compulsory Education Act, 2009 (RTE)** made schooling ages 6-14 a legal entitlement from April 2010, and a child in school is the single most reliable non-worker there is. In **2017**, India ratified both ILO child-labor conventions, **No. 138** (minimum age) and **No. 182** (worst forms), the two core conventions lesson 2 noted it *had* signed, in the same breath as the two it has not. And in **2016**, Parliament amended the 1986 child-labor statute into the **Child and Adolescent Labour (Prohibition and Regulation) Act**: employment of children **under 14 is now prohibited in all occupations**, and adolescents (14-18) are barred from hazardous work. On paper, you know this course's next move, that is a complete ban, aligned with the RTE age.
 
-**Now the limits, equally dated.** Read the 2016 amendment's fine print, because both of its most criticised features live there:
+**Now the limits, equally dated.** Read the 2016 amendment's fine print, because both of its most criticized features live there:
 
 - **The family-enterprise exception.** A child under 14 may "help" in a **family or family enterprise**, after school hours and in non-hazardous work (child artists get a parallel carve-out). Critics, including UNICEF India at the time, made the obvious objection: in an economy that is roughly 90% informal (lesson 1), *the family enterprise is precisely where child labor lives*, the farm plot, the home-based piece-work of lesson 6, the roadside stall. The exception writes the informal economy's children out of the ban's reach, and unlike the anchor course's statutory exclusions, this one is genuinely hard to police even in good faith, because the workplace is a home.
 - **The shrunken hazardous list.** The same amendment cut the list of hazardous occupations barred to adolescents from **83 items to 3 broad categories**, mines, inflammable substances and explosives, and hazardous processes under the Factories Act, moving everything else off the statutory schedule (Child and Adolescent Labour (Prohibition and Regulation) Amendment Act, 2016).
 
-**And where the count stops.** The honest limit under everything above: **the last full count is 2011.** India's decennial census due in 2021 was postponed, and as of mid-2026 no new census child-labour tables exist, so every current figure you will meet is a survey estimate or a projection, and this course declines to headline any of them. Notice that this is the same epistemic hole as lesson 4's union-membership verification (last completed: 2002): **on the two questions where India's labour story is hardest, how many union members, how many working children, the official count is a decade or more old.** When the new census publishes, check it; do not trust a 2011 number recited as a present-tense fact, including by us.
+**And where the count stops.** The honest limit under everything above: **the last full count is 2011.** India's decennial census due in 2021 was postponed, and as of mid-2026 no new census child-labor tables exist, so every current figure you will meet is a survey estimate or a projection, and this course declines to headline any of them. Notice that this is the same epistemic hole as lesson 4's union-membership verification (last completed: 2002): **on the two questions where India's labor story is hardest, how many union members, how many working children, the official count is a decade or more old.** When the new census publishes, check it; do not trust a 2011 number recited as a present-tense fact, including by us.
 
-**Connect it to the spine, one last time.** Child labor in India is overwhelmingly **informal-economy** labor: family farms, home-based work, small workshops, the places with no employer of record for an inspector to serve notice on. Which is why the machinery that has moved the number is mostly *not* labour-law machinery: it is **schools** (RTE), midday meals, household income growth. Where the employment relationship is invisible, the effective child-labour law turns out to be an education law. That is this course's thesis in miniature: **where "worker = employee with an employer" fails, protections that attach to the employer fail with it, and protections that attach to the person are what actually reach people.**
+**Connect it to the spine, one last time.** Child labor in India is overwhelmingly **informal-economy** labor: family farms, home-based work, small workshops, the places with no employer of record for an inspector to serve notice on. Which is why the machinery that has moved the number is mostly *not* labor-law machinery: it is **schools** (RTE), midday meals, household income growth. Where the employment relationship is invisible, the effective child-labor law turns out to be an education law. That is this course's thesis in miniature: **where "worker = employee with an employer" fails, protections that attach to the employer fail with it, and protections that attach to the person are what actually reach people.**
 
 :::reveal The 2016 amendment banned all work by children under 14, with an exception for 'helping in family enterprises.' Why do critics call that exception the ban's biggest hole, in this course's terms? ||| Because in a ~90%-informal economy, the family enterprise, the farm, the home workshop, the stall, is exactly where most child labor happens. The exception carves the informal economy's children out of the ban, and it is structurally hard to police because the workplace is a home. A ban that attaches at the employer fails where there is no employer, the course's thesis applied to children.
 
@@ -1375,7 +1375,7 @@ Both sentences can be true at once, and seeing how is a skill this course has be
         {
           prompt: "The two 2024 parliamentary data points on manual scavenging, and the definitional artifact between them.",
           answer:
-            "Rajya Sabha, July 2024: 'no reports of manual scavenging as defined by the 2013 Act', and 377 deaths cleaning sewers and septic tanks, 2019-2023, from the same ministry. The Act's definition centres on insanitary latrines; sewer and septic-tank deaths are filed under 'hazardous cleaning,' so the practice persists while the defined category reads as empty.",
+            "Rajya Sabha, July 2024: 'no reports of manual scavenging as defined by the 2013 Act', and 377 deaths cleaning sewers and septic tanks, 2019-2023, from the same ministry. The Act's definition centers on insanitary latrines; sewer and septic-tank deaths are filed under 'hazardous cleaning,' so the practice persists while the defined category reads as empty.",
         },
         {
           prompt: "What did NAMASTE profiling data (Lok Sabha, December 2024) show about who does sewer and septic-tank work?",
@@ -1442,14 +1442,14 @@ Both sentences can be true at once, and seeing how is a skill this course has be
             ],
             correctIndex: 1,
             explanation:
-              "Both statements came from the same ministry. The definitional gap, latrine-centred 'manual scavenging' vs 'hazardous cleaning' of sewers, is what lets both be simultaneously true.",
+              "Both statements came from the same ministry. The definitional gap, latrine-centered 'manual scavenging' vs 'hazardous cleaning' of sewers, is what lets both be simultaneously true.",
             sourceLessonSlug: "india-caste-and-labor",
           },
           {
             prompt: "Why can 'no manual scavenging' and '377 sewer deaths' both be true at once?",
             options: [
               "Because all of the reported deaths in fact occurred abroad, outside India entirely",
-              "The 2013 Act's definition centres on latrines, so sewer deaths are filed elsewhere",
+              "The 2013 Act's definition centers on latrines, so sewer deaths are filed elsewhere",
               "Because the people who actually died were not legally workers under any statute",
               "The two official statements simply cannot both be true at the very same time",
             ],
@@ -1520,7 +1520,7 @@ Both sentences can be true at once, and seeing how is a skill this course has be
             ],
             correctIndex: 1,
             explanation:
-              "Real, dated progress, driven less by labour inspection than by schools (RTE, 2009), midday meals, and rising household incomes.",
+              "Real, dated progress, driven less by labor inspection than by schools (RTE, 2009), midday meals, and rising household incomes.",
             sourceLessonSlug: "india-child-labour",
           },
           {
@@ -1533,14 +1533,14 @@ Both sentences can be true at once, and seeing how is a skill this course has be
             ],
             correctIndex: 1,
             explanation:
-              "A complete ban on paper, aligned with the RTE schooling age, with its two most criticised features in the fine print (the family-enterprise exception and the shrunken hazardous list).",
+              "A complete ban on paper, aligned with the RTE schooling age, with its two most criticized features in the fine print (the family-enterprise exception and the shrunken hazardous list).",
             sourceLessonSlug: "india-child-labour",
           },
           {
             prompt: "Why do critics call the family-enterprise exception the 2016 ban's biggest hole?",
             options: [
               "Because every family enterprise, without any exception, is inherently hazardous work",
-              "In a ~90%-informal economy, the family farm is exactly where most child labour lives",
+              "In a ~90%-informal economy, the family farm is exactly where most child labor lives",
               "Because the exception in fact applies only to adolescents aged 14 to 18, not children",
               "Because the whole family-enterprise exception quietly expired back in the year 2020",
             ],
@@ -1565,14 +1565,14 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "Why does this course decline to give a current child-labour figure for India?",
             options: [
-              "Because child labour in India has now been completely and entirely ended",
+              "Because child labor in India has now been completely and entirely ended",
               "The last full count is the 2011 census, and the 2021 census was postponed",
-              "Because all current child-labour data is officially classified as secret",
+              "Because all current child-labor data is officially classified as secret",
               "Because the International Labour Organization formally forbids publishing any",
             ],
             correctIndex: 1,
             explanation:
-              "The same epistemic hole as union membership (last verified 2002): on India's hardest labour questions, the official count is a decade or more old. Check the new census when it publishes.",
+              "The same epistemic hole as union membership (last verified 2002): on India's hardest labor questions, the official count is a decade or more old. Check the new census when it publishes.",
             sourceLessonSlug: "india-child-labour",
           },
           {
@@ -1599,21 +1599,21 @@ Both sentences can be true at once, and seeing how is a skill this course has be
       section: "Section 6 · The verdict, what India teaches everyone else",
       body: `Lesson 3 promised that Section 6 would ask you to give the four answers back, short. Here they are, India's answers first, then the three things this course adds to everything else you will study in this track.
 
-**Q1, Who is allowed to organise?** Nearly anyone, genuinely: Article 19(1)(c) plus seven members (1926 Act), a floor low enough that in 1972 it admitted a union of women with no employer at all. But the right is thinner than its paper: no ILO 87/98 ratification, no fundamental right to strike (Rangarajan, 2003), and under the IR Code a lawful strike now needs 14 days' notice everywhere.
+**Q1, Who is allowed to organize?** Nearly anyone, genuinely: Article 19(1)(c) plus seven members (1926 Act), a floor low enough that in 1972 it admitted a union of women with no employer at all. But the right is thinner than its paper: no ILO 87/98 ratification, no fundamental right to strike (Rangarajan, 2003), and under the IR Code a lawful strike now needs 14 days' notice everywhere.
 
 **Q2, Who is excluded?** Formally almost nobody; structurally, roughly nine in ten. India's great exclusion is written in no statute because the statutes' *vocabulary*, employer, establishment, industry, never reaches the informal worker. And the exclusion is not neutral: it has a caste geography (lesson 12) and it runs through childhood (lesson 13).
 
-**Q3, Who bargains with whom?** The organised tenth bargains enterprise-by-enterprise, through party-tied federations too fragmented for a 51% sole negotiator to be common. The informal nine-tenths, where they bargain at all, bargain with **substituted counterparties**: the middleman, the municipality, above all the state, welfare boards, e-Shram, aggregator-funded schemes. SEWA invented the method; the state has begun nationalising it.
+**Q3, Who bargains with whom?** The organized tenth bargains enterprise-by-enterprise, through party-tied federations too fragmented for a 51% sole negotiator to be common. The informal nine-tenths, where they bargain at all, bargain with **substituted counterparties**: the middleman, the municipality, above all the state, welfare boards, e-Shram, aggregator-funded schemes. SEWA invented the method; the state has begun nationalising it.
 
-**Q4, What happens to you if you try?** Three answers in one country: the rulebook (formal private sector), Rangarajan's dismissal-without-remedy (government employees), and informal punishment, eviction, confiscation, the contractor who stops calling, for the majority, against which the working counter-tools are a membership card and an organisation that answers for you.
+**Q4, What happens to you if you try?** Three answers in one country: the rulebook (formal private sector), Rangarajan's dismissal-without-remedy (government employees), and informal punishment, eviction, confiscation, the contractor who stops calling, for the majority, against which the working counter-tools are a membership card and an organization that answers for you.
 
 **Now the three things India teaches the track, the reasons this course exists:**
 
 **1. "Worker" and "employee" are different categories, and the difference is most of the world.** Every other course in this track studies variations on the employment relationship. India is the reminder that globally, per the ILO, informal employment is the majority experience of work, India is the largest case, not an exotic one. Any theory of labor rights that starts "when you get a job with an employer…" has skipped most of the people it claims to be about. Test everything you learned in the anchor against a street vendor; whatever survives is the real core.
 
-**2. Institutions can be rebuilt around the missing employer, at a price that must be stated honestly.** SEWA proves organising the employer-less works: identity, substituted counterparties, member-built institutions. The Social Security Code and e-Shram prove the state can run the same logic at national scale, registration and welfare attached to the person, not the job. And lesson 8's limit stands at both scales: none of it produces a collective agreement, because **no counterparty, no contract.** What replaces bargaining, when the employer is missing, is *politics*, which is why India's biggest labor events are general strikes against governments (claimed at 250 million, attributed, never verified), not contract fights against firms.
+**2. Institutions can be rebuilt around the missing employer, at a price that must be stated honestly.** SEWA proves organizing the employer-less works: identity, substituted counterparties, member-built institutions. The Social Security Code and e-Shram prove the state can run the same logic at national scale, registration and welfare attached to the person, not the job. And lesson 8's limit stands at both scales: none of it produces a collective agreement, because **no counterparty, no contract.** What replaces bargaining, when the employer is missing, is *politics*, which is why India's biggest labor events are general strikes against governments (claimed at 250 million, attributed, never verified), not contract fights against firms.
 
-**3. Date every claim, define every number.** This course's method was its content. The 90% came with a source, year and definition; the 250 million stayed attributed; the Labour Codes carried an "as of" at every threshold (enacted 2019/20 → in force 21 November 2025 → Central Rules 8 May 2026 → state rules still uneven, mid-2026); the sewer deaths were counted honestly only once you saw the definitional seam; the child-labour count stops in 2011 and says so. Where the anchor course gave you four questions to ask of any country, India adds the discipline for hearing the answers: **no number without a definition, no law without a date, no claim without an owner.** Carry all three tools to the next course, and back into your own.
+**3. Date every claim, define every number.** This course's method was its content. The 90% came with a source, year and definition; the 250 million stayed attributed; the Labour Codes carried an "as of" at every threshold (enacted 2019/20 → in force 21 November 2025 → Central Rules 8 May 2026 → state rules still uneven, mid-2026); the sewer deaths were counted honestly only once you saw the definitional seam; the child-labor count stops in 2011 and says so. Where the anchor course gave you four questions to ask of any country, India adds the discipline for hearing the answers: **no number without a definition, no law without a date, no claim without an owner.** Carry all three tools to the next course, and back into your own.
 
 :::reveal Name the three things this course says India teaches the whole track. ||| (1) 'Worker' and 'employee' are different categories, and the informal majority, not the employed minority, is most of the world's experience of work. (2) Institutions can be rebuilt around a missing employer (SEWA's method; the state's e-Shram version), but no counterparty, no contract: what replaces bargaining is politics. (3) The sourcing discipline itself: no number without a definition, no law without a date, no claim without an owner.
 
@@ -1631,7 +1631,7 @@ Both sentences can be true at once, and seeing how is a skill this course has be
         {
           prompt: "The 2016 amendment's two most criticised features.",
           answer:
-            "(1) The family-enterprise exception: children under 14 may 'help' in family enterprises after school, non-hazardous, carving out exactly the informal settings where most child labour lives. (2) The hazardous-occupations list for adolescents was cut from 83 items to 3 broad categories (mines, inflammables/explosives, Factories Act hazardous processes).",
+            "(1) The family-enterprise exception: children under 14 may 'help' in family enterprises after school, non-hazardous, carving out exactly the informal settings where most child labor lives. (2) The hazardous-occupations list for adolescents was cut from 83 items to 3 broad categories (mines, inflammables/explosives, Factories Act hazardous processes).",
         },
       ],
     },
@@ -1659,7 +1659,7 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "Summarise India's answer to 'Who is excluded?'",
             options: [
-              "Nobody at all is excluded from India's labour law, either formally or structurally",
+              "Nobody at all is excluded from India's labor law, either formally or structurally",
               "Formally almost nobody; structurally roughly nine in ten, with a caste geography",
               "Only central and state government employees are excluded, and no other workers",
               "Only agricultural and domestic workers, carved out by name in the statute text",
@@ -1692,7 +1692,7 @@ Both sentences can be true at once, and seeing how is a skill this course has be
             ],
             correctIndex: 1,
             explanation:
-              "One legal system, three experiences of 'what happens if you try', the tripartite answer is itself the picture of a segmented labour market.",
+              "One legal system, three experiences of 'what happens if you try', the tripartite answer is itself the picture of a segmented labor market.",
             sourceLessonSlug: "india-four-answers",
           },
           {
@@ -1713,7 +1713,7 @@ Both sentences can be true at once, and seeing how is a skill this course has be
             options: [
               "Formal, binding arbitration of the whole dispute before a neutral third-party panel",
               "Politics: demands aimed at the state, which is why the big events are general strikes",
-              "Litigation, taking the individual employer straight to the labour courts and tribunals",
+              "Litigation, taking the individual employer straight to the labor courts and tribunals",
               "Nothing at all replaces it; the informal workers simply have no recourse whatsoever",
             ],
             correctIndex: 1,
@@ -1752,7 +1752,7 @@ Both sentences can be true at once, and seeing how is a skill this course has be
             options: [
               "Attach identity, registration and protection to the person, not to a job or employer",
               "Fund absolutely everything entirely through the members' own trade-union dues alone",
-              "Organise only the formal-sector workers, and never any of the informal workers at all",
+              "Organize only the formal-sector workers, and never any of the informal workers at all",
               "Replace the entire state apparatus with member-owned worker cooperatives everywhere",
             ],
             correctIndex: 0,
@@ -1764,8 +1764,8 @@ Both sentences can be true at once, and seeing how is a skill this course has be
             prompt: "What single structural limit stands at both SEWA scale and national scale?",
             options: [
               "A simple and chronic lack of enough dues-paying members to sustain all the work",
-              "No counterparty, no contract: organising works without an employer, a contract cannot",
-              "A simple and chronic lack of any applicable labour laws on the statute books at all",
+              "No counterparty, no contract: organizing works without an employer, a contract cannot",
+              "A simple and chronic lack of any applicable labor laws on the statute books at all",
               "The long postponement and repeated delay of the whole decennial national census",
             ],
             correctIndex: 1,
@@ -1784,7 +1784,7 @@ Both sentences can be true at once, and seeing how is a skill this course has be
             ],
             correctIndex: 1,
             explanation:
-              "The election, the contract, the grievance procedure all fail the street-vendor test; the right to organise, identity, and person-attached protection survive. That residue is the point of the course.",
+              "The election, the contract, the grievance procedure all fail the street-vendor test; the right to organize, identity, and person-attached protection survive. That residue is the point of the course.",
             sourceLessonSlug: "india-four-answers",
           },
           {
@@ -1830,7 +1830,7 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "Why is India called this track's most important stress test of the anchor course?",
             options: [
-              "Because India in fact has the single strictest labour laws found anywhere in the world",
+              "Because India in fact has the single strictest labor laws found anywhere in the world",
               "Every anchor tool assumes an employer, and India is the largest case where most lack one",
               "Because India was the very first country to ratify every single one of the ILO conventions",
               "Because India's trade unions are demonstrably the very oldest anywhere in the world",

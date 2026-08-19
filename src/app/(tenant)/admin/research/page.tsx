@@ -15,6 +15,11 @@ import {
   reviewLocation,
 } from "@/lib/lesson-links";
 import { phraseAppearsIn } from "@/lib/lesson-excerpt";
+import {
+  countReviewGroup,
+  researchGroupSummary,
+  reviewGroupStartsOpen,
+} from "@/lib/review-lists";
 import { ResearchCheckForm } from "@/components/research-check-form";
 import { ReviewContext } from "@/components/review-context";
 
@@ -67,6 +72,17 @@ export default async function ResearchChecksPage() {
   const bodyByRef = new Map(bodies.map((b) => [`${b.courseSlug} ${b.lessonSlug}`, b.text]));
   const openCount = all.filter((c) => (answers.get(c.key)?.status ?? "open") === "open").length;
 
+  // Each course collapses, so its summary line has to carry the counts or a collapsed board hides
+  // the queue behind a row of course names. A check with no database row has never been looked at,
+  // which is exactly "open".
+  const counted = groups.map((group) => ({
+    ...group,
+    counts: countReviewGroup(
+      group.checks,
+      (c) => (answers.get(c.key)?.status ?? "open") === "open",
+    ),
+  }));
+
   return (
     <main className="mx-auto max-w-3xl px-4 py-8">
       <h1 className="text-2xl font-semibold tracking-tight">Source checks</h1>
@@ -83,6 +99,10 @@ export default async function ResearchChecksPage() {
         {openCount} open of {all.length} total.
       </p>
       <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+        Courses start collapsed, and each summary line says how many checks it holds and how many of
+        those are still open.
+      </p>
+      <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
         This is the flagged list. The other one,{" "}
         <Link href="/admin/citations" className="underline">
           Citations
@@ -94,10 +114,22 @@ export default async function ResearchChecksPage() {
         written down is worse than an open one, because it stops anyone looking again.
       </p>
 
-      {groups.map((group) => (
-        <section key={group.course} className="mt-10">
-          <h2 className="text-lg font-semibold tracking-tight">{group.course}</h2>
-          <ul className="mt-4 space-y-6">
+      {counted.map((group) => (
+        <details
+          key={group.course}
+          open={reviewGroupStartsOpen(group.counts, counted.length)}
+          className="group mt-4 rounded-lg border border-neutral-200 dark:border-neutral-800"
+        >
+          <summary className="flex min-h-11 cursor-pointer list-none flex-wrap items-center gap-x-2 gap-y-1 px-4 py-2 focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-12">
+            <span aria-hidden="true" className="text-xs transition-transform group-open:rotate-90">
+              ▶
+            </span>
+            <h2 className="text-base font-semibold tracking-tight sm:text-lg">{group.course}</h2>
+            <span className="text-sm text-neutral-600 dark:text-neutral-400">
+              {researchGroupSummary(group.counts)}
+            </span>
+          </summary>
+          <ul className="space-y-6 px-4 pt-2 pb-4">
             {group.checks.map((check) => {
               const row = answers.get(check.key);
               const status = (row?.status ?? "open") as ResearchCheckStatus;
@@ -198,7 +230,7 @@ export default async function ResearchChecksPage() {
               );
             })}
           </ul>
-        </section>
+        </details>
       ))}
     </main>
   );

@@ -197,7 +197,7 @@ The rule is unambiguous: **do not run one, and do not approach from below.** Por
 
 ## This course is not a safety qualification
 
-It explains why this river is dangerous and what the principal hazards are. **It does not make anyone competent to paddle it.** That requires instruction, practice, local knowledge, current conditions, and judgement that no written course can supply.
+It explains why this river is dangerous and what the principal hazards are. **It does not make anyone competent to paddle it.** That requires instruction, practice, local knowledge, current conditions, and judgment that no written course can supply.
 
 If you are planning to be on water like this, take a course from an instructor who can watch you do things, and get current information from the authority that manages the stretch you are on. Conditions change with flow, season and traffic, and none of that is knowable from here.
 

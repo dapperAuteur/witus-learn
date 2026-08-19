@@ -45,7 +45,7 @@ Everything in this course is aimed at that gap between what you know and what yo
 
 You are not being asked to be certain. Certainty is rare and pretending to it is the failure. You are being asked to be **legible**: to make it possible for a reader to see which claims are sourced, which are corroborated, which are still open, and what you did about it.
 
-That is a skill, it can be practised, and by the end of this course it will be scored against a real instrument used on real work.
+That is a skill, it can be practiced, and by the end of this course it will be scored against a real instrument used on real work.
 
 :::reveal Somebody sends you five links that all say the same thing. What is the first question to ask? ||| Where did each one get it? If they all trace to one original, you have one source, not five.
 
@@ -55,7 +55,7 @@ That is a skill, it can be practised, and by the end of this course it will be s
       slug: "the-instrument",
       title: "2 · The instrument you will be scored against",
       section: "Section 1 · The problem, and the instrument",
-      body: `Most research advice is a list of virtues. Be curious. Be sceptical. Be fair. True, and useless the moment you have to decide whether a specific paragraph is good enough to publish.
+      body: `Most research advice is a list of virtues. Be curious. Be skeptical. Be fair. True, and useless the moment you have to decide whether a specific paragraph is good enough to publish.
 
 This course uses something narrower: the **Trusted Documentation Rubric**, the instrument reviewers on this platform actually score submitted work against. Eight criteria, grouped under five pillars.
 
@@ -70,7 +70,7 @@ This course uses something narrower: the **Trusted Documentation Rubric**, the i
 | Disclosure of interests | Act independently | Must be Met |
 | Craft for the medium | Craft | Developing is acceptable |
 
-Read the bars carefully, because they encode a judgement worth understanding.
+Read the bars carefully, because they encode a judgment worth understanding.
 
 **Craft can be merely Developing. Sourcing cannot.** A rough, plain, unpolished piece of work whose claims are sourced and whose uncertainties are flagged will pass. A beautiful one that asserts things nobody checked will not. That ordering is deliberate: craft failures are visible to the reader, and sourcing failures are not.
 
@@ -134,7 +134,7 @@ Write the question down before you start looking. Then, when you are deep in mat
 
 **Secondary** means someone read primary material and wrote about it. A history book. A journal article. A news report.
 
-**Tertiary** means someone read secondary material and summarised it. An encyclopedia entry. A syllabus. Most of what a search engine puts at the top.
+**Tertiary** means someone read secondary material and summarized it. An encyclopedia entry. A syllabus. Most of what a search engine puts at the top.
 
 None of these is disgraceful. Secondary work is where you learn what questions have already been asked, and skipping it wastes months. But the rule is:
 
@@ -144,7 +144,7 @@ None of these is disgraceful. Secondary work is where you learn what questions h
 
 When a secondary source states a fact, look for its citation and follow it. Do this four or five times and you will discover something uncomfortable: a surprising share of confident claims trace back to nothing, or to a source that says something slightly different, or to a source that says the opposite and was misread once in 1974 and copied ever since.
 
-That experience does more for your judgement than any amount of advice.
+That experience does more for your judgment than any amount of advice.
 
 ## Values owned by somebody else
 
@@ -218,7 +218,7 @@ For these, there is exactly one acceptable move: **read it from the system that 
             prompt:
               "You need the current fee a state charges for a licence. What is the correct way to establish it?",
             options: [
-              "Use the figure given in a recent, well-edited news article about the licence",
+              "Use the figure given in a recent, well-edited news article about the license",
               "Read it from the issuing agency's own published schedule and record the date you read it",
               "Average the figures given by the three most authoritative sources you can find",
               "Use last year's published figure and note that fees generally rise",
@@ -250,7 +250,7 @@ Two sources are independent when neither got it from the other, and neither got 
 Watch for these:
 
 - **The syndication chain.** Many outlets, one wire service.
-- **The press-release echo.** Many articles, one organisation's announcement.
+- **The press-release echo.** Many articles, one organization's announcement.
 - **The single expert.** Many quotes, one person, in some cases repeating something they read.
 - **The circular citation.** A cites B, B cites C, C cites A. This happens more than seems possible.
 
@@ -258,7 +258,7 @@ Watch for these:
 
 Not all of them, and pretending otherwise leads to work nobody finishes. Corroborate the claims that are **load-bearing**: the ones your conclusion rests on, the ones that would change a reader's mind, the ones about a named person, and any number you are asking anyone to act on.
 
-Colour and context can rest on a single decent source, as long as you have not dressed it up as more than it is.
+Color and context can rest on a single decent source, as long as you have not dressed it up as more than it is.
 
 ## What to do when corroboration is not available
 
@@ -327,7 +327,7 @@ Informed means they understood what they were agreeing to: what it is for, where
 
 Specific means consent to one use is not consent to all uses. Agreeing to an interview for a written piece is not agreement to appear in a film.
 
-And in practice, people change their minds. You are not always legally obliged to honour that. You should decide, in advance and in writing, what you will do when it happens, because deciding in the moment favours whoever wants the material most.
+And in practice, people change their minds. You are not always legally obliged to honor that. You should decide, in advance and in writing, what you will do when it happens, because deciding in the moment favors whoever wants the material most.
 
 **Log it.** Who, when, what for, in what form. A consent you cannot evidence is one you will eventually be asked to prove and cannot.
 
@@ -347,7 +347,7 @@ Minors need a guardian's consent as well as their own agreement. People in a dep
 
 :::reveal Someone consents to an interview for an article, and later you want it in a film. What do you need? ||| Fresh consent. Consent is specific to a use, and a new medium and a new audience is a new use.
 
-:::reveal What is the difference between an unflattering portrayal and an unfair one? ||| An unflattering one shows something true the subject would rather not see. An unfair one is built by selection, so the subject would not recognise themselves in it.`,
+:::reveal What is the difference between an unflattering portrayal and an unfair one? ||| An unflattering one shows something true the subject would rather not see. An unfair one is built by selection, so the subject would not recognize themselves in it.`,
     },
     {
       slug: "cultural-and-linguistic-fidelity",
@@ -359,13 +359,13 @@ Minors need a guardian's consent as well as their own agreement. People in a dep
 
 A translation is a claim. "She said X" asserts that X is what she said, and if your translation is loose, you have put words in a real person's mouth in public.
 
-The rule is straightforward: **a translation that carries meaning gets checked by someone fluent, ideally a native speaker of the variety actually spoken.** Not a machine alone. Machine translation is a fine first pass and a poor final one, especially with idiom, register, humour, and anything said obliquely on purpose.
+The rule is straightforward: **a translation that carries meaning gets checked by someone fluent, ideally a native speaker of the variety actually spoken.** Not a machine alone. Machine translation is a fine first pass and a poor final one, especially with idiom, register, humor, and anything said obliquely on purpose.
 
-When you cannot get a check, say so. "Translated by the author; not independently checked" is a normal, honourable sentence.
+When you cannot get a check, say so. "Translated by the author; not independently checked" is a normal, honorable sentence.
 
 ## Framing
 
-Fidelity is not only about words. It is about whether a community's story is told in terms that community would recognise.
+Fidelity is not only about words. It is about whether a community's story is told in terms that community would recognize.
 
 The common failure is not hostility. It is **explaining a group's practice using a framework from outside it**, applied so naturally that you never notice you chose it. A ceremony described purely as economics. A belief described purely as psychology. A survival strategy described as a quirk. Every one of those may contain something true, and every one can produce an account that is accurate in its parts and wrong as a whole.
 
@@ -380,7 +380,7 @@ The failure mode to watch for is a piece of work that is **technically accurate 
 
 :::reveal When is a machine translation acceptable as a final translation? ||| When nothing depends on the meaning. If it carries meaning, especially a quote from a real person, it needs a fluent human check or an explicit note that it did not get one.
 
-:::reveal Describe the failure mode this criterion exists to catch. ||| Work that is accurate in its individual facts but frames a community's life in outside terms, so the people in it would not recognise themselves.`,
+:::reveal Describe the failure mode this criterion exists to catch. ||| Work that is accurate in its individual facts but frames a community's life in outside terms, so the people in it would not recognize themselves.`,
       recallContent: [
         {
           prompt: "What must accompany a translation you could not get checked?",
@@ -414,7 +414,7 @@ The failure mode to watch for is a piece of work that is **technically accurate 
             prompt:
               "A person you interviewed for a written article asks, before publication, that you not use their interview. What is the right response?",
             options: [
-              "Honour it and do not publish the interview",
+              "Honor it and do not publish the interview",
               "Publish it without their name, since anonymity resolves the concern",
               "Publish it, because they consented at the time it was recorded",
               "Publish the parts that are already corroborated by other sources",
@@ -497,7 +497,7 @@ Funding. Employment. A relationship with someone in the piece. A financial stake
 
 ## The test is not whether you were influenced
 
-That is the mistake almost everyone makes. "It did not affect my judgement" may be entirely true and is not the question.
+That is the mistake almost everyone makes. "It did not affect my judgment" may be entirely true and is not the question.
 
 The question is whether **a reasonable reader would want to know**. Disclosure exists so they can weigh the work themselves rather than trusting your self-assessment of your own objectivity, which is the one assessment you are least able to make.
 
@@ -576,7 +576,7 @@ The claim has been washed clean of its origin. That is a sourcing failure with n
 
 ## What these tools are good at
 
-Genuinely good: orienting you in an unfamiliar field, generating candidate questions, suggesting what kind of record might exist, summarising something you already have, and criticising your draft's reasoning.
+Genuinely good: orienting you in an unfamiliar field, generating candidate questions, suggesting what kind of record might exist, summarizing something you already have, and criticizing your draft's reasoning.
 
 Notice what those have in common. **None of them is "tell me a fact I will publish."**
 
@@ -608,7 +608,7 @@ If AI did substantial work in your research or drafting, say so. It falls under 
         {
           prompt: "What are AI tools genuinely good at in research?",
           answer:
-            "Orienting you in an unfamiliar field, generating candidate questions, suggesting what records might exist, summarising material you already have, and criticising your reasoning.",
+            "Orienting you in an unfamiliar field, generating candidate questions, suggesting what records might exist, summarizing material you already have, and criticizing your reasoning.",
         },
       ],
     },
@@ -627,7 +627,7 @@ Produce a short piece of work, in whatever medium you chose in lesson 13, that s
 1. **Focused question.** Stated at the top, narrow enough that you could be proved wrong.
 2. **Sourced and corroborated.** Central claims cited; load-bearing ones supported by genuinely independent sources.
 3. **Verified and flagged.** Quotes, numbers and dates re-checked. Every uncertainty stated in the text, and listed separately with what would settle it.
-4. **Consent and fair representation.** For anyone identifiable: consent obtained, logged, and honoured. Or genuinely not applicable, and you can say why.
+4. **Consent and fair representation.** For anyone identifiable: consent obtained, logged, and honored. Or genuinely not applicable, and you can say why.
 5. **Cultural and linguistic fidelity.** Translations checked or marked unchecked. Frameworks named. Or genuinely not applicable.
 6. **Transparent.** In-line citations and a full source list, with access dates on anything that can change.
 7. **Disclosure of interests.** Anything a reasonable reader would want to know, stated where it is relevant.

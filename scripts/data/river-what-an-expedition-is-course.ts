@@ -17,7 +17,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const RIVER_WHAT_AN_EXPEDITION_IS_COURSE: AuthoredCourse = {
   title: "What an Expedition Is",
   description:
-    "A team is paddling from Indiana to the Gulf of Mexico, roughly 1,100 miles of the Wabash, the Ohio and the Lower Mississippi. This course is how to follow it as an expedition rather than a trip: what the route actually is, what makes the water dangerous, and why the direction they are travelling is the most interesting thing about it.",
+    "A team is paddling from Indiana to the Gulf of Mexico, roughly 1,100 miles of the Wabash, the Ohio and the Lower Mississippi. This course is how to follow it as an expedition rather than a trip: what the route actually is, what makes the water dangerous, and why the direction they are traveling is the most interesting thing about it.",
   lessons: [
     {
       slug: "trip-versus-expedition",
@@ -71,7 +71,7 @@ Think of a tree. Indiana sits on one of the branches. The Mississippi is the tru
 
 A beginner counts miles. The useful measure here is **which stage you are in**, because it decides what can go wrong and what skills the day requires. The same 20 miles is a pleasant afternoon on the Wabash and a serious undertaking on the Lower Mississippi.
 
-That is also why this series is organised by stretch of water rather than by school subject. The river decides what each part is about.
+That is also why this series is organized by stretch of water rather than by school subject. The river decides what each part is about.
 
 :::reveal Why is the same distance a very different day on the Wabash and the Lower Mississippi? ||| Because the hazards, the traffic and the options for getting off the water are completely different. The stage matters more than the mileage.
 
@@ -128,13 +128,13 @@ Three great movements happened on this water. They did not go the same way.
 
 To be sent down this river was among the most feared outcomes in a life already without freedom. It meant separation from family, almost always permanent.
 
-**North, taking their freedom.** The Ohio River was a border. Indiana was free; Kentucky, across the water, was not. That single line of water was the difference between being property and being a person, and people crossed it by boat, by ice, and by swimming. More freedom seekers escaped through the Ohio River Valley borderland than any other region of the country, with the activity peaking between 1840 and 1860. Networks on the Indiana side, at Madison and New Albany, were organised in significant part by Black activists including George DeBaptiste and Elijah Anderson.
+**North, taking their freedom.** The Ohio River was a border. Indiana was free; Kentucky, across the water, was not. That single line of water was the difference between being property and being a person, and people crossed it by boat, by ice, and by swimming. More freedom seekers escaped through the Ohio River Valley borderland than any other region of the country, with the activity peaking between 1840 and 1860. Networks on the Indiana side, at Madison and New Albany, were organized in significant part by Black activists including George DeBaptiste and Elijah Anderson.
 
-**North again, a century later.** In the twentieth century the movement resumed by rail. The Illinois Central and its Yazoo and Mississippi Valley subsidiary ran hundreds of miles of track across the Delta, roughly paralleling the river, and became the main route out of Mississippi. Around 500,000 people came to Illinois alone. Pullman porters carried the *Chicago Defender* south along the same rails, which is how word travelled.
+**North again, a century later.** In the twentieth century the movement resumed by rail. The Illinois Central and its Yazoo and Mississippi Valley subsidiary ran hundreds of miles of track across the Delta, roughly paralleling the river, and became the main route out of Mississippi. Around 500,000 people came to Illinois alone. Pullman porters carried the *Chicago Defender* south along the same rails, which is how word traveled.
 
 ## Now put the paddlers back in the picture
 
-They are travelling **south, by choice, for challenge and for pleasure**, down the watercourse that carried people south **against their will**. And in the first days of the journey they cross, going the other way, the exact line that meant freedom to everyone moving north.
+They are traveling **south, by choice, for challenge and for pleasure**, down the watercourse that carried people south **against their will**. And in the first days of the journey they cross, going the other way, the exact line that meant freedom to everyone moving north.
 
 Every mile south is a mile somebody else was once terrified to travel.
 
@@ -234,7 +234,7 @@ You do not have to wait for the paddlers. **Every course stands alone and is fin
 
 The team is bringing back a defined set of things, and knowing what they are tells you what to expect: a daily position, a short set of daily numbers, a thirty-second audio note, one photograph a day, and a count of debris at camp. Beyond that, when the day allows: interviews with people who work the river, photographs of the engineered structures, 360 captures at the significant places, and a record of decisions they made and what those decisions cost.
 
-They have also been asked for something unusual, and it is worth watching for: **the failures.** Gear that broke, plans that fell apart, days they misjudged the weather or the distance or each other. That is the most valuable material on the list and the part nobody sends unless asked, because every judgement you can learn from this journey comes from a moment where judgement was tested.
+They have also been asked for something unusual, and it is worth watching for: **the failures.** Gear that broke, plans that fell apart, days they misjudged the weather or the distance or each other. That is the most valuable material on the list and the part nobody sends unless asked, because every judgment you can learn from this journey comes from a moment where judgment was tested.
 
 They are sending both **fiction and non-fiction** from the same places. Read them side by side. The difference between what happened and what someone imagines from where it happened is one of the most useful things this series can show you.
 

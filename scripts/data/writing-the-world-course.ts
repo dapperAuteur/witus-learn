@@ -141,7 +141,7 @@ That is a genre move, and it is available to you today. A list under a heading l
 
 We have a second contemporary account of the same raid, in a completely different genre: a letter from Alcuin, an English scholar then at Charlemagne's court, to the Northumbrian king. It is not an annal. It is a letter of counsel, and it reads the raid as a judgment, arguing that the community's own conduct invited it.
 
-So the same event survives in two genres with two purposes. The annal places it in time. The letter uses it to argue for a change in behaviour. Neither is lying. If you want to know what happened at Lindisfarne, the annal is the better source. If you want to know what educated people made of it, the letter is.
+So the same event survives in two genres with two purposes. The annal places it in time. The letter uses it to argue for a change in behavior. Neither is lying. If you want to know what happened at Lindisfarne, the annal is the better source. If you want to know what educated people made of it, the letter is.
 
 Holding two accounts of one event side by side and asking what each author was trying to do, and what each was in a position to know, is a skill you will use for the rest of this course.
 
@@ -182,7 +182,7 @@ Charles Darwin kept small pocket notebooks aboard the *Beagle* between 1831 and 
 
 Both are Darwin. They are not the same document, and they are not interchangeable as evidence.
 
-The notebook records what was in front of him and what he was unsure of at that moment. The published narrative records what a practised writer, several years and a great deal of reflection later, decided the voyage had been about. The second is a better read. The first is the primary source.
+The notebook records what was in front of him and what he was unsure of at that moment. The published narrative records what a practiced writer, several years and a great deal of reflection later, decided the voyage had been about. The second is a better read. The first is the primary source.
 
 The journals of the Lewis and Clark expedition work the same way: the field journals carry courses, distances, weather readings, and blunt notes, while the narrative published in 1814 for a reading public is a smoothed account assembled from them by someone else.
 
@@ -250,7 +250,7 @@ Notice what did not happen. The paper did not have to be retracted, because it n
 
 ## The vocabulary, and what each word actually commits to
 
-This is the part to memorise.
+This is the part to memorize.
 
 | Phrase | What it commits the author to |
 |---|---|
@@ -500,7 +500,7 @@ Say that plainly and it sounds cynical. It is not. Every genre has a success con
 
 **A named scientist supplies the enthusiasm.** The institution's own prose stays careful. The quoted researcher says the exciting thing. The excitement is then attributable to a person rather than to the institution, which is a genuinely clever piece of construction once you have seen it.
 
-**The stake is never stated.** Funding, mission relevance, recruitment, rankings. Never mentioned, always present. This is the single most useful thing to ask about any institutional document: what does this organisation get if this lands well?
+**The stake is never stated.** Funding, mission relevance, recruitment, rankings. Never mentioned, always present. This is the single most useful thing to ask about any institutional document: what does this organization get if this lands well?
 
 ## The conditional that fell out
 
@@ -524,7 +524,7 @@ That matters for how you read the rest of this course. The distortion often ente
 
 :::reveal What did Sumner and colleagues (2014) find about news exaggeration? ||| That it was strongly associated with exaggeration already present in the university press release, so the distortion often enters before the newsroom.
 
-:::reveal What is the one question to ask of any institutional document? ||| What does this organisation get if this lands well? The stake is never stated and is always there.
+:::reveal What is the one question to ask of any institutional document? ||| What does this organization get if this lands well? The stake is never stated and is always there.
 
 ## Sources
 - Sumner, P., Vivian-Griffiths, S., Boivin, J., Williams, A., Venetis, C. A., Davies, A., Ogden, J., Whelan, L., Hughes, B., Dalton, B., Boy, F., & Chambers, C. D. (2014). The association between exaggeration in health related science news and academic press releases: Retrospective observational study. *BMJ, 349*, g7015. https://doi.org/10.1136/bmj.g7015
@@ -626,13 +626,13 @@ A screenshot of a headline is two removes from the paper and looks like one. It 
 
 ## What actually spreads
 
-In 2018 *Science* published a study by Vosoughi, Roy and Aral analysing a very large set of stories spread on Twitter over more than a decade, classified as true or false by independent fact-checking organisations.
+In 2018 *Science* published a study by Vosoughi, Roy and Aral analyzing a very large set of stories spread on Twitter over more than a decade, classified as true or false by independent fact-checking organizations.
 
 False stories spread farther, faster, deeper and more broadly than true ones. The effect was most pronounced for political stories. The authors found that false stories were more novel than true ones, and that responses to them carried more surprise and disgust, while true stories drew more sadness and trust.
 
 One more finding matters for how you use this: bots accelerated true and false stories at about the same rate. The difference was people.
 
-That is uncomfortable and it is also the most useful part, because it means the mechanism is not somebody else's malice. It is ordinary sharing behaviour, including yours.
+That is uncomfortable and it is also the most useful part, because it means the mechanism is not somebody else's malice. It is ordinary sharing behavior, including yours.
 
 ## No contempt, please
 
@@ -727,7 +727,7 @@ The second is barely longer. It names what the claim was, who made it, and what 
               "The conditional clause about confirmation",
               "The reference to billions of years passing",
               "The naming of the meteorite as 84001",
-              "The description of Mars as a neighbour",
+              "The description of Mars as a neighbor",
             ],
             correctIndex: 0,
             explanation:
@@ -869,7 +869,7 @@ Most names do the opposite.
 
 **Discovered.** The most consequential of the four. *Discovered* takes an event with at least two parties and awards the active role to one of them. Bones known to local people for generations become discovered when a naturalist arrives. Ask of any discovery sentence: known to whom, and unknown to whom? The answer is almost always in the sentence already, and almost always unstated. Course 2 of this series builds a whole lesson on this word.
 
-**Tribe.** Applied to some peoples and never to others of comparable size and organisation. The choice between *tribe*, *nation*, *kingdom* and *state* is made before any evidence is presented, and it decides in advance what kind of thing the reader thinks they are reading about.
+**Tribe.** Applied to some peoples and never to others of comparable size and organization. The choice between *tribe*, *nation*, *kingdom* and *state* is made before any evidence is presented, and it decides in advance what kind of thing the reader thinks they are reading about.
 
 ## The rule
 
@@ -1015,7 +1015,7 @@ Put any hedged sentence through these:
 
 **What would settle it?** If nothing would, you are not looking at a hedge at all. You are looking at a claim built so it can never be wrong.
 
-## The series' own favourite hedge
+## The series' own favorite hedge
 
 This series uses one hedge more than any other, and it is worth naming here rather than pretending otherwise: **may have inspired**.
 
@@ -1131,7 +1131,7 @@ Most people have never done this once. It takes a few minutes, it is occasionall
               "Named the gap in what was known",
               "Named the finder of the first bones",
               "Named the county the bones came from",
-              "Named the year the bones were catalogued",
+              "Named the year the bones were cataloged",
             ],
             correctIndex: 0,
             explanation:
@@ -1318,7 +1318,7 @@ That is why a caption is not a label. It is the sentence that tells the reader w
 
 ## A real case with a documented disagreement
 
-The best studied example in photography is the 1936 photograph now universally called *Migrant Mother*, made by Dorothea Lange for the Farm Security Administration at a pea pickers' camp near Nipomo, California. It became one of the most reproduced images of the Depression, and its original catalogue caption in the government file is a plain descriptive line about a destitute pea picker and her children.
+The best studied example in photography is the 1936 photograph now universally called *Migrant Mother*, made by Dorothea Lange for the Farm Security Administration at a pea pickers' camp near Nipomo, California. It became one of the most reproduced images of the Depression, and its original catalog caption in the government file is a plain descriptive line about a destitute pea picker and her children.
 
 Two things happened afterwards that make it useful here.
 
@@ -1597,7 +1597,7 @@ Work through it twice if the first pass is rough. The moves are the whole point,
           {
             prompt:
               "Active-voice rewrite, one word. Passive: The specimen was catalogued in 1931. Active: The museum ___ the specimen in 1931.",
-            answer: "catalogued",
+            answer: "cataloged",
             accept: ["cataloged"],
             hint: "The verb keeps its meaning; only the actor moves to the front.",
             explanation:
@@ -1743,7 +1743,7 @@ Write the same finding three times.
 
 **A field note.** Written as if you were present at the moment of the observation. To do this at all you have to work out what the observation physically was: what was in front of a person, when, and what they did next. That is the point of the exercise, and most of the work.
 
-This version must be **labelled as constructed**, in a line above it, because you were not there. Labelling an invented passage as invented is a rule this course applies to itself in lessons 1, 7 and 12, and it applies to you here. An unlabelled reconstruction presented as a record is the single fastest way to fail this assignment.
+This version must be **labeled as constructed**, in a line above it, because you were not there. Labeling an invented passage as invented is a rule this course applies to itself in lessons 1, 7 and 12, and it applies to you here. An unlabelled reconstruction presented as a record is the single fastest way to fail this assignment.
 
 **A paragraph of the paper.** Report the finding as the researchers could support it. It must contain at least **two load-bearing hedges** and **one stated limitation**, and each hedge must survive the three-question test from lesson 10: who is uncertain, about what, and what would settle it.
 
@@ -1824,7 +1824,7 @@ Some hops will be missing. A press release may not exist, or may have been remov
 
 ## Part 3. Name the delta
 
-One sentence, and it is the centre of the assignment:
+One sentence, and it is the center of the assignment:
 
 *Between hop N and hop N plus one, the claim changed from X to Y.*
 
@@ -1870,7 +1870,7 @@ Graded as seriously as the rest, for the same reason as in assignment 15: a conf
 
 500 to 700 words of prose, plus the chain table, the appraisals, and the search log. APA 7 throughout, with a reference list in which every entry is reachable.
 
-No single source may supply more than half your citations. If your reference list is mostly one article, you have summarised a source rather than researched a question.
+No single source may supply more than half your citations. If your reference list is mostly one article, you have summarized a source rather than researched a question.
 
 ## How this is assessed
 

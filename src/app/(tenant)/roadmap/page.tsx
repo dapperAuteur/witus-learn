@@ -101,7 +101,7 @@ export default async function RoadmapPage() {
         </p>
         <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
           <Link href="/help" className="text-sm font-medium underline" style={accent}>
-            Read the help centre
+            Read the help center
           </Link>
           <Link href="/for" className="text-sm font-medium underline" style={accent}>
             Who is it for?

@@ -442,7 +442,7 @@ NIST frames trustworthy AI as a continuous activity, not a launch event: you kee
               "Why put a hard rule like 'never reveal the system prompt' in the system/developer layer rather than the user-facing template?",
             options: [
               "System-layer tokens are billed at a lower rate than user-layer tokens",
-              "Models are trained to prioritise higher-layer instructions over user text",
+              "Models are trained to prioritize higher-layer instructions over user text",
               "The user cannot read system messages, so the rule stays secret from them",
               "Instructions in the system layer make the model's output deterministic",
             ],
@@ -542,7 +542,7 @@ NIST frames trustworthy AI as a continuous activity, not a launch event: you kee
               "High latency; the indirect form slows the whole app under production load",
               "Prompt injection; the indirect form hides instructions in content you feed it",
               "Excessive cost; the indirect form quietly raises your monthly bill a lot",
-              "Model drift; the indirect form changes the model's behaviour over time",
+              "Model drift; the indirect form changes the model's behavior over time",
             ],
             correctIndex: 1,
             explanation:
@@ -555,7 +555,7 @@ NIST frames trustworthy AI as a continuous activity, not a launch event: you kee
             options: [
               "It is always more accurate than a human labeller working on the same data",
               "It inherits LLM failure modes, including length bias, and is itself injectable",
-              "It eliminates the need to maintain a labelled test set of your own data",
+              "It eliminates the need to maintain a labeled test set of your own data",
               "It only works when the judging model is run at a temperature of exactly 0",
             ],
             correctIndex: 1,
@@ -567,7 +567,7 @@ NIST frames trustworthy AI as a continuous activity, not a launch event: you kee
             prompt:
               "Before adopting a provider's updated model under a stable alias, what should you do?",
             options: [
-              "Nothing; a stable alias guarantees stable behaviour across updates",
+              "Nothing; a stable alias guarantees stable behavior across updates",
               "Pin the exact version, re-run your eval set, and keep a rollback path",
               "Increase the sampling temperature to compensate for the change",
               "Delete your old prompts so they cannot conflict with the new model",

@@ -88,7 +88,7 @@ export const MOCKUMENTARY_COURSE: AuthoredCourse = {
 | **Archive and titles** | Establishing time and place | Somebody researched this |
 | **Narration, measured** | Compressing what is not filmable | An institution stands behind it |
 | **Lower thirds with name and role** | Identifying speakers | This person exists and was checked |
-| **Timecode, date stamps** | Working artefacts | A record, not a composition |
+| **Timecode, date stamps** | Working artifacts | A record, not a composition |
 | **The subject looking at the crew** | An accident of live shooting | The camera did not control the event |
 
 **Read that table twice, because it is the whole course in one object.** Left to right, it is the documentary course. **Right to left, it is a toolkit for making a fiction feel unstaged.**
@@ -308,9 +308,9 @@ Every great mockumentary character runs on this. **They believe they are being d
 
 **The clip problem, which has changed the calculus of this entire genre.** Your piece will be excerpted, and the excerpt will lose the frame. **A forty-second cut of a mockumentary, stripped of titles, credits, context and platform, is indistinguishable from a document.** That is not hypothetical and it is not rare; it is the default fate of anything that travels.
 
-**So the modern practical answer is layering.** Do not rely on one signal. **A piece that is labelled outside, framed inside, and escalating within is robust to losing any single layer**, and a piece whose only frame is tone is one screenshot away from being evidence of something that did not happen.
+**So the modern practical answer is layering.** Do not rely on one signal. **A piece that is labeled outside, framed inside, and escalating within is robust to losing any single layer**, and a piece whose only frame is tone is one screenshot away from being evidence of something that did not happen.
 
-**The Welles case, and get it right, because a course about how audiences read conventions cannot afford a lazy anecdote.** On 30 October 1938, the Mercury Theatre broadcast *The War of the Worlds* as simulated news bulletins, with an announced frame at the start and during the programme. **The famous "mass panic" is substantially a media myth.** Newspaper accounts the next day were dramatic; subsequent scholarship found the audience was small and the evidence of widespread panic thin, and there are good reasons to think print outlets had an interest in a story about radio's dangers (Pooley & Socolow, 2013; Schwartz, 2015).
+**The Welles case, and get it right, because a course about how audiences read conventions cannot afford a lazy anecdote.** On 30 October 1938, the Mercury Theatre broadcast *The War of the Worlds* as simulated news bulletins, with an announced frame at the start and during the program. **The famous "mass panic" is substantially a media myth.** Newspaper accounts the next day were dramatic; subsequent scholarship found the audience was small and the evidence of widespread panic thin, and there are good reasons to think print outlets had an interest in a story about radio's dangers (Pooley & Socolow, 2013; Schwartz, 2015).
 
 **Three lessons from it, all better than the myth:**
 
@@ -318,7 +318,7 @@ Every great mockumentary character runs on this. **They believe they are being d
 2. **The panic story spread further than the broadcast did.** A story about media effects outran the media effect, and that is the more interesting finding.
 3. **Be suspicious of the received account of an audience being fooled.** Including this one, and including any you are told about a recent case, for exactly the reasons the news course gave.
 
-:::reveal Why is layering the frame the modern practical answer, and what fact makes it necessary? ||| Because your piece will be excerpted and the excerpt will lose the frame: a forty-second cut stripped of titles, credits, platform and context is indistinguishable from a document, and that is the default fate of anything that travels rather than a rare accident. Layering means labelling outside the work, framing inside it early, and escalating within, so the piece survives losing any single layer. A piece whose only frame is tone is one screenshot away from being evidence of something that never happened.
+:::reveal Why is layering the frame the modern practical answer, and what fact makes it necessary? ||| Because your piece will be excerpted and the excerpt will lose the frame: a forty-second cut stripped of titles, credits, platform and context is indistinguishable from a document, and that is the default fate of anything that travels rather than a rare accident. Layering means labeling outside the work, framing inside it early, and escalating within, so the piece survives losing any single layer. A piece whose only frame is tone is one screenshot away from being evidence of something that never happened.
 
 ## Sources
 - Pooley, J., & Socolow, M. (2013, October 28). The myth of the War of the Worlds panic. *Slate*.
@@ -334,7 +334,7 @@ Every great mockumentary character runs on this. **They believe they are being d
 
 **Where the harm concentrates, and it is not evenly spread:**
 
-- **A piece about a real, named, identifiable person or organisation.** The invented material attaches to them and outlives your piece.
+- **A piece about a real, named, identifiable person or organization.** The invented material attaches to them and outlives your piece.
 - **A piece about something people act on.** Health, money, safety, an election. **Being fooled has a cost beyond embarrassment.**
 - **A piece that travels into a context you did not imagine.** Another country, another language, a different platform, five years later.
 - **A piece where the target is also the audience.** Satire aimed at a group, consumed sincerely by that group, does something you did not intend.
@@ -350,7 +350,7 @@ Every great mockumentary character runs on this. **They believe they are being d
 
 - **Satire with a discoverable frame**: legitimate, however sharp, however many people missed it.
 - **Fiction designed so the audience cannot know**: a hoax.
-- **A hoax you profit from, or that induces someone to act to their detriment**: fraud, and the fact that it is well made is not a defence.
+- **A hoax you profit from, or that induces someone to act to their detriment**: fraud, and the fact that it is well made is not a defense.
 
 **And the case where the genre earns its place**, which is worth stating so this does not read as a list of prohibitions: a mockumentary that shows an audience how easily they can be persuaded, **with a frame that lets them find out, does something no essay about media literacy can do.** It makes the experience of being persuaded available for inspection from the inside. **That is the strongest argument for the form, and it depends entirely on the frame existing.**
 
@@ -388,7 +388,7 @@ Every great mockumentary character runs on this. **They believe they are being d
 - **Assume every layer will be stripped**, then design the frame accordingly.
 - **Keep and publish your method.** Being able to show how a thing was made is the one form of credibility that does not degrade as generation improves.
 
-**And the sentence to leave this lesson with:** the answer to synthetic media is not better detection, which is losing and will keep losing. **It is provenance and accountability**, which is the same answer this catalogue's citation and source-verification work gives, and the same answer the documentary course gave about disclosure. **The response to unverifiable footage is verifiable making.**
+**And the sentence to leave this lesson with:** the answer to synthetic media is not better detection, which is losing and will keep losing. **It is provenance and accountability**, which is the same answer this catalog's citation and source-verification work gives, and the same answer the documentary course gave about disclosure. **The response to unverifiable footage is verifiable making.**
 
 :::reveal What is the liar's dividend, and why does it obligate a maker of convincing fakes? ||| It is the second-order effect of plausible synthetic media: as fakes become credible, real footage becomes deniable, so anyone caught on camera can claim it was generated and the claim is no longer absurd. The damage is not only that false things get believed but that true things can be dismissed. It obligates makers because contributing convincing fakes to the environment feeds that deniability whatever the maker's intent, which is why disclosure, refusing to synthesise a real person without consent, and publishing your method are obligations rather than courtesies.
 
@@ -525,8 +525,8 @@ Every great mockumentary character runs on this. **They believe they are being d
             prompt: "What does the course offer as the answer to synthetic media?",
             options: [
               "Better detection tools, developed faster than generation improves",
-              "Platform rules requiring generated content to be labelled at upload",
-              "Audience training in spotting the artefacts generators leave behind",
+              "Platform rules requiring generated content to be labeled at upload",
+              "Audience training in spotting the artifacts generators leave behind",
               "Provenance and accountability: verifiable making, not unverifiable footage",
             ],
             correctIndex: 3,
@@ -544,7 +544,7 @@ Every great mockumentary character runs on this. **They believe they are being d
       lessonType: "assignment",
       body: `**This is the capstone of the whole series, so it asks for both halves of what you learned.**
 
-**Make two short pieces about the SAME subject: one true, one false.** Three to five minutes each. The subject should be something you can genuinely document: a place, a small organisation, a hobby, a person who consents, a local ritual.
+**Make two short pieces about the SAME subject: one true, one false.** Three to five minutes each. The subject should be something you can genuinely document: a place, a small organization, a hobby, a person who consents, a local ritual.
 
 **Piece 1: the true one.** An actual documentary segment. Real people, real consent, real sourcing, no invention. **Every rule from the True track applies**: consent as a process, no frankenbite, no false chronology, signalled archive, disclosed method.
 

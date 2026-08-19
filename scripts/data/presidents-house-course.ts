@@ -74,7 +74,7 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 
 **Stop on one clause in that paragraph, because it is a civics lesson hiding in a biography.** *Chosen for the United States Senate by the Indiana state legislature.* **Harrison was never elected to the Senate by voters, because until the Seventeenth Amendment was ratified in 1913 no senator was.** State legislatures picked them. Hold that thought: the man who would ask Congress to protect the ballot in congressional elections reached the Senate by a route that involved no ballot at all.
 
-**The house.** **1230 North Delaware Street, Indianapolis**, in the neighbourhood now called the **Old Northside**. Harrison and his wife Caroline began building it in **1874**; it was finished in the spring of **1875**. He lived in it before and after the presidency and he died in it (Encyclopedia of Indianapolis, n.d.-a; Benjamin Harrison Presidential Site, n.d.-a). Section 2 reads the building. Section 5 reads the museum.
+**The house.** **1230 North Delaware Street, Indianapolis**, in the neighborhood now called the **Old Northside**. Harrison and his wife Caroline began building it in **1874**; it was finished in the spring of **1875**. He lived in it before and after the presidency and he died in it (Encyclopedia of Indianapolis, n.d.-a; Benjamin Harrison Presidential Site, n.d.-a). Section 2 reads the building. Section 5 reads the museum.
 
 **The civic question this course carries.** *What could a presidency do about voting rights, and what happened when it tried?* Notice that it is two questions welded together, and that the first one is about structure while the second one is about a specific year. **You cannot answer the second honestly until you have answered the first**, which is why Section 3 spends a whole lesson on what an American president is actually able to do before it goes anywhere near the bill.
 
@@ -93,7 +93,7 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
       body: `A president does not act on a blank page. By the time Harrison took office in March 1889, **American voting rights law had already been built, used, cut down, and mostly abandoned once**, and knowing that sequence is the difference between reading the 1890 fight as a beginning and reading it as a last attempt.
 
 **The short version of the twenty years before Harrison.**
-1. **The Fifteenth Amendment was ratified in 1870.** It says the right to vote shall not be denied or abridged on account of race, colour, or previous condition of servitude, and it gives Congress power to enforce that by appropriate legislation (U.S. Const. amend. XV).
+1. **The Fifteenth Amendment was ratified in 1870.** It says the right to vote shall not be denied or abridged on account of race, color, or previous condition of servitude, and it gives Congress power to enforce that by appropriate legislation (U.S. Const. amend. XV).
 2. **Congress used that power.** The Enforcement Acts of 1870 and 1871 made interference with voting a federal crime and put federal officers into the machinery of federal elections.
 3. **Enforcement faded.** By the 1880s prosecutions were sporadic, and the federal apparatus built in the early 1870s was largely unused.
 4. **And in 1894, three years after this course's central fight, Congress finished the job.** With Democrats holding the presidency and both chambers, Congress passed what is generally called the **Repeal Act of 1894 (28 Stat. 36)**, rescinding almost all of the remaining Reconstruction voting rights enforcement provisions. The entry in *Encyclopedia of American Constitutional Law* records that it "repealed portions of the Enforcement Act of 1870 and the force act of 1871," and describes the result as eliminating most civil rights measures the courts had not already undermined (*Civil rights repeal act*, n.d.).
@@ -146,14 +146,14 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
       section: "Section 1 · Then",
       body: `The 1888 campaign happened largely **at the house you are studying**, and it is also the first place the flattering version of this story runs into trouble. Take both together, because they are the same event.
 
-**The campaign at the house.** Harrison ran what is now called a **front porch campaign**: rather than travelling to voters, he stayed in Indianapolis and the voters came to him. The Miller Center puts it plainly: "Harrison limited his speeches to front porch receptions in Indianapolis for a stream of carefully selected delegations and press reporters" (Miller Center, n.d.-b). **The two words worth underlining are "carefully selected."** A campaign in which the candidate does not travel is also a campaign in which the candidate controls the audience, the setting, and the record. **That is a media strategy, and it was a new one.**
+**The campaign at the house.** Harrison ran what is now called a **front porch campaign**: rather than traveling to voters, he stayed in Indianapolis and the voters came to him. The Miller Center puts it plainly: "Harrison limited his speeches to front porch receptions in Indianapolis for a stream of carefully selected delegations and press reporters" (Miller Center, n.d.-b). **The two words worth underlining are "carefully selected."** A campaign in which the candidate does not travel is also a campaign in which the candidate controls the audience, the setting, and the record. **That is a media strategy, and it was a new one.**
 
 **The result, with its numbers.** **Harrison carried the electoral college 233 to 168 while receiving roughly 90,000 fewer popular votes than President Grover Cleveland** (Miller Center, n.d.-b). The Miller Center also records the swing states that decided it: **New York and Indiana**. And it records a detail most retellings drop: **"Harrison had failed to carry his home city of Indianapolis"** (Miller Center, n.d.-b).
 
 **Now the part that complicates everything after it.** In October 1888 **William Wade Dudley**, whom Harrison had made **treasurer of the Republican National Committee**, sent a circular letter to Indiana Republican workers containing this instruction: **"Divide the floaters into blocks of five, and put a trusted man with the necessary funds in charge of these five, and make them responsible that none get away and that all vote our ticket."** A "floater" was a voter understood to be available to whoever paid. The letter became public before election day and Democrats reprinted it nationally. The phrase **"blocks of five"** entered American political vocabulary as a synonym for electoral corruption.
 
 **Handle that carefully, in the way this whole cluster handles evidence.**
-1. **The letter is documented.** It is quoted, reproduced and discussed in the historical literature, and its author held a named position in Harrison's campaign organisation.
+1. **The letter is documented.** It is quoted, reproduced and discussed in the historical literature, and its author held a named position in Harrison's campaign organization.
 2. **What the letter proves is that an instruction was written.** It does not by itself establish how many votes were bought, or whether Harrison knew. The Miller Center's own careful phrasing is that "for years after the election, there was political talk suggesting that his supporters had purchased votes in Indiana to win the state" (Miller Center, n.d.-b). **"Political talk" is the honest description of a claim that circulated widely and was never adjudicated.**
 3. **This course does not assert that Benjamin Harrison bought the presidency**, because the record read here does not establish it. **It does assert that the most famous vote-buying document in nineteenth century American politics was written by his campaign's treasurer, in his home state, in the election he won.** Those are different sentences and you should be able to feel the difference.
 
@@ -391,13 +391,13 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
       section: "Section 2 · Built",
       body: `Beat 2 of the site template asks: **why does it look like that?** For a house the answer starts with **typology**, which is what kind of building a building is, and then with the far more interesting question of **what the fabric cost and who it took**.
 
-**The building, from the record.** The Benjamin Harrison house is a **16-room, three-storey brick Italianate residence with a basement**, roughly **10,000 square feet**, designed by the Indianapolis architect **Herman T. Brandt**, with **Petrie and Cummings** as excavators. It has **a three-storey bay window and the bracketed cornices typical of the style**, **parquet floors, butternut woodwork, and a walnut staircase with oak trim**. The basement is **two feet of Indiana limestone**, and **380,550 bricks** completed the house. It was begun in **1874** and finished in the spring of **1875** (Encyclopedia of Indianapolis, n.d.-a; Benjamin Harrison Presidential Site, n.d.-a).
+**The building, from the record.** The Benjamin Harrison house is a **16-room, three-story brick Italianate residence with a basement**, roughly **10,000 square feet**, designed by the Indianapolis architect **Herman T. Brandt**, with **Petrie and Cummings** as excavators. It has **a three-story bay window and the bracketed cornices typical of the style**, **parquet floors, butternut woodwork, and a walnut staircase with oak trim**. The basement is **two feet of Indiana limestone**, and **380,550 bricks** completed the house. It was begun in **1874** and finished in the spring of **1875** (Encyclopedia of Indianapolis, n.d.-a; Benjamin Harrison Presidential Site, n.d.-a).
 
-**Italianate, defined so you can recognise it anywhere.** It is the dominant American domestic style of roughly the 1850s through the 1870s: low-pitched roof, tall narrow windows often paired, heavy **bracketed cornices** under wide eaves, and frequently a bay or a tower. The Old Northside around this house also holds **Gothic Revival, Second Empire, Queen Anne, Eastlake and Stick style** examples from the same decades (Encyclopedia of Indianapolis, n.d.-b). **Standing on that street you are looking at a catalogue of what money built in an American city between 1870 and 1914**, which is exactly what the Encyclopedia gives as the range for the neighbourhood's houses.
+**Italianate, defined so you can recognize it anywhere.** It is the dominant American domestic style of roughly the 1850s through the 1870s: low-pitched roof, tall narrow windows often paired, heavy **bracketed cornices** under wide eaves, and frequently a bay or a tower. The Old Northside around this house also holds **Gothic Revival, Second Empire, Queen Anne, Eastlake and Stick style** examples from the same decades (Encyclopedia of Indianapolis, n.d.-b). **Standing on that street you are looking at a catalog of what money built in an American city between 1870 and 1914**, which is exactly what the Encyclopedia gives as the range for the neighborhood's houses.
 
 **Now the part that tells you more than the style does: the systems.** The site's own account lists three conveniences "not enjoyed by most Victorians": **running water in the kitchen, washroom and second-floor bathroom; a coal-fed furnace; and 23 working gaslight fixtures**, under **12-foot ceilings** (Benjamin Harrison Presidential Site, n.d.-a).
 
-**Read that as a class statement, because that is what it is.** Every item on that list is a purchase of something a poorer household supplied with labour.
+**Read that as a class statement, because that is what it is.** Every item on that list is a purchase of something a poorer household supplied with labor.
 1. **Running water replaces carrying water.**
 2. **A coal furnace replaces tending several fires.**
 3. **Gas fixtures replace filling, trimming and cleaning lamps.**
@@ -405,7 +405,7 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 
 **A building's plumbing is a truer statement of its owner's position than its cornice is.** Style is a taste choice available at several price points. **A second-floor bathroom in 1875 Indianapolis is not.**
 
-**And the labour did not disappear, it moved.** The original **carriage house had upstairs quarters for the coachman** (Benjamin Harrison Presidential Site, n.d.-a). **Somebody lived over the horses.** That single sentence in a museum's building description is the thread you pull if you want to know who else this house contained, and it is the sort of thread that the interpretation lesson in Section 5 asks you to follow.
+**And the labor did not disappear, it moved.** The original **carriage house had upstairs quarters for the coachman** (Benjamin Harrison Presidential Site, n.d.-a). **Somebody lived over the horses.** That single sentence in a museum's building description is the thread you pull if you want to know who else this house contained, and it is the sort of thread that the interpretation lesson in Section 5 asks you to follow.
 
 **The three cost figures, and why this course will not average them.** The record gives three different numbers for what the house cost, and they are not the same measurement.
 
@@ -415,7 +415,7 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 | **$24,818.67** | The Wikipedia article on the site, a TERTIARY source with its own footnote to check | The house, finished 1874-1875 |
 | **about $29,000** | Benjamin Harrison Presidential Site (n.d.-a) | Everything from the empty lot's purchase through the last room painted |
 
-**The third one is explicitly a different scope**, since it includes the land, and that is probably most of the gap. **The first two differ by about 810 dollars and this course cannot tell you why.** Note also that one of the three is a **tertiary** source: an encyclopaedia article summarising other people's work. **A tertiary source is a finding aid, not a citation.** When you use one, follow its footnote to the thing it is summarising and cite that instead. So the rule from course 1 applies unchanged: **give a figure its owner, say what it counts, and do not average two numbers you do not understand.** If you write about this house, name your figure's source in the sentence.
+**The third one is explicitly a different scope**, since it includes the land, and that is probably most of the gap. **The first two differ by about 810 dollars and this course cannot tell you why.** Note also that one of the three is a **tertiary** source: an encyclopaedia article summarizing other people's work. **A tertiary source is a finding aid, not a citation.** When you use one, follow its footnote to the thing it is summarizing and cite that instead. So the rule from course 1 applies unchanged: **give a figure its owner, say what it counts, and do not average two numbers you do not understand.** If you write about this house, name your figure's source in the sentence.
 
 **The lot date disagrees too.** One account has Harrison buying the double lot at auction in **1867**; the site's own account says he purchased the empty lot in **1868**. **A one-year disagreement in a purchase date is settled in a deed record**, which is a Marion County document, which is exactly the kind of lookup Section 5 of course 1 taught you to do.
 
@@ -487,11 +487,11 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
       recallContent: [
         {
           prompt: "Describe the house as a survey form would: style, size, architect, materials.",
-          answer: "A 16-room, three-storey brick Italianate residence with a basement, roughly 10,000 square feet, by architect Herman T. Brandt, with a three-storey bay window, bracketed cornices, parquet floors, butternut woodwork, a walnut staircase with oak trim, a two-foot Indiana limestone basement and 380,550 bricks. Begun 1874, finished spring 1875.",
+          answer: "A 16-room, three-story brick Italianate residence with a basement, roughly 10,000 square feet, by architect Herman T. Brandt, with a three-story bay window, bracketed cornices, parquet floors, butternut woodwork, a walnut staircase with oak trim, a two-foot Indiana limestone basement and 380,550 bricks. Begun 1874, finished spring 1875.",
         },
         {
           prompt: "Name the three conveniences the site lists and explain what each one really bought.",
-          answer: "Running water, a coal-fed furnace, and 23 gaslight fixtures, under 12-foot ceilings. Each replaces labour a poorer household supplied by hand: carrying water, tending fires, filling and trimming lamps. Ceiling height buys air and light and costs fuel.",
+          answer: "Running water, a coal-fed furnace, and 23 gaslight fixtures, under 12-foot ceilings. Each replaces labor a poorer household supplied by hand: carrying water, tending fires, filling and trimming lamps. Ceiling height buys air and light and costs fuel.",
         },
         {
           prompt: "Why is plumbing a better class indicator than a cornice?",
@@ -499,7 +499,7 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
         },
         {
           prompt: "What does the carriage house tell you, and why does it matter?",
-          answer: "It had upstairs quarters for the coachman, so somebody lived over the horses. The labour the house required did not disappear, it moved, and that sentence is the thread to pull when you ask who else this house contained.",
+          answer: "It had upstairs quarters for the coachman, so somebody lived over the horses. The labor the house required did not disappear, it moved, and that sentence is the thread to pull when you ask who else this house contained.",
         },
         {
           prompt: "Three sources give three costs for the house. What is the rule?",
@@ -535,9 +535,9 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 
 **What designation does here, since it is the same law course 1 taught.** The Harrison house is a **National Historic Landmark**, the highest federal recognition, and it is on the **National Register**. Carry the rule forward without changing it: **federal listing is recognition plus review leverage when there is federal money or a federal permit, and it is not by itself a demolition veto for a private owner.** The regulation that can stop a demolition is normally **local**. And this house has that too: the **Old Northside** was listed on the National Register in **1978** and **designated an official Indianapolis historic district by the Indianapolis Historic Preservation Commission in the same year** (Encyclopedia of Indianapolis, n.d.-b).
 
-**One geographic fact about that district you should not skip past.** The Encyclopedia gives the Old Northside's boundaries as **16th Street, Bellefontaine Street, I-65, and Pennsylvania Street** (Encyclopedia of Indianapolis, n.d.-b). **An interstate highway is one of the four sides of the neighbourhood a president's house stands in.** Course 1 of this cluster taught the alignment decision as an instrument. **Here it is again, on the other side of town, as a property line.**
+**One geographic fact about that district you should not skip past.** The Encyclopedia gives the Old Northside's boundaries as **16th Street, Bellefontaine Street, I-65, and Pennsylvania Street** (Encyclopedia of Indianapolis, n.d.-b). **An interstate highway is one of the four sides of the neighborhood a president's house stands in.** Course 1 of this cluster taught the alignment decision as an instrument. **Here it is again, on the other side of town, as a property line.**
 
-**And the neighbourhood's own arc, which is the ordinary American one.** After the First World War residents moved north. During the Second World War large houses were subdivided into apartments and rooming houses. **"By the 1960s and 1970s, the neighbourhood suffered from poverty, neglect, and commercial intrusion."** Homeowners founded **Old Northside, Inc. in 1975**, and the district was listed and locally designated in **1978** (Encyclopedia of Indianapolis, n.d.-b). **The president's house was in a distressed neighbourhood during the same decades that Indiana Avenue was being cleared and Unigov was being written.** Those are different stories with different outcomes, and putting them on one timeline is what Section 3 does next.
+**And the neighborhood's own arc, which is the ordinary American one.** After the First World War residents moved north. During the Second World War large houses were subdivided into apartments and rooming houses. **"By the 1960s and 1970s, the neighbourhood suffered from poverty, neglect, and commercial intrusion."** Homeowners founded **Old Northside, Inc. in 1975**, and the district was listed and locally designated in **1978** (Encyclopedia of Indianapolis, n.d.-b). **The president's house was in a distressed neighborhood during the same decades that Indiana Avenue was being cleared and Unigov was being written.** Those are different stories with different outcomes, and putting them on one timeline is what Section 3 does next.
 
 ## Sources
 - Benjamin Harrison Presidential Site. (n.d.-b). *About*. https://bhpsite.org/about/
@@ -636,7 +636,7 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
         },
         {
           prompt: "What are the Old Northside's boundaries, and which one should stop you?",
-          answer: "16th Street, Bellefontaine Street, I-65, and Pennsylvania Street. An interstate is one of the four sides of the neighbourhood, which is the alignment instrument from course 1 reappearing as a property line.",
+          answer: "16th Street, Bellefontaine Street, I-65, and Pennsylvania Street. An interstate is one of the four sides of the neighborhood, which is the alignment instrument from course 1 reappearing as a property line.",
         },
       ],
     },
@@ -705,7 +705,7 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 | Date | What happened |
 |---|---|
 | **June 1890** | Lodge introduces the federal elections bill in the House |
-| **July 2, 1890** | **The House passes it, 155 to 149, with no Democrats voting in favour** |
+| **July 2, 1890** | **The House passes it, 155 to 149, with no Democrats voting in favor** |
 | **November 4, 1890** | **Republicans lose the House badly in the midterm elections** |
 | **December 2, 1890** | The Senate takes it up; **Democrats begin a filibuster** |
 | **December 1890 to January 1891** | The filibuster runs for weeks; a minority caucus makes it a public fight |
@@ -848,7 +848,7 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 
 ## The parts that do not fit
 
-**1. He signed the Geary Act.** On **May 5, 1892**, Harrison signed legislation extending Chinese exclusion for ten years and **requiring Chinese residents of the United States to obtain and carry a certificate of residence**, with deportation or a year of hard labour for those found without one. **A president who spent four years asking Congress to protect one group's political rights signed a law that stripped another group's ordinary liberty and made them carry papers.** Both things are true and they were nineteen months apart.
+**1. He signed the Geary Act.** On **May 5, 1892**, Harrison signed legislation extending Chinese exclusion for ten years and **requiring Chinese residents of the United States to obtain and carry a certificate of residence**, with deportation or a year of hard labor for those found without one. **A president who spent four years asking Congress to protect one group's political rights signed a law that stripped another group's ordinary liberty and made them carry papers.** Both things are true and they were nineteen months apart.
 
 **2. Wounded Knee happened on his watch, after an order he gave.** **On November 13, 1890, Harrison ordered the army into the Sioux reservations**, to prevent, in the order's words, "any outbreak that may put in peril the lives and homes of the settlers." It became the largest military campaign since Appomattox. On **December 29, 1890**, the Seventh Cavalry opened fire on Lakota people at Wounded Knee Creek. **On the death toll, do exactly what this course keeps telling you to do: take the figure with its definition.** The gravediggers buried **84 men, 44 women and 18 children**, which is **146 documented burials**, and the same account states plainly that **more had died**, because relatives removed bodies and others died elsewhere (PBS American Experience, n.d.). **A burial count is a count of burials.** It is not a casualty total, and this course does not supply one. **Twenty-four days separate that massacre from the Senate vote that killed the elections bill.**
 
@@ -924,7 +924,7 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 
 **What IS defensible, and it is enough.** **Both are instruments aimed at the same variable, which is the effective weight of a vote.** Learning to see them as members of one family is the transferable skill, because **the family is still in use**: registration rules, precinct consolidation, districting, annexation, at-large versus district elections, and the composition of the body that decides any of it. **When somebody proposes a change to an election, ask which lever it is. Is it about the machinery, or is it about the boundary?** Then ask the question this whole cluster keeps asking: **who decided, under what statute, on what record, and who was in the room.**
 
-**One honest asymmetry worth noticing.** Lever one required Congress to act and it did not. **Lever two required a state legislature to act and it did.** **Doing nothing is a decision that favours whatever the status quo already produces**, which is why the calendar mechanisms in lesson 10 are not a technicality. **In a system with many veto points, the party that wants nothing to change has to win once, and the party that wants change has to win at every stage.**
+**One honest asymmetry worth noticing.** Lever one required Congress to act and it did not. **Lever two required a state legislature to act and it did.** **Doing nothing is a decision that favors whatever the status quo already produces**, which is why the calendar mechanisms in lesson 10 are not a technicality. **In a system with many veto points, the party that wants nothing to change has to win once, and the party that wants change has to win at every stage.**
 
 ## Sources
 - *Civil rights repeal act, 28 Stat. 36 (1894)*. (n.d.). In *Encyclopedia of the American Constitution*. Encyclopedia.com. https://www.encyclopedia.com/politics/encyclopedias-almanacs-transcripts-and-maps/civil-rights-repeal-act-28-stat-36-1894
@@ -1052,7 +1052,7 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
             options: [
               "It was narrowly defeated on final passage by a margin of just six votes",
               "It never came to any recorded vote on the floor of the full House at all",
-              "It passed on July 2, 1890, by 155 to 149, with no Democrats voting in favour",
+              "It passed on July 2, 1890, by 155 to 149, with no Democrats voting in favor",
               "It was quietly referred back to committee and was never reported out again",
             ],
             correctIndex: 2,
@@ -1170,15 +1170,15 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 
 **2. Count the rooms you are shown against the sixteen the record says exist.** **The rooms not on the tour are the most interesting rooms.** Service stairs, the kitchen and its passages, storage, the basement, the attic, the carriage house. **A house museum's route is an argument about which parts of a household mattered.**
 
-**3. Look for the people who worked here.** The record notes upstairs quarters for the coachman over the carriage house (Benjamin Harrison Presidential Site, n.d.-a). **Ask of every room: whose labour kept this room working, where did that person sleep, and are they named anywhere on the tour?** If they are not, that is not a criticism, it is an observation with a date: **interpretation changes, and you are seeing the interpretation as it stands when the tour was captured.**
+**3. Look for the people who worked here.** The record notes upstairs quarters for the coachman over the carriage house (Benjamin Harrison Presidential Site, n.d.-a). **Ask of every room: whose labor kept this room working, where did that person sleep, and are they named anywhere on the tour?** If they are not, that is not a criticism, it is an observation with a date: **interpretation changes, and you are seeing the interpretation as it stands when the tour was captured.**
 
 **4. Look at the front of the house and think about lesson 6.** The porch you are looking at is dated by both published accounts to 1895 or 1896. **The campaign the house is famous for was 1888.** Note what is actually there, and note that you cannot tell from looking what was there before.
 
 **5. Look for the objects that are documents.** Campaign memorabilia, photographs, correspondence. **An object in a case is a primary source someone selected.** Note what the label says, note what it does not say, and note who wrote the label.
 
-**6. Look out of the windows.** The Old Northside is bounded on one side by Interstate 65 (Encyclopedia of Indianapolis, n.d.-b). **A house museum sits in a neighbourhood that has its own century**, and the view out is evidence about the second half of that century in a way the parlour is not.
+**6. Look out of the windows.** The Old Northside is bounded on one side by Interstate 65 (Encyclopedia of Indianapolis, n.d.-b). **A house museum sits in a neighborhood that has its own century**, and the view out is evidence about the second half of that century in a way the parlour is not.
 
-**7. Look for how the site talks about the presidency itself.** This site runs education programmes with names like **Future Presidents of America** and **Project POTUS** (Benjamin Harrison Presidential Site, n.d.-c). **Note whether the tour presents Harrison mainly as a Hoosier, mainly as a president, or mainly as a man with a specific record on specific questions.** All three are defensible framings and they are not the same framing.
+**7. Look for how the site talks about the presidency itself.** This site runs education programs with names like **Future Presidents of America** and **Project POTUS** (Benjamin Harrison Presidential Site, n.d.-c). **Note whether the tour presents Harrison mainly as a Hoosier, mainly as a president, or mainly as a man with a specific record on specific questions.** All three are defensible framings and they are not the same framing.
 
 ## What the tour cannot show you
 
@@ -1292,7 +1292,7 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
             title: "San Francisco, California, and the Geary Act",
             color: "#15803d",
             description:
-              "The other part of the record that does not fit. Harrison signed the Geary Act on May 5, 1892. Introduced by Representative Thomas J. Geary of California, it extended Chinese exclusion for ten years and required Chinese residents of the United States to obtain and carry a certificate of residence, with deportation or a year of hard labour for those found without one. It became law nineteen months after the elections bill died.",
+              "The other part of the record that does not fit. Harrison signed the Geary Act on May 5, 1892. Introduced by Representative Thomas J. Geary of California, it extended Chinese exclusion for ten years and required Chinese residents of the United States to obtain and carry a certificate of residence, with deportation or a year of hard labor for those found without one. It became law nineteen months after the elections bill died.",
           },
         ],
       },
@@ -1341,8 +1341,8 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 
 **3. Who governs it?** A nonprofit is run by a **board of directors or trustees**. **Ask who they are, how they are chosen, how long they serve, and who they answer to.** For a private foundation the answer to that last one is usually: **themselves, plus the attorney general of the state, plus the IRS.** That is a much shorter accountability chain than an elected body has, and it cuts both ways: **it is faster, and it is less answerable to the public whose history the site interprets.**
 
-**4. What is on the public record?** For an American tax-exempt organisation, a great deal.
-- **IRS Form 990.** Most tax-exempt organisations must file an annual information return, and **it is a public document**. It shows total revenue and expenses, the largest programme areas, the highest-paid staff and contractors, and it lists the board. **You can read it for free** through the **IRS Tax Exempt Organization Search** or through **ProPublica's Nonprofit Explorer**, both of which search by organisation name.
+**4. What is on the public record?** For an American tax-exempt organization, a great deal.
+- **IRS Form 990.** Most tax-exempt organizations must file an annual information return, and **it is a public document**. It shows total revenue and expenses, the largest program areas, the highest-paid staff and contractors, and it lists the board. **You can read it for free** through the **IRS Tax Exempt Organization Search** or through **ProPublica's Nonprofit Explorer**, both of which search by organization name.
 - **State registration.** Indiana, like most states, has a business entity search for incorporated entities.
 - **Accreditation.** Museum accreditation involves a self-study and a peer review, and the accrediting body publishes who is accredited.
 
@@ -1375,7 +1375,7 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
         },
         {
           prompt: "What is the honest asymmetry between the two cases?",
-          answer: "Lever one required Congress to act and it did not; lever two required a state legislature to act and it did. Doing nothing favours whatever the status quo already produces, so in a system with many veto points the side wanting no change has to win once and the side wanting change has to win at every stage.",
+          answer: "Lever one required Congress to act and it did not; lever two required a state legislature to act and it did. Doing nothing favors whatever the status quo already produces, so in a system with many veto points the side wanting no change has to win once and the side wanting change has to win at every stage.",
         },
       ],
     },
@@ -1394,15 +1394,15 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 | **Interpretive themes** | The handful of ideas every tour is supposed to carry | An interpretive plan |
 | **Tour script** | What a guide actually says | Staff training documents |
 | **Label copy** | What an object's card claims | Exhibit files |
-| **Programmes** | What the site teaches beyond the tour | Published programme descriptions |
+| **Programs** | What the site teaches beyond the tour | Published program descriptions |
 
-**Note the shape of that table.** **Only the last row is normally visible from outside.** The Harrison site publishes programme names including **Youth Leadership Programs**, **Future Presidents of America**, **Project POTUS**, **23rd in the 21st**, and materials **For Educators** (Benjamin Harrison Presidential Site, n.d.-c). **The rest of the table exists and can be asked for**, and asking for it politely, in writing, is a normal thing for a researcher, a student or a neighbour to do.
+**Note the shape of that table.** **Only the last row is normally visible from outside.** The Harrison site publishes program names including **Youth Leadership Programs**, **Future Presidents of America**, **Project POTUS**, **23rd in the 21st**, and materials **For Educators** (Benjamin Harrison Presidential Site, n.d.-c). **The rest of the table exists and can be asked for**, and asking for it politely, in writing, is a normal thing for a researcher, a student or a neighbor to do.
 
 **The hard interpretive question this particular house carries.** Harrison's record is exactly the sort that a house museum has to make a decision about, because **it will not fit on a label**. Section 3 gave you: repeated public demands for federal protection of the ballot; a bill that died on a procedural vote; the Geary Act; Wounded Knee; and an election shadowed by a vote-buying circular. **A single sentence of label copy can hold about one of those.** So somebody chooses. **The right posture for you is not to demand a particular choice but to be able to see that a choice was made**, and to ask what it was and when it was last revisited.
 
 **A national example that shows this fight is real, and recent.** At **Montpelier**, James Madison's estate, the governing foundation amended its bylaws in **June 2021** to commit to a board with at least half its directors recommended or endorsed by the **Montpelier Descendants Committee**, a body representing descendants of the people enslaved there. **In March 2022 the board voted to rescind that commitment**, which produced a national backlash from the Descendants Committee, most of the site's own full-time staff, and the **National Trust for Historic Preservation**. **On May 16, 2022 the board elected a slate of directors recommended by the Descendants Committee, achieving what both sides called "structural parity"** (National Trust for Historic Preservation, 2022; Montpelier, n.d.).
 
-**Read that sequence as governance, not as sentiment.** **A commitment in bylaws was made, rescinded, and restored within eleven months, by votes of a private board.** The public pressure worked because **the decision was visible**: bylaws are documents, board votes are minuted, and a national organisation with standing said so publicly. **That is beat 5 in its purest form.** The lesson generalises to every site in this cluster and to whichever site is nearest to you.
+**Read that sequence as governance, not as sentiment.** **A commitment in bylaws was made, rescinded, and restored within eleven months, by votes of a private board.** The public pressure worked because **the decision was visible**: bylaws are documents, board votes are minuted, and a national organization with standing said so publicly. **That is beat 5 in its purest form.** The lesson generalises to every site in this cluster and to whichever site is nearest to you.
 
 **Four questions to ask about interpretation at any historic site**, and they are polite, answerable questions rather than accusations.
 1. **What period does this site interpret, and when was that decision last reviewed?**
@@ -1432,7 +1432,7 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
         },
         {
           prompt: "What does an IRS Form 990 show, and where can you read one?",
-          answer: "Total revenue and expenses, the largest programme areas, the highest-paid staff and contractors, and the board. It is a public document, searchable free through the IRS Tax Exempt Organization Search or ProPublica's Nonprofit Explorer.",
+          answer: "Total revenue and expenses, the largest program areas, the highest-paid staff and contractors, and the board. It is a public document, searchable free through the IRS Tax Exempt Organization Search or ProPublica's Nonprofit Explorer.",
         },
         {
           prompt: "Why does this course refuse to give a budget figure for the site?",
@@ -1461,7 +1461,7 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 4. Find the **National Register** record for the property and note the reference number and the listing date.
 5. In MapIndy, find **1230 North Delaware Street** and note the parcel number and which **township, council district and school district** it sits in. **Section 3 explained why those three boundaries are not the same shape.**
 
-**One rule you do not get to break.** **Do not run the parcel drill on somebody's home and publish the result.** Practise on institutional and commercial addresses. A public building whose address is published by the institution that occupies it is a safe target; a house somebody lives in is somebody's home first. **This is the same rule the prerequisite course applied to tourist homes.**
+**One rule you do not get to break.** **Do not run the parcel drill on somebody's home and publish the result.** Practice on institutional and commercial addresses. A public building whose address is published by the institution that occupies it is a safe target; a house somebody lives in is somebody's home first. **This is the same rule the prerequisite course applied to tourist homes.**
 
 ## Sources
 - Internal Revenue Service. (n.d.). *Tax exempt organization search*. https://apps.irs.gov/app/eos/
@@ -1494,7 +1494,7 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
             prompt: "The House passed the bill on July 2, 1890 by a vote of 155 to ___.",
             answer: "149",
             accept: ["one hundred forty nine"],
-            explanation: "No Democrats voted in favour. The bill's fatal problem was in the Senate, where it never got a vote on the merits.",
+            explanation: "No Democrats voted in favor. The bill's fatal problem was in the Senate, where it never got a vote on the merits.",
           },
           {
             prompt: "On January 22, 1891 the Senate voted 35 to ___ to set the bill aside.",
@@ -1560,7 +1560,7 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
             prompt: "The Old Northside historic district is bounded on one side by Interstate ___.",
             answer: "65",
             accept: ["i-65", "i 65", "sixty five"],
-            explanation: "The alignment instrument from course 1 of this cluster, reappearing as a property line for the neighbourhood a president's house stands in.",
+            explanation: "The alignment instrument from course 1 of this cluster, reappearing as a property line for the neighborhood a president's house stands in.",
           },
         ],
       },
@@ -1602,7 +1602,7 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
             prompt: "An IRS Form 990 is:",
             options: [
               "A public annual return showing a tax-exempt group's revenue, expenses, staff and board",
-              "A confidential filing available only to the organisation's largest private donors",
+              "A confidential filing available only to the organization's largest private donors",
               "A state property tax assessment sent out yearly by the county assessor's office",
               "A federal grant application submitted to the National Endowment for the Humanities",
             ],
@@ -1625,13 +1625,13 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "Which of these interpretive decisions is normally visible from outside a site?",
             options: [
-              "The published programme descriptions",
+              "The published program descriptions",
               "The full internal docent tour script",
               "The board-approved interpretive plan",
               "The curatorial restoration files",
             ],
             correctIndex: 0,
-            explanation: "The rest of the table exists and can be asked for. Asking politely, in writing, is a normal thing for a researcher, a student or a neighbour to do.",
+            explanation: "The rest of the table exists and can be asked for. Asking politely, in writing, is a normal thing for a researcher, a student or a neighbor to do.",
             sourceLessonSlug: "ph-next-interpretation",
           },
           {
@@ -1721,7 +1721,7 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "A 360 tour of this house cannot show you which of the following?",
             options: [
-              "The exact colour of the butternut woodwork in the main hallway",
+              "The exact color of the butternut woodwork in the main hallway",
               "The precise carved shape of the walnut staircase with its oak trim",
               "A vote, an absence, a governance decision, or its own capture date",
               "The period furniture arranged throughout the front parlour today",
@@ -1872,7 +1872,7 @@ A short, checkable piece in which every sentence is either something you read in
 
 **What this course deliberately did not cover, and why.**
 - **The rest of Harrison's presidency.** The Sherman Antitrust Act, the McKinley Tariff, the admission of new western states, the naval build-up and foreign policy including Hawaii are all real subjects and none of them is this course's question. **A course that covers everything teaches nothing.**
-- **The Blair Education Bill**, named once in lesson 12, which deserves its own treatment. It is the other half of the domestic civil rights programme of that Congress and it also failed.
+- **The Blair Education Bill**, named once in lesson 12, which deserves its own treatment. It is the other half of the domestic civil rights program of that Congress and it also failed.
 - **The full text of H.R. 11045.** **This course has read descriptions of the bill's provisions, not the bill.** It says so in lesson 9 and it hands you the archive that holds it. **That is the single largest open item here.**
 - **The Congressional Record debate itself**, which is thousands of pages and is where the real argument was made, by people including the Black members of Congress of that era.
 - **Hoar's papers, Lodge's papers, and Harrison's papers.** McConarty read 202 letters to Hoar and got an article out of them. **The correspondence is not exhausted.**
@@ -1892,7 +1892,7 @@ A short, checkable piece in which every sentence is either something you read in
       recallContent: [
         {
           prompt: "What is interpretation, and what are the six decisions behind it?",
-          answer: "Deciding what a site says out loud in its rooms. The decisions are the period of significance, the restoration date, the interpretive themes, the tour script, the label copy, and the programmes. Only the programmes are normally visible from outside.",
+          answer: "Deciding what a site says out loud in its rooms. The decisions are the period of significance, the restoration date, the interpretive themes, the tour script, the label copy, and the programs. Only the programs are normally visible from outside.",
         },
         {
           prompt: "Why is Harrison's record a hard interpretive problem for this house?",
@@ -1904,7 +1904,7 @@ A short, checkable piece in which every sentence is either something you read in
         },
         {
           prompt: "Why did public pressure work at Montpelier?",
-          answer: "Because the decision was visible. Bylaws are documents, board votes are minuted, and a national organisation with standing said so publicly. That is beat 5 in its purest form.",
+          answer: "Because the decision was visible. Bylaws are documents, board votes are minuted, and a national organization with standing said so publicly. That is beat 5 in its purest form.",
         },
         {
           prompt: "List the four questions to ask about interpretation at any site.",

@@ -57,7 +57,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const LABOR_SOUTH_AFRICA_COURSE: AuthoredCourse = {
   title: "South Africa: The Union That Helped End Apartheid, Then Joined the Government",
   description:
-    "Apartheid South Africa put Black workers outside labour law by name: the Industrial Conciliation Act of 1924 wrote them out of the word \"employee,\" a 1953 statute criminalised their strikes, and \"job reservation\" saved the best jobs for white workers by law, the bluntest version of the exclusion move this track finds in country after country. This course follows what the excluded built anyway: the leaderless Durban strikes of 1973, the shop-steward unions that became COSATU in 1985 (about 460,000 members at launch, South African History Online), the three-week miners' strike of 1987, and the Tripartite Alliance with the ANC that helped end apartheid in 1994. Then it follows the harder story after the victory. The Labour Relations Act 66 of 1995 is among the most worker-friendly statutes anywhere, written partly by the unionists who had just won, and yet official unemployment stands at 32.9% (Q1 2025, Stats SA), labour broking moves workers outside the paper protections, and on 16 August 2012 police of the democratic state shot dead 34 striking miners at Marikana. That day is taught soberly, from the published findings of the Farlam Commission, what it found, what it did not find, and what is still unresolved, dated and left open. The course ends with the fracture the alliance produced, NUMSA expelled in 2014, the rival SAFTU federation founded in 2017, and with a question borrowed from this track's Poland course, offered and not answered: can a union movement win the state without losing the workplace? Cited to South African History Online, the statutes themselves, Stats SA, the ILO and the Marikana Commission report. A country course in the Workers' Rights track, take \"The History of Unions: America and the World\" first.",
+    "Apartheid South Africa put Black workers outside labor law by name: the Industrial Conciliation Act of 1924 wrote them out of the word \"employee,\" a 1953 statute criminalised their strikes, and \"job reservation\" saved the best jobs for white workers by law, the bluntest version of the exclusion move this track finds in country after country. This course follows what the excluded built anyway: the leaderless Durban strikes of 1973, the shop-steward unions that became COSATU in 1985 (about 460,000 members at launch, South African History Online), the three-week miners' strike of 1987, and the Tripartite Alliance with the ANC that helped end apartheid in 1994. Then it follows the harder story after the victory. The Labour Relations Act 66 of 1995 is among the most worker-friendly statutes anywhere, written partly by the unionists who had just won, and yet official unemployment stands at 32.9% (Q1 2025, Stats SA), labor broking moves workers outside the paper protections, and on 16 August 2012 police of the democratic state shot dead 34 striking miners at Marikana. That day is taught soberly, from the published findings of the Farlam Commission, what it found, what it did not find, and what is still unresolved, dated and left open. The course ends with the fracture the alliance produced, NUMSA expelled in 2014, the rival SAFTU federation founded in 2017, and with a question borrowed from this track's Poland course, offered and not answered: can a union movement win the state without losing the workplace? Cited to South African History Online, the statutes themselves, Stats SA, the ILO and the Marikana Commission report. A country course in the Workers' Rights track, take \"The History of Unions: America and the World\" first.",
   lessons: [
     // ────────────── SECTION 1 · THE PARADOX ──────────────
     {
@@ -73,11 +73,11 @@ export const LABOR_SOUTH_AFRICA_COURSE: AuthoredCourse = {
 
 Read those two rows again, because the distance between them is the reason this course exists.
 
-**Row one is one of the great labour stories ever told.** Under apartheid, Black South Africans could not vote, and for most of the century Black workers were excluded from labour law itself, not by accident, but **by race, written into the statute** (Section 2 shows you the exact words). What they built anyway, a union federation forged on the shop floor, democratic to its stewards, allied to a liberation movement, helped make the country ungovernable and helped end one of the most elaborate systems of racial domination the modern world has produced. When South Africans of every race finally voted on **27 April 1994**, union members had done as much as anyone alive to bring that day about.
+**Row one is one of the great labor stories ever told.** Under apartheid, Black South Africans could not vote, and for most of the century Black workers were excluded from labor law itself, not by accident, but **by race, written into the statute** (Section 2 shows you the exact words). What they built anyway, a union federation forged on the shop floor, democratic to its stewards, allied to a liberation movement, helped make the country ungovernable and helped end one of the most elaborate systems of racial domination the modern world has produced. When South Africans of every race finally voted on **27 April 1994**, union members had done as much as anyone alive to bring that day about.
 
 **Row two is what the same country looked like eighteen years later.** The miners who died at Marikana were striking against a platinum company for a living wage, R12,500 a month. The police who shot them answered to a government led by the African National Congress, the party COSATU had fought beside and formally allied with. The largest union on that mine, the National Union of Mineworkers, was a founding COSATU affiliate, and many of the strikers had just abandoned it for a rival. A union federation that had once faced the state's guns was now, in the eyes of many of the dead men's families, standing next to them.
 
-**This course refuses two easy versions of that story.** The first is the **triumph story**, end the course in 1994, roll credits. The second is the **betrayal story**, read Marikana backwards and conclude the struggle was a fraud. Both are cheap, and both are false to the record. The honest version is harder: a union movement really did help free a country, *and* the alliance it formed to do so put it inside a government it now has to bargain with, criticise, and answer for, a position no union in this track's Wave 1 ever occupied, and one that has costs this course will name precisely, from the record, with dates.
+**This course refuses two easy versions of that story.** The first is the **triumph story**, end the course in 1994, roll credits. The second is the **betrayal story**, read Marikana backwards and conclude the struggle was a fraud. Both are cheap, and both are false to the record. The honest version is harder: a union movement really did help free a country, *and* the alliance it formed to do so put it inside a government it now has to bargain with, criticize, and answer for, a position no union in this track's Wave 1 ever occupied, and one that has costs this course will name precisely, from the record, with dates.
 
 **One warning before you start.** Much of what this course covers is not history yet. Marikana's civil claims and prosecutions were still moving through South African courts when this course was written (2026), and the alliance is a live fight in South African politics, argued about in every election. This course teaches from published findings and each side's own words, dates every claim, and does not tell you who is right where South Africans themselves have not settled it.
 
@@ -94,7 +94,7 @@ Read those two rows again, because the distance between them is the reason this 
       section: "Section 1 · The paradox that runs the whole course",
       body: `If you have taken **The History of Unions: America and the World**, the anchor course of this track, you already own the tool this course runs on. Four questions you can ask of any country on earth:
 
-1. **Who is allowed to organise?**
+1. **Who is allowed to organize?**
 2. **Who is excluded?**
 3. **Who bargains with whom, and at what level?**
 4. **What happens to you if you try?**
@@ -103,9 +103,9 @@ Read those two rows again, because the distance between them is the reason this 
 
 Here are South Africa's answers in advance, and notice that they move **three times**, which is once more than any other country in this track.
 
-**Q1, Who is allowed to organise?** Under apartheid: **white, coloured and Indian workers, in registered unions; African workers, not**, and the exclusion was not custom or employer resistance but **statute** (Section 2 quotes it). Then, from 1979, a strange opening: the state *let* African workers into the registered system, hoping registration would mean control, and the unions took the opening and turned it into a weapon (Section 3). Today, the answer is: **everyone.** Section 23 of the 1996 Constitution gives every worker the right to form and join a union and to strike, one of the few constitutions on earth that entrenches the strike itself. South Africa ratified ILO Conventions 87 and 98 in **February 1996**, within two years of democracy; the apartheid state never had (ILO NORMLEX).
+**Q1, Who is allowed to organize?** Under apartheid: **white, colored and Indian workers, in registered unions; African workers, not**, and the exclusion was not custom or employer resistance but **statute** (Section 2 quotes it). Then, from 1979, a strange opening: the state *let* African workers into the registered system, hoping registration would mean control, and the unions took the opening and turned it into a weapon (Section 3). Today, the answer is: **everyone.** Section 23 of the 1996 Constitution gives every worker the right to form and join a union and to strike, one of the few constitutions on earth that entrenches the strike itself. South Africa ratified ILO Conventions 87 and 98 in **February 1996**, within two years of democracy; the apartheid state never had (ILO NORMLEX).
 
-**Q2, Who is excluded?** Under apartheid, the answer was a race. Today the exclusions wear the track's familiar disguises instead: the worker whose employer on paper is a **labour broker** rather than the company whose floor she sweeps (Section 4), and (South Africa's bleakest number) the roughly **one in three** who has no job at all (32.9% official unemployment, Q1 2025, Stats SA) and so stands outside the entire bargaining system, however progressive its paper.
+**Q2, Who is excluded?** Under apartheid, the answer was a race. Today the exclusions wear the track's familiar disguises instead: the worker whose employer on paper is a **labor broker** rather than the company whose floor she sweeps (Section 4), and (South Africa's bleakest number) the roughly **one in three** who has no job at all (32.9% official unemployment, Q1 2025, Stats SA) and so stands outside the entire bargaining system, however progressive its paper.
 
 **Q3, Who bargains with whom, and at what level?** Under apartheid: industrial councils for those inside the racial door; "works committees", talking shops with no power, for those outside it. Today: **bargaining councils** by sector, a national bargaining forum (NEDLAC) where unions, business and the state negotiate legislation itself, and (the fact with no parallel in this track) a union federation **formally allied to the governing party**, bargaining with a state its own former officials help run. Whether that is influence or capture is the fight of Section 6.
 
@@ -113,7 +113,7 @@ Here are South Africa's answers in advance, and notice that they move **three ti
 
 **One map for the whole course.** Apartheid's answers (exclusion by race, by statute) → the struggle's answers (the union as the ballot of the voteless) → democracy's answers (the best rights on paper in the track, and Marikana on its watch). Watch all four questions move each time.
 
-:::reveal South Africa's answers to the anchor's four questions moved three times, under apartheid, during the struggle, and under democracy. For Question 2 (who is excluded?), what changed between the first era and the third? ||| Under apartheid the excluded were defined by race, in the statute itself, African workers written out of the word "employee." Under democracy the racial bar is gone and the Constitution covers everyone; the excluded are now defined by position instead: workers whose paper employer is a labour broker rather than the firm they actually work in, and the roughly one in three South Africans (32.9% official, Q1 2025, Stats SA) who have no job at all and so stand outside the whole bargaining system.
+:::reveal South Africa's answers to the anchor's four questions moved three times, under apartheid, during the struggle, and under democracy. For Question 2 (who is excluded?), what changed between the first era and the third? ||| Under apartheid the excluded were defined by race, in the statute itself, African workers written out of the word "employee." Under democracy the racial bar is gone and the Constitution covers everyone; the excluded are now defined by position instead: workers whose paper employer is a labor broker rather than the firm they actually work in, and the roughly one in three South Africans (32.9% official, Q1 2025, Stats SA) who have no job at all and so stand outside the whole bargaining system.
 
 ## Sources
 - Republic of South Africa. (1996). *Constitution of the Republic of South Africa, 1996* (s 23, Labour relations). https://www.gov.za/documents/constitution-republic-south-africa-1996
@@ -185,7 +185,7 @@ Here are South Africa's answers in advance, and notice that they move **three ti
             options: [
               "The economic version (wages only) and the political version (votes and parties only)",
               "The triumph story (end at 1994, roll credits) and the betrayal story (a fraud all along)",
-              "The rural version (farm labour only) and the urban version (mines and factories only)",
+              "The rural version (farm labor only) and the urban version (mines and factories only)",
               "The union version (workers only) and the employer version (owners and managers only)",
             ],
             correctIndex: 1,
@@ -203,14 +203,14 @@ Here are South Africa's answers in advance, and notice that they move **three ti
             ],
             correctIndex: 0,
             explanation:
-              "The rock drill operators' demand was R12,500 a month, a wage demand, at a platinum mine, that became the deadliest labour event of democratic South Africa.",
+              "The rock drill operators' demand was R12,500 a month, a wage demand, at a platinum mine, that became the deadliest labor event of democratic South Africa.",
             sourceLessonSlug: "sa-the-paradox",
           },
           {
             prompt: "What are the anchor course's four questions?",
             options: [
               "Who profits? Who pays? Who votes? Who rules? And who writes the history up afterwards?",
-              "Who is allowed to organise? Who is excluded? Who bargains, at what level? What if you try?",
+              "Who is allowed to organize? Who is excluded? Who bargains, at what level? What if you try?",
               "What is the minimum wage? What is the strike rate? What is density? What is coverage?",
               "Who owns the mines? Who owns the farms? Who owns the banks? Who owns the newspapers?",
             ],
@@ -223,7 +223,7 @@ Here are South Africa's answers in advance, and notice that they move **three ti
             prompt: "Under apartheid, who was allowed into the registered union system?",
             options: [
               "Everyone, regardless of race, once the industrial councils were set up",
-              "White, coloured and Indian workers; African workers were excluded by statute",
+              "White, colored and Indian workers; African workers were excluded by statute",
               "Only mine workers, since mining was the one industry with its own statute",
               "No one; every trade union in the country was banned outright by 1953",
             ],
@@ -281,7 +281,7 @@ Here are South Africa's answers in advance, and notice that they move **three ti
             ],
             correctIndex: 1,
             explanation:
-              "Ratification came almost immediately after apartheid ended (ILO NORMLEX), a marker of how completely the answer to 'who may organise?' flipped.",
+              "Ratification came almost immediately after apartheid ended (ILO NORMLEX), a marker of how completely the answer to 'who may organize?' flipped.",
             sourceLessonSlug: "sa-four-questions",
           },
           {
@@ -301,20 +301,20 @@ Here are South Africa's answers in advance, and notice that they move **three ti
             prompt: "Why, under apartheid, was the strike 'the ballot of the voteless'?",
             options: [
               "Because strikes were the only form of public protest the apartheid state left legal",
-              "Because Black South Africans could not vote, so withdrawing labour was the power they had",
+              "Because Black South Africans could not vote, so withdrawing labor was the power they had",
               "Because ballots for the whites-only parliament were printed at the union's own offices",
               "Because employers gave African workers paid time off in order to go and cast a vote",
             ],
             correctIndex: 1,
             explanation:
-              "In a country where you cannot vote, withdrawing your labour is the ballot you have, the anchor's line, and the reason 'who may organise?' was the same question as 'who governs?'",
+              "In a country where you cannot vote, withdrawing your labor is the ballot you have, the anchor's line, and the reason 'who may organize?' was the same question as 'who governs?'",
             sourceLessonSlug: "sa-four-questions",
           },
           {
             prompt: "Who stands outside South Africa's bargaining system today, however progressive its paper?",
             options: [
               "Nobody: coverage is universal, and every working person sits inside some council",
-              "Workers whose paper employer is a labour broker, and the third of the country with no job",
+              "Workers whose paper employer is a labor broker, and the third of the country with no job",
               "Only foreign nationals, who are barred by statute from joining a registered union",
               "Only farm workers, whom the 1995 Act still leaves outside the bargaining system",
             ],
@@ -354,7 +354,7 @@ Here are South Africa's answers in advance, and notice that they move **three ti
 
 **Then, in 1953, the state answered a decade of wartime African union growth by criminalising the exit.** The **Native Labour (Settlement of Disputes) Act 48 of 1953** made strikes by African workers a **criminal offence**, not unprotected, criminal, and created a separate machinery in place of unions: state-appointed regional committees and toothless "works committees" inside the workplace (South African History Online). African unions were still not technically illegal; they were simply given **nothing**, no registration, no recognition, no lawful strike, a shadow system designed so that using it changed nothing and stepping outside it was a crime.
 
-**Notice the design.** The apartheid state rarely wrote "Africans may not organise." It wrote definitions, *employee*, *pass-bearer*, *works committee*, and let the definitions do the work. That is the track's exclusion move in its purest laboratory form, and it is why this course keeps insisting you read definitions before you read rights. **A right belongs to a category, and whoever writes the category decides who has the right.**
+**Notice the design.** The apartheid state rarely wrote "Africans may not organize." It wrote definitions, *employee*, *pass-bearer*, *works committee*, and let the definitions do the work. That is the track's exclusion move in its purest laboratory form, and it is why this course keeps insisting you read definitions before you read rights. **A right belongs to a category, and whoever writes the category decides who has the right.**
 
 Two footnotes that matter later. First, this architecture sat on older stone: the colonial-era **Masters and Servants laws** had made it a crime for a "servant" to break a contract, desertion, insolence, refusal to work, long before 1924. Second, hold the phrase **"works committee"** in your mind. In 1973, in Durban, workers will be offered works committees again, and what they do instead is where the modern story begins (Section 3).
 
@@ -368,32 +368,32 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
         {
           prompt: "What are the anchor course's four questions?",
           answer:
-            "(1) Who is allowed to organise? (2) Who is excluded? (3) Who bargains with whom, and at what level? (4) What happens to you if you try? South Africa's answers move three times, apartheid, the struggle, democracy, more than any other country in the track.",
+            "(1) Who is allowed to organize? (2) Who is excluded? (3) Who bargains with whom, and at what level? (4) What happens to you if you try? South Africa's answers move three times, apartheid, the struggle, democracy, more than any other country in the track.",
         },
         {
           prompt: "What does Section 23 of South Africa's 1996 Constitution do, and when did South Africa ratify ILO Conventions 87 and 98?",
           answer:
-            "Section 23 gives every worker the constitutional right to form and join a union, to organise, to bargain collectively, and to strike, one of the few constitutions that entrenches the strike itself. South Africa ratified ILO C87 and C98 in February 1996, within two years of democracy; the apartheid state never had.",
+            "Section 23 gives every worker the constitutional right to form and join a union, to organize, to bargain collectively, and to strike, one of the few constitutions that entrenches the strike itself. South Africa ratified ILO C87 and C98 in February 1996, within two years of democracy; the apartheid state never had.",
         },
       ],
     },
     {
       slug: "sa-colour-bar",
-      title: "4 · The colour bar, the pass, and the compound",
+      title: "4 · The color bar, the pass, and the compound",
       section: "Section 2 · Excluded by race, by statute",
       body: `The definitions of Lesson 3 were one wall. Three more surrounded the African worker, and one of them was built at the demand of white *unions*, which is the uncomfortable part this course will not skip.
 
-**Wall one: job reservation, the statutory colour bar.** The **Mines and Works Act 12 of 1911** and, decisively, its **1926 Amendment** (known plainly as the "Colour Bar Act") reserved certificates of competency for skilled mine work, blasting, engine driving, for white and coloured workers (South African History Online). The **Industrial Conciliation Act 28 of 1956** went further: its **section 77** let the minister reserve whole classes of work for a specified race, in any industry. A Black worker could be barred from a job not by an employer's prejudice but by a government notice.
+**Wall one: job reservation, the statutory color bar.** The **Mines and Works Act 12 of 1911** and, decisively, its **1926 Amendment** (known plainly as the "Colour Bar Act") reserved certificates of competency for skilled mine work, blasting, engine driving, for white and colored workers (South African History Online). The **Industrial Conciliation Act 28 of 1956** went further: its **section 77** let the minister reserve whole classes of work for a specified race, in any industry. A Black worker could be barred from a job not by an employer's prejudice but by a government notice.
 
-**And who demanded the colour bar? Organised white labour.** In 1922, when mine owners moved to replace expensive white workers with cheaper Black workers, white miners rose in the armed **Rand Revolt**, some marched under the banner, preserved in the photographic record, **"Workers of the World, Unite and Fight for a White South Africa"** (SAHO). The Smuts government crushed the rising with troops, aircraft and artillery; well over a hundred people died. But the white miners lost the battle and won the war: the government elected in 1924 adopted a "civilised labour" policy, and the 1926 Colour Bar Act wrote their demand into law. The anchor taught you that American unions spent decades excluding Black workers from their own ranks. South Africa's version is the same lesson at maximum voltage: **a union is a machine for the people inside it, and it can be aimed at the people outside it.**
+**And who demanded the color bar? Organized white labor.** In 1922, when mine owners moved to replace expensive white workers with cheaper Black workers, white miners rose in the armed **Rand Revolt**, some marched under the banner, preserved in the photographic record, **"Workers of the World, Unite and Fight for a White South Africa"** (SAHO). The Smuts government crushed the rising with troops, aircraft and artillery; well over a hundred people died. But the white miners lost the battle and won the war: the government elected in 1924 adopted a "civilised labour" policy, and the 1926 Colour Bar Act wrote their demand into law. The anchor taught you that American unions spent decades excluding Black workers from their own ranks. South Africa's version is the same lesson at maximum voltage: **a union is a machine for the people inside it, and it can be aimed at the people outside it.**
 
-**Wall two: the pass.** Pass laws, consolidated by the bluntly misnamed **Natives (Abolition of Passes and Co-ordination of Documents) Act 67 of 1952** into a single reference book, the "dompas", controlled where an African worker could live, travel and take work. At their peak, pass-law prosecutions ran to **hundreds of thousands per year** (SAHO). For labour law the pass did double duty: it made workers *removable* (fired often meant expelled from the urban area), and, per Lesson 3, carrying one was exactly what defined you out of the word "employee."
+**Wall two: the pass.** Pass laws, consolidated by the bluntly misnamed **Natives (Abolition of Passes and Co-ordination of Documents) Act 67 of 1952** into a single reference book, the "dompas", controlled where an African worker could live, travel and take work. At their peak, pass-law prosecutions ran to **hundreds of thousands per year** (SAHO). For labor law the pass did double duty: it made workers *removable* (fired often meant expelled from the urban area), and, per Lesson 3, carrying one was exactly what defined you out of the word "employee."
 
-**Wall three: the compound.** The gold mines ran on **migrant labour**: men recruited on fixed contracts, housed in single-sex compounds and hostels, families left behind in the reserves. A compound is a labour-control technology, the employer is also the landlord, the strike is also an eviction. The economist **Francis Wilson's** classic study of the gold mines found that African miners' real cash wages were **no higher in 1969 than they had been in 1911** (Wilson, 1972). Six decades. Zero.
+**Wall three: the compound.** The gold mines ran on **migrant labor**: men recruited on fixed contracts, housed in single-sex compounds and hostels, families left behind in the reserves. A compound is a labor-control technology, the employer is also the landlord, the strike is also an eviction. The economist **Francis Wilson's** classic study of the gold mines found that African miners' real cash wages were **no higher in 1969 than they had been in 1911** (Wilson, 1972). Six decades. Zero.
 
 **What happened when the excluded struck anyway.** In **August 1946**, roughly **60,000-100,000 African mineworkers** on the Rand struck for a ten-shilling daily wage, called out by the African Mine Workers' Union. The state's answer was Question 4 with no mask: police drove strikers back down the shafts at gunpoint and batoned marchers; within a week the strike was broken, **at least nine workers were dead and more than 1,200 injured** (South African History Online), and the union was effectively destroyed. It was the largest strike South Africa had seen, and its defeat convinced a generation that workplace power alone could not beat a state like this, pushing African unionism toward political alliance (a thread that runs straight to Section 3).
 
-:::reveal The 1926 Colour Bar Act is this course's most uncomfortable exhibit about unions themselves. Why? ||| Because it was organised white labour that demanded it. When mine owners tried to substitute cheaper Black workers in 1922, white miners fought an armed revolt, some under the banner "Workers of the World, Unite and Fight for a White South Africa", and though the rising was crushed, their demand became law in 1926: skilled mine work reserved by race. It proves a union is a machine for the people inside it, and can be aimed at those outside it, the same exclusion lesson the anchor taught about American unions, at maximum voltage.
+:::reveal The 1926 Colour Bar Act is this course's most uncomfortable exhibit about unions themselves. Why? ||| Because it was organized white labor that demanded it. When mine owners tried to substitute cheaper Black workers in 1922, white miners fought an armed revolt, some under the banner "Workers of the World, Unite and Fight for a White South Africa", and though the rising was crushed, their demand became law in 1926: skilled mine work reserved by race. It proves a union is a machine for the people inside it, and can be aimed at those outside it, the same exclusion lesson the anchor taught about American unions, at maximum voltage.
 
 ## Sources
 - South African History Online. (n.d.). *The Rand Revolt of 1922*. https://sahistory.org.za/
@@ -424,7 +424,7 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "How did the Industrial Conciliation Act 11 of 1924 exclude African workers from collective bargaining?",
             options: [
-              "It banned every trade union in South Africa and made strike organising a crime",
+              "It banned every trade union in South Africa and made strike organizing a crime",
               "It defined 'employee' to exclude pass-bearing workers, so African unions could not register",
               "It required every registered union to charge fees African workers could not afford",
               "It applied only to farms and mines, leaving factory and shop workers outside the Act",
@@ -450,7 +450,7 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "Why does the course say the apartheid state 'let the definitions do the work'?",
             options: [
-              "Because the state never passed labour statutes at all and left it to the employers",
+              "Because the state never passed labor statutes at all and left it to the employers",
               "Because it wrote categories, 'employee', 'pass-bearer', whose edges produced the exclusion",
               "Because judges rather than parliament decided which workers counted as employees",
               "Because employers drafted the definitions and the state simply enacted what they wrote",
@@ -490,7 +490,7 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
             prompt: "What did the Mines and Works Amendment Act of 1926, the 'Colour Bar Act', do?",
             options: [
               "Abolished the racial restrictions on skilled mine work set out by the 1911 statute",
-              "Reserved certificates of competency for skilled mine work for white and coloured workers",
+              "Reserved certificates of competency for skilled mine work for white and colored workers",
               "Nationalised the gold mines and moved certification into the hands of the state",
               "Set the first statutory minimum wage for African workers on the country's gold mines",
             ],
@@ -505,7 +505,7 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
               "That job reservation ended in 1956 and skilled work was thrown open to all races",
               "That the minister could reserve whole classes of work for a specified race, in any industry",
               "That unions could veto any ministerial decision that reserved work by race",
-              "That the colour bar reached underground mine work only, never factories or offices",
+              "That the color bar reached underground mine work only, never factories or offices",
             ],
             correctIndex: 1,
             explanation:
@@ -516,7 +516,7 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
             prompt: "Who demanded the statutory colour bar of 1926?",
             options: [
               "Mine owners, in order to cut costs by fixing the rate for all certificated work",
-              "Organised white labour, after the armed 1922 Rand Revolt against cheaper Black substitutes",
+              "Organized white labor, after the armed 1922 Rand Revolt against cheaper Black substitutes",
               "The British colonial office, as one of the conditions of the 1910 Union settlement",
               "African unions, as a compromise in exchange for recognition on the new councils",
             ],
@@ -594,9 +594,9 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
             prompt: "What lesson did a generation of African unionists draw from the 1946 defeat?",
             options: [
               "That strikes always fail against any state that is willing to use its police",
-              "That workplace power alone could not beat this state; labour would need allies",
+              "That workplace power alone could not beat this state; labor would need allies",
               "That wages mattered far less than housing, transport and the pass laws did",
-              "That mining was a lost cause and that organising should move to the factories",
+              "That mining was a lost cause and that organizing should move to the factories",
             ],
             correctIndex: 1,
             explanation:
@@ -632,7 +632,7 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
 
 **And it worked, that is the part that changed history.** Employers, desperate to restart production and facing workers they could not lawfully bargain with, simply **raised wages**. Most strikers went back within days with increases; dismissals and prosecutions, by the standards of 1946, were remarkably few. After decades in which the lesson of every strike had been *you will be crushed*, Durban taught a different one: **mass action, held inside the workplace, could win.** (Notice the family resemblance to Poland's occupation strikes of 1980, a repressed workforce redesigning the strike itself so the state's usual answer would not work. The two movements discovered it independently, seven years apart.)
 
-**What Durban left behind mattered more than the raises.** Around the strikes grew a new infrastructure: wage-advice offices, worker education projects, and a generation of new **unregistered** unions, organisations that could not sign legal agreements but organised anyway, factory by factory. The state's official answer was to offer, once again, **works committees**, the toothless bodies of the 1953 Act. Workers used them where useful and built real unions in their shadow. By the late 1970s these unions were large enough that the state faced the choice Section 3's next lesson describes: keep pretending the category "employee" could hold, or open it and try to control what came in.
+**What Durban left behind mattered more than the raises.** Around the strikes grew a new infrastructure: wage-advice offices, worker education projects, and a generation of new **unregistered** unions, organizations that could not sign legal agreements but organized anyway, factory by factory. The state's official answer was to offer, once again, **works committees**, the toothless bodies of the 1953 Act. Workers used them where useful and built real unions in their shadow. By the late 1970s these unions were large enough that the state faced the choice Section 3's next lesson describes: keep pretending the category "employee" could hold, or open it and try to control what came in.
 
 :::reveal The Durban strikers of 1973 refused to elect any leaders or negotiating committees. Why, and what did that refusal accomplish? ||| Because under the 1953 Act an African strike was a crime, a named leader was a target: arrestable, dismissable, prosecutable. By bargaining as a crowd, demands shouted collectively, offers answered by roar, the strikers gave the state no head to cut off, and employers desperate to restart production simply raised wages. After 1946's lesson ("you will be crushed"), Durban proved mass action inside the workplace could win, and the unregistered unions it spawned became the seed of everything that followed.
 
@@ -644,7 +644,7 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
         {
           prompt: "Name the three 'walls' around the African worker beyond the 1924 definition, with one fact each.",
           answer:
-            "(1) Job reservation, the Mines and Works Amendment Act 1926 and s 77 of the 1956 Industrial Conciliation Act reserved work by race. (2) The pass, the 1952 reference-book system controlled residence and work; prosecutions ran to hundreds of thousands a year at peak (SAHO). (3) The compound, migrant labour housed by the employer; Wilson (1972) found African gold-mine real wages no higher in 1969 than 1911.",
+            "(1) Job reservation, the Mines and Works Amendment Act 1926 and s 77 of the 1956 Industrial Conciliation Act reserved work by race. (2) The pass, the 1952 reference-book system controlled residence and work; prosecutions ran to hundreds of thousands a year at peak (SAHO). (3) The compound, migrant labor housed by the employer; Wilson (1972) found African gold-mine real wages no higher in 1969 than 1911.",
         },
         {
           prompt: "What happened in the 1946 African mineworkers' strike, and what lesson did its defeat teach?",
@@ -659,13 +659,13 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
       section: "Section 3 · Durban 1973 to COSATU 1985, rebuilding from the shop floor",
       body: `By the late 1970s the state faced a fact it could not prosecute away: African unions existed, were growing, and sat entirely **outside** the legal machinery, unregulated precisely because they were unrecognised. Its response is one the anchor course already taught you, and this course will not re-teach it at length: the **Wiehahn Commission**, whose 1979 report recommended that African workers be admitted to the registered industrial-relations system. The reasoning was **control**, a registered union files its constitution, discloses its finances, becomes subject to the law's discipline. Parliament obliged with the **Industrial Conciliation Amendment Act 94 of 1979**, and for the first time African workers could belong to registered unions. *(If you want Wiehahn's logic in full, re-read the anchor's lesson "Poland and South Africa: when a union is the opposition", this course picks up where it stops: with what the unions did with the opening.)*
 
-**What they did was take the machine and keep their own engine.** The unions that entered the system had already, in April 1979, federated as **FOSATU, the Federation of South African Trade Unions**, a dozen unions built out of the post-Durban organising drive (South African History Online). FOSATU's signature was **shop-floor democracy**: power vested in elected **shop stewards**, mandated and recallable by the workers of a specific factory, with paid officials kept on a short leash. Registration, on this model, was a tool, you used the industrial council when it served your members and struck when it did not, but the union's strength lived in the workplace, not in the statute book. Hold that design; it is the answer to Question 3 that COSATU inherits, and it is why South African unions became formidable rather than captured, which is what Wiehahn's authors had gambled on.
+**What they did was take the machine and keep their own engine.** The unions that entered the system had already, in April 1979, federated as **FOSATU, the Federation of South African Trade Unions**, a dozen unions built out of the post-Durban organizing drive (South African History Online). FOSATU's signature was **shop-floor democracy**: power vested in elected **shop stewards**, mandated and recallable by the workers of a specific factory, with paid officials kept on a short leash. Registration, on this model, was a tool, you used the industrial council when it served your members and struck when it did not, but the union's strength lived in the workplace, not in the statute book. Hold that design; it is the answer to Question 3 that COSATU inherits, and it is why South African unions became formidable rather than captured, which is what Wiehahn's authors had gambled on.
 
-**And then, in April 1982, FOSATU's general secretary said something this course quotes because Section 6 cannot be understood without it.** In a keynote address to FOSATU's congress, published as *"The Workers' Struggle, Where Does FOSATU Stand?"* (South African Labour Bulletin, 1982), **Joe Foster** argued that workers must of course fight apartheid alongside the broader popular movement, but that they needed their **own independent organisation**, because a mass liberation movement is led by many classes at once, and without an independent base workers' interests would be spoken *for* rather than *by* them, and could be set aside after victory. This position, tagged **"workerism"** by its critics, was fiercely contested by unionists who argued the opposite, that the factory could not be separated from the township, and that standing apart from the national struggle while people were being shot was a moral and strategic absurdity. That rival current, **"populism"** to *its* critics, carried the day in the end.
+**And then, in April 1982, FOSATU's general secretary said something this course quotes because Section 6 cannot be understood without it.** In a keynote address to FOSATU's congress, published as *"The Workers' Struggle, Where Does FOSATU Stand?"* (South African Labour Bulletin, 1982), **Joe Foster** argued that workers must of course fight apartheid alongside the broader popular movement, but that they needed their **own independent organization**, because a mass liberation movement is led by many classes at once, and without an independent base workers' interests would be spoken *for* rather than *by* them, and could be set aside after victory. This position, tagged **"workerism"** by its critics, was fiercely contested by unionists who argued the opposite, that the factory could not be separated from the township, and that standing apart from the national struggle while people were being shot was a moral and strategic absurdity. That rival current, **"populism"** to *its* critics, carried the day in the end.
 
 **Read Foster's warning the way this course reads Wiehahn: as a prediction whose test results come later.** In 1982 it was a debate about strategy. After 1994, when the federation Foster's federation helped build had entered a formal alliance with a governing party, the question *"what happens to workers' independent voice inside a multi-class alliance in power?"* stopped being theoretical. Section 6 shows you both sides claiming vindication, from their own documents. This course tells you now, so you can watch for it: **it does not declare a winner.**
 
-:::reveal Joe Foster's 1982 FOSATU address is quoted in this course as "a prediction whose test results come later." What did he argue, and what later events test it? ||| Foster argued workers should fight apartheid with the popular movement but keep an independent workers' organisation, because a liberation movement is multi-class, and without their own base workers would be spoken for rather than by themselves, and could be set aside after victory. The test comes after 1994, when COSATU sat inside a formal alliance with the governing ANC: NUMSA and SAFTU later claimed Marikana and the alliance's record proved Foster right; COSATU points to the LRA and the minimum wage as proof the alliance delivered. The course shows both cases and declares no winner.
+:::reveal Joe Foster's 1982 FOSATU address is quoted in this course as "a prediction whose test results come later." What did he argue, and what later events test it? ||| Foster argued workers should fight apartheid with the popular movement but keep an independent workers' organization, because a liberation movement is multi-class, and without their own base workers would be spoken for rather than by themselves, and could be set aside after victory. The test comes after 1994, when COSATU sat inside a formal alliance with the governing ANC: NUMSA and SAFTU later claimed Marikana and the alliance's record proved Foster right; COSATU points to the LRA and the minimum wage as proof the alliance delivered. The course shows both cases and declares no winner.
 
 ## Sources
 - South African History Online. (n.d.). *The Federation of South African Trade Unions (FOSATU)*. https://sahistory.org.za/
@@ -688,15 +688,15 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
       slug: "sa-cosatu-ungovernable",
       title: "7 · COSATU, 1985: one federation, and a country made ungovernable",
       section: "Section 3 · Durban 1973 to COSATU 1985, rebuilding from the shop floor",
-      body: `By the mid-1980s South Africa was in open crisis: the townships had risen after the 1984 constitution excluded the Black majority yet again; the **United Democratic Front (UDF)**, a coalition of hundreds of civic, church, student and community organisations aligned with the banned ANC, was coordinating resistance; the state answered with **states of emergency** (1985, renewed 1986) that put soldiers in the townships and tens of thousands in detention. Into this, on **1 December 1985**, after four years of unity talks, walked a new federation.
+      body: `By the mid-1980s South Africa was in open crisis: the townships had risen after the 1984 constitution excluded the Black majority yet again; the **United Democratic Front (UDF)**, a coalition of hundreds of civic, church, student and community organizations aligned with the banned ANC, was coordinating resistance; the state answered with **states of emergency** (1985, renewed 1986) that put soldiers in the townships and tens of thousands in detention. Into this, on **1 December 1985**, after four years of unity talks, walked a new federation.
 
-**COSATU, the Congress of South African Trade Unions, launched in Durban with 33 unions and about 460,000 paid-up members** (South African History Online), on three organising principles: **one industry, one union; one country, one federation**; worker control (the FOSATU steward tradition); and (the decisive break with FOSATU's caution) **open engagement in the political struggle**. Its first president, **Elijah Barayi**, used the launch rally to give the government an ultimatum on the pass laws; its general secretary, **Jay Naidoo**, came from the FOSATU tradition. The largest affiliate was the **National Union of Mineworkers (NUM)**, founded in 1982, led by its founding general secretary **Cyril Ramaphosa**. Keep both of those names: NUM is one of the two unions at Marikana in Section 5, and Ramaphosa, by then a Lonmin director, is a figure the Farlam Commission had to make findings about, before he became the country's president.
+**COSATU, the Congress of South African Trade Unions, launched in Durban with 33 unions and about 460,000 paid-up members** (South African History Online), on three organizing principles: **one industry, one union; one country, one federation**; worker control (the FOSATU steward tradition); and (the decisive break with FOSATU's caution) **open engagement in the political struggle**. Its first president, **Elijah Barayi**, used the launch rally to give the government an ultimatum on the pass laws; its general secretary, **Jay Naidoo**, came from the FOSATU tradition. The largest affiliate was the **National Union of Mineworkers (NUM)**, founded in 1982, led by its founding general secretary **Cyril Ramaphosa**. Keep both of those names: NUM is one of the two unions at Marikana in Section 5, and Ramaphosa, by then a Lonmin director, is a figure the Farlam Commission had to make findings about, before he became the country's president.
 
-**What "engagement in the political struggle" meant in practice was scale.** COSATU turned the strike and the **stayaway**, a coordinated day when workers simply do not appear, across a whole city or country, into instruments no emergency decree could suppress: you can detain organisers, but you cannot arrest an absence, any more than Durban's managers could arrest a crowd. In **August 1987**, NUM led around **340,000 miners** (the union's figure; the Chamber of Mines counted fewer, the course gives you both sides' numbers) into a **three-week strike**, the largest in South African history to that point; it ended in defeat, with **tens of thousands dismissed** (SAHO). The state understood exactly what the federation was: in **May 1987, COSATU House, the federation's Johannesburg headquarters, was bombed**, an attack security police later confessed to in amnesty proceedings before the **Truth and Reconciliation Commission**. Political funerals, consumer boycotts, stayaways, strikes: by the late 1980s the resistance's slogan, make South Africa **ungovernable**, ran in large part on organised workers.
+**What "engagement in the political struggle" meant in practice was scale.** COSATU turned the strike and the **stayaway**, a coordinated day when workers simply do not appear, across a whole city or country, into instruments no emergency decree could suppress: you can detain organisers, but you cannot arrest an absence, any more than Durban's managers could arrest a crowd. In **August 1987**, NUM led around **340,000 miners** (the union's figure; the Chamber of Mines counted fewer, the course gives you both sides' numbers) into a **three-week strike**, the largest in South African history to that point; it ended in defeat, with **tens of thousands dismissed** (SAHO). The state understood exactly what the federation was: in **May 1987, COSATU House, the federation's Johannesburg headquarters, was bombed**, an attack security police later confessed to in amnesty proceedings before the **Truth and Reconciliation Commission**. Political funerals, consumer boycotts, stayaways, strikes: by the late 1980s the resistance's slogan, make South Africa **ungovernable**, ran in large part on organized workers.
 
-**And the alliance became formal.** COSATU aligned with the UDF and, in 1987, adopted the **Freedom Charter**, the ANC-aligned movement's founding document, settling the Foster debate, at least officially, in favour of full political engagement. When the ANC and SACP were unbanned on **2 February 1990**, the relationship took its lasting shape: the **Tripartite Alliance**, ANC, South African Communist Party, COSATU, which negotiated the transition and contested the **27 April 1994** election as one bloc. Union leaders moved wholesale into the new state: Ramaphosa chaired the constitutional negotiations; Naidoo entered Mandela's cabinet to run the Reconstruction and Development Programme. The federation that had been the hammer of the old state was now **inside** the new one.
+**And the alliance became formal.** COSATU aligned with the UDF and, in 1987, adopted the **Freedom Charter**, the ANC-aligned movement's founding document, settling the Foster debate, at least officially, in favor of full political engagement. When the ANC and SACP were unbanned on **2 February 1990**, the relationship took its lasting shape: the **Tripartite Alliance**, ANC, South African Communist Party, COSATU, which negotiated the transition and contested the **27 April 1994** election as one bloc. Union leaders moved wholesale into the new state: Ramaphosa chaired the constitutional negotiations; Naidoo entered Mandela's cabinet to run the Reconstruction and Development Programme. The federation that had been the hammer of the old state was now **inside** the new one.
 
-**Close this section by asking the anchor's Question 1 one more time.** Under a state where Black workers could not vote, COSATU's answer had been the anchor's line: *withdrawing your labour is the ballot you have.* After 27 April 1994 every worker had an actual ballot, and the federation had a seat at the government's own table. What that seat cost, and what it bought, is the rest of this course.
+**Close this section by asking the anchor's Question 1 one more time.** Under a state where Black workers could not vote, COSATU's answer had been the anchor's line: *withdrawing your labor is the ballot you have.* After 27 April 1994 every worker had an actual ballot, and the federation had a seat at the government's own table. What that seat cost, and what it bought, is the rest of this course.
 
 :::reveal COSATU launched in 1985 with the principle of open political engagement, adopted the Freedom Charter in 1987, and entered the Tripartite Alliance with the ANC and SACP. What did the federation gain by 1994, and what open question did it carry into the new era? ||| It gained the victory itself, its strikes and stayaways helped make apartheid ungovernable, plus a formal seat inside the new order: alliance partner of the governing party, its leaders (Ramaphosa, Naidoo) moving into the constitutional talks and cabinet. The open question was Joe Foster's from 1982: inside a multi-class alliance that now holds state power, who speaks for workers when the government their federation helped elect is also their bargaining counterpart, and, at Marikana, their police?
 
@@ -775,7 +775,7 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
             ],
             correctIndex: 1,
             explanation:
-              "After decades in which every strike taught 'you will be crushed,' Durban taught the opposite lesson, and built the organising infrastructure that grew into FOSATU.",
+              "After decades in which every strike taught 'you will be crushed,' Durban taught the opposite lesson, and built the organizing infrastructure that grew into FOSATU.",
             sourceLessonSlug: "sa-durban-1973",
           },
           {
@@ -783,7 +783,7 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
             options: [
               "Banning African unions permanently, on the grounds of internal state security",
               "Admitting African workers to the registered union system, since it can be regulated",
-              "Abolishing all unions, white and African alike, in favour of works committees",
+              "Abolishing all unions, white and African alike, in favor of works committees",
               "Handing the mines over to the unions to run under state and army supervision",
             ],
             correctIndex: 1,
@@ -867,7 +867,7 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "How does the course report the size of the August 1987 miners' strike?",
             options: [
-              "Exactly 500,000, the figure the government's own labour department gave at the time",
+              "Exactly 500,000, the figure the government's own labor department gave at the time",
               "NUM's figure (~340,000) alongside the Chamber of Mines' lower count, since they disagree",
               "It refuses to give any number, since neither side kept records of the 1987 strike",
               "Ten thousand, the one figure the Chamber of Mines and NUM both agreed on that year",
@@ -887,7 +887,7 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
             ],
             correctIndex: 1,
             explanation:
-              "The state understood exactly what the federation was, and the TRC record, not rumour, is how the course sources the attack.",
+              "The state understood exactly what the federation was, and the TRC record, not rumor, is how the course sources the attack.",
             sourceLessonSlug: "sa-cosatu-ungovernable",
           },
           {
@@ -924,9 +924,9 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
       slug: "sa-lra-1995",
       title: "8 · The most worker-friendly law on paper: LRA 66 of 1995",
       section: "Section 4 · After 1994, the paper and the reality",
-      body: `What does a labour law look like when the people who write it have just won a liberation struggle led, in large part, by unions? South Africa is the world's cleanest answer, because that is literally what happened. The post-1994 labour framework was negotiated at **NEDLAC**, the National Economic Development and Labour Council, launched in **February 1995**, a statutory chamber where organised labour, organised business, government and community organisations negotiate social and economic legislation **before** it reaches parliament. The unions were not lobbying from the corridor. They were at the drafting table.
+      body: `What does a labor law look like when the people who write it have just won a liberation struggle led, in large part, by unions? South Africa is the world's cleanest answer, because that is literally what happened. The post-1994 labor framework was negotiated at **NEDLAC**, the National Economic Development and Labour Council, launched in **February 1995**, a statutory chamber where organized labor, organized business, government and community organizations negotiate social and economic legislation **before** it reaches parliament. The unions were not lobbying from the corridor. They were at the drafting table.
 
-**Start at the top: the Constitution.** Section 23 of the **Constitution of the Republic of South Africa, 1996** guarantees everyone the right to fair labour practices; every worker the right to form and join a union, to organise, and **to strike**. Constitutionalising the strike itself is rare anywhere on earth, the direct imprint of a movement whose only ballot, for decades, had been the strike.
+**Start at the top: the Constitution.** Section 23 of the **Constitution of the Republic of South Africa, 1996** guarantees everyone the right to fair labor practices; every worker the right to form and join a union, to organize, and **to strike**. Constitutionalising the strike itself is rare anywhere on earth, the direct imprint of a movement whose only ballot, for decades, had been the strike.
 
 **Then the machine: the Labour Relations Act 66 of 1995**, in force November 1996, which replaced the apartheid framework wholesale. Its architecture answers each of the anchor's questions in the most worker-friendly register in this track:
 
@@ -971,7 +971,7 @@ Add the **Basic Conditions of Employment Act 75 of 1997** (hours, leave, notice)
 
 **The critique**, pressed by many economists, including the international growth panel that advised the National Treasury in the late 2000s (Centre for International Development, Harvard, 2008), runs: South Africa's bargaining system protects employed **insiders** at the expense of unemployed **outsiders**. Bargaining-council agreements negotiated by large firms and strong unions are **extended** to small firms that never sat at the table, raising their costs; strong dismissal protection makes hiring a risk; the whole apparatus, on this view, prices low-skilled outsiders out of their first job. On this reading, the LRA's very strengths help keep the queue outside long.
 
-**The unions' answer**, from COSATU's own submissions and congress documents, runs: mass unemployment predates the LRA and tracks causes no labour statute created, apartheid's deliberate destruction of Black education and its spatial planning that stranded workers far from work, capital-intensive industry, an economy still concentrated around the old mineral core. Wages at the bottom are too **low** to live on, not too high (Lesson 13's minimum-wage fight returns here); cutting protections would not conjure jobs, only cheapen the ones that exist, and the state's own experiments with wage subsidies and exemptions have not dented the queue. On this reading, blaming the LRA for unemployment mistakes the crime scene for the culprit.
+**The unions' answer**, from COSATU's own submissions and congress documents, runs: mass unemployment predates the LRA and tracks causes no labor statute created, apartheid's deliberate destruction of Black education and its spatial planning that stranded workers far from work, capital-intensive industry, an economy still concentrated around the old mineral core. Wages at the bottom are too **low** to live on, not too high (Lesson 13's minimum-wage fight returns here); cutting protections would not conjure jobs, only cheapen the ones that exist, and the state's own experiments with wage subsidies and exemptions have not dented the queue. On this reading, blaming the LRA for unemployment mistakes the crime scene for the culprit.
 
 **What should a student of this track do with a fight like this?** Exactly what you did with contested figures: refuse the false comfort of picking a side by temperament. Notice instead what **both** sides concede: that the queue is real, that it is enormous, and that the constituency of the unemployed sits outside the bargaining system, and largely outside the federation whose alliance governs. Hold that last clause. It is the quiet structural fact under everything in Sections 5 and 6.
 
@@ -985,22 +985,22 @@ Add the **Basic Conditions of Employment Act 75 of 1997** (hours, leave, notice)
         {
           prompt: "Name four worker-facing features of the LRA 66 of 1995.",
           answer:
-            "(1) Coverage of nearly all employees, no farm/domestic carve-out; (2) organisational rights including statutory shop stewards; (3) sectoral bargaining councils with extension, plus protected strikes; (4) the CCMA, a free and informal disputes tribunal handling on the order of 150,000+ referrals a year (CCMA annual reports).",
+            "(1) Coverage of nearly all employees, no farm/domestic carve-out; (2) organizational rights including statutory shop stewards; (3) sectoral bargaining councils with extension, plus protected strikes; (4) the CCMA, a free and informal disputes tribunal handling on the order of 150,000+ referrals a year (CCMA annual reports).",
         },
         {
           prompt: "What is NEDLAC, and why does it matter for Question 3?",
           answer:
-            "The National Economic Development and Labour Council (launched February 1995): a statutory chamber where labour, business, government and community negotiate legislation before parliament. It puts unions at the drafting table itself, the highest bargaining 'level' anywhere in this track.",
+            "The National Economic Development and Labour Council (launched February 1995): a statutory chamber where labor, business, government and community negotiate legislation before parliament. It puts unions at the drafting table itself, the highest bargaining 'level' anywhere in this track.",
         },
       ],
     },
     {
       slug: "sa-labour-broking",
-      title: "10 · Labour broking: the outside-the-category move returns",
+      title: "10 · Labor broking: the outside-the-category move returns",
       section: "Section 4 · After 1994, the paper and the reality",
-      body: `By now you can smell this track's signature move from a page away. The United States does it with **misclassification**, call the worker an "independent contractor" and the NLRA no longer sees her. Mexico did it with the **protection contract**, a union that belongs to the employer. Poland does it with the **junk contract**, a civil-law form that is not "employment." Here is South Africa's version, and the rhyme is exact: **labour broking**.
+      body: `By now you can smell this track's signature move from a page away. The United States does it with **misclassification**, call the worker an "independent contractor" and the NLRA no longer sees her. Mexico did it with the **protection contract**, a union that belongs to the employer. Poland does it with the **junk contract**, a civil-law form that is not "employment." Here is South Africa's version, and the rhyme is exact: **labor broking**.
 
-**The mechanics.** The LRA's own **section 198** recognises the **"temporary employment service"** (TES), the labour broker. A broker supplies workers to a client company; the workers do the client's work, on the client's premises, under the client's supervision, but in law, **the broker, not the client, is the employer**. Feel what that single designation moves:
+**The mechanics.** The LRA's own **section 198** recognises the **"temporary employment service"** (TES), the labor broker. A broker supplies workers to a client company; the workers do the client's work, on the client's premises, under the client's supervision, but in law, **the broker, not the client, is the employer**. Feel what that single designation moves:
 
 - The client's **bargaining council agreement**, its union recognition, its negotiated wages? They attach to the client's *employees*, and on paper, you are not one.
 - Dismissal protection? The client does not have to dismiss you; it just **ends the assignment** and the broker "has nothing for you this week."
@@ -1008,13 +1008,13 @@ Add the **Basic Conditions of Employment Act 75 of 1997** (hours, leave, notice)
 
 The same building the LRA built, with a side door that lets the work in while leaving the worker outside. **How many workers?** Here the course does what it did for Durban's crowds and the 1987 strike: refuses to invent a number. Industry and union estimates in the early 2010s ranged from several hundred thousand to around a million placed workers, and the count was itself a weapon in the political fight, the biggest private estimates came from the industry's own consultants (contested figures, presented as contested).
 
-**The fight.** COSATU campaigned from the late 2000s for the **total banning** of labour broking, describing it in its own campaign language as a modern form of slavery, that is the federation's characterisation, quoted here as its position, not adopted as this course's. Business and the broking industry defended the TES model as flexibility that creates entry-level jobs. The compromise arrived as the **Labour Relations Amendment Act 6 of 2014**: its new **section 198A** provides that a placed worker earning **below a statutory earnings threshold** who works for a client for more than **three months** is **deemed to be the employee of the client**. Not a ban, a time-and-income fuse on the side door.
+**The fight.** COSATU campaigned from the late 2000s for the **total banning** of labor broking, describing it in its own campaign language as a modern form of slavery, that is the federation's characterisation, quoted here as its position, not adopted as this course's. Business and the broking industry defended the TES model as flexibility that creates entry-level jobs. The compromise arrived as the **Labour Relations Amendment Act 6 of 2014**: its new **section 198A** provides that a placed worker earning **below a statutory earnings threshold** who works for a client for more than **three months** is **deemed to be the employee of the client**. Not a ban, a time-and-income fuse on the side door.
 
 **Then the courts closed a loophole in the fuse.** Employers argued the deeming created a *dual* employment, broker and client both, leaving brokers usefully in the chain. In ***Assign Services (Pty) Ltd v NUMSA*** [2018] ZACC 22 (26 July 2018), the **Constitutional Court** held that after three months the client is the **sole** employer for LRA purposes. Note who took that case to the top court and won: **NUMSA**, the union you are about to watch be expelled from COSATU in Section 6. Outside-the-category workers were being defended most aggressively by the federation's most rebellious affiliate; that is not a coincidence, and Section 6 explains why.
 
 **The honest limits, dated.** The deeming applies only *below* the earnings threshold and only *after* three months; enforcement runs worker by worker through the CCMA; broking persists above the threshold, inside the three-month window, and wherever workers do not know or cannot afford to claim their rights (status as of the mid-2020s). The side door is narrower than it was in 2010. It is not closed.
 
-:::reveal Name the track's four-country rhyme that this lesson completes, and state what single legal designation does the work in the South African version. ||| The rhyme: US misclassification ("independent contractor"), Mexico's protection contract (the employer's own union), Poland's junk contracts (civil-law forms outside the Labour Code), and South Africa's labour broking. In the SA version the work is done by LRA s 198's designation of the temporary employment service, the broker, as the employer: the worker does the client's work on the client's premises, but the client's agreements, wages and dismissal protections attach to "employees," which on paper she is not. The 2014 s 198A deeming (below-threshold, 3 months) and Assign Services (ZACC, 2018, sole-employer) narrowed the door without closing it.
+:::reveal Name the track's four-country rhyme that this lesson completes, and state what single legal designation does the work in the South African version. ||| The rhyme: US misclassification ("independent contractor"), Mexico's protection contract (the employer's own union), Poland's junk contracts (civil-law forms outside the Labour Code), and South Africa's labor broking. In the SA version the work is done by LRA s 198's designation of the temporary employment service, the broker, as the employer: the worker does the client's work on the client's premises, but the client's agreements, wages and dismissal protections attach to "employees," which on paper she is not. The 2014 s 198A deeming (below-threshold, 3 months) and Assign Services (ZACC, 2018, sole-employer) narrowed the door without closing it.
 
 ## Sources
 - Republic of South Africa. (2014). *Labour Relations Amendment Act 6 of 2014* (s 198A). https://www.gov.za/documents/labour-relations-amendment-act
@@ -1044,10 +1044,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What is NEDLAC?",
             options: [
-              "A mining safety regulator created under the 1996 constitution's labour clause",
-              "A statutory council where labour, business, government and community negotiate laws",
-              "South Africa's largest labour broker, licensed by the national Department of Labour",
-              "The ANC's economics committee, which drafts the governing party's labour policy",
+              "A mining safety regulator created under the 1996 constitution's labor clause",
+              "A statutory council where labor, business, government and community negotiate laws",
+              "South Africa's largest labor broker, licensed by the national Department of Labour",
+              "The ANC's economics committee, which drafts the governing party's labor policy",
             ],
             correctIndex: 1,
             explanation:
@@ -1175,7 +1175,7 @@ The same building the LRA built, with a side door that lets the work in while le
             prompt: "Under LRA s 198, who is a placed worker's employer on paper?",
             options: [
               "The client company whose work she does and whose supervisor directs her",
-              "The temporary employment service, the labour broker, not the client",
+              "The temporary employment service, the labor broker, not the client",
               "The bargaining council for the sector in which she has been placed",
               "The Department of Labour, which registers every placed worker",
             ],
@@ -1200,10 +1200,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What did section 198A (Labour Relations Amendment Act 6 of 2014) provide?",
             options: [
-              "A total ban on labour broking, with a two-year phase-out for the existing contracts",
+              "A total ban on labor broking, with a two-year phase-out for the existing contracts",
               "That a placed worker below the earnings threshold becomes the client's employee at three months",
               "That brokers must pay double the wage the client company pays its own permanent staff",
-              "That labour broking is limited to mining, construction and commercial farming alone",
+              "That labor broking is limited to mining, construction and commercial farming alone",
             ],
             correctIndex: 1,
             explanation:
@@ -1213,9 +1213,9 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What did the Constitutional Court hold in Assign Services v NUMSA (2018)?",
             options: [
-              "That labour broking is unconstitutional and that section 198 is invalid",
+              "That labor broking is unconstitutional and that section 198 is invalid",
               "That after three months the client is the SOLE employer, not a dual employer",
-              "That the CCMA has no jurisdiction over disputes involving labour brokers",
+              "That the CCMA has no jurisdiction over disputes involving labor brokers",
               "That the earnings threshold is invalid because the minister set it alone",
             ],
             correctIndex: 1,
@@ -1229,7 +1229,7 @@ The same building the LRA built, with a side door that lets the work in while le
               "It gives an exact count of 1,032,000 placed workers, taken from a 2015 survey",
               "It refuses to invent one: estimates ran from several hundred thousand to a million",
               "It says the number fell to zero after the 2018 Constitutional Court ruling",
-              "It cites the CCMA's official census of every registered labour broker in 2016",
+              "It cites the CCMA's official census of every registered labor broker in 2016",
             ],
             correctIndex: 1,
             explanation:
@@ -1252,7 +1252,7 @@ The same building the LRA built, with a side door that lets the work in while le
 
 **The place and the dispute.** In August 2012, **Lonmin plc** operated platinum mines at **Marikana**, near Rustenburg in North West province; it was then the world's third-largest platinum producer. On **9 August 2012**, thousands of **rock drill operators**, the men who hold the drills at the rock face, among the hardest jobs underground, began an **unprotected (wildcat) strike**, outside any union's authorisation, demanding a take-home wage of **R12,500 a month**.
 
-**The union context, essential, and easy to get wrong.** The recognised majority union at Lonmin was the **National Union of Mineworkers (NUM)**, COSATU's founding giant, the union of Section 3. But NUM's standing among Lonmin's lowest-paid underground workers had collapsed; many saw it as too close to management and too far from the rock face. The **Association of Mineworkers and Construction Union (AMCU)**, a rival founded in 1998 by **Joseph Mathunjwa** after his expulsion from NUM, was recruiting hard on the platinum belt. The strikers, though, had launched the strike **themselves**, initially outside both unions; the two organisations then contested furiously for the strikers' allegiance. Within a year AMCU had displaced NUM as the majority union across much of the platinum belt, the first major crack in COSATU's world, and Section 6 begins there.
+**The union context, essential, and easy to get wrong.** The recognized majority union at Lonmin was the **National Union of Mineworkers (NUM)**, COSATU's founding giant, the union of Section 3. But NUM's standing among Lonmin's lowest-paid underground workers had collapsed; many saw it as too close to management and too far from the rock face. The **Association of Mineworkers and Construction Union (AMCU)**, a rival founded in 1998 by **Joseph Mathunjwa** after his expulsion from NUM, was recruiting hard on the platinum belt. The strikers, though, had launched the strike **themselves**, initially outside both unions; the two organizations then contested furiously for the strikers' allegiance. Within a year AMCU had displaced NUM as the majority union across much of the platinum belt, the first major crack in COSATU's world, and Section 6 begins there.
 
 **The week before, told plainly.** Between **10 and 15 August**, ten people were killed around Marikana: among them **two Lonmin security guards**, **two police officers**, and **six others**, including striking and non-striking workers and NUM members (Marikana Commission report, 2015, the report documents each death). On **11 August**, shots were fired when strikers marched on the NUM office and two strikers were wounded; the commission found that this event pushed many strikers to arm themselves with traditional weapons, spears, clubs, machetes, and to gather on a rocky hill near the Nkaneng shack settlement: **the koppie**. By mid-week, thousands were camped there. Police negotiations, and separate approaches by both unions' leaders, failed to end the standoff.
 
@@ -1283,12 +1283,12 @@ The same building the LRA built, with a side door that lets the work in while le
       slug: "sa-farlam",
       title: "12 · What the Farlam Commission found, and what it did not",
       section: "Section 5 · Marikana, taught from the record",
-      body: `A week after the shootings, President Jacob Zuma appointed a judicial commission of inquiry under retired judge **Ian Farlam**. It sat for nearly **300 hearing days**, and its report was handed to the President on **31 March 2015** and released publicly on **25 June 2015**. That report is the closest thing to an authoritative record that exists, and this lesson is organised around a distinction the commentary constantly blurs: what the commission **found**, and what it **did not find**. Learn the distinction itself, it is how you should read every official inquiry you ever meet.
+      body: `A week after the shootings, President Jacob Zuma appointed a judicial commission of inquiry under retired judge **Ian Farlam**. It sat for nearly **300 hearing days**, and its report was handed to the President on **31 March 2015** and released publicly on **25 June 2015**. That report is the closest thing to an authoritative record that exists, and this lesson is organized around a distinction the commentary constantly blurs: what the commission **found**, and what it **did not find**. Learn the distinction itself, it is how you should read every official inquiry you ever meet.
 
 **What the commission found** (Marikana Commission of Inquiry report, 2015):
 
 - **On the police operation:** the decision, taken on the evening of 15 August, to disarm and disperse the strikers by force the next day if they did not comply was a **defective decision**, taken without proper planning and against expert advice available to the police; the operation should not have been launched as and when it was. The commission also found that the police account given afterwards was in material respects **not truthful**, and that SAPS had withheld and, in part, constructed evidence, a finding about the *cover-up*, distinct from the shootings themselves. It recommended that a team of investigators and the Directorate for Priority Crime Investigation determine **individual criminal liability** at scenes 1 and 2, and that an inquiry be held into the **fitness for office of the National Commissioner of Police**, Riah Phiyega.
-- **On Lonmin:** the company failed to use its best endeavours to resolve the dispute, failed to respond appropriately to the escalating danger to its employees, and had failed to meet housing commitments made under its social and labour plan, a failure the commission linked to the conditions from which the strike grew.
+- **On Lonmin:** the company failed to use its best endeavours to resolve the dispute, failed to respond appropriately to the escalating danger to its employees, and had failed to meet housing commitments made under its social and labor plan, a failure the commission linked to the conditions from which the strike grew.
 - **On the unions:** both **NUM and AMCU** failed to exercise effective control over their members, and both contributed, in different ways, to an environment in which the confrontation grew, findings each union rejects in whole or in part, which this course simply records.
 - **On Cyril Ramaphosa:** by 2012 the former NUM general secretary was a Lonmin non-executive director; in the days before 16 August he had sent emails urging that the violence (ten people were already dead) be treated as **"dastardly criminal"** conduct requiring **"concomitant action"** by the authorities. Families and political critics accused him of procuring the massacre. The commission **rejected that accusation**: it found the attacks on him groundless on the evidence, reading his intervention as an attempt to get the authorities to prevent further deaths, and recommended no action against him. The accusation has remained alive in South African politics ever since, repeated in election seasons, denied by him, unresolved in public argument, and this course neither revives nor buries it: **the commission's finding is the record, and the record is what is taught.**
 
@@ -1310,7 +1310,7 @@ The same building the LRA built, with a side door that lets the work in while le
         {
           prompt: "Who was striking at Marikana, for what, and under whose authorisation?",
           answer:
-            "Rock drill operators at Lonmin's platinum mines began an unprotected (wildcat) strike on 9 August 2012, demanding R12,500 a month take-home, launched by the workers themselves, initially outside both NUM (the recognised majority union, whose standing had collapsed) and the rival AMCU, which was recruiting hard.",
+            "Rock drill operators at Lonmin's platinum mines began an unprotected (wildcat) strike on 9 August 2012, demanding R12,500 a month take-home, launched by the workers themselves, initially outside both NUM (the recognized majority union, whose standing had collapsed) and the rival AMCU, which was recruiting hard.",
         },
         {
           prompt: "What is the documented toll of the Marikana events, per the commission's report?",
@@ -1356,8 +1356,8 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What was the union situation at Lonmin in August 2012?",
             options: [
-              "No unions were present at Lonmin, which had never recognised any union at all",
-              "NUM was the recognised majority union but had lost standing with the lowest-paid workers",
+              "No unions were present at Lonmin, which had never recognized any union at all",
+              "NUM was the recognized majority union but had lost standing with the lowest-paid workers",
               "AMCU held a closed-shop agreement covering the whole of the platinum belt by 2012",
               "COSATU had expelled NUM, leaving the platinum shafts without any union at all",
             ],
@@ -1486,7 +1486,7 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "Which of these is something the commission did NOT do?",
             options: [
-              "Criticise the police operation and the planning behind the deployment",
+              "Criticize the police operation and the planning behind the deployment",
               "Convict individuals or award compensation; an inquiry is not a court",
               "Recommend an inquiry into the National Commissioner's fitness for office",
               "Make findings about the conduct of NUM and AMCU during the strike",
@@ -1532,7 +1532,7 @@ The same building the LRA built, with a side door that lets the work in while le
       section: "Section 6 · The fractures, and the question",
       body: `Joe Foster's 1982 question, *what happens to workers' independent voice inside a multi-class alliance in power?*, stopped being a seminar topic in the decades after 1994, and this lesson shows you its test running in real time. Everything here is a live fight in South African politics. The course's job is to give you **each side's case, from its own documents**, and no verdict.
 
-**The friction, in brief.** From inside the Tripartite Alliance, COSATU fought its own government repeatedly: it opposed the market-oriented **GEAR** macroeconomic strategy the government adopted in 1996 without alliance consensus (COSATU congress resolutions of the period), and mounted general strikes over privatisation and, later, labour broking and road tolls. The federation backed **Jacob Zuma's** rise to the ANC presidency at Polokwane in 2007, then spent his presidency increasingly divided over corruption and, after Marikana, over what the alliance was for. **Marikana radicalised the argument**: the killings happened under an ANC-led government; the union bleeding members at Marikana (NUM) was COSATU's anchor affiliate; and the federation's metalworkers drew the conclusion out loud.
+**The friction, in brief.** From inside the Tripartite Alliance, COSATU fought its own government repeatedly: it opposed the market-oriented **GEAR** macroeconomic strategy the government adopted in 1996 without alliance consensus (COSATU congress resolutions of the period), and mounted general strikes over privatisation and, later, labor broking and road tolls. The federation backed **Jacob Zuma's** rise to the ANC presidency at Polokwane in 2007, then spent his presidency increasingly divided over corruption and, after Marikana, over what the alliance was for. **Marikana radicalised the argument**: the killings happened under an ANC-led government; the union bleeding members at Marikana (NUM) was COSATU's anchor affiliate; and the federation's metalworkers drew the conclusion out loud.
 
 **The rupture, dated.** In **December 2013**, the National Union of Metalworkers of South Africa, **NUMSA**, by then COSATU's largest affiliate with around 340,000 members, resolved at a special national congress that it would **not campaign for the ANC** in the 2014 elections, called on COSATU to break from the alliance, and set out to build a "united front" of workers and communities (NUMSA special national congress resolutions, December 2013). For a federation whose constitution and practice were built on the alliance, this was secession in place. On **8 November 2014**, COSATU's central executive committee voted **33 to 24** to **expel NUMSA**. The federation's general secretary, **Zwelinzima Vavi**, who had opposed the expulsion, was himself expelled in **March 2015**. In **April 2017**, NUMSA, Vavi and others launched a rival federation: the **South African Federation of Trade Unions (SAFTU)**, claiming roughly **700,000 members across about two dozen unions** at its founding congress (SAFTU founding documents, 2017), on a declared platform of independence from political parties, "independent but not apolitical," in its own founding formula.
 
@@ -1540,7 +1540,7 @@ The same building the LRA built, with a side door that lets the work in while le
 
 **COSATU's case for staying in** (from its congress documents and public positions): the alliance is not capture but **leverage**. The LRA itself, NEDLAC's standing seat at the legislative table, and the **National Minimum Wage Act 9 of 2018**, in force 1 January 2019 at R20 an hour, covering some six million workers previously below it, negotiated through NEDLAC with a former NUM general secretary, by then deputy president, chairing the process, are, on this account, what a federation gets **because** it is inside. Walk out, and you trade a seat at the table for a placard outside the window. Better to fight, as COSATU says it does, *within*.
 
-**NUMSA and SAFTU's case for leaving** (from the December 2013 resolutions and SAFTU's founding declaration): the alliance has made the federation **an amen corner of the governing party**, Foster's warning realised. Exhibit one is **Marikana**: a massacre of striking mineworkers under an ANC government, with the alliance federation, on this account, unable to say plainly whose side it was on. The workers COSATU now speaks for are disproportionately public servants, the composition of the federation has shifted toward public-sector unions, whose employer is the very state the alliance runs, while the platinum belt, the brokered, and the unemployed drifted outside. Independence, on this account, is not a luxury; it is the precondition of being a union at all.
+**NUMSA and SAFTU's case for leaving** (from the December 2013 resolutions and SAFTU's founding declaration): the alliance has made the federation **an amen corner of the governing party**, Foster's warning realized. Exhibit one is **Marikana**: a massacre of striking mineworkers under an ANC government, with the alliance federation, on this account, unable to say plainly whose side it was on. The workers COSATU now speaks for are disproportionately public servants, the composition of the federation has shifted toward public-sector unions, whose employer is the very state the alliance runs, while the platinum belt, the brokered, and the unemployed drifted outside. Independence, on this account, is not a luxury; it is the precondition of being a union at all.
 
 **And notice what each side's strongest evidence is.** The minimum wage is a real statute with a real date; Marikana is a real massacre with a real commission report. **Both exhibits are genuine.** That is why this fight is live, why serious people stand on both sides of it, and why this course, which is not South African, tells you the arguments and refuses to hand you the answer as if it owned one.
 
@@ -1572,9 +1572,9 @@ The same building the LRA built, with a side door that lets the work in while le
 
 **The case that South Africa rhymes with Poland.** A liberation-era federation entered government's orbit; its most famous unionist became the country's president by way of a boardroom; its anchor mining affiliate was gutted from below at Marikana by workers who no longer felt spoken for; its rivals now include a federation founded on the accusation that the alliance swallowed the movement. Meanwhile the largest class of excluded people, the unemployed third, stands outside every structure the movement built. Squint, and you can see Gdańsk: the movement won the state, and the workplace slipped.
 
-**The case that it does not rhyme, read it just as carefully.** South African union density has not collapsed Polish-style: measured density has moved between roughly **a quarter and three in ten** of employees since the 1990s, with figures varying by survey and year (ILO and OECD/AIAS compilations), several times Poland's ~9%, and the course flags the variance rather than pretending a decimal. Bargaining councils still set wages across whole sectors; NEDLAC still gives federations a statutory seat in lawmaking no Polish union ever held; the minimum wage of 2018 is a workplace victory won *from* the state, thirty years after the transition. And where Solidarność's successor unions faded from the shop floor, South Africa's fracture produced not decline into irrelevance but **rival federations competing to organise**, AMCU on the platinum belt, SAFTU beside COSATU, which is conflict, but conflict is not absence. A fair reader can hold that South Africa's movement remains among the strongest in the global South.
+**The case that it does not rhyme, read it just as carefully.** South African union density has not collapsed Polish-style: measured density has moved between roughly **a quarter and three in ten** of employees since the 1990s, with figures varying by survey and year (ILO and OECD/AIAS compilations), several times Poland's ~9%, and the course flags the variance rather than pretending a decimal. Bargaining councils still set wages across whole sectors; NEDLAC still gives federations a statutory seat in lawmaking no Polish union ever held; the minimum wage of 2018 is a workplace victory won *from* the state, thirty years after the transition. And where Solidarność's successor unions faded from the shop floor, South Africa's fracture produced not decline into irrelevance but **rival federations competing to organize**, AMCU on the platinum belt, SAFTU beside COSATU, which is conflict, but conflict is not absence. A fair reader can hold that South Africa's movement remains among the strongest in the global South.
 
-**So the honest answer is: the question is open, and the four questions are how you keep watching it.** Q1 (*who may organise?*): everyone, constitutionally, the struggle's cleanest win. Q2 (*who is excluded?*): the unemployed and the brokered, the queue outside, growing. Q3 (*who bargains, at what level?*): councils, NEDLAC, and a federation bargaining with a government it helps elect, the arrangement whose price and payoff Sections 5 and 6 laid out without settling. Q4 (*what happens if you try?*): protected strikes on paper; Marikana on the record; watch this one hardest of all.
+**So the honest answer is: the question is open, and the four questions are how you keep watching it.** Q1 (*who may organize?*): everyone, constitutionally, the struggle's cleanest win. Q2 (*who is excluded?*): the unemployed and the brokered, the queue outside, growing. Q3 (*who bargains, at what level?*): councils, NEDLAC, and a federation bargaining with a government it helps elect, the arrangement whose price and payoff Sections 5 and 6 laid out without settling. Q4 (*what happens if you try?*): protected strikes on paper; Marikana on the record; watch this one hardest of all.
 
 **What you take with you.** From South Africa, the track's bluntest lesson about categories: **a right belongs to a category, and whoever writes the category decides who has the right**, whether the category is "employee, not pass-bearing" in 1924 or "employee of the client, after three months, below the threshold" in 2015. And a discipline: when a movement's history is still being fought over, in courtrooms, at party congresses, in election seasons, teach the record, date the claims, steelman the sides, and leave the verdict to the people who must live it. For what to do about *your own* workplace on Monday, take **Know Your Rights at Work**; for the frame this course ran on, the anchor; for the mirror, Poland. The track's next stops widen the lens again.
 
@@ -1686,14 +1686,14 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What compositional shift inside COSATU do its critics point to?",
             options: [
-              "A shift toward farm workers, organised after the 2012 Western Cape strikes",
+              "A shift toward farm workers, organized after the 2012 Western Cape strikes",
               "A shift toward public-sector unions, whose employer is the state the alliance runs",
               "A shift toward foreign members recruited across the whole SADC region",
               "A shift toward managers, who joined the affiliates in numbers after 1994",
             ],
             correctIndex: 1,
             explanation:
-              "Part of the leavers' case that the federation's centre of gravity moved away from the workers who broke at Marikana.",
+              "Part of the leavers' case that the federation's center of gravity moved away from the workers who broke at Marikana.",
             sourceLessonSlug: "sa-fractures",
           },
           {
@@ -1712,7 +1712,7 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What is 'the Poland question' as applied to South Africa?",
             options: [
-              "Whether South Africa should copy Poland's post-1989 privatisation programme",
+              "Whether South Africa should copy Poland's post-1989 privatisation program",
               "Whether a movement that helped win the state has, like Poland's, lost the workplace",
               "Whether Poland should adopt the LRA and South Africa's bargaining councils",
               "Whether martial law of the kind Poland declared could happen in South Africa",
@@ -1777,7 +1777,7 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "Which companion courses does the final lesson point to, and for what?",
             options: [
-              "No other courses exist; this is the only labour history course here",
+              "No other courses exist; this is the only labor history course here",
               "Know Your Rights at Work, the anchor's four-questions frame, and Poland",
               "Only the Germany course, for its works councils and codetermination",
               "A course on South African cuisine and the mining compound kitchens",
