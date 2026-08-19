@@ -182,7 +182,7 @@ Library of Congress. (n.d.). *City directories*. https://guides.loc.gov/city-dir
             ],
             correctIndex: 0,
             explanation:
-              "Resolution is the point: a decennial snapshot against an annual one. They were commercial products, so they are patchy and exclude people the publisher did not think worth listing, which is the opposite of the third option.",
+              "Resolution is the point: a decennial snapshot against an annual one. Directories were commercial products, so far from listing every resident they are patchy and exclude anyone the publisher did not think worth listing.",
             sourceLessonSlug: "trp-vital-records-and-directories",
           },
           {

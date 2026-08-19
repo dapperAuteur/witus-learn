@@ -114,9 +114,12 @@ import { INTRO_TO_CITIZEN_SCIENCE_COURSE } from "./data/intro-to-citizen-science
 import { THE_RIVER_AND_THE_WATERSHED_COURSE } from "./data/the-river-and-the-watershed-course";
 import { HOW_TO_RESEARCH_COURSE } from "./data/how-to-research-course";
 import { ARCHIVES_AND_FINDING_AIDS_COURSE } from "./data/archives-and-finding-aids-course";
+import { DOCUMENTS_AGAINST_PEOPLE_COURSE } from "./data/documents-against-people-course";
 import { FACT_CHECKING_COURSE } from "./data/fact-checking-course";
 import { RESEARCH_AS_A_JOB_COURSE } from "./data/research-as-a-job-course";
+import { RESEARCHER_CAPSTONE_COURSE } from "./data/researcher-capstone-course";
 import { SEARCH_CRAFT_COURSE } from "./data/search-craft-course";
+import { THE_RESEARCH_FILE_COURSE } from "./data/the-research-file-course";
 import { TRACING_A_PERSON_COURSE } from "./data/tracing-a-person-course";
 import { RIGHTS_PERMISSIONS_CLEARANCES_COURSE } from "./data/rights-permissions-clearances-course";
 // Here Be Dragons (plans/58), course 1 of 5. Culture & History, grades 9-12.
@@ -802,6 +805,60 @@ async function main() {
     seriesOrder: 6,
     seriesCode: "RSRCH",
     seriesPosition: "05",
+  });
+
+  // RSRCH-06. Deliberately NOT a duplicate of the oral-history course, which teaches how to conduct
+  // and treat an interview. This is the different problem of ADJUDICATING between sources of
+  // different kinds when they conflict, which is a research decision rather than an interviewing
+  // skill. Its argument: the instinct that paper beats a person is wrong often enough to be
+  // dangerous, and so is the reverse.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "documents-against-people",
+    course: DOCUMENTS_AGAINST_PEOPLE_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "researcher",
+    seriesTitle: "The Researcher",
+    seriesOrder: 7,
+    seriesCode: "RSRCH",
+    seriesPosition: "06",
+  });
+
+  // RSRCH-07. RSRCH-00 lesson 5 makes the ARGUMENT that the file is the product; this is the
+  // OPERATIONS. Capture discipline, citations that are a route back rather than a formality,
+  // grading claims rather than documents, the memo, and the handover.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "the-research-file",
+    course: THE_RESEARCH_FILE_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "researcher",
+    seriesTitle: "The Researcher",
+    seriesOrder: 8,
+    seriesCode: "RSRCH",
+    seriesPosition: "07",
+  });
+
+  // RSRCH-99, the capstone. A capstone course teaches almost nothing new on purpose: its job is to
+  // make the learner do the thing end to end with enough scaffolding to finish. Assessed on whether
+  // a STRANGER could work from the file, never on how much was found, which is the track's whole
+  // thesis made operational.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "researcher-capstone",
+    course: RESEARCHER_CAPSTONE_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "researcher",
+    seriesTitle: "The Researcher",
+    seriesOrder: 9,
+    seriesCode: "RSRCH",
+    seriesPosition: "99",
   });
 
   // ── Science & Math, Wave 1 ───────────────────────────────────────────────────────────────────
