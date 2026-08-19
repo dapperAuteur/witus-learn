@@ -113,6 +113,8 @@ import { HOW_WE_KNOW_WHATS_OUT_THERE_COURSE } from "./data/how-we-know-whats-out
 import { INTRO_TO_CITIZEN_SCIENCE_COURSE } from "./data/intro-to-citizen-science-course";
 import { THE_RIVER_AND_THE_WATERSHED_COURSE } from "./data/the-river-and-the-watershed-course";
 import { HOW_TO_RESEARCH_COURSE } from "./data/how-to-research-course";
+import { RESEARCH_AS_A_JOB_COURSE } from "./data/research-as-a-job-course";
+import { RIGHTS_PERMISSIONS_CLEARANCES_COURSE } from "./data/rights-permissions-clearances-course";
 // Here Be Dragons (plans/58), course 1 of 5. Culture & History, grades 9-12.
 import { MONSTERS_AT_THE_EDGE_OF_THE_MAP_COURSE } from "./data/monsters-at-the-edge-of-the-map-course";
 import { GIANTS_DRAGONS_AND_THE_BONES_COURSE } from "./data/giants-dragons-and-the-bones-course";
@@ -674,6 +676,55 @@ async function main() {
     course: HOW_TO_RESEARCH_COURSE,
     category: "Study Skills",
     navigationMode: "linear",
+  });
+
+  // ── The Researcher track (RSRCH) ─────────────────────────────────────────────────────────────
+  // Plan: plans/69-researcher-track.md. A PROFESSIONAL track (BAM, 2026-08-11), the fourth of four
+  // documentation paths alongside Documentarian, Storytelling/Documentary and Reporter (plans/68).
+  //
+  // The idea the whole track turns on: `how-to-research` (Study Skills) ends when YOU are satisfied;
+  // this ends when SOMEBODY ELSE can use what you found without repeating your work. That is the
+  // difference between research as a habit and research as a job, and it is why every course here is
+  // about the handoff.
+  //
+  // The category is shared with the Reporter track when that lands, deliberately: both are
+  // professional documentation trades aimed at working adults rather than at the K-12 standards
+  // audience, and two near-identical categories would be worse than one honest one.
+  await db
+    .insert(schema.courseCategories)
+    .values({ tenantId: learnWitus, name: "Research & Reporting", sortOrder: 16 })
+    .onConflictDoNothing();
+
+  // RSRCH-00, start-here.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "research-as-a-job",
+    course: RESEARCH_AS_A_JOB_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "researcher",
+    seriesTitle: "The Researcher",
+    seriesOrder: 1,
+    seriesCode: "RSRCH",
+    seriesPosition: "00",
+  });
+
+  // RSRCH-05. Every failure mode in it is one this catalog actually hit while sourcing its own
+  // images in August 2026 (plans/63), which is why it teaches the SHAPE of the mistakes rather than
+  // the rules: the rules are the easy part.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "rights-permissions-and-clearances",
+    course: RIGHTS_PERMISSIONS_CLEARANCES_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "researcher",
+    seriesTitle: "The Researcher",
+    seriesOrder: 6,
+    seriesCode: "RSRCH",
+    seriesPosition: "05",
   });
 
   // ── Science & Math, Wave 1 ───────────────────────────────────────────────────────────────────
