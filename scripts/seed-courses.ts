@@ -113,6 +113,16 @@ import { HOW_WE_KNOW_WHATS_OUT_THERE_COURSE } from "./data/how-we-know-whats-out
 import { INTRO_TO_CITIZEN_SCIENCE_COURSE } from "./data/intro-to-citizen-science-course";
 import { THE_RIVER_AND_THE_WATERSHED_COURSE } from "./data/the-river-and-the-watershed-course";
 import { HOW_TO_RESEARCH_COURSE } from "./data/how-to-research-course";
+import { ARCHIVES_AND_FINDING_AIDS_COURSE } from "./data/archives-and-finding-aids-course";
+import { DOCUMENTS_AGAINST_PEOPLE_COURSE } from "./data/documents-against-people-course";
+import { GENEALOGY_SELF_AND_COMMUNITY_COURSE } from "./data/genealogy-self-and-community-course";
+import { FACT_CHECKING_COURSE } from "./data/fact-checking-course";
+import { RESEARCH_AS_A_JOB_COURSE } from "./data/research-as-a-job-course";
+import { RESEARCHER_CAPSTONE_COURSE } from "./data/researcher-capstone-course";
+import { SEARCH_CRAFT_COURSE } from "./data/search-craft-course";
+import { THE_RESEARCH_FILE_COURSE } from "./data/the-research-file-course";
+import { TRACING_A_PERSON_COURSE } from "./data/tracing-a-person-course";
+import { RIGHTS_PERMISSIONS_CLEARANCES_COURSE } from "./data/rights-permissions-clearances-course";
 // Here Be Dragons (plans/58), course 1 of 5. Culture & History, grades 9-12.
 import { MONSTERS_AT_THE_EDGE_OF_THE_MAP_COURSE } from "./data/monsters-at-the-edge-of-the-map-course";
 import { GIANTS_DRAGONS_AND_THE_BONES_COURSE } from "./data/giants-dragons-and-the-bones-course";
@@ -673,6 +683,202 @@ async function main() {
     slug: "how-to-research",
     course: HOW_TO_RESEARCH_COURSE,
     category: "Study Skills",
+    navigationMode: "linear",
+  });
+
+  // ── The Researcher track (RSRCH) ─────────────────────────────────────────────────────────────
+  // Plan: plans/69-researcher-track.md. A PROFESSIONAL track (BAM, 2026-08-11), the fourth of four
+  // documentation paths alongside Documentarian, Storytelling/Documentary and Reporter (plans/68).
+  //
+  // The idea the whole track turns on: `how-to-research` (Study Skills) ends when YOU are satisfied;
+  // this ends when SOMEBODY ELSE can use what you found without repeating your work. That is the
+  // difference between research as a habit and research as a job, and it is why every course here is
+  // about the handoff.
+  //
+  // The category is shared with the Reporter track when that lands, deliberately: both are
+  // professional documentation trades aimed at working adults rather than at the K-12 standards
+  // audience, and two near-identical categories would be worse than one honest one.
+  await db
+    .insert(schema.courseCategories)
+    .values({ tenantId: learnWitus, name: "Research & Reporting", sortOrder: 16 })
+    .onConflictDoNothing();
+
+  // RSRCH-00, start-here.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "research-as-a-job",
+    course: RESEARCH_AS_A_JOB_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "researcher",
+    seriesTitle: "The Researcher",
+    seriesOrder: 1,
+    seriesCode: "RSRCH",
+    seriesPosition: "00",
+  });
+
+  // NOTE: these are written out longhand rather than through a helper. A helper was tidier and made
+  // them INVISIBLE to scripts/check-series-codes.ts, which parses this file textually: the coded
+  // course count silently stopped rising. A guard that cannot see a registration is not a guard, and
+  // that is worth more than the repetition.
+  //
+  // RSRCH-01. The biggest speed multiplier in the track, and the one almost nobody was taught. Its
+  // through-line is that a query is a HYPOTHESIS about how somebody else described the thing, which
+  // is what keeps it from being a list of operators that would date badly.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "search-craft",
+    course: SEARCH_CRAFT_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "researcher",
+    seriesTitle: "The Researcher",
+    seriesOrder: 2,
+    seriesCode: "RSRCH",
+    seriesPosition: "01",
+  });
+
+  // RSRCH-02. The standalone Archives & Records course the Documentarian program already wanted
+  // (plans/future/12). It lives here because reading a finding aid is a research skill first, and
+  // all four documentation paths need it.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "archives-and-finding-aids",
+    course: ARCHIVES_AND_FINDING_AIDS_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "researcher",
+    seriesTitle: "The Researcher",
+    seriesOrder: 3,
+    seriesCode: "RSRCH",
+    seriesPosition: "02",
+  });
+
+  // RSRCH-03. Lesson 8, "the records that were never made", is the lesson this course exists to
+  // earn: the standard record ladder was built for people the state counted as full persons, and a
+  // course teaching the ladder without saying so would teach a method that silently fails for a
+  // large share of the people this catalog is about.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "tracing-a-person-through-records",
+    course: TRACING_A_PERSON_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "researcher",
+    seriesTitle: "The Researcher",
+    seriesOrder: 4,
+    seriesCode: "RSRCH",
+    seriesPosition: "03",
+  });
+
+  // RSRCH-04. The most directly hireable course in the track. Its whole discipline is one habit:
+  // verify against the SOURCE, never against another account that repeats the claim.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "fact-checking-as-a-discipline",
+    course: FACT_CHECKING_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "researcher",
+    seriesTitle: "The Researcher",
+    seriesOrder: 5,
+    seriesCode: "RSRCH",
+    seriesPosition: "04",
+  });
+
+  // RSRCH-05. Every failure mode in it is one this catalog actually hit while sourcing its own
+  // images in August 2026 (plans/63), which is why it teaches the SHAPE of the mistakes rather than
+  // the rules: the rules are the easy part.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "rights-permissions-and-clearances",
+    course: RIGHTS_PERMISSIONS_CLEARANCES_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "researcher",
+    seriesTitle: "The Researcher",
+    seriesOrder: 6,
+    seriesCode: "RSRCH",
+    seriesPosition: "05",
+  });
+
+  // RSRCH-06. Deliberately NOT a duplicate of the oral-history course, which teaches how to conduct
+  // and treat an interview. This is the different problem of ADJUDICATING between sources of
+  // different kinds when they conflict, which is a research decision rather than an interviewing
+  // skill. Its argument: the instinct that paper beats a person is wrong often enough to be
+  // dangerous, and so is the reverse.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "documents-against-people",
+    course: DOCUMENTS_AGAINST_PEOPLE_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "researcher",
+    seriesTitle: "The Researcher",
+    seriesOrder: 7,
+    seriesCode: "RSRCH",
+    seriesPosition: "06",
+  });
+
+  // RSRCH-07. RSRCH-00 lesson 5 makes the ARGUMENT that the file is the product; this is the
+  // OPERATIONS. Capture discipline, citations that are a route back rather than a formality,
+  // grading claims rather than documents, the memo, and the handover.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "the-research-file",
+    course: THE_RESEARCH_FILE_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "researcher",
+    seriesTitle: "The Researcher",
+    seriesOrder: 8,
+    seriesCode: "RSRCH",
+    seriesPosition: "07",
+  });
+
+  // RSRCH-99, the capstone. A capstone course teaches almost nothing new on purpose: its job is to
+  // make the learner do the thing end to end with enough scaffolding to finish. Assessed on whether
+  // a STRANGER could work from the file, never on how much was found, which is the track's whole
+  // thesis made operational.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "researcher-capstone",
+    course: RESEARCHER_CAPSTONE_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "researcher",
+    seriesTitle: "The Researcher",
+    seriesOrder: 9,
+    seriesCode: "RSRCH",
+    seriesPosition: "99",
+  });
+
+  // Genealogy for yourself and your community. Plan: plans/70-genealogy-course.md.
+  //
+  // NOT a duplicate of RSRCH-03. That course teaches tracing a person as a professional method, in
+  // the third person, for a client, and its lesson 8 opens the 1870 problem and moves on. This one
+  // starts there: for this research the obstacle IS the subject. First person, and the emotional
+  // contract is different, which is why lesson 13 exists to say that a line ending is a fact about a
+  // system rather than a failure of the researcher.
+  //
+  // Culture & History rather than Research & Reporting on purpose: this is personal and community
+  // work, and it belongs beside the Great Migration courses rather than beside a professional trade.
+  // No series code yet; if a genealogy track follows, this becomes its -00.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "genealogy-for-yourself-and-your-community",
+    course: GENEALOGY_SELF_AND_COMMUNITY_COURSE,
+    category: "Culture & History",
     navigationMode: "linear",
   });
 
