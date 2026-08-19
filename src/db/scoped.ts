@@ -40,7 +40,9 @@ import {
   createPromotion,
   endPromotionNow,
   listActivePromotions,
+  getPublicPromotionBySlug,
   listPromotions,
+  listPublicPromotions,
   removeCourseFromPromotion,
   type CreatePromotionInput,
 } from "@/db/queries/promotions";
@@ -162,6 +164,16 @@ export class ScopedDb {
   }
 
   /** Target guards: the FK cannot check the tenant, so the route must. */
+  /** Every promotion with a public page, for /sale. Includes ended ones; the page says so. */
+  listPublicPromotions() {
+    return listPublicPromotions(this.tenantId);
+  }
+
+  /** One public campaign by slug, for /sale/<slug>. Undefined (so: 404) across tenants. */
+  getPublicPromotionBySlug(slug: string) {
+    return getPublicPromotionBySlug(this.tenantId, slug);
+  }
+
   /** Add a course to a running `courses` campaign. Tenant-checked on both the sale and the course. */
   addCourseToPromotion(promotionId: string, courseId: string) {
     return addCourseToPromotion(this.tenantId, promotionId, courseId);

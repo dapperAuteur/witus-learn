@@ -1,5 +1,5 @@
 import { sql } from "drizzle-orm";
-import { check, numeric, pgTable, primaryKey, text, timestamp, uuid } from "drizzle-orm/pg-core";
+import { check, numeric, pgTable, primaryKey, text, timestamp, unique, uuid } from "drizzle-orm/pg-core";
 import { users } from "./auth";
 import { bundles } from "./bundles";
 import { courses } from "./courses";
@@ -27,6 +27,14 @@ export const promotions = pgTable(
       .references(() => tenants.id, { onDelete: "cascade" }),
     /** Owner-facing label, shown in the admin list and on the price ("Summer sale"). */
     name: text("name").notNull(),
+    /**
+     * URL slug for a PUBLIC campaign page at /sale/<slug>. NULL means the sale has no page of its
+     * own, which is the right default: a one-off discount on a single course does not need a
+     * landing page, and forcing one would fill /sale with noise.
+     *
+     * Unique per tenant, not globally, because two brands may both run a "back-to-school".
+     */
+    slug: text("slug"),
     /**
      * 'course' | 'bundle' | 'tenant' | 'courses'.
      *
@@ -59,6 +67,7 @@ export const promotions = pgTable(
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
   (t) => [
+    unique("promotions_tenant_slug_uq").on(t.tenantId, t.slug),
     check("promotions_scope_chk", sql`${t.scope} in ('course','bundle','tenant','courses')`),
     // Exactly one target for a single-target promotion, and none for the two set-shaped scopes.
     // 'courses' carries no target column: its membership lives in `promotion_courses`, so a row

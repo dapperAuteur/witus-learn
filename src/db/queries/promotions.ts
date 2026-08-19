@@ -1,5 +1,5 @@
 import "server-only";
-import { and, desc, eq, inArray, isNull, or, sql } from "drizzle-orm";
+import { and, desc, eq, inArray, isNotNull, isNull, or, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import { bundles } from "@/db/schema/bundles";
 import { courses } from "@/db/schema/courses";
@@ -93,6 +93,8 @@ export async function listActivePromotions(
 
 export interface CreatePromotionInput {
   name: string;
+  /** URL slug for a public /sale/<slug> page. Null for a sale with no page of its own. */
+  slug?: string | null;
   scope: PromotionScope;
   courseId?: string | null;
   bundleId?: string | null;
@@ -116,6 +118,7 @@ export async function createPromotion(
     .values({
       tenantId,
       name: input.name,
+      slug: input.slug?.trim() || null,
       scope: input.scope,
       courseId: input.scope === "course" ? (input.courseId ?? null) : null,
       bundleId: input.scope === "bundle" ? (input.bundleId ?? null) : null,
@@ -217,4 +220,41 @@ export async function bundleBelongsToTenant(tenantId: string, bundleId: string):
     .where(and(eq(bundles.tenantId, tenantId), eq(bundles.id, bundleId)))
     .limit(1);
   return rows.length > 0;
+}
+
+/**
+ * One public campaign by slug, with its courses. Tenant-scoped, and returns undefined rather than
+ * redirecting for a slug this tenant does not have, per the isolation rule: a redirect would leak
+ * that the campaign exists on another brand.
+ */
+export async function getPublicPromotionBySlug(
+  tenantId: string,
+  slug: string,
+): Promise<(Promotion & { courseIds: string[] }) | undefined> {
+  const [row] = await db
+    .select()
+    .from(promotions)
+    .where(and(eq(promotions.tenantId, tenantId), eq(promotions.slug, slug)))
+    .limit(1);
+  if (!row) return undefined;
+  const [withIds] = await withMembership([row]);
+  return withIds;
+}
+
+/**
+ * Every promotion with a public page, newest first. Used by /sale.
+ *
+ * ENDED CAMPAIGNS ARE INCLUDED and the page marks them as over. A shared link to a finished sale
+ * should say "this ended" rather than 404, because the link outlives the sale and a dead end is a
+ * worse answer than an honest one.
+ */
+export async function listPublicPromotions(
+  tenantId: string,
+): Promise<(Promotion & { courseIds: string[] })[]> {
+  const rows = await db
+    .select()
+    .from(promotions)
+    .where(and(eq(promotions.tenantId, tenantId), isNotNull(promotions.slug)))
+    .orderBy(desc(promotions.createdAt));
+  return withMembership(rows);
 }

@@ -24,6 +24,15 @@ export async function GET() {
 const PostSchema = z
   .object({
     name: z.string().trim().min(2).max(80),
+    /** Optional URL slug: gives this sale a public page at /sale/<slug>. Omit for a sale that is
+     *  just a price and does not need a landing page of its own. */
+    slug: z
+      .string()
+      .trim()
+      .regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, "Use lowercase letters, numbers and hyphens.")
+      .max(60)
+      .nullable()
+      .optional(),
     scope: z.enum(["course", "bundle", "tenant", "courses"]),
     /** Required for a course/bundle sale, forbidden for a brand-wide or campaign one. */
     targetId: z.string().uuid().nullable().optional(),
@@ -71,6 +80,15 @@ export async function POST(req: Request) {
   if (d.scope === "course" && !(await ctx.sdb.ownsCourse(d.targetId!))) {
     return errorJson("Not found", 404);
   }
+  // Every member of a campaign is tenant-checked before the promotion is created, so a crafted
+  // request cannot seed another brand's course into this brand's sale.
+  if (d.scope === "courses" && d.courseIds?.length) {
+    for (const id of d.courseIds) {
+      if (!(await ctx.sdb.ownsCourse(id))) {
+        return errorJson("Not found", 404);
+      }
+    }
+  }
   if (d.scope === "bundle" && !(await ctx.sdb.ownsBundle(d.targetId!))) {
     return errorJson("Not found", 404);
   }
@@ -85,9 +103,10 @@ export async function POST(req: Request) {
   const row = await ctx.sdb.createPromotion({
     name: d.name,
     scope: d.scope,
+    slug: d.slug ?? null,
+    courseIds: d.scope === "courses" ? (d.courseIds ?? []) : null,
     courseId: d.scope === "course" ? d.targetId! : null,
     bundleId: d.scope === "bundle" ? d.targetId! : null,
-    courseIds: d.scope === "courses" ? (d.courseIds ?? []) : null,
     kind: d.kind,
     value: d.kind === "free" ? null : d.value!,
     startsAt: d.startsAt ? new Date(d.startsAt) : null,
