@@ -170,11 +170,15 @@ export interface NewLessonInput {
 }
 
 export async function listLessons(courseId: string): Promise<Lesson[]> {
+  // sortOrder is NOT unique per course (a course seeded twice from different generators can
+  // hold two lessons claiming slot 3), and Postgres is free to return ties in any order, so
+  // ordering on it alone lets a lesson list reshuffle between requests. The id tiebreak makes
+  // the order stable whatever the data looks like.
   return db
     .select()
     .from(lessons)
     .where(eq(lessons.courseId, courseId))
-    .orderBy(asc(lessons.sortOrder));
+    .orderBy(asc(lessons.sortOrder), asc(lessons.id));
 }
 
 export async function getLessonById(tenantId: string, id: string): Promise<Lesson | null> {

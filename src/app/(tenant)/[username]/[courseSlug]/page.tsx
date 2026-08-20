@@ -268,7 +268,41 @@ export default async function CourseBySlugPage({ params }: Params) {
     );
   };
 
-  const ungrouped = lessons.filter((l) => !l.moduleId);
+  // The lesson list renders as BLOCKS in curriculum order: a module's lessons appear where the
+  // module's first lesson falls in sortOrder, and runs of section-less lessons keep their place
+  // around it. Rendering every module first and the section-less remainder after would reorder
+  // the course whenever sections cover only part of it — Spanish sections only its final unit
+  // (Dialogues, lessons 19-25), which would otherwise render the ending above the beginning.
+  type LessonBlock =
+    | { kind: "module"; module: (typeof view.modules)[number]; lessons: typeof lessons }
+    | { kind: "loose"; lessons: typeof lessons };
+  const blocks: LessonBlock[] = [];
+  {
+    const emitted = new Set<string>();
+    for (const lesson of lessons) {
+      const mod = lesson.moduleId ? view.modules.find((m) => m.id === lesson.moduleId) : undefined;
+      if (mod) {
+        if (emitted.has(mod.id)) continue;
+        emitted.add(mod.id);
+        blocks.push({ kind: "module", module: mod, lessons: lessons.filter((l) => l.moduleId === mod.id) });
+        continue;
+      }
+      const tail = blocks[blocks.length - 1];
+      if (tail?.kind === "loose") tail.lessons.push(lesson);
+      else blocks.push({ kind: "loose", lessons: [lesson] });
+    }
+  }
+
+  // Numbers follow that same reading order, NOT the flat array's index. The two agree only when
+  // every lesson sits in a module and the modules march in sortOrder; when they don't, indexOf
+  // numbering scrambles — Spanish opened at "37" because its first module lesson sat at flat
+  // index 36 behind lessons that render further down the page.
+  const displayNumber = new Map<string, number>();
+  {
+    let n = 0;
+    for (const block of blocks) for (const l of block.lessons) displayNumber.set(l.id, ++n);
+  }
+  const numberOf = (lesson: { id: string }) => displayNumber.get(lesson.id) ?? 0;
 
   // Course structured data for search engines (only for publicly-visible courses).
   const jsonLd =
@@ -450,7 +484,7 @@ export default async function CourseBySlugPage({ params }: Params) {
             </p>
             <p className="mt-0.5 truncate text-lg font-bold">{resumeLesson.title}</p>
             <p className="mt-0.5 text-sm text-neutral-500">
-              Lesson {lessons.indexOf(resumeLesson) + 1} of {lessons.length}
+              Lesson {numberOf(resumeLesson)} of {lessons.length}
             </p>
           </div>
           <Link
@@ -611,42 +645,46 @@ export default async function CourseBySlugPage({ params }: Params) {
                 const ml = lessons.filter((l) => l.moduleId === m.id);
                 return ml.length > 0 && ml.some((l) => !completedLessonIds.has(l.id));
               })?.id ?? view.modules[0]?.id;
-            return view.modules.map((mod) => {
-            const modLessons = lessons.filter((l) => l.moduleId === mod.id);
-            if (modLessons.length === 0) return null;
-            const doneCount = modLessons.filter((l) => completedLessonIds.has(l.id)).length;
-            const complete = doneCount === modLessons.length;
-            return (
-              <details
-                key={mod.id}
-                open={mod.id === autoOpenId}
-                className="rounded-xl border border-neutral-200 dark:border-neutral-800"
-              >
-                <summary className="flex cursor-pointer list-none items-center gap-2 px-4 py-3 font-medium">
-                  {/* Select-all for this section. Stops its own clicks so ticking it doesn't also
-                      collapse the section it lives in. */}
-                  <OfflineSectionCheckbox
-                    sectionTitle={mod.title}
-                    paths={modLessons
-                      .map((l) => `${base}/lesson/${l.slug}`)
-                      .filter((p) => savablePaths.has(p))}
-                  />
-                  <span className="min-w-0 flex-1 truncate">{mod.title}</span>
-                  <span className="shrink-0 text-xs tabular-nums text-neutral-500">
-                    {complete ? "✓ " : ""}
-                    {doneCount}/{modLessons.length}
-                  </span>
-                </summary>
-                <ol className="space-y-2 px-3 pb-3">
-                  {modLessons.map((lesson) => lessonRow(lesson, lessons.indexOf(lesson) + 1))}
-                </ol>
-              </details>
-            );
-          });
+            return blocks.map((block, blockIndex) => {
+              if (block.kind === "loose") {
+                return (
+                  <ol key={`loose-${blockIndex}`} className="space-y-2">
+                    {block.lessons.map((lesson) => lessonRow(lesson, numberOf(lesson)))}
+                  </ol>
+                );
+              }
+              const mod = block.module;
+              const modLessons = block.lessons;
+              const doneCount = modLessons.filter((l) => completedLessonIds.has(l.id)).length;
+              const complete = doneCount === modLessons.length;
+              return (
+                <details
+                  key={mod.id}
+                  open={mod.id === autoOpenId}
+                  className="rounded-xl border border-neutral-200 dark:border-neutral-800"
+                >
+                  <summary className="flex cursor-pointer list-none items-center gap-2 px-4 py-3 font-medium">
+                    {/* Select-all for this section. Stops its own clicks so ticking it doesn't also
+                        collapse the section it lives in. */}
+                    <OfflineSectionCheckbox
+                      sectionTitle={mod.title}
+                      paths={modLessons
+                        .map((l) => `${base}/lesson/${l.slug}`)
+                        .filter((p) => savablePaths.has(p))}
+                    />
+                    <span className="min-w-0 flex-1 truncate">{mod.title}</span>
+                    <span className="shrink-0 text-xs tabular-nums text-neutral-500">
+                      {complete ? "✓ " : ""}
+                      {doneCount}/{modLessons.length}
+                    </span>
+                  </summary>
+                  <ol className="space-y-2 px-3 pb-3">
+                    {modLessons.map((lesson) => lessonRow(lesson, numberOf(lesson)))}
+                  </ol>
+                </details>
+              );
+            });
           })()}
-          {ungrouped.length > 0 ? (
-            <ol className="space-y-2">{ungrouped.map((lesson) => lessonRow(lesson, lessons.indexOf(lesson) + 1))}</ol>
-          ) : null}
         </div>
       ) : (
         <ol className="space-y-2">{lessons.map((lesson, i) => lessonRow(lesson, i + 1))}</ol>
