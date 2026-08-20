@@ -99,11 +99,11 @@ National Board for Health & Wellness Coaching. (n.d.). *Scope of practice*. http
 
 **NBHWC board certification (NBC-HWC).** A national board certification: complete an NBHWC-approved training program, then pass a board exam built on a published content outline. The outline has four weighted domains: coaching structure (17 to 23 percent), coaching process (47 to 53 percent), health and wellness (17 to 23 percent), and ethics and legal (7 to 13 percent). Notice what that weighting says: nearly half the exam is the coaching PROCESS itself, not health content. The board's program-approval handbook requires approved curricula to teach coaches to know and abide by the published scope of practice, its competency 4.2 (National Board for Health & Wellness Coaching, 2022, 2024).
 
-The rigor behind that approval is inspectable, and it is worth knowing because it is what "board certification" buys. An approved program must deliver at least 75 instructional hours, at least 40 of them synchronous. Every student completes at least three practice coaching sessions of at least 30 minutes, each followed by a minimum of 20 minutes of individual faculty feedback, and the program caps with a scorable, pass/fail Practical Skills Assessment administered after 80 percent of the program is complete. Faculty standards are published too: at least 15 of the 60 core instructional hours must be taught by faculty holding a master's degree in a health-related field, and at least 48 of those 60 hours by faculty with at least 200 hours of their own coaching practice. Sitting the board exam then requires the approved program, a log of 50 coaching sessions, and an associate's degree or 4,000 hours of work experience in any field (National Board for Health & Wellness Coaching, 2024, n.d.-b).
+The rigor behind that approval is inspectable, and it is worth knowing because it is what "board certification" buys. An approved program must deliver at least 75 instructional hours, at least 40 of them synchronous. Every student completes at least three practice coaching sessions of at least 30 minutes, each followed by a minimum of 20 minutes of individual faculty feedback, and the program caps with a scorable, pass/fail Practical Skills Assessment administered after 80 percent of the program is complete. Faculty standards are published too: at least 48 of the 60 core instructional hours must be taught by faculty who have earned the NBC-HWC themselves, likewise 48 by faculty with at least 200 hours of their own coaching practice, and at least 15 by faculty holding a graduate degree in a health-related field or a bachelor's degree paired with a state license or national registration. Sitting the board exam then requires the approved program, a log of 50 coaching sessions, and an associate's degree or 4,000 hours of work experience in any field (National Board for Health & Wellness Coaching, 2026, n.d.-b).
 
 **NASM Certified Wellness Coach (CWC).** A private certification across five wellness pillars with behavior-change, motivational-interviewing, and coaching-theory content, examined by 100 multiple-choice questions. By NASM's own statement it is not NCCA-accredited, and verification for this program found no standalone CWC scope-of-practice document comparable to NBHWC's; NASM's scope guidance lives in its nutrition-coaching materials and instructor commentary instead (National Academy of Sports Medicine, n.d.).
 
-**ACE Certified Health Coach.** An NCCA-accredited credential extending the exercise-professional role into multi-domain lifestyle behavior change, with a published position statement on nutrition scope that this program leans on in lesson 4. Candidacy requires being at least 18 with a high school diploma or equivalent and current CPR/AED certification with a live skills check, and the credential renews on 20 hours of continuing education every two years (American Council on Exercise, n.d.-a, n.d.-b).
+**ACE Certified Health Coach.** An NCCA-accredited credential extending the exercise-professional role into multi-domain lifestyle behavior change, with a published position statement on nutrition scope that this program leans on in lesson 4. Candidacy requires being at least 18 with a high school diploma or equivalent and current CPR/AED certification with a live skills check, and the credential renews on 20 hours of continuing education every two years, of which at least one hour must come from ACE's Professional Conduct & Ethics category (American Council on Exercise, n.d.-a, n.d.-b, n.d.-c).
 
 **ACLM lifestyle-medicine education.** The American College of Lifestyle Medicine defines lifestyle medicine around six pillars and, with the International Board of Lifestyle Medicine, certifies CLINICIANS. For coaches it offers education, not a license: a lifestyle-medicine-educated coach is still a coach, bound by coaching scope and state law (American College of Lifestyle Medicine, 2022). Its Lifestyle Medicine Coach certificate makes the layering explicit: the 16.5-hour self-paced course is open to anyone, but the LMC certificate itself is awarded only to holders of an active NBC-HWC or Wellcoaches certification who pass its 12 knowledge assessments at 80 percent or better. Complete the same course without that prerequisite and you receive a certificate of attendance instead (American College of Lifestyle Medicine, n.d.).
 
@@ -132,11 +132,13 @@ American Council on Exercise. (n.d.-a). *Certified health coach career guide*. h
 
 American Council on Exercise. (n.d.-b). *Health coach certification*. https://www.acefitness.org/fitness-certifications/health-coach-certification/default.aspx
 
+American Council on Exercise. (n.d.-c). *Frequently asked questions: Recertification*. https://www.acefitness.org/faqs/
+
 National Academy of Sports Medicine. (n.d.). *Certified wellness coach*. https://www.nasm.org/products/certified-wellness-coach
 
 National Board for Health & Wellness Coaching. (2022). *Content outline*. https://www.nbme.org/wp-content/uploads/2022/05/NBHWC_Content_Outline-2ca.pdf
 
-National Board for Health & Wellness Coaching. (2024). *Program approval handbook*. https://nbhwc.org/wp-content/uploads/2025/07/NBHWC_Handbook_Oct_2024-101724.pdf
+National Board for Health & Wellness Coaching. (2026). *Program approval handbook* (2026 ed.). https://nbhwc.org/wp-content/uploads/2026/04/NBHWC-Program-Approval-Handbook-2026-2.pdf
 
 National Board for Health & Wellness Coaching. (n.d.-b). *Exam eligibility requirements*. https://nbhwc.org/exam-eligibility-requirements/`,
     },
@@ -148,7 +150,7 @@ National Board for Health & Wellness Coaching. (n.d.-b). *Exam eligibility requi
       section: "Section 2 · Scope and law",
       body: `Three organizations publish exclusion lists, and they converge.
 
-**NBHWC's list is the sharpest.** On their own, health and wellness coaches do not diagnose, interpret medical data, prescribe or de-prescribe, recommend supplements, provide nutrition consultation or create meal plans, or provide exercise prescription or instruction, and they do not provide psychological therapeutic interventions. The scope document names names on that last one: Cognitive Behavioral Therapy, Eye Movement Desensitization and Reprocessing, Dialectical Behavioral Therapy, and Internal Family Systems Therapy are examples of what a coach does not deliver (National Board for Health & Wellness Coaching, n.d.).
+**NBHWC's list is the sharpest.** On their own, health and wellness coaches do not diagnose, interpret medical data, prescribe or de-prescribe, recommend supplements, provide nutrition consultation or create meal plans, or provide exercise prescription or instruction, and they do not provide psychological therapeutic interventions. The scope document names names on that last one: Cognitive Behavioral Therapy, Eye Movement Desensitization and Reprocessing, Solution Focused Therapy, Dialectical Behavioral Therapy, and Internal Family Systems Therapy are its named examples of what a coach does not deliver, with "other such therapies" swept in behind them (National Board for Health & Wellness Coaching, n.d.). A verification note this program owes you: an earlier read of this page recorded four named modalities; the current page names five, Solution Focused Therapy among them, and this course teaches the list as the primary states it today.
 
 Read that list against your own credentials and notice something important: exercise prescription is INSIDE your CPT scope and OUTSIDE the coaching scope. The exclusion list is not saying you may never program training. It is saying that when you do, you are working as a trainer, not as a coach, and a person with only a coaching credential must not.
 
@@ -158,13 +160,13 @@ Read that list against your own credentials and notice something important: exer
 
 The common core across all three: coaches educate generally, facilitate behavior, and refer individually. The moment the work becomes individualized prescription of food, supplements, or therapy, it belongs to a license.
 
-:::reveal Name the four therapeutic modalities the NBHWC scope document explicitly places outside coaching. ||| Cognitive Behavioral Therapy (CBT), Eye Movement Desensitization and Reprocessing (EMDR), Dialectical Behavioral Therapy (DBT), and Internal Family Systems Therapy. They are named as examples of psychological therapeutic interventions coaches do not provide.
+:::reveal Name the five therapeutic modalities the NBHWC scope document explicitly places outside coaching. ||| Cognitive Behavioral Therapy (CBT), Eye Movement Desensitization and Reprocessing (EMDR), Solution Focused Therapy, Dialectical Behavioral Therapy (DBT), and Internal Family Systems Therapy. They are named as examples of psychological therapeutic interventions coaches do not provide, with "other such therapies" swept in behind them.
 
 :::reveal Exercise prescription appears on the coaching exclusion list, yet you prescribe training weekly. Reconcile that. ||| The list describes the coaching role, not you. Prescription is inside your CPT scope; when you program training you are acting as a trainer. The exclusion exists because a coaching credential ALONE does not authorize it, and the two hats must stay distinct.
 
 ## Vocabulary
 - **Exclusion list**: a scope document's explicit inventory of what the credential does NOT authorize; NBHWC's is the sharpest in this field.
-- **Psychological therapeutic intervention**: clinical treatment of the mind; the NBHWC scope names CBT, EMDR, DBT, and Internal Family Systems Therapy as examples coaches do not deliver.
+- **Psychological therapeutic intervention**: clinical treatment of the mind; the NBHWC scope names CBT, EMDR, Solution Focused Therapy, DBT, and Internal Family Systems Therapy as examples coaches do not deliver.
 - **Position statement**: an organization's published stance on a boundary question, like ACE's statement on nutrition scope; weaker than statute, stronger than opinion.
 - **General versus individualized guidance**: the converged dividing line: portions, labels, and public guidelines are general and in scope; a plan built for one person's body or condition is individualized and belongs to a license.
 
@@ -269,7 +271,7 @@ Colorado Revised Statutes § 12-245-217. (n.d.). *Scope of article: Exemptions*.
       section: "Section 2 · Scope and law",
       body: `Every framework in this field converges on the same duty: know your scope, and refer when the work leaves it.
 
-**The NBHWC framing.** The program-approval handbook requires coaches to know and abide by the published scope of practice (competency 4.2), and the content outline builds referral into the craft: the coach maintains professional boundaries, seeks consultation when needed, and treats scope questions as ethics questions. The outline is explicit on one example this program will keep returning to: counseling on substance abuse is beyond the coach's scope of practice, and appropriate professional referral is the move (National Board for Health & Wellness Coaching, 2022, 2024).
+**The NBHWC framing.** The program-approval handbook requires coaches to know and abide by the published scope of practice (competency 4.2), and the 2026 edition's outline numbers the referral duty directly beneath it: competency 4.2.2, refer clients as appropriate, naming imminent danger, trauma treatment, mental health treatment, and other professional healthcare as the occasions. The outline builds referral into the craft: the coach maintains professional boundaries, seeks consultation when needed, and treats scope questions as ethics questions. It is explicit on one example this program will keep returning to: counseling on substance abuse is beyond the coach's scope of practice, and appropriate professional referral is the move (National Board for Health & Wellness Coaching, 2022, 2026).
 
 **The ethics code behind the boundary.** The NBHWC Code of Ethics turns the same duty into daily conduct. A coach openly discloses any conflict of interest to everyone involved and offers to step aside when one arises. Compensation from third parties, referral fees, or product sales is disclosed before coaching begins. A coach who also holds a clinical credential commits to the ethics code and standards of practice of EACH profession, understanding the scope parameters of each, which is the formal version of this course's two-hats rule. And the code's November 2025 update adds a distinctly modern duty: disclosing the use of artificial intelligence in the delivery of coaching services, including how it may affect client privacy (National Board for Health & Wellness Coaching, 2025).
 
@@ -299,7 +301,7 @@ National Academy of Sports Medicine. (n.d.). *Introduction to the wellness coach
 
 National Board for Health & Wellness Coaching. (2022). *Content outline*. https://www.nbme.org/wp-content/uploads/2022/05/NBHWC_Content_Outline-2ca.pdf
 
-National Board for Health & Wellness Coaching. (2024). *Program approval handbook*. https://nbhwc.org/wp-content/uploads/2025/07/NBHWC_Handbook_Oct_2024-101724.pdf
+National Board for Health & Wellness Coaching. (2026). *Program approval handbook* (2026 ed.). https://nbhwc.org/wp-content/uploads/2026/04/NBHWC-Program-Approval-Handbook-2026-2.pdf
 
 National Board for Health & Wellness Coaching. (2025). *Code of ethics and professional conduct*. https://nbhwc.org/wp-content/uploads/2025/11/NBHWC-Code-of-Ethics-and-Professional-Conduct-1.pdf`,
     },
@@ -325,16 +327,16 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
             sourceLessonSlug: "what-a-wellness-coach-is",
           },
           {
-            prompt: "Which four therapeutic modalities does the NBHWC scope document name as examples of what coaches do not provide?",
+            prompt: "Which therapeutic modalities does the NBHWC scope document name as examples of what coaches do not provide?",
             options: [
-              "CBT, EMDR, DBT, and Internal Family Systems Therapy",
-              "Psychoanalysis, hypnotherapy, exposure therapy, and ACT",
-              "Motivational interviewing, ACT, CBT, and group therapy",
-              "EMDR, biofeedback, psychoanalysis, and art therapy",
+              "CBT, EMDR, Solution Focused Therapy, DBT, and Internal Family Systems Therapy",
+              "Psychoanalysis, hypnotherapy, exposure therapy, ACT, and somatic experiencing",
+              "Motivational interviewing, ACT, CBT, group therapy, and psychodrama",
+              "EMDR, biofeedback, psychoanalysis, art therapy, and narrative therapy",
             ],
             correctIndex: 0,
             explanation:
-              "The scope document names Cognitive Behavioral Therapy, Eye Movement Desensitization and Reprocessing, Dialectical Behavioral Therapy, and Internal Family Systems Therapy. Motivational interviewing is a coaching-compatible style, not a named exclusion.",
+              "The scope document names Cognitive Behavioral Therapy, Eye Movement Desensitization and Reprocessing, Solution Focused Therapy, Dialectical Behavioral Therapy, and Internal Family Systems Therapy, sweeping in 'other such therapies' behind them. Motivational interviewing is a coaching-compatible style, not a named exclusion.",
             sourceLessonSlug: "the-exclusion-lists",
           },
           {
@@ -756,7 +758,7 @@ And one program-specific practice: you are the first client. Each course ends wi
             ],
             correctIndex: 1,
             explanation:
-              "Verification confirmed handbook competency 4.2 (know and abide by the current scope of practice) and could not confirm a 4.2.7. The program cites what verified and says so, which is the dossier-first discipline working as intended.",
+              "Verification confirmed handbook competency 4.2 (know and abide by the current scope of practice) and could not confirm a 4.2.7. The 2026 handbook's outline numbers the referral duty 4.2.2, still not 4.2.7. The program cites what verified and says so, which is the dossier-first discipline working as intended.",
             sourceLessonSlug: "what-this-program-is",
           },
           {
