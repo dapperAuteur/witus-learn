@@ -24,6 +24,7 @@ import { WELL_COACHING_NUTRITION_COURSE } from "./data/well-coaching-nutrition-c
 import { WELL_RECOVERY_STRESS_COURSE } from "./data/well-recovery-stress-course";
 import { WELL_SLEEP_COURSE } from "./data/well-sleep-course";
 import { WELL_MENTAL_WELLBEING_COURSE } from "./data/well-mental-wellbeing-course";
+import { WELL_CENTENARIAN_CAPSTONE_COURSE } from "./data/well-centenarian-capstone-course";
 
 const TARGET_SLUG = "learn-witus";
 const INSTRUCTOR_EMAIL = "bam@awews.com";
@@ -175,6 +176,23 @@ async function main() {
     seriesOrder: 7,
     seriesCode: "WELL",
     seriesPosition: "06",
+    visibility: "private",
+    publishHoldReason: HOLD_REASON,
+    replaceLessons: true,
+  });
+
+  await seedAuthoredCourse(db, {
+    tenantId: tenant.id,
+    instructorId: instructor.id,
+    slug: "well-centenarian-capstone",
+    course: WELL_CENTENARIAN_CAPSTONE_COURSE,
+    category: "Health & Longevity",
+    navigationMode: "linear",
+    seriesSlug: "well-wellness-coaching",
+    seriesTitle: "WELL: Wellness Coaching",
+    seriesOrder: 8,
+    seriesCode: "WELL",
+    seriesPosition: "99",
     visibility: "private",
     publishHoldReason: HOLD_REASON,
     replaceLessons: true,
