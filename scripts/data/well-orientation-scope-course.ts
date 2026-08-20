@@ -42,6 +42,12 @@ It assumes the knowledge of a NASM CPT, CNC, and CES. It will not re-teach exerc
 
 :::reveal What happened to research claims that could not be verified against a primary source? ||| They were corrected, cut, or explicitly taught as contested. Nothing enters a lesson on the strength of a search engine's summary alone.
 
+## Vocabulary
+- **Dossier-first**: the build method of this program: research tools gather candidate sources into a dossier, and only claims verified against primary sources may enter a lesson.
+- **Primary source**: the original document a claim rests on, a statute, a peer-reviewed paper, or a certifying body's own publication, as opposed to a summary of one.
+- **Contested claim**: a claim credible sources genuinely dispute; this program teaches such claims AS disputes rather than picking a winner quietly.
+- **Wellness pillar**: one of the five domains the NASM CWC frames wellness around: movement, nutrition, physical recovery, sleep, and mental and emotional well-being.
+
 ## Sources
 National Academy of Sports Medicine. (n.d.). *Certified wellness coach*. https://www.nasm.org/products/certified-wellness-coach
 
@@ -62,6 +68,13 @@ National Board for Health & Wellness Coaching. (n.d.). *Scope of practice*. http
 :::reveal A client with a physician's treatment plan asks their coach to adjust it. What does the scope of practice say the coach's role is? ||| Supporting IMPLEMENTATION of the plan, under or alongside the licensed professional, never modifying it. Adjusting treatment belongs to the license that wrote it; the coach helps the client carry it out and communicate with the professional.
 
 :::reveal You hold a CPT and you are coaching. When does the CPT hat come off and the coach hat go on? ||| When the work shifts from prescribing content (loads, exercise selection, corrective strategy) to facilitating change (goals, commitment, accountability, ambivalence). The scope document frames the coach as facilitator, not content expert, so the roles must stay visibly separate.
+
+## Vocabulary
+- **Scope of practice**: the published range of activities a credential authorizes, and by omission the activities it does not; the boundary every lesson in this course hangs off.
+- **Client-centered process**: work organized around the client's own goals, values, and choices, with the coach facilitating rather than directing.
+- **Self-determined goals**: goals the client sets for themselves; the scope defines coaching as helping clients develop and achieve these, not goals assigned by the coach.
+- **Facilitator**: the coach's defined role: mobilizing the client's strengths and resources for change, as distinct from the content expert who prescribes what to do.
+- **Dual role**: holding a coaching role and another credential with the same client; lawful and common, but the hats must stay visibly separate.
 
 ## Sources
 National Board for Health & Wellness Coaching. (n.d.). *Scope of practice*. https://nbhwc.org/scope-of-practice/`,
@@ -86,11 +99,13 @@ National Board for Health & Wellness Coaching. (n.d.). *Scope of practice*. http
 
 **NBHWC board certification (NBC-HWC).** A national board certification: complete an NBHWC-approved training program, then pass a board exam built on a published content outline. The outline has four weighted domains: coaching structure (17 to 23 percent), coaching process (47 to 53 percent), health and wellness (17 to 23 percent), and ethics and legal (7 to 13 percent). Notice what that weighting says: nearly half the exam is the coaching PROCESS itself, not health content. The board's program-approval handbook requires approved curricula to teach coaches to know and abide by the published scope of practice, its competency 4.2 (National Board for Health & Wellness Coaching, 2022, 2024).
 
+The rigor behind that approval is inspectable, and it is worth knowing because it is what "board certification" buys. An approved program must deliver at least 75 instructional hours, at least 40 of them synchronous. Every student completes at least three practice coaching sessions of at least 30 minutes, each followed by a minimum of 20 minutes of individual faculty feedback, and the program caps with a scorable, pass/fail Practical Skills Assessment administered after 80 percent of the program is complete. Faculty standards are published too: at least 48 of the 60 core instructional hours must be taught by faculty who have earned the NBC-HWC themselves, likewise 48 by faculty with at least 200 hours of their own coaching practice, and at least 15 by faculty holding a graduate degree in a health-related field or a bachelor's degree paired with a state license or national registration. Sitting the board exam then requires the approved program, a log of 50 coaching sessions, and an associate's degree or 4,000 hours of work experience in any field (National Board for Health & Wellness Coaching, 2026, n.d.-b).
+
 **NASM Certified Wellness Coach (CWC).** A private certification across five wellness pillars with behavior-change, motivational-interviewing, and coaching-theory content, examined by 100 multiple-choice questions. By NASM's own statement it is not NCCA-accredited, and verification for this program found no standalone CWC scope-of-practice document comparable to NBHWC's; NASM's scope guidance lives in its nutrition-coaching materials and instructor commentary instead (National Academy of Sports Medicine, n.d.).
 
-**ACE Certified Health Coach.** An NCCA-accredited credential extending the exercise-professional role into multi-domain lifestyle behavior change, with a published position statement on nutrition scope that this program leans on in lesson 4 (American Council on Exercise, n.d.).
+**ACE Certified Health Coach.** An NCCA-accredited credential extending the exercise-professional role into multi-domain lifestyle behavior change, with a published position statement on nutrition scope that this program leans on in lesson 4. Candidacy requires being at least 18 with a high school diploma or equivalent and current CPR/AED certification with a live skills check, and the credential renews on 20 hours of continuing education every two years, of which at least one hour must come from ACE's Professional Conduct & Ethics category (American Council on Exercise, n.d.-a, n.d.-b, n.d.-c).
 
-**ACLM lifestyle-medicine education.** The American College of Lifestyle Medicine defines lifestyle medicine around six pillars and, with the International Board of Lifestyle Medicine, certifies CLINICIANS. For coaches it offers education, not a license: a lifestyle-medicine-educated coach is still a coach, bound by coaching scope and state law (American College of Lifestyle Medicine, 2022).
+**ACLM lifestyle-medicine education.** The American College of Lifestyle Medicine defines lifestyle medicine around six pillars and, with the International Board of Lifestyle Medicine, certifies CLINICIANS. For coaches it offers education, not a license: a lifestyle-medicine-educated coach is still a coach, bound by coaching scope and state law (American College of Lifestyle Medicine, 2022). Its Lifestyle Medicine Coach certificate makes the layering explicit: the 16.5-hour self-paced course is open to anyone, but the LMC certificate itself is awarded only to holders of an active NBC-HWC or Wellcoaches certification who pass its 12 knowledge assessments at 80 percent or better. Complete the same course without that prerequisite and you receive a certificate of attendance instead (American College of Lifestyle Medicine, n.d.).
 
 The pattern to keep: board certification with published competencies (NBHWC), accredited certification (ACE), private certification (NASM CWC), and clinician certification plus coach education (ACLM). When someone says "certified wellness coach," those are four different claims.
 
@@ -98,16 +113,34 @@ The pattern to keep: board certification with published competencies (NBHWC), ac
 
 :::reveal What does ACLM certify, and what does that mean for a coach with lifestyle-medicine training? ||| ACLM and IBLM certify clinicians. A coach with ACLM education has knowledge, not a license: they remain bound by coaching scope and state law, exactly as before the course.
 
+:::reveal ACLM's coach certificate is stacked on another credential. What must you already hold to earn it, and what does the course grant without that? ||| An active NBC-HWC or Wellcoaches certification; with one of those, the 16.5-hour course plus 12 knowledge assessments at 80 percent earns the Lifestyle Medicine Coach certificate. Without the prerequisite, the same completion earns a certificate of attendance.
+
+## Vocabulary
+- **Board certification**: a credential granted by an independent board on top of approved training, defined by a published content outline and exam, the NBC-HWC being this field's example.
+- **Content outline**: the published blueprint of an exam's domains and their weights; it tells you what a credential's board believes the profession IS.
+- **Synchronous instruction**: live teaching, in person or remote, as opposed to self-paced material; NBHWC requires at least 40 of the 75 hours to be synchronous.
+- **Practical Skills Assessment (PSA)**: NBHWC's required pass/fail evaluation of a real coaching session against a scorable rubric, administered late in an approved program.
+- **Stacked credential**: a certificate that requires another credential as its prerequisite, as ACLM's Lifestyle Medicine Coach certificate requires an NBC-HWC or Wellcoaches certification.
+- **NCCA accreditation**: third-party accreditation of a certification program by the National Commission for Certifying Agencies; ACE's Health Coach has it, NASM's CWC states it does not.
+
 ## Sources
 American College of Lifestyle Medicine. (2022). *Lifestyle medicine overview* [Journal supplement]. https://cdn.mdedge.com/files/s3fs-public/aclm_2022_final_set_0.pdf
 
-American Council on Exercise. (n.d.). *Certified health coach career guide*. https://contentcdn.eacefitness.com/assetportfoliodownloads/CareerGuide-HC.pdf
+American College of Lifestyle Medicine. (n.d.). *Lifestyle medicine for coaches*. https://lifestylemedicine.org/education-certification/continuing-education/lifestyle-medicine-for-coaches/
+
+American Council on Exercise. (n.d.-a). *Certified health coach career guide*. https://contentcdn.eacefitness.com/assetportfoliodownloads/CareerGuide-HC.pdf
+
+American Council on Exercise. (n.d.-b). *Health coach certification*. https://www.acefitness.org/fitness-certifications/health-coach-certification/default.aspx
+
+American Council on Exercise. (n.d.-c). *Frequently asked questions: Recertification*. https://www.acefitness.org/faqs/
 
 National Academy of Sports Medicine. (n.d.). *Certified wellness coach*. https://www.nasm.org/products/certified-wellness-coach
 
 National Board for Health & Wellness Coaching. (2022). *Content outline*. https://www.nbme.org/wp-content/uploads/2022/05/NBHWC_Content_Outline-2ca.pdf
 
-National Board for Health & Wellness Coaching. (2024). *Program approval handbook*. https://nbhwc.org/wp-content/uploads/2025/07/NBHWC_Handbook_Oct_2024-101724.pdf`,
+National Board for Health & Wellness Coaching. (2026). *Program approval handbook* (2026 ed.). https://nbhwc.org/wp-content/uploads/2026/04/NBHWC-Program-Approval-Handbook-2026-2.pdf
+
+National Board for Health & Wellness Coaching. (n.d.-b). *Exam eligibility requirements*. https://nbhwc.org/exam-eligibility-requirements/`,
     },
 
     // ── Section 2 ────────────────────────────────────────────────────────────────────────────
@@ -117,7 +150,7 @@ National Board for Health & Wellness Coaching. (2024). *Program approval handboo
       section: "Section 2 · Scope and law",
       body: `Three organizations publish exclusion lists, and they converge.
 
-**NBHWC's list is the sharpest.** On their own, health and wellness coaches do not diagnose, interpret medical data, prescribe or de-prescribe, recommend supplements, provide nutrition consultation or create meal plans, or provide exercise prescription or instruction, and they do not provide psychological therapeutic interventions. The scope document names names on that last one: Cognitive Behavioral Therapy, Eye Movement Desensitization and Reprocessing, Dialectical Behavioral Therapy, and Internal Family Systems Therapy are examples of what a coach does not deliver (National Board for Health & Wellness Coaching, n.d.).
+**NBHWC's list is the sharpest.** On their own, health and wellness coaches do not diagnose, interpret medical data, prescribe or de-prescribe, recommend supplements, provide nutrition consultation or create meal plans, or provide exercise prescription or instruction, and they do not provide psychological therapeutic interventions. The scope document names names on that last one: Cognitive Behavioral Therapy, Eye Movement Desensitization and Reprocessing, Solution Focused Therapy, Dialectical Behavioral Therapy, and Internal Family Systems Therapy are its named examples of what a coach does not deliver, with "other such therapies" swept in behind them (National Board for Health & Wellness Coaching, n.d.). A verification note this program owes you: an earlier read of this page recorded four named modalities; the current page names five, Solution Focused Therapy among them, and this course teaches the list as the primary states it today.
 
 Read that list against your own credentials and notice something important: exercise prescription is INSIDE your CPT scope and OUTSIDE the coaching scope. The exclusion list is not saying you may never program training. It is saying that when you do, you are working as a trainer, not as a coach, and a person with only a coaching credential must not.
 
@@ -127,9 +160,15 @@ Read that list against your own credentials and notice something important: exer
 
 The common core across all three: coaches educate generally, facilitate behavior, and refer individually. The moment the work becomes individualized prescription of food, supplements, or therapy, it belongs to a license.
 
-:::reveal Name the four therapeutic modalities the NBHWC scope document explicitly places outside coaching. ||| Cognitive Behavioral Therapy (CBT), Eye Movement Desensitization and Reprocessing (EMDR), Dialectical Behavioral Therapy (DBT), and Internal Family Systems Therapy. They are named as examples of psychological therapeutic interventions coaches do not provide.
+:::reveal Name the five therapeutic modalities the NBHWC scope document explicitly places outside coaching. ||| Cognitive Behavioral Therapy (CBT), Eye Movement Desensitization and Reprocessing (EMDR), Solution Focused Therapy, Dialectical Behavioral Therapy (DBT), and Internal Family Systems Therapy. They are named as examples of psychological therapeutic interventions coaches do not provide, with "other such therapies" swept in behind them.
 
 :::reveal Exercise prescription appears on the coaching exclusion list, yet you prescribe training weekly. Reconcile that. ||| The list describes the coaching role, not you. Prescription is inside your CPT scope; when you program training you are acting as a trainer. The exclusion exists because a coaching credential ALONE does not authorize it, and the two hats must stay distinct.
+
+## Vocabulary
+- **Exclusion list**: a scope document's explicit inventory of what the credential does NOT authorize; NBHWC's is the sharpest in this field.
+- **Psychological therapeutic intervention**: clinical treatment of the mind; the NBHWC scope names CBT, EMDR, Solution Focused Therapy, DBT, and Internal Family Systems Therapy as examples coaches do not deliver.
+- **Position statement**: an organization's published stance on a boundary question, like ACE's statement on nutrition scope; weaker than statute, stronger than opinion.
+- **General versus individualized guidance**: the converged dividing line: portions, labels, and public guidelines are general and in scope; a plan built for one person's body or condition is individualized and belongs to a license.
 
 ## Sources
 American Council on Exercise. (n.d.). *Position statement on nutrition scope of practice for exercise professionals and health coaches*. https://contentcdn.eacefitness.com/certifiednews/images/article/pdfs/NutritionScopeOfPractice.pdf
@@ -161,14 +200,30 @@ States regulate dietetics two different ways, and the difference is the whole ga
 
 **Indiana, verified against the statute.** Indiana protects titles without reserving general practice: unlicensed people may not profess to be licensed dietitians, but IC 25-14.5-7-3 states that nothing in the article prohibits any person from disseminating free information, conducting a class or seminar, or giving a speech related to nutrition (Indiana Code § 25-14.5-7-3, n.d.).
 
+**The case that drew the constitutional line.** In 2012 the North Carolina Board of Dietetics/Nutrition told Steve Cooksey, a blogger who managed his own type 2 diabetes with a low-carbohydrate diet, that answering readers' individual questions about food, whether free or paid, was the unlicensed practice of dietetics, and it sent him a 19-page printout of his website marked up in red pen showing what he could and could not say. Cooksey censored his site and sued. The Fourth Circuit held that the board's actions had an objectively reasonable chilling effect on his speech, which gave him standing to bring the First Amendment claim, and sent the case back down. Read that carefully: the court decided he could SUE, not that he had won (Cooksey v. Futrell, 2013). The suit ended in February 2015 when the board adopted new guidelines permitting ordinary, non-individualized diet advice without a license (Institute for Justice, 2015). The two-sided moral is the reason this case is taught here: general nutrition speech, personal stories, classes, and published opinions have real constitutional protection, and individualized clinical nutrition care remains squarely regulable. The coaching lane runs between those posts.
+
 **The contested edge, taught as contested.** Where exactly individualized wellness recommendations end and medical nutrition therapy begins is interpreted differently by state boards and advocacy organizations, and the line is jurisdiction-specific. A coach whose work drifts toward disease-focused individualized diet planning is in the gray zone even where wellness coaching is exempt. That is a get-counsel situation, not a read-a-lesson situation.
 
 :::reveal Explain the difference between practice regulation and title regulation in one sentence each. ||| Practice regulation reserves the work itself (only licensees may perform medical nutrition therapy). Title regulation reserves the name (anyone may share general nutrition information, but only licensees may use the protected titles).
 
 :::reveal Michigan's 2024 law added licensure. Why is it still a favorable state for wellness coaching? ||| Because its exemption section explicitly protects coaching activities by name, including individualized recommendations for wellness or primary prevention, behavior-change management, and weight-management services, provided the work is not medical nutrition therapy and no protected title is used.
 
+:::reveal What did the Fourth Circuit actually decide in Cooksey v. Futrell, and what did it not decide? ||| It decided standing: the board's red-pen review of his website had an objectively reasonable chilling effect on his speech, so his First Amendment suit could proceed. It did not decide the merits. The case ended in 2015 when the board adopted guidelines permitting ordinary, non-individualized diet advice without a license.
+
+## Vocabulary
+- **Practice regulation**: a statute reserving the WORK itself, such as medical nutrition therapy, to licensees, regardless of what the provider calls themselves.
+- **Title regulation**: a statute reserving professional NAMES, such as dietitian or licensed nutritionist, to licensees while leaving general information-sharing open.
+- **Medical nutrition therapy (MNT)**: nutrition care to treat a diagnosed condition, the core activity practice acts reserve to licensed providers.
+- **Statutory exemption**: a carve-out written into a licensing law that keeps named activities lawful for unlicensed people, like Michigan's list in MCL 333.18353.
+- **Chilling effect**: government action that deters lawful speech by threat rather than prohibition; in Cooksey it was the injury that opened the courthouse door.
+- **Standing**: a court's threshold question of whether this plaintiff has suffered an injury the court can hear, decided before any question of who is right.
+
 ## Sources
+Cooksey v. Futrell, 721 F.3d 226 (4th Cir. 2013). https://www.courtlistener.com/opinion/945873/steve-cooksey-v-michelle-futrell/
+
 Indiana Code § 25-14.5-7-3. (n.d.). *Dietitians: Unlawful practices*. Indiana General Assembly. https://www.in.gov/pla/professions/dietitians/dietitians-statutes-and-rules/
+
+Institute for Justice. (2015, February 18). *Victory for "caveman" blogger in free speech fight*. https://ij.org/press-release/north-carolina-free-speech-release-2-18-2015/
 
 Michigan Public Act 39. (2024). *Dietitian nutritionist licensure*. Michigan Legislature. https://legislature.mi.gov/documents/2023-2024/publicact/pdf/2024-PA-0039.pdf
 
@@ -194,6 +249,12 @@ Read the three conditions: coach-specific training, serving clients EXCLUSIVELY 
 
 :::reveal Why does calling a service "coaching" not settle whether it is lawful? ||| Because regulators apply a functional test: they evaluate the activities performed, not the label. Deep emotional processing marketed as coaching can be evaluated as psychotherapy practice, case by case.
 
+## Vocabulary
+- **Functional test**: the regulatory principle that what you DO decides what law applies, not what you call it; the reason labels never launder out-of-scope work.
+- **Protected title**: a professional name, like psychotherapist or licensed professional counselor, that statute reserves to licensees regardless of any exemption.
+- **Practice act**: the state law defining a licensed profession's reserved activities and who may perform them; Colorado's article 245 is this lesson's example.
+- **Coach exemption**: a statutory carve-out, like C.R.S. 12-245-217(2)(f), that keeps coaching lawful on stated conditions rather than by the absence of law.
+
 ## Sources
 Colorado Revised Statutes § 12-245-217. (n.d.). *Scope of article: Exemptions*. https://colorado.public.law/statutes/crs_12-245-217`,
       recallContent: [
@@ -210,7 +271,9 @@ Colorado Revised Statutes § 12-245-217. (n.d.). *Scope of article: Exemptions*.
       section: "Section 2 · Scope and law",
       body: `Every framework in this field converges on the same duty: know your scope, and refer when the work leaves it.
 
-**The NBHWC framing.** The program-approval handbook requires coaches to know and abide by the published scope of practice (competency 4.2), and the content outline builds referral into the craft: the coach maintains professional boundaries, seeks consultation when needed, and treats scope questions as ethics questions. The outline is explicit on one example this program will keep returning to: counseling on substance abuse is beyond the coach's scope of practice, and appropriate professional referral is the move (National Board for Health & Wellness Coaching, 2022, 2024).
+**The NBHWC framing.** The program-approval handbook requires coaches to know and abide by the published scope of practice (competency 4.2), and the 2026 edition's outline numbers the referral duty directly beneath it: competency 4.2.2, refer clients as appropriate, naming imminent danger, trauma treatment, mental health treatment, and other professional healthcare as the occasions. The outline builds referral into the craft: the coach maintains professional boundaries, seeks consultation when needed, and treats scope questions as ethics questions. It is explicit on one example this program will keep returning to: counseling on substance abuse is beyond the coach's scope of practice, and appropriate professional referral is the move (National Board for Health & Wellness Coaching, 2022, 2026).
+
+**The ethics code behind the boundary.** The NBHWC Code of Ethics turns the same duty into daily conduct. A coach openly discloses any conflict of interest to everyone involved and offers to step aside when one arises. Compensation from third parties, referral fees, or product sales is disclosed before coaching begins. A coach who also holds a clinical credential commits to the ethics code and standards of practice of EACH profession, understanding the scope parameters of each, which is the formal version of this course's two-hats rule. And the code's November 2025 update adds a distinctly modern duty: disclosing the use of artificial intelligence in the delivery of coaching services, including how it may affect client privacy (National Board for Health & Wellness Coaching, 2025).
 
 **The ACE red-flag list.** ACE's materials direct health coaches to refer to licensed providers for serious physical illness, disordered eating, suicidal ideation, and severe psychological distress (American Council on Exercise, n.d.). NASM's instructors teach the same posture: when work hedges into diagnosis or treatment territory, whether disordered eating, depression, or anxiety, the coach supports the client in engaging their physician or therapist rather than working the condition (National Academy of Sports Medicine, n.d.).
 
@@ -222,6 +285,15 @@ Colorado Revised Statutes § 12-245-217. (n.d.). *Scope of article: Exemptions*.
 
 :::reveal What are the four parts of a referral that keeps the relationship? ||| Name the observation without diagnosing; state plainly what is and is not yours to help with; offer concrete next steps (physician, therapist, crisis line when risk is imminent); and keep coaching what legitimately remains yours once licensed care is engaged.
 
+:::reveal Name two disclosure duties the NBHWC Code of Ethics places on coaches beyond referral. ||| Conflicts of interest are disclosed openly to everyone involved, with third-party compensation, referral fees, and product-sale income disclosed before coaching begins; and, since the November 2025 update, any use of artificial intelligence in delivering the coaching, including its privacy implications.
+
+## Vocabulary
+- **Referral trigger**: a sign in the work, like escalating substance use or function-altering symptoms, that obligates the coach to bring in licensed care.
+- **Red flag**: the observable cue behind a referral trigger, such as disclosed suicidal ideation, disordered eating patterns, or persistent distress that impairs daily life.
+- **Warm handoff**: a referral done as a skill: name the observation without diagnosing, state your lane, offer concrete next steps, and keep coaching what remains yours.
+- **Conflict of interest**: any competing interest that could bend the coaching relationship; the ethics code requires open disclosure and an offer to step aside.
+- **988 Suicide & Crisis Lifeline**: the United States three-digit crisis line; the concrete next step a coach offers when risk is imminent.
+
 ## Sources
 American Council on Exercise. (n.d.). *Certified health coach career guide*. https://contentcdn.eacefitness.com/assetportfoliodownloads/CareerGuide-HC.pdf
 
@@ -229,7 +301,9 @@ National Academy of Sports Medicine. (n.d.). *Introduction to the wellness coach
 
 National Board for Health & Wellness Coaching. (2022). *Content outline*. https://www.nbme.org/wp-content/uploads/2022/05/NBHWC_Content_Outline-2ca.pdf
 
-National Board for Health & Wellness Coaching. (2024). *Program approval handbook*. https://nbhwc.org/wp-content/uploads/2025/07/NBHWC_Handbook_Oct_2024-101724.pdf`,
+National Board for Health & Wellness Coaching. (2026). *Program approval handbook* (2026 ed.). https://nbhwc.org/wp-content/uploads/2026/04/NBHWC-Program-Approval-Handbook-2026-2.pdf
+
+National Board for Health & Wellness Coaching. (2025). *Code of ethics and professional conduct*. https://nbhwc.org/wp-content/uploads/2025/11/NBHWC-Code-of-Ethics-and-Professional-Conduct-1.pdf`,
     },
     {
       slug: "quiz-scope-and-law",
@@ -242,7 +316,7 @@ National Board for Health & Wellness Coaching. (2024). *Program approval handboo
           {
             prompt: "Per the NBHWC scope of practice, which of these belongs to the coach's role?",
             options: [
-              "Interpreting a client's lab results to guide their goals",
+              "Interpreting a client's lab results and adjusting their goals to match each marker's reference range",
               "Facilitating self-determined goals and supporting a clinician-prescribed plan's implementation",
               "Creating an individualized meal plan for a client's wellness goal",
               "Selecting a supplement stack matched to the client's training block",
@@ -253,22 +327,22 @@ National Board for Health & Wellness Coaching. (2024). *Program approval handboo
             sourceLessonSlug: "what-a-wellness-coach-is",
           },
           {
-            prompt: "Which four therapeutic modalities does the NBHWC scope document name as examples of what coaches do not provide?",
+            prompt: "Which therapeutic modalities does the NBHWC scope document name as examples of what coaches do not provide?",
             options: [
-              "CBT, EMDR, DBT, and Internal Family Systems Therapy",
-              "Psychoanalysis, hypnotherapy, exposure therapy, and ACT",
-              "Motivational interviewing, ACT, CBT, and group therapy",
-              "EMDR, biofeedback, psychoanalysis, and art therapy",
+              "CBT, EMDR, Solution Focused Therapy, DBT, and Internal Family Systems Therapy",
+              "Psychoanalysis, hypnotherapy, exposure therapy, ACT, and somatic experiencing",
+              "Motivational interviewing, ACT, CBT, group therapy, and psychodrama",
+              "EMDR, biofeedback, psychoanalysis, art therapy, and narrative therapy",
             ],
             correctIndex: 0,
             explanation:
-              "The scope document names Cognitive Behavioral Therapy, Eye Movement Desensitization and Reprocessing, Dialectical Behavioral Therapy, and Internal Family Systems Therapy. Motivational interviewing is a coaching-compatible style, not a named exclusion.",
+              "The scope document names Cognitive Behavioral Therapy, Eye Movement Desensitization and Reprocessing, Solution Focused Therapy, Dialectical Behavioral Therapy, and Internal Family Systems Therapy, sweeping in 'other such therapies' behind them. Motivational interviewing is a coaching-compatible style, not a named exclusion.",
             sourceLessonSlug: "the-exclusion-lists",
           },
           {
             prompt: "What is the difference between practice regulation and title regulation of dietetics?",
             options: [
-              "Practice regulation applies federally while title regulation is state law",
+              "Practice regulation applies federally through the FDA while title regulation is left to each state's legislature",
               "Title regulation reserves the work; practice regulation reserves the name",
               "Practice regulation reserves the work itself; title regulation reserves the professional name",
               "They are two names for the same licensure mechanism",
@@ -281,7 +355,7 @@ National Board for Health & Wellness Coaching. (2024). *Program approval handboo
           {
             prompt: "Michigan's 2024 dietetics law (PA 39 / MCL 333.18353) treats wellness coaching how?",
             options: [
-              "It bans individualized nutrition recommendations by anyone unlicensed",
+              "It bans all individualized nutrition recommendations by anyone unlicensed, including recommendations aimed at wellness or the primary prevention of chronic disease",
               "It explicitly exempts coaching activities by name, conditioned on no medical nutrition therapy and no protected titles",
               "It requires wellness coaches to register with the state board",
               "It is silent on coaching, leaving the question to the courts",
@@ -295,7 +369,7 @@ National Board for Health & Wellness Coaching. (2024). *Program approval handboo
             prompt: "Indiana's dietitian statute (IC 25-14.5-7-3) permits unlicensed people to do what?",
             options: [
               "Use the title 'licensed dietitian' if they hold an out-of-state license",
-              "Perform medical nutrition therapy under a coach's supervision",
+              "Perform medical nutrition therapy for stable chronic conditions, provided a licensed dietitian reviews the plan within thirty days",
               "Bill insurers for nutrition counseling under a wellness code",
               "Disseminate free information, conduct classes or seminars, and give speeches related to nutrition",
             ],
@@ -334,7 +408,7 @@ National Board for Health & Wellness Coaching. (2024). *Program approval handboo
             prompt: "Per the NBHWC content outline, a client's escalating substance use calls for what coaching response?",
             options: [
               "A structured moderation program designed by the coach",
-              "Motivational interviewing aimed at reducing the substance use itself",
+              "A motivational-interviewing program the coach designs and runs, aimed directly at reducing the substance use itself",
               "Professional referral, because substance-abuse counseling is beyond the coach's scope",
               "A confidentiality agreement before the topic is discussed further",
             ],
@@ -348,7 +422,7 @@ National Board for Health & Wellness Coaching. (2024). *Program approval handboo
             options: [
               "It is NCCA-accredited like the ACE Health Coach credential",
               "By NASM's own statement, it is a wellness credential and is not NCCA-accredited",
-              "It is accredited by the NBHWC as an approved program",
+              "It is accredited by the NBHWC as an approved training program for the national board-exam pathway",
               "Accreditation is pending a 2027 NCCA review",
             ],
             correctIndex: 1,
@@ -361,7 +435,7 @@ National Board for Health & Wellness Coaching. (2024). *Program approval handboo
             options: [
               "Keeping the roles distinguishable: programming happens under the CPT credential, facilitation under the coaching role",
               "Programming only bodyweight movements while coaching",
-              "Having clients sign a waiver acknowledging the coach's dual role",
+              "Having every client sign a waiver acknowledging the coach's dual role, which moves the scope question from statute into contract law",
               "Limiting programming to plans published by government agencies",
             ],
             correctIndex: 0,
@@ -375,7 +449,7 @@ National Board for Health & Wellness Coaching. (2024). *Program approval handboo
               "Individualized therapeutic diets when the client signs consent",
               "General evidence-based education: portions, labels, government guidelines, and behavior coaching",
               "Supplement recommendations limited to third-party-tested products",
-              "Meal plans, provided they are reviewed by the client's physician afterward",
+              "Individualized meal plans, provided the client's physician reviews and countersigns each plan after it is delivered",
             ],
             correctIndex: 1,
             explanation:
@@ -387,7 +461,7 @@ National Board for Health & Wellness Coaching. (2024). *Program approval handboo
             options: [
               "Because no state has yet written coaching into statute",
               "Because edge cases are evaluated by boards and courts case by case under the functional test",
-              "Because NBHWC and ACE publish conflicting boundary definitions",
+              "Because NBHWC and ACE publish conflicting boundary definitions that regulators have declined to reconcile in written guidance",
               "Because federal law preempts the state practice acts involved",
             ],
             correctIndex: 1,
@@ -398,7 +472,7 @@ National Board for Health & Wellness Coaching. (2024). *Program approval handboo
           {
             prompt: "In the NBHWC scope's language, what may coaches offer alongside facilitation?",
             options: [
-              "Diagnostic impressions, clearly labeled as non-binding",
+              "Diagnostic impressions, provided each is clearly labeled as non-binding and revisited with the client's own physician",
               "Evidence-based resources and information from nationally recognized authorities",
               "Interpretations of the client's recent lab panel",
               "De-prescription schedules for supplements the client wants to quit",
@@ -435,7 +509,12 @@ Where this program touches courses you already have here, it bridges instead of 
 
 :::reveal Why are the movement and nutrition courses the SHORTEST in a wellness-coaching program? ||| Because this program assumes your CPT, CES, and CNC. Those courses teach only what your certifications do not: the coaching conversation, the adherence evidence, and the applied scope lines. Re-teaching the content would pad the program without adding capability.
 
-:::reveal Why does the mental well-being course come late in the sequence? ||| It works closest to the therapy boundary, so it deliberately follows the scope and referral training, and it re-applies that training throughout.`,
+:::reveal Why does the mental well-being course come late in the sequence? ||| It works closest to the therapy boundary, so it deliberately follows the scope and referral training, and it re-applies that training throughout.
+
+## Vocabulary
+- **Thin bridge**: a course deliberately kept short because it teaches only the coaching layer over content another credential already covers, as WELL-02 and WELL-03 do over your CPT, CES, and CNC.
+- **Capstone**: the program's final course, WELL-99, distinguished by a project: build and coach your own centenarian protocol with every tool the program taught.
+- **Linear path**: a course sequence where each course assumes everything before it, which is why the scope training precedes the course that walks closest to the therapy line.`,
       recallContent: [
         {
           prompt: "What makes WELL-99 different from every other course in the program?",
@@ -462,6 +541,12 @@ Where this program touches courses you already have here, it bridges instead of 
 
 :::reveal What is the mock-exam week, mechanically? ||| One sitting after all eight courses: retake every course final back to back, 10 freshly drawn questions each, 80 questions total. It is this program's honest equivalent of an exam day, not a claim to be one.
 
+## Vocabulary
+- **Question pool**: the full set of questions a quiz owns, from which each attempt draws a subset; this program's finals pool 30 to 60.
+- **Fresh draw**: a retake's new subset from the pool, which is what makes a second attempt measure retention instead of recognition.
+- **Passing-score calibration**: setting the bar to the exam's conditions; 80 here, above NASM's 70, because retakeable open-book finals owe a higher standard.
+- **Mock-exam week**: the capstone's prescribed single sitting of all eight course finals back to back, this program's honest equivalent of a certification exam day.
+
 ## Sources
 National Academy of Sports Medicine. (n.d.). *Certified wellness coach*. https://www.nasm.org/products/certified-wellness-coach`,
     },
@@ -483,7 +568,13 @@ And one program-specific practice: you are the first client. Each course ends wi
 
 :::reveal Why take a course final twice, a week apart? ||| The second attempt draws a fresh question subset from the pool, so it measures retention rather than recognition of the first attempt's questions. The gap between the two scores is the honest signal.
 
-:::reveal What two things should your notes track in this program? ||| Every scope boundary annotated with the real situation from your own practice it resembles, and a running list of claims to verify against the primary sources cited in each lesson.`,
+:::reveal What two things should your notes track in this program? ||| Every scope boundary annotated with the real situation from your own practice it resembles, and a running list of claims to verify against the primary sources cited in each lesson.
+
+## Vocabulary
+- **Retrieval practice**: answering from memory before checking, the mechanism behind the check-yourself cards; the struggle to recall is the learning event.
+- **Spaced retrieval**: recalling material again after a delay, as the quick-recall openers do with the prior lesson; the cheapest learning multiplier in the building.
+- **Recall accuracy**: your dashboard's running measure of self-graded card answers, the earliest signal that a section did not stick.
+- **Retention versus recognition**: remembering the material versus remembering the question; a week-later retake with a fresh draw measures the first, not the second.`,
       recallContent: [
         {
           prompt: "Name the four study instruments this platform gives you and one use for each.",
@@ -504,7 +595,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "What does completing this program grant, with respect to NASM and NBHWC?",
             options: [
-              "Eligibility to sit the NBHWC board exam",
+              "Eligibility to sit the NBHWC board exam once fifty coaching sessions are logged against this program's completion letter",
               "Nothing from either organization; it is an independent study program and says so on every course",
               "A NASM CWC voucher at a partner discount",
               "Provisional NBHWC membership pending review",
@@ -519,7 +610,7 @@ And one program-specific practice: you are the first client. Each course ends wi
             options: [
               "Deep-research exports gathered candidates, then every load-bearing claim was verified against its primary source before entering a lesson",
               "Each course began from a certification body's official dossier",
-              "Lessons were drafted first and sources attached afterward",
+              "Lessons were drafted first from the raw research exports, with citations attached afterward to whichever claims survived the editorial review of each course",
               "An AI summarized the field and the summaries were used directly",
             ],
             correctIndex: 0,
@@ -556,7 +647,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "A coach wants to help a client 'work through childhood trauma affecting their eating.' Scope verdict?",
             options: [
-              "In scope if framed as nutrition coaching",
+              "In scope if framed as nutrition coaching, because the presenting concern is eating behavior rather than the childhood trauma itself",
               "In scope with the client's written consent",
               "In scope if the coach has personal experience with trauma",
               "Out of scope: trauma processing is therapy territory; refer, and coach the present-focused behaviors that remain",
@@ -570,7 +661,7 @@ And one program-specific practice: you are the first client. Each course ends wi
             prompt: "Which activity fits Michigan's MCL 333.18353 exemption for unlicensed practice?",
             options: [
               "Weight-management coaching with individualized wellness recommendations, no protected title used",
-              "Designing therapeutic diets for a client's kidney disease",
+              "Designing therapeutic diets for a client's stage 3 kidney disease under the exemption's weight-management-services language",
               "Marketing services as a 'licensed dietitian nutritionist' while awaiting licensure",
               "Billing medical nutrition therapy codes for wellness sessions",
             ],
@@ -582,7 +673,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "The referral handoff taught in this course includes which element?",
             options: [
-              "Providing a working diagnosis so the professional can start faster",
+              "Providing the professional a working diagnosis and treatment suggestions so the licensed care can begin faster",
               "Pausing all coaching until the client completes treatment",
               "Naming the observation without diagnosing, and keeping the in-scope coaching alongside licensed care",
               "Requiring proof of a booked appointment before the next session",
@@ -597,7 +688,7 @@ And one program-specific practice: you are the first client. Each course ends wi
             options: [
               "Movement and nutrition coaching lack an evidence base to teach",
               "The program assumes CPT/CES/CNC content, so those courses teach only the coaching layer; the coaching craft itself is the new material",
-              "The program de-prioritizes movement and nutrition relative to sleep",
+              "The program de-prioritizes movement and nutrition relative to recovery and sleep, which its centenarian framing treats as the higher-leverage pillars for longevity",
               "Platform limits cap most courses at fourteen lessons",
             ],
             correctIndex: 1,
@@ -610,7 +701,7 @@ And one program-specific practice: you are the first client. Each course ends wi
             options: [
               "To advertise itself as harder than NASM's exam",
               "Because pooled questions are easier than fixed forms",
-              "Because NBHWC requires 80 for approved programs",
+              "Because the NBHWC requires an 80 percent pass mark on the finals of all of its approved training programs",
               "Because retakeable, unproctored, open-book finals compensate with a higher bar",
             ],
             correctIndex: 3,
@@ -623,7 +714,7 @@ And one program-specific practice: you are the first client. Each course ends wi
             options: [
               "Take each final twice, a week apart; the fresh draw measures retention",
               "Take each final once, immediately, and move on",
-              "Save all finals for the mock-exam week only",
+              "Save every course final for the mock-exam week, so all first attempts happen as fresh draws in one sitting",
               "Retake each final daily until scoring 100",
             ],
             correctIndex: 0,
@@ -637,7 +728,7 @@ And one program-specific practice: you are the first client. Each course ends wi
               "Out of scope: only clinicians may share health information",
               "In scope: sharing evidence-based resources from nationally recognized authorities while facilitating the client's own plan",
               "In scope only if the coach also holds a CPT",
-              "Out of scope unless the client's physician approves the handout",
+              "Out of scope unless the client's physician approves the specific handout in writing before the coaching session in which it is shared",
             ],
             correctIndex: 1,
             explanation:
@@ -647,7 +738,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "Which situation is the clearest 'get legal counsel' gray zone from the nutrition-law lesson?",
             options: [
-              "Teaching a free public seminar on reading nutrition labels",
+              "Teaching a free public seminar on reading nutrition labels to an audience that may include people with diagnosed conditions",
               "Disease-focused individualized diet planning that stops short of claiming medical nutrition therapy",
               "Sharing the Dietary Guidelines for Americans with a client",
               "Coaching meal-prep logistics for a healthy adult",
@@ -660,14 +751,14 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "What did this program's verification find about the widely cited NBHWC 'competency 4.2.7'?",
             options: [
-              "It is the referral competency, confirmed verbatim in the 2024 handbook",
+              "It is the referral competency, confirmed verbatim in the 2024 program-approval handbook's ethics and legal domain listing of competencies",
               "The number did not survive verification; the handbook's confirmable competency is 4.2, knowing and abiding by the scope of practice",
               "It was retired in 2020 and replaced by competency 5.1",
               "It exists only in the ACE career guide",
             ],
             correctIndex: 1,
             explanation:
-              "Verification confirmed handbook competency 4.2 (know and abide by the current scope of practice) and could not confirm a 4.2.7. The program cites what verified and says so, which is the dossier-first discipline working as intended.",
+              "Verification confirmed handbook competency 4.2 (know and abide by the current scope of practice) and could not confirm a 4.2.7. The 2026 handbook's outline numbers the referral duty 4.2.2, still not 4.2.7. The program cites what verified and says so, which is the dossier-first discipline working as intended.",
             sourceLessonSlug: "what-this-program-is",
           },
           {
@@ -675,7 +766,7 @@ And one program-specific practice: you are the first client. Each course ends wi
             options: [
               "Apply the referral trigger to yourself: function-altering persistent symptoms go to a professional, then keep self-coaching what remains",
               "Self-coaching is exempt from scope rules, so proceed as planned",
-              "Program around it using your CES until the capstone",
+              "Program around it using your CES corrective strategies, since assessing movement compensations is already inside your existing scope",
               "Defer all training decisions until WELL-04 covers recovery",
             ],
             correctIndex: 0,

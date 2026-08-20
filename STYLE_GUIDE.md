@@ -74,6 +74,10 @@ Every customer-facing surface must pass before it can merge:
 ## 3. Content policy (BVC content rules are product features)
 
 - Every factual claim ties to a verified source; APA 7 in-line + `## Sources` bibliography.
+- **Lessons in the WELL program (and new courses going forward) carry a `## Vocabulary` block**
+  above `## Sources` (or at the body's end when a lesson has no sources): 3-6 terms as
+  `- **Term**: definition` bullets, each defined in the lesson's own voice and specific to what
+  THAT lesson taught, never generic dictionary filler. Quiz-only lessons skip it.
 - **A new course joins the citation list before it ships.** Add its slug to `STAGED_COURSES` in
   [src/lib/citations.ts](src/lib/citations.ts), run `pnpm gen:citations`, and commit the regenerated
   registry. `pnpm check:citations` (part of `pnpm lint`) fails a staged course that generated zero
