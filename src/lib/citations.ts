@@ -71,6 +71,8 @@ export interface Citation {
 export const STAGED_COURSES: string[] = [
   // Newly created, never reviewed by anyone
   "voice-acting",
+  "well-orientation-scope",
+  "well-coaching-psychology",
   "bvc-taster-wine",
   "bvc-taster-coffee",
   "bvc-taster-chocolate",
