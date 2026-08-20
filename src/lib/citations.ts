@@ -76,6 +76,7 @@ export const STAGED_COURSES: string[] = [
   "well-coaching-movement",
   "well-coaching-nutrition",
   "well-recovery-stress",
+  "well-sleep",
   "bvc-taster-wine",
   "bvc-taster-coffee",
   "bvc-taster-chocolate",
