@@ -314,7 +314,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
           {
             prompt: "Per the NBHWC scope of practice, which of these belongs to the coach's role?",
             options: [
-              "Interpreting a client's lab results to guide their goals",
+              "Interpreting a client's lab results and adjusting their goals to match each marker's reference range",
               "Facilitating self-determined goals and supporting a clinician-prescribed plan's implementation",
               "Creating an individualized meal plan for a client's wellness goal",
               "Selecting a supplement stack matched to the client's training block",
@@ -340,7 +340,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
           {
             prompt: "What is the difference between practice regulation and title regulation of dietetics?",
             options: [
-              "Practice regulation applies federally while title regulation is state law",
+              "Practice regulation applies federally through the FDA while title regulation is left to each state's legislature",
               "Title regulation reserves the work; practice regulation reserves the name",
               "Practice regulation reserves the work itself; title regulation reserves the professional name",
               "They are two names for the same licensure mechanism",
@@ -353,7 +353,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
           {
             prompt: "Michigan's 2024 dietetics law (PA 39 / MCL 333.18353) treats wellness coaching how?",
             options: [
-              "It bans individualized nutrition recommendations by anyone unlicensed",
+              "It bans all individualized nutrition recommendations by anyone unlicensed, including recommendations aimed at wellness or the primary prevention of chronic disease",
               "It explicitly exempts coaching activities by name, conditioned on no medical nutrition therapy and no protected titles",
               "It requires wellness coaches to register with the state board",
               "It is silent on coaching, leaving the question to the courts",
@@ -367,7 +367,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
             prompt: "Indiana's dietitian statute (IC 25-14.5-7-3) permits unlicensed people to do what?",
             options: [
               "Use the title 'licensed dietitian' if they hold an out-of-state license",
-              "Perform medical nutrition therapy under a coach's supervision",
+              "Perform medical nutrition therapy for stable chronic conditions, provided a licensed dietitian reviews the plan within thirty days",
               "Bill insurers for nutrition counseling under a wellness code",
               "Disseminate free information, conduct classes or seminars, and give speeches related to nutrition",
             ],
@@ -406,7 +406,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
             prompt: "Per the NBHWC content outline, a client's escalating substance use calls for what coaching response?",
             options: [
               "A structured moderation program designed by the coach",
-              "Motivational interviewing aimed at reducing the substance use itself",
+              "A motivational-interviewing program the coach designs and runs, aimed directly at reducing the substance use itself",
               "Professional referral, because substance-abuse counseling is beyond the coach's scope",
               "A confidentiality agreement before the topic is discussed further",
             ],
@@ -420,7 +420,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
             options: [
               "It is NCCA-accredited like the ACE Health Coach credential",
               "By NASM's own statement, it is a wellness credential and is not NCCA-accredited",
-              "It is accredited by the NBHWC as an approved program",
+              "It is accredited by the NBHWC as an approved training program for the national board-exam pathway",
               "Accreditation is pending a 2027 NCCA review",
             ],
             correctIndex: 1,
@@ -433,7 +433,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
             options: [
               "Keeping the roles distinguishable: programming happens under the CPT credential, facilitation under the coaching role",
               "Programming only bodyweight movements while coaching",
-              "Having clients sign a waiver acknowledging the coach's dual role",
+              "Having every client sign a waiver acknowledging the coach's dual role, which moves the scope question from statute into contract law",
               "Limiting programming to plans published by government agencies",
             ],
             correctIndex: 0,
@@ -447,7 +447,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
               "Individualized therapeutic diets when the client signs consent",
               "General evidence-based education: portions, labels, government guidelines, and behavior coaching",
               "Supplement recommendations limited to third-party-tested products",
-              "Meal plans, provided they are reviewed by the client's physician afterward",
+              "Individualized meal plans, provided the client's physician reviews and countersigns each plan after it is delivered",
             ],
             correctIndex: 1,
             explanation:
@@ -459,7 +459,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
             options: [
               "Because no state has yet written coaching into statute",
               "Because edge cases are evaluated by boards and courts case by case under the functional test",
-              "Because NBHWC and ACE publish conflicting boundary definitions",
+              "Because NBHWC and ACE publish conflicting boundary definitions that regulators have declined to reconcile in written guidance",
               "Because federal law preempts the state practice acts involved",
             ],
             correctIndex: 1,
@@ -470,7 +470,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
           {
             prompt: "In the NBHWC scope's language, what may coaches offer alongside facilitation?",
             options: [
-              "Diagnostic impressions, clearly labeled as non-binding",
+              "Diagnostic impressions, provided each is clearly labeled as non-binding and revisited with the client's own physician",
               "Evidence-based resources and information from nationally recognized authorities",
               "Interpretations of the client's recent lab panel",
               "De-prescription schedules for supplements the client wants to quit",
@@ -593,7 +593,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "What does completing this program grant, with respect to NASM and NBHWC?",
             options: [
-              "Eligibility to sit the NBHWC board exam",
+              "Eligibility to sit the NBHWC board exam once fifty coaching sessions are logged against this program's completion letter",
               "Nothing from either organization; it is an independent study program and says so on every course",
               "A NASM CWC voucher at a partner discount",
               "Provisional NBHWC membership pending review",
@@ -608,7 +608,7 @@ And one program-specific practice: you are the first client. Each course ends wi
             options: [
               "Deep-research exports gathered candidates, then every load-bearing claim was verified against its primary source before entering a lesson",
               "Each course began from a certification body's official dossier",
-              "Lessons were drafted first and sources attached afterward",
+              "Lessons were drafted first from the raw research exports, with citations attached afterward to whichever claims survived the editorial review of each course",
               "An AI summarized the field and the summaries were used directly",
             ],
             correctIndex: 0,
@@ -645,7 +645,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "A coach wants to help a client 'work through childhood trauma affecting their eating.' Scope verdict?",
             options: [
-              "In scope if framed as nutrition coaching",
+              "In scope if framed as nutrition coaching, because the presenting concern is eating behavior rather than the childhood trauma itself",
               "In scope with the client's written consent",
               "In scope if the coach has personal experience with trauma",
               "Out of scope: trauma processing is therapy territory; refer, and coach the present-focused behaviors that remain",
@@ -659,7 +659,7 @@ And one program-specific practice: you are the first client. Each course ends wi
             prompt: "Which activity fits Michigan's MCL 333.18353 exemption for unlicensed practice?",
             options: [
               "Weight-management coaching with individualized wellness recommendations, no protected title used",
-              "Designing therapeutic diets for a client's kidney disease",
+              "Designing therapeutic diets for a client's stage 3 kidney disease under the exemption's weight-management-services language",
               "Marketing services as a 'licensed dietitian nutritionist' while awaiting licensure",
               "Billing medical nutrition therapy codes for wellness sessions",
             ],
@@ -671,7 +671,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "The referral handoff taught in this course includes which element?",
             options: [
-              "Providing a working diagnosis so the professional can start faster",
+              "Providing the professional a working diagnosis and treatment suggestions so the licensed care can begin faster",
               "Pausing all coaching until the client completes treatment",
               "Naming the observation without diagnosing, and keeping the in-scope coaching alongside licensed care",
               "Requiring proof of a booked appointment before the next session",
@@ -686,7 +686,7 @@ And one program-specific practice: you are the first client. Each course ends wi
             options: [
               "Movement and nutrition coaching lack an evidence base to teach",
               "The program assumes CPT/CES/CNC content, so those courses teach only the coaching layer; the coaching craft itself is the new material",
-              "The program de-prioritizes movement and nutrition relative to sleep",
+              "The program de-prioritizes movement and nutrition relative to recovery and sleep, which its centenarian framing treats as the higher-leverage pillars for longevity",
               "Platform limits cap most courses at fourteen lessons",
             ],
             correctIndex: 1,
@@ -699,7 +699,7 @@ And one program-specific practice: you are the first client. Each course ends wi
             options: [
               "To advertise itself as harder than NASM's exam",
               "Because pooled questions are easier than fixed forms",
-              "Because NBHWC requires 80 for approved programs",
+              "Because the NBHWC requires an 80 percent pass mark on the finals of all of its approved training programs",
               "Because retakeable, unproctored, open-book finals compensate with a higher bar",
             ],
             correctIndex: 3,
@@ -712,7 +712,7 @@ And one program-specific practice: you are the first client. Each course ends wi
             options: [
               "Take each final twice, a week apart; the fresh draw measures retention",
               "Take each final once, immediately, and move on",
-              "Save all finals for the mock-exam week only",
+              "Save every course final for the mock-exam week, so all first attempts happen as fresh draws in one sitting",
               "Retake each final daily until scoring 100",
             ],
             correctIndex: 0,
@@ -726,7 +726,7 @@ And one program-specific practice: you are the first client. Each course ends wi
               "Out of scope: only clinicians may share health information",
               "In scope: sharing evidence-based resources from nationally recognized authorities while facilitating the client's own plan",
               "In scope only if the coach also holds a CPT",
-              "Out of scope unless the client's physician approves the handout",
+              "Out of scope unless the client's physician approves the specific handout in writing before the coaching session in which it is shared",
             ],
             correctIndex: 1,
             explanation:
@@ -736,7 +736,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "Which situation is the clearest 'get legal counsel' gray zone from the nutrition-law lesson?",
             options: [
-              "Teaching a free public seminar on reading nutrition labels",
+              "Teaching a free public seminar on reading nutrition labels to an audience that may include people with diagnosed conditions",
               "Disease-focused individualized diet planning that stops short of claiming medical nutrition therapy",
               "Sharing the Dietary Guidelines for Americans with a client",
               "Coaching meal-prep logistics for a healthy adult",
@@ -749,7 +749,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "What did this program's verification find about the widely cited NBHWC 'competency 4.2.7'?",
             options: [
-              "It is the referral competency, confirmed verbatim in the 2024 handbook",
+              "It is the referral competency, confirmed verbatim in the 2024 program-approval handbook's ethics and legal domain listing of competencies",
               "The number did not survive verification; the handbook's confirmable competency is 4.2, knowing and abiding by the scope of practice",
               "It was retired in 2020 and replaced by competency 5.1",
               "It exists only in the ACE career guide",
@@ -764,7 +764,7 @@ And one program-specific practice: you are the first client. Each course ends wi
             options: [
               "Apply the referral trigger to yourself: function-altering persistent symptoms go to a professional, then keep self-coaching what remains",
               "Self-coaching is exempt from scope rules, so proceed as planned",
-              "Program around it using your CES until the capstone",
+              "Program around it using your CES corrective strategies, since assessing movement compensations is already inside your existing scope",
               "Defer all training decisions until WELL-04 covers recovery",
             ],
             correctIndex: 0,

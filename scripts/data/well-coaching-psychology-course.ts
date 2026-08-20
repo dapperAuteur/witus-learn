@@ -37,6 +37,12 @@ Small does not mean unimportant. Small, reliable effects compound across months 
 
 :::reveal Why does a course for a certified trainer open by saying knowledge does not change behavior? ||| Because the trainer's knowledge is already in the room and the client still is not changing. The missing layer is the change craft itself, which is what this course teaches and what the certifications assume.
 
+## Vocabulary
+- **Standardized mean difference (SMD, d)**: an effect expressed in standard-deviation units so studies can be compared; near 0.2 small, near 0.5 moderate, near 0.8 large.
+- **Meta-analysis**: a study of studies that pools trial results into one weighted estimate; this course quotes them in preference to single trials wherever they exist.
+- **Evidence certainty**: a separate judgment from effect size: how much the estimate can be trusted, downgraded for bias risk and inconsistency; coaching's is mostly low.
+- **Self-efficacy**: a person's belief they can execute the behavior in question; one of coaching's most reliably moved outcomes.
+
 ## Sources
 Boehmer, K. R., et al. (2023). The impact of health and wellness coaching on patient-important outcomes in chronic illness care: A systematic review and meta-analysis. *Patient Education and Counseling, 117*, 107975. https://pmc.ncbi.nlm.nih.gov/articles/PMC10964774/`,
     },
@@ -55,6 +61,13 @@ Boehmer, K. R., et al. (2023). The impact of health and wellness coaching on pat
 :::reveal Name the five TTM stages and the model's honest job in this program. ||| Precontemplation, contemplation, preparation, action, maintenance. Its job here is a readiness heuristic for choosing the right conversation, not a validated rulebook, because stage-matched superiority has only mixed evidence.
 
 :::reveal What are the two contested parts of TTM this lesson names? ||| Whether stages are truly discrete rather than cut-points on continuous readiness, and whether stage-matched interventions actually outperform good non-staged interventions, where reviews find modest, inconsistent advantages.
+
+## Vocabulary
+- **Transtheoretical model (TTM)**: Prochaska and colleagues' account of change as movement through stages, driven by processes of change, decisional balance, and self-efficacy.
+- **Stages of change**: precontemplation, contemplation, preparation, action, maintenance; useful as a readiness read, contested as discrete categories.
+- **Decisional balance**: the client's running ledger of pros and cons of changing, which shifts across the stages.
+- **Stage-matching**: tailoring the intervention to the assessed stage; its claimed superiority over good unstaged work is the model's weakest evidence.
+- **Readiness heuristic**: this program's honest job description for TTM: a quick read of where the client is that shapes the conversation without forbidding tools.
 
 ## Sources
 Prochaska, J. O., & Velicer, W. F. (1997). The transtheoretical model of health behavior change. *American Journal of Health Promotion, 12*(1), 38-48. https://pubmed.ncbi.nlm.nih.gov/10170434/`,
@@ -82,6 +95,13 @@ Prochaska, J. O., & Velicer, W. F. (1997). The transtheoretical model of health 
 
 :::reveal SDT intervention effects run around d = 0.2 to 0.3. Is that an argument against using it? ||| No. Small, reliable, mechanism-consistent effects compound over months, and SDT describes the mechanism most other effective techniques run on. The argument it DOES support: operationalize need support rigorously, because label-only SDT programs show null effects.
 
+## Vocabulary
+- **Autonomy**: the need for the change to be genuinely one's own choice; supported with options and rationale, thwarted by prescriptions and pressure.
+- **Competence**: the need to see oneself succeeding at the behavior; supported by right-sized challenges and visible progress.
+- **Relatedness**: the need to be connected to people who matter in the change, the coach's genuine regard included.
+- **Autonomous motivation**: intrinsic and identified regulation, acting from choice and personal value; the form of motivation that predicts maintained behavior.
+- **Need support**: coaching behavior that feeds the three needs; the active ingredient SDT interventions run on, and the thing label-only programs skip.
+
 ## Sources
 Ntoumanis, N., et al. (2020). A meta-analysis of self-determination theory-informed intervention studies in the health domain: Effects on motivation, health behavior, physical, and psychological health. *Health Psychology Review, 15*(2), 214-244. https://pubmed.ncbi.nlm.nih.gov/31983293/`,
     },
@@ -102,6 +122,12 @@ Ntoumanis, N., et al. (2020). A meta-analysis of self-determination theory-infor
 :::reveal Quote the three Lally numbers a coach should know exactly. ||| Time to 95 percent of the automaticity plateau ranged from 18 to 254 days with a median of 66; and missing one opportunity did not materially affect formation. The famous 21 days appears nowhere in the data.
 
 :::reveal Why does anchoring a habit to "after I park at work" beat "in the afternoon sometime"? ||| Automaticity grows from repetition in a stable context, and the cue carries the behavior. A reliable event is a stable cue; a vague time window forces deliberation every day, which is exactly what habit formation is supposed to retire.
+
+## Vocabulary
+- **Automaticity**: the quality of a behavior firing with little deliberation once its cue appears; what habit formation builds and the Self-Report Habit Index measures.
+- **Context cue**: the stable, reliably occurring event a habit is anchored to; the cue, not willpower, carries a formed habit.
+- **Asymptotic curve**: fast early gains that flatten toward a plateau; the shape automaticity followed in Lally's data.
+- **Median**: the middle value of a distribution; the 66 days is a median, which matters because the 18-to-254-day range makes any single average misleading.
 
 ## Sources
 Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W., & Wardle, J. (2010). How are habits formed: Modelling habit formation in the real world. *European Journal of Social Psychology, 40*(6), 998-1009. https://onlinelibrary.wiley.com/doi/10.1002/ejsp.674`,
@@ -137,6 +163,12 @@ The pattern across all four: the lore versions promise certainty and speed; the 
 :::reveal What did Oettingen's research find about idealized positive fantasies on their own? ||| They can reduce the energy available for pursuit, measurable as dampened systolic blood pressure, the energization signal. Imagining the wish without its obstacles can sedate rather than mobilize, which is why mental contrasting pairs the two.
 
 :::reveal What is the general tell that a technique's pitch is lore rather than evidence? ||| No conditions attached. Evidence-backed techniques come with ranges, moderators, and fidelity requirements; lore promises certainty and speed with none.
+
+## Vocabulary
+- **Practitioner lore**: technique folklore that travels on promise rather than data; every field has it, and a coach who cannot name theirs teaches it by accident.
+- **Fidelity**: how faithfully an intervention is delivered as tested; MI's evidence belongs to high-fidelity delivery, not to anything wearing the label.
+- **Energization**: the body's mobilized readiness to act, measurable via systolic blood pressure; idealized fantasy alone dampens it.
+- **Positive fantasy**: vivid imagining of the desired future without its obstacles; pleasant, and capable of substituting for pursuit rather than fueling it.
 
 ## Sources
 Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W., & Wardle, J. (2010). How are habits formed: Modelling habit formation in the real world. *European Journal of Social Psychology, 40*(6), 998-1009. https://onlinelibrary.wiley.com/doi/10.1002/ejsp.674
@@ -196,7 +228,7 @@ Oettingen, G. (2014). *Rethinking positive thinking: Inside the new science of m
               "Large effects, d near 0.8",
               "No reliable effects at all",
               "Small effects, d around 0.2 to 0.3, mediated by autonomous motivation",
-              "Effects only in adolescent populations",
+              "Reliable effects only in adolescent populations, where school-based delivery enforces intervention fidelity",
             ],
             correctIndex: 2,
             explanation:
@@ -209,7 +241,7 @@ Oettingen, G. (2014). *Rethinking positive thinking: Inside the new science of m
               "Stage-matched interventions consistently outperform all alternatives",
               "The stages have been shown not to exist",
               "Reading readiness is useful, but evidence for stage-matched superiority is mixed and modest",
-              "Stage-matching works only in substance-use populations",
+              "Stage-matching works only in substance-use populations, where the model was first derived from smoking-cessation cohorts",
             ],
             correctIndex: 2,
             explanation:
@@ -222,7 +254,7 @@ Oettingen, G. (2014). *Rethinking positive thinking: Inside the new science of m
               "Large effects on all outcomes with high certainty",
               "QoL, self-efficacy, and depression improvements at small-to-moderate sizes, no anxiety effect, low certainty",
               "No effects on any patient-important outcome",
-              "Effects only when coaching exceeded twelve months",
+              "Improvements only when coaching exceeded twelve months of continuous sessions, with earlier measurement points showing nothing",
             ],
             correctIndex: 1,
             explanation:
@@ -235,7 +267,7 @@ Oettingen, G. (2014). *Rethinking positive thinking: Inside the new science of m
               "Idealized positive fantasies can dampen energization, measured via systolic blood pressure",
               "Visualization only works for athletes",
               "Imagining success violates SDT's competence need",
-              "It cannot backfire; the concern is only wasted time",
+              "It cannot backfire; the research concern is only the session time it consumes without adding measurable benefit",
             ],
             correctIndex: 0,
             explanation:
@@ -245,7 +277,7 @@ Oettingen, G. (2014). *Rethinking positive thinking: Inside the new science of m
           {
             prompt: "A program advertises 'MI-based coaching' with no practitioner training or fidelity checks. What does the MI evidence say about it?",
             options: [
-              "The meta-analytic support transfers automatically to anything labeled MI",
+              "The meta-analytic support transfers automatically to anything labeled MI, since the label itself tracks the training behind it",
               "Nothing; that program is outside the trials' conditions, and reviews flag exactly this gap",
               "It will show larger effects because it is less rigid",
               "The label is legally protected, so the program cannot exist",
@@ -274,7 +306,7 @@ Oettingen, G. (2014). *Rethinking positive thinking: Inside the new science of m
               "Prescribing the plan the evidence says is optimal",
               "Offering choices with rationale: 'here are three ways people handle this; which fits your life?'",
               "Setting consequences for missed sessions",
-              "Repeating the client's goal back to them weekly",
+              "Repeating the client's stated goal back to them at the start of every weekly session until it is achieved",
             ],
             correctIndex: 1,
             explanation:
@@ -309,6 +341,13 @@ Notice how precisely this spirit matches the NBHWC scope you learned in WELL-00:
 
 :::reveal What happens to MI's techniques when the spirit is missing? ||| They collapse into manipulation: steering dressed as listening. The fourth edition is explicit that skills without the underlying posture of partnership and acceptance are not MI.
 
+## Vocabulary
+- **Motivational interviewing (MI)**: a guiding style of conversation for strengthening a person's own motivation and commitment to change, developed by Miller and Rollnick.
+- **Guiding style**: the posture between directing (expert supplies answers) and following (listener drifts with the client); MI's deliberate home.
+- **Spirit of MI**: the underlying attitude the techniques require: partnership, acceptance, compassion, and empowerment in the fourth edition.
+- **Empowerment**: the fourth edition's broadening of evocation: the client's capability, not just their motivation, is already present, and the coach makes it visible.
+- **Evocation**: the third edition's term for drawing out the client's own motivations; still accurate, now folded inside empowerment. Cite the current vocabulary.
+
 ## Sources
 Miller, W. R., & Rollnick, S. (2023). *Motivational interviewing: Helping people change and grow* (4th ed.). Guilford Press.`,
     },
@@ -329,6 +368,11 @@ Miller, W. R., & Rollnick, S. (2023). *Motivational interviewing: Helping people
 :::reveal What is the fixing reflex, and what was it called before the fourth edition? ||| The helper's urge, on hearing a problem, to supply the fix: the plan, the correction, the argument for change. Earlier editions called it the righting reflex; the fourth edition renamed it for clarity.
 
 :::reveal Mechanically, why does arguing for change often strengthen an ambivalent person's case against it? ||| An ambivalent person holds both sides. When you voice the change side, they are left voicing the stay-the-same side, and people are persuaded by what they hear themselves say.
+
+## Vocabulary
+- **Fixing reflex**: the helper's urge, on hearing a problem, to supply the fix: the plan, the correction, the argument for change. The fourth edition's rename of the righting reflex.
+- **Ambivalence**: wanting to change and wanting not to at the same time; the normal state of a person considering change, not a defect to be argued away.
+- **Righting reflex**: the earlier editions' name for the fixing reflex; you will meet it in older literature.
 
 ## Sources
 Miller, W. R., & Rollnick, S. (2023). *Motivational interviewing: Helping people change and grow* (4th ed.). Guilford Press.`,
@@ -358,6 +402,13 @@ Practice both against your own program this week: one open question you ask your
 
 :::reveal Why does MI prefer affirmation to praise? ||| Praise makes the coach the judge and pays in approval, a fragile external motivator. Affirmation makes the client capable and pays in evidence about themselves, feeding the empowerment component of the spirit.
 
+## Vocabulary
+- **OARS**: MI's four engaging skills: Open questions, Affirming, Reflecting, Summarizing. Advice is conspicuously absent, and the absence is the method.
+- **Open question**: a question inviting elaboration rather than a yes, a no, or a number; in MI it sets up reflections rather than replacing them.
+- **Simple affirmation**: naming a specific action or genuine effort the coach observed.
+- **Complex affirmation**: naming the enduring strength the action reveals about the person.
+- **Praise**: the judge's version of affirmation, paying in approval rather than evidence; fragile as motivation and avoided here.
+
 ## Sources
 Miller, W. R., & Rollnick, S. (2023). *Motivational interviewing: Helping people change and grow* (4th ed.). Guilford Press.`,
     },
@@ -378,6 +429,12 @@ Miller, W. R., & Rollnick, S. (2023). *Motivational interviewing: Helping people
 :::reveal Why is a reflection a statement rather than a question, down to the intonation? ||| A statement offers your understanding for the client to confirm or repair, keeping them exploring. Rising intonation turns it into a question, which asks the client to justify themselves and shifts the posture from listening to interrogating.
 
 :::reveal Give the risk-and-reward logic of a complex reflection. ||| It guesses at meaning beyond the words: the feeling, the value, the unsaid next sentence. The risk is guessing wrong; the reward is depth either way, because even a corrected guess moves the conversation past the surface.
+
+## Vocabulary
+- **Reflection**: a statement, not a question, offering back your understanding of what the client means, for them to confirm or repair.
+- **Simple reflection**: staying close to what was said: repeat or slight rephrase; signals listening, adds nothing.
+- **Complex reflection**: an educated guess at what was MEANT: the feeling, value, or unsaid next sentence beneath the words.
+- **Reflection-to-question ratio**: the working rhythm of skilled MI; a common training benchmark is at least two reflections per question.
 
 ## Sources
 Miller, W. R., & Rollnick, S. (2023). *Motivational interviewing: Helping people change and grow* (4th ed.). Guilford Press.`,
@@ -405,6 +462,12 @@ Miller, W. R., & Rollnick, S. (2023). *Motivational interviewing: Helping people
 
 :::reveal What makes a collecting summary a strategic instrument rather than a recap? ||| Selection. Gathering the conversation's change talk into one reflected bouquet strengthens it, while what is left out rests. That editorial power serves the client only when the spirit, not a private agenda, chooses the contents.
 
+## Vocabulary
+- **Change talk**: client speech favoring movement: desire, ability, reasons, need, and, strongest, commitment and taking-steps language.
+- **Sustain talk**: client speech favoring the status quo; a normal voice of ambivalence, acknowledged without amplification, never argued with.
+- **Differential attention**: the strategic skill of noticing, elaborating, and reflecting change talk while letting sustain talk rest.
+- **Collecting summary**: a reflection at scale that gathers the conversation's scattered change talk into one bouquet and hands it back.
+
 ## Sources
 Miller, W. R., & Rollnick, S. (2023). *Motivational interviewing: Helping people change and grow* (4th ed.). Guilford Press.`,
     },
@@ -427,6 +490,13 @@ Miller, W. R., & Rollnick, S. (2023). *Motivational interviewing: Helping people
 :::reveal Name the four tasks and the dependency logic that orders them. ||| Engaging, focusing, evoking, planning. Each depends on the ones before: no honest planning without evoked motivation, no evoking without a negotiated focus, nothing at all without engagement. Conversations loop back as needed; it is a dependency order, not a schedule.
 
 :::reveal What is the commonest MI failure mode this lesson names, and which reflex is it? ||| Planning while the client is still ambivalent: leaping to how before the client's own why has been evoked. It is the fixing reflex wearing an MI badge.
+
+## Vocabulary
+- **The four tasks**: engaging, focusing, evoking, planning: the fourth edition's simplified rename of the four processes, ordered by dependency, not schedule.
+- **Engaging**: building the working relationship; where the OARS skills live first.
+- **Focusing**: negotiating what, exactly, the change conversation is about, with the client holding the pen.
+- **Evoking**: drawing out the client's own motivations for the focused change; MI's heart and its sharpest difference from advice models.
+- **Planning**: negotiating a concrete, client-authored plan once the client's language turns toward commitment.
 
 ## Sources
 Miller, W. R., & Rollnick, S. (2023). *Motivational interviewing: Helping people change and grow* (4th ed.). Guilford Press.`,
@@ -456,6 +526,12 @@ Miller, W. R., & Rollnick, S. (2023). *Motivational interviewing: Helping people
 
 :::reveal What happens to MI's advantage when the comparator is another active, structured treatment? ||| It mostly disappears; comparative effects are frequently nonsignificant. MI's honest claim is beating default advice-giving reliably, not beating every disciplined alternative.
 
+## Vocabulary
+- **Odds ratio (OR)**: the odds of a good outcome with the intervention divided by the odds without; Lundahl's 1.55 translates to roughly a 10 to 15 percent improvement over comparators.
+- **Usual care**: the default the trial's control arm received, typically advice-giving; the comparator MI reliably beats.
+- **Active comparator**: another structured, disciplined treatment in the control arm; against these, MI's advantage mostly disappears.
+- **Treatment integrity**: trained practitioners plus fidelity coding: the delivery conditions MI's evidence base actually covers.
+
 ## Sources
 Lundahl, B., et al. (2013). Motivational interviewing in medical care settings: A systematic review and meta-analysis of randomized controlled trials. *Patient Education and Counseling, 93*(2), 157-168.
 
@@ -480,7 +556,7 @@ Rubak, S., Sandbaek, A., Lauritzen, T., & Christensen, B. (2005). Motivational i
             ],
             correctIndex: 0,
             explanation:
-              "The fourth edition retains partnership, acceptance, and compassion, and broadens evocation into empowerment: affirming the client's own strengths, motivations, resourcefulness, and autonomy. The third option is SDT's needs; the fourth is the task list.",
+              "The fourth edition retains partnership, acceptance, and compassion, and broadens evocation into empowerment: affirming the client's own strengths, motivations, resourcefulness, and autonomy. Autonomy-competence-relatedness is SDT's needs, and engaging-focusing-evoking-planning is the task list, not the spirit.",
             sourceLessonSlug: "mi-spirit",
           },
           {
@@ -499,7 +575,7 @@ Rubak, S., Sandbaek, A., Lauritzen, T., & Christensen, B. (2005). Motivational i
           {
             prompt: "The fixing reflex is:",
             options: [
-              "The client's impulse to abandon plans under stress",
+              "The client's impulse to abandon newly formed plans at the first sign of stress or schedule disruption",
               "A required correction step after each reflection",
               "The helper's urge to supply solutions and argue for change on hearing a problem",
               "The fourth edition's name for relapse",
@@ -515,7 +591,7 @@ Rubak, S., Sandbaek, A., Lauritzen, T., & Christensen, B. (2005). Motivational i
               "Clients resent expertise on principle",
               "The client is left voicing the stay-the-same side, and people are persuaded by what they hear themselves say",
               "Arguments violate confidentiality norms",
-              "It does not backfire; the evidence favors direct persuasion",
+              "It does not backfire; the persuasion evidence favors the practitioner voicing the strongest case for change early in the session",
             ],
             correctIndex: 1,
             explanation:
@@ -525,7 +601,7 @@ Rubak, S., Sandbaek, A., Lauritzen, T., & Christensen, B. (2005). Motivational i
           {
             prompt: "A complex reflection differs from a simple one by:",
             options: [
-              "Being longer and more detailed",
+              "Being longer and more detailed than the client's own statement, which signals deeper clinical engagement",
               "Ending with rising intonation to invite correction",
               "Quoting the client verbatim for accuracy",
               "Guessing at unspoken meaning: the feeling, value, or next sentence beneath the words",
@@ -558,7 +634,7 @@ Rubak, S., Sandbaek, A., Lauritzen, T., & Christensen, B. (2005). Motivational i
             ],
             correctIndex: 1,
             explanation:
-              "Engaging, focusing, evoking, planning: the fourth edition's simplified rename of the four processes. The first option is a different consultation model, the third is TTM's stages, the fourth is OARS.",
+              "Engaging, focusing, evoking, planning: the fourth edition's simplified rename of the four processes. Assess-advise-agree-arrange is a different consultation model, precontemplation-to-maintenance is TTM's stages, and open-affirm-reflect-summarize is OARS.",
             sourceLessonSlug: "the-four-tasks",
           },
           {
@@ -580,7 +656,7 @@ Rubak, S., Sandbaek, A., Lauritzen, T., & Christensen, B. (2005). Motivational i
               "Roughly one quarter",
               "74 percent, including effects in 64 percent of brief 15-minute-encounter studies",
               "Every trial included",
-              "Only trials longer than a year",
+              "Only in the subset of trials whose interventions ran longer than a year with repeated encounters",
             ],
             correctIndex: 1,
             explanation:
@@ -593,7 +669,7 @@ Rubak, S., Sandbaek, A., Lauritzen, T., & Christensen, B. (2005). Motivational i
               "An odds ratio of 1.55 favoring MI, roughly a 10 to 15 percent improvement over comparators",
               "No measurable effect of MI in medical settings",
               "A large effect, d = 0.85",
-              "Effects only when MI was delivered by physicians",
+              "Significant effects only when MI was delivered by physicians rather than nurses or allied staff",
             ],
             correctIndex: 0,
             explanation:
@@ -605,7 +681,7 @@ Rubak, S., Sandbaek, A., Lauritzen, T., & Christensen, B. (2005). Motivational i
             options: [
               "Consistently large",
               "Frequently nonsignificant; MI's reliable win is over default advice-giving",
-              "Negative; MI underperforms all structured alternatives",
+              "Negative; MI reliably underperforms structured alternatives such as CBT-based programs",
               "Untested in the literature",
             ],
             correctIndex: 1,
@@ -616,7 +692,7 @@ Rubak, S., Sandbaek, A., Lauritzen, T., & Christensen, B. (2005). Motivational i
           {
             prompt: "What makes a collecting summary strategic?",
             options: [
-              "It proves the coach was listening",
+              "It proves to the client that the coach was listening closely through the whole session",
               "It selects and gathers the client's change talk, strengthening what it includes",
               "It ends the session on schedule",
               "It documents the session for compliance purposes",
@@ -649,6 +725,12 @@ Rubak, S., Sandbaek, A., Lauritzen, T., & Christensen, B. (2005). Motivational i
 
 :::reveal When does a learning goal beat a performance goal? ||| When the strategy does not exist yet. 'Find and test three ways to make mornings workable' outperforms 'be up at six daily' for someone who has not solved the how, because performance goals presume an existing strategy.
 
+## Vocabulary
+- **Goal-setting theory**: Locke and Latham's replicated finding that specific, challenging goals beat vague or easy ones, given commitment, capability, and feedback.
+- **Performance goal**: a goal stating the outcome to hit ("up at six daily"); presumes the strategy already exists.
+- **Learning goal**: a goal to find and test strategies ("three ways to make mornings workable"); outperforms performance goals when the how is unsolved.
+- **SMART**: a training mnemonic roughly aligned with the evidence, never itself validated as a package; use the checklist, cite the theory.
+
 ## Sources
 Locke, E. A., & Latham, G. P. (2002). Building a practically useful theory of goal setting and task motivation: A 35-year odyssey. *American Psychologist, 57*(9), 705-717. https://pubmed.ncbi.nlm.nih.gov/12237980/`,
     },
@@ -667,6 +749,12 @@ Locke, E. A., & Latham, G. P. (2002). Building a practically useful theory of go
 :::reveal Give both meta-analytic effect sizes for implementation intentions and why they differ. ||| d around 0.65 across 94 tests (Gollwitzer & Sheeran, 2006) and d = 0.36 across 642 tests (Sheeran, Listrom & Gollwitzer, 2024). The larger literature includes more domains and conditions, shrinking the average while making it one of the best-replicated effects in behavior change.
 
 :::reveal What three moderators make an if-then plan stronger? ||| A genuinely contingent if-then format, high motivation for the underlying goal, and rehearsal of the plan. The technique amplifies motivation it is given; it does not manufacture any.
+
+## Vocabulary
+- **Implementation intention**: a plan in the form "If situation X arises, then I will do Y"; the best-evidenced single self-regulation technique in this course.
+- **Contingency**: the genuine if-then linkage between a concrete situation and a verifiable action; the format's active ingredient and first moderator.
+- **Moderator**: a condition that changes an effect's size; for if-then plans: contingent format, motivation for the goal, and rehearsal.
+- **Cue priming**: the mental mechanism: the specified situation becomes highly accessible, and the cue-response link fires with little deliberation.
 
 ## Sources
 Gollwitzer, P. M., & Sheeran, P. (2006). Implementation intentions and goal achievement: A meta-analysis of effects and processes. *Advances in Experimental Social Psychology, 38*, 69-119.
@@ -698,6 +786,12 @@ Mental contrasting alone is useful. Bolted to an if-then plan it becomes WOOP, t
 
 :::reveal What did Oettingen find in the weight-loss-program study, and what founding lesson did it teach? ||| Among women in a weight-loss program, more idealized positive fantasies about success predicted worse outcomes. Founding lesson: positive imagining alone is not motivation; it can substitute for it.
 
+## Vocabulary
+- **Mental contrasting**: imagining the desired future vividly, THEN the inner obstacle in its way, in that order; the sequence that turns imagining into fuel.
+- **Inner obstacle**: the habit, emotion, or belief of YOURS standing between you and the wish; the only kind of obstacle the method works on.
+- **Expectations of success**: the person's judgment of whether the wish is attainable; contrasting mobilizes in proportion to it.
+- **Adaptive disengagement**: the feature, not bug, of honest contrasting: genuinely low expectations lead to letting go of unwinnable wishes and redirecting.
+
 ## Sources
 Oettingen, G. (2014). *Rethinking positive thinking: Inside the new science of motivation*. Penguin Random House.`,
     },
@@ -720,6 +814,11 @@ You already teach this. This platform ships a full course on the science of WOOP
 :::reveal What are the two commonest client errors in WOOP, and the coach's correction for each? ||| Outer obstacles ('my schedule') and vague plans ('try harder'). Corrections: return the obstacle inward ('what in you does the schedule win against?') and return the plan to contingent if-then form with a verifiable action.
 
 :::reveal A client's obstacle step dissolves their stated wish and reveals a different one underneath. What happened, in MI terms? ||| The tool worked: WOOP surfaced the real wish. The session just moved from planning back to evoking, and the coach follows it there rather than defending the old plan.
+
+## Vocabulary
+- **WOOP**: Wish, Outcome, Obstacle, Plan: Oettingen's four-step packaging of mental contrasting plus an implementation intention.
+- **MCII**: mental contrasting with implementation intentions, WOOP's name in the research literature.
+- **Publication bias**: the tendency of positive results to get published more than nulls, which can inflate a young literature's apparent effects; noted honestly for MCII.
 
 ## Sources
 Oettingen, G. (2014). *Rethinking positive thinking: Inside the new science of motivation*. Penguin Random House.`,
@@ -746,6 +845,12 @@ Oettingen, G. (2014). *Rethinking positive thinking: Inside the new science of m
 
 :::reveal What early report from a client signals real automaticity forming? ||| The behavior feels strange to skip. Effort has migrated from doing the behavior to not doing it, which is the automaticity curve flattening, and worth naming as a milestone.
 
+## Vocabulary
+- **Anchor**: the stable, already-daily event a habit is tied to; the strongest anchors happen without fail, like parking at work or finishing breakfast.
+- **Minimum that counts**: the pre-defined smallest version of the behavior that still counts as done, protecting consistency on sideways days.
+- **Miss rule**: the pre-negotiated response to a missed day: resume at the next cue, no restarting, no repenting.
+- **Strange-to-skip milestone**: the early sign of automaticity: effort migrating from doing the behavior to NOT doing it.
+
 ## Sources
 Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W., & Wardle, J. (2010). How are habits formed: Modelling habit formation in the real world. *European Journal of Social Psychology, 40*(6), 998-1009. https://onlinelibrary.wiley.com/doi/10.1002/ejsp.674`,
       recallContent: [
@@ -766,6 +871,8 @@ Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W., & Wardle, J. (2010). How ar
 
 **Relapse is data, not verdict.** In the stages model, relapse and recycling through earlier stages is an expected part of change, not an exit from it. The coaching craft is running the honest post-mortem without the morality play: what was the situation? Which obstacle showed up that the plan did not cover? That analysis feeds straight back into the tools you now hold: a revised WOOP obstacle, a new if-then for the uncovered situation, a re-anchored cue if the old one dissolved (a schedule change is the classic silent killer of habits, because it deletes cues without telling anyone).
 
+**The collapse after a lapse has a name.** Dieting research calls it the what-the-hell effect: in Herman and Mack's classic experiments, restrained eaters who believed they had already blown their limit with a milkshake preload ate MORE afterward, not less, while unrestrained eaters compensated normally (Herman & Mack, 1975). The mechanism is all-or-nothing framing: once the day feels ruined, the rules feel suspended. It is the same reflex the miss rule pre-negotiates, and it is why this program treats strict streak-counting warily: a streak converts one miss into ruin by design. Popular recovery heuristics like the two-day rule, one miss is data, two consecutive misses trigger a plan review, are CONSISTENT with Lally's missed-day finding, but they are coaching convention rather than tested protocol, and a program that flags lore in lesson 5 owes you that label here too.
+
 **The review cadence.** What gets reviewed persists. A monthly self-review, wins, near-misses, one plan revision, is itself a habit to design by the rules of lesson 19, and for self-coaching it is the single highest-leverage structure in this program: it converts every failure into curriculum.
 
 **The honest long-term evidence.** Follow-up reviews of health-coaching trials suggest roughly half to three-quarters show at least partial maintenance of gains at six months or beyond, with many studies underpowered; maintenance is real and it is not automatic. Build the review structure like it matters, because it is what stands between a good quarter and a changed life.
@@ -774,7 +881,19 @@ Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W., & Wardle, J. (2010). How ar
 
 :::reveal What makes a relapse post-mortem coaching rather than moralizing? ||| It analyzes situation and obstacle, not character: what happened, which obstacle the plan did not cover, what revision follows. The output is a new plan element, not a verdict about willpower.
 
+:::reveal What is the what-the-hell effect, and which habit-design rule already counters it? ||| The all-or-nothing collapse after a perceived lapse: in Herman and Mack's preload experiments, restrained eaters who believed they had blown their limit ate more, not less. The miss rule counters it: one miss is pre-negotiated as noise, resumed at the next cue.
+
+## Vocabulary
+- **Maintenance**: the phase after starting, with its own physics: identity and environment carry what novelty started; its questions differ from the starting questions.
+- **Relapse**: return of the old pattern; in the stages model an expected part of change to be analyzed, not a verdict to be pronounced.
+- **Recycling**: TTM's term for looping back through earlier stages on the way to durable change.
+- **What-the-hell effect**: the all-or-nothing collapse after a perceived lapse, named in dieting research; the miss rule exists to defuse it.
+- **Cue drift**: the quiet loss of a habit's anchoring cue, classically via a schedule change; fixed by deliberate re-anchoring.
+- **Review cadence**: the recurring self-review of wins, near-misses, and one revision; what gets reviewed persists.
+
 ## Sources
+Herman, C. P., & Mack, D. (1975). Restrained and unrestrained eating. *Journal of Personality, 43*(4), 647-660.
+
 Prochaska, J. O., & Velicer, W. F. (1997). The transtheoretical model of health behavior change. *American Journal of Health Promotion, 12*(1), 38-48. https://pubmed.ncbi.nlm.nih.gov/10170434/`,
     },
     {
@@ -791,7 +910,7 @@ Prochaska, J. O., & Velicer, W. F. (1997). The transtheoretical model of health 
             options: [
               "Specific, challenging goals, given commitment, capability, and feedback",
               "Easy early goals that build confidence",
-              "Publicly announced goals regardless of content",
+              "Publicly announced goals, regardless of their content, because social accountability carries the whole effect",
               "Vague directional goals that reduce pressure",
             ],
             correctIndex: 0,
@@ -802,7 +921,7 @@ Prochaska, J. O., & Velicer, W. F. (1997). The transtheoretical model of health 
           {
             prompt: "What is the honest status of the SMART acronym?",
             options: [
-              "A validated construct from Locke and Latham's trials",
+              "A construct Locke and Latham validated directly, as a package, in their organizational goal-setting trials",
               "A training convention roughly aligned with the evidence, never itself tested as a package",
               "A legal requirement for coaching contracts",
               "A construct the evidence has refuted outright",
@@ -817,7 +936,7 @@ Prochaska, J. O., & Velicer, W. F. (1997). The transtheoretical model of health 
             options: [
               "d = 0.36, with contingent format, motivation, and rehearsal as moderators",
               "d = 0.65, larger than the 2006 estimate",
-              "No reliable effect once publication bias was modeled",
+              "No reliable effect remaining once publication bias across the 642 tests was statistically modeled",
               "Effects only in laboratory tasks",
             ],
             correctIndex: 0,
@@ -829,7 +948,7 @@ Prochaska, J. O., & Velicer, W. F. (1997). The transtheoretical model of health 
             prompt: "Why does an implementation intention work, mechanistically?",
             options: [
               "It increases deliberation at the moment of action",
-              "It creates public accountability pressure",
+              "It creates public accountability pressure once the plan has been spoken aloud or written where other people can see it",
               "It raises the underlying goal's importance",
               "It delegates control to the situation: the cue primes and triggers the response with little deliberation",
             ],
@@ -854,7 +973,7 @@ Prochaska, J. O., & Velicer, W. F. (1997). The transtheoretical model of health 
           {
             prompt: "In WOOP, the obstacle must be:",
             options: [
-              "The largest external barrier in the client's life",
+              "The largest external barrier in the client's life, named precisely enough to plan a response around",
               "A hypothetical worst-case scenario",
               "An inner obstacle: the client's own habit, emotion, or belief in the way",
               "Assigned by the coach based on observed patterns",
@@ -869,7 +988,7 @@ Prochaska, J. O., & Velicer, W. F. (1997). The transtheoretical model of health 
             options: [
               "Anchor to a stable cue",
               "Define the minimum version that still counts, protecting consistency over intensity",
-              "Set the horizon honestly",
+              "Set the automaticity horizon honestly, so a sideways week reads as on-schedule rather than as personal failure",
               "One behavior, exactly specified",
             ],
             correctIndex: 1,
@@ -880,7 +999,7 @@ Prochaska, J. O., & Velicer, W. F. (1997). The transtheoretical model of health 
           {
             prompt: "A client relapses after a schedule change. The most likely mechanical cause taught here is:",
             options: [
-              "Willpower depletion from the new schedule",
+              "Willpower depletion, because the new schedule consumes the self-control the habit had been drawing on",
               "The habit's cues were deleted by the schedule change, so the trigger vanished",
               "The goal was insufficiently challenging",
               "The client's stage regressed to precontemplation",
@@ -895,7 +1014,7 @@ Prochaska, J. O., & Velicer, W. F. (1997). The transtheoretical model of health 
             options: [
               "Idealized fantasy alone dampened systolic-blood-pressure energization; contrasting restored it in line with expectations",
               "All imagery raises energization equally",
-              "Obstacle-focus alone maximizes energization",
+              "Obstacle-focus alone maximizes energization, because confronting difficulty mobilizes effort without the distraction of imagined success",
               "Energization cannot be measured physiologically",
             ],
             correctIndex: 0,
@@ -906,7 +1025,7 @@ Prochaska, J. O., & Velicer, W. F. (1997). The transtheoretical model of health 
           {
             prompt: "How should a coach represent MCII/WOOP's evidence status?",
             options: [
-              "Proven at the scale of the implementation-intentions literature",
+              "Already proven at the same scale as the implementation-intentions literature, with hundreds of tests across health domains behind it",
               "Well-grounded and promising, with RCT support in health contexts and a smaller base than implementation intentions alone",
               "Anecdotal only",
               "Refuted by the 2024 meta-analysis",
@@ -919,7 +1038,7 @@ Prochaska, J. O., & Velicer, W. F. (1997). The transtheoretical model of health 
           {
             prompt: "What is the single highest-leverage maintenance structure this course prescribes for self-coaching?",
             options: [
-              "Daily weigh-ins with a public log",
+              "Daily morning weigh-ins recorded in a log the client shares publicly, converting accountability pressure into adherence",
               "Quarterly program restarts to renew novelty",
               "A monthly self-review of wins, near-misses, and one plan revision, itself designed as a habit",
               "Doubling goal difficulty each month",
@@ -954,6 +1073,12 @@ Prochaska, J. O., & Velicer, W. F. (1997). The transtheoretical model of health 
 
 :::reveal What single loop should a session complete, and from which lessons does it borrow? ||| Evoke then plan: elaborate the client's own why (change talk, lesson 11), then make one commitment specific and contingent (goal, if-then or WOOP, habit anchor; lessons 15 to 19), closed with the client stating it in their own words.
 
+## Vocabulary
+- **Session anatomy**: preparation, opening, one working loop, closing with commitment: the structure the NBHWC outline specifies as competencies.
+- **Agenda menu**: the focusing offer: options presented for the client to choose from, never a syllabus imposed on them.
+- **One-loop session**: the working standard here: one honest evoke-then-plan cycle done well beats three rushed ones.
+- **Closing commitment**: the client stating what they are taking, in their own words, with its when and its minimum version.
+
 ## Sources
 National Board for Health & Wellness Coaching. (2022). *Content outline*. https://www.nbme.org/wp-content/uploads/2022/05/NBHWC_Content_Outline-2ca.pdf`,
     },
@@ -974,6 +1099,13 @@ National Board for Health & Wellness Coaching. (2022). *Content outline*. https:
 :::reveal Rewrite the controlling line 'You need to stop skipping breakfast' in autonomy-supportive form. ||| Example: 'Mornings keep coming up. Some people anchor eating to an existing routine, some shift calories later in the day; is either worth an experiment, or is something else the real lever here?' Choice, rationale, and the client's perspective, instead of a prescription.
 
 :::reveal Where do controlling X-lines statistically cluster in a session, and what is the coach's counter-plan? ||| Right after a client discloses a struggle, where the fixing reflex fires. The counter is an if-then on the coach: if a client shares a failure, then my first sentence is a reflection.
+
+## Vocabulary
+- **Autonomy-supportive language**: choice, rationale, and acknowledgment of the client's perspective, offered in place of prescriptions.
+- **Controlling language**: prescriptions, pressure, and judgment; shifts motivation from autonomous toward controlled forms the maintenance data does not favor.
+- **Quiet controllers**: 'should', 'have to', 'just', and rhetorical questions with one right answer: commands wearing conversational clothes.
+- **Non-contingent regard**: warmth that does not depend on the client's performance; the relatedness need's daily fuel.
+- **X-line audit**: reviewing a recorded session line by line, marking need-supporting lines A, C, or R and controlling or rescuing lines X.
 
 ## Sources
 Ntoumanis, N., et al. (2020). A meta-analysis of self-determination theory-informed intervention studies in the health domain. *Health Psychology Review, 15*(2), 214-244. https://pubmed.ncbi.nlm.nih.gov/31983293/`,
@@ -1003,6 +1135,12 @@ Ntoumanis, N., et al. (2020). A meta-analysis of self-determination theory-infor
 
 :::reveal Why is 'modest, real, compounding' a sufficient pitch for the centenarian frame? ||| Because small reliable effects applied across pillars and held for decades by maintenance structures accumulate into a different life. The frame's horizon converts d = 0.3 from underwhelming to decisive, without inflating a single number.
 
+## Vocabulary
+- **Null effect**: a measured effect statistically indistinguishable from zero, like coaching's anxiety outcomes; naming nulls is part of honest claims.
+- **Heterogeneity**: how much trial results differ from each other; high heterogeneity lowers certainty and forbids one-number summaries.
+- **Component attribution**: knowing which ingredient of a blended intervention carries how much of the effect; coaching trials mostly cannot say.
+- **Honest pitch**: the claim the evidence permits: modest, real, compounding effects, strongest exactly where this course drilled.
+
 ## Sources
 Boehmer, K. R., et al. (2023). The impact of health and wellness coaching on patient-important outcomes in chronic illness care: A systematic review and meta-analysis. *Patient Education and Counseling, 117*, 107975. https://pmc.ncbi.nlm.nih.gov/articles/PMC10964774/`,
     },
@@ -1028,7 +1166,12 @@ Boehmer, K. R., et al. (2023). The impact of health and wellness coaching on pat
 
 :::reveal In the walkthrough, why was 'meetings moved into lunch' not accepted as the obstacle? ||| It is outer weather. Returned inward it became 'I don't defend the slot because a walk feels indefensible next to a meeting', a belief, which is coachable and can anchor an if-then plan. WOOP's obstacle must be the client's own.
 
-:::reveal Trace one tool from each course section through the walkthrough. ||| Section 1: habit rules (minimum version, miss rule). Section 2: OARS and change talk through evoking and the collecting summary. Section 3: WOOP and the contingent if-then. Section 4: the session anatomy holding it all, closed by commitment in the client's own words.`,
+:::reveal Trace one tool from each course section through the walkthrough. ||| Section 1: habit rules (minimum version, miss rule). Section 2: OARS and change talk through evoking and the collecting summary. Section 3: WOOP and the contingent if-then. Section 4: the session anatomy holding it all, closed by commitment in the client's own words.
+
+## Vocabulary
+- **Self-coaching**: running the full coaching loop on yourself, in writing; this program's practice environment that never cancels.
+- **Session artifact**: the written record a self-coaching loop produces: the evoked why, the inner obstacle, the contingent plan; the capstone builds on these.
+- **Weather**: this course's shorthand for outer circumstances a plan cannot rehearse against, as opposed to the inner obstacles it can.`,
       recallContent: [
         {
           prompt: "What is the assignment before the final, and why does it exist?",
@@ -1062,10 +1205,10 @@ Boehmer, K. R., et al. (2023). The impact of health and wellness coaching on pat
           {
             prompt: "The fourth edition of MI broadened 'evocation' into:",
             options: [
-              "Engagement",
+              "Engagement, the working relationship the other three spirit components depend on",
               "Empowerment: affirming the client's strengths, resourcefulness, and autonomy",
-              "Education",
-              "Empathy",
+              "Education, the structured delivery of change-relevant health knowledge",
+              "Empathy, defined as accurate understanding of the client's inner frame of reference",
             ],
             correctIndex: 1,
             explanation:
@@ -1076,7 +1219,7 @@ Boehmer, K. R., et al. (2023). The impact of health and wellness coaching on pat
             prompt: "Which pair correctly matches technique to strongest-evidence status?",
             options: [
               "Implementation intentions: hundreds of tests, d = 0.36 to 0.65 across two meta-analytic generations",
-              "Vision boards: medium effects across 94 tests",
+              "Vision boards: medium-to-large effects across the 94 tests of the 2006 Gollwitzer and Sheeran meta-analysis",
               "Rigid stage-matching: large effects in chronic disease",
               "The 21-day habit rule: replicated in Lally's data",
             ],
@@ -1088,7 +1231,7 @@ Boehmer, K. R., et al. (2023). The impact of health and wellness coaching on pat
           {
             prompt: "A client says 'I want to change, but honestly the current routine mostly works.' Your first move, per this course:",
             options: [
-              "Present the evidence against the current routine",
+              "Present the strongest evidence against the current routine while the client's attention is engaged",
               "Reflect both sides of the ambivalence and explore, resisting the fixing reflex",
               "Move to planning while motivation is visible",
               "Assign the client a readiness questionnaire",
@@ -1102,7 +1245,7 @@ Boehmer, K. R., et al. (2023). The impact of health and wellness coaching on pat
             prompt: "The mental-contrasting order, and what each half does:",
             options: [
               "Future first (creates the pull), inner obstacle second (binds pull to reality and becomes a goal cue)",
-              "Obstacle first (builds realism), future second (restores optimism)",
+              "Inner obstacle first (builds the realism), desired future second (restores the optimism the obstacle work costs)",
               "Either order, provided both are written down",
               "Future only; obstacles are handled in the plan step",
             ],
@@ -1117,7 +1260,7 @@ Boehmer, K. R., et al. (2023). The impact of health and wellness coaching on pat
               "'You just need to make mornings non-negotiable'",
               "'Should you really be skipping the review?'",
               "'Anchor it to the school run or to lunch; which fits how your days actually run?'",
-              "'Most successful clients choose mornings'",
+              "'Most of my successful clients have chosen mornings, and their adherence data backs that choice up'",
             ],
             correctIndex: 2,
             explanation:
@@ -1129,7 +1272,7 @@ Boehmer, K. R., et al. (2023). The impact of health and wellness coaching on pat
             options: [
               "More reflections than questions, with reflections ending on a downward intonation",
               "Alternating one-for-one",
-              "Mostly questions, since data gathering comes first",
+              "Mostly questions early in a session, since thorough data gathering has to precede any reflective work",
               "No questions at all after engagement",
             ],
             correctIndex: 0,
@@ -1142,7 +1285,7 @@ Boehmer, K. R., et al. (2023). The impact of health and wellness coaching on pat
             options: [
               "Coaching transforms anxiety outcomes",
               "Coaching produces modest, real improvements in quality of life, self-efficacy, and depression, at mostly low certainty",
-              "Coaching's effects reliably persist for years untended",
+              "Coaching's measured effects reliably persist for years after the sessions end, even without any maintenance structure in place",
               "Component techniques' individual contributions are precisely known",
             ],
             correctIndex: 1,
@@ -1156,7 +1299,7 @@ Boehmer, K. R., et al. (2023). The impact of health and wellness coaching on pat
               "Accepted; external obstacles are the most honest",
               "Returned inward: what in the client does the demanding job win against?",
               "Escalated to the client's manager",
-              "Replaced by the coach with a more workable obstacle",
+              "Replaced by the coach with a more workable obstacle drawn from patterns observed across earlier sessions",
             ],
             correctIndex: 1,
             explanation:
@@ -1166,7 +1309,7 @@ Boehmer, K. R., et al. (2023). The impact of health and wellness coaching on pat
           {
             prompt: "TTM's honest role in a modern coaching curriculum is:",
             options: [
-              "The primary causal engine of behavior change",
+              "The primary causal engine of behavior change, validated by stage-matched trials across chronic-disease populations",
               "Obsolete and untaught",
               "A readiness heuristic and shared vocabulary, with stage-matched superiority left as contested",
               "A legal requirement of the NBHWC outline",
@@ -1194,7 +1337,7 @@ Boehmer, K. R., et al. (2023). The impact of health and wellness coaching on pat
             options: [
               "Because unconditioned certainty is the signature of lore, and the evidence's conditions are where the coaching craft lives",
               "To satisfy citation formatting rules",
-              "Because conditions make claims sound more impressive",
+              "Because conditions and moderators make claims sound more scientific, and therefore more persuasive to prospective clients in marketing materials",
               "To discourage clients from asking questions",
             ],
             correctIndex: 0,
@@ -1207,7 +1350,7 @@ Boehmer, K. R., et al. (2023). The impact of health and wellness coaching on pat
             options: [
               "Assess, prescribe, schedule, bill",
               "Prepare and open with the client's agenda; evoke change talk; return the obstacle inward; plan contingently with habit rules; close with commitment in the client's words",
-              "Weigh in, review compliance, assign homework, warn",
+              "Weigh the client in, review their compliance against last session's assignments, assign the coming week's homework, and warn about the consequences of another missed target, closing with a scheduled follow-up",
               "Educate, motivate, celebrate",
             ],
             correctIndex: 1,
@@ -1220,7 +1363,7 @@ Boehmer, K. R., et al. (2023). The impact of health and wellness coaching on pat
             options: [
               "The client is highly experienced",
               "The strategy for the how does not exist yet",
-              "Feedback is unavailable",
+              "Feedback on progress is unavailable or delayed",
               "The goal is public",
             ],
             correctIndex: 1,
