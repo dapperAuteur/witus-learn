@@ -273,6 +273,24 @@ async function main() {
           });
         console.log(`  lessons: ${lessonRows.length} (upserted)`);
       }
+    } else {
+      // A language that USED to be CSV-generated and is now authored still has its old
+      // `part-N` lessons in the database: this branch stopped writing them, but nothing ever
+      // removed the rows already there. They collide with the authored lessons on sortOrder
+      // (both series start at 1), pollute search and the embeddings index, and scramble the
+      // lesson numbering on the course page. Spanish carried 24 of them and opened at "37".
+      // Deleting here keeps the repair idempotent: re-running the seeder fixes any language
+      // that gets authored later.
+      const stale = await db
+        .delete(schema.lessons)
+        .where(
+          and(
+            eq(schema.lessons.courseId, courseId),
+            sql`${schema.lessons.slug} ~ '^part-[0-9]+$'`,
+          ),
+        )
+        .returning({ id: schema.lessons.id });
+      if (stale.length) console.log(`  removed ${stale.length} stale CSV lesson(s)`);
     }
   }
 
