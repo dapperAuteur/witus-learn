@@ -145,6 +145,864 @@ National Board for Health & Wellness Coaching. (2026). *Program approval handboo
 National Board for Health & Wellness Coaching. (n.d.-b). *Exam eligibility requirements*. https://nbhwc.org/exam-eligibility-requirements/`,
     },
 
+    {
+      slug: "quiz-the-program",
+      title: "4 · Knowledge check: the program",
+      section: "Section 1 · The program",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "This program benchmarks itself against two organizations. What does it take from each?",
+            options: [
+              "Pillar coverage from the NASM CWC, and coaching-competency rigor from the NBHWC",
+              "Pillar coverage from the NBHWC, and examination methodology from the NASM CWC",
+              "Legal scope from the NASM CWC, and its continuing-education schedule from the NBHWC",
+              "Its ethics code from the NASM CWC, and its five wellness pillars from the NBHWC",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The union is deliberate: NASM's CWC supplies the five-pillar coverage map, and NBHWC supplies the coaching-competency rigor through its published content outline and scope of practice.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "Which five domains does the NASM CWC frame wellness around?",
+            options: [
+              "Movement, nutrition, physical recovery, sleep, and mental and emotional well-being",
+              "Movement, nutrition, hydration, sleep, and social connection across the lifespan",
+              "Cardiovascular fitness, strength, flexibility, body composition, and stress tolerance",
+              "Exercise, diet, supplementation, sleep hygiene, and mindfulness-based stress reduction",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The five pillars are movement, nutrition, physical recovery, sleep, and mental and emotional well-being. Hydration, supplementation, and body composition are not pillars in this framing.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "What does completing this program grant you from NASM or the NBHWC?",
+            options: [
+              "Nothing; it is an independent program not affiliated with, endorsed by, or accredited by either",
+              "Provisional candidacy toward the NBC-HWC, pending a logged practicum",
+              "Continuing-education credit that both organizations accept toward recertification",
+              "A recognized equivalency that shortens the NASM CWC examination requirement",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The affiliation statement is explicit: independent study program, no affiliation, no endorsement, no accreditation, no credential from either organization. Their names describe the scope of study only.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "NASM's own product page states which of the following about the CWC?",
+            options: [
+              "That it is a wellness credential and is not NCCA-accredited",
+              "That it is accredited by the NCCA under its health-coaching category",
+              "That it satisfies the NBHWC's approved-program requirement for exam eligibility",
+              "That it is recognized for licensure in states with dietetics practice acts",
+            ],
+            correctIndex: 0,
+            explanation:
+              "NASM states plainly that the CWC 'is a wellness credential and is not NCCA-accredited.' The course treats that candor as worth imitating, and as worth knowing when comparing credentials.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "What does 'dossier-first' name in this program's build method?",
+            options: [
+              "Research tools gather candidate sources, and only claims verified against primaries enter a lesson",
+              "Lessons are drafted first, then a matching bibliography is assembled to support them",
+              "Each course opens with a case file about one client followed across every pillar",
+              "Sources are ranked by citation count, and the highest-ranked become the lesson's spine",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Deep-research runs collect candidates into a dossier; every load-bearing claim is then checked against its primary source before it may enter a lesson. Drafting first and back-filling citations is the failure mode the method exists to prevent.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "In this program's vocabulary, what is a primary source?",
+            options: [
+              "The original document a claim rests on, rather than a summary of one",
+              "The most recent publication available on a topic, regardless of document type",
+              "Any peer-reviewed article, as distinct from a statute or an organization's own publication",
+              "The source a lesson cites first, with the remainder listed as supporting material",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A primary source is the original: a statute, a peer-reviewed paper, or a certifying body's own publication. Recency, ordering, and document type do not define it; being the original rather than a summary does.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "What happened to research claims that could not be verified against a primary source?",
+            options: [
+              "They were corrected, cut, or explicitly taught as contested",
+              "They were retained with a lower confidence rating shown beside the citation",
+              "They were moved into optional appendices so the core lessons stayed clean",
+              "They were kept where two independent research tools agreed on the wording",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Nothing enters a lesson on the strength of a search engine's summary. Unverifiable claims were corrected, cut, or taught as contested; agreement between two AI tools is not verification.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "Why does the program state that showing its corrections makes it more trustworthy, not less?",
+            options: [
+              "A curriculum that shows corrections is more trustworthy than one pretending it never needed any",
+              "Corrections demonstrate that the author consulted more sources than a typical curriculum",
+              "Regulators require published errata from any program describing statutory material",
+              "Showing corrections lets learners skip the lessons that were revised most recently",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The claim is about candor, not volume or compliance. Every curriculum needs corrections; only some admit it, and the admission is the trust signal.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "What is a contested claim in this program's usage?",
+            options: [
+              "A claim credible sources genuinely dispute, taught AS a dispute rather than resolved quietly",
+              "A claim the author personally doubts but includes for completeness",
+              "A claim that failed verification and was therefore removed from the lesson",
+              "A claim whose evidence is observational rather than drawn from randomized trials",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Contested means credible sources disagree. The program's rule is to teach the disagreement rather than pick a winner silently. Observational evidence is not automatically contested, and removed claims are not contested claims.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "Which prior knowledge does this program assume, and what does it therefore not re-teach?",
+            options: [
+              "CPT, CNC, and CES knowledge; it does not re-teach exercise science, program design, or nutrition fundamentals",
+              "An NBC-HWC board certification; it does not re-teach motivational interviewing or coaching structure",
+              "A graduate degree in a health field; it does not re-teach research methods or statistical inference",
+              "No prior credential at all; it teaches every pillar from first principles for a general audience",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It assumes NASM CPT, CNC, and CES. Where a pillar overlaps those certifications it teaches the COACHING of the pillar and points back to what the learner already knows for the content.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "Where a pillar overlaps a certification you already hold, what does the course teach instead of the content?",
+            options: [
+              "The coaching of that pillar: the conversation and the behavior change",
+              "An accelerated refresher of the content, compressed into a single summary lesson",
+              "The legal exposure specific to that pillar, with the science left entirely aside",
+              "A comparison of how each certifying body words the same underlying material",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Overlap is handled by shifting the level: the course teaches the conversation and the behavior change, and points back to the existing credential for the content itself.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "The program calls NBHWC's published content outline and scope of practice which of the following?",
+            options: [
+              "The closest thing this field has to a gold standard",
+              "One of several equivalent frameworks, chosen here for convenience",
+              "A legally binding standard in every state that licenses dietitians",
+              "An outdated framework retained only for historical comparison",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The wording matters: closest thing to a gold standard, not a legal standard and not one option among equals. NBHWC's documents are published, competency-based, and inspectable, which is why they anchor the program.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "Why does the program name NASM and NBHWC at all, given it grants neither credential?",
+            options: [
+              "To describe the scope of study, which is different from claiming the credential",
+              "To establish a partnership that permits the use of both organizations' materials",
+              "Because both organizations require attribution wherever their pillar names appear",
+              "To signal that the program's exams were calibrated against both bodies' pass rates",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Naming a benchmark honestly is different from claiming a credential, and the difference is stated everywhere it matters. There is no partnership, requirement, or calibration behind it.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "How does the program handle a claim it could not settle either way?",
+            options: [
+              "It teaches the claim as contested rather than asserting it",
+              "It omits the claim entirely so no learner encounters an open question",
+              "It asserts the more widely held position and footnotes the minority view",
+              "It defers to whichever certifying body has addressed the question most recently",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Unsettled claims are taught as contested. Omitting them hides the state of the evidence, and defaulting to the popular or most recent position is exactly the quiet winner-picking the rule forbids.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "A colleague says: 'Your program is basically the NASM CWC with extra reading.' What is the most accurate correction?",
+            options: [
+              "It is the union of CWC pillar coverage and NBHWC competency rigor, and it grants no credential at all",
+              "It is a strict superset of the CWC, so completing it covers everything the CWC examination does",
+              "It is the NBHWC approved-program curriculum, delivered asynchronously instead of live",
+              "It is an accredited alternative to the CWC that most employers now accept in its place",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two corrections are needed: the benchmark is a union of two organizations, not one, and no credential results. It is not a superset, not an approved program, and not accredited.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "Which of these would violate the program's own sourcing rule?",
+            options: [
+              "Stating a dose-response figure because two research tools reported the same number",
+              "Stating a statutory exemption after reading the section text in the state's code",
+              "Teaching a disputed effect size as disputed, with both positions named",
+              "Cutting a claim whose cited paper turned out not to support it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Agreement between research tools is not verification; both can inherit the same error. Reading the statute, teaching disputes as disputes, and cutting unsupported claims are all the rule working correctly.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "In the pillar vocabulary, 'physical recovery' is:",
+            options: [
+              "One of the five wellness pillars the NASM CWC frames wellness around",
+              "A sub-topic of the movement pillar rather than a pillar of its own",
+              "A clinical domain the program treats as outside any coaching scope",
+              "The NBHWC content-outline domain carrying the heaviest exam weight",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Physical recovery is its own pillar, alongside movement, nutrition, sleep, and mental and emotional well-being. The heaviest NBHWC exam weight belongs to coaching process, which is a different framework entirely.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "The affiliation statement appears in two places. Where?",
+            options: [
+              "In lesson 1's prose and on the course landing page's disclaimer",
+              "In the course description and in every lesson's Sources block",
+              "On the certificate of completion and in the program's terms of service",
+              "In the syllabus and in the confirmation email sent at enrollment",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The not-affiliated disclaimer renders on the landing page and is also stated in lesson 1's prose, so a learner meets it before any content and cannot reach the material without it.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "What is the program's stated reason for assuming CPT, CNC, and CES knowledge rather than teaching from scratch?",
+            options: [
+              "So it can add the layer none of those certifications carry, instead of repeating them",
+              "So it can be completed in fewer hours than an NBHWC-approved program requires",
+              "Because NASM prohibits restating certification content in derivative programs",
+              "Because learners without those credentials cannot lawfully coach behavior change",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The point is additive: the coaching layer is the thing CPT, CNC, and CES do not carry. Hour counts and permissions are not the reason, and the claim that uncredentialled people cannot lawfully coach behavior change is simply false.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "Which statement about this program's relationship to a credential is accurate?",
+            options: [
+              "It is a study program; any credential must be earned from the awarding body separately",
+              "It is a preparation course formally recognized by the awarding bodies it references",
+              "It confers a specialization that substitutes for one leg of the NBC-HWC pathway",
+              "It grants a certificate of attendance that the NBHWC counts toward continuing education",
+            ],
+            correctIndex: 0,
+            explanation:
+              "No recognition, no substitution, no continuing-education value. It is independent study, and every credential named in it must be earned through its own organization's pathway.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "How does the NBHWC scope of practice define the coaching process?",
+            options: [
+              "An evidence-based, client-centered process facilitating self-determined health and wellness goals",
+              "A structured educational process delivering evidence-based health information to clients",
+              "A clinician-directed process implementing prescribed treatment plans with accountability",
+              "A goal-setting process in which the coach and client jointly select the health targets",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The definition is evidence-based, client-centered, and facilitative, with the goals SELF-determined by the client. The coach does not deliver the content, direct the plan, or co-select the targets.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "Beyond the client's own strengths, what else does the scope say the coach helps mobilize?",
+            options: [
+              "Outside resources, alongside commitment to action steps and accountability",
+              "Clinical referrals, which the coach arranges directly with the treating provider",
+              "Family participation, which the scope requires in any multi-week engagement",
+              "Evidence summaries the coach prepares from the peer-reviewed literature",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The scope names the client's own strengths and outside resources, plus commitment to action steps and accountability. Arranging referrals directly, mandating family involvement, and preparing evidence summaries are not in that definition.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "A client arrives with a treatment plan written by their physician. What does the scope say the coach's role is?",
+            options: [
+              "Supporting its implementation, under or alongside that professional's license",
+              "Reviewing it for behavioral feasibility and proposing adjustments to the physician",
+              "Translating it into weekly targets the coach then monitors and modifies as needed",
+              "Setting it aside so coaching goals remain fully self-determined by the client",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The coach supports implementation, working under or alongside the license that wrote the plan, never replacing it. Proposing adjustments, modifying targets, and disregarding the plan all overstep.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "Is the coach the content expert in the room?",
+            options: [
+              "No; the craft is facilitating change, though evidence-based resources may be shared",
+              "Yes; the scope names content expertise as the coach's primary contribution",
+              "Only where the coach holds a second credential covering that content area",
+              "Only when no licensed professional is currently involved in the client's care",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The scope is explicit that coaches are not the content expert. They may share evidence-based resources from nationally recognized authorities, but the craft is facilitation. Holding a second credential does not merge the roles; it means wearing two hats.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "What kind of information may a coach share, per the scope of practice?",
+            options: [
+              "Evidence-based resources and information from nationally recognized authorities",
+              "Any peer-reviewed finding the coach has personally read and can cite accurately",
+              "Individualized interpretations of published guidelines, tailored to the client's condition",
+              "Whatever the client requests, provided the coach documents the request in writing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The permission is narrow and specific: evidence-based resources and information from nationally recognized authorities. Personal reading, individualized interpretation for a condition, and client request do not widen it.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "You hold a CPT and you are coaching. When does the CPT hat come off and the coach hat go on?",
+            options: [
+              "When the work shifts from prescribing content to facilitating goals, commitment, and ambivalence",
+              "When the client stops asking technical questions and begins discussing feelings",
+              "When the session moves out of the gym and into a conversational setting",
+              "When the client's programming is finalized and the training block formally begins",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The switch is defined by the KIND of work, not the topic, the room, or the calendar. Prescribing loads, exercise selection, and corrective strategy is trainer work; facilitating goals, commitment, accountability, and ambivalence is coaching.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "Why does the course insist that dual roles stay visibly separate?",
+            options: [
+              "It is what keeps the coaching role legally clean, and the course drills it as a skill",
+              "It prevents clients from being billed twice for a single combined session",
+              "Certifying bodies audit session recordings for role confusion during recertification",
+              "It allows the coach to charge a different rate for each portion of the engagement",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The stated reason is legal cleanliness of the coaching role, and the course treats separation as a trainable skill rather than pedantry. Billing, audits, and pricing are not the rationale.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "What is a 'dual role' in this course's vocabulary?",
+            options: [
+              "Holding a coaching role and another credential with the same client, hats kept separate",
+              "Coaching two clients who share a household and therefore share environmental constraints",
+              "Serving as both the coach and the referring party in a clinical handoff",
+              "Working as a coach while simultaneously enrolled as a client of another coach",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A dual role is one practitioner holding two credentials with one client. It is lawful and common; what makes it safe is keeping the roles visibly distinct.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "What does 'self-determined goals' mean in the scope's definition?",
+            options: [
+              "Goals the client sets for themselves, which coaching helps them develop and achieve",
+              "Goals the coach proposes and the client formally ratifies before work begins",
+              "Goals derived from the client's assessment data rather than from their stated preferences",
+              "Goals a licensed professional has approved as clinically appropriate for the client",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Self-determined means the client's own. Coach-proposed, data-derived, and clinician-approved goals are all somebody else determining them, which is the opposite of the term.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "The course calls the learner 'this program's first client.' What is the practical instruction attached to that?",
+            options: [
+              "Read each boundary twice: once as a coach, once as the coached",
+              "Complete every self-check aloud before attempting the section's knowledge check",
+              "Recruit a second learner so each pillar can be practised on someone else",
+              "Defer the capstone until a paying client engagement is available to document",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The centenarian frame asks for a double reading of every boundary, because the capstone requires building and coaching your own decades-long protocol.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "Which of these is the clearest example of the coach role rather than the content-expert role?",
+            options: [
+              "Exploring what makes a client ambivalent about their prescribed walking plan",
+              "Selecting the walking pace that matches the client's target heart-rate zone",
+              "Explaining which physiological adaptations the walking plan is designed to produce",
+              "Revising the walking plan's weekly volume after reviewing the client's fatigue notes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Exploring ambivalence is facilitation. Selecting pace, explaining adaptations, and revising volume are all content and prescription, which belong to a training credential rather than the coaching role.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "'Client-centered process' means work organized around what?",
+            options: [
+              "The client's own goals, values, and choices, with the coach facilitating",
+              "The client's measured baseline data, with progress reviewed against population norms",
+              "The client's schedule and budget, with session structure adapted to both",
+              "The client's diagnosis, with the coaching plan mirroring the treatment plan",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Client-centered refers to whose goals, values, and choices organize the work, not to logistics, data, or diagnosis. The coach facilitates rather than directs.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "A coach notices a client's prescribed medication seems to be causing daytime sleepiness. What does the scope permit?",
+            options: [
+              "Supporting the client to raise it with the prescriber, without interpreting or advising on the medication",
+              "Explaining the medication's known side-effect profile so the client can decide what to do",
+              "Suggesting the client trial a lower dose and report back on whether sleepiness improves",
+              "Recording the observation and adjusting session timing without involving the prescriber",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Interpreting medical data and de-prescribing are both outside coaching. What remains squarely inside is facilitating the client's own communication with the license that wrote the prescription.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "Why does the course say the NBHWC scope document is worth reading closely?",
+            options: [
+              "Every boundary in the program hangs off it",
+              "It carries statutory force in states that license health coaches",
+              "It is reissued annually, so its wording changes materially each year",
+              "It is the only scope document that addresses all five wellness pillars",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the clearest published definition in the field and the anchor for every boundary the program teaches. It is not statute, and its authority comes from clarity and publication rather than law.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "What is the risk the course identifies in a coach who also holds a training credential?",
+            options: [
+              "The roles blur, which is what makes the coaching role legally unclean",
+              "The client receives conflicting advice from the same practitioner in one session",
+              "The training credential's insurance will not cover conversations about behavior",
+              "The coach becomes over-reliant on prescription and neglects assessment",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The named risk is role blur and the legal exposure it creates for the coaching role. The course's answer is not to avoid dual roles but to keep them visibly separate.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "In the NBHWC content outline, which domain carries the largest weight?",
+            options: [
+              "Coaching process, at 47 to 53 percent",
+              "Health and wellness, at 47 to 53 percent",
+              "Coaching structure, at 17 to 23 percent",
+              "Ethics and legal, at 27 to 33 percent",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Coaching process is 47 to 53 percent, nearly half the exam. Coaching structure and health and wellness are each 17 to 23 percent, and ethics and legal is 7 to 13 percent.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What is the weight of the ethics and legal domain in the NBHWC content outline?",
+            options: [
+              "7 to 13 percent",
+              "17 to 23 percent",
+              "27 to 33 percent",
+              "37 to 43 percent",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Ethics and legal is the smallest domain at 7 to 13 percent. The 17-to-23 band belongs to both coaching structure and health and wellness.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What does the coaching-process weighting tell you about the board's view of the profession?",
+            options: [
+              "That the craft of coaching outranks health content knowledge as the core of the profession",
+              "That health content knowledge is assumed from prerequisites and therefore tested lightly",
+              "That process questions are easier to write, so more of them fit on the exam",
+              "That ethics is treated as a subset of process rather than a domain of its own",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Nearly half the exam sits on the relationship, communication, and techniques of coaching. That is a statement about what the board believes the profession IS, ahead of health content.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What does NBHWC competency 4.2 require of approved curricula?",
+            options: [
+              "That coaches are taught to know and abide by the published scope of practice",
+              "That every graduate completes fifty logged sessions before the exam",
+              "That programs disclose their pass rates to prospective students annually",
+              "That faculty maintain their own active coaching practice throughout the year",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Competency 4.2 is the scope competency: approved programs must teach coaches to know and abide by the published scope of practice. The session log is an exam-eligibility requirement, not competency 4.2.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "How many instructional hours must an NBHWC-approved program deliver, and how many must be synchronous?",
+            options: [
+              "At least 75 hours, at least 40 of them synchronous",
+              "At least 60 hours, at least 30 of them synchronous",
+              "At least 100 hours, at least 50 of them synchronous",
+              "At least 75 hours, with synchronous delivery optional throughout",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The floor is 75 instructional hours with at least 40 synchronous. The 60-hour figure in the handbook refers to CORE instructional hours in the faculty-credential rules, not the program total.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What are the practice-session requirements in an NBHWC-approved program?",
+            options: [
+              "At least three sessions of at least 30 minutes, each with at least 20 minutes of individual faculty feedback",
+              "At least five sessions of at least 20 minutes, each with written faculty feedback within a week",
+              "At least three sessions of at least 60 minutes, with group debriefs after each",
+              "At least ten sessions of any length, with feedback on a representative sample",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three sessions minimum, thirty minutes minimum each, and a minimum of twenty minutes of INDIVIDUAL faculty feedback after each. The individual-feedback requirement is the expensive part and the reason approved programs cost what they do.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What is the Practical Skills Assessment, and when is it administered?",
+            options: [
+              "A scorable pass/fail evaluation of a coaching session, given after 80 percent of the program is complete",
+              "A written scenario examination scored on a rubric, given at the midpoint of the program",
+              "A peer-reviewed session recording, submitted at any point before the board exam",
+              "An observed intake interview, administered during the program's first quarter",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The PSA is scorable and pass/fail, evaluating a real coaching session against a rubric, and it caps the program after 80 percent completion. It is a performance assessment, not a written one.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "Of the 60 core instructional hours, how many must be taught by faculty who hold the NBC-HWC themselves?",
+            options: [
+              "At least 48",
+              "At least 30",
+              "All 60",
+              "At least 15",
+            ],
+            correctIndex: 0,
+            explanation:
+              "At least 48 of the 60 core hours must be taught by NBC-HWC faculty, and separately at least 48 by faculty with at least 200 hours of their own coaching practice. The 15-hour figure belongs to the graduate-degree requirement.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "Which faculty-credential rule attaches to at least 15 of the core instructional hours?",
+            options: [
+              "A graduate degree in a health-related field, or a bachelor's plus a state license or national registration",
+              "At least 200 hours of the faculty member's own documented coaching practice",
+              "An active NBC-HWC credential held for a minimum of three continuous years",
+              "Completion of the board's train-the-trainer course within the prior recertification cycle",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The 15-hour rule is the academic-credential rule. The 200-hours-of-practice rule and the NBC-HWC rule each attach to 48 hours, not 15.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What are the three requirements to sit the NBHWC board exam?",
+            options: [
+              "An approved program, a log of 50 coaching sessions, and an associate's degree or 4,000 hours of work experience",
+              "An approved program, a log of 100 coaching sessions, and a bachelor's degree in a health field",
+              "An approved program, a passing Practical Skills Assessment, and two professional references",
+              "An accredited certification, a log of 50 coaching sessions, and current CPR/AED certification",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Approved program, 50 logged sessions, and an associate's degree OR 4,000 hours of work experience in ANY field. The experience alternative is what keeps the pathway open to career changers.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "The 4,000-hours alternative to an associate's degree must be work experience in which field?",
+            options: [
+              "Any field",
+              "A health-related field only",
+              "Coaching or an allied behavioral discipline",
+              "The field in which the candidate intends to coach",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Any field. The requirement is a general maturity-and-work-history floor, not a subject-matter one, which is why it functions as an accessible alternative to the degree.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What does keeping the NBC-HWC require after certification?",
+            options: [
+              "36 continuing-education credits every three years",
+              "20 continuing-education hours every two years",
+              "A repeat Practical Skills Assessment every five years",
+              "Re-sitting the board examination every three years",
+            ],
+            correctIndex: 0,
+            explanation:
+              "36 credits every three years for the NBC-HWC. The 20-hours-every-two-years schedule belongs to ACE's Health Coach, which is a different credential with a different cycle.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "How is the NASM CWC examined?",
+            options: [
+              "100 multiple-choice questions",
+              "A written examination plus a recorded practical session",
+              "150 multiple-choice questions and a case-study essay",
+              "A proctored oral examination with two assessors",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The CWC exam is 100 multiple-choice questions, with no practical or oral component. That absence is one of the concrete differences from the NBHWC pathway, which requires the PSA.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What did verification for this program find when it looked for a standalone NASM CWC scope-of-practice document?",
+            options: [
+              "None comparable to NBHWC's; NASM's scope guidance lives in nutrition-coaching materials and instructor commentary",
+              "A published document equivalent in structure to NBHWC's, released alongside the credential",
+              "A scope document available only to enrolled candidates through the course portal",
+              "A scope section embedded in NASM's code of ethics, covering all five pillars",
+            ],
+            correctIndex: 0,
+            explanation:
+              "No comparable standalone document was found. NASM's scope guidance appears in its nutrition-coaching materials and instructor commentary instead, which is a meaningful difference when comparing credentials.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "Which credential in this landscape is NCCA-accredited?",
+            options: [
+              "The ACE Certified Health Coach",
+              "The NASM Certified Wellness Coach",
+              "The ACLM Lifestyle Medicine Coach certificate",
+              "All three of the non-board credentials",
+            ],
+            correctIndex: 0,
+            explanation:
+              "ACE's Health Coach carries NCCA accreditation; NASM states its CWC does not. ACLM's LMC is a certificate stacked on another credential, not an accredited certification.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What are the candidacy requirements for the ACE Certified Health Coach?",
+            options: [
+              "At least 18, a high school diploma or equivalent, and current CPR/AED with a live skills check",
+              "At least 21, an associate's degree, and a logged practicum of 50 sessions",
+              "At least 18, any fitness certification, and a passing background check",
+              "At least 18, a bachelor's degree in a health field, and current CPR certification",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Eighteen, a high school diploma or equivalent, and current CPR/AED certification with a LIVE skills check. The live component is the detail most often missed.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "How does the ACE Health Coach renew, and what is the one category-specific requirement?",
+            options: [
+              "20 continuing-education hours every two years, at least one from Professional Conduct & Ethics",
+              "36 continuing-education credits every three years, at least two from an ethics category",
+              "20 continuing-education hours every two years, at least five from nutrition scope",
+              "15 continuing-education hours annually, with no category requirement attached",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Twenty hours every two years, with at least one hour from ACE's Professional Conduct & Ethics category. The 36-credits-every-three-years cycle belongs to the NBC-HWC.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "Around how many pillars does the American College of Lifestyle Medicine define lifestyle medicine?",
+            options: [
+              "Six",
+              "Five",
+              "Four",
+              "Eight",
+            ],
+            correctIndex: 0,
+            explanation:
+              "ACLM uses six pillars. The five-pillar framing in this program comes from NASM's CWC, which is a different organization with a different map.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "Whom do ACLM and the IBLM certify?",
+            options: [
+              "Clinicians; for coaches, ACLM offers education rather than a license",
+              "Coaches, through a pathway parallel to the NBHWC's board certification",
+              "Both clinicians and coaches, under a single unified competency framework",
+              "Programs rather than individuals, in the manner of NCCA accreditation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "ACLM and IBLM certify clinicians. A lifestyle-medicine-educated coach has knowledge, not a license, and remains bound by coaching scope and state law exactly as before.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What must you already hold to earn ACLM's Lifestyle Medicine Coach certificate?",
+            options: [
+              "An active NBC-HWC or Wellcoaches certification",
+              "An active NASM CWC or ACE Health Coach certification",
+              "A clinical license in any state, plus the completed coursework",
+              "Nothing; the certificate is open to anyone completing the course",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The LMC certificate is stacked: it requires an active NBC-HWC or Wellcoaches certification. The COURSE is open to anyone, which is what makes the distinction easy to miss.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "How long is ACLM's Lifestyle Medicine for Coaches course, and what assessment standard does the certificate require?",
+            options: [
+              "16.5 self-paced hours, with 12 knowledge assessments passed at 80 percent or better",
+              "24 self-paced hours, with a single final examination passed at 70 percent or better",
+              "16.5 synchronous hours, with a practical session assessed pass/fail",
+              "40 self-paced hours, with 12 knowledge assessments passed at 70 percent or better",
+            ],
+            correctIndex: 0,
+            explanation:
+              "16.5 self-paced hours and 12 knowledge assessments at 80 percent or better. The course is self-paced, not synchronous, which distinguishes it sharply from NBHWC-approved programs.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "You complete ACLM's coaches course without holding an NBC-HWC or Wellcoaches certification. What do you receive?",
+            options: [
+              "A certificate of attendance rather than the Lifestyle Medicine Coach certificate",
+              "The Lifestyle Medicine Coach certificate, held provisionally until a prerequisite is earned",
+              "Continuing-education credit that can be applied toward the NBC-HWC prerequisite",
+              "Nothing, because enrollment itself requires one of the prerequisite credentials",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Same course, different award: a certificate of attendance. Nothing is held provisionally, and enrollment is genuinely open to anyone.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "The course summarizes the landscape as four different kinds of claim. Which mapping is correct?",
+            options: [
+              "Board certification NBHWC, accredited certification ACE, private certification NASM CWC, clinician certification plus coach education ACLM",
+              "Board certification ACE, accredited certification NBHWC, private certification ACLM, clinician certification NASM CWC",
+              "Accredited certification NBHWC, board certification NASM CWC, private certification ACE, coach education ACLM",
+              "Board certification NBHWC, private certification ACE, accredited certification NASM CWC, clinician education ACLM",
+            ],
+            correctIndex: 0,
+            explanation:
+              "NBHWC is board certification, ACE is accredited certification, NASM's CWC is private certification, and ACLM certifies clinicians while educating coaches. Four different claims behind one phrase.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "Someone introduces themselves as a 'certified wellness coach.' What has the lesson taught you to ask?",
+            options: [
+              "Which of the four kinds of claim it is, since the phrase covers all of them",
+              "Whether their certification is current and in good standing with the issuer",
+              "How many pillars their certification covered during training",
+              "Whether they carry professional liability insurance for coaching work",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The phrase spans board certification, accredited certification, private certification, and clinician certification plus coach education. Identifying which one is the first question; currency and insurance matter later.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What is a 'content outline' in the credential vocabulary, and what does it reveal?",
+            options: [
+              "The published blueprint of an exam's domains and weights; it tells you what the board believes the profession IS",
+              "The syllabus an approved program must follow, lesson by lesson, to retain its approval",
+              "The list of topics a candidate must log practice hours in before sitting the exam",
+              "The set of competencies faculty must demonstrate before teaching core instructional hours",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A content outline is the exam blueprint: domains plus their weights. Reading the weights is how you learn a board's actual theory of the profession, which is why the 47-to-53 percent process figure matters so much.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What does 'synchronous instruction' mean in the NBHWC program-approval rules?",
+            options: [
+              "Live teaching, in person or remote, as distinct from self-paced material",
+              "In-person teaching only, with remote delivery counted as asynchronous",
+              "Instruction delivered on a fixed weekly schedule, whether live or recorded",
+              "Teaching in which every student progresses through the same module at once",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Synchronous means live, and remote live delivery counts. What it excludes is self-paced material, which is why at least 40 of the 75 hours cannot be recorded content.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What is a 'stacked credential,' with the example from this lesson?",
+            options: [
+              "A certificate requiring another credential as its prerequisite, as ACLM's LMC requires NBC-HWC or Wellcoaches",
+              "A credential earned by combining hours from two approved programs into one application",
+              "A certification that automatically renews when a higher credential is maintained",
+              "A specialization added to a base certification by the same issuing organization",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Stacked means it sits on top of a prerequisite credential from another body. ACLM's Lifestyle Medicine Coach certificate is the lesson's example, requiring an active NBC-HWC or Wellcoaches certification underneath it.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What does NCCA accreditation actually accredit?",
+            options: [
+              "The certification program, by the National Commission for Certifying Agencies",
+              "The individual certificant, after a review of logged practice hours",
+              "The training curriculum, in the way NBHWC approves programs",
+              "The examination items, through an independent psychometric audit",
+            ],
+            correctIndex: 0,
+            explanation:
+              "NCCA accredits the certification PROGRAM, as third-party recognition of how the certification is run. It is distinct from NBHWC's program approval, which accredits training curricula.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "Which comparison between the NBHWC and NASM CWC pathways is accurate?",
+            options: [
+              "NBHWC requires a scored practical assessment; the CWC is examined by multiple choice alone",
+              "Both require a scored practical assessment, but only NBHWC scores it pass/fail",
+              "NBHWC is examined by multiple choice alone; the CWC adds a recorded practical",
+              "Neither requires a practical assessment, though both require logged practice sessions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The PSA is the structural difference: NBHWC requires a scorable pass/fail evaluation of a real coaching session, while the CWC's assessment is 100 multiple-choice questions.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "Why does the course say the rigor behind NBHWC approval is 'worth knowing'?",
+            options: [
+              "Because it is what 'board certification' actually buys, and it is inspectable",
+              "Because approved programs are legally required to publish their hour counts",
+              "Because the same standards apply to the ACE and NASM pathways in practice",
+              "Because candidates may petition to waive requirements they can document elsewhere",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The hours, the individual feedback, the PSA, and the faculty credentials are all published and checkable. Knowing them is how you evaluate what a credential's claim is worth rather than taking the phrase on trust.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+        ],
+      },
+    },
+
     // ── Section 2 ────────────────────────────────────────────────────────────────────────────
     {
       slug: "the-exclusion-lists",

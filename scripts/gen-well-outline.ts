@@ -34,7 +34,7 @@ for (const [pos, course] of COURSES) {
       const n = l.quiz.questions.length;
       totalQuestions += n;
       const serve = l.quiz.questionsPerAttempt ?? Math.min(10, n);
-      out.push(`- **${l.title}** — QUIZ: ${n} questions pooled, ${serve} served, pass ${l.quiz.passingScore}%`);
+      out.push(`- **${l.title}**: QUIZ, ${n} questions pooled, ${serve} served, pass ${l.quiz.passingScore}%`);
       continue;
     }
     out.push(`- **${l.title}**`);
@@ -58,7 +58,7 @@ for (const [pos, course] of COURSES) {
   }
 }
 
-console.log(`# WELL Program — full outline for adversarial review
+console.log(`# WELL Program: full outline for adversarial review
 
 Generated ${new Date === undefined ? "" : ""}from the committed course data, so it matches what is actually seeded.
 
