@@ -115,6 +115,8 @@ Ntoumanis, N., et al. (2020). A meta-analysis of self-determination theory-infor
 
 **The numbers.** Modeled time to reach 95 percent of each person's automaticity plateau ranged from **18 to 254 days**, with a **median of 66 days**. Not 21 days; that figure traces to a 1960s self-help observation and has no support in this data. And one more finding coaches should tattoo somewhere visible: **missing a single opportunity did not materially affect habit formation.** One skipped day is noise. Abandoning after one skipped day is the actual failure mode.
 
+**The replication check.** A 2024 systematic review pooled the habit-formation studies that followed Lally and landed in the same place: study medians of 59 to 66 days, means of 106 to 154 days, and individual times ranging from 4 to 335 days, with habit-building interventions reliably increasing habit strength (Singh et al., 2024). Fourteen years of further data moved the honest answer not at all: about two months typically, enormous variation always, never 21 days.
+
 **What builds automaticity.** Consistent repetition of the same behavior in the same stable context. The cue does the heavy lifting: behaviors anchored to something that reliably happens ("after I park at work") outperform behaviors anchored to intentions ("in the afternoon sometime").
 
 **Coaching translation.** Help clients pick ONE behavior, anchor it to a stable daily cue, expect two to eight-plus months rather than three magic weeks, and pre-negotiate the missed day: "when you miss one, and you will, the plan is to resume at the next cue, not to restart or repent."
@@ -130,7 +132,9 @@ Ntoumanis, N., et al. (2020). A meta-analysis of self-determination theory-infor
 - **Median**: the middle value of a distribution; the 66 days is a median, which matters because the 18-to-254-day range makes any single average misleading.
 
 ## Sources
-Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W., & Wardle, J. (2010). How are habits formed: Modelling habit formation in the real world. *European Journal of Social Psychology, 40*(6), 998-1009. https://onlinelibrary.wiley.com/doi/10.1002/ejsp.674`,
+Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W., & Wardle, J. (2010). How are habits formed: Modelling habit formation in the real world. *European Journal of Social Psychology, 40*(6), 998-1009. https://onlinelibrary.wiley.com/doi/10.1002/ejsp.674
+
+Singh, B., Murphy, A., Maher, C., & Smith, A. E. (2024). Time to form a habit: A systematic review and meta-analysis of health behaviour habit formation and its determinants. *Healthcare, 12*(23), 2488. https://pmc.ncbi.nlm.nih.gov/articles/PMC11641623/`,
       recallContent: [
         {
           prompt: "A client misses two days of their new habit and wants to restart the whole program. What does the data say, and what do you coach?",
@@ -520,20 +524,29 @@ Miller, W. R., & Rollnick, S. (2023). *Motivational interviewing: Helping people
 
 **Against other ACTIVE treatments, the advantage mostly disappears.** Compared with structured alternatives like CBT-based programs or well-built education, MI's comparative effects are frequently nonsignificant. The honest synthesis: MI reliably beats doing what most practitioners do by default (advise, warn, prescribe), and it is not magic relative to other disciplined approaches.
 
+**Does the change-talk machinery itself hold up?** MI's proposed causal chain, coach skills shape client language, client language shapes outcomes, has been meta-analyzed directly, and the result is worth knowing precisely because it is only PARTIAL support. Magill and colleagues pooled 12 process studies: MI-consistent coach skills did predict more client change talk (r = .26), and MI-INconsistent skills predicted more sustain talk. But change talk by itself did not predict follow-up outcomes (r = .06, nonsignificant), while sustain talk predicted WORSE outcomes (r = −.24); composite language measures showed a small positive relationship (Magill et al., 2014). Later subtype work found the categories are not equally meaningful either (Magill et al., 2019). The honest coaching translation cuts against the folklore version: the best-evidenced lever in the client-language data is not harvesting change talk, it is NOT feeding sustain talk, which is exactly why lesson 11 taught acknowledge-without-amplification and why the fixing reflex, which provokes sustain talk, costs more than it looks.
+
 **What this means for a coach.** The value proposition is not that MI is the strongest tool ever tested; it is that MI is learnable, brief-compatible, spirit-aligned with coaching scope, and reliably better than the fixing reflex it replaces. That is worth mastering without overclaiming.
 
 :::reveal Give the Rubak numbers a coach should carry: trials, hit rate, and the brief-encounter finding. ||| 72 randomized trials; MI showed an effect in 74 percent (53 of 72), outperforming traditional advice; and even brief 15-minute encounters showed an effect in 64 percent of studies. Effects were not significant for cigarettes per day or HbA1c.
 
 :::reveal What happens to MI's advantage when the comparator is another active, structured treatment? ||| It mostly disappears; comparative effects are frequently nonsignificant. MI's honest claim is beating default advice-giving reliably, not beating every disciplined alternative.
 
+:::reveal The technical-hypothesis meta-analysis found change talk did not predict outcomes, but sustain talk did. What does a coach do with that? ||| Stop treating change talk as a harvest and sustain talk as noise. The best-evidenced language lever is not amplifying sustain talk: acknowledge it without feeding it, and avoid the MI-inconsistent moves (arguing, confronting) that provoke it. Lesson 11's craft, evidenced.
+
 ## Vocabulary
 - **Odds ratio (OR)**: the odds of a good outcome with the intervention divided by the odds without; Lundahl's 1.55 translates to roughly a 10 to 15 percent improvement over comparators.
 - **Usual care**: the default the trial's control arm received, typically advice-giving; the comparator MI reliably beats.
 - **Active comparator**: another structured, disciplined treatment in the control arm; against these, MI's advantage mostly disappears.
 - **Treatment integrity**: trained practitioners plus fidelity coding: the delivery conditions MI's evidence base actually covers.
+- **Technical hypothesis**: MI's proposed causal chain from coach skills through client language to outcomes; meta-analysis grants it partial support, with sustain talk the stronger outcome predictor.
 
 ## Sources
 Lundahl, B., et al. (2013). Motivational interviewing in medical care settings: A systematic review and meta-analysis of randomized controlled trials. *Patient Education and Counseling, 93*(2), 157-168.
+
+Magill, M., Gaume, J., Apodaca, T. R., Walthers, J., Mastroleo, N. R., Borsari, B., & Longabaugh, R. (2014). The technical hypothesis of motivational interviewing: A meta-analysis of MI's key causal model. *Journal of Consulting and Clinical Psychology, 82*(6), 973-983. https://pubmed.ncbi.nlm.nih.gov/24841862/
+
+Magill, M., Bernstein, M. H., Hoadley, A., Borsari, B., Apodaca, T. R., Gaume, J., & Tonigan, J. S. (2019). Do what you say and say what you are going to do: A preliminary meta-analysis of client change and sustain talk subtypes in motivational interviewing. *Psychotherapy Research, 29*(7), 860-869. https://pubmed.ncbi.nlm.nih.gov/29954290/
 
 Rubak, S., Sandbaek, A., Lauritzen, T., & Christensen, B. (2005). Motivational interviewing: A systematic review and meta-analysis. *British Journal of General Practice, 55*(513), 305-312. https://pmc.ncbi.nlm.nih.gov/articles/PMC1463134/`,
     },
@@ -839,6 +852,8 @@ Oettingen, G. (2014). *Rethinking positive thinking: Inside the new science of m
 
 **Rule 5: set the horizon honestly.** Median 66 days to near-automaticity, and a range from 18 to 254. Tell clients the range, not a promise. Complex or unpleasant behaviors sit later on that curve, and knowing that in advance converts "this is taking too long, I'm broken" into "this is on schedule."
 
+**Two more levers, from the pooled data.** The 2024 review of habit-formation studies adds two moderators a coach can actually use: habits practiced in the MORNING developed faster than evening ones, and SELF-SELECTED behaviors built more strength than assigned ones (Singh et al., 2024). The second is lesson 3 wearing lab clothes: autonomy is not a nicety, it is a formation-speed variable. Offer the menu, let the client pick the behavior, and when the schedule allows it, bias new habits toward the front of the day.
+
 **What to watch as a coach.** The early sign of forming automaticity is the client reporting the behavior feels strange to SKIP. That reversal, effort migrating from doing to not-doing, is the curve flattening, and it is worth naming to the client as the milestone it is.
 
 :::reveal Why does a five-minute daily version beat a forty-five-minute occasional version, mechanistically? ||| Automaticity grows on repetitions in a stable context; frequency and consistency drive the curve, not intensity. The minimum-that-counts version keeps repetitions accruing on sideways days.
@@ -852,7 +867,9 @@ Oettingen, G. (2014). *Rethinking positive thinking: Inside the new science of m
 - **Strange-to-skip milestone**: the early sign of automaticity: effort migrating from doing the behavior to NOT doing it.
 
 ## Sources
-Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W., & Wardle, J. (2010). How are habits formed: Modelling habit formation in the real world. *European Journal of Social Psychology, 40*(6), 998-1009. https://onlinelibrary.wiley.com/doi/10.1002/ejsp.674`,
+Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W., & Wardle, J. (2010). How are habits formed: Modelling habit formation in the real world. *European Journal of Social Psychology, 40*(6), 998-1009. https://onlinelibrary.wiley.com/doi/10.1002/ejsp.674
+
+Singh, B., Murphy, A., Maher, C., & Smith, A. E. (2024). Time to form a habit: A systematic review and meta-analysis of health behaviour habit formation and its determinants. *Healthcare, 12*(23), 2488. https://pmc.ncbi.nlm.nih.gov/articles/PMC11641623/`,
       recallContent: [
         {
           prompt: "Recite the five habit-design rules in shorthand.",
@@ -1123,7 +1140,9 @@ Ntoumanis, N., et al. (2020). A meta-analysis of self-determination theory-infor
       section: "Section 4 · The session",
       body: `The last content lesson of this course is the one a marketer would cut: what the coaching-outcome evidence permits you to say.
 
-**What holds up.** Health and wellness coaching, in randomized trials against real comparators, improves quality of life in the short term (SMD 0.62 within three months), self-efficacy (SMD 0.38), and depression outcomes out to a year (SMD 0.41 to 0.72), across thirty trials in chronic-illness care (Boehmer et al., 2023). In cardiovascular-risk populations, coaching blends built on MI improve physical activity, diet, and stress-management behaviors. Component techniques carry their own replicated bases from the earlier sections: MI, implementation intentions, need support, habit protocols.
+**What holds up.** Health and wellness coaching, in randomized trials against real comparators, improves quality of life in the short term (SMD 0.62 within three months), self-efficacy (SMD 0.38), and depression outcomes out to a year (SMD 0.41 to 0.72), across thirty trials in chronic-illness care (Boehmer et al., 2023). In cardiovascular-risk populations, coaching blends built on MI improve physical activity, diet, and stress-management behaviors. Component techniques carry their own replicated bases from the earlier sections: MI, implementation intentions, need support, habit protocols. And on a hard clinical marker: across twenty randomized trials in type 2 diabetes (3,222 participants), health coaching lowered HbA1c with a small effect (g = 0.29, confidence interval 0.18 to 0.40), with a clinically significant drop of at least 5 mmol/mol in eight of the twenty studies (Almulhim et al., 2023).
+
+**More techniques is not more effect.** The same diabetes review coded every intervention against the behavior-change-technique taxonomy: trials used a mean of 4.5 distinct techniques, goal setting and problem solving most often, and the NUMBER of techniques used was unrelated to effectiveness. Sharper still: two techniques, the non-contingent ones, "credible source" (leaning on authority) and "social reward" (praise), were associated with SMALLER HbA1c reductions (Almulhim et al., 2023). That is lesson 9's praise-versus-affirmation distinction and lesson 23's autonomy support showing up in glycated hemoglobin, and it is the evidence answer to the stack-more-tools instinct: do a few contingent things well.
 
 **What the same evidence forbids claiming.** Anxiety outcomes: null in the meta-analysis. Certainty: mostly low or very low, on heterogeneity and bias risk. Persistence past twelve months: not well established. Effect sizes: small to moderate, never transformative-on-average. And because trials blend techniques, the field genuinely cannot say which component carries how much of the freight.
 
@@ -1135,13 +1154,19 @@ Ntoumanis, N., et al. (2020). A meta-analysis of self-determination theory-infor
 
 :::reveal Why is 'modest, real, compounding' a sufficient pitch for the centenarian frame? ||| Because small reliable effects applied across pillars and held for decades by maintenance structures accumulate into a different life. The frame's horizon converts d = 0.3 from underwhelming to decisive, without inflating a single number.
 
+:::reveal In the diabetes coaching trials, which two behavior-change techniques were associated with SMALLER HbA1c reductions, and why does that fit this course? ||| Credible source (leaning on authority) and social reward (praise): the non-contingent techniques. It fits because this course taught affirmation over praise and autonomy support over lecturing; the coded trial data shows the same distinction on a hard clinical marker.
+
 ## Vocabulary
 - **Null effect**: a measured effect statistically indistinguishable from zero, like coaching's anxiety outcomes; naming nulls is part of honest claims.
 - **Heterogeneity**: how much trial results differ from each other; high heterogeneity lowers certainty and forbids one-number summaries.
 - **Component attribution**: knowing which ingredient of a blended intervention carries how much of the effect; coaching trials mostly cannot say.
+- **Behavior-change technique (BCT)**: a labeled active ingredient from the standard taxonomy (goal setting, problem solving, self-monitoring, and so on) used to code what interventions actually contain.
+- **HbA1c**: glycated hemoglobin, the standard marker of blood-glucose control over recent months; the hard endpoint of the diabetes coaching trials.
 - **Honest pitch**: the claim the evidence permits: modest, real, compounding effects, strongest exactly where this course drilled.
 
 ## Sources
+Almulhim, A. N., Hartley, H., Norman, P., Caton, S. J., Doğru, O. C., & Goyder, E. (2023). Behavioural change techniques in health coaching-based interventions for type 2 diabetes: A systematic review and meta-analysis. *BMC Public Health, 23*, 95. https://pmc.ncbi.nlm.nih.gov/articles/PMC9837922/
+
 Boehmer, K. R., et al. (2023). The impact of health and wellness coaching on patient-important outcomes in chronic illness care: A systematic review and meta-analysis. *Patient Education and Counseling, 117*, 107975. https://pmc.ncbi.nlm.nih.gov/articles/PMC10964774/`,
     },
     {
