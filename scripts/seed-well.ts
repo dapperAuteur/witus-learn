@@ -22,6 +22,7 @@ import { WELL_COACHING_PSYCHOLOGY_COURSE } from "./data/well-coaching-psychology
 import { WELL_COACHING_MOVEMENT_COURSE } from "./data/well-coaching-movement-course";
 import { WELL_COACHING_NUTRITION_COURSE } from "./data/well-coaching-nutrition-course";
 import { WELL_RECOVERY_STRESS_COURSE } from "./data/well-recovery-stress-course";
+import { WELL_SLEEP_COURSE } from "./data/well-sleep-course";
 
 const TARGET_SLUG = "learn-witus";
 const INSTRUCTOR_EMAIL = "bam@awews.com";
@@ -139,6 +140,23 @@ async function main() {
     seriesOrder: 5,
     seriesCode: "WELL",
     seriesPosition: "04",
+    visibility: "private",
+    publishHoldReason: HOLD_REASON,
+    replaceLessons: true,
+  });
+
+  await seedAuthoredCourse(db, {
+    tenantId: tenant.id,
+    instructorId: instructor.id,
+    slug: "well-sleep",
+    course: WELL_SLEEP_COURSE,
+    category: "Health & Longevity",
+    navigationMode: "linear",
+    seriesSlug: "well-wellness-coaching",
+    seriesTitle: "WELL: Wellness Coaching",
+    seriesOrder: 6,
+    seriesCode: "WELL",
+    seriesPosition: "05",
     visibility: "private",
     publishHoldReason: HOLD_REASON,
     replaceLessons: true,
