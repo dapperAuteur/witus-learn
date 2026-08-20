@@ -55,6 +55,7 @@ const BACKLOG: Record<string, string> = {
   // decision. Revisit at the public flip.
   "well-orientation-scope": "OUT OF SCOPE, adult professional education, private owner-only (plans/67)",
   "well-coaching-psychology": "OUT OF SCOPE, adult professional education, private owner-only (plans/67)",
+  "well-coaching-movement": "OUT OF SCOPE, adult professional education, private owner-only (plans/67)",
   // Adult professional/consumer education. Like the sommelier entry above, this one is currently
   // INERT: `registered` below only matches the shorthand `{ slug: "..." }` form, and this course is
   // registered through a seedAuthoredCourse call, so the guard never sees it. Written down anyway

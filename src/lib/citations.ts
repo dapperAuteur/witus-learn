@@ -73,6 +73,7 @@ export const STAGED_COURSES: string[] = [
   "voice-acting",
   "well-orientation-scope",
   "well-coaching-psychology",
+  "well-coaching-movement",
   "bvc-taster-wine",
   "bvc-taster-coffee",
   "bvc-taster-chocolate",
