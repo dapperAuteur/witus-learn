@@ -76,6 +76,383 @@ export const WELL_COACHING_NUTRITION_COURSE: AuthoredCourse = {
       ],
     },
 
+    {
+      slug: "quiz-the-lane",
+      title: "3 · Knowledge check: the lane",
+      section: "Section 1 · The lane",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "Why does this course say nutrition is the pillar where the lane has 'actual legal walls'?",
+            options: [
+              "Eating questions drift toward disease faster than movement questions",
+              "Nutrition advice carries higher liability insurance requirements",
+              "Dietetics is the only health profession with title protection in every state",
+              "Food recommendations can produce harm faster than exercise recommendations",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Drift speed is the reason. WELL-00 taught the legal structure; this pillar is where it bites, because a wellness question becomes a condition question in one sentence.",
+            sourceLessonSlug: "coaching-eating-not-prescribing",
+          },
+          {
+            prompt: "What does a CNC authorize, and what does no coaching credential authorize?",
+            options: [
+              "General nutrition coaching for healthy adults; not MNT, therapeutic diets, or clinical assessment",
+              "Individualized meal planning for healthy adults; not therapeutic diets for diagnosed conditions",
+              "Nutritional assessment and general coaching; not supplement recommendation",
+              "All nutrition work short of diagnosis; not the use of protected titles",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The licensed core is three things: MNT, therapeutic diets for diagnosed conditions, and individualized clinical assessment. Individualized meal planning is outside every published scope, not inside the CNC's.",
+            sourceLessonSlug: "coaching-eating-not-prescribing",
+          },
+          {
+            prompt: "What is 'medical nutrition therapy'?",
+            options: [
+              "Nutrition care to treat a diagnosed condition; the licensed core every scope walls off",
+              "Any nutrition advice delivered to a client under medical care",
+              "Nutrition assessment performed before a therapeutic plan is written",
+              "Dietary guidance intended to prevent rather than treat disease",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Treatment of a diagnosed condition. Note the contrast with prevention: Michigan's exemption expressly protects individualized recommendations for wellness or PRIMARY PREVENTION, and stops at therapy.",
+            sourceLessonSlug: "coaching-eating-not-prescribing",
+          },
+          {
+            prompt: "Which activities does Michigan's exemption expressly keep lawful for unlicensed people?",
+            options: [
+              "General nonmedical information, individualized wellness or prevention advice, behavior-change management, coaching, weight management",
+              "General nutrition information and classes only, with individualized work reserved to licensees",
+              "All nutrition work provided no fee is charged and no title is used",
+              "Behavior-change management and coaching only, with all food guidance reserved",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The list is remarkably wide, and it explicitly includes INDIVIDUALIZED recommendations, provided they are for wellness or primary prevention rather than therapy, and no protected title is used.",
+            sourceLessonSlug: "coaching-eating-not-prescribing",
+          },
+          {
+            prompt: "What is the 'drift test'?",
+            options: [
+              "The silent pre-check of every eating conversation: condition or behavior?",
+              "The check for whether a client's goals have shifted since intake",
+              "The test of whether a coach's language has become prescriptive over time",
+              "The review of whether a client's diet has drifted from the agreed plan",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One question, asked before speaking. Conditions refer out; behavior stays, and the lesson's example pair makes the distinction concrete.",
+            sourceLessonSlug: "coaching-eating-not-prescribing",
+          },
+          {
+            prompt: "Apply the drift test: 'I know what to eat and I keep not doing it.'",
+            options: [
+              "Behavior, and the entire reason this program exists",
+              "A condition question in disguise, since the knowledge claim may be inaccurate",
+              "Ambiguous, requiring assessment before it can be classified",
+              "Behavior, but outside scope without a dietitian's involvement",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Pure behavior. The lesson pairs it against 'what should I eat for my kidney disease', which is a condition and belongs to a registered dietitian.",
+            sourceLessonSlug: "coaching-eating-not-prescribing",
+          },
+          {
+            prompt: "How does the course characterize the width of the nutrition lane?",
+            options: [
+              "Narrow about WHAT to eat for a disease, wide about HOW a person changes eating",
+              "Narrow in both directions, which is why the pillar is taught defensively",
+              "Wide about what to eat for wellness, narrow about behavior change",
+              "Narrow for unlicensed coaches, wide for those holding a nutrition credential",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That framing is the lesson's whole argument. The restriction is on disease-directed content, and everything about how a person changes eating remains available.",
+            sourceLessonSlug: "coaching-eating-not-prescribing",
+          },
+          {
+            prompt: "What is 'non-prescriptive coaching' as this course defines it?",
+            options: [
+              "General education plus behavior change, never individualized diet prescriptions for conditions",
+              "Nutrition work in which the coach never names specific foods",
+              "Nutrition work that avoids any numerical target for intake",
+              "Nutrition work delivered without a written plan of any kind",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The restriction is on condition-directed prescription, not on naming foods, using numbers, or writing things down. Reading it more broadly gives away lane the coach actually has.",
+            sourceLessonSlug: "coaching-eating-not-prescribing",
+          },
+          {
+            prompt: "What is a 'wellness exemption'?",
+            options: [
+              "Statutory language, like MCL 333.18353, keeping named coaching activities lawful on conditions",
+              "A waiver a client signs acknowledging the coach is not a licensed provider",
+              "A regulatory exception for coaches working under clinician supervision",
+              "The general principle that wellness work falls outside practice acts",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is statutory and conditional, not a general principle or a waiver. WELL-00 made the same point: coaching is lawful in Michigan because a statute says so on conditions, not because nothing addresses it.",
+            sourceLessonSlug: "coaching-eating-not-prescribing",
+          },
+          {
+            prompt: "What constitutional line did Cooksey v. Futrell draw, as this course summarizes it?",
+            options: [
+              "General nutrition speech, stories, classes, and opinions are protected; individualized clinical care is regulable",
+              "All nutrition speech is protected regardless of whether it is individualized",
+              "Only unpaid nutrition speech is protected; charging a fee removes the protection",
+              "State dietetics boards may not regulate any speech delivered online",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two-sided, and the coaching lane runs between the posts. Note what the line is NOT drawn on: payment or medium.",
+            sourceLessonSlug: "coaching-eating-not-prescribing",
+          },
+          {
+            prompt: "Why does this lesson inventory the PERMISSIONS rather than stopping at prohibitions?",
+            options: [
+              "The converged guidance authorizes more than most coaches ever deploy",
+              "Prohibitions vary by state while permissions are uniform",
+              "Permissions are easier for clients to understand than restrictions",
+              "The scope documents themselves are framed positively",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Coaches under-use their lane. Scope teaching that stops at prohibitions produces a coach who is legally safe and practically timid.",
+            sourceLessonSlug: "what-the-lane-contains",
+          },
+          {
+            prompt: "Which education materials are expressly inside every published scope?",
+            options: [
+              "The Dietary Guidelines, MyPlate, and materials developed or endorsed by dietitians and physicians",
+              "Any peer-reviewed nutrition research the coach can cite accurately",
+              "Any material published by a recognized certification body",
+              "Materials the client's own physician has provided to them",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Government guidelines plus clinician-developed or clinician-endorsed materials. Peer-reviewed papers and certification content are not the channel the scopes name.",
+            sourceLessonSlug: "what-the-lane-contains",
+          },
+          {
+            prompt: "Which four teaching activities does the lesson list as inside the education permission?",
+            options: [
+              "Portion education, label reading, food-group teaching, cooking and food-prep skills",
+              "Portion education, macronutrient targets, label reading, and supplement evaluation",
+              "Label reading, meal planning, food-group teaching, and calorie estimation",
+              "Cooking skills, portion education, nutritional assessment, and shopping strategy",
+            ],
+            correctIndex: 0,
+            explanation:
+              "All four are general education. Macronutrient targets, meal planning, and nutritional assessment are the out-of-scope items that get mistaken for teaching.",
+            sourceLessonSlug: "what-the-lane-contains",
+          },
+          {
+            prompt: "Why does the entire WELL-01 toolkit apply to eating 'without a single scope caveat'?",
+            options: [
+              "None of it tells anyone what to eat",
+              "Behavior change is expressly permitted by the Michigan statute",
+              "Coaching credentials authorize behavioral work in all jurisdictions",
+              "The toolkit was validated in nutrition populations specifically",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The reason is structural rather than permissive: nothing in any practice act reserves the behavior-change conversation, because none of it constitutes dietary advice.",
+            sourceLessonSlug: "what-the-lane-contains",
+          },
+          {
+            prompt: "What does the lesson say about environment and logistics work?",
+            options: [
+              "Not the consolation tier: the environment evidence suggests it is where the leverage lives",
+              "It is a fallback for clients whose conditions preclude direct nutrition work",
+              "It is permitted but low-yield compared with direct dietary education",
+              "It requires a dietitian's involvement once specific foods are named",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Section 3 makes the case: matched-nutrient ultra-processed food drove 508 extra kilocalories a day, and 26 studies found environments consistently making the healthier choice harder.",
+            sourceLessonSlug: "what-the-lane-contains",
+          },
+          {
+            prompt: "What four things does 'food logistics' cover?",
+            options: [
+              "Shopping strategy, meal structure and timing as behavior, pantry and workplace design, cost and social planning",
+              "Meal prep, portion control, grocery budgeting, and food storage",
+              "Shopping, cooking, portioning, and tracking",
+              "Meal timing as therapy, shopping routines, cost management, and supplement scheduling",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Note 'meal structure and timing as BEHAVIOR, not as therapy'. The qualifier is what keeps timing work inside the lane rather than turning it into a therapeutic protocol.",
+            sourceLessonSlug: "what-the-lane-contains",
+          },
+          {
+            prompt: "When a client already has a dietitian's plan, what is the coach's defined role?",
+            options: [
+              "Implementation support: adherence, obstacles, accountability",
+              "Reviewing the plan for behavioral feasibility and suggesting modifications",
+              "Translating the plan into weekly targets the coach monitors",
+              "Providing a parallel plan the client can follow when the dietitian's is impractical",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three functions, all behavioral. The lesson is explicit that this is not a workaround of the scope line but the exact collaboration every scope document describes.",
+            sourceLessonSlug: "what-the-lane-contains",
+          },
+          {
+            prompt: "Which are the four tells that you have left the lane?",
+            options: [
+              "A meal plan for one person, macro targets for a condition, a supplement recommendation, adjusting a clinician's plan",
+              "Naming specific foods, using numbers, writing a plan down, discussing a diagnosis",
+              "Charging for nutrition work, using the word nutritionist, working with clinical clients, giving written advice",
+              "Setting any target, discussing supplements, referencing a diagnosis, coaching weight loss",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Four specific acts, each with a lawful nearby cousin. The distractors sweep in lawful activities, which is the timidity error the permissions lesson exists to prevent.",
+            sourceLessonSlug: "what-the-lane-contains",
+          },
+          {
+            prompt: "What is a 'lawful cousin,' and why does the lesson call knowing it 'the craft'?",
+            options: [
+              "The in-scope neighbor of an out-of-scope act: guideline education beside meal planning",
+              "A related credential that authorizes what the coaching credential does not",
+              "A colleague in a licensed profession to whom the work can be referred",
+              "The permitted version of a technique once a client consents in writing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Every prohibited act has a nearby permitted one. Knowing the cousin is what lets a coach answer rather than simply refuse, which is the difference between scope discipline and unhelpfulness.",
+            sourceLessonSlug: "what-the-lane-contains",
+          },
+          {
+            prompt: "A client asks for a supplement recommendation. What is the lawful cousin?",
+            options: [
+              "Educate on what authorities say about the category; route the recommendation to their clinician",
+              "Recommend a category rather than a specific product, since categories are general information",
+              "Provide the recommendation with a written disclaimer that it is not medical advice",
+              "Decline entirely, since supplements cannot be discussed within any coaching scope",
+            ],
+            correctIndex: 0,
+            explanation:
+              "General education stays in; the recommendation goes out. Recommending a category is still recommending, and declining to discuss it at all gives away lane the coach has.",
+            sourceLessonSlug: "what-the-lane-contains",
+          },
+          {
+            prompt: "What is 'recognized-authority education'?",
+            options: [
+              "Teaching from government guidelines and clinician-endorsed materials; every scope permits this channel",
+              "Education delivered by a coach holding a recognized nutrition certification",
+              "Teaching content that has been peer-reviewed and published",
+              "Education a client's own clinician has authorized the coach to deliver",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The authority is the material's source, not the coach's credential or the client's clinician. That is what makes it a channel a coach can rely on universally.",
+            sourceLessonSlug: "what-the-lane-contains",
+          },
+          {
+            prompt: "A hypertensive client asks what sodium target they should hit. What does the drift test return?",
+            options: [
+              "A condition question: the target belongs to licensed care; the adherence work stays yours",
+              "A behavior question, since sodium intake is an everyday eating pattern",
+              "A wellness question, since hypertension management is primary prevention",
+              "An education question, since sodium guidance appears in the Dietary Guidelines",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is one of the lesson's named 'conditions in disguise'. Sodium guidance does appear in the guidelines, but a TARGET for a diagnosed condition is therapy.",
+            sourceLessonSlug: "coaching-eating-not-prescribing",
+          },
+          {
+            prompt: "Which is a correctly drawn division of labor for a client whose physician told them to lose weight with no plan attached?",
+            options: [
+              "Licensed care owns the targets; the coach owns adherence, environment, and habit machinery",
+              "The coach sets interim targets and the physician reviews them at the next appointment",
+              "The coach declines the work entirely until a dietitian is involved",
+              "The coach proceeds with weight-loss coaching, since the physician has authorized it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A physician's instruction does not transfer their authority to the coach. Encouraging the client to obtain the actual plan, then coaching everything around it, is the referral-with-a-coaching-offer pattern.",
+            sourceLessonSlug: "coaching-eating-not-prescribing",
+          },
+          {
+            prompt: "What makes a coach who can 'make a nutrition label legible in ninety seconds' valuable?",
+            options: [
+              "Real, legal value delivered entirely inside the education permission",
+              "It substitutes for the individualized guidance the coach cannot provide",
+              "It satisfies the education requirement most scopes impose on coaches",
+              "It establishes the coach's expertise before behavior work begins",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson's point is that the permission channel is genuinely useful rather than a leftover. No scope imposes an education requirement, and label teaching is not a substitute for what is prohibited.",
+            sourceLessonSlug: "what-the-lane-contains",
+          },
+          {
+            prompt: "Why does the course teach the legal map by 'recapping from the verified primaries'?",
+            options: [
+              "WELL-00 established it against statute text; this pillar applies it rather than re-deriving it",
+              "The primaries change frequently, so the recap keeps the material current",
+              "Legal content requires citation in every course under the citation rule",
+              "The recap satisfies the scope documents' requirement to reference source law",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the program's bridging rule again: one skill, one home. WELL-00 owns the statutory work, and this course applies it where it bites hardest.",
+            sourceLessonSlug: "coaching-eating-not-prescribing",
+          },
+          {
+            prompt: "Which claim about the coaching lane would this course reject?",
+            options: [
+              "'Coaches cannot discuss specific foods with clients'",
+              "'Coaches cannot build a meal plan for an individual client'",
+              "'Coaches cannot set macronutrient targets for a diagnosed condition'",
+              "'Coaches cannot recommend supplements'",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Discussing specific foods is education and squarely permitted; the other three are on the tells list. Over-restricting is the error the permissions lesson exists to correct.",
+            sourceLessonSlug: "what-the-lane-contains",
+          },
+          {
+            prompt: "What does the lesson mean by 'behavior facilitation, unrestricted'?",
+            options: [
+              "No practice act reserves the behavior-change conversation",
+              "Behavior work requires no scope consideration in any jurisdiction",
+              "Coaches may facilitate behavior change around any topic including treatment",
+              "Behavioral techniques are exempt from the title-protection rules",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Practice acts reserve nutrition WORK, and behavior-change conversation is not nutrition work. That is a narrower and more defensible claim than a general exemption.",
+            sourceLessonSlug: "what-the-lane-contains",
+          },
+          {
+            prompt: "Which pairing correctly matches an out-of-scope act with its lawful cousin?",
+            options: [
+              "Macro targets for a condition, paired with coaching adherence to the dietitian's macros",
+              "Building a meal plan, paired with building a template the client fills in",
+              "Recommending a supplement, paired with recommending a trusted brand",
+              "Adjusting a clinician's plan, paired with adjusting it only with the client's consent",
+              ],
+            correctIndex: 0,
+            explanation:
+              "The cousin keeps the content with the licensee and the behavior with the coach. The other three only disguise the prohibited act rather than replacing it.",
+            sourceLessonSlug: "what-the-lane-contains",
+          },
+        ],
+      },
+    },
+
     // ── Section 2 ────────────────────────────────────────────────────────────────────────────
     {
       slug: "dietfits-the-composition-answer",
@@ -89,6 +466,10 @@ export const WELL_COACHING_NUTRITION_COURSE: AuthoredCourse = {
 
 **What both arms shared is the finding.** Every participant was coached toward whole foods, diet quality, and a pattern they could sustain. Both groups lost meaningful weight. The active ingredients were the ones the arms had in COMMON, which is precisely the part of the trial a non-prescriptive coach is licensed to deliver.
 
+**And the systematic review that settles it.** DIETFITS is one trial, however clean, so the honest question is whether the whole literature agrees. It does. A Cochrane review pooled **61 randomized trials with 6,925 participants** comparing low-carbohydrate against balanced-carbohydrate weight-reducing diets in adults with overweight or obesity, and found **little to no difference** in weight loss at both three-to-eight months and one-to-two years, in people with and without type 2 diabetes. The differences were under a kilogram, which is below anything a client would notice, and the certainty of the evidence was graded moderate to high (Naude et al., 2022).
+
+Sixty-one trials is a different kind of statement from one trial. When a client arrives certain that carbohydrate is the variable, this is the number to have: not "one study found no difference" but "sixty-one trials found no difference that would matter to you."
+
 **Coaching translation.** When a client asks "low-carb or low-fat?", the evidence-honest answer is: whichever quality-focused version you will still be eating in a year. That answer is not a dodge; it is the trial's actual result, and it converts a prescription question into a behavior question, which is your question.
 
 :::reveal Give the DIETFITS numbers that answer the 'which diet' question. ||| 609 adults, 12 months: minus 5.3 kg healthy low-fat versus minus 6.0 kg healthy low-carbohydrate, difference 0.7 kg with a confidence interval crossing zero, and no genotype (P=.20) or insulin-secretion (P=.47) interaction. Composition was not the lever; the shared quality-and-sustainability coaching was.
@@ -100,9 +481,13 @@ export const WELL_COACHING_NUTRITION_COURSE: AuthoredCourse = {
 - **Diet-by-genotype interaction**: the tested hypothesis that genes predict which diet works for whom; DIETFITS found none (P=.20).
 - **Healthy-diet arms**: DIETFITS' design choice: both diets emphasized whole foods and quality, so the comparison isolated composition rather than junk versus not.
 - **Sustainability framing**: the evidence-honest answer to "which diet": the quality-focused version the client will still be eating in a year.
+- **Clinically meaningful difference**: a difference large enough to matter to a person, as distinct from one merely detectable; the low-carb versus balanced gap is under a kilogram and fails this test.
+- **Certainty grading**: a review's judgment of how much its estimate can be trusted, separate from the estimate's size; Naude's was moderate to high, which is unusually strong for this literature.
 
 ## Sources
-Gardner, C. D., Trepanowski, J. F., Del Gobbo, L. C., et al. (2018). Effect of low-fat vs low-carbohydrate diet on 12-month weight loss in overweight adults and the association with genotype pattern or insulin secretion: The DIETFITS randomized clinical trial. *JAMA, 319*(7), 667-679. https://pubmed.ncbi.nlm.nih.gov/29466592/`,
+Gardner, C. D., Trepanowski, J. F., Del Gobbo, L. C., et al. (2018). Effect of low-fat vs low-carbohydrate diet on 12-month weight loss in overweight adults and the association with genotype pattern or insulin secretion: The DIETFITS randomized clinical trial. *JAMA, 319*(7), 667-679. https://pubmed.ncbi.nlm.nih.gov/29466592/
+
+Naude, C. E., Brand, A., Schoonees, A., Nguyen, K. A., Chaplin, M., & Volmink, J. (2022). Low-carbohydrate versus balanced-carbohydrate diets for reducing weight and cardiovascular risk. *Cochrane Database of Systematic Reviews, 1*(1), CD013334. https://pubmed.ncbi.nlm.nih.gov/35088407/`,
     },
     {
       slug: "adherence-the-active-ingredient",
@@ -260,7 +645,7 @@ Miketinas, D. C., Bray, G. A., Beyl, R. A., Ryan, D. H., Sacks, F. M., & Champag
           {
             prompt: "The single most influential dietary predictor of weight change in POUNDS LOST's model was:",
             options: [
-              "Fiber intake, at a standardized beta of minus 0.37",
+              "Fiber intake, standardized beta minus 0.37",
               "Protein percentage, at double the influence of any other nutrient",
               "Meal frequency, with six small meals outperforming three",
               "Total caloric intake, which explained nearly all the variance alone",
@@ -308,6 +693,461 @@ Miketinas, D. C., Bray, G. A., Beyl, R. A., Ryan, D. H., Sacks, F. M., & Champag
             explanation:
               "Supporting implementation of licensed care is the collaboration every scope document describes: the plan stays the dietitian's, the adherence craft stays yours, and struggles get routed back to the plan's author, not edited away.",
             sourceLessonSlug: "what-the-lane-contains",
+          },
+          {
+            prompt: "What were DIETFITS' twelve-month weight results?",
+            options: [
+              "Minus 5.3 kg low-fat versus minus 6.0 kg low-carb; a 0.7 kg difference, CI crossing zero",
+              "Minus 6.0 kg low-fat versus minus 5.3 kg low-carbohydrate, a 0.7 kg difference favoring low-fat",
+              "Minus 5.3 kg versus minus 9.0 kg, favoring low-carbohydrate significantly",
+              "No weight loss in either arm, since both were quality-focused rather than restrictive",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both arms lost meaningful weight; the difference between them was 0.7 kg with a confidence interval crossing zero, which is the statistical way of saying it could as easily have gone the other way.",
+            sourceLessonSlug: "dietfits-the-composition-answer",
+          },
+          {
+            prompt: "Which two pre-registered hypotheses did DIETFITS test, and what did it find?",
+            options: [
+              "Genotype (P = .20) and baseline insulin secretion (P = .47); neither predicted who succeeded",
+              "Genotype pattern (P = .02) and insulin secretion (P = .47); genotype predicted success but insulin did not",
+              "Baseline BMI and insulin secretion; neither predicted success on either diet",
+              "Genotype pattern and adherence; adherence predicted success and genotype did not",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The two most popular 'which diet is right for YOU' hypotheses, tested prospectively and both null. Pre-registration is what makes those nulls credible rather than exploratory.",
+            sourceLessonSlug: "dietfits-the-composition-answer",
+          },
+          {
+            prompt: "What behavioral treatment did both DIETFITS arms receive?",
+            options: [
+              "22 small-group sessions toward the lowest intake they could MAINTAIN, emphasizing whole foods",
+              "Written meal plans with monthly check-ins and calorie targets",
+              "12 individual counselling sessions focused on macronutrient compliance",
+              "Digital self-monitoring with automated feedback and no group contact",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Twenty-two group sessions, with maintainability and diet quality as the explicit emphasis. What both arms shared is the finding, and it is exactly the coaching layer.",
+            sourceLessonSlug: "dietfits-the-composition-answer",
+          },
+          {
+            prompt: "What macronutrient splits did the DIETFITS arms actually achieve?",
+            options: [
+              "48 versus 30 percent carbohydrate, and 29 versus 45 percent fat",
+              "55 versus 20 percent carbohydrate, and 25 versus 55 percent fat",
+              "40 versus 40 percent carbohydrate, since both arms converged",
+              "48 versus 30 percent carbohydrate, with fat held constant in both arms",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Genuinely different splits, which is what makes the null result meaningful: the arms separated on the variable being tested, and the outcome still did not follow.",
+            sourceLessonSlug: "dietfits-the-composition-answer",
+          },
+          {
+            prompt: "Why is DIETFITS 'good news for a non-prescriptive coach specifically'?",
+            options: [
+              "The effective ingredients were what both arms shared: the coaching layer. The prescription did not matter",
+              "It shows that dietary prescription is unnecessary for weight loss in any population",
+              "It demonstrates that group coaching outperforms individual dietary counselling",
+              "It establishes that coaches can deliver equivalent results to registered dietitians",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The convenient alignment is the point: the prescription, which you may not deliver, is the part that did not matter, and the behavioral support, which you may, is the part that did.",
+            sourceLessonSlug: "dietfits-the-composition-answer",
+          },
+          {
+            prompt: "How large was the Cochrane review of low-carbohydrate versus balanced-carbohydrate diets?",
+            options: [
+              "61 randomized trials with 6,925 participants",
+              "26 randomized trials with 3,222 participants",
+              "61 randomized trials with 609 participants",
+              "10 randomized trials with 6,925 participants",
+            ],
+            correctIndex: 0,
+            explanation:
+              "61 trials, 6,925 participants. The 609 figure is DIETFITS alone, and the course's point is that sixty-one trials is a different kind of statement from one.",
+            sourceLessonSlug: "dietfits-the-composition-answer",
+          },
+          {
+            prompt: "What did the Cochrane review find, and over what timeframes?",
+            options: [
+              "Little to no difference at three-to-eight months and one-to-two years, with and without type 2 diabetes",
+              "A small advantage for low-carbohydrate at three-to-eight months that disappeared by two years",
+              "Little to no difference in people without diabetes, but an advantage for low-carbohydrate in those with it",
+              "A consistent advantage for balanced-carbohydrate diets at both timepoints",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both timeframes, both populations, differences under a kilogram. The diabetes subgroup matters because it is where the low-carbohydrate case is usually made strongest.",
+            sourceLessonSlug: "dietfits-the-composition-answer",
+          },
+          {
+            prompt: "How was the certainty of the Cochrane evidence graded, and why does that matter?",
+            options: [
+              "Moderate to high, unusually strong for this literature",
+              "Low to very low, consistent with most nutrition evidence",
+              "Not graded, since the review pooled heterogeneous interventions",
+              "High for weight but low for cardiovascular outcomes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Moderate to high certainty on a null finding is a strong statement: it is not 'we could not detect a difference' but 'we are reasonably confident there is not a meaningful one'.",
+            sourceLessonSlug: "dietfits-the-composition-answer",
+          },
+          {
+            prompt: "What is a 'clinically meaningful difference'?",
+            options: [
+              "A difference large enough to matter to a person, not merely detectable",
+              "A difference that reaches statistical significance in an adequately powered trial",
+              "A difference confirmed across more than one independent trial",
+              "A difference large enough to change clinical guidelines",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Mattering to a person, not detectability. The low-carb versus balanced gap is under a kilogram, which fails the test regardless of what any significance test says.",
+            sourceLessonSlug: "dietfits-the-composition-answer",
+          },
+          {
+            prompt: "A client is certain carbohydrate is the variable. What is the strongest number to have?",
+            options: [
+              "Sixty-one trials found no difference that would matter to you",
+              "One large trial found a 0.7 kilogram difference with a confidence interval crossing zero",
+              "Genotype does not predict which diet works for whom",
+              "Adherence correlates with weight change inside every diet group",
+            ],
+            correctIndex: 0,
+            explanation:
+              "All four statements are true and useful, but the lesson names this one specifically: sixty-one trials is a different kind of statement from one trial, however clean.",
+            sourceLessonSlug: "dietfits-the-composition-answer",
+          },
+          {
+            prompt: "What did A TO Z find about adherence within diet groups?",
+            options: [
+              "Adherence correlated with weight change inside every group: .42, .34, .38",
+              "Adherence correlated with weight change only in the Atkins group",
+              "Adherence was higher on Atkins, which explains its larger average loss",
+              "Adherence was unrelated to weight change once diet assignment was controlled",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Inside every group, at similar magnitudes. That within-group pattern is what makes adherence the variable rather than a proxy for which diet someone got.",
+            sourceLessonSlug: "adherence-the-active-ingredient",
+          },
+          {
+            prompt: "What did the most and least adherent tertiles lose in A TO Z?",
+            options: [
+              "Most adherent: 8.3 kg Atkins, 6.5 Ornish. Least adherent: 1.9 and 1.7 on the same diets",
+              "Most adherent: 6.5 kg on Atkins, 8.3 on Ornish. Least adherent: 1.7 and 1.9",
+              "Most adherent: 8.3 kg on Atkins, 1.9 on Ornish. Least adherent: 6.5 and 1.7",
+              "Most adherent: 5.3 kg on Atkins, 6.0 on Ornish. Least adherent: 0.7 on both",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Philosophically opposite diets produced nearly identical results at equal adherence, and enormously different results at different adherence. That contrast is the section's spine.",
+            sourceLessonSlug: "adherence-the-active-ingredient",
+          },
+          {
+            prompt: "Into which two constructs did adherence factor in POUNDS LOST?",
+            options: [
+              "Behavioral adherence (attending, self-monitoring, showing up) and dietary adherence (hitting macro targets)",
+              "Short-term adherence and long-term adherence, measured at six and twenty-four months",
+              "Self-reported adherence and biomarker-verified adherence",
+              "Attendance adherence and self-monitoring adherence, tracked separately",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Showing up versus hitting targets. The distinction is the whole finding, because the two predicted outcomes very differently.",
+            sourceLessonSlug: "adherence-the-active-ingredient",
+          },
+          {
+            prompt: "How did behavioral adherence vary across the four POUNDS LOST diet prescriptions?",
+            options: [
+              "It was identical across all four",
+              "It was highest on the lowest-fat prescription",
+              "It declined as the prescription became more restrictive",
+              "It was not measured separately by prescription",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Identical across all four. That rules out the explanation that some prescriptions are simply easier to show up for, which would otherwise confound the finding.",
+            sourceLessonSlug: "adherence-the-active-ingredient",
+          },
+          {
+            prompt: "What did EARLY behavioral adherence predict in the POUNDS LOST follow-up?",
+            options: [
+              "Weight and waist change, at canonical correlations of 0.52 at six months and 0.37 at 24",
+              "Weight change at six months only, with no relationship at twenty-four",
+              "Dietary adherence at twenty-four months, which then predicted weight",
+              "Weight change at 0.52 and 0.37, but only in participants who attended all sessions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "0.52 at six months and 0.37 at twenty-four, which is a durable relationship. Early dietary adherence, by contrast, predicted almost nothing durable.",
+            sourceLessonSlug: "adherence-the-active-ingredient",
+          },
+          {
+            prompt: "What is the coach's-eyes reading of the POUNDS LOST adherence findings?",
+            options: [
+              "The showing-up behaviors out-predicted the macro-target behaviors, by a lot",
+              "Dietary precision matters most in the first six months and less thereafter",
+              "Attendance is a proxy for motivation, which is the real predictor",
+              "Both dimensions matter equally once measured over twenty-four months",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Attendance, self-monitoring, and showing up beat hitting the numbers. That is a coach's leverage rather than a dietitian's, which is the section's practical payoff.",
+            sourceLessonSlug: "adherence-the-active-ingredient",
+          },
+          {
+            prompt: "What did the low-carbohydrate versus low-fat metabolic-syndrome meta-analysis find?",
+            options: [
+              "Both improve markers; weight loss itself best predicted fasting-glucose improvement",
+              "Low-carbohydrate diets improved every marker more than low-fat diets",
+              "Neither diet improved metabolic-syndrome markers once weight was controlled",
+              "Low-fat diets improved glucose and low-carbohydrate improved lipids, with no overlap",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Weight loss itself was the best predictor of glucose improvement, with end-of-study macronutrient intake mattering mainly for triglycerides and diastolic pressure.",
+            sourceLessonSlug: "adherence-the-active-ingredient",
+          },
+          {
+            prompt: "How does the course summarize composition's place in the causal chain?",
+            options: [
+              "Composition is not nothing; it is downstream of somebody adhering to something",
+              "Composition is irrelevant once total calories are matched",
+              "Composition matters primarily in clinical populations",
+              "Composition determines adherence, which then determines outcomes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Downstream, not absent. The phrasing preserves the honest fact that macronutrients affect triglycerides and diastolic pressure, while putting them behind adherence in the order of coaching priorities.",
+            sourceLessonSlug: "adherence-the-active-ingredient",
+          },
+          {
+            prompt: "What permission do the diet trials give a coach, in this lesson's words?",
+            options: [
+              "To be almost boring about food and relentless about behavior",
+              "To decline all conversations about macronutrients as out of scope",
+              "To recommend whichever diet the client finds most appealing",
+              "To prioritize diet quality over both composition and adherence",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Boring about food, relentless about behavior. It is permission rather than restriction: the evidence says the coach's natural lane is also the high-leverage one.",
+            sourceLessonSlug: "adherence-the-active-ingredient",
+          },
+          {
+            prompt: "What was the single most influential dietary predictor of six-month weight change in POUNDS LOST?",
+            options: [
+              "Fiber intake, at a standardized beta of minus 0.37",
+              "Total calorie intake, at a standardized beta of minus 0.37",
+              "Energy density, at a standardized beta of minus 0.29",
+              "Protein intake, at a standardized beta of minus 0.22",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Fiber, and the model that produced it also held calories, fat, energy density, and demographics. Beating calories in that company is what makes the finding notable.",
+            sourceLessonSlug: "fiber-and-energy-density",
+          },
+          {
+            prompt: "What fiber intakes and weight losses distinguished adherent from non-adherent participants?",
+            options: [
+              "25.2 versus 21.1 grams a day; 9.3 versus 6.4 kilograms lost",
+              "28.0 versus 21.1 grams a day, and 9.3 versus 6.4 kilograms lost",
+              "25.2 versus 21.1 grams a day, and 6.4 versus 9.3 kilograms lost",
+              "25.2 versus 15.0 grams a day, and 8.3 versus 1.9 kilograms lost",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A four-gram difference in fiber alongside a three-kilogram difference in weight loss. The 8.3-versus-1.9 figures belong to A TO Z's adherence tertiles.",
+            sourceLessonSlug: "fiber-and-energy-density",
+          },
+          {
+            prompt: "Why is fiber described as 'a rare target that improves the diet and the adherence to it simultaneously'?",
+            options: [
+              "Fiber predicted weight loss AND was strongly associated with adherence",
+              "Fiber increases satiety, which reduces the effort required to restrict",
+              "Fiber targets are easier to hit than macronutrient targets",
+              "Fiber-rich foods are cheaper, which removes a common adherence barrier",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two effects from one lever, both in the data. Satiety and cost are plausible mechanisms, but the claim rests on the measured fiber-adherence association.",
+            sourceLessonSlug: "fiber-and-energy-density",
+          },
+          {
+            prompt: "What does fiber drag along when a coach targets it?",
+            options: [
+              "Lower energy density, more volume per calorie, and displacement of what is being crowded out",
+              "Higher protein intake and improved micronutrient adequacy",
+              "Lower total calories and higher meal frequency",
+              "Improved glycemic control and reduced sodium intake",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Fiber arrives inside vegetables, fruits, legumes, and whole grains, so coaching toward those foods brings the rest with it. That bundling is what makes it a behavior lever rather than a nutrient target.",
+            sourceLessonSlug: "fiber-and-energy-density",
+          },
+          {
+            prompt: "Why is fiber coaching 'fully inside the lane'?",
+            options: [
+              "'Eat more plants toward the guideline ballpark' is general, guideline-anchored education",
+              "Fiber is a nutrient rather than a food, so it falls outside dietary prescription",
+              "Fiber recommendations carry no risk, so scope restrictions do not apply",
+              "Fiber targets are set by the client rather than the coach",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It runs through the recognized-authority education channel. The reason is the source of the content, not the nutrient's identity or its safety profile.",
+            sourceLessonSlug: "fiber-and-energy-density",
+          },
+          {
+            prompt: "Why does this course coach fiber as additions rather than as a gram target?",
+            options: [
+              "A gram target turns eating into arithmetic; additions are countable, anchorable, minimum-versionable",
+              "Gram targets are outside scope, while additions are general education",
+              "Clients cannot accurately estimate fiber content, making targets unreliable",
+              "Additions produce larger fiber increases than targets in the trial data",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Framing and coachability, not scope or accuracy. Note the course does name a ballpark (25-plus grams) as education; what it avoids is making the number the behavior.",
+            sourceLessonSlug: "fiber-and-energy-density",
+          },
+          {
+            prompt: "What three additions does the lesson name as the craft version of fiber coaching?",
+            options: [
+              "The bean addition, the front-loaded vegetable, the whole-grain swap",
+              "The protein addition, the vegetable side, the fruit dessert",
+              "The salad starter, the legume swap, the fiber supplement",
+              "The whole-grain breakfast, the vegetable snack, the smoothie addition",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Each is a concrete chosen behavior rather than a quantity. A fiber supplement would also be out of scope, which is one reason it does not appear on the list.",
+            sourceLessonSlug: "fiber-and-energy-density",
+          },
+          {
+            prompt: "Why does addition coaching beat restriction coaching, per this lesson's analogy?",
+            options: [
+              "Same reason affirmation beats criticism: it gives the client something to DO, and doing is coachable",
+              "Because restriction triggers the what-the-hell effect more readily",
+              "Because additions are easier to self-monitor than restrictions",
+              "Because restriction framing falls outside the non-prescriptive lane",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The analogy is to lesson 9 of WELL-01. All four statements have some merit, but the lesson's stated reason is the actionability of an addition.",
+            sourceLessonSlug: "fiber-and-energy-density",
+          },
+          {
+            prompt: "What is 'crowding out'?",
+            options: [
+              "The addition strategy's mechanism: added foods displace reduced ones, with no restriction conversation",
+              "The tendency of ultra-processed foods to displace whole foods in a diet",
+              "The effect of a busy schedule pushing out meal preparation",
+              "The competition between multiple simultaneous behavior goals",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Displacement without a restriction conversation is the whole trick. It is how a coach reduces something without ever discussing reducing it.",
+            sourceLessonSlug: "fiber-and-energy-density",
+          },
+          {
+            prompt: "What is 'energy density'?",
+            options: [
+              "Calories per unit of food volume; fiber-rich whole foods sit low, giving fullness per calorie",
+              "The proportion of a food's calories coming from fat",
+              "The rate at which a food's calories are absorbed",
+              "The calorie content of a standard serving of a given food",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Calories per volume. That is why it travels with fiber: the same foods that carry fiber carry water and bulk, so fullness arrives at fewer calories.",
+            sourceLessonSlug: "fiber-and-energy-density",
+          },
+          {
+            prompt: "A client wants to debate optimal protein percentage for a whole session. What do the trials say to do?",
+            options: [
+              "Redirect the energy toward behavioral adherence, the variable that predicts their outcome",
+              "Answer the question thoroughly, since accurate information builds trust",
+              "Decline the topic, since macronutrient guidance is outside the coaching lane",
+              "Set a protein target and use it as the session's behavior anchor",
+            ],
+            correctIndex: 0,
+            explanation:
+              "DIETFITS, A TO Z, POUNDS LOST, and now Naude all point the same way. Note that discussing protein generally is not out of scope; it is just the wrong lever.",
+            sourceLessonSlug: "adherence-the-active-ingredient",
+          },
+          {
+            prompt: "Which finding most directly supports coaching attendance and self-monitoring over dietary precision?",
+            options: [
+              "Early BEHAVIORAL adherence predicted weight and waist at 0.52 and 0.37; dietary adherence, almost nothing",
+              "Adherence correlated with weight change inside every A TO Z diet group",
+              "Fiber was the most influential dietary predictor of six-month weight change",
+              "Sixty-one Cochrane trials found no meaningful difference between carbohydrate levels",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Only the POUNDS LOST follow-up separates the two dimensions and shows them predicting differently. The others establish that composition does not matter much, which is a related but distinct claim.",
+            sourceLessonSlug: "adherence-the-active-ingredient",
+          },
+          {
+            prompt: "What are 'healthy-diet arms,' and why did DIETFITS use them?",
+            options: [
+              "Both diets emphasized whole foods, so the comparison isolated composition rather than junk versus not",
+              "Both diets were designed by registered dietitians to ensure nutritional adequacy",
+              "Both diets included the same foods in different proportions",
+              "Both arms were screened for participants already eating a healthy baseline diet",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The design choice makes the null interpretable. Comparing a quality low-carb diet against a junk low-fat one would have tested quality, not composition.",
+            sourceLessonSlug: "dietfits-the-composition-answer",
+          },
+          {
+            prompt: "Which claim about diet composition would this course permit?",
+            options: [
+              "'End-of-study macronutrient intake mattered mainly for triglycerides and diastolic pressure'",
+              "'Macronutrient composition has no effect on any health marker'",
+              "'Low-carbohydrate diets are superior for people with insulin resistance'",
+              "'Composition is the primary determinant of long-term weight outcomes'",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Composition is not nothing, and the metabolic-syndrome meta-analysis says exactly where it does register. DIETFITS specifically tested and rejected the insulin-secretion hypothesis.",
+            sourceLessonSlug: "adherence-the-active-ingredient",
+          },
+          {
+            prompt: "What is the 'fiber-adherence link'?",
+            options: [
+              "The finding that fiber intake predicted both weight loss AND adherence to the diet itself",
+              "The observation that high-fiber diets are harder to adhere to initially",
+              "The mechanism by which fiber increases satiety and reduces intake",
+              "The correlation between fiber intake and session attendance",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One lever, two effects. It is what elevates fiber above other food-level targets in a course whose spine is that adherence is the active ingredient.",
+            sourceLessonSlug: "fiber-and-energy-density",
+          },
+          {
+            prompt: "A client asks 'which diet should I do?' What is the evidence-honest answer, and why is it not a dodge?",
+            options: [
+              "Whichever quality-focused version you will still be eating in a year: the trials' actual result",
+              "Whichever one your genotype and insulin profile suit best",
+              "The one with the most randomized evidence behind it, which is low-fat",
+              "It cannot be answered without an individualized assessment",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It converts a prescription question into a behavior question, which is the coach's question. And it is the finding rather than an evasion: DIETFITS and 61 Cochrane trials both say so.",
+            sourceLessonSlug: "dietfits-the-composition-answer",
           },
         ],
       },
@@ -393,6 +1233,10 @@ Sisnowski, J., Street, J. M., & Merlin, T. (2017). Improving food environments a
 
 **What no one gets to claim.** There is no evidence that weight-neutral programs reduce long-term cardiovascular events or mortality; the trials measure intermediate markers and quality of life over months to a couple of years. Equally, the claim that weight-focused work is uniformly harmful outruns this data, in which the weight-loss arm delivered its outcomes and held its gains too.
 
+**The physiology under the regain, which changes how you talk about it.** Both framings are arguing over a body that fights back, and a coach who does not know how it fights will mistake biology for character. Sumithran and colleagues followed 50 adults with overweight or obesity through a ten-week very-low-energy diet and then measured the hormones governing appetite. One year after the diet ended, and despite substantial regain, the changes had **not** normalized: leptin, peptide YY, cholecystokinin, insulin, and amylin remained below baseline, ghrelin and pancreatic polypeptide and gastric inhibitory polypeptide remained altered, and **subjective appetite remained higher than before the diet ever started** (Sumithran et al., 2011).
+
+Read that as a coach. A year later, the body is still asking for the weight back, and the person experiencing it has no way to tell that signal apart from a personal failing. This is the mechanism underneath weight-cycling histories, and it licenses one specific piece of coaching language: regain is a physiological expectation with a name, not evidence about who the client is. It also argues for the maintenance structures of WELL-01 lesson 20 rather than a second round of effort, because the thing that changed was not their motivation.
+
 **Coaching translation.** Frame-fit is a client variable, not an ideology. A client with a weight-cycling history and shame-driven abandonment may do their best work weight-neutral, measuring what improves without the scale. A client who wants weight loss and holds it without distress is running an evidence-supported strategy too. Both stay inside your lane; the capstone will ask you to hold both without a side.
 
 :::reveal Score the Mensinger head-to-head at both time points. ||| Post-intervention: weight-loss arm won BMI and weight; weight-neutral arm won LDL reduction and intuitive eating. Twenty-four months: both held improvements in waist-to-hip ratio, total cholesterol, activity, fruit and vegetables, self-esteem, and quality of life. A menu, not a verdict.
@@ -404,9 +1248,13 @@ Sisnowski, J., Street, J. M., & Merlin, T. (2017). Improving food environments a
 - **Intuitive eating**: eating guided by internal hunger and satiety cues; the weight-neutral arm's signature measured gain.
 - **Frame-fit**: this course's rule that the framing is chosen per client (history, goals, distress pattern), never imposed as ideology.
 - **Intermediate marker**: a measurable proxy like LDL or blood pressure, as distinct from hard endpoints like events and mortality; all the framing evidence lives here.
+- **Hormonal adaptation to weight loss**: the persistent post-diet shift in appetite-governing hormones, still present at one year in Sumithran's cohort; the physiology under weight-cycling histories.
+- **Weight cycling**: repeated loss and regain; understood here as a predictable interaction between effort and a defended physiology, not as a record of failed willpower.
 
 ## Sources
 Dimitrov Ulian, M., Pinto, A. J., de Morais Sato, P., et al. (2022). Health at Every Size-based interventions may improve cardiometabolic risk and quality of life even in the absence of weight loss: An ancillary, exploratory analysis of the Health and Wellness in Obesity study. *Frontiers in Nutrition, 9*, 598920. https://pubmed.ncbi.nlm.nih.gov/35273983/
+
+Sumithran, P., Prendergast, L. A., Delbridge, E., Purcell, K., Shulkes, A., Kriketos, A., & Proietto, J. (2011). Long-term persistence of hormonal adaptations to weight loss. *New England Journal of Medicine, 365*(17), 1597-1604. https://pubmed.ncbi.nlm.nih.gov/22029981/
 
 Hayashi, L. C., Benasi, G., St-Onge, M. P., & Aggarwal, B. (2021). Intuitive and mindful eating to improve physiological health parameters: A short narrative review of intervention studies. *Journal of Complementary and Integrative Medicine, 20*(3), 537-547. https://pubmed.ncbi.nlm.nih.gov/34913327/
 
