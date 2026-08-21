@@ -1260,6 +1260,71 @@ Paluch, A. E., Bajpai, S., Bassett, D. R., et al. (2022). Daily steps and all-ca
               "The same honesty logic as telling clients the habit-formation range: an accurate expectation converts 'I am not improving' into 'I am where the curve flattens', and redirects effort to cadence, balance, and strength.",
             sourceLessonSlug: "the-7000-step-day",
           },
+          {
+            prompt: "Why is the client's phone the recommended source for a step baseline?",
+            options: [
+              "Most phones already know it, so the baseline costs the client nothing to produce",
+              "Phone counts are more accurate than wrist-worn trackers",
+              "Phone data can be shared directly with the coach for verification",
+              "Phone counts match the measurement method used in the cohort studies",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Zero-effort retrieval of existing data. It is the same passive-measurement logic that makes steps the pillar's natural self-monitoring instrument.",
+            sourceLessonSlug: "the-7000-step-day",
+          },
+          {
+            prompt: "What does 'evidence graded strong' mean in the Jayedi analysis?",
+            options: [
+              "The grading reflected the effect's size and its dose-response gradient",
+              "The included studies were randomized rather than observational",
+              "The finding replicated in every included cohort without exception",
+              "The confidence interval excluded the null across all subgroups",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Size plus gradient. Both are features that make confounding a less comfortable explanation, which is how observational evidence earns a strong grade.",
+            sourceLessonSlug: "step-dose-response",
+          },
+          {
+            prompt: "Which two things make steps 'client-owned' in a way most fitness metrics are not?",
+            options: [
+              "The client already carries the counter, and the number belongs to them rather than to a coach's assessment",
+              "The client chooses the target, and the coach never sees the raw data",
+              "The client can verify the count independently, and the device is inexpensive",
+              "The client sets the measurement window, and the count resets daily",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Ownership is what preserves autonomy, which SDT names as the need driving maintained behavior. A metric the coach administers is a different psychological object.",
+            sourceLessonSlug: "the-7000-step-day",
+          },
+          {
+            prompt: "A client hits 7,000 steps and asks what to add. What does the evidence suggest, in order?",
+            options: [
+              "Cadence, then strength and balance work, since the step curve is flattening",
+              "More steps, since no harm is found at higher counts",
+              "Structured cardio, since steps alone cannot meet the aerobic guideline",
+              "Sitting reduction, since it is independent of step count",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Cadence carried independent mortality benefit, and the WHO guidelines add strength and, at 65-plus, balance. More steps is not wrong, but it is the flattest part of the curve.",
+            sourceLessonSlug: "step-dose-response",
+          },
+          {
+            prompt: "Why does the course quote three different reference baselines across the step analyses?",
+            options: [
+              "Each meta-analysis chose its own, so a figure only means something against the baseline its paper used",
+              "The baselines correspond to different age groups within the same pooled data",
+              "Later analyses raised the baseline as population activity levels rose",
+              "The baselines reflect self-reported versus device-measured step counts",
+            ],
+            correctIndex: 0,
+            explanation:
+              "1,895 in Liu, 2,000 in Stens, a 3,553 median in Paluch's lowest quartile. Quoting a percentage without its baseline is how step findings get inflated in circulation.",
+            sourceLessonSlug: "step-dose-response",
+          },
         ],
       },
     },
@@ -2016,6 +2081,136 @@ Stamatakis, E., Hamer, M., Tilling, K., & Lawlor, D. A. (2012). Sedentary time i
               "It is a sourcing-discipline point rather than a substantive one. The half-hour barely changes the coaching, and that is exactly why letting it slide would be corrosive.",
             sourceLessonSlug: "the-overfeeding-study",
           },
+          {
+            prompt: "Where does NEAT hide in a client's day, in the lesson's own order of size?",
+            options: [
+              "Occupation, then transportation, stairs, chores, errands on foot, standing on calls, and fidget-level movement",
+              "Transportation, then occupation, structured exercise, chores, and posture",
+              "Chores, then occupation, transportation, and recreational activity",
+              "Fidgeting, then posture, occupation, transportation, and chores",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Occupation is the giant and fidgeting the smallest layer. Structured exercise is excluded from NEAT by definition, so it cannot appear on the list at all.",
+            sourceLessonSlug: "neat-the-biggest-lever",
+          },
+          {
+            prompt: "Why does the course call NEAT 'the lever that survives'?",
+            options: [
+              "It survives injuries, travel, and every season in which the gym does not",
+              "It survives ageing better than structured training does",
+              "It survives motivation lapses, since it is largely unconscious",
+              "It survives measurement error better than self-reported exercise",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Durability across disrupted seasons. That is a different claim from being unconscious, and it is what makes NEAT the half of this pillar a coach can rely on year-round.",
+            sourceLessonSlug: "neat-the-biggest-lever",
+          },
+          {
+            prompt: "What does the overfeeding study's ten-fold variation in fat storage tell a coach?",
+            options: [
+              "Individual responses to the same surplus differ enormously, so identical inputs do not produce identical outcomes",
+              "Fat storage is primarily determined by diet composition rather than surplus size",
+              "Most people will resist fat gain if their NEAT is coached upward",
+              "Overfeeding studies cannot be generalized to free-living conditions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Same protocol, same surplus, ten-fold different outcomes. It is a caution against promising any individual a specific result from a group-level finding.",
+            sourceLessonSlug: "the-overfeeding-study",
+          },
+          {
+            prompt: "What is 'posture allocation'?",
+            options: [
+              "How a day divides among sitting, standing, and moving; measured every half-second and stable across weight change",
+              "The distribution of postures during a single working day",
+              "The proportion of waking hours spent upright, used as a NEAT proxy",
+              "The client's habitual postural patterns, assessed for corrective purposes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "How the day divides, and crucially its stability: it did not shift when obese participants lost weight or lean ones overate.",
+            sourceLessonSlug: "the-overfeeding-study",
+          },
+          {
+            prompt: "What is 'NEAT activation'?",
+            options: [
+              "The unconscious increase in everyday movement some bodies produce under caloric surplus",
+              "The deliberate increase in daily movement a coach and client plan together",
+              "The point at which NEAT exceeds structured exercise in daily expenditure",
+              "The metabolic response to standing after prolonged sitting",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Unconscious and surplus-driven. The lesson's summary line depends on it: the difference between banking a surplus and spending it.",
+            sourceLessonSlug: "the-overfeeding-study",
+          },
+          {
+            prompt: "What is a 'free-living intervention'?",
+            options: [
+              "A trial run in participants' ordinary lives rather than a lab",
+              "An intervention delivered without cost to participants",
+              "An intervention with no prescribed structure, letting participants choose",
+              "A trial in which the control group receives no contact",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Ordinary lives, not a lab. The sit-less pooled trials required at least seven days of it, which is what makes their modest results credible as real-world estimates.",
+            sourceLessonSlug: "sit-less-what-trials-show",
+          },
+          {
+            prompt: "What did the sit-less trials find regarding adverse effects?",
+            options: [
+              "None",
+              "Minor musculoskeletal complaints in standing-desk arms",
+              "Increased fatigue in the first two weeks, resolving thereafter",
+              "Adverse effects were not assessed in the pooled trials",
+            ],
+            correctIndex: 0,
+            explanation:
+              "No adverse effects, which is half the cost-benefit argument. A near-zero-cost, zero-risk intervention clears the bar on a small consistent benefit.",
+            sourceLessonSlug: "sit-less-what-trials-show",
+          },
+          {
+            prompt: "A client's TV block is four unbroken evening hours. Which two lessons converge on this target?",
+            options: [
+              "The sitting lesson, which ranks TV worst on dose-response, and the sit-less lesson, which says break the longest blocks first",
+              "The NEAT lesson, which ranks occupation largest, and the sitting lesson's log-linear finding",
+              "The step lesson's cadence finding and the sit-less lesson's movement-snack unit",
+              "The overfeeding lesson's posture data and the NEAT lesson's fidget layer",
+            ],
+            correctIndex: 0,
+            explanation:
+              "TV is the worst-behaving sitting flavor (RR 1.33, J-shaped) and it is also the longest unbroken block, which is where the sit-less menu says to start. Two independent reasons, same target.",
+            sourceLessonSlug: "sit-less-what-trials-show",
+          },
+          {
+            prompt: "Which claim does the Pontzer finding NOT license?",
+            options: [
+              "'Adding activity is pointless for weight management, since the body compensates'",
+              "'Expenditure plateaus at higher activity levels rather than rising linearly'",
+              "'Calorie arithmetic overpromises for already-active clients'",
+              "'The steep part of the activity curve still behaves additively'",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It overreads the plateau into a null. The model describes compensation at the HIGH end and says nothing that would make added activity pointless for a sedentary client.",
+            sourceLessonSlug: "the-overfeeding-study",
+          },
+          {
+            prompt: "Why does the course teach the NEAT evidence gap rather than omitting it?",
+            options: [
+              "Naming a gap keeps the coaching honest and the client's expectations survivable",
+              "The gap is likely to close soon, so coaches should anticipate the evidence",
+              "Omitting it would breach the citation requirements of the scope of practice",
+              "The gap is what distinguishes NEAT from other movement targets",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Honesty plus survivable expectations. A client sold NEAT as proven obesity therapy has a disappointment scheduled; a client sold a near-zero-cost bet does not.",
+            sourceLessonSlug: "the-overfeeding-study",
+          },
         ],
       },
     },
@@ -2608,6 +2803,201 @@ Yu, L., Yang, Y., Chen, Y., & Wang, Q. (2026). Do health coaching interventions 
             explanation:
               "They point in opposite directions and are easy to conflate. Using more THEORY genuinely helped in the activity trials; adding more TECHNIQUES did not help in the diabetes ones.",
             sourceLessonSlug: "tools-on-the-field",
+          },
+          {
+            prompt: "What is a 'maintenance phase' in this course's vocabulary?",
+            options: [
+              "The years after an intervention ends, where 60 to 80 percent of gained activity survives",
+              "The period after a behavior reaches automaticity and requires no further support",
+              "The stage of TTM following six months of sustained action",
+              "The phase in which a coach reduces contact frequency gradually",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Defined by what happens to the gains, not by a time marker or a model stage. The rest is what coaching brings back.",
+            sourceLessonSlug: "what-maintains-movement",
+          },
+          {
+            prompt: "What is a 'maintenance intervention'?",
+            options: [
+              "Explicit post-program support: boosters, ongoing self-monitoring, relapse planning",
+              "The final phase of an initial program, tapering toward independence",
+              "A separate program delivered after the client returns to baseline",
+              "Ongoing coaching at reduced frequency for an indefinite period",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Support added after the initial program, worth a further SMD 0.14. Naming its components matters: boosters, self-monitoring, and relapse planning are what the trials actually delivered.",
+            sourceLessonSlug: "what-maintains-movement",
+          },
+          {
+            prompt: "How does the maintenance conversation reuse WELL-01 lesson 20?",
+            options: [
+              "Re-anchored cues after schedule changes, minimum versions for sideways seasons, and the review cadence",
+              "Renewed evoking, a fresh collecting summary, and a restated commitment",
+              "Stage reassessment, decisional balance review, and updated goal setting",
+              "Increased contact frequency, added tracking, and external accountability",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three structures, each transferring unchanged from the psychology course. Movement maintenance is not a separate skill; it is that lesson applied to steps and sitting.",
+            sourceLessonSlug: "what-maintains-movement",
+          },
+          {
+            prompt: "What does the course mean by 'WELL-01's toolkit wearing activity trackers'?",
+            options: [
+              "The durable programs' components, self-monitoring, goal setting, and follow-up, are behavior-change tools rather than exercise-science ones",
+              "Activity trackers are the delivery mechanism the psychology course recommends",
+              "Movement coaching requires devices, whereas other pillars do not",
+              "The toolkit must be adapted before it transfers to the movement pillar",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Nothing in the durable-program list is specific to exercise. That is the observation, and it is why this course is a thin bridge rather than a full curriculum.",
+            sourceLessonSlug: "what-maintains-movement",
+          },
+          {
+            prompt: "In the stage-based activity trials, which construct mattered most?",
+            options: [
+              "Self-efficacy",
+              "Decisional balance",
+              "Processes of change",
+              "Stage of readiness",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Self-efficacy above all. Stage of readiness is precisely what did NOT moderate success, which is the finding's whole point.",
+            sourceLessonSlug: "tools-on-the-field",
+          },
+          {
+            prompt: "How does this lesson tell you to run the evoking half of a movement session?",
+            options: [
+              "What did moving used to give you; when did you last like who you were on a moving day",
+              "What is stopping you from moving more; what would need to change",
+              "How important is movement to you, and how confident are you",
+              "What has worked before, and what has not",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both questions ask what movement GAVE them, which evokes the client's own reasons. Asking what stops them invites sustain talk, and rating scales are an instrument rather than evocation.",
+            sourceLessonSlug: "tools-on-the-field",
+          },
+          {
+            prompt: "What transfers 'without modification' from WELL-01 to this pillar?",
+            options: [
+              "The if-then and WOOP machinery",
+              "The session anatomy, though the opening differs",
+              "The OARS skills, adapted for movement vocabulary",
+              "The stage-matching logic, applied to activity readiness",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The planning machinery transfers unchanged; what is pillar-specific is that the inner obstacle for movement is usually a belief rather than a schedule.",
+            sourceLessonSlug: "tools-on-the-field",
+          },
+          {
+            prompt: "What is a 'self-selected behavior,' and what does it outrank?",
+            options: [
+              "The movement habit the client picked; it outranks technical optimality",
+              "A behavior the client performs without prompting; it outranks scheduled activity",
+              "A behavior chosen from the coach's shortlist; it outranks a fully assigned one",
+              "The behavior a client already does; it outranks any new behavior",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Self-selected habits built more strength than assigned ones in the pooled data. Choosing from the coach's shortlist is a partial version, and the finding concerns new habits rather than existing ones.",
+            sourceLessonSlug: "tools-on-the-field",
+          },
+          {
+            prompt: "How many trials and participants were in the hypertension coaching meta-analysis?",
+            options: [
+              "Twelve trials, 2,497 participants",
+              "Fifteen trials, 2,497 participants",
+              "Eight trials, 738 participants",
+              "Twelve trials, 3,222 participants",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Twelve and 2,497. Fifteen trials is the cardiovascular-risk review, eight trials and 738 patients is the kidney-disease one, and 3,222 belongs to the WELL-01 diabetes review.",
+            sourceLessonSlug: "movement-coaching-in-the-clinic",
+          },
+          {
+            prompt: "What typically constituted the cardiovascular-risk coaching interventions?",
+            options: [
+              "Motivational interviewing plus education",
+              "Supervised exercise plus dietary counselling",
+              "Digital self-monitoring plus periodic clinician review",
+              "Group education plus peer support",
+            ],
+            correctIndex: 0,
+            explanation:
+              "MI plus education across the fifteen trials. Knowing the ingredient matters because it is the same method WELL-01 taught, tested in the population where movement matters most.",
+            sourceLessonSlug: "movement-coaching-in-the-clinic",
+          },
+          {
+            prompt: "What are 'cardiometabolic populations' as this lesson uses the term?",
+            options: [
+              "Clients with cardiovascular risk factors, hypertension, diabetes, or kidney disease",
+              "Clients whose primary goal is weight loss or body composition change",
+              "Clients under active clinical management for any chronic condition",
+              "Clients whose movement is limited by cardiovascular or metabolic symptoms",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Four named conditions, and the lesson's point is that this is where movement coaching's evidence is deepest AND where its scope rails matter most.",
+            sourceLessonSlug: "movement-coaching-in-the-clinic",
+          },
+          {
+            prompt: "Why does the course say the wins become credible when the nulls are taught beside them?",
+            options: [
+              "A source that reports only its positive findings gives you no way to judge the positive ones",
+              "Nulls indicate the trial was adequately powered to detect differences",
+              "Reporting nulls is required by the ethics code's disclosure duties",
+              "Nulls identify the outcomes a coach should avoid promising to clients",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Selective reporting destroys the informational value of what is reported. That is why the CKD depression and self-efficacy nulls appear beside its weight and blood-pressure wins.",
+            sourceLessonSlug: "movement-coaching-in-the-clinic",
+          },
+          {
+            prompt: "Which of these leaves the coaching lane in a cardiometabolic client?",
+            options: [
+              "Interpreting a change in the client's home blood-pressure readings",
+              "Coaching adherence to the medication schedule the clinician set",
+              "Building a sit-less day around the client's working pattern",
+              "Reviewing the client's step data and negotiating a next target",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Interpreting medical data is on the NBHWC exclusion list from WELL-00. Supporting adherence, sit-less design, and step targets are all behavior, squarely inside.",
+            sourceLessonSlug: "movement-coaching-in-the-clinic",
+          },
+          {
+            prompt: "Why does this lesson close the course's content?",
+            options: [
+              "It is the hardest application: the population that needs movement most, worked with the tightest scope discipline",
+              "It is the most recent evidence and therefore the most provisional",
+              "It requires every earlier lesson as a prerequisite",
+              "It is the only lesson that addresses clinical rather than general populations",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Hardest application, tightest rails. The lesson describes the composite job, a modest maintained gain plus clean referral discipline, as exactly what the program exists to train.",
+            sourceLessonSlug: "movement-coaching-in-the-clinic",
+          },
+          {
+            prompt: "A coach quotes 'coaching lowers blood pressure by 0.26 points.' What is wrong?",
+            options: [
+              "0.26 is a standardized mean difference, not a blood-pressure unit, and converting it invents a clinical claim",
+              "The correct figure is 0.13, which is the systolic result",
+              "The figure applies to dietary behavior rather than blood pressure",
+              "The figure comes from the kidney-disease trials rather than the hypertension ones",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The source-precision rule catches exactly this. SMD 0.26 IS the systolic result, but reading it as points of pressure turns a standardized effect into a number no paper reported.",
+            sourceLessonSlug: "movement-coaching-in-the-clinic",
           },
         ],
       },
