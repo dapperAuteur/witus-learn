@@ -669,17 +669,17 @@ Sesso, H. D., Manson, J. E., Aragaki, A. K., et al. (2022b). Effect of cocoa fla
 
 **The affiliation statement, one final time.** This program is independent. It is not affiliated with, endorsed by, or accredited by NASM or the NBHWC, and completing it grants no credential from either. What it grants is what you can now do.
 
-**The mock exam week.** WELL-00 promised this, and here it is. When all eight courses are complete, take every course final again, back to back in one sitting: eight finals, ten freshly drawn questions each, eighty questions across the whole program. The pools serve different subsets on retake, so this measures retention rather than memory. Treat a score below 80 on any final as an instruction about which course to reread, not as a verdict.
+**The mock exam week.** WELL-00 promised this, and here it is. When all nine courses are complete, take every course final again, back to back in one sitting: nine finals, ten freshly drawn questions each, ninety questions across the whole program. The pools serve different subsets on retake, so this measures retention rather than memory. Treat a score below 80 on any final as an instruction about which course to reread, not as a verdict.
 
 **And the real capstone assignment, which is not a quiz.** Write your protocol, per lesson 12. Run it for a month. Then run the WELL-01 session loop on yourself about it: evoke what it is actually for, find the inner obstacle that showed up, and revise one element into a contingent plan with an anchor and a minimum version. Keep the artefact. In a year, run it again against what you wrote, and you will have the only longitudinal data about you that will ever exist.
 
 :::reveal Does completing this program extend your scope of practice? ||| No, not by an inch. You still do not diagnose, treat, deliver named psychotherapies, prescribe diets for conditions, or interpret measurements clinically. What the knowledge buys is better referrals, better collaboration with clinicians, more accurate claims, and better coaching.
 
-:::reveal Describe the mock exam week and how to read a low score. ||| After all eight courses, take every course final back to back in one sitting: eight finals, ten freshly drawn questions each, eighty questions total. Because pools serve different subsets on retake, it measures retention. A score under 80 on any final is an instruction about which course to reread, not a verdict.
+:::reveal Describe the mock exam week and how to read a low score. ||| After all nine courses, take every course final back to back in one sitting: nine finals, ten freshly drawn questions each, ninety questions total. Because pools serve different subsets on retake, it measures retention. A score under 80 on any final is an instruction about which course to reread, not a verdict.
 
 ## Vocabulary
 - **Competence-driven overreach**: the specific risk that knowing more makes stepping outside scope feel justified.
-- **Mock exam week**: the program's culminating assessment, all eight finals in one sitting with freshly drawn questions.
+- **Mock exam week**: the program's culminating assessment, all nine finals in one sitting with freshly drawn questions.
 - **Capstone artefact**: the written protocol and self-coaching session that becomes the baseline for future comparison.
 - **Independent study program**: this program's honest status, granting capability rather than any external credential.`,
     },
@@ -862,7 +862,7 @@ Sesso, H. D., Manson, J. E., Aragaki, A. K., et al. (2022b). Effect of cocoa fla
             sourceLessonSlug: "the-decades-problem",
           },
           {
-            prompt: "Completing all eight WELL courses changes your scope of practice how?",
+            prompt: "Completing every WELL course changes your scope of practice how?",
             options: [
               "Not at all; it improves referrals, collaboration, claims, and coaching instead",
               "It permits limited diagnosis of common conditions within coaching",

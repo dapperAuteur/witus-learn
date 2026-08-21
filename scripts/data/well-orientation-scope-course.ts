@@ -1349,7 +1349,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
     // ── Section 3 ────────────────────────────────────────────────────────────────────────────
     {
       slug: "how-the-program-fits",
-      title: "9 · The eight courses, and how they build on what you hold",
+      title: "9 · The nine courses, and how they build on what you hold",
       section: "Section 3 · Working the program",
       body: `The program is a single linear path. Each course assumes everything before it.
 
@@ -1362,6 +1362,8 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
 **WELL-04, Recovery and Stress**, and **WELL-05, Sleep**, cover the pillars your certifications skip, with the evidence graded honestly, including where popular recovery claims outrun their data.
 
 **WELL-06, Mental and Emotional Well-being**, walks the closest to the therapy boundary, which is why it comes after the scope training and repeats it.
+
+**WELL-07, Movement, Intensity, and Learning New Things**, returns to movement with the three questions WELL-02 treated as one: how much, how hard, and how new. It is late in the sequence because its novelty evidence is graded separately for cognition, falls, and lifespan, and that grading needs the evidence literacy the earlier courses build.
 
 **WELL-99, the Centenarian Capstone**, is yours: the longevity evidence base, the claims and their critiques, and a final project in which you build and coach your own centenarian protocol using every tool in the program.
 
@@ -1391,21 +1393,21 @@ Where this program touches courses you already have here, it bridges instead of 
 
 **What the platform does.** Every quiz here serves at most 10 questions per attempt, drawn from a larger pool, with answer options shuffled on every attempt. Retakes draw a fresh subset. So there is no single 100-question sitting in this program, and it would be dishonest to imitate one badly.
 
-**What this program does instead.** Section knowledge checks draw from pools of roughly a dozen questions. Each course ends in a final drawing 10 from a pool of 30 to 60. The passing score is 80, deliberately higher than the 70 NASM's CWC exam uses, because this program's finals are retakeable, unproctored, and open-book by nature; an honest self-administered exam compensates with a higher bar (National Academy of Sports Medicine, n.d.).
+**What this program does instead.** Section knowledge checks draw 5 questions from a pool sized to what the section actually teaches, roughly 40 to 100. That ratio is the point: drawing 5 from 60 means a retake is a genuinely different quiz, and no amount of retaking converts the pool into a memorized list. Each course ends in a final drawing 10 from a pool of 30 to 60. The passing score is 80, deliberately higher than the 70 NASM's CWC exam uses, because this program's finals are retakeable, unproctored, and open-book by nature; an honest self-administered exam compensates with a higher bar (National Academy of Sports Medicine, n.d.).
 
-**The mock-exam week.** When all eight courses are complete, the capstone prescribes one sitting in which you retake every course final back to back: eight finals, 10 fresh-drawn questions each, 80 questions across the program in one session. That is this program's equivalent of a certification exam day, and it is honest about being an equivalent rather than the thing itself.
+**The mock-exam week.** When all nine courses are complete, the capstone prescribes one sitting in which you retake every course final back to back: nine finals, 10 fresh-drawn questions each, 90 questions across the program in one session. That is this program's equivalent of a certification exam day, and it is honest about being an equivalent rather than the thing itself.
 
 **Why every question carries a review link.** Each quiz question names the lesson that teaches its answer. A missed question is an instruction: reread that lesson, not the whole course. Scores here measure your learning, not your standing with any board, and the program never pretends otherwise.
 
 :::reveal Why is the passing score 80 when NASM's own exam passes at 70? ||| Because this program's finals are retakeable, unproctored, and effectively open-book. A self-administered exam compensates for softer conditions with a higher bar, and says so.
 
-:::reveal What is the mock-exam week, mechanically? ||| One sitting after all eight courses: retake every course final back to back, 10 freshly drawn questions each, 80 questions total. It is this program's honest equivalent of an exam day, not a claim to be one.
+:::reveal What is the mock-exam week, mechanically? ||| One sitting after all nine courses: retake every course final back to back, 10 freshly drawn questions each, 90 questions total. It is this program's honest equivalent of an exam day, not a claim to be one.
 
 ## Vocabulary
-- **Question pool**: the full set of questions a quiz owns, from which each attempt draws a subset; this program's finals pool 30 to 60.
+- **Question pool**: the full set of questions a quiz owns, from which each attempt draws a subset; this program's section checks pool 40 to 100 and its finals 30 to 60.
 - **Fresh draw**: a retake's new subset from the pool, which is what makes a second attempt measure retention instead of recognition.
 - **Passing-score calibration**: setting the bar to the exam's conditions; 80 here, above NASM's 70, because retakeable open-book finals owe a higher standard.
-- **Mock-exam week**: the capstone's prescribed single sitting of all eight course finals back to back, this program's honest equivalent of a certification exam day.
+- **Mock-exam week**: the capstone's prescribed single sitting of all nine course finals back to back, this program's honest equivalent of a certification exam day.
 
 ## Sources
 National Academy of Sports Medicine. (n.d.). *Certified wellness coach*. https://www.nasm.org/products/certified-wellness-coach`,
@@ -1442,6 +1444,538 @@ And one program-specific practice: you are the first client. Each course ends wi
             "Check-yourself cards (retrieval practice with honest self-grading), quick recall (spaced retrieval of the prior lesson), notes and highlights (pin scope boundaries to your own cases), and pooled finals (take twice, a week apart, to measure retention).",
         },
       ],
+    },
+    {
+      slug: "quiz-working-the-program",
+      title: "12 · Knowledge check: working the program",
+      section: "Section 3 · Working the program",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "How is the WELL program sequenced?",
+            options: [
+              "A single linear path in which each course assumes everything before it",
+              "Two parallel tracks, one coaching and one physiological, joined at the capstone",
+              "A core of three required courses with the remainder taken in any order",
+              "A spiral in which each pillar is revisited at increasing depth three times",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One linear path, each course assuming its predecessors. That is why the scope training sits in WELL-00 and the course walking closest to the therapy line sits at WELL-06.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "What does WELL-00 cover?",
+            options: [
+              "The frame: role, scope, law, referral, and the study system",
+              "The five wellness pillars in summary, ahead of their full treatment",
+              "Behavior-change science, as the foundation every later course applies",
+              "The longevity evidence base, previewed before the pillars are taught",
+            ],
+            correctIndex: 0,
+            explanation:
+              "WELL-00 is the frame. Behavior-change science is WELL-01's job and the longevity evidence belongs to the capstone.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "Why is WELL-01 described as the reason the program exists?",
+            options: [
+              "It carries the behavior-change science and coaching craft none of the learner's certifications hold",
+              "It is the only course whose content maps directly onto the NBHWC board exam's coaching-process domain",
+              "It is the prerequisite the other courses formally require before enrollment",
+              "It contains the scope and referral training the whole program depends on",
+            ],
+            correctIndex: 0,
+            explanation:
+              "CPT, CNC, and CES carry exercise science and nutrition; none carries the coaching craft. That gap is what WELL-01 fills, and everything after it applies its tools. The scope training is WELL-00's.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "Why are WELL-02 and WELL-03 the shortest courses in a wellness-coaching program?",
+            options: [
+              "They teach only the coaching layer, since the learner's CPT, CES, and CNC already carry the content",
+              "Movement and nutrition carry the thinnest evidence base of the five pillars, so there is less to say",
+              "They are optional bridges most learners skip if their certifications are current",
+              "Their material is examined at the lowest weight in the NBHWC content outline",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They are deliberate thin bridges: the coaching conversation, the adherence evidence, and the applied scope lines, with not a gram of the content re-taught. Re-teaching would pad the program without adding capability.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "What is a 'thin bridge' in this program's vocabulary?",
+            options: [
+              "A course kept short because it teaches only the coaching layer over content another credential covers",
+              "A lesson that summarizes a longer course elsewhere in this catalog, so a learner can review it without enrolling",
+              "A short course inserted between two dense ones to reduce cognitive load",
+              "A pillar taught at introductory depth because its evidence remains contested",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Thin bridge names a deliberate design: the course adds the coaching layer and points back to the existing credential for everything underneath it.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "What do WELL-04 and WELL-05 cover, and what is notable about how?",
+            options: [
+              "Recovery/stress and sleep: pillars the learner's certifications skip, with evidence graded honestly including where popular recovery claims outrun their data",
+              "Recovery/stress and sleep: pillars taught as settled science, since both rest on unusually strong randomized evidence that the popular literature reports accurately",
+              "Nutrition and movement in greater depth, correcting oversimplifications in the CPT and CNC material",
+              "Mental health and social connection, positioned before the therapy-boundary training",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Recovery and sleep are genuine gaps in a CPT/CNC/CES education, and both are pillars where popular claims outrun the data, so the courses grade the evidence rather than selling it.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "Why does WELL-06 come late in the sequence?",
+            options: [
+              "It walks closest to the therapy boundary, so it follows the scope training and re-applies it",
+              "Its material is the most difficult, so it benefits from the study habits built earlier",
+              "It depends on the recovery and sleep physiology taught immediately before it",
+              "Its crisis protocols require the referral practice logged in earlier courses",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Sequencing here is about scope safety: the course that works nearest the therapy line comes after the scope and referral training, and repeats it throughout.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "What three questions does WELL-07 separate that WELL-02 treated as one?",
+            options: [
+              "How much movement, how hard, and how new",
+              "How much movement, how often, and how measured",
+              "How hard, how long, and how well recovered",
+              "How much, how enjoyable, and how sustainable",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Dose, intensity, and novelty. WELL-02 handles movement behavior as a single coaching question; WELL-07 splits it because the evidence for each differs.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "Why does WELL-07 sit late in the sequence rather than beside WELL-02?",
+            options: [
+              "Its novelty evidence is graded separately for cognition, falls, and lifespan, which needs the evidence literacy earlier courses build",
+              "Its content depends directly on the sleep architecture and recovery physiology taught across WELL-04 and WELL-05, which must come first",
+              "It was added to the program after the other courses were already written and sequenced",
+              "Its wearable material assumes the tracker-validity training delivered in WELL-05",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The stated reason is the separate grading of novelty evidence across three outcomes, which requires evidence literacy the earlier courses build. Chronology of authoring is not a curriculum rationale.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "What distinguishes WELL-99 from every other course in the program?",
+            options: [
+              "It is a capstone with a project: build and coach your own centenarian protocol using every tool taught",
+              "It is the only course whose final examination is proctored, non-retakeable, and scored against a higher passing threshold",
+              "It is the only course that grants a credential on completion",
+              "It is the only course drawing on primary sources rather than secondary summaries",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The capstone's defining feature is the project. Every course in the program draws on primary sources, no course grants a credential, and no final is proctored.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "How does WELL handle skills already taught by other courses in this catalog?",
+            options: [
+              "It bridges rather than duplicates, so one skill lives in one place",
+              "It re-teaches them in a wellness-specific framing for continuity",
+              "It requires those courses as formal prerequisites before enrollment",
+              "It omits them entirely and leaves the learner to discover the overlap",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Goal-setting drills link to the WOOP course and wearable-metric coaching links to the body-data course. One skill, one home, with links rather than copies.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "Which existing course does WELL link to for goal-setting drills?",
+            options: [
+              "The WOOP course",
+              "The body-data course",
+              "The read-your-body's-data course",
+              "The dental-health course",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Goal-setting bridges to WOOP; wearable-metric coaching bridges to the body-data course. Each skill keeps a single home.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "What does 'linear path' mean as this program uses it?",
+            options: [
+              "Each course assumes everything before it, which is why scope training precedes the therapy-adjacent course",
+              "Lessons within a course must be completed in the authored order before that course's final examination unlocks",
+              "The program has no optional content, so every learner completes identical material",
+              "Progress is measured cumulatively rather than per course",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Linear path describes dependency between COURSES. Its practical consequence is the sequencing decision: scope first, therapy-adjacent material later.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "How many questions does the platform serve per quiz attempt at most, and how are they chosen?",
+            options: [
+              "At most 10, drawn from a larger pool, with options shuffled on every attempt",
+              "Exactly 10, presented in authored order, with options fixed for scoring consistency",
+              "At most 20, drawn from the full pool, with options shuffled only on retakes",
+              "All questions in the pool, with the score computed from the best 10",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Ten is the ceiling, the subset is drawn from a larger pool, and options shuffle on every attempt. Retakes draw a fresh subset.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "Why does the program say it would be dishonest to imitate a single 100-question sitting?",
+            options: [
+              "Because the platform serves at most 10 questions per attempt, so no such sitting exists here",
+              "Because a 100-question sitting requires the proctoring and identity verification this platform does not provide",
+              "Because certification exams are copyrighted and cannot be imitated in format",
+              "Because pooled questions cannot be scored reliably at that volume",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The constraint is mechanical: the platform's serving cap is 10. Rather than fake a format it cannot deliver, the program states what it actually does.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "How are section knowledge checks sized and served in this program?",
+            options: [
+              "Five questions drawn from a pool of roughly 40 to 100, sized to what the section teaches",
+              "Ten questions drawn from a fixed pool of roughly a dozen, identical in every section regardless of length",
+              "Five questions drawn from a pool of exactly 100 in every section",
+              "Eight questions drawn from a pool of 30 to 60, matching the finals",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The pool scales with what the section actually teaches, roughly 40 to 100, and each attempt serves 5. Drawing 5 from 60 is what makes a retake a genuinely different quiz.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "What is the stated point of the ratio between pool size and questions served?",
+            options: [
+              "No amount of retaking converts the pool into a memorized list",
+              "It keeps average scores stable across attempts for fair comparison",
+              "It reduces the authoring burden while preserving apparent variety",
+              "It matches the sampling ratio used by accredited certification exams",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The ratio is what defeats memorization. Drawing 5 from 60 means a retake is a different quiz, not the same quiz in a different order.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "How is each course final structured?",
+            options: [
+              "Ten questions drawn from a pool of 30 to 60",
+              "Ten questions drawn from a pool of 40 to 100",
+              "Twenty questions drawn from a pool of 60 to 120",
+              "Ten questions covering one lesson from each section",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Finals draw 10 from a pool of 30 to 60. The 40-to-100 range belongs to section knowledge checks, which serve 5.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "What is the passing score in this program, and why is it set there?",
+            options: [
+              "80, above NASM's 70, because these finals are retakeable, unproctored, and open-book by nature",
+              "80, matching the NBHWC board examination's published cut score, so results stay comparable between the two",
+              "70, matching NASM's CWC, so scores remain comparable across programs",
+              "80, because pooled questions are statistically easier than fixed-form ones",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The bar is calibrated to the CONDITIONS. Softer conditions than a proctored exam are compensated with a higher standard, and the program says so rather than hiding it.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "What is 'passing-score calibration' as this course defines it?",
+            options: [
+              "Setting the bar to the exam's conditions, so open-book retakeable finals owe a higher standard",
+              "Adjusting the cut score after each cohort so pass rates stay within a target band",
+              "Matching the passing score to the certifying body a program benchmarks against",
+              "Weighting each question by difficulty before computing the percentage",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Calibration here means matching the bar to the conditions, not to cohorts, competitors, or item difficulty. Eighty compensates for retakeable, unproctored, open-book delivery.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "Describe the mock-exam week mechanically.",
+            options: [
+              "One sitting after all nine courses: every course final back to back, 10 fresh-drawn questions each, 90 total",
+              "One sitting after all nine courses: every course final back to back, 20 questions each, 180 total",
+              "One week in which a single course final is retaken daily until each is passed at 80",
+              "One sitting of a separate 90-question comprehensive exam drawn from all nine pools",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Nine finals, ten freshly drawn questions each, ninety questions in one session. It reuses the existing finals rather than adding a separate exam.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "What does the program claim the mock-exam week is?",
+            options: [
+              "An honest equivalent of a certification exam day, explicitly not the thing itself",
+              "A practice sitting that predicts NBHWC board-exam performance",
+              "The final requirement before the program's specialization credential is issued",
+              "A diagnostic that identifies which credential the learner should pursue next",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is framed as an equivalent and honest about being one. No credential follows it, and it makes no predictive claim about any board's exam.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "Why does every quiz question name the lesson that teaches its answer?",
+            options: [
+              "So a missed question is an instruction to reread that lesson rather than the whole course",
+              "So the platform can compute which lessons are hardest across the whole learner population and flag them for rewriting",
+              "So learners can dispute a question by checking the source material directly",
+              "So the question can be retired if its lesson is later revised",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The review link turns a wrong answer into a specific next action. That is the stated purpose: targeted rereading, not course-wide repetition.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "What do scores in this program measure?",
+            options: [
+              "Your learning, and explicitly not your standing with any board",
+              "Your readiness to sit the NBHWC board examination, calibrated against its published cut score",
+              "Your standing relative to other learners in the same cohort",
+              "Your eligibility for the program's specialization credential",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Scores measure learning. The program is independent and grants no credential, so a score cannot represent standing with a board, and there is no cohort comparison.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "What is a 'fresh draw,' and what does it make possible?",
+            options: [
+              "A retake's new subset from the pool, so a second attempt measures retention, not recognition",
+              "The first attempt at a quiz, before any question has been seen",
+              "A pool refreshed with newly authored questions after a lesson is revised",
+              "A draw weighted toward questions the learner previously missed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Fresh draw is what a retake gets: different questions from the same pool. Without it a second attempt would measure memory of the first attempt's items.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "How many study instruments does the platform give you, and what happens if you use them all?",
+            options: [
+              "Four, and the program roughly doubles in value",
+              "Three, and retention improves by roughly a third",
+              "Four, and the finals become optional",
+              "Five, and the capstone can be attempted early",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Four instruments: check-yourself cards, quick recall, notes and highlights, and the finals used as instruments. The lesson's claim is that using all four roughly doubles the program's value.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "What are the collapsed check-yourself cards inside lessons, mechanically?",
+            options: [
+              "Retrieval practice: answer before revealing, then grade yourself honestly",
+              "Summaries provided so a learner can skip the surrounding prose",
+              "Graded questions that contribute to the course's final score",
+              "Optional extensions covering material outside the lesson's scope",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They are retrieval practice, and the instruction is to answer BEFORE revealing. Revealing first converts a learning event into reading.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "What do the self-graded card answers feed, and what does it signal?",
+            options: [
+              "Recall accuracy on the dashboard, the earliest signal that a section did not stick",
+              "The course's final score, weighted at a fraction of the quiz total",
+              "The platform's recommendation engine, which suggests the next course",
+              "The instructor's review queue, which flags lessons for rewriting",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Grades feed recall accuracy on the dashboard. Its value is timing: it surfaces a gap before a quiz does.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "What is 'quick recall,' and why does the lesson insist you not skip it?",
+            options: [
+              "Lessons that open by quizzing the previous lesson; spaced retrieval is the cheapest learning multiplier available",
+              "A rapid summary at each lesson's start; it reduces the time needed to read the lesson",
+              "A timed drill before each final; it simulates exam-day time pressure",
+              "A dashboard widget listing recent lessons; it helps you resume where you stopped",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Quick recall is spaced retrieval of the PRIOR lesson, and the lesson calls it the cheapest learning multiplier in the building. Skipping it discards the largest free gain on offer.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "What is 'spaced retrieval'?",
+            options: [
+              "Recalling material again after a delay, as the quick-recall openers do with the prior lesson",
+              "Spreading study sessions evenly across the week regardless of content",
+              "Reviewing material immediately after reading it, while it is still fresh",
+              "Alternating between two subjects so neither becomes monotonous",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two elements: recall from memory, and a delay before doing it. Immediate review lacks the delay; even scheduling and subject alternation are not retrieval at all.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "The lesson gives two program-specific suggestions for notes. What are they?",
+            options: [
+              "Annotate every scope boundary with a situation from your own practice, and keep a running list of claims to check against the primaries",
+              "Summarize each lesson in one sentence, and record the time spent on each section",
+              "Copy every vocabulary term into a single file, and tag each by pillar",
+              "Note every effect size encountered, and rank the pillars by evidence strength",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both suggestions convert reading into your own material: boundaries anchored to real situations you have faced, and a verification queue against the sources cited at the bottom of every lesson.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "How does the lesson tell you to use each course final as an instrument?",
+            options: [
+              "Take it immediately on finishing the course, then again a week later",
+              "Take it once, and only retake it if the score falls below 80",
+              "Take it before starting the course as a diagnostic, then again at the end",
+              "Take it three times in one sitting and average the scores",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Immediately, then again a week later. The second attempt draws different questions, so the gap between the two scores is the honest retention signal.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "Why does the week-later retake measure something the first attempt cannot?",
+            options: [
+              "It draws different questions from the pool, so it tests retention rather than memory of the first attempt",
+              "It is taken without access to notes, so it removes the open-book advantage",
+              "It is scored against a higher passing threshold than the first attempt",
+              "It includes questions from later courses, so it tests transfer",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The fresh draw is the whole mechanism. Same questions a week later would measure how well you remembered the questions, which is not the same as knowing the material.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "What is the difference between retention and recognition as this lesson uses the terms?",
+            options: [
+              "Remembering the material versus remembering the question",
+              "Remembering a fact versus being able to apply it in a session",
+              "Long-term memory versus working memory",
+              "Recalling a definition versus recalling its source citation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Recognition is remembering the item; retention is knowing the material. A fresh-draw retake separates them, which is why the pools exist.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "What is the one program-specific practice the study lesson adds beyond the four instruments?",
+            options: [
+              "You are the first client: apply each course's ending to your own week, because the capstone assumes you did",
+              "Keep a coaching log of practice sessions, because the capstone requires fifty",
+              "Read each course's primary sources in full before starting its lessons",
+              "Discuss each pillar with a licensed clinician before applying it to yourself",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The centenarian frame again: each course ends with something to apply to your own week, and the capstone builds on the assumption that you did the applying.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "What is 'recall accuracy' on the dashboard?",
+            options: [
+              "A running measure of self-graded card answers, the earliest signal a section did not stick",
+              "The percentage of quiz questions answered correctly across all courses",
+              "The proportion of lessons completed without revisiting an earlier one",
+              "A comparison of your first and second final-exam attempts",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is built from the check-yourself cards you grade yourself on, which is why honest self-grading matters: an inflated grade destroys the signal it exists to give.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "A learner reveals each check-yourself answer before attempting it, reasoning that reading the answer teaches the same content. What is wrong with that?",
+            options: [
+              "The struggle to recall is the learning event, so revealing first converts practice into reading",
+              "The platform records the reveal as an incorrect answer, lowering recall accuracy",
+              "Revealed cards are excluded from the dashboard, so progress is not tracked",
+              "The cards contain material not otherwise covered, so the lesson is incomplete without them",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Retrieval practice works because retrieval is effortful. Reading an answer you did not try to produce feels like learning and mostly is not.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "Which instrument does the lesson describe as pinned to a selected passage?",
+            options: [
+              "Notes and highlights",
+              "Check-yourself cards",
+              "Quick recall",
+              "The course finals",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Selecting any passage lets you pin a note to it. The other three instruments are the in-lesson cards, the prior-lesson openers, and the pooled finals.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "You score 62 on a course final. What does the program's own framing tell you to do?",
+            options: [
+              "Treat it as an instruction about which lessons to reread, using each question's review link",
+              "Retake the course from the beginning before attempting the final again",
+              "Record it as a failure and proceed, since scores carry no external standing",
+              "Wait a full week before any retake, so the second attempt measures retention",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Every question names the lesson that teaches its answer, so a low score resolves into a specific reading list. The week-later retake is a separate practice for measuring retention, not the response to a low score.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "Which statement about this program's assessment is accurate?",
+            options: [
+              "It shows its seams deliberately, stating what the platform can and cannot do",
+              "It replicates the NASM CWC exam format at a higher passing score",
+              "It is proctored at the capstone stage to preserve the mock exam's integrity",
+              "It withholds review links on finals so the exam measures unaided knowledge",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson's whole posture is disclosure: here is the serving cap, here are the pools, here is why the bar is 80, and here is why the mock exam is an equivalent rather than the thing itself.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+        ],
+      },
     },
     {
       slug: "final-orientation-scope",
