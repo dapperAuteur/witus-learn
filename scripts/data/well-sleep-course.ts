@@ -111,6 +111,344 @@ Watson, N. F., Badr, M. S., Belenky, G., et al. (2015). Recommended amount of sl
       ],
     },
 
+    {
+      slug: "quiz-what-sleep-is",
+      title: "4 · Knowledge check: what sleep is",
+      section: "Section 1 · What sleep is",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "State this pillar's central tension.",
+            options: [
+              "The treatment that works is not yours to deliver; the thing you can deliver is recommended against alone",
+              "The treatment that works is unavailable to most clients; the alternatives have no evidence behind them",
+              "The evidence base is strong, but clients rarely comply with the behaviors it recommends",
+              "Sleep problems are common, but distinguishing their causes requires diagnostic tools a coach lacks",
+            ],
+            correctIndex: 0,
+            explanation:
+              "CBT-I requires clinical licensure. Sleep hygiene alone is the AASM's only recommendation AGAINST anything, for chronic insomnia. Both halves are true at once.",
+            sourceLessonSlug: "the-sleep-pillar",
+          },
+          {
+            prompt: "Why is that tension not a reason to skip the pillar?",
+            options: [
+              "Most people with bad sleep do not have chronic insomnia disorder",
+              "Sleep hygiene works well despite the guideline, which addresses only severe cases",
+              "Coaches can deliver CBT-I components individually without clinical licensure",
+              "The guideline applies only in the United States, so scope varies by jurisdiction",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Late caffeine, unstable schedules, a phone in a dark room, an unplanned shift pattern, and a belief about being a bad sleeper are behavior and environment, which is the coach's jurisdiction.",
+            sourceLessonSlug: "the-sleep-pillar",
+          },
+          {
+            prompt: "What is the distinction this course teaches you to make?",
+            options: [
+              "Disrupted versus disordered sleep",
+              "Acute versus chronic sleep complaints, measured by duration",
+              "Primary versus secondary insomnia, based on whether another condition is present",
+              "Subjective versus objective sleep quality, measured against tracker data",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One is a coaching problem and the other is a referral. The whole skill of this pillar is telling them apart quickly and without diagnosing.",
+            sourceLessonSlug: "the-sleep-pillar",
+          },
+          {
+            prompt: "What does the course say the referral is, on this pillar?",
+            options: [
+              "A genuine contribution, not a consolation prize",
+              "The last resort, once behavioral approaches have been given a fair trial",
+              "A formality, since most clients will not follow through on it",
+              "The point at which the coaching relationship should be concluded",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Getting someone to the treatment that will actually work is real value. It is also, on this pillar, often the highest-value thing a coach does.",
+            sourceLessonSlug: "the-sleep-pillar",
+          },
+          {
+            prompt: "What is Process S?",
+            options: [
+              "Homeostatic sleep pressure, building with time awake and discharged by sleep",
+              "The circadian process setting when the body expects sleep, regardless of tiredness",
+              "The progression through sleep stages across a single night's cycles",
+              "The rate at which sleep debt accumulates across consecutive short nights",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Pressure, not timing. Process C is the clock, and confusing the two is what makes 'just go to bed earlier' fail so often.",
+            sourceLessonSlug: "architecture-and-processes",
+          },
+          {
+            prompt: "What runs Process C, and where is it?",
+            options: [
+              "The suprachiasmatic nucleus, in the hypothalamus",
+              "The pineal gland, which releases melatonin directly into circulation",
+              "The reticular activating system, in the brainstem",
+              "The pituitary gland, which coordinates the hormonal timing signals",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The SCN is the master clock, entrained primarily by light. The pineal gland produces melatonin but does not set the timing.",
+            sourceLessonSlug: "architecture-and-processes",
+          },
+          {
+            prompt: "Why does 'just go to bed earlier' so often do nothing?",
+            options: [
+              "Most sleep complaints in healthy people are an alignment failure, not a pressure failure",
+              "Most clients lack the discipline to maintain an earlier bedtime consistently",
+              "Earlier bedtimes reduce sleep pressure, which delays sleep onset further",
+              "Bedtime has less effect on total sleep than wake time does in most people",
+            ],
+            correctIndex: 0,
+            explanation:
+              "If the body is not expecting sleep yet, adding pressure does not help. That is the practical payoff of separating Process S from Process C.",
+            sourceLessonSlug: "architecture-and-processes",
+          },
+          {
+            prompt: "How long is a sleep cycle, and what stages does it pass through?",
+            options: [
+              "Roughly 90 to 120 minutes, through N1, N2, and N3, then into REM",
+              "Roughly 60 minutes, through N1 and N2, then alternating N3 and REM",
+              "Roughly 90 minutes, through REM first and then progressively deeper non-REM stages",
+              "Roughly 120 minutes, with the stages occurring in a different order each cycle",
+            ],
+            correctIndex: 0,
+            explanation:
+              "N1 the transition, N2 the bulk, N3 slow-wave, then REM. The order is consistent; the proportions vary between people and nights.",
+            sourceLessonSlug: "architecture-and-processes",
+          },
+          {
+            prompt: "What matters more than the stage percentages?",
+            options: [
+              "The distribution: slow-wave dominates the first third, REM lengthens across the final third",
+              "The total number of cycles completed, which determines overall restorative value",
+              "The consistency of the proportions from one night to the next in the same person",
+              "The time spent in N2, which occupies the largest share of the night",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Distribution across the night. It is what explains both of the client questions the lesson goes on to answer.",
+            sourceLessonSlug: "architecture-and-processes",
+          },
+          {
+            prompt: "Why does cutting the last ninety minutes of sleep cost REM rather than deep sleep?",
+            options: [
+              "REM is back-loaded, lengthening through the final third of the night",
+              "REM requires a longer continuous period to initiate than slow-wave sleep does",
+              "Deep sleep is prioritized by the body when total sleep time is reduced",
+              "REM is more easily disrupted by the alarm than slow-wave sleep is",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Simple distribution. The mirror observation also follows: an early bedtime with a 3 a.m. waking still delivers most of the slow-wave sleep.",
+            sourceLessonSlug: "architecture-and-processes",
+          },
+          {
+            prompt: "What is melatonin, correctly understood?",
+            options: [
+              "A timing signal, not a sedative",
+              "A sedative hormone that induces sleep onset when concentrations rise",
+              "A hormone that regulates sleep depth rather than sleep timing",
+              "A marker of accumulated sleep pressure across the waking day",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It rises in dim light a couple of hours before habitual sleep onset and tells the body biological night has begun. Light suppresses it and pushes the clock later.",
+            sourceLessonSlug: "architecture-and-processes",
+          },
+          {
+            prompt: "What did the AASM and Sleep Research Society conclude about adult sleep duration?",
+            options: [
+              "Adults should sleep 7 or more hours per night on a regular basis to promote optimal health",
+              "Adults should sleep between 7 and 9 hours per night, with 8 hours the optimal target",
+              "Adults should sleep at least 8 hours per night, with less than 7 carrying measurable risk",
+              "Adults should sleep 7 to 8 hours, with older adults requiring an additional hour",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Seven or more, from a modified RAND appropriateness method. The 7-to-9 band is the National Sleep Foundation's separate age-banded recommendation.",
+            sourceLessonSlug: "how-much-sleep",
+          },
+          {
+            prompt: "What are the National Sleep Foundation's age-banded ranges?",
+            options: [
+              "7 to 9 hours for young adults and adults, 7 to 8 for older adults",
+              "7 to 9 hours for all adults regardless of age, with no upper-age adjustment",
+              "8 to 10 hours for young adults, 7 to 9 for adults, 7 to 8 for older adults",
+              "7 to 8 hours for young adults and 7 to 9 for older adults, reversing with age",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Plus 8 to 10 for teenagers and 9 to 11 for school-age children. Older adults' range narrows at the top, not the bottom.",
+            sourceLessonSlug: "how-much-sleep",
+          },
+          {
+            prompt: "How large was the short-sleep meta-analysis, and what was the mortality risk ratio?",
+            options: [
+              "153 studies, 5,172,710 participants; RR 1.12",
+              "137 cohorts, 5,134,036 participants; RR 1.12",
+              "153 studies, 5,172,710 participants; RR 1.39",
+              "21 studies, 173,010 participants; RR 1.17",
+            ],
+            correctIndex: 0,
+            explanation:
+              "153 studies and RR 1.12. The 137-cohort figure is the long-sleep analysis, and 21 studies with 173,010 participants is the shift-work meta-analysis.",
+            sourceLessonSlug: "how-much-sleep",
+          },
+          {
+            prompt: "What did short sleep associate with beyond mortality?",
+            options: [
+              "Diabetes 1.37, obesity 1.38, coronary heart disease 1.26, hypertension 1.17, cardiovascular disease 1.16",
+              "Stroke 1.46, diabetes 1.26, and cardiovascular disease 1.25, though not hypertension",
+              "Obesity and diabetes only, with cardiovascular outcomes showing no significant association",
+              "Diabetes 1.37 and obesity 1.38, with a clean dose-response gradient for each outcome",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Five outcomes. The stroke-1.46 set belongs to the LONG-sleep analysis, and there was no clean dose-response for outcomes other than mortality.",
+            sourceLessonSlug: "how-much-sleep",
+          },
+          {
+            prompt: "Where did the short-sleep meta-regression find a linear mortality association?",
+            options: [
+              "Below six hours",
+              "Below seven hours, matching the consensus recommendation threshold",
+              "Across the whole range studied, with no inflection point identified",
+              "Below five hours only, with no association between five and seven",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Below six hours is where the mortality signal is clearest, which is why the course treats that as the region to name rather than the 7-hour recommendation.",
+            sourceLessonSlug: "how-much-sleep",
+          },
+          {
+            prompt: "What was the long-sleep mortality risk ratio, and how does it compare with short sleep?",
+            options: [
+              "1.39, higher than short sleep's 1.12",
+              "1.12, lower than short sleep's 1.39",
+              "1.26, roughly equal to short sleep's 1.25",
+              "1.46, more than double short sleep's figure",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Higher, which is exactly why the trap in it matters. The 1.46 figure is the long-sleep stroke association, a different outcome.",
+            sourceLessonSlug: "how-much-sleep",
+          },
+          {
+            prompt: "What did long sleep associate with, and what did it NOT?",
+            options: [
+              "Stroke 1.46, diabetes 1.26, cardiovascular disease 1.25; not hypertension",
+              "Stroke 1.46 and hypertension 1.17; not diabetes or cardiovascular disease",
+              "Obesity 1.38 and coronary heart disease 1.26; not stroke",
+              "All four outcomes measured, at magnitudes exceeding the short-sleep associations",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three associations and one null. Naming the null is part of quoting the analysis rather than summarizing it.",
+            sourceLessonSlug: "how-much-sleep",
+          },
+          {
+            prompt: "What did the long-sleep authors themselves say?",
+            options: [
+              "Future work should address whether the relationship is causal and modifiable",
+              "The association is causal and should inform public-health sleep recommendations",
+              "The association is entirely explained by reverse causation from existing illness",
+              "The finding requires replication before it can be considered established",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They leave causality open. That is why long sleep is taught as a marker, and why nobody has shown that a healthy nine-hour sleeper improves anything by setting an alarm.",
+            sourceLessonSlug: "how-much-sleep",
+          },
+          {
+            prompt: "What is 'reverse causation' in the long-sleep context?",
+            options: [
+              "Illness, depression, and undiagnosed sleep disorders lengthen sleep, rather than long sleep causing harm",
+              "Long sleep causes daytime inactivity, which then produces the health outcomes observed",
+              "The measurement of sleep duration is affected by the health outcome being studied",
+              "Short and long sleep share a common cause that produces both patterns",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The outcome causing the exposure. It is entirely live here, which is what separates a marker from a cause.",
+            sourceLessonSlug: "how-much-sleep",
+          },
+          {
+            prompt: "A healthy client sleeps nine hours and feels great. What does the lesson say?",
+            options: [
+              "Leave it alone",
+              "Gradually reduce toward the 7-to-9 band, since nine sits at the upper limit",
+              "Investigate for an undiagnosed sleep disorder, since long sleep is a marker",
+              "Recommend a sleep study, since nine hours exceeds the consensus recommendation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "No evidence supports shortening a well-functioning sleeper's night. A recent INCREASE in sleep need is a different matter and goes to a clinician.",
+            sourceLessonSlug: "how-much-sleep",
+          },
+          {
+            prompt: "What is a 'consensus statement'?",
+            options: [
+              "A recommendation produced by structured expert agreement over evidence",
+              "A recommendation issued jointly by two or more professional organizations",
+              "A summary of the evidence that all reviewed studies agreed upon",
+              "A guideline graded using the GRADE methodology for recommendation strength",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Structured expert agreement, as with the modified RAND appropriateness method behind the 7-hour statement. GRADE is what the AASM behavioral-treatment guideline used, which is a different document.",
+            sourceLessonSlug: "how-much-sleep",
+          },
+          {
+            prompt: "What is a 'zeitgeber'?",
+            options: [
+              "A time-giver: an external cue that entrains the circadian system",
+              "The internal oscillator that generates the roughly 24-hour rhythm",
+              "The point in the circadian cycle at which melatonin secretion begins",
+              "The delay between a light exposure and the resulting clock shift",
+            ],
+            correctIndex: 0,
+            explanation:
+              "External cue. Light is the dominant one, with meals, activity, and temperature acting as weaker signals.",
+            sourceLessonSlug: "timing-and-light",
+          },
+          {
+            prompt: "What is 'sleep hygiene' in this course's vocabulary?",
+            options: [
+              "General education about sleep-supportive habits; not recommended alone as treatment for chronic insomnia",
+              "The set of behavioral techniques that constitute the core of CBT-I delivery",
+              "The environmental component of sleep coaching, distinct from behavioral change",
+              "A discredited approach that the AASM guideline recommends against in all contexts",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both halves. It is useful context for healthy clients, and specifically not a treatment for a diagnosed disorder, which is a narrower claim than 'discredited'.",
+            sourceLessonSlug: "the-sleep-pillar",
+          },
+          {
+            prompt: "A client's sleep need has recently grown by two hours. What is this?",
+            options: [
+              "A referral question, not a hygiene question",
+              "A normal seasonal variation requiring no action",
+              "A sign of accumulated sleep debt, addressed by extending sleep opportunity",
+              "An indication that their previous sleep duration was inadequate",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A recent increase in sleep need is exactly what the long-sleep marker literature points at: illness, depression, and undiagnosed sleep disorders all lengthen sleep.",
+            sourceLessonSlug: "how-much-sleep",
+          },
+        ],
+      },
+    },
+
     // ── Section 2 ────────────────────────────────────────────────────────────────────────────
     {
       slug: "what-cbt-i-is",
@@ -338,6 +676,318 @@ Edinger, J. D., Arnedt, J. T., Bertisch, S. M., et al. (2021). Behavioral and ps
               "A person cannot force sleep onset, but they can control when they get up, and a consistent rise time anchors the circadian system. Bedtime still matters; it is simply the less controllable lever.",
             sourceLessonSlug: "what-a-coach-can-do",
           },
+          {
+            prompt: "What does stimulus control target?",
+            options: [
+              "Reconditioning the bed as a cue for sleep alone",
+              "Reducing the stimulation a person receives in the hours before bed",
+              "Controlling the light and noise entering the bedroom during the night",
+              "Limiting the number of times a person checks the clock while awake",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The bed-equals-sleep association, most visibly by getting out of bed when wakefulness persists. Environmental control is a different thing entirely.",
+            sourceLessonSlug: "what-cbt-i-is",
+          },
+          {
+            prompt: "What does sleep restriction do, and why?",
+            options: [
+              "Compresses time in bed toward actual sleep time, using mild deprivation to consolidate sleep",
+              "Limits sleep to a fixed duration so the circadian clock can stabilize around it",
+              "Restricts naps and early bedtimes so sleep pressure accumulates across the day",
+              "Reduces total sleep gradually until the client's minimum requirement is identified",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Deliberate, temporary sleep deprivation to consolidate sleep and rebuild pressure. It is effective and it is the component carrying real risk.",
+            sourceLessonSlug: "what-cbt-i-is",
+          },
+          {
+            prompt: "What does cognitive restructuring target in CBT-I?",
+            options: [
+              "The catastrophic beliefs about sleep loss that keep people awake worrying about being awake",
+              "The client's expectations about how much sleep they need each night",
+              "The negative thoughts that arise during the day as a result of poor sleep",
+              "The client's beliefs about whether treatment will work for them",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Worrying about being awake is the specific loop. It is also why a tracker that grades the attempt every morning is a problem, per lesson 13.",
+            sourceLessonSlug: "what-cbt-i-is",
+          },
+          {
+            prompt: "What did CBT-I deliver in the pooled trials against inactive comparators?",
+            options: [
+              "Sleep onset latency −19.03 min, wake after sleep onset −26.00 min, sleep efficiency +9.91 points",
+              "Sleep onset latency −26.00 min, wake after sleep onset −19.03 min, sleep efficiency +7.61 points",
+              "Total sleep time +19.03 min, sleep efficiency +9.91 points, with latency unchanged",
+              "Sleep onset latency −19.03 min and total sleep time +26.00 min, both sustained at follow-up",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Twenty trials, 1,162 participants, changes sustained at later follow-ups, and no adverse outcomes reported. The 7.61-minute figure is total sleep time, which was not significant.",
+            sourceLessonSlug: "what-cbt-i-is",
+          },
+          {
+            prompt: "What did CBT-I NOT significantly improve?",
+            options: [
+              "Total sleep time (+7.61 minutes, confidence interval crossing zero)",
+              "Sleep efficiency, which improved but not to statistical significance",
+              "Wake after sleep onset, which improved only in the shorter trials",
+              "Sleep onset latency, which was unchanged relative to inactive comparators",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The result people skip. CBT-I does not primarily make people sleep more; it makes sleep faster to arrive, less broken, and less frightening.",
+            sourceLessonSlug: "what-cbt-i-is",
+          },
+          {
+            prompt: "Why does the total-sleep-time null matter to a client?",
+            options: [
+              "Clients expect treatment to mean more hours, and may abandon it for missing a target it never hit",
+              "It suggests CBT-I is less effective than the other outcomes imply",
+              "It means CBT-I should be combined with sleep-extension strategies to be worthwhile",
+              "It indicates the trials were too short to detect changes in total sleep duration",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Expectation-setting before treatment starts is the coaching contribution here, and it protects a client from quitting something that works.",
+            sourceLessonSlug: "what-cbt-i-is",
+          },
+          {
+            prompt: "Why does CBT-I delivery sit with trained clinicians?",
+            options: [
+              "Deliberately inducing sleep deprivation is a real intervention with real risks",
+              "The cognitive components require training in psychotherapeutic technique",
+              "The multicomponent structure demands more sessions than coaching typically provides",
+              "Diagnosing chronic insomnia is a prerequisite, and only clinicians may diagnose",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Sleep restriction is the sharp edge. A coach improvising 'just spend less time in bed' with an unscreened client delivers the risky component without the assessment that makes it safe.",
+            sourceLessonSlug: "what-cbt-i-is",
+          },
+          {
+            prompt: "What is 'sleep efficiency'?",
+            options: [
+              "Time asleep as a percentage of time in bed",
+              "The proportion of the night spent in slow-wave and REM sleep combined",
+              "How quickly a person falls asleep relative to their usual latency",
+              "The ratio of restorative sleep to total sleep across a night",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Asleep over in-bed. It is the measure CBT-I moves most clearly, by about ten percentage points, and it is why sleep restriction works by shrinking the denominator.",
+            sourceLessonSlug: "what-cbt-i-is",
+          },
+          {
+            prompt: "Which recommendation in the AASM guideline is marked STRONG?",
+            options: [
+              "That clinicians use multicomponent CBT-I for chronic insomnia disorder in adults",
+              "That clinicians use stimulus control as a single-component therapy",
+              "That clinicians use multicomponent brief therapies for chronic insomnia disorder",
+              "That clinicians not use sleep hygiene as a single-component therapy",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Only multicomponent CBT-I is strong. The single-component therapies and brief therapies are conditional, and the hygiene recommendation is a suggestion against.",
+            sourceLessonSlug: "the-guideline-and-the-line",
+          },
+          {
+            prompt: "What does a STRONG recommendation mean in GRADE?",
+            options: [
+              "Clinicians should follow it under most circumstances",
+              "The evidence supporting it is of high quality with no serious limitations",
+              "It applies to all patients regardless of preference or clinical judgment",
+              "It has been endorsed by more than one professional organization",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is about how firmly to act, not about evidence quality alone. Conditional recommendations require clinical judgment and patient preference.",
+            sourceLessonSlug: "the-guideline-and-the-line",
+          },
+          {
+            prompt: "Which four therapies carry CONDITIONAL recommendations?",
+            options: [
+              "Multicomponent brief therapies, stimulus control, sleep restriction, and relaxation",
+              "Sleep hygiene, stimulus control, sleep restriction, and cognitive restructuring",
+              "Multicomponent CBT-I, brief therapies, stimulus control, and relaxation",
+              "Stimulus control, sleep restriction, relaxation, and pharmacotherapy",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Brief therapies plus the three single components. Sleep hygiene as a single component gets the one recommendation against.",
+            sourceLessonSlug: "the-guideline-and-the-line",
+          },
+          {
+            prompt: "Quote the guideline's only recommendation AGAINST a therapy.",
+            options: [
+              "That clinicians not use sleep hygiene as a single-component therapy for chronic insomnia in adults",
+              "That clinicians not use relaxation training without accompanying cognitive components",
+              "That clinicians not use sleep restriction in patients who have not been screened",
+              "That clinicians not use brief therapies where full multicomponent CBT-I is available",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It lands directly on the component most available to non-clinicians, which the lesson calls no accident of drafting.",
+            sourceLessonSlug: "the-guideline-and-the-line",
+          },
+          {
+            prompt: "What does the guideline's structure reveal when you read both ends together?",
+            options: [
+              "The strongest recommendation needs clinical delivery; the only negative one targets the coach's default offering",
+              "The strongest recommendations are all for single-component therapies a coach could deliver",
+              "The guideline was written without considering non-clinical practitioners at all",
+              "The evidence for behavioral treatment is weaker than for pharmacological treatment",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It reflects a consistent finding that generic hygiene advice underperforms structured behavioral treatment in the clinical population.",
+            sourceLessonSlug: "the-guideline-and-the-line",
+          },
+          {
+            prompt: "Does the guideline make sleep hygiene worthless for coaching?",
+            options: [
+              "No; it addresses treatment of a diagnosed disorder, and most coaching clients do not have one",
+              "Yes; the recommendation against it applies to all populations and contexts",
+              "Yes for chronic insomnia and for disrupted sleep alike, since the evidence is the same",
+              "No; the recommendation was downgraded in subsequent guideline revisions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two firm consequences follow instead: never present hygiene advice as treatment to someone with insomnia, and know you are teaching general education rather than a treatment-grade intervention.",
+            sourceLessonSlug: "the-guideline-and-the-line",
+          },
+          {
+            prompt: "What is the honest sentence to say to a client with chronic insomnia?",
+            options: [
+              "There is a treatment for this, it works, it is not mine to deliver, and I can help you get to it",
+              "Let us try sleep hygiene first, and refer you if it does not work within a month",
+              "I cannot help with this, so you should see a clinician before we continue working together",
+              "Insomnia usually resolves with consistent habits, so let us start with your wake time",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It keeps the relationship, respects the evidence, and gets the person to the thing that will actually help. The trial-first option is exactly what the guideline recommends against.",
+            sourceLessonSlug: "the-guideline-and-the-line",
+          },
+          {
+            prompt: "How do you tell disrupted from disordered sleep in a first conversation?",
+            options: [
+              "Disrupted sleep has visible causes; disordered sleep persists without them, over months, with daytime consequences",
+              "Disrupted sleep resolves within two weeks; disordered sleep persists beyond that",
+              "Disrupted sleep affects onset; disordered sleep affects maintenance through the night",
+              "Disrupted sleep responds to hygiene advice; disordered sleep does not, which is the test",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Visible causes, duration, daytime consequences, and usually a client who has already tried the obvious. Testing hygiene first is what the guideline recommends against.",
+            sourceLessonSlug: "what-a-coach-can-do",
+          },
+          {
+            prompt: "Which sleep behavior does the course name as the usual first target?",
+            options: [
+              "Wake-time consistency",
+              "Bedtime consistency, which sets the boundary for total sleep opportunity",
+              "Evening screen reduction, which has the largest measured effect on onset",
+              "Caffeine cut-off timing, which is the most modifiable of the levers",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It anchors the circadian system more reliably than bedtime, it is controllable, it is measurable, and it survives a bad night: get up at the usual time anyway.",
+            sourceLessonSlug: "what-a-coach-can-do",
+          },
+          {
+            prompt: "Which substance does the course call the most underestimated sleep disruptor?",
+            options: [
+              "Alcohol",
+              "Caffeine, whose half-life clients consistently underestimate",
+              "Nicotine, which fragments sleep in the second half of the night",
+              "Over-the-counter antihistamine sleep aids",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Because it shortens sleep onset, which is why people believe it helps, and then fragments the second half of the night as it clears.",
+            sourceLessonSlug: "what-a-coach-can-do",
+          },
+          {
+            prompt: "What is the coach's role when a client is doing CBT-I?",
+            options: [
+              "Supporting adherence to the behaviors it prescribes, since behaviors are coaching",
+              "Delivering the components between the clinician's sessions to reinforce them",
+              "Monitoring progress and reporting it back to the treating clinician",
+              "Pausing coaching until the treatment course has concluded",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The same implementation-support role WELL-03 described for a dietitian's plan: the plan stays theirs, the adherence craft is yours.",
+            sourceLessonSlug: "what-a-coach-can-do",
+          },
+          {
+            prompt: "What does 'coach the belief, not just the behavior' mean here?",
+            options: [
+              "'I am a terrible sleeper' is an identity claim that keeps people awake, and it is more coachable than the pillow",
+              "Clients must believe the advice will work before they will implement it consistently",
+              "Beliefs about sleep need should be corrected against the published duration recommendations",
+              "The client's confidence in their coach predicts adherence to sleep recommendations",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the WELL-01 inner obstacle applied to this pillar, and the lesson says it does real work in keeping people awake.",
+            sourceLessonSlug: "what-a-coach-can-do",
+          },
+          {
+            prompt: "What keeps a coach's sleep advice credible, per this lesson?",
+            options: [
+              "Saying plainly that none of these levers is a treatment for a disorder",
+              "Citing the published evidence for each recommendation the coach makes",
+              "Limiting advice to the behaviors with randomized trial support behind them",
+              "Deferring to the client's clinician on any question touching sleep quality",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The levers are worth real minutes and real consistency for disrupted sleep. Saying what they are not is what makes the claim about what they are believable.",
+            sourceLessonSlug: "what-a-coach-can-do",
+          },
+          {
+            prompt: "What is a 'single-component therapy'?",
+            options: [
+              "One element of CBT-I delivered alone, such as stimulus control or sleep hygiene",
+              "A therapy addressing a single sleep symptom rather than the whole presentation",
+              "A treatment delivered in a single session rather than across several",
+              "A behavioral treatment used without accompanying pharmacotherapy",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One element alone. Three of them carry conditional recommendations, and sleep hygiene carries the recommendation against.",
+            sourceLessonSlug: "the-guideline-and-the-line",
+          },
+          {
+            prompt: "A client with three months of insomnia asks for a sleep-hygiene checklist. What is the error in providing it as the plan?",
+            options: [
+              "Handing over a checklist is not treatment and should not be presented as one; they need referral",
+              "Sleep hygiene is contraindicated in chronic insomnia and may worsen the condition",
+              "Checklists are ineffective as a delivery format regardless of the content",
+              "The client should complete a validated insomnia questionnaire before any intervention",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the guideline's only negative recommendation, aimed at exactly this. Note the lesson does not say hygiene harms them; it says it is not treatment and must not be presented as one.",
+            sourceLessonSlug: "the-guideline-and-the-line",
+          },
+          {
+            prompt: "What is a 'wake-time anchor'?",
+            options: [
+              "Holding a consistent rise time to entrain the circadian clock",
+              "The earliest time a client is willing to wake on any given day",
+              "The point in the sleep cycle at which waking feels least disruptive",
+              "A fixed alarm used to prevent oversleeping on rest days",
+            ],
+            correctIndex: 0,
+            explanation:
+              "More controllable and more effective than a fixed bedtime, because a person can control when they get up and cannot force sleep onset.",
+            sourceLessonSlug: "what-a-coach-can-do",
+          },
         ],
       },
     },
@@ -554,6 +1204,396 @@ Torquati, L., Mielke, G. I., Brown, W. J., & Kolbe-Alexander, T. (2018). Shift w
               "Elevated cardiometabolic risk is a medical matter needing screening and management. The sleep scheduling, light management, and habit work remain the coach's; computing personal risk or issuing career-ending advice does not.",
             sourceLessonSlug: "shift-work",
           },
+          {
+            prompt: "What entrains the circadian clock, and by what route?",
+            options: [
+              "Light reaching specialised retinal cells, signalling the suprachiasmatic nucleus",
+              "Melatonin release from the pineal gland, which resets the master clock directly",
+              "Body temperature fluctuations detected by hypothalamic thermoreceptors",
+              "Meal timing, which signals the clock through peripheral metabolic oscillators",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Light is the dominant zeitgeber. Melatonin is downstream of the signal rather than the signal, and meals and temperature are weaker cues.",
+            sourceLessonSlug: "timing-and-light",
+          },
+          {
+            prompt: "What do evening and morning light each do to the clock?",
+            options: [
+              "Evening light delays it; morning light advances it",
+              "Evening light advances it; morning light delays it",
+              "Both delay it, with evening light producing the larger shift",
+              "Neither shifts the clock directly; both act by suppressing melatonin only",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Phase delay and phase advance. It is the mechanism behind both coachable light instructions.",
+            sourceLessonSlug: "timing-and-light",
+          },
+          {
+            prompt: "Why does the lesson specify outdoor light in the morning?",
+            options: [
+              "Outdoor light is dramatically brighter than indoor lighting even on an overcast day",
+              "Outdoor light contains wavelengths that indoor lighting filters out entirely",
+              "Outdoor exposure is easier to build into a habit than indoor light therapy",
+              "Outdoor light arrives at an angle that better reaches the relevant retinal cells",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Intensity, and by a large margin. That is why 'go outside' outperforms 'turn on more lights' as an instruction.",
+            sourceLessonSlug: "timing-and-light",
+          },
+          {
+            prompt: "Why does this course avoid quoting magnitudes for light interventions?",
+            options: [
+              "The direction is well established; the precise magnitude comes from small trials the course does not quote",
+              "Light interventions have not been tested in randomized designs",
+              "The magnitude varies too much between individuals to be meaningful",
+              "The measurements depend on equipment most clients do not have access to",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Including blue-blocking glasses. Direction without magnitude is an honest position, and inventing precision is what the dossier rule forbids.",
+            sourceLessonSlug: "timing-and-light",
+          },
+          {
+            prompt: "What does a consistent wake time do beyond entraining the clock?",
+            options: [
+              "It stabilises Process S by keeping the wake period constant",
+              "It reduces the total sleep opportunity, which consolidates sleep",
+              "It shifts melatonin onset earlier by a predictable amount each day",
+              "It removes the need for a consistent bedtime entirely",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Constant wake period means constant pressure accumulation. Bedtime follows from that; it cannot be forced.",
+            sourceLessonSlug: "timing-and-light",
+          },
+          {
+            prompt: "What does the wake-time anchor tell a client to do after a bad night?",
+            options: [
+              "Get up at the usual time anyway",
+              "Sleep in to recover the lost hours, then resume the schedule",
+              "Nap in the early afternoon to offset the accumulated pressure",
+              "Move the following night's bedtime earlier by the amount lost",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That is what makes the anchor an anchor: it survives the bad night, and getting up anyway is what pulls the system back into line.",
+            sourceLessonSlug: "timing-and-light",
+          },
+          {
+            prompt: "Where do meal timing, activity, and temperature sit as time cues?",
+            options: [
+              "Weaker entrainment signals, worth reaching for after wake time and light are in place",
+              "Equal to light in entrainment strength, but harder for clients to control",
+              "Ineffective as entrainment signals in humans, though present in animal models",
+              "The primary signals for peripheral clocks, with light governing only the SCN",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Refinements, not substitutes. The lesson is explicit that they come after the anchor and light exposure are actually in place rather than instead of them.",
+            sourceLessonSlug: "timing-and-light",
+          },
+          {
+            prompt: "What is 'dim-light melatonin onset'?",
+            options: [
+              "The rise of melatonin under low light a couple of hours before habitual sleep",
+              "The point at which ambient light falls below the threshold for melatonin suppression",
+              "The delay between switching off lights and the onset of melatonin secretion",
+              "The lowest light level at which melatonin production can still be measured",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It marks biological night, which is why evening light that delays it delays everything downstream.",
+            sourceLessonSlug: "timing-and-light",
+          },
+          {
+            prompt: "How large was the caffeine meta-analysis, and what design did it pool?",
+            options: [
+              "22 controlled crossover trials with polysomnography, in 956 healthy adults",
+              "22 observational cohort studies with actigraphy, in 956 healthy adults",
+              "12 crossover trials with self-reported sleep diaries, in 785 adults",
+              "153 studies of mixed design with polysomnography, in over five million participants",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Crossover with polysomnography is a strong combination: each participant is their own control, measured by the gold standard.",
+            sourceLessonSlug: "caffeine-and-alcohol",
+          },
+          {
+            prompt: "What did acute caffeine do to sleep in those trials?",
+            options: [
+              "Cut total sleep by ~35 min, efficiency by 4.74%, slow-wave proportion by ~1 point, latency +~8 min",
+              "Cut total sleep by ~8 min and lengthened latency by ~35 min, with efficiency unchanged",
+              "Lengthened latency by ~8 minutes only, with no effect on duration, efficiency, or stages",
+              "Cut total sleep by ~35 minutes and reduced REM proportion, with slow-wave sleep preserved",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Four effects. REM proportion specifically was unaffected, which is the one stage that did NOT change.",
+            sourceLessonSlug: "caffeine-and-alcohol",
+          },
+          {
+            prompt: "Which sleep stage proportion did caffeine NOT affect?",
+            options: [
+              "REM",
+              "Slow-wave sleep, which was preserved despite the reduction in total sleep",
+              "N2, which absorbed the entire reduction in total sleep time",
+              "N1, the transition stage, which is too brief to measure reliably",
+            ],
+            correctIndex: 0,
+            explanation:
+              "REM proportion was unaffected; slow-wave proportion fell by about a percentage point. That asymmetry is worth carrying precisely.",
+            sourceLessonSlug: "caffeine-and-alcohol",
+          },
+          {
+            prompt: "What did the trials find about high versus low caffeine doses?",
+            options: [
+              "Both reduced total sleep time and efficiency",
+              "Only high doses reduced total sleep time; low doses affected latency only",
+              "High doses reduced sleep; low doses improved efficiency slightly",
+              "The dose-response was linear, with each increment producing proportional effects",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both. That removes the 'I only had one' defense as an escape from the effect.",
+            sourceLessonSlug: "caffeine-and-alcohol",
+          },
+          {
+            prompt: "A client says evening coffee does not affect them because they fall asleep fine. What does the evidence say?",
+            options: [
+              "They have escaped the only part of the effect they can perceive",
+              "Individual caffeine metabolism varies enough that they may be genuinely unaffected",
+              "Falling asleep quickly after caffeine indicates unusually rapid clearance",
+              "Their tolerance has reduced the effect to a level that no longer matters",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Less total sleep, worse efficiency, and less deep sleep are not perceptible at the moment of falling asleep. Sleep onset is the one visible effect and the smallest of the four.",
+            sourceLessonSlug: "caffeine-and-alcohol",
+          },
+          {
+            prompt: "Why does this course refuse to give a precise caffeine cut-off hour?",
+            options: [
+              "The specific cut-offs in circulation trace to a source the program could not verify",
+              "Individual variation makes any single cut-off inaccurate for most clients",
+              "The trials measured acute dosing rather than habitual timing patterns",
+              "Cut-off recommendations fall outside coaching scope as dietary prescription",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Inventing precision is exactly what the dossier rule forbids. The verified effects plus caffeine's half-life justify 'move it earlier and test it' without a fabricated number.",
+            sourceLessonSlug: "caffeine-and-alcohol",
+          },
+          {
+            prompt: "What does alcohol do to sleep, and why do people misread it?",
+            options: [
+              "Shortens onset, then fragments the second half as it clears; the shortened onset is the visible part",
+              "Deepens early sleep and lightens later sleep, with the net effect neutral",
+              "Suppresses slow-wave sleep throughout the night without affecting onset",
+              "Delays onset but consolidates the second half, producing a net improvement",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The subjective experience is falling asleep easily and waking at 3 a.m. feeling wrecked, with autonomic activation and suppressed REM in between.",
+            sourceLessonSlug: "caffeine-and-alcohol",
+          },
+          {
+            prompt: "For a client convinced alcohol is their sleep aid, what is the coaching move?",
+            options: [
+              "A two-week comparison they run themselves, rather than an argument",
+              "Education about alcohol's effect on sleep architecture and REM suppression",
+              "A gradual reduction plan, since abrupt cessation worsens sleep initially",
+              "Referral, since alcohol use for sleep is a clinical rather than coaching matter",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Not argument but a self-run experiment. It is the same move the tracking-holiday lesson uses, for the same reason: the result persuades better than the explanation.",
+            sourceLessonSlug: "caffeine-and-alcohol",
+          },
+          {
+            prompt: "What is a 'crossover trial'?",
+            options: [
+              "A design where each participant receives both conditions, serving as their own control",
+              "A design in which participants switch groups partway through the study period",
+              "A trial comparing two active treatments without a placebo arm",
+              "A trial in which the intervention is withdrawn to test whether effects reverse",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Own control, which removes between-person variation. It is why the caffeine evidence is unusually clean for this pillar.",
+            sourceLessonSlug: "caffeine-and-alcohol",
+          },
+          {
+            prompt: "What did the shift-work meta-analysis find for cardiovascular risk?",
+            options: [
+              "17 percent higher risk of any cardiovascular event, 26 percent higher coronary heart disease morbidity",
+              "26 percent higher risk of any cardiovascular event, 17 percent higher coronary heart disease morbidity",
+              "17 percent higher risk of any cardiovascular event, with coronary morbidity unchanged",
+              "20 percent higher risk of any cardiovascular event and of cardiovascular mortality alike",
+            ],
+            correctIndex: 0,
+            explanation:
+              "17 percent for any event, 26 percent for coronary heart disease morbidity (1.26, 1.10 to 1.43). Mortality was about 20 percent higher, a third figure.",
+            sourceLessonSlug: "shift-work",
+          },
+          {
+            prompt: "What shape does the shift-work dose-response take?",
+            options: [
+              "Non-linear: the increase appears only after the first five years, then adds ~7.1 percent per five years",
+              "Linear from the first year of exposure, accumulating steadily thereafter",
+              "Front-loaded: the largest increase occurs in the first two years and then plateaus",
+              "U-shaped: risk rises early, falls with adaptation, then rises again after ten years",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The authors say it 'seems to appear only after the first five years of exposure.' For a client two years in, that is neither an alarm nor an all-clear.",
+            sourceLessonSlug: "shift-work",
+          },
+          {
+            prompt: "How large was the shift-work meta-analysis?",
+            options: [
+              "21 studies, 173,010 participants",
+              "153 studies, 5,172,710 participants",
+              "22 trials, 956 participants",
+              "137 cohorts, 5,134,036 participants",
+            ],
+            correctIndex: 0,
+            explanation:
+              "21 studies and 173,010 participants. The five-million figures belong to the short- and long-sleep duration meta-analyses.",
+            sourceLessonSlug: "shift-work",
+          },
+          {
+            prompt: "What is 'anchor sleep,' and why does it suit shift workers?",
+            options: [
+              "A protected core sleep period held consistently, because full circadian consistency is impossible",
+              "The longest sleep period in a rotating schedule, whenever it happens to fall",
+              "Sleep taken immediately after a night shift, before daylight exposure",
+              "A fixed eight-hour block scheduled around the most common shift pattern",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The aim becomes preserving one stable block rather than chasing an alignment the roster forbids.",
+            sourceLessonSlug: "shift-work",
+          },
+          {
+            prompt: "How should light be managed around a night shift?",
+            options: [
+              "Bright during the shift, blocked on the commute home",
+              "Blocked during the shift, bright on the commute home to signal wake time",
+              "Bright at both ends, to maximize total exposure and stabilize the clock",
+              "Blocked at both ends, to minimize circadian disruption from irregular timing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Blocking morning light on the commute prevents it dragging the clock the wrong way just as the worker is about to sleep.",
+            sourceLessonSlug: "shift-work",
+          },
+          {
+            prompt: "What does the shift worker's daytime sleep environment usually require?",
+            options: [
+              "Equipment rather than intention",
+              "A separate room used only for daytime sleep",
+              "A shorter sleep period than a night sleeper would need",
+              "Ambient noise to mask unpredictable daytime interruptions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Genuinely dark, cool, and quiet during daylight is an equipment problem: blackout, earplugs, cooling. Intention does not darken a room.",
+            sourceLessonSlug: "shift-work",
+          },
+          {
+            prompt: "Why are planned transitions on days off part of the shift-work plan?",
+            options: [
+              "Swinging fully back to a day schedule and back again is its own repeated insult",
+              "Days off are when sleep debt is repaid, so they must be scheduled deliberately",
+              "Transitions allow the circadian clock to reset fully before the next rotation",
+              "Social obligations on days off would otherwise displace the anchor sleep period",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The full swing and return is an additional circadian disruption on top of the shift itself, which is what planning it partially avoids.",
+            sourceLessonSlug: "shift-work",
+          },
+          {
+            prompt: "Where is the boundary in shift-work coaching?",
+            options: [
+              "Coaching the sleep and habits is yours; screening and managing cardiometabolic risk is medical",
+              "Shift workers should be referred before any coaching begins, given the elevated risk",
+              "Coaching is limited to education, since shift-work interventions require clinical oversight",
+              "The boundary is the same as any other client, since shift work is a schedule rather than a condition",
+            ],
+            correctIndex: 0,
+            explanation:
+              "And the lesson adds that a shift worker with years of exposure should have that medical conversation regardless of how well their sleep is going.",
+            sourceLessonSlug: "shift-work",
+          },
+          {
+            prompt: "A client two years into night shifts asks whether they should be worried. What does the evidence support saying?",
+            options: [
+              "Neither an alarm nor an all-clear: a reason to build the habits now that make longer exposure survivable",
+              "Their risk is already elevated by 17 percent and rising, so a schedule change is warranted",
+              "There is no risk below five years, so the question can be revisited later",
+              "Risk accumulates linearly, so two years carries roughly 40 percent of the five-year increase",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson's exact framing. Reading 'appears after five years' as 'no risk below five' overstates a non-linear observational finding in the other direction.",
+            sourceLessonSlug: "shift-work",
+          },
+          {
+            prompt: "What is 'circadian misalignment'?",
+            options: [
+              "A mismatch between the internal clock and the imposed sleep-wake schedule",
+              "A drift of the internal clock away from a 24-hour period",
+              "A discrepancy between homeostatic pressure and circadian timing on a given night",
+              "A difference between a person's natural chronotype and their preferred schedule",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The internal clock against the imposed schedule. It is the defining problem of shift work, which is why generic advice assuming a stable schedule helps least there.",
+            sourceLessonSlug: "shift-work",
+          },
+          {
+            prompt: "What is 'phase delay'?",
+            options: [
+              "Shifting the clock later, which evening light produces",
+              "Shifting the clock earlier, which evening light produces",
+              "The lag between a zeitgeber and the clock's response to it",
+              "The period during which the clock is unresponsive to light input",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Later, from evening light. Morning light produces the opposite, a phase advance.",
+            sourceLessonSlug: "timing-and-light",
+          },
+          {
+            prompt: "What is 'sleep fragmentation,' and which substance is characteristically associated with it?",
+            options: [
+              "Repeated brief awakenings breaking sleep into pieces; alcohol's second-half effect",
+              "Repeated brief awakenings breaking sleep into pieces; caffeine's dominant effect",
+              "Reduced time in deep sleep stages; alcohol's characteristic signature",
+              "Difficulty initiating sleep after waking; caffeine's second-half effect",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Alcohol, as it clears. Caffeine's measured effects were on total time, efficiency, slow-wave proportion, and latency rather than on fragmentation specifically.",
+            sourceLessonSlug: "caffeine-and-alcohol",
+          },
+          {
+            prompt: "Which claim about caffeine would this course refuse?",
+            options: [
+              "'Stop caffeine after 2 p.m. and your sleep will improve measurably'",
+              "'Caffeine reduced total sleep by about 35 minutes in pooled crossover trials'",
+              "'Both high and low doses cut total sleep time and efficiency'",
+              "'Move your last dose earlier than you think, and test it for two weeks'",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It invents a cut-off hour the program could not verify and promises a measurable individual result from a group finding. The other three are the verified position.",
+            sourceLessonSlug: "caffeine-and-alcohol",
+          },
         ],
       },
     },
@@ -628,6 +1668,14 @@ Baron, K. G., Abbott, S., Jao, N., Manalo, N., & Mullen, R. (2017). Orthosomnia:
 
 **Breathing-related flags, which are the most commonly missed.** Reported snoring with witnessed pauses in breathing, gasping or choking awakenings, or persistent daytime sleepiness despite adequate time in bed. These raise the question of sleep apnea, which is common, underdiagnosed, and carries genuine cardiovascular consequences. No amount of sleep hygiene treats it, and coaching a client patiently through wind-down routines while this goes unassessed is a real failure. Refer for assessment.
 
+**How common is it, actually?** Common enough that "underdiagnosed" understates it. Peppard and colleagues re-estimated prevalence in adults aged 30 to 70 using the Wisconsin Sleep Cohort, and found that **roughly 26 percent of adults in that age band have at least mild sleep-disordered breathing** (an apnea-hypopnea index of 5 or more with daytime sleepiness, or 15 or more regardless of symptoms), with prevalence having risen substantially over the two preceding decades alongside increasing obesity (Peppard et al., 2013).
+
+Sit with the arithmetic. Roughly one in four adults in the age band that fills most coaching practices. If you coach sleep and have never referred anyone for a breathing assessment, that is not evidence your clients are unusual.
+
+**The screening question, and its limit.** The instrument clinicians use for this is **STOP-BANG**: Snoring, Tiredness, Observed apneas, Pressure (hypertension), BMI, Age, Neck circumference, Gender. It is deliberately simple, and a coach can absolutely know it exists and know what it asks about, because that knowledge is what makes the referral specific rather than vague: "there is a short screening questionnaire your doctor can run" is more useful to a client than "you should probably get that looked at."
+
+What a coach does NOT do is administer it and hand back a risk category. Scoring a validated clinical screening instrument and interpreting the result is assessment, which WELL-00 put outside the lane without qualification. The distinction is narrow and it is real: knowing the tool exists is education, running it is clinical work.
+
 **Excessive daytime sleepiness on its own.** Falling asleep unintentionally, especially while driving, is urgent regardless of what the nights look like.
 
 **Movement and behaviour during sleep.** Acting out dreams, violent movement, or repetitive leg movements reported by a partner belong to a clinician.
@@ -644,9 +1692,404 @@ Baron, K. G., Abbott, S., Jao, N., Manalo, N., & Mullen, R. (2017). Orthosomnia:
 
 ## Vocabulary
 - **Sleep apnea**: repeated breathing interruptions during sleep, common and underdiagnosed; suspected from snoring with pauses, gasping, or daytime sleepiness.
+- **Sleep-disordered breathing prevalence**: roughly 26 percent of adults aged 30 to 70 have at least mild sleep-disordered breathing, which is why this flag is the one a coach meets most often.
+- **Apnea-hypopnea index (AHI)**: events of stopped or reduced breathing per hour of sleep; the measure the prevalence thresholds of 5 and 15 refer to.
+- **STOP-BANG**: the eight-item clinical screening instrument for sleep apnea (snoring, tiredness, observed apneas, pressure, BMI, age, neck, gender); a coach may know it exists and must not score it.
 - **Excessive daytime sleepiness**: falling asleep unintentionally during the day, an urgent flag when it occurs while driving.
 - **Parasomnia**: abnormal behaviour during sleep such as dream enactment, which belongs to clinical assessment.
-- **Bidirectional relationship**: sleep and mood each affecting the other, which is why sleep complaints are frequently the visible edge of a mental-health issue.`,
+- **Bidirectional relationship**: sleep and mood each affecting the other, which is why sleep complaints are frequently the visible edge of a mental-health issue.
+
+## Sources
+Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. (2013). Increased prevalence of sleep-disordered breathing in adults. *American Journal of Epidemiology, 177*(9), 1006-1014. https://pubmed.ncbi.nlm.nih.gov/23589584/`,
+    },
+    {
+      slug: "quiz-trackers-and-craft",
+      title: "15 · Knowledge check: trackers and craft",
+      section: "Section 4 · Trackers and craft",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What were the two headline performance figures for consumer sleep trackers?",
+            options: [
+              "Sensitivity for sleep at or above 0.93; specificity for wake between 0.18 and 0.54",
+              "Sensitivity for sleep between 0.18 and 0.54; specificity for wake at or above 0.93",
+              "Sensitivity and specificity both above 0.90 for sleep-wake, with stages unreliable",
+              "Sensitivity for sleep at 0.93 and specificity for wake at 0.85, both adequate for tracking",
+            ],
+            correctIndex: 0,
+            explanation:
+              "High sensitivity, low-to-medium specificity, across seven devices tested against polysomnography. The asymmetry is the whole finding.",
+            sourceLessonSlug: "what-trackers-see",
+          },
+          {
+            prompt: "Translate the low specificity for wake.",
+            options: [
+              "When you are awake it often scores you as asleep, because lying still reads as sleeping",
+              "When you are asleep it often scores you as awake, because movement reads as waking",
+              "It cannot distinguish wake from light sleep, so both are recorded as wake",
+              "It underestimates total sleep, since brief awakenings are counted as full wake periods",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Which means devices systematically OVERESTIMATE how much you slept and underestimate how long you were awake.",
+            sourceLessonSlug: "what-trackers-see",
+          },
+          {
+            prompt: "On which nights do consumer trackers perform worst?",
+            options: [
+              "Nights with poorer or more disrupted sleep",
+              "Nights with unusually long sleep duration, where drift accumulates",
+              "Nights following alcohol, which alters the movement signature",
+              "Nights when the device is worn on the non-dominant wrist",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Exactly the nights a struggling sleeper cares most about, which is what makes the limitation practically significant rather than academic.",
+            sourceLessonSlug: "what-trackers-see",
+          },
+          {
+            prompt: "Which tracker output is the weakest?",
+            options: [
+              "The light, deep, and REM stage breakdown",
+              "Total sleep duration, which drifts by more than an hour on some nights",
+              "Sleep timing, which depends on the device correctly identifying onset",
+              "Resting heart rate during sleep, which motion artifacts corrupt",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Stage comparisons were mixed and inconsistent. It is the output clients most often screenshot and ask about, and the least reliable one on the device.",
+            sourceLessonSlug: "what-trackers-see",
+          },
+          {
+            prompt: "What should a client watch, and what should they ignore?",
+            options: [
+              "Watch the multi-week trend in total sleep and timing; ignore the nightly stage breakdown",
+              "Watch the nightly stage breakdown for patterns; ignore single-night total sleep figures",
+              "Watch the sleep-efficiency score; ignore both duration and stages",
+              "Watch nothing, since the device is unreliable across every output it produces",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Multi-week trend in duration and timing is what these devices are genuinely adequate for. That is not the same as throwing the thing away.",
+            sourceLessonSlug: "what-trackers-see",
+          },
+          {
+            prompt: "How does the lesson tell a client to think of their tracker?",
+            options: [
+              "As a diary that fills itself in, not as a verdict on the night",
+              "As a screening tool that flags nights worth discussing with a clinician",
+              "As a measurement instrument whose accuracy improves with consistent wear",
+              "As a motivational aid rather than a source of information about sleep",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Diary rather than verdict. It preserves the useful function while removing the authority the device has not earned.",
+            sourceLessonSlug: "what-trackers-see",
+          },
+          {
+            prompt: "What is 'sensitivity' in this validation context?",
+            options: [
+              "The ability to correctly identify sleep when sleep is occurring",
+              "The ability to correctly identify wake when the person is awake",
+              "The smallest change in sleep the device can reliably detect",
+              "The device's responsiveness to movement during the night",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Sleep detection when asleep, and consumer devices score high on it. Specificity is the wake-detection half, and it is where they fail.",
+            sourceLessonSlug: "what-trackers-see",
+          },
+          {
+            prompt: "What is 'actigraphy'?",
+            options: [
+              "Movement-based sleep estimation, the research-grade method most consumer devices are built on",
+              "Laboratory sleep measurement with brain, eye, and muscle recording",
+              "Sleep estimation from heart-rate variability during the night",
+              "Self-reported sleep logging validated against objective measurement",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Movement-based, and the method consumer devices descend from. Brain, eye, and muscle recording is polysomnography, the reference standard.",
+            sourceLessonSlug: "what-trackers-see",
+          },
+          {
+            prompt: "What is orthosomnia?",
+            options: [
+              "Preoccupation with achieving ideal sleep-tracker metrics, where the pursuit worsens the sleep",
+              "A sleep disorder caused by excessive nighttime device use before bed",
+              "Anxiety about sleep that develops independently of any tracking behavior",
+              "The tendency of tracker users to sleep more than their bodies require",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The pursuit itself doing damage is the defining feature, and clinicians noted patients often trusted the device over validated measurement.",
+            sourceLessonSlug: "orthosomnia",
+          },
+          {
+            prompt: "Why is sleep uniquely vulnerable to this pattern?",
+            options: [
+              "Trying hard to sleep is anti-correlated with sleeping",
+              "Sleep is the only health behavior a device can measure while it happens",
+              "Sleep quality varies more night to night than other behaviors, inviting overinterpretation",
+              "Sleep cannot be verified subjectively, so device data has no competitor",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Which is why cognitive restructuring is part of CBT-I in the first place. A device that grades the attempt every morning supplies a fresh reason to worry about tonight.",
+            sourceLessonSlug: "orthosomnia",
+          },
+          {
+            prompt: "What is the honest limit of the orthosomnia evidence?",
+            options: [
+              "It is a clinical perspective built on cases, with no validated instrument or published cut-offs",
+              "It is a large cohort study whose findings have not been replicated",
+              "It is a randomized trial of tracking versus no tracking with a small sample",
+              "It is a consensus statement that has since been superseded",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Concept useful, label not yours to apply. Any coach presenting a screening questionnaire for it would be inventing a diagnostic tool.",
+            sourceLessonSlug: "orthosomnia",
+          },
+          {
+            prompt: "Which signals suggest the orthosomnia pattern?",
+            options: [
+              "Distress tracking the score rather than the night; feeling fine but sleeping badly 'per the app'",
+              "Consistently poor tracker scores despite good sleep hygiene practices",
+              "Reluctance to discuss tracker data with the coach during sessions",
+              "Frequent changes between different tracking devices and applications",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Plus bedtime behavior organised around the metric. All three are observations about the relationship to the number rather than about the sleep.",
+            sourceLessonSlug: "orthosomnia",
+          },
+          {
+            prompt: "What is the coaching move for a client whose sleep anxiety tracks their app score?",
+            options: [
+              "Offer a two-week tracking holiday, judged by how the days feel",
+              "Explain the device's error rates so the client discounts the score appropriately",
+              "Set a target score the client can realistically achieve, to rebuild confidence",
+              "Refer to a clinician, since the anxiety is now the primary presenting problem",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Experiment rather than argument. Most people find that easier to hear as a test than as advice, and the result is usually its own persuasion.",
+            sourceLessonSlug: "orthosomnia",
+          },
+          {
+            prompt: "What is 'perfectionistic sleep effort'?",
+            options: [
+              "Trying hard to sleep, which reliably interferes with sleeping",
+              "Maintaining an unusually strict sleep schedule regardless of circumstances",
+              "Optimizing every environmental variable in the bedroom",
+              "Pursuing the highest possible sleep score on a tracking device",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Effort applied to sleep is counterproductive in a way effort applied to other health behaviors is not. It is a target of the cognitive work in CBT-I.",
+            sourceLessonSlug: "orthosomnia",
+          },
+          {
+            prompt: "Which flags does this course call the most commonly missed?",
+            options: [
+              "Snoring with witnessed pauses, gasping or choking awakenings, daytime sleepiness despite adequate time in bed",
+              "Early-morning waking with low mood, which is mistaken for a circadian problem",
+              "Repetitive leg movements reported by a partner, which are rarely volunteered",
+              "Use of over-the-counter sleep aids, which clients do not consider medication",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Breathing-related. No amount of sleep hygiene treats apnea, and coaching a client patiently through wind-down routines while it goes unassessed is a real failure.",
+            sourceLessonSlug: "referral-on-sleep",
+          },
+          {
+            prompt: "What proportion of adults aged 30 to 70 have at least mild sleep-disordered breathing?",
+            options: [
+              "Roughly 26 percent",
+              "Roughly 5 percent",
+              "Roughly 12 percent",
+              "Roughly 45 percent",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Roughly one in four adults in the age band that fills most coaching practices. If you coach sleep and have never referred anyone for a breathing assessment, that is not evidence your clients are unusual.",
+            sourceLessonSlug: "referral-on-sleep",
+          },
+          {
+            prompt: "What thresholds did the prevalence estimate use?",
+            options: [
+              "An apnea-hypopnea index of 5 or more with daytime sleepiness, or 15 or more regardless of symptoms",
+              "An apnea-hypopnea index of 15 or more with daytime sleepiness, or 30 or more regardless",
+              "An apnea-hypopnea index of 5 or more, with symptoms not considered",
+              "Any witnessed apnea reported by a partner, confirmed by overnight recording",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two routes to the threshold: a lower index with symptoms, or a higher index without. Prevalence had also risen substantially over the two preceding decades alongside increasing obesity.",
+            sourceLessonSlug: "referral-on-sleep",
+          },
+          {
+            prompt: "What does STOP-BANG stand for?",
+            options: [
+              "Snoring, Tiredness, Observed apneas, Pressure, BMI, Age, Neck circumference, Gender",
+              "Snoring, Timing, Onset, Position, Breathing, Apnea, Nocturia, Gasping",
+              "Sleepiness, Tiredness, Obesity, Pressure, Breathing, Awakenings, Nocturia, Gender",
+              "Snoring, Tiredness, Obstruction, Pauses, BMI, Airway, Neck, Gasping",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Eight items, deliberately simple. Knowing what it asks about is what makes a referral specific rather than vague.",
+            sourceLessonSlug: "referral-on-sleep",
+          },
+          {
+            prompt: "What may a coach do with STOP-BANG, and what may they not?",
+            options: [
+              "Know it exists and what it asks; not administer it and hand back a risk category",
+              "Administer it and refer based on the score; not interpret the result clinically",
+              "Neither know nor mention it, since clinical instruments are outside coaching entirely",
+              "Administer it with the client's consent, provided the score is shared with their physician",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Knowing the tool exists is education; running it is clinical work. Scoring a validated screening instrument and interpreting the result is assessment, which WELL-00 put outside the lane without qualification.",
+            sourceLessonSlug: "referral-on-sleep",
+          },
+          {
+            prompt: "Why is knowing STOP-BANG exists useful to a coach at all?",
+            options: [
+              "'There is a short screening questionnaire your doctor can run' beats 'you should get that looked at'",
+              "It allows the coach to judge whether a referral is likely to be productive",
+              "It gives the coach a structured way to document their observations",
+              "It demonstrates clinical literacy, which increases the client's trust in the referral",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Specificity in the referral is the value. The client arrives at the appointment knowing what to ask for, which materially raises the chance the assessment happens.",
+            sourceLessonSlug: "referral-on-sleep",
+          },
+          {
+            prompt: "Which sleep flag is urgent regardless of what the nights look like?",
+            options: [
+              "Falling asleep unintentionally, especially while driving",
+              "Snoring with witnessed pauses in breathing",
+              "Difficulty falling asleep persisting for more than three months",
+              "Waking repeatedly through the night without an identifiable cause",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Excessive daytime sleepiness on its own, and driving makes it urgent. The others are genuine flags without the same immediacy.",
+            sourceLessonSlug: "referral-on-sleep",
+          },
+          {
+            prompt: "Which findings belong to a clinician under 'movement and behaviour during sleep'?",
+            options: [
+              "Acting out dreams, violent movement, or repetitive leg movements reported by a partner",
+              "Restlessness in the first hour of sleep, reported by the client on waking",
+              "Sleep talking and occasional teeth grinding, both common and benign",
+              "Difficulty finding a comfortable position, which suggests an environment problem",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three parasomnia-type observations. Note that all three are typically reported by a partner rather than by the client.",
+            sourceLessonSlug: "referral-on-sleep",
+          },
+          {
+            prompt: "Why is a sleep complaint often the presenting edge of a mood problem?",
+            options: [
+              "Sleep and mood run in both directions, so the client brings the sleep symptom",
+              "Mood problems always disrupt sleep, while sleep problems rarely affect mood",
+              "Clients find sleep complaints easier to raise than mood complaints",
+              "Sleep is measurable and mood is not, so the sleep symptom is what gets noticed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Bidirectional. Early-morning waking with low mood, or sleep loss alongside hopelessness, routes to mental-health care rather than to a wind-down routine.",
+            sourceLessonSlug: "referral-on-sleep",
+          },
+          {
+            prompt: "What defines chronic insomnia as a referral trigger?",
+            options: [
+              "Months of difficulty falling or staying asleep, with daytime consequences, absent obvious behavioural causes",
+              "Any difficulty sleeping that persists after a month of consistent hygiene practice",
+              "Difficulty falling asleep on more than half of nights over a two-week period",
+              "Sleep dissatisfaction reported by the client regardless of measured duration",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three components: duration, daytime consequences, and the absence of behavioural explanations. Refer for CBT-I, the treatment that works and that lesson 5 established is not yours.",
+            sourceLessonSlug: "referral-on-sleep",
+          },
+          {
+            prompt: "A client using over-the-counter sleep aids to sleep needs what?",
+            options: [
+              "A clinician's eyes rather than a coach's suggestions",
+              "Education about the tolerance and rebound effects of those medications",
+              "A tapering plan the coach designs and monitors over several weeks",
+              "Substitution with a behavioral wind-down routine before any referral",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Same for alcohol used to sleep, and for prescribed medication whose timing may be involved. Suggesting substitutions is the coaching instinct this flag exists to interrupt.",
+            sourceLessonSlug: "referral-on-sleep",
+          },
+          {
+            prompt: "A client feels rested but is upset their app shows 45 minutes of deep sleep. Which two lessons answer?",
+            options: [
+              "Lesson 12: stages are the least reliable output. Lesson 13: distress tracking the score is the orthosomnia pattern",
+              "Lesson 12: trackers underestimate deep sleep specifically. Lesson 13: the client should stop tracking permanently",
+              "Lesson 5: only a clinician can interpret sleep architecture. Lesson 13: the app should be recalibrated",
+              "Lesson 2: deep sleep is front-loaded so 45 minutes is normal. Lesson 12: the device is accurate",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The stage breakdown is not a measurement in the sense they imagine, and it degrades further on disrupted nights. The move is a two-week tracking holiday judged by how the days feel.",
+            sourceLessonSlug: "orthosomnia",
+          },
+          {
+            prompt: "A client reports loud snoring, witnessed pauses, and daytime sleepiness despite eight hours in bed. What do you do?",
+            options: [
+              "Refer for breathing assessment, naming that a short screening questionnaire exists",
+              "Coach wind-down and sleep-environment improvements first, and refer if they do not help",
+              "Advise weight loss, since BMI is a component of the screening instrument",
+              "Track the pattern for four weeks to establish whether it is consistent before referring",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The most commonly missed flag, in a condition affecting roughly a quarter of adults in this age band. Coaching hygiene while it goes unassessed is the failure the lesson names.",
+            sourceLessonSlug: "referral-on-sleep",
+          },
+          {
+            prompt: "What is a 'tracking holiday'?",
+            options: [
+              "Switching the device off for a defined period and judging sleep subjectively",
+              "Pausing tracking during travel or unusual schedules to avoid misleading data",
+              "Reviewing accumulated data without collecting new readings for a period",
+              "Alternating tracked and untracked weeks to compare the two",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Defined period, subjective judgment. It is offered as an experiment the client runs, which is what makes it land as a test rather than as advice.",
+            sourceLessonSlug: "orthosomnia",
+          },
+          {
+            prompt: "What is 'concept versus instrument,' and why does it keep orthosomnia teachable?",
+            options: [
+              "Orthosomnia is a described phenomenon, not a scored diagnosis, so it is recognised rather than applied",
+              "The concept is validated even though no instrument exists to measure it",
+              "Instruments require clinical training, while concepts can be taught to any client",
+              "The concept came first and the instrument is currently under development",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Recognise, do not label. It is the same discipline as 'describe, do not label' from WELL-04, applied to a phenomenon with no validated measure behind it.",
+            sourceLessonSlug: "orthosomnia",
+          },
+        ],
+      },
     },
     {
       slug: "final-sleep",
