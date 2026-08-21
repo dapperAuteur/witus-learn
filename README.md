@@ -45,7 +45,7 @@ Better Auth (magic-link) · Stripe · Mailgun · Gemini (embeddings + recommenda
 ## Public read API (`/api/v1`)
 
 A read-only, per-tenant, **API-key**-scoped surface so an external app's backend (starting with
-WanderLearn) can render real Learn.WitUS lesson content, `GET /api/v1/courses` (paginated,
+Wanderlust, renamed from Wanderlearn in 2026-08) can render real Learn.WitUS lesson content, `GET /api/v1/courses` (paginated,
 `?limit=&offset=`), `GET /api/v1/courses/[id]`, and `GET /api/v1/courses/[id]/lessons/[lessonId]`
 (full lesson body/media). The tenant comes **only** from `Authorization: Bearer <key>`, never the
 host, never client input, and every response is **published + `visibility:"public"` only**. The two

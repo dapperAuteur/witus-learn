@@ -31,7 +31,7 @@ export const ECOSYSTEM_PRODUCTS: EcosystemProduct[] = [
   { slug: "learn-witus", name: "Learn.WitUS", href: "https://learn.witus.online", status: "live", external: true },
   { slug: "awesomewebstore", name: "AwesomeWebStore", href: "https://awesomewebstore.com", status: "live", tagline: "Launch a store fast.", external: true },
   { slug: "tour-manager-os", name: "Tour Manager OS", href: "https://tour.witus.online", status: "beta", tagline: "Plan and run a live tour.", external: true },
-  { slug: "wanderlearn", name: "Wanderlearn", href: "https://wanderlearn.witus.online", status: "beta", tagline: "Learn by traveling and doing.", external: true },
+  { slug: "wanderlust", name: "Wanderlust", href: "https://wanderlust.witus.online", status: "beta", tagline: "Learn by traveling and doing.", external: true },
   { slug: "fly-witus", name: "Fly.WitUS", href: "https://fly.witus.online", status: "beta", tagline: "Plan real drone flights and log FAA-compliant missions.", external: true },
   // NOTE: RideWitUS isn't registered in the canonical gemini/witus/lib/products.ts yet, so it's
   // intentionally omitted here (don't assert a guessed URL). Add it once it's in that source.
