@@ -1401,6 +1401,591 @@ Ulian, M. D., Pinto, A. J., de Morais Sato, P., et al. (2018). Effects of a new 
               "Both framings sit inside the lane with real evidence behind them. A weight-cycling, shame-driven history argues weight-neutral; a distress-free weight-loss goal is evidence-supported too. The client variable decides, not the coach's ideology.",
             sourceLessonSlug: "weight-neutral-and-weight-loss",
           },
+          {
+            prompt: "Describe the Hall inpatient trial's design.",
+            options: [
+              "Twenty weight-stable adults, inpatient, two weeks of each diet in randomized order",
+              "Twenty adults with obesity followed each diet at home for two weeks in randomized order",
+              "Sixty adults were randomized to one diet or the other for four weeks inpatient",
+              "Twenty weight-stable adults were fed both diets simultaneously and chose freely",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Inpatient, crossover, two weeks each. Everyone received both diets, which removes between-person variation as an explanation for the difference.",
+            sourceLessonSlug: "the-hall-experiment",
+          },
+          {
+            prompt: "On what was the Hall trial's food matched?",
+            options: [
+              "Presented calories, energy density, macronutrients, sugar, sodium, and fiber",
+              "Calories and macronutrients only, with fiber deliberately left to differ",
+              "Palatability and cost, so the comparison isolated processing alone",
+              "Presented calories and portion sizes, with nutrients allowed to vary",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Six things matched. That matching is what makes the result about FORM rather than about nutrition, and fiber in particular is the one people assume must differ.",
+            sourceLessonSlug: "the-hall-experiment",
+          },
+          {
+            prompt: "How much more did participants eat on the ultra-processed diet, and where did the excess come from?",
+            options: [
+              "508 more kilocalories a day, from carbohydrate and fat, not protein",
+              "508 more kilocalories a day, from protein and fat",
+              "250 more kilocalories a day, from carbohydrate alone",
+              "1,000 more kilocalories a day, spread evenly across macronutrients",
+            ],
+            correctIndex: 0,
+            explanation:
+              "About a meal's worth a day, with protein intake holding steady. The protein detail matters because it is what a satiety-driven account would predict.",
+            sourceLessonSlug: "the-hall-experiment",
+          },
+          {
+            prompt: "What happened to body weight across the two Hall diet periods?",
+            options: [
+              "Plus 0.9 kg on ultra-processed, minus 0.9 on unprocessed, intake and weight tightly correlated",
+              "Plus 0.9 kg on ultra-processed with no change on unprocessed",
+              "No significant weight change in either period, only intake differences",
+              "Plus 2.0 kg on ultra-processed, minus 0.5 kg on unprocessed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Symmetrical, and correlated with intake. Two weeks moving weight nearly a kilogram in each direction is a fast response to nothing but the food's form.",
+            sourceLessonSlug: "the-hall-experiment",
+          },
+          {
+            prompt: "What mechanism did the full Hall report add?",
+            options: [
+              "People ate FASTER on the ultra-processed diet, by about 7.4 grams and 17 kilocalories per minute",
+              "People ate more frequently on the ultra-processed diet, adding roughly two eating occasions a day",
+              "People reported greater hunger on the ultra-processed diet before each meal",
+              "People slept less on the ultra-processed diet, which raised appetite hormones",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Eating rate. It matters for coaching because speed is a behavior with a cue and a minimum version, unlike hunger or hormone levels.",
+            sourceLessonSlug: "the-hall-experiment",
+          },
+          {
+            prompt: "Why is the Hall experiment an argument against willpower framing?",
+            options: [
+              "Intake diverged by a meal a day with labels matched and no instruction to restrict",
+              "Participants reported no difference in perceived effort between the two diets",
+              "The effect persisted after adjusting for baseline dietary restraint",
+              "Participants were unaware which diet they were receiving",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Nobody decided anything. The lesson's phrasing: the overfeeding happened to people, and the unprocessed diet un-happened it.",
+            sourceLessonSlug: "the-hall-experiment",
+          },
+          {
+            prompt: "What is 'ad libitum intake'?",
+            options: [
+              "Eating freely, as much or as little as desired; the trial's measured outcome",
+              "Eating on a fixed schedule with portions determined by the researchers",
+              "Eating only when hunger is registered above a threshold",
+              "Eating the same total calories in both arms, with composition varying",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Free eating, which is what makes the intake difference a finding rather than a compliance measure. If portions had been assigned, the trial would have measured nothing.",
+            sourceLessonSlug: "the-hall-experiment",
+          },
+          {
+            prompt: "What is 'passive overconsumption'?",
+            options: [
+              "Intake rising without decisions to eat more; about 508 kcal a day of it",
+              "Eating past fullness because of social or environmental pressure",
+              "Consuming excess calories from beverages rather than food",
+              "Overeating that a person is unable to recall accurately afterward",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The absence of a decision is the defining feature. It is what licenses the reframe from character to environment.",
+            sourceLessonSlug: "the-hall-experiment",
+          },
+          {
+            prompt: "What is 'default design,' and why is it the lane-legal response to the Hall result?",
+            options: [
+              "Arranging home and work so the low-decision option is the better one: environment, not prescription",
+              "Setting default portion sizes for the client's meals",
+              "Establishing a default meal plan the client follows when time is short",
+              "Defaulting to unprocessed foods in all recommendations to clients",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Arranging the environment is behavior and logistics work, which is unreserved. Prescribing which foods a person must eat is not.",
+            sourceLessonSlug: "the-hall-experiment",
+          },
+          {
+            prompt: "How does the lesson say to handle the ultra-processed layer, as coaching?",
+            options: [
+              "Make it the exception that requires a decision rather than the default that does not",
+              "Eliminate it from the home entirely, since matched nutrients did not protect intake",
+              "Limit it to a fixed weekly allowance the client tracks",
+              "Replace it gradually with nutritionally equivalent whole-food versions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Shift which option costs a decision. Elimination and allowances are prohibition coaching, and the lesson is explicit that this evidence powers environment coaching instead.",
+            sourceLessonSlug: "the-hall-experiment",
+          },
+          {
+            prompt: "Why is eating speed described as directly coachable?",
+            options: [
+              "Slower eating is a behavior with a cue and a minimum version, not a nutrition prescription",
+              "Eating speed is the strongest single predictor of intake in observational studies",
+              "Eating speed can be measured objectively without client self-report",
+              "Slowing down reduces intake by a predictable percentage in every client",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Cue plus minimum version is the habit-design test from WELL-01. It is also fully inside the lane, since telling someone to chew is not telling them what to eat.",
+            sourceLessonSlug: "the-hall-experiment",
+          },
+          {
+            prompt: "What did the qualitative synthesis of 26 studies find?",
+            options: [
+              "Environments make healthier eating harder, demanding continuous effort, hardest on low incomes",
+              "People managing weight report environments as neutral, with motivation the dominant barrier",
+              "Food environments matter most for people at higher incomes, who face more choice",
+              "Environmental barriers were reported inconsistently across the included studies",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Consistent, effortful, and unequal. The reframe it hands a coach: the client's sense of constant struggle is accurate perception, not personal weakness.",
+            sourceLessonSlug: "the-food-environment",
+          },
+          {
+            prompt: "How many people were in the qualitative food-environment synthesis?",
+            options: [
+              "679 people across 26 studies",
+              "36,113 people across 26 studies",
+              "679 people across 10 studies",
+              "6,925 people across 61 studies",
+            ],
+            correctIndex: 0,
+            explanation:
+              "679 across 26 studies. The 36,113 figure is the food-insecurity meta-analysis and 6,925 belongs to the Cochrane carbohydrate review.",
+            sourceLessonSlug: "the-food-environment",
+          },
+          {
+            prompt: "What did the realist review of food-policy interventions conclude?",
+            options: [
+              "They move knowledge and some purchasing, but not consumption at clinically significant levels",
+              "Menu calorie posting reduced consumption substantially across the studied populations",
+              "Regulatory interventions outperform individual behavior change in every measured outcome",
+              "No regulatory intervention has been evaluated rigorously enough to judge",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They move knowledge and purchasing and stall before consumption. The coaching consequence: you cannot wait for the environment to be fixed from above.",
+            sourceLessonSlug: "the-food-environment",
+          },
+          {
+            prompt: "Which policy was most studied in the realist review?",
+            options: [
+              "Menu calorie posting",
+              "Sugar-sweetened beverage taxation",
+              "Front-of-package warning labels",
+              "Restrictions on marketing to children",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Menu calorie posting. Knowing which policy the evidence base actually rests on is what stops a coach generalizing the conclusion further than the studies reach.",
+            sourceLessonSlug: "the-food-environment",
+          },
+          {
+            prompt: "What did the food-insecurity meta-analysis find, and in how many people?",
+            options: [
+              "HIGHER obesity odds (OR 1.50, CI 1.43 to 1.58), across 36,113 adults and children",
+              "Food insecurity associated with LOWER obesity odds (OR 0.67), across 36,113 adults and children",
+              "Food insecurity associated with higher obesity odds (OR 1.50) in children only",
+              "Food insecurity showed no association with obesity after income adjustment",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Higher, not lower, which surprises people. The qualitative literature supplies the mechanism: cheap calories are energy-dense calories.",
+            sourceLessonSlug: "the-food-environment",
+          },
+          {
+            prompt: "What standing instruction does the food-insecurity finding give a coach?",
+            options: [
+              "Never coach a food change without asking what it costs; budget-fit is a design constraint",
+              "Screen every client for food insecurity at intake using a validated instrument",
+              "Refer food-insecure clients to social services before beginning nutrition work",
+              "Avoid discussing specific foods with clients whose budgets are constrained",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Cost as a first-class design constraint. Screening instruments and referral are clinical moves, and avoiding the topic removes help rather than adding it.",
+            sourceLessonSlug: "the-food-environment",
+          },
+          {
+            prompt: "What is 'budget-fit'?",
+            options: [
+              "The constraint that food changes must survive the client's actual finances",
+              "The proportion of a client's income allocated to food",
+              "The match between a client's food spending and published cost benchmarks",
+              "A plan designed to reduce the client's grocery expenditure",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A constraint on the coach's proposals, not a measurement of the client. The lesson calls it scope-legal and dignity-preserving, which are both deliberate.",
+            sourceLessonSlug: "the-food-environment",
+          },
+          {
+            prompt: "What five items are on the work-list the environment evidence writes?",
+            options: [
+              "Home defaults, a shopping habit, social if-thens, cost-aware swaps, and the reframe said aloud",
+              "Home defaults, meal planning, calorie tracking, social avoidance, and budget review",
+              "Pantry clearing, meal prep, grocery delivery, restaurant rules, and weekly weigh-ins",
+              "Shopping lists, portion control, food logging, cooking skills, and accountability check-ins",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Four design moves plus the reframe. Saying the reframe out loud is itself on the list: the environment is doing this on purpose, so we design against it on purpose.",
+            sourceLessonSlug: "the-food-environment",
+          },
+          {
+            prompt: "What is an 'obesogenic environment'?",
+            options: [
+              "Surroundings that systematically promote energy-dense eating and sitting",
+              "A household in which most members have obesity",
+              "A food environment lacking access to fresh produce",
+              "A workplace with limited opportunity for movement during the day",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Systematic promotion of both energy-dense eating AND sitting, which is why this pillar and the movement pillar keep pointing at the same surroundings.",
+            sourceLessonSlug: "the-food-environment",
+          },
+          {
+            prompt: "What is an 'intermediate outcome,' and where does it appear in this lesson?",
+            options: [
+              "A step short of the goal, like knowledge or purchasing; where food policies stall",
+              "A measurement taken midway through an intervention period",
+              "An outcome measured in a subgroup rather than the whole sample",
+              "A biomarker used as a proxy for a clinical endpoint",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A step short of the goal. Policies moved knowledge and purchasing without moving consumption, which is exactly the stall the term names.",
+            sourceLessonSlug: "the-food-environment",
+          },
+          {
+            prompt: "How did the Mensinger head-to-head score at post-intervention?",
+            options: [
+              "Weight-loss arm led on BMI and weight; weight-neutral on LDL and intuitive eating",
+              "Weight-neutral arm larger BMI reductions; weight-loss arm larger LDL reductions",
+              "Both arms equivalent on every measured outcome",
+              "Weight-loss arm larger on every outcome including intuitive eating",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Each frame led somewhere first. Neither owned the outcomes, which is why the course presents them as a menu rather than a war.",
+            sourceLessonSlug: "weight-neutral-and-weight-loss",
+          },
+          {
+            prompt: "What did BOTH Mensinger arms hold at twenty-four months?",
+            options: [
+              "Waist-to-hip ratio, cholesterol, activity, fruit and vegetables, self-esteem, quality of life",
+              "BMI, weight, LDL cholesterol, and intuitive eating",
+              "Physical activity and quality of life only",
+              "Nothing; both arms returned to baseline on all measures",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Six outcomes held in both arms. The persistence in BOTH is what makes the head-to-head a menu rather than a verdict for either framing.",
+            sourceLessonSlug: "weight-neutral-and-weight-loss",
+          },
+          {
+            prompt: "What did the seven-month Health at Every Size trial find?",
+            options: [
+              "No weight, BMI, or waist change, alongside gains in VO2 peak, function, eating attitudes, body image, and quality of life",
+              "Modest weight loss alongside gains in body image and quality of life",
+              "No change in any outcome, weight or otherwise",
+              "Weight gain in the intervention group alongside psychological improvements",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Real physiological and psychological gains with no weight change at all. It is the cleanest demonstration that the two can come apart.",
+            sourceLessonSlug: "weight-neutral-and-weight-loss",
+          },
+          {
+            prompt: "What did the HAES ancillary analysis find among participants who maintained or GAINED weight?",
+            options: [
+              "34 percent improved clustered cardiometabolic risk, 73 percent quality of life, at smaller sizes",
+              "73 percent improved clustered cardiometabolic risk and 34 percent improved quality of life",
+              "No cardiometabolic improvement, though quality of life improved in most",
+              "Improvements matched those of participants who lost weight",
+            ],
+            correctIndex: 0,
+            explanation:
+              "34 percent and 73 percent, at smaller magnitudes. The analysis also confirmed that participants who DID lose weight showed the expected improvements, which keeps the honesty symmetrical.",
+            sourceLessonSlug: "weight-neutral-and-weight-loss",
+          },
+          {
+            prompt: "What did the review of intuitive and mindful-eating trials find?",
+            options: [
+              "Seven of ten beat control on at least one marker; no marker improved consistently",
+              "All ten beat control on multiple cardiometabolic markers",
+              "Three of ten beat control, with the rest showing null results",
+              "Seven of ten improved eating attitudes but none improved cardiometabolic markers",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Promising, real, inconsistent: that is the lesson's own three-word label. No marker moving consistently is what prevents a stronger claim.",
+            sourceLessonSlug: "weight-neutral-and-weight-loss",
+          },
+          {
+            prompt: "What may NOBODY claim about weight-neutral programs?",
+            options: [
+              "That they reduce long-term cardiovascular events or mortality",
+              "That they improve body image and eating attitudes",
+              "That they can improve fitness measures without weight change",
+              "That they improve quality of life in most participants",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The trials measure intermediate markers and quality of life over months to a couple of years. Hard endpoints are simply not in the evidence base.",
+            sourceLessonSlug: "weight-neutral-and-weight-loss",
+          },
+          {
+            prompt: "Which claim about weight-FOCUSED work does the course say outruns the data?",
+            options: [
+              "That weight-focused work is uniformly harmful",
+              "That weight-focused work produces larger short-term BMI reductions",
+              "That weight-focused work holds gains at twenty-four months",
+              "That weight-focused work suits clients without a weight-cycling history",
+            ],
+            correctIndex: 0,
+            explanation:
+              "In Mensinger the weight-loss arm delivered its outcomes and held its gains too. The course insists on symmetry: neither framing gets to be the villain.",
+            sourceLessonSlug: "weight-neutral-and-weight-loss",
+          },
+          {
+            prompt: "How many adults did Sumithran and colleagues follow, and through what?",
+            options: [
+              "Fifty adults with overweight or obesity, through a ten-week very-low-energy diet",
+              "Fifty adults with obesity, through a twelve-month behavioral program",
+              "Eighty women with BMI over 30, through six months of weekly groups",
+              "Twenty weight-stable adults, through two weeks of controlled feeding",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Fifty adults, ten-week very-low-energy diet. The eighty-women trial is Mensinger and the twenty weight-stable adults are Hall's.",
+            sourceLessonSlug: "weight-neutral-and-weight-loss",
+          },
+          {
+            prompt: "One year after the diet ended, what had happened to the appetite hormones?",
+            options: [
+              "NOT normalized: leptin, peptide YY, cholecystokinin, insulin, amylin still below baseline",
+              "They had normalized within six months and remained stable thereafter",
+              "They had normalized in participants who maintained their loss but not in those who regained",
+              "They had overshot baseline, producing lower appetite than before the diet",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Still altered at one year, despite substantial regain. Ghrelin, pancreatic polypeptide, and gastric inhibitory polypeptide also remained changed.",
+            sourceLessonSlug: "weight-neutral-and-weight-loss",
+          },
+          {
+            prompt: "What happened to subjective appetite one year after the diet?",
+            options: [
+              "It remained HIGHER than before the diet ever started",
+              "It returned to pre-diet levels once weight was regained",
+              "It fell below pre-diet levels in participants who maintained their loss",
+              "It was not measured, only the hormone concentrations were",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Higher than baseline, a year later. That is the finding a client experiences directly and has no way to distinguish from a personal failing.",
+            sourceLessonSlug: "weight-neutral-and-weight-loss",
+          },
+          {
+            prompt: "What piece of coaching language does the Sumithran finding license?",
+            options: [
+              "Regain is a physiological expectation, not evidence about who the client is",
+              "Weight loss should not be attempted, since the body will reverse it",
+              "Clients who regain need a more restrictive approach next time",
+              "Appetite is unreliable after dieting and should be ignored",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It converts a moral account into a physiological one. The lesson is explicit that a coach who does not know how the body fights back will mistake biology for character.",
+            sourceLessonSlug: "weight-neutral-and-weight-loss",
+          },
+          {
+            prompt: "What does the Sumithran finding argue FOR, structurally?",
+            options: [
+              "WELL-01 lesson 20's maintenance structures, rather than a second round of effort",
+              "A longer initial intervention, to allow hormones more time to normalize",
+              "Weight-neutral framing for every client with a dieting history",
+              "Pharmacological support alongside behavioral coaching",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Because the thing that changed was not their motivation. Prescribing more effort against an altered appetite signal is aiming at the wrong variable.",
+            sourceLessonSlug: "weight-neutral-and-weight-loss",
+          },
+          {
+            prompt: "What is 'weight cycling,' as this course frames it?",
+            options: [
+              "Repeated loss and regain: an interaction between effort and a defended physiology",
+              "Repeated loss and regain, understood as a record of failed willpower",
+              "The natural fluctuation of body weight across a week",
+              "Deliberate alternation between deficit and maintenance phases",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The framing is the coaching content. Sumithran supplies the physiology that makes the non-blaming reading accurate rather than merely kind.",
+            sourceLessonSlug: "weight-neutral-and-weight-loss",
+          },
+          {
+            prompt: "What is 'frame-fit'?",
+            options: [
+              "Framing chosen per client on history, goals, and distress; never imposed as ideology",
+              "The match between a client's goals and the evidence supporting them",
+              "The alignment of the coach's philosophy with the client's expectations",
+              "The selection of a framing based on which has stronger trial evidence",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Per client, on three named variables. Neither framing has stronger evidence overall, which is precisely why the choice is clinical rather than doctrinal.",
+            sourceLessonSlug: "weight-neutral-and-weight-loss",
+          },
+          {
+            prompt: "Which client profile might do their best work weight-neutral, per this lesson?",
+            options: [
+              "A client with a weight-cycling history and shame-driven abandonment",
+              "A client with no prior dieting experience",
+              "A client whose physician has advised weight loss",
+              "A client with a high baseline BMI and low distress",
+            ],
+            correctIndex: 0,
+            explanation:
+              "History plus distress pattern. The lesson is equally clear that a client who wants weight loss and holds it without distress is running an evidence-supported strategy too.",
+            sourceLessonSlug: "weight-neutral-and-weight-loss",
+          },
+          {
+            prompt: "What is an 'intermediate marker' in the framing evidence?",
+            options: [
+              "A proxy like LDL or blood pressure, not a hard endpoint like events or mortality",
+              "A measurement taken between the start and end of an intervention",
+              "A psychological outcome measured alongside physical ones",
+              "A marker that predicts an endpoint with established accuracy",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Proxy versus endpoint. All the framing evidence lives at the proxy level, which is exactly why nobody may claim mortality benefits for either approach.",
+            sourceLessonSlug: "weight-neutral-and-weight-loss",
+          },
+          {
+            prompt: "A client says 'I just need more discipline around food.' What does this section supply?",
+            options: [
+              "Matched-nutrient UPF drove a meal a day of passive overconsumption, and 26 studies found environments making it harder",
+              "Discipline predicts adherence, which predicts outcomes, so the instinct is correct",
+              "Self-control is a moderator of habit formation rate, per the pooled habit data",
+              "Nothing directly; the response belongs to the eating-conversation lesson",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two independent findings pointing the same way. The plan that follows is design rather than discipline: home defaults, shopping structure, social if-thens, budget-fit swaps.",
+            sourceLessonSlug: "the-food-environment",
+          },
+          {
+            prompt: "Which pairing correctly matches a Section 3 finding with its coaching move?",
+            options: [
+              "Hall's eating-rate finding pairs with coaching eating speed; the insecurity finding pairs with budget-fit swaps",
+              "Hall's intake finding pairs with calorie targets; the insecurity finding pairs with referral to social services",
+              "The policy review pairs with advocacy work; the qualitative synthesis pairs with motivational interviewing",
+              "The HAES trial pairs with weight-neutral framing for all clients; Mensinger pairs with weight-loss framing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Each finding produces a specific in-scope behavior. The distractors either leave the lane, generalize a framing beyond frame-fit, or convert a finding into advocacy.",
+            sourceLessonSlug: "the-food-environment",
+          },
+          {
+            prompt: "Why does the course present the two framings as 'a menu, not a war'?",
+            options: [
+              "Neither frame owned the outcomes in the head-to-head; each led somewhere first",
+              "Both framings produce identical results once adherence is controlled",
+              "The evidence for both is too weak to distinguish them",
+              "Clients are equally satisfied with either approach in the trial data",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Weight-loss led on BMI and weight; weight-neutral led on LDL and intuitive eating; both held six outcomes at two years. That is a menu.",
+            sourceLessonSlug: "weight-neutral-and-weight-loss",
+          },
+          {
+            prompt: "What is 'intuitive eating'?",
+            options: [
+              "Eating guided by internal hunger and satiety cues; the weight-neutral arm's gain",
+              "Eating without tracking or measuring any aspect of intake",
+              "Eating according to preference rather than nutritional guidance",
+              "Eating on a schedule determined by natural hunger rhythms",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Internal cues, and it is a measured construct rather than a philosophy. Mensinger's weight-neutral arm produced bigger gains on it at post-intervention.",
+            sourceLessonSlug: "weight-neutral-and-weight-loss",
+          },
+          {
+            prompt: "Why does the course say a coach should be able to quote 'both sides without flinching'?",
+            options: [
+              "The evidence prices them as a menu, and the capstone asks you to hold both",
+              "Clients will test the coach's neutrality before committing to either approach",
+              "Professional bodies require balanced presentation of contested approaches",
+              "Both approaches carry equal risk of harm if applied to the wrong client",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The evidence, and the capstone's explicit requirement. Frame-fit is a clinical judgment, and a coach who can only argue one side cannot make it.",
+            sourceLessonSlug: "weight-neutral-and-weight-loss",
+          },
+          {
+            prompt: "What is 'ultra-processed food' as this lesson uses it?",
+            options: [
+              "Industrially formulated products; the Hall diet form that drove overconsumption despite matched nutrients",
+              "Any food containing added sugar, salt, or preservatives",
+              "Food with more than five ingredients on its label",
+              "Packaged food that requires no preparation before eating",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Industrial formulation, and the trial detail is what makes the definition load-bearing here: the nutrients were matched, so the classification was doing the work.",
+            sourceLessonSlug: "the-hall-experiment",
+          },
+          {
+            prompt: "A client with a tight budget wants to eat more vegetables. What does the lesson's evidence direct?",
+            options: [
+              "Design the swaps inside their actual finances; cheap calories are energy-dense calories",
+              "Prioritize fresh produce, since it carries the strongest evidence",
+              "Defer the food work until their financial situation improves",
+              "Refer them to a dietitian, since budget-constrained planning requires clinical input",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Budget-fit as a design constraint. Deferring removes help, referral misreads the scope line, and prioritizing fresh produce ignores the constraint the evidence identified.",
+            sourceLessonSlug: "the-food-environment",
+          },
+          {
+            prompt: "Which statement about the Hall trial would this course refuse?",
+            options: [
+              "'Eliminating ultra-processed food will produce a 500-calorie daily deficit for your client'",
+              "'Matched-nutrient ultra-processed food drove 508 extra kilocalories a day in an inpatient trial'",
+              "'People ate faster on the ultra-processed diet, about 17 kilocalories per minute more'",
+              "'The trial measured ad libitum intake over two weeks per diet in twenty adults'",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It converts a two-week inpatient group finding into an individual free-living promise. The setting and the sample size are both doing work the promise ignores.",
+            sourceLessonSlug: "the-hall-experiment",
+          },
         ],
       },
     },
@@ -1467,6 +2052,421 @@ American Council on Exercise. (n.d.). *Position statement on nutrition scope of 
 Michigan Compiled Laws § 333.18353. (2024). *Exemptions*. Michigan Legislature. https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-333-18353
 
 National Board for Health & Wellness Coaching. (n.d.). *Scope of practice*. https://nbhwc.org/scope-of-practice/`,
+    },
+    {
+      slug: "quiz-the-craft",
+      title: "13 · Knowledge check: the craft",
+      section: "Section 4 · The craft",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "Why is food talk 'where coaching craft gets tested hardest'?",
+            options: [
+              "No other pillar arrives wrapped in this much shame",
+              "Food questions require the most technical knowledge to answer well",
+              "Eating behavior changes more slowly than other health behaviors",
+              "Clients have usually tried more approaches with food than elsewhere",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Shame is the pillar-specific difficulty. It is why the language rules in this lesson are stricter than anywhere else in the program.",
+            sourceLessonSlug: "the-eating-conversation",
+          },
+          {
+            prompt: "Why is the fixing reflex DOUBLY wrong on this pillar?",
+            options: [
+              "Advice recruits the counter-argument, AND the trials say content matters less than behavior",
+              "Advice is outside the coaching scope on this pillar, AND clients rarely follow it once given",
+              "Advice triggers shame, AND shame reduces adherence in the trial data",
+              "Advice is usually inaccurate, AND clients can detect the inaccuracy",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The usual mechanics plus this pillar's own evidence. The fixing reflex here is not even fixing the right variable, which is the second half.",
+            sourceLessonSlug: "the-eating-conversation",
+          },
+          {
+            prompt: "What is 'advice pressure'?",
+            options: [
+              "The urge to supply meal ideas the moment food is confessed; the fixing reflex in costume",
+              "The client's expectation that a coach will tell them what to eat",
+              "Social pressure on the client to follow a particular way of eating",
+              "The accumulation of conflicting dietary advice a client has received from previous professionals",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It names the coach's internal experience, which is the only place it can be caught. The naming is the same move WELL-01 made with the fixing reflex generally.",
+            sourceLessonSlug: "the-eating-conversation",
+          },
+          {
+            prompt: "Which words does this lesson strip from coaching speech?",
+            options: [
+              "'Good foods', 'bad foods', 'cheating', 'being naughty'",
+              "'Diet', 'restriction', 'calories', 'portion sizes'",
+              "'Should', 'have to', 'just', 'obviously'",
+              "'Healthy', 'unhealthy', 'clean', 'processed'",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Moralized food language specifically. The quiet controllers ('should', 'have to', 'just') are WELL-01 lesson 23's list, and 'processed' is a descriptive term this course uses freely.",
+            sourceLessonSlug: "the-eating-conversation",
+          },
+          {
+            prompt: "What is 'moralized food language,' and why is it stripped?",
+            options: [
+              "Good/bad/cheat framing that converts eating into character; shame changes no behavior",
+              "Language that implies a client's food choices reflect their values",
+              "Any evaluative language about foods at all, including neutral nutritional descriptions",
+              "Framing that assigns responsibility for eating outcomes to the client",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Character conversion is the mechanism, and the reason is stated flatly. Descriptive nutritional language is not moralized, which keeps the education channel usable.",
+            sourceLessonSlug: "the-eating-conversation",
+          },
+          {
+            prompt: "What frame does the course substitute for moral framing, and why is it also TRUE?",
+            options: [
+              "Eating patterns as designed outcomes of environments and habits",
+              "Eating patterns as expressions of underlying and unmet emotional needs",
+              "Eating patterns as the result of accumulated knowledge gaps",
+              "Eating patterns as biologically determined and largely fixed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both shame-free and accurate. The Hall trial and the environment synthesis are what let the kinder framing also be the correct one, which is the lesson's point.",
+            sourceLessonSlug: "the-eating-conversation",
+          },
+          {
+            prompt: "Why does affirmation over praise 'matter doubly' on this pillar?",
+            options: [
+              "Praise makes the coach the food judge: the dynamic most clients arrive damaged by",
+              "Praise is less effective at building self-efficacy in nutrition contexts",
+              "Praise encourages restriction, which the trials associate with regain",
+              "Praise implies the coach is monitoring compliance rather than facilitating change",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Food judging is the specific harm. The lesson's contrast: 'you noticed the pattern and said it out loud' builds capability; 'good job being honest' installs a judge.",
+            sourceLessonSlug: "the-eating-conversation",
+          },
+          {
+            prompt: "What is the tension the self-monitoring craft resolves?",
+            options: [
+              "Self-monitoring is the crowned tool, and food tracking most easily turns obsessive",
+              "Self-monitoring works only when the coach reviews the data",
+              "Self-monitoring is effective but falls outside the non-prescriptive coaching lane",
+              "Self-monitoring improves short-term adherence but not long-term outcomes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Crowned and dangerous at once. The resolution is to keep the tool and change its target: monitor the behavior rather than always the food.",
+            sourceLessonSlug: "the-eating-conversation",
+          },
+          {
+            prompt: "What does 'monitor the behavior, not always the food' look like?",
+            options: [
+              "Meals at the table, vegetables added, eating speed, hunger checked before seconds",
+              "Weekly weigh-ins, waist circumference measurements, and standardized progress photographs",
+              "Calorie ledgers reviewed weekly rather than logged daily",
+              "Photographs of meals rather than written records",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Four countable behaviors, all cheaper psychologically than a calorie ledger, and all inside the behavioral-adherence dimension the trials say predicts outcomes anyway.",
+            sourceLessonSlug: "the-eating-conversation",
+          },
+          {
+            prompt: "What is 'behavior monitoring' as this lesson defines it?",
+            options: [
+              "Self-monitoring aimed at countable behaviors rather than calories; the gentler species",
+              "The coach's observation of the client's eating during sessions",
+              "Monitoring that focuses on frequency rather than quantity",
+              "Tracking that the client reviews privately without ever sharing the record with their coach",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Same tool, different target. Calling it a species of self-monitoring matters: the evidence supporting self-monitoring is what it inherits.",
+            sourceLessonSlug: "the-eating-conversation",
+          },
+          {
+            prompt: "How does the lesson open the evoking half of an eating session?",
+            options: [
+              "What would eating peacefully look like; when did food last feel simple",
+              "What do you already know about nutrition that you are not currently acting on",
+              "What have you tried before, and what went wrong",
+              "How important is changing this, on a scale of one to ten",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both questions evoke a wanted state rather than a problem history. Asking what went wrong invites sustain talk, and rating scales are an instrument rather than evocation.",
+            sourceLessonSlug: "the-eating-conversation",
+          },
+          {
+            prompt: "What is the typical inner obstacle on this pillar, and what is it in WELL-01 terms?",
+            options: [
+              "The story, like 'one slice ruins the day': the what-the-hell effect in food clothes",
+              "The pantry contents, which form the environment the client believes they cannot control",
+              "Low self-efficacy about cooking, which competence support addresses",
+              "Ambivalence about the goal itself, which returns the session to evoking",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The obstacle is rarely the pantry. Naming it as the what-the-hell effect means the same countermeasure applies: the pre-negotiated miss rule.",
+            sourceLessonSlug: "the-eating-conversation",
+          },
+          {
+            prompt: "What is a 'food-story obstacle'?",
+            options: [
+              "The belief behind most eating wishes, coachable where the pantry is just weather",
+              "The client's own narrative about how their current eating patterns first developed",
+              "A family or cultural story that shapes what the client eats",
+              "The explanation a client offers for a lapse after it happens",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A belief, and specifically one an if-then plan can fire against. The pantry-as-weather contrast is the same inner-versus-outer distinction WOOP requires.",
+            sourceLessonSlug: "the-eating-conversation",
+          },
+          {
+            prompt: "How does the planning half of an eating session close?",
+            options: [
+              "One addition or default change, anchored, minimum-versioned, client holding the pen",
+              "Three changes spanning food, environment, and monitoring, agreed together in session",
+              "A weekly menu the client and coach build collaboratively",
+              "A calorie or macronutrient target the client will track",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One change, and note which two kinds: an addition (from the fiber lesson) or a default change (from the Hall lesson). Both are the course's own evidence made operational.",
+            sourceLessonSlug: "the-eating-conversation",
+          },
+          {
+            prompt: "A client says 'I was bad this weekend. Pizza, twice.' What does this lesson train?",
+            options: [
+              "A reflection without moral language, treating the pattern as data",
+              "An affirmation of their honesty in reporting it",
+              "A reframe explaining that occasional pizza fits any sustainable pattern",
+              "A question about what triggered the choice, to identify the cue",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A reflection, and specifically not judging, advising, or treating the confession as a compliance report. Affirming the honesty makes the coach a judge who is being gracious.",
+            sourceLessonSlug: "the-eating-conversation",
+          },
+          {
+            prompt: "Which conditions does the clinical referral lane cover on this pillar?",
+            options: [
+              "Diabetes, kidney disease, cardiovascular disease, pregnancy complications, food allergy",
+              "Diabetes, obesity, hypertension, and any client over 65",
+              "Any diagnosed condition at all, plus any client currently taking prescription medication",
+              "Eating disorders, diabetes, and kidney disease specifically",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Five named condition families. Obesity is not on the list as a condition triggering referral, and eating disorders are their own separate lane with a different destination.",
+            sourceLessonSlug: "referral-on-this-pillar",
+          },
+          {
+            prompt: "How does Michigan's statute align with the clinical referral lane?",
+            options: [
+              "Its exemption is carved around this line: wellness and prevention yes, MNT no",
+              "Its exemption requires referral for any client under clinical care",
+              "Its exemption applies only where a dietitian has been consulted first",
+              "Its exemption does not address referral, which is a professional rather than legal duty",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The statutory line and the professional referral line are the same line. That alignment is why the drift test works as both an ethical and a legal instrument.",
+            sourceLessonSlug: "referral-on-this-pillar",
+          },
+          {
+            prompt: "Name the disordered-eating red flags this lesson lists.",
+            options: [
+              "Secret eating, tightening rules, compensatory behaviors, distress scaling with food, rapid weight change",
+              "Skipping meals, counting calories, weighing daily, avoiding social meals",
+              "Rapid weight loss, low mood, fatigue, and reduced training performance",
+              "Restrictive eating, excessive compensatory exercise, and a flat refusal to discuss food openly with anyone",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Six observable signs, none of which requires diagnosing anything. 'Rules that keep TIGHTENING' is the one that distinguishes a red flag from ordinary structure.",
+            sourceLessonSlug: "referral-on-this-pillar",
+          },
+          {
+            prompt: "Where do eating-disorder red flags route, and why is that different from the clinical lane?",
+            options: [
+              "Clinical-care territory (physician, therapist, specialist), not dietitian referral",
+              "Registered dietitian territory, since the presentation is nutritional",
+              "The client's primary care physician, who coordinates any onward referral",
+              "A specialist only if the client requests one; otherwise the coaching simply continues",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson is explicit that this is not dietitian-referral territory. A dietitian addresses nutrition; these flags call for clinical care of the disorder itself.",
+            sourceLessonSlug: "referral-on-this-pillar",
+          },
+          {
+            prompt: "Why does coaching PAUSE on food specifically when eating-disorder flags are live?",
+            options: [
+              "Behavior-change tools aimed at food can sharpen the rules doing the damage",
+              "Continuing would exceed the coach's scope of practice in every jurisdiction",
+              "Clients with these flags cannot form new habits until treatment concludes",
+              "The coach's food guidance would conflict with the treatment team's plan",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Tracking, rules, and goals are the machinery of the disorder as well as the machinery of coaching. That overlap is the specific risk, and it is why the pause is on FOOD rather than on coaching.",
+            sourceLessonSlug: "referral-on-this-pillar",
+          },
+          {
+            prompt: "What may continue while eating-disorder flags are live?",
+            options: [
+              "Coaching away from food (sleep, movement, connection) alongside licensed care",
+              "Nothing; the coaching relationship suspends until treatment concludes",
+              "Food coaching, provided it is limited to additions rather than restrictions",
+              "All coaching, provided the coach documents the flags and monitors them",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The pause is targeted rather than total. Suspending everything abandons the client, which WELL-00 named as one of the two ways a referral is done badly.",
+            sourceLessonSlug: "referral-on-this-pillar",
+          },
+          {
+            prompt: "What is a 'condition in disguise'?",
+            options: [
+              "A 'wellness' request that is really a diagnosis question, like a sodium target",
+              "A client concealing a diagnosis from their coach",
+              "A symptom the client attributes to their lifestyle rather than to an underlying illness",
+              "A referral question framed as a general education request",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The pillar's characteristic gray zone. The prediabetic asking for a meal plan and the client whose physician said to lose weight are the lesson's other two examples.",
+            sourceLessonSlug: "referral-on-this-pillar",
+          },
+          {
+            prompt: "What is a 'referral with a coaching offer'?",
+            options: [
+              "The handoff that keeps the relationship: they own targets, you own the machinery",
+              "A referral in which the coach recommends a specific practitioner",
+              "A referral the coach makes directly on the client's behalf, with their prior consent",
+              "A referral offered as an option the client may decline",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It divides the labor rather than ending the relationship. The lesson insists the coaching half is not a consolation prize: sections 2 and 3 are the evidence that it is where the outcome lives.",
+            sourceLessonSlug: "referral-on-this-pillar",
+          },
+          {
+            prompt: "A physician told your client to 'lose weight' with no plan attached. Draw the division of labor.",
+            options: [
+              "Get them the actual plan from a clinician; coach adherence, environment, and framing",
+              "Build the weight-loss plan yourself, since the physician has effectively authorized it",
+              "Decline all weight-related work until a written plan exists",
+              "Set interim targets and ask the client to review them with the physician",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A physician's instruction does not transfer their authority. Everything around the targets is yours, and this whole course is the evidence that the half you keep is the half that produces the outcome.",
+            sourceLessonSlug: "referral-on-this-pillar",
+          },
+          {
+            prompt: "How does the self-coaching instruction apply the eating-disorder flags?",
+            options: [
+              "Tightening rules and outsized distress around food are triggers in the mirror too",
+              "Self-coaching is exempt, since the coach can monitor their own state accurately",
+              "The flags apply, but with a longer observation period before acting",
+              "Only the observable flags apply; the internal ones cannot be self-assessed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Same flags, same triggers. The capstone will ask for exactly this application, and self-knowledge is what makes the flags harder to act on rather than easier.",
+            sourceLessonSlug: "referral-on-this-pillar",
+          },
+          {
+            prompt: "What is the 'clinical referral lane'?",
+            options: [
+              "Condition-directed diet questions routed to dietitians and physicians",
+              "The pathway for clients already under a clinician's care",
+              "The set of conditions requiring medical clearance before coaching begins",
+              "The protocol for handing a client to another coach with clinical training",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the formal version of lesson 1's drift test. Conditions refer out; behavior stays, and this names where 'out' goes.",
+            sourceLessonSlug: "referral-on-this-pillar",
+          },
+          {
+            prompt: "A client's food rules have narrowed from three avoided foods to fifteen over four months. What is this?",
+            options: [
+              "A red flag: tightening rules, routing to clinical care with food coaching paused",
+              "Successful adherence, since the client is following their chosen plan very consistently",
+              "A condition in disguise, routing to a registered dietitian",
+              "An environment problem, addressed by broadening the home defaults",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Tightening is the pattern, not the count. Routing it to a dietitian misreads the lane, and treating it as adherence is exactly the failure the flag list exists to prevent.",
+            sourceLessonSlug: "referral-on-this-pillar",
+          },
+          {
+            prompt: "A prediabetic client asks you for a meal plan. What does the craft prescribe?",
+            options: [
+              "Refer for the targets; offer to coach everything around the plan they write",
+              "Provide general guideline education instead, which satisfies the request",
+              "Build the plan, since prediabetes is a prevention rather than treatment context",
+              "Decline the request and redirect the session to behavior work",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Referral WITH a coaching offer. Substituting education without naming the referral leaves the actual question unanswered, and declining without an offer abandons the client.",
+            sourceLessonSlug: "referral-on-this-pillar",
+          },
+          {
+            prompt: "Which of these is inside the lane on this pillar?",
+            options: [
+              "Coaching a client's eating speed and meals-at-the-table count",
+              "Setting a fiber target for a client with diverticular disease",
+              "Recommending a fiber supplement to a client struggling to reach the guideline",
+              "Adjusting the carbohydrate distribution a dietitian prescribed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Speed and meal-location counts are behaviors. A target for a diagnosed condition, a supplement recommendation, and adjusting a licensee's plan are three of the four tells from lesson 2.",
+            sourceLessonSlug: "referral-on-this-pillar",
+          },
+          {
+            prompt: "Why does the referral lesson say this pillar 'produces referral moments faster than any other'?",
+            options: [
+              "Fast drift toward disease, plus two lanes: clinical and eating-disorder",
+              "Clients disclose more on this pillar than on any other",
+              "Nutrition is the pillar carrying the most restrictive legal scope of the five",
+              "Food questions more often involve medication interactions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two lanes plus fast drift. Movement and sleep each have one referral destination; this pillar has two with different destinations and different protocols.",
+            sourceLessonSlug: "referral-on-this-pillar",
+          },
+          {
+            prompt: "What do the two referral lanes have in common, and what differs?",
+            options: [
+              "Both use the warm handoff; they differ in destination and whether food coaching pauses",
+              "Both route to registered dietitians; they differ in urgency",
+              "Both pause coaching entirely; they differ in how long the pause lasts",
+              "Both require the client's written consent beforehand; they differ in documentation requirements",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Same craft, different destination and different continuation rule. The clinical lane keeps the behavior work running; the eating-disorder lane pauses the food half specifically.",
+            sourceLessonSlug: "referral-on-this-pillar",
+          },
+        ],
+      },
     },
     {
       slug: "final-coaching-nutrition",
