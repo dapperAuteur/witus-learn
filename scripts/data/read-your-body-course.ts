@@ -388,7 +388,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "About half"
             ],
             "correctIndex": 1,
-            "explanation": "The study of more than ninety two thousand adults found that about one in five had a week where resting heart rate jumped ten beats or more, and they were healthy. About one in fifty is far too low and understates the normal day to day bounce. About half overstates it, since the finding was roughly twenty percent, not fifty percent.\n\nReference: (Quer et al., 2020)"
+            "explanation": "The study of more than ninety two thousand adults found that about one in five had a week where resting heart rate jumped ten beats or more, and they were healthy. About one in fifty is far too low and understates the normal day to day bounce. About half overstates it, since the finding was roughly twenty percent, not fifty percent.\n\nReference: (Quer et al., 2020)",
+            "sourceLessonSlug": "m2-l7-data-variability-and-trends"
           }
         ]
       }
@@ -473,7 +474,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "Change one thing, measure a baseline first, then repeat"
             ],
             "correctIndex": 2,
-            "explanation": "Correct: The recipe is change one variable, measure a baseline first, and repeat to confirm. Option 1 is wrong because changing several things at once means you cannot tell which one moved the needle, and a baseline is required. Option 2 is wrong because the whole point of an N-of-1 is to use your own baseline, not a population average.\n\nReference: (Davidson et al., 2021)"
+            "explanation": "Correct: The recipe is change one variable, measure a baseline first, and repeat to confirm. Option 1 is wrong because changing several things at once means you cannot tell which one moved the needle, and a baseline is required. Option 2 is wrong because the whole point of an N-of-1 is to use your own baseline, not a population average.\n\nReference: (Davidson et al., 2021)",
+            "sourceLessonSlug": "m3-l1-the-science-of-health-data-analytics"
           },
           {
             "prompt": "A slower heart-rate recovery in the first minute after exercise was found to predict what?",
@@ -495,7 +497,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "About half of all people"
             ],
             "correctIndex": 1,
-            "explanation": "Correct: About one in five people had a week where resting heart rate swung 10 or more beats, which shows that big day-to-day swings are normal. Option 1 is wrong because that would make a 10-beat swing rare, when it is actually common. Option 3 overstates it, it is roughly 20 percent, not half.\n\nReference: (Quer et al., 2020)"
+            "explanation": "Correct: About one in five people had a week where resting heart rate swung 10 or more beats, which shows that big day-to-day swings are normal. Option 1 is wrong because that would make a 10-beat swing rare, when it is actually common. Option 3 overstates it, it is roughly 20 percent, not half.\n\nReference: (Quer et al., 2020)",
+            "sourceLessonSlug": "m3-l4-baseline-and-normal-range"
           },
           {
             "prompt": "On a simple line chart of one health metric over time, what does the bottom edge running left to right usually show?",
@@ -516,7 +519,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "When one reading leaves your normal band for one day"
             ],
             "correctIndex": 0,
-            "explanation": "Correct: A real shift is a move to a new level that holds for several days in a row, usually three to five. Option 2 is wrong because a single spike is just day-to-day noise. Option 3 is wrong because one day outside your band is almost always noise, not a real change."
+            "explanation": "Correct: A real shift is a move to a new level that holds for several days in a row, usually three to five. Option 2 is wrong because a single spike is just day-to-day noise. Option 3 is wrong because one day outside your band is almost always noise, not a real change.",
+            "sourceLessonSlug": "m3-l3-reading-a-chart-visualizing-your-data"
           },
           {
             "prompt": "What is a moving average, and why does it 'move'?",
@@ -813,7 +817,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "About one in fifty"
             ],
             "correctIndex": 1,
-            "explanation": "The study found about one in five people had a week where resting heart rate swung ten or more beats, and that is still normal variation. One in two overstates how common the big swing is, and one in fifty understates it. Both miss the actual proportion the lesson reports.\n\nReference: (Quer et al., 2020)"
+            "explanation": "The study found about one in five people had a week where resting heart rate swung ten or more beats, and that is still normal variation. One in two overstates how common the big swing is, and one in fifty understates it. Both miss the actual proportion the lesson reports.\n\nReference: (Quer et al., 2020)",
+            "sourceLessonSlug": "m5-l3-signal-vs-noise-in-long-term-data"
           },
           {
             "prompt": "How does the module define resilience as a health signal?",
@@ -845,7 +850,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "When it is larger than the change anyone else reports"
             ],
             "correctIndex": 0,
-            "explanation": "A change counts as signal when it leaves your normal band and holds for weeks, not just a few days. Two days in a row is too short; that is still a wave, not a tide. Comparing the size to other people is wrong because your normal band is your own and baselines differ from person to person."
+            "explanation": "A change counts as signal when it leaves your normal band and holds for weeks, not just a few days. Two days in a row is too short; that is still a wave, not a tide. Comparing the size to other people is wrong because your normal band is your own and baselines differ from person to person.",
+            "sourceLessonSlug": "m5-l3-signal-vs-noise-in-long-term-data"
           },
           {
             "prompt": "What is the difference between a goal and a system in this module?",
@@ -877,7 +883,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "Only above twelve thousand steps a day"
             ],
             "correctIndex": 0,
-            "explanation": "More daily steps lower early-death risk, with the benefit leveling off around six to eight thousand steps a day for older adults. Ten thousand is a popular round target, but the lesson says the payoff shows up well below it. Twelve thousand is even further past where the benefit plateaus, so it is wrong.\n\nReference: (Paluch et al., 2022)"
+            "explanation": "More daily steps lower early-death risk, with the benefit leveling off around six to eight thousand steps a day for older adults. Ten thousand is a popular round target, but the lesson says the payoff shows up well below it. Twelve thousand is even further past where the benefit plateaus, so it is wrong.\n\nReference: (Paluch et al., 2022)",
+            "sourceLessonSlug": "m5-l7-the-century-plan-part-1-priorities-by-decade"
           },
           {
             "prompt": "What are the three parts of a lasting health system in this module?",

@@ -476,7 +476,10 @@ Every question is supposed to carry `sourceLessonSlug`, which is what turns a wr
 files have no lesson association: `scripts/lib/source-lesson-match.ts` assigns one at generation time
 (structurally when a section holds a single lesson, by BM25 over the section's lessons otherwise) and
 **declines when the evidence is thin**, because a wrong "reread this" link is worse than no link.
-`pnpm gen:health` reports its coverage on every run.
+`pnpm gen:health` reports its coverage on every run. The 120 questions it declined were then read
+against their chapter's lessons and assigned by hand in `scripts/lib/source-lesson-overrides.ts`
+(keyed by prompt, because seven of the eight modules are generated and gitignored), so **every
+question in every readable course now names the lesson that teaches its answer.**
 
 `audit:course` exists because twelve green guards are not the same as a complete course: the nine
 WELL courses passed every one of them while all nine were missing their terminal-section quiz, 27
