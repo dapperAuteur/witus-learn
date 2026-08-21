@@ -132,10 +132,421 @@ Gottlieb, L. M., Hessler, D., Long, D., Laves, E., Burns, A. R., Amaya, A., Swee
         },
       ],
     },
+    {
+      slug: "quiz-context",
+      title: "4 · Knowledge check: the context a plan lands in",
+      section: "Section 1 · The context a plan lands in",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What does competency 3.9.9 require?",
+            options: ["Adapting goals or action plans", "Knowing the major categories of social determinant and their health effects", "Screening every client with a validated social-needs instrument at intake", "Referring any client with an identified determinant to a social worker"],
+            correctIndex: 0,
+            explanation: "The verb is the whole point: it is an operational skill applied to a specific plan, not a sensitivity topic.",
+            sourceLessonSlug: "plans-land-in-lives",
+          },
+          {
+            prompt: "What do social determinants of health name?",
+            options: ["Conditions people are born, grow, work, live, and age in", "The behavioral choices that accumulate into chronic disease risk over a lifetime", "The genetic and family-history factors a coach cannot modify through behavior", "The healthcare access variables measured by insurance status and provider supply"],
+            correctIndex: 0,
+            explanation: "Plus the systems shaping those conditions. In coaching terms, the variables that decide whether an agreed action is possible on a Tuesday.",
+            sourceLessonSlug: "plans-land-in-lives",
+          },
+          {
+            prompt: "How large was the Seligman food-insecurity sample, and who was in it?",
+            options: ["5,094 low-income adults aged 18 to 65", "About 19,000 adults aged 16 and over in households and prisons", "Roughly 8,500 participants across 47 education trials", "1,809 families attending two safety-net pediatric clinics"],
+            correctIndex: 0,
+            explanation: "Drawn from NHANES 1999-2004, with food insecurity assessed by the Food Security Survey Module.",
+            sourceLessonSlug: "plans-land-in-lives",
+          },
+          {
+            prompt: "What was food insecurity's adjusted relative risk for self-reported hypertension?",
+            options: ["1.20, CI 1.04 to 1.38", "2.42, with a confidence interval running from 1.44 to 4.08", "1.30, with a confidence interval running from 1.09 to 1.55", "1.48, with a confidence interval that crossed one at 0.94 to 2.32"],
+            correctIndex: 0,
+            explanation: "Adjusted for age, gender, race, education, and income. Hyperlipidemia was 1.30 (1.09-1.55).",
+            sourceLessonSlug: "plans-land-in-lives",
+          },
+          {
+            prompt: "What happened to the food-insecurity diabetes association?",
+            options: ["It missed significance unless the stricter definition was used", "It was the strongest of the three associations in every model specification", "It reached significance only in the unadjusted model and vanished after adjustment", "It was not examined, because the sample had too few diagnosed diabetics"],
+            correctIndex: 0,
+            explanation: "Under the stricter definition it was 2.42 (1.44-4.08). Laboratory evidence of diabetes was 1.48 (0.94-2.32), which crosses one.",
+            sourceLessonSlug: "plans-land-in-lives",
+          },
+          {
+            prompt: "What does a coach who never asks about context mistake?",
+            options: ["A logistics problem for a motivation problem", "A motivation problem for a knowledge problem the client could read their way out of", "A temporary constraint for a permanent one, and abandons a workable plan too early", "A clinical problem for a behavioral one, and coaches something needing referral"],
+            correctIndex: 0,
+            explanation: "So motivational technique gets applied to a barrier it cannot move, and the client learns the failure was theirs.",
+            sourceLessonSlug: "plans-land-in-lives",
+          },
+          {
+            prompt: "Why will evoking change talk not fix a determinant?",
+            options: ["It cannot produce a store, a car, or a shift", "Because change talk only predicts behavior in clients who are already in the action stage", "Because determinants operate through physiology rather than through behavioral choice", "Because motivational interviewing was validated in clinical rather than community samples"],
+            correctIndex: 0,
+            explanation: "And applying it there does not merely fail; it teaches the client that the failure was theirs.",
+            sourceLessonSlug: "plans-land-in-lives",
+          },
+          {
+            prompt: "What is the symmetrical error to ignoring context?",
+            options: ["Deciding nothing is coachable", "Treating every determinant as something the client could overcome with enough planning", "Referring every client with any identified constraint out of the coaching relationship", "Assuming a determinant a client mentions once is the dominant factor in every setback"],
+            correctIndex: 0,
+            explanation: "That reasoning ends every conversation with a shrug, and the evidence says specific small adaptations survive hard conditions.",
+            sourceLessonSlug: "plans-land-in-lives",
+          },
+          {
+            prompt: "Which is NOT part of the coach's job here?",
+            options: ["Case-managing the determinant", "Noticing a constraint that has appeared repeatedly in what the client describes", "Asking about a constraint plainly once the client has raised the underlying difficulty", "Changing the agreed plan so it assumes the constraint will still be there"],
+            correctIndex: 0,
+            explanation: "The skill is narrow: notice, ask plainly, change the plan. Not diagnosing poverty, and not raising a determinant the client did not raise.",
+            sourceLessonSlug: "plans-land-in-lives",
+          },
+          {
+            prompt: "What is an adjusted relative risk?",
+            options: ["A risk ratio accounting for named confounders", "A risk ratio recalculated after excluding participants who did not complete follow-up", "A ratio comparing the exposed group against the population rather than a control group", "A ratio weighted by how severe each outcome was in the participants who developed it"],
+            correctIndex: 0,
+            explanation: "In Seligman the adjustment covered age, gender, race, educational attainment, and income.",
+            sourceLessonSlug: "plans-land-in-lives",
+          },
+          {
+            prompt: "What does food insecurity mean, as measured in that study?",
+            options: ["Being unable to afford enough food for an active, healthy life", "Living further than one mile from a store that sells fresh produce and staples", "Reporting that food costs consume more than a third of household monthly income", "Having skipped at least one meal for financial reasons in the past seven days"],
+            correctIndex: 0,
+            explanation: "Assessed with the Food Security Survey Module, which is why the stricter-definition analysis was available.",
+            sourceLessonSlug: "plans-land-in-lives",
+          },
+          {
+            prompt: "Why does the lesson give numbers instead of a moral argument?",
+            options: ["To make it a coaching-relevant hazard, not a sentiment", "Because coaches respond better to quantitative evidence than to qualitative accounts", "Because the handbook competency requires the coach to quantify each determinant present", "Because the numbers establish that the determinant caused the disease in these adults"],
+            correctIndex: 0,
+            explanation: "A hazard of that size sitting entirely outside the coaching conversation is the argument for putting it inside.",
+            sourceLessonSlug: "plans-land-in-lives",
+          },
+          {
+            prompt: "A client misses agreed walks for a month. What do you ask first?",
+            options: ["What the week actually looked like", "Whether they still consider the goal important enough to keep pursuing", "Whether the agreed dose was too ambitious for their current fitness level", "Whether they would prefer a different activity that they might enjoy more"],
+            correctIndex: 0,
+            explanation: "Possibility before preference. The separating question is whether the action was possible in the weeks it did not happen.",
+            sourceLessonSlug: "plans-land-in-lives",
+          },
+          {
+            prompt: "What is 'silent attribution'?",
+            options: ["An unnamed barrier being blamed on the client's character", "A client attributing a success to luck rather than to their own sustained effort", "A coach recording a missed action without noting the reason the client gave for it", "A determinant that affects behavior without producing any measurable health outcome"],
+            correctIndex: 0,
+            explanation: "Both parties do it, because the coach cannot see the barrier either. Naming it is what stops it.",
+            sourceLessonSlug: "supports-and-immovables",
+          },
+          {
+            prompt: "What do competencies 3.8.3 and 3.8.4 ask for, respectively?",
+            options: ["An asset hunt, and an honesty requirement", "A formal environmental assessment, and a referral to an appropriate community service", "A list of barriers, and a plan for removing each of them within the coaching term", "A screening instrument at intake, and a rescreen at the close of the engagement"],
+            correctIndex: 0,
+            explanation: "Identify structural and environmental supports; recognize systemic barriers the client cannot modify.",
+            sourceLessonSlug: "supports-and-immovables",
+          },
+          {
+            prompt: "How do you find structural supports a client never mentions?",
+            options: ["Ask what already exists in the week", "Ask what the client believes they should be adding to their current routine", "Work through a standard checklist of community resources for their postal code", "Ask which of their previous programs worked and what those programs provided"],
+            correctIndex: 0,
+            explanation: "Same instinct WELL-99 applies in making the week the design unit. Most clients have more usable structure than they report.",
+            sourceLessonSlug: "supports-and-immovables",
+          },
+          {
+            prompt: "What does 'recognize' mean for a non-modifiable barrier?",
+            options: ["Name it as real and external, then design around it", "Document it in the record so a future practitioner can see the full picture", "Acknowledge it sympathetically while keeping the original plan and its timeline intact", "Escalate it to whichever agency has responsibility for that category of problem"],
+            correctIndex: 0,
+            explanation: "Recognizing has an operational meaning here, and the word 'around' is doing the work in it.",
+            sourceLessonSlug: "supports-and-immovables",
+          },
+          {
+            prompt: "What is the difference between designing around and designing through?",
+            options: ["Around assumes the barrier is permanent", "Around avoids the barrier's category entirely, while through addresses it in small increments", "Around uses external resources, while through relies only on what the client already has", "Around changes the goal, while through keeps the goal and changes only the timeline"],
+            correctIndex: 0,
+            explanation: "Through implies effort can dissolve the constraint, which produces plans that work only in weeks the constraint lifts.",
+            sourceLessonSlug: "supports-and-immovables",
+          },
+          {
+            prompt: "What does a night-shift client get, on this reasoning?",
+            options: ["A plan built for someone who sleeps in the day", "A plan to shift gradually toward a conventional schedule over the coming months", "A plan identical to a day-worker's, with an acknowledgment that it will be harder", "A referral, since shift work places the case outside a coach's scope of practice"],
+            correctIndex: 0,
+            explanation: "Which WELL-05 already describes. The sympathetic caveat version is designing through the barrier.",
+            sourceLessonSlug: "supports-and-immovables",
+          },
+          {
+            prompt: "Which mechanism explains why unnamed barriers do lasting damage?",
+            options: ["Repeated failure lowers self-efficacy", "Repeated failure produces habituation, so the client stops noticing the missed action", "Unnamed barriers grow larger over time as the client avoids confronting them directly", "The coach loses credibility, and the client discounts later suggestions accordingly"],
+            correctIndex: 0,
+            explanation: "WELL-01 identifies self-efficacy as the belief carrying every future behavior, which is why the damage outlasts the plan.",
+            sourceLessonSlug: "supports-and-immovables",
+          },
+          {
+            prompt: "Which is a structural support rather than a barrier?",
+            options: ["A workplace gym the client has not mentioned", "A commute that consumes ninety minutes at each end of the working day", "A partner who works nights, leaving the client responsible for evening childcare", "A neighborhood with no store selling fresh food within reasonable travel distance"],
+            correctIndex: 0,
+            explanation: "Along with libraries, parks, bus routes, a family member with a car on Thursdays, and a neighbor already walking at six.",
+            sourceLessonSlug: "supports-and-immovables",
+          },
+          {
+            prompt: "Where is the line between recognizing a barrier and intervening in it?",
+            options: ["You do not file appeals or arrange benefits", "You may contact an employer on the client's behalf if the client gives written permission", "You may intervene once the barrier has persisted beyond the agreed coaching duration", "You may intervene in environmental barriers but not in financial or legal ones"],
+            correctIndex: 0,
+            explanation: "If a determinant is the dominant problem, refer to a social worker, benefits navigator, patient advocate, or community health worker.",
+            sourceLessonSlug: "supports-and-immovables",
+          },
+          {
+            prompt: "Which barrier does the lesson name as genuinely immovable within coaching?",
+            options: ["Immigration status limiting which services are safe", "A client's reluctance to exercise in a gym where they feel conspicuous or judged", "A schedule crowded with commitments the client has agreed to but does not value", "A belief that previous attempts failed because the client lacks the necessary discipline"],
+            correctIndex: 0,
+            explanation: "Alongside a night shift, no car in a car-built place, no store selling fresh food, and caring for a parent with dementia.",
+            sourceLessonSlug: "supports-and-immovables",
+          },
+          {
+            prompt: "Why are coaches better at the asset half than the honesty half?",
+            options: ["Naming an immovable barrier feels like giving up", "Because assets are documented in community directories while barriers are not recorded anywhere", "Because the competency framework was written to emphasize strengths over deficits", "Because clients volunteer their assets readily and conceal their barriers deliberately"],
+            correctIndex: 0,
+            explanation: "It is not. It is the precondition for a plan that survives, and the alternative is silent attribution.",
+            sourceLessonSlug: "supports-and-immovables",
+          },
+          {
+            prompt: "Name the four adaptations from lesson 3.",
+            options: ["Shrink the unit, move the location, change the currency, borrow the structure", "Reduce the frequency, lengthen the timeline, add accountability, increase the reward", "Simplify the goal, add a reminder, recruit a partner, schedule a review", "Lower the target, extend the deadline, remove a pillar, revisit the motivation"],
+            correctIndex: 0,
+            explanation: "Each answers a specific constraint: no time, travel cost, the wrong currency, and a missing cue.",
+            sourceLessonSlug: "adapting-the-plan",
+          },
+          {
+            prompt: "What does 'move the location' answer?",
+            options: ["Travel, the most common silent cost", "A client's discomfort with the social environment of a conventional gym setting", "The difficulty of maintaining a habit whose cue is tied to a single fixed place", "The tendency for home-based plans to be interrupted by household demands"],
+            correctIndex: 0,
+            explanation: "Somewhere the client already goes. The silent cost is the unstated burden that decides adherence without being discussed.",
+            sourceLessonSlug: "adapting-the-plan",
+          },
+          {
+            prompt: "What does 'change the currency' mean?",
+            options: ["Swap money for time, or time for money", "Replace an outcome goal with a process goal the client controls more directly", "Convert a target from minutes into sessions so it is easier to track and report", "Move the reward from an external incentive to an internal source of satisfaction"],
+            correctIndex: 0,
+            explanation: "Depending on which the client actually has. A cheap plan that eats an hour is expensive to someone with no hours.",
+            sourceLessonSlug: "adapting-the-plan",
+          },
+          {
+            prompt: "What does 'borrow the structure' apply, and to what?",
+            options: ["WELL-01's cue work, to a logistics problem", "WELL-99's monthly review, to a client whose plan keeps drifting between sessions", "WELL-02's dose-response evidence, to a client with very little available time", "WELL-06's social-connection findings, to a client who is isolated during the week"],
+            correctIndex: 0,
+            explanation: "Attach the action to something already recurring rather than building a new occasion for it.",
+            sourceLessonSlug: "adapting-the-plan",
+          },
+          {
+            prompt: "How many families did Gottlieb randomize, and to what?",
+            options: ["1,809, to screening plus navigation or an active control", "5,094 low-income adults, to a social-needs intervention or to usual primary care", "8,533 participants, to group-based education or to individual education sessions", "About 19,000 adults, to a health-literacy intervention or to standard materials"],
+            correctIndex: 0,
+            explanation: "In two safety-net pediatric clinics, with primary outcomes at four months.",
+            sourceLessonSlug: "adapting-the-plan",
+          },
+          {
+            prompt: "What were Gottlieb's two results at four months?",
+            options: ["Social needs fell more, and reported child health improved more", "Social needs fell in both arms equally, but child health improved only in the intervention arm", "Social needs fell in the intervention arm, with no difference in any health measure", "Both arms improved on health status, but only the control arm's social needs changed"],
+            correctIndex: 0,
+            explanation: "Needs changed -0.39 versus +0.22 (P < .001); caregiver-reported child health changed -0.36 versus -0.12 (P < .001).",
+            sourceLessonSlug: "adapting-the-plan",
+          },
+          {
+            prompt: "What is an active control, and why does it matter here?",
+            options: ["A real alternative rather than nothing", "A group receiving the intervention later, so every participant eventually benefits from it", "A group whose outcomes are measured but who receive no contact from the research team", "A comparison drawn from routine records rather than from randomly assigned participants"],
+            correctIndex: 0,
+            explanation: "It makes the observed difference harder to explain away as attention or expectation.",
+            sourceLessonSlug: "adapting-the-plan",
+          },
+          {
+            prompt: "Which claim would overclaim the Gottlieb trial?",
+            options: ["That mentioning a food bank improves blood pressure", "That screening for social needs and connecting families to help reduced their reported needs", "That caregiver-reported child health improved more in the arm receiving navigation", "That the effect was measured at four months in a pediatric safety-net population"],
+            correctIndex: 0,
+            explanation: "It is four months, caregiver-reported health status, pediatric safety-net, and navigation by trained staff rather than coaching.",
+            sourceLessonSlug: "adapting-the-plan",
+          },
+          {
+            prompt: "What is the scope translation of that trial for a coach?",
+            options: ["Screen informally, connect rather than navigate", "Administer the same screening instrument the trial used, then refer every positive result", "Deliver navigation directly, since the trial shows it works and coaches have the contact time", "Avoid the topic, since the evidence comes from navigators rather than from coaches"],
+            correctIndex: 0,
+            explanation: "Asking in the flow of a conversation and naming a concrete resource are in scope. Eligibility work and advocacy are not.",
+            sourceLessonSlug: "adapting-the-plan",
+          },
+          {
+            prompt: "A client does not want their circumstances discussed. What do you do?",
+            options: ["Drop it and adapt to what you can see", "Explain why the information would improve the plan, then ask once more", "Note it as resistance and return to it when the relationship is more established", "Refer them, since a plan built without context cannot be responsibly designed"],
+            correctIndex: 0,
+            explanation: "Pressing is a power move dressed as concern. Leave the door open.",
+            sourceLessonSlug: "adapting-the-plan",
+          },
+          {
+            prompt: "What is a 'silent cost'?",
+            options: ["An unstated burden that decides adherence", "A financial cost of a plan that the client is embarrassed to raise with the coach", "A cost that appears only after several weeks, once the initial enthusiasm has faded", "The opportunity cost of the activity the plan displaces from the client's week"],
+            correctIndex: 0,
+            explanation: "Most often travel time, and it decides adherence without ever being discussed.",
+            sourceLessonSlug: "adapting-the-plan",
+          },
+          {
+            prompt: "What does 'shrink the unit' borrow from WELL-99?",
+            options: ["The minimum version, defined before the worst week", "The monthly review, which converts what happened into what changes next", "The stop conditions, decided in advance for injury, illness, or crisis", "The capstone artefact, rerun a year later against the original protocol"],
+            correctIndex: 0,
+            explanation: "Every protocol in WELL-99 already requires a minimum version, and a constraint is exactly when it earns its place.",
+            sourceLessonSlug: "adapting-the-plan",
+          },
+          {
+            prompt: "What does 'screen informally' rule out?",
+            options: ["Administering an instrument", "Asking about a determinant more than once in a coaching relationship", "Recording anything the client says about their circumstances in your notes", "Raising the subject before the client has completed several sessions"],
+            correctIndex: 0,
+            explanation: "The question happens in the ordinary flow of a conversation, which is what keeps it inside a coach's scope.",
+            sourceLessonSlug: "adapting-the-plan",
+          },
+          {
+            prompt: "Why does the course call determinants a coaching variable rather than a policy topic?",
+            options: ["They decide whether an agreed action is possible", "Because coaches are often the only professional a client sees regularly enough to notice them", "Because the credential requires coaches to advocate on structural issues affecting clients", "Because most determinants can be modified within a normal coaching engagement"],
+            correctIndex: 0,
+            explanation: "That is the whole claim: they are variables you do not control that govern whether the plan happens on a Tuesday.",
+            sourceLessonSlug: "plans-land-in-lives",
+          },
+          {
+            prompt: "Which pair of numbers belongs to Seligman's hyperlipidemia finding?",
+            options: ["1.30, CI 1.09 to 1.55", "1.21, with a confidence interval running from 1.04 to 1.41", "1.19, with a confidence interval running from 0.89 to 1.58", "1.20, with a confidence interval running from 1.04 to 1.38"],
+            correctIndex: 0,
+            explanation: "1.21 (1.04-1.41) was laboratory or examination evidence of hypertension; 1.20 (1.04-1.38) was self-reported hypertension.",
+            sourceLessonSlug: "plans-land-in-lives",
+          },
+          {
+            prompt: "What is the coach's narrow skill with determinants, in three steps?",
+            options: ["Notice, ask plainly, change the plan", "Screen, document, and refer to the appropriate community service for follow-up", "Assess severity, prioritize the largest determinant, and build the plan around it", "Educate the client about the determinant, then evoke their motivation to address it"],
+            correctIndex: 0,
+            explanation: "Deliberately narrow, because the alternatives are all somebody else's job.",
+            sourceLessonSlug: "plans-land-in-lives",
+          },
+          {
+            prompt: "A client with no car lives where everything requires driving. What is the adaptation?",
+            options: ["Move the location to somewhere they already go", "Help them research public transport routes to the facility you originally agreed on", "Shrink the plan until it can be completed entirely within their own home", "Treat transport as the primary goal and coach toward solving it first"],
+            correctIndex: 0,
+            explanation: "Travel is the most common silent cost, and the fix is a location already in the week rather than a new journey.",
+            sourceLessonSlug: "adapting-the-plan",
+          },
+          {
+            prompt: "What is the relationship between this course and the first nine?",
+            options: ["Those assumed the person could act on the plan", "Those covered the science, and this one covers the interpersonal skills that deliver it", "Those were written from research dossiers, and this one from the competency handbook only", "Those addressed individual clients, and this one addresses populations and communities"],
+            correctIndex: 0,
+            explanation: "Which is usually false. This course is the part of coaching where the plan meets the conditions of an actual life.",
+            sourceLessonSlug: "plans-land-in-lives",
+          },
+          {
+            prompt: "What kind of evidence is the Seligman finding, and what follows?",
+            options: ["Cross-sectional and adjusted, so association not causation", "A randomized trial, so the association can be read as a causal effect of food insecurity", "A meta-analysis of cohorts, so the pooled estimate is more reliable than any single study", "A case series, so the numbers describe the sample and do not generalize at all"],
+            correctIndex: 0,
+            explanation: "It is NHANES data with named adjustments, which makes it a coaching-relevant hazard rather than a demonstrated mechanism.",
+            sourceLessonSlug: "plans-land-in-lives",
+          },
+          {
+            prompt: "What does the lesson say about raising a determinant the client has not raised?",
+            options: ["Do not, and do not present it as a discovery", "Raise it once early, so the client knows the subject is available to them", "Raise it only if it appears in a validated screening instrument you administered", "Raise it whenever the evidence suggests it is likely given their circumstances"],
+            correctIndex: 0,
+            explanation: "It sits alongside not diagnosing poverty and not case-managing, in the list of things this skill is not.",
+            sourceLessonSlug: "plans-land-in-lives",
+          },
+          {
+            prompt: "Why does the honesty requirement come with a self-efficacy argument?",
+            options: ["Because the alternative teaches a false lesson about the client", "Because self-efficacy is the outcome the coaching relationship is contracted to improve", "Because clients with high self-efficacy report their barriers more accurately at intake", "Because self-efficacy measures predict which barriers a client will manage to overcome"],
+            correctIndex: 0,
+            explanation: "Unnamed barriers get attributed to character, and repeated failure at an impossible task lowers the belief that effort works.",
+            sourceLessonSlug: "supports-and-immovables",
+          },
+          {
+            prompt: "Which question finds structure a client has not reported?",
+            options: ["What is already in your week?", "What would you need to add in order to make this plan realistic?", "What has worked for you in previous attempts at a change like this one?", "What resources does your community offer that you have not yet tried?"],
+            correctIndex: 0,
+            explanation: "Asking what exists rather than what should be added is the difference between an asset hunt and a prescription.",
+            sourceLessonSlug: "supports-and-immovables",
+          },
+          {
+            prompt: "Which referral fits a dominant determinant?",
+            options: ["A benefits navigator or community health worker", "A physician, since the determinant will eventually present as a clinical problem", "A behavioral therapist, to address the distress the circumstances are producing", "A different coach with more experience in the client's particular circumstances"],
+            correctIndex: 0,
+            explanation: "Or a social worker or patient advocate. Same discipline as every other referral in the program.",
+            sourceLessonSlug: "supports-and-immovables",
+          },
+          {
+            prompt: "What does the phrase 'possible on a Tuesday' capture?",
+            options: ["Whether the agreed action can actually happen", "Whether the client has scheduled the action on a specific and consistent weekday", "Whether the plan survives the midweek dip in motivation most clients experience", "Whether the action fits a working day rather than depending on the weekend"],
+            correctIndex: 0,
+            explanation: "It is the operational test the determinant framing exists to make askable.",
+            sourceLessonSlug: "plans-land-in-lives",
+          },
+          {
+            prompt: "Two clients miss the same plan. One lacks childcare; one lost interest. What differs?",
+            options: ["One is a logistics problem, one a motivation problem", "One requires a referral out of coaching, and the other requires a revised plan", "One is a scope issue for the coach, and the other is within ordinary coaching practice", "One will resolve without intervention, and the other requires a change of goal"],
+            correctIndex: 0,
+            explanation: "The separating question is whether the action was possible in the weeks it did not happen. The techniques are entirely different.",
+            sourceLessonSlug: "plans-land-in-lives",
+          },
+          {
+            prompt: "What is the risk of an extended, sympathetic acknowledgment of a barrier?",
+            options: ["It leaves the plan unchanged, which is designing through", "It signals to the client that the coach considers their situation hopeless and unfixable", "It uses session time that would be better spent on the parts the client can control", "It invites disclosure the coach has no scope to hold, which is a separate error"],
+            correctIndex: 0,
+            explanation: "Recognition without redesign is the sympathetic caveat version, and it produces plans that work only in easy weeks.",
+            sourceLessonSlug: "supports-and-immovables",
+          },
+          {
+            prompt: "Which detail makes the Gottlieb result harder to dismiss?",
+            options: ["The comparison arm was active, not nothing", "The trial ran for four months, which is long enough for behavioral effects to appear", "The outcome was caregiver-reported, so it reflects what families actually experienced", "The sample spanned two hospitals, which makes the finding less site-specific"],
+            correctIndex: 0,
+            explanation: "An active control makes attention and expectation weaker explanations for the difference.",
+            sourceLessonSlug: "adapting-the-plan",
+          },
+          {
+            prompt: "Which is the honest one-line summary of the social-needs evidence?",
+            options: ["Asking and connecting changed the needs, and something downstream moved", "Addressing social needs improves clinical outcomes across populations and settings", "Social-needs interventions have no measurable effect once the control is made active", "The evidence is too thin to justify asking about social needs in a coaching context"],
+            correctIndex: 0,
+            explanation: "Narrower than the enthusiastic version and wider than the dismissive one, which is what the trial actually supports.",
+            sourceLessonSlug: "adapting-the-plan",
+          },
+          {
+            prompt: "A client has money but no time. Which adaptation applies?",
+            options: ["Change the currency toward money", "Shrink the unit until the plan fits into the fragments of time available", "Move the location to somewhere closer to their home or their workplace", "Borrow structure from a recurring commitment that already exists in the week"],
+            correctIndex: 0,
+            explanation: "Currency swaps run in both directions, and the point is to spend whichever resource the client actually has.",
+            sourceLessonSlug: "adapting-the-plan",
+          },
+          {
+            prompt: "What is the first thing that changes when a constraint is named?",
+            options: ["The attribution stops being about character", "The client becomes willing to discuss other constraints they had been concealing", "The coach gains permission to contact services on the client's behalf if needed", "The plan can be paused until the constraint has been resolved by someone else"],
+            correctIndex: 0,
+            explanation: "That is the clinical function of naming, and it happens before any redesign of the plan.",
+            sourceLessonSlug: "supports-and-immovables",
+          },
+          {
+            prompt: "Which sentence would this section refuse?",
+            options: ["'If she wanted it enough, she would find a way'", "'Her shift pattern makes an evening plan impossible, so the plan should assume mornings'", "'The store nearest her sells no fresh produce, which changes what we should agree on'", "'She has a workplace gym she has never mentioned, which is worth building around'"],
+            correctIndex: 0,
+            explanation: "It is silent attribution stated out loud, and every other option is the competency being applied.",
+            sourceLessonSlug: "supports-and-immovables",
+          },
+          {
+            prompt: "What is the 'asset hunt', and what makes it work?",
+            options: ["Looking for structure the client already has", "Compiling a directory of local services the client has not yet made use of", "Reviewing which previous programs the client completed and what those provided", "Assessing which of the six pillars the client is currently strongest in"],
+            correctIndex: 0,
+            explanation: "Most clients have more usable structure than they report, because nobody asked in the right way.",
+            sourceLessonSlug: "supports-and-immovables",
+          },
+          {
+            prompt: "Why does adapting a plan not mean lowering the ambition?",
+            options: ["A plan built for the conditions actually gets done", "Because the ambition is set by the client, and only the coach's suggestions are adapted", "Because adaptation changes the timeline rather than the target the client agreed to", "Because most constraints prove temporary once the client begins making progress"],
+            correctIndex: 0,
+            explanation: "The evidence in this section is that specific small adaptations survive hard conditions, which is the opposite of a shrug.",
+            sourceLessonSlug: "adapting-the-plan",
+          },
+        ],
+      },
+    },
     // ── Section 2 ────────────────────────────────────────────────────────────────────────────
     {
       slug: "who-can-use-your-materials",
-      title: "4 · A third of adults cannot use what you hand them",
+      title: "5 · A third of adults cannot use what you hand them",
       section: "Section 2 · Being understood",
       body: `The last section was about whether a plan is possible. This one is about whether it was understood, which is a different failure with the same symptom.
 
@@ -168,7 +579,7 @@ Berkman, N. D., Sheridan, S. L., Donahue, K. E., Halpern, D. J., & Crotty, K. (2
     },
     {
       slug: "teach-back",
-      title: "5 · Teach-back, and how well it actually works",
+      title: "6 · Teach-back, and how well it actually works",
       section: "Section 2 · Being understood",
       body: `The standard fix for the previous lesson is teach-back. It is worth learning, and worth quoting accurately rather than enthusiastically.
 
@@ -199,11 +610,11 @@ Dinh, T. T. H., Bonner, A., Clark, R., Ramsbotham, J., & Hines, S. (2016). The e
     },
     {
       slug: "numeracy-and-risk",
-      title: "6 · Numeracy: the half nobody adjusts for",
+      title: "7 · Numeracy: the half nobody adjusts for",
       section: "Section 2 · Being understood",
       body: `Competency 3.8.5 names health literacy **and numeracy**, and the second word gets dropped in practice. It should not be, because coaching is unusually numeric.
 
-**What a coach actually asks people to do with numbers.** Read a step count and compare it to a target. Interpret a percentage of body weight. Understand a risk reduction. Convert minutes per week into sessions. Read a food label per serving rather than per package. Judge whether a trend over four weeks means anything. Each of those is a quantitative task, and the NAAL evidence in lesson 4 measured exactly this kind of task.
+**What a coach actually asks people to do with numbers.** Read a step count and compare it to a target. Interpret a percentage of body weight. Understand a risk reduction. Convert minutes per week into sessions. Read a food label per serving rather than per package. Judge whether a trend over four weeks means anything. Each of those is a quantitative task, and the NAAL evidence in lesson 5 measured exactly this kind of task.
 
 **Where the misreads concentrate.** **Relative versus absolute risk**, the single largest one: "cuts your risk by 30 percent" sounds enormous and may mean a change from 1 percent to 0.7 percent. **Denominators**, where "1 in 8" and "12 percent" are the same fact and land completely differently. **Per-serving labels**, where the number of servings in the package is the whole trick. **Trends versus noise**, where four weeks of a bathroom scale is mostly water.
 
@@ -235,10 +646,407 @@ Dinh, T. T. H., Bonner, A., Clark, R., Ramsbotham, J., & Hines, S. (2016). The e
         },
       ],
     },
+    {
+      slug: "quiz-being-understood",
+      title: "8 · Knowledge check: being understood",
+      section: "Section 2 · Being understood",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "Give the 2003 NAAL health-literacy distribution.",
+            options: ["14 Below Basic, 22 Basic, 53 Intermediate, 12 Proficient", "22 Below Basic, 14 Basic, 52 Intermediate, and 12 percent Proficient", "10 Below Basic, 30 Basic, 48 Intermediate, and 12 percent Proficient", "14 Below Basic, 22 Basic, 43 Intermediate, and 21 percent Proficient"],
+            correctIndex: 0,
+            explanation: "So 36 percent at Basic or below, and only about one in eight reaching Proficient.",
+            sourceLessonSlug: "who-can-use-your-materials",
+          },
+          {
+            prompt: "How was the 2003 health-literacy assessment administered?",
+            options: ["To more than 19,000 adults aged 16 and over", "To a stratified sample of roughly 5,000 adults recruited through primary care clinics", "By self-report questionnaire mailed to a nationally representative household panel", "To about 8,500 adults aged 18 to 65 through the NHANES examination centers"],
+            correctIndex: 0,
+            explanation: "In households or prisons, measuring literacy directly through tasks rather than by self-report.",
+            sourceLessonSlug: "who-can-use-your-materials",
+          },
+          {
+            prompt: "What proportion of US adults scored at Basic or Below Basic?",
+            options: ["36 percent", "Roughly half, once the Intermediate band is included in the count", "About one in eight, which is the same share that reached the Proficient band", "Around 22 percent, which is the share scoring at the Basic level alone"],
+            correctIndex: 0,
+            explanation: "22 percent Basic plus 14 percent Below Basic. Only 12 percent reached Proficient.",
+            sourceLessonSlug: "who-can-use-your-materials",
+          },
+          {
+            prompt: "What kind of task defines the Proficient level?",
+            options: ["Computing a share of an insurance premium from a table", "Reading a short passage and identifying its single most important stated fact", "Following a set of written instructions in the order in which they are presented", "Recognizing common medical terms and matching them to their plain-language meanings"],
+            correctIndex: 0,
+            explanation: "Which is roughly the level most health handouts are written for, and only 12 percent reached it.",
+            sourceLessonSlug: "who-can-use-your-materials",
+          },
+          {
+            prompt: "What does Below Basic mean in this assessment?",
+            options: ["Locating one easy piece of information in a short text", "Being unable to read connected prose in English at any measurable level of skill", "Reading fluently but being unable to apply health information to a personal decision", "Understanding spoken instructions but not written ones in a clinical context"],
+            correctIndex: 0,
+            explanation: "Basic adds simple documents and simple inference. Neither reaches the level most materials assume.",
+            sourceLessonSlug: "who-can-use-your-materials",
+          },
+          {
+            prompt: "Why can a coach not treat health literacy as a clinical problem?",
+            options: ["Coaching runs almost entirely on language", "Because coaches see clients more frequently than clinicians and can reinforce written material", "Because the competency framework assigns literacy assessment to the coach rather than the clinician", "Because clinical settings measure literacy formally while coaching settings never can"],
+            correctIndex: 0,
+            explanation: "Agreements, plans, numbers, instructions, tracking. And the materials are typically written unreviewed by someone who reads for a living.",
+            sourceLessonSlug: "who-can-use-your-materials",
+          },
+          {
+            prompt: "How many studies were in the Berkman review, and what quality?",
+            options: ["96 good- or fair-quality studies", "Twelve studies of a single technique across chronic-disease populations", "47 studies covering 8,533 participants in group and individual arms", "492 studies with a combined total of 87,418 participants"],
+            correctIndex: 0,
+            explanation: "Reported across 111 articles, updating a 2004 review.",
+            sourceLessonSlug: "who-can-use-your-materials",
+          },
+          {
+            prompt: "What was low health literacy consistently associated with?",
+            options: ["More hospitalizations and more emergency care", "Lower medication costs, because fewer prescriptions were filled and fewer refills requested", "Higher rates of preventive screening, because clients sought reassurance more often", "Shorter consultations, because clinicians simplified their explanations accordingly"],
+            correctIndex: 0,
+            explanation: "Plus lower receipt of mammography and influenza vaccine, poorer ability to demonstrate taking medications appropriately, and poorer health status.",
+            sourceLessonSlug: "who-can-use-your-materials",
+          },
+          {
+            prompt: "What kind of evidence is the Berkman association?",
+            options: ["Observational, so confounding applies", "Randomized, so the association can be read as a causal effect of literacy on outcomes", "Mechanistic, since the pathway from literacy to hospitalization has been demonstrated", "Ecological, since it compares populations rather than measuring individual literacy"],
+            correctIndex: 0,
+            explanation: "It is a marker of real difficulty, not a proven causal chain, and the same caution the program applies elsewhere applies here.",
+            sourceLessonSlug: "who-can-use-your-materials",
+          },
+          {
+            prompt: "What does competency 3.8.5 require?",
+            options: ["Adjusting the coaching approach", "Assessing each client's literacy level with a validated screening instrument at intake", "Providing written material at a specified reading grade level for every client", "Referring clients with low literacy to a health-literacy specialist for support"],
+            correctIndex: 0,
+            explanation: "Considering how health literacy and numeracy impact the client's health, then changing the approach. Same operational verb as 3.9.9.",
+            sourceLessonSlug: "who-can-use-your-materials",
+          },
+          {
+            prompt: "Why should a coach not infer literacy from how a client presents?",
+            options: ["It is task-specific and situational", "Because doing so would breach the confidentiality terms of the coaching agreement", "Because the measured levels apply to populations and never to any individual person", "Because a client's presentation reflects their confidence rather than their comprehension"],
+            correctIndex: 0,
+            explanation: "A physician can be lost about a condition they have never had; someone with no diploma can be expert on a disease they have managed for twenty years.",
+            sourceLessonSlug: "who-can-use-your-materials",
+          },
+          {
+            prompt: "What is the correct response to the literacy evidence?",
+            options: ["Make everything usable by default", "Screen each client early so effort can be concentrated where it is needed most", "Provide two versions of each material and let the client choose between them", "Deliver everything verbally, since written material is the source of the problem"],
+            correctIndex: 0,
+            explanation: "Rather than guessing who needs it, which is the route to condescension and to getting it wrong.",
+            sourceLessonSlug: "who-can-use-your-materials",
+          },
+          {
+            prompt: "What is health literacy, as measured here?",
+            options: ["Task performance in obtaining and using health information", "A self-rated measure of confidence in understanding medical instructions and forms", "The number of years of formal education a person completed before leaving school", "The ability to read at or above a specified grade level on standardized reading tests"],
+            correctIndex: 0,
+            explanation: "The assessment measured directly through tasks, unlike indirect measures relying on self-report and subjective evaluation.",
+            sourceLessonSlug: "who-can-use-your-materials",
+          },
+          {
+            prompt: "What replaces 'does that make sense?' in teach-back?",
+            options: ["Asking the client to say the plan back", "Asking whether the client has any questions before the session moves on to the next item", "Asking the client to rate their confidence in following the plan from one to ten", "Asking the client to read the written plan aloud so errors become audible"],
+            correctIndex: 0,
+            explanation: "In their own words, framed so a gap is your failure. If the version that comes back is wrong, re-explain differently and ask again.",
+            sourceLessonSlug: "teach-back",
+          },
+          {
+            prompt: "Why does the framing carry the technique?",
+            options: ["It makes an honest answer safe", "Because it establishes the coach's expertise before the client is asked to respond", "Because it slows the conversation enough for the client to consolidate what was said", "Because it satisfies the documentation requirement that comprehension was checked"],
+            correctIndex: 0,
+            explanation: "If a gap belongs to the coach's explanation, the client can reveal it without being wrong.",
+            sourceLessonSlug: "teach-back",
+          },
+          {
+            prompt: "What do 'does that make sense' and 'tell me what you'll do' each test?",
+            options: ["Politeness, and recall", "Comprehension, and commitment to the plan that was agreed in the session", "Confidence, and the client's ability to prioritize among competing actions", "Attention, and whether the client was listening rather than thinking ahead"],
+            correctIndex: 0,
+            explanation: "Only teach-back tests comprehension, which is why neither substitute works.",
+            sourceLessonSlug: "teach-back",
+          },
+          {
+            prompt: "How many studies were in the teach-back review?",
+            options: ["Twelve", "Twenty-one, of which every one met the review's inclusion criteria", "Ninety-six good- or fair-quality studies reported across 111 articles", "Forty-seven studies covering a total of 8,533 participants"],
+            correctIndex: 0,
+            explanation: "Twelve of 21 articles retrieved in full met the inclusion criteria.",
+            sourceLessonSlug: "teach-back",
+          },
+          {
+            prompt: "What did the teach-back review find about readmissions?",
+            options: ["Five studies found reductions, not always significant", "Five studies found consistent and statistically significant reductions in readmission", "No study examined readmission, which is the review's main acknowledged limitation", "Readmissions rose slightly, which the review attributed to better symptom recognition"],
+            correctIndex: 0,
+            explanation: "The review's own phrase. It is the exact sentence that stops 'teach-back cuts readmissions' from being sayable.",
+            sourceLessonSlug: "teach-back",
+          },
+          {
+            prompt: "What did the teach-back review find on quality of life?",
+            options: ["No improvement in heart failure, P = 0.59", "A significant improvement in heart failure patients at six-month follow-up", "Improvement in diabetes but not in heart failure or in respiratory disease", "It was not measured in any of the twelve included studies"],
+            correctIndex: 0,
+            explanation: "One study examined it, and there was limited evidence overall on quality of life or knowledge retention.",
+            sourceLessonSlug: "teach-back",
+          },
+          {
+            prompt: "Which teach-back findings were positive and significant?",
+            options: ["Adherence in type 2 diabetes, and self-efficacy in two studies", "Readmission reduction across five studies, and disease-specific knowledge in four", "Quality of life in heart failure, and knowledge retention at long-term follow-up", "Hospitalization rates and mortality, in the two largest included trials"],
+            correctIndex: 0,
+            explanation: "Adherence to medication and diet at P < 0.001, and self-efficacy at P = 0.0026 and P < 0.001. Four studies confirmed improved disease-specific knowledge.",
+            sourceLessonSlug: "teach-back",
+          },
+          {
+            prompt: "What is the honest verdict on teach-back?",
+            options: ["Cheap and low-risk, on a small and inconsistent base", "Well established across large randomized trials, with reliable effects on hard outcomes", "Unsupported by evidence, and used mainly because it feels respectful to clients", "Effective for knowledge but harmful for self-efficacy in clients with low literacy"],
+            correctIndex: 0,
+            explanation: "Consistent knowledge and self-efficacy signals, inconsistent hard-outcome signals. A reason to use it, not a reason to sell it.",
+            sourceLessonSlug: "teach-back",
+          },
+          {
+            prompt: "What is 'chunk and check'?",
+            options: ["Two or three items, then a teach-back", "Breaking the plan into weekly blocks and reviewing each block at the next session", "Checking comprehension at the start and again at the end of every session", "Splitting written material into sections with a summary box after each one"],
+            correctIndex: 0,
+            explanation: "Rather than a monologue followed by a quiz, which loses the early items before the check arrives.",
+            sourceLessonSlug: "teach-back",
+          },
+          {
+            prompt: "Whose words should the written plan use?",
+            options: ["The client's, from their teach-back", "The coach's, since precision matters more than familiarity when a plan is recorded", "A standard template's, so plans stay consistent and comparable across clients", "Whichever version is shorter, since brevity aids recall more than phrasing does"],
+            correctIndex: 0,
+            explanation: "The sentence they generated is the one they will remember.",
+            sourceLessonSlug: "teach-back",
+          },
+          {
+            prompt: "What does plain language mean concretely?",
+            options: ["Short sentences, everyday words, action first", "Avoiding all technical terms, and defining any that cannot be avoided in a glossary", "Writing at or below a sixth-grade reading level as measured by a readability formula", "Using bullet points rather than paragraphs and keeping any document to one page"],
+            correctIndex: 0,
+            explanation: "One idea at a time, with the action stated before the explanation.",
+            sourceLessonSlug: "teach-back",
+          },
+          {
+            prompt: "What awkward moment does teach-back convert into a routine step?",
+            options: ["Suspecting the client did not follow what you said", "Having to correct a client who has misremembered a previous session's agreement", "Realizing mid-session that the plan you proposed is beyond the client's means", "Asking whether the client completed the actions they agreed to last time"],
+            correctIndex: 0,
+            explanation: "It costs thirty seconds and blames nobody, which is why it survives repeated use.",
+            sourceLessonSlug: "teach-back",
+          },
+          {
+            prompt: "Which claim overstates the teach-back evidence?",
+            options: ["'Teach-back cuts readmissions'", "'Teach-back improved adherence in one type 2 diabetes study at P less than 0.001'", "'Teach-back showed positive effects that were not always statistically significant'", "'The evidence on quality of life and knowledge retention is limited'"],
+            correctIndex: 0,
+            explanation: "Five studies found reductions in readmission or hospitalization, but the review says these were not always statistically significant.",
+            sourceLessonSlug: "teach-back",
+          },
+          {
+            prompt: "What is numeracy, in this competency?",
+            options: ["The quantitative half of health literacy", "The client's confidence in performing arithmetic without a calculator or assistance", "The ability to keep accurate records of a tracked behavior over several weeks", "A separate construct from health literacy, assessed with different instruments"],
+            correctIndex: 0,
+            explanation: "Covering percentages, risk, denominators, labels, and trends. Competency 3.8.5 names both words, and the second gets dropped.",
+            sourceLessonSlug: "numeracy-and-risk",
+          },
+          {
+            prompt: "Which quantitative tasks does coaching routinely require?",
+            options: ["Comparing a step count to a target, and reading a label", "Calculating energy balance and estimating basal metabolic rate from a formula", "Interpreting laboratory values against reference ranges provided by a clinician", "Converting between metric and imperial units for weight and distance measures"],
+            correctIndex: 0,
+            explanation: "Plus interpreting a percentage of body weight, understanding a risk reduction, converting minutes into sessions, and judging a four-week trend.",
+            sourceLessonSlug: "numeracy-and-risk",
+          },
+          {
+            prompt: "What is the single largest numeracy misread?",
+            options: ["Relative versus absolute risk", "Confusing the median with the mean when a distribution is skewed by outliers", "Reading a confidence interval as a range of plausible individual outcomes", "Treating a correlation coefficient as a percentage of variation explained"],
+            correctIndex: 0,
+            explanation: "'Cuts your risk by 30 percent' sounds enormous and may mean a change from 1 percent to 0.7 percent.",
+            sourceLessonSlug: "numeracy-and-risk",
+          },
+          {
+            prompt: "What is a natural frequency?",
+            options: ["A risk given as counts out of a fixed group", "The number of times per week a behavior occurs without deliberate scheduling", "A rate expressed per unit of time rather than per unit of exposure or dose", "The background rate of an outcome in a population before any intervention"],
+            correctIndex: 0,
+            explanation: "'About 3 people in 100 instead of 4 in 100' rather than 'a 25 percent reduction'.",
+            sourceLessonSlug: "numeracy-and-risk",
+          },
+          {
+            prompt: "What is the denominator problem?",
+            options: ["'1 in 8' and '12 percent' land differently", "Percentages become unreliable when the underlying group is smaller than a hundred", "Clients cannot convert between rates expressed per day, per week, and per month", "The denominator is usually omitted from health material, leaving the rate meaningless"],
+            correctIndex: 0,
+            explanation: "They are the same fact. The fix is to keep one denominator across a conversation.",
+            sourceLessonSlug: "numeracy-and-risk",
+          },
+          {
+            prompt: "What is the trick in a per-serving label?",
+            options: ["The number of servings in the package", "The rounding rules that allow small amounts to be reported as zero on the panel", "The difference between the listed serving size and a realistic portion for an adult", "The order of ingredients, which reflects weight rather than nutritional importance"],
+            correctIndex: 0,
+            explanation: "It is a multiplication most people never perform, which turns the whole panel into a misread.",
+            sourceLessonSlug: "numeracy-and-risk",
+          },
+          {
+            prompt: "What is wrong with four weeks of bathroom-scale data?",
+            options: ["It is mostly water", "It is too short to detect a change of the size a behavior program produces", "Home scales are not calibrated, so the absolute values are unreliable", "Daily weighing produces measurement-induced anxiety in most clients who try it"],
+            correctIndex: 0,
+            explanation: "Which makes trend-versus-noise the fourth misread, and a reason to prefer behavioral markers.",
+            sourceLessonSlug: "numeracy-and-risk",
+          },
+          {
+            prompt: "Name the free fixes for numeracy problems.",
+            options: ["Absolute numbers, one denominator, direction before number", "Larger print, simpler fonts, and color coding for good and bad ranges", "Weekly rather than daily measurement, and a graph instead of a table of values", "A calculator, a worked example, and a written formula the client can reuse"],
+            correctIndex: 0,
+            explanation: "Plus counts rather than percentages for anything tracked, and saying when a number is genuinely uncertain rather than rounding to false precision.",
+            sourceLessonSlug: "numeracy-and-risk",
+          },
+          {
+            prompt: "What is the actual numeracy adaptation?",
+            options: ["Change what the plan runs on", "Explain the arithmetic more slowly and check understanding with a worked example", "Provide the calculations pre-computed so the client only has to read the result", "Reduce the number of metrics tracked from several down to a single primary one"],
+            correctIndex: 0,
+            explanation: "Behavioral markers instead of computed ones. 'Did the walk happen?' is a yes or no; a step-trend comparison is a computation and a noise judgment.",
+            sourceLessonSlug: "numeracy-and-risk",
+          },
+          {
+            prompt: "Why is 'explain it better' the wrong adaptation?",
+            options: ["It leaves the arithmetic test in place", "Because repeated explanation signals to the client that the coach doubts their ability", "Because explanation consumes session time that would be better spent on the behavior", "Because comprehension of numbers cannot be improved within a coaching relationship"],
+            correctIndex: 0,
+            explanation: "The behavior is the point. The arithmetic was never the point, and it sits between the client and the behavior.",
+            sourceLessonSlug: "numeracy-and-risk",
+          },
+          {
+            prompt: "Which WELL-99 argument does the numeracy lesson strengthen?",
+            options: ["Behavioral metrics beat capacity metrics for steering", "The minimum version should be defined before the worst plausible day arrives", "Stop conditions should be decided in advance rather than improvised in a crisis", "The monthly review does more across decades than any measurement device"],
+            correctIndex: 0,
+            explanation: "For a client with low numeracy the argument is twice as strong, because the computed metric adds a test the behavioral one does not.",
+            sourceLessonSlug: "numeracy-and-risk",
+          },
+          {
+            prompt: "What is the caution attached to this whole section?",
+            options: ["None of it is dumbing anything down", "It applies only to clients who have disclosed difficulty with written material", "It should not be used with clients who hold professional or clinical qualifications", "It risks slowing the session enough that the agreed plan does not get made"],
+            correctIndex: 0,
+            explanation: "Treating it that way is the fastest route to condescension. It removes an unnecessary cognitive test from between the client and the behavior.",
+            sourceLessonSlug: "numeracy-and-risk",
+          },
+          {
+            prompt: "A client tracks 'did the walk happen'. What has that removed?",
+            options: ["A computation, a comparison, and a noise judgment", "The need to own or wear any measurement device during the walk itself", "The temptation to compare their progress against other clients' results", "The requirement to record anything at all between coaching sessions"],
+            correctIndex: 0,
+            explanation: "Which is what a weekly step-trend comparison against baseline actually asks a person to do.",
+            sourceLessonSlug: "numeracy-and-risk",
+          },
+          {
+            prompt: "Why state the direction before the number?",
+            options: ["So the number lands in a frame", "So the client can stop listening once they have heard whether the news is good", "Because numbers presented first are more likely to be misheard or transposed", "Because the direction is the only part most clients will remember afterwards"],
+            correctIndex: 0,
+            explanation: "A number with no frame gets assigned one by the listener, usually the wrong one.",
+            sourceLessonSlug: "numeracy-and-risk",
+          },
+          {
+            prompt: "Which is the better phrasing of a risk?",
+            options: ["'3 in 100 instead of 4 in 100'", "'A 25 percent relative reduction in the risk of the primary outcome'", "'Your risk drops by a quarter compared with people who do not do this'", "'A statistically significant reduction with a P value below the conventional threshold'"],
+            correctIndex: 0,
+            explanation: "Natural frequencies with one denominator. The other three are the relative-risk misread in three different costumes.",
+            sourceLessonSlug: "numeracy-and-risk",
+          },
+          {
+            prompt: "What does 'usable by default' commit a coach to?",
+            options: ["Designing every material for the lower bands", "Offering to read any document aloud to clients who prefer that format", "Testing every material with a readability formula before it is used", "Providing a plain-language summary alongside the full technical version"],
+            correctIndex: 0,
+            explanation: "Rather than screening to find out who needs it, which is guessing dressed as assessment.",
+            sourceLessonSlug: "who-can-use-your-materials",
+          },
+          {
+            prompt: "Why does the lesson call literacy 'situational'?",
+            options: ["A person can be expert in one condition and lost in another", "Because performance varies with how much sleep and stress the person had that day", "Because reading ability declines with age independently of education level", "Because assessment scores depend heavily on the setting the test is given in"],
+            correctIndex: 0,
+            explanation: "It is task-specific, which is exactly what makes it impossible to infer from someone's education or occupation.",
+            sourceLessonSlug: "who-can-use-your-materials",
+          },
+          {
+            prompt: "What is the relationship between Sections 1 and 2 of this course?",
+            options: ["Possible, then understood: same symptom, different failures", "Section 1 covers the client's context and Section 2 covers the coach's assumptions", "Section 1 is about barriers and Section 2 is about the tools for removing them", "Section 1 applies at intake and Section 2 applies throughout the engagement"],
+            correctIndex: 0,
+            explanation: "A missed action can mean the plan was impossible or that it was never understood, and the two need different responses.",
+            sourceLessonSlug: "who-can-use-your-materials",
+          },
+          {
+            prompt: "A client agrees readily and then does something different. What might Section 2 suggest?",
+            options: ["The plan was never understood as you meant it", "The client agreed in the session to avoid an uncomfortable disagreement", "The plan was understood but became impossible during the week", "The client's motivation was extrinsic and faded once the session ended"],
+            correctIndex: 0,
+            explanation: "Which is why teach-back exists: 'does that make sense?' returns yes regardless, and only a restatement reveals the gap.",
+            sourceLessonSlug: "teach-back",
+          },
+          {
+            prompt: "What does the Berkman review's number of hospitalizations finding license?",
+            options: ["Treating low literacy as a marker worth adapting for", "Telling a client that improving their literacy will reduce their hospital admissions", "Screening clients for literacy to predict who will need more intensive support", "Concluding that literacy interventions reduce healthcare costs at the system level"],
+            correctIndex: 0,
+            explanation: "Consistently associated, in observational data. It is a marker of real difficulty, not a demonstrated causal chain.",
+            sourceLessonSlug: "who-can-use-your-materials",
+          },
+          {
+            prompt: "Which of these is a numeracy task rather than a literacy task?",
+            options: ["Judging whether a four-week trend means anything", "Reading the instructions printed on the side of a medication package", "Understanding a written explanation of how a behavior affects a condition", "Following a sequence of steps described in a plan agreed with the coach"],
+            correctIndex: 0,
+            explanation: "Along with comparing a step count to a target, interpreting a percentage, and reading a label per serving.",
+            sourceLessonSlug: "numeracy-and-risk",
+          },
+          {
+            prompt: "What did the assessment do that self-report measures do not?",
+            options: ["Measure performance directly through tasks", "Cover adults living in institutions as well as those in private households", "Distinguish between reading ability and the ability to act on health information", "Produce scores comparable to earlier assessments of the same population"],
+            correctIndex: 0,
+            explanation: "Unlike indirect measures relying on self-reports and other subjective evaluations, which is why the distribution is credible.",
+            sourceLessonSlug: "who-can-use-your-materials",
+          },
+          {
+            prompt: "Which teach-back companion protects against the recency problem?",
+            options: ["Chunk and check", "Writing the plan down in the client's own words at the end", "Using plain language with the action stated before the explanation", "Framing any gap as the coach's failure rather than the client's"],
+            correctIndex: 0,
+            explanation: "A monologue followed by a single check loses everything said early, which is exactly what chunking prevents.",
+            sourceLessonSlug: "teach-back",
+          },
+          {
+            prompt: "How should a coach describe an uncertain number?",
+            options: ["Say it is uncertain", "Round it to a single figure so the client has something concrete to hold on to", "Give the confidence interval, so the client can judge the precision themselves", "Omit it, since an uncertain number is worse than no number in a coaching context"],
+            correctIndex: 0,
+            explanation: "Rather than rounding to a false precision, which is the same discipline WELL-99 asks for about effect sizes.",
+            sourceLessonSlug: "numeracy-and-risk",
+          },
+          {
+            prompt: "What is the fastest way to make the literacy adaptation condescending?",
+            options: ["Treat it as dumbing things down", "Apply it only to clients whose background suggests they will need it", "Provide simplified material without explaining why it looks different", "Check comprehension repeatedly within a single conversation"],
+            correctIndex: 0,
+            explanation: "The lesson names it directly. What is being removed is a cognitive test, not the content.",
+            sourceLessonSlug: "numeracy-and-risk",
+          },
+          {
+            prompt: "Who writes most of the material a coach hands out, and at what level?",
+            options: ["The coach, unreviewed, at their own natural level", "A professional body, at a level validated for general adult audiences", "A clinician, at the level used for patient education in medical settings", "A template provider, at a level chosen to satisfy accessibility requirements"],
+            correctIndex: 0,
+            explanation: "Which is whatever comes naturally to someone who reads for a living, and that is the problem the NAAL numbers describe.",
+            sourceLessonSlug: "who-can-use-your-materials",
+          },
+          {
+            prompt: "What is the ownership framing in a teach-back request?",
+            options: ["'I want to make sure I explained that well'", "'Let us check that we both have the same understanding of what was agreed'", "'It would help me to hear the plan back so I can note it down accurately'", "'Some of this is complicated, so tell me if any part was unclear to you'"],
+            correctIndex: 0,
+            explanation: "It places any gap in the coach's explanation, which is what makes an honest answer safe enough to give.",
+            sourceLessonSlug: "teach-back",
+          },
+          {
+            prompt: "How many articles reported the 96 studies in the Berkman review?",
+            options: ["111", "96, one article for each of the included studies in the review", "Twenty-two, of which nine also covered numeracy alongside health literacy", "Fifty-three publications describing forty-seven separate included studies"],
+            correctIndex: 0,
+            explanation: "98 articles on health literacy, 22 on numeracy, and 9 on both.",
+            sourceLessonSlug: "who-can-use-your-materials",
+          },
+          {
+            prompt: "Why does the numeracy lesson say coaching is 'unusually numeric'?",
+            options: ["Almost every tracked thing is a number", "Because coaches are trained to use quantitative outcome measures in every session", "Because clients arrive expecting numerical targets and judge progress against them", "Because the evidence base a coach draws on is expressed entirely in effect sizes"],
+            correctIndex: 0,
+            explanation: "Steps, percentages, risk reductions, minutes converted to sessions, labels per serving, and trends over weeks.",
+            sourceLessonSlug: "numeracy-and-risk",
+          },
+        ],
+      },
+    },
     // ── Section 3 ────────────────────────────────────────────────────────────────────────────
     {
       slug: "cultural-humility",
-      title: "7 · Cultural humility, and why it replaced competence",
+      title: "9 · Cultural humility, and why it replaced competence",
       section: "Section 3 · The coach in the room",
       body: `The first two sections were about the client's conditions. This one is about yours, and it starts with a distinction that has a specific origin and a specific argument behind it.
 
@@ -269,7 +1077,7 @@ Tervalon, M., & Murray-García, J. (1998). Cultural humility versus cultural com
     },
     {
       slug: "power-in-the-room",
-      title: "8 · Power in the room, and how to lower it",
+      title: "10 · Power in the room, and how to lower it",
       section: "Section 3 · The coach in the room",
       body: `Two competencies in the handbook are about power, and they use unusually direct verbs: "recognize power and privilege imbalances" (1.2.2.2) and "notice and attempt to **neutralize** any power dynamics" (1.3.2.6).
 
@@ -301,7 +1109,7 @@ Tervalon, M., & Murray-García, J. (1998). Cultural humility versus cultural com
     },
     {
       slug: "implicit-bias-honestly",
-      title: "9 · Implicit bias, taught from the null results",
+      title: "11 · Implicit bias, taught from the null results",
       section: "Section 3 · The coach in the room",
       body: `**Scope note, stated first because it matters.** "Implicit bias" appears **zero times** in the 2026 NBHWC competency handbook. This lesson is not exam coverage and is not a credential requirement. It is here because BAM asked for it, and because a coach will meet the topic in every workplace training they ever attend. What follows is what the primary literature says, which is not what most of those trainings say.
 
@@ -352,7 +1160,7 @@ Lai, C. K., Skinner, A. L., Cooley, E., Murrar, S., Brauer, M., Devos, T., Calan
     },
     {
       slug: "discord-and-repair",
-      title: "10 · Discord, microaggressions, and the repair",
+      title: "12 · Discord, microaggressions, and the repair",
       section: "Section 3 · The coach in the room",
       body: `Competency 1.3.2.7 asks the coach to repair discord in the relationship, **including discord arising from microaggressions**. That word carries an active scientific dispute, and this course teaches the dispute rather than picking a side for you.
 
@@ -392,7 +1200,7 @@ Williams, M. T. (2020). Microaggressions: Clarification, evidence, and impact. *
     },
     {
       slug: "history-and-trauma",
-      title: "11 · History, marginalization, and the trauma boundary",
+      title: "13 · History, marginalization, and the trauma boundary",
       section: "Section 3 · The coach in the room",
       body: `Competency 1.2.2.1 asks the coach to understand the impact of diversity-related history, marginalization, and trauma. This is the lesson with the sharpest scope line in the course, so the line comes first.
 
@@ -426,7 +1234,7 @@ Substance Abuse and Mental Health Services Administration. (2014). *SAMHSA's con
     // ── Section 4 ────────────────────────────────────────────────────────────────────────────
     {
       slug: "the-coaching-agreement",
-      title: "12 · The agreement that should exist before any of this",
+      title: "15 · The agreement that should exist before any of this",
       section: "Section 4 · The agreement and the practice",
       body: `Competency 1.5.2 asks the coach to **co-create a coaching agreement**, and it is the largest single hole the review found: neither "coaching agreement" nor "informed consent" appeared anywhere in the other nine courses. Eleven courses of technique were built on top of a relationship nobody had defined.
 
@@ -446,7 +1254,7 @@ Substance Abuse and Mental Health Services Administration. (2014). *SAMHSA's con
 
 **What belongs in the agreement that the handbook list does not spell out.** **Scope**, in one plain sentence: what you do, what you do not do, and that you do not diagnose, treat, or interpret clinical measurements. **Confidentiality and its limits**, including the specific circumstances in which you would break it. **Records**: what you keep, where, for how long, and who can see it. And **the referral commitment**: that you will say so when something is outside your scope, which turns the referral from a rejection into a term the client already agreed to.
 
-**Where this connects to the rest of the course.** Every element above is a power lever. Fees, availability, cancellation, and duration all set the cost of the client saying no. Deciding them together, out loud, at the start, is the largest single thing a coach can do about the asymmetry in lesson 8.
+**Where this connects to the rest of the course.** Every element above is a power lever. Fees, availability, cancellation, and duration all set the cost of the client saying no. Deciding them together, out loud, at the start, is the largest single thing a coach can do about the asymmetry in lesson 10.
 
 :::reveal List the seven elements the handbook names for the coaching agreement. ||| Logistics, fees, scheduling, inclusion of others, and duration, plus feedback mechanisms and mutual fit.
 
@@ -460,9 +1268,9 @@ Substance Abuse and Mental Health Services Administration. (2014). *SAMHSA's con
     },
     {
       slug: "group-coaching",
-      title: "13 · Group coaching, and what group delivery buys",
+      title: "16 · Group coaching, and what group delivery buys",
       section: "Section 4 · The agreement and the practice",
-      body: `**Scope note, same as lesson 9.** "Group coaching" appears **zero times** in the 2026 NBHWC competency handbook. This is not credential coverage. It is here because BAM asked for it, and because group delivery is how most behavior-change work in the world is actually delivered.
+      body: `**Scope note, same as lesson 11.** "Group coaching" appears **zero times** in the 2026 NBHWC competency handbook. This is not credential coverage. It is here because BAM asked for it, and because group delivery is how most behavior-change work in the world is actually delivered.
 
 **The closest good evidence.** Group-based education for type 2 diabetes has been studied heavily, and the review to know covers 47 studies and 8,533 participants. Compared with usual care, waiting list, or **individual** education, group-based programs produced greater reductions in HbA1c at 6 to 10 months (mean difference 3 mmol/mol, 0.3 percent), at 12 to 14 months (4 mmol/mol, 0.3 percent), at 18 months (8 mmol/mol, 0.7 percent), and at 36 to 48 months (10 mmol/mol, 0.9 percent), **but not at 24 months**. Outcomes also favored group delivery for fasting blood glucose, body weight, waist circumference, triglycerides, and diabetes knowledge, though not at every time point. Interventions facilitated by a single discipline, a multidisciplinary team, or professionals with peer supporters beat **peer-led** interventions on HbA1c (Odgers-Jewell et al., 2017).
 
@@ -503,7 +1311,7 @@ Odgers-Jewell, K., Ball, L. E., Kelly, J. T., Isenring, E. A., Reidlinger, D. P.
     },
     {
       slug: "appreciative-inquiry",
-      title: "14 · Appreciative Inquiry, and an honest evidence label",
+      title: "17 · Appreciative Inquiry, and an honest evidence label",
       section: "Section 4 · The agreement and the practice",
       body: `The handbook's theory list names a **Positive Psychology Approach** (2.8) and **Appreciative Inquiry** (2.9). PERMA already appears in four WELL courses. Appreciative Inquiry appeared in none, so it gets its lesson, with a label on it.
 
@@ -531,7 +1339,7 @@ Odgers-Jewell, K., Ball, L. E., Kelly, J. T., Isenring, E. A., Reidlinger, D. P.
     },
     {
       slug: "putting-context-to-work",
-      title: "15 · Putting it to work, and what this course does not license",
+      title: "18 · Putting it to work, and what this course does not license",
       section: "Section 4 · The agreement and the practice",
       body: `Fourteen lessons, one job: making the rest of the program survive contact with an actual person in actual circumstances.
 
@@ -541,7 +1349,7 @@ Odgers-Jewell, K., Ball, L. E., Kelly, J. T., Isenring, E. A., Reidlinger, D. P.
 
 **What this course explicitly does not license.** It does not make you a social worker, a benefits navigator, a therapist, a trauma specialist, or a spokesperson for anyone's community. It does not license diagnosing a client's circumstances, raising a determinant they did not raise, or teaching implicit-bias content as though the workshop version were supported. It does not license claiming Appreciative Inquiry is proven, or teach-back cuts readmissions, or that a coach mentioning a resource improves a clinical outcome. Every one of those is a sentence this course's own sources refuse.
 
-**The two lessons that are not credential coverage, one final time.** Implicit bias (lesson 9) and group coaching (lesson 13) appear zero times in the 2026 handbook. They are in this course because they were asked for and because they are real parts of professional practice. They are taught from primary sources like everything else, which is why lesson 9 reads the way it does: the honest version of that literature is mostly null results, and a course that taught the workshop version instead would be doing exactly what this whole program was built to avoid.
+**The two lessons that are not credential coverage, one final time.** Implicit bias (lesson 11) and group coaching (lesson 16) appear zero times in the 2026 handbook. They are in this course because they were asked for and because they are real parts of professional practice. They are taught from primary sources like everything else, which is why lesson 11 reads the way it does: the honest version of that literature is mostly null results, and a course that taught the workshop version instead would be doing exactly what this whole program was built to avoid.
 
 **Where this sits relative to the credential.** These are the largest verified competency gaps that existed in the program after nine courses: 3.9.9, 3.8.3-3.8.5, 1.2.2.1-1.2.2.4, 1.3.2.6-1.3.2.7, 1.5.2, and 2.9. Covering them closes the gap between what the program taught and what the credential's own competency list requires. It does not confer the credential, and WELL-00 lesson 1 still governs: this is an independent study program, not affiliated with, endorsed by, or accredited by NASM or the NBHWC.
 
