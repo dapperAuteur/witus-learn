@@ -117,6 +117,12 @@ Ntoumanis, N., et al. (2020). A meta-analysis of self-determination theory-infor
 
 **The replication check.** A 2024 systematic review pooled the habit-formation studies that followed Lally and landed in the same place: study medians of 59 to 66 days, means of 106 to 154 days, and individual times ranging from 4 to 335 days, with habit-building interventions reliably increasing habit strength (Singh et al., 2024). Fourteen years of further data moved the honest answer not at all: about two months typically, enormous variation always, never 21 days.
 
+**The trial that tested the cue itself.** If the cue carries the habit, does the KIND of cue matter? Keller and colleagues ran the experiment: 192 adults aged 18 to 77 picked an everyday nutrition behavior and were randomly assigned to anchor it either to a daily routine ("after I brush my teeth") or to a clock time ("at 7 p.m."), then answered daily questionnaires for 84 days. Two findings, one reassuring and one instructive. The median time to peak automaticity among those who formed habits was **59 days**, independently landing where Lally did. And routine-based and time-based cues produced **no difference** in automaticity or plan enactment. What predicted automaticity was **repeated plan enactment** itself (Keller et al., 2021).
+
+Read the coaching instruction off that: stop optimizing the cue and protect the enactment streak. A coach can burn three sessions helping a client find the perfect anchor, and the trial says those sessions bought nothing that showing up eighty times would not have.
+
+**Why two clients on the same plan diverge.** A 12-week longitudinal study of physical-activity habit formation found habit strength rose overall but with substantial individual variability, so much that neither a linear nor a logarithmic growth model fit well at the group level. What did predict faster formation was **trait self-control** (McAlpine et al., 2026). The honest reading is narrow: this is one small study of 41 people, and it says individual self-regulatory capacity moderates the RATE of formation. It does not say clients low in self-control cannot form habits, and a coach who uses it that way has turned a moderator into a verdict.
+
 **What builds automaticity.** Consistent repetition of the same behavior in the same stable context. The cue does the heavy lifting: behaviors anchored to something that reliably happens ("after I park at work") outperform behaviors anchored to intentions ("in the afternoon sometime").
 
 **Coaching translation.** Help clients pick ONE behavior, anchor it to a stable daily cue, expect two to eight-plus months rather than three magic weeks, and pre-negotiate the missed day: "when you miss one, and you will, the plan is to resume at the next cue, not to restart or repent."
@@ -130,9 +136,16 @@ Ntoumanis, N., et al. (2020). A meta-analysis of self-determination theory-infor
 - **Context cue**: the stable, reliably occurring event a habit is anchored to; the cue, not willpower, carries a formed habit.
 - **Asymptotic curve**: fast early gains that flatten toward a plateau; the shape automaticity followed in Lally's data.
 - **Median**: the middle value of a distribution; the 66 days is a median, which matters because the 18-to-254-day range makes any single average misleading.
+- **Plan enactment**: actually performing the planned behavior at its cue; in Keller's trial the repeated enactment, not the type of cue, predicted automaticity.
+- **Routine-based versus time-based cue**: anchoring to an event that reliably happens versus to a clock time; randomized head to head, they performed the same.
+- **Moderator**: a variable that changes how fast or strongly an effect occurs without deciding whether it occurs; trait self-control moderates habit-formation rate.
 
 ## Sources
+Keller, J., Kwasnicka, D., Klaiber, P., Sichert, L., Lally, P., & Fleig, L. (2021). Habit formation following routine-based versus time-based cue planning: A randomized controlled trial. *British Journal of Health Psychology, 26*(3), 807-824. https://pubmed.ncbi.nlm.nih.gov/33405284/
+
 Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W., & Wardle, J. (2010). How are habits formed: Modelling habit formation in the real world. *European Journal of Social Psychology, 40*(6), 998-1009. https://onlinelibrary.wiley.com/doi/10.1002/ejsp.674
+
+McAlpine, T., Liddelow, C., Charlesworth, J., Mergelsberg, E., Green, A., Novoradovskaya, E., Franz, T., Haywood, D., Baughman, F. D., Breare, H., & Mullan, B. (2026). A longitudinal study examining physical activity habit formation. *Behavioral Sciences, 16*(4), 535. https://doi.org/10.3390/bs16040535
 
 Singh, B., Murphy, A., Maher, C., & Smith, A. E. (2024). Time to form a habit: A systematic review and meta-analysis of health behaviour habit formation and its determinants. *Healthcare, 12*(23), 2488. https://pmc.ncbi.nlm.nih.gov/articles/PMC11641623/`,
       recallContent: [
@@ -316,6 +329,851 @@ Oettingen, G. (2014). *Rethinking positive thinking: Inside the new science of m
             explanation:
               "Autonomy support means real choices plus rationale, so the change stays the client's. Prescription, pressure, and consequences push toward controlled motivation, which the maintenance data does not favor.",
             sourceLessonSlug: "self-determination-theory",
+          },
+          {
+            prompt: "What is this course's stated subject, in its own words?",
+            options: [
+              "The gap between knowing and doing, and the evidence for what actually closes it",
+              "The application of exercise science and nutrition knowledge to chronic-disease populations",
+              "The scope boundaries separating coaching from licensed clinical practice",
+              "The five wellness pillars, taught at the depth a board examination requires",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The knowing-doing gap. Scope is WELL-00's subject and the pillars belong to the later courses; this one is about the change craft itself.",
+            sourceLessonSlug: "why-knowledge-fails",
+          },
+          {
+            prompt: "Why does a course written for a certified trainer open by saying knowledge does not change behavior?",
+            options: [
+              "Because the trainer's knowledge is already in the room and the client still is not changing",
+              "Because trainers systematically overestimate how much their clients understand",
+              "Because behavior-change science contradicts much of what certifications teach",
+              "Because clients rarely retain technical explanations delivered during sessions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The premise is not that the knowledge is wrong or unretained. It is that the knowledge is present and insufficient, which is what identifies the missing layer.",
+            sourceLessonSlug: "why-knowledge-fails",
+          },
+          {
+            prompt: "How many randomized trials did the 2023 Boehmer meta-analysis pool, and in what population?",
+            options: [
+              "Thirty trials, in chronic illness care",
+              "Three hundred trials, across general adult populations",
+              "Fifteen trials, in adults with obesity specifically",
+              "Sixty trials, across both clinical and workplace wellness settings",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Thirty randomized trials of health and wellness coaching in chronic illness. The population matters when reading the result across to a general coaching practice.",
+            sourceLessonSlug: "why-knowledge-fails",
+          },
+          {
+            prompt: "What standardized mean difference did Boehmer et al. report for quality of life within three months?",
+            options: [
+              "0.62",
+              "0.22",
+              "1.05",
+              "0.38",
+            ],
+            correctIndex: 0,
+            explanation:
+              "SMD 0.62, which sits between moderate and large on this course's scale, and is the single largest number the meta-analysis produced.",
+            sourceLessonSlug: "why-knowledge-fails",
+          },
+          {
+            prompt: "Which outcome showed NO effect in the Boehmer meta-analysis?",
+            options: [
+              "Anxiety",
+              "Depression, which failed to separate from control at any timepoint",
+              "Self-efficacy, which moved only in the trials with the longest follow-up",
+              "Quality of life, which regressed to control by twelve months",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Anxiety showed no effect. Quality of life, self-efficacy, and depression all improved, depression out to twelve months.",
+            sourceLessonSlug: "why-knowledge-fails",
+          },
+          {
+            prompt: "How did Boehmer et al. grade the certainty of most of their evidence?",
+            options: [
+              "Low or very low",
+              "Moderate, with high certainty for the quality-of-life outcome",
+              "High for behavioral outcomes and low for psychological ones",
+              "Not graded, since certainty assessment applies only to clinical endpoints",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Mostly low or very low. The course quotes this alongside the effect sizes deliberately: an effect size without its certainty rating is half a finding.",
+            sourceLessonSlug: "why-knowledge-fails",
+          },
+          {
+            prompt: "Why does the course quote the meta-analysis rather than 'the brochure version'?",
+            options: [
+              "Because it is the field's own report card, and honesty about size is the program's posture",
+              "Because marketing claims are legally actionable if repeated by a coach",
+              "Because brochures omit the chronic-illness population the trials were run in",
+              "Because certification bodies require citation of primary literature in curricula",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the field's own report card. The program's stated posture is quoting it rather than the flattering version, which is the same rule WELL-00 set for every claim.",
+            sourceLessonSlug: "why-knowledge-fails",
+          },
+          {
+            prompt: "The course says small effects are not unimportant. What is its argument?",
+            options: [
+              "Small, reliable effects compound across months the way training adaptations do",
+              "Small effects in trials typically understate what happens in individual practice",
+              "Small effects are the largest achievable in any behavioral intervention",
+              "Small effects become large when several techniques are combined in one program",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Compounding over time, by analogy to training adaptations. The course does not claim trials understate reality or that stacking techniques multiplies effects.",
+            sourceLessonSlug: "why-knowledge-fails",
+          },
+          {
+            prompt: "Across how many tests has if-then planning replicated, per this lesson?",
+            options: [
+              "642",
+              "200",
+              "94",
+              "1,340",
+            ],
+            correctIndex: 0,
+            explanation:
+              "642 tests. The course names replication counts because replication, not plausibility, is what separates the techniques it teaches from the ones in the lore lesson.",
+            sourceLessonSlug: "why-knowledge-fails",
+          },
+          {
+            prompt: "Which four bodies of evidence does the lesson name as having replicated?",
+            options: [
+              "Motivational interviewing, if-then planning, need-supportive coaching, and habit formation",
+              "Motivational interviewing, stage-matching, visualization, and habit formation",
+              "Goal-setting theory, if-then planning, decisional balance, and self-monitoring",
+              "Need-supportive coaching, cognitive restructuring, if-then planning, and mental contrasting",
+            ],
+            correctIndex: 0,
+            explanation:
+              "MI across hundreds of trials, if-then planning across 642 tests, need-supportive coaching across dozens of interventions, and habit formation with real-world time courses. Stage-matching and visualization appear in the lore lesson instead.",
+            sourceLessonSlug: "why-knowledge-fails",
+          },
+          {
+            prompt: "Why does the course teach the techniques that did NOT replicate, by name?",
+            options: [
+              "Because a coach who cannot tell evidence from folklore sells folklore eventually",
+              "Because clients frequently arrive having tried them and need them debunked",
+              "Because certification examinations still test several of them",
+              "Because they remain useful when applied with sufficient fidelity",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The stated reason is self-protective: unnamed folklore gets taught by accident. The lore lesson exists so the coach can recognize their own.",
+            sourceLessonSlug: "why-knowledge-fails",
+          },
+          {
+            prompt: "On this course's scale, what does a standardized mean difference near 0.8 represent?",
+            options: [
+              "A large effect",
+              "A moderate effect",
+              "A small effect",
+              "An effect too large to be credible in behavioral research",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Near 0.2 small, near 0.5 moderate, near 0.8 large. Coaching's honest range mostly sits between 0.2 and 0.6, so 0.8 would be unusual rather than incredible.",
+            sourceLessonSlug: "why-knowledge-fails",
+          },
+          {
+            prompt: "What is 'evidence certainty,' and how does it differ from effect size?",
+            options: [
+              "How much the estimate can be trusted, downgraded for bias risk and inconsistency; a separate judgment from how big the effect is",
+              "The statistical significance of the effect, expressed as a confidence interval around the estimate",
+              "The number of trials contributing to a pooled estimate, which determines its precision",
+              "The proportion of trials showing an effect in the same direction as the pooled result",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Size and certainty are independent judgments. A large effect graded very low certainty and a small effect graded high certainty are different findings, and reporting one without the other misleads.",
+            sourceLessonSlug: "why-knowledge-fails",
+          },
+          {
+            prompt: "What is 'self-efficacy' as this course defines it?",
+            options: [
+              "A person's belief they can execute the behavior in question",
+              "A person's confidence that the behavior will produce the outcome they want",
+              "A person's history of successfully completing similar behaviors before",
+              "A person's stated commitment to a behavior at the end of a session",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Belief in one's own capability to execute. Belief that the behavior WORKS is outcome expectancy, a different construct, and past history and stated commitment are neither.",
+            sourceLessonSlug: "why-knowledge-fails",
+          },
+          {
+            prompt: "Why does this course prefer meta-analyses to single trials wherever they exist?",
+            options: [
+              "They pool trial results into one weighted estimate rather than resting on a single study's result",
+              "They are published in higher-impact journals and therefore reviewed more rigorously",
+              "They are more recent than the individual trials they summarize",
+              "They report effects in standardized units, which single trials do not",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Pooling into a weighted estimate is the reason. Journal prestige, recency, and unit reporting are not what gives a meta-analysis its authority.",
+            sourceLessonSlug: "why-knowledge-fails",
+          },
+          {
+            prompt: "Name the five stages of the transtheoretical model in order.",
+            options: [
+              "Precontemplation, contemplation, preparation, action, maintenance",
+              "Precontemplation, contemplation, commitment, action, maintenance",
+              "Awareness, contemplation, preparation, action, consolidation",
+              "Contemplation, preparation, initiation, action, maintenance",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Precontemplation, contemplation, preparation, action, maintenance. Commitment, awareness, initiation, and consolidation are not TTM stages.",
+            sourceLessonSlug: "readiness-and-stages",
+          },
+          {
+            prompt: "Which three constructs does TTM name as driving movement through the stages?",
+            options: [
+              "Processes of change, decisional balance, and self-efficacy",
+              "Autonomy, competence, and relatedness",
+              "Readiness, capability, and opportunity",
+              "Intention, planning, and environmental support",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Processes of change, decisional balance, and self-efficacy. Autonomy, competence, and relatedness belong to self-determination theory, a different model taught in the next lesson.",
+            sourceLessonSlug: "readiness-and-stages",
+          },
+          {
+            prompt: "What is TTM genuinely good for, per this lesson?",
+            options: [
+              "Reading readiness, and giving coaches a shared language for the difference between clients",
+              "Predicting which clients will succeed, so coaching effort can be allocated efficiently",
+              "Determining which techniques are forbidden at each point in the change process",
+              "Measuring how far a client has progressed toward a behavioral outcome",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Readiness reading and shared language. It is explicitly not a rulebook forbidding tools, and it stages readiness rather than measuring progress or predicting success.",
+            sourceLessonSlug: "readiness-and-stages",
+          },
+          {
+            prompt: "Why is TTM widely used across chronic-disease prevention?",
+            options: [
+              "Staging a population is quick and cheap",
+              "Its predictive validity outperforms competing behavioral models",
+              "It is the only model with an accompanying validated assessment instrument",
+              "Public-health funding requires a staged framework for intervention design",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Practical economics: staging a population is quick and cheap. Popularity here reflects operational convenience rather than superior predictive performance.",
+            sourceLessonSlug: "readiness-and-stages",
+          },
+          {
+            prompt: "What is the FIRST of the two contested parts of TTM this lesson names?",
+            options: [
+              "Whether the stages are truly discrete categories rather than cut-points on a continuous readiness dial",
+              "Whether the five stages appear in the same order across different health behaviors",
+              "Whether precontemplation can be reliably distinguished from active resistance",
+              "Whether maintenance is a stage at all or simply the absence of relapse",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Discreteness. The second contested part is whether stage-MATCHED interventions actually beat good unstaged ones.",
+            sourceLessonSlug: "readiness-and-stages",
+          },
+          {
+            prompt: "How does this program instruct you to use TTM?",
+            options: [
+              "As a readiness heuristic for choosing a conversation, never as a rulebook forbidding action strategies with a contemplator",
+              "As a staging instrument administered at intake and re-administered monthly",
+              "As a sequence the client must complete in order before action strategies begin",
+              "As a diagnostic that determines whether a client is suitable for coaching at all",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Heuristic, held loosely. The explicit prohibition is on treating it as a rulebook, since forbidding tools by stage outruns the evidence.",
+            sourceLessonSlug: "readiness-and-stages",
+          },
+          {
+            prompt: "How should a coach determine where a client sits, per this lesson?",
+            options: [
+              "Ask, in the client's own words",
+              "Administer the stages-of-change algorithm at the first session",
+              "Infer it from the client's behavior over the preceding month",
+              "Assess it against the decisional-balance ledger the client completes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Ask, in their words. That keeps the read client-centered and avoids the false precision an instrument would imply for a construct the lesson has just called contested.",
+            sourceLessonSlug: "readiness-and-stages",
+          },
+          {
+            prompt: "Where does the lesson say a conversation's center of gravity should sit at each point?",
+            options: [
+              "Exploring ambivalence early, planning and environment design late, relapse-proofing in maintenance",
+              "Planning early, exploring ambivalence in the middle, and goal review in maintenance",
+              "Education early, planning in the middle, and accountability throughout",
+              "Assessment early, prescription in the middle, and monitoring in maintenance",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Ambivalence, then planning and environment, then relapse-proofing. Note it shifts the conversation's CENTER of gravity rather than forbidding anything outside it.",
+            sourceLessonSlug: "readiness-and-stages",
+          },
+          {
+            prompt: "What is 'decisional balance'?",
+            options: [
+              "The client's running ledger of pros and cons of changing, which shifts across the stages",
+              "The equilibrium between a client's stated goals and their available time and resources",
+              "The coach's judgment about whether a client is ready to commit to action",
+              "The trade-off between speed of change and likelihood of maintaining it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The pros-and-cons ledger, one of the three constructs TTM says drives stage movement. It belongs to the client, not the coach.",
+            sourceLessonSlug: "readiness-and-stages",
+          },
+          {
+            prompt: "The lesson closes by saying clients are not obligated to do what?",
+            options: [
+              "Move through your diagram",
+              "Disclose their true stage when asked directly",
+              "Sustain change past the maintenance stage",
+              "Accept the conversation the model recommends for their stage",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Move through the diagram. It is the instruction to hold the model loosely, stated as a reminder about whose process it actually is.",
+            sourceLessonSlug: "readiness-and-stages",
+          },
+          {
+            prompt: "State the three psychological needs of self-determination theory with what each means.",
+            options: [
+              "Autonomy (the change is genuinely theirs), competence (they can see themselves succeeding), relatedness (they are connected to people who matter in it)",
+              "Autonomy (they work without supervision), competence (they have the necessary skills), relatedness (they have a supportive coach)",
+              "Agency (they choose the goal), mastery (they perform it well), belonging (they join a community around it)",
+              "Autonomy (they set their own schedule), confidence (they expect to succeed), connection (they report to someone regularly)",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Autonomy is ownership of the change, not independence from supervision. Competence is seeing oneself succeeding, not possessing skills. Relatedness is connection to people who matter in the change, not accountability check-ins.",
+            sourceLessonSlug: "self-determination-theory",
+          },
+          {
+            prompt: "Which two forms of motivation does SDT call autonomous, and what do they predict?",
+            options: [
+              "Intrinsic and identified regulation, which predict maintained health behavior",
+              "Intrinsic and introjected regulation, which predict short-term adherence",
+              "Identified and external regulation, which predict initial behavior change",
+              "Intrinsic and extrinsic regulation, which predict effort during supervised sessions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Intrinsic and identified regulation are the autonomous forms, and maintenance is what they predict. Introjected and external regulation sit on the controlled side.",
+            sourceLessonSlug: "self-determination-theory",
+          },
+          {
+            prompt: "What mediated the effects in the Ntoumanis meta-analysis of SDT-informed health interventions?",
+            options: [
+              "Autonomous motivation and perceived competence",
+              "Relatedness to the coach and session frequency",
+              "Baseline readiness and self-reported goal importance",
+              "Intervention duration and practitioner training level",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Autonomous motivation and perceived competence, which is what makes the finding mechanism-consistent rather than merely positive: the theory's proposed pathway is the one that carried the effect.",
+            sourceLessonSlug: "self-determination-theory",
+          },
+          {
+            prompt: "What warning does the SDT literature carry about programs using the label?",
+            options: [
+              "Programs claiming SDT without rigorously operationalizing need support can show null effects",
+              "Programs using SDT with clinical populations show effects opposite to those intended",
+              "Programs combining SDT with other frameworks dilute the effect below detectability",
+              "Programs applying SDT without a validated motivation questionnaire cannot demonstrate effects",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Null effects when need support is not rigorously operationalized. The lesson's phrasing is worth keeping: the theory is a mechanism, not a magic word.",
+            sourceLessonSlug: "self-determination-theory",
+          },
+          {
+            prompt: "What does competence support sound like in practice?",
+            options: [
+              "Right-sized challenges and progress made visible",
+              "Detailed technical explanation of why the protocol works",
+              "Reassurance that the client is capable of anything they commit to",
+              "Comparison of the client's results against population benchmarks",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Right-sized challenge plus visible progress. Reassurance is not evidence of capability, and benchmark comparison can undermine competence rather than support it.",
+            sourceLessonSlug: "self-determination-theory",
+          },
+          {
+            prompt: "What does relatedness support include, beyond the coach's own regard?",
+            options: [
+              "Recruiting the client's actual relationships into the change",
+              "Enrolling the client in a group program alongside similar clients",
+              "Increasing session frequency so contact is more regular",
+              "Connecting the client with a peer who has completed the same change",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The client's real relationships, not manufactured ones. The coach's genuine, non-contingent regard is the other half.",
+            sourceLessonSlug: "self-determination-theory",
+          },
+          {
+            prompt: "The lesson says every later tool in the course is what?",
+            options: [
+              "Need support with better tooling, motivational interviewing especially",
+              "A structured application of the transtheoretical model's stage logic",
+              "A behavior-change technique drawn from the same taxonomy",
+              "A method for increasing self-efficacy through graded mastery experience",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That framing is why SDT sits in lesson 3: it supplies the mechanism the later techniques, MI above all, are running on.",
+            sourceLessonSlug: "self-determination-theory",
+          },
+          {
+            prompt: "What is 'need support' as a defined term?",
+            options: [
+              "Coaching behavior that feeds the three needs; the active ingredient SDT interventions run on",
+              "The provision of resources a client requires to perform the behavior",
+              "The coach's assessment of which of the three needs is most deficient",
+              "The social support a client receives from people outside the coaching relationship",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It names the coach's behavior, and it is the thing label-only programs skip. Resources, assessment, and outside support are all different things.",
+            sourceLessonSlug: "self-determination-theory",
+          },
+          {
+            prompt: "How was Lally et al.'s 2010 habit study conducted?",
+            options: [
+              "Ninety-six volunteers each tied one new behavior to a daily cue and tracked automaticity daily for twelve weeks",
+              "Ninety-six volunteers were randomized to habit training or education and assessed at three and six months",
+              "Two hundred volunteers logged three new behaviors each over a six-month observation period",
+              "Ninety-six volunteers self-reported habit strength retrospectively after one year of practice",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One behavior each, anchored to a daily cue, with daily automaticity tracking over twelve weeks. The daily measurement is what allowed per-person curves to be modeled.",
+            sourceLessonSlug: "how-habits-form",
+          },
+          {
+            prompt: "What shape did automaticity follow in Lally's data?",
+            options: [
+              "An asymptotic curve: fast gains early, flattening toward a plateau",
+              "A linear increase sustained evenly across the twelve weeks",
+              "A step function, with automaticity jumping once a threshold of repetitions was passed",
+              "An S-shaped curve, slow at first and accelerating after several weeks",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Asymptotic: the early repetitions buy the most, and returns diminish as the behavior approaches second nature. That shape is why the plateau is defined at 95 percent rather than at a fixed day count.",
+            sourceLessonSlug: "how-habits-form",
+          },
+          {
+            prompt: "What was the RANGE of modeled times to 95 percent of automaticity plateau in Lally's data?",
+            options: [
+              "18 to 254 days",
+              "21 to 66 days",
+              "30 to 120 days",
+              "59 to 335 days",
+            ],
+            correctIndex: 0,
+            explanation:
+              "18 to 254 days around a median of 66. The range is the number that matters in a coaching conversation, because it is what makes any single average misleading.",
+            sourceLessonSlug: "how-habits-form",
+          },
+          {
+            prompt: "Where does the '21 days' figure actually come from?",
+            options: [
+              "A 1960s self-help observation, with no support in this data",
+              "An early Lally pilot study later superseded by the twelve-week trial",
+              "A military training protocol adopted into behavioral literature",
+              "A misreading of the 18-day low end of Lally's observed range",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A 1960s self-help observation. It is not a misread data point or an early study; it never had the evidence behind it that its ubiquity implies.",
+            sourceLessonSlug: "how-habits-form",
+          },
+          {
+            prompt: "What did the 2024 Singh systematic review find for individual habit-formation times?",
+            options: [
+              "4 to 335 days, with study medians of 59 to 66 and means of 106 to 154",
+              "18 to 254 days, with study medians of 59 to 66 and means of 84 to 120",
+              "21 to 200 days, with study medians of 45 to 60 and means of 90 to 130",
+              "4 to 335 days, with study medians of 21 to 66 and means of 66 to 154",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Individual times 4 to 335 days, medians 59 to 66, means 106 to 154. Fourteen years past Lally, the honest answer barely moved: about two months typically, enormous variation always.",
+            sourceLessonSlug: "how-habits-form",
+          },
+          {
+            prompt: "Keller and colleagues randomized participants to two kinds of cue. Which two?",
+            options: [
+              "A daily routine versus a clock time",
+              "A location versus a preceding behavior",
+              "A self-chosen cue versus an assigned cue",
+              "A morning cue versus an evening cue",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Routine-based ('after I brush my teeth') against time-based ('at 7 p.m.'). It is the experiment that tests whether cue TYPE matters, given that the cue is known to carry the habit.",
+            sourceLessonSlug: "how-habits-form",
+          },
+          {
+            prompt: "What did Keller et al. find when routine-based and time-based cues were compared head to head?",
+            options: [
+              "No difference in automaticity or plan enactment between the two cue types",
+              "Routine-based cues produced substantially faster automaticity than time-based cues",
+              "Time-based cues produced faster automaticity but lower long-term maintenance",
+              "Routine-based cues worked better for morning behaviors and time-based for evening ones",
+            ],
+            correctIndex: 0,
+            explanation:
+              "No difference. The trial was designed to detect an advantage and did not find one, which is why the coaching instruction is to stop optimizing the cue.",
+            sourceLessonSlug: "how-habits-form",
+          },
+          {
+            prompt: "What DID predict automaticity in Keller's trial?",
+            options: [
+              "Repeated plan enactment",
+              "The stability of the chosen cue across the 84 days",
+              "Participants' baseline motivation for the chosen behavior",
+              "The simplicity of the behavior participants selected",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Repeated plan enactment: actually doing the thing at its cue, over and over. That is the finding the coaching translation rests on.",
+            sourceLessonSlug: "how-habits-form",
+          },
+          {
+            prompt: "What median time to peak automaticity did Keller's trial produce, and why does the course highlight it?",
+            options: [
+              "59 days, independently landing where Lally did",
+              "66 days, exactly replicating Lally's median in a different behavior domain",
+              "84 days, matching the trial's full observation window",
+              "42 days, notably faster than Lally's median in a nutrition-specific sample",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Fifty-nine days, from a different sample and a different behavior domain than Lally's, which is what makes it an independent landing rather than a repetition.",
+            sourceLessonSlug: "how-habits-form",
+          },
+          {
+            prompt: "What coaching instruction does the course read off Keller's result?",
+            options: [
+              "Stop optimizing the cue and protect the enactment streak",
+              "Assign a routine-based cue by default, since it generalizes better across clients",
+              "Choose the cue collaboratively over several sessions, since ownership drives enactment",
+              "Switch cue types if automaticity has not risen within the first month",
+            ],
+            correctIndex: 0,
+            explanation:
+              "If cue type does not matter and enactment does, sessions spent hunting the perfect anchor buy nothing that showing up eighty times would not have.",
+            sourceLessonSlug: "how-habits-form",
+          },
+          {
+            prompt: "What did the 12-week longitudinal study of physical-activity habit formation find about growth models?",
+            options: [
+              "Neither a linear nor a logarithmic model fit well at the group level, given substantial individual variability",
+              "A logarithmic model fit well, confirming the asymptotic shape at the group level",
+              "A linear model fit best, contradicting the asymptotic curve Lally described",
+              "Growth models were not tested, since the sample was too small to support them",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Neither fit at the group level. Individual variability was large enough that the average curve described nobody well, which is itself the finding.",
+            sourceLessonSlug: "how-habits-form",
+          },
+          {
+            prompt: "What predicted faster habit-strength formation in the McAlpine study?",
+            options: [
+              "Higher trait self-control",
+              "Higher baseline physical-activity history",
+              "Greater cue exposure across the twelve weeks",
+              "Stronger reported intention at baseline",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Trait self-control. Behavior history and demographics were collected too, but self-control is the variable that came out significantly related to formation rate.",
+            sourceLessonSlug: "how-habits-form",
+          },
+          {
+            prompt: "The course gives a narrow reading of the self-control finding. What is the misuse it warns against?",
+            options: [
+              "Treating a moderator of formation RATE as a verdict that low-self-control clients cannot form habits",
+              "Treating a single small study as sufficient basis for any coaching decision",
+              "Treating trait self-control as modifiable when the evidence shows it is fixed",
+              "Treating self-control as interchangeable with self-efficacy in coaching conversations",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A moderator changes how fast or strongly an effect occurs; it does not decide whether it occurs. Reading it as a verdict converts a rate finding into a exclusion criterion the data does not support.",
+            sourceLessonSlug: "how-habits-form",
+          },
+          {
+            prompt: "How large was the McAlpine sample, and why does the course say so?",
+            options: [
+              "Forty-one participants, stated because the honest reading of a small study is a narrow one",
+              "Four hundred and one participants, stated to establish the finding's precision",
+              "Ninety-six participants, matching Lally's sample for comparability",
+              "One hundred and ninety-two participants, matching Keller's trial",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Forty-one. The course states sample sizes so the weight a finding carries is visible, which is the same reason it prints certainty ratings beside effect sizes.",
+            sourceLessonSlug: "how-habits-form",
+          },
+          {
+            prompt: "What is a 'moderator' as this lesson defines it?",
+            options: [
+              "A variable that changes how fast or strongly an effect occurs, without deciding whether it occurs",
+              "A variable through which an effect travels, explaining why it happens",
+              "A variable controlled for in analysis to remove confounding",
+              "A variable measured at baseline to establish group equivalence",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Moderators change the size or speed of an effect. A variable an effect travels THROUGH is a mediator, which is what autonomous motivation was in the SDT lesson.",
+            sourceLessonSlug: "how-habits-form",
+          },
+          {
+            prompt: "What is 'plan enactment'?",
+            options: [
+              "Actually performing the planned behavior at its cue",
+              "Committing to a written plan at the end of a coaching session",
+              "The moment a plan becomes automatic and no longer requires deliberation",
+              "Revising a plan after an obstacle interrupts it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Doing the thing, at the cue, on the day. Keller's finding is that the repetition of this, rather than the cue's design, is what builds automaticity.",
+            sourceLessonSlug: "how-habits-form",
+          },
+          {
+            prompt: "What does the course say builds automaticity?",
+            options: [
+              "Consistent repetition of the same behavior in the same stable context",
+              "Sustained motivation across the formation period, refreshed at each session",
+              "Progressive increase in the behavior's difficulty as capability grows",
+              "Frequent variation of the context, so the behavior generalizes across settings",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Same behavior, same stable context, repeatedly. Varying the context is the opposite of the mechanism, and difficulty progression belongs to training design rather than habit formation.",
+            sourceLessonSlug: "how-habits-form",
+          },
+          {
+            prompt: "Why does 'after I park at work' outperform 'in the afternoon sometime'?",
+            options: [
+              "A reliable event is a stable cue, while a vague window forces deliberation every day",
+              "Location-based cues are more salient than time-based cues in general",
+              "Morning and midday cues consistently outperform afternoon cues",
+              "Workplace cues carry more social accountability than home cues",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Stability versus vagueness, not location versus time. Keller's trial showed a SPECIFIC clock time performs as well as a routine; it is the vagueness of 'sometime' that defeats the mechanism.",
+            sourceLessonSlug: "how-habits-form",
+          },
+          {
+            prompt: "What four things does the lesson's coaching translation prescribe?",
+            options: [
+              "One behavior, a stable daily cue, an expectation of two to eight-plus months, and a pre-negotiated missed day",
+              "Three behaviors, varied cues, an expectation of two months, and weekly progress review",
+              "One behavior, a self-chosen cue, an expectation of 66 days, and a restart rule after any lapse",
+              "Two behaviors, stable cues, an expectation of twelve weeks, and daily self-monitoring",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One behavior, stable cue, honest time horizon, and the missed day negotiated in advance. A restart rule is exactly what the Lally finding argues against.",
+            sourceLessonSlug: "how-habits-form",
+          },
+          {
+            prompt: "How should the missed day be pre-negotiated, in the lesson's own words?",
+            options: [
+              "When you miss one, and you will, resume at the next cue, not restart or repent",
+              "When you miss one, add an extra repetition the following day to compensate",
+              "When you miss one, review whether the cue is still the right anchor",
+              "When you miss two in a row, restart the count from the beginning",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Resume at the next cue. Compensating, re-auditing the cue, and restarting all treat a single miss as meaningful, which the data says it is not. Abandonment is the actual failure mode.",
+            sourceLessonSlug: "how-habits-form",
+          },
+          {
+            prompt: "What instrument does the lesson name as measuring automaticity?",
+            options: [
+              "The Self-Report Habit Index",
+              "The Behavioral Automaticity Scale",
+              "The Habit Strength Questionnaire",
+              "The Routine Formation Inventory",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The Self-Report Habit Index. It appears in the automaticity vocabulary entry and is the family of measure the pooled habit reviews draw on.",
+            sourceLessonSlug: "how-habits-form",
+          },
+          {
+            prompt: "How many entries does the lore lesson contain, and what is each contrasted with?",
+            options: [
+              "Four, each contrasted with what holds up",
+              "Three, each contrasted with a superior technique from the same tradition",
+              "Five, each contrasted with the certification that still teaches it",
+              "Four, each contrasted with the trial that first tested it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Four entries: the 21-day claim, standalone visualization, brand-name MI without fidelity, and rigid stage-matching. Each is set against what the evidence does support.",
+            sourceLessonSlug: "the-lore-lesson",
+          },
+          {
+            prompt: "Why does the lore lesson say the 21-day claim persists?",
+            options: [
+              "21 days is a promise and 66-with-a-huge-range is a forecast, and coaches sell forecasts",
+              "It appears in several widely used certification textbooks",
+              "It is close enough to the observed lower bound to seem defensible",
+              "Clients prefer it and coaches avoid contradicting client expectations",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The promise-versus-forecast framing. The lesson's point is about the market pressure on claims, which is why it treats naming your own folklore as a professional duty.",
+            sourceLessonSlug: "the-lore-lesson",
+          },
+          {
+            prompt: "What physiological signal did Oettingen's research use to detect the effect of idealized positive fantasy?",
+            options: [
+              "Dampened systolic blood pressure responses, the body's energization signal",
+              "Reduced heart-rate variability, indicating parasympathetic withdrawal",
+              "Elevated salivary cortisol, indicating an anticipatory stress response",
+              "Slowed reaction time on a subsequent behavioral task",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Systolic blood pressure as an energization index. Positive fantasy without obstacles dampened it, which is the physiological form of the claim that fantasy can substitute for pursuit.",
+            sourceLessonSlug: "the-lore-lesson",
+          },
+          {
+            prompt: "What is the lesson's fix for visualization, and where is it taught?",
+            options: [
+              "Pair the imagining with obstacles, which is mental contrasting, the subject of lesson 17",
+              "Replace imagining with written goal-setting, taught in lesson 16",
+              "Limit imagining to outcomes already achieved once, taught in the habit lesson",
+              "Ban imagining entirely, since it competes with planning for the same resources",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Pair wish with obstacle. The lesson is explicit that the fix is not to ban imagining, and its memorable line is that a vision board without an obstacle is sedation.",
+            sourceLessonSlug: "the-lore-lesson",
+          },
+          {
+            prompt: "What does 'fidelity' mean in the context of MI's evidence?",
+            options: [
+              "How faithfully an intervention is delivered as tested, with trained practitioners and fidelity coding",
+              "How consistently a coach applies the same technique across different clients",
+              "How closely a client follows the plan agreed in session",
+              "How well an intervention's results replicate in a new population",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Delivery as tested. MI's meta-analytic support belongs to high-fidelity delivery, so a program borrowing the vocabulary without the discipline is not covered by that evidence.",
+            sourceLessonSlug: "the-lore-lesson",
+          },
+          {
+            prompt: "Which analogy does the lore lesson use for borrowing MI's vocabulary without its discipline?",
+            options: [
+              "Using two open questions is not MI, any more than owning a barbell is periodization",
+              "Using two open questions is not MI, any more than reading a recipe is cooking",
+              "Claiming MI without fidelity is like claiming a certification you never sat",
+              "Claiming MI without fidelity is like prescribing a drug without knowing the dose",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The barbell-and-periodization analogy, chosen because it lands for a reader who already holds a CPT: owning the equipment is not the method.",
+            sourceLessonSlug: "the-lore-lesson",
+          },
+          {
+            prompt: "What does the lore lesson identify as overreaching about rigid stage-matching?",
+            options: [
+              "'Never use action strategies with a contemplator' outruns evidence that supports reading readiness, not forbidding tools",
+              "It assumes clients can be staged accurately, which no instrument reliably achieves",
+              "It applies a population-level model to individual clients, which the model was never built for",
+              "It treats maintenance as an endpoint rather than an ongoing process",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The overreach is the prohibition. TTM's evidence supports reading readiness; it does not support banning strategies by stage, which is the rulebook use lesson 2 rejected.",
+            sourceLessonSlug: "the-lore-lesson",
+          },
+          {
+            prompt: "What is the pattern the lore lesson finds across all four entries?",
+            options: [
+              "The lore versions promise certainty and speed; the evidence offers ranges, conditions, and fidelity requirements",
+              "The lore versions are older; the evidence-backed versions emerged in the last decade",
+              "The lore versions are simpler to teach; the evidence-backed versions require formal training",
+              "The lore versions were tested and failed; the evidence-backed versions were never challenged",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Certainty and speed versus ranges, conditions, and fidelity. Age and teachability are not the discriminator, and several lore items were never rigorously tested at all.",
+            sourceLessonSlug: "the-lore-lesson",
+          },
+          {
+            prompt: "What is 'practitioner lore'?",
+            options: [
+              "Technique folklore that travels on promise rather than data; a coach who cannot name theirs teaches it by accident",
+              "Knowledge passed between practitioners that has not yet been formally studied",
+              "Techniques that worked in early trials but failed to replicate later",
+              "Client-facing simplifications of findings too technical to state precisely",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Folklore travelling on promise. The definition's second half is the operational point: naming your own is what stops you teaching it unawares.",
+            sourceLessonSlug: "the-lore-lesson",
+          },
+          {
+            prompt: "What is a 'positive fantasy' as this lesson defines it?",
+            options: [
+              "Vivid imagining of the desired future without its obstacles; pleasant, and capable of substituting for pursuit",
+              "Optimistic expectation that a goal will be achieved, which predicts persistence",
+              "A visualization rehearsing the steps of a behavior before performing it",
+              "A reframing technique replacing negative self-talk with encouraging statements",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The defining feature is the absence of obstacles. Rehearsing steps and reframing self-talk are different techniques, and optimistic expectancy is a distinct construct that behaves differently.",
+            sourceLessonSlug: "the-lore-lesson",
+          },
+          {
+            prompt: "A colleague pitches a technique as working for everyone, quickly, with no conditions. What does the lore lesson tell you?",
+            options: [
+              "The absence of conditions is itself the tell that it is lore rather than evidence",
+              "Ask which trials support it before accepting or rejecting the pitch",
+              "Test it with a single client before deciding whether to adopt it",
+              "Accept it provisionally, since absence of evidence is not evidence of absence",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson gives you a heuristic that works before you have read anything: evidence-backed techniques arrive with ranges, moderators, and fidelity requirements attached. A pitch with none is the pattern.",
+            sourceLessonSlug: "the-lore-lesson",
           },
         ],
       },
