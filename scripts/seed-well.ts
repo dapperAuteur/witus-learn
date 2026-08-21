@@ -25,6 +25,7 @@ import { WELL_RECOVERY_STRESS_COURSE } from "./data/well-recovery-stress-course"
 import { WELL_SLEEP_COURSE } from "./data/well-sleep-course";
 import { WELL_MENTAL_WELLBEING_COURSE } from "./data/well-mental-wellbeing-course";
 import { WELL_MOVEMENT_LONGEVITY_COURSE } from "./data/well-movement-longevity-course";
+import { WELL_CONTEXT_EQUITY_COURSE } from "./data/well-context-equity-course";
 import { WELL_CENTENARIAN_CAPSTONE_COURSE } from "./data/well-centenarian-capstone-course";
 
 const TARGET_SLUG = "learn-witus";
@@ -202,13 +203,30 @@ async function main() {
   await seedAuthoredCourse(db, {
     tenantId: tenant.id,
     instructorId: instructor.id,
+    slug: "well-context-equity",
+    course: WELL_CONTEXT_EQUITY_COURSE,
+    category: "Health & Longevity",
+    navigationMode: "linear",
+    seriesSlug: "well-wellness-coaching",
+    seriesTitle: "WELL: Wellness Coaching",
+    seriesOrder: 9,
+    seriesCode: "WELL",
+    seriesPosition: "08",
+    visibility: "private",
+    publishHoldReason: HOLD_REASON,
+    replaceLessons: true,
+  });
+
+  await seedAuthoredCourse(db, {
+    tenantId: tenant.id,
+    instructorId: instructor.id,
     slug: "well-centenarian-capstone",
     course: WELL_CENTENARIAN_CAPSTONE_COURSE,
     category: "Health & Longevity",
     navigationMode: "linear",
     seriesSlug: "well-wellness-coaching",
     seriesTitle: "WELL: Wellness Coaching",
-    seriesOrder: 9,
+    seriesOrder: 10,
     seriesCode: "WELL",
     seriesPosition: "99",
     visibility: "private",

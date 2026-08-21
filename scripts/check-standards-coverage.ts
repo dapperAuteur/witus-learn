@@ -61,6 +61,7 @@ const BACKLOG: Record<string, string> = {
   "well-sleep": "OUT OF SCOPE, adult professional education, private owner-only (plans/67)",
   "well-mental-wellbeing": "OUT OF SCOPE, adult professional education, private owner-only (plans/67)",
   "well-movement-longevity": "OUT OF SCOPE, adult professional education, private owner-only (plans/67)",
+  "well-context-equity": "OUT OF SCOPE, adult professional education, private owner-only (plans/67)",
   "well-centenarian-capstone": "OUT OF SCOPE, adult professional education, private owner-only (plans/67)",
   // Adult professional/consumer education. Like the sommelier entry above, this one is currently
   // INERT: `registered` below only matches the shorthand `{ slug: "..." }` form, and this course is
