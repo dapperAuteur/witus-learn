@@ -3338,7 +3338,7 @@ And one program-specific practice: you are the first client. Each course ends wi
             ],
             correctIndex: 0,
             explanation: "Guidelines are evidence-based resources from a nationally recognized authority, squarely inside scope as education. Grading a client against them converts education into judgment.",
-            sourceLessonSlug: "who-numbers-as-a-coach",
+            sourceLessonSlug: "what-a-wellness-coach-is",
           },
           {
             prompt: "What is the mock-exam week, mechanically?",

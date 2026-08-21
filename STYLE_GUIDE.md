@@ -73,6 +73,21 @@ Every customer-facing surface must pass before it can merge:
 
 ## 3. Content policy (BVC content rules are product features)
 
+- **A course plan states its method tier in its header.** `docs/course-method/README.md` defines
+  them: **Tier 0** applies to every course (the assessment spec below, `pnpm audit:course` before the
+  course is called done, an archive before a destructive rewrite); **Tier 1** adds a durable
+  five-section `dossier.md` so the research stops being ephemeral; **Tier 1-P** is for a course whose
+  source is a person rather than the literature; **Tier 2** adds owner-run deep research and an
+  adversarial pass on `pnpm gen:outline`, and is reserved for courses where a wrong sentence hurts
+  someone or costs money. Choose the tier when the plan is written; a tier chosen afterwards is a
+  rationalization.
+- **Assessment spec (Tier 0), written before authoring starts.** Section pool = `round(words / 35)`
+  clamped to 40-100, serving 5; final pools 40, serves 10, passes at 80; every question carries
+  `sourceLessonSlug`; every teaching section has its own quiz. Sizing by density rather than a flat
+  number is deliberate, because one question per 17 words of prose forces trivia and trivia is what
+  breaks the length-tell ratchet. Then **write the correct option SHORT and the distractors long and
+  specific**, with the qualifier in `explanation`, which no guard measures: that is what makes
+  `check-longest-option` pass by construction instead of by post-hoc trimming.
 - Every factual claim ties to a verified source; APA 7 in-line + `## Sources` bibliography.
 - **Lessons in the WELL program (and new courses going forward) carry a `## Vocabulary` block**
   above `## Sources` (or at the body's end when a lesson has no sources): 3-6 terms as

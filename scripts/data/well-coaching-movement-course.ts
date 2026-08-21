@@ -3492,7 +3492,7 @@ Yu, L., Yang, Y., Chen, Y., & Wang, Q. (2026). Do health coaching interventions 
             ],
             correctIndex: 0,
             explanation: "It relocates remembering from the person to the situation, which is the same delegation implementation intentions perform.",
-            sourceLessonSlug: "habit-design",
+            sourceLessonSlug: "what-maintains-movement",
           },
           {
             prompt: "Which claim about steps would this course refuse?",

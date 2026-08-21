@@ -22,76 +22,15 @@
  *     series does not need a shape, and coding one implies courses that do not exist.
  */
 
-import { readdirSync, readFileSync } from "node:fs";
+import { allSeedEntries, seedScriptFiles, type SeedEntry } from "./lib/seed-registry";
 import { isValidSeriesCode, parseSeriesPosition } from "../src/lib/series-code";
 
-interface Entry {
-  file: string;
-  slug: string;
-  seriesSlug: string | null;
-  seriesCode: string | null;
-  seriesPosition: string | null;
-  seriesTrack: string | null;
-}
-
-/** Pull every seedAuthoredCourse({...}) call out of the seed scripts by brace matching. A regex
- *  over the whole file would run past the end of a call into the next one. */
-function extractCalls(file: string): Entry[] {
-  const src = readFileSync(file, "utf8");
-  const consts = new Map<string, string>();
-  for (const m of src.matchAll(/^const\s+([A-Z_][A-Z0-9_]*)\s*=\s*"([^"]*)"/gm)) {
-    consts.set(m[1], m[2]);
-  }
-  const out: Entry[] = [];
-  let idx = 0;
-  for (;;) {
-    const at = src.indexOf("seedAuthoredCourse(", idx);
-    if (at === -1) break;
-    idx = at + 1;
-    const open = src.indexOf("{", at);
-    if (open === -1) continue;
-    let depth = 0;
-    let end = -1;
-    for (let i = open; i < src.length; i++) {
-      if (src[i] === "{") depth++;
-      else if (src[i] === "}") {
-        depth--;
-        if (depth === 0) {
-          end = i;
-          break;
-        }
-      }
-    }
-    if (end === -1) continue;
-    const body = src.slice(open, end);
-    const field = (name: string) => {
-      // A value is either a literal or a module-level const holding one (seed-sommelier.ts writes
-      // `seriesSlug: SERIES_SLUG`). Resolving the identifier matters: treating it as absent would
-      // report every course in that series as uncoded and the guard would pass on a real mistake.
-      const m = new RegExp(`\\b${name}:\\s*(?:"([^"]*)"|([A-Z_][A-Z0-9_]*))`).exec(body);
-      if (!m) return null;
-      if (m[1] != null) return m[1];
-      return consts.get(m[2]) ?? null;
-    };
-    const slug = field("slug");
-    if (!slug) continue;
-    out.push({
-      file,
-      slug,
-      seriesSlug: field("seriesSlug"),
-      seriesCode: field("seriesCode"),
-      seriesPosition: field("seriesPosition"),
-      seriesTrack: field("seriesTrack"),
-    });
-    idx = end;
-  }
-  return out;
-}
-
-const files = readdirSync("scripts")
-  .filter((f) => f.startsWith("seed-") && f.endsWith(".ts"))
-  .map((f) => `scripts/${f}`);
-const entries = files.flatMap(extractCalls);
+// The seed-script parser this guard used to carry lives in scripts/lib/seed-registry.ts now,
+// because audit-course and gen-outline need the same answer to "what courses exist, and where does
+// this slug's lesson data live?". Behaviour here is unchanged: same files, same fields, same brace
+// matching, still offline with no DATABASE_URL.
+const entries = allSeedEntries();
+const files = seedScriptFiles();
 const coded = entries.filter((e) => e.seriesCode != null || e.seriesPosition != null);
 const violations: string[] = [];
 
@@ -119,7 +58,7 @@ for (const e of coded) {
 }
 
 // Per-series checks.
-const bySeries = new Map<string, Entry[]>();
+const bySeries = new Map<string, SeedEntry[]>();
 for (const e of coded) {
   if (!e.seriesSlug) continue;
   const arr = bySeries.get(e.seriesSlug);
@@ -128,7 +67,7 @@ for (const e of coded) {
 }
 const prefixOwner = new Map<string, string>();
 for (const [series, arr] of bySeries) {
-  const prefixes = new Set(arr.map((e: Entry) => e.seriesCode));
+  const prefixes = new Set(arr.map((e: SeedEntry) => e.seriesCode));
   if (prefixes.size > 1) {
     violations.push(
       `series "${series}": uses more than one code prefix (${[...prefixes].join(", ")}); the prefix IS the series to a learner`,
@@ -168,7 +107,7 @@ for (const [series, arr] of bySeries) {
 const seriesCount = bySeries.size;
 const trackCount = new Set(
   coded
-    .map((e: Entry) => {
+    .map((e: SeedEntry) => {
       const p = parseSeriesPosition(e.seriesPosition);
       return p?.kind === "track" ? `${e.seriesSlug}:${p.letter}` : null;
     })

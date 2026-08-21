@@ -54,6 +54,8 @@
     "gen:pdfs": "tsx scripts/gen-pdfs.ts",
     "gen:citations": "tsx --env-file=.env.local scripts/gen-citations.ts",
     "gen:future-work": "tsx scripts/gen-future-work.ts",
+    "gen:outline": "tsx scripts/gen-outline.ts",
+    "audit:course": "tsx scripts/audit-course.ts",
     "gen:standards": "tsx scripts/gen-standards-index.ts",
     "gen:tpt-bundle-standards": "tsx scripts/gen-tpt-bundle-standards.ts",
     "tracker:show": "tsx --env-file=.env.local scripts/tracker-show.ts",
