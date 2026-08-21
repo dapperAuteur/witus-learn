@@ -454,6 +454,30 @@ number by hand genuinely IS the skill (a calculation, a unit conversion), set `c
 on the item, the explicit opt-out equivalent of `shuffleOptions: false`. Never set it on a year, a
 seat count, or a form number.
 
+### Measuring a course, and generating its outline
+
+Two on-demand tools, neither of them a build gate (`docs/course-method/README.md` explains why, and
+which tier of the method they belong to):
+
+```bash
+pnpm audit:course <slug>                # structural holes: a section with no quiz, a lesson no
+                                        #   question ever cites, a lesson assessed only in the final,
+                                        #   a review link pointing at no lesson
+pnpm audit:course --all                 # the whole catalog, one line each, findings tallied by kind
+pnpm audit:course <slug> --spec         # also check pools against the Tier-0 assessment spec
+pnpm audit:course <slug> --spec --strict  # exit 1 on any finding, for a course's own final commit
+pnpm gen:outline <slug>                 # the course as a structured outline, generated from the
+                                        #   committed data so it cannot drift from what is seeded
+pnpm gen:outline --series <seriesSlug>  # a whole series (this replaced gen-well-outline.ts)
+```
+
+`audit:course` exists because twelve green guards are not the same as a complete course: the nine
+WELL courses passed every one of them while all nine were missing their terminal-section quiz, 27
+lessons appeared only inside a final's pool, and one lesson had no question anywhere. A guard cannot
+see a hole it was not written to look for. `gen:outline` exists to feed an adversarial review pass
+something produced from the same modules the seeder reads, rather than a hand-written summary that
+has drifted.
+
 ## Future classes & features (`/admin/future`)
 
 Owner-only review surface for everything proposed but not yet built, the *She Did the Work* course
