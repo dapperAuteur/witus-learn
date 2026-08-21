@@ -690,6 +690,32 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     ],
     where: ["U.S. Geological Survey", "U.S. Army Corps of Engineers, Mississippi Valley Division"],
   },
+  // ── WELL-08 Context, Equity, and the Coaching Agreement ───────────────────────────────────────
+  {
+    key: "well08-appreciative-inquiry-health-coaching-evidence",
+    course: "well-context-equity",
+    lesson: "appreciative-inquiry",
+    quote:
+      "this program could not locate randomized evidence for it as a one-to-one health-coaching intervention comparable to the trials behind motivational interviewing",
+    title: "Appreciative Inquiry: is there trial evidence in one-to-one health coaching?",
+    severity: "medium",
+    question:
+      "Does randomized evidence exist for Appreciative Inquiry as a one-to-one health-coaching or health-behavior-change intervention, with a health or behavioral outcome, rather than as an organizational-development or team-level method? If it does, give the trial, the outcome, and the effect size.",
+    claim:
+      "The lesson teaches Appreciative Inquiry as a framing device with a plausible mechanism and a good fit to the rest of the program, and states explicitly that it is NOT an evidence-backed protocol, because no comparable randomized health-coaching evidence was located.",
+    stakes:
+      "The NBHWC competency list names Appreciative Inquiry (2.9), so a coach will meet it as though it were established. If good trial evidence exists, the lesson is under-claiming a technique the handbook expects and should say what the trials show. If it does not, the honest label stays and the lesson is the only place a learner will be told so. Either way the label should reflect what is actually there, which is the rule the whole curriculum runs on.",
+    needs: [
+      "A randomized or otherwise controlled trial with individual participants, not an organizational case study",
+      "The outcome measured and its effect size, so the lesson can quote it the way it quotes the MI trials",
+      "Or a definite negative: a systematic review reporting that no such trials exist",
+    ],
+    where: [
+      "PubMed and PsycINFO for Appreciative Inquiry with health coaching, behavior change, or self-management",
+      "The Cooperrider-associated literature, checking whether individual-level outcomes were ever measured",
+      "Any NBHWC-approved program's own reading list, which may cite the evidence the handbook relies on",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
