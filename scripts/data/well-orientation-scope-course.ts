@@ -145,6 +145,864 @@ National Board for Health & Wellness Coaching. (2026). *Program approval handboo
 National Board for Health & Wellness Coaching. (n.d.-b). *Exam eligibility requirements*. https://nbhwc.org/exam-eligibility-requirements/`,
     },
 
+    {
+      slug: "quiz-the-program",
+      title: "4 · Knowledge check: the program",
+      section: "Section 1 · The program",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "This program benchmarks itself against two organizations. What does it take from each?",
+            options: [
+              "Pillar coverage from the NASM CWC, and coaching-competency rigor from the NBHWC",
+              "Pillar coverage from the NBHWC, and examination methodology from the NASM CWC",
+              "Legal scope from the NASM CWC, and its continuing-education schedule from the NBHWC",
+              "Its ethics code from the NASM CWC, and its five wellness pillars from the NBHWC",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The union is deliberate: NASM's CWC supplies the five-pillar coverage map, and NBHWC supplies the coaching-competency rigor through its published content outline and scope of practice.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "Which five domains does the NASM CWC frame wellness around?",
+            options: [
+              "Movement, nutrition, physical recovery, sleep, and mental and emotional well-being",
+              "Movement, nutrition, hydration, sleep, and social connection across the lifespan",
+              "Cardiovascular fitness, strength, flexibility, body composition, and stress tolerance",
+              "Exercise, diet, supplementation, sleep hygiene, and mindfulness-based stress reduction",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The five pillars are movement, nutrition, physical recovery, sleep, and mental and emotional well-being. Hydration, supplementation, and body composition are not pillars in this framing.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "What does completing this program grant you from NASM or the NBHWC?",
+            options: [
+              "Nothing; it is an independent program not affiliated with, endorsed by, or accredited by either",
+              "Provisional candidacy toward the NBC-HWC, pending a logged practicum",
+              "Continuing-education credit that both organizations accept toward recertification",
+              "A recognized equivalency that shortens the NASM CWC examination requirement",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The affiliation statement is explicit: independent study program, no affiliation, no endorsement, no accreditation, no credential from either organization. Their names describe the scope of study only.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "NASM's own product page states which of the following about the CWC?",
+            options: [
+              "That it is a wellness credential and is not NCCA-accredited",
+              "That it is accredited by the NCCA under its health-coaching category",
+              "That it satisfies the NBHWC's approved-program requirement for exam eligibility",
+              "That it is recognized for licensure in states with dietetics practice acts",
+            ],
+            correctIndex: 0,
+            explanation:
+              "NASM states plainly that the CWC 'is a wellness credential and is not NCCA-accredited.' The course treats that candor as worth imitating, and as worth knowing when comparing credentials.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "What does 'dossier-first' name in this program's build method?",
+            options: [
+              "Research tools gather candidate sources, and only claims verified against primaries enter a lesson",
+              "Lessons are drafted first, then a matching bibliography is assembled to support them",
+              "Each course opens with a case file about one client followed across every pillar",
+              "Sources are ranked by citation count, and the highest-ranked become the lesson's spine",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Deep-research runs collect candidates into a dossier; every load-bearing claim is then checked against its primary source before it may enter a lesson. Drafting first and back-filling citations is the failure mode the method exists to prevent.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "In this program's vocabulary, what is a primary source?",
+            options: [
+              "The original document a claim rests on, rather than a summary of one",
+              "The most recent publication available on a topic, regardless of document type",
+              "Any peer-reviewed article, as distinct from a statute or an organization's own publication",
+              "The source a lesson cites first, with the remainder listed as supporting material",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A primary source is the original: a statute, a peer-reviewed paper, or a certifying body's own publication. Recency, ordering, and document type do not define it; being the original rather than a summary does.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "What happened to research claims that could not be verified against a primary source?",
+            options: [
+              "They were corrected, cut, or explicitly taught as contested",
+              "They were retained with a lower confidence rating shown beside the citation",
+              "They were moved into optional appendices so the core lessons stayed clean",
+              "They were kept where two independent research tools agreed on the wording",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Nothing enters a lesson on the strength of a search engine's summary. Unverifiable claims were corrected, cut, or taught as contested; agreement between two AI tools is not verification.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "Why does the program state that showing its corrections makes it more trustworthy, not less?",
+            options: [
+              "A curriculum that shows corrections is more trustworthy than one pretending it never needed any",
+              "Corrections demonstrate that the author consulted more sources than a typical curriculum",
+              "Regulators require published errata from any program describing statutory material",
+              "Showing corrections lets learners skip the lessons that were revised most recently",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The claim is about candor, not volume or compliance. Every curriculum needs corrections; only some admit it, and the admission is the trust signal.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "What is a contested claim in this program's usage?",
+            options: [
+              "A claim credible sources genuinely dispute, taught AS a dispute rather than resolved quietly",
+              "A claim the author personally doubts but includes for completeness",
+              "A claim that failed verification and was therefore removed from the lesson",
+              "A claim whose evidence is observational rather than drawn from randomized trials",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Contested means credible sources disagree. The program's rule is to teach the disagreement rather than pick a winner silently. Observational evidence is not automatically contested, and removed claims are not contested claims.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "Which prior knowledge does this program assume, and what does it therefore not re-teach?",
+            options: [
+              "CPT, CNC, and CES knowledge; it does not re-teach exercise science, program design, or nutrition fundamentals",
+              "An NBC-HWC board certification; it does not re-teach motivational interviewing or coaching structure",
+              "A graduate degree in a health field; it does not re-teach research methods or statistical inference",
+              "No prior credential at all; it teaches every pillar from first principles for a general audience",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It assumes NASM CPT, CNC, and CES. Where a pillar overlaps those certifications it teaches the COACHING of the pillar and points back to what the learner already knows for the content.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "Where a pillar overlaps a certification you already hold, what does the course teach instead of the content?",
+            options: [
+              "The coaching of that pillar: the conversation and the behavior change",
+              "An accelerated refresher of the content, compressed into a single summary lesson",
+              "The legal exposure specific to that pillar, with the science left entirely aside",
+              "A comparison of how each certifying body words the same underlying material",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Overlap is handled by shifting the level: the course teaches the conversation and the behavior change, and points back to the existing credential for the content itself.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "The program calls NBHWC's published content outline and scope of practice which of the following?",
+            options: [
+              "The closest thing this field has to a gold standard",
+              "One of several equivalent frameworks, chosen here for convenience",
+              "A legally binding standard in every state that licenses dietitians",
+              "An outdated framework retained only for historical comparison",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The wording matters: closest thing to a gold standard, not a legal standard and not one option among equals. NBHWC's documents are published, competency-based, and inspectable, which is why they anchor the program.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "Why does the program name NASM and NBHWC at all, given it grants neither credential?",
+            options: [
+              "To describe the scope of study, which is different from claiming the credential",
+              "To establish a partnership that permits the use of both organizations' materials",
+              "Because both organizations require attribution wherever their pillar names appear",
+              "To signal that the program's exams were calibrated against both bodies' pass rates",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Naming a benchmark honestly is different from claiming a credential, and the difference is stated everywhere it matters. There is no partnership, requirement, or calibration behind it.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "How does the program handle a claim it could not settle either way?",
+            options: [
+              "It teaches the claim as contested rather than asserting it",
+              "It omits the claim entirely so no learner encounters an open question",
+              "It asserts the more widely held position and footnotes the minority view",
+              "It defers to whichever certifying body has addressed the question most recently",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Unsettled claims are taught as contested. Omitting them hides the state of the evidence, and defaulting to the popular or most recent position is exactly the quiet winner-picking the rule forbids.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "A colleague says: 'Your program is basically the NASM CWC with extra reading.' What is the most accurate correction?",
+            options: [
+              "It is the union of CWC pillar coverage and NBHWC competency rigor, and it grants no credential at all",
+              "It is a strict superset of the CWC, so completing it covers everything the CWC examination does",
+              "It is the NBHWC approved-program curriculum, delivered asynchronously instead of live",
+              "It is an accredited alternative to the CWC that most employers now accept in its place",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two corrections are needed: the benchmark is a union of two organizations, not one, and no credential results. It is not a superset, not an approved program, and not accredited.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "Which of these would violate the program's own sourcing rule?",
+            options: [
+              "Stating a dose-response figure because two research tools reported the same number",
+              "Stating a statutory exemption after reading the section text in the state's code",
+              "Teaching a disputed effect size as disputed, with both positions named",
+              "Cutting a claim whose cited paper turned out not to support it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Agreement between research tools is not verification; both can inherit the same error. Reading the statute, teaching disputes as disputes, and cutting unsupported claims are all the rule working correctly.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "In the pillar vocabulary, 'physical recovery' is:",
+            options: [
+              "One of the five wellness pillars the NASM CWC frames wellness around",
+              "A sub-topic of the movement pillar rather than a pillar of its own",
+              "A clinical domain the program treats as outside any coaching scope",
+              "The NBHWC content-outline domain carrying the heaviest exam weight",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Physical recovery is its own pillar, alongside movement, nutrition, sleep, and mental and emotional well-being. The heaviest NBHWC exam weight belongs to coaching process, which is a different framework entirely.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "The affiliation statement appears in two places. Where?",
+            options: [
+              "In lesson 1's prose and on the course landing page's disclaimer",
+              "In the course description and in every lesson's Sources block",
+              "On the certificate of completion and in the program's terms of service",
+              "In the syllabus and in the confirmation email sent at enrollment",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The not-affiliated disclaimer renders on the landing page and is also stated in lesson 1's prose, so a learner meets it before any content and cannot reach the material without it.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "What is the program's stated reason for assuming CPT, CNC, and CES knowledge rather than teaching from scratch?",
+            options: [
+              "So it can add the layer none of those certifications carry, instead of repeating them",
+              "So it can be completed in fewer hours than an NBHWC-approved program requires",
+              "Because NASM prohibits restating certification content in derivative programs",
+              "Because learners without those credentials cannot lawfully coach behavior change",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The point is additive: the coaching layer is the thing CPT, CNC, and CES do not carry. Hour counts and permissions are not the reason, and the claim that uncredentialled people cannot lawfully coach behavior change is simply false.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "Which statement about this program's relationship to a credential is accurate?",
+            options: [
+              "It is a study program; any credential must be earned from the awarding body separately",
+              "It is a preparation course formally recognized by the awarding bodies it references",
+              "It confers a specialization that substitutes for one leg of the NBC-HWC pathway",
+              "It grants a certificate of attendance that the NBHWC counts toward continuing education",
+            ],
+            correctIndex: 0,
+            explanation:
+              "No recognition, no substitution, no continuing-education value. It is independent study, and every credential named in it must be earned through its own organization's pathway.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "How does the NBHWC scope of practice define the coaching process?",
+            options: [
+              "An evidence-based, client-centered process facilitating self-determined health and wellness goals",
+              "A structured educational process delivering evidence-based health information to clients",
+              "A clinician-directed process implementing prescribed treatment plans with accountability",
+              "A goal-setting process in which the coach and client jointly select the health targets",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The definition is evidence-based, client-centered, and facilitative, with the goals SELF-determined by the client. The coach does not deliver the content, direct the plan, or co-select the targets.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "Beyond the client's own strengths, what else does the scope say the coach helps mobilize?",
+            options: [
+              "Outside resources, alongside commitment to action steps and accountability",
+              "Clinical referrals, which the coach arranges directly with the treating provider",
+              "Family participation, which the scope requires in any multi-week engagement",
+              "Evidence summaries the coach prepares from the peer-reviewed literature",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The scope names the client's own strengths and outside resources, plus commitment to action steps and accountability. Arranging referrals directly, mandating family involvement, and preparing evidence summaries are not in that definition.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "A client arrives with a treatment plan written by their physician. What does the scope say the coach's role is?",
+            options: [
+              "Supporting its implementation, under or alongside that professional's license",
+              "Reviewing it for behavioral feasibility and proposing adjustments to the physician",
+              "Translating it into weekly targets the coach then monitors and modifies as needed",
+              "Setting it aside so coaching goals remain fully self-determined by the client",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The coach supports implementation, working under or alongside the license that wrote the plan, never replacing it. Proposing adjustments, modifying targets, and disregarding the plan all overstep.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "Is the coach the content expert in the room?",
+            options: [
+              "No; the craft is facilitating change, though evidence-based resources may be shared",
+              "Yes; the scope names content expertise as the coach's primary contribution",
+              "Only where the coach holds a second credential covering that content area",
+              "Only when no licensed professional is currently involved in the client's care",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The scope is explicit that coaches are not the content expert. They may share evidence-based resources from nationally recognized authorities, but the craft is facilitation. Holding a second credential does not merge the roles; it means wearing two hats.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "What kind of information may a coach share, per the scope of practice?",
+            options: [
+              "Evidence-based resources and information from nationally recognized authorities",
+              "Any peer-reviewed finding the coach has personally read and can cite accurately",
+              "Individualized interpretations of published guidelines, tailored to the client's condition",
+              "Whatever the client requests, provided the coach documents the request in writing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The permission is narrow and specific: evidence-based resources and information from nationally recognized authorities. Personal reading, individualized interpretation for a condition, and client request do not widen it.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "You hold a CPT and you are coaching. When does the CPT hat come off and the coach hat go on?",
+            options: [
+              "When the work shifts from prescribing content to facilitating goals, commitment, and ambivalence",
+              "When the client stops asking technical questions and begins discussing feelings",
+              "When the session moves out of the gym and into a conversational setting",
+              "When the client's programming is finalized and the training block formally begins",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The switch is defined by the KIND of work, not the topic, the room, or the calendar. Prescribing loads, exercise selection, and corrective strategy is trainer work; facilitating goals, commitment, accountability, and ambivalence is coaching.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "Why does the course insist that dual roles stay visibly separate?",
+            options: [
+              "It is what keeps the coaching role legally clean, and the course drills it as a skill",
+              "It prevents clients from being billed twice for a single combined session",
+              "Certifying bodies audit session recordings for role confusion during recertification",
+              "It allows the coach to charge a different rate for each portion of the engagement",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The stated reason is legal cleanliness of the coaching role, and the course treats separation as a trainable skill rather than pedantry. Billing, audits, and pricing are not the rationale.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "What is a 'dual role' in this course's vocabulary?",
+            options: [
+              "Holding a coaching role and another credential with the same client, hats kept separate",
+              "Coaching two clients who share a household and therefore share environmental constraints",
+              "Serving as both the coach and the referring party in a clinical handoff",
+              "Working as a coach while simultaneously enrolled as a client of another coach",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A dual role is one practitioner holding two credentials with one client. It is lawful and common; what makes it safe is keeping the roles visibly distinct.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "What does 'self-determined goals' mean in the scope's definition?",
+            options: [
+              "Goals the client sets for themselves, which coaching helps them develop and achieve",
+              "Goals the coach proposes and the client formally ratifies before work begins",
+              "Goals derived from the client's assessment data rather than from their stated preferences",
+              "Goals a licensed professional has approved as clinically appropriate for the client",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Self-determined means the client's own. Coach-proposed, data-derived, and clinician-approved goals are all somebody else determining them, which is the opposite of the term.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "The course calls the learner 'this program's first client.' What is the practical instruction attached to that?",
+            options: [
+              "Read each boundary twice: once as a coach, once as the coached",
+              "Complete every self-check aloud before attempting the section's knowledge check",
+              "Recruit a second learner so each pillar can be practised on someone else",
+              "Defer the capstone until a paying client engagement is available to document",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The centenarian frame asks for a double reading of every boundary, because the capstone requires building and coaching your own decades-long protocol.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "Which of these is the clearest example of the coach role rather than the content-expert role?",
+            options: [
+              "Exploring what makes a client ambivalent about their prescribed walking plan",
+              "Selecting the walking pace that matches the client's target heart-rate zone",
+              "Explaining which physiological adaptations the walking plan is designed to produce",
+              "Revising the walking plan's weekly volume after reviewing the client's fatigue notes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Exploring ambivalence is facilitation. Selecting pace, explaining adaptations, and revising volume are all content and prescription, which belong to a training credential rather than the coaching role.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "'Client-centered process' means work organized around what?",
+            options: [
+              "The client's own goals, values, and choices, with the coach facilitating",
+              "The client's measured baseline data, with progress reviewed against population norms",
+              "The client's schedule and budget, with session structure adapted to both",
+              "The client's diagnosis, with the coaching plan mirroring the treatment plan",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Client-centered refers to whose goals, values, and choices organize the work, not to logistics, data, or diagnosis. The coach facilitates rather than directs.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "A coach notices a client's prescribed medication seems to be causing daytime sleepiness. What does the scope permit?",
+            options: [
+              "Supporting the client to raise it with the prescriber, without interpreting or advising on the medication",
+              "Explaining the medication's known side-effect profile so the client can decide what to do",
+              "Suggesting the client trial a lower dose and report back on whether sleepiness improves",
+              "Recording the observation and adjusting session timing without involving the prescriber",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Interpreting medical data and de-prescribing are both outside coaching. What remains squarely inside is facilitating the client's own communication with the license that wrote the prescription.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "Why does the course say the NBHWC scope document is worth reading closely?",
+            options: [
+              "Every boundary in the program hangs off it",
+              "It carries statutory force in states that license health coaches",
+              "It is reissued annually, so its wording changes materially each year",
+              "It is the only scope document that addresses all five wellness pillars",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the clearest published definition in the field and the anchor for every boundary the program teaches. It is not statute, and its authority comes from clarity and publication rather than law.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "What is the risk the course identifies in a coach who also holds a training credential?",
+            options: [
+              "The roles blur, which is what makes the coaching role legally unclean",
+              "The client receives conflicting advice from the same practitioner in one session",
+              "The training credential's insurance will not cover conversations about behavior",
+              "The coach becomes over-reliant on prescription and neglects assessment",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The named risk is role blur and the legal exposure it creates for the coaching role. The course's answer is not to avoid dual roles but to keep them visibly separate.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "In the NBHWC content outline, which domain carries the largest weight?",
+            options: [
+              "Coaching process, at 47 to 53 percent",
+              "Health and wellness, at 47 to 53 percent",
+              "Coaching structure, at 17 to 23 percent",
+              "Ethics and legal, at 27 to 33 percent",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Coaching process is 47 to 53 percent, nearly half the exam. Coaching structure and health and wellness are each 17 to 23 percent, and ethics and legal is 7 to 13 percent.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What is the weight of the ethics and legal domain in the NBHWC content outline?",
+            options: [
+              "7 to 13 percent",
+              "17 to 23 percent",
+              "27 to 33 percent",
+              "37 to 43 percent",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Ethics and legal is the smallest domain at 7 to 13 percent. The 17-to-23 band belongs to both coaching structure and health and wellness.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What does the coaching-process weighting tell you about the board's view of the profession?",
+            options: [
+              "That the craft of coaching outranks health content knowledge as the core of the profession",
+              "That health content knowledge is assumed from prerequisites and therefore tested lightly",
+              "That process questions are easier to write, so more of them fit on the exam",
+              "That ethics is treated as a subset of process rather than a domain of its own",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Nearly half the exam sits on the relationship, communication, and techniques of coaching. That is a statement about what the board believes the profession IS, ahead of health content.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What does NBHWC competency 4.2 require of approved curricula?",
+            options: [
+              "That coaches are taught to know and abide by the published scope of practice",
+              "That every graduate completes fifty logged sessions before the exam",
+              "That programs disclose their pass rates to prospective students annually",
+              "That faculty maintain their own active coaching practice throughout the year",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Competency 4.2 is the scope competency: approved programs must teach coaches to know and abide by the published scope of practice. The session log is an exam-eligibility requirement, not competency 4.2.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "How many instructional hours must an NBHWC-approved program deliver, and how many must be synchronous?",
+            options: [
+              "At least 75 hours, at least 40 of them synchronous",
+              "At least 60 hours, at least 30 of them synchronous",
+              "At least 100 hours, at least 50 of them synchronous",
+              "At least 75 hours, with synchronous delivery optional throughout",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The floor is 75 instructional hours with at least 40 synchronous. The 60-hour figure in the handbook refers to CORE instructional hours in the faculty-credential rules, not the program total.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What are the practice-session requirements in an NBHWC-approved program?",
+            options: [
+              "At least three sessions of at least 30 minutes, each with at least 20 minutes of individual faculty feedback",
+              "At least five sessions of at least 20 minutes, each with written faculty feedback within a week",
+              "At least three sessions of at least 60 minutes, with group debriefs after each",
+              "At least ten sessions of any length, with feedback on a representative sample",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three sessions minimum, thirty minutes minimum each, and a minimum of twenty minutes of INDIVIDUAL faculty feedback after each. The individual-feedback requirement is the expensive part and the reason approved programs cost what they do.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What is the Practical Skills Assessment, and when is it administered?",
+            options: [
+              "A scorable pass/fail evaluation of a coaching session, given after 80 percent of the program is complete",
+              "A written scenario examination scored on a rubric, given at the midpoint of the program",
+              "A peer-reviewed session recording, submitted at any point before the board exam",
+              "An observed intake interview, administered during the program's first quarter",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The PSA is scorable and pass/fail, evaluating a real coaching session against a rubric, and it caps the program after 80 percent completion. It is a performance assessment, not a written one.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "Of the 60 core instructional hours, how many must be taught by faculty who hold the NBC-HWC themselves?",
+            options: [
+              "At least 48",
+              "At least 30",
+              "All 60",
+              "At least 15",
+            ],
+            correctIndex: 0,
+            explanation:
+              "At least 48 of the 60 core hours must be taught by NBC-HWC faculty, and separately at least 48 by faculty with at least 200 hours of their own coaching practice. The 15-hour figure belongs to the graduate-degree requirement.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "Which faculty-credential rule attaches to at least 15 of the core instructional hours?",
+            options: [
+              "A graduate degree in a health-related field, or a bachelor's plus a state license or national registration",
+              "At least 200 hours of the faculty member's own documented coaching practice",
+              "An active NBC-HWC credential held for a minimum of three continuous years",
+              "Completion of the board's train-the-trainer course within the prior recertification cycle",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The 15-hour rule is the academic-credential rule. The 200-hours-of-practice rule and the NBC-HWC rule each attach to 48 hours, not 15.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What are the three requirements to sit the NBHWC board exam?",
+            options: [
+              "An approved program, a log of 50 coaching sessions, and an associate's degree or 4,000 hours of work experience",
+              "An approved program, a log of 100 coaching sessions, and a bachelor's degree in a health field",
+              "An approved program, a passing Practical Skills Assessment, and two professional references",
+              "An accredited certification, a log of 50 coaching sessions, and current CPR/AED certification",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Approved program, 50 logged sessions, and an associate's degree OR 4,000 hours of work experience in ANY field. The experience alternative is what keeps the pathway open to career changers.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "The 4,000-hours alternative to an associate's degree must be work experience in which field?",
+            options: [
+              "Any field",
+              "A health-related field only",
+              "Coaching or an allied behavioral discipline",
+              "The field in which the candidate intends to coach",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Any field. The requirement is a general maturity-and-work-history floor, not a subject-matter one, which is why it functions as an accessible alternative to the degree.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What does keeping the NBC-HWC require after certification?",
+            options: [
+              "36 continuing-education credits every three years",
+              "20 continuing-education hours every two years",
+              "A repeat Practical Skills Assessment every five years",
+              "Re-sitting the board examination every three years",
+            ],
+            correctIndex: 0,
+            explanation:
+              "36 credits every three years for the NBC-HWC. The 20-hours-every-two-years schedule belongs to ACE's Health Coach, which is a different credential with a different cycle.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "How is the NASM CWC examined?",
+            options: [
+              "100 multiple-choice questions",
+              "A written examination plus a recorded practical session",
+              "150 multiple-choice questions and a case-study essay",
+              "A proctored oral examination with two assessors",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The CWC exam is 100 multiple-choice questions, with no practical or oral component. That absence is one of the concrete differences from the NBHWC pathway, which requires the PSA.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What did verification for this program find when it looked for a standalone NASM CWC scope-of-practice document?",
+            options: [
+              "None comparable to NBHWC's; NASM's scope guidance lives in nutrition-coaching materials and instructor commentary",
+              "A published document equivalent in structure to NBHWC's, released alongside the credential",
+              "A scope document available only to enrolled candidates through the course portal",
+              "A scope section embedded in NASM's code of ethics, covering all five pillars",
+            ],
+            correctIndex: 0,
+            explanation:
+              "No comparable standalone document was found. NASM's scope guidance appears in its nutrition-coaching materials and instructor commentary instead, which is a meaningful difference when comparing credentials.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "Which credential in this landscape is NCCA-accredited?",
+            options: [
+              "The ACE Certified Health Coach",
+              "The NASM Certified Wellness Coach",
+              "The ACLM Lifestyle Medicine Coach certificate",
+              "All three of the non-board credentials",
+            ],
+            correctIndex: 0,
+            explanation:
+              "ACE's Health Coach carries NCCA accreditation; NASM states its CWC does not. ACLM's LMC is a certificate stacked on another credential, not an accredited certification.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What are the candidacy requirements for the ACE Certified Health Coach?",
+            options: [
+              "At least 18, a high school diploma or equivalent, and current CPR/AED with a live skills check",
+              "At least 21, an associate's degree, and a logged practicum of 50 sessions",
+              "At least 18, any fitness certification, and a passing background check",
+              "At least 18, a bachelor's degree in a health field, and current CPR certification",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Eighteen, a high school diploma or equivalent, and current CPR/AED certification with a LIVE skills check. The live component is the detail most often missed.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "How does the ACE Health Coach renew, and what is the one category-specific requirement?",
+            options: [
+              "20 continuing-education hours every two years, at least one from Professional Conduct & Ethics",
+              "36 continuing-education credits every three years, at least two from an ethics category",
+              "20 continuing-education hours every two years, at least five from nutrition scope",
+              "15 continuing-education hours annually, with no category requirement attached",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Twenty hours every two years, with at least one hour from ACE's Professional Conduct & Ethics category. The 36-credits-every-three-years cycle belongs to the NBC-HWC.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "Around how many pillars does the American College of Lifestyle Medicine define lifestyle medicine?",
+            options: [
+              "Six",
+              "Five",
+              "Four",
+              "Eight",
+            ],
+            correctIndex: 0,
+            explanation:
+              "ACLM uses six pillars. The five-pillar framing in this program comes from NASM's CWC, which is a different organization with a different map.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "Whom do ACLM and the IBLM certify?",
+            options: [
+              "Clinicians; for coaches, ACLM offers education rather than a license",
+              "Coaches, through a pathway parallel to the NBHWC's board certification",
+              "Both clinicians and coaches, under a single unified competency framework",
+              "Programs rather than individuals, in the manner of NCCA accreditation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "ACLM and IBLM certify clinicians. A lifestyle-medicine-educated coach has knowledge, not a license, and remains bound by coaching scope and state law exactly as before.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What must you already hold to earn ACLM's Lifestyle Medicine Coach certificate?",
+            options: [
+              "An active NBC-HWC or Wellcoaches certification",
+              "An active NASM CWC or ACE Health Coach certification",
+              "A clinical license in any state, plus the completed coursework",
+              "Nothing; the certificate is open to anyone completing the course",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The LMC certificate is stacked: it requires an active NBC-HWC or Wellcoaches certification. The COURSE is open to anyone, which is what makes the distinction easy to miss.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "How long is ACLM's Lifestyle Medicine for Coaches course, and what assessment standard does the certificate require?",
+            options: [
+              "16.5 self-paced hours, with 12 knowledge assessments passed at 80 percent or better",
+              "24 self-paced hours, with a single final examination passed at 70 percent or better",
+              "16.5 synchronous hours, with a practical session assessed pass/fail",
+              "40 self-paced hours, with 12 knowledge assessments passed at 70 percent or better",
+            ],
+            correctIndex: 0,
+            explanation:
+              "16.5 self-paced hours and 12 knowledge assessments at 80 percent or better. The course is self-paced, not synchronous, which distinguishes it sharply from NBHWC-approved programs.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "You complete ACLM's coaches course without holding an NBC-HWC or Wellcoaches certification. What do you receive?",
+            options: [
+              "A certificate of attendance rather than the Lifestyle Medicine Coach certificate",
+              "The Lifestyle Medicine Coach certificate, held provisionally until a prerequisite is earned",
+              "Continuing-education credit that can be applied toward the NBC-HWC prerequisite",
+              "Nothing, because enrollment itself requires one of the prerequisite credentials",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Same course, different award: a certificate of attendance. Nothing is held provisionally, and enrollment is genuinely open to anyone.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "The course summarizes the landscape as four different kinds of claim. Which mapping is correct?",
+            options: [
+              "Board certification NBHWC, accredited certification ACE, private certification NASM CWC, clinician certification plus coach education ACLM",
+              "Board certification ACE, accredited certification NBHWC, private certification ACLM, clinician certification NASM CWC",
+              "Accredited certification NBHWC, board certification NASM CWC, private certification ACE, coach education ACLM",
+              "Board certification NBHWC, private certification ACE, accredited certification NASM CWC, clinician education ACLM",
+            ],
+            correctIndex: 0,
+            explanation:
+              "NBHWC is board certification, ACE is accredited certification, NASM's CWC is private certification, and ACLM certifies clinicians while educating coaches. Four different claims behind one phrase.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "Someone introduces themselves as a 'certified wellness coach.' What has the lesson taught you to ask?",
+            options: [
+              "Which of the four kinds of claim it is, since the phrase covers all of them",
+              "Whether their certification is current and in good standing with the issuer",
+              "How many pillars their certification covered during training",
+              "Whether they carry professional liability insurance for coaching work",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The phrase spans board certification, accredited certification, private certification, and clinician certification plus coach education. Identifying which one is the first question; currency and insurance matter later.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What is a 'content outline' in the credential vocabulary, and what does it reveal?",
+            options: [
+              "The published blueprint of an exam's domains and weights; it tells you what the board believes the profession IS",
+              "The syllabus an approved program must follow, lesson by lesson, to retain its approval",
+              "The list of topics a candidate must log practice hours in before sitting the exam",
+              "The set of competencies faculty must demonstrate before teaching core instructional hours",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A content outline is the exam blueprint: domains plus their weights. Reading the weights is how you learn a board's actual theory of the profession, which is why the 47-to-53 percent process figure matters so much.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What does 'synchronous instruction' mean in the NBHWC program-approval rules?",
+            options: [
+              "Live teaching, in person or remote, as distinct from self-paced material",
+              "In-person teaching only, with remote delivery counted as asynchronous",
+              "Instruction delivered on a fixed weekly schedule, whether live or recorded",
+              "Teaching in which every student progresses through the same module at once",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Synchronous means live, and remote live delivery counts. What it excludes is self-paced material, which is why at least 40 of the 75 hours cannot be recorded content.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What is a 'stacked credential,' with the example from this lesson?",
+            options: [
+              "A certificate requiring another credential as its prerequisite, as ACLM's LMC requires NBC-HWC or Wellcoaches",
+              "A credential earned by combining hours from two approved programs into one application",
+              "A certification that automatically renews when a higher credential is maintained",
+              "A specialization added to a base certification by the same issuing organization",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Stacked means it sits on top of a prerequisite credential from another body. ACLM's Lifestyle Medicine Coach certificate is the lesson's example, requiring an active NBC-HWC or Wellcoaches certification underneath it.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What does NCCA accreditation actually accredit?",
+            options: [
+              "The certification program, by the National Commission for Certifying Agencies",
+              "The individual certificant, after a review of logged practice hours",
+              "The training curriculum, in the way NBHWC approves programs",
+              "The examination items, through an independent psychometric audit",
+            ],
+            correctIndex: 0,
+            explanation:
+              "NCCA accredits the certification PROGRAM, as third-party recognition of how the certification is run. It is distinct from NBHWC's program approval, which accredits training curricula.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "Which comparison between the NBHWC and NASM CWC pathways is accurate?",
+            options: [
+              "NBHWC requires a scored practical assessment; the CWC is examined by multiple choice alone",
+              "Both require a scored practical assessment, but only NBHWC scores it pass/fail",
+              "NBHWC is examined by multiple choice alone; the CWC adds a recorded practical",
+              "Neither requires a practical assessment, though both require logged practice sessions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The PSA is the structural difference: NBHWC requires a scorable pass/fail evaluation of a real coaching session, while the CWC's assessment is 100 multiple-choice questions.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "Why does the course say the rigor behind NBHWC approval is 'worth knowing'?",
+            options: [
+              "Because it is what 'board certification' actually buys, and it is inspectable",
+              "Because approved programs are legally required to publish their hour counts",
+              "Because the same standards apply to the ACE and NASM pathways in practice",
+              "Because candidates may petition to waive requirements they can document elsewhere",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The hours, the individual feedback, the PSA, and the faculty credentials are all published and checkable. Knowing them is how you evaluate what a credential's claim is worth rather than taking the phrase on trust.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+        ],
+      },
+    },
+
     // ── Section 2 ────────────────────────────────────────────────────────────────────────────
     {
       slug: "the-exclusion-lists",
@@ -484,6 +1342,890 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
               "Coaches may share evidence-based resources from nationally recognized authorities while remaining facilitators rather than content experts. Diagnosis, lab interpretation, and prescribing or de-prescribing are all on the exclusion list.",
             sourceLessonSlug: "what-a-wellness-coach-is",
           },
+          {
+            prompt: "Which of these appears on the NBHWC exclusion list?",
+            options: [
+              "Interpreting medical data",
+              "Facilitating a client's self-determined goals across several sessions",
+              "Sharing evidence-based resources from nationally recognized authorities",
+              "Supporting implementation of a plan written by a licensed professional",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Interpreting medical data is explicitly excluded, alongside diagnosing, prescribing or de-prescribing, recommending supplements, nutrition consultation and meal plans, exercise prescription, and psychological therapeutic interventions. The other three are the coach's defined role.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "The NBHWC exclusion list names two things a coach may not do with medication. What are they?",
+            options: [
+              "Prescribe and de-prescribe",
+              "Prescribe and store, though discussing adherence is permitted without limits",
+              "Recommend and administer, though prescribing is allowed with clinician sign-off",
+              "Interpret and substitute, though generic alternatives may be suggested freely",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Prescribing and DE-prescribing both appear. The second half matters: telling a client to stop or reduce a medication is as far outside coaching as writing the prescription was.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "How does the NBHWC scope treat supplements?",
+            options: [
+              "Coaches do not recommend them",
+              "Coaches may recommend them where the product carries third-party testing certification",
+              "Coaches may recommend them once a physician has confirmed no interaction exists",
+              "Coaches may recommend them if they hold a separate nutrition certification alongside",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Recommending supplements is flatly on the exclusion list, with no product-quality, clinician-clearance, or second-credential exception written into it.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "A verification note in this lesson corrects an earlier reading of the NBHWC scope page. What changed?",
+            options: [
+              "An earlier read recorded four named therapy modalities; the current page names five, adding Solution Focused Therapy",
+              "An earlier read recorded five named therapy modalities; the current page names four, having dropped EMDR",
+              "An earlier read placed exercise prescription outside the list; the current page adds it explicitly",
+              "An earlier read treated the list as exhaustive; the current page adds 'other such therapies' behind it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Four became five, with Solution Focused Therapy added. The course teaches the list as the primary states it today, and shows the correction rather than quietly updating.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "What phrase does the NBHWC scope use to sweep in therapies it does not name individually?",
+            options: [
+              "Other such therapies",
+              "And any related clinical modality practised under licensure",
+              "Together with all interventions requiring a mental-health credential",
+              "Including any therapy delivered in a structured protocol format",
+            ],
+            correctIndex: 0,
+            explanation:
+              "'Other such therapies' follows the five named examples, which is what makes the list illustrative rather than exhaustive. A therapy's absence from the named five is not permission.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "Exercise prescription is inside your CPT scope and on the coaching exclusion list. What does the list actually mean?",
+            options: [
+              "A coaching credential alone does not authorize it, so when you program training you are working as a trainer",
+              "Exercise prescription is prohibited for anyone who also markets themselves as a coach",
+              "Coaching clients must be referred out for programming even when their coach holds a CPT",
+              "The exclusion applies only where the coach charges separately for the programming work",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The list describes what a coaching credential authorizes, not what a person may do. The two hats coexist; what matters is knowing which one you are wearing.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "ACE's nutrition position statement places which of these outside an exercise professional's scope?",
+            options: [
+              "Nutritional assessment",
+              "Teaching a client to read a nutrition-facts label on packaged food",
+              "Sharing federal dietary guidelines published for the general public",
+              "Discussing meal-preparation strategy as a time-management problem",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Nutritional assessment is outside scope. Label reading, government guidelines, and meal-prep strategy are the general education that remains inside it.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "Under ACE's position statement, when may personalized nutrition recommendations or meal planning be shared?",
+            options: [
+              "Only within evidence-based guidelines or materials developed and endorsed by a registered dietitian nutritionist or physician",
+              "Only where the client has signed a waiver acknowledging the coach is not a dietitian",
+              "Only when the recommendations avoid any mention of calorie or macronutrient targets",
+              "Only for clients with no diagnosed condition affecting their nutritional requirements",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The permission runs through materials an RDN or physician developed and endorsed. Waivers, target-avoidance, and the absence of a diagnosis do not create the authority.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "ACE's statement addresses what a professional may call themselves. What does it forbid?",
+            options: [
+              "Promoting oneself as a 'nutritionist' or 'dietitian'",
+              "Promoting oneself as a 'nutrition coach' or 'wellness coach' without accreditation",
+              "Promoting any nutrition service without listing the underlying certification's issuer",
+              "Promoting nutrition services alongside training services in the same advertisement",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The forbidden self-descriptions are 'nutritionist' and 'dietitian'. Coach titles are not what the statement restricts, though state title law may say more.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "Which four situations does NASM's guidance say require referral to a registered dietitian?",
+            options: [
+              "Individualized meal planning, nutritional assessment, specialty diets, and nutrition counseling",
+              "Weight loss, weight gain, sports performance, and any pediatric client",
+              "Any client with a chronic condition, a food allergy, a supplement question, or a body-composition goal",
+              "Individualized meal planning, supplement selection, hydration protocols, and pre-competition fuelling",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Individualized meal planning, nutritional assessment, specialty diets, and nutrition counseling. Goals and populations do not by themselves trigger the referral; the KIND of work does.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "What does NASM's guidance leave inside a coach's scope?",
+            options: [
+              "Portion education, label reading, government guidelines, meal-prep strategy, and coaching the behavior",
+              "Portion education, macronutrient targets, government guidelines, and supplement timing",
+              "Anything the client requests, provided no specific food quantities are named",
+              "General education, plus individualized planning where no medical condition is present",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Five things: portions, labels, published guidelines, meal-prep strategy, and the behavior itself. Macronutrient targets and supplement timing are individualized prescription.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "The lesson states a common core across all three exclusion lists. What is it?",
+            options: [
+              "Educate generally, facilitate behavior, refer individually",
+              "Assess broadly, prescribe cautiously, document thoroughly",
+              "Inform the client, obtain consent, then proceed within the written plan",
+              "Defer to the client's physician on anything touching health outcomes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three verbs and the boundary they draw: general education and behavior facilitation stay with the coach; anything individualized goes to a license.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "What is a 'position statement' in this course's vocabulary?",
+            options: [
+              "An organization's published stance on a boundary question: weaker than statute, stronger than opinion",
+              "A statutory declaration a licensing board files when it adopts a new interpretation",
+              "A certifying body's binding rule, enforceable against its certificants through discipline",
+              "A consensus document jointly issued by two or more credentialing organizations",
+            ],
+            correctIndex: 0,
+            explanation:
+              "ACE's nutrition statement is the lesson's example. It carries real weight in a scope argument without having the force of law, which is exactly the middle ground the definition names.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "What distinguishes general from individualized guidance, as the exclusion lists converge on it?",
+            options: [
+              "Portions, labels, and public guidelines are general; a plan built for one person's body or condition is individualized",
+              "Written material is general; anything delivered verbally in session is individualized",
+              "Free material is general; anything the client pays for is individualized",
+              "Group delivery is general; anything delivered one-to-one is individualized",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The line is about the CONTENT's specificity to one person, not the medium, the price, or the group size. A one-to-one conversation about published guidelines is still general education.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "A client asks their coach which magnesium product to buy for sleep. What does the converged guidance require?",
+            options: [
+              "Decline the recommendation and route the question to a licensed provider, since supplement recommendation is excluded",
+              "Recommend a third-party-tested product, since quality verification satisfies the scope concern",
+              "Recommend a product but document that the client requested it first",
+              "Recommend the form rather than the brand, since forms are general information",
+            ],
+            correctIndex: 0,
+            explanation:
+              "All three organizations exclude recommending supplements. Testing certifications, client-initiated requests, and brand-versus-form distinctions do not create authority the scope withholds.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "Why does this lesson open by saying nothing in it is legal advice?",
+            options: [
+              "It teaches the STRUCTURE of regulation so you know which questions to ask a lawyer, not so you can skip asking",
+              "Because statutory material is copyrighted and cannot be reproduced as advice",
+              "Because the author is not admitted to practice in the states the lesson cites",
+              "Because state law changes too frequently for any lesson to remain accurate",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson's stated purpose is structural literacy: knowing the shapes regulation takes so you can ask a lawyer the right question about your own jurisdiction.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "Which describes practice regulation of dietetics?",
+            options: [
+              "It reserves the WORK, so in some states only licensees may perform medical nutrition therapy",
+              "It reserves the NAME, so only licensees may call themselves a dietitian",
+              "It reserves the setting, so nutrition work is restricted to clinical facilities",
+              "It reserves the payment, so only licensees may bill insurance for nutrition services",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Practice regulation reserves activities; title regulation reserves names. Settings and billing are separate regulatory questions entirely.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "Under pure title regulation, what may an unlicensed person do?",
+            options: [
+              "Share general nutrition information, while the protected titles remain reserved to licensees",
+              "Perform medical nutrition therapy, provided they never use a protected title",
+              "Nothing involving nutrition, since the title restriction implies a practice restriction",
+              "Everything a licensee may do, since only marketing language is regulated",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Title regulation restricts the name, not the general work. It does not license medical nutrition therapy to the unlicensed, and it does not shut them out of general nutrition information.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "Why does the lesson say a coaching business must check each state it operates in?",
+            options: [
+              "Many states mix practice and title regulation, and the pattern varies enough that one state's answer does not transfer",
+              "Federal law requires registration in every state where a client resides",
+              "Each state sets a different minimum certification level for nutrition coaching",
+              "Interstate coaching is prohibited unless the coach holds a license in the client's state",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The variation is the point: states mix the two models differently, so the answer is jurisdiction-by-jurisdiction rather than a single national rule.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "What did Michigan's Public Act 39 of 2024 do?",
+            options: [
+              "Made Michigan a licensure state for dietitian nutritionists, approved on April 30, 2024",
+              "Repealed Michigan's dietitian licensure scheme in favor of pure title protection",
+              "Extended Michigan's dietetics practice act to cover wellness coaching for the first time",
+              "Created a registration pathway allowing coaches to perform medical nutrition therapy",
+            ],
+            correctIndex: 0,
+            explanation:
+              "PA 39 established licensure for dietitian nutritionists. Notably, its exemption section then protected a great deal of coaching work by name.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "Michigan's exemption section (MCL 333.18353) is remarkable for what?",
+            options: [
+              "How much coaching work it explicitly protects, including individualized wellness recommendations",
+              "How narrowly it draws the exemption, protecting only unpaid general information",
+              "Its silence on coaching, which leaves the boundary to board interpretation",
+              "Its requirement that exempt practitioners register with the state annually",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It names general nonmedical nutrition information, guidance, encouragement, individualized recommendations for wellness or primary prevention, behavior-change management, coaching, assessments, and weight-management services.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "Michigan's exemption is conditional. What are the two conditions?",
+            options: [
+              "The work must not constitute medical nutrition therapy, and the person must not use protected titles or hold out as licensed",
+              "The work must be unpaid, and the person must carry professional liability insurance",
+              "The person must hold a recognized coaching certification, and must document each session",
+              "The client must have no diagnosed condition, and must sign an acknowledgment of scope",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two conditions: not medical nutrition therapy, and no protected titles or holding out as a licensed provider. Payment, certification, and documentation are not among them.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "Michigan's exemption protects individualized nutrition recommendations for which purposes?",
+            options: [
+              "Wellness or primary prevention of chronic disease",
+              "Wellness only, with any disease-related purpose falling outside the exemption",
+              "Treatment or management of diagnosed chronic disease under a physician's direction",
+              "Athletic performance and body composition, but not health outcomes generally",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The statute reaches wellness AND primary prevention of chronic disease. What it does not reach is medical nutrition therapy, which is the treatment side of the line.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "What does Indiana Code section 25-14.5-7-3 permit?",
+            options: [
+              "Disseminating free information, conducting a class or seminar, or giving a speech related to nutrition",
+              "Performing nutritional assessment provided no fee is charged for the service",
+              "Using the title 'nutritionist' where the person holds any nutrition certification",
+              "Providing individualized dietary plans where the client is not under medical care",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three protected activities: free information, classes or seminars, and speeches. Indiana protects titles without reserving general nutrition practice.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "Which regulatory model does Indiana's dietitian statute follow?",
+            options: [
+              "Title protection without reserving general practice",
+              "Practice regulation reserving all nutrition counseling to licensees",
+              "A hybrid reserving both the title and any paid nutrition service",
+              "Registration, under which unlicensed practitioners file annually with the state",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Indiana bars professing to be a licensed dietitian but expressly leaves general nutrition speech alone. Michigan, by contrast, licenses practice and then exempts coaching by name.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "Who was Steve Cooksey, and what did the North Carolina board object to?",
+            options: [
+              "A blogger managing his own type 2 diabetes with a low-carbohydrate diet; the board said answering readers' individual food questions was unlicensed dietetics",
+              "A licensed dietitian whose advertising the board found misleading under its title rules",
+              "A nutrition coach the board fined for creating meal plans for paying clients",
+              "A physician the board investigated for delegating dietary counseling to unlicensed staff",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Cooksey blogged about managing his own type 2 diabetes on a low-carbohydrate diet. The board's position was that answering readers' individual questions, whether free or paid, was the unlicensed practice of dietetics.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "How did the North Carolina board communicate what Cooksey could and could not say?",
+            options: [
+              "A 19-page printout of his website marked up in red pen",
+              "A formal cease-and-desist order specifying each prohibited passage by URL",
+              "A published advisory opinion applying to all nutrition bloggers in the state",
+              "A subpoena requiring him to appear and justify each post individually",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The red-penned 19-page printout is the detail that made the case famous, and it is what gave the chilling-effect argument its force.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "What did the Fourth Circuit actually decide in Cooksey v. Futrell?",
+            options: [
+              "That the board's actions had an objectively reasonable chilling effect, giving Cooksey standing to bring his claim",
+              "That North Carolina's dietetics practice act violated the First Amendment as applied to bloggers",
+              "That individualized dietary advice is protected speech regardless of the speaker's licensure",
+              "That state dietetics boards may not regulate any advice delivered over the internet",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The holding was about standing, not the merits. The court decided he could SUE, and sent the case back down. Reading it as a substantive First Amendment victory overstates it.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "How did the Cooksey litigation end?",
+            options: [
+              "In February 2015, when the board adopted new guidelines permitting ordinary non-individualized diet advice without a license",
+              "In a Fourth Circuit ruling striking down the state's dietetics practice act",
+              "In a settlement paying Cooksey damages while leaving the board's rules unchanged",
+              "In a Supreme Court decision establishing a national standard for nutrition speech",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The board changed its guidelines in February 2015. The practice act was not struck down and no higher court set a national rule.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "What is the two-sided moral the lesson draws from Cooksey?",
+            options: [
+              "General nutrition speech has real constitutional protection, and individualized clinical nutrition care remains squarely regulable",
+              "Blogging about health is protected, and in-person consultation is not",
+              "Free advice is protected, and paid advice is regulable",
+              "Personal experience is protected, and any reference to research is regulable",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both halves matter, and the coaching lane runs between them. Note what the line is NOT drawn on: medium, price, or whether research is cited.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "The lesson marks one edge as genuinely contested. Which?",
+            options: [
+              "Where individualized wellness recommendations end and medical nutrition therapy begins",
+              "Whether title protection applies to the word 'coach' in most states",
+              "Whether general nutrition information may be shared for a fee",
+              "Whether a coach may reference federal dietary guidelines with a client",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That boundary is interpreted differently by state boards and advocacy organizations and is jurisdiction-specific. The lesson calls it a get-counsel situation rather than a read-a-lesson one.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "A coach's work drifts toward disease-focused individualized diet planning in a state that exempts wellness coaching. What does the lesson say?",
+            options: [
+              "They are in the gray zone even where wellness coaching is exempt, and should get counsel",
+              "They are protected, because the state's exemption covers all coaching activity by name",
+              "They are protected, provided they avoid protected titles in their marketing",
+              "They are clearly in violation, since disease focus always constitutes medical nutrition therapy",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Neither of the confident answers is right. The exemption does not extend automatically to disease-focused individualized planning, and the lesson refuses to declare it a definite violation either.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "Why does the lesson call the NBHWC exclusion list 'the sharpest' of the three?",
+            options: [
+              "It enumerates excluded activities directly rather than describing scope only in the positive",
+              "It carries disciplinary consequences the ACE and NASM statements lack for their certificants",
+              "It is the only one of the three reviewed and reissued on a published annual schedule",
+              "It is the only one written by an organization that certifies rather than trains",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Sharpness here means explicitness: a named inventory of what coaches do not do, rather than a positive description leaving the boundary to inference. ACE and NASM converge on the substance with less enumeration.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "A coach in a title-only state calls themselves a 'nutrition coach' and teaches a paid seminar on reading food labels. Under the structure this lesson teaches, what is the analysis?",
+            options: [
+              "Both are likely lawful: the title is not protected and label education is general information",
+              "Both are likely unlawful: charging a fee converts general education into regulated practice",
+              "The seminar is lawful but the title is not, since any nutrition-related title is reserved",
+              "The title is lawful but the seminar is not, since teaching requires a practice-act exemption",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Title regulation reserves the protected names, and 'nutrition coach' is not among them; label reading is general education all three organizations leave in scope. Indiana's statute expressly protects classes and seminars. Fees do not convert general education into regulated practice.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "Which protected titles does the therapy-law lesson list as reserved by states?",
+            options: [
+              "Psychologist, social worker, licensed professional counselor, marriage and family therapist, and psychotherapist",
+              "Psychologist, psychiatrist, behavioral analyst, addiction specialist, and crisis counselor",
+              "Therapist, counselor, coach, mental-health worker, and clinical supervisor",
+              "Psychologist, social worker, health coach, wellness counselor, and behavioral therapist",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Those five and their kin. 'Coach' is conspicuously not among them, which is precisely why the functional test exists rather than a title test.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "Which categories of coach does Colorado's exemption name explicitly?",
+            options: [
+              "Life coach, executive coach, personal coach, and business coach",
+              "Health coach, wellness coach, life coach, and executive coach",
+              "Life coach, career coach, performance coach, and recovery coach",
+              "Wellness coach, nutrition coach, fitness coach, and mindset coach",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The statute names life, executive, personal, and business coaching, introduced by 'including', which makes the list illustrative rather than closed.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "Recite the three conditions of Colorado's professional-coach exemption.",
+            options: [
+              "Coach-specific training; serving clients exclusively as a coach; and not engaging in the six defined practices",
+              "Coach-specific training; carrying liability insurance; and disclosing non-licensure to every client in writing",
+              "A recognized certification; supervision by a licensed clinician; and annual registration with the state",
+              "Coach-specific training; avoiding all protected titles; and referring any client with a diagnosis",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Training, exclusivity, and non-engagement in the six defined practices. Insurance, supervision, registration, and disclosure are not conditions of the exemption.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "Which six practices does Colorado's exemption require a coach not engage in?",
+            options: [
+              "Psychology, social work, marriage and family therapy, licensed professional counseling, psychotherapy, and addiction counseling",
+              "Psychology, psychiatry, social work, marriage and family therapy, psychotherapy, and behavioral analysis",
+              "Psychotherapy, addiction counseling, crisis intervention, trauma treatment, psychiatry, and psychology",
+              "Psychology, social work, dietetics, nursing, psychotherapy, and addiction counseling",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Six named practices, each 'as those practices are defined in this article 245'. The definitions in the article are what actually decide the question, not the everyday meaning of the words.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "Where does Colorado's title protection sit relative to the coach exemption, and why does it matter?",
+            options: [
+              "In subsection (1), separate from the (2)(f) exemption, so protected titles stay off-limits regardless",
+              "Inside the (2)(f) exemption as its fourth condition, so using a title voids the exemption entirely",
+              "In a separate article covering advertising, so it does not bear on practice at all",
+              "In board rules rather than statute, so it varies with each rulemaking cycle",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It lives in subsection (1) and applies independently. The course flags this because some summaries fold the title rule into the exemption's conditions, and the statute does not read that way.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "'Serving clients exclusively as a coach' is one of the exemption's conditions. What does it constrain?",
+            options: [
+              "The relationship with that client must be coaching only, not coaching mixed with a defined clinical practice",
+              "The coach may hold no other professional credential of any kind",
+              "The coach may not work with clients who are simultaneously in therapy elsewhere",
+              "The coach must derive all professional income from coaching services",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It governs what the coach DOES with the client. Holding other credentials, having clients in therapy elsewhere, and income mix are not what the condition addresses.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "What is the 'functional test'?",
+            options: [
+              "Regulators evaluate what you DO, not what you call it",
+              "Regulators assess whether the client's function improved during the engagement",
+              "Regulators examine whether the practitioner's training covered the activity performed",
+              "Regulators consider whether the service was billed as coaching or as treatment",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Activities decide which law applies. It is the reason labels never launder out-of-scope work, and the reason 'but I called it coaching' is not a defense.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "The lesson gives an example of the functional test biting. What is it?",
+            options: [
+              "Marketing 'anxiety coaching' while doing deep emotional processing can be evaluated as psychotherapy practice",
+              "Marketing 'life coaching' while charging clinical rates can be evaluated as psychotherapy practice",
+              "Marketing any service by a diagnosis name automatically constitutes unlicensed practice",
+              "Marketing coaching to clients already in therapy constitutes interference with treatment",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The activity is what converts it: deep emotional processing. Note it is 'can be evaluated as', decided by boards and courts case by case, not an automatic rule about naming.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "How does the lesson describe the coaching-versus-therapy boundary?",
+            options: [
+              "The most contested boundary in the field, decided by boards and courts case by case",
+              "A settled boundary that varies only in how each state words the same rule",
+              "A boundary settled federally, with state practice acts implementing one national standard",
+              "A boundary that matters only where the coach lacks any mental-health training",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Most contested in the field, resolved case by case. The program teaches it AS contested rather than offering a confidence the law does not support.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "What does the lesson call the safe interior of coaching?",
+            options: [
+              "Present-and-future-focused behavior change around goals",
+              "Any work that avoids naming a diagnosis or a therapy modality",
+              "Any conversation the client initiates and directs themselves",
+              "Work confined to the five wellness pillars, excluding emotional content",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Present-and-future orientation around goals. Emotional content is not excluded, and avoiding names does not by itself make work safe under a functional test.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "What three things does the lesson identify as the danger zone?",
+            options: [
+              "Treating conditions, processing trauma, and borrowing therapy modalities by name",
+              "Discussing emotions, discussing the past, and discussing medication",
+              "Working with distressed clients, charging clinical rates, and coaching remotely",
+              "Marketing to clinical populations, accepting insurance, and coaching without certification",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Treatment, trauma processing, and modality borrowing. Discussing emotions or the past is not itself the danger; the sustained clinical activity is.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "Which of these does the lesson place INSIDE coaching?",
+            options: [
+              "Exploring stress, emotions, and beliefs as they bear on current behavior and goals",
+              "Working through a client's childhood experiences to resolve their present anxiety",
+              "Delivering a structured cognitive-behavioral protocol adapted for a coaching format",
+              "Assessing whether a client's low mood meets the threshold for clinical concern",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Emotional material is in scope where it bears on current behavior and goals. Historical processing, protocol delivery, and threshold assessment are all clinical work.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "What may a coach teach about stress, per this lesson?",
+            options: [
+              "Evidence-based stress-management skills in a coaching frame, alongside reflective listening",
+              "Any technique drawn from cognitive-behavioral therapy, provided it is not named as CBT",
+              "Clinical relaxation protocols, where the client has no psychiatric diagnosis",
+              "Nothing; stress content belongs entirely to licensed mental-health practice",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Evidence-based skills in a coaching frame plus reflective listening. Renaming a CBT technique does not move it, and stress is not wholly off-limits either.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "What is a 'practice act'?",
+            options: [
+              "The state law defining a licensed profession's reserved activities and who may perform them",
+              "A certifying body's published rules governing its certificants' conduct in practice",
+              "The written agreement between a coach and client setting out the scope of the engagement",
+              "A board's enforcement action against a practitioner who exceeded their scope",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Practice acts are statutes. Colorado's article 245 is the lesson's example, and it is the article whose definitions the coach exemption points back to.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "What is a 'coach exemption,' and what does its existence tell you?",
+            options: [
+              "A statutory carve-out keeping coaching lawful on stated conditions, rather than by the absence of law",
+              "A board policy declining to enforce practice acts against coaches in most circumstances",
+              "A constitutional protection for coaching speech recognized across all jurisdictions",
+              "An insurer's endorsement extending liability coverage to coaching activities",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The distinction matters: coaching is lawful in Colorado because a statute says so on conditions, not because nothing addresses it. Fail the conditions and the carve-out does not apply.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "Which NBHWC competency numbers the referral duty directly beneath the scope competency?",
+            options: [
+              "Competency 4.2.2, refer clients as appropriate",
+              "Competency 4.3.1, maintain professional boundaries in all client relationships",
+              "Competency 5.1.4, recognize the limits of coaching in clinical populations",
+              "Competency 3.2.2, escalate concerns to a supervising practitioner",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Competency 4.2 is knowing and abiding by the scope; 4.2.2 sits directly beneath it as the referral duty. The numbering itself shows referral treated as part of scope, not as a separate topic.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "Which occasions does the NBHWC outline name for referral?",
+            options: [
+              "Imminent danger, trauma treatment, mental health treatment, and other professional healthcare",
+              "Imminent danger, disordered eating, substance use, and any diagnosed chronic condition",
+              "Any client request, any clinician request, and any symptom lasting beyond two weeks",
+              "Trauma treatment, medication questions, insurance disputes, and legal matters",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Four occasions, with the last deliberately broad. Substance-use counselling is addressed separately in the outline as beyond scope.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "How does the NBHWC outline build referral into the craft itself?",
+            options: [
+              "The coach maintains professional boundaries, seeks consultation when needed, and treats scope questions as ethics questions",
+              "The coach documents each referral in a standardized format retained for seven years",
+              "The coach obtains written clinician approval before continuing with a referred client",
+              "The coach suspends the coaching relationship until licensed care has concluded",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Boundaries, consultation, and the framing of scope questions as ethics questions. Referral is treated as ongoing professional posture, not paperwork or suspension.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "What does the outline say specifically about counseling on substance abuse?",
+            options: [
+              "It is beyond the coach's scope of practice, and appropriate professional referral is the move",
+              "It is within scope where the coach has completed addiction-specific continuing education",
+              "It is within scope for prevention, and outside it only once dependence is diagnosed",
+              "It is within scope where the client is concurrently engaged with a treatment program",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Flatly beyond scope, with referral as the response. Note also Colorado's exemption names addiction counseling as one of its six defined practices, so the two frameworks agree.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "What does the NBHWC Code of Ethics require regarding conflicts of interest?",
+            options: [
+              "Open disclosure to everyone involved, plus an offer to step aside when one arises",
+              "Disclosure to the client alone, with documentation retained in the coaching file",
+              "Avoidance of any engagement where a potential conflict could conceivably arise",
+              "Disclosure to the certifying board within thirty days of the conflict being identified",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Disclose openly to everyone involved and offer to step aside. The offer is the part most often omitted, and it is what makes the disclosure meaningful.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "When must compensation from third parties, referral fees, or product sales be disclosed?",
+            options: [
+              "Before coaching begins",
+              "Within the first three sessions of the engagement",
+              "At the point the compensation is actually received",
+              "Only where the arrangement could influence a specific recommendation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Before coaching begins. Disclosing later, or only when the money arrives, defeats the purpose: the client should know before deciding to engage.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "What does the Code of Ethics require of a coach who also holds a clinical credential?",
+            options: [
+              "Commitment to the ethics code and standards of practice of EACH profession, understanding the scope parameters of each",
+              "Commitment to whichever profession's standards are stricter on any given question",
+              "Suspension of the clinical credential while acting in a coaching capacity",
+              "Written notice to both certifying bodies that dual practice is being undertaken",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Each profession's code and standards, with the scope parameters of each understood. This is the formal version of the course's two-hats rule.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "What duty did the November 2025 update to the NBHWC Code of Ethics add?",
+            options: [
+              "Disclosing the use of artificial intelligence in delivering coaching, including how it may affect client privacy",
+              "Disclosing whether coaching sessions are recorded and how long recordings are retained",
+              "Disclosing the coach's supervision arrangements and the identity of their supervisor",
+              "Disclosing any use of client data in research, marketing, or program evaluation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "AI disclosure, explicitly including its privacy implications. It is the code's most modern duty and one this program treats as directly relevant to how it was itself built.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "What four situations does ACE's material direct health coaches to refer for?",
+            options: [
+              "Serious physical illness, disordered eating, suicidal ideation, and severe psychological distress",
+              "Serious physical illness, medication questions, disordered eating, and family conflict",
+              "Suicidal ideation, substance use, chronic pain, and any psychiatric diagnosis",
+              "Disordered eating, severe distress, insurance questions, and any request for a meal plan",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Those four. Each is observable in a coaching conversation without diagnosing anything, which is what makes them usable as triggers.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "What posture does NASM teach when work hedges toward diagnosis or treatment?",
+            options: [
+              "Support the client in engaging their physician or therapist, rather than working the condition",
+              "Continue coaching while monitoring the condition and documenting any change",
+              "Pause the engagement until the client produces clearance from a treating clinician",
+              "Refer only where the client explicitly asks for help with the condition",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Support the client's engagement with licensed care and do not work the condition. Note it is support, not pausing the relationship and not waiting to be asked.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "What are the four parts of a referral that keeps the relationship?",
+            options: [
+              "Name the observation without diagnosing; state your lane; offer concrete next steps; keep coaching what remains yours",
+              "Express concern; recommend a specific provider; schedule a follow-up; document the conversation",
+              "Ask permission to raise it; describe the risk; obtain consent; transfer the file",
+              "Name the diagnosis you suspect; explain the evidence; refer; suspend the engagement",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Observe without diagnosing, state what is and is not yours, offer concrete next steps, and keep coaching the rest. The last part is what makes it a handoff rather than a dismissal.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "What concrete next step does the lesson name for imminent risk in the United States?",
+            options: [
+              "The 988 Suicide & Crisis Lifeline",
+              "The nearest emergency department's psychiatric intake line",
+              "The client's primary care physician's after-hours service",
+              "A licensed therapist search through the client's insurance directory",
+            ],
+            correctIndex: 0,
+            explanation:
+              "988 is the concrete step for imminent risk. A therapist search and a physician visit are the next steps for non-imminent concerns.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "The lesson names two ways a referral is done badly. What are they?",
+            options: [
+              "It abandons the client, or it quietly keeps the out-of-scope work",
+              "It happens too early, or it names a diagnosis the coach cannot make",
+              "It is delivered in writing, or it omits a specific provider recommendation",
+              "It transfers the whole relationship, or it fails to document the client's response",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Abandonment and quiet retention are the two failure modes, and the lesson calls retention the worse of them. Both are failures of the same skill.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "What is a 'warm handoff' as this course defines it?",
+            options: [
+              "A referral done as a skill: observe without diagnosing, state your lane, offer next steps, keep coaching what remains",
+              "A referral in which the coach speaks directly to the receiving clinician before the client does",
+              "A referral accompanied by the coach's written notes on the client's history",
+              "A referral in which the coach remains present during the client's first clinical appointment",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It names the four-part skill, not a logistical arrangement. What makes it warm is that the relationship survives it.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "What is the difference between a referral trigger and a red flag?",
+            options: [
+              "The trigger is the sign obligating referral; the red flag is the observable cue behind it",
+              "The trigger is client-reported; the red flag is observed by the coach directly",
+              "The trigger is clinical; the red flag is behavioral and lower in severity",
+              "The trigger requires immediate action; the red flag is logged and reviewed later",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Red flags are what you notice, such as disclosed suicidal ideation or function-impairing distress; triggers are what those observations obligate you to do.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "How does the referral duty apply to self-coaching, per this lesson?",
+            options: [
+              "Identically: persistent symptoms, mood changes outlasting their circumstances, or pain that alters function are triggers whether the client is a stranger or the mirror",
+              "Loosely, since a coach applying the framework to themselves has full context a stranger lacks",
+              "Not at all, since referral duties govern professional relationships rather than personal health",
+              "Only for the crisis triggers, since the others assume an observer's perspective",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The rule is identical, and the lesson names the triggers explicitly. Having full context is exactly what makes self-referral harder, not looser.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "A client mentions their drinking has increased and they have tried twice to cut back. What is the correct response?",
+            options: [
+              "Refer, since substance-use counselling is beyond scope, while remaining supportive within the coaching lane",
+              "Coach the reduction as a behavior-change goal, since the client raised it themselves",
+              "Apply the WELL-01 habit tools, since the client is describing a habit rather than dependence",
+              "Wait for a further disclosure before acting, since two attempts is not a clinical threshold",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The NBHWC outline names this territory directly: counselling on substance abuse is beyond scope. The coach refers and stays supportive within the lane, rather than reframing it as an ordinary habit goal.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "A coach sells a supplement line and is coaching a client on nutrition behavior. What does the ethics code require?",
+            options: [
+              "Disclosure of the product-sale income before coaching begins, plus an offer to step aside",
+              "Disclosure only if the coach recommends a product from that line during the engagement",
+              "Cessation of all product sales for the duration of the coaching relationship",
+              "Disclosure to the certifying body, which reviews whether the arrangement is permissible",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Product-sale income is named among the disclosures owed before coaching begins, and the conflict-of-interest duty adds the offer to step aside. Recommending a product is not the trigger; the interest itself is.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "Why does the course treat scope questions as ethics questions rather than legal ones alone?",
+            options: [
+              "Because the NBHWC outline frames them that way, building consultation and boundaries into the craft",
+              "Because legal answers vary by state while ethical answers are uniform nationally",
+              "Because ethics complaints are more common than legal actions against coaches",
+              "Because a coach without a license has no legal exposure, only professional exposure",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The outline's own framing puts boundaries, consultation, and referral inside the ethics domain. The claim that an unlicensed coach has no legal exposure is simply false, as the Colorado and Michigan lessons show.",
+            sourceLessonSlug: "referral-duties",
+          },
         ],
       },
     },
@@ -491,7 +2233,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
     // ── Section 3 ────────────────────────────────────────────────────────────────────────────
     {
       slug: "how-the-program-fits",
-      title: "9 · The eight courses, and how they build on what you hold",
+      title: "9 · The nine courses, and how they build on what you hold",
       section: "Section 3 · Working the program",
       body: `The program is a single linear path. Each course assumes everything before it.
 
@@ -504,6 +2246,8 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
 **WELL-04, Recovery and Stress**, and **WELL-05, Sleep**, cover the pillars your certifications skip, with the evidence graded honestly, including where popular recovery claims outrun their data.
 
 **WELL-06, Mental and Emotional Well-being**, walks the closest to the therapy boundary, which is why it comes after the scope training and repeats it.
+
+**WELL-07, Movement, Intensity, and Learning New Things**, returns to movement with the three questions WELL-02 treated as one: how much, how hard, and how new. It is late in the sequence because its novelty evidence is graded separately for cognition, falls, and lifespan, and that grading needs the evidence literacy the earlier courses build.
 
 **WELL-99, the Centenarian Capstone**, is yours: the longevity evidence base, the claims and their critiques, and a final project in which you build and coach your own centenarian protocol using every tool in the program.
 
@@ -533,21 +2277,21 @@ Where this program touches courses you already have here, it bridges instead of 
 
 **What the platform does.** Every quiz here serves at most 10 questions per attempt, drawn from a larger pool, with answer options shuffled on every attempt. Retakes draw a fresh subset. So there is no single 100-question sitting in this program, and it would be dishonest to imitate one badly.
 
-**What this program does instead.** Section knowledge checks draw from pools of roughly a dozen questions. Each course ends in a final drawing 10 from a pool of 30 to 60. The passing score is 80, deliberately higher than the 70 NASM's CWC exam uses, because this program's finals are retakeable, unproctored, and open-book by nature; an honest self-administered exam compensates with a higher bar (National Academy of Sports Medicine, n.d.).
+**What this program does instead.** Section knowledge checks draw 5 questions from a pool sized to what the section actually teaches, roughly 40 to 100. That ratio is the point: drawing 5 from 60 means a retake is a genuinely different quiz, and no amount of retaking converts the pool into a memorized list. Each course ends in a final drawing 10 from a pool of 30 to 60. The passing score is 80, deliberately higher than the 70 NASM's CWC exam uses, because this program's finals are retakeable, unproctored, and open-book by nature; an honest self-administered exam compensates with a higher bar (National Academy of Sports Medicine, n.d.).
 
-**The mock-exam week.** When all eight courses are complete, the capstone prescribes one sitting in which you retake every course final back to back: eight finals, 10 fresh-drawn questions each, 80 questions across the program in one session. That is this program's equivalent of a certification exam day, and it is honest about being an equivalent rather than the thing itself.
+**The mock-exam week.** When all nine courses are complete, the capstone prescribes one sitting in which you retake every course final back to back: nine finals, 10 fresh-drawn questions each, 90 questions across the program in one session. That is this program's equivalent of a certification exam day, and it is honest about being an equivalent rather than the thing itself.
 
 **Why every question carries a review link.** Each quiz question names the lesson that teaches its answer. A missed question is an instruction: reread that lesson, not the whole course. Scores here measure your learning, not your standing with any board, and the program never pretends otherwise.
 
 :::reveal Why is the passing score 80 when NASM's own exam passes at 70? ||| Because this program's finals are retakeable, unproctored, and effectively open-book. A self-administered exam compensates for softer conditions with a higher bar, and says so.
 
-:::reveal What is the mock-exam week, mechanically? ||| One sitting after all eight courses: retake every course final back to back, 10 freshly drawn questions each, 80 questions total. It is this program's honest equivalent of an exam day, not a claim to be one.
+:::reveal What is the mock-exam week, mechanically? ||| One sitting after all nine courses: retake every course final back to back, 10 freshly drawn questions each, 90 questions total. It is this program's honest equivalent of an exam day, not a claim to be one.
 
 ## Vocabulary
-- **Question pool**: the full set of questions a quiz owns, from which each attempt draws a subset; this program's finals pool 30 to 60.
+- **Question pool**: the full set of questions a quiz owns, from which each attempt draws a subset; this program's section checks pool 40 to 100 and its finals 30 to 60.
 - **Fresh draw**: a retake's new subset from the pool, which is what makes a second attempt measure retention instead of recognition.
 - **Passing-score calibration**: setting the bar to the exam's conditions; 80 here, above NASM's 70, because retakeable open-book finals owe a higher standard.
-- **Mock-exam week**: the capstone's prescribed single sitting of all eight course finals back to back, this program's honest equivalent of a certification exam day.
+- **Mock-exam week**: the capstone's prescribed single sitting of all nine course finals back to back, this program's honest equivalent of a certification exam day.
 
 ## Sources
 National Academy of Sports Medicine. (n.d.). *Certified wellness coach*. https://www.nasm.org/products/certified-wellness-coach`,
@@ -584,6 +2328,538 @@ And one program-specific practice: you are the first client. Each course ends wi
             "Check-yourself cards (retrieval practice with honest self-grading), quick recall (spaced retrieval of the prior lesson), notes and highlights (pin scope boundaries to your own cases), and pooled finals (take twice, a week apart, to measure retention).",
         },
       ],
+    },
+    {
+      slug: "quiz-working-the-program",
+      title: "12 · Knowledge check: working the program",
+      section: "Section 3 · Working the program",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "How is the WELL program sequenced?",
+            options: [
+              "A single linear path in which each course assumes everything before it",
+              "Two parallel tracks, one coaching and one physiological, joined at the capstone",
+              "A core of three required courses with the remainder taken in any order",
+              "A spiral in which each pillar is revisited at increasing depth three times",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One linear path, each course assuming its predecessors. That is why the scope training sits in WELL-00 and the course walking closest to the therapy line sits at WELL-06.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "What does WELL-00 cover?",
+            options: [
+              "The frame: role, scope, law, referral, and the study system",
+              "The five wellness pillars in summary, ahead of their full treatment",
+              "Behavior-change science, as the foundation every later course applies",
+              "The longevity evidence base, previewed before the pillars are taught",
+            ],
+            correctIndex: 0,
+            explanation:
+              "WELL-00 is the frame. Behavior-change science is WELL-01's job and the longevity evidence belongs to the capstone.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "Why is WELL-01 described as the reason the program exists?",
+            options: [
+              "It carries the behavior-change science and coaching craft none of the learner's certifications hold",
+              "It is the only course whose content maps directly onto the NBHWC board exam's coaching-process domain",
+              "It is the prerequisite the other courses formally require before enrollment",
+              "It contains the scope and referral training the whole program depends on",
+            ],
+            correctIndex: 0,
+            explanation:
+              "CPT, CNC, and CES carry exercise science and nutrition; none carries the coaching craft. That gap is what WELL-01 fills, and everything after it applies its tools. The scope training is WELL-00's.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "Why are WELL-02 and WELL-03 the shortest courses in a wellness-coaching program?",
+            options: [
+              "They teach only the coaching layer, since the learner's CPT, CES, and CNC already carry the content",
+              "Movement and nutrition carry the thinnest evidence base of the five pillars, so there is less to say",
+              "They are optional bridges most learners skip if their certifications are current",
+              "Their material is examined at the lowest weight in the NBHWC content outline",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They are deliberate thin bridges: the coaching conversation, the adherence evidence, and the applied scope lines, with not a gram of the content re-taught. Re-teaching would pad the program without adding capability.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "What is a 'thin bridge' in this program's vocabulary?",
+            options: [
+              "A course kept short because it teaches only the coaching layer over content another credential covers",
+              "A lesson that summarizes a longer course elsewhere in this catalog, so a learner can review it without enrolling",
+              "A short course inserted between two dense ones to reduce cognitive load",
+              "A pillar taught at introductory depth because its evidence remains contested",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Thin bridge names a deliberate design: the course adds the coaching layer and points back to the existing credential for everything underneath it.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "What do WELL-04 and WELL-05 cover, and what is notable about how?",
+            options: [
+              "Recovery/stress and sleep: pillars the learner's certifications skip, with evidence graded honestly including where popular recovery claims outrun their data",
+              "Recovery/stress and sleep: pillars taught as settled science, since both rest on unusually strong randomized evidence that the popular literature reports accurately",
+              "Nutrition and movement in greater depth, correcting oversimplifications in the CPT and CNC material",
+              "Mental health and social connection, positioned before the therapy-boundary training",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Recovery and sleep are genuine gaps in a CPT/CNC/CES education, and both are pillars where popular claims outrun the data, so the courses grade the evidence rather than selling it.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "Why does WELL-06 come late in the sequence?",
+            options: [
+              "It walks closest to the therapy boundary, so it follows the scope training and re-applies it",
+              "Its material is the most difficult, so it benefits from the study habits built earlier",
+              "It depends on the recovery and sleep physiology taught immediately before it",
+              "Its crisis protocols require the referral practice logged in earlier courses",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Sequencing here is about scope safety: the course that works nearest the therapy line comes after the scope and referral training, and repeats it throughout.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "What three questions does WELL-07 separate that WELL-02 treated as one?",
+            options: [
+              "How much movement, how hard, and how new",
+              "How much movement, how often, and how measured",
+              "How hard, how long, and how well recovered",
+              "How much, how enjoyable, and how sustainable",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Dose, intensity, and novelty. WELL-02 handles movement behavior as a single coaching question; WELL-07 splits it because the evidence for each differs.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "Why does WELL-07 sit late in the sequence rather than beside WELL-02?",
+            options: [
+              "Its novelty evidence is graded separately for cognition, falls, and lifespan, which needs the evidence literacy earlier courses build",
+              "Its content depends directly on the sleep architecture and recovery physiology taught across WELL-04 and WELL-05, which must come first",
+              "It was added to the program after the other courses were already written and sequenced",
+              "Its wearable material assumes the tracker-validity training delivered in WELL-05",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The stated reason is the separate grading of novelty evidence across three outcomes, which requires evidence literacy the earlier courses build. Chronology of authoring is not a curriculum rationale.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "What distinguishes WELL-99 from every other course in the program?",
+            options: [
+              "It is a capstone with a project: build and coach your own centenarian protocol using every tool taught",
+              "It is the only course whose final examination is proctored, non-retakeable, and scored against a higher passing threshold",
+              "It is the only course that grants a credential on completion",
+              "It is the only course drawing on primary sources rather than secondary summaries",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The capstone's defining feature is the project. Every course in the program draws on primary sources, no course grants a credential, and no final is proctored.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "How does WELL handle skills already taught by other courses in this catalog?",
+            options: [
+              "It bridges rather than duplicates, so one skill lives in one place",
+              "It re-teaches them in a wellness-specific framing for continuity",
+              "It requires those courses as formal prerequisites before enrollment",
+              "It omits them entirely and leaves the learner to discover the overlap",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Goal-setting drills link to the WOOP course and wearable-metric coaching links to the body-data course. One skill, one home, with links rather than copies.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "Which existing course does WELL link to for goal-setting drills?",
+            options: [
+              "The WOOP course",
+              "The body-data course",
+              "The read-your-body's-data course",
+              "The dental-health course",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Goal-setting bridges to WOOP; wearable-metric coaching bridges to the body-data course. Each skill keeps a single home.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "What does 'linear path' mean as this program uses it?",
+            options: [
+              "Each course assumes everything before it, which is why scope training precedes the therapy-adjacent course",
+              "Lessons within a course must be completed in the authored order before that course's final examination unlocks",
+              "The program has no optional content, so every learner completes identical material",
+              "Progress is measured cumulatively rather than per course",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Linear path describes dependency between COURSES. Its practical consequence is the sequencing decision: scope first, therapy-adjacent material later.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "How many questions does the platform serve per quiz attempt at most, and how are they chosen?",
+            options: [
+              "At most 10, drawn from a larger pool, with options shuffled on every attempt",
+              "Exactly 10, presented in authored order, with options fixed for scoring consistency",
+              "At most 20, drawn from the full pool, with options shuffled only on retakes",
+              "All questions in the pool, with the score computed from the best 10",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Ten is the ceiling, the subset is drawn from a larger pool, and options shuffle on every attempt. Retakes draw a fresh subset.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "Why does the program say it would be dishonest to imitate a single 100-question sitting?",
+            options: [
+              "Because the platform serves at most 10 questions per attempt, so no such sitting exists here",
+              "Because a 100-question sitting requires the proctoring and identity verification this platform does not provide",
+              "Because certification exams are copyrighted and cannot be imitated in format",
+              "Because pooled questions cannot be scored reliably at that volume",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The constraint is mechanical: the platform's serving cap is 10. Rather than fake a format it cannot deliver, the program states what it actually does.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "How are section knowledge checks sized and served in this program?",
+            options: [
+              "Five questions drawn from a pool of roughly 40 to 100, sized to what the section teaches",
+              "Ten questions drawn from a fixed pool of roughly a dozen, identical in every section regardless of length",
+              "Five questions drawn from a pool of exactly 100 in every section",
+              "Eight questions drawn from a pool of 30 to 60, matching the finals",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The pool scales with what the section actually teaches, roughly 40 to 100, and each attempt serves 5. Drawing 5 from 60 is what makes a retake a genuinely different quiz.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "What is the stated point of the ratio between pool size and questions served?",
+            options: [
+              "No amount of retaking converts the pool into a memorized list",
+              "It keeps average scores stable across attempts for fair comparison",
+              "It reduces the authoring burden while preserving apparent variety",
+              "It matches the sampling ratio used by accredited certification exams",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The ratio is what defeats memorization. Drawing 5 from 60 means a retake is a different quiz, not the same quiz in a different order.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "How is each course final structured?",
+            options: [
+              "Ten questions drawn from a pool of 30 to 60",
+              "Ten questions drawn from a pool of 40 to 100",
+              "Twenty questions drawn from a pool of 60 to 120",
+              "Ten questions covering one lesson from each section",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Finals draw 10 from a pool of 30 to 60. The 40-to-100 range belongs to section knowledge checks, which serve 5.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "What is the passing score in this program, and why is it set there?",
+            options: [
+              "80, above NASM's 70, because these finals are retakeable, unproctored, and open-book by nature",
+              "80, matching the NBHWC board examination's published cut score, so results stay comparable between the two",
+              "70, matching NASM's CWC, so scores remain comparable across programs",
+              "80, because pooled questions are statistically easier than fixed-form ones",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The bar is calibrated to the CONDITIONS. Softer conditions than a proctored exam are compensated with a higher standard, and the program says so rather than hiding it.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "What is 'passing-score calibration' as this course defines it?",
+            options: [
+              "Setting the bar to the exam's conditions, so open-book retakeable finals owe a higher standard",
+              "Adjusting the cut score after each cohort so pass rates stay within a target band",
+              "Matching the passing score to the certifying body a program benchmarks against",
+              "Weighting each question by difficulty before computing the percentage",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Calibration here means matching the bar to the conditions, not to cohorts, competitors, or item difficulty. Eighty compensates for retakeable, unproctored, open-book delivery.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "Describe the mock-exam week mechanically.",
+            options: [
+              "One sitting after all nine courses: every course final back to back, 10 fresh-drawn questions each, 90 total",
+              "One sitting after all nine courses: every course final back to back, 20 questions each, 180 total",
+              "One week in which a single course final is retaken daily until each is passed at 80",
+              "One sitting of a separate 90-question comprehensive exam drawn from all nine pools",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Nine finals, ten freshly drawn questions each, ninety questions in one session. It reuses the existing finals rather than adding a separate exam.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "What does the program claim the mock-exam week is?",
+            options: [
+              "An honest equivalent of a certification exam day, explicitly not the thing itself",
+              "A practice sitting that predicts NBHWC board-exam performance",
+              "The final requirement before the program's specialization credential is issued",
+              "A diagnostic that identifies which credential the learner should pursue next",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is framed as an equivalent and honest about being one. No credential follows it, and it makes no predictive claim about any board's exam.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "Why does every quiz question name the lesson that teaches its answer?",
+            options: [
+              "So a missed question is an instruction to reread that lesson rather than the whole course",
+              "So the platform can compute which lessons are hardest across the whole learner population and flag them for rewriting",
+              "So learners can dispute a question by checking the source material directly",
+              "So the question can be retired if its lesson is later revised",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The review link turns a wrong answer into a specific next action. That is the stated purpose: targeted rereading, not course-wide repetition.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "What do scores in this program measure?",
+            options: [
+              "Your learning, and explicitly not your standing with any board",
+              "Your readiness to sit the NBHWC board examination, calibrated against its published cut score",
+              "Your standing relative to other learners in the same cohort",
+              "Your eligibility for the program's specialization credential",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Scores measure learning. The program is independent and grants no credential, so a score cannot represent standing with a board, and there is no cohort comparison.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "What is a 'fresh draw,' and what does it make possible?",
+            options: [
+              "A retake's new subset from the pool, so a second attempt measures retention, not recognition",
+              "The first attempt at a quiz, before any question has been seen",
+              "A pool refreshed with newly authored questions after a lesson is revised",
+              "A draw weighted toward questions the learner previously missed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Fresh draw is what a retake gets: different questions from the same pool. Without it a second attempt would measure memory of the first attempt's items.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "How many study instruments does the platform give you, and what happens if you use them all?",
+            options: [
+              "Four, and the program roughly doubles in value",
+              "Three, and retention improves by roughly a third",
+              "Four, and the finals become optional",
+              "Five, and the capstone can be attempted early",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Four instruments: check-yourself cards, quick recall, notes and highlights, and the finals used as instruments. The lesson's claim is that using all four roughly doubles the program's value.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "What are the collapsed check-yourself cards inside lessons, mechanically?",
+            options: [
+              "Retrieval practice: answer before revealing, then grade yourself honestly",
+              "Summaries provided so a learner can skip the surrounding prose",
+              "Graded questions that contribute to the course's final score",
+              "Optional extensions covering material outside the lesson's scope",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They are retrieval practice, and the instruction is to answer BEFORE revealing. Revealing first converts a learning event into reading.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "What do the self-graded card answers feed, and what does it signal?",
+            options: [
+              "Recall accuracy on the dashboard, the earliest signal that a section did not stick",
+              "The course's final score, weighted at a fraction of the quiz total",
+              "The platform's recommendation engine, which suggests the next course",
+              "The instructor's review queue, which flags lessons for rewriting",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Grades feed recall accuracy on the dashboard. Its value is timing: it surfaces a gap before a quiz does.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "What is 'quick recall,' and why does the lesson insist you not skip it?",
+            options: [
+              "Lessons that open by quizzing the previous lesson; spaced retrieval is the cheapest learning multiplier available",
+              "A rapid summary at each lesson's start; it reduces the time needed to read the lesson",
+              "A timed drill before each final; it simulates exam-day time pressure",
+              "A dashboard widget listing recent lessons; it helps you resume where you stopped",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Quick recall is spaced retrieval of the PRIOR lesson, and the lesson calls it the cheapest learning multiplier in the building. Skipping it discards the largest free gain on offer.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "What is 'spaced retrieval'?",
+            options: [
+              "Recalling material again after a delay, as the quick-recall openers do with the prior lesson",
+              "Spreading study sessions evenly across the week regardless of content",
+              "Reviewing material immediately after reading it, while it is still fresh",
+              "Alternating between two subjects so neither becomes monotonous",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two elements: recall from memory, and a delay before doing it. Immediate review lacks the delay; even scheduling and subject alternation are not retrieval at all.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "The lesson gives two program-specific suggestions for notes. What are they?",
+            options: [
+              "Annotate every scope boundary with a situation from your own practice, and keep a running list of claims to check against the primaries",
+              "Summarize each lesson in one sentence, and record the time spent on each section",
+              "Copy every vocabulary term into a single file, and tag each by pillar",
+              "Note every effect size encountered, and rank the pillars by evidence strength",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both suggestions convert reading into your own material: boundaries anchored to real situations you have faced, and a verification queue against the sources cited at the bottom of every lesson.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "How does the lesson tell you to use each course final as an instrument?",
+            options: [
+              "Take it immediately on finishing the course, then again a week later",
+              "Take it once, and only retake it if the score falls below 80",
+              "Take it before starting the course as a diagnostic, then again at the end",
+              "Take it three times in one sitting and average the scores",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Immediately, then again a week later. The second attempt draws different questions, so the gap between the two scores is the honest retention signal.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "Why does the week-later retake measure something the first attempt cannot?",
+            options: [
+              "It draws different questions from the pool, so it tests retention rather than memory of the first attempt",
+              "It is taken without access to notes, so it removes the open-book advantage",
+              "It is scored against a higher passing threshold than the first attempt",
+              "It includes questions from later courses, so it tests transfer",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The fresh draw is the whole mechanism. Same questions a week later would measure how well you remembered the questions, which is not the same as knowing the material.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "What is the difference between retention and recognition as this lesson uses the terms?",
+            options: [
+              "Remembering the material versus remembering the question",
+              "Remembering a fact versus being able to apply it in a session",
+              "Long-term memory versus working memory",
+              "Recalling a definition versus recalling its source citation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Recognition is remembering the item; retention is knowing the material. A fresh-draw retake separates them, which is why the pools exist.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "What is the one program-specific practice the study lesson adds beyond the four instruments?",
+            options: [
+              "You are the first client: apply each course's ending to your own week, because the capstone assumes you did",
+              "Keep a coaching log of practice sessions, because the capstone requires fifty",
+              "Read each course's primary sources in full before starting its lessons",
+              "Discuss each pillar with a licensed clinician before applying it to yourself",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The centenarian frame again: each course ends with something to apply to your own week, and the capstone builds on the assumption that you did the applying.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "What is 'recall accuracy' on the dashboard?",
+            options: [
+              "A running measure of self-graded card answers, the earliest signal a section did not stick",
+              "The percentage of quiz questions answered correctly across all courses",
+              "The proportion of lessons completed without revisiting an earlier one",
+              "A comparison of your first and second final-exam attempts",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is built from the check-yourself cards you grade yourself on, which is why honest self-grading matters: an inflated grade destroys the signal it exists to give.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "A learner reveals each check-yourself answer before attempting it, reasoning that reading the answer teaches the same content. What is wrong with that?",
+            options: [
+              "The struggle to recall is the learning event, so revealing first converts practice into reading",
+              "The platform records the reveal as an incorrect answer, lowering recall accuracy",
+              "Revealed cards are excluded from the dashboard, so progress is not tracked",
+              "The cards contain material not otherwise covered, so the lesson is incomplete without them",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Retrieval practice works because retrieval is effortful. Reading an answer you did not try to produce feels like learning and mostly is not.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "Which instrument does the lesson describe as pinned to a selected passage?",
+            options: [
+              "Notes and highlights",
+              "Check-yourself cards",
+              "Quick recall",
+              "The course finals",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Selecting any passage lets you pin a note to it. The other three instruments are the in-lesson cards, the prior-lesson openers, and the pooled finals.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "You score 62 on a course final. What does the program's own framing tell you to do?",
+            options: [
+              "Treat it as an instruction about which lessons to reread, using each question's review link",
+              "Retake the course from the beginning before attempting the final again",
+              "Record it as a failure and proceed, since scores carry no external standing",
+              "Wait a full week before any retake, so the second attempt measures retention",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Every question names the lesson that teaches its answer, so a low score resolves into a specific reading list. The week-later retake is a separate practice for measuring retention, not the response to a low score.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "Which statement about this program's assessment is accurate?",
+            options: [
+              "It shows its seams deliberately, stating what the platform can and cannot do",
+              "It replicates the NASM CWC exam format at a higher passing score",
+              "It is proctored at the capstone stage to preserve the mock exam's integrity",
+              "It withholds review links on finals so the exam measures unaided knowledge",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson's whole posture is disclosure: here is the serving cap, here are the pools, here is why the bar is 80, and here is why the mock exam is an equivalent rather than the thing itself.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+        ],
+      },
     },
     {
       slug: "final-orientation-scope",
@@ -775,6 +3051,318 @@ And one program-specific practice: you are the first client. Each course ends wi
             explanation:
               "Referral triggers apply whether the client is a stranger or the person in the mirror: persistent, function-altering symptoms get professional eyes. Your CES knowledge informs the conversation; it does not replace the referral.",
             sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "Which pairing correctly matches a credential with its kind of claim?",
+            options: [
+              "NBHWC board certification; ACE accredited certification; NASM CWC private certification; ACLM clinician certification plus coach education",
+              "NBHWC accredited certification; ACE board certification; NASM CWC clinician certification; ACLM private certification",
+              "All four are private certifications differing only in their examination format and prerequisites",
+              "NBHWC and ACE are both board certifications; NASM and ACLM are both education providers",
+            ],
+            correctIndex: 0,
+            explanation: "Four different claims behind one phrase. Identifying which one is the first question to ask when someone says 'certified wellness coach'.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "A client with a physician's treatment plan asks you to adjust it. What does the scope permit?",
+            options: [
+              "Supporting implementation under or alongside that professional's license",
+              "Reviewing it for behavioural feasibility and proposing adjustments to the physician directly",
+              "Translating it into weekly targets you then monitor and modify as needed",
+              "Setting it aside so the coaching goals remain fully self-determined by the client",
+            ],
+            correctIndex: 0,
+            explanation: "Support implementation, never modify. Adjusting treatment belongs to the license that wrote it.",
+            sourceLessonSlug: "what-a-wellness-coach-is",
+          },
+          {
+            prompt: "Which activity is INSIDE the coaching scope?",
+            options: [
+              "Teaching a client to read a nutrition-facts label from published guidelines",
+              "Setting a macronutrient target for a client managing prediabetes",
+              "Recommending a magnesium supplement for a client's reported poor sleep",
+              "Adjusting the carbohydrate distribution a registered dietitian prescribed",
+            ],
+            correctIndex: 0,
+            explanation: "Label teaching runs through the recognized-authority education channel. The other three are three of the four tells that you have left the lane.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "How does the NBHWC content outline weight its four domains?",
+            options: [
+              "Coaching structure 17-23%, coaching process 47-53%, health and wellness 17-23%, ethics and legal 7-13%",
+              "Coaching structure 25%, coaching process 15%, health and wellness 25%, ethics and legal 20%",
+              "Coaching structure 17-23%, coaching process 17-23%, health and wellness 47-53%, ethics 7-13%",
+              "All four domains are weighted equally at 25 percent each",
+            ],
+            correctIndex: 0,
+            explanation: "Nearly half the exam is the coaching PROCESS, ahead of health content. That weighting is the board's theory of what the profession is.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What does Michigan's exemption require, and what does Colorado's?",
+            options: [
+              "Michigan: not MNT and no protected titles. Colorado: coach-specific training, exclusively coaching, none of six defined practices",
+              "Michigan: coach-specific training and no protected titles. Colorado: not MNT and exclusively coaching",
+              "Both require coach-specific training and avoidance of protected titles",
+              "Michigan: registration with the state. Colorado: supervision by a licensed clinician",
+            ],
+            correctIndex: 0,
+            explanation: "Two conditions in Michigan, three in Colorado, and title protection sits OUTSIDE the Colorado exemption in subsection (1).",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "What did the Fourth Circuit actually decide in Cooksey v. Futrell?",
+            options: [
+              "That the board's actions had an objectively reasonable chilling effect, giving Cooksey standing",
+              "That North Carolina's dietetics practice act violated the First Amendment as applied",
+              "That individualized dietary advice is protected speech regardless of licensure",
+              "That state boards may not regulate advice delivered over the internet",
+            ],
+            correctIndex: 0,
+            explanation: "Standing, not the merits. He could SUE. The suit ended in February 2015 when the board changed its guidelines.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "What is the functional test, and where does it apply hardest?",
+            options: [
+              "Regulators evaluate what you DO, not what you call it; hardest at the coaching-therapy boundary",
+              "Regulators evaluate your credentials against the activity performed; hardest in nutrition work",
+              "Regulators assess whether a client was harmed; hardest where clinical populations are involved",
+              "Regulators check whether protected titles were used; hardest in marketing materials",
+            ],
+            correctIndex: 0,
+            explanation: "Labels never launder out-of-scope work. Marketing 'anxiety coaching' while doing deep emotional processing can be evaluated as psychotherapy practice.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "Which duty did the November 2025 NBHWC ethics-code update add?",
+            options: [
+              "Disclosing the use of artificial intelligence in delivering coaching, including privacy implications",
+              "Disclosing whether sessions are recorded and how long recordings are kept",
+              "Disclosing the coach's supervision arrangements to every client at intake",
+              "Disclosing any use of client data for research or programme evaluation",
+            ],
+            correctIndex: 0,
+            explanation: "The code's most modern duty, and one this program treats as directly relevant to how it was itself built.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "What are the four parts of a referral that keeps the relationship?",
+            options: [
+              "Name the observation without diagnosing; state your lane; offer concrete next steps; keep coaching what remains",
+              "Express concern; recommend a provider; schedule follow-up; document the conversation",
+              "Ask permission; describe the risk; obtain consent; transfer the file",
+              "Name what you suspect; explain the evidence; refer; suspend the engagement",
+            ],
+            correctIndex: 0,
+            explanation: "The last part is what makes it a handoff rather than a dismissal. A referral done badly either abandons the client or quietly keeps the out-of-scope work.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "How is the program's assessment structured?",
+            options: [
+              "Section checks draw 5 from pools of 40 to 100; finals draw 10 from pools of 30 to 60; passing 80",
+              "Section checks draw 10 from pools of a dozen; finals draw 10 from pools of 14; passing 70",
+              "Section checks draw 5 from 100 in every section; finals draw 20 from 60; passing 80",
+              "All quizzes draw 10 questions from their full pool, with passing set at 80",
+            ],
+            correctIndex: 0,
+            explanation: "The ratio is what defeats memorization: drawing 5 from 60 means a retake is a genuinely different quiz.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "Why is the passing score 80 rather than NASM's 70?",
+            options: [
+              "These finals are retakeable, unproctored, and open-book by nature, so softer conditions owe a higher bar",
+              "The program benchmarks against the NBHWC, whose published cut score is 80",
+              "Pooled questions are statistically easier than fixed-form examination items",
+              "Adult professional education conventionally uses a higher threshold than fitness certifications",
+            ],
+            correctIndex: 0,
+            explanation: "Passing-score calibration: set the bar to the exam's conditions, and say so rather than hiding it.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "Which is the correct sequencing rationale for the nine courses?",
+            options: [
+              "A single linear path where each course assumes its predecessors; WELL-06 comes late because it walks nearest the therapy line",
+              "Two parallel tracks joined at the capstone, with the coaching track taken first",
+              "A core of three required courses followed by five taken in any order",
+              "Courses ordered by evidence strength, with the best-evidenced pillars first",
+            ],
+            correctIndex: 0,
+            explanation: "Linear dependency. WELL-07 also sits late because its novelty evidence is graded separately for cognition, falls, and lifespan.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "Why are WELL-02 and WELL-03 the shortest courses?",
+            options: [
+              "They are thin bridges teaching only the coaching layer over CPT, CES, and CNC content",
+              "Movement and nutrition have the weakest evidence bases of the six pillars",
+              "They are optional for learners whose certifications are current",
+              "Their material carries the lowest weight in the NBHWC content outline",
+            ],
+            correctIndex: 0,
+            explanation: "Re-teaching content the learner already holds would pad the program without adding capability.",
+            sourceLessonSlug: "how-the-program-fits",
+          },
+          {
+            prompt: "What are the four study instruments, and what does using all four claim to do?",
+            options: [
+              "Check-yourself cards, quick recall, notes and highlights, the finals as instruments; the program roughly doubles in value",
+              "Reading, quizzes, notes, and the capstone project; retention improves by about a third",
+              "Recall cards, spaced repetition, self-testing, and review; the program takes half the time",
+              "Lessons, quizzes, finals, and the mock exam; the learner reaches board-exam readiness",
+            ],
+            correctIndex: 0,
+            explanation: "And the program-specific practice on top: you are the first client, so apply each course's ending to your own week.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "Why take a course final twice, a week apart?",
+            options: [
+              "The second attempt draws different questions, so it measures retention rather than recognition",
+              "The second attempt is taken without notes, removing the open-book advantage",
+              "The gap allows consolidation, which raises the second score reliably",
+              "Two attempts are averaged to reduce the noise from a small question draw",
+            ],
+            correctIndex: 0,
+            explanation: "The fresh draw is the whole mechanism. Same questions a week later would measure how well you remembered the questions.",
+            sourceLessonSlug: "how-to-study",
+          },
+          {
+            prompt: "Which five modalities does the NBHWC scope name as outside coaching?",
+            options: [
+              "CBT, EMDR, Solution Focused Therapy, DBT, Internal Family Systems Therapy",
+              "CBT, EMDR, psychoanalysis, DBT, Acceptance and Commitment Therapy",
+              "CBT, motivational interviewing, DBT, EMDR, Internal Family Systems Therapy",
+              "Psychoanalysis, hypnotherapy, exposure therapy, DBT, Solution Focused Therapy",
+            ],
+            correctIndex: 0,
+            explanation: "With 'other such therapies' swept in behind them. An earlier read of this page recorded four; the current page names five.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "What does an NBHWC-approved program require of practice sessions?",
+            options: [
+              "At least three of at least 30 minutes, each with at least 20 minutes of individual faculty feedback",
+              "At least five of at least 20 minutes, each with written faculty feedback within a week",
+              "At least three of at least 60 minutes, each followed by a group debrief",
+              "At least ten of any length, with feedback on a representative sample",
+            ],
+            correctIndex: 0,
+            explanation: "The individual-feedback requirement is the expensive part and the reason approved programs cost what they do.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What are the three requirements to sit the NBHWC board exam?",
+            options: [
+              "An approved program, 50 logged coaching sessions, and an associate's degree or 4,000 hours of work in ANY field",
+              "An approved program, 100 logged sessions, and a bachelor's degree in a health field",
+              "An approved program, a passing Practical Skills Assessment, and two references",
+              "An accredited certification, 50 logged sessions, and current CPR/AED certification",
+            ],
+            correctIndex: 0,
+            explanation: "The any-field experience alternative is what keeps the pathway open to career changers.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "A hypertensive client asks what sodium target they should hit. What is this?",
+            options: [
+              "A condition question: the target belongs to licensed care, and the adherence work stays yours",
+              "A behaviour question, since sodium intake is an everyday eating pattern",
+              "A wellness question, since hypertension management is primary prevention",
+              "An education question, since sodium guidance appears in published guidelines",
+            ],
+            correctIndex: 0,
+            explanation: "A 'condition in disguise'. Sodium guidance does appear in the guidelines, but a TARGET for a diagnosed condition is therapy.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "What does 'dossier-first' name, and what rule does it enforce?",
+            options: [
+              "Research tools gather candidates; only claims verified against primaries enter a lesson",
+              "Lessons are drafted first, then sources are gathered to support each claim",
+              "Every course begins with a case file followed across all six pillars",
+              "Sources are ranked by citation count and the highest-ranked become the spine",
+            ],
+            correctIndex: 0,
+            explanation: "Claims that failed verification were corrected, cut, or explicitly taught as contested. Agreement between two research tools is not verification.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "What does this program grant on completion?",
+            options: [
+              "Nothing from NASM or NBHWC; it is independent, unaffiliated, unendorsed, and unaccredited",
+              "A specialization credential recognised by both benchmarked organizations",
+              "Continuing-education credit accepted toward NBC-HWC recertification",
+              "Provisional eligibility toward the NBHWC board examination",
+            ],
+            correctIndex: 0,
+            explanation: "Their names appear for one reason: to describe the scope of study. Naming a benchmark honestly is different from claiming a credential.",
+            sourceLessonSlug: "what-this-program-is",
+          },
+          {
+            prompt: "Which faculty rule attaches to at least 15 of the 60 core instructional hours?",
+            options: [
+              "A graduate degree in a health-related field, or a bachelor's plus a state license or national registration",
+              "At least 200 hours of the faculty member's own documented coaching practice",
+              "An active NBC-HWC credential held continuously for three or more years",
+              "Completion of the board's train-the-trainer course in the current cycle",
+            ],
+            correctIndex: 0,
+            explanation: "The 200-hours-of-practice rule and the NBC-HWC rule each attach to 48 hours, not 15.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "What must you already hold to earn ACLM's Lifestyle Medicine Coach certificate?",
+            options: [
+              "An active NBC-HWC or Wellcoaches certification",
+              "An active NASM CWC or ACE Health Coach certification",
+              "A clinical license in any state, plus the completed coursework",
+              "Nothing; the certificate is open to anyone completing the 16.5-hour course",
+            ],
+            correctIndex: 0,
+            explanation: "The COURSE is open to anyone, which is what makes the distinction easy to miss. Without the prerequisite you receive a certificate of attendance.",
+            sourceLessonSlug: "the-credential-landscape",
+          },
+          {
+            prompt: "How should a coach use published guidelines with a client?",
+            options: [
+              "As education and a menu of directions the client picks from, never as a report card",
+              "As a compliance standard the client reviews and signs off on at onboarding",
+              "As a private benchmark the coach tracks without telling the client",
+              "As a substitute for the individualized program a trainer would write",
+            ],
+            correctIndex: 0,
+            explanation: "Guidelines are evidence-based resources from a nationally recognized authority, squarely inside scope as education. Grading a client against them converts education into judgment.",
+            sourceLessonSlug: "who-numbers-as-a-coach",
+          },
+          {
+            prompt: "What is the mock-exam week, mechanically?",
+            options: [
+              "One sitting after all nine courses: every final back to back, 10 fresh-drawn questions each, 90 total",
+              "One sitting after all nine courses: a separate 90-question comprehensive exam",
+              "One final retaken per day across nine consecutive days",
+              "One sitting of all nine finals, with the same questions as the first attempt",
+            ],
+            correctIndex: 0,
+            explanation: "It reuses the existing finals rather than adding an exam, and it is framed as an honest equivalent of a certification exam day rather than the thing itself.",
+            sourceLessonSlug: "the-honest-assessment-model",
+          },
+          {
+            prompt: "A coach markets 'anxiety coaching' while keeping the work behavioural. What is the problem?",
+            options: [
+              "The framing implies treatment and invites clients who need care to buy coaching instead",
+              "The term is restricted to licensed practitioners in most jurisdictions",
+              "Anxiety falls outside coaching scope, so the service cannot lawfully be delivered",
+              "Behavioural work is insufficient for anxiety, so the client will not improve",
+            ],
+            correctIndex: 0,
+            explanation: "Even where the work stays behavioural, the name does the damage before any session happens, and it is a harm the coach then has to notice and undo.",
+            sourceLessonSlug: "therapy-law",
           },
         ],
       },

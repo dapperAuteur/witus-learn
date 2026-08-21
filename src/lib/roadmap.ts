@@ -841,6 +841,20 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   helpers \`standardsHref\` / \`courseJurisdictions\` plus 5 isolation tests. No migration.
 
 ## Content
+- ✅ **WELL-08 Context, Equity, and the Coaching Agreement** (\`feat/well08-context-and-equity\`,
+  plans/67; PRIVATE, owner-only; **no migration**): the tenth WELL course, and the one the
+  adversarial-review verification pass earned. Eight competency clusters in the 2026 NBHWC handbook
+  had zero systematic treatment across the nine existing courses (3.9.9 adapting plans for social
+  determinants; 3.8.3-3.8.5 supports, systemic barriers, health literacy and numeracy;
+  1.2.2.1-1.2.2.4 history, power, cultural humility, own biases; 1.3.2.6-1.3.2.7 neutralizing power
+  dynamics and repairing discord; 1.5.2 the coaching agreement; 2.9 Appreciative Inquiry). 15
+  lessons, four section pools (57/55/100/82) serving 5, and a 40-question final serving 10. **Two
+  lessons are NOT credential coverage and say so in their own prose**: implicit bias and group
+  coaching appear zero times in the handbook and are in on BAM's request. The implicit-bias lesson
+  teaches the null results (Oswald on IAT prediction, Forscher's 492 studies with trivial behavioral
+  change and no mediation, Lai's nine interventions none of which survived a delay) and points at
+  structural fixes instead of introspection. Every figure verified against the primary before
+  writing; a source check is filed on the Appreciative Inquiry evidence label.
 - ✅ **Lesson images that carry their own provenance** (\`feat/figure-directive\`): a new
   \`:::figure <url> ||| <alt> ||| <caption> ||| <credit>\` directive, plus \`pnpm check:figures\` in
   \`pnpm lint\` (a ratchet, no grandfathered list, and none should ever be added). Markdown's own

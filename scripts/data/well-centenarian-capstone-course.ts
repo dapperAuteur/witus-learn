@@ -105,6 +105,439 @@ López-Otín, C., Blasco, M. A., Partridge, L., Serrano, M., & Kroemer, G. (2023
       ],
     },
 
+    {
+      slug: "quiz-the-frame",
+      title: "4 · Knowledge check: the frame",
+      section: "Section 1 · The frame",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What gap defines longevity science today?",
+            options: [
+              "The biology advances fast; no intervention has extended human lifespan in a trial",
+              "The behavioural evidence is strong, but the mechanistic understanding lags behind it",
+              "Animal findings replicate reliably, but human cohort studies contradict them",
+              "Interventions work in trials, but adherence collapses outside research settings",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Everything with strong human evidence is behavioural, observational, or both. Nearly all longevity marketing lives in that gap.",
+            sourceLessonSlug: "what-a-capstone-is-for",
+          },
+          {
+            prompt: "What three things does this capstone do?",
+            options: [
+              "Grades longevity claims, synthesises the six pillars, sets a protocol project",
+              "Reviews the six pillars, tests retention, and issues the program's credential",
+              "Summarises each course, adds new evidence, and prepares the learner for a board exam",
+              "Teaches longevity biology, prescribes a protocol, and measures its effects",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Not a summary. The final quiz is explicitly the smallest part of it.",
+            sourceLessonSlug: "what-a-capstone-is-for",
+          },
+          {
+            prompt: "How does the course distinguish lifespan from healthspan?",
+            options: [
+              "Lifespan is what happens; healthspan is what you coach",
+              "Lifespan is measured in years; healthspan is measured in quality-adjusted years",
+              "Lifespan is genetic; healthspan is behavioural",
+              "Lifespan is the population measure; healthspan is the individual one",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The goal was never an arbitrary number. It is arriving at eighty or ninety with the capacity to do what you want.",
+            sourceLessonSlug: "what-a-capstone-is-for",
+          },
+          {
+            prompt: "Why does this course refuse several famous longevity claims?",
+            options: [
+              "Their primary sources could not be located, or say something different",
+              "They come from animal studies that have not been replicated in humans",
+              "They rest on observational data that cannot establish causation",
+              "They were retracted after publication and remain in circulation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Where that happens, the lesson says so and names what is taught instead. That discipline matters most here, in the pillar with the most money behind its overclaims.",
+            sourceLessonSlug: "what-a-capstone-is-for",
+          },
+          {
+            prompt: "What three tests must a hallmark of aging meet?",
+            options: [
+              "It appears with aging; accentuating it accelerates aging; intervening decelerates it",
+              "It appears with normal aging; it is measurable in humans; it responds to a known drug",
+              "It is present across species; it correlates with lifespan; it can be reversed pharmacologically",
+              "It appears before disease onset; it predicts mortality; it responds to lifestyle change",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Appearance, accentuation, and intervention. Twelve processes currently meet all three in the 2023 revision.",
+            sourceLessonSlug: "the-twelve-hallmarks",
+          },
+          {
+            prompt: "How many hallmarks does the 2023 revision propose, and how many were added?",
+            options: [
+              "Twelve, with four added: inflammation, dysbiosis, intercellular communication, macroautophagy",
+              "Twelve, with three added to the original nine",
+              "Nine, unchanged from the original framework",
+              "Fourteen, with five added to the original nine",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The last three named in the list, plus disabled macroautophagy, are the additions. Knowing the count and the additions is what lets a coach recognise the framework when a product borrows it.",
+            sourceLessonSlug: "the-twelve-hallmarks",
+          },
+          {
+            prompt: "What does the hallmarks framework genuinely give you?",
+            options: [
+              "A map of why aging is not one thing, and why single-target fixes disappoint",
+              "A set of clinical targets a practitioner can measure and address in an individual",
+              "A ranking of which aging processes matter most for human lifespan",
+              "A validated basis for recommending compounds that act on specific pathways",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It explains why the hallmarks interconnect, and why lifestyle factors touching several at once outperform ones touching a single pathway.",
+            sourceLessonSlug: "the-twelve-hallmarks",
+          },
+          {
+            prompt: "What is the limit that matters about the hallmarks?",
+            options: [
+              "A research framework, not a clinical toolkit; no such drug has extended human lifespan",
+              "The framework is contested, with several proposed hallmarks failing the three criteria",
+              "The hallmarks apply to model organisms and have not been observed in humans",
+              "The framework describes aging but offers no candidate interventions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Senolytics, rapamycin analogues, metformin for aging, and NAD precursors rest on animal work and small human pilots, and are medical territory a coach has no business recommending.",
+            sourceLessonSlug: "the-twelve-hallmarks",
+          },
+          {
+            prompt: "Distinguish a mechanism claim from an outcome claim.",
+            options: [
+              "'It activates autophagy' is a pathway; 'people lived longer' is people",
+              "'It activates autophagy' is unproven; 'people who took it lived longer' is established",
+              "A mechanism claim is made by researchers; an outcome claim is made by marketers",
+              "A mechanism claim concerns animals; an outcome claim concerns humans",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Almost nobody selling longevity products is making the second kind of claim, because they cannot. It is the most useful sentence in the course.",
+            sourceLessonSlug: "the-twelve-hallmarks",
+          },
+          {
+            prompt: "What is 'inflammaging'?",
+            options: [
+              "Chronic low-grade inflammation with age, added in the 2023 revision",
+              "The acute inflammatory response to injury, which slows with age",
+              "Inflammation caused by accumulated senescent cells specifically",
+              "The inflammatory component of age-related disease, distinct from aging itself",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One of the four additions. Knowing which are new is part of knowing the framework rather than reciting a list.",
+            sourceLessonSlug: "the-twelve-hallmarks",
+          },
+          {
+            prompt: "What is 'senescence' as a hallmark?",
+            options: [
+              "Cells stop dividing but persist and signal; senolytics target them",
+              "The progressive loss of stem cell populations with age",
+              "The accumulation of DNA damage that triggers cell death",
+              "The gradual shortening of telomeres across cell divisions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Persisting and signalling is what makes senescent cells a target: they are not simply dead, they are actively contributing.",
+            sourceLessonSlug: "the-twelve-hallmarks",
+          },
+          {
+            prompt: "Recite the convergent list from lesson 3.",
+            options: [
+              "Fitness, strength with preserved mass, not smoking, 7-9 hours sleep, social integration, plant-forward eating, everyday movement",
+              "Cardiorespiratory fitness, strength, caloric restriction, sleep, social connection, and a Mediterranean dietary pattern",
+              "Fitness, strength, sleep, connection, fasting, and minimally processed eating",
+              "Exercise, diet, sleep, stress management, social connection, and targeted supplementation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Seven items. Caloric restriction, fasting protocols, and supplements are conspicuously absent, and they appear in the contested section for that reason.",
+            sourceLessonSlug: "what-replicates",
+          },
+          {
+            prompt: "What is notable about the convergent list's shape?",
+            options: [
+              "Unglamorous, unpatentable, behavioural, and almost exactly this program's six pillars",
+              "Consistent with the hallmarks framework, addressing several mechanisms at once",
+              "Derived from randomized trials rather than observational cohorts",
+              "Newly established, with most findings published in the last decade",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The pillars were chosen from a coaching credential's structure, and the epidemiology independently points at the same targets. That convergence is the striking part.",
+            sourceLessonSlug: "what-replicates",
+          },
+          {
+            prompt: "What is missing from the convergent list?",
+            options: [
+              "No supplement, no fasting protocol, no branded lifestyle, no compound",
+              "No dietary specifics, since the traditions vary too widely to generalise",
+              "No mental-health component, which the epidemiology has not established",
+              "No measure of body composition, which cohort studies rarely capture",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Those appear in the next section, and they appear there because the evidence puts them there.",
+            sourceLessonSlug: "what-replicates",
+          },
+          {
+            prompt: "Why is 'associated with' the honest verb even for the strongest findings?",
+            options: [
+              "Nearly all of it is observational; adjustment never eliminates group differences",
+              "The effect sizes are too small to support causal language",
+              "The findings have not been replicated in independent populations",
+              "The mechanisms are not yet understood well enough to claim causation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The findings still carry weight through large effects, graded dose-responses, replication across unrelated populations, and dense mechanisms. Causal language overstates them anyway.",
+            sourceLessonSlug: "what-replicates",
+          },
+          {
+            prompt: "What is 'convergent evidence'?",
+            options: [
+              "Findings recurring across populations, methods, and eras",
+              "Multiple studies reaching the same conclusion using identical methods",
+              "Evidence from different disciplines addressing the same question",
+              "Findings that agree once the analyses are adjusted for the same confounders",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the strongest signal observational research produces, and it is why the list survives despite every individual study being confounded.",
+            sourceLessonSlug: "what-replicates",
+          },
+          {
+            prompt: "What is 'residual confounding'?",
+            options: [
+              "Group differences adjustment cannot fully remove",
+              "Confounding introduced by the choice of statistical model",
+              "Bias remaining after randomization fails to balance the groups",
+              "The proportion of an effect explained by measured confounders",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the reason causal language stays off the table even for findings this strong, and it applies to every item on the convergent list.",
+            sourceLessonSlug: "what-replicates",
+          },
+          {
+            prompt: "What is the coaching posture stated at the end of lesson 3?",
+            options: [
+              "Do the unglamorous things that replicate, describe them accurately, and wait forty years",
+              "Focus on the interventions with the largest effect sizes and defer the rest",
+              "Combine behavioural and pharmacological approaches as evidence permits",
+              "Prioritise the pillars a client is most willing to work on",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The modest honest claim over forty years rather than the inflated one over four weeks. It is the program's whole theory of value in one sentence.",
+            sourceLessonSlug: "what-replicates",
+          },
+          {
+            prompt: "Someone shows you a supplement study demonstrating it activates a hallmark pathway. What is the response?",
+            options: [
+              "A mechanism claim: ask what happened to people, over what period, versus what",
+              "Ask whether the pathway is one of the twelve hallmarks in the 2023 revision",
+              "Ask whether the finding replicated in a second animal model",
+              "Ask whether the compound is approved for the indication being claimed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "No hallmark-targeting compound has been shown to extend human lifespan in a randomized trial. Pathway activation is not the same kind of evidence as living longer.",
+            sourceLessonSlug: "the-twelve-hallmarks",
+          },
+          {
+            prompt: "What is 'geroscience'?",
+            options: [
+              "The field studying the biology of aging itself, not its individual diseases",
+              "The clinical specialty treating older adults across conditions",
+              "The study of exceptional longevity in centenarian populations",
+              "The application of aging biology to drug development specifically",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Aging itself rather than its diseases. It is the framing that makes the hallmarks a research agenda rather than a list of pathologies.",
+            sourceLessonSlug: "what-a-capstone-is-for",
+          },
+          {
+            prompt: "Which claim would this course refuse?",
+            options: [
+              "'This compound clears senescent cells, so it will extend your healthspan'",
+              "'Twelve processes currently meet all three hallmark criteria'",
+              "'No hallmark-targeting drug has extended human lifespan in a randomized trial'",
+              "'Lifestyle factors touching several hallmarks outperform single-pathway interventions'",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It converts a mechanism claim into an outcome promise, which is precisely the move lesson 2 exists to defuse.",
+            sourceLessonSlug: "the-twelve-hallmarks",
+          },
+          {
+            prompt: "What is 'healthspan' as distinct from lifespan?",
+            options: ["The years lived with the capacity to do what you want","The years lived free of any diagnosed disease","The proportion of lifespan spent in good health","The years remaining before functional decline begins"],
+            correctIndex: 0,
+            explanation: "Lifespan is what happens; healthspan is what you coach.",
+            sourceLessonSlug: "what-a-capstone-is-for",
+          },
+          {
+            prompt: "What is 'geroscience'?",
+            options: ["The field studying the biology of aging itself, not its individual diseases","The clinical specialty treating older adults","The study of exceptional longevity in centenarians","The application of aging biology to drug development"],
+            correctIndex: 0,
+            explanation: "It is the framing that makes the hallmarks a research agenda rather than a list of pathologies.",
+            sourceLessonSlug: "what-a-capstone-is-for",
+          },
+          {
+            prompt: "What does 'capstone' mean here, and what is the smallest part?",
+            options: ["Grading claims, synthesising pillars, and a protocol project; the final quiz is smallest","Reviewing the six pillars and testing retention; the project is smallest","Summarising each course and adding new evidence; the quiz is largest","Teaching longevity biology and prescribing a protocol; measurement is smallest"],
+            correctIndex: 0,
+            explanation: "Not a summary. Three things, with the final quiz explicitly the least of them.",
+            sourceLessonSlug: "what-a-capstone-is-for",
+          },
+          {
+            prompt: "Why does the sourcing discipline matter most in this pillar?",
+            options: ["It is the pillar with the most money behind its overclaims","It is the pillar with the weakest primary literature","It is the pillar clients ask about most often","It is the pillar with the fewest randomized trials"],
+            correctIndex: 0,
+            explanation: "Where a famous claim fails verification, the lesson says so and names what is taught instead. That discipline is the program's actual product.",
+            sourceLessonSlug: "what-a-capstone-is-for",
+          },
+          {
+            prompt: "What is 'the evidence gap' in this course's vocabulary?",
+            options: ["The distance between mechanistic knowledge and demonstrated human outcomes","The absence of long-term follow-up in longevity trials","The difference between animal and human findings","The lag between publication and clinical adoption"],
+            correctIndex: 0,
+            explanation: "Nearly all longevity claims are sold in that gap, and learning to see it is most of what this course teaches.",
+            sourceLessonSlug: "what-a-capstone-is-for",
+          },
+          {
+            prompt: "What is 'senescence' as a hallmark?",
+            options: ["Cells stop dividing but persist and signal; senolytics target them","Progressive loss of stem cell populations","Accumulated DNA damage triggering cell death","Telomere shortening across divisions"],
+            correctIndex: 0,
+            explanation: "Persisting and signalling is what makes senescent cells a target: they are not simply dead, they are actively contributing.",
+            sourceLessonSlug: "the-twelve-hallmarks",
+          },
+          {
+            prompt: "What is 'inflammaging'?",
+            options: ["Chronic low-grade inflammation with age, added in the 2023 revision","The acute inflammatory response, which slows with age","Inflammation from accumulated senescent cells specifically","The inflammatory component of age-related disease"],
+            correctIndex: 0,
+            explanation: "One of the four additions. Knowing which are new is part of knowing the framework rather than reciting a list.",
+            sourceLessonSlug: "the-twelve-hallmarks",
+          },
+          {
+            prompt: "What does the hallmarks framework explain about single-target interventions?",
+            options: ["Why they disappoint: aging is not one thing and the hallmarks interconnect","Why they succeed: each hallmark can be addressed independently","Why they are untested: no trial has isolated a single hallmark","Why they are expensive: each requires a separate compound"],
+            correctIndex: 0,
+            explanation: "It also explains why lifestyle factors touching several at once outperform ones touching a single pathway.",
+            sourceLessonSlug: "the-twelve-hallmarks",
+          },
+          {
+            prompt: "Which classes of compound does the lesson name as animal-supported and medically owned?",
+            options: ["Senolytics, rapamycin analogues, metformin for aging, NAD precursors","Antioxidants, multivitamins, omega-3s, probiotics","Statins, metformin, aspirin, hormone therapy","Creatine, collagen, melatonin, magnesium"],
+            correctIndex: 0,
+            explanation: "Supported by animal work and small human pilots, and medical territory a coach has no business recommending.",
+            sourceLessonSlug: "the-twelve-hallmarks",
+          },
+          {
+            prompt: "What is 'convergent evidence'?",
+            options: ["Findings recurring across populations, methods, and eras","Multiple studies agreeing using identical methods","Evidence from different disciplines on one question","Findings agreeing once adjusted for the same confounders"],
+            correctIndex: 0,
+            explanation: "The strongest signal observational research produces, and why the replicated list survives despite every individual study being confounded.",
+            sourceLessonSlug: "what-replicates",
+          },
+          {
+            prompt: "What is 'residual confounding'?",
+            options: ["Group differences adjustment cannot fully remove","Confounding introduced by the statistical model","Bias remaining after randomization fails to balance groups","The proportion of effect explained by measured confounders"],
+            correctIndex: 0,
+            explanation: "It is why causal language stays off the table even for findings this strong, and it applies to every item on the convergent list.",
+            sourceLessonSlug: "what-replicates",
+          },
+          {
+            prompt: "What is 'unpatentable' pointing at?",
+            options: ["The shared property of the replicated list, and part of why it is marketed least","The reason lifestyle interventions cannot be studied in trials","The absence of commercial funding for behavioural research","The legal status of dietary and exercise recommendations"],
+            correctIndex: 0,
+            explanation: "Unglamorous, unpatentable, and almost entirely behavioural, which is exactly the profile of things nobody advertises.",
+            sourceLessonSlug: "what-replicates",
+          },
+          {
+            prompt: "What is the striking thing about the convergent list's overlap with this program?",
+            options: ["The pillars came from a credential's structure and the epidemiology points at the same targets","The list was derived from the pillars, so agreement is expected","The pillars were chosen after reviewing the epidemiology","The overlap is partial, with two pillars unsupported"],
+            correctIndex: 0,
+            explanation: "Two completely different starting points arriving at almost the same seven items.",
+            sourceLessonSlug: "what-replicates",
+          },
+          {
+            prompt: "What four criteria make the observational longevity evidence credible despite confounding?",
+            options: ["Large effect sizes, graded dose-responses, replication across unrelated populations, dense mechanisms","Randomization, blinding, pre-registration, and replication","Large samples, long follow-up, low dropout, and adjustment","Consistency, coherence, temporality, and specificity"],
+            correctIndex: 0,
+            explanation: "They give the findings weight without licensing causal language, which is why the honest verb stays 'associated with'.",
+            sourceLessonSlug: "what-replicates",
+          },
+          {
+            prompt: "What is the coaching posture stated at the end of lesson 3?",
+            options: ["Do the unglamorous things that replicate, describe them accurately, and wait forty years","Focus on the largest effect sizes and defer the rest","Combine behavioural and pharmacological approaches as evidence permits","Prioritise the pillars a client is most willing to work on"],
+            correctIndex: 0,
+            explanation: "The modest honest claim over forty years rather than the inflated one over four weeks.",
+            sourceLessonSlug: "what-replicates",
+          },
+          {
+            prompt: "What is a 'graded dose-response', and why does it matter here?",
+            options: ["Outcomes improving progressively with exposure; it is one criterion making an association credible","A threshold above which benefit appears; it identifies a target","A curve flattening at high exposure; it identifies a ceiling","A linear relationship; it establishes causation"],
+            correctIndex: 0,
+            explanation: "It is much harder to produce by confounding than a single contrast, which is what strengthens a causal reading of observational data.",
+            sourceLessonSlug: "what-replicates",
+          },
+          {
+            prompt: "What is 'lifespan' in this course's vocabulary?",
+            options: ["Total years lived; the outcome marketing promises and no human trial has moved","The maximum years achievable given a person's genetics","The years lived beyond the population average","The span between birth and functional decline"],
+            correctIndex: 0,
+            explanation: "No intervention has been shown in a randomized trial to extend it, which is the gap the whole course is built around.",
+            sourceLessonSlug: "what-a-capstone-is-for",
+          },
+          {
+            prompt: "A product is sold by naming a hallmark it activates. What is missing?",
+            options: ["Any claim about what happened to the people who took it","Any evidence the hallmark meets all three criteria","Any comparison against an alternative compound","Any dosing information for the relevant population"],
+            correctIndex: 0,
+            explanation: "Pathway activation is a mechanism claim. Almost nobody selling longevity products makes the outcome claim, because they cannot.",
+            sourceLessonSlug: "the-twelve-hallmarks",
+          },
+          {
+            prompt: "Why does the course say this list is 'the spine of the rest of the course'?",
+            options: ["Everything mechanistic, proprietary, or promising-but-unproven was stripped out first","It is the only material with randomized evidence behind it","It was assembled from the six pillars the program teaches","It matches the certifying bodies' own recommendations"],
+            correctIndex: 0,
+            explanation: "What remains shows up across very different populations, methods, and decades, which is what makes it a spine rather than a summary.",
+            sourceLessonSlug: "what-replicates",
+          },
+          {
+            prompt: "What does the honest frame permit a coach to say about the convergent findings?",
+            options: ["'Associated with', letting the effect sizes carry the weight","'Will make you live longer', since the evidence is the field's strongest","'Causes', given the graded dose-responses across populations","Nothing, since observational evidence cannot support claims"],
+            correctIndex: 0,
+            explanation: "A coach who says 'will make you live longer' has overstated the single best-supported body of evidence in the field.",
+            sourceLessonSlug: "what-replicates",
+          },
+          {
+            prompt: "Which is missing from the convergent list, and where does it appear instead?",
+            options: ["Supplements, fasting protocols, and branded lifestyles; in the contested section","Sleep and social connection; in the pillar courses","Strength training; in WELL-02's movement material","Nothing; the list is comprehensive"],
+            correctIndex: 0,
+            explanation: "They appear in the next section, and they appear there because the evidence puts them there.",
+            sourceLessonSlug: "what-replicates",
+          },
+        ],
+      },
+    },
+
     // ── Section 2 ────────────────────────────────────────────────────────────────────────────
     {
       slug: "cardiorespiratory-fitness",
@@ -329,6 +762,400 @@ García-Hermoso, A., Cavero-Redondo, I., Ramírez-Vélez, R., et al. (2018). Mus
               "The pillars are one person's week and reinforce each other: walking improves sleep, sleep improves training, social commitment drives both. They support each other or unravel together.",
             sourceLessonSlug: "the-pillars-priced",
           },
+          {
+            prompt: "How large was the cardiorespiratory-fitness meta-analysis?",
+            options: [
+              "33 studies, 102,980 participants, 6,910 deaths in the all-cause analysis",
+              "38 studies, 1,907,580 participants and 63,087 deaths",
+              "148 prospective studies, 308,849 participants",
+              "65 records, classified by strength of demographic evidence",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The 1.9-million-participant figure is the grip-strength analysis, and 308,849 is the social-connection review.",
+            sourceLessonSlug: "cardiorespiratory-fitness",
+          },
+          {
+            prompt: "What was each 1-MET higher aerobic capacity associated with?",
+            options: [
+              "All-cause mortality RR 0.87 (0.84-0.90); cardiovascular event RR 0.85 (0.82-0.88)",
+              "All-cause mortality RR 0.69 (0.64 to 0.74); cardiovascular event RR 0.85",
+              "All-cause mortality RR 0.85; cardiovascular event RR 0.87",
+              "All-cause mortality RR 1.70 (1.51 to 1.92) comparing low with high fitness",
+            ],
+            correctIndex: 0,
+            explanation:
+              "0.87 for all-cause and 0.85 for events, per MET. The 1.70 figure is the low-versus-high extremes comparison, and 0.69 is grip strength.",
+            sourceLessonSlug: "cardiorespiratory-fitness",
+          },
+          {
+            prompt: "What does one MET correspond to, practically?",
+            options: [
+              "About one kilometre per hour of running speed",
+              "Roughly one thousand additional steps per day",
+              "Roughly ten percent of a person's maximal aerobic capacity",
+              "Roughly one additional session of vigorous training per week",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That translation is what makes the finding actionable: a small, achievable change for most untrained people, worth roughly 13 percent of all-cause mortality risk.",
+            sourceLessonSlug: "cardiorespiratory-fitness",
+          },
+          {
+            prompt: "What were the fitness bands, and which boundary did the review pick out?",
+            options: [
+              "Low under 7.9 METs, intermediate 7.9-10.8, high 10.9+; the 7.9 boundary matters most",
+              "Low under 5.0 METs, intermediate 5.0 to 8.0, high above 8.0; the 8.0 threshold matters most",
+              "Low under 7.9, intermediate 7.9 to 10.8, high 10.9 or above; the 10.9 threshold matters most",
+              "The review used continuous fitness rather than bands, so no threshold was identified",
+            ],
+            correctIndex: 0,
+            explanation:
+              "People at 7.9 METs or above had substantially lower mortality and event rates than those below, which makes it the most consequential boundary to move a client across.",
+            sourceLessonSlug: "cardiorespiratory-fitness",
+          },
+          {
+            prompt: "What was the low-versus-high fitness comparison?",
+            options: [
+              "All-cause mortality RR 1.70 (1.51-1.92), low fitness against high",
+              "All-cause mortality RR 0.87 for high fitness against low",
+              "All-cause mortality RR 1.39 for low fitness against high",
+              "All-cause mortality RR 2.20 for low fitness against high",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Seventy percent higher risk at the low end. Note the direction: this ratio is expressed with low fitness as the exposed group.",
+            sourceLessonSlug: "cardiorespiratory-fitness",
+          },
+          {
+            prompt: "What is the honest limit on the fitness evidence?",
+            options: [
+              "No trial has raised VO2max deliberately and counted deaths",
+              "The association disappears after adjusting for traditional risk factors",
+              "The finding has been replicated only in male cohorts",
+              "Fitness measurement methods varied too widely to pool reliably",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The association is graded, independent of traditional risk factors, and replicated, and it remains an association. Say 'strongly associated with' and let the size carry the weight.",
+            sourceLessonSlug: "cardiorespiratory-fitness",
+          },
+          {
+            prompt: "How large was the grip-strength meta-analysis, and what did it find?",
+            options: [
+              "38 studies, 1,907,580 participants; all-cause mortality HR 0.69 (0.64-0.74)",
+              "33 studies, 102,980 participants; all-cause mortality HR 0.87",
+              "38 studies, 1,907,580 participants; all-cause mortality HR 0.86 for grip strength",
+              "20 studies, 63,087 participants; all-cause mortality HR 0.69",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Nearly two million people. The 0.86 figure is lower-body strength measured by knee extension, a separate result in the same analysis.",
+            sourceLessonSlug: "strength-and-muscle",
+          },
+          {
+            prompt: "How did the grip-strength association differ by sex?",
+            options: [
+              "Stronger in women (0.60) than in men (0.69)",
+              "Somewhat stronger in men (0.60) than in women (0.69)",
+              "Identical in both sexes at 0.69",
+              "Present in men only, with no significant association in women",
+            ],
+            correctIndex: 0,
+            explanation:
+              "0.60 in women against 0.69 in men. Reporting the direction correctly matters because the intuition usually runs the other way.",
+            sourceLessonSlug: "strength-and-muscle",
+          },
+          {
+            prompt: "Why does grip strength keep appearing in epidemiology?",
+            options: [
+              "A cheap reliable proxy for total strength, muscle mass, neural function, nutrition",
+              "Hand function is independently predictive of independence in older adults",
+              "It is the only strength measure that can be standardised across studies",
+              "Grip declines earlier than other strength measures, giving earlier warning",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A summary statistic for physical robustness that takes ten seconds to measure. It is not that hands matter especially.",
+            sourceLessonSlug: "strength-and-muscle",
+          },
+          {
+            prompt: "What is the functional argument the mortality data understates?",
+            options: [
+              "Strength and muscle stand between an older adult and the cascade a fall starts",
+              "Strength improves quality of life independently of its effect on survival",
+              "Strength training is the intervention older adults are most likely to sustain",
+              "Muscle mass predicts metabolic health more strongly than it predicts mortality",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Combined with WELL-02's falls evidence and WHO's 65-plus multicomponent recommendation, resistance training stops being aesthetic and becomes what protects independence.",
+            sourceLessonSlug: "strength-and-muscle",
+          },
+          {
+            prompt: "What does this course NOT quote about resistance training, and why?",
+            options: [
+              "The resistance-training mortality meta-analyses, which failed the source check",
+              "The strength dose-response curves, because they vary too much between populations",
+              "The hypertrophy literature, because it is outside the coaching scope",
+              "The sarcopenia prevalence figures, because they use inconsistent definitions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "What IS verified is that strength predicts survival, powerfully, across nearly two million people. The unverifiable is left out rather than softened.",
+            sourceLessonSlug: "strength-and-muscle",
+          },
+          {
+            prompt: "What is the coaching implication for a centenarian protocol?",
+            options: [
+              "Do not let the strength work quietly disappear",
+              "Prioritise strength over aerobic work, given the larger hazard ratio",
+              "Measure grip strength monthly to track the trend",
+              "Begin strength work only after aerobic capacity has been established",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the most commonly abandoned component and among the most consequential to keep. That combination is why it gets named explicitly.",
+            sourceLessonSlug: "strength-and-muscle",
+          },
+          {
+            prompt: "What is a 'proxy measure'?",
+            options: [
+              "A cheap measurement standing in for a broader one",
+              "A measure taken by a third party rather than the person themselves",
+              "An indirect measure used when the direct one is unethical to collect",
+              "A measure validated against a gold standard in the same population",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Grip stands in for whole-body strength, which itself stands in for muscle mass, neural function, and decades of accumulated activity.",
+            sourceLessonSlug: "strength-and-muscle",
+          },
+          {
+            prompt: "What does lesson 6 say about the six pillars assembled?",
+            options: [
+              "Not competing interventions: the same person's week",
+              "They should be ranked by effect size and addressed in order",
+              "They are independent, so each can be optimised without affecting the others",
+              "They overlap substantially, so working two of them covers most of the benefit",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The client who walks more sleeps better, and the one who sleeps better trains harder. They either support themselves or unravel together.",
+            sourceLessonSlug: "the-pillars-priced",
+          },
+          {
+            prompt: "What is the practical consequence for protocol design?",
+            options: [
+              "Do not build six programs; build one week, and check that it contains all six",
+              "Build six programs and rotate through them across the year",
+              "Build one program targeting the two pillars with the largest effect sizes",
+              "Build a program for each pillar and let the client choose which to run",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Six separate programs compete for the same hours and lose. The week is the design unit.",
+            sourceLessonSlug: "the-pillars-priced",
+          },
+          {
+            prompt: "What is 'system versus list'?",
+            options: [
+              "Pillars as mutually reinforcing rather than separately optimisable",
+              "Distinguishing the program's structure from its content",
+              "Comparing a protocol's components against a checklist of requirements",
+              "Grouping the pillars by whether they are behavioural or physiological",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is what WELL-01's finding about behavioural adherence looks like at the scale of a life.",
+            sourceLessonSlug: "the-pillars-priced",
+          },
+          {
+            prompt: "What is 'compounding' in this program's usage?",
+            options: [
+              "Modest maintained effects accumulating across decades",
+              "The multiplication of effects when two interventions are combined",
+              "The tendency of small habits to grow into larger ones over time",
+              "The interaction between pillars that produces more than their sum",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the program's entire theory of value, and it is why every course insists on modest honest claims rather than inflated ones.",
+            sourceLessonSlug: "the-pillars-priced",
+          },
+          {
+            prompt: "Which pillar figures does lesson 6 assemble for movement?",
+            options: [
+              "12 to 15 percent per 1,000 steps; 7,000 vs 2,000: 47 percent mortality, 38 percent dementia, 28 percent falls",
+              "12 to 15 percent per 1,000 steps; 7,000 vs 2,000: 38 percent lower mortality and 47 percent lower dementia",
+              "15 percent per 1,000 steps; 10,000 vs 2,000: 47 percent lower mortality",
+              "12 percent per 1,000 steps, with benefits detectable only above 4,000",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Benefits detectable from around 2,600 steps a day, with the curve steepest where the least active live.",
+            sourceLessonSlug: "the-pillars-priced",
+          },
+          {
+            prompt: "Which sleep figures does lesson 6 assemble?",
+            options: [
+              "Short sleep RR 1.12, clearest below six hours; long sleep 1.39, causality left open",
+              "Short sleep RR 1.39; long sleep 1.12, both established as causal",
+              "Short sleep RR 1.12 and long sleep 1.39, both requiring intervention",
+              "Seven to nine hours as the target, with no risk ratios established",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Which is why the long-sleep figure changes nothing about a healthy long sleeper, despite being the larger number.",
+            sourceLessonSlug: "the-pillars-priced",
+          },
+          {
+            prompt: "Which connection figures does lesson 6 assemble?",
+            options: [
+              "Survival OR 1.50; strongest 1.91 for complex integration; isolation 1.29, loneliness 1.26, living alone 1.32",
+              "Survival OR 1.91 across 308,849; isolation 1.50, loneliness 1.32, living alone 1.26",
+              "Survival OR 1.50; isolation and loneliness both 1.29, with living alone not significant",
+              "Survival OR 1.50, with the strongest association for frequency of contact",
+            ],
+            correctIndex: 0,
+            explanation:
+              "With no difference between objective and subjective measures, and larger effects under age 65.",
+            sourceLessonSlug: "the-pillars-priced",
+          },
+          {
+            prompt: "What are the two fitness and strength figures from lessons 4 and 5?",
+            options: [
+              "Per-MET 0.87; grip strength 0.69",
+              "Per-MET 0.85 and grip strength 0.86",
+              "Per-MET 0.69 and grip strength 0.87",
+              "Per-MET 0.87 and grip strength 0.60",
+            ],
+            correctIndex: 0,
+            explanation:
+              "0.85 is the cardiovascular event figure, 0.86 is knee-extension strength, and 0.60 is the female-specific grip figure.",
+            sourceLessonSlug: "the-pillars-priced",
+          },
+          {
+            prompt: "A client cannot imagine becoming an athlete. What does the fitness evidence offer them?",
+            options: [
+              "Move up one band: a single MET is achievable and worth roughly 13 percent of risk",
+              "Fitness matters less than strength, so they should focus on resistance work instead",
+              "The association is observational, so the target should be behavioural rather than physiological",
+              "They should aim for the high band at 10.9 METs, which is where the benefit concentrates",
+            ],
+            correctIndex: 0,
+            explanation:
+              "And the review's own conclusion picks out 7.9 METs as the boundary most worth crossing, which is nearer than the high band.",
+            sourceLessonSlug: "cardiorespiratory-fitness",
+          },
+          {
+            prompt: "What is 'the week as design unit'?",
+            options: [
+              "Building one realistic week containing every pillar, not six parallel programs",
+              "Reviewing progress weekly rather than monthly",
+              "Planning training in weekly blocks rather than daily sessions",
+              "Assigning one pillar to each day of the week",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It follows from the pillars being a system rather than a list, and it is the instruction lesson 12 builds the protocol on.",
+            sourceLessonSlug: "the-pillars-priced",
+          },
+          {
+            prompt: "Which two hats apply to cardiorespiratory fitness?",
+            options: [
+              "Improving it is programming (CPT); keeping it going for thirty years is coaching",
+              "Measuring it is coaching; improving it requires clinical supervision",
+              "Both are coaching, since fitness is a behavioural outcome",
+              "Both are programming, since fitness responds only to structured training",
+            ],
+            correctIndex: 0,
+            explanation:
+              "And WELL-02 is where you learned that the second one is where the failures actually happen.",
+            sourceLessonSlug: "cardiorespiratory-fitness",
+          },
+          {
+            prompt: "What is 'appendicular muscle mass'?",
+            options: [
+              "The muscle of the arms and legs, most relevant to function in older adults",
+              "Total body muscle mass excluding water weight",
+              "The muscle mass lost during a period of energy restriction",
+              "Muscle mass expressed relative to height, as an index",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Limb muscle specifically. It is the compartment that decides whether someone can stand up from a chair, which is why it appears in both this lesson and the fasting one.",
+            sourceLessonSlug: "strength-and-muscle",
+          },
+          {
+            prompt: "Which claim about fitness or strength would this course refuse?",
+            options: [
+              "'Raising your VO2max by one MET will cut your mortality risk by 13 percent'",
+              "'Each 1-MET higher fitness was associated with an all-cause mortality RR of 0.87'",
+              "'Higher grip strength carried a hazard ratio of 0.69 across nearly two million people'",
+              "'No trial has raised VO2max deliberately and measured deaths'",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It converts an observational association into a personal causal promise. The lesson's instruction is to say 'strongly associated with' and let the size carry the weight.",
+            sourceLessonSlug: "cardiorespiratory-fitness",
+          },
+          {
+            prompt: "What is a MET, physiologically?",
+            options: ["Roughly 3.5 millilitres of oxygen per kilogram per minute","The energy cost of walking at a moderate pace","One kilocalorie per kilogram per hour of activity","The oxygen consumed at maximal aerobic capacity"],
+            correctIndex: 0,
+            explanation: "And practically about one kilometre per hour of running speed, which is what makes the finding actionable.",
+            sourceLessonSlug: "cardiorespiratory-fitness",
+          },
+          {
+            prompt: "What is 'risk ratio per unit', and why does it make CRF actionable?",
+            options: ["The risk change per one-unit increase; it turns fitness into a target rather than a description","The ratio of risks between the highest and lowest groups; it shows the range","Risk expressed per year of follow-up; it standardises across studies","The ratio adjusted for each unit of confounder; it removes bias"],
+            correctIndex: 0,
+            explanation: "One MET is small and achievable, and worth roughly 13 percent of all-cause mortality risk in this data.",
+            sourceLessonSlug: "cardiorespiratory-fitness",
+          },
+          {
+            prompt: "What is 'maximal aerobic capacity' expressed as here?",
+            options: ["METs, the unit the fitness bands and per-unit risk ratios use","Millilitres per minute, uncorrected for body mass","Percentage of age-predicted maximum heart rate","Watts sustained at lactate threshold"],
+            correctIndex: 0,
+            explanation: "Low under 7.9, intermediate 7.9 to 10.8, high 10.9 or above.",
+            sourceLessonSlug: "cardiorespiratory-fitness",
+          },
+          {
+            prompt: "What is 'appendicular muscle mass'?",
+            options: ["The muscle of the arms and legs, most relevant to function in older adults","Total muscle mass excluding water weight","The muscle lost during energy restriction","Muscle mass expressed relative to height"],
+            correctIndex: 0,
+            explanation: "The compartment that decides whether someone can stand up from a chair, which is why it appears in both the strength and the fasting lessons.",
+            sourceLessonSlug: "strength-and-muscle",
+          },
+          {
+            prompt: "What is 'functional independence', and what protects it?",
+            options: ["Managing daily life unaided; strength and balance work protect it more directly than mortality data conveys","Living without assistance from family; social connection protects it","Freedom from chronic disease; medical management protects it","Cognitive capacity for daily decisions; novelty protects it"],
+            correctIndex: 0,
+            explanation: "Combined with WELL-02's falls evidence and WHO's 65-plus recommendation, resistance training stops being aesthetic.",
+            sourceLessonSlug: "strength-and-muscle",
+          },
+          {
+            prompt: "What did the lower-body strength measure show?",
+            options: ["Knee extension: all-cause mortality HR 0.86 (0.80 to 0.93)","Knee extension: HR 0.69, matching grip strength","Leg press: HR 0.60, stronger than grip","Lower-body strength was not assessed"],
+            correctIndex: 0,
+            explanation: "Weaker than grip's 0.69 but still significant, in the same 38-study analysis.",
+            sourceLessonSlug: "strength-and-muscle",
+          },
+          {
+            prompt: "What is 'compounding' in this program's usage?",
+            options: ["Modest maintained effects accumulating across decades","Effects multiplying when interventions are combined","Small habits growing into larger ones over time","Interactions between pillars producing more than their sum"],
+            correctIndex: 0,
+            explanation: "It is the program's entire theory of value, and why every course insists on modest honest claims.",
+            sourceLessonSlug: "the-pillars-priced",
+          },
+          {
+            prompt: "What does WELL-01's adherence finding look like at the scale of a life?",
+            options: ["The pillars are a system that either supports itself or unravels together","Behaviour change becomes harder as more pillars are added","Content knowledge matters less than the coach's consistency","Adherence declines predictably across a multi-decade horizon"],
+            correctIndex: 0,
+            explanation: "The client who walks more sleeps better, and the one with people expecting them at a Tuesday session does all three.",
+            sourceLessonSlug: "the-pillars-priced",
+          },
         ],
       },
     },
@@ -384,6 +1211,14 @@ Candal-Pedreira, C., Rey-Brandariz, J., Martín-Gisbert, L., et al. (2025). Blue
 
 **What to do with that.** Fasting protocols are one behavioural method for creating an energy deficit, and for some people a genuinely convenient one. They are not a distinct longevity technology, the autophagy arguments are extrapolated from animal and cell work, and the lean-mass signal in TREAT is worth mentioning to anyone doing this alongside strength training.
 
+**The cost of restriction that nobody markets, and the trial that priced it.** Weight loss in older adults takes muscle and bone with it, which is a serious problem in a program organised around arriving at eighty able to do things. Villareal and colleagues randomised **160 obese older adults** to a weight-management programme plus one of aerobic, resistance, or combined training, or to a control group with neither. The primary outcome was physical performance at six months (Villareal et al., 2017).
+
+Body weight fell about **9 percent in all three exercise groups**. What separated them was everything else. Physical performance rose most in the **combined** group (21 percent, versus 14 percent in each single-mode group), and all exercise groups beat the control. Peak oxygen consumption rose most with combined and aerobic training; strength rose most with combined and resistance training. And the finding this lesson exists to carry: **lean mass fell 3 percent in the combined group and 2 percent in the resistance group, against 5 percent with aerobic training alone**, with total-hip bone mineral density falling 1 percent and 0.5 percent respectively against **3 percent** in the aerobic group.
+
+**Read that as a coaching rule rather than a result.** A dieting older adult doing only cardio lost more than twice the bone density of one doing resistance work, on the same weight loss. So the rule is not "restriction is dangerous"; it is **never coach an energy deficit in an older adult without resistance training attached**, and combined training is what the trial actually found best. It is also the reason the strength lesson said the strength work is the most commonly abandoned component and among the most consequential to keep.
+
+**And the honest limits.** Six months, 160 participants of whom 141 completed, obese older adults specifically, and physical function rather than mortality as the endpoint. The trial reports musculoskeletal injuries among exercise-related adverse events, which is worth stating to anyone reading this as a straightforward recommendation.
+
 **The coaching translation.** If a client likes an eating window and it helps them eat less without misery, that is a fine tool and you should support it. If they believe it is doing something calorie restriction would not, correct that gently, because the belief is what makes them persist with a protocol that is not working for them.
 
 :::reveal What did CALERIE achieve versus what it prescribed, and what did it measure? ||| Prescribed 25 percent restriction, achieved an average of 11.9 percent over two years in 218 healthy non-obese adults. It measured cardiometabolic risk markers, which improved, and did NOT measure cardiovascular events or mortality.
@@ -395,9 +1230,14 @@ Candal-Pedreira, C., Rey-Brandariz, J., Martín-Gisbert, L., et al. (2025). Blue
 - **Achieved versus prescribed restriction**: the gap between what a trial asked for and what participants delivered; CALERIE's 25 percent became 11.9.
 - **Time-restricted eating (TRE)**: confining intake to a daily window, tested in TREAT against structured meals with no significant weight advantage.
 - **Risk markers versus outcomes**: blood measures and indices versus events and deaths; CALERIE moved the former and did not assess the latter.
+- **Weight-loss-induced sarcopenia and osteopenia**: the muscle and bone lost alongside fat during an energy deficit, accelerated in older adults and attenuated by resistance training.
+- **Attenuation versus prevention**: resistance work reduced lean-mass and bone loss rather than abolishing it; the combined group still lost 3 percent lean mass and 1 percent hip density.
+- **Combined training**: aerobic plus resistance work together, the arm that produced the largest functional gain in Villareal's trial.
 
 ## Sources
 Huffman, K. M., Parker, D. C., Bhapkar, M., et al. (2022). Calorie restriction improves lipid-related emerging cardiometabolic risk factors in healthy adults without obesity: Distinct influences of BMI and sex from CALERIE, a multicentre, phase 2, randomised controlled trial. *EClinicalMedicine, 43*, 101261. https://pubmed.ncbi.nlm.nih.gov/35028547/
+
+Villareal, D. T., Aguirre, L., Gurney, A. B., Waters, D. L., Sinacore, D. R., Colombo, E., Armamento-Villareal, R., & Qualls, C. (2017). Aerobic or resistance exercise, or both, in dieting obese older adults. *New England Journal of Medicine, 376*(20), 1943-1955. https://pubmed.ncbi.nlm.nih.gov/28514618/
 
 Lowe, D. A., Wu, N., Rohdin-Bibby, L., et al. (2020). Effects of time-restricted eating on weight loss and other metabolic parameters in women and men with overweight and obesity: The TREAT randomized clinical trial. *JAMA Internal Medicine, 180*(11), 1491-1499. https://pubmed.ncbi.nlm.nih.gov/32986097/`,
     },
@@ -518,7 +1358,7 @@ Sesso, H. D., Manson, J. E., Aragaki, A. K., et al. (2022b). Effect of cocoa fla
           {
             prompt: "How should a coach frame fasting protocols?",
             options: [
-              "As one behavioural method for creating an energy deficit, not a distinct longevity technology",
+              "One behavioural method for creating an energy deficit",
               "As the most powerful longevity intervention available to non-clinicians",
               "As unsafe and inappropriate for any coaching client",
               "As equivalent to caloric restriction only in people with obesity",
@@ -531,7 +1371,7 @@ Sesso, H. D., Manson, J. E., Aragaki, A. K., et al. (2022b). Effect of cocoa fla
           {
             prompt: "In COSMOS, the daily multivitamin arm showed:",
             options: [
-              "No significant effect on total cancer, cardiovascular events, or all-cause mortality",
+              "No effect on cancer, cardiovascular events, or mortality",
               "A significant reduction in total invasive cancer incidence",
               "A significant reduction in all-cause mortality over 3.6 years",
               "Significant harm across cardiovascular endpoints",
@@ -544,7 +1384,7 @@ Sesso, H. D., Manson, J. E., Aragaki, A. K., et al. (2022b). Effect of cocoa fla
           {
             prompt: "In the cocoa arm, the relationship between primary and secondary endpoints was:",
             options: [
-              "The primary missed at P = 0.11 while a secondary, cardiovascular death, reached significance",
+              "The primary missed; cardiovascular death, a secondary, hit",
               "Both the primary and all secondary endpoints reached significance",
               "The primary reached significance and the secondaries did not",
               "Neither the primary nor any secondary endpoint moved",
@@ -565,6 +1405,597 @@ Sesso, H. D., Manson, J. E., Aragaki, A. K., et al. (2022b). Effect of cocoa fla
             correctIndex: 0,
             explanation:
               "Purity testing matters for product quality but says nothing about whether the compound works. The other three questions dispose of most supplement marketing and transfer to any future compound.",
+            sourceLessonSlug: "the-supplement-autopsy",
+          },
+          {
+            prompt: "Which Blue Zones did the scoping review classify as WELL CHARACTERISED?",
+            options: [
+              "Ogliastra in Sardinia, Okinawa, Nicoya in Costa Rica",
+              "Okinawa, Ikaria, and Loma Linda",
+              "Sardinia, Okinawa, Nicoya, Ikaria, and Loma Linda",
+              "Ogliastra, Nicoya, and Rugao in China",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three regions. Ikaria sits in the under-investigation tier, and Loma Linda was excluded for insufficient evidence.",
+            sourceLessonSlug: "blue-zones-after-scrutiny",
+          },
+          {
+            prompt: "Which regions did the review EXCLUDE for insufficient evidence?",
+            options: [
+              "Menorca, and Loma Linda",
+              "Ikaria and Cilento",
+              "Martinique and Guadeloupe",
+              "Rugao in China and a Netherlands municipality",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Loma Linda appears in nearly every popular account and did not meet the review's criteria. A coach repeating the standard list is citing a region the systematic evidence does not support.",
+            sourceLessonSlug: "blue-zones-after-scrutiny",
+          },
+          {
+            prompt: "What is the 'erosion' finding?",
+            options: [
+              "The longevity advantage is fading in both zones examined closely",
+              "The zones' populations are shrinking as younger residents emigrate",
+              "The original data has been progressively revised downward",
+              "The dietary patterns have eroded while the longevity advantage persists",
+            ],
+            correctIndex: 0,
+            explanation:
+              "In Okinawa indicators approach adjacent areas, attributed to westernisation, alongside rising mortality. In Nicoya the advantage appears in cohorts born before 1930 and declines in recent ones.",
+            sourceLessonSlug: "blue-zones-after-scrutiny",
+          },
+          {
+            prompt: "Why is the erosion finding fatal to a particular kind of claim?",
+            options: [
+              "Whatever produced the advantages was not durable against changing conditions",
+              "It shows the original longevity measurements were inaccurate",
+              "It proves the advantage was genetic rather than environmental",
+              "It demonstrates that the zones were never genuinely exceptional",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Which is fatal to any claim that a fixed traditional practice is doing the work. If the practice persisted and the advantage did not, the practice was not the mechanism.",
+            sourceLessonSlug: "blue-zones-after-scrutiny",
+          },
+          {
+            prompt: "What is 'cohort erosion'?",
+            options: [
+              "An advantage in earlier birth cohorts, absent in later ones",
+              "The loss of participants from a cohort study over long follow-up",
+              "The gradual weakening of a cohort's representativeness as the population changes",
+              "The decline in an exposure's prevalence across successive generations",
+            ],
+            correctIndex: 0,
+            explanation:
+              "As found in Nicoya, where high longevity appears in cohorts born before 1930 and the zone is shrinking geographically.",
+            sourceLessonSlug: "blue-zones-after-scrutiny",
+          },
+          {
+            prompt: "What third caution does the lesson state without numbers?",
+            options: [
+              "Extreme-age records are unreliable where registration is poor and pensions incentivise",
+              "Dietary recall in these populations was collected retrospectively and may be inaccurate",
+              "The zones differ in climate and altitude in ways no analysis has adjusted for",
+              "Migration into and out of the zones was not tracked in the original studies",
+            ],
+            correctIndex: 0,
+            explanation:
+              "This program could not verify that work's specific figures, so it does not quote them. The direction of the concern is consistent with the review's own finding that the statistics are fragile.",
+            sourceLessonSlug: "blue-zones-after-scrutiny",
+          },
+          {
+            prompt: "What survives the Blue Zones scrutiny?",
+            options: [
+              "Diets, activity, social ties, low smoking: already replicated",
+              "The dietary patterns specifically, which the demographic critique does not touch",
+              "Nothing; the concept should be discarded entirely",
+              "The social components, which are the only features common to all claimed zones",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Every one of those is established in ordinary cohort studies without any regional mystique. Teach those, and skip the folklore.",
+            sourceLessonSlug: "blue-zones-after-scrutiny",
+          },
+          {
+            prompt: "What are 'generic healthy-aging factors'?",
+            options: [
+              "Plant-forward diets, activity, social ties, and low smoking",
+              "The factors that appear in every population regardless of longevity status",
+              "The lifestyle features common to all claimed zones but absent elsewhere",
+              "The behavioural components of longevity, as distinct from the genetic ones",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The word 'generic' is doing work: they are not zone-specific, which is precisely why they can be taught without the regional framing.",
+            sourceLessonSlug: "blue-zones-after-scrutiny",
+          },
+          {
+            prompt: "What did CALERIE randomise, and what restriction was achieved?",
+            options: [
+              "218 healthy non-obese adults, two years of prescribed 25 percent; achieved 11.9",
+              "218 adults with obesity to two years of prescribed 11.9 percent restriction; achieved 25 percent",
+              "160 obese older adults to two years of restriction plus exercise; achieved 25 percent",
+              "116 adults to twelve weeks of restriction; achieved 11.9 percent",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The gap between 25 prescribed and 11.9 achieved is itself a finding about human adherence. The 160-participant trial is Villareal and the 116-participant one is TREAT.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "What did CALERIE measure, and what did it NOT?",
+            options: [
+              "Risk markers, not outcomes: no cardiovascular events, no mortality",
+              "Mortality over two years, with risk markers as secondary outcomes",
+              "Body composition only, with cardiometabolic markers not assessed",
+              "Both risk markers and events, though the event rate was too low to analyse",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Improving risk factors in people who are not obese is genuinely interesting and is not the same claim as extending life.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "What is the relevant question about fasting?",
+            options: [
+              "Not 'does fasting work' but 'does it beat an equal calorie deficit'",
+              "Not 'does fasting work' but 'which fasting protocol works best'",
+              "Not 'does fasting work' but 'is it safe over long periods'",
+              "Not 'does fasting work' but 'which populations does it suit'",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the comparator question from WELL-04, applied here. Against nothing, most deficits work; the question is whether the protocol adds anything.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "What did the TREAT trial find?",
+            options: [
+              "Weight difference 0.26 kg, not significant; intake did not differ; lean mass favoured control",
+              "Between-group weight difference 2.6 kg favouring time-restricted eating, significant at twelve weeks",
+              "No weight change in either group, with lean mass preserved equally",
+              "Weight loss favouring time-restricted eating, with lean mass also favouring it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "116 adults, sixteen-eight time-restricted eating against three structured meals, twelve weeks. The appendicular lean mass index difference favoured the CONTROL group in the in-person cohort.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "What was TREAT's authors' conclusion?",
+            options: [
+              "Time-restricted eating alone is not more effective for weight loss than eating all day",
+              "Time-restricted eating produces modest additional weight loss that may accumulate over longer periods",
+              "Time-restricted eating is effective but requires longer than twelve weeks to demonstrate",
+              "Time-restricted eating is effective for weight but not for body composition",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Unusually direct for a trial conclusion, which is why the lesson quotes the substance of it rather than paraphrasing.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "What did Villareal randomise 160 obese older adults to?",
+            options: [
+              "Weight management plus aerobic, resistance, or combined training, or a control",
+              "Caloric restriction of 25 percent or ad libitum eating for two years",
+              "Time-restricted eating or three structured meals for twelve weeks",
+              "Resistance training alone or combined training, both with weight management",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Four arms, with physical performance at six months as the primary outcome. 141 of the 160 completed.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "How did body weight and physical performance compare across Villareal's arms?",
+            options: [
+              "Weight fell ~9 percent in all exercise groups; performance rose most combined, 21 percent",
+              "Weight fell most in the aerobic group; performance rose most in the resistance group",
+              "Weight fell equally in all four groups; performance rose only in the combined group",
+              "Weight fell about 9 percent in all groups including control; performance rose 14 percent in each",
+            ],
+            correctIndex: 0,
+            explanation:
+              "21 percent combined against 14 percent in each single-mode group, and all exercise groups beat the control. Weight did not change significantly in the control group.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "What happened to lean mass and bone density across Villareal's arms?",
+            options: [
+              "Lean mass fell 3 percent combined, 2 resistance, 5 aerobic; hip density 1, 0.5, 3",
+              "Lean mass fell equally across all exercise arms; only bone density differed",
+              "Lean mass fell 5 percent combined and 3 percent aerobic; bone density was preserved in all arms",
+              "Lean mass and bone density were preserved in all exercise arms and fell only in the control",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A dieting older adult doing only cardio lost more than twice the bone density of one doing resistance work, on the same weight loss.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "What coaching rule follows from Villareal?",
+            options: [
+              "Never coach an energy deficit in an older adult without resistance training",
+              "Never coach an energy deficit in an older adult at all, given the bone loss",
+              "Coach aerobic training first, adding resistance work once weight has stabilised",
+              "Coach resistance training alone, since it preserved lean mass best",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Not 'restriction is dangerous'. And combined training is what the trial actually found best, which is more than resistance alone.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "What is 'attenuation versus prevention' in the Villareal result?",
+            options: [
+              "Resistance work reduced lean-mass and bone loss rather than abolishing",
+              "Resistance work prevented bone loss entirely while only attenuating lean-mass loss",
+              "The attenuation was statistically significant but not clinically meaningful",
+              "Prevention occurred in the combined group and attenuation in the resistance group",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The combined group still lost 3 percent lean mass and 1 percent hip density. Reading it as prevention overstates a real and useful finding.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "What are the honest limits of the Villareal trial?",
+            options: [
+              "Six months, 160 participants (141 completing), obese older adults, function not mortality",
+              "Two years, 218 participants, healthy adults without obesity, risk markers rather than outcomes",
+              "Twelve weeks, 116 participants, with weight as the primary outcome",
+              "Six months, with no control group receiving neither weight management nor exercise",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The trial also reports musculoskeletal injuries among exercise-related adverse events, worth stating to anyone reading it as a straightforward recommendation.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "How should a client's eating window be coached?",
+            options: [
+              "Support it if it helps them eat less, without promising more",
+              "Discourage it, since TREAT found no advantage over structured meals",
+              "Support it and encourage extending the fasting window for additional benefit",
+              "Support it only in clients not simultaneously doing strength training",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The belief is what makes them persist with a protocol that is not working for them, which is why the correction matters even when the tool is fine.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "What did the COSMOS multivitamin arm find?",
+            options: [
+              "Total cancer HR 0.97, CV composite 0.98, all-cause mortality 0.93; none significant",
+              "Total invasive cancer HR 0.62, significant, with cardiovascular outcomes null",
+              "All outcomes significantly improved, with the largest effect on cancer incidence",
+              "Total invasive cancer HR 0.97 and all-cause mortality 0.73, the latter significant",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The 0.62 figure is lung cancer, an isolated signal among many outcomes tested. The 0.73 figure belongs to the cocoa arm's cardiovascular death result.",
+            sourceLessonSlug: "the-supplement-autopsy",
+          },
+          {
+            prompt: "What happened in the COSMOS cocoa arm?",
+            options: [
+              "Primary missed (CV events HR 0.90, P = 0.11); a secondary hit (CV death 0.73)",
+              "Primary endpoint hit (total CV events HR 0.73); secondary endpoints all null",
+              "Both primary and secondary endpoints reached significance",
+              "Primary endpoint missed and no secondary endpoint reached significance either",
+            ],
+            correctIndex: 0,
+            explanation:
+              "All-cause mortality was 0.89 and not significant. A per-protocol analysis restricted to adherent participants supported a reduction in total events at 0.85.",
+            sourceLessonSlug: "the-supplement-autopsy",
+          },
+          {
+            prompt: "Why is 'cocoa flavanols cut cardiovascular death by 27 percent' instructive?",
+            options: [
+              "A true sentence about a secondary endpoint in a trial whose primary missed",
+              "It is a false sentence, since the 27 percent figure appears nowhere in the trial",
+              "It is true but refers to the per-protocol rather than the randomised analysis",
+              "It is true of the multivitamin arm rather than the cocoa arm",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the sentence that sells the product. The honest version is longer and duller and warrants further research rather than a purchase.",
+            sourceLessonSlug: "the-supplement-autopsy",
+          },
+          {
+            prompt: "What three questions dispose of most supplement marketing?",
+            options: [
+              "Primary endpoint; how many outcomes; whole group or subset",
+              "Who funded it; was it peer reviewed; has it replicated",
+              "How large was the sample; how long the follow-up; what was the comparator",
+              "Was it randomised; was it blinded; was it pre-registered",
+            ],
+            correctIndex: 0,
+            explanation:
+              "And they work on the next compound too, whatever it turns out to be, which is why the lesson calls it a general lesson outliving any specific supplement.",
+            sourceLessonSlug: "the-supplement-autopsy",
+          },
+          {
+            prompt: "What is 'multiplicity'?",
+            options: [
+              "The inflated false-positive chance when many outcomes are tested",
+              "The presence of multiple active ingredients in a single supplement",
+              "The testing of one outcome across multiple subgroups",
+              "The combination of several trials into a pooled analysis",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is why the lung-cancer signal at 0.62 needs caution: among many outcomes tested, some will look significant by chance.",
+            sourceLessonSlug: "the-supplement-autopsy",
+          },
+          {
+            prompt: "What is a 'per-protocol analysis,' and what does it do?",
+            options: [
+              "Restricted to adherent participants; it breaks randomisation",
+              "An analysis following the pre-registered statistical plan exactly",
+              "An analysis including all randomised participants regardless of adherence",
+              "An analysis restricted to participants who completed the full follow-up",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Adherent participants differ from non-adherent ones in ways beyond adherence, which is what breaking randomisation costs you.",
+            sourceLessonSlug: "the-supplement-autopsy",
+          },
+          {
+            prompt: "What is the scope note on supplements?",
+            options: [
+              "Educate on the category; do not prescribe, dose, or manage a regimen",
+              "Recommend only supplements with randomized trial support behind them",
+              "Discuss supplements only when a client raises them first",
+              "Refer all supplement questions to a physician without comment",
+            ],
+            correctIndex: 0,
+            explanation:
+              "And the fact that something is sold without prescription does not change that. WELL-03 established the rule; this lesson applies it where the marketing is heaviest.",
+            sourceLessonSlug: "the-supplement-autopsy",
+          },
+          {
+            prompt: "What is a 'primary endpoint'?",
+            options: [
+              "The outcome a trial was designed and powered to test",
+              "The outcome with the largest effect size in a trial's results",
+              "The first outcome measured chronologically during follow-up",
+              "The outcome most relevant to the patient's own priorities",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Designed and powered for. That is why a missed primary with a hit secondary is a hypothesis rather than a conclusion.",
+            sourceLessonSlug: "the-supplement-autopsy",
+          },
+          {
+            prompt: "A client cites a supplement trial's headline result. Which question comes first?",
+            options: [
+              "Was that the primary endpoint, and was it met",
+              "How many participants were enrolled",
+              "Who funded the trial",
+              "Has the finding been replicated",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the first of the three questions, and in the COSMOS case it is the one that separates the marketing sentence from the trial's actual result.",
+            sourceLessonSlug: "the-supplement-autopsy",
+          },
+          {
+            prompt: "Which claim about Blue Zones would this course permit?",
+            options: [
+              "'The better-supported zones' features are already established in ordinary cohorts'",
+              "'The Blue Zones prove that traditional diets extend lifespan'",
+              "'Loma Linda demonstrates the longevity benefit of a plant-based diet'",
+              "'The Blue Zones concept has been entirely discredited by demographic analysis'",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Loma Linda was excluded for insufficient evidence, the erosion finding undermines the fixed-practice claim, and 'entirely discredited' overstates a review that classified three zones as well characterised.",
+            sourceLessonSlug: "blue-zones-after-scrutiny",
+          },
+          {
+            prompt: "What is 'achieved versus prescribed restriction'?",
+            options: [
+              "The gap between what a trial asked and what participants delivered: 25 became 11.9",
+              "The difference between the restriction a client agrees to and what they report",
+              "The variation in restriction achieved across different participants in a trial",
+              "The reduction in prescribed restriction as a trial progresses and adherence falls",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is itself a finding about human adherence, and it means CALERIE's results describe roughly 12 percent restriction rather than the 25 percent its name implies.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "A client doing time-restricted eating alongside strength training asks whether to continue. What is worth mentioning?",
+            options: [
+              "TREAT's lean-mass signal, which favoured the control group in person",
+              "That fasting blunts training adaptation, as the cold-water evidence showed",
+              "That fasting is contraindicated during any strength-training block",
+              "That the eating window should be extended to at least twelve hours",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The appendicular lean mass index difference is the specific finding worth raising with anyone combining the two, and it converges with the Villareal result in the same lesson.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "What is a 'scoping review', and how was it used here?",
+            options: ["A structured survey of the evidence, used to grade each region","A pooled analysis of effect sizes; used to estimate the longevity advantage","A narrative summary; used to describe the zones' shared features","A demographic audit; used to verify individual age records"],
+            correctIndex: 0,
+            explanation: "Sixty-five records, classified into well characterised, under investigation, and excluded.",
+            sourceLessonSlug: "blue-zones-after-scrutiny",
+          },
+          {
+            prompt: "Which regions sat in the 'under investigation' tier?",
+            options: ["Ikaria, Cilento, a Netherlands municipality, Martinique and Guadeloupe, Rugao","Menorca and Loma Linda","Ogliastra, Okinawa, and Nicoya","Okinawa and Nicoya only"],
+            correctIndex: 0,
+            explanation: "Incomplete or conflicting data. The well-characterised tier is Ogliastra, Okinawa, and Nicoya; Menorca and Loma Linda were excluded.",
+            sourceLessonSlug: "blue-zones-after-scrutiny",
+          },
+          {
+            prompt: "What happened in Okinawa specifically?",
+            options: ["Indicators approaching adjacent areas, attributed to westernisation, with rising mortality","The advantage held while the diet changed, showing diet was not the driver","Records were found unreliable, removing it from the well-characterised tier","The zone shrank geographically as younger residents left"],
+            correctIndex: 0,
+            explanation: "The geographic shrinkage and pre-1930 cohort finding belong to Nicoya, a separate erosion pattern in the same review.",
+            sourceLessonSlug: "blue-zones-after-scrutiny",
+          },
+          {
+            prompt: "What is 'well characterised versus under investigation'?",
+            options: ["The review's tiers for demographic support","A distinction between studied and unstudied regions","A ranking by the size of the longevity advantage","A classification by data recency"],
+            correctIndex: 0,
+            explanation: "Three tiers, and knowing which region sits where is what stops a coach repeating a list the evidence does not support.",
+            sourceLessonSlug: "blue-zones-after-scrutiny",
+          },
+          {
+            prompt: "Why does the course not quote the age-record-fraud figures?",
+            options: ["It could not verify that work's specific numbers, so it gives direction only","The work has been retracted since publication","The figures apply only to regions outside the review's scope","The critique was addressed and resolved by later analysis"],
+            correctIndex: 0,
+            explanation: "The direction of the concern is consistent with the review's own finding that these statistics are fragile, so the concern is taught and the numbers are not.",
+            sourceLessonSlug: "blue-zones-after-scrutiny",
+          },
+          {
+            prompt: "What is 'time-restricted eating'?",
+            options: ["Confining intake to a daily window, tested in TREAT against structured meals","Restricting calories on alternate days","Eating only during daylight hours to align with circadian timing","Restricting intake to two meals a day"],
+            correctIndex: 0,
+            explanation: "TREAT tested sixteen-eight against three structured meals and found no significant weight advantage.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "What did CALERIE's restricted group show?",
+            options: ["Cardiometabolic markers, most in men","Reduced mortality over the two-year follow-up","No change in any measured marker","Improvements confined to weight and body composition"],
+            correctIndex: 0,
+            explanation: "Including apolipoprotein B, an inflammation marker, and indices of insulin resistance and diabetes risk. Markers, not outcomes.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "What is 'risk markers versus outcomes'?",
+            options: ["Blood measures and indices versus events and deaths","Measures taken early versus late in a trial","Surrogate endpoints versus patient-reported ones","Biomarkers versus behavioural measures"],
+            correctIndex: 0,
+            explanation: "CALERIE moved the former and did not assess the latter, which is why it cannot support a lifespan claim.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "What is the relevant question about fasting protocols?",
+            options: ["Not 'does fasting work' but 'does it beat an equal calorie deficit'","Not 'does fasting work' but 'which protocol works best'","Not 'does fasting work' but 'is it safe long term'","Not 'does fasting work' but 'which populations suit it'"],
+            correctIndex: 0,
+            explanation: "The comparator question from WELL-04 applied here. Against nothing most deficits work; the question is whether the protocol adds anything.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "What did Villareal's primary outcome measure, and over what period?",
+            options: ["Physical Performance Test score change from baseline to six months","Body weight change over twelve months","Lean mass and bone density over two years","All-cause mortality over a median 20.7 years"],
+            correctIndex: 0,
+            explanation: "Secondary outcomes included other frailty measures, body composition, bone density, and physical functions.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "How did peak oxygen consumption and strength separate across Villareal's arms?",
+            options: ["Combined led both; aerobic led VO2, resistance led strength","VO2 peak rose most in resistance; strength rose most in aerobic","Both rose equally across all three exercise arms","Neither changed significantly in any arm"],
+            correctIndex: 0,
+            explanation: "Which is why the combined arm produced the largest functional gain: it is the only one appearing in both lists.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "What is 'weight-loss-induced sarcopenia and osteopenia'?",
+            options: ["Muscle and bone lost alongside fat during a deficit, accelerated in older adults","Muscle and bone loss caused by ageing independently of weight change","The frailty that follows rapid unintentional weight loss in illness","Bone loss specific to very-low-energy diets"],
+            correctIndex: 0,
+            explanation: "Attenuated by resistance training, which is the finding the whole lesson turns on.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "What is 'combined training', and what did it produce?",
+            options: ["Aerobic plus resistance together; the largest functional gain in Villareal's trial","Two training modes on alternating days; equivalent gains to either alone","Resistance training with an aerobic warm-up; the best bone outcomes","Concurrent training within one session; the worst adaptation outcomes"],
+            correctIndex: 0,
+            explanation: "21 percent performance improvement against 14 percent in each single-mode arm, and all exercise arms beat the control.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "What did COSMOS randomise, and for how long?",
+            options: ["Older adults to cocoa extract, a multivitamin, both, or neither; median 3.6 years","Older adults to a multivitamin or placebo; median 10 years","Adults with cardiovascular risk to cocoa or usual care; two years","Older adults to four supplement combinations; median 5 years"],
+            correctIndex: 0,
+            explanation: "Followed for cardiovascular events and cancer. A factorial design testing two agents at once.",
+            sourceLessonSlug: "the-supplement-autopsy",
+          },
+          {
+            prompt: "What was the isolated signal in the multivitamin arm, and how should it be read?",
+            options: ["Lung cancer HR 0.62, an isolated signal among many outcomes tested","Lung cancer HR 0.62, the trial's confirmed secondary finding","All-cause mortality HR 0.93, a near-significant benefit","Cardiovascular composite HR 0.98, consistent with no effect"],
+            correctIndex: 0,
+            explanation: "Multiplicity: among many outcomes tested, some will look significant by chance. The authors concluded a daily multivitamin did not significantly reduce total cancer.",
+            sourceLessonSlug: "the-supplement-autopsy",
+          },
+          {
+            prompt: "What did the per-protocol analysis of the cocoa arm show, and why is it flagged?",
+            options: ["Total events 0.85 in adherent participants; per-protocol breaks randomisation and flatters","Total events 0.73 in all participants; per-protocol confirms the primary","No difference; per-protocol analyses are always more conservative","Total events 0.90; per-protocol matched the intention-to-treat result"],
+            correctIndex: 0,
+            explanation: "Adherent participants differ from non-adherent ones in ways beyond adherence, which is what breaking randomisation costs.",
+            sourceLessonSlug: "the-supplement-autopsy",
+          },
+          {
+            prompt: "What is a 'secondary endpoint'?",
+            options: ["An extra outcome; positives generate hypotheses","The second-most-important outcome, ranked before the trial","An outcome measured at a later timepoint","An outcome measured in a subgroup"],
+            correctIndex: 0,
+            explanation: "Hypotheses rather than conclusions, which is exactly what the cocoa cardiovascular-death result is.",
+            sourceLessonSlug: "the-supplement-autopsy",
+          },
+          {
+            prompt: "What is the scope note on supplements, and what does not change it?",
+            options: ["Educate on a category, never prescribe or manage; being sold without prescription changes nothing","Educate and recommend where evidence supports it; over-the-counter status permits recommendation","Refer all supplement questions; the coach may not discuss them","Recommend only supplements with randomized support behind them"],
+            correctIndex: 0,
+            explanation: "WELL-03 established the rule; this lesson applies it where the marketing is heaviest.",
+            sourceLessonSlug: "the-supplement-autopsy",
+          },
+          {
+            prompt: "What is the general lesson that outlives any specific supplement?",
+            options: ["The primary endpoint, how many outcomes, and which group","Ask who funded it, whether it was blinded, and whether it replicated","Ask the sample size, the effect size, and the confidence interval","Ask whether the mechanism is plausible and the dose realistic"],
+            correctIndex: 0,
+            explanation: "Those three questions work on the next compound too, whatever it turns out to be.",
+            sourceLessonSlug: "the-supplement-autopsy",
+          },
+          {
+            prompt: "What is 'achieved versus prescribed restriction'?",
+            options: ["The gap between what a trial asked and what participants delivered: 25 became 11.9","The difference between what a client agrees to and what they report","Variation in restriction across participants within a trial","The reduction in prescribed restriction as adherence falls"],
+            correctIndex: 0,
+            explanation: "It means CALERIE's results describe roughly 12 percent restriction rather than the 25 percent its name implies.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "How should a client's eating window be coached?",
+            options: ["Support it if it helps them eat less, and no more","Discourage it, since TREAT found no advantage","Support it and encourage extending the fasting window","Support it only if they are not strength training"],
+            correctIndex: 0,
+            explanation: "The belief is what makes them persist with a protocol that is not working for them, which is why the correction matters even when the tool is fine.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "Why is caloric restriction called the most biologically credible longevity intervention?",
+            options: ["It extends life across many species","It has randomized human evidence for lifespan extension","It targets the largest number of hallmarks simultaneously","It is the only intervention with mechanistic and outcome data"],
+            correctIndex: 0,
+            explanation: "Which makes what it does in PEOPLE a narrower story, and CALERIE is that narrower story.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "Which claim about the cocoa result would this course refuse?",
+            options: ["'Cocoa flavanols cut cardiovascular death by 27 percent' presented as the trial's result","'A secondary endpoint showed cardiovascular death at HR 0.73'","'The primary endpoint of total cardiovascular events was not met'","'A per-protocol analysis supported a reduction in total events'"],
+            correctIndex: 0,
+            explanation: "It is a true sentence about a secondary endpoint presented as though it were the finding. The honest version is longer and duller.",
+            sourceLessonSlug: "the-supplement-autopsy",
+          },
+          {
+            prompt: "What is the coaching translation of the Blue Zones scrutiny?",
+            options: ["Teach the generic healthy-aging factors, and skip the folklore","Teach the zones as illustrative even where the demography is weak","Avoid the topic entirely, since the evidence is contested","Teach only the two zones with the strongest demographic support"],
+            correctIndex: 0,
+            explanation: "Every surviving feature is already established in ordinary cohort studies without any regional mystique.",
+            sourceLessonSlug: "blue-zones-after-scrutiny",
+          },
+          {
+            prompt: "What is 'multiplicity', and where does it bite in COSMOS?",
+            options: ["Inflated false-positive chance when many outcomes are tested; the lung-cancer signal","The presence of multiple agents in one trial; the factorial design","Multiple analyses of the same outcome; the per-protocol analysis","Multiple follow-up timepoints; the 3.6-year median"],
+            correctIndex: 0,
+            explanation: "The factorial design and the per-protocol analysis are real issues too, but multiplicity is specifically about the number of outcomes tested.",
             sourceLessonSlug: "the-supplement-autopsy",
           },
         ],
@@ -669,19 +2100,715 @@ Sesso, H. D., Manson, J. E., Aragaki, A. K., et al. (2022b). Effect of cocoa fla
 
 **The affiliation statement, one final time.** This program is independent. It is not affiliated with, endorsed by, or accredited by NASM or the NBHWC, and completing it grants no credential from either. What it grants is what you can now do.
 
-**The mock exam week.** WELL-00 promised this, and here it is. When all eight courses are complete, take every course final again, back to back in one sitting: eight finals, ten freshly drawn questions each, eighty questions across the whole program. The pools serve different subsets on retake, so this measures retention rather than memory. Treat a score below 80 on any final as an instruction about which course to reread, not as a verdict.
+**The mock exam week.** WELL-00 promised this, and here it is. When all nine courses are complete, take every course final again, back to back in one sitting: nine finals, ten freshly drawn questions each, ninety questions across the whole program. The pools serve different subsets on retake, so this measures retention rather than memory. Treat a score below 80 on any final as an instruction about which course to reread, not as a verdict.
 
 **And the real capstone assignment, which is not a quiz.** Write your protocol, per lesson 12. Run it for a month. Then run the WELL-01 session loop on yourself about it: evoke what it is actually for, find the inner obstacle that showed up, and revise one element into a contingent plan with an anchor and a minimum version. Keep the artefact. In a year, run it again against what you wrote, and you will have the only longitudinal data about you that will ever exist.
 
+**And one thing self-coaching cannot do, which this program owes you plainly.** Everything above happens between you and a document. But the craft WELL-01 spent twenty-six lessons on is **relational**: evoking, rolling with ambivalence, softening sustain talk, the reflection-to-question ratio, and the moment where a client's voice changes and you do not flinch. Those mechanisms require a second mind. You cannot evoke your own change talk against your own resistance, because there is no one in the room who does not already know what you are about to say.
+
+Which means a written self-coaching artefact demonstrates that you can **plan**, and demonstrates nothing at all about whether you can **coach**. On Miller's four levels of clinical competence, knows, knows how, shows how, and does, this program's assessment sits almost entirely in the bottom two. Reading that honestly is the same discipline the rest of the course applies to effect sizes.
+
+**So the capstone has a second required element.** Run one **live, unscripted twenty-to-thirty-minute coaching session with a real person**, recorded with their explicit consent, on something they actually want to change. Not a role-play, not a friend performing a client, and not a session you have scripted in advance. Then code your own transcript against the two markers WELL-01 taught: your **reflection-to-question ratio**, and the proportion of your reflections that were **complex** rather than simple. Write one paragraph on what you would do differently.
+
+This is required rather than optional, because it is the only part of the capstone that tests the thing the program is actually for. If no willing person is available this month, the honest move is to say the capstone is incomplete and keep looking, not to substitute a self-coaching transcript and call it done.
+
+**A caution about the coding standards.** You will find published MITI thresholds for reflection ratios and complex-reflection percentages. This program does not quote numbers for them, because the versions in circulation mix MITI 3.1.1 and MITI 4.2 criteria, and the current manual is the authority rather than any summary of it. Code your own transcript, compare it against your own next one, and read the manual before attaching a target to either number.
+
 :::reveal Does completing this program extend your scope of practice? ||| No, not by an inch. You still do not diagnose, treat, deliver named psychotherapies, prescribe diets for conditions, or interpret measurements clinically. What the knowledge buys is better referrals, better collaboration with clinicians, more accurate claims, and better coaching.
 
-:::reveal Describe the mock exam week and how to read a low score. ||| After all eight courses, take every course final back to back in one sitting: eight finals, ten freshly drawn questions each, eighty questions total. Because pools serve different subsets on retake, it measures retention. A score under 80 on any final is an instruction about which course to reread, not a verdict.
+:::reveal Describe the mock exam week and how to read a low score. ||| After all nine courses, take every course final back to back in one sitting: nine finals, ten freshly drawn questions each, ninety questions total. Because pools serve different subsets on retake, it measures retention. A score under 80 on any final is an instruction about which course to reread, not a verdict.
 
 ## Vocabulary
 - **Competence-driven overreach**: the specific risk that knowing more makes stepping outside scope feel justified.
-- **Mock exam week**: the program's culminating assessment, all eight finals in one sitting with freshly drawn questions.
+- **Mock exam week**: the program's culminating assessment, all nine finals in one sitting with freshly drawn questions.
 - **Capstone artefact**: the written protocol and self-coaching session that becomes the baseline for future comparison.
+- **Live session requirement**: one recorded, consented, unscripted 20-30 minute session with a real person, self-coded; the capstone's second required element.
+- **Miller's levels**: knows, knows how, shows how, does; this program's assessment sits in the bottom two, and the live session is what reaches the third.
+- **Relational craft**: the MI skills that require a second mind, since you cannot evoke your own change talk against your own resistance.
 - **Independent study program**: this program's honest status, granting capability rather than any external credential.`,
+    },
+    {
+      slug: "quiz-the-protocol",
+      title: "16 · Knowledge check: the protocol",
+      section: "Section 4 · The protocol",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "Where does protocol design start?",
+            options: [
+              "From the week, not the pillars: write one ordinary week, check it against six",
+              "From the pillars, addressing each in turn until all six are covered",
+              "From the client's weakest pillar, which offers the largest available gain",
+              "From the client's strongest pillar, to build early momentum",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Six separate programs compete for the same hours and lose. Where a pillar is missing entirely, that is the design problem; where it is present but fragile, that is the coaching problem.",
+            sourceLessonSlug: "designing-your-protocol",
+          },
+          {
+            prompt: "At what level should the doses be set?",
+            options: [
+              "At the low end, deliberately smaller than the version built to impress someone",
+              "At the level the evidence identifies as optimal for each outcome",
+              "At the highest level the client believes they can sustain",
+              "At the midpoint of each guideline's recommended range",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Next thousand steps rather than a universal target, strength work that survives a bad month, a breathing practice measured in minutes. Every number came from a course and every one is deliberately small.",
+            sourceLessonSlug: "designing-your-protocol",
+          },
+          {
+            prompt: "When should the minimum version be defined?",
+            options: [
+              "Now, before the worst plausible day",
+              "After the first missed week, once the failure mode is known",
+              "At the monthly review, once the pattern is visible",
+              "Only for the elements the client finds hardest",
+            ],
+            correctIndex: 0,
+            explanation:
+              "WELL-01 established that the miss is not the danger; abandonment after the miss is. A protocol without pre-defined minimums ends the first hard week.",
+            sourceLessonSlug: "designing-your-protocol",
+          },
+          {
+            prompt: "What single element does the lesson say makes the other five survive?",
+            options: [
+              "A recurring commitment with the same people, which others notice",
+              "A daily movement habit anchored to a stable cue",
+              "The monthly review, which converts events into revisions",
+              "A fixed wake time, which stabilises the whole week",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The strongest lever in the course is social, and a Tuesday session someone expects you at is more durable than any intention.",
+            sourceLessonSlug: "designing-your-protocol",
+          },
+          {
+            prompt: "What are 'stop conditions'?",
+            options: [
+              "Circumstances decided in advance under which elements pause or hold",
+              "The signs that a protocol is no longer producing benefit and should end",
+              "The point at which a client should stop coaching and self-manage",
+              "The safety limits beyond which an element becomes contraindicated",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Injury, illness, a new job, a family crisis. Deciding in advance which elements pause and which hold is the difference between a protocol that bends and one that shatters.",
+            sourceLessonSlug: "designing-your-protocol",
+          },
+          {
+            prompt: "What is a 'social anchor'?",
+            options: [
+              "A recurring commitment with other people, carrying the strongest lever and stabilising the rest",
+              "A person the client reports their progress to weekly",
+              "A social group organised around the client's health goals",
+              "A commitment the client makes publicly to increase accountability",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It does two jobs at once: it is the pillar with the strongest evidence, and it is the structure that makes the other elements durable.",
+            sourceLessonSlug: "designing-your-protocol",
+          },
+          {
+            prompt: "What should be measured mostly?",
+            options: [
+              "Behaviour: sessions completed, step trend, sleep timing, whether the social commitment happened",
+              "Capacity: fitness, strength, and body composition, tracked monthly",
+              "Outcomes: weight, blood pressure, and blood markers, tracked quarterly",
+              "Subjective state: energy, mood, and perceived recovery, tracked daily",
+            ],
+            correctIndex: 0,
+            explanation:
+              "These are the things you control, they respond immediately, and behavioural adherence out-predicts almost everything else about outcomes.",
+            sourceLessonSlug: "what-to-measure",
+          },
+          {
+            prompt: "What should be measured rarely, and why?",
+            options: [
+              "Fitness and strength: the strongest mortality associations, both changing slowly",
+              "Body composition and weight, since frequent measurement generates anxiety",
+              "Blood markers, since they require clinical interpretation the coach cannot provide",
+              "Sleep and recovery metrics, since devices measure them poorly",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Once or twice a year is enough to see a trend and not often enough to generate anxiety. Grip strength is worth having because it takes seconds and summarises a great deal.",
+            sourceLessonSlug: "what-to-measure",
+          },
+          {
+            prompt: "What noise should be ignored?",
+            options: [
+              "Nightly sleep stages, single-morning HRV, and daily weight unless read calmly",
+              "All wearable data, since none of it is validated for individual use",
+              "Weekly step totals, which fluctuate too much to be informative",
+              "Subjective ratings, which are unreliable compared with device measurement",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Stage breakdowns are the least reliable tracker output (WELL-05), and HRV can move for mathematical reasons unrelated to recovery (WELL-04).",
+            sourceLessonSlug: "what-to-measure",
+          },
+          {
+            prompt: "What is 'measurement-induced anxiety,' and what is the intervention?",
+            options: [
+              "Tracking worsens the tracked outcome; stop that number for a fortnight",
+              "Anxiety about results delays testing; schedule it in advance and commit",
+              "Frequent measurement produces noise that looks like decline; measure less often",
+              "Comparison with norms produces distress; measure only against personal baselines",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Named as orthosomnia in the sleep pillar. If a number is generating distress rather than decisions, the intervention is to stop collecting it.",
+            sourceLessonSlug: "what-to-measure",
+          },
+          {
+            prompt: "What does the lesson call 'the actual instrument'?",
+            options: [
+              "The monthly review: wins, near-misses, one revision",
+              "The annual capacity testing of fitness and strength",
+              "The weekly behavioural tracking that responds immediately",
+              "The written protocol itself, revised as circumstances change",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Across decades that structure does more than any device, because it converts what happened into what changes next. A protocol with no review is a plan you wrote once.",
+            sourceLessonSlug: "what-to-measure",
+          },
+          {
+            prompt: "What distinguishes a behavioural metric from a capacity metric?",
+            options: [
+              "Behavioural: what you did, responding immediately. Capacity: what the body can do, changing slowly",
+              "Behavioural is self-reported; capacity is objectively measured",
+              "Behavioural is tracked daily; capacity is tracked weekly",
+              "Behavioural predicts adherence; capacity predicts outcomes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Control and response speed are what separate them, and that is why one is tracked constantly and the other once or twice a year.",
+            sourceLessonSlug: "what-to-measure",
+          },
+          {
+            prompt: "What actually changes across a multi-decade horizon?",
+            options: [
+              "Your body, and your constraints: children, careers, illness, caregiving, bereavement, moving",
+              "Your body primarily, with constraints remaining broadly stable after mid-life",
+              "Your goals, which shift as priorities change with age",
+              "The evidence, which will have been substantially revised",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A protocol that assumes stable conditions will be invalidated repeatedly. The question is never whether that happens but whether the protocol is built to be rewritten.",
+            sourceLessonSlug: "the-decades-problem",
+          },
+          {
+            prompt: "What does 'design for revision rather than for optimality' mean?",
+            options: [
+              "A protocol tuned to this year is more fragile than a rougher one that survives rebuilding",
+              "Protocols should be reviewed and revised on a fixed schedule regardless of circumstances",
+              "Optimality should be sacrificed for simplicity so clients can follow it unaided",
+              "Each revision should improve on the last, building toward an optimal version",
+            ],
+            correctIndex: 0,
+            explanation:
+              "WELL-02's maintenance evidence showed most of what people keep is a fraction of what they gained, and that fraction persists for years. The goal is to keep having something to keep.",
+            sourceLessonSlug: "the-decades-problem",
+          },
+          {
+            prompt: "What is 'cue deletion,' and why does it matter across decades?",
+            options: [
+              "Changed circumstances remove a habit's trigger silently; every cue is eventually deleted",
+              "Habits weaken as their cues become less salient with repetition",
+              "Clients stop responding to cues once the behaviour becomes automatic",
+              "Cues lose effectiveness when a client is under high stress",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Noticing that a habit stopped because its trigger vanished, rather than because you failed, is the difference between rebuilding in a week and concluding you are not the kind of person who does this.",
+            sourceLessonSlug: "the-decades-problem",
+          },
+          {
+            prompt: "What is the operative belief over forty years?",
+            options: [
+              "Whether you are someone who keeps returning after interruptions",
+              "Whether the protocol is worth the effort it requires",
+              "Whether your goals still matter to you as circumstances change",
+              "Whether the evidence behind each element still holds",
+            ],
+            correctIndex: 0,
+            explanation:
+              "And it is built by returning after interruptions, which means the interruptions are not the enemy of the protocol. They are the training.",
+            sourceLessonSlug: "the-decades-problem",
+          },
+          {
+            prompt: "State the honest arithmetic of the whole program.",
+            options: [
+              "Small and maintained beats large and abandoned, by an uncloseable margin",
+              "Large effects applied briefly outperform small effects applied consistently",
+              "The pillars combine multiplicatively, so six modest effects produce a large one",
+              "Effects compound only where adherence exceeds eighty percent across decades",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Nearly every effect in these six courses is small. Compounded across decades and applied to curves where the steepest gains belong to the least active, that is not a consolation. It is the finding.",
+            sourceLessonSlug: "the-decades-problem",
+          },
+          {
+            prompt: "What is 're-anchoring'?",
+            options: [
+              "Attaching a behaviour to a new stable cue after the old one disappears",
+              "Restarting a habit after a period of abandonment",
+              "Renewing a client's commitment to a goal that has lost salience",
+              "Reconnecting a behaviour to the value that originally motivated it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the fix for cue deletion, and it is why diagnosing a stopped habit correctly matters: motivation work aimed at a cue problem wastes the session.",
+            sourceLessonSlug: "the-decades-problem",
+          },
+          {
+            prompt: "How does completing this program change your scope of practice?",
+            options: [
+              "Not by a single inch",
+              "It extends scope in the pillars where the coach now has content knowledge",
+              "It permits clinical interpretation of measurements the coach now understands",
+              "It permits work with clinical populations under a clinician's direction",
+            ],
+            correctIndex: 0,
+            explanation:
+              "You still do not diagnose, treat, deliver named psychotherapies, prescribe diets for conditions, or interpret measurements clinically. Knowing more is exactly when scope discipline gets tested.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+          {
+            prompt: "What is 'competence-driven overreach'?",
+            options: [
+              "The risk that knowing more makes overstepping feel justified",
+              "The tendency of experienced coaches to take on clients beyond their capacity",
+              "The expansion of a practice faster than a coach's skills develop",
+              "The assumption that competence in one pillar transfers to another",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is why the scope lesson comes last rather than only first: the moment of greatest risk is the moment of greatest knowledge.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+          {
+            prompt: "What did the knowledge buy you, per the closing lesson?",
+            options: [
+              "Better referrals, collaboration, claims, and coaching",
+              "A credential recognised by the certifying bodies the program benchmarks against",
+              "The ability to work with clinical populations that were previously out of reach",
+              "Authority with clients, who respond to demonstrated expertise",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Recognising what needs a referral, talking to a clinician without wasting their time, knowing the actual sizes, and understanding the systems a client's behaviour runs on.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+          {
+            prompt: "Describe the mock exam week.",
+            options: [
+              "After all nine courses, every final back to back: nine finals, ten fresh questions each",
+              "After all nine courses, a separate ninety-question comprehensive exam drawn from all pools",
+              "One course final per day across nine consecutive days",
+              "Nine finals in one sitting, with the same questions served as on first attempt",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The pools serve different subsets on retake, so this measures retention rather than memory. It reuses the existing finals rather than adding an exam.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+          {
+            prompt: "How should a score below 80 on any final be treated?",
+            options: [
+              "As an instruction about which course to reread, not a verdict",
+              "As a failure requiring the course to be retaken in full",
+              "As noise, since a single attempt draws a small subset",
+              "As a signal to review the whole program before reattempting",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Every question names the lesson that teaches its answer, so a low score resolves into a specific reading list rather than a judgment.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+          {
+            prompt: "What is the real capstone assignment?",
+            options: [
+              "Write the protocol, run it a month, then run the session loop on yourself",
+              "Complete the mock exam week and record the scores as a baseline",
+              "Coach another person through a month of the protocol you designed",
+              "Document the evidence behind each element of your protocol with citations",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Evoke what it is actually for, find the inner obstacle that showed up, revise one element into a contingent plan with an anchor and a minimum version. Keep the artefact.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+          {
+            prompt: "Why keep the capstone artefact?",
+            options: [
+              "Rerunning it in a year gives the only longitudinal data about you that will exist",
+              "It documents the coaching work for professional record-keeping purposes",
+              "It demonstrates competence to any future certifying body",
+              "It provides a template that can be adapted for future clients",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The comparison is the point. A protocol written and never revisited is a plan; one compared against itself a year later is data.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+          {
+            prompt: "What is the affiliation statement, one final time?",
+            options: [
+              "Independent, not affiliated with or accredited by NASM or NBHWC, granting no credential",
+              "Independently developed but aligned with the NBHWC content outline",
+              "An unaccredited program whose completion may count toward continuing education",
+              "A program benchmarked against two credentials and recognised by neither",
+            ],
+            correctIndex: 0,
+            explanation:
+              "What it grants is what you can now do. The statement appears in lesson 1 of WELL-00 and again here, deliberately bracketing the program.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+          {
+            prompt: "A client's protocol collapsed after they changed jobs. What is the first diagnosis to consider?",
+            options: [
+              "Cue deletion: the trigger vanished silently, so re-anchor rather than re-motivate",
+              "Lost motivation, addressed by returning to evoking",
+              "Excessive dose, addressed by reducing each element",
+              "Missing minimum versions, addressed by defining them now",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A schedule change deletes cues silently. Treating it as a motivation problem aims at the wrong variable and teaches the client the wrong lesson about themselves.",
+            sourceLessonSlug: "the-decades-problem",
+          },
+          {
+            prompt: "Which measurement would this lesson tell a client to stop collecting?",
+            options: [
+              "A nightly sleep-stage breakdown generating distress rather than decisions",
+              "A weekly step trend that has been flat for a month",
+              "An annual grip-strength measurement that has declined slightly",
+              "A record of whether the weekly social commitment happened",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Stage breakdowns are the least reliable output the device produces, and distress rather than decisions is the stated criterion for a fortnight's holiday from a number.",
+            sourceLessonSlug: "what-to-measure",
+          },
+          {
+            prompt: "What is the 'week as unit' instruction in protocol design?",
+            options: [
+              "One realistic week containing all six pillars, rather than parallel programs",
+              "Review and revise the protocol weekly rather than monthly",
+              "Assign each pillar to a different day of the week",
+              "Measure adherence weekly rather than daily to reduce noise",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It follows from lesson 6's finding that the pillars are a system rather than a list, and it is what makes the design problem visible: which pillar is missing from the week you actually live.",
+            sourceLessonSlug: "designing-your-protocol",
+          },
+          {
+            prompt: "What does the capstone say self-coaching CANNOT demonstrate?",
+            options: ["Whether you can coach; it demonstrates only that you can plan","Whether the protocol is well designed","Whether you understand the evidence behind each element","Whether you will sustain the protocol over time"],
+            correctIndex: 0,
+            explanation: "The craft WELL-01 spent twenty-six lessons on is relational, and a written artefact between you and a document tests none of it.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+          {
+            prompt: "Why can you not evoke your own change talk?",
+            options: ["Nobody in the room is unaware of what you are about to say","Self-reflection is less accurate than external observation","Change talk requires a listener to reflect it back","Ambivalence resolves when examined privately"],
+            correctIndex: 0,
+            explanation: "Evoking, rolling with ambivalence, and softening sustain talk all require a second mind, which is the argument for the live-session requirement.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+          {
+            prompt: "What are Miller's four levels, and where does this program sit?",
+            options: ["Knows, knows how, shows how, does; we sit low","Knows, applies, evaluates, creates; in the middle two","Novice, competent, proficient, expert; at competent","Awareness, understanding, skill, mastery; at understanding"],
+            correctIndex: 0,
+            explanation: "This program sits almost entirely in the bottom two. Reading that honestly is the same discipline the rest of the course applies to effect sizes.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+          {
+            prompt: "What exactly does the live-session requirement specify?",
+            options: ["20-30 minutes, unscripted, real person, recorded","30-60 minutes with a practice partner following a prepared scenario","Any length, provided the session is recorded and reviewed","A role-play with a colleague acting as a client"],
+            correctIndex: 0,
+            explanation: "Not a role-play, not a friend performing a client, and not a session scripted in advance.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+          {
+            prompt: "What two markers does the learner code their own transcript against?",
+            options: ["Reflection-to-question ratio, and complex reflections","Open-versus-closed question ratio, and total speaking time","Change talk versus sustain talk counts, and session length","Affirmations offered, and the number of goals agreed"],
+            correctIndex: 0,
+            explanation: "Both come from WELL-01, so the coding vocabulary already exists. Plus one paragraph on what you would do differently.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+          {
+            prompt: "Why is the live session required rather than optional?",
+            options: ["It is the only part testing what the program is for","It is the only part that can be independently verified","It is required by the credential the program benchmarks against","It is the only part producing a durable artefact"],
+            correctIndex: 0,
+            explanation: "If no willing person is available, the honest move is to call the capstone incomplete and keep looking.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+          {
+            prompt: "Why does the course quote NO MITI thresholds?",
+            options: ["Circulating versions mix MITI 3.1.1 and 4.2 criteria","MITI is proprietary and cannot be reproduced","The thresholds apply only to clinical rather than coaching contexts","MITI coding requires certification the learner does not hold"],
+            correctIndex: 0,
+            explanation: "Code your own transcript, compare against your next one, and read the manual before attaching a target to either number.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+          {
+            prompt: "What is 'relational craft'?",
+            options: ["The MI skills that require a second mind","The interpersonal warmth a coach brings to sessions","The skills specific to building rapport at intake","The techniques used when a client becomes emotional"],
+            correctIndex: 0,
+            explanation: "Evoking, rolling with ambivalence, softening sustain talk, and not flinching when a voice changes.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+          {
+            prompt: "What is 'competence-driven overreach'?",
+            options: ["The risk that knowing more makes overstepping feel justified","Taking on more clients than capacity allows","Expanding a practice faster than skills develop","Assuming competence in one pillar transfers to another"],
+            correctIndex: 0,
+            explanation: "It is why the scope lesson comes last as well as first: the moment of greatest risk is the moment of greatest knowledge.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+          {
+            prompt: "What is the 'mock exam week'?",
+            options: ["All nine finals in one sitting, ninety questions","A separate ninety-question comprehensive examination","One final per day across nine days","A repeat of the finals with the original question draw"],
+            correctIndex: 0,
+            explanation: "The pools serve different subsets on retake, so it measures retention rather than memory.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+          {
+            prompt: "What is the 'capstone artefact'?",
+            options: ["The written protocol, next year's baseline","The recorded live session and its coded transcript","The completed mock-exam scores across nine finals","The monthly review log across the first year"],
+            correctIndex: 0,
+            explanation: "In a year, running it again against what you wrote gives the only longitudinal data about you that will ever exist.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+          {
+            prompt: "What is 'independent study program' as the program's honest status?",
+            options: ["Granting capability rather than any external credential","A program not affiliated with a university","A self-paced program without instructor contact","A program whose curriculum was independently developed"],
+            correctIndex: 0,
+            explanation: "Not affiliated with, endorsed by, or accredited by NASM or the NBHWC. What it grants is what you can now do.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+          {
+            prompt: "Where does the design problem show up, versus the coaching problem?",
+            options: ["A pillar missing entirely is design; a pillar present but fragile is coaching","A pillar with low adherence is design; one with no plan is coaching","A pillar the client dislikes is design; one they forget is coaching","A pillar without measurement is design; one without a goal is coaching"],
+            correctIndex: 0,
+            explanation: "Write one ordinary week with its real constraints, and check it against the six. The distinction tells you which problem you are solving.",
+            sourceLessonSlug: "designing-your-protocol",
+          },
+          {
+            prompt: "What doses does the protocol lesson name, and at what level?",
+            options: ["Smaller than the version you would design to impress someone","Guideline minimums for each pillar, adjusted for the client's baseline","The optimal dose from each course's dose-response curve","Whatever the client believes they can sustain indefinitely"],
+            correctIndex: 0,
+            explanation: "Every number came from a course, and every one is deliberately smaller than the version you would design to impress someone.",
+            sourceLessonSlug: "designing-your-protocol",
+          },
+          {
+            prompt: "What is the 'minimum version', and when is it defined?",
+            options: ["The smallest instance that still counts","The reduced version used during a deload week","The starting dose before progression begins","The version the client agrees to at intake"],
+            correctIndex: 0,
+            explanation: "A protocol without pre-defined minimums is a protocol that ends the first hard week.",
+            sourceLessonSlug: "designing-your-protocol",
+          },
+          {
+            prompt: "What are 'stop conditions', and what do they prevent?",
+            options: ["Pauses and holds decided in advance","Signs the protocol should be abandoned; they prevent wasted effort","Safety limits beyond which elements are contraindicated","The point at which coaching should conclude"],
+            correctIndex: 0,
+            explanation: "Injury, illness, a new job, a family crisis. It is the adherence work from WELL-01 applied to a forty-year timeframe.",
+            sourceLessonSlug: "designing-your-protocol",
+          },
+          {
+            prompt: "What is a 'behavioural metric'?",
+            options: ["What you did, which you control","A measure of how a behaviour felt to perform","A measure combining objective and subjective data","A measure of adherence to an agreed plan"],
+            correctIndex: 0,
+            explanation: "Sessions completed, weekly step trend, sleep timing, whether the social commitment happened.",
+            sourceLessonSlug: "what-to-measure",
+          },
+          {
+            prompt: "What is a 'capacity metric', and how often is it tested?",
+            options: ["What your body can do; once or twice a year","What your body can do; monthly, to track progression","What your body can do; quarterly, alongside blood markers","What your body can do; only when a decline is suspected"],
+            correctIndex: 0,
+            explanation: "Enough to see a trend and not often enough to generate anxiety. Grip strength is worth having because it takes seconds.",
+            sourceLessonSlug: "what-to-measure",
+          },
+          {
+            prompt: "What is 'measurement-induced anxiety', and what is the intervention?",
+            options: ["Tracking worsens the tracked outcome; stop for a fortnight","Anxiety about results delays testing; schedule it in advance","Noise looks like decline; measure less often","Norm comparison distresses; use personal baselines"],
+            correctIndex: 0,
+            explanation: "Named as orthosomnia in the sleep pillar. If a number generates distress rather than decisions, stop collecting it.",
+            sourceLessonSlug: "what-to-measure",
+          },
+          {
+            prompt: "What is 'the monthly review', and why is it called the actual instrument?",
+            options: ["Wins, near-misses, and one revision","A structured re-measurement of all capacity metrics","A review of the protocol against the evidence base","A check-in with the coach to renew commitment"],
+            correctIndex: 0,
+            explanation: "It converts what happened into what changes next. A protocol with no review is a plan you wrote once.",
+            sourceLessonSlug: "what-to-measure",
+          },
+          {
+            prompt: "What is 'cue deletion', and what is the fix?",
+            options: ["Changed circumstances removing a trigger silently; deliberate re-anchoring","A habit weakening as its cue becomes familiar; increasing salience","A client ignoring a cue once automatic; adding a reminder","A cue losing power under stress; reducing the demand"],
+            correctIndex: 0,
+            explanation: "Across decades every cue you rely on will eventually be deleted. Noticing that is the difference between rebuilding in a week and concluding you are not that kind of person.",
+            sourceLessonSlug: "the-decades-problem",
+          },
+          {
+            prompt: "What is the operative belief over forty years, and how is it built?",
+            options: ["Whether you keep returning; built by returning","Whether the protocol is worth its effort; built by seeing results","Whether your goals still matter; built by revisiting values","Whether the evidence still holds; built by staying current"],
+            correctIndex: 0,
+            explanation: "Which means the interruptions are not the enemy of the protocol. They are the training.",
+            sourceLessonSlug: "the-decades-problem",
+          },
+          {
+            prompt: "What does 'design for revision' borrow from WELL-02's maintenance evidence?",
+            options: ["A kept fraction persists for years","Maintenance requires ongoing support to be durable","Gains decay predictably without booster interventions","Device-measured maintenance exceeds self-reported"],
+            correctIndex: 0,
+            explanation: "The goal is to keep having something to keep, which is why a rougher protocol that survives rebuilding beats a finely tuned one.",
+            sourceLessonSlug: "the-decades-problem",
+          },
+          {
+            prompt: "What is 'small and maintained'?",
+            options: ["Modest effects, held, beat large ones abandoned","A prescription for starting doses below guideline levels","The pattern of habit formation across a first year","A description of how effect sizes appear in trials"],
+            correctIndex: 0,
+            explanation: "Applied to curves where the steepest gains belong to the least active. That is not a consolation. It is the finding.",
+            sourceLessonSlug: "the-decades-problem",
+          },
+          {
+            prompt: "What is 'the week as design unit'?",
+            options: ["One realistic week containing every pillar","Weekly rather than monthly review of the protocol","Training planned in weekly blocks rather than sessions","Adherence measured weekly to reduce daily noise"],
+            correctIndex: 0,
+            explanation: "It follows from the pillars being a system rather than a list, and it makes the design problem visible: which pillar is missing from the week you live.",
+            sourceLessonSlug: "designing-your-protocol",
+          },
+          {
+            prompt: "What did the knowledge buy you, per the closing lesson?",
+            options: ["Better referrals, collaboration, claims, and coaching","A credential recognised by the benchmarked bodies","Access to clinical populations previously out of reach","Authority with clients who respond to expertise"],
+            correctIndex: 0,
+            explanation: "Recognising what needs a referral, talking to a clinician without wasting their time, knowing the actual sizes, and understanding the systems behaviour runs on.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+          {
+            prompt: "How should a score below 80 on any final be treated?",
+            options: ["As an instruction about which course to reread, not a verdict","As a failure requiring the course to be retaken in full","As noise, since a single attempt draws a small subset","As a signal to review the whole program"],
+            correctIndex: 0,
+            explanation: "Every question names the lesson that teaches its answer, so a low score resolves into a specific reading list.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+          {
+            prompt: "What changes about scope after completing every course?",
+            options: ["Nothing; you still do not diagnose or treat","Scope extends where content knowledge now exists","Clinical interpretation becomes permissible with understanding","Work with clinical populations becomes available"],
+            correctIndex: 0,
+            explanation: "Knowing more is exactly the situation in which scope discipline gets tested, because competence makes overreach feel reasonable.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+          {
+            prompt: "A client's protocol collapsed after a job change. What is the first diagnosis?",
+            options: ["Cue deletion; re-anchor rather than re-motivate","Lost motivation, addressed by returning to evoking","Excessive dose, addressed by reducing each element","Missing minimums, addressed by defining them now"],
+            correctIndex: 0,
+            explanation: "Treating it as a motivation problem aims at the wrong variable and teaches the client the wrong lesson about themselves.",
+            sourceLessonSlug: "the-decades-problem",
+          },
+          {
+            prompt: "Which measurement should a client stop collecting?",
+            options: ["A nightly sleep-stage breakdown causing distress","A weekly step trend that has been flat for a month","An annual grip measurement showing slight decline","A record of whether the weekly social commitment happened"],
+            correctIndex: 0,
+            explanation: "Stage breakdowns are the least reliable output, and distress rather than decisions is the stated criterion for a fortnight's holiday.",
+            sourceLessonSlug: "what-to-measure",
+          },
+          {
+            prompt: "What actually changes across a multi-decade horizon?",
+            options: ["Your body, and every constraint around it","Your body primarily, with constraints stable after mid-life","Your goals, as priorities shift with age","The evidence, which will be substantially revised"],
+            correctIndex: 0,
+            explanation: "A protocol assuming stable conditions will be invalidated repeatedly. The question is whether it is built to be rewritten.",
+            sourceLessonSlug: "the-decades-problem",
+          },
+          {
+            prompt: "What is 're-anchoring'?",
+            options: ["Attaching a behaviour to a new stable cue","Restarting a habit after abandonment","Renewing commitment to a goal that lost salience","Reconnecting a behaviour to its original motivating value"],
+            correctIndex: 0,
+            explanation: "The fix for cue deletion, and why diagnosing a stopped habit correctly matters: motivation work aimed at a cue problem wastes the session.",
+            sourceLessonSlug: "the-decades-problem",
+          },
+          {
+            prompt: "Why keep the capstone artefact?",
+            options: ["Rerun in a year, it is your only longitudinal data","It documents the work for professional records","It demonstrates competence to a future certifying body","It provides a template adaptable for clients"],
+            correctIndex: 0,
+            explanation: "A protocol written and never revisited is a plan; one compared against itself a year later is data.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+          {
+            prompt: "What does the live-session requirement reach on Miller's pyramid?",
+            options: ["Shows how, which written self-coaching cannot reach","Does, the top level of independent practice","Knows how, the same level as the written protocol","Knows, since it demonstrates factual understanding"],
+            correctIndex: 0,
+            explanation: "The program's assessment otherwise sits in the bottom two, and one recorded session is what moves it up one.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+          {
+            prompt: "If no willing person is available for the live session, what is the honest move?",
+            options: ["Say the capstone is incomplete and keep looking","Substitute a self-coaching transcript and note the substitution","Use a role-play with a colleague as the nearest equivalent","Defer the requirement until a client engagement arises"],
+            correctIndex: 0,
+            explanation: "Substituting a self-coaching transcript and calling it done is precisely what the requirement exists to prevent.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+          {
+            prompt: "What is a 'social anchor', and what two jobs does it do?",
+            options: ["A recurring commitment with others, carrying the strongest lever","A person who holds the client accountable; it adds motivation and structure","A support group organised around health goals; it adds knowledge and belonging","A public commitment; it adds accountability and identity"],
+            correctIndex: 0,
+            explanation: "The pillar with the strongest evidence, and the structure that makes the other elements durable.",
+            sourceLessonSlug: "designing-your-protocol",
+          },
+          {
+            prompt: "How does the protocol lesson tell you to handle disruption in advance?",
+            options: ["Decide now which elements pause and which hold","Build in a planned break every quarter","Reduce all elements proportionally when disruption arrives","Suspend the protocol and restart when conditions allow"],
+            correctIndex: 0,
+            explanation: "Injury, illness, a new job, a family crisis. Deciding in advance is the difference between a protocol that bends and one that shatters.",
+            sourceLessonSlug: "designing-your-protocol",
+          },
+          {
+            prompt: "What should be watched for, that both WELL-04 and WELL-05 named?",
+            options: ["Measuring a thing until measuring worsens it","Devices that drift out of calibration over months","Metrics that respond too slowly to guide decisions","Numbers that vary more between people than within"],
+            correctIndex: 0,
+            explanation: "Orthosomnia in the sleep pillar and the general pattern behind it. If a number generates distress rather than decisions, stop for a fortnight.",
+            sourceLessonSlug: "what-to-measure",
+          },
+          {
+            prompt: "What does the capstone say about the interruptions themselves?",
+            options: ["They are not the enemy of the protocol; they are the training","They should be minimised through careful planning","They are inevitable and should be accepted without response","They mark the points where a protocol should be simplified"],
+            correctIndex: 0,
+            explanation: "The operative belief is whether you keep returning after interruptions, and that belief is built by returning after interruptions.",
+            sourceLessonSlug: "the-decades-problem",
+          },
+          {
+            prompt: "Why is grip strength specifically worth having as a number?",
+            options: ["It takes seconds and summarises a great deal","It is the only capacity metric a coach may measure","It predicts falls better than any balance measure","It changes fast enough to guide monthly decisions"],
+            correctIndex: 0,
+            explanation: "A cheap proxy for whole-body strength, muscle mass, neural function, and decades of accumulated activity.",
+            sourceLessonSlug: "what-to-measure",
+          },
+          {
+            prompt: "What single element does the protocol lesson say makes the other five survive?",
+            options: ["The social commitment other people notice","The daily movement habit anchored to a cue","The monthly review that converts events into revisions","The fixed wake time that stabilises the week"],
+            correctIndex: 0,
+            explanation: "A Tuesday session someone expects you at is more durable than any intention, and it also carries the strongest lever in the course.",
+            sourceLessonSlug: "designing-your-protocol",
+          },
+          {
+            prompt: "What is the affiliation statement's placement in the program?",
+            options: ["Lesson 1 of WELL-00 and again in the final lesson","Only in WELL-00, where scope is established","In every course's opening lesson","Only in the capstone, where the credential question arises"],
+            correctIndex: 0,
+            explanation: "A learner meets it before any content and again after all of it. What it grants is what you can now do.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+        ],
+      },
     },
     {
       slug: "final-capstone",
@@ -862,7 +2989,7 @@ Sesso, H. D., Manson, J. E., Aragaki, A. K., et al. (2022b). Effect of cocoa fla
             sourceLessonSlug: "the-decades-problem",
           },
           {
-            prompt: "Completing all eight WELL courses changes your scope of practice how?",
+            prompt: "Completing every WELL course changes your scope of practice how?",
             options: [
               "Not at all; it improves referrals, collaboration, claims, and coaching instead",
               "It permits limited diagnosis of common conditions within coaching",
@@ -886,6 +3013,313 @@ Sesso, H. D., Manson, J. E., Aragaki, A. K., et al. (2022b). Effect of cocoa fla
             explanation:
               "Nearly every effect across the six pillars is small. Compounded across decades and applied where the curves are steepest, maintained modest change beats abandoned ambition by a margin no single intervention closes.",
             sourceLessonSlug: "the-decades-problem",
+          },
+          {
+            prompt: "What gap defines longevity science today?",
+            options: [
+              "The biology advances fast; no intervention has extended human lifespan in a trial",
+              "The behavioural evidence is strong but the mechanisms lag behind",
+              "Animal findings replicate but human cohorts contradict them",
+              "Interventions work in trials but adherence collapses outside them",
+            ],
+            correctIndex: 0,
+            explanation: "Everything with strong human evidence is behavioural, observational, or both. Nearly all longevity marketing lives in that gap.",
+            sourceLessonSlug: "what-a-capstone-is-for",
+          },
+          {
+            prompt: "Give the three criteria a hallmark of aging must meet.",
+            options: [
+              "It appears with aging; accentuating it accelerates aging; intervening decelerates it",
+              "It appears with aging; it is measurable in humans; a drug modifies it",
+              "It is present across species; correlates with lifespan; is pharmacologically reversible",
+              "It precedes disease; predicts mortality; responds to lifestyle change",
+            ],
+            correctIndex: 0,
+            explanation: "Twelve processes currently meet all three in the 2023 revision, with four added to the original nine.",
+            sourceLessonSlug: "the-twelve-hallmarks",
+          },
+          {
+            prompt: "Distinguish a mechanism claim from an outcome claim.",
+            options: [
+              "'It activates autophagy' is a pathway; 'people lived longer' is people",
+              "'It activates autophagy' is unproven; 'people lived longer' is established",
+              "Mechanism claims come from researchers; outcome claims from marketers",
+              "Mechanism claims concern animals; outcome claims concern humans",
+            ],
+            correctIndex: 0,
+            explanation: "Almost nobody selling longevity products makes the second kind of claim, because they cannot. No hallmark-targeting drug has extended human lifespan in a trial.",
+            sourceLessonSlug: "the-twelve-hallmarks",
+          },
+          {
+            prompt: "Recite the convergent list, and say what it lacks.",
+            options: [
+              "Fitness, strength, not smoking, 7-9 hours sleep, social integration, plant-forward eating, everyday movement; no supplement or compound",
+              "Fitness, strength, caloric restriction, sleep, connection, Mediterranean diet; no supplement",
+              "Fitness, strength, sleep, connection, fasting, minimally processed eating; no branded lifestyle",
+              "Exercise, diet, sleep, stress management, connection, targeted supplementation",
+            ],
+            correctIndex: 0,
+            explanation: "Unglamorous, unpatentable, and almost exactly this program's six pillars, arrived at from a completely different direction.",
+            sourceLessonSlug: "what-replicates",
+          },
+          {
+            prompt: "Why is 'associated with' the honest verb even here?",
+            options: [
+              "Nearly all of it is observational; adjustment never eliminates group differences",
+              "The effect sizes are too small to support causal language",
+              "The findings have not replicated in independent populations",
+              "The mechanisms are not understood well enough to claim causation",
+            ],
+            correctIndex: 0,
+            explanation: "The findings still carry weight through large effects, graded dose-responses, and replication across unrelated populations. Causal language overstates them anyway.",
+            sourceLessonSlug: "what-replicates",
+          },
+          {
+            prompt: "What was each 1-MET higher aerobic capacity associated with?",
+            options: [
+              "All-cause mortality RR 0.87 (0.84-0.90); cardiovascular event RR 0.85",
+              "All-cause mortality RR 0.69; cardiovascular event RR 0.85",
+              "All-cause mortality RR 0.85; cardiovascular event RR 0.87",
+              "All-cause mortality RR 1.70 comparing low with high fitness",
+            ],
+            correctIndex: 0,
+            explanation: "One MET is about one kilometre per hour of running speed, worth roughly 13 percent of all-cause mortality risk. The 1.70 is the low-versus-high extremes comparison.",
+            sourceLessonSlug: "cardiorespiratory-fitness",
+          },
+          {
+            prompt: "Which fitness boundary did the review pick out, and why?",
+            options: [
+              "7.9 METs: those at or above it had substantially lower mortality and event rates",
+              "10.9 METs: the threshold defining the high-fitness band",
+              "5.0 METs: below which no association was detectable",
+              "None; the review used continuous fitness without bands",
+            ],
+            correctIndex: 0,
+            explanation: "It makes 7.9 the most consequential boundary to move a client across, and it is nearer than the high band for someone who cannot imagine becoming an athlete.",
+            sourceLessonSlug: "cardiorespiratory-fitness",
+          },
+          {
+            prompt: "What did the grip-strength meta-analysis find, and why does grip keep appearing?",
+            options: [
+              "HR 0.69 across 1,907,580 participants; grip is a cheap proxy for whole-body strength and robustness",
+              "HR 0.86 across 1,907,580 participants; hand function independently predicts independence",
+              "HR 0.69 across 102,980 participants; grip is the only standardisable strength measure",
+              "HR 0.60 in both sexes; grip declines earlier than other measures",
+            ],
+            correctIndex: 0,
+            explanation: "0.86 is knee-extension strength in the same analysis. The association was somewhat stronger in women (0.60) than men (0.69).",
+            sourceLessonSlug: "strength-and-muscle",
+          },
+          {
+            prompt: "What is the coaching implication for strength in a decades-long protocol?",
+            options: [
+              "Do not let the strength work quietly disappear",
+              "Prioritise strength over aerobic work, given the larger hazard ratio",
+              "Measure grip strength monthly to track the trend",
+              "Begin strength only after aerobic capacity is established",
+            ],
+            correctIndex: 0,
+            explanation: "It is the most commonly abandoned component and among the most consequential to keep.",
+            sourceLessonSlug: "strength-and-muscle",
+          },
+          {
+            prompt: "What does lesson 6 say about the six pillars assembled?",
+            options: [
+              "Not competing interventions: the same person's week",
+              "They should be ranked by effect size and addressed in order",
+              "They are independent and can be optimised separately",
+              "They overlap enough that working two covers most of the benefit",
+            ],
+            correctIndex: 0,
+            explanation: "The client who walks more sleeps better, and the one who sleeps better trains harder. Build one week and check it contains all six.",
+            sourceLessonSlug: "the-pillars-priced",
+          },
+          {
+            prompt: "Which Blue Zones did the scoping review exclude for insufficient evidence?",
+            options: ["Menorca and Loma Linda","Ikaria and Cilento","Martinique and Guadeloupe","Rugao and a Netherlands municipality"],
+            correctIndex: 0,
+            explanation: "Loma Linda appears in nearly every popular account. A coach repeating the standard list is citing a region the systematic evidence does not support.",
+            sourceLessonSlug: "blue-zones-after-scrutiny",
+          },
+          {
+            prompt: "What is the erosion finding, and what claim does it kill?",
+            options: [
+              "The advantage is fading in both well-characterised zones; whatever produced it was not durable",
+              "The original measurements were revised downward; the zones were never exceptional",
+              "The populations are emigrating; the zones no longer exist as defined",
+              "The dietary patterns eroded while the advantage persisted; diet was not the mechanism",
+            ],
+            correctIndex: 0,
+            explanation: "Fatal to any claim that a fixed traditional practice is doing the work. If the practice persisted and the advantage did not, the practice was not the mechanism.",
+            sourceLessonSlug: "blue-zones-after-scrutiny",
+          },
+          {
+            prompt: "What survives the Blue Zones scrutiny?",
+            options: [
+              "Plant-forward diets, incidental activity, social ties, low smoking: all already on the replicated list",
+              "The dietary patterns, which the demographic critique does not touch",
+              "Nothing; the concept should be discarded entirely",
+              "The social components, the only features common to all zones",
+            ],
+            correctIndex: 0,
+            explanation: "Established in ordinary cohort studies without any regional mystique. Teach those, and skip the folklore.",
+            sourceLessonSlug: "blue-zones-after-scrutiny",
+          },
+          {
+            prompt: "What did CALERIE prescribe, achieve, and measure?",
+            options: [
+              "Prescribed 25 percent restriction, achieved 11.9; measured risk markers, not outcomes",
+              "Prescribed 11.9 percent, achieved 25; measured mortality over two years",
+              "Prescribed 25 percent, achieved 25; measured cardiovascular events",
+              "Prescribed 25 percent, achieved 11.9; measured mortality and events",
+            ],
+            correctIndex: 0,
+            explanation: "The gap is itself a finding about human adherence. No cardiovascular events, no mortality, which is not the same claim as extending life.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "What did the TREAT trial find and conclude?",
+            options: [
+              "0.26 kg between-group difference, not significant; TRE alone is not more effective than eating all day",
+              "2.6 kg difference favouring time-restricted eating, significant at twelve weeks",
+              "No weight change in either group, with lean mass preserved equally",
+              "Weight loss favouring TRE, with lean mass also favouring it",
+            ],
+            correctIndex: 0,
+            explanation: "Energy intake did not differ, and appendicular lean mass index favoured the CONTROL group in the in-person cohort.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "What did Villareal find about lean mass and bone density?",
+            options: [
+              "Lean mass fell 3 percent combined, 2 percent resistance, 5 percent aerobic; hip density 1, 0.5, and 3 percent",
+              "Lean mass fell equally across all exercise arms; only density differed",
+              "Lean mass fell 5 percent combined and 3 percent aerobic; density was preserved",
+              "Both were preserved in all exercise arms and fell only in the control",
+            ],
+            correctIndex: 0,
+            explanation: "A dieting older adult doing only cardio lost more than twice the bone density of one doing resistance work, on the same weight loss.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "What coaching rule follows from Villareal?",
+            options: [
+              "Never coach an energy deficit in an older adult without resistance training",
+              "Never coach an energy deficit in an older adult at all",
+              "Coach aerobic training first, adding resistance once weight stabilises",
+              "Coach resistance alone, since it preserved lean mass best",
+            ],
+            correctIndex: 0,
+            explanation: "Not 'restriction is dangerous'. And combined training is what the trial actually found best, which is more than resistance alone.",
+            sourceLessonSlug: "restriction-and-fasting",
+          },
+          {
+            prompt: "What happened in the COSMOS cocoa arm?",
+            options: [
+              "Primary missed (CV events HR 0.90, P = 0.11); a secondary hit (CV death 0.73)",
+              "Primary hit (CV events HR 0.73); secondaries all null",
+              "Both primary and secondary endpoints reached significance",
+              "Primary missed and no secondary reached significance",
+            ],
+            correctIndex: 0,
+            explanation: "'Cocoa flavanols cut cardiovascular death by 27 percent' is a true sentence about a secondary endpoint in a trial whose primary missed. It is the sentence that sells the product.",
+            sourceLessonSlug: "the-supplement-autopsy",
+          },
+          {
+            prompt: "What three questions dispose of most supplement marketing?",
+            options: [
+              "Primary endpoint and was it met; how many outcomes tested; whole group or adherent subset",
+              "Who funded it; was it peer reviewed; has it replicated",
+              "Sample size; follow-up length; the comparator used",
+              "Randomised; blinded; pre-registered",
+            ],
+            correctIndex: 0,
+            explanation: "And they work on the next compound too, whatever it turns out to be.",
+            sourceLessonSlug: "the-supplement-autopsy",
+          },
+          {
+            prompt: "Where does protocol design start, and at what dose?",
+            options: [
+              "From the week, not the pillars; doses at the low end, deliberately smaller than the impressive version",
+              "From the weakest pillar, at the dose the evidence identifies as optimal",
+              "From the client's strongest pillar, at whatever dose they will sustain",
+              "From the six pillars in turn, at the midpoint of each guideline range",
+            ],
+            correctIndex: 0,
+            explanation: "Six separate programs compete for the same hours and lose. Every number came from a course and every one is deliberately small.",
+            sourceLessonSlug: "designing-your-protocol",
+          },
+          {
+            prompt: "What single element makes the other five survive?",
+            options: [
+              "A recurring commitment with the same people, which others notice",
+              "A daily movement habit anchored to a stable cue",
+              "The monthly review, which converts events into revisions",
+              "A fixed wake time, which stabilises the week",
+            ],
+            correctIndex: 0,
+            explanation: "The strongest lever in the course is social, and a Tuesday session someone expects you at is more durable than any intention.",
+            sourceLessonSlug: "designing-your-protocol",
+          },
+          {
+            prompt: "What should be measured mostly, rarely, and not at all?",
+            options: [
+              "Mostly behaviour; rarely fitness and strength; ignore nightly stages and single-morning HRV",
+              "Mostly capacity; rarely behaviour; ignore subjective ratings",
+              "Mostly outcomes; rarely behaviour; ignore device data entirely",
+              "Mostly subjective state; rarely outcomes; ignore capacity testing",
+            ],
+            correctIndex: 0,
+            explanation: "Behaviour responds immediately and you control it. Capacity changes slowly, so once or twice a year sees the trend without generating anxiety.",
+            sourceLessonSlug: "what-to-measure",
+          },
+          {
+            prompt: "What does 'design for revision rather than for optimality' mean?",
+            options: [
+              "A protocol tuned to this year is more fragile than a rougher one that survives rebuilding",
+              "Protocols should be revised on a fixed schedule regardless of circumstances",
+              "Optimality should yield to simplicity so clients can follow it unaided",
+              "Each revision should improve on the last toward an optimal version",
+            ],
+            correctIndex: 0,
+            explanation: "The goal is to keep having something to keep. Across decades every cue you rely on will eventually be deleted.",
+            sourceLessonSlug: "the-decades-problem",
+          },
+          {
+            prompt: "State the honest arithmetic of the whole program.",
+            options: [
+              "Small and maintained beats large and abandoned, by an uncloseable margin",
+              "Large effects applied briefly outperform small ones applied consistently",
+              "The pillars combine multiplicatively, so six modest effects make a large one",
+              "Effects compound only above eighty percent adherence across decades",
+            ],
+            correctIndex: 0,
+            explanation: "Compounded across decades and applied to curves where the steepest gains belong to the least active. That is not a consolation. It is the finding.",
+            sourceLessonSlug: "the-decades-problem",
+          },
+          {
+            prompt: "How does completing this program change your scope of practice?",
+            options: [
+              "Not by a single inch",
+              "It extends scope where the coach now has content knowledge",
+              "It permits clinical interpretation of measurements now understood",
+              "It permits work with clinical populations under clinician direction",
+            ],
+            correctIndex: 0,
+            explanation: "Knowing more is exactly the situation in which scope discipline gets tested, because competence makes overreach feel reasonable.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
+          },
+          {
+            prompt: "What is the real capstone assignment?",
+            options: [
+              "Write the protocol, run it a month, then run the session loop on yourself",
+              "Complete the mock exam week and record the scores as a baseline",
+              "Coach another person through a month of the protocol you designed",
+              "Document the evidence behind each element with citations",
+            ],
+            correctIndex: 0,
+            explanation: "Keep the artefact. In a year, running it again against what you wrote gives the only longitudinal data about you that will exist.",
+            sourceLessonSlug: "scope-and-the-mock-exam",
           },
         ],
       },
