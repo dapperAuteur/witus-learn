@@ -107,7 +107,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "A score you should try to beat every single day"
             ],
             "correctIndex": 1,
-            "explanation": "A metric takes a hidden body signal, like your heartbeat or sleep, and turns it into a number you can write down, compare, and act on. The other choices are the exact mistakes the lesson warns against: a metric is information, not a grade to pass or fail, not a guess or feeling, and not a score to chase higher every day."
+            "explanation": "A metric takes a hidden body signal, like your heartbeat or sleep, and turns it into a number you can write down, compare, and act on. The other choices are the exact mistakes the lesson warns against: a metric is information, not a grade to pass or fail, not a guess or feeling, and not a score to chase higher every day.",
+            "sourceLessonSlug": "m1-l1-your-body-s-dashboard-what-health-metrics-are"
           },
           {
             "prompt": "A bathroom scale always reads two pounds heavy but reads the same way every time. What does that make it?",
@@ -118,7 +119,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "Neither accurate nor precise"
             ],
             "correctIndex": 2,
-            "explanation": "Precision is getting the same result every time, and accuracy is hitting the true value. A scale that is off by a fixed two pounds but never wavers is precise but not accurate, which is the normal case for trackers. It is not accurate because it never shows the true weight, so the first two choices are wrong, and it cannot be neither since it is clearly consistent."
+            "explanation": "Precision is getting the same result every time, and accuracy is hitting the true value. A scale that is off by a fixed two pounds but never wavers is precise but not accurate, which is the normal case for trackers. It is not accurate because it never shows the true weight, so the first two choices are wrong, and it cannot be neither since it is clearly consistent.",
+            "sourceLessonSlug": "m1-l2-accuracy-vs-precision"
           },
           {
             "prompt": "In the device validation research, which measurement was the least accurate, often off by more than thirty percent?",
@@ -129,7 +131,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "Total sleep time"
             ],
             "correctIndex": 2,
-            "explanation": "The research found calorie or energy burn was way off, more than thirty percent error. Steps were very accurate at under two percent error, heart rate landed in the moderate range, and total sleep time is reliably measured, so those are the wrong choices and the calorie number is the one to treat as only a rough hint.\n\nReference: (Fuller et al., 2020)"
+            "explanation": "The research found calorie or energy burn was way off, more than thirty percent error. Steps were very accurate at under two percent error, heart rate landed in the moderate range, and total sleep time is reliably measured, so those are the wrong choices and the calorie number is the one to treat as only a rough hint.\n\nReference: (Fuller et al., 2020)",
+            "sourceLessonSlug": "m1-l2-accuracy-vs-precision"
           },
           {
             "prompt": "What is a normal resting heart rate for most healthy adults?",
@@ -140,7 +143,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "About eighty to one hundred forty beats a minute"
             ],
             "correctIndex": 1,
-            "explanation": "Most healthy adults rest between about sixty and one hundred beats a minute. The forty to sixty range is closer to where trained athletes often sit, not most adults, and the higher ranges describe an active or elevated heart rate, not a resting one."
+            "explanation": "Most healthy adults rest between about sixty and one hundred beats a minute. The forty to sixty range is closer to where trained athletes often sit, not most adults, and the higher ranges describe an active or elevated heart rate, not a resting one.",
+            "sourceLessonSlug": "m1-l3-core-metric-resting-heart-rate"
           },
           {
             "prompt": "What does the research say about a higher resting heart rate and how long people live?",
@@ -151,7 +155,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "Only a resting rate under forty is linked to long life"
             ],
             "correctIndex": 0,
-            "explanation": "A large review found a higher resting heart rate is linked to a higher risk of death from all causes and from heart disease, so a lower resting heart rate tends to track with a longer life. The claim that there is no link is wrong, the third option reverses the real direction, and the lesson never sets a special cutoff under forty for living longer.\n\nReference: (Zhang et al., 2016a)"
+            "explanation": "A large review found a higher resting heart rate is linked to a higher risk of death from all causes and from heart disease, so a lower resting heart rate tends to track with a longer life. The claim that there is no link is wrong, the third option reverses the real direction, and the lesson never sets a special cutoff under forty for living longer.\n\nReference: (Zhang et al., 2016a)",
+            "sourceLessonSlug": "m1-l3-core-metric-resting-heart-rate"
           },
           {
             "prompt": "Where did the famous ten thousand steps a day goal actually come from?",
@@ -162,7 +167,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "A meta-analysis of fifteen international step studies"
             ],
             "correctIndex": 1,
-            "explanation": "The ten thousand step goal was a marketing slogan from a Japanese company that sold pedometers in the nineteen sixties, not a scientific target. It did not come from a government study or the Sleep Foundation, and the fifteen-cohort meta-analysis (Paluch et al., 2022) actually found the benefit levels off well below ten thousand."
+            "explanation": "The ten thousand step goal was a marketing slogan from a Japanese company that sold pedometers in the nineteen sixties, not a scientific target. It did not come from a government study or the Sleep Foundation, and the fifteen-cohort meta-analysis (Paluch et al., 2022) actually found the benefit levels off well below ten thousand.",
+            "sourceLessonSlug": "m1-l4-core-metric-daily-steps"
           },
           {
             "prompt": "In US adults, about how many daily steps was linked to roughly half the risk of dying as taking about four thousand steps a day?",
@@ -173,7 +179,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "About twelve thousand steps a day"
             ],
             "correctIndex": 2,
-            "explanation": "In US adults, taking about eight thousand steps a day was linked to roughly half the death risk of about four thousand steps a day. Six thousand is below that mark, and the ten thousand and twelve thousand figures are higher than what the study tied to that halving of risk, where benefits already level off.\n\nReference: (Saint-Maurice et al., 2020)"
+            "explanation": "In US adults, taking about eight thousand steps a day was linked to roughly half the death risk of about four thousand steps a day. Six thousand is below that mark, and the ten thousand and twelve thousand figures are higher than what the study tied to that halving of risk, where benefits already level off.\n\nReference: (Saint-Maurice et al., 2020)",
+            "sourceLessonSlug": "m1-l4-core-metric-daily-steps"
           },
           {
             "prompt": "How many hours of sleep a night do most adults do best with, according to the module?",
@@ -184,7 +191,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "About nine to eleven hours"
             ],
             "correctIndex": 1,
-            "explanation": "Most adults do best with about seven to nine hours a night. The four to six hour range describes the uncommon natural short sleeper, not most people, and the six to eight and nine to eleven ranges are not the recommendation given in the lesson.\n\nReference: (Hirshkowitz et al., 2015)"
+            "explanation": "Most adults do best with about seven to nine hours a night. The four to six hour range describes the uncommon natural short sleeper, not most people, and the six to eight and nine to eleven ranges are not the recommendation given in the lesson.\n\nReference: (Hirshkowitz et al., 2015)",
+            "sourceLessonSlug": "m1-l5-core-metric-sleep"
           },
           {
             "prompt": "What is the weekly activity target, and how do vigorous minutes count toward it?",
@@ -195,7 +203,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "About seventy-five minutes of moderate effort, with vigorous minutes counting as half a moderate minute"
             ],
             "correctIndex": 1,
-            "explanation": "The guidelines aim for about one hundred fifty to three hundred minutes of moderate effort a week, or about seventy-five to one hundred fifty minutes of vigorous, and one vigorous minute counts as about two moderate minutes. Thirty minutes total is far too low, the moderate-only choice ignores the vigorous option, and the last choice reverses the substitution, since vigorous counts double, not half.\n\nReference: (Piercy et al., 2018)"
+            "explanation": "The guidelines aim for about one hundred fifty to three hundred minutes of moderate effort a week, or about seventy-five to one hundred fifty minutes of vigorous, and one vigorous minute counts as about two moderate minutes. Thirty minutes total is far too low, the moderate-only choice ignores the vigorous option, and the last choice reverses the substitution, since vigorous counts double, not half.\n\nReference: (Piercy et al., 2018)",
+            "sourceLessonSlug": "m1-l6-core-metric-activity-minutes"
           },
           {
             "prompt": "According to the module, which pattern in your first week of data counts as a red flag worth a closer look?",
@@ -206,7 +215,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "Walking a few hundred steps fewer than yesterday"
             ],
             "correctIndex": 1,
-            "explanation": "Sleep efficiency dropping below eighty percent is a red flag, since most healthy people stay above ninety percent. A single odd morning is normal noise, not a red flag, matching a population average is not a warning sign at all, and a small day-to-day step dip is far short of the sharp activity drop lasting more than three days that the lesson flags.\n\nReference: (Reed & Sacco, 2016)"
+            "explanation": "Sleep efficiency dropping below eighty percent is a red flag, since most healthy people stay above ninety percent. A single odd morning is normal noise, not a red flag, matching a population average is not a warning sign at all, and a small day-to-day step dip is far short of the sharp activity drop lasting more than three days that the lesson flags.\n\nReference: (Reed & Sacco, 2016)",
+            "sourceLessonSlug": "m1-l8-interpreting-your-first-week-baseline-and-red-flags"
           }
         ]
       }
@@ -278,7 +288,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "Heart rate during a sprint"
             ],
             "correctIndex": 1,
-            "explanation": "Steps are the most accurate metric on a good tracker, with error under about two percent, so you can build goals on that number. Calories burned are the least accurate, missing by over thirty percent, so they are wrong. Sleep efficiency is only an estimate that shifts with how time in bed is defined, so it is not the most accurate. Heart rate during a sprint is one of the least reliable readings, since accuracy drops as intensity rises.\n\nReference: (Fuller et al., 2020)"
+            "explanation": "Steps are the most accurate metric on a good tracker, with error under about two percent, so you can build goals on that number. Calories burned are the least accurate, missing by over thirty percent, so they are wrong. Sleep efficiency is only an estimate that shifts with how time in bed is defined, so it is not the most accurate. Heart rate during a sprint is one of the least reliable readings, since accuracy drops as intensity rises.\n\nReference: (Fuller et al., 2020)",
+            "sourceLessonSlug": "m2-l1-the-science-of-device-accuracy"
           },
           {
             "prompt": "Your watch says you burned six hundred calories on a run. According to the research, how far off could that calorie number be?",
@@ -288,7 +299,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "Over thirty percent"
             ],
             "correctIndex": 2,
-            "explanation": "Calorie burn, also called energy expenditure, is the least accurate number a tracker reports, missing by over thirty percent, so six hundred could really be four hundred or eight hundred. Under two percent is the error for steps, not calories. About ten percent is too small a gap for the calorie estimate, which is why you should never use it for exact diet math.\n\nReference: (Fuller et al., 2020)"
+            "explanation": "Calorie burn, also called energy expenditure, is the least accurate number a tracker reports, missing by over thirty percent, so six hundred could really be four hundred or eight hundred. Under two percent is the error for steps, not calories. About ten percent is too small a gap for the calorie estimate, which is why you should never use it for exact diet math.\n\nReference: (Fuller et al., 2020)",
+            "sourceLessonSlug": "m2-l2-why-calories-are-the-least-trustworthy-number"
           },
           {
             "prompt": "In one review of Fitbit devices, how did heart rate agreement behave as the exercise got harder?",
@@ -298,7 +310,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "It stayed steady at ninety percent"
             ],
             "correctIndex": 1,
-            "explanation": "The Fitbit review found heart rate agreement ranging from twenty six to ninety two percent, and it dropped as exercise intensity rose. It did not improve with harder effort, which is the common but wrong assumption. It also did not stay steady at ninety percent, since the agreement swung across a wide range and got worse during intense activity.\n\nReference: (Feehan et al., 2018)"
+            "explanation": "The Fitbit review found heart rate agreement ranging from twenty six to ninety two percent, and it dropped as exercise intensity rose. It did not improve with harder effort, which is the common but wrong assumption. It also did not stay steady at ninety percent, since the agreement swung across a wide range and got worse during intense activity.\n\nReference: (Feehan et al., 2018)",
+            "sourceLessonSlug": "m2-l8-module-2-review-wearable-tech-and-data-collection"
           },
           {
             "prompt": "When is the heart rate reading on your wrist the most trustworthy?",
@@ -308,7 +321,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "Right after a big, heavy meal"
             ],
             "correctIndex": 1,
-            "explanation": "Wrist heart rate is reasonably accurate at rest and during easy activity, so your morning resting reading is one you can use. During a hard sprint it gets worse, because a pumping arm and sweaty skin make the wrist sensor struggle. Eating is not what drives the accuracy of the reading, so that option is wrong.\n\nReference: (Germini et al., 2022)"
+            "explanation": "Wrist heart rate is reasonably accurate at rest and during easy activity, so your morning resting reading is one you can use. During a hard sprint it gets worse, because a pumping arm and sweaty skin make the wrist sensor struggle. Eating is not what drives the accuracy of the reading, so that option is wrong.\n\nReference: (Germini et al., 2022)",
+            "sourceLessonSlug": "m2-l1-the-science-of-device-accuracy"
           },
           {
             "prompt": "You want the most accurate heart rate data during hard, intense exercise. Which device shape is the best fit?",
@@ -319,7 +333,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "A smartwatch"
             ],
             "correctIndex": 0,
-            "explanation": "For heart rate during intense exercise, a chest strap beats any wrist device, because it reads the electrical signal from your heart like a hospital machine. A basic activity band and a smartwatch both read from the wrist, where accuracy drops during hard effort. A ring is built for sleep and recovery, not for tracking heart rate during a hard workout.\n\nReference: (Germini et al., 2022)"
+            "explanation": "For heart rate during intense exercise, a chest strap beats any wrist device, because it reads the electrical signal from your heart like a hospital machine. A basic activity band and a smartwatch both read from the wrist, where accuracy drops during hard effort. A ring is built for sleep and recovery, not for tracking heart rate during a hard workout.\n\nReference: (Germini et al., 2022)",
+            "sourceLessonSlug": "m2-l3-device-categories-and-how-to-choose"
           },
           {
             "prompt": "According to the module, what can smartwatches do regarding heart rhythm?",
@@ -329,7 +344,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "Measure calorie burn with pinpoint precision"
             ],
             "correctIndex": 1,
-            "explanation": "A review pooling many studies found that smartwatches can flag an irregular heart rhythm with measured accuracy. They do not replace a doctor's diagnosis, since flagging is not the same as a full medical diagnosis. They also do not measure calorie burn precisely, because energy expenditure is the least accurate number on any device.\n\nReference: (Nazarian et al., 2021)"
+            "explanation": "A review pooling many studies found that smartwatches can flag an irregular heart rhythm with measured accuracy. They do not replace a doctor's diagnosis, since flagging is not the same as a full medical diagnosis. They also do not measure calorie burn precisely, because energy expenditure is the least accurate number on any device.\n\nReference: (Nazarian et al., 2021)",
+            "sourceLessonSlug": "m2-l3-device-categories-and-how-to-choose"
           },
           {
             "prompt": "What is sleep efficiency?",
@@ -339,7 +355,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "How many separate times you wake in the night"
             ],
             "correctIndex": 1,
-            "explanation": "Sleep efficiency is the share of time in bed you actually spend asleep, found by dividing minutes asleep by minutes in bed and turning it into a percentage. Total hours in bed is just the denominator, not the efficiency itself. The number of times you wake is related to sleep quality but is not the definition of sleep efficiency."
+            "explanation": "Sleep efficiency is the share of time in bed you actually spend asleep, found by dividing minutes asleep by minutes in bed and turning it into a percentage. Total hours in bed is just the denominator, not the efficiency itself. The number of times you wake is related to sleep quality but is not the definition of sleep efficiency.",
+            "sourceLessonSlug": "m2-l4-sleep-efficiency-as-a-longevity-biomarker"
           },
           {
             "prompt": "You slept the same way two nights in a row, but your device counted forty extra minutes of reading in bed on the second night, and your sleep efficiency read lower. Why?",
@@ -349,7 +366,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "You actually slept much worse the second night"
             ],
             "correctIndex": 1,
-            "explanation": "Sleep efficiency depends heavily on the denominator, which is how you define time in bed. Counting the extra reading time as time in bed made the same amount of sleep a smaller share, so the percentage dropped. The sensor did not break, since the change is purely in the math. You did not sleep worse either, because the night itself was identical.\n\nReference: (Reed & Sacco, 2016)"
+            "explanation": "Sleep efficiency depends heavily on the denominator, which is how you define time in bed. Counting the extra reading time as time in bed made the same amount of sleep a smaller share, so the percentage dropped. The sensor did not break, since the change is purely in the math. You did not sleep worse either, because the night itself was identical.\n\nReference: (Reed & Sacco, 2016)",
+            "sourceLessonSlug": "m2-l4-sleep-efficiency-as-a-longevity-biomarker"
           },
           {
             "prompt": "What happens to sleep efficiency and deep sleep as people age, even in healthy people?",
@@ -359,7 +377,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "They rise steadily with age"
             ],
             "correctIndex": 0,
-            "explanation": "A large review found that sleep efficiency and deep sleep naturally decline with age, even in healthy people, so expect your numbers to drift down over the years. They do not stay exactly the same, since the decline is a clear pattern across the lifespan. They do not rise with age, which is the opposite of what the research shows.\n\nReference: (Ohayon et al., 2004)"
+            "explanation": "A large review found that sleep efficiency and deep sleep naturally decline with age, even in healthy people, so expect your numbers to drift down over the years. They do not stay exactly the same, since the decline is a clear pattern across the lifespan. They do not rise with age, which is the opposite of what the research shows.\n\nReference: (Ohayon et al., 2004)",
+            "sourceLessonSlug": "m2-l4-sleep-efficiency-as-a-longevity-biomarker"
           },
           {
             "prompt": "In a large study of more than ninety two thousand adults, about how many had a week where their resting heart rate swung ten beats or more, with no illness behind it?",
@@ -443,7 +462,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "A study run by exactly one doctor at one clinic"
             ],
             "correctIndex": 1,
-            "explanation": "Correct: An N-of-1 is a study of one person, where you become your own control group and compare your data to your own past self rather than to a crowd. Option 1 is wrong because comparing you to a population is the opposite of N-of-1, that is a population average. Option 3 is wrong because the 'one' in N-of-1 refers to the number of subjects, not the number of doctors.\n\nReference: (Lillie et al., 2011)"
+            "explanation": "Correct: An N-of-1 is a study of one person, where you become your own control group and compare your data to your own past self rather than to a crowd. Option 1 is wrong because comparing you to a population is the opposite of N-of-1, that is a population average. Option 3 is wrong because the 'one' in N-of-1 refers to the number of subjects, not the number of doctors.\n\nReference: (Lillie et al., 2011)",
+            "sourceLessonSlug": "m3-l1-the-science-of-health-data-analytics"
           },
           {
             "prompt": "According to the three-part recipe for a personal trial, what are the three steps?",
@@ -464,7 +484,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "A higher daily step count"
             ],
             "correctIndex": 0,
-            "explanation": "Correct: The study found that a slower heart-rate recovery in the first minute after exercise predicted higher mortality, which makes the speed of that drop a real longevity signal. Option 2 is wrong because recovery speed was not tied to a lower resting rate. Options 3 and 4 are wrong because the finding was about mortality risk, not next-night sleep or step counts.\n\nReference: (Cole et al., 1999)"
+            "explanation": "Correct: The study found that a slower heart-rate recovery in the first minute after exercise predicted higher mortality, which makes the speed of that drop a real longevity signal. Option 2 is wrong because recovery speed was not tied to a lower resting rate. Options 3 and 4 are wrong because the finding was about mortality risk, not next-night sleep or step counts.\n\nReference: (Cole et al., 1999)",
+            "sourceLessonSlug": "m3-l2-recovery-as-a-longevity-signal"
           },
           {
             "prompt": "In the study of about 92,000 adults, roughly how often did people have a week where their resting heart rate swung 10 or more beats?",
@@ -484,7 +505,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "Time, each step to the right is one more day"
             ],
             "correctIndex": 2,
-            "explanation": "Correct: The bottom edge, the horizontal axis, runs left to right and shows time, with each step to the right being one more day. Option 1 is wrong because the size of your metric is the side edge, the vertical axis. Option 2 is wrong because the trend is the shape the line makes over time, not the bottom edge itself."
+            "explanation": "Correct: The bottom edge, the horizontal axis, runs left to right and shows time, with each step to the right being one more day. Option 1 is wrong because the size of your metric is the side edge, the vertical axis. Option 2 is wrong because the trend is the shape the line makes over time, not the bottom edge itself.",
+            "sourceLessonSlug": "m3-l3-reading-a-chart-visualizing-your-data"
           },
           {
             "prompt": "When does a change on your chart count as a real shift rather than normal wobble?",
@@ -504,7 +526,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "Your all-time average since you started tracking, which slowly climbs over the years"
             ],
             "correctIndex": 1,
-            "explanation": "Correct: A moving average is the average of your last several days, recomputed each day as the window slides forward by dropping the oldest day and adding the newest. Option 1 is wrong because it averages the days in the window, it does not just track the highest reading. Option 3 is wrong because a moving average uses a rolling window of recent days, not your entire history."
+            "explanation": "Correct: A moving average is the average of your last several days, recomputed each day as the window slides forward by dropping the oldest day and adding the newest. Option 1 is wrong because it averages the days in the window, it does not just track the highest reading. Option 3 is wrong because a moving average uses a rolling window of recent days, not your entire history.",
+            "sourceLessonSlug": "m3-l5-moving-averages"
           },
           {
             "prompt": "For daily health metrics, why is a seven-day window often the sweet spot for a moving average?",
@@ -514,7 +537,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "It reacts to each single day so you never miss a spike"
             ],
             "correctIndex": 1,
-            "explanation": "Correct: Seven days smooths daily noise and cancels the weekday versus weekend pattern, while still letting a real trend show through without a long delay. Option 1 is wrong because windows can be much longer, like thirty days. Option 3 is wrong because the purpose of smoothing is to stop reacting to each single day, not to react to every spike."
+            "explanation": "Correct: Seven days smooths daily noise and cancels the weekday versus weekend pattern, while still letting a real trend show through without a long delay. Option 1 is wrong because windows can be much longer, like thirty days. Option 3 is wrong because the purpose of smoothing is to stop reacting to each single day, not to react to every spike.",
+            "sourceLessonSlug": "m3-l5-moving-averages"
           },
           {
             "prompt": "When building a personal health dashboard, the lessons say steps are the most accurate common metric, while which metric can be off by more than 30 percent?",
@@ -525,7 +549,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "Daily step count"
             ],
             "correctIndex": 1,
-            "explanation": "Correct: Steps are the most accurate common metric, with under about two percent error in good devices, while calories burned can be off by more than thirty percent, so calories make a poor main number. Option 1 is wrong because resting heart rate is reasonably trustworthy at rest, not the least accurate. Option 3 is wrong because total sleep hours are measured fairly reliably. Option 4 is wrong because steps are the most accurate, not the least.\n\nReference: (Fuller et al., 2020)"
+            "explanation": "Correct: Steps are the most accurate common metric, with under about two percent error in good devices, while calories burned can be off by more than thirty percent, so calories make a poor main number. Option 1 is wrong because resting heart rate is reasonably trustworthy at rest, not the least accurate. Option 3 is wrong because total sleep hours are measured fairly reliably. Option 4 is wrong because steps are the most accurate, not the least.\n\nReference: (Fuller et al., 2020)",
+            "sourceLessonSlug": "m3-l7-designing-your-personal-health-dashboard"
           }
         ]
       }
@@ -588,7 +613,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "The number of times you measure each day"
             ],
             "correctIndex": 1,
-            "explanation": "Correct: the N stands for the number of people in the study, and in an N-of-1 that number is one, which is you. Wrong: the number of weeks is the length of the baseline and test periods, not what N means. Wrong: the number of changes should always be one, but that is a separate rule, not the meaning of N. Wrong: how often you measure each day is not what N refers to.\n\nReference: (Lillie et al., 2011)"
+            "explanation": "Correct: the N stands for the number of people in the study, and in an N-of-1 that number is one, which is you. Wrong: the number of weeks is the length of the baseline and test periods, not what N means. Wrong: the number of changes should always be one, but that is a separate rule, not the meaning of N. Wrong: how often you measure each day is not what N refers to.\n\nReference: (Lillie et al., 2011)",
+            "sourceLessonSlug": "m4-l6-analyzing-results-and-iterating"
           },
           {
             "prompt": "Your neighbor changes his bedtime, his afternoon caffeine, and his pillow all in the same week, then says he found what fixed his sleep. What is the problem with his approach?",
@@ -598,7 +624,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "He changed three things, so no single cause is clear"
             ],
             "correctIndex": 2,
-            "explanation": "Correct: changing several things at once means you cannot tell which one moved the result, which breaks the experiment. Wrong: the lessons say nothing about his tracking length being the issue here; the core flaw is the multiple changes. Wrong: tracker accuracy is not the problem in this example; even a perfect tracker could not untangle three changes made together."
+            "explanation": "Correct: changing several things at once means you cannot tell which one moved the result, which breaks the experiment. Wrong: the lessons say nothing about his tracking length being the issue here; the core flaw is the multiple changes. Wrong: tracker accuracy is not the problem in this example; even a perfect tracker could not untangle three changes made together.",
+            "sourceLessonSlug": "m4-l1-what-an-n-of-1-experiment-is"
           },
           {
             "prompt": "According to the PURE study, how many people did it follow and across how many countries?",
@@ -609,7 +636,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "About 7,400 people across 35 countries"
             ],
             "correctIndex": 0,
-            "explanation": "Correct: PURE followed more than 130,000 people across 17 countries and tied more moderate to vigorous movement to lower death and heart-disease risk. Wrong: about 92,000 adults is the resting heart rate variability study, a different study. Wrong: more than 500,000 across 30 countries is not a figure from this module. Wrong: about 7,400 is from a step-tracker meta-analysis, not PURE.\n\nReference: (Lear et al., 2017)"
+            "explanation": "Correct: PURE followed more than 130,000 people across 17 countries and tied more moderate to vigorous movement to lower death and heart-disease risk. Wrong: about 92,000 adults is the resting heart rate variability study, a different study. Wrong: more than 500,000 across 30 countries is not a figure from this module. Wrong: about 7,400 is from a step-tracker meta-analysis, not PURE.\n\nReference: (Lear et al., 2017)",
+            "sourceLessonSlug": "m4-l2-intensity-minutes-the-strongest-longevity-metric"
           },
           {
             "prompt": "What weekly activity target do the US Physical Activity Guidelines suggest?",
@@ -619,7 +647,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "About 150 to 300 moderate or 75 to 150 vigorous minutes, any length"
             ],
             "correctIndex": 2,
-            "explanation": "Correct: the guidelines suggest about 150 to 300 minutes of moderate or 75 to 150 minutes of vigorous activity a week, and activity of any length counts. Wrong: 300 to 450 moderate minutes overstates the range and the lessons say short bursts do count, so 'nothing short counting' is false. Wrong: 60 minutes of vigorous every day is not the stated target.\n\nReference: (Piercy et al., 2018)"
+            "explanation": "Correct: the guidelines suggest about 150 to 300 minutes of moderate or 75 to 150 minutes of vigorous activity a week, and activity of any length counts. Wrong: 300 to 450 moderate minutes overstates the range and the lessons say short bursts do count, so 'nothing short counting' is false. Wrong: 60 minutes of vigorous every day is not the stated target.\n\nReference: (Piercy et al., 2018)",
+            "sourceLessonSlug": "m4-l2-intensity-minutes-the-strongest-longevity-metric"
           },
           {
             "prompt": "What is the refined estimate for your maximum heart rate?",
@@ -630,7 +659,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "Your resting heart rate multiplied by three"
             ],
             "correctIndex": 1,
-            "explanation": "Correct: the refined estimate is about 208 minus 0.7 times your age, and the lessons stress it is still an estimate, not an exact number. Wrong: 220 minus your age is the older rule of thumb that researchers refined. Wrong: 200 minus 0.5 times age is a made-up variant. Wrong: resting heart rate times three is not how max heart rate is estimated.\n\nReference: (Tanaka et al., 2001)"
+            "explanation": "Correct: the refined estimate is about 208 minus 0.7 times your age, and the lessons stress it is still an estimate, not an exact number. Wrong: 220 minus your age is the older rule of thumb that researchers refined. Wrong: 200 minus 0.5 times age is a made-up variant. Wrong: resting heart rate times three is not how max heart rate is estimated.\n\nReference: (Tanaka et al., 2001)",
+            "sourceLessonSlug": "m4-l3-defining-intensity-zones"
           },
           {
             "prompt": "Roughly what share of your maximum heart rate counts as moderate intensity?",
@@ -641,7 +671,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "About 85 to 100 percent"
             ],
             "correctIndex": 2,
-            "explanation": "Correct: moderate intensity is about 50 to 70 percent of your max heart rate and feels somewhat hard. Wrong: 30 to 50 percent is too low and would be easy effort. Wrong: 70 to 85 percent is the vigorous range, not moderate. Wrong: 85 to 100 percent is near all-out effort, well above moderate."
+            "explanation": "Correct: moderate intensity is about 50 to 70 percent of your max heart rate and feels somewhat hard. Wrong: 30 to 50 percent is too low and would be easy effort. Wrong: 70 to 85 percent is the vigorous range, not moderate. Wrong: 85 to 100 percent is near all-out effort, well above moderate.",
+            "sourceLessonSlug": "m4-l3-defining-intensity-zones"
           },
           {
             "prompt": "When is your wrist tracker's heart rate reading the least reliable?",
@@ -651,7 +682,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "When the device is fully charged"
             ],
             "correctIndex": 1,
-            "explanation": "Correct: wrist heart rate accuracy is best at rest and steady effort and gets worse as intensity rises, so your hardest minutes are the least reliable. Wrong: rest and steady movement is when the reading holds up best, the opposite of least reliable. Wrong: battery charge level is not what the lessons tie accuracy to.\n\nReference: (Feehan et al., 2018)"
+            "explanation": "Correct: wrist heart rate accuracy is best at rest and steady effort and gets worse as intensity rises, so your hardest minutes are the least reliable. Wrong: rest and steady movement is when the reading holds up best, the opposite of least reliable. Wrong: battery charge level is not what the lessons tie accuracy to.\n\nReference: (Feehan et al., 2018)",
+            "sourceLessonSlug": "m4-l5-calibrating-your-device-for-zone-tracking"
           },
           {
             "prompt": "You set your heart-rate zones, then take a real brisk walk and your watch counts zero moderate minutes. What is the most likely fix?",
@@ -661,7 +693,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "Your battery is far too low to track your effort"
             ],
             "correctIndex": 0,
-            "explanation": "Correct: if a genuine brisk walk counts nothing, your moderate threshold was set too high, so you lower the numbers and retest. Wrong: raising the numbers would make it even harder to register moderate effort, the opposite of the fix. Wrong: battery level is not the calibration issue the lessons describe."
+            "explanation": "Correct: if a genuine brisk walk counts nothing, your moderate threshold was set too high, so you lower the numbers and retest. Wrong: raising the numbers would make it even harder to register moderate effort, the opposite of the fix. Wrong: battery level is not the calibration issue the lessons describe.",
+            "sourceLessonSlug": "m4-l5-calibrating-your-device-for-zone-tracking"
           },
           {
             "prompt": "In an N-of-1 experiment, how long should your baseline period be before you make any change?",
@@ -671,7 +704,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "About 30 full days of tracking"
             ],
             "correctIndex": 1,
-            "explanation": "Correct: track a baseline of at least 7 days while living normally, since one or two days will not show your real pattern. Wrong: 1 to 2 days is too short to reveal your normal pattern. Wrong: 30 days is longer than the lessons call for; the stated minimum baseline is 7 days."
+            "explanation": "Correct: track a baseline of at least 7 days while living normally, since one or two days will not show your real pattern. Wrong: 1 to 2 days is too short to reveal your normal pattern. Wrong: 30 days is longer than the lessons call for; the stated minimum baseline is 7 days.",
+            "sourceLessonSlug": "m4-l4-designing-your-n-of-1"
           },
           {
             "prompt": "Your test period looks almost exactly like your baseline, with no real change. What does the module say to do next?",
@@ -681,7 +715,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "Treat no effect as info, change one thing, run it again"
             ],
             "correctIndex": 2,
-            "explanation": "Correct: no effect is information, not failure; you adjust one variable and retest because the first try is rarely the final answer. Wrong: quitting after one try goes against the lesson, which says the first experiment is the start of a conversation with your body. Wrong: stacking several changes at once breaks the one-variable rule, so you could not tell which change mattered."
+            "explanation": "Correct: no effect is information, not failure; you adjust one variable and retest because the first try is rarely the final answer. Wrong: quitting after one try goes against the lesson, which says the first experiment is the start of a conversation with your body. Wrong: stacking several changes at once breaks the one-variable rule, so you could not tell which change mattered.",
+            "sourceLessonSlug": "m4-l6-analyzing-results-and-iterating"
           }
         ]
       }
@@ -767,7 +802,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "Checking your numbers several times within a single day"
             ],
             "correctIndex": 1,
-            "explanation": "Longitudinal analysis means reading your data over months, not days, so you watch the trend instead of the daily number. The first option is wrong because longitudinal analysis is about your own data over time, not comparison with others. The third is wrong because checking many times in one day is the opposite of the long view; a single day is mostly noise."
+            "explanation": "Longitudinal analysis means reading your data over months, not days, so you watch the trend instead of the daily number. The first option is wrong because longitudinal analysis is about your own data over time, not comparison with others. The third is wrong because checking many times in one day is the opposite of the long view; a single day is mostly noise.",
+            "sourceLessonSlug": "m5-l1-longitudinal-analysis-reading-months-not-days"
           },
           {
             "prompt": "In the study of more than ninety thousand adults, about how many people had a week where their resting heart rate swung ten or more beats?",
@@ -787,7 +823,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "Your body's ability to take a hit and return to its baseline"
             ],
             "correctIndex": 2,
-            "explanation": "Resilience is your body's ability to take a hit, like a bad night or an illness, and return to its baseline. The first option is wrong because everyone gets knocked down; resilience is the bounce back, not avoiding the hit. The second is wrong because resilience is not a single number, it is a pattern read across several signals."
+            "explanation": "Resilience is your body's ability to take a hit, like a bad night or an illness, and return to its baseline. The first option is wrong because everyone gets knocked down; resilience is the bounce back, not avoiding the hit. The second is wrong because resilience is not a single number, it is a pattern read across several signals.",
+            "sourceLessonSlug": "m5-l2-resilience-your-master-health-signal"
           },
           {
             "prompt": "According to the lesson, what pattern do people who reach extreme old age tend to share?",
@@ -797,7 +834,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "They keep their resting heart rate fixed at one number for decades"
             ],
             "correctIndex": 1,
-            "explanation": "People who reach extreme old age share a pattern of strong recovery; they keep taking hits and keep coming back. The first option is wrong because they are not people who never get sick, they recover well. The third is wrong because resting heart rate naturally varies and a fixed number is not the point; the bounce back is.\n\nReference: (Sebastiani & Perls, 2012)"
+            "explanation": "People who reach extreme old age share a pattern of strong recovery; they keep taking hits and keep coming back. The first option is wrong because they are not people who never get sick, they recover well. The third is wrong because resting heart rate naturally varies and a fixed number is not the point; the bounce back is.\n\nReference: (Sebastiani & Perls, 2012)",
+            "sourceLessonSlug": "m5-l2-resilience-your-master-health-signal"
           },
           {
             "prompt": "When does a change in your data count as a signal rather than noise?",
@@ -817,7 +855,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "A goal is for younger people, while a system is for older people"
             ],
             "correctIndex": 1,
-            "explanation": "A goal ends, a system keeps going; a goal is a target with a finish line, and a system is a small thing you repeat no matter what. The first option confuses tracking frequency with the goal-versus-system idea. The third is wrong because systems are not age specific; anyone benefits from a small repeatable routine."
+            "explanation": "A goal ends, a system keeps going; a goal is a target with a finish line, and a system is a small thing you repeat no matter what. The first option confuses tracking frequency with the goal-versus-system idea. The third is wrong because systems are not age specific; anyone benefits from a small repeatable routine.",
+            "sourceLessonSlug": "m5-l4-designing-sustainable-health-systems"
           },
           {
             "prompt": "In the planning study, what kept people sticking with a new behavior far longer than a goal alone?",
@@ -827,7 +866,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "Action planning plus coping planning for setbacks"
             ],
             "correctIndex": 2,
-            "explanation": "People who used action planning and coping planning, deciding when, where, and how they would handle setbacks, kept the new behavior going far longer. A single big stretch target is just a goal, which the lesson says traps you. Public sharing with a large group is not what this study tested; that idea comes from a different lesson and can even backfire.\n\nReference: (Sniehotta et al., 2005)"
+            "explanation": "People who used action planning and coping planning, deciding when, where, and how they would handle setbacks, kept the new behavior going far longer. A single big stretch target is just a goal, which the lesson says traps you. Public sharing with a large group is not what this study tested; that idea comes from a different lesson and can even backfire.\n\nReference: (Sniehotta et al., 2005)",
+            "sourceLessonSlug": "m5-l4-designing-sustainable-health-systems"
           },
           {
             "prompt": "Where does the death-risk benefit from daily steps tend to level off for older adults?",
@@ -847,7 +887,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "A tracker, a personal coach, and a leaderboard"
             ],
             "correctIndex": 1,
-            "explanation": "A lasting health system has three parts: a daily trigger, a fast log, and a short weekly review. The first option describes a goal-based setup with a finish line, which the module warns against. The third lists tools and competition, not the trigger, log, and review structure the lesson teaches."
+            "explanation": "A lasting health system has three parts: a daily trigger, a fast log, and a short weekly review. The first option describes a goal-based setup with a finish line, which the module warns against. The third lists tools and competition, not the trigger, log, and review structure the lesson teaches.",
+            "sourceLessonSlug": "m5-l5-your-system-architecture-triggers-logging-review"
           },
           {
             "prompt": "In older adults, a faster usual walking speed was found to predict what?",
@@ -857,7 +898,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "A lower resting heart rate"
             ],
             "correctIndex": 1,
-            "explanation": "In pooled older-adult data, a faster usual walking speed predicted longer survival. A higher step count is a different metric and is not what the walking-speed finding measured. A lower resting heart rate is also a separate signal; the study tied walking speed to how long people lived, not to their heart rate.\n\nReference: (Studenski et al., 2011)"
+            "explanation": "In pooled older-adult data, a faster usual walking speed predicted longer survival. A higher step count is a different metric and is not what the walking-speed finding measured. A lower resting heart rate is also a separate signal; the study tied walking speed to how long people lived, not to their heart rate.\n\nReference: (Studenski et al., 2011)",
+            "sourceLessonSlug": "m5-l7-the-century-plan-part-1-priorities-by-decade"
           }
         ]
       }

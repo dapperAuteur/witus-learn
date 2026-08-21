@@ -15,6 +15,7 @@ import { join } from "node:path";
 import { parse } from "csv-parse/sync";
 import type { AuthoredCourse, AuthoredLesson } from "./data/authored-course";
 import type { QuizContent } from "../src/lib/quiz";
+import { attachSourceLessons, type MatchStats } from "./lib/source-lesson-match";
 
 // CentOS source checkout (read-only). Override with CENTOS_DIR.
 const CENTOS =
@@ -438,6 +439,26 @@ function capQuiz(quiz: QuizContent, title?: string): QuizContent {
   return { ...quiz, questions: quiz.questions.slice(0, REGULAR_QUIZ_MAX) };
 }
 
+// ── source lessons ────────────────────────────────────────────────────────────
+// CentOS quiz files carry no lesson association, so every migrated question used to ship without
+// `sourceLessonSlug` and a wrong answer named no lesson to reread. `pnpm audit:course` counted 880
+// of them. scripts/lib/source-lesson-match.ts assigns one where the evidence supports it and
+// declines where it does not, because a wrong "reread this" link is worse than none.
+const matchTotals: MatchStats = { structural: 0, matched: 0, declined: 0 };
+/** Attach source lessons to a quiz, choosing from the teaching lessons of its own section. */
+function withSources(quiz: QuizContent, lessons: AuthoredLesson[], section?: string): QuizContent {
+  const teaching = lessons.filter((l) => !l.quiz);
+  const s = attachSourceLessons(
+    quiz,
+    section ? teaching.filter((l) => l.section === section) : [],
+    teaching,
+  );
+  matchTotals.structural += s.structural;
+  matchTotals.matched += s.matched;
+  matchTotals.declined += s.declined;
+  return quiz;
+}
+
 interface CentosQuiz {
   passingScore?: number;
   questions: {
@@ -597,7 +618,8 @@ function buildFromAcademyCsv(opts: {
     const quiz = quizByModule.get(mod);
     if (quiz && quiz.questions.length) {
       const title = `${sectionFor(mod)}, Knowledge Check`;
-      lessons.push({ slug: `m${mod}-quiz`, title, section: sectionFor(mod), quiz: capQuiz(quiz, title) });
+      const section = sectionFor(mod);
+      lessons.push({ slug: `m${mod}-quiz`, title, section, quiz: withSources(capQuiz(quiz, title), lessons, section) });
     }
   };
 
@@ -722,7 +744,7 @@ function buildNasmCpt(): AuthoredCourse {
         const quiz = convertCentosQuiz(JSON.parse(readFileSync(quizFile, "utf-8")) as CentosQuiz);
         if (quiz.questions.length) {
           const title = `${manifest.module?.title ?? `Chapter ${order}`}, Knowledge Check`;
-          lessons.push({ slug: `ch${order}-quiz`, title, section, quiz: capQuiz(quiz, title) });
+          lessons.push({ slug: `ch${order}-quiz`, title, section, quiz: withSources(capQuiz(quiz, title), lessons, section) });
         }
       } catch {
         /* skip */
@@ -895,7 +917,7 @@ function buildEcsModule(opts: {
         if (quiz.questions.length) {
           const section = cleanEcsTitle(r.title);
           const title = `${section} (Knowledge Check)`;
-          lessons.push({ slug: `l${r.lesson_order}-quiz`, title, section, quiz: capQuiz(quiz, title) });
+          lessons.push({ slug: `l${r.lesson_order}-quiz`, title, section, quiz: withSources(capQuiz(quiz, title), lessons, section) });
         }
       } catch {
         /* skip */
@@ -916,7 +938,7 @@ function buildEcsModule(opts: {
       const quiz = extractEmbeddedQuiz(raw);
       if (quiz) {
         const title = `${cleanTitle} (Knowledge Check)`;
-        lessons.push({ slug: `l${r.lesson_order}-quiz`, title, section: cleanTitle, quiz: capQuiz(quiz, title) });
+        lessons.push({ slug: `l${r.lesson_order}-quiz`, title, section: cleanTitle, quiz: withSources(capQuiz(quiz, title), lessons, cleanTitle) });
       }
     }
   }
@@ -970,7 +992,7 @@ function buildSpeedway(): AuthoredCourse {
         const quiz = convertSpeedwayQuiz(readCsvObjects(join(dir, quizFile)));
         if (quiz.questions.length) {
           const title = `Episode ${epNum}, Quiz`;
-          lessons.push({ slug: `e${epNum}-quiz`, title, section, quiz: capQuiz(quiz, title) });
+          lessons.push({ slug: `e${epNum}-quiz`, title, section, quiz: withSources(capQuiz(quiz, title), lessons, section) });
         }
       } catch {
         /* skip */
@@ -1114,6 +1136,13 @@ function main() {
   // 6. speedway (goes to ElementaryMBA, not health — but generated here)
   emit("speedway-course", "SPEEDWAY_COURSE", buildSpeedway(), "Source: docs/speedway-course");
 
+  const { structural, matched, declined } = matchTotals;
+  const assigned = structural + matched;
+  const total = assigned + declined;
+  console.log(
+    `\nSource lessons: ${assigned}/${total} question(s) linked to the lesson that teaches the answer ` +
+      `(${structural} structural, ${matched} matched), ${declined} declined for want of evidence.`,
+  );
   console.log("\nDone. Generated data modules in scripts/data/.");
 }
 

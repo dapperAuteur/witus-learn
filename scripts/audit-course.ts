@@ -244,7 +244,7 @@ function audit(entry: SeedEntry, course: AuthoredCourse, spec: boolean): CourseR
 }
 
 function printOne(r: CourseReport, spec: boolean) {
-  console.log(`\n${r.slug} — ${r.title}`);
+  console.log(`\n${r.slug}: ${r.title}`);
   console.log(`  ${r.file} · ${r.teaching} teaching lesson(s), ${r.quizzes} quiz(zes), ${r.questions} pooled question(s)\n`);
   const head = spec
     ? "  section                                        lessons   words  reveals    pool  served  target"
