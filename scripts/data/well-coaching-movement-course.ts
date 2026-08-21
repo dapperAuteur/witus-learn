@@ -253,6 +253,474 @@ Sun, J. W., Zhao, L. G., Yang, Y., Ma, X., Wang, Y. Y., & Xiang, Y. B. (2015). A
               "Workouts remain valuable; the point is that the epidemiology's biggest levers (steps, sitting, everyday movement) sit below the intensity range trainers optimize, and a coach who only respects training-shaped movement misses them.",
             sourceLessonSlug: "coaching-movement-not-prescribing",
           },
+          {
+            prompt: "What does this course say most clients who hire trainers actually need?",
+            options: [
+              "To MOVE daily for decades, which is a behavioral problem rather than a programming one",
+              "A better-designed program, matched to their stated goals and their current training age",
+              "More accountability, delivered through more frequent supervised sessions",
+              "Correction of movement faults before any volume is added",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Programming is not the problem this pillar has. What decides decades of movement is behavioral: honest dose targets, everyday activity, and adherence.",
+            sourceLessonSlug: "coaching-movement-not-prescribing",
+          },
+          {
+            prompt: "What does the course call 'the layer between a plan and a life'?",
+            options: [
+              "Dose evidence for honest targets, the everyday movement programs ignore, and adherence science",
+              "Motivational interviewing, goal setting, and accountability structures",
+              "Assessment, programming, and progression, planned across a full training block",
+              "Education, demonstration, and supervised practice of each movement",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three components, none of which a CPT or CES carries. That gap is the course's whole justification for existing beside those credentials.",
+            sourceLessonSlug: "coaching-movement-not-prescribing",
+          },
+          {
+            prompt: "What is 'movement behavior' as this course defines it?",
+            options: [
+              "The daily pattern of activity and sitting a person actually lives, as distinct from the workouts they plan",
+              "The quality of a person's movement patterns under load",
+              "The client's stated intentions about exercise, recorded before any behavior actually occurs",
+              "The frequency and duration of a client's structured training sessions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Lived pattern versus planned workouts. The distinction is the course's subject, and sitting is inside the definition rather than merely the absence of activity.",
+            sourceLessonSlug: "coaching-movement-not-prescribing",
+          },
+          {
+            prompt: "Under the two-hats rule, when may you write a program for a coaching client?",
+            options: [
+              "As a trainer, with the roles visibly separate; when they need to actually do it, you coach",
+              "Never, since holding a coaching relationship precludes prescribing for the same person",
+              "Whenever the client requests it during a session, since the request itself preserves their autonomy",
+              "Only after the client's physician has cleared them for structured exercise",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The same person may hold both credentials; what matters is which hat is on. WELL-00 established that prescription is inside the CPT scope and outside the coaching scope.",
+            sourceLessonSlug: "coaching-movement-not-prescribing",
+          },
+          {
+            prompt: "What does the course ask a trainer to un-learn about how movement is measured?",
+            options: [
+              "Fitness culture measures movement in workouts; the mortality evidence mostly counts steps, sitting hours, and everyday activity",
+              "Fitness culture measures intensity; the mortality evidence measures only total weekly volume",
+              "Fitness culture measures outcomes; the mortality evidence measures only behavior the participant reported themselves",
+              "Fitness culture measures weekly frequency; the mortality evidence measures session duration",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The unit of measurement differs, and so does the intensity range. The epidemiology's strongest findings live far below where a certification optimizes.",
+            sourceLessonSlug: "coaching-movement-not-prescribing",
+          },
+          {
+            prompt: "What does a coach miss by only respecting training-shaped movement?",
+            options: [
+              "The levers that move the most sedentary clients the furthest",
+              "The opportunity to build early rapport around the habits the client already has",
+              "The chance to demonstrate technical expertise early in the relationship",
+              "The intensity thresholds that produce cardiovascular adaptation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Steps, sitting, and everyday activity are where a sedentary client's opportunity concentrates, and they are precisely what a workout-shaped view discounts.",
+            sourceLessonSlug: "coaching-movement-not-prescribing",
+          },
+          {
+            prompt: "What is 'everyday movement'?",
+            options: [
+              "The steps, chores, and postures outside structured exercise, where most of a sedentary client's opportunity lives",
+              "Movement performed every day, as opposed to on a structured training schedule",
+              "Low-intensity activity prescribed on recovery days between training sessions",
+              "The functional patterns a client repeats in ordinary life, assessed for quality",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is defined by being outside structured exercise, not by frequency or intensity. Its coaching value is where the opportunity concentrates for the least active clients.",
+            sourceLessonSlug: "coaching-movement-not-prescribing",
+          },
+          {
+            prompt: "State the WHO 2020 muscle-strengthening recommendation for adults 18 to 64.",
+            options: [
+              "Moderate or greater intensity, involving all major muscle groups, on two or more days a week",
+              "Moderate or greater intensity, involving the major lower-body groups, on three or more days a week",
+              "Vigorous intensity only, involving all of the major muscle groups, on two or more days each week",
+              "Any intensity, involving all major muscle groups, on one or more days a week",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Moderate or greater, all major muscle groups, two or more days. It sits alongside the aerobic range rather than substituting for any part of it.",
+            sourceLessonSlug: "who-numbers-as-a-coach",
+          },
+          {
+            prompt: "What is the character of the WHO aerobic numbers, and why does the course stress it?",
+            options: [
+              "They are ranges with a floor and a soft ceiling, not a single pass-fail bar",
+              "They are minimum thresholds below which no measurable health benefit accrues",
+              "They are population averages that do not apply to individual clients",
+              "They are targets set for public-health messaging rather than clinical use",
+            ],
+            correctIndex: 0,
+            explanation:
+              "150 to 300 moderate, 75 to 150 vigorous. Reading them as a bar is what turns a guideline into a report card, which the course explicitly forbids.",
+            sourceLessonSlug: "who-numbers-as-a-coach",
+          },
+          {
+            prompt: "Why does the course say the 65-plus recommendation is 'not a footnote' for the centenarian frame?",
+            options: [
+              "Falls and lost function, not missed workouts, are what end independent decades",
+              "Older adults form the majority of the client base in most coaching practices",
+              "The 65-plus guidance carries stronger evidence than the adult guidance",
+              "Balance training is the only recommendation with mortality data behind it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The frame is about who you get to be at ninety. Functional balance and strength are what protect independence, which makes them the recommendation your future self depends on most.",
+            sourceLessonSlug: "who-numbers-as-a-coach",
+          },
+          {
+            prompt: "What is 'multicomponent activity' in the WHO guidelines?",
+            options: [
+              "Varied work combining functional balance and strength, three or more days a week, for adults 65 and older",
+              "Any combination of aerobic and strength work performed within a single training session",
+              "Activity that trains more than one energy system within a week",
+              "The mix of moderate and vigorous activity that satisfies the aerobic range",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the 65-plus addition specifically: varied, functional balance plus strength, at moderate or greater intensity, three or more days a week.",
+            sourceLessonSlug: "who-numbers-as-a-coach",
+          },
+          {
+            prompt: "What does 'light-intensity activity' earn under the WHO guidelines?",
+            options: [
+              "Credit as a replacement for sitting, since replacing sedentary time with any intensity provides benefits",
+              "No credit at all, since only moderate and vigorous activity count toward the published guidelines",
+              "Partial credit at half the rate of moderate activity",
+              "Credit only for adults 65 and older, as part of multicomponent activity",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The guideline sentence is explicit that replacing sitting with activity of ANY intensity, including light, provides benefits. It does not count toward the aerobic minutes, but it is not uncredited.",
+            sourceLessonSlug: "who-numbers-as-a-coach",
+          },
+          {
+            prompt: "What are the four directions on the guidelines menu a client can pick from?",
+            options: [
+              "More minutes, more intensity, more strength days, less sitting, or better balance work",
+              "More frequency, more duration, more load, or more variety in the training week",
+              "More cardio, more strength, more mobility, or more recovery",
+              "More steps, more workouts, more consistency, or more supervision",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Each direction corresponds to something the guidelines actually address. The client picks the direction; WELL-01's tools carry it.",
+            sourceLessonSlug: "who-numbers-as-a-coach",
+          },
+          {
+            prompt: "What does 'MVPA' abbreviate, and what is notable about the vigorous band?",
+            options: [
+              "Moderate-to-vigorous physical activity; the vigorous band earns credit at half the minutes",
+              "Maximal voluntary physical activity; the vigorous band is capped for safety in older adults",
+              "Measured vigorous physical activity; the vigorous band requires device confirmation",
+              "Moderate-to-vigorous physical activity; the vigorous band counts double toward strength days",
+            ],
+            correctIndex: 0,
+            explanation:
+              "150 to 300 moderate minutes or 75 to 150 vigorous, which is the half-minutes exchange rate. Vigorous work does not substitute for the strength recommendation.",
+            sourceLessonSlug: "who-numbers-as-a-coach",
+          },
+          {
+            prompt: "Why does the course say WHO's refusal to set a sitting threshold is 'what honesty looks like'?",
+            options: [
+              "The evidence was insufficient to quantify one, and saying so beats inventing a number",
+              "Setting a numeric threshold would have implied that sitting below it is safe",
+              "Thresholds are outside the WHO's remit for behavioral recommendations",
+              "The available studies disagreed too sharply to permit any recommendation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They recommend limiting sedentary time AND state the evidence could not support a threshold. The course treats that refusal as a model rather than a weakness.",
+            sourceLessonSlug: "sitting-the-threshold-that-isnt",
+          },
+          {
+            prompt: "How large was the sitting-and-mortality meta-regression, and what shape did it find?",
+            options: [
+              "19 studies, over a million participants; a log-linear association with no cliff",
+              "10 cohorts, 647,475 participants; a J-shaped association with a clear inflection",
+              "19 studies, 226,889 participants; a threshold effect beginning at 8 hours",
+              "57 studies across 35 cohorts; a linear association flattening above 9 hours",
+            ],
+            correctIndex: 0,
+            explanation:
+              "19 studies, over a million people, log-linear. The 647,475 figure belongs to the TV-time meta-analysis, and 57 studies across 35 cohorts is the 2025 step analysis.",
+            sourceLessonSlug: "sitting-the-threshold-that-isnt",
+          },
+          {
+            prompt: "Why does the self-reported sitting cut-off read LOWER than the device-measured one?",
+            options: [
+              "People underestimate their own sitting, so the self-report scale reads lower at the same true exposure",
+              "Self-report studies enrolled more sedentary populations on average",
+              "Devices capture standing and fidgeting time that self-report classifies as sitting",
+              "Self-report studies had shorter follow-up, detecting risk earlier",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Underestimation shifts the whole scale. Seven hours of reported sitting corresponds to more actual sitting, which is why the apparent threshold appears earlier.",
+            sourceLessonSlug: "sitting-the-threshold-that-isnt",
+          },
+          {
+            prompt: "What is the verification note attached to the '8 hours of sitting' figure?",
+            options: [
+              "It traces to a conference abstract; the published paper reports method-dependent cut-offs of about 7 and 9 hours",
+              "It comes from an older guideline superseded by the 2020 WHO recommendations",
+              "It is a rounding of the device-measured 9-hour figure, widely repeated",
+              "It applies only to adults over 60, though it circulates as a general rule",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A conference abstract versus the published meta-regression. The course teaches what the primary says, and flags the drift rather than quietly correcting it.",
+            sourceLessonSlug: "sitting-the-threshold-that-isnt",
+          },
+          {
+            prompt: "What is a 'method-dependent cut-off'?",
+            options: [
+              "A threshold that moves with how the exposure was measured, like sitting's 7-versus-9-hour split",
+              "A threshold that applies only within the specific population a given study measured",
+              "A cut-off chosen by the analysts rather than emerging from the data",
+              "A threshold that differs between self-selected and randomized samples",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The measurement instrument moves the number. The course calls it a lesson in reading rules skeptically, and it is the reflex the sit-less lesson reinforces later.",
+            sourceLessonSlug: "sitting-the-threshold-that-isnt",
+          },
+          {
+            prompt: "Why is TV sitting the worst-behaving flavor of sitting?",
+            options: [
+              "It is long, unbroken, evening-loaded, and snack-adjacent",
+              "It is the only sitting flavor measured by device rather than self-report",
+              "It replaces sleep more often than other sedentary activities",
+              "It correlates most strongly with total occupational sitting hours across the week",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Four features, each of which a client can see. That visibility is what makes it the single most coachable sitting target they own.",
+            sourceLessonSlug: "sitting-the-threshold-that-isnt",
+          },
+          {
+            prompt: "What is a 'J-shaped dose-response'?",
+            options: [
+              "Roughly flat risk at low doses that bends upward as dose grows",
+              "Risk falling steeply and then plateauing, with no harm detected at the top of the range",
+              "Risk rising steadily with dose, with no inflection anywhere",
+              "Risk highest at both extremes and lowest in the middle of the range",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Flat then bending upward, which is the shape of the TV-time association. Risk highest at both extremes would be U-shaped, and steady rise is the log-linear sitting shape.",
+            sourceLessonSlug: "sitting-the-threshold-that-isnt",
+          },
+          {
+            prompt: "How should sit-less be taught to a client?",
+            options: [
+              "As a direction: no safe number to hide under and no doom number to panic over",
+              "As a daily ceiling the client tracks and deliberately stays beneath",
+              "As a ratio of sitting to standing hours across the working day",
+              "As a target derived from the client's measured baseline plus a reduction",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Direction, not threshold. The log-linear shape means every hour moved is worth something and no number confers safety, which is what a ceiling would falsely imply.",
+            sourceLessonSlug: "sitting-the-threshold-that-isnt",
+          },
+          {
+            prompt: "What is 'sedentary behavior' as this course defines it?",
+            options: [
+              "Waking time spent sitting or reclining at low energy expenditure; a risk exposure in its own right",
+              "Any waking time not spent in moderate-intensity or vigorous-intensity activity",
+              "The absence of structured exercise across a day or week",
+              "Time spent below the light-intensity threshold, including sleep",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Waking, sitting or reclining, low expenditure. The crucial half is 'in its own right': sitting is an exposure, not merely the absence of exercise.",
+            sourceLessonSlug: "sitting-the-threshold-that-isnt",
+          },
+          {
+            prompt: "A client meets the 150-minute aerobic guideline and sits eleven hours a day. What does the evidence say?",
+            options: [
+              "Sitting is an exposure in its own right, so the guideline minutes do not neutralize it",
+              "The guideline aerobic minutes offset sedentary risk entirely once they are met",
+              "Sitting only carries risk in adults not meeting the aerobic guideline",
+              "Nothing; the sitting evidence applies only to device-measured populations",
+            ],
+            correctIndex: 0,
+            explanation:
+              "WHO recommends limiting sedentary time as a separate recommendation, and the sitting associations persist after adjusting for exercise in the cited analyses.",
+            sourceLessonSlug: "sitting-the-threshold-that-isnt",
+          },
+          {
+            prompt: "A client says 'I only have twenty minutes three times a week, so it's pointless.' Which guideline sentence answers them?",
+            options: [
+              "Some physical activity is better than none, and people not meeting the recommendations gain health benefits from doing SOME",
+              "Adults should accumulate 150 to 300 minutes of moderate activity weekly",
+              "Adults should limit sedentary time and replace it with activity of any intensity",
+              "Muscle-strengthening activity should involve all major muscle groups twice weekly",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That sentence exists precisely for below-guideline clients. The sitting sentence is the second authorization, but it answers a different objection.",
+            sourceLessonSlug: "who-numbers-as-a-coach",
+          },
+          {
+            prompt: "What is 'dose evidence,' and what does it let a coach do?",
+            options: [
+              "The epidemiology linking amounts of movement to health outcomes; it lets a coach set targets honestly instead of by convention",
+              "The trial evidence for how much exercise produces a given adaptation",
+              "The measured relationship between training load and injury risk",
+              "The guideline minimums published by recognized authorities",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Outcome epidemiology, and the alternative it displaces is convention. The 10,000-step target is exactly the convention the dose evidence replaces.",
+            sourceLessonSlug: "coaching-movement-not-prescribing",
+          },
+          {
+            prompt: "Which is a 'thin bridge' design decision in this course?",
+            options: [
+              "Refusing to teach programming, because the CPT and CES already carry it",
+              "Teaching published guidelines rather than individualized targets, because targets would require assessment",
+              "Covering steps and sitting rather than strength, because the evidence is stronger",
+              "Deferring the clinical populations to the capstone, because scope questions come first",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Nothing twice. The design rule is to teach only the coaching layer over content another credential already covers, which is why programming is absent by intention.",
+            sourceLessonSlug: "coaching-movement-not-prescribing",
+          },
+          {
+            prompt: "How does the centenarian frame appear in this course?",
+            options: [
+              "Every dose curve is one you are personally on for the next several decades, and the capstone asks what you did about it",
+              "Every lesson includes its own section on coaching adults over the age of 65",
+              "Every recommendation is adjusted for expected age-related decline",
+              "Every claim is evaluated for its evidence over multi-decade follow-up",
+            ],
+            correctIndex: 0,
+            explanation:
+              "You are the first client. The frame is personal application rather than an age-specific content adjustment, which is why the capstone can build on it.",
+            sourceLessonSlug: "coaching-movement-not-prescribing",
+          },
+          {
+            prompt: "A client asks how many hours of sitting is 'safe.' What is the honest answer?",
+            options: [
+              "There is no threshold; the association is log-linear, so every hour reduced is worth something",
+              "About 8 hours a day, per the widely cited meta-analysis of sitting time",
+              "About 7 hours if self-tracked, since that matches the self-report evidence",
+              "About 9 hours, per the device-measured evidence, which is the more accurate ruler",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The two figures describe where risk becomes clearly detectable under different measurement methods, not a safe allowance. The shape has no cliff, so no number confers safety.",
+            sourceLessonSlug: "sitting-the-threshold-that-isnt",
+          },
+          {
+            prompt: "Which is the strongest reason the WHO guidelines fit inside coaching scope as education?",
+            options: [
+              "They are evidence-based resources from a nationally recognized authority, which the scope explicitly permits sharing",
+              "They are population-level rather than individualized, so they cannot constitute prescription",
+              "They are published freely, so no professional interpretation is required",
+              "They concern behavior rather than treatment, which places them outside any practice act",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That phrasing is the scope document's own permission, taught in WELL-00. The other reasons are plausible but not the ground the scope actually gives.",
+            sourceLessonSlug: "who-numbers-as-a-coach",
+          },
+          {
+            prompt: "Why does the course insist guidelines are never a report card?",
+            options: [
+              "Grading a client against a range they cannot yet reach converts education into judgment",
+              "The guidelines lack the individual precision that grading would require",
+              "Grading falls outside the coach's scope, which excludes assessment",
+              "Clients who fail a standard disengage from the measurement rather than the behavior",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson pairs 'never as a report card' with using them as education and a menu of directions. Judgment is the failure mode; the guideline's own 'some is better than none' sentence is the antidote.",
+            sourceLessonSlug: "who-numbers-as-a-coach",
+          },
+          {
+            prompt: "A colleague cites 'the 8-hour sitting rule' in a client handout. What should you say?",
+            options: [
+              "The published meta-regression reports method-dependent cut-offs of about 7 and 9 hours, and the flat 8 traces to a conference abstract",
+              "The rule is correct but applies only to device-measured sitting",
+              "The rule is correct for adults under 60 and should be lowered for older clients",
+              "The rule is superseded by the WHO guidelines, which set a 6-hour limit",
+            ],
+            correctIndex: 0,
+            explanation:
+              "WHO set no numeric limit at all, and the published paper's cut-offs move with the measurement method. Correcting a circulated number to its primary is the habit this course drills.",
+            sourceLessonSlug: "sitting-the-threshold-that-isnt",
+          },
+          {
+            prompt: "What does 'log-linear association' mean for how a coach talks about sitting?",
+            options: [
+              "Risk rises steadily with dose without a cliff, so reduction at any level is worthwhile and no level is safe",
+              "Risk rises sharply after a threshold, so the goal is staying under it",
+              "Risk rises proportionally to the logarithm of exposure, so the first hours matter most",
+              "Risk is unrelated to dose below a floor, so only extreme sitting is coachable",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Steady rise, no cliff. That shape is exactly what licenses teaching sit-less as a direction rather than as a threshold to stay under.",
+            sourceLessonSlug: "sitting-the-threshold-that-isnt",
+          },
+          {
+            prompt: "Which two things does the course say survive when the gym does not?",
+            options: [
+              "Everyday movement and the sit-less day, since they need no facility or schedule",
+              "Strength work and mobility work, since both of them can be done at home",
+              "Steps and structured cardio, since both are measurable",
+              "The client's motivation and the coach's accountability structure",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The everyday-movement lever survives injuries, travel, and every season in which structured training does not, which is what makes it the durable half of this pillar.",
+            sourceLessonSlug: "coaching-movement-not-prescribing",
+          },
+          {
+            prompt: "A client meets the aerobic guideline but does no strength work. Under the guidelines, what is missing?",
+            options: [
+              "Muscle-strengthening at moderate or greater intensity, all major muscle groups, two or more days a week",
+              "Nothing; the aerobic guideline is the primary recommendation and strength is optional",
+              "Multicomponent balance work, which applies at all adult ages",
+              "Vigorous-intensity work, which the aerobic range requires alongside moderate activity",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Strength is a separate recommendation, not a substitute or an option. Multicomponent balance work is the 65-plus addition, and vigorous activity is an alternative to moderate rather than a requirement.",
+            sourceLessonSlug: "who-numbers-as-a-coach",
+          },
+          {
+            prompt: "What is the coaching consequence of sitting being 'a risk exposure in its own right'?",
+            options: [
+              "It becomes a target to coach directly, separate from and alongside the activity conversation",
+              "It becomes the primary target, replacing activity for sedentary clients",
+              "It becomes relevant only once the client meets the activity guideline",
+              "It becomes a measurement problem rather than a behavioral one",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two conversations, not one. If sitting were merely absent activity, coaching activity would handle it; because it is its own exposure, it earns its own coaching target.",
+            sourceLessonSlug: "sitting-the-threshold-that-isnt",
+          },
         ],
       },
     },
@@ -328,6 +796,474 @@ Paluch, A. E., Bajpai, S., Bassett, D. R., et al. (2022). Daily steps and all-ca
       ],
     },
 
+    {
+      slug: "quiz-steps",
+      title: "7 · Knowledge check: steps",
+      section: "Section 2 · Steps",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "Why does this course call steps 'the most coachable dose in health'?",
+            options: [
+              "Universally understood, passively counted, and mapped against mortality by multiple large meta-analyses that agree",
+              "Because step targets are published in the WHO 2020 guidelines alongside the weekly aerobic minutes",
+              "Because steps correlate more strongly with fitness than any other field measure",
+              "Because step counting requires no equipment a client does not already own",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three properties plus the agreement between analyses. Note that steps are NOT a WHO metric, which is one reason the 10,000 figure had to come from somewhere else.",
+            sourceLessonSlug: "step-dose-response",
+          },
+          {
+            prompt: "What did Jayedi et al. find per additional 1,000 daily steps, and across how many cohorts?",
+            options: [
+              "12 percent lower all-cause mortality (HR 0.88), across 7 cohorts",
+              "15 percent lower all-cause mortality (HR 0.85), across 7 cohorts",
+              "12 percent lower all-cause mortality (HR 0.88), across 17 cohorts",
+              "7 percent lower cardiovascular mortality (HR 0.93), across 7 cohorts",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Twelve percent across 7 cohorts. The 15 percent figure and the 17-cohort count belong to Banach, and the 7 percent figure is Banach's per-500-step cardiovascular result.",
+            sourceLessonSlug: "step-dose-response",
+          },
+          {
+            prompt: "Over what step range did Jayedi et al. find risk falling linearly, and what was the hazard ratio at 10,000?",
+            options: [
+              "About 2,700 to 17,000 steps a day, with HR 0.44 at 10,000",
+              "About 2,000 to 12,000 steps a day, with a hazard ratio of 0.53 at the 10,000-step mark",
+              "About 4,000 to 20,000 steps a day, with HR 0.44 at 10,000",
+              "About 2,700 to 17,000 steps a day, with HR 0.60 at 10,000",
+            ],
+            correctIndex: 0,
+            explanation:
+              "2,700 to 17,000, HR 0.44 at ten thousand. The evidence was graded strong for its effect size and dose-response gradient.",
+            sourceLessonSlug: "step-dose-response",
+          },
+          {
+            prompt: "How large was the Banach pooled analysis, and what did it price a 500-step increment at?",
+            options: [
+              "17 cohorts and 226,889 people; a 500-step increment bought 7 percent lower cardiovascular mortality",
+              "17 cohorts and 226,889 people; a 500-step increment bought 15 percent lower all-cause mortality",
+              "15 cohorts and 47,471 people; a 500-step increment bought 7 percent lower cardiovascular mortality",
+              "7 cohorts and 226,889 people; a 500-step increment bought 12 percent lower all-cause mortality",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The largest pooled analysis: 15 percent per 1,000 steps for all-cause mortality, and 7 percent per 500 steps for cardiovascular mortality. The 15-cohort figure belongs to Paluch.",
+            sourceLessonSlug: "step-dose-response",
+          },
+          {
+            prompt: "Against a reference of 1,895 steps, what did Liu et al. associate with roughly 4,000 steps a day?",
+            options: [
+              "37 percent lower mortality risk",
+              "60 percent lower mortality risk",
+              "75 percent lower mortality risk",
+              "12 percent lower mortality risk",
+            ],
+            correctIndex: 0,
+            explanation:
+              "37 percent at about 4,000. The 60 percent figure is 6,388 steps and 75 percent is roughly 10,000, against the same 1,895-step reference.",
+            sourceLessonSlug: "step-dose-response",
+          },
+          {
+            prompt: "What minimal significant doses did the cardiology meta-analysis identify, and against what reference?",
+            options: [
+              "About 2,600 steps for mortality and 2,800 for cardiovascular disease, against a 2,000-step reference",
+              "About 4,000 steps for mortality and 4,400 for cardiovascular disease, against a 2,000-step reference",
+              "About 2,600 steps for mortality and 2,800 for cardiovascular disease, against a 1,895-step reference",
+              "About 5,000 steps for both outcomes, against a 2,000-step reference",
+            ],
+            correctIndex: 0,
+            explanation:
+              "2,600 and 2,800 against a 2,000-step reference. The 1,895-step reference belongs to Liu, and the numbers are not interchangeable between analyses.",
+            sourceLessonSlug: "step-dose-response",
+          },
+          {
+            prompt: "What optimal doses did Stens et al. report, and what additional finding accompanied them?",
+            options: [
+              "About 8,800 for mortality and 7,200 for cardiovascular disease, with independent benefit from brisker cadence",
+              "About 7,000 for both outcomes, with independent benefit from morning stepping",
+              "About 10,000 for mortality and 8,000 for cardiovascular disease, with no cadence effect detected",
+              "About 8,800 for mortality and 7,200 for cardiovascular disease, with benefit confined to under-60s",
+            ],
+            correctIndex: 0,
+            explanation:
+              "8,800 and 7,200, plus cadence carrying mortality benefit independent of total steps. That last finding is what makes 'walk a bit brisker' a legitimate separate target.",
+            sourceLessonSlug: "step-dose-response",
+          },
+          {
+            prompt: "What is 'cadence,' and why does it matter here?",
+            options: [
+              "Stepping rate; brisker cadence carried mortality benefit independent of total steps",
+              "The regularity of a client's stepping across the week, independent of daily totals",
+              "The ratio of walking to running steps within a day's total",
+              "The consistency of step count between weekdays and weekends",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Rate, not regularity or composition. Its independence from total steps is the point: a client at their plateau can still gain from stepping faster.",
+            sourceLessonSlug: "step-dose-response",
+          },
+          {
+            prompt: "What does 'hazard ratio 0.88' mean?",
+            options: [
+              "12 percent lower risk in one group than the reference group over time",
+              "An 88 percent lower risk in one group than in the reference group, measured over time",
+              "An 88 percent chance of the outcome in the exposed group",
+              "A risk 0.88 times the absolute rate in the general population",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One minus 0.88. Reading a hazard ratio as a percentage of the outcome rather than a ratio of risks is the commonest error with this statistic.",
+            sourceLessonSlug: "step-dose-response",
+          },
+          {
+            prompt: "What is a 'dose-response gradient,' and why does the course call it strong evidence?",
+            options: [
+              "Risk changing steadily with dose; it is one of the strongest signals observational evidence can show",
+              "The steepness of the risk curve at its lowest doses, where confounding is least likely",
+              "The consistency of an effect across a range of different populations and study designs",
+              "The presence of a threshold below which no association is detectable",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A graded relationship is much harder to produce by confounding than a single contrast, which is why it strengthens a causal reading of observational data.",
+            sourceLessonSlug: "step-dose-response",
+          },
+          {
+            prompt: "What does the agreement of five independent teams establish, per this lesson?",
+            options: [
+              "One shape: steep gains from a very low floor, continuing gains through the middle thousands, flattening near five digits",
+              "That the step-and-mortality relationship is genuinely causal rather than merely associational",
+              "That 7,000 steps is the correct universal target for all adults",
+              "That step counting is more reliable than device-measured activity minutes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Convergent shape across overlapping but distinct cohorts. Convergence strengthens the finding; it does not by itself convert observational data into causal proof.",
+            sourceLessonSlug: "step-dose-response",
+          },
+          {
+            prompt: "What do the step analyses NOT find?",
+            options: [
+              "A minimum you must clear before benefits begin, or harm at the top of the range",
+              "Any benefit below 4,000 steps a day",
+              "Any consistency between self-reported step counts and device-measured ones",
+              "Any difference in the curve between men and women",
+            ],
+            correctIndex: 0,
+            explanation:
+              "No entry threshold and no harm at high counts. Both absences matter for coaching: the first authorizes starting anywhere, the second removes a reason to cap.",
+            sourceLessonSlug: "step-dose-response",
+          },
+          {
+            prompt: "What is this course's default step prescription?",
+            options: [
+              "The client's measured baseline plus roughly a thousand, renegotiated as the curve flattens",
+              "Seven thousand steps a day for every adult client",
+              "The age-appropriate plateau: 6,000 to 8,000 over 60, 8,000 to 10,000 under 60",
+              "Ten thousand steps a day, retained because it is a simple and memorable standard",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Baseline first (most phones already know it), then the next thousand. A universal number, even a well-evidenced one, ignores where the individual client sits on the curve.",
+            sourceLessonSlug: "the-7000-step-day",
+          },
+          {
+            prompt: "Where does the 10,000-step target actually come from?",
+            options: [
+              "Pedometer marketing, not epidemiology",
+              "An early WHO recommendation later withdrawn",
+              "A Japanese public-health campaign that was based on national cohort data",
+              "The upper bound of the Jayedi linear range, rounded",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Marketing. The course's instruction is to retire it as a moral standard and keep it as one option on a shelf, since the evidence does support it as a reasonable target for the already active.",
+            sourceLessonSlug: "the-7000-step-day",
+          },
+          {
+            prompt: "How large was the 2025 multi-outcome analysis, and what did it compare?",
+            options: [
+              "57 studies across 35 cohorts, comparing 7,000 steps a day against 2,000 across nine outcomes",
+              "35 studies across 57 cohorts, comparing 10,000 steps against 4,000 across nine outcomes",
+              "17 cohorts and 226,889 people, comparing 7,000 steps against 2,000 across four outcomes",
+              "57 studies across 35 cohorts, comparing 7,000 steps against a 1,895-step reference",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The broadest analysis yet: 57 studies, 35 cohorts, 7,000 versus 2,000 steps, nine outcomes priced separately.",
+            sourceLessonSlug: "the-7000-step-day",
+          },
+          {
+            prompt: "In the 2025 analysis, what did 7,000 steps buy for all-cause mortality against 2,000?",
+            options: [
+              "47 percent lower risk (hazard ratio 0.53)",
+              "37 percent lower risk (hazard ratio 0.63)",
+              "60 percent lower risk (hazard ratio 0.40)",
+              "25 percent lower risk (hazard ratio 0.75)",
+            ],
+            correctIndex: 0,
+            explanation:
+              "HR 0.53, a 47 percent reduction. The 37 percent figure is cancer mortality in the same analysis, and 25 percent is cardiovascular disease incidence.",
+            sourceLessonSlug: "the-7000-step-day",
+          },
+          {
+            prompt: "What did 7,000 steps versus 2,000 buy for dementia risk and fall risk?",
+            options: [
+              "38 percent lower dementia risk and 28 percent lower fall risk",
+              "A 22 percent lower dementia risk and a 38 percent lower risk of falling",
+              "38 percent lower dementia risk and 14 percent lower fall risk",
+              "28 percent lower dementia risk and 38 percent lower fall risk",
+            ],
+            correctIndex: 0,
+            explanation:
+              "38 percent dementia, 28 percent falls. The 22 percent figure is depressive symptoms and 14 percent is type 2 diabetes incidence.",
+            sourceLessonSlug: "the-7000-step-day",
+          },
+          {
+            prompt: "Which outcome carried the WEAKEST evidence certainty in the 2025 analysis?",
+            options: [
+              "Falls",
+              "Dementia",
+              "All-cause mortality",
+              "Cardiovascular disease incidence, across the pooled cohorts",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Certainty was moderate for most outcomes, lower for some, with falls the weakest. Naming which column is softest is part of quoting the analysis honestly.",
+            sourceLessonSlug: "the-7000-step-day",
+          },
+          {
+            prompt: "What was the authors' own interpretation of the 7,000-step finding?",
+            options: [
+              "10,000 remains a fine target for the already active, and 7,000 is clinically meaningful and more achievable for many",
+              "10,000 should be abandoned as a target, since 7,000 captures nearly all the benefit",
+              "7,000 should replace the WHO aerobic guidelines as the primary public recommendation",
+              "Both figures are arbitrary, and only the individual's baseline should guide targets",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both-and, not either-or. The course adopts it directly as the coaching translation, which is why 10,000 stays on the shelf rather than being discarded.",
+            sourceLessonSlug: "the-7000-step-day",
+          },
+          {
+            prompt: "Where do inflection points fall for most outcomes in the 2025 analysis?",
+            options: [
+              "Around 5,000 to 7,000 steps a day",
+              "Around 7,000 to 9,000 steps a day, across most outcomes",
+              "Around 2,600 to 2,800 steps a day",
+              "Around 8,800 to 10,000 steps a day",
+            ],
+            correctIndex: 0,
+            explanation:
+              "5,000 to 7,000 for most outcomes. The 2,600-to-2,800 range is where benefit first becomes detectable, which is a different question from where gains begin flattening.",
+            sourceLessonSlug: "the-7000-step-day",
+          },
+          {
+            prompt: "What did Paluch et al. find about age and the mortality plateau?",
+            options: [
+              "Risk fell until about 6,000 to 8,000 steps for adults 60 and older, and about 8,000 to 10,000 for adults under 60",
+              "Risk fell until about 7,000 steps in both age groups, with no age difference detected",
+              "Risk fell until about 8,000 to 10,000 steps for adults 60 and older, and 6,000 to 8,000 for under 60",
+              "Risk fell continuously in both age groups with no plateau below 12,000 steps",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Older adults plateau earlier. That is the finding that lets an older client own the fact that their optimal is nearer than they feared.",
+            sourceLessonSlug: "the-7000-step-day",
+          },
+          {
+            prompt: "What hazard ratios did the higher step quartiles carry in Paluch, and what was the lowest quartile's median?",
+            options: [
+              "0.60, 0.55, and 0.47 against a lowest quartile whose median was 3,553 steps",
+              "0.88, 0.76, and 0.44 against a lowest quartile whose median was 1,895 steps",
+              "0.53, 0.47, and 0.40 against a lowest quartile whose median was 2,000 steps",
+              "0.60, 0.55, and 0.47 against a lowest quartile whose median was 2,700 steps",
+            ],
+            correctIndex: 0,
+            explanation:
+              "0.60, 0.55, 0.47 against a 3,553-step median. The 1,895 reference belongs to Liu and 2,000 to Stens; each analysis has its own baseline.",
+            sourceLessonSlug: "the-7000-step-day",
+          },
+          {
+            prompt: "How should a coach answer a 68-year-old asking whether 7,200 daily steps is 'enough'?",
+            options: [
+              "For their age group the curve plateaus around 6,000 to 8,000, so 7,200 sits at their own optimum; next gains likely come from balance, strength, and cadence",
+              "It falls short of the 10,000-step standard, so a gradual increase is warranted",
+              "It exceeds the 7,000-step threshold, so no further movement work is needed",
+              "Step counts are unreliable at that age, so a different metric should be used",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They are at their curve's plateau, not short of a younger person's number. The redirect to balance, strength, and cadence is where their remaining gains actually sit.",
+            sourceLessonSlug: "the-7000-step-day",
+          },
+          {
+            prompt: "Why does the course say the dementia, depression, and falls columns 'matter most here'?",
+            options: [
+              "They are arguments about who you get to BE at ninety, for clients who stopped caring about their cardiovascular system years ago",
+              "They carry the strongest evidence certainty in the 2025 analysis",
+              "They are the outcomes a CPT is not already equipped to discuss",
+              "They respond faster to increased steps than cardiovascular outcomes do",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Your CPT already argued for steps via the heart. What the newest data adds is the identity-and-independence argument, which reaches clients the cardiovascular pitch does not.",
+            sourceLessonSlug: "the-7000-step-day",
+          },
+          {
+            prompt: "What is an 'inflection point' on a dose-response curve?",
+            options: [
+              "Where steep gains begin flattening",
+              "Where benefit first becomes statistically detectable",
+              "Where the curve reverses and additional dose becomes harmful",
+              "Where the majority of the study population's exposure sits",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Flattening, not first detection and not reversal. The step curves have an inflection and no reversal, which is why no harm is found at the top.",
+            sourceLessonSlug: "the-7000-step-day",
+          },
+          {
+            prompt: "What is a 'minimal effective dose' in this course's step vocabulary?",
+            options: [
+              "The lowest amount at which benefit is statistically detectable, about 2,600 steps against a 2,000-step reference",
+              "The dose at which the curve's gains begin flattening, around 5,000 to 7,000 steps",
+              "The dose required to meet the WHO aerobic guideline through walking alone",
+              "The dose below which a client is classified as sedentary",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Detectability, not flattening or classification. It is the number that proves there is no entry threshold a client must clear before starting to benefit.",
+            sourceLessonSlug: "step-dose-response",
+          },
+          {
+            prompt: "A sedentary client walks 2,400 steps a day and asks whether it is worth increasing. What does the evidence support?",
+            options: [
+              "The first thousand steps a sedentary client adds are the most valuable thousand anyone can buy",
+              "They should reach 7,000 before the increase becomes clinically meaningful",
+              "Benefit begins around 4,000 steps, so the first 1,600 are preparatory",
+              "Steps below 5,000 carry no detectable mortality association",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The curve is steepest at the bottom, and benefit is detectable from around 2,600 steps. A client at 2,400 is standing at the most valuable part of the whole curve.",
+            sourceLessonSlug: "step-dose-response",
+          },
+          {
+            prompt: "How does the course tell a coach to establish a client's step baseline?",
+            options: [
+              "Measure it first, since most phones already know it, then set the next-1,000 target",
+              "Ask the client to estimate their typical day, then round down for accuracy",
+              "Use the population median for their age group as a starting assumption",
+              "Set a standard 7,000-step target and adjust after two weeks of data",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Baseline first, from data the client already has. Estimation is exactly the self-report problem the sitting lesson warned about, and a standard target ignores the individual's position on the curve.",
+            sourceLessonSlug: "the-7000-step-day",
+          },
+          {
+            prompt: "Which claim about steps would the course NOT permit?",
+            options: [
+              "'Walking 10,000 steps a day will add years to your life'",
+              "'Each additional thousand steps is associated with 12 to 15 percent lower mortality risk'",
+              "'Benefit is detectable from around 2,600 steps a day against a 2,000-step reference'",
+              "'Your age group's mortality curve plateaus around 6,000 to 8,000 steps'",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It converts observational association into a personal causal promise, and it treats 10,000 as the operative number. The other three are the findings quoted at their actual precision.",
+            sourceLessonSlug: "the-7000-step-day",
+          },
+          {
+            prompt: "What does 'the 10,000-step myth' name, and what is the honest status of the number?",
+            options: [
+              "A marketing artifact treated as a health law; the evidence supports it as one reasonable target among several, not a threshold",
+              "A discredited figure with no support in any analysis",
+              "A guideline superseded by the WHO's 2020 recommendations",
+              "A target valid only for adults under 60, misapplied to older adults",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The myth is the threshold status, not the number itself. Ten thousand remains a fine target for the already active; what fails is treating it as a bar everyone must clear.",
+            sourceLessonSlug: "the-7000-step-day",
+          },
+          {
+            prompt: "What is an 'age-dependent plateau'?",
+            options: [
+              "Older adults' mortality curve flattening around 6,000 to 8,000 steps while younger adults' continues to about 8,000 to 10,000",
+              "The decline in achievable step counts with age, requiring targets to be lowered",
+              "The age at which additional steps stop producing any mortality benefit",
+              "The point where an older client's curve begins to rise again with excessive steps",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Where each age group's curve flattens, not a decline in capacity and not a reversal. No analysis finds harm at higher counts in any age group.",
+            sourceLessonSlug: "the-7000-step-day",
+          },
+          {
+            prompt: "Two step analyses report different per-1,000-step figures (12 and 15 percent). How should a coach handle that?",
+            options: [
+              "Carry both as a range, since they come from overlapping but distinct cohort sets and agree on the shape",
+              "Use the higher figure, since it came from the larger pooled analysis",
+              "Use the lower figure, since conservative estimates protect against overclaiming",
+              "Average them and quote a single 13.5 percent figure",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The course quotes '12 to 15 percent' precisely because two large analyses landed close but not identical. Averaging invents a number neither paper reports.",
+            sourceLessonSlug: "step-dose-response",
+          },
+          {
+            prompt: "A client at 9,000 daily steps asks how to get more out of walking without adding time. What does the evidence offer?",
+            options: [
+              "Brisker cadence, which carried mortality benefit independent of total steps",
+              "Nothing; they are past the plateau and further gains are unavailable",
+              "Splitting the same number of steps across a greater number of separate bouts",
+              "Walking in the morning, which the step analyses found more beneficial",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Cadence is the one step variable with an independent association in the cardiology analysis. Morning bias is a habit-formation finding, not a step-outcome one.",
+            sourceLessonSlug: "step-dose-response",
+          },
+          {
+            prompt: "The 2025 analysis priced nine outcomes. Which pairing is correct?",
+            options: [
+              "25 percent lower cardiovascular disease incidence and 14 percent lower type 2 diabetes incidence",
+              "47 percent lower cardiovascular disease incidence and 25 percent lower type 2 diabetes incidence",
+              "37 percent lower cardiovascular disease incidence and 22 percent lower type 2 diabetes incidence",
+              "14 percent lower cardiovascular disease incidence and 25 percent lower type 2 diabetes incidence",
+            ],
+            correctIndex: 0,
+            explanation:
+              "CVD incidence 25 percent, type 2 diabetes 14 percent. The 47 percent figure is all-cause mortality, 37 is cancer mortality, and 22 is depressive symptoms.",
+            sourceLessonSlug: "the-7000-step-day",
+          },
+          {
+            prompt: "Why does the course tell coaches to 'name the plateau honestly' when a client reaches it?",
+            options: [
+              "Because pretending gains continue linearly sets up a client to feel they are failing at a curve that has flattened",
+              "Because reaching the plateau marks the point at which movement coaching should conclude",
+              "Because exceeding the plateau carries a documented risk of overuse injury",
+              "Because the client's tracker will otherwise show diminishing returns and undermine trust",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The same honesty logic as telling clients the habit-formation range: an accurate expectation converts 'I am not improving' into 'I am where the curve flattens', and redirects effort to cadence, balance, and strength.",
+            sourceLessonSlug: "the-7000-step-day",
+          },
+        ],
+      },
+    },
+
     // ── Section 3 ────────────────────────────────────────────────────────────────────────────
     {
       slug: "neat-the-biggest-lever",
@@ -370,6 +1306,10 @@ Levine, J. A. (2004). Nonexercise activity thermogenesis (NEAT): Environment and
 
 **The posture experiment.** With motion-sensing underwear sampling body position every half-second for ten days, mildly obese participants sat on average two hours longer per day than lean sedentary participants. Posture allocation did not change when the obese participants lost weight or the lean ones overate, suggesting it is biologically patterned, and the paper estimated that adopting the lean group's standing and walking pattern would spend roughly 350 additional kilocalories a day (Levine et al., 2005). Note the number this program does NOT repeat: popular versions say two and a half hours; the paper says two.
 
+**The finding that complicates the arithmetic.** There is a second honest limit, and it is the one most likely to make a coach overpromise. The intuitive model says daily energy expenditure is additive: add movement, add burn, subtract fat. Pontzer and colleagues measured total energy expenditure in 332 adults across five populations and found the relationship is **not** additive at the top. Expenditure rose with physical activity in the lower range and then **plateaued**, so that the most active people spent little more than the moderately active ones. The proposed explanation is metabolic compensation: the body absorbs added activity by trimming expenditure elsewhere rather than letting the daily total climb indefinitely (Pontzer et al., 2016).
+
+Two things follow, and a coach should hold both. First, the plateau sits at the HIGH end, so it does not touch the sedentary client whose next thousand steps are the most valuable thousand anyone can buy; the steep part of the curve is exactly where the constrained model still behaves additively. Second, it does undercut calorie arithmetic as a selling tool: telling an already-active client that a daily walk simply adds 300 kilocalories to their ledger promises something the constrained model says may not arrive. Coach movement for the mortality, dementia, and falls curves from sections 2 and 3, which are outcome evidence, rather than for an energy-balance sum the physiology may quietly cancel.
+
 **Now the honest limit.** From these findings it is tempting to prescribe NEAT as an obesity treatment. The review literature itself flags the gap: there is a lack of randomized controlled trials testing whether NEAT-promotion strategies actually treat obesity (Chung et al., 2018). The observational and physiological case is strong; the intervention case is unproven.
 
 **How to coach it anyway.** NEAT-building is high-plausibility, near-zero-risk, fully in-scope behavior change: more standing, more walking errands, movement snacks between blocks of sitting. Coach it as exactly that, a well-grounded bet rather than a proven therapy, and you stay on the right side of both the evidence and the honesty standard this program runs on.
@@ -383,13 +1323,18 @@ Levine, J. A. (2004). Nonexercise activity thermogenesis (NEAT): Environment and
 - **Posture allocation**: how a day divides among sitting, standing, and moving; measured every half-second in the 2005 study and stable across weight change.
 - **NEAT activation**: the unconscious increase in everyday movement some bodies produce under caloric surplus; the difference between banking a surplus and spending it.
 - **Evidence gap**: a claim's missing piece, here the absence of randomized trials for NEAT-promotion as treatment; naming gaps is a feature of this program, not hedging.
+- **Constrained total energy expenditure**: Pontzer's model in which daily expenditure rises with activity then plateaus, because the body compensates elsewhere rather than letting the total climb without limit.
+- **Metabolic compensation**: the trimming of other expenditure that absorbs added activity; the proposed mechanism behind the plateau, and the reason calorie arithmetic overpromises in active people.
+- **Additive model**: the intuitive assumption that every added minute of movement adds proportionally to the daily energy total; accurate at the low end of the activity range, unreliable at the high end.
 
 ## Sources
 Chung, N., Park, M. Y., Kim, J., et al. (2018). Non-exercise activity thermogenesis (NEAT): A component of total daily energy expenditure. *Journal of Exercise Nutrition & Biochemistry, 22*(2), 23-30. https://pmc.ncbi.nlm.nih.gov/articles/PMC6058072/
 
 Levine, J. A., Eberhardt, N. L., & Jensen, M. D. (1999). Role of nonexercise activity thermogenesis in resistance to fat gain in humans. *Science, 283*(5399), 212-214. https://pubmed.ncbi.nlm.nih.gov/9880251/
 
-Levine, J. A., Lanningham-Foster, L. M., McCrady, S. K., et al. (2005). Interindividual variation in posture allocation: Possible role in human obesity. *Science, 307*(5709), 584-586. https://pubmed.ncbi.nlm.nih.gov/15681386/`,
+Levine, J. A., Lanningham-Foster, L. M., McCrady, S. K., et al. (2005). Interindividual variation in posture allocation: Possible role in human obesity. *Science, 307*(5709), 584-586. https://pubmed.ncbi.nlm.nih.gov/15681386/
+
+Pontzer, H., Durazo-Arvizu, R., Dugas, L. R., et al. (2016). Constrained total energy expenditure and metabolic adaptation to physical activity in adult humans. *Current Biology, 26*(3), 410-417. https://pubmed.ncbi.nlm.nih.gov/26832439/`,
       recallContent: [
         {
           prompt: "Popular articles say obese people sit 2.5 hours longer than lean people. What does the primary source say, and why does the difference matter here?",
