@@ -1573,6 +1573,1150 @@ Rubak, S., Sandbaek, A., Lauritzen, T., & Christensen, B. (2005). Motivational i
               "Selection is the instrument: gathering scattered change talk into one reflected bouquet strengthens it, while what is omitted rests. The spirit governs the selection, which is why spirit was taught first.",
             sourceLessonSlug: "change-talk-and-summaries",
           },
+          {
+            prompt: "How does the fourth edition define motivational interviewing?",
+            options: [
+              "A guiding style of conversation for strengthening a person's own motivation and commitment to change",
+              "A directive counselling method for resolving ambivalence toward a clinically indicated behavior",
+              "A client-led conversation in which the practitioner follows wherever the client's concerns lead",
+              "A structured protocol of open questions and reflections delivered in a fixed sequence",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Guiding, and aimed at the person's OWN motivation and commitment. Directive and following are the two poles MI deliberately sits between, and it is a style rather than a fixed protocol.",
+            sourceLessonSlug: "mi-spirit",
+          },
+          {
+            prompt: "Where does MI's 'guiding style' sit, and between what?",
+            options: [
+              "Between directing, where the expert supplies answers, and following, where the listener drifts with the client",
+              "Between assessment, where information is gathered, and intervention, where a plan is delivered",
+              "Between confrontation, which provokes defence, and reassurance, which prevents exploration",
+              "Between education, which supplies content, and accountability, which supplies structure",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Directing and following are the two poles. Naming both matters: MI is as distinct from passive listening as it is from expert prescription.",
+            sourceLessonSlug: "mi-spirit",
+          },
+          {
+            prompt: "Why does this program teach the fourth edition specifically?",
+            options: [
+              "The vocabulary changed in ways that matter, and the program verified against the fourth edition itself",
+              "Earlier editions have been withdrawn from publication by the authors",
+              "The fourth edition is the version the NBHWC content outline names by number",
+              "Earlier editions lack the evidence base that later trials supplied",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Vocabulary changes, verified against the source. Two renames in this section alone: righting reflex to fixing reflex, and processes to tasks.",
+            sourceLessonSlug: "mi-spirit",
+          },
+          {
+            prompt: "What does 'partnership' mean in MI's spirit?",
+            options: [
+              "Coaching happens WITH a person, not ON them; the client is the expert on their own life",
+              "The coach and client share responsibility for the outcome equally",
+              "The coach partners with the client's other providers to coordinate care",
+              "The coach and client jointly select the behavior change to pursue",
+            ],
+            correctIndex: 0,
+            explanation:
+              "With, not on, and the client as expert on their own life. Shared outcome responsibility and joint goal selection are different ideas that partnership does not assert.",
+            sourceLessonSlug: "mi-spirit",
+          },
+          {
+            prompt: "What three things does 'acceptance' comprise in MI's spirit, and how are they offered?",
+            options: [
+              "Absolute worth, accurate empathy, and support for autonomy, offered non-contingently",
+              "Unconditional regard, active listening, and non-judgment, offered where the client is engaged",
+              "Absolute worth, behavioral neutrality, and confidentiality, offered throughout the engagement",
+              "Empathy, patience, and tolerance of ambivalence, offered until the client commits",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Absolute worth, accurate empathy, autonomy support, and crucially non-contingent: not withdrawn when the client fails to progress.",
+            sourceLessonSlug: "mi-spirit",
+          },
+          {
+            prompt: "What does 'compassion' commit the coach to in MI's spirit?",
+            options: [
+              "The work serves the client's welfare, not the coach's agenda or metrics",
+              "The coach responds to the client's distress before addressing behavior",
+              "The coach withholds difficult feedback until the relationship can hold it",
+              "The coach prioritizes the client's comfort over the pace of change",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Whose interest the work serves. It is a commitment about purpose, not about tone, pace, or the timing of feedback.",
+            sourceLessonSlug: "mi-spirit",
+          },
+          {
+            prompt: "What did the fourth edition change, and what does the change add?",
+            options: [
+              "Evocation broadened to empowerment, adding that the client's CAPABILITY is present too, not only their motivation",
+              "Empowerment narrowed to evocation, focusing the coach on drawing out motivation specifically",
+              "Compassion was added as a fourth component, replacing an earlier emphasis on collaboration",
+              "Partnership replaced collaboration, emphasising the client's expertise on their own life",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Evocation said the motivation is already in there. Empowerment adds that the resourcefulness is too, and that making it visible is part of the coach's job.",
+            sourceLessonSlug: "mi-spirit",
+          },
+          {
+            prompt: "The lesson says the evocation-to-empowerment change is 'not cosmetic.' Why not?",
+            options: [
+              "It expands the coach's job from drawing out motivation to making the client's own resources visible to them",
+              "It changes the order in which the four spirit components are taught",
+              "It replaces a term that had been criticised as manipulative in the literature",
+              "It brings MI's vocabulary into alignment with self-determination theory's terminology",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The job description grows. Motivation and capability are different things to be made visible, and the second was not explicit under 'evocation'.",
+            sourceLessonSlug: "mi-spirit",
+          },
+          {
+            prompt: "What does the fourth edition say happens to MI's skills without its spirit?",
+            options: [
+              "They collapse into manipulation: clever questions steering a person where you already decided they should go",
+              "They become ineffective, producing neither change talk nor sustain talk reliably",
+              "They remain effective but require substantially more sessions to produce the same result",
+              "They function as ordinary counselling skills, useful but no longer distinctively MI",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Manipulation, specifically. The lesson's sharpest line follows from it: a coach who masters reflections while keeping a private agenda has learned to hide directing.",
+            sourceLessonSlug: "mi-spirit",
+          },
+          {
+            prompt: "How does the lesson relate MI to the NBHWC scope taught in WELL-00?",
+            options: [
+              "MI is the craft that scope was describing: client-centered, self-determined goals, coach as facilitator",
+              "MI is one of several methods the scope permits, chosen here for its evidence base",
+              "MI extends the scope by adding techniques the scope document does not address",
+              "MI operates at the edge of the scope, which is why the spirit lesson precedes the skills",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The match is treated as exact rather than permissive: the scope's abstract description of coaching and MI's concrete method describe the same thing.",
+            sourceLessonSlug: "mi-spirit",
+          },
+          {
+            prompt: "What was the fixing reflex called in earlier editions, and why does the lesson mention the old name?",
+            options: [
+              "The righting reflex; you will meet it in older literature",
+              "The correcting reflex; the term still appears in NBHWC materials",
+              "The expert reflex; the rename reflects a shift away from clinical framing",
+              "The advising reflex; earlier editions distinguished it from the fixing impulse",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Righting reflex. The old name is taught because the older literature uses it, which is the same reason 'evocation' is kept in the vocabulary list.",
+            sourceLessonSlug: "the-fixing-reflex",
+          },
+          {
+            prompt: "Why does the fourth edition consider 'fixing reflex' the clearer name?",
+            options: [
+              "It is clearer about what the urge feels like from inside",
+              "It avoids the moral connotation of 'righting' a wrong",
+              "It distinguishes the coach's urge from the client's own self-correction",
+              "It matches the terminology used across the broader counselling literature",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The rename is about phenomenology: naming the experience so a practitioner can catch it in the moment, which is the only point at which it can be resisted.",
+            sourceLessonSlug: "the-fixing-reflex",
+          },
+          {
+            prompt: "How does this lesson characterize ambivalence?",
+            options: [
+              "The normal state of a person considering change, not a defect",
+              "An early-stage phenomenon that resolves once a client reaches preparation",
+              "A form of resistance that signals the coaching relationship needs repair",
+              "A sign that the focus has been negotiated wrongly and should be renegotiated",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Normal, not defective. The lesson's closing line follows from it: a client with zero ambivalence either already changed or is not considering it.",
+            sourceLessonSlug: "the-fixing-reflex",
+          },
+          {
+            prompt: "What replaces fixing, per this lesson?",
+            options: [
+              "Guiding: helping the client voice their own reasons for change and letting those reasons do the persuading",
+              "Waiting: staying silent until the client resolves the ambivalence themselves",
+              "Educating: supplying the information the client's decision is missing",
+              "Reframing: presenting the same facts in a way that favors the change",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Guiding, with the client's own reasons doing the work. Reframing and educating are both still the coach supplying the case, which is what triggers the dynamic.",
+            sourceLessonSlug: "the-fixing-reflex",
+          },
+          {
+            prompt: "The lesson names the trainer's specific version of this trap. What is the tell that the conversation has shifted?",
+            options: [
+              "It moves from content ('what's a good protein target?') to change ('I know my target, I just don't hit it')",
+              "It moves from the client's questions to the coach's questions",
+              "It moves from measurable outcomes to feelings about the outcomes",
+              "It moves from the current session's plan to the client's history",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Content questions versus change statements. Expertise answers the first well and quietly worsens the second, which is why noticing the shift is the whole discipline.",
+            sourceLessonSlug: "the-fixing-reflex",
+          },
+          {
+            prompt: "How does the lesson suggest reframing ambivalence for a client?",
+            options: [
+              "'Part of you wants this and part of you doesn't' is the entry ticket to real work, not a diagnosis of weakness",
+              "'You're not ready yet' is honest, and readiness will come with time",
+              "'Ambivalence means the goal isn't yours' invites renegotiating the focus",
+              "'Everyone feels this way' normalises it without dwelling on the specifics",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Entry ticket, not weakness. The alternatives either stall the work, discard the goal, or normalise so generically that the client's actual two sides never get explored.",
+            sourceLessonSlug: "the-fixing-reflex",
+          },
+          {
+            prompt: "What is conspicuously absent from OARS, and what does the lesson say about the absence?",
+            options: [
+              "Advice, and the absence is the method",
+              "Assessment, and the absence reflects MI's non-clinical origins",
+              "Goal-setting, and the absence is filled by the planning task",
+              "Confrontation, and the absence distinguishes MI from earlier addiction models",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Advice. Open questions, affirming, reflecting, and summarizing are all ways of not advising, which is why the omission is described as the method rather than an oversight.",
+            sourceLessonSlug: "oars-questions-affirmations",
+          },
+          {
+            prompt: "What distinguishes an open question from a closed one, in the lesson's example?",
+            options: [
+              "'What's made you think about sleep now?' invites elaboration; 'Do you want to sleep better?' invites a yes or no",
+              "'What's made you think about sleep now?' is neutral; 'Do you want to sleep better?' implies judgment",
+              "Open questions are longer, giving the client time to consider before answering",
+              "Open questions concern the future while closed questions concern the past",
+            ],
+            correctIndex: 0,
+            explanation:
+              "What the question invites: elaboration versus a yes, a no, or a number. Length, tense, and tone are not the discriminator.",
+            sourceLessonSlug: "oars-questions-affirmations",
+          },
+          {
+            prompt: "What two craft points does the fourth edition emphasize about open questions?",
+            options: [
+              "Ask one at a time, and resist the interrogation rhythm, since in MI questions set up reflections",
+              "Ask several in sequence to map the territory, then reflect the pattern across them",
+              "Ask only questions the client can answer immediately, to build momentum",
+              "Ask questions the coach does not know the answer to, to preserve genuine curiosity",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One at a time, and questions as setup for reflections rather than substitutes for them. The interrogation rhythm is exactly what a question-heavy transcript reveals.",
+            sourceLessonSlug: "oars-questions-affirmations",
+          },
+          {
+            prompt: "What working ratio does the lesson say almost every new practitioner has backwards?",
+            options: [
+              "More reflections than questions",
+              "More open questions than closed ones",
+              "More affirmations than reflections",
+              "More summaries than affirmations",
+            ],
+            correctIndex: 0,
+            explanation:
+              "New practitioners ask more than they reflect. The reflections lesson sets the training benchmark higher still: at least two reflections per question.",
+            sourceLessonSlug: "oars-questions-affirmations",
+          },
+          {
+            prompt: "What does an affirmation do?",
+            options: [
+              "Names a strength or genuine effort the coach observed",
+              "Expresses the coach's confidence that the client will succeed",
+              "Acknowledges the difficulty of what the client is attempting",
+              "Confirms that the client's chosen goal is a worthwhile one",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It names something observed: an effort, an action, or the strength behind it. Confidence, sympathy, and endorsement of the goal are all different moves.",
+            sourceLessonSlug: "oars-questions-affirmations",
+          },
+          {
+            prompt: "Which is a COMPLEX affirmation?",
+            options: [
+              "'You're someone who keeps promises to yourself once they're written down'",
+              "'You tracked every day this week, which is more than most people manage'",
+              "'That's a really impressive amount of effort you've put in'",
+              "'You should be proud of what you accomplished this month'",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It names an enduring strength of the person that the action reveals. Noticing the specific action is a SIMPLE affirmation, and the last two are praise.",
+            sourceLessonSlug: "oars-questions-affirmations",
+          },
+          {
+            prompt: "Why does MI prefer affirmation to praise, mechanically?",
+            options: [
+              "Praise positions the coach as judge and pays in approval; affirmation positions the client as capable and pays in evidence",
+              "Praise is often insincere, while affirmation is always grounded in observation",
+              "Praise creates dependency on sessions, while affirmation can be self-administered",
+              "Praise focuses on outcomes, while affirmation focuses on the process that produced them",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Judge versus capable, approval versus evidence. The consequence the lesson draws: approval-seeking is fragile motivation, self-perceived capability is durable.",
+            sourceLessonSlug: "oars-questions-affirmations",
+          },
+          {
+            prompt: "Which spirit component does affirmation feed?",
+            options: [
+              "Empowerment",
+              "Partnership",
+              "Compassion",
+              "Acceptance",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Empowerment, the fourth edition's broadening of evocation: making the client's own strengths and resourcefulness visible to them is exactly what an affirmation does.",
+            sourceLessonSlug: "oars-questions-affirmations",
+          },
+          {
+            prompt: "What does the lesson say an unverifiable affirmation costs you?",
+            options: [
+              "The credibility every later reflection depends on",
+              "The client's willingness to accept future affirmations",
+              "The engagement built during the first part of the session",
+              "The autonomy support the affirmation was intended to provide",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Credibility, and specifically the credibility that reflections run on. An affirmation the client cannot check against their own experience is flattery, and it is priced accordingly.",
+            sourceLessonSlug: "oars-questions-affirmations",
+          },
+          {
+            prompt: "What is a reflection, structurally?",
+            options: [
+              "A statement, not a question, offering back your understanding of what the client means",
+              "A question that checks whether the coach has understood the client correctly",
+              "A restatement of the client's words, kept as close to the original as possible",
+              "A summary of the main themes the client has raised across a session",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A statement offering understanding for confirmation or repair. Close restatement is only the SIMPLE form, and session-scale summarizing is the S of OARS.",
+            sourceLessonSlug: "reflections",
+          },
+          {
+            prompt: "The fourth edition's communication model explains why reflection matters. How many places can meaning fall apart, and between what?",
+            options: [
+              "Three: between what a speaker means, what they say, what the listener hears, and what the listener interprets",
+              "Two: between what a speaker says and what a listener hears, and between hearing and interpretation",
+              "Four: adding the listener's response and the speaker's re-interpretation of it",
+              "Three: between intention, expression, and reception, each mediated by the relationship",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Four points, three gaps: mean, say, hear, interpret. A reflection tests the last link out loud so the client can confirm or repair it.",
+            sourceLessonSlug: "reflections",
+          },
+          {
+            prompt: "What do simple reflections buy, and at what cost?",
+            options: [
+              "They signal listening and keep the client talking, at the cost of adding nothing",
+              "They confirm accuracy precisely, at the cost of slowing the conversation",
+              "They avoid the risk of a wrong guess, at the cost of seeming mechanical",
+              "They build engagement early, at the cost of delaying the focusing task",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Listening signalled, conversation sustained, nothing added. That last part is why the lesson calls complex reflections the engine and simple ones the idle.",
+            sourceLessonSlug: "reflections",
+          },
+          {
+            prompt: "In the lesson's example, a client says 'I can't keep doing this diet.' Which is the COMPLEX reflection?",
+            options: [
+              "'You're wondering whether the way you've defined this is the actual problem'",
+              "'The diet's not working for you'",
+              "'What is it about the diet that isn't working?'",
+              "'It sounds like you've had enough of this diet'",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It guesses at the unsaid next sentence: that the framing itself may be the problem. 'The diet's not working for you' is the simple version, and a question is not a reflection at all.",
+            sourceLessonSlug: "reflections",
+          },
+          {
+            prompt: "What three things might a complex reflection guess at?",
+            options: [
+              "The feeling under the words, the value at stake, or the next sentence the client did not say",
+              "The client's stage of change, their readiness level, and their confidence",
+              "The client's history, their environment, and their support network",
+              "What the client wants, what they fear, and what they have already tried",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Feeling, value, and the unsaid next sentence. Each goes past the words to what was MEANT, which is what makes it complex rather than simple.",
+            sourceLessonSlug: "reflections",
+          },
+          {
+            prompt: "Why is the risk in a complex reflection described as its value?",
+            options: [
+              "A wrong guess, offered as a statement the client can correct, still deepens the conversation",
+              "A wrong guess demonstrates the coach is not judging, which builds acceptance",
+              "A wrong guess prompts the client to explain, which produces more change talk",
+              "A wrong guess is rare enough that the expected value remains positive",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Correction is productive. Because the reflection is a statement rather than a question, the client repairing it moves the conversation past the surface either way.",
+            sourceLessonSlug: "reflections",
+          },
+          {
+            prompt: "Which way should a reflection's voice turn, and what happens otherwise?",
+            options: [
+              "Down; turned up it becomes a question and asks the client to defend rather than explore",
+              "Up; the rising intonation invites the client to confirm or correct the guess",
+              "Neither; a flat delivery keeps the coach's interpretation out of the exchange",
+              "Down for simple reflections and up for complex ones, which are offered tentatively",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Down. Rising intonation converts a statement into a question, and the posture shifts from listening to interrogating, which is precisely what the skill exists to avoid.",
+            sourceLessonSlug: "reflections",
+          },
+          {
+            prompt: "Should a reflection understate or overstate a feeling, and why?",
+            options: [
+              "Understate: overstatement gets denial, understatement gets elaboration",
+              "Overstate: overstatement gives the client room to calibrate downward accurately",
+              "Match precisely: any mismatch signals the coach was not listening carefully",
+              "Understate for negative feelings and overstate for positive ones",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Understate. The lesson gives the mechanism in dialogue: 'furious? I'm just annoyed' shuts a line down, while an understated reflection invites the client to add to it.",
+            sourceLessonSlug: "reflections",
+          },
+          {
+            prompt: "What training benchmark does the lesson give for the reflection-to-question ratio?",
+            options: [
+              "At least two reflections per question",
+              "At least one reflection per question",
+              "At least three reflections per question",
+              "At least half of all coach utterances as reflections",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two to one is the common training benchmark. The lesson's test is blunter: if your transcript reads as an interview, you are interviewing, not coaching.",
+            sourceLessonSlug: "reflections",
+          },
+          {
+            prompt: "What does the lesson call MI's central discovery?",
+            options: [
+              "The client's own speech predicts their behavior",
+              "Ambivalence resolves when both sides are voiced by the client",
+              "Empathy is the strongest single predictor of counselling outcome",
+              "Brief interventions can match extended ones in effect size",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Client speech predicting behavior is what makes change talk a target rather than a byproduct, and it is the claim the technical-hypothesis meta-analysis then tests.",
+            sourceLessonSlug: "change-talk-and-summaries",
+          },
+          {
+            prompt: "Name the five categories of change talk, with the strongest identified.",
+            options: [
+              "Desire, ability, reasons, need, and, strongest, commitment and taking-steps language",
+              "Desire, ability, reasons, need, and, strongest, expressed confidence",
+              "Wanting, planning, trying, committing, and, strongest, sustained action",
+              "Desire, readiness, ability, importance, and, strongest, stated intention",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Desire, ability, reasons, need, then commitment and taking-steps as the strongest. 'I've started' outranks 'I want to' precisely because it reports action rather than appetite.",
+            sourceLessonSlug: "change-talk-and-summaries",
+          },
+          {
+            prompt: "How does this course characterize sustain talk?",
+            options: [
+              "A normal expression of ambivalence, rather than resistance to be crushed",
+              "A signal that the coaching relationship has not been adequately engaged",
+              "Evidence that the client has been focused on the wrong behavior",
+              "The client's attempt to test whether the coach will judge them",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Normal ambivalence. Treating it as resistance is what invites arguing, which recruits the fixing-reflex dynamic and, per the evidence lesson, predicts worse outcomes.",
+            sourceLessonSlug: "change-talk-and-summaries",
+          },
+          {
+            prompt: "What is 'differential attention'?",
+            options: [
+              "Noticing, elaborating, and reflecting change talk while letting sustain talk rest",
+              "Attending to the client's strongest concern first and returning to others later",
+              "Splitting attention between the client's words and their non-verbal signals",
+              "Directing the client's attention toward the discrepancy between values and behavior",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the strategic skill of the lesson: you cannot make change talk appear on command, but you can choose what you amplify once it does.",
+            sourceLessonSlug: "change-talk-and-summaries",
+          },
+          {
+            prompt: "What does the fourth edition call the questions and reflections chosen to invite change talk, and what does the lesson say they are?",
+            options: [
+              "Directional questions and reflections; they are the guiding in 'guiding style'",
+              "Evocative prompts; they are the technical core of the evoking task",
+              "Strategic openers; they belong to the focusing task rather than evoking",
+              "Change-oriented probes; they replace reflection during the planning task",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Directional. The lesson uses them to cash out what 'guiding' means concretely: intentional direction inside a client-led conversation.",
+            sourceLessonSlug: "change-talk-and-summaries",
+          },
+          {
+            prompt: "How should sustain talk be handled?",
+            options: [
+              "Heard and reflected without amplification: acknowledged, never argued with",
+              "Reflected back with added emphasis, so the client hears their own resistance",
+              "Redirected immediately toward the nearest available change talk",
+              "Noted silently and returned to once the client's commitment has strengthened",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Acknowledge without amplifying. Arguing recruits the fixing-reflex dynamic; ignoring or redirecting it fails to let the client feel heard on the side they actually hold.",
+            sourceLessonSlug: "change-talk-and-summaries",
+          },
+          {
+            prompt: "What is a collecting summary?",
+            options: [
+              "A reflection at scale that gathers the conversation's scattered change talk into one bouquet and hands it back",
+              "A recap of the session's decisions, confirmed with the client before closing",
+              "A written record of the client's stated goals, shared after each session",
+              "A summary of both sides of the ambivalence, presented in balance",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Reflection at scale, selective by design. A balanced summary of both sides is a different instrument, and a decisions recap is administration rather than MI.",
+            sourceLessonSlug: "change-talk-and-summaries",
+          },
+          {
+            prompt: "The lesson says of summaries: 'What you include, you strengthen; what you leave out, you...' what?",
+            options: [
+              "Quietly let rest",
+              "Return to in a later session",
+              "Signal as unimportant to the client",
+              "Reserve for the coach's own notes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Quietly let rest. The phrasing matters because it names the editorial power of a summary, which is why the lesson immediately points back at the spirit.",
+            sourceLessonSlug: "change-talk-and-summaries",
+          },
+          {
+            prompt: "Why does the lesson say the summary's 'editorial power' is exactly why the spirit lesson came first?",
+            options: [
+              "Selecting what to strengthen serves the client only when the spirit, not a private agenda, chooses the contents",
+              "Summaries require the engagement built by the spirit before a client will accept them",
+              "The spirit determines how much of a session a summary should cover",
+              "Without the spirit, a summary becomes a recap rather than a strategic instrument",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Because selection is power, and power exercised on a private agenda is the manipulation the spirit lesson warned about. Same technique, different master.",
+            sourceLessonSlug: "change-talk-and-summaries",
+          },
+          {
+            prompt: "What signals the conversation is ready to move from why to how?",
+            options: [
+              "Change talk shifting toward commitment language",
+              "The client asking directly for a plan",
+              "Sustain talk decreasing across the session",
+              "The client's stated confidence rising above their stated importance",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Commitment language. The client asking for a plan is not the same thing, and it is a common trap: an ambivalent client can request a plan to end an uncomfortable conversation.",
+            sourceLessonSlug: "change-talk-and-summaries",
+          },
+          {
+            prompt: "What did the fourth edition rename the four processes, and why does the lesson say the name matters?",
+            options: [
+              "Tasks; conversations loop, so the order describes dependency rather than schedule",
+              "Stages; the sequence must be completed in order for MI to be delivered with fidelity",
+              "Phases; each occupies a distinct portion of a session's time",
+              "Components; they operate simultaneously rather than sequentially throughout",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Tasks. The lesson is explicit that a plan wobbling sends you back to evoking and frayed trust sends you back to engaging, which a pipeline metaphor would forbid.",
+            sourceLessonSlug: "the-four-tasks",
+          },
+          {
+            prompt: "What does 'engaging' establish, and what happens without it?",
+            options: [
+              "The working relationship; without it, everything downstream is technique performed at a stranger",
+              "The client's readiness to change; without it, evoking produces only sustain talk",
+              "The session's agenda; without it, the conversation sprawls across pillars",
+              "The client's trust in the coach's expertise; without it, plans are not followed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The working relationship, and the OARS skills live here first. The phrase 'technique performed at a stranger' is the lesson's own diagnosis of skipping it.",
+            sourceLessonSlug: "the-four-tasks",
+          },
+          {
+            prompt: "What question does the focusing task answer, and who holds the pen?",
+            options: [
+              "'Change what, exactly?' and the client holds the pen; agenda-setting is a menu, not a syllabus",
+              "'Change what, exactly?' and the coach holds the pen, having assessed the priorities",
+              "'How ready are you?' and the client holds the pen, self-reporting their stage",
+              "'What has worked before?' and both hold the pen, reviewing history jointly",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Change what, exactly, with the client choosing from a menu. The menu-not-syllabus phrasing is the practical form of the partnership component.",
+            sourceLessonSlug: "the-four-tasks",
+          },
+          {
+            prompt: "Why does focusing matter especially in wellness conversations?",
+            options: [
+              "They sprawl: sleep, food, movement, and stress arrive tangled together",
+              "Clients arrive with goals set by clinicians rather than themselves",
+              "The five pillars each require a separate coaching approach",
+              "Wellness goals are harder to make specific than clinical ones",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Tangling. A wellness client rarely presents one clean behavior, so negotiating a shared direction is a real task rather than an administrative step.",
+            sourceLessonSlug: "the-four-tasks",
+          },
+          {
+            prompt: "What is 'evoking,' and what does the lesson say it differs most sharply from?",
+            options: [
+              "Drawing out the client's own motivations for the focused change; it differs most from assessment-then-advice models",
+              "Eliciting the client's history with the behavior; it differs most from goal-setting frameworks",
+              "Surfacing the client's emotional response to change; it differs most from cognitive approaches",
+              "Prompting the client to commit verbally; it differs most from written contracting",
+            ],
+            correctIndex: 0,
+            explanation:
+              "MI's heart, and the lesson names the contrast honestly: assessment-then-advice, and most certification-taught consultation scripts.",
+            sourceLessonSlug: "the-four-tasks",
+          },
+          {
+            prompt: "How does MI's planning task test readiness?",
+            options: [
+              "With questions like 'what might you do?' rather than prescriptions",
+              "With a confidence-and-importance ruler scored from one to ten",
+              "By asking the client to commit to a start date before the session ends",
+              "By reviewing whether the client's stated obstacles have been resolved",
+            ],
+            correctIndex: 0,
+            explanation:
+              "'What might you do?' keeps the plan client-authored. The alternatives all shift authorship toward the coach or toward an instrument.",
+            sourceLessonSlug: "the-four-tasks",
+          },
+          {
+            prompt: "Which Section 3 tools does the lesson say MI planning hands off to?",
+            options: [
+              "Goal specificity, if-then plans, WOOP, and habit anchoring",
+              "Goal specificity, decisional balance, stage-matching, and self-monitoring",
+              "If-then plans, motivational rulers, habit stacking, and accountability check-ins",
+              "WOOP, cognitive restructuring, environment design, and relapse contracts",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Those four are Section 3's subjects. Decisional balance and stage-matching belong to TTM in Section 1, and cognitive restructuring is outside coaching scope entirely.",
+            sourceLessonSlug: "the-four-tasks",
+          },
+          {
+            prompt: "What self-check does the lesson offer at any point in a session?",
+            options: [
+              "Which task am I in, and did the client come with me?",
+              "Which OARS skill have I used least in the last ten minutes?",
+              "Is the client producing more change talk than sustain talk?",
+              "Have I stayed within the focus we negotiated at the start?",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two halves, and the second is the one that catches the failure mode: a coach can be correctly in the planning task while the client is still in evoking.",
+            sourceLessonSlug: "the-four-tasks",
+          },
+          {
+            prompt: "How many randomized trials did Rubak et al. review, and what was MI compared against?",
+            options: [
+              "72 trials, against traditional advice",
+              "48 trials, against usual medical care",
+              "12 trials, against structured education programs",
+              "72 trials, against both advice and active comparators",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Seventy-two trials against traditional advice-giving. The 48-trial figure belongs to Lundahl's medical-care meta-analysis, and 12 to Magill's process studies.",
+            sourceLessonSlug: "mi-evidence",
+          },
+          {
+            prompt: "On which outcomes did Rubak et al. find significant combined effects?",
+            options: [
+              "Body mass index, total cholesterol, systolic blood pressure, blood alcohol concentration, and standard ethanol content",
+              "Body mass index, HbA1c, cigarettes per day, and systolic blood pressure",
+              "Total cholesterol, HbA1c, physical activity minutes, and self-reported diet quality",
+              "Blood alcohol concentration, cigarettes per day, body mass index, and depression scores",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Those five. Cigarettes per day and HbA1c are the two the review found NOT significant, which is the lesson's evidence that MI is not uniform across behaviors.",
+            sourceLessonSlug: "mi-evidence",
+          },
+          {
+            prompt: "What did Rubak et al. find about brief encounters?",
+            options: [
+              "Even 15-minute encounters showed an effect in 64 percent of studies",
+              "Encounters under 30 minutes showed no reliable effect in any behavior domain",
+              "Brief encounters matched extended ones on every measured outcome",
+              "Effects appeared only where total contact time exceeded two hours",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Sixty-four percent of studies at 15 minutes. That finding is why the lesson calls MI 'brief-compatible', which matters for coaching formats built around short sessions.",
+            sourceLessonSlug: "mi-evidence",
+          },
+          {
+            prompt: "What is the practical meaning of Lundahl's odds ratio of 1.55?",
+            options: [
+              "Roughly a 10 to 15 percent improvement over comparison conditions",
+              "Roughly a 55 percent improvement over comparison conditions",
+              "Roughly a one-and-a-half-fold increase in the size of the behavior change",
+              "Roughly a 55 percent chance that any given client will improve",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Ten to fifteen percent. Reading an odds ratio of 1.55 as a 55 percent improvement is the commonest misreading of the statistic and inflates the claim substantially.",
+            sourceLessonSlug: "mi-evidence",
+          },
+          {
+            prompt: "What is MI's average effect across the broader literature, against weak comparators?",
+            options: [
+              "Small, around g of 0.2",
+              "Moderate, around g of 0.5",
+              "Large, around g of 0.8",
+              "Variable, with no stable pooled estimate available",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Around 0.2, which is small on this course's scale, and against WEAK comparators at that. It sits at the bottom of coaching's honest 0.2-to-0.6 range.",
+            sourceLessonSlug: "mi-evidence",
+          },
+          {
+            prompt: "How does the lesson state MI's honest synthesis?",
+            options: [
+              "It reliably beats what most practitioners do by default, and is not magic relative to other disciplined approaches",
+              "It reliably beats every alternative tested, with effects that grow over longer follow-up",
+              "It performs comparably to advice-giving but is preferred for its client-centered posture",
+              "It outperforms structured programs in behavioral outcomes but not psychological ones",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both halves. Dropping the first half undersells it; dropping the second is the overclaim the lesson exists to prevent.",
+            sourceLessonSlug: "mi-evidence",
+          },
+          {
+            prompt: "What is the 'technical hypothesis'?",
+            options: [
+              "MI's proposed causal chain from coach skills through client language to outcomes",
+              "The claim that MI's effects depend on practitioner training and fidelity coding",
+              "The proposal that brief MI encounters produce the same effect as extended ones",
+              "The theory that MI works by resolving ambivalence rather than by supplying information",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Skills shape language, language shapes outcomes. It is MI's own account of WHY it works, which is why testing it directly matters more than another outcome trial.",
+            sourceLessonSlug: "mi-evidence",
+          },
+          {
+            prompt: "In Magill et al.'s 2014 meta-analysis, what did MI-consistent coach skills predict?",
+            options: [
+              "More client change talk, at r = .26",
+              "Better follow-up outcomes, at r = .26",
+              "Less client sustain talk, at r = -.24",
+              "Both more change talk and better outcomes, at similar magnitudes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The first link of the chain held: skills predicted change talk at r = .26. The second link is where it broke.",
+            sourceLessonSlug: "mi-evidence",
+          },
+          {
+            prompt: "What did Magill et al. find about change talk and follow-up outcomes?",
+            options: [
+              "Change talk by itself did NOT predict outcomes (r = .06, nonsignificant)",
+              "Change talk strongly predicted outcomes (r = .34), confirming the causal chain",
+              "Change talk predicted outcomes only in substance-use trials, not health-behavior ones",
+              "Change talk predicted outcomes at three months but not at twelve",
+            ],
+            correctIndex: 0,
+            explanation:
+              "r = .06, nonsignificant. That is the finding that breaks the folklore version of MI, in which harvesting change talk is the whole game.",
+            sourceLessonSlug: "mi-evidence",
+          },
+          {
+            prompt: "What did sustain talk predict in the same meta-analysis?",
+            options: [
+              "Worse outcomes, at r = -.24",
+              "Better outcomes, at r = .24, suggesting honest ambivalence aids change",
+              "No relationship with outcomes, at r = -.04",
+              "Worse outcomes, but only where the coach argued against it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Worse outcomes at r = -.24, a substantially stronger relationship than change talk's .06. The asymmetry is the practical finding.",
+            sourceLessonSlug: "mi-evidence",
+          },
+          {
+            prompt: "What coaching translation does the lesson draw from the technical-hypothesis findings?",
+            options: [
+              "The best-evidenced language lever is NOT feeding sustain talk, rather than harvesting change talk",
+              "The best-evidenced language lever is asking directly for commitment language early",
+              "Client language should be disregarded, since it does not predict outcomes reliably",
+              "Coaches should measure their change-talk-to-sustain-talk ratio in every session",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It cuts against the folklore version. It is also why lesson 11 taught acknowledge-without-amplification, and why the fixing reflex, which provokes sustain talk, costs more than it looks.",
+            sourceLessonSlug: "mi-evidence",
+          },
+          {
+            prompt: "What did the composite language measures show in Magill's analysis?",
+            options: [
+              "A small positive relationship with outcomes",
+              "A large positive relationship, stronger than either component alone",
+              "No relationship, consistent with change talk's null result",
+              "A negative relationship, driven entirely by the sustain-talk component",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Small and positive. The composite is the one language measure that behaved as MI's model predicts, which is why the lesson calls the support partial rather than absent.",
+            sourceLessonSlug: "mi-evidence",
+          },
+          {
+            prompt: "What did Magill and colleagues' later 2019 subtype work add?",
+            options: [
+              "The change-talk and sustain-talk categories are not equally meaningful",
+              "The 2014 findings failed to replicate in a larger sample of process studies",
+              "Change talk predicts outcomes once commitment subtypes are isolated",
+              "Sustain talk's negative relationship weakens when coach fidelity is controlled",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That the subtypes differ in meaningfulness, which complicates the picture further rather than rescuing the simple version of the model.",
+            sourceLessonSlug: "mi-evidence",
+          },
+          {
+            prompt: "What is an 'active comparator,' and why does the term matter for reading MI's evidence?",
+            options: [
+              "Another structured, disciplined treatment in the control arm; against these MI's advantage mostly disappears",
+              "A control arm receiving no intervention, against which any effect appears larger",
+              "A comparison group receiving the same intervention at a lower dose",
+              "A control condition matched on contact time but not on content",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The comparator determines the size of the claim. MI against usual care and MI against a well-built CBT program are two different questions with two different answers.",
+            sourceLessonSlug: "mi-evidence",
+          },
+          {
+            prompt: "What four things does the lesson give as MI's actual value proposition for a coach?",
+            options: [
+              "Learnable, brief-compatible, spirit-aligned with coaching scope, and reliably better than the fixing reflex it replaces",
+              "Evidence-backed, board-examined, widely recognized, and applicable across every wellness pillar",
+              "Efficient, measurable, teachable to clients, and compatible with any theoretical orientation",
+              "Low-risk, low-cost, quick to certify in, and effective across all behavior domains",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Note what the list does NOT claim: that MI is the strongest tool ever tested. The lesson's closing instruction is to master it without overclaiming.",
+            sourceLessonSlug: "mi-evidence",
+          },
+          {
+            prompt: "What is 'treatment integrity,' and what does it delimit?",
+            options: [
+              "Trained practitioners plus fidelity coding: the delivery conditions MI's evidence base actually covers",
+              "The proportion of the intervention a client completes as designed",
+              "The consistency of MI delivery across different practitioners in a trial",
+              "The degree to which a trial's control arm avoided contamination by MI techniques",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It delimits what the evidence covers. A program borrowing MI's vocabulary without training and coding is outside the conditions the meta-analyses tested, which is the lore lesson's third entry.",
+            sourceLessonSlug: "mi-evidence",
+          },
+          {
+            prompt: "A coach reads that MI 'works' and adopts open questions and reflections without training or fidelity checks. Which two lessons in this course tell them what is wrong?",
+            options: [
+              "The evidence lesson's treatment-integrity point and the lore lesson's brand-name-MI entry",
+              "The spirit lesson's manipulation warning and the reflections lesson's ratio benchmark",
+              "The four-tasks lesson's failure mode and the change-talk lesson's differential attention",
+              "The fixing-reflex lesson's content-versus-change tell and the evidence lesson's comparator point",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both make the same point from different directions: MI's meta-analytic support belongs to high-fidelity delivery, so borrowing the vocabulary does not borrow the evidence.",
+            sourceLessonSlug: "mi-evidence",
+          },
+          {
+            prompt: "A client says: 'I know I should walk more, but honestly after work I'm done.' Which response is MI-consistent?",
+            options: [
+              "'By the end of the day there's nothing left, and you'd still like movement to fit somewhere.'",
+              "'What if you walked at lunch instead? A lot of people find that easier.'",
+              "'Even ten minutes would help, and you'd probably feel more energetic afterward.'",
+              "'What's stopping you from making it a priority in the evening?'",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A complex reflection holding both sides of the ambivalence. The second and third are the fixing reflex supplying solutions, and the fourth is a question that asks the client to defend themselves.",
+            sourceLessonSlug: "reflections",
+          },
+          {
+            prompt: "Which coach utterance is a SIMPLE affirmation?",
+            options: [
+              "'You logged your sleep every night for three weeks.'",
+              "'You're the kind of person who finishes what they start.'",
+              "'Three weeks of logging is fantastic work, well done.'",
+              "'Most clients don't manage three weeks, so you should feel good.'",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It names the specific action observed. Naming the enduring strength behind it would be complex, and the last two are praise, positioning the coach as judge.",
+            sourceLessonSlug: "oars-questions-affirmations",
+          },
+          {
+            prompt: "A coach's transcript shows nine questions and two reflections in ten minutes. What does the course say?",
+            options: [
+              "It reads as an interview, which means interviewing rather than coaching",
+              "It is acceptable during the engaging task, where information gathering dominates",
+              "It is acceptable if the questions were all open rather than closed",
+              "It indicates strong curiosity, which is the foundation of MI's spirit",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The benchmark runs the other way: at least two reflections per question. Openness of the questions does not fix the rhythm, and the interrogation pattern is what the ratio exists to detect.",
+            sourceLessonSlug: "reflections",
+          },
+          {
+            prompt: "Sort this client line: 'I've told my sister I'm starting Monday.'",
+            options: [
+              "Commitment and taking-steps change talk, the strongest category",
+              "Desire change talk, since it expresses what the client wants",
+              "Ability change talk, since it asserts the client can begin",
+              "Sustain talk, since a future date defers the behavior",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Announcing to another person is commitment language, and it also reports a step already taken. Desire is 'I want to' and ability is 'I could'.",
+            sourceLessonSlug: "change-talk-and-summaries",
+          },
+          {
+            prompt: "Sort this client line: 'Cooking at home would probably save money too.'",
+            options: [
+              "Reasons change talk",
+              "Need change talk",
+              "Commitment change talk",
+              "Sustain talk, because it changes the subject to finances",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A reason favoring the change. Need language sounds like 'something has to give'; commitment sounds like 'I will'.",
+            sourceLessonSlug: "change-talk-and-summaries",
+          },
+          {
+            prompt: "A client produces a long stretch of sustain talk about why mornings will never work. What does the evidence lesson add to the craft lesson's instruction?",
+            options: [
+              "Sustain talk predicted worse outcomes at r = -.24, so not feeding it is the best-evidenced lever available",
+              "Sustain talk is unrelated to outcomes, so it can safely be ignored and redirected",
+              "Sustain talk should be countered with the client's own earlier change talk",
+              "Sustain talk indicates the focus was wrong, so the agenda should be renegotiated",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The craft lesson said acknowledge without amplification; the evidence lesson supplies the reason it is the highest-value move rather than merely a polite one.",
+            sourceLessonSlug: "mi-evidence",
+          },
+          {
+            prompt: "A coach in session three has a clear plan the client has not asked for and keeps steering toward it with well-formed questions. What has gone wrong?",
+            options: [
+              "The skills are being used without the spirit, which the fourth edition calls manipulation",
+              "The coach has moved to planning before focusing was complete",
+              "The coach is using closed questions where open ones were needed",
+              "The coach has failed to affirm the client's efforts to date",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A private agenda steered by clever questions is exactly the collapse the spirit lesson describes: technique intact, posture absent, directing hidden inside listening.",
+            sourceLessonSlug: "mi-spirit",
+          },
+          {
+            prompt: "A client is still voicing both sides of the argument, and the coach opens a planning conversation. What is this called in the course?",
+            options: [
+              "The commonest MI failure mode: the fixing reflex wearing an MI badge",
+              "Premature focusing, which the four-tasks lesson treats as a sequencing error",
+              "A directional reflection applied too early in the evoking task",
+              "Differential attention misapplied to sustain talk rather than change talk",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Planning while the client is still ambivalent. It is named as the commonest failure and identified with the fixing reflex, because it leaps to how before the client's own why is evoked.",
+            sourceLessonSlug: "the-four-tasks",
+          },
+          {
+            prompt: "Which spirit component is most directly violated when a coach withdraws warmth after a client misses two weeks?",
+            options: [
+              "Acceptance, which is offered non-contingently",
+              "Partnership, which makes the client the expert on their own life",
+              "Compassion, which serves the client's welfare over the coach's metrics",
+              "Empowerment, which affirms the client's own resourcefulness",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Non-contingency is written into acceptance specifically. Warmth conditional on progress is approval, which the affirmation lesson identified as fragile motivation.",
+            sourceLessonSlug: "mi-spirit",
+          },
+          {
+            prompt: "A client asks 'so what should I do?' early in a first session. What does the four-tasks logic suggest?",
+            options: [
+              "Check whether engaging and evoking have happened, since a request for a plan is not the same as commitment language",
+              "Answer directly, since the client has explicitly invited advice and autonomy is preserved",
+              "Decline to answer, since supplying a plan is outside the coach's role entirely",
+              "Move to planning, since the client's question signals readiness for the how",
+            ],
+            correctIndex: 0,
+            explanation:
+              "An ambivalent client can request a plan to end an uncomfortable conversation. The signal for planning is commitment language emerging from evoking, not a direct request early on.",
+            sourceLessonSlug: "the-four-tasks",
+          },
+          {
+            prompt: "Which of these is a directional reflection rather than a neutral one?",
+            options: [
+              "'Part of what's pulling at you is the version of yourself you want your kids to see.'",
+              "'So evenings are hard and mornings are worse.'",
+              "'You've tried this several times before.'",
+              "'It sounds like the whole thing feels like a lot right now.'",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It selects and reflects the change side, which is what makes it directional. The others reflect neutrally or reflect the difficulty, which amplifies sustain talk.",
+            sourceLessonSlug: "change-talk-and-summaries",
+          },
+          {
+            prompt: "Why does the course say MI is 'spirit-aligned with coaching scope'?",
+            options: [
+              "Its partnership, acceptance, and client-authored goals match what the NBHWC scope describes",
+              "Its evidence base was developed in health-coaching rather than clinical populations",
+              "It avoids the psychological therapeutic interventions the scope excludes by name",
+              "It is the only method the NBHWC content outline names as within scope",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The alignment is structural: MI's posture IS the scope's description of coaching. Note MI's evidence base is largely clinical, and the scope names no method as required.",
+            sourceLessonSlug: "mi-evidence",
+          },
+          {
+            prompt: "A client says 'I'm furious with myself.' Which reflection follows the lesson's delivery guidance?",
+            options: [
+              "'You're frustrated about how this has gone.'",
+              "'You're absolutely enraged at yourself for letting it slip.'",
+              "'Why are you so angry with yourself?'",
+              "'You shouldn't be so hard on yourself about it.'",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Understate rather than overstate, and keep it a statement. Overstatement invites denial, a question asks for justification, and reassurance dismisses what was said.",
+            sourceLessonSlug: "reflections",
+          },
+          {
+            prompt: "What does the empowerment component add to a coach's response when a client succeeds unexpectedly?",
+            options: [
+              "Making the client's own resourcefulness visible to them, not just noting the result",
+              "Confirming that the coach's plan was well matched to the client's situation",
+              "Encouraging the client to raise the difficulty of the next step",
+              "Recording the success so it can be referenced during future setbacks",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Empowerment says the capability was already there; the coach's job is making it visible. That is the difference between a complex affirmation and a progress note.",
+            sourceLessonSlug: "mi-spirit",
+          },
+          {
+            prompt: "Which finding would a coach cite to argue MI fits a 20-minute session format?",
+            options: [
+              "Rubak's finding that 15-minute encounters showed an effect in 64 percent of studies",
+              "Lundahl's odds ratio of 1.55 across 48 medical-care trials",
+              "Magill's finding that MI-consistent skills predicted change talk at r = .26",
+              "The broader literature's average effect of around g = 0.2",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Only the Rubak brief-encounter finding speaks to session LENGTH. The others speak to overall effect, the causal mechanism, and average magnitude respectively.",
+            sourceLessonSlug: "mi-evidence",
+          },
+          {
+            prompt: "A colleague says 'MI beats CBT for health behavior change.' What does the evidence lesson say?",
+            options: [
+              "Against active, structured treatments MI's advantage mostly disappears; comparative effects are frequently nonsignificant",
+              "MI outperforms CBT specifically, though not other structured education programs",
+              "The comparison has not been made, since the two target different outcomes",
+              "MI outperforms CBT on behavioral outcomes but underperforms on psychological ones",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The claim overstates. MI's honest advantage is over default advice-giving; against disciplined alternatives it is generally a tie.",
+            sourceLessonSlug: "mi-evidence",
+          },
+          {
+            prompt: "What does 'usual care' mean as a comparator, and why does it matter?",
+            options: [
+              "The default the control arm received, typically advice-giving; it is the comparator MI reliably beats",
+              "Care delivered by an untrained practitioner, which sets a floor for any intervention",
+              "No intervention at all, which makes any observed effect attributable to the treatment",
+              "The standard protocol for the condition, which is usually well evidenced itself",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Typically advice-giving. Knowing what the control arm actually got is how you size a claim, which is why the lesson defines both this and 'active comparator'.",
+            sourceLessonSlug: "mi-evidence",
+          },
+          {
+            prompt: "A coach wants to strengthen one thing from this section with the best evidence behind it. What should they pick?",
+            options: [
+              "Not provoking or feeding sustain talk, including resisting MI-inconsistent moves like arguing and confronting",
+              "Asking more open questions early in every session",
+              "Producing at least one complex affirmation per session",
+              "Delivering a collecting summary before every planning conversation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Sustain talk's r = -.24 is the strongest language-outcome relationship in the meta-analysis, and MI-inconsistent skills predicted more of it. The other three are good craft with weaker direct evidence.",
+            sourceLessonSlug: "mi-evidence",
+          },
+          {
+            prompt: "Which pair correctly matches a fourth-edition term with the earlier term it replaced?",
+            options: [
+              "Fixing reflex replaced righting reflex; tasks replaced processes; empowerment broadened evocation",
+              "Righting reflex replaced fixing reflex; processes replaced tasks; evocation broadened empowerment",
+              "Fixing reflex replaced righting reflex; stages replaced tasks; partnership broadened collaboration",
+              "Guiding replaced directing; tasks replaced stages; acceptance broadened empathy",
+            ],
+            correctIndex: 0,
+            explanation:
+              "All three renames run in that direction. The course teaches the old names too, because the older literature uses them and a coach reading widely will meet both.",
+            sourceLessonSlug: "the-four-tasks",
+          },
         ],
       },
     },
