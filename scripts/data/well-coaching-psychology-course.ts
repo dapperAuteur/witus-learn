@@ -1175,6 +1175,110 @@ Oettingen, G. (2014). *Rethinking positive thinking: Inside the new science of m
               "The lesson gives you a heuristic that works before you have read anything: evidence-backed techniques arrive with ranges, moderators, and fidelity requirements attached. A pitch with none is the pattern.",
             sourceLessonSlug: "the-lore-lesson",
           },
+          {
+            prompt: "Which two things does the course say a certification supplies that still leave the client unchanged?",
+            options: [
+              "Content knowledge and technical correctness, with no purchase on ambivalence or habit",
+              "Assessment skill and program design, with no purchase on adherence tracking",
+              "Credibility and authority, with no purchase on client rapport",
+              "Physiological knowledge and safety screening, with no purchase on goal setting",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A CPT can program training, a CNC can explain protein, a CES can correct a squat, and none of it moves a client who is ambivalent, overwhelmed, or running on habits that fire before deliberation gets a vote.",
+            sourceLessonSlug: "why-knowledge-fails",
+          },
+          {
+            prompt: "What three client states does the opening lesson name as immune to knowledge alone?",
+            options: [
+              "Ambivalent, overwhelmed, or organized around habits that fire before deliberation",
+              "Unmotivated, uninformed, or lacking social support",
+              "Resistant, distracted, or constrained by circumstances",
+              "Discouraged, over-committed, or medically limited",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Ambivalence gets Section 2, habits get Sections 1 and 3, and 'overwhelmed' is what focusing addresses. The three states map onto the course's structure.",
+            sourceLessonSlug: "why-knowledge-fails",
+          },
+          {
+            prompt: "A coach reports 'my client knows everything about nutrition and still eats badly.' Which lesson's diagnosis fits?",
+            options: [
+              "The knowing-doing gap: the knowledge is in the room and insufficient, which is what identifies the missing layer",
+              "Insufficient self-efficacy: the client does not believe they can execute",
+              "Wrong stage: the client is in contemplation and being treated as if in action",
+              "Poor goal specificity: the client has no concrete target to work toward",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the course's founding premise. The other three are possible downstream diagnoses, but the lesson's point is prior to them: knowledge being present is exactly what makes the gap visible.",
+            sourceLessonSlug: "why-knowledge-fails",
+          },
+          {
+            prompt: "How does the course handle the tension between SDT's small effects and its central place in the curriculum?",
+            options: [
+              "Small, reliable, mechanism-consistent effects compound, and SDT describes the mechanism other effective techniques run on",
+              "SDT's effects are larger in coaching contexts than in the meta-analysed intervention studies",
+              "SDT is taught for its explanatory value rather than because its interventions work",
+              "SDT's effects grow when combined with motivational interviewing, which shares its premises",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both halves of the answer matter: compounding over months, and being the mechanism underneath MI, need-supportive language, and autonomy-supported habit selection.",
+            sourceLessonSlug: "self-determination-theory",
+          },
+          {
+            prompt: "Which is a null-effect SDT program, per the literature's warning?",
+            options: [
+              "One claiming the SDT label without rigorously operationalizing need support",
+              "One applying SDT to a behavior with no intrinsic appeal to the client",
+              "One measuring autonomous motivation without measuring the behavior itself",
+              "One delivering need support without explaining the theory to participants",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Label without operationalization. The theory is a mechanism, not a magic word, and programs that skip the actual need-supportive behaviors show nulls.",
+            sourceLessonSlug: "self-determination-theory",
+          },
+          {
+            prompt: "Which TTM use would this program call an overreach?",
+            options: [
+              "Refusing to build an if-then plan with a client assessed as a contemplator",
+              "Asking a client where they see themselves and centering the conversation accordingly",
+              "Shifting toward relapse-proofing once a behavior has held for several months",
+              "Using the stage language to explain to a colleague why two clients need different conversations",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Forbidding tools by stage is the rulebook use the evidence does not support. Reading readiness and shifting the conversation's center of gravity are exactly what the model IS good for.",
+            sourceLessonSlug: "readiness-and-stages",
+          },
+          {
+            prompt: "What does the course mean by calling coaching's effects 'the field's own report card'?",
+            options: [
+              "The numbers come from the coaching literature itself, not from critics outside it",
+              "The numbers are self-reported by coaches rather than measured independently",
+              "The numbers are graded against benchmarks the certifying bodies set",
+              "The numbers are published annually by the professional associations",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Internal provenance is the point. A finding this modest coming from the field's own meta-analysis is harder to dismiss than the same finding from a skeptic.",
+            sourceLessonSlug: "why-knowledge-fails",
+          },
+          {
+            prompt: "A coach says 'the research shows habits take about two months.' What is missing?",
+            options: [
+              "The range, which is 18 to 254 days in Lally and 4 to 335 across the pooled review",
+              "The citation, without which the claim cannot be checked",
+              "The distinction between simple and complex behaviors",
+              "The fact that the figure is a median rather than a mean",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The range is what converts a promise into a forecast, and its absence is what makes 'about two months' function like the 21-day claim. The median-versus-mean point is real but secondary to the spread.",
+            sourceLessonSlug: "how-habits-form",
+          },
         ],
       },
     },
@@ -3951,6 +4055,253 @@ Prochaska, J. O., & Velicer, W. F. (1997). The transtheoretical model of health 
               "642 tests with a tight interval. Goal-setting theory's replication record is in organizational and lab settings, and combining two components does not sum their evidence.",
             sourceLessonSlug: "implementation-intentions",
           },
+          {
+            prompt: "What does goal-setting theory require alongside a specific challenging goal?",
+            options: [
+              "Commitment to the goal, ability to attain it, and feedback on progress",
+              "Public accountability, a deadline, and a reward on completion",
+              "A written record, weekly review, and coach oversight",
+              "Intrinsic motivation, adequate time, and removal of competing demands",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three conditions, each mapping to something the course already taught: autonomy support builds commitment, competence is ability, and feedback is progress made visible.",
+            sourceLessonSlug: "goal-setting",
+          },
+          {
+            prompt: "A client's goal is 'be up at six every day' and they have never solved mornings. What does the lesson prescribe?",
+            options: [
+              "Convert it to a learning goal, since performance goals presume the strategy exists",
+              "Reduce it to five days a week, since the goal is too challenging as stated",
+              "Add feedback by tracking wake times, since feedback is a required condition",
+              "Keep it, since specific challenging goals outperform vague ones",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The missing strategy is the discriminator. Adding feedback or lowering the target does not supply a how, which is what the goal presumes and the client lacks.",
+            sourceLessonSlug: "goal-setting",
+          },
+          {
+            prompt: "What does 'contingency' name in the implementation-intentions lesson?",
+            options: [
+              "The genuine if-then linkage between a concrete situation and a verifiable action",
+              "The client's backup plan for when the primary plan fails",
+              "The dependence of the plan's effect on the client's underlying motivation",
+              "The conditional nature of the coach's support during the plan's execution",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The format's active ingredient and its first moderator. Motivation dependence is the boundary condition, which the lesson treats separately.",
+            sourceLessonSlug: "implementation-intentions",
+          },
+          {
+            prompt: "Which if-then plan fails the lesson's craft rules?",
+            options: [
+              "'If I want to be healthier, then I will make better choices'",
+              "'If I finish the school run, then I put my walking shoes on'",
+              "'If a meeting lands on my lunch block, then I propose 1 p.m. before accepting'",
+              "'If it's raining at lunch, then I do the stairwell circuit'",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both halves fail: 'want to be healthier' is an internal state rather than a situation, and 'make better choices' is not verifiable. The other three have a real if and a real then.",
+            sourceLessonSlug: "implementation-intentions",
+          },
+          {
+            prompt: "Why does the course say the evoking task must precede the planning task, citing the planning literature?",
+            options: [
+              "Implementation intentions amplify existing motivation and do not create it, so a plan on an unowned goal is machinery without fuel",
+              "Planning too early triggers the fixing reflex, which produces sustain talk",
+              "Clients cannot form contingent plans before they have identified their obstacles",
+              "The planning task requires the trust that only engaging and evoking build",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson makes it a mechanistic argument rather than a relational one: the technique's own boundary condition is what orders the tasks.",
+            sourceLessonSlug: "implementation-intentions",
+          },
+          {
+            prompt: "What does the lesson say happens if mental contrasting is done with the obstacle FIRST?",
+            options: [
+              "You get weather-report pessimism rather than the obstacle-as-cue transformation",
+              "You get a more realistic plan, but with lower expectations of success",
+              "You get the same result, since both elements are present",
+              "You get adaptive disengagement regardless of the client's expectations",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Order is the method. The imagined future creates the pull that the obstacle then binds to reality; without the pull first, the obstacle is just a list of problems.",
+            sourceLessonSlug: "mental-contrasting",
+          },
+          {
+            prompt: "What is 'adaptive disengagement'?",
+            options: [
+              "Genuinely low expectations leading to letting go of unwinnable wishes and redirecting",
+              "Withdrawing effort temporarily during a period of high external demand",
+              "Reducing a goal's scope when progress stalls, rather than abandoning it",
+              "Ending the coaching relationship once the client can self-manage",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the feature that makes contrasting a decision instrument rather than a motivation gimmick: an honest tool helps you quit wishes you cannot win.",
+            sourceLessonSlug: "mental-contrasting",
+          },
+          {
+            prompt: "In WOOP, what is the coach's job during the sequence?",
+            options: [
+              "Facilitate the sequence, keeping the obstacle INNER and the plan CONTINGENT, while the client authors every element",
+              "Supply the outcome imagery, since clients rarely imagine vividly enough unaided",
+              "Select the wish from the client's stated priorities, then let the client fill in the rest",
+              "Write the if-then plan, since its format is technical and clients get it wrong",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two guardrails and nothing else. The client authors every element, which is what makes it usable inside MI's planning task.",
+            sourceLessonSlug: "woop-in-practice",
+          },
+          {
+            prompt: "A client's WOOP plan is 'I'll try harder next week.' What has gone wrong and what is the fix?",
+            options: [
+              "The plan is vague rather than contingent; return it to if-then form with a verifiable action",
+              "The obstacle was never identified; return to the obstacle step first",
+              "The wish is not challenging enough; renegotiate the wish",
+              "The outcome imagery was insufficient; repeat the outcome step more vividly",
+            ],
+            correctIndex: 0,
+            explanation:
+              "'Try harder' is one of the two commonest client errors the lesson names, the other being an outer obstacle. The correction is returning it to contingent form.",
+            sourceLessonSlug: "woop-in-practice",
+          },
+          {
+            prompt: "What is an 'anchor' in habit design?",
+            options: [
+              "The stable, already-daily event a habit is tied to; the strongest ones happen without fail",
+              "The client's underlying reason for the habit, which sustains it through difficulty",
+              "The minimum version of the behavior, which anchors consistency on hard days",
+              "The record of completed repetitions, which anchors the client's sense of progress",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The cue event. Parking at work and finishing breakfast are the lesson's examples, chosen because they occur without requiring any decision.",
+            sourceLessonSlug: "habit-design",
+          },
+          {
+            prompt: "Why does the course say the context 'does the remembering'?",
+            options: [
+              "A reliably occurring event triggers the behavior without the client having to decide to recall it",
+              "Physical environments store cues more durably than mental intentions do",
+              "Repetition in a stable context encodes the behavior in procedural memory",
+              "Clients who change environments forget behaviors they had established",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It relocates the remembering from the person to the situation, which is the same delegation implementation intentions perform and why the lesson calls them relatives.",
+            sourceLessonSlug: "habit-design",
+          },
+          {
+            prompt: "Which habit-design rule addresses days when everything goes sideways?",
+            options: [
+              "Protect consistency over intensity, by defining the minimum version that still counts",
+              "Pre-negotiate the miss, so a skipped day does not become abandonment",
+              "Set the horizon honestly, so slow progress is not read as failure",
+              "Anchor to a stable cue, so the behavior survives schedule disruption",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The minimum-that-counts version is the sideways-day rule. The miss rule handles what happens AFTER a day is lost; this one is how a day is not lost.",
+            sourceLessonSlug: "habit-design",
+          },
+          {
+            prompt: "A client asks whether to start a new habit in the morning or the evening, all else equal. What does the pooled data support?",
+            options: [
+              "Morning, since habits practiced in the morning developed faster in the 2024 review",
+              "Evening, since the day's obligations are complete and interruption is less likely",
+              "Neither; the review found timing unrelated to formation speed",
+              "Whichever the coach judges more stable in the client's schedule",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Morning, per the review's moderator. Note the qualifier the lesson attaches: bias toward the front of the day WHEN THE SCHEDULE ALLOWS, since cue stability still outranks timing.",
+            sourceLessonSlug: "habit-design",
+          },
+          {
+            prompt: "What does the course say about the conversation that starts a behavior versus the one that keeps it?",
+            options: [
+              "They are not the same conversation, and TTM was right about this much",
+              "They are the same conversation, repeated at longer intervals",
+              "The starting conversation is harder, so maintenance requires less coaching skill",
+              "The keeping conversation is optional once automaticity has formed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the one TTM claim the course endorses without qualification, alongside relapse-as-expected. Maintenance is a phase with its own physics.",
+            sourceLessonSlug: "maintenance-and-relapse",
+          },
+          {
+            prompt: "Which three tools does a relapse post-mortem feed back into?",
+            options: [
+              "A revised WOOP obstacle, a new if-then for the uncovered situation, and a re-anchored cue",
+              "A reduced goal, a longer horizon, and a lighter minimum version",
+              "A new focus, renewed evoking, and a fresh commitment",
+              "Increased session frequency, added tracking, and external accountability",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Each output is a concrete plan element from Section 3. That is what makes the analysis coaching rather than a conversation about willpower.",
+            sourceLessonSlug: "maintenance-and-relapse",
+          },
+          {
+            prompt: "What does the lesson mean by 'what gets reviewed persists'?",
+            options: [
+              "The review cadence is itself the maintenance mechanism, which is why it must be designed as a habit",
+              "Behaviors the client records are performed more consistently than unrecorded ones",
+              "Goals revisited in each session stay salient across the engagement",
+              "Data collected over time reveals patterns that motivate continued effort",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The review is the mechanism, not a report on it. That is why the lesson says to design it by lesson 19's rules, and why the session's opening check-in is not optional.",
+            sourceLessonSlug: "maintenance-and-relapse",
+          },
+          {
+            prompt: "A client with a long tracked streak misses one day and abandons the habit entirely. Name the effect and the two countermeasures this course has already taught.",
+            options: [
+              "The what-the-hell effect; the pre-negotiated miss rule and wariness of strict streak-counting",
+              "Cue drift; re-anchoring and a revised if-then plan",
+              "Adaptive disengagement; renegotiating the wish and lowering expectations",
+              "Loss of autonomous motivation; autonomy-supportive language and a self-selected behavior",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The streak is what converted one miss into ruin, which is why the course treats streak-counting warily, and the miss rule is the pre-negotiated defense against the framing.",
+            sourceLessonSlug: "maintenance-and-relapse",
+          },
+          {
+            prompt: "Why does the course label the two-day rule rather than simply teaching it?",
+            options: [
+              "A program that flags lore in lesson 5 owes the same label to its own conventions",
+              "The rule contradicts Lally's finding that one miss is immaterial",
+              "The rule originates in athletic training rather than behavior-change research",
+              "The rule has been tested and failed to replicate in habit-formation trials",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Consistency of standard. The rule is consistent with the evidence, but consistent-with is not tested, and the course applies its own lore test to itself.",
+            sourceLessonSlug: "maintenance-and-relapse",
+          },
+          {
+            prompt: "Which statement about maintenance evidence is accurate?",
+            options: [
+              "Maintenance is real and not automatic: roughly half to three-quarters of trials show at least partial maintenance, many underpowered",
+              "Maintenance is automatic once automaticity forms, which the habit literature establishes",
+              "Maintenance has not been measured, since most coaching trials end at the intervention",
+              "Maintenance fails in most trials, which is why the review structure is prescribed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both halves. The lesson's practical conclusion follows from the second: build the review structure like it matters, because it is what stands between a good quarter and a changed life.",
+            sourceLessonSlug: "maintenance-and-relapse",
+          },
         ],
       },
     },
@@ -4853,6 +5204,97 @@ Boehmer, K. R., et al. (2023). The impact of health and wellness coaching on pat
             explanation:
               "Evoking precedes planning, and the obstacle work sits inside planning after the why is established. Any order putting planning before evoking is the commonest MI failure mode.",
             sourceLessonSlug: "putting-it-together",
+          },
+          {
+            prompt: "What is 'session anatomy' as this course defines it?",
+            options: [
+              "Preparation, opening, one working loop, closing with commitment: the structure the NBHWC outline specifies as competencies",
+              "The proportion of a session spent on each of MI's four tasks",
+              "The sequence of OARS skills a coach deploys across a conversation",
+              "The physical and relational setup that precedes any coaching conversation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Four parts, specified as competencies rather than offered as advice. That specification is what makes preparation craft rather than virtue.",
+            sourceLessonSlug: "session-structure",
+          },
+          {
+            prompt: "What is an 'agenda menu'?",
+            options: [
+              "The focusing offer: options presented for the client to choose from, never a syllabus imposed on them",
+              "The list of topics the coaching agreement commits the engagement to covering",
+              "The sequence of behaviors the client will work through across the program",
+              "The coach's prepared set of questions for the session's opening",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Menu-not-syllabus is the phrase, and it names exactly how much the coach may shape: offering options is partnership, imposing a sequence is not.",
+            sourceLessonSlug: "session-structure",
+          },
+          {
+            prompt: "What is a 'closing commitment'?",
+            options: [
+              "The client stating what they are taking, in their own words, with its when and its minimum version",
+              "The coach's written summary of the plan, sent after the session",
+              "The client's agreement to attend the next scheduled session",
+              "The formal commitment recorded in the coaching agreement at intake",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three components: the client's own words, the when, and the minimum version. The last two are what make it executable rather than aspirational.",
+            sourceLessonSlug: "session-structure",
+          },
+          {
+            prompt: "Which line contains a quiet controller?",
+            options: [
+              "'You should probably just start with the mornings, don't you think?'",
+              "'Some people anchor it to an existing routine; is that worth an experiment?'",
+              "'What would make this worth doing, from where you sit?'",
+              "'Three weeks through a work crunch is the consistency the curve is built on.'",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three at once: 'should', 'just', and a rhetorical question with one right answer. The others are autonomy-supportive, open, and competence-supportive respectively.",
+            sourceLessonSlug: "need-supportive-language",
+          },
+          {
+            prompt: "What does the lesson say clients do with performed warmth?",
+            options: [
+              "They detect it, and its detection costs more than its absence would have",
+              "They accept it initially, then disengage when it proves inconsistent",
+              "They reciprocate it, which produces a relationship built on performance",
+              "They discount it, leaving the relatedness need unmet but undamaged",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Detected and costly. That asymmetry is why the lesson prescribes honesty over cheerleading: absent warmth is neutral, faked warmth is negative.",
+            sourceLessonSlug: "need-supportive-language",
+          },
+          {
+            prompt: "Where does the coaching-outcomes lesson say cardiovascular-risk evidence points?",
+            options: [
+              "Coaching blends built on MI improve physical activity, diet, and stress-management behaviors",
+              "Coaching blends reduce cardiovascular events but not intermediate risk markers",
+              "Coaching blends improve blood pressure specifically, with no behavioral change detected",
+              "Coaching blends show no effect in cardiovascular-risk populations",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three behavior domains, from MI-built blends. Note the outcome level: behaviors, not events, which is what the evidence supports.",
+            sourceLessonSlug: "coaching-outcomes-honest",
+          },
+          {
+            prompt: "Why does the course say the field 'genuinely cannot say' which component carries the effect?",
+            options: [
+              "Because trials blend techniques, so component attribution is unavailable from the existing designs",
+              "Because effect sizes are too small for component-level analysis to be powered",
+              "Because coaches vary in fidelity, which confounds any component comparison",
+              "Because the behavior-change-technique taxonomy is too coarse to distinguish components",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is a design limitation rather than a measurement one. That is also why the course teaches components with their own separate evidence bases.",
+            sourceLessonSlug: "coaching-outcomes-honest",
           },
         ],
       },
