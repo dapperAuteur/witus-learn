@@ -105,6 +105,344 @@ McEwen, B. S. (1998). Protective and damaging effects of stress mediators. *New 
 - **Permission**: the coach's most-used tool on this pillar: legitimising a reduction in load so it reads as strategy rather than failure.`,
     },
 
+    {
+      slug: "quiz-load-and-capacity",
+      title: "4 · Knowledge check: load and capacity",
+      section: "Section 1 · Load and capacity",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "Why is this pillar NOT a thin bridge like movement and nutrition?",
+            options: [
+              "No certification you hold teaches its content, so the course teaches content as well as coaching",
+              "Its coaching layer is more complex than the layers taught in the movement and nutrition courses",
+              "Its scope boundaries are stricter, so the course must spend more time on legal structure than on content",
+              "Its evidence base is newer, so the course must review primary literature rather than established guidelines",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Stress physiology, HRV literacy, and modality grading appear in no CPT, CES, or CNC. The content itself is missing, not just the coaching layer.",
+            sourceLessonSlug: "the-recovery-pillar",
+          },
+          {
+            prompt: "How does the course describe the fitness industry's evidence discipline on recovery?",
+            options: [
+              "It collapses: the same trainer who demands citations for a set-rep scheme buys a cold plunge on a podcast anecdote",
+              "It holds, but the available evidence is too weak to support the confident claims practitioners make",
+              "It varies by modality, with strong discipline around heat exposure and weak discipline around cold",
+              "It improves with experience, so newer trainers are the ones most vulnerable to marketing claims",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The collapse is selective and that is the point: the same person applies different standards to programming and to recovery products.",
+            sourceLessonSlug: "the-recovery-pillar",
+          },
+          {
+            prompt: "What is a 'mechanism story'?",
+            options: [
+              "An explanation of HOW something should work, offered in place of evidence that it DOES",
+              "A description of the physiological pathway that a randomized trial has confirmed is responsible",
+              "A simplified account of a mechanism, prepared so that a client without training can understand it",
+              "The narrative a client tells themselves about why a particular recovery practice helps them personally",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Substitution is the defining feature: plausible physiology standing where outcome data should be. This pillar is saturated with them.",
+            sourceLessonSlug: "the-recovery-pillar",
+          },
+          {
+            prompt: "Which of these stays inside coaching scope on this pillar?",
+            options: [
+              "Helping a client read their own wearable data as a pattern rather than a verdict",
+              "Interpreting a client's HRV reading to determine whether their autonomic state permits training that day",
+              "Identifying whether a client's presentation meets the established criteria for overtraining syndrome",
+              "Recommending a heat or cold protocol as treatment for a client's diagnosed inflammatory condition",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Pattern reading is education and behavior. Clinical interpretation, syndrome identification, and prescribing recovery as treatment all leave the lane.",
+            sourceLessonSlug: "the-recovery-pillar",
+          },
+          {
+            prompt: "What is the boundary risk specific to this pillar?",
+            options: [
+              "Its tools all LOOK clinical, so the boundary is easy to cross by accident",
+              "Its clients are more likely to be under medical care than clients on the other four pillars",
+              "Its interventions carry physical risk, so a coaching error can cause direct harm to a client",
+              "Its terminology overlaps with mental-health practice, which is separately regulated in most states",
+            ],
+            correctIndex: 0,
+            explanation:
+              "HRV readings, cortisol, heat and cold exposure, breathing protocols: all of it wears clinical clothing, which is what makes the accidental crossing likely.",
+            sourceLessonSlug: "the-recovery-pillar",
+          },
+          {
+            prompt: "What is the course's honest frame for this pillar's evidence overall?",
+            options: [
+              "Mostly strong associations, small effects from short trials, or mechanisms with no outcome evidence",
+              "Mostly strong randomized evidence, with a few modalities still awaiting confirmatory trials",
+              "Mostly weak evidence, which is why the course teaches the pillar primarily as scope and referral",
+              "Mostly evidence from athletic populations, which limits its generalization to ordinary clients",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three categories, none of them strong outcome evidence. The course's response is not to skip the pillar but to teach the difference carefully.",
+            sourceLessonSlug: "the-recovery-pillar",
+          },
+          {
+            prompt: "What is 'allostasis'?",
+            options: [
+              "The body's adjustment of its systems to meet demand, rather than holding a fixed setpoint",
+              "The body's tendency to return to a fixed physiological setpoint after any disturbance to it",
+              "The accumulated physiological cost of a stress response that never fully stands down again",
+              "The process by which the body adapts to a training stimulus over a period of several weeks",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Adjustment, not homeostatic return. The accumulated COST of chronic allostasis is allostatic load, which is the separate term.",
+            sourceLessonSlug: "allostatic-load",
+          },
+          {
+            prompt: "Define allostatic load.",
+            options: [
+              "The wear that accumulates across systems when the stress response never fully stands down",
+              "The total amount of physical and psychological demand a person is carrying at a given moment",
+              "The measurable difference between a person's current capacity and the demands placed upon them",
+              "The clinical index used to determine whether a person's stress response has become pathological",
+            ],
+            correctIndex: 0,
+            explanation:
+              "McEwen's term for cumulative cost across neuroendocrine, cardiovascular, metabolic, and immune systems. It is the wear, not the demand and not an index.",
+            sourceLessonSlug: "allostatic-load",
+          },
+          {
+            prompt: "Which are the 'stress mediators' this lesson names?",
+            options: [
+              "Cortisol and the catecholamines",
+              "Cortisol, insulin, and the thyroid hormones acting together on metabolic rate",
+              "Epinephrine and cortisol, which are protective in the long run and damaging acutely",
+              "Inflammatory cytokines, which accumulate across neuroendocrine and immune systems over time",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Cortisol plus epinephrine and norepinephrine. Note the direction: protective acutely, damaging chronically, which is the reverse of one distractor.",
+            sourceLessonSlug: "allostatic-load",
+          },
+          {
+            prompt: "What useful question does the allostatic-load frame replace 'is stress bad?' with?",
+            options: [
+              "What is the total load on this person, and what is their capacity to absorb it?",
+              "Which of this person's stressors is the largest, and can it be removed or reduced?",
+              "How long has this person's stress response been elevated above its normal range?",
+              "Which physiological system is showing the earliest signs of accumulated stress-related wear?",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Total load against capacity. It is what stops a client treating a hard training block and a brutal work quarter as unrelated events.",
+            sourceLessonSlug: "allostatic-load",
+          },
+          {
+            prompt: "What did the systematic review of 238 allostatic-load studies find?",
+            options: [
+              "The original ten biomarkers still dominate, with BMI and CRP increasingly added, and no standardized scoring",
+              "A standardized ten-biomarker index has been adopted, with thresholds now consistent across the literature",
+              "The construct failed to predict health outcomes once socioeconomic factors were adjusted for",
+              "Biomarker selection has converged on inflammatory markers, replacing the original neuroendocrine set",
+            ],
+            correctIndex: 0,
+            explanation:
+              "No standardization: biomarker sets and thresholds vary study to study. That absence is what forbids scoring an individual client.",
+            sourceLessonSlug: "allostatic-load",
+          },
+          {
+            prompt: "What is a 'research construct,' and why does the term matter here?",
+            options: [
+              "A measure built to study populations rather than assess individuals, so no coach should score a client with it",
+              "A theoretical concept that has not yet been operationalized into any measurable form",
+              "A measure that requires laboratory equipment, placing it outside a coach's practical reach",
+              "A framework proposed by researchers that clinicians have not yet adopted into routine practice",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Population tool, not individual assessment. Allostatic load is one, which is why calculating an index for a client invents a diagnosis from a research instrument.",
+            sourceLessonSlug: "allostatic-load",
+          },
+          {
+            prompt: "How should a coach actually use allostatic load?",
+            options: [
+              "As a teaching metaphor and a rationale, never as a score",
+              "As a screening tool applied at intake, with the result shared with the client's physician",
+              "As a monthly index computed from available biomarkers and tracked as a trend over time",
+              "As a diagnostic threshold that determines when a client should be referred to clinical care",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson gives both the good sentence and the forbidden one. 'Your body is carrying load from several directions' is honest; 'your allostatic load is high, here is your index' is not.",
+            sourceLessonSlug: "allostatic-load",
+          },
+          {
+            prompt: "What does the load-exceeds-capacity picture look like?",
+            options: [
+              "Performance drifting down while effort goes up, unrestorative sleep, dread, stacking illnesses, lingering irritability",
+              "A sudden drop in performance following a single unusually demanding training block or competition",
+              "Elevated resting heart rate and suppressed HRV persisting for more than two consecutive weeks",
+              "Progressive loss of strength accompanied by measurable reductions in lean body mass over a month",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Five features, all gradual and all non-specific. The non-specificity is the whole reason the next finding matters.",
+            sourceLessonSlug: "load-exceeds-capacity",
+          },
+          {
+            prompt: "Which conditions produce the same picture as overtraining?",
+            options: [
+              "Depression, anemia, thyroid disease, sleep apnea, and grief, among others",
+              "Only other training-related conditions, which is why the picture is diagnostic of overreaching",
+              "Primarily sleep disorders, which is why sleep assessment resolves most presentations",
+              "Conditions affecting the endocrine system specifically, since the mechanism is hormonal",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The mimics are the argument. A confident label discourages a client from pursuing causes only a clinician can rule out.",
+            sourceLessonSlug: "load-exceeds-capacity",
+          },
+          {
+            prompt: "Why does this course forbid a coach saying 'you are overtrained'?",
+            options: [
+              "It is a clinical construct with diagnostic criteria, so saying it is diagnosing",
+              "It is a term clients find discouraging, which reduces their willingness to continue training",
+              "It is an outdated construct that the sports-medicine literature has largely abandoned",
+              "It is accurate only in athletic populations, so applying it to general clients would mislead",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Diagnosing, plus the practical harm: it tells a client to stop looking for causes the coach is not qualified to exclude.",
+            sourceLessonSlug: "load-exceeds-capacity",
+          },
+          {
+            prompt: "What are the four moves a coach makes instead of labeling?",
+            options: [
+              "Describe the pattern, map total load, refer the medical question, coach what is legitimately yours",
+              "Reduce the training load, monitor for two weeks, reassess, and refer if no improvement occurs",
+              "Document the symptoms, notify the client's physician, pause coaching, and await medical clearance",
+              "Assess sleep, assess nutrition, assess training volume, and adjust whichever appears most deficient",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Note that referral is not the last resort here but one of the four simultaneous moves, and coaching continues alongside it.",
+            sourceLessonSlug: "load-exceeds-capacity",
+          },
+          {
+            prompt: "What does 'describe, do not label' mean in practice?",
+            options: [
+              "Report observed patterns and the client's own words instead of naming a syndrome",
+              "Record objective measurements rather than relying on the client's subjective account",
+              "Use plain language rather than clinical terminology when explaining physiology",
+              "Describe what the client should do next rather than characterizing what has happened",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Observation plus the client's words. It keeps the coach inside scope while still saying something true and useful about what is happening.",
+            sourceLessonSlug: "load-exceeds-capacity",
+          },
+          {
+            prompt: "What does the course call 'the most useful thing you own here'?",
+            options: [
+              "Permission",
+              "Objectivity, since a coach sees patterns a client living inside them cannot",
+              "Continuity, since a coach observes the client across months rather than at single appointments",
+              "Referral, since routing the medical question is the highest-value action available",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Many clients need someone credible to say that reducing load is a legitimate move rather than a failure of will. It requires no diagnosis and is frequently the intervention that matters.",
+            sourceLessonSlug: "load-exceeds-capacity",
+          },
+          {
+            prompt: "What is 'total load mapping'?",
+            options: [
+              "Inventorying every demand on a client, training and life alike, since they draw on one capacity",
+              "Calculating the client's weekly training volume across all modalities and sessions",
+              "Estimating the physiological cost of each stressor and summing them into a single score",
+              "Tracking the client's perceived exertion across every session over a training block",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Everything, not just training. Work, caregiving, sleep debt, and grief land on the same physiology, which is the allostatic-load frame made operational.",
+            sourceLessonSlug: "load-exceeds-capacity",
+          },
+          {
+            prompt: "A client's training is reasonable and they are getting worse. What does the allostatic-load frame add?",
+            options: [
+              "Training is one input among several landing on the same physiology",
+              "Training volume should be reduced first, since it is the input the coach directly controls",
+              "The stress response has likely become chronically elevated and requires clinical assessment",
+              "The client's capacity has declined, which means the training was not in fact reasonable",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The question becomes total load against capacity rather than whether the training block looks sensible in isolation.",
+            sourceLessonSlug: "allostatic-load",
+          },
+          {
+            prompt: "What is 'load management' as this course defines it?",
+            options: [
+              "Arranging training, work, and rest so demand and capacity stay in a workable relationship",
+              "Adjusting training volume and intensity across a periodized block to optimize adaptation",
+              "Monitoring accumulated fatigue using objective markers and reducing load when they worsen",
+              "Distributing training stress evenly across the week to avoid concentrated periods of demand",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It spans work and rest, not just training, which is what makes it the behavioral half of recovery rather than a programming task.",
+            sourceLessonSlug: "the-recovery-pillar",
+          },
+          {
+            prompt: "What is 'recovery' in this course's definition?",
+            options: [
+              "The return of capacity after load, across autonomic, hormonal, muscular, and psychological systems",
+              "The period following training during which adaptation to the training stimulus occurs",
+              "The set of practices a person uses to accelerate their return to training readiness",
+              "The restoration of physiological markers to their pre-exercise baseline values",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A process spanning four system types, and the definition ends with the course's posture: something to be coached rather than a product to be bought.",
+            sourceLessonSlug: "the-recovery-pillar",
+          },
+          {
+            prompt: "What is a 'non-specific presentation'?",
+            options: [
+              "A symptom picture many different conditions can produce",
+              "A presentation in which the client cannot describe their symptoms precisely enough to act on",
+              "A cluster of symptoms that appears without any identifiable precipitating event or cause",
+              "A pattern of complaints that varies unpredictably from one week to the next in the same client",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Many causes, one picture. It is why fatigue and mood change route to a clinician rather than to a label.",
+            sourceLessonSlug: "load-exceeds-capacity",
+          },
+          {
+            prompt: "What is 'outcome evidence,' and what standard does the course apply it as?",
+            options: [
+              "Measurement of whether an intervention changed something a person cares about",
+              "Evidence collected after an intervention concludes rather than during its delivery",
+              "The measured physiological response to an intervention, as distinct from the reported one",
+              "Evidence from trials with clinical endpoints rather than intermediate biomarkers",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Something a person cares about, which is broader than clinical endpoints and narrower than any measured response. It is the standard every modality in Section 3 gets held to.",
+            sourceLessonSlug: "the-recovery-pillar",
+          },
+        ],
+      },
+    },
+
     // ── Section 2 ────────────────────────────────────────────────────────────────────────────
     {
       slug: "hrv-what-it-is",
@@ -333,6 +671,409 @@ Natarajan, A. (2023). Heart rate variability during mindful breathing meditation
             correctIndex: 0,
             explanation:
               "Pattern-level interpretation of a personal trend is coaching. Diagnosing overtraining, comparing to population norms as though clinical, and ruling out medical causes are all clinical acts outside every published coaching scope.",
+            sourceLessonSlug: "hrv-what-it-is",
+          },
+          {
+            prompt: "What does HRV reflect, and what is it NOT a measure of?",
+            options: [
+              "Autonomic state; not fitness, health, or effort",
+              "Cardiac efficiency; not autonomic balance, which requires spectral analysis to determine",
+              "Parasympathetic activity alone; not sympathetic activity, which suppresses variation entirely",
+              "Recovery status; not stress, which is captured by resting heart rate measured separately",
+            ],
+            correctIndex: 0,
+            explanation:
+              "An indirect window onto autonomic state. Reading it as a fitness or health measure is the commonest category error with the number.",
+            sourceLessonSlug: "hrv-what-it-is",
+          },
+          {
+            prompt: "Which autonomic branch increases beat-to-beat variation?",
+            options: [
+              "Parasympathetic (vagal) activity",
+              "Sympathetic activity, which raises variability by increasing the range of achievable heart rates",
+              "Both branches equally, which is why the ratio between them is the informative measure",
+              "Neither directly; variation reflects mechanical cardiac factors rather than autonomic input",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Vagal activity increases short-term variation; sympathetic activation tends to suppress it. That direction is what makes higher HRV read as more recovered.",
+            sourceLessonSlug: "hrv-what-it-is",
+          },
+          {
+            prompt: "What does RMSSD capture, and why do consumer apps favour it?",
+            options: [
+              "Short-term beat-to-beat change, dominated by vagal activity",
+              "Total variability across all frequency bands, which is the most complete single summary available",
+              "The ratio of sympathetic to parasympathetic input, expressed as a single readiness score",
+              "The average interval between beats, corrected for the participant's resting heart rate",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Vagally dominated and computable from short recordings, which is exactly what a consumer device needs. Total variability across all bands is SDNN.",
+            sourceLessonSlug: "hrv-what-it-is",
+          },
+          {
+            prompt: "What does SDNN capture?",
+            options: [
+              "Total variability across all frequencies, reflecting both autonomic branches plus slower influences",
+              "Short-term beat-to-beat change only, making it the more precise of the two time-domain measures",
+              "Variability during sleep specifically, which is why overnight recordings report it preferentially",
+              "The standard deviation of successive differences, correcting RMSSD for individual baseline drift",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The standard deviation of the intervals, across all frequency bands. Its breadth is why it reflects more than vagal tone alone.",
+            sourceLessonSlug: "hrv-what-it-is",
+          },
+          {
+            prompt: "How does the literature now treat the low-to-high frequency ratio?",
+            options: [
+              "As an oversimplification it has moved away from",
+              "As the most validated single measure of sympathetic-parasympathetic balance currently available",
+              "As reliable in laboratory conditions but not in the ultra-short recordings consumer devices use",
+              "As useful for population research but invalid for tracking an individual across days",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The popular reading of it as a clean sympathetic-to-parasympathetic gauge is what the literature has moved away from, not its measurement properties.",
+            sourceLessonSlug: "hrv-what-it-is",
+          },
+          {
+            prompt: "In the doctors' HRV meta-analysis, which parameters were LOWER during stress?",
+            options: [
+              "RMSSD (SMD −0.63) and SDNN (−1.05)",
+              "Low-frequency power (0.54) and the low-to-high ratio (0.69), both of which fell during stress periods",
+              "High-frequency power alone, which was the only parameter to reach statistical significance",
+              "RMSSD (−0.63) and high-frequency power, with SDNN showing no significant change during stress",
+            ],
+            correctIndex: 0,
+            explanation:
+              "RMSSD and SDNN down; low-frequency power and the ratio UP. High-frequency power alone did not reach significance.",
+            sourceLessonSlug: "hrv-what-it-is",
+          },
+          {
+            prompt: "Which HRV parameter failed to reach significance in that meta-analysis?",
+            options: [
+              "High-frequency power",
+              "Low-frequency power, which is the parameter most affected by respiratory rate during measurement",
+              "SDNN, which requires recordings longer than the included studies typically collected",
+              "The low-to-high ratio, whose interpretation the literature has independently questioned",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Four of five parameters moved significantly; high-frequency power was the exception. Naming the exception is part of quoting the finding honestly.",
+            sourceLessonSlug: "hrv-what-it-is",
+          },
+          {
+            prompt: "What caveat ships with the doctors' HRV meta-analysis?",
+            options: [
+              "Seven studies, 12 to 54 participants each, a different device in every study, quality moderate at best",
+              "Seventy studies of varying quality, with substantial heterogeneity between the pooled effect estimates",
+              "All studies used the same device, so the findings may not generalize to consumer wearables",
+              "The studies measured only during work hours, so overnight autonomic state was never captured",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The review's own verdict is part of the finding. Seven small studies with inconsistent instrumentation is a different claim from a large pooled result.",
+            sourceLessonSlug: "hrv-what-it-is",
+          },
+          {
+            prompt: "What does that evidence license a coach to say about HRV?",
+            options: [
+              "It is a reasonable non-invasive signal of autonomic state, worth tracking as a personal pattern",
+              "It is a validated readiness measure that can guide day-to-day training decisions for a client",
+              "It reliably distinguishes recovered from unrecovered states in an individual on any given morning",
+              "It permits comparison between clients once age and fitness level have been accounted for",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Personal pattern only. Neither a morning number as a verdict nor between-person comparison survives the evidence.",
+            sourceLessonSlug: "hrv-what-it-is",
+          },
+          {
+            prompt: "Describe the design of the daily-HRV wellness study.",
+            options: [
+              "Forty-one adults, standardized five-minute morning chest-strap recordings daily for fourteen days",
+              "Forty-one athletes, wrist-worn overnight recordings across a twelve-week training block",
+              "Four hundred adults, weekly five-minute recordings over fourteen weeks with wellness ratings",
+              "Forty-one adults randomized to HRV-guided or fixed training for fourteen days of monitoring",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Small, short, observational, and standardized. The standardization is what makes the daily comparisons meaningful within a person.",
+            sourceLessonSlug: "what-hrv-tracks",
+          },
+          {
+            prompt: "What did higher daily RMSSD track in that study?",
+            options: [
+              "Better self-reported sleep, lower fatigue, and lower stress",
+              "Better sleep and lower muscle soreness, with fatigue showing no independent association",
+              "Lower stress alone, with sleep and fatigue explained by the same underlying variable",
+              "Training readiness as rated by the participants, which the authors validated against performance",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three subjective outcomes, holding after adjustment. Soreness is the one that specifically did NOT associate.",
+            sourceLessonSlug: "what-hrv-tracks",
+          },
+          {
+            prompt: "What did daily RMSSD notably FAIL to track?",
+            options: [
+              "Perceived muscle soreness",
+              "Self-reported sleep quality, which the authors attributed to recall bias in morning ratings",
+              "Perceived stress, which associated only in participants with higher baseline variability",
+              "Fatigue, which tracked resting heart rate more closely than it tracked variability",
+            ],
+            correctIndex: 0,
+            explanation:
+              "No association with soreness. Systemic autonomic recovery and local tissue recovery are different things, and the wearable sees only the first.",
+            sourceLessonSlug: "what-hrv-tracks",
+          },
+          {
+            prompt: "Why is the soreness null the useful finding?",
+            options: [
+              "A client can post a strong HRV morning with legs that are genuinely wrecked, or the reverse",
+              "It shows the measurement protocol was insufficiently standardized to detect local effects",
+              "It suggests soreness ratings are unreliable and should not be collected alongside HRV",
+              "It indicates that soreness resolves faster than autonomic recovery in most participants",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Treating the number as a readiness verdict for a training decision asks it to report on something it does not measure.",
+            sourceLessonSlug: "what-hrv-tracks",
+          },
+          {
+            prompt: "How should the daily-HRV study's strength be read?",
+            options: [
+              "A fourteen-day observational study of forty-one people, modest effects, substantial individual variability",
+              "A well-powered randomized trial whose findings generalize across adult populations",
+              "A long-term cohort whose fourteen-month follow-up establishes the durability of the associations",
+              "A crossover trial in which each participant served as their own control across conditions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The authors' own characterization. It is the right posture for the whole category: a signal worth watching, not an oracle.",
+            sourceLessonSlug: "what-hrv-tracks",
+          },
+          {
+            prompt: "What are the three coaching rules for HRV in this lesson?",
+            options: [
+              "Track the trend not the day, pair the number with something subjective, set expectations early",
+              "Record at the same time daily, compare against population norms, adjust training accordingly",
+              "Use the highest reading of each week, discard outliers, and review monthly with the client",
+              "Measure before and after each session, log the difference, and treat large gaps as warnings",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The subjective pairing matters because the validating study's own outcomes were subjective ratings. Population comparison is exactly what the evidence forbids.",
+            sourceLessonSlug: "what-hrv-tracks",
+          },
+          {
+            prompt: "What is 'subjective pairing'?",
+            options: [
+              "Reading the number alongside rated sleep, fatigue, and stress",
+              "Comparing the client's HRV against their own subjective sense of how recovered they feel",
+              "Asking the client to predict their reading before viewing it, to calibrate their interpretation",
+              "Combining objective and subjective data into a single composite readiness score",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Those three specifically, because they are how the validating study measured wellness. The pairing is what makes the number interpretable.",
+            sourceLessonSlug: "what-hrv-tracks",
+          },
+          {
+            prompt: "What do ultra-short HRV recordings support, and against what reference?",
+            options: [
+              "RMSSD and SD1 under spontaneous breathing, against a six-minute reference, at r ≈ 0.76 to 0.95",
+              "All time-domain and frequency-domain indices, against a twenty-four-hour reference recording",
+              "SDNN and low-frequency power, against a six-minute reference, at correlations above 0.90",
+              "RMSSD only, and only when the recording is taken during controlled paced breathing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One to three minutes suffices for RMSSD and SD1 under spontaneous breathing. Other indices need longer recordings to stabilize.",
+            sourceLessonSlug: "hrv-measurement-traps",
+          },
+          {
+            prompt: "What does controlled paced breathing do to HRV measurement?",
+            options: [
+              "It raises correlations but shifts the mean values, which breaks comparability across days",
+              "It lowers correlations with the reference standard, making short recordings unusable",
+              "It has no measurable effect provided the pace is matched to the participant's natural rate",
+              "It stabilizes the values, which is why it is the recommended protocol for daily tracking",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Better correlation, different means. That combination is what makes it useless for a trend line: the numbers agree in shape and disagree in level.",
+            sourceLessonSlug: "hrv-measurement-traps",
+          },
+          {
+            prompt: "State the recording rule that keeps a trend line honest.",
+            options: [
+              "One protocol: same posture, same time, same breathing style, ideally spontaneous, never mixed",
+              "Record at least three times weekly and average the readings before plotting the trend",
+              "Use paced breathing throughout, since it standardizes the respiratory contribution to the signal",
+              "Record after waking and again before sleep, and use the difference rather than either value",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Constancy of protocol, with spontaneous breathing as the reference condition. Mixing protocols in one trend line is the specific error.",
+            sourceLessonSlug: "hrv-measurement-traps",
+          },
+          {
+            prompt: "Why can RMSSD FALL during slow breathing that is genuinely calming?",
+            options: [
+              "RMSSD is weighted toward higher frequencies, and slow breathing shifts the respiratory rhythm below them",
+              "Slow breathing reduces vagal activity temporarily, which lowers short-term beat-to-beat variation",
+              "Slow breathing raises sympathetic tone as the body compensates for reduced respiratory drive",
+              "The effect is an artifact of consumer devices, which cannot sample accurately at low breathing rates",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A mathematical property of the estimator, not a physiological change. Respiratory sinus arrhythmia moves into the low-frequency band and RMSSD stops registering it.",
+            sourceLessonSlug: "hrv-measurement-traps",
+          },
+          {
+            prompt: "What did the paper deriving this call RMSSD?",
+            options: [
+              "Unsuitable as a biosignal for mindful breathing meditation which encourages slow breathing",
+              "Invalid for any purpose in which breathing rate is not experimentally controlled by the researcher",
+              "Acceptable for daily tracking but not for research applications requiring spectral precision",
+              "Superior to frequency-domain measures for capturing the vagal response to slow breathing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That exact phrase, and the paper proposes an alternative index instead. The restriction is to slow-breathing contexts, not to all uses.",
+            sourceLessonSlug: "hrv-measurement-traps",
+          },
+          {
+            prompt: "Why does this trap matter for coaching specifically?",
+            options: [
+              "A client sees their number fail to rise after slow breathing and concludes the practice does not work",
+              "A client's paced-breathing readings will be systematically higher, inflating their perceived recovery",
+              "A coach interpreting the reading may conclude the client is under more stress than they are",
+              "The device's algorithm may flag the session as an anomaly and exclude it from the trend",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Knowing this lets a coach keep a client on a practice the breathwork evidence actually supports, which is the next section.",
+            sourceLessonSlug: "hrv-measurement-traps",
+          },
+          {
+            prompt: "How does the course frame the source of the slow-breathing trap?",
+            options: [
+              "A single-author methods derivation, taught as a measurement caveat and not an outcome claim",
+              "A randomized trial of meditation practices, taught as evidence about meditation's effects",
+              "A systematic review of HRV metrics, taught as the current consensus of the field",
+              "An unpublished preprint, taught provisionally pending peer review",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Methods derivation, single author, published. The course states what kind of claim it can support: measurement caveat yes, outcome claim about meditation no.",
+            sourceLessonSlug: "hrv-measurement-traps",
+          },
+          {
+            prompt: "What is 'respiratory sinus arrhythmia'?",
+            options: [
+              "The natural rise and fall of heart rate with the breath",
+              "An irregular heart rhythm triggered by breath-holding during meditation practices",
+              "The lag between a change in breathing rate and the corresponding change in heart rate",
+              "The variation in breathing rate that accompanies changes in autonomic state during rest",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the physiological source of much short-term HRV, which is why moving it between frequency bands changes what RMSSD registers.",
+            sourceLessonSlug: "hrv-measurement-traps",
+          },
+          {
+            prompt: "What is a 'biased estimator' in this lesson's sense?",
+            options: [
+              "A metric that systematically weights part of a signal over the rest",
+              "A measure whose average value differs from the true population parameter it estimates",
+              "A metric influenced by the expectations of the person interpreting it",
+              "A measurement affected by the device used to collect it rather than the underlying signal",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Weighting part of the signal. RMSSD favours higher frequencies, which is the specific bias that makes slow breathing fool it.",
+            sourceLessonSlug: "hrv-measurement-traps",
+          },
+          {
+            prompt: "What is 'systemic versus local recovery'?",
+            options: [
+              "Autonomic state versus tissue state; HRV reports the first and is silent about the second",
+              "Whole-body fatigue versus fatigue confined to the muscles trained in the last session",
+              "Recovery measured by wearables versus recovery reported by the client subjectively",
+              "Central nervous system readiness versus peripheral muscular readiness, both captured by HRV",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The soreness null is what establishes it: a strong autonomic morning and wrecked legs are entirely compatible readings.",
+            sourceLessonSlug: "what-hrv-tracks",
+          },
+          {
+            prompt: "Your HRV is high but your legs are destroyed from Saturday. Which reading is wrong?",
+            options: [
+              "Neither; the error would be letting the number overrule the legs",
+              "The HRV reading, which is likely corrupted by inconsistent measurement conditions",
+              "The soreness perception, which is unreliable and should be checked against objective markers",
+              "Both, since they contradict each other and neither can be trusted without a third measure",
+            ],
+            correctIndex: 0,
+            explanation:
+              "HRV showed no association with perceived soreness in the validating study, so the two are measuring different things and can disagree without either being wrong.",
+            sourceLessonSlug: "what-hrv-tracks",
+          },
+          {
+            prompt: "What is 'vagal tone'?",
+            options: [
+              "Parasympathetic activity carried by the vagus nerve, associated with higher short-term HRV",
+              "The baseline level of autonomic activation a person maintains at rest across a day",
+              "The speed at which heart rate returns to baseline after a bout of exercise concludes",
+              "The balance between sympathetic and parasympathetic input, expressed as a ratio",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Parasympathetic, vagally carried, and tied to the rest-and-recover state. It is what RMSSD is dominated by, which is why the two travel together in most discussions.",
+            sourceLessonSlug: "hrv-what-it-is",
+          },
+          {
+            prompt: "What are 'standardized measurement conditions,' and why do they matter?",
+            options: [
+              "Same posture, same time of day, same protocol; the prerequisite for comparing your own numbers across days",
+              "Conditions matching those used in the published validation studies for the device in question",
+              "A laboratory environment with controlled temperature, lighting, and ambient noise",
+              "Conditions in which the participant has fasted and abstained from caffeine for twelve hours",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Your own numbers, across days. HRV is not comparable between people, so within-person comparability is the only comparability available, and protocol constancy is what buys it.",
+            sourceLessonSlug: "what-hrv-tracks",
+          },
+          {
+            prompt: "A client's app shows their HRV dropped after starting a slow-breathing practice. What do you say?",
+            options: [
+              "The number moved for a mathematical reason: RMSSD under-registers vagal activity at slow breathing rates",
+              "The practice may be raising sympathetic tone, so a different breathing pattern should be tried",
+              "The reading is unreliable and daily tracking should be suspended while the practice continues",
+              "The drop reflects genuine autonomic strain, so the practice should be reduced in duration",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The estimator's frequency weighting, not physiology. Without knowing this, a coach loses a client from a practice with real meta-analytic support.",
+            sourceLessonSlug: "hrv-measurement-traps",
+          },
+          {
+            prompt: "Which claim about HRV would this course refuse?",
+            options: [
+              "'Your HRV is higher than average for your age, so your recovery is above average'",
+              "'Your RMSSD trended down across the week you described as stressful'",
+              "'A morning reading is noisy, so we will read the pattern rather than the day'",
+              "'HRV moved in the expected direction under stress in a meta-analysis of seven studies'",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Between-person comparison. HRV is not comparable across individuals, which the lesson states directly, and 'above average recovery' compounds the error by treating it as a recovery measure.",
             sourceLessonSlug: "hrv-what-it-is",
           },
         ],
@@ -609,6 +1350,617 @@ Roberts, L. A., Raastad, T., Markworth, J. F., et al. (2015). Post-exercise cold
               "A small reliable effect at near-zero cost and risk beats a larger claimed effect that requires equipment, money, or a trade-off. Breathwork has no mortality evidence and replaces no treatment.",
             sourceLessonSlug: "breathwork-evidence",
           },
+          {
+            prompt: "Why does the course call breathwork the best cost-to-benefit tool on this pillar?",
+            options: [
+              "Cleanest evidence, lowest cost, fewest ways to go wrong, and entirely inside scope",
+              "The largest effect size of any recovery modality that has been tested in randomized trials",
+              "The strongest mechanistic rationale, which is what makes its outcomes predictable across clients",
+              "The longest follow-up data, which establishes that its benefits persist beyond the intervention",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Four properties, and note that effect size is deliberately not among them. The lesson says its effect size is not the largest number anyone will quote at you.",
+            sourceLessonSlug: "breathwork-evidence",
+          },
+          {
+            prompt: "What did the breathwork meta-analysis find for stress?",
+            options: [
+              "Hedges' g = −0.35 (95% CI −0.55 to −0.14), across 12 RCTs and 785 adults",
+              "Hedges' g = −0.35 (95% CI −0.55 to −0.14), across 20 RCTs and 785 adults with anxiety disorders",
+              "Hedges' g = −0.40 across 18 trials, with stress the primary and best-evidenced outcome measured",
+              "Hedges' g = −0.63, a moderate-to-large reduction relative to non-breathwork control conditions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Twelve trials, 785 adults, small-to-medium. Twenty trials is the anxiety figure (−0.32) and eighteen is depression (−0.40).",
+            sourceLessonSlug: "breathwork-evidence",
+          },
+          {
+            prompt: "What were the secondary outcomes in that meta-analysis?",
+            options: [
+              "Anxiety g = −0.32 across 20 trials, depressive symptoms g = −0.40 across 18",
+              "Anxiety g = −0.40 across 18 trials, depressive symptoms g = −0.32 across 20 trials",
+              "Sleep quality and fatigue, both improving at roughly the same magnitude as stress",
+              "Heart-rate variability and resting heart rate, measured as physiological confirmation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Anxiety across twenty, depression across eighteen. The trial counts differ because not every included study measured every outcome.",
+            sourceLessonSlug: "breathwork-evidence",
+          },
+          {
+            prompt: "What warning do the breathwork meta-analysis authors give?",
+            options: [
+              "To avoid 'a miscalibration between hype and evidence'",
+              "That the effects are unlikely to persist beyond the intervention period without ongoing practice",
+              "That breathwork may be contraindicated in clients with respiratory or cardiovascular conditions",
+              "That the pooled estimate is dominated by two large trials with unusually strong results",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That exact phrase, and the lesson calls it worth quoting to clients. Most included studies also carried moderate risk of bias.",
+            sourceLessonSlug: "breathwork-evidence",
+          },
+          {
+            prompt: "What did the breathing-protocol trial compare, and over what period?",
+            options: [
+              "Three five-minute daily practices against an equal dose of mindfulness meditation, over a month",
+              "Three breathing protocols against each other, with no meditation comparator, over three months",
+              "Cyclic sighing against a waitlist control, over a month of daily five-minute sessions",
+              "Five-minute versus twenty-minute daily breathing, against mindfulness meditation, over a month",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Cyclic sighing, box breathing, and cyclic hyperventilation with retention, against meditation at equal dose. The equal dose is what makes it an active comparison.",
+            sourceLessonSlug: "breathwork-evidence",
+          },
+          {
+            prompt: "What exactly did cyclic sighing beat meditation on?",
+            options: [
+              "Mood improvement and reduction in respiratory rate",
+              "Anxiety reduction and improvement in heart-rate variability across the month",
+              "Mood improvement and reduction in physiological arousal across every measured marker",
+              "Sleep quality and self-reported stress, the trial's two primary outcomes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Those two, and the course claims no more. Extending the finding to anxiety or general arousal outruns what the trial reported between groups.",
+            sourceLessonSlug: "breathwork-evidence",
+          },
+          {
+            prompt: "What is 'cyclic sighing'?",
+            options: [
+              "A pattern emphasising a prolonged exhale",
+              "A pattern of equal-length inhale, hold, exhale, and hold, repeated in a fixed cycle",
+              "Rapid breathing followed by a period of breath retention, repeated across several rounds",
+              "Breathing at a fixed rate of six breaths per minute, the resonance frequency of most adults",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Extended exhale. The equal-length four-part pattern is box breathing, and the rapid-then-retain pattern is cyclic hyperventilation, both of which were in the same trial.",
+            sourceLessonSlug: "breathwork-evidence",
+          },
+          {
+            prompt: "How should breathwork be dosed and framed, per this lesson?",
+            options: [
+              "The tested five minutes, anchored to a daily cue, with the practice expected to feel unremarkable",
+              "Twenty minutes daily, since longer practice produced proportionally larger effects in the trials",
+              "Five minutes twice daily, with the second session timed before sleep for compounding benefit",
+              "As long as the client can sustain, since adherence rather than duration drives the outcome",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Tested dose, not aspirational dose. The expectation-setting is deliberate: a client who expects transformation from a small reliable effect quits before the effect accrues.",
+            sourceLessonSlug: "breathwork-evidence",
+          },
+          {
+            prompt: "What is 'Hedges' g'?",
+            options: [
+              "An effect size like Cohen's d with a small-sample correction",
+              "An effect size expressed in the original units of the outcome measured",
+              "A measure of between-study heterogeneity used when pooling trial results",
+              "A correlation coefficient adjusted for the number of predictors in a model",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Cohen's d with a small-sample correction, which is why meta-analyses of small trials favour it. −0.35 is small-to-medium on the same scale.",
+            sourceLessonSlug: "breathwork-evidence",
+          },
+          {
+            prompt: "What single skill does the control-group lesson teach?",
+            options: [
+              "Before you believe an effect size, look at what it was measured against",
+              "Before you believe an effect size, check whether the trial was adequately powered to detect it",
+              "Before you believe an effect size, confirm the outcome measure was validated for that population",
+              "Before you believe an effect size, verify that the finding replicated in an independent sample",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The comparator. The lesson calls it the most transferable thing in the course, and it is the skill that catches the Brinkmann misreading.",
+            sourceLessonSlug: "the-control-group-decides",
+          },
+          {
+            prompt: "What does a waitlist control actually control for?",
+            options: [
+              "The passage of time, and nothing else",
+              "Time and expectation, though not the attention a practitioner provides",
+              "Time, expectation, and attention, but not the structure of doing something deliberate",
+              "Nothing; a waitlist group is functionally identical to no control group at all",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Time alone. Expectation, attention, the act of doing something structured, and regression to the mean all remain inside the measured effect.",
+            sourceLessonSlug: "the-control-group-decides",
+          },
+          {
+            prompt: "What did the Brinkmann trial actually find?",
+            options: [
+              "Neither HRV biofeedback nor mindfulness beat each other or the waitlist; all three improved",
+              "HRV biofeedback beat mindfulness, and both beat the waitlist control condition",
+              "HRV biofeedback beat the waitlist but not mindfulness, which performed equivalently",
+              "Neither intervention improved, while the waitlist group deteriorated over the study period",
+            ],
+            correctIndex: 0,
+            explanation:
+              "No difference between the two interventions, and neither differed from doing nothing on a list. Everyone got better anyway, which is what makes it instructive.",
+            sourceLessonSlug: "the-control-group-decides",
+          },
+          {
+            prompt: "Why is the Brinkmann trial in this course?",
+            options: [
+              "A research export cited it as proof HRV biofeedback works, which inverts the result",
+              "It is the largest randomized trial of HRV biofeedback conducted in an occupational setting",
+              "It established the effect size the course uses for HRV biofeedback in later lessons",
+              "It demonstrates that workplace stress interventions require longer durations to show effects",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The misreading is the lesson. Reading only an abstract conclusion or a summary of a summary reverses the finding, and the course calls that the ordinary failure mode rather than a rare one.",
+            sourceLessonSlug: "the-control-group-decides",
+          },
+          {
+            prompt: "Why did the waitlist-controlled breathwork trial produce a much larger effect than the meta-analysis?",
+            options: [
+              "The biggest number came from the weakest comparator",
+              "The trial used a more intensive protocol delivered over a longer intervention period",
+              "The trial recruited a more distressed sample, leaving more room for improvement",
+              "The trial measured anxiety rather than stress, and anxiety responds more strongly",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Comparator strength is the variable. Conscious connected breathwork versus a waitlist produced a large anxiety reduction; breathwork versus active controls produced g = −0.35.",
+            sourceLessonSlug: "the-control-group-decides",
+          },
+          {
+            prompt: "What is 'regression to the mean' in this context?",
+            options: [
+              "People measured while unusually stressed tend to score better later regardless of treatment",
+              "The tendency of effect sizes to shrink as more trials are added to a meta-analysis",
+              "The drift of a trial's results toward the null as follow-up duration increases",
+              "The convergence of intervention and control groups once the intervention is withdrawn",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is one reason uncontrolled improvement is not evidence, and it is specifically why people who enroll in a stress study while stressed will look better later.",
+            sourceLessonSlug: "the-control-group-decides",
+          },
+          {
+            prompt: "What three questions does a coach ask when a client arrives with a study?",
+            options: [
+              "Compared to what, measured how, and for how long",
+              "Who funded it, how many participants, and was it peer reviewed",
+              "Was it randomized, was it blinded, and did it replicate",
+              "What population, what dose, and what outcome measure",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three questions, comparator first. Funding and peer review matter but do not rescue a study whose comparator was a waitlist.",
+            sourceLessonSlug: "the-control-group-decides",
+          },
+          {
+            prompt: "What is the personal implication of the control-group skill?",
+            options: [
+              "Your own before-and-after has no control group at all",
+              "Your own results are the most relevant evidence for what will work for you",
+              "Self-experiments require a washout period between interventions to be interpretable",
+              "Personal data should be compared against published population baselines",
+            ],
+            correctIndex: 0,
+            explanation:
+              "You are your own first client, and an uncontrolled personal trial contains every confound the lesson just listed. It is the sharpest application of the skill.",
+            sourceLessonSlug: "the-control-group-decides",
+          },
+          {
+            prompt: "How should a coach cite an effect when speaking to a client?",
+            options: [
+              "Name the comparator out loud, since 'versus nothing' and 'versus another real practice' differ",
+              "Give the effect size and its confidence interval, since precision prevents overinterpretation",
+              "Give the number of participants, since sample size determines how much to trust the estimate",
+              "Avoid numbers entirely, since clients cannot calibrate effect sizes without training",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The comparator is the part that changes what the claim means. The other three are good practice but do not fix a claim built on a waitlist.",
+            sourceLessonSlug: "the-control-group-decides",
+          },
+          {
+            prompt: "Describe the men's sauna cohort.",
+            options: [
+              "2,315 middle-aged Finnish men, median follow-up 20.7 years",
+              "1,688 participants, 51.4 percent women, mean age 63, median follow-up 15 years",
+              "2,315 Finnish adults of both sexes, followed for a median of 15 years",
+              "1,688 middle-aged Finnish men, randomized to sauna frequency for 20.7 years",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Men only, 2,315, 20.7 years. The 1,688-participant mixed-sex cohort is the later study, and neither randomized anyone.",
+            sourceLessonSlug: "sauna-evidence",
+          },
+          {
+            prompt: "What hazard ratio did four to seven weekly sessions carry for sudden cardiac death in the men's cohort?",
+            options: [
+              "0.37 (95% CI 0.18 to 0.75), compared with one session a week",
+              "0.23 (95% CI 0.08 to 0.65), compared with one session a week after full adjustment",
+              "0.48 (95% CI 0.18 to 0.75), which was the session-duration rather than frequency comparison",
+              "0.30, adjusted for age and sex only, in a cohort of middle-aged Finnish men",
+            ],
+            correctIndex: 0,
+            explanation:
+              "0.37 for sudden cardiac death. The 0.48 figure is the duration comparison and 0.23 belongs to the later mixed-sex cohort.",
+            sourceLessonSlug: "sauna-evidence",
+          },
+          {
+            prompt: "What did session duration show in the men's cohort?",
+            options: [
+              "Over 19 minutes versus under 11 gave HR 0.48 for sudden cardiac death, but was not significant for all-cause mortality",
+              "Over 19 minutes versus under 11 gave HR 0.48 for both sudden cardiac death and all-cause mortality",
+              "Duration showed no relationship with any outcome once frequency was accounted for",
+              "Shorter sessions performed better, which the authors attributed to reduced cardiovascular strain",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Longer did better on sudden cardiac death and did not reach significance for all-cause mortality. Reporting where the finding stops is part of quoting it.",
+            sourceLessonSlug: "sauna-evidence",
+          },
+          {
+            prompt: "Which sauna hazard ratio should a coach carry, and why?",
+            options: [
+              "0.23 (0.08 to 0.65), because it survived the adjustments most likely to explain it away",
+              "0.37 (0.18 to 0.75), because it comes from the larger and longer-followed cohort",
+              "0.30, because it is adjusted for age and sex, the two strongest confounders",
+              "0.48, because it isolates session duration, which is the modifiable variable",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Adjusted for cardiovascular risk factors, physical activity, socioeconomic status, and incident coronary disease. The adjustment set is what gives the number its weight.",
+            sourceLessonSlug: "sauna-evidence",
+          },
+          {
+            prompt: "What shape did cardiovascular mortality take with session frequency in the mixed-sex cohort?",
+            options: [
+              "It fell linearly with sessions per week, with no threshold",
+              "It fell steeply to three sessions weekly and then plateaued with no further benefit",
+              "It fell to four sessions weekly and rose again at higher frequencies",
+              "It fell only above four sessions weekly, with no association below that threshold",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Linear, no threshold. That shape is one of the stronger signals observational evidence can produce, which is why the lesson emphasizes it.",
+            sourceLessonSlug: "sauna-evidence",
+          },
+          {
+            prompt: "What is the label that must accompany the sauna evidence?",
+            options: [
+              "Prospective observational cohorts in a sauna-acclimated Finnish population, not randomized trials",
+              "Randomized controlled trials in a Finnish population, not yet replicated elsewhere",
+              "Cross-sectional surveys, which cannot establish the temporal order of exposure and outcome",
+              "Case-control studies, which are vulnerable to recall bias in reported sauna frequency",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Prospective cohorts. No trial has assigned people to sauna and measured deaths, and the population is acclimated in ways that limit generalization.",
+            sourceLessonSlug: "sauna-evidence",
+          },
+          {
+            prompt: "What is 'health selection,' and why is it sauna's obvious rival explanation?",
+            options: [
+              "Being healthier causes the exposure rather than the reverse",
+              "Healthier people are more likely to be recruited into prospective cohort studies",
+              "The tendency of unhealthy participants to drop out during long follow-up periods",
+              "The selection of healthier populations for study, which limits generalization",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Reverse causation of a specific kind: people well enough to sauna four times a week differ from people who are not, in ways adjustment reduces but cannot abolish.",
+            sourceLessonSlug: "sauna-evidence",
+          },
+          {
+            prompt: "What is unstudied about sauna, per this lesson?",
+            options: [
+              "Generalization to infrared cabins, steam rooms, and other populations",
+              "The relationship between session frequency and cardiovascular mortality",
+              "Whether longer sessions outperform shorter ones on any outcome",
+              "Whether the association survives adjustment for physical activity",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Modality and population generalization. The other three are all things the cited cohorts specifically addressed.",
+            sourceLessonSlug: "sauna-evidence",
+          },
+          {
+            prompt: "How should sauna be coached?",
+            options: [
+              "As a pleasant, low-risk habit with a strong dose-dependent association, if the client enjoys it",
+              "As an evidence-based cardiovascular intervention with a documented mortality benefit",
+              "As a treatment adjunct for clients with established cardiovascular risk factors",
+              "As equivalent to moderate exercise in its cardiovascular effect, per the cohort data",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Habit, association, enjoyment, no contraindication. Not a treatment, not established cause, and never with the risk-reduction percentage quoted as though a trial produced it.",
+            sourceLessonSlug: "sauna-evidence",
+          },
+          {
+            prompt: "What is an 'adjusted hazard ratio'?",
+            options: [
+              "A risk comparison after statistically accounting for named confounders",
+              "A hazard ratio corrected for the number of comparisons made in the analysis",
+              "A risk estimate weighted by the duration each participant remained in the study",
+              "A hazard ratio recalculated after excluding participants who developed the outcome early",
+            ],
+            correctIndex: 0,
+            explanation:
+              "And the lesson adds the crucial part: the adjustment set is part of the claim. 'Adjusted' alone tells you nothing without knowing for what.",
+            sourceLessonSlug: "sauna-evidence",
+          },
+          {
+            prompt: "What did the Cochrane review of cold-water immersion pool, and what did it find versus passive rest?",
+            options: [
+              "17 trials, 366 participants; reduced soreness at every follow-up, SMD −0.55 to −0.93",
+              "17 trials, 366 participants; reduced soreness at 24 hours only, with no later differences",
+              "12 trials, 785 participants; reduced soreness at every follow-up point measured",
+              "21 trials, 366 participants; reduced soreness and improved subsequent performance",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Seventeen small trials, soreness reduced at 24, 48, 72, and 96 hours. Study quality was low and results heterogeneous.",
+            sourceLessonSlug: "cold-water-evidence",
+          },
+          {
+            prompt: "At which follow-up was the cold-water soreness effect largest?",
+            options: [
+              "72 hours (SMD −0.93)",
+              "24 hours (SMD −0.55), with the effect diminishing steadily thereafter",
+              "96 hours (SMD −0.58), indicating a delayed but durable benefit",
+              "48 hours (SMD −0.66), coinciding with the usual peak of delayed onset soreness",
+            ],
+            correctIndex: 0,
+            explanation:
+              "−0.93 at 72 hours, the largest of the four. The values were −0.55, −0.66, −0.93, and −0.58 at 24, 48, 72, and 96 hours.",
+            sourceLessonSlug: "cold-water-evidence",
+          },
+          {
+            prompt: "What did cold-water immersion FAIL to beat?",
+            options: [
+              "Contrast immersion and warm-water immersion, at every follow-up",
+              "Passive rest at follow-ups beyond 48 hours, where the difference disappeared",
+              "Active recovery, which outperformed it on soreness at every measured timepoint",
+              "Compression garments, which produced equivalent soreness reduction at lower cost",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Cold beat doing nothing but not water of another temperature. That raises the possibility that immersion, expectation, or doing something deliberate carries part of the effect.",
+            sourceLessonSlug: "cold-water-evidence",
+          },
+          {
+            prompt: "Describe the twelve-week cold-water and strength-training study.",
+            options: [
+              "21 active men, strength training twice weekly, cold-water immersion or active recovery after each session",
+              "21 active men, randomized to cold-water immersion or no recovery intervention over twelve weeks",
+              "366 participants, strength training twice weekly, with cold water or passive rest afterward",
+              "21 endurance athletes, training four times weekly, with cold water applied after alternate sessions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Twenty-one men, twice weekly, cold water against ACTIVE recovery. The active comparator is what makes the adaptation finding interpretable.",
+            sourceLessonSlug: "cold-water-evidence",
+          },
+          {
+            prompt: "What did that study find?",
+            options: [
+              "Strength and muscle mass increased MORE in the active recovery group",
+              "Strength increased equally, but muscle mass increased more with active recovery",
+              "Cold water produced greater strength gains but smaller increases in muscle mass",
+              "Neither group differed in strength or mass, though soreness was lower with cold water",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Plus gains in isokinetic work, type II fibre cross-sectional area, and myonuclei per fibre appearing in the active recovery group only.",
+            sourceLessonSlug: "cold-water-evidence",
+          },
+          {
+            prompt: "Which cellular findings appeared in the active recovery group ONLY?",
+            options: [
+              "Isokinetic work, type II fibre cross-sectional area, and myonuclei per fibre",
+              "Type I fibre cross-sectional area and capillary density around the trained muscle",
+              "Satellite cell proliferation and mitochondrial density in the trained muscle groups",
+              "Resting muscle glycogen content and rate of post-exercise protein synthesis",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three findings, all absent in the cold-water group. Blunting adaptation is the exact opposite of what a client training for strength or size wants.",
+            sourceLessonSlug: "cold-water-evidence",
+          },
+          {
+            prompt: "When is cold-water immersion the RIGHT tool?",
+            options: [
+              "When the near-term goal is feeling better for the next session, as in a tournament weekend",
+              "During a hypertrophy block, when soreness would otherwise limit training frequency",
+              "After every strength session, to reduce the accumulated soreness across a training week",
+              "During periods of high life stress, when the autonomic benefit outweighs the adaptation cost",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Congested competition days, where feeling better tomorrow outranks adapting. It is a poor default in a block whose purpose is adaptation.",
+            sourceLessonSlug: "cold-water-evidence",
+          },
+          {
+            prompt: "What is 'blunted adaptation'?",
+            options: [
+              "The reduction of training gains caused by suppressing the signalling that drives them",
+              "The plateau in adaptation that occurs after prolonged training at a constant stimulus",
+              "The loss of training adaptations during an extended period without training",
+              "The reduced response to a training stimulus in people with high baseline fitness",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Suppressing the post-exercise inflammatory signalling is the mechanism, and that signalling is part of the point of the session.",
+            sourceLessonSlug: "cold-water-evidence",
+          },
+          {
+            prompt: "Which cold-water claims does this evidence base NOT support?",
+            options: [
+              "Large fat loss, transformed immunity, and longevity",
+              "Reduced muscle soreness relative to passive rest at 24 to 96 hours",
+              "Blunted strength and hypertrophy adaptation when used after training",
+              "Equivalence with contrast and warm-water immersion on soreness outcomes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The claims that sell most plunges. The other three are exactly what the cited evidence does show.",
+            sourceLessonSlug: "cold-water-evidence",
+          },
+          {
+            prompt: "What is 'contrast immersion'?",
+            options: [
+              "Alternating hot and cold water",
+              "Immersion in water at a temperature contrasting with the ambient environment",
+              "Sequential immersion of different limbs at different water temperatures",
+              "Immersion alternating with periods of active movement out of the water",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Hot and cold alternating, and it is one of the two comparators cold-water immersion did not outperform.",
+            sourceLessonSlug: "cold-water-evidence",
+          },
+          {
+            prompt: "A client in week 3 of a hypertrophy block asks about post-lift ice baths. What do you say?",
+            options: [
+              "Advise against it during this block, and save it for congested competition days",
+              "Recommend it, since reduced soreness will allow higher training frequency across the block",
+              "Recommend contrast immersion instead, which produced equivalent soreness relief without blunting",
+              "Suggest a trial period, comparing their own gains with and without it over four weeks",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Twelve weeks of post-session cold water produced smaller strength and muscle gains than active recovery. Contrast immersion was compared on soreness, not on adaptation, so recommending it as a safe substitute outruns the evidence.",
+            sourceLessonSlug: "cold-water-evidence",
+          },
+          {
+            prompt: "What is 'delayed onset muscle soreness'?",
+            options: [
+              "The soreness peaking a day or two after unfamiliar effort",
+              "Soreness that appears only after a training block has concluded and recovery has begun",
+              "Persistent soreness lasting more than 96 hours after a single training session",
+              "The soreness felt during the final repetitions of a set taken close to failure",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A day or two after unfamiliar effort. It is the one outcome cold water reliably improves relative to passive rest.",
+            sourceLessonSlug: "cold-water-evidence",
+          },
+          {
+            prompt: "A supplement company cites d = 1.2 for their stress product. What do you ask first?",
+            options: [
+              "Compared to what",
+              "How many participants were enrolled in the trial",
+              "Was the trial pre-registered before data collection began",
+              "Which validated instrument measured the stress outcome",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A waitlist comparator leaves expectation, attention, structure, and regression to the mean inside the effect. Then: measured how, and for how long.",
+            sourceLessonSlug: "the-control-group-decides",
+          },
+          {
+            prompt: "Which pairing correctly matches a modality with the strength of its evidence?",
+            options: [
+              "Breathwork: meta-analytic RCT evidence at a small effect. Sauna: strong observational association only",
+              "Breathwork: observational association only. Sauna: meta-analytic RCT evidence at a large effect",
+              "Cold water: randomized mortality evidence. Sauna: randomized soreness evidence",
+              "Breathwork and sauna both rest on randomized trials with clinical endpoints",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Different evidence types entirely. No trial has randomized anyone to sauna and measured deaths, and breathwork's support is randomized but modest.",
+            sourceLessonSlug: "sauna-evidence",
+          },
+          {
+            prompt: "Why does the course say breathwork's cost-to-benefit ratio is the best on this pillar despite a modest effect?",
+            options: [
+              "It costs nothing, needs no equipment, travels everywhere, and carries essentially no risk",
+              "Its effect size exceeds that of sauna and cold water when measured against active comparators",
+              "It produces benefits across more outcome domains than any other modality tested",
+              "Its effects appear faster than those of any other intervention on this pillar",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Four cost-side properties. The lesson is explicit that its effect size is not the largest number anyone will quote, and that the ratio still wins.",
+            sourceLessonSlug: "breathwork-evidence",
+          },
+          {
+            prompt: "What is an 'active control'?",
+            options: [
+              "A comparison group receiving a real alternative practice",
+              "A control group asked to maintain their usual activity levels during the trial",
+              "A group receiving a reduced dose of the intervention under study",
+              "A control condition in which participants remain physically active but untreated",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A real alternative practice, which strips out attention and expectation effects. That is why active-controlled numbers are smaller and mean more.",
+            sourceLessonSlug: "the-control-group-decides",
+          },
+          {
+            prompt: "What is 'risk of bias,' and where do most breathwork trials sit?",
+            options: [
+              "The assessed likelihood a trial's design distorted its result; most sit at moderate",
+              "The likelihood that a trial's authors had a financial interest in its outcome; most sit at low",
+              "The probability that a result arose by chance; most breathwork trials sit below 5 percent",
+              "The degree to which a trial's sample differs from the target population; most sit at moderate",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Design distortion, assessed, and moderate for most breathwork trials. It is separate from statistical significance and from funding conflicts.",
+            sourceLessonSlug: "breathwork-evidence",
+          },
+          {
+            prompt: "What is a 'prospective cohort'?",
+            options: [
+              "A study following people forward in time without assigning exposure",
+              "A study assigning participants to exposure groups and following them forward",
+              "A study comparing people with and without an outcome, looking backward at exposure",
+              "A study measuring exposure and outcome at a single point in time",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Forward in time, no assignment. Strong for association, unable to establish cause, which is exactly the sauna evidence's position.",
+            sourceLessonSlug: "sauna-evidence",
+          },
+          {
+            prompt: "Which claim about sauna would this course refuse?",
+            options: [
+              "'Four sauna sessions a week will cut your cardiovascular mortality risk by 77 percent'",
+              "'Four to seven weekly sessions carried a hazard ratio of 0.23 in a fifteen-year cohort'",
+              "'The association survived adjustment for physical activity and socioeconomic status'",
+              "'No trial has randomized people to sauna and measured mortality outcomes'",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It converts an observational hazard ratio into a personal causal promise, and quotes the risk reduction as though a trial produced it. Both are named prohibitions in the lesson.",
+            sourceLessonSlug: "sauna-evidence",
+          },
         ],
       },
     },
@@ -664,6 +2016,343 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
 - **Contraindication screening**: asking, before heat or cold exposure, about conditions and medications that make it unsafe, then routing the answer to a clinician.
 - **Symptom behind the metric**: the clinical finding a wearable number is standing in for, which is what gets referred.
 - **Exercise dependence**: the pattern where rest produces genuine distress rather than reluctance; a mental-health referral, not a motivation problem.`,
+    },
+    {
+      slug: "quiz-coaching-it",
+      title: "15 · Knowledge check: coaching it",
+      section: "Section 4 · Coaching it",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What did the taper meta-analysis find for performance?",
+            options: [
+              "Time-trial performance improved (SMD −0.45) and time to exhaustion improved (1.28)",
+              "Time-trial performance improved (SMD −1.28) and time to exhaustion improved (0.45)",
+              "Time-trial performance improved, while time to exhaustion showed no significant change",
+              "Both improved alongside gains in maximal oxygen consumption and movement economy",
+            ],
+            correctIndex: 0,
+            explanation:
+              "−0.45 for time trial (lower being faster) and 1.28 for time to exhaustion, across fourteen studies in endurance athletes.",
+            sourceLessonSlug: "rest-deloads-tapers",
+          },
+          {
+            prompt: "What is the effective taper pattern?",
+            options: [
+              "Cut volume 41 to 60 percent while holding intensity and frequency constant, over 21 days or fewer",
+              "Cut volume, intensity, and frequency proportionally by about half over a three-week period",
+              "Cut intensity by 41 to 60 percent while holding volume and frequency constant, over 21 days",
+              "Cut frequency to two sessions a week while maintaining the usual volume in each session",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Volume down, intensity and frequency held. Cutting intensity is the commonest mistake and it is the variable the evidence says to protect.",
+            sourceLessonSlug: "rest-deloads-tapers",
+          },
+          {
+            prompt: "What produced better results than conventional tapering?",
+            options: [
+              "A pre-taper overload phase",
+              "A longer taper period, extending beyond the usual twenty-one days",
+              "A step reduction rather than a progressive one across the taper period",
+              "Complete rest for the final three days before the target event",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A deliberately hard block before the taper. Both progressive and step reductions worked; the overload phase is the addition that improved outcomes.",
+            sourceLessonSlug: "rest-deloads-tapers",
+          },
+          {
+            prompt: "What did NOT improve with tapering, and why does it matter?",
+            options: [
+              "VO2max and movement economy; a taper reveals capacity rather than building it",
+              "Time to exhaustion; only time-trial performance improved in the pooled analysis",
+              "Perceived recovery; the physiological gains occurred without subjective improvement",
+              "Performance in athletes who had not completed a pre-taper overload phase",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The null is the teaching point. A taper lets accumulated fatigue clear so existing capacity can show up, which is why clients misread a good taper week as proof they should train less generally.",
+            sourceLessonSlug: "rest-deloads-tapers",
+          },
+          {
+            prompt: "What is the honest status of the four-week deload convention?",
+            options: [
+              "A reasonable tradition extrapolated from adjacent literature, not a tested prescription",
+              "A well-evidenced prescription supported by randomized trials in recreational lifters",
+              "A convention contradicted by the taper evidence, which supports longer intervals",
+              "An untested convention that the course therefore recommends against using",
+            ],
+            correctIndex: 0,
+            explanation:
+              "No comparable randomized evidence exists for recreational strength deloads. The course refuses to dress the tradition up, and equally refuses to reject a plausible practice.",
+            sourceLessonSlug: "rest-deloads-tapers",
+          },
+          {
+            prompt: "What is the honest statement to give a client about planned reductions?",
+            options: [
+              "Well supported in endurance tapering, plausibly useful elsewhere",
+              "Well supported across all training modalities, with the strongest evidence in strength work",
+              "Untested in every context, so the decision rests entirely on how the client feels",
+              "Supported only for competitive athletes, with no application to recreational training",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both halves. The evidence is domain-specific, and saying so preserves the coach's credibility when a client checks.",
+            sourceLessonSlug: "rest-deloads-tapers",
+          },
+          {
+            prompt: "Which half of a deload week is programming, and which is coaching?",
+            options: [
+              "The numbers are programming, under the CPT hat; everything around them is coaching",
+              "The schedule is programming; the exercise selection during the deload is coaching",
+              "The decision to deload is programming; its timing within the block is coaching",
+              "Both are coaching, since a deload is a behavioral rather than a technical intervention",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Which weeks, what percentage, which sets: programming. Normalising the reduction, working the guilt, and handling the identity story: coaching.",
+            sourceLessonSlug: "rest-deloads-tapers",
+          },
+          {
+            prompt: "What identity problem makes a planned rest week feel like failure?",
+            options: [
+              "'I am someone who trains hard'",
+              "'I have never been able to sustain a training program before'",
+              "'Rest is what people do when they are not committed enough'",
+              "'My progress depends entirely on the consistency of my attendance'",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson names it exactly. It is a WELL-01 problem, not a physiology problem, which is why the tools that address it come from the psychology course.",
+            sourceLessonSlug: "rest-deloads-tapers",
+          },
+          {
+            prompt: "What does the lesson say is the intervention on deloads?",
+            options: [
+              "The permission; the physiology is the easy part",
+              "The programming, since incorrect deload prescription wastes the training block",
+              "The monitoring, since a deload's adequacy can only be judged by subsequent performance",
+              "The education, since clients who understand the physiology comply more readily",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Same conclusion as the load-exceeds-capacity lesson: permission is the coach's most-used tool on this pillar.",
+            sourceLessonSlug: "rest-deloads-tapers",
+          },
+          {
+            prompt: "What is a 'taper' versus a 'deload'?",
+            options: [
+              "A taper is a planned pre-event volume reduction with intensity maintained; a deload is a routine reduction inside ordinary training",
+              "A taper is a routine reduction inside training; a deload is a pre-event reduction before competition",
+              "A taper reduces intensity; a deload reduces volume, and the two are otherwise identical",
+              "A taper lasts under a week; a deload lasts a full training week by convention",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Pre-event and well-evidenced versus routine and thinly evidenced. The evidence asymmetry is why the course treats them so differently.",
+            sourceLessonSlug: "rest-deloads-tapers",
+          },
+          {
+            prompt: "What does 'revealing versus building' name?",
+            options: [
+              "The distinction a taper illustrates: performance rose while VO2max and economy did not",
+              "The difference between a deload, which reveals fatigue, and a taper, which builds capacity",
+              "The distinction between subjective readiness and objective physiological capacity",
+              "The difference between showing a client their progress and producing further progress",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The taper's null on VO2max and economy is what establishes it. Capacity was already there; the taper let it appear.",
+            sourceLessonSlug: "rest-deloads-tapers",
+          },
+          {
+            prompt: "Why do recovery conversations surface medical material so fast?",
+            options: [
+              "Exhaustion is the common language of many serious things",
+              "Clients on this pillar are more likely to be under active clinical care already",
+              "Recovery interventions carry physical risks that other pillars' interventions do not",
+              "Wearable data prompts clients to raise concerns they would otherwise not mention",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Exhaustion is non-specific, and its non-specificity is exactly why it belongs to clinicians rather than to a label from a coach.",
+            sourceLessonSlug: "referral-on-recovery",
+          },
+          {
+            prompt: "Which finding goes to medical care 'without exception and without waiting'?",
+            options: [
+              "Any chest symptom during exertion, heat exposure, or cold exposure",
+              "Persistent fatigue that rest does not resolve over a period of several weeks",
+              "New palpitations, provided they occur more than once in a single week",
+              "Unrefreshing sleep despite adequate duration across a month of tracking",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The chest symptom is the one with no qualifier attached. The others are genuine referral triggers with conditions on them.",
+            sourceLessonSlug: "referral-on-recovery",
+          },
+          {
+            prompt: "What accompanies persistent fatigue as a medical-referral signal?",
+            options: [
+              "Weight change, temperature intolerance, breathlessness, or unusual bruising or bleeding",
+              "Reduced training performance, low motivation, and irritability lasting several weeks",
+              "Elevated resting heart rate, suppressed HRV, and poor subjective recovery scores",
+              "Muscle soreness that persists beyond 96 hours after a training session",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Four specific accompaniments, each pointing at something a clinician needs to exclude. The performance and mood picture is the non-specific presentation, which routes differently.",
+            sourceLessonSlug: "referral-on-recovery",
+          },
+          {
+            prompt: "What is unrefreshing sleep with snoring and daytime sleepiness?",
+            options: [
+              "A sleep-apnea question, not a hygiene question",
+              "A circadian question, best addressed by adjusting the client's schedule",
+              "A recovery question, best addressed by reducing training load temporarily",
+              "A stress question, since autonomic arousal fragments sleep architecture",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson names the distinction explicitly. Coaching sleep hygiene at an untreated airway problem delays a diagnosis only medicine can make.",
+            sourceLessonSlug: "referral-on-recovery",
+          },
+          {
+            prompt: "Which findings route to mental-health care?",
+            options: [
+              "Flattened mood, lost interest, hopelessness, anything touching self-harm, decision-driving anxiety",
+              "Low motivation, irritability, and reduced enjoyment of training over a period of weeks",
+              "Poor sleep, elevated stress ratings, and declining HRV across a monitoring period",
+              "Frustration with progress, comparison to others, and reluctance to attend sessions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Five, and self-harm goes immediately with the crisis-line information from WELL-00 in hand. Ordinary frustration and reluctance are coaching material, not referral triggers.",
+            sourceLessonSlug: "referral-on-recovery",
+          },
+          {
+            prompt: "What is 'exercise dependence,' and where does it route?",
+            options: [
+              "Rest producing genuine distress rather than reluctance; a mental-health referral",
+              "Training more than the recommended volume; a programming adjustment",
+              "Inability to reduce training load without losing fitness; a periodization problem",
+              "Compulsive tracking of training metrics; a technology-boundary conversation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Distress rather than reluctance is the discriminator, and the lesson is explicit that it is not a motivation problem. It is a relationship with exercise that needs more than a coach.",
+            sourceLessonSlug: "referral-on-recovery",
+          },
+          {
+            prompt: "What must be screened before heat and cold exposure?",
+            options: [
+              "Cardiovascular disease, arrhythmia, uncontrolled blood pressure, pregnancy, Raynaud's, and relevant medications",
+              "Cardiovascular disease and pregnancy only, since the other conditions do not affect thermal tolerance",
+              "Current medication use, since drug interactions are the primary risk in thermal exposure",
+              "Prior experience with the modality, since unacclimated individuals face the greatest risk",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Six categories, including any medication affecting heat tolerance or blood pressure. Raynaud's is the one most often forgotten before cold exposure.",
+            sourceLessonSlug: "referral-on-recovery",
+          },
+          {
+            prompt: "What is the coach's role in contraindication screening?",
+            options: [
+              "Asking the question and routing it to someone who can answer it, not clearing anyone medically",
+              "Clearing the client for the modality once no contraindications are reported",
+              "Obtaining written medical clearance before any thermal exposure begins",
+              "Documenting the screening and proceeding unless the client reports a listed condition",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Ask and route. The lesson is explicit that you are not clearing anyone, which is what distinguishes screening from assessment.",
+            sourceLessonSlug: "referral-on-recovery",
+          },
+          {
+            prompt: "What is the referral trap specific to this pillar?",
+            options: [
+              "Recovery tools feel benign, so the referral instinct switches off",
+              "Clients on this pillar resist referral more than clients on other pillars do",
+              "Recovery symptoms develop gradually, so no single moment triggers the referral",
+              "The coach's own recovery practice creates a bias toward recommending the same tools",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A coach who would never coach a client's chest pain will happily coach the same client's 'low HRV', and the tool's harmlessness is doing the work of hiding the symptom.",
+            sourceLessonSlug: "referral-on-recovery",
+          },
+          {
+            prompt: "What is the 'symptom behind the metric'?",
+            options: [
+              "The clinical finding a wearable number is standing in for, which is what gets referred",
+              "The physiological mechanism that causes a wearable reading to change",
+              "The subjective experience a client reports alongside an objective measurement",
+              "The measurement error that makes a wearable reading appear abnormal",
+            ],
+            correctIndex: 0,
+            explanation:
+              "When a measurement is standing in for a symptom, refer the symptom. It is the operational form of this pillar's referral trap.",
+            sourceLessonSlug: "referral-on-recovery",
+          },
+          {
+            prompt: "A client reports three weeks of low HRV, exhaustion rest does not touch, and recent unexplained weight loss. What do you do?",
+            options: [
+              "Refer for the medical question, and coach only what is legitimately yours alongside it",
+              "Reduce their training load and reassess the HRV trend over the following two weeks",
+              "Investigate their sleep and stress inputs, since both drive HRV and fatigue together",
+              "Advise a deload week, since the picture is consistent with accumulated training load",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Persistent fatigue plus weight change is a named medical trigger. Treating it as a load problem is the trap: the metric is standing in for a symptom.",
+            sourceLessonSlug: "referral-on-recovery",
+          },
+          {
+            prompt: "A client says a rest week feels like giving up. Which tools apply?",
+            options: [
+              "The WELL-01 tools on the identity problem, plus normalising the reduction",
+              "Education about the taper evidence, which shows reduced volume improves performance",
+              "A revised program with a lower-volume week that does not feel like rest",
+              "Reassurance that the feeling will pass once they see their performance improve",
+            ],
+            correctIndex: 0,
+            explanation:
+              "'I am someone who trains hard' is an identity story, and the psychology course owns it. Education and reassurance both aim at the wrong variable.",
+            sourceLessonSlug: "rest-deloads-tapers",
+          },
+          {
+            prompt: "What is a 'red flag' in this course's vocabulary?",
+            options: [
+              "An observation that stops coaching and starts a referral, regardless of how well coaching was going",
+              "A symptom severe enough to require immediate emergency care rather than routine referral",
+              "A pattern in a client's data that suggests their program needs adjustment",
+              "A sign that a client is at risk of disengaging from the coaching relationship",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The 'regardless of how well the coaching was going' clause is the load-bearing half. Progress is not a reason to defer a referral.",
+            sourceLessonSlug: "referral-on-recovery",
+          },
+          {
+            prompt: "Why does the course refuse to recommend against deloads despite the thin evidence?",
+            options: [
+              "Absence of tested prescription is not evidence the practice fails; volume reduction with intensity held is supported in tapering",
+              "Deloads are standard practice, and contradicting convention would undermine the coach's credibility",
+              "Deload evidence is emerging and the course anticipates it will be confirmed shortly",
+              "Deloads carry no risk, so they should be recommended regardless of the evidence base",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The honest statement is 'well supported in endurance tapering, plausibly useful elsewhere.' That is different from both endorsement and rejection.",
+            sourceLessonSlug: "rest-deloads-tapers",
+          },
+        ],
+      },
     },
     {
       slug: "final-recovery-stress",
