@@ -471,6 +471,13 @@ pnpm gen:outline <slug>                 # the course as a structured outline, ge
 pnpm gen:outline --series <seriesSlug>  # a whole series (this replaced gen-well-outline.ts)
 ```
 
+Every question is supposed to carry `sourceLessonSlug`, which is what turns a wrong answer into
+"reread this lesson". The eight courses migrated from CentOS carried none, because the CentOS quiz
+files have no lesson association: `scripts/lib/source-lesson-match.ts` assigns one at generation time
+(structurally when a section holds a single lesson, by BM25 over the section's lessons otherwise) and
+**declines when the evidence is thin**, because a wrong "reread this" link is worse than no link.
+`pnpm gen:health` reports its coverage on every run.
+
 `audit:course` exists because twelve green guards are not the same as a complete course: the nine
 WELL courses passed every one of them while all nine were missing their terminal-section quiz, 27
 lessons appeared only inside a final's pool, and one lesson had no question anywhere. A guard cannot
