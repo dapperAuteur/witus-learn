@@ -1342,6 +1342,890 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
               "Coaches may share evidence-based resources from nationally recognized authorities while remaining facilitators rather than content experts. Diagnosis, lab interpretation, and prescribing or de-prescribing are all on the exclusion list.",
             sourceLessonSlug: "what-a-wellness-coach-is",
           },
+          {
+            prompt: "Which of these appears on the NBHWC exclusion list?",
+            options: [
+              "Interpreting medical data",
+              "Facilitating a client's self-determined goals across several sessions",
+              "Sharing evidence-based resources from nationally recognized authorities",
+              "Supporting implementation of a plan written by a licensed professional",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Interpreting medical data is explicitly excluded, alongside diagnosing, prescribing or de-prescribing, recommending supplements, nutrition consultation and meal plans, exercise prescription, and psychological therapeutic interventions. The other three are the coach's defined role.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "The NBHWC exclusion list names two things a coach may not do with medication. What are they?",
+            options: [
+              "Prescribe and de-prescribe",
+              "Prescribe and store, though discussing adherence is permitted without limits",
+              "Recommend and administer, though prescribing is allowed with clinician sign-off",
+              "Interpret and substitute, though generic alternatives may be suggested freely",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Prescribing and DE-prescribing both appear. The second half matters: telling a client to stop or reduce a medication is as far outside coaching as writing the prescription was.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "How does the NBHWC scope treat supplements?",
+            options: [
+              "Coaches do not recommend them",
+              "Coaches may recommend them where the product carries third-party testing certification",
+              "Coaches may recommend them once a physician has confirmed no interaction exists",
+              "Coaches may recommend them if they hold a separate nutrition certification alongside",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Recommending supplements is flatly on the exclusion list, with no product-quality, clinician-clearance, or second-credential exception written into it.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "A verification note in this lesson corrects an earlier reading of the NBHWC scope page. What changed?",
+            options: [
+              "An earlier read recorded four named therapy modalities; the current page names five, adding Solution Focused Therapy",
+              "An earlier read recorded five named therapy modalities; the current page names four, having dropped EMDR",
+              "An earlier read placed exercise prescription outside the list; the current page adds it explicitly",
+              "An earlier read treated the list as exhaustive; the current page adds 'other such therapies' behind it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Four became five, with Solution Focused Therapy added. The course teaches the list as the primary states it today, and shows the correction rather than quietly updating.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "What phrase does the NBHWC scope use to sweep in therapies it does not name individually?",
+            options: [
+              "Other such therapies",
+              "And any related clinical modality practised under licensure",
+              "Together with all interventions requiring a mental-health credential",
+              "Including any therapy delivered in a structured protocol format",
+            ],
+            correctIndex: 0,
+            explanation:
+              "'Other such therapies' follows the five named examples, which is what makes the list illustrative rather than exhaustive. A therapy's absence from the named five is not permission.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "Exercise prescription is inside your CPT scope and on the coaching exclusion list. What does the list actually mean?",
+            options: [
+              "A coaching credential alone does not authorize it, so when you program training you are working as a trainer",
+              "Exercise prescription is prohibited for anyone who also markets themselves as a coach",
+              "Coaching clients must be referred out for programming even when their coach holds a CPT",
+              "The exclusion applies only where the coach charges separately for the programming work",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The list describes what a coaching credential authorizes, not what a person may do. The two hats coexist; what matters is knowing which one you are wearing.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "ACE's nutrition position statement places which of these outside an exercise professional's scope?",
+            options: [
+              "Nutritional assessment",
+              "Teaching a client to read a nutrition-facts label on packaged food",
+              "Sharing federal dietary guidelines published for the general public",
+              "Discussing meal-preparation strategy as a time-management problem",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Nutritional assessment is outside scope. Label reading, government guidelines, and meal-prep strategy are the general education that remains inside it.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "Under ACE's position statement, when may personalized nutrition recommendations or meal planning be shared?",
+            options: [
+              "Only within evidence-based guidelines or materials developed and endorsed by a registered dietitian nutritionist or physician",
+              "Only where the client has signed a waiver acknowledging the coach is not a dietitian",
+              "Only when the recommendations avoid any mention of calorie or macronutrient targets",
+              "Only for clients with no diagnosed condition affecting their nutritional requirements",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The permission runs through materials an RDN or physician developed and endorsed. Waivers, target-avoidance, and the absence of a diagnosis do not create the authority.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "ACE's statement addresses what a professional may call themselves. What does it forbid?",
+            options: [
+              "Promoting oneself as a 'nutritionist' or 'dietitian'",
+              "Promoting oneself as a 'nutrition coach' or 'wellness coach' without accreditation",
+              "Promoting any nutrition service without listing the underlying certification's issuer",
+              "Promoting nutrition services alongside training services in the same advertisement",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The forbidden self-descriptions are 'nutritionist' and 'dietitian'. Coach titles are not what the statement restricts, though state title law may say more.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "Which four situations does NASM's guidance say require referral to a registered dietitian?",
+            options: [
+              "Individualized meal planning, nutritional assessment, specialty diets, and nutrition counseling",
+              "Weight loss, weight gain, sports performance, and any pediatric client",
+              "Any client with a chronic condition, a food allergy, a supplement question, or a body-composition goal",
+              "Individualized meal planning, supplement selection, hydration protocols, and pre-competition fuelling",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Individualized meal planning, nutritional assessment, specialty diets, and nutrition counseling. Goals and populations do not by themselves trigger the referral; the KIND of work does.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "What does NASM's guidance leave inside a coach's scope?",
+            options: [
+              "Portion education, label reading, government guidelines, meal-prep strategy, and coaching the behavior",
+              "Portion education, macronutrient targets, government guidelines, and supplement timing",
+              "Anything the client requests, provided no specific food quantities are named",
+              "General education, plus individualized planning where no medical condition is present",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Five things: portions, labels, published guidelines, meal-prep strategy, and the behavior itself. Macronutrient targets and supplement timing are individualized prescription.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "The lesson states a common core across all three exclusion lists. What is it?",
+            options: [
+              "Educate generally, facilitate behavior, refer individually",
+              "Assess broadly, prescribe cautiously, document thoroughly",
+              "Inform the client, obtain consent, then proceed within the written plan",
+              "Defer to the client's physician on anything touching health outcomes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three verbs and the boundary they draw: general education and behavior facilitation stay with the coach; anything individualized goes to a license.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "What is a 'position statement' in this course's vocabulary?",
+            options: [
+              "An organization's published stance on a boundary question: weaker than statute, stronger than opinion",
+              "A statutory declaration a licensing board files when it adopts a new interpretation",
+              "A certifying body's binding rule, enforceable against its certificants through discipline",
+              "A consensus document jointly issued by two or more credentialing organizations",
+            ],
+            correctIndex: 0,
+            explanation:
+              "ACE's nutrition statement is the lesson's example. It carries real weight in a scope argument without having the force of law, which is exactly the middle ground the definition names.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "What distinguishes general from individualized guidance, as the exclusion lists converge on it?",
+            options: [
+              "Portions, labels, and public guidelines are general; a plan built for one person's body or condition is individualized",
+              "Written material is general; anything delivered verbally in session is individualized",
+              "Free material is general; anything the client pays for is individualized",
+              "Group delivery is general; anything delivered one-to-one is individualized",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The line is about the CONTENT's specificity to one person, not the medium, the price, or the group size. A one-to-one conversation about published guidelines is still general education.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "A client asks their coach which magnesium product to buy for sleep. What does the converged guidance require?",
+            options: [
+              "Decline the recommendation and route the question to a licensed provider, since supplement recommendation is excluded",
+              "Recommend a third-party-tested product, since quality verification satisfies the scope concern",
+              "Recommend a product but document that the client requested it first",
+              "Recommend the form rather than the brand, since forms are general information",
+            ],
+            correctIndex: 0,
+            explanation:
+              "All three organizations exclude recommending supplements. Testing certifications, client-initiated requests, and brand-versus-form distinctions do not create authority the scope withholds.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "Why does this lesson open by saying nothing in it is legal advice?",
+            options: [
+              "It teaches the STRUCTURE of regulation so you know which questions to ask a lawyer, not so you can skip asking",
+              "Because statutory material is copyrighted and cannot be reproduced as advice",
+              "Because the author is not admitted to practice in the states the lesson cites",
+              "Because state law changes too frequently for any lesson to remain accurate",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson's stated purpose is structural literacy: knowing the shapes regulation takes so you can ask a lawyer the right question about your own jurisdiction.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "Which describes practice regulation of dietetics?",
+            options: [
+              "It reserves the WORK, so in some states only licensees may perform medical nutrition therapy",
+              "It reserves the NAME, so only licensees may call themselves a dietitian",
+              "It reserves the setting, so nutrition work is restricted to clinical facilities",
+              "It reserves the payment, so only licensees may bill insurance for nutrition services",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Practice regulation reserves activities; title regulation reserves names. Settings and billing are separate regulatory questions entirely.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "Under pure title regulation, what may an unlicensed person do?",
+            options: [
+              "Share general nutrition information, while the protected titles remain reserved to licensees",
+              "Perform medical nutrition therapy, provided they never use a protected title",
+              "Nothing involving nutrition, since the title restriction implies a practice restriction",
+              "Everything a licensee may do, since only marketing language is regulated",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Title regulation restricts the name, not the general work. It does not license medical nutrition therapy to the unlicensed, and it does not shut them out of general nutrition information.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "Why does the lesson say a coaching business must check each state it operates in?",
+            options: [
+              "Many states mix practice and title regulation, and the pattern varies enough that one state's answer does not transfer",
+              "Federal law requires registration in every state where a client resides",
+              "Each state sets a different minimum certification level for nutrition coaching",
+              "Interstate coaching is prohibited unless the coach holds a license in the client's state",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The variation is the point: states mix the two models differently, so the answer is jurisdiction-by-jurisdiction rather than a single national rule.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "What did Michigan's Public Act 39 of 2024 do?",
+            options: [
+              "Made Michigan a licensure state for dietitian nutritionists, approved on April 30, 2024",
+              "Repealed Michigan's dietitian licensure scheme in favor of pure title protection",
+              "Extended Michigan's dietetics practice act to cover wellness coaching for the first time",
+              "Created a registration pathway allowing coaches to perform medical nutrition therapy",
+            ],
+            correctIndex: 0,
+            explanation:
+              "PA 39 established licensure for dietitian nutritionists. Notably, its exemption section then protected a great deal of coaching work by name.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "Michigan's exemption section (MCL 333.18353) is remarkable for what?",
+            options: [
+              "How much coaching work it explicitly protects, including individualized wellness recommendations",
+              "How narrowly it draws the exemption, protecting only unpaid general information",
+              "Its silence on coaching, which leaves the boundary to board interpretation",
+              "Its requirement that exempt practitioners register with the state annually",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It names general nonmedical nutrition information, guidance, encouragement, individualized recommendations for wellness or primary prevention, behavior-change management, coaching, assessments, and weight-management services.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "Michigan's exemption is conditional. What are the two conditions?",
+            options: [
+              "The work must not constitute medical nutrition therapy, and the person must not use protected titles or hold out as licensed",
+              "The work must be unpaid, and the person must carry professional liability insurance",
+              "The person must hold a recognized coaching certification, and must document each session",
+              "The client must have no diagnosed condition, and must sign an acknowledgment of scope",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two conditions: not medical nutrition therapy, and no protected titles or holding out as a licensed provider. Payment, certification, and documentation are not among them.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "Michigan's exemption protects individualized nutrition recommendations for which purposes?",
+            options: [
+              "Wellness or primary prevention of chronic disease",
+              "Wellness only, with any disease-related purpose falling outside the exemption",
+              "Treatment or management of diagnosed chronic disease under a physician's direction",
+              "Athletic performance and body composition, but not health outcomes generally",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The statute reaches wellness AND primary prevention of chronic disease. What it does not reach is medical nutrition therapy, which is the treatment side of the line.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "What does Indiana Code section 25-14.5-7-3 permit?",
+            options: [
+              "Disseminating free information, conducting a class or seminar, or giving a speech related to nutrition",
+              "Performing nutritional assessment provided no fee is charged for the service",
+              "Using the title 'nutritionist' where the person holds any nutrition certification",
+              "Providing individualized dietary plans where the client is not under medical care",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three protected activities: free information, classes or seminars, and speeches. Indiana protects titles without reserving general nutrition practice.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "Which regulatory model does Indiana's dietitian statute follow?",
+            options: [
+              "Title protection without reserving general practice",
+              "Practice regulation reserving all nutrition counseling to licensees",
+              "A hybrid reserving both the title and any paid nutrition service",
+              "Registration, under which unlicensed practitioners file annually with the state",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Indiana bars professing to be a licensed dietitian but expressly leaves general nutrition speech alone. Michigan, by contrast, licenses practice and then exempts coaching by name.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "Who was Steve Cooksey, and what did the North Carolina board object to?",
+            options: [
+              "A blogger managing his own type 2 diabetes with a low-carbohydrate diet; the board said answering readers' individual food questions was unlicensed dietetics",
+              "A licensed dietitian whose advertising the board found misleading under its title rules",
+              "A nutrition coach the board fined for creating meal plans for paying clients",
+              "A physician the board investigated for delegating dietary counseling to unlicensed staff",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Cooksey blogged about managing his own type 2 diabetes on a low-carbohydrate diet. The board's position was that answering readers' individual questions, whether free or paid, was the unlicensed practice of dietetics.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "How did the North Carolina board communicate what Cooksey could and could not say?",
+            options: [
+              "A 19-page printout of his website marked up in red pen",
+              "A formal cease-and-desist order specifying each prohibited passage by URL",
+              "A published advisory opinion applying to all nutrition bloggers in the state",
+              "A subpoena requiring him to appear and justify each post individually",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The red-penned 19-page printout is the detail that made the case famous, and it is what gave the chilling-effect argument its force.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "What did the Fourth Circuit actually decide in Cooksey v. Futrell?",
+            options: [
+              "That the board's actions had an objectively reasonable chilling effect, giving Cooksey standing to bring his claim",
+              "That North Carolina's dietetics practice act violated the First Amendment as applied to bloggers",
+              "That individualized dietary advice is protected speech regardless of the speaker's licensure",
+              "That state dietetics boards may not regulate any advice delivered over the internet",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The holding was about standing, not the merits. The court decided he could SUE, and sent the case back down. Reading it as a substantive First Amendment victory overstates it.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "How did the Cooksey litigation end?",
+            options: [
+              "In February 2015, when the board adopted new guidelines permitting ordinary non-individualized diet advice without a license",
+              "In a Fourth Circuit ruling striking down the state's dietetics practice act",
+              "In a settlement paying Cooksey damages while leaving the board's rules unchanged",
+              "In a Supreme Court decision establishing a national standard for nutrition speech",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The board changed its guidelines in February 2015. The practice act was not struck down and no higher court set a national rule.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "What is the two-sided moral the lesson draws from Cooksey?",
+            options: [
+              "General nutrition speech has real constitutional protection, and individualized clinical nutrition care remains squarely regulable",
+              "Blogging about health is protected, and in-person consultation is not",
+              "Free advice is protected, and paid advice is regulable",
+              "Personal experience is protected, and any reference to research is regulable",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both halves matter, and the coaching lane runs between them. Note what the line is NOT drawn on: medium, price, or whether research is cited.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "The lesson marks one edge as genuinely contested. Which?",
+            options: [
+              "Where individualized wellness recommendations end and medical nutrition therapy begins",
+              "Whether title protection applies to the word 'coach' in most states",
+              "Whether general nutrition information may be shared for a fee",
+              "Whether a coach may reference federal dietary guidelines with a client",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That boundary is interpreted differently by state boards and advocacy organizations and is jurisdiction-specific. The lesson calls it a get-counsel situation rather than a read-a-lesson one.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "A coach's work drifts toward disease-focused individualized diet planning in a state that exempts wellness coaching. What does the lesson say?",
+            options: [
+              "They are in the gray zone even where wellness coaching is exempt, and should get counsel",
+              "They are protected, because the state's exemption covers all coaching activity by name",
+              "They are protected, provided they avoid protected titles in their marketing",
+              "They are clearly in violation, since disease focus always constitutes medical nutrition therapy",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Neither of the confident answers is right. The exemption does not extend automatically to disease-focused individualized planning, and the lesson refuses to declare it a definite violation either.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "Why does the lesson call the NBHWC exclusion list 'the sharpest' of the three?",
+            options: [
+              "It enumerates excluded activities directly rather than describing scope only in the positive",
+              "It carries disciplinary consequences the ACE and NASM statements lack for their certificants",
+              "It is the only one of the three reviewed and reissued on a published annual schedule",
+              "It is the only one written by an organization that certifies rather than trains",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Sharpness here means explicitness: a named inventory of what coaches do not do, rather than a positive description leaving the boundary to inference. ACE and NASM converge on the substance with less enumeration.",
+            sourceLessonSlug: "the-exclusion-lists",
+          },
+          {
+            prompt: "A coach in a title-only state calls themselves a 'nutrition coach' and teaches a paid seminar on reading food labels. Under the structure this lesson teaches, what is the analysis?",
+            options: [
+              "Both are likely lawful: the title is not protected and label education is general information",
+              "Both are likely unlawful: charging a fee converts general education into regulated practice",
+              "The seminar is lawful but the title is not, since any nutrition-related title is reserved",
+              "The title is lawful but the seminar is not, since teaching requires a practice-act exemption",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Title regulation reserves the protected names, and 'nutrition coach' is not among them; label reading is general education all three organizations leave in scope. Indiana's statute expressly protects classes and seminars. Fees do not convert general education into regulated practice.",
+            sourceLessonSlug: "nutrition-law",
+          },
+          {
+            prompt: "Which protected titles does the therapy-law lesson list as reserved by states?",
+            options: [
+              "Psychologist, social worker, licensed professional counselor, marriage and family therapist, and psychotherapist",
+              "Psychologist, psychiatrist, behavioral analyst, addiction specialist, and crisis counselor",
+              "Therapist, counselor, coach, mental-health worker, and clinical supervisor",
+              "Psychologist, social worker, health coach, wellness counselor, and behavioral therapist",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Those five and their kin. 'Coach' is conspicuously not among them, which is precisely why the functional test exists rather than a title test.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "Which categories of coach does Colorado's exemption name explicitly?",
+            options: [
+              "Life coach, executive coach, personal coach, and business coach",
+              "Health coach, wellness coach, life coach, and executive coach",
+              "Life coach, career coach, performance coach, and recovery coach",
+              "Wellness coach, nutrition coach, fitness coach, and mindset coach",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The statute names life, executive, personal, and business coaching, introduced by 'including', which makes the list illustrative rather than closed.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "Recite the three conditions of Colorado's professional-coach exemption.",
+            options: [
+              "Coach-specific training; serving clients exclusively as a coach; and not engaging in the six defined practices",
+              "Coach-specific training; carrying liability insurance; and disclosing non-licensure to every client in writing",
+              "A recognized certification; supervision by a licensed clinician; and annual registration with the state",
+              "Coach-specific training; avoiding all protected titles; and referring any client with a diagnosis",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Training, exclusivity, and non-engagement in the six defined practices. Insurance, supervision, registration, and disclosure are not conditions of the exemption.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "Which six practices does Colorado's exemption require a coach not engage in?",
+            options: [
+              "Psychology, social work, marriage and family therapy, licensed professional counseling, psychotherapy, and addiction counseling",
+              "Psychology, psychiatry, social work, marriage and family therapy, psychotherapy, and behavioral analysis",
+              "Psychotherapy, addiction counseling, crisis intervention, trauma treatment, psychiatry, and psychology",
+              "Psychology, social work, dietetics, nursing, psychotherapy, and addiction counseling",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Six named practices, each 'as those practices are defined in this article 245'. The definitions in the article are what actually decide the question, not the everyday meaning of the words.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "Where does Colorado's title protection sit relative to the coach exemption, and why does it matter?",
+            options: [
+              "In subsection (1), separate from the (2)(f) exemption, so protected titles stay off-limits regardless",
+              "Inside the (2)(f) exemption as its fourth condition, so using a title voids the exemption entirely",
+              "In a separate article covering advertising, so it does not bear on practice at all",
+              "In board rules rather than statute, so it varies with each rulemaking cycle",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It lives in subsection (1) and applies independently. The course flags this because some summaries fold the title rule into the exemption's conditions, and the statute does not read that way.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "'Serving clients exclusively as a coach' is one of the exemption's conditions. What does it constrain?",
+            options: [
+              "The relationship with that client must be coaching only, not coaching mixed with a defined clinical practice",
+              "The coach may hold no other professional credential of any kind",
+              "The coach may not work with clients who are simultaneously in therapy elsewhere",
+              "The coach must derive all professional income from coaching services",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It governs what the coach DOES with the client. Holding other credentials, having clients in therapy elsewhere, and income mix are not what the condition addresses.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "What is the 'functional test'?",
+            options: [
+              "Regulators evaluate what you DO, not what you call it",
+              "Regulators assess whether the client's function improved during the engagement",
+              "Regulators examine whether the practitioner's training covered the activity performed",
+              "Regulators consider whether the service was billed as coaching or as treatment",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Activities decide which law applies. It is the reason labels never launder out-of-scope work, and the reason 'but I called it coaching' is not a defense.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "The lesson gives an example of the functional test biting. What is it?",
+            options: [
+              "Marketing 'anxiety coaching' while doing deep emotional processing can be evaluated as psychotherapy practice",
+              "Marketing 'life coaching' while charging clinical rates can be evaluated as psychotherapy practice",
+              "Marketing any service by a diagnosis name automatically constitutes unlicensed practice",
+              "Marketing coaching to clients already in therapy constitutes interference with treatment",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The activity is what converts it: deep emotional processing. Note it is 'can be evaluated as', decided by boards and courts case by case, not an automatic rule about naming.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "How does the lesson describe the coaching-versus-therapy boundary?",
+            options: [
+              "The most contested boundary in the field, decided by boards and courts case by case",
+              "A settled boundary that varies only in how each state words the same rule",
+              "A boundary settled federally, with state practice acts implementing one national standard",
+              "A boundary that matters only where the coach lacks any mental-health training",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Most contested in the field, resolved case by case. The program teaches it AS contested rather than offering a confidence the law does not support.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "What does the lesson call the safe interior of coaching?",
+            options: [
+              "Present-and-future-focused behavior change around goals",
+              "Any work that avoids naming a diagnosis or a therapy modality",
+              "Any conversation the client initiates and directs themselves",
+              "Work confined to the five wellness pillars, excluding emotional content",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Present-and-future orientation around goals. Emotional content is not excluded, and avoiding names does not by itself make work safe under a functional test.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "What three things does the lesson identify as the danger zone?",
+            options: [
+              "Treating conditions, processing trauma, and borrowing therapy modalities by name",
+              "Discussing emotions, discussing the past, and discussing medication",
+              "Working with distressed clients, charging clinical rates, and coaching remotely",
+              "Marketing to clinical populations, accepting insurance, and coaching without certification",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Treatment, trauma processing, and modality borrowing. Discussing emotions or the past is not itself the danger; the sustained clinical activity is.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "Which of these does the lesson place INSIDE coaching?",
+            options: [
+              "Exploring stress, emotions, and beliefs as they bear on current behavior and goals",
+              "Working through a client's childhood experiences to resolve their present anxiety",
+              "Delivering a structured cognitive-behavioral protocol adapted for a coaching format",
+              "Assessing whether a client's low mood meets the threshold for clinical concern",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Emotional material is in scope where it bears on current behavior and goals. Historical processing, protocol delivery, and threshold assessment are all clinical work.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "What may a coach teach about stress, per this lesson?",
+            options: [
+              "Evidence-based stress-management skills in a coaching frame, alongside reflective listening",
+              "Any technique drawn from cognitive-behavioral therapy, provided it is not named as CBT",
+              "Clinical relaxation protocols, where the client has no psychiatric diagnosis",
+              "Nothing; stress content belongs entirely to licensed mental-health practice",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Evidence-based skills in a coaching frame plus reflective listening. Renaming a CBT technique does not move it, and stress is not wholly off-limits either.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "What is a 'practice act'?",
+            options: [
+              "The state law defining a licensed profession's reserved activities and who may perform them",
+              "A certifying body's published rules governing its certificants' conduct in practice",
+              "The written agreement between a coach and client setting out the scope of the engagement",
+              "A board's enforcement action against a practitioner who exceeded their scope",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Practice acts are statutes. Colorado's article 245 is the lesson's example, and it is the article whose definitions the coach exemption points back to.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "What is a 'coach exemption,' and what does its existence tell you?",
+            options: [
+              "A statutory carve-out keeping coaching lawful on stated conditions, rather than by the absence of law",
+              "A board policy declining to enforce practice acts against coaches in most circumstances",
+              "A constitutional protection for coaching speech recognized across all jurisdictions",
+              "An insurer's endorsement extending liability coverage to coaching activities",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The distinction matters: coaching is lawful in Colorado because a statute says so on conditions, not because nothing addresses it. Fail the conditions and the carve-out does not apply.",
+            sourceLessonSlug: "therapy-law",
+          },
+          {
+            prompt: "Which NBHWC competency numbers the referral duty directly beneath the scope competency?",
+            options: [
+              "Competency 4.2.2, refer clients as appropriate",
+              "Competency 4.3.1, maintain professional boundaries in all client relationships",
+              "Competency 5.1.4, recognize the limits of coaching in clinical populations",
+              "Competency 3.2.2, escalate concerns to a supervising practitioner",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Competency 4.2 is knowing and abiding by the scope; 4.2.2 sits directly beneath it as the referral duty. The numbering itself shows referral treated as part of scope, not as a separate topic.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "Which occasions does the NBHWC outline name for referral?",
+            options: [
+              "Imminent danger, trauma treatment, mental health treatment, and other professional healthcare",
+              "Imminent danger, disordered eating, substance use, and any diagnosed chronic condition",
+              "Any client request, any clinician request, and any symptom lasting beyond two weeks",
+              "Trauma treatment, medication questions, insurance disputes, and legal matters",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Four occasions, with the last deliberately broad. Substance-use counselling is addressed separately in the outline as beyond scope.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "How does the NBHWC outline build referral into the craft itself?",
+            options: [
+              "The coach maintains professional boundaries, seeks consultation when needed, and treats scope questions as ethics questions",
+              "The coach documents each referral in a standardized format retained for seven years",
+              "The coach obtains written clinician approval before continuing with a referred client",
+              "The coach suspends the coaching relationship until licensed care has concluded",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Boundaries, consultation, and the framing of scope questions as ethics questions. Referral is treated as ongoing professional posture, not paperwork or suspension.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "What does the outline say specifically about counseling on substance abuse?",
+            options: [
+              "It is beyond the coach's scope of practice, and appropriate professional referral is the move",
+              "It is within scope where the coach has completed addiction-specific continuing education",
+              "It is within scope for prevention, and outside it only once dependence is diagnosed",
+              "It is within scope where the client is concurrently engaged with a treatment program",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Flatly beyond scope, with referral as the response. Note also Colorado's exemption names addiction counseling as one of its six defined practices, so the two frameworks agree.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "What does the NBHWC Code of Ethics require regarding conflicts of interest?",
+            options: [
+              "Open disclosure to everyone involved, plus an offer to step aside when one arises",
+              "Disclosure to the client alone, with documentation retained in the coaching file",
+              "Avoidance of any engagement where a potential conflict could conceivably arise",
+              "Disclosure to the certifying board within thirty days of the conflict being identified",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Disclose openly to everyone involved and offer to step aside. The offer is the part most often omitted, and it is what makes the disclosure meaningful.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "When must compensation from third parties, referral fees, or product sales be disclosed?",
+            options: [
+              "Before coaching begins",
+              "Within the first three sessions of the engagement",
+              "At the point the compensation is actually received",
+              "Only where the arrangement could influence a specific recommendation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Before coaching begins. Disclosing later, or only when the money arrives, defeats the purpose: the client should know before deciding to engage.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "What does the Code of Ethics require of a coach who also holds a clinical credential?",
+            options: [
+              "Commitment to the ethics code and standards of practice of EACH profession, understanding the scope parameters of each",
+              "Commitment to whichever profession's standards are stricter on any given question",
+              "Suspension of the clinical credential while acting in a coaching capacity",
+              "Written notice to both certifying bodies that dual practice is being undertaken",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Each profession's code and standards, with the scope parameters of each understood. This is the formal version of the course's two-hats rule.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "What duty did the November 2025 update to the NBHWC Code of Ethics add?",
+            options: [
+              "Disclosing the use of artificial intelligence in delivering coaching, including how it may affect client privacy",
+              "Disclosing whether coaching sessions are recorded and how long recordings are retained",
+              "Disclosing the coach's supervision arrangements and the identity of their supervisor",
+              "Disclosing any use of client data in research, marketing, or program evaluation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "AI disclosure, explicitly including its privacy implications. It is the code's most modern duty and one this program treats as directly relevant to how it was itself built.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "What four situations does ACE's material direct health coaches to refer for?",
+            options: [
+              "Serious physical illness, disordered eating, suicidal ideation, and severe psychological distress",
+              "Serious physical illness, medication questions, disordered eating, and family conflict",
+              "Suicidal ideation, substance use, chronic pain, and any psychiatric diagnosis",
+              "Disordered eating, severe distress, insurance questions, and any request for a meal plan",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Those four. Each is observable in a coaching conversation without diagnosing anything, which is what makes them usable as triggers.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "What posture does NASM teach when work hedges toward diagnosis or treatment?",
+            options: [
+              "Support the client in engaging their physician or therapist, rather than working the condition",
+              "Continue coaching while monitoring the condition and documenting any change",
+              "Pause the engagement until the client produces clearance from a treating clinician",
+              "Refer only where the client explicitly asks for help with the condition",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Support the client's engagement with licensed care and do not work the condition. Note it is support, not pausing the relationship and not waiting to be asked.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "What are the four parts of a referral that keeps the relationship?",
+            options: [
+              "Name the observation without diagnosing; state your lane; offer concrete next steps; keep coaching what remains yours",
+              "Express concern; recommend a specific provider; schedule a follow-up; document the conversation",
+              "Ask permission to raise it; describe the risk; obtain consent; transfer the file",
+              "Name the diagnosis you suspect; explain the evidence; refer; suspend the engagement",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Observe without diagnosing, state what is and is not yours, offer concrete next steps, and keep coaching the rest. The last part is what makes it a handoff rather than a dismissal.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "What concrete next step does the lesson name for imminent risk in the United States?",
+            options: [
+              "The 988 Suicide & Crisis Lifeline",
+              "The nearest emergency department's psychiatric intake line",
+              "The client's primary care physician's after-hours service",
+              "A licensed therapist search through the client's insurance directory",
+            ],
+            correctIndex: 0,
+            explanation:
+              "988 is the concrete step for imminent risk. A therapist search and a physician visit are the next steps for non-imminent concerns.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "The lesson names two ways a referral is done badly. What are they?",
+            options: [
+              "It abandons the client, or it quietly keeps the out-of-scope work",
+              "It happens too early, or it names a diagnosis the coach cannot make",
+              "It is delivered in writing, or it omits a specific provider recommendation",
+              "It transfers the whole relationship, or it fails to document the client's response",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Abandonment and quiet retention are the two failure modes, and the lesson calls retention the worse of them. Both are failures of the same skill.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "What is a 'warm handoff' as this course defines it?",
+            options: [
+              "A referral done as a skill: observe without diagnosing, state your lane, offer next steps, keep coaching what remains",
+              "A referral in which the coach speaks directly to the receiving clinician before the client does",
+              "A referral accompanied by the coach's written notes on the client's history",
+              "A referral in which the coach remains present during the client's first clinical appointment",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It names the four-part skill, not a logistical arrangement. What makes it warm is that the relationship survives it.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "What is the difference between a referral trigger and a red flag?",
+            options: [
+              "The trigger is the sign obligating referral; the red flag is the observable cue behind it",
+              "The trigger is client-reported; the red flag is observed by the coach directly",
+              "The trigger is clinical; the red flag is behavioral and lower in severity",
+              "The trigger requires immediate action; the red flag is logged and reviewed later",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Red flags are what you notice, such as disclosed suicidal ideation or function-impairing distress; triggers are what those observations obligate you to do.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "How does the referral duty apply to self-coaching, per this lesson?",
+            options: [
+              "Identically: persistent symptoms, mood changes outlasting their circumstances, or pain that alters function are triggers whether the client is a stranger or the mirror",
+              "Loosely, since a coach applying the framework to themselves has full context a stranger lacks",
+              "Not at all, since referral duties govern professional relationships rather than personal health",
+              "Only for the crisis triggers, since the others assume an observer's perspective",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The rule is identical, and the lesson names the triggers explicitly. Having full context is exactly what makes self-referral harder, not looser.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "A client mentions their drinking has increased and they have tried twice to cut back. What is the correct response?",
+            options: [
+              "Refer, since substance-use counselling is beyond scope, while remaining supportive within the coaching lane",
+              "Coach the reduction as a behavior-change goal, since the client raised it themselves",
+              "Apply the WELL-01 habit tools, since the client is describing a habit rather than dependence",
+              "Wait for a further disclosure before acting, since two attempts is not a clinical threshold",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The NBHWC outline names this territory directly: counselling on substance abuse is beyond scope. The coach refers and stays supportive within the lane, rather than reframing it as an ordinary habit goal.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "A coach sells a supplement line and is coaching a client on nutrition behavior. What does the ethics code require?",
+            options: [
+              "Disclosure of the product-sale income before coaching begins, plus an offer to step aside",
+              "Disclosure only if the coach recommends a product from that line during the engagement",
+              "Cessation of all product sales for the duration of the coaching relationship",
+              "Disclosure to the certifying body, which reviews whether the arrangement is permissible",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Product-sale income is named among the disclosures owed before coaching begins, and the conflict-of-interest duty adds the offer to step aside. Recommending a product is not the trigger; the interest itself is.",
+            sourceLessonSlug: "referral-duties",
+          },
+          {
+            prompt: "Why does the course treat scope questions as ethics questions rather than legal ones alone?",
+            options: [
+              "Because the NBHWC outline frames them that way, building consultation and boundaries into the craft",
+              "Because legal answers vary by state while ethical answers are uniform nationally",
+              "Because ethics complaints are more common than legal actions against coaches",
+              "Because a coach without a license has no legal exposure, only professional exposure",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The outline's own framing puts boundaries, consultation, and referral inside the ethics domain. The claim that an unlicensed coach has no legal exposure is simply false, as the Colorado and Michigan lessons show.",
+            sourceLessonSlug: "referral-duties",
+          },
         ],
       },
     },
