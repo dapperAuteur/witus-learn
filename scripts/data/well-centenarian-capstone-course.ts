@@ -1726,6 +1726,16 @@ Sesso, H. D., Manson, J. E., Aragaki, A. K., et al. (2022b). Effect of cocoa fla
 
 **And the real capstone assignment, which is not a quiz.** Write your protocol, per lesson 12. Run it for a month. Then run the WELL-01 session loop on yourself about it: evoke what it is actually for, find the inner obstacle that showed up, and revise one element into a contingent plan with an anchor and a minimum version. Keep the artefact. In a year, run it again against what you wrote, and you will have the only longitudinal data about you that will ever exist.
 
+**And one thing self-coaching cannot do, which this program owes you plainly.** Everything above happens between you and a document. But the craft WELL-01 spent twenty-six lessons on is **relational**: evoking, rolling with ambivalence, softening sustain talk, the reflection-to-question ratio, and the moment where a client's voice changes and you do not flinch. Those mechanisms require a second mind. You cannot evoke your own change talk against your own resistance, because there is no one in the room who does not already know what you are about to say.
+
+Which means a written self-coaching artefact demonstrates that you can **plan**, and demonstrates nothing at all about whether you can **coach**. On Miller's four levels of clinical competence, knows, knows how, shows how, and does, this program's assessment sits almost entirely in the bottom two. Reading that honestly is the same discipline the rest of the course applies to effect sizes.
+
+**So the capstone has a second required element.** Run one **live, unscripted twenty-to-thirty-minute coaching session with a real person**, recorded with their explicit consent, on something they actually want to change. Not a role-play, not a friend performing a client, and not a session you have scripted in advance. Then code your own transcript against the two markers WELL-01 taught: your **reflection-to-question ratio**, and the proportion of your reflections that were **complex** rather than simple. Write one paragraph on what you would do differently.
+
+This is required rather than optional, because it is the only part of the capstone that tests the thing the program is actually for. If no willing person is available this month, the honest move is to say the capstone is incomplete and keep looking, not to substitute a self-coaching transcript and call it done.
+
+**A caution about the coding standards.** You will find published MITI thresholds for reflection ratios and complex-reflection percentages. This program does not quote numbers for them, because the versions in circulation mix MITI 3.1.1 and MITI 4.2 criteria, and the current manual is the authority rather than any summary of it. Code your own transcript, compare it against your own next one, and read the manual before attaching a target to either number.
+
 :::reveal Does completing this program extend your scope of practice? ||| No, not by an inch. You still do not diagnose, treat, deliver named psychotherapies, prescribe diets for conditions, or interpret measurements clinically. What the knowledge buys is better referrals, better collaboration with clinicians, more accurate claims, and better coaching.
 
 :::reveal Describe the mock exam week and how to read a low score. ||| After all nine courses, take every course final back to back in one sitting: nine finals, ten freshly drawn questions each, ninety questions total. Because pools serve different subsets on retake, it measures retention. A score under 80 on any final is an instruction about which course to reread, not a verdict.
@@ -1734,6 +1744,9 @@ Sesso, H. D., Manson, J. E., Aragaki, A. K., et al. (2022b). Effect of cocoa fla
 - **Competence-driven overreach**: the specific risk that knowing more makes stepping outside scope feel justified.
 - **Mock exam week**: the program's culminating assessment, all nine finals in one sitting with freshly drawn questions.
 - **Capstone artefact**: the written protocol and self-coaching session that becomes the baseline for future comparison.
+- **Live session requirement**: one recorded, consented, unscripted 20-30 minute session with a real person, self-coded; the capstone's second required element.
+- **Miller's levels**: knows, knows how, shows how, does; this program's assessment sits in the bottom two, and the live session is what reaches the third.
+- **Relational craft**: the MI skills that require a second mind, since you cannot evoke your own change talk against your own resistance.
 - **Independent study program**: this program's honest status, granting capability rather than any external credential.`,
     },
     {
