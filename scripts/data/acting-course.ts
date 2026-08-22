@@ -1587,6 +1587,1318 @@ Read the consequence for your work: continuity is real and it is at the bottom. 
 Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd ed.). Silman-James Press.`,
     },
 
+    {
+      slug: "quiz-the-frame",
+      title: "11 · Quiz: the frame decides the performance",
+      section: "Section 2 · The frame decides the performance",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What is a shot size?",
+            options: [
+              "How much of a person the frame contains",
+              "The physical dimensions of the sensor the camera is recording the image onto",
+              "The number of seconds a single continuous take is expected to run for",
+              "The distance in feet between the camera body and the performer's feet",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Sizes run from an extreme close-up on a detail out to an extreme long shot of a figure in a landscape, and the naming describes framing rather than equipment or duration.",
+            sourceLessonSlug: "shot-size-vocabulary",
+          },
+          {
+            prompt: "Order from tightest to widest: medium long shot, extreme close-up, medium close-up, long shot.",
+            options: [
+              "Extreme close-up, medium close-up, medium long shot, long shot",
+              "Medium close-up, extreme close-up, long shot, medium long shot, since medium always precedes extreme",
+              "Long shot, medium long shot, medium close-up, extreme close-up, which is the order a scene is normally shot in",
+              "Extreme close-up, medium long shot, medium close-up, long shot, because medium long sits between the two tight sizes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Tightest to widest runs extreme close-up, close-up, medium close-up, medium shot, medium long shot, long shot, extreme long shot.",
+            sourceLessonSlug: "shot-size-vocabulary",
+          },
+          {
+            prompt: "Roughly what does a medium close-up hold?",
+            options: [
+              "Head to mid-chest",
+              "The whole body from the top of the head down to the feet, with a little room around it",
+              "A single detail such as the eyes alone or a hand resting on a glass",
+              "The figure small inside a landscape, so that the setting dominates the frame",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the standard interview and dialogue size, which is also why it is the default recommendation for a self-tape later in the course.",
+            sourceLessonSlug: "shot-size-vocabulary",
+          },
+          {
+            prompt: "What does an extreme close-up typically hold?",
+            options: [
+              "A detail, such as the eyes",
+              "The head and shoulders of a performer, with a modest gap of headroom above",
+              "Two performers framed together so their reactions can be seen at the same time",
+              "Everything from the knees up, which is sometimes called a three-quarter shot",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Eyes alone, a mouth, a hand on a glass. At that size the body has no vote at all, which is what the face-alone lesson builds on.",
+            sourceLessonSlug: "shot-size-vocabulary",
+          },
+          {
+            prompt: "What is a single?",
+            options: [
+              "A frame holding one person",
+              "A take in which the whole scene is played through without stopping or resetting",
+              "A shot that will be used only once in the finished cut of the scene",
+              "The one camera position a low-budget production can afford for a given scene",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A single holds one person and a two shot holds two, and both terms turn up constantly in the same sentence as a size.",
+            sourceLessonSlug: "shot-size-vocabulary",
+          },
+          {
+            prompt: "What is an over the shoulder?",
+            options: [
+              "One person framed past the other's near shoulder",
+              "A shot taken from a raised position looking down on the whole of a scene",
+              "A move in which the camera travels around behind a performer during the take",
+              "A glance a performer gives to the camera before turning back into the scene",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The near person's shoulder sits in the edge of frame, which is what gives the audience the geography of the conversation.",
+            sourceLessonSlug: "shot-size-vocabulary",
+          },
+          {
+            prompt: "What is a master?",
+            options: [
+              "A continuous take of the whole scene",
+              "The take the director has chosen as the one that will appear in the final cut",
+              "The highest-resolution copy of the footage, from which all other versions are made",
+              "The performer whose eyeline the rest of the scene is arranged around",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is usually wide, runs the scene end to end, and gives the editor a spine that the tighter coverage has to match.",
+            sourceLessonSlug: "shot-size-vocabulary",
+          },
+          {
+            prompt: "What is an establishing shot for?",
+            options: [
+              "Telling the audience where everyone is",
+              "Giving the performers a rehearsal pass before the closer coverage begins",
+              "Recording the sound of a location without any dialogue over the top of it",
+              "Checking that the lighting is even before the main takes are recorded",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the wide frame that sets the geography, which is why the audience can follow the tighter shots that come after it.",
+            sourceLessonSlug: "shot-size-vocabulary",
+          },
+          {
+            prompt: "Why are the boundaries between adjacent shot sizes described as fuzzy?",
+            options: [
+              "They are not standardized",
+              "Digital sensors record a slightly different field of view from film, so the old names no longer apply",
+              "Focus falls off gradually at the edges of a frame, so no boundary can be drawn precisely",
+              "Performers move during a take, so the size changes continuously through the shot",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Reference texts define the sizes and their definitions differ, and so do crews, countries, and departments on the same production (Bowen, 2018).",
+            sourceLessonSlug: "shot-size-vocabulary",
+          },
+          {
+            prompt: "What is the professional habit when the frame size matters and the naming is ambiguous?",
+            options: [
+              "Confirm the frame rather than infer it",
+              "Assume the tightest plausible reading, since playing small is safer than playing large",
+              "Watch the monitor between takes and work out the size from the recorded image",
+              "Default to the size used in the previous setup, since coverage is normally consistent",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Asking how wide the frame is is a normal question, and the lesson says it marks you as someone who has worked rather than someone who has not.",
+            sourceLessonSlug: "shot-size-vocabulary",
+          },
+          {
+            prompt: "Why does a performer need the shot-size vocabulary at all?",
+            options: [
+              "What the audience cannot see does not exist",
+              "Crews will not give notes to a performer who has not learned the technical terminology",
+              "The size determines how many takes a scene will be given before moving on",
+              "Union agreements set different rates depending on how tight the framing is",
+            ],
+            correctIndex: 0,
+            explanation:
+              "In an extreme close-up on the eyes your hands are doing nothing however expressively they do it, and in a wide shot your face is a smudge.",
+            sourceLessonSlug: "shot-size-vocabulary",
+          },
+          {
+            prompt: "What is another common name for a medium long shot?",
+            options: [
+              "A cowboy",
+              "A dirty single, because part of another performer is visible in the frame",
+              "A slate, because it is the size used to record the identification board",
+              "A plate, because it is the background shot other elements are added to later",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Roughly knees up, and also called a three-quarter. The alternative names are part of why the taxonomy has to be treated as an approximation.",
+            sourceLessonSlug: "shot-size-vocabulary",
+          },
+          {
+            prompt: "An extreme long shot does what to the figure?",
+            options: [
+              "Makes it small inside the setting",
+              "Removes everything except the head and shoulders of the performer",
+              "Stretches the perspective so the performer appears taller than they are",
+              "Places two performers at opposite edges of the frame facing each other",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The figure sits small inside a landscape or a building, so the setting carries the meaning and the performer's face carries almost none of it.",
+            sourceLessonSlug: "shot-size-vocabulary",
+          },
+          {
+            prompt: "Someone on set says \"tight two.\" What should you conclude?",
+            options: [
+              "Two people, tighter than usual, so confirm the frame",
+              "Two takes will be recorded before the setup changes to a different position",
+              "The shot will be two seconds long, which is standard for a reaction insert",
+              "Two cameras are running simultaneously on the same performer from different angles",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It means two people framed tightly, and their idea of tight may be what you would call a medium, which is exactly why the lesson says to confirm rather than infer.",
+            sourceLessonSlug: "shot-size-vocabulary",
+          },
+          {
+            prompt: "Which pair of terms describes how many people are in the frame rather than how tight it is?",
+            options: [
+              "Single and two shot",
+              "Close-up and medium close-up, which count the number of visible performers",
+              "Master and establishing shot, which both refer to the size of the group being covered",
+              "Long shot and extreme long shot, which are defined by the number of figures present",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Single and two shot count people. The size terms describe how much of a person is held, and the two kinds of term are used together in the same sentence.",
+            sourceLessonSlug: "shot-size-vocabulary",
+          },
+          {
+            prompt: "What is the tighter coverage cut against?",
+            options: [
+              "The master",
+              "The establishing shot, which fixes the pace the closer shots have to keep",
+              "The rehearsal take, which is recorded specifically as a matching reference",
+              "The widest available lens, which sets the standard for how much movement is allowed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The master runs the whole scene and defines the geography, so the tighter shots have to agree with it for the pieces to be joinable.",
+            sourceLessonSlug: "shot-size-vocabulary",
+          },
+          {
+            prompt: "In an extreme close-up on the eyes, what is your expressive hand gesture doing?",
+            options: [
+              "Nothing, because it is outside the frame",
+              "Reinforcing the line, since audiences perceive movement at the edge of the image",
+              "Distracting the operator, which is the reason gesture is discouraged at that size",
+              "Changing the focus distance, which makes the shot soft for as long as it lasts",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The frame contains eyes and nothing else, so anything outside it did not happen as far as the audience is concerned.",
+            sourceLessonSlug: "shot-size-vocabulary",
+          },
+          {
+            prompt: "Which statement about shot-size terminology is accurate?",
+            options: [
+              "It is a shared approximation",
+              "It is fixed by an international standards body and is identical on every production",
+              "It changed completely with the move to digital and the older names are now obsolete",
+              "It differs by genre, with drama and comedy using entirely separate sets of names",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The taxonomy is standard enough to work from and its edges vary between texts and crews, which is why it is treated as a shared approximation rather than a specification.",
+            sourceLessonSlug: "shot-size-vocabulary",
+          },
+          {
+            prompt: "Roughly what does a medium shot hold?",
+            options: [
+              "Waist up",
+              "Knees up, which is why it is sometimes called a three-quarter or a cowboy",
+              "Head and a little of the shoulders, with the eyes about a third down the frame",
+              "The whole figure with generous space above and below it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Waist up. Knees up is a medium long shot, head and shoulders is a close-up, and the whole figure is a long shot.",
+            sourceLessonSlug: "shot-size-vocabulary",
+          },
+          {
+            prompt: "Why does the lesson say the fuzziness of the boundaries is not a flaw in your knowledge?",
+            options: [
+              "The sources themselves disagree",
+              "The boundaries are precise but are deliberately kept secret from performers by crews",
+              "Only camera departments are expected to know them, so performers are excused",
+              "The names are being replaced by numeric codes, so learning them is no longer worthwhile",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Reference texts define the sizes differently from one another, and so do crews and countries, so the ambiguity is in the field rather than in the learner.",
+            sourceLessonSlug: "shot-size-vocabulary",
+          },
+          {
+            prompt: "What sets the scale of a screen performance?",
+            options: [
+              "The shot size",
+              "The emotional intensity the scene calls for at that point in the story",
+              "The size of the venue the finished piece is expected to be shown in",
+              "The number of other performers who are present in the scene at the time",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The frame magnifies you, so the same intention has to be delivered through a smaller physical amplitude as the frame tightens (Tucker, 2023).",
+            sourceLessonSlug: "scale-and-the-shot",
+          },
+          {
+            prompt: "What does \"smaller\" NOT mean when the frame tightens?",
+            options: [
+              "Less committed or less specific",
+              "A reduced range of physical movement across the whole of the take",
+              "Gesture kept close to the body rather than travelling away from it",
+              "A vocal level closer to ordinary conversation than to projection",
+            ],
+            correctIndex: 0,
+            explanation:
+              "What shrinks is physical amplitude, not intention or specificity. The lesson warns that the usual shorthand invites exactly the wrong reduction.",
+            sourceLessonSlug: "scale-and-the-shot",
+          },
+          {
+            prompt: "In a long shot, where does a realization have to be legible?",
+            options: [
+              "In the body",
+              "In the eyes, since a realization is always read from where a performer is looking",
+              "In the voice, because at that distance sound carries better than image",
+              "In the pause before the next line, since visual detail is unavailable at that size",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Weight shifts, hands stop, a quarter turn happens or does not. The face occupies too little of the screen for an audience to read it at that size.",
+            sourceLessonSlug: "scale-and-the-shot",
+          },
+          {
+            prompt: "In an extreme close-up on the eyes, what is left to deliver the moment?",
+            options: [
+              "Where you look, when you blink, and the timing of the thought",
+              "The whole upper body, including the shoulders and the position of the hands",
+              "Vocal volume and pitch, since the visual channel is too restricted to carry meaning",
+              "The relationship between your position and the other performer's in the frame",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The body has no vote at that size. Gaze, blink, and whether the thought arrives before or after the line are the available instruments.",
+            sourceLessonSlug: "scale-and-the-shot",
+          },
+          {
+            prompt: "A raised eyebrow in a close-up covers roughly as much screen area as what in a long shot?",
+            options: [
+              "An arm thrown wide",
+              "A blink, since both are small movements regardless of the size of the frame",
+              "A step forward, because both change the performer's position within the image",
+              "A whole line of dialogue, since screen area and duration are equivalent",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The comparison is the lesson's way of making magnification concrete: the frame decides how much of the screen a given movement occupies.",
+            sourceLessonSlug: "scale-and-the-shot",
+          },
+          {
+            prompt: "In a medium close-up, where does a realization mainly live?",
+            options: [
+              "In the breath and the stillness before the answer",
+              "In the hands, which are the most expressive part of the body at that distance",
+              "In a change of position, since the frame is wide enough to show movement clearly",
+              "In the volume of the line, because the microphone is furthest away at that size",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The body is half in frame and doing less, so the moment lives in the breath, in whether the gaze holds, and in the small stillness before the reply.",
+            sourceLessonSlug: "scale-and-the-shot",
+          },
+          {
+            prompt: "How does a tighter frame change what an audience has time to read?",
+            options: [
+              "Quick reactions register that a wide shot would swallow",
+              "Nothing changes, because reading speed is a property of the viewer rather than the frame",
+              "Everything has to be slower, because detail takes longer to process at close range",
+              "Reactions must be repeated, because a single quick change is missed at close sizes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A tight frame gives the audience time to read, so small fast events land. It also punishes hurry, because everyone is watching one square meter.",
+            sourceLessonSlug: "scale-and-the-shot",
+          },
+          {
+            prompt: "What vocal level does screen work assume?",
+            options: [
+              "Conversational",
+              "Projected, so that the sound carries to the furthest microphone on the set",
+              "Slightly louder than conversation, to overcome the noise of the camera equipment",
+              "Whatever level the scene's emotional temperature suggests, regardless of the frame",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The microphone is close and is not impressed by projection, which is one of the concrete differences from stage work.",
+            sourceLessonSlug: "scale-and-the-shot",
+          },
+          {
+            prompt: "How does stillness read at close sizes compared with wide ones?",
+            options: [
+              "As thought when close, as nothing when wide",
+              "As tension when close, and as authority when wide, in both cases deliberately",
+              "The same in both, because stillness is the absence of information at any size",
+              "As a mistake when close, and as a considered choice when wide",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Stillness is a powerful close-up choice and an empty wide-shot one, which is why the rule is never simply to be small.",
+            sourceLessonSlug: "scale-and-the-shot",
+          },
+          {
+            prompt: "Which error does the lesson call more often fatal?",
+            options: [
+              "Playing too small in a wide shot",
+              "Playing too big in a close-up, since insincerity is the hardest fault to recover from",
+              "Matching the previous take too precisely, which makes the performance mechanical",
+              "Speaking at a conversational level when the microphone has been placed far away",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Playing too big reads as insincere, but playing too small in a wide frame leaves an audience watching a whole body doing nothing, with no scene at all.",
+            sourceLessonSlug: "scale-and-the-shot",
+          },
+          {
+            prompt: "What is the correct form of the instruction about scale?",
+            options: [
+              "Be the right size for this frame",
+              "Be as small as you can manage, because screen acting rewards restraint at every size",
+              "Match the size the other performer is playing, so the two shots cut together",
+              "Start large and reduce with each successive take until the director stops you",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The instruction is never simply to be small, because a wide shot needs a body doing something. The frame chooses the size and the performer meets it.",
+            sourceLessonSlug: "scale-and-the-shot",
+          },
+          {
+            prompt: "What is amplitude, as the lesson uses the word?",
+            options: [
+              "How far a movement travels",
+              "How loudly a performer speaks in relation to the microphone that is recording them",
+              "How much emotional intensity a performer commits to a given moment",
+              "How long a gesture is held before the performer releases it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Amplitude is the thing that shrinks as the frame tightens, which is what separates the physical adjustment from any change in intention.",
+            sourceLessonSlug: "scale-and-the-shot",
+          },
+          {
+            prompt: "Which is the group most likely to have to unlearn a scale habit for screen work?",
+            options: [
+              "Stage-trained performers",
+              "Performers who have only ever worked in commercials, because spots are so short",
+              "Performers trained in movement, because physical work is discouraged on camera",
+              "Performers with narration experience, since narration has no visual component at all",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson names it directly: it is the thing stage-trained performers most often have to unlearn, because the stage rewards exactly the amplitude a close-up punishes.",
+            sourceLessonSlug: "scale-and-the-shot",
+          },
+          {
+            prompt: "Across the three sizes in the lesson's example, what stayed the same?",
+            options: [
+              "The intention",
+              "The physical amplitude, which the performer holds constant so the takes will match",
+              "The vocal level, which is set by the microphone rather than by the frame",
+              "The timing of the realization, which has to land identically for the edit to work",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The realization is the same in all three. What changed is which instrument delivers it, and the frame chose the instrument.",
+            sourceLessonSlug: "scale-and-the-shot",
+          },
+          {
+            prompt: "Why does a tight frame punish hurry?",
+            options: [
+              "The whole audience is watching one square meter",
+              "Focus cannot follow a fast movement at close distances, so the image goes soft",
+              "Microphones placed close to a performer distort when speech becomes rapid",
+              "Editors cut tight shots shorter, leaving less room for a quick delivery",
+            ],
+            correctIndex: 0,
+            explanation:
+              "There is nowhere else to look, so anything rushed is fully visible. The same property is what lets a quick reaction register that a wide shot would swallow.",
+            sourceLessonSlug: "scale-and-the-shot",
+          },
+          {
+            prompt: "Which of these changes as the frame tightens, according to the checklist?",
+            options: [
+              "Where the thought is visible",
+              "The character's want, which becomes narrower as the audience gets closer to the face",
+              "The number of tactics available, because tight frames support fewer changes of approach",
+              "The stakes of the scene, which rise automatically at closer sizes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The checklist tracks amplitude, where the thought is visible, speed, vocal level, and stillness. The analysis of the scene is unaffected by the framing.",
+            sourceLessonSlug: "scale-and-the-shot",
+          },
+          {
+            prompt: "In a wide shot, the audience sees a whole body doing nothing. What is the problem?",
+            options: [
+              "There is no scene to watch",
+              "The performer will be out of focus, because wide shots have a shallow depth of field",
+              "The editor will cut away, which shortens the performer's screen time",
+              "The other performers cannot judge their timing without visible cues",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson calls this the more often fatal of the two scale errors, precisely because there is nothing on screen for an audience to read.",
+            sourceLessonSlug: "scale-and-the-shot",
+          },
+          {
+            prompt: "What does the lesson mean by the frame magnifying you?",
+            options: [
+              "A tighter frame makes a small movement occupy more screen",
+              "Camera lenses enlarge facial features, so performers appear larger than in life",
+              "Audiences pay more attention to close shots, so mistakes are noticed more often",
+              "Tighter frames are shown larger in cinemas than in domestic viewing situations",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Screen area is the operative variable, which is why the same intention needs a smaller physical range as the size tightens.",
+            sourceLessonSlug: "scale-and-the-shot",
+          },
+          {
+            prompt: "What happens to the body's contribution as the frame goes from long shot to extreme close-up?",
+            options: [
+              "It falls away until it has no vote",
+              "It becomes more important, because small movements are easier to see at close range",
+              "It stays constant, since a performer's physical life should not change with framing",
+              "It transfers to the voice, which takes over the work the body was doing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Wide gives the whole body, medium leaves the torso and head, and an extreme close-up on the eyes leaves the body out of the frame entirely.",
+            sourceLessonSlug: "scale-and-the-shot",
+          },
+          {
+            prompt: "Why is the shot-size rule described as the most transferable in screen work?",
+            options: [
+              "It applies in every screen medium",
+              "It is the only rule that can be taught without a camera present in the room",
+              "It is the one rule that directors and camera departments agree on completely",
+              "It replaces the need for any other adjustment between mediums",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Film, episodic, commercial, and vertical work all place a performer inside a frame, so the relationship between size and scale carries across all of them.",
+            sourceLessonSlug: "scale-and-the-shot",
+          },
+          {
+            prompt: "Which three things does a face-only frame actually carry?",
+            options: [
+              "Gaze, thought timing, and breath",
+              "Posture, gesture, and vocal level, since those are what an audience reads from a person",
+              "Blocking, matching, and continuity, because those decide whether the shot is usable",
+              "Volume, pace, and emphasis, which are the three components of a spoken line",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Where you look and when it changes, whether the thought lands before or after the line, and the breath. Gesture and posture are not in the frame at all.",
+            sourceLessonSlug: "the-face-alone",
+          },
+          {
+            prompt: "What is the most legible event available in a face-only frame?",
+            options: [
+              "An eye moving away and back",
+              "A change in the angle of the head, which reads clearly against the edges of the frame",
+              "A swallow, because the throat is the part of the face that moves most visibly",
+              "A change in skin color, which cameras record faithfully at close distances",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Gaze changes are what people actually do, magnified. A held gaze is pressure and a drop is concession, and neither is a trick.",
+            sourceLessonSlug: "the-face-alone",
+          },
+          {
+            prompt: "If a visible thought lands AFTER the line, what does the audience read?",
+            options: [
+              "The character surprised themselves",
+              "The character was lying, because thought following speech signals concealment",
+              "The performer missed their cue and the take will have to be repeated",
+              "The character was distracted by something outside the frame",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Before the line means they worked it out. After means they surprised themselves. Never means the line is being recited.",
+            sourceLessonSlug: "the-face-alone",
+          },
+          {
+            prompt: "What does it mean when a thought never lands visibly at all?",
+            options: [
+              "The line is being recited",
+              "The character is deliberately concealing their reaction from the other person",
+              "The frame is too tight for the audience to register the change",
+              "The take is usable, because the audience supplies the thought from context",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson calls thought timing the whole difference between a close-up that works and one that does not, and it is decided in the reading long before a camera exists.",
+            sourceLessonSlug: "the-face-alone",
+          },
+          {
+            prompt: "What is a reaction shot?",
+            options: [
+              "A frame on the person who is not speaking",
+              "A shot recorded after the scene is finished to capture the performer's honest response",
+              "The first take of a setup, before the performer has had time to plan a response",
+              "A shot in which a performer responds to a stimulus that is added later in post-production",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Screen scenes spend a great deal of time on the listener, which is what raises the question of how much a listening face is doing on its own.",
+            sourceLessonSlug: "the-face-alone",
+          },
+          {
+            prompt: "What happened to Kuleshov's original footage?",
+            options: [
+              "It is lost",
+              "It survives in a Moscow archive and has been screened at academic conferences",
+              "It was recut by later editors, so only a rearranged version now exists",
+              "It was never shot, and the experiment was only ever described in writing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The 2016 paper states plainly that the original footage is lost and that recent replication attempts had produced conflicting or unreliable results.",
+            sourceLessonSlug: "the-face-alone",
+          },
+          {
+            prompt: "How many participants were in the 2016 Kuleshov replication?",
+            options: [
+              "36",
+              "Several thousand, recruited online, which is what gives the result its statistical power",
+              "Six, one for each of the emotional conditions being tested in the design",
+              "None, because the study was a reanalysis of data collected in earlier experiments",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Thirty-six participants each saw 24 film sequences of neutral faces across six emotional conditions, in a behavioral and eye-tracking design (Barratt et al., 2016).",
+            sourceLessonSlug: "the-face-alone",
+          },
+          {
+            prompt: "What did the 2016 study conclude?",
+            options: [
+              "Some sort of Kuleshov effect does exist",
+              "The effect is entirely a myth and viewers read neutral faces as neutral regardless of context",
+              "The effect appears only in viewers who have studied film editing formally",
+              "The effect is stronger than Kuleshov claimed, and context overrides the face completely",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Participants tended to choose the emotion category matching the context, and valence and arousal ratings moved in the expected directions.",
+            sourceLessonSlug: "the-face-alone",
+          },
+          {
+            prompt: "What does the Kuleshov evidence license for a performer?",
+            options: [
+              "A listening face need not perform an emotion",
+              "A performer can skip preparation for reaction shots, since the edit supplies the meaning",
+              "A performer should choose a fixed neutral expression and hold it through every reaction",
+              "A performer should signal the intended emotion clearly, since context will amplify it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Context is doing part of the work at close sizes, so the listener can trust the material and simply receive what is happening rather than displaying a response.",
+            sourceLessonSlug: "the-face-alone",
+          },
+          {
+            prompt: "What does the Kuleshov evidence NOT license?",
+            options: [
+              "Doing nothing and relying on the editor",
+              "Receiving what the other performer is doing without adding a visible reaction",
+              "Trusting that the surrounding shots will contribute to how a face is read",
+              "Playing a listening beat without deciding on a specific emotional label first",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The effect describes how audiences interpret an ambiguous face, not a guarantee that any face plays. Real listening produces gaze and breath changes that waiting for a cue does not.",
+            sourceLessonSlug: "the-face-alone",
+          },
+          {
+            prompt: "What do valence and arousal measure?",
+            options: [
+              "How positive a feeling is and how activated",
+              "How accurately a viewer identifies a face and how quickly they do it",
+              "How long a shot is held and how tightly it is framed on the performer",
+              "How much a performer moves and how far their gaze travels during a take",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They are the two dimensions the 2016 study measured alongside emotion category, and both moved in the directions the design predicted.",
+            sourceLessonSlug: "the-face-alone",
+          },
+          {
+            prompt: "What did the eye-tracking data in the 2016 study NOT show?",
+            options: [
+              "The expected differences between emotional conditions",
+              "Any consistent pattern in where participants looked on a face at all",
+              "That participants looked at faces rather than at the surrounding context shots",
+              "That the participants had understood the instructions they were given",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Participants attended to different regions of the face given the intermediate context, but the expected differences between the emotional conditions did not appear.",
+            sourceLessonSlug: "the-face-alone",
+          },
+          {
+            prompt: "What is the difference between a performer genuinely listening and one waiting for their cue?",
+            options: [
+              "Micro-changes in gaze and breath",
+              "The number of takes required before the shot is usable in the finished edit",
+              "Whether the performer is looking at the camera or slightly to one side of it",
+              "Whether the performer speaks their next line on time when the moment arrives",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Those small changes are what a close-up records, which is why the Kuleshov result cannot be read as permission to do nothing.",
+            sourceLessonSlug: "the-face-alone",
+          },
+          {
+            prompt: "How does the lesson describe the popular telling of the Kuleshov experiment?",
+            options: [
+              "Film mythology",
+              "A well-replicated result that later research has confirmed in every detail",
+              "A deliberate fabrication invented for a film school lecture in the 1960s",
+              "An accurate account of a study that has never been attempted again",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The popular version presents it as proven. The footage is lost and early replications conflicted, so the honest version rests on the 2016 study instead.",
+            sourceLessonSlug: "the-face-alone",
+          },
+          {
+            prompt: "What is a held gaze doing in a face-only frame?",
+            options: [
+              "Applying pressure",
+              "Signalling that the character has stopped listening to the other person",
+              "Concealing a thought that the character does not want to be read",
+              "Marking the end of a unit, so the audience knows the subject is about to change",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A held gaze reads as pressure and a drop reads as concession. These are magnified versions of ordinary behavior rather than devices.",
+            sourceLessonSlug: "the-face-alone",
+          },
+          {
+            prompt: "Why is breath significant at the tightest sizes?",
+            options: [
+              "A change in it reads as an internal event",
+              "It is the only movement a camera can record when the frame is that tight",
+              "It has to be synchronized with the other performer for the shots to cut together",
+              "It determines how long a line can be delivered before a pause is needed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "At that size a change in breathing is visible, so the audience reads it as something happening inside the character.",
+            sourceLessonSlug: "the-face-alone",
+          },
+          {
+            prompt: "Where is the timing of a thought against the line decided?",
+            options: [
+              "In the reading, before a camera exists",
+              "On the day, by the director, during the rehearsal that precedes the first take",
+              "In the edit, where the editor can move the reaction relative to the dialogue",
+              "By the operator, who chooses when to push in on the performer's face",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson says it is available to you in the reading long before a camera exists, which links it directly back to the script-analysis lesson.",
+            sourceLessonSlug: "the-face-alone",
+          },
+          {
+            prompt: "Which of these is NOT carried by a face-only frame?",
+            options: [
+              "Posture",
+              "The direction of the gaze and the moment it changes",
+              "Whether a visible realization precedes or follows the spoken line",
+              "A change in the rhythm of the performer's breathing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson lists gaze, thought timing, and breath, and says almost nothing else survives: not gesture, not posture, not what you were doing with your feet.",
+            sourceLessonSlug: "the-face-alone",
+          },
+          {
+            prompt: "What is the honest summary of what context does to a listening face?",
+            options: [
+              "It does part of the work",
+              "It does all of the work, so the performer's choices in a reaction shot are irrelevant",
+              "It does none of the work, because audiences read faces independently of surrounding shots",
+              "It reverses the performer's intention, so a reaction should be played against the context",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Part, not all. That is precisely the distinction between what the replication supports and the strong popular claim it does not.",
+            sourceLessonSlug: "the-face-alone",
+          },
+          {
+            prompt: "Why does the course teach the Kuleshov effect with its caveats rather than as a clean fact?",
+            options: [
+              "The strong version is not supportable",
+              "The effect has legal implications that a course is obliged to disclose to learners",
+              "Performers who believe it become passive, so the caveats are a motivational device",
+              "The study is too recent to be treated as established and will be updated shortly",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lost footage and the conflicting earlier replications mean the proven version is mythology. Teaching the hedged version is the only accurate option.",
+            sourceLessonSlug: "the-face-alone",
+          },
+          {
+            prompt: "What is blocking?",
+            options: [
+              "The agreed pattern of movement in a scene",
+              "The practice of standing where another performer's face cannot be seen by the camera",
+              "The barrier placed between the camera and a light to control where it falls",
+              "The process of learning lines by associating each one with a physical action",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Who goes where, when, and past whom, worked out on set with the crew watching, because every department plans from it.",
+            sourceLessonSlug: "the-body-in-frame",
+          },
+          {
+            prompt: "Why do marks exist?",
+            options: [
+              "A lens has a narrow band of sharp focus",
+              "Directors use them to measure how long a performer takes to cross the set",
+              "Insurance requires performers to stay within defined areas on a working set",
+              "They record where the performer stood so the scene can be reshot months later",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The focus puller has set distances for the agreed positions, so landing past a mark goes soft and landing short risks the frame or the light.",
+            sourceLessonSlug: "the-body-in-frame",
+          },
+          {
+            prompt: "What happens if you land past your mark?",
+            options: [
+              "You go soft",
+              "You block the other performer, which forces the whole setup to be relit",
+              "You trigger a continuity error that the script supervisor has to log",
+              "You move outside the microphone's range and the dialogue has to be re-recorded",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Focus has been set for the agreed distance. Landing short is a different failure: you may be out of frame or standing in somebody's light.",
+            sourceLessonSlug: "the-body-in-frame",
+          },
+          {
+            prompt: "How do you hit a mark without looking at it?",
+            options: [
+              "Peripheral vision and step counting",
+              "By having the other performer signal when you have reached the right position",
+              "By memorizing the pattern on the floor and recognizing it as you arrive",
+              "By slowing down at the end of the move until the focus puller confirms the distance",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Furniture at the edge of your sightline plus a repeatable number of steps does it. Looking down is visible on camera and reads as technique showing.",
+            sourceLessonSlug: "the-body-in-frame",
+          },
+          {
+            prompt: "Which difference between takes will stop an editor cutting?",
+            options: [
+              "A prop in the wrong hand",
+              "A slightly higher emotional temperature in the second take than in the first",
+              "A different pause length before the final line of the exchange",
+              "A change in the performer's breathing pattern during the listening section",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Physical mismatches break the join. Directors will happily cut between takes with different intensity and will not cut between takes where an object changed hands.",
+            sourceLessonSlug: "the-body-in-frame",
+          },
+          {
+            prompt: "What has to match across takes and sizes?",
+            options: [
+              "Which hand, which object, when, and which way you turn",
+              "The exact vocal pitch of each line, so that the audio can be cut without a noticeable seam",
+              "The emotional intensity, since a mismatch there is what audiences notice most quickly",
+              "The number of blinks, because blink timing is used to align the two pieces of footage",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The physical shape and its timing have to agree. Roughly where you look also matters, because eyeline governs whether the shots read as one conversation.",
+            sourceLessonSlug: "the-body-in-frame",
+          },
+          {
+            prompt: "What does the matching requirement make screen acting partly?",
+            options: [
+              "A memory discipline",
+              "A technical trade, in which physical accuracy matters more than any dramatic choice",
+              "A group exercise, since matching can only be achieved by rehearsing with the crew",
+              "An improvisational skill, because each take has to differ from the one before it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "You have to note what you did physically, not just what you felt, and repeat it while still doing the scene rather than performing a reconstruction of it.",
+            sourceLessonSlug: "the-body-in-frame",
+          },
+          {
+            prompt: "What is the frame line?",
+            options: [
+              "The edge of the shot",
+              "The line of tape marking where the camera track begins and ends on the floor",
+              "The boundary between the lit area of a set and the unlit area behind it",
+              "The horizontal line an operator uses to keep the camera level during a move",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Anything crossing it did not happen as far as the audience is concerned, which is why gestures that leave the frame are simply lost.",
+            sourceLessonSlug: "the-body-in-frame",
+          },
+          {
+            prompt: "Who is the focus puller?",
+            options: [
+              "The crew member adjusting lens focus to the blocking distances",
+              "The person responsible for keeping performers' attention on the scene between takes",
+              "The assistant who moves the camera along its track during a travelling shot",
+              "The technician who chooses which lens is fitted for each setup of a scene",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They set distances for the positions the blocking established, which is exactly why a missed mark produces a soft image.",
+            sourceLessonSlug: "the-body-in-frame",
+          },
+          {
+            prompt: "How does blocking on a set differ from movement on a stage?",
+            options: [
+              "You move where focus and lighting can follow",
+              "You move less, because sets are physically smaller than most theatrical stages",
+              "You move only when the director calls for it during the take itself",
+              "You move faster, because screen scenes are shorter than theatrical ones",
+            ],
+            correctIndex: 0,
+            explanation:
+              "On a stage you move where the moment takes you. On a set the pattern is agreed, and it has to be repeated the same way every take.",
+            sourceLessonSlug: "the-body-in-frame",
+          },
+          {
+            prompt: "Why is blocking worked out with the crew watching rather than with the director alone?",
+            options: [
+              "Every department plans from it",
+              "Union rules require a representative from each department to witness the rehearsal",
+              "The crew are the only people who can judge whether the movement looks natural",
+              "It saves the director from having to explain the same choices twice",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Camera, lighting, sound, and props all base their preparation on the agreed pattern, which is why it is settled in front of them.",
+            sourceLessonSlug: "the-body-in-frame",
+          },
+          {
+            prompt: "What does NOT have to match precisely between takes?",
+            options: [
+              "The temperature of the reading",
+              "The moment at which a glass reaches the performer's mouth during a line",
+              "The hand a performer uses to open a door on their exit from the room",
+              "The direction a performer turns when they leave the frame",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Directors cut freely between takes of slightly different intensity. It is the physical facts that have to agree for the join to work at all.",
+            sourceLessonSlug: "the-body-in-frame",
+          },
+          {
+            prompt: "Why is looking down at a mark a problem?",
+            options: [
+              "It is visible on camera",
+              "It causes the performer to arrive a fraction of a second late every time",
+              "It changes the eyeline, which makes the two shots impossible to cut together",
+              "It puts the performer's face out of the light for the length of the movement",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The audience sees a person checking the floor, which reads as technique showing. Peripheral vision and step counting achieve the same result invisibly.",
+            sourceLessonSlug: "the-body-in-frame",
+          },
+          {
+            prompt: "What obligation do wide frames come with that a stage performance does not have?",
+            options: [
+              "Repeating the same movement every take",
+              "Keeping the whole body still, so that the audience can read the face clearly",
+              "Playing to the widest possible audience position, as a theater performer would",
+              "Staying within a fixed distance of the other performer throughout the scene",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Wide shots hand the scene back to the body, and the price is that the pattern has to be reproducible for the pieces to cut together.",
+            sourceLessonSlug: "the-body-in-frame",
+          },
+          {
+            prompt: "How can hitting a mark be practiced without a camera?",
+            options: [
+              "Pick a floor position at home and walk to it while talking",
+              "Watch footage of experienced performers and copy the way they move to their positions",
+              "Rehearse with a partner who stands at the mark and steps aside as you arrive",
+              "Measure the distance precisely and count the number of seconds the move takes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson says to use the furniture at the edge of your vision to know when you have arrived, which is exactly the skill a set requires.",
+            sourceLessonSlug: "the-body-in-frame",
+          },
+          {
+            prompt: "What should a performer note during a take, beyond what they felt?",
+            options: [
+              "What they did physically",
+              "How many seconds each unit of the scene took to play through",
+              "Which lines the director appeared to react to most strongly",
+              "Where the camera was positioned in relation to the other performer",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Screen work is partly a memory discipline, and the thing to remember is the physical shape, because that is what has to repeat.",
+            sourceLessonSlug: "the-body-in-frame",
+          },
+          {
+            prompt: "What is the discipline for gestures when practicing at home without a crew?",
+            options: [
+              "Keep the working range modest and deliberate",
+              "Use the widest possible range, so that the performance reads at any distance",
+              "Avoid gesture entirely, since the frame cannot be predicted in advance",
+              "Repeat every gesture twice, so the editor has a second version to choose from",
+            ],
+            correctIndex: 0,
+            explanation:
+              "On a set someone tells you your hand left the frame. Alone, the substitute is not assuming the camera saw a movement you did not control.",
+            sourceLessonSlug: "the-body-in-frame",
+          },
+          {
+            prompt: "What does landing short of your mark risk?",
+            options: [
+              "Being out of frame or in someone's light",
+              "Losing focus, which is the specific consequence of landing past it instead",
+              "Colliding with the camera, which is why marks are placed away from the lens",
+              "Changing the eyeline, which stops the shot cutting against the master",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The two failures are different: past the mark is soft, short of it risks the framing and the lighting.",
+            sourceLessonSlug: "the-body-in-frame",
+          },
+          {
+            prompt: "What does the lesson say a performer must be able to do while still doing the scene?",
+            options: [
+              "Repeat the physical shape",
+              "Watch the camera to confirm that they remain inside the frame throughout",
+              "Adjust the intensity upward on each successive take of the same setup",
+              "Track how much of the scene has been covered so far in the shooting day",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson is explicit that this must not become performing a reconstruction of the scene. The shape repeats while the pursuit inside it stays live.",
+            sourceLessonSlug: "the-body-in-frame",
+          },
+          {
+            prompt: "Wide does not mean unlimited. What is the practical consequence?",
+            options: [
+              "Gestures that leave the frame did not happen",
+              "Wide shots are shorter, so there is less time for physical choices to register",
+              "Wide shots are lit more brightly, so movement has to be slower to avoid blur",
+              "Wide shots require more takes, so the physical shape has to be simpler",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Every frame has an edge. The audience only sees what stayed inside it, whatever the performer intended.",
+            sourceLessonSlug: "the-body-in-frame",
+          },
+          {
+            prompt: "Why is playing to the camera usually wrong on a set?",
+            options: [
+              "The camera is not where the story is happening",
+              "The lens cannot record a performer who is facing it directly without distortion",
+              "It causes the eyeline to be too close for the shot to cut against the master",
+              "It makes the performer harder to light, because the face is fully frontal",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The camera is a machine in an arbitrary place, often uncomfortably close. Playing to it breaks the scene unless the piece explicitly asks for direct address.",
+            sourceLessonSlug: "eyeline-lens-and-the-cut",
+          },
+          {
+            prompt: "What is an eyeline?",
+            options: [
+              "The direction and height a performer looks",
+              "The imaginary line between two performers that a camera must not cross during a scene",
+              "The level at which the camera is placed relative to the performer's eyes",
+              "The mark on the floor a performer uses to judge their distance from the lens",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It has to be consistent because the cut depends on it: two people both looking camera left read as looking the same way rather than at each other.",
+            sourceLessonSlug: "eyeline-lens-and-the-cut",
+          },
+          {
+            prompt: "In a single, where might your scene partner actually be?",
+            options: [
+              "Beside the lens, or gone entirely",
+              "Directly behind the camera, at the same height as the lens, in every case",
+              "In an adjacent room, delivering lines over a speaker for accuracy of timing",
+              "Standing in the frame just out of focus, so their presence can be felt",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They may be beside the lens, or replaced by a taped X or a crew member holding the script. You are still required to be in a conversation.",
+            sourceLessonSlug: "eyeline-lens-and-the-cut",
+          },
+          {
+            prompt: "What is the professional response when a placed eyeline feels wrong?",
+            options: [
+              "Accept the placement precisely",
+              "Adjust it slightly toward where the other performer actually is standing",
+              "Ask for the other performer to be brought back so the geometry is honest",
+              "Close your eyes on the line, so the mismatch is not visible in the shot",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Put the imaginative work into the relationship rather than into arguing with the geometry. Drifting your eyes to where the person really is ruins the shot.",
+            sourceLessonSlug: "eyeline-lens-and-the-cut",
+          },
+          {
+            prompt: "What do longer focal lengths used from further away do to a face?",
+            options: [
+              "Compress depth and flatten features slightly",
+              "Exaggerate whatever is nearest, which makes gestures toward the lens look enormous",
+              "Increase the depth of field, so both the face and the background stay sharp",
+              "Widen the visible area, which is why they are used for establishing shots",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Tight frames are usually made this way. Wider lenses used close do the opposite, exaggerating whatever is nearest to them.",
+            sourceLessonSlug: "eyeline-lens-and-the-cut",
+          },
+          {
+            prompt: "Why can a performer not judge the apparent size of their own movement?",
+            options: [
+              "It depends on lens and distance",
+              "Performers are trained to underestimate their own movement as part of screen technique",
+              "The monitor shows a different aspect ratio from the one the audience will see",
+              "The effect only becomes visible once the footage has been color graded",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Focal length and camera distance change how large a movement reads, and the effect is not visible from inside the performance, which is another reason to ask about the frame.",
+            sourceLessonSlug: "eyeline-lens-and-the-cut",
+          },
+          {
+            prompt: "What is first in Murch's ordering of what a cut should serve?",
+            options: [
+              "Emotion",
+              "Spatial continuity, because a cut that breaks the geography confuses the audience",
+              "Rhythm, since a cut that lands off the beat is felt before anything else is noticed",
+              "Story, because a cut that does not advance the narrative has no reason to exist",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The ordering runs emotion, story, rhythm, eye trace, the two-dimensional plane of the screen, and the three-dimensional space of the action (Murch, 2001).",
+            sourceLessonSlug: "eyeline-lens-and-the-cut",
+          },
+          {
+            prompt: "Where does spatial continuity sit in Murch's ordering?",
+            options: [
+              "Last",
+              "First, because a cut that breaks the space cannot be understood at all",
+              "Second, immediately after emotion and ahead of story",
+              "It is not in the ordering, because continuity is handled before editing begins",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Continuity is real and it is at the bottom of the list, which is why an alive but slightly mismatched take beats a perfectly matched dead one.",
+            sourceLessonSlug: "eyeline-lens-and-the-cut",
+          },
+          {
+            prompt: "What does the ordering imply about matching?",
+            options: [
+              "Match carefully, but do not make it the thing you are doing",
+              "Stop matching, since the editor's priorities make physical consistency irrelevant",
+              "Match above all else, because a mismatched take cannot be used in any circumstance",
+              "Match only in the master, since the tighter coverage is cut more loosely",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The editor's first obligation is what the audience feels, so matching serves the work without becoming the performance itself.",
+            sourceLessonSlug: "eyeline-lens-and-the-cut",
+          },
+          {
+            prompt: "What is eye trace?",
+            options: [
+              "Where in the frame the audience is looking",
+              "The path a performer's gaze takes across the set during a moving shot",
+              "The line the camera follows when it tracks a performer through a scene",
+              "The record of which takes a director watched most closely during dailies",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is one of the criteria an editor weighs, sitting after emotion, story, and rhythm in Murch's ordering.",
+            sourceLessonSlug: "eyeline-lens-and-the-cut",
+          },
+          {
+            prompt: "What is direct address?",
+            options: [
+              "Performance played deliberately to the lens",
+              "A note delivered to a performer by the director in front of the whole crew",
+              "The practice of naming the other character explicitly in every line of dialogue",
+              "A speech given to the audience by a character who is otherwise unaware of them",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is used in narration, presenting, and some commercials, and it is the one context where the general rule about not playing to the camera is inverted.",
+            sourceLessonSlug: "eyeline-lens-and-the-cut",
+          },
+          {
+            prompt: "Two performers in a conversation both look camera left. What does the audience read?",
+            options: [
+              "Two people looking the same way",
+              "A shot that has been reversed in the edit, which audiences accept without noticing",
+              "A moment of shared attention on something happening off screen",
+              "Nothing unusual, because eyeline is corrected automatically in post-production",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The cut depends on opposed eyelines. Matching directions destroy the illusion that the two people are facing each other.",
+            sourceLessonSlug: "eyeline-lens-and-the-cut",
+          },
+          {
+            prompt: "How does the camera differ from a theater audience?",
+            options: [
+              "It is a machine in an arbitrary place",
+              "It sees more detail, which is why performances have to be technically cleaner",
+              "It records the performance permanently rather than experiencing it once",
+              "It is always at the same distance, unlike an audience spread through a room",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A stage audience is a fixed body of people in front of you and is played outward to. The camera is not where the story is happening.",
+            sourceLessonSlug: "eyeline-lens-and-the-cut",
+          },
+          {
+            prompt: "What might stand in for an absent scene partner?",
+            options: [
+              "A taped X or a crew member holding the script",
+              "A recorded playback of the other performer's lines synchronized to the take",
+              "A mirror positioned so the performer sees themselves at the correct eyeline",
+              "A second camera showing the other performer on a monitor beside the lens",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The other performer may have gone home. You are still required to be in a conversation, which is what makes eyeline discipline a craft skill rather than a technicality.",
+            sourceLessonSlug: "eyeline-lens-and-the-cut",
+          },
+          {
+            prompt: "Why does a small lean sometimes read as a significant move?",
+            options: [
+              "A wide lens used close exaggerates what is nearest",
+              "Small movements are always magnified by the frame regardless of the lens",
+              "Editors slow down small movements to make them legible to the audience",
+              "The audience expects little movement in a close-up, so any move stands out",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Focal length and distance decide apparent size, which is why the lesson tells performers not to judge their own movement from inside it.",
+            sourceLessonSlug: "eyeline-lens-and-the-cut",
+          },
+          {
+            prompt: "What is the practical consequence of an eyeline being placed slightly too close to the lens?",
+            options: [
+              "It feels wrong and should be accepted anyway",
+              "It should be corrected by the performer, since the crew cannot see the discrepancy",
+              "It makes the shot unusable, so the setup will have to be rearranged",
+              "It reduces the depth of field, which is why focus becomes harder to hold",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Placements often feel wrong. The professional behavior is to accept them precisely and put the effort into the relationship instead.",
+            sourceLessonSlug: "eyeline-lens-and-the-cut",
+          },
+          {
+            prompt: "Which take does the ordering suggest an editor will prefer?",
+            options: [
+              "Alive but slightly mismatched",
+              "Perfectly matched but flat, because continuity failures are the hardest to disguise",
+              "The longest one, because it gives the most material to choose from",
+              "The first one, because performers are freshest before repetition sets in",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Emotion is first and continuity is last, so a living take with a small mismatch outranks a dead one that joins perfectly.",
+            sourceLessonSlug: "eyeline-lens-and-the-cut",
+          },
+          {
+            prompt: "What is focal length?",
+            options: [
+              "The lens property deciding depth compression and near-object exaggeration",
+              "The distance between the performer and the mark they have been asked to hit",
+              "The length of time focus can be held on a moving performer before it drifts",
+              "The measurement of how far the camera travels during a tracking shot",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Longer lenses from further away compress depth and flatten features slightly; wider lenses used close exaggerate whatever is nearest to them.",
+            sourceLessonSlug: "eyeline-lens-and-the-cut",
+          },
+          {
+            prompt: "How many criteria are in the ordering the lesson attributes to Murch?",
+            options: [
+              "Six",
+              "Three, covering emotion, story, and continuity in that order of priority",
+              "Two, since everything reduces to whether the cut feels right and whether it reads",
+              "Ten, one for each department whose work has to survive the join",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Emotion, story, rhythm, eye trace, the two-dimensional plane of the screen, and the three-dimensional space of the action.",
+            sourceLessonSlug: "eyeline-lens-and-the-cut",
+          },
+          {
+            prompt: "Why does the course teach the ordering rather than the numeric weights attached to it?",
+            options: [
+              "The ordering is the useful part and the weights were not read at the primary",
+              "The weights change between editions of the book, so quoting them would be inaccurate",
+              "The weights apply only to documentary editing rather than to dramatic work",
+              "The weights are disputed by other editors and have never been widely accepted",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The dossier records that only secondary summaries of the percentages were readable, so the course teaches the uncontested ordering and quotes no numbers.",
+            sourceLessonSlug: "eyeline-lens-and-the-cut",
+          },
+        ],
+      },
+    },
     // ── Section 3 ────────────────────────────────────────────────────────────────────────────────
     {
       slug: "acting-on-stage",
