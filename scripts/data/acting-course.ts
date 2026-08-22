@@ -5520,5 +5520,1122 @@ This course has taught you to read a scene, to know what a frame is doing to you
 ## Sources
 SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/self-tape-guidelines-members`,
     },
+    {
+      slug: "quiz-the-work",
+      title: "27 · Quiz: the self-tape, the self-critique, and the business",
+      section: "Section 5 · The self-tape, the self-critique, and the business",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "Why does the lesson call the self-tape the most controllable thing in the course?",
+            options: [
+              "Nobody can guarantee a callback, but everybody can guarantee the tape is not the reason",
+              "Casting directors weigh technical quality above performance when reviewing submissions",
+              "The union guarantees that a technically compliant tape will be watched in full",
+              "Tapes can be re-recorded indefinitely, so the performance can be made perfect",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The self-tape is now the front door of most casting, and its technical quality is entirely within the performer's hands.",
+            sourceLessonSlug: "the-self-tape",
+          },
+          {
+            prompt: "What is the standard self-tape frame?",
+            options: [
+              "A medium close-up, roughly chest up",
+              "A wide shot showing the whole body, so physical choices are visible to the viewer",
+              "An extreme close-up on the face, since casting decisions are made on the eyes",
+              "Whatever frame best suits the scene, decided fresh for each audition",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Eyes about a third down from the top edge, a modest gap of headroom, horizontal unless something specific was requested.",
+            sourceLessonSlug: "the-self-tape",
+          },
+          {
+            prompt: "Where should the eyes sit in a self-tape frame?",
+            options: [
+              "About a third down from the top edge",
+              "Exactly in the center of the frame, so the composition is balanced",
+              "In the lower half, so that the background is visible above the performer",
+              "Wherever they fall naturally, since eye position is not a framing consideration",
+            ],
+            correctIndex: 0,
+            explanation:
+              "With a modest gap of headroom above. Generous headroom is the more common error and it wastes the frame.",
+            sourceLessonSlug: "the-self-tape",
+          },
+          {
+            prompt: "What kind of background does a self-tape want?",
+            options: [
+              "Plain, mid-toned, evenly lit, and far enough behind you to go soft",
+              "Something related to the scene, so the viewer can imagine the setting",
+              "As dark as possible, so that the performer's face is the only thing visible",
+              "A bright surface, which reflects light back onto the performer's face",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A neutral wall beats a bedroom, and a bedroom beats a hung sheet with creases in it.",
+            sourceLessonSlug: "the-self-tape",
+          },
+          {
+            prompt: "Where should the main light source be?",
+            options: [
+              "In front of you and slightly above",
+              "Behind you, so that the performer is separated from the background",
+              "To one side at floor level, which produces a dramatic and memorable image",
+              "Directly overhead, which is how professional sets are usually lit",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A window at midday facing you is free and better than most fixtures. A bright window behind you turns you into a silhouette.",
+            sourceLessonSlug: "the-self-tape",
+          },
+          {
+            prompt: "What does being backlit do to a self-tape?",
+            options: [
+              "Turns you into a silhouette",
+              "Softens the image, which flatters the performer and is generally desirable",
+              "Overexposes the background, which is corrected automatically by most cameras",
+              "Reduces the contrast, which makes the file smaller and easier to send",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson names it as the most common lighting failure in home tapes, and it is avoidable at no cost by turning around.",
+            sourceLessonSlug: "the-self-tape",
+          },
+          {
+            prompt: "Where should the camera sit?",
+            options: [
+              "At roughly eye level, far enough away not to distort",
+              "Slightly below eye level, which is more flattering to most faces",
+              "As close as possible, so the face fills the frame completely",
+              "Above eye level, since that is the angle casting viewers prefer",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A phone on a stack of books beats a phone in a hand, and a nostril-level laptop camera is the classic failure.",
+            sourceLessonSlug: "the-self-tape",
+          },
+          {
+            prompt: "What does the lesson call the most common fatal flaw in a self-tape, and the least noticed?",
+            options: [
+              "Sound",
+              "Framing, because most performers place themselves too far from the lens",
+              "Performance choices, which are what a casting viewer is actually assessing",
+              "File naming, which causes tapes to be lost before they are ever watched",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Record in a soft room, kill the refrigerator and the fan, and use an external mic if you have one. Bad sound is the fastest route to a tape nobody finishes.",
+            sourceLessonSlug: "the-self-tape",
+          },
+          {
+            prompt: "What should you do with files before sending them?",
+            options: [
+              "Name them exactly as asked and check the whole file plays",
+              "Compress them as far as possible, since large files are often rejected",
+              "Send several versions, so the viewer can choose the take they prefer",
+              "Rename them with your own system, so they are easy to find again later",
+            ],
+            correctIndex: 0,
+            explanation:
+              "In the format asked, with the naming asked for, and checked end to end. A file that stops halfway is indistinguishable from a bad tape.",
+            sourceLessonSlug: "the-self-tape",
+          },
+          {
+            prompt: "What makes a good reader?",
+            options: [
+              "Flat, prompt, and well under your level",
+              "An experienced performer who gives a full performance to play against",
+              "Someone who matches your intensity, so the exchange feels balanced",
+              "Someone standing directly behind the camera at the same height as the lens",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A reader who performs is a problem; a reader who reads flatly and quickly is a gift, because the tape is about you.",
+            sourceLessonSlug: "the-self-tape",
+          },
+          {
+            prompt: "Where should the reader be placed?",
+            options: [
+              "Just to one side of the lens",
+              "Directly behind the camera, so your eyeline goes straight into the lens",
+              "Out of the room entirely, so their voice does not appear on the recording",
+              "Beside you in frame, so the viewer can see the exchange happening",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That puts your eyeline near the camera without your looking into it, unless the instructions specifically ask for something else.",
+            sourceLessonSlug: "the-self-tape",
+          },
+          {
+            prompt: "What is a slate?",
+            options: [
+              "The short identification piece at the head of a tape",
+              "The board held in front of the camera at the start of a professional take",
+              "The list of scenes a performer has been asked to prepare for an audition",
+              "The moment a performer settles into position before the scene begins",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Usually your name, sometimes height, location, or representation, delivered as yourself rather than performed.",
+            sourceLessonSlug: "the-self-tape",
+          },
+          {
+            prompt: "How should a slate be delivered?",
+            options: [
+              "As yourself, briefly, exactly as instructed",
+              "In character, so the viewer sees the performance from the first second",
+              "With as much personality as possible, since it is often the first impression",
+              "At length, covering training and credits, so the viewer has context",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Being a pleasant, unstrained human in it does more than a personality would, and it is often the first thing a viewer sees.",
+            sourceLessonSlug: "the-self-tape",
+          },
+          {
+            prompt: "What is headroom?",
+            options: [
+              "The gap between the top of the head and the top of the frame",
+              "The vertical space a performer has to move in before leaving the shot",
+              "The margin of extra recording time left at the start and end of a take",
+              "The additional exposure latitude a camera has before the image clips",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It should be modest rather than generous, which is one of the most commonly wasted parts of a home-recorded frame.",
+            sourceLessonSlug: "the-self-tape",
+          },
+          {
+            prompt: "What four things do the negotiated self-tape protections cover?",
+            options: [
+              "Pages, notice, memorization, and technical standard",
+              "Pay, travel, hours, and the right to a reader supplied by the production",
+              "Framing, lighting, sound, and file format, which are specified in the agreement",
+              "Casting fees, submission platforms, representation, and residuals",
+            ],
+            correctIndex: 0,
+            explanation:
+              "How many pages you can be asked to prepare, how much notice you get, whether memorization can be required, and what technical quality can be demanded.",
+            sourceLessonSlug: "the-self-tape",
+          },
+          {
+            prompt: "Why does this course quote no numbers for the self-tape protections?",
+            options: [
+              "The terms change each bargaining cycle",
+              "The numbers are confidential and available only to union members",
+              "The protections vary by production, so no general figure exists",
+              "The course covers international work, and the terms differ by country",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A quoted number ships with an expiry date, so the lesson names what is covered and points at SAG-AFTRA's own guidelines page for the current terms.",
+            sourceLessonSlug: "the-self-tape",
+          },
+          {
+            prompt: "What is the lesson's advice about an unreasonable self-tape request?",
+            options: [
+              "Read the current terms before accepting it as normal",
+              "Refuse it, since any request beyond two pages is outside the protections",
+              "Accept it, because declining an audition damages a relationship with casting",
+              "Negotiate directly with the production, which is what the protections allow",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The protections exist precisely so that a performer who knows the terms does not treat an unreasonable ask as ordinary.",
+            sourceLessonSlug: "the-self-tape",
+          },
+          {
+            prompt: "Which two technical failures does the lesson call avoidable at no cost?",
+            options: [
+              "Bad sound and being backlit",
+              "Poor framing and a distracting background, both of which need equipment to fix",
+              "Camera shake and focus drift, which require a tripod and a second operator",
+              "Slate errors and file naming errors, both of which come from misreading instructions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both are fixed by moving: record in a quieter, softer room, and turn so the window is in front of you rather than behind.",
+            sourceLessonSlug: "the-self-tape",
+          },
+          {
+            prompt: "What beats a hung sheet as a self-tape background?",
+            options: [
+              "A bedroom",
+              "A green screen, which allows any background to be added afterward",
+              "A bookshelf, which gives the viewer a sense of the performer's personality",
+              "A window, which provides both a background and a light source at once",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The ordering in the lesson is a neutral wall, then a bedroom, then a hung sheet with creases in it, which is the worst of the three.",
+            sourceLessonSlug: "the-self-tape",
+          },
+          {
+            prompt: "What orientation should a self-tape be recorded in?",
+            options: [
+              "Horizontal, unless something specific was requested",
+              "Vertical, because casting viewers now review submissions on phones",
+              "Square, which displays acceptably in both orientations",
+              "Whichever the performer's camera defaults to, since it is later cropped",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Horizontal is the standard. The vertical rules elsewhere in the course apply to short-form work rather than to auditions.",
+            sourceLessonSlug: "the-self-tape",
+          },
+          {
+            prompt: "What was the mean correlation between self-rated ability and actual performance across 22 meta-analyses?",
+            options: [
+              ".29",
+              ".62, which is high enough to make structured self-review unnecessary",
+              ".05, meaning self-ratings are essentially uncorrelated with performance",
+              "It varied so widely that no mean could meaningfully be calculated",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Mean .29 with a standard deviation of .11, and individual meta-analytic effects ranging from .09 to .63 (Zell & Krizan, 2014).",
+            sourceLessonSlug: "watching-yourself-honestly",
+          },
+          {
+            prompt: "How does the lesson characterize flawed self-assessment?",
+            options: [
+              "A documented general pattern, not a moral failing",
+              "A problem specific to inexperienced performers, which training resolves",
+              "A consequence of anxiety, which is why relaxation improves self-review",
+              "An artifact of laboratory studies with no bearing on creative work",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It has consequences across health, education, and work (Dunning et al., 2004), which is why the lesson builds a protocol rather than offering encouragement.",
+            sourceLessonSlug: "watching-yourself-honestly",
+          },
+          {
+            prompt: "When was self-evaluation found to be MORE accurate?",
+            options: [
+              "When the judgment was domain-specific and the task objective",
+              "When the person had more experience in the field being judged",
+              "When the judgment was made immediately rather than after a delay",
+              "When the person had received formal feedback at some point previously",
+            ],
+            correctIndex: 0,
+            explanation:
+              "And when the task was familiar and low in complexity. That moderator is a design specification for the protocol rather than a consolation.",
+            sourceLessonSlug: "watching-yourself-honestly",
+          },
+          {
+            prompt: "Why is \"was I good?\" the wrong question?",
+            options: [
+              "It is broad, complex, and vague",
+              "It is negative, and negative framing reduces motivation to practice",
+              "It cannot be answered without another person present to compare against",
+              "It has an answer, but only after several weeks have passed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is exactly the kind of judgment self-assessment is worst at. \"Did the realization land before the line or after it?\" is specific and observable.",
+            sourceLessonSlug: "watching-yourself-honestly",
+          },
+          {
+            prompt: "What does the first pass of the protocol do?",
+            options: [
+              "Watch with the sound off",
+              "Watch normally, so the whole performance is taken in before analysis begins",
+              "Listen without the picture, which isolates the vocal work first",
+              "Write down expectations before viewing, so bias can be measured afterward",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Muted, once. It strips out the story you already know and shows you what a stranger sees on your face and body.",
+            sourceLessonSlug: "watching-yourself-honestly",
+          },
+          {
+            prompt: "What does the second pass isolate?",
+            options: [
+              "The audio, listened to without the picture",
+              "The physical performance, watched at reduced speed",
+              "The other performer's contribution, viewed separately from your own",
+              "The framing, checked against the technical requirements of the format",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It asks whether emphasis lands on the words carrying meaning, whether the pauses are where the thought is, and whether this is a person talking or someone reciting.",
+            sourceLessonSlug: "watching-yourself-honestly",
+          },
+          {
+            prompt: "Which question is on the third-pass checklist?",
+            options: [
+              "Did the tactic change when the previous one failed?",
+              "Was this take better than the one before it, on balance?",
+              "Would a casting director be likely to call me in for this?",
+              "Did I feel connected to the material throughout the scene?",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The checklist is written as observable yes-or-no items, which is exactly what the research says makes self-judgment more accurate.",
+            sourceLessonSlug: "watching-yourself-honestly",
+          },
+          {
+            prompt: "What is the fourth pass?",
+            options: [
+              "Redo the scene changing exactly one thing",
+              "Watch the take a final time and write an overall verdict",
+              "Show the take to someone else and record their reaction",
+              "Compare the take against a professional performance of the same material",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Pick one failed item, change only that, and compare the two takes on that item alone, which is what isolates the variable.",
+            sourceLessonSlug: "watching-yourself-honestly",
+          },
+          {
+            prompt: "Why must the checklist answers be written down before re-watching?",
+            options: [
+              "Memory reshapes itself to the outcome",
+              "Written answers can be shown to a teacher later for verification",
+              "Writing slows the process down, which improves the quality of attention",
+              "The act of writing is what converts an observation into a decision",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Writing first fixes the observation before the conclusion has a chance to rewrite it.",
+            sourceLessonSlug: "watching-yourself-honestly",
+          },
+          {
+            prompt: "What kind of question does the protocol require?",
+            options: [
+              "Observable rather than evaluative",
+              "Open rather than closed, so the answer captures nuance",
+              "Comparative, so each take is judged against the previous one",
+              "Emotional, since the point of review is to check what the scene felt like",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Observable questions have a yes-or-no answer visible in the recording. \"Am I any good\" is unanswerable and only produces mood.",
+            sourceLessonSlug: "watching-yourself-honestly",
+          },
+          {
+            prompt: "What two jobs must be kept completely separate?",
+            options: [
+              "Performing and judging",
+              "Analyzing the script and learning the lines",
+              "Recording the take and framing the shot",
+              "Choosing the material and choosing the reader",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Auditing yourself during a take is the reliable way to flatten it, which is the same warning the earlier lesson on what performers feel gives.",
+            sourceLessonSlug: "watching-yourself-honestly",
+          },
+          {
+            prompt: "What does the sound-off pass show you?",
+            options: [
+              "What a stranger sees on your face and body",
+              "Whether the technical quality of the picture is good enough to submit",
+              "Whether the physical shape matches across the different takes",
+              "Which moments the editor would be most likely to select",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Muting strips out the story you already know, which is what stops you supplying meaning the footage does not contain.",
+            sourceLessonSlug: "watching-yourself-honestly",
+          },
+          {
+            prompt: "What is the stated limit of the self-critique protocol?",
+            options: [
+              "It cannot tell you what you cannot yet perceive",
+              "It only works for screen material, since stage work cannot be recorded usefully",
+              "It requires at least a year of experience before the questions make sense",
+              "It becomes unreliable after several weeks of repeated use",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It makes you a better observer of yourself and does not make you a coach. Trained eyes, a class, or a working set will find things it cannot.",
+            sourceLessonSlug: "watching-yourself-honestly",
+          },
+          {
+            prompt: "Which checklist item asks about something you did not control?",
+            options: [
+              "Did anything happen that I did not decide?",
+              "Was the scale right for this frame?",
+              "Was there one moment of genuine stillness?",
+              "Did the thought arrive before I spoke, at least once?",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It catches habits and accidents, which links directly to the neutral baseline the physical lesson builds.",
+            sourceLessonSlug: "watching-yourself-honestly",
+          },
+          {
+            prompt: "What is a one-change take?",
+            options: [
+              "A second attempt altering exactly one thing",
+              "A take in which the performer changes something without telling the reader",
+              "A recording made after a single note has been given by an outside observer",
+              "The final take of a session, incorporating every adjustment made so far",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Isolating the variable is what makes the comparison mean anything, which is why it is the fourth pass rather than a general instruction to try again.",
+            sourceLessonSlug: "watching-yourself-honestly",
+          },
+          {
+            prompt: "What does the picture-off pass ask about pauses?",
+            options: [
+              "Whether they are where the thought is or where the breath ran out",
+              "Whether they are long enough for an audience to register the moment",
+              "Whether they match the pauses marked in the script by the writer",
+              "Whether they are consistent across the takes, so the material can be cut",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the same distinction the narration lesson draws between punctuating with breath and pace and simply running out of air.",
+            sourceLessonSlug: "watching-yourself-honestly",
+          },
+          {
+            prompt: "Why is the lesson described as the one doing the most work in the course?",
+            options: [
+              "It is the closest available substitute for a reviewer",
+              "It is the longest lesson and covers the most separate techniques",
+              "It is the only lesson with a written exercise attached to it",
+              "It is the lesson most directly connected to getting hired",
+            ],
+            correctIndex: 0,
+            explanation:
+              "In a course with no reviewer, a structured self-critique is what replaces the missing half of practice, which is why it is built on evidence rather than encouragement.",
+            sourceLessonSlug: "watching-yourself-honestly",
+          },
+          {
+            prompt: "What is self-assessment accuracy, in the lesson's vocabulary?",
+            options: [
+              "How closely a self-rating tracks measured performance",
+              "How consistently a performer rates the same take on separate viewings",
+              "How well a performer predicts whether they will be cast in a role",
+              "How closely a performer's judgment matches a teacher's judgment",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is moderate on average and better for specific, objective judgments, which is the finding the whole protocol is designed around.",
+            sourceLessonSlug: "watching-yourself-honestly",
+          },
+          {
+            prompt: "What was the range of individual effects behind the .29 mean?",
+            options: [
+              ".09 to .63",
+              ".20 to .40, which is why the mean is a good summary of the literature",
+              "Zero to 1.0, meaning the mean carries almost no information",
+              "The range was not reported, only the mean and standard deviation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The spread is what makes the moderators interesting: accuracy is much better under some conditions than others, and those conditions are designable.",
+            sourceLessonSlug: "watching-yourself-honestly",
+          },
+          {
+            prompt: "Which is an evaluative question the protocol tells you never to ask?",
+            options: [
+              "Am I any good?",
+              "Did I know what I wanted in each unit of the scene?",
+              "Was the physical scale appropriate to the size of the frame?",
+              "Did a visible thought arrive before I spoke at any point?",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is unanswerable from the footage and only produces mood, which is exactly what the domain-specific finding predicts.",
+            sourceLessonSlug: "watching-yourself-honestly",
+          },
+          {
+            prompt: "What does the framework say improvement comes from?",
+            options: [
+              "Effortful, well-defined practice with information about whether it got closer",
+              "Total hours accumulated, which is the strongest single predictor of expertise",
+              "Working with a teacher, since self-directed practice was found to be ineffective",
+              "Performing in front of audiences, which is the only true test of a skill",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That much is broadly accepted (Ericsson et al., 1993) and is the basis for everything else in the lesson.",
+            sourceLessonSlug: "practicing-without-a-coach",
+          },
+          {
+            prompt: "What did the 2019 replication find about the best violinists?",
+            options: [
+              "They had accumulated less practice than the good ones",
+              "They had accumulated roughly twice as much practice as the good ones",
+              "They had started younger, which explained most of the difference",
+              "They had practiced the same amount but with better quality supervision",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Macnamara and Maitra (2019) failed to replicate the headline finding, and this reversal is part of why the strong claim does not enter the course.",
+            sourceLessonSlug: "practicing-without-a-coach",
+          },
+          {
+            prompt: "How did the share of variance explained change in the 2019 replication?",
+            options: [
+              "It fell from 48 percent to 26 percent",
+              "It rose from 26 percent to 48 percent, strengthening the original claim",
+              "It stayed the same, but the direction of the effect reversed",
+              "It could not be calculated, because the sample was too small",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The replication reported the drop directly, which is why practice hours are not a purchase order for a career.",
+            sourceLessonSlug: "practicing-without-a-coach",
+          },
+          {
+            prompt: "What did the replication find about teacher-designed practice?",
+            options: [
+              "No advantage over self-directed practice",
+              "A substantial advantage, which is why solo practice is discouraged",
+              "It could not be measured, because the original study did not record it",
+              "A disadvantage, meaning self-directed practice was clearly superior",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson calls this genuinely encouraging for anyone working alone, and pairs it with the reminder that hours guarantee nothing.",
+            sourceLessonSlug: "practicing-without-a-coach",
+          },
+          {
+            prompt: "Which two conclusions does the lesson draw from the replication?",
+            options: [
+              "Hours guarantee nothing, and solo practice was not worse",
+              "Practice is ineffective, and formal training is therefore essential",
+              "The original study was fraudulent, and its framework should be discarded",
+              "Practice only works with a teacher, and self-directed work should be avoided",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They point in opposite directions, which is exactly why the lesson says both are worth having.",
+            sourceLessonSlug: "practicing-without-a-coach",
+          },
+          {
+            prompt: "Which of these can be practiced productively alone?",
+            options: [
+              "Cold reading",
+              "Playing off another person, which is the core skill of scene work",
+              "Timing to an audience, which is what live performance develops",
+              "Diagnosing what you cannot yet perceive in your own work",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Pick up unfamiliar material, take sixty seconds, read it aloud. It is repeatable forever and it is a standard audition condition.",
+            sourceLessonSlug: "practicing-without-a-coach",
+          },
+          {
+            prompt: "What is cold reading?",
+            options: [
+              "Performing unfamiliar material after very short preparation",
+              "Reading a script silently before any decision about performance is made",
+              "Delivering lines without any emotional commitment as a technical exercise",
+              "Reading a scene aloud with another performer for the first time",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is a standard audition condition and an endlessly repeatable solo drill, which is why it earns a place on the practicable list.",
+            sourceLessonSlug: "practicing-without-a-coach",
+          },
+          {
+            prompt: "What is repertoire, as this lesson uses it?",
+            options: [
+              "A small maintained set of prepared pieces",
+              "The complete list of roles a performer has played professionally",
+              "The range of accents and physical skills a performer can produce on request",
+              "The catalog of plays a performer has studied during training",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It exists so that being asked for a piece is routine rather than an emergency.",
+            sourceLessonSlug: "practicing-without-a-coach",
+          },
+          {
+            prompt: "Which thing does the lesson say cannot be practiced alone?",
+            options: [
+              "Playing off another person",
+              "Learning lines, which requires a partner to test you on them",
+              "Physical vocabulary, which needs a movement teacher's correction",
+              "Self-tape technique, which requires a second person to operate the camera",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is a real-time skill that requires another person, alongside timing to an audience and accurate diagnosis of what you cannot yet perceive.",
+            sourceLessonSlug: "practicing-without-a-coach",
+          },
+          {
+            prompt: "What is the lesson's honest recommendation about working with others?",
+            options: [
+              "Get into rooms with other people whenever you can",
+              "Wait until your solo work is strong enough to be worth someone else's time",
+              "Pay for coaching, which is the only reliable form of external feedback",
+              "Rely on online communities, which can substitute for a rehearsal room",
+            ],
+            correctIndex: 0,
+            explanation:
+              "In whatever form is available to you, and use solo practice for the substantial list rather than as a substitute for the short one. It is deliberately not a pitch for anything sold here.",
+            sourceLessonSlug: "practicing-without-a-coach",
+          },
+          {
+            prompt: "What is the closest available substitute for a teacher's memory of your work?",
+            options: [
+              "A written practice log",
+              "A folder of recorded takes kept in chronological order",
+              "A regular partner who watches your work over a period of months",
+              "A checklist filled in immediately after every recorded session",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A record of what you changed and what happened, kept over time, which is what a teacher would otherwise carry for you.",
+            sourceLessonSlug: "practicing-without-a-coach",
+          },
+          {
+            prompt: "What does the suggested weekly structure include?",
+            options: [
+              "Analysis, physical work, a recorded scene with the four-pass critique, and a cold read",
+              "Daily line learning, followed by a full scene recorded and reviewed each evening",
+              "Three recorded scenes a week, so that progress can be compared across takes",
+              "One long session covering everything, since fragmented practice is less effective",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Plus a single change take on the recorded scene, and a written log of what was changed and what happened.",
+            sourceLessonSlug: "practicing-without-a-coach",
+          },
+          {
+            prompt: "Which solo practice item does the lesson call purely mechanical?",
+            options: [
+              "Learning lines",
+              "Analysis, because a scene breakdown has a defensible answer",
+              "Physical vocabulary, because the effort combinations are fixed",
+              "Cold reading, because the material is unfamiliar every time",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is entirely solo and it is the thing that most often sinks people who skipped it.",
+            sourceLessonSlug: "practicing-without-a-coach",
+          },
+          {
+            prompt: "Why is analysis described as checkable?",
+            options: [
+              "It has an answer you can defend",
+              "It can be marked automatically against a stored model answer",
+              "It produces a written document that a teacher can review later",
+              "It is the only solo activity that produces a measurable score",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A defensible answer is what makes it a genuinely productive solo activity rather than an unverifiable one.",
+            sourceLessonSlug: "practicing-without-a-coach",
+          },
+          {
+            prompt: "What is deliberate practice, in the lesson's definition?",
+            options: [
+              "Effortful, well-defined practice with information about improvement",
+              "Practice designed by a qualified teacher and reviewed after each session",
+              "Practice repeated until the material can be performed without conscious thought",
+              "Practice logged and measured in hours toward a defined total",
+            ],
+            correctIndex: 0,
+            explanation:
+              "As opposed to time spent. The dossier records that the exact 1993 wording was not read at the primary, so the lesson attributes the framework without quoting a definition.",
+            sourceLessonSlug: "practicing-without-a-coach",
+          },
+          {
+            prompt: "Which of these is on the list of things a performer can practice alone?",
+            options: [
+              "Self-tape technique",
+              "Adjusting scale in response to a live audience's reaction",
+              "Receiving and executing a director's note under time pressure",
+              "Matching physical action against another performer's timing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Framing, light, sound, slate, and files are nearly all procedural, which is what makes them fully available to someone working alone.",
+            sourceLessonSlug: "practicing-without-a-coach",
+          },
+          {
+            prompt: "Why does the lesson give an honest account rather than a slogan?",
+            options: [
+              "Working alone is the normal condition for most people learning this",
+              "Learners are entitled to a legal disclaimer about the limits of a course",
+              "Slogans about practice have been shown to reduce actual practice time",
+              "The replication evidence makes any positive claim about practice indefensible",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson opens by naming that condition, which is why it treats both halves of the evidence rather than picking the encouraging one.",
+            sourceLessonSlug: "practicing-without-a-coach",
+          },
+          {
+            prompt: "What is a practice log for?",
+            options: [
+              "Recording what was changed and what resulted",
+              "Proving to an agent that a performer has trained consistently",
+              "Tracking total hours toward a target for expertise",
+              "Listing the material a performer has covered, for a resume",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It stands in for the continuity a teacher would otherwise provide, which is exactly the thing solo practice lacks.",
+            sourceLessonSlug: "practicing-without-a-coach",
+          },
+          {
+            prompt: "What should a headshot look like?",
+            options: [
+              "Like you on an ordinary day",
+              "Like the most flattering version of you achievable with lighting and retouching",
+              "Like the type of role you most want to be considered for",
+              "Like a character, so that casting can see your range immediately",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The single most common complaint from people who cast is that the person who walked in does not match the picture.",
+            sourceLessonSlug: "the-business-honestly",
+          },
+          {
+            prompt: "Why is listing a skill you cannot perform a self-inflicted disaster?",
+            options: [
+              "You may be asked to perform it on the day",
+              "Agencies verify every claim, so an inaccurate resume is discovered immediately",
+              "Union rules prohibit inaccurate skill claims and impose penalties for them",
+              "Casting software filters submissions by skill, so an error costs you auditions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson states it plainly: a listed skill is a skill you may have to produce, which makes overstating one a trap rather than a clever move.",
+            sourceLessonSlug: "the-business-honestly",
+          },
+          {
+            prompt: "How should a reel be built?",
+            options: [
+              "Short and front-loaded with your strongest material",
+              "Chronologically, so a viewer can see how the work has developed over time",
+              "Comprehensively, so that every credit is represented at least briefly",
+              "With the strongest material last, so the reel builds toward its best moment",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Nobody watches to the end, so the first clip is doing nearly all the work.",
+            sourceLessonSlug: "the-business-honestly",
+          },
+          {
+            prompt: "What does representation do, and what does it not do?",
+            options: [
+              "It provides access and negotiates; it does not create demand for you",
+              "It guarantees a minimum number of auditions in exchange for a share of earnings",
+              "It manages a performer's career decisions, including which roles to accept",
+              "It replaces the need for a self-tape setup, since submissions go through the agency",
+            ],
+            correctIndex: 0,
+            explanation:
+              "An agent or manager gets you access to some listings and negotiates on your behalf, and that is the honest limit of it.",
+            sourceLessonSlug: "the-business-honestly",
+          },
+          {
+            prompt: "What is the tell that a representation offer is not legitimate?",
+            options: [
+              "It asks for money up front",
+              "It offers to represent you without having seen any of your recorded work",
+              "It represents a large number of performers rather than a select few",
+              "It contacts you rather than waiting for you to submit to them",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Or requires you to buy their photography or their classes. Legitimate representation is paid from what you earn, so its incentive is that you work.",
+            sourceLessonSlug: "the-business-honestly",
+          },
+          {
+            prompt: "What is an up-front fee, and why does it matter?",
+            options: [
+              "Money demanded before any work, signaling a model that does not need you to work",
+              "The deposit an agent requires to cover the cost of submitting you to casting",
+              "The standard commission taken from a performer's first booking of the year",
+              "The registration charge every casting platform makes for a professional profile",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the standard warning sign, because a business paid before you work has no stake in whether you ever do.",
+            sourceLessonSlug: "the-business-honestly",
+          },
+          {
+            prompt: "Which union does the lesson name as covering most professional theater in the United States?",
+            options: [
+              "Actors' Equity Association",
+              "SAG-AFTRA, which covers all performance work regardless of medium",
+              "The Casting Society, which sets standards for auditions and representation",
+              "The Writers Guild, which negotiates on behalf of performers in stage productions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "SAG-AFTRA covers film, television, and much commercial and voice work; Equity covers most professional theater.",
+            sourceLessonSlug: "the-business-honestly",
+          },
+          {
+            prompt: "What does SAG-AFTRA cover, per the lesson?",
+            options: [
+              "Film, television, and much commercial and voice work",
+              "Professional theater, including regional and touring productions",
+              "All performance work in the United States, including stage and screen",
+              "Only television, with film covered by a separate agreement entirely",
+            ],
+            correctIndex: 0,
+            explanation:
+              "And it is where the enforceable protections live, including the self-tape terms discussed earlier in the section.",
+            sourceLessonSlug: "the-business-honestly",
+          },
+          {
+            prompt: "Where should you read union membership rules and contract terms?",
+            options: [
+              "On the union's own site",
+              "In this course, which summarizes the current terms accurately",
+              "From an agent, who deals with the contracts professionally",
+              "In trade press coverage, which reports changes as they are negotiated",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson says to distrust any summary, explicitly including its own, because the terms change over time.",
+            sourceLessonSlug: "the-business-honestly",
+          },
+          {
+            prompt: "Why does the course refuse to quote rates?",
+            options: [
+              "They change, and a stale number is worse than none",
+              "They are confidential and available only through representation",
+              "They vary so much between performers that no figure would be meaningful",
+              "Publishing them would breach union agreements covering the material",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the same rule the voice-acting sibling course follows, and it applies to day rates and scale figures alike.",
+            sourceLessonSlug: "the-business-honestly",
+          },
+          {
+            prompt: "Why does the course refuse to quote statistics about how many performers work?",
+            options: [
+              "The figures depend entirely on who is counted",
+              "The data is collected only by unions and is not published",
+              "The numbers are so discouraging that publishing them would be irresponsible",
+              "Employment patterns changed recently, so older figures are all obsolete",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A definition-dependent number is worse than no number, because a learner will repeat it as though it meant something fixed.",
+            sourceLessonSlug: "the-business-honestly",
+          },
+          {
+            prompt: "What does the course say about estimating your chances?",
+            options: [
+              "Nobody has one",
+              "They improve measurably with each year of training completed",
+              "They can be estimated from the number of performers competing for a role",
+              "They depend mainly on the quality of representation a performer secures",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is listed alongside rates and employment statistics as something the course refuses to tell you, because no honest version exists.",
+            sourceLessonSlug: "the-business-honestly",
+          },
+          {
+            prompt: "What does the lesson say about the people who last in the profession?",
+            options: [
+              "They built a life that does not require the next job on schedule",
+              "They are the most talented, which is why persistence alone is not enough",
+              "They started youngest, which gives the longest window for a career to develop",
+              "They specialized early in one medium rather than working across several",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The work is intermittent and the rejection is constant and mostly not about you, and knowing that in advance is a professional advantage.",
+            sourceLessonSlug: "the-business-honestly",
+          },
+          {
+            prompt: "How does the lesson frame the description of the profession's difficulty?",
+            options: [
+              "As the actual shape of the profession, not discouragement",
+              "As a warning intended to filter out learners who are not committed",
+              "As a temporary condition caused by changes in how work is commissioned",
+              "As something that varies enough by region to be worth relocating for",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Knowing it in advance is called a professional advantage over finding it out later, which is the opposite of a discouragement.",
+            sourceLessonSlug: "the-business-honestly",
+          },
+          {
+            prompt: "What is a casting director?",
+            options: [
+              "The person hired by a production to find and present performers",
+              "The producer responsible for approving the final cast of a production",
+              "An agent who specializes in placing performers with particular studios",
+              "The director's assistant, who runs auditions on the director's behalf",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They are the main channel through which work flows, alongside online submission platforms.",
+            sourceLessonSlug: "the-business-honestly",
+          },
+          {
+            prompt: "What does the course say it has NOT done for you, in its closing lesson?",
+            options: [
+              "Made you an actor, introduced you to anyone, or put you in a room",
+              "Taught you to read a scene, which requires a teacher's correction",
+              "Explained what a frame does to a performance, which needs a camera present",
+              "Prepared you technically, since equipment choices change too quickly",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It closes the same way it opened, by naming the boundary: those things remain yours to go and get.",
+            sourceLessonSlug: "the-business-honestly",
+          },
+          {
+            prompt: "What does the course say it HAS taught, in the closing summary?",
+            options: [
+              "Reading a scene, the frame, medium adjustment, self-tape, and self-critique",
+              "Everything required to be cast, provided the material is applied consistently",
+              "The technical side only, with the performance side left to a teacher",
+              "The business side only, since craft cannot be taught without feedback",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Plus watching your own work with some discipline. The closing list is deliberately the same one the first lesson promised.",
+            sourceLessonSlug: "the-business-honestly",
+          },
+          {
+            prompt: "What is a reel?",
+            options: [
+              "A short compilation of a performer's strongest recorded work",
+              "The complete recording of a performer's most recent audition",
+              "A showreel supplied by a production to publicize a forthcoming release",
+              "A collection of headshots presented in sequence with credits",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Front-loaded because it is rarely watched to the end, which is why the first clip does nearly all the work.",
+            sourceLessonSlug: "the-business-honestly",
+          },
+          {
+            prompt: "How should a resume be written?",
+            options: [
+              "Credits, training, and skills, honestly stated",
+              "With the strongest credits repeated in more than one section for emphasis",
+              "With training omitted once a performer has professional credits to list",
+              "With skills stated aspirationally, since they can be learned before a booking",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The honesty requirement is not moral advice: a skill listed is a skill you may be asked to perform on the day.",
+            sourceLessonSlug: "the-business-honestly",
+          },
+          {
+            prompt: "Where do the enforceable protections in this field live?",
+            options: [
+              "In the unions",
+              "In casting platform terms of service, which govern most submissions",
+              "In individual contracts negotiated by a performer's representation",
+              "In general employment law, which covers performers like any other worker",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Including the self-tape terms discussed earlier, which is why the lesson sends a performer to the union's own site rather than to a summary.",
+            sourceLessonSlug: "the-business-honestly",
+          },
+          {
+            prompt: "What is the piece of a performer's kit most within their own control?",
+            options: [
+              "The self-tape setup",
+              "The headshot, since the performer chooses the photographer and the images",
+              "The resume, since its contents are entirely the performer's own decision",
+              "The reel, since the performer selects which clips to include",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson names it directly in the materials list, which is consistent with the self-tape lesson calling it the most controllable thing in the course.",
+            sourceLessonSlug: "the-business-honestly",
+          },
+          {
+            prompt: "Why does a self-tape reader need to stay under your level?",
+            options: [
+              "The tape is about you",
+              "A loud reader overloads the microphone and makes the dialogue unusable",
+              "Union rules limit how much a non-professional reader may contribute",
+              "A committed reader draws the viewer's eye toward the edge of the frame",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A reader who performs competes for attention in a recording made to show one person's work. Flat, prompt, and quiet is the useful setting.",
+            sourceLessonSlug: "the-self-tape",
+          },
+          {
+            prompt: "What is the reason the self-tape is called the front door of most casting?",
+            options: [
+              "It is where most casting processes now begin",
+              "It is the only stage of casting covered by negotiated protections",
+              "It is the point at which representation first becomes necessary",
+              "It replaced the reel as the material a performer submits for consideration",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That is why the lesson spends its length on the technical minimum: the first thing anyone sees is a file the performer made alone.",
+            sourceLessonSlug: "the-self-tape",
+          },
+          {
+            prompt: "Which checklist item connects the self-critique protocol back to the frame lessons?",
+            options: [
+              "Was the scale right for this frame?",
+              "Did I know what I wanted in each unit?",
+              "Did the tactic change when the previous one failed?",
+              "Was there one moment of genuine stillness?",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the checklist's direct application of the shot-size rule, which is why the protocol is written as observable questions tied to specific teaching.",
+            sourceLessonSlug: "watching-yourself-honestly",
+          },
+          {
+            prompt: "What does the protocol substitute for, and what does it not replace?",
+            options: [
+              "It substitutes for a structured review; it does not replace trained eyes",
+              "It substitutes for rehearsal; it does not replace performance in front of people",
+              "It substitutes for technical training; it does not replace analysis of the script",
+              "It substitutes for a teacher entirely, provided it is run consistently over time",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It makes you a better observer of yourself and cannot show you what you cannot yet perceive, which is what a class or a working set would find.",
+            sourceLessonSlug: "watching-yourself-honestly",
+          },
+          {
+            prompt: "Why is the replication result relevant to somebody practicing alone specifically?",
+            options: [
+              "Self-directed practice showed no disadvantage",
+              "It proves that practicing alone produces better results than working with a teacher",
+              "It shows that solo practice is only effective above a threshold of total hours",
+              "It establishes that solo practice cannot produce expert-level performance",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Teacher-designed practice showed no advantage over self-directed practice in that replication, which is genuinely encouraging without licensing the stronger claim.",
+            sourceLessonSlug: "practicing-without-a-coach",
+          },
+          {
+            prompt: "What is the practical status of accumulated practice hours, after the replication?",
+            options: [
+              "Not a purchase order for a career",
+              "The single best predictor of whether a performer will work professionally",
+              "Irrelevant, since the replication showed practice has no effect at all",
+              "Meaningful only when the hours are supervised by a qualified teacher",
+            ],
+            correctIndex: 0,
+            explanation:
+              "So nobody should tell you they are. The weaker and better-supported claim, that practice needs to be effortful and informative, is what the lesson keeps.",
+            sourceLessonSlug: "practicing-without-a-coach",
+          },
+        ],
+      },
+    },
   ],
 };
