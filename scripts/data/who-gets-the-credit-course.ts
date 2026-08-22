@@ -976,6 +976,929 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3 — The employer, the corporation, and the vanished name
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "assignment",
+      title: "9 · Assignment: the clause that moves the patent",
+      section: "Section 3 · The employer, the corporation, and the vanished name",
+      body: `Once the legal bar came down, the main way an inventor's name stopped meaning anything was not theft. It was contract law, working exactly as designed.
+
+**What assignment is.** A patent is property, and property can be transferred. An **assignment** transfers ownership from the inventor to someone else. It can be sold after the fact, but the form that matters here is the **pre-invention assignment**: an employment agreement, signed on the first day of the job, under which anything the employee invents in the scope of that work belongs to the employer the moment it exists.
+
+**What stays and what goes.** The inventor's name stays on the face of the patent permanently, because United States law requires patents to name the actual human inventors. What goes is everything else: the right to license it, the right to sue infringers, the right to sell it, and the money. A patent you are named on and do not own is a line on a resume.
+
+**Why this is not a scandal, and why it still matters.** Nothing improper is happening. The employee is paid a salary, the employer takes the risk and the upside, and both sides agreed. But the effect on the historical record is enormous: the *company* becomes the entity the public associates with the invention, because the company is the one advertising, litigating, and licensing. A century later people say Bell, or General Electric, or IBM, and no individual name survives the sentence.
+
+**Now add the era's constraint.** For a Black inventor in the late nineteenth and early twentieth centuries, the alternatives to employment were worse. Independent invention required capital to build prototypes, money for patent attorneys and filing fees, credit to survive the years before revenue, and the standing to be believed in a courtroom during an infringement suit. Every one of those was restricted by segregation. So the choice was frequently between assignment on an employer's terms and no patent at all, which is a constrained choice rather than a free one, and that is the honest way to describe it.
+
+**What to look for on the document.** A patent's face often prints an assignee under or beside the inventor's name, and the phrase to search for is *assignor to*. When you see it, you have identified the mechanism immediately: the person invented it, and the company owned it from the start. That single line resolves a large share of the arguments in this field before they begin.
+
+:::reveal Under a pre-invention assignment, what does the inventor keep and what do they lose? ||| They keep their name on the face of the patent permanently, because US law requires the actual human inventors to be named. They lose the right to license, to sue infringers, to sell, and to the money.
+
+:::reveal Why is calling assignment a free choice inaccurate for a Black inventor of this era? ||| Because the alternative, independent invention, required capital, attorney fees, credit to survive years without revenue, and standing to be believed in an infringement suit, all of which segregation restricted. The choice was constrained, not free.
+
+## Vocabulary
+- **Assignment**: the transfer of patent ownership from the inventor to another party.
+- **Pre-invention assignment**: an employment agreement transferring rights to inventions before those inventions exist.
+- **Assignor to**: the phrase printed on a patent's face identifying the party the inventor assigned it to.
+- **Constrained choice**: a decision made freely among options that have themselves been narrowed by conditions outside the chooser's control.
+
+## Sources
+- Fouché, R. (2003). *Black inventors in the age of segregation: Granville T. Woods, Lewis H. Latimer, and Shelby J. Davidson*. Johns Hopkins University Press.
+- James, P. P. (1989). *The real McCoy: African-American invention and innovation, 1619-1930*. Smithsonian Institution Press.`,
+    },
+    {
+      slug: "inside-the-corporation",
+      title: "10 · Working inside the corporation",
+      section: "Section 3 · The employer, the corporation, and the vanished name",
+      body: `Rayvon Fouché's study of three Black inventors makes an argument that is uncomfortable in both directions, and it is the most useful piece of scholarship in this field.
+
+**The argument.** The popular story of the lone genius is wrong about invention generally, and it distorts Black invention specifically. Most successful inventors of the late nineteenth and early twentieth centuries worked inside industrial organizations, and the interesting question is how a Black inventor negotiated a racially stratified professional environment while doing technical work. Fouché examines **Granville T. Woods**, an independent inventor, **Lewis H. Latimer**, a corporate engineer, and **Shelby J. Davidson**, who worked in federal government (Fouché, 2003). He explicitly sets out to replace mythologized figures with people, which means he complicates several stories readers may arrive holding.
+
+**Latimer, the corporate case.** Latimer trained as a draftsman, drew patent drawings, worked for Hiram Maxim's electric lighting company and later for Edison's, and became one of the Edison Pioneers. He holds patents in his own name, including two covered in Section 4. He also spent his career producing work owned by his employers, which is the ordinary condition of a corporate engineer and is why his name is far less famous than the companies he worked for.
+
+**Woods, the independent case.** Woods patented on his own account and sold or licensed patents to major electrical companies. Independence bought him his name on the patents and cost him the institutional protection a company provides, including in litigation, which is a real trade rather than an obvious win.
+
+**James E. West, the modern case.** In 1962 West and **Gerhard Sessler**, both at Bell Telephone Laboratories, filed the application that issued as US patent **3,118,022**, an electroacoustic transducer using a charged polymer foil: the **electret microphone**. Descendants of that design became overwhelmingly dominant in telephones, hearing aids, camcorders, and computers. West is named on the patent, holds a very large number of patents overall, and the patent itself came out of Bell Labs, where employee inventions are assigned to the employer as a matter of course. This is mechanism two operating in a modern research laboratory rather than a nineteenth-century workshop.
+
+**Mark Dean, the same pattern again.** Dean, an engineer at IBM, is named on patents arising from the original IBM personal computer work, commonly reported as three of the nine, including the bus architecture that let users add peripherals. Every one of those patents is IBM's property. The machine is remembered as an IBM product, which it was.
+
+**What this section is arguing.** The disappearance of these names is not primarily a story about villains. It is a story about a system that reliably converts individual invention into corporate identity, applied to people who had fewer alternatives to entering that system than their colleagues did.
+
+:::reveal What does Fouché set out to replace, and why is his book uncomfortable in both directions? ||| He replaces mythologized figures with people. That means complicating the lone-genius story readers arrive with, while also showing how a Black inventor negotiated a racially stratified professional world to do technical work.
+
+:::reveal What did US patent 3,118,022 cover, and what does it illustrate about credit? ||| The electret microphone, an electroacoustic transducer using a charged polymer foil, filed in 1962 by James E. West and Gerhard Sessler at Bell Labs. It illustrates assignment in a modern research laboratory: named inventors, employer-owned patent.
+
+## Vocabulary
+- **Rayvon Fouché**: author of the 2003 study of Woods, Latimer, and Davidson that reframes Black invention around industrial organizations rather than lone genius.
+- **Shelby J. Davidson**: the third figure in Fouché's study, who did his technical work inside the federal government.
+- **Electret microphone**: the charged-polymer-foil transducer of US patent 3,118,022, whose descendants dominate telephones, hearing aids, and computers.
+- **Corporate identity conversion**: the reliable process by which a system turns individual invention into a company's public reputation.
+
+## Sources
+- Fouché, R. (2003). *Black inventors in the age of segregation: Granville T. Woods, Lewis H. Latimer, and Shelby J. Davidson*. Johns Hopkins University Press.
+- National Inventors Hall of Fame. (n.d.). *James E. West*. https://www.invent.org/inductees/james-e-west
+- United States Patent and Trademark Office. (n.d.). *Inventors change the world: James West*. https://www.uspto.gov/learning-and-resources/kids-educators/inventor-cards/james-west`,
+    },
+    {
+      slug: "credit-without-a-patent",
+      title: "11 · When the currency is authorship, not patents",
+      section: "Section 3 · The employer, the corporation, and the vanished name",
+      body: `In science and medicine, credit does not run through patents. It runs through whose name is on the paper and whose name is on the procedure. Three cases show the mechanism cleanly, and two of them have been formally corrected.
+
+**Alice Ball.** A chemist at the College of Hawaii, Ball developed a way to prepare **chaulmoogra oil** as an injectable, water-miscible preparation, isolating its active components so it could be given without the side effects that had made earlier forms nearly unusable. It became the standard treatment for leprosy for roughly two decades, until sulfone drugs arrived. Ball died in 1916, at twenty-four, before publishing. **Arthur L. Dean**, a chemist and the college's president, continued the work, published, and the technique circulated as the *Dean method*. In 1922 the physician **Harry T. Hollmann** published a paper that credited Ball directly and named the technique the *Ball Method*, which is a large part of why her name survived at all.
+
+**Vivien Thomas.** A surgical technician at Johns Hopkins, without a medical degree because the Depression had destroyed his savings and his path to college. Over nearly two years of laboratory work involving roughly two hundred dogs, Thomas worked out the surgical approach for the correction of a cyanotic congenital heart defect and demonstrated it was survivable. When the first operation was performed on a child in 1944, Thomas stood on a stool behind the surgeon, Alfred Blalock, coaching him through it. The paper appeared in *JAMA* in May 1945 under Blalock and Taussig. **Thomas was not named.** Johns Hopkins awarded him an honorary Doctor of Laws in 1976 and appointed him to the faculty as an instructor in surgery. The procedure is now called the **Blalock-Taussig-Thomas shunt**; the American Medical Association reported the renaming in 2023.
+
+**Gladys West.** A mathematician at the United States Naval Surface Warfare Center at Dahlgren, Virginia, West worked on satellite geodesy: the computations behind an accurate mathematical model of the shape of the Earth, which is a prerequisite for any satellite positioning system. That work fed into what became GPS. Public recognition came decades after the work itself, which is the pattern this lesson exists to name.
+
+**The pattern.** In all three, no patent was ever at issue. What was at issue was a byline, a name on a procedure, and a credit line in an institutional history. That is a different mechanism from assignment and it needs different evidence: publication records, laboratory notebooks, and institutional correspondence rather than patent files.
+
+:::reveal Why did Alice Ball's name survive despite Arthur Dean publishing the work without her? ||| Because in 1922 the physician Harry T. Hollmann published a paper crediting her directly and naming the technique the Ball Method, which put her name into the printed record where it could be found later.
+
+:::reveal What kind of evidence does the authorship mechanism require, as opposed to the assignment mechanism? ||| Publication records, laboratory notebooks, and institutional correspondence, rather than patent files. Nothing in these three cases turned on a patent at all.
+
+## Vocabulary
+- **Chaulmoogra oil**: the plant oil Alice Ball rendered into an injectable preparation, the standard leprosy treatment for about two decades.
+- **The Ball Method**: the name Harry T. Hollmann gave the technique in a 1922 paper, after it had circulated as the Dean method.
+- **Blalock-Taussig-Thomas shunt**: the cardiac procedure renamed to include Vivien Thomas, a change the American Medical Association reported in 2023.
+- **Satellite geodesy**: the mathematical modeling of the Earth's shape from satellite data, the field Gladys West worked in at Dahlgren.
+- **Byline credit**: authorship as the currency of scientific recognition, distinct from patent ownership.
+
+## Sources
+- National Women's History Museum. (n.d.). *Alice Ball*. https://www.womenshistory.org/education-resources/biographies/alice-ball
+- American Medical Association. (n.d.). *New name for lifesaving procedure recognizes Black pioneer's role*. https://www.ama-assn.org/public-health/health-equity/new-name-lifesaving-procedure-recognizes-black-pioneer-s-role
+- American Academy of Pediatrics. (n.d.). *The hidden history of Vivien Thomas and racial bias in medicine*. https://www.aap.org/en/news-room/aap-voices/hidden-history-of-vivien-thomas-and-racial-bias-in-medicine/`,
+    },
+    {
+      slug: "quiz-corporation-and-credit",
+      title: "12 · Knowledge check: employers, corporations, and authorship",
+      section: "Section 3 · The employer, the corporation, and the vanished name",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What is an assignment, in patent terms?",
+            options: ["A transfer of patent ownership to another party", "A licensing arrangement that leaves ownership with the inventor", "A court order redistributing rights after an infringement finding", "The examiner's allocation of an application to a technology class"],
+            correctIndex: 0,
+            explanation: "A patent is property, and property can be transferred. The form that matters here is the pre-invention assignment.",
+            sourceLessonSlug: "assignment",
+          },
+          {
+            prompt: "When is a pre-invention assignment signed?",
+            options: ["On the first day of the job", "At the moment the invention is reduced to practice", "When the patent application is filed with the office", "After the patent issues, as a separately negotiated sale"],
+            correctIndex: 0,
+            explanation: "The employment agreement covers anything the employee invents in the scope of the work, from the moment it exists.",
+            sourceLessonSlug: "assignment",
+          },
+          {
+            prompt: "What does an assigned inventor keep?",
+            options: ["Their name on the face of the patent", "The right to license the invention to third parties", "The right to sue infringers in their own name", "A statutory share of any revenue the patent produces"],
+            correctIndex: 0,
+            explanation: "US law requires patents to name the actual human inventors, so the name is permanent even when the ownership is not.",
+            sourceLessonSlug: "assignment",
+          },
+          {
+            prompt: "What does an assigned inventor lose?",
+            options: ["Licensing, litigation, sale, and the money", "The ability to work on the same technology afterward", "The right to be named on the patent at all", "Any claim to have invented the thing in public"],
+            correctIndex: 0,
+            explanation: "Which is why the course describes a patent you are named on and do not own as a line on a resume.",
+            sourceLessonSlug: "assignment",
+          },
+          {
+            prompt: "Why does assignment shift public memory to the company?",
+            options: ["The company advertises, litigates, and licenses", "Because the inventor's name is removed from the published patent", "Because assignment is recorded confidentially and cannot be searched", "Because employers are legally entitled to claim inventorship"],
+            correctIndex: 0,
+            explanation: "A century later people say Bell, General Electric, or IBM, and no individual name survives the sentence.",
+            sourceLessonSlug: "assignment",
+          },
+          {
+            prompt: "What did independent invention require that segregation restricted?",
+            options: ["Capital, attorney fees, credit, and courtroom standing", "A college degree in engineering and a professional license", "Membership in a trade association that admitted only white members", "Residence in a state that permitted Black citizens to own property"],
+            correctIndex: 0,
+            explanation: "So the choice was frequently between assignment on an employer's terms and no patent at all.",
+            sourceLessonSlug: "assignment",
+          },
+          {
+            prompt: "What is a constrained choice, as the lesson uses the term?",
+            options: ["A free decision among options narrowed by outside conditions", "A decision made under legal compulsion with no alternative", "A choice that can be reversed within a statutory cooling-off period", "A choice made by an agent rather than by the principal"],
+            correctIndex: 0,
+            explanation: "It is the honest description of assignment for an inventor whose alternatives were closed off by segregation.",
+            sourceLessonSlug: "assignment",
+          },
+          {
+            prompt: "Which phrase on a patent's face identifies the assignment?",
+            options: ["Assignor to", "Reduced to practice", "Letters patent granted", "Improvement in"],
+            correctIndex: 0,
+            explanation: "Spotting that single line resolves a large share of the arguments in this field before they begin.",
+            sourceLessonSlug: "assignment",
+          },
+          {
+            prompt: "Which three inventors does Fouché's 2003 study examine?",
+            options: ["Granville T. Woods, Lewis H. Latimer, and Shelby J. Davidson", "Norbert Rillieux, Elijah McCoy, and Garrett Morgan", "Lewis Latimer, Alice Ball, and Vivien Thomas", "Thomas Jennings, Henry Blair, and Judy W. Reed"],
+            correctIndex: 0,
+            explanation: "An independent inventor, a corporate engineer, and a technical worker inside the federal government.",
+            sourceLessonSlug: "inside-the-corporation",
+          },
+          {
+            prompt: "What does Fouché argue about the lone-genius story?",
+            options: ["It is wrong about invention generally and distorts this history", "It is accurate for independent inventors and wrong only for employees", "It was invented by the Patent Office to justify the examination system", "It applies to the nineteenth century but not to the twentieth"],
+            correctIndex: 0,
+            explanation: "Most successful inventors of the period worked inside industrial organizations, so the real question is how they negotiated them.",
+            sourceLessonSlug: "inside-the-corporation",
+          },
+          {
+            prompt: "Fouché explicitly sets out to do what?",
+            options: ["Replace mythologized figures with people", "Prove that each of the three was cheated by a major corporation", "Establish the earliest date for each disputed invention", "Recover patents that were wrongly assigned to employers"],
+            correctIndex: 0,
+            explanation: "Which means complicating several of the stories a reader is likely to arrive holding, in both directions.",
+            sourceLessonSlug: "inside-the-corporation",
+          },
+          {
+            prompt: "What was Lewis Latimer's professional training?",
+            options: ["Draftsman", "Chemist, specializing in carbon compounds", "Machinist, trained in a railroad workshop", "Electrical engineer, trained at a technical college"],
+            correctIndex: 0,
+            explanation: "He drew patent drawings, worked for Hiram Maxim's electric lighting company and later Edison's, and became an Edison Pioneer.",
+            sourceLessonSlug: "inside-the-corporation",
+          },
+          {
+            prompt: "Why is Latimer's name less famous than the companies he worked for?",
+            options: ["He spent his career producing work owned by his employers", "Because he never held any patents in his own name", "Because his employers legally barred him from publicizing his role", "Because his patents were all invalidated in later litigation"],
+            correctIndex: 0,
+            explanation: "That is the ordinary condition of a corporate engineer, and it is mechanism two rather than a conspiracy.",
+            sourceLessonSlug: "inside-the-corporation",
+          },
+          {
+            prompt: "What trade did independence represent for Granville T. Woods?",
+            options: ["His name on the patents, without institutional protection", "Institutional protection, at the cost of his name on the patents", "Higher income, at the cost of access to laboratory equipment", "Freedom from assignment, at the cost of the right to sell patents"],
+            correctIndex: 0,
+            explanation: "He patented on his own account and sold or licensed to major electrical companies, but faced litigation without a company behind him.",
+            sourceLessonSlug: "inside-the-corporation",
+          },
+          {
+            prompt: "Which patent covers the electret microphone?",
+            options: ["US 3,118,022", "US 3,482,037, for a home security system", "US 4,591,071, for a squirt gun", "US 252,386, for a process of manufacturing carbons"],
+            correctIndex: 0,
+            explanation: "Filed in 1962 by James E. West and Gerhard Sessler at Bell Telephone Laboratories.",
+            sourceLessonSlug: "inside-the-corporation",
+          },
+          {
+            prompt: "Who co-invented the electret microphone with James E. West?",
+            options: ["Gerhard Sessler", "Joseph V. Nichols, his co-inventor on an earlier lamp patent", "Mark Dean, later of IBM's personal computer program", "Shelby J. Davidson, the third subject of Fouché's study"],
+            correctIndex: 0,
+            explanation: "Both were at Bell Telephone Laboratories, where employee inventions are assigned to the employer as a matter of course.",
+            sourceLessonSlug: "inside-the-corporation",
+          },
+          {
+            prompt: "What does the electret microphone use to convert sound?",
+            options: ["A charged polymer foil", "A carbon granule chamber under variable pressure", "A moving coil suspended in a permanent magnetic field", "A piezoelectric crystal bonded to a metal diaphragm"],
+            correctIndex: 0,
+            explanation: "Descendants of that design became overwhelmingly dominant in telephones, hearing aids, camcorders, and computers.",
+            sourceLessonSlug: "inside-the-corporation",
+          },
+          {
+            prompt: "Mark Dean's patents from the original IBM PC work are owned by whom?",
+            options: ["IBM", "Dean personally, under a negotiated exception", "Jointly by Dean and the other named inventors", "A consortium of PC manufacturers who licensed the bus"],
+            correctIndex: 0,
+            explanation: "Commonly reported as three of the nine original patents, including the bus architecture that let users add peripherals.",
+            sourceLessonSlug: "inside-the-corporation",
+          },
+          {
+            prompt: "What is this section's central argument about disappearing names?",
+            options: ["A system converts individual invention into corporate identity", "Corporations deliberately concealed the race of their inventors", "Patent examiners systematically rejected applications from Black inventors", "Inventors chose anonymity to protect themselves from retaliation"],
+            correctIndex: 0,
+            explanation: "Applied to people who had fewer alternatives to entering that system than their colleagues did.",
+            sourceLessonSlug: "inside-the-corporation",
+          },
+          {
+            prompt: "In science and medicine, credit runs through what?",
+            options: ["Whose name is on the paper and on the procedure", "Whose employer holds the patent on the underlying method", "Which institution funded the research programme", "Which journal published the first account of the result"],
+            correctIndex: 0,
+            explanation: "Which is why none of the three cases in this lesson turned on a patent at all.",
+            sourceLessonSlug: "credit-without-a-patent",
+          },
+          {
+            prompt: "What did Alice Ball do with chaulmoogra oil?",
+            options: ["Made it into an injectable, water-miscible preparation", "Synthesized an artificial substitute for it from coal tar", "Proved that it had no therapeutic value against leprosy", "Reduced its cost by developing a plantation supply chain"],
+            correctIndex: 0,
+            explanation: "She isolated its active components so it could be given without the side effects that had made earlier forms nearly unusable.",
+            sourceLessonSlug: "credit-without-a-patent",
+          },
+          {
+            prompt: "How long did Ball's preparation remain the standard leprosy treatment?",
+            options: ["Roughly two decades, until sulfone drugs", "About three years, until a synthetic alternative appeared", "Until the 1970s, when multidrug therapy was introduced", "It was never adopted clinically outside Hawaii"],
+            correctIndex: 0,
+            explanation: "Which is a substantial clinical run for a preparation developed by a chemist who died at twenty-four.",
+            sourceLessonSlug: "credit-without-a-patent",
+          },
+          {
+            prompt: "At what age did Alice Ball die?",
+            options: ["Twenty-four", "Thirty-two, shortly after publishing her results", "Forty-one, after two decades at the College of Hawaii", "Nineteen, while still an undergraduate student"],
+            correctIndex: 0,
+            explanation: "She died in 1916, before publishing, which is the opening the credit dispute ran through.",
+            sourceLessonSlug: "credit-without-a-patent",
+          },
+          {
+            prompt: "Who published Ball's work and circulated it under his own name?",
+            options: ["Arthur L. Dean", "Harry T. Hollmann, the physician who first proposed the work", "Alfred Blalock, in a paper on injectable preparations", "Gerhard Sessler, then a chemist at the same college"],
+            correctIndex: 0,
+            explanation: "Dean was a chemist and the college's president, and the technique circulated as the Dean method.",
+            sourceLessonSlug: "credit-without-a-patent",
+          },
+          {
+            prompt: "Who credited Ball in print in 1922?",
+            options: ["Harry T. Hollmann", "Arthur L. Dean, in a correction to his earlier paper", "The College of Hawaii, in its annual report", "The United States Public Health Service, in a bulletin"],
+            correctIndex: 0,
+            explanation: "The physician's paper named the technique the Ball Method, which is a large part of why her name survived at all.",
+            sourceLessonSlug: "credit-without-a-patent",
+          },
+          {
+            prompt: "Why did Vivien Thomas lack a medical degree?",
+            options: ["The Depression destroyed his savings and his path to college", "He was refused admission to every medical school he applied to", "He chose surgical technique over the academic route deliberately", "Johns Hopkins barred technicians from enrolling while employed"],
+            correctIndex: 0,
+            explanation: "He did the work of a researcher and a surgeon from a technician's position and pay grade.",
+            sourceLessonSlug: "credit-without-a-patent",
+          },
+          {
+            prompt: "Roughly how many dogs did Thomas's laboratory work involve?",
+            options: ["About two hundred", "About twenty, over three months of preparation", "About two thousand, over a decade of experiments", "None; the work was entirely theoretical until the first operation"],
+            correctIndex: 0,
+            explanation: "Over nearly two years, establishing that the correction was survivable before it was attempted on a child.",
+            sourceLessonSlug: "credit-without-a-patent",
+          },
+          {
+            prompt: "Where was Thomas during the first operation in 1944?",
+            options: ["On a stool behind the surgeon, coaching him through it", "Observing from the gallery with the rest of the department", "In the laboratory, running a parallel procedure on a control animal", "Absent, having been barred from the operating room"],
+            correctIndex: 0,
+            explanation: "The paper appeared in JAMA in May 1945 under Blalock and Taussig, and Thomas was not named.",
+            sourceLessonSlug: "credit-without-a-patent",
+          },
+          {
+            prompt: "What did Johns Hopkins award Thomas in 1976?",
+            options: ["An honorary Doctor of Laws", "An honorary Doctor of Medicine, granted by special dispensation", "A full professorship in the department of surgery", "The university's highest research prize, with a cash award"],
+            correctIndex: 0,
+            explanation: "It also appointed him to the faculty as an instructor in surgery, thirty-two years after the first operation.",
+            sourceLessonSlug: "credit-without-a-patent",
+          },
+          {
+            prompt: "What is the procedure now called?",
+            options: ["The Blalock-Taussig-Thomas shunt", "The Thomas-Blalock procedure, with Taussig's name removed", "The Hopkins shunt, after the institution rather than the individuals", "The Thomas shunt, in a renaming that dropped both surgeons"],
+            correctIndex: 0,
+            explanation: "The American Medical Association reported the renaming in 2023.",
+            sourceLessonSlug: "credit-without-a-patent",
+          },
+          {
+            prompt: "Where did Gladys West work?",
+            options: ["The Naval Surface Warfare Center at Dahlgren, Virginia", "Bell Telephone Laboratories in Murray Hill, New Jersey", "The Langley Research Center in Hampton, Virginia", "The Naval Observatory in Washington, DC"],
+            correctIndex: 0,
+            explanation: "Her satellite geodesy work fed into what became GPS, and public recognition came decades afterward.",
+            sourceLessonSlug: "credit-without-a-patent",
+          },
+          {
+            prompt: "What is satellite geodesy?",
+            options: ["Modeling the Earth's shape from satellite data", "Calculating orbital insertion trajectories for launch vehicles", "Mapping the ocean floor using radar altimetry alone", "Predicting satellite decay from atmospheric drag measurements"],
+            correctIndex: 0,
+            explanation: "An accurate model of the shape of the Earth is a prerequisite for any satellite positioning system.",
+            sourceLessonSlug: "credit-without-a-patent",
+          },
+          {
+            prompt: "What was at issue in all three cases in this lesson?",
+            options: ["A byline, a procedure name, and a credit line", "Ownership of a patent that had been improperly assigned", "The right to publish results without institutional approval", "Compensation for work performed outside the terms of employment"],
+            correctIndex: 0,
+            explanation: "No patent was ever at issue, which is what makes this a different mechanism requiring different evidence.",
+            sourceLessonSlug: "credit-without-a-patent",
+          },
+          {
+            prompt: "What evidence does the authorship mechanism call for?",
+            options: ["Publication records, notebooks, and correspondence", "Patent files, assignment records, and litigation dockets", "Census returns, city directories, and obituaries", "Employment contracts and payroll records"],
+            correctIndex: 0,
+            explanation: "Patent files are the wrong archive entirely when the currency was a byline rather than a property right.",
+            sourceLessonSlug: "credit-without-a-patent",
+          },
+          {
+            prompt: "Which two of the three cases have been formally corrected?",
+            options: ["Ball and Thomas", "Thomas and West", "Ball and West", "None of the three has been formally corrected"],
+            correctIndex: 0,
+            explanation: "Hollmann's 1922 paper named the Ball Method, and the shunt was renamed to include Thomas.",
+            sourceLessonSlug: "credit-without-a-patent",
+          },
+          {
+            prompt: "Why does the course call the assignment mechanism not a scandal?",
+            options: ["The employee is paid, the employer takes the risk, and both agreed", "Because assignment is legally unenforceable and rarely used", "Because employers voluntarily credit inventors in their advertising", "Because the inventor may reclaim the patent after seventeen years"],
+            correctIndex: 0,
+            explanation: "The effect on the historical record is enormous even though nothing improper is happening by the law's own standards.",
+            sourceLessonSlug: "assignment",
+          },
+          {
+            prompt: "Latimer's employers included which two companies?",
+            options: ["Hiram Maxim's and Edison's electric lighting companies", "Western Electric and Bell Telephone Laboratories", "General Electric and Westinghouse, in succession", "IBM and the Naval Surface Warfare Center"],
+            correctIndex: 0,
+            explanation: "He became one of the Edison Pioneers and holds patents in his own name, two of which Section 4 covers.",
+            sourceLessonSlug: "inside-the-corporation",
+          },
+          {
+            prompt: "What is a patent you are named on but do not own?",
+            options: ["A line on a resume", "A licensable asset you may sell at any time", "A basis for an infringement action in your own name", "Legally indistinguishable from a patent you do own"],
+            correctIndex: 0,
+            explanation: "The name is permanent, and everything with financial or legal value has gone to the assignee.",
+            sourceLessonSlug: "assignment",
+          },
+          {
+            prompt: "The Bell Labs and IBM examples both illustrate which mechanism?",
+            options: ["Assignment to an employer", "Publication by a colleague", "Absorption into a brand name", "Exclusion from the patent system"],
+            correctIndex: 0,
+            explanation: "Named inventors, employer-owned patents, and public memory attaching to the company rather than to the people.",
+            sourceLessonSlug: "inside-the-corporation",
+          },
+          {
+            prompt: "Why does Fouché's approach make some readers uncomfortable?",
+            options: ["It complicates the heroic version as well as the dismissive one", "It argues that none of the three inventors was significant", "It concludes that racial barriers played no role in their careers", "It relies entirely on company records rather than personal papers"],
+            correctIndex: 0,
+            explanation: "Humanizing a figure means removing the myth, and the myth is what many readers arrived for.",
+            sourceLessonSlug: "inside-the-corporation",
+          },
+          {
+            prompt: "In which year was the electret microphone application filed?",
+            options: ["1962", "1964, the year the patent issued", "1957, during West's first summer at Bell Labs", "1969, alongside the home security system patent"],
+            correctIndex: 0,
+            explanation: "It issued as US patent 3,118,022, and its descendants became the dominant microphone design worldwide.",
+            sourceLessonSlug: "inside-the-corporation",
+          },
+          {
+            prompt: "The three cases in lesson 11 share which feature?",
+            options: ["No patent was involved in any of them", "All three inventors worked for the federal government", "All three were formally corrected within the inventor's lifetime", "All three involved a co-worker filing a patent application first"],
+            correctIndex: 0,
+            explanation: "That is precisely why they need a different archive: bylines and procedure names, not patent files.",
+            sourceLessonSlug: "credit-without-a-patent",
+          },
+          {
+            prompt: "The most useful single line to find on a disputed patent is what?",
+            options: ["The assignor-to line", "The examiner's name and art unit", "The filing date relative to the product launch", "The number of claims in the granted patent"],
+            correctIndex: 0,
+            explanation: "It tells you immediately that the person invented it and the company owned it from the start.",
+            sourceLessonSlug: "assignment",
+          },
+          {
+            prompt: "Shelby J. Davidson did his technical work where?",
+            options: ["Inside the federal government", "At General Electric's research laboratory", "As an independent inventor in Cincinnati", "At the College of Hawaii as a chemist"],
+            correctIndex: 0,
+            explanation: "He is the third figure in Fouché's study, alongside the independent Woods and the corporate Latimer.",
+            sourceLessonSlug: "inside-the-corporation",
+          },
+          {
+            prompt: "What did Dean's bus architecture patent enable?",
+            options: ["Users adding peripherals to the machine", "The first color display driver for a personal computer", "Compatibility between IBM and non-IBM operating systems", "Networking multiple personal computers over telephone lines"],
+            correctIndex: 0,
+            explanation: "All of the resulting patents are IBM's property, and the machine is remembered as an IBM product, which it was.",
+            sourceLessonSlug: "inside-the-corporation",
+          },
+          {
+            prompt: "Why did Ball's death open the way for the credit dispute?",
+            options: ["She died before publishing", "Her laboratory notebooks were destroyed on her death", "Her patent application lapsed for non-payment of fees", "Her employer reassigned the project to a different department"],
+            correctIndex: 0,
+            explanation: "Dean continued the work, published, and the technique circulated under his name until Hollmann corrected the record in 1922.",
+            sourceLessonSlug: "credit-without-a-patent",
+          },
+          {
+            prompt: "West's patent count is best described how?",
+            options: ["Very large, across US and foreign filings", "A single patent, on the electret microphone alone", "Three, matching Mark Dean's count on the IBM PC", "Unknown, since Bell Labs filings were anonymous"],
+            correctIndex: 0,
+            explanation: "The number is large enough that the interesting fact is the ownership pattern rather than the count.",
+            sourceLessonSlug: "inside-the-corporation",
+          },
+          {
+            prompt: "The phrase \"corporate identity conversion\" names what?",
+            options: ["A system reliably turning individual invention into company reputation", "The legal process of incorporating an inventor's business", "A patent office procedure for transferring an application", "The rebranding of a product after its inventor leaves the firm"],
+            correctIndex: 0,
+            explanation: "It is not villainy, which is why the section insists the disappearance of these names is structural rather than personal.",
+            sourceLessonSlug: "inside-the-corporation",
+          },
+          {
+            prompt: "Which is the correct order of Thomas's recognition?",
+            options: ["1944 operation, 1945 paper without him, 1976 doctorate, 2023 renaming", "1944 operation, 1945 paper naming him, 1976 professorship, 2023 prize", "1945 operation, 1944 paper, 1976 renaming, 2023 doctorate", "1944 operation, 1976 paper, 1995 doctorate, 2023 renaming"],
+            correctIndex: 0,
+            explanation: "Thirty-two years to the honorary Doctor of Laws, and nearly eighty to the procedure carrying his name.",
+            sourceLessonSlug: "credit-without-a-patent",
+          },
+          {
+            prompt: "Why must US patents name the actual human inventors?",
+            options: ["The law requires it, regardless of who owns the patent", "Because ownership cannot be transferred without a named inventor", "Because the examiner must contact the inventor during prosecution", "Because the disclosure requirement is personal to the inventor"],
+            correctIndex: 0,
+            explanation: "It is why an assigned inventor's name survives on the document permanently even after every valuable right has moved.",
+            sourceLessonSlug: "assignment",
+          },
+          {
+            prompt: "The defect Thomas's work addressed is best described as what?",
+            options: ["A cyanotic congenital heart defect in children", "An adult valve disease caused by rheumatic fever", "A vascular injury common in wartime trauma surgery", "A congenital lung malformation requiring lobe removal"],
+            correctIndex: 0,
+            explanation: "He worked out the surgical approach and demonstrated it was survivable before it was attempted on a child in 1944.",
+            sourceLessonSlug: "credit-without-a-patent",
+          },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 4 — The verified record
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "documented-cases-nineteenth-century",
+      title: "13 · The documented cases: the nineteenth century",
+      section: "Section 4 · The verified record",
+      body: `Every claim in this lesson comes with a number and a date you can look up in about a minute. That is the standard, and it is the reason these cases are worth more than a longer list of stories.
+
+**Elijah McCoy, patent 129,843.** Granted **23 July 1872**, titled *Improvement in Lubricators for Steam Engines*. The problem it solved is real and specific: a steam engine needed lubrication, and stopping a locomotive or a factory line to oil it cost time and money. McCoy's device fed oil to the moving parts while the engine ran. He went on to hold a large number of patents across a long career. Read the title once more and notice what it claims: an **improvement in lubricators**, not the invention of lubrication.
+
+**Granville T. Woods, patents 373,383 and 373,915.** Both issued in **1887**, covering induction telegraphy: a system allowing messages to pass between a moving train and a station, or between trains, using electromagnetic induction rather than a physical connection. The safety value is obvious once stated, since trains that can be told where other trains are do not collide as often. Priority in this area was contested, and Woods prevailed in an **interference** proceeding against **Lucius Phelps**, which is the documented dispute. The much more famous story, that Thomas Edison sued Woods twice and lost and then offered him a partnership, is repeated nearly everywhere and this course does not assert it; it is exactly the class of claim Fouché's work re-examined, and it is filed as an open source check rather than taught.
+
+**Lewis H. Latimer, patents 247,097 and 252,386.** The first, issued **13 September 1881** with co-inventor **Joseph V. Nichols**, covers a method of attaching carbon filaments to the conducting wires inside an electric lamp. The second, issued **17 January 1882**, is titled *Process of Manufacturing Carbons*, and covers making the carbon filaments themselves. Both are manufacturing improvements to incandescent lighting, and both are real, granted, numbered patents. Neither is the invention of the light bulb, and Section 5 deals with why that distinction is worth defending rather than blurring.
+
+**Norbert Rillieux, patents 3,237 and 4,879.** Covered in Section 2, and the strongest of the nineteenth-century group on technical merit.
+
+**What the pattern shows.** Four inventors, eight patents, every one an improvement to an existing industrial system: lubrication, signaling, lighting, refining. That is what invention usually looks like, and describing it accurately costs nothing. The exaggerated versions of these same careers are strictly worse, because they can be dismantled by anyone with a search engine and thirty seconds.
+
+:::reveal What does the title of McCoy's patent 129,843 claim, and what does it not claim? ||| It claims an improvement in lubricators for steam engines: a device that oils moving parts while the engine runs. It does not claim the invention of lubrication.
+
+:::reveal Which Woods dispute is documented, and which is only widely repeated? ||| The documented one is the interference proceeding against Lucius Phelps, which Woods won. The story that Edison sued him twice, lost, and then offered a partnership is repeated everywhere and is not asserted by this course.
+
+## Vocabulary
+- **Interference proceeding**: the Patent Office contest determining which of two applicants invented first, and the documented form of Woods's priority dispute.
+- **Induction telegraphy**: signaling between moving trains and stations through electromagnetic induction rather than a physical connection.
+- **Improvement in lubricators**: the actual subject of McCoy's 1872 patent, and a useful reminder of how patent titles are worded.
+- **Process of Manufacturing Carbons**: the title of Latimer's 1882 patent 252,386, covering the making of carbon filaments.
+
+## Sources
+- Fouché, R. (2003). *Black inventors in the age of segregation: Granville T. Woods, Lewis H. Latimer, and Shelby J. Davidson*. Johns Hopkins University Press.
+- James, P. P. (1989). *The real McCoy: African-American invention and innovation, 1619-1930*. Smithsonian Institution Press.
+- National Inventors Hall of Fame. (n.d.). *Elijah McCoy*. https://www.invent.org/inductees/elijah-mccoy
+- National Inventors Hall of Fame. (n.d.). *Lewis Latimer*. https://www.invent.org/inductees/lewis-latimer`,
+    },
+    {
+      slug: "documented-cases-twentieth-century",
+      title: "14 · The documented cases: the twentieth century",
+      section: "Section 4 · The verified record",
+      body: `Same standard: a number, a date, and a claim you can read for yourself.
+
+**Garrett A. Morgan, patent 1,113,675.** Issued **13 October 1914** for a breathing device, the **safety hood**, which drew air through a tube hanging near the floor on the principle that smoke and hot gases rise. Morgan received a second breathing-device patent, 1,090,936, the same year. On **25 July 1916** an explosion trapped workers in a tunnel under Lake Erie during construction of the Cleveland waterworks intake. Rescue parties that went in did not come out. Morgan and his brother Frank entered wearing the hoods and brought men out. **Accounts differ on how many were rescued alive and how many bodies were recovered**, and this course gives no number for that reason; it is filed as an open source check. Morgan was widely reported to have been passed over for recognition that white participants received.
+
+**Garrett A. Morgan, patent 1,475,024.** Filed **27 February 1922**, granted **20 November 1923**, for a traffic signal. The important detail is what it added: a **three-position** signal with an intermediate warning state, rather than only stop and go. It is a genuine and useful improvement to signal design, and Section 5 explains why calling it the invention of the traffic light is both false and unnecessary.
+
+**Marie Van Brittan Brown, patent 3,482,037.** Filed **1 August 1966**, issued **2 December 1969**, titled *Home security system utilizing television surveillance*, with **Albert L. Brown** as co-inventor. It describes a camera that can view a visitor through any of several peepholes at different heights, a monitor inside the home, two-way audio to speak to the visitor, a remote door release, and an alarm to summon help. Read that list against a modern video doorbell and the lineage is not subtle. The patent has been cited by later patents many times over, which is the mechanical evidence of influence.
+
+**Lonnie G. Johnson, patent 4,591,071.** Granted **27 May 1986**, titled simply *Squirt gun*, covering a toy that shoots a continuous high-velocity stream of water using stored pressure. Johnson, an engineer who had worked on spacecraft power systems, licensed it to Larami and it became the Super Soaker, one of the best-selling toys in the United States. This is the rare case in this course where the inventor kept the value: he held the patent, licensed it on his own terms, and funded his own research company with the proceeds.
+
+**Frederick McKinley Jones.** Mobile refrigeration units for trucks and railcars, and co-founder of the company that became Thermo King. He held a large number of patents. This course names him without numbers, because the specific patents were not verified for it, and a number quoted from memory is exactly the failure mode this course was built to avoid.
+
+:::reveal What did patent 1,475,024 actually add to traffic signaling? ||| A three-position signal with an intermediate warning state, rather than only stop and go. It is a real improvement to signal design and not the invention of the traffic light.
+
+:::reveal Why does this course name Frederick McKinley Jones without patent numbers? ||| Because his specific patents were not verified for this course, and quoting a number from memory is the exact failure the course exists to prevent.
+
+## Vocabulary
+- **Safety hood**: Morgan's 1914 breathing device, patent 1,113,675, which drew air from near the floor because smoke and hot gases rise.
+- **Three-position signal**: the intermediate warning state that Morgan's 1923 patent 1,475,024 added between stop and go.
+- **Forward citation**: a later patent citing an earlier one, and the mechanical evidence that an invention influenced what followed.
+- **Licensing on your own terms**: Johnson's route with patent 4,591,071, and the rare case in this course where the inventor captured the value.
+
+## Sources
+- United States Patent and Trademark Office. (n.d.). *Of courage and caution*. https://www.uspto.gov/learning-and-resources/journeys-innovation/historical-stories/courage-and-caution
+- National Inventors Hall of Fame. (n.d.). *Lonnie Johnson*. https://www.invent.org/inductees/lonnie-johnson
+- James, P. P. (1989). *The real McCoy: African-American invention and innovation, 1619-1930*. Smithsonian Institution Press.`,
+    },
+    {
+      slug: "reading-a-patent-narrowly",
+      title: "15 · Reading a patent narrowly",
+      section: "Section 4 · The verified record",
+      body: `You now have eleven patent numbers. This lesson is the technique for reading any of them, or any other, without overstating what it says.
+
+**Start with the verb in the title.** *Improvement in*, *process of*, *apparatus for*, *system for*. Patent titles are drafted by attorneys who are precise for a living, and the verb tells you the size of the claim before you read a word of the body. A title beginning *Improvement in* is telling you outright that the underlying thing already existed.
+
+**Then read the first claim.** Claim 1 is normally the broadest, and every later claim narrows it further. If claim 1 recites a specific combination of elements, the patent covers that combination, not the general idea. This is why two people can hold patents on what a layperson would call the same device.
+
+**Check the assignee.** If the face says *assignor to* a company, you have found mechanism two and you know the ownership answer without further research.
+
+**Check the dates, both of them.** A patent has a **filing date** and an **issue date**, often years apart, and priority runs from filing. Comparing an issue date against someone else's filing date is a standard way to reach a confidently wrong conclusion about who was first.
+
+**Check forward citations.** Later patents citing this one are evidence that the field found it useful. It is not proof of importance, but it is real evidence and it is free to look at.
+
+**Then state the claim at the size of the document.** Here are the same facts stated two ways:
+
+- Overstated: *He invented the modern home security system.*
+- Accurate: *In 1969 she and her husband received patent 3,482,037 for a home security system using television surveillance, with a camera viewing a visitor through peepholes at several heights, two-way audio, a remote door release, and an alarm.*
+
+The second is longer, and it is also unanswerable. Nobody can take it away from you, because every element of it is on a document with a number. That trade, a longer sentence for a claim nobody can dismantle, is the whole discipline this course is teaching.
+
+:::reveal Why is comparing an issue date against a rival's filing date a route to a wrong conclusion? ||| Because a patent has both, often years apart, and priority runs from the filing date. Comparing the two different date types makes a later filer look earlier.
+
+:::reveal What is the trade the accurate version of a claim makes? ||| A longer sentence in exchange for a claim nobody can dismantle, because every element of it sits on a numbered document that anyone can check.
+
+## Vocabulary
+- **Claim 1**: normally the broadest claim in a patent, with every later claim narrowing it further.
+- **Filing date and issue date**: the two dates on a patent, often years apart, with priority running from the filing date.
+- **Assignee**: the party that owns the patent, printed on the face after the phrase assignor to.
+- **Stating at document size**: describing an achievement using exactly what the document supports, no more and no less.
+
+## Sources
+- Fouché, R. (2003). *Black inventors in the age of segregation: Granville T. Woods, Lewis H. Latimer, and Shelby J. Davidson*. Johns Hopkins University Press.
+- James, P. P. (1989). *The real McCoy: African-American invention and innovation, 1619-1930*. Smithsonian Institution Press.`,
+    },
+    {
+      slug: "quiz-the-verified-record",
+      title: "16 · Knowledge check: the verified record",
+      section: "Section 4 · The verified record",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What is Elijah McCoy's 1872 patent number?",
+            options: ["129,843", "373,915, one of the induction telegraphy patents", "252,386, the process of manufacturing carbons", "1,113,675, the safety hood breathing device"],
+            correctIndex: 0,
+            explanation: "Granted 23 July 1872, titled Improvement in Lubricators for Steam Engines.",
+            sourceLessonSlug: "documented-cases-nineteenth-century",
+          },
+          {
+            prompt: "What problem did McCoy's lubricator solve?",
+            options: ["Oiling an engine without stopping it", "Preventing lubricating oil from igniting near the firebox", "Reducing the volume of oil a locomotive had to carry", "Filtering grit out of oil before it reached the bearings"],
+            correctIndex: 0,
+            explanation: "Stopping a locomotive or a factory line to oil it cost time and money, which is a specific and checkable problem.",
+            sourceLessonSlug: "documented-cases-nineteenth-century",
+          },
+          {
+            prompt: "What does McCoy's patent title claim?",
+            options: ["An improvement in lubricators", "The invention of mechanical lubrication", "A system for automatic engine maintenance", "A process for refining lubricating oils"],
+            correctIndex: 0,
+            explanation: "The wording is doing precise work: an improvement to something that already existed, not its invention.",
+            sourceLessonSlug: "documented-cases-nineteenth-century",
+          },
+          {
+            prompt: "Which two patents cover Granville T. Woods's induction telegraphy?",
+            options: ["373,383 and 373,915", "247,097 and 252,386", "3,237 and 4,879", "1,090,936 and 1,113,675"],
+            correctIndex: 0,
+            explanation: "Both issued in 1887. The Latimer, Rillieux, and Morgan pairs are the other three listed.",
+            sourceLessonSlug: "documented-cases-nineteenth-century",
+          },
+          {
+            prompt: "What did induction telegraphy allow?",
+            options: ["Messages between a moving train and a station", "Telegraph signals to travel without any wires at all", "Simultaneous transmission of voice and telegraph on one line", "Automatic braking when two trains approached each other"],
+            correctIndex: 0,
+            explanation: "It used electromagnetic induction rather than a physical connection, and trains that know where other trains are collide less often.",
+            sourceLessonSlug: "documented-cases-nineteenth-century",
+          },
+          {
+            prompt: "Which Woods priority dispute is documented?",
+            options: ["An interference proceeding against Lucius Phelps", "Two lawsuits brought by Thomas Edison, both of which Woods won", "A challenge from the Bell Telephone Company over transmitter claims", "An appeal against the Commissioner of Patents' refusal to grant"],
+            correctIndex: 0,
+            explanation: "Woods prevailed in it. The Edison litigation story is repeated nearly everywhere and is not asserted by this course.",
+            sourceLessonSlug: "documented-cases-nineteenth-century",
+          },
+          {
+            prompt: "How does the course treat the Edison-sued-Woods story?",
+            options: ["As an open source check rather than as teaching", "As established fact, since it appears in every account", "As a fabrication invented by twentieth-century biographers", "As irrelevant, since the outcome would not change the patents"],
+            correctIndex: 0,
+            explanation: "It is exactly the class of claim Fouché's work re-examined, so it is filed for verification rather than taught.",
+            sourceLessonSlug: "documented-cases-nineteenth-century",
+          },
+          {
+            prompt: "What does Latimer's patent 247,097 cover?",
+            options: ["A method of attaching carbon filaments to conducting wires", "A process for manufacturing the carbon filaments themselves", "A vacuum pump for evacuating lamp globes", "A threaded socket for interchangeable lamps"],
+            correctIndex: 0,
+            explanation: "Issued 13 September 1881, with co-inventor Joseph V. Nichols.",
+            sourceLessonSlug: "documented-cases-nineteenth-century",
+          },
+          {
+            prompt: "Who was Latimer's co-inventor on patent 247,097?",
+            options: ["Joseph V. Nichols", "Hiram Maxim, whose company employed him at the time", "Thomas Edison, in his only joint filing with an employee", "Gerhard Sessler, decades before the electret work"],
+            correctIndex: 0,
+            explanation: "The second patent, 252,386, was Latimer's alone.",
+            sourceLessonSlug: "documented-cases-nineteenth-century",
+          },
+          {
+            prompt: "What is patent 252,386 titled?",
+            options: ["Process of Manufacturing Carbons", "Improvement in Incandescent Electric Lamps", "Method of Attaching Filaments to Conducting Wires", "Apparatus for Producing Electric Illumination"],
+            correctIndex: 0,
+            explanation: "Issued 17 January 1882, covering the making of the carbon filaments themselves.",
+            sourceLessonSlug: "documented-cases-nineteenth-century",
+          },
+          {
+            prompt: "What do both Latimer patents have in common?",
+            options: ["They are manufacturing improvements to incandescent lighting", "They cover the complete design of an electric lamp", "They were assigned to Edison Electric before issuing", "They were both invalidated in later infringement litigation"],
+            correctIndex: 0,
+            explanation: "Both are real, granted, numbered patents. Neither is the invention of the light bulb.",
+            sourceLessonSlug: "documented-cases-nineteenth-century",
+          },
+          {
+            prompt: "What do all eight nineteenth-century patents in this lesson have in common?",
+            options: ["Each improves an existing industrial system", "Each was assigned to a corporation on the day it issued", "Each was the subject of an interference proceeding", "Each was reconstructed after the 1836 Patent Office fire"],
+            correctIndex: 0,
+            explanation: "Lubrication, signaling, lighting, and refining. That is what invention usually looks like.",
+            sourceLessonSlug: "documented-cases-nineteenth-century",
+          },
+          {
+            prompt: "Why are the exaggerated versions of these careers strictly worse?",
+            options: ["They can be dismantled with a search engine in thirty seconds", "They are harder for learners to remember than the accurate versions", "They understate the technical difficulty of the actual work", "They attribute the work to the wrong century in most retellings"],
+            correctIndex: 0,
+            explanation: "And describing the achievements accurately costs nothing, which makes the exaggeration a pure loss.",
+            sourceLessonSlug: "documented-cases-nineteenth-century",
+          },
+          {
+            prompt: "What is Garrett Morgan's safety hood patent number?",
+            options: ["1,113,675", "1,475,024, the traffic signal patent", "3,482,037, the home security system", "129,843, the steam engine lubricator"],
+            correctIndex: 0,
+            explanation: "Issued 13 October 1914. He received a second breathing-device patent, 1,090,936, the same year.",
+            sourceLessonSlug: "documented-cases-twentieth-century",
+          },
+          {
+            prompt: "On what principle did the safety hood work?",
+            options: ["Smoke and hot gases rise, so it drew air from near the floor", "Chemical absorbents in the hood neutralized toxic gases", "Compressed air stored in a canister supplied the wearer", "A water-soaked cloth filtered particulates from the air"],
+            correctIndex: 0,
+            explanation: "The intake tube hung near the floor, which is a simple idea that saved lives in the 1916 Cleveland tunnel.",
+            sourceLessonSlug: "documented-cases-twentieth-century",
+          },
+          {
+            prompt: "What happened on 25 July 1916?",
+            options: ["An explosion trapped workers in a tunnel under Lake Erie", "Morgan received his patent for the three-position traffic signal", "The Cleveland waterworks intake was completed and opened", "Morgan demonstrated the safety hood to the Cleveland fire department"],
+            correctIndex: 0,
+            explanation: "Rescue parties that went in did not come out. Morgan and his brother Frank entered wearing the hoods and brought men out.",
+            sourceLessonSlug: "documented-cases-twentieth-century",
+          },
+          {
+            prompt: "Why does the course give no figure for the Cleveland rescue?",
+            options: ["Accounts differ on how many were saved and recovered", "Because the city never released official casualty records", "Because the rescue was later shown not to have taken place", "Because the number is disputed only in twenty-first-century sources"],
+            correctIndex: 0,
+            explanation: "It is filed as an open source check rather than resolved by picking whichever version reads best.",
+            sourceLessonSlug: "documented-cases-twentieth-century",
+          },
+          {
+            prompt: "What is Morgan's traffic signal patent number, and when was it granted?",
+            options: ["1,475,024, granted 20 November 1923", "1,113,675, granted 13 October 1914", "1,090,936, granted earlier in 1914", "3,482,037, granted 2 December 1969"],
+            correctIndex: 0,
+            explanation: "It was filed on 27 February 1922, roughly twenty-one months before it issued.",
+            sourceLessonSlug: "documented-cases-twentieth-century",
+          },
+          {
+            prompt: "What did Morgan's signal patent add?",
+            options: ["A third position giving an intermediate warning state", "The first use of colored lenses in a traffic signal", "Electric operation, replacing hand-cranked semaphores", "Automatic timing, removing the need for a human operator"],
+            correctIndex: 0,
+            explanation: "A genuine and useful improvement to signal design, and one that does not require the false claim to be impressive.",
+            sourceLessonSlug: "documented-cases-twentieth-century",
+          },
+          {
+            prompt: "What is Marie Van Brittan Brown's patent number?",
+            options: ["3,482,037", "4,591,071, for a squirt gun", "1,475,024, for a traffic signal", "373,383, for induction telegraphy"],
+            correctIndex: 0,
+            explanation: "Filed 1 August 1966 and issued 2 December 1969, titled Home security system utilizing television surveillance.",
+            sourceLessonSlug: "documented-cases-twentieth-century",
+          },
+          {
+            prompt: "Who was named as co-inventor on that patent?",
+            options: ["Albert L. Brown", "Lonnie G. Johnson, then an engineering student", "Joseph V. Nichols, in a much later collaboration", "Frederick McKinley Jones, of Thermo King"],
+            correctIndex: 0,
+            explanation: "Her husband. The pair are both named on the face of patent 3,482,037.",
+            sourceLessonSlug: "documented-cases-twentieth-century",
+          },
+          {
+            prompt: "Which elements does the Brown patent describe?",
+            options: ["Camera on peepholes at several heights, monitor, two-way audio, remote release, alarm", "A pressure mat and a bell wired to a neighboring house", "A telephone autodialer connected to a police switchboard", "A photoelectric beam across the doorway triggering a siren"],
+            correctIndex: 0,
+            explanation: "Read that list against a modern video doorbell and the lineage is not subtle.",
+            sourceLessonSlug: "documented-cases-twentieth-century",
+          },
+          {
+            prompt: "What is the mechanical evidence that the Brown patent was influential?",
+            options: ["Later patents have cited it many times", "It was licensed to every major alarm manufacturer of the 1970s", "It was extended beyond its normal term by act of Congress", "It was reissued three times with progressively broader claims"],
+            correctIndex: 0,
+            explanation: "Forward citations are not proof of importance, but they are real evidence and they are free to look at.",
+            sourceLessonSlug: "documented-cases-twentieth-century",
+          },
+          {
+            prompt: "What is Lonnie Johnson's patent number, and what is it titled?",
+            options: ["4,591,071, titled Squirt gun", "3,118,022, titled Electroacoustic transducer", "3,482,037, titled Home security system utilizing television surveillance", "252,386, titled Process of Manufacturing Carbons"],
+            correctIndex: 0,
+            explanation: "Granted 27 May 1986, covering a toy that shoots a continuous high-velocity stream using stored pressure.",
+            sourceLessonSlug: "documented-cases-twentieth-century",
+          },
+          {
+            prompt: "What was Johnson's professional background?",
+            options: ["An engineer who had worked on spacecraft power systems", "A toy designer employed by Larami before the invention", "A chemist working on polymer foils at Bell Laboratories", "A patent attorney who filed on his own behalf"],
+            correctIndex: 0,
+            explanation: "He licensed the patent to Larami, and it became the Super Soaker.",
+            sourceLessonSlug: "documented-cases-twentieth-century",
+          },
+          {
+            prompt: "Why is Johnson's case unusual in this course?",
+            options: ["He kept the value of his own invention", "He is the only inventor here who never received a patent", "He is the only one whose patent was assigned to an employer", "He is the only one whose invention was never commercialized"],
+            correctIndex: 0,
+            explanation: "He held the patent, licensed it on his own terms, and funded his own research company with the proceeds.",
+            sourceLessonSlug: "documented-cases-twentieth-century",
+          },
+          {
+            prompt: "What did Frederick McKinley Jones work on?",
+            options: ["Mobile refrigeration for trucks and railcars", "Induction signaling for railroad crossings", "Injectable preparations of plant-derived oils", "Bus architecture for early personal computers"],
+            correctIndex: 0,
+            explanation: "He co-founded the company that became Thermo King and held a large number of patents.",
+            sourceLessonSlug: "documented-cases-twentieth-century",
+          },
+          {
+            prompt: "Why does the course omit Jones's patent numbers?",
+            options: ["They were not verified for this course", "Because his patents were all assigned and therefore not his", "Because the numbering system changed during his career", "Because his patents were filed under a company name only"],
+            correctIndex: 0,
+            explanation: "A number quoted from memory is exactly the failure mode this course was built to avoid.",
+            sourceLessonSlug: "documented-cases-twentieth-century",
+          },
+          {
+            prompt: "What should you read first on any patent?",
+            options: ["The verb in the title", "The list of forward citations", "The inventor's address and residence", "The examiner's name and art unit"],
+            correctIndex: 0,
+            explanation: "Improvement in, process of, apparatus for, and system for each tell you the size of the claim before you read the body.",
+            sourceLessonSlug: "reading-a-patent-narrowly",
+          },
+          {
+            prompt: "Which claim in a patent is normally the broadest?",
+            options: ["Claim 1", "The final claim, which summarizes the others", "The claim with the most elements recited", "Whichever claim the examiner marked as allowable first"],
+            correctIndex: 0,
+            explanation: "Every later claim narrows it further, which is why two people can hold patents on what looks like the same device.",
+            sourceLessonSlug: "reading-a-patent-narrowly",
+          },
+          {
+            prompt: "If claim 1 recites a specific combination of elements, what does the patent cover?",
+            options: ["That combination, not the general idea", "The general idea, with the elements given only as an example", "Any device performing the same function by any means", "Only the exact embodiment shown in the drawings"],
+            correctIndex: 0,
+            explanation: "This is the single most common source of confident overstatement about what a patent means.",
+            sourceLessonSlug: "reading-a-patent-narrowly",
+          },
+          {
+            prompt: "What does finding the assignee tell you immediately?",
+            options: ["The ownership answer, without further research", "Whether the patent survived its full term", "Whether the inventor was employed at the time of filing", "Whether the patent was ever litigated"],
+            correctIndex: 0,
+            explanation: "An assignor-to line on the face means mechanism two, and the argument about ownership is over before it starts.",
+            sourceLessonSlug: "reading-a-patent-narrowly",
+          },
+          {
+            prompt: "Which date does priority run from?",
+            options: ["The filing date", "The issue date, when the patent becomes enforceable", "The date the invention was first reduced to practice", "The date the assignment was recorded with the office"],
+            correctIndex: 0,
+            explanation: "Filing and issue are often years apart, and comparing the two different date types produces confidently wrong conclusions.",
+            sourceLessonSlug: "reading-a-patent-narrowly",
+          },
+          {
+            prompt: "What are forward citations evidence of?",
+            options: ["That the field found the patent useful", "That the patent was found valid in litigation", "That the patent was licensed commercially", "That the inventor filed continuations on the same idea"],
+            correctIndex: 0,
+            explanation: "Not proof of importance, but real evidence, and free to look at.",
+            sourceLessonSlug: "reading-a-patent-narrowly",
+          },
+          {
+            prompt: "Why is the accurate version of a claim described as unanswerable?",
+            options: ["Every element sits on a numbered document anyone can check", "Because it is long enough that few readers will dispute it", "Because patent documents are legally presumed valid", "Because it avoids naming any individual inventor"],
+            correctIndex: 0,
+            explanation: "That trade, a longer sentence for a claim nobody can dismantle, is the discipline the whole course is teaching.",
+            sourceLessonSlug: "reading-a-patent-narrowly",
+          },
+          {
+            prompt: "Who drafts patent titles?",
+            options: ["Attorneys who are precise for a living", "Patent examiners assigning the application to a class", "The inventors themselves, in their own words", "Clerks transcribing the application into the official index"],
+            correctIndex: 0,
+            explanation: "Which is why the verb in the title is such a reliable signal of the claim's actual size.",
+            sourceLessonSlug: "reading-a-patent-narrowly",
+          },
+          {
+            prompt: "Rillieux's patents belong to which group in the course?",
+            options: ["The nineteenth-century documented cases", "The twentieth-century documented cases", "The authorship-credit cases without patents", "The claims the course refuses to teach"],
+            correctIndex: 0,
+            explanation: "Patents 3,237 and 4,879, covered in Section 2 and the strongest of the group on technical merit.",
+            sourceLessonSlug: "documented-cases-nineteenth-century",
+          },
+          {
+            prompt: "How many patent numbers does the reading lesson say you now hold?",
+            options: ["Eleven", "Four, one per inventor in Section 4", "Twenty, spread across both centuries", "Six, the ones granted before 1900"],
+            correctIndex: 0,
+            explanation: "The technique in that lesson applies to any of them, or to any other patent you encounter.",
+            sourceLessonSlug: "reading-a-patent-narrowly",
+          },
+          {
+            prompt: "Morgan received how many breathing-device patents in 1914?",
+            options: ["Two", "One, later reissued with broader claims", "Four, covering variants for different industries", "None; the safety hood patent issued in 1916"],
+            correctIndex: 0,
+            explanation: "Patents 1,090,936 and 1,113,675, the second issued 13 October 1914.",
+            sourceLessonSlug: "documented-cases-twentieth-century",
+          },
+          {
+            prompt: "What does the standard for inclusion in Section 4 require?",
+            options: ["A number and a date you can look up in about a minute", "At least three independent secondary sources agreeing", "A surviving physical example in a museum collection", "Recognition by the National Inventors Hall of Fame"],
+            correctIndex: 0,
+            explanation: "That is why these cases are worth more than a longer list of stories without documents behind them.",
+            sourceLessonSlug: "documented-cases-nineteenth-century",
+          },
+          {
+            prompt: "Which pairing of inventor and patent number is correct?",
+            options: ["Marie Van Brittan Brown, 3,482,037", "Lonnie Johnson, 3,482,037", "Garrett Morgan, 4,591,071", "Lewis Latimer, 1,113,675"],
+            correctIndex: 0,
+            explanation: "Johnson is 4,591,071, Morgan is 1,113,675 and 1,475,024, and Latimer is 247,097 and 252,386.",
+            sourceLessonSlug: "documented-cases-twentieth-century",
+          },
+          {
+            prompt: "The overstated and accurate versions of the Brown claim differ how?",
+            options: ["The accurate one recites the patent's actual elements", "The accurate one omits the co-inventor to simplify the sentence", "The overstated one gives the patent number and the accurate one does not", "The accurate one dates the invention to 1966 rather than 1969"],
+            correctIndex: 0,
+            explanation: "Camera on peepholes, monitor, two-way audio, remote release, alarm, all on a document with a number.",
+            sourceLessonSlug: "reading-a-patent-narrowly",
+          },
+          {
+            prompt: "What was Morgan widely reported to have been denied after the 1916 rescue?",
+            options: ["Recognition that white participants received", "Payment for the safety hoods the city had used", "A patent extension on the breathing device", "Permission to sell the hoods to fire departments"],
+            correctIndex: 0,
+            explanation: "The course reports this as widely reported and holds the rescue counts themselves open as a source check.",
+            sourceLessonSlug: "documented-cases-twentieth-century",
+          },
+          {
+            prompt: "What technology did Johnson's squirt gun use?",
+            options: ["Stored pressure driving a continuous stream", "An electric pump powered by internal batteries", "A spring-loaded piston released by the trigger", "Compressed carbon dioxide from a replaceable cartridge"],
+            correctIndex: 0,
+            explanation: "The patent describes a toy squirt gun shooting a continuous high-velocity stream of water.",
+            sourceLessonSlug: "documented-cases-twentieth-century",
+          },
+          {
+            prompt: "What year did Woods's two induction telegraphy patents issue?",
+            options: ["1887", "1872, alongside McCoy's lubricator", "1882, the year of Latimer's carbons patent", "1914, the year of Morgan's breathing devices"],
+            correctIndex: 0,
+            explanation: "Patents 373,383 and 373,915, with priority settled in the interference against Lucius Phelps.",
+            sourceLessonSlug: "documented-cases-nineteenth-century",
+          },
+          {
+            prompt: "What is an interference proceeding?",
+            options: ["A Patent Office contest over which applicant invented first", "A court action to invalidate an issued patent", "An examiner's objection to overlapping claims in one application", "A challenge brought by a third party after a patent issues"],
+            correctIndex: 0,
+            explanation: "It is the documented form of Woods's priority dispute, as opposed to the widely repeated litigation story.",
+            sourceLessonSlug: "documented-cases-nineteenth-century",
+          },
+          {
+            prompt: "Why does the course insist on describing patents at document size?",
+            options: ["It produces claims that survive being checked", "It keeps the lessons shorter and easier to assess", "It matches the wording patent attorneys are required to use", "It avoids any need to cite secondary scholarship"],
+            correctIndex: 0,
+            explanation: "No more and no less than what the document supports, which is what makes the claim impossible to dismantle.",
+            sourceLessonSlug: "reading-a-patent-narrowly",
+          },
+          {
+            prompt: "Which of these is NOT one of the eleven verified patents in this course?",
+            options: ["A patent for the invention of the incandescent lamp", "A patent for a process of manufacturing carbons", "A patent for a home security system using television surveillance", "A patent for an improvement in lubricators for steam engines"],
+            correctIndex: 0,
+            explanation: "Latimer's two patents are manufacturing improvements to incandescent lighting, which is a different and defensible claim.",
+            sourceLessonSlug: "documented-cases-nineteenth-century",
+          },
+          {
+            prompt: "Two inventors can hold patents on what looks like the same device because of what?",
+            options: ["Claims recite specific combinations of elements", "The Patent Office does not check for duplicate filings", "Design and utility patents may overlap on one product", "Priority disputes are resolved by licensing rather than by refusal"],
+            correctIndex: 0,
+            explanation: "The legal content is in the claims, not in the title or in what a layperson would call the device.",
+            sourceLessonSlug: "reading-a-patent-narrowly",
+          },
+        ],
+      },
+    },
     // NEXTCHUNK
   ],
 };
