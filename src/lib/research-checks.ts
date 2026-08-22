@@ -716,6 +716,32 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Any NBHWC-approved program's own reading list, which may cite the evidence the handbook relies on",
     ],
   },
+  // ── He Did the Work ───────────────────────────────────────────────────────────────────────────
+  {
+    key: "naacp-1919-lynching-report-total",
+    course: "naacp-learned-to-win",
+    lesson: "hdw-counting-as-evidence",
+    quote:
+      "So the lesson describes the report's structure and method, and prints no total. A course that teaches counting as a discipline and then reprints an unchecked number would be arguing against itself.",
+    title: "The 1919 NAACP lynching report: what does its headline total count?",
+    severity: "medium",
+    question:
+      "In Thirty Years of Lynching in the United States, 1889-1918, what total does the report itself give, and does that figure count ALL persons lynched in the period or only Black victims? What is the breakdown by race?",
+    claim:
+      "No total. The lesson describes the report's structure (arranged by year, state, race, sex and alleged offense, naming victims where a name could be established) and deliberately prints no number, saying why.",
+    stakes:
+      "This is the lesson that teaches counting and the burden of correction. Printing a number the course has not checked would refute the lesson in its own body, and the ambiguity is real: secondary accounts describe the same headline figure as both the total lynched and the number of Black victims, which cannot both be true.",
+    needs: [
+      "The report's own total for 1889 to 1918, quoted from its summary tables",
+      "The race breakdown as the report states it, in the report's own terms",
+      "The page or table the figures come from, so the lesson can cite it precisely",
+    ],
+    where: [
+      "The digitized original at https://archive.org/details/thirtyyearsoflyn00nati (the summary tables sit in the opening pages, before the state-by-state listing)",
+      "The Library of Congress scan in its NAACP exhibition, https://www.loc.gov/exhibits/naacp/",
+      "Any library holding the 1919 printing or the Lawbook Exchange reprint edited by Paul Finkelman",
+    ],
+  },
   // ── She Did the Work ──────────────────────────────────────────────────────────────────────────
   {
     key: "kennedy-rose-parade-emmy-year",

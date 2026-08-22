@@ -4091,6 +4091,11 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // press-room bios, hall-of-fame citations, published honours lists and contemporaneous
       // reporting into one account of how a closed profession opens.
       "she-took-the-seat",
+      // He Did the Work, wave 1. Integrates the digitized Crisis, the association's own 1919
+      // lynching tabulation, the Senate's record of the 1930 Parker vote, the Truman committee's
+      // papers and the case reporters from Murray through Brown into one account of a single
+      // forty-five-year campaign.
+      "naacp-learned-to-win",
     ],
     lessons: [
       "2 · How we know: reading a record the enslavers wrote",
@@ -4183,6 +4188,11 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // Jayne Kennedy's Emmy year and Carol Tshabalala's 2010 World Cup credit are cut on that
       // evidence, in the lessons, with the reasoning shown.
       "she-took-the-seat",
+      // He Did the Work, wave 1. Lesson 2 teaches the burden of correction directly, and the course
+      // applies it to itself twice in the lessons: it withholds the 1919 report's total because
+      // secondary accounts disagree about what the figure counts, and withholds the Dyer bill's
+      // House tally because published accounts give 230 and 231, saying so both times.
+      "naacp-learned-to-win",
     ],
     lessons: [
       "3 · The test: four questions before you draw an edge",
