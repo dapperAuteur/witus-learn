@@ -716,6 +716,160 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Any NBHWC-approved program's own reading list, which may cite the evidence the handbook relies on",
     ],
   },
+
+  // ── The Negro Leagues: Who Owned the Game ─────────────────────────────────────────────────────
+  // Six hedges written into the course on purpose. Each is a sentence a learner reads as "the
+  // record does not settle this", and each names the document that would settle it. All six sit
+  // behind paper that exists and is offline, scanned without a text layer, or behind a rendering
+  // no automated fetcher could read.
+  {
+    key: "nl-abc-name-origin",
+    course: "negro-leagues",
+    lesson: "nl-abcs",
+    quote:
+      "This course does not pick. You are looking at a real, ordinary problem in business history: a sponsorship name is evidence of a relationship whose direction the record does not fix.",
+    title: "Indianapolis ABCs: what did the letters actually stand for?",
+    severity: "low",
+    question:
+      "Does any contemporaneous document establish whether the ABCs were named for the American Brewing Company, or for the initials of George Abrams, Ran Butler and a co-manager named Conoyer?",
+    claim:
+      "The lesson gives the brewery reading as the majority account (Encyclopedia of Indianapolis), gives the three-initials reading as a live alternative, notes that the club's own historian Paul Debono hedges even the brewery version because a sponsor can attach to a name that already exists, and refuses to pick.",
+    stakes:
+      "Low stakes factually and high stakes pedagogically: this is the course's first worked example of a claim held open. If a primary document settles it, the lesson should say so and the example has to be replaced with one that is genuinely open. If nothing settles it, the hedge is exactly right and the lesson should cite whatever Debono says about why.",
+    needs: [
+      "What Paul Debono, The Indianapolis ABCs (McFarland, 1997), says on the name, quoted with a page number",
+      "Any 1900s or 1910s Indianapolis newspaper item naming the sponsor, or an American Brewing Company advertisement carrying the club",
+      "The provenance of the 1905 team photograph said to show an ABC Beer sign",
+    ],
+    where: [
+      "Paul Debono, The Indianapolis ABCs: History of a Premier Team in the Negro Leagues (McFarland, 1997; 2nd ed. 2007), on the shelf at IU Indianapolis or via interlibrary loan",
+      "The Indianapolis Recorder, 1899 to 2005, at Hoosier State Chronicles: https://newspapers.library.in.gov/",
+      "The Indiana Historical Society photograph collections, for the 1905 team image",
+    ],
+  },
+  {
+    key: "nl-taylor-avenue-business",
+    course: "negro-leagues",
+    lesson: "nl-avenue-and-the-ground",
+    quote:
+      "He built changing space into his own business on Indiana Avenue, had his players dress there, and turned the walk to the ballpark into parades down the Avenue",
+    title: "What was C. I. Taylor's Indiana Avenue business?",
+    severity: "medium",
+    question:
+      "What trade did C. I. Taylor's own Indiana Avenue business carry on, and at what address, in the years the ABCs dressed there because Washington Park's locker rooms were closed to them?",
+    claim:
+      "The lesson states, sourced to the Encyclopedia of Indianapolis, that Taylor created changing space in his Indiana Avenue business and paraded his players to the ballpark from it. It never says what the business was, because no source reached names it.",
+    stakes:
+      "This is the load-bearing fact of the course's whole Indianapolis argument, that exclusion generated its own infrastructure on a Black business street. Naming the trade and the address turns a good sentence into a documented one, and would let the course place it on the same block map the Indiana Avenue course already teaches. Guessing would be worse than the gap.",
+    needs: [
+      "The trade (saloon, pool hall, restaurant, other) and the street address",
+      "The source that carries it, with a page or a directory year",
+      "Whether the premises appear in an Indianapolis city directory under Taylor's name",
+    ],
+    where: [
+      "Paul Debono, The Indianapolis ABCs (McFarland, 1997), the likeliest place this is written down",
+      "Geri Strecker and Christopher Baas, Batter UP! Professional Black Baseball at Indianapolis Ballparks, in Traces of Indiana and Midwestern History 23, no. 4 (Fall 2011), pages 27 to 30",
+      "Indianapolis city directories for 1915 to 1922, at the Indiana State Library",
+    ],
+  },
+  {
+    key: "nl-ballpark-rental-terms",
+    course: "negro-leagues",
+    lesson: "nl-avenue-and-the-ground",
+    quote:
+      "Taylor reached an agreement with the Indianapolis Indians to lease Washington Park, at 1200 West Washington Street, occasionally",
+    title: "What did a Negro League club actually pay to rent an Indianapolis ballpark?",
+    severity: "high",
+    question:
+      "What were the rental terms, flat fee or percentage of the gate, that the Indianapolis ABCs paid the Indianapolis Indians for Washington Park, or that the Indianapolis Clowns paid for Perry Stadium?",
+    claim:
+      "The course teaches that renting the ballpark was the structural weakness of the whole industry, and that the Indianapolis lease excluded the locker rooms. It gives NO dollar figure or percentage anywhere, because no source reached documents one.",
+    stakes:
+      "The highest-value gap in the course. A single sourced rental term would turn the central argument from a well-supported generalization into an arithmetic a student can do: gate receipts in, rent out, what is left. Without it the money section is qualitative where it could be quantitative. It also affects the write assignment, which asks students for exactly this and currently cannot show them a worked example.",
+    needs: [
+      "A lease, a percentage, a per-date guarantee, or a reported figure, with the year it applied",
+      "The source document and where it is held",
+      "Whether the terms differed between the ABCs at Washington Park and the Clowns at Perry Stadium",
+    ],
+    where: [
+      "The National Register nomination for Bush Stadium, NRHP reference 95000703, a scanned PDF with no text layer that needs OCR: https://npgallery.nps.gov/NRHP/GetAsset/NRHP/95000703_text",
+      "Library of Congress HALS IN-6, Bush Stadium and the Landscape of Black Baseball in Indianapolis, whose URLs return 403 to automated fetchers: https://www.loc.gov/pictures/item/in0534/",
+      "The Indianapolis Recorder business coverage at Hoosier State Chronicles, and Strecker and Baas in Traces 23, no. 4 (Fall 2011)",
+    ],
+  },
+  {
+    key: "nl-aaron-contract-price",
+    course: "negro-leagues",
+    lesson: "nl-clowns",
+    quote: "It is reported here as commonly reported and not as established.",
+    title: "What did the Braves pay the Indianapolis Clowns for Hank Aaron's contract?",
+    severity: "medium",
+    question:
+      "Is there a primary record, a contract, a league transaction record, or a contemporaneous 1952 news report, establishing what the Boston Braves paid the Indianapolis Clowns for Hank Aaron?",
+    claim:
+      "The lesson gives $10,000 as commonly reported, notes that the Encyclopedia of Indianapolis carries it, and states that no primary record for it was located and that SABR's biography of Aaron gives no figure at all.",
+    stakes:
+      "This is the course's single most concrete example of a contract sale, and it is the number a student will want when writing the capstone. If a primary record exists, the lesson should quote it and the hedge comes out. If none does, the hedge is the finding and belongs in the lesson permanently, since a figure repeated everywhere with no document behind it is exactly what the course teaches students to notice.",
+    needs: [
+      "A 1952 Boston, Milwaukee or Indianapolis newspaper report naming a figure, with date and page",
+      "Or a Negro American League or Braves transaction record",
+      "Confirmation of the date, since the Encyclopedia of Indianapolis dates the sale to late 1953 while SABR has Aaron signing with a Braves scout on 14 June 1952",
+    ],
+    where: [
+      "The Boston Globe, the Boston Herald and the Indianapolis Recorder for June 1952",
+      "The National Baseball Hall of Fame Giamatti Research Center, which holds contract and transaction files",
+      "The Negro Leagues Baseball Museum in Kansas City",
+    ],
+  },
+  {
+    key: "nl-gibson-plaque-text",
+    course: "negro-leagues",
+    lesson: "nl-what-is-contested",
+    quote:
+      "Josh Gibson's Hall of Fame plaque estimates that he hit almost 800 home runs; Baseball Reference's documented total is 176",
+    title: "The verbatim inscription on Josh Gibson's Hall of Fame plaque",
+    severity: "low",
+    question:
+      "What is the full verbatim text of Josh Gibson's National Baseball Hall of Fame plaque, and does it attribute the home run estimate to league play, independent play, or both?",
+    claim:
+      "The lesson quotes the phrase 'almost 800 home runs' as the plaque's estimate. The phrase itself is attested three times independently (Baseball Reference quoting the plaque, MLB's Negro Leagues Statistical Review Committee report, and the Heinz History Center), but the surrounding sentences were never read on an authoritative page.",
+    stakes:
+      "Low, but it is the course's headline example of the gap between a legend and a documented record, so the quotation should be exact and its scope stated. If the plaque itself already says 'in league and independent baseball', that materially strengthens the lesson's argument that the legend and the record measure different universes, and the lesson should say so.",
+    needs: [
+      "The complete inscription, transcribed",
+      "The induction year as the Hall states it",
+      "Whether the plaque itself names the scope of the estimate",
+    ],
+    where: [
+      "The plaque gallery at the National Baseball Hall of Fame in Cooperstown, or the Hall of Fame Explorer, whose plaque text is rendered client-side and is not in the HTML a fetcher receives",
+      "https://baseballhall.org/hall-of-famers/gibson-josh",
+    ],
+  },
+  {
+    key: "nl-paige-legend-numbers",
+    course: "negro-leagues",
+    lesson: "nl-what-is-contested",
+    quote:
+      "the Satchel Paige claims of roughly 2,000 wins and 55 no-hitters, whose origin this course could not trace to a primary source and therefore does not repeat",
+    title: "Where do the Satchel Paige 2,000-wins and 55-no-hitters figures come from?",
+    severity: "low",
+    question:
+      "What is the earliest traceable source of the claim that Satchel Paige pitched about 2,500 games, won about 2,000 and threw 55 no-hitters? Is it his 1962 autobiography, a press account, or his own promotional material?",
+    claim:
+      "The lesson says these figures could not be traced to a primary source and does not repeat them as fact, giving MLB's documented 125 career wins instead.",
+    stakes:
+      "The course argues that promotional exaggeration was a business function of a league with no central statistical office, which is a claim about WHY the folklore exists. Tracing one famous number to its actual origin would turn that argument from plausible to demonstrated, and it is the single best illustration available.",
+    needs: [
+      "The earliest printed appearance of the figures, with publication and date",
+      "Whether Paige himself is the source, and in what venue",
+      "What the National Baseball Hall of Fame says, given that its own Paige page declines to give totals",
+    ],
+    where: [
+      "Leroy Paige with David Lipman, Maybe I'll Pitch Forever (Doubleday, 1962)",
+      "The Sporting News and Pittsburgh Courier archives for Paige profiles, 1930s to 1950s",
+      "https://baseballhall.org/hall-of-famers/paige-satchel",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {

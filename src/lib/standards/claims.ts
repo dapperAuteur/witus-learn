@@ -4037,6 +4037,10 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "the-schoolhouse-network",
       "where-we-rested",
       "what-they-built",
+      // Integrates league constitutions, ballpark leases, newspaper business pages, museum and
+      // Hall of Fame institutional records and MLB's own 2020/2024 statements into one account of
+      // the Negro Leagues as firms, and names which parts of the record do not survive.
+      "negro-leagues",
       // Labor series
       "labor-brazil",
       "labor-chile",
@@ -4146,6 +4150,10 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "how-the-tools-travelled",
       "exported-how-others-studied-american-race-law",
       "what-they-built",
+      // Lesson 17 works the "Josh Gibson hit 800 home runs" / "Satchel Paige won 2,000 games"
+      // family of figures as claims to downgrade, and holds the contested parts of the 2024
+      // statistical merge (sample size, which games count, the era cutoffs) as contested.
+      "negro-leagues",
       "afrocentricity",
       "training-the-colonizer",
       "africa-before-colonization",
@@ -4214,6 +4222,10 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "the-schoolhouse-network",
       "where-we-rested",
       "what-they-built",
+      // Lesson 18 is a graded research capstone: one ballclub, ballpark or transaction, documented
+      // from newspapers, National Register nominations, city directories and team records, written
+      // up with citations and a required paragraph on what could not be established.
+      "negro-leagues",
       // Government-forms capstone: map every government with authority over your block, from the
       // primary record (the state's own statutes, charters, and filings).
       "who-has-the-power",
