@@ -208,6 +208,7 @@ import { REPORTER_PUBLIC_RECORDS_COURSE } from "./data/reporter-public-records-c
 import { REPORTER_READING_A_REPORT_COURSE } from "./data/reporter-reading-a-report-course";
 import { REPORTER_INTERVIEWING_COURSE } from "./data/reporter-interviewing-course";
 import { REPORTER_VERIFICATION_COURSE } from "./data/reporter-verification-on-deadline-course";
+import { REPORTER_MEDIA_LAW_COURSE } from "./data/reporter-media-law-course";
 import { AFROCENTRICITY_COURSE } from "./data/afrocentricity-course";
 import { PAN_AFRICANISM_COURSE } from "./data/pan-africanism-course";
 import { ASIA_BEFORE_EUROPEAN_COLONIZATION_COURSE } from "./data/asia-before-european-colonization-course";
@@ -998,6 +999,31 @@ async function main() {
     seriesOrder: 5,
     seriesCode: "REPORT",
     seriesPosition: "04",
+  });
+
+  // REPORT-05, and the one where sourcing discipline matters most. plans/68 asked for "a map and
+  // the moment to call a lawyer, explicitly NOT legal advice," and the course says so in its first
+  // lesson and its last.
+  //
+  // Every case is named with court and year; Supreme Court decisions carry their U.S. Reports cite.
+  // The single circuit decision (Food Lion, 4th Cir. 1999) is given by name, court and year rather
+  // than a volume and page this pass could not read against the reporter, because a wrong pin cite
+  // in a legal course is worse than none. State law is described as varying, always. Indiana is the
+  // worked example and the course REFUSES to print two details it could not verify: the scope of the
+  // shield provision at Ind. Code 34-46-4, and a citation for the recording rule. Source checks are
+  // filed for both (report-in-shield-scope, report-in-recording).
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "reporter-media-law",
+    course: REPORTER_MEDIA_LAW_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "reporter",
+    seriesTitle: "The Reporter",
+    seriesOrder: 6,
+    seriesCode: "REPORT",
+    seriesPosition: "05",
   });
 
   // Genealogy for yourself and your community. Plan: plans/70-genealogy-course.md.
