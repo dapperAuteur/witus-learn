@@ -1197,6 +1197,227 @@ Verderame, J. A. (2022). *Indianapolis Clowns*. Encyclopedia of Indianapolis. ht
       },
     },
     // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 5 · The bill
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "nl-1945-and-after",
+      title: "17 · The signing, and the invoice nobody sent",
+      section: "Section 5 · The bill",
+      body: `In every other transaction in professional baseball, a club that wanted another club's player bought his contract. Follow what happened when the buyer decided he did not have to.
+
+**First, a correction, because the most-quoted sentence in this whole story is not what people repeat.** Branch Rickey is endlessly quoted saying the Negro Leagues are "in the nature of a racket." **This course could not find that wording behind any source.** What is documented is the *Kansas City Call* of **2 November 1945** reporting Rickey saying Negro baseball is **"in the zone of a racket,"** while maintaining he had not signed a player from anything he regarded as an organized league (Society for American Baseball Research, n.d.-c). **And there is an earlier, better-documented instance**: at the **May 1945** press conference launching his own United States League, Rickey called the existing Negro Leagues rackets (Crook, 2022). **That predates the Robinson signing by five months, which changes what the statement was for.**
+
+**Notice what Rickey's own league implies.** He did not propose admitting an existing Negro League club to Organized Baseball. **He proposed a new league of his own devising**, which would have displaced them.
+
+**Was Robinson under contract?** Both answers are true and the reconciliation is the lesson. Tom Baird told the *Call* on 26 October 1945 that Robinson was "our property" because he had signed a contract "with us last year," and Wilkinson acknowledged he was bound through the end of the season. SABR also records that Robinson had **no written contract for 1946** (Nowlin, 2020; Society for American Baseball Research, n.d.-c). **So: a written 1945 contract, none for 1946.** Rickey's defense is narrowly true and broadly evasive, because the Monarchs had signed, paid, housed and showcased him, and every other transaction in baseball paid for exactly that interest.
+
+**The Monarchs decided not to fight, and their reason is the whole moral of the section.** They considered appealing to Commissioner Chandler and did not. Wilkinson, on 26 October 1945: **"Although I feel the Brooklyn club owes us some kind of compensation for Robinson, we will not protest."** And: **"Whether we get any recompense in return for Robinson may be considered beside the point, we want Jackie to have a chance."** Baird at the same moment: **"Some attempt at reimbursement should be made for Robinson. This case will set a precedent on where we stand"** (Nowlin, 2020; Young & Faber, 2012). **Baird was right about the precedent.**
+
+**They were never paid.** Neil Lanctot states it flatly: when Rickey signed Robinson the Monarchs were not compensated, and neither were the Newark Eagles for Don Newcombe nor the Baltimore Elite Giants for Roy Campanella (Lanctot, n.d.).
+
+**Then, gradually, some buyers did pay, and the record of what they paid is a mess worth seeing.**
+- **Larry Doby to Cleveland, 1947: $10,000, plus $5,000 more if he stayed on the roster thirty days.** SABR elsewhere gives a flat $15,000. **Both are right. One is the base and one is the contingent total, which is a clean example of how a real contingency becomes two competing facts** (Essington, 2019).
+- **Willie Mays to the New York Giants, 1950.** The strongest documentary evidence in the whole topic. Horace Stoneham's Western Union telegram reached Tom Hayes's Memphis office at **9:53 a.m. on 21 June 1950** offering **ten thousand dollars** for the assignment of Mays's contract; Hayes wrote back by hand, "Accept your offer of $10,000." **The documents are held at the Memphis Public Library** (Klima, n.d.).
+- **Roy Partlow to Rickey, 14 May 1946, for $1,000** (Haupert, 2012). Unglamorous, documented, and the kind of figure that tells you what a journeyman contract was worth.
+- **Satchel Paige to Cleveland, 1948: four incompatible accounts, and this course states none of them.** Two SABR pages contradict each other on every payee. **The verified and telling detail is that the Monarchs got anything only because Paige asked Veeck to pay them** (Society for American Baseball Research, n.d.-d).
+
+**And Effa Manley's question, which is the business question this course has been asking for seventeen lessons:** **"What will become of colored baseball leagues if players are picked out by major league owners without consulting the team management?"** (Society for American Baseball Research, n.d.-e).
+
+:::reveal What did Rickey actually say, according to the contemporaneous record, and how does the famous version differ? ||| The Kansas City Call of 2 November 1945 reported "in the zone of a racket." The endlessly repeated "in the nature of a racket" could not be traced to any source. He had also called the leagues rackets at the May 1945 launch of his own United States League, five months before the Robinson signing.
+
+:::reveal Reconcile the two claims about Robinson's contract status. ||| He had a written contract with the Monarchs for 1945 and none for 1946. Rickey's "no valid contract" defense is narrowly true, and evasive, because every other transaction in baseball paid for exactly the interest the Monarchs held in a player they had signed, paid and showcased.
+
+:::reveal Why does the Doby purchase appear in sources as both $10,000 and $15,000? ||| Because it was $10,000 plus a further $5,000 if he stayed on the roster thirty days. Both figures are correct: one is the base and one is the contingent total, which is how a real contract term becomes two competing "facts."
+
+## Vocabulary
+- **Assignment of contract**: the sale of a player's contract from one club to another, which is the transaction the Monarchs never received for Robinson.
+- **Reserve interest**: a club's continuing claim on a player it has signed and developed, which is what every purchase price in baseball was paying for.
+- **Contingent payment**: money owed only if a condition is met, such as Doby's extra $5,000 for thirty days on the roster.
+- **Precedent**: the pattern a first transaction sets for those after it, which is exactly what Tom Baird said was at stake in 1945.
+
+## Sources
+Crook, K. (2022). *Branch Rickey's law: How New York State's Ives-Quinn Act opened the door for Jackie Robinson* [Master's thesis, Harvard Extension School]. https://dash.harvard.edu/server/api/core/bitstreams/24de527d-cf60-4d1e-8d47-2718660bfeb8/content
+
+Essington, A. (2019). *Effa Manley*. SABR BioProject. https://sabr.org/bioproj/person/effa-manley/
+
+Haupert, M. (2012). *Ed Bolden*. SABR BioProject. https://sabr.org/bioproj/person/ed-bolden/
+
+Klima, J. (n.d.). *The true story of Willie Mays's signing*. Society for American Baseball Research. https://sabr.org/research/article/the-true-story-of-willie-mayss-signing/
+
+Lanctot, N. (n.d.). *Interview on Negro League baseball: The rise and ruin of a Black institution*. Jerry Jazz Musician. https://www.jerryjazzmusician.com/from-the-interview-archive-neil-lanctot-author-of-negro-league-baseball-the-rise-and-ruin-of-a-black-institution/
+
+Nowlin, B. (2020). *Tom Baird*. SABR BioProject. https://sabr.org/bioproj/person/tom-baird/
+
+Society for American Baseball Research. (n.d.-c). *Jackie Robinson and the Kansas City Call*. https://sabr.org/journal/article/jackie-robinson-and-the-kansas-city-call/
+
+Society for American Baseball Research. (n.d.-d). *J.L. Wilkinson and the rebirth of Satchel Paige*. https://sabr.org/research/article/j-l-wilkinson-and-the-rebirth-of-satchel-paige/
+
+Society for American Baseball Research. (n.d.-e). *The Newark Eagles: Swinging away during Newark's heyday*. https://sabr.org/research/article/the-newark-eagles-swinging-away-during-newarks-heyday/
+
+Young, W., & Faber, C. (2012). *J.L. Wilkinson*. SABR BioProject. https://sabr.org/bioproj/person/j-l-wilkinson/`,
+    },
+    {
+      slug: "nl-what-it-cost",
+      title: "18 · The audience did not disappear. It relocated, and so did the revenue",
+      section: "Section 5 · The bill",
+      body: `The popular version says the fans abandoned Black baseball. The numbers say something more precise, and Effa Manley named the mechanism herself while it was happening.
+
+**The attendance figures, correctly dated.** The Newark Eagles drew **120,292 in 1946**, the best in club history, on about **$25,000 profit**. In **1947** they drew **57,000** (Essington, 2019; Society for American Baseball Research, n.d.-e). **A widely repeated version dates that 57,000 to 1948; it is a 1947 figure, and the 1948 number is unsettled.** The Manleys lost **$50,000 across 1947 and 1948**, sold to a Memphis dentist, and the club moved to Houston for 1949.
+
+**The East-West Game tracks the same curve, and the timing matters.** **48,112 in 1947**, which is Robinson's rookie year in Brooklyn and still near a record, down to **24,614 in 1950** (Society for American Baseball Research, n.d.-b). **The collapse is a 1948 to 1950 phenomenon, not an instantaneous one.**
+
+**Manley, September 1948, on where the fans went:** **"Most of our old fans are going to see four men with white teams who played on our teams for years without exciting their present intense interest."** In that same 1948 season Cleveland set a major league attendance record of **2,620,627** (Essington, 2019). **The audience did not vanish. It bought a ticket from a different owner.**
+
+**Now the paradox that makes this a business lesson rather than a lament.** The years from 1947 to 1950 were among the most financially successful for some Black clubs, **because of the sale of players to white-owned teams** (Society for American Baseball Research, n.d.-f). The Kansas City Monarchs sold **29 players to the majors and 9 to the minors in the ten years ending 1956**, including Elston Howard and Frank Barnes to the Yankees for **$25,000 in 1950** (Nowlin, 2020). **Income shifted from selling tickets to Black customers to selling the company's own players to white buyers. That is not revenue. That is liquidating the asset base to stay solvent, and it has an end.**
+
+**Who lost work, stated the way the evidence supports it.** Japheth Knopp names the categories: **front-office personnel, groundskeepers, concessionaires, ticket-takers, bus drivers**, who in turn patronized local businesses, so that "many people besides the players also lost their livelihoods" (Knopp, 2016). **He names categories, not headcounts, and no source quantifies the job losses. This course will not supply a number.**
+
+**One group can be counted, and the number is nineteen.** Robinson debuted in **1947**. **Emmett Ashford became the first Black umpire in the major leagues on 11 April 1966** (Heaphy, 2017). Bob Motley attended umpire school twice, graduated top of his class both times, and never worked above the Pacific Coast League. **Players were integrated. Officials were not, for nineteen years.**
+
+**Owners, stated as a verified absence.** **No Negro League owner ever received a major league franchise.** No source records one, and every documented exit was a liquidation: Wilkinson sold to Baird for $27,000 while nearly blind, the Manleys lost $50,000 and sold to a dentist, Tom Hayes was out of the Barons by 1952. **The one executive who landed well, Alex Pompez, did so as an employee, scouting for the Giants.**
+
+**August Wilson said what was lost better than any historian:** at these games, **"The umpire ain't white. It's a black umpire. The owner ain't white. Nobody's white. This is our thing, until integration, and then we don't have our nothing"** (University of Pittsburgh, n.d.). The historian Rob Ruck's version places it correctly among institutions: **"Like many black papers, colleges and businesses, the Negro National League paid a price for integration: extinction."**
+
+**Two honesty checks before you carry this argument anywhere.** First, **the popular claim that integration killed the business districts is stronger than the scholarship**. Knopp describes a bundle: new competition from white-owned businesses for Black customers, less capital, and **decapitalization of inner-city areas**. **The thesis is defensible in his form and overstated in the popular one.** Second, **the owners' sharpest critics were Black too**: Wendell Smith of the *Pittsburgh Courier* wrote of Effa Manley that she "refused to recognize that nothing was killing Negro baseball but Democracy" (Lanctot, n.d.).
+
+**And when did it end? Nobody agrees.** The Negro National League folded after 1948. For the Negro American League, sources give 1948 as a major league, 1958, 1960, 1962 and 1963. Lanctot's formulation is the honest one: the last mention he could find was in *Jet* in the autumn of 1963. **The league did not end on a date. It stopped being mentioned.**
+
+:::reveal What did Effa Manley say in September 1948 about where the fans had gone, and what corroborates it? ||| That most of their old fans were going to see four men with white teams who had played for Black clubs for years without exciting that interest. Cleveland set a major league attendance record of 2,620,627 that same season.
+
+:::reveal Why is the 1947 to 1950 profitability of some Black clubs not good news? ||| Because the money came from selling their own players to white-owned teams rather than from selling tickets. The Monarchs sold 29 players to the majors in the ten years ending 1956. That is liquidating the asset base to stay solvent, and it has an end.
+
+:::reveal What is the nineteen-year number, and what does it show? ||| Robinson debuted in 1947 and Emmett Ashford became the first Black major league umpire on 11 April 1966. Integration reached players two decades before it reached officials, and no Negro League owner ever received a major league franchise.
+
+:::reveal Where does the popular "integration killed the business districts" claim overstate the scholarship? ||| Knopp's account is a bundle of causes: competition from white-owned businesses for Black customers, less capital and cultural leverage, and decapitalization of inner-city areas. The single-cause popular version is not what the peer-reviewed source says.
+
+## Vocabulary
+- **Asset liquidation**: selling the things a company owns in order to keep operating, which is what selling players to white clubs was.
+- **Decapitalization**: the withdrawal of investment from a neighborhood, which Knopp names alongside integration as a cause of district decline.
+- **Verified by absence**: a claim supported because no source records the contrary, which is how this course states that no Negro League owner got a franchise.
+- **Institutional extinction**: the disappearance of an organization rather than of the people in it, which is Rob Ruck's framing of what integration cost.
+
+## Sources
+Essington, A. (2019). *Effa Manley*. SABR BioProject. https://sabr.org/bioproj/person/effa-manley/
+
+Heaphy, L. (2017). Umpires in the Negro Leagues. In *The SABR book on umpires and umpiring*. Society for American Baseball Research. https://sabr.org/journal/article/umpires-in-the-negro-leagues/
+
+Knopp, J. (2016). Negro League baseball, Black community, and the socio-economic impact of integration. *Baseball Research Journal*. Society for American Baseball Research. https://sabr.org/journal/article/negro-league-baseball-black-community-and-the-socio-economic-impact-of-integration/
+
+Lanctot, N. (n.d.). *Interview on Negro League baseball: The rise and ruin of a Black institution*. Jerry Jazz Musician. https://www.jerryjazzmusician.com/from-the-interview-archive-neil-lanctot-author-of-negro-league-baseball-the-rise-and-ruin-of-a-black-institution/
+
+Nowlin, B. (2020). *Tom Baird*. SABR BioProject. https://sabr.org/bioproj/person/tom-baird/
+
+Society for American Baseball Research. (n.d.-b). *Negro League baseball at Comiskey Park: The East-West game, an all-star legacy*. https://sabr.org/research/article/negro-baseball-at-comiskey-park-the-east-west-game-an-all-star-legacy/
+
+Society for American Baseball Research. (n.d.-e). *The Newark Eagles: Swinging away during Newark's heyday*. https://sabr.org/research/article/the-newark-eagles-swinging-away-during-newarks-heyday/
+
+Society for American Baseball Research. (n.d.-f). *Baseball's integration spells the end of the Negro Leagues*. https://sabr.org/research/article/baseballs-integration-spells-the-end-of-the-negro-leagues/
+
+University of Pittsburgh. (n.d.). *In light of the 100th anniversary of the Negro Leagues, a look back at what was lost*. Pittwire. https://www.pittwire.pitt.edu/pittwire/features-articles/light-100th-anniversary-negro-leagues-look-back-what-was-lost`,
+    },
+    {
+      slug: "nl-the-court-and-the-gridiron",
+      title: "19 · The same ledger in basketball and football",
+      section: "Section 5 · The bill",
+      body: `BAM asked this course to branch out from baseball. Here is the branch, and it holds only where it is sourced. **Basketball produced a Black-owned institution that rhymes with the leagues. Football did not, and the reason is a business reason.**
+
+**Basketball, and the best economics passage in any of these sports.** In 1919 Prohibition destroyed the alcohol revenue of the Manhattan Casino in Harlem, so its owner raised the basketball court rental **from $50 before Prohibition, to $200 the following year, to $500 in 1922**, which drove Harlem's Black teams out (McGruder & Johnson, 2015). **A tenfold rent shock caused by a change in liquor law is a cleaner illustration of a cost structure than anything baseball offers.**
+
+**Bob Douglas answered it with barter rather than cash.** He asked the West Indian owner of the newly built **Renaissance Ballroom**, William Roach, for the use of the dance floor as a home court, and **offered to name his team after the ballroom to promote it** (McGruder & Johnson, 2015; Black Fives Foundation, n.d.). The Rens debuted on **3 November 1923**. The venue was one of the few in Harlem designed, financed, built, owned and operated by African Americans. **A Black-owned team, in a Black-owned building, whose name was the building's advertising. That is vertical integration of Black capital, and baseball almost never managed it.**
+
+**Douglas's real innovation was a labor contract.** He instituted **full-year, guaranteed, exclusive player contracts**, which is why the Rens count as the first fully professional Black-owned basketball team (McGruder & Johnson, 2015). **Compare that to a Negro League roster paid by the month, in a season, with winter work in Cuba.**
+
+**But the famous home court was a brand, not a revenue center.** The Hall of Fame says plainly that **"the Rens rarely played uptown"** and that "since no existing pro league would accept a black team into its ranks, the Rens were forced to barnstorm." They traveled as far as **200 miles for a single game**, were barred from hotels and restaurants, slept on the bus, and played twice on Sundays. In the 1932-33 season they won **88 straight games in 86 days** (Naismith Memorial Basketball Hall of Fame, n.d.-a). **The name sold the ballroom. The road paid the players.**
+
+**When a neutral competition finally existed, they won it.** The **World Professional Basketball Tournament**, organized by a newspaper rather than a league, ran from 1939; the Rens won the inaugural event, beating the Oshkosh All-Stars **34 to 25 on 28 March 1939** at the Chicago Coliseum (Association for Professional Basketball Research, n.d.; Black Fives Foundation, n.d.). **The closest thing to a world championship in this era was a Hearst promotion, which tells you what league structure was worth.**
+
+**The contrast is ownership, and the Hall of Fame supplies it in its own words.** Abe Saperstein, a white promoter from Chicago, owned the Harlem Globetrotters; the Hall's page on Nat Clifton calls him "a showman for owner Abe Saperstein" (Naismith Memorial Basketball Hall of Fame, n.d.-b). **When Clifton went to the New York Knicks in 1950, he went through his white owner.** What that owner was paid is **not stated by the Hall of Fame, by NBA.com, or by the historian who wrote the book on these men, so this course gives no figure.**
+
+**And the ending rhymes exactly.** The Rens took over an NBL franchise mid-season as the **Dayton Rens** in December 1948, inheriting a 2 and 17 record and going **14 and 26** on their own account, last in scoring and third best in defense. Douglas ran the barnstorming operation alongside it. **The Rens folded in 1949, the year before the NBA integrated.** The Black-owned institution died at the moment the white league opened its doors to Black players.
+
+**Football, where the answer is different and the difference is the point.** The Professional Football Researchers Association went looking for a Black professional football league and found **essentially nothing at scale**. The Harlem Brown Bombers, the largest and longest-lived Black club, have **nineteen traceable games across eleven years**, drew about 1,500 a game in 1935, and lost about $5,000 that season (Gill & Maher, n.d.). **The one real league is the Virginia Negro Football League of 1946: four teams in Richmond, Norfolk, Portsmouth and Newport News, five-game schedules, one state, one season, founded in the very year the color line came down.**
+
+**Why football never built one, with the reason this course cares about most.** The Brown Bombers played at **Dyckman Oval, which Alex Pompez of Negro League baseball controlled**. Pollard could not use it in 1936 until mid-October because Negro League baseball had it, and in **1938 Pompez leased it exclusively to a competing Black football venture**, at which point Pollard, finding no suitable stadium near Harlem, resigned (Carroll, 1990). **In Black professional sport, baseball owned the real estate. Football was a tenant, and could be evicted.** Add the rest of the sourced reasons: the gates were not there, white leagues refused exhibitions and so denied football the barnstorming payday baseball lived on, and because the *minor* leagues stayed integrated, Black football players dispersed individually instead of pooling into a captive league. **Baseball's exclusion was total and forced collective organization. Football's was confined to the top league and produced dispersal.**
+
+:::reveal What caused the rent shock that pushed Harlem's Black basketball teams out of the Manhattan Casino? ||| Prohibition. The hall lost its alcohol revenue in 1919, so its owner raised the court rental from $50 to $200 the following year and to $500 by 1922.
+
+:::reveal What did Bob Douglas trade for the use of the Renaissance Ballroom floor? ||| The team's name. He offered to call the club the New York Renaissance so that the team would promote the dance hall wherever it played. He paid in advertising rather than in cash, and no source says the arrangement was rent free.
+
+:::reveal Why did no Black professional football league of comparable scale ever exist? ||| Four sourced reasons: the gates were far smaller, white leagues refused exhibitions and denied football the barnstorming revenue baseball relied on, the minor leagues stayed integrated so players dispersed individually, and Black football did not control venues. Baseball owned the real estate; football was a tenant and was evicted from Dyckman Oval in 1938.
+
+:::reveal What happened to the Rens in the year before the NBA integrated? ||| They folded. Having held an NBL franchise as the Dayton Rens in 1948-49 and gone 14 and 26 on their own account, they disbanded in 1949, one year before Cooper, Lloyd and Clifton entered the NBA.
+
+## Vocabulary
+- **Barter deal**: paying with something other than money, as Douglas paid for a home court with his team's name.
+- **Guaranteed contract**: a full-season salary owed regardless of games played, which the Rens used and which most barnstorming clubs did not.
+- **Captive talent pool**: players with nowhere else to play, which baseball's total exclusion created and football's partial exclusion did not.
+- **Eviction risk**: the exposure a tenant carries when a landlord can re-let the venue, which ended Fritz Pollard's Brown Bombers in 1938.
+
+## Sources
+Association for Professional Basketball Research. (n.d.). *World Professional Basketball Tournament*. https://www.apbr.org/tourney.html
+
+Black Fives Foundation. (n.d.). *New York Rens*. https://www.blackfives.org/new-york-rens/
+
+Carroll, J. M. (1990). Fritz Pollard and the Brown Bombers. *The Coffin Corner*. Professional Football Researchers Association.
+
+Gill, B., & Maher, T. (n.d.). Not only the ball was brown. *The Coffin Corner, XI*. Professional Football Researchers Association.
+
+McGruder, K., & Johnson, C. (2015, April 14). *Requiem for a demolished Harlem shrine*. Black Fives Foundation. https://www.blackfives.org/requiem-for-a-demolished-shrine/
+
+Naismith Memorial Basketball Hall of Fame. (n.d.-a). *Robert Douglas*. https://www.hoophall.com/hall-of-famers/robert-douglas
+
+Naismith Memorial Basketball Hall of Fame. (n.d.-b). *Nat Clifton*. https://www.hoophall.com/hall-of-famers/nat-clifton`,
+    },
+    {
+      slug: "nl-the-clause-and-the-entry",
+      title: "20 · A written rule, an entry rule, and a stadium lease",
+      section: "Section 5 · The bill",
+      body: `Three more sports, and a finding that only appears when you put them side by side. **The barrier that was easiest to see fell last.**
+
+**Golf had a written bylaw, and the governing body has admitted it.** The PGA of America's own 2009 press release states: **"From 1934 to 1961, The PGA of America's 'Caucasian-only clause' was a part of the Association's by-laws and prevented non-whites from membership. The clause was removed at the 1961 PGA Annual Meeting"** (PGA of America, 2009). **That is the governing body confessing in its own words, which is the strongest source available for anything in this course.** The load-bearing phrase of the bylaw, identical across the renderings that circulate, is **"Professional golfers of the Caucasian race."** This course quotes only that phrase, because the tail of the sentence differs between transcriptions and no scan of the constitution itself could be reached.
+
+**The parallel institution, as always.** Black golfers ran their own national championship at **Shady Rest in New Jersey in 1925**; the body that ran it was renamed the **United Golfers Association** within about a year, and its flagship event was the **National Negro Open** (Casey, 2025; PGA of America, 2009). **Same pattern as baseball: excluded, so they chartered their own.**
+
+**And the evasion, which is the transferable lesson.** After a 1948 lawsuit, PGA events were renamed from "Open" to **"Invitational," and Black golfers were simply not invited.** In **1952** PGA President Horton Smith barred Bill Spiller from the San Diego Open but allowed **Joe Louis** to play as an **exempt amateur**, since amateurs fell outside the bylaws. Louis took it public on Walter Winchell's radio show; the PGA then created an "Approved Entries" list (PGA of America, 2009). **Louis is the connective tissue across all three of these sports:** he bankrolled the UGA, founded the **Joe Louis Open** at a Detroit public course in 1941, donating the **$1,000 purse** and paying entry fees and travel for players who could not afford them, and won the Negro National's amateur division in 1951. **Charlie Sifford became the first Black member of the PGA Tour in 1961**, and this course says exactly that and stops, because the era's distinction between membership and an approved-player card is muddled in the literature.
+
+**Tennis had no written rule, and a rule of entry that worked as well.** The **American Tennis Association was founded on Thanksgiving Day, 30 November 1916, in Washington, D.C.**, by representatives of more than a dozen Black clubs, after the USLTA formally barred African American players. Its first national championships were at **Druid Hill Park, Baltimore, in August 1917** (United States Tennis Association, 2020; American Tennis Association, n.d.). **This is the best-sourced founding in the whole course: the governing body that did the excluding and the body that was excluded agree on date, place, cause and purpose.**
+
+**The USTA calls the ATA the oldest African American sports association in the country. Handle that carefully:** the Colored Intercollegiate Athletic Association, founded at Hampton Institute in **1912** and still running as the CIAA, is older. **The claim depends on what "association" is doing.**
+
+**The Catch-22 is the point.** **Althea Gibson** could apply to the U.S. National Championships, but qualification ran through summer invitationals she was never invited to. She played Forest Hills in **late August 1950**, the first African American to compete there, beating Barbara Knapp 6-2, 6-2, then losing to the reigning Wimbledon champion Louise Brough **6-1, 3-6, 9-7** in a match suspended by a thunderstorm that knocked a stone eagle off the stadium. Gibson afterward: **"It may have been an omen that times were changing"** (United States Tennis Association, 2020). **Same trick as golf's rebranded invitationals, same decade, two sports.**
+
+**Now put the three barriers in one order and read it.** Boxing's color line was never written by any body; it ran through champions' and promoters' discretion, and **it fell first, when Joe Louis won the title in 1937**. Tennis had a policy and an entry rule, and **it opened in 1950**. Golf had it in the bylaws, in writing, and **the clause survived until November 1961**. **The least formalized barrier fell first and the most formalized fell last.** A written rule is harder to embarrass and harder to litigate around, so it lasts.
+
+**And the fourth mechanism, the one football taught us, closes the loop.** The Los Angeles Rams integrated in **1946** because the Los Angeles Memorial Coliseum was **publicly controlled**, and Black sports editors, led by Halley Harding of the *Los Angeles Tribune*, got its commission to pass a resolution barring racial discrimination by any professional tenant. Rams coach Bob Snyder later conceded the signing was a precondition of the lease: **"I doubt we would have been interested in Washington if we had stayed in Cleveland"** (Timmermann, 2020; Smith, 1988). **Sixteen years later the same instrument broke the last holdout, when federal officials told the Washington club it would lose its lease on a federally funded stadium unless it signed a Black player.** **Professional football's color line was broken twice, at both ends, by a public stadium lease.**
+
+:::reveal Quote the PGA of America's own admission about its bylaw, and say why it is the strongest kind of source. ||| Its 2009 release states that from 1934 to 1961 the Caucasian-only clause was part of the association's bylaws and prevented non-whites from membership, and that it was removed at the 1961 annual meeting. It is the governing body confessing in its own words rather than a historian asserting it.
+
+:::reveal What was the evasion after the 1948 golf lawsuit, and what is its tennis twin? ||| PGA events were renamed from "Open" to "Invitational" and Black golfers were not invited. In tennis, Althea Gibson could apply to the U.S. Nationals but qualification ran through summer invitationals to which she was never invited. Same trick, same decade, two sports.
+
+:::reveal Put the three barriers in the order they fell, and state what the order shows. ||| Boxing, with no written rule, fell first when Joe Louis won the title in 1937. Tennis, with a policy and an entry rule, opened in 1950. Golf, with the clause in its bylaws, held until November 1961. The least formalized barrier fell first and the most formalized fell last.
+
+:::reveal What instrument broke professional football's color line, at both ends? ||| A public stadium lease. In 1946 the publicly controlled Los Angeles Memorial Coliseum's commission barred discrimination by any professional tenant, and in 1961 federal officials threatened the Washington club's lease on a federally funded stadium.
+
+## Vocabulary
+- **Bylaw**: a rule inside an organization's own constitution, which is where golf's exclusion lived from 1934 to 1961.
+- **Invitational**: a tournament entered by invitation rather than by qualification, which is how both golf and tennis kept exclusion running after open entry was won.
+- **Exempt amateur**: a player outside a professional body's membership rules, the category that let Joe Louis into the 1952 San Diego Open.
+- **Lease condition**: a term a public landlord attaches to use of its venue, which is the instrument that integrated professional football twice.
+
+## Sources
+American Tennis Association. (n.d.). *The ATA has a rich history*. https://yourata.org/history
+
+Casey, K. (2025, February 10). *An obscure but noteworthy centennial: The United Golf Association*. New Jersey State Golf Association. https://njgolf.org/news/post/an-obscure-but-noteworthy-centennial-the-united-golf-association
+
+PGA of America. (2009, August 4). *PGA of America bestows membership upon late African-American pioneers*. https://web.archive.org/web/20090907135327/http://www.pga.com/2009/news/pga/08/04/golf_pioneers/
+
+Smith, T. G. (1988). Outside the pale: The exclusion of Blacks from the National Football League, 1934-1946. *Journal of Sport History, 15*(3), 255-281.
+
+Timmermann, B. (2020, January 28). *Los Angeles and the reintegration of the NFL*. Los Angeles Public Library. https://www.lapl.org/news-stories/articles/los-angeles-and-reintegration-nfl
+
+United States Tennis Association. (2020). *2020 Black History Month: The founding of the ATA, 1916*. https://www.usta.com/en/home/stay-current/national/2020-black-history-month--the-founding-of-the-ata--1916.html`,
+    },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
     // SECTION 6 · The record  (placed last; the write assignment and the final live here)
     // ═══════════════════════════════════════════════════════════════════════════════════════
     {
