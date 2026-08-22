@@ -89,6 +89,53 @@ export const NEGRO_LEAGUES_COURSE: AuthoredCourse = {
 - **Co-occurrence**: the claim that achievement and harm were happening at the same time to the same people, as opposed to the claim that one balances the other.
 - **Barnstorming**: playing games outside any league schedule, for a negotiated share of the crowd, which is where much of the actual money was.`,
     },
+    {
+      slug: "nl-the-league-map",
+      title: "3 · Seven leagues in twenty-eight years, and what that tells you",
+      section: "Section 1 · The firm",
+      body: `Here is the list, and then here is what the list means. Most accounts give you the first and skip the second.
+
+**The seven leagues Major League Baseball designated as major in December 2020, with the spans it published** (Major League Baseball, 2020):
+
+| League | Years |
+|---|---|
+| Negro National League (I) | 1920 to 1931 |
+| Eastern Colored League | 1923 to 1928 |
+| American Negro League | 1929 |
+| East-West League | 1932 |
+| Negro Southern League | 1932 |
+| Negro National League (II) | 1933 to 1948 |
+| Negro American League | 1937 to 1948 |
+
+**Read the right-hand column before the left.** Three of these seven leagues lasted **one season**. A fourth lasted six. Only two ran longer than a decade. **The league layer of this industry was its most fragile part**, and any account that talks about "the Negro Leagues" as one continuous institution from 1920 to 1947 has quietly deleted the most interesting fact on the page.
+
+**The clubs outlived their leagues, over and over.** The Homestead Grays, the Kansas City Monarchs, the Chicago American Giants, the Indianapolis ABCs and the Indianapolis Clowns all belonged to more than one of these organizations, or to none at all for stretches. **That inverts the arrangement you are used to.** In the American and National Leagues the league is permanent and clubs are its franchises. Here the club is the durable asset and the league is a service the club subscribed to when the terms were good.
+
+**Notice the name that appears twice.** The Negro National League of 1920 to 1931 and the Negro National League of 1933 to 1948 are **two different companies with the same name**, separated by a year in which neither existed. Secondary accounts collapse them constantly. If you see a claim about "the Negro National League" with a date between 1932 and 1933, someone has stopped paying attention.
+
+**The 1923 to 1929 sequence is a competition story, and you can read it as one.** A second league forms on the East Coast in 1923 while the first is running in the Midwest. Two leagues bidding for the same players is a labor market with two buyers, which is good for players and hard on owners. The Eastern Colored League ends in 1928, the American Negro League replaces it for exactly one season in 1929, and by 1932 two more one-season leagues have come and gone. **Then the whole layer stops for a year.** That is what a market clearing looks like.
+
+**And notice where the list stops.** MLB's designation ends at 1948, but the **Negro American League operated into 1962** (Baseball Reference, n.d.). The last section of this course is about that gap and what to make of it. For now, hold the plain fact: the leagues did not end in 1947 or 1948. **One of them kept operating for another fourteen years, and the designation that made these players major leaguers does not reach it.**
+
+**What to carry forward.** When this course says a club "joined a league," hear it as a firm buying a service: a schedule, a set of rivals, a claim to a championship, and a share of a collective reputation. When it says a league folded, hear it as that service becoming unavailable, usually because the owners stopped paying for it. **The next section asks where the money to pay for anything came from at all.**
+
+:::reveal What does the right-hand column of the seven-league table actually tell you? ||| That the league layer was the fragile part of the industry. Three of the seven lasted a single season and only two ran longer than a decade, so treating "the Negro Leagues" as one continuous institution from 1920 to 1947 deletes the most interesting fact available.
+
+:::reveal In what way is the club-league relationship here the inverse of the one in the American and National Leagues? ||| In those leagues the league is permanent and clubs are its franchises. Here the club was the durable asset and the league was a service it subscribed to when the terms were good, which is why clubs such as the Monarchs, the Grays and the Indianapolis clubs belonged to several leagues or to none.
+
+:::reveal Why is a date between 1932 and 1933 attached to "the Negro National League" a warning sign? ||| Because there were two different companies of that name, the first running 1920 to 1931 and the second 1933 to 1948, separated by a year in which neither existed. A source that blurs them has stopped paying attention.
+
+## Vocabulary
+- **League layer**: the organizing company that sells clubs a schedule, rivals and a championship, as distinct from the clubs themselves.
+- **Franchise**: a club that exists as a unit of a permanent league, which is the American and National League arrangement and not this one.
+- **Market clearing**: the period in which too many competitors collapse until the survivors can support themselves, which is what 1928 to 1933 looks like on this table.
+- **Designation span**: the years MLB's 2020 decision covers, 1920 to 1948, which is shorter than the period the leagues actually operated.
+
+## Sources
+Baseball Reference. (n.d.). *Negro Leagues data: Frequently asked questions*. https://www.baseball-reference.com/about/negro-leagues-data.shtml
+
+Major League Baseball. (2020, December 16). *MLB officially designates the Negro Leagues as "Major League"*. https://www.mlb.com/press-release/press-release-mlb-officially-designates-the-negro-leagues-as-major-league`,
+    },
     // ═══════════════════════════════════════════════════════════════════════════════════════
     // SECTION 4 · Indianapolis
     // ═══════════════════════════════════════════════════════════════════════════════════════
@@ -224,6 +271,585 @@ Johnson, S. (2026). *Syd S. Pollock*. Encyclopedia of Indianapolis. https://indy
 Rosengren, J. (n.d.). *Toni Stone, Connie Morgan and Mamie Johnson blazed a trail for women in the Negro Leagues*. National Baseball Hall of Fame. https://baseballhall.org/discover/baseball-history/toni-stone-connie-morgan-and-mamie-johnson-blazed-trail-for-women-in-negro-leagues
 
 Verderame, J. A. (2022). *Indianapolis Clowns*. Encyclopedia of Indianapolis. https://indyencyclopedia.org/indianapolis-clowns/`,
+    },
+    {
+      slug: "nl-quiz-indianapolis",
+      title: "13 · Knowledge check: Indianapolis",
+      section: "Section 4 · Indianapolis",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "In what year does the Encyclopedia of Indianapolis date the founding of the Indianapolis ABCs?",
+            options: ["1907", "1902, when a short-lived Indianapolis Colored Base Ball League ran for about eight games", "1912, the year Thomas Bowser bought the club from its founder", "1920, when the club became a charter member of the Negro National League"],
+            correctIndex: 0,
+            explanation: "Credited to Randolph 'Ran' Butler, a Black saloon keeper. Clubs using the name appear earlier, which is why the 1907 date is best read as the founding of the professionalized club.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "Who does the Encyclopedia of Indianapolis credit with organizing the ABCs?",
+            options: ["Randolph 'Ran' Butler, a Black saloon keeper", "Thomas Bowser, a white businessman who later co-owned the club with C. I. Taylor", "Charles Isham Taylor, who arrived from West Baden and managed the team", "Warner Jewell, a Black businessman who ran an Indianapolis pool hall"],
+            correctIndex: 0,
+            explanation: "Butler's trade matters to the naming argument: a saloon keeper is exactly the person a brewery would sponsor.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "What is the majority account of what the letters in the ABCs' name stood for?",
+            options: ["The American Brewing Company", "The initials of three club principals named Abrams, Butler and Conoyer", "A ranking system used by Indianapolis amateur clubs before professionalization", "The Association of Black Clubs, an early booking cooperative in the Midwest"],
+            correctIndex: 0,
+            explanation: "The Encyclopedia of Indianapolis reports the club as a marketing effort for that brewery. It is the majority account and not the only one.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "What is the rival account of the ABCs' name?",
+            options: ["The initials of three club principals", "That a Chicago Defender sportswriter coined it as a nickname for the club's disciplined play", "That the letters ranked the club above two earlier Indianapolis teams", "That the American Brewing Company demanded the name as a condition of its money"],
+            correctIndex: 0,
+            explanation: "George Abrams, Ran Butler and a co-manager named Conoyer. The course reports both readings and picks neither.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "Why does the club's own historian hedge even the brewery reading?",
+            options: ["A sponsor can attach to a name that already exists", "Because no American Brewing Company records from the period are known to survive anywhere", "Because Butler's saloon sold a competing brand and could not have taken the money", "Because the earliest surviving box scores spell the club's name three different ways"],
+            correctIndex: 0,
+            explanation: "Paul Debono's point is about the direction of the evidence. A sponsorship name proves a relationship, not which came first.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "Who bought the ABCs in 1912, and what does the course want you to notice about him?",
+            options: ["Thomas Bowser, who was white", "Warner Jewell, who was Black and also owned an Indianapolis pool hall", "C. I. Taylor, who had run the West Baden Sprudels in southern Indiana", "Olivia Taylor, who is reported as the first woman to own a Negro League club"],
+            correctIndex: 0,
+            explanation: "The Encyclopedia of Indianapolis calls him a white businessman. The widely repeated 'bail bondsman' occupation could not be confirmed and the course does not use it.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "What did C. I. Taylor acquire in 1914?",
+            options: ["A half interest in the club", "Outright ownership, after buying Thomas Bowser out of the business entirely", "A booking contract giving him the club's dates without any equity in it", "A lease on Washington Park that included use of the players' locker rooms"],
+            correctIndex: 0,
+            explanation: "He also became manager, which made the club a partnership between a white owner and a Black owner-operator.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "Where had C. I. Taylor come from when he joined the ABCs?",
+            options: ["West Baden, Indiana", "Kansas City, where he had helped organize the league's founding meeting", "Pittsburgh, where he had run a nightclub alongside a ballclub", "Chicago, after several seasons managing the American Giants for Rube Foster"],
+            correctIndex: 0,
+            explanation: "He had run the West Baden Sprudels there before coming north to Indianapolis.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "What happened to the ABCs in 1916?",
+            options: ["Two rival clubs both used the name", "The club was expelled from its league for refusing to honor a scheduled series", "The club moved to Chicago and played the season as a tenant of Rube Foster", "The club stopped playing entirely after its ballpark was demolished mid-season"],
+            correctIndex: 0,
+            explanation: "Bowser and Taylor fell out, and the partnership split the business in two. Taylor kept the better players.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "Who bought Bowser's half of the split, and what does the course say that direction of sale shows?",
+            options: ["Warner Jewell, a Black businessman", "The American Brewing Company, which took direct control of the club it had sponsored", "The Indianapolis Indians, who wanted a tenant for the ballpark they controlled", "Rube Foster's Chicago American Giants, who ran it as a farm club for two seasons"],
+            correctIndex: 0,
+            explanation: "A white owner selling out to a Black owner is the direction this course keeps finding, and here it happened to the losing half of a split.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "What did C. I. Taylor require of his players when they were not in uniform?",
+            options: ["Collars, ties and shined shoes", "A written agreement not to play barnstorming dates against clubs outside the league", "Attendance at a weekly meeting held at the club's Indiana Avenue premises", "That they lodge with Black families in each city rather than at commercial hotels"],
+            correctIndex: 0,
+            explanation: "His stated theory was that bearing and gentlemanly play would move white opinion toward recognizing Black baseball's merits. Read it as a decision about brand reputation in a market he needed and did not control.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "What happened in an exhibition game in October 1915 that cut against Taylor's policy?",
+            options: ["Oscar Charleston punched a white umpire", "The ABCs walked off the field over a disputed forfeit and lost the gate receipts", "A white club refused to take the field, and the promoter kept the entire guarantee", "Taylor was ejected for arguing and was suspended for the rest of the exhibition season"],
+            correctIndex: 0,
+            explanation: "Taylor issued a public apology for his 'hotheaded' center fielder, which is what a reputational asset costs when it misbehaves.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "What is Oscar Charleston's connection to Indianapolis?",
+            options: ["He was born there", "He bought a controlling interest in the ABCs after C. I. Taylor's death in 1922", "He served on the committee that installed the Washington Park historical marker", "He was the Indianapolis Recorder's baseball writer before he became a player"],
+            correctIndex: 0,
+            explanation: "He began his ABCs career in 1915 and left for the Eastern Colored League in the exodus that followed Taylor's death.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "Where was the first game of the Negro National League played?",
+            options: ["Indianapolis", "Kansas City, at the ballpark nearest the hotel where the league had been organized", "Chicago, at the park controlled by the league's own president and founder", "Pittsburgh, on the only Black-owned ballpark in the league at the time"],
+            correctIndex: 0,
+            explanation: "At Washington Park, on 2 May 1920, with the ABCs beating the Chicago Giants. It is the best-documented fact in the Indianapolis story.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "On what date was the Negro National League's first game played?",
+            options: ["2 May 1920", "19 April 1905, the day the Indianapolis Indians dedicated Washington Park", "23 February 1922, the day C. I. Taylor died in Indianapolis", "5 September 1931, the day Perry Stadium opened on West 16th Street"],
+            correctIndex: 0,
+            explanation: "The date appears both in the Encyclopedia of Indianapolis and on a state historical marker at the site.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "Whom did the ABCs beat in that first Negro National League game?",
+            options: ["The Chicago Giants", "The Chicago American Giants, the club Rube Foster owned and managed himself", "The Kansas City Monarchs, in the league's only opening-day meeting of charter clubs", "The Homestead Grays, who were not yet members but agreed to play the date"],
+            correctIndex: 0,
+            explanation: "Joe Green's club, distinct from Foster's American Giants. The Encyclopedia of Indianapolis calls them the Chicago (Union) Giants and the historical marker calls them the Chicago Giants.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "What crowd and score does the Encyclopedia of Indianapolis record for that game?",
+            options: ["6,000, and a 4 to 2 win", "14,500 in a park that had just been built to hold exactly that many", "About 10,000, with the score never recorded in any surviving account", "6,000, with the game called after seven innings and no official result"],
+            correctIndex: 0,
+            explanation: "Both figures come from that one institutional page, which is worth noting when you cite them.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "Who installed the historical marker that carries the 1920 first-game date?",
+            options: ["The Indiana Historical Bureau and SABR", "The Negro Leagues Baseball Museum, working with the Indianapolis Indians", "Major League Baseball, as part of the December 2020 reclassification announcement", "The National Park Service, when Bush Stadium entered the National Register"],
+            correctIndex: 0,
+            explanation: "Jointly with SABR's Negro Leagues Research Committee, which is why its sourcing is unusually good: the marker's annotated text carries ten numbered citations.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "When did C. I. Taylor die?",
+            options: ["23 February 1922", "In the autumn of 1926, the year the franchise finally folded", "In 1924, during the exodus of players to the Eastern Colored League", "In 1914, shortly after buying his half interest in the club"],
+            correctIndex: 0,
+            explanation: "He had attended the league's February winter meetings in Chicago and fell ill on returning to Indianapolis.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "Who took ownership of the ABCs after C. I. Taylor's death?",
+            options: ["Olivia Taylor, his wife", "Ben Taylor, his brother, who had been the club's first baseman for years", "Warner Jewell, who reunited the two halves of the club under one owner", "The Negro National League office, which operated the club until a buyer was found"],
+            correctIndex: 0,
+            explanation: "She is reported as the first woman to own a Negro League club. Ben Taylor took over as manager rather than as owner.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "Where did the ABCs' players go after 1922?",
+            options: ["The Eastern Colored League", "The Negro Southern League, which had just been organized as a lower-cost circuit", "Independent Cuban clubs, which paid in dollars and played a longer winter schedule", "The Chicago American Giants, whose owner bought their contracts as a block"],
+            correctIndex: 0,
+            explanation: "Oscar Charleston was among them. Two leagues bidding for the same players is a labor market with two buyers, which is hard on the weaker one.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "What was the ABCs' record in 1922, according to the Seamheads database?",
+            options: ["63 wins, 42 losses and 2 ties", "16 wins and 55 losses, the collapse that followed the owner's death", "462 wins and 481 losses, which is the club's whole franchise line", "98 games played with a full box score surviving for every one of them"],
+            correctIndex: 0,
+            explanation: "The club's best season on the field was the year C. I. Taylor died in February.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "What was the ABCs' record in 1925, according to the Seamheads database?",
+            options: ["16 wins and 55 losses", "63 wins, 42 losses and 2 ties, the best line the franchise ever posted", "A season abandoned in mid-summer when the club could not meet payroll", "No games at all, because the franchise had already folded the previous autumn"],
+            correctIndex: 0,
+            explanation: "Three seasons after the .600 mark. The collapse tracks the loss of the owner-operator and the talent that left with him.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "When did the ABCs franchise fold?",
+            options: ["1926", "1931, the year Washington Park closed at the end of the season", "1922, immediately after C. I. Taylor's death in February of that year", "1948, when the Negro National League ended and its clubs dispersed"],
+            correctIndex: 0,
+            explanation: "Later clubs used the ABCs name in the 1930s, but they were different businesses reusing a brand, which is itself a finding about what the name was worth.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "What does this course mean by an owner-operator?",
+            options: ["An owner who also runs the business day to day", "An owner who holds equity in the league office as well as in a single club", "An owner who controls the ballpark the club plays in as well as the club itself", "A manager given a share of profits in place of a salary he could not be paid"],
+            correctIndex: 0,
+            explanation: "C. I. Taylor was one, which is why his death in 1922 was a business event and not only a personal one.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "What is a franchise record, as this course uses the term?",
+            options: ["A club's cumulative line as one database reconstructs it", "The official win-loss total certified by the league office at each season's close", "The complete record of every game a club played, league and barnstorming alike", "A club's best single season, held up as the standard the rest are measured against"],
+            correctIndex: 0,
+            explanation: "It is a statement about documented league games, not about every game the club played, which matters enormously on this subject.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "What is a charter member?",
+            options: ["A club present at a league's founding", "A club that has paid its dues in full for at least three consecutive seasons", "A club given a permanent seat that cannot be revoked by a vote of the others", "A club whose owner also holds an office in the league's administration"],
+            correctIndex: 0,
+            explanation: "For the ABCs it meant a seat at the table in 1920 and the league's first home date.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "Why does the course call the ABCs' name a problem in business history rather than a trivia question?",
+            options: ["A sponsorship name does not fix the direction of the relationship", "Because the brewery's records were destroyed and the question can never be settled at all", "Because two competing clubs used the name at the same time in the same city", "Because the name was changed three times in the club's first decade of operation"],
+            correctIndex: 0,
+            explanation: "The name proves that a relationship existed. It does not prove which came first, which is the ordinary evidentiary problem underneath.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "What is the course's verdict on the ABCs' 1922 to 1925 collapse?",
+            options: ["It tracks the loss of the owner-operator and the talent that followed", "That the Eastern Colored League deliberately targeted the club to destroy a rival", "That the club never recovered from losing access to Federal League Park in 1916", "That a woman owner was refused credit by the banks the club had always used"],
+            correctIndex: 0,
+            explanation: "The 1922 record of 63-42-2 against the 1925 record of 16-55 is the strongest quantitative evidence available, and it starts in the year Taylor died.",
+            sourceLessonSlug: "nl-abcs",
+          },
+          {
+            prompt: "Where was Northwestern Park?",
+            options: ["Northwest of West 17th Street and Northwestern Boulevard", "At Kentucky and River Avenues, on ground left behind by a collapsed white league", "At 1200 West Washington Street, on the site now near the Indianapolis Zoo", "At 1501 West 16th Street, where the Art Deco stadium still stands as apartments"],
+            correctIndex: 0,
+            explanation: "A wooden ballpark in the city's Black community, on the street now called Martin Luther King Jr. Boulevard.",
+            sourceLessonSlug: "nl-avenue-and-the-ground",
+          },
+          {
+            prompt: "What was Federal League Park, and where did the ABCs get it?",
+            options: ["Ground left behind by a collapsed white league", "A park the club built for itself with money raised on Indiana Avenue", "A municipal field the city leased to any club that applied for dates", "A minor league park the Indianapolis Indians sublet during their road trips"],
+            correctIndex: 0,
+            explanation: "At Kentucky and River Avenues. The ABCs used it after 1915, which is a reminder that a Black club's best chance at a park was often another league's failure.",
+            sourceLessonSlug: "nl-avenue-and-the-ground",
+          },
+          {
+            prompt: "What did the demolition of Federal League Park do to the rival ABC club?",
+            options: ["It wrecked the business", "It forced a merger with C. I. Taylor's club before the following season opened", "It cost the club its share of a lease it had been paying half of since 1915", "It pushed the club out of Indianapolis to Detroit, where it played two more seasons"],
+            correctIndex: 0,
+            explanation: "Two ABC clubs were left competing for two remaining fields, and the Encyclopedia of Indianapolis calls the result disastrous for Jewell's team. A competitor destroyed by losing venue access rather than talent is a lesson in what a lease is.",
+            sourceLessonSlug: "nl-avenue-and-the-ground",
+          },
+          {
+            prompt: "Why does the course refuse to give a year for Federal League Park's demolition?",
+            options: ["Sources give both 1916 and 1917 and the difference is unsettled", "Because the park was dismantled in stages over three separate seasons", "Because no source names the park at all outside a single encyclopedia entry", "Because the demolition date is disputed between the city and the county records"],
+            correctIndex: 0,
+            explanation: "The teachable point survives either way: losing the venue, not losing players, is what wrecked the rival club.",
+            sourceLessonSlug: "nl-avenue-and-the-ground",
+          },
+          {
+            prompt: "From whom did C. I. Taylor lease Washington Park?",
+            options: ["The Indianapolis Indians", "The City of Indianapolis, which owned the ground and set a flat per-date rate", "The Negro National League office, which held the lease for all its western clubs", "The American Brewing Company, which had bought the park as an investment"],
+            correctIndex: 0,
+            explanation: "The white minor league club that controlled the park, on an occasional basis rather than as a full-season tenant.",
+            sourceLessonSlug: "nl-avenue-and-the-ground",
+          },
+          {
+            prompt: "What did the Washington Park lease deny the ABCs?",
+            options: ["Use of the locker rooms", "Any date on a Sunday, which was the only day a working crowd could attend", "The right to sell their own concessions inside the park on their own dates", "More than four home dates in any single month of the playing season"],
+            correctIndex: 0,
+            explanation: "That single refusal is what generated the rest of this lesson.",
+            sourceLessonSlug: "nl-avenue-and-the-ground",
+          },
+          {
+            prompt: "What did C. I. Taylor do about the locker-room refusal?",
+            options: ["He built changing space into his own Indiana Avenue business", "He negotiated a lower rent in exchange for accepting the exclusion permanently", "He moved the club's home dates back to Northwestern Park for the rest of the decade", "He filed a complaint with the league office, which raised it with the Indians' owners"],
+            correctIndex: 0,
+            explanation: "The club internalized a function a supplier refused to provide. That is the whole argument of this section in one move.",
+            sourceLessonSlug: "nl-avenue-and-the-ground",
+          },
+          {
+            prompt: "What did Taylor make of the walk from the Avenue to the ballpark?",
+            options: ["Parades with cars, bands and civic groups", "A ticketed procession that raised additional money for the club on game days", "A quiet route chosen to avoid the white neighborhoods between the two points", "A weekly recruitment drive aimed at boys who might sign with the club later"],
+            correctIndex: 0,
+            explanation: "Thirty men in uniform moving through a commercial district is advertising the club did not have to buy. Exclusion generated infrastructure, and the infrastructure sat on Indiana Avenue.",
+            sourceLessonSlug: "nl-avenue-and-the-ground",
+          },
+          {
+            prompt: "When did Perry Stadium open?",
+            options: ["5 September 1931", "19 April 1905, when the Indianapolis Indians dedicated their first home ground", "In 1942, when a fan vote settled on the name it would carry for 25 years", "11 July 1996, in White River State Park on the west edge of downtown"],
+            correctIndex: 0,
+            explanation: "At 1501 West 16th Street, the same season Washington Park closed.",
+            sourceLessonSlug: "nl-avenue-and-the-ground",
+          },
+          {
+            prompt: "What did Perry Stadium cost, and how many did it seat?",
+            options: ["$350,000, seating 14,500", "$13 million, seating the 138 households that live in it today", "$10,000, which is the same figure commonly reported for a player contract", "About $1, which is what a developer later paid for the abandoned building"],
+            correctIndex: 0,
+            explanation: "Those are the Encyclopedia of Indianapolis figures for the 1931 construction.",
+            sourceLessonSlug: "nl-avenue-and-the-ground",
+          },
+          {
+            prompt: "How did Perry Stadium come to be called Victory Field in 1942?",
+            options: ["A fan vote", "A wartime order from the federal government renaming publicly used stadiums", "A payment from a war-bond campaign that bought the naming rights for the duration", "A vote of the Negro American League clubs that rented the park for home dates"],
+            correctIndex: 0,
+            explanation: "It became Bush Stadium on 30 August 1967. The 1942 to 1967 Victory Field is not the Victory Field standing today.",
+            sourceLessonSlug: "nl-avenue-and-the-ground",
+          },
+          {
+            prompt: "Which club rented the 1931 stadium from 1944 to 1962?",
+            options: ["The Indianapolis Clowns", "The Indianapolis ABCs, who returned to the city after folding in 1926", "The Chicago American Giants, who used it for their western road swing", "The Homestead Grays, who split home dates between Pittsburgh and Indianapolis"],
+            correctIndex: 0,
+            explanation: "Negro League clubs rented that stadium rather than owning it, which is the pattern throughout this course.",
+            sourceLessonSlug: "nl-avenue-and-the-ground",
+          },
+          {
+            prompt: "What happened to the 1931 stadium building?",
+            options: ["It became apartments, opening as Stadium Lofts in 2013", "It was demolished in 1996 when the new Victory Field opened downtown", "It was bought by the Negro Leagues Baseball Museum and reopened as an exhibit", "It sat empty until the National Park Service acquired it as a historic site"],
+            correctIndex: 0,
+            explanation: "138 units, with the Art Deco entrance preserved and the diamond reused as green space.",
+            sourceLessonSlug: "nl-avenue-and-the-ground",
+          },
+          {
+            prompt: "Why did Madam C. J. Walker move her operation to Indianapolis in February 1910?",
+            options: ["The Indiana Avenue business community and rail access at Union Station", "Because Indianapolis was the only city that would charter a company she controlled", "Because the ABCs' owners offered her a stake in the club and a place on the board", "Because a fire had destroyed her previous premises and the insurance paid out there"],
+            correctIndex: 0,
+            explanation: "Rail access mattered because the business was mail order. It is a logistics decision, which is exactly the kind of fact this course wants.",
+            sourceLessonSlug: "nl-avenue-and-the-ground",
+          },
+          {
+            prompt: "When was the Walker Building on Indiana Avenue completed?",
+            options: ["December 1927", "1911, the year the Walker company was incorporated in Indiana", "1919, the year Madam C. J. Walker died and the company passed to her daughter", "1980, when the building was listed on the National Register of Historic Places"],
+            correctIndex: 0,
+            explanation: "At 617 Indiana Avenue, eight years after Madam Walker's death in May 1919.",
+            sourceLessonSlug: "nl-avenue-and-the-ground",
+          },
+          {
+            prompt: "What commercial relationship between the Walker company and the Indianapolis ABCs could this course document?",
+            options: ["None", "A sponsorship that paid for the club's uniforms and travel in the 1910s", "An advertising contract in the Indianapolis Recorder tied to the club's home dates", "A minority stake held by the company's general manager on the company's behalf"],
+            correctIndex: 0,
+            explanation: "No sponsorship, no investment, no advertising tie could be established. The one sourced connection is that Walker attended many ABCs games, and her death in May 1919 bounds even that.",
+            sourceLessonSlug: "nl-avenue-and-the-ground",
+          },
+          {
+            prompt: "What is the real, documented link between Indiana Avenue commerce and the ballclub?",
+            options: ["Taylor's own Avenue premises served as the clubhouse", "The Walker company bought a block of season tickets for its sales agents each year", "The Indianapolis Recorder owned a minority share in the club from 1914 onward", "Avenue merchants jointly guaranteed the club's rent at Washington Park each season"],
+            correctIndex: 0,
+            explanation: "It is better history than a sponsorship would have been, because it is causal rather than decorative: a refusal at the park produced a facility on the Avenue.",
+            sourceLessonSlug: "nl-avenue-and-the-ground",
+          },
+          {
+            prompt: "Why does the course say Walker's attendance at ABCs games is a bounded claim?",
+            options: ["She died in May 1919", "Because only one game is named in any surviving source", "Because the source that carries it is an encyclopedia rather than a newspaper", "Because Washington Park did not admit Black spectators before the 1920s"],
+            correctIndex: 0,
+            explanation: "That places her attendance before the Negro National League existed and inside a narrow window of the club's Washington Park era.",
+            sourceLessonSlug: "nl-avenue-and-the-ground",
+          },
+          {
+            prompt: "What does this course mean by internalizing a function?",
+            options: ["Bringing in-house a service a supplier refused to provide", "Buying a supplier outright rather than continuing to contract with it", "Moving a business activity from the club to the league office to save money", "Replacing a paid service with volunteer labor drawn from the club's own fans"],
+            correctIndex: 0,
+            explanation: "Taylor's Avenue clubhouse is the example: the locker room was refused, so the club built one.",
+            sourceLessonSlug: "nl-avenue-and-the-ground",
+          },
+          {
+            prompt: "What is adaptive reuse?",
+            options: ["Converting a building to a new purpose rather than demolishing it", "Renting a ballpark to several clubs in the same season to spread the fixed cost", "Rebuilding a ballpark on the same footprint after the original burns or collapses", "Selling a building's name to a sponsor while continuing to operate it unchanged"],
+            correctIndex: 0,
+            explanation: "The 1931 stadium became 138 apartments in 2013, keeping the Art Deco entrance and the field as green space.",
+            sourceLessonSlug: "nl-avenue-and-the-ground",
+          },
+          {
+            prompt: "How many ballparks did the ABCs use across the period this lesson covers?",
+            options: ["Four", "One, which they owned outright from the club's founding onward", "Two, both of them leased from the same white minor league club", "Seven, one for almost every season between 1907 and 1926"],
+            correctIndex: 0,
+            explanation: "Northwestern Park, Federal League Park, Washington Park and the 1931 stadium. Only the first was really theirs.",
+            sourceLessonSlug: "nl-avenue-and-the-ground",
+          },
+          {
+            prompt: "What did Syd Pollock own between 1926 and 1936?",
+            options: ["A barnstorming club of mostly Cuban players", "The Miami Giants, which he had founded with the bootlegger Johnny Pierce", "A theater circuit in New York that booked baseball clubs between film showings", "A half interest in the Negro American League's booking and scheduling office"],
+            correctIndex: 0,
+            explanation: "First the Havana Red Sox, where he experimented with blending comedy and shadow-ball exhibitions into competitive play.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "What does the Havana Red Sox period tell you about the Clowns' comedy act?",
+            options: ["It arrived fully developed from another venture", "That it was invented in Indianapolis to compete with the Harlem Globetrotters", "That Cuban players demanded it as a condition of touring the American South", "That the Negro American League required it of any club seeking a franchise"],
+            correctIndex: 0,
+            explanation: "Pollock had run the format for a decade before he had anything to do with the Clowns. It was a proven product line, not an improvisation.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "When did Syd Pollock take a controlling stake in the Clowns?",
+            options: ["1937", "1943, the year the club was admitted to the Negro American League", "1926, when he acquired the Havana Red Sox and renamed them", "1955, when he sold a partnership in the club to Ed Hamman"],
+            correctIndex: 0,
+            explanation: "He had been booking games for the Miami Ethiopian Clowns since about 1936.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "Where were the Clowns founded, and under what name?",
+            options: ["Miami, as the Miami Giants", "Cincinnati, as the Cincinnati Clowns, before moving on to Indianapolis", "Indianapolis, as the Indianapolis Clowns, by a group of Indiana Avenue merchants", "Harlem, as a baseball counterpart to the Renaissance basketball club"],
+            correctIndex: 0,
+            explanation: "Financed by Johnny Pierce, a Miami bootlegger, and renamed the Ethiopian Clowns before his death.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "In what order did the Clowns take their cities?",
+            options: ["Miami, then Cincinnati, then Indianapolis", "Indianapolis first, then Cincinnati, and finally back to Indianapolis in 1946", "Harlem, then Chicago, then Indianapolis, following the Globetrotters' route", "Miami, then Havana, then Indianapolis, following the club's Cuban players"],
+            correctIndex: 0,
+            explanation: "Cincinnati in 1942, Indianapolis before the 1944 season as the Cincinnati-Indianapolis Clowns, and fully Indianapolis in 1946.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "What does a club changing city four times in a decade tell you about its revenue?",
+            options: ["That it did not come from a hometown", "That the club could not meet its rent obligations in any single ballpark", "That the league office reassigned territories to whichever owner bid highest", "That its owner lived in a different city and moved the club to follow his other business"],
+            correctIndex: 0,
+            explanation: "This was a touring company. The city name was a brand decision, not a description of where the money was.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "How many press releases was Syd Pollock sending out a year by the early 1950s?",
+            options: ["Thirty thousand", "Roughly two hundred, one for each date the club played that season", "Fewer than a hundred, all of them to Black newspapers in league cities", "About two thousand, matching the number of miles the club traveled each week"],
+            correctIndex: 0,
+            explanation: "Set it beside the roughly 200 games a year and the shape of the business is obvious: a touring company with a publicity department.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "Roughly how many games a year did the Clowns play in their barnstorming period?",
+            options: ["About 200", "About 60, which is the figure MLB later used as a season minimum", "About 500, more than any other professional baseball club in the country", "About 26, the number of league games in a typical Negro American League season"],
+            correctIndex: 0,
+            explanation: "Far more than any league schedule, which tells you the standings were one of the club's products rather than its business.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "Who called the Clowns a 'fourth-rate Uncle Tom minstrel show', and in what year?",
+            options: ["Wendell Smith, in 1942", "Cumberland Posey, in 1935, during Italy's invasion of Ethiopia", "Rube Foster, in 1920, when he was organizing the Negro National League", "Bob Kendrick, in 2020, when MLB reclassified the leagues as major"],
+            correctIndex: 0,
+            explanation: "Smith was sports editor of the Pittsburgh Courier. The sharpest criticism of the Clowns came from inside Black baseball, not from outside it.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "What did Cumberland Posey accuse Syd Pollock of?",
+            options: ["Capitalizing on Black sympathy for Ethiopia", "Underpaying his players relative to every other club in the Negro American League", "Bribing league officials to secure a franchise the other owners had voted against", "Booking dates in cities already held by other clubs under the league's territory rules"],
+            correctIndex: 0,
+            explanation: "Posey co-owned the Homestead Grays. The charge is that the team's brand monetized an anticolonial cause during Italy's 1935 invasion.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "What did the two leagues do to the Clowns in 1941?",
+            options: ["Barred member clubs from playing them", "Voted the club a franchise on condition that it change its name within one season", "Fined the club's owner for scheduling games against white semiprofessional teams", "Bought the club outright and reorganized it under new ownership"],
+            correctIndex: 0,
+            explanation: "A boycott by competitors, and Pollock answered it by forming his own Negro Major League to get around the ban. It is a market-access fight fought over a question about dignity.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "How did Pollock respond to the 1941 ban?",
+            options: ["He formed his own league", "He sued the two leagues in federal court and won an injunction against them", "He agreed at once to every condition the two leagues had set for admission", "He moved the club to Cuba for two seasons until the ban was lifted"],
+            correctIndex: 0,
+            explanation: "The Negro Major League. A counter-league in answer to a boycott is pure business history.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "What did Pollock give up to join the Negro American League in 1943?",
+            options: ["The Ethiopian name and the most offensive parts of the act", "A quarter of the club's gate receipts for the first three seasons of membership", "Control of the club's booking, which passed to the league office in Chicago", "The club's Cuban players, whom the league refused to register as members"],
+            correctIndex: 0,
+            explanation: "Specifically the whiteface makeup, the wigs, the grass skirts and the clown suits. It is the clearest price tag in this course: legitimacy bought with an itemized change to the product.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "How long did the Clowns' Negro American League membership last?",
+            options: ["Twelve years", "Nineteen years, ending when the league itself stopped operating in 1962", "Five years, ending with the Negro National League's collapse after 1948", "Forty-six years, running until the club finally disbanded in 1989"],
+            correctIndex: 0,
+            explanation: "They joined in 1943 and withdrew after the 1954 season, then went on playing exhibitions for decades.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "Who was the first woman to play in the Negro American League, and when?",
+            options: ["Toni Stone, in 1953", "Connie Morgan, in 1954, at the age of nineteen", "Mamie Johnson, who pitched for the Clowns from late 1953 to 1955", "Olivia Taylor, who had owned the Indianapolis ABCs three decades earlier"],
+            correctIndex: 0,
+            explanation: "The National Baseball Hall of Fame records her with the Clowns in 1953. Pollock then sold her contract to the Kansas City Monarchs, where she played in 1954.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "What happened to Toni Stone's contract after the 1953 season?",
+            options: ["Pollock sold it to the Kansas City Monarchs", "It lapsed, and she left professional baseball without playing again", "It was voided by the league office, which had never approved her registration", "She bought it out herself and played the following season as a free agent"],
+            correctIndex: 0,
+            explanation: "She played there in 1954. A player contract is an asset a club can sell, which is the same mechanism the rest of this course turns on.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "Who replaced Toni Stone with the Clowns for 1954?",
+            options: ["Connie Morgan, aged 19", "Mamie Johnson, who had been pitching for the club since late 1953", "Nobody, because the club did not sign another woman after she left", "Olivia Taylor, returning to baseball after three decades away from the game"],
+            correctIndex: 0,
+            explanation: "Mamie Johnson was also with the club in this period, pitching from late 1953 to 1955.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "How does this course state Mamie Johnson's reported record?",
+            options: ["With the doubt attached, exactly as the Hall of Fame does", "As an established figure, since the Hall of Fame prints it on its own website", "Not at all, since a self-reported figure has no place in a cited course", "As a range, averaging the competing versions found in different accounts"],
+            correctIndex: 0,
+            explanation: "The Hall of Fame prints her 33 and 8 with the note that Negro Leagues historians question its validity. A number is not improved by dropping its caveat.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "What does this course do with the claim that Toni Stone replaced Hank Aaron?",
+            options: ["It does not assert it", "It states it as fact, since Aaron left the club the year before she arrived", "It calls it definitively false and names the source that disproves it", "It repeats it with a note that the two never appeared in the same lineup"],
+            correctIndex: 0,
+            explanation: "The Hall of Fame's account does not describe her that way. Aaron left in June 1952 and Stone arrived in 1953, which makes the replacement framing a narrative convenience.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "When did Hank Aaron sign with the Indianapolis Clowns, and for how much?",
+            options: ["20 November 1951, for $200 a month", "In the spring of 1953, for a signing bonus of $10,000 paid in advance", "In June 1952, immediately after the Negro League World Series ended", "In 1954, on the same terms the club had given Toni Stone the year before"],
+            correctIndex: 0,
+            explanation: "SABR's biography carries both the date and the salary. He signed with a Braves scout on 14 June 1952.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "What did Aaron bat for the Clowns in 1952, and over how many games?",
+            options: [".366 in 26 games", ".466 in 74 games, the highest single-season mark in the record", ".372 across 2,255 at-bats, which became a career leaderboard figure", ".451 in 39 games, a figure disputed between two competing databases"],
+            correctIndex: 0,
+            explanation: "A short stint. He signed with the Braves' scout in June of that year and reported to a Class-C club.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "How does this course report the $10,000 figure for Aaron's contract?",
+            options: ["As commonly reported, not as established", "As a verified figure, since the Encyclopedia of Indianapolis carries it", "As a fabrication, since no institutional source repeats it anywhere", "As a range between $10,000 and $15,000, depending on which offer is counted"],
+            correctIndex: 0,
+            explanation: "It is repeated almost everywhere, but no primary record for it was located and SABR's biography of Aaron gives no figure at all.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "To whom did Syd Pollock sell his interest in the Clowns, and when did he finish?",
+            options: ["Ed Hamman, a partnership in 1955 and the rest in 1965", "The Negro American League, which took the club over when he retired in 1954", "The Indianapolis Indians, who wanted a summer tenant for their stadium", "Abe Saperstein, who was already booking the club's barnstorming dates"],
+            correctIndex: 0,
+            explanation: "Two transactions ten years apart, with the second coming long after the club had left the league.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "When did the Indianapolis Clowns disband?",
+            options: ["1989", "1962, when the Negro American League itself finally stopped operating", "1954, when the club withdrew from the Negro American League", "1965, when Syd Pollock sold the last of his interest in the business"],
+            correctIndex: 0,
+            explanation: "The Encyclopedia of Indianapolis calls it the longest run of any Black professional team in United States history. The company outlived the league by thirty-five years.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "What does the Clowns' survival to 1989 tell you about the business?",
+            options: ["Its real product was touring entertainment, not league competition", "That the Negro American League continued informally long after 1962", "That the club had bought its own ballpark and could operate without a landlord", "That Major League Baseball subsidized the club as a scouting arrangement"],
+            correctIndex: 0,
+            explanation: "It withdrew from the league after 1954 and kept playing exhibitions for another thirty-five years. The business survived by ceasing to be a league team.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "What does this course mean by a product line?",
+            options: ["A proven offering carried from one venture to another", "A range of ticket prices offered at a single game to reach different buyers", "The merchandise a club sells alongside admission, such as programs and caps", "The set of players a club develops and then sells on to other clubs"],
+            correctIndex: 0,
+            explanation: "Pollock carried the comedy-plus-baseball format from the Havana Red Sox to the Clowns, which is why the act was not an improvisation.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "What does this course mean by an itemized price?",
+            options: ["A cost stated as specific concessions rather than money", "A rental agreement broken down into fixed rent plus a share of the gate", "A player contract listing salary, bonus and travel allowance separately", "A league fee assessed per game rather than as an annual membership charge"],
+            correctIndex: 0,
+            explanation: "The 1943 Negro American League seat is the example: no money is recorded, but the name and four named elements of the act were the payment.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "What does this course mean by a market access fight?",
+            options: ["A dispute in which competitors try to bar a rival from the market", "A bidding war between two leagues for the same group of players", "A legal contest over which club holds the exclusive rights to a city", "A negotiation between a club and a stadium owner over available dates"],
+            correctIndex: 0,
+            explanation: "The 1941 ban on playing the Clowns is the case, and Pollock's counter-league was the answer.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "Why does the course say the Clowns are the hardest business in it to write about honestly?",
+            options: ["The product was partly a minstrel act and the critics were Black owners and writers", "Because almost no records of the club survive in any archive or newspaper", "Because the club refused to publish attendance figures for any of its dates", "Because its owner left no account of his own reasoning in any surviving source"],
+            correctIndex: 0,
+            explanation: "Wendell Smith and Cum Posey are the named critics, and the company outlasted every league it joined. All three facts have to sit in the same lesson.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "What is the significance of the Clowns drawing at major league parks?",
+            options: ["It shows the touring product outperformed the league product", "It proves the club owned the parks it played in by the early 1950s", "It explains why the two leagues admitted the club without conditions in 1943", "It is the reason MLB included the club's statistics in the 2024 merge"],
+            correctIndex: 0,
+            explanation: "One of the Negro American League's most financially successful clubs was the one whose business was least about the league.",
+            sourceLessonSlug: "nl-clowns",
+          },
+          {
+            prompt: "Taken together, what do the ABCs and the Clowns show about club survival?",
+            options: ["The durable asset was the business, not the league seat", "That a club could not survive the death of the owner who founded it", "That white ownership was necessary for a Black club to last more than a decade", "That clubs which owned their ballparks always outlasted clubs that rented"],
+            correctIndex: 0,
+            explanation: "The ABCs died with their owner-operator four years after a league seat. The Clowns gave up their league seat and lasted another thirty-five years.",
+            sourceLessonSlug: "nl-clowns",
+          },
+        ],
+      },
     },
     // ═══════════════════════════════════════════════════════════════════════════════════════
     // SECTION 6 · The record  (placed last; the write assignment and the final live here)
