@@ -1327,6 +1327,7 @@ async function main() {
     seriesOrder,
     seriesCode,
     seriesPosition,
+    seriesTrack,
   } of [
     { slug: "knot-tying", course: KNOTS_COURSE, category: "Trade Skills" },
     { slug: "croquet", course: CROQUET_COURSE, category: "Sports" },
@@ -1361,7 +1362,20 @@ async function main() {
     // not referee, Smith at Case Western not Cincinnati, King at NCCU, the spelling Chowdhury) are
     // the load-bearing content. No quotation appears anywhere in the course that the research pass
     // could not tie to a primary source. NO migration — pnpm seed:courses.
-    { slug: "she-took-the-seat", course: SHE_TOOK_THE_SEAT_COURSE, category: "Culture & History" },
+    // DIDWORK series. The two wings are PARALLEL, not sequential, so they are lettered tracks rather
+    // than 01 and 02: neither is a prerequisite for the other and a learner may start at either.
+    // "S" and "H" are the wings BAM's own source directories use (she-did-the-work, he-did-the-work).
+    {
+      slug: "she-took-the-seat",
+      course: SHE_TOOK_THE_SEAT_COURSE,
+      category: "Culture & History",
+      seriesSlug: "did-the-work",
+      seriesTitle: "Did the Work",
+      seriesOrder: 1,
+      seriesCode: "DIDWORK",
+      seriesPosition: "S1",
+      seriesTrack: "She Did the Work",
+    },
     // How the NAACP Learned to Win — He Did the Work, wave 1 (plans/65 Phase 4.4, "pair launches
     // with She Did the Work waves"). The deliberate PAIR to she-took-the-seat: that course is how
     // INDIVIDUALS enter a closed profession one seat at a time, this one is how an ORGANIZATION
@@ -1373,7 +1387,17 @@ async function main() {
     // the litigation section is not true without him. Two numbers are deliberately NOT printed (the
     // 1919 lynching report's total, and the Dyer bill's exact House tally) and a research check is
     // filed for the first. NO migration — pnpm seed:courses.
-    { slug: "naacp-learned-to-win", course: NAACP_LEARNED_TO_WIN_COURSE, category: "Culture & History" },
+    {
+      slug: "naacp-learned-to-win",
+      course: NAACP_LEARNED_TO_WIN_COURSE,
+      category: "Culture & History",
+      seriesSlug: "did-the-work",
+      seriesTitle: "Did the Work",
+      seriesOrder: 2,
+      seriesCode: "DIDWORK",
+      seriesPosition: "H1",
+      seriesTrack: "He Did the Work",
+    },
     // Acting: The Frame, the Stage, and the Read (source note: plans/future-courses/acting/acting.md,
     // which asked for research FIRST, so this shipped Tier 1 with a dossier beside that note). The
     // on-camera-and-stage companion to voice-acting: script analysis, the shot-size vocabulary and
@@ -1898,6 +1922,7 @@ async function main() {
       seriesOrder,
       seriesCode,
       seriesPosition,
+      seriesTrack,
     });
   }
   // Hold BOTH Hoodoo courses from publishing, and make the comprehensive one PRIVATE

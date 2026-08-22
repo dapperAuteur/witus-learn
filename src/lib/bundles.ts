@@ -93,6 +93,17 @@ export const BUNDLE_PROPOSALS: BundleProposal[] = [
       "Bundles the Green Book and Great Migration packets (built) with What They Built (queued). $22 fits the TpT theme-bundle band and beats the sum of the $9 units; the theme is heavily searched in February and year-round.",
   },
   {
+    slug: "did-the-work",
+    title: "Did the Work",
+    appMembers: ["she-took-the-seat", "naacp-learned-to-win"],
+    appPrice: 29,
+    appJustification:
+      "The two wings of the DIDWORK series sold as the pair they were written as. Both are cohort courses rather than biographies: She Took the Seat reads twelve living sports-media figures as one argument about how a closed profession opens, and How the NAACP Learned to Win reads one institution as four instruments (research, litigation, legislation, mobilization) and asks what each could not do. Bought separately at the Culture & History price they sum to about $50, so $29 is a real discount and still a strong standalone unit for a US-history or media-literacy classroom. Deliberately only two members: a bundle that pads itself with loosely related courses teaches a buyer that the theme is thin.",
+    tptPrice: 14,
+    tptJustification:
+      "Fits the TpT theme-bundle band and beats the sum of the units. The verification lesson in She Took the Seat, which teaches the method on the course's own subjects after fourteen errors were found in the source calendar, is the part a teacher can use directly as a media-literacy exercise.",
+  },
+  {
     slug: "civics-essentials",
     title: "Civics Essentials",
     appMembers: ["us-civics-101", "us-constitution-101", "voting-elections-101", "how-a-bill-becomes-law", "who-has-the-power"],
