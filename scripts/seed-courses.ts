@@ -25,6 +25,7 @@ import { SURVIVAL_COURSE } from "./data/survival-course";
 import { FOOTBALL_COURSE } from "./data/football-course";
 import { BROADCASTING_COURSE } from "./data/broadcasting-course";
 import { VOICE_ACTING_COURSE } from "./data/voice-acting-course";
+import { SHE_TOOK_THE_SEAT_COURSE } from "./data/she-took-the-seat-course";
 import { GOLF_COURSE } from "./data/golf-course";
 import { HOODOO_COURSE } from "./data/hoodoo-course";
 import { HOODOO_COMPLETE_COURSE } from "./data/hoodoo-complete-course";
@@ -1069,6 +1070,18 @@ async function main() {
     // (points at the community rate guides instead). Becomes VOICE-01 when a second VOICE course
     // ships; a one-course series badge would promise a track that does not exist yet.
     { slug: "voice-acting", course: VOICE_ACTING_COURSE, category: "Careers & Media" },
+    // She Took the Seat and Held the Door — She Did the Work, wave 1 (plans/65 Phase 4.1; Course E
+    // in plans/future-courses/she-did-the-work/00-course-proposals.md). A COHORT course: twelve
+    // living sports-media figures taught as one argument about how a closed profession opens, not as
+    // twelve biographies. Culture & History rather than Careers & Media on purpose: it is the
+    // history/how-it-opened companion to `broadcasting-break-in`, which is the career how-to, and
+    // the two cross-link without duplicating. Lesson 3 teaches the verification method the course
+    // was built with, because the source calendar carried fourteen errors about these women and the
+    // corrections (Mowins's two ordinals, Burke's radio-vs-television firsts, Chaka as line judge
+    // not referee, Smith at Case Western not Cincinnati, King at NCCU, the spelling Chowdhury) are
+    // the load-bearing content. No quotation appears anywhere in the course that the research pass
+    // could not tie to a primary source. NO migration — pnpm seed:courses.
+    { slug: "she-took-the-seat", course: SHE_TOOK_THE_SEAT_COURSE, category: "Culture & History" },
     { slug: "hoodoo-tradition-of-resistance", course: HOODOO_COURSE, category: "Culture & History" },
     { slug: "hoodoo-complete", course: HOODOO_COMPLETE_COURSE, category: "Culture & History" },
     // The Great Migration — homeschool-friendly cultural history, companion to Hoodoo (how
