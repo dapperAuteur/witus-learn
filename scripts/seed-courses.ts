@@ -162,6 +162,7 @@ import { JIM_CROW_EXPORT_COURSE } from "./data/jim-crow-export-course";
 import { SCHOOLHOUSE_NETWORK_COURSE } from "./data/schoolhouse-network-course";
 import { WHERE_WE_RESTED_COURSE } from "./data/where-we-rested-course";
 import { WHAT_THEY_BUILT_COURSE } from "./data/what-they-built-course";
+import { NEGRO_LEAGUES_COURSE } from "./data/negro-leagues-course";
 import { WHAT_A_BUSINESS_ENTITY_IS_COURSE } from "./data/what-a-business-entity-is-course";
 import { WHO_HAS_THE_POWER_COURSE } from "./data/who-has-the-power-course";
 import { THE_LOCAL_LAYER_COURSE } from "./data/the-local-layer-course";
@@ -1194,6 +1195,19 @@ async function main() {
     // (the True Reformers embezzlement, Binga's charge) sit in the achievement column where they
     // belong. It deliberately teaches NO instruments of clearance; the route series owns those.
     { slug: "what-they-built", course: WHAT_THEY_BUILT_COURSE, category: "Culture & History" },
+    // "The Negro Leagues: Who Owned the Game" (plans/future-courses/sports-courses/negro-leagues.md).
+    // CATEGORY DECISION, and it is deliberate: this is **Culture & History**, not Sports. The Sports
+    // category holds the play-it / know-it / work-in-it courses (golf, football, croquet,
+    // pickleball), which teach a learner to play a game and work in its industry. This course
+    // teaches nobody to play baseball. It is a cited business-and-institutions history whose direct
+    // siblings are all in Culture & History: `what-they-built` (its method), `two-racetracks` (its
+    // civic question about admission to a sport), `the-gym-and-the-color-line` and
+    // `indiana-avenue-a-district-and-what-replaced-it` (its Indianapolis section), and
+    // `pittsburgh-where-the-playbook-was-written` (Greenlee's Hill District). Filing it under Sports
+    // would put it next to rules-of-the-game courses and hide it from the learners it is written
+    // for. 6 sections, 18 teaching lessons, 6 quizzes on the Tier-0 spec. NO migration, and the
+    // slug is deliberately NOT in STAGED_COURSES yet, so `pnpm gen:citations` is a later step.
+    { slug: "negro-leagues", course: NEGRO_LEAGUES_COURSE, category: "Culture & History" },
     // "Here Be Dragons" (plans/58), course 1 of 5: how people described a world they had not seen,
     // and what those descriptions were later used for. Grades 9-12, aimed at the homeschool/teacher
     // market. THE RULE THIS SERIES IS BUILT ON: the naive framing ("they thought it was flat, then we

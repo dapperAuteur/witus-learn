@@ -190,6 +190,9 @@ const CATALOG = [
   "the-schoolhouse-network",
   "where-we-rested",
   "what-they-built",
+  // The Negro Leagues read as firms: the positive track's method applied to a different class of
+  // business, and the Indianapolis cluster's civic question asked of an industry.
+  "negro-leagues",
   // Labor series
   "labor-brazil",
   "labor-chile",
