@@ -4572,6 +4572,746 @@ Building a neutral baseline means learning to stand and move without your defaul
 - **Available weight**: the quality of a trained stillness, holding without frozen tension.`,
     },
 
+    {
+      slug: "quiz-genre-and-body",
+      title: "22 · Quiz: drama, comedy, and the body",
+      section: "Section 4 · Drama, comedy, and the body",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What is the temptation that makes dramatic work difficult?",
+            options: [
+              "Performing the size of the feeling",
+              "Underplaying, because restraint has become fashionable in contemporary screen work",
+              "Rushing the pauses, because silence feels longer to the performer than to the audience",
+              "Playing the obstacle instead of the want, which reverses the logic of the scene",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson names it precisely: performing the size of the feeling instead of the size of the effort to contain it.",
+            sourceLessonSlug: "playing-drama",
+          },
+          {
+            prompt: "How do people actually behave in a genuine crisis, according to the lesson?",
+            options: [
+              "They do practical things",
+              "They become still and silent, which is why stillness reads as grief on camera",
+              "They express the feeling openly, which is why restrained playing looks false",
+              "They speak more quickly, because urgency compresses the rhythm of speech",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They handle logistics, apologize for crying, and keep talking about paperwork. The visible effort of holding together is what an audience reads as grief.",
+            sourceLessonSlug: "playing-drama",
+          },
+          {
+            prompt: "What is the operative question in a heavy scene?",
+            options: [
+              "What is this person doing to stay functional?",
+              "How much does this hurt, measured against the worst moment in the character's life?",
+              "Which of the character's earlier scenes does this one pay off?",
+              "How long can the silence be held before the audience stops watching?",
+            ],
+            correctIndex: 0,
+            explanation:
+              "And where does that fail. The failure point is the moment, and it lands because everything before it was holding.",
+            sourceLessonSlug: "playing-drama",
+          },
+          {
+            prompt: "What does a performer who leads with collapse skip?",
+            options: [
+              "The part the audience needs",
+              "The rehearsal process, which is where the emotional level should be set",
+              "The technical requirements of matching, which collapse makes impossible",
+              "The other performer's contribution, since collapse ends the exchange",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The effort of holding together is what reads as grief. Without it there is nothing for the collapse to be a failure of.",
+            sourceLessonSlug: "playing-drama",
+          },
+          {
+            prompt: "What is usually missing from under-powered dramatic work?",
+            options: [
+              "Examined stakes",
+              "A clearly identified want, which most performers never establish at all",
+              "Physical commitment, because dramatic scenes are usually played seated",
+              "Vocal variety, which is what keeps a long scene from becoming monotonous",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Most under-powered work has correctly identified the want and left the cost of failure unexamined, which leaves the temperature flat.",
+            sourceLessonSlug: "playing-drama",
+          },
+          {
+            prompt: "What kind of cost produces urgency without anyone manufacturing it?",
+            options: [
+              "Specific and soon",
+              "Large and abstract, since the biggest possible loss produces the strongest playing",
+              "Uncertain, because not knowing the outcome is what creates dramatic tension",
+              "Shared with the other character, so both performers are pursuing the same thing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A vague and distant cost produces a vague performance. The question to ask directly is what is lost and when.",
+            sourceLessonSlug: "playing-drama",
+          },
+          {
+            prompt: "Where is the performable material often located in dramatic writing?",
+            options: [
+              "In the pauses and the changed subject",
+              "In the longest speeches, which is where a writer states the theme",
+              "In the stage directions, which describe what the character is feeling",
+              "In the final exchange of the scene, which resolves everything before it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Dramatic writing runs on what characters cannot bring themselves to say, so deflections and answers to a different question are where the work is.",
+            sourceLessonSlug: "playing-drama",
+          },
+          {
+            prompt: "What is a deflection, and what does it tell you?",
+            options: [
+              "Avoiding the question, which marks something being protected",
+              "A physical turn away from the other performer, which signals a change of tactic",
+              "A line delivered to the camera instead of to the scene partner",
+              "A pause held long enough for the audience to anticipate the answer",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Changing the subject, answering something else, or falling silent all mark a point where something is being protected, and identifying what is the whole job of that beat.",
+            sourceLessonSlug: "playing-drama",
+          },
+          {
+            prompt: "What does it mean to play the ending?",
+            options: [
+              "Performing knowledge the character does not have",
+              "Rushing toward the last beat of a scene before the earlier ones have landed",
+              "Deciding how a scene concludes before rehearsing the middle of it",
+              "Giving the final line more weight than the writer's structure supports",
+            ],
+            correctIndex: 0,
+            explanation:
+              "If a character does not yet know the marriage is over, they cannot be mourning it. It is a direct side effect of having read the whole script.",
+            sourceLessonSlug: "playing-drama",
+          },
+          {
+            prompt: "Why is playing the ending called a structural error rather than a taste problem?",
+            options: [
+              "It comes from information the character does not have",
+              "It always makes the performance larger than the frame can hold",
+              "It causes continuity mismatches, because the level cannot be repeated",
+              "It contradicts the director's plan for how the scene will be covered",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The performer is working from the script's future rather than the character's present, which is a fault in the reading rather than in the taste.",
+            sourceLessonSlug: "playing-drama",
+          },
+          {
+            prompt: "How are scenes involving violence, intimacy, or serious distress handled professionally?",
+            options: [
+              "Staged and choreographed, not improvised",
+              "Recorded in a single take, so nobody has to repeat a difficult moment",
+              "Left to the performers, who know their own limits better than anyone",
+              "Shot last, once the cast have built enough trust to work without preparation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Productions increasingly use specialist coordinators, and consent, choreography, and a clear stopping mechanism are professional standards rather than sensitivities.",
+            sourceLessonSlug: "playing-drama",
+          },
+          {
+            prompt: "What does a production that treats safety choreography as optional tell you?",
+            options: [
+              "Something about itself",
+              "That the budget is limited, which is common and not a cause for concern",
+              "That the director trusts the cast's judgment more than a coordinator's",
+              "That the scene is less demanding than it appeared in the script",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson states it flatly. Consent, choreography, and a stopping mechanism are standards, so their absence is information.",
+            sourceLessonSlug: "playing-drama",
+          },
+          {
+            prompt: "What is restraint, in this lesson's vocabulary?",
+            options: [
+              "The visible effort of holding together",
+              "A reduction in physical scale appropriate to a tighter camera frame",
+              "The decision to underplay a moment so the audience leans in toward it",
+              "The suppression of any visible emotion until the end of the scene",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is not smallness. It is effortful, and that effort is what reads to an audience as the size of the feeling.",
+            sourceLessonSlug: "playing-drama",
+          },
+          {
+            prompt: "What sets a scene's temperature?",
+            options: [
+              "The stakes",
+              "The want, since a stronger desire produces a more intense performance",
+              "The genre, which fixes the register before the scene is analyzed",
+              "The shot size, because tighter frames call for higher intensity",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two performers can play the same want at completely different temperatures depending on what failure actually costs.",
+            sourceLessonSlug: "playing-drama",
+          },
+          {
+            prompt: "Which of these behaviors does the lesson use as an example of real crisis behavior?",
+            options: [
+              "Apologizing for crying and then talking about paperwork",
+              "Sitting in silence until someone else breaks it, which is the most common response",
+              "Repeating the last thing that was said, which is how shock presents itself",
+              "Leaving the room immediately, since people avoid the source of distress",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the lesson's illustration of doing practical things under pressure, which is the pattern a performer is trying to reproduce.",
+            sourceLessonSlug: "playing-drama",
+          },
+          {
+            prompt: "What makes the failure point of a scene land?",
+            options: [
+              "Everything before it was holding",
+              "The intensity of the collapse, which has to exceed everything earlier in the scene",
+              "Its position at the end, where the audience is most attentive",
+              "The other performer's reaction, which tells the audience how to read it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Restraint is what gives a break something to break from, which is why the operative question is about staying functional rather than about how much it hurts.",
+            sourceLessonSlug: "playing-drama",
+          },
+          {
+            prompt: "What is drama, as this lesson defines it?",
+            options: [
+              "Something matters and a person cannot simply have it",
+              "A genre in which the outcome is unhappy and the stakes are life and death",
+              "Any scene played without comic intent, whatever its subject matter",
+              "A form in which characters state their feelings directly to one another",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The definition is deliberately structural, which is why everything difficult about playing it follows from the single temptation to perform the feeling.",
+            sourceLessonSlug: "playing-drama",
+          },
+          {
+            prompt: "Why does having read the whole script create a specific hazard?",
+            options: [
+              "It tempts you to play what you know",
+              "It fixes the interpretation before rehearsal, which makes adjustment harder",
+              "It reveals the director's intentions, which should remain private",
+              "It makes the earlier scenes feel less interesting to perform",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The character only knows what has happened to them so far, so working from the script's future is the most common structural error in dramatic work.",
+            sourceLessonSlug: "playing-drama",
+          },
+          {
+            prompt: "What is the fastest way to kill comedy?",
+            options: [
+              "For the performer to find it funny first",
+              "To play the scene too quickly, which leaves no room for the audience to react",
+              "To underplay it, because comic writing needs a larger scale than drama",
+              "To change the wording, since audiences recognize familiar comic phrasing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The audience laughs at the gap between how seriously the character takes the situation and how absurd it is, and signaling amusement closes that gap.",
+            sourceLessonSlug: "playing-comedy",
+          },
+          {
+            prompt: "Where does a character in a comedy think they are?",
+            options: [
+              "In the worst afternoon of their life",
+              "In a comedy, which is why comic characters address the audience so often",
+              "In a scene whose outcome they already know, which is what makes them relaxed",
+              "In a heightened world where ordinary consequences do not apply",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They are trying extremely hard to solve it. Playing it straight is what preserves the gap the laugh depends on.",
+            sourceLessonSlug: "playing-comedy",
+          },
+          {
+            prompt: "What is the usable test for any comic beat?",
+            options: [
+              "Does my character want this as badly as a dramatic character would?",
+              "Is the line funny when read aloud without the surrounding scene?",
+              "Would the audience laugh if the same words were spoken by someone else?",
+              "Does the beat resolve before the next line begins?",
+            ],
+            correctIndex: 0,
+            explanation:
+              "If the pursuit softened, the comedy softened with it, which is why the test is about the strength of the want rather than about the joke.",
+            sourceLessonSlug: "playing-comedy",
+          },
+          {
+            prompt: "What is status, as this lesson uses it?",
+            options: [
+              "The relative standing two people are playing at a given moment",
+              "The character's actual rank within the world of the story, such as their job",
+              "The performer's billing on a production, which affects how scenes are staged",
+              "The amount of screen time a character receives relative to the others",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is played rather than possessed, which is why it can shift inside a scene and why a mismatch between played status and reality is funny.",
+            sourceLessonSlug: "playing-comedy",
+          },
+          {
+            prompt: "How does high status behavior present?",
+            options: [
+              "Taking up space, holding eye contact, moving slowly",
+              "Speaking loudly and quickly, which signals confidence to an audience",
+              "Standing above the other performer, which is why blocking decides status",
+              "Refusing to answer questions, which is the clearest marker of authority",
+            ],
+            correctIndex: 0,
+            explanation:
+              "And speaking with an unbroken flow. Low status behavior makes itself small, checks for reactions, and stumbles.",
+            sourceLessonSlug: "playing-comedy",
+          },
+          {
+            prompt: "Which situation does the lesson describe as funny?",
+            options: [
+              "Playing high status while visibly failing",
+              "Playing high status successfully, since competence is inherently satisfying",
+              "Playing low status while genuinely powerless, which the audience recognizes",
+              "Playing no status at all, which creates the neutrality comedy requires",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The comedy lives in the mismatch and the reversal. Someone playing low status while completely in control is the other half of the same idea.",
+            sourceLessonSlug: "playing-comedy",
+          },
+          {
+            prompt: "What is a status flip?",
+            options: [
+              "A mid-scene reversal of relative standing",
+              "A moment when a character deliberately lowers their status to gain sympathy",
+              "The point at which the audience's sympathy transfers to the other character",
+              "A staging change in which two performers exchange positions on the set",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The person in charge suddenly is not, and the lesson calls it the engine of an enormous amount of written comedy.",
+            sourceLessonSlug: "playing-comedy",
+          },
+          {
+            prompt: "What usually tells you more about how to play a comic scene?",
+            options: [
+              "Reading it for its status moves",
+              "Reading it for its jokes, since the jokes are where the laughs are located",
+              "Reading it aloud at speed to find the natural rhythm of the exchange",
+              "Reading the scenes on either side of it to establish the character's arc",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson says so directly: status moves explain how to play the scene better than hunting for the jokes does.",
+            sourceLessonSlug: "playing-comedy",
+          },
+          {
+            prompt: "Which part of comic timing does the lesson say text cannot teach?",
+            options: [
+              "The felt relationship with an audience",
+              "The placement of the turn within a sentence, which depends on the delivery",
+              "The clarity of a setup, which can only be judged in performance",
+              "The length of a pause, which is decided by the editor rather than the performer",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Timing is real and it is the part least teachable in prose. What can be said in words is structural, which is what the lesson then gives.",
+            sourceLessonSlug: "playing-comedy",
+          },
+          {
+            prompt: "What does a setup need, and what must it avoid?",
+            options: [
+              "The needed information, delivered without emphasis",
+              "Maximum clarity, achieved by stressing the words the joke will depend on",
+              "Brevity, so the audience reaches the punchline as quickly as possible",
+              "A pause afterward, so the audience has time to prepare for the turn",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The audience needs the information the joke depends on, and a signposted setup announces its own punchline.",
+            sourceLessonSlug: "playing-comedy",
+          },
+          {
+            prompt: "Where should the turn in a comic line land?",
+            options: [
+              "On the last possible word",
+              "In the middle, so the audience has time to register it before the line ends",
+              "At the start, so the surprise arrives before the audience can anticipate it",
+              "Wherever the performer's breath naturally falls in the sentence",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A sentence whose surprise sits in the middle spends its remaining words dissipating.",
+            sourceLessonSlug: "playing-comedy",
+          },
+          {
+            prompt: "What does a live audience require of comic timing that a recorded medium does not?",
+            options: [
+              "Letting the laugh happen and returning as it falls",
+              "Repeating the joke if the first delivery is missed by part of the room",
+              "Slowing the whole scene, since a live audience processes more slowly",
+              "Pausing between every line, so nothing is lost under the reaction",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson names it as a live skill you cannot practice alone, which is one of the honest limits of a solo course.",
+            sourceLessonSlug: "playing-comedy",
+          },
+          {
+            prompt: "Where does breaking a pattern pay, in comic structure?",
+            options: [
+              "At the third repetition",
+              "At the second, because audiences recognize a pattern as soon as it repeats once",
+              "At the fourth, since three establishes the pattern and the fourth breaks it",
+              "At the point where the audience laughs, whenever that happens to be",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is why comic writing so often builds in threes, and it is a structural fact rather than a matter of taste.",
+            sourceLessonSlug: "playing-comedy",
+          },
+          {
+            prompt: "Why should comic lines be learned exactly rather than paraphrased?",
+            options: [
+              "Comic writing is rhythmically engineered",
+              "Comic writers object more strongly to changes than dramatic writers do",
+              "Comic scripts are legally reviewed in the same way commercial copy is",
+              "Comic lines are shorter, so an added word takes proportionally more time",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Adding a word, changing an emphasis, or taking an extra half second can flatten a line that works exactly as written, and dramatic writing usually survives what comedy does not.",
+            sourceLessonSlug: "playing-comedy",
+          },
+          {
+            prompt: "What should a performer treat as part of the text in comic writing?",
+            options: [
+              "The rhythm",
+              "The stage directions, which usually specify how the joke is meant to land",
+              "The other character's reaction, which the writer has timed precisely",
+              "The pauses marked in the script, which are fixed by the writer",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Comic writing is engineered rhythmically, so the rhythm is not an interpretive layer sitting on top of the words.",
+            sourceLessonSlug: "playing-comedy",
+          },
+          {
+            prompt: "Is comedy a different kind of acting?",
+            options: [
+              "No, it is the same acting inside a different structure",
+              "Yes, because comic performance requires a larger scale than dramatic work",
+              "Yes, because comic characters are aware of the audience in a way dramatic ones are not",
+              "Only on stage, where the live reaction changes what the performer is doing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson opens by saying so. It is the same acting inside a structure that makes the outcome funny.",
+            sourceLessonSlug: "playing-comedy",
+          },
+          {
+            prompt: "What happens to the comedy when the pursuit softens?",
+            options: [
+              "The comedy softens with it",
+              "The comedy becomes broader, which some material requires",
+              "Nothing, because the joke is in the writing rather than the playing",
+              "The scene becomes dramatic, which is a legitimate alternative reading",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That relationship is the whole reason the test asks whether the character wants it as badly as a dramatic character would want theirs.",
+            sourceLessonSlug: "playing-comedy",
+          },
+          {
+            prompt: "How does low status behavior present?",
+            options: [
+              "Making itself small, checking for reactions, stumbling",
+              "Speaking quietly and slowly, which signals deference to an audience",
+              "Agreeing with everything the other character says without hesitation",
+              "Standing further from the camera, which reduces the character's presence",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the mirror of high status behavior, which takes up space, holds eye contact, moves slowly, and speaks with an unbroken flow.",
+            sourceLessonSlug: "playing-comedy",
+          },
+          {
+            prompt: "What is physical work, according to this lesson?",
+            options: [
+              "The layer under every other lesson in the course",
+              "A genre practiced by performers who specialize in movement-based theater",
+              "The set of techniques used when a scene contains no dialogue",
+              "A rehearsal method used to explore a character before the text is added",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is not a genre, and it is the layer most likely to be neglected by someone learning from text, because text is where the words live.",
+            sourceLessonSlug: "physical-acting",
+          },
+          {
+            prompt: "What does an audience read from movement, and when?",
+            options: [
+              "Intention, before it processes the line",
+              "Character history, which is why physical choices should reflect a backstory",
+              "The genre, since comic and dramatic movement follow different conventions",
+              "Nothing reliable, which is why movement is subordinate to speech",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Weight, tempo, and where a movement starts in the body are legible at any distance, which is why physical choices carry a wide shot and a stage.",
+            sourceLessonSlug: "physical-acting",
+          },
+          {
+            prompt: "What is the difference between the what and the how of a movement?",
+            options: [
+              "The what is the action; the how is speed, weight, directness, continuity",
+              "The what is the intention; the how is the physical technique used to achieve it",
+              "The what is visible to the audience; the how is felt only by the performer",
+              "The what is scripted; the how is decided by the director during blocking",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Reaching for a glass is the what. Whether you reach quickly or slowly, directly or in a curve, with force or lightness, is the how, and character lives there.",
+            sourceLessonSlug: "physical-acting",
+          },
+          {
+            prompt: "What do movement traditions agree on, despite differing terminology?",
+            options: [
+              "The axes: speed, weight, directness, and continuity",
+              "The sequence in which physical training should be undertaken",
+              "That physical work must precede any analysis of the text",
+              "That the body should be trained to a neutral state and left there",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson is explicit that the vocabularies differ and the axes do not, which is why it teaches the axes rather than one tradition's names for them.",
+            sourceLessonSlug: "physical-acting",
+          },
+          {
+            prompt: "What does the door-opening exercise demonstrate?",
+            options: [
+              "Each combination produces a recognizably different person",
+              "That physical choices must be consistent with a character's biography",
+              "That certain combinations are unusable and should be avoided in performance",
+              "That physical training requires equipment and cannot be done at home",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Running one simple action through combinations of slow and heavy and direct, fast and light and indirect, sustained, and abruptly stopped, with no decision about biography required.",
+            sourceLessonSlug: "physical-acting",
+          },
+          {
+            prompt: "Why must a performer be able to notice their own physical life?",
+            options: [
+              "Habits are visible on camera and may not belong to the character",
+              "Habits interfere with matching, because they vary between takes",
+              "Habits reveal a performer's training, which directors prefer not to see",
+              "Habits change under stress, which makes a performance unpredictable",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A favored hip, a jaw that sets, hands that find each other, a head that leads. On camera these are yours and they are visible.",
+            sourceLessonSlug: "physical-acting",
+          },
+          {
+            prompt: "What is neutral, in this lesson's vocabulary?",
+            options: [
+              "A baseline of moving without personal habit",
+              "An expressionless face used as a starting point for close-up work",
+              "A standing position agreed with the director before blocking begins",
+              "The absence of any physical choice, which lets the text speak for itself",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Building it means a physical choice becomes a decision rather than a leftover, which is why the lesson calls it the hard part.",
+            sourceLessonSlug: "physical-acting",
+          },
+          {
+            prompt: "Which physical practice is genuinely available to someone working alone?",
+            options: [
+              "Building a neutral baseline with a mirror and a camera",
+              "Timing a physical response to another performer's unpredictable choices",
+              "Learning to adjust scale in response to a live audience's reaction",
+              "Rehearsing choreographed contact, which requires a trained partner",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson notes that this is one of the few things in the course that genuinely is available alone, which is why it earns its place.",
+            sourceLessonSlug: "physical-acting",
+          },
+          {
+            prompt: "What is character from the outside in?",
+            options: [
+              "Choosing a physical life and letting the internal life follow",
+              "Building a costume and makeup design before deciding on any behavior",
+              "Copying the physical mannerisms of a real person the character resembles",
+              "Working from the director's staging rather than from your own analysis",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson calls it a legitimate method rather than a shortcut, because it produces behavior a purely psychological approach often does not reach.",
+            sourceLessonSlug: "physical-acting",
+          },
+          {
+            prompt: "What does deciding where a person leads from produce?",
+            options: [
+              "Behavior a psychological approach often misses",
+              "A consistent silhouette, which is what the audience recognizes at a distance",
+              "A reliable starting position for each take, which helps with matching",
+              "A physical vocabulary that transfers unchanged between different roles",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Along with how much space they take and at what tempo they move, it is the outside-in route to a physically distinct character.",
+            sourceLessonSlug: "physical-acting",
+          },
+          {
+            prompt: "What separates trained stillness from untrained stillness?",
+            options: [
+              "Trained stillness is available weight not being spent",
+              "Trained stillness lasts longer, because the performer has built the stamina for it",
+              "Trained stillness involves no movement at all, while untrained stillness drifts",
+              "Trained stillness is planned in rehearsal, while untrained stillness is spontaneous",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Untrained stillness is frozen tension and reads as anxiety no matter what the scene is, and the difference is visible on camera.",
+            sourceLessonSlug: "physical-acting",
+          },
+          {
+            prompt: "What does untrained stillness read as, regardless of the scene?",
+            options: [
+              "Anxiety",
+              "Authority, which is why beginners are often told to stand still",
+              "Concentration, which an audience interprets as intelligence",
+              "Nothing at all, which is why stillness is a neutral choice",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is frozen tension, and tension has a fixed reading. Trained stillness is weight that is simply not being spent.",
+            sourceLessonSlug: "physical-acting",
+          },
+          {
+            prompt: "What is leading, in this lesson's vocabulary?",
+            options: [
+              "Which part of the body initiates a movement",
+              "Taking the first line in a scene so the other performer can respond",
+              "Guiding another performer physically during a choreographed sequence",
+              "Setting the pace of a scene so the rest of the cast can match it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is named as one of the fastest ways to build a physically distinct character, alongside how much space someone takes and at what tempo they move.",
+            sourceLessonSlug: "physical-acting",
+          },
+          {
+            prompt: "Why is physical work the layer most likely to be neglected in a text course?",
+            options: [
+              "Text is where the words live",
+              "Physical technique cannot be described accurately in prose",
+              "Learners assume that physical work belongs to stage rather than screen",
+              "The exercises require equipment that most learners do not have",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson names the risk explicitly, which is why it gives exercises requiring nothing but a room, a mirror, and a camera.",
+            sourceLessonSlug: "physical-acting",
+          },
+          {
+            prompt: "At close sizes, what is the most powerful physical option?",
+            options: [
+              "Doing nothing on purpose",
+              "A small gesture near the face, since that is the only movement in frame",
+              "A change of head angle, which the frame magnifies more than any other move",
+              "Holding the breath, which reads as concentration at close range",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Stillness, when it is trained rather than frozen. The lesson pairs it directly with the reading that untrained stillness always gives.",
+            sourceLessonSlug: "physical-acting",
+          },
+          {
+            prompt: "What is available weight?",
+            options: [
+              "The quality of a trained stillness, holding without frozen tension",
+              "The amount of physical force a performer can safely apply in a staged fight",
+              "The distribution of a performer's mass across both feet when standing",
+              "The physical energy a performer has left at the end of a long shooting day",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the vocabulary term for what makes trained stillness read differently from anxiety on camera.",
+            sourceLessonSlug: "physical-acting",
+          },
+          {
+            prompt: "What are effort qualities?",
+            options: [
+              "The axes describing how a movement is performed",
+              "The physical demands a role places on a performer over a long run",
+              "The degrees of exertion a director can request from a performer on a scale",
+              "The muscle groups a movement training program is designed to develop",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Speed, weight, directness, and continuity. They describe the how of a movement, which is where the lesson locates character.",
+            sourceLessonSlug: "physical-acting",
+          },
+          {
+            prompt: "Which reading of physical choices does the lesson reject?",
+            options: [
+              "That they are decoration",
+              "That they can be practiced without another person present in the room",
+              "That they carry a wide shot better than a close-up",
+              "That they can be chosen before any decision about the character's history",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The section is titled around the point that the body is not decoration, because an audience reads intention from movement before it processes the line.",
+            sourceLessonSlug: "physical-acting",
+          },
+          {
+            prompt: "What do weight, tempo, and the origin of a movement have in common?",
+            options: [
+              "They are legible at any distance",
+              "They can only be judged by a trained movement teacher observing in person",
+              "They are fixed by a performer's build and cannot be changed by training",
+              "They matter on stage and become invisible once a frame is introduced",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That is why physical choices carry a wide shot and a stage, and still register in a close-up as the difference between a still person and a tense one.",
+            sourceLessonSlug: "physical-acting",
+          },
+          {
+            prompt: "What is the exercise's point about choosing a physical life before deciding on biography?",
+            options: [
+              "No biographical decision is needed for the choice to work",
+              "Biography should always be decided first, since physical choices must express it",
+              "Biography is the writer's job, so a performer should never invent any",
+              "Biography and physical life are the same thing described from different angles",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Running one action through combinations of speed, weight, directness, and continuity produces recognizably different people without any decision about the character's past.",
+            sourceLessonSlug: "physical-acting",
+          },
+        ],
+      },
+    },
     // ── Section 5 ────────────────────────────────────────────────────────────────────────────────
     {
       slug: "the-self-tape",
