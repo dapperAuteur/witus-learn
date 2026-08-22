@@ -1388,7 +1388,7 @@ A few more terms you will hear in the same sentence. A **single** holds one pers
 
 ## The edges really are fuzzy, and pretending otherwise is a trap
 
-Where a close-up stops and a medium close-up starts is not standardized. Reference texts define the sizes and their boundaries differ; so do crews, so do countries, and so do departments on the same production (Bowen, 2018). Somebody will say "tight two" and mean something you would have called a medium.
+Where a close-up stops and a medium close-up starts is not standardized. Reference texts define the sizes and their boundaries differ; so do crews, so do countries, and so do departments on the same production (Bowen, 2017). Somebody will say "tight two" and mean something you would have called a medium.
 
 This is not a flaw in your knowledge. The professional habit is to treat the taxonomy as a shared approximation and to confirm the specific frame rather than infer it: ask what the frame is, or watch where the operator is standing and how much lens is on the camera. The question "how wide are we?" is a normal question and asking it marks you as someone who has worked, not someone who has not.
 
@@ -1410,7 +1410,7 @@ Because the size decides what the audience can see, and what the audience cannot
 - **Establishing shot**: the wide frame that tells the audience where everyone is.
 
 ## Sources
-Bowen, C. J. (2018). *Grammar of the shot* (4th ed.). Routledge.`,
+Bowen, C. J. (2017). *Grammar of the shot* (4th ed.). Routledge.`,
     },
     {
       slug: "scale-and-the-shot",
@@ -1710,7 +1710,7 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             ],
             correctIndex: 0,
             explanation:
-              "Reference texts define the sizes and their definitions differ, and so do crews, countries, and departments on the same production (Bowen, 2018).",
+              "Reference texts define the sizes and their definitions differ, and so do crews, countries, and departments on the same production (Bowen, 2017).",
             sourceLessonSlug: "shot-size-vocabulary",
           },
           {
@@ -6760,7 +6760,7 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             ],
             correctIndex: 0,
             explanation:
-              "Reference texts define them differently, and so do crews, countries, and departments on the same production, which is why confirming beats inferring (Bowen, 2018).",
+              "Reference texts define them differently, and so do crews, countries, and departments on the same production, which is why confirming beats inferring (Bowen, 2017).",
             sourceLessonSlug: "shot-size-vocabulary",
           },
           {
