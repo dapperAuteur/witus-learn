@@ -90,6 +90,51 @@ export const NEGRO_LEAGUES_COURSE: AuthoredCourse = {
 - **Barnstorming**: playing games outside any league schedule, for a negotiated share of the crowd, which is where much of the actual money was.`,
     },
     {
+      slug: "nl-what-a-league-is",
+      title: "2 · What Rube Foster actually built in a Kansas City YMCA",
+      section: "Section 1 · The firm",
+      body: `Most tellings of February 1920 are a scene: eight men in a room, a great idea, a league is born. Read the paperwork instead.
+
+**The meeting, with both venues.** The organizational meeting ran **13 and 14 February 1920**, at the **Paseo YMCA and Street's Hotel** in Kansas City, Missouri (Bauer, 2022). The YMCA-only version you will usually see is a simplification.
+
+**Who was in the room, and this is the first surprise.** Andrew "Rube" Foster of the Chicago American Giants, Joe Green of the Chicago Giants, Tenny Blount of the Detroit Stars, C. I. Taylor of the Indianapolis ABCs, J. L. Wilkinson of the Kansas City Monarchs, Lorenzo Cobb of the St. Louis Giants, plus the Cuban Stars by proxy and the Dayton Marcos. **And four Black sportswriters and a Black attorney**: Cary B. Lewis, Elwood Knox, Charles Marshall, Dave Wyatt, and Elisha Scott of Topeka (Bauer, 2022). **The men who drafted the governing documents worked for the papers that would then cover the league.** Hold that; Section 3 comes back to it.
+
+**Foster arrived with the paperwork already filed.** Bauer records that Foster "created a mild surprise when he presented the delegates with drafts of the corporate charter and articles of incorporation for the new league," versions of which "had already been filed in several states where the league would operate **and several where it would not**" (Bauer, 2022). **Read that second clause twice.** Pre-filing in states you have no intention of entering is a defensive territorial move against a rival who might. Before a single game was played, this was a company with a legal strategy.
+
+**The legal name was not the famous name.** In the constitution the body was the **National Association of Colored Professional Base Ball Clubs**; Negro National League became the standard reference (Bauer, 2022). At least one reputable outlet reports a different name settled on that day, which is a reminder that a founding is a paper event and papers disagree.
+
+**The membership instrument was a deposit.** Clubs paid a **$500 deposit** to join, agreed to respect contracts, and agreed to play a league schedule (Bauer, 2022). The same $500 forfeit reappears in the Eastern Colored League in 1923 and in the second Negro National League in 1935 (Overmyer, 2016; Goldman, 2021). **A refundable bond against walking away is the standard tool of a league whose members might.**
+
+**Now the number this course refuses to state as a single figure.** Every account agrees Foster took **no salary as president** and took **a percentage of the gate as the league's booking agent**, and that owners resented it for a decade. What no source settles is how much. The Negro Leagues Baseball Museum says 5 percent of the gate of every league game. Michael Lomax describes a 5 percent booking fee, and notes that clubs then paid 5 percent twice, once to the white stadium owner and once to Foster. SABR's Bauer writes that the 5 percent assessment "meant Foster pocketed 10 percent of every gate," and separately that "the league treasury also received 10 percent of all receipts." Eric Enders says flatly that Foster "kept 10 percent of all gate receipts" (Negro Leagues Baseball Museum, n.d.; Bauer, 2022; Enders, n.d.). **Four credible sources, four accounts, no surviving league financial statement.** Teach the contest, not a number.
+
+**The clearest picture of a league gate we do have comes from 1933,** and it is a complaint. Cum Posey wrote in the *Pittsburgh Courier* of 8 July 1933 that Gus Greenlee had restricted league clubs to **35 percent of gross receipts, with 5 percent going to the league**, while Posey had never accepted less than 40 (Goldman, 2021).
+
+**Three hats on one head.** Foster was league president **and secretary** while owning and managing the league's best club, and he wrote the schedule. He was criticized for steering the profitable weekend dates to his own park, and the league ran an unbalanced schedule that also **expressly permitted non-league games to boost gate receipts** (Bauer, 2022). **That last clause is the root of everything in Section 3: the constitution itself said the league was not the whole business.**
+
+:::reveal What did Foster bring to Kansas City that a scene-setting account leaves out, and why does it matter? ||| Drafts of a corporate charter and articles of incorporation already filed in several states, including states the league did not intend to enter. Pre-filing against a rival is a legal territorial strategy, so the league was a company with a defensive plan before it played a game.
+
+:::reveal What do all four sources agree on about Foster's cut, and what do none of them settle? ||| They agree he drew no salary as president, took a percentage of the gate as the league's booking agent, and that owners resented it for years. None settles whether his personal cut was 5 or 10 percent, or whether the league treasury's share was the same money.
+
+:::reveal Which clause of the 1920 constitution undercuts the idea that the league was the business? ||| The clause expressly permitting games against non-league competition to boost gate receipts, alongside an unbalanced schedule. The league's own founding document treated outside dates as legitimate revenue.
+
+## Vocabulary
+- **Articles of incorporation**: the filing that creates a company in a given state, which Foster lodged in advance in states the league did not plan to enter.
+- **Forfeit deposit**: a refundable bond a club posts on joining, held against its walking away mid-season.
+- **Booking agent**: whoever arranges games and takes a percentage for doing it, a role Foster held at the same time as the league presidency.
+- **Unbalanced schedule**: a season in which clubs play unequal numbers of league games, which makes the standings a poor comparison.
+
+## Sources
+Bauer, J. (2022). We are the ship, all else the sea: The founding of the Negro National League. In *The first Negro League champion: The 1920 Chicago American Giants*. Society for American Baseball Research. https://sabr.org/research/article/we-are-the-ship-all-else-the-sea-the-founding-of-the-negro-national-league/
+
+Enders, E. (n.d.). Foster, Andrew ("Rube"). In *Scribner encyclopedia of American lives, thematic series: Sports figures*. https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/foster-andrew-rube
+
+Goldman, D. (2021). 1933-1962: The business meetings of Negro League baseball. Society for American Baseball Research. https://sabr.org/journal/article/1933-1962-the-business-meetings-of-negro-league-baseball/
+
+Negro Leagues Baseball Museum. (n.d.). *Andrew "Rube" Foster*. NLBM eMuseum. https://nlbemuseum.com/history/players/fostera.html
+
+Overmyer, J. (2016). 1923-29 winter meetings: The Negro Leagues come east. Society for American Baseball Research. https://sabr.org/journal/article/1923-1929-eastern-colored-league-winter-meetings/`,
+    },
+    {
       slug: "nl-the-league-map",
       title: "3 · Seven leagues in twenty-eight years, and what that tells you",
       section: "Section 1 · The firm",
@@ -137,11 +182,311 @@ Baseball Reference. (n.d.). *Negro Leagues data: Frequently asked questions*. ht
 Major League Baseball. (2020, December 16). *MLB officially designates the Negro Leagues as "Major League"*. https://www.mlb.com/press-release/press-release-mlb-officially-designates-the-negro-leagues-as-major-league`,
     },
     // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 2 · Capital
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "nl-the-money-question",
+      title: "5 · Where the money came from when banks would not lend",
+      section: "Section 2 · Capital",
+      body: `*What They Built* asks this question of grocery stores and insurance companies. Ask it of a ballclub and the answer is more uncomfortable and more interesting.
+
+**State the problem the way a lender would.** To field a professional club you need uniforms, equipment, a bus or rail fares, hotel and meal money on the road, a payroll that runs whether it rains or not, and a ballpark. That is working capital before a ticket is sold, in a business that is seasonal, weather-exposed and dependent on somebody else's building. **Capital comes from savings, family, retained profit from another business you own, a loan, or investors.** Take away the loan and the investors, which is what exclusion from the credit system does, and only the first three remain.
+
+**So who had the first three?** The best single answer in the literature is one sentence from Rufus Jackson's widow, interviewed in Pittsburgh in the 1960s, on why numbers bankers owned the clubs: **"Well, of course they were involved, they were the only ones with any money"** (quoted in Goldman, 2021).
+
+**The mechanism, stated plainly.** The numbers game, also called policy, was an illegal daily lottery run out of Black neighborhoods. Newman and Rosen argue that numbers and policy functioned as neighborhood savings and loans, credit unions and investment banks, and that their operators were willing to invest in the Black economy at a time when mainstream banks would not extend credit to African Americans (Newman & Rosen, 2014). **The illegal lottery was the venture capital fund, because the legal one would not take the meeting.**
+
+**Now the complication, from a peer-reviewed source, because a course that stops at the sympathetic version is not teaching.** Japheth Knopp writes that at least two clubs were financed entirely by illegal gaming, that several others may have been, and that some clubs served **as fronts for laundering money**, while these same owners "also claimed to have had a genuine desire to keep their teams afloat" (Knopp, 2016). **Both motives are in the literature. A ballclub is an excellent laundering vehicle precisely because it is a cash business with unauditable attendance. Teach both, and do not pick the flattering one.**
+
+**And the counter-examples that keep the claim honest, because "they were all racketeers" is false.** **Cum Posey's** money was inherited: his father was the first African American licensed as a riverboat engineer, then a barge fleet owner and coal company owner, and ran what SABR calls the largest Black-owned business in Pittsburgh (McKenna, 2012b). **Ed Bolden** ran Hilldale for decades on a **postal clerk's salary**, working 42 years at the Philadelphia post office from 1904 to 1946 while operating the club (Haupert, 2012). **Tom Wilson** filed a corporate charter. **Two of the most durable operations in this history were capitalized by inheritance and by a civil-service paycheck.**
+
+**Why this belongs in a business course rather than a morality one.** Every one of these is an answer to the same question a bank asks: what is your source of funds? When the ordinary answers are closed off, the answers that remain are inheritance, another business you already own, and cash-heavy enterprise both legal and not. **That is not a fact about the character of Black owners. It is a fact about a credit system, and it produces exactly the ownership mix you would predict.**
+
+:::reveal What is the best-sourced explanation of why numbers bankers owned Negro League clubs? ||| Rufus Jackson's widow put it in one sentence to James Overmyer in the 1960s: they were involved because they were the only ones with any money. The scholarly version is that numbers and policy operated as the neighborhood's savings bank and investment fund because mainstream banks would not extend credit.
+
+:::reveal What complication does Knopp's peer-reviewed account add, and why must the course keep it? ||| That some clubs served as fronts for laundering money, alongside owners' claims of a genuine desire to keep the teams afloat. A cash business with unauditable attendance is an excellent laundering vehicle, and a course that reports only the sympathetic motive is not teaching the evidence.
+
+:::reveal Name two owners whose capital did not come from the numbers, and say where it did come from. ||| Cum Posey, from inherited coal and river-shipping money that SABR calls the largest Black-owned business in Pittsburgh. Ed Bolden, from a Philadelphia postal clerk's salary he drew for 42 years while running Hilldale.
+
+## Vocabulary
+- **Working capital**: the money a business needs to operate before revenue arrives, which for a ballclub means payroll, travel and rent in advance of the gate.
+- **Numbers or policy**: an illegal daily lottery run in Black neighborhoods, whose operators held the largest pools of investable cash available locally.
+- **Source of funds**: the question a lender asks about where money originates, and the question that produces this industry's whole ownership pattern.
+- **Front**: a legitimate business used to conceal or launder proceeds from an illegal one, which the peer-reviewed literature says some clubs were.
+
+## Sources
+Goldman, D. (2021). 1933-1962: The business meetings of Negro League baseball. Society for American Baseball Research. https://sabr.org/journal/article/1933-1962-the-business-meetings-of-negro-league-baseball/
+
+Haupert, M. (2012). *Ed Bolden*. SABR BioProject. https://sabr.org/bioproj/person/ed-bolden/
+
+Knopp, J. (2016). Negro League baseball, Black community, and the socio-economic impact of integration. *Baseball Research Journal*. Society for American Baseball Research. https://sabr.org/journal/article/negro-league-baseball-black-community-and-the-socio-economic-impact-of-integration/
+
+McKenna, B. (2012b). *Cum Posey*. SABR BioProject. https://sabr.org/bioproj/person/Cum-Posey/
+
+Newman, R. J., & Rosen, J. N. (2014). *Black baseball, Black business: Race enterprise and the fate of the segregated dollar*. University Press of Mississippi.`,
+    },
+    {
+      slug: "nl-the-owners-ledger",
+      title: "6 · The owners, one by one, with their money named",
+      section: "Section 2 · Capital",
+      body: `Here is the ownership of Black baseball read as a cap table. Race and source of funds are stated for each, because both are business facts and both are routinely got wrong.
+
+**Gus Greenlee, Pittsburgh Crawfords. Black, numbers.** Identified as mulatto in government documents. About 1926 he and partners bought an illegal lottery business; he also ran the Crawford Grill and managed boxers, including the light-heavyweight champion John Henry Lewis. He bought the Crawfords in 1930, and one SABR estimate has him grossing "probably" between $20,000 and $25,000 a day from numbers in the mid-1930s (McKenna, 2012a; Beer, 2020). **Note the hedge inside the source and keep it.**
+
+**Cum Posey and Rufus Jackson, Homestead Grays. Both Black, two different kinds of money.** Posey's was inherited industrial wealth. In **April 1934** he brought in the numbers banker Rufus "Sonnyman" Jackson, and the two, with their lawyer, **filed articles of incorporation for the Homestead Grays Baseball Club, Inc.** (Carhart, 2015). Jackson's legitimate cover was the Manhattan Music Company, a jukebox business. **A coal heir and a numbers banker incorporating a ballclub together is the whole section in one filing.**
+
+**Effa and Abe Manley, Newark Eagles.** Abe was Black and a numbers banker in Camden. The franchise was awarded in November 1934 (Essington, 2016; Essington, 2019). **Effa Manley's race is genuinely unresolved and this course says so.** SABR records that her biological father was a white man who employed her mother, that most people who met her believed she was African American, that **in a 1977 interview she stated her race was white**, and that she lived within the African American community all her life. The Hall of Fame says she "claimed the Black community as her own." The Negro Leagues Baseball Museum states she was "actually white." Her own line to the *New York Post* in 1975 was "Everything in my life has been Black" (Essington, 2019; National Baseball Hall of Fame, n.d.-a). She became the first woman elected to the Hall of Fame in 2006.
+
+**J. L. Wilkinson and Tom Baird, Kansas City Monarchs. Both white.** SABR states that the two "served as the only two white executives in the league" (Nowlin, 2020). Foster was reluctant to admit a white owner and relented (Young & Faber, 2012). Wilkinson commissioned a **portable lighting system**, first used at Enid, Oklahoma on **28 April 1930**, five years before the major leagues' first night game. **Its cost is not settled: SABR published $50,000 in 1996 and "$100,000 by some accounts" in 2020, and no invoice, loan document or 1930 newspaper is cited by anyone** (Lester, 1996; Nowlin, 2020). Wilkinson sold his shares to Baird in 1948 for **$27,000**.
+
+**Alex Pompez, Cuban Stars and New York Cubans. Afro-Cuban American, numbers.** Born in Key West to Cuban immigrants, per the Hall of Fame, though the Negro Leagues Baseball Museum says Havana. In about 1932 Dutch Schultz took over his operation; Pompez's account is that Schultz "placed a gun on the table," after which Pompez worked as his agent for $250 a month. He was indicted in 1937, fled, was arrested in Mexico City, was extradited, and was granted probation in 1939 after testifying against a Tammany boss (McKenna, n.d.). **He is the one executive from this world who landed well in Organized Baseball, hired as a Giants scout in 1951.**
+
+**Ed Bolden, Hilldale and the Philadelphia Stars. Black, salaried.** Hilldale incorporated in January 1917 with no white investors named. When the white booking agent Nat Strong tried to take Hilldale into his agency in 1917, Bolden refused, saying **"To affiliate ourselves with other than race men would be a mark against our name that could never be eradicated"** (Haupert, 2012). **Six years later he allied with Strong anyway**, and in the Depression he gave the white booking agent Eddie Gottlieb a reported **50 percent** of the Philadelphia Stars for financial backing, saying it was necessary "to trade race for sound finances." **This course does not present that as hypocrisy. It presents it as what a constraint does to a principle.**
+
+**Tom Wilson, Nashville Elite Giants. Black, and the best-documented capitalization in the whole topic.** On **26 March 1920** he incorporated the Nashville Negro Baseball Association and Amusement Company with **an authorized capital stock of $5,000** (Nipper, 2021). **That is a filed corporate figure rather than a press claim, which makes it the most reliable capital number in this course.** He was Negro National League president from 1933 to 1947.
+
+**And two white promoters inside Black baseball.** **Abe Saperstein**, who owned the Harlem Globetrotters, took **5 percent of the East-West All-Star Game gate for publicity until 1941** and co-owned the Birmingham Black Barons with the Black Memphis funeral-home operator Tom Hayes. Black owners objected in print: Pompez and Posey said in the *Pittsburgh Courier* that he was "ridiculing Negro baseball, Negro players and the race in general," and Posey called his organization "'Abe' Saperstein's Protective Association." **The counter-view is also on the record**, from the player Ted "Double Duty" Radcliffe: "He was the greatest friend to the colored athlete of anybody I know" (Society for American Baseball Research, n.d.-a; Powell, n.d.). **Syd Pollock** of the Clowns you met in Section 4.
+
+:::reveal What makes Tom Wilson's $5,000 the most reliable capital figure in this course? ||| It is an authorized capital stock figure inside a filed corporate charter, dated 26 March 1920, rather than a number a promoter gave a newspaper. Almost every other figure in this topic is a press claim repeated by later writers.
+
+:::reveal How does this course treat Ed Bolden's 1917 refusal of Nat Strong and his later partnership with Eddie Gottlieb? ||| Not as hypocrisy. He stated a principle about dealing only with race men, and then in the Depression traded half the Philadelphia Stars for backing he could not otherwise get, saying so plainly. It is a worked example of what a capital constraint does to a stated principle.
+
+:::reveal Why does the course refuse a single figure for Wilkinson's lighting system? ||| Because SABR itself published $50,000 in 1996 and "$100,000 by some accounts" in 2020, its own Wilkinson biography gives no figure at all, and no invoice, loan document or contemporary newspaper is cited by any of them.
+
+## Vocabulary
+- **Cap table**: the list of who owns a company and in what proportion, which is the frame this lesson applies to a league.
+- **Authorized capital stock**: the maximum share value a chartered company may issue, stated in its filing, as Tom Wilson's $5,000 was.
+- **Cover business**: a legitimate enterprise operated alongside an illegal one, such as Rufus Jackson's jukebox company.
+- **Trade race for finances**: Bolden's own description of giving a white backer half a club because no Black capital was available.
+
+## Sources
+Beer, J. (2020). *Kings of the Hill: The story of the Pittsburgh Crawfords*. Society for American Baseball Research. https://sabr.org/research/article/kings-of-the-hill-the-story-of-the-pittsburgh-crawfords/
+
+Carhart, R. (2015). *Rufus Jackson*. SABR BioProject. https://sabr.org/bioproj/person/rufus-jackson/
+
+Essington, A. (2016). *Abe Manley*. SABR BioProject. https://sabr.org/bioproj/person/abe-manley/
+
+Essington, A. (2019). *Effa Manley*. SABR BioProject. https://sabr.org/bioproj/person/effa-manley/
+
+Haupert, M. (2012). *Ed Bolden*. SABR BioProject. https://sabr.org/bioproj/person/ed-bolden/
+
+Lester, L. (1996). Only the stars come out at night: J.L. Wilkinson and his lighting machine. In *Unions to Royals*. Society for American Baseball Research. https://sabr.org/journal/article/only-the-stars-come-out-at-night-j-l-wilkinson-and-his-lighting-machine/
+
+McKenna, B. (2012a). *Gus Greenlee*. SABR BioProject. https://sabr.org/bioproj/person/gus-greenlee/
+
+McKenna, B. (n.d.). *Alex Pompez*. SABR BioProject. https://sabr.org/bioproj/person/alex-pompez/
+
+National Baseball Hall of Fame. (n.d.-a). *Effa Manley*. https://baseballhall.org/hall-of-famers/manley-effa
+
+Nipper, S. (2021). *Tom Wilson*. SABR BioProject. https://sabr.org/bioproj/person/tom-wilson-3/
+
+Nowlin, B. (2020). *Tom Baird*. SABR BioProject. https://sabr.org/bioproj/person/tom-baird/
+
+Powell, L. (n.d.). *Birmingham Black Barons*. Encyclopedia of Alabama. https://encyclopediaofalabama.org/article/birmingham-black-barons/
+
+Society for American Baseball Research. (n.d.-a). *Abe Saperstein*. SABR BioProject. https://sabr.org/bioproj/person/abe-saperstein/
+
+Young, W., & Faber, C. (2012). *J.L. Wilkinson*. SABR BioProject. https://sabr.org/bioproj/person/j-l-wilkinson/`,
+    },
+    {
+      slug: "nl-what-a-club-owned",
+      title: "7 · What a club actually owned, and the parks that were not theirs",
+      section: "Section 2 · Capital",
+      body: `A firm's balance sheet has an asset side. For most Negro League clubs it was short: uniforms, equipment, a bus, and a set of player contracts. **The item almost none of them had is the one that decides everything, and it is the ballpark.**
+
+**The canonical list, and why you should not repeat it as printed.** A 2003 SABR article names six Black-owned parks: Hilldale Park in Philadelphia, Martin Park in Memphis, Wilson Park in Nashville, Greenlee Field in Pittsburgh, Tate Park in Cleveland, and Dyckman Oval in New York (Miller, 2003). The article's economic logic is exactly right and worth quoting: **"By playing in a black-owned ballpark, the team owners automatically cut down on the number of hands reaching for a piece of the gate."** The list itself does not survive checking. **The article carries no footnotes.**
+
+**Dyckman Oval was leased, not owned.** Most of the tract belonged to James N. Butterly. Alex Pompez took a **three-year lease** and spent **$60,000** erecting fireproof stands, a clubhouse and a beer garden, and installed floodlights in 1935. When the lease expired after 1937 the stands were demolished, and the site became the Dyckman Houses (Costello, 2018). **Pompez sank sixty thousand dollars of numbers money into improvements on ground he did not own, and lost them.** The Hall of Fame's own page overstates it as "his own stadium."
+
+**Hilldale did not own its park either.** SABR records that Hilldale lacked the capital to build a ballpark outright and did it instead through **annual improvements out of the operating budget**, and that Bolden did not renew the **lease** in 1930 (Haupert, 2020). **Black-built and Black-controlled is not the same as Black-owned, and the difference is the entire lesson about undercapitalization.**
+
+**Greenlee Field was one quarter Greenlee's, and its famous cost has no invoice.** Everyone repeats $100,000 and 7,500 seats. Geri Strecker went to the records and wrote the sentence this course cares about most: **"While the building permits only total $40,000, it is still possible that the ballpark cost closer to the $100,000 that Greenlee claimed"** (Strecker, 2009). The park was designed for 6,000. And Greenlee **owned 25 percent of the stock and held no office** in the holding company, whose treasurer was a white brewery owner (Strecker, 2009; Stewart, 2018). **The architect, Louis Arnett Stuart Bellinger, was one of about sixty African American registered architects then working in the United States, and that fact is solid.**
+
+**Two parks widely believed Black-owned were not.** **Hamtramck Stadium** was built by John Roesink, a white haberdasher (Detroit Historical Society, n.d.). **Rickwood Field in Birmingham was never Black-owned**: it was built by A. H. Woodward, "who rented it out to the Black Barons and to white teams in the area," with the Black Barons playing "on alternate Sundays and at other times when the white Barons were not playing at home" (Powell, n.d.). **That last clause is the business point of the whole section. The Black club's home dates were structurally the leftovers of the white club's schedule.**
+
+**What survives the checking.** Wilson Park in Nashville is independently documented: the land cost **$10,000**, with the deed recorded 17 April 1929, though **no construction cost appears anywhere**, so the $10,000 was the dirt (Nipper, 2021). Martin Park and Tate Park could not be independently verified by this course and are therefore not asserted.
+
+**And a pattern nobody teaches.** Greenlee Field became Bedford Dwellings. Dyckman Oval became Dyckman Houses. Schorling Park in Chicago, where Rube Foster's own club played on **no written contract at all** with its white landlord, burned in 1940 and its site became Wentworth Gardens (Carrano, 2021). **Three of Black baseball's ballparks were replaced by public housing projects.** The route courses in this catalog teach the instrument that did that; this course only asks you to notice that these grounds were on its list.
+
+:::reveal What did Geri Strecker find when she checked the famous $100,000 cost of Greenlee Field? ||| Building permits totaling $40,000. She published that alongside the observation that the true cost might still have approached the $100,000 Greenlee claimed, so the honest statement is that the $100,000 is a promoter's claim with $40,000 of documents behind it.
+
+:::reveal Why is "Black-built" different from "Black-owned," and which park shows it? ||| Hilldale Park. Hilldale lacked the capital to build outright and improved a leased ground year by year out of operating budget, then lost it when Bolden did not renew the lease in 1930. Control without title is what undercapitalization looks like on a balance sheet.
+
+:::reveal What did Rickwood Field's scheduling arrangement do to the Black Barons' business? ||| It made their home dates the leftovers of the white club's schedule, alternate Sundays and whenever the white Barons were away. A club that cannot choose its own home dates cannot build a home schedule, which is what pushed the whole industry onto the road.
+
+## Vocabulary
+- **Leasehold improvement**: money a tenant spends on a building it does not own, which reverts to the landlord when the lease ends, as Pompez's $60,000 did.
+- **Fee ownership**: holding actual title to land and buildings, as distinct from a lease however long.
+- **Leftover dates**: the home schedule a tenant club gets after the landlord's own team has taken what it wants.
+- **Holding company**: a firm formed to own an asset, such as the Bedford Land Company that owned Greenlee Field with Greenlee holding a quarter of it.
+
+## Sources
+Carrano, K. (2021). *Schorling Park (Chicago)*. SABR BioProject Ballparks. https://sabr.org/bioproj/park/schorling-park-chicago/
+
+Costello, R. (2018). *Dyckman Oval (New York)*. SABR BioProject Ballparks. https://sabr.org/bioproj/park/dyckman-oval-new-york/
+
+Detroit Historical Society. (n.d.). *Detroit Stars*. Encyclopedia of Detroit. https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/detroit-stars
+
+Haupert, M. (2020). *Hilldale (Daisies) team ownership history*. Society for American Baseball Research. https://sabr.org/bioproj/topic/hilldale-daisies-team-ownership-history/
+
+Miller, S. J. (2003). Big problems and simple answers: An explanation of the Negro Leagues. *The National Pastime, 23*. Society for American Baseball Research. https://sabr.org/journal/article/big-problems-and-simple-answers-an-explanation-of-the-negro-leagues/
+
+Nipper, S. (2021). *Tom Wilson*. SABR BioProject. https://sabr.org/bioproj/person/tom-wilson-3/
+
+Powell, L. (n.d.). *Birmingham Black Barons*. Encyclopedia of Alabama. https://encyclopediaofalabama.org/article/birmingham-black-barons/
+
+Stewart, W. (2018). *Greenlee Field (Pittsburgh)*. SABR BioProject Ballparks. https://sabr.org/bioproj/park/greenlee-field-pittsburgh/
+
+Strecker, G. D. (2009). The rise and fall of Greenlee Field. *Black Ball: A Negro Leagues Journal, 2*(2). https://sabr.org/journal/article/the-rise-and-fall-of-greenlee-field/`,
+    },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 3 · The gate
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "nl-the-ballpark-problem",
+      title: "9 · Renting the House That Ruth Built",
+      section: "Section 3 · The gate",
+      body: `There is one place in this entire history where we can read the actual books, and it is the landlord's. Use it.
+
+**Why this source is different from every other number in this course.** James Overmyer worked from **the New York Yankees' own cash ledgers and business records**, donated to the National Baseball Hall of Fame in 1955 and 1970, covering 1913 to 1950 (Overmyer, 2014). Almost everything else in this topic is a secondary source citing another secondary source, and a surprising amount traces back to a promoter's press release. **This is an audited primary record, and it changes what you can claim.**
+
+**The terms, and how they moved.** The first Black game at Yankee Stadium was a doubleheader on **5 July 1930**; the Yankees took **$4,243, about 31 percent of the gross gate**. In 1931 the Harlem Stars date paid the Yankees **$687, one third of the gate**. Through the 1930s the arrangement was a flat fee: **$1,000 for one doubleheader, and $2,500 to $3,000 per date** under Greenlee's Negro National League from 1934 to 1938 (Overmyer, 2014).
+
+**Then the structural fix, and it is the lesson.** Before the 1939 season the Negro National League hired the Philadelphia sports figure Eddie Gottlieb as its booking agent for Stadium games, and the Yankees changed the flat rate to **25 percent of gross revenue with a $1,000 minimum** (Overmyer, 2014). **A flat fee is ruinous on a rainy day and cheap on a big one. A percentage transfers the weather risk and the draw risk back to the landlord.** Black promoters paid flat rent for a decade before they won a percentage deal, and they paid a white booking agent to get it.
+
+**Fifteen years of totals, from the ledgers.** Between 1930 and 1944 Black baseball grossed about **$426,000** at Yankee Stadium. The Yankees kept **$114,550**, about 31 percent. The Negro League clubs shared **$254,668**, about 69 percent. Black games at the Stadium averaged **11,600 per date**; dates featuring Satchel Paige averaged about **20,400**, nearly double (Overmyer, 2014). **One player nearly doubled the gate, and he was rented: Paige took a personal fee of $500 for pitching on loan from the Monarchs in 1941.**
+
+**Now stage the audited number against the repeated one.** The unfootnoted 2003 SABR article says "the Yankees in the 1940s were making a reported $100,000 a year off Negro League games" (Miller, 2003). Overmyer's ledgers show **$114,550 across fifteen years**, an average near $7,600. **Put those side by side and you have this course's method in a single comparison. One number was counted. The other was reported.**
+
+**Other landlords, briefly, and note how the terms vary with leverage.** At **Ruppert Stadium** in Newark the Bears took **20 percent** of the Eagles' receipts (Smith, 2020). At **Griffith Stadium** the Senators are reported to have netted **$60,000 from the Grays in 1942** and a **$100,000 profit in 1943**, when the Grays drew **225,000 in 26 games** (Schleppi, 2017). **Read those words carefully: they are the landlord's profit, not the rent, and they reach us through a secondary source citing a book rather than through the Senators' statements.** Twenty percent in Newark against twenty-five to forty at Yankee Stadium is a leverage difference, not a rate card.
+
+**And the conflict of interest nobody mentions.** Clark Griffith was among the loudest opponents of integrating the major leagues, and Black baseball was one of his most profitable tenants. **Integration would cost him a tenant.** That is documented rather than inferred, and it is why his 1945 defense of Negro League contracts has to be read with care.
+
+:::reveal What makes Overmyer's Yankee Stadium figures a different class of evidence from the rest of this topic? ||| They come from the Yankees' own cash ledgers and business records, held at the Hall of Fame, covering 1913 to 1950. Most other figures in this history are secondary sources citing other secondary sources, and many trace back to a promoter's press release.
+
+:::reveal What changed for Negro League clubs at Yankee Stadium in 1939, and why did it matter more than the rate? ||| The Yankees replaced a flat per-date fee with 25 percent of gross revenue and a $1,000 minimum. A flat fee puts all the weather and draw risk on the tenant; a percentage moves it back to the landlord.
+
+:::reveal Set the reported "$100,000 a year" against the ledgers. What is the discrepancy? ||| The ledgers show $114,550 to the Yankees across fifteen years, roughly $7,600 a year on average. The $100,000 figure comes from an unfootnoted article that hedges it as "a reported" number, and it cannot mean Yankee Stadium alone.
+
+## Vocabulary
+- **Flat rate rent**: a fixed fee per playing date, owed whatever the crowd or the weather, which is what Black clubs paid at Yankee Stadium through the 1930s.
+- **Percentage rent**: rent set as a share of gross receipts, which shifts risk to the landlord and which the leagues obtained in 1939.
+- **Gross gate**: the total taken at the door before any deduction, which is the base every percentage in this course is applied to.
+- **Evidence class**: how a figure was produced, whether from an audited ledger, a filed charter, a newspaper, or a promoter's claim.
+
+## Sources
+Miller, S. J. (2003). Big problems and simple answers: An explanation of the Negro Leagues. *The National Pastime, 23*. Society for American Baseball Research. https://sabr.org/journal/article/big-problems-and-simple-answers-an-explanation-of-the-negro-leagues/
+
+Overmyer, J. (2014). Black baseball at Yankee Stadium: The house that Ruth built and Satchel furnished (with fans). *Black Ball: A Negro Leagues Journal, 7*. https://sabr.org/journal/article/black-baseball-at-yankee-stadium-the-house-that-ruth-built-and-satchel-furnished-with-fans/
+
+Schleppi, J. (2017). *Griffith Stadium (Washington, DC)*. SABR BioProject Ballparks. https://sabr.org/bioproj/park/griffith-stadium-washington-dc/
+
+Smith, C. (2020). *Ruppert Stadium (Newark, NJ)*. SABR BioProject Ballparks. https://sabr.org/bioproj/park/ruppert-stadium-newark/`,
+    },
+    {
+      slug: "nl-the-middlemen",
+      title: "10 · The men who took a cut between the turnstile and the owner",
+      section: "Section 3 · The gate",
+      body: `A booking agent controls access to venues and dates. In this industry the three men who mattered most were all white, and Black owners said so on the record, in league meetings, in print.
+
+**Nat Strong, the East.** Strong held what Overmyer calls a tight grip on non-major-league ballparks in the New York area, and Black operators "had to pay him a slice of gate receipts to get a place to play" (Overmyer, 2016). His rate was **5 to 10 percent of the gate** to book venues such as Yankee Stadium and Ebbets Field (Goldman, 2021). **He also owned the Brooklyn Royal Giants and was a charter owner of the Eastern Colored League.** The man taking a cut of everyone's gate sat on the league's governing commission. He offered Black clubs **flat guarantees of $500 to $600** for his dates (Goldman, 2021).
+
+**Eddie Gottlieb, and the sharpest single fact available.** Gottlieb was the Negro National League's booking agent for Yankee Stadium games from 1939 and **simultaneously a 50 percent owner of the Philadelphia Stars**. Effa Manley denounced his "prohibitive 10 percent of revenues fee," and Cum Posey charged that Strong and Gottlieb were strong-arming clubs "by insisting on 5 percent of the receipts of any league game between Eastern and Western clubs" (Goldman, 2021; Haupert, 2012). **A white booking agent co-owned a league club and took a percentage off the top of his rivals' gates, and the Black owners put it in the minutes.**
+
+**Abe Saperstein, the Midwest.** He took **5 percent of the East-West All-Star Game gate for publicity until 1941** and co-owned the Birmingham Black Barons (Society for American Baseball Research, n.d.-a). **Why would Black owners take him on at all?** Because access is a service. That is the honest answer, and it is the same answer Bolden gave about Strong: the man's grip on the market made it necessary to do business.
+
+**Now add the slices up on one date at Yankee Stadium, using only figures verified earlier in this course.** The landlord takes **25 to 40 percent**. The booking agent takes **5 to 10 percent**. The visiting club takes about **35 percent** of gross under the second Negro National League's terms, and the league office takes **5 percent** (Overmyer, 2014; Goldman, 2021). **Four hands reach into the gate before the home club's owner sees a dollar, and two of those hands are on people who do not work for him.**
+
+**Why this is the section that explains the industry rather than a list of villains.** Every one of these cuts is the price of an input the club could not supply itself: a building, access to dates, an opponent, and a championship to play for. **A firm that owns none of its inputs pays rent on all of them.** Section 2 showed you why they could not buy the building. This lesson shows you what that costs every single time the turnstiles turn.
+
+**And keep the counter-evidence in view.** Ted "Double Duty" Radcliffe said of Saperstein, "He was the greatest friend to the colored athlete of anybody I know," and that is on the record alongside Posey's and Pompez's attacks (Society for American Baseball Research, n.d.-a). **A middleman who extracts rent and opens a market is doing both things at once, which is exactly why the owners argued about him for twenty years instead of agreeing.**
+
+:::reveal Which single fact about Eddie Gottlieb best captures the booking-agent problem? ||| He was the Negro National League's booking agent for Yankee Stadium dates from 1939 while simultaneously owning half of the Philadelphia Stars, and took a percentage off the top of rival clubs' gates. Effa Manley and Cum Posey both objected in league business on the record.
+
+:::reveal Add up the claims on one league gate at Yankee Stadium under the second Negro National League. ||| Landlord 25 to 40 percent, booking agent 5 to 10 percent, visiting club about 35 percent of gross, league office 5 percent. Four parties are paid before the home club's owner sees anything.
+
+:::reveal Why does this course insist the booking agents were selling something real? ||| Because every cut was the price of an input the club could not supply itself: the building, access to dates, an opponent and a championship. A firm that owns none of its inputs pays rent on all of them, which is the consequence of the capital problem in Section 2.
+
+## Vocabulary
+- **Booking agent**: a middleman who controls access to venues and dates and charges a percentage for arranging them.
+- **Guarantee**: a fixed sum promised to a visiting club regardless of the crowd, which Nat Strong offered at $500 to $600 a date.
+- **Off the top**: taken from gross receipts before any other party is paid, which is where an agent's percentage sits.
+- **Input**: something a business must have to operate, which it either owns or rents, and which here included the ballpark itself.
+
+## Sources
+Goldman, D. (2021). 1933-1962: The business meetings of Negro League baseball. Society for American Baseball Research. https://sabr.org/journal/article/1933-1962-the-business-meetings-of-negro-league-baseball/
+
+Haupert, M. (2012). *Ed Bolden*. SABR BioProject. https://sabr.org/bioproj/person/ed-bolden/
+
+Overmyer, J. (2014). Black baseball at Yankee Stadium: The house that Ruth built and Satchel furnished (with fans). *Black Ball: A Negro Leagues Journal, 7*. https://sabr.org/journal/article/black-baseball-at-yankee-stadium-the-house-that-ruth-built-and-satchel-furnished-with-fans/
+
+Overmyer, J. (2016). 1923-29 winter meetings: The Negro Leagues come east. Society for American Baseball Research. https://sabr.org/journal/article/1923-1929-eastern-colored-league-winter-meetings/
+
+Society for American Baseball Research. (n.d.-a). *Abe Saperstein*. SABR BioProject. https://sabr.org/bioproj/person/abe-saperstein/`,
+    },
+    {
+      slug: "nl-the-road-and-the-press",
+      title: "11 · The road was the business, and the newspaper was the infrastructure",
+      section: "Section 3 · The gate",
+      body: `If you remember one thing from this course, make it this: **the leagues were not the business. The road was.**
+
+**The arithmetic.** Official league games in the Negro Leagues **never totaled more than 99** in a season, against 154 in the American and National Leagues. The 1945 pennant-winning Homestead Grays played **45 league games**. And it was rare for a major Black club to play **fewer than 200 games** in a year (Miller, 2003). **So somewhere between a fifth and a half of a club's schedule was the league, and the rest was the actual company.**
+
+**The hardest evidence that the road paid better is a league that died of it.** Cum Posey organized the **East-West League** in January 1932. Its clubs "soon abandoned the planned schedule and turned to better paying bookings with white semipro teams," and the league collapsed **inside two months** (East-West League, n.d.). **A whole league was killed by its own members preferring outside dates. That is not an anecdote; it is a measurement.**
+
+**And the founding constitution had made it legitimate from day one**, expressly permitting non-league games to boost gate receipts (Bauer, 2022). **The standings were a product the league sold. They were never the company's revenue.**
+
+**The one date that was bigger than any league game.** The **East-West All-Star Game** was first played on **10 September 1933 at Comiskey Park** and ran, at various venues, through **26 August 1962** (Retrosheet, n.d.). Verified attendance: **47,865 paid in 1941**, **51,723 in 1943** as the record, 45,474 in 1946, **48,112 in 1947**, and **24,614 in 1950** (Society for American Baseball Research, n.d.-b). Overmyer puts the run's average near 36,500.
+
+**Follow that money, because it is the whole course in one afternoon.** Gus Greenlee personally put **$2,500 on the line weeks in advance** for what every source calls the exorbitant rental of Comiskey Park, a white-owned building. Abe Saperstein took 5 percent of the gate for publicity. And a 1935 league resolution records that **in 1934 only ten percent of the net reached the league's own treasury** (Goldman, n.d.; Society for American Baseball Research, n.d.-a). **Black baseball's biggest annual payday paid a white landlord in advance, a white promoter off the top, and its own league last.**
+
+**One number this course will not give you: what the players were paid for it.** The commonly repeated $50 or $100 has no source this course could find. **What is documented is the umpires' fee.** Fred McCrary received **$10 and expenses** per East-West game from 1938 to 1944, and when he asked for more, the owners said the umpire was not important (Heaphy, 2017).
+
+**Now the press, which was not a spectator.** Four Black sportswriters drafted the 1920 constitution. Foster launched the league through a *Chicago Defender* column series in the winter of 1919 to 1920. The second Negro National League was announced in the *Pittsburgh Courier*'s year-end 1932 edition by a writer who then became its secretary. *Courier* writer **Rollo Wilson was made league commissioner in 1934**. The *Chicago Defender*'s sports editor **Al Monroe became the Negro American League's secretary in 1936**. And Cum Posey's father was **one of the original investors in the *Pittsburgh Courier*** (Bauer, 2022; Goldman, 2021; McKenna, 2012b).
+
+**Say what that means without flinching.** The same men who wrote the league's constitution, announced its formation, chose its all-stars by printing ballots and reported its results also served as its commissioner, its secretary and, in one family's case, its financiers. **This is not a scandal to expose. It is what institution-building looks like when a community has to supply every function itself. But a course that presents the Black press purely as a watchdog is teaching something false.** The counterweight is also documented: the same press turned on the Black owners during integration, and you will meet that in Section 5.
+
+:::reveal Give the arithmetic that shows the league was not the business. ||| League games never exceeded 99 in a season and could be as few as 45, while a major club rarely played fewer than 200 games a year. Between half and four fifths of the schedule was outside the league.
+
+:::reveal What happened to the East-West League in 1932, and why is it the strongest evidence in this section? ||| It collapsed within two months of opening because its own member clubs abandoned the schedule for better paying bookings against white semipro teams. A league died of the preference, which is a measurement rather than an anecdote.
+
+:::reveal Trace the money at the East-West All-Star Game. ||| Greenlee paid $2,500 in advance, personally, to rent white-owned Comiskey Park; Saperstein took 5 percent of the gate for publicity; and a league resolution records that in 1934 only ten percent of the net reached the league treasury.
+
+:::reveal Why does this course refuse to say what East-West players were paid? ||| Because the commonly repeated $50 or $100 has no locatable source. What is documented is that umpire Fred McCrary got $10 and expenses per game from 1938 to 1944, and was told the umpire was not important when he asked for more.
+
+## Vocabulary
+- **Barnstorming**: playing outside any league schedule for a negotiated share of the crowd, which was most of what these clubs actually did.
+- **Semipro**: a club whose players are paid but not full time, and whose bookings outpaid league games badly enough to kill a league in 1932.
+- **Advance rental**: rent paid before the event, which is what Greenlee put up personally for Comiskey Park.
+- **Institution-building**: a community supplying every function of an industry itself, which is why the same men wrote, governed and reported on this league.
+
+## Sources
+Bauer, J. (2022). We are the ship, all else the sea: The founding of the Negro National League. Society for American Baseball Research. https://sabr.org/research/article/we-are-the-ship-all-else-the-sea-the-founding-of-the-negro-national-league/
+
+*East-West League*. (n.d.). Wikipedia. https://en.wikipedia.org/wiki/East%E2%80%93West_League
+
+Goldman, D. (n.d.). *Gus Greenlee and the East-West All-Star Game: Origins and conflict (1932-1944)*. Society for American Baseball Research. https://sabr.org/research/article/gus-greenlee-and-the-east-west-all-star-game-origins-and-conflict-1932-1944/
+
+Goldman, D. (2021). 1933-1962: The business meetings of Negro League baseball. Society for American Baseball Research. https://sabr.org/journal/article/1933-1962-the-business-meetings-of-negro-league-baseball/
+
+Heaphy, L. (2017). Umpires in the Negro Leagues. In *The SABR book on umpires and umpiring*. Society for American Baseball Research. https://sabr.org/journal/article/umpires-in-the-negro-leagues/
+
+McKenna, B. (2012b). *Cum Posey*. SABR BioProject. https://sabr.org/bioproj/person/Cum-Posey/
+
+Miller, S. J. (2003). Big problems and simple answers: An explanation of the Negro Leagues. *The National Pastime, 23*. Society for American Baseball Research. https://sabr.org/journal/article/big-problems-and-simple-answers-an-explanation-of-the-negro-leagues/
+
+Retrosheet. (n.d.). *East-West game log*. https://retrosheet.org/NegroLeagues/EastWest.html
+
+Society for American Baseball Research. (n.d.-a). *Abe Saperstein*. SABR BioProject. https://sabr.org/bioproj/person/abe-saperstein/
+
+Society for American Baseball Research. (n.d.-b). *Negro League baseball at Comiskey Park: The East-West game, an all-star legacy*. https://sabr.org/research/article/negro-baseball-at-comiskey-park-the-east-west-game-an-all-star-legacy/`,
+    },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
     // SECTION 4 · Indianapolis
     // ═══════════════════════════════════════════════════════════════════════════════════════
     {
       slug: "nl-abcs",
-      title: "10 · The Indianapolis ABCs, read as a company",
+      title: "13 · The Indianapolis ABCs, read as a company",
       section: "Section 4 · Indianapolis",
       body: `Indianapolis is where this course stops generalizing. One club, one city, one set of records, and a business you can follow from its founding to its liquidation.
 
@@ -184,7 +529,7 @@ Strecker, G. (2023). *Indianapolis ABCs*. Encyclopedia of Indianapolis. https://
     },
     {
       slug: "nl-avenue-and-the-ground",
-      title: "11 · The ground they rented, and the clubhouse on Indiana Avenue",
+      title: "14 · The ground they rented, and the clubhouse on Indiana Avenue",
       section: "Section 4 · Indianapolis",
       body: `Section 3 said the ballpark was the hardest asset to get. Indianapolis lets you watch one club solve it four times in twenty years, and lets you watch the solution generate its own infrastructure.
 
@@ -231,7 +576,7 @@ Wilson, B., & Johnson, R. (n.d.). *Indianapolis ABCs and Washington Park*. Ball 
     },
     {
       slug: "nl-clowns",
-      title: "12 · The Indianapolis Clowns: what a league seat cost",
+      title: "15 · The Indianapolis Clowns: what a league seat cost",
       section: "Section 4 · Indianapolis",
       body: `The Clowns are the hardest business in this course to write about honestly, because the product was partly a minstrel act, the criticism came from inside Black baseball, and the company outlasted every league it ever joined.
 
@@ -274,7 +619,7 @@ Verderame, J. A. (2022). *Indianapolis Clowns*. Encyclopedia of Indianapolis. ht
     },
     {
       slug: "nl-quiz-indianapolis",
-      title: "13 · Knowledge check: Indianapolis",
+      title: "16 · Knowledge check: Indianapolis",
       section: "Section 4 · Indianapolis",
       quiz: {
         shuffleOptions: true,
@@ -856,7 +1201,7 @@ Verderame, J. A. (2022). *Indianapolis Clowns*. Encyclopedia of Indianapolis. ht
     // ═══════════════════════════════════════════════════════════════════════════════════════
     {
       slug: "nl-reclassification",
-      title: "16 · December 2020 and May 2024: the record changes",
+      title: "22 · December 2020 and May 2024: the record changes",
       section: "Section 6 · The record",
       body: `A business leaves records, and someone decides which records are official. In the space of four years, Major League Baseball changed that decision twice.
 
@@ -899,7 +1244,7 @@ Major League Baseball. (2024c, May 29). *Everything to know as Negro Leagues sta
     },
     {
       slug: "nl-what-is-contested",
-      title: "17 · What is contested, and what this course refused to say",
+      title: "23 · What is contested, and what this course refused to say",
       section: "Section 6 · The record",
       body: `The merge is not the end of an argument. It is a set of choices, most of which MLB published, and each of which a reasonable person can dispute. This lesson is the course's method applied to its own subject.
 
@@ -944,7 +1289,7 @@ Seamheads. (n.d.). *Negro Leagues Database*. https://www.seamheads.com/NegroLgs/
     },
     {
       slug: "nl-write-assignment",
-      title: "18 · Your assignment: write one ballclub as a business",
+      title: "24 · Your assignment: write one ballclub as a business",
       section: "Section 6 · The record",
       lessonType: "assignment",
       body: `Sports writing about the Negro Leagues is overwhelmingly writing about players. **This assignment asks you to write about a company**, which is harder, less crowded, and closer to the record that actually survives.
