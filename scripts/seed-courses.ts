@@ -26,6 +26,7 @@ import { FOOTBALL_COURSE } from "./data/football-course";
 import { BROADCASTING_COURSE } from "./data/broadcasting-course";
 import { VOICE_ACTING_COURSE } from "./data/voice-acting-course";
 import { SHE_TOOK_THE_SEAT_COURSE } from "./data/she-took-the-seat-course";
+import { NAACP_LEARNED_TO_WIN_COURSE } from "./data/naacp-learned-to-win-course";
 import { GOLF_COURSE } from "./data/golf-course";
 import { HOODOO_COURSE } from "./data/hoodoo-course";
 import { HOODOO_COMPLETE_COURSE } from "./data/hoodoo-complete-course";
@@ -1082,6 +1083,18 @@ async function main() {
     // the load-bearing content. No quotation appears anywhere in the course that the research pass
     // could not tie to a primary source. NO migration — pnpm seed:courses.
     { slug: "she-took-the-seat", course: SHE_TOOK_THE_SEAT_COURSE, category: "Culture & History" },
+    // How the NAACP Learned to Win — He Did the Work, wave 1 (plans/65 Phase 4.4, "pair launches
+    // with She Did the Work waves"). The deliberate PAIR to she-took-the-seat: that course is how
+    // INDIVIDUALS enter a closed profession one seat at a time, this one is how an ORGANIZATION
+    // forces an institution open over forty-five years. Four of the five names on
+    // plans/future-courses/he-did-the-work/01-list-of-men-that-did-the-work.md (Du Bois, Johnson,
+    // White, Marshall) taught as one institution's four instruments rather than four biographies;
+    // Onesimus and Molefi Kete Asante, the other two subjects in that directory, are already taught
+    // in `training-the-colonizer` and `afrocentricity`. Charles Hamilton Houston is added because
+    // the litigation section is not true without him. Two numbers are deliberately NOT printed (the
+    // 1919 lynching report's total, and the Dyer bill's exact House tally) and a research check is
+    // filed for the first. NO migration — pnpm seed:courses.
+    { slug: "naacp-learned-to-win", course: NAACP_LEARNED_TO_WIN_COURSE, category: "Culture & History" },
     { slug: "hoodoo-tradition-of-resistance", course: HOODOO_COURSE, category: "Culture & History" },
     { slug: "hoodoo-complete", course: HOODOO_COMPLETE_COURSE, category: "Culture & History" },
     // The Great Migration — homeschool-friendly cultural history, companion to Hoodoo (how
