@@ -43,6 +43,13 @@ const BACKLOG: Record<string, string> = {
   "off-grid-survival": "OUT OF SCOPE, practical skill, no academic standard claimed",
   "broadcasting-break-in": "OUT OF SCOPE, vocational, no academic standard claimed",
   "voice-acting": "OUT OF SCOPE, vocational, no academic standard claimed",
+  // Deliberately excused rather than mapped, 2026-08-22. A theatre-arts alignment looks tempting
+  // (script analysis and character work sit in every state's arts standards), but this course is
+  // built for adults entering a trade: it teaches the shot-size vocabulary of a working set,
+  // self-tape technique, union protections, and casting, none of which any K-12 arts standard
+  // claims. Mapping it would mean asserting a standard the course does not actually teach, which
+  // the rule says is worse than claiming none.
+  acting: "OUT OF SCOPE, vocational, no academic standard claimed",
   // Pre-registered. This one is seeded from scripts/seed-sommelier.ts rather than
   // scripts/seed-courses.ts, so `registered` below does not currently see it and the entry is
   // inert. It is written here anyway because this is where the next author looks for the

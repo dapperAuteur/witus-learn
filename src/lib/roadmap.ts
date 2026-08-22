@@ -992,6 +992,29 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   including the Mellody Hobson financial-literacy attribution that the calendar makes and no source
   supports. Seeded by \`pnpm seed:courses\`; citations staged AFTER seeding (the extractor reads the
   DB). BAM sets price + vetted state in the admin UI.
+- ✅ **Acting: The Frame, the Stage, and the Read** (\`content/acting-course\`, source note
+  plans/future-courses/acting/acting.md). The on-camera-and-stage companion to \`voice-acting\`, and
+  the first course shipped under the **Tier 1** method in docs/course-method: BAM's note asked for
+  research first, so a five-section dossier.md sits beside it and only its section 4 entered a
+  lesson. 22 teaching lessons in Careers & Media across five sections, 472 pooled questions in six
+  banks sized to the density spec (87/100/100/56/85 plus a 44-question final serving 10), all at 80
+  to pass and shuffled, with \`pnpm audit:course acting --spec\` clean.
+  The honest scope boundary is the point of the course and it is stated in lesson 1, not buried: an
+  async text course has no reviewer, so it cannot judge a performance, and feedback is a CONDITION
+  of practice rather than a bonus (Ericsson et al. 1993, with the 2019 Macnamara replication that
+  failed to reproduce the headline taught alongside it). What it does teach is the half that
+  survives the medium: script analysis, the shot-size vocabulary and what each size does to a
+  performance, medium-by-medium adjustment as rules (stage, film, television, commercials, vertical
+  and short form, narration), drama/comedy/physical, self-tape craft, and a self-critique protocol
+  built on the Zell and Krizan finding that self-judgment is more accurate when it is specific and
+  objective. Contested claims are taught WITH their contest: Kuleshov from the 2016 replication and
+  the lost footage, never the film-mythology version. No coaching, community, or work is promised;
+  no rates, no employment statistics, and no SAG-AFTRA self-tape numbers are quoted (that one is a
+  filed research check, since sagaftra.org is unreachable to an automated fetch and the terms change
+  each bargaining cycle). Standards-excused as vocational. Seeded by \`pnpm seed:courses\`; NOT yet
+  staged for citations (stage it after seeding, since the extractor reads the DB). Recommendation to
+  BAM, not applied: make this and voice-acting a **PERFORM** series, PERFORM-00 here and PERFORM-01
+  for the voice course, which means recoding voice-acting and is his call.
 - ✅ **BVC Sommelier series, course #1: Wine** (\`feat/bvc-sommelier-wine\`, plans/53). A skills sequel
   to BVC S2E9 "Wine: Blood of the Earth": that episode teaches wine's history, this one teaches
   tasting and choosing. 52 lessons in 12 modules at WSET-2-ish depth (the four-stage grid and six
