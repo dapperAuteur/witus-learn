@@ -274,6 +274,20 @@ export const problemReports = pgTable(
     email: text("email"),
     /** new | triaged | closed */
     status: text("status").notNull().default("new"),
+    /**
+     * WHY the row was moved off `new`, in the closer's own words.
+     *
+     * This exists because the table previously had no place to record it, so closing a report threw
+     * away the only thing that makes a closed report useful: whether it was fixed, already shipped,
+     * declined, or a duplicate. A backlog that cannot say why it shrank is a backlog nobody can
+     * trust, and it is the same failure the citation rule names, where a source marked verified with
+     * no evidence behind it stops anyone from ever looking again.
+     *
+     * NEVER edit `message` to record this. That column is the reporter's own words.
+     */
+    resolution: text("resolution"),
+    /** When the status last moved off `new`. Null while the row is still untriaged. */
+    resolvedAt: timestamp("resolved_at", { withTimezone: true }),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
   (t) => [

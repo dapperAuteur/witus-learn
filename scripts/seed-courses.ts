@@ -1175,7 +1175,25 @@ async function main() {
       .values({ tenantId: learnWitus, name, sortOrder })
       .onConflictDoNothing();
   }
-  for (const { slug, course, category, priceType } of [
+  // A GUARD BLIND SPOT worth knowing: `check-series-codes` only parses literal `seedAuthoredCourse({...})`
+  // calls, so it cannot see codes set through this loop (they arrive as variables). The complementary
+  // gap exists in `check-standards-coverage`, which only sees the shorthand `{ slug: "..." }` form and
+  // not the literal calls. Between them every course is covered by one guard and no course by both.
+  //
+  // NOTE the series fields: this loop used to destructure only slug/course/category/priceType,
+  // so a series code written on an entry here was silently DROPPED rather than rejected. If you
+  // add a field to an entry below, add it here and pass it through, or it does nothing.
+  for (const {
+    slug,
+    course,
+    category,
+    priceType,
+    seriesSlug,
+    seriesTitle,
+    seriesOrder,
+    seriesCode,
+    seriesPosition,
+  } of [
     { slug: "knot-tying", course: KNOTS_COURSE, category: "Trade Skills" },
     { slug: "croquet", course: CROQUET_COURSE, category: "Sports" },
     { slug: "off-grid-survival", course: SURVIVAL_COURSE, category: "Survival" },
@@ -1183,9 +1201,21 @@ async function main() {
     // Voice Acting: The Instrument (plans/65 Phase 1). Career-craft sibling of broadcasting-break-in:
     // the instrument end to end (breath/folds/articulators, health, mic, room, script analysis,
     // genres, business). Deliberately promises no coaching, community, or work; quotes no rates
-    // (points at the community rate guides instead). Becomes VOICE-01 when a second VOICE course
-    // ships; a one-course series badge would promise a track that does not exist yet.
-    { slug: "voice-acting", course: VOICE_ACTING_COURSE, category: "Careers & Media" },
+    // (points at the community rate guides instead).
+    // PERFORM series (BAM's decision, 2026-08-22). The pair is coded PERFORM rather than VOICE
+    // because VOICE would be accurate for one of the two and wrong for the other, and the code is
+    // what a learner reads on a search-result card. `acting` is 00 because it teaches the frame
+    // (shot sizes, medium-by-medium adjustment) that the voice course assumes.
+    {
+      slug: "voice-acting",
+      course: VOICE_ACTING_COURSE,
+      category: "Careers & Media",
+      seriesSlug: "perform",
+      seriesTitle: "PERFORM: Performance Craft",
+      seriesOrder: 2,
+      seriesCode: "PERFORM",
+      seriesPosition: "01",
+    },
     // She Took the Seat and Held the Door — She Did the Work, wave 1 (plans/65 Phase 4.1; Course E
     // in plans/future-courses/she-did-the-work/00-course-proposals.md). A COHORT course: twelve
     // living sports-media figures taught as one argument about how a closed profession opens, not as
@@ -1223,7 +1253,16 @@ async function main() {
     // leaving the other bare would put a badge on a track that half of it is not in. The
     // recommendation to BAM is a PERFORM series (PERFORM-00 this course, PERFORM-01 voice-acting),
     // which means recoding voice-acting, which is his call rather than a side effect of this branch.
-    { slug: "acting", course: ACTING_COURSE, category: "Careers & Media" },
+    {
+      slug: "acting",
+      course: ACTING_COURSE,
+      category: "Careers & Media",
+      seriesSlug: "perform",
+      seriesTitle: "PERFORM: Performance Craft",
+      seriesOrder: 1,
+      seriesCode: "PERFORM",
+      seriesPosition: "00",
+    },
     { slug: "hoodoo-tradition-of-resistance", course: HOODOO_COURSE, category: "Culture & History" },
     { slug: "hoodoo-complete", course: HOODOO_COMPLETE_COURSE, category: "Culture & History" },
     // The Great Migration — homeschool-friendly cultural history, companion to Hoodoo (how
@@ -1720,6 +1759,11 @@ async function main() {
       navigationMode: "linear",
       // Insert-only: a re-seed never rewrites a price BAM set at /admin/pricing.
       priceType,
+      seriesSlug,
+      seriesTitle,
+      seriesOrder,
+      seriesCode,
+      seriesPosition,
     });
   }
   // Hold BOTH Hoodoo courses from publishing, and make the comprehensive one PRIVATE
