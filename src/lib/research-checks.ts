@@ -788,6 +788,8 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Ariel Investments shareholder letters and the Ariel-Schwab Black Investor Survey releases",
       "The 2014 TED talk transcript, which is the one verified body of her public speech (it is about race in business, not financial literacy)",
       "Archived ABC Good Morning America financial segments she presented",
+    ],
+  },
 
   // ── Acting ────────────────────────────────────────────────────────────────────────────────────
   {
@@ -815,6 +817,8 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "https://www.sagaftra.org/self-tape-guidelines-members (the member page; it returns 403 to automated fetches, so a human with a browser is needed)",
       "The SAG-AFTRA contract bulletin PDFs under sagaftra.org/sites/default/files/sa_documents/",
       "A SAG-AFTRA member services call, which will state the current terms and the agreement they sit in",
+    ],
+  },
 
   // ── The Negro Leagues: Who Owned the Game ─────────────────────────────────────────────────────
   // Six hedges written into the course on purpose. Each is a sentence a learner reads as "the
@@ -967,6 +971,8 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Leroy Paige with David Lipman, Maybe I'll Pitch Forever (Doubleday, 1962)",
       "The Sporting News and Pittsburgh Courier archives for Paige profiles, 1930s to 1950s",
       "https://baseballhall.org/hall-of-famers/paige-satchel",
+    ],
+  },
   // ── Who Gets the Credit (Black inventors and attribution) ────────────────────────────────────
   {
     key: "blair-colored-man-notation",
@@ -1092,6 +1098,9 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Al-Maqqari, Nafh al-Tib, and Pascual de Gayangos's translation (Oriental Translation Fund, 1840-1843)",
       "Encyclopaedia of Islam entries for Abbas ibn Firnas and for al-Maqqari",
       "Specialist literature on Andalusi science and on popular misrepresentations of medieval Muslim technology",
+    ],
+  },
+
   // ── Reporter track (plans/68) ─────────────────────────────────────────────────────────────────
   {
     key: "in-apra-response-deadlines",
