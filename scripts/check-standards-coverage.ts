@@ -98,6 +98,21 @@ const BACKLOG: Record<string, string> = {
   "oral-history": "MAP THIS, not excused. ELA speaking/listening plus social-studies historical inquiry",
   "digital-social-storytelling": "MAP THIS, not excused. Media literacy plus ELA production and distribution of writing",
   mockumentary: "MAP THIS, not excused. Media literacy: evaluating credibility of media claims",
+  // Reporter track (plans/68). BAM decided the standards question on 2026-08-11: NONE for now,
+  // because this is a professional track aimed at working and aspiring reporters rather than at the
+  // K-12 standards audience. Currently INERT for the same reason as the sommelier and WELL entries
+  // above: these are registered through seedAuthoredCourse calls, which `registered` below does not
+  // match. Written down anyway because this is where the next author looks for the decision.
+  //
+  // Revisit if the track is ever sold to schools. REPORT-02 (reading somebody else's report) is the
+  // strongest candidate, since it is the same source-critical numeracy that earned SCI-01 its
+  // Common Core statistics claims.
+  "reporter-what-a-beat-is": "OUT OF SCOPE for now, professional track for working reporters (plans/68)",
+  "reporter-public-records": "OUT OF SCOPE for now, professional track for working reporters (plans/68)",
+  // The strongest future mapping candidate in the track: same source-critical numeracy that earned
+  // SCI-01 its Common Core statistics claims. Excused on audience, not on rigour.
+  "reporter-reading-a-report": "OUT OF SCOPE for now, professional track for working reporters (plans/68). MAP THIS if the track is ever sold to schools",
+  "reporter-interviewing": "OUT OF SCOPE for now, professional track for working reporters (plans/68)",
 };
 
 const seed = readFileSync("scripts/seed-courses.ts", "utf-8");

@@ -207,6 +207,10 @@ import { SHIPPING_LOGISTICS_COURSE } from "./data/shipping-logistics-course";
 import { LACROSSE_COURSE } from "./data/lacrosse-course";
 import { TENNIS_COURSE } from "./data/tennis-course";
 import { CHESS_COURSE } from "./data/chess-course";
+import { REPORTER_WHAT_A_BEAT_IS_COURSE } from "./data/reporter-what-a-beat-is-course";
+import { REPORTER_PUBLIC_RECORDS_COURSE } from "./data/reporter-public-records-course";
+import { REPORTER_READING_A_REPORT_COURSE } from "./data/reporter-reading-a-report-course";
+import { REPORTER_INTERVIEWING_COURSE } from "./data/reporter-interviewing-course";
 import { AFROCENTRICITY_COURSE } from "./data/afrocentricity-course";
 import { PAN_AFRICANISM_COURSE } from "./data/pan-africanism-course";
 import { ASIA_BEFORE_EUROPEAN_COLONIZATION_COURSE } from "./data/asia-before-european-colonization-course";
@@ -866,6 +870,113 @@ async function main() {
     seriesOrder: 9,
     seriesCode: "RSRCH",
     seriesPosition: "99",
+  });
+
+  // ── The Reporter track (plans/68) ─────────────────────────────────────────
+  // Nine courses, REPORT-00 to REPORT-99, sitting on the far side of civic-documentation lesson 16
+  // ("Where documentation ends and reporting begins"), which had nothing after it. The Researcher
+  // track above asks whether an account is trustworthy; Storytelling asks whether it is well told;
+  // the Reporter asks what is happening on my beat this week and what can I prove by Thursday.
+  //
+  // Same category as the Researcher on purpose: both are professional documentation trades aimed at
+  // working adults, and splitting them would produce two near-identical categories.
+  //
+  // Standards: NONE by decision (plans/68, BAM 2026-08-11). A professional track aimed at working
+  // adults does not need a K-12 alignment; the BACKLOG entries in scripts/check-standards-coverage.ts
+  // record that as a decision rather than an oversight. Revisit if the track is ever sold to schools.
+  //
+  // Written out longhand for the same reason the Researcher block above is: a helper would make these
+  // invisible to scripts/check-series-codes.ts, which parses this file textually.
+  //
+  // REPORT-00, start-here. Carries the track's DISCLOSURE in its first lesson (plans/68 section 7a):
+  // the author does documentation work for the organization Free Press Indiana sits under, and a
+  // journalism track that omitted its own author's stake would fail the standard it teaches.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "reporter-what-a-beat-is",
+    course: REPORTER_WHAT_A_BEAT_IS_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "reporter",
+    seriesTitle: "The Reporter",
+    seriesOrder: 1,
+    seriesCode: "REPORT",
+    seriesPosition: "00",
+  });
+
+  // REPORT-01. The exact gap civic-documentation leaves: it teaches open-MEETINGS law thoroughly and
+  // stops, because a Documenter's job ends at the gavel. Records are a different statute and a
+  // different failure mode, the denial and the fee estimate. Federal FOIA is the spine because it is
+  // one text a reader anywhere can check; Indiana is the worked example of a STATE act and the
+  // lesson ends by sending the reader to their own.
+  //
+  // The Indiana lesson deliberately prints NO deadline numbers and files two source checks instead
+  // (src/lib/research-checks.ts, keys in-apra-response-deadlines and in-pac-complaint-window). A
+  // course that asserts a stale statutory deadline teaches someone to miss a real one, which is the
+  // authoritative-values rule at its most literal.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "reporter-public-records",
+    course: REPORTER_PUBLIC_RECORDS_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "reporter",
+    seriesTitle: "The Reporter",
+    seriesOrder: 2,
+    seriesCode: "REPORT",
+    seriesPosition: "01",
+  });
+
+  // REPORT-02, the spine of the track (plans/68 section 3). The 2025 Indiana Girl Report is the
+  // recurring teaching OBJECT rather than background reading, because on page 27 it documents its
+  // own limitations in its own voice: gender gaps exist in data and collection, it is not yet
+  // possible to present data free from gender bias, and the limitation should be read as an
+  // additional data point rather than as grounds for dismissal. A reporter who can read that page
+  // can read any report. Sits directly on top of SCI-01 (how-to-read-a-number).
+  //
+  // Every page number, figure, and definition in the course was read out of the PDF itself. The two
+  // disciplines plans/68 attaches to the document are followed literally: no invented composite
+  // subjects and no quotation put in a young person's mouth, and every figure carries its page and
+  // its year so the course does not become the thing it teaches learners to catch.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "reporter-reading-a-report",
+    course: REPORTER_READING_A_REPORT_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "reporter",
+    seriesTitle: "The Reporter",
+    seriesOrder: 3,
+    seriesCode: "REPORT",
+    seriesPosition: "02",
+  });
+
+  // REPORT-03. oral-history teaches the life-review interview with someone who volunteered;
+  // documentary teaches depth across a long relationship with consent renewed. Neither teaches a
+  // Tuesday afternoon with a sixteen-year-old, on deadline, with a guardian in the room, when
+  // nobody involved chose to be in a story.
+  //
+  // Legal care is deliberate: the course states that interviewing minors is governed mostly by
+  // EDITORIAL policy and state-specific law rather than one national rule, and never asserts a
+  // uniform legal requirement. FERPA is described accurately (it binds what SCHOOLS release, not
+  // what a student may say), which is the misuse reporters meet most often. Trauma material is
+  // sourced to SAMHSA's six principles and the Dart Center, and is written as interviewing craft:
+  // the course repeats that a reporter is not a clinician and does not assess anyone's condition.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "reporter-interviewing",
+    course: REPORTER_INTERVIEWING_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "reporter",
+    seriesTitle: "The Reporter",
+    seriesOrder: 4,
+    seriesCode: "REPORT",
+    seriesPosition: "03",
   });
 
   // Genealogy for yourself and your community. Plan: plans/70-genealogy-course.md.
