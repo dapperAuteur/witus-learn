@@ -716,6 +716,35 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Any NBHWC-approved program's own reading list, which may cite the evidence the handbook relies on",
     ],
   },
+
+  // ── Acting ────────────────────────────────────────────────────────────────────────────────────
+  {
+    key: "sag-aftra-self-tape-terms",
+    course: "acting",
+    lesson: "the-self-tape",
+    quote:
+      "The specific numbers change with each bargaining cycle, so this course does not quote them; read the current terms on SAG-AFTRA's own self-tape guidelines page before you accept an unreasonable request as normal",
+    title: "SAG-AFTRA: what do the current self-tape audition protections actually say?",
+    severity: "medium",
+    question:
+      "Under the CURRENT SAG-AFTRA TV/Theatrical and Commercials agreements, what are the actual self-tape audition terms: the maximum pages for a first audition and for a callback, the minimum preparation time, whether memorization can be required, and any technical or resolution ceiling? Quote the operative language and name the agreement and its effective dates.",
+    claim:
+      "The course states only that protections EXIST and names the four things they cover (pages, notice, memorization, technical standard), and deliberately quotes no number, pointing the learner at sagaftra.org instead.",
+    stakes:
+      "A performer who does not know the terms accepts a 20-page overnight self-tape as normal, which is exactly what the protections were bargained to stop. Naming the numbers in the lesson would make it materially more useful. Quoting a stale number would be worse than the current hedge, because a learner would cite it to a producer and be wrong.",
+    needs: [
+      "The page limits for a first audition and for a callback, quoted, with the agreement they come from",
+      "The minimum preparation time and how weekends are handled",
+      "Whether memorization can be required, and what happens if it is",
+      "Any technical or resolution ceiling, stated as a ceiling or a floor",
+      "The effective dates of the agreement these come from, so the lesson can say when they were current",
+    ],
+    where: [
+      "https://www.sagaftra.org/self-tape-guidelines-members (the member page; it returns 403 to automated fetches, so a human with a browser is needed)",
+      "The SAG-AFTRA contract bulletin PDFs under sagaftra.org/sites/default/files/sa_documents/",
+      "A SAG-AFTRA member services call, which will state the current terms and the agreement they sit in",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {

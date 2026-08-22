@@ -25,6 +25,7 @@ import { SURVIVAL_COURSE } from "./data/survival-course";
 import { FOOTBALL_COURSE } from "./data/football-course";
 import { BROADCASTING_COURSE } from "./data/broadcasting-course";
 import { VOICE_ACTING_COURSE } from "./data/voice-acting-course";
+import { ACTING_COURSE } from "./data/acting-course";
 import { GOLF_COURSE } from "./data/golf-course";
 import { HOODOO_COURSE } from "./data/hoodoo-course";
 import { HOODOO_COMPLETE_COURSE } from "./data/hoodoo-complete-course";
@@ -1069,6 +1070,20 @@ async function main() {
     // (points at the community rate guides instead). Becomes VOICE-01 when a second VOICE course
     // ships; a one-course series badge would promise a track that does not exist yet.
     { slug: "voice-acting", course: VOICE_ACTING_COURSE, category: "Careers & Media" },
+    // Acting: The Frame, the Stage, and the Read (source note: plans/future-courses/acting/acting.md,
+    // which asked for research FIRST, so this shipped Tier 1 with a dossier beside that note). The
+    // on-camera-and-stage companion to voice-acting: script analysis, the shot-size vocabulary and
+    // what each size does to a performance, medium-by-medium adjustment (stage, film, television,
+    // commercials, vertical/short form, narration), drama/comedy/physical, self-tape craft, a
+    // self-critique protocol, and the business. Its FIRST lesson states the scope boundary out loud:
+    // an async text course cannot give feedback on a performance, so it teaches the half that
+    // survives the medium and promises no coaching, community, or work.
+    //
+    // NOT given a seriesCode yet. voice-acting carries none either, and coding one of a pair while
+    // leaving the other bare would put a badge on a track that half of it is not in. The
+    // recommendation to BAM is a PERFORM series (PERFORM-00 this course, PERFORM-01 voice-acting),
+    // which means recoding voice-acting, which is his call rather than a side effect of this branch.
+    { slug: "acting", course: ACTING_COURSE, category: "Careers & Media" },
     { slug: "hoodoo-tradition-of-resistance", course: HOODOO_COURSE, category: "Culture & History" },
     { slug: "hoodoo-complete", course: HOODOO_COMPLETE_COURSE, category: "Culture & History" },
     // The Great Migration — homeschool-friendly cultural history, companion to Hoodoo (how
