@@ -222,6 +222,1149 @@ Goldstein, T. R., & Bloom, P. (2011). The mind on stage: Why cognitive scientist
 Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University Press.`,
     },
 
+    {
+      slug: "quiz-what-can-be-taught",
+      title: "5 · Quiz: what can be taught at a distance",
+      section: "Section 1 · What can be taught at a distance",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What does this course say it structurally cannot do?",
+            options: [
+              "Judge your performance",
+              "Explain what the different shot sizes are called on a working set",
+              "Describe how a stage performance differs from a performance for a camera",
+              "Set out the technical requirements of a usable self-tape recording",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The platform has no upload, no reviewer, and no live session, so nothing here can hear your voice, see your face, or tell you a beat went flat. The other three are declarative knowledge that prose delivers perfectly well.",
+            sourceLessonSlug: "what-this-course-can-teach",
+          },
+          {
+            prompt: "Why is the absence of a reviewer treated as a serious problem rather than a minor gap?",
+            options: [
+              "Practice needs feedback to improve you",
+              "Learners tend to lose motivation when nobody is watching their submitted work",
+              "Courses without a grading component are not accepted for professional credentials",
+              "Recorded material cannot be stored securely enough for casting use anyway",
+            ],
+            correctIndex: 0,
+            explanation:
+              "In the framework that dominates research on skill acquisition, practice improves you when the task is well defined and something reports whether the attempt got closer. Remove that and repetition stops compounding.",
+            sourceLessonSlug: "what-this-course-can-teach",
+          },
+          {
+            prompt: "What was the mean correlation between how people rated their own ability and how they actually performed?",
+            options: [
+              "About .29",
+              "About .75, which is high enough to trust an unaided self-judgment",
+              "Almost exactly zero, meaning self-ratings carry no information at all",
+              "Negative, meaning confident people reliably performed worse than modest ones",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Across 22 meta-analyses the mean was .29 with a standard deviation of .11 (Zell & Krizan, 2014). That is a real relationship and a weak one, which is why the course builds a protocol rather than trusting your impression.",
+            sourceLessonSlug: "what-this-course-can-teach",
+          },
+          {
+            prompt: "What does the course say about the scientific evidence behind acting technique generally?",
+            options: [
+              "It is thin, so most technique is craft tradition",
+              "It is extensive and settled, which is why the major methods agree with one another",
+              "It exists only for stage work, because film acting is too recent to have been studied",
+              "It has been replaced entirely by neuroscience findings from the last two decades",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Naturalistic acting is a historically recent style and cognitive science has barely studied it, so almost everything taught anywhere is practitioner-refined craft rather than tested evidence (Goldstein & Bloom, 2011).",
+            sourceLessonSlug: "what-this-course-can-teach",
+          },
+          {
+            prompt: "Which of these does the course explicitly promise NOT to deliver?",
+            options: [
+              "Introductions to anyone who casts",
+              "A description of what each shot size does to the scale of a performance",
+              "A written protocol for reviewing your own recorded work more accurately",
+              "An account of how commercial work differs from dramatic work",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The refusal list is coaching, cohort, peer group, introductions, auditions, representation, and work. The other three are on the list of things the course does teach.",
+            sourceLessonSlug: "what-this-course-can-teach",
+          },
+          {
+            prompt: "Why is script analysis a good fit for a text-based course specifically?",
+            options: [
+              "It is reading, and prose teaches reading",
+              "It requires the least talent of any acting skill, so beginners can be graded fairly on it",
+              "It can be marked automatically by comparing a learner's answer against a stored key",
+              "It is the only part of acting that professional performers do not already know",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Analysis lives entirely in language and has defensible answers, which is exactly what a text medium delivers well. It is also the half most untrained work is missing.",
+            sourceLessonSlug: "what-this-course-can-teach",
+          },
+          {
+            prompt: "What is coverage?",
+            options: [
+              "The separate shots a scene is filmed in",
+              "The share of a script's pages a performer has memorized before the shooting day begins",
+              "The insurance a production carries against a performer being injured during a stunt",
+              "The range of accents and dialects a performer lists as available on their resume",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A scene is shot several times from several positions, and those separate shots are its coverage. It is why screen performance is delivered in pieces rather than continuously.",
+            sourceLessonSlug: "what-this-course-can-teach",
+          },
+          {
+            prompt: "What is a feedback loop, in the sense this lesson uses?",
+            options: [
+              "Something outside you reporting whether an attempt improved",
+              "The echo a performer hears when recording in a room that has not been acoustically treated",
+              "The repeated cycle of auditioning, being rejected, and auditioning again over a career",
+              "A performer's habit of watching their own reaction while a scene is still running",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the external report on whether the attempt got closer to the target, and it is the half of practice a course with no reviewer cannot supply for a performance.",
+            sourceLessonSlug: "what-this-course-can-teach",
+          },
+          {
+            prompt: "The course defines acting as behaving truthfully inside imaginary circumstances. What two kinds of skill does it say that combines?",
+            options: [
+              "A physical skill and a reading skill",
+              "A memorization skill and a networking skill, since most work comes through relationships",
+              "A vocal skill and a business skill, because both are needed to sustain a career",
+              "An emotional skill and a technical skill, meaning feeling deeply and operating equipment",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It names the split so the boundary makes sense: a text course can teach the reading half thoroughly and cannot supervise the physical half at all.",
+            sourceLessonSlug: "what-this-course-can-teach",
+          },
+          {
+            prompt: "Which claim about a course of this kind would be dishonest, by this lesson's own standard?",
+            options: [
+              "Finishing it makes you employable",
+              "It explains what an eyeline is and why a crew places one for you rather than for the room",
+              "It sets out the technical minimum for a self-tape that nobody will have to apologize for",
+              "It gives you a written procedure for reviewing a recorded scene more than once",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Employment depends on the market, the roles open that month, and taste, none of which a course controls. The other three are descriptions of content the course actually contains.",
+            sourceLessonSlug: "what-this-course-can-teach",
+          },
+          {
+            prompt: "What is a scope boundary, as the course uses the term?",
+            options: [
+              "The stated limit of what a course delivers",
+              "The maximum number of lessons a learner is expected to complete in a single sitting",
+              "The line between material suitable for younger learners and material that is not",
+              "The set of territories in which a course is legally permitted to be sold",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the explicit statement of what the course does and does not deliver, made in the first lesson rather than discovered later.",
+            sourceLessonSlug: "what-this-course-can-teach",
+          },
+          {
+            prompt: "Why does the course put the boundary statement in the first lesson rather than the last?",
+            options: [
+              "Everything after it depends on the boundary being true",
+              "Regulations covering online education require a disclaimer before any instruction begins",
+              "Learners who intend to request a refund are most likely to do so in the first week",
+              "The first lesson is the only one that appears on the public course page before purchase",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A course that implies coaching everywhere and admits otherwise at the end has already misled the learner. Stating the limit first is what makes the rest of the claims credible.",
+            sourceLessonSlug: "what-this-course-can-teach",
+          },
+          {
+            prompt: "What is craft tradition?",
+            options: [
+              "Technique refined by practitioners because it works",
+              "The set of union customs governing how a performer behaves on a professional set",
+              "The historical repertoire of plays a classically trained performer is expected to know",
+              "Technique that has been tested experimentally and found to produce measurable results",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is knowledge believed because it produces usable results in the room rather than because it was tested, and it deserves respect on exactly those grounds and no others.",
+            sourceLessonSlug: "what-this-course-can-teach",
+          },
+          {
+            prompt: "Which of these is on the course's list of what it does teach?",
+            options: [
+              "Medium-by-medium adjustment, as rules",
+              "Live timing to an audience, practiced weekly in front of a group of your peers",
+              "One-to-one correction of your physical habits by a trained movement teacher",
+              "A guaranteed introduction to a casting director once the final assessment is passed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Stage, film, episodic, commercial, vertical, and narration differences are describable in words, so they are teachable here. The other three all require another human being.",
+            sourceLessonSlug: "what-this-course-can-teach",
+          },
+          {
+            prompt: "Why does knowing the vocabulary of the frame matter to a performer at all?",
+            options: [
+              "You cannot adjust to a frame you cannot name",
+              "Crews expect performers to be able to operate a camera during rehearsal setups",
+              "Casting platforms require the terminology to be listed among a performer's special skills",
+              "Union agreements are written in that vocabulary and cannot otherwise be understood",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The frame decides what an audience can see, and what the audience cannot see does not exist. A performer who cannot follow the naming is guessing at their own most important variable.",
+            sourceLessonSlug: "what-this-course-can-teach",
+          },
+          {
+            prompt: "According to the lesson, what does practice become once you remove the part that tells you whether you improved?",
+            options: [
+              "Repetition",
+              "A rehearsal, which is still useful because it fixes the shape of the material",
+              "Deliberate practice, which is the technical term for unsupervised work",
+              "Muscle memory, which is the most durable form of learning available to a performer",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson draws the line precisely there: without feedback you are repeating rather than practicing, which is why the self-critique protocol later in the course exists.",
+            sourceLessonSlug: "what-this-course-can-teach",
+          },
+          {
+            prompt: "What does the lesson say is the honest best case for what the course can do for you?",
+            options: [
+              "Remove ignorance as the reason you are passed over",
+              "Compress about two years of conservatory training into a self-paced format you can finish faster",
+              "Replace the need for classes, since the protocol substitutes for a teacher's eye",
+              "Guarantee that your recorded work will be watched all the way through by anyone casting",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The stated aim is that the reason you get passed over is not that you did not know where the camera was, that your tape was unreadable, or that you never read the scene.",
+            sourceLessonSlug: "what-this-course-can-teach",
+          },
+          {
+            prompt: "Which of these does the lesson treat as a research finding rather than as craft tradition?",
+            options: [
+              "The average accuracy of self-ratings of ability",
+              "The instruction to make a performance smaller when the camera moves in for a close-up",
+              "The advice to aim an action at another person rather than describing an emotion",
+              "The recommendation to mark unit breaks on a script before rehearsing it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The .29 figure comes from a published metasynthesis. The other three are craft, believed because they work, and the course labels them that way rather than dressing them in evidence.",
+            sourceLessonSlug: "what-this-course-can-teach",
+          },
+          {
+            prompt: "What is the lesson's stance toward schools that do sell cohorts, coaching, and industry access?",
+            options: [
+              "Some genuinely deliver them",
+              "They are misleading learners, because no course of any format can improve a performance",
+              "They are the only legitimate way to learn, so this course is a supplement rather than a course",
+              "Their claims cannot be assessed, so learners should avoid all paid training entirely",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson makes no accusation against live schools. Its point is narrower: this course is not built to deliver those things and will not imply that it is.",
+            sourceLessonSlug: "what-this-course-can-teach",
+          },
+          {
+            prompt: "Why does the course flag which of its claims are craft and which are evidence?",
+            options: [
+              "Telling them apart is a professional skill",
+              "Publishers require every educational claim to carry a numbered evidence rating",
+              "Craft claims are unreliable and should be treated as optional reading",
+              "Evidence-based claims are the only ones that can appear in assessment questions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Acting talk is full of confident psychology that was never tested, so knowing which is which protects a performer from being sold a technique on borrowed authority.",
+            sourceLessonSlug: "what-this-course-can-teach",
+          },
+          {
+            prompt: "The lesson lists seven things the course teaches. Which pair of them are the most procedural?",
+            options: [
+              "Self-tape craft and the business",
+              "Reading a script and playing an action, since both come with fixed correct answers",
+              "Genre demands and the vocabulary of the frame, because both are judged by an instructor",
+              "The self-critique protocol and medium adjustment, because both require a partner",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Framing, light, sound, slates, file naming, headshots, resumes, and how casting flows are procedural knowledge, which is why they survive a text medium without loss.",
+            sourceLessonSlug: "what-this-course-can-teach",
+          },
+          {
+            prompt: "What is the correct reading of the .29 correlation for a performer working alone?",
+            options: [
+              "Your impression of a take is weak evidence",
+              "Your impression of a take is worthless, so recorded work should not be reviewed at all",
+              "Your impression is accurate as long as you are experienced in the medium being reviewed",
+              "Your impression improves automatically with the number of takes you have recorded",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A moderate correlation means self-judgment carries some signal and a lot of noise, which argues for a structured protocol rather than for either trusting or abandoning it.",
+            sourceLessonSlug: "what-this-course-can-teach",
+          },
+          {
+            prompt: "What does a usable statement of what a character wants have to be?",
+            options: [
+              "Specific enough to tell whether they got it",
+              "Broad enough to cover the character's behavior across the whole of the script",
+              "Emotionally resonant, so that the performer can feel it before the scene begins",
+              "Agreed with the other performer in the scene before either of them has read it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Getting a sister to admit she read your mail passes the test. Being respected does not, because nothing in the scene can settle whether it happened.",
+            sourceLessonSlug: "reading-a-script",
+          },
+          {
+            prompt: "Why does \"to be respected\" fail as a statement of a character's want in a scene?",
+            options: [
+              "You could not tell whether they got it",
+              "It describes a negative goal, and characters can only pursue things they want to gain",
+              "It belongs to the performer rather than to the character, which confuses the two",
+              "It is a feeling, and feelings are the only thing a performer is forbidden to want",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A want has to be achievable or refusable inside the scene. Respect is a condition rather than an outcome, so nothing that happens can settle it.",
+            sourceLessonSlug: "reading-a-script",
+          },
+          {
+            prompt: "What does the lesson say happens when you cannot find the obstacle in a scene?",
+            options: [
+              "You have probably misread whose scene it is",
+              "The scene is a transitional one and should be played at a lower level throughout",
+              "The obstacle is internal, which means the character is fighting only themselves",
+              "The writer has made an error and the performer should ask for the line to be cut",
+            ],
+            correctIndex: 0,
+            explanation:
+              "If nothing is in the way there is no scene, so a missing obstacle is nearly always a sign the analysis is centered on the wrong character.",
+            sourceLessonSlug: "reading-a-script",
+          },
+          {
+            prompt: "What is a tactic?",
+            options: [
+              "One attempt at the want",
+              "The overall strategy a character has worked out before the scene begins",
+              "The physical position a performer takes so that the camera can see them clearly",
+              "A rehearsed piece of business used to fill a pause while another character speaks",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A scene is a sequence of attempts, charm then bully then plead, and that sequence is the part that actually gets performed.",
+            sourceLessonSlug: "reading-a-script",
+          },
+          {
+            prompt: "Which of these marks the end of a unit?",
+            options: [
+              "A tactic fails and is abandoned",
+              "The performer runs out of breath and has to take another one mid-speech",
+              "A page of the script ends and the next page begins with a new speaker",
+              "The camera moves to a different position for the next portion of coverage",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Units turn on change: new information, an abandoned tactic, an entrance or exit, or a change of subject. Page breaks and camera setups are production facts, not dramatic ones.",
+            sourceLessonSlug: "reading-a-script",
+          },
+          {
+            prompt: "How many units does the lesson say a scene usually breaks into?",
+            options: [
+              "Two to six",
+              "One, because a scene is by definition a single unbroken dramatic action",
+              "Roughly one for every page of script, which is how directors plan rehearsal time",
+              "As many as there are lines of dialogue, since each line changes the situation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson gives two to six as the usual range, and the point of marking them is that an unmarked turn gets played through as though nothing happened.",
+            sourceLessonSlug: "reading-a-script",
+          },
+          {
+            prompt: "What are stakes?",
+            options: [
+              "What it costs if the character fails",
+              "The amount of screen time a character has been allocated across the whole production",
+              "The emotional intensity a director asks for on a scale agreed during rehearsal",
+              "The commitments a performer has made to other productions during the same period",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Stakes set the temperature. Two people can play the same want at completely different levels depending on what failing actually costs, and beginners usually leave the dial untouched.",
+            sourceLessonSlug: "reading-a-script",
+          },
+          {
+            prompt: "What is subtext, stated without mystique?",
+            options: [
+              "The gap between what is said and what is being done",
+              "The backstory a performer invents to explain a character's behavior before the script starts",
+              "The writer's political intention, which sits underneath the surface events of the story",
+              "The lines a character thinks but never says, written into the margin during rehearsal",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The line \"it is fine\" can forgive, threaten, or ask to be asked again, and only the want, the obstacle, and the preceding unit decide which of those is happening.",
+            sourceLessonSlug: "reading-a-script",
+          },
+          {
+            prompt: "Why must analysis precede a decision about how to deliver a line?",
+            options: [
+              "A line's meaning is set by its function",
+              "Directors expect performers to arrive with the line readings already fixed and unchangeable",
+              "Delivery decisions are physical, and physical choices must always be made last",
+              "Reading a line aloud too early makes it harder to memorize accurately later",
+            ],
+            correctIndex: 0,
+            explanation:
+              "You cannot decide how to say a line whose job you have not identified, which is why the four questions come before any choice about sound.",
+            sourceLessonSlug: "reading-a-script",
+          },
+          {
+            prompt: "The lesson gives four questions to ask of every scene. Which of these is one of them?",
+            options: [
+              "What is in the way?",
+              "What genre is this piece, and how does that change the level of realism required?",
+              "Which other characters have more lines than mine in this particular sequence?",
+              "How long has this character known the other person in the room before now?",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The four are the want, the obstacle, what they do about it, and the cost of failing. Genre and line counts are useful context but they are not the analysis.",
+            sourceLessonSlug: "reading-a-script",
+          },
+          {
+            prompt: "What does the lesson say most weak performances actually are?",
+            options: [
+              "Reading problems",
+              "Confidence problems, which resolve on their own once a performer has enough experience",
+              "Technical problems caused by unfamiliarity with the equipment being used",
+              "Casting problems, because the performer was not suited to the part in the first place",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The failure is usually made on the page, before anyone stood up: the performer knew what the scene was about and never decided what their character was doing in it.",
+            sourceLessonSlug: "reading-a-script",
+          },
+          {
+            prompt: "What should you write down when analyzing a scene on paper, according to the exercise?",
+            options: [
+              "The want, obstacle, tactics, and cost",
+              "A full biography for the character covering childhood, education, and previous relationships",
+              "The emotional state you intend to be in at the start and at the end of the scene",
+              "Every line you intend to stress, marked with the pitch you plan to use on each",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One sentence each, plus the unit breaks marked. If two of those sentences come out vague, the scene will be vague, and that diagnosis is available with no camera and no coach.",
+            sourceLessonSlug: "reading-a-script",
+          },
+          {
+            prompt: "What kind of thing counts as an obstacle?",
+            options: [
+              "Another person's opposing want",
+              "A camera position that makes the intended blocking impossible to perform as written",
+              "A line of dialogue the performer finds difficult to say without stumbling over it",
+              "The absence of a rehearsal period, which prevents choices from being tested in advance",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson lists an opposing want, a fact, a rule, a fear, a closed door, or the clock. Production difficulties are real problems but they are not the character's.",
+            sourceLessonSlug: "reading-a-script",
+          },
+          {
+            prompt: "Why is the part of the analysis about what a character DOES the important one for performance?",
+            options: [
+              "It is the part that is actually performed",
+              "It is the only part a director will ask about during a rehearsal on the day of shooting",
+              "It is the part that determines how many pages of coverage a scene will require",
+              "It is the easiest part to change if a scene is not working during the take",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The want and the obstacle are conditions. The sequence of attempts is behavior, and behavior is what an audience actually watches.",
+            sourceLessonSlug: "reading-a-script",
+          },
+          {
+            prompt: "The lesson says a want should be located in this scene rather than in a life. What does that rule out?",
+            options: [
+              "Statements about what the character wants overall",
+              "Statements naming another person, because a want must be about the character themselves",
+              "Statements involving objects, because physical goals are too literal to play",
+              "Statements the performer disagrees with morally, because those cannot be pursued honestly",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The question is what they want in this room, in these three minutes, from the person in front of them. Life goals are context and do not tell you what to do next.",
+            sourceLessonSlug: "reading-a-script",
+          },
+          {
+            prompt: "Why does the lesson recommend marking unit turns with a pencil?",
+            options: [
+              "An unmarked turn gets played through",
+              "Directors require annotated scripts to be submitted before the first rehearsal",
+              "Written marks are the only thing a performer can legally take onto a closed set",
+              "Marking is a memorization technique that makes the lines faster to learn",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is called the single most useful thing you can do with a pencil, because a turn you have not noticed is a turn you perform as though nothing changed.",
+            sourceLessonSlug: "reading-a-script",
+          },
+          {
+            prompt: "Which reading of \"It is fine\" does the line itself decide?",
+            options: [
+              "None of them",
+              "Forgiveness, because that is the plain meaning of the words as written",
+              "A threat, because flat statements in dramatic writing are conventionally hostile",
+              "A request to be asked again, because short lines invite a follow-up question",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The line is neutral. The want, the obstacle, and the unit before it decide the function, which is precisely why analysis comes before delivery.",
+            sourceLessonSlug: "reading-a-script",
+          },
+          {
+            prompt: "Which of these applies to a scene in any medium, according to this lesson?",
+            options: [
+              "The four questions",
+              "The requirement to mark floor positions so that focus can be pulled accurately",
+              "The convention of playing to the back of the house rather than to a partner",
+              "The rule that lines must be delivered exactly as written for legal reasons",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The want, obstacle, tactics, and stakes are asked of every scene in every medium. The other three are medium-specific constraints covered later in the course.",
+            sourceLessonSlug: "reading-a-script",
+          },
+          {
+            prompt: "What happens to a scene's temperature when the stakes are left unexamined?",
+            options: [
+              "It sits at a default level",
+              "It rises, because uncertainty about consequences makes a performer anxious on camera",
+              "It becomes erratic, changing without reason between one take and the next",
+              "It has no effect, because temperature is set entirely by the size of the want",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson calls stakes the dial most beginners leave at the factory setting, which is why correctly identified wants still produce flat scenes.",
+            sourceLessonSlug: "reading-a-script",
+          },
+          {
+            prompt: "The lesson says a scene is not one continuous thing. What is it instead?",
+            options: [
+              "A series of units",
+              "A single sustained emotional state that gradually intensifies from beginning to end",
+              "A set of camera setups, each of which is prepared and performed independently",
+              "Two halves divided by the point at which the main character speaks their longest line",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Units are the working segments, and their boundaries are where something changes. Camera setups are a production division and do not align with them.",
+            sourceLessonSlug: "reading-a-script",
+          },
+          {
+            prompt: "Why does the lesson say a want must name a specific person or thing?",
+            options: [
+              "So the scene can settle whether it happened",
+              "So the other performer can be told about it in advance and play the opposite",
+              "So the director has something concrete to write in the shooting schedule",
+              "So the want can be stated in a single sentence during an audition discussion",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Specificity is what makes a want testable inside the scene, which is what separates a playable objective from a mood.",
+            sourceLessonSlug: "reading-a-script",
+          },
+          {
+            prompt: "According to the lesson, the diagnosis of a vague scene is available to you under what conditions?",
+            options: [
+              "Right now, with no camera and no coach",
+              "Only after recording the scene and reviewing the footage several times",
+              "Only in a rehearsal room with another performer reading the opposite part",
+              "Only once a director has given a note identifying which section is unclear",
+            ],
+            correctIndex: 0,
+            explanation:
+              "If two of the four written sentences are vague, the scene will be vague. That is a paper diagnosis and it is the strongest argument for the exercise.",
+            sourceLessonSlug: "reading-a-script",
+          },
+          {
+            prompt: "What does the course say you cannot play?",
+            options: [
+              "An emotion",
+              "An action, unless the other performer has agreed to receive it in the same way",
+              "A tactic, because tactics are decided by the director rather than by the performer",
+              "A want, since wants belong to the character and not to the person performing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "You can play an action, and the emotion is what a viewer reads off the result. Told to be sad, a performer has nothing to do and starts performing the signs of sadness.",
+            sourceLessonSlug: "playing-an-action",
+          },
+          {
+            prompt: "What is indicating?",
+            options: [
+              "Performing the signs of an emotion",
+              "Pointing out an object or a person so that the camera knows where to look next",
+              "Giving another performer a physical signal that you are about to change tactics",
+              "Marking a script with symbols showing where the emphasis in each line should land",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is displaying the face, the breath, and the slowed voice of an emotion instead of doing something, and audiences catch it because a person genuinely losing something usually fights to keep it.",
+            sourceLessonSlug: "playing-an-action",
+          },
+          {
+            prompt: "Why do audiences catch indicating so reliably?",
+            options: [
+              "Real people fight rather than display",
+              "The face has more muscles than any other part of the body and is hardest to control",
+              "Audiences have been trained by decades of naturalistic screen work to spot technique",
+              "Indicating always involves louder delivery, and volume is the easiest signal to detect",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Someone genuinely losing something is usually trying to hold on to it, so a display of the loss contradicts what people actually do under pressure.",
+            sourceLessonSlug: "playing-an-action",
+          },
+          {
+            prompt: "What is a result note?",
+            options: [
+              "A note describing the finished effect",
+              "A note written down by the script supervisor recording what happened in each take",
+              "A note the editor sends back asking for a specific line to be re-recorded later",
+              "A note from a producer about how a scene tested with a preview audience",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Be angrier, be more likeable, make it sadder. A description of the outcome is not an instruction, which is why it leaves a performer with nothing to do.",
+            sourceLessonSlug: "playing-an-action",
+          },
+          {
+            prompt: "What do all the playable versions in the lesson's translation table have in common?",
+            options: [
+              "A target",
+              "A physical component, so that the performer always has something concrete to do with the body",
+              "A time limit, so that the attempt has to succeed or fail before the scene ends",
+              "A negative form, since characters are more active when they are avoiding something",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The verb is aimed at someone, which is what produces behavior rather than a facial expression. A verb aimed at nobody is a result wearing a verb's clothing.",
+            sourceLessonSlug: "playing-an-action",
+          },
+          {
+            prompt: "Which of these is a result wearing a verb's clothing?",
+            options: [
+              "Relax",
+              "Get her to sit back down before she reaches the door",
+              "Find out whether he is armed without asking him directly about it",
+              "Make him laugh hard enough that he loses his place in the argument",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Relax has no target and describes a state. The other three are aimed at another person and could be attempted directly.",
+            sourceLessonSlug: "playing-an-action",
+          },
+          {
+            prompt: "Where does the feeling come from, if it is not summoned?",
+            options: [
+              "It is a byproduct of really trying",
+              "It is generated by recalling a comparable event from the performer's own past",
+              "It is supplied by the music and the editing once the footage reaches post-production",
+              "It arrives from the other performer, who is responsible for provoking it in the scene",
+            ],
+            correctIndex: 0,
+            explanation:
+              "If you genuinely try to get something and are genuinely blocked, frustration arrives on its own, take after take, which is what makes it durable at eleven at night.",
+            sourceLessonSlug: "playing-an-action",
+          },
+          {
+            prompt: "Why is a played action more durable across many takes than a summoned emotion?",
+            options: [
+              "It regenerates on its own each take",
+              "It requires less physical energy, so the performer is less tired by the end of the day",
+              "It is written into the script, so the performer does not have to remember it",
+              "It is the same in every take, which means the editor can cut between takes freely",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Really trying and really being blocked produces the feeling fresh every time, whereas a manufactured emotion has to be produced again from scratch and gets harder as the day wears on.",
+            sourceLessonSlug: "playing-an-action",
+          },
+          {
+            prompt: "How does the previous lesson's analysis feed directly into playable instructions?",
+            options: [
+              "The want gives the target and the obstacle guarantees difficulty",
+              "The unit breaks tell the performer where the camera will cut, which sets the pace",
+              "The stakes decide which lines should be memorized first during preparation",
+              "The subtext supplies the emotion, which the performer then reproduces on cue",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The want gives you someone to aim at, the obstacle ensures you will not get it easily, and the tactics are already the verbs. Do the reading and the instructions fall out.",
+            sourceLessonSlug: "playing-an-action",
+          },
+          {
+            prompt: "Which of these does the lesson name as a legitimate action?",
+            options: [
+              "Listening",
+              "Feeling deeply about the other character's situation while they are speaking",
+              "Remembering the blocking so that the next move happens at the right moment",
+              "Watching your own performance to check that the level is where you intended",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Listening, waiting, and deciding not to say the thing are all actions, and often the strongest in the scene. What makes something playable is that it is being done, not that it is forceful.",
+            sourceLessonSlug: "playing-an-action",
+          },
+          {
+            prompt: "What makes something playable, according to the lesson's own test?",
+            options: [
+              "It is being done",
+              "It is forceful enough to change the other character's behavior within the scene",
+              "It can be described in a single word, so it is easy to remember during a take",
+              "It matches the emotion the writer intended when the scene was first written",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson explicitly warns that not every action is aggressive. Waiting and deciding not to speak qualify, because the test is doing rather than intensity.",
+            sourceLessonSlug: "playing-an-action",
+          },
+          {
+            prompt: "Convert \"show that you are scared\" into something playable, following the lesson's table.",
+            options: [
+              "Find out whether he is armed",
+              "Let the fear register clearly on your face before you say the next line",
+              "Raise the pitch of your voice and shorten the breath so the audience reads tension",
+              "Recall the most frightened you have ever been and hold on to that during the take",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The table's version is finding out whether he is armed without asking. It has a target, it can be attempted, and the fear becomes a byproduct rather than a display.",
+            sourceLessonSlug: "playing-an-action",
+          },
+          {
+            prompt: "Why does telling a performer to \"be sad\" leave them with nothing to do?",
+            options: [
+              "It names a state, not an act",
+              "It is too general, and would work if the director specified how sad on a numbered scale",
+              "It refers to the character rather than to the performer, which confuses the instruction",
+              "It requires information about the character's past that is usually not in the script",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A state is a description of the finished effect. With nothing to do, the performer falls back on displaying the signs, which is the definition of indicating.",
+            sourceLessonSlug: "playing-an-action",
+          },
+          {
+            prompt: "What does the lesson mean by a target?",
+            options: [
+              "The person an action is aimed at",
+              "The exact spot on the floor where a performer must stop for the camera",
+              "The emotional level a performer is trying to reach by the end of a scene",
+              "The audience member a stage performer picks to play the whole speech toward",
+            ],
+            correctIndex: 0,
+            explanation:
+              "An action done TO someone produces behavior. Without a target the verb collapses back into a description of a state.",
+            sourceLessonSlug: "playing-an-action",
+          },
+          {
+            prompt: "According to the lesson, which is the single most common note in the craft?",
+            options: [
+              "You cannot play an emotion",
+              "You are moving too much for the size of the frame you are currently in",
+              "You are speaking too quietly for the microphone position that has been set",
+              "You are not matching what you did physically in the previous take",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson opens by naming it as the most common single note and the most useful thing in the section, because everything else in the analysis serves it.",
+            sourceLessonSlug: "playing-an-action",
+          },
+          {
+            prompt: "A director says \"more warmth.\" What kind of note is that?",
+            options: [
+              "A result note",
+              "A playable action, because warmth is something one person directs at another",
+              "A technical note about vocal quality rather than about the performance itself",
+              "A note about the lighting, which affects how a performance appears on screen",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It describes the finished effect. The lesson's playable translation is getting her to sit back down, which has a target and can be attempted.",
+            sourceLessonSlug: "playing-an-action",
+          },
+          {
+            prompt: "Why does the lesson say the translation skill is worth drilling on paper?",
+            options: [
+              "It converts unplayable notes into things you can do",
+              "Directors respond better to performers who can quote the technical terminology back",
+              "Written translations can be submitted as evidence of preparation before a shoot",
+              "Paper work is the only part of the process that a course can grade automatically",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Result notes arrive constantly and cannot be executed as given, so the ability to turn one into a targeted verb in the moment is the practical skill.",
+            sourceLessonSlug: "playing-an-action",
+          },
+          {
+            prompt: "What happens to a manufactured emotion as a shooting day goes on?",
+            options: [
+              "It gets visibly harder to produce",
+              "It becomes more reliable, because repetition strengthens the association over time",
+              "It stays constant, which is why some performers prefer it for continuity purposes",
+              "It transfers to the other performer, who begins to mirror it without meaning to",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It has to be produced fresh each time and manufacturing gets harder with fatigue, which is exactly the problem a played action does not have.",
+            sourceLessonSlug: "playing-an-action",
+          },
+          {
+            prompt: "Which pairing correctly matches a result note to its playable version from the lesson?",
+            options: [
+              "Be funnier becomes catch him out before he finishes",
+              "Be more upset becomes let the tears come before the line rather than after it",
+              "More warmth becomes soften the voice and slow the delivery for the whole scene",
+              "Be funnier becomes find the comedy in the situation and let the audience see it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Catching him out before he finishes the sentence has a target and can be attempted. The others describe effects or vocal settings rather than acts.",
+            sourceLessonSlug: "playing-an-action",
+          },
+          {
+            prompt: "The lesson calls the feeling a byproduct. Why is that framed as good news?",
+            options: [
+              "Byproducts are reliable",
+              "Byproducts require no preparation, which shortens the time needed before a shoot",
+              "Byproducts belong to the character rather than the performer, so they cost nothing",
+              "Byproducts can be adjusted by the director between takes without a new rehearsal",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Something produced by genuinely trying and being blocked recurs by itself, which is more dependable than a feeling that must be summoned on demand.",
+            sourceLessonSlug: "playing-an-action",
+          },
+          {
+            prompt: "Which of these is closest to the lesson's caution about aggressive verbs?",
+            options: [
+              "Not every action is forceful",
+              "Aggressive verbs should be avoided entirely because they push a scene toward melodrama",
+              "Aggressive verbs work only in drama, and comedy requires gentler ones throughout",
+              "Aggressive verbs are the most durable, so they should be the default choice",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Listening, waiting, and choosing silence are actions and are frequently the strongest choice available. Doing is the criterion, not force.",
+            sourceLessonSlug: "playing-an-action",
+          },
+          {
+            prompt: "What does a performer do when handed a result note they cannot execute?",
+            options: [
+              "Convert it into a verb aimed at someone",
+              "Ask the director to demonstrate the reading they have in mind before the next take",
+              "Repeat the previous take at a higher level of energy until the note is satisfied",
+              "Explain that the note is not playable and request a different one instead",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The translation happens privately and immediately. Arguing about the note's form wastes time a set does not have and does not change what is being asked for.",
+            sourceLessonSlug: "playing-an-action",
+          },
+          {
+            prompt: "What do performers report actually feeling during a show, according to the field-study evidence?",
+            options: [
+              "The emotions of performing",
+              "The character's emotions, reproduced faithfully each night through recall techniques",
+              "Nothing at all, because trained performers suppress feeling in order to stay accurate",
+              "A blend that becomes more like the character's the longer a production runs",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Konijn's argument is that task emotions, concentration, nerves, and the pleasure of it going well, dominate what performers report, while the character's emotion is constructed and delivered.",
+            sourceLessonSlug: "what-actors-actually-feel",
+          },
+          {
+            prompt: "What are task emotions?",
+            options: [
+              "Feelings belonging to the act of performing",
+              "Feelings a performer deliberately generates during preparation and stores for later use",
+              "Feelings the audience experiences and transmits back to the stage during a live show",
+              "Feelings a character has about the specific job or duty the plot has assigned them",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Concentration, nerves, and satisfaction belong to the performer doing the job, and the evidence suggests they dominate what performers actually report.",
+            sourceLessonSlug: "what-actors-actually-feel",
+          },
+          {
+            prompt: "What is the craft consequence of the task-emotions finding?",
+            options: [
+              "You do not have to feel it to play it",
+              "You should avoid emotionally demanding roles until you have several years of experience",
+              "You should rehearse each emotion separately before assembling them into a performance",
+              "You should tell a director when you are unable to reach the required feeling on a take",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A performer who believes the character's feeling must arrive before the playing can start has given themselves a job nobody can do eight times a week.",
+            sourceLessonSlug: "what-actors-actually-feel",
+          },
+          {
+            prompt: "How many actors were in the fMRI study of dramatic acting?",
+            options: [
+              "15",
+              "About 200, which is why the finding is considered statistically robust",
+              "Two, one playing Romeo and one playing Juliet, scanned simultaneously",
+              "None, because the study used untrained volunteers rather than trained performers",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Fifteen university-trained actors answered hypothetical questions as themselves or as Romeo or Juliet (Brown et al., 2019). The sample size is taught alongside the finding so it cannot be overclaimed.",
+            sourceLessonSlug: "what-actors-actually-feel",
+          },
+          {
+            prompt: "What did answering in character produce in the fMRI study?",
+            options: [
+              "Reductions in activity, including cortical midline deactivations",
+              "Increased activity throughout the frontal lobe, consistent with heightened concentration",
+              "Activation of the same regions used when recalling a real autobiographical memory",
+              "No measurable difference from answering as oneself, which surprised the researchers",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The study reported global reductions in brain activity and deactivations in the cortical midline network, which the authors describe as possibly a loss of self.",
+            sourceLessonSlug: "what-actors-actually-feel",
+          },
+          {
+            prompt: "What is the honest limit of the fMRI result?",
+            options: [
+              "It studied questions in a scanner, not scenes",
+              "It used only stage-trained actors, so it says nothing about screen performance at all",
+              "It was never published in a peer-reviewed journal and remains a preprint",
+              "It measured blood flow rather than brain activity, so the interpretation is disputed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Fifteen people answered hypothetical questions in a scanner rather than performing with a partner. It is a real finding about one task and not an explanation of acting.",
+            sourceLessonSlug: "what-actors-actually-feel",
+          },
+          {
+            prompt: "What is the cortical midline network, in this lesson's usage?",
+            options: [
+              "Frontal-lobe regions that deactivated in the study",
+              "The bundle of fibers connecting the two hemispheres, which coordinates physical movement",
+              "The brain system responsible for storing and retrieving memorized text",
+              "The area that produces emotional responses to music and other performed art",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It includes the dorsomedial and ventromedial prefrontal cortices, and those were the regions that deactivated when actors answered in character.",
+            sourceLessonSlug: "what-actors-actually-feel",
+          },
+          {
+            prompt: "Why is the scientific literature on acting small?",
+            options: [
+              "Naturalistic acting is recent and was treated as a curiosity",
+              "Ethics boards have historically refused to approve studies involving performers",
+              "Acting cannot be measured, so no experimental design has ever been possible",
+              "The findings are commercially valuable and are therefore kept unpublished",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Realistic acting is a historically recent style and cognitive science has treated it as a curiosity rather than a subject, so the case for studying it had to be argued.",
+            sourceLessonSlug: "what-actors-actually-feel",
+          },
+          {
+            prompt: "What is the honest position the lesson recommends toward the technique you are taught?",
+            options: [
+              "Respect it as craft, not as evidence",
+              "Reject anything that has not been tested, since untested advice is likely to be harmful",
+              "Follow whichever method your first teacher used, because consistency matters most",
+              "Wait for better research before committing to any particular approach to the work",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Technique deserves respect because practitioners refined it until it produced usable results, and it should not be defended on grounds of evidence it does not have.",
+            sourceLessonSlug: "what-actors-actually-feel",
+          },
+          {
+            prompt: "What is self-auditing, and why is it a problem?",
+            options: [
+              "Monitoring your feelings mid-take, which flattens it",
+              "Reviewing your own footage after a shoot, which biases you against your best work",
+              "Keeping a written record of every take, which distracts from the next setup",
+              "Comparing yourself to other performers on set, which damages working relationships",
+            ],
+            correctIndex: 0,
+            explanation:
+              "If the measure of a good take is how much you felt, you spend the take watching yourself, which is the one thing guaranteed to flatten it.",
+            sourceLessonSlug: "what-actors-actually-feel",
+          },
+          {
+            prompt: "What does the fact that different acting traditions disagree tell you?",
+            options: [
+              "They are tools rather than truths",
+              "All but one of them must be wrong, and identifying which is a research question",
+              "The disagreements are superficial and dissolve once the terminology is translated",
+              "Performers should train exclusively in one tradition to avoid contradictory habits",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They contradict each other and all of them produce working performers, which is exactly the pattern you would expect from tools rather than doctrines. Use what makes you do something.",
+            sourceLessonSlug: "what-actors-actually-feel",
+          },
+          {
+            prompt: "How should you respond to an acting claim attached to the phrase \"studies show\"?",
+            options: [
+              "Ask which study, on how many people, doing what",
+              "Accept it, since a claim would not be published in that form unless it were supported",
+              "Reject it, because no scientific finding has ever applied usefully to performance",
+              "Check whether the claim matches the tradition you were originally trained in",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The literature is small and recent, so most claims dressed in science are craft with decoration. Three specific questions dismantle a decorated claim quickly.",
+            sourceLessonSlug: "what-actors-actually-feel",
+          },
+          {
+            prompt: "What is naturalistic acting?",
+            options: [
+              "The recent, realism-oriented style most screen work assumes",
+              "The classical tradition of heightened delivery that dominated theater before the 1900s",
+              "A rehearsal method in which performers improvise rather than working from a script",
+              "The practice of performing without makeup or costume so that the work appears unmediated",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson notes it is historically recent and that most earlier performance did not use it, which is part of why the research literature is so thin.",
+            sourceLessonSlug: "what-actors-actually-feel",
+          },
+          {
+            prompt: "What does the lesson mean when it says the character's emotion is constructed and delivered?",
+            options: [
+              "It is built and shown rather than privately suffered",
+              "It is written by the writer, so the performer contributes nothing to it",
+              "It is assembled in the edit from several takes rather than performed in one",
+              "It is produced by the audience and only appears to originate on the stage",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Konijn's account has the performer constructing the character's emotion for an audience while the emotions they actually experience belong to the task of performing.",
+            sourceLessonSlug: "what-actors-actually-feel",
+          },
+          {
+            prompt: "Which of the three practice changes does the lesson recommend regarding technique?",
+            options: [
+              "Use what makes you do something",
+              "Choose one method and apply it consistently to every role for the whole of a career",
+              "Learn every method in sequence, in the historical order in which they were developed",
+              "Prefer the method with the strongest experimental support behind it at any given time",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Because the traditions disagree and all produce working performers, the operative test is whether a technique gets you doing something rather than which lineage it belongs to.",
+            sourceLessonSlug: "what-actors-actually-feel",
+          },
+          {
+            prompt: "Why does the lesson give the sample size of the fMRI study in the text?",
+            options: [
+              "So the finding cannot be overclaimed",
+              "Because studies with fewer than 20 participants are automatically disregarded",
+              "Because the sample size determines which brain regions can be measured",
+              "Because larger studies of acting have since contradicted the original result",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Teaching the number next to the finding is what stops it becoming \"neuroscience has explained acting\", which the lesson explicitly calls overselling a small literature.",
+            sourceLessonSlug: "what-actors-actually-feel",
+          },
+          {
+            prompt: "The lesson says knowing the difference between craft tradition and a finding is itself something. What?",
+            options: [
+              "A professional skill",
+              "A requirement for union membership in most English-speaking countries",
+              "An academic concern with no bearing on what happens in a rehearsal room",
+              "A sign that a performer has been trained at a conservatory rather than privately",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is framed as a working competence, because acting talk is full of confident psychology and a performer who cannot sort it will be sold technique on borrowed authority.",
+            sourceLessonSlug: "what-actors-actually-feel",
+          },
+          {
+            prompt: "What did the authors of the fMRI study call the pattern they observed?",
+            options: [
+              "A deactivation-driven process",
+              "A heightened simulation state, in which the actor models another mind at high intensity",
+              "An emotional recall response, matching the pattern seen when recalling personal memories",
+              "A dual-attention condition, with the actor tracking both self and character at once",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Their own framing is that portraying a character seems to be a deactivation-driven process, perhaps representing a loss of self.",
+            sourceLessonSlug: "what-actors-actually-feel",
+          },
+          {
+            prompt: "What does the lesson say a performer should stop doing mid-scene?",
+            options: [
+              "Checking their own feelings",
+              "Adjusting to what the other performer is doing, since that breaks the agreed blocking",
+              "Thinking about the character's want, because analysis belongs to preparation only",
+              "Listening for direction, because notes given during a take cannot be acted on",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Auditing your feelings during a take means watching yourself, and the lesson names that as the reliable way to flatten the take.",
+            sourceLessonSlug: "what-actors-actually-feel",
+          },
+          {
+            prompt: "Which statement about acting and neuroscience would the lesson call overselling?",
+            options: [
+              "Neuroscience has explained what actors do",
+              "One study of 15 actors found reduced frontal activity when they answered in character",
+              "The scientific literature on acting is small and has only recently been argued for",
+              "Findings from a scanner task may not generalize to performing a scene with a partner",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson says plainly that anyone claiming neuroscience has explained acting is overselling a small literature. The other three are accurate statements of the evidence.",
+            sourceLessonSlug: "what-actors-actually-feel",
+          },
+          {
+            prompt: "Why does this lesson exist in a practical acting course at all?",
+            options: [
+              "Sorting evidence from tradition protects you",
+              "Employers increasingly require performers to hold a qualification in performance science",
+              "Directors give notes in neuroscientific terms, so the vocabulary is needed on set",
+              "The research determines which of the competing acting methods a learner should adopt",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson's own justification is that a performer who cannot tell a finding from a tradition is exposed to confident psychology dressed up as knowledge.",
+            sourceLessonSlug: "what-actors-actually-feel",
+          },
+        ],
+      },
+    },
     // ── Section 2 ────────────────────────────────────────────────────────────────────────────────
     {
       slug: "shot-size-vocabulary",
