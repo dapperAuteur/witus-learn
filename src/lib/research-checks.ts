@@ -1230,6 +1230,85 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "PubMed and Google Scholar for the title and the author names",
     ],
   },
+  {
+    key: "report-in-shield-scope",
+    course: "reporter-media-law",
+    lesson: "shield-and-privilege",
+    quote:
+      "This course does not print the scope, the covered categories, or the operative language, because this pass could not read the current text against a primary source and the details are precisely what would matter.",
+    title: "Indiana shield: who is covered, how strong, and does it reach unpublished material?",
+    severity: "high",
+    question:
+      "Under the current text of Indiana Code 34-46-4, who is covered by the shield provision, is the protection absolute or qualified, does it reach unpublished material and notes as well as source identity, and does it survive a criminal defendant's subpoena? Quote the operative sentences.",
+    claim:
+      "REPORT-05 states that Indiana has a statutory shield provision for people connected with newspapers and broadcast outlets at Ind. Code 34-46-4, and deliberately prints nothing about its scope, covered categories, or operative language. The lesson tells the reader to read the chapter and their state's RCFP entry before relying on any characterization, including the course's own.",
+    stakes:
+      "This is the one place in the whole Reporter track where a reader could be harmed by a wrong statement rather than merely misinformed: a reporter who believes they are protected and is not may promise a source confidentiality they cannot deliver, which is exactly the failure Cohen v. Cowles describes from the other direction. The course therefore refuses to guess. Once the text is read, the lesson gains the covered categories, the strength of the protection, and whether it reaches notes.",
+    needs: [
+      "The covered categories, quoted, with the subsection",
+      "Whether the protection is absolute or qualified, and what overcomes it if qualified",
+      "Whether unpublished material and notes are covered, or only source identity",
+      "Whether freelancers or independent publishers are covered, and any case law on the point",
+      "The URL on iga.in.gov and the date read",
+    ],
+    where: [
+      "iga.in.gov for the current text of Ind. Code 34-46-4",
+      "The Reporters Committee's shield-law entry for Indiana at rcfp.org",
+      "The Hoosier State Press Association, which advises members on subpoenas",
+    ],
+  },
+  {
+    key: "report-in-recording",
+    course: "reporter-media-law",
+    lesson: "recording-consent",
+    quote:
+      "Indiana is commonly described as a one-party consent state for the recording of conversations, and this course does not print a statutory section or the operative language for that proposition because this pass could not read the current Indiana text against a primary source.",
+    title: "Indiana recording: which statute, and what does it actually say?",
+    severity: "medium",
+    question:
+      "Which Indiana statutory provision governs the recording of conversations, is Indiana correctly described as a one-party consent state, and what is the operative language? Give the code section and quote the sentence that establishes the consent rule.",
+    claim:
+      "REPORT-05 says Indiana is commonly described as a one-party consent state and prints no section number or operative language, sending the reader to the current statute and to the RCFP recording guide before relying on any characterization including the course's own.",
+    stakes:
+      "Recording is the legal question a reporter meets most often, and in all-party states the penalties can be criminal. Printing a wrong section number would send a reporter to the wrong text at the moment they most need the right one. Once verified, the lesson can name the provision and stop hedging.",
+    needs: [
+      "The Indiana code section governing interception or recording of conversations",
+      "The operative sentence establishing whose consent is required",
+      "Whether the rule differs for in-person conversation and electronic communication",
+      "The URL on iga.in.gov and the date read",
+    ],
+    where: [
+      "iga.in.gov, searching the criminal code for interception of communications",
+      "The Reporters Committee's Reporter's Recording Guide entry for Indiana",
+      "The Indiana attorney general's published guidance, if any exists on the point",
+    ],
+  },
+  {
+    key: "report-sojo-evidence",
+    course: "reporter-solutions-journalism",
+    lesson: "why-a-method",
+    quote:
+      "The course does NOT print audience-effect figures or efficacy statistics: the research exists and is growing, this pass could not read the underlying studies against their primaries.",
+    title: "Solutions journalism: what does the audience research actually show?",
+    severity: "low",
+    question:
+      "What does the published research on solutions journalism actually establish about audience effects, and with what effect sizes? Name two or three studies that can be read in full, give what each measured, in what population, and what it found, including any null or negative results.",
+    claim:
+      "REPORT-06 teaches solutions journalism as a method defined by four qualities and makes NO empirical claim about how audiences respond to it. The course deliberately prints no engagement figures, efficacy statistics, or effect sizes anywhere.",
+    stakes:
+      "Two-sided. If good evidence exists, a course that teaches rigor about other people's evidence should be able to state its own subject's evidence with the same discipline, and the omission currently makes the form look less established than it may be. If the evidence is thinner than advocates suggest, that is worth saying plainly in a course whose whole argument is that a claim gets labeled by the strength of what supports it. Either way the current silence is honest and incomplete.",
+    needs: [
+      "Two or three studies readable in full, with what each measured and in what population",
+      "The effect sizes, and whether the outcome was self-reported or behavioral",
+      "Any null or negative findings, which matter as much as the positive ones here",
+      "Whether the research was funded by an organization that advocates for the form, and whether that was disclosed",
+    ],
+    where: [
+      "The Solutions Journalism Network's own research page, read alongside who funded each item",
+      "Journalism studies journals, searching for solutions journalism and constructive journalism",
+      "Any systematic review or meta-analysis, which would settle the question faster than individual trials",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {

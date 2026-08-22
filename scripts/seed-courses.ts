@@ -211,6 +211,11 @@ import { REPORTER_WHAT_A_BEAT_IS_COURSE } from "./data/reporter-what-a-beat-is-c
 import { REPORTER_PUBLIC_RECORDS_COURSE } from "./data/reporter-public-records-course";
 import { REPORTER_READING_A_REPORT_COURSE } from "./data/reporter-reading-a-report-course";
 import { REPORTER_INTERVIEWING_COURSE } from "./data/reporter-interviewing-course";
+import { REPORTER_VERIFICATION_COURSE } from "./data/reporter-verification-on-deadline-course";
+import { REPORTER_MEDIA_LAW_COURSE } from "./data/reporter-media-law-course";
+import { REPORTER_SOLUTIONS_COURSE } from "./data/reporter-solutions-journalism-course";
+import { REPORTER_PITCH_AND_SHAPES_COURSE } from "./data/reporter-pitch-and-shapes-course";
+import { REPORTER_CAPSTONE_COURSE } from "./data/reporter-capstone-course";
 import { AFROCENTRICITY_COURSE } from "./data/afrocentricity-course";
 import { PAN_AFRICANISM_COURSE } from "./data/pan-africanism-course";
 import { ASIA_BEFORE_EUROPEAN_COLONIZATION_COURSE } from "./data/asia-before-european-colonization-course";
@@ -977,6 +982,135 @@ async function main() {
     seriesOrder: 4,
     seriesCode: "REPORT",
     seriesPosition: "03",
+  });
+
+  // REPORT-04. how-to-research teaches sourcing with time; fact-checking-as-a-discipline teaches
+  // checking a finished piece. Neither answers the 3pm question, which is what can honestly be
+  // confirmed in an hour and what to do when the answer is not enough.
+  //
+  // The through-line plans/68 asked for: THE DECISION NOT TO PUBLISH IS A PROFESSIONAL ACT. The
+  // whole final section is arranged so holding, publishing less, and publishing with the
+  // uncertainty stated are normal outputs of a method rather than losses.
+  //
+  // Named tools appear only as examples with an explicit note that the specific service changes,
+  // because a course pinned to a product becomes wrong silently. Cross-links: the Negro Leagues
+  // course as a worked catalog example of a publisher refusing to print a contested figure, and
+  // How the NAACP Learned to Win for evidence a reporter gathers rather than accepts.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "reporter-verification-on-deadline",
+    course: REPORTER_VERIFICATION_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "reporter",
+    seriesTitle: "The Reporter",
+    seriesOrder: 5,
+    seriesCode: "REPORT",
+    seriesPosition: "04",
+  });
+
+  // REPORT-05, and the one where sourcing discipline matters most. plans/68 asked for "a map and
+  // the moment to call a lawyer, explicitly NOT legal advice," and the course says so in its first
+  // lesson and its last.
+  //
+  // Every case is named with court and year; Supreme Court decisions carry their U.S. Reports cite.
+  // The single circuit decision (Food Lion, 4th Cir. 1999) is given by name, court and year rather
+  // than a volume and page this pass could not read against the reporter, because a wrong pin cite
+  // in a legal course is worse than none. State law is described as varying, always. Indiana is the
+  // worked example and the course REFUSES to print two details it could not verify: the scope of the
+  // shield provision at Ind. Code 34-46-4, and a citation for the recording rule. Source checks are
+  // filed for both (report-in-shield-scope, report-in-recording).
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "reporter-media-law",
+    course: REPORTER_MEDIA_LAW_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "reporter",
+    seriesTitle: "The Reporter",
+    seriesOrder: 6,
+    seriesCode: "REPORT",
+    seriesPosition: "05",
+  });
+
+  // REPORT-06. plans/68's reason: Free Press Indiana describes itself as solutions-focused, and the
+  // form is routinely confused with advocacy and with good-news filler. It has an actual method,
+  // which is what the course teaches: the four qualities, the two confusions, five named imposters
+  // each defined by a single missing quality, an evidence ladder, and the limitations section that
+  // makes the piece journalism rather than a brochure.
+  //
+  // The course prints NO audience-effect or efficacy figures. The research exists and is growing,
+  // this pass could not read the underlying studies against their primaries, and quoting an effect
+  // size it had not read would be the exact failure REPORT-02 teaches learners to catch. A source
+  // check is filed (report-sojo-evidence). Cross-links How the NAACP Learned to Win for the posture
+  // toward a response's failures: a losing campaign still buys something, and that is a finding.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "reporter-solutions-journalism",
+    course: REPORTER_SOLUTIONS_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "reporter",
+    seriesTitle: "The Reporter",
+    seriesOrder: 7,
+    seriesCode: "REPORT",
+    seriesPosition: "06",
+  });
+
+  // REPORT-07, the last course before the capstone. plans/68: pitching an enterprise project, plus
+  // newsletter, social-first and short video, "and choosing among them for a reason." The Free Press
+  // posting asks for social and video literacy alongside dailies and enterprise work, which is why
+  // the format lessons are in the track rather than treated as somebody else's specialism.
+  //
+  // It is a craft course and says so, which is why it carries fewer citations than the rest of the
+  // track rather than manufacturing them. Where it would otherwise make an empirical claim about
+  // audience behavior it declines to print a figure and sends the reader to their own outlet's
+  // analytics, for the same reason REPORT-06 declined on efficacy.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "reporter-pitch-and-shapes",
+    course: REPORTER_PITCH_AND_SHAPES_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "reporter",
+    seriesTitle: "The Reporter",
+    seriesOrder: 8,
+    seriesCode: "REPORT",
+    seriesPosition: "07",
+  });
+
+  // REPORT-99, the capstone, completing the nine-course track plans/68 designed. The specification
+  // is BAM's, verbatim from that plan's course table: one quick-turn story and one enterprise pitch
+  // on a beat the learner chooses, plus one records request, one public data report read properly,
+  // two interviews, and a written note on what they could not confirm.
+  //
+  // A capstone teaches almost nothing new on purpose; its job is to make the learner do the thing
+  // end to end with enough scaffolding to finish, which is the same principle the Researcher
+  // track's capstone states. What it adds is the ASSESSMENT STANDARD, and the standard is
+  // deliberately not "did you get a good story": it is whether every claim carries the confidence
+  // level the file supports and whether a STRANGER could reconstruct how each was established.
+  // Four things are explicitly not assessed, including whether records arrived and whether the
+  // writing is good, because those are outcomes and outcomes on a four-week beat are luck.
+  //
+  // plans/68 decided the capstone stays an ASSESSED EXERCISE rather than a set of real clips, so
+  // nothing here requires the learner to publish anything or to have an outlet. It does require
+  // telling every source plainly that nothing will publish.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "reporter-capstone",
+    course: REPORTER_CAPSTONE_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "reporter",
+    seriesTitle: "The Reporter",
+    seriesOrder: 9,
+    seriesCode: "REPORT",
+    seriesPosition: "99",
   });
 
   // Genealogy for yourself and your community. Plan: plans/70-genealogy-course.md.

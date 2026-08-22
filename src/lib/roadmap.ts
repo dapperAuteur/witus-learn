@@ -43,6 +43,61 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   tenant**: Fritz Pollard lost Dyckman Oval in 1938 when Alex Pompez leased it to a rival.
   Mapped to the three \`catalog.*\` Common Core history-literacy claims (60 standards across 15
   jurisdictions). **NOT yet in \`STAGED_COURSES\`**, so \`pnpm gen:citations\` is a later step.
+- ✅ **The Reporter track, all nine courses** (\`content/reporter-track\`, plans/68, Research &
+  Reporting; NO migration, **re-run \`pnpm seed:courses\`**). REPORT-00 to REPORT-99, seeded as the
+  \`reporter\` series so it gets \`/series/reporter\` and a badge on every card.
+  **Why it exists, and why it repeats nothing.** plans/68's finding, verified against the catalog,
+  is that three quarters of "journalism" was already shipped: \`news-storytelling\` teaches the
+  piece, \`civic-documentation\` teaches the meeting, \`documentary\` teaches the project,
+  \`how-to-research\` teaches sourcing and \`how-to-read-a-number\` teaches provenance. What none of
+  them teaches is the JOB. \`civic-documentation\` lesson 16 is literally called "Where documentation
+  ends and reporting begins" and nothing sat on the other side of it. This track is the other side:
+  a territory held over time, with recurring output, on deadline, inside a legal frame.
+  **The nine.** 00 what a beat is · 01 public records · 02 reading somebody else's report ·
+  03 interviewing people who did not seek this · 04 verification on deadline · 05 the law you work
+  inside · 06 solutions journalism and what it is not · 07 the pitch and the shapes a story can
+  take · 99 capstone. **108 teaching lessons, 45 quizzes, 2,143 pooled questions**, and the whole
+  series reports **zero findings** from \`pnpm audit:course --spec\`: every section quiz is sized to
+  its own word density, every final pools 40 serving 10, every quiz passes at 80 and shuffles, and
+  every question carries an \`explanation\` and a \`sourceLessonSlug\` in its own course.
+  **The disclosure is on page one, by BAM's decision** (plans/68 §7a). REPORT-00 lesson 1 states
+  that the author does documentation work for the organization Free Press Indiana sits under, and
+  that FPI has not reviewed, endorsed or sponsored the course. A journalism track that quietly
+  omitted its own author's stake in the sector it teaches people to enter would fail the standard it
+  spends nine courses teaching.
+  **REPORT-02 is the spine, and the Indiana Girl Report is the teaching object** rather than
+  background reading, because on page 27 the publisher documents its own limitations in its own
+  voice. Every page number, figure and definition in that course was read out of the PDF. Lesson 6
+  runs the tracing method to an honest stopping point: the executive summary's three-times
+  cyberbullying ratio does not follow from the YRBS chart on page 59 (25.3% female against 20.7%
+  male in 2023), so it rests on a source not reproduced there. The lesson says explicitly that this
+  does NOT mean the report is wrong, and that the next action is to ask the publisher.
+  **Things the track REFUSES to state, each with a source check filed** in
+  \`src/lib/research-checks.ts\` rather than left as prose: Indiana's APRA response deadlines and PAC
+  complaint window (REPORT-01), the scope of Indiana's shield provision at Ind. Code 34-46-4 and a
+  citation for Indiana's recording rule (REPORT-05), which table supports the Girl Report's
+  cyberbullying ratio and whether one of its journal endnotes resolves (REPORT-02), what the audience
+  research on solutions journalism actually shows (REPORT-06), and whether the Free Press job posting
+  still resolves (REPORT-00). Eight checks in total. A reporter who believes a shield law protects
+  them and is wrong may promise a source something they cannot deliver, which is the highest-stakes
+  error available in this track, so the course names the chapter and prints nothing it could not read
+  against a primary text.
+  **REPORT-05 is a map, not legal advice, and says so in its first lesson and its last.** Every case
+  carries its court and year; Supreme Court decisions carry their U.S. Reports cite (Sullivan, Butts,
+  Gertz, Falwell, Milkovich, Hepps, Branzburg, Zurcher, Cohen, Bartnicki, Florida Star, Cox
+  Broadcasting, Near, Pentagon Papers). The one circuit decision is given by name, court and year
+  rather than a volume and page that could not be verified, because a wrong pin cite in a legal
+  course is worse than none. State law is described as varying, always.
+  **Jurisdiction** follows plans/68's decision: Indiana is the worked example, not the subject, and
+  every jurisdiction-specific lesson ends by sending the reader to their own state's statute and to
+  the RCFP guides.
+  **Standards: none, by decision** (plans/68, BAM 2026-08-11), recorded as nine BACKLOG lines in
+  \`scripts/check-standards-coverage.ts\` rather than left silent. REPORT-02 is flagged there as the
+  strongest future candidate if the track is ever sold to schools, since it is the same
+  source-critical numeracy that earned SCI-01 its Common Core statistics claims.
+  **Not built, and deliberately:** the \`learning_paths\` entry and the \`src/lib/bundles.ts\` bundle
+  from plans/68 §5. Both are commercial and platform objects rather than content, both need BAM's
+  pricing decision, and the series registration already gives the track its public landing page.
 - ✅ **WELL infrastructure** (\`feat/well-infrastructure\`, plans/67 branch 1; NO migration):
   insert-only \`visibility\`/\`publishHoldReason\` on the authored-course seeder (public flip
   survives re-seeds); the private study loop actually works (enroll + complete + dashboard were
