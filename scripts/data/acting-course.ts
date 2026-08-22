@@ -3015,6 +3015,1318 @@ Most television acting is done by people arriving for a day or a week into a com
 - **Adjustability**: the ability to change a prepared choice immediately, as distinct from having a prepared performance.`,
     },
 
+    {
+      slug: "quiz-medium-by-medium",
+      title: "18 · Quiz: medium by medium",
+      section: "Section 3 · Medium by medium",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "Why do none of the frame rules apply in theater?",
+            options: [
+              "There is no frame",
+              "The audience is too far away for framing decisions to be visible to them",
+              "Stage lighting replaces framing as the way attention is directed to a performer",
+              "Theatrical productions are recorded from a fixed position, so the size never changes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Nobody decides for the audience where to look, which is the structural fact that every other difference from screen work follows from.",
+            sourceLessonSlug: "acting-on-stage",
+          },
+          {
+            prompt: "Which is one of the four structural facts that define theater?",
+            options: [
+              "The audience is present and responding live",
+              "The performance is recorded so that it can be reviewed and improved between shows",
+              "The director gives notes during the performance itself through a concealed earpiece",
+              "The script may be changed by the performers as the run continues",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The four are a present audience, continuity with no retakes, the whole body always visible, and the requirement that everything reach the furthest seat.",
+            sourceLessonSlug: "acting-on-stage",
+          },
+          {
+            prompt: "What does it mean that a stage performance is continuous?",
+            options: [
+              "No coverage, no second take, no editor",
+              "The run continues nightly without a break until the production closes",
+              "The performers stay in character during intervals so the illusion is unbroken",
+              "The lighting never changes, so the audience sees one uninterrupted image",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A scene runs start to finish in front of people, so anything that goes wrong goes wrong in public and gets solved live.",
+            sourceLessonSlug: "acting-on-stage",
+          },
+          {
+            prompt: "Why is composition a performer's responsibility on stage?",
+            options: [
+              "Nobody curates where the audience looks",
+              "Stage directors delegate the whole visual design to the cast during rehearsal",
+              "Theatrical lighting is too dim to guide attention reliably in a large house",
+              "Audience members are seated at fixed distances, so the picture never changes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Everything is available to every viewer at once, so where you stand, which way you face, and whether you are blocking someone all matter.",
+            sourceLessonSlug: "acting-on-stage",
+          },
+          {
+            prompt: "What can the person in the last row of a large house NOT see?",
+            options: [
+              "Your eyes",
+              "Your whole body, which is why upper-body work carries a theater and lower-body work does not",
+              "The other performers, since sightlines are obstructed from the rear of a house",
+              "Any part of the set, which is why dialogue must describe the location",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Gesture, timing, and the clarity of transitions all have to survive the distance, and eye detail simply does not reach the back.",
+            sourceLessonSlug: "acting-on-stage",
+          },
+          {
+            prompt: "What is the failure mode of enlarging a performance for the stage?",
+            options: [
+              "Size without specificity",
+              "Vocal strain, which is the only real risk of playing at a larger scale",
+              "Losing the other performer's timing, because larger movements take longer",
+              "Being unable to reduce again when the same actor works on camera",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The classic bad-theater effect is everything loud and nothing happening. The want, obstacle, and tactics stay exactly as precise while only the scale rises.",
+            sourceLessonSlug: "acting-on-stage",
+          },
+          {
+            prompt: "What carries a long line to the back wall?",
+            options: [
+              "Breath support",
+              "Throat pressure, which is why projection tires the voice over a long run",
+              "A raised pitch, since higher frequencies travel further in a large room",
+              "Slower delivery, because slower speech is inherently more audible",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Breath support carries; throat pressure does not, and it injures. The same instrument is treated in detail in the voice-acting sibling course.",
+            sourceLessonSlug: "acting-on-stage",
+          },
+          {
+            prompt: "How do stage performers learn a character's journey, compared with screen performers?",
+            options: [
+              "In order, as arcs rather than fragments",
+              "From a written map prepared before rehearsal, because the run is too long to remember",
+              "From the director's notes, since the performer cannot see the whole shape from inside it",
+              "By recording rehearsals and reviewing the sequence between performances",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Performing in order means knowing where you are in the story at every moment. Screen performers assemble the shape out of order, and the switch is disorienting both ways.",
+            sourceLessonSlug: "acting-on-stage",
+          },
+          {
+            prompt: "What does stage work give a performer that screen work cannot?",
+            options: [
+              "Repetition with an audience, night after night",
+              "A larger fee, which is why theater remains attractive to experienced performers",
+              "Freedom from technical constraints, since no equipment is involved in a live show",
+              "Certainty about the finished result, because nothing is edited afterward",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the closest thing in the profession to a feedback loop that runs every day, which is a serious argument for doing theater even if screen work is the goal.",
+            sourceLessonSlug: "acting-on-stage",
+          },
+          {
+            prompt: "How does an audience's response change a live performance?",
+            options: [
+              "It feeds back in real time",
+              "It does not, because a rehearsed performance is fixed before opening night",
+              "It changes only the running time, since laughter extends the length of a show",
+              "It changes only for comedy, since dramatic work is unaffected by audience reaction",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A comedy plays differently on a Tuesday than on a Saturday, and adapting to that without changing what you are doing is a skill screen work never asks for.",
+            sourceLessonSlug: "acting-on-stage",
+          },
+          {
+            prompt: "What happens to a fidgeting hand during a stage moment of stillness?",
+            options: [
+              "Anyone looking at you sees it",
+              "It is absorbed by the distance, which is why small habits do not matter on stage",
+              "It is covered by the lighting design, which isolates the speaking performer",
+              "It reads as characterization, because audiences interpret all movement as intentional",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The whole body is always visible and nobody directs the audience's attention, so a habit you would get away with in a tight screen frame is fully exposed.",
+            sourceLessonSlug: "acting-on-stage",
+          },
+          {
+            prompt: "What is projection, as this lesson defines it?",
+            options: [
+              "Carrying the voice using breath support",
+              "Speaking at the maximum volume the performer can sustain across a whole run",
+              "Directing the voice toward a specific section of the audience in turn",
+              "Using amplification to reach the furthest seats in a large auditorium",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The definition is deliberately mechanical: it is breath support rather than throat pressure, because the second one injures.",
+            sourceLessonSlug: "acting-on-stage",
+          },
+          {
+            prompt: "What is an arc, in this lesson's vocabulary?",
+            options: [
+              "The shape of a character's journey across the whole piece",
+              "The curved path a performer walks when crossing between two positions on stage",
+              "The period between a performer's entrance and their exit in a single scene",
+              "The rise and fall of vocal pitch across a long speech",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Stage performers build it in order in rehearsal, while screen performers assemble it out of order across weeks.",
+            sourceLessonSlug: "acting-on-stage",
+          },
+          {
+            prompt: "Why does something going wrong on stage get solved live?",
+            options: [
+              "There is no second take",
+              "Union rules forbid stopping a performance once the curtain has risen",
+              "The audience has paid for a complete performance and can demand a refund otherwise",
+              "The stage manager cannot intervene until the interval",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A continuous performance in front of people has no coverage and no editor, so a problem is public and has to be handled in the moment.",
+            sourceLessonSlug: "acting-on-stage",
+          },
+          {
+            prompt: "What has to survive the distance to the furthest seat, beyond volume?",
+            options: [
+              "Gesture, timing, and the clarity of transitions",
+              "Facial detail, which is the main thing a large house makes harder to read",
+              "The subtlety of eye contact between performers, which anchors a scene",
+              "The texture of the costume, which tells the audience about the character",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson names those three explicitly, and notes that eye detail is precisely what does not reach the back of a large house.",
+            sourceLessonSlug: "acting-on-stage",
+          },
+          {
+            prompt: "What must NOT go down when a performance is enlarged for a theater?",
+            options: [
+              "Specificity",
+              "Volume, which has to rise in exact proportion to the size of the room",
+              "Speed, since larger movements need more time and slow the whole show down",
+              "The number of physical choices, because a big house needs constant movement",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Enlarging without hollowing out is the whole trick: the size increases while the want, obstacle, and tactics stay exactly as precise as they were on the page.",
+            sourceLessonSlug: "acting-on-stage",
+          },
+          {
+            prompt: "What does the lesson mean by continuous performance?",
+            options: [
+              "Playing a piece start to finish with no coverage or editing",
+              "Maintaining the same interpretation across every night of a long run",
+              "Staying on stage throughout, without exits, for the length of a scene",
+              "Delivering lines without pauses, so the momentum of the scene is unbroken",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the structural opposite of screen work, where the performance is assembled from separately recorded pieces.",
+            sourceLessonSlug: "acting-on-stage",
+          },
+          {
+            prompt: "In what order are film scenes shot?",
+            options: [
+              "The order that is cheapest and most practical",
+              "Story order, so that the performers can build the arc as they go",
+              "Reverse order, so that the ending is captured while performers are freshest",
+              "The order the writer specifies in the shooting script's numbering",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Usually grouped by location. You may play the end of a relationship on day one and its beginning in week five, in different weather.",
+            sourceLessonSlug: "acting-for-film",
+          },
+          {
+            prompt: "What is the direct consequence of out-of-order shooting for preparation?",
+            options: [
+              "You must know where every moment sits in the arc",
+              "You must learn the whole script before the first day, since scenes may be reordered",
+              "You must rehearse each scene twice, once alone and once with the other performer",
+              "You must keep the same physical shape for every scene so the pieces will cut",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Nothing in the day will remind you, which is why a written map marked with what the character knows, wants, and has lost at each point is standard.",
+            sourceLessonSlug: "acting-for-film",
+          },
+          {
+            prompt: "What is a setup?",
+            options: [
+              "One camera position",
+              "The rehearsal that precedes the first take of a scene on the shooting day",
+              "The arrangement of props and furniture before the performers arrive on set",
+              "The list of scenes a production intends to complete in a single day",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Each new setup is a relight and a repositioning, which is why the same forty seconds can be delivered a dozen times across two hours.",
+            sourceLessonSlug: "acting-for-film",
+          },
+          {
+            prompt: "What is the unit of work on a film, according to the lesson?",
+            options: [
+              "The setup",
+              "The scene, which is prepared, shot, and completed before the next one begins",
+              "The shooting day, since the schedule is planned in days rather than in shots",
+              "The page, because the schedule counts pages rather than minutes of finished film",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A scene gets several setups: a master, singles on each person, over-the-shoulders, and inserts, each requiring its own lighting and framing.",
+            sourceLessonSlug: "acting-for-film",
+          },
+          {
+            prompt: "What has to be repeatable across takes, and what must not become mechanical?",
+            options: [
+              "The physical shape repeats; the pursuit stays live",
+              "The vocal delivery repeats; the physical shape is free to vary between takes",
+              "The emotional level repeats; the blocking is adjusted by the director each time",
+              "Nothing repeats, because each take should be a fresh discovery of the scene",
+            ],
+            correctIndex: 0,
+            explanation:
+              "This is exactly why a played action is more durable than a summoned emotion: really trying to get something regenerates on take nine and a manufactured feeling does not.",
+            sourceLessonSlug: "acting-for-film",
+          },
+          {
+            prompt: "What is an insert?",
+            options: [
+              "A tight shot of a detail cut into a scene",
+              "A scene added to a script after principal photography has already begun",
+              "A performer brought in for a single day to cover an absent cast member",
+              "A section of dialogue recorded separately and laid over existing footage",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A hand or an object, shot tight and cut into the scene. It is one of the setups a scene's coverage normally includes.",
+            sourceLessonSlug: "acting-for-film",
+          },
+          {
+            prompt: "What does the lesson say a shooting day mostly consists of?",
+            options: [
+              "Waiting",
+              "Rehearsal, which occupies most of the time before each scene is recorded",
+              "Technical work by the performers, such as marking and matching each setup",
+              "Travel between locations, which is why scenes are grouped geographically",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Waiting in a chair, in makeup, in a holding area, and then being asked for the most exposed moment in the film with ninety seconds of warning.",
+            sourceLessonSlug: "acting-for-film",
+          },
+          {
+            prompt: "What kind of skill is managing your readiness across a shooting day?",
+            options: [
+              "A professional skill distinct from acting",
+              "A physical skill, which is why performers are advised to train for stamina",
+              "A social skill, since readiness depends on how well you know the crew",
+              "A technical skill, learned by observing how the camera department works",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson names it as genuinely professional and explicitly different from acting, because the shape of the day demands it whatever your technique is.",
+            sourceLessonSlug: "acting-for-film",
+          },
+          {
+            prompt: "Who finishes a screen performance?",
+            options: [
+              "The editor, composer, sound team, and colorist",
+              "The director, working alone with the performer during additional recording sessions",
+              "The performer, in the final take of the last setup on the last day of shooting",
+              "The audience, who assemble the meaning from the pieces they are shown",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The editor chooses the take and the size, and the others change how it reads. The version people see was assembled after you left.",
+            sourceLessonSlug: "acting-for-film",
+          },
+          {
+            prompt: "What is the healthy conclusion from the fact that others finish your performance?",
+            options: [
+              "Deliver honest, varied, matchable takes, then let go",
+              "Push for a say in the edit, since the performance is ultimately the performer's work",
+              "Deliver the same take every time, so that no unwanted version can be chosen",
+              "Withhold your best work until the final take, when the director is paying most attention",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson calls it a working performer's version of humility: control ends at the takes you gave.",
+            sourceLessonSlug: "acting-for-film",
+          },
+          {
+            prompt: "Why is a written story map less necessary in a play than on a film?",
+            options: [
+              "A play is performed in order",
+              "A play is shorter, so there is less material to keep track of",
+              "A play has a director present at every performance to correct the arc",
+              "A play is rehearsed for longer, so the shape is memorized rather than mapped",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Performing in sequence means the arc is carried by the performance itself. Film gives you no such reminder, because nothing in the day tells you where you are.",
+            sourceLessonSlug: "acting-for-film",
+          },
+          {
+            prompt: "What should the story map record at each point?",
+            options: [
+              "What the character knows, wants, and has just lost",
+              "Which camera setups are planned for the scene and in what order",
+              "The emotional level on a numbered scale agreed with the director",
+              "The costume, hair, and props required so that continuity can be checked",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is consulted before every setup, and it is homework that is completely available to a performer without a camera.",
+            sourceLessonSlug: "acting-for-film",
+          },
+          {
+            prompt: "How does film invert theater's structural facts?",
+            options: [
+              "Audience absent, performance discontinuous, frame decides visibility",
+              "Audience present, performance continuous, but with the option of a second take",
+              "Audience absent, but the performance is still continuous within each scene",
+              "Audience present on set, and the performance is assembled afterward",
+            ],
+            correctIndex: 0,
+            explanation:
+              "And the finished piece is assembled by people the performer may never meet, which is the fourth inversion.",
+            sourceLessonSlug: "acting-for-film",
+          },
+          {
+            prompt: "Which setups does the lesson list as typical coverage for a scene?",
+            options: [
+              "A master, singles, over-the-shoulders, and inserts",
+              "A wide, a medium, and a close-up, in that fixed order, on every production",
+              "One setup per performer, plus one for the room, which is the standard minimum",
+              "As many as the schedule allows, with no conventional pattern to them",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Each is a separate camera position requiring its own relight, which is what turns a short passage into two hours of work.",
+            sourceLessonSlug: "acting-for-film",
+          },
+          {
+            prompt: "What makes screen performance a repeatability problem?",
+            options: [
+              "The same passage is delivered many times across hours",
+              "Performers are contractually required to produce identical takes for the editor",
+              "The camera records small variations that an audience finds distracting",
+              "Coverage is shot in a single continuous pass, so errors cannot be corrected",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Multiple setups at multiple sizes mean the physical shape must repeat while the pursuit inside it stays alive.",
+            sourceLessonSlug: "acting-for-film",
+          },
+          {
+            prompt: "Why might a performer be asked for an exposed moment with ninety seconds of warning?",
+            options: [
+              "The light is going",
+              "The director prefers unprepared performances because they are more spontaneous",
+              "The schedule is deliberately withheld so performers stay alert through the day",
+              "Union rules cap the notice a production is required to give before a difficult scene",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson uses the fading light as the example precisely because it is a production reality nobody can negotiate with.",
+            sourceLessonSlug: "acting-for-film",
+          },
+          {
+            prompt: "What is out-of-order shooting?",
+            options: [
+              "Filming grouped by location and practicality rather than story order",
+              "Filming the same scene several times from different positions across a day",
+              "Filming without a completed script, so the story order is not yet fixed",
+              "Filming the second half of a production before the first half is written",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the scheduling logic that makes the written story map necessary, because nothing on the day reminds you where you are.",
+            sourceLessonSlug: "acting-for-film",
+          },
+          {
+            prompt: "What are the three differences that change the job in television?",
+            options: [
+              "Speed, continuity across episodes, and arriving as a visitor",
+              "Budget, audience size, and the number of cameras used on any given day",
+              "Rehearsal length, script quality, and the seniority of the director assigned",
+              "Location work, studio work, and the balance between the two across a season",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Television is film's structural cousin, and those three differences are what separate it in practice.",
+            sourceLessonSlug: "acting-for-television",
+          },
+          {
+            prompt: "Where does preparation happen in episodic television?",
+            options: [
+              "Almost entirely off the set",
+              "In the rehearsal period, which is longer than on a feature for the same page count",
+              "During the first two takes of each setup, which are treated as exploratory",
+              "In the read-through, which the whole cast attends before each episode",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Nobody is going to explore the scene with you at ten in the morning, so you arrive with choices made, a repeatable shape, and lines genuinely learned.",
+            sourceLessonSlug: "acting-for-television",
+          },
+          {
+            prompt: "Why does television reward preparation that is a decision rather than a fixed performance?",
+            options: [
+              "A decision can be changed in one breath",
+              "Decisions can be written down and shown to the director before the take",
+              "Fixed performances take longer to memorize, which the schedule cannot absorb",
+              "Directors on episodic work prefer performers who have not made choices in advance",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A prepared performance that has hardened cannot adjust, so a director asking for something different simply gets the same thing again slightly louder.",
+            sourceLessonSlug: "acting-for-television",
+          },
+          {
+            prompt: "How does single-camera television work?",
+            options: [
+              "Like film, in setups, out of order",
+              "Continuously, with the whole scene played through and recorded in one pass",
+              "With a live audience present, which sets the pace of the recording",
+              "With the same camera position for every scene, which is why it is cheaper",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One camera, coverage in setups, shot out of order, no audience. It is the shape a feature uses, at a faster pace.",
+            sourceLessonSlug: "acting-for-television",
+          },
+          {
+            prompt: "What defines multi-camera production?",
+            options: [
+              "Several cameras at once on a set open on one side",
+              "Two cameras placed at opposite ends of the set to capture both eyelines",
+              "A camera on every performer, so nobody has to repeat a line for coverage",
+              "Cameras that record continuously through rehearsals as well as through takes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It usually comes with a week of rehearsal and often a live audience, which is why its demands sit between theater and film.",
+            sourceLessonSlug: "acting-for-television",
+          },
+          {
+            prompt: "What theater-like demands does multi-camera work impose?",
+            options: [
+              "Play continuously, time to real laughter, stay open to the camera side",
+              "Project to the back of the studio, since the audience sits some distance away",
+              "Perform the whole episode in one pass, with no stops for technical problems",
+              "Build the character's arc in story order across the week of rehearsal",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The set is open on one side, so turning your back on that side takes you away from every camera at once.",
+            sourceLessonSlug: "acting-for-television",
+          },
+          {
+            prompt: "Why should a series performer hold an invented backstory loosely?",
+            options: [
+              "Later writers will contradict it",
+              "Producers require backstories to be approved before they can be used in performance",
+              "Backstory is the writer's responsibility and performers should not invent any",
+              "An invented history makes the performance less spontaneous over a long run",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A series character is written over time by many writers, often past the point where anyone knows where it is going, so build on what is actually on the page.",
+            sourceLessonSlug: "acting-for-television",
+          },
+          {
+            prompt: "What is a guest performer?",
+            options: [
+              "Someone hired for one or a few episodes into an established company",
+              "A performer who appears without a credit, usually in a single scene",
+              "A well-known performer brought in to raise the profile of a particular episode",
+              "A cast member returning after an absence of one or more seasons",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Most television acting is done by people arriving into a company that has worked together for years, with no time to learn its rhythms.",
+            sourceLessonSlug: "acting-for-television",
+          },
+          {
+            prompt: "What is the craft response to the guest performer's problem?",
+            options: [
+              "Arrive over-prepared and be easy to work with",
+              "Ask the regulars to walk you through the set's conventions before the first take",
+              "Request additional rehearsal time, since a visitor is at a structural disadvantage",
+              "Match the regulars' performance style exactly, so your scenes cut with theirs",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Ask the questions that are actually necessary rather than the ones that cost time, and understand that the regulars' scene is running whether you are ready or not.",
+            sourceLessonSlug: "acting-for-television",
+          },
+          {
+            prompt: "What does the lesson call a professional skill that nobody teaches as one?",
+            options: [
+              "Being someone a busy crew is glad to see again",
+              "Learning a full episode's lines in a single evening before the shooting day",
+              "Reading a shooting schedule accurately enough to plan your own preparation",
+              "Judging when a director's note is worth challenging and when it is not",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is named directly at the end of the guest-performer section, alongside the observation that most television acting is done by visitors.",
+            sourceLessonSlug: "acting-for-television",
+          },
+          {
+            prompt: "What is adjustability, in this lesson's vocabulary?",
+            options: [
+              "Changing a prepared choice immediately",
+              "Adapting your physical scale to whichever camera is closest at the time",
+              "Modifying the script when a line does not work in the performer's mouth",
+              "Being available at short notice when a schedule changes during a week",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is explicitly distinguished from having a prepared performance, and it is where prepared performers most often fail on a compressed schedule.",
+            sourceLessonSlug: "acting-for-television",
+          },
+          {
+            prompt: "What is compressed in an episodic schedule?",
+            options: [
+              "Setups, takes, and rehearsal, with a higher daily page count",
+              "The length of each scene, which is why episodic dialogue is shorter than a feature's",
+              "The number of performers, since fewer people can be scheduled in a short day",
+              "The shooting season, which runs for a few weeks rather than several months",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Fewer setups, fewer takes, less rehearsal, and a page count a feature would spread over several days.",
+            sourceLessonSlug: "acting-for-television",
+          },
+          {
+            prompt: "What happens when a director asks a hardened prepared performance for something different?",
+            options: [
+              "They get the same thing again slightly louder",
+              "They get a noticeably worse take, because the performer loses confidence",
+              "They get the requested change, but only after several unusable takes",
+              "They get an improvised alternative, which rarely matches the previous coverage",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson names this specific failure, which is why preparation has to remain a set of decisions rather than a finished thing.",
+            sourceLessonSlug: "acting-for-television",
+          },
+          {
+            prompt: "Why is a series character's future often unknown to the performer?",
+            options: [
+              "It has not been written yet",
+              "Producers withhold the storyline to keep performances free of foreknowledge",
+              "Contracts prevent performers from reading scripts beyond their own episodes",
+              "The writers deliberately change direction whenever a performer anticipates it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Facts about your character that have not been invented yet will be invented, and they will contradict what you assumed.",
+            sourceLessonSlug: "acting-for-television",
+          },
+          {
+            prompt: "Which is true of multi-camera work but not single-camera work?",
+            options: [
+              "A week of rehearsal and often a live audience",
+              "Shooting out of order across a compressed schedule with few takes",
+              "Coverage assembled from separate setups requiring their own lighting",
+              "The absence of any audience, which allows for repeated attempts at a scene",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Those are exactly the features that place multi-camera between theater and film, and single-camera work has none of them.",
+            sourceLessonSlug: "acting-for-television",
+          },
+          {
+            prompt: "What does a guest performer NOT know on arrival?",
+            options: [
+              "The set's rhythms and shorthand",
+              "Their own lines, which are usually delivered on the morning of the shoot",
+              "Which scenes will be shot, since guest schedules are decided on the day",
+              "The name of the character they are playing, which is often changed late",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The company has worked together for years and has conventions a visitor cannot learn in a day, which is why the craft response is preparation plus ease.",
+            sourceLessonSlug: "acting-for-television",
+          },
+          {
+            prompt: "What is the mistake that costs most performers a commercial job?",
+            options: [
+              "Treating it as a very short drama",
+              "Failing to memorize the copy, which is always required before an audition",
+              "Playing too small, because commercial framing is wider than dramatic framing",
+              "Arriving without a specific idea of who the character is and what they want",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is a piece of persuasion with a fixed duration, a legally reviewed script, and a protagonist that is not the performer.",
+            sourceLessonSlug: "commercials-and-branded-work",
+          },
+          {
+            prompt: "Why is time described as a wall in commercial work?",
+            options: [
+              "Spots run to fixed lengths with room for the tag",
+              "Shooting days are shorter, so fewer takes are available than on a drama",
+              "Audiences stop watching after a few seconds, so the opening must be immediate",
+              "Editors cannot trim a commercial without breaking the rhythm of the music",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A read that is beautiful and two seconds long is unusable, which is why working to a stopwatch is part of the craft and practicable at home with a phone timer.",
+            sourceLessonSlug: "commercials-and-branded-work",
+          },
+          {
+            prompt: "Why is paraphrasing advertising copy a different kind of error than paraphrasing a drama?",
+            options: [
+              "The wording has usually passed legal review",
+              "Commercial writers charge a fee per word and object to changes on principle",
+              "Copy is timed to the frame, so a longer word makes the spot overrun",
+              "Clients memorize the script and notice any deviation during the shoot",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Paraphrasing a claim is a compliance problem rather than a creative choice, so the awkward line gets said as written.",
+            sourceLessonSlug: "commercials-and-branded-work",
+          },
+          {
+            prompt: "What does \"the product is the protagonist\" ask a performer to stop doing?",
+            options: [
+              "Building the most interesting character in the frame",
+              "Handling the product, since the camera department manages it separately",
+              "Speaking directly to the lens, which competes with the product for attention",
+              "Making specific choices, because commercial work rewards a generic presence",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The job is usually to be a credible person to whom the product matters, and performers trained in drama routinely play a rich interior life that is in the way.",
+            sourceLessonSlug: "commercials-and-branded-work",
+          },
+          {
+            prompt: "Notes arrive from the client, the agency, and the director, and they disagree. What do you do?",
+            options: [
+              "Execute the last one, pleasantly",
+              "Ask the three of them to agree before the next take is recorded",
+              "Combine all three into a single reading that partially satisfies each note",
+              "Follow the director's note, since the director outranks the other two on set",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Take them all pleasantly and do not argue about consistency. Resolving the disagreement is not the performer's job.",
+            sourceLessonSlug: "commercials-and-branded-work",
+          },
+          {
+            prompt: "What is the real person read?",
+            options: [
+              "Conversational and unpolished, close to your own speech",
+              "A read delivered by a non-professional recruited from the public for authenticity",
+              "A read in which the performer uses their own name rather than a character's",
+              "A testimonial format in which the speaker describes a genuine experience",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson calls it the most common mode now and the hardest to fake, which is why it gets its own vocabulary entry.",
+            sourceLessonSlug: "commercials-and-branded-work",
+          },
+          {
+            prompt: "What does the spokesperson mode involve?",
+            options: [
+              "Direct address to the lens, clear and warm",
+              "Playing a heightened figure held for fifteen seconds and played completely straight",
+              "A silent performance in which the face carries the whole message",
+              "Conversation with another performer while the product sits between them",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Authority without hard selling. It is one of the places where the general rule against playing to the camera is deliberately inverted.",
+            sourceLessonSlug: "commercials-and-branded-work",
+          },
+          {
+            prompt: "How should a character or comedic commercial figure be played?",
+            options: [
+              "Completely straight, from the inside",
+              "Broadly, so that the joke reads within the very short running time available",
+              "With visible awareness of the absurdity, so the audience knows it is a comedy",
+              "At a lower scale than a dramatic performance, since the frame is usually tight",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A heightened figure held for fifteen seconds, played straight. It is the same rule the comedy lesson states more fully later in the course.",
+            sourceLessonSlug: "commercials-and-branded-work",
+          },
+          {
+            prompt: "What does a silent or reaction commercial mode put the performer squarely into?",
+            options: [
+              "The close-up rules",
+              "The physical acting rules, since the whole body must carry the story without dialogue",
+              "The narration rules, because the voice-over supplies the meaning of the shot",
+              "The stage rules, because the performance is continuous and unedited",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The whole performance is what happens on your face when the product does its thing, which is exactly the material of the face-alone lesson.",
+            sourceLessonSlug: "commercials-and-branded-work",
+          },
+          {
+            prompt: "What is the rule for holding a product on camera?",
+            options: [
+              "Label toward camera, fingers off the front, move slowly",
+              "Hold it at chest height throughout, so the framing does not have to change",
+              "Keep it moving, so that the audience sees it from several angles in one shot",
+              "Hand it to the other performer, so both people are associated with it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "And repeat the handling identically for matching. Move slowly enough for focus to follow, and aim the label without visibly aiming it.",
+            sourceLessonSlug: "commercials-and-branded-work",
+          },
+          {
+            prompt: "What is the tag in a commercial?",
+            options: [
+              "The short closing line or brand statement",
+              "The identifying slate recorded at the head of an audition tape",
+              "The label attached to a product so the camera can read it clearly",
+              "The credit naming the agency that produced the spot",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The copy has to land inside the fixed duration with room left for it, which is part of why time is a wall.",
+            sourceLessonSlug: "commercials-and-branded-work",
+          },
+          {
+            prompt: "What part of a commercial performer's body is the second most directed?",
+            options: [
+              "The hands",
+              "The eyes, because the product has to be looked at on cue",
+              "The shoulders, because posture carries the credibility of the endorsement",
+              "The mouth, because the copy has to be articulated within a fixed time",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Most people have never practiced using their hands on cue, and if you are holding the product, the product is the shot.",
+            sourceLessonSlug: "commercials-and-branded-work",
+          },
+          {
+            prompt: "How can the time constraint of commercial work be practiced at home?",
+            options: [
+              "With a phone timer",
+              "By recording several versions and asking a friend to time them",
+              "It cannot be, because timing depends on the edit rather than the performance",
+              "By memorizing the copy until it can be delivered without thinking about it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Working to a stopwatch is part of the craft, and the lesson notes it is practicable at home with any phone timer.",
+            sourceLessonSlug: "commercials-and-branded-work",
+          },
+          {
+            prompt: "What is copy?",
+            options: [
+              "The scripted words of a commercial",
+              "The duplicate of a script issued to each performer before a shooting day",
+              "The recorded version of a spot supplied to broadcasters",
+              "The transcription of an improvised read, made so it can be repeated",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It has usually been through legal review, which is why it is not open to paraphrase however awkward the sentence is.",
+            sourceLessonSlug: "commercials-and-branded-work",
+          },
+          {
+            prompt: "Why do drama-trained performers often over-complicate commercial work?",
+            options: [
+              "They play an interior life that is in the way",
+              "They play too small, because dramatic training emphasizes restraint",
+              "They cannot work to a fixed duration, having never been timed before",
+              "They refuse to deliver copy they consider poorly written",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The job is usually to be the credible person to whom the product matters, and a rich interior life competes with the thing being sold.",
+            sourceLessonSlug: "commercials-and-branded-work",
+          },
+          {
+            prompt: "Which of the four constraints does NOT exist in dramatic work?",
+            options: [
+              "Direction arriving from a room of people who disagree",
+              "A frame that decides how large a physical choice can be",
+              "A requirement to repeat physical actions so takes will cut together",
+              "An editor who chooses which take reaches the audience",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A client, an agency, and a director may each give a note and the notes may conflict. The other three apply to any screen work.",
+            sourceLessonSlug: "commercials-and-branded-work",
+          },
+          {
+            prompt: "What shape is a phone held upright?",
+            options: [
+              "Roughly nine units wide to sixteen tall",
+              "Roughly sixteen wide to nine tall, the same ratio as a television screen",
+              "Square, which is why short-form framing centers the subject so tightly",
+              "Variable, since the shape depends on which platform the video is made for",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Tall and narrow. It is generous with height and stingy with width, which is what pushes vertical work toward close-up technique.",
+            sourceLessonSlug: "vertical-mobile-and-short-form",
+          },
+          {
+            prompt: "What does a vertical frame comfortably hold?",
+            options: [
+              "One person from the chest up",
+              "Two people side by side, which is why dialogue works well in the format",
+              "A full figure head to feet, since the frame is generous with height",
+              "A wide establishing view, provided the camera is far enough away",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two people side by side do not fit comfortably, so vertical work runs tight by default and inherits every rule from the close-up lesson.",
+            sourceLessonSlug: "vertical-mobile-and-short-form",
+          },
+          {
+            prompt: "What kind of movement does a vertical frame punish?",
+            options: [
+              "Lateral movement",
+              "Movement toward the lens, because focus cannot follow at close range",
+              "Any movement at all, because the frame is too small to contain it",
+              "Vertical movement, since standing up takes the head out of the frame",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A step sideways that a wide horizontal frame absorbs takes you out of a vertical one, so movement runs toward and away from the lens instead.",
+            sourceLessonSlug: "vertical-mobile-and-short-form",
+          },
+          {
+            prompt: "How should a vertical medium shot be treated?",
+            options: [
+              "As though it were a close-up",
+              "As though it were a wide shot, since the frame contains the whole upper body",
+              "As a stage performance, since the audience is watching without editing",
+              "The same as a horizontal medium shot, since the size term means the same thing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Held at arm's length, the face occupies a large part of the viewer's visual field, so the effective intimacy is higher than the shot size suggests.",
+            sourceLessonSlug: "vertical-mobile-and-short-form",
+          },
+          {
+            prompt: "What viewing condition should short-form work be planned for?",
+            options: [
+              "Sound off",
+              "Full attention on a large screen, since viewers seek out this material deliberately",
+              "Headphones, which is why quiet vocal detail carries better than volume",
+              "Repeated viewing, since short pieces are watched several times in succession",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Something has to be legible without audio, which is why captions are standard and why the face has to be doing something that reads with the voice removed.",
+            sourceLessonSlug: "vertical-mobile-and-short-form",
+          },
+          {
+            prompt: "What is the free diagnostic the lesson recommends for short-form work?",
+            options: [
+              "Watch it muted",
+              "Watch it at double speed to check whether the pacing holds up",
+              "Show it to someone who has not read the script and ask what they understood",
+              "Compare it against a professionally made piece in the same format",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is called brutal and free, and it tests exactly the condition a large share of this material is actually watched in.",
+            sourceLessonSlug: "vertical-mobile-and-short-form",
+          },
+          {
+            prompt: "What job does the beginning of a short-form piece have that it never had before?",
+            options: [
+              "Being worth not leaving",
+              "Establishing the location, since there is no time for an establishing shot later",
+              "Introducing the performer by name, since viewers may not know who they are",
+              "Setting the aspect ratio expectation, so viewers rotate their phones",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Short-form viewing is a stream someone is scrolling. That is a structural fact rather than an invitation to shout.",
+            sourceLessonSlug: "vertical-mobile-and-short-form",
+          },
+          {
+            prompt: "What is a cold open, in this lesson's sense?",
+            options: [
+              "Beginning inside an unresolved situation",
+              "Beginning with silence, so the viewer turns the sound on to find out why",
+              "Beginning with the ending, so the piece can work backward from it",
+              "Beginning without music, which is added only once the situation is established",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Starting in the middle of something already running does the work that noise cannot, which is how short form earns the next few seconds.",
+            sourceLessonSlug: "vertical-mobile-and-short-form",
+          },
+          {
+            prompt: "How does direct address invert the rule from the eyeline lesson?",
+            options: [
+              "The lens is played to deliberately",
+              "The eyeline is placed further from the lens rather than closer to it",
+              "The performer looks away from the camera to suggest an unseen listener",
+              "The camera moves to the performer rather than the performer to the camera",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Most short-form material is played straight to the lens, which is the one context where not playing to camera stops applying.",
+            sourceLessonSlug: "vertical-mobile-and-short-form",
+          },
+          {
+            prompt: "What does direct address demand that acting to a partner does not?",
+            options: [
+              "Supplying the rhythm yourself",
+              "A louder delivery, since there is no partner to react and carry the energy",
+              "A fixed gaze that never moves, since any shift breaks the connection",
+              "Shorter sentences, because the lens cannot process complex constructions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lens does not respond, so you have to provide the rhythm a listener would normally give you, while addressing one person rather than an audience.",
+            sourceLessonSlug: "vertical-mobile-and-short-form",
+          },
+          {
+            prompt: "Why is short-form work the most accessible practice ground in the course?",
+            options: [
+              "It is usually made alone",
+              "It requires no script, so there is nothing to prepare in advance",
+              "Platforms provide feedback that substitutes for a coach's judgment",
+              "It is shorter, so mistakes cost less time to correct than in longer work",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One person operating the camera, playing the scene, and cutting it. It is also where the self-critique protocol does the most work, because you are your only reader.",
+            sourceLessonSlug: "vertical-mobile-and-short-form",
+          },
+          {
+            prompt: "Why are captions standard in short-form video?",
+            options: [
+              "Much of the audience is watching muted",
+              "Platforms require them before a piece can be published",
+              "They increase the amount of text on screen, which holds attention longer",
+              "They allow a performer to correct a line that was misdelivered on camera",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Sound-off viewing is the condition to plan for, which is also why the face has to carry something that reads without the voice.",
+            sourceLessonSlug: "vertical-mobile-and-short-form",
+          },
+          {
+            prompt: "How does gesture behave in a vertical frame?",
+            options: [
+              "It happens near the face or leaves the frame",
+              "It can be as wide as in any other frame, since height compensates for width",
+              "It should be avoided entirely, since vertical framing suits stillness only",
+              "It has to be repeated, because narrow frames make a single gesture ambiguous",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Vertical work inherits the close-up rules: amplitude is small, and anything that travels sideways crosses the frame line.",
+            sourceLessonSlug: "vertical-mobile-and-short-form",
+          },
+          {
+            prompt: "Why is the effective intimacy of mobile viewing higher than the shot size suggests?",
+            options: [
+              "The screen is held at arm's length",
+              "Phone screens display a higher contrast image than television screens do",
+              "Viewers watch alone, which makes any performance feel more personal",
+              "Mobile video is compressed, which flattens the image and brings it forward",
+            ],
+            correctIndex: 0,
+            explanation:
+              "At that distance the face occupies a large part of the viewer's visual field even in a modest frame, so the intimacy exceeds the nominal size.",
+            sourceLessonSlug: "vertical-mobile-and-short-form",
+          },
+          {
+            prompt: "Which of these does the course deliberately NOT teach about vertical video?",
+            options: [
+              "Platform pixel dimensions and maximum durations",
+              "The consequences of a tall narrow frame for where gesture can happen",
+              "The assumption that a large share of viewing happens without audio",
+              "The way direct address changes what a performer has to supply",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Platform specifications change without notice and are not craft claims, so the course teaches the stable 9:16 shape and names no platform numbers.",
+            sourceLessonSlug: "vertical-mobile-and-short-form",
+          },
+          {
+            prompt: "Where does movement run in a vertical frame?",
+            options: [
+              "Toward and away from the lens",
+              "Across the frame, which is how the narrow shape is made to feel wider",
+              "Upward and downward, since the frame is generous with height",
+              "Nowhere, because vertical framing cannot accommodate movement at all",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The frame is stingy with width, so a lateral step that a horizontal frame absorbs takes a performer out of a vertical one.",
+            sourceLessonSlug: "vertical-mobile-and-short-form",
+          },
+          {
+            prompt: "What is narration, as this lesson defines it?",
+            options: [
+              "Acting with the character removed",
+              "The reading of stage directions aloud during a rehearsal for the cast",
+              "Any performance recorded without a camera present in the room",
+              "A summary of a story delivered before the story itself begins",
+            ],
+            correctIndex: 0,
+            explanation:
+              "No scene partner, no obstacle in the room, and no pretense that you are anyone but a person telling somebody something.",
+            sourceLessonSlug: "narration-and-direct-address",
+          },
+          {
+            prompt: "What defines a narration mode?",
+            options: [
+              "What the listener is being promised",
+              "The technical specification of the recording the client has requested",
+              "The length of the script, which decides the pace throughout",
+              "Whether the piece will be broadcast or used internally by a company",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The contract with the listener sets everything else: pace, level, and how much personality is appropriate.",
+            sourceLessonSlug: "narration-and-direct-address",
+          },
+          {
+            prompt: "What is the failure mode of documentary or authoritative narration?",
+            options: [
+              "Portentousness",
+              "Excessive speed, since documentary copy is usually dense with information",
+              "Sounding uncertain, which undermines the authority the mode depends on",
+              "Over-articulation, which makes the delivery sound artificial to a listener",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The mode wants steady, unhurried, and warm rather than grand, and the temptation is to be grand.",
+            sourceLessonSlug: "narration-and-direct-address",
+          },
+          {
+            prompt: "In explainer or instructional narration, what outranks beauty?",
+            options: [
+              "Clarity",
+              "Speed, because the listener wants the information as quickly as possible",
+              "Warmth, because a listener who is struggling needs reassurance most",
+              "Consistency, because instructional material is often heard in fragments",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The listener is trying to do something, so pace follows the difficulty of the idea and the emphasis lands on the word carrying the new information.",
+            sourceLessonSlug: "narration-and-direct-address",
+          },
+          {
+            prompt: "How does the lesson describe good corporate or industrial narration?",
+            options: [
+              "Professional and unmemorable in the best sense",
+              "Distinctive, so that the company's material is recognizable across a campaign",
+              "Energetic, because internal audiences need to be kept engaged",
+              "Formal, with careful articulation and a slower than conversational pace",
+            ],
+            correctIndex: 0,
+            explanation:
+              "An even level and no personality that competes with the content. The mode's whole point is not being the thing that is noticed.",
+            sourceLessonSlug: "narration-and-direct-address",
+          },
+          {
+            prompt: "Which narration mode treats sounding composed as a fault?",
+            options: [
+              "Personal or essay",
+              "Documentary, because authority is undermined by any audible polish",
+              "Explainer, because a composed delivery suggests the material is easy",
+              "Corporate, because polish reads as insincere to an internal audience",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It sits closer to speech and is allowed to hesitate and reconsider, which is exactly what composure removes.",
+            sourceLessonSlug: "narration-and-direct-address",
+          },
+          {
+            prompt: "What does \"emphasis is meaning\" mean in practice?",
+            options: [
+              "Land on the words carrying the new information",
+              "Increase the volume on the most important sentence in each paragraph",
+              "Emphasize every noun, since nouns carry the content of a sentence",
+              "Stress each word equally, so the listener decides what matters",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Any sentence has one or two words carrying its actual news, and an even stress across everything reads as nobody talking to nobody.",
+            sourceLessonSlug: "narration-and-direct-address",
+          },
+          {
+            prompt: "What is the strongest punctuation available in narration?",
+            options: [
+              "A pause",
+              "A change of volume, which marks a boundary more clearly than silence does",
+              "A change of pitch, since listeners track pitch more reliably than timing",
+              "A repeated word, which signals to the listener that a point is important",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Beginners systematically use too few, and the moment before the important word is worth more than any amount of push on it.",
+            sourceLessonSlug: "narration-and-direct-address",
+          },
+          {
+            prompt: "Why is \"talk to one person\" the standard fix for bad narration?",
+            options: [
+              "Addressing an audience produces announcing",
+              "One listener is easier to imagine than a crowd, which reduces nerves",
+              "It slows the delivery, which is the most common problem in narration work",
+              "It keeps the performer's eyeline consistent when a camera is present",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One specific person produces speech, and speech is what the listener is actually being promised. The lesson calls it the oldest note in the trade.",
+            sourceLessonSlug: "narration-and-direct-address",
+          },
+          {
+            prompt: "What should be found in narration copy before it is performed?",
+            options: [
+              "Where the argument turns and which sentence is the point",
+              "The words that will be hardest to pronounce cleanly at speed",
+              "The total running time, so the pace can be set before recording",
+              "The client's preferred emphasis, which is usually marked in the script",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Narration copy has an argument in it, with turns and lists, and this is the same analysis skill from the script lesson applied to prose instead of dialogue.",
+            sourceLessonSlug: "narration-and-direct-address",
+          },
+          {
+            prompt: "What is announcing?",
+            options: [
+              "Flattened delivery produced by addressing an audience",
+              "The formal introduction of a program before the narration proper begins",
+              "Speaking at a raised level to compensate for a distant microphone",
+              "Reading copy without having analyzed its structure beforehand",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the generalized sound that comes from talking to a crowd rather than to one person, and it is what the standard note is aimed at.",
+            sourceLessonSlug: "narration-and-direct-address",
+          },
+          {
+            prompt: "What does presenting add to narration?",
+            options: [
+              "Direct address, with the face carrying what the voice carries",
+              "Amplification, since a presenter has to reach a live audience as well as a camera",
+              "Improvisation, because a presenter works without a fixed script",
+              "Movement, because a presenter must walk through a space during delivery",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Eyes on the lens as though on one person, and body still enough not to distract. The hardest part is that most people who read well flatten visually once a camera appears.",
+            sourceLessonSlug: "narration-and-direct-address",
+          },
+          {
+            prompt: "Where does the instrument itself, breath and articulation and the mic, get treated in detail?",
+            options: [
+              "In this course's voice-acting sibling",
+              "In the physical acting lesson later in this same course",
+              "In the self-tape lesson, which covers all recording technique",
+              "Nowhere, because voice technique cannot be taught in a text course",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Off camera, everything in this lesson lives in the voice alone, and the instrument is the subject of the companion course rather than this one.",
+            sourceLessonSlug: "narration-and-direct-address",
+          },
+          {
+            prompt: "What happens to most people who read well when a camera is added?",
+            options: [
+              "They flatten visually",
+              "They speed up, because the presence of a camera creates time pressure",
+              "They over-articulate, because they assume the picture demands more precision",
+              "They lower their pitch, which is a common response to being observed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson calls this the hardest part of on-camera presenting: the face has to be doing what the voice is doing.",
+            sourceLessonSlug: "narration-and-direct-address",
+          },
+          {
+            prompt: "How does pace work in explainer narration?",
+            options: [
+              "It follows the difficulty of the idea",
+              "It stays constant, so the listener can settle into a predictable rhythm",
+              "It accelerates through the piece, since the listener grows more familiar",
+              "It is set by the client, who specifies a target duration in advance",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The listener is trying to do something, so a harder idea gets more time and an easy one gets less.",
+            sourceLessonSlug: "narration-and-direct-address",
+          },
+          {
+            prompt: "What does the lesson say about narration's share of paid work in this field?",
+            options: [
+              "It is a large share",
+              "It is a small niche, mainly available to performers with broadcast experience",
+              "It is declining, because synthesized voices now cover most of the market",
+              "It is seasonal, concentrated around corporate reporting periods",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson opens by naming it as a large share of the paid work in the field and a distinct craft in its own right.",
+            sourceLessonSlug: "narration-and-direct-address",
+          },
+          {
+            prompt: "What is the audience doing during a live theater performance, in the lesson's account?",
+            options: [
+              "Breathing, coughing, laughing, and going quiet",
+              "Sitting still, since a trained audience does not interfere with the performance",
+              "Reading the program, which is why the opening minutes are usually expository",
+              "Watching a fixed picture, because the composition is set by the lighting design",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That response feeds back into the performance in real time, which is why the same show plays differently on a Tuesday than on a Saturday.",
+            sourceLessonSlug: "acting-on-stage",
+          },
+          {
+            prompt: "Knowing which commercial mode a spot is in tells you what, before anyone gives a note?",
+            options: [
+              "The scale",
+              "The running time, since each mode is associated with a standard spot length",
+              "The number of takes, because character work is always given more than a real person read",
+              "Whether the product will be handled, since only some modes involve holding it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Real person, spokesperson, character, and silent reaction each imply a level and a distance before a word of direction arrives.",
+            sourceLessonSlug: "commercials-and-branded-work",
+          },
+        ],
+      },
+    },
     // ── Section 4 ────────────────────────────────────────────────────────────────────────────────
     {
       slug: "commercials-and-branded-work",
