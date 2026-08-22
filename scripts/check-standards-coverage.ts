@@ -101,6 +101,7 @@ const BACKLOG: Record<string, string> = {
   // strongest candidate, since it is the same source-critical numeracy that earned SCI-01 its
   // Common Core statistics claims.
   "reporter-what-a-beat-is": "OUT OF SCOPE for now, professional track for working reporters (plans/68)",
+  "reporter-public-records": "OUT OF SCOPE for now, professional track for working reporters (plans/68)",
 };
 
 const seed = readFileSync("scripts/seed-courses.ts", "utf-8");

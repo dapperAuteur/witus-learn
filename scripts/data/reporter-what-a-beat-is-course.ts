@@ -644,6 +644,84 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
               "And ideally who does cover it instead, so the boundary is a redirection rather than a refusal.",
             sourceLessonSlug: "beat-memo",
           },
+          {
+            prompt: "What does the lesson say a beat reporter does with a five-year capital plan?",
+            options: [
+              "Reads it for one line",
+              "Summarizes it for readers each time the governing body adopts a revised version",
+              "Files a records request for the working papers behind each projection it contains",
+              "Compares it against neighboring jurisdictions to establish whether spending is unusual",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is given as an example of the cost side of a beat: hours spent on documents that produce nothing this week and pay off later.",
+            sourceLessonSlug: "beat-not-story",
+          },
+          {
+            prompt: "What does the document inventory NOT require a reporter to do?",
+            options: [
+              "Read all of it",
+              "Record where each scheduled publication lands once it has been released",
+              "Include filings made to bodies outside the beat's own institutions",
+              "Update the list when an institution changes what it publishes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The point is knowing what exists, so that when a question arises you already know which document would answer it.",
+            sourceLessonSlug: "map-the-beat",
+          },
+          {
+            prompt: "Which group on a beat map is described as free to speak?",
+            options: [
+              "Former employees",
+              "Technical staff, because compiling published figures is a non-policy function",
+              "Elected officials, because their statements are privileged while in office",
+              "People the institution acts upon, because they have no employment relationship with it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They are one of the three groups the lesson says reporters routinely leave off the map, alongside affected people and the staff who compile the numbers.",
+            sourceLessonSlug: "map-the-beat",
+          },
+          {
+            prompt: "What form do the four inventories take inside the beat memo?",
+            options: [
+              "Lists",
+              "Narrative sections explaining why each institution matters to the year questions",
+              "A single diagram showing how each body's authority connects to the others",
+              "Appendices held separately, so the memo itself stays to two pages",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The memo carries the scope sentence, the year questions, the four inventories in list form, the named communities, and the measurement plan.",
+            sourceLessonSlug: "beat-memo",
+          },
+          {
+            prompt: "What does a beat calendar let a reporter begin four weeks before a document exists?",
+            options: [
+              "Reporting",
+              "Editing, since the piece can be drafted once the release date is known",
+              "Negotiating an embargo with the body that will publish the document",
+              "Filing a records request for the draft version circulating internally",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That is the whole conversion from reactive to early: the alternative is starting in the four hours after it lands.",
+            sourceLessonSlug: "map-the-beat",
+          },
+          {
+            prompt: "What does the lesson say a beat memo is the difference between?",
+            options: [
+              "Having a beat and having a job title",
+              "A reporter who files daily and a reporter who originates enterprise projects",
+              "A subject an editor assigned and a subject the reporter chose for themselves",
+              "A beat that is measured at year end and one that is never formally reviewed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One document, two pages, written for yourself and shared with an editor, and revised twice a year.",
+            sourceLessonSlug: "beat-memo",
+          },
         ],
       },
     },
@@ -1271,6 +1349,162 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
             explanation:
               "For an official, talking to a reporter is a duty. For a shift worker it is unpaid time and possible exposure, and the schedule should reflect that difference.",
             sourceLessonSlug: "who-is-never-asked",
+          },
+          {
+            prompt: "What does the lesson say community listening most resembles?",
+            options: [
+              "Doing nothing",
+              "Conducting a survey, since the aim is to find out what a population thinks",
+              "Attending a public meeting, since both involve sitting through other people's agendas",
+              "Working a source, since the relationship is what makes the later story possible",
+            ],
+            correctIndex: 0,
+            explanation:
+              "And it is the part of a beat that most reliably changes what gets covered, which is why it is protected rather than fitted in.",
+            sourceLessonSlug: "listening-first",
+          },
+          {
+            prompt: "What did the 2025 Indiana Girl Report pair its listening sessions with?",
+            options: [
+              "Statewide data",
+              "A telephone poll weighted to match the age and race distribution of Indiana girls",
+              "Interviews with every school district superintendent who agreed to participate",
+              "A literature review of peer-reviewed research on adolescent social connection",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The structure is what makes it a teaching object: qualitative sessions running alongside statewide administrative data, each doing what the other cannot.",
+            sourceLessonSlug: "listening-first",
+          },
+          {
+            prompt: "What is a reporter explicitly NOT doing during community listening?",
+            options: [
+              "Collecting quotes",
+              "Identifying themselves, since disclosure would change what the room is willing to say",
+              "Taking notes, since a written record makes the setting feel like an interview",
+              "Attending, since listening is done through intermediaries who already have trust",
+            ],
+            correctIndex: 0,
+            explanation:
+              "You are collecting the agenda. Anything you want to use requires a separate conversation opened there and then.",
+            sourceLessonSlug: "listening-first",
+          },
+          {
+            prompt: "What has a reporter done if they treat 91 listening sessions as a survey?",
+            options: [
+              "Misread it",
+              "Applied the correct method, since the sessions were run across the whole state",
+              "Overcorrected, since qualitative work is more reliable than administrative data",
+              "Followed the report's own guidance, which presents the sessions as representative",
+            ],
+            correctIndex: 0,
+            explanation:
+              "And a reporter who dismisses the sessions because they are not a survey has thrown away the only account of what girls actually raised. Both errors are named.",
+            sourceLessonSlug: "listening-first",
+          },
+          {
+            prompt: "Why does business-hours availability shape who appears in coverage?",
+            options: [
+              "It is when reporters work",
+              "Because public bodies schedule their meetings to overlap with the working day",
+              "Because records offices close before most reporters finish their filing for the day",
+              "Because editors will not approve overtime for interviews conducted after hours",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Anyone whose availability does not match a reporter's falls out of the coverage without any decision being made about them.",
+            sourceLessonSlug: "who-is-never-asked",
+          },
+          {
+            prompt: "What is an access cost?",
+            options: [
+              "What talking to a reporter costs the source",
+              "The fee an agency charges for producing the records a story depends on",
+              "The travel a reporter must fund to reach communities outside the metros",
+              "The time an outlet spends verifying an account before it can be published",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Time, risk, sometimes a job. For an official it is part of the job; for a shift worker it is unpaid time and possible exposure.",
+            sourceLessonSlug: "who-is-never-asked",
+          },
+          {
+            prompt: "How long does the lesson say the monthly quote audit takes?",
+            options: [
+              "About twenty minutes",
+              "A full afternoon, because each source must be reclassified against the beat memo",
+              "Roughly two hours, which is why most reporters run it quarterly instead",
+              "It varies with output, since every published piece must be reread in full",
+            ],
+            correctIndex: 0,
+            explanation:
+              "List everyone quoted, mark each official, advocate, expert, or affected, and count. Cheap enough that skipping it is a choice.",
+            sourceLessonSlug: "who-is-never-asked",
+          },
+          {
+            prompt: "What does the lesson say about a beat that narrows to whoever is easiest?",
+            options: [
+              "The audit is the only reliable defense",
+              "It is unavoidable in a newsroom that expects daily filing from a single reporter",
+              "It corrects itself once the reporter has held the beat for more than a year",
+              "It is a legal risk, because relying on official sources invites a claim of bias",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Because the narrowing happens through convenience rather than decision, nothing catches it except a deliberate count.",
+            sourceLessonSlug: "who-is-never-asked",
+          },
+          {
+            prompt: "What does equal trust require telling people before they speak?",
+            options: [
+              "What will happen to what they say",
+              "Which editor will make the final decision about whether their words are published",
+              "How long the outlet retains recordings and notes from the conversation",
+              "Whether the piece will be published before or after the institution responds",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Along with being reachable afterward, coming back when nothing is wrong, and being honest about what you cannot promise.",
+            sourceLessonSlug: "equal-trust",
+          },
+          {
+            prompt: "How should the good outcome on a beat be covered?",
+            options: [
+              "With the same seriousness as the bad one",
+              "Sparingly, because positive coverage reads as promotional and costs the outlet credibility",
+              "Through a separate feature desk, so accountability reporting is not confused with it",
+              "Only when a community requests it, so the outlet is not seen to be choosing favorites",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A community that appears in your work only at its worst learns exactly what you think it is.",
+            sourceLessonSlug: "equal-trust",
+          },
+          {
+            prompt: "What does an extractive pattern teach a community?",
+            options: [
+              "That journalists arrive to take",
+              "That the outlet lacks the staffing to cover the area consistently over time",
+              "That coverage decisions are made by editors rather than by the reporter they know",
+              "That the reporter is inexperienced and will be replaced within a year or two",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Each individual step is defensible. The pattern is what the community learns from, which is why the fix is measured in visits rather than intentions.",
+            sourceLessonSlug: "equal-trust",
+          },
+          {
+            prompt: "What is equal trust, if it is not agreement?",
+            options: [
+              "Predictability",
+              "Neutrality, meaning the reporter takes no position on any dispute inside the community",
+              "Reciprocity, meaning the community receives coverage in proportion to its cooperation",
+              "Confidentiality, meaning no source is named without their explicit written consent",
+            ],
+            correctIndex: 0,
+            explanation:
+              "People can forecast how you will behave. That is a much stronger thing to offer than sympathy, and it survives a story someone hates.",
+            sourceLessonSlug: "equal-trust",
           },
         ],
       },
@@ -1901,6 +2135,136 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
               "Most useful information arrives from someone who benefits. The requirement is to know which interest you are serving and to disclose it.",
             sourceLessonSlug: "source-hygiene",
           },
+          {
+            prompt: "How often is the rolling contact list worked through?",
+            options: [
+              "Every month",
+              "Every week, which is what makes the fifteen minutes a week add up over a year",
+              "Every quarter, timed to the institution's reporting and budget cycle",
+              "Whenever a story requires a source the reporter has not spoken to recently",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The list carries a next-contact date beside each name, which is what turns keeping sources into a task rather than an intention.",
+            sourceLessonSlug: "source-with-nothing",
+          },
+          {
+            prompt: "What does continuing to press a source who has gone quiet produce?",
+            options: [
+              "A permanent silence",
+              "An explanation, which is why persistence is the correct response to an unanswered call",
+              "A formal complaint to the outlet, which the newsroom is then obliged to investigate",
+              "A referral to the institution's communications office, which handles all further contact",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It also tells everyone that source talks to what you are like, which costs far more than the one relationship.",
+            sourceLessonSlug: "source-with-nothing",
+          },
+          {
+            prompt: "Which reasons does the lesson give for a source going quiet?",
+            options: [
+              "They got burned, or their employer noticed",
+              "They have moved to a role that prohibits contact with the press under agency policy",
+              "They are waiting for the outlet to publish a correction on an unrelated earlier story",
+              "They have been advised by counsel not to speak while litigation is pending",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Or your last piece was worse for them than you realized. Ask once, plainly, and accept the answer.",
+            sourceLessonSlug: "source-with-nothing",
+          },
+          {
+            prompt: "What can ground rules never be?",
+            options: [
+              "Retroactive",
+              "Renegotiated once the interview has begun and the source has started speaking",
+              "Different for two sources contributing to the same published piece",
+              "Agreed verbally, since only a written record survives a later dispute",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A person reclassifying a past remark is asking a favor. Grant it or decline it, but say which is happening.",
+            sourceLessonSlug: "ground-rules",
+          },
+          {
+            prompt: "How does the lesson suggest opening a conversation about ground rules?",
+            options: [
+              "Everything is on the record unless we agree otherwise",
+              "Tell me now if there is anything you would prefer I did not publish about this",
+              "I will send you the passages that quote you before the piece is filed for editing",
+              "Nothing you say will be attributed to you unless you tell me it can be",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Followed by an invitation to ask for background before speaking, and to agree how the description will read. Twelve seconds at the top.",
+            sourceLessonSlug: "ground-rules",
+          },
+          {
+            prompt: "In Cohen v. Cowles Media Co., who overrode the promise the reporters had made?",
+            options: [
+              "The editors",
+              "A court, which ordered the newspapers to identify the source of the documents",
+              "The source himself, who agreed to be named once the documents were verified",
+              "The publisher's counsel, who determined the promise was unenforceable",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The papers published his name, he lost his job, and he sued. The 1991 decision held the First Amendment does not bar the claim.",
+            sourceLessonSlug: "ground-rules",
+          },
+          {
+            prompt: "In what year was Cohen v. Cowles Media Co. decided?",
+            options: [
+              "1991",
+              "1964, the same term that established the actual-malice standard for public officials",
+              "1972, alongside the leading decision on whether reporters may refuse to testify",
+              "2001, in the line of cases about publishing lawfully obtained but illegally intercepted material",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The holding is that generally applicable law, here promissory estoppel, can apply to the press like anyone else.",
+            sourceLessonSlug: "ground-rules",
+          },
+          {
+            prompt: "What is a handling plan?",
+            options: [
+              "A decision made before sensitive material arrives",
+              "The newsroom's written procedure for verifying documents received from anonymous sources",
+              "A legal agreement setting out which employees may access a story's source files",
+              "An index of every document a reporter has downloaded during a reporting project",
+            ],
+            correctIndex: 0,
+            explanation:
+              "What you will keep, where, and for how long. Deciding afterward means deciding while under pressure with the material already in hand.",
+            sourceLessonSlug: "source-hygiene",
+          },
+          {
+            prompt: "Which systems does the lesson name as reachable by someone other than the reporter?",
+            options: [
+              "Employer-administered cloud drives",
+              "Encrypted messaging applications installed on a reporter's personal phone",
+              "Paper notebooks stored at the reporter's home rather than in the newsroom",
+              "Voice recordings that were never transferred off the recording device",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Along with chat logs and calendar entries naming a person. Tell sources honestly that your employer's systems are not yours.",
+            sourceLessonSlug: "source-hygiene",
+          },
+          {
+            prompt: "What does the lesson say about the note in your phone?",
+            options: [
+              "It is source material",
+              "It is protected, because personal devices fall outside an employer's retention policy",
+              "It should be the primary store, because it is the only system a reporter controls",
+              "It is exempt from a handling plan, because it holds no documents",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Knowing where source material lives and who can reach it includes the places you would not think to list.",
+            sourceLessonSlug: "source-hygiene",
+          },
         ],
       },
     },
@@ -2529,6 +2893,84 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
             correctIndex: 0,
             explanation:
               "One enterprise block, one listening block, and a monthly file review is not much time, and even that much gets eaten.",
+            sourceLessonSlug: "the-week",
+          },
+          {
+            prompt: "What does the lesson say most signals do?",
+            options: [
+              "Go nowhere",
+              "Recur within a quarter, which is why the log is reviewed on a monthly cycle",
+              "Produce a quick-turn item, since a documented change is newsworthy on its own",
+              "Require a records request before the reporter can judge whether they matter",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The ones that recur are the ones to work, and there is no way to tell which is which without a written record.",
+            sourceLessonSlug: "signals",
+          },
+          {
+            prompt: "What makes budgets distinctive among an institution's documents?",
+            options: [
+              "Intent stated in numbers",
+              "They are the only records subject to independent audit before they are published",
+              "They must be approved in open session, so the deliberation is always on the record",
+              "They are revised continuously, so the current version always reflects present policy",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Which is why comparing this year against the last three is called the single highest-yield hour on most beats.",
+            sourceLessonSlug: "signals",
+          },
+          {
+            prompt: "What is wrong with a beat's accumulation living only in the reporter's head?",
+            options: [
+              "It cannot be searched, handed over, or defended",
+              "It fades faster than a written record, which is why chronologies are kept for a year",
+              "It exposes the outlet if a court orders the reporter to produce their notes",
+              "It prevents an editor from assigning the beat to a second reporter during a busy week",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three separate failures, and the beat file exists to prevent all of them at once.",
+            sourceLessonSlug: "beat-file",
+          },
+          {
+            prompt: "How many protected blocks does the lesson's week shape contain?",
+            options: [
+              "Two weekly and one monthly",
+              "Three weekly: enterprise, listening, and a standing review of the signal log",
+              "One weekly, since only enterprise time needs defending against quick-turn work",
+              "Four, one for each of the inventories that make up the beat map",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One enterprise block, one listening block, and an hour of file review monthly rather than weekly. Everything else is quick-turn and maintenance.",
+            sourceLessonSlug: "the-week",
+          },
+          {
+            prompt: "How does the lesson characterize publishing what you could not confirm?",
+            options: [
+              "A discipline, not a weakness",
+              "A legal precaution that limits the outlet's exposure if a claim is later disputed",
+              "An editing decision, taken by the desk rather than the reporter who did the work",
+              "An optional appendix, useful in enterprise work but out of place in quick-turn pieces",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the same sourcing standard the rest of the catalog applies, and it is what this track's capstone is graded against.",
+            sourceLessonSlug: "the-week",
+          },
+          {
+            prompt: "What do a beat's two modes of work compete for?",
+            options: [
+              "The same hours",
+              "The same sources, since enterprise reporting exhausts the contacts quick-turn work needs",
+              "The same editor, whose attention is divided between daily filing and long projects",
+              "The same documents, since both draw on the beat's inventory of scheduled publications",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The job is not choosing between them. It is protecting the one that always loses, which is enterprise.",
             sourceLessonSlug: "the-week",
           },
         ],

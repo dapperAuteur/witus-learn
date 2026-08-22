@@ -204,6 +204,7 @@ import { LACROSSE_COURSE } from "./data/lacrosse-course";
 import { TENNIS_COURSE } from "./data/tennis-course";
 import { CHESS_COURSE } from "./data/chess-course";
 import { REPORTER_WHAT_A_BEAT_IS_COURSE } from "./data/reporter-what-a-beat-is-course";
+import { REPORTER_PUBLIC_RECORDS_COURSE } from "./data/reporter-public-records-course";
 import { AFROCENTRICITY_COURSE } from "./data/afrocentricity-course";
 import { PAN_AFRICANISM_COURSE } from "./data/pan-africanism-course";
 import { ASIA_BEFORE_EUROPEAN_COLONIZATION_COURSE } from "./data/asia-before-european-colonization-course";
@@ -894,6 +895,30 @@ async function main() {
     seriesOrder: 1,
     seriesCode: "REPORT",
     seriesPosition: "00",
+  });
+
+  // REPORT-01. The exact gap civic-documentation leaves: it teaches open-MEETINGS law thoroughly and
+  // stops, because a Documenter's job ends at the gavel. Records are a different statute and a
+  // different failure mode, the denial and the fee estimate. Federal FOIA is the spine because it is
+  // one text a reader anywhere can check; Indiana is the worked example of a STATE act and the
+  // lesson ends by sending the reader to their own.
+  //
+  // The Indiana lesson deliberately prints NO deadline numbers and files two source checks instead
+  // (src/lib/research-checks.ts, keys in-apra-response-deadlines and in-pac-complaint-window). A
+  // course that asserts a stale statutory deadline teaches someone to miss a real one, which is the
+  // authoritative-values rule at its most literal.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "reporter-public-records",
+    course: REPORTER_PUBLIC_RECORDS_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "reporter",
+    seriesTitle: "The Reporter",
+    seriesOrder: 2,
+    seriesCode: "REPORT",
+    seriesPosition: "01",
   });
 
   // Genealogy for yourself and your community. Plan: plans/70-genealogy-course.md.

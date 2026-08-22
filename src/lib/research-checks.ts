@@ -716,6 +716,84 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Any NBHWC-approved program's own reading list, which may cite the evidence the handbook relies on",
     ],
   },
+  // ── Reporter track (plans/68) ─────────────────────────────────────────────────────────────────
+  {
+    key: "in-apra-response-deadlines",
+    course: "reporter-public-records",
+    lesson: "indiana-worked-example",
+    quote:
+      "Read the current text of Indiana Code 5-14-3-9 and Indiana Code 5-14-5 before you rely on any deadline, including one you read in a training course.",
+    title: "Indiana APRA: what are the current response deadlines, by delivery method?",
+    severity: "medium",
+    question:
+      "Under the current text of Indiana Code 5-14-3-9, how long does a public agency have to respond to a records request delivered in person, and how long for one delivered by mail, fax, or email? Quote the operative sentence and give the date you read it.",
+    claim:
+      "The lesson says Indiana sets short response deadlines that differ by how a request was delivered, with an in-person request answered faster than one sent by mail or electronically, and deliberately prints NO numbers, telling the reader to read the current statutory text instead.",
+    stakes:
+      "A reporter times a follow-up, a constructive-denial argument, and a complaint to the Public Access Counselor off this deadline. A stale figure in a training course teaches somebody to miss a real one, which is worse than the hedge that is there now. Once verified, the numbers go into the lesson and this check is deleted.",
+    needs: [
+      "The operative sentence of Ind. Code 5-14-3-9 on response time, quoted, with subsection",
+      "Whether the periods are calendar or business days",
+      "What counts as a response, as distinct from production of the records",
+      "The URL on the Indiana General Assembly's own code site and the date you read it",
+    ],
+    where: [
+      "iga.in.gov, the Indiana General Assembly's own code site, rather than a third-party mirror",
+      "The Indiana Public Access Counselor's handbook at in.gov/pac, which restates the periods",
+      "A call to the Public Access Counselor's office, which answers questions from the public",
+    ],
+  },
+  {
+    key: "in-pac-complaint-window",
+    course: "reporter-public-records",
+    lesson: "indiana-worked-example",
+    quote:
+      "the complaint route to the counselor carries its own filing window measured from the denial",
+    title: "Indiana: how long to file an access complaint with the Public Access Counselor?",
+    severity: "medium",
+    question:
+      "Under the current text of Indiana Code 5-14-5, how many days does a person have to file a formal complaint with the Public Access Counselor after a denial, and from what event does the period run?",
+    claim:
+      "The lesson states that the complaint route carries its own filing window measured from the denial, and prints no number, directing the reader to Indiana Code 5-14-5.",
+    stakes:
+      "The counselor is the cheapest route a reporter without a lawyer has in Indiana, and it is the one this course recommends. A missed filing window closes it entirely. Publishing a wrong number would be worse than the current hedge, so the number is withheld until it is read against the primary text.",
+    needs: [
+      "The number of days and whether they are calendar or business days",
+      "The event the period runs from: the denial itself, receipt of the denial, or the date of the request",
+      "Whether an advisory opinion is a precondition to any fee-shifting remedy in Indiana, and the citation if so",
+      "The URL on iga.in.gov and the date you read it",
+    ],
+    where: [
+      "iga.in.gov for the current text of Ind. Code 5-14-5",
+      "in.gov/pac, the Public Access Counselor's own guidance and opinion archive",
+      "The Hoosier State Press Association, which advises members on this route",
+    ],
+  },
+  {
+    key: "fpi-posting-still-live",
+    course: "reporter-what-a-beat-is",
+    lesson: "beat-memo",
+    quote:
+      "The Free Press Indiana posting that prompted this track asks for someone relentless about building relationships built on equal trust, and describes travel across the state as part of the job rather than an expense line.",
+    title: "Free Press Indiana women and girls reporter posting: does the URL still resolve?",
+    severity: "low",
+    question:
+      "Does https://www.freepressindiana.org/jobs/women-girls-reporter still resolve, and does the posting text still contain the phrase about relationships built on equal trust and the description of statewide travel? If the posting has been taken down, what is the correct citation for an archived copy?",
+    claim:
+      "REPORT-00 cites the posting twice as a public document, once for the equal-trust phrase and once for statewide travel as part of the job. It is cited as a public document only, with the course's disclosure making clear that Free Press Indiana has not reviewed, endorsed, or sponsored the course.",
+    stakes:
+      "Job postings are taken down when the role is filled, and a dead citation in a course about sourcing is exactly the failure the course teaches learners to catch. If the URL is gone, the reference should point at an archived capture with its capture date, or the phrasing should be attributed more generally.",
+    needs: [
+      "Whether the URL currently resolves, and the date checked",
+      "The two quoted characteristics confirmed against the live or archived posting text",
+      "An archive.org capture URL and capture date if the original is gone",
+    ],
+    where: [
+      "The posting URL itself",
+      "web.archive.org for a capture of the same URL",
+      "Free Press Indiana's careers or jobs index, in case the posting moved rather than closed",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
