@@ -1183,26 +1183,24 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     course: "reporter-media-law",
     lesson: "shield-and-privilege",
     quote:
-      "This course does not print the scope, the covered categories, or the operative language, because this pass could not read the current text against a primary source and the details are precisely what would matter.",
-    title: "Indiana shield: who is covered, how strong, and does it reach unpublished material?",
+      "Read Indiana Code 34-46-4-1 for the covered list before you rely on your own place in it, and a narrowed source check is filed asking for exactly that verbatim text.",
+    title: "Indiana shield law: the verbatim text of the covered-persons list, 34-46-4-1",
     severity: "high",
     question:
-      "Under the current text of Indiana Code 34-46-4, who is covered by the shield provision, is the protection absolute or qualified, does it reach unpublished material and notes as well as source identity, and does it survive a criminal defendant's subpoena? Quote the operative sentences.",
+      "What is the exact current text of Ind. Code 34-46-4-1, listing who the shield covers? Quote it in full, and give the URL on the Indiana General Assembly's own site plus the date you read it.",
     claim:
-      "REPORT-05 states that Indiana has a statutory shield provision for people connected with newspapers and broadcast outlets at Ind. Code 34-46-4, and deliberately prints nothing about its scope, covered categories, or operative language. The lesson tells the reader to read the chapter and their state's RCFP entry before relying on any characterization, including the course's own.",
+      "The lesson now teaches, on the Reporters Committee's authority, that the privilege is absolute as to state matters, protects the SOURCE'S IDENTITY only rather than notes or unpublished material, and defines its covered class by EMPLOYMENT with newspapers, periodicals of regular circulation, press associations, wire services, or licensed broadcasters, as owner, editor or reporter. It warns that a freelancer, newsletter writer, podcaster or civic Documenter may fall outside that list.",
     stakes:
-      "This is the one place in the whole Reporter track where a reader could be harmed by a wrong statement rather than merely misinformed: a reporter who believes they are protected and is not may promise a source confidentiality they cannot deliver, which is exactly the failure Cohen v. Cowles describes from the other direction. The course therefore refuses to guess. Once the text is read, the lesson gains the covered categories, the strength of the protection, and whether it reaches notes.",
+      "This is the check where being wrong hurts a third party rather than the course. A reporter who believes the statute covers them may promise a source confidentiality they cannot deliver, and the person exposed is the source, not the journalist. The lesson currently rests on an expert secondary reading because iga.in.gov serves an application rather than a document to an automated reader. The verbatim list would let the course state the covered categories as law rather than as summary.",
     needs: [
-      "The covered categories, quoted, with the subsection",
-      "Whether the protection is absolute or qualified, and what overcomes it if qualified",
-      "Whether unpublished material and notes are covered, or only source identity",
-      "Whether freelancers or independent publishers are covered, and any case law on the point",
-      "The URL on iga.in.gov and the date read",
+      "The full current text of Ind. Code 34-46-4-1, quoted",
+      "Whether the list has been amended since 1941, and if so when and how",
+      "Any Indiana appellate decision applying it to a freelancer, blogger, or non-employee",
     ],
     where: [
-      "iga.in.gov for the current text of Ind. Code 34-46-4",
-      "The Reporters Committee's shield-law entry for Indiana at rcfp.org",
-      "The Hoosier State Press Association, which advises members on subpoenas",
+      "iga.in.gov, opened in a browser rather than fetched, since the site serves an app",
+      "The Indiana Supreme Court's opinion search for cases citing 34-46-4",
+      "law.justia.com carries the section but returns 403 to automated requests; it opens fine in a browser",
     ],
   },
   {

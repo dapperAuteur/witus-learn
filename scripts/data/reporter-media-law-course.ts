@@ -1625,7 +1625,21 @@ export const REPORTER_MEDIA_LAW_COURSE: AuthoredCourse = {
 
 **State shield laws are where the real protection is, and they vary enormously.** Whether a state has one at all, who counts as covered, whether the protection is absolute or qualified, whether it reaches unpublished material as well as source identity, and whether it survives a criminal defendant's subpoena are all separate questions with different answers in different states.
 
-**Indiana as the worked example, with a refusal.** Indiana has a statutory shield provision for people connected with newspapers and broadcast outlets, in Indiana Code 34-46-4. This course does not print the scope, the covered categories, or the operative language, because this pass could not read the current text against a primary source and the details are precisely what would matter. Read the chapter itself and your state's entry in the Reporters Committee's guide before you rely on any characterization. A source check is filed.
+**Indiana as the worked example, and the part that should stop you.** Indiana's shield is at Indiana Code 34-46-4-1 and 34-46-4-2, and it dates to 1941. As the Reporters Committee summarizes it, section 2 provides that a person described in section 1 "shall not be compelled to disclose in any legal proceedings or elsewhere the source of any information procured or obtained in the course of the person's employment," covering information "published or not published" and "broadcast or not broadcast" (Reporters Committee for Freedom of the Press, n.d.).
+
+Three features of that, and each one matters more than the fact that a shield exists.
+
+**It is absolute, not qualified, as to state matters.** No balancing test, no showing of need that overcomes it. That is stronger than most states.
+
+**It protects the SOURCE'S IDENTITY, and only that.** Not your notes, not your unpublished footage, not the information itself. A subpoena that asks what you learned rather than who told you is asking for something this statute does not cover.
+
+**And section 1 defines who is covered by EMPLOYMENT.** The Reporters Committee describes the covered class as people employed by newspapers, periodicals with regular circulation, recognized press associations, wire services, or licensed radio and television stations, as owners, editors, or reporters drawing income from legitimate news work. Read that list against how journalism is actually done now. A freelancer with no employer. A newsletter writer. A podcaster. **A Documenter attending a public meeting for a civic program.** None of those is obviously an owner, editor, or reporter employed by a newspaper or a licensed broadcaster, and a 1941 list was not written with them in mind.
+
+**Which is the whole reason this lesson exists.** The danger is not that you have no protection. It is believing you have protection you do not have, and making a promise to a source on the strength of it. If you are not plainly inside that employment list, assume you are outside it until a lawyer tells you otherwise, and make the promise you can actually keep.
+
+**One more boundary.** The privilege reaches state matters. It does not control a federal proceeding or a federal grand jury, where Branzburg governs and there is no federal shield statute.
+
+**What is still open here.** The above is the Reporters Committee's reading, which is an expert secondary source rather than the statute itself. This pass could not read the code text on the Indiana General Assembly's own site, which serves an application rather than a document to an automated reader. Read Indiana Code 34-46-4-1 for the covered list before you rely on your own place in it, and a narrowed source check is filed asking for exactly that verbatim text.
 
 **The definitional problem to know about in advance.** Many shield statutes were written when a journalist meant an employee of a newspaper or a broadcaster. Whether they cover a freelancer, a newsletter writer, a documentary maker, or somebody publishing independently is a live question in many states, and the answer sometimes turns on whether you can show a journalistic purpose at the time you gathered the material.
 
@@ -1637,7 +1651,9 @@ export const REPORTER_MEDIA_LAW_COURSE: AuthoredCourse = {
 
 :::reveal What is 28 C.F.R. 50.10, and what is it not? ||| A Justice Department policy constraining the Department's own conduct when seeking information from the news media. It is not a privilege the reporter holds and it binds nobody outside the Department.
 
-:::reveal Why does this course refuse to print the scope of Indiana's shield provision? ||| Because the details are precisely what would matter and this pass could not read the current text against a primary source. The chapter is named and a source check is filed.
+:::reveal What does Indiana's shield protect, and what does it not? ||| Only the identity of a source (Ind. Code 34-46-4-2), covering information published or not published and broadcast or not broadcast. It does NOT protect your notes, your unpublished material, or the information itself. It is absolute as to state matters and does not reach a federal proceeding.
+
+:::reveal Why might a freelancer, a newsletter writer, or a Documenter not be covered by it? ||| Because section 1 defines the covered class by EMPLOYMENT: owners, editors, or reporters employed by newspapers, periodicals with regular circulation, press associations, wire services, or licensed broadcasters. A 1941 list did not anticipate them. The danger is not having no protection, it is believing you have protection you do not have and promising a source accordingly.
 
 ## Vocabulary
 - **Reporter's privilege**: a claimed right to refuse to identify sources or produce material, rejected in Branzburg for grand juries and read variously since.
@@ -1649,7 +1665,9 @@ export const REPORTER_MEDIA_LAW_COURSE: AuthoredCourse = {
 - Branzburg v. Hayes, 408 U.S. 665 (1972). https://supreme.justia.com/cases/federal/us/408/665/
 - U.S. Department of Justice policy regarding obtaining information from, or records of, members of the news media, 28 C.F.R. 50.10.
 - Indiana Code 34-46-4. https://iga.in.gov/laws/2025/ic/titles/34
-- Reporters Committee for Freedom of the Press. (n.d.). *Reporters Committee legal guides*. https://www.rcfp.org/`,
+- Reporters Committee for Freedom of the Press. (n.d.). *Reporters Committee legal guides*. https://www.rcfp.org/
+- Reporters Committee for Freedom of the Press. (n.d.). *The reporter's privilege compendium: Indiana*. https://www.rcfp.org/privilege-compendium/indiana/
+- Ind. Code 34-46-4-1 (persons covered) and 34-46-4-2 (privilege). Indiana General Assembly. https://iga.in.gov/laws/current/ic/titles/34#34-46-4`,
     },
     {
       slug: "notes-and-materials",
@@ -2459,6 +2477,132 @@ export const REPORTER_MEDIA_LAW_COURSE: AuthoredCourse = {
             explanation:
               "A consistently applied written practice is defensible; deleting after the moment anything is happening is a different thing entirely.",
             sourceLessonSlug: "notes-and-materials",
+          },
+          {
+            prompt: "Which Indiana Code sections create the state's reporter's shield, and from when?",
+            options: ["34-46-4-1 and 34-46-4-2, dating to 1941", "34-46-3-1 and 34-46-3-2, enacted in the 1970s after Branzburg was decided", "5-14-3-9, the same chapter that governs access to public records in the state", "A rule of evidence rather than a statute, adopted by the Indiana Supreme Court"],
+            correctIndex: 0,
+            explanation: "Section 1 names who is covered; section 2 states the privilege. The 1941 date is why the covered list reads the way it does.",
+            sourceLessonSlug: "shield-and-privilege",
+          },
+          {
+            prompt: "Is Indiana's shield absolute or qualified as to state matters?",
+            options: ["Absolute", "Qualified, defeated when a party shows the information goes to the heart of the case", "Qualified, and defeated automatically whenever a criminal defendant issues the subpoena", "Absolute for civil proceedings and qualified for criminal ones"],
+            correctIndex: 0,
+            explanation: "No balancing test and no showing of need overcomes it, which is stronger than most states manage.",
+            sourceLessonSlug: "shield-and-privilege",
+          },
+          {
+            prompt: "What exactly does Indiana's shield protect?",
+            options: ["The source's identity", "All material gathered in reporting, whether or not it was ever published or broadcast", "The reporter's notes and unpublished footage, but not the identity behind them", "Any communication between a reporter and an editor about an unpublished story"],
+            correctIndex: 0,
+            explanation: "It reaches the source of information published or not published, broadcast or not broadcast. The information itself is not covered.",
+            sourceLessonSlug: "shield-and-privilege",
+          },
+          {
+            prompt: "A subpoena demands your unpublished notes but does not ask who told you. Does Indiana's shield answer it?",
+            options: ["No, it covers identity rather than material", "Yes, because notes are the direct product of the protected relationship with the source", "Yes, provided the notes were never published or broadcast in any form", "Only if disclosing the notes would let a reader infer the source's identity"],
+            correctIndex: 0,
+            explanation: "A subpoena asking what you learned rather than who told you is asking for something the statute does not cover.",
+            sourceLessonSlug: "shield-and-privilege",
+          },
+          {
+            prompt: "How does section 1 define who is covered?",
+            options: ["By employment", "By whether the person's work was published or broadcast in the previous twelve months", "By registration with a state press body that issues credentials on application", "By whether a court finds the person was acting journalistically when they gathered the material"],
+            correctIndex: 0,
+            explanation: "Owners, editors or reporters employed by newspapers, periodicals of regular circulation, press associations, wire services, or licensed broadcasters, drawing income from legitimate news work.",
+            sourceLessonSlug: "shield-and-privilege",
+          },
+          {
+            prompt: "Which of these is LEAST clearly inside that employment list?",
+            options: ["A Documenter attending a public meeting for a civic program", "A staff reporter drawing a salary from a daily newspaper of general circulation", "An editor employed by a licensed television station in the state", "An owner of a periodical that circulates on a regular published schedule"],
+            correctIndex: 0,
+            explanation: "A 1941 list of owners, editors and reporters was not written with civic documenters, freelancers, newsletter writers or podcasters in mind.",
+            sourceLessonSlug: "shield-and-privilege",
+          },
+          {
+            prompt: "What is the danger the lesson says matters most about the covered list?",
+            options: ["Believing you are protected when you are not", "Being covered but failing to invoke the privilege at the correct procedural moment", "Having protection so strong that a court treats an assertion of it as bad faith", "Losing coverage retroactively if the story is never published or broadcast"],
+            correctIndex: 0,
+            explanation: "The exposure lands on the source rather than the journalist, because the promise was made on protection that did not exist.",
+            sourceLessonSlug: "shield-and-privilege",
+          },
+          {
+            prompt: "If you are not plainly inside the covered list, what does the lesson tell you to do?",
+            options: ["Assume you are outside it and promise only what you can keep", "Assert the privilege anyway, since a court will resolve the definitional question in your favour", "Ask the source to sign a written agreement acknowledging the limits before you talk", "Route the interview through an employed reporter at a partner outlet to inherit their coverage"],
+            correctIndex: 0,
+            explanation: "This is the interviewing course's rule applied to law: say what YOU will do, not what will happen.",
+            sourceLessonSlug: "shield-and-privilege",
+          },
+          {
+            prompt: "Does Indiana's shield control a federal grand jury proceeding?",
+            options: ["No", "Yes, because a state privilege travels with the reporter into any court sitting in the state", "Yes, unless the federal court expressly declines to apply the state privilege", "Only where the underlying reporting concerned a matter of state rather than federal law"],
+            correctIndex: 0,
+            explanation: "The privilege reaches state matters. Branzburg governs federally, and there is no federal shield statute.",
+            sourceLessonSlug: "shield-and-privilege",
+          },
+          {
+            prompt: "On whose authority does the course currently state the shield's scope?",
+            options: ["The Reporters Committee, an expert secondary source", "The Indiana General Assembly's own published code text, read directly", "An Indiana Supreme Court opinion construing the covered-persons list", "The Indiana Public Access Counselor's handbook, which restates the chapter"],
+            correctIndex: 0,
+            explanation: "The lesson says so and keeps an open check, because iga.in.gov serves an application rather than a document to an automated reader.",
+            sourceLessonSlug: "shield-and-privilege",
+          },
+          {
+            prompt: "What does the phrase 'published or not published, broadcast or not broadcast' do in the statute?",
+            options: ["Extends the identity protection to unaired work", "Extends the protection to the underlying material once the story runs in any medium", "Limits the protection to reporters who actually published something in the matter", "Distinguishes the print privilege from the broadcast privilege, which have different scopes"],
+            correctIndex: 0,
+            explanation: "Whether the story ever ran does not decide whether the source is protected. What is protected is still only the identity.",
+            sourceLessonSlug: "shield-and-privilege",
+          },
+          {
+            prompt: "Why does the 1941 enactment date matter to a working reporter today?",
+            options: ["The covered list predates how most journalism is now done", "Older statutes are read narrowly by courts as a general rule of construction", "A privilege that old is presumed superseded by later rules of evidence", "The date determines which appellate decisions are still good law under it"],
+            correctIndex: 0,
+            explanation: "The list describes employment relationships that were nearly universal in 1941 and are not now.",
+            sourceLessonSlug: "shield-and-privilege",
+          },
+          {
+            prompt: "A source asks you to promise their name will never come out. What can you honestly say if your coverage is uncertain?",
+            options: ["What you will do, and what you cannot control", "That the state shield is absolute, which is true as a general statement of the law", "That you will destroy your notes if a subpoena arrives, removing the risk entirely", "That you will publish nothing at all unless the protection is confirmed in advance"],
+            correctIndex: 0,
+            explanation: "And destroying material once a dispute is foreseeable is its own serious problem, which the lesson names separately.",
+            sourceLessonSlug: "shield-and-privilege",
+          },
+          {
+            prompt: "What is 28 C.F.R. 50.10 in relation to a state shield law?",
+            options: ["A Justice Department policy binding only that department", "A federal shield regulation that supplements weaker state statutes", "The federal rule that decides when a state privilege applies in federal court", "A reporting requirement imposed on newsrooms that receive federal subpoenas"],
+            correctIndex: 0,
+            explanation: "An internal policy, revised more than once, binding nobody outside the Department. It is not a privilege you hold.",
+            sourceLessonSlug: "shield-and-privilege",
+          },
+          {
+            prompt: "Which question about a state shield law is NOT one the lesson says varies by state?",
+            options: ["Whether a federal grand jury must honour it", "Whether the protection is absolute or qualified in that jurisdiction", "Whether it reaches unpublished material as well as the source's identity", "Whether it survives a subpoena issued by a criminal defendant"],
+            correctIndex: 0,
+            explanation: "That one does not vary: Branzburg governs federally and no state statute changes it. The other three are exactly the state-by-state questions.",
+            sourceLessonSlug: "shield-and-privilege",
+          },
+          {
+            prompt: "Before a subpoena arrives, what three things does the lesson say to have done?",
+            options: ["Know the lawyer, preserve material, tell an editor and lawyer at once", "Register with a press body, file a protective motion, and notify the source in writing", "Move notes off any device the outlet owns, encrypt them, and store them out of state", "Publish the story quickly, since an unpublished story attracts more legal risk"],
+            correctIndex: 0,
+            explanation: "Destroying anything once a dispute is foreseeable is a separate and serious problem, whatever the privilege says.",
+            sourceLessonSlug: "shield-and-privilege",
+          },
+          {
+            prompt: "What would the open source check on this lesson actually settle?",
+            options: ["The verbatim covered-persons list in 34-46-4-1", "Whether the privilege has ever been asserted successfully in an Indiana trial court", "Whether the Reporters Committee's compendium is updated on a fixed schedule", "Whether a federal court sitting in Indiana would apply the state privilege"],
+            correctIndex: 0,
+            explanation: "The lesson rests on an expert secondary reading; the verbatim list would let it state the categories as law rather than as summary.",
+            sourceLessonSlug: "shield-and-privilege",
+          },
+          {
+            prompt: "Why is this the check whose being wrong hurts somebody other than the course?",
+            options: ["A source is exposed by a promise the reporter could not keep", "A newsroom faces a fine for asserting a privilege it did not hold", "A court sanctions the reporter personally for a frivolous filing", "The story is delayed while a lawyer resolves the definitional question"],
+            correctIndex: 0,
+            explanation: "The reporter takes a legal risk; the source takes the consequence. That asymmetry is why the check sits at high severity.",
+            sourceLessonSlug: "shield-and-privilege",
           },
         ],
       },

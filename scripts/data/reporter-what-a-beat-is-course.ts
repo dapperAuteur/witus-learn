@@ -41,7 +41,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
 
 **Parachute coverage is the alternative, and it is not nothing.** A reporter dropped into an unfamiliar subject for one big piece can do excellent work. What they cannot do is notice. Noticing requires a baseline, and a baseline is exactly what a beat is.
 
-**A disclosure, on page one, because this track teaches disclosure.** The author is a **Documenter with the Indianapolis Documenters program run by Mirror Indy**, a Free Press Indiana newsroom (https://indianapolis-in.documenters.org/). That is a real, ongoing relationship with the organization whose job posting prompted this track, and naming it is the point: a vague disclosure ("does documentation work for a related organization") is the kind a reader cannot check, which makes it decoration rather than disclosure. Neither Mirror Indy nor Free Press Indiana has reviewed, endorsed, or sponsored this course, and neither was asked to. The job posting and the 2025 Indiana Girl Report are cited here as public documents, nothing more. That line exists because the Society of Professional Journalists asks journalists to avoid conflicts real or perceived, and to disclose the unavoidable ones (Society of Professional Journalists, 2014). A journalism course that quietly skipped its own would be teaching one thing and doing another.
+**A disclosure, on page one, because this track teaches disclosure.** The author is a **Documenter with the Indianapolis Documenters program run by Mirror Indy**, a Free Press Indiana newsroom (program: https://indianapolis-in.documenters.org/ ; the author's own Documenter profile: https://i.brandanthonymcdonald.com/bam-documenter). That is a real, ongoing relationship with the organization whose job posting prompted this track, and naming it is the point: a vague disclosure ("does documentation work for a related organization") is the kind a reader cannot check, which makes it decoration rather than disclosure. Neither Mirror Indy nor Free Press Indiana has reviewed, endorsed, or sponsored this course, and neither was asked to. The job posting and the 2025 Indiana Girl Report are cited here as public documents, nothing more. That line exists because the Society of Professional Journalists asks journalists to avoid conflicts real or perceived, and to disclose the unavoidable ones (Society of Professional Journalists, 2014). A journalism course that quietly skipped its own would be teaching one thing and doing another.
 
 :::reveal What can a reporter with a beat do that a reporter parachuted into the same subject cannot? ||| Notice. Telling a change from a constant requires a baseline, and the baseline is the accumulated history a beat produces. The parachuted reporter can still report the situation in front of them well.
 
@@ -55,7 +55,8 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
 
 ## Sources
 - Society of Professional Journalists. (2014). *SPJ code of ethics*. https://www.spj.org/spj-code-of-ethics/
-- Mirror Indy. (n.d.). *Indianapolis Documenters*. https://indianapolis-in.documenters.org/`,
+- Mirror Indy. (n.d.). *Indianapolis Documenters*. https://indianapolis-in.documenters.org/
+- McDonald, B. A. (n.d.). *Documenter profile*. https://i.brandanthonymcdonald.com/bam-documenter`,
     },
     {
       slug: "map-the-beat",
