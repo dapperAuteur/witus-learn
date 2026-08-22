@@ -207,6 +207,7 @@ import { REPORTER_WHAT_A_BEAT_IS_COURSE } from "./data/reporter-what-a-beat-is-c
 import { REPORTER_PUBLIC_RECORDS_COURSE } from "./data/reporter-public-records-course";
 import { REPORTER_READING_A_REPORT_COURSE } from "./data/reporter-reading-a-report-course";
 import { REPORTER_INTERVIEWING_COURSE } from "./data/reporter-interviewing-course";
+import { REPORTER_VERIFICATION_COURSE } from "./data/reporter-verification-on-deadline-course";
 import { AFROCENTRICITY_COURSE } from "./data/afrocentricity-course";
 import { PAN_AFRICANISM_COURSE } from "./data/pan-africanism-course";
 import { ASIA_BEFORE_EUROPEAN_COLONIZATION_COURSE } from "./data/asia-before-european-colonization-course";
@@ -971,6 +972,32 @@ async function main() {
     seriesOrder: 4,
     seriesCode: "REPORT",
     seriesPosition: "03",
+  });
+
+  // REPORT-04. how-to-research teaches sourcing with time; fact-checking-as-a-discipline teaches
+  // checking a finished piece. Neither answers the 3pm question, which is what can honestly be
+  // confirmed in an hour and what to do when the answer is not enough.
+  //
+  // The through-line plans/68 asked for: THE DECISION NOT TO PUBLISH IS A PROFESSIONAL ACT. The
+  // whole final section is arranged so holding, publishing less, and publishing with the
+  // uncertainty stated are normal outputs of a method rather than losses.
+  //
+  // Named tools appear only as examples with an explicit note that the specific service changes,
+  // because a course pinned to a product becomes wrong silently. Cross-links: the Negro Leagues
+  // course as a worked catalog example of a publisher refusing to print a contested figure, and
+  // How the NAACP Learned to Win for evidence a reporter gathers rather than accepts.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "reporter-verification-on-deadline",
+    course: REPORTER_VERIFICATION_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "reporter",
+    seriesTitle: "The Reporter",
+    seriesOrder: 5,
+    seriesCode: "REPORT",
+    seriesPosition: "04",
   });
 
   // Genealogy for yourself and your community. Plan: plans/70-genealogy-course.md.
