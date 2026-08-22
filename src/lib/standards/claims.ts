@@ -4087,6 +4087,15 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // coherent, defended entity choice.
       "map-your-own-stack",
       "choose-a-form-capstone",
+      // She Did the Work, wave 1. Twelve living sports-media careers integrated from network
+      // press-room bios, hall-of-fame citations, published honours lists and contemporaneous
+      // reporting into one account of how a closed profession opens.
+      "she-took-the-seat",
+      // He Did the Work, wave 1. Integrates the digitized Crisis, the association's own 1919
+      // lynching tabulation, the Senate's record of the 1930 Parker vote, the Truman committee's
+      // papers and the case reporters from Murray through Brown into one account of a single
+      // forty-five-year campaign.
+      "naacp-learned-to-win",
     ],
     lessons: [
       "2 · How we know: reading a record the enslavers wrote",
@@ -4173,6 +4182,17 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // findings: "did not find" kept distinct from "does not exist," no value asserted from memory,
       // disagreements flagged as claims to check against the primary record.
       "map-your-own-stack",
+      // She Did the Work, wave 1. Lesson 3 IS this claim as method: an ordinal claim has four
+      // moving parts, and the course walks the check (institutional record, contemporaneous
+      // report, displacement test) on its own subjects, then downgrades or cuts what fails it.
+      // Jayne Kennedy's Emmy year and Carol Tshabalala's 2010 World Cup credit are cut on that
+      // evidence, in the lessons, with the reasoning shown.
+      "she-took-the-seat",
+      // He Did the Work, wave 1. Lesson 2 teaches the burden of correction directly, and the course
+      // applies it to itself twice in the lessons: it withholds the 1919 report's total because
+      // secondary accounts disagree about what the figure counts, and withholds the Dyer bill's
+      // House tally because published accounts give 230 and 231, saying so both times.
+      "naacp-learned-to-win",
     ],
     lessons: [
       "3 · The test: four questions before you draw an edge",

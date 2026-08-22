@@ -716,6 +716,80 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Any NBHWC-approved program's own reading list, which may cite the evidence the handbook relies on",
     ],
   },
+  // ── He Did the Work ───────────────────────────────────────────────────────────────────────────
+  {
+    key: "naacp-1919-lynching-report-total",
+    course: "naacp-learned-to-win",
+    lesson: "hdw-counting-as-evidence",
+    quote:
+      "So the lesson describes the report's structure and method, and prints no total. A course that teaches counting as a discipline and then reprints an unchecked number would be arguing against itself.",
+    title: "The 1919 NAACP lynching report: what does its headline total count?",
+    severity: "medium",
+    question:
+      "In Thirty Years of Lynching in the United States, 1889-1918, what total does the report itself give, and does that figure count ALL persons lynched in the period or only Black victims? What is the breakdown by race?",
+    claim:
+      "No total. The lesson describes the report's structure (arranged by year, state, race, sex and alleged offense, naming victims where a name could be established) and deliberately prints no number, saying why.",
+    stakes:
+      "This is the lesson that teaches counting and the burden of correction. Printing a number the course has not checked would refute the lesson in its own body, and the ambiguity is real: secondary accounts describe the same headline figure as both the total lynched and the number of Black victims, which cannot both be true.",
+    needs: [
+      "The report's own total for 1889 to 1918, quoted from its summary tables",
+      "The race breakdown as the report states it, in the report's own terms",
+      "The page or table the figures come from, so the lesson can cite it precisely",
+    ],
+    where: [
+      "The digitized original at https://archive.org/details/thirtyyearsoflyn00nati (the summary tables sit in the opening pages, before the state-by-state listing)",
+      "The Library of Congress scan in its NAACP exhibition, https://www.loc.gov/exhibits/naacp/",
+      "Any library holding the 1919 printing or the Lawbook Exchange reprint edited by Paul Finkelman",
+    ],
+  },
+  // ── She Did the Work ──────────────────────────────────────────────────────────────────────────
+  {
+    key: "kennedy-rose-parade-emmy-year",
+    course: "she-took-the-seat",
+    lesson: "sts-trial-contract",
+    quote:
+      "Her Emmy for Rose Parade coverage is real; the year is not settled, so this course does not print one.",
+    title: "Jayne Kennedy's Rose Parade Emmy: which year?",
+    severity: "medium",
+    question:
+      "In which year did Jayne Kennedy win an Emmy for her Rose Parade coverage, and in which category?",
+    claim:
+      "The course states that the Emmy is real and deliberately prints NO year, because the circulating years are mutually incompatible and none is confirmed by an awards database.",
+    stakes:
+      "A course about ordinal and date precision that guesses a date has failed its own lesson. Printing a wrong year for a living subject's award is the exact error the course was built to correct, and it would be quoted back at every other claim in it.",
+    needs: [
+      "The award year, from an Emmy awards database or the awarding chapter's own records",
+      "The exact category (a local or regional chapter award and a National Academy award are different things and should not be printed as the same)",
+      "Whether the award was to her personally or to the broadcast, which several secondary accounts conflate",
+    ],
+    where: [
+      "Her 2025 memoir Plain Jayne (Andscape Books), which is now the best primary record of her career",
+      "The National Academy of Television Arts and Sciences and its Los Angeles chapter award archives",
+      "The National Sports Media Association, which carries her biography and honored her in 2022",
+    ],
+  },
+  {
+    key: "hobson-financial-literacy-own-words",
+    course: "she-did-the-work (Hobson course, not yet built)",
+    title: "Mellody Hobson on financial literacy: her own sourced words",
+    severity: "high",
+    question:
+      "Is there a primary, quotable Mellody Hobson statement on FINANCIAL LITERACY (as distinct from racial candor in business), and what is its exact wording and source?",
+    claim:
+      "Nothing. No Hobson course has been built and no Hobson quotation appears anywhere in the catalog. This check exists because the source calendar attributes a financial-literacy position to her (\"know your numbers, face your numbers, act on your numbers\", and a line about visibility problems rather than income problems) that the verification pass could not tie to anything she is recorded as saying. Her verifiable public words are about racial candor in business, in the 2014 TED talk.",
+    stakes:
+      "She is a living asset manager. Putting an unsourced financial-literacy position in her mouth is the single most damaging fabrication available in this project, and the calendar's framing makes it easy to do by accident. Until this is answered, any Hobson course must be built on the color-brave material where her voice is documented, or not built.",
+    needs: [
+      "A direct quotation with its source, date and context, or a clear finding that none exists",
+      "If it exists: whether it is in an Ariel shareholder letter, an Ariel-Schwab Black Investor Survey release, a Good Morning America segment, or a filmed talk",
+      "A decision from BAM on which basis a Hobson course would be built if the dig comes back empty",
+    ],
+    where: [
+      "Ariel Investments shareholder letters and the Ariel-Schwab Black Investor Survey releases",
+      "The 2014 TED talk transcript, which is the one verified body of her public speech (it is about race in business, not financial literacy)",
+      "Archived ABC Good Morning America financial segments she presented",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
