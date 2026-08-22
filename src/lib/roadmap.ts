@@ -968,6 +968,30 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   it. Four shuffled 8-question banks, reveals + recall throughout, standards-excused as vocational.
   Seeded by \`pnpm seed:courses\`; citations staged AFTER seeding (the extractor reads the DB); gets
   code VOICE-01 when a second VOICE course ships. BAM sets price + vetted state in the admin UI.
+- ✅ **She Did the Work and He Did the Work, wave 1** (\`content/did-the-work\`, plans/65 Phase 4.1
+  and 4.4, which says the two launch together). Two paired Culture & History courses, both built as
+  COHORTS rather than as biographies, because the research file's own test is whether a subject
+  hands a student a transferable skill or only a story. **She Took the Seat and Held the Door**
+  (19 lessons, 242 questions) is Course E from the She Did the Work proposals: twelve living
+  sports-media figures taught as one argument about how a closed profession opens, through the trial
+  contract, the credential stack, the pipeline program and the non-linear resume. Lesson 3 teaches
+  the verification method the course was built with, because the source material carried fourteen
+  factual errors about these women and the corrections are the load-bearing content (Mowins was
+  FIRST on a nationally televised NFL game and SECOND ever on television after Gayle Sierens in
+  1987; Burke's Finals firsts are radio in 2020 and television in 2024; Chaka was a line judge, not
+  a referee, and left after 2023; Smith's degrees are from Case Western Reserve; King is at NCCU;
+  the name is Chowdhury). Section 4 deliberately ends on the people who are no longer with the
+  organization that hired them. **How the NAACP Learned to Win** (18 lessons, 225 questions) is the
+  pair: four of the five names on the He Did the Work list, taught as one institution's four
+  instruments (Du Bois and the press, Johnson and the branch network aimed at the Dyer bill, White
+  and the investigations that beat the Parker nomination by two votes, Houston's ladder and
+  Marshall's 29 wins in 32 arguments), plus Charles Hamilton Houston, who is not on the list and
+  without whom the litigation section is not true. Both courses map to the Common Core literacy
+  strands (RH.11-12.8, RH.11-12.9). No quotation appears in either course that could not be tied to
+  a primary source; three checks are filed at \`/admin/research\` for what could not be settled,
+  including the Mellody Hobson financial-literacy attribution that the calendar makes and no source
+  supports. Seeded by \`pnpm seed:courses\`; citations staged AFTER seeding (the extractor reads the
+  DB). BAM sets price + vetted state in the admin UI.
 - ✅ **BVC Sommelier series, course #1: Wine** (\`feat/bvc-sommelier-wine\`, plans/53). A skills sequel
   to BVC S2E9 "Wine: Blood of the Earth": that episode teaches wine's history, this one teaches
   tasting and choosing. 52 lessons in 12 modules at WSET-2-ish depth (the four-stage grid and six
