@@ -1899,6 +1899,796 @@ The second is longer, and it is also unanswerable. Nobody can take it away from 
         ],
       },
     },
-    // NEXTCHUNK
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 5 — Myths, corrections, and how to check
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "five-claims-that-fail",
+      title: "17 · Five claims that do not survive checking",
+      section: "Section 5 · Myths, corrections, and how to check",
+      body: `These five are among the most repeated claims in this entire genre. Every one of them fails, and in every case the true story underneath is available and defensible. Learning the corrections is protective: it means nobody can use one of these to discredit you.
+
+**One: Garrett Morgan invented the traffic light. FALSE.** Morgan's patent 1,475,024 was granted in 1923 for a three-position signal. Electric traffic signals were already in service: **Lester Wire**, a Salt Lake City police officer, built and installed a manually operated electric red and green signal in **1912**; **James Hoge** applied for a signal patent in **1913** and a system on his design was installed in Cleveland on **5 August 1914**; a signal of an earlier, non-electric kind was in use in **London in 1868**. What Morgan contributed was the intermediate warning position, which is a real improvement. Say that instead.
+
+**Two: Lewis Latimer invented the light bulb, or its filament. FALSE.** His patents are 247,097, a method of attaching carbon filaments to conducting wires, with Joseph V. Nichols, and 252,386, a process for manufacturing carbons. Incandescent lamps existed and were being commercialized by Edison and by Joseph Swan. Latimer made carbon filament manufacture better and worked for years as a draftsman and engineer in the industry. That is a substantial career and it does not need the upgrade.
+
+**Three: George Washington Carver invented peanut butter. FALSE.** **Marcellus Gilmore Edson** received US patent **306,727** in **1884** for a process producing a peanut paste, and **John Harvey Kellogg** patented a peanut-food process in the 1890s. Carver was born into slavery, became a distinguished agricultural scientist, and did work on soil restoration, crop rotation, and finding uses for peanuts and sweet potatoes so that Southern farmers could stop destroying their land with cotton. That is more important than a sandwich spread and it is what he actually did.
+
+**Four: Charles Drew died because a white hospital refused him a transfusion. FALSE.** Drew was injured in a car accident in North Carolina in 1950 and taken to Alamance General Hospital, where the white surgeons recognized him and worked to save him. His injuries were beyond what a transfusion could have addressed. The story persisted because it fit a pattern people knew to be real in general, which is exactly how a false story survives. The documented protest is different and stronger: Drew publicly opposed the practice of segregating stored blood by the donor's race, which had no scientific basis.
+
+**Five: "The real McCoy" comes from Elijah McCoy. NOT ESTABLISHED.** It is a plausible and popular etymology. Competing candidates include the Scotch whisky slogan *the real MacKay*, used by G. Mackay and Company in advertising around 1870 and attested colloquially earlier, and the boxer Norman Selby, who fought as Kid McCoy. Language historians have not settled it. The honest form is that the phrase is *associated with* McCoy and its origin is disputed.
+
+:::reveal What did Garrett Morgan's traffic signal patent actually contribute, and what came before it? ||| It added a three-position signal with an intermediate warning state, granted in 1923. Lester Wire installed an electric signal in 1912, James Hoge applied in 1913 with a Cleveland installation in 1914, and a non-electric signal was used in London in 1868.
+
+:::reveal What is the documented Charles Drew protest, as opposed to the false story about his death? ||| He publicly opposed segregating stored blood by the donor's race, a practice with no scientific basis. He died after a 1950 car accident, treated by white surgeons at Alamance General who recognized him and tried to save him.
+
+## Vocabulary
+- **Three-position signal**: Morgan's real contribution, an intermediate warning state between stop and go.
+- **Marcellus Gilmore Edson**: holder of US patent 306,727 from 1884 for a process producing peanut paste.
+- **Alamance General Hospital**: where Charles Drew was treated after his 1950 accident, by surgeons who recognized him and tried to save him.
+- **The real MacKay**: the competing whisky-advertising etymology for the phrase usually attributed to Elijah McCoy.
+- **Protective correction**: learning a myth's rebuttal so that nobody can use the myth to discredit the accurate claims you make.
+
+## Sources
+- James, P. P. (1989). *The real McCoy: African-American invention and innovation, 1619-1930*. Smithsonian Institution Press.
+- Fouché, R. (2003). *Black inventors in the age of segregation: Granville T. Woods, Lewis H. Latimer, and Shelby J. Davidson*. Johns Hopkins University Press.
+- Ferris State University, Jim Crow Museum. (2004). *The truth about the death of Charles Drew*. https://jimcrowmuseum.ferris.edu/question/2004/june.htm
+- Smithsonian Institution. (n.d.). *Diverse voices: Blood transfusion pioneer Dr. Charles Drew*. https://invention.si.edu/invention-stories/diverse-voices-blood-transfusion-pioneer-dr-charles-drew`,
+    },
+    {
+      slug: "where-the-myths-came-from",
+      title: "18 · Where these stories come from, and what they cost",
+      section: "Section 5 · Myths, corrections, and how to check",
+      body: `Nobody set out to lie. Understanding how these claims got made explains why they are so durable and why correcting them is worth the discomfort.
+
+**The vacuum.** For most of the twentieth century, mainstream American education taught this history as essentially empty. Into a vacuum, anything expands. Lists circulated in church bulletins, school assemblies, Black History Month handouts, and later in chain emails and social posts, and each retelling was an act of care rather than an act of deception.
+
+**The upgrade mechanism.** Every retelling shortens. *He patented an improvement in the process for manufacturing carbon filaments used in incandescent lamps* becomes *he invented the filament* becomes *he invented the light bulb*. No single step is a big lie. Three steps produce a claim that a hostile reader can destroy in one search, and the destruction takes the whole list with it.
+
+**The chain list.** There is a widely circulated list crediting Black inventors with the mailbox, the fountain pen, the clothes dryer, the lawn mower, and a dozen more. Some entries are real, several trace to a patent for an improvement rather than an invention, and several cannot be traced to any patent at all. The list is not evidence, because it never carried numbers and nobody can check it.
+
+**What the myths cost.** Three things, and the third is the worst. They give opponents a free win. They crowd out the verified cases: the space Morgan's traffic light occupies is space Rillieux's evaporator or Brown's security system could have had. And they insult the actual achievement, because they imply the real record is not impressive enough to stand up, which is false.
+
+**What the scholarship does instead.** Portia James's Smithsonian study assembled the nineteenth-century record with documentation (James, 1989). Rayvon Fouché took three famous figures and replaced the myths with people, which meant contradicting some cherished stories, and produced a stronger account (Fouché, 2003). Kara Swanson showed that the 1858 opinion was preserved for a century by Black writers whose work mainstream scholarship ignored, which is a finding about **whose** memory counts as knowledge (Swanson, 2020). None of that requires a single unverifiable claim.
+
+**How to correct someone without being insufferable.** Give them the better fact in the same breath. "It was not the first traffic light, but he patented the three-position signal in 1923, and his 1914 safety hood saved lives in the Cleveland tunnel." You have removed a weak claim and handed over two strong ones, and nobody has lost anything.
+
+:::reveal Describe the upgrade mechanism in three steps, using the Latimer example. ||| Patented an improvement in the process for manufacturing carbon filaments, becomes invented the filament, becomes invented the light bulb. No single step is a big lie, and the end point can be destroyed in one search.
+
+:::reveal What are the three costs of the myths, and which is worst? ||| They hand opponents a free win, they crowd out verified cases that could occupy the same space, and worst, they imply the real record is not impressive enough to stand on its own, which is false.
+
+## Vocabulary
+- **The vacuum**: the near-total absence of this history from mainstream twentieth-century American education, which the lists grew to fill.
+- **The upgrade mechanism**: the way each retelling shortens a claim until an improvement becomes an invention.
+- **The chain list**: the widely circulated roster of inventions attributed without patent numbers, which cannot be checked and so is not evidence.
+- **Crowding out**: the way a famous false claim occupies the attention that a documented one could have held.
+
+## Sources
+- James, P. P. (1989). *The real McCoy: African-American invention and innovation, 1619-1930*. Smithsonian Institution Press.
+- Fouché, R. (2003). *Black inventors in the age of segregation: Granville T. Woods, Lewis H. Latimer, and Shelby J. Davidson*. Johns Hopkins University Press.
+- Swanson, K. W. (2020). Race and selective legal memory: Reflections on Invention of a Slave. *Columbia Law Review, 120*(4). https://columbialawreview.org/content/race-and-selective-legal-memory-reflections-on-invention-of-a-slave/`,
+    },
+    {
+      slug: "check-it-yourself",
+      title: "19 · Check it yourself, in about ten minutes",
+      section: "Section 5 · Myths, corrections, and how to check",
+      body: `This is the transferable skill. Next time you meet a claim of this kind, run this. It takes about ten minutes and it works on any invention claim, not only the ones in this course.
+
+**Step 1. Restate the claim precisely.** *He invented X* is not checkable until you fix what X means and what invented is supposed to mean. Turn it into a sentence with a person, a thing, and a year.
+
+**Step 2. Look for a patent number.** Search a full-text patent database by the inventor's name. If the claim comes with a number, pull it up directly. **If a claim of this kind has circulated for decades and still has no number attached, that absence is itself information.**
+
+**Step 3. Read the title and claim 1.** Does the document support the sentence from step 1? Most of the time the patent is real and the sentence is bigger than the patent. That is your answer, and it is usually a partial rather than a total correction.
+
+**Step 4. Check what came before.** Search for the same device with an earlier date. This is the step that catches the traffic-light and peanut-butter class of error, and it is the step people skip, because finding a patent feels like finishing.
+
+**Step 5. Check the assignee and the dates.** Assignor to tells you who owned it. Filing versus issue tells you the real priority date. Both take seconds and both prevent common errors.
+
+**Step 6. When there is no patent, change archives.** If the credit ran through authorship, go to the publication record: who published, when, and does an independent paper name the person. That is how the Ball case is settled, by Hollmann's 1922 paper.
+
+**Step 7. Write the accurate sentence, and keep it.** State exactly what the documents support. Keep the numbers with it. A sentence with a patent number in it is portable and permanent, and you will never have to defend it twice.
+
+**One rule for the whole procedure.** If you cannot settle it, say so, and say which document would settle it. **Not established** is an honest and respectable answer. It is what this course says about the *real McCoy* etymology, the Edison and Woods litigation story, and the counts from the Cleveland tunnel rescue, and saying it costs nothing while pretending otherwise costs everything.
+
+:::reveal Which step catches the traffic-light class of error, and why do people skip it? ||| Step 4, checking what came before with an earlier date. People skip it because finding a patent feels like finishing, so they stop before asking whether anything similar predates it.
+
+:::reveal What should you do when the credit ran through authorship rather than a patent? ||| Change archives. Go to the publication record and ask who published, when, and whether an independent paper names the person, which is how Hollmann's 1922 paper settles the Alice Ball case.
+
+## Vocabulary
+- **Restating precisely**: converting "he invented X" into a sentence with a person, a thing, and a year, so it can be checked at all.
+- **Absence of a number**: the informative silence when a decades-old claim of this kind has never acquired a patent number.
+- **Prior art check**: step 4, searching for the same device at an earlier date, and the step most often skipped.
+- **Portable sentence**: an accurate claim carrying its own patent numbers, which never has to be defended twice.
+
+## Sources
+- Fouché, R. (2003). *Black inventors in the age of segregation: Granville T. Woods, Lewis H. Latimer, and Shelby J. Davidson*. Johns Hopkins University Press.
+- James, P. P. (1989). *The real McCoy: African-American invention and innovation, 1619-1930*. Smithsonian Institution Press.
+- Swanson, K. W. (2020). Race and selective legal memory: Reflections on Invention of a Slave. *Columbia Law Review, 120*(4). https://columbialawreview.org/content/race-and-selective-legal-memory-reflections-on-invention-of-a-slave/`,
+    },
+    {
+      slug: "quiz-myths-and-checking",
+      title: "20 · Knowledge check: myths, corrections, and checking",
+      section: "Section 5 · Myths, corrections, and how to check",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "Did Garrett Morgan invent the traffic light?",
+            options: ["No", "Yes, and his 1923 patent is the earliest signal patent on record", "Yes, though a British inventor filed a similar design the same year", "The question cannot be answered, since no earlier patents survive"],
+            correctIndex: 0,
+            explanation: "Electric signals were already in service. His patent 1,475,024 added a three-position design with an intermediate warning state.",
+            sourceLessonSlug: "five-claims-that-fail",
+          },
+          {
+            prompt: "Who installed a manually operated electric red and green signal in 1912?",
+            options: ["Lester Wire, a Salt Lake City police officer", "James Hoge, whose design was installed in Cleveland", "Garrett Morgan, a decade before his patent application", "An unnamed engineer working for the London Metropolitan Police"],
+            correctIndex: 0,
+            explanation: "Hoge applied for a signal patent in 1913, with a system on his design installed in Cleveland on 5 August 1914.",
+            sourceLessonSlug: "five-claims-that-fail",
+          },
+          {
+            prompt: "When was a system on James Hoge's design installed in Cleveland?",
+            options: ["5 August 1914", "20 November 1923, the day Morgan's patent granted", "27 February 1922, when Morgan filed his application", "In 1868, following the London precedent"],
+            correctIndex: 0,
+            explanation: "He applied for the patent in 1913, and this course notes the installation date because it predates Morgan's filing by eight years.",
+            sourceLessonSlug: "five-claims-that-fail",
+          },
+          {
+            prompt: "What kind of traffic signal was in use in London in 1868?",
+            options: ["A non-electric one", "An electric three-position signal identical to Morgan's", "An automatic timed signal controlled from a central station", "A semaphore linked by telegraph to a police headquarters"],
+            correctIndex: 0,
+            explanation: "It sits in the list of things preceding Morgan's patent, which is what makes the invented-the-traffic-light claim indefensible.",
+            sourceLessonSlug: "five-claims-that-fail",
+          },
+          {
+            prompt: "Did Lewis Latimer invent the light bulb or its filament?",
+            options: ["No", "Yes, the carbon filament, which Edison then commercialized", "Yes, though Joseph Swan filed a competing claim in Britain", "Only the filament, not the lamp, per patent 252,386"],
+            correctIndex: 0,
+            explanation: "Incandescent lamps existed and were being commercialized by Edison and by Joseph Swan. Latimer improved carbon filament manufacture.",
+            sourceLessonSlug: "five-claims-that-fail",
+          },
+          {
+            prompt: "Who else was commercializing incandescent lamps alongside Edison?",
+            options: ["Joseph Swan", "Hiram Maxim alone, who employed Latimer at the time", "Joseph V. Nichols, Latimer's co-inventor", "Granville T. Woods, before he moved to induction telegraphy"],
+            correctIndex: 0,
+            explanation: "Which is one of the facts that makes the invented-the-light-bulb claim collapse immediately when checked.",
+            sourceLessonSlug: "five-claims-that-fail",
+          },
+          {
+            prompt: "Did George Washington Carver invent peanut butter?",
+            options: ["No", "Yes, and he chose not to patent it on principle", "Yes, though Kellogg patented a similar process first", "Only the roasting process, not the grinding process"],
+            correctIndex: 0,
+            explanation: "Marcellus Gilmore Edson held US patent 306,727 from 1884 for a process producing peanut paste.",
+            sourceLessonSlug: "five-claims-that-fail",
+          },
+          {
+            prompt: "What is Marcellus Gilmore Edson's patent number and year?",
+            options: ["306,727, in 1884", "580,787, in 1895", "129,843, in 1872", "322,177, in 1885"],
+            correctIndex: 0,
+            explanation: "For a process producing a peanut paste. John Harvey Kellogg patented a peanut-food process in the 1890s.",
+            sourceLessonSlug: "five-claims-that-fail",
+          },
+          {
+            prompt: "What did Carver actually work on?",
+            options: ["Soil restoration, crop rotation, and uses for peanuts and sweet potatoes", "Mechanized harvesting equipment for Southern smallholders", "Chemical synthesis of industrial oils from agricultural waste", "Plant breeding for cotton varieties resistant to boll weevil"],
+            correctIndex: 0,
+            explanation: "So that Southern farmers could stop destroying their land with cotton. That is more important than a sandwich spread.",
+            sourceLessonSlug: "five-claims-that-fail",
+          },
+          {
+            prompt: "How did Charles Drew actually die?",
+            options: ["Of injuries from a 1950 car accident", "Of a transfusion reaction after being given mismatched blood", "After being turned away from three segregated hospitals in succession", "Of an illness contracted during his blood plasma research"],
+            correctIndex: 0,
+            explanation: "He was taken to Alamance General Hospital in North Carolina, where the white surgeons recognized him and worked to save him.",
+            sourceLessonSlug: "five-claims-that-fail",
+          },
+          {
+            prompt: "Why could a transfusion not have saved Drew?",
+            options: ["His injuries were beyond what a transfusion could address", "The hospital held no blood of his type on the day", "He had a rare antibody that made transfusion impossible", "The accident happened too far from any hospital with a blood bank"],
+            correctIndex: 0,
+            explanation: "Which is the detail that makes the popular story not merely false but backwards about the medicine involved.",
+            sourceLessonSlug: "five-claims-that-fail",
+          },
+          {
+            prompt: "What is the documented Charles Drew protest?",
+            options: ["He opposed segregating stored blood by donor race", "He refused to treat white patients at segregated facilities", "He resigned from the Red Cross over its hiring practices", "He sued the American Medical Association over membership rules"],
+            correctIndex: 0,
+            explanation: "The practice had no scientific basis, and this protest is both real and stronger than the false story about his death.",
+            sourceLessonSlug: "five-claims-that-fail",
+          },
+          {
+            prompt: "Why did the false Drew story survive so long?",
+            options: ["It fit a pattern people knew to be real in general", "Because the hospital's records were sealed until the 1990s", "Because his family confirmed it in a published memoir", "Because no journalist ever attempted to verify it"],
+            correctIndex: 0,
+            explanation: "That is exactly how a false story survives: it is plausible against a background that is genuinely true.",
+            sourceLessonSlug: "five-claims-that-fail",
+          },
+          {
+            prompt: "What is the status of the \"real McCoy\" etymology?",
+            options: ["Not established", "Confirmed, and traced to railroad engineers of the 1870s", "Disproven, and traced conclusively to the whisky slogan", "Irrelevant, since McCoy's patents settle the question"],
+            correctIndex: 0,
+            explanation: "Language historians have not settled it, and the honest form is that the phrase is associated with McCoy and its origin is disputed.",
+            sourceLessonSlug: "five-claims-that-fail",
+          },
+          {
+            prompt: "Which competing candidate for that phrase involves whisky?",
+            options: ["The real MacKay, used by G. Mackay and Company", "The real McCoy, a brand of Kentucky bourbon", "Kid McCoy, the boxer Norman Selby", "A cattle baron of the same surname"],
+            correctIndex: 0,
+            explanation: "Used in advertising around 1870 and attested colloquially earlier, with Kid McCoy the other main competing candidate.",
+            sourceLessonSlug: "five-claims-that-fail",
+          },
+          {
+            prompt: "Why is learning these corrections described as protective?",
+            options: ["Nobody can use one of them to discredit you", "Because repeating a myth can expose a teacher to liability", "Because the corrections are more memorable than the myths", "Because most audiences already know the corrections"],
+            correctIndex: 0,
+            explanation: "In every case the true story underneath is available and defensible, so the correction costs the speaker nothing.",
+            sourceLessonSlug: "five-claims-that-fail",
+          },
+          {
+            prompt: "What created the vacuum these stories grew to fill?",
+            options: ["Mainstream education taught this history as essentially empty", "Patent records were closed to researchers until the 1960s", "Black newspapers stopped covering invention after Reconstruction", "The Patent Office destroyed its racial records in the 1920s"],
+            correctIndex: 0,
+            explanation: "Into a vacuum, anything expands, and the lists circulated through church bulletins, assemblies, handouts, and later chain emails.",
+            sourceLessonSlug: "where-the-myths-came-from",
+          },
+          {
+            prompt: "How does the course characterize each retelling of these claims?",
+            options: ["An act of care rather than deception", "A deliberate falsification for political advantage", "A commercial exercise in selling Black History Month material", "An academic failure by historians who should have known better"],
+            correctIndex: 0,
+            explanation: "Nobody set out to lie, which is why understanding the mechanism matters more than assigning blame.",
+            sourceLessonSlug: "where-the-myths-came-from",
+          },
+          {
+            prompt: "What does every retelling do to a claim?",
+            options: ["Shortens it", "Adds a source that was not in the original", "Moves it to an earlier date", "Attaches it to a more famous inventor"],
+            correctIndex: 0,
+            explanation: "Improvement in the process for manufacturing carbon filaments becomes invented the filament becomes invented the light bulb.",
+            sourceLessonSlug: "where-the-myths-came-from",
+          },
+          {
+            prompt: "Why is no single step of the upgrade a big lie?",
+            options: ["Each step only slightly overstates the one before it", "Each step is supported by a different secondary source", "Each step was made by a different person acting independently", "Each step corrects an error introduced in the previous one"],
+            correctIndex: 0,
+            explanation: "Three small steps produce a claim a hostile reader can destroy in one search, and the destruction takes the whole list with it.",
+            sourceLessonSlug: "where-the-myths-came-from",
+          },
+          {
+            prompt: "Why is the chain list not evidence?",
+            options: ["It never carried patent numbers, so nobody can check it", "Because its author has never been identified", "Because it contradicts the Patent Office's own indexes", "Because every entry on it has been individually disproven"],
+            correctIndex: 0,
+            explanation: "Some entries are real, several trace to improvement patents, and several cannot be traced to any patent at all.",
+            sourceLessonSlug: "where-the-myths-came-from",
+          },
+          {
+            prompt: "What are the three costs of the myths?",
+            options: ["A free win for opponents, crowding out, and an implied insult", "Legal exposure, reputational damage, and lost funding", "Confusion in classrooms, in museums, and in the patent record", "Wasted research time, duplicated effort, and citation errors"],
+            correctIndex: 0,
+            explanation: "The implied insult is the worst: the myths suggest the real record cannot stand on its own, which is false.",
+            sourceLessonSlug: "where-the-myths-came-from",
+          },
+          {
+            prompt: "What does crowding out mean here?",
+            options: ["A famous false claim occupies attention a documented one could hold", "A widely repeated claim prevents scholars from publishing corrections", "A myth displaces the inventor's own account of his work", "A popular story pushes an inventor out of museum collections"],
+            correctIndex: 0,
+            explanation: "The space Morgan's traffic light occupies is space Rillieux's evaporator or Brown's security system could have had.",
+            sourceLessonSlug: "where-the-myths-came-from",
+          },
+          {
+            prompt: "What did Portia James's Smithsonian study do?",
+            options: ["Assembled the nineteenth-century record with documentation", "Compiled the first list of Black inventors from Patent Office files", "Argued that the chain list is substantially accurate", "Traced the origin of the phrase the real McCoy"],
+            correctIndex: 0,
+            explanation: "Published in 1989, and one of the three works this course leans on throughout.",
+            sourceLessonSlug: "where-the-myths-came-from",
+          },
+          {
+            prompt: "What did Fouché's approach require him to do?",
+            options: ["Contradict some cherished stories", "Restrict his study to inventors with surviving personal papers", "Avoid discussing race in order to keep the analysis technical", "Rely on corporate archives rather than on patent records"],
+            correctIndex: 0,
+            explanation: "Replacing myths with people produced a stronger account, not a weaker one.",
+            sourceLessonSlug: "where-the-myths-came-from",
+          },
+          {
+            prompt: "What is Swanson's finding really about?",
+            options: ["Whose memory counts as knowledge", "Whether the 1858 opinion was correctly decided", "How many enslaved inventors were barred from patenting", "Which archives hold the surviving Confederate patent files"],
+            correctIndex: 0,
+            explanation: "The opinion was preserved for a century by Black writers whose work mainstream scholarship ignored.",
+            sourceLessonSlug: "where-the-myths-came-from",
+          },
+          {
+            prompt: "How does the course recommend correcting someone?",
+            options: ["Give them the better fact in the same breath", "Cite the scholarship and let them read it themselves", "Ask what source they have before offering a correction", "Correct only in private, never in front of an audience"],
+            correctIndex: 0,
+            explanation: "Remove a weak claim and hand over two strong ones, so nobody has lost anything in the exchange.",
+            sourceLessonSlug: "where-the-myths-came-from",
+          },
+          {
+            prompt: "What is step 1 of the checking procedure?",
+            options: ["Restate the claim precisely", "Search a full-text patent database", "Look for earlier examples of the same device", "Identify the assignee on the patent's face"],
+            correctIndex: 0,
+            explanation: "He invented X is not checkable until you fix what X means. Turn it into a sentence with a person, a thing, and a year.",
+            sourceLessonSlug: "check-it-yourself",
+          },
+          {
+            prompt: "What does it mean when a decades-old claim still has no patent number?",
+            options: ["The absence is itself information", "The patent was almost certainly destroyed in the 1836 fire", "The invention was in an unpatentable category", "The inventor chose not to file for personal reasons"],
+            correctIndex: 0,
+            explanation: "A claim that has circulated for decades without acquiring a number has had plenty of opportunity to acquire one.",
+            sourceLessonSlug: "check-it-yourself",
+          },
+          {
+            prompt: "In step 3, what is the usual finding?",
+            options: ["The patent is real and the sentence is bigger than it", "The patent does not exist at all", "The patent exists but names a different inventor", "The patent supports the claim exactly as stated"],
+            correctIndex: 0,
+            explanation: "Which makes the result a partial correction rather than a total demolition, and that is usually the honest outcome.",
+            sourceLessonSlug: "check-it-yourself",
+          },
+          {
+            prompt: "Which step catches the traffic-light class of error?",
+            options: ["Step 4, checking what came before", "Step 2, searching for a patent number", "Step 5, checking the assignee and dates", "Step 7, writing the accurate sentence"],
+            correctIndex: 0,
+            explanation: "People skip it because finding a patent feels like finishing, so they never ask whether something similar predates it.",
+            sourceLessonSlug: "check-it-yourself",
+          },
+          {
+            prompt: "What do the two checks in step 5 tell you?",
+            options: ["Who owned it and what the real priority date was", "Whether the patent was litigated and whether it survived", "How many claims it had and how many were allowed", "Whether the inventor filed alone or with a co-inventor"],
+            correctIndex: 0,
+            explanation: "Assignor to gives ownership, and filing versus issue gives priority. Both take seconds and both prevent common errors.",
+            sourceLessonSlug: "check-it-yourself",
+          },
+          {
+            prompt: "What does step 6 tell you to do when there is no patent?",
+            options: ["Change archives and go to the publication record", "Conclude that the claim is unsupported and stop", "Search foreign patent offices for an equivalent filing", "Look for a trademark registration instead"],
+            correctIndex: 0,
+            explanation: "Ask who published, when, and whether an independent paper names the person. That is how Hollmann's 1922 paper settles the Ball case.",
+            sourceLessonSlug: "check-it-yourself",
+          },
+          {
+            prompt: "What makes a sentence portable, in step 7?",
+            options: ["It carries its own patent numbers", "It is short enough to repeat from memory", "It names a scholar rather than a document", "It avoids any claim about who was first"],
+            correctIndex: 0,
+            explanation: "A sentence with a patent number in it is permanent, and you will never have to defend it twice.",
+            sourceLessonSlug: "check-it-yourself",
+          },
+          {
+            prompt: "What is the one rule governing the whole procedure?",
+            options: ["If you cannot settle it, say so and name what would", "Never repeat a claim you did not verify personally", "Prefer primary sources to secondary ones in every case", "Always give the inventor the benefit of the doubt"],
+            correctIndex: 0,
+            explanation: "Not established is an honest and respectable answer, and saying it costs nothing while pretending otherwise costs everything.",
+            sourceLessonSlug: "check-it-yourself",
+          },
+          {
+            prompt: "Which three items does this course itself label not established?",
+            options: ["The McCoy etymology, the Edison-Woods story, and the Cleveland rescue counts", "The 1858 opinion, the Confederate act, and the Baker list", "Rillieux's patents, Latimer's patents, and Morgan's patents", "Ball's method, Thomas's shunt, and West's geodesy work"],
+            correctIndex: 0,
+            explanation: "Each is hedged in the lesson and filed as an open source check rather than resolved by picking a version.",
+            sourceLessonSlug: "check-it-yourself",
+          },
+          {
+            prompt: "Roughly how long does the checking procedure take?",
+            options: ["About ten minutes", "About an hour, once the archives are located", "Several days, since patent records must be requested", "About a minute, using a single database query"],
+            correctIndex: 0,
+            explanation: "And it works on any invention claim, not only the ones in this course.",
+            sourceLessonSlug: "check-it-yourself",
+          },
+          {
+            prompt: "Morgan's real contribution should be stated how?",
+            options: ["He patented the three-position signal in 1923", "He invented the first traffic signal used anywhere in America", "He designed the first electric signal, which Cleveland installed in 1914", "He improved the London signal design of 1868 for American streets"],
+            correctIndex: 0,
+            explanation: "Paired with the 1914 safety hood that saved lives in the Cleveland tunnel, that is two strong claims replacing one weak one.",
+            sourceLessonSlug: "where-the-myths-came-from",
+          },
+          {
+            prompt: "Latimer's actual career is best described as what?",
+            options: ["Years as a draftsman and engineer, with real patents", "A brief period of invention followed by a business career", "Work as a laboratory assistant with no patents of his own", "An independent inventor who never worked for a company"],
+            correctIndex: 0,
+            explanation: "It is a substantial career that does not need the upgrade to the light bulb to be worth teaching.",
+            sourceLessonSlug: "five-claims-that-fail",
+          },
+          {
+            prompt: "Which of these five claims is NOT flatly false?",
+            options: ["The real McCoy etymology, which is unsettled", "That Morgan invented the traffic light", "That Latimer invented the light bulb", "That Drew was refused a transfusion"],
+            correctIndex: 0,
+            explanation: "It sits in the not-established category rather than the false one, which is a distinction the course maintains deliberately.",
+            sourceLessonSlug: "five-claims-that-fail",
+          },
+          {
+            prompt: "Kellogg's peanut-food process was patented in which decade?",
+            options: ["The 1890s", "The 1880s, before Edson's process patent", "The 1900s, after Carver began his peanut work", "The 1870s, alongside the earliest nut butters"],
+            correctIndex: 0,
+            explanation: "Edson's patent 306,727 came earlier, in 1884, and both precede Carver's peanut work entirely.",
+            sourceLessonSlug: "five-claims-that-fail",
+          },
+          {
+            prompt: "Where were these lists circulated before the internet?",
+            options: ["Church bulletins, school assemblies, and handouts", "Patent Office publications and government pamphlets", "Academic journals and conference proceedings", "Corporate advertising and product packaging"],
+            correctIndex: 0,
+            explanation: "Later they moved to chain emails and social posts, but the mechanism and the motive stayed the same.",
+            sourceLessonSlug: "where-the-myths-came-from",
+          },
+          {
+            prompt: "Which is the strongest reason to correct a myth in this genre?",
+            options: ["The verified record is impressive enough without it", "Accuracy is a professional obligation regardless of consequence", "Museums will not display material containing errors", "The corrections make better classroom discussion material"],
+            correctIndex: 0,
+            explanation: "The myths imply the real record cannot stand on its own, which is the insult buried inside the well-meant repetition.",
+            sourceLessonSlug: "where-the-myths-came-from",
+          },
+          {
+            prompt: "What does the course say about scholarship in this field?",
+            options: ["It requires no unverifiable claims to make its case", "It has largely accepted the popular versions of these stories", "It focuses on the twentieth century and neglects the nineteenth", "It relies on the chain list where patent records are missing"],
+            correctIndex: 0,
+            explanation: "James, Fouché, and Swanson each produced a strong account without a single claim that fails checking.",
+            sourceLessonSlug: "where-the-myths-came-from",
+          },
+          {
+            prompt: "In step 2, where do you search?",
+            options: ["A full-text patent database, by inventor name", "The Baker list compiled around 1900", "Newspaper archives from the inventor's home city", "Museum catalogs holding patent models"],
+            correctIndex: 0,
+            explanation: "If the claim already comes with a number, pull the document up directly instead of searching.",
+            sourceLessonSlug: "check-it-yourself",
+          },
+          {
+            prompt: "The procedure's output is what?",
+            options: ["An accurate sentence you keep, with its numbers", "A verdict of true or false on the original claim", "A list of sources for someone else to evaluate", "A decision about whether the inventor was wronged"],
+            correctIndex: 0,
+            explanation: "State exactly what the documents support, keep the numbers with it, and the sentence never has to be defended twice.",
+            sourceLessonSlug: "check-it-yourself",
+          },
+          {
+            prompt: "Why does the course put the checking lesson last?",
+            options: ["It is the transferable skill the rest of the course builds toward", "Because it requires the patent numbers from Section 4 to work", "Because it is optional for readers who trust the earlier lessons", "Because the guards require a procedural lesson at the end"],
+            correctIndex: 0,
+            explanation: "It works on any invention claim, in this subject or another, which is what makes it worth more than the case list.",
+            sourceLessonSlug: "check-it-yourself",
+          },
+          {
+            prompt: "Naming the document that would settle an open question does what?",
+            options: ["Turns an unresolved claim into an actionable task", "Substitutes for actually resolving the question", "Shifts responsibility for the claim onto the reader", "Allows the claim to be repeated in the meantime"],
+            correctIndex: 0,
+            explanation: "It is the same discipline as filing a source check: a hedge with no named next step is a hedge nobody will ever clear.",
+            sourceLessonSlug: "check-it-yourself",
+          },
+          {
+            prompt: "The correction sentence about Morgan hands over which two strong claims?",
+            options: ["The 1923 three-position patent and the 1914 safety hood", "The 1914 safety hood and the Carnegie Medal he was denied", "The 1923 patent and the sale of the design to General Electric", "The Cleveland rescue and the 1912 Salt Lake City installation"],
+            correctIndex: 0,
+            explanation: "Two documented achievements replacing one indefensible claim, which is a trade the listener has no reason to refuse.",
+            sourceLessonSlug: "where-the-myths-came-from",
+          },
+          {
+            prompt: "What is the honest form of the real McCoy claim?",
+            options: ["The phrase is associated with him and its origin is disputed", "The phrase definitely derives from his lubricators", "The phrase definitely derives from the whisky slogan", "The phrase has no connection to any person named McCoy"],
+            correctIndex: 0,
+            explanation: "Language historians have not settled it, and both competing candidates are documented.",
+            sourceLessonSlug: "five-claims-that-fail",
+          },
+          {
+            prompt: "Which boxer is a competing candidate for the phrase?",
+            options: ["Norman Selby, who fought as Kid McCoy", "Jack Johnson, the heavyweight champion", "Joe Gans, the lightweight champion of the same era", "Peter Jackson, the Australian heavyweight"],
+            correctIndex: 0,
+            explanation: "Alongside the Scotch whisky slogan the real MacKay, used by G. Mackay and Company in advertising around 1870.",
+            sourceLessonSlug: "five-claims-that-fail",
+          },
+          {
+            prompt: "Latimer's two patents cover which subject?",
+            options: ["Carbon filament manufacture and attachment", "The vacuum sealing of lamp globes", "The socket and base of the incandescent lamp", "The generator supplying current to lamp circuits"],
+            correctIndex: 0,
+            explanation: "247,097 with Nichols covers attaching filaments to conducting wires; 252,386 covers making the carbons themselves.",
+            sourceLessonSlug: "five-claims-that-fail",
+          },
+          {
+            prompt: "What happens to a whole list when one entry on it is destroyed?",
+            options: ["The destruction takes the rest of the list with it", "The remaining entries are judged individually on their merits", "The list gains credibility for having been tested", "Only the disproven entry is discarded"],
+            correctIndex: 0,
+            explanation: "Which is why a shorter defensible list is worth more than a longer one carrying an easy target.",
+            sourceLessonSlug: "where-the-myths-came-from",
+          },
+          {
+            prompt: "Why does the course say nobody set out to lie?",
+            options: ["The retellings were acts of care filling a real absence", "Because the original sources were themselves mistaken", "Because the errors were introduced by publishers, not authors", "Because the claims were true when first made and later disproven"],
+            correctIndex: 0,
+            explanation: "Mainstream education taught this history as essentially empty, and into a vacuum anything expands.",
+            sourceLessonSlug: "where-the-myths-came-from",
+          },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // FINAL — pools 40, serves 10
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "final-exam-who-gets-the-credit",
+      title: "21 · Final assessment",
+      section: "Final assessment",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 10,
+        questions: [
+          {
+            prompt: "A patent is fundamentally what?",
+            options: ["A right to exclude, traded for disclosure", "An official determination that the holder invented first", "A government license permitting manufacture of a device", "A permanent property right in an idea"],
+            correctIndex: 0,
+            explanation: "Treating it as a prize is the first error in most arguments about invention credit.",
+            sourceLessonSlug: "what-a-patent-is-and-is-not",
+          },
+          {
+            prompt: "Which part of a patent carries the legal content?",
+            options: ["The numbered claims", "The title, drafted by the attorney for precision", "The abstract, which summarizes the protected matter", "The drawings, which show the claimed embodiment"],
+            correctIndex: 0,
+            explanation: "Claim 1 is normally broadest, and every later claim narrows it. Two similar titles can protect entirely different things.",
+            sourceLessonSlug: "reading-a-patent-narrowly",
+          },
+          {
+            prompt: "What does a US patent never record about the inventor?",
+            options: ["Race", "Residence at the time of filing", "Whether the patent has been assigned", "Whether a co-inventor was named"],
+            correctIndex: 0,
+            explanation: "Which is why every count in this field is a reconstruction built by matching names against other records, and is a floor rather than a total.",
+            sourceLessonSlug: "the-paper-trail-and-its-holes",
+          },
+          {
+            prompt: "Who compiled the foundational list of Black inventors around 1900?",
+            options: ["Henry E. Baker", "Portia P. James, in her Smithsonian study", "Rayvon Fouché, from corporate archives", "Kara W. Swanson, from Attorney General opinions"],
+            correctIndex: 0,
+            explanation: "A Black Patent Office employee who wrote to attorneys and examiners, so the list captures only inventors somebody remembered.",
+            sourceLessonSlug: "the-paper-trail-and-its-holes",
+          },
+          {
+            prompt: "How many mechanisms does the course separate out of the word \"stolen\"?",
+            options: ["Five", "Two", "Three", "Seven"],
+            correctIndex: 0,
+            explanation: "Barred by law, assigned to an employer, absorbed into a brand, published by a colleague, and outside the patent system entirely.",
+            sourceLessonSlug: "five-ways-a-name-disappears",
+          },
+          {
+            prompt: "Which mechanism leaves no document at all?",
+            options: ["Legal exclusion", "Assignment to an employer", "Publication by a colleague", "Absorption into a brand name"],
+            correctIndex: 0,
+            explanation: "Which is exactly why the 1858 opinion matters: it is the rare case where the barrier itself was written down.",
+            sourceLessonSlug: "five-ways-a-name-disappears",
+          },
+          {
+            prompt: "Who applied for the cotton scraper patent that produced the 1858 opinion?",
+            options: ["Oscar J. E. Stuart", "Ned, the enslaved mechanic who devised it", "Joseph Emory Davis, of Mississippi", "Joseph Holt, Commissioner of Patents"],
+            correctIndex: 0,
+            explanation: "A Pike County planter who had not invented it. Ned, whom he held, had.",
+            sourceLessonSlug: "the-1858-opinion",
+          },
+          {
+            prompt: "Who issued the Invention of a Slave opinion, and when?",
+            options: ["Jeremiah S. Black, 10 June 1858", "Joseph Holt, in 1857 as Commissioner of Patents", "Roger Taney, in Dred Scott v. Sandford", "Rufus Rhodes, for the Confederate Patent Office"],
+            correctIndex: 0,
+            explanation: "Brief to the point of curtness, and depending on the 1836 Act's oath requirement plus Dred Scott.",
+            sourceLessonSlug: "the-1858-opinion",
+          },
+          {
+            prompt: "What was the opinion's actual legal effect?",
+            options: ["The invention became ownable by nobody", "Enslavers gained a clear right to patent slaves' inventions", "Enslaved inventors could patent through a trustee", "Free Black inventors were barred from applying"],
+            correctIndex: 0,
+            explanation: "Ned could not swear the oath after Dred Scott, and Stuart could not swear it because he was not the inventor.",
+            sourceLessonSlug: "the-1858-opinion",
+          },
+          {
+            prompt: "What is Swanson's argument about the 1858 opinion?",
+            options: ["It was never forgotten, only ignored by one audience", "It was legally incorrect on its own premises", "It was suppressed by the Patent Office for a century", "It produced a long line of reported litigation"],
+            correctIndex: 0,
+            explanation: "Black writers and activists cited it for over a century in publications mainstream legal scholarship did not read.",
+            sourceLessonSlug: "the-1858-opinion",
+          },
+          {
+            prompt: "The Confederate patent act of 1861 provided what, and produced what?",
+            options: ["Enslaver patenting of slaves' inventions, and no identified cases", "A ban on Northern patents, and widespread infringement", "Automatic grants without examination, and thousands of patents", "Compensation for enslaved inventors, never actually paid"],
+            correctIndex: 0,
+            explanation: "Of the few hundred Confederate patents, none appears to have originated with an enslaved inventor.",
+            sourceLessonSlug: "the-confederate-answer",
+          },
+          {
+            prompt: "Whose failed patent application sits behind the 1861 provision?",
+            options: ["The Davis brothers, on Benjamin Montgomery's propeller", "Oscar Stuart's, on Ned's cotton scraper", "Rufus Rhodes's, on a rifle mechanism", "Thomas Jennings's, on a dry scouring process"],
+            correctIndex: 0,
+            explanation: "Joseph Emory Davis enslaved Montgomery, and his brother Jefferson later became president of the Confederacy.",
+            sourceLessonSlug: "the-confederate-answer",
+          },
+          {
+            prompt: "What is Thomas L. Jennings's patent number and year?",
+            options: ["3306x, 1821", "X8447, 1834", "3,237, 1843", "305,474, 1884"],
+            correctIndex: 0,
+            explanation: "For a dry scouring process. The X marks a patent reconstructed after the December 1836 Patent Office fire.",
+            sourceLessonSlug: "free-patentees-and-the-first-problem",
+          },
+          {
+            prompt: "What did Henry Blair patent as X8447 in 1834?",
+            options: ["A corn seed planter", "A cotton planter, with the corn planter following in 1836", "A dry scouring process for fabric", "A dough kneader and roller"],
+            correctIndex: 0,
+            explanation: "He patented a cotton planter two years later, and he signed with a mark because he could not write.",
+            sourceLessonSlug: "free-patentees-and-the-first-problem",
+          },
+          {
+            prompt: "How does the course treat the claim that Blair is the only inventor recorded as a colored man?",
+            options: ["As widely reported, not verified", "As confirmed against the Patent Office indexes", "As demonstrably false", "As irrelevant to the history"],
+            correctIndex: 0,
+            explanation: "It is hedged in the lesson and filed as an open source check, per the course's own rule about unresolvable hedges.",
+            sourceLessonSlug: "free-patentees-and-the-first-problem",
+          },
+          {
+            prompt: "Which patent covers Rillieux's broader multiple-effect system?",
+            options: ["4,879, dated 10 December 1846", "3,237, granted in 1843", "129,843, granted in 1872", "306,727, granted in 1884"],
+            correctIndex: 0,
+            explanation: "The 1843 patent covered a double-effect evaporator; the 1846 patent covered the broader multiple-effect system.",
+            sourceLessonSlug: "free-patentees-and-the-first-problem",
+          },
+          {
+            prompt: "Why can no \"first Black woman patentee\" claim be settled?",
+            options: ["Race is unrecorded and women often filed under initials", "Because all such patents were destroyed in the 1836 fire", "Because the Patent Office sealed women's applications until 1900", "Because the relevant patents were all filed jointly with husbands"],
+            correctIndex: 0,
+            explanation: "Martha Jones holds 77,494 from 1868 and Mary Jones De Leon holds 140,253 from 1873, both before Judy Reed's 1884 patent.",
+            sourceLessonSlug: "free-patentees-and-the-first-problem",
+          },
+          {
+            prompt: "What is a pre-invention assignment?",
+            options: ["An employment agreement transferring rights before inventions exist", "A sale of a patent negotiated after it issues", "A licensing deal covering a defined field of use", "A court-ordered transfer following an infringement finding"],
+            correctIndex: 0,
+            explanation: "It is the dominant mechanism of the twentieth century and it is not specific to race, which is why it explains so much.",
+            sourceLessonSlug: "assignment",
+          },
+          {
+            prompt: "Under assignment, what does the inventor keep?",
+            options: ["Their name on the face of the patent", "The right to license the invention", "The right to sue infringers", "A statutory royalty on revenue"],
+            correctIndex: 0,
+            explanation: "US law requires the actual human inventors to be named, so the name survives even after every valuable right has moved.",
+            sourceLessonSlug: "assignment",
+          },
+          {
+            prompt: "Why was assignment a constrained choice for a Black inventor of the era?",
+            options: ["Independent invention needed capital, attorneys, credit, and courtroom standing", "Because employers were legally permitted to compel signature", "Because federal law required all Black inventors to assign", "Because patent attorneys refused to represent independent inventors"],
+            correctIndex: 0,
+            explanation: "Every one of those was restricted by segregation, so the alternative was frequently no patent at all.",
+            sourceLessonSlug: "assignment",
+          },
+          {
+            prompt: "Which three inventors does Fouché's 2003 study cover?",
+            options: ["Woods, Latimer, and Davidson", "Rillieux, McCoy, and Morgan", "Ball, Thomas, and West", "Jennings, Blair, and Reed"],
+            correctIndex: 0,
+            explanation: "An independent inventor, a corporate engineer, and a technical worker inside the federal government.",
+            sourceLessonSlug: "inside-the-corporation",
+          },
+          {
+            prompt: "Which patent covers the electret microphone, and who filed it?",
+            options: ["3,118,022, West and Sessler at Bell Labs in 1962", "3,482,037, Marie and Albert Brown in 1966", "4,591,071, Lonnie Johnson in 1986", "252,386, Lewis Latimer in 1882"],
+            correctIndex: 0,
+            explanation: "Its descendants became overwhelmingly dominant in telephones, hearing aids, camcorders, and computers.",
+            sourceLessonSlug: "inside-the-corporation",
+          },
+          {
+            prompt: "In science and medicine, credit runs through what?",
+            options: ["Authorship and the name on the procedure", "Patents, exactly as in engineering", "Institutional affiliation at the time of discovery", "Priority letters filed with a learned society"],
+            correctIndex: 0,
+            explanation: "No patent was ever at issue in the Ball, Thomas, or West cases, which is why they need a different archive.",
+            sourceLessonSlug: "credit-without-a-patent",
+          },
+          {
+            prompt: "Who published a paper in 1922 crediting Alice Ball?",
+            options: ["Harry T. Hollmann", "Arthur L. Dean", "Alfred Blalock", "Helen Taussig"],
+            correctIndex: 0,
+            explanation: "He named the technique the Ball Method after it had circulated as the Dean method, which is a large part of why her name survived.",
+            sourceLessonSlug: "credit-without-a-patent",
+          },
+          {
+            prompt: "What happened to Vivien Thomas in the 1945 JAMA paper?",
+            options: ["He was not named", "He was listed as a co-author with Blalock", "He was credited in an acknowledgment but not as an author", "He was named as the sole originator of the technique"],
+            correctIndex: 0,
+            explanation: "He had done nearly two years of laboratory work and coached Blalock through the 1944 operation from a stool behind him.",
+            sourceLessonSlug: "credit-without-a-patent",
+          },
+          {
+            prompt: "What is the procedure now called, and when was the renaming reported?",
+            options: ["Blalock-Taussig-Thomas shunt, reported by the AMA in 2023", "Thomas shunt, renamed by Johns Hopkins in 1976", "Blalock-Thomas procedure, renamed in 1945", "Hopkins shunt, renamed in 2020"],
+            correctIndex: 0,
+            explanation: "Johns Hopkins had awarded Thomas an honorary Doctor of Laws in 1976 and appointed him an instructor in surgery.",
+            sourceLessonSlug: "credit-without-a-patent",
+          },
+          {
+            prompt: "What is Elijah McCoy's 1872 patent, by number and title?",
+            options: ["129,843, Improvement in Lubricators for Steam Engines", "373,915, an induction telegraphy patent", "247,097, a method of attaching carbon filaments", "1,113,675, a breathing device"],
+            correctIndex: 0,
+            explanation: "It fed oil to moving parts while the engine ran. Note the word improvement in the title.",
+            sourceLessonSlug: "documented-cases-nineteenth-century",
+          },
+          {
+            prompt: "Which Woods dispute is documented, as opposed to widely repeated?",
+            options: ["The interference against Lucius Phelps", "Two lawsuits brought and lost by Thomas Edison", "A challenge from Bell over transmitter claims", "An appeal against the Commissioner's refusal"],
+            correctIndex: 0,
+            explanation: "The Edison story is repeated nearly everywhere and this course files it as an open source check rather than teaching it.",
+            sourceLessonSlug: "documented-cases-nineteenth-century",
+          },
+          {
+            prompt: "What do Latimer's patents 247,097 and 252,386 cover?",
+            options: ["Filament attachment and carbon manufacture", "The complete design of an incandescent lamp", "A vacuum pump and a lamp socket", "Electric distribution and lamp wiring"],
+            correctIndex: 0,
+            explanation: "Both are manufacturing improvements to incandescent lighting, and neither is the invention of the light bulb.",
+            sourceLessonSlug: "documented-cases-nineteenth-century",
+          },
+          {
+            prompt: "What was Garrett Morgan's safety hood, and what is its number?",
+            options: ["A breathing device drawing air from near the floor, 1,113,675", "A three-position traffic signal, 1,475,024", "A home security system, 3,482,037", "A lubricator for steam engines, 129,843"],
+            correctIndex: 0,
+            explanation: "Issued 13 October 1914, and used by Morgan and his brother in the Cleveland tunnel on 25 July 1916.",
+            sourceLessonSlug: "documented-cases-twentieth-century",
+          },
+          {
+            prompt: "Why does the course give no rescue figures for the 1916 Cleveland tunnel?",
+            options: ["Accounts differ, so it is filed as an open source check", "Because the rescue has been shown not to have occurred", "Because the city sealed its records permanently", "Because the figures are disputed only in recent sources"],
+            correctIndex: 0,
+            explanation: "Picking whichever version reads best is precisely the failure this course is designed to prevent.",
+            sourceLessonSlug: "documented-cases-twentieth-century",
+          },
+          {
+            prompt: "What does Marie Van Brittan Brown's patent 3,482,037 describe?",
+            options: ["A camera on multiple peepholes, monitor, two-way audio, remote release, alarm", "A pressure mat wired to a bell in a neighboring house", "An autodialer connected to a police switchboard", "A photoelectric beam triggering a siren"],
+            correctIndex: 0,
+            explanation: "Filed 1 August 1966 with Albert L. Brown as co-inventor, and issued 2 December 1969.",
+            sourceLessonSlug: "documented-cases-twentieth-century",
+          },
+          {
+            prompt: "Why is Lonnie Johnson's case unusual in this course?",
+            options: ["He kept the value of his own invention", "He is the only inventor here without a patent", "His patent was the only one assigned to an employer", "His invention was never commercialized"],
+            correctIndex: 0,
+            explanation: "Patent 4,591,071, titled Squirt gun, granted 27 May 1986, licensed to Larami on his own terms.",
+            sourceLessonSlug: "documented-cases-twentieth-century",
+          },
+          {
+            prompt: "Which date does patent priority run from?",
+            options: ["The filing date", "The issue date", "The date of first public demonstration", "The date the assignment is recorded"],
+            correctIndex: 0,
+            explanation: "Filing and issue are often years apart, and comparing the two different date types produces confidently wrong conclusions.",
+            sourceLessonSlug: "reading-a-patent-narrowly",
+          },
+          {
+            prompt: "Did Garrett Morgan invent the traffic light?",
+            options: ["No; Wire installed one in 1912 and Hoge's went up in Cleveland in 1914", "Yes; his 1923 patent is the earliest on record", "Yes, in the United States, though London had one in 1868", "The question is unanswerable from surviving records"],
+            correctIndex: 0,
+            explanation: "His real contribution is the three-position signal with an intermediate warning state, patent 1,475,024 in 1923.",
+            sourceLessonSlug: "five-claims-that-fail",
+          },
+          {
+            prompt: "Did George Washington Carver invent peanut butter?",
+            options: ["No; Edson held patent 306,727 in 1884", "Yes, though he declined to patent it", "Yes, and Kellogg's later patent infringed it", "Only the modern emulsified form of it"],
+            correctIndex: 0,
+            explanation: "Carver's real work was soil restoration, crop rotation, and uses for peanuts and sweet potatoes so farmers could stop destroying their land.",
+            sourceLessonSlug: "five-claims-that-fail",
+          },
+          {
+            prompt: "How did Charles Drew actually die, and what was his real protest?",
+            options: ["Of 1950 accident injuries; he opposed segregating stored blood by donor race", "Of a refused transfusion; he opposed the Red Cross hiring policy", "Of illness contracted in the laboratory; he opposed plasma exports", "Of accident injuries; he opposed the segregation of medical schools"],
+            correctIndex: 0,
+            explanation: "White surgeons at Alamance General recognized him and worked to save him, and his injuries were beyond what a transfusion could address.",
+            sourceLessonSlug: "five-claims-that-fail",
+          },
+          {
+            prompt: "What is the status of the \"real McCoy\" etymology?",
+            options: ["Not established, with competing candidates documented", "Confirmed as deriving from Elijah McCoy's lubricators", "Disproven, and traced to the whisky slogan conclusively", "Settled by Portia James's 1989 study"],
+            correctIndex: 0,
+            explanation: "The whisky slogan the real MacKay and the boxer Kid McCoy are both documented competitors, and language historians have not settled it.",
+            sourceLessonSlug: "five-claims-that-fail",
+          },
+          {
+            prompt: "What is the upgrade mechanism?",
+            options: ["Each retelling shortens the claim until improvement becomes invention", "Each retelling adds a citation the original lacked", "Each retelling moves the claim to an earlier date", "Each retelling attaches the claim to a more famous name"],
+            correctIndex: 0,
+            explanation: "No single step is a big lie, and three steps produce a claim a hostile reader can destroy in one search.",
+            sourceLessonSlug: "where-the-myths-came-from",
+          },
+          {
+            prompt: "Which step of the checking procedure catches the traffic-light error?",
+            options: ["Checking what came before, with an earlier date", "Searching a full-text patent database by name", "Reading the title and claim 1", "Checking the assignee on the patent's face"],
+            correctIndex: 0,
+            explanation: "People skip it because finding a patent feels like finishing, so they never ask whether something similar predates it.",
+            sourceLessonSlug: "check-it-yourself",
+          },
+        ],
+      },
+    },
   ],
 };
