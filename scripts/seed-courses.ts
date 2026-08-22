@@ -211,6 +211,7 @@ import { REPORTER_VERIFICATION_COURSE } from "./data/reporter-verification-on-de
 import { REPORTER_MEDIA_LAW_COURSE } from "./data/reporter-media-law-course";
 import { REPORTER_SOLUTIONS_COURSE } from "./data/reporter-solutions-journalism-course";
 import { REPORTER_PITCH_AND_SHAPES_COURSE } from "./data/reporter-pitch-and-shapes-course";
+import { REPORTER_CAPSTONE_COURSE } from "./data/reporter-capstone-course";
 import { AFROCENTRICITY_COURSE } from "./data/afrocentricity-course";
 import { PAN_AFRICANISM_COURSE } from "./data/pan-africanism-course";
 import { ASIA_BEFORE_EUROPEAN_COLONIZATION_COURSE } from "./data/asia-before-european-colonization-course";
@@ -1074,6 +1075,36 @@ async function main() {
     seriesOrder: 8,
     seriesCode: "REPORT",
     seriesPosition: "07",
+  });
+
+  // REPORT-99, the capstone, completing the nine-course track plans/68 designed. The specification
+  // is BAM's, verbatim from that plan's course table: one quick-turn story and one enterprise pitch
+  // on a beat the learner chooses, plus one records request, one public data report read properly,
+  // two interviews, and a written note on what they could not confirm.
+  //
+  // A capstone teaches almost nothing new on purpose; its job is to make the learner do the thing
+  // end to end with enough scaffolding to finish, which is the same principle the Researcher
+  // track's capstone states. What it adds is the ASSESSMENT STANDARD, and the standard is
+  // deliberately not "did you get a good story": it is whether every claim carries the confidence
+  // level the file supports and whether a STRANGER could reconstruct how each was established.
+  // Four things are explicitly not assessed, including whether records arrived and whether the
+  // writing is good, because those are outcomes and outcomes on a four-week beat are luck.
+  //
+  // plans/68 decided the capstone stays an ASSESSED EXERCISE rather than a set of real clips, so
+  // nothing here requires the learner to publish anything or to have an outlet. It does require
+  // telling every source plainly that nothing will publish.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "reporter-capstone",
+    course: REPORTER_CAPSTONE_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "reporter",
+    seriesTitle: "The Reporter",
+    seriesOrder: 9,
+    seriesCode: "REPORT",
+    seriesPosition: "99",
   });
 
   // Genealogy for yourself and your community. Plan: plans/70-genealogy-course.md.
