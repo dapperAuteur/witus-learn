@@ -28,6 +28,36 @@ describe.skipIf(!HAS_DB)("catalog is tenant-scoped (content isolation)", () => {
     acmeCourseId = ac[0]!.id;
   });
 
+  // A course card shows a code like "REPORT-00". An identifier a learner is shown but cannot search
+  // is worse than no identifier: it teaches a handle and then refuses it. The code is not a stored
+  // column (formatCourseCode builds it from series_code + series_position), so this guards the
+  // concatenation in listCourses against someone "simplifying" the query later.
+  it("finds a course by its course code, and stays tenant-scoped doing it", async () => {
+    const { listCourses } = await import("@/db/queries/catalog");
+    const { db } = await import("@/db/client");
+    const { courses } = await import("@/db/schema");
+    const { and, eq, isNotNull } = await import("drizzle-orm");
+
+    const [coded] = await db
+      .select()
+      .from(courses)
+      .where(and(eq(courses.tenantId, bvcId), isNotNull(courses.seriesCode), isNotNull(courses.seriesPosition)))
+      .limit(1);
+    if (!coded) return; // this tenant has no coded course seeded; nothing to assert
+
+    const code = `${coded.seriesCode}-${coded.seriesPosition}`;
+    const hits = await listCourses(bvcId, { q: code, includeUnpublished: true });
+    expect(hits.map((c) => c.id)).toContain(coded.id);
+
+    // Lower case must work too: a learner types what they type.
+    const lower = await listCourses(bvcId, { q: code.toLowerCase(), includeUnpublished: true });
+    expect(lower.map((c) => c.id)).toContain(coded.id);
+
+    // And the code search must not become a hole in tenant scoping.
+    const other = await listCourses(acmeId, { q: code, includeUnpublished: true });
+    expect(other.map((c) => c.id)).not.toContain(coded.id);
+  });
+
   it("lists only the tenant's own courses", async () => {
     const { listCourses } = await import("@/db/queries/catalog");
 

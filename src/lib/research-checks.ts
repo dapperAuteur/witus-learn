@@ -1103,58 +1103,6 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
 
   // ── Reporter track (plans/68) ─────────────────────────────────────────────────────────────────
   {
-    key: "in-apra-response-deadlines",
-    course: "reporter-public-records",
-    lesson: "indiana-worked-example",
-    quote:
-      "Read the current text of Indiana Code 5-14-3-9 and Indiana Code 5-14-5 before you rely on any deadline, including one you read in a training course.",
-    title: "Indiana APRA: what are the current response deadlines, by delivery method?",
-    severity: "medium",
-    question:
-      "Under the current text of Indiana Code 5-14-3-9, how long does a public agency have to respond to a records request delivered in person, and how long for one delivered by mail, fax, or email? Quote the operative sentence and give the date you read it.",
-    claim:
-      "The lesson says Indiana sets short response deadlines that differ by how a request was delivered, with an in-person request answered faster than one sent by mail or electronically, and deliberately prints NO numbers, telling the reader to read the current statutory text instead.",
-    stakes:
-      "A reporter times a follow-up, a constructive-denial argument, and a complaint to the Public Access Counselor off this deadline. A stale figure in a training course teaches somebody to miss a real one, which is worse than the hedge that is there now. Once verified, the numbers go into the lesson and this check is deleted.",
-    needs: [
-      "The operative sentence of Ind. Code 5-14-3-9 on response time, quoted, with subsection",
-      "Whether the periods are calendar or business days",
-      "What counts as a response, as distinct from production of the records",
-      "The URL on the Indiana General Assembly's own code site and the date you read it",
-    ],
-    where: [
-      "iga.in.gov, the Indiana General Assembly's own code site, rather than a third-party mirror",
-      "The Indiana Public Access Counselor's handbook at in.gov/pac, which restates the periods",
-      "A call to the Public Access Counselor's office, which answers questions from the public",
-    ],
-  },
-  {
-    key: "in-pac-complaint-window",
-    course: "reporter-public-records",
-    lesson: "indiana-worked-example",
-    quote:
-      "the complaint route to the counselor carries its own filing window measured from the denial",
-    title: "Indiana: how long to file an access complaint with the Public Access Counselor?",
-    severity: "medium",
-    question:
-      "Under the current text of Indiana Code 5-14-5, how many days does a person have to file a formal complaint with the Public Access Counselor after a denial, and from what event does the period run?",
-    claim:
-      "The lesson states that the complaint route carries its own filing window measured from the denial, and prints no number, directing the reader to Indiana Code 5-14-5.",
-    stakes:
-      "The counselor is the cheapest route a reporter without a lawyer has in Indiana, and it is the one this course recommends. A missed filing window closes it entirely. Publishing a wrong number would be worse than the current hedge, so the number is withheld until it is read against the primary text.",
-    needs: [
-      "The number of days and whether they are calendar or business days",
-      "The event the period runs from: the denial itself, receipt of the denial, or the date of the request",
-      "Whether an advisory opinion is a precondition to any fee-shifting remedy in Indiana, and the citation if so",
-      "The URL on iga.in.gov and the date you read it",
-    ],
-    where: [
-      "iga.in.gov for the current text of Ind. Code 5-14-5",
-      "in.gov/pac, the Public Access Counselor's own guidance and opinion archive",
-      "The Hoosier State Press Association, which advises members on this route",
-    ],
-  },
-  {
     key: "fpi-posting-still-live",
     course: "reporter-what-a-beat-is",
     lesson: "beat-memo",
