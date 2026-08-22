@@ -4056,6 +4056,16 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "pan-africanism",
       "afrocentricity",
       "training-the-colonizer",
+      // The Moors integrates Latin and Arabic narrative sources, the surviving documents (the
+      // Tudmir treaty, the Granada capitulations, the 1502 and 1567 decrees) and modern
+      // scholarship (Collins, Clarke, Bulliet, Burnett, Gutas, Harvey, Heng, Fuchs, Nance) into
+      // one account of al-Andalus, and states in its own voice what the record cannot establish.
+      "the-moors",
+      // Who Gets the Credit integrates the primary legal record (the 1858 Attorney General
+      // opinion, the 1836 Act's oath requirement, the Confederate 1861 provision) with eleven
+      // verified patent documents and the secondary scholarship (James, Fouché, Swanson) into one
+      // account of how invention credit is established and lost.
+      "who-gets-the-credit",
       // Culture and migration
       "great-migration-and-the-world",
       "hoodoo-tradition-of-resistance",
@@ -4169,6 +4179,14 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "asia-before-european-colonization",
       "precolumbian-mesoamerica",
       "pan-africanism",
+      // The Moors is this claim as its central method: lesson 11 downgrades four widely repeated
+      // claims against their sources (the Ibn Firnas flight, the 400,000-volume library, the "Dark
+      // Ages" frame, the tolerance paradise) and hands the learner a four-question test to reuse.
+      "the-moors",
+      // Who Gets the Credit is this claim as a graded procedure: lesson 17 corrects five widely
+      // repeated claims against the documentary record, and lesson 19 hands the learner a
+      // seven-step method for testing any invention claim against patents and publications.
+      "who-gets-the-credit",
       // Government-forms method course: test a government action against its enabling document
       // (did this body have the power?), the same corroborate-or-challenge move.
       "who-has-the-power",

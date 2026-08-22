@@ -211,6 +211,8 @@ import { AFROCENTRICITY_COURSE } from "./data/afrocentricity-course";
 import { PAN_AFRICANISM_COURSE } from "./data/pan-africanism-course";
 import { ASIA_BEFORE_EUROPEAN_COLONIZATION_COURSE } from "./data/asia-before-european-colonization-course";
 import { TRAINING_THE_COLONIZER_COURSE } from "./data/training-the-colonizer-course";
+import { THE_MOORS_COURSE } from "./data/the-moors-course";
+import { WHO_GETS_THE_CREDIT_COURSE } from "./data/who-gets-the-credit-course";
 import { HISTORY_OF_BATHING_COURSE } from "./data/history-of-bathing-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
@@ -1543,6 +1545,49 @@ async function main() {
     // building attributions given as documented LABOR not design; through-line = knowledge
     // coerced, uncredited, uncompensated. NO migration — pnpm seed:courses.
     { slug: "training-the-colonizer", course: TRAINING_THE_COLONIZER_COURSE, category: "Culture & History" },
+    // The Moors: The Word, the History, and the Evidence — from BAM's one-line brief
+    // plans/future-courses/moors.md. Tier 0. The spine is that "Moor" is an EXONYM whose referent
+    // moves by century (Roman Mauri, Amazigh confederations, Arab elites, Iberian converts,
+    // sub-Saharan Africans, Slavic saqaliba), so the course fixes the definition before any
+    // downstream claim inherits it. Real history taught in full: 711 and the Chronicle-of-754
+    // source problem, emirate 756 → caliphate 929, Cordoba, al-Zahrawi/al-Zarqali/Ibn Rushd, the
+    // Toledo translation program after 1085, fitna and taifas, Almoravids and Almohads, Las Navas
+    // de Tolosa 1212, the Granada capitulations and their breach, the Moriscos, 1609-1614.
+    // Historiography taught BESIDE it, with no winner declared on the live disputes: convivencia
+    // (Menocal vs. Fernandez-Morera, with Pearce's critique), the Almoravid "conquest" of Ghana
+    // (Conrad & Fisher), the Reconquista as a 16th-19th c. construction (Rios Saloma), and the
+    // Morisco expulsion total as a RANGE (Lapeyre's 275,000-300,000 vs. higher recent figures).
+    // Popular claims are NAMED AND CORRECTED rather than repeated: the Ibn Firnas flight (one
+    // source, ~7 centuries later), the 400,000-volume library (no catalog survives), "the Moors
+    // ended the Dark Ages" (discarded frame), and both "the Moors were all Black Africans" and
+    // "the Moors had nothing to do with Africa" (each flattens a label that covered several
+    // populations). 5 sections · 15 teaching lessons · 5 section quizzes (pools 53/54/51/52/52,
+    // serving 5) · 1 final (40 serving 10) = 302 questions. NO migration — pnpm seed:courses.
+    { slug: "the-moors", course: THE_MOORS_COURSE, category: "Culture & History" },
+    // Who Gets the Credit: Black Inventors and the Machinery of Attribution — from BAM's one-line
+    // brief plans/future-courses/Black-inventors.md (theft and missing credit). Tier 0. The angle
+    // is BAM's and the treatment deliberately teaches the SYSTEM first, because the theft framing
+    // has a trap: the most-repeated stories in this genre are false or unprovable, and a course
+    // that repeats them hands the reader an argument they will lose. So: what a patent grants, the
+    // 1836 oath requirement, the FIVE distinct mechanisms behind the word "stolen" (barred by law,
+    // assigned to an employer, absorbed into a brand, published by a colleague, outside the system
+    // entirely), and the fact that shapes everything (a patent has NEVER recorded race, so every
+    // total is a reconstruction and a floor, per Henry E. Baker's ~1900 survey method).
+    // Then the law: the 1858 Invention of a Slave opinion (Ned, Oscar J. E. Stuart, Commissioner
+    // Holt, AG Jeremiah S. Black, 10 June 1858), whose ACTUAL holding made the invention ownable by
+    // NOBODY rather than by the enslaver, and the Confederate 1861 answer that caught no enslaved
+    // inventor anyone has identified. Then the verified record, eleven patent numbers all checked
+    // before writing: Jennings 3306x, Blair X8447, Rillieux 3237/4879, Reed 305474, Goode 322177,
+    // McCoy 129843, Woods 373383/373915, Latimer 247097/252386, Morgan 1113675/1475024, Brown
+    // 3482037, Johnson 4591071, West & Sessler 3118022. Plus the authorship cases where no patent
+    // existed: Alice Ball, Vivien Thomas, Gladys West.
+    // Section 5 NAMES AND CORRECTS the myths rather than repeating them (Morgan/traffic light,
+    // Latimer/light bulb, Carver/peanut butter, Drew's death, "the real McCoy"), explains where the
+    // genre came from, and teaches a 7-step procedure for checking any such claim in ~10 minutes.
+    // Unresolvable hedges are filed in src/lib/research-checks.ts, not left as prose.
+    // 5 sections · 15 teaching lessons · 5 section quizzes (52/50/51/49/54, serving 5) · 1 final
+    // (40 serving 10) = 296 questions. NO migration — pnpm seed:courses.
+    { slug: "who-gets-the-credit", course: WHO_GETS_THE_CREDIT_COURSE, category: "Culture & History" },
     // Clean: A Global History of Bathing and Soap (Culture & History). Organized by tradition, not
     // as a ladder: Indus Great Bath, Rome (oil+strigil, no soap), the hammam and hard soap
     // (Aleppo/Nablus), Japan (misogi + Buddhist merit), the Finnish sauna, the Mesoamerican

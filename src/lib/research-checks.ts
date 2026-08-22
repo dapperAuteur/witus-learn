@@ -967,6 +967,131 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Leroy Paige with David Lipman, Maybe I'll Pitch Forever (Doubleday, 1962)",
       "The Sporting News and Pittsburgh Courier archives for Paige profiles, 1930s to 1950s",
       "https://baseballhall.org/hall-of-famers/paige-satchel",
+  // ── Who Gets the Credit (Black inventors and attribution) ────────────────────────────────────
+  {
+    key: "blair-colored-man-notation",
+    course: "who-gets-the-credit",
+    lesson: "free-patentees-and-the-first-problem",
+    quote:
+      "He is very widely described as the only inventor whose Patent Office record identifies him as a colored man; this course repeats that description as a widely reported claim rather than as a verified one",
+    title: "Is Henry Blair really the only inventor the Patent Office recorded as a colored man?",
+    severity: "medium",
+    question:
+      "Does any Patent Office record, index, or annual report actually identify Henry Blair as 'a colored man', and is he demonstrably the only inventor so identified?",
+    claim:
+      "The course states the claim is very widely repeated and explicitly declines to assert it as verified, because the author could not check it against the Patent Office's own indexes.",
+    stakes:
+      "It is one of the most-repeated single facts about Blair. If it is a modern accretion rather than a record entry, the course should say so plainly rather than passing it along hedged. If it is real, the hedge is unnecessary and weakens a genuinely striking fact.",
+    needs: [
+      "A citation to the specific Patent Office document (index, annual report, or file wrapper) carrying the notation, with a page or image",
+      "Whether any OTHER inventor carries a comparable racial notation, which is what the word 'only' turns on",
+      "If no such record exists, the earliest source that makes the claim and what it cites",
+    ],
+    where: [
+      "USPTO historical patent records and the annual reports of the Commissioner of Patents for 1834-1836",
+      "National Archives, Records of the Patent and Trademark Office (Record Group 241)",
+      "Portia P. James, The Real McCoy (Smithsonian, 1989), which surveys the nineteenth-century record",
+    ],
+  },
+  {
+    key: "edison-woods-litigation",
+    course: "who-gets-the-credit",
+    lesson: "documented-cases-nineteenth-century",
+    quote:
+      "The much more famous story, that Thomas Edison sued Woods twice and lost and then offered him a partnership, is repeated nearly everywhere and this course does not assert it",
+    title: "Did Edison actually sue Granville Woods, and did he offer him a partnership?",
+    severity: "medium",
+    question:
+      "Is there a docket, a Patent Office interference record, or a contemporary newspaper report establishing that Thomas Edison (or an Edison company) brought suit against Granville T. Woods over the induction telegraph patents, and that Woods prevailed?",
+    claim:
+      "The course teaches only the documented interference against Lucius Phelps and explicitly declines to assert the Edison litigation or the partnership offer.",
+    stakes:
+      "This is the single most repeated anecdote about Woods and it is the kind of claim a hostile reader checks first. If it is documented, the course is underselling a strong fact. If it is not, the course is right to withhold it and should say why in the lesson.",
+    needs: [
+      "A case name and court, or an interference number, for any Edison v. Woods proceeding",
+      "A contemporary (1880s-1890s) newspaper or trade-press report of the suit or its outcome",
+      "Any primary evidence for the partnership offer, as opposed to later biographical retellings",
+      "What Rayvon Fouché concluded about this specific story in Black Inventors in the Age of Segregation (2003)",
+    ],
+    where: [
+      "Rayvon Fouché, Black Inventors in the Age of Segregation (Johns Hopkins UP, 2003), chapter on Woods",
+      "Patent Office interference records for the 1887 induction telegraphy patents (373,383 and 373,915)",
+      "Contemporary electrical trade press: Electrical World, Electrical Review, 1887-1893",
+    ],
+  },
+  {
+    key: "cleveland-1916-rescue-counts",
+    course: "who-gets-the-credit",
+    lesson: "documented-cases-twentieth-century",
+    quote:
+      "Accounts differ on how many were rescued alive and how many bodies were recovered, and this course gives no number for that reason",
+    title: "How many men did Garrett Morgan bring out of the Cleveland waterworks tunnel in 1916?",
+    severity: "low",
+    question:
+      "What do contemporary Cleveland newspaper accounts and the city's own records say about the number of men rescued alive and the number of bodies recovered on 25 July 1916, and about whether Morgan was denied recognition others received?",
+    claim:
+      "The course names the date, the event, and Morgan's and his brother Frank's participation using the safety hoods, but gives no rescue figures because published accounts conflict.",
+    stakes:
+      "The event is the strongest human story attached to a verified patent in this course. Leaving it numberless is honest but flat, and a sourced figure would make the lesson materially better. A wrong figure would be exactly the error the course spends a section warning against.",
+    needs: [
+      "Cleveland newspaper coverage from late July 1916 with figures for survivors and bodies recovered",
+      "Whether the city or the waterworks produced an official casualty report",
+      "Documentary basis for the widely repeated claim that Morgan was passed over for a Carnegie Medal or comparable recognition",
+    ],
+    where: [
+      "Cleveland Plain Dealer and Cleveland Press, 26-31 July 1916",
+      "Cleveland Public Library, Cleveland Memory Project",
+      "Carnegie Hero Fund Commission award records for 1916-1917",
+      "USPTO, 'Of courage and caution' (Journeys of Innovation), which narrates the rescue",
+    ],
+  },
+  {
+    key: "gladys-west-recognition",
+    course: "who-gets-the-credit",
+    lesson: "credit-without-a-patent",
+    quote: "Public recognition came decades after the work itself, which is the pattern this lesson exists to name.",
+    title: "What exactly did Gladys West's Dahlgren work contribute to GPS, and when was she recognized?",
+    severity: "low",
+    question:
+      "What is the precise technical description of Gladys West's contribution at the Naval Surface Warfare Center at Dahlgren, and what are the dates and forms of the recognition she eventually received?",
+    claim:
+      "The course says she worked on satellite geodesy, the computations behind an accurate mathematical model of the shape of the Earth, that this fed into what became GPS, and that public recognition came decades later. It gives no recognition date.",
+    stakes:
+      "Vagueness here is a weakness in a course whose whole argument is that specific, checkable claims beat impressive ones. A precise technical statement and a dated recognition would let the lesson make its point with the same rigor it demands elsewhere.",
+    needs: [
+      "A Navy or Dahlgren publication describing her role and the geodetic model she worked on",
+      "The date and name of the formal recognition she received, with the awarding body",
+      "Her own account, if published, of which computations she was responsible for",
+    ],
+    where: [
+      "Naval Surface Warfare Center Dahlgren Division historical office and its published histories",
+      "US Air Force Space and Missiles Pioneers Hall of Fame induction records",
+      "Gladys West's memoir and interviews given after her public recognition",
+    ],
+  },
+  {
+    key: "ibn-firnas-corroboration",
+    course: "the-moors",
+    lesson: "where-the-claims-outrun-the-evidence",
+    quote:
+      "The account of a controlled flight appears in al-Maqqari, a North African writer of the late sixteenth and early seventeenth centuries, roughly seven hundred years after the event. No independent contemporary source describes it.",
+    title: "Does any source independent of al-Maqqari describe the Ibn Firnas flight?",
+    severity: "low",
+    question:
+      "Is there any ninth-, tenth-, or eleventh-century Arabic source that describes Abbas ibn Firnas attempting flight, independent of the tradition al-Maqqari transmits?",
+    claim:
+      "The course states that Ibn Firnas was a real and inventive figure of ninth-century Cordoba, that the flight account rests on al-Maqqari writing roughly seven centuries later, and that the contemporary verse by Mumin ibn Said is satire rather than a flight report.",
+    stakes:
+      "This is the course's flagship example of a claim outrunning its evidence, so it has to be right. If an independent early source exists, the lesson is teaching a correction that is itself wrong, which would be worse than teaching the myth.",
+    needs: [
+      "Any pre-1200 Arabic text mentioning the flight, with an edition and a folio or page reference",
+      "A specialist assessment of whether Mumin ibn Said's verse can bear the weight sometimes placed on it",
+      "The scholarly consensus on al-Maqqari's sources for the Ibn Firnas material",
+    ],
+    where: [
+      "Al-Maqqari, Nafh al-Tib, and Pascual de Gayangos's translation (Oriental Translation Fund, 1840-1843)",
+      "Encyclopaedia of Islam entries for Abbas ibn Firnas and for al-Maqqari",
+      "Specialist literature on Andalusi science and on popular misrepresentations of medieval Muslim technology",
     ],
   },
 ];

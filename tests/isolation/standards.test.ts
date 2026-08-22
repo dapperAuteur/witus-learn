@@ -208,6 +208,8 @@ const CATALOG = [
   "pan-africanism",
   "afrocentricity",
   "training-the-colonizer",
+  "the-moors",
+  "who-gets-the-credit",
   // Culture and migration
   "great-migration-and-the-world",
   "hoodoo-tradition-of-resistance",
