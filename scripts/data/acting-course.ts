@@ -6637,5 +6637,589 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
         ],
       },
     },
+    {
+      slug: "final-acting",
+      title: "28 · Final assessment",
+      section: "Section 5 · The self-tape, the self-critique, and the business",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 10,
+        questions: [
+          {
+            prompt: "What is the one thing this course states, in its first lesson, that it cannot do?",
+            options: [
+              "Judge your performance",
+              "Explain how a stage performance differs from a performance made for a camera",
+              "Describe the technical requirements of a self-tape that will not be dismissed",
+              "Set out how work is found and what representation does and does not do",
+            ],
+            correctIndex: 0,
+            explanation:
+              "There is no upload, no reviewer, and no live session, so the feedback half of practice is absent for the performance itself. The rest of the list is content the course does deliver.",
+            sourceLessonSlug: "what-this-course-can-teach",
+          },
+          {
+            prompt: "Why does the missing reviewer matter, in terms of how skills are acquired?",
+            options: [
+              "Feedback is a condition of practice, not a bonus",
+              "Learners without an audience lose motivation, which is what stalls progress",
+              "Unsupervised practice reinforces errors faster than it reinforces correct habits",
+              "Assessment cannot be validated without a second observer scoring the same work",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Practice improves you when the task is well defined and something reports whether the attempt got closer. Without that, repetition is repetition.",
+            sourceLessonSlug: "what-this-course-can-teach",
+          },
+          {
+            prompt: "A character's want must be specific enough to do what?",
+            options: [
+              "Tell whether they got it",
+              "Explain the character's behavior across the whole of the script",
+              "Be agreed with the other performer before the scene is rehearsed",
+              "Be summarized for a director in a single sentence during a note",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Getting a sister to admit she read your mail passes. Being respected does not, because nothing that happens in the scene can settle it.",
+            sourceLessonSlug: "reading-a-script",
+          },
+          {
+            prompt: "What marks the end of a unit inside a scene?",
+            options: [
+              "Something changes",
+              "The camera moves to a new position for the next portion of the coverage",
+              "A page of the script ends and a different character begins speaking",
+              "The performer takes a breath, which is where the natural divisions fall",
+            ],
+            correctIndex: 0,
+            explanation:
+              "New information, an abandoned tactic, an entrance or exit, or a change of subject. Production divisions do not align with dramatic ones.",
+            sourceLessonSlug: "reading-a-script",
+          },
+          {
+            prompt: "Convert this result note into something playable: \"be more upset.\"",
+            options: [
+              "Make her understand what she has done",
+              "Let the emotion build through the scene until it becomes visible on the face",
+              "Raise the volume and shorten the breath so the audience reads distress",
+              "Recall a comparable event from your own life and hold it during the take",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It has a target and can be attempted directly. The other three describe a finished effect or a private state rather than an act.",
+            sourceLessonSlug: "playing-an-action",
+          },
+          {
+            prompt: "Why is a played action more durable across many takes than a summoned emotion?",
+            options: [
+              "It regenerates on its own each take",
+              "It uses less energy, so the performer stays fresher through a long shooting day",
+              "It is written in the script, so the performer has less to remember",
+              "It produces identical takes, which is what an editor needs for matching",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Really trying and really being blocked produces the feeling fresh every time. A manufactured emotion gets visibly harder as the day wears on.",
+            sourceLessonSlug: "playing-an-action",
+          },
+          {
+            prompt: "What does the field-study evidence suggest performers mostly feel during a show?",
+            options: [
+              "The emotions of performing",
+              "The character's emotions, reproduced through techniques of emotional recall",
+              "Nothing, because trained performers suppress feeling in order to stay accurate",
+              "A blend that shifts toward the character's the longer a production runs",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Concentration, nerves, and the pleasure of it going well. The character's emotion is constructed and delivered rather than privately suffered (Konijn, 2000).",
+            sourceLessonSlug: "what-actors-actually-feel",
+          },
+          {
+            prompt: "What is the honest limit of the fMRI study of acting?",
+            options: [
+              "Fifteen actors answered questions in a scanner, rather than performing scenes",
+              "It was never peer reviewed, so its findings remain provisional",
+              "It studied only stage performers, so it says nothing about screen work",
+              "It measured blood flow rather than activity, so the interpretation is disputed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is a real finding about one task, not an explanation of acting, and the sample size is taught alongside it so it cannot be overclaimed (Brown et al., 2019).",
+            sourceLessonSlug: "what-actors-actually-feel",
+          },
+          {
+            prompt: "Why are the boundaries between adjacent shot sizes fuzzy?",
+            options: [
+              "They are not standardized",
+              "Digital sensors changed the field of view, so the older names no longer fit",
+              "Performers move within a take, so the size changes continuously",
+              "Focus falls off gradually, so no precise boundary can be drawn",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Reference texts define them differently, and so do crews, countries, and departments on the same production, which is why confirming beats inferring (Bowen, 2018).",
+            sourceLessonSlug: "shot-size-vocabulary",
+          },
+          {
+            prompt: "What is a master shot?",
+            options: [
+              "A continuous take of the whole scene",
+              "The take the director selects to appear in the finished cut",
+              "The widest lens available, used to establish the geography of a location",
+              "The highest-resolution copy of the footage, from which other versions are made",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Usually wide, and it gives the editor a spine that the tighter coverage has to match.",
+            sourceLessonSlug: "shot-size-vocabulary",
+          },
+          {
+            prompt: "What does \"smaller for the close-up\" actually mean?",
+            options: [
+              "Less physical amplitude, not less commitment",
+              "Less energy overall, which is why screen work is more restrained than stage work",
+              "Fewer choices, because a tight frame cannot show a complex sequence",
+              "A quieter delivery, since the microphone is placed closer to the performer",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The frame magnifies you, so the same intention needs a smaller physical range. Intention and specificity do not shrink (Tucker, 2023).",
+            sourceLessonSlug: "scale-and-the-shot",
+          },
+          {
+            prompt: "Which scale error does the course call more often fatal?",
+            options: [
+              "Playing too small in a wide shot",
+              "Playing too big in a close-up, since insincerity is unrecoverable on screen",
+              "Matching too precisely, which makes a performance mechanical",
+              "Speaking at conversational level when the microphone is placed far away",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Too big reads as insincere. Too small in a wide frame leaves an audience watching a whole body doing nothing, with no scene at all.",
+            sourceLessonSlug: "scale-and-the-shot",
+          },
+          {
+            prompt: "State the honest version of the Kuleshov effect.",
+            options: [
+              "The footage is lost, but a 2016 replication found viewers do read a face by its context",
+              "It was proved in the original experiment and has been confirmed ever since",
+              "It has been refuted, and viewers read a neutral face as neutral regardless of context",
+              "It applies only to viewers who have been trained in film editing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Thirty-six participants across six emotional conditions chose the matching category more often than the alternatives, and earlier replications had conflicted (Barratt et al., 2016).",
+            sourceLessonSlug: "the-face-alone",
+          },
+          {
+            prompt: "What does the Kuleshov evidence NOT license a performer to do?",
+            options: [
+              "Do nothing and rely on the editor",
+              "Receive what the other performer is doing without displaying a reaction",
+              "Trust that surrounding shots contribute to how a face is read",
+              "Play a listening beat without labeling the emotion in advance",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The effect describes how audiences interpret an ambiguous face. Real listening produces gaze and breath changes that waiting for a cue does not.",
+            sourceLessonSlug: "the-face-alone",
+          },
+          {
+            prompt: "Which difference between takes will stop an editor cutting?",
+            options: [
+              "A prop in the wrong hand",
+              "A slightly stronger emotional level in one of the two takes",
+              "A different pause length before the last line of the exchange",
+              "A change in the performer's breathing during the listening passage",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Physical mismatches break the join. Directors cut between takes of different intensity all the time and cannot cut where an object moved.",
+            sourceLessonSlug: "the-body-in-frame",
+          },
+          {
+            prompt: "How do you hit a mark without looking at it?",
+            options: [
+              "Peripheral vision and step counting",
+              "By having the other performer signal when you have arrived at the position",
+              "By slowing at the end of the move until the focus puller confirms the distance",
+              "By memorizing the floor pattern and recognizing it as you approach",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Use the furniture at the edge of your sightline. Looking down is visible on camera and reads as technique showing.",
+            sourceLessonSlug: "the-body-in-frame",
+          },
+          {
+            prompt: "Why can drifting your eyes to where your partner really is ruin a shot?",
+            options: [
+              "The eyeline is placed for the cut, not for the room",
+              "The focus is set on the original position, so any change makes the shot soft",
+              "It breaks the frame line, and anything outside the frame did not happen",
+              "It changes the lighting on the face, which cannot be matched in the edit",
+            ],
+            correctIndex: 0,
+            explanation:
+              "If the placement is ignored, the two shots will not read as two people looking at each other, which is the whole job an eyeline does.",
+            sourceLessonSlug: "eyeline-lens-and-the-cut",
+          },
+          {
+            prompt: "In Murch's ordering of what a cut should serve, what comes first and what comes last?",
+            options: [
+              "Emotion first, spatial continuity last",
+              "Story first, emotion last, since narrative clarity outranks feeling",
+              "Rhythm first, eye trace last, since pace is what an audience notices",
+              "Spatial continuity first, emotion last, since a broken space cannot be read",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Which is why an alive but slightly mismatched take beats a perfectly matched dead one. Match carefully without letting matching become the performance.",
+            sourceLessonSlug: "eyeline-lens-and-the-cut",
+          },
+          {
+            prompt: "What is the failure mode of enlarging a performance for the stage?",
+            options: [
+              "Size without specificity",
+              "Vocal injury, which is the main risk of playing at a larger scale nightly",
+              "Losing the other performer's timing, because larger moves take longer",
+              "Becoming unable to reduce again when the same performer works on camera",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Everything loud and nothing happening. The want, obstacle, and tactics stay exactly as precise while only the physical and vocal scale rises.",
+            sourceLessonSlug: "acting-on-stage",
+          },
+          {
+            prompt: "What does stage work give a performer that screen work cannot?",
+            options: [
+              "Repetition with an audience, night after night",
+              "Freedom from technical constraint, since no equipment is involved",
+              "Certainty about the finished result, because nothing is edited afterward",
+              "A longer rehearsal period, which allows every choice to be tested",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the closest thing in the profession to a feedback loop running every day, which makes it a serious argument for theater even when screen work is the goal.",
+            sourceLessonSlug: "acting-on-stage",
+          },
+          {
+            prompt: "Why does out-of-order shooting demand a written map of the story?",
+            options: [
+              "Nothing in the day reminds you where you are in the arc",
+              "Directors require it before a performer can be scheduled for a difficult scene",
+              "Continuity departments use it to check the performer's physical choices",
+              "It is the only way to learn a full script within a compressed schedule",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Scenes are grouped by location, so you may play the end of a relationship on day one and its beginning in week five, in different weather.",
+            sourceLessonSlug: "acting-for-film",
+          },
+          {
+            prompt: "What is a setup, and why does it make screen work a repeatability problem?",
+            options: [
+              "One camera position; a scene needs several, so the passage repeats for hours",
+              "One take of a scene; several are recorded so the editor has a choice",
+              "One shooting day's schedule, which fixes how many scenes must be completed",
+              "One arrangement of the set, which is rebuilt for each new scene",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Each is a relight and a reposition, so the physical shape has to repeat while the pursuit inside it stays live.",
+            sourceLessonSlug: "acting-for-film",
+          },
+          {
+            prompt: "Why does television reward preparation that remains a decision?",
+            options: [
+              "A decision can be changed in one breath",
+              "Decisions can be shown to a director before the take, which saves time",
+              "Fixed performances are harder to memorize on a compressed schedule",
+              "Episodic directors prefer performers who have made no choices in advance",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A hardened prepared performance cannot adjust, so a director asking for something different gets the same thing again slightly louder.",
+            sourceLessonSlug: "acting-for-television",
+          },
+          {
+            prompt: "What makes multi-camera work sit between theater and film?",
+            options: [
+              "Several cameras on an open set, a week of rehearsal, often a live audience",
+              "A single camera shooting out of order, but with rehearsal time built in",
+              "A live audience watching a performance that is nevertheless edited afterward",
+              "A stage set used for filming, with the audience watching on monitors",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The scene is played continuously, timed to real laughter, with the performer staying open to the camera side of the set.",
+            sourceLessonSlug: "acting-for-television",
+          },
+          {
+            prompt: "Why is paraphrasing a line in a commercial a different kind of error than in a drama?",
+            options: [
+              "The wording has usually passed legal review",
+              "Commercial writers are paid by the word and object to any cuts",
+              "The copy is timed precisely, so a longer word makes the spot overrun",
+              "Clients memorize the script and notice any deviation on the day",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Paraphrasing a claim is a compliance problem rather than a creative choice, which is why the awkward line gets said as written.",
+            sourceLessonSlug: "commercials-and-branded-work",
+          },
+          {
+            prompt: "Notes arrive from the client, the agency, and the director, and they contradict each other. What do you do?",
+            options: [
+              "Execute the last one, pleasantly",
+              "Ask them to agree before the next take is recorded",
+              "Blend all three into a reading that partly satisfies each note",
+              "Follow the director, who outranks the other two on set",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Resolving the disagreement is not the performer's job, and arguing about consistency costs time a shoot does not have.",
+            sourceLessonSlug: "commercials-and-branded-work",
+          },
+          {
+            prompt: "What viewing condition should short-form vertical work be planned for?",
+            options: [
+              "Sound off",
+              "Full attention on a large screen, since viewers seek this material out",
+              "Headphones, which is why quiet vocal detail carries better than volume",
+              "Repeated viewing, since short pieces are watched several times over",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Something has to be legible without audio, which is why captions are standard and why watching your own work muted is the free diagnostic.",
+            sourceLessonSlug: "vertical-mobile-and-short-form",
+          },
+          {
+            prompt: "Why does a vertical frame push a performance toward close-up technique?",
+            options: [
+              "It is narrow, holds one person, and is watched at arm's length",
+              "It is taller, so more of the body is visible and gesture becomes larger",
+              "Phone cameras use wide lenses, which exaggerate whatever is nearest",
+              "Short-form editing cuts faster, so reactions must be bigger to register",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The effective intimacy is higher than the nominal shot size, so a vertical medium shot is treated as though it were a close-up.",
+            sourceLessonSlug: "vertical-mobile-and-short-form",
+          },
+          {
+            prompt: "Why is \"talk to one person\" the standard fix for bad narration?",
+            options: [
+              "Addressing an audience produces announcing",
+              "One listener is easier to picture, which reduces the performer's nerves",
+              "It slows the delivery, which is the most common fault in narration",
+              "It keeps the eyeline consistent when a camera is present",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One specific person produces speech, and speech is what the listener is being promised. The lesson calls it the oldest note in the trade.",
+            sourceLessonSlug: "narration-and-direct-address",
+          },
+          {
+            prompt: "What does \"emphasis is meaning\" ask a narrator to do?",
+            options: [
+              "Land on the words carrying the new information",
+              "Increase the volume on the most important sentence in each paragraph",
+              "Stress every noun, since nouns carry the content of a sentence",
+              "Keep stress even, so the listener decides what matters",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Any sentence has one or two words carrying its news, and even stress across everything reads as nobody talking to nobody.",
+            sourceLessonSlug: "narration-and-direct-address",
+          },
+          {
+            prompt: "What is the operative question in a heavy dramatic scene?",
+            options: [
+              "What is this person doing to stay functional?",
+              "How much does this hurt, compared with the character's worst moment?",
+              "Which earlier scene does this one pay off, and how hard?",
+              "How long can the silence run before an audience disengages?",
+            ],
+            correctIndex: 0,
+            explanation:
+              "And where that fails. The visible effort of holding together is what an audience reads as grief, so leading with collapse skips it.",
+            sourceLessonSlug: "playing-drama",
+          },
+          {
+            prompt: "What does it mean to play the ending?",
+            options: [
+              "Performing knowledge the character does not have yet",
+              "Rushing to the last beat before the earlier ones have landed",
+              "Deciding the scene's conclusion before rehearsing its middle",
+              "Weighting the final line more heavily than the structure supports",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A character who does not yet know the marriage is over cannot be mourning it. It is a direct product of having read the whole script.",
+            sourceLessonSlug: "playing-drama",
+          },
+          {
+            prompt: "Why does signaling amusement kill a comic scene?",
+            options: [
+              "It closes the gap the laugh depends on",
+              "It breaks the rhythm the writer engineered into the line",
+              "It distracts the other performer, who then loses their timing",
+              "It reads as a technical fault to an editor and makes the take unusable",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The audience laughs at the distance between how seriously the character takes the situation and how absurd it is.",
+            sourceLessonSlug: "playing-comedy",
+          },
+          {
+            prompt: "What is a status flip, and why does it matter?",
+            options: [
+              "A mid-scene reversal of standing, and it drives much written comedy",
+              "A moment when a character lowers their status deliberately to gain sympathy",
+              "The transfer of audience sympathy from one character to another",
+              "An exchange of positions on stage that signals a change of power",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Reading a comic scene for its status moves usually tells you more about how to play it than reading it for jokes does.",
+            sourceLessonSlug: "playing-comedy",
+          },
+          {
+            prompt: "What separates trained stillness from untrained stillness on camera?",
+            options: [
+              "Available weight rather than frozen tension",
+              "Duration, since trained performers can hold a position much longer",
+              "Planning, since trained stillness is rehearsed and untrained stillness is not",
+              "Complete absence of movement, which untrained stillness never achieves",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Untrained stillness reads as anxiety whatever the scene is, because it is tension. The difference is visible.",
+            sourceLessonSlug: "physical-acting",
+          },
+          {
+            prompt: "Where does character live in a movement?",
+            options: [
+              "In the how: speed, weight, directness, continuity",
+              "In the what, since the chosen action defines who the character is",
+              "In the timing relative to the line, which is what an audience reads",
+              "In the part of the body that finishes the movement rather than starts it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Reaching for a glass is the what. Running one action through combinations of the how produces recognizably different people with no biographical decision.",
+            sourceLessonSlug: "physical-acting",
+          },
+          {
+            prompt: "What are the two most common fatal technical flaws in a self-tape?",
+            options: [
+              "Bad sound and being backlit",
+              "Loose framing and a distracting background, which need equipment to fix",
+              "Camera shake and drifting focus, which require a tripod and an operator",
+              "File naming errors and an over-long slate, which come from misreading instructions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both are avoidable at no cost: record in a quieter, softer room, and turn so the window is in front of you rather than behind.",
+            sourceLessonSlug: "the-self-tape",
+          },
+          {
+            prompt: "Why does this course quote no page limits or notice periods for union self-tapes?",
+            options: [
+              "Those terms are renegotiated each bargaining cycle",
+              "They are confidential and disclosed only to union members",
+              "They vary by production, so no general figure exists at all",
+              "They differ by country, and the course has an international audience",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A quoted number ships with an expiry date, so the lesson names what the protections cover and sends the learner to SAG-AFTRA's own page.",
+            sourceLessonSlug: "the-self-tape",
+          },
+          {
+            prompt: "What does the evidence say makes self-assessment more accurate, and how does the protocol use it?",
+            options: [
+              "Specific, objective judgments, so the protocol asks observable yes-or-no questions",
+              "Greater experience, so the protocol should only be used after a year of work",
+              "Delay before judging, so the protocol requires a week between takes",
+              "Comparison against others, so the protocol includes a professional benchmark",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The mean correlation between self-rated ability and performance was .29, and it was higher when the judgment was domain-specific and the task objective (Zell & Krizan, 2014).",
+            sourceLessonSlug: "watching-yourself-honestly",
+          },
+          {
+            prompt: "Why must the four-pass checklist answers be written down before re-watching?",
+            options: [
+              "Memory reshapes itself to the outcome",
+              "Written answers can be shown to a teacher for verification afterward",
+              "Writing slows the process, which improves the quality of attention",
+              "The act of writing is what converts an observation into a usable decision",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Writing first fixes the observation before the conclusion has a chance to rewrite it, which is what keeps a solo review honest.",
+            sourceLessonSlug: "watching-yourself-honestly",
+          },
+          {
+            prompt: "What did the 2019 replication of the deliberate practice study find?",
+            options: [
+              "The best violinists had accumulated less practice than the good ones",
+              "The original result held, with an even larger effect than first reported",
+              "Practice had no measurable relationship with skill at any level",
+              "Teacher-designed practice was substantially better than self-directed practice",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Variance explained fell from 48 percent to 26 percent, and teacher-designed practice showed no advantage over self-directed practice (Macnamara & Maitra, 2019).",
+            sourceLessonSlug: "practicing-without-a-coach",
+          },
+          {
+            prompt: "Which of these cannot be practiced alone?",
+            options: [
+              "Playing off another person",
+              "Cold reading unfamiliar material after sixty seconds of preparation",
+              "Building a neutral physical baseline with a mirror and a camera",
+              "Framing, lighting, and recording a technically clean self-tape",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is a real-time skill requiring another person, alongside timing to an audience and diagnosing what you cannot yet perceive.",
+            sourceLessonSlug: "practicing-without-a-coach",
+          },
+          {
+            prompt: "What is the tell that a representation offer is not legitimate?",
+            options: [
+              "It asks for money up front",
+              "It approaches you rather than waiting for a submission",
+              "It represents many performers rather than a small select list",
+              "It offers representation without having seen recorded work",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Or requires you to buy its photography or classes. Legitimate representation is paid from what you earn, so its incentive is that you work.",
+            sourceLessonSlug: "the-business-honestly",
+          },
+          {
+            prompt: "What does the course say it has NOT done for you?",
+            options: [
+              "Made you an actor, introduced you to anyone, or put you in a room",
+              "Taught you to read a scene, which requires a teacher's correction",
+              "Prepared you technically, since equipment standards change too fast",
+              "Explained the frame, which cannot be learned without a camera present",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It closes the way it opened, by naming the boundary. Those things remain yours to go and get.",
+            sourceLessonSlug: "the-business-honestly",
+          },
+        ],
+      },
+    },
   ],
 };
