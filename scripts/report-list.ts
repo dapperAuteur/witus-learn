@@ -45,7 +45,9 @@ async function main() {
     .select({
       created: schema.problemReports.createdAt,
       kind: schema.problemReports.kind,
+      id: schema.problemReports.id,
       status: schema.problemReports.status,
+      resolution: schema.problemReports.resolution,
       message: schema.problemReports.message,
       page: schema.problemReports.pageUrl,
       email: schema.problemReports.email,
@@ -60,7 +62,7 @@ async function main() {
   console.error(`${rows.length} report(s):\n`);
   for (const r of rows) {
     console.log(
-      `[${r.status.toUpperCase()}] ${r.kind} · ${r.tenant} · ${new Date(r.created).toISOString()}${r.page ? ` · ${r.page}` : ""}${r.email ? ` · ${r.email}` : ""}\n  ${r.message.replace(/\n/g, "\n  ")}\n`,
+      `${r.id.slice(0, 8)}  [${r.status.toUpperCase()}] ${r.kind} · ${r.tenant} · ${new Date(r.created).toISOString()}${r.page ? ` · ${r.page}` : ""}${r.email ? ` · ${r.email}` : ""}\n  ${r.message.replace(/\n/g, "\n  ")}\n${r.resolution ? `  -> ${r.resolution}\n` : ""}`,
     );
   }
   await pool.end();
