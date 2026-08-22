@@ -205,6 +205,7 @@ import { TENNIS_COURSE } from "./data/tennis-course";
 import { CHESS_COURSE } from "./data/chess-course";
 import { REPORTER_WHAT_A_BEAT_IS_COURSE } from "./data/reporter-what-a-beat-is-course";
 import { REPORTER_PUBLIC_RECORDS_COURSE } from "./data/reporter-public-records-course";
+import { REPORTER_READING_A_REPORT_COURSE } from "./data/reporter-reading-a-report-course";
 import { AFROCENTRICITY_COURSE } from "./data/afrocentricity-course";
 import { PAN_AFRICANISM_COURSE } from "./data/pan-africanism-course";
 import { ASIA_BEFORE_EUROPEAN_COLONIZATION_COURSE } from "./data/asia-before-european-colonization-course";
@@ -919,6 +920,31 @@ async function main() {
     seriesOrder: 2,
     seriesCode: "REPORT",
     seriesPosition: "01",
+  });
+
+  // REPORT-02, the spine of the track (plans/68 section 3). The 2025 Indiana Girl Report is the
+  // recurring teaching OBJECT rather than background reading, because on page 27 it documents its
+  // own limitations in its own voice: gender gaps exist in data and collection, it is not yet
+  // possible to present data free from gender bias, and the limitation should be read as an
+  // additional data point rather than as grounds for dismissal. A reporter who can read that page
+  // can read any report. Sits directly on top of SCI-01 (how-to-read-a-number).
+  //
+  // Every page number, figure, and definition in the course was read out of the PDF itself. The two
+  // disciplines plans/68 attaches to the document are followed literally: no invented composite
+  // subjects and no quotation put in a young person's mouth, and every figure carries its page and
+  // its year so the course does not become the thing it teaches learners to catch.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "reporter-reading-a-report",
+    course: REPORTER_READING_A_REPORT_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "reporter",
+    seriesTitle: "The Reporter",
+    seriesOrder: 3,
+    seriesCode: "REPORT",
+    seriesPosition: "02",
   });
 
   // Genealogy for yourself and your community. Plan: plans/70-genealogy-course.md.

@@ -102,6 +102,9 @@ const BACKLOG: Record<string, string> = {
   // Common Core statistics claims.
   "reporter-what-a-beat-is": "OUT OF SCOPE for now, professional track for working reporters (plans/68)",
   "reporter-public-records": "OUT OF SCOPE for now, professional track for working reporters (plans/68)",
+  // The strongest future mapping candidate in the track: same source-critical numeracy that earned
+  // SCI-01 its Common Core statistics claims. Excused on audience, not on rigour.
+  "reporter-reading-a-report": "OUT OF SCOPE for now, professional track for working reporters (plans/68). MAP THIS if the track is ever sold to schools",
 };
 
 const seed = readFileSync("scripts/seed-courses.ts", "utf-8");

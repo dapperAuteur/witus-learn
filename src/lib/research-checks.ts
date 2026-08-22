@@ -794,6 +794,57 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Free Press Indiana's careers or jobs index, in case the posting moved rather than closed",
     ],
   },
+  {
+    key: "report-cyberbullying-ratio-source",
+    course: "reporter-reading-a-report",
+    lesson: "locating-the-table",
+    quote:
+      "The correct conclusion is NOT that the report is wrong. It is that the summary's ratio does not follow from the chart on page 59, so it comes from somewhere else: another source, a different measure of cyberbullying, or a different population.",
+    title: "Indiana Girl Report: which table supports the three-times cyberbullying ratio?",
+    severity: "medium",
+    question:
+      "Page 7 of the 2025 Indiana Girl Report states that girls experience bullying at twice the rate of boys and cyberbullying at three times the rate. Which table, source, year, and population produce those two ratios? The Youth Risk Behavior Survey chart on page 59 gives 25.3 percent of female against 20.7 percent of male high school students electronically bullied in 2023, which is roughly 1.2, so the summary must rest on something else.",
+    claim:
+      "REPORT-02 lesson 6 works this sentence end to end as its demonstration of tracing. It states plainly that the ratio does not follow from the page 59 chart, that this does NOT mean the report is wrong, and that the correct next action is to ask the publisher which table supports the sentence. Until an answer exists the course tells learners they may report the page 59 figures and may not report the three times.",
+    stakes:
+      "The lesson is the course's worked example and its most memorable teaching moment, so it has to be exactly right about what it does and does not assert. If the publisher identifies the supporting table, the lesson becomes stronger: it shows the method producing an answer rather than a doubt, and the answer goes into the text. If the ratio turns out to rest on a different measure or population, that is also worth naming precisely. Either way, a course that teaches tracing should not leave its own trace unfinished.",
+    needs: [
+      "The specific source, year, population, and measure behind the twice and three-times ratios",
+      "Whether the ratios are drawn from the report's own tables or from an external source not reproduced",
+      "The publisher's own wording of the answer, so it can be quoted in the lesson",
+      "The date the publisher was asked and the date they replied",
+    ],
+    where: [
+      "Indiana Youth Institute directly, which compiled the report and will know the provenance of each summary line",
+      "The Girl Coalition of Indiana, co-publisher, at girlcoalitionindiana.org/report",
+      "The report's own endnotes for the bullying section, pages 75 and 76, which may name a source not charted on page 59",
+    ],
+  },
+  {
+    key: "report-endnote-8-resolves",
+    course: "reporter-reading-a-report",
+    lesson: "chasing-the-endnote",
+    quote:
+      "Treat that as an exercise rather than a verdict: search the journal by volume and article number, search the title, search the authors, and see what comes back.",
+    title: "Indiana Girl Report endnote: does the Cai and Liu (2024) citation resolve?",
+    severity: "low",
+    question:
+      "Does the article cited in the report's endnotes as Cai, J., and Liu, Y. (2024), The impact of social media on mental health: A longitudinal study, Journal of Health Economics, 95, 102456 exist? Give the DOI and the article's actual title and abstract if it resolves, or a definite negative if a search of the journal's volume 95 and of the authors turns up nothing.",
+    claim:
+      "REPORT-02 lesson 10 uses this citation as the worked exercise in resolving a journal endnote and deliberately reaches NO verdict, telling the learner to search and report what they find, and stating both outcomes: a resolved citation gives you a paper to read yourself, an unresolved one gives you a question for the publisher and a reason not to build a paragraph on it.",
+    stakes:
+      "The lesson is deliberately verdict-free, which is the honest position for a course that cannot check a paywalled journal index. But an unresolvable citation inside the document this whole course teaches from would be a genuinely important teaching point, and a resolvable one would let the lesson show the happy path with a real paper. Asserting either without checking would be exactly the failure the course warns about.",
+    needs: [
+      "Whether an article with that title, those authors, or that article number exists in Journal of Health Economics volume 95",
+      "If it exists: the DOI, the actual title, and one sentence on what it found",
+      "If it does not: what a search of the journal volume, the title, and the author names returned, and the date searched",
+    ],
+    where: [
+      "The Journal of Health Economics table of contents for volume 95 on the publisher's site",
+      "Crossref, which resolves DOIs and indexes article numbers",
+      "PubMed and Google Scholar for the title and the author names",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
