@@ -25,6 +25,9 @@ import { SURVIVAL_COURSE } from "./data/survival-course";
 import { FOOTBALL_COURSE } from "./data/football-course";
 import { BROADCASTING_COURSE } from "./data/broadcasting-course";
 import { VOICE_ACTING_COURSE } from "./data/voice-acting-course";
+import { SHE_TOOK_THE_SEAT_COURSE } from "./data/she-took-the-seat-course";
+import { NAACP_LEARNED_TO_WIN_COURSE } from "./data/naacp-learned-to-win-course";
+import { ACTING_COURSE } from "./data/acting-course";
 import { GOLF_COURSE } from "./data/golf-course";
 import { HOODOO_COURSE } from "./data/hoodoo-course";
 import { HOODOO_COMPLETE_COURSE } from "./data/hoodoo-complete-course";
@@ -159,6 +162,7 @@ import { JIM_CROW_EXPORT_COURSE } from "./data/jim-crow-export-course";
 import { SCHOOLHOUSE_NETWORK_COURSE } from "./data/schoolhouse-network-course";
 import { WHERE_WE_RESTED_COURSE } from "./data/where-we-rested-course";
 import { WHAT_THEY_BUILT_COURSE } from "./data/what-they-built-course";
+import { NEGRO_LEAGUES_COURSE } from "./data/negro-leagues-course";
 import { WHAT_A_BUSINESS_ENTITY_IS_COURSE } from "./data/what-a-business-entity-is-course";
 import { WHO_HAS_THE_POWER_COURSE } from "./data/who-has-the-power-course";
 import { THE_LOCAL_LAYER_COURSE } from "./data/the-local-layer-course";
@@ -203,10 +207,16 @@ import { SHIPPING_LOGISTICS_COURSE } from "./data/shipping-logistics-course";
 import { LACROSSE_COURSE } from "./data/lacrosse-course";
 import { TENNIS_COURSE } from "./data/tennis-course";
 import { CHESS_COURSE } from "./data/chess-course";
+import { REPORTER_WHAT_A_BEAT_IS_COURSE } from "./data/reporter-what-a-beat-is-course";
+import { REPORTER_PUBLIC_RECORDS_COURSE } from "./data/reporter-public-records-course";
+import { REPORTER_READING_A_REPORT_COURSE } from "./data/reporter-reading-a-report-course";
+import { REPORTER_INTERVIEWING_COURSE } from "./data/reporter-interviewing-course";
 import { AFROCENTRICITY_COURSE } from "./data/afrocentricity-course";
 import { PAN_AFRICANISM_COURSE } from "./data/pan-africanism-course";
 import { ASIA_BEFORE_EUROPEAN_COLONIZATION_COURSE } from "./data/asia-before-european-colonization-course";
 import { TRAINING_THE_COLONIZER_COURSE } from "./data/training-the-colonizer-course";
+import { THE_MOORS_COURSE } from "./data/the-moors-course";
+import { WHO_GETS_THE_CREDIT_COURSE } from "./data/who-gets-the-credit-course";
 import { HISTORY_OF_BATHING_COURSE } from "./data/history-of-bathing-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
@@ -862,6 +872,113 @@ async function main() {
     seriesPosition: "99",
   });
 
+  // ── The Reporter track (plans/68) ─────────────────────────────────────────
+  // Nine courses, REPORT-00 to REPORT-99, sitting on the far side of civic-documentation lesson 16
+  // ("Where documentation ends and reporting begins"), which had nothing after it. The Researcher
+  // track above asks whether an account is trustworthy; Storytelling asks whether it is well told;
+  // the Reporter asks what is happening on my beat this week and what can I prove by Thursday.
+  //
+  // Same category as the Researcher on purpose: both are professional documentation trades aimed at
+  // working adults, and splitting them would produce two near-identical categories.
+  //
+  // Standards: NONE by decision (plans/68, BAM 2026-08-11). A professional track aimed at working
+  // adults does not need a K-12 alignment; the BACKLOG entries in scripts/check-standards-coverage.ts
+  // record that as a decision rather than an oversight. Revisit if the track is ever sold to schools.
+  //
+  // Written out longhand for the same reason the Researcher block above is: a helper would make these
+  // invisible to scripts/check-series-codes.ts, which parses this file textually.
+  //
+  // REPORT-00, start-here. Carries the track's DISCLOSURE in its first lesson (plans/68 section 7a):
+  // the author does documentation work for the organization Free Press Indiana sits under, and a
+  // journalism track that omitted its own author's stake would fail the standard it teaches.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "reporter-what-a-beat-is",
+    course: REPORTER_WHAT_A_BEAT_IS_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "reporter",
+    seriesTitle: "The Reporter",
+    seriesOrder: 1,
+    seriesCode: "REPORT",
+    seriesPosition: "00",
+  });
+
+  // REPORT-01. The exact gap civic-documentation leaves: it teaches open-MEETINGS law thoroughly and
+  // stops, because a Documenter's job ends at the gavel. Records are a different statute and a
+  // different failure mode, the denial and the fee estimate. Federal FOIA is the spine because it is
+  // one text a reader anywhere can check; Indiana is the worked example of a STATE act and the
+  // lesson ends by sending the reader to their own.
+  //
+  // The Indiana lesson deliberately prints NO deadline numbers and files two source checks instead
+  // (src/lib/research-checks.ts, keys in-apra-response-deadlines and in-pac-complaint-window). A
+  // course that asserts a stale statutory deadline teaches someone to miss a real one, which is the
+  // authoritative-values rule at its most literal.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "reporter-public-records",
+    course: REPORTER_PUBLIC_RECORDS_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "reporter",
+    seriesTitle: "The Reporter",
+    seriesOrder: 2,
+    seriesCode: "REPORT",
+    seriesPosition: "01",
+  });
+
+  // REPORT-02, the spine of the track (plans/68 section 3). The 2025 Indiana Girl Report is the
+  // recurring teaching OBJECT rather than background reading, because on page 27 it documents its
+  // own limitations in its own voice: gender gaps exist in data and collection, it is not yet
+  // possible to present data free from gender bias, and the limitation should be read as an
+  // additional data point rather than as grounds for dismissal. A reporter who can read that page
+  // can read any report. Sits directly on top of SCI-01 (how-to-read-a-number).
+  //
+  // Every page number, figure, and definition in the course was read out of the PDF itself. The two
+  // disciplines plans/68 attaches to the document are followed literally: no invented composite
+  // subjects and no quotation put in a young person's mouth, and every figure carries its page and
+  // its year so the course does not become the thing it teaches learners to catch.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "reporter-reading-a-report",
+    course: REPORTER_READING_A_REPORT_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "reporter",
+    seriesTitle: "The Reporter",
+    seriesOrder: 3,
+    seriesCode: "REPORT",
+    seriesPosition: "02",
+  });
+
+  // REPORT-03. oral-history teaches the life-review interview with someone who volunteered;
+  // documentary teaches depth across a long relationship with consent renewed. Neither teaches a
+  // Tuesday afternoon with a sixteen-year-old, on deadline, with a guardian in the room, when
+  // nobody involved chose to be in a story.
+  //
+  // Legal care is deliberate: the course states that interviewing minors is governed mostly by
+  // EDITORIAL policy and state-specific law rather than one national rule, and never asserts a
+  // uniform legal requirement. FERPA is described accurately (it binds what SCHOOLS release, not
+  // what a student may say), which is the misuse reporters meet most often. Trauma material is
+  // sourced to SAMHSA's six principles and the Dart Center, and is written as interviewing craft:
+  // the course repeats that a reporter is not a clinician and does not assess anyone's condition.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "reporter-interviewing",
+    course: REPORTER_INTERVIEWING_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "reporter",
+    seriesTitle: "The Reporter",
+    seriesOrder: 4,
+    seriesCode: "REPORT",
+    seriesPosition: "03",
+  });
+
   // Genealogy for yourself and your community. Plan: plans/70-genealogy-course.md.
   //
   // NOT a duplicate of RSRCH-03. That course teaches tracing a person as a professional method, in
@@ -1069,6 +1186,44 @@ async function main() {
     // (points at the community rate guides instead). Becomes VOICE-01 when a second VOICE course
     // ships; a one-course series badge would promise a track that does not exist yet.
     { slug: "voice-acting", course: VOICE_ACTING_COURSE, category: "Careers & Media" },
+    // She Took the Seat and Held the Door — She Did the Work, wave 1 (plans/65 Phase 4.1; Course E
+    // in plans/future-courses/she-did-the-work/00-course-proposals.md). A COHORT course: twelve
+    // living sports-media figures taught as one argument about how a closed profession opens, not as
+    // twelve biographies. Culture & History rather than Careers & Media on purpose: it is the
+    // history/how-it-opened companion to `broadcasting-break-in`, which is the career how-to, and
+    // the two cross-link without duplicating. Lesson 3 teaches the verification method the course
+    // was built with, because the source calendar carried fourteen errors about these women and the
+    // corrections (Mowins's two ordinals, Burke's radio-vs-television firsts, Chaka as line judge
+    // not referee, Smith at Case Western not Cincinnati, King at NCCU, the spelling Chowdhury) are
+    // the load-bearing content. No quotation appears anywhere in the course that the research pass
+    // could not tie to a primary source. NO migration — pnpm seed:courses.
+    { slug: "she-took-the-seat", course: SHE_TOOK_THE_SEAT_COURSE, category: "Culture & History" },
+    // How the NAACP Learned to Win — He Did the Work, wave 1 (plans/65 Phase 4.4, "pair launches
+    // with She Did the Work waves"). The deliberate PAIR to she-took-the-seat: that course is how
+    // INDIVIDUALS enter a closed profession one seat at a time, this one is how an ORGANIZATION
+    // forces an institution open over forty-five years. Four of the five names on
+    // plans/future-courses/he-did-the-work/01-list-of-men-that-did-the-work.md (Du Bois, Johnson,
+    // White, Marshall) taught as one institution's four instruments rather than four biographies;
+    // Onesimus and Molefi Kete Asante, the other two subjects in that directory, are already taught
+    // in `training-the-colonizer` and `afrocentricity`. Charles Hamilton Houston is added because
+    // the litigation section is not true without him. Two numbers are deliberately NOT printed (the
+    // 1919 lynching report's total, and the Dyer bill's exact House tally) and a research check is
+    // filed for the first. NO migration — pnpm seed:courses.
+    { slug: "naacp-learned-to-win", course: NAACP_LEARNED_TO_WIN_COURSE, category: "Culture & History" },
+    // Acting: The Frame, the Stage, and the Read (source note: plans/future-courses/acting/acting.md,
+    // which asked for research FIRST, so this shipped Tier 1 with a dossier beside that note). The
+    // on-camera-and-stage companion to voice-acting: script analysis, the shot-size vocabulary and
+    // what each size does to a performance, medium-by-medium adjustment (stage, film, television,
+    // commercials, vertical/short form, narration), drama/comedy/physical, self-tape craft, a
+    // self-critique protocol, and the business. Its FIRST lesson states the scope boundary out loud:
+    // an async text course cannot give feedback on a performance, so it teaches the half that
+    // survives the medium and promises no coaching, community, or work.
+    //
+    // NOT given a seriesCode yet. voice-acting carries none either, and coding one of a pair while
+    // leaving the other bare would put a badge on a track that half of it is not in. The
+    // recommendation to BAM is a PERFORM series (PERFORM-00 this course, PERFORM-01 voice-acting),
+    // which means recoding voice-acting, which is his call rather than a side effect of this branch.
+    { slug: "acting", course: ACTING_COURSE, category: "Careers & Media" },
     { slug: "hoodoo-tradition-of-resistance", course: HOODOO_COURSE, category: "Culture & History" },
     { slug: "hoodoo-complete", course: HOODOO_COMPLETE_COURSE, category: "Culture & History" },
     // The Great Migration — homeschool-friendly cultural history, companion to Hoodoo (how
@@ -1153,6 +1308,19 @@ async function main() {
     // (the True Reformers embezzlement, Binga's charge) sit in the achievement column where they
     // belong. It deliberately teaches NO instruments of clearance; the route series owns those.
     { slug: "what-they-built", course: WHAT_THEY_BUILT_COURSE, category: "Culture & History" },
+    // "The Negro Leagues: Who Owned the Game" (plans/future-courses/sports-courses/negro-leagues.md).
+    // CATEGORY DECISION, and it is deliberate: this is **Culture & History**, not Sports. The Sports
+    // category holds the play-it / know-it / work-in-it courses (golf, football, croquet,
+    // pickleball), which teach a learner to play a game and work in its industry. This course
+    // teaches nobody to play baseball. It is a cited business-and-institutions history whose direct
+    // siblings are all in Culture & History: `what-they-built` (its method), `two-racetracks` (its
+    // civic question about admission to a sport), `the-gym-and-the-color-line` and
+    // `indiana-avenue-a-district-and-what-replaced-it` (its Indianapolis section), and
+    // `pittsburgh-where-the-playbook-was-written` (Greenlee's Hill District). Filing it under Sports
+    // would put it next to rules-of-the-game courses and hide it from the learners it is written
+    // for. 6 sections, 18 teaching lessons, 6 quizzes on the Tier-0 spec. NO migration, and the
+    // slug is deliberately NOT in STAGED_COURSES yet, so `pnpm gen:citations` is a later step.
+    { slug: "negro-leagues", course: NEGRO_LEAGUES_COURSE, category: "Culture & History" },
     // "Here Be Dragons" (plans/58), course 1 of 5: how people described a world they had not seen,
     // and what those descriptions were later used for. Grades 9-12, aimed at the homeschool/teacher
     // market. THE RULE THIS SERIES IS BUILT ON: the naive framing ("they thought it was flat, then we
@@ -1488,6 +1656,49 @@ async function main() {
     // building attributions given as documented LABOR not design; through-line = knowledge
     // coerced, uncredited, uncompensated. NO migration — pnpm seed:courses.
     { slug: "training-the-colonizer", course: TRAINING_THE_COLONIZER_COURSE, category: "Culture & History" },
+    // The Moors: The Word, the History, and the Evidence — from BAM's one-line brief
+    // plans/future-courses/moors.md. Tier 0. The spine is that "Moor" is an EXONYM whose referent
+    // moves by century (Roman Mauri, Amazigh confederations, Arab elites, Iberian converts,
+    // sub-Saharan Africans, Slavic saqaliba), so the course fixes the definition before any
+    // downstream claim inherits it. Real history taught in full: 711 and the Chronicle-of-754
+    // source problem, emirate 756 → caliphate 929, Cordoba, al-Zahrawi/al-Zarqali/Ibn Rushd, the
+    // Toledo translation program after 1085, fitna and taifas, Almoravids and Almohads, Las Navas
+    // de Tolosa 1212, the Granada capitulations and their breach, the Moriscos, 1609-1614.
+    // Historiography taught BESIDE it, with no winner declared on the live disputes: convivencia
+    // (Menocal vs. Fernandez-Morera, with Pearce's critique), the Almoravid "conquest" of Ghana
+    // (Conrad & Fisher), the Reconquista as a 16th-19th c. construction (Rios Saloma), and the
+    // Morisco expulsion total as a RANGE (Lapeyre's 275,000-300,000 vs. higher recent figures).
+    // Popular claims are NAMED AND CORRECTED rather than repeated: the Ibn Firnas flight (one
+    // source, ~7 centuries later), the 400,000-volume library (no catalog survives), "the Moors
+    // ended the Dark Ages" (discarded frame), and both "the Moors were all Black Africans" and
+    // "the Moors had nothing to do with Africa" (each flattens a label that covered several
+    // populations). 5 sections · 15 teaching lessons · 5 section quizzes (pools 53/54/51/52/52,
+    // serving 5) · 1 final (40 serving 10) = 302 questions. NO migration — pnpm seed:courses.
+    { slug: "the-moors", course: THE_MOORS_COURSE, category: "Culture & History" },
+    // Who Gets the Credit: Black Inventors and the Machinery of Attribution — from BAM's one-line
+    // brief plans/future-courses/Black-inventors.md (theft and missing credit). Tier 0. The angle
+    // is BAM's and the treatment deliberately teaches the SYSTEM first, because the theft framing
+    // has a trap: the most-repeated stories in this genre are false or unprovable, and a course
+    // that repeats them hands the reader an argument they will lose. So: what a patent grants, the
+    // 1836 oath requirement, the FIVE distinct mechanisms behind the word "stolen" (barred by law,
+    // assigned to an employer, absorbed into a brand, published by a colleague, outside the system
+    // entirely), and the fact that shapes everything (a patent has NEVER recorded race, so every
+    // total is a reconstruction and a floor, per Henry E. Baker's ~1900 survey method).
+    // Then the law: the 1858 Invention of a Slave opinion (Ned, Oscar J. E. Stuart, Commissioner
+    // Holt, AG Jeremiah S. Black, 10 June 1858), whose ACTUAL holding made the invention ownable by
+    // NOBODY rather than by the enslaver, and the Confederate 1861 answer that caught no enslaved
+    // inventor anyone has identified. Then the verified record, eleven patent numbers all checked
+    // before writing: Jennings 3306x, Blair X8447, Rillieux 3237/4879, Reed 305474, Goode 322177,
+    // McCoy 129843, Woods 373383/373915, Latimer 247097/252386, Morgan 1113675/1475024, Brown
+    // 3482037, Johnson 4591071, West & Sessler 3118022. Plus the authorship cases where no patent
+    // existed: Alice Ball, Vivien Thomas, Gladys West.
+    // Section 5 NAMES AND CORRECTS the myths rather than repeating them (Morgan/traffic light,
+    // Latimer/light bulb, Carver/peanut butter, Drew's death, "the real McCoy"), explains where the
+    // genre came from, and teaches a 7-step procedure for checking any such claim in ~10 minutes.
+    // Unresolvable hedges are filed in src/lib/research-checks.ts, not left as prose.
+    // 5 sections · 15 teaching lessons · 5 section quizzes (52/50/51/49/54, serving 5) · 1 final
+    // (40 serving 10) = 296 questions. NO migration — pnpm seed:courses.
+    { slug: "who-gets-the-credit", course: WHO_GETS_THE_CREDIT_COURSE, category: "Culture & History" },
     // Clean: A Global History of Bathing and Soap (Culture & History). Organized by tradition, not
     // as a ladder: Indus Great Bath, Rome (oil+strigil, no soap), the hammam and hard soap
     // (Aleppo/Nablus), Japan (misogi + Buddhist merit), the Finnish sauna, the Mesoamerican

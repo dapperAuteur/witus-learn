@@ -716,6 +716,520 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Any NBHWC-approved program's own reading list, which may cite the evidence the handbook relies on",
     ],
   },
+  // ── He Did the Work ───────────────────────────────────────────────────────────────────────────
+  {
+    key: "naacp-1919-lynching-report-total",
+    course: "naacp-learned-to-win",
+    lesson: "hdw-counting-as-evidence",
+    quote:
+      "So the lesson describes the report's structure and method, and prints no total. A course that teaches counting as a discipline and then reprints an unchecked number would be arguing against itself.",
+    title: "The 1919 NAACP lynching report: what does its headline total count?",
+    severity: "medium",
+    question:
+      "In Thirty Years of Lynching in the United States, 1889-1918, what total does the report itself give, and does that figure count ALL persons lynched in the period or only Black victims? What is the breakdown by race?",
+    claim:
+      "No total. The lesson describes the report's structure (arranged by year, state, race, sex and alleged offense, naming victims where a name could be established) and deliberately prints no number, saying why.",
+    stakes:
+      "This is the lesson that teaches counting and the burden of correction. Printing a number the course has not checked would refute the lesson in its own body, and the ambiguity is real: secondary accounts describe the same headline figure as both the total lynched and the number of Black victims, which cannot both be true.",
+    needs: [
+      "The report's own total for 1889 to 1918, quoted from its summary tables",
+      "The race breakdown as the report states it, in the report's own terms",
+      "The page or table the figures come from, so the lesson can cite it precisely",
+    ],
+    where: [
+      "The digitized original at https://archive.org/details/thirtyyearsoflyn00nati (the summary tables sit in the opening pages, before the state-by-state listing)",
+      "The Library of Congress scan in its NAACP exhibition, https://www.loc.gov/exhibits/naacp/",
+      "Any library holding the 1919 printing or the Lawbook Exchange reprint edited by Paul Finkelman",
+    ],
+  },
+  // ── She Did the Work ──────────────────────────────────────────────────────────────────────────
+  {
+    key: "kennedy-rose-parade-emmy-year",
+    course: "she-took-the-seat",
+    lesson: "sts-trial-contract",
+    quote:
+      "Her Emmy for Rose Parade coverage is real; the year is not settled, so this course does not print one.",
+    title: "Jayne Kennedy's Rose Parade Emmy: which year?",
+    severity: "medium",
+    question:
+      "In which year did Jayne Kennedy win an Emmy for her Rose Parade coverage, and in which category?",
+    claim:
+      "The course states that the Emmy is real and deliberately prints NO year, because the circulating years are mutually incompatible and none is confirmed by an awards database.",
+    stakes:
+      "A course about ordinal and date precision that guesses a date has failed its own lesson. Printing a wrong year for a living subject's award is the exact error the course was built to correct, and it would be quoted back at every other claim in it.",
+    needs: [
+      "The award year, from an Emmy awards database or the awarding chapter's own records",
+      "The exact category (a local or regional chapter award and a National Academy award are different things and should not be printed as the same)",
+      "Whether the award was to her personally or to the broadcast, which several secondary accounts conflate",
+    ],
+    where: [
+      "Her 2025 memoir Plain Jayne (Andscape Books), which is now the best primary record of her career",
+      "The National Academy of Television Arts and Sciences and its Los Angeles chapter award archives",
+      "The National Sports Media Association, which carries her biography and honored her in 2022",
+    ],
+  },
+  {
+    key: "hobson-financial-literacy-own-words",
+    course: "she-did-the-work (Hobson course, not yet built)",
+    title: "Mellody Hobson on financial literacy: her own sourced words",
+    severity: "high",
+    question:
+      "Is there a primary, quotable Mellody Hobson statement on FINANCIAL LITERACY (as distinct from racial candor in business), and what is its exact wording and source?",
+    claim:
+      "Nothing. No Hobson course has been built and no Hobson quotation appears anywhere in the catalog. This check exists because the source calendar attributes a financial-literacy position to her (\"know your numbers, face your numbers, act on your numbers\", and a line about visibility problems rather than income problems) that the verification pass could not tie to anything she is recorded as saying. Her verifiable public words are about racial candor in business, in the 2014 TED talk.",
+    stakes:
+      "She is a living asset manager. Putting an unsourced financial-literacy position in her mouth is the single most damaging fabrication available in this project, and the calendar's framing makes it easy to do by accident. Until this is answered, any Hobson course must be built on the color-brave material where her voice is documented, or not built.",
+    needs: [
+      "A direct quotation with its source, date and context, or a clear finding that none exists",
+      "If it exists: whether it is in an Ariel shareholder letter, an Ariel-Schwab Black Investor Survey release, a Good Morning America segment, or a filmed talk",
+      "A decision from BAM on which basis a Hobson course would be built if the dig comes back empty",
+    ],
+    where: [
+      "Ariel Investments shareholder letters and the Ariel-Schwab Black Investor Survey releases",
+      "The 2014 TED talk transcript, which is the one verified body of her public speech (it is about race in business, not financial literacy)",
+      "Archived ABC Good Morning America financial segments she presented",
+    ],
+  },
+
+  // ── Acting ────────────────────────────────────────────────────────────────────────────────────
+  {
+    key: "sag-aftra-self-tape-terms",
+    course: "acting",
+    lesson: "the-self-tape",
+    quote:
+      "The specific numbers change with each bargaining cycle, so this course does not quote them; read the current terms on SAG-AFTRA's own self-tape guidelines page before you accept an unreasonable request as normal",
+    title: "SAG-AFTRA: what do the current self-tape audition protections actually say?",
+    severity: "medium",
+    question:
+      "Under the CURRENT SAG-AFTRA TV/Theatrical and Commercials agreements, what are the actual self-tape audition terms: the maximum pages for a first audition and for a callback, the minimum preparation time, whether memorization can be required, and any technical or resolution ceiling? Quote the operative language and name the agreement and its effective dates.",
+    claim:
+      "The course states only that protections EXIST and names the four things they cover (pages, notice, memorization, technical standard), and deliberately quotes no number, pointing the learner at sagaftra.org instead.",
+    stakes:
+      "A performer who does not know the terms accepts a 20-page overnight self-tape as normal, which is exactly what the protections were bargained to stop. Naming the numbers in the lesson would make it materially more useful. Quoting a stale number would be worse than the current hedge, because a learner would cite it to a producer and be wrong.",
+    needs: [
+      "The page limits for a first audition and for a callback, quoted, with the agreement they come from",
+      "The minimum preparation time and how weekends are handled",
+      "Whether memorization can be required, and what happens if it is",
+      "Any technical or resolution ceiling, stated as a ceiling or a floor",
+      "The effective dates of the agreement these come from, so the lesson can say when they were current",
+    ],
+    where: [
+      "https://www.sagaftra.org/self-tape-guidelines-members (the member page; it returns 403 to automated fetches, so a human with a browser is needed)",
+      "The SAG-AFTRA contract bulletin PDFs under sagaftra.org/sites/default/files/sa_documents/",
+      "A SAG-AFTRA member services call, which will state the current terms and the agreement they sit in",
+    ],
+  },
+
+  // ── The Negro Leagues: Who Owned the Game ─────────────────────────────────────────────────────
+  // Six hedges written into the course on purpose. Each is a sentence a learner reads as "the
+  // record does not settle this", and each names the document that would settle it. All six sit
+  // behind paper that exists and is offline, scanned without a text layer, or behind a rendering
+  // no automated fetcher could read.
+  {
+    key: "nl-abc-name-origin",
+    course: "negro-leagues",
+    lesson: "nl-abcs",
+    quote:
+      "This course does not pick. You are looking at a real, ordinary problem in business history: a sponsorship name is evidence of a relationship whose direction the record does not fix.",
+    title: "Indianapolis ABCs: what did the letters actually stand for?",
+    severity: "low",
+    question:
+      "Does any contemporaneous document establish whether the ABCs were named for the American Brewing Company, or for the initials of George Abrams, Ran Butler and a co-manager named Conoyer?",
+    claim:
+      "The lesson gives the brewery reading as the majority account (Encyclopedia of Indianapolis), gives the three-initials reading as a live alternative, notes that the club's own historian Paul Debono hedges even the brewery version because a sponsor can attach to a name that already exists, and refuses to pick.",
+    stakes:
+      "Low stakes factually and high stakes pedagogically: this is the course's first worked example of a claim held open. If a primary document settles it, the lesson should say so and the example has to be replaced with one that is genuinely open. If nothing settles it, the hedge is exactly right and the lesson should cite whatever Debono says about why.",
+    needs: [
+      "What Paul Debono, The Indianapolis ABCs (McFarland, 1997), says on the name, quoted with a page number",
+      "Any 1900s or 1910s Indianapolis newspaper item naming the sponsor, or an American Brewing Company advertisement carrying the club",
+      "The provenance of the 1905 team photograph said to show an ABC Beer sign",
+    ],
+    where: [
+      "Paul Debono, The Indianapolis ABCs: History of a Premier Team in the Negro Leagues (McFarland, 1997; 2nd ed. 2007), on the shelf at IU Indianapolis or via interlibrary loan",
+      "The Indianapolis Recorder, 1899 to 2005, at Hoosier State Chronicles: https://newspapers.library.in.gov/",
+      "The Indiana Historical Society photograph collections, for the 1905 team image",
+    ],
+  },
+  {
+    key: "nl-taylor-avenue-business",
+    course: "negro-leagues",
+    lesson: "nl-avenue-and-the-ground",
+    quote:
+      "He built changing space into his own business on Indiana Avenue, had his players dress there, and turned the walk to the ballpark into parades down the Avenue",
+    title: "What was C. I. Taylor's Indiana Avenue business?",
+    severity: "medium",
+    question:
+      "What trade did C. I. Taylor's own Indiana Avenue business carry on, and at what address, in the years the ABCs dressed there because Washington Park's locker rooms were closed to them?",
+    claim:
+      "The lesson states, sourced to the Encyclopedia of Indianapolis, that Taylor created changing space in his Indiana Avenue business and paraded his players to the ballpark from it. It never says what the business was, because no source reached names it.",
+    stakes:
+      "This is the load-bearing fact of the course's whole Indianapolis argument, that exclusion generated its own infrastructure on a Black business street. Naming the trade and the address turns a good sentence into a documented one, and would let the course place it on the same block map the Indiana Avenue course already teaches. Guessing would be worse than the gap.",
+    needs: [
+      "The trade (saloon, pool hall, restaurant, other) and the street address",
+      "The source that carries it, with a page or a directory year",
+      "Whether the premises appear in an Indianapolis city directory under Taylor's name",
+    ],
+    where: [
+      "Paul Debono, The Indianapolis ABCs (McFarland, 1997), the likeliest place this is written down",
+      "Geri Strecker and Christopher Baas, Batter UP! Professional Black Baseball at Indianapolis Ballparks, in Traces of Indiana and Midwestern History 23, no. 4 (Fall 2011), pages 27 to 30",
+      "Indianapolis city directories for 1915 to 1922, at the Indiana State Library",
+    ],
+  },
+  {
+    key: "nl-ballpark-rental-terms",
+    course: "negro-leagues",
+    lesson: "nl-avenue-and-the-ground",
+    quote:
+      "Taylor reached an agreement with the Indianapolis Indians to lease Washington Park, at 1200 West Washington Street, occasionally",
+    title: "What did a Negro League club actually pay to rent an Indianapolis ballpark?",
+    severity: "high",
+    question:
+      "What were the rental terms, flat fee or percentage of the gate, that the Indianapolis ABCs paid the Indianapolis Indians for Washington Park, or that the Indianapolis Clowns paid for Perry Stadium?",
+    claim:
+      "The course teaches that renting the ballpark was the structural weakness of the whole industry, and that the Indianapolis lease excluded the locker rooms. It gives NO dollar figure or percentage anywhere, because no source reached documents one.",
+    stakes:
+      "The highest-value gap in the course. A single sourced rental term would turn the central argument from a well-supported generalization into an arithmetic a student can do: gate receipts in, rent out, what is left. Without it the money section is qualitative where it could be quantitative. It also affects the write assignment, which asks students for exactly this and currently cannot show them a worked example.",
+    needs: [
+      "A lease, a percentage, a per-date guarantee, or a reported figure, with the year it applied",
+      "The source document and where it is held",
+      "Whether the terms differed between the ABCs at Washington Park and the Clowns at Perry Stadium",
+    ],
+    where: [
+      "The National Register nomination for Bush Stadium, NRHP reference 95000703, a scanned PDF with no text layer that needs OCR: https://npgallery.nps.gov/NRHP/GetAsset/NRHP/95000703_text",
+      "Library of Congress HALS IN-6, Bush Stadium and the Landscape of Black Baseball in Indianapolis, whose URLs return 403 to automated fetchers: https://www.loc.gov/pictures/item/in0534/",
+      "The Indianapolis Recorder business coverage at Hoosier State Chronicles, and Strecker and Baas in Traces 23, no. 4 (Fall 2011)",
+    ],
+  },
+  {
+    key: "nl-aaron-contract-price",
+    course: "negro-leagues",
+    lesson: "nl-clowns",
+    quote: "It is reported here as commonly reported and not as established.",
+    title: "What did the Braves pay the Indianapolis Clowns for Hank Aaron's contract?",
+    severity: "medium",
+    question:
+      "Is there a primary record, a contract, a league transaction record, or a contemporaneous 1952 news report, establishing what the Boston Braves paid the Indianapolis Clowns for Hank Aaron?",
+    claim:
+      "The lesson gives $10,000 as commonly reported, notes that the Encyclopedia of Indianapolis carries it, and states that no primary record for it was located and that SABR's biography of Aaron gives no figure at all.",
+    stakes:
+      "This is the course's single most concrete example of a contract sale, and it is the number a student will want when writing the capstone. If a primary record exists, the lesson should quote it and the hedge comes out. If none does, the hedge is the finding and belongs in the lesson permanently, since a figure repeated everywhere with no document behind it is exactly what the course teaches students to notice.",
+    needs: [
+      "A 1952 Boston, Milwaukee or Indianapolis newspaper report naming a figure, with date and page",
+      "Or a Negro American League or Braves transaction record",
+      "Confirmation of the date, since the Encyclopedia of Indianapolis dates the sale to late 1953 while SABR has Aaron signing with a Braves scout on 14 June 1952",
+    ],
+    where: [
+      "The Boston Globe, the Boston Herald and the Indianapolis Recorder for June 1952",
+      "The National Baseball Hall of Fame Giamatti Research Center, which holds contract and transaction files",
+      "The Negro Leagues Baseball Museum in Kansas City",
+    ],
+  },
+  {
+    key: "nl-gibson-plaque-text",
+    course: "negro-leagues",
+    lesson: "nl-what-is-contested",
+    quote:
+      "Josh Gibson's Hall of Fame plaque estimates that he hit almost 800 home runs; Baseball Reference's documented total is 176",
+    title: "The verbatim inscription on Josh Gibson's Hall of Fame plaque",
+    severity: "low",
+    question:
+      "What is the full verbatim text of Josh Gibson's National Baseball Hall of Fame plaque, and does it attribute the home run estimate to league play, independent play, or both?",
+    claim:
+      "The lesson quotes the phrase 'almost 800 home runs' as the plaque's estimate. The phrase itself is attested three times independently (Baseball Reference quoting the plaque, MLB's Negro Leagues Statistical Review Committee report, and the Heinz History Center), but the surrounding sentences were never read on an authoritative page.",
+    stakes:
+      "Low, but it is the course's headline example of the gap between a legend and a documented record, so the quotation should be exact and its scope stated. If the plaque itself already says 'in league and independent baseball', that materially strengthens the lesson's argument that the legend and the record measure different universes, and the lesson should say so.",
+    needs: [
+      "The complete inscription, transcribed",
+      "The induction year as the Hall states it",
+      "Whether the plaque itself names the scope of the estimate",
+    ],
+    where: [
+      "The plaque gallery at the National Baseball Hall of Fame in Cooperstown, or the Hall of Fame Explorer, whose plaque text is rendered client-side and is not in the HTML a fetcher receives",
+      "https://baseballhall.org/hall-of-famers/gibson-josh",
+    ],
+  },
+  {
+    key: "nl-paige-legend-numbers",
+    course: "negro-leagues",
+    lesson: "nl-what-is-contested",
+    quote:
+      "the Satchel Paige claims of roughly 2,000 wins and 55 no-hitters, whose origin this course could not trace to a primary source and therefore does not repeat",
+    title: "Where do the Satchel Paige 2,000-wins and 55-no-hitters figures come from?",
+    severity: "low",
+    question:
+      "What is the earliest traceable source of the claim that Satchel Paige pitched about 2,500 games, won about 2,000 and threw 55 no-hitters? Is it his 1962 autobiography, a press account, or his own promotional material?",
+    claim:
+      "The lesson says these figures could not be traced to a primary source and does not repeat them as fact, giving MLB's documented 125 career wins instead.",
+    stakes:
+      "The course argues that promotional exaggeration was a business function of a league with no central statistical office, which is a claim about WHY the folklore exists. Tracing one famous number to its actual origin would turn that argument from plausible to demonstrated, and it is the single best illustration available.",
+    needs: [
+      "The earliest printed appearance of the figures, with publication and date",
+      "Whether Paige himself is the source, and in what venue",
+      "What the National Baseball Hall of Fame says, given that its own Paige page declines to give totals",
+    ],
+    where: [
+      "Leroy Paige with David Lipman, Maybe I'll Pitch Forever (Doubleday, 1962)",
+      "The Sporting News and Pittsburgh Courier archives for Paige profiles, 1930s to 1950s",
+      "https://baseballhall.org/hall-of-famers/paige-satchel",
+    ],
+  },
+  // ── Who Gets the Credit (Black inventors and attribution) ────────────────────────────────────
+  {
+    key: "blair-colored-man-notation",
+    course: "who-gets-the-credit",
+    lesson: "free-patentees-and-the-first-problem",
+    quote:
+      "He is very widely described as the only inventor whose Patent Office record identifies him as a colored man; this course repeats that description as a widely reported claim rather than as a verified one",
+    title: "Is Henry Blair really the only inventor the Patent Office recorded as a colored man?",
+    severity: "medium",
+    question:
+      "Does any Patent Office record, index, or annual report actually identify Henry Blair as 'a colored man', and is he demonstrably the only inventor so identified?",
+    claim:
+      "The course states the claim is very widely repeated and explicitly declines to assert it as verified, because the author could not check it against the Patent Office's own indexes.",
+    stakes:
+      "It is one of the most-repeated single facts about Blair. If it is a modern accretion rather than a record entry, the course should say so plainly rather than passing it along hedged. If it is real, the hedge is unnecessary and weakens a genuinely striking fact.",
+    needs: [
+      "A citation to the specific Patent Office document (index, annual report, or file wrapper) carrying the notation, with a page or image",
+      "Whether any OTHER inventor carries a comparable racial notation, which is what the word 'only' turns on",
+      "If no such record exists, the earliest source that makes the claim and what it cites",
+    ],
+    where: [
+      "USPTO historical patent records and the annual reports of the Commissioner of Patents for 1834-1836",
+      "National Archives, Records of the Patent and Trademark Office (Record Group 241)",
+      "Portia P. James, The Real McCoy (Smithsonian, 1989), which surveys the nineteenth-century record",
+    ],
+  },
+  {
+    key: "edison-woods-litigation",
+    course: "who-gets-the-credit",
+    lesson: "documented-cases-nineteenth-century",
+    quote:
+      "The much more famous story, that Thomas Edison sued Woods twice and lost and then offered him a partnership, is repeated nearly everywhere and this course does not assert it",
+    title: "Did Edison actually sue Granville Woods, and did he offer him a partnership?",
+    severity: "medium",
+    question:
+      "Is there a docket, a Patent Office interference record, or a contemporary newspaper report establishing that Thomas Edison (or an Edison company) brought suit against Granville T. Woods over the induction telegraph patents, and that Woods prevailed?",
+    claim:
+      "The course teaches only the documented interference against Lucius Phelps and explicitly declines to assert the Edison litigation or the partnership offer.",
+    stakes:
+      "This is the single most repeated anecdote about Woods and it is the kind of claim a hostile reader checks first. If it is documented, the course is underselling a strong fact. If it is not, the course is right to withhold it and should say why in the lesson.",
+    needs: [
+      "A case name and court, or an interference number, for any Edison v. Woods proceeding",
+      "A contemporary (1880s-1890s) newspaper or trade-press report of the suit or its outcome",
+      "Any primary evidence for the partnership offer, as opposed to later biographical retellings",
+      "What Rayvon Fouché concluded about this specific story in Black Inventors in the Age of Segregation (2003)",
+    ],
+    where: [
+      "Rayvon Fouché, Black Inventors in the Age of Segregation (Johns Hopkins UP, 2003), chapter on Woods",
+      "Patent Office interference records for the 1887 induction telegraphy patents (373,383 and 373,915)",
+      "Contemporary electrical trade press: Electrical World, Electrical Review, 1887-1893",
+    ],
+  },
+  {
+    key: "cleveland-1916-rescue-counts",
+    course: "who-gets-the-credit",
+    lesson: "documented-cases-twentieth-century",
+    quote:
+      "Accounts differ on how many were rescued alive and how many bodies were recovered, and this course gives no number for that reason",
+    title: "How many men did Garrett Morgan bring out of the Cleveland waterworks tunnel in 1916?",
+    severity: "low",
+    question:
+      "What do contemporary Cleveland newspaper accounts and the city's own records say about the number of men rescued alive and the number of bodies recovered on 25 July 1916, and about whether Morgan was denied recognition others received?",
+    claim:
+      "The course names the date, the event, and Morgan's and his brother Frank's participation using the safety hoods, but gives no rescue figures because published accounts conflict.",
+    stakes:
+      "The event is the strongest human story attached to a verified patent in this course. Leaving it numberless is honest but flat, and a sourced figure would make the lesson materially better. A wrong figure would be exactly the error the course spends a section warning against.",
+    needs: [
+      "Cleveland newspaper coverage from late July 1916 with figures for survivors and bodies recovered",
+      "Whether the city or the waterworks produced an official casualty report",
+      "Documentary basis for the widely repeated claim that Morgan was passed over for a Carnegie Medal or comparable recognition",
+    ],
+    where: [
+      "Cleveland Plain Dealer and Cleveland Press, 26-31 July 1916",
+      "Cleveland Public Library, Cleveland Memory Project",
+      "Carnegie Hero Fund Commission award records for 1916-1917",
+      "USPTO, 'Of courage and caution' (Journeys of Innovation), which narrates the rescue",
+    ],
+  },
+  {
+    key: "gladys-west-recognition",
+    course: "who-gets-the-credit",
+    lesson: "credit-without-a-patent",
+    quote: "Public recognition came decades after the work itself, which is the pattern this lesson exists to name.",
+    title: "What exactly did Gladys West's Dahlgren work contribute to GPS, and when was she recognized?",
+    severity: "low",
+    question:
+      "What is the precise technical description of Gladys West's contribution at the Naval Surface Warfare Center at Dahlgren, and what are the dates and forms of the recognition she eventually received?",
+    claim:
+      "The course says she worked on satellite geodesy, the computations behind an accurate mathematical model of the shape of the Earth, that this fed into what became GPS, and that public recognition came decades later. It gives no recognition date.",
+    stakes:
+      "Vagueness here is a weakness in a course whose whole argument is that specific, checkable claims beat impressive ones. A precise technical statement and a dated recognition would let the lesson make its point with the same rigor it demands elsewhere.",
+    needs: [
+      "A Navy or Dahlgren publication describing her role and the geodetic model she worked on",
+      "The date and name of the formal recognition she received, with the awarding body",
+      "Her own account, if published, of which computations she was responsible for",
+    ],
+    where: [
+      "Naval Surface Warfare Center Dahlgren Division historical office and its published histories",
+      "US Air Force Space and Missiles Pioneers Hall of Fame induction records",
+      "Gladys West's memoir and interviews given after her public recognition",
+    ],
+  },
+  {
+    key: "ibn-firnas-corroboration",
+    course: "the-moors",
+    lesson: "where-the-claims-outrun-the-evidence",
+    quote:
+      "The account of a controlled flight appears in al-Maqqari, a North African writer of the late sixteenth and early seventeenth centuries, roughly seven hundred years after the event. No independent contemporary source describes it.",
+    title: "Does any source independent of al-Maqqari describe the Ibn Firnas flight?",
+    severity: "low",
+    question:
+      "Is there any ninth-, tenth-, or eleventh-century Arabic source that describes Abbas ibn Firnas attempting flight, independent of the tradition al-Maqqari transmits?",
+    claim:
+      "The course states that Ibn Firnas was a real and inventive figure of ninth-century Cordoba, that the flight account rests on al-Maqqari writing roughly seven centuries later, and that the contemporary verse by Mumin ibn Said is satire rather than a flight report.",
+    stakes:
+      "This is the course's flagship example of a claim outrunning its evidence, so it has to be right. If an independent early source exists, the lesson is teaching a correction that is itself wrong, which would be worse than teaching the myth.",
+    needs: [
+      "Any pre-1200 Arabic text mentioning the flight, with an edition and a folio or page reference",
+      "A specialist assessment of whether Mumin ibn Said's verse can bear the weight sometimes placed on it",
+      "The scholarly consensus on al-Maqqari's sources for the Ibn Firnas material",
+    ],
+    where: [
+      "Al-Maqqari, Nafh al-Tib, and Pascual de Gayangos's translation (Oriental Translation Fund, 1840-1843)",
+      "Encyclopaedia of Islam entries for Abbas ibn Firnas and for al-Maqqari",
+      "Specialist literature on Andalusi science and on popular misrepresentations of medieval Muslim technology",
+    ],
+  },
+
+  // ── Reporter track (plans/68) ─────────────────────────────────────────────────────────────────
+  {
+    key: "in-apra-response-deadlines",
+    course: "reporter-public-records",
+    lesson: "indiana-worked-example",
+    quote:
+      "Read the current text of Indiana Code 5-14-3-9 and Indiana Code 5-14-5 before you rely on any deadline, including one you read in a training course.",
+    title: "Indiana APRA: what are the current response deadlines, by delivery method?",
+    severity: "medium",
+    question:
+      "Under the current text of Indiana Code 5-14-3-9, how long does a public agency have to respond to a records request delivered in person, and how long for one delivered by mail, fax, or email? Quote the operative sentence and give the date you read it.",
+    claim:
+      "The lesson says Indiana sets short response deadlines that differ by how a request was delivered, with an in-person request answered faster than one sent by mail or electronically, and deliberately prints NO numbers, telling the reader to read the current statutory text instead.",
+    stakes:
+      "A reporter times a follow-up, a constructive-denial argument, and a complaint to the Public Access Counselor off this deadline. A stale figure in a training course teaches somebody to miss a real one, which is worse than the hedge that is there now. Once verified, the numbers go into the lesson and this check is deleted.",
+    needs: [
+      "The operative sentence of Ind. Code 5-14-3-9 on response time, quoted, with subsection",
+      "Whether the periods are calendar or business days",
+      "What counts as a response, as distinct from production of the records",
+      "The URL on the Indiana General Assembly's own code site and the date you read it",
+    ],
+    where: [
+      "iga.in.gov, the Indiana General Assembly's own code site, rather than a third-party mirror",
+      "The Indiana Public Access Counselor's handbook at in.gov/pac, which restates the periods",
+      "A call to the Public Access Counselor's office, which answers questions from the public",
+    ],
+  },
+  {
+    key: "in-pac-complaint-window",
+    course: "reporter-public-records",
+    lesson: "indiana-worked-example",
+    quote:
+      "the complaint route to the counselor carries its own filing window measured from the denial",
+    title: "Indiana: how long to file an access complaint with the Public Access Counselor?",
+    severity: "medium",
+    question:
+      "Under the current text of Indiana Code 5-14-5, how many days does a person have to file a formal complaint with the Public Access Counselor after a denial, and from what event does the period run?",
+    claim:
+      "The lesson states that the complaint route carries its own filing window measured from the denial, and prints no number, directing the reader to Indiana Code 5-14-5.",
+    stakes:
+      "The counselor is the cheapest route a reporter without a lawyer has in Indiana, and it is the one this course recommends. A missed filing window closes it entirely. Publishing a wrong number would be worse than the current hedge, so the number is withheld until it is read against the primary text.",
+    needs: [
+      "The number of days and whether they are calendar or business days",
+      "The event the period runs from: the denial itself, receipt of the denial, or the date of the request",
+      "Whether an advisory opinion is a precondition to any fee-shifting remedy in Indiana, and the citation if so",
+      "The URL on iga.in.gov and the date you read it",
+    ],
+    where: [
+      "iga.in.gov for the current text of Ind. Code 5-14-5",
+      "in.gov/pac, the Public Access Counselor's own guidance and opinion archive",
+      "The Hoosier State Press Association, which advises members on this route",
+    ],
+  },
+  {
+    key: "fpi-posting-still-live",
+    course: "reporter-what-a-beat-is",
+    lesson: "beat-memo",
+    quote:
+      "The Free Press Indiana posting that prompted this track asks for someone relentless about building relationships built on equal trust, and describes travel across the state as part of the job rather than an expense line.",
+    title: "Free Press Indiana women and girls reporter posting: does the URL still resolve?",
+    severity: "low",
+    question:
+      "Does https://www.freepressindiana.org/jobs/women-girls-reporter still resolve, and does the posting text still contain the phrase about relationships built on equal trust and the description of statewide travel? If the posting has been taken down, what is the correct citation for an archived copy?",
+    claim:
+      "REPORT-00 cites the posting twice as a public document, once for the equal-trust phrase and once for statewide travel as part of the job. It is cited as a public document only, with the course's disclosure making clear that Free Press Indiana has not reviewed, endorsed, or sponsored the course.",
+    stakes:
+      "Job postings are taken down when the role is filled, and a dead citation in a course about sourcing is exactly the failure the course teaches learners to catch. If the URL is gone, the reference should point at an archived capture with its capture date, or the phrasing should be attributed more generally.",
+    needs: [
+      "Whether the URL currently resolves, and the date checked",
+      "The two quoted characteristics confirmed against the live or archived posting text",
+      "An archive.org capture URL and capture date if the original is gone",
+    ],
+    where: [
+      "The posting URL itself",
+      "web.archive.org for a capture of the same URL",
+      "Free Press Indiana's careers or jobs index, in case the posting moved rather than closed",
+    ],
+  },
+  {
+    key: "report-cyberbullying-ratio-source",
+    course: "reporter-reading-a-report",
+    lesson: "locating-the-table",
+    quote:
+      "The correct conclusion is NOT that the report is wrong. It is that the summary's ratio does not follow from the chart on page 59, so it comes from somewhere else: another source, a different measure of cyberbullying, or a different population.",
+    title: "Indiana Girl Report: which table supports the three-times cyberbullying ratio?",
+    severity: "medium",
+    question:
+      "Page 7 of the 2025 Indiana Girl Report states that girls experience bullying at twice the rate of boys and cyberbullying at three times the rate. Which table, source, year, and population produce those two ratios? The Youth Risk Behavior Survey chart on page 59 gives 25.3 percent of female against 20.7 percent of male high school students electronically bullied in 2023, which is roughly 1.2, so the summary must rest on something else.",
+    claim:
+      "REPORT-02 lesson 6 works this sentence end to end as its demonstration of tracing. It states plainly that the ratio does not follow from the page 59 chart, that this does NOT mean the report is wrong, and that the correct next action is to ask the publisher which table supports the sentence. Until an answer exists the course tells learners they may report the page 59 figures and may not report the three times.",
+    stakes:
+      "The lesson is the course's worked example and its most memorable teaching moment, so it has to be exactly right about what it does and does not assert. If the publisher identifies the supporting table, the lesson becomes stronger: it shows the method producing an answer rather than a doubt, and the answer goes into the text. If the ratio turns out to rest on a different measure or population, that is also worth naming precisely. Either way, a course that teaches tracing should not leave its own trace unfinished.",
+    needs: [
+      "The specific source, year, population, and measure behind the twice and three-times ratios",
+      "Whether the ratios are drawn from the report's own tables or from an external source not reproduced",
+      "The publisher's own wording of the answer, so it can be quoted in the lesson",
+      "The date the publisher was asked and the date they replied",
+    ],
+    where: [
+      "Indiana Youth Institute directly, which compiled the report and will know the provenance of each summary line",
+      "The Girl Coalition of Indiana, co-publisher, at girlcoalitionindiana.org/report",
+      "The report's own endnotes for the bullying section, pages 75 and 76, which may name a source not charted on page 59",
+    ],
+  },
+  {
+    key: "report-endnote-8-resolves",
+    course: "reporter-reading-a-report",
+    lesson: "chasing-the-endnote",
+    quote:
+      "Treat that as an exercise rather than a verdict: search the journal by volume and article number, search the title, search the authors, and see what comes back.",
+    title: "Indiana Girl Report endnote: does the Cai and Liu (2024) citation resolve?",
+    severity: "low",
+    question:
+      "Does the article cited in the report's endnotes as Cai, J., and Liu, Y. (2024), The impact of social media on mental health: A longitudinal study, Journal of Health Economics, 95, 102456 exist? Give the DOI and the article's actual title and abstract if it resolves, or a definite negative if a search of the journal's volume 95 and of the authors turns up nothing.",
+    claim:
+      "REPORT-02 lesson 10 uses this citation as the worked exercise in resolving a journal endnote and deliberately reaches NO verdict, telling the learner to search and report what they find, and stating both outcomes: a resolved citation gives you a paper to read yourself, an unresolved one gives you a question for the publisher and a reason not to build a paragraph on it.",
+    stakes:
+      "The lesson is deliberately verdict-free, which is the honest position for a course that cannot check a paywalled journal index. But an unresolvable citation inside the document this whole course teaches from would be a genuinely important teaching point, and a resolvable one would let the lesson show the happy path with a real paper. Asserting either without checking would be exactly the failure the course warns about.",
+    needs: [
+      "Whether an article with that title, those authors, or that article number exists in Journal of Health Economics volume 95",
+      "If it exists: the DOI, the actual title, and one sentence on what it found",
+      "If it does not: what a search of the journal volume, the title, and the author names returned, and the date searched",
+    ],
+    where: [
+      "The Journal of Health Economics table of contents for volume 95 on the publisher's site",
+      "Crossref, which resolves DOIs and indexes article numbers",
+      "PubMed and Google Scholar for the title and the author names",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {

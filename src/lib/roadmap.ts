@@ -5,6 +5,44 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- ✅ **The Negro Leagues: Who Owned the Game** (\`content/negro-leagues\`, Culture & History; NO
+  migration, **re-run \`pnpm seed:courses\`**). BAM's note asked for the story of the Negro Leagues,
+  starting with baseball and branching to other sports, connected to Indianapolis and the Madam C. J.
+  Walker world. The version that got built treats the leagues as **firms** rather than as a tragedy
+  that ended in 1947, because that is the gap between the courses already shipped: \`two-racetracks\`
+  asks who is admitted to a sport, \`the-gym-and-the-color-line\` asks which line decides who plays,
+  and \`what-they-built\` reads Black business districts as economies. None of them reads an
+  **industry** that way. The civic question: **who owns the game, who collects the gate, and what
+  happens to those businesses when the door finally opens?**
+  6 sections, 19 teaching lessons, 6 quizzes, **490 pooled questions**, and it is the first course in
+  the catalog to report **zero findings** from \`pnpm audit:course --spec\`: every teaching section
+  carries a quiz sized to its own word density (74/86/79/81/94 serving 5, plus a 76-question final
+  serving 10), every quiz passes at 80, and no lesson is assessed only outside its own section.
+  **The evidence discipline is the course's real subject.** It teaches evidence CLASS, not just
+  facts: Overmyer's Yankee Stadium figures come from the Yankees' own cash ledgers and show
+  **$114,550 across fifteen years**, which the course stages directly against the endlessly repeated
+  and unfootnoted "$100,000 a year". Greenlee Field's famous **$100,000** is given as a promoter's
+  claim with **$40,000 in building permits** behind it. Rube Foster's cut of the gate is taught as
+  **contested across four credible sources** rather than resolved. Section 6 handles MLB's December
+  2020 designation of seven leagues and the May 2024 merge of 2,300+ players accurately, including
+  what is genuinely disputed: a career rate-statistic threshold of about **1,800 at-bats against
+  5,000**, an official record that **excludes the barnstorming games that paid the bills**, and two
+  reputable databases that currently disagree on the single-season batting record.
+  **Numbers deliberately refused, and taught as refusals:** any single figure for Foster's
+  percentage or Wilkinson's lighting system, the \$10,000 for Hank Aaron's contract, any Satchel
+  Paige sale price (two SABR pages contradict each other), what the Knicks paid Saperstein for Nat
+  Clifton (absent from the Hall of Fame, NBA.com and the standard history), the Gibson home-run
+  totals, and any headcount for jobs lost. Six of those hedges are filed as **source checks** in
+  \`src/lib/research-checks.ts\` rather than left as prose caveats.
+  The **Indianapolis** section is BAM's ask, and its most useful finding is a negative: no commercial
+  relationship between the Walker company and the ABCs could be documented, so the course says so
+  instead of implying one, and teaches the real link, which is that C. I. Taylor built a clubhouse
+  into his own Indiana Avenue premises **because Washington Park's lease denied his players the
+  locker rooms**. The **branch to other sports** is carried only where sourced, and the structural
+  finding is that in Black professional sport **baseball owned the real estate and football was a
+  tenant**: Fritz Pollard lost Dyckman Oval in 1938 when Alex Pompez leased it to a rival.
+  Mapped to the three \`catalog.*\` Common Core history-literacy claims (60 standards across 15
+  jurisdictions). **NOT yet in \`STAGED_COURSES\`**, so \`pnpm gen:citations\` is a later step.
 - ✅ **WELL infrastructure** (\`feat/well-infrastructure\`, plans/67 branch 1; NO migration):
   insert-only \`visibility\`/\`publishHoldReason\` on the authored-course seeder (public flip
   survives re-seeds); the private study loop actually works (enroll + complete + dashboard were
@@ -968,6 +1006,53 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   it. Four shuffled 8-question banks, reveals + recall throughout, standards-excused as vocational.
   Seeded by \`pnpm seed:courses\`; citations staged AFTER seeding (the extractor reads the DB); gets
   code VOICE-01 when a second VOICE course ships. BAM sets price + vetted state in the admin UI.
+- ✅ **She Did the Work and He Did the Work, wave 1** (\`content/did-the-work\`, plans/65 Phase 4.1
+  and 4.4, which says the two launch together). Two paired Culture & History courses, both built as
+  COHORTS rather than as biographies, because the research file's own test is whether a subject
+  hands a student a transferable skill or only a story. **She Took the Seat and Held the Door**
+  (19 lessons, 242 questions) is Course E from the She Did the Work proposals: twelve living
+  sports-media figures taught as one argument about how a closed profession opens, through the trial
+  contract, the credential stack, the pipeline program and the non-linear resume. Lesson 3 teaches
+  the verification method the course was built with, because the source material carried fourteen
+  factual errors about these women and the corrections are the load-bearing content (Mowins was
+  FIRST on a nationally televised NFL game and SECOND ever on television after Gayle Sierens in
+  1987; Burke's Finals firsts are radio in 2020 and television in 2024; Chaka was a line judge, not
+  a referee, and left after 2023; Smith's degrees are from Case Western Reserve; King is at NCCU;
+  the name is Chowdhury). Section 4 deliberately ends on the people who are no longer with the
+  organization that hired them. **How the NAACP Learned to Win** (18 lessons, 225 questions) is the
+  pair: four of the five names on the He Did the Work list, taught as one institution's four
+  instruments (Du Bois and the press, Johnson and the branch network aimed at the Dyer bill, White
+  and the investigations that beat the Parker nomination by two votes, Houston's ladder and
+  Marshall's 29 wins in 32 arguments), plus Charles Hamilton Houston, who is not on the list and
+  without whom the litigation section is not true. Both courses map to the Common Core literacy
+  strands (RH.11-12.8, RH.11-12.9). No quotation appears in either course that could not be tied to
+  a primary source; three checks are filed at \`/admin/research\` for what could not be settled,
+  including the Mellody Hobson financial-literacy attribution that the calendar makes and no source
+  supports. Seeded by \`pnpm seed:courses\`; citations staged AFTER seeding (the extractor reads the
+  DB). BAM sets price + vetted state in the admin UI.
+- ✅ **Acting: The Frame, the Stage, and the Read** (\`content/acting-course\`, source note
+  plans/future-courses/acting/acting.md). The on-camera-and-stage companion to \`voice-acting\`, and
+  the first course shipped under the **Tier 1** method in docs/course-method: BAM's note asked for
+  research first, so a five-section dossier.md sits beside it and only its section 4 entered a
+  lesson. 22 teaching lessons in Careers & Media across five sections, 472 pooled questions in six
+  banks sized to the density spec (87/100/100/56/85 plus a 44-question final serving 10), all at 80
+  to pass and shuffled, with \`pnpm audit:course acting --spec\` clean.
+  The honest scope boundary is the point of the course and it is stated in lesson 1, not buried: an
+  async text course has no reviewer, so it cannot judge a performance, and feedback is a CONDITION
+  of practice rather than a bonus (Ericsson et al. 1993, with the 2019 Macnamara replication that
+  failed to reproduce the headline taught alongside it). What it does teach is the half that
+  survives the medium: script analysis, the shot-size vocabulary and what each size does to a
+  performance, medium-by-medium adjustment as rules (stage, film, television, commercials, vertical
+  and short form, narration), drama/comedy/physical, self-tape craft, and a self-critique protocol
+  built on the Zell and Krizan finding that self-judgment is more accurate when it is specific and
+  objective. Contested claims are taught WITH their contest: Kuleshov from the 2016 replication and
+  the lost footage, never the film-mythology version. No coaching, community, or work is promised;
+  no rates, no employment statistics, and no SAG-AFTRA self-tape numbers are quoted (that one is a
+  filed research check, since sagaftra.org is unreachable to an automated fetch and the terms change
+  each bargaining cycle). Standards-excused as vocational. Seeded by \`pnpm seed:courses\`; NOT yet
+  staged for citations (stage it after seeding, since the extractor reads the DB). Recommendation to
+  BAM, not applied: make this and voice-acting a **PERFORM** series, PERFORM-00 here and PERFORM-01
+  for the voice course, which means recoding voice-acting and is his call.
 - ✅ **BVC Sommelier series, course #1: Wine** (\`feat/bvc-sommelier-wine\`, plans/53). A skills sequel
   to BVC S2E9 "Wine: Blood of the Earth": that episode teaches wine's history, this one teaches
   tasting and choosing. 52 lessons in 12 modules at WSET-2-ish depth (the four-stage grid and six
