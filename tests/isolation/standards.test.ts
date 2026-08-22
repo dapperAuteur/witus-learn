@@ -22,6 +22,7 @@ import {
   type ScopedFramework,
   type StateCode,
 } from "@/lib/standards";
+import { allSeedEntries } from "../../scripts/lib/seed-registry";
 
 // /standards tells teachers — and homeschooling parents who may FILE IT WITH A STATE — which
 // public education standards this curriculum satisfies. Two classes of defect matter here:
@@ -383,8 +384,19 @@ describe("standards are tenant-scoped — a school can only claim what it actual
     expect(summarizeStandards(groups).total).toBe(ALIGNMENTS.length);
 
     // Guard against a typo'd slug in the data file quietly making a standard unreachable.
-    for (const s of all)
-      expect([...SEASON_1, ...SEASON_2_3, ...CATALOG], `unknown slug "${s}"`).toContain(s);
+    //
+    // This used to compare against the hand-maintained SEASON_1/SEASON_2_3/CATALOG lists above,
+    // which meant every new mapped course had to be added here too or the suite went red for a
+    // reason that had nothing to do with tenancy. That is rot, and it bit on 2026-08-22 when five
+    // course branches landed at once. The registry is the truth: a slug "resolves" if a seed script
+    // actually registers a course under it, which is exactly what the typo guard is trying to say.
+    // The registry sees the two registration shapes that cover the authored catalog: literal
+    // seedAuthoredCourse calls and the array-of-pairs loops. It does NOT see the BVC episodes,
+    // which are seeded from gitignored CSVs, so the declared lists stay as the fallback for those.
+    // A NEW mapped course therefore has to be registered in a seed script or named above, which is
+    // the typo guard, without a hand-maintained mirror of every authored course.
+    const known = new Set([...allSeedEntries().map((e) => e.slug), ...SEASON_1, ...SEASON_2_3, ...CATALOG]);
+    for (const s of all) expect(known, `unknown slug "${s}"`).toContain(s);
   });
 
   it("the per-state view is a strict subset: one jurisdiction's frameworks, same tenant scope", () => {
