@@ -105,6 +105,7 @@ const BACKLOG: Record<string, string> = {
   // The strongest future mapping candidate in the track: same source-critical numeracy that earned
   // SCI-01 its Common Core statistics claims. Excused on audience, not on rigour.
   "reporter-reading-a-report": "OUT OF SCOPE for now, professional track for working reporters (plans/68). MAP THIS if the track is ever sold to schools",
+  "reporter-interviewing": "OUT OF SCOPE for now, professional track for working reporters (plans/68)",
 };
 
 const seed = readFileSync("scripts/seed-courses.ts", "utf-8");

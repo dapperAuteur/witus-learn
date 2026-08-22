@@ -206,6 +206,7 @@ import { CHESS_COURSE } from "./data/chess-course";
 import { REPORTER_WHAT_A_BEAT_IS_COURSE } from "./data/reporter-what-a-beat-is-course";
 import { REPORTER_PUBLIC_RECORDS_COURSE } from "./data/reporter-public-records-course";
 import { REPORTER_READING_A_REPORT_COURSE } from "./data/reporter-reading-a-report-course";
+import { REPORTER_INTERVIEWING_COURSE } from "./data/reporter-interviewing-course";
 import { AFROCENTRICITY_COURSE } from "./data/afrocentricity-course";
 import { PAN_AFRICANISM_COURSE } from "./data/pan-africanism-course";
 import { ASIA_BEFORE_EUROPEAN_COLONIZATION_COURSE } from "./data/asia-before-european-colonization-course";
@@ -945,6 +946,31 @@ async function main() {
     seriesOrder: 3,
     seriesCode: "REPORT",
     seriesPosition: "02",
+  });
+
+  // REPORT-03. oral-history teaches the life-review interview with someone who volunteered;
+  // documentary teaches depth across a long relationship with consent renewed. Neither teaches a
+  // Tuesday afternoon with a sixteen-year-old, on deadline, with a guardian in the room, when
+  // nobody involved chose to be in a story.
+  //
+  // Legal care is deliberate: the course states that interviewing minors is governed mostly by
+  // EDITORIAL policy and state-specific law rather than one national rule, and never asserts a
+  // uniform legal requirement. FERPA is described accurately (it binds what SCHOOLS release, not
+  // what a student may say), which is the misuse reporters meet most often. Trauma material is
+  // sourced to SAMHSA's six principles and the Dart Center, and is written as interviewing craft:
+  // the course repeats that a reporter is not a clinician and does not assess anyone's condition.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "reporter-interviewing",
+    course: REPORTER_INTERVIEWING_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "reporter",
+    seriesTitle: "The Reporter",
+    seriesOrder: 4,
+    seriesCode: "REPORT",
+    seriesPosition: "03",
   });
 
   // Genealogy for yourself and your community. Plan: plans/70-genealogy-course.md.
