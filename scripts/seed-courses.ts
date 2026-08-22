@@ -203,6 +203,7 @@ import { SHIPPING_LOGISTICS_COURSE } from "./data/shipping-logistics-course";
 import { LACROSSE_COURSE } from "./data/lacrosse-course";
 import { TENNIS_COURSE } from "./data/tennis-course";
 import { CHESS_COURSE } from "./data/chess-course";
+import { REPORTER_WHAT_A_BEAT_IS_COURSE } from "./data/reporter-what-a-beat-is-course";
 import { AFROCENTRICITY_COURSE } from "./data/afrocentricity-course";
 import { PAN_AFRICANISM_COURSE } from "./data/pan-africanism-course";
 import { ASIA_BEFORE_EUROPEAN_COLONIZATION_COURSE } from "./data/asia-before-european-colonization-course";
@@ -860,6 +861,39 @@ async function main() {
     seriesOrder: 9,
     seriesCode: "RSRCH",
     seriesPosition: "99",
+  });
+
+  // ── The Reporter track (plans/68) ─────────────────────────────────────────
+  // Nine courses, REPORT-00 to REPORT-99, sitting on the far side of civic-documentation lesson 16
+  // ("Where documentation ends and reporting begins"), which had nothing after it. The Researcher
+  // track above asks whether an account is trustworthy; Storytelling asks whether it is well told;
+  // the Reporter asks what is happening on my beat this week and what can I prove by Thursday.
+  //
+  // Same category as the Researcher on purpose: both are professional documentation trades aimed at
+  // working adults, and splitting them would produce two near-identical categories.
+  //
+  // Standards: NONE by decision (plans/68, BAM 2026-08-11). A professional track aimed at working
+  // adults does not need a K-12 alignment; the BACKLOG entries in scripts/check-standards-coverage.ts
+  // record that as a decision rather than an oversight. Revisit if the track is ever sold to schools.
+  //
+  // Written out longhand for the same reason the Researcher block above is: a helper would make these
+  // invisible to scripts/check-series-codes.ts, which parses this file textually.
+  //
+  // REPORT-00, start-here. Carries the track's DISCLOSURE in its first lesson (plans/68 section 7a):
+  // the author does documentation work for the organization Free Press Indiana sits under, and a
+  // journalism track that omitted its own author's stake would fail the standard it teaches.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "reporter-what-a-beat-is",
+    course: REPORTER_WHAT_A_BEAT_IS_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "reporter",
+    seriesTitle: "The Reporter",
+    seriesOrder: 1,
+    seriesCode: "REPORT",
+    seriesPosition: "00",
   });
 
   // Genealogy for yourself and your community. Plan: plans/70-genealogy-course.md.
