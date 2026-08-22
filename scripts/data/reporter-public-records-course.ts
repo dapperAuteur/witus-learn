@@ -2334,7 +2334,15 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
 
 **The office that is unusual and worth knowing about.** Indiana has a Public Access Counselor, established in statute at Indiana Code 5-14-4, who answers questions about both acts and issues opinions on complaints. Not every state has an equivalent, and where one exists it is usually the cheapest path a reporter has: a written determination from a neutral office, obtained without a lawyer. The complaint procedure sits at Indiana Code 5-14-5.
 
-**Deadlines, and an explicit hedge.** Indiana's act sets short response deadlines that differ by how a request was delivered, with an in-person request answered faster than one sent by mail or electronically, and the complaint route to the counselor carries its own filing window measured from the denial. Those periods are exactly the kind of value a legislature amends, and this course does not print a number it has not read against the current statutory text. Read the current text of Indiana Code 5-14-3-9 and Indiana Code 5-14-5 before you rely on any deadline, including one you read in a training course. A source check is filed against this lesson so the numbers can be added once they are verified against the primary text.
+**The deadlines, read against the primary.** Indiana Code 5-14-3-9(c) sets two response periods, and which one applies depends on how the request arrived. A request from someone **physically present in the agency office, made by telephone, or asking for enhanced access** must be answered **within twenty-four hours**. A request **made by mail or facsimile** must be answered **within seven days**. Miss either and the statute says the request "is deemed denied," which is what makes the clock worth knowing: the denial you appeal may be a silence rather than a letter.
+
+**A wrinkle worth carrying, because it is the kind of thing that decides an argument.** The statutory subsection quoted above lists mail and facsimile. The Public Access Counselor's own handbook, explaining the same rule in plain language, writes the seven-day period as applying to a request "mailed or sent by facsimile **or email**," and calls the period seven **calendar** days (Indiana Public Access Counselor, 2017, pp. 3, 12). If you are arguing about an emailed request, know that the plain-language guidance and the quoted subsection do not use the same list, and go to the current statutory text before you rely on either.
+
+**Response is not production, and the difference is most of the frustration in this work.** The handbook is explicit that the act "requires only a response and not the actual production of records" inside those periods. Production is owed "within a reasonable time," judged against named factors: the size of the agency, the size of the request, the number of pending requests, the complexity of the request, and other operational considerations. An agency that acknowledges you in twenty-four hours and produces nothing for two months has not necessarily broken the deadline. It may have broken the reasonableness standard, which is a different and harder argument.
+
+**The complaint window.** Indiana Code 5-14-5-7 gives you **thirty days** to file a formal complaint with the Public Access Counselor, measured from **the denial**, or, for a meeting held secretly or without notice, from the date you received notice in fact that it happened. A complaint counts as filed on the date the counselor receives it, or on its postmark if it arrives more than thirty days after the denial. Thirty days is not long, and it starts at the denial rather than at the moment you notice the denial, so a constructive denial by silence starts a clock nobody sends you.
+
+**Now the standing caution, which has not gone away.** The figures above were read on 2026-08-22 against the Public Access Counselor's handbook, which reproduces the statutory text. That handbook is a 2017 edition. Deadlines are exactly the kind of value a legislature amends, so **check the current text at the Indiana General Assembly's own code site before you rely on any of it**, including this course. The links are in the sources below.
 
 **The general shape you will find in any state.** A statute defining public agency and public record. A list of exemptions, some mandatory and some discretionary. A response deadline. A fee schedule, often capping copy charges. Some route for challenging a denial, whether an ombudsman, the attorney general, or the courts. And a fee-shifting provision in some states that makes an agency pay a prevailing requester's costs, which is the provision that gives a small outlet any leverage at all.
 
@@ -2342,7 +2350,11 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
 
 :::reveal What does Indiana have that many states do not, and why does it matter to a reporter without a lawyer? ||| A Public Access Counselor, established at Indiana Code 5-14-4, who answers questions and issues opinions on complaints. It is a written determination from a neutral office obtained without litigation.
 
-:::reveal Why does this lesson refuse to print Indiana's response deadlines as numbers? ||| Because deadlines are exactly the kind of value a legislature amends, and the course does not assert a figure it has not read against the current statutory text. The reader is sent to Indiana Code 5-14-3-9 and 5-14-5.
+:::reveal Give Indiana's two APRA response periods and what triggers each. ||| Twenty-four hours for a requester physically present, telephoning, or asking for enhanced access; seven days for a request by mail or facsimile (Ind. Code 5-14-3-9(c)). Missing either means the request is deemed denied.
+
+:::reveal What is the difference between a response and production, and why does it matter? ||| The act requires only a RESPONSE inside those periods, not the records. Production is owed within a reasonable time, judged on the agency's size, the request's size and complexity, and the number of pending requests. An agency can meet the deadline and still hold the records for weeks.
+
+:::reveal How long do you have to complain to the Public Access Counselor, and when does the clock start? ||| Thirty days, from the denial itself (Ind. Code 5-14-5-7), not from when you noticed it. A constructive denial by silence therefore starts a clock nobody tells you about.
 
 :::reveal What four things does the homework ask you to write into your beat file about your own state? ||| The definition of a public record, the exemption list, the response deadline, and the appeal route, read from your state's own code rather than from a summary.
 
@@ -2355,7 +2367,11 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
 ## Sources
 - Access to Public Records Act, Ind. Code 5-14-3. https://iga.in.gov/laws/2025/ic/titles/5
 - Indiana Public Access Counselor, Ind. Code 5-14-4; complaint procedure, Ind. Code 5-14-5. https://www.in.gov/pac/
-- Reporters Committee for Freedom of the Press. (n.d.). *Open government guide*. https://www.rcfp.org/open-government-guide/`,
+- Reporters Committee for Freedom of the Press. (n.d.). *Open government guide*. https://www.rcfp.org/open-government-guide/
+- Indiana Public Access Counselor. (2017). *Handbook on Indiana's public access laws* (updated January 2017). Indiana Office of the Public Access Counselor. https://www.in.gov/pac/files/PAC-Handbook-2017.pdf
+- Access to Public Records Act, Ind. Code 5-14-3. Indiana General Assembly. https://iga.in.gov/laws/current/ic/titles/5#5-14-3
+- Public Access Counselor complaint procedure, Ind. Code 5-14-5. Indiana General Assembly. https://iga.in.gov/laws/current/ic/titles/5#5-14-5
+- Indiana Office of the Public Access Counselor. https://www.in.gov/pac/`,
     },
     {
       slug: "records-as-a-practice",

@@ -33,7 +33,21 @@ export async function listCourses(tenantId: string, opts: CatalogQuery = {}): Pr
   if (opts.featured) conds.push(eq(courses.isFeatured, true));
   if (opts.q) {
     const like = `%${opts.q}%`;
-    conds.push(or(ilike(courses.title, like), ilike(courses.description, like)) as SQL);
+    // Search the COURSE CODE as well as the prose. A learner who has seen "REPORT-00" on a card has
+    // been shown an identifier, and an identifier you cannot search is a worse identifier than none:
+    // it teaches the reader a handle and then refuses it. The code is not a stored column, it is
+    // rendered by formatCourseCode as `${seriesCode}-${seriesPosition}` (src/lib/series-code.ts), so
+    // the same concatenation is rebuilt here. Matching seriesCode on its own means a bare "REPORT"
+    // returns the whole track, which is what someone typing a prefix is asking for.
+    const code = sql`upper(${courses.seriesCode} || '-' || ${courses.seriesPosition})`;
+    conds.push(
+      or(
+        ilike(courses.title, like),
+        ilike(courses.description, like),
+        sql`${code} like ${`%${opts.q.trim().toUpperCase()}%`}`,
+        ilike(courses.seriesCode, like),
+      ) as SQL,
+    );
   }
 
   // Curriculum order needs the tenant's chosen category order, which lives on another table, so it

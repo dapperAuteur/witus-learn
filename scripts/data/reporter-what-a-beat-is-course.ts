@@ -41,7 +41,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
 
 **Parachute coverage is the alternative, and it is not nothing.** A reporter dropped into an unfamiliar subject for one big piece can do excellent work. What they cannot do is notice. Noticing requires a baseline, and a baseline is exactly what a beat is.
 
-**A disclosure, on page one, because this track teaches disclosure.** The author does documentation work for the organization that Free Press Indiana sits under. Free Press Indiana has not reviewed, endorsed, or sponsored this course. Its job posting and the 2025 Indiana Girl Report are cited here as public documents, nothing more. That line exists because the Society of Professional Journalists asks journalists to avoid conflicts real or perceived, and to disclose the unavoidable ones (Society of Professional Journalists, 2014). A journalism course that quietly skipped its own would be teaching one thing and doing another.
+**A disclosure, on page one, because this track teaches disclosure.** The author is a **Documenter with the Indianapolis Documenters program run by Mirror Indy**, a Free Press Indiana newsroom (https://indianapolis-in.documenters.org/). That is a real, ongoing relationship with the organization whose job posting prompted this track, and naming it is the point: a vague disclosure ("does documentation work for a related organization") is the kind a reader cannot check, which makes it decoration rather than disclosure. Neither Mirror Indy nor Free Press Indiana has reviewed, endorsed, or sponsored this course, and neither was asked to. The job posting and the 2025 Indiana Girl Report are cited here as public documents, nothing more. That line exists because the Society of Professional Journalists asks journalists to avoid conflicts real or perceived, and to disclose the unavoidable ones (Society of Professional Journalists, 2014). A journalism course that quietly skipped its own would be teaching one thing and doing another.
 
 :::reveal What can a reporter with a beat do that a reporter parachuted into the same subject cannot? ||| Notice. Telling a change from a constant requires a baseline, and the baseline is the accumulated history a beat produces. The parachuted reporter can still report the situation in front of them well.
 
@@ -54,7 +54,8 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
 - **Disclosure**: naming a relationship or stake that a reader could reasonably want to weigh, before they ask.
 
 ## Sources
-- Society of Professional Journalists. (2014). *SPJ code of ethics*. https://www.spj.org/spj-code-of-ethics/`,
+- Society of Professional Journalists. (2014). *SPJ code of ethics*. https://www.spj.org/spj-code-of-ethics/
+- Mirror Indy. (n.d.). *Indianapolis Documenters*. https://indianapolis-in.documenters.org/`,
     },
     {
       slug: "map-the-beat",
@@ -213,6 +214,32 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
             correctIndex: 0,
             explanation:
               "The SPJ code asks journalists to avoid conflicts real or perceived and disclose the unavoidable ones. A course that skipped its own would teach one thing and do another.",
+            sourceLessonSlug: "beat-not-story",
+          },
+          {
+            prompt: "Which organization is the author a Documenter for, and what is it?",
+            options: [
+              "Mirror Indy, a Free Press Indiana newsroom",
+              "Free Press Indiana directly, as a contracted reporter on the women and girls beat",
+              "The Indiana Youth Institute, which publishes the annual Girl Report cited in this track",
+              "The Society of Professional Journalists, whose ethics code the disclosure quotes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Through the Indianapolis Documenters program. Naming the specific newsroom is the point: the reader can go and check it.",
+            sourceLessonSlug: "beat-not-story",
+          },
+          {
+            prompt: "Why is a vague disclosure worse than a specific one?",
+            options: [
+              "A reader cannot check it",
+              "It takes up space in a lesson that would be better spent on the reporting method itself",
+              "Editors are required to reject any disclosure that does not name a legal entity",
+              "It implies the relationship is larger and more commercially significant than it really is",
+            ],
+            correctIndex: 0,
+            explanation:
+              "An unverifiable disclosure is decoration. Naming the newsroom and linking the program is what turns it into something a reader can test.",
             sourceLessonSlug: "beat-not-story",
           },
           {
