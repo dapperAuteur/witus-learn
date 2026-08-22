@@ -4087,6 +4087,10 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // coherent, defended entity choice.
       "map-your-own-stack",
       "choose-a-form-capstone",
+      // She Did the Work, wave 1. Twelve living sports-media careers integrated from network
+      // press-room bios, hall-of-fame citations, published honours lists and contemporaneous
+      // reporting into one account of how a closed profession opens.
+      "she-took-the-seat",
     ],
     lessons: [
       "2 · How we know: reading a record the enslavers wrote",
@@ -4173,6 +4177,12 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // findings: "did not find" kept distinct from "does not exist," no value asserted from memory,
       // disagreements flagged as claims to check against the primary record.
       "map-your-own-stack",
+      // She Did the Work, wave 1. Lesson 3 IS this claim as method: an ordinal claim has four
+      // moving parts, and the course walks the check (institutional record, contemporaneous
+      // report, displacement test) on its own subjects, then downgrades or cuts what fails it.
+      // Jayne Kennedy's Emmy year and Carol Tshabalala's 2010 World Cup credit are cut on that
+      // evidence, in the lessons, with the reasoning shown.
+      "she-took-the-seat",
     ],
     lessons: [
       "3 · The test: four questions before you draw an edge",
