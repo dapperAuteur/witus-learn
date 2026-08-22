@@ -209,6 +209,7 @@ import { REPORTER_READING_A_REPORT_COURSE } from "./data/reporter-reading-a-repo
 import { REPORTER_INTERVIEWING_COURSE } from "./data/reporter-interviewing-course";
 import { REPORTER_VERIFICATION_COURSE } from "./data/reporter-verification-on-deadline-course";
 import { REPORTER_MEDIA_LAW_COURSE } from "./data/reporter-media-law-course";
+import { REPORTER_SOLUTIONS_COURSE } from "./data/reporter-solutions-journalism-course";
 import { AFROCENTRICITY_COURSE } from "./data/afrocentricity-course";
 import { PAN_AFRICANISM_COURSE } from "./data/pan-africanism-course";
 import { ASIA_BEFORE_EUROPEAN_COLONIZATION_COURSE } from "./data/asia-before-european-colonization-course";
@@ -1024,6 +1025,31 @@ async function main() {
     seriesOrder: 6,
     seriesCode: "REPORT",
     seriesPosition: "05",
+  });
+
+  // REPORT-06. plans/68's reason: Free Press Indiana describes itself as solutions-focused, and the
+  // form is routinely confused with advocacy and with good-news filler. It has an actual method,
+  // which is what the course teaches: the four qualities, the two confusions, five named imposters
+  // each defined by a single missing quality, an evidence ladder, and the limitations section that
+  // makes the piece journalism rather than a brochure.
+  //
+  // The course prints NO audience-effect or efficacy figures. The research exists and is growing,
+  // this pass could not read the underlying studies against their primaries, and quoting an effect
+  // size it had not read would be the exact failure REPORT-02 teaches learners to catch. A source
+  // check is filed (report-sojo-evidence). Cross-links How the NAACP Learned to Win for the posture
+  // toward a response's failures: a losing campaign still buys something, and that is a finding.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "reporter-solutions-journalism",
+    course: REPORTER_SOLUTIONS_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "reporter",
+    seriesTitle: "The Reporter",
+    seriesOrder: 7,
+    seriesCode: "REPORT",
+    seriesPosition: "06",
   });
 
   // Genealogy for yourself and your community. Plan: plans/70-genealogy-course.md.

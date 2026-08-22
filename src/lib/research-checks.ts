@@ -898,6 +898,32 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "The Indiana attorney general's published guidance, if any exists on the point",
     ],
   },
+  {
+    key: "report-sojo-evidence",
+    course: "reporter-solutions-journalism",
+    lesson: "why-a-method",
+    quote:
+      "The course does NOT print audience-effect figures or efficacy statistics: the research exists and is growing, this pass could not read the underlying studies against their primaries.",
+    title: "Solutions journalism: what does the audience research actually show?",
+    severity: "low",
+    question:
+      "What does the published research on solutions journalism actually establish about audience effects, and with what effect sizes? Name two or three studies that can be read in full, give what each measured, in what population, and what it found, including any null or negative results.",
+    claim:
+      "REPORT-06 teaches solutions journalism as a method defined by four qualities and makes NO empirical claim about how audiences respond to it. The course deliberately prints no engagement figures, efficacy statistics, or effect sizes anywhere.",
+    stakes:
+      "Two-sided. If good evidence exists, a course that teaches rigor about other people's evidence should be able to state its own subject's evidence with the same discipline, and the omission currently makes the form look less established than it may be. If the evidence is thinner than advocates suggest, that is worth saying plainly in a course whose whole argument is that a claim gets labeled by the strength of what supports it. Either way the current silence is honest and incomplete.",
+    needs: [
+      "Two or three studies readable in full, with what each measured and in what population",
+      "The effect sizes, and whether the outcome was self-reported or behavioral",
+      "Any null or negative findings, which matter as much as the positive ones here",
+      "Whether the research was funded by an organization that advocates for the form, and whether that was disclosed",
+    ],
+    where: [
+      "The Solutions Journalism Network's own research page, read alongside who funded each item",
+      "Journalism studies journals, searching for solutions journalism and constructive journalism",
+      "Any systematic review or meta-analysis, which would settle the question faster than individual trials",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
