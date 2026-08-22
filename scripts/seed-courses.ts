@@ -210,6 +210,7 @@ import { REPORTER_INTERVIEWING_COURSE } from "./data/reporter-interviewing-cours
 import { REPORTER_VERIFICATION_COURSE } from "./data/reporter-verification-on-deadline-course";
 import { REPORTER_MEDIA_LAW_COURSE } from "./data/reporter-media-law-course";
 import { REPORTER_SOLUTIONS_COURSE } from "./data/reporter-solutions-journalism-course";
+import { REPORTER_PITCH_AND_SHAPES_COURSE } from "./data/reporter-pitch-and-shapes-course";
 import { AFROCENTRICITY_COURSE } from "./data/afrocentricity-course";
 import { PAN_AFRICANISM_COURSE } from "./data/pan-africanism-course";
 import { ASIA_BEFORE_EUROPEAN_COLONIZATION_COURSE } from "./data/asia-before-european-colonization-course";
@@ -1050,6 +1051,29 @@ async function main() {
     seriesOrder: 7,
     seriesCode: "REPORT",
     seriesPosition: "06",
+  });
+
+  // REPORT-07, the last course before the capstone. plans/68: pitching an enterprise project, plus
+  // newsletter, social-first and short video, "and choosing among them for a reason." The Free Press
+  // posting asks for social and video literacy alongside dailies and enterprise work, which is why
+  // the format lessons are in the track rather than treated as somebody else's specialism.
+  //
+  // It is a craft course and says so, which is why it carries fewer citations than the rest of the
+  // track rather than manufacturing them. Where it would otherwise make an empirical claim about
+  // audience behavior it declines to print a figure and sends the reader to their own outlet's
+  // analytics, for the same reason REPORT-06 declined on efficacy.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "reporter-pitch-and-shapes",
+    course: REPORTER_PITCH_AND_SHAPES_COURSE,
+    category: "Research & Reporting",
+    navigationMode: "linear",
+    seriesSlug: "reporter",
+    seriesTitle: "The Reporter",
+    seriesOrder: 8,
+    seriesCode: "REPORT",
+    seriesPosition: "07",
   });
 
   // Genealogy for yourself and your community. Plan: plans/70-genealogy-course.md.

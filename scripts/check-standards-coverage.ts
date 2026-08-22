@@ -109,6 +109,7 @@ const BACKLOG: Record<string, string> = {
   "reporter-verification-on-deadline": "OUT OF SCOPE for now, professional track for working reporters (plans/68)",
   "reporter-media-law": "OUT OF SCOPE for now, professional track for working reporters (plans/68)",
   "reporter-solutions-journalism": "OUT OF SCOPE for now, professional track for working reporters (plans/68)",
+  "reporter-pitch-and-shapes": "OUT OF SCOPE for now, professional track for working reporters (plans/68)",
 };
 
 const seed = readFileSync("scripts/seed-courses.ts", "utf-8");
