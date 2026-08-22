@@ -5,6 +5,44 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- ✅ **The Negro Leagues: Who Owned the Game** (\`content/negro-leagues\`, Culture & History; NO
+  migration, **re-run \`pnpm seed:courses\`**). BAM's note asked for the story of the Negro Leagues,
+  starting with baseball and branching to other sports, connected to Indianapolis and the Madam C. J.
+  Walker world. The version that got built treats the leagues as **firms** rather than as a tragedy
+  that ended in 1947, because that is the gap between the courses already shipped: \`two-racetracks\`
+  asks who is admitted to a sport, \`the-gym-and-the-color-line\` asks which line decides who plays,
+  and \`what-they-built\` reads Black business districts as economies. None of them reads an
+  **industry** that way. The civic question: **who owns the game, who collects the gate, and what
+  happens to those businesses when the door finally opens?**
+  6 sections, 19 teaching lessons, 6 quizzes, **490 pooled questions**, and it is the first course in
+  the catalog to report **zero findings** from \`pnpm audit:course --spec\`: every teaching section
+  carries a quiz sized to its own word density (74/86/79/81/94 serving 5, plus a 76-question final
+  serving 10), every quiz passes at 80, and no lesson is assessed only outside its own section.
+  **The evidence discipline is the course's real subject.** It teaches evidence CLASS, not just
+  facts: Overmyer's Yankee Stadium figures come from the Yankees' own cash ledgers and show
+  **$114,550 across fifteen years**, which the course stages directly against the endlessly repeated
+  and unfootnoted "$100,000 a year". Greenlee Field's famous **$100,000** is given as a promoter's
+  claim with **$40,000 in building permits** behind it. Rube Foster's cut of the gate is taught as
+  **contested across four credible sources** rather than resolved. Section 6 handles MLB's December
+  2020 designation of seven leagues and the May 2024 merge of 2,300+ players accurately, including
+  what is genuinely disputed: a career rate-statistic threshold of about **1,800 at-bats against
+  5,000**, an official record that **excludes the barnstorming games that paid the bills**, and two
+  reputable databases that currently disagree on the single-season batting record.
+  **Numbers deliberately refused, and taught as refusals:** any single figure for Foster's
+  percentage or Wilkinson's lighting system, the \$10,000 for Hank Aaron's contract, any Satchel
+  Paige sale price (two SABR pages contradict each other), what the Knicks paid Saperstein for Nat
+  Clifton (absent from the Hall of Fame, NBA.com and the standard history), the Gibson home-run
+  totals, and any headcount for jobs lost. Six of those hedges are filed as **source checks** in
+  \`src/lib/research-checks.ts\` rather than left as prose caveats.
+  The **Indianapolis** section is BAM's ask, and its most useful finding is a negative: no commercial
+  relationship between the Walker company and the ABCs could be documented, so the course says so
+  instead of implying one, and teaches the real link, which is that C. I. Taylor built a clubhouse
+  into his own Indiana Avenue premises **because Washington Park's lease denied his players the
+  locker rooms**. The **branch to other sports** is carried only where sourced, and the structural
+  finding is that in Black professional sport **baseball owned the real estate and football was a
+  tenant**: Fritz Pollard lost Dyckman Oval in 1938 when Alex Pompez leased it to a rival.
+  Mapped to the three \`catalog.*\` Common Core history-literacy claims (60 standards across 15
+  jurisdictions). **NOT yet in \`STAGED_COURSES\`**, so \`pnpm gen:citations\` is a later step.
 - ✅ **WELL infrastructure** (\`feat/well-infrastructure\`, plans/67 branch 1; NO migration):
   insert-only \`visibility\`/\`publishHoldReason\` on the authored-course seeder (public flip
   survives re-seeds); the private study loop actually works (enroll + complete + dashboard were
