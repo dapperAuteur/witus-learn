@@ -4052,6 +4052,11 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "pan-africanism",
       "afrocentricity",
       "training-the-colonizer",
+      // The Moors integrates Latin and Arabic narrative sources, the surviving documents (the
+      // Tudmir treaty, the Granada capitulations, the 1502 and 1567 decrees) and modern
+      // scholarship (Collins, Clarke, Bulliet, Burnett, Gutas, Harvey, Heng, Fuchs, Nance) into
+      // one account of al-Andalus, and states in its own voice what the record cannot establish.
+      "the-moors",
       // Culture and migration
       "great-migration-and-the-world",
       "hoodoo-tradition-of-resistance",
@@ -4152,6 +4157,10 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "asia-before-european-colonization",
       "precolumbian-mesoamerica",
       "pan-africanism",
+      // The Moors is this claim as its central method: lesson 11 downgrades four widely repeated
+      // claims against their sources (the Ibn Firnas flight, the 400,000-volume library, the "Dark
+      // Ages" frame, the tolerance paradise) and hands the learner a four-question test to reuse.
+      "the-moors",
       // Government-forms method course: test a government action against its enabling document
       // (did this body have the power?), the same corroborate-or-challenge move.
       "who-has-the-power",

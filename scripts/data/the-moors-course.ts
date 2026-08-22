@@ -1950,6 +1950,778 @@ export const THE_MOORS_COURSE: AuthoredCourse = {
         ],
       },
     },
-    // NEXTCHUNK
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 5 — 1492 and the afterlife of the word
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "1492-and-the-broken-guarantees",
+      title: "17 · 1492, and what the surrender actually promised",
+      section: "Section 5 · 1492 and the afterlife of the word",
+      body: `Granada surrendered to Fernando and Isabel on 2 January 1492. The interesting part is not the date. It is that the surrender was a negotiated contract, and that we can read it and watch it fail.
+
+**The capitulations.** The terms agreed before the handover were generous by the standards of the age. Granada's Muslims were to keep their religion, their mosques, their law and judges, their property, their language, and their customs. Those who wished to leave for North Africa could, with their goods. Nobody was to be forced to convert, and converts to Christianity were not to be insulted for it. This was not a sentimental gesture; it was the price of taking a defended city without a long siege.
+
+**The other 1492.** On 31 March 1492 the same monarchs issued the edict, usually called the Alhambra Decree, expelling Jews who would not convert from Castile and Aragon. Tens of thousands left; many converted and remained under permanent suspicion. Two things worth holding together: the guarantees given to Granada's Muslims and the expulsion of Iberia's Jews are the same season, the same crown, and, once you see what happens next, the same trajectory.
+
+**How the guarantee broke.** For about seven years the terms roughly held under Hernando de Talavera, the first archbishop of Granada, who favored persuasion and learning Arabic. Then **Cisneros**, Isabel's confessor and archbishop of Toledo, took a harder line: mass baptisms, pressure on the descendants of earlier converts, and public burnings of Arabic books. The result, entirely predictably, was revolt in the Albaicin quarter and then in the Alpujarras mountains in 1499 and 1500.
+
+**The reinterpretation.** The crown then made an argument worth studying, because it is a move governments still make. Since the Muslims of Granada had rebelled, they had broken the capitulations themselves, and the crown was released from its side. In **1501 and 1502** Castile ordered its Muslims to convert or leave, on terms that made leaving nearly impossible. Aragon followed in **1525 and 1526**. Within a generation there were, in law, no Muslims in Spain at all. There were only new Christians, and a state that did not believe them.
+
+**What this teaches beyond Spain.** A guarantee is only as strong as the willingness to keep it, and a party that wants out of a contract will usually look for a breach by the other side rather than repudiate it openly. Read the capitulations, then read the 1502 order, and the mechanism is completely visible in the documents.
+
+:::reveal What did the Granada capitulations of 1491 and 1492 guarantee? ||| Religion, mosques, law and judges, property, language, and customs, with free departure for those who wished to leave and no forced conversion. They were the price of taking a defended city without a siege.
+
+:::reveal What argument did the crown use to escape the capitulations? ||| That the Granadan revolts of 1499 and 1500 were themselves a breach, so the crown was released from its obligations. The conversion-or-exile orders followed in 1501 and 1502 in Castile and 1525 and 1526 in Aragon.
+
+## Vocabulary
+- **Capitulations of Granada**: the negotiated surrender terms guaranteeing religion, law, property, language, and customs to Granada's Muslims.
+- **Alhambra Decree**: the edict of 31 March 1492 expelling from Castile and Aragon those Jews who would not convert.
+- **Cisneros**: the archbishop of Toledo whose mass baptisms and book burnings in Granada triggered the revolts of 1499 and 1500.
+- **Reinterpretation of breach**: the crown's argument that revolt voided the capitulations, releasing it from terms it had signed.
+- **New Christian**: a convert, or the descendant of one, treated in law as Christian and in practice as suspect.
+
+## Sources
+- Harvey, L. P. (2005). *Muslims in Spain, 1500 to 1614*. University of Chicago Press.
+- Catlos, B. A. (2018). *Kingdoms of faith: A new history of Islamic Spain*. Basic Books.
+- Constable, O. R. (Ed.). (2012). *Medieval Iberia: Readings from Christian, Muslim, and Jewish sources* (2nd ed.). University of Pennsylvania Press.`,
+    },
+    {
+      slug: "the-moriscos",
+      title: "18 · The Moriscos, and the numbers we do and do not have",
+      section: "Section 5 · 1492 and the afterlife of the word",
+      body: `A **Morisco** was a Muslim of Iberia converted to Christianity, or the descendant of one. The word covers about a century of people the Spanish state had created by decree and then refused to accept.
+
+**Suspicion as a system.** The Inquisition had no authority over Muslims, who were outside the church, but full authority over baptized Christians. Forced conversion therefore did not remove a population from scrutiny; it moved that population into the jurisdiction that could prosecute it. Alongside this ran the statutes of **limpieza de sangre**, purity of blood, which barred people of Jewish or Muslim ancestry from offices, guilds, colleges, and religious orders. This is the point at which Iberian religious categories became inherited, which is why historians of race pay close attention to it.
+
+**1567.** A royal decree banned Arabic in speech and writing, ordered Moorish dress abandoned, prohibited public baths, and required houses to be left open on feast days so that Islamic practice could not be conducted privately. It was a program against a culture, not only against a creed.
+
+**The second Alpujarras war.** The 1567 measures produced a rising in the Alpujarras from 1568 to 1571, fought with great brutality on both sides and ending in defeat and the forced dispersal of Granada's Morisco population into other regions of Castile. Dispersal did not resolve the state's problem; it exported it.
+
+**The expulsion.** Between **1609 and 1614**, under Philip III, the Moriscos were expelled from Spain by a series of decrees. Most went to North Africa, some to France, some to the Ottoman lands. Many were not welcomed at their destinations, having been Christian by law and Spanish in language and habit for generations.
+
+**The number, honestly.** Henri Lapeyre's study, long the standard reference, put the total expelled at roughly 275,000 to 300,000, on the order of four percent of Spain's population. More recent work has proposed higher figures, in some cases much higher. **Give the range and name Lapeyre**, rather than picking one number: the count depends on which decrees you include, how you treat returnees and those who evaded expulsion, and how you read incomplete embarkation records.
+
+:::reveal Why did forced conversion increase rather than reduce state scrutiny of Muslims? ||| Because the Inquisition had no jurisdiction over Muslims, who were outside the church, but full jurisdiction over the baptized. Conversion moved the population into the court that could prosecute it.
+
+:::reveal How should the total of Moriscos expelled between 1609 and 1614 be stated? ||| As a range with its source: Lapeyre's roughly 275,000 to 300,000, with more recent work proposing higher figures. The count depends on which decrees, returnees, and evaders are included.
+
+## Vocabulary
+- **Morisco**: a Muslim of Iberia converted to Christianity, or a descendant of one, in the period after the forced conversions.
+- **Limpieza de sangre**: purity-of-blood statutes barring people of Jewish or Muslim ancestry from offices, guilds, colleges, and religious orders.
+- **The 1567 decree**: the ban on Arabic, Moorish dress, and public baths, with houses to be left open on feast days.
+- **Second Alpujarras war**: the rising of 1568 to 1571, ending in defeat and the dispersal of Granada's Moriscos across Castile.
+- **Lapeyre's estimate**: the long-standard figure of roughly 275,000 to 300,000 expelled, now contested by higher counts.
+
+## Sources
+- Harvey, L. P. (2005). *Muslims in Spain, 1500 to 1614*. University of Chicago Press.
+- Lapeyre, H. (1959). *Géographie de l'Espagne morisque*. SEVPEN.
+- García-Arenal, M., & Wiegers, G. (Eds.). (2014). *The expulsion of the Moriscos from Spain: A Mediterranean diaspora*. Brill.
+- Catlos, B. A. (2018). *Kingdoms of faith: A new history of Islamic Spain*. Basic Books.`,
+    },
+    {
+      slug: "the-afterlife-of-the-word",
+      title: "19 · The afterlife of the word",
+      section: "Section 5 · 1492 and the afterlife of the word",
+      body: `The Moriscos were gone by 1614. The word outlived them by four centuries and is still working, which is the last thing this course has to teach.
+
+**Maurophilia.** Almost as soon as real Muslims had been removed, Spanish literature filled with admirable, chivalrous, romantic Moors. Barbara Fuchs argues that this Moorish material was not a foreign import but a component of Spanish identity that the state was busy disavowing (Fuchs, 2009). A culture can expel a population and keep its clothes, its architecture, and its ballads, and Spain did.
+
+**The English stage.** English writers inherited the word without the history. On the early modern English stage a Moor could be a North African, a sub-Saharan African, a Muslim, or a stage villain, and often several at once. That imprecision is a fact about English usage, not evidence about the population of al-Andalus, and it is one of the main routes by which Moor came to read simply as black in later English.
+
+**Blackamoors and heraldry.** European heraldry, sculpture, and decorative art carry Moor's heads and blackamoor figures from the medieval period onward. They are evidence of how Europeans imagined and used the figure, in servants' costume and on coats of arms, rather than portraits from life.
+
+**Moorish Revival.** From the nineteenth century, architects across Europe and the Americas built in a Moorish style: synagogues, theaters, hotels, and bathhouses with horseshoe arches and stucco. The style is a nineteenth-century construction quoting al-Andalus, not a survival of it.
+
+**The Moorish Science Temple.** In the United States, Noble Drew Ali founded a temple in Newark in 1913 and established his movement in Chicago in 1925, teaching that Black Americans were of Moorish descent and that reclaiming that nationality was the route out of the condition slavery and segregation had made. Susan Nance's study reads the movement as a sophisticated synthesis drawing on Western esotericism, Freemasonry, and revisionist history, developed by and for southern migrants in 1920s Chicago (Nance, 2002). Its historical influence on later Black religious movements in America is substantial and well documented. **Two things stay separate here.** What a community teaches about its own origins is a matter for that community. And the specific modern legal claim, advanced by some self-described Moorish nationals, that a Moorish identity exempts a person from United States law has been rejected by American courts consistently; anyone acting on it should expect to lose.
+
+**Where the course leaves you.** The word began as a name for people in Roman North Africa, was pinned onto Muslim Iberia for eight centuries, hardened into a claim about bodies, survived the disappearance of everyone it originally described, and is still being used to make arguments. That is worth knowing on its own, and it is a pattern you will meet again with other words.
+
+:::reveal What does Barbara Fuchs argue about Spanish maurophilia? ||| That the Moorish material in Spanish literature and culture was not a foreign import but a component of Spanish identity, appearing in force just as the state was disavowing and expelling the population it came from.
+
+:::reveal What two things does the lesson insist on keeping separate about the Moorish Science Temple? ||| A community's teaching about its own origins, which is its own affair and historically influential, and the specific legal claim that Moorish identity exempts a person from United States law, which American courts have consistently rejected.
+
+## Vocabulary
+- **Maurophilia**: the taste for admirable, chivalrous Moorish figures in Spanish literature and culture after the expulsions.
+- **Blackamoor**: a figure in European heraldry and decorative art, evidence of how Europeans imagined the Moor rather than a portrait from life.
+- **Moorish Revival**: the nineteenth-century architectural style quoting al-Andalus, used for synagogues, theaters, hotels, and bathhouses.
+- **Moorish Science Temple**: the movement founded by Noble Drew Ali, in Newark in 1913 and Chicago from 1925, teaching Moorish descent as a route out of segregation.
+
+## Sources
+- Fuchs, B. (2009). *Exotic nation: Maurophilia and the construction of early modern Spain*. University of Pennsylvania Press.
+- Nance, S. (2002). Mystery of the Moorish Science Temple: Southern Blacks and American alternative spirituality in 1920s Chicago. *Religion and American Culture, 12*(2), 123-166. https://doi.org/10.1525/rac.2002.12.2.123
+- Heng, G. (2018). *The invention of race in the European Middle Ages*. Cambridge University Press.
+- Ramey, L. T. (2014). *Black legacies: Race and the European Middle Ages*. University Press of Florida.`,
+    },
+    {
+      slug: "quiz-1492-and-after",
+      title: "20 · Knowledge check: 1492 and the afterlife of the word",
+      section: "Section 5 · 1492 and the afterlife of the word",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "On what date did Granada surrender?",
+            options: ["2 January 1492", "31 March 1492, the same day as the edict against the Jews", "12 October 1492, the day of the Atlantic landfall", "2 January 1502, at the start of the conversion orders"],
+            correctIndex: 0,
+            explanation: "The surrender was a negotiated contract, which is what makes its later breach readable in the documents.",
+            sourceLessonSlug: "1492-and-the-broken-guarantees",
+          },
+          {
+            prompt: "Which monarchs took the surrender of Granada?",
+            options: ["Fernando and Isabel", "Philip III, who later ordered the expulsion of the Moriscos", "Alfonso VI, who had taken Toledo four centuries earlier", "Charles V, who extended the conversion orders to Aragon"],
+            correctIndex: 0,
+            explanation: "The same crown issued the Alhambra Decree against the Jews of Castile and Aragon less than three months later.",
+            sourceLessonSlug: "1492-and-the-broken-guarantees",
+          },
+          {
+            prompt: "What did the capitulations guarantee Granada's Muslims?",
+            options: ["Religion, law, property, language, and customs", "Exemption from taxation for three generations after the handover", "Representation in the Castilian cortes and the right to bear arms", "Autonomy under a Muslim governor answerable directly to the crown"],
+            correctIndex: 0,
+            explanation: "Plus their mosques and judges, free departure for those who wished to leave, and no forced conversion.",
+            sourceLessonSlug: "1492-and-the-broken-guarantees",
+          },
+          {
+            prompt: "Why were the surrender terms so generous?",
+            options: ["They were the price of avoiding a long siege", "Because Isabel had promised them to the Nasrid emir personally years earlier", "Because the papacy required them before authorizing the campaign", "Because Castile lacked the troops to garrison the city by force"],
+            correctIndex: 0,
+            explanation: "Taking a defended city without a siege had a cost, and the capitulations were it. Not a sentimental gesture.",
+            sourceLessonSlug: "1492-and-the-broken-guarantees",
+          },
+          {
+            prompt: "What did the Alhambra Decree of 31 March 1492 order?",
+            options: ["Expulsion of Jews who would not convert", "Expulsion of all Muslims from the newly conquered kingdom of Granada", "The closure of every mosque in Castile and Aragon within one year", "The confiscation of Arabic books from private libraries"],
+            correctIndex: 0,
+            explanation: "From Castile and Aragon. Tens of thousands left; many converted and remained under permanent suspicion.",
+            sourceLessonSlug: "1492-and-the-broken-guarantees",
+          },
+          {
+            prompt: "Who was Hernando de Talavera?",
+            options: ["Granada's first archbishop, who favored persuasion", "Isabel's confessor, who ordered the mass baptisms of 1499", "The Nasrid vizier who negotiated the terms of surrender", "The inquisitor general who extended jurisdiction over the Moriscos"],
+            correctIndex: 0,
+            explanation: "He learned Arabic and the terms roughly held for about seven years under him.",
+            sourceLessonSlug: "1492-and-the-broken-guarantees",
+          },
+          {
+            prompt: "What did Cisneros do in Granada?",
+            options: ["Mass baptisms and burnings of Arabic books", "Rebuilt the Alhambra as an archiepiscopal palace", "Negotiated a second set of capitulations with harsher terms", "Expelled the Muslim population to North Africa by sea"],
+            correctIndex: 0,
+            explanation: "Along with pressure on the descendants of earlier converts. The result was revolt in the Albaicin and then the Alpujarras.",
+            sourceLessonSlug: "1492-and-the-broken-guarantees",
+          },
+          {
+            prompt: "When did the first Granadan revolts occur?",
+            options: ["1499 and 1500", "1492, immediately after the handover of the city", "1568 to 1571, in the second Alpujarras war", "1609, at the announcement of the expulsion"],
+            correctIndex: 0,
+            explanation: "In the Albaicin quarter and then in the Alpujarras mountains, and entirely predictably given what preceded them.",
+            sourceLessonSlug: "1492-and-the-broken-guarantees",
+          },
+          {
+            prompt: "How did the crown justify abandoning the capitulations?",
+            options: ["It said the revolts were the breach", "It declared the terms void because the Nasrid emir had left Spain", "It obtained a papal dispensation releasing it from a sworn oath", "It argued the terms had applied only to the generation that signed them"],
+            correctIndex: 0,
+            explanation: "A party that wants out of a contract usually looks for a breach by the other side rather than repudiating openly.",
+            sourceLessonSlug: "1492-and-the-broken-guarantees",
+          },
+          {
+            prompt: "When did Castile order its Muslims to convert or leave?",
+            options: ["1501 and 1502", "1492, in the same season as the Alhambra Decree", "1525 and 1526, at the same time as Aragon", "1567, alongside the ban on Arabic and Moorish dress"],
+            correctIndex: 0,
+            explanation: "On terms that made leaving nearly impossible. Aragon followed in 1525 and 1526.",
+            sourceLessonSlug: "1492-and-the-broken-guarantees",
+          },
+          {
+            prompt: "When did Aragon follow Castile's conversion orders?",
+            options: ["1525 and 1526", "1501 and 1502, simultaneously with Castile", "1499, under pressure from Cisneros", "1609, at the start of the expulsion decrees"],
+            correctIndex: 0,
+            explanation: "Within a generation there were, in law, no Muslims in Spain at all. Only new Christians, and a state that did not believe them.",
+            sourceLessonSlug: "1492-and-the-broken-guarantees",
+          },
+          {
+            prompt: "What general lesson does the lesson draw from the capitulations?",
+            options: ["A guarantee is only as strong as the will to keep it", "A written contract is always safer than a spoken promise", "Religious guarantees are inherently less durable than property ones", "A treaty signed under military pressure has no legal force"],
+            correctIndex: 0,
+            explanation: "Read the capitulations, then the 1502 order, and the whole mechanism is visible in the documents.",
+            sourceLessonSlug: "1492-and-the-broken-guarantees",
+          },
+          {
+            prompt: "What is a Morisco?",
+            options: ["An Iberian Muslim converted to Christianity, or a descendant", "A Christian who had adopted Arabic language and dress under Muslim rule", "A Muslim living under Christian rule while keeping his religion", "A North African settler who arrived with the Almoravids"],
+            correctIndex: 0,
+            explanation: "The word covers about a century of people the Spanish state created by decree and then refused to accept.",
+            sourceLessonSlug: "the-moriscos",
+          },
+          {
+            prompt: "Why did the Inquisition gain authority over converted Muslims?",
+            options: ["Its jurisdiction ran over the baptized", "Because a papal bull specifically extended it to Granada in 1492", "Because the crown transferred civil cases to it after the revolts", "Because converts were legally foreigners until three generations had passed"],
+            correctIndex: 0,
+            explanation: "It had none over Muslims, who were outside the church. Conversion moved the population into the court that could prosecute it.",
+            sourceLessonSlug: "the-moriscos",
+          },
+          {
+            prompt: "What did the limpieza de sangre statutes do?",
+            options: ["Barred people of Jewish or Muslim ancestry from offices and guilds", "Required all new Christians to prove baptism before three witnesses", "Taxed converts at a higher rate than old Christians for two generations", "Prohibited marriage between old Christians and new Christians"],
+            correctIndex: 0,
+            explanation: "Colleges and religious orders too. This is where Iberian religious categories became inherited, which is why historians of race attend to it.",
+            sourceLessonSlug: "the-moriscos",
+          },
+          {
+            prompt: "What did the royal decree of 1567 ban?",
+            options: ["Arabic, Moorish dress, and public baths", "Trade with North Africa and possession of any vessel above a set tonnage", "Residence in Granada by anyone of Morisco descent", "Marriage between Moriscos without a license from the local bishop"],
+            correctIndex: 0,
+            explanation: "It also required houses to be left open on feast days, so Islamic practice could not be conducted privately.",
+            sourceLessonSlug: "the-moriscos",
+          },
+          {
+            prompt: "How does the lesson characterize the 1567 measures?",
+            options: ["A program against a culture, not only a creed", "A routine enforcement of rules already in force since 1502", "A local initiative by the Granada authorities without royal backing", "A concession that relaxed earlier restrictions on the Moriscos"],
+            correctIndex: 0,
+            explanation: "Language, dress, and bathing are not doctrines, and banning them targets a way of life rather than a belief.",
+            sourceLessonSlug: "the-moriscos",
+          },
+          {
+            prompt: "When was the second Alpujarras war fought?",
+            options: ["1568 to 1571", "1499 to 1500, immediately after Cisneros arrived", "1609 to 1614, during the expulsion decrees", "1525 to 1526, when Aragon ordered conversion"],
+            correctIndex: 0,
+            explanation: "Fought with great brutality on both sides, and ending in the forced dispersal of Granada's Moriscos into other regions of Castile.",
+            sourceLessonSlug: "the-moriscos",
+          },
+          {
+            prompt: "What did the dispersal of Granada's Moriscos achieve?",
+            options: ["It exported the state's problem rather than resolving it", "It ended Morisco resistance permanently across all of Spain", "It integrated the population within a single generation", "It reduced the Morisco population by roughly half"],
+            correctIndex: 0,
+            explanation: "Which is part of why the crown reached for expulsion four decades later.",
+            sourceLessonSlug: "the-moriscos",
+          },
+          {
+            prompt: "Under which king were the Moriscos expelled?",
+            options: ["Philip III", "Fernando, jointly with Isabel, in the year Granada fell", "Charles V, who had extended the conversion orders to Aragon", "Philip II, who had issued the 1567 decree"],
+            correctIndex: 0,
+            explanation: "By a series of decrees between 1609 and 1614.",
+            sourceLessonSlug: "the-moriscos",
+          },
+          {
+            prompt: "Over which years did the expulsion run?",
+            options: ["1609 to 1614", "1492 to 1502, from the surrender to the conversion order", "1568 to 1571, alongside the second Alpujarras war", "1525 to 1533, following the Aragonese decrees"],
+            correctIndex: 0,
+            explanation: "Most of those expelled went to North Africa, some to France, and some to the Ottoman lands.",
+            sourceLessonSlug: "the-moriscos",
+          },
+          {
+            prompt: "Why were many Moriscos unwelcome at their destinations?",
+            options: ["They were Christian in law and Spanish in language and habit", "Because North African rulers had signed treaties barring their entry", "Because they arrived without property, having been stripped at the ports", "Because they refused to settle outside the coastal cities"],
+            correctIndex: 0,
+            explanation: "Generations of forced conversion had made them strangers on both sides of the water.",
+            sourceLessonSlug: "the-moriscos",
+          },
+          {
+            prompt: "What figure did Lapeyre's study give for the total expelled?",
+            options: ["Roughly 275,000 to 300,000", "Roughly one million, which later work has revised downward", "Roughly 50,000, most of them from Valencia alone", "Roughly 2 million, about a quarter of Spain's population"],
+            correctIndex: 0,
+            explanation: "On the order of four percent of Spain's population. More recent work has proposed higher figures.",
+            sourceLessonSlug: "the-moriscos",
+          },
+          {
+            prompt: "How should the expulsion total be reported?",
+            options: ["As a range, with Lapeyre named", "As Lapeyre's figure alone, since it is the standard reference", "As the highest recent estimate, since research improves over time", "As unknowable, since no records of the embarkations survive"],
+            correctIndex: 0,
+            explanation: "The count depends on which decrees are included and how returnees, evaders, and incomplete embarkation records are treated.",
+            sourceLessonSlug: "the-moriscos",
+          },
+          {
+            prompt: "Which three factors make the expulsion count uncertain?",
+            options: ["Which decrees, returnees and evaders, and incomplete records", "Language barriers, lost archives, and deliberate falsification", "Plague deaths, shipwrecks, and unrecorded births at sea", "Currency conversion, calendar differences, and provincial boundaries"],
+            correctIndex: 0,
+            explanation: "Which is why a single confident number is the wrong shape of answer here.",
+            sourceLessonSlug: "the-moriscos",
+          },
+          {
+            prompt: "What is maurophilia?",
+            options: ["A taste for admirable Moorish figures in Spanish culture", "The nineteenth-century architectural revival of horseshoe arches", "A legal doctrine protecting converts from Inquisition scrutiny", "The scholarly study of Arabic manuscripts in early modern Spain"],
+            correctIndex: 0,
+            explanation: "It filled Spanish literature almost as soon as the actual Muslim population had been removed.",
+            sourceLessonSlug: "the-afterlife-of-the-word",
+          },
+          {
+            prompt: "What does Barbara Fuchs argue about that material?",
+            options: ["It was part of Spanish identity, not a foreign import", "That it was imported from French chivalric romance in the sixteenth century", "That it was written mainly by Moriscos who had escaped expulsion", "That it was suppressed by the Inquisition wherever it appeared"],
+            correctIndex: 0,
+            explanation: "A culture can expel a population and keep its clothes, its architecture, and its ballads, and Spain did (Fuchs, 2009).",
+            sourceLessonSlug: "the-afterlife-of-the-word",
+          },
+          {
+            prompt: "On the early modern English stage, a Moor could be what?",
+            options: ["Several things at once, often imprecisely", "Strictly a North African Muslim, by theatrical convention", "Strictly a sub-Saharan African, distinguished from a Turk", "Only a comic figure, since tragic roles required European characters"],
+            correctIndex: 0,
+            explanation: "North African, sub-Saharan African, Muslim, or stage villain. That imprecision is a fact about English usage, not evidence about al-Andalus.",
+            sourceLessonSlug: "the-afterlife-of-the-word",
+          },
+          {
+            prompt: "Why does English stage usage matter to this course?",
+            options: ["It is a main route by which Moor came to read as black", "Because English playwrights had firsthand knowledge of al-Andalus", "Because it preserves the original medieval Iberian sense of the word", "Because it was translated back into Spanish and changed usage there"],
+            correctIndex: 0,
+            explanation: "English writers inherited the word without the history, and the imprecision traveled with it.",
+            sourceLessonSlug: "the-afterlife-of-the-word",
+          },
+          {
+            prompt: "What are blackamoor figures in European art evidence of?",
+            options: ["How Europeans imagined and used the figure", "The actual appearance of individual Andalusi rulers", "The presence of African communities in the towns where they were made", "Direct artistic exchange between Iberia and North Africa"],
+            correctIndex: 0,
+            explanation: "They appear in servants' costume and on coats of arms. Not portraits from life.",
+            sourceLessonSlug: "the-afterlife-of-the-word",
+          },
+          {
+            prompt: "What is the Moorish Revival?",
+            options: ["A nineteenth-century architectural style quoting al-Andalus", "A twentieth-century movement to restore Andalusi manuscripts", "The Almohad program of rebuilding mosques on a unified plan", "The Spanish state's readmission of Morisco descendants after 1900"],
+            correctIndex: 0,
+            explanation: "Synagogues, theaters, hotels, and bathhouses with horseshoe arches and stucco. A construction quoting al-Andalus, not a survival of it.",
+            sourceLessonSlug: "the-afterlife-of-the-word",
+          },
+          {
+            prompt: "Where and when did Noble Drew Ali found his first temple?",
+            options: ["Newark, 1913", "Chicago, 1925, where the movement was later headquartered", "Detroit, 1930, after the founder's death", "Philadelphia, 1919, among returning veterans"],
+            correctIndex: 0,
+            explanation: "He established the movement in Chicago in 1925, which is where Nance's study locates its development.",
+            sourceLessonSlug: "the-afterlife-of-the-word",
+          },
+          {
+            prompt: "What did the Moorish Science Temple teach about Black Americans?",
+            options: ["That they were of Moorish descent", "That they were descended from the ancient Egyptians specifically", "That they should emigrate to North Africa to reclaim citizenship", "That racial categories should be abolished rather than reclaimed"],
+            correctIndex: 0,
+            explanation: "And that reclaiming that nationality was the route out of the condition slavery and segregation had made.",
+            sourceLessonSlug: "the-afterlife-of-the-word",
+          },
+          {
+            prompt: "How does Susan Nance read the movement?",
+            options: ["A synthesis of esotericism, Freemasonry, and revisionist history", "A direct transplant of North African Sufi practice into Chicago", "A political organization with a religious veneer added for legal cover", "A short-lived movement with no influence on later Black religion"],
+            correctIndex: 0,
+            explanation: "Developed by and for southern migrants in 1920s Chicago (Nance, 2002). Its influence on later Black religious movements is substantial.",
+            sourceLessonSlug: "the-afterlife-of-the-word",
+          },
+          {
+            prompt: "What has been the outcome of the Moorish-national exemption claim in American courts?",
+            options: ["Courts have consistently rejected it", "Courts have accepted it in several federal circuits since the 1990s", "Courts have declined to rule, treating it as a political question", "Courts have upheld it for tax matters but not for criminal ones"],
+            correctIndex: 0,
+            explanation: "The claim that a Moorish identity exempts a person from United States law loses. Anyone acting on it should expect that outcome.",
+            sourceLessonSlug: "the-afterlife-of-the-word",
+          },
+          {
+            prompt: "Which two things does the lesson keep separate?",
+            options: ["A community's teaching about its origins, and a legal exemption claim", "The Newark temple and the Chicago temple, which had different doctrines", "The founder's teaching and the movement's later organizational history", "Nance's scholarly account and the movement's own published texts"],
+            correctIndex: 0,
+            explanation: "The first is the community's own affair and historically influential; the second is a specific claim courts have rejected.",
+            sourceLessonSlug: "the-afterlife-of-the-word",
+          },
+          {
+            prompt: "How does the course summarize the whole arc of the word?",
+            options: ["A regional name that hardened into a claim about bodies", "A self-designation that Europeans adopted and then abandoned", "A religious term that became a purely geographic one over time", "A legal category invented in 1502 and abolished in 1614"],
+            correctIndex: 0,
+            explanation: "It survived the disappearance of everyone it originally described and is still being used to make arguments.",
+            sourceLessonSlug: "the-afterlife-of-the-word",
+          },
+          {
+            prompt: "Why did Spain expel the Moriscos rather than continue prosecuting them?",
+            options: ["Dispersal had exported the problem without solving it", "Because the Inquisition had lost jurisdiction over baptized Christians", "Because North African rulers had offered payment for their return", "Because the 1567 decree had been struck down as unlawful"],
+            correctIndex: 0,
+            explanation: "The second Alpujarras war ended in dispersal across Castile, and four decades later the crown reached for expulsion instead.",
+            sourceLessonSlug: "the-moriscos",
+          },
+          {
+            prompt: "The capitulations and the Alhambra Decree share what?",
+            options: ["The same season, the same crown, and the same trajectory", "The same legal instrument, issued as two clauses of one document", "The same target population, Iberian Muslims of Granada", "The same author, Cisneros, in his capacity as royal confessor"],
+            correctIndex: 0,
+            explanation: "Guarantees to Granada's Muslims in January and expulsion of the Jews in March, from the same monarchs in the same year.",
+            sourceLessonSlug: "1492-and-the-broken-guarantees",
+          },
+          {
+            prompt: "What did the terms allow those who wished to leave Granada?",
+            options: ["Departure for North Africa with their goods", "Compensation from the crown for property left behind", "Resettlement anywhere in Castile at the crown's expense", "A ten-year period in which to decide whether to stay"],
+            correctIndex: 0,
+            explanation: "The later conversion orders offered exile on terms that made leaving nearly impossible, which is the contrast to notice.",
+            sourceLessonSlug: "1492-and-the-broken-guarantees",
+          },
+          {
+            prompt: "Roughly how long did the capitulations hold in practice?",
+            options: ["About seven years", "About fifty years, until the 1550s", "About six months, until the Alhambra Decree", "About twenty-five years, until the Aragonese orders"],
+            correctIndex: 0,
+            explanation: "Under Hernando de Talavera, before Cisneros took a harder line.",
+            sourceLessonSlug: "1492-and-the-broken-guarantees",
+          },
+          {
+            prompt: "In law, how many Muslims were there in Spain after the conversion orders?",
+            options: ["None", "Only those in Aragon, until the 1525 decrees", "Only those who had paid a special exemption fee", "About a third of the previous population, in Granada alone"],
+            correctIndex: 0,
+            explanation: "Only new Christians, and a state that did not believe them. The legal category was abolished, the population was not.",
+            sourceLessonSlug: "1492-and-the-broken-guarantees",
+          },
+          {
+            prompt: "Where did most expelled Moriscos go?",
+            options: ["North Africa", "France, which accepted them under a treaty with Spain", "The Ottoman lands, which is where the largest communities formed", "The Spanish possessions in the Americas"],
+            correctIndex: 0,
+            explanation: "Some went to France and some to the Ottoman lands, but North Africa took the largest share.",
+            sourceLessonSlug: "the-moriscos",
+          },
+          {
+            prompt: "Why do historians of race attend to limpieza de sangre?",
+            options: ["It made religious categories inherited", "Because it was the first legislation anywhere to use the word race", "Because it applied only to Muslims and not to converts from Judaism", "Because it was struck down within a generation of its introduction"],
+            correctIndex: 0,
+            explanation: "Ancestry, not belief, became the disqualifying fact, which is the hinge the whole argument about early modern race turns on.",
+            sourceLessonSlug: "the-moriscos",
+          },
+          {
+            prompt: "What is the relationship between the Moorish Revival and al-Andalus?",
+            options: ["It quotes al-Andalus rather than continuing it", "It preserves building techniques transmitted without a break since 1492", "It was designed by Morisco descendants returning from North Africa", "It was an official Spanish state program of historical restoration"],
+            correctIndex: 0,
+            explanation: "A nineteenth-century construction using horseshoe arches and stucco, built across Europe and the Americas.",
+            sourceLessonSlug: "the-afterlife-of-the-word",
+          },
+          {
+            prompt: "What pattern does the course say you will meet again with other words?",
+            options: ["A label outliving everyone it described and still arguing", "A word narrowing in meaning until it becomes purely technical", "A self-designation being adopted by outsiders without distortion", "A term disappearing entirely once its referent is gone"],
+            correctIndex: 0,
+            explanation: "Roman regional name, then eight centuries pinned onto Muslim Iberia, then a claim about bodies, then a live modern argument.",
+            sourceLessonSlug: "the-afterlife-of-the-word",
+          },
+          {
+            prompt: "What made the Morisco position legally distinctive?",
+            options: ["Christian by law, suspect in practice", "Muslim by law, tolerated in practice under the capitulations", "Foreign by law, with the rights of resident aliens", "Exempt from Inquisition jurisdiction as recent converts"],
+            correctIndex: 0,
+            explanation: "The state had created the category by decree and then declined to accept the people in it.",
+            sourceLessonSlug: "the-moriscos",
+          },
+          {
+            prompt: "Requiring houses to be left open on feast days was aimed at what?",
+            options: ["Private religious practice", "Tax assessment of household goods", "Detecting concealed weapons after the revolts", "Enforcing the ban on Arabic books held in private libraries"],
+            correctIndex: 0,
+            explanation: "If practice cannot be conducted privately, it cannot be conducted at all, which is what makes the measure cultural rather than doctrinal.",
+            sourceLessonSlug: "the-moriscos",
+          },
+          {
+            prompt: "The Albaicin is best described as what?",
+            options: ["A quarter of Granada where revolt broke out", "A mountain range south of Granada where the risings were fought", "The archbishop's palace complex built after the surrender", "The port from which expelled Moriscos embarked for North Africa"],
+            correctIndex: 0,
+            explanation: "The revolt spread from there to the Alpujarras mountains in 1499 and 1500.",
+            sourceLessonSlug: "1492-and-the-broken-guarantees",
+          },
+          {
+            prompt: "What is the most defensible way to describe Moor today?",
+            options: ["A label with a history, not a people with a lineage", "A synonym for North African Muslim in every historical period", "An obsolete term with no current usage worth discussing", "A precise ethnic designation recoverable from medieval sources"],
+            correctIndex: 0,
+            explanation: "That is the conclusion the whole course builds toward, from the Roman ethnonym to the modern courtroom.",
+            sourceLessonSlug: "the-afterlife-of-the-word",
+          },
+          {
+            prompt: "The Spanish state's treatment of the Moriscos illustrates which sequence?",
+            options: ["Convert, suspect, restrict, disperse, expel", "Expel, readmit, tax, integrate", "Tolerate, tax, enfranchise, assimilate", "Segregate, license, deport, compensate"],
+            correctIndex: 0,
+            explanation: "Each step followed from the failure of the one before it, ending with the decrees of 1609 to 1614.",
+            sourceLessonSlug: "the-moriscos",
+          },
+          {
+            prompt: "What did the capitulations say about people who converted to Christianity?",
+            options: ["They were not to be insulted for it", "They were to receive a grant of land from the crown", "They forfeited the protections given to those who stayed Muslim", "They had to leave Granada within a year of their baptism"],
+            correctIndex: 0,
+            explanation: "Which is a small clause worth noticing, since pressure on the descendants of earlier converts is exactly what Cisneros applied.",
+            sourceLessonSlug: "1492-and-the-broken-guarantees",
+          },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // FINAL — pools 40, serves 10
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "final-exam-the-moors",
+      title: "21 · Final assessment",
+      section: "Final assessment",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 10,
+        questions: [
+          {
+            prompt: "The single most important fact about the word Moor is that it is what?",
+            options: ["An outsider's label, never a self-designation", "The Arabic name for the population of al-Andalus", "A Roman legal category revived in the fifteenth century", "A translation of the Amazigh people's own name for themselves"],
+            correctIndex: 0,
+            explanation: "Nobody inside the category maintained it, which is why it never had to be coherent across its nine centuries of use.",
+            sourceLessonSlug: "the-word-and-its-origin",
+          },
+          {
+            prompt: "Latin Maurus originally denoted an inhabitant of where?",
+            options: ["Mauretania", "The kingdom of Granada under its Nasrid emirs", "The Sahara south of the Atlas mountains", "Any territory under Muslim rule in the western Mediterranean"],
+            correctIndex: 0,
+            explanation: "Roman northwest Africa, roughly modern Morocco and western Algeria. Strabo reports Mauri as a self-designation.",
+            sourceLessonSlug: "the-word-and-its-origin",
+          },
+          {
+            prompt: "The Portuguese triad of white, land, and black Moors demonstrates what?",
+            options: ["The category covered several populations", "That Portuguese sources were the first to use color terms", "That the term had narrowed to mean sub-Saharan Africans only", "That Portugal classified people by trading partner rather than origin"],
+            correctIndex: 0,
+            explanation: "It included people the writers saw as black and was not limited to them, or the qualifying adjectives would have carried no information.",
+            sourceLessonSlug: "whose-meaning-when",
+          },
+          {
+            prompt: "Which group eventually formed the largest Muslim population of al-Andalus?",
+            options: ["Muwalladun, local converts and their descendants", "Amazigh settlers arriving continuously from North Africa", "Arab lineages descended from the original conquerors", "Saqaliba brought through Frankish and Italian intermediaries"],
+            correctIndex: 0,
+            explanation: "Bulliet dated the conversion curve indirectly from Arabic names in biographical dictionaries, an argued reconstruction rather than a count.",
+            sourceLessonSlug: "who-was-actually-in-al-andalus",
+          },
+          {
+            prompt: "The central source problem for the 711 conquest is what?",
+            options: ["No Muslim account survives from the time", "The Arabic and Latin accounts contradict each other on every point", "All the eyewitness accounts were destroyed in the 1009 civil war", "The only surviving source is a Byzantine chronicle written in Greek"],
+            correctIndex: 0,
+            explanation: "The Arabic narratives are ninth century and later, so a detailed retelling of 711 is a retelling of the ninth century.",
+            sourceLessonSlug: "the-crossing-of-711",
+          },
+          {
+            prompt: "The Treaty of Tudmir shows that towns commonly changed hands how?",
+            options: ["By negotiated agreement", "By storm, after sieges lasting several months", "By mass conversion of the inhabitants before any fighting", "By purchase, with the crown compensating displaced landowners"],
+            correctIndex: 0,
+            explanation: "Theodemir kept his churches, property, and law in exchange for tribute and submission.",
+            sourceLessonSlug: "the-crossing-of-711",
+          },
+          {
+            prompt: "Abd al-Rahman I mattered because he was what?",
+            options: ["An Umayyad survivor of the Abbasid overthrow", "The Abbasid governor sent to pacify a rebellious province", "An Amazigh commander who broke with the Arab elite", "A Visigothic noble who converted and claimed the throne"],
+            correctIndex: 0,
+            explanation: "His arrival in 756 made al-Andalus the seat of a rival dynasty rather than a province governed from elsewhere.",
+            sourceLessonSlug: "emirate-to-caliphate",
+          },
+          {
+            prompt: "Cordoba claimed the caliphate in 929 chiefly because of what?",
+            options: ["The Fatimids had claimed it first", "The Abbasid caliphate in Baghdad had collapsed", "A council of Andalusi jurists demanded the title", "Byzantium refused to receive an embassy from a mere emir"],
+            correctIndex: 0,
+            explanation: "Cordoba could not concede that ground to a rival dynasty in the Maghreb.",
+            sourceLessonSlug: "emirate-to-caliphate",
+          },
+          {
+            prompt: "The 400,000-volume library figure fails which test?",
+            options: ["No document that could establish it survives", "It is contradicted by a surviving catalog from the period", "It was first published in the nineteenth century by a forger", "It refers to a different library, in Baghdad rather than Cordoba"],
+            correctIndex: 0,
+            explanation: "No catalog survives, and the collection was dispersed or purged under al-Mansur and destroyed in the civil war.",
+            sourceLessonSlug: "cordoba-and-its-numbers",
+          },
+          {
+            prompt: "Which claim about Cordoba survives scrutiny?",
+            options: ["Paper, street lighting, running water, and professional scholars", "A population of one million at the height of the caliphate", "The largest library in recorded history before the modern era", "The first university in the world, predating Bologna by two centuries"],
+            correctIndex: 0,
+            explanation: "That comparison with contemporary Latin Europe holds. The numbers attached to it almost never do.",
+            sourceLessonSlug: "cordoba-and-its-numbers",
+          },
+          {
+            prompt: "Al-Zahrawi's contribution is best described as what?",
+            options: ["A surgical encyclopedia translated into Latin and taught for centuries", "The first hospital founded anywhere in the Islamic world", "The introduction of Greek medicine to al-Andalus from Baghdad", "A refutation of Galen that reoriented European anatomy"],
+            correctIndex: 0,
+            explanation: "Named author, extant text, documented translation, traceable readership. Every link is separately checkable.",
+            sourceLessonSlug: "learning-in-al-andalus",
+          },
+          {
+            prompt: "Why must an honest account note that Maimonides left al-Andalus?",
+            options: ["Otherwise a refugee is cited as proof of hospitality", "Because his Andalusi works contradict his Egyptian ones", "Because his departure disproves that he was born in Cordoba", "Because he returned later and the exile was therefore temporary"],
+            correctIndex: 0,
+            explanation: "His family fled Almohad rule, and he wrote his major works in Egypt.",
+            sourceLessonSlug: "learning-in-al-andalus",
+          },
+          {
+            prompt: "Ibn Sina belongs to which category in this course?",
+            options: ["A scholar of the wider Islamic world, not an Andalusi", "An Andalusi philosopher of the Ibn Rushd generation", "A Toledo translator working from Arabic into Latin", "An Almohad jurist who codified the movement's doctrine"],
+            correctIndex: 0,
+            explanation: "He was Persian and never went to Iberia. Keeping the boundary makes the Andalusi claim checkable and therefore stronger.",
+            sourceLessonSlug: "learning-in-al-andalus",
+          },
+          {
+            prompt: "What made Toledo after 1085 productive for translation?",
+            options: ["Its libraries and Arabic readers remained", "Castile imported a translation college staffed from Baghdad", "The papacy funded a permanent scriptorium in the city", "The Almoravids granted it an exemption from religious restrictions"],
+            correctIndex: 0,
+            explanation: "A conquered city that keeps its books and the people who can read them is the rare condition this work needs.",
+            sourceLessonSlug: "the-translation-pipeline",
+          },
+          {
+            prompt: "Burnett's argument about the Toledo translations is what?",
+            options: ["They follow a coherent program", "They are unreliable versions of their Arabic originals", "They were produced in Sicily and misattributed to Toledo", "They were made from Hebrew intermediaries rather than Arabic"],
+            correctIndex: 0,
+            explanation: "Gerard of Cremona and Dominicus Gundissalinus concentrated on different fields, and Gerard's output follows a curriculum.",
+            sourceLessonSlug: "the-translation-pipeline",
+          },
+          {
+            prompt: "Which is the defensible version of the transmission claim?",
+            options: ["Greek and Arabic work entered Latin Europe through Iberia and Sicily", "The Moors single-handedly ended European ignorance", "Every classical text Europe possesses arrived through al-Andalus", "Latin Europe produced no original learning before the Toledo translations"],
+            correctIndex: 0,
+            explanation: "In the twelfth and thirteenth centuries, transforming the universities. True, and much harder to knock down.",
+            sourceLessonSlug: "the-translation-pipeline",
+          },
+          {
+            prompt: "What is wrong with the claim that the Moors ended Europe's Dark Ages?",
+            options: ["The frame itself is one medievalists reject", "The chronology is off by roughly two centuries", "The transmission ran the other way, from Europe to al-Andalus", "No translations reached Europe before the fifteenth century"],
+            correctIndex: 0,
+            explanation: "The early medieval centuries produced law, agriculture, architecture, and institutions the label hides.",
+            sourceLessonSlug: "where-the-claims-outrun-the-evidence",
+          },
+          {
+            prompt: "The Ibn Firnas flight account comes from where?",
+            options: ["Al-Maqqari, roughly seven centuries later", "A ninth-century Cordoban court chronicle", "The Chronicle of 754, written close to the events", "Gerard of Cremona's Toledo translations"],
+            correctIndex: 0,
+            explanation: "No independent contemporary source describes it, and the surviving contemporary verse is satire rather than a flight report.",
+            sourceLessonSlug: "where-the-claims-outrun-the-evidence",
+          },
+          {
+            prompt: "The four-question test for an impressive claim asks about what?",
+            options: ["First written appearance, gap, independence, and what it requires", "Author, publisher, date, and edition", "Motive, opportunity, corroboration, and consequence", "Language, archive, manuscript count, and provenance"],
+            correctIndex: 0,
+            explanation: "The last one is sharpest: does the strongest version require anything the sources do not contain?",
+            sourceLessonSlug: "where-the-claims-outrun-the-evidence",
+          },
+          {
+            prompt: "Two texts repeating one original count as how much evidence?",
+            options: ["One", "Two, since they were written independently of each other", "Three, counting the lost original as a separate witness", "None, since neither can be checked against the other"],
+            correctIndex: 0,
+            explanation: "An independent source is one that is not copying the first, however far apart the two were written.",
+            sourceLessonSlug: "where-the-claims-outrun-the-evidence",
+          },
+          {
+            prompt: "The caliphate of Cordoba was formally abolished in which year?",
+            options: ["1031", "1009, at the outbreak of the civil war", "1085, when Toledo fell to Castile", "1086, after the Almoravid victory at Sagrajas"],
+            correctIndex: 0,
+            explanation: "The fitna began in 1009, and roughly two dozen taifa states replaced the caliphate afterward.",
+            sourceLessonSlug: "fitna-and-the-taifas",
+          },
+          {
+            prompt: "The parias system consisted of what?",
+            options: ["Tribute paid by taifa rulers to Christian kingdoms", "Taxes levied on Christian subjects within al-Andalus", "Ransoms exchanged for captives taken in frontier raiding", "Tolls charged on the trans-Saharan gold caravans"],
+            correctIndex: 0,
+            explanation: "The gold financed churches, castles, and armies in the north, which is how the picture of a permanent religious war falls apart.",
+            sourceLessonSlug: "fitna-and-the-taifas",
+          },
+          {
+            prompt: "After winning at Sagrajas in 1086, the Almoravids did what?",
+            options: ["Deposed the taifa rulers and annexed al-Andalus", "Withdrew to Marrakesh with the agreed payment", "Restored the Umayyad caliphate under a new claimant", "Signed a permanent frontier treaty with Alfonso VI"],
+            correctIndex: 0,
+            explanation: "They judged the taifa rulers decadent and their taxation unlawful, which is the standard risk of inviting a foreign army in.",
+            sourceLessonSlug: "almoravids-and-almohads",
+          },
+          {
+            prompt: "Why does the course refuse to state the Almoravid conquest of Ghana as fact?",
+            options: ["Conrad and Fisher argued the sources do not support it", "Because no Almoravid presence in the Sahel is documented at all", "Because the date 1076 has been shown to be a scribal error", "Because Ghana's own records contradict the Arabic ones"],
+            correctIndex: 0,
+            explanation: "Other scholars defend a version of Almoravid pressure on Ghana, so the presence is real and the conquest is disputed.",
+            sourceLessonSlug: "almoravids-and-almohads",
+          },
+          {
+            prompt: "Almohad rule is the hardest counterexample to which claim?",
+            options: ["That al-Andalus was uniformly tolerant", "That Amazigh dynasties ruled al-Andalus after the caliphate", "That North African powers intervened in Iberian politics", "That the dhimmi framework existed in the Islamic west"],
+            correctIndex: 0,
+            explanation: "Jews and Christians faced conversion, exile, or death, and Maimonides was among those who left.",
+            sourceLessonSlug: "almoravids-and-almohads",
+          },
+          {
+            prompt: "Las Navas de Tolosa in 1212 produced what?",
+            options: ["The collapse of Almohad power in Iberia", "The Almohad victory that secured al-Andalus for a century", "The end of Almoravid rule and the rise of the Almohads", "The surrender of Granada to Castile and Aragon"],
+            correctIndex: 0,
+            explanation: "Cordoba fell in 1236, Valencia in 1238, and Seville in 1248, all within a dozen years.",
+            sourceLessonSlug: "almoravids-and-almohads",
+          },
+          {
+            prompt: "Ríos Saloma argues the Reconquista framing was built when?",
+            options: ["Between the sixteenth and nineteenth centuries", "In the eighth century, immediately after the conquest", "In the eleventh century, to justify the taking of Toledo", "In the twentieth century, by Franco-era historians alone"],
+            correctIndex: 0,
+            explanation: "By historians and nationalists, becoming a load-bearing part of Spanish national self-description.",
+            sourceLessonSlug: "reconquista-the-word-and-the-thing",
+          },
+          {
+            prompt: "On the convivencia dispute, this course does what?",
+            options: ["Declares no winner and names both sides", "Endorses Menocal on the literary evidence", "Endorses Fernández-Morera on the legal evidence", "Treats the whole dispute as a disagreement about tone"],
+            correctIndex: 0,
+            explanation: "It notes what both sides mostly concede: structural legal inequality, and documented collaboration in specific checkable places.",
+            sourceLessonSlug: "reconquista-the-word-and-the-thing",
+          },
+          {
+            prompt: "The Granada capitulations guaranteed which combination?",
+            options: ["Religion, mosques, law, property, language, and customs", "Political representation, tax exemption, and the right to bear arms", "Autonomy under a Muslim governor answerable to the crown", "Free passage to North Africa for the entire population"],
+            correctIndex: 0,
+            explanation: "Plus free departure for those who wished to leave and no forced conversion. They held roughly seven years.",
+            sourceLessonSlug: "1492-and-the-broken-guarantees",
+          },
+          {
+            prompt: "The crown escaped the capitulations by arguing what?",
+            options: ["That the revolts of 1499 and 1500 were themselves the breach", "That the Nasrid emir's departure had voided the agreement", "That a papal dispensation released it from its oath", "That the terms had expired after ten years by their own wording"],
+            correctIndex: 0,
+            explanation: "Conversion-or-exile orders followed in Castile in 1501 and 1502 and in Aragon in 1525 and 1526.",
+            sourceLessonSlug: "1492-and-the-broken-guarantees",
+          },
+          {
+            prompt: "Forced conversion had which perverse effect on state scrutiny?",
+            options: ["It brought the population under Inquisition jurisdiction", "It removed the population from all official record-keeping", "It ended the poll tax and with it the state's fiscal interest", "It transferred jurisdiction from the crown to the local bishops"],
+            correctIndex: 0,
+            explanation: "The Inquisition had no authority over Muslims and full authority over the baptized.",
+            sourceLessonSlug: "the-moriscos",
+          },
+          {
+            prompt: "Limpieza de sangre statutes are significant because they did what?",
+            options: ["Made religious disqualification hereditary", "Applied only to converts from Judaism and not from Islam", "Were struck down within a generation of their introduction", "Required proof of baptism rather than proof of ancestry"],
+            correctIndex: 0,
+            explanation: "Ancestry, not belief, became the disqualifying fact, which is why historians of race attend closely to this period.",
+            sourceLessonSlug: "the-moriscos",
+          },
+          {
+            prompt: "The 1567 decree targeted what?",
+            options: ["Arabic, Moorish dress, and public baths", "Mosque construction and the appointment of Muslim judges", "Trade with North Africa and possession of seagoing vessels", "Marriage between Moriscos and old Christians"],
+            correctIndex: 0,
+            explanation: "It also required houses left open on feast days, making it a program against a culture rather than only a creed.",
+            sourceLessonSlug: "the-moriscos",
+          },
+          {
+            prompt: "How should the Morisco expulsion total be reported?",
+            options: ["As a range, with Lapeyre named as its source", "As exactly 300,000, the figure the sources agree on", "As one million, the highest recent estimate available", "As unknown, since no embarkation records survive at all"],
+            correctIndex: 0,
+            explanation: "Roughly 275,000 to 300,000 in Lapeyre, with higher recent proposals. The count depends on decrees, returnees, and evaders.",
+            sourceLessonSlug: "the-moriscos",
+          },
+          {
+            prompt: "Barbara Fuchs's maurophilia argument is that the Moorish material was what?",
+            options: ["Part of Spanish identity, not a foreign import", "A French chivalric import of the sixteenth century", "Written mainly by Moriscos who escaped the expulsion", "Suppressed by the Inquisition wherever it was found"],
+            correctIndex: 0,
+            explanation: "A culture can expel a population and keep its clothes, its architecture, and its ballads, and Spain did.",
+            sourceLessonSlug: "the-afterlife-of-the-word",
+          },
+          {
+            prompt: "The imprecision of Moor on the early modern English stage is evidence about what?",
+            options: ["English usage, not the population of al-Andalus", "The actual ethnic composition of Muslim Iberia", "Direct English diplomatic contact with the Nasrid court", "The survival of Morisco communities in England after 1614"],
+            correctIndex: 0,
+            explanation: "English writers inherited the word without the history, and that is a main route by which it came to read simply as black.",
+            sourceLessonSlug: "the-afterlife-of-the-word",
+          },
+          {
+            prompt: "Noble Drew Ali founded his first temple where and when?",
+            options: ["Newark, 1913", "Chicago, 1925", "Detroit, 1930", "Philadelphia, 1919"],
+            correctIndex: 0,
+            explanation: "He established the movement in Chicago from 1925, which is the setting for Susan Nance's study of it.",
+            sourceLessonSlug: "the-afterlife-of-the-word",
+          },
+          {
+            prompt: "How have American courts treated the Moorish-national exemption claim?",
+            options: ["They have consistently rejected it", "They have upheld it in several federal circuits", "They have treated it as a nonjusticiable political question", "They have accepted it for civil but not criminal matters"],
+            correctIndex: 0,
+            explanation: "That legal question is kept separate from what a religious community teaches about its own origins, which is its own affair.",
+            sourceLessonSlug: "the-afterlife-of-the-word",
+          },
+          {
+            prompt: "The course's overall answer to \"who were the Moors?\" is what?",
+            options: ["Several populations under one outsider's label", "The Amazigh peoples of North Africa across all periods", "The Arab dynasties that ruled Iberia from 711 to 1492", "The Muslim population of Iberia excluding local converts"],
+            correctIndex: 0,
+            explanation: "Amazigh, Arab, Iberian convert, sub-Saharan African, and Slavic populations all fall inside it at different times.",
+            sourceLessonSlug: "who-was-actually-in-al-andalus",
+          },
+          {
+            prompt: "The habit this course is really teaching is what?",
+            options: ["Separating the secure frame from the vivid detail", "Preferring Arabic sources to Latin ones in every conflict", "Rejecting any claim not tied to an excavated object", "Accepting the most recent scholarship as settled"],
+            correctIndex: 0,
+            explanation: "It applies identically to the conquest narrative, the library figure, the Ghana conquest, and the expulsion totals.",
+            sourceLessonSlug: "cordoba-and-its-numbers",
+          },
+        ],
+      },
+    },
   ],
 };
