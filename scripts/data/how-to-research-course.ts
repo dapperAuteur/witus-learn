@@ -1995,5 +1995,545 @@ Everything else in this course is technique. That one is character, and it is th
 
 Note on this list: it is deliberately short and every entry was consulted directly. Per lesson 11, a bibliography states what the work actually used rather than what it might have.`,
     },
+
+    // ── Final ────────────────────────────────────────────────────────────────────────────────────
+    // The last quiz in the course, so it is the final under the Tier-0 spec: pools 40, serves 10,
+    // passes at 80. It is also the Section 6 check, so its bank covers that section's own three
+    // lessons rather than sampling the course at large.
+    {
+      slug: "quiz-craft-ai-and-your-own-work",
+      title: "16 · Final assessment · Craft, AI, and your own work",
+      section: "Section 6 · Craft, AI, and your own work",
+      body: `The course's final check, and the Section 6 check at the same time: choosing a form on purpose, using an AI assistant without laundering its mistakes, and what the capstone actually earns you.
+
+Ten questions are drawn from a bank of forty, so a retake is a different exam. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 10,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is the bar for craft for the medium?",
+            options: [
+              "Developing",
+              "Met, like every criterion under seek truth and minimize harm",
+              "Met, unless the work is in a medium the rubric does not cover",
+              "Not applicable for written work, and Met for everything else",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Which tells you where it sits in the ordering: competence matters, but not more than truth.",
+            sourceLessonSlug: "craft-and-choosing-the-medium",
+          },
+          {
+            prompt: "What question does the lesson say sits upstream of craft?",
+            options: [
+              "How much time the finished form will take to produce",
+              "Which form this should be at all",
+              "Who the audience for the finished work is going to be",
+              "Whether the work needs to be published at all",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Most people never choose. They make the thing they always make.",
+            sourceLessonSlug: "craft-and-choosing-the-medium",
+          },
+          {
+            prompt: "What does writing carry better than any other form?",
+            options: [
+              "The specific and the physical: a condition, a place, a face",
+              "Process and time, and things a person does rather than describes",
+              "Voice, and what a transcript loses",
+              "Argument and evidence",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Complexity, qualification, citation, a claim that needs three conditions attached. Choose prose when the thinking is the point.",
+            sourceLessonSlug: "craft-and-choosing-the-medium",
+          },
+          {
+            prompt: "What does audio carry?",
+            options: [
+              "Voice, and what a transcript loses",
+              "Argument and evidence, in a form easier to follow than prose",
+              "Proof, since a recording cannot be edited without trace",
+              "Process and time, as something unfolds across a sequence",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Hesitation, warmth, the pause before a hard answer. Choose it when how something was said matters as much as what was said.",
+            sourceLessonSlug: "craft-and-choosing-the-medium",
+          },
+          {
+            prompt: "What does photography carry?",
+            options: [
+              "Process and time, since a sequence shows change",
+              "The specific and the physical",
+              "Proof, since an image records what was actually there",
+              "Argument, since an image can be read many ways at once",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A condition, a place, a face, a scale you cannot convey in a sentence.",
+            sourceLessonSlug: "craft-and-choosing-the-medium",
+          },
+          {
+            prompt: "What does film carry?",
+            options: [
+              "Voice, more completely than audio alone can manage",
+              "Evidence, since a camera records more than a note-taker can",
+              "The specific and the physical, in motion rather than still",
+              "Process and time",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Something unfolding, something changing, something a person does rather than describes.",
+            sourceLessonSlug: "craft-and-choosing-the-medium",
+          },
+          {
+            prompt: "What does the lesson say about records and archives?",
+            options: [
+              "They persuade nobody on their own and settle arguments permanently",
+              "They persuade a general reader more reliably than any other form",
+              "They belong in an appendix rather than in the work itself",
+              "They are the only form that satisfies the sourcing criterion",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They carry proof. Both halves of that sentence matter: they will not move a reader by themselves, and they end the argument for good.",
+            sourceLessonSlug: "craft-and-choosing-the-medium",
+          },
+          {
+            prompt: "What is the one question to ask before choosing a richer medium?",
+            options: [
+              "Whether you have the skills to execute it competently",
+              "Whether the audience for it is larger than the audience for prose",
+              "What does this story do that a written version could not",
+              "Whether the material was gathered in a form that suits it",
+            ],
+            correctIndex: 2,
+            explanation:
+              "If you cannot answer, write it. Prose is cheaper, faster, easier to correct and easier to cite, and choosing a richer medium without a reason usually costs you rigor without buying anything.",
+            sourceLessonSlug: "craft-and-choosing-the-medium",
+          },
+          {
+            prompt: "What kind of failure is choosing the wrong medium?",
+            options: [
+              "A craft failure, since the result is judged on its execution",
+              "A planning failure that shows up as a craft failure",
+              "A sourcing failure, since the evidence no longer fits the form",
+              "Not a failure at all, since any form can carry any material",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Which is why it is worth deciding on purpose rather than defaulting to the thing you always make.",
+            sourceLessonSlug: "craft-and-choosing-the-medium",
+          },
+          {
+            prompt: "Why does the rubric let craft sit at Developing when sourcing must be Met?",
+            options: [
+              "Because craft improves with practice and sourcing habits do not",
+              "Because a reviewer scores craft after the harder criteria",
+              "Because craft is a matter of taste and sourcing is a matter of fact",
+              "Craft failures are visible to the reader and sourcing failures are not",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The invisible one carries the higher bar. It is the same argument the instrument lesson made, arriving from the craft side.",
+            sourceLessonSlug: "craft-and-choosing-the-medium",
+          },
+          {
+            prompt: "What does the AI lesson say the real danger is?",
+            options: [
+              "Laundering",
+              "Fabrication, since the tools invent facts that sound plausible",
+              "Dependence, since your own judgment weakens with use",
+              "Disclosure, since readers object to AI involvement in research",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Not that it invents things: it does, and you will learn to expect that. The danger is a claim entering your work with no source and getting written in your confident voice.",
+            sourceLessonSlug: "researching-with-ai",
+          },
+          {
+            prompt: "What does laundering mean here?",
+            options: [
+              "Rewriting AI output so its origin is no longer detectable in style",
+              "Passing a claim through several tools until one confirms it",
+              "A claim washed clean of its origin, so nobody can tell it was unchecked",
+              "Attributing an AI-supplied claim to a source that did not make it",
+            ],
+            correctIndex: 2,
+            explanation:
+              "By the time you review the draft you cannot remember whether you checked it or the machine simply said it. That is a sourcing failure with no fingerprints, and it will pass a casual read.",
+            sourceLessonSlug: "researching-with-ai",
+          },
+          {
+            prompt: "Which of these is on the lesson's list of what AI tools are genuinely good at?",
+            options: [
+              "Supplying facts that are too obscure to find by searching",
+              "Criticizing your draft's reasoning",
+              "Deciding which of two conflicting sources is more reliable",
+              "Confirming whether a citation you already have is accurate",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Along with orienting you in an unfamiliar field, generating candidate questions, suggesting what kind of record might exist, and summarizing something you already have.",
+            sourceLessonSlug: "researching-with-ai",
+          },
+          {
+            prompt: "What do all the good uses have in common?",
+            options: [
+              "None of them is tell me a fact I will publish",
+              "All of them happen before the research proper begins",
+              "All of them produce output you can cite directly",
+              "None of them requires you to describe your project in detail",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Orienting, generating, suggesting, summarizing, criticizing. Every one of them operates on material you already have or on the shape of the work rather than on its content.",
+            sourceLessonSlug: "researching-with-ai",
+          },
+          {
+            prompt: "State the rule for AI-supplied claims.",
+            options: [
+              "Nothing enters your work as a claim until you have verified it",
+              "Nothing enters your work unless the tool supplied a citation with it",
+              "Nothing enters your work without a note saying where it came from",
+              "Nothing enters your work that you could not have found yourself",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Verified against a source you can cite. Not it sounded right, and not it gave a very specific citation, which is exactly what a fabricated citation looks like.",
+            sourceLessonSlug: "researching-with-ai",
+          },
+          {
+            prompt: "What does verified mean, for an AI-supplied citation?",
+            options: [
+              "The tool repeated the same citation when asked a second time",
+              "You found the source, it exists, and it says what you were told",
+              "The journal and the author both turn out to be real",
+              "A search returns results consistent with the claim",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Fabricated references are frequently plausible: real journal, real author, real-sounding title, wrong or nonexistent article. A citation you did not open is not a citation.",
+            sourceLessonSlug: "researching-with-ai",
+          },
+          {
+            prompt: "Where should AI output live?",
+            options: [
+              "In a comment alongside the draft text it relates to",
+              "In the draft, marked with a formatting style you can search for",
+              "In the bibliography, flagged as unverified until it is checked",
+              "In a separate place from your draft",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The laundering happens at the moment of copy and paste, when unverified text acquires the authority of your own prose. If it lives in a different file until it is checked, that moment does not arrive by accident.",
+            sourceLessonSlug: "researching-with-ai",
+          },
+          {
+            prompt: "Why is a specific, plausible citation from an AI not reassuring?",
+            options: [
+              "Because specificity is easier to generate than accuracy",
+              "Because the tool cannot access the sources it names",
+              "Fabricated citations are usually plausible by construction",
+              "Because a specific citation is harder for a reader to check",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A citation you have not opened tells you nothing, whatever it looks like.",
+            sourceLessonSlug: "researching-with-ai",
+          },
+          {
+            prompt: "When does AI use have to be disclosed?",
+            options: [
+              "If it did substantial work in your research or drafting",
+              "Whenever any part of the work passed through such a tool",
+              "Only when the tool supplied a claim that survived into the text",
+              "Only where the publisher's own policy requires it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It falls under the same test as any other interest: a reasonable reader would want to know.",
+            sourceLessonSlug: "researching-with-ai",
+          },
+          {
+            prompt: "What kind of failure is laundering, in rubric terms?",
+            options: [
+              "A craft failure, since the prose disguises its own origin",
+              "A transparency failure, since the source list is incomplete",
+              "A disclosure failure, since the tool's involvement is hidden",
+              "A sourcing failure with no fingerprints",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The lesson names it that way precisely because the absence of evidence is what makes it dangerous: nothing in the finished text shows that the claim was never checked.",
+            sourceLessonSlug: "researching-with-ai",
+          },
+          {
+            prompt: "What kind of question does the capstone ask you to pick?",
+            options: [
+              "A question nobody in your field has attempted before",
+              "A real question you can answer with what you can reach",
+              "A question that will take a full season of work to settle",
+              "A question drawn from the examples used earlier in the course",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A local decision, a family account you have never checked, a claim in your field everyone repeats, a place that changed. Small is good. Answerable is essential.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "How many criteria must the capstone satisfy?",
+            options: [
+              "All eight",
+              "The five that carry a Met bar, with the rest optional",
+              "As many as the medium you chose in lesson 13 makes applicable",
+              "Six, since two may always be scored not applicable",
+            ],
+            correctIndex: 0,
+            explanation:
+              "All eight, in the medium you chose on purpose. Two of them may be genuinely not applicable, and you have to be able to say why.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "What does the capstone ask you to do with the rubric before anyone else sees the work?",
+            options: [
+              "Send it to a reviewer for an informal read against the criteria",
+              "Check that each criterion has been addressed somewhere in the text",
+              "Score yourself against it, honestly",
+              "Rewrite anything that would not clearly reach the bar",
+            ],
+            correctIndex: 2,
+            explanation:
+              "And where you scored yourself below the bar, write one line about why. Self-attestation is step one of the endorsement path.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "What does submitting the capstone actually do?",
+            options: [
+              "Places your project in review",
+              "Awards the Trusted Documentation credential on completion",
+              "Sends the work to two reviewers who have already been assigned",
+              "Publishes the work to the platform for anyone to read",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That is a status, not a result. It means the work is complete enough to be looked at by other people.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "Does finishing this course award you a credential?",
+            options: [
+              "Yes, once the capstone has been submitted and self-attested",
+              "Yes, provisionally, pending review within a set period",
+              "Only for learners who scored above the bar on every criterion",
+              "No",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The Trusted Documentation credential requires your own attestation plus endorsement from at least two reviewers who read the work and score it against the same eight criteria.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "How many reviewers must endorse the work?",
+            options: [
+              "One, provided they score every criterion",
+              "At least two, scoring independently",
+              "Three, so that a disagreement can be resolved by majority",
+              "As many as the platform assigns, which varies by medium",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Two or more reviewers score it independently, and every must-be-Met criterion has to be Met or genuinely not applicable.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "What does the lesson say about being scored below the bar?",
+            options: [
+              "That outcome is normal, and the notes are worth more than a pass",
+              "It means the work should be withdrawn rather than revised",
+              "It is rare, since the course prepares you for each criterion",
+              "It bars a resubmission until the next review cycle opens",
+            ],
+            correctIndex: 0,
+            explanation:
+              "If it falls short you get the scores and the notes, and you may revise and resubmit.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "Why is the course explicit that finishing does not earn the credential?",
+            options: [
+              "Because the reviewers are volunteers whose availability varies",
+              "Because a credential requires a fee the course does not include",
+              "Otherwise it would assert a claim nobody verified",
+              "Because the platform has no authority to issue credentials itself",
+            ],
+            correctIndex: 2,
+            explanation:
+              "In the exact place it spent fourteen lessons telling you not to. The reason should be familiar by the time you reach it.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "What is step one of the endorsement path?",
+            options: [
+              "You submit, and self-attest against the rubric",
+              "Two reviewers are assigned and given access to the work",
+              "The platform checks the work against the must-be-Met criteria",
+              "You choose the medium the work will be submitted in",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Then the work enters review and becomes visible to reviewers, two or more score it independently, every must-be-Met criterion has to be Met or genuinely not applicable, and a shortfall returns scores and notes for revision.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "What does the capstone ask for under verified and flagged?",
+            options: [
+              "Quotes, numbers and dates re-checked, and uncertainties listed separately",
+              "A note confirming that every claim was checked at least twice",
+              "A statement of which claims you were unable to verify at all",
+              "A list of the sources that were consulted but not ultimately used",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Every uncertainty stated in the text, and listed separately with what would settle it. The list is the part that makes the flag real.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "What does the capstone ask for under transparent?",
+            options: [
+              "A note on which sources were primary and which secondary",
+              "A statement of the method used to gather each central claim",
+              "In-line citations and a full source list, with access dates",
+              "A record of how long the research took from start to finish",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Access dates on anything that can change, which is the rule from the transparency lesson applied to your own work.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "What is the one habit the lesson says to keep if you keep nothing else?",
+            options: [
+              "Trace every claim that matters back to primary material",
+              "Ask what evidence would prove you wrong before you begin",
+              "Correct publicly, and record what changed and when",
+              "Write down what you do not know, where somebody else can see it",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Everything else in the course is technique. That one is character, and it is the only part that keeps working when nobody is checking.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "Which medium should the capstone be produced in?",
+            options: [
+              "Whichever you chose on purpose in the craft lesson",
+              "Writing, since it is easiest to cite and to correct",
+              "Whichever the reviewers on the platform score most often",
+              "Whichever best suits the material you happened to gather",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Craft for the medium asks that the work be competently made and made in a form you chose deliberately rather than by default.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "What does the capstone say about consent, for anyone identifiable?",
+            options: [
+              "It must be obtained, logged, and honored",
+              "It must be obtained in writing and attached to the submission",
+              "It may be waived where the person is a public figure",
+              "It must be obtained again once the work is complete",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Or genuinely not applicable, and you can say why. The same applies to cultural and linguistic fidelity, and to nothing else on the rubric.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "What does the capstone's source list demonstrate about the course's own practice?",
+            options: [
+              "That a short list is preferable to a long one in any bibliography",
+              "That every entry was consulted directly, as lesson 11 requires",
+              "That the four cited bodies endorse the rubric the course teaches",
+              "That the rubric was assembled from those four documents alone",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The list is deliberately short, and the note under it says so: a bibliography states what the work actually used rather than what it might have.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "What does the capstone want stated at the top of the work?",
+            options: [
+              "The medium you chose and the reason you chose it",
+              "The disclosure of any interest a reader would want to know about",
+              "The sources you expect to rely on most heavily",
+              "The focused question, narrow enough that you could be proved wrong",
+            ],
+            correctIndex: 3,
+            explanation:
+              "It is the first criterion for the same reason it was the first lesson of the practical work: everything downstream inherits its shape.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "Where does the lesson say to go for depth on a particular medium?",
+            options: [
+              "The platform's courses on documentary, oral history, news, and civic work",
+              "The professional bodies whose codes the rubric was assembled from",
+              "The reviewers, who advise on medium as part of their notes",
+              "Nowhere; this course is the complete treatment of each form",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The craft lesson is the hub; those courses are the depth.",
+            sourceLessonSlug: "craft-and-choosing-the-medium",
+          },
+          {
+            prompt: "Why does the lesson say prose is the default worth beating?",
+            options: [
+              "Because a written piece reaches a larger audience than any other form",
+              "It is cheaper, faster, easier to correct and easier to cite",
+              "Because the rubric was written with written work in mind",
+              "Because most researchers are better at writing than at anything else",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Choosing a richer medium without a reason usually costs you rigor without buying anything, which is why the question is what a written version could not do.",
+            sourceLessonSlug: "craft-and-choosing-the-medium",
+          },
+          {
+            prompt: "What happens if the capstone falls short at review?",
+            options: [
+              "You get the scores and the notes, and you may revise and resubmit",
+              "The submission is closed and a new project must be started",
+              "A third reviewer is brought in to settle the outcome",
+              "The work is returned without scores, to avoid discouraging revision",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That outcome is normal, and the lesson says the notes you get back are worth more than a pass.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "What does the AI lesson say about the moment of copy and paste?",
+            options: [
+              "It is where a citation most often gets separated from its claim",
+              "It is where the tool's own phrasing survives into your prose",
+              "It is where unverified text acquires the authority of your own prose",
+              "It is where a draft stops being yours and becomes a collaboration",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Which is why keeping the output in a separate file until it is checked means the moment never arrives by accident.",
+            sourceLessonSlug: "researching-with-ai",
+          },
+        ],
+      },
+    },
   ],
 };
