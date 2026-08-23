@@ -95,6 +95,332 @@ Because you can fail a rubric, and failing is how you learn where your habits ar
       ],
     },
 
+    {
+      slug: "quiz-the-problem-and-the-instrument",
+      title: "Section 1 knowledge check · The problem, and the instrument",
+      section: "Section 1 · The problem, and the instrument",
+      body: `A graded check on the four ways careful people still get it wrong, and on the rubric your work will actually be scored against. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Who does most bad research, according to this lesson?",
+            options: [
+              "People who never noticed the moment they stopped checking",
+              "People who set out to mislead a reader about what they found",
+              "People working too fast to consult more than one source",
+              "People without the training to evaluate what they are reading",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Most bad research is not done by liars. It is done by people who were interested, worked hard, and stopped checking without noticing.",
+            sourceLessonSlug: "why-research-fails",
+          },
+          {
+            prompt: "What is the tell that you were looking for confirmation rather than evidence?",
+            options: [
+              "You spent longer searching than you had planned to",
+              "You can remember what you found but not what would have changed your mind",
+              "You ended up agreeing with the first source you happened to read",
+              "You could not find anyone who disagreed with your conclusion",
+            ],
+            correctIndex: 1,
+            explanation:
+              "You form a view early and every search after that is shaped to support it. The missing memory of a disconfirming condition is what gives it away.",
+            sourceLessonSlug: "why-research-fails",
+          },
+          {
+            prompt: "What is a single account, in this lesson's terms?",
+            options: [
+              "Evidence, weaker than two but still evidence of the fact",
+              "Unusable, since nothing can be established from one source",
+              "A claim",
+              "A starting point, which becomes a fact once it is written down",
+            ],
+            correctIndex: 2,
+            explanation:
+              "It might be right. You do not yet know, and reporting it as though you do transfers your uncertainty to your reader without telling them.",
+            sourceLessonSlug: "why-research-fails",
+          },
+          {
+            prompt: "What does the lesson call five results that all trace back to one wire story?",
+            options: [
+              "Weak corroboration, since a wire service is a reliable origin",
+              "A consensus, since five outlets chose to carry the same claim",
+              "A verification chain, which is what following citations produces",
+              "One source wearing five coats",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Repetition is not corroboration. Following the links is what turns an overwhelming-feeling set of results back into the one source it actually is.",
+            sourceLessonSlug: "why-research-fails",
+          },
+          {
+            prompt: "Which failure does the lesson say this course cares about most?",
+            options: [
+              "Asserting what you merely believe",
+              "Inventing a source that does not exist",
+              "Citing a source that says the opposite of what you claim",
+              "Publishing before the research is finished",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Not inventing and not lying. Just writing the sentence without the hedge because the hedge felt awkward, so the reader has no way to tell which sentences were checked. It is the one that matters most because it is invisible.",
+            sourceLessonSlug: "why-research-fails",
+          },
+          {
+            prompt: "What is the course asking you to be, if not certain?",
+            options: [
+              "Thorough, so that nothing relevant was left unread",
+              "Impartial, so that no view of your own reaches the page",
+              "Legible",
+              "Cautious, so that no claim is made beyond what is proven",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Certainty is rare and pretending to it is the failure. Legible means a reader can see which claims are sourced, which are corroborated, which are still open, and what you did about it.",
+            sourceLessonSlug: "why-research-fails",
+          },
+          {
+            prompt: "Somebody sends you five links that all say the same thing. What is the first question?",
+            options: [
+              "Which of the five is the most reputable publication",
+              "Whether any of the five contradicts the others in detail",
+              "How recently each of the five was published",
+              "Where did each one get it",
+            ],
+            correctIndex: 3,
+            explanation:
+              "If they all trace to one original, you have one source, not five. Reputation and recency do not multiply a single origin into several.",
+            sourceLessonSlug: "why-research-fails",
+          },
+          {
+            prompt: "What is the difference between being uncertain and being unreliable?",
+            options: [
+              "An unreliable writer hides uncertainty; a reliable one states it",
+              "An uncertain writer has not finished the work; an unreliable one has not started it",
+              "Uncertainty is about the evidence; unreliability is about the writing",
+              "An unreliable writer is wrong more often than an uncertain one is",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Stating it lets the reader weigh the claim properly. Hiding it hands them a confidence you do not have.",
+            sourceLessonSlug: "why-research-fails",
+          },
+          {
+            prompt: "Why does the lesson say a vague question can never correct you?",
+            options: [
+              "Because nobody will bother to check work that is not specific",
+              "It cannot be answered, so it cannot be answered wrongly",
+              "Because a vague question attracts sources that are equally vague",
+              "Because a reader cannot tell what you were trying to establish",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Nothing you find can ever count as an answer, so nothing you find can ever count as a correction either. That is why everything downstream inherits the question's shape.",
+            sourceLessonSlug: "why-research-fails",
+          },
+          {
+            prompt: "What does this course use instead of a list of virtues?",
+            options: [
+              "A published code of ethics from a professional body",
+              "A checklist run over each piece of work before it is published",
+              "A sequence of exercises graded by a reviewer at each stage",
+              "The Trusted Documentation Rubric",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Be curious, be skeptical, be fair are all true and useless the moment you have to decide whether a specific paragraph is good enough to publish. The rubric is the instrument reviewers on this platform actually score submitted work against.",
+            sourceLessonSlug: "the-instrument",
+          },
+          {
+            prompt: "How many criteria does the rubric have, and how are they grouped?",
+            options: [
+              "Eight criteria, grouped under five pillars",
+              "Five criteria, grouped under three pillars",
+              "Ten criteria, grouped in pairs by the stage of the work",
+              "Eight criteria, ungrouped, applied in the order they are listed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Eight criteria under five pillars: planning, seek truth, minimize harm, accountable, act independently, and craft.",
+            sourceLessonSlug: "the-instrument",
+          },
+          {
+            prompt: "Which two criteria may be scored merely Developing?",
+            options: [
+              "Sourced and corroborated, and verified and flagged",
+              "Transparent, and disclosure of interests",
+              "Consent and fair representation, and cultural fidelity",
+              "Focused question, and craft for the medium",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Everything else on the rubric must be Met, or, for two criteria only, genuinely not applicable.",
+            sourceLessonSlug: "the-instrument",
+          },
+          {
+            prompt: "Under which pillar does the focused question sit?",
+            options: [
+              "Planning",
+              "Seek truth, alongside sourcing and verification",
+              "Accountable, since the question is what you are held to",
+              "Craft, since the question shapes the finished form",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Planning, and its bar is Developing, which is why it is the criterion the course opens the practical work with rather than one of the hard gates.",
+            sourceLessonSlug: "the-instrument",
+          },
+          {
+            prompt: "Which pillar holds sourced and corroborated?",
+            options: [
+              "Planning, since sourcing is decided when the question is framed",
+              "Seek truth",
+              "Accountable, since sourcing is what a reader checks you on",
+              "Act independently, since sources determine your independence",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Seek truth, along with verified and flagged. Both must be Met, with no not-applicable option.",
+            sourceLessonSlug: "the-instrument",
+          },
+          {
+            prompt: "Under which pillar does disclosure of interests sit?",
+            options: [
+              "Minimize harm, since an undisclosed interest can harm a reader",
+              "Accountable, alongside the transparency criterion",
+              "Seek truth, since an interest can distort what you find",
+              "Act independently",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Act independently is its own pillar, and disclosure of interests is the criterion under it. Transparent is the one under accountable.",
+            sourceLessonSlug: "the-instrument",
+          },
+          {
+            prompt: "Which criterion sits under two pillars at once?",
+            options: [
+              "Cultural and linguistic fidelity",
+              "Transparent, which serves both accountability and truth",
+              "Consent and fair representation, under harm and independence",
+              "Craft for the medium, under planning and craft",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Fidelity is listed under seek truth and minimize harm together, because getting someone's words and world wrong is both an accuracy failure and a harm.",
+            sourceLessonSlug: "the-instrument",
+          },
+          {
+            prompt: "Why can craft be merely Developing while sourcing must be Met?",
+            options: [
+              "Because craft is subjective and sourcing can be checked objectively",
+              "Because craft improves with practice and sourcing does not",
+              "Craft failures are visible to the reader and sourcing failures are not",
+              "Because a reviewer scores craft last, after the harder criteria",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A rough, plain, unpolished piece whose claims are sourced and whose uncertainties are flagged will pass. A beautiful one that asserts things nobody checked will not. The ordering is deliberate.",
+            sourceLessonSlug: "the-instrument",
+          },
+          {
+            prompt: "Which two criteria allow a score of not applicable?",
+            options: [
+              "Focused question and craft for the medium, which are Developing bars",
+              "Consent and fair representation, and cultural and linguistic fidelity",
+              "Transparent and disclosure of interests, where nothing is at stake",
+              "Any criterion, if the work's scope does not reach it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "If your work has no identifiable people, consent genuinely does not apply. If it involves no other language or culture, fidelity does not apply. Nothing else can be waived.",
+            sourceLessonSlug: "the-instrument",
+          },
+          {
+            prompt: "How does the lesson describe a not-applicable score?",
+            options: [
+              "A neutral result that neither helps nor harms the overall score",
+              "A default for any criterion a reviewer cannot evaluate",
+              "A claim you should be prepared to defend",
+              "An option available only when a reviewer agrees in advance",
+            ],
+            correctIndex: 2,
+            explanation:
+              "It is a claim about your work, not a way out, and you should expect to justify it.",
+            sourceLessonSlug: "the-instrument",
+          },
+          {
+            prompt: "Why does the course teach a rubric rather than a philosophy?",
+            options: [
+              "Because you can fail a rubric",
+              "Because a rubric is faster to teach than a philosophy is",
+              "Because philosophies differ between fields and rubrics do not",
+              "Because a rubric can be applied without understanding it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Failing is how you learn where your habits are weak. A philosophy you can agree with all day without changing anything you do.",
+            sourceLessonSlug: "the-instrument",
+          },
+          {
+            prompt: "What does the lesson say you will have done with the rubric by the end of the course?",
+            options: [
+              "Memorized its eight criteria and the pillar each belongs to",
+              "Been scored against it by two independent reviewers",
+              "Met it eight times, and used it once on your own work",
+              "Compared it against the professional codes it was built from",
+            ],
+            correctIndex: 2,
+            explanation:
+              "One criterion per lesson, then the capstone applies the whole instrument to work of your own.",
+            sourceLessonSlug: "the-instrument",
+          },
+          {
+            prompt: "What is wrong with advice like be curious, be skeptical, be fair?",
+            options: [
+              "It is contested, since different fields define each one differently",
+              "It is too demanding for anyone at the beginning of the work",
+              "It describes attitudes rather than the checks that produce them",
+              "It is useless the moment you have to judge a specific paragraph",
+            ],
+            correctIndex: 3,
+            explanation:
+              "All of it is true. None of it helps you decide whether the paragraph in front of you is good enough to publish, which is the decision that actually arrives.",
+            sourceLessonSlug: "the-instrument",
+          },
+          {
+            prompt: "What does the lesson mean by saying every search after an early view is shaped?",
+            options: [
+              "Shaped to find support for the view you already formed",
+              "Shaped by the search engine's own ranking of your earlier queries",
+              "Shaped by the vocabulary the first source you read happened to use",
+              "Shaped toward newer material, which tends to agree with itself",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That is what looking for confirmation instead of evidence means, and the reason it is hard to catch is that the searching itself feels like diligence.",
+            sourceLessonSlug: "why-research-fails",
+          },
+          {
+            prompt: "What happens when you report a single account as though it were settled?",
+            options: [
+              "The claim becomes harder to correct once it is in print",
+              "You transfer your uncertainty to your reader without telling them",
+              "You take on responsibility for the source's own errors",
+              "You make the claim harder for another researcher to trace",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The uncertainty does not disappear when you leave it out of the sentence. It moves to the reader, who now cannot see it.",
+            sourceLessonSlug: "why-research-fails",
+          },
+        ],
+      },
+    },
+
     // ── Section 2 ────────────────────────────────────────────────────────────────────────────────
     {
       slug: "the-focused-question",
