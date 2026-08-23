@@ -31,6 +31,7 @@ export default async function ReportsAdminPage() {
             pageUrl: r.pageUrl,
             email: r.email,
             status: r.status,
+            resolution: r.resolution,
             createdAt: r.createdAt.toISOString(),
           }))}
         />
