@@ -1007,6 +1007,283 @@ U.S. Bureau of Labor Statistics. (2024c). *Film and video editors and camera ope
     },
 
     // ─────────────────────────────────────────────────────────────────────────
+    // SECTION 3 QUIZ
+    // ─────────────────────────────────────────────────────────────────────────
+    {
+      slug: "quiz-audio-and-video-fundamentals",
+      title: "Section 3 quiz · Audio & video fundamentals",
+      section: "Section 3 · Audio & video fundamentals",
+      body: `A graded check on signal flow as a troubleshooting tool, on the microphones and levels that decide whether a show sounds professional, and on the lighting and framing that make raw footage read as broadcast. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is signal flow?",
+            options: [
+              "The chain from source to mixer to recorder to audience",
+              "The rate at which data leaves the encoder toward the platform",
+              "The order in which the director calls each camera during a show",
+              "The path a cable takes physically from the truck to the field",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Source such as a mic or camera, then mixer or switcher, then recorder or transmitter, then the audience. The lesson calls it the single most useful mental model on a crew.",
+            sourceLessonSlug: "signal-flow-and-audio",
+          },
+          {
+            prompt: "What do you do with signal flow when something breaks live?",
+            options: [
+              "Replace each component in turn until the fault disappears",
+              "Switch to the backup feed and diagnose after the show",
+              "Walk the chain until you find the dead link",
+              "Check the output first, since that is where the fault appears",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Source, cable, connection, mixer, output. You walk the chain step by step rather than guessing, which is why the model is worth holding in your head.",
+            sourceLessonSlug: "signal-flow-and-audio",
+          },
+          {
+            prompt: "Why does the lesson say audio matters more than picture?",
+            options: [
+              "Because audio equipment fails more often than video equipment",
+              "Because captioning requirements depend on the quality of the audio",
+              "Because a soft picture can be corrected in post and audio cannot",
+              "Viewers forgive a soft picture but not sound they cannot hear",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Poor audio sinks a broadcast faster than poor video, which is why levels and mic choice get their own section this early in the course.",
+            sourceLessonSlug: "signal-flow-and-audio",
+          },
+          {
+            prompt: "Which microphone is the rugged one that handles loud sources?",
+            options: [
+              "Dynamic",
+              "Condenser, which is sensitive enough for booth and studio work",
+              "Lavalier, which clips on and leaves the hands free",
+              "Shotgun, which is highly directional at a distance",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The dynamic mic is rugged and handles loud sources, which is why it is the sideline reporter's handheld.",
+            sourceLessonSlug: "signal-flow-and-audio",
+          },
+          {
+            prompt: "Which microphone is sensitive and detailed, for booth and studio work?",
+            options: [
+              "Dynamic, which is rugged enough for a sideline in any weather",
+              "Condenser",
+              "Shotgun, which rejects the noise around its target",
+              "Lavalier, which is small enough to hide under clothing",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The condenser is the sensitive, detailed mic, and its home is the booth and the studio rather than the sideline.",
+            sourceLessonSlug: "signal-flow-and-audio",
+          },
+          {
+            prompt: "Which microphone is highly directional and rejects crowd noise?",
+            options: [
+              "Lavalier, which sits close enough to the mouth to exclude the rest",
+              "Dynamic, which needs a loud source before it registers anything",
+              "Shotgun",
+              "Condenser, whose sensitivity lets it be aimed precisely",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The shotgun captures a subject at a distance and rejects what is around it, which is what makes it usable in a stadium.",
+            sourceLessonSlug: "signal-flow-and-audio",
+          },
+          {
+            prompt: "Which microphone is the clip-on, hands-free choice for interviews and hosts?",
+            options: [
+              "Shotgun, mounted on a boom just out of the frame",
+              "Dynamic, held by the host through the whole segment",
+              "Condenser, on a stand between the two speakers",
+              "Lavalier",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The lav clips on and leaves the hands free, which is why it is the interview and host mic.",
+            sourceLessonSlug: "signal-flow-and-audio",
+          },
+          {
+            prompt: "What is the golden rule for setting audio levels?",
+            options: [
+              "Set gain so the loudest moments peak safely below distortion",
+              "Set gain at the midpoint of the meter and leave it there",
+              "Set gain from the quietest passage, so nothing is ever lost",
+              "Set gain so the meter reaches the top on the loudest moments",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A common target is around minus six to minus three dBFS on the meter. Never let it clip into the red, and ride the levels rather than setting and forgetting.",
+            sourceLessonSlug: "signal-flow-and-audio",
+          },
+          {
+            prompt: "What does the lesson say about clipping?",
+            options: [
+              "It is recoverable if the recording is made at a high enough bitrate",
+              "It is unrecoverable",
+              "It only matters on the recorded version, not the live output",
+              "It is preferable to a signal too quiet to hear at all",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Clipping into the red is unrecoverable, which is why the target sits safely below distortion rather than at the ceiling.",
+            sourceLessonSlug: "signal-flow-and-audio",
+          },
+          {
+            prompt: "In the lesson's example, where does the audio tech find the fault when a reporter's mic goes silent?",
+            options: [
+              "At the mixer, where a cable was half unplugged",
+              "At the mic itself, which had been switched off between segments",
+              "At the channel, where the gain had been pulled down",
+              "At the output, which had been routed to the wrong destination",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They walk the chain (mic, cable, channel, output) and find it in seconds precisely because they followed the order rather than guessing.",
+            sourceLessonSlug: "signal-flow-and-audio",
+          },
+          {
+            prompt: "What does the practical drill in this lesson ask you to notice?",
+            options: [
+              "Which mic type sounds best on your own voice at each volume",
+              "How much the meter moves between a soft and a loud passage",
+              "Whether your recorder introduces noise at a high gain setting",
+              "Exactly where the signal dies when you unplug the cable mid-record",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Record softly, normally, and loudly while watching the meter, then unplug mid-record. Seeing where the signal dies is signal-flow troubleshooting in miniature.",
+            sourceLessonSlug: "signal-flow-and-audio",
+          },
+          {
+            prompt: "What two skills make raw footage look like broadcast?",
+            options: [
+              "Color grading and audio mixing, applied after the shoot",
+              "Camera choice and lens choice, decided before the shoot",
+              "Lighting and framing",
+              "Steadiness and focus, which are matters of practice",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Controlling how light falls on the subject and where the subject sits in the shot. You do not need to be a cinematographer to help with either.",
+            sourceLessonSlug: "lighting-and-framing",
+          },
+          {
+            prompt: "In three-point lighting, what is the key light?",
+            options: [
+              "The main light, off to one side of the subject",
+              "The softer light opposite the main one, lifting the shadows",
+              "The light behind the subject, separating them from the background",
+              "The ambient light already present in the room before you arrive",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Key is the main light off to one side. Fill is the softer light opposite it, and the back or rim light sits behind the subject.",
+            sourceLessonSlug: "lighting-and-framing",
+          },
+          {
+            prompt: "What does the fill light do?",
+            options: [
+              "Adds a highlight along the edge of the subject's hair and shoulders",
+              "Lifts the shadows, from opposite the key",
+              "Raises the overall exposure so the camera can be stopped down",
+              "Lights the background so the subject does not disappear into it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Softer than the key and positioned opposite it, the fill lifts the shadows the key creates.",
+            sourceLessonSlug: "lighting-and-framing",
+          },
+          {
+            prompt: "What does the back or rim light do?",
+            options: [
+              "Fills the shadow side of the face where the key does not reach",
+              "Adds warmth to the image so skin tones read correctly on camera",
+              "Separates the subject from the background",
+              "Lets the camera operate at a lower gain setting in a dark room",
+            ],
+            correctIndex: 2,
+            explanation:
+              "It sits behind the subject, and separation from the background is the whole reason it is there.",
+            sourceLessonSlug: "lighting-and-framing",
+          },
+          {
+            prompt: "What is white balance?",
+            options: [
+              "Adjusting the exposure so the brightest area is not blown out",
+              "Balancing the key and fill so neither overpowers the other",
+              "Setting the same color temperature on every light in the room",
+              "Matching the camera to the light's color so whites look white",
+            ],
+            correctIndex: 3,
+            explanation:
+              "It is the camera-side match to the color of the light you are working under, and it sits alongside exposure as the two settings the lesson wants you aware of.",
+            sourceLessonSlug: "lighting-and-framing",
+          },
+          {
+            prompt: "What is the rule of thirds?",
+            options: [
+              "Place the subject off-center, eyes about a third down from the top",
+              "Divide the shot into three planes of foreground, subject, and background",
+              "Use three lights, three shot sizes, and three angles in every sequence",
+              "Leave a third of the frame empty in the direction the subject moves",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Off-center placement with the eyes about a third down. Headroom and lookroom are the two related rules the lesson pairs with it.",
+            sourceLessonSlug: "lighting-and-framing",
+          },
+          {
+            prompt: "What is lookroom?",
+            options: [
+              "The gap between the subject and the edge of the frame at the bottom",
+              "Space in the direction the subject faces or moves",
+              "The distance the camera keeps back from the subject during an interview",
+              "The area of the frame reserved for a lower-third graphic",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A little space above the head is headroom; more space in the direction they face or move is lookroom.",
+            sourceLessonSlug: "lighting-and-framing",
+          },
+          {
+            prompt: "What do the three shot sizes carry?",
+            options: [
+              "Wide for the crowd, medium for the field, close for the scoreboard",
+              "Wide for the opening, medium for the body, close for the sign-off",
+              "Wide for context, medium for interview, close-up for emotion",
+              "Wide for outdoors, medium for indoors, close for low light",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Cutting between them is what gives a sequence a professional feel rather than the flatness of a single locked-off angle.",
+            sourceLessonSlug: "lighting-and-framing",
+          },
+          {
+            prompt: "In the lesson's one-person-crew example, how is the coach framed?",
+            options: [
+              "Centered in the frame, with even space on both sides",
+              "Tight in close-up, so the background never has to be lit",
+              "In a wide shot, so the setting establishes the interview",
+              "On the left third, with room to look right",
+            ],
+            correctIndex: 3,
+            explanation:
+              "A soft key at 45 degrees, fill bounced off a white wall, the coach on the left third with lookroom to the right, and exposure checked on the camera's zebras. It looks like TV, shot by one person with two lights.",
+            sourceLessonSlug: "lighting-and-framing",
+          },
+        ],
+      },
+    },
+
+    // ─────────────────────────────────────────────────────────────────────────
     // SECTION 4: Live production & streaming basics
     // ─────────────────────────────────────────────────────────────────────────
     {
