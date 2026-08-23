@@ -50,6 +50,85 @@ export const KNOTS_COURSE: AuthoredCourse = {
 - *Further reading (copyrighted; not reproduced here):* Pawson, D. (2012). *Knots: The complete visual guide.* DK.`,
     },
 
+    {
+      slug: "quiz-introduction",
+      title: "Introduction quiz · Why rope work is a trade skill",
+      section: "Introduction",
+      body: "A graded check on what this course teaches, where the skill pays, and how its safety-flagged lessons are framed. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Beyond the shape of a knot, what else does every knot lesson in this course teach?",
+            options: [
+              "When to use it, when not to, and the common mistakes",
+              "The breaking strength in kilonewtons and the manufacturer's rated safe working load",
+              "The year each knot was first recorded in a surviving maritime logbook",
+              "The exact fiber blend a rope must be made from before the knot will hold",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The course is description-first: for every knot you learn what it is, a step-by-step description in words, when to use it and when NOT to, and the common mistakes that make it fail. Rated load figures and manufacturing specifications belong to certified rigging training, which this course explicitly is not.",
+            sourceLessonSlug: "why-rope-work",
+          },
+          {
+            prompt: "Which broadcast role does the course name as one where rope and rigging skill is the job?",
+            options: [
+              "The graphics operator who builds lower thirds and score bugs",
+              "Utility technician",
+              "The play-by-play announcer calling the game from the booth",
+              "The encoding engineer managing the streaming bitrate ladder",
+            ],
+            correctIndex: 1,
+            explanation:
+              "On a live sports or event broadcast, utility techs run and dress cable, secure runs, and help rig cameras and equipment, so clean rope and cable work is the role itself. The course says to treat it and the Sports/Media Broadcasting course as a set.",
+            sourceLessonSlug: "why-rope-work",
+          },
+          {
+            prompt: "How does the course frame its load-bearing, rescue, and rigging content?",
+            options: [
+              "As the legal minimum a crew needs before flying a load over an audience",
+              "As a complete substitute for a certified rigging or rescue qualification",
+              "As educational, not certified training",
+              "As enough preparation to belay a climber without supervised practice",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Those lessons are educational and are flagged again at each point where they appear. Where a life or a heavy load depends on the rope, the course says to use rated gear and to get trained and supervised.",
+            sourceLessonSlug: "why-rope-work",
+          },
+          {
+            prompt: "What rope does the course tell you to get for practice?",
+            options: [
+              "A few feet of soft rope, about 3/8 inch",
+              "A stiff steel-cored wire rope at least half an inch in diameter",
+              "Braided kernmantle climbing rope rated to hold repeated lead falls",
+              "Waxed sail twine no thicker than a shoelace, cut into short lengths",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The course asks for a few feet of soft, flexible rope of about 3/8 inch (10 mm), and says to tie each knot slowly as you read until your hands know it without the words.",
+            sourceLessonSlug: "why-rope-work",
+          },
+          {
+            prompt: "Which course does this one say to treat as its direct pair?",
+            options: [
+              "A commercial driver's license course on securing vehicle cargo",
+              "An introductory sailing and coastal navigation certificate",
+              "Sports and media broadcasting",
+              "A wilderness first responder and swiftwater rescue program",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Rope and rigging skill is core to broadcast utility technician work, so the course states outright that it pairs directly with the Sports/Media Broadcasting course and that the two should be taken as a set.",
+            sourceLessonSlug: "why-rope-work",
+          },
+        ],
+      },
+    },
+
     // ── Section 1 ──────────────────────────────────────────────────────────
     {
       slug: "rope-fibers-and-materials",
@@ -146,6 +225,137 @@ export const KNOTS_COURSE: AuthoredCourse = {
 
 ## Sources
 - ${VERRILL}`,
+    },
+
+    {
+      slug: "quiz-rope-and-materials",
+      title: "Section 1 quiz · Rope, cord & materials",
+      section: "1 · Rope, cord & materials",
+      body: "A graded check on rope fibers and construction, the three words every knot description uses, and how rope is coiled and kept. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is a rope's lay?",
+            options: [
+              "The number of individual yarns spun into each of its strands",
+              "The direction of its final twist",
+              "The angle it can bend through before the fibers begin to crush",
+              "The length of rope hanging free below the last load-bearing knot",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Fiber is twisted into yarns, yarns into strands, and strands laid together into rope. The direction of that final twist is the lay, and most traditional rope is right-handed (Z-laid).",
+            sourceLessonSlug: "rope-fibers-and-materials",
+          },
+          {
+            prompt: "Which fiber does the lesson pick when the rope has to absorb a shock load?",
+            options: [
+              "Polyester, because it holds its length under a sudden strain",
+              "Polypropylene, because it floats and sheds water instantly",
+              "Nylon",
+              "Cotton, because its soft fibers crush and cushion the impact",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Nylon is strong and stretchy, which is what absorbs a shock, and that same stretch is why it is a poor choice where you do not want the rope to give. Polyester is the low-stretch control-line fiber; polypropylene is cheap, floats, and degrades in sunlight.",
+            sourceLessonSlug: "rope-fibers-and-materials",
+          },
+          {
+            prompt: "Which rope construction are the classic splices in this course made for?",
+            options: [
+              "Braided rope with a load-bearing core inside a woven sheath",
+              "Double-braid dock line with a polyester cover over a nylon core",
+              "Hollow-braid polypropylene of the kind used for floating throw lines",
+              "Laid three-strand rope",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Laid (twisted, three-strand) rope is what the traditional splices are worked into. Braided rope, a core inside a braided sheath, is common in modern climbing and utility work and generally will not accept a traditional splice.",
+            sourceLessonSlug: "rope-fibers-and-materials",
+          },
+          {
+            prompt: "In a knot description, which part are you told NOT to move while tying?",
+            options: [
+              "The standing part",
+              "The working end you actively weave through the knot",
+              "The bight you form and hold open in your other hand",
+              "The round turn you take before any hitches are added",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Verrill (1917) defines the standing part as the principal or longest part of the rope. It is the part under load, and almost every instruction in this course reads pass the END around the STANDING PART.",
+            sourceLessonSlug: "parts-of-a-rope",
+          },
+          {
+            prompt: "What turns a bight into a loop?",
+            options: [
+              "Pulling it tight enough to deform the strands of the lay",
+              "The rope crossing itself",
+              "Passing the working end through it for a second time",
+              "Wrapping it once completely around a spar or a ring",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A bight is any U-shaped bend that does not cross itself. Once the rope crosses itself the shape is a loop, which Verrill calls a cuckold's-neck and which is the starting shape for the overhand knot and the bowline.",
+            sourceLessonSlug: "parts-of-a-rope",
+          },
+          {
+            prompt: "What does a round turn do before the knot on top of it is loaded at all?",
+            options: [
+              "It doubles the rope's diameter where it passes through the ring",
+              "It locks the working end against the standing part permanently",
+              "It takes friction load first",
+              "It reverses the lay so the rope cannot unlay under tension",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A round turn is a full wrap and a bit, so the rope leaves alongside where it entered. That wrap takes friction load before the knot ever does, which is why the round turn comes first in round turn and two half-hitches.",
+            sourceLessonSlug: "parts-of-a-rope",
+          },
+          {
+            prompt: "When you coil a right-laid rope, what do you feed into each loop?",
+            options: [
+              "An alternating over-under reversal on every second loop",
+              "A half-hitch locking each loop against the one before it",
+              "A full turn against the lay so the coil hangs perfectly flat",
+              "A slight clockwise twist",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The slight clockwise twist lets a right-laid rope lie flat instead of figure-eighting. Braided rope has no lay to twist with, so it prefers a figure-eight or flake coil instead.",
+            sourceLessonSlug: "care-and-coiling",
+          },
+          {
+            prompt: "What does the lesson name as the number-one killer of working rope?",
+            options: [
+              "Abrasion",
+              "Ultraviolet light from long storage in direct sunlight",
+              "Mildew growing inside a natural rope that was put away wet",
+              "Shock loading that stretches the fibers past their elastic limit",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Dragging rope over grit and sharp edges is called out as the number-one killer of working rope. Sun and rot are real and are also listed, but abrasion is the one the lesson ranks first.",
+            sourceLessonSlug: "care-and-coiling",
+          },
+          {
+            prompt: "Which of these should stop you trusting a rope with a load?",
+            options: [
+              "A right-handed lay that spirals clockwise along its length",
+              "Glazing on the surface",
+              "A coil that was made with a clockwise twist in every loop",
+              "A whipping of small twine binding the cut end of the rope",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The inspection list is cuts, glazing (heat damage), and a soft or mushy core. A right-hand lay, a twisted coil, and a whipped end are all normal, correct rope work rather than defects.",
+            sourceLessonSlug: "care-and-coiling",
+          },
+        ],
+      },
     },
 
     // ── Section 2 ──────────────────────────────────────────────────────────
@@ -276,6 +486,176 @@ export const KNOTS_COURSE: AuthoredCourse = {
 - ${VERRILL}`,
     },
 
+    {
+      slug: "quiz-foundational-knots",
+      title: "Section 2 quiz · Foundational knots",
+      section: "2 · Foundational knots",
+      body: "A graded check on the overhand, the figure-eight stopper, the square (reef) knot, and the granny. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What shape do you make first when tying an overhand knot?",
+            options: [
+              "A crossed loop",
+              "An open U-shaped bight that does not cross itself anywhere",
+              "A full round turn around the object being secured",
+              "Two parallel bights laid side by side and seized together",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Verrill (1917) calls the crossed loop a cuckold's-neck: the end is passed over the standing part, and then through that loop, to make the simplest of all knots.",
+            sourceLessonSlug: "overhand-knot",
+          },
+          {
+            prompt: "Why is the overhand a poor permanent stopper on a busy line?",
+            options: [
+              "It slips through a block more easily than a bare rope end does",
+              "It jams under load",
+              "It unties itself whenever the line goes slack and is shaken",
+              "It adds so much bulk that it will not pass a fairlead at all",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The overhand jams hard under load and can be very difficult to untie, and it weakens the rope more than a figure-eight does. The figure-eight is the stopper for that job.",
+            sourceLessonSlug: "overhand-knot",
+          },
+          {
+            prompt: "What use does Verrill give the overhand knot during splicing work?",
+            options: [
+              "Holding the marline-spike in place while the tucks are made",
+              "Marking how many rounds of tucks the splice still needs",
+              "Keeping a strand end from unlaying",
+              "Joining the two ropes before their strands are married together",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Verrill's stated use is keeping the end of a yarn or strand from unlaying while you splice. It is also a quick stopper and the building block of the fisherman's knot.",
+            sourceLessonSlug: "overhand-knot",
+          },
+          {
+            prompt: "What is the key advantage of the figure-eight stopper?",
+            options: [
+              "It is smaller and flatter than any other stopper knot",
+              "It grips the rope hard enough to work as an adjustable hitch",
+              "It can join two ropes of different diameters under a full load",
+              "It does not jam",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The figure-eight is bulkier than the overhand but does not jam, so it unties easily even after loading. That is why it is the standard stopper on running lines such as sheets and halyards.",
+            sourceLessonSlug: "figure-eight-stopper",
+          },
+          {
+            prompt: "After crossing the end over the standing part, where does the end go next in a figure-eight?",
+            options: [
+              "Behind the standing part",
+              "Straight down through the loop you have just formed",
+              "Around the standing part twice before any tuck is made",
+              "Under the standing part and back out the side it entered",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The end goes around behind the standing part, then back and down through the original loop from the top, drawing the shape of the numeral 8. Going straight down through the loop instead would give you an overhand.",
+            sourceLessonSlug: "figure-eight-stopper",
+          },
+          {
+            prompt: "What job does a stopper knot do?",
+            options: [
+              "It joins two separate ropes so they carry one load end to end",
+              "It blocks the end from running out",
+              "It binds a bundle closed so the wrapping cannot work loose",
+              "It makes a fixed loop you can drop over a piling or a post",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A stopper only blocks an end so the line cannot run out through a block, ring, or fairlead. Joining is a bend's job, binding is the square knot's, and a fixed loop is the bowline's.",
+            sourceLessonSlug: "figure-eight-stopper",
+          },
+          {
+            prompt: "What is the square (reef) knot's proper job?",
+            options: [
+              "Joining two separate ropes that will be loaded end to end",
+              "Making a fixed loop at the end of a line for a mooring",
+              "Binding",
+              "Attaching a rope to a smooth spar so that it will not roll off",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The square knot is a binding knot for tying two ends of the same rope around an object: reefing a sail, closing a bundle, finishing a whipping. Loaded as a bend it can capsize and slip.",
+            sourceLessonSlug: "square-reef-knot",
+          },
+          {
+            prompt: "In a correctly tied square knot, where does each end finish?",
+            options: [
+              "Crossing over the top of the knot at a right angle to it",
+              "Tucked under the last two turns and then trimmed off short",
+              "On the opposite side of the knot from its own standing part",
+              "Alongside its own standing part",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Both parts of each rope leave on the same side, forming two neat interlocked bights. Verrill's formula left over, right over is what produces that; breaking it produces the granny, where an end crosses the top at right angles.",
+            sourceLessonSlug: "square-reef-knot",
+          },
+          {
+            prompt: "What is the reef version of the square knot, and why tie it that way?",
+            options: [
+              "A slipped version, to cast it off fast",
+              "A doubled version, so it holds in ropes of very different sizes",
+              "A seized version, so the ends cannot capsize under a shock load",
+              "A tucked version, so the knot can be buried inside a whipping",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Verrill (1917) describes the reef knot as the same knot tied with a bight of one end, a slipped square knot, so that it can be cast off more readily. Doubling is what the sheet bend does for unequal ropes, not the square knot.",
+            sourceLessonSlug: "square-reef-knot",
+          },
+          {
+            prompt: "What tying sequence produces a granny instead of a square knot?",
+            options: [
+              "Passing the left end over and under the right, then reversing",
+              "Right over, then right over again",
+              "Taking a round turn around the object before the first crossing",
+              "Threading one end through the other's loop twice in a row",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The granny is right over, right over, instead of Verrill's left over, right over. Passing the left end over and under the right and then reversing describes the correct square knot, which is exactly the sequence the granny breaks.",
+            sourceLessonSlug: "granny-knot",
+          },
+          {
+            prompt: "What happens to a granny knot under load?",
+            options: [
+              "It capsizes into a correctly formed square knot and then holds",
+              "It holds tighter than a square knot but cuts into the rope",
+              "It slips, or it jams",
+              "It rolls along the standing part until it meets an obstruction",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Because the ends exit across the knot rather than parallel to their standing parts, a granny either works loose or sets so hard it cannot be untied: the worst of both outcomes, which is why Verrill calls it a useless makeshift.",
+            sourceLessonSlug: "granny-knot",
+          },
+          {
+            prompt: "How do you spot a granny by eye?",
+            options: [
+              "The whole knot looks twisted",
+              "The two standing parts leave the knot exactly parallel to each other",
+              "The ends are buried inside the knot and cannot be seen at all",
+              "One rope wraps the other three or more times before the tuck",
+            ],
+            correctIndex: 0,
+            explanation:
+              "In a granny an end crosses over the top at right angles and the knot looks twisted or cocked. In a correct square knot each end lies alongside its own standing part.",
+            sourceLessonSlug: "granny-knot",
+          },
+        ],
+      },
+    },
+
     // ── Section 3 ──────────────────────────────────────────────────────────
     {
       slug: "bowline",
@@ -377,6 +757,137 @@ export const KNOTS_COURSE: AuthoredCourse = {
 ## Sources
 - ${VERRILL}
 - *Topic reference (copyrighted; not reproduced):* Pawson, D. (2012). *Knots: The complete visual guide.* DK.`,
+    },
+
+    {
+      slug: "quiz-loops",
+      title: "Section 3 quiz · Loops",
+      section: "3 · Loops",
+      body: "A graded check on the bowline, the running bowline, and the figure-eight loop, and on which of them belongs near a person. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Why does Verrill call the bowline the king of knots?",
+            options: [
+              "It never slips or jams",
+              "It is the fastest knot to tie one-handed under heavy tension",
+              "It is the only loop that works in braided and laid rope alike",
+              "It cinches down on the object and so cannot shake itself loose",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Verrill (1917) writes that the bowline never slips, jams, or fails, and is easily and quickly untied even after heavy load. A knot that cinches down is the running bowline, which is a different knot.",
+            sourceLessonSlug: "bowline",
+          },
+          {
+            prompt: "In the rabbit mnemonic, where does the rabbit go after coming up out of the hole?",
+            options: [
+              "Straight back down through the same hole it just came out of",
+              "Around the standing part",
+              "Through the large loop and then under its own standing part",
+              "Around the object twice before returning toward the small loop",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Up out of the hole, around the back of the standing part (around the tree), then back down into the hole alongside the part that came up. Reversing that tuck gives you a slip knot instead.",
+            sourceLessonSlug: "bowline",
+          },
+          {
+            prompt: "What does the bowline lesson tell you to do about tying it under heavy tension?",
+            options: [
+              "Take a round turn first so the friction carries the strain",
+              "Double the rope and tie it on a bight so it cannot capsize",
+              "Set the loop before loading",
+              "Add a third tuck through the small loop to keep it from rolling",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The bowline is awkward to tie under heavy tension, so the lesson says to set the loop before loading it. It also warns to leave several inches of tail and to dress the knot before it takes weight.",
+            sourceLessonSlug: "bowline",
+          },
+          {
+            prompt: "What makes a running bowline run?",
+            options: [
+              "The end is tucked back through the small loop a second time",
+              "The knot is tied with a slipped bight so it can be spilled fast",
+              "The bowline is tied around a ring instead of around the object",
+              "Its loop encircles its own standing part",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Verrill (1917) describes it as a bowline with the end passed through the loop, forming a slip knot. Because the standing part runs through the fixed loop, pulling the standing part slides the big loop down and cinches it.",
+            sourceLessonSlug: "running-bowline",
+          },
+          {
+            prompt: "Where must a running bowline never be used?",
+            options: [
+              "Around a person",
+              "On a floating line thrown across a stretch of moving water",
+              "On any rope thicker than the object it is being tied around",
+              "Where the load will be released and reapplied several times",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A running noose tightens without limit, so it must never be used as a lifting sling around a person or as a load choke where a slipping cinch would be dangerous.",
+            sourceLessonSlug: "running-bowline",
+          },
+          {
+            prompt: "You need a loop that stays the same size no matter how hard it is pulled. What do you tie?",
+            options: [
+              "A timber hitch dogged three or more times around its own part",
+              "A plain bowline",
+              "A clove hitch backed up with a half-hitch on the standing part",
+              "A short splice worked into the standing part with three tucks",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The running bowline lesson names the plain bowline as what to use anywhere you need a fixed-size loop. The other three are hitches and a join, none of which make a loop at all.",
+            sourceLessonSlug: "running-bowline",
+          },
+          {
+            prompt: "What does the figure-eight loop trade away compared with a bowline?",
+            options: [
+              "Its strength under a shock load applied off the loop's axis",
+              "The ability to be tied at any point along the standing part",
+              "Easy untying",
+              "Its resistance to shaking loose whenever the line goes slack",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The figure-eight loop trades the bowline's easy untying for security and inspectability. It can set hard after heavy loading, though it is still more workable than an overhand loop.",
+            sourceLessonSlug: "figure-eight-loop",
+          },
+          {
+            prompt: "Why is the figure-eight loop the standard climbing tie-in?",
+            options: [
+              "It is easy to inspect",
+              "It is the only loop that can be untied after holding a hard fall",
+              "It uses less rope than any other loop of the same diameter",
+              "It tightens progressively so the harness cannot work loose",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The 8 shape is obvious, so a partner can verify from across the room that the knot is tied right. The course still flags life-safety climbing knots as educational only: get hands-on instruction and use rated gear.",
+            sourceLessonSlug: "figure-eight-loop",
+          },
+          {
+            prompt: "How should the two strands lie inside a dressed figure-eight on a bight?",
+            options: [
+              "Crossed once at the throat so the knot cannot roll open",
+              "Twisted around each other for the whole length of the knot",
+              "One strand buried under the other where it leaves the knot",
+              "Neatly parallel, never crossed",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Dress it so the two strands lie neatly parallel all the way through. Crossed strands inside the knot are the common mistake, along with leaving too short a tail.",
+            sourceLessonSlug: "figure-eight-loop",
+          },
+        ],
+      },
     },
 
     // ── Section 4 ──────────────────────────────────────────────────────────
@@ -514,6 +1025,176 @@ export const KNOTS_COURSE: AuthoredCourse = {
 - *Topic reference (copyrighted; not reproduced):* Pawson, D. (2012). *Knots: The complete visual guide.* DK.`,
     },
 
+    {
+      slug: "quiz-hitches",
+      title: "Section 4 quiz · Hitches",
+      section: "4 · Hitches",
+      body: "A graded check on the clove hitch, round turn and two half-hitches, the timber hitch, and the adjustable taut-line hitch. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "How many turns around the spar does a clove hitch take?",
+            options: [
+              "Two",
+              "One, with the end tucked back under itself and then trimmed",
+              "Three or more, dogged around the standing part as you go",
+              "As many as it takes for friction alone to hold the whole load",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Verrill's method gives two turns, with the end trapped beneath the diagonal formed by the first. A single turn is not a clove hitch and will not hold; three or more dogged turns describes the timber hitch.",
+            sourceLessonSlug: "clove-hitch",
+          },
+          {
+            prompt: "What is the clove hitch's main weakness?",
+            options: [
+              "It jams so hard under load that it has to be cut off the spar",
+              "It can roll and work loose",
+              "It cannot be tied anywhere except at the very end of a rope",
+              "It weakens the rope more than any other knot in this course",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A clove hitch can roll and work loose if the load direction changes or the rope is slippery, which is why the lesson says to back it with a half-hitch on the standing part or to use two half-hitches instead.",
+            sourceLessonSlug: "clove-hitch",
+          },
+          {
+            prompt: "Where does the clove hitch appear in lashing work?",
+            options: [
+              "As the frapping turns that clamp the two spars tightly together",
+              "As the wrapping turns laid side by side around both of the spars",
+              "At the start and the finish",
+              "As a backup knot tied on the standing part after the last tuck",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A square lashing starts with a clove hitch on one spar and finishes with a clove hitch on the other. The wrapping and frapping turns in between are plain turns of rope, not hitches.",
+            sourceLessonSlug: "clove-hitch",
+          },
+          {
+            prompt: "Why take a round turn before tying two half-hitches?",
+            options: [
+              "It doubles the rope so the hitches grip a larger surface area",
+              "It stops the rope from unlaying where it crosses the metal ring",
+              "It lets you adjust the tension after the hitches are already tied",
+              "Friction takes the load first",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The round turn is the friction-bearing wrap: it carries the strain so the knot is protected from shock. Skipping it on a heavy or shock load is the mistake the lesson calls out.",
+            sourceLessonSlug: "two-half-hitches",
+          },
+          {
+            prompt: "What do two half-hitches tied the same way actually form?",
+            options: [
+              "A clove hitch on the standing part",
+              "A slipped square knot around the object that is being secured",
+              "A pair of overhand knots that jam back to back like a bend does",
+              "A rolling friction hitch that can slide to set the tension",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two half-hitches in the same direction form a clove hitch around the standing part, and that is exactly what makes the arrangement grip. Tie the second the opposite way and you get a loose slip instead.",
+            sourceLessonSlug: "two-half-hitches",
+          },
+          {
+            prompt: "Verrill says hitches made this way will hold in what manner?",
+            options: [
+              "Only while the pull stays in one unchanging direction",
+              "Forever, without loosening",
+              "Until the rope is wet, at which point they have to be retied",
+              "Well enough for a temporary tie but never for a mooring line",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Verrill (1917) writes that such hitches will hold forever without loosening. Depending on continuous tension in one direction is the timber hitch's trait, not this one's.",
+            sourceLessonSlug: "two-half-hitches",
+          },
+          {
+            prompt: "What does a timber hitch do the moment the load comes off?",
+            options: [
+              "It jams tight and has to be worked loose with a marline-spike",
+              "It rolls along the spar toward the hauling end of the rope",
+              "It falls apart",
+              "It holds exactly as firmly as it did while it was under tension",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The timber hitch grips hard under continuous load and spills instantly when the load is released, which is what makes it good for hauling and bad for anything where the pull comes and goes or reverses.",
+            sourceLessonSlug: "timber-hitch",
+          },
+          {
+            prompt: "How many times should the end be dogged around its own part in a timber hitch?",
+            options: [
+              "Once, with the tail tucked under the standing part to lock it",
+              "Twice, in opposite directions so the turns cannot unwind at all",
+              "As many as will fit between the loop and the end of the spar",
+              "Three or more",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Verrill says to twist it three or more times, under and over itself. Fewer than three dog-turns is the mistake that makes the hitch slip under load.",
+            sourceLessonSlug: "timber-hitch",
+          },
+          {
+            prompt: "What do you add to steer a long spar level while hoisting it?",
+            options: [
+              "A half-hitch farther along",
+              "A second timber hitch dogged at the opposite end of the spar",
+              "A seizing of small stuff binding the rope to the spar's middle",
+              "A running bowline cinched down over the hauling end of the rope",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Adding a single half-hitch farther along toward the hauling end makes the killick hitch, which steers a long spar so it lifts level.",
+            sourceLessonSlug: "timber-hitch",
+          },
+          {
+            prompt: "What can a taut-line hitch do that two half-hitches cannot?",
+            options: [
+              "Join two ropes of different diameters end to end under a load",
+              "Adjust the tension",
+              "Hold a load that reverses direction without any backup knot",
+              "Finish a rope end so that it can never fray or unlay again",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The taut-line is an adjustable friction hitch: you slide the knot body along the standing part to set tension, and under load the wraps bind and hold. That is why it is the classic tent and tarp guyline knot.",
+            sourceLessonSlug: "taut-line-hitch",
+          },
+          {
+            prompt: "How many turns does the taut-line hitch take around the standing part?",
+            options: [
+              "Two, both taken on the far side of the loop from the anchor",
+              "Five or more, laid neatly beside one another like a seizing",
+              "Three",
+              "One for each inch of adjustment range you expect to need",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Two turns inside the loop, then one more around the standing part on the far side, snugged together: three in all. Taking the extra turn on the wrong side is what stops the hitch gripping.",
+            sourceLessonSlug: "taut-line-hitch",
+          },
+          {
+            prompt: "Where can a taut-line hitch let you down?",
+            options: [
+              "On slick synthetic rope",
+              "On natural fiber rope, where its turns bind and will not slide",
+              "On any line shorter than the distance to the nearest anchor",
+              "On a guy line that has to hold one steady, unchanging tension",
+            ],
+            correctIndex: 0,
+            explanation:
+              "On very slick synthetic rope the hitch can creep, so the lesson says to add a wrap or use a mechanical tensioner. It is also not for shock loads or any life-load use.",
+            sourceLessonSlug: "taut-line-hitch",
+          },
+        ],
+      },
+    },
+
     // ── Section 5 ──────────────────────────────────────────────────────────
     {
       slug: "sheet-bend",
@@ -616,6 +1297,137 @@ export const KNOTS_COURSE: AuthoredCourse = {
 - ${VERRILL}`,
     },
 
+    {
+      slug: "quiz-bends",
+      title: "Section 5 quiz · Bends",
+      section: "5 · Bends (joining two ropes)",
+      body: "A graded check on the sheet bend, the double sheet bend, and the fisherman's knot, the three ways this course joins two separate ropes. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Which rope forms the bight in a sheet bend?",
+            options: [
+              "The thinner one, so the thick rope can be threaded through it",
+              "The thicker one",
+              "Whichever rope will carry the greater share of the total load",
+              "Both of them, each forming a bight that interlocks with the other",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The thicker or stiffer rope forms the bight and the thinner rope is threaded through it. Making the bight in the thin rope instead is one of the mistakes the lesson names.",
+            sourceLessonSlug: "sheet-bend",
+          },
+          {
+            prompt: "Where should the two short ends finish on a properly tied sheet bend?",
+            options: [
+              "On opposite sides, so the knot cannot capsize under a load",
+              "Buried under the standing parts where they cannot be seen",
+              "Pointing back along their own standing parts and then seized",
+              "On the same side",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Both short ends should end up on the same side of the knot. Ends on opposite sides mean you have tied the weaker left-hand sheet bend, and the lesson says to retie it.",
+            sourceLessonSlug: "sheet-bend",
+          },
+          {
+            prompt: "What is the plain sheet bend's weakness?",
+            options: [
+              "It can work loose when unloaded",
+              "It slips as soon as the two ropes are of the same thickness",
+              "It jams permanently once it has taken any serious strain at all",
+              "It cuts into the thinner of the two ropes where they cross",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A plain sheet bend can work loose under a load that goes slack and shakes, which is exactly the case the double sheet bend exists for. Equal-thickness rope is the easy case for it, not the hard one.",
+            sourceLessonSlug: "sheet-bend",
+          },
+          {
+            prompt: "What does the double sheet bend add to the plain one?",
+            options: [
+              "An overhand knot in each tail to stop it pulling back through",
+              "A seizing of small stuff binding the two standing parts together",
+              "A second wrap around the bight",
+              "A round turn taken around both ropes before the first tuck",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The thin end takes a second complete wrap around both legs of the bight, so two turns grip the bight instead of one. Everything else about the knot is unchanged.",
+            sourceLessonSlug: "double-sheet-bend",
+          },
+          {
+            prompt: "When is the extra bulk of a double sheet bend worth it?",
+            options: [
+              "In slick or very unequal rope",
+              "Whenever both ropes are natural fiber and already grip well",
+              "Whenever the join has to be untied quickly and then retied",
+              "Whenever the join will run through a block under a heavy load",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is for ropes that differ a lot in diameter, for slick synthetic rope where a single sheet bend might slip, and for a bend that will be loaded and unloaded repeatedly. In grippy, similar-sized rope the single version is enough.",
+            sourceLessonSlug: "double-sheet-bend",
+          },
+          {
+            prompt: "Where in the sequence does the extra wrap of a double sheet bend go?",
+            options: [
+              "After the tails have been drawn snug and dressed down flat",
+              "Around the thin rope's own standing part instead of the bight",
+              "Between the two legs of the bight, the way a frapping turn goes",
+              "Before the final tuck",
+            ],
+            correctIndex: 3,
+            explanation:
+              "You tie the sheet bend up to the point where the thin end has gone around behind the bight, take the second wrap, and only then tuck the end under its own standing part with the tails on the same side.",
+            sourceLessonSlug: "double-sheet-bend",
+          },
+          {
+            prompt: "What is each half of a fisherman's knot?",
+            options: [
+              "An overhand knot",
+              "A half-hitch taken around the object and then its own part",
+              "A figure-eight tied on a bight of the opposite rope's end",
+              "A clove hitch tied around the other rope's standing part",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Verrill (1917) describes it as two simple overhand knots slipped over each rope. Pulling the two standing parts apart slides them together so they jam back to back into one tidy knot.",
+            sourceLessonSlug: "fishermans-knot",
+          },
+          {
+            prompt: "Around what does each overhand knot in a fisherman's knot get tied?",
+            options: [
+              "Its own standing part, so each knot is independent of the other",
+              "Both standing parts at once, so the knots cannot slide apart",
+              "The other rope's standing part",
+              "A bight formed in the thicker of the two lines being joined",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Rope A's end ties an overhand around rope B's standing part and rope B's end ties one around rope A's. Tying both around the same rope is the mistake the lesson warns about.",
+            sourceLessonSlug: "fishermans-knot",
+          },
+          {
+            prompt: "Where is a fisherman's knot a poor choice?",
+            options: [
+              "In small-diameter cord, where a sheet bend would be fiddly",
+              "In thick, stiff rope",
+              "In fishing line, where the two ends must be joined securely",
+              "In twine, where the join has to stay put in slick, thin line",
+            ],
+            correctIndex: 1,
+            explanation:
+              "In thick, stiff rope the fisherman's knot sets very hard and is difficult to untie, so the lesson sends you to the sheet bend there. Thin cord, twine, and fishing line are exactly what it is good for.",
+            sourceLessonSlug: "fishermans-knot",
+          },
+        ],
+      },
+    },
+
     // ── Section 6 ──────────────────────────────────────────────────────────
     {
       slug: "whipping-a-rope-end",
@@ -683,6 +1495,124 @@ export const KNOTS_COURSE: AuthoredCourse = {
 
 ## Sources
 - ${VERRILL}`,
+    },
+
+    {
+      slug: "quiz-whippings-and-seizings",
+      title: "Section 6 quiz · Whippings & seizings",
+      section: "6 · Whippings & seizings",
+      body: "A graded check on finishing one rope end with a whipping and binding two parts together with a seizing. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What does a whipping stop a rope end from doing?",
+            options: [
+              "Slipping back through the block that the line was rove through",
+              "Absorbing water and then rotting from the inside outward",
+              "Stretching under load until the splice loses its shape",
+              "Fraying and unlaying",
+            ],
+            correctIndex: 3,
+            explanation:
+              "A whipping binds the cut end with small twine so it cannot fray and unlay. Blocking an end from running out is a stopper knot's job, and neither rot nor stretch is affected by it.",
+            sourceLessonSlug: "whipping-a-rope-end",
+          },
+          {
+            prompt: "How is the common whipping locked off at the end?",
+            options: [
+              "A buried loop drags the end under",
+              "A square knot tied in the two tails and then pulled down flat",
+              "A clove hitch taken around the rope over the last few turns",
+              "A drop of heat sealing the twine against the rope's own fibers",
+            ],
+            correctIndex: 0,
+            explanation:
+              "You wrap over a loop of the free twine, pass the working end through that loop, then pull the buried tail so the loop drags the working end back under the wraps. Trim both tails and there is no visible knot at all.",
+            sourceLessonSlug: "whipping-a-rope-end",
+          },
+          {
+            prompt: "How long should a whipping be?",
+            options: [
+              "Exactly one inch, measured back from the cut end of the rope",
+              "About as long as the rope is wide",
+              "Long enough to cover the three tucks of the splice beneath it",
+              "Half the rope's diameter, so that it adds no bulk at the end",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The lesson says to make it roughly as long as the rope is wide, or more. Too short a whipping, and wrapping too loosely, are the two mistakes that let it slide off.",
+            sourceLessonSlug: "whipping-a-rope-end",
+          },
+          {
+            prompt: "Why prefer a whipping to a melted end on synthetic rope?",
+            options: [
+              "It is the only finish that keeps the strands from stretching",
+              "It seals the fibers so water cannot travel up inside the rope",
+              "It outlasts a melted end",
+              "It lets the end pass a block that a melted end would jam in",
+            ],
+            correctIndex: 2,
+            explanation:
+              "On synthetic rope a whipping outlasts a melted end and will not crack off. A melted or taped end may do for scrap line, but the lesson says to whip any rope you respect.",
+            sourceLessonSlug: "whipping-a-rope-end",
+          },
+          {
+            prompt: "What does a seizing bind together?",
+            options: [
+              "Two rope ends butted together so they carry the load in line",
+              "The three strands of one rope after they have been unlaid",
+              "A rope and the spar it is being made fast to, permanently",
+              "Two parts lying side by side",
+            ],
+            correctIndex: 3,
+            explanation:
+              "A seizing binds two ropes, or two parts of one rope, side by side with turns of small stuff so they act as one. Where a whipping finishes one end, a seizing lashes two parts together.",
+            sourceLessonSlug: "seizings",
+          },
+          {
+            prompt: "What are the frapping turns in a seizing?",
+            options: [
+              "Turns taken around the round turns",
+              "The first turns laid neatly beside each other along both ropes",
+              "The tucks that bury the twine's end beneath the finished seizing",
+              "The wraps that trap the starting tail before the seizing begins",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Frapping turns pass between the two ropes and around the round turns themselves, squeezing the seizing tight. Two or three of them go on after the round turns are laid.",
+            sourceLessonSlug: "seizings",
+          },
+          {
+            prompt: "What happens if you skip the frapping turns?",
+            options: [
+              "The two ropes jam together so hard that they cannot be parted",
+              "The seizing slips",
+              "The twine cuts through the outer fibers of both ropes at once",
+              "The round turns overlap instead of lying neatly side by side",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The frapping turns are what make a seizing grip. Skip them, or lay the round turns loose or overlapping, and the seizing slides along the ropes it was meant to bind.",
+            sourceLessonSlug: "seizings",
+          },
+          {
+            prompt: "What job must you never give a seizing?",
+            options: [
+              "Making a permanent eye by binding a loop's two legs together",
+              "Holding two ropes together so that they share a single load",
+              "Joining ropes end to end",
+              "Binding the throat of a hook or the neck of a finished splice",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A seizing binds parts that lie alongside each other. Joining two ropes end to end under pull is a bend's job. The other three uses are exactly what the lesson lists a seizing for.",
+            sourceLessonSlug: "seizings",
+          },
+        ],
+      },
     },
 
     // ── Section 7 ──────────────────────────────────────────────────────────
@@ -787,6 +1717,137 @@ export const KNOTS_COURSE: AuthoredCourse = {
 
 ## Sources
 - ${VERRILL}`,
+    },
+
+    {
+      slug: "quiz-splices",
+      title: "Section 7 quiz · Splices",
+      section: "7 · Splices",
+      body: "A graded check on the eye splice, the short splice, and the back splice, the three permanent finishes worked into laid rope. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "How many rounds of tucks does an eye splice need at a minimum?",
+            options: [
+              "One, provided the strand tips are whipped before they are cut",
+              "Two, plus a seizing across the throat where the eye closes up",
+              "Three",
+              "Six, halving the strands after each pair of completed rounds",
+            ],
+            correctIndex: 2,
+            explanation:
+              "At least three full rounds of tucks, and more in slippery synthetic rope. Fewer than three is the mistake that lets a splice pull out under load.",
+            sourceLessonSlug: "eye-splice",
+          },
+          {
+            prompt: "Which way do you tuck the strands of a splice?",
+            options: [
+              "Against the lay",
+              "With the lay, so the tucks tighten as the rope is twisted up",
+              "Straight through the middle of the rope between the strands",
+              "Alternating with and against the lay on each successive round",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Each strand goes over one standing strand and under the next, tucked against the lay. Tucking with the lay instead is a named mistake in all three splice lessons.",
+            sourceLessonSlug: "eye-splice",
+          },
+          {
+            prompt: "Why taper a splice by halving the strands before the last tucks?",
+            options: [
+              "So the strands cannot pull out under a sudden shock load",
+              "So the eye can be opened and closed around a larger fitting",
+              "So the splice will pass through a block sized for the bare rope",
+              "So it is smooth and does not snag",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Tapering is Verrill's neatness tip: it gives a smooth shoulder instead of a lump that snags and jams. Strength comes from the number of rounds of tucks, not from the taper.",
+            sourceLessonSlug: "eye-splice",
+          },
+          {
+            prompt: "What is the drawback of a short splice?",
+            options: [
+              "It thickens the rope",
+              "It is weaker than any of the bends taught in this course",
+              "It can only be made between ropes of two different diameters",
+              "It pulls apart the moment the load comes off the finished join",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A short splice is stronger than any bend, but it swells the rope at the join, so it will not run through a block, ring, or fairlead. That is the trade the lesson asks you to make.",
+            sourceLessonSlug: "short-splice",
+          },
+          {
+            prompt: "What does it mean to marry two ropes?",
+            options: [
+              "Seizing their standing parts together with turns of small stuff",
+              "Interlacing their unlaid strands",
+              "Tucking each strand under one and over the next, against the lay",
+              "Whipping both ends so no strand can unlay while you work",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Marrying pushes the two unlaid ends together so the strands of one rope interlace alternately between the strands of the other and the ropes butt up. The tucking comes afterward.",
+            sourceLessonSlug: "short-splice",
+          },
+          {
+            prompt: "Where must you not use a short splice?",
+            options: [
+              "On dock lines and standing rigging that stay permanently rove",
+              "On three-strand laid rope whose ends have already been whipped",
+              "Where maximum strength matters more than anything else does",
+              "Where the rope runs through a block",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The bulge at the join jams in a block, ring, or fairlead. Standing rigging and dock lines that never pass a sheave are exactly where a short splice belongs.",
+            sourceLessonSlug: "short-splice",
+          },
+          {
+            prompt: "Which knot starts a back splice?",
+            options: [
+              "An overhand knot tied in all three strands together at once",
+              "A clove hitch taken around the rope below the unlaid strands",
+              "A crown knot",
+              "A figure-eight tied on a bight of the standing part's strands",
+            ],
+            correctIndex: 2,
+            explanation:
+              "You unlay the three strands, tie a crown knot by laying each strand over its neighbor in turn, and only then tuck the strands back down into the standing part.",
+            sourceLessonSlug: "back-splice",
+          },
+          {
+            prompt: "What does the crown knot do to the three strands?",
+            options: [
+              "Points them back down the rope",
+              "Locks them so they can be trimmed with no further tucks needed",
+              "Splits each of them in half ready for the tapering tucks to come",
+              "Binds them against the standing part the way a seizing would",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The crown turns the three strands back down the standing part so they can be tucked in, over one and under the next, for three rounds. A loose or wrong crown makes the whole thing unravel.",
+            sourceLessonSlug: "back-splice",
+          },
+          {
+            prompt: "When is a back-spliced end the wrong finish?",
+            options: [
+              "On a hand-line, where the crown gives a knob to grip",
+              "When the end must pass through a hole",
+              "On a lanyard whose end is handled constantly and needs wear",
+              "Whenever no twine is available to whip the end with instead",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A back splice slightly thickens the end, so it will not fit through a hole, block, or grommet. Whip the end flat there instead. It also will not work on braided rope.",
+            sourceLessonSlug: "back-splice",
+          },
+        ],
+      },
     },
 
     // ── Section 8 ──────────────────────────────────────────────────────────
@@ -925,6 +1986,176 @@ export const KNOTS_COURSE: AuthoredCourse = {
 ## Sources
 - ${VERRILL}
 - *Further reading (copyrighted; not reproduced):* Pawson, D. (2012). *Knots: The complete visual guide.* DK.`,
+    },
+
+    {
+      slug: "quiz-practical-applications",
+      title: "Section 8 quiz · Practical applications",
+      section: "8 · Practical applications",
+      body: "A graded check on lashings, securing loads, and the safety line between rope work you can do and rigging that belongs to certified riggers. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Which knot starts and finishes a square lashing?",
+            options: [
+              "A round turn followed by two half-hitches on the standing part",
+              "A timber hitch dogged three times around its own standing part",
+              "A clove hitch",
+              "A bowline dropped over the free end of the spar being lashed",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Start with a clove hitch on one spar next to the crossing point and finish with a clove hitch on the opposite spar. Starting or finishing without one is how a lashing unwinds.",
+            sourceLessonSlug: "lashings",
+          },
+          {
+            prompt: "What clamps a square lashing solid?",
+            options: [
+              "The frapping turns",
+              "The three to five wrapping turns pulled tight in a square pattern",
+              "The clove hitch tied onto the second spar at the very end",
+              "A seizing taken across the crossing point before you start work",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two or three frapping turns pass between the spars and around the wrapping turns themselves, and heaving them tight is what clamps the joint. Skip them and the joint stays floppy.",
+            sourceLessonSlug: "lashings",
+          },
+          {
+            prompt: "Which lashing binds two parallel spars that are then opened into an A-frame?",
+            options: [
+              "A diagonal lashing, which pulls together spars that spring apart",
+              "A square lashing, used where two spars cross at right angles",
+              "A frapped seizing taken around both spars and then heaved tight",
+              "A shear lashing",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The shear lashing binds two parallel spars that are afterward opened into an A-frame. The diagonal and square lashings described in the other options are the course's own definitions of those two different lashings.",
+            sourceLessonSlug: "lashings",
+          },
+          {
+            prompt: "What is the core idea behind a rope tie-down?",
+            options: [
+              "Enough mechanical advantage to crush the load down into the deck",
+              "Friction plus a releasable tie",
+              "A single unbroken run of rope with no knots anywhere along it",
+              "Rated hardware at every anchor point along the whole of the run",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The lesson states the core idea as friction plus a lockable, releasable tie. Rated hardware is what regulations require for heavy or public-road loads, which is a different case the lesson flags separately.",
+            sourceLessonSlug: "securing-loads",
+          },
+          {
+            prompt: "Which knot does the tie-down sequence use to anchor the first end?",
+            options: [
+              "Round turn and two half-hitches",
+              "A taut-line hitch, so the anchor end can be re-tensioned later",
+              "A clove hitch, because it is the fastest hitch to tie on a rail",
+              "A sheet bend joining the rope to a becket on the anchor point",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The round turn takes the strain and the two half-hitches lock it. The taut-line hitch comes later in the sequence, at the far end, where you actually want to dial in tension.",
+            sourceLessonSlug: "securing-loads",
+          },
+          {
+            prompt: "Why add a guarding half-hitch where a line crosses an edge?",
+            options: [
+              "So the rope's lay cannot open up and let grit inside the strands",
+              "So the tension can be released from either end of the whole run",
+              "So the line cannot creep",
+              "So the edge carries the load instead of the anchor knot doing it",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Guarding half-hitches stop the line creeping where it crosses an edge. The edge itself is a hazard rather than a help: an unprotected line over a sharp edge chafes through.",
+            sourceLessonSlug: "securing-loads",
+          },
+          {
+            prompt: "What must you never do with a line in moving water?",
+            options: [
+              "Tie yourself rigidly into it",
+              "Throw it before the person in the water has signaled they are ready",
+              "Belay it from a braced position on the bank above the swimmer",
+              "Use a floating polypropylene line rather than a nylon one",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson says never to tie yourself rigidly into a line in current. Throwing from a braced, safe position and belaying from there is the described technique, not a hazard.",
+            sourceLessonSlug: "rescue-and-safety-uses",
+          },
+          {
+            prompt: "Why is a fixed loop preferred over a running noose near a person?",
+            options: [
+              "It is faster to untie once the person has been pulled clear",
+              "It floats higher in the water where a swimmer can see it coming",
+              "It is the only loop that can be thrown accurately at a distance",
+              "It cannot tighten on them",
+            ],
+            correctIndex: 3,
+            explanation:
+              "A bowline or figure-eight loop will not tighten around a person, while a running bowline cinches without limit and must never go around a body.",
+            sourceLessonSlug: "rescue-and-safety-uses",
+          },
+          {
+            prompt: "What does the lesson say about improvising a hauling system?",
+            options: [
+              "It is safe as long as the anchors are doubled and backed up",
+              "It is a trained skill, not improvised",
+              "It is the one rescue task a text lesson can fully prepare you for",
+              "It needs no rated gear while the load stays under a person's weight",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Hauling with mechanical advantage is described as a trained skill using rated anchors, not something to improvise under load. The whole rescue lesson is awareness only.",
+            sourceLessonSlug: "rescue-and-safety-uses",
+          },
+          {
+            prompt: "What is the daily craft of a broadcast utility technician?",
+            options: [
+              "Flying lighting trusses on motors above a seated audience",
+              "Calculating load limits for the shackles holding a speaker array",
+              "Certifying a venue's rigging points before the show loads in",
+              "Dressing and securing cable",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Running, dressing, and securing cable, plus neat coiling and ground-level gear tie-down, is the utility tech's work. Everything in the other three options is rated rigging for certified riggers.",
+            sourceLessonSlug: "broadcast-stage-rigging-basics",
+          },
+          {
+            prompt: "What does the lesson call the single most important professional skill in this work?",
+            options: [
+              "Knowing your limits",
+              "Tying every hitch in the course faster than anyone else on crew",
+              "Owning your own rated slings, shackles, and load-testing gear",
+              "Reading a truss load chart without needing any supervision",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Knowing which tasks are utility rope work and which are overhead rigging or flying loads, and deferring on the second kind to certified riggers and rated hardware, is named as the key professional skill.",
+            sourceLessonSlug: "broadcast-stage-rigging-basics",
+          },
+          {
+            prompt: "What does coiling cable over-under achieve on a broadcast crew?",
+            options: [
+              "It shortens the coil so more cable fits into the same road case",
+              "The cable lays flat and pays out clean",
+              "It keeps the connectors dry when the coil is stored outdoors",
+              "It lets one person carry twice the weight of cable at a time",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The over-under habit is the broadcast version of the coiling lesson: cable that lays flat and pays out clean, instead of a sloppy coil that tangles or trips someone.",
+            sourceLessonSlug: "broadcast-stage-rigging-basics",
+          },
+        ],
+      },
     },
 
     // ── Exercise ───────────────────────────────────────────────────────────
