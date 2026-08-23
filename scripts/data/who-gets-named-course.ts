@@ -2189,5 +2189,531 @@ Patent Act, 35 U.S.C. § 261 (Ownership; assignment).`,
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 5 — The archive's silences: reading a gap as evidence
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "four-moments-of-silence",
+      title: "17 · Four places a record goes quiet",
+      section: "Section 5 · The archive's silences",
+      body: `Everything so far assumed a document exists to argue about. Often one does not, and the absence is the most misread evidence in this whole subject.
+
+**Trouillot's four moments.** In *Silencing the Past*, the anthropologist Michel-Rolph Trouillot argued that silences enter the production of history at four distinct points: the moment of **fact creation**, which is the making of sources; the moment of **fact assembly**, which is the making of archives; the moment of **fact retrieval**, which is the making of narratives; and the moment of **retrospective significance**, which is the making of history in the final instance (Trouillot, 1995). Four separate operations, four separate opportunities for a name to drop out, and each one leaves a different trace.
+
+**Run them on credit.** *Fact creation*: the payroll classification, the author line, the inventor declaration. If a surgical researcher is carried on the payroll as a janitor, the payroll is now a source, and it says he was a janitor. *Fact assembly*: which papers a family keeps, which an institution accessions, which a fire takes. *Fact retrieval*: which of the surviving records a writer actually picks up, which is where the Matthew effect gets a second turn, because the better known name is the one a researcher searches for first. *Retrospective significance*: which of the assembled stories anyone decides is worth telling.
+
+**The rule that makes a gap usable.** Do not read absence as proof of absence, and do not read it as proof of suppression either. Ask instead: **what would have had to happen for this record to exist?** If the answer is "somebody would have had to be permitted to sign it," then the gap is evidence about the permission rule, and the permission rule is documented elsewhere. That is a finding. If the answer is "somebody would have had to have done the thing," the gap is evidence the thing may not have happened, and you should say so.
+
+**The discipline that keeps it honest.** Write down what the record would look like under *each* hypothesis before you look. If a contribution was real but unnameable, expect corroboration in the surrounding material: laboratory notes, correspondence, later testimony, an eventual honorary correction. If the contribution was not real, expect the surrounding material to be silent too. A gap that is *isolated* is a finding about the record. A gap surrounded by more silence is often just an absence.
+
+**One asymmetry to watch for.** Two comparable people can leave very different quantities of paper, and the better documented one will look more real. That is a bias in the reader, not a fact about the past. It is why lesson 7 could show what the Walker company earned in specific years while the comparable figures for Malone's business are, by her own biographer's account, not documented anywhere anyone has produced. The correct inference is about what survived, not about which business was larger.
+
+:::reveal Name Trouillot's four moments in order. ||| Fact creation, the making of sources. Fact assembly, the making of archives. Fact retrieval, the making of narratives. And retrospective significance, the making of history in the final instance.
+
+:::reveal What is the question that turns a gap into a finding? ||| What would have had to happen for this record to exist? If the answer is that somebody would have had to be permitted to sign it, the gap is evidence about a permission rule that is documented elsewhere.
+
+:::reveal How do you tell a gap that is evidence from a gap that is just an absence? ||| Write down what the record would look like under each hypothesis before you look. A real but unnameable contribution should leave corroboration nearby, in notes, correspondence, testimony or a later correction. An absent contribution leaves the surrounding material silent too.
+
+## Vocabulary
+- **Fact creation**: Trouillot's first moment, the making of sources, where a payroll classification or an author line becomes the record.
+- **Fact assembly**: his second moment, the making of archives, which decides what survives to be read at all.
+- **Fact retrieval**: his third moment, the making of narratives, where a researcher's search terms give the Matthew effect a second turn.
+- **Retrospective significance**: his fourth moment, the making of history, where someone decides which assembled story matters.
+- **Isolated gap**: a silence surrounded by corroborating material, which is evidence about the record rather than about the event.
+
+## Sources
+Trouillot, M.-R. (1995). *Silencing the past: Power and the production of history*. Beacon Press.`,
+    },
+    {
+      slug: "henrietta-lacks-and-the-substituted-name",
+      title: "18 · Henrietta Lacks, and a record that carried the wrong name",
+      section: "Section 5 · The archive's silences",
+      body: `On 8 February 1951 a biopsy was taken from Henrietta Lacks, a 31-year-old woman being treated for cervical cancer at Johns Hopkins Hospital. The tissue went to George Otto Gey's Tissue Culture Laboratory, where his assistant Mary Kubicek grew it, and the cells did what no previous human cells had done: they kept dividing. Gey distributed them freely to anyone who asked. Neither Lacks nor her family gave permission, and Johns Hopkins states that in 1951 there was no established practice of obtaining consent for the collection of cells or tissue for research (Johns Hopkins Medicine, n.d.).
+
+**The family's position leads, and it is about more than consent.** The objection the Lacks family has pressed is not only that the cells were taken. It is that a global industry was built on them while the family had no knowledge, no say and no share. That is the shape of the case, and everything else in this lesson is subordinate to it.
+
+**Now the part that belongs to this section.** For roughly two decades the cell line was not attributed to Henrietta Lacks in print. It was attributed to a "Helen Lane," and in some accounts a "Helen Larson." A name that never existed sat in the literature in the place of a real one. The substitution ended in 1973, when a query in *Nature* obtained her actual name. Who introduced the false name, and why, is not settled by the record, and this course does not guess.
+
+**Read that against Trouillot.** The moment of fact creation produced a source containing a wrong name. The moment of fact assembly filed it. The moment of fact retrieval meant that every researcher for twenty years who went looking found "Helen Lane," which is worse than a gap: a gap invites a question, and a plausible wrong answer stops one being asked.
+
+**What the family learned, and when.** Also in 1973, after staff at Johns Hopkins found that HeLa cells could contaminate other cultures, a physician contacted the Lacks family seeking blood samples. Accounts agree the family did not understand the purpose of the visit.
+
+**The corrections, with their dates.** In March 2013 the genome of a HeLa strain was published without the family's knowledge, and the authors withdrew access after the family objected. On 7 August 2013 the National Institutes of Health announced a controlled-access policy for HeLa genomic data, agreed with the family after three meetings, with review by a committee that includes two members of the Lacks family. On 1 August 2023 the family announced a settlement with Thermo Fisher Scientific; the terms are confidential, and no court ruled on the merits of the claim. Further litigation has followed, and this course does not state its outcomes, because a case's status changes and an out-of-date assertion in a lesson is worse than a hedge.
+
+**What was and was not repaired.** The name is right now. The family sits on the committee. A settlement was reached on undisclosed terms. The cells are still in use worldwide, and nothing reaches back to 1951.
+
+:::reveal What was taken, when, and under what consent conditions? ||| A biopsy from Henrietta Lacks on 8 February 1951 at Johns Hopkins Hospital, during treatment for cervical cancer, without her or her family's permission. Johns Hopkins states there was no established practice of obtaining consent for research tissue at the time.
+
+:::reveal Why does this lesson say a substituted name is worse than a gap? ||| Because a gap invites a question and a plausible wrong answer stops one being asked. For about two decades researchers looking for the source of HeLa found "Helen Lane," a person who did not exist.
+
+:::reveal Give the three dated corrections in this case and say what none of them reached. ||| The 1973 Nature query that recovered her name, the NIH controlled-access agreement announced on 7 August 2013 with two family members on the review committee, and the confidential settlement with Thermo Fisher announced on 1 August 2023. None of them reaches back to 1951, and the cells remain in worldwide use.
+
+## Vocabulary
+- **HeLa**: the cell line grown from Henrietta Lacks's 1951 biopsy, the first human cells to keep dividing indefinitely in culture.
+- **Substituted name**: a false attribution occupying the place of the true one in a record, which suppresses the question a blank space would have raised.
+- **Controlled access**: the 2013 arrangement under which requests to use HeLa genomic data are reviewed by a committee including two Lacks family members.
+- **Confidential settlement**: a resolution whose terms are not disclosed and in which no court rules on the merits, so it establishes no precedent for anyone else.
+
+## Sources
+Johns Hopkins Medicine. (n.d.). *The legacy of Henrietta Lacks*. https://www.hopkinsmedicine.org/henrietta-lacks
+
+National Public Radio. (2023, August 1). *Henrietta Lacks' family reaches settlement over use of her "stolen" cells*. https://www.npr.org/2023/08/01/1191283359/henrietta-lacks-descendants-settlement-stolen-cells`,
+    },
+    {
+      slug: "selma-burke-and-the-dime",
+      title: "19 · Selma Burke, and a dispute the record cannot close",
+      section: "Section 5 · The archive's silences",
+      body: `Selma Burke lived from 1900 to 1995. In 1943 she won a Commission of Fine Arts competition to sculpt a relief portrait of Franklin Delano Roosevelt for the Recorder of Deeds Building in Washington. She asked for and received a sitting with the president, because photographs did not give her what she wanted. The finished relief was unveiled in 1945. On 30 January 1946, which would have been Roosevelt's sixty-fourth birthday, the United States Mint released a dime carrying a Roosevelt profile and the initials JS, for John Sinnock, chief engraver from 1925 to 1947.
+
+Burke maintained for the rest of her life that the dime derived from her relief. This lesson does not settle that, and says why.
+
+**The case for Burke.** She had a documented sitting with the subject in the year before the coin, and a finished, publicly unveiled relief. The Smithsonian American Art Museum's own record describes her relief portrait of Roosevelt as the model for his image on the dime and says the 1944 work inspired the Roosevelt dime (Smithsonian American Art Museum, n.d.). One of Roosevelt's sons also credited her. Burke and her supporters raised the objection as soon as the coin circulated and asked for an investigation.
+
+**The case for Sinnock.** He was the Mint's chief engraver, the initials on the coin are his, and the Mint credits him. He had produced presidential medals before, including work on Roosevelt, so a design lineage inside the Mint that predates Burke's relief is at least available as an explanation. He denied the accusation. Some numismatic comparisons of the two profiles report visible differences, particularly around the nose and hair.
+
+**Why the record cannot close it.** A resemblance between two portraits of the same man, both made from life or from good photographs, is weak evidence of copying in either direction, because the underlying face constrains both. There is no document in which anyone records taking the design from the relief, and no document establishing independent derivation either. What exists is an official attribution, a rival claim made contemporaneously by a named artist, and an institution that later credited the artist. Each is real. None is dispositive.
+
+**What this case teaches that a resolved one could not.** Every other case in this course eventually acquired something: a portrait, a degree, an agreement, an expungement, a rename. This one acquired an argument and kept it. That is the ordinary outcome, not the exception, and a course that only taught the cases with tidy endings would leave you expecting an ending. The honest position is the one the evidence supports: Burke's claim is serious, documented and unproven, the Mint's attribution is official and uninterrogated, and a reader who repeats either as settled fact is making a bet.
+
+:::reveal Give the three dates that frame the Burke and Sinnock dispute. ||| The 1943 competition she won for the Recorder of Deeds relief, the 1945 unveiling of the finished relief, and the release of the Roosevelt dime on 30 January 1946 carrying John Sinnock's initials.
+
+:::reveal Name one piece of evidence on each side, and say why neither settles it. ||| For Burke: a documented sitting with Roosevelt and the Smithsonian American Art Museum's record calling her relief the model for the dime. For Sinnock: the Mint's official attribution, his initials on the coin, and his prior presidential medal work. Neither settles it, because a resemblance between two portraits of the same face is weak evidence of copying and no document records a derivation either way.
+
+:::reveal Why does this course include a case it cannot resolve? ||| Because an unresolved argument is the ordinary outcome, and a course teaching only the cases with tidy endings would leave a reader expecting one. The defensible position is that Burke's claim is serious, documented and unproven.
+
+## Vocabulary
+- **Official attribution**: the credit an institution records as fact, here the Mint's crediting of Sinnock, which carries authority without constituting evidence about derivation.
+- **Contemporaneous claim**: an objection raised at the time by a named person, which is stronger than a later reconstruction and still not proof.
+- **Weak evidence of copying**: a resemblance between two portraits of the same subject, which the subject's own face largely explains.
+- **Dispositive**: sufficient on its own to settle a question, which nothing in this dispute is.
+
+## Sources
+Smithsonian American Art Museum. (n.d.). *Selma Burke*. https://americanart.si.edu/artist/selma-burke-27983`,
+    },
+    {
+      slug: "quiz-archive-silences",
+      title: "20 · Knowledge check: the archive's silences",
+      section: "Section 5 · The archive's silences",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "Who identified four moments at which silences enter historical production?",
+            options: ["Michel-Rolph Trouillot", "Robert K. Merton, in the follow-up essay he published in Isis in 1988", "Margaret W. Rossiter, in the 1993 paper that named the Matilda effect", "Matilda Joslyn Gage, in her 1883 essay for the North American Review"],
+            correctIndex: 0,
+            explanation: "In Silencing the Past: Power and the Production of History, published by Beacon Press in 1995.",
+            sourceLessonSlug: "four-moments-of-silence",
+          },
+          {
+            prompt: "Trouillot's first moment of silence is:",
+            options: ["Fact creation, the making of sources", "Fact assembly, which is the process by which archives decide what to keep", "Fact retrieval, when a researcher chooses which surviving records to read", "Retrospective significance, when a historian decides which story matters"],
+            correctIndex: 0,
+            explanation: "The four run in order: fact creation, fact assembly, fact retrieval, and retrospective significance.",
+            sourceLessonSlug: "four-moments-of-silence",
+          },
+          {
+            prompt: "The making of archives corresponds to which moment?",
+            options: ["Fact assembly", "Fact creation, since a document only exists once an archive has accessioned it", "Fact retrieval, because an archive's finding aids determine what a reader locates", "Retrospective significance, since accessioning is a judgment about importance"],
+            correctIndex: 0,
+            explanation: "Fact creation is the making of sources; fact retrieval is the making of narratives; retrospective significance is the making of history in the final instance.",
+            sourceLessonSlug: "four-moments-of-silence",
+          },
+          {
+            prompt: "The making of narratives corresponds to which moment?",
+            options: ["Fact retrieval", "Fact creation, where the first written account of an event is composed", "Fact assembly, which gathers the sources a narrative will later be built from", "Retrospective significance, which is where a narrative acquires its audience"],
+            correctIndex: 0,
+            explanation: "It is where a writer picks up some of the surviving records and not others, which gives the Matthew effect a second turn.",
+            sourceLessonSlug: "four-moments-of-silence",
+          },
+          {
+            prompt: "Trouillot's fourth moment is described as the making of:",
+            options: ["History in the final instance", "The canon, once textbooks and syllabuses fix a version for teaching", "The public record, when documents are released and become citable", "The consensus, once specialists in a field stop disputing an account"],
+            correctIndex: 0,
+            explanation: "Retrospective significance: the moment at which someone decides which of the assembled stories is worth telling.",
+            sourceLessonSlug: "four-moments-of-silence",
+          },
+          {
+            prompt: "A payroll classification recording a surgical researcher as a janitor is an example of:",
+            options: ["Fact creation", "Fact assembly, since payroll ledgers are among the first records an archive keeps", "Fact retrieval, because a later writer must decide whether to consult payroll records", "Retrospective significance, since the classification shaped how the work was valued"],
+            correctIndex: 0,
+            explanation: "The payroll is now a source, and it says he was a janitor. That is the making of a source, Trouillot's first moment.",
+            sourceLessonSlug: "four-moments-of-silence",
+          },
+          {
+            prompt: "Where does the Matthew effect get a second turn, in Trouillot's scheme?",
+            options: ["Fact retrieval", "Fact creation, since eminent people generate more documents in the first place", "Fact assembly, because archives preferentially accession the papers of famous figures", "Retrospective significance, where prizes decide which work is remembered"],
+            correctIndex: 0,
+            explanation: "The better known name is the one a researcher searches for first, so the retrieval step reproduces the concentration a second time.",
+            sourceLessonSlug: "four-moments-of-silence",
+          },
+          {
+            prompt: "The question that turns a gap into a finding is:",
+            options: ["What would have had to happen for this record to exist?", "Who benefited from the record not existing, and what did they gain by its absence?", "How many comparable records from the same period and institution have survived?", "Which archive would have held the record, and when was that collection destroyed?"],
+            correctIndex: 0,
+            explanation: "If the answer is that somebody would have had to be permitted to sign it, the gap is evidence about a permission rule documented elsewhere.",
+            sourceLessonSlug: "four-moments-of-silence",
+          },
+          {
+            prompt: "When does a gap point toward the thing not having happened?",
+            options: ["When the record would have required someone to do it", "When the archive holding it was destroyed and no copies were made elsewhere", "When the people involved had a motive to suppress the record at the time", "When no comparable record exists for anyone else in the same institution"],
+            correctIndex: 0,
+            explanation: "If the record's existence would have required only that somebody did the thing, its absence is evidence the thing may not have happened, and the lesson says to say so.",
+            sourceLessonSlug: "four-moments-of-silence",
+          },
+          {
+            prompt: "The discipline that keeps gap-reading honest is to:",
+            options: ["Write down what each hypothesis predicts before looking", "Consult at least three independent archives before drawing any conclusion", "Assume the more conservative reading whenever two are equally consistent", "Treat any silence as neutral until a specialist in the period has reviewed it"],
+            correctIndex: 0,
+            explanation: "A real but unnameable contribution should leave corroboration nearby. An absent one leaves the surrounding material silent too.",
+            sourceLessonSlug: "four-moments-of-silence",
+          },
+          {
+            prompt: "An isolated gap, as this lesson uses the term, is:",
+            options: ["A silence surrounded by corroborating material", "A record missing from one archive but present in another collection", "A single missing year in a run of otherwise continuous documentation", "A silence for which no explanation has ever been proposed by historians"],
+            correctIndex: 0,
+            explanation: "It is a finding about the record. A gap surrounded by more silence is often just an absence.",
+            sourceLessonSlug: "four-moments-of-silence",
+          },
+          {
+            prompt: "When two comparable people leave very different quantities of paper, the correct inference concerns:",
+            options: ["What survived", "Which of the two was more significant in their own lifetime", "Which institution was more careful about keeping its own records", "How much each of them chose to write down about their own activities"],
+            correctIndex: 0,
+            explanation: "The better documented one looks more real, and that is a bias in the reader rather than a fact about the past.",
+            sourceLessonSlug: "four-moments-of-silence",
+          },
+          {
+            prompt: "This lesson cites which pair as its example of documentation asymmetry?",
+            options: ["Walker and Malone", "Merton and Zuckerman, whose collaboration left only one name on the paper", "Blalock and Thomas, one of whom appears on the payroll as a janitor", "Burke and Sinnock, only one of whom left a signed design record"],
+            correctIndex: 0,
+            explanation: "Walker company earnings are available for specific years while the comparable figures for Malone's business are, by Walker's own biographer's account, undocumented.",
+            sourceLessonSlug: "four-moments-of-silence",
+          },
+          {
+            prompt: "Trouillot's four moments are best understood as:",
+            options: ["Four separate operations with four different traces", "Four stages that always occur in the same order and cannot be separated", "Four types of archive, distinguished by who controls their accession policies", "Four errors a historian can make when reading an incomplete documentary record"],
+            correctIndex: 0,
+            explanation: "Each is a separate opportunity for a name to drop out, and each leaves a different trace to look for.",
+            sourceLessonSlug: "four-moments-of-silence",
+          },
+          {
+            prompt: "Neither reading absence as proof of absence nor as proof of suppression is allowed, because:",
+            options: ["Both skip the question of what the record required", "Both are equally likely, so the reader should simply report the gap and stop", "Suppression is a criminal allegation and requires a higher standard of proof", "Archives are too incomplete for any inference from silence to be defensible"],
+            correctIndex: 0,
+            explanation: "Asking what would have had to happen for the record to exist is what distinguishes the two, and the answer is usually documented elsewhere.",
+            sourceLessonSlug: "four-moments-of-silence",
+          },
+          {
+            prompt: "Silencing the Past was published in which year and by whom?",
+            options: ["1995, by Beacon Press", "1993, in the journal Social Studies of Science alongside Rossiter's paper", "2007, by Science, in the same issue as the study of research teams", "1968, by Columbia University Press, contemporaneously with Merton's paper"],
+            correctIndex: 0,
+            explanation: "Michel-Rolph Trouillot, Silencing the Past: Power and the Production of History.",
+            sourceLessonSlug: "four-moments-of-silence",
+          },
+          {
+            prompt: "The biopsy from Henrietta Lacks was taken on:",
+            options: ["8 February 1951", "1 August 2023, the date the family announced a settlement with Thermo Fisher", "7 August 2013, when the National Institutes of Health announced its data policy", "12 March 1973, when a query in Nature recovered her real name"],
+            correctIndex: 0,
+            explanation: "At Johns Hopkins Hospital, during treatment for cervical cancer. She was 31.",
+            sourceLessonSlug: "henrietta-lacks-and-the-substituted-name",
+          },
+          {
+            prompt: "Whose laboratory received the tissue, and who grew the cells?",
+            options: ["George Otto Gey's lab, and his assistant Mary Kubicek", "Alfred Blalock's surgical laboratory, and his technician Vivien Thomas", "The National Institutes of Health tissue bank, under a federal research contract", "An independent commercial culture facility that had contracted with the hospital"],
+            correctIndex: 0,
+            explanation: "The Tissue Culture Laboratory at Johns Hopkins. Gey then distributed the cells freely to anyone who asked.",
+            sourceLessonSlug: "henrietta-lacks-and-the-substituted-name",
+          },
+          {
+            prompt: "What did Gey do with the cells once they grew?",
+            options: ["Distributed them freely to anyone who asked", "Patented the line and licensed it to commercial suppliers on a royalty basis", "Restricted access to his own laboratory until the results had been published", "Sold them to a biotechnology company, which is the origin of the later lawsuits"],
+            correctIndex: 0,
+            explanation: "Which is part of why the line spread worldwide, and part of why no single act of profiting can be pointed to at the origin.",
+            sourceLessonSlug: "henrietta-lacks-and-the-substituted-name",
+          },
+          {
+            prompt: "What does Johns Hopkins state about consent practice in 1951?",
+            options: ["There was no established practice of obtaining it", "That consent was obtained verbally but the documentation has not survived", "That the family consented on her behalf after her death later that year", "That its own policy required consent and the treating physician failed to follow it"],
+            correctIndex: 0,
+            explanation: "For the collection of cells or tissue for research. Neither Lacks nor her family gave permission.",
+            sourceLessonSlug: "henrietta-lacks-and-the-substituted-name",
+          },
+          {
+            prompt: "The Lacks family's objection, as this lesson frames it, is that:",
+            options: ["An industry was built with no knowledge, say or share", "The cells were destroyed before the family could request their return", "The hospital failed to inform them of her diagnosis during her treatment", "Researchers published her genome before any settlement had been reached"],
+            correctIndex: 0,
+            explanation: "Not only that the cells were taken. That is the shape of the case, and everything else in the lesson is subordinate to it.",
+            sourceLessonSlug: "henrietta-lacks-and-the-substituted-name",
+          },
+          {
+            prompt: "For roughly two decades the cell line was attributed in print to:",
+            options: ["A person who did not exist", "An anonymous donor, with no name attached in the published literature", "Johns Hopkins Hospital as an institution rather than to any individual", "George Gey's laboratory, which was credited as the line's originator"],
+            correctIndex: 0,
+            explanation: "A Helen Lane, and in some accounts a Helen Larson. Who introduced the false name, and why, is not settled by the record.",
+            sourceLessonSlug: "henrietta-lacks-and-the-substituted-name",
+          },
+          {
+            prompt: "How did the substitution end?",
+            options: ["A 1973 query in Nature obtained her real name", "Johns Hopkins issued a public correction after the family's 1973 blood draw", "Rebecca Skloot's research located the original pathology records in the 2000s", "The National Institutes of Health required disclosure as a condition of funding"],
+            correctIndex: 0,
+            explanation: "The same year staff at Hopkins contacted the family about contamination of other cultures.",
+            sourceLessonSlug: "henrietta-lacks-and-the-substituted-name",
+          },
+          {
+            prompt: "Why is a substituted name worse than a blank in the record?",
+            options: ["A plausible wrong answer stops the question being asked", "Because a false name is harder to correct than an omission once it is indexed", "Because it implies deliberate deception, whereas a gap may be accidental", "Because indexes cannot be searched for a name that was never recorded at all"],
+            correctIndex: 0,
+            explanation: "A gap invites a question. For twenty years every researcher who went looking found a satisfying answer that happened to be false.",
+            sourceLessonSlug: "henrietta-lacks-and-the-substituted-name",
+          },
+          {
+            prompt: "Why did a physician contact the Lacks family in 1973?",
+            options: ["To seek blood samples after a contamination finding", "To inform them that their mother's cells had been used without permission", "To obtain retrospective consent before a genome sequencing project began", "To notify them of a settlement offer from a commercial cell supplier"],
+            correctIndex: 0,
+            explanation: "Staff at Johns Hopkins had found that HeLa cells could contaminate other cultures. Accounts agree the family did not understand the purpose of the visit.",
+            sourceLessonSlug: "henrietta-lacks-and-the-substituted-name",
+          },
+          {
+            prompt: "What happened in March 2013?",
+            options: ["A HeLa genome was published without the family's knowledge", "The National Institutes of Health announced its controlled-access policy", "The family filed suit against Thermo Fisher Scientific in federal court", "Johns Hopkins formally apologized and renamed a building for Henrietta Lacks"],
+            correctIndex: 0,
+            explanation: "The authors withdrew access after the family objected, which is what led to the negotiation announced later that year.",
+            sourceLessonSlug: "henrietta-lacks-and-the-substituted-name",
+          },
+          {
+            prompt: "The NIH policy announced on 7 August 2013 established:",
+            options: ["Controlled access reviewed by a committee including two family members", "A royalty stream paid to the Lacks family from every federally funded HeLa study", "A prohibition on further use of HeLa cells in research supported by federal funds", "A requirement that all published papers using HeLa name Henrietta Lacks as an author"],
+            correctIndex: 0,
+            explanation: "Agreed with the family after three meetings, governing requests to use HeLa genomic data.",
+            sourceLessonSlug: "henrietta-lacks-and-the-substituted-name",
+          },
+          {
+            prompt: "The settlement announced on 1 August 2023 was with:",
+            options: ["Thermo Fisher Scientific", "Johns Hopkins Medicine, which had held the original tissue samples", "The National Institutes of Health, on behalf of all federally funded users", "George Gey's estate, which had retained rights in the original culture"],
+            correctIndex: 0,
+            explanation: "The terms are confidential, and no court ruled on the merits of the claim.",
+            sourceLessonSlug: "henrietta-lacks-and-the-substituted-name",
+          },
+          {
+            prompt: "Why does a confidential settlement establish nothing for anyone else?",
+            options: ["No court ruled on the merits", "Because the parties agreed not to discuss the case in any public forum", "Because settlements are sealed and cannot be located in the court record", "Because the amount was too small to influence how other companies behave"],
+            correctIndex: 0,
+            explanation: "A resolution with undisclosed terms and no judicial finding creates no precedent, whatever it did for the parties themselves.",
+            sourceLessonSlug: "henrietta-lacks-and-the-substituted-name",
+          },
+          {
+            prompt: "Why does this course decline to state the outcomes of later Lacks litigation?",
+            options: ["A case's status changes and a stale assertion is worse than a hedge", "Because ongoing litigation cannot legally be described in educational materials", "Because the family has asked that no further cases be discussed publicly", "Because none of the later cases involves the same underlying legal question"],
+            correctIndex: 0,
+            explanation: "Which is the same discipline that put the reviewed-preprint caveat on the replication study in Section 2.",
+            sourceLessonSlug: "henrietta-lacks-and-the-substituted-name",
+          },
+          {
+            prompt: "What does this lesson say was NOT repaired?",
+            options: ["Anything reaching back to 1951", "The attribution of the cell line, which still carries the wrong name in older papers", "The family's exclusion from the data access committee governing HeLa genomes", "The consent standard, which remains unchanged for research tissue in the US"],
+            correctIndex: 0,
+            explanation: "The name is right now, the family sits on the committee, a settlement was reached. The cells are still in worldwide use.",
+            sourceLessonSlug: "henrietta-lacks-and-the-substituted-name",
+          },
+          {
+            prompt: "Read against Trouillot, the Helen Lane substitution occurred at which moment first?",
+            options: ["Fact creation", "Fact assembly, when journals were bound and indexed under the false name", "Fact retrieval, when researchers began citing earlier papers that used it", "Retrospective significance, when the line's importance made the name matter"],
+            correctIndex: 0,
+            explanation: "The source itself was made with a wrong name in it. Assembly filed it and retrieval propagated it, but creation is where it entered.",
+            sourceLessonSlug: "henrietta-lacks-and-the-substituted-name",
+          },
+          {
+            prompt: "Selma Burke's dates are:",
+            options: ["1900 to 1995", "1910 to 1985, the same span as Vivien Thomas and Pauli Murray", "1869 to 1957, matching the founder of the Poro business in St. Louis", "1826 to 1898, the dates of the suffragist the Matilda effect is named for"],
+            correctIndex: 0,
+            explanation: "She maintained her claim on the dime design for the rest of her life after the coin's release in 1946.",
+            sourceLessonSlug: "selma-burke-and-the-dime",
+          },
+          {
+            prompt: "What did Burke win in 1943?",
+            options: ["A Commission of Fine Arts competition", "A federal commission to design a circulating United States coin", "A Guggenheim fellowship that paid for her studio year in New York", "An open call from the Treasury Department for a Roosevelt memorial medal"],
+            correctIndex: 0,
+            explanation: "To sculpt a relief portrait of Franklin Delano Roosevelt for the Recorder of Deeds Building in Washington.",
+            sourceLessonSlug: "selma-burke-and-the-dime",
+          },
+          {
+            prompt: "Why did Burke request a sitting with Roosevelt?",
+            options: ["Photographs did not give her what she wanted", "Because the competition rules required the winner to work from life", "Because the Commission of Fine Arts had rejected her first submitted study", "Because no recent photographs of the president had been released to artists"],
+            correctIndex: 0,
+            explanation: "She asked for and received it, which is part of what makes her claim documented rather than merely asserted.",
+            sourceLessonSlug: "selma-burke-and-the-dime",
+          },
+          {
+            prompt: "The Roosevelt dime was released on:",
+            options: ["30 January 1946", "12 April 1945, the day of Roosevelt's death", "8 February 1951, the same date as the Lacks biopsy", "26 February 2024, a date this course uses for a different correction"],
+            correctIndex: 0,
+            explanation: "Which would have been Roosevelt's sixty-fourth birthday. Burke's relief had been unveiled the previous year.",
+            sourceLessonSlug: "selma-burke-and-the-dime",
+          },
+          {
+            prompt: "The initials on the dime are:",
+            options: ["JS", "SB, which supporters of Burke's claim read as her own monogram", "FDR, placed there in place of any engraver's mark on this issue", "None; the Roosevelt dime carries no designer's initials at all"],
+            correctIndex: 0,
+            explanation: "For John Sinnock, the Mint's chief engraver from 1925 to 1947, whom the Mint credits with the design.",
+            sourceLessonSlug: "selma-burke-and-the-dime",
+          },
+          {
+            prompt: "John Sinnock's position was:",
+            options: ["Chief engraver of the United States Mint", "Director of the United States Mint during the Roosevelt administration", "A private sculptor under contract to the Treasury for commemorative issues", "An assistant in the Commission of Fine Arts that ran the 1943 competition"],
+            correctIndex: 0,
+            explanation: "From 1925 to 1947. He had produced presidential medals before, including work on Roosevelt.",
+            sourceLessonSlug: "selma-burke-and-the-dime",
+          },
+          {
+            prompt: "What does the Smithsonian American Art Museum's record say about Burke's relief?",
+            options: ["It was the model for Roosevelt's image on the dime", "That its resemblance to the dime is coincidental and has been overstated", "That the museum takes no position on the disputed attribution of the coin", "That it was completed after the dime was released and could not be its source"],
+            correctIndex: 0,
+            explanation: "The museum also says the 1944 work inspired the Roosevelt dime, which is an institutional position on Burke's side.",
+            sourceLessonSlug: "selma-burke-and-the-dime",
+          },
+          {
+            prompt: "Besides the Smithsonian American Art Museum, who else credited Burke?",
+            options: ["One of Roosevelt's sons", "The United States Mint, in a statement issued after Burke's death", "The Commission of Fine Arts, which had run the original 1943 competition", "The Treasury Department, in the announcement accompanying the coin's release"],
+            correctIndex: 0,
+            explanation: "The Mint credits Sinnock, and its attribution has not been withdrawn.",
+            sourceLessonSlug: "selma-burke-and-the-dime",
+          },
+          {
+            prompt: "When did Burke and her supporters raise the objection?",
+            options: ["As soon as the coin circulated", "Decades later, once the Smithsonian acquired her relief for its collection", "Only after Sinnock's death in 1947, when he could no longer respond to it", "In her final years, when she published an account of the 1944 sitting"],
+            correctIndex: 0,
+            explanation: "They asked for an investigation, which makes it a contemporaneous claim rather than a later reconstruction.",
+            sourceLessonSlug: "selma-burke-and-the-dime",
+          },
+          {
+            prompt: "What is the case for Sinnock, as this lesson sets it out?",
+            options: ["His initials, the Mint's credit, and prior presidential medal work", "A signed statement from Roosevelt authorizing him to use an earlier design", "Documentary evidence that Burke's relief was not completed until after 1946", "A Commission of Fine Arts finding that the two profiles are wholly unalike"],
+            correctIndex: 0,
+            explanation: "Plus his denial of the accusation. A design lineage inside the Mint predating Burke's relief is at least available as an explanation.",
+            sourceLessonSlug: "selma-burke-and-the-dime",
+          },
+          {
+            prompt: "Why is a resemblance between the two profiles weak evidence of copying?",
+            options: ["The underlying face constrains both portraits", "Because relief sculpture and coin engraving use incompatible techniques", "Because no photographs survive of the relief as it appeared in 1945", "Because portrait resemblance is a subjective judgment no expert can settle"],
+            correctIndex: 0,
+            explanation: "Both were made of the same man, from life or from good photographs, so a resemblance is expected under either hypothesis.",
+            sourceLessonSlug: "selma-burke-and-the-dime",
+          },
+          {
+            prompt: "What do some numismatic comparisons of the two profiles report?",
+            options: ["Visible differences around the nose and hair", "That the two are identical when overlaid at the same scale and orientation", "That the dime's profile matches a 1936 medal rather than any Roosevelt sitting", "That the relief was itself copied from a Mint design circulated to competitors"],
+            correctIndex: 0,
+            explanation: "Which is evidence in the dispute without settling it, since two portraits of one face can differ and still share a source.",
+            sourceLessonSlug: "selma-burke-and-the-dime",
+          },
+          {
+            prompt: "What document does the record NOT contain, either way?",
+            options: ["Any record of taking the design or of deriving it independently", "The minutes of the 1943 Commission of Fine Arts competition", "The Mint's internal correspondence about the coin's release date", "Burke's own account of her February sitting with the president"],
+            correctIndex: 0,
+            explanation: "What exists is an official attribution, a contemporaneous rival claim, and a later institutional credit. None of them is dispositive.",
+            sourceLessonSlug: "selma-burke-and-the-dime",
+          },
+          {
+            prompt: "Dispositive, as used in this lesson, means:",
+            options: ["Sufficient on its own to settle the question", "Admissible as evidence under the rules a court would apply", "Recorded by an institution with official authority over the matter", "Made at the time of the events rather than reconstructed afterward"],
+            correctIndex: 0,
+            explanation: "Nothing in the Burke and Sinnock dispute is, which is why the lesson refuses to close it.",
+            sourceLessonSlug: "selma-burke-and-the-dime",
+          },
+          {
+            prompt: "What makes this case different from every other case in the course?",
+            options: ["It acquired an argument and kept it", "It is the only one in which the disputed party denied the accusation", "It is the only case where an institution officially credited the wrong person", "It is the only dispute in which the person concerned was still alive to argue"],
+            correctIndex: 0,
+            explanation: "The others eventually acquired a portrait, a degree, an agreement, an expungement or a rename. This one did not.",
+            sourceLessonSlug: "selma-burke-and-the-dime",
+          },
+          {
+            prompt: "Why does this course teach an unresolved case at all?",
+            options: ["An unresolved argument is the ordinary outcome", "Because the unresolved cases are the ones most often left out of other accounts", "Because a reader must practice on a case where no answer can be checked", "Because the Mint has indicated it will revisit the attribution in future"],
+            correctIndex: 0,
+            explanation: "A course teaching only the cases with tidy endings would leave a reader expecting an ending.",
+            sourceLessonSlug: "selma-burke-and-the-dime",
+          },
+          {
+            prompt: "The defensible position on the dime, according to this lesson, is that Burke's claim is:",
+            options: ["Serious, documented and unproven", "Established by the Smithsonian American Art Museum's own catalog record", "Refuted by the numismatic comparisons of the two portrait profiles", "Unfalsifiable, and therefore not worth including in a history of credit"],
+            correctIndex: 0,
+            explanation: "And the Mint's attribution is official and uninterrogated. A reader repeating either as settled fact is making a bet.",
+            sourceLessonSlug: "selma-burke-and-the-dime",
+          },
+          {
+            prompt: "A contemporaneous claim is stronger than a later reconstruction because:",
+            options: ["It was made at the time by a named person", "It can be tested against physical evidence that has since been lost", "It carries legal weight that a subsequent account cannot acquire", "It removes the possibility that the claimant was mistaken about the facts"],
+            correctIndex: 0,
+            explanation: "Stronger, and still not proof. Burke raised the objection as soon as the coin circulated, which is what puts her claim above a later reconstruction.",
+            sourceLessonSlug: "selma-burke-and-the-dime",
+          },
+          {
+            prompt: "An official attribution, in this lesson's sense, is:",
+            options: ["Credit an institution records as fact", "A finding made after an investigation into a disputed claim", "A statement by the person credited, published under their own name", "The consensus of specialists in the field where the work was produced"],
+            correctIndex: 0,
+            explanation: "It carries authority without constituting evidence about derivation, which is why the Mint's credit does not close the question.",
+            sourceLessonSlug: "selma-burke-and-the-dime",
+          },
+          {
+            prompt: "Burke's relief was unveiled in which year?",
+            options: ["1945", "1943, immediately after she won the competition to produce it", "1946, a few months after the dime entered circulation", "1944, the year the Smithsonian assigns to the finished work"],
+            correctIndex: 0,
+            explanation: "The Smithsonian American Art Museum dates the work itself to 1944; the public unveiling followed in 1945, the year before the coin.",
+            sourceLessonSlug: "selma-burke-and-the-dime",
+          },
+          {
+            prompt: "The relief was commissioned for which building?",
+            options: ["The Recorder of Deeds Building in Washington", "The Franklin Delano Roosevelt Memorial on the National Mall", "The Treasury Building, adjacent to the Mint's Washington offices", "The Smithsonian American Art Museum, which still holds the work"],
+            correctIndex: 0,
+            explanation: "Through a Commission of Fine Arts competition Burke won in 1943.",
+            sourceLessonSlug: "selma-burke-and-the-dime",
+          },
+          {
+            prompt: "Applying Trouillot to the Burke case, which moment does the Mint's attribution belong to?",
+            options: ["Fact creation", "Fact assembly, since the Mint archives its own design records", "Fact retrieval, since later writers must choose whether to consult the Mint", "Retrospective significance, since the coin's fame is what made the credit matter"],
+            correctIndex: 0,
+            explanation: "The attribution is a source, made at the time, and everything downstream inherits it. That is the first moment doing its work.",
+            sourceLessonSlug: "four-moments-of-silence",
+          },
+          {
+            prompt: "Which of these is NOT one of Trouillot's four moments?",
+            options: ["Fact verification", "Fact creation, the making of sources", "Fact assembly, the making of archives", "Fact retrieval, the making of narratives"],
+            correctIndex: 0,
+            explanation: "The fourth is retrospective significance, the making of history in the final instance. Verification is not among them.",
+            sourceLessonSlug: "four-moments-of-silence",
+          },
+          {
+            prompt: "Henrietta Lacks was how old when the biopsy was taken?",
+            options: ["31", "45, which is why the cancer had already advanced by the time of treatment", "21, which is part of why the family's later consent claim was contested", "Unrecorded, because the hospital's admission papers have not survived"],
+            correctIndex: 0,
+            explanation: "She was being treated for cervical cancer at Johns Hopkins Hospital in February 1951.",
+            sourceLessonSlug: "henrietta-lacks-and-the-substituted-name",
+          },
+          {
+            prompt: "What made the HeLa cells unlike previous human cells in culture?",
+            options: ["They kept dividing", "They could be frozen and revived without any loss of viability", "They were the first to be grown from a tumor rather than from healthy tissue", "They were the first for which a complete genome sequence was ever published"],
+            correctIndex: 0,
+            explanation: "Which is why Gey could distribute them freely and why they spread worldwide within a few years.",
+            sourceLessonSlug: "henrietta-lacks-and-the-substituted-name",
+          },
+          {
+            prompt: "Controlled access, in the 2013 arrangement, means requests are:",
+            options: ["Reviewed by a committee including two Lacks family members", "Approved only where the research has no potential commercial application", "Granted automatically to federally funded investigators and denied to others", "Charged a licensing fee that is paid directly to the Lacks family estate"],
+            correctIndex: 0,
+            explanation: "It governs use of HeLa genomic data, and was agreed with the family after three meetings.",
+            sourceLessonSlug: "henrietta-lacks-and-the-substituted-name",
+          },
+          {
+            prompt: "Taking Sections 4 and 5 together, the deepest problem with an old author line is that:",
+            options: ["It cannot be reopened", "It was never indexed, so no record of the original decision survives", "It is protected by copyright and cannot be reproduced in a correction", "Journals of the period did not record who had approved each submission"],
+            correctIndex: 0,
+            explanation: "Which is why the corrections available are eponym changes, portraits, degrees and settlements, none of which touches the document itself.",
+            sourceLessonSlug: "four-moments-of-silence",
+          },
+        ],
+      },
+    },
   ],
 };
