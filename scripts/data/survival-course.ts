@@ -1503,6 +1503,152 @@ Centers for Disease Control and Prevention. (2023). *Stay safe after a flood.* U
       ],
     },
 
+    {
+      slug: "quiz-sanitation-and-hygiene",
+      title: "Section 6 quiz · Sanitation & Hygiene",
+      section: "Section 6 · Sanitation & Hygiene",
+      body: `${SAFETY}
+
+A graded check on handling human waste when plumbing fails, and on the handwashing, greywater, and floodwater rules that keep a disaster from becoming an outbreak. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Why does waste disposal become a top health priority when plumbing fails?",
+            options: [
+              "Because local authorities will fine a household that stores waste",
+              "Because sewer backflow can contaminate the home's own water lines",
+              "Improper handling spreads disease fast",
+              "Because waste attracts animals that damage stored food supplies",
+            ],
+            correctIndex: 2,
+            explanation:
+              "When water or sewer service fails, safe disposal of human waste becomes a top health priority, because improper handling spreads disease quickly through a household and a neighborhood.",
+            sourceLessonSlug: "sanitation-human-waste",
+          },
+          {
+            prompt: "What does the CDC describe building when toilets do not work?",
+            options: [
+              "A pit latrine dug well downhill from the nearest water source",
+              "A composting system that renders the waste safe within a week",
+              "A sealed drum that is emptied into the storm drain after each use",
+              "An emergency toilet from a lidded bucket",
+            ],
+            correctIndex: 3,
+            explanation:
+              "For example a sturdy bucket with a tight-fitting lid, lined with a plastic bag, so waste can be contained, covered, and disposed of without contaminating people, food, or water.",
+            sourceLessonSlug: "sanitation-human-waste",
+          },
+          {
+            prompt: "What is the first sanitation principle in this lesson?",
+            options: [
+              "Separate waste from water and food",
+              "Disinfect every surface the waste container has touched each day",
+              "Move the waste off the property as soon as it is safe to travel",
+              "Wear gloves and a mask whenever the container is being handled",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Keep any waste and any latrine well away from water sources and food prep. Containment, hand hygiene, and following local disposal instructions follow from there.",
+            sourceLessonSlug: "sanitation-human-waste",
+          },
+          {
+            prompt: "What does contain and cover mean in practice here?",
+            options: [
+              "Bury the waste at least two feet below the surface after each use",
+              "Seal the bags and cover odor and flies",
+              "Store the container outdoors, covered against rain and sunlight",
+              "Keep the lid closed except when the container is being emptied out",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The CDC describes adding absorbent and disinfecting material and double-bagging, so odor and flies are controlled and nothing escapes the container.",
+            sourceLessonSlug: "sanitation-human-waste",
+          },
+          {
+            prompt: "Where must emergency waste never be disposed of?",
+            options: [
+              "Any container that will later be reused for anything else at all",
+              "Any location within sight of a neighboring household's property",
+              "Storm drains or waterways",
+              "The regular household trash, which is never an approved route",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Follow local instructions for final disposal, and do not dump waste into storm drains or waterways. That is how a household problem becomes a community one.",
+            sourceLessonSlug: "sanitation-human-waste",
+          },
+          {
+            prompt: "What does the CDC name among the most effective disease-prevention tools after a disaster?",
+            options: [
+              "Boiling all drinking water regardless of where it came from",
+              "Wearing gloves whenever you handle anything from outside the home",
+              "Disinfecting every hard surface in the household once a day",
+              "Handwashing",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Washing hands with soap and clean water, especially before eating or preparing food and after using the toilet or handling waste, is among the most effective tools available to you.",
+            sourceLessonSlug: "hygiene-greywater-disease",
+          },
+          {
+            prompt: "What alcohol strength does the CDC specify for hand sanitizer?",
+            options: [
+              "At least 60 percent",
+              "At least 30 percent, which is the level most commercial gels reach",
+              "At least 90 percent, since anything weaker evaporates too quickly",
+              "Any strength, provided the hands stay wet for a full thirty seconds",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Use an alcohol-based hand sanitizer of at least 60 percent alcohol when clean water is not available. Soap and clean water remain the first choice.",
+            sourceLessonSlug: "hygiene-greywater-disease",
+          },
+          {
+            prompt: "What is greywater?",
+            options: [
+              "Water that has been filtered but not yet disinfected for drinking",
+              "Used wash and rinse water",
+              "Floodwater that has receded and settled clear enough to look safe",
+              "Condensate collected from an air conditioner or a dehumidifier",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Greywater is not safe to drink and can carry bacteria. Keep it away from your drinking-water supply, food, and any collection surfaces, and dispose of it as local authorities direct.",
+            sourceLessonSlug: "hygiene-greywater-disease",
+          },
+          {
+            prompt: "What can floodwater carry?",
+            options: [
+              "Only silt and debris, which settle out if the water is left to stand",
+              "Only whatever contaminants were already present upstream of you",
+              "Sewage, chemicals, and pathogens",
+              "Nothing harmful once it has drained away from a residential area",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Floodwater and standing water can carry sewage, chemicals, and pathogens. Avoid contact where you can, keep it away from food and drinking water, and wash thoroughly after any contact.",
+            sourceLessonSlug: "hygiene-greywater-disease",
+          },
+          {
+            prompt: "What must greywater and floodwater never be allowed to reach?",
+            options: [
+              "The ground outside, where they can soak toward a neighbor's yard",
+              "Any surface that has not been disinfected within the last day",
+              "Clothing, which cannot be made safe to wear again afterward",
+              "Your stored drinking water",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Never let greywater or floodwater contaminate stored water, food, or collection surfaces. That single rule is what keeps a sanitation failure from becoming a water-supply failure.",
+            sourceLessonSlug: "hygiene-greywater-disease",
+          },
+        ],
+      },
+    },
+
     // ─────────────────────────────────────────────────────────────────────────
     // SECTION 7: First aid
     // ─────────────────────────────────────────────────────────────────────────
