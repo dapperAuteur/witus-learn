@@ -2695,6 +2695,32 @@ A ten-question check on the course's core, cited principles, drawn fresh each at
               "Three of anything, three whistle blasts or three fires, is widely recognized as distress. Signal mirrors, bright materials, and lights extend how far away you can be seen alongside it.",
             sourceLessonSlug: "communication-plan-and-signaling",
           },
+          {
+            prompt: "What kind of practice is the fill-in drill before this quiz?",
+            options: [
+              "Formative",
+              "Graded, and counted toward the score this final reports",
+              "Optional, and included only for learners who want extra work",
+              "Diagnostic, used to decide which sections you still need to read",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is practice rather than assessment. You check yourself against the key, and nothing about it is scored.",
+            sourceLessonSlug: "survival-key-facts-exercise",
+          },
+          {
+            prompt: "What does the drill tell you to do about anything you miss?",
+            options: [
+              "Note it and move on, since the final quiz will cover it again",
+              "Re-read the linked source",
+              "Retake the whole drill until every blank comes out right",
+              "Look the answer up wherever you can find it most quickly",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Getting these grounded in the official guidance is the point, which is why the drill sends you back to the cited lesson rather than just handing you the answer.",
+            sourceLessonSlug: "survival-key-facts-exercise",
+          },
         ],
       },
     },
