@@ -409,6 +409,217 @@ U.S. Environmental Protection Agency. (2024). *Emergency disinfection of drinkin
       ],
     },
 
+    {
+      slug: "quiz-water",
+      title: "Section 2 quiz · Water",
+      section: "Section 2 · Water",
+      body: `${SAFETY}
+
+A graded check on how much water to store and how, the difference between filtering and disinfecting, and the three official methods for making water safe. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "How much water does the CDC say to store per person per day?",
+            options: [
+              "At least one gallon",
+              "At least two gallons, half of it reserved for basic sanitation",
+              "At least four liters, which is the figure most guidance now uses",
+              "Whatever your household actually drinks on an ordinary summer day",
+            ],
+            correctIndex: 0,
+            explanation:
+              "At least one gallon per person per day, with more planned for hot climates, children, nursing parents, and anyone who is ill.",
+            sourceLessonSlug: "water-need-and-storage",
+          },
+          {
+            prompt: "What does that stored gallon per day have to cover?",
+            options: [
+              "Drinking only, with washing water stored separately from it",
+              "Drinking and basic sanitation",
+              "Drinking, cooking, laundry, and flushing a toilet once each day",
+              "Drinking and the water needed to run a portable filter unit",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The one-gallon figure covers drinking and basic sanitation together, which is why the lesson says to plan more for anyone whose needs run higher.",
+            sourceLessonSlug: "water-need-and-storage",
+          },
+          {
+            prompt: "Who does the lesson say needs more than the baseline amount?",
+            options: [
+              "Anyone storing water in containers larger than five gallons",
+              "Households that have no way to filter or disinfect on site",
+              "Hot climates, children, and the ill",
+              "People relying on a well rather than a municipal water supply",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Plan more for hot climates, children, nursing parents, and people who are ill. Their need runs above the baseline.",
+            sourceLessonSlug: "water-need-and-storage",
+          },
+          {
+            prompt: "What kind of container should stored water go into?",
+            options: [
+              "Any clean container, provided it is emptied and refilled weekly",
+              "Metal containers only, since plastic leaches under heat and light",
+              "Whatever the water arrived in, because the seal is already intact",
+              "Sealed and food-grade",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Use food-grade sealed containers, keep them sealed, store them away from heat and sunlight, and label and rotate them. Commercially bottled water is the simplest option.",
+            sourceLessonSlug: "water-need-and-storage",
+          },
+          {
+            prompt: "Why does this lesson send you to the CDC page rather than give you the storage details itself?",
+            options: [
+              "Those specifics change and are kept current",
+              "Because the course is not permitted to reproduce federal guidance",
+              "Because container rules differ by state and by local health code",
+              "Because the CDC page includes a calculator the course cannot host",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Container type, how to sanitize, and how long stored water keeps are exactly the specifics that vary and that the authorities keep current. Verify beats improvise.",
+            sourceLessonSlug: "water-need-and-storage",
+          },
+          {
+            prompt: "What does filtration do to water?",
+            options: [
+              "Kills or inactivates the bacteria, viruses, and parasites in it",
+              "Strains out particles and many microbes",
+              "Removes dissolved industrial chemicals along with the sediment",
+              "Raises the temperature enough to make the water safe to drink",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Filtration physically strains out particles and many, but not all, microbes. Many portable filters do not reliably remove viruses, and no filter removes chemical contamination.",
+            sourceLessonSlug: "filtration-vs-purification",
+          },
+          {
+            prompt: "What does disinfection do that a portable filter often cannot?",
+            options: [
+              "Removes the sediment that makes water look and taste cloudy",
+              "Strains out the parasites that are too large to pass the pores",
+              "Inactivates viruses",
+              "Neutralizes fuel or pesticide contamination in the water supply",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Disinfection kills or inactivates pathogens, including the viruses many portable filters do not reliably catch. Neither step addresses chemical contamination.",
+            sourceLessonSlug: "filtration-vs-purification",
+          },
+          {
+            prompt: "Cloudy, unsafe water usually needs which treatment?",
+            options: [
+              "Filtration alone, since clearing the water is what makes it safe",
+              "Disinfection alone, since chemicals reach what a filter misses",
+              "Neither, if it comes from a source that was safe last week",
+              "Both, in that order",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Filter or settle out the sediment first so disinfection can work, then disinfect. Treating this as one step is a classic and dangerous mistake.",
+            sourceLessonSlug: "filtration-vs-purification",
+          },
+          {
+            prompt: "Can boiling or household disinfection make chemically contaminated water safe?",
+            options: [
+              "No",
+              "Yes, provided the boil is held for at least three full minutes",
+              "Yes, as long as the water is filtered before it is disinfected",
+              "Only for pesticides, which break down at boiling temperature",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Treatment addresses pathogens, not chemicals, and boiling can even concentrate some contaminants. If you suspect fuel, pesticide, or industrial contamination, do not drink it.",
+            sourceLessonSlug: "filtration-vs-purification",
+          },
+          {
+            prompt: "Why does the sediment have to come out before you disinfect?",
+            options: [
+              "Because sediment reacts with chlorine to produce a toxic byproduct",
+              "So the disinfection can actually work",
+              "Because a filter will clog permanently if it is used afterward",
+              "Because the CDC requires it before any household treatment at all",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Filtering or settling the water first is what lets the disinfection step reach the pathogens, which is why the two steps stay distinct and in that order.",
+            sourceLessonSlug: "filtration-vs-purification",
+          },
+          {
+            prompt: "What does the CDC call the best way to kill disease-causing organisms in water?",
+            options: [
+              "Chemical disinfection with unscented household chlorine bleach",
+              "A portable filter rated to the smallest available pore size",
+              "Boiling",
+              "Ultraviolet treatment, which needs no consumable supplies at all",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Boiling is the CDC's most reliable method against microbes. The other options are real methods, but the CDC ranks boiling first.",
+            sourceLessonSlug: "disinfecting-water-methods",
+          },
+          {
+            prompt: "How long a rolling boil does the CDC specify, and what changes at altitude?",
+            options: [
+              "Ten minutes, reduced to five minutes below a thousand feet",
+              "Thirty seconds, doubled anywhere above the tree line",
+              "Five minutes everywhere, since altitude does not affect boiling",
+              "One minute, three minutes above 6,500 feet",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Bring clear water to a rolling boil for one minute, or three minutes above about 6,500 feet, then let it cool. Filter or settle cloudy water first.",
+            sourceLessonSlug: "disinfecting-water-methods",
+          },
+          {
+            prompt: "What determines the correct dose for chemical disinfection?",
+            options: [
+              "Product strength, water temperature and clarity",
+              "The volume of water alone, which is why one ratio fits every case",
+              "The container the treated water will be stored in afterward",
+              "How long the water has been standing since it was collected",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Dose and contact time depend on the product concentration and on the water's temperature and clarity. Read the EPA's exact ratios rather than guessing.",
+            sourceLessonSlug: "disinfecting-water-methods",
+          },
+          {
+            prompt: "What decides whether a portable filter is enough on its own?",
+            options: [
+              "The brand's certification and how recently the unit was purchased",
+              "Its rated pore size",
+              "Whether the water came from a moving stream or from standing water",
+              "How many liters the cartridge has already processed since new",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Effectiveness depends on the filter's rated pore size and on whether it is paired with disinfection for viruses. When in doubt, combine filtering with boiling or chemical treatment.",
+            sourceLessonSlug: "disinfecting-water-methods",
+          },
+          {
+            prompt: "What do none of the three official methods fix?",
+            options: [
+              "Cloudiness, which has to be removed by settling the water first",
+              "Bacteria, which survive every household-scale treatment method",
+              "Chemical contamination",
+              "Parasites, which are too large for any portable filter to catch",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Boiling, chemical disinfection, and filtration all address pathogens. None of them makes chemically contaminated water safe.",
+            sourceLessonSlug: "disinfecting-water-methods",
+          },
+        ],
+      },
+    },
+
     // ─────────────────────────────────────────────────────────────────────────
     // SECTION 3: Shelter & warmth
     // ─────────────────────────────────────────────────────────────────────────
