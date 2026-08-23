@@ -147,6 +147,539 @@ European Space Agency. (n.d.). *Gaia: Measuring the positions and distances of s
 
 National Institute of Standards and Technology. (n.d.). *Measurement uncertainty*. https://www.nist.gov/`,
     },
+    {
+      slug: "check-the-sky-as-an-instrument",
+      title: "Part 1 knowledge check · The sky as an instrument",
+      section: "Part 1 · The sky as an instrument",
+      body: `A graded check on what a navigator actually needed from the sky, on the almanac work Banneker did and the story this course refuses to repeat, and on the three measurements everything else is inferred from. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Long before anyone asked what stars are, what did people use them to answer?",
+            options: [
+              "When the growing season could be expected to begin in a given valley",
+              "Where am I",
+              "Whether the events of a coming year would favor a ruler or ruin him",
+              "How old the world was, counted back from the motion of the planets",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The urgent question was position, not composition. For most of history the reason to study the sky carefully was that people needed to get somewhere.",
+            sourceLessonSlug: "finding-yourself-by-the-sky",
+          },
+          {
+            prompt: "In the northern hemisphere, what does the angle between the horizon and Polaris give you?",
+            options: [
+              "The local time, once you correct the reading for the day of the year",
+              "Your latitude",
+              "Your bearing, measured against the direction of true rather than magnetic north",
+              "The distance to the horizon, which depends on how high above the sea you stand",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Polaris sits close to the point the sky appears to turn around, so its height above the horizon is roughly how far north you are.",
+            sourceLessonSlug: "finding-yourself-by-the-sky",
+          },
+          {
+            prompt: "Why does Polaris work for this at all?",
+            options: [
+              "Because it is the brightest star visible from northern latitudes all year",
+              "Because it rises and sets at the same two points on the horizon every night",
+              "It sits near the point the sky turns around",
+              "Because its light takes a known time to reach us, fixing the scale of the sky",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Everything else wheels overhead; Polaris very nearly does not, because it sits close to the pivot. That is what makes its height a stand-in for your latitude.",
+            sourceLessonSlug: "finding-yourself-by-the-sky",
+          },
+          {
+            prompt: "How close can a navigator with a sextant and a clear night get their latitude?",
+            options: [
+              "Within a few hundred miles, which is why long voyages ran aground so often",
+              "Within a few feet, which is why the method survived into the satellite era",
+              "Only to the nearest whole degree, about sixty miles",
+              "Within a few miles",
+            ],
+            correctIndex: 3,
+            explanation:
+              "A few miles, from one angle and a clear sky. The lesson calls latitude nearly free precisely because it costs so little to get that close.",
+            sourceLessonSlug: "finding-yourself-by-the-sky",
+          },
+          {
+            prompt: "Why is longitude so much harder than latitude?",
+            options: [
+              "Because the sky turns, so east and west have no fixed marker",
+              "Because the earth is wider at the equator than a perfect sphere would be",
+              "Because the stars near the celestial equator are too faint to sight reliably",
+              "Because magnetic north wanders, and every east-west reading depends on it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "There is no eastward Polaris. The sky turns, so any marker you pick has moved by the time you look again.",
+            sourceLessonSlug: "finding-yourself-by-the-sky",
+          },
+          {
+            prompt: "What does knowing your longitude actually require?",
+            options: [
+              "A star chart drawn for the exact meridian you happen to be crossing",
+              "Knowing what time it is somewhere else",
+              "A second observer taking the same reading from a known fixed position",
+              "Measuring the same star twice, several hours apart, from the same deck",
+            ],
+            correctIndex: 1,
+            explanation:
+              "You need the time at a reference meridian at the moment you take your reading, and then you compare it with your local time. The difference is your longitude.",
+            sourceLessonSlug: "finding-yourself-by-the-sky",
+          },
+          {
+            prompt: "What kind of problem does the lesson say longitude turned out to be?",
+            options: [
+              "An optical problem, waiting on a lens good enough to resolve the marker",
+              "A political problem, waiting on nations to agree where the meridian sat",
+              "A clock problem",
+              "A mathematical problem, waiting on tables nobody had yet done the work to build",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A clock problem, not a telescope problem. It took a working marine chronometer, a timepiece that could hold the reference time across an entire voyage.",
+            sourceLessonSlug: "finding-yourself-by-the-sky",
+          },
+          {
+            prompt: "What does the lesson say a navigator actually needs from astronomy?",
+            options: [
+              "A theory that explains why the bodies move the way they are seen to move",
+              "A table",
+              "An instrument accurate enough to resolve one star from its nearest neighbor",
+              "A record of every previous voyage that crossed the same stretch of ocean",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Not a theory of stars. A table: where each body will be, at what time, on what date, for years into the future.",
+            sourceLessonSlug: "finding-yourself-by-the-sky",
+          },
+          {
+            prompt: "What chain of work does producing that table require?",
+            options: [
+              "Observe, calculate, publish",
+              "A single observatory holding one continuous record over many decades",
+              "A network of ships reporting their own sightings back to a central office",
+              "An instrument maker, a printer, and a captain willing to test the result at sea",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Somebody observes, somebody calculates, somebody publishes, and a ship's captain on the other side of an ocean stakes lives on the arithmetic.",
+            sourceLessonSlug: "finding-yourself-by-the-sky",
+          },
+          {
+            prompt: "Why does the lesson call the almanac a working relationship?",
+            options: [
+              "Because the almanac makers were paid by the shipping companies that used it",
+              "A captain stakes lives on the arithmetic",
+              "Because navigators sent their own observations back to correct the next edition",
+              "Because it was the only astronomical publication a general reader ever bought",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The lesson calls it the oldest working relationship between astronomy and everybody else, because someone far away bets their crew on numbers a stranger calculated.",
+            sourceLessonSlug: "finding-yourself-by-the-sky",
+          },
+          {
+            prompt: "For most of history, why did anyone study the sky carefully?",
+            options: [
+              "To settle arguments about what the stars are made of and how they burn",
+              "To keep a calendar that would stay aligned with the seasons over centuries",
+              "People needed to get somewhere",
+              "To predict which years would bring drought and which would bring a harvest",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The practical need came first by a very long way. What stars ARE is the harder question this course spends the rest of its length on.",
+            sourceLessonSlug: "finding-yourself-by-the-sky",
+          },
+          {
+            prompt: "A navigator measures Polaris at 40 degrees above the horizon. What do they still not know?",
+            options: [
+              "Their latitude, which needs a second sighting taken twelve hours later",
+              "Their heading, which the same sighting cannot establish on a moving deck",
+              "How far they have traveled since the last reading they were able to take",
+              "Their longitude",
+            ],
+            correctIndex: 3,
+            explanation:
+              "They know they are at roughly 40 degrees north. They know nothing at all about east and west, which needs the time at a reference meridian and therefore a clock that kept it across the whole voyage.",
+            sourceLessonSlug: "finding-yourself-by-the-sky",
+          },
+          {
+            prompt: "What does the course say the rest of it asks that a navigator never needed answered?",
+            options: [
+              "What that star is, and how far away",
+              "Whether the tables could be calculated faster than they were being used up",
+              "How the sky would look from a position nobody had yet sailed to",
+              "Why the same stars appear in different places from different latitudes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Not where am I relative to that star, but what is that star, how far away is it, and how could anyone possibly know. The honest answer runs through a chain of inference, each link resting on the one below it.",
+            sourceLessonSlug: "finding-yourself-by-the-sky",
+          },
+          {
+            prompt: "Who was Benjamin Banneker?",
+            options: [
+              "A British instrument maker who built the first reliable marine chronometer",
+              "A self-taught free Black astronomer in Maryland",
+              "A Virginia planter who corresponded with Jefferson about scientific matters",
+              "The federal surveyor who laid out the boundaries of the new capital district",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Banneker (1731 to 1806) was a free Black man in Maryland who taught himself astronomy and mathematics. He worked on the district survey, but under Andrew Ellicott rather than leading it.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "What did Banneker calculate for a series of almanacs published in the 1790s?",
+            options: [
+              "The tide tables for the ports along the length of Chesapeake Bay",
+              "Ephemerides",
+              "The magnetic variation a surveyor would need at each point on the boundary",
+              "The population figures the new federal district would be assessed against",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Ephemerides: the calculated positions of celestial bodies over time, which is what an almanac is built from.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "Which survey did Banneker work on?",
+            options: [
+              "The western boundary of Maryland, disputed with the neighboring colony",
+              "The route of the first federal post road running south out of Philadelphia",
+              "The boundaries of the future federal district",
+              "The coastline of the Chesapeake, for the benefit of shipping into Baltimore",
+            ],
+            correctIndex: 2,
+            explanation:
+              "He worked on the survey of the boundaries of the federal district that became Washington, D.C., as part of the team under Andrew Ellicott.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "Whose team did Banneker work under on that survey?",
+            options: [
+              "Andrew Ellicott",
+              "Pierre L'Enfant, who was designing the plan of the city at the same time",
+              "Thomas Jefferson, in his capacity as the sitting Secretary of State",
+              "George Washington, who had personally commissioned the boundary work",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Andrew Ellicott led the survey team. L'Enfant was working on the city plan, which is why he turns up in the story this lesson goes on to warn you about.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "What does calculating an almanac require you to do?",
+            options: [
+              "Gather and organize the seasonal folklore of a particular farming region",
+              "Predict a whole year of sky positions in advance",
+              "Record what was actually observed each night, then publish it the year after",
+              "Copy the previous year's tables and adjust them for the shift in the calendar",
+            ],
+            correctIndex: 1,
+            explanation:
+              "In advance, and for a whole year: the positions of the sun, moon and planets, the times of sunrise and sunset, the phases of the moon, and eclipses. It is prediction, not record-keeping.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "Which of these does an almanac of this kind have to include?",
+            options: [
+              "The distance to each of the planets, expressed in miles from the earth",
+              "The expected weather for each week of the year in the region it serves",
+              "Eclipses",
+              "The composition of the sun, so a reader knows what its light is made of",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Eclipses, along with the positions of the sun, moon and planets, sunrise and sunset times, and the phases of the moon. Distance and composition are the questions the rest of this course is about, and no almanac of the 1790s answered them.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "Why is almanac arithmetic unforgiving?",
+            options: [
+              "Because the calculations had to be finished before the printer's deadline",
+              "An error propagates through every entry after it",
+              "Because a single missing figure makes the whole table impossible to typeset",
+              "Because the instruments of the period drifted faster than a year of use",
+            ],
+            correctIndex: 1,
+            explanation:
+              "One mistake carries forward into everything computed after it, and it is all done by hand. That is what makes a published almanac evidence of sustained, accurate work rather than a single good day.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "How would a reader catch an error in an almanac?",
+            options: [
+              "By comparing it against a rival almanac published the same year",
+              "By recalculating the entries, which any educated reader could do",
+              "The sky disagrees with the page",
+              "By waiting for the publisher to issue a correction in the following edition",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A reader will notice when the sky disagrees with the page. The work is checkable by anyone who looks up, which is exactly why publishing it was a credential.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "What did Banneker send Thomas Jefferson in 1791?",
+            options: [
+              "A petition signed by free Black residents of the surrounding counties",
+              "His almanac calculations, and a letter",
+              "A survey report on the boundary work, addressed to him as Secretary of State",
+              "A published copy of the almanac, with no accompanying correspondence",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A manuscript copy of his almanac calculations along with a letter. Both letters, his and Jefferson's reply, survive and are worth reading in full rather than in summary.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "What did that letter challenge Jefferson on?",
+            options: [
+              "Slavery",
+              "The decision to place the new federal capital on the Potomac rather than north",
+              "His refusal to support public funding for astronomical observation",
+              "The accuracy of the boundary survey the federal government had commissioned",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It challenged him directly on slavery, and on the contradiction between the words Jefferson had written and the people Jefferson held. Jefferson replied.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "What does the lesson mean by saying the almanac was the credential and the letter was what he spent it on?",
+            options: [
+              "That publishing paid well enough to fund the correspondence he wanted to have",
+              "That the almanac was the achievement and the letter was an afterthought to it",
+              "He used the standing it earned to confront Jefferson",
+              "That the letter was included in the almanac so its readers would encounter it",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Checkable, published astronomical work is what made him impossible to dismiss. The letter is what that standing was used for.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "How does this course treat the story that Banneker rebuilt the plan of Washington from memory?",
+            options: [
+              "As established, since it appears in so many accounts of his life",
+              "As unestablished",
+              "As false, since the surviving drawings are in another surveyor's hand",
+              "As irrelevant, since the city was built to a different plan in the end",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Unestablished, not disproved. It is widely repeated, and historians have questioned whether it holds up, so a course about evidence declines to assert it either way.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "Why does the course refuse to repeat that story even though it is flattering?",
+            options: [
+              "Because the documented achievements are more interesting than the story is",
+              "Because repeating it would require citing a source that no longer resolves",
+              "It cannot assert what it cannot support",
+              "Because the story originated with people hostile to Banneker's reputation",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A course about how we know things cannot assert what it cannot support, and a flattering claim is not exempt from evidence. Hanging his reputation on a contested anecdote also makes it easier to attack.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "What method does the lesson draw from that story?",
+            options: [
+              "Prefer the account that the largest number of historians repeat",
+              "Check the extra story first",
+              "Treat any claim about a famous person as unreliable until it is documented",
+              "Judge a source by whether its author admired or resented its subject",
+            ],
+            correctIndex: 1,
+            explanation:
+              "When an already-remarkable life acquires an extra story better than the documented ones, the extra story is the one to check first. Admiration produces myth as reliably as hostility produces slander.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "What does the lesson say you cannot do with almost anything in the universe?",
+            options: [
+              "See it in more than one color at a time from a single instrument",
+              "Observe it for longer than a human lifetime allows",
+              "Go there, bring it back, or rerun it",
+              "Compare it against anything else at a genuinely known distance",
+            ],
+            correctIndex: 2,
+            explanation:
+              "You cannot go there, you cannot bring it back, and you cannot run the experiment again with one thing changed. That constraint is what shapes the entire science.",
+            sourceLessonSlug: "all-you-get-is-an-angle-and-a-brightness",
+          },
+          {
+            prompt: "What three kinds of measurement does the lesson say you actually get?",
+            options: [
+              "An angle, a brightness, and how they change",
+              "A distance, a mass, and a temperature read off the instrument directly",
+              "A position, a velocity, and a composition read from the star's own light",
+              "A brightness, an age, and the direction the object is traveling",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Where it appears to be, an angle on the sky; how bright it appears and in which colors; and how those change over time. That is the whole input.",
+            sourceLessonSlug: "all-you-get-is-an-angle-and-a-brightness",
+          },
+          {
+            prompt: "What is the status of a star's distance, mass, temperature, and age?",
+            options: [
+              "Measured directly, once the instrument is calibrated against a known source",
+              "Inferred",
+              "Estimated from a catalog of stars whose values were established long ago",
+              "Assumed, since none of them can be established even in principle",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Every one of them is inferred from angles and brightnesses through a chain of reasoning that can be examined and can be wrong. That is not the same as assumed, and the difference is the subject of this course.",
+            sourceLessonSlug: "all-you-get-is-an-angle-and-a-brightness",
+          },
+          {
+            prompt: "Why does the lesson say the chain of inference is not a weakness?",
+            options: [
+              "Because the chain has been checked so many times that it cannot now move",
+              "Because each link is independently confirmed before the next one is built",
+              "The field is unusually explicit about the chain",
+              "Because the conclusions turn out not to depend on the weakest links at all",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Astronomers built an extraordinarily reliable picture from angles and brightnesses by being unusually explicit about the chain, and arguing in public about which link is shakiest.",
+            sourceLessonSlug: "all-you-get-is-an-angle-and-a-brightness",
+          },
+          {
+            prompt: "What does the field tend to do when a claim depends on four assumptions?",
+            options: [
+              "Withhold the claim until the number of assumptions can be brought down",
+              "Publish it with the strongest of the four assumptions stated up front",
+              "Say so, and argue about the shakiest",
+              "Present the result as a range wide enough to cover every assumption",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The field tends to say so, and to argue in public about which assumption is shakiest. That habit is what makes the picture trustworthy despite resting on inference.",
+            sourceLessonSlug: "all-you-get-is-an-angle-and-a-brightness",
+          },
+          {
+            prompt: "What does the lesson say is the honest question about any astronomical number?",
+            options: [
+              "Which link is weakest",
+              "Whether the number has been reproduced by an independent instrument",
+              "How many significant figures the measurement genuinely supports",
+              "Whether the result was published before or after the theory it supports",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Never simply is it right, but which link in the chain is weakest, and what would change if that link moved.",
+            sourceLessonSlug: "all-you-get-is-an-angle-and-a-brightness",
+          },
+          {
+            prompt: "What is apparent brightness?",
+            options: [
+              "The brightness a star would have if all the dust between were removed",
+              "How bright it looks from here",
+              "The brightness assigned to it in a catalog, corrected for its color",
+              "The total light it puts out across every wavelength, added together",
+            ],
+            correctIndex: 1,
+            explanation:
+              "How bright something looks from where you are standing. It is one of the two or three things you can actually measure.",
+            sourceLessonSlug: "all-you-get-is-an-angle-and-a-brightness",
+          },
+          {
+            prompt: "What is intrinsic brightness?",
+            options: [
+              "How bright a star appears when it is observed from above the atmosphere",
+              "The brightness of the star at the moment its light began the journey here",
+              "How much light it actually emits",
+              "The brightness the star will reach at the end of its life on the diagram",
+            ],
+            correctIndex: 2,
+            explanation:
+              "How much light the object genuinely puts out, as opposed to how much of it happens to reach you.",
+            sourceLessonSlug: "all-you-get-is-an-angle-and-a-brightness",
+          },
+          {
+            prompt: "What single thing separates apparent brightness from intrinsic brightness?",
+            options: [
+              "Distance",
+              "The dust and gas lying along the line of sight between the two",
+              "The wavelength at which the observation happens to be made",
+              "The sensitivity of whatever instrument is being pointed at the object",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They differ by exactly one thing, and that thing is distance. Dust and instruments matter in practice, but the relation the lesson is building rests on distance alone.",
+            sourceLessonSlug: "all-you-get-is-an-angle-and-a-brightness",
+          },
+          {
+            prompt: "Why does that create a deadlock?",
+            options: [
+              "Because the two brightnesses are measured in units that cannot be compared",
+              "Distance is the thing you cannot measure directly",
+              "Because intrinsic brightness changes over the time the light takes to arrive",
+              "Because no instrument can measure apparent brightness accurately enough",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Distance is precisely the quantity you cannot get at directly, so knowing it would require the intrinsic brightness you were trying to find, and around it goes.",
+            sourceLessonSlug: "all-you-get-is-an-angle-and-a-brightness",
+          },
+          {
+            prompt: "A star looks dim from Earth. What could it be?",
+            options: [
+              "Faint and near, or blazing and far",
+              "Faint, since a truly bright star would still look bright from any distance",
+              "Old, since brightness falls steadily across the whole life of a star",
+              "Small, since size is what sets how much light a star can put out",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A dim-looking star might be genuinely faint and close by, or enormously luminous and very far away. Nothing in the appearance itself tells you which.",
+            sourceLessonSlug: "all-you-get-is-an-angle-and-a-brightness",
+          },
+          {
+            prompt: "What does every rung of the distance ladder amount to?",
+            options: [
+              "A more sensitive instrument that reaches fainter objects than the last one",
+              "A way to know intrinsic brightness independently",
+              "A longer baseline over which the same angle can be measured again",
+              "A larger sample of objects, so the average distance becomes reliable",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Find some way to know a thing's intrinsic brightness independently, compare it to how bright it looks, and the difference gives you the distance. The lesson calls that the whole plot.",
+            sourceLessonSlug: "all-you-get-is-an-angle-and-a-brightness",
+          },
+          {
+            prompt: "Two stars look equally bright from Earth. What would settle which is farther away?",
+            options: [
+              "Watching both for long enough to see which one changes first",
+              "Comparing the colors in which each of the two is brightest",
+              "Either star's intrinsic brightness",
+              "Measuring the angle between them as the earth moves around the sun",
+            ],
+            correctIndex: 2,
+            explanation:
+              "They could be twins at the same distance, or one could be far brighter and much further off. Knowing either star's true intrinsic brightness by some independent means settles it, because comparing intrinsic with apparent yields the distance.",
+            sourceLessonSlug: "all-you-get-is-an-angle-and-a-brightness",
+          },
+        ],
+      },
+    },
     // ── Part 2 ─────────────────────────────────────────────────────────────────────────────────
     {
       slug: "rung-one-parallax",
