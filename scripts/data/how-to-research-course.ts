@@ -852,6 +852,280 @@ You do not need this platform's version. You need **a version**: a file, a page,
       ],
     },
 
+    {
+      slug: "quiz-seeking-truth",
+      title: "Section 3 knowledge check · Seeking truth",
+      section: "Section 3 · Seeking truth",
+      body: `A graded check on the two rubric criteria that must be Met and cannot be waived: sourcing with real independence behind it, and flagging that goes somewhere durable instead of dying in a sentence. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What does sourced mean, in this criterion?",
+            options: [
+              "Every central claim ties to something a reader could go and check",
+              "Every claim in the work can be traced to a primary record",
+              "Every source used appears in the bibliography at the end",
+              "Every claim carries the name of the person who told you it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Not I read this somewhere. A named, findable thing. That is the first half of a criterion people routinely do while believing they have done both.",
+            sourceLessonSlug: "sourced-and-corroborated",
+          },
+          {
+            prompt: "What does corroborated add to sourced?",
+            options: [
+              "That the source has been checked for accuracy by its own publisher",
+              "That the claim appears in a primary record as well as a secondary one",
+              "Support from more than one independent source",
+              "That a second researcher has reviewed the citation you used",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Independence is the word doing the work, and it is a higher bar than it sounds.",
+            sourceLessonSlug: "sourced-and-corroborated",
+          },
+          {
+            prompt: "When are two sources independent?",
+            options: [
+              "When they were published by unrelated organizations",
+              "When they reached the same conclusion by different methods",
+              "When neither cites the other anywhere in its text",
+              "Neither got it from the other, and neither from a common third place",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Checking it is mostly mechanical: follow each source's own citation and see where they land.",
+            sourceLessonSlug: "sourced-and-corroborated",
+          },
+          {
+            prompt: "What is the syndication chain?",
+            options: [
+              "Many outlets, one wire service",
+              "Many articles, one organization's announcement",
+              "Many quotes, one person repeating something they read",
+              "A cites B, B cites C, and C cites A",
+            ],
+            correctIndex: 0,
+            explanation:
+              "All four options here are dependence patterns the lesson names. The syndication chain is the wire-service one; the others are the press-release echo, the single expert, and the circular citation.",
+            sourceLessonSlug: "sourced-and-corroborated",
+          },
+          {
+            prompt: "What is the press-release echo?",
+            options: [
+              "A single expert quoted in many places, repeating what they read",
+              "Many articles, one organization's announcement",
+              "A wire story carried by outlets that never contact the source",
+              "A citation loop where each source points at the next in a circle",
+            ],
+            correctIndex: 1,
+            explanation:
+              "One announcement, many articles that look like independent reporting until you follow them back.",
+            sourceLessonSlug: "sourced-and-corroborated",
+          },
+          {
+            prompt: "What is the circular citation?",
+            options: [
+              "A source that cites itself in a later, revised edition",
+              "A claim repeated so often that its origin can no longer be found",
+              "A cites B, B cites C, and C cites A",
+              "A summary that cites the article summarizing it",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The lesson notes it happens more than seems possible, which is exactly why following each citation to where it actually lands is worth the time.",
+            sourceLessonSlug: "sourced-and-corroborated",
+          },
+          {
+            prompt: "Which claims does the criterion require you to corroborate?",
+            options: [
+              "All of them, without exception",
+              "Any claim a reader is likely to find surprising",
+              "Any claim you could not verify at first attempt",
+              "The load-bearing ones",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The ones your conclusion rests on, the ones that would change a reader's mind, the ones about a named person, and any number you are asking anyone to act on. Pretending all of them need it leads to work nobody finishes.",
+            sourceLessonSlug: "sourced-and-corroborated",
+          },
+          {
+            prompt: "What may rest on a single decent source?",
+            options: [
+              "Color and context, as long as you have not dressed it up",
+              "Any claim that no reader is likely to challenge",
+              "Anything the work does not draw a conclusion from directly",
+              "Nothing; a single source is never sufficient under this criterion",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The condition matters as much as the permission. A single-sourced detail presented as though it were established is the failure this criterion exists to catch.",
+            sourceLessonSlug: "sourced-and-corroborated",
+          },
+          {
+            prompt: "There is one record and there will never be another. What is the correct move?",
+            options: [
+              "Drop the claim, since it cannot meet the corroboration bar",
+              "Assert it, since a single record is the best evidence available",
+              "Say what you have: one source, its kind, and what would confirm it",
+              "Hedge the sentence so the reader knows to treat it cautiously",
+            ],
+            correctIndex: 2,
+            explanation:
+              "That is a normal condition of real research rather than a failure, and the sentence costs you nothing and buys the reader everything. A hedge alone is not the same as naming what would confirm it.",
+            sourceLessonSlug: "sourced-and-corroborated",
+          },
+          {
+            prompt: "What does the easy half of verification consist of?",
+            options: [
+              "Looking again, slowly, at the thing you already have",
+              "Finding a second source that agrees with the first",
+              "Asking the person quoted whether the quote is accurate",
+              "Running the claim past someone who knows the subject",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Does the quote say what you say it says, in context. Does the photograph show what the caption claims. Does the number match the table. Does the date survive a calendar check. Most verification is not clever.",
+            sourceLessonSlug: "verified-and-flagged",
+          },
+          {
+            prompt: "Which of these is on the verification list?",
+            options: [
+              "Whether the source has been cited approvingly by other researchers",
+              "Whether a person still holds the title you gave them, today",
+              "Whether the claim is consistent with what the field generally believes",
+              "Whether the source would be accepted by a court of law",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Titles go stale quietly. It sits alongside checking quotes in context, captions against images, numbers against tables, and dates against a calendar.",
+            sourceLessonSlug: "verified-and-flagged",
+          },
+          {
+            prompt: "What does it mean to flag something?",
+            options: [
+              "To mark a claim for a reviewer's attention before publication",
+              "To attach a hedge to any sentence you are not fully sure of",
+              "To remove a claim from the text until it can be established",
+              "To tell the reader precisely where the floor gets thin",
+            ],
+            correctIndex: 3,
+            explanation:
+              "One source reports X; we could not confirm it. The figure is widely repeated but we could not find its origin. The family's account and the official record disagree about the date, and both are given here.",
+            sourceLessonSlug: "verified-and-flagged",
+          },
+          {
+            prompt: "Why do writers resist flagging?",
+            options: [
+              "Because it lengthens a piece that is already at its word limit",
+              "Because editors remove flags as a matter of house style",
+              "It looks like they failed",
+              "Because a flagged claim is more likely to be challenged in public",
+            ],
+            correctIndex: 2,
+            explanation:
+              "It is the opposite. Flagging is a promise, not an apology, and the lesson calls the resistance the reason almost nobody does it well.",
+            sourceLessonSlug: "verified-and-flagged",
+          },
+          {
+            prompt: "What does the lesson call an unflagged uncertainty?",
+            options: [
+              "A lie of confidence",
+              "A gap that a careful reader will notice on their own",
+              "An acceptable simplification, provided the claim is true",
+              "A failure of craft rather than of sourcing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "And it is undetectable, which is precisely what makes it serious. A visible mistake can be caught and corrected by a reader; an unflagged uncertainty never gets caught at all.",
+            sourceLessonSlug: "verified-and-flagged",
+          },
+          {
+            prompt: "Why is a flag that lives only in a sentence not enough?",
+            options: [
+              "Because a reader may skim past the sentence carrying it",
+              "Because an editor may cut the hedge for length before publication",
+              "Because it does not say what would settle the question",
+              "It ships and stays there forever, because nothing records that it is open",
+            ],
+            correctIndex: 3,
+            explanation:
+              "There is no list, nothing records whether anyone looked, and the next person to touch the piece assumes it was already checked.",
+            sourceLessonSlug: "verified-and-flagged",
+          },
+          {
+            prompt: "What does a real list of open questions record?",
+            options: [
+              "What is claimed, what is unestablished, what would settle it, where to look",
+              "Every source consulted, whether or not it produced a usable claim",
+              "The reviewer assigned to each outstanding question and their deadline",
+              "The date each question was raised and how long it has been open",
+            ],
+            correctIndex: 0,
+            explanation:
+              "When one gets answered, the text changes and the entry is deleted. The list shrinking is the measure of progress.",
+            sourceLessonSlug: "verified-and-flagged",
+          },
+          {
+            prompt: "Does the lesson require this platform's particular version of that list?",
+            options: [
+              "Yes, since the platform's reviewers score against it directly",
+              "No; you need a version, durable and separate from the prose",
+              "Yes, for any work that will be submitted for the credential",
+              "No, provided every uncertainty appears somewhere in the text",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A file, a page, a document, anything durable and separate from the prose. The rule is what matters, not the implementation.",
+            sourceLessonSlug: "verified-and-flagged",
+          },
+          {
+            prompt: "State the rule about hedges.",
+            options: [
+              "A hedge belongs in the text, never only in the notes",
+              "A hedge should name the source that would resolve it",
+              "A hedge with no check attached is a hedge nobody will ever clear",
+              "A hedge is a temporary measure and should not survive publication",
+            ],
+            correctIndex: 2,
+            explanation:
+              "It is the sentence the whole criterion turns on, and it is why the flag has to land somewhere durable rather than in the prose alone.",
+            sourceLessonSlug: "verified-and-flagged",
+          },
+          {
+            prompt: "Which rubric pillar do both of this section's criteria belong to?",
+            options: [
+              "Seek truth",
+              "Accountable, since both are about what a reader can check",
+              "Planning, since both are decided before the research begins",
+              "Act independently, since both protect against outside pressure",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Sourced and corroborated, and verified and flagged, both sit under seek truth, and both must be Met with no not-applicable option.",
+            sourceLessonSlug: "sourced-and-corroborated",
+          },
+          {
+            prompt: "What is the single expert pattern?",
+            options: [
+              "An expert whose field is adjacent to, rather than inside, the question",
+              "An expert cited without their qualifications being stated",
+              "An expert who declines to be quoted, so the claim goes unattributed",
+              "Many quotes, one person, sometimes repeating something they read",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The count of appearances looks like breadth. It is one voice, and that voice may itself be relaying a claim from somewhere else.",
+            sourceLessonSlug: "sourced-and-corroborated",
+          },
+        ],
+      },
+    },
+
     // ── Section 4 ────────────────────────────────────────────────────────────────────────────────
     {
       slug: "consent-and-representation",
