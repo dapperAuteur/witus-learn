@@ -147,6 +147,539 @@ European Space Agency. (n.d.). *Gaia: Measuring the positions and distances of s
 
 National Institute of Standards and Technology. (n.d.). *Measurement uncertainty*. https://www.nist.gov/`,
     },
+    {
+      slug: "check-the-sky-as-an-instrument",
+      title: "Part 1 knowledge check · The sky as an instrument",
+      section: "Part 1 · The sky as an instrument",
+      body: `A graded check on what a navigator actually needed from the sky, on the almanac work Banneker did and the story this course refuses to repeat, and on the three measurements everything else is inferred from. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Long before anyone asked what stars are, what did people use them to answer?",
+            options: [
+              "When the growing season could be expected to begin in a given valley",
+              "Where am I",
+              "Whether the events of a coming year would favor a ruler or ruin him",
+              "How old the world was, counted back from the motion of the planets",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The urgent question was position, not composition. For most of history the reason to study the sky carefully was that people needed to get somewhere.",
+            sourceLessonSlug: "finding-yourself-by-the-sky",
+          },
+          {
+            prompt: "In the northern hemisphere, what does the angle between the horizon and Polaris give you?",
+            options: [
+              "The local time, once you correct the reading for the day of the year",
+              "Your latitude",
+              "Your bearing, measured against the direction of true rather than magnetic north",
+              "The distance to the horizon, which depends on how high above the sea you stand",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Polaris sits close to the point the sky appears to turn around, so its height above the horizon is roughly how far north you are.",
+            sourceLessonSlug: "finding-yourself-by-the-sky",
+          },
+          {
+            prompt: "Why does Polaris work for this at all?",
+            options: [
+              "Because it is the brightest star visible from northern latitudes all year",
+              "Because it rises and sets at the same two points on the horizon every night",
+              "It sits near the point the sky turns around",
+              "Because its light takes a known time to reach us, fixing the scale of the sky",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Everything else wheels overhead; Polaris very nearly does not, because it sits close to the pivot. That is what makes its height a stand-in for your latitude.",
+            sourceLessonSlug: "finding-yourself-by-the-sky",
+          },
+          {
+            prompt: "How close can a navigator with a sextant and a clear night get their latitude?",
+            options: [
+              "Within a few hundred miles, which is why long voyages ran aground so often",
+              "Within a few feet, which is why the method survived into the satellite era",
+              "Only to the nearest whole degree, about sixty miles",
+              "Within a few miles",
+            ],
+            correctIndex: 3,
+            explanation:
+              "A few miles, from one angle and a clear sky. The lesson calls latitude nearly free precisely because it costs so little to get that close.",
+            sourceLessonSlug: "finding-yourself-by-the-sky",
+          },
+          {
+            prompt: "Why is longitude so much harder than latitude?",
+            options: [
+              "Because the sky turns, so east and west have no fixed marker",
+              "Because the earth is wider at the equator than a perfect sphere would be",
+              "Because the stars near the celestial equator are too faint to sight reliably",
+              "Because magnetic north wanders, and every east-west reading depends on it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "There is no eastward Polaris. The sky turns, so any marker you pick has moved by the time you look again.",
+            sourceLessonSlug: "finding-yourself-by-the-sky",
+          },
+          {
+            prompt: "What does knowing your longitude actually require?",
+            options: [
+              "A star chart drawn for the exact meridian you happen to be crossing",
+              "Knowing what time it is somewhere else",
+              "A second observer taking the same reading from a known fixed position",
+              "Measuring the same star twice, several hours apart, from the same deck",
+            ],
+            correctIndex: 1,
+            explanation:
+              "You need the time at a reference meridian at the moment you take your reading, and then you compare it with your local time. The difference is your longitude.",
+            sourceLessonSlug: "finding-yourself-by-the-sky",
+          },
+          {
+            prompt: "What kind of problem does the lesson say longitude turned out to be?",
+            options: [
+              "An optical problem, waiting on a lens good enough to resolve the marker",
+              "A political problem, waiting on nations to agree where the meridian sat",
+              "A clock problem",
+              "A mathematical problem, waiting on tables nobody had yet done the work to build",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A clock problem, not a telescope problem. It took a working marine chronometer, a timepiece that could hold the reference time across an entire voyage.",
+            sourceLessonSlug: "finding-yourself-by-the-sky",
+          },
+          {
+            prompt: "What does the lesson say a navigator actually needs from astronomy?",
+            options: [
+              "A theory that explains why the bodies move the way they are seen to move",
+              "A table",
+              "An instrument accurate enough to resolve one star from its nearest neighbor",
+              "A record of every previous voyage that crossed the same stretch of ocean",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Not a theory of stars. A table: where each body will be, at what time, on what date, for years into the future.",
+            sourceLessonSlug: "finding-yourself-by-the-sky",
+          },
+          {
+            prompt: "What chain of work does producing that table require?",
+            options: [
+              "Observe, calculate, publish",
+              "A single observatory holding one continuous record over many decades",
+              "A network of ships reporting their own sightings back to a central office",
+              "An instrument maker, a printer, and a captain willing to test the result at sea",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Somebody observes, somebody calculates, somebody publishes, and a ship's captain on the other side of an ocean stakes lives on the arithmetic.",
+            sourceLessonSlug: "finding-yourself-by-the-sky",
+          },
+          {
+            prompt: "Why does the lesson call the almanac a working relationship?",
+            options: [
+              "Because the almanac makers were paid by the shipping companies that used it",
+              "A captain stakes lives on the arithmetic",
+              "Because navigators sent their own observations back to correct the next edition",
+              "Because it was the only astronomical publication a general reader ever bought",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The lesson calls it the oldest working relationship between astronomy and everybody else, because someone far away bets their crew on numbers a stranger calculated.",
+            sourceLessonSlug: "finding-yourself-by-the-sky",
+          },
+          {
+            prompt: "For most of history, why did anyone study the sky carefully?",
+            options: [
+              "To settle arguments about what the stars are made of and how they burn",
+              "To keep a calendar that would stay aligned with the seasons over centuries",
+              "People needed to get somewhere",
+              "To predict which years would bring drought and which would bring a harvest",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The practical need came first by a very long way. What stars ARE is the harder question this course spends the rest of its length on.",
+            sourceLessonSlug: "finding-yourself-by-the-sky",
+          },
+          {
+            prompt: "A navigator measures Polaris at 40 degrees above the horizon. What do they still not know?",
+            options: [
+              "Their latitude, which needs a second sighting taken twelve hours later",
+              "Their heading, which the same sighting cannot establish on a moving deck",
+              "How far they have traveled since the last reading they were able to take",
+              "Their longitude",
+            ],
+            correctIndex: 3,
+            explanation:
+              "They know they are at roughly 40 degrees north. They know nothing at all about east and west, which needs the time at a reference meridian and therefore a clock that kept it across the whole voyage.",
+            sourceLessonSlug: "finding-yourself-by-the-sky",
+          },
+          {
+            prompt: "What does the course say the rest of it asks that a navigator never needed answered?",
+            options: [
+              "What that star is, and how far away",
+              "Whether the tables could be calculated faster than they were being used up",
+              "How the sky would look from a position nobody had yet sailed to",
+              "Why the same stars appear in different places from different latitudes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Not where am I relative to that star, but what is that star, how far away is it, and how could anyone possibly know. The honest answer runs through a chain of inference, each link resting on the one below it.",
+            sourceLessonSlug: "finding-yourself-by-the-sky",
+          },
+          {
+            prompt: "Who was Benjamin Banneker?",
+            options: [
+              "A British instrument maker who built the first reliable marine chronometer",
+              "A self-taught free Black astronomer in Maryland",
+              "A Virginia planter who corresponded with Jefferson about scientific matters",
+              "The federal surveyor who laid out the boundaries of the new capital district",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Banneker (1731 to 1806) was a free Black man in Maryland who taught himself astronomy and mathematics. He worked on the district survey, but under Andrew Ellicott rather than leading it.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "What did Banneker calculate for a series of almanacs published in the 1790s?",
+            options: [
+              "The tide tables for the ports along the length of Chesapeake Bay",
+              "Ephemerides",
+              "The magnetic variation a surveyor would need at each point on the boundary",
+              "The population figures the new federal district would be assessed against",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Ephemerides: the calculated positions of celestial bodies over time, which is what an almanac is built from.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "Which survey did Banneker work on?",
+            options: [
+              "The western boundary of Maryland, disputed with the neighboring colony",
+              "The route of the first federal post road running south out of Philadelphia",
+              "The boundaries of the future federal district",
+              "The coastline of the Chesapeake, for the benefit of shipping into Baltimore",
+            ],
+            correctIndex: 2,
+            explanation:
+              "He worked on the survey of the boundaries of the federal district that became Washington, D.C., as part of the team under Andrew Ellicott.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "Whose team did Banneker work under on that survey?",
+            options: [
+              "Andrew Ellicott",
+              "Pierre L'Enfant, who was designing the plan of the city at the same time",
+              "Thomas Jefferson, in his capacity as the sitting Secretary of State",
+              "George Washington, who had personally commissioned the boundary work",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Andrew Ellicott led the survey team. L'Enfant was working on the city plan, which is why he turns up in the story this lesson goes on to warn you about.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "What does calculating an almanac require you to do?",
+            options: [
+              "Gather and organize the seasonal folklore of a particular farming region",
+              "Predict a whole year of sky positions in advance",
+              "Record what was actually observed each night, then publish it the year after",
+              "Copy the previous year's tables and adjust them for the shift in the calendar",
+            ],
+            correctIndex: 1,
+            explanation:
+              "In advance, and for a whole year: the positions of the sun, moon and planets, the times of sunrise and sunset, the phases of the moon, and eclipses. It is prediction, not record-keeping.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "Which of these does an almanac of this kind have to include?",
+            options: [
+              "The distance to each of the planets, expressed in miles from the earth",
+              "The expected weather for each week of the year in the region it serves",
+              "Eclipses",
+              "The composition of the sun, so a reader knows what its light is made of",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Eclipses, along with the positions of the sun, moon and planets, sunrise and sunset times, and the phases of the moon. Distance and composition are the questions the rest of this course is about, and no almanac of the 1790s answered them.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "Why is almanac arithmetic unforgiving?",
+            options: [
+              "Because the calculations had to be finished before the printer's deadline",
+              "An error propagates through every entry after it",
+              "Because a single missing figure makes the whole table impossible to typeset",
+              "Because the instruments of the period drifted faster than a year of use",
+            ],
+            correctIndex: 1,
+            explanation:
+              "One mistake carries forward into everything computed after it, and it is all done by hand. That is what makes a published almanac evidence of sustained, accurate work rather than a single good day.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "How would a reader catch an error in an almanac?",
+            options: [
+              "By comparing it against a rival almanac published the same year",
+              "By recalculating the entries, which any educated reader could do",
+              "The sky disagrees with the page",
+              "By waiting for the publisher to issue a correction in the following edition",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A reader will notice when the sky disagrees with the page. The work is checkable by anyone who looks up, which is exactly why publishing it was a credential.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "What did Banneker send Thomas Jefferson in 1791?",
+            options: [
+              "A petition signed by free Black residents of the surrounding counties",
+              "His almanac calculations, and a letter",
+              "A survey report on the boundary work, addressed to him as Secretary of State",
+              "A published copy of the almanac, with no accompanying correspondence",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A manuscript copy of his almanac calculations along with a letter. Both letters, his and Jefferson's reply, survive and are worth reading in full rather than in summary.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "What did that letter challenge Jefferson on?",
+            options: [
+              "Slavery",
+              "The decision to place the new federal capital on the Potomac rather than north",
+              "His refusal to support public funding for astronomical observation",
+              "The accuracy of the boundary survey the federal government had commissioned",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It challenged him directly on slavery, and on the contradiction between the words Jefferson had written and the people Jefferson held. Jefferson replied.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "What does the lesson mean by saying the almanac was the credential and the letter was what he spent it on?",
+            options: [
+              "That publishing paid well enough to fund the correspondence he wanted to have",
+              "That the almanac was the achievement and the letter was an afterthought to it",
+              "He used the standing it earned to confront Jefferson",
+              "That the letter was included in the almanac so its readers would encounter it",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Checkable, published astronomical work is what made him impossible to dismiss. The letter is what that standing was used for.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "How does this course treat the story that Banneker rebuilt the plan of Washington from memory?",
+            options: [
+              "As established, since it appears in so many accounts of his life",
+              "As unestablished",
+              "As false, since the surviving drawings are in another surveyor's hand",
+              "As irrelevant, since the city was built to a different plan in the end",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Unestablished, not disproved. It is widely repeated, and historians have questioned whether it holds up, so a course about evidence declines to assert it either way.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "Why does the course refuse to repeat that story even though it is flattering?",
+            options: [
+              "Because the documented achievements are more interesting than the story is",
+              "Because repeating it would require citing a source that no longer resolves",
+              "It cannot assert what it cannot support",
+              "Because the story originated with people hostile to Banneker's reputation",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A course about how we know things cannot assert what it cannot support, and a flattering claim is not exempt from evidence. Hanging his reputation on a contested anecdote also makes it easier to attack.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "What method does the lesson draw from that story?",
+            options: [
+              "Prefer the account that the largest number of historians repeat",
+              "Check the extra story first",
+              "Treat any claim about a famous person as unreliable until it is documented",
+              "Judge a source by whether its author admired or resented its subject",
+            ],
+            correctIndex: 1,
+            explanation:
+              "When an already-remarkable life acquires an extra story better than the documented ones, the extra story is the one to check first. Admiration produces myth as reliably as hostility produces slander.",
+            sourceLessonSlug: "banneker-and-the-almanac",
+          },
+          {
+            prompt: "What does the lesson say you cannot do with almost anything in the universe?",
+            options: [
+              "See it in more than one color at a time from a single instrument",
+              "Observe it for longer than a human lifetime allows",
+              "Go there, bring it back, or rerun it",
+              "Compare it against anything else at a genuinely known distance",
+            ],
+            correctIndex: 2,
+            explanation:
+              "You cannot go there, you cannot bring it back, and you cannot run the experiment again with one thing changed. That constraint is what shapes the entire science.",
+            sourceLessonSlug: "all-you-get-is-an-angle-and-a-brightness",
+          },
+          {
+            prompt: "What three kinds of measurement does the lesson say you actually get?",
+            options: [
+              "An angle, a brightness, and how they change",
+              "A distance, a mass, and a temperature read off the instrument directly",
+              "A position, a velocity, and a composition read from the star's own light",
+              "A brightness, an age, and the direction the object is traveling",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Where it appears to be, an angle on the sky; how bright it appears and in which colors; and how those change over time. That is the whole input.",
+            sourceLessonSlug: "all-you-get-is-an-angle-and-a-brightness",
+          },
+          {
+            prompt: "What is the status of a star's distance, mass, temperature, and age?",
+            options: [
+              "Measured directly, once the instrument is calibrated against a known source",
+              "Inferred",
+              "Estimated from a catalog of stars whose values were established long ago",
+              "Assumed, since none of them can be established even in principle",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Every one of them is inferred from angles and brightnesses through a chain of reasoning that can be examined and can be wrong. That is not the same as assumed, and the difference is the subject of this course.",
+            sourceLessonSlug: "all-you-get-is-an-angle-and-a-brightness",
+          },
+          {
+            prompt: "Why does the lesson say the chain of inference is not a weakness?",
+            options: [
+              "Because the chain has been checked so many times that it cannot now move",
+              "Because each link is independently confirmed before the next one is built",
+              "The field is unusually explicit about the chain",
+              "Because the conclusions turn out not to depend on the weakest links at all",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Astronomers built an extraordinarily reliable picture from angles and brightnesses by being unusually explicit about the chain, and arguing in public about which link is shakiest.",
+            sourceLessonSlug: "all-you-get-is-an-angle-and-a-brightness",
+          },
+          {
+            prompt: "What does the field tend to do when a claim depends on four assumptions?",
+            options: [
+              "Withhold the claim until the number of assumptions can be brought down",
+              "Publish it with the strongest of the four assumptions stated up front",
+              "Say so, and argue about the shakiest",
+              "Present the result as a range wide enough to cover every assumption",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The field tends to say so, and to argue in public about which assumption is shakiest. That habit is what makes the picture trustworthy despite resting on inference.",
+            sourceLessonSlug: "all-you-get-is-an-angle-and-a-brightness",
+          },
+          {
+            prompt: "What does the lesson say is the honest question about any astronomical number?",
+            options: [
+              "Which link is weakest",
+              "Whether the number has been reproduced by an independent instrument",
+              "How many significant figures the measurement genuinely supports",
+              "Whether the result was published before or after the theory it supports",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Never simply is it right, but which link in the chain is weakest, and what would change if that link moved.",
+            sourceLessonSlug: "all-you-get-is-an-angle-and-a-brightness",
+          },
+          {
+            prompt: "What is apparent brightness?",
+            options: [
+              "The brightness a star would have if all the dust between were removed",
+              "How bright it looks from here",
+              "The brightness assigned to it in a catalog, corrected for its color",
+              "The total light it puts out across every wavelength, added together",
+            ],
+            correctIndex: 1,
+            explanation:
+              "How bright something looks from where you are standing. It is one of the two or three things you can actually measure.",
+            sourceLessonSlug: "all-you-get-is-an-angle-and-a-brightness",
+          },
+          {
+            prompt: "What is intrinsic brightness?",
+            options: [
+              "How bright a star appears when it is observed from above the atmosphere",
+              "The brightness of the star at the moment its light began the journey here",
+              "How much light it actually emits",
+              "The brightness the star will reach at the end of its life on the diagram",
+            ],
+            correctIndex: 2,
+            explanation:
+              "How much light the object genuinely puts out, as opposed to how much of it happens to reach you.",
+            sourceLessonSlug: "all-you-get-is-an-angle-and-a-brightness",
+          },
+          {
+            prompt: "What single thing separates apparent brightness from intrinsic brightness?",
+            options: [
+              "Distance",
+              "The dust and gas lying along the line of sight between the two",
+              "The wavelength at which the observation happens to be made",
+              "The sensitivity of whatever instrument is being pointed at the object",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They differ by exactly one thing, and that thing is distance. Dust and instruments matter in practice, but the relation the lesson is building rests on distance alone.",
+            sourceLessonSlug: "all-you-get-is-an-angle-and-a-brightness",
+          },
+          {
+            prompt: "Why does that create a deadlock?",
+            options: [
+              "Because the two brightnesses are measured in units that cannot be compared",
+              "Distance is the thing you cannot measure directly",
+              "Because intrinsic brightness changes over the time the light takes to arrive",
+              "Because no instrument can measure apparent brightness accurately enough",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Distance is precisely the quantity you cannot get at directly, so knowing it would require the intrinsic brightness you were trying to find, and around it goes.",
+            sourceLessonSlug: "all-you-get-is-an-angle-and-a-brightness",
+          },
+          {
+            prompt: "A star looks dim from Earth. What could it be?",
+            options: [
+              "Faint and near, or blazing and far",
+              "Faint, since a truly bright star would still look bright from any distance",
+              "Old, since brightness falls steadily across the whole life of a star",
+              "Small, since size is what sets how much light a star can put out",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A dim-looking star might be genuinely faint and close by, or enormously luminous and very far away. Nothing in the appearance itself tells you which.",
+            sourceLessonSlug: "all-you-get-is-an-angle-and-a-brightness",
+          },
+          {
+            prompt: "What does every rung of the distance ladder amount to?",
+            options: [
+              "A more sensitive instrument that reaches fainter objects than the last one",
+              "A way to know intrinsic brightness independently",
+              "A longer baseline over which the same angle can be measured again",
+              "A larger sample of objects, so the average distance becomes reliable",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Find some way to know a thing's intrinsic brightness independently, compare it to how bright it looks, and the difference gives you the distance. The lesson calls that the whole plot.",
+            sourceLessonSlug: "all-you-get-is-an-angle-and-a-brightness",
+          },
+          {
+            prompt: "Two stars look equally bright from Earth. What would settle which is farther away?",
+            options: [
+              "Watching both for long enough to see which one changes first",
+              "Comparing the colors in which each of the two is brightest",
+              "Either star's intrinsic brightness",
+              "Measuring the angle between them as the earth moves around the sun",
+            ],
+            correctIndex: 2,
+            explanation:
+              "They could be twins at the same distance, or one could be far brighter and much further off. Knowing either star's true intrinsic brightness by some independent means settles it, because comparing intrinsic with apparent yields the distance.",
+            sourceLessonSlug: "all-you-get-is-an-angle-and-a-brightness",
+          },
+        ],
+      },
+    },
     // ── Part 2 ─────────────────────────────────────────────────────────────────────────────────
     {
       slug: "rung-one-parallax",
@@ -442,6 +975,1163 @@ NASA. (n.d.). *Type Ia supernovae as standard candles*. https://science.nasa.gov
 
 Space Telescope Science Institute. (n.d.). *The extragalactic distance scale*. https://www.stsci.edu/`,
     },
+    {
+      slug: "check-the-ladder-part-two",
+      title: "Part 2 knowledge check · The ladder",
+      section: "Part 2 · The ladder",
+      body: `A graded check on the rungs themselves: the one distance that is close to a direct measurement, what a spectrum can and cannot hand you, what Payne had to correct for before anyone could read hydrogen off a star, the diagram that turned out to be about time, the labor that made the catalogs possible, and the two tricks that reach past parallax. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is parallax, in the finger-and-one-eye demonstration?",
+            options: [
+              "The way the finger appears to grow larger as you bring it toward your face",
+              "The apparent jump against the background",
+              "The slight blur that appears when only one eye is focused on the finger",
+              "The difference in color between the finger and whatever sits behind it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Look at your finger with one eye and then the other and it jumps against the background. The size of the jump depends on how far away the finger is, which is the whole method.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "How long do you wait between the two observations that give a star's parallax?",
+            options: [
+              "One night, so the earth's own rotation supplies the change of viewpoint",
+              "Six months",
+              "One year, so the earth has returned to exactly the place it started",
+              "Several years, so the star's own motion has had time to accumulate",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Six months, which is how long the earth takes to travel to the opposite side of its orbit. A full year would put you back where you began and show nothing.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "What does a nearby star do between those two observations?",
+            options: [
+              "It brightens measurably as the earth's orbit carries it closer",
+              "It shifts against the more distant stars",
+              "It changes color slightly, toward the blue on approach and the red away",
+              "It traces a complete circle against the background over the six months",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The nearby star shifts slightly against the more distant ones, and the size of that shift gives you the distance.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "What makes parallax different from every other rung of the ladder?",
+            options: [
+              "It is the only one that works on stars inside our own galaxy",
+              "It is the only one that does not require a photographic record",
+              "It is close to a direct measurement",
+              "It is the only one that was worked out before the twentieth century",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Parallax is the only rung that is close to a direct measurement, anchored in geometry. Everything above it is calibrated on it.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "Who published the first stellar parallax, and when?",
+            options: [
+              "Bessel, in 1838",
+              "Hertzsprung, in 1905, working from the plates at Harvard College Observatory",
+              "Leavitt, in 1912, as part of the same work on the Magellanic Clouds",
+              "Galileo, in 1610, in the first published results from a telescope",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Friedrich Bessel published a parallax for the star 61 Cygni in 1838. The idea itself is ancient; it was the measurement that had to wait.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "Which star did that first parallax measurement belong to?",
+            options: [
+              "Polaris, since it was already the most carefully observed star in the sky",
+              "Sirius, the brightest star in the sky and therefore assumed the nearest",
+              "61 Cygni",
+              "Betelgeuse, whose size made the shift easier to detect against the field",
+            ],
+            correctIndex: 2,
+            explanation:
+              "61 Cygni. Brightness is not a reliable guide to nearness, which is exactly the confusion between apparent and intrinsic brightness the course keeps returning to.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "Why did the measurement take so long to make?",
+            options: [
+              "Because nobody had thought of using the earth's orbit as a baseline",
+              "Because the church discouraged observations that assumed the earth moved",
+              "Because the plates needed to record it had not yet been invented",
+              "The angles are minuscule",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The delay was not a failure of imagination. Even for nearby stars the shift is well under one arcsecond, and nobody had instruments that could measure it.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "How large is the parallax shift even for nearby stars?",
+            options: [
+              "Well under one arcsecond",
+              "About one degree, which is roughly twice the width of the full moon",
+              "About one arcminute, which a careful naked-eye observer can just detect",
+              "It varies from a degree to an arcsecond depending on the star's brightness",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Well under one arcsecond, which is under a 3600th of a degree. That is the whole reason the measurement waited until 1838.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "What was the absence of any detectable parallax used to argue for centuries?",
+            options: [
+              "That the stars were all fixed to a single sphere at one common distance",
+              "That the earth does not move",
+              "That the instruments of the period were fundamentally untrustworthy",
+              "That the stars were much closer than the planets rather than further away",
+            ],
+            correctIndex: 1,
+            explanation:
+              "If we really orbited the sun, the stars ought to shift, and they visibly did not. The absence was taken as an argument against the earth moving at all.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "What was the counter-argument, and how did it fare?",
+            options: [
+              "That the shift was hidden by the atmosphere, and it was wrong",
+              "That the shift was too slow to notice in a human lifetime, and it was wrong",
+              "That the stars are enormously far away, and it was right",
+              "That parallax applies only to the planets, and it was partly right",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The stars must simply be so far away that the shift is too small to see. It turned out to be exactly right, and it had no evidence behind it at the time.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "What does the lesson say about a prediction that fails to appear?",
+            options: [
+              "It is evidence, but not always of what it seems to be",
+              "It is proof that the theory making the prediction has to be abandoned",
+              "It should be set aside until an instrument confirms one way or the other",
+              "It counts for less than a prediction that was confirmed by observation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A missing prediction is evidence. It can mean the theory is wrong, or that your instrument is not good enough yet, and telling those apart is one of the hardest recurring judgments in science. There is no formula for it.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "Why does parallax run out at distance?",
+            options: [
+              "Because the earth's orbit is not perfectly circular over long baselines",
+              "The shift shrinks into your measurement error",
+              "Because dust between the stars scatters the light before it arrives",
+              "Because distant stars move too fast for two readings to describe them",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The further away a star, the smaller the shift, until it disappears into your measurement error. That limit is why there has to be a ladder at all.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "What extended parallax's reach dramatically?",
+            options: [
+              "Larger ground telescopes, which collect enough light to sharpen the reading",
+              "Space-based astrometry",
+              "Photographic plates, which record a position more precisely than an eye",
+              "Longer observing programs, which average many readings into one result",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Measuring from above the atmosphere extended the reach dramatically, and the Gaia mission has measured parallaxes for an enormous number of stars.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "How far does parallax alone reach?",
+            options: [
+              "To the nearest other galaxies, but no further than the local group",
+              "Across our own galaxy, but no further than that",
+              "Not across our own galaxy",
+              "To every star that can be seen with the unaided eye, and no further",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Parallax alone does not reach across our own galaxy, let alone to another one. Hence the ladder.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "What appears when starlight is spread out into its colors?",
+            options: [
+              "Sharp dark lines, always in the same places for the same material",
+              "A smooth unbroken band whose color depends only on the star's temperature",
+              "Bright lines added on top of the band wherever an element is present",
+              "A pattern that shifts from one observation to the next as the star turns",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The smooth band of color is interrupted by sharp dark absorption lines, and for a given material they always fall in the same places.",
+            sourceLessonSlug: "light-itself",
+          },
+          {
+            prompt: "Why is the pattern of absorption lines called a fingerprint?",
+            options: [
+              "Because no two stars have ever been found to show the same pattern twice",
+              "Because the pattern is left behind by the instrument rather than the star",
+              "Because it can identify a star but tells you nothing about its condition",
+              "Each element absorbs at its own set of wavelengths",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Each element absorbs light at its own specific set of wavelengths, so the pattern identifies what the light passed through. Starlight arrives carrying a list.",
+            sourceLessonSlug: "light-itself",
+          },
+          {
+            prompt: "What was the composition of the stars a standard example of, before spectroscopy?",
+            options: [
+              "Something humans could never know",
+              "A question that could only be settled by sending an instrument there",
+              "A problem that different cultures had each already answered differently",
+              "A matter of belief rather than of measurement, and therefore not science",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It was the standard example of something humans could never know. Then it became routine, which is a useful thing to remember about any current example of the same kind.",
+            sourceLessonSlug: "light-itself",
+          },
+          {
+            prompt: "Which absorption lines are present tells you what?",
+            options: [
+              "How far away the star is, once the strength of each line is measured",
+              "Which elements are there",
+              "How old the star is, since heavier elements accumulate with age",
+              "The direction the star is moving relative to the earth",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Which lines are present identifies which elements are there. Motion comes from the lines being displaced, not from which ones appear.",
+            sourceLessonSlug: "light-itself",
+          },
+          {
+            prompt: "What does the overall color balance of a spectrum tell you?",
+            options: [
+              "The elements present in the greatest quantity in the star's atmosphere",
+              "The star's surface temperature",
+              "The amount of dust the light passed through on its way to the instrument",
+              "The star's mass, which sets everything else about how it burns",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The overall color balance gives surface temperature. Line strength is what carries information about conditions, and it has to be handled with care.",
+            sourceLessonSlug: "light-itself",
+          },
+          {
+            prompt: "What do lines shifted away from their laboratory positions tell you?",
+            options: [
+              "That the laboratory measurement of that element needs to be redone",
+              "That more than one element is contributing to the same part of the band",
+              "Motion toward or away from us",
+              "That the star's surface is hotter than the model had assumed it was",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The pattern's spacing is fixed by physics, so a displaced pattern means motion toward or away from us, or light stretched on the journey. That shift becomes the top rung of the ladder.",
+            sourceLessonSlug: "light-itself",
+          },
+          {
+            prompt: "Why is it the whole pattern moving, rather than one line, that matters?",
+            options: [
+              "Because a single line could be a flaw in the plate or the instrument",
+              "Because one line alone cannot be matched to any particular element",
+              "Because the internal spacing identifies the element regardless of the shift",
+              "Because the shift is too small to detect from a single line by itself",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The pattern's internal spacing is fixed by physics, so it still identifies the element after it has moved. The displacement of the whole pattern is then a clean measurement of motion or of expansion.",
+            sourceLessonSlug: "light-itself",
+          },
+          {
+            prompt: "What does reading a spectrum's line strengths require, beyond the measurement itself?",
+            options: [
+              "A model of how atoms behave under those conditions",
+              "A second spectrum of the same star taken at a different time of year",
+              "A catalog of every star already classified at the same temperature",
+              "An independent measurement of the star's distance from the earth",
+            ],
+            correctIndex: 0,
+            explanation:
+              "You measure brightness at many wavelengths, infer elements using known laboratory patterns, then infer conditions using a model of how atoms behave. Each step is well tested and each step is a step.",
+            sourceLessonSlug: "light-itself",
+          },
+          {
+            prompt: "What does the lesson say about the number at the end of that chain?",
+            options: [
+              "It is as reliable as a direct measurement once the chain is well tested",
+              "It is not something anybody saw",
+              "It should be published only alongside the assumptions that produced it",
+              "It is an estimate, and the field treats it as provisional until confirmed",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Each step is well tested, and the result is still inferred rather than observed. That distinction is the habit the whole course keeps pointing at.",
+            sourceLessonSlug: "light-itself",
+          },
+          {
+            prompt: "A star shows the hydrogen pattern, but every line sits at a longer wavelength than in the laboratory. What can you conclude?",
+            options: [
+              "That the star's hydrogen is at a higher temperature than the laboratory sample",
+              "That the star is moving away, or the light was stretched on the way",
+              "That the star contains an element that mimics the hydrogen pattern",
+              "That the instrument's calibration has drifted since it was last checked",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The internal spacing identifies the pattern as hydrogen; the displacement measures motion or expansion. Distinguishing those two possibilities is the subject of lesson 11.",
+            sourceLessonSlug: "light-itself",
+          },
+          {
+            prompt: "By the 1920s, what did astronomers expect stars to be made of?",
+            options: [
+              "Roughly the same mix of elements as the earth",
+              "Mostly hydrogen, which the spectra had been showing plainly for decades",
+              "Material too hot to have a settled composition at all",
+              "Whatever the surrounding interstellar cloud had happened to contain",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The spectra showed the same elements as the earth and nothing obviously suggested otherwise, so an Earth-like mix was the expectation Payne's thesis ran into.",
+            sourceLessonSlug: "cecilia-payne-and-what-stars-are-made-of",
+          },
+          {
+            prompt: "What did Payne's 1925 doctoral thesis conclude stars are overwhelmingly made of?",
+            options: [
+              "Iron and the heavier metals, concentrated toward the core",
+              "Carbon and oxygen, the products of the fusion happening inside",
+              "Hydrogen and helium",
+              "A mixture too varied from star to star to be summarized at all",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Hydrogen and helium, by an enormous margin. It is one of the foundational results of modern astrophysics.",
+            sourceLessonSlug: "cecilia-payne-and-what-stars-are-made-of",
+          },
+          {
+            prompt: "What new physics did Payne apply to reach that conclusion?",
+            options: [
+              "The relationship between a star's mass and the rate at which it burns",
+              "The behavior of light as it passes through an expanding space",
+              "The way a gas cools when it is allowed to expand into a vacuum",
+              "How atoms behave at different temperatures",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Newly developed physics describing how atoms behave at different temperatures, which is what let her separate line strength from abundance.",
+            sourceLessonSlug: "cecilia-payne-and-what-stars-are-made-of",
+          },
+          {
+            prompt: "Why do line strengths not translate directly into abundances?",
+            options: [
+              "Because temperature governs how strongly an element absorbs",
+              "Because the lines of different elements overlap and cannot be separated",
+              "Because the strongest lines saturate and stop responding to more material",
+              "Because absorption happens in the star's atmosphere and not in its interior",
+            ],
+            correctIndex: 0,
+            explanation:
+              "How strongly a given element absorbs depends on temperature. Without correcting for that, the spectra genuinely look like a roughly Earth-like mix.",
+            sourceLessonSlug: "cecilia-payne-and-what-stars-are-made-of",
+          },
+          {
+            prompt: "Why did nobody read hydrogen dominance off the spectra before 1925?",
+            options: [
+              "Because the hydrogen lines fall outside the range the plates could record",
+              "The correction for temperature did not yet exist",
+              "Because nobody had yet collected spectra of enough different stars",
+              "Because the result was rejected each time it was submitted for publication",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The physics needed to correct for temperature had only recently been developed. Until then the spectra looked Earth-like, and they looked that way honestly.",
+            sourceLessonSlug: "cecilia-payne-and-what-stars-are-made-of",
+          },
+          {
+            prompt: "What language does the published thesis contain about the derived abundances?",
+            options: [
+              "A footnote attributing the correction to a more senior colleague",
+              "A recommendation that the calculation be repeated by another observatory",
+              "That they are almost certainly not real",
+              "A claim that the result overturns everything previously believed",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The published thesis describes the derived abundances as almost certainly not real. That hedge is a documented fact; how it came to be worded is not.",
+            sourceLessonSlug: "cecilia-payne-and-what-stars-are-made-of",
+          },
+          {
+            prompt: "How does this course handle the compressed retelling of Payne's story?",
+            options: [
+              "It repeats it, since the thesis language confirms the essential outline",
+              "It rejects it outright, since the correspondence contradicts it",
+              "It replaces it with an account drawn from a single secondary source",
+              "It flags it rather than repeating it",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The compressed version is doing several things at once. What the correspondence and thesis actually show is a matter for the primary documents, and it is registered as an open check rather than asserted.",
+            sourceLessonSlug: "cecilia-payne-and-what-stars-are-made-of",
+          },
+          {
+            prompt: "Which parts of the Payne story does the lesson say are not in doubt?",
+            options: [
+              "The conclusion, the resistance, the hedge, and the later acceptance",
+              "That a senior astronomer instructed her to withdraw the result",
+              "That the same astronomer later published the conclusion as his own",
+              "That the field accepted the result immediately once it was in print",
+            ],
+            correctIndex: 0,
+            explanation:
+              "She reached the correct conclusion, it went against the expectation of the field, the published thesis hedged it, and the result was accepted a few years later. Who advised what is the part still open.",
+            sourceLessonSlug: "cecilia-payne-and-what-stars-are-made-of",
+          },
+          {
+            prompt: "What does the lesson call the hardest problem in reading evidence, illustrated here?",
+            options: [
+              "That data can be correct and still be interpreted through the wrong model",
+              "The right answer, and insufficient authority to state it plainly",
+              "That a result can be reproduced many times and still turn out to be wrong",
+              "That the expectations of a field are rarely written down anywhere",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The data were not the obstacle and neither was the reasoning. She had the right answer and insufficient authority to state it plainly.",
+            sourceLessonSlug: "cecilia-payne-and-what-stars-are-made-of",
+          },
+          {
+            prompt: "What does the lesson say about the idea that science self-corrects quickly and neutrally?",
+            options: [
+              "It describes the long run, not any particular year",
+              "It is true of physics but not of the observational sciences",
+              "It holds wherever the underlying data are published alongside the result",
+              "It became true only once peer review was formalized in the field",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Self-correction is a description of the long run and not of any particular year. Knowing that this happens is why the episode belongs in a course about evidence.",
+            sourceLessonSlug: "cecilia-payne-and-what-stars-are-made-of",
+          },
+          {
+            prompt: "What two quantities are plotted against each other on an HR diagram?",
+            options: [
+              "Distance and apparent brightness, for stars whose parallax is known",
+              "Mass and age, worked out from a model of how each star burns its fuel",
+              "Intrinsic brightness and surface temperature",
+              "Color and distance, which is what makes the band emerge from the cloud",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Intrinsic brightness against surface temperature. Plot enough stars that way and the structure appears without anyone having designed it.",
+            sourceLessonSlug: "reading-a-star-the-hr-diagram",
+          },
+          {
+            prompt: "What would the diagram look like if stars came in every possible combination?",
+            options: [
+              "A shapeless cloud",
+              "A single vertical line, since temperature would then carry no information",
+              "Several separate clusters, one for each of the elements that dominates",
+              "A curve bending downward, since brighter stars burn out more quickly",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It would be a shapeless cloud, and it is not. Most stars fall along a single diagonal band with two smaller populations off it.",
+            sourceLessonSlug: "reading-a-star-the-hr-diagram",
+          },
+          {
+            prompt: "What are the stars on the main sequence doing?",
+            options: [
+              "Collapsing inward, having exhausted the fuel that held them up",
+              "Fusing hydrogen in their cores",
+              "Cooling steadily, having stopped fusing anything at all",
+              "Expanding outward as their outer layers are pushed away",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The diagonal band holds stars fusing hydrogen in their cores. Most stars, most of the time, are there.",
+            sourceLessonSlug: "reading-a-star-the-hr-diagram",
+          },
+          {
+            prompt: "What does a star's position along the main sequence track?",
+            options: [
+              "Its age, running from newly formed at one end to nearly spent at the other",
+              "Its distance from us, which is why the band is diagonal rather than flat",
+              "Its mass",
+              "Its composition, from the most hydrogen-rich down to the most processed",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Position along the main sequence tracks mass: heavier stars are hotter and brighter.",
+            sourceLessonSlug: "reading-a-star-the-hr-diagram",
+          },
+          {
+            prompt: "Where do giants sit on the diagram, and what does that imply?",
+            options: [
+              "Up and right, so they must be enormous",
+              "Down and right, so they must be both cool and unusually small",
+              "Up and left, so they must be the hottest stars anywhere on the diagram",
+              "Along the middle of the band, so they are ordinary stars seen close up",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Cool but very luminous. A cool surface emits relatively little light per unit area, so producing that much total light requires a great deal of surface.",
+            sourceLessonSlug: "reading-a-star-the-hr-diagram",
+          },
+          {
+            prompt: "Where do white dwarfs sit, and what does that imply?",
+            options: [
+              "Up and left, so they must be enormous and extremely hot at once",
+              "Down and right, so they must be cool and near the end of their lives",
+              "Down and left, so they must be tiny",
+              "Off the diagram entirely, since their brightness cannot be measured",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Hot but faint, so they must be tiny. Surface temperature and total light output together constrain the size.",
+            sourceLessonSlug: "reading-a-star-the-hr-diagram",
+          },
+          {
+            prompt: "How did the structure of the HR diagram come about?",
+            options: [
+              "It emerged from plotting measurements, and then had to be explained",
+              "It was predicted by a theory of stellar structure and later confirmed",
+              "It was drawn to organize the classification scheme already in use",
+              "It was assembled from several separate catalogs that happened to agree",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Nobody designed it. A pattern in data was taken seriously as a fact needing explanation, and the explanation turned out to be about time.",
+            sourceLessonSlug: "reading-a-star-the-hr-diagram",
+          },
+          {
+            prompt: "What is the HR diagram actually a picture of?",
+            options: [
+              "A catalog of the kinds of star that the universe contains",
+              "A population at different stages of life",
+              "A sequence showing how one star changes over a human lifetime",
+              "A map of where stars of each type are found within the galaxy",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Not a catalog of kinds of star: a snapshot of a population at different stages of life. The explanation for the structure turned out to be stellar evolution.",
+            sourceLessonSlug: "reading-a-star-the-hr-diagram",
+          },
+          {
+            prompt: "How does the HR diagram break the deadlock from lesson 3?",
+            options: [
+              "It measures distance directly, without any reference to brightness",
+              "It removes the need to know intrinsic brightness at all",
+              "Its position gives you intrinsic brightness",
+              "It shows which stars are close enough for parallax to work on them",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Work out where a star sits on the diagram from its spectrum alone and you can read off its intrinsic brightness. Compare that with how bright it appears and you have its distance.",
+            sourceLessonSlug: "reading-a-star-the-hr-diagram",
+          },
+          {
+            prompt: "What had to be established before the diagram's vertical axis could mean anything?",
+            options: [
+              "The distances of stars, by parallax",
+              "The chemical composition of a large enough sample of stars",
+              "The classification sequence that sorts spectra into ordered types",
+              "The rate at which a star of a given mass consumes its hydrogen",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The vertical axis is intrinsic brightness, which had to be established using stars whose distances were known by parallax. The rung is only as good as the calibration underneath it.",
+            sourceLessonSlug: "reading-a-star-the-hr-diagram",
+          },
+          {
+            prompt: "What does the lesson mean by saying the ladder is not a metaphor?",
+            options: [
+              "That the rungs are named in the order they were historically discovered",
+              "Each rung is literally built on the one below",
+              "That the rungs reach progressively further out into the universe",
+              "That climbing it requires the same effort at every level",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Each rung is literally built on the one below it, which is why the reliability of any rung depends entirely on the calibration underneath it.",
+            sourceLessonSlug: "reading-a-star-the-hr-diagram",
+          },
+          {
+            prompt: "A star is cool at the surface and enormously luminous. Where is it on the diagram?",
+            options: [
+              "Among the white dwarfs, down and to the left of the main sequence",
+              "In the giant region, up and to the right",
+              "At the cool end of the main sequence, down and to the right",
+              "Nowhere; that combination does not occur among observed stars",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It must be very large, because a cool surface emits relatively little light per unit area, so that much total light needs an enormous amount of surface. That puts it up and to the right, among the giants.",
+            sourceLessonSlug: "reading-a-star-the-hr-diagram",
+          },
+          {
+            prompt: "What work did the Harvard Computers actually do?",
+            options: [
+              "They operated the observatory's telescopes through the night in shifts",
+              "They performed the arithmetic behind the observatory's published almanacs",
+              "Sorted an enormous number of stellar spectra, one at a time",
+              "They maintained the photographic plates and the chemicals used to develop them",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Somebody had to look at an enormous number of stellar spectra on photographic plates and sort them. That work is what the classification system underneath the HR diagram rests on.",
+            sourceLessonSlug: "the-harvard-computers",
+          },
+          {
+            prompt: "What did the word computer mean at Harvard College Observatory?",
+            options: [
+              "A person who computes",
+              "A mechanical calculating engine of the kind then coming into use",
+              "A junior astronomer serving an apprenticeship before being given a telescope",
+              "A clerk who copied published figures from one catalog into another",
+            ],
+            correctIndex: 0,
+            explanation:
+              "At the time a computer was a person who computes. The group employed to examine the plates were called computers in exactly that sense.",
+            sourceLessonSlug: "the-harvard-computers",
+          },
+          {
+            prompt: "How did Williamina Fleming come to the work?",
+            options: [
+              "She was recruited from a British observatory that was closing down",
+              "She answered an advertisement the observatory placed in a Boston paper",
+              "She began as a domestic employee in the director's household",
+              "She arrived as a graduate student and stayed on when no post opened up",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Fleming began as a domestic employee in the director's household, was put to work on the plates, and went on to classify many thousands of stellar spectra.",
+            sourceLessonSlug: "the-harvard-computers",
+          },
+          {
+            prompt: "What position did Fleming eventually hold?",
+            options: [
+              "Director of the observatory, after the previous director retired",
+              "In charge of the plate collection",
+              "Professor of astronomy at the college the observatory belonged to",
+              "Editor of the catalog series the observatory published each year",
+            ],
+            correctIndex: 1,
+            explanation:
+              "She classified many thousands of stellar spectra and was placed in charge of the plate collection.",
+            sourceLessonSlug: "the-harvard-computers",
+          },
+          {
+            prompt: "What did Annie Jump Cannon do?",
+            options: [
+              "She discovered the relationship between a variable star's period and its brightness",
+              "She reorganized the classification into the sequence still used",
+              "She established the first reliable parallax for a star outside the solar system",
+              "She proved that stars are made overwhelmingly of hydrogen and helium",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Cannon reorganized the classification into the sequence that is still in use, and applied it to a catalog of enormous scale. The other three achievements in this question belong to Leavitt, Bessel, and Payne.",
+            sourceLessonSlug: "the-harvard-computers",
+          },
+          {
+            prompt: "Which of the Harvard Computers is the subject of the next lesson?",
+            options: [
+              "Williamina Fleming, who was placed in charge of the plate collection",
+              "Annie Jump Cannon, whose classification sequence is still in use",
+              "Cecilia Payne, whose thesis settled what the stars are made of",
+              "Henrietta Swan Leavitt",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Leavitt's period-luminosity work is the next lesson, and it becomes rung two of the ladder.",
+            sourceLessonSlug: "the-harvard-computers",
+          },
+          {
+            prompt: "How were the Harvard Computers paid?",
+            options: [
+              "A fraction of what a man in comparable work earned",
+              "At the same rate as the observatory's junior male staff, unusually for the era",
+              "By the plate, so that a fast worker could out-earn a salaried astronomer",
+              "Not at all, since the positions were treated as unpaid apprenticeships",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They were paid a fraction of what a man in comparable work earned, and credit for the resulting catalogs frequently attached to the observatory's director instead.",
+            sourceLessonSlug: "the-harvard-computers",
+          },
+          {
+            prompt: "Where did credit for the resulting catalogs frequently go?",
+            options: [
+              "To the individual computer who had classified the most plates that year",
+              "To the college, which published them without naming anyone at all",
+              "To the observatory's director",
+              "To the instrument makers who had built the plate cameras",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Credit frequently attached to the observatory's director. That is part of why the labor arrangement is not a footnote to the astronomy.",
+            sourceLessonSlug: "the-harvard-computers",
+          },
+          {
+            prompt: "Why were several of the computers available so cheaply?",
+            options: [
+              "Because the observatory was one of very few employers in the area",
+              "Because the work required no training that a school could not provide",
+              "Because the plates could be examined at home, in unpaid hours",
+              "The careers their education pointed toward were closed to them",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Several were college-educated in an era when the career their education pointed toward was closed to them, which is exactly why they were available so cheaply.",
+            sourceLessonSlug: "the-harvard-computers",
+          },
+          {
+            prompt: "What is the lesson's argument that the pay arrangement was structural to the science?",
+            options: [
+              "The scale of the result depended on the labor being cheap",
+              "The workers were more careful because they could not afford to be dismissed",
+              "The low cost let the observatory buy better instruments with the savings",
+              "The arrangement kept the project going for longer than a grant would have",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A project requiring painstaking examination of hundreds of thousands of spectra was affordable because the labor was underpaid, and it was underpaid because of who was doing it.",
+            sourceLessonSlug: "the-harvard-computers",
+          },
+          {
+            prompt: "What two statements does the lesson insist on holding at once?",
+            options: [
+              "That the catalog is genuine and the arrangement was exploitative",
+              "That the work was skilled and that the workers were nonetheless amateurs",
+              "That the results were correct and that the classification was later replaced",
+              "That the pay was low and that the observatory could not have paid more",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The catalog is a genuine achievement, the arrangement that produced it was exploitative, and both statements have to be held at once. The lesson calls that an uncomfortable sentence and a true one.",
+            sourceLessonSlug: "the-harvard-computers",
+          },
+          {
+            prompt: "Why is the 1890s plate collection still consulted?",
+            options: [
+              "Because the classification sequence can only be checked against originals",
+              "Because the plates record fainter objects than modern instruments reach",
+              "It measures a sky that no longer exists",
+              "Because the observatory has never finished cataloging what is on them",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A photographic plate from the 1890s is a measurement of a sky that no longer exists and cannot be re-observed. Cannon's classification sequence also survives, and is still taught and used.",
+            sourceLessonSlug: "the-harvard-computers",
+          },
+          {
+            prompt: "What do the pulsing variable stars in Leavitt's work do?",
+            options: [
+              "They brighten and dim on a regular cycle",
+              "They flare once and then fade over the following weeks",
+              "They change color without changing how much light they put out",
+              "They disappear behind a companion star at predictable intervals",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They brighten and dim on a regular cycle taking days or weeks, and they do it reliably enough to time with a stopwatch.",
+            sourceLessonSlug: "rung-two-leavitts-yardstick",
+          },
+          {
+            prompt: "What did Leavitt notice about those stars?",
+            options: [
+              "The bluer ones cycled faster than the redder ones did",
+              "The ones nearer the center of the cloud cycled more regularly",
+              "The ones taking longer to cycle were brighter",
+              "The brighter ones changed by a larger fraction of their total light",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Period predicted brightness: the stars that took longer to complete a cycle were the brighter ones. That relationship is what broke the deadlock from lesson 3.",
+            sourceLessonSlug: "rung-two-leavitts-yardstick",
+          },
+          {
+            prompt: "Why did it matter that her variable stars were in the Magellanic Clouds?",
+            options: [
+              "They are all at roughly the same distance",
+              "The clouds lie far enough from the galactic plane that no dust dims them",
+              "The clouds hold the only variables slow enough to be timed accurately",
+              "Harvard's plates covered the southern sky better than the northern sky",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Everyone in a distant city is roughly equally far from you even though the city has width. Within such a group, differences in apparent brightness are differences in actual brightness.",
+            sourceLessonSlug: "rung-two-leavitts-yardstick",
+          },
+          {
+            prompt: "What does normally comparing the brightness of two stars tell you about their intrinsic brightness?",
+            options: [
+              "Everything, provided both are observed with the same instrument",
+              "Nothing, because you do not know their distances",
+              "Enough to rank them, though not to put a number on either",
+              "Only whether they belong to the same class on the diagram",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Nothing at all, because you do not know their distances. That is the deadlock, and choosing a sample at a common distance is what dissolves it.",
+            sourceLessonSlug: "rung-two-leavitts-yardstick",
+          },
+          {
+            prompt: "Where does the lesson say the insight in Leavitt's work lies?",
+            options: [
+              "In the arithmetic, which extracted a clean law from very noisy readings",
+              "In the instrument, which resolved cycles nobody else could time",
+              "In the choice of sample",
+              "In the decision to publish before the relation had been calibrated",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The lesson calls it a beautiful piece of reasoning and says the insight is in the choice of sample, not in the arithmetic.",
+            sourceLessonSlug: "rung-two-leavitts-yardstick",
+          },
+          {
+            prompt: "Once you accept that period predicts intrinsic brightness, how do you get a distance?",
+            options: [
+              "Time the cycle, then compare true brightness with apparent",
+              "Measure the angle the star shifts over six months of the earth's orbit",
+              "Compare its color against a star of the same type at a known distance",
+              "Count how many cycles it completes before its brightness begins to drift",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Find one of these stars anywhere, time its cycle, infer how bright it truly is, compare with how bright it looks, and the difference is the distance.",
+            sourceLessonSlug: "rung-two-leavitts-yardstick",
+          },
+          {
+            prompt: "What did the period-luminosity relation make answerable?",
+            options: [
+              "The composition of stars too faint for their spectra to be recorded",
+              "The age of the universe, read directly off the oldest variables found",
+              "Whether other galaxies exist at all",
+              "Why stars of the same mass can differ so much in surface temperature",
+            ],
+            correctIndex: 2,
+            explanation:
+              "It reaches vastly further than parallax, which is how the scale of the galaxy, and then the question of whether other galaxies exist at all, became answerable.",
+            sourceLessonSlug: "rung-two-leavitts-yardstick",
+          },
+          {
+            prompt: "Why did the relation still have to be calibrated?",
+            options: [
+              "Because different variable stars follow slightly different relations",
+              "Because the period drifts over the decades a star is observed",
+              "Knowing longer means brighter does not tell you how bright",
+              "Because apparent brightness cannot be measured on a photographic plate",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Knowing that longer period means brighter does not by itself tell you how bright. Pinning that required stars of this type whose distances were known by other means, which ultimately traces back to parallax.",
+            sourceLessonSlug: "rung-two-leavitts-yardstick",
+          },
+          {
+            prompt: "Why does this course leave the Nobel Prize anecdote about Leavitt out?",
+            options: [
+              "It is usually told inaccurately, and it is pending a check",
+              "Because prizes are outside the scope of a course about measurement",
+              "Because the nomination was withdrawn before it was ever submitted",
+              "Because the story originated with people hostile to her reputation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The story is usually told inaccurately, so the course leaves it out pending a check against primary sources.",
+            sourceLessonSlug: "rung-two-leavitts-yardstick",
+          },
+          {
+            prompt: "What is the lesson's other objection to introducing Leavitt through that prize?",
+            options: [
+              "It makes the prize the measure of the work",
+              "It implies she worked alone rather than inside a large classification project",
+              "It suggests the relation was recognized sooner than it actually was",
+              "It puts a Swedish committee at the center of an American discovery",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The period-luminosity relation is one of the load-bearing results in astronomy. Introducing its discoverer through a prize she did not receive makes the prize the measure of the work, which the lesson calls slightly insulting.",
+            sourceLessonSlug: "rung-two-leavitts-yardstick",
+          },
+          {
+            prompt: "Why do variable stars alone not reach far enough?",
+            options: [
+              "Because their cycles become too slow to time at great distance",
+              "Because they are not found outside our own galaxy at all",
+              "Because their period-luminosity relation breaks down beyond a certain range",
+              "You need something visible at much greater distance",
+            ],
+            correctIndex: 3,
+            explanation:
+              "To measure across the observable universe you need something visible from much further away, which in practice means something violent.",
+            sourceLessonSlug: "rung-three-standard-candles",
+          },
+          {
+            prompt: "What is a standard candle?",
+            options: [
+              "An object whose intrinsic brightness you believe you know",
+              "An object at a distance already fixed by an independent measurement",
+              "A star whose brightness never varies over the period it is observed",
+              "A reference lamp carried aboard the instrument to calibrate the readings",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Any object whose intrinsic brightness you believe you know independently. Believe you know is doing real work in that sentence.",
+            sourceLessonSlug: "rung-three-standard-candles",
+          },
+          {
+            prompt: "Why do certain exploding stars serve as standard candles?",
+            options: [
+              "Because they occur often enough to be found in every galaxy each year",
+              "Their peak brightness falls within a narrow range",
+              "Because their light is unaffected by dust along the line of sight",
+              "Because their spectra identify them without any risk of confusion",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Their peak brightness falls within a narrow range that can be tightened further by studying how the brightness rises and falls, and they are briefly bright enough to be seen across enormous distances.",
+            sourceLessonSlug: "rung-three-standard-candles",
+          },
+          {
+            prompt: "What tightens the estimate of an exploding star's peak brightness?",
+            options: [
+              "The color of the light at the moment the explosion is first detected",
+              "The number of similar explosions previously seen in the same galaxy",
+              "How the brightness rises and falls",
+              "The distance to the nearest variable star in the same field of view",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Studying the shape of the rise and fall narrows the range the peak brightness falls within, which is what makes the rung usable rather than merely suggestive.",
+            sourceLessonSlug: "rung-three-standard-candles",
+          },
+          {
+            prompt: "What calibrates rung two, the period-luminosity variables?",
+            options: [
+              "Geometry alone, in the same way that parallax is anchored",
+              "Rung one, parallax",
+              "Rung three, the standard-candle explosions above it",
+              "Nothing; it is independently anchored to a laboratory measurement",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Rung two is calibrated by rung one. Reading down that column is the point of the table: parallax is anchored by geometry, and every rung after it is anchored by the rung below.",
+            sourceLessonSlug: "rung-three-standard-candles",
+          },
+          {
+            prompt: "What calibrates rung four, redshift and expansion?",
+            options: [
+              "Geometry alone, since redshift is measured directly from a spectrum",
+              "Rung one, since parallax underlies everything in the end",
+              "Rung three, the standard-candle explosions",
+              "Nothing; the top rung is fixed by theory rather than by measurement",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Rung four is calibrated by rung three, which is calibrated by rung two, which is calibrated by parallax. No rung above the first is independently anchored to reality.",
+            sourceLessonSlug: "rung-three-standard-candles",
+          },
+          {
+            prompt: "What happens to an error low down on the ladder?",
+            options: [
+              "It propagates upward, and it does so silently",
+              "It is caught by the next rung, since each one re-derives the last",
+              "It stays where it is, since each rung is measured independently",
+              "It cancels out, since the rungs overlap in the ranges they cover",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It propagates upward through everything built on it, and silently, because each rung individually still looks internally consistent.",
+            sourceLessonSlug: "rung-three-standard-candles",
+          },
+          {
+            prompt: "Why does the lesson say the ladder's structure is not a scandal?",
+            options: [
+              "Because the field knows, and there are cross-checks",
+              "Because the errors involved are too small to affect any published result",
+              "Because the lowest rung has been remeasured often enough to be certain",
+              "Because no conclusion in cosmology actually depends on the upper rungs",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Calibration is an active, argued-about area of research precisely because everyone understands what depends on it, and where two rungs overlap in range they can be compared against each other.",
+            sourceLessonSlug: "rung-three-standard-candles",
+          },
+          {
+            prompt: "Why is agreement between independent methods strong evidence?",
+            options: [
+              "Because the methods were designed to be checked against each other",
+              "Because two measurements are always more precise than one",
+              "They fail in different ways",
+              "Because a method only counts as independent once it has been confirmed",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Agreement between methods that fail in different ways is genuinely strong evidence, which is why cross-checks matter more than repetition of the same method.",
+            sourceLessonSlug: "rung-three-standard-candles",
+          },
+          {
+            prompt: "What does the lesson say an honest description of a large cosmic distance looks like?",
+            options: [
+              "A number, an uncertainty, and a list of assumptions",
+              "A range wide enough that no future measurement will fall outside it",
+              "A number, given to no more digits than the weakest rung supports",
+              "A comparison against a distance already known by a different method",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Not a number on its own. It is a number, an uncertainty, and a list of what it assumes.",
+            sourceLessonSlug: "rung-three-standard-candles",
+          },
+          {
+            prompt: "A calibration error is found in the period-luminosity relation. Which distances are affected?",
+            options: [
+              "Only the galaxies where those particular variable stars were observed",
+              "All astronomical distances, parallax included, since the tools are shared",
+              "Only measurements taken before the error entered the calibration",
+              "That rung and every rung above it",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Every distance measured with that rung, and every distance on every rung above it, since those are calibrated on this one. Parallax is the exception, because it is anchored in geometry rather than against another rung.",
+            sourceLessonSlug: "rung-three-standard-candles",
+          },
+          {
+            prompt: "What does the size of the finger's apparent jump depend on?",
+            options: [
+              "How far away it is",
+              "How much light is falling on it from the surrounding room",
+              "How far apart your two eyes happen to be set in your head",
+              "How complicated the background it is being seen against happens to be",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The jump gets smaller the further away the finger is, which is the entire principle. The spacing of your eyes sets the baseline, and for stars the baseline becomes the width of the earth's orbit.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "What does the lesson call the single most productive discovery in the history of astronomy?",
+            options: [
+              "The invention of the photographic plate, which made the sky recordable",
+              "The dark lines in a spectrum",
+              "The realization that the earth moves around the sun rather than the reverse",
+              "The first measurement of a stellar parallax, which fixed the scale of the sky",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The absorption lines, because each element absorbs at its own wavelengths and the pattern is therefore a fingerprint of what the light passed through.",
+            sourceLessonSlug: "light-itself",
+          },
+          {
+            prompt: "What does the strength of the absorption lines tell you, and with what caveat?",
+            options: [
+              "The abundance of each element, directly and without correction",
+              "The distance to the star, provided its temperature is known separately",
+              "Temperature and pressure conditions, with care",
+              "The age of the star, since older stars show progressively stronger lines",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Line strength carries information about temperature and pressure conditions, and the phrase with care is doing real work: reading abundance straight off line strength is precisely the mistake Payne's thesis corrected.",
+            sourceLessonSlug: "light-itself",
+          },
+          {
+            prompt: "How soon was Payne's hydrogen result accepted?",
+            options: [
+              "Immediately, since the physics behind the correction was already accepted",
+              "A few years later",
+              "Not until decades afterward, once space-based instruments confirmed it",
+              "Never fully, since the field still treats the abundances as provisional",
+            ],
+            correctIndex: 1,
+            explanation:
+              "She reached the correct conclusion, the published thesis hedged it, and the result was accepted a few years later. That gap is why the lesson says self-correction describes the long run rather than any particular year.",
+            sourceLessonSlug: "cecilia-payne-and-what-stars-are-made-of",
+          },
+          {
+            prompt: "Besides the main sequence, how many populations sit off the band on the HR diagram?",
+            options: [
+              "Two",
+              "One, made up of the stars that have finished fusing and are cooling",
+              "Four, one for each of the main stages a star passes through in its life",
+              "None; everything falls on the band once the axes are drawn correctly",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two smaller populations sit off the diagonal band: giants up and to the right, white dwarfs down and to the left.",
+            sourceLessonSlug: "reading-a-star-the-hr-diagram",
+          },
+          {
+            prompt: "When did the plate-classification work at Harvard College Observatory begin?",
+            options: [
+              "In the 1920s, at the same time as Payne's thesis work",
+              "In the 1950s, once the plate archive had grown too large to ignore",
+              "The late nineteenth century",
+              "In the 1830s, alongside the first successful parallax measurement",
+            ],
+            correctIndex: 2,
+            explanation:
+              "From the late nineteenth century onward, which is why a plate from the 1890s is now a record of a sky that no longer exists.",
+            sourceLessonSlug: "the-harvard-computers",
+          },
+          {
+            prompt: "How long does one of Leavitt's variable stars take to complete a cycle?",
+            options: [
+              "Seconds, which is why the timing had to be done photographically",
+              "Days or weeks",
+              "Months, which is why the Harvard plate archive was essential to the work",
+              "Years, so a single observer could only ever record part of one cycle",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Days or weeks, and reliably enough to time with a stopwatch. That is what makes the period a measurable quantity rather than an estimate.",
+            sourceLessonSlug: "rung-two-leavitts-yardstick",
+          },
+          {
+            prompt: "Why does reaching across the observable universe mean, in practice, something violent?",
+            options: [
+              "Because only an explosion is bright enough to be seen that far",
+              "Because a violent event leaves a remnant that can be measured afterward",
+              "Because explosions happen at a known rate that can be counted",
+              "Because a sudden event is easier to time than a slowly varying one",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Pulsing variable stars reach far and not far enough. You need something visible at much greater distance, which in practice means an exploding star bright enough to be seen briefly across enormous distances.",
+            sourceLessonSlug: "rung-three-standard-candles",
+          },
+          {
+            prompt: "What calibrates rung one, parallax?",
+            options: [
+              "The period-luminosity relation, once it has been independently pinned",
+              "A laboratory standard carried aboard the observing instrument",
+              "Geometry alone",
+              "The HR diagram, whose vertical axis fixes the brightness scale",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Geometry alone, which is what makes parallax the anchor. Every rung above it is calibrated on the rung below, and none of them is independently anchored to reality.",
+            sourceLessonSlug: "rung-three-standard-candles",
+          },
+        ],
+      },
+    },
     // ── Part 3 ─────────────────────────────────────────────────────────────────────────────────
     {
       slug: "redshift-and-an-expanding-universe",
@@ -623,8 +2313,13 @@ NASA. (n.d.). *Dark matter: What we know and how we know it*. https://science.na
       slug: "check-the-ladder",
       title: "15 · Knowledge check: the chain of inference",
       section: "Part 3 · The whole thing",
+      body: `The course's final check, and the Part 3 section check at the same time: redshift and what expansion does not mean, the disagreement nobody has resolved, where the atoms in your hand were assembled, and why dark matter is a different kind of claim from a parallax distance.
+
+Ten questions are drawn from a bank of sixty-two, so a retake is a different exam. Each answer links back to the lesson that teaches it.`,
       quiz: {
-        passingScore: 70,
+        passingScore: 80,
+        questionsPerAttempt: 10,
+        shuffleOptions: true,
         questions: [
           {
             prompt: "Why was it essential that Leavitt studied variable stars in the Magellanic Clouds specifically?",
@@ -703,6 +2398,673 @@ NASA. (n.d.). *Dark matter: What we know and how we know it*. https://science.na
             explanation:
               "Both are well supported, and in different ways. Parallax measures an angle. Dark matter names a gap between the gravity we infer and the matter we can see, believed because several independent observations require extra mass and the alternatives fit worse.",
             sourceLessonSlug: "vera-rubin-and-the-stuff-we-cannot-see",
+          },
+
+          // Pool expansion to the Tier-0 final spec. The six above reached five lessons; the
+          // fifty-six below reach every lesson in Part 3, including the capstone, so the bank a
+          // learner is drawn against covers the section it closes rather than a sample of it.
+          {
+            prompt: "What does a spectrum's line pattern displaced toward longer wavelengths mean?",
+            options: [
+              "That the star contains an element not present in the laboratory sample",
+              "The light has been stretched",
+              "That the instrument recorded the spectrum at the wrong exposure",
+              "That the star's surface is cooler than the pattern would otherwise suggest",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The pattern's spacing is fixed by physics, so the whole pattern sitting at longer wavelengths means something stretched the light on its way here.",
+            sourceLessonSlug: "redshift-and-an-expanding-universe",
+          },
+          {
+            prompt: "What do nearly all distant galaxies show?",
+            options: [
+              "A redshift",
+              "A blueshift, which is why the sky appears to be closing in around us",
+              "No shift at all, once their own rotation has been corrected for",
+              "A shift that changes direction depending on which way you look",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Look at distant galaxies and nearly all of them show light shifted toward longer wavelengths.",
+            sourceLessonSlug: "redshift-and-an-expanding-universe",
+          },
+          {
+            prompt: "How does redshift relate to distance?",
+            options: [
+              "The further away a galaxy is, the larger the shift",
+              "The shift is the same for every galaxy beyond a certain distance",
+              "Nearer galaxies show larger shifts, because their motion is easier to detect",
+              "The two are unrelated, which is why distance needs a separate ladder",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The further away a galaxy is, the larger the shift. That relationship between distance and redshift is the observational foundation of modern cosmology.",
+            sourceLessonSlug: "redshift-and-an-expanding-universe",
+          },
+          {
+            prompt: "What does expansion NOT mean?",
+            options: [
+              "That the distances between things are increasing in every direction",
+              "That light traveling through space gets stretched along the way",
+              "Galaxies flying outward from a central point",
+              "That every observer anywhere sees distant galaxies receding from them",
+            ],
+            correctIndex: 2,
+            explanation:
+              "There is no such point and we are not near it. The other three statements are what expansion does mean, which is why this is where almost every popular account goes wrong.",
+            sourceLessonSlug: "redshift-and-an-expanding-universe",
+          },
+          {
+            prompt: "What does expansion actually mean?",
+            options: [
+              "That the universe is acquiring new space at its outer boundary",
+              "The distances between things are increasing everywhere",
+              "That galaxies are moving faster the longer the universe has existed",
+              "That space is thinning out as the same matter spreads through more of it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Space itself is expanding, so the distances between things increase everywhere, and light traveling through it gets stretched along the way.",
+            sourceLessonSlug: "redshift-and-an-expanding-universe",
+          },
+          {
+            prompt: "Why does the question where was the center have no location as an answer?",
+            options: [
+              "Because the center lies outside the part of the universe we can observe",
+              "Because the earliest galaxies have moved too far to be traced back",
+              "Because the center is a moment in time rather than a place",
+              "Every observer anywhere sees the same recession",
+            ],
+            correctIndex: 3,
+            explanation:
+              "If every observer anywhere sees distant galaxies receding, no observation singles out a location. The question assumes a kind of expansion that is not the kind happening.",
+            sourceLessonSlug: "redshift-and-an-expanding-universe",
+          },
+          {
+            prompt: "What does the balloon analogy get right?",
+            options: [
+              "No dot is the center, and the surface has no edge",
+              "The balloon is being inflated from a single point where the air enters",
+              "The dots grow larger as the balloon expands, just as galaxies do",
+              "The balloon eventually reaches a size at which it stops expanding",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Every dot moves away from every other dot, no dot is the center, and the surface has no edge. Like every analogy it breaks if pushed, but the part it gets right is the part people get wrong.",
+            sourceLessonSlug: "redshift-and-an-expanding-universe",
+          },
+          {
+            prompt: "Who published the distance-redshift relationship first, and when?",
+            options: [
+              "Hubble, in 1929, in the paper the law is usually named after",
+              "Leavitt, in 1912, in the circular reporting the Magellanic Cloud variables",
+              "Lemaître, in 1927",
+              "Bessel, in 1838, alongside the first measurement of a stellar parallax",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Georges Lemaître published the relationship, with an estimate of the rate, in 1927, two years before Hubble's 1929 paper.",
+            sourceLessonSlug: "redshift-and-an-expanding-universe",
+          },
+          {
+            prompt: "Why was Lemaître's paper largely missed at the time?",
+            options: [
+              "It was published in French",
+              "It appeared after Hubble's own result had already been circulated",
+              "It contained no estimate of the rate, only the relationship in principle",
+              "It was published in a journal that suspended distribution that year",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It appeared in a French-language journal that the English-speaking astronomical community largely did not read. It did include an estimate of the rate.",
+            sourceLessonSlug: "redshift-and-an-expanding-universe",
+          },
+          {
+            prompt: "What name does the International Astronomical Union recommend, and this course use?",
+            options: [
+              "Hubble's law, since Hubble's paper is the one the field actually read",
+              "The Hubble-Lemaître law",
+              "Lemaître's law, since he published the relationship first by two years",
+              "The expansion relation, avoiding either name entirely",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The IAU has recommended the Hubble-Lemaître law, and this course uses it.",
+            sourceLessonSlug: "redshift-and-an-expanding-universe",
+          },
+          {
+            prompt: "What does the naming episode illustrate?",
+            options: [
+              "That priority disputes are usually settled by the earliest publication date",
+              "That a result travels faster when it comes with a numerical estimate",
+              "That scientific bodies revise names whenever new evidence appears",
+              "Who gets remembered depends on where you published",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Who gets remembered depends heavily on what language you published in, which journal, and who was reading. The physics does not care. The naming does, and the naming is what most people learn.",
+            sourceLessonSlug: "redshift-and-an-expanding-universe",
+          },
+          {
+            prompt: "Someone insists the expansion must have a center because everything recedes from us. What is wrong with that?",
+            options: [
+              "It assumes objects are flying outward through space from a point",
+              "It confuses the redshift of a galaxy with the motion of its individual stars",
+              "It assumes our own galaxy is stationary when it is in fact moving",
+              "It treats an observation of nearby galaxies as if it held for distant ones",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Space itself is expanding everywhere, so every observer anywhere sees the same recession. Seeing galaxies recede in all directions is what anyone would see, from anywhere.",
+            sourceLessonSlug: "redshift-and-an-expanding-universe",
+          },
+          {
+            prompt: "What are the two broad families of method for measuring the expansion rate?",
+            options: [
+              "Optical measurements and radio measurements of the same galaxies",
+              "Climbing the ladder, or predicting from the early universe",
+              "Ground-based observation and space-based observation above the atmosphere",
+              "Measuring nearby galaxies and measuring the most distant ones reachable",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Build it up from nearby by climbing the ladder, or take detailed measurements of the light left over from the early universe, fit the standard cosmological model, and derive what the present-day rate should be.",
+            sourceLessonSlug: "the-hubble-tension",
+          },
+          {
+            prompt: "What does the ladder-based method read the expansion rate off?",
+            options: [
+              "The temperature of the light left over from the early universe",
+              "The rate at which the most distant galaxies are losing brightness",
+              "The relationship between distance and redshift",
+              "The difference between the ages of the oldest and youngest stars",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Parallax, then variable stars, then standard candles, and then the expansion rate is read off the relationship between distance and redshift.",
+            sourceLessonSlug: "the-hubble-tension",
+          },
+          {
+            prompt: "What does the early-universe method work from?",
+            options: [
+              "The light left over from the early universe",
+              "The oldest stars that can still be individually resolved in our galaxy",
+              "The abundance of heavy elements in the most distant visible galaxies",
+              "The observed rate at which new galaxies form in the present day",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It takes detailed measurements of that light, fits the standard cosmological model to them, and derives what the present-day expansion rate should be.",
+            sourceLessonSlug: "the-hubble-tension",
+          },
+          {
+            prompt: "How do the two measured values compare?",
+            options: [
+              "They agree closely once the uncertainties are properly accounted for",
+              "The early-universe value comes out higher than the ladder value",
+              "The ladder value comes out higher",
+              "They disagree in different directions depending on which galaxies are used",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The ladder-based value comes out higher than the early-universe value, and the gap has not closed as the measurements have improved.",
+            sourceLessonSlug: "the-hubble-tension",
+          },
+          {
+            prompt: "What happened to the disagreement as both measurements became more precise?",
+            options: [
+              "It closed, leaving only a difference within the combined uncertainty",
+              "It sharpened",
+              "It stayed exactly where it was, since neither uncertainty actually shrank",
+              "It reversed, with the early-universe value overtaking the ladder value",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Improving precision sharpened the disagreement, because the uncertainties shrank while the values did not converge.",
+            sourceLessonSlug: "the-hubble-tension",
+          },
+          {
+            prompt: "Why is that pattern significant?",
+            options: [
+              "Random noise would have made the values converge",
+              "It shows that one of the two teams has been revising its own numbers",
+              "It means the expansion rate itself must be changing over time",
+              "It proves the standard cosmological model has to be abandoned",
+            ],
+            correctIndex: 0,
+            explanation:
+              "If the gap were caused by random measurement noise, tighter measurements would tend to converge. Instead the uncertainties shrank while the values stayed apart, which points at a systematic error or at something missing from the model.",
+            sourceLessonSlug: "the-hubble-tension",
+          },
+          {
+            prompt: "Which of these is one of the three candidate explanations for the tension?",
+            options: [
+              "That the two teams are measuring genuinely different quantities",
+              "That the expansion rate varies from one part of the sky to another",
+              "That the redshift of distant galaxies has been misidentified",
+              "That the cosmological model is incomplete",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The three are an unrecognized systematic error somewhere on the ladder, an unrecognized systematic error in the early-universe analysis, or the cosmological model being incomplete so the prediction rests on an assumption that is not quite right.",
+            sourceLessonSlug: "the-hubble-tension",
+          },
+          {
+            prompt: "Which of the three explanations is currently established?",
+            options: [
+              "The ladder error, since calibration is the field's known weak point",
+              "The early-universe error, since that analysis rests on a single model",
+              "None; nobody knows which",
+              "The incomplete model, which is why new physics is now assumed",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Nobody knows which. The lesson is emphatic that this is not a crisis and not embarrassing: it is what the frontier looks like from the inside.",
+            sourceLessonSlug: "the-hubble-tension",
+          },
+          {
+            prompt: "What accidental lesson does most science education teach, according to this lesson?",
+            options: [
+              "That disagreement means somebody is doing it wrong",
+              "That every result is provisional and none of it can be relied on",
+              "That the most recent measurement always supersedes the earlier ones",
+              "That scientists rarely check each other's work in practice",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Presenting only settled results teaches that science is a body of facts, and that disagreement means somebody erred. Two well-executed measurements of the same quantity that do not agree is the corrective.",
+            sourceLessonSlug: "the-hubble-tension",
+          },
+          {
+            prompt: "What does the lesson say the tension actually shows a learner?",
+            options: [
+              "That cosmology is less reliable than the rest of astronomy",
+              "That the distance ladder should be replaced by early-universe methods",
+              "What the frontier looks like from the inside",
+              "That precision matters more than accuracy in modern measurement",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The lesson calls it the best thing in the course: a learner who understands it understands something most popular science coverage never conveys.",
+            sourceLessonSlug: "the-hubble-tension",
+          },
+          {
+            prompt: "What four things should accompany any quoted value for the expansion rate?",
+            options: [
+              "A value, an uncertainty, a method, and a date",
+              "A value, a source, a research group, and a rival figure to compare",
+              "A value, a range, an instrument, and the number of observations behind it",
+              "A value, a confidence level, a peer reviewer, and a publication venue",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A value, an uncertainty, a method, and a date. A single confident figure with none of those is not a measurement being reported; it is a fact being asserted.",
+            sourceLessonSlug: "the-hubble-tension",
+          },
+          {
+            prompt: "Why does this course deliberately not print a current value for the expansion rate?",
+            options: [
+              "Because the two methods disagree and no single value would be honest",
+              "The values are actively revised",
+              "Because the figure depends on units the course has not introduced",
+              "Because quoting it would require choosing between two research groups",
+            ],
+            correctIndex: 1,
+            explanation:
+              "They are actively revised, and a course is a poor place for a number that moves. Go to a current source, and note which method produced the figure you find.",
+            sourceLessonSlug: "the-hubble-tension",
+          },
+          {
+            prompt: "What was the early universe overwhelmingly made of?",
+            options: [
+              "Carbon and oxygen, which later became the basis of everything living",
+              "Iron, the endpoint of fusion and therefore the most stable element",
+              "A roughly even mixture of every element now found on the periodic table",
+              "Hydrogen and helium",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Hydrogen and helium and very little else, which is why the carbon, oxygen, nitrogen, calcium and iron in your body needed something to make them.",
+            sourceLessonSlug: "what-stars-make",
+          },
+          {
+            prompt: "What holds a star up against its own gravity for most of its life?",
+            options: [
+              "The energy released by fusing hydrogen into helium",
+              "The pressure of the surrounding interstellar gas pressing inward equally",
+              "Its rotation, which throws material outward as fast as gravity pulls in",
+              "The magnetic field generated by the circulation of its outer layers",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A star spends most of its life fusing hydrogen into helium in its core, and the energy released is what holds it up.",
+            sourceLessonSlug: "what-stars-make",
+          },
+          {
+            prompt: "What happens when the core hydrogen runs low?",
+            options: [
+              "The star cools smoothly and settles into a stable smaller form",
+              "The core contracts and gets hotter",
+              "The outer layers collapse inward all at once without warning",
+              "Fusion stops entirely and the star begins to fade over a few years",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The core contracts, gets hotter, and heavier elements begin to fuse: helium into carbon, and onward through progressively heavier elements in the most massive stars.",
+            sourceLessonSlug: "what-stars-make",
+          },
+          {
+            prompt: "Up to roughly which element does that process build?",
+            options: [
+              "Carbon, past which the core is no longer hot enough to continue",
+              "Iron",
+              "Uranium, the heaviest element found in any natural setting",
+              "Helium, since nothing heavier fuses inside an ordinary star",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The process builds elements up to around iron. Past that, something else is required.",
+            sourceLessonSlug: "what-stars-make",
+          },
+          {
+            prompt: "Why does element-building essentially stop at iron?",
+            options: [
+              "Because iron nuclei are too large to collide at any achievable speed",
+              "Because the core has run out of the lighter fuel needed to keep going",
+              "Fusing past iron no longer releases net energy",
+              "Because iron settles to the very center where fusion cannot reach it",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Past iron, fusion consumes energy rather than releasing it, so it cannot sustain the outward pressure holding the star up.",
+            sourceLessonSlug: "what-stars-make",
+          },
+          {
+            prompt: "Where do elements heavier than iron come from?",
+            options: [
+              "The cores of the very largest stars, given enough time",
+              "The gas clouds between stars, where slow reactions accumulate them",
+              "The extreme conditions of stellar death",
+              "The early universe, which produced them before the first stars formed",
+            ],
+            correctIndex: 2,
+            explanation:
+              "They require the extreme conditions of stellar death, including supernovae and the collision of dense stellar remnants.",
+            sourceLessonSlug: "what-stars-make",
+          },
+          {
+            prompt: "Which events have now been observed with both light and gravitational waves?",
+            options: [
+              "Collisions of dense stellar remnants",
+              "The formation of new stars inside collapsing clouds of gas",
+              "The moment a star's core first begins to fuse helium into carbon",
+              "The passage of a galaxy's outer material through a neighboring galaxy",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The collision of dense stellar remnants, one of the events that produces elements heavier than iron, has been observed with both light and gravitational waves.",
+            sourceLessonSlug: "what-stars-make",
+          },
+          {
+            prompt: "What happens to the elements a star builds?",
+            options: [
+              "They stay locked in the remnant the star leaves behind",
+              "They are thrown out and mixed into gas that forms new stars",
+              "They are consumed again as the star cycles through further fusion stages",
+              "They sink to the center and are permanently removed from circulation",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The material is thrown out and mixed into the gas that later forms new stars and planets. The atoms in your hand were assembled inside stars and released when those stars ended.",
+            sourceLessonSlug: "what-stars-make",
+          },
+          {
+            prompt: "What does laboratory nuclear physics contribute to the evidence chain here?",
+            options: [
+              "A measurement of how much of each element a galaxy actually contains",
+              "A direct observation of fusion happening inside a star's core",
+              "Which reactions occur at which temperatures",
+              "The distance to the explosions in which heavy elements are produced",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Laboratory nuclear physics tells us which reactions occur at which temperatures and what they produce. Spectra tell us what stars are made of, models combine the two, and observed abundances test the result.",
+            sourceLessonSlug: "what-stars-make",
+          },
+          {
+            prompt: "What does the lesson say the shape of a well-supported claim is?",
+            options: [
+              "One decisive experiment that no competing explanation can account for",
+              "A result reproduced by the same method in several different laboratories",
+              "A prediction made before the observation that later confirmed it",
+              "Several different ways of being wrong that would have to fail together",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Not one decisive experiment, but several roughly independent lines that agree, so that fooling everyone would require them all to fail in the same direction.",
+            sourceLessonSlug: "what-stars-make",
+          },
+          {
+            prompt: "How do things orbiting a central mass normally behave as you go further out?",
+            options: [
+              "They move more slowly",
+              "They move faster, because they have further to travel in each orbit",
+              "They move at the same speed regardless of how far out they are",
+              "They move erratically, since the central mass no longer dominates",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The outer planets travel more slowly than the inner ones, because gravity weakens with distance. A galaxy with most of its visible matter toward the middle ought to behave the same way.",
+            sourceLessonSlug: "vera-rubin-and-the-stuff-we-cannot-see",
+          },
+          {
+            prompt: "Who did Vera Rubin work with on the galaxy rotation measurements?",
+            options: [
+              "Edwin Hubble, whose earlier work on distant galaxies she was extending",
+              "Kent Ford",
+              "Annie Jump Cannon, whose classification made the spectra readable",
+              "Georges Lemaître, who supplied the cosmological model behind the work",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Rubin worked with Kent Ford, measuring how fast material orbits at different distances from the centers of spiral galaxies.",
+            sourceLessonSlug: "vera-rubin-and-the-stuff-we-cannot-see",
+          },
+          {
+            prompt: "What did they use to read the orbital motion?",
+            options: [
+              "Repeated photographs taken years apart, showing the material shift",
+              "The changing brightness of stars as they passed behind the galaxy's disk",
+              "Spectra",
+              "The angle each galaxy's disk presents to us as it turns",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Spectra: the same displaced line patterns that measure motion toward or away from us, applied to material at different distances from a galaxy's center.",
+            sourceLessonSlug: "vera-rubin-and-the-stuff-we-cannot-see",
+          },
+          {
+            prompt: "What did the outer regions of the galaxies turn out to do?",
+            options: [
+              "They kept moving at roughly the same speed far out",
+              "They slowed down faster than the visible matter predicted they would",
+              "They moved in the opposite direction from the inner regions",
+              "They showed no measurable motion at all beyond a certain radius",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They were not slowing down as expected. The result has been reproduced across many galaxies and is now one of the most robust observations in astronomy.",
+            sourceLessonSlug: "vera-rubin-and-the-stuff-we-cannot-see",
+          },
+          {
+            prompt: "What does orbital speed at a given radius depend on?",
+            options: [
+              "The brightness of the material at that radius, which traces its mass",
+              "How much mass is inside the orbit",
+              "The total mass of the galaxy, wherever in it that mass happens to sit",
+              "The age of the galaxy, since older systems have had time to settle",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Orbital speed depends on how much mass lies inside the orbit, which is why material at the edge moving too fast is a statement about mass and not about the material itself.",
+            sourceLessonSlug: "vera-rubin-and-the-stuff-we-cannot-see",
+          },
+          {
+            prompt: "What two possibilities does the rotation result force?",
+            options: [
+              "Either the measurements are wrong or the galaxies are not in equilibrium",
+              "Either the galaxies are much closer than assumed or much further away",
+              "Either the spectra were misread or the model of gravity is out of date",
+              "Either there is unseen mass, or gravity behaves differently at those scales",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Much more mass than we can see, distributed differently from the light, or gravity not behaving as expected at those scales. The first is the mainstream option and the unseen mass is called dark matter.",
+            sourceLessonSlug: "vera-rubin-and-the-stuff-we-cannot-see",
+          },
+          {
+            prompt: "Which other independent line of evidence points the same way?",
+            options: [
+              "The way galaxy clusters bend light passing through them",
+              "The rate at which the most distant galaxies are receding from us",
+              "The abundance of heavy elements in the outer parts of spiral galaxies",
+              "The disagreement between the two measurements of the expansion rate",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Galaxy clusters bending light that passes through them is one of the other independent lines requiring extra mass, which is part of why the unseen-mass option is the mainstream one.",
+            sourceLessonSlug: "vera-rubin-and-the-stuff-we-cannot-see",
+          },
+          {
+            prompt: "What, precisely, is dark matter?",
+            options: [
+              "A particle that has been detected but not yet fully characterized",
+              "A name for a discrepancy",
+              "A form of gravity that operates only at galactic distances",
+              "The matter in a galaxy that is too faint for current instruments to see",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It is not a substance anybody has detected directly. It is a name for the gap between the gravity we infer and the matter we can see, believed because several independent observations require extra mass and the alternatives fit worse.",
+            sourceLessonSlug: "vera-rubin-and-the-stuff-we-cannot-see",
+          },
+          {
+            prompt: "What was Rubin herself clear about?",
+            options: [
+              "That the data showed something was missing, not what it was",
+              "That the missing mass would eventually be found to be ordinary matter",
+              "That the accepted theory of gravity would have to be replaced",
+              "That the result would not hold up outside the galaxies she measured",
+            ],
+            correctIndex: 0,
+            explanation:
+              "She was clear that the data showed something was missing, not what the missing thing was. The lesson calls that distinction the discipline.",
+            sourceLessonSlug: "vera-rubin-and-the-stuff-we-cannot-see",
+          },
+          {
+            prompt: "What does the course say a learner finishing it should be able to do with those two kinds of claim?",
+            options: [
+              "Rank them, so the geometric measurement is trusted over the inference",
+              "Set aside the inference until the missing substance has been detected",
+              "Say why they are supported differently",
+              "Treat both as provisional until a single method can confirm them both",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Not one is true and one is not. Both are well supported, but one is a geometric measurement and the other is the best current explanation of a persistent anomaly, and knowing which kind of claim you are holding is the entire skill this course teaches.",
+            sourceLessonSlug: "vera-rubin-and-the-stuff-we-cannot-see",
+          },
+          {
+            prompt: "What does the capstone ask you to find?",
+            options: [
+              "A published paper whose method you can reproduce from the description",
+              "A number in a popular astronomy article",
+              "An error in a widely circulated claim about the size of the universe",
+              "A disagreement between two sources reporting the same measurement",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A distance, an age, a mass, a temperature, or a composition, from a news story, a mission press release, a magazine feature, or a museum caption. It must be real and you must link it.",
+            sourceLessonSlug: "capstone-trace-a-number-down-the-ladder",
+          },
+          {
+            prompt: "What does the capstone want you to do when the trail goes cold?",
+            options: [
+              "Substitute the nearest comparable measurement you were able to find",
+              "Choose a different number and start the exercise again from the beginning",
+              "Say where and why",
+              "Estimate the missing step from what the surrounding rungs would require",
+            ],
+            correctIndex: 2,
+            explanation:
+              "You will not always get to the bottom. The article cites no source and I could not identify the survey is a real result, and saying so is what the assignment asks for.",
+            sourceLessonSlug: "capstone-trace-a-number-down-the-ladder",
+          },
+          {
+            prompt: "What does the capstone mean by naming the weakest link?",
+            options: [
+              "The step you would least like to be wrong",
+              "The rung of the ladder that reaches the shortest distance",
+              "The source in the chain that is hardest for a reader to access",
+              "The measurement with the largest published uncertainty attached to it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Which step would you least like to be wrong, and why. The assignment notes it is often a calibration rather than a measurement.",
+            sourceLessonSlug: "capstone-trace-a-number-down-the-ladder",
+          },
+          {
+            prompt: "What is usually missing from a popular astronomy number?",
+            options: [
+              "The name of the instrument that produced the original observation",
+              "The identity of the research group that published it",
+              "Its uncertainty and its date",
+              "A comparison against the same quantity measured a different way",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Almost every popular number is printed without its uncertainty and without its date, and part of the assignment is saying what should have accompanied it.",
+            sourceLessonSlug: "capstone-trace-a-number-down-the-ladder",
+          },
+          {
+            prompt: "What three kinds of claim does the capstone ask you to distinguish?",
+            options: [
+              "Observed, calculated, and predicted",
+              "Published, unpublished, and disputed",
+              "Geometric, model-dependent, and best explanation",
+              "Direct, indirect, and analogical",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A geometric measurement, a model-dependent inference, or a best explanation of an anomaly. All three are legitimate, and confusing them is the failure this course exists to prevent.",
+            sourceLessonSlug: "capstone-trace-a-number-down-the-ladder",
+          },
+          {
+            prompt: "Does the capstone require you to find an error to earn full credit?",
+            options: [
+              "No",
+              "Yes, since tracing a chain that holds up demonstrates nothing",
+              "Only if the number came from a press release rather than a paper",
+              "Only when the article gives no source for the figure it prints",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Most popular astronomy numbers are roughly right, and correctly concluding that a number is well supported, with the chain shown, is a full-credit answer.",
+            sourceLessonSlug: "capstone-trace-a-number-down-the-ladder",
+          },
+          {
+            prompt: "What is the capstone's one rule, carried over from lesson 2?",
+            options: [
+              "Cite every source in the same format the article itself used",
+              "Do not assert what you cannot support",
+              "Trace at least three rungs before drawing any conclusion",
+              "Prefer a primary source to a secondary one wherever both exist",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The same rule the course applied to the flattering story about Banneker. If you could not find the original measurement, write that, and never write a sentence implying you read a paper you did not read.",
+            sourceLessonSlug: "capstone-trace-a-number-down-the-ladder",
           },
         ],
       },
