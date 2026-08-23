@@ -2036,6 +2036,283 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
     },
 
     // ─────────────────────────────────────────────────────────────────────────
+    // SECTION 6 QUIZ
+    // ─────────────────────────────────────────────────────────────────────────
+    {
+      slug: "quiz-sports-specific-workflows",
+      title: "Section 6 quiz · Sports-specific workflows",
+      section: "Section 6 · Sports-specific workflows",
+      body: `A graded check on the three workflows that make a sports telecast different from a newscast, and on the choreography of a game day from load-in to strike. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What do sports broadcasts run on?",
+            options: [
+              "Information delivered fast",
+              "A larger crew than any other kind of live production requires",
+              "Scripts prepared in advance for every likely outcome",
+              "Camera positions fixed by the venue rather than the director",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Live stats, the announcer's spotting board, and replay. Those three workflows are what make a sports telecast different from a newscast.",
+            sourceLessonSlug: "stats-spotting-replay",
+          },
+          {
+            prompt: "What does the stats operator do?",
+            options: [
+              "Compiles the box score that is published after the game ends",
+              "Feeds real-time numbers to the graphics system and the booth",
+              "Checks the official scoring against the broadcast's own record",
+              "Selects which statistics the graphics package will display",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Accuracy under time pressure is the whole job, which is a different skill from compiling numbers afterward.",
+            sourceLessonSlug: "stats-spotting-replay",
+          },
+          {
+            prompt: "What is a spotting board?",
+            options: [
+              "A monitor showing which camera is currently live on air",
+              "The board a replay operator uses to mark in and out points",
+              "A pre-built cheat sheet of players and facts",
+              "A diagram of where each camera is positioned in the venue",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Often a two-team roster grid with numbers, names, pronunciations, and storylines, so an announcer can identify a player instantly and add context on the fly.",
+            sourceLessonSlug: "stats-spotting-replay",
+          },
+          {
+            prompt: "What goes on a spotting board besides numbers and names?",
+            options: [
+              "The camera assignment for each player during the broadcast",
+              "The player's full statistical record for the current season",
+              "The questions to ask each player in a post-game interview",
+              "Pronunciations and one storyline per key player",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Correct pronunciation and a storyline are what let the announcer add context without breaking off to look something up.",
+            sourceLessonSlug: "stats-spotting-replay",
+          },
+          {
+            prompt: "What does the lesson call building your own spotting board for a game?",
+            options: [
+              "A rite of passage",
+              "A task usually delegated to a production assistant",
+              "An optional exercise for announcers who prefer to prepare",
+              "Something the graphics operator supplies before air",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The practical drill is to build one for a real upcoming game, use it live to identify players, and note where it failed so the next one is better.",
+            sourceLessonSlug: "stats-spotting-replay",
+          },
+          {
+            prompt: "What does the replay operator do?",
+            options: [
+              "Cuts the highlight package that airs at the end of the broadcast",
+              "Reviews contested calls at the request of the officials",
+              "Marks in and out points as plays happen, and hands the director clean angles",
+              "Records every camera feed so nothing is lost from the archive",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The touchdown, the foul, the finish, ready to roll within seconds. Marking as it happens is what makes that possible.",
+            sourceLessonSlug: "stats-spotting-replay",
+          },
+          {
+            prompt: "Why does the lesson say these workflows are worth learning specifically?",
+            options: [
+              "They are the only roles that carry a formal certification",
+              "They are concrete, learnable entry roles on the sports side",
+              "They pay more than the equivalent roles on a news broadcast",
+              "They are the roles that most often lead directly to on-air work",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A broadcast lives or dies on getting the right graphic, stat, or replay to air in seconds, and these are often the entry roles adjacent to utility that get you into sports specifically.",
+            sourceLessonSlug: "stats-spotting-replay",
+          },
+          {
+            prompt: "In the quarterback-scramble example, what does the announcer use the spotting board for?",
+            options: [
+              "To check the down and distance before describing the play",
+              "To confirm the yardage the stats operator has just posted",
+              "To decide which replay angle to ask the director for",
+              "To name the tackler and note it is his career high in tackles",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Three workflows, one clean 20 seconds of television: the stats op updates the yardage, the announcer adds the name and the context, and replay rolls it from two angles.",
+            sourceLessonSlug: "stats-spotting-replay",
+          },
+          {
+            prompt: "What are the five phases of a game day, in order?",
+            options: [
+              "Load-in and rig, setup and test, rehearsal, air, strike",
+              "Call time, rehearsal, load-in, air, and pack",
+              "Setup, rehearsal, air, review, and strike",
+              "Rig, air, replay, wrap, and load-out",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Hours before air the crew rigs; at call time everyone is in position; the show airs; then the crew strikes. Knowing the timeline tells you where you fit.",
+            sourceLessonSlug: "game-day-roles",
+          },
+          {
+            prompt: "Who carries the load-in and rig phase?",
+            options: [
+              "The director and the technical director, setting camera positions",
+              "The engineers, who own everything technical on a broadcast",
+              "Utility technicians and camera assistants",
+              "The venue's own staff, under the crew lead's direction",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Trucks arrive, cable is pulled and dressed, and cameras, audio, and comms are set. Clean, safe rigging is judged in this window.",
+            sourceLessonSlug: "game-day-roles",
+          },
+          {
+            prompt: "What happens during setup and test?",
+            options: [
+              "The talent rehearses the opening segment with the director",
+              "The crew breaks for a meal before call time is reached",
+              "The producer finalizes the rundown for the broadcast",
+              "Signal flow is checked end to end, graphics and replay load, comms tested",
+            ],
+            correctIndex: 3,
+            explanation:
+              "It is the phase where the lesson 6 mental model gets applied deliberately, before anything is live and a fault is expensive.",
+            sourceLessonSlug: "game-day-roles",
+          },
+          {
+            prompt: "What does utility do during the air phase?",
+            options: [
+              "Stands by to fix, move, and support live",
+              "Begins striking the equipment that is no longer needed",
+              "Moves to the control room to assist the technical director",
+              "Takes the first break, since the rig work is finished",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Everyone holds position, and utility is the one standing by to move a cable on cue or fix what comes loose while the show is on.",
+            sourceLessonSlug: "game-day-roles",
+          },
+          {
+            prompt: "When is the crew actually done?",
+            options: [
+              "At the end of the broadcast, once the feed has been handed back",
+              "When the truck is loaded",
+              "Once the last camera position has been cleared of equipment",
+              "At the call time agreed with the production company beforehand",
+            ],
+            correctIndex: 1,
+            explanation:
+              "De-rig, coil cable properly, pack. The lesson is explicit that the crew is not done until the truck is loaded, and that never leaving before strike is finished is what builds the reputation.",
+            sourceLessonSlug: "game-day-roles",
+          },
+          {
+            prompt: "Why is the setup-and-strike window where a newcomer should focus?",
+            options: [
+              "Because it is the only part of the day that pays an hourly rate",
+              "Because the talent is not present, so mistakes go unnoticed",
+              "Because it is the phase most likely to be short-handed",
+              "The day starts and ends with the technical and utility crew",
+            ],
+            correctIndex: 3,
+            explanation:
+              "It is where you are most needed and most visible. Show up early, work safe, and never leave until the strike is done: that reputation gets you the next call.",
+            sourceLessonSlug: "game-day-roles",
+          },
+          {
+            prompt: "What does the rehearsal and pre-game phase involve?",
+            options: [
+              "The director runs through opens and camera assignments",
+              "The announcers record the segments that will be played back later",
+              "The engineers re-check the transmission path a final time",
+              "The utility crew coils the spare cable ready for the strike",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It sits between setup-and-test and air, and it is where the show's opening and its camera plan get walked through before anything is live.",
+            sourceLessonSlug: "game-day-roles",
+          },
+          {
+            prompt: "What kind of work does the lesson say rigging and striking actually is?",
+            options: [
+              "Electrical work, requiring a qualification in most jurisdictions",
+              "Hands-on rope-and-cable work",
+              "Inventory work, tracking what came off and back onto the truck",
+              "Supervisory work, since the crew lead directs every placement",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Securing runs so nobody trips, tying gear to stands and rails, and coiling cable so it pays out clean next time. That is why the knots course is the cross-link.",
+            sourceLessonSlug: "game-day-roles",
+          },
+          {
+            prompt: "In the lesson's example, what does the new utility tech do that gets them called back?",
+            options: [
+              "Volunteers to cover a camera position when an operator is late",
+              "Identifies a fault in the signal chain before the show goes live",
+              "Learns the name of every member of the crew before the first call",
+              "Arrives early, stands by through the game, and stays through strike",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The crew lead marks them as reliable and calls them for the next three games. Reliability across the whole day, not one visible save, is what is being judged.",
+            sourceLessonSlug: "game-day-roles",
+          },
+          {
+            prompt: "What does the practical exercise ask you to map onto the five-step timeline?",
+            options: [
+              "Your target role, and one way to be more useful in each phase",
+              "The equipment each phase requires you to have on hand",
+              "The names of the crew members responsible for each phase",
+              "The hours each phase takes at a typical regional broadcast",
+            ],
+            correctIndex: 0,
+            explanation:
+              "What are you doing at load-in, at air, and at strike, and how could you be more useful in each. If utility is your entry, the lesson adds: review your knots.",
+            sourceLessonSlug: "game-day-roles",
+          },
+          {
+            prompt: "What does the lesson mean by comms in the rig phase?",
+            options: [
+              "The public-address system the venue itself operates",
+              "The stream that carries the broadcast out to the audience",
+              "The crew's own communication system, set up alongside cameras and audio",
+              "The contact list the production company circulates before the day",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Cameras, audio, and comms are all set during load-in and rig, and comms is among the things tested end to end during setup and test.",
+            sourceLessonSlug: "game-day-roles",
+          },
+          {
+            prompt: "Which knots does the game-day lesson name for the rig-and-strike crew?",
+            options: [
+              "Whatever holds, since a rig is judged on speed rather than method",
+              "A single reliable knot used consistently across the whole rig",
+              "Only the knots specified by the equipment manufacturer",
+              "Bowline, clove hitch, round turn and two half-hitches, trucker's hitch",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The same four the utility lesson names, taught properly in the companion Knot-Tying and Rope Work course, plus safe coiling.",
+            sourceLessonSlug: "game-day-roles",
+          },
+        ],
+      },
+    },
+
+    // ─────────────────────────────────────────────────────────────────────────
     // SECTION 7: Getting hired
     // ─────────────────────────────────────────────────────────────────────────
     {
