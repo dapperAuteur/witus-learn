@@ -865,6 +865,513 @@ U.S. Army Corps of Engineers. (n.d.). *Mississippi River and Tributaries Project
 
 U.S. Geological Survey. (n.d.). *Channel modification and river response*. https://www.usgs.gov/`,
     },
+    {
+      slug: "check-what-the-river-does",
+      title: "Part 2 knowledge check · What the river does",
+      section: "Part 2 · What the river does",
+      body: `A graded check on erosion and deposition as two processes that explain every feature you can see from a boat, on what a dam does to sediment a thousand miles downstream, and on the bargain every piece of river engineering makes. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Where does erosion happen?",
+            options: [
+              "Where the channel narrows enough to force the water against one bank",
+              "Where water moves fast enough to pick material up",
+              "Wherever the bank is made of material softer than the surrounding rock",
+              "Only during floods, when the river reaches beyond its usual channel",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Erosion happens where water moves fast enough to pick material up, and deposition where it slows enough to drop it. Every feature in the lesson is those two processes in a particular arrangement.",
+            sourceLessonSlug: "the-river-shapes-the-land",
+          },
+          {
+            prompt: "Where does deposition happen?",
+            options: [
+              "Wherever the channel bed is flat enough to hold the material in place",
+              "Only where a river meets standing water at the end of its course",
+              "Where water slows enough to drop its load",
+              "Wherever vegetation on the bank is dense enough to trap the sediment",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Deposition happens where the flow slows enough to drop what it is carrying. It is the mirror of erosion and the other half of every river feature.",
+            sourceLessonSlug: "the-river-shapes-the-land",
+          },
+          {
+            prompt: "Where does water travel faster around a bend?",
+            options: [
+              "On the outside",
+              "On the inside, where the path around the bend is shorter",
+              "Along the bed, since the surface is slowed by contact with the air",
+              "Evenly across the channel, since the whole flow turns together",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Water moving around a bend travels faster on the outside, so it erodes there, and slower on the inside, so it deposits there. That single asymmetry produces the entire meander pattern.",
+            sourceLessonSlug: "the-river-shapes-the-land",
+          },
+          {
+            prompt: "What is a cut bank?",
+            options: [
+              "A bank that has been cut back deliberately to widen the channel",
+              "The steep, often undercut outside of a bend, actively eroding",
+              "A step in the bank left behind by an earlier, higher river level",
+              "The point where a tributary has cut through into the main channel",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The cut bank is the outside of a bend: steep, often undercut, and actively eroding because the water there is moving fastest.",
+            sourceLessonSlug: "the-river-shapes-the-land",
+          },
+          {
+            prompt: "What is a point bar?",
+            options: [
+              "A ridge of rock that resists erosion and forces the channel around it",
+              "A temporary island that forms where two channels rejoin each other",
+              "The gentle inside slope of sand or gravel, actively building",
+              "A bar of gravel deposited at the point where a river enters a lake",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The point bar is the inside of a bend: a gentle slope of sand or gravel that is actively building, because the slower water there drops its load.",
+            sourceLessonSlug: "the-river-shapes-the-land",
+          },
+          {
+            prompt: "What does a bend do over time, given a cut bank on one side and a point bar on the other?",
+            options: [
+              "It straightens, as the two processes cancel each other out",
+              "It deepens without moving, since erosion and deposition are balanced",
+              "It stays put unless a flood large enough to reshape it arrives",
+              "It migrates sideways",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Eroding one side while building the other moves the bend across the valley floor, and the whole pattern of bends migrates down-valley as well.",
+            sourceLessonSlug: "the-river-shapes-the-land",
+          },
+          {
+            prompt: "What does the lesson mean by saying a meandering river is not a shape?",
+            options: [
+              "It is a process caught mid-motion",
+              "That the bends are drawn by the valley rather than by the river itself",
+              "That no two meanders in a river ever take quite the same form",
+              "That the shape only becomes visible from the air rather than the water",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The bends are migrating sideways and down-valley continuously. What you see on a map is one frame of a motion, not a settled form.",
+            sourceLessonSlug: "the-river-shapes-the-land",
+          },
+          {
+            prompt: "How does an oxbow lake form?",
+            options: [
+              "A flood spills over the bank and leaves standing water behind it",
+              "A tributary is blocked at its mouth and backs up into a pool",
+              "The river cuts across its own neck and abandons the loop",
+              "A landslide dams a side channel and traps the water above it",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Keep migrating and a bend eventually loops so far that the river cuts across its own neck, abandons the loop, and leaves a crescent of standing water. Every oxbow is a piece of former channel.",
+            sourceLessonSlug: "the-river-shapes-the-land",
+          },
+          {
+            prompt: "What is every oxbow lake?",
+            options: [
+              "A piece of former channel",
+              "A natural reservoir that recharges the water table beside the river",
+              "A remnant of a lake the river drained as it cut down through it",
+              "A basin scoured out by floodwater spilling over the outside of a bend",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the abandoned loop itself, left behind when the river took the shorter route across the neck.",
+            sourceLessonSlug: "the-river-shapes-the-land",
+          },
+          {
+            prompt: "When does a river braid into shifting strands?",
+            options: [
+              "When the gradient is too gentle for it to hold a single channel",
+              "When it carries more sediment than it can move",
+              "When two rivers of similar size join and neither channel dominates",
+              "When the bed is too hard for the river to cut a single deeper course",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Where a river carries more sediment than it can move, it splits into shifting strands around temporary bars.",
+            sourceLessonSlug: "the-river-shapes-the-land",
+          },
+          {
+            prompt: "Where does the flat ground on either side of a river come from?",
+            options: [
+              "It is the floor of a valley that glaciers cut before the river arrived",
+              "It is the exposed bed of a much larger river that has since shrunk",
+              "It is a coincidence of the underlying geology in most river valleys",
+              "The river built it out of material deposited during floods",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The floodplain is not a coincidence of geology. The river built it, out of material deposited during floods, over a very long time.",
+            sourceLessonSlug: "the-river-shapes-the-land",
+          },
+          {
+            prompt: "How does the lesson define a floodplain, plainly?",
+            options: [
+              "The part of the river that is dry most of the time",
+              "The area a 100-year flood is expected to reach in an average century",
+              "The land low enough that a levee is required to build anything on it",
+              "The zone between the channel and the first rise of higher ground",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A floodplain is the part of the river that is dry most of the time. Stating it that way makes the rest of the course's engineering lessons read differently.",
+            sourceLessonSlug: "the-river-shapes-the-land",
+          },
+          {
+            prompt: "Why does the lesson say cut banks and point bars are worth learning?",
+            options: [
+              "They are the only features a paddler is legally allowed to photograph",
+              "They tell you which way the channel is moving, with no equipment",
+              "They mark the safest places to bring a boat ashore on a bend",
+              "They indicate how much sediment the river is carrying that day",
+            ],
+            correctIndex: 1,
+            explanation:
+              "These are features a paddler can photograph without any equipment, and once you know the rule they are unmistakable and tell you which way the channel is moving.",
+            sourceLessonSlug: "the-river-shapes-the-land",
+          },
+          {
+            prompt: "You are standing on a steep, raw, undercut face with exposed roots. What should the opposite bank look like?",
+            options: [
+              "The same, since both banks of a bend erode at a similar rate",
+              "A vertical face of the same height, cut by the previous flood",
+              "A braided set of strands separated by temporary gravel bars",
+              "A gentle slope of deposited sand or gravel",
+            ],
+            correctIndex: 3,
+            explanation:
+              "You are on a cut bank, the outside of a bend, where faster water is eroding. The opposite bank is a point bar, where the slower inside water dropped its load.",
+            sourceLessonSlug: "the-river-shapes-the-land",
+          },
+          {
+            prompt: "What is a river's sediment load?",
+            options: [
+              "The solid material it carries as well as water",
+              "The weight of water passing a point over the course of a day",
+              "The material lying on the bed that the river is not currently moving",
+              "The nutrients dissolved in the water rather than suspended in it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Solid material, ranging from clay particles that stay suspended for hundreds of miles to boulders that move only in extreme floods.",
+            sourceLessonSlug: "sediment-and-what-a-dam-does-to-it",
+          },
+          {
+            prompt: "What does a river's carrying capacity depend on, steeply?",
+            options: [
+              "The width of the channel at the point being considered",
+              "The temperature of the water, which changes how easily it lifts material",
+              "Velocity",
+              "The total volume of water, regardless of how fast it is moving",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Carrying capacity depends steeply on velocity, which is why deposition happens exactly where flow slows: inside bends, floodplains during floods, and above all where a river meets standing water.",
+            sourceLessonSlug: "sediment-and-what-a-dam-does-to-it",
+          },
+          {
+            prompt: "What happens to a river as it enters a reservoir?",
+            options: [
+              "It speeds up as the channel deepens toward the dam wall",
+              "It slows abruptly and drops nearly everything it was carrying",
+              "It mixes evenly, distributing its sediment through the whole reservoir",
+              "It keeps its load until it passes through the dam's outlet works",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A reservoir is standing water, so the river slows abruptly and drops nearly all of its load right there. Three consequences follow from that one fact.",
+            sourceLessonSlug: "sediment-and-what-a-dam-does-to-it",
+          },
+          {
+            prompt: "What does trapped sediment do to a reservoir over time?",
+            options: [
+              "It stabilizes the bed and reduces the maintenance the dam requires",
+              "It settles into a layer that is periodically flushed out downstream",
+              "It has no effect on capacity, since it compacts into the original bed",
+              "It fills it, reducing the storage the dam was built for",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Slowly but inexorably, which is why every reservoir has a finite life.",
+            sourceLessonSlug: "sediment-and-what-a-dam-does-to-it",
+          },
+          {
+            prompt: "Why is the water leaving a dam more erosive than the water that arrived?",
+            options: [
+              "Because it leaves through a narrow outlet at much higher pressure",
+              "Because it has been warmed in the reservoir and carries material better",
+              "It has full capacity and nothing to carry",
+              "Because reservoir water is chemically altered by its time in storage",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A river's capacity to carry sediment depends on its energy, not on what it is currently carrying. Water arriving already loaded has spent that capacity; water arriving clear has full capacity and picks material up from the bed and banks instead.",
+            sourceLessonSlug: "sediment-and-what-a-dam-does-to-it",
+          },
+          {
+            prompt: "Why does a river delta exist at all?",
+            options: [
+              "The river deposits more material than the sea can remove",
+              "The sea floor shelves gently enough for material to come to rest",
+              "The river's channel splits, and each branch builds its own bank",
+              "Tides carry material back upstream and deposit it near the mouth",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A delta is a balance between delivery and removal, maintained by continuous supply from upstream.",
+            sourceLessonSlug: "sediment-and-what-a-dam-does-to-it",
+          },
+          {
+            prompt: "What happens to a delta when the sediment supply is interrupted?",
+            options: [
+              "It stabilizes, since nothing new is being added to erode away",
+              "It grows more slowly but continues to build from marine material",
+              "Land loss follows",
+              "It shifts sideways to a channel where sediment still arrives",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Compaction and subsidence continue, sea level does what it does, and the wetlands that depended on regular sediment delivery are no longer being resupplied.",
+            sourceLessonSlug: "sediment-and-what-a-dam-does-to-it",
+          },
+          {
+            prompt: "What does the lesson call the link between an upper-river dam and land loss a thousand miles away?",
+            options: [
+              "An externality, since the cost falls outside the project's accounts",
+              "A coincidence, since the two changes have separate causes",
+              "A design flaw, since the dam was built without modeling the delta",
+              "A feedback: one change to the surface producing changes in other systems",
+            ],
+            correctIndex: 3,
+            explanation:
+              "A structure built for flood control and navigation participates in land loss a thousand miles downstream, through a mechanism nobody designed and everybody can now describe. Lesson 10 is the same shape with a different substance.",
+            sourceLessonSlug: "sediment-and-what-a-dam-does-to-it",
+          },
+          {
+            prompt: "How far can the finest sediment stay suspended?",
+            options: [
+              "Hundreds of miles",
+              "A few hundred yards, before the first slackening of the current",
+              "Only as far as the next bend, where the flow slows on the inside",
+              "It does not travel at all; clay settles as soon as it enters the water",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Sediment load ranges from clay particles that stay suspended for hundreds of miles to boulders that move only in extreme floods.",
+            sourceLessonSlug: "sediment-and-what-a-dam-does-to-it",
+          },
+          {
+            prompt: "What does the lesson call the lower Mississippi?",
+            options: [
+              "The last stretch of the river still permitted to migrate freely",
+              "Infrastructure that happens to be made of water",
+              "A river that recovered its natural form once the levees were completed",
+              "The most heavily gauged natural river system in the world",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It is not a natural river. It is an enormous piece of infrastructure that happens to be made of water, and this lesson covers what that engineering does physically.",
+            sourceLessonSlug: "the-engineered-river",
+          },
+          {
+            prompt: "What does a levee do to the flow physically?",
+            options: [
+              "It slows the water by forcing it against a rough constructed surface",
+              "It removes water from the channel and stores it behind the embankment",
+              "Confines it, so the same water runs deeper and faster",
+              "It raises the bed, so the same volume passes at a shallower depth",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A levee keeps flood water out of the floodplain by confining the flow, so the same water runs deeper and faster and is sent downstream rather than spread out.",
+            sourceLessonSlug: "the-engineered-river",
+          },
+          {
+            prompt: "What does a revetment do?",
+            options: [
+              "Freezes a meander in place",
+              "Raises the bank so that a larger flood can be contained behind it",
+              "Deepens the channel so that barges can pass at low water",
+              "Diverts part of the flow into a side channel to relieve the main one",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Its purpose is to stop the bank eroding, and the physical consequence is that the meander migration from lesson 5 halts at that point.",
+            sourceLessonSlug: "the-engineered-river",
+          },
+          {
+            prompt: "What does a cutoff do to the river?",
+            options: [
+              "It separates a bend from the channel and turns it into an oxbow lake",
+              "It stops the channel migrating past a structure that must not be moved",
+              "It slows the water by lengthening the distance it has to travel",
+              "It shortens the channel, which steepens the gradient and speeds the flow",
+            ],
+            correctIndex: 3,
+            explanation:
+              "A cutoff shortens the channel for navigation. A shorter path over the same drop is a steeper gradient, and steeper means faster.",
+            sourceLessonSlug: "the-engineered-river",
+          },
+          {
+            prompt: "What does a lock and dam create, and what does that cause?",
+            options: [
+              "Slack water, which traps sediment",
+              "A steeper gradient, which scours the bed below the structure",
+              "A wider channel, which slows the flow through the whole reach",
+              "A fixed bank line, which stops the meander pattern from migrating",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Its purpose is maintaining navigable depth, and the physical consequence is slack water that traps sediment, which is the lesson 6 mechanism arriving in a different structure.",
+            sourceLessonSlug: "the-engineered-river",
+          },
+          {
+            prompt: "What does the table say about dredging?",
+            options: [
+              "It is a one-time intervention once the channel reaches its design depth",
+              "It is continuous, expensive, and never finished",
+              "It is only required after a flood has redistributed the bed material",
+              "It removes the need for locks and dams on the same stretch of river",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Keeping the channel deep is continuous, expensive, and never finished, because the river keeps delivering material to the places dredging just cleared.",
+            sourceLessonSlug: "the-engineered-river",
+          },
+          {
+            prompt: "What is the bargain the lesson identifies in every one of these structures?",
+            options: [
+              "Each one costs more to maintain than it did to build originally",
+              "Each one solves a problem the previous structure created",
+              "Each one works, and each one moves a cost rather than removing it",
+              "Each one protects navigation at the expense of flood control",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Levees protect the land behind them and send the water somewhere else, faster. Revetments protect a bank and stop the floodplain being rebuilt. Read the consequence column as a whole and the trade becomes clear.",
+            sourceLessonSlug: "the-engineered-river",
+          },
+          {
+            prompt: "Is this lesson an argument against engineering the river?",
+            options: [
+              "No",
+              "Yes, since every structure moves a cost onto someone downstream",
+              "Yes, but only for the structures that trap sediment behind them",
+              "It declines to say, since the question is a political rather than a physical one",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Enormous numbers of people live and work in the floodplain, and the engineering is why. The lesson is an argument for being able to say where the cost went, which is a different skill from being for or against.",
+            sourceLessonSlug: "the-engineered-river",
+          },
+          {
+            prompt: "Where does a river confined by levees deposit its sediment?",
+            options: [
+              "Across the floodplain, once the flood tops the levee crest",
+              "Nowhere; confined water moves too fast to deposit anything at all",
+              "Inside the levees",
+              "In the tributaries, which back up when the main channel is confined",
+            ],
+            correctIndex: 2,
+            explanation:
+              "It deposits inside the levees rather than across the floodplain, so the bed can rise over time relative to the surrounding land.",
+            sourceLessonSlug: "the-engineered-river",
+          },
+          {
+            prompt: "What follows when a confined river's bed rises relative to the land around it?",
+            options: [
+              "The channel widens until the flow returns to its original depth",
+              "The levees must rise too, and the consequence of a failure grows",
+              "The river abandons that reach and cuts a new channel alongside",
+              "The floodplain rises with it, since both receive the same material",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Where the bed rises, the levees have to rise as well, and the drop between the confined river and the land behind the levee grows along with the consequence of a breach.",
+            sourceLessonSlug: "the-engineered-river",
+          },
+          {
+            prompt: "Why can levees make flooding worse somewhere else?",
+            options: [
+              "Because building them removes soil that used to absorb rainfall",
+              "Because they concentrate rainfall runoff from the land behind them",
+              "Because a levee raises the water table on the protected side",
+              "The water is not removed, only confined",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Flow that would have spread across a wide floodplain, slowing and depositing, is instead held in a narrow channel where it runs deeper and faster, and it arrives downstream sooner and in greater volume.",
+            sourceLessonSlug: "the-engineered-river",
+          },
+          {
+            prompt: "Why does the lesson recommend taking Locks, Dams and Barges alongside it?",
+            options: [
+              "Because the engineering decisions and the physical consequences need each other",
+              "Because that course contains the measurements this one leaves out",
+              "Because the two courses cover different stretches of the same river",
+              "Because the history is a prerequisite for understanding the physics",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The engineering decisions are unreadable without the physical consequences, and the physical consequences are inert without knowing who bore them.",
+            sourceLessonSlug: "the-engineered-river",
+          },
+          {
+            prompt: "What does the lesson say rivers are, given enough time?",
+            options: [
+              "The dominant force shaping most landscapes",
+              "A minor influence compared with glaciers and tectonic uplift",
+              "The main route by which rock is delivered from one continent to another",
+              "The only landscape process that can be watched happening in real time",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Rivers move earth, and over enough time they are the dominant force shaping most landscapes. The evidence is visible from a boat, which is the point of the whole lesson.",
+            sourceLessonSlug: "the-river-shapes-the-land",
+          },
+          {
+            prompt: "Above all, where does a river drop its sediment?",
+            options: [
+              "On the outside of every bend, where the current presses hardest",
+              "Where it meets standing water",
+              "In the steepest reaches, where the bed is too hard to hold material",
+              "Evenly along its length, in proportion to the distance travelled",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Deposition happens wherever flow slows: inside bends, floodplains during floods, and above all where a river meets standing water. That last one is why a reservoir behaves the way it does.",
+            sourceLessonSlug: "sediment-and-what-a-dam-does-to-it",
+          },
+          {
+            prompt: "What is a levee's stated purpose?",
+            options: [
+              "To hold the channel at a depth that barges can navigate year round",
+              "To stop the bank eroding where a structure sits close to the water",
+              "To shorten the route the river takes through a wide floodplain",
+              "To keep flood water out of the floodplain",
+            ],
+            correctIndex: 3,
+            explanation:
+              "That is the purpose, and it works. The physical consequence is that the flow is confined, so the same water runs deeper and faster and is sent downstream rather than spread out.",
+            sourceLessonSlug: "the-engineered-river",
+          },
+        ],
+      },
+    },
     // ── Part 3 ─────────────────────────────────────────────────────────────────────────────────
     {
       slug: "reading-water-quality",
