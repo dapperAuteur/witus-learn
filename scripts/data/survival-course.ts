@@ -1295,6 +1295,152 @@ Federal Emergency Management Agency. (2024). *Ready.gov: Power outages.* U.S. De
       ],
     },
 
+    {
+      slug: "quiz-off-grid-power",
+      title: "Section 5 quiz · Off-Grid Power",
+      section: "Section 5 · Off-Grid Power",
+      body: `${SAFETY}
+
+A graded check on the off-grid power chain and how to size it, and on the generator rules that make this the most dangerous topic in the course. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What are the four parts of an off-grid power chain?",
+            options: [
+              "Source, storage, conversion, loads",
+              "Fuel, engine, exhaust, and the transfer switch that isolates the grid",
+              "Panels, wiring, breakers, and the meter the utility reads from outside",
+              "Generation, transmission, distribution, and metering, as on the grid",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A source (solar panels or a generator), storage (batteries), conversion (a charge controller and an inverter), and loads (what you run).",
+            sourceLessonSlug: "off-grid-power-basics",
+          },
+          {
+            prompt: "What does an inverter do in that chain?",
+            options: [
+              "Regulates how fast the panels charge the battery bank behind it",
+              "Turns DC into AC",
+              "Disconnects the house from the utility so a generator cannot backfeed",
+              "Steps voltage up so the wiring run to the panels can be longer",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The inverter turns DC battery power into AC. The charge controller is the other half of the conversion stage.",
+            sourceLessonSlug: "off-grid-power-basics",
+          },
+          {
+            prompt: "How do you size an off-grid system?",
+            options: [
+              "By the total wattage of every appliance the household owns",
+              "By matching the generator's rated output to the main breaker",
+              "Watts times hours, plus margin",
+              "By counting outlets, since each circuit has a known maximum draw",
+            ],
+            correctIndex: 2,
+            explanation:
+              "List your critical loads, find each device's watts, multiply by hours to get watt-hours per day, and size storage and source to that number with margin.",
+            sourceLessonSlug: "off-grid-power-basics",
+          },
+          {
+            prompt: "What should you prioritize when power is scarce?",
+            options: [
+              "Refrigeration first, because spoiled food becomes a health hazard",
+              "Lighting first, because moving safely in the dark is the main risk",
+              "Whatever draws the least power, so the batteries last the longest",
+              "Medical devices and communications",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Prioritize ruthlessly: keeping a medical device and communications running beats powering conveniences.",
+            sourceLessonSlug: "off-grid-power-basics",
+          },
+          {
+            prompt: "What does Ready.gov advise for anyone who depends on electricity for their health?",
+            options: [
+              "Plan the backup in advance",
+              "Buy the largest battery bank the household budget can support",
+              "Register the address with the utility so power is restored first",
+              "Keep a second device that runs without any electricity at all",
+            ],
+            correctIndex: 0,
+            explanation:
+              "If anyone relies on powered oxygen, a CPAP, or refrigerated medication, make a specific power plan in advance: backup power, and knowing where to go if it fails. Medical power is a plan, not a gadget.",
+            sourceLessonSlug: "off-grid-power-basics",
+          },
+          {
+            prompt: "Where may a portable generator never be run?",
+            options: [
+              "Anywhere the exhaust would be visible from a neighboring property",
+              "Indoors or in any partly enclosed space",
+              "On any surface that is not level and cleared of dry vegetation",
+              "Within reach of a household extension cord rated below its output",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Never in the house, basement, garage, crawlspace, or any partly enclosed area, even with doors and windows open. Carbon monoxide is the reason.",
+            sourceLessonSlug: "generator-and-fuel-safety",
+          },
+          {
+            prompt: "How far from the building should a generator typically go?",
+            options: [
+              "Far enough that the noise does not carry into the living space",
+              "Whatever distance the longest available extension cord allows",
+              "At least 20 feet",
+              "Just outside the door, so the cord run stays as short as possible",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Place it outside, far from doors, windows, and vents so exhaust cannot drift in: typically at least 20 feet, and follow the manufacturer's instruction.",
+            sourceLessonSlug: "generator-and-fuel-safety",
+          },
+          {
+            prompt: "What is backfeeding?",
+            options: [
+              "Running a generator on fuel that has been stored past its shelf life",
+              "Charging a battery bank from a generator instead of from panels",
+              "Drawing more current than the generator's rated continuous output",
+              "Plugging a generator into a wall outlet",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Feeding the house wiring from an outlet instead of through a proper transfer switch. The safe alternatives are a transfer switch or plugging appliances directly into the generator.",
+            sourceLessonSlug: "generator-and-fuel-safety",
+          },
+          {
+            prompt: "Why is backfeeding dangerous?",
+            options: [
+              "It can electrocute utility workers",
+              "It overloads the generator and shortens the life of its engine",
+              "It draws carbon monoxide back through the wiring into the house",
+              "It voids the manufacturer's warranty on the generator's alternator",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It can electrocute utility workers and start fires. That is why the rule is never to plug a generator into a wall outlet.",
+            sourceLessonSlug: "generator-and-fuel-safety",
+          },
+          {
+            prompt: "What must you do before refueling a generator?",
+            options: [
+              "Disconnect every appliance so nothing draws current during the refill",
+              "Let it cool",
+              "Move it at least another ten feet away from the nearest structure",
+              "Ventilate the area for several minutes to clear accumulated exhaust",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Let the generator cool before refueling, and store fuel in approved containers away from living spaces and ignition sources. Fuel fires are the other way generators kill people.",
+            sourceLessonSlug: "generator-and-fuel-safety",
+          },
+        ],
+      },
+    },
+
     // ─────────────────────────────────────────────────────────────────────────
     // SECTION 6: Sanitation & hygiene
     // ─────────────────────────────────────────────────────────────────────────
