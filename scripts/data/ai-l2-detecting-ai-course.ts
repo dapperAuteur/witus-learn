@@ -381,6 +381,292 @@ The honest takeaway: **content credentials and watermarks are provenance you can
 - Google DeepMind. SynthID. https://deepmind.google/technologies/synthid/`,
     },
     {
+      slug: "quiz-the-durable-skill",
+      title: "Section 2 knowledge check · The durable skill",
+      section: "The durable skill",
+      body: `A graded check on the three provenance questions, on lateral reading, and on what Content Credentials and watermarks can and cannot tell you. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What do the three durable questions ask about?",
+            options: [
+              "The visual quality of the file as it was delivered to you",
+              "The content's origin",
+              "The reputation of the platform it was published on",
+              "The emotional reaction the content is designed to produce",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Who made it, where did it come from, who else confirms it. Not one of them looks at the media itself, which is exactly why they do not age out.",
+            sourceLessonSlug: "provenance-and-lateral-reading",
+          },
+          {
+            prompt: "What makes a source accountable, in this lesson's terms?",
+            options: [
+              "They publish on a platform that verifies real identities",
+              "They have posted reliably on the same subject before",
+              "They hold credentials in the field they are reporting on",
+              "They stake their reputation on it",
+            ],
+            correctIndex: 3,
+            explanation:
+              "A named person or outlet with something to lose if it turns out false. An anonymous account carries no such cost and therefore no such signal.",
+            sourceLessonSlug: "provenance-and-lateral-reading",
+          },
+          {
+            prompt: "Why does the second question ask for the earliest version you can find?",
+            options: [
+              "Later copies lose their context",
+              "Earlier copies are the ones detectors were trained against",
+              "The original is always posted by an identifiable account",
+              "Search engines rank an original above the copies of it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Clips get re-cropped, re-captioned and stripped as they spread. The version that reached you may be several removes from what actually happened.",
+            sourceLessonSlug: "provenance-and-lateral-reading",
+          },
+          {
+            prompt: "What does the lesson say about a single source?",
+            options: [
+              "It is enough when the outlet reporting it is a reputable one",
+              "It is not corroboration",
+              "It is sufficient as long as the account can be identified",
+              "It counts as partial confirmation pending a second source",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Especially one you cannot identify. Corroboration means an independent source arriving at the same thing, not the same claim seen twice.",
+            sourceLessonSlug: "provenance-and-lateral-reading",
+          },
+          {
+            prompt: "What is lateral reading?",
+            options: [
+              "Reading a claim alongside the strongest argument against it",
+              "Comparing several versions of the same clip side by side",
+              "Opening new tabs about the source",
+              "Reading a page's sources before you read the page itself",
+            ],
+            correctIndex: 2,
+            explanation:
+              "You leave the suspicious page and find out what trusted others say about it and about its claim. The judgment happens somewhere other than the page being judged.",
+            sourceLessonSlug: "provenance-and-lateral-reading",
+          },
+          {
+            prompt: "What does the lesson call the habit that lateral reading replaces?",
+            options: [
+              "Close reading, judging the argument on its internal logic",
+              "Vertical reading",
+              "Skim reading, forming a view from the headline alone",
+              "Source reading, following each citation back to its origin",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Staying on the page and reading down it. It is the habit most people were taught, and on the open web it is the weaker one.",
+            sourceLessonSlug: "provenance-and-lateral-reading",
+          },
+          {
+            prompt: "What mistake does vertical reading make?",
+            options: [
+              "Trusting whichever result a search engine returns first",
+              "Believing the version of a claim that was published earliest",
+              "Accepting a claim because a great many accounts repeat it",
+              "Judging a page by how slick it looks",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Design quality is cheap and says nothing about accuracy. Judging a page from inside it means judging it on the one thing its author fully controls.",
+            sourceLessonSlug: "provenance-and-lateral-reading",
+          },
+          {
+            prompt: "What did Stanford's Civic Online Reasoning research find about professional fact-checkers?",
+            options: [
+              "They read laterally by reflex",
+              "They rely on detection tools before forming any judgment",
+              "They spend longer than most people on each individual page",
+              "They check an image's visual consistency before anything else",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the first thing they do rather than a last resort, and the research found it beats the careful-reading habits most people are taught instead.",
+            sourceLessonSlug: "provenance-and-lateral-reading",
+          },
+          {
+            prompt: "Why does the durable skill still work on a flawless, artifact-free deepfake?",
+            options: [
+              "A flawless fake takes longer to make and so spreads slower",
+              "Perfect renders leave a distinctive statistical signature",
+              "The tools capable of it are few enough to be identified",
+              "It still has to come from somewhere",
+            ],
+            correctIndex: 3,
+            explanation:
+              "And it still fails to be corroborated by independent reporting. Neither of those depends on the render being imperfect, which is the whole point.",
+            sourceLessonSlug: "provenance-and-lateral-reading",
+          },
+          {
+            prompt: "Which question does a fact-checker call lateral reading?",
+            options: [
+              "Who else confirms it",
+              "Who made it, and can that person be held to account",
+              "Where did it first appear, and how long ago was that",
+              "What is this content trying to make me feel about it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The third of the three. Steps one and two trace the origin; step three is where you leave the page to check the claim against independent reporting.",
+            sourceLessonSlug: "provenance-and-lateral-reading",
+          },
+          {
+            prompt: "What does C2PA attach to a piece of media?",
+            options: [
+              "A cryptographic key that prevents any further editing",
+              "A tamper-evident record",
+              "A score estimating the likelihood it was AI generated",
+              "A link to the account that first published the file",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Tamper-evident means alteration shows. It does not mean alteration is impossible, which is a different and much stronger claim nobody is making.",
+            sourceLessonSlug: "content-credentials-c2pa",
+          },
+          {
+            prompt: "What does C2PA call its own format?",
+            options: [
+              "A chain of custody, borrowed from evidence handling",
+              "A birth certificate for a piece of digital content",
+              "A nutrition label",
+              "A passport, stamped at each platform it passes through",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A nutrition label for digital content. The analogy is exact in the useful way: it tells you what went in, and it is only there if somebody put it there.",
+            sourceLessonSlug: "content-credentials-c2pa",
+          },
+          {
+            prompt: "What does a Content Credential record?",
+            options: [
+              "Every account that has downloaded or reshared the file",
+              "The rights held by the person who published the media",
+              "How closely the file matches known generated content",
+              "Who made it and what edits followed",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Who or what created it, whether AI was involved, and the edit history since. That last part is why it is a record rather than a stamp.",
+            sourceLessonSlug: "content-credentials-c2pa",
+          },
+          {
+            prompt: "Which marker tells you Content Credentials are present?",
+            options: [
+              "CR",
+              "A padlock icon shown beside the file's name",
+              "A watermark visible in the corner of the image",
+              "A verified badge attached to the posting account",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Seeing it means there is a history you can inspect. Not seeing it means only that this platform is not showing you one.",
+            sourceLessonSlug: "content-credentials-c2pa",
+          },
+          {
+            prompt: "Which is one of the three conditions a Content Credential depends on?",
+            options: [
+              "The file has not been compressed since it was created",
+              "The viewer has installed a tool that reads the standard",
+              "The platform displays it",
+              "The publisher registered with the coalition beforehand",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Along with the creating tool having added it, and its surviving the trip. Three conditions is three chances for a genuine file to arrive with nothing attached.",
+            sourceLessonSlug: "content-credentials-c2pa",
+          },
+          {
+            prompt: "What does the absence of a Content Credential prove?",
+            options: [
+              "That the file has passed through at least one platform",
+              "Nothing",
+              "That the tool which created it did not support the standard",
+              "That the media was probably generated rather than captured",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Most media today carries none at all. Credentials are a positive signal when present, never a test that a file can be said to have failed.",
+            sourceLessonSlug: "content-credentials-c2pa",
+          },
+          {
+            prompt: "Why can a credential vanish from a completely genuine file?",
+            options: [
+              "A screenshot or re-upload strips it",
+              "Credentials expire a fixed period after they are issued",
+              "The standard holds only on the platform that issued it",
+              "Editing tools replace the record with one of their own",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Plenty of platforms strip metadata on upload as a matter of course. The credential's disappearance says something about the pipeline, not the content.",
+            sourceLessonSlug: "content-credentials-c2pa",
+          },
+          {
+            prompt: "What is SynthID?",
+            options: [
+              "A public database of content known to be AI generated",
+              "A detector that scores an image for signs of generation",
+              "An imperceptible watermark",
+              "A standard governing how AI tools must label their output",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Google DeepMind embeds it directly into generated images, audio, video and text, so the content can be identified as AI-made later on.",
+            sourceLessonSlug: "content-credentials-c2pa",
+          },
+          {
+            prompt: "What is SynthID designed to survive?",
+            options: [
+              "A deliberate attempt to remove it from the file",
+              "Conversion between entirely different media formats",
+              "Being regenerated by a second AI model",
+              "Cropping and compression",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Along with filters and added noise. Designed to survive common modifications is a real property and is not the same as impossible to remove.",
+            sourceLessonSlug: "content-credentials-c2pa",
+          },
+          {
+            prompt: "What does a negative SynthID result mean?",
+            options: [
+              "Not that the content is real",
+              "That the file has been through more than one platform",
+              "That the detector could not read the file's format",
+              "That the media was captured by a camera rather than generated",
+            ],
+            correctIndex: 0,
+            explanation:
+              "SynthID only flags content from tools that use SynthID, and its public detector is still being rolled out. A negative is an absence of evidence.",
+            sourceLessonSlug: "content-credentials-c2pa",
+          },
+          {
+            prompt: "What is the honest takeaway on credentials and watermarks together?",
+            options: [
+              "A reliable test once both are more widely adopted",
+              "The most accurate check available for images and audio",
+              "A signal when found, never a verdict",
+              "A replacement for tracing origin whenever a marker is present",
+            ],
+            correctIndex: 2,
+            explanation:
+              "They are provenance you can sometimes read straight off the file. They complement the who, where and corroborate habit rather than replacing it.",
+            sourceLessonSlug: "content-credentials-c2pa",
+          },
+        ],
+      },
+    },
+    {
       slug: "reverse-image-and-metadata",
       recallContent: [
         { prompt: "What are Content Credentials (C2PA) and SynthID?", answer: "C2PA Content Credentials are an open-standard, tamper-evident 'nutrition label' attached to a file; SynthID is Google DeepMind's imperceptible watermark embedded in AI-generated content." },
