@@ -716,6 +716,217 @@ Centers for Disease Control and Prevention. (2022). *Heat stress: Heat-related i
       ],
     },
 
+    {
+      slug: "quiz-shelter-and-warmth",
+      title: "Section 3 quiz · Shelter & Warmth",
+      section: "Section 3 · Shelter & Warmth",
+      body: `${SAFETY}
+
+A graded check on what shelter is actually for, the carbon monoxide rules that make alternative heat survivable, and how to recognize the two temperature emergencies. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Which rule-of-3s priority does shelter protect?",
+            options: [
+              "Breathable air, the roughly three-minute priority in the ordering",
+              "Water, the roughly three-day priority the rule places third",
+              "Food, the roughly three-week priority at the end of the ordering",
+              "Core body temperature",
+            ],
+            correctIndex: 3,
+            explanation:
+              "After immediate danger and air, shelter protects your core body temperature, which is the roughly three-hour priority.",
+            sourceLessonSlug: "shelter-site-and-insulation",
+          },
+          {
+            prompt: "What three things does good shelter do?",
+            options: [
+              "Blocks weather, insulates, avoids hazards",
+              "Stores water, holds your supplies, and gives you a place to sleep",
+              "Signals rescuers, holds heat, and keeps your communications dry",
+              "Provides ventilation, contains smoke, and keeps fuel away from flame",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It blocks wind and precipitation, insulates you from heat loss (especially to the ground), and is sited away from flood channels, dead trees, unstable ground, and smoke.",
+            sourceLessonSlug: "shelter-site-and-insulation",
+          },
+          {
+            prompt: "Which surface takes heat away from you fastest?",
+            options: [
+              "Still air, which carries heat away by convection all night long",
+              "The ground",
+              "Any surface in direct sun, through radiation back into the body",
+              "Dry clothing, once it has trapped more air than it can hold",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Ground conducts heat away fast, which is why getting off the cold ground is the first practical insulation move.",
+            sourceLessonSlug: "shelter-site-and-insulation",
+          },
+          {
+            prompt: "Why does wet clothing matter so much?",
+            options: [
+              "It adds weight that makes moving to a warming shelter harder",
+              "It freezes solid and becomes impossible to remove in the cold",
+              "It destroys insulation",
+              "It blocks the skin's ability to radiate excess heat during exertion",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Layering trapped air is what keeps you warm, not the material alone, and wet clothing destroys that insulation. Get off the ground, block the wind, and stay dry.",
+            sourceLessonSlug: "shelter-site-and-insulation",
+          },
+          {
+            prompt: "What does the lesson say is often the safest shelter?",
+            options: [
+              "A vehicle, because it blocks wind and can be moved out of a hazard",
+              "An improvised debris shelter built away from the nearest structure",
+              "Whichever building is highest above the local flood channels",
+              "Your own home",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Often the safest shelter is your own home or a designated public shelter. Ready.gov's guidance is to know both how to shelter safely in place and when to evacuate on official instruction.",
+            sourceLessonSlug: "shelter-site-and-insulation",
+          },
+          {
+            prompt: "What makes carbon monoxide so dangerous?",
+            options: [
+              "It is colorless and odorless",
+              "It ignites at a lower temperature than any other combustion gas",
+              "It settles at floor level, where children and pets breathe it first",
+              "It corrodes the sensors inside battery-powered smoke detectors",
+            ],
+            correctIndex: 0,
+            explanation:
+              "CO gives you no warning of its own, which is why detection has to be a device rather than your senses. Headache, dizziness, and nausea can be the first signs.",
+            sourceLessonSlug: "safe-heat-and-ventilation",
+          },
+          {
+            prompt: "What is the CDC's rule about running fuel-burning devices indoors for heat?",
+            options: [
+              "Acceptable if a window is opened at least six inches for airflow",
+              "Never",
+              "Acceptable for charcoal but never for gasoline-powered equipment",
+              "Acceptable for up to an hour at a time, with a CO alarm running",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Never use generators, charcoal grills, camp stoves, or other gasoline or charcoal-burning devices inside a home, basement, garage, or near windows, and never use a gas stove or oven to heat a home.",
+            sourceLessonSlug: "safe-heat-and-ventilation",
+          },
+          {
+            prompt: "What are the two safety systems against carbon monoxide?",
+            options: [
+              "A fire extinguisher and a clear path to an exterior door",
+              "Fuel storage away from living space, and cooling before refueling",
+              "Ventilation and detection",
+              "A manufacturer-rated heater and a fireproof mat underneath it",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Combustion needs fresh air and a path for exhaust to leave, and battery-backup CO alarms tell you when that is failing. Enclosed spaces trap CO.",
+            sourceLessonSlug: "safe-heat-and-ventilation",
+          },
+          {
+            prompt: "What should you do if a CO alarm sounds or anyone feels ill?",
+            options: [
+              "Open every window and stay put until the alarm stops sounding",
+              "Shut off the device, then wait fifteen minutes before reentering",
+              "Move the heater outside and continue using the room as normal",
+              "Get to fresh air and call for help",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Headache, dizziness, and nausea can be CO symptoms. Get out to fresh air and call for help rather than trying to ventilate your way out of it from inside.",
+            sourceLessonSlug: "safe-heat-and-ventilation",
+          },
+          {
+            prompt: "What does this lesson offer instead of a do-it-yourself heater hack?",
+            options: [
+              "Rated devices as directed, or relocate",
+              "A list of fuels ranked by how little carbon monoxide each produces",
+              "Instructions for venting a camp stove through an exterior window",
+              "A calculation for how large a room has to be to burn fuel safely",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Use only devices rated for indoor use as directed, ventilate, detect CO, and when the safe option is not available, relocate to a warming shelter.",
+            sourceLessonSlug: "safe-heat-and-ventilation",
+          },
+          {
+            prompt: "What body temperature does the CDC treat as a hypothermia emergency?",
+            options: [
+              "Below 98.6 degrees Fahrenheit, the standard normal body temperature",
+              "Below 95 degrees Fahrenheit",
+              "Below 90 degrees Fahrenheit, at which shivering stops entirely",
+              "Any drop of more than two degrees from that person's own normal",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The CDC treats a body temperature below 95 degrees Fahrenheit (35 Celsius) as an emergency requiring medical attention.",
+            sourceLessonSlug: "hypothermia-and-heat-illness",
+          },
+          {
+            prompt: "Which of these does the CDC list as hypothermia warning signs?",
+            options: [
+              "Heavy sweating, weakness, nausea, and a pounding headache",
+              "High body temperature, confusion, and possibly no sweating at all",
+              "Fumbling hands and slurred speech",
+              "Rapid breathing and a pulse that is difficult to find at the wrist",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Shivering, exhaustion or confusion, fumbling hands, memory loss, slurred speech, and drowsiness. Heavy sweating and nausea describe heat exhaustion instead, and high temperature with confusion describes heat stroke.",
+            sourceLessonSlug: "hypothermia-and-heat-illness",
+          },
+          {
+            prompt: "What can heat exhaustion progress to?",
+            options: [
+              "Hypothermia, once the body's cooling response overshoots its target",
+              "Dehydration alone, which rest and fluids resolve without treatment",
+              "A permanent loss of the ability to sweat in hot conditions",
+              "Heat stroke",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Heat exhaustion (heavy sweating, weakness, nausea, headache) can progress to heat stroke, a life-threatening emergency with high body temperature, confusion, and possibly no sweating.",
+            sourceLessonSlug: "hypothermia-and-heat-illness",
+          },
+          {
+            prompt: "What does the CDC say heat stroke requires?",
+            options: [
+              "Calling 911 and rapid cooling",
+              "Rest in shade with fluids until the person's symptoms settle down",
+              "Slow rewarming, because rapid temperature change is itself a danger",
+              "Waiting for sweating to resume before any cooling is attempted",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Heat stroke is a life-threatening emergency. Call 911 and begin rapid cooling. Rest and fluids are the response to heat exhaustion, the earlier stage.",
+            sourceLessonSlug: "hypothermia-and-heat-illness",
+          },
+          {
+            prompt: "What does this lesson say is within a layperson's reach, and what is not?",
+            options: [
+              "Field diagnosis is reachable, but calling emergency services is not",
+              "Prevention and early recognition, not treatment",
+              "Definitive treatment is reachable once you own the right equipment",
+              "Nothing is reachable until you hold a current certification card",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Prevention and early recognition are within reach; definitive treatment is not. The course teaches the warning signs and the call-for-help response, and deliberately stops there.",
+            sourceLessonSlug: "hypothermia-and-heat-illness",
+          },
+        ],
+      },
+    },
+
     // ─────────────────────────────────────────────────────────────────────────
     // SECTION 4: Food
     // ─────────────────────────────────────────────────────────────────────────
