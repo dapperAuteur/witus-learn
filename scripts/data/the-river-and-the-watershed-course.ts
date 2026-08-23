@@ -184,6 +184,565 @@ Federal Emergency Management Agency. (n.d.). *Flood zones and the 1-percent-annu
 
 U.S. Geological Survey. (n.d.). *The 100-year flood: What does it mean?* https://www.usgs.gov/special-topics/water-science-school`,
     },
+    {
+      slug: "check-where-the-water-is",
+      title: "Part 1 knowledge check · Where the water is",
+      section: "Part 1 · Where the water is",
+      body: `A graded check on the idea the rest of the course rests on: a river is the drain of an area. It covers the four routes rain takes, why a creek still runs a month after the last storm, what the shape of a hydrograph reports, and what a 100-year flood actually promises. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is a watershed?",
+            options: [
+              "The stretch of river between one gauging station and the next one down",
+              "All the land that drains to one place",
+              "The strip of land alongside a channel that floods in an average year",
+              "The underground layer that supplies a river with its steady flow",
+            ],
+            correctIndex: 1,
+            explanation:
+              "All the land that drains to one place, and every point on land is in one.",
+            sourceLessonSlug: "you-live-in-a-watershed",
+          },
+          {
+            prompt: "What is a divide?",
+            options: [
+              "The point where a tributary joins the river it feeds into",
+              "The boundary between the channel and the floodplain beside it",
+              "The line separating one watershed from the next",
+              "The depth at which surface water gives way to groundwater",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The line separating one watershed from the next, and it usually runs along high ground.",
+            sourceLessonSlug: "you-live-in-a-watershed",
+          },
+          {
+            prompt: "What does the lesson mean by saying watersheds nest?",
+            options: [
+              "Your street drains to a creek, the creek to a river, and on to an ocean",
+              "That several rivers can share a single divide along their upper reaches",
+              "That a watershed's boundary shifts as the channel moves across its floor",
+              "That groundwater and surface water follow separate boundaries underground",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Your street drains to a creek, the creek to a river, the river to a bigger river, and eventually to an ocean. Every scale is a watershed.",
+            sourceLessonSlug: "you-live-in-a-watershed",
+          },
+          {
+            prompt: "How far do the Mississippi basin's tributaries reach?",
+            options: [
+              "From the Great Lakes south to the Gulf, along the eastern half only",
+              "From the Rockies to the Appalachians",
+              "Across the whole of the continental United States without exception",
+              "Only through the states that the main channel itself passes through",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The basin drains a very large share of the continental United States, gathering water from tributaries reaching from the Rockies to the Appalachians. Rain falling in Indiana and rain falling in Montana can end up in the same water.",
+            sourceLessonSlug: "you-live-in-a-watershed",
+          },
+          {
+            prompt: "What does the course mean by saying a river is the drain of an area?",
+            options: [
+              "That its flow is set by what happens on the land, not in the channel",
+              "That every river eventually empties into a larger body of water",
+              "That the channel carries away more water than the land can absorb",
+              "That a river's course was cut by drainage engineers rather than by nature",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A river is not a thing that exists in its channel. How much water, how muddy, how warm, and what is dissolved in it are all decided by what happens on the land that drains to it.",
+            sourceLessonSlug: "you-live-in-a-watershed",
+          },
+          {
+            prompt: "Which of these does the lesson say the land, rather than the channel, decides?",
+            options: [
+              "Only the total volume of water the river carries in a year",
+              "Only the shape of the channel and the path it takes across the ground",
+              "How muddy the river is",
+              "Only the species of fish that are able to live in the water",
+            ],
+            correctIndex: 2,
+            explanation:
+              "How much water, how muddy, how warm, and what is dissolved in it. Almost everything interesting about a river is decided upstream of the channel.",
+            sourceLessonSlug: "you-live-in-a-watershed",
+          },
+          {
+            prompt: "Why can nitrogen travel from an Indiana cornfield to the Gulf of Mexico?",
+            options: [
+              "Because nitrogen dissolves more readily than most agricultural chemicals",
+              "Because the Gulf's own currents draw water inward from the river mouth",
+              "Because the Mississippi is deep enough to carry material without settling",
+              "Because that is what a watershed is for",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Nothing mysterious has to happen. A watershed connects every point on its land to one outlet, which is exactly the mechanism lesson 10 traces.",
+            sourceLessonSlug: "you-live-in-a-watershed",
+          },
+          {
+            prompt: "Which two agencies does the lesson name for finding the watershed you live in?",
+            options: [
+              "The National Weather Service and the Army Corps of Engineers",
+              "The Geological Survey and the Environmental Protection Agency",
+              "The Department of Agriculture and the Fish and Wildlife Service",
+              "The Federal Emergency Management Agency and your state's water board",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The U.S. Geological Survey and the Environmental Protection Agency both publish tools that will name your watershed from an address or a map click.",
+            sourceLessonSlug: "you-live-in-a-watershed",
+          },
+          {
+            prompt: "Why does the lesson ask you to write your watershed's name down before continuing?",
+            options: [
+              "Because the tools that name it are not always available later on",
+              "Because the name is needed to look up the gauge record for your river",
+              "Every remaining lesson asks you to apply itself to it",
+              "Because the divides that define it are redrawn from time to time",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Every remaining lesson asks you to apply itself to that watershed, and the capstone is a description of it.",
+            sourceLessonSlug: "you-live-in-a-watershed",
+          },
+          {
+            prompt: "Two houses sit a hundred meters apart either side of a low ridge, and their gutters drain to rivers reaching the sea two thousand kilometers apart. What is the ridge?",
+            options: [
+              "A drainage divide",
+              "A levee, built to keep the two drainage systems from mixing",
+              "A terrace left behind by a river that has since moved elsewhere",
+              "A groundwater boundary, which need not follow the surface at all",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A divide is defined by where water goes rather than by how dramatic the terrain is, so a barely noticeable rise can separate two enormous basins.",
+            sourceLessonSlug: "you-live-in-a-watershed",
+          },
+          {
+            prompt: "What is interception, among the routes rain takes?",
+            options: [
+              "Rain that soaks into the soil before it can reach the channel",
+              "Rain that runs across the surface and arrives within hours",
+              "Rain that lands on leaves and evaporates",
+              "Rain caught behind a dam before it can continue downstream",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Some rain never reaches the ground at all: it lands on leaves and evaporates back into the air.",
+            sourceLessonSlug: "where-a-rivers-water-comes-from",
+          },
+          {
+            prompt: "What determines how much rain infiltrates?",
+            options: [
+              "The soil, how dry it already was, and what the surface is",
+              "The total amount of rain that falls over the whole of the storm",
+              "The distance from the point of rainfall to the nearest channel",
+              "The season, since infiltration only happens during the growing months",
+            ],
+            correctIndex: 0,
+            explanation:
+              "How much soaks in depends on the soil, how dry it already was, and whether the surface is a forest floor or a car park.",
+            sourceLessonSlug: "where-a-rivers-water-comes-from",
+          },
+          {
+            prompt: "How fast does runoff reach the channel?",
+            options: [
+              "Within minutes, since surface water moves at the speed of the rainfall",
+              "Within hours",
+              "Within weeks, once the soil above the channel has become saturated",
+              "Within seasons, which is why a drought takes so long to show up",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Runoff is the fast route: water flowing over the surface arrives at the channel within hours.",
+            sourceLessonSlug: "where-a-rivers-water-comes-from",
+          },
+          {
+            prompt: "How long can groundwater take to reach the river?",
+            options: [
+              "Hours, the same as runoff, once the water table has been reached",
+              "Days, since it moves sideways faster than it moved downward",
+              "Weeks or years",
+              "It never does; groundwater and river water are separate systems",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Infiltrated water keeps going down to the water table, then moves slowly sideways, and can take weeks or years to reach the river.",
+            sourceLessonSlug: "where-a-rivers-water-comes-from",
+          },
+          {
+            prompt: "Why does a creek keep flowing a month after the last rain?",
+            options: [
+              "Because upstream reservoirs release water to maintain a minimum flow",
+              "Because runoff from the highest parts of the watershed is still arriving",
+              "Because the channel itself holds enough water to last several weeks",
+              "Baseflow",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Where the water table sits above the channel bottom, groundwater drains continuously into the river. That steady contribution is baseflow, and it is what a river runs on between storms.",
+            sourceLessonSlug: "where-a-rivers-water-comes-from",
+          },
+          {
+            prompt: "Why does a drought show up in a stream long after it shows up in the sky?",
+            options: [
+              "The slow route responds in seasons",
+              "Because stream gauges average their readings over several weeks",
+              "Because rivers are fed mostly by upstream lakes, which drain gradually",
+              "Because evaporation from the channel takes months to become visible",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The fast route responds in hours and the slow route responds in seasons, which is also why a river can still be falling weeks after the rain has returned.",
+            sourceLessonSlug: "where-a-rivers-water-comes-from",
+          },
+          {
+            prompt: "What does paving a watershed remove?",
+            options: [
+              "The interception step, since there are no longer leaves to catch rain",
+              "The infiltration step",
+              "The runoff step, since paved surfaces channel water underground",
+              "The evaporation step, since paved surfaces hold no standing water",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Cover a watershed in roads and roofs and the water can no longer soak in. The same rainfall then arrives at the channel faster, all at once, and less of it goes into storage.",
+            sourceLessonSlug: "where-a-rivers-water-comes-from",
+          },
+          {
+            prompt: "Why does paving raise flood peaks?",
+            options: [
+              "Because more rain falls over a paved surface than over an open one",
+              "Because paved channels are narrower and carry less water safely",
+              "The water arrives together instead of spread out",
+              "Because paving warms the water, and warm water flows more quickly",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Nothing about the total rainfall changed. The water simply arrives at the channel all at once rather than spread out over time.",
+            sourceLessonSlug: "where-a-rivers-water-comes-from",
+          },
+          {
+            prompt: "Why does paving also lower the flow between storms?",
+            options: [
+              "Because paved watersheds lose more water to evaporation each summer",
+              "Because urban withdrawals take more water out of the channel directly",
+              "Because the faster flood peaks scour the channel deeper each time",
+              "Less water went into the ground to feed baseflow",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Baseflow comes from infiltrated water, so removing infiltration removes what sustains the river between storms. The lesson calls an urbanized stream flashier at both ends.",
+            sourceLessonSlug: "where-a-rivers-water-comes-from",
+          },
+          {
+            prompt: "Residents report both worse flooding and a creek that now runs dry in summer after their watershed was paved. Is that a contradiction?",
+            options: [
+              "No, it is one mechanism producing both",
+              "Yes, since less infiltration cannot both raise and lower the flow",
+              "Yes, unless a second change upstream is also responsible for one of them",
+              "No, but only because two separate changes happened at the same time",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Paving stops infiltration, so storm water reaches the channel fast and all at once, and little of it enters the ground to feed baseflow. One mechanism, both symptoms.",
+            sourceLessonSlug: "where-a-rivers-water-comes-from",
+          },
+          {
+            prompt: "What is discharge?",
+            options: [
+              "The depth of water measured at the deepest point of the channel",
+              "The volume of water passing a point per unit of time",
+              "The speed at which the surface of the river is moving downstream",
+              "The total volume a river delivers to the sea over a full year",
+            ],
+            correctIndex: 1,
+            explanation:
+              "If you can have only one number about a river, take discharge. Conceptually it is the width of the flow, times its depth, times how fast it is moving.",
+            sourceLessonSlug: "discharge-the-one-number",
+          },
+          {
+            prompt: "What happens to the same discharge when a channel narrows?",
+            options: [
+              "The water slows, since a narrow channel offers more resistance",
+              "The discharge falls, since less water fits through the gap",
+              "The water speeds up",
+              "Nothing changes, since discharge is independent of the channel's shape",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Widen the channel and the same discharge flows more slowly; narrow it and the same water speeds up. That is why a river that looks placid in a wide reach turns dangerous in a narrow one carrying exactly the same water.",
+            sourceLessonSlug: "discharge-the-one-number",
+          },
+          {
+            prompt: "What does this course expect you to do with discharge figures?",
+            options: [
+              "Read them",
+              "Calculate them from width, depth, and velocity measured in the field",
+              "Convert them between the units different agencies publish them in",
+              "Estimate them from rainfall totals when no gauge record exists",
+            ],
+            correctIndex: 0,
+            explanation:
+              "You will not calculate one in this course. You will read them, which is the skill that transfers.",
+            sourceLessonSlug: "discharge-the-one-number",
+          },
+          {
+            prompt: "What does a hydrograph plot?",
+            options: [
+              "Rainfall against time across the whole area of the watershed",
+              "Water depth against distance along the length of the channel",
+              "Discharge against time",
+              "The height of the water table against the level of the river",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A hydrograph plots discharge against time, and the lesson calls it the single most useful picture in river science.",
+            sourceLessonSlug: "discharge-the-one-number",
+          },
+          {
+            prompt: "What does the shape of a hydrograph tell you about?",
+            options: [
+              "The weather, in more detail than a rain gauge can record",
+              "The watershed",
+              "The channel's own dimensions at the point of the gauge",
+              "The season, since each one produces its own characteristic curve",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The rain is the input; the shape is the watershed's answer. Two watersheds receiving identical rain can produce completely different hydrographs.",
+            sourceLessonSlug: "discharge-the-one-number",
+          },
+          {
+            prompt: "What does a steep rising limb on a hydrograph say?",
+            options: [
+              "That the storm delivered an unusually large total volume of rain",
+              "That the channel narrows sharply just upstream of the gauge",
+              "That groundwater is contributing strongly to the flow",
+              "Water arrives fast: steep, paved, or already saturated",
+            ],
+            correctIndex: 3,
+            explanation:
+              "A steep rising limb means the water got to the channel quickly, which points at a steep, paved, or already saturated watershed.",
+            sourceLessonSlug: "discharge-the-one-number",
+          },
+          {
+            prompt: "What does a long slow falling limb indicate?",
+            options: [
+              "Substantial groundwater feeding the river afterward",
+              "That the storm itself continued for several days after the peak",
+              "That the channel is wide enough to hold water back as it drains",
+              "That an upstream reservoir is releasing water at a controlled rate",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A long slow recession means water that infiltrated during the storm is still draining into the river, which is groundwater doing its work.",
+            sourceLessonSlug: "discharge-the-one-number",
+          },
+          {
+            prompt: "What does a hydrograph floor near zero between storms suggest?",
+            options: [
+              "That the gauge stops recording below a certain minimum discharge",
+              "That the watershed receives almost no rain outside of storm events",
+              "Little groundwater contribution, or heavy withdrawal",
+              "That the channel has been straightened, so water passes through faster",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A high floor between storms means strong baseflow. A floor near zero means little groundwater contribution, or heavy withdrawal from the river.",
+            sourceLessonSlug: "discharge-the-one-number",
+          },
+          {
+            prompt: "Where can you see real discharge data for the river nearest you?",
+            options: [
+              "In the annual reports that state water boards publish each spring",
+              "From the Geological Survey's stream gauges, much of it continuous",
+              "By requesting it from the agency that operates the nearest dam",
+              "Only in the research literature, since raw gauge data is not published",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The U.S. Geological Survey operates stream gauges across the country and publishes their data, much of it updated continuously, so you can see today's discharge against its history.",
+            sourceLessonSlug: "discharge-the-one-number",
+          },
+          {
+            prompt: "Why does the lesson say looking at gauge data once is worth doing?",
+            options: [
+              "Because the data is removed from the public record after a few years",
+              "Because a reader cannot interpret a hydrograph without seeing a real one",
+              "Because the nearest gauge may be the only one covering your watershed",
+              "Public data at that resolution is unusual, and most people never learn it exists",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Public environmental data at that resolution is unusual, and most people never learn it exists.",
+            sourceLessonSlug: "discharge-the-one-number",
+          },
+          {
+            prompt: "Two neighboring watersheds get the same storm. One hydrograph spikes then drops to almost nothing; the other rises gently and stays elevated for days. What differs?",
+            options: [
+              "How much water infiltrates and is stored",
+              "How much rain actually fell on each of the two watersheds",
+              "The width of the channel at the point each gauge is installed",
+              "How far each gauge sits from the upstream edge of its watershed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The flashy one sheds water at the surface, so it arrives fast and there is little groundwater left to sustain flow afterward. The gentle one absorbs and releases slowly, which is what a forested or highly permeable watershed does.",
+            sourceLessonSlug: "discharge-the-one-number",
+          },
+          {
+            prompt: "What is a 100-year flood?",
+            options: [
+              "A flood of a size the river reaches once in each century on average",
+              "A flood with roughly a 1 percent chance in any given year",
+              "The largest flood in the hundred years of record behind the estimate",
+              "A flood large enough to exceed the design of century-old structures",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Roughly a 1 percent chance of being equalled or exceeded in any given year. That is a completely different statement from a schedule, and the difference has consequences measured in houses.",
+            sourceLessonSlug: "the-lie-inside-100-year-flood",
+          },
+          {
+            prompt: "If you have a 100-year flood this year, what does that tell you about next year?",
+            options: [
+              "That the risk is lower, since the river has just discharged its extreme",
+              "That the risk is higher, since flood years tend to arrive in clusters",
+              "Nothing",
+              "That the estimate behind the map must be revised downward",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Because it is a probability rather than a schedule, having one this year changes nothing about next year. Two in consecutive years is unremarkable in the way that rolling the same number twice is unremarkable.",
+            sourceLessonSlug: "the-lie-inside-100-year-flood",
+          },
+          {
+            prompt: "What does the lesson say the phrase 100-year flood does to a probability?",
+            options: [
+              "A probability stated as a period gets read as a promise",
+              "It rounds the probability to a figure the public can remember easily",
+              "It hides the uncertainty attached to the underlying estimate",
+              "It converts an annual chance into a lifetime chance without saying so",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Stating a probability as a period invites people to read it as a schedule. The engineering community has argued about the phrasing for years, and it persists because it is short.",
+            sourceLessonSlug: "the-lie-inside-100-year-flood",
+          },
+          {
+            prompt: "Where does a recurrence interval come from?",
+            options: [
+              "A model of how much rain the watershed's climate can deliver at once",
+              "The gauge record",
+              "The design standard the local flood defenses were built to meet",
+              "A survey of the elevation of the land on either side of the channel",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It is estimated from the gauge record: how often has a flow of that size actually occurred. That makes it an estimate with real uncertainty.",
+            sourceLessonSlug: "the-lie-inside-100-year-flood",
+          },
+          {
+            prompt: "What is the problem with estimating a 1-percent-per-year event from a few decades of data?",
+            options: [
+              "The record is too short to establish the channel's exact dimensions",
+              "Older gauges measured discharge less accurately than modern ones do",
+              "It is extrapolation",
+              "The oldest readings were taken before the watershed was fully settled",
+            ],
+            correctIndex: 2,
+            explanation:
+              "You are describing a size of flood you may never have observed. That is extrapolation, and it is the first of the estimate's two specific weaknesses.",
+            sourceLessonSlug: "the-lie-inside-100-year-flood",
+          },
+          {
+            prompt: "What assumption does a recurrence interval make about the watershed?",
+            options: [
+              "That the past is a guide to the future",
+              "That the channel has the same shape everywhere along its length",
+              "That no part of the watershed drains into a neighboring basin",
+              "That the gauge has been positioned where flow is representative",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It assumes stability. If the watershed has been paved, or the climate is shifting the size and timing of storms, the record describes a river that no longer exists.",
+            sourceLessonSlug: "the-lie-inside-100-year-flood",
+          },
+          {
+            prompt: "How can a recurrence interval be perfectly computed and still wrong?",
+            options: [
+              "Because the arithmetic depends on which statistical method is chosen",
+              "Because the gauge itself drifts out of calibration over decades",
+              "Because the estimate is rounded before it reaches the published map",
+              "The assumption underneath it moved",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The computation can be flawless and the answer still wrong, because the stability the estimate assumes no longer holds. That is a different kind of error from a mistake in the arithmetic.",
+            sourceLessonSlug: "the-lie-inside-100-year-flood",
+          },
+          {
+            prompt: "What is a floodplain map, according to this lesson?",
+            options: [
+              "A model output",
+              "A survey of the ground, recording where water has actually stood",
+              "A legal boundary, set by the agency that regulates building there",
+              "A forecast of where the next flood is expected to reach",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Not a fact about the ground. It is a model output, built from a record, under an assumption of stability, and it is worth knowing which of those three a disagreement is actually about.",
+            sourceLessonSlug: "the-lie-inside-100-year-flood",
+          },
+          {
+            prompt: "A town has two 100-year floods three years apart. A resident concludes the maps are worthless. What is the more careful conclusion?",
+            options: [
+              "That the maps must be recalculated with the two new events included",
+              "That the river's behavior has changed and the old record no longer applies",
+              "That two such events close together is consistent with the map being right",
+              "That the events were not really 100-year floods if two occurred so soon",
+            ],
+            correctIndex: 2,
+            explanation:
+              "It is unlikely but entirely consistent with the map being right, since each year carries an independent 1 percent chance. It is also consistent with the estimate being outdated. The event count alone cannot distinguish those, which is why you look at the record and at what has changed upstream.",
+            sourceLessonSlug: "the-lie-inside-100-year-flood",
+          },
+          {
+            prompt: "Why do engineers keep using the phrase 100-year flood despite the confusion?",
+            options: [
+              "Because federal flood maps are legally required to use that wording",
+              "Because it is short",
+              "Because no alternative phrasing has ever been proposed for it",
+              "Because the public understands it better than a percentage would be",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The engineering community has argued for years about the phrasing, and the phrase persists because it is short.",
+            sourceLessonSlug: "the-lie-inside-100-year-flood",
+          },
+          {
+            prompt: "What makes two 100-year floods in consecutive years unremarkable rather than impossible?",
+            options: [
+              "Each year carries the same independent chance",
+              "The estimate is a range, and both events could fall inside its lower end",
+              "Floods cluster because a saturated watershed responds harder to the next storm",
+              "The interval refers to an average across many rivers rather than to one",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Unlikely in the way that rolling the same number twice is unlikely, not impossible in the way that a schedule would make it. That distinction is the whole lesson.",
+            sourceLessonSlug: "the-lie-inside-100-year-flood",
+          },
+        ],
+      },
+    },
     // ── Part 2 ─────────────────────────────────────────────────────────────────────────────────
     {
       slug: "the-river-shapes-the-land",
