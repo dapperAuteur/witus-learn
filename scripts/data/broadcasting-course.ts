@@ -1709,6 +1709,257 @@ U.S. Bureau of Labor Statistics. (2024a). *Announcers and DJs*. Occupational Out
     },
 
     // ─────────────────────────────────────────────────────────────────────────
+    // SECTION 5 QUIZ
+    // ─────────────────────────────────────────────────────────────────────────
+    {
+      slug: "quiz-on-air-and-interviewing",
+      title: "Section 5 quiz · On-air & interviewing",
+      section: "Section 5 · On-air & interviewing",
+      body: `A graded check on the voice and prompter craft that separates an amateur read from a professional one, and on the three on-air jobs sports broadcasting actually asks for. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What two things is on-air work built on?",
+            options: [
+              "Voice and delivery",
+              "Appearance and confidence in front of a live camera",
+              "Preparation and the ability to work without a script",
+              "Memory and the speed at which you can recall a name",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Voice covers pace, pitch, articulation, and breath. Delivery is sounding natural while reading, often off a teleprompter.",
+            sourceLessonSlug: "voice-and-teleprompter",
+          },
+          {
+            prompt: "What does the lesson say the camera and microphone do to a performance?",
+            options: [
+              "Flatten it, so you have to push harder than feels natural",
+              "Exaggerate everything, including a rushed pace and a flat tone",
+              "Hide small errors that would be obvious in a room",
+              "Reward volume over clarity, since the mix is set afterward",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A rushed pace, a swallowed word, and a flat tone all get magnified. Trained delivery is what separates an amateur from a pro, and the lesson insists it is coachable rather than innate.",
+            sourceLessonSlug: "voice-and-teleprompter",
+          },
+          {
+            prompt: "What does breath support do?",
+            options: [
+              "Lets you hold a longer sentence before you have to pause",
+              "Raises the pitch of your voice into a more listenable range",
+              "Steadies your voice and stops you running out of air",
+              "Keeps your volume constant as you turn away from the mic",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Speaking from the diaphragm is the first of the four voice fundamentals, alongside pace, articulation, and energy.",
+            sourceLessonSlug: "voice-and-teleprompter",
+          },
+          {
+            prompt: "What does the lesson say about pace?",
+            options: [
+              "Match it to the pace of the action you are describing",
+              "Vary it constantly, since a steady pace reads as monotone",
+              "Speed up, since dead air is the worst thing on a broadcast",
+              "Slow down, because nervous speakers rush",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Nervous speakers rush. The lesson's phrase for the fix is that punctuation is permission to breathe.",
+            sourceLessonSlug: "voice-and-teleprompter",
+          },
+          {
+            prompt: "What does the lesson say about articulation?",
+            options: [
+              "Finish your consonants, because the mic will not fix mush",
+              "Slow every word equally so nothing is lost in the mix",
+              "Over-pronounce, since the compression flattens fine detail",
+              "Leave it to the audio operator, who can raise the clarity",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The microphone amplifies what you gave it. It does not repair a swallowed consonant.",
+            sourceLessonSlug: "voice-and-teleprompter",
+          },
+          {
+            prompt: "What does the lesson mean by energy?",
+            options: [
+              "Speaking louder than you would in an ordinary conversation",
+              "Lifting the read, so conversational-but-elevated beats monotone",
+              "Building intensity steadily from the top of a segment to the end",
+              "Matching the excitement of the crowd you are broadcasting from",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Conversational but elevated. Energy is the fourth voice fundamental, with breath support, pace, and articulation.",
+            sourceLessonSlug: "voice-and-teleprompter",
+          },
+          {
+            prompt: "What is the key teleprompter technique for sounding natural?",
+            options: [
+              "Memorize each line before it reaches the top of the screen",
+              "Glance away from the lens between sentences to break the stare",
+              "Read a few words ahead of the scroll",
+              "Ask the operator to scroll slightly faster than you would speak",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Reading ahead is what makes delivery sound like thinking rather than reading.",
+            sourceLessonSlug: "voice-and-teleprompter",
+          },
+          {
+            prompt: "Who matches whom, between a presenter and a prompter operator?",
+            options: [
+              "The presenter matches the scroll, which runs at a set rate",
+              "Both adjust continuously until they settle at a shared pace",
+              "The operator sets the pace, and the presenter is coached to it",
+              "The operator matches the scroll to the presenter's natural pace",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Never the other way around. A presenter chasing a scroll is exactly what produces the robotic read the lesson is trying to fix.",
+            sourceLessonSlug: "voice-and-teleprompter",
+          },
+          {
+            prompt: "What does the lesson tell you to mark on your script?",
+            options: [
+              "Emphasis and breaths",
+              "The timing of each paragraph against the clock",
+              "The words that the prompter is likely to misspell",
+              "The moments where a graphic is due to appear on screen",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Marking breath points, as the coached anchor in the example does with slashes, is part of what turns a recitation into a conversation within a week.",
+            sourceLessonSlug: "voice-and-teleprompter",
+          },
+          {
+            prompt: "What does the play-by-play announcer supply?",
+            options: [
+              "The analysis and the context behind each play",
+              "The description of the action: the what and the when",
+              "The statistics that appear on screen during the broadcast",
+              "The interviews conducted between periods of play",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Play-by-play describes the action. Color adds the why. Both are announcer roles under the same labor classification.",
+            sourceLessonSlug: "play-by-play-and-interviewing",
+          },
+          {
+            prompt: "What does the color commentator supply?",
+            options: [
+              "The score and the situation at regular intervals",
+              "The continuous description that a radio listener depends on",
+              "Analysis, context, and story: the why",
+              "The transition into and out of each commercial break",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Color explains rather than describes: why the play worked, what the adjustment is.",
+            sourceLessonSlug: "play-by-play-and-interviewing",
+          },
+          {
+            prompt: "What is the play-by-play rule for a listener who cannot see?",
+            options: [
+              "Speak more slowly than you would for a television audience",
+              "Describe the crowd, so the atmosphere carries the moment",
+              "Repeat each call twice, in case the first was missed",
+              "If you do not say it, it did not happen",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Score, time, down, count, who has the ball. On radio especially, anything you leave out simply does not exist for the audience.",
+            sourceLessonSlug: "play-by-play-and-interviewing",
+          },
+          {
+            prompt: "What is the set-the-picture rule?",
+            options: [
+              "Location and situation first, emotion on the payoff",
+              "Emotion first, since it is what holds an audience through a play",
+              "Describe the frame the viewer is seeing before anything else",
+              "Establish the venue at the top of every segment of the broadcast",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Where and what, then the reaction when the play resolves. Reversing the order spends the emotion before the audience knows what it is for.",
+            sourceLessonSlug: "play-by-play-and-interviewing",
+          },
+          {
+            prompt: "Why does the lesson say to give the score often?",
+            options: [
+              "Because the on-screen graphic is not always visible to viewers",
+              "Because it fills dead air between plays without adding analysis",
+              "Viewers and listeners join late",
+              "Because the score changes more often than most announcers assume",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Someone is always arriving partway through, and the practical drill asks you to give the score at least twice in five minutes.",
+            sourceLessonSlug: "play-by-play-and-interviewing",
+          },
+          {
+            prompt: "What is the color commentator's rule about timing?",
+            options: [
+              "Speak only when the play-by-play announcer invites a comment",
+              "Talk between the action, not over it",
+              "Fill every gap, since silence reads as a technical fault",
+              "Keep each observation under ten seconds regardless of the moment",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Stay out of the play-by-play's way. The two voices have separate jobs and separate windows.",
+            sourceLessonSlug: "play-by-play-and-interviewing",
+          },
+          {
+            prompt: "What kind of interview question does the lesson want?",
+            options: [
+              "A question that can be answered in a single sentence for the edit",
+              "A question that offers the subject two options to choose between",
+              "A question whose answer you can already predict from the game",
+              "An open-ended one, such as walk me through that final drive",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Open-ended beats closed. Were you happy is a question that can be answered in one word, which is the failure the drill asks you to listen back for.",
+            sourceLessonSlug: "play-by-play-and-interviewing",
+          },
+          {
+            prompt: "What does the lesson call the best question in an interview?",
+            options: [
+              "The one their last answer suggested",
+              "The one you prepared that nobody else in the room thought of",
+              "The one that gets the shortest usable clip for the highlight",
+              "The one that puts the subject most at ease at the start",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Listen and follow up. The prepared list matters less than hearing what they just said.",
+            sourceLessonSlug: "play-by-play-and-interviewing",
+          },
+          {
+            prompt: "What is the classic play-by-play drill?",
+            options: [
+              "Record a scripted call of a game you have already watched",
+              "Mute a televised game and call it yourself",
+              "Shadow a working announcer through a full broadcast",
+              "Read a completed box score aloud as if it were live",
+            ],
+            correctIndex: 1,
+            explanation:
+              "You learn to fill, to give the score, and to react to the play, all without a net. Pair it with a mock interview using only open-ended questions.",
+            sourceLessonSlug: "play-by-play-and-interviewing",
+          },
+        ],
+      },
+    },
+
+    // ─────────────────────────────────────────────────────────────────────────
     // SECTION 6: Sports-specific workflows
     // ─────────────────────────────────────────────────────────────────────────
     {
