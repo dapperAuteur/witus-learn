@@ -457,6 +457,410 @@ A reliable pattern that stacks these moves:
 - National Institute of Standards and Technology. (2023). AI Risk Management Framework (AI RMF 1.0): "Valid and Reliable." https://www.nist.gov/itl/ai-risk-management-framework`,
     },
 
+    {
+      slug: "quiz-showing-what-good-looks-like",
+      title: "Section 2 knowledge check · Showing the model what good looks like",
+      section: "Showing the model what good looks like",
+      body: `A graded check on few-shot examples, step-by-step reasoning, and the two moves that make an answer checkable: asking for sources and asking the model to critique itself. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is few-shot prompting?",
+            options: [
+              "Sending several short prompts instead of one long one",
+              "Putting example answers in the prompt",
+              "Asking the model to generate its own examples before answering",
+              "Limiting the model to a few sentences of output at a time",
+            ],
+            correctIndex: 1,
+            explanation:
+              "One example is one-shot, a few are few-shot, none is zero-shot. You do not need the jargon to use it, only the instinct behind it.",
+            sourceLessonSlug: "examples-few-shot",
+          },
+          {
+            prompt: "What does the lesson call a prompt that carries no examples at all?",
+            options: [
+              "Cold prompting, since the model has nothing to warm up on",
+              "Zero-shot",
+              "Direct prompting, since the instruction goes straight to the task",
+              "Open prompting, since the output shape is left unconstrained",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Most prompting most people do is zero-shot. The point of naming it is to notice that adding one example is a move available to you.",
+            sourceLessonSlug: "examples-few-shot",
+          },
+          {
+            prompt: "Why does showing an example work so well?",
+            options: [
+              "An example is treated as a rule the model is not allowed to break",
+              "Examples are stored separately from the rest of the prompt text",
+              "The model is a pattern-matcher",
+              "The model was trained mostly on question and answer pairs",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A clear example is a pattern it can lock onto, often more precisely than a paragraph of instructions describing the same thing.",
+            sourceLessonSlug: "examples-few-shot",
+          },
+          {
+            prompt: "When does the lesson say to reach for an example instead of a description?",
+            options: [
+              "When the topic falls outside the model's training data",
+              "When the answer needs to run longer than a few paragraphs",
+              "When you have already tried rewording the instruction twice",
+              "When the shape is hard to describe",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Finicky formats are the clearest case. If you would struggle to write the rule in prose, showing one done correctly is faster and more precise.",
+            sourceLessonSlug: "examples-few-shot",
+          },
+          {
+            prompt: "Which job does the lesson name as one examples are good at?",
+            options: [
+              "Edge-case handling",
+              "Making the model's factual claims more reliable overall",
+              "Reducing the amount of context a prompt has to carry",
+              "Getting the model to admit when it does not know something",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Show how you want an unusual input treated, such as writing \"date: unknown\" when a date is missing, and the model handles the rest the same way.",
+            sourceLessonSlug: "examples-few-shot",
+          },
+          {
+            prompt: "How does the lesson suggest making \"what counts as urgent\" concrete for a classification task?",
+            options: [
+              "Define the word urgent in a sentence at the top of the prompt",
+              "Ask the model to propose a definition and then confirm it",
+              "List every word that should never be classified as urgent",
+              "Give labeled examples",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Two or three labeled examples make the boundary concrete instead of leaving the model to guess where you would draw it.",
+            sourceLessonSlug: "examples-few-shot",
+          },
+          {
+            prompt: "What does the lesson warn that your examples also teach the model?",
+            options: [
+              "Their mistakes",
+              "The order the model should work through the inputs in",
+              "The level of confidence the answer should be stated with",
+              "The number of items the finished answer should contain",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A sloppy or biased example produces sloppy, biased output, because the model is copying the pattern rather than judging it. Pick examples you would be proud of.",
+            sourceLessonSlug: "examples-few-shot",
+          },
+          {
+            prompt: "What can a good example still not do for you?",
+            options: [
+              "Set the tone or the voice the answer is written in",
+              "Show the model how an unusual input should be treated",
+              "Make a claim true",
+              "Fix the shape of an output you struggled to describe",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Demonstrating a format is powerful. Demonstrating a claim verifies nothing, so sourcing and verification remain your job either way.",
+            sourceLessonSlug: "examples-few-shot",
+          },
+          {
+            prompt: "The lesson turns \"Call the dentist sometime\" into \"Call the dentist, schedule a cleaning, by Friday.\" What is that example for?",
+            options: [
+              "Showing that short notes must be expanded into full sentences",
+              "Showing the output format",
+              "Showing that the model should sort the notes by urgency first",
+              "Showing that a note without a verb cannot be turned into a task",
+            ],
+            correctIndex: 1,
+            explanation:
+              "One input paired with one output done right, so the remaining notes follow the same shape. Describing that shape in prose would take longer and land less precisely.",
+            sourceLessonSlug: "examples-few-shot",
+          },
+          {
+            prompt: "What does a sloppy example get you?",
+            options: [
+              "An error message asking you to supply a cleaner sample",
+              "An answer that ignores the example and follows the prose instead",
+              "Sloppy output",
+              "A model that averages the example against your instructions",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The example is the pattern. Nothing in the system inspects it for quality first, which is why the caution is worth stating at all.",
+            sourceLessonSlug: "examples-few-shot",
+          },
+          {
+            prompt: "What is chain-of-thought prompting?",
+            options: [
+              "Breaking one request into a series of separate messages",
+              "Asking for the steps before the answer",
+              "Having the model answer, then asking it to justify itself",
+              "Feeding the model's own answer back in as the next prompt",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Work through it step by step, then state the conclusion. The steps come first, which is what stops the model leaping to a plausible ending.",
+            sourceLessonSlug: "chain-of-thought",
+          },
+          {
+            prompt: "What did Wei et al. (2022) find about generating intermediate reasoning steps?",
+            options: [
+              "It makes answers longer without changing how often they are right",
+              "It helps with commonsense questions but not with arithmetic ones",
+              "It removes the need to verify the conclusion the model reaches",
+              "It substantially improves performance",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The study measured gains on arithmetic, commonsense and logic tasks. The improvement is real, which is separate from whether any single answer is true.",
+            sourceLessonSlug: "chain-of-thought",
+          },
+          {
+            prompt: "Which phrasing does the lesson give for triggering step-by-step reasoning?",
+            options: [
+              "Answer only if you are completely certain of the result",
+              "Think it through step by step",
+              "Consider every possible interpretation of my question first",
+              "Use the most reliable method available for this kind of problem",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Plain language is enough. \"Show your reasoning, then state the conclusion on its own line\" does the same job.",
+            sourceLessonSlug: "chain-of-thought",
+          },
+          {
+            prompt: "What is the first payoff of asking a model to reason step by step?",
+            options: [
+              "The model consults outside references while it works",
+              "The answer comes back in a format easier to paste elsewhere",
+              "Fewer careless leaps",
+              "The model reports how confident it is in each conclusion",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Forcing the steps on a multi-step problem stops the model skipping from the question straight to a plausible-looking ending.",
+            sourceLessonSlug: "chain-of-thought",
+          },
+          {
+            prompt: "Which of the two payoffs does this course care about most?",
+            options: [
+              "A checkable trail",
+              "The higher accuracy that the 2022 study measured",
+              "The gentler pace at which the explanation unfolds",
+              "The wider range of problems the model will attempt",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Showing the work is what makes an answer inspectable, and inspectable is what makes it trustworthy. The accuracy gain is a bonus on top.",
+            sourceLessonSlug: "chain-of-thought",
+          },
+          {
+            prompt: "What can you do with visible reasoning that a bare answer never allows?",
+            options: [
+              "Confirm the model consulted more than one source",
+              "Measure how long the model spent on the problem",
+              "Check that the model followed your format instructions",
+              "Find the step that went wrong",
+            ],
+            correctIndex: 3,
+            explanation:
+              "With a bare answer you can only judge the conclusion. With the steps you can point at the exact line where it broke and fix your prompt there.",
+            sourceLessonSlug: "chain-of-thought",
+          },
+          {
+            prompt: "What word does the lesson use for what showing the work makes an answer?",
+            options: [
+              "Reproducible, meaning the same prompt returns the same result",
+              "Attributable, meaning each claim can be traced to a source",
+              "Inspectable",
+              "Deterministic, meaning the reasoning follows fixed rules",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Inspectable, and inspectable is what makes it trustworthy. The trust comes from your ability to look, not from the model's confidence.",
+            sourceLessonSlug: "chain-of-thought",
+          },
+          {
+            prompt: "Why is a tidy chain of reasoning still not proof of the conclusion?",
+            options: [
+              "The steps are generated text too",
+              "The model shortens the steps to fit the length you asked for",
+              "The model omits any step it judges too technical to explain",
+              "The model is not allowed to show more than a few steps at once",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The reasoning is predicted reasoning-shaped text. It can be neat, confident, wrong, and it need not reflect how the model actually arrived anywhere.",
+            sourceLessonSlug: "chain-of-thought",
+          },
+          {
+            prompt: "For which kind of task does the lesson recommend step-by-step reasoning?",
+            options: [
+              "Any request where the answer must be verified afterwards",
+              "Any question whose answer depends on recent information",
+              "Anything with steps",
+              "Any task where the output format is difficult to describe",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A math or logic problem, a multi-part decision, a compare-these-options question. Where there are no steps there is nothing to make visible.",
+            sourceLessonSlug: "chain-of-thought",
+          },
+          {
+            prompt: "Asking for reasoning makes an answer easier to check. What does the lesson say it does not guarantee?",
+            options: [
+              "That the model will follow the format you requested",
+              "That every step will be written in plain language",
+              "That the same question will get the same steps twice",
+              "That the answer is true",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Easier to check is not the same as correct. The reasoning is a tool for you to verify with, never a guarantee that saves you the verifying.",
+            sourceLessonSlug: "chain-of-thought",
+          },
+          {
+            prompt: "What does adding \"for each factual claim, name the source you would check\" accomplish?",
+            options: [
+              "It gives you a list to verify",
+              "It restricts the model to claims it can prove are true",
+              "It makes the model search the web before it answers",
+              "It removes any claim the model cannot attach a source to",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It also nudges the model toward claims it can ground. Both effects are useful and neither one confirms anything on its own.",
+            sourceLessonSlug: "ask-for-sources-and-self-checks",
+          },
+          {
+            prompt: "What does the lesson say a request for sources actually produces?",
+            options: [
+              "Verified references drawn from a checked bibliography",
+              "A confidence estimate attached to each factual statement",
+              "Leads",
+              "The subset of claims the model is willing to stand behind",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The prompt produces leads and you do the confirming. Treating the list as finished work is the exact mistake the habit is meant to prevent.",
+            sourceLessonSlug: "ask-for-sources-and-self-checks",
+          },
+          {
+            prompt: "What can a model invent that looks completely real?",
+            options: [
+              "The date on which it last updated its knowledge",
+              "URLs, DOIs, and case names",
+              "A record of which tool it used to check a claim",
+              "A note admitting that a source could not be located",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A source you did not open is not a source. The reference is itself a claim, and it is the one people are most likely to accept unchecked.",
+            sourceLessonSlug: "ask-for-sources-and-self-checks",
+          },
+          {
+            prompt: "Why is asking a model to critique its own work worth doing at all?",
+            options: [
+              "A second pass gives the model access to more context",
+              "Reviewing text costs less computation than writing it",
+              "They critique better than they draft",
+              "The model compares its answer against its training data",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Models are often better at finding a fault in an answer than at producing a flawless one first try, so the review pass is not wasted effort.",
+            sourceLessonSlug: "ask-for-sources-and-self-checks",
+          },
+          {
+            prompt: "Which of these is a self-check prompt the lesson gives?",
+            options: [
+              "Explain the answer again using simpler vocabulary",
+              "Give me a second answer written from another angle",
+              "Tell me which part of my question was most ambiguous",
+              "List what could make this wrong",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Asked before the answer, it makes the model surface the failure modes first. Rating confidence per claim and naming what to check independently do similar work.",
+            sourceLessonSlug: "ask-for-sources-and-self-checks",
+          },
+          {
+            prompt: "What does the lesson warn a self-check can also do?",
+            options: [
+              "Bless a wrong answer",
+              "Discard a correct answer that looked uncertain to it",
+              "Replace the original answer with a shorter, vaguer one",
+              "Report an error rate calculated from its own past output",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Asking \"are you sure?\" sometimes fixes a mistake and sometimes produces a confident defense of the same mistake, in the same tone either way.",
+            sourceLessonSlug: "ask-for-sources-and-self-checks",
+          },
+          {
+            prompt: "How does the lesson describe what self-checking achieves?",
+            options: [
+              "It removes the need to open the sources yourself",
+              "It raises the floor",
+              "It turns a draft into something ready to publish",
+              "It gives you a reliable measure of the error rate",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It catches some mistakes, which is worth having. It does not replace you as the verifier, which is the part no prompt can delegate.",
+            sourceLessonSlug: "ask-for-sources-and-self-checks",
+          },
+          {
+            prompt: "\"Ask for sources\" is half the job. What is the other half, the half that is on you?",
+            options: [
+              "Choosing which of them the model should prioritize",
+              "Telling the model which sources you already trust",
+              "Opening them",
+              "Asking the model to rank them by how reliable they are",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Open each one and confirm it says what is claimed. Every step that stays inside the conversation is a step the model could have fabricated.",
+            sourceLessonSlug: "ask-for-sources-and-self-checks",
+          },
+          {
+            prompt: "The stacking pattern asks for the answer, then a separate section with three things. What is the third?",
+            options: [
+              "A shorter version of the answer for quick reference",
+              "The steps the model took to reach its conclusion",
+              "A rating of how difficult the question was to answer",
+              "What could make this wrong",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Sources to check, anything it is unsure about, and what could make the answer wrong. The three together turn one reply into a to-do list for you.",
+            sourceLessonSlug: "ask-for-sources-and-self-checks",
+          },
+          {
+            prompt: "What other name does the lesson give for asking a model to review its own answer?",
+            options: [
+              "Self-critique",
+              "Back-propagation, borrowed from how the model was trained",
+              "Cross-validation, borrowed from statistical model testing",
+              "Recursion, since the model is being applied to its own output",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Self-critique, or asking it to reflect. The name matters less than remembering it raises the floor rather than removing the need to check.",
+            sourceLessonSlug: "ask-for-sources-and-self-checks",
+          },
+        ],
+      },
+    },
+
     // ── Section 3 · Iterating, constraining, and knowing the limits ───────────
     {
       slug: "iterate-the-prompt-debug-loop",
