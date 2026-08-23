@@ -1365,6 +1365,270 @@ National Association of Broadcasters. (n.d.). *About NAB*. https://www.nab.org/`
     },
 
     // ─────────────────────────────────────────────────────────────────────────
+    // SECTION 4 QUIZ
+    // ─────────────────────────────────────────────────────────────────────────
+    {
+      slug: "quiz-live-production-and-streaming",
+      title: "Section 4 quiz · Live production & streaming basics",
+      section: "Section 4 · Live production & streaming basics",
+      body: `A graded check on who does what in a control room, and on how a finished show actually reaches an audience over the air or over the internet. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What sits at the heart of a control room?",
+            options: [
+              "The video switcher",
+              "The audio mixer, since sound is the harder half of a live show",
+              "The graphics system, which everything else is built around",
+              "The encoder, which decides how the show reaches the audience",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The switcher, also called the vision mixer, cuts between cameras and sources on the director's call. Graphics, replay, and audio sit around it.",
+            sourceLessonSlug: "the-switcher-and-control-room",
+          },
+          {
+            prompt: "Who physically operates the switcher?",
+            options: [
+              "The director, who is calling the shots as they happen",
+              "The producer, who is responsible for the show's content",
+              "The technical director",
+              "The broadcast engineer, who maintains the equipment",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The director calls the shots and the technical director operates the switcher. Separating the call from the hands is what makes a live cut repeatable under pressure.",
+            sourceLessonSlug: "the-switcher-and-control-room",
+          },
+          {
+            prompt: "What does the producer run?",
+            options: [
+              "The equipment that captures and transmits the signal",
+              "The camera assignments for each segment of the show",
+              "The graphics that appear over the live picture",
+              "The show's content and timing",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The producer decides content; the director calls the shots; the technical director operates the switcher. Three distinct jobs that people outside the room routinely confuse.",
+            sourceLessonSlug: "the-switcher-and-control-room",
+          },
+          {
+            prompt: "What does the switcher do besides cutting between sources?",
+            options: [
+              "Records each camera separately for later editing",
+              "Dissolves and keys, including keying graphics over live video",
+              "Balances the audio levels of each incoming feed",
+              "Compresses the outgoing signal for transmission",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Cuts, dissolves, and keys between sources, and keys the graphics over live video. That last function is what connects it to the CG operator.",
+            sourceLessonSlug: "the-switcher-and-control-room",
+          },
+          {
+            prompt: "What does the graphics operator build and trigger?",
+            options: [
+              "The rundown that sets the order of segments in the show",
+              "The camera positions marked out before the event begins",
+              "The scorebug, lower-thirds, and stats",
+              "The captions required for the show's online distribution",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The CG operator builds and triggers the on-screen graphics so the technical director can key them over the live picture.",
+            sourceLessonSlug: "the-switcher-and-control-room",
+          },
+          {
+            prompt: "What does the replay operator do?",
+            options: [
+              "Cuts the highlight package that airs after the game finishes",
+              "Marks and plays back key moments",
+              "Stores every camera feed for the archive after the broadcast",
+              "Reviews contested calls on behalf of the officials",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Marking and playing back key moments, which the sports workflows section covers in more detail.",
+            sourceLessonSlug: "the-switcher-and-control-room",
+          },
+          {
+            prompt: "In the touchdown example, what happens after the director calls graphic up, replay ready?",
+            options: [
+              "The director cuts to the wide shot and holds it through the celebration",
+              "The producer decides whether the moment is worth a replay at all",
+              "The engineer confirms the outgoing signal is still stable",
+              "The CG operator pushes the score, the TD keys it, and replay queues the play",
+            ],
+            correctIndex: 3,
+            explanation:
+              "A dozen people, one smooth moment. Knowing who does which part is what lets you slot into the room.",
+            sourceLessonSlug: "the-switcher-and-control-room",
+          },
+          {
+            prompt: "Why does the lesson say even camera and utility roles need to understand the control room?",
+            options: [
+              "Because every crew member rotates through the room at some point",
+              "Because the room decides which cameras are called on for each play",
+              "They need to know how their feed reaches air",
+              "Because control-room roles pay better than field roles do",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Understanding the room lets you slot into it, and knowing where your own feed goes is part of doing the field job properly.",
+            sourceLessonSlug: "the-switcher-and-control-room",
+          },
+          {
+            prompt: "What does the practical drill in this lesson ask you to do?",
+            options: [
+              "Visit a control room during a live broadcast and observe the roles",
+              "Wire two video sources into a free software switcher and cut between them",
+              "Draw the room's layout from memory and label every position in it",
+              "Write the camera assignments for a show you have watched",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Two sources, clean cuts on cue, and a lower-third graphic added. The lesson's point is that you have just run a control room, on a laptop.",
+            sourceLessonSlug: "the-switcher-and-control-room",
+          },
+          {
+            prompt: "What does encoding do?",
+            options: [
+              "Compresses your video into a format the internet can carry",
+              "Encrypts the feed so only paying viewers can decode it",
+              "Converts the signal into the format a transmitter requires",
+              "Adds the captions that accessibility requirements call for",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Encoding compresses; streaming then pushes the compressed feed to a platform or CDN for viewers.",
+            sourceLessonSlug: "encoding-and-streaming",
+          },
+          {
+            prompt: "Why is social and stream operations one of the fastest-growing entry lanes?",
+            options: [
+              "Because the roles require no equipment beyond a laptop to learn",
+              "Because stations are required to stream every broadcast they air",
+              "Audiences have moved online, and the skills are learnable on a laptop",
+              "Because the existing technical staff generally refuse the work",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Encoders, bitrates, protocols, and captions can all be practiced without a truck, and the demand is growing because that is where the audience went.",
+            sourceLessonSlug: "encoding-and-streaming",
+          },
+          {
+            prompt: "What does bitrate trade off against?",
+            options: [
+              "Latency, since a higher bitrate takes longer to reach the viewer",
+              "Upload bandwidth, since higher looks better but needs more of it",
+              "Compatibility, since higher bitrates exclude older devices",
+              "Caption accuracy, since higher bitrates leave less room for text",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Higher bitrate and resolution look better but need more upload bandwidth, so you match them to the connection you actually have.",
+            sourceLessonSlug: "encoding-and-streaming",
+          },
+          {
+            prompt: "Which protocol does the lesson name as the common streaming protocol?",
+            options: [
+              "SRT, which was designed specifically for broadcast contribution",
+              "RTMP",
+              "HLS, which every browser supports without a plugin",
+              "RTSP, which is used by most security camera systems",
+            ],
+            correctIndex: 1,
+            explanation:
+              "RTMP is the common one. SRT is the one favored for unreliable networks.",
+            sourceLessonSlug: "encoding-and-streaming",
+          },
+          {
+            prompt: "Which protocol is favored for unreliable networks?",
+            options: [
+              "RTMP, which retries automatically when a packet is dropped",
+              "Whichever the destination platform specifies, since it varies",
+              "None; an unreliable network requires a hardware encoder instead",
+              "SRT",
+            ],
+            correctIndex: 3,
+            explanation:
+              "SRT is the choice when the connection cannot be relied on, which on a remote sports feed is most of the time.",
+            sourceLessonSlug: "encoding-and-streaming",
+          },
+          {
+            prompt: "How does the lesson describe captions and accessibility?",
+            options: [
+              "A professional requirement, not an extra",
+              "A feature to add once the stream is running reliably",
+              "A requirement for over-the-air broadcast but optional online",
+              "Something the platform generates, so not the operator's concern",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Not an extra. It is listed among the streaming basics alongside encoders, bitrates, and protocols.",
+            sourceLessonSlug: "encoding-and-streaming",
+          },
+          {
+            prompt: "What does the FCC do?",
+            options: [
+              "Sets the technical standards that broadcast equipment must meet",
+              "Certifies the engineers who operate transmission equipment",
+              "Licenses broadcast stations and manages the spectrum they use",
+              "Publishes the labor data that this course's second lesson relies on",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Anything transmitted over the public airwaves is regulated by the FCC, which licenses stations, assigns spectrum, and sets rules broadcasters must follow.",
+            sourceLessonSlug: "encoding-and-streaming",
+          },
+          {
+            prompt: "Which FCC rule does the lesson name specifically for TV programming?",
+            options: [
+              "Limits on how much advertising may run in a given hour",
+              "Requirements covering the technical quality of the transmitted signal",
+              "Rules governing which events may be carried exclusively",
+              "Closed-captioning requirements",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Broadcasters must follow FCC rules, and closed captioning for TV programming is the one this lesson names.",
+            sourceLessonSlug: "encoding-and-streaming",
+          },
+          {
+            prompt: "What does the lesson say about individual FCC operator permits today?",
+            options: [
+              "Most technical work is governed by the station's license rather than a permit",
+              "Every technician operating transmission equipment still needs one",
+              "They were replaced by certification from the engineers' professional body",
+              "They apply only to streaming operators rather than to transmitter staff",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Certain equipment operators historically needed permits. Today most technical work runs under the station's FCC license, but knowing the FCC exists and why is part of being a credible professional.",
+            sourceLessonSlug: "encoding-and-streaming",
+          },
+          {
+            prompt: "In the lesson's example, what does the stream operator do besides setting the output?",
+            options: [
+              "Files the stream's technical details with the licensing authority",
+              "Enables captions and monitors dropped frames",
+              "Records a backup copy locally in case the stream drops entirely",
+              "Adjusts the bitrate upward whenever the picture softens",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Accessibility and stream health are both part of the job, which is why the drill ends with turning captions on and watching the dropped-frame indicator.",
+            sourceLessonSlug: "encoding-and-streaming",
+          },
+        ],
+      },
+    },
+
+    // ─────────────────────────────────────────────────────────────────────────
     // SECTION 5: On-air & interviewing
     // ─────────────────────────────────────────────────────────────────────────
     {
