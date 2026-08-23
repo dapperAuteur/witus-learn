@@ -1093,5 +1093,543 @@ State Historical Society of Missouri. (n.d.). *Annie Turnbo Malone*. Historic Mi
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3 — The Matilda effect: credit with a destination
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "rossiter-and-the-matilda-effect",
+      title: "9 · Rossiter names the second mechanism",
+      section: "Section 3 · The Matilda effect",
+      body: `Twenty five years after Merton, the historian of science Margaret W. Rossiter published a paper naming a second mechanism, and named it deliberately in reference to his (Rossiter, 1993).
+
+**The claim.** The Matilda effect is the systematic under-recognition of women in science: their contributions denied, and their work repeatedly attributed to male colleagues. Rossiter opened by quoting the same Gospel line Merton had used, so a reader would see that this is the Matthew effect with something added rather than a rival to it.
+
+**Whom it is named for.** Matilda Joslyn Gage (1826 to 1898) was an American suffragist and abolitionist who wrote "Woman as an Inventor," first circulated as a tract in 1870 and published in the *North American Review* in May 1883 (Gage, 1883). Gage's opening observation is the one worth carrying: no assertion about woman is more common than that she has no inventive or mechanical genius, and even the United States census failed to count her among the country's inventors. She then listed women who had in fact invented things. Rossiter's title honors a woman who had made the same argument a hundred and ten years earlier and been forgotten for it, which is the effect performing on the person it is named for.
+
+**The cases Rossiter worked with.** Trotula of Salerno, a twelfth century physician whose works were later attributed to male authors. Nettie Stevens on chromosomal sex determination. Lise Meitner on nuclear fission. Marietta Blau on photographic methods in nuclear physics. Rosalind Franklin. Jocelyn Bell Burnell on pulsars. The list spans eight centuries, which is part of the argument: a pattern this durable is not a run of bad luck.
+
+**Why this is not simply Matthew with a gender attached.** This course reads the difference as a **destination**. The Matthew effect says credit runs uphill toward eminence, and eminence is something anyone can lack. The Matilda effect adds a routing rule: the credit does not merely leave the woman, it arrives somewhere specific, at a male colleague. That is a stronger and more checkable claim, because it predicts *where* to look. If the mechanism is real, the credit is not floating loose in the literature. It is sitting on a name, and you can go and read the name.
+
+**The two run together.** A junior woman working with a senior man is exposed to both at once: Matthew because he is eminent, Matilda because he is the male colleague. Treating them as one effect makes the case look overdetermined and unfalsifiable. Keeping them separate lets you ask which one the evidence in a particular case actually supports, which is the discipline lesson 2 asked for.
+
+:::reveal State the Matilda effect, and say what Rossiter added to Merton's account. ||| The systematic under-recognition of women in science, with their contributions denied and repeatedly attributed to male colleagues. Rossiter added a destination: the credit does not merely leave the woman, it arrives at a specific male colleague.
+
+:::reveal Who was Matilda Joslyn Gage, and why is naming the effect for her part of the argument? ||| An American suffragist and abolitionist (1826 to 1898) whose essay "Woman as an Inventor" appeared in the North American Review in 1883, listing women who had invented things. She had made the argument a hundred and ten years earlier and been forgotten for it, so the effect had already operated on her.
+
+:::reveal Why does this course keep the Matthew and Matilda effects separate rather than merging them? ||| Because a junior woman with a senior man is exposed to both, and merging them makes any such case look overdetermined and unfalsifiable. Kept apart, you can ask which one the evidence in this particular case supports.
+
+## Vocabulary
+- **Matilda effect**: the systematic under-recognition of women in science, with their contributions attributed to male colleagues, named by Rossiter in 1993.
+- **Destination**: this course's term for what Matilda adds to Matthew, namely that the credit arrives at a specific person rather than merely departing.
+- **Overdetermined**: explained by so many mechanisms at once that no evidence could distinguish among them, which is what merging the two effects would produce.
+- **Woman as an Inventor**: Gage's 1870 tract, published in the North American Review in 1883, which the 1993 paper's title honors.
+
+## Sources
+Gage, M. J. (1883). Woman as an inventor. *The North American Review, 136*(318), 478-489. https://www.jstor.org/stable/25118273
+
+Rossiter, M. W. (1993). The Matthew Matilda effect in science. *Social Studies of Science, 23*(2), 325-341. https://doi.org/10.1177/030631293023002004`,
+    },
+    {
+      slug: "matilda-measured",
+      title: "10 · What the award data show, and what they do not",
+      section: "Section 3 · The Matilda effect",
+      body: `Rossiter's evidence was historical cases. Nineteen years later a team counted prizes instead, and the counting design is worth learning independently of the result (Lincoln et al., 2012).
+
+**What they did.** They took the awards given by thirteen disciplinary societies in science, technology, engineering and medicine, over the twenty years from 1991 to 2010, and sorted them by what the award was *for*: scholarship, service, or teaching.
+
+**What they found.** In the decade from 2000 to 2010, women won 10 percent of the research based awards, 32.2 percent of the service awards, and 37.1 percent of the teaching awards. Across the full twenty years the number of awards going to women rose by 78.5 percent, and the gap in scholarly recognition nevertheless got worse in the second decade rather than better. The authors' own reading is that women are honored roughly twice as often for service as for scholarship, and they connect that to a tacit assumption that a scientist and a rigorous scholar is a man.
+
+**Why the design is the strong part.** A bare figure like "women won 10 percent of research awards" invites an obvious objection: perhaps 10 percent is the share of eligible senior women. That objection is exactly why the comparison across award *types* matters. The same societies, in the same years, drawing from the same membership, gave women a third of the service awards and a third of the teaching awards. Whatever the eligible pool was, it was the same pool for all three categories. The gap between 10 and 32.2 is therefore not a pool effect; it is a difference in what women were being recognized *for*.
+
+**What the study does not establish.** It is observational, not experimental: nobody randomized who got nominated. It measures thirteen societies, not all of science. It reports shares of awards, not the quality of the work behind them, and it cannot tell you about any individual award. And a share can move for reasons that have nothing to do with bias, which is why the internal comparison across categories is doing the work rather than the headline number.
+
+**How to say it accurately.** Not "women are 90 percent less likely to win a science prize," which the study does not support. Say instead: across thirteen STEM societies from 2000 to 2010, women took about a tenth of the awards for scholarship and about a third of the awards for service and teaching. That sentence survives an argument. The looser one does not, and losing it costs you the true thing standing beside it.
+
+:::reveal What exactly did Lincoln and colleagues count, and over what period? ||| Awards from thirteen disciplinary societies in science, technology, engineering and medicine, from 1991 to 2010, sorted by whether the award was for scholarship, service, or teaching.
+
+:::reveal Give the three percentages for 2000 to 2010 and say which comparison carries the argument. ||| Women won 10 percent of research based awards, 32.2 percent of service awards, and 37.1 percent of teaching awards. The comparison ACROSS categories carries it, because the eligible pool is the same for all three, so the gap is about what women were recognized for.
+
+:::reveal Name two things this study cannot establish. ||| It is observational rather than experimental, so nobody randomized nominations; it covers thirteen societies rather than all of science; it reports shares rather than the quality of work; and it says nothing about any individual award.
+
+## Vocabulary
+- **Eligible pool**: the set of people who could have won, the usual objection to any bare share, and the reason the across-category comparison matters here.
+- **Internal comparison**: setting two categories from the same source against each other so shared confounders cancel, which is the design's strength.
+- **Observational study**: one where nobody assigned the treatment, so it can establish a pattern but not an experimental cause.
+- **Overclaim**: restating a finding in a stronger form than the design supports, which loses the argument and the true material beside it.
+
+## Sources
+Lincoln, A. E., Pincus, S., Koster, J. B., & Leboy, P. S. (2012). The Matilda effect in science: Awards and prizes in the US, 1990s and 2000s. *Social Studies of Science, 42*(2), 307-320. https://doi.org/10.1177/0306312711435830`,
+    },
+    {
+      slug: "pauli-murray-the-argument-before-the-case",
+      title: "11 · Pauli Murray, and the argument that arrived before the case",
+      section: "Section 3 · The Matilda effect",
+      body: `Pauli Murray was born in Baltimore on 20 November 1910 and died in Pittsburgh on 1 July 1985. This lesson uses s/he, their, and they/them, following the practice of the Pauli Murray Center, which bases it on Murray's own papers: through the 1930s Murray repeatedly asked physicians for hormone therapy and for exploratory surgery, and was refused (Pauli Murray Center, n.d.). That is a self-documented record, which is what rule one requires, and it is the only identity claim in this course.
+
+**Jane Crow.** Murray coined the term at Howard Law School for the specific position of a Black person perceived as a woman: shut out of one movement by race and out of the other by sex, and therefore invisible to both (Pauli Murray Center, n.d.). Naming a mechanism is itself a credit act. It gives later people something to cite.
+
+**The argument, in 1944.** In a Howard seminar Murray argued that the way to end segregation was to attack *separate* itself, on Thirteenth and Fourteenth Amendment grounds, rather than to keep proving that particular separate facilities were unequal. The professor, Spottswood Robinson, kept the paper, and referred to it a decade later when he and the NAACP were preparing *Brown v. Board of Education* (American Civil Liberties Union, n.d.). Murray graduated at the top of that class.
+
+**The reference work, in 1950 or 1951.** Murray compiled and edited *States' Laws on Race and Color* for the Woman's Division of Christian Service of the Methodist Church: 746 pages cataloguing the segregation statutes of every state. Thurgood Marshall called it the bible of civil rights litigators. The imprint reads 1950 and library catalogs record it as 1950, corrected to 1951, and the Pauli Murray Center dates it 1951. This course reports the disagreement rather than choosing silently.
+
+**Then the same move on sex.** Murray and Mary O. Eastwood published "Jane Crow and the Law: Sex Discrimination and Title VII" in the *George Washington Law Review* in December 1965, arguing that the Fourteenth Amendment reasoning built for race applied to sex. Murray joined the American Civil Liberties Union board that year and co-founded the National Organization for Women in 1966.
+
+**And then something unusual happened.** In 1971, preparing the brief in *Reed v. Reed*, Ruth Bader Ginsburg put Murray's name and Dorothy Kenyon's on the cover page, although neither had written it, because their work was the ground the argument stood on (American Civil Liberties Union, n.d.). That is the mechanism running backwards on purpose: a deliberate assignment of credit by someone who did not have to make it, recorded on the document itself, where it is still legible. Keep it in mind for Section 6, because most corrections are nothing like this cheap or this fast.
+
+In 1977 Murray was ordained an Episcopal priest, the first Black person perceived as a woman to be.
+
+**One widely repeated detail this course will not assert.** Many accounts add that Murray bet Robinson ten dollars that *Plessy* would fall within twenty five years, and that he paid. It traces to Murray's own recollection rather than to a contemporaneous record, so it is flagged here and filed as an open question rather than printed as fact.
+
+:::reveal What did Murray's 1944 seminar argument say the litigation strategy should be? ||| Attack "separate" itself, on Thirteenth and Fourteenth Amendment grounds, rather than continue proving that particular separate facilities were unequal. Spottswood Robinson kept the paper and returned to it a decade later while preparing Brown.
+
+:::reveal What is Jane Crow, and why does naming a mechanism count as a credit act? ||| Murray's term for the position of a Black person perceived as a woman, shut out of one movement by race and the other by sex. Naming it gives later people something to cite, which is how a contribution becomes attributable at all.
+
+:::reveal What did Ginsburg do with the Reed v. Reed brief in 1971, and why is it unusual? ||| She put Murray's and Kenyon's names on the cover page although neither wrote it, because their work was the ground the argument stood on. It is a deliberate credit assignment nobody required, recorded on the document itself.
+
+## Vocabulary
+- **Jane Crow**: Murray's term for the position of a Black person perceived as a woman, excluded by race from one movement and by sex from the other.
+- **States' Laws on Race and Color**: Murray's 746-page compilation of state segregation statutes, which Thurgood Marshall called the bible of civil rights litigators.
+- **Frontal attack**: the strategy of challenging segregation itself rather than the inequality of particular facilities, which is what Murray's 1944 paper argued for.
+- **Deliberate credit assignment**: naming someone on a document who did not write it, because the work depended on theirs, as Ginsburg did in 1971.
+
+## Sources
+American Civil Liberties Union. (n.d.). *Pauli Murray's indelible mark on the fight for equal rights*. https://www.aclu.org/news/womens-rights/pauli-murrays-indelible-mark-on-the-fight-for-equal-rights
+
+Murray, P., & Eastwood, M. O. (1965). Jane Crow and the law: Sex discrimination and Title VII. *George Washington Law Review, 34*(2), 232-256.
+
+Pauli Murray Center for History and Social Justice. (n.d.). *Who is Pauli Murray?* https://www.paulimurraycenter.com/who-is-pauli`,
+    },
+    {
+      slug: "quiz-matilda-effect",
+      title: "12 · Knowledge check: the Matilda effect",
+      section: "Section 3 · The Matilda effect",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "Who named the Matilda effect, and in what year?",
+            options: ["Margaret W. Rossiter, in 1993", "Robert K. Merton, in 1988, in the follow-up to his original Matthew effect paper", "Matilda Joslyn Gage, in 1883, in her essay for the North American Review", "Harriet Zuckerman, in 1977, in her study of the American Nobel laureates"],
+            correctIndex: 0,
+            explanation: "In Social Studies of Science 23(2), 325-341, a quarter century after Merton named the Matthew effect.",
+            sourceLessonSlug: "rossiter-and-the-matilda-effect",
+          },
+          {
+            prompt: "The Matilda effect names which pattern?",
+            options: ["Women's contributions attributed to male colleagues", "The tendency of prize committees to award scholarship later in a woman's career than a man's", "The exclusion of women from the disciplinary societies that give out scientific awards", "The under-citation of papers on which a woman appears as the corresponding author"],
+            correctIndex: 0,
+            explanation: "Systematic under-recognition of women in science, their contributions denied, and their work repeatedly attributed to male colleagues.",
+            sourceLessonSlug: "rossiter-and-the-matilda-effect",
+          },
+          {
+            prompt: "Rossiter opened her paper by quoting:",
+            options: ["The same Gospel line Merton had used", "Gage's 1883 essay on women as inventors, which supplies the name of the effect", "The Nobel Foundation statutes limiting a prize to no more than three recipients", "A passage from Trotula of Salerno's twelfth century medical writings"],
+            correctIndex: 0,
+            explanation: "So a reader would see the Matilda effect as the Matthew effect with something added, rather than as a rival account.",
+            sourceLessonSlug: "rossiter-and-the-matilda-effect",
+          },
+          {
+            prompt: "Matilda Joslyn Gage was:",
+            options: ["An American suffragist and abolitionist", "A nineteenth century physician who published the first survey of women in medicine", "A patent examiner who compiled the first official count of American women inventors", "A historian of science whose archival work Rossiter built directly upon a century later"],
+            correctIndex: 0,
+            explanation: "She lived from 1826 to 1898, and wrote the essay Woman as an Inventor, for which the effect is named.",
+            sourceLessonSlug: "rossiter-and-the-matilda-effect",
+          },
+          {
+            prompt: "Gage's essay Woman as an Inventor appeared in the North American Review in:",
+            options: ["May 1883", "January 1870, in the same year it also circulated separately as a printed tract", "1898, the year of her death, as the last of her published essays on the subject", "1993, when it was reprinted alongside Rossiter's paper naming the effect for her"],
+            correctIndex: 0,
+            explanation: "It first circulated as a tract in 1870 and was published in the Review in 1883, in volume 136, issue 318, pages 478 to 489.",
+            sourceLessonSlug: "rossiter-and-the-matilda-effect",
+          },
+          {
+            prompt: "Gage's opening observation was that women were said to have no inventive genius, and that:",
+            options: ["Even the census failed to count women among inventors", "No woman had ever been granted a patent by the United States Patent Office", "The scientific societies of her day admitted women only as honorary members", "Inventions by women were routinely filed under their husbands' names instead"],
+            correctIndex: 0,
+            explanation: "She then listed women who had in fact invented things, which is the same move Rossiter made a hundred and ten years later.",
+            sourceLessonSlug: "rossiter-and-the-matilda-effect",
+          },
+          {
+            prompt: "Why is naming the effect for Gage part of the argument?",
+            options: ["She made the case and was forgotten for it", "She was the first woman to receive a scientific award from a disciplinary society", "She had coined the term herself, and Rossiter was restoring her original wording", "Her essay is the earliest surviving document to describe a specific case of misattribution"],
+            correctIndex: 0,
+            explanation: "The effect had already operated on the person the effect is named for, a hundred and ten years before it was named.",
+            sourceLessonSlug: "rossiter-and-the-matilda-effect",
+          },
+          {
+            prompt: "Which of these is one of the historical cases Rossiter worked with?",
+            options: ["Trotula of Salerno", "Annie Turnbo Malone, whose business was overshadowed by a more famous competitor", "Harriet Zuckerman, whose interview data underlay Merton's 1968 paper on the Matthew effect", "Pauli Murray, whose 1944 seminar argument was used a decade later in the Brown litigation"],
+            correctIndex: 0,
+            explanation: "Along with Nettie Stevens, Lise Meitner, Marietta Blau, Rosalind Franklin and Jocelyn Bell Burnell.",
+            sourceLessonSlug: "rossiter-and-the-matilda-effect",
+          },
+          {
+            prompt: "What happened to Trotula of Salerno's works?",
+            options: ["They were later attributed to male authors", "They were destroyed in the twelfth century and survive only in later paraphrase", "They were published anonymously and their authorship has never been established at all", "They were credited to her correctly until a nineteenth century editor questioned it"],
+            correctIndex: 0,
+            explanation: "A twelfth century physician, and the earliest of Rossiter's cases. The list spans eight centuries, which is part of the argument.",
+            sourceLessonSlug: "rossiter-and-the-matilda-effect",
+          },
+          {
+            prompt: "Nettie Stevens appears in Rossiter's cases for work on:",
+            options: ["Chromosomal sex determination", "Nuclear fission, for which a male colleague received the prize she was denied", "Photographic methods for detecting particles in nuclear physics experiments", "The structure of DNA, where her contribution was reduced to an acknowledgement"],
+            correctIndex: 0,
+            explanation: "Lise Meitner is the fission case, Marietta Blau the photographic methods case, and Rosalind Franklin the DNA case.",
+            sourceLessonSlug: "rossiter-and-the-matilda-effect",
+          },
+          {
+            prompt: "The span of Rossiter's cases matters because:",
+            options: ["A pattern lasting eight centuries is not bad luck", "Older cases are better documented, so the earliest ones carry the most evidentiary weight", "It shows the effect weakened over time as scientific institutions became more formal", "It allows a direct comparison between the medieval and modern reward systems of science"],
+            correctIndex: 0,
+            explanation: "Durability across eight centuries is what distinguishes a mechanism from a run of individual misfortunes.",
+            sourceLessonSlug: "rossiter-and-the-matilda-effect",
+          },
+          {
+            prompt: "This course reads the difference between Matthew and Matilda as:",
+            options: ["A destination", "A difference of degree, with Matilda being a stronger version of the same effect", "A difference of discipline, with Matthew in the sciences and Matilda in the humanities", "A difference of period, with Matthew describing the modern era and Matilda the premodern"],
+            correctIndex: 0,
+            explanation: "Matthew says credit runs uphill toward eminence. Matilda adds that it arrives somewhere specific, at a male colleague.",
+            sourceLessonSlug: "rossiter-and-the-matilda-effect",
+          },
+          {
+            prompt: "Why does the destination make the Matilda claim more checkable?",
+            options: ["It predicts where to look", "Because a destination can be verified from a single document rather than a whole archive", "Because it converts a historical claim into a statistical one that can be tested on data", "Because male colleagues are more likely than institutions to have left surviving papers"],
+            correctIndex: 0,
+            explanation: "If the mechanism is real the credit is not floating loose in the literature. It is sitting on a name, and you can go and read the name.",
+            sourceLessonSlug: "rossiter-and-the-matilda-effect",
+          },
+          {
+            prompt: "A junior woman working with a senior man is exposed to:",
+            options: ["Both effects at once", "Only the Matilda effect, because the gender routing rule takes precedence over eminence", "Only the Matthew effect, because seniority is the stronger of the two mechanisms", "Neither, because a formal collaboration agreement settles credit before the work begins"],
+            correctIndex: 0,
+            explanation: "Matthew because he is eminent, Matilda because he is the male colleague. Keeping them separate is what makes either testable in that case.",
+            sourceLessonSlug: "rossiter-and-the-matilda-effect",
+          },
+          {
+            prompt: "Merging the two effects into one would make a case:",
+            options: ["Overdetermined and unfalsifiable", "Easier to teach, at the cost of some historical precision about the mechanism involved", "Legally stronger, because it removes the need to establish which mechanism operated", "Statistically cleaner, because the combined effect would have a larger measurable size"],
+            correctIndex: 0,
+            explanation: "Explained by so many mechanisms at once that no evidence could distinguish among them, which is the opposite of what lesson 2 requires.",
+            sourceLessonSlug: "rossiter-and-the-matilda-effect",
+          },
+          {
+            prompt: "Rossiter's evidence was of what kind?",
+            options: ["Historical cases", "A statistical analysis of prize records held by American disciplinary societies", "Interviews with women scientists conducted across several disciplines in the 1990s", "An experiment in which reviewers rated identical papers under different author names"],
+            correctIndex: 0,
+            explanation: "The counting came nineteen years later, from Lincoln and colleagues, and used a different design entirely.",
+            sourceLessonSlug: "rossiter-and-the-matilda-effect",
+          },
+          {
+            prompt: "Lincoln and colleagues counted awards from how many societies?",
+            options: ["Thirteen", "Six, matching the number of funders in the later replication of the Matthew effect", "Fifty one, one for each state plus the District of Columbia", "All of them, which is what makes the study a census rather than a sample"],
+            correctIndex: 0,
+            explanation: "Thirteen disciplinary societies in science, technology, engineering and medicine, over the years 1991 to 2010.",
+            sourceLessonSlug: "matilda-measured",
+          },
+          {
+            prompt: "The Lincoln study sorted awards by:",
+            options: ["What the award was for", "The seniority of the recipient at the time the award was made", "Whether the society was national or regional in its membership and reach", "The size of the monetary prize attached to each award in the sample"],
+            correctIndex: 0,
+            explanation: "Scholarship, service, or teaching. That sorting is what turns a bare share into an informative comparison.",
+            sourceLessonSlug: "matilda-measured",
+          },
+          {
+            prompt: "From 2000 to 2010, women won what share of the research based awards?",
+            options: ["10 percent", "32.2 percent, the same figure recorded for the service awards in that decade", "37.1 percent, the highest of the three award categories the study measured", "78.5 percent, reflecting the growth in awards going to women across the period"],
+            correctIndex: 0,
+            explanation: "Against 32.2 percent of service awards and 37.1 percent of teaching awards from the same societies in the same years.",
+            sourceLessonSlug: "matilda-measured",
+          },
+          {
+            prompt: "The service and teaching award shares for women in that decade were:",
+            options: ["32.2 and 37.1 percent", "10 and 12 percent, roughly matching the research award share the study reported", "50 and 55 percent, which is why the authors called those categories effectively equal", "Not reported, because too few societies distinguished those categories to allow a count"],
+            correctIndex: 0,
+            explanation: "Which is why the authors say women are honored roughly twice as often for service as for scholarship.",
+            sourceLessonSlug: "matilda-measured",
+          },
+          {
+            prompt: "Across the full twenty years, awards going to women:",
+            options: ["Rose by 78.5 percent", "Fell steadily, from about a third of all awards to just under a tenth of them", "Stayed flat, which is what prompted the societies to commission the study", "Doubled in the first decade and then reverted to their 1991 level by 2010"],
+            correctIndex: 0,
+            explanation: "And the gap in scholarly recognition nevertheless worsened in the second decade rather than improving, which is the finding that matters.",
+            sourceLessonSlug: "matilda-measured",
+          },
+          {
+            prompt: "The authors connect the service-versus-scholarship gap to:",
+            options: ["A tacit assumption that a rigorous scholar is a man", "The heavier service loads women carry, which leave less time for the research that wins prizes", "The nomination rules of the societies, which allow self-nomination only for service awards", "A shortage of senior women eligible for the research awards during the years studied"],
+            correctIndex: 0,
+            explanation: "That is the authors' own reading of why women are honored about twice as often for service as for scholarship.",
+            sourceLessonSlug: "matilda-measured",
+          },
+          {
+            prompt: "The obvious objection to a bare figure like \"women won 10 percent of research awards\" is:",
+            options: ["That may be the share of eligible senior women", "That awards are given by committees whose composition the study did not record", "That ten percent of a small number of awards is too few cases to analyze", "That the figure combines societies with very different award traditions"],
+            correctIndex: 0,
+            explanation: "Which is exactly why the comparison across award categories, not the headline figure, is what carries the argument.",
+            sourceLessonSlug: "matilda-measured",
+          },
+          {
+            prompt: "Why does the across-category comparison answer the eligible-pool objection?",
+            options: ["The pool is the same for all three categories", "Because the study restricted itself to societies that publish their membership demographics", "Because service and teaching awards are given to more junior people than research awards", "Because the authors adjusted every share for the number of women holding senior posts"],
+            correctIndex: 0,
+            explanation: "Same societies, same years, same membership. Whatever the eligible pool was, it did not differ between the scholarship and service categories.",
+            sourceLessonSlug: "matilda-measured",
+          },
+          {
+            prompt: "Which of these does the Lincoln study NOT establish?",
+            options: ["That any particular award was decided unfairly", "That women's share of research awards was about a tenth from 2000 to 2010", "That women's share of service awards was about a third in the same decade", "That the total number of awards going to women rose across the twenty years"],
+            correctIndex: 0,
+            explanation: "It is observational and reports shares, so it can establish a pattern across societies and say nothing at all about an individual case.",
+            sourceLessonSlug: "matilda-measured",
+          },
+          {
+            prompt: "An observational study differs from an experiment in that:",
+            options: ["Nobody assigned the treatment", "It uses records rather than interviews as its primary source of evidence", "It reports proportions rather than absolute counts of the cases it examines", "It covers a longer period, which is why its conclusions carry more historical weight"],
+            correctIndex: 0,
+            explanation: "Nobody randomized who got nominated, so the study can establish a pattern but not an experimental cause.",
+            sourceLessonSlug: "matilda-measured",
+          },
+          {
+            prompt: "Which sentence does this lesson say the study does NOT support?",
+            options: ["Women are 90 percent less likely to win a science prize", "Women took about a tenth of the scholarship awards from 2000 to 2010", "Women took about a third of the service awards from the same thirteen societies", "The number of awards going to women rose 78.5 percent across the two decades"],
+            correctIndex: 0,
+            explanation: "A share of awards is not a probability per person. The looser sentence loses an argument, and takes the true material beside it down too.",
+            sourceLessonSlug: "matilda-measured",
+          },
+          {
+            prompt: "Overclaiming, as this lesson uses the term, means:",
+            options: ["Restating a finding more strongly than its design supports", "Citing a study for a conclusion its authors explicitly declined to draw themselves", "Reporting a result before it has completed peer review and become a version of record", "Generalizing from one discipline to another without checking whether the data transfer"],
+            correctIndex: 0,
+            explanation: "And the cost is not just the overclaim: losing it in public discredits the accurate material standing beside it.",
+            sourceLessonSlug: "matilda-measured",
+          },
+          {
+            prompt: "The Lincoln study appeared in which journal?",
+            options: ["Social Studies of Science", "Science, which had published Merton's original Matthew effect paper in 1968", "The Proceedings of the National Academy of Sciences, alongside the funding study", "Isis, where Merton acknowledged Zuckerman's contribution to the earlier work"],
+            correctIndex: 0,
+            explanation: "Social Studies of Science 42(2), 307-320, the same journal that had published Rossiter's paper naming the effect in 1993.",
+            sourceLessonSlug: "matilda-measured",
+          },
+          {
+            prompt: "An internal comparison, in the design sense used here, is:",
+            options: ["Two categories from the same source set against each other", "A comparison between the study's own data and an external national dataset", "A check of the same measurement taken twice by two independent coders", "A test of whether a result holds within each society before pooling them together"],
+            correctIndex: 0,
+            explanation: "Shared confounders cancel, which is why the scholarship-versus-service gap is stronger evidence than either share on its own.",
+            sourceLessonSlug: "matilda-measured",
+          },
+          {
+            prompt: "Pauli Murray was born and died in which years?",
+            options: ["1910 and 1985", "1826 and 1898, the same span as the suffragist the Matilda effect is named for", "1900 and 1971, the year Ginsburg filed the Reed v. Reed brief", "1920 and 1977, the year of the ordination that closed a long career"],
+            correctIndex: 0,
+            explanation: "Born in Baltimore on 20 November 1910, died in Pittsburgh on 1 July 1985.",
+            sourceLessonSlug: "pauli-murray-the-argument-before-the-case",
+          },
+          {
+            prompt: "The identity claim this course makes about Murray rests on:",
+            options: ["Murray's own papers", "A biography published after Murray's death by a historian with archival access", "The consensus of scholars who have worked on Murray's life since the 1990s", "Contemporary press coverage of Murray's ordination as an Episcopal priest"],
+            correctIndex: 0,
+            explanation: "Through the 1930s Murray repeatedly asked physicians for hormone therapy and exploratory surgery and was refused. That self-documented record is what rule one requires.",
+            sourceLessonSlug: "pauli-murray-the-argument-before-the-case",
+          },
+          {
+            prompt: "Jane Crow is Murray's term for:",
+            options: ["The position of a Black person perceived as a woman", "The set of state laws that segregated public accommodations by race in the South", "The exclusion of women from the legal profession before the Second World War", "The practice of listing a woman's contribution in an acknowledgement rather than a byline"],
+            correctIndex: 0,
+            explanation: "Shut out of one movement by race and out of the other by sex, and therefore invisible to both. Murray coined it at Howard Law School.",
+            sourceLessonSlug: "pauli-murray-the-argument-before-the-case",
+          },
+          {
+            prompt: "Why does this lesson call naming a mechanism a credit act?",
+            options: ["It gives later people something to cite", "Because the person who names a thing is normally treated as its discoverer as well", "Because a named mechanism can be registered and protected the way an invention can", "Because naming establishes priority in a dispute over who noticed the pattern first"],
+            correctIndex: 0,
+            explanation: "A contribution becomes attributable at all once it has a name, which is why Jane Crow matters as much as the argument it describes.",
+            sourceLessonSlug: "pauli-murray-the-argument-before-the-case",
+          },
+          {
+            prompt: "Murray's 1944 seminar argument was that the litigation should:",
+            options: ["Attack separate itself", "Prove in each case that the separate facilities provided were materially unequal", "Concentrate on graduate and professional schools before reaching primary education", "Rely on the Fifteenth Amendment rather than on the Thirteenth and Fourteenth"],
+            correctIndex: 0,
+            explanation: "On Thirteenth and Fourteenth Amendment grounds, rather than continuing to prove that particular separate facilities were unequal.",
+            sourceLessonSlug: "pauli-murray-the-argument-before-the-case",
+          },
+          {
+            prompt: "Who kept Murray's 1944 paper and returned to it a decade later?",
+            options: ["Spottswood Robinson", "Thurgood Marshall, who was directing the NAACP legal department at the time", "Charles Hamilton Houston, who had built the graduate-school litigation strategy", "Mary O. Eastwood, Murray's later co-author on the Jane Crow article"],
+            correctIndex: 0,
+            explanation: "The professor of the seminar. He referred to it while he and the NAACP were preparing Brown v. Board of Education.",
+            sourceLessonSlug: "pauli-murray-the-argument-before-the-case",
+          },
+          {
+            prompt: "What was States' Laws on Race and Color?",
+            options: ["A 746-page catalogue of state segregation statutes", "A memoir of Murray's arrest and trial in Petersburg, Virginia in March 1940", "A law review article arguing that Fourteenth Amendment reasoning extended to sex", "A collection of NAACP litigation briefs assembled for use by cooperating attorneys"],
+            correctIndex: 0,
+            explanation: "Murray compiled and edited it for the Woman's Division of Christian Service of the Methodist Church.",
+            sourceLessonSlug: "pauli-murray-the-argument-before-the-case",
+          },
+          {
+            prompt: "Thurgood Marshall described States' Laws on Race and Color as:",
+            options: ["The bible of civil rights litigators", "The single most complete survey of southern practice compiled in the twentieth century", "A useful reference which the association's own research staff had largely duplicated", "An argument the NAACP was not yet prepared to make in front of the Supreme Court"],
+            correctIndex: 0,
+            explanation: "Which is a striking description of a reference work whose compiler was not on the litigation team that used it.",
+            sourceLessonSlug: "pauli-murray-the-argument-before-the-case",
+          },
+          {
+            prompt: "How does this course handle the 1950 versus 1951 date on that book?",
+            options: ["It reports the disagreement", "It follows the imprint date, since a title page outranks a later catalog correction", "It omits the date entirely, because a contested figure should not appear in a lesson", "It uses 1950 in the text and 1951 in the reference list, following APA convention"],
+            correctIndex: 0,
+            explanation: "The imprint reads 1950, library catalogs record it as 1950 corrected to 1951, and the Pauli Murray Center dates it 1951.",
+            sourceLessonSlug: "pauli-murray-the-argument-before-the-case",
+          },
+          {
+            prompt: "Murray's 1965 article with Mary O. Eastwood argued that:",
+            options: ["Fourteenth Amendment reasoning built for race applied to sex", "Title VII's sex provision had been added as a joke and should be repealed by Congress", "The Equal Rights Amendment was unnecessary given existing constitutional doctrine", "Employment discrimination should be litigated in state rather than federal courts"],
+            correctIndex: 0,
+            explanation: "Jane Crow and the Law: Sex Discrimination and Title VII, in the George Washington Law Review, December 1965.",
+            sourceLessonSlug: "pauli-murray-the-argument-before-the-case",
+          },
+          {
+            prompt: "Murray co-founded which organization, and in what year?",
+            options: ["The National Organization for Women, in 1966", "The American Civil Liberties Union, whose board Murray had joined the year before", "The NAACP Legal Defense and Educational Fund, in the year States' Laws appeared", "The Women's Rights Project, which Ruth Bader Ginsburg later directed at the ACLU"],
+            correctIndex: 0,
+            explanation: "Murray joined the ACLU board in 1965, a year before co-founding NOW. The ACLU existed long before either.",
+            sourceLessonSlug: "pauli-murray-the-argument-before-the-case",
+          },
+          {
+            prompt: "In 1971 Ruth Bader Ginsburg put Murray's and Kenyon's names:",
+            options: ["On the cover page of the Reed v. Reed brief", "In a footnote of the brief acknowledging the sources of its constitutional argument", "On the ACLU Women's Rights Project's founding documents as its first two directors", "In the bibliography she supplied to the Court alongside the brief she had written"],
+            correctIndex: 0,
+            explanation: "Although neither had written it, because their work was the ground the argument stood on.",
+            sourceLessonSlug: "pauli-murray-the-argument-before-the-case",
+          },
+          {
+            prompt: "Why is the Reed v. Reed cover page called the mechanism running backwards?",
+            options: ["Credit was assigned deliberately by someone not required to", "Because the brief lost, so the credit attached to an unsuccessful argument", "Because the two named people later disclaimed any involvement in the case", "Because the Court itself ordered the additional names added to the filing"],
+            correctIndex: 0,
+            explanation: "And it is recorded on the document itself, where it is still legible, which most corrections are not.",
+            sourceLessonSlug: "pauli-murray-the-argument-before-the-case",
+          },
+          {
+            prompt: "In 1977 Murray became:",
+            options: ["An ordained Episcopal priest", "The first Black woman appointed to a federal appellate court in the United States", "A tenured professor of law at Howard University, where the 1944 seminar had been held", "President of the National Organization for Women, eleven years after co-founding it"],
+            correctIndex: 0,
+            explanation: "The first Black person perceived as a woman to be ordained an Episcopal priest.",
+            sourceLessonSlug: "pauli-murray-the-argument-before-the-case",
+          },
+          {
+            prompt: "Which detail about Murray does this course explicitly refuse to assert?",
+            options: ["A ten dollar bet with Robinson over Plessy", "That Murray graduated at the top of the 1944 Howard Law class", "That Murray coined the term Jane Crow while at Howard Law School", "That Ginsburg named Murray on the Reed v. Reed brief in 1971"],
+            correctIndex: 0,
+            explanation: "It traces to Murray's own later recollection rather than a contemporaneous record, so it is flagged and filed as an open question.",
+            sourceLessonSlug: "pauli-murray-the-argument-before-the-case",
+          },
+          {
+            prompt: "Which pronouns does this lesson use for Murray?",
+            options: ["S/he, their, and they/them", "She and her, following the usage of Murray's own published memoir", "He and him, following the requests Murray made of physicians in the 1930s", "None, avoiding the question by repeating the surname in every sentence"],
+            correctIndex: 0,
+            explanation: "Following the practice of the Pauli Murray Center, which bases it on Murray's own papers, and saying so rather than choosing silently.",
+            sourceLessonSlug: "pauli-murray-the-argument-before-the-case",
+          },
+          {
+            prompt: "Murray's Jane Crow article was published in which law review?",
+            options: ["The George Washington Law Review", "The Harvard Law Review, in the same term the Civil Rights Act took effect", "The Yale Law Journal, where Murray had completed doctoral work in law", "The Howard Law Journal, published by the school where the term was coined"],
+            correctIndex: 0,
+            explanation: "Volume 34, December 1965, pages 232 to 256, co-authored with Mary O. Eastwood.",
+            sourceLessonSlug: "pauli-murray-the-argument-before-the-case",
+          },
+          {
+            prompt: "Murray joined the board of which organization in 1965?",
+            options: ["The American Civil Liberties Union", "The National Organization for Women, which Murray would co-found the following year", "The NAACP, which had used the 1944 seminar paper in preparing the Brown litigation", "The Methodist Church's Woman's Division, which had commissioned States' Laws"],
+            correctIndex: 0,
+            explanation: "Working there with Dorothy Kenyon on gender inequality, which is the connection Ginsburg recorded on the Reed brief six years later.",
+            sourceLessonSlug: "pauli-murray-the-argument-before-the-case",
+          },
+          {
+            prompt: "The Murray case belongs in the Matilda section because:",
+            options: ["The argument was used and the author was not named", "Murray was the only woman on the NAACP litigation team that argued Brown", "Murray's work was attributed to Spottswood Robinson in the Supreme Court record", "Murray published under initials, which concealed the author's sex from readers"],
+            correctIndex: 0,
+            explanation: "The seminar paper and the reference work were both used by the litigation that followed, and neither put Murray's name where the credit landed.",
+            sourceLessonSlug: "pauli-murray-the-argument-before-the-case",
+          },
+          {
+            prompt: "The Reed v. Reed cover page is flagged for Section 6 because:",
+            options: ["Most corrections are neither that cheap nor that fast", "It was later challenged and the names were removed from the published record", "The Supreme Court cited the added names in its opinion, which is unusual", "It is the only correction in this course made while all parties were still living"],
+            correctIndex: 0,
+            explanation: "Adding two names to a cover page cost nothing and took no time. Section 6 measures how long the other corrections in this course took.",
+            sourceLessonSlug: "pauli-murray-the-argument-before-the-case",
+          },
+          {
+            prompt: "Rossiter's paper and the Lincoln study appeared in the same journal, which shows:",
+            options: ["The naming and the counting happened in one venue", "That the two teams collaborated on a single long-running research program", "That the journal commissioned both papers as parts of a planned special issue", "That the counting study was intended as a rebuttal to the earlier naming paper"],
+            correctIndex: 0,
+            explanation: "Social Studies of Science published Rossiter in 1993 and Lincoln and colleagues in 2012, nineteen years apart.",
+            sourceLessonSlug: "matilda-measured",
+          },
+          {
+            prompt: "Between 1991 and 2010, what happened to women's share of SCHOLARLY recognition?",
+            options: ["The gap worsened in the second decade", "It converged steadily with men's share, reaching near parity by the end of the period", "It stayed exactly flat, which the authors describe as the study's central finding", "It could not be tracked, because societies changed their award categories midway"],
+            correctIndex: 0,
+            explanation: "Even though the total number of awards going to women rose by 78.5 percent across the same twenty years.",
+            sourceLessonSlug: "matilda-measured",
+          },
+          {
+            prompt: "The eligible pool objection matters most to which kind of claim?",
+            options: ["A bare share of a total", "A comparison between two categories drawn from the same population", "A historical case study of one misattributed contribution", "An experimental result where participants were randomly assigned"],
+            correctIndex: 0,
+            explanation: "Which is why this lesson leans on the across-category comparison rather than on the ten percent figure by itself.",
+            sourceLessonSlug: "matilda-measured",
+          },
+          {
+            prompt: "Rossiter is described in this lesson as:",
+            options: ["A historian of science", "A sociologist at Columbia University, working in Merton's own department", "A physicist who turned to history after her own work was misattributed", "A statistician who developed the counting method the 2012 study later used"],
+            correctIndex: 0,
+            explanation: "Which is why her evidence is historical cases rather than the prize counts a later team assembled.",
+            sourceLessonSlug: "rossiter-and-the-matilda-effect",
+          },
+          {
+            prompt: "Which of Rossiter's cases involves nuclear fission?",
+            options: ["Lise Meitner", "Marietta Blau, whose photographic methods made the particle tracks visible", "Jocelyn Bell Burnell, whose supervisor received the prize for the discovery", "Nettie Stevens, whose work on chromosomes was credited to a male colleague"],
+            correctIndex: 0,
+            explanation: "Blau is the photographic methods case, Bell Burnell the pulsars case, and Stevens the chromosomal sex determination case.",
+            sourceLessonSlug: "rossiter-and-the-matilda-effect",
+          },
+          {
+            prompt: "Which of Rossiter's cases involves pulsars?",
+            options: ["Jocelyn Bell Burnell", "Rosalind Franklin, whose photographic work underlay a structural discovery", "Trotula of Salerno, whose writings were reassigned to male authors", "Lise Meitner, whose theoretical account explained an experimental result"],
+            correctIndex: 0,
+            explanation: "Franklin is the DNA case, Trotula the twelfth century reattribution case, and Meitner the fission case.",
+            sourceLessonSlug: "rossiter-and-the-matilda-effect",
+          },
+          {
+            prompt: "Murray was arrested in Virginia in 1940 for:",
+            options: ["Refusing to move on a segregated bus", "Attempting to enroll at a state university that did not admit Black students", "Picketing a federal building in violation of a local ordinance on assembly", "Compiling and distributing a list of the state's segregation statutes"],
+            correctIndex: 0,
+            explanation: "In March 1940, fifteen years before the Montgomery arrests that Section 6 takes up.",
+            sourceLessonSlug: "pauli-murray-the-argument-before-the-case",
+          },
+          {
+            prompt: "Murray's rank in the 1944 Howard Law class was:",
+            options: ["Top of the class", "Second, behind the classmate who later joined the NAACP litigation team", "Unrecorded, because the school did not publish class rankings during the war years", "Middle of the class, which Murray later cited as a reason the paper was dismissed"],
+            correctIndex: 0,
+            explanation: "Which makes the reception of the seminar argument, and what happened to it afterward, harder to explain by anything about the student.",
+            sourceLessonSlug: "pauli-murray-the-argument-before-the-case",
+          },
+          {
+            prompt: "Gage's essay first circulated in which form and year?",
+            options: ["A tract, in 1870", "A lecture delivered to a suffrage convention, in 1898, the year of her death", "A chapter in a multi-volume history of woman suffrage, published in the 1880s", "A letter to the United States Patent Office, later reprinted by a magazine"],
+            correctIndex: 0,
+            explanation: "It was published in the North American Review thirteen years later, in May 1883.",
+            sourceLessonSlug: "rossiter-and-the-matilda-effect",
+          },
+          {
+            prompt: "What makes the Matilda claim testable in a specific case?",
+            options: ["You can go and read the name it landed on", "The historical record for women scientists is unusually complete before 1900", "Disciplinary societies publish the nomination papers behind every award they give", "The effect only operates in collaborations, which are documented in the author line"],
+            correctIndex: 0,
+            explanation: "The destination is the testable part: if the credit did not arrive at a male colleague, the Matilda reading of that case fails.",
+            sourceLessonSlug: "rossiter-and-the-matilda-effect",
+          },
+        ],
+      },
+    },
   ],
 };
