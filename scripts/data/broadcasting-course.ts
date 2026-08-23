@@ -692,6 +692,244 @@ U.S. Bureau of Labor Statistics. (2024a). *Announcers and DJs*. Occupational Out
     },
 
     // ─────────────────────────────────────────────────────────────────────────
+    // SECTION 2 QUIZ
+    // ─────────────────────────────────────────────────────────────────────────
+    {
+      slug: "quiz-your-calling-card",
+      title: "Section 2 quiz · Your calling card",
+      section: "Section 2 · Your calling card",
+      body: `A graded check on the reel that auditions for you and the paperwork that earns it a click. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is a demo reel?",
+            options: [
+              "A complete recording of one event you worked on start to finish",
+              "A short, tightly edited highlight of your best work",
+              "A written list of the productions you have credits on",
+              "A recorded interview in which you describe your experience",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It is your audition on a loop. On-air talent shows themselves presenting; producers and editors show finished packages; camera and technical crew show clean, well-shot footage they were responsible for.",
+            sourceLessonSlug: "demo-reel",
+          },
+          {
+            prompt: "How much of a reel does a hiring manager typically watch?",
+            options: [
+              "All of it, since a short reel takes very little time",
+              "The last 30 seconds, where the strongest work is usually placed",
+              "The first 15 to 30 seconds",
+              "Only the captions, to see which roles you actually held",
+            ],
+            correctIndex: 2,
+            explanation:
+              "They watch the first 15 to 30 seconds and stop, which is why the lesson says lead with your strongest ten seconds and skip the slow logo intro.",
+            sourceLessonSlug: "demo-reel",
+          },
+          {
+            prompt: "How long should a reel run?",
+            options: [
+              "About 60 to 120 seconds",
+              "Between four and five minutes, to show range across several jobs",
+              "As long as your best continuous piece of work happens to be",
+              "Under 30 seconds, since nobody watches past the opening",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Longer is not better; tighter is. Sixty to 120 seconds, led by your strongest clip.",
+            sourceLessonSlug: "demo-reel",
+          },
+          {
+            prompt: "What should a technical reel show, as opposed to an on-air one?",
+            options: [
+              "The equipment you own, shown clearly enough to be identified",
+              "Footage from the largest production you have ever been part of",
+              "The control room you worked in, filmed during a live show",
+              "Framing, focus, exposure, and clean audio",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Match the reel to the role. On-air shows energy, clarity, and presence; technical shows framing, focus, exposure, and clean audio; editing shows pacing and storytelling.",
+            sourceLessonSlug: "demo-reel",
+          },
+          {
+            prompt: "Why does the lesson tell you to show real conditions in a reel?",
+            options: [
+              "Live, noisy, imperfect environments read as experience",
+              "Because studio footage is assumed to have been shot by someone else",
+              "Because a hiring manager can tell when footage has been graded",
+              "Because polished work suggests you had a large budget to rely on",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A reel proves rather than claims. Work done in real conditions is the evidence that you can do the job when nothing is controlled.",
+            sourceLessonSlug: "demo-reel",
+          },
+          {
+            prompt: "What does the lesson say about captions on a reel?",
+            options: [
+              "Leave them off, since they distract from the footage itself",
+              "Caption what you did, and credit only your own work",
+              "Caption the event and the date, but never the role you held",
+              "Caption everything the production credited you for, whether or not you did it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Camera operator, produced and edited, play-by-play. Say what you did and claim only that.",
+            sourceLessonSlug: "demo-reel",
+          },
+          {
+            prompt: "In the lesson's example, what does the aspiring sideline reporter with no TV credits do?",
+            options: [
+              "Recreates a broadcast segment in a studio with borrowed equipment",
+              "Waits for an internship that would produce usable footage",
+              "Films themselves reporting from a real local game",
+              "Edits a reel from clips of broadcasts they admire, with commentary",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A stand-up intro, a quick interview, and a wrap, cut to 75 seconds. It is not network-polished, but it shows they can do the job unscripted, which is what a small-market station needs to see.",
+            sourceLessonSlug: "demo-reel",
+          },
+          {
+            prompt: "What does the lesson mean by show me always beats trust me?",
+            options: [
+              "A reel proves, where a claim only asserts",
+              "That a reference from a crew lead outweighs anything you write",
+              "That a hiring manager will always ask for a live demonstration",
+              "That footage is easier to verify than a written credit list",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the whole reason the reel exists. The paperwork describes what you can do; the reel shows it.",
+            sourceLessonSlug: "demo-reel",
+          },
+          {
+            prompt: "What three pieces make up your calling-card paperwork?",
+            options: [
+              "A cover letter, a reference list, and a certification record",
+              "A one-page resume, a portfolio, and a personal brand",
+              "A reel, a business card, and a professional membership",
+              "A biography, a headshot, and a list of the gear you own",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A one-page resume, an online portfolio hosting your reel and work, and a consistent, professional personal brand on your social platforms.",
+            sourceLessonSlug: "resume-portfolio-brand",
+          },
+          {
+            prompt: "Why does the lesson say to list gear and software by name on a resume?",
+            options: [
+              "Because naming them proves you were trusted to operate them",
+              "Because a longer skills list makes the one-page format look full",
+              "Hiring managers search for the exact tools",
+              "Because equipment names date a resume and show recent experience",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Naming the cameras, switchers, and software you can operate is what lets a hiring manager find and pick you out of a stack.",
+            sourceLessonSlug: "resume-portfolio-brand",
+          },
+          {
+            prompt: "How long should the resume be?",
+            options: [
+              "One page",
+              "Two pages, so every credit can be listed with its date",
+              "As long as the credit list requires, with no fixed limit",
+              "One page for technical roles and two for on-air ones",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One page, carrying roles held, skills named specifically, and measurable results.",
+            sourceLessonSlug: "resume-portfolio-brand",
+          },
+          {
+            prompt: "What should a portfolio contain?",
+            options: [
+              "Every project you have worked on, arranged by date",
+              "A written case study for each production you contributed to",
+              "The raw footage behind each clip in your reel, for verification",
+              "Your reel plus two to four sample projects, each with a one-line note",
+            ],
+            correctIndex: 3,
+            explanation:
+              "One link that opens to your reel plus two to four samples, each with a one-line description of what you did, loading fast and working on a phone.",
+            sourceLessonSlug: "resume-portfolio-brand",
+          },
+          {
+            prompt: "What does the lesson say about your social platforms?",
+            options: [
+              "Keep them private, so a recruiter judges only the portfolio",
+              "Pick your lane, post your work, and keep it professional",
+              "Post daily, since the algorithms reward frequency over quality",
+              "Use them only to follow the people you eventually want to work for",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Pick a lane such as sports, news, or tech, post your work, tag events you cover, and keep it professional. Recruiters will scroll, and consistency signals reliability.",
+            sourceLessonSlug: "resume-portfolio-brand",
+          },
+          {
+            prompt: "Why does the lesson call broadcasting a relationship-and-reputation business?",
+            options: [
+              "Because most positions are filled without ever being advertised",
+              "Because credits matter more than any formal qualification",
+              "A recruiter often finds you before you find the job posting",
+              "Because every crew lead knows every other crew lead in a market",
+            ],
+            correctIndex: 2,
+            explanation:
+              "What they see when they find you, a clean resume, a working portfolio link, and social feeds that look like a colleague rather than a liability, decides whether they reach out.",
+            sourceLessonSlug: "resume-portfolio-brand",
+          },
+          {
+            prompt: "In the lesson's example, what specifically got the camera assistant the freelance gig?",
+            options: [
+              "A recommendation from a crew lead they had worked under before",
+              "A cover letter that named the producer's own past productions",
+              "A reel long enough to show their work across a whole season",
+              "A resume showing they already knew the exact switcher the truck runs",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The producer clicked the portfolio link in an email signature, watched a 60-second reel, and saw the specific switcher named on the resume. One skim, one hire, which is the argument for naming your tools.",
+            sourceLessonSlug: "resume-portfolio-brand",
+          },
+          {
+            prompt: "What line does the lesson tell a utility hopeful to add to their resume?",
+            options: [
+              "A utility and rigging line, if you have done the knots work",
+              "A note that you are willing to relocate for the right position",
+              "A list of the events you have attended as a spectator",
+              "The certifications you intend to complete in the coming year",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Name every piece of gear and software you can operate, and add the utility and rigging line, because it is a real skill a crew lead is looking for.",
+            sourceLessonSlug: "resume-portfolio-brand",
+          },
+          {
+            prompt: "What does the lesson say a portfolio has to be, technically?",
+            options: [
+              "Hosted on a domain you own rather than on a free platform",
+              "Fast-loading and mobile-friendly",
+              "Password-protected, so you know who has viewed your work",
+              "Updated weekly, so the newest work always appears first",
+            ],
+            correctIndex: 1,
+            explanation:
+              "One link, opening fast and working on a phone. A recruiter skimming on a phone between calls is exactly who it has to work for.",
+            sourceLessonSlug: "resume-portfolio-brand",
+          },
+        ],
+      },
+    },
+
+    // ─────────────────────────────────────────────────────────────────────────
     // SECTION 3: Audio & video fundamentals
     // ─────────────────────────────────────────────────────────────────────────
     {
