@@ -39,6 +39,11 @@ describe.skipIf(!HAS_DB)("a private course is invisible everywhere and studyable
         ],
       },
       category: "Health & Longevity",
+      // A series slug, so the series-page regression below has something to ask for. The real WELL
+      // series is what 404'd; this fixture reproduces its shape without depending on it.
+      seriesSlug: "iso-private-series",
+      seriesTitle: "Isolation Private Series",
+      seriesOrder: 1,
       visibility: "private",
       publishHoldReason: "Isolation test fixture. Owner-only.",
     });
@@ -117,6 +122,25 @@ describe.skipIf(!HAS_DB)("a private course is invisible everywhere and studyable
     // authorizes (enrolled/editor/auditor after a tenant-scoped course fetch), and the owner
     // searching their own private course must keep working. Route-level cross-tenant coverage
     // lives in tests/isolation/course-search.db.test.ts.
+  });
+
+  // The series PAGE is a separate surface from listSeries, and it 404'd for the one person entitled
+  // to read it: the WELL series is ten private courses, so the page's own query returned nothing
+  // while the course page rendered a link straight to it. This pins both halves of the fix.
+  it("a series of private courses is fetchable WITH unpublished, and empty without", async () => {
+    const { listCourses } = await import("@/db/queries/catalog");
+
+    // What the series page asks for now.
+    const withUnpublished = await listCourses(bvcId, {
+      seriesSlug: "iso-private-series",
+      includeUnpublished: true,
+    });
+    expect(withUnpublished.map((c) => c.slug)).toContain(slug);
+
+    // What every unentitled viewer still gets, because canAccessCourse filters the rest away and
+    // the page 404s on an empty list.
+    const publicOnly = await listCourses(bvcId, { seriesSlug: "iso-private-series" });
+    expect(publicOnly.map((c) => c.slug)).not.toContain(slug);
   });
 
   it("can never be a specialization leg while private", async () => {

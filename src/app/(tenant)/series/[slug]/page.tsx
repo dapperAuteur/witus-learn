@@ -2,6 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getScopedDb } from "@/db/scoped";
+import { getSession } from "@/lib/session";
+import { canAccessCourse } from "@/lib/api";
 import { ogImageUrl } from "@/lib/og";
 import { describePosition, formatCourseCode, groupSeries } from "@/lib/series-code";
 
@@ -24,7 +26,29 @@ import { describePosition, formatCourseCode, groupSeries } from "@/lib/series-co
 
 async function loadSeries(slug: string) {
   const sdb = await getScopedDb();
-  const courses = await sdb.listCourses({ seriesSlug: slug });
+
+  // A series of PRIVATE courses used to 404 for the one person entitled to read it. The WELL
+  // program is ten owner-only courses, so `listCourses` (which excludes unpublished by default)
+  // returned nothing and the page called notFound() — while the course page happily rendered a
+  // link TO this page. The owner was shown a link to his own 404, seven times, by the automatic
+  // broken-link reporter.
+  //
+  // So: fetch unpublished too, then keep only the courses THIS viewer may actually see, using the
+  // same canAccessCourse gate the course page and the enroll/complete routes use. For a signed-out
+  // visitor that filter removes everything and the page still 404s, which is the required
+  // behaviour: an unpublished course must not become discoverable through a series page, and a
+  // 404 rather than a redirect is what keeps the page from confirming the series exists at all.
+  const all = await sdb.listCourses({ seriesSlug: slug, includeUnpublished: true });
+  const session = await getSession();
+  const visible: typeof all = [];
+  for (const c of all) {
+    if (c.isPublished) {
+      visible.push(c);
+      continue;
+    }
+    if (await canAccessCourse(session, sdb.tenantId, c)) visible.push(c);
+  }
+  const courses = visible;
   if (courses.length === 0) return null;
   const ordered = [...courses].sort((a, b) => {
     const ao = a.seriesOrder ?? Number.MAX_SAFE_INTEGER;
