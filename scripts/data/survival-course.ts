@@ -2150,9 +2150,12 @@ Fill in each blank from the cited lessons. This is *formative* practice. Check y
       section: "Practice & Assessment",
       body: `${SAFETY}
 
-A ten-question check on the course's core, cited principles. Passing score is 70%. Each question links back to the lesson that teaches it. Review the source for anything you miss. Remember: passing this quiz is *not* training. For life-safety skills, take a hands-on course and follow official guidance.`,
+A ten-question check on the course's core, cited principles, drawn fresh each attempt from a bank of forty that reaches every lesson in the course. Passing score is 80%. Each question links back to the lesson that teaches it. Review the source for anything you miss. Remember: passing this quiz is *not* training. For life-safety skills, take a hands-on course and follow official guidance.`,
       quiz: {
-        passingScore: 70,
+        passingScore: 80,
+        // Serves 10 from a pool of 40, the Tier-0 final spec, so a retake draws a different
+        // ten and the pass means the whole course rather than one lucky draw.
+        questionsPerAttempt: 10,
         // Options shuffle per attempt so a fixed answer position cannot be gamed;
         // scoring is by identity, so no answer changes (src/lib/quiz.ts).
         shuffleOptions: true,
@@ -2296,6 +2299,401 @@ A ten-question check on the course's core, cited principles. Passing score is 70
             explanation:
               "Watch = conditions possible, prepare; Warning = happening or imminent, act now. Keep a NOAA Weather Radio and enable Wireless Emergency Alerts (NWS, 2024; FEMA, 2024).",
             sourceLessonSlug: "emergency-alerts-and-radios",
+          },
+
+          // Pool expansion to the Tier-0 final spec (40 serving 10). The ten above reached ten of
+          // the course's twenty-one teaching lessons; the thirty below reach the other eleven and
+          // add a second angle on the first ten, so no lesson is missing from the bank a learner
+          // is drawn against.
+          {
+            prompt: "What does this course say it is NOT?",
+            options: [
+              "A structured introduction to preparedness and off-grid living",
+              "A field manual or medical advice",
+              "An orientation built from public United States government sources",
+              "A course that ends every lesson with a checkable list of its sources",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It is not a field manual, not medical advice, and not a license to attempt risky procedures. The other three describe what it is: a structured, cited orientation whose lessons each end in an APA 7 Sources list.",
+            sourceLessonSlug: "welcome-and-safety",
+          },
+          {
+            prompt: "Why does the course insist on tracing every claim to a named official source?",
+            options: [
+              "Because federal agencies require a citation before their guidance may be repeated",
+              "Because a bibliography is what separates a paid course from a free one online",
+              "Rumors spread fast in an emergency",
+              "Because the agencies revise their pages too often for any lesson to stay current",
+            ],
+            correctIndex: 2,
+            explanation:
+              "In an emergency, rumors and confident-sounding folklore spread fast, so the habit the course drills is tracing every claim to a named, checkable, official source. Those agencies, not this course, are the authority.",
+            sourceLessonSlug: "welcome-and-safety",
+          },
+          {
+            prompt: "What does the lesson say is the real value of the rule of 3s?",
+            options: [
+              "Sequencing",
+              "The precision of the four time limits it gives for an average adult",
+              "Its standing as a medical guarantee about how long a body can hold out",
+              "The way it lets you calculate how many days of supplies to store",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The numbers are rough rules of thumb, not guarantees, and individual limits vary widely with health, temperature, and exertion. Their value is telling you what to solve first: air and immediate danger, then shelter and warmth, then water, then food.",
+            sourceLessonSlug: "rule-of-threes-and-priorities",
+          },
+          {
+            prompt: "Preparedness is two artifacts, in this lesson's framing. Which two?",
+            options: [
+              "A stocked pantry and a reliable backup power source for the household",
+              "A written evacuation route and a standing agreement with a neighbor",
+              "An insurance policy and a photographed inventory of what you own",
+              "A plan and a kit",
+            ],
+            correctIndex: 3,
+            explanation:
+              "A plan says who does what, where you meet, how you communicate, and how you evacuate. A kit is the supplies that carry you through the first stretch on your own.",
+            sourceLessonSlug: "make-a-plan-and-kit",
+          },
+          {
+            prompt: "Which item does federal guidance list in a basic disaster supplies kit?",
+            options: [
+              "A wrench or pliers to shut off utilities",
+              "A portable generator sized to run the refrigerator through a long outage",
+              "A two-way radio licensed for the amateur bands in your own region",
+              "A chainsaw and fuel for clearing fallen trees away from the driveway",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The basic list runs water and food for several days, a battery or hand-crank radio, a flashlight, a first aid kit, extra batteries, a whistle, a dust mask, moist towelettes and garbage bags for sanitation, a wrench or pliers to shut off utilities, a manual can opener, local maps, and backup power for phones.",
+            sourceLessonSlug: "make-a-plan-and-kit",
+          },
+          {
+            prompt: "How long a home water supply does Ready.gov recommend where possible?",
+            options: [
+              "Seventy-two hours, the same window it sets for an evacuation kit",
+              "Two weeks",
+              "One month, matched to the longest outage on record in most regions",
+              "Ten days, which is also the interval it gives for rotating containers",
+            ],
+            correctIndex: 1,
+            explanation:
+              "At least one gallon per person per day, with a two-week home supply where possible, and more for hot climates, children, nursing parents, and anyone who is ill. Three days is the evacuation figure, not the home one.",
+            sourceLessonSlug: "water-need-and-storage",
+          },
+          {
+            prompt: "What does the lesson say no filter can remove?",
+            options: [
+              "Sediment fine enough to pass through a rated one-micron pore",
+              "Parasites, which survive every portable filter sold to consumers",
+              "Chemical contamination",
+              "Bacteria, which reproduce faster than a cartridge can strain them out",
+            ],
+            correctIndex: 2,
+            explanation:
+              "No filter removes chemical contamination, and many portable filters do not reliably remove viruses either. Boiling and household disinfection do not fix chemicals and can concentrate some of them, so suspected fuel, pesticide, or industrial contamination means find another source.",
+            sourceLessonSlug: "filtration-vs-purification",
+          },
+          {
+            prompt: "What does the lesson tell you to do with cloudy water before disinfecting it?",
+            options: [
+              "Double the chemical dose to cover what the sediment will absorb",
+              "Boil it twice, letting it cool completely between the two boils",
+              "Add the disinfectant first so it has longer to work on the particles",
+              "Filter it or let it settle",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Filter or settle cloudy water first so disinfection can reach the pathogens. Then bring clear water to a rolling boil for one minute, three minutes above about 6,500 feet.",
+            sourceLessonSlug: "disinfecting-water-methods",
+          },
+          {
+            prompt: "What are the three things good shelter does?",
+            options: [
+              "Holds heat, stores your supplies, and keeps you out of sight of strangers",
+              "Blocks weather, insulates, and avoids hazards",
+              "Keeps you dry, keeps you fed, and keeps you inside a working phone signal",
+              "Traps warm air, collects rainwater, and marks your position for searchers",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It blocks wind and precipitation, insulates you from heat loss especially to the ground, and is sited away from flood channels, dead trees, unstable ground, and flames or smoke.",
+            sourceLessonSlug: "shelter-site-and-insulation",
+          },
+          {
+            prompt: "Why does the lesson insist on getting off the cold ground?",
+            options: [
+              "The ground conducts heat away fast",
+              "Because damp soil raises the humidity inside any shelter you close up",
+              "Because insects and small animals reach you far more easily down there",
+              "Because cold air pools in the lowest few inches of an enclosed space",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Heat leaves the body by conduction, convection, radiation, and evaporation, and the ground pulls it away by conduction fastest. The practical trio is get off the ground, block the wind, and stay dry, because wet clothing destroys insulation.",
+            sourceLessonSlug: "shelter-site-and-insulation",
+          },
+          {
+            prompt: "What are the two safety systems this course names against carbon monoxide?",
+            options: [
+              "A sealed room and a supply of bottled oxygen held for emergencies",
+              "A carbon filter on the appliance and a window opened on the far wall",
+              "Ventilation and detection",
+              "An outdoor fuel store and a written log of how long each device ran",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Ventilation, because combustion needs fresh air and a path for exhaust to leave, and detection, meaning battery-backup CO alarms. Headache, dizziness, and nausea can be CO symptoms: if an alarm sounds or you feel ill, get to fresh air and call for help.",
+            sourceLessonSlug: "safe-heat-and-ventilation",
+          },
+          {
+            prompt: "What does the CDC say about heating a home with a gas stove or oven?",
+            options: [
+              "It is acceptable for short periods if a window in the room stays open",
+              "It is safe only when a battery-backup CO alarm is in the same room",
+              "Never do it",
+              "It is allowed below freezing when no other heat source is available",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Never use a gas stove or oven to heat a home, and never run generators, charcoal grills, camp stoves, or other gasoline or charcoal-burning devices inside a home, basement, garage, or near windows.",
+            sourceLessonSlug: "safe-heat-and-ventilation",
+          },
+          {
+            prompt: "Which body temperature does the CDC treat as a hypothermia emergency?",
+            options: [
+              "Below 97°F, roughly where shivering begins in a healthy adult",
+              "Below 90°F, the point at which shivering stops and danger begins",
+              "Any reading a full degree under that person's own normal temperature",
+              "Below 95°F (35°C)",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The CDC treats a body temperature below 95°F (35°C) as an emergency needing medical attention. The warning signs it lists include shivering, exhaustion or confusion, fumbling hands, memory loss, slurred speech, and drowsiness.",
+            sourceLessonSlug: "hypothermia-and-heat-illness",
+          },
+          {
+            prompt: "How does heat stroke differ from heat exhaustion in the CDC's description?",
+            options: [
+              "It is life threatening and needs 911",
+              "It sets in only after several hours of steady work in direct sunlight",
+              "It brings heavy sweating, weakness, nausea, and a headache that will not lift",
+              "It reaches only people who were already dehydrated when the heat arrived",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Heat exhaustion brings heavy sweating, weakness, nausea, and headache, and it can progress to heat stroke, a life-threatening emergency with high body temperature, confusion, and possibly no sweating at all. Heat stroke requires calling 911 and rapid cooling.",
+            sourceLessonSlug: "hypothermia-and-heat-illness",
+          },
+          {
+            prompt: "Why does the food lesson warn against over-investing in a food supply?",
+            options: [
+              "Because most stored food spoils before a household ever rotates it",
+              "Because federal guidance caps what a household may claim afterward",
+              "Because a large pantry is the first thing looters look for in an outage",
+              "It is the lowest-priority immediate need",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Food is the three-week priority in the rule of 3s, which is exactly why it tempts people to over-invest in it and under-invest in water and shelter. Store a several-day supply of non-perishable food needing little or no cooking, water, or refrigeration.",
+            sourceLessonSlug: "food-storage-and-safety",
+          },
+          {
+            prompt: "Which foods have to be processed in a pressure canner?",
+            options: [
+              "Low-acid foods",
+              "Any food that will sit on a shelf for longer than a single year",
+              "Fruits and properly acidified pickles, which spoil fastest in storage",
+              "Anything frozen before canning, because ice crystals damage the seal",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Most vegetables, meats, poultry, and fish are low-acid, and only pressure canning reaches the temperature that destroys botulism spores. A boiling-water bath is safe only for high-acid foods such as most fruits and properly acidified pickles.",
+            sourceLessonSlug: "food-preservation-basics",
+          },
+          {
+            prompt: "What does the preservation lesson deliberately give you instead of a recipe?",
+            options: [
+              "A table of processing times for the twenty most commonly canned foods",
+              "A ranking of the three preservation methods from safest to least safe",
+              "A decision rule and the authority to consult",
+              "A list of the equipment to buy before attempting any of it at home",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Classify the food by acid level, which picks the method, then read the tested times and pressures from USDA and Cooperative Extension recipes. Those depend on the food, the jar size, and your altitude, which is why printing one recipe here would be unsafe.",
+            sourceLessonSlug: "food-preservation-basics",
+          },
+          {
+            prompt: "What does the foraging lesson say about an animal having eaten a plant?",
+            options: [
+              "It confirms the plant is edible as long as the animal was a mammal",
+              "It does not mean the plant is safe for you",
+              "It is the single most reliable field test available without an expert",
+              "It rules out the deadliest look-alikes but not the merely unpleasant ones",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Beware look-alikes, and know that animals ate it proves nothing about you. The rule is positive identification from a qualified local expert or do not eat it, and if poisoning is suspected, call Poison Control at 1-800-222-1222 or emergency services.",
+            sourceLessonSlug: "foraging-safety-principles",
+          },
+          {
+            prompt: "What are the four parts of an off-grid power chain?",
+            options: [
+              "Panels, wiring, a fuse box, and the appliances plugged into the wall",
+              "Fuel, a generator, an extension cord, and a transfer switch at the panel",
+              "Source, storage, conversion, and loads",
+              "Daylight, a battery, a meter, and the utility connection you fall back on",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A source such as solar panels or a generator, storage in batteries, conversion through a charge controller and an inverter that turns DC into AC, and the loads you actually run.",
+            sourceLessonSlug: "off-grid-power-basics",
+          },
+          {
+            prompt: "How does the lesson tell you to size an off-grid system?",
+            options: [
+              "By matching the rating printed on your home's main electrical panel",
+              "By doubling whatever your utility bill says you normally consume",
+              "By counting the outlets in the rooms you plan to keep powered",
+              "Watts times hours, with margin",
+            ],
+            correctIndex: 3,
+            explanation:
+              "List your critical loads, find each device's watts, multiply by hours to get watt-hours per day, and size source and storage to that number with margin. Prioritize ruthlessly: a medical device and communications beat conveniences.",
+            sourceLessonSlug: "off-grid-power-basics",
+          },
+          {
+            prompt: "What is backfeeding, and why does the lesson forbid it?",
+            options: [
+              "Running a generator on fuel that has been stored past its usable life",
+              "Plugging a generator into a wall outlet",
+              "Charging a battery bank from a generator that is already under load",
+              "Letting a generator idle for several minutes before the load is connected",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Backfeeding pushes power out onto the utility lines, where it can electrocute a lineworker, and it can start fires. Use a proper transfer switch, or plug appliances directly into the generator.",
+            sourceLessonSlug: "generator-and-fuel-safety",
+          },
+          {
+            prompt: "Where does the sanitation lesson say waste and any latrine must not go?",
+            options: [
+              "Inside any structure the household is still sleeping in at night",
+              "Anywhere the prevailing wind will carry the odor toward a neighbor",
+              "Near water sources or food prep",
+              "Within the boundary of a property you do not personally own or rent",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Keep waste and any latrine well away from water sources and food preparation. Contain and cover it, wash hands after every contact, and follow local instructions for final disposal rather than dumping into storm drains or waterways.",
+            sourceLessonSlug: "sanitation-human-waste",
+          },
+          {
+            prompt: "Why must greywater be kept away from your drinking water?",
+            options: [
+              "It is not safe to drink and can carry bacteria",
+              "Because its soap content neutralizes any disinfectant you add later",
+              "Because it is denser than clean water and settles to the bottom",
+              "Because storing the two together voids most containers' food-grade rating",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Used wash and rinse water is not safe to drink and can carry bacteria. Keep it away from drinking water, food, and any collection surfaces, and dispose of it as local authorities direct.",
+            sourceLessonSlug: "hygiene-greywater-disease",
+          },
+          {
+            prompt: "What does the CDC say floodwater can carry?",
+            options: [
+              "Nothing harmful once the visible sediment has settled out of it",
+              "Sewage, chemicals, and pathogens",
+              "Only the contaminants that were already present in the local river",
+              "Bacteria that die off after a full day of exposure to direct sunlight",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Floodwater and standing water can carry sewage, chemicals, and pathogens. Avoid contact where you can, never let it reach food or drinking water, and wash thoroughly after any contact.",
+            sourceLessonSlug: "hygiene-greywater-disease",
+          },
+          {
+            prompt: "What does the first aid lesson ask you to note about your home and workplace?",
+            options: [
+              "Which neighbor or colleague holds a current first aid certification",
+              "The drive to the nearest emergency room at the worst hour for traffic",
+              "Where the nearest AED is",
+              "Which exits stay unlocked once the building has been evacuated",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Book a Red Cross or equivalent first aid, CPR, and AED course, stock a kit to the Red Cross recommended contents, and note where the nearest AED to your home and workplace is.",
+            sourceLessonSlug: "first-aid-know-your-limits",
+          },
+          {
+            prompt: "Why does the Red Cross teach checking the scene before the patient?",
+            options: [
+              "Because the responding crew will ask what the scene looked like on arrival",
+              "An injured helper helps no one",
+              "Because moving a patient before the scene is cleared can worsen an injury",
+              "Because a bystander is protected in law only if the scene was documented",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Check that it is safe to approach, meaning no fire, live wires, traffic, unstable structure, or ongoing threat, use protection like gloves, then check the person and call for help.",
+            sourceLessonSlug: "first-aid-kit-and-scene-safety",
+          },
+          {
+            prompt: "Where does the lesson say to keep your first aid kits?",
+            options: [
+              "One in the kitchen and one wherever the household stores its tools",
+              "A single kit in the room the household spends the most time in",
+              "One at home and one left with the out-of-town contact in your plan",
+              "One at home and one in the car",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Build to the Red Cross list, keep one kit at home and one in the car, and check expiration dates twice a year so nothing in it has quietly expired before you need it.",
+            sourceLessonSlug: "first-aid-kit-and-scene-safety",
+          },
+          {
+            prompt: "Which agency operates NOAA Weather Radio All Hazards?",
+            options: [
+              "The National Weather Service",
+              "The Federal Emergency Management Agency, which also runs the alert systems",
+              "The Federal Communications Commission, which licenses the broadcast band",
+              "The Department of Homeland Security, which publishes the Ready.gov guidance",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The National Weather Service operates it as a nationwide network broadcasting official weather and other emergency information continuously. FEMA and Homeland Security appear in this course for Ready.gov and the alert systems, not for the radio network.",
+            sourceLessonSlug: "emergency-alerts-and-radios",
+          },
+          {
+            prompt: "Why does the communication plan ask for a written copy of key numbers?",
+            options: [
+              "Because carriers block unfamiliar numbers during a declared emergency",
+              "Because emergency dispatchers ask for a printed contact list on arrival",
+              "Phones die",
+              "Because a written list is the only record an insurer will accept later",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A phone with a dead battery takes the whole contact list with it, which is why the Ready.gov plan asks for a written card of key numbers alongside an out-of-town contact and agreed meeting places.",
+            sourceLessonSlug: "communication-plan-and-signaling",
+          },
+          {
+            prompt: "What does this course name as a widely recognized distress signal?",
+            options: [
+              "A single long blast repeated at intervals of exactly one minute",
+              "Two fires burning at the same time some distance apart from each other",
+              "Three of anything",
+              "A flashlight held steady on the horizon until somebody finally answers",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Three of anything, three whistle blasts or three fires, is widely recognized as distress. Signal mirrors, bright materials, and lights extend how far away you can be seen alongside it.",
+            sourceLessonSlug: "communication-plan-and-signaling",
           },
         ],
       },
