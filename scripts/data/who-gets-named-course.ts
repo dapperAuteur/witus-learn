@@ -1631,5 +1631,563 @@ Pauli Murray Center for History and Social Justice. (n.d.). *Who is Pauli Murray
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 4 — The author line and the patent: two formats, two failures
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "who-counts-as-an-author",
+      title: "13 · Who counts as an author, and who gets thanked",
+      section: "Section 4 · The author line and the patent",
+      body: `The author line at the top of a paper looks like a description of who did the work. It is not. It is the output of a rule, and the rule is written down.
+
+**The rule most of medicine and much of science uses.** The International Committee of Medical Journal Editors sets four criteria, and a contributor must meet **all four** to be an author. Substantial contributions to the conception or design of the work, or to the acquisition, analysis or interpretation of data. Drafting the work or reviewing it critically for important intellectual content. Final approval of the version to be published. And agreement to be accountable for all aspects of the work (International Committee of Medical Journal Editors, n.d.).
+
+**And the rule says where everyone else goes.** A contributor who fails any one of the four should be acknowledged rather than listed as an author. ICMJE names some contributions that do not by themselves qualify: acquiring the funding, general supervision of a research group, general administrative support, and writing assistance, technical editing, language editing and proofreading.
+
+**Read criterion two again, because it is the trapdoor.** Criteria one, three and four are about what you did and what you will stand behind. Criterion two is about being *asked into the writing*. Someone who is not invited to draft or to review the draft cannot satisfy it, no matter how much of the underlying work they did. So a rule that looks like a measure of contribution contains one clause that measures inclusion, and inclusion is exactly the thing a hierarchy controls.
+
+**The acknowledgement line is a different currency, not a smaller share of the same one.** An acknowledgement is not indexed as authorship, so it does not accumulate. Twenty years of them add up to nothing a hiring committee counts. That is the four-currencies point from lesson 1 in one paragraph: being named and being counted are separate.
+
+**A partial fix exists.** CRediT is a community-owned taxonomy of fourteen contributor roles, from conceptualization and data curation through software, supervision and writing, approved as an ANSI/NISO standard, Z39.104-2022 (NISO, 2022). It lets a paper say *what each person did*, which is a real improvement. It does not decide who counts as an author, so it solves the description problem and leaves the counting problem where it was.
+
+**Why this matters more every decade.** Wuchty, Jones and Uzzi (2007) examined 19.9 million papers across five decades and 2.1 million patents, and found that teams increasingly dominate solo authors across science and engineering, the social sciences, the arts and humanities, and patents, with team-produced work also more frequently cited. As teams grow, more people work on each output, and the number sitting below the authorship bar grows with them. That last step is a prediction from the rule rather than a measured finding, and it is worth saying which is which.
+
+:::reveal How many ICMJE authorship criteria are there, and how many must a contributor meet? ||| Four, and all four. Substantial contribution to conception, design, acquisition, analysis or interpretation; drafting or critically reviewing the work; final approval; and agreement to be accountable for all aspects of it.
+
+:::reveal Why does this lesson call criterion two the trapdoor? ||| Because drafting or critically reviewing the work requires being asked into the writing. Someone excluded from that step cannot meet it however much of the underlying work they did, so a rule that looks like a measure of contribution contains a clause that measures inclusion.
+
+:::reveal What does CRediT fix, and what does it leave alone? ||| Its fourteen roles let a paper record what each person did, which fixes the description problem. It does not decide who qualifies as an author, so the counting problem is untouched.
+
+## Vocabulary
+- **ICMJE criteria**: the four conditions, all of which a contributor must meet to be listed as an author rather than acknowledged.
+- **Acknowledgement**: the line for contributors who fail any criterion, which names a person without accumulating the way a byline does.
+- **CRediT**: a community-owned taxonomy of fourteen contributor roles, ANSI/NISO Z39.104-2022, which describes contribution without deciding authorship.
+- **Trapdoor clause**: a criterion that measures inclusion rather than contribution, and which a hierarchy can therefore control.
+
+## Sources
+International Committee of Medical Journal Editors. (n.d.). *Defining the role of authors and contributors*. https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html
+
+NISO. (2022). *CRediT: Contributor Roles Taxonomy* (ANSI/NISO Z39.104-2022). https://credit.niso.org/
+
+Wuchty, S., Jones, B. F., & Uzzi, B. (2007). The increasing dominance of teams in production of knowledge. *Science, 316*(5827), 1036-1039. https://doi.org/10.1126/science.1136099`,
+    },
+    {
+      slug: "vivien-thomas-and-the-author-line",
+      title: "14 · Vivien Thomas, and a rule that decided before it weighed",
+      section: "Section 4 · The author line and the patent",
+      body: `Vivien Thomas was born on 29 August 1910 and died on 26 November 1985. In 1930 he took a job in Alfred Blalock's laboratory at Vanderbilt. His job title was assistant janitor, and although he was soon doing work at a postdoctoral level he continued to be classified and paid as a janitor and maintenance worker (Vanderbilt University, n.d.). In 1941 Blalock was recruited to Johns Hopkins and Thomas went with him.
+
+**What he actually did.** Thomas developed the systemic-to-pulmonary shunt in the laboratory, working out the operation in dogs and adapting the instruments for use on an infant. On 29 November 1944, when the operation was first performed on a fifteen-month-old patient, Eileen Saxon, Blalock had Thomas stand close behind him at the operating table, against all convention, so that he could give quiet advice during the procedure (Treasure, 2017).
+
+**What the record said.** The landmark paper, "The surgical treatment of malformations of the heart in which there is pulmonary stenosis or pulmonary atresia," appeared in *JAMA* on 19 May 1945 under two names, Alfred Blalock and Helen B. Taussig. Thomas is not among the authors.
+
+**Run the ICMJE test on it, knowing the criteria did not exist yet.** This is an exercise in mechanism, not a verdict on 1945. Criterion one, substantial contribution to conception, design or the acquisition and analysis of data: plainly satisfied. Criteria three and four, approval and accountability: withheld from him by the fact that nobody offered. Criterion two, drafting the work or reviewing it critically: he was not asked, and a technician in 1945 could not have asked to be. That is the trapdoor from the previous lesson, and it shows the shape of the thing. The convention decided the outcome *before* anyone weighed the contribution, because the one criterion Thomas could not reach was the one his job title controlled.
+
+**The corrections came, and they came slowly.** In 1971 his colleagues arranged a ceremony and presented his portrait to the institution. In 1976 Johns Hopkins awarded him an honorary Doctor of Laws, not a medical doctorate, and appointed him to the faculty as Instructor of Surgery. His autobiography was published in 1985, the year he died, and reissued in 1998 as *Partners of the Heart*. In 2022 Kathleen Blake and Clyde W. Yancy argued in *JAMA Surgery* that the procedure should be renamed the Blalock-Thomas-Taussig shunt (Blake & Yancy, 2022). On 26 February 2024 five Ontario children's hospitals announced they had adopted that name.
+
+**Count the years, because Section 6 will.** Twenty seven from the operation to the portrait. Thirty two to the faculty appointment. Seventy eight from the paper to the *JAMA Surgery* argument for the rename. None of that restored an author line, because an author line from 1945 is not a thing anyone can reopen.
+
+:::reveal What was Thomas's job classification while doing postdoctoral-level surgical research? ||| He was hired at Vanderbilt in 1930 with the title assistant janitor, and continued to be classified and paid as a janitor and maintenance worker while doing the research.
+
+:::reveal Which ICMJE criterion could Thomas not have satisfied in 1945, and why does that decide the case? ||| Drafting the work or reviewing it critically for important intellectual content, because he was not asked into the writing and his position made asking impossible. It is the one criterion his job title controlled, so the convention decided the outcome before anyone weighed his contribution.
+
+:::reveal List the corrections Thomas received and their years. ||| A portrait presented in 1971. An honorary Doctor of Laws and appointment as Instructor of Surgery in 1976. His autobiography in 1985, reissued in 1998. A published argument for renaming the procedure in 2022, and five Ontario children's hospitals adopting Blalock-Thomas-Taussig in February 2024.
+
+## Vocabulary
+- **Systemic-to-pulmonary shunt**: the surgical connection Thomas worked out in the laboratory, which raised oxygenation in children with certain heart malformations.
+- **Honorary Doctor of Laws**: the degree Hopkins awarded Thomas in 1976, which is not a medical doctorate, and the distinction matters to what the correction did and did not do.
+- **Eponym change**: renaming a procedure to add a contributor, one of the few instruments available when the original document cannot be reopened.
+- **Retrospective rule test**: applying a modern criterion to an old case to see which clause decided it, without pretending the criterion applied at the time.
+
+## Sources
+Blake, K., & Yancy, C. W. (2022). Change the name of the Blalock-Taussig shunt to Blalock-Thomas-Taussig shunt. *JAMA Surgery, 157*(4), 287-288. https://doi.org/10.1001/jamasurg.2021.5611
+
+Treasure, T. (2017). Turning blue babies pink: Alfred Blalock's shunt for Fallot's tetralogy. *Journal of the Royal Society of Medicine, 110*(9), 376-379. https://pmc.ncbi.nlm.nih.gov/articles/PMC5962041/
+
+Vanderbilt University. (n.d.). *Opening doors: Vivien Thomas*. Eskind Biomedical Library. https://www.library.vanderbilt.edu/specialcollections/history-of-medicine/exhibits/opening_doors/vivien_thomas.php`,
+    },
+    {
+      slug: "inventorship-is-not-ownership",
+      title: "15 · The patent does the opposite, and that is the lesson",
+      section: "Section 4 · The author line and the patent",
+      body: `A patent and a paper are both documents that attach names to work. They fail in opposite directions, and setting them side by side is the fastest way to see that credit rules are choices rather than nature.
+
+**United States patent law splits two questions that the author line fuses.** *Inventorship* is a question of fact about who conceived the claimed invention, and the statute requires that an application name the inventor, with each inventor or joint inventor executing an oath or declaration (35 U.S.C. § 115). *Ownership* is a question of property: a patent has the attributes of personal property and is assignable (35 U.S.C. § 261). Two questions, two answers, both recorded.
+
+**The Supreme Court has been explicit about the order.** In *Board of Trustees of the Leland Stanford Junior University v. Roche Molecular Systems*, 563 U.S. 776 (2011), the Court held that title in a patented invention vests first in the inventor, even where the research was federally funded under the Bayh-Dole Act, and that an obligation to assign is contractual and comes second.
+
+**Now compare the two failure modes.** On a paper, a contributor who fails one criterion disappears from the top of the document and reappears, if at all, in a paragraph nobody counts. On a patent, the human inventors stay named on the document permanently, and what moves is the money. A company can own every commercial benefit of an invention while the inventor's name remains printed on the grant, findable a century later by anyone with the number.
+
+**Which makes a patent an unusually good historical record and a poor public one.** The document keeps the name. The *product* does not. The failure in the patent system is not erasure from the record but erasure from the thing the public sees, where a brand carries the name instead of a person, and where the assignment that moved the property is invisible to a customer.
+
+**This course stops here on purpose.** The assignment clause, what it required and when, who was legally permitted to hold a patent and in which years, the 1836 oath requirement, the 1858 opinion, and eleven verified patent numbers are the whole subject of the sibling course in this series, Who Gets the Credit. Taking a patent number and reading it yourself is taught there, step by step. What you need here is only the contrast: two formats, two rules, two different things that go missing.
+
+**The transferable habit.** When you meet a credit dispute, ask which document was supposed to record the answer, then ask what that document's rule actually decides. A paper's rule decides who is *named*. A patent's rule decides who is named *and*, separately, who *owns*. Neither rule decides who did the work, and neither was ever designed to.
+
+:::reveal What two questions does United States patent law keep separate, and where is each recorded? ||| Inventorship, a question of fact about who conceived the claimed invention, recorded by the requirement that the application name the inventor with an oath or declaration. And ownership, a question of property, which is assignable. Both are recorded, separately.
+
+:::reveal What did Stanford v. Roche hold about where title first vests? ||| That title in a patented invention vests first in the inventor, even where the work was federally funded under Bayh-Dole, and that an obligation to assign is contractual and secondary.
+
+:::reveal Contrast the failure mode of a paper with that of a patent. ||| On a paper the contributor vanishes from the document itself into an uncounted acknowledgement. On a patent the inventor stays named permanently and the money moves instead, so the erasure happens on the product and the brand rather than in the record.
+
+## Vocabulary
+- **Inventorship**: a factual question about who conceived the claimed invention, which the statute requires an application to name.
+- **Assignment**: the transfer of a patent's ownership, possible because a patent has the attributes of personal property.
+- **Bayh-Dole**: the 1980 federal statute on federally funded inventions, which Stanford v. Roche held does not displace the inventor's first title.
+- **Erasure from the product**: the patent system's characteristic failure, where the record keeps the name but the brand the public sees does not.
+
+## Sources
+Board of Trustees of the Leland Stanford Junior University v. Roche Molecular Systems, Inc., 563 U.S. 776 (2011).
+
+Patent Act, 35 U.S.C. § 115 (Inventor's oath or declaration). https://uscode.house.gov/view.xhtml?req=granuleid%3AUSC-prelim-title35-section115
+
+Patent Act, 35 U.S.C. § 261 (Ownership; assignment).`,
+    },
+    {
+      slug: "quiz-author-line-and-patent",
+      title: "16 · Knowledge check: the author line and the patent",
+      section: "Section 4 · The author line and the patent",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "The author line at the top of a paper is best described as:",
+            options: ["The output of a written rule", "A description of everyone whose labor contributed to the published result", "A negotiated ranking, ordered by how much of the work each person performed", "A legal record of who holds the copyright in the text as it was submitted"],
+            correctIndex: 0,
+            explanation: "It looks like a description of who did the work and is not. The rule exists in writing and can be read.",
+            sourceLessonSlug: "who-counts-as-an-author",
+          },
+          {
+            prompt: "How many ICMJE authorship criteria are there?",
+            options: ["Four", "Three, covering contribution, approval, and accountability for the published work", "Seven, one for each stage of a study from design through to post-publication review", "Fourteen, matching the number of contributor roles defined in the CRediT taxonomy"],
+            correctIndex: 0,
+            explanation: "Fourteen is CRediT, which is a different instrument and does not decide authorship at all.",
+            sourceLessonSlug: "who-counts-as-an-author",
+          },
+          {
+            prompt: "How many of the ICMJE criteria must a contributor meet to be listed as an author?",
+            options: ["All of them", "At least two, provided one of them concerns the intellectual content of the work", "A majority, as judged by the corresponding author when the submission is assembled", "Whichever the journal specifies in its own instructions, which vary between titles"],
+            correctIndex: 0,
+            explanation: "All four. A contributor failing any one of them should be acknowledged rather than listed as an author.",
+            sourceLessonSlug: "who-counts-as-an-author",
+          },
+          {
+            prompt: "Which of these is one of the four ICMJE criteria?",
+            options: ["Final approval of the version to be published", "Employment by an institution that has agreed to indemnify the work's authors", "Presence at the site where the data were collected during the study period", "Named receipt of the grant funding that paid for the research being reported"],
+            correctIndex: 0,
+            explanation: "The others are substantial contribution to conception, design, acquisition, analysis or interpretation; drafting or critical review; and agreement to be accountable.",
+            sourceLessonSlug: "who-counts-as-an-author",
+          },
+          {
+            prompt: "Which of these does ICMJE say does NOT by itself qualify someone for authorship?",
+            options: ["Acquiring the funding", "Interpreting the data on which the paper's central claim depends", "Reviewing the manuscript critically for important intellectual content", "Designing the study that produced the results being reported"],
+            correctIndex: 0,
+            explanation: "Along with general supervision of a research group, general administrative support, and writing assistance, technical editing, language editing and proofreading.",
+            sourceLessonSlug: "who-counts-as-an-author",
+          },
+          {
+            prompt: "This lesson calls which ICMJE criterion the trapdoor?",
+            options: ["Drafting or critically reviewing the work", "Agreement to be accountable for all aspects of the published work", "Substantial contribution to the acquisition and analysis of the data", "Final approval of the version that the journal ultimately publishes"],
+            correctIndex: 0,
+            explanation: "It requires being asked into the writing, which is a measure of inclusion rather than of contribution, and inclusion is what a hierarchy controls.",
+            sourceLessonSlug: "who-counts-as-an-author",
+          },
+          {
+            prompt: "Why is the trapdoor clause dangerous even when applied honestly?",
+            options: ["A hierarchy decides who is invited to write", "Because drafting is the least skilled part of research and rewards the wrong people", "Because journals rarely check whether the claimed drafting actually took place", "Because non-native speakers are systematically excluded from the drafting stage"],
+            correctIndex: 0,
+            explanation: "Someone who is never asked to draft or review cannot satisfy it, however much of the underlying work they did.",
+            sourceLessonSlug: "who-counts-as-an-author",
+          },
+          {
+            prompt: "An acknowledgement differs from an authorship credit because it:",
+            options: ["Does not accumulate", "Names the person less prominently, in smaller type at the foot of the article", "Requires no permission from the person being named in the published version", "Can be added after publication, whereas an author line is fixed at acceptance"],
+            correctIndex: 0,
+            explanation: "It is not indexed as authorship, so twenty years of acknowledgements add up to nothing a hiring committee counts. Being named and being counted are separate.",
+            sourceLessonSlug: "who-counts-as-an-author",
+          },
+          {
+            prompt: "The acknowledgement line illustrates which idea from lesson 1?",
+            options: ["Credit comes in separate currencies", "The format cap, since an acknowledgement paragraph has a fixed maximum length", "The rationing decision, which only arises once the author list is already full", "The eponym, because a thanked contributor is sometimes later attached to the method"],
+            correctIndex: 0,
+            explanation: "Being named and being counted are two different currencies, and holding one does not get you the other.",
+            sourceLessonSlug: "who-counts-as-an-author",
+          },
+          {
+            prompt: "CRediT defines how many contributor roles?",
+            options: ["Fourteen", "Four, aligned one to one with the ICMJE authorship criteria it was built to supplement", "Twenty six, covering every task a modern multi-site research collaboration involves", "A variable number, which each participating publisher extends to suit its own fields"],
+            correctIndex: 0,
+            explanation: "From conceptualization and data curation through software, supervision, and the two writing roles.",
+            sourceLessonSlug: "who-counts-as-an-author",
+          },
+          {
+            prompt: "CRediT's formal standard designation is:",
+            options: ["ANSI/NISO Z39.104-2022", "ISO 21001:2018, the management standard for educational organizations", "ICMJE Recommendation 2.1, issued alongside the four authorship criteria", "IEEE 1471-2000, adapted from the software architecture description standard"],
+            correctIndex: 0,
+            explanation: "A community-owned taxonomy, approved as an ANSI/NISO standard in 2022.",
+            sourceLessonSlug: "who-counts-as-an-author",
+          },
+          {
+            prompt: "What does CRediT solve, and what does it leave untouched?",
+            options: ["Solves description, leaves counting", "Solves counting, leaves the description of individual contributions to each journal", "Solves both, which is why major publishers adopted it in place of the ICMJE rule", "Solves neither, since it is advisory and no journal is required to implement it"],
+            correctIndex: 0,
+            explanation: "It records what each person did. It does not decide who qualifies as an author, so the counting problem sits exactly where it was.",
+            sourceLessonSlug: "who-counts-as-an-author",
+          },
+          {
+            prompt: "Wuchty, Jones and Uzzi examined how many papers?",
+            options: ["19.9 million", "109,624, across fourteen funding programs at six separate research funders", "2.1 million, which is the number of patents rather than of papers in their data", "About 5,000, drawn from the thirteen disciplinary societies whose awards were counted"],
+            correctIndex: 0,
+            explanation: "Across five decades, together with 2.1 million patents.",
+            sourceLessonSlug: "who-counts-as-an-author",
+          },
+          {
+            prompt: "What did Wuchty, Jones and Uzzi find about teams?",
+            options: ["They increasingly dominate solo authors", "That team size peaked in the 1980s and has fallen steadily in every field since", "That teams produce more papers but each is cited less often than solo-authored work", "That the shift toward teams occurred in the sciences but not in the humanities or in patents"],
+            correctIndex: 0,
+            explanation: "Across science and engineering, the social sciences, the arts and humanities, and patents, with team-produced work also more frequently cited.",
+            sourceLessonSlug: "who-counts-as-an-author",
+          },
+          {
+            prompt: "This lesson's claim that growing teams push more people below the authorship bar is:",
+            options: ["A prediction from the rule, not a measured finding", "A direct result reported in the Wuchty, Jones and Uzzi paper itself", "An ICMJE policy statement about how large collaborations should assign credit", "A conclusion drawn from the CRediT data collected by participating publishers"],
+            correctIndex: 0,
+            explanation: "And the lesson says which is which, because presenting an inference as a measurement is the failure this course keeps warning about.",
+            sourceLessonSlug: "who-counts-as-an-author",
+          },
+          {
+            prompt: "The Wuchty, Jones and Uzzi study appeared in which journal and year?",
+            options: ["Science, in 2007", "Social Studies of Science, in 2012, alongside the study of awards and prizes", "The Proceedings of the National Academy of Sciences, in 2018", "JAMA Surgery, in 2022, in the viewpoint proposing an eponym change"],
+            correctIndex: 0,
+            explanation: "Science 316(5827), 1036-1039, four decades after Merton named the Matthew effect in the same journal.",
+            sourceLessonSlug: "who-counts-as-an-author",
+          },
+          {
+            prompt: "Which ICMJE criterion concerns standing behind the work after publication?",
+            options: ["Agreement to be accountable", "Final approval of the version to be published before it goes to press", "Drafting the work or reviewing it critically for important intellectual content", "Substantial contribution to the conception or design of the reported study"],
+            correctIndex: 0,
+            explanation: "Accountability for all aspects of the work, ensuring questions about accuracy or integrity are investigated and resolved.",
+            sourceLessonSlug: "who-counts-as-an-author",
+          },
+          {
+            prompt: "Under the ICMJE rule, where does a contributor who fails one criterion belong?",
+            options: ["In the acknowledgements", "Nowhere, since a partial contribution creates no obligation on the authors", "In a supplementary file listing all personnel who worked on the project", "As a corresponding author, a category with a lower threshold than full authorship"],
+            correctIndex: 0,
+            explanation: "Acknowledged rather than listed as an author, with the contribution specified and written permission obtained.",
+            sourceLessonSlug: "who-counts-as-an-author",
+          },
+          {
+            prompt: "Vivien Thomas's job title when he was hired into Blalock's laboratory in 1930 was:",
+            options: ["Assistant janitor", "Surgical research technician, a grade created for him by the medical school", "Laboratory supervisor, the post he would later hold at Johns Hopkins as well", "Research assistant, with a salary matched to the postdoctoral scale of the period"],
+            correctIndex: 0,
+            explanation: "At Vanderbilt. He continued to be classified and paid as a janitor and maintenance worker while doing postdoctoral-level work.",
+            sourceLessonSlug: "vivien-thomas-and-the-author-line",
+          },
+          {
+            prompt: "Thomas moved to Johns Hopkins in which year, and why?",
+            options: ["1941, when Blalock was recruited there", "1930, immediately after completing his own training in surgical research methods", "1944, so that he could be present for the first operation on a human patient", "1976, when the medical school appointed him an instructor and awarded a degree"],
+            correctIndex: 0,
+            explanation: "He had joined Blalock's laboratory at Vanderbilt in 1930 and went with him to Baltimore eleven years later.",
+            sourceLessonSlug: "vivien-thomas-and-the-author-line",
+          },
+          {
+            prompt: "What did Thomas develop in the laboratory?",
+            options: ["The systemic-to-pulmonary shunt", "A method of preserving blood plasma for transfusion during surgery", "The first mechanical pump capable of sustaining circulation during an operation", "A diagnostic technique for identifying heart malformations before birth"],
+            correctIndex: 0,
+            explanation: "Working the operation out in dogs and adapting the instruments for use on an infant.",
+            sourceLessonSlug: "vivien-thomas-and-the-author-line",
+          },
+          {
+            prompt: "The first blue baby operation took place on:",
+            options: ["29 November 1944", "19 May 1945, the day the landmark paper appeared in JAMA", "12 March 1945, when the results were read to the Johns Hopkins Medical Society", "26 February 2024, the date now marked by five Ontario children's hospitals"],
+            correctIndex: 0,
+            explanation: "On Eileen Saxon, a fifteen-month-old patient. The paper reporting it followed nearly six months later.",
+            sourceLessonSlug: "vivien-thomas-and-the-author-line",
+          },
+          {
+            prompt: "Where did Thomas stand during that first operation?",
+            options: ["Close behind Blalock at the table", "In the observation gallery above the theater, with the medical students", "At a second table, preparing the instruments he had adapted for the procedure", "Outside the theater entirely, because hospital policy barred him from the room"],
+            correctIndex: 0,
+            explanation: "Against all convention, so that he could give quiet advice during the procedure.",
+            sourceLessonSlug: "vivien-thomas-and-the-author-line",
+          },
+          {
+            prompt: "Who were the named authors of the 1945 JAMA paper?",
+            options: ["Blalock and Taussig", "Blalock, Taussig and Thomas, with Thomas listed in the final position", "Blalock alone, with Taussig and Thomas both named in the acknowledgements", "Taussig and Thomas, since Blalock had already published the technique separately"],
+            correctIndex: 0,
+            explanation: "Alfred Blalock and Helen B. Taussig. Thomas is not among the authors.",
+            sourceLessonSlug: "vivien-thomas-and-the-author-line",
+          },
+          {
+            prompt: "Which ICMJE criterion does the lesson say Thomas plainly satisfied?",
+            options: ["Substantial contribution to the work", "Drafting the paper or reviewing it critically for important intellectual content", "Final approval of the version of the manuscript that JAMA ultimately published", "Agreement to be publicly accountable for the accuracy of everything reported"],
+            correctIndex: 0,
+            explanation: "Conception, design, and the acquisition and analysis of data. The other three were withheld from him because nobody offered.",
+            sourceLessonSlug: "vivien-thomas-and-the-author-line",
+          },
+          {
+            prompt: "Why does the lesson say the convention decided before it weighed?",
+            options: ["His job title controlled the one criterion he could not reach", "Because the journal's editors rejected his name when the manuscript was submitted", "Because the criteria were applied by Blalock personally rather than by the journal", "Because the operation's success was announced before the paper was written"],
+            correctIndex: 0,
+            explanation: "A technician in 1945 could not ask to be brought into the drafting, so the outcome was fixed by his position rather than by his contribution.",
+            sourceLessonSlug: "vivien-thomas-and-the-author-line",
+          },
+          {
+            prompt: "Applying the ICMJE criteria to a 1945 paper is described here as:",
+            options: ["An exercise in mechanism, not a verdict on 1945", "A legitimate basis for a formal correction to the published author line", "The method the JAMA Surgery viewpoint used to argue for renaming the shunt", "An anachronism the lesson performs deliberately in order to reject the criteria"],
+            correctIndex: 0,
+            explanation: "The criteria did not exist then. Running them backwards shows which clause decides such a case, which is what a mechanism course wants.",
+            sourceLessonSlug: "vivien-thomas-and-the-author-line",
+          },
+          {
+            prompt: "What happened for Thomas in 1971?",
+            options: ["His portrait was presented to the institution", "He was awarded an honorary degree and appointed to the faculty of the medical school", "He published the autobiography that was later reissued as Partners of the Heart", "The procedure was renamed to include his name in the standard eponym"],
+            correctIndex: 0,
+            explanation: "Colleagues arranged a ceremony and presented the portrait. The degree and the faculty appointment came five years later.",
+            sourceLessonSlug: "vivien-thomas-and-the-author-line",
+          },
+          {
+            prompt: "What did Johns Hopkins award Thomas in 1976?",
+            options: ["An honorary Doctor of Laws", "An honorary Doctor of Medicine, backdated to the year of the first operation", "A tenured full professorship in the department of surgery at the medical school", "A retroactive listing as third author on the 1945 paper reporting the operation"],
+            correctIndex: 0,
+            explanation: "Not a medical doctorate. He was also appointed to the faculty as Instructor of Surgery in the same year.",
+            sourceLessonSlug: "vivien-thomas-and-the-author-line",
+          },
+          {
+            prompt: "The faculty title Thomas received in 1976 was:",
+            options: ["Instructor of Surgery", "Associate Professor of Surgical Research, with a laboratory of his own", "Director of the Surgical Laboratories, the post he had effectively held for decades", "Adjunct Lecturer in Anatomy, a title carrying no departmental voting rights"],
+            correctIndex: 0,
+            explanation: "Alongside the honorary Doctor of Laws, thirty two years after the first operation.",
+            sourceLessonSlug: "vivien-thomas-and-the-author-line",
+          },
+          {
+            prompt: "Thomas's autobiography was published in 1985 and reissued in 1998 under what title?",
+            options: ["Partners of the Heart", "Something the Lord Made, the title later used for a film about the collaboration", "The Blue Baby Operation, following the name by which the procedure was known", "Pioneering Research, an abbreviation of the original title used on the first edition"],
+            correctIndex: 0,
+            explanation: "The year of the first publication was the year he died, which is itself part of the timing this course keeps counting.",
+            sourceLessonSlug: "vivien-thomas-and-the-author-line",
+          },
+          {
+            prompt: "Who argued in JAMA Surgery in 2022 for renaming the shunt?",
+            options: ["Kathleen Blake and Clyde W. Yancy", "Alfred Blalock's surviving students at the Johns Hopkins department of surgery", "The International Committee of Medical Journal Editors, in a policy recommendation", "Helen Taussig, in a late essay revisiting the credit for the original procedure"],
+            correctIndex: 0,
+            explanation: "Their viewpoint proposed that the procedure be known as the Blalock-Thomas-Taussig shunt.",
+            sourceLessonSlug: "vivien-thomas-and-the-author-line",
+          },
+          {
+            prompt: "What happened on 26 February 2024?",
+            options: ["Five Ontario children's hospitals adopted the new name", "Johns Hopkins issued a formal correction to the 1945 JAMA paper", "The American Medical Association added Thomas to the paper's author line", "Vanderbilt University reclassified Thomas's historical employment records"],
+            correctIndex: 0,
+            explanation: "They announced they had adopted Blalock-Thomas-Taussig, two years after the published argument for the change.",
+            sourceLessonSlug: "vivien-thomas-and-the-author-line",
+          },
+          {
+            prompt: "How many years separated the first operation from the portrait ceremony?",
+            options: ["Twenty seven", "Thirty two, the same interval as the faculty appointment that followed", "Seventy eight, matching the gap to the published argument for the rename", "Eleven, counting from his arrival at Johns Hopkins with Blalock in 1941"],
+            correctIndex: 0,
+            explanation: "1944 to 1971. Thirty two years to the faculty appointment, and seventy eight from the paper to the JAMA Surgery viewpoint.",
+            sourceLessonSlug: "vivien-thomas-and-the-author-line",
+          },
+          {
+            prompt: "What did none of the corrections to Thomas's record restore?",
+            options: ["An author line", "An honorary degree, which Johns Hopkins was unable to award him", "A named place in the eponym, which no institution has yet adopted", "A record of his laboratory work, which had never been documented at all"],
+            correctIndex: 0,
+            explanation: "A 1945 author line is not a thing anyone can reopen, which is exactly the limit Section 6 measures.",
+            sourceLessonSlug: "vivien-thomas-and-the-author-line",
+          },
+          {
+            prompt: "Thomas was born and died in which years?",
+            options: ["1910 and 1985", "1899 and 1964, spanning the whole period of the shunt's development", "1910 and 1976, the year of the honorary degree and faculty appointment", "1920 and 1998, the year his autobiography was reissued in paperback"],
+            correctIndex: 0,
+            explanation: "Born 29 August 1910, died 26 November 1985, the same year his autobiography appeared.",
+            sourceLessonSlug: "vivien-thomas-and-the-author-line",
+          },
+          {
+            prompt: "United States patent law separates which two questions?",
+            options: ["Inventorship and ownership", "Novelty and non-obviousness, which are the two tests an application must survive", "Conception and reduction to practice, which decide the date of the invention", "Disclosure and enforcement, which govern publication and litigation respectively"],
+            correctIndex: 0,
+            explanation: "Inventorship is a question of fact about who conceived the claimed invention. Ownership is a question of property, and it is assignable.",
+            sourceLessonSlug: "inventorship-is-not-ownership",
+          },
+          {
+            prompt: "Which statute requires that a patent application name the inventor?",
+            options: ["35 U.S.C. section 115", "35 U.S.C. section 261, which concerns the assignment of issued patents", "The Bayh-Dole Act of 1980, for any invention arising from federal funding", "Article I section 8 of the Constitution, which establishes the patent power"],
+            correctIndex: 0,
+            explanation: "The inventor's oath or declaration provision. Section 261 is the ownership and assignment provision.",
+            sourceLessonSlug: "inventorship-is-not-ownership",
+          },
+          {
+            prompt: "What does 35 U.S.C. section 261 establish about a patent?",
+            options: ["It has the attributes of personal property and is assignable", "That it expires twenty years from the date the application was first filed", "That only a natural person, never a company, may be recorded as its holder", "That the inventor may not transfer it without the consent of the Patent Office"],
+            correctIndex: 0,
+            explanation: "Which is what lets ownership move to a company while the inventor's name stays printed on the grant.",
+            sourceLessonSlug: "inventorship-is-not-ownership",
+          },
+          {
+            prompt: "Stanford v. Roche was decided in which year, and at what citation?",
+            options: ["2011, at 563 U.S. 776", "1980, the year Congress passed the Bayh-Dole Act it interpreted", "2022, alongside the JAMA Surgery viewpoint on the shunt's eponym", "1933, in the earlier line of cases on an employer's shop rights"],
+            correctIndex: 0,
+            explanation: "Board of Trustees of the Leland Stanford Junior University v. Roche Molecular Systems, Inc.",
+            sourceLessonSlug: "inventorship-is-not-ownership",
+          },
+          {
+            prompt: "What did the Court hold in Stanford v. Roche?",
+            options: ["Title vests first in the inventor", "That federally funded inventions vest automatically in the funding agency", "That a university may take title unilaterally to any invention made on its premises", "That an inventor may not assign a patent before the application has been granted"],
+            correctIndex: 0,
+            explanation: "Even where the research was federally funded under Bayh-Dole. An obligation to assign is contractual and comes second.",
+            sourceLessonSlug: "inventorship-is-not-ownership",
+          },
+          {
+            prompt: "Under Stanford v. Roche, an obligation to assign an invention is:",
+            options: ["Contractual and secondary", "Automatic wherever the inventor is an employee of the assignee", "Void unless it is recorded with the Patent Office before the grant issues", "The primary source of title, displacing the inventor's own claim entirely"],
+            correctIndex: 0,
+            explanation: "It comes second, after the inventor's first title, which is the order the Court was explicit about.",
+            sourceLessonSlug: "inventorship-is-not-ownership",
+          },
+          {
+            prompt: "Bayh-Dole concerns:",
+            options: ["Federally funded inventions", "The four criteria a contributor must meet to be listed as an author", "The number of people among whom a single prize may be divided", "The taxonomy of contributor roles used by academic publishers"],
+            correctIndex: 0,
+            explanation: "The 1980 statute governing them, which Stanford v. Roche held does not displace the inventor's first title.",
+            sourceLessonSlug: "inventorship-is-not-ownership",
+          },
+          {
+            prompt: "On a paper, a contributor who fails one criterion:",
+            options: ["Disappears from the top of the document", "Is listed last, in a position conventionally reserved for junior contributors", "Retains a legal interest in the work even though the byline omits their name", "Must be named in a supplementary contributions file the journal publishes"],
+            correctIndex: 0,
+            explanation: "And reappears, if at all, in a paragraph nobody counts.",
+            sourceLessonSlug: "inventorship-is-not-ownership",
+          },
+          {
+            prompt: "On a patent, what moves when a company acquires the rights?",
+            options: ["The money", "The inventor's name, which is replaced by the assignee's on the printed grant", "The oath or declaration, which the assignee re-executes in the inventor's place", "The filing date, which resets to the date the assignment was recorded"],
+            correctIndex: 0,
+            explanation: "The human inventors stay named on the document permanently, findable a century later by anyone with the number.",
+            sourceLessonSlug: "inventorship-is-not-ownership",
+          },
+          {
+            prompt: "The characteristic failure of the patent system, in this lesson's account, is:",
+            options: ["Erasure from the product", "Erasure from the record, since assignment removes the inventor from the document", "Delay, because a patent takes years to issue and the inventor may die first", "Duplication, because two inventors may hold patents on substantially the same thing"],
+            correctIndex: 0,
+            explanation: "The document keeps the name. The product the public sees carries a brand instead, and the assignment that moved the property is invisible to a customer.",
+            sourceLessonSlug: "inventorship-is-not-ownership",
+          },
+          {
+            prompt: "Why is a patent an unusually good historical record?",
+            options: ["The inventor's name stays on it permanently", "Because patent examiners verify each claimed contribution before granting it", "Because the Patent Office publishes the correspondence behind every application", "Because assignments must be recorded publicly before ownership can transfer"],
+            correctIndex: 0,
+            explanation: "And it is retrievable by number, which makes it checkable in a way an old author line is not.",
+            sourceLessonSlug: "inventorship-is-not-ownership",
+          },
+          {
+            prompt: "Which subjects does this course deliberately leave to its sibling, Who Gets the Credit?",
+            options: ["The assignment clause and the verified patent numbers", "The four ICMJE criteria and the CRediT contributor taxonomy", "The Matthew effect and its replication across six research funders", "The four moments at which silences enter historical production"],
+            correctIndex: 0,
+            explanation: "Along with who was legally permitted to hold a patent and when, the 1836 oath requirement and the 1858 opinion. This course teaches only the contrast it needs.",
+            sourceLessonSlug: "inventorship-is-not-ownership",
+          },
+          {
+            prompt: "The transferable habit this lesson teaches is to ask:",
+            options: ["Which document was supposed to record the answer", "Who benefited financially from the arrangement that produced the dispute", "Whether the person raising the claim has a personal interest in its outcome", "How many independent sources repeat the version of events being challenged"],
+            correctIndex: 0,
+            explanation: "Then ask what that document's rule actually decides, which is never the same as who did the work.",
+            sourceLessonSlug: "inventorship-is-not-ownership",
+          },
+          {
+            prompt: "A paper's rule decides who is named. A patent's rule decides:",
+            options: ["Who is named and, separately, who owns", "Only who owns, since inventorship is a formality with no legal consequence", "Who is named, with ownership following automatically from the naming", "Neither, since both questions are settled by the employment contract instead"],
+            correctIndex: 0,
+            explanation: "Two questions, two answers, both recorded. Neither rule decides who did the work, and neither was designed to.",
+            sourceLessonSlug: "inventorship-is-not-ownership",
+          },
+          {
+            prompt: "Setting the paper and the patent side by side shows that credit rules are:",
+            options: ["Choices rather than nature", "Converging, since both systems now require the same disclosures", "Equivalent, because both attach a name to work in a public document", "Determined by the technology involved rather than by institutional decision"],
+            correctIndex: 0,
+            explanation: "Two formats built for the same job fail in opposite directions, which is only possible if each rule was designed rather than discovered.",
+            sourceLessonSlug: "inventorship-is-not-ownership",
+          },
+          {
+            prompt: "Inventorship, as the statute treats it, is:",
+            options: ["A question of fact about who conceived the invention", "A matter of agreement among the parties who funded and performed the work", "A designation the assignee selects when the application is prepared for filing", "A ranking of contributors by the proportion of the claims each one supported"],
+            correctIndex: 0,
+            explanation: "Which is why it names humans, and why it cannot be transferred the way ownership can.",
+            sourceLessonSlug: "inventorship-is-not-ownership",
+          },
+          {
+            prompt: "Under section 115, who executes the oath or declaration?",
+            options: ["Each inventor or joint inventor", "The attorney of record, on behalf of everyone named in the application", "The assignee, once ownership of the pending application has been transferred", "A witness present when the invention was first reduced to practice"],
+            correctIndex: 0,
+            explanation: "The application must name the inventor for any invention claimed, and each individual inventor executes the oath or declaration.",
+            sourceLessonSlug: "inventorship-is-not-ownership",
+          },
+          {
+            prompt: "This course's reason for stopping at the inventorship and ownership distinction is:",
+            options: ["The patent system is the sibling course's whole subject", "That patent law changes too often for a general course to state accurately", "That the distinction is the only part of patent law with any bearing on credit", "That patent records are not publicly available in a form a learner could check"],
+            correctIndex: 0,
+            explanation: "Who Gets the Credit teaches the assignment clause, the legal history and eleven verified patent numbers, step by step. Repeating it here would waste the learner's time.",
+            sourceLessonSlug: "inventorship-is-not-ownership",
+          },
+          {
+            prompt: "A hiring committee counting a candidate's record will look at:",
+            options: ["Authorship, not acknowledgements", "Both equally, since each records a documented contribution to published work", "Acknowledgements first, because they identify the technical work behind a paper", "Neither, since committees rely on letters of reference rather than on documents"],
+            correctIndex: 0,
+            explanation: "An acknowledgement is not indexed as authorship, so it does not accumulate however many times a person earns one.",
+            sourceLessonSlug: "who-counts-as-an-author",
+          },
+          {
+            prompt: "Where was the 1945 paper's content first presented?",
+            options: ["To the Johns Hopkins Medical Society", "At the annual meeting of the American Medical Association in Chicago", "In a lecture at Vanderbilt, where the laboratory work had begun in 1930", "Nowhere; JAMA publication was the first public account of the operation"],
+            correctIndex: 0,
+            explanation: "In March 1945, roughly two months before the paper appeared in JAMA on 19 May.",
+            sourceLessonSlug: "vivien-thomas-and-the-author-line",
+          },
+          {
+            prompt: "Eileen Saxon was:",
+            options: ["The first blue baby patient", "The nurse who assisted at the first operation in November 1944", "The Johns Hopkins administrator who arranged the 1971 portrait ceremony", "The cardiologist who referred the first patients to Blalock's surgical service"],
+            correctIndex: 0,
+            explanation: "Fifteen months old at the time of the operation on 29 November 1944.",
+            sourceLessonSlug: "vivien-thomas-and-the-author-line",
+          },
+          {
+            prompt: "The 1945 paper's title concerned malformations of the heart involving:",
+            options: ["Pulmonary stenosis or pulmonary atresia", "Coarctation of the aorta and its surgical correction in older children", "Defects of the atrial septum repaired under direct vision", "Valvular disease arising as a late consequence of rheumatic fever"],
+            correctIndex: 0,
+            explanation: "The surgical treatment of malformations of the heart in which there is pulmonary stenosis or pulmonary atresia.",
+            sourceLessonSlug: "vivien-thomas-and-the-author-line",
+          },
+          {
+            prompt: "Which correction instrument was available to Thomas's supporters but not to a 1945 author line?",
+            options: ["An eponym change", "A published erratum adding a name to the original article's byline", "A retraction and republication of the paper with the corrected authorship", "A ruling from the journal's editors reassigning credit between the parties"],
+            correctIndex: 0,
+            explanation: "Renaming the procedure is one of the few instruments available when the original document cannot be reopened.",
+            sourceLessonSlug: "vivien-thomas-and-the-author-line",
+          },
+          {
+            prompt: "The lesson describes ICMJE criteria three and four as, in Thomas's case:",
+            options: ["Withheld because nobody offered", "Satisfied, since he stood behind the results in his own later writing", "Irrelevant, because they apply only to the corresponding author of a paper", "Impossible, since no technician could be held accountable for a clinical result"],
+            correctIndex: 0,
+            explanation: "Approval and accountability were never put to him. Criterion two, the drafting clause, was the one his position made unreachable.",
+            sourceLessonSlug: "vivien-thomas-and-the-author-line",
+          },
+          {
+            prompt: "What can a customer looking at a product NOT see?",
+            options: ["The assignment that moved the property", "The patent number, which manufacturers are forbidden to print on packaging", "The inventor's name, which patent law removes once ownership transfers", "Whether the product is covered by a patent at all, since grants are not public"],
+            correctIndex: 0,
+            explanation: "The brand carries the name instead of a person, which is why the patent system's failure lands on the product rather than on the record.",
+            sourceLessonSlug: "inventorship-is-not-ownership",
+          },
+          {
+            prompt: "Reading the author line and the patent grant together, the general lesson is that:",
+            options: ["Neither rule was designed to record who did the work", "Both rules record contribution accurately, and disputes arise from misapplication", "The older of the two formats is the more reliable guide to historical contribution", "A single reformed standard could replace both and settle credit disputes for good"],
+            correctIndex: 0,
+            explanation: "A paper's rule decides who is named; a patent's decides naming and ownership separately. Contribution is not the question either one answers.",
+            sourceLessonSlug: "inventorship-is-not-ownership",
+          },
+        ],
+      },
+    },
   ],
 };
