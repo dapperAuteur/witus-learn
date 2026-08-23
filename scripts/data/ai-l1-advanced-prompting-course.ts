@@ -1024,8 +1024,11 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
       slug: "advanced-prompting-quiz",
       title: "12 · Check your understanding",
       section: "Iterating, constraining, and knowing the limits",
+      // Doubles as Section 3's own quiz and as the course final, which is why it is sized to
+      // Section 3's density target (1463 words / 35 = 42) rather than to the final's floor of 40.
       quiz: {
-        passingScore: 70,
+        passingScore: 80,
+        questionsPerAttempt: 10,
         // Options shuffle per attempt so a fixed answer position cannot be gamed;
         // scoring is by identity, so no answer changes (src/lib/quiz.ts).
         shuffleOptions: true,
@@ -1149,6 +1152,422 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
             correctIndex: 1,
             explanation: "Every good pattern is the whole course compressed: frame + examples/reasoning + constraints + verification.",
             sourceLessonSlug: "prompt-patterns-learn-work-write",
+          },
+          {
+            prompt: "What is step one of the prompt-debug loop?",
+            options: [
+              "Rewrite the prompt from the beginning with more detail",
+              "Name the gap specifically",
+              "Ask the model what it thought you were asking for",
+              "Run the same prompt again to see whether the answer varies",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Too long, wrong audience, missed the point, made a claim you cannot verify. Naming which one is what lets step two find the missing piece.",
+            sourceLessonSlug: "iterate-the-prompt-debug-loop",
+          },
+          {
+            prompt: "An answer comes back with a made-up fact. Which missing piece of the frame does the loop trace that to?",
+            options: [
+              "A fuzzy task, since the model was never told what to produce",
+              "A missing format, since no evidence structure was requested",
+              "The wrong role, since no expert persona had been assigned",
+              "Missing context",
+            ],
+            correctIndex: 3,
+            explanation:
+              "With nothing pasted in to ground the answer, the model fills the gap from memory. Off-topic traces to the task, wrong tone to the role, too long to the format.",
+            sourceLessonSlug: "iterate-the-prompt-debug-loop",
+          },
+          {
+            prompt: "Why does the loop insist on changing only one thing at a time?",
+            options: [
+              "So you learn what worked",
+              "Because each extra instruction weakens the ones before it",
+              "Because a prompt has a limit on how much it can carry",
+              "Because the model applies changes in the order they appear",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Change three things and an improvement tells you nothing reusable. Change one and you have learned something you can apply to the next prompt.",
+            sourceLessonSlug: "iterate-the-prompt-debug-loop",
+          },
+          {
+            prompt: "What does the lesson offer as feedback that beats \"make it better\"?",
+            options: [
+              "A rating out of ten with a note on what lost the points",
+              "An example of a better answer written by somebody else",
+              "Cut it to 120 words",
+              "A request to try again with a different approach entirely",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Specific feedback is itself a prompt. \"Cut it to 120 words and remove the jargon\" names the change, so the model has something to aim at.",
+            sourceLessonSlug: "iterate-the-prompt-debug-loop",
+          },
+          {
+            prompt: "\"This intro is perfect, keep it. Rewrite only the second paragraph.\" What does the lesson call that?",
+            options: [
+              "Freezing, since the good text is locked against further changes",
+              "Keep the good, fix the rest",
+              "Layering, since each pass builds on the one before it",
+              "Anchoring, since the strong section sets the standard",
+            ],
+            correctIndex: 1,
+            explanation:
+              "You are steering rather than regenerating from scratch, which protects the parts that already worked from being rewritten into something worse.",
+            sourceLessonSlug: "iterate-the-prompt-debug-loop",
+          },
+          {
+            prompt: "How do the OpenAI and Anthropic guides describe prompting itself?",
+            options: [
+              "A design skill best learned from published templates",
+              "A precise craft in which the first attempt should be the best",
+              "Iterative and empirical",
+              "A matter of matching the prompt's style to the model in use",
+            ],
+            correctIndex: 2,
+            explanation:
+              "You test, observe and refine against what a good result actually looks like. Needing several passes is not a sign you are bad at it: iteration is the skill.",
+            sourceLessonSlug: "iterate-the-prompt-debug-loop",
+          },
+          {
+            prompt: "What do models tend to do when you give no length limit?",
+            options: [
+              "Over-explain",
+              "Return the shortest answer that satisfies the question",
+              "Match the length of whatever you pasted in as context",
+              "Stop at the first natural break in the explanation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "In 100 words, exactly 3 bullets, one sentence. A limit is the cheapest constraint to add and the one most often left out.",
+            sourceLessonSlug: "constraints-and-guardrails",
+          },
+          {
+            prompt: "What does an audience constraint control?",
+            options: [
+              "The order in which the points are presented",
+              "How many sources the finished answer will name",
+              "Vocabulary and depth",
+              "Whether the model shows its reasoning as it goes",
+            ],
+            correctIndex: 2,
+            explanation:
+              "For a 7th-grader, for a busy executive who hates jargon, for someone new to the topic. Each pulls a different register and a different level of detail.",
+            sourceLessonSlug: "constraints-and-guardrails",
+          },
+          {
+            prompt: "Why does the lesson call scope a powerful guardrail against invented facts?",
+            options: [
+              "It reduces the amount of text the model has to produce",
+              "It makes the model check each claim before including it",
+              "It tells the model which topics it was trained well on",
+              "It limits what may be used",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Stick to the pasted text, only cover the EU rules, do not include code. Narrowing the permitted material narrows the room for invention.",
+            sourceLessonSlug: "constraints-and-guardrails",
+          },
+          {
+            prompt: "What is the \"out\" the lesson says to give a model?",
+            options: [
+              "A shorter answer option for when it runs low on material",
+              "Permission to say it does not know",
+              "A chance to ask you a clarifying question first",
+              "A way to flag the question as outside its training",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Explicitly permitting \"I don't know\" and forbidding invention cuts confident nonsense, because a model forced to answer has to fabricate something.",
+            sourceLessonSlug: "constraints-and-guardrails",
+          },
+          {
+            prompt: "What does the grounding constraint tell a model to write when the pasted text does not say?",
+            options: [
+              "A best estimate, clearly labeled as an inference",
+              "The closest related fact the document does contain",
+              "Not stated in the source",
+              "A note asking you to supply the missing material",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Answer only from the pasted text, and do not add outside facts. The phrase gives the model somewhere to put an absence instead of filling it.",
+            sourceLessonSlug: "constraints-and-guardrails",
+          },
+          {
+            prompt: "Which is an example of the \"what not to do\" kind of constraint?",
+            options: [
+              "Keep the answer under one hundred words in total",
+              "Write it for a reader who is new to the topic",
+              "Present the options as a table with three columns",
+              "Do not invent statistics",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Alongside \"do not recommend a specific product\" and \"if you are unsure, say so instead of guessing.\" These are guardrails rather than shaping instructions.",
+            sourceLessonSlug: "constraints-and-guardrails",
+          },
+          {
+            prompt: "What does the lesson claim the grounding constraint does and does not achieve?",
+            options: [
+              "It cuts invention but is not perfect",
+              "It eliminates invented facts whenever the source is complete",
+              "It works on documents but not on pasted email threads",
+              "It replaces the need to check the answer against the source",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It sharply reduces the made-up-facts problem and keeps you in the driver's seat on what counts as evidence. It is a guardrail, not a guarantee.",
+            sourceLessonSlug: "constraints-and-guardrails",
+          },
+          {
+            prompt: "What does \"advanced\" mean in the lesson on when not to trust an answer?",
+            options: [
+              "More willing to trust a model that has shown its work",
+              "More able to judge an answer without having to check it",
+              "More skeptical",
+              "More reliant on the techniques taught earlier in the course",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Examples, reasoning, self-checks and sources-on-request all make answers better and easier to inspect. Not one of them makes an answer automatically true.",
+            sourceLessonSlug: "when-not-to-trust",
+          },
+          {
+            prompt: "What does the lesson say a confident tone is evidence of?",
+            options: [
+              "A claim the model found repeated across many sources",
+              "Nothing",
+              "A subject the model happened to be trained on thoroughly",
+              "An answer the model would produce the same way twice",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Models optimize for plausible-sounding output, so confidence is the house style rather than a signal. Fluency is not accuracy.",
+            sourceLessonSlug: "when-not-to-trust",
+          },
+          {
+            prompt: "Which situation does the lesson flag because of your own bias rather than the model's?",
+            options: [
+              "A subject you have studied enough to spot an error",
+              "A claim that contradicts what you expected to find",
+              "A topic on which you hold no prior opinion at all",
+              "Something you want to be true",
+            ],
+            correctIndex: 3,
+            explanation:
+              "A wrong answer that agrees with you feels right, so it gets less checking exactly when it deserves more. This is the failure mode you cannot outsource.",
+            sourceLessonSlug: "when-not-to-trust",
+          },
+          {
+            prompt: "Why does the lesson single out anything recent or fast-changing?",
+            options: [
+              "The knowledge has a cutoff",
+              "Recent events are described in fewer words than older ones",
+              "Newer sources are less likely to have been peer reviewed",
+              "The model weights recent text lower than established text",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The model's training stops at a date, and it will answer about events past that date in the same confident register as anything else.",
+            sourceLessonSlug: "when-not-to-trust",
+          },
+          {
+            prompt: "Which trustworthiness property does the lesson cite from the NIST AI Risk Management Framework?",
+            options: [
+              "Explainable and interpretable, since reasoning can be shown",
+              "Secure and resilient, since a prompt can be manipulated",
+              "Fair with harmful bias managed, since the data carries bias",
+              "Valid and reliable",
+            ],
+            correctIndex: 3,
+            explanation:
+              "It is named as a core property precisely because plausible output is a guarantee of neither. The framework treats validity as something to be demonstrated.",
+            sourceLessonSlug: "when-not-to-trust",
+          },
+          {
+            prompt: "What does the lesson say can happen when you ask a model \"are you sure?\"",
+            options: [
+              "It reliably surfaces the weakest claim in the answer",
+              "It may defend the same mistake",
+              "It causes the model to lower its stated confidence",
+              "It makes the model restate the answer more carefully",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Self-checks sometimes fix an error and sometimes rubber-stamp it, in the same confident tone either way, which is why they raise the floor rather than replace you.",
+            sourceLessonSlug: "when-not-to-trust",
+          },
+          {
+            prompt: "How does the lesson divide the labor between AI and real sources?",
+            options: [
+              "AI proposes the claims and sources rank them by strength",
+              "AI handles the reasoning and sources supply the numbers",
+              "AI drafts, sources confirm",
+              "AI writes the first pass and sources are checked only if it fails",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Use AI to draft, reason and explain. Use real sources to confirm. You remain the editor, the fact-checker, and the one accountable for the result.",
+            sourceLessonSlug: "when-not-to-trust",
+          },
+          {
+            prompt: "What does the tutor pattern ask for on top of the explanation?",
+            options: [
+              "An analogy, a misconception, a question",
+              "A reading list with a short summary of each item on it",
+              "A second explanation written for a more advanced reader",
+              "A breakdown of which parts of the topic are hardest",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One everyday analogy, one common misconception, and one quick question to check understanding, plus a note on anything genuinely uncertain or debated.",
+            sourceLessonSlug: "prompt-patterns-learn-work-write",
+          },
+          {
+            prompt: "What does the Socratic pattern tell the model to do between questions?",
+            options: [
+              "Score the previous answer against a rubric it proposes",
+              "Adjust the difficulty based on how the last one went",
+              "Summarize what has been covered before moving on",
+              "Wait for your answer",
+            ],
+            correctIndex: 3,
+            explanation:
+              "One question at a time, then feedback, then what you would check to confirm it. Waiting is what makes it practice rather than a wall of text.",
+            sourceLessonSlug: "prompt-patterns-learn-work-write",
+          },
+          {
+            prompt: "What does the decision-brief pattern ask for after the recommendation?",
+            options: [
+              "What to verify independently",
+              "A ranked list of the options that were not chosen",
+              "An estimate of how long the decision ought to take",
+              "A summary of the material that was pasted in",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Along with a flag on anything it is unsure about. The verify step is what stops a well-argued brief being mistaken for a checked one.",
+            sourceLessonSlug: "prompt-patterns-learn-work-write",
+          },
+          {
+            prompt: "In the turn-mess-into-structure pattern, what happens to a field the notes never mention?",
+            options: [
+              "It is filled with the most likely value from the context",
+              "It is written as unknown",
+              "It is left blank, so the gap is visible at a glance",
+              "It is moved to a separate list of open questions",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Use only what is in the notes. An explicit \"unknown\" is a grounding constraint doing its job inside a formatting pattern.",
+            sourceLessonSlug: "prompt-patterns-learn-work-write",
+          },
+          {
+            prompt: "What does the editor pattern explicitly forbid on the first pass?",
+            options: [
+              "Commenting on anything beyond the three weakest spots",
+              "Considering the audience the draft was written for",
+              "Rewriting",
+              "Suggesting fixes before the weaknesses are explained",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Point out the three weakest spots and say why each is weak, then suggest a fix. Holding off the rewrite is what makes the diagnosis visible.",
+            sourceLessonSlug: "prompt-patterns-learn-work-write",
+          },
+          {
+            prompt: "What does every one of the reusable patterns include?",
+            options: [
+              "A worked example showing the model the exact output shape",
+              "An instruction to reason step by step before concluding",
+              "A word limit that keeps the answer short enough to check",
+              "A built-in verify step",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Alongside a role, pasted context where accuracy matters, a precise task, and an explicit format. The patterns are this course compressed into templates.",
+            sourceLessonSlug: "prompt-patterns-learn-work-write",
+          },
+          {
+            prompt: "The drill: the output format is hard to describe, so you paste one done-right example. What is that?",
+            options: [
+              "Few-shot prompting",
+              "Grounding, since the example anchors what the model may use",
+              "Templating, since the example acts as a form to be filled",
+              "Calibration, since the example sets the expected standard",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Showing one or a few examples beats describing the format in prose, because the model locks onto the pattern more precisely than onto the description.",
+            sourceLessonSlug: "practice-patterns",
+          },
+          {
+            prompt: "The drill: you ask a model to work through a multi-step problem step by step. What is that?",
+            options: [
+              "Decomposition, since the problem is split into parts",
+              "Chain-of-thought",
+              "Deliberation, since the model weighs before it decides",
+              "Sequencing, since the steps are produced in order",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Wei et al. (2022). It improves multi-step answers and, more usefully here, makes them checkable line by line.",
+            sourceLessonSlug: "practice-patterns",
+          },
+          {
+            prompt: "The drill: a first answer is too long and too generic, so you add a length limit and an audience. What are you tightening?",
+            options: [
+              "The role, since an audience implies who is speaking",
+              "The task, since a shorter answer is a different job",
+              "The context, since the audience is part of the situation",
+              "The format",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Length and audience are format constraints, and they are the easiest fix people forget when an answer sprawls.",
+            sourceLessonSlug: "practice-patterns",
+          },
+          {
+            prompt: "The drill asks what a use-this-document answer should say when the text does not cover it. What is the phrase?",
+            options: [
+              "A flagged inference drawn from the surrounding text",
+              "The words outside the source, to mark the claim as added",
+              "Not stated",
+              "A question back to you asking for the missing detail",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A grounding constraint with an explicit out sharply reduces invented facts, because the model has somewhere to put an absence.",
+            sourceLessonSlug: "practice-patterns",
+          },
+          {
+            prompt: "The drill: treating the first answer as a draft and changing one variable at a time is the prompt-what loop?",
+            options: [
+              "Revision, borrowed from how editors work through a draft",
+              "Feedback, since each pass responds to the one before it",
+              "Convergence, since the answers narrow toward the target",
+              "Debug",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Read the gap, trace it to the frame, change one thing, re-run and compare. Iteration is the skill rather than a sign of failure.",
+            sourceLessonSlug: "practice-patterns",
+          },
+          {
+            prompt: "The drill: a step-by-step answer with cited-looking sources may still be false, because the reasoning and the citations are also what?",
+            options: [
+              "Drawn from the least reliable part of the training data",
+              "Produced faster than the rest of the answer is",
+              "Generated text",
+              "Written to match the confidence you showed in the prompt",
+            ],
+            correctIndex: 2,
+            explanation:
+              "All of it is predicted text, the reasoning included. Open the sources and verify them yourself, which is the one step no prompt performs for you.",
+            sourceLessonSlug: "practice-patterns",
           },
         ],
       },
