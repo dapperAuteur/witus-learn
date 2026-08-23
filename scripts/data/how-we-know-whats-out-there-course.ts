@@ -975,6 +975,617 @@ NASA. (n.d.). *Type Ia supernovae as standard candles*. https://science.nasa.gov
 
 Space Telescope Science Institute. (n.d.). *The extragalactic distance scale*. https://www.stsci.edu/`,
     },
+    {
+      slug: "check-the-ladder-part-two",
+      title: "Part 2 knowledge check · The ladder",
+      section: "Part 2 · The ladder",
+      body: `A graded check on the rungs themselves: the one distance that is close to a direct measurement, what a spectrum can and cannot hand you, what Payne had to correct for before anyone could read hydrogen off a star, the diagram that turned out to be about time, the labor that made the catalogs possible, and the two tricks that reach past parallax. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is parallax, in the finger-and-one-eye demonstration?",
+            options: [
+              "The way the finger appears to grow larger as you bring it toward your face",
+              "The apparent jump against the background",
+              "The slight blur that appears when only one eye is focused on the finger",
+              "The difference in color between the finger and whatever sits behind it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Look at your finger with one eye and then the other and it jumps against the background. The size of the jump depends on how far away the finger is, which is the whole method.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "How long do you wait between the two observations that give a star's parallax?",
+            options: [
+              "One night, so the earth's own rotation supplies the change of viewpoint",
+              "Six months",
+              "One year, so the earth has returned to exactly the place it started",
+              "Several years, so the star's own motion has had time to accumulate",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Six months, which is how long the earth takes to travel to the opposite side of its orbit. A full year would put you back where you began and show nothing.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "What does a nearby star do between those two observations?",
+            options: [
+              "It brightens measurably as the earth's orbit carries it closer",
+              "It shifts against the more distant stars",
+              "It changes color slightly, toward the blue on approach and the red away",
+              "It traces a complete circle against the background over the six months",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The nearby star shifts slightly against the more distant ones, and the size of that shift gives you the distance.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "What makes parallax different from every other rung of the ladder?",
+            options: [
+              "It is the only one that works on stars inside our own galaxy",
+              "It is the only one that does not require a photographic record",
+              "It is close to a direct measurement",
+              "It is the only one that was worked out before the twentieth century",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Parallax is the only rung that is close to a direct measurement, anchored in geometry. Everything above it is calibrated on it.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "Who published the first stellar parallax, and when?",
+            options: [
+              "Bessel, in 1838",
+              "Hertzsprung, in 1905, working from the plates at Harvard College Observatory",
+              "Leavitt, in 1912, as part of the same work on the Magellanic Clouds",
+              "Galileo, in 1610, in the first published results from a telescope",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Friedrich Bessel published a parallax for the star 61 Cygni in 1838. The idea itself is ancient; it was the measurement that had to wait.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "Which star did that first parallax measurement belong to?",
+            options: [
+              "Polaris, since it was already the most carefully observed star in the sky",
+              "Sirius, the brightest star in the sky and therefore assumed the nearest",
+              "61 Cygni",
+              "Betelgeuse, whose size made the shift easier to detect against the field",
+            ],
+            correctIndex: 2,
+            explanation:
+              "61 Cygni. Brightness is not a reliable guide to nearness, which is exactly the confusion between apparent and intrinsic brightness the course keeps returning to.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "Why did the measurement take so long to make?",
+            options: [
+              "Because nobody had thought of using the earth's orbit as a baseline",
+              "Because the church discouraged observations that assumed the earth moved",
+              "Because the plates needed to record it had not yet been invented",
+              "The angles are minuscule",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The delay was not a failure of imagination. Even for nearby stars the shift is well under one arcsecond, and nobody had instruments that could measure it.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "How large is the parallax shift even for nearby stars?",
+            options: [
+              "Well under one arcsecond",
+              "About one degree, which is roughly twice the width of the full moon",
+              "About one arcminute, which a careful naked-eye observer can just detect",
+              "It varies from a degree to an arcsecond depending on the star's brightness",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Well under one arcsecond, which is under a 3600th of a degree. That is the whole reason the measurement waited until 1838.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "What was the absence of any detectable parallax used to argue for centuries?",
+            options: [
+              "That the stars were all fixed to a single sphere at one common distance",
+              "That the earth does not move",
+              "That the instruments of the period were fundamentally untrustworthy",
+              "That the stars were much closer than the planets rather than further away",
+            ],
+            correctIndex: 1,
+            explanation:
+              "If we really orbited the sun, the stars ought to shift, and they visibly did not. The absence was taken as an argument against the earth moving at all.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "What was the counter-argument, and how did it fare?",
+            options: [
+              "That the shift was hidden by the atmosphere, and it was wrong",
+              "That the shift was too slow to notice in a human lifetime, and it was wrong",
+              "That the stars are enormously far away, and it was right",
+              "That parallax applies only to the planets, and it was partly right",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The stars must simply be so far away that the shift is too small to see. It turned out to be exactly right, and it had no evidence behind it at the time.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "What does the lesson say about a prediction that fails to appear?",
+            options: [
+              "It is evidence, but not always of what it seems to be",
+              "It is proof that the theory making the prediction has to be abandoned",
+              "It should be set aside until an instrument confirms one way or the other",
+              "It counts for less than a prediction that was confirmed by observation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A missing prediction is evidence. It can mean the theory is wrong, or that your instrument is not good enough yet, and telling those apart is one of the hardest recurring judgments in science. There is no formula for it.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "Why does parallax run out at distance?",
+            options: [
+              "Because the earth's orbit is not perfectly circular over long baselines",
+              "The shift shrinks into your measurement error",
+              "Because dust between the stars scatters the light before it arrives",
+              "Because distant stars move too fast for two readings to describe them",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The further away a star, the smaller the shift, until it disappears into your measurement error. That limit is why there has to be a ladder at all.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "What extended parallax's reach dramatically?",
+            options: [
+              "Larger ground telescopes, which collect enough light to sharpen the reading",
+              "Space-based astrometry",
+              "Photographic plates, which record a position more precisely than an eye",
+              "Longer observing programs, which average many readings into one result",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Measuring from above the atmosphere extended the reach dramatically, and the Gaia mission has measured parallaxes for an enormous number of stars.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "How far does parallax alone reach?",
+            options: [
+              "To the nearest other galaxies, but no further than the local group",
+              "Across our own galaxy, but no further than that",
+              "Not across our own galaxy",
+              "To every star that can be seen with the unaided eye, and no further",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Parallax alone does not reach across our own galaxy, let alone to another one. Hence the ladder.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "What appears when starlight is spread out into its colors?",
+            options: [
+              "Sharp dark lines, always in the same places for the same material",
+              "A smooth unbroken band whose color depends only on the star's temperature",
+              "Bright lines added on top of the band wherever an element is present",
+              "A pattern that shifts from one observation to the next as the star turns",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The smooth band of color is interrupted by sharp dark absorption lines, and for a given material they always fall in the same places.",
+            sourceLessonSlug: "light-itself",
+          },
+          {
+            prompt: "Why is the pattern of absorption lines called a fingerprint?",
+            options: [
+              "Because no two stars have ever been found to show the same pattern twice",
+              "Because the pattern is left behind by the instrument rather than the star",
+              "Because it can identify a star but tells you nothing about its condition",
+              "Each element absorbs at its own set of wavelengths",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Each element absorbs light at its own specific set of wavelengths, so the pattern identifies what the light passed through. Starlight arrives carrying a list.",
+            sourceLessonSlug: "light-itself",
+          },
+          {
+            prompt: "What was the composition of the stars a standard example of, before spectroscopy?",
+            options: [
+              "Something humans could never know",
+              "A question that could only be settled by sending an instrument there",
+              "A problem that different cultures had each already answered differently",
+              "A matter of belief rather than of measurement, and therefore not science",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It was the standard example of something humans could never know. Then it became routine, which is a useful thing to remember about any current example of the same kind.",
+            sourceLessonSlug: "light-itself",
+          },
+          {
+            prompt: "Which absorption lines are present tells you what?",
+            options: [
+              "How far away the star is, once the strength of each line is measured",
+              "Which elements are there",
+              "How old the star is, since heavier elements accumulate with age",
+              "The direction the star is moving relative to the earth",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Which lines are present identifies which elements are there. Motion comes from the lines being displaced, not from which ones appear.",
+            sourceLessonSlug: "light-itself",
+          },
+          {
+            prompt: "What does the overall color balance of a spectrum tell you?",
+            options: [
+              "The elements present in the greatest quantity in the star's atmosphere",
+              "The star's surface temperature",
+              "The amount of dust the light passed through on its way to the instrument",
+              "The star's mass, which sets everything else about how it burns",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The overall color balance gives surface temperature. Line strength is what carries information about conditions, and it has to be handled with care.",
+            sourceLessonSlug: "light-itself",
+          },
+          {
+            prompt: "What do lines shifted away from their laboratory positions tell you?",
+            options: [
+              "That the laboratory measurement of that element needs to be redone",
+              "That more than one element is contributing to the same part of the band",
+              "Motion toward or away from us",
+              "That the star's surface is hotter than the model had assumed it was",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The pattern's spacing is fixed by physics, so a displaced pattern means motion toward or away from us, or light stretched on the journey. That shift becomes the top rung of the ladder.",
+            sourceLessonSlug: "light-itself",
+          },
+          {
+            prompt: "Why is it the whole pattern moving, rather than one line, that matters?",
+            options: [
+              "Because a single line could be a flaw in the plate or the instrument",
+              "Because one line alone cannot be matched to any particular element",
+              "Because the internal spacing identifies the element regardless of the shift",
+              "Because the shift is too small to detect from a single line by itself",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The pattern's internal spacing is fixed by physics, so it still identifies the element after it has moved. The displacement of the whole pattern is then a clean measurement of motion or of expansion.",
+            sourceLessonSlug: "light-itself",
+          },
+          {
+            prompt: "What does reading a spectrum's line strengths require, beyond the measurement itself?",
+            options: [
+              "A model of how atoms behave under those conditions",
+              "A second spectrum of the same star taken at a different time of year",
+              "A catalog of every star already classified at the same temperature",
+              "An independent measurement of the star's distance from the earth",
+            ],
+            correctIndex: 0,
+            explanation:
+              "You measure brightness at many wavelengths, infer elements using known laboratory patterns, then infer conditions using a model of how atoms behave. Each step is well tested and each step is a step.",
+            sourceLessonSlug: "light-itself",
+          },
+          {
+            prompt: "What does the lesson say about the number at the end of that chain?",
+            options: [
+              "It is as reliable as a direct measurement once the chain is well tested",
+              "It is not something anybody saw",
+              "It should be published only alongside the assumptions that produced it",
+              "It is an estimate, and the field treats it as provisional until confirmed",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Each step is well tested, and the result is still inferred rather than observed. That distinction is the habit the whole course keeps pointing at.",
+            sourceLessonSlug: "light-itself",
+          },
+          {
+            prompt: "A star shows the hydrogen pattern, but every line sits at a longer wavelength than in the laboratory. What can you conclude?",
+            options: [
+              "That the star's hydrogen is at a higher temperature than the laboratory sample",
+              "That the star is moving away, or the light was stretched on the way",
+              "That the star contains an element that mimics the hydrogen pattern",
+              "That the instrument's calibration has drifted since it was last checked",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The internal spacing identifies the pattern as hydrogen; the displacement measures motion or expansion. Distinguishing those two possibilities is the subject of lesson 11.",
+            sourceLessonSlug: "light-itself",
+          },
+          {
+            prompt: "By the 1920s, what did astronomers expect stars to be made of?",
+            options: [
+              "Roughly the same mix of elements as the earth",
+              "Mostly hydrogen, which the spectra had been showing plainly for decades",
+              "Material too hot to have a settled composition at all",
+              "Whatever the surrounding interstellar cloud had happened to contain",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The spectra showed the same elements as the earth and nothing obviously suggested otherwise, so an Earth-like mix was the expectation Payne's thesis ran into.",
+            sourceLessonSlug: "cecilia-payne-and-what-stars-are-made-of",
+          },
+          {
+            prompt: "What did Payne's 1925 doctoral thesis conclude stars are overwhelmingly made of?",
+            options: [
+              "Iron and the heavier metals, concentrated toward the core",
+              "Carbon and oxygen, the products of the fusion happening inside",
+              "Hydrogen and helium",
+              "A mixture too varied from star to star to be summarized at all",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Hydrogen and helium, by an enormous margin. It is one of the foundational results of modern astrophysics.",
+            sourceLessonSlug: "cecilia-payne-and-what-stars-are-made-of",
+          },
+          {
+            prompt: "What new physics did Payne apply to reach that conclusion?",
+            options: [
+              "The relationship between a star's mass and the rate at which it burns",
+              "The behavior of light as it passes through an expanding space",
+              "The way a gas cools when it is allowed to expand into a vacuum",
+              "How atoms behave at different temperatures",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Newly developed physics describing how atoms behave at different temperatures, which is what let her separate line strength from abundance.",
+            sourceLessonSlug: "cecilia-payne-and-what-stars-are-made-of",
+          },
+          {
+            prompt: "Why do line strengths not translate directly into abundances?",
+            options: [
+              "Because temperature governs how strongly an element absorbs",
+              "Because the lines of different elements overlap and cannot be separated",
+              "Because the strongest lines saturate and stop responding to more material",
+              "Because absorption happens in the star's atmosphere and not in its interior",
+            ],
+            correctIndex: 0,
+            explanation:
+              "How strongly a given element absorbs depends on temperature. Without correcting for that, the spectra genuinely look like a roughly Earth-like mix.",
+            sourceLessonSlug: "cecilia-payne-and-what-stars-are-made-of",
+          },
+          {
+            prompt: "Why did nobody read hydrogen dominance off the spectra before 1925?",
+            options: [
+              "Because the hydrogen lines fall outside the range the plates could record",
+              "The correction for temperature did not yet exist",
+              "Because nobody had yet collected spectra of enough different stars",
+              "Because the result was rejected each time it was submitted for publication",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The physics needed to correct for temperature had only recently been developed. Until then the spectra looked Earth-like, and they looked that way honestly.",
+            sourceLessonSlug: "cecilia-payne-and-what-stars-are-made-of",
+          },
+          {
+            prompt: "What language does the published thesis contain about the derived abundances?",
+            options: [
+              "A footnote attributing the correction to a more senior colleague",
+              "A recommendation that the calculation be repeated by another observatory",
+              "That they are almost certainly not real",
+              "A claim that the result overturns everything previously believed",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The published thesis describes the derived abundances as almost certainly not real. That hedge is a documented fact; how it came to be worded is not.",
+            sourceLessonSlug: "cecilia-payne-and-what-stars-are-made-of",
+          },
+          {
+            prompt: "How does this course handle the compressed retelling of Payne's story?",
+            options: [
+              "It repeats it, since the thesis language confirms the essential outline",
+              "It rejects it outright, since the correspondence contradicts it",
+              "It replaces it with an account drawn from a single secondary source",
+              "It flags it rather than repeating it",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The compressed version is doing several things at once. What the correspondence and thesis actually show is a matter for the primary documents, and it is registered as an open check rather than asserted.",
+            sourceLessonSlug: "cecilia-payne-and-what-stars-are-made-of",
+          },
+          {
+            prompt: "Which parts of the Payne story does the lesson say are not in doubt?",
+            options: [
+              "The conclusion, the resistance, the hedge, and the later acceptance",
+              "That a senior astronomer instructed her to withdraw the result",
+              "That the same astronomer later published the conclusion as his own",
+              "That the field accepted the result immediately once it was in print",
+            ],
+            correctIndex: 0,
+            explanation:
+              "She reached the correct conclusion, it went against the expectation of the field, the published thesis hedged it, and the result was accepted a few years later. Who advised what is the part still open.",
+            sourceLessonSlug: "cecilia-payne-and-what-stars-are-made-of",
+          },
+          {
+            prompt: "What does the lesson call the hardest problem in reading evidence, illustrated here?",
+            options: [
+              "That data can be correct and still be interpreted through the wrong model",
+              "The right answer, and insufficient authority to state it plainly",
+              "That a result can be reproduced many times and still turn out to be wrong",
+              "That the expectations of a field are rarely written down anywhere",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The data were not the obstacle and neither was the reasoning. She had the right answer and insufficient authority to state it plainly.",
+            sourceLessonSlug: "cecilia-payne-and-what-stars-are-made-of",
+          },
+          {
+            prompt: "What does the lesson say about the idea that science self-corrects quickly and neutrally?",
+            options: [
+              "It describes the long run, not any particular year",
+              "It is true of physics but not of the observational sciences",
+              "It holds wherever the underlying data are published alongside the result",
+              "It became true only once peer review was formalized in the field",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Self-correction is a description of the long run and not of any particular year. Knowing that this happens is why the episode belongs in a course about evidence.",
+            sourceLessonSlug: "cecilia-payne-and-what-stars-are-made-of",
+          },
+          {
+            prompt: "What two quantities are plotted against each other on an HR diagram?",
+            options: [
+              "Distance and apparent brightness, for stars whose parallax is known",
+              "Mass and age, worked out from a model of how each star burns its fuel",
+              "Intrinsic brightness and surface temperature",
+              "Color and distance, which is what makes the band emerge from the cloud",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Intrinsic brightness against surface temperature. Plot enough stars that way and the structure appears without anyone having designed it.",
+            sourceLessonSlug: "reading-a-star-the-hr-diagram",
+          },
+          {
+            prompt: "What would the diagram look like if stars came in every possible combination?",
+            options: [
+              "A shapeless cloud",
+              "A single vertical line, since temperature would then carry no information",
+              "Several separate clusters, one for each of the elements that dominates",
+              "A curve bending downward, since brighter stars burn out more quickly",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It would be a shapeless cloud, and it is not. Most stars fall along a single diagonal band with two smaller populations off it.",
+            sourceLessonSlug: "reading-a-star-the-hr-diagram",
+          },
+          {
+            prompt: "What are the stars on the main sequence doing?",
+            options: [
+              "Collapsing inward, having exhausted the fuel that held them up",
+              "Fusing hydrogen in their cores",
+              "Cooling steadily, having stopped fusing anything at all",
+              "Expanding outward as their outer layers are pushed away",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The diagonal band holds stars fusing hydrogen in their cores. Most stars, most of the time, are there.",
+            sourceLessonSlug: "reading-a-star-the-hr-diagram",
+          },
+          {
+            prompt: "What does a star's position along the main sequence track?",
+            options: [
+              "Its age, running from newly formed at one end to nearly spent at the other",
+              "Its distance from us, which is why the band is diagonal rather than flat",
+              "Its mass",
+              "Its composition, from the most hydrogen-rich down to the most processed",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Position along the main sequence tracks mass: heavier stars are hotter and brighter.",
+            sourceLessonSlug: "reading-a-star-the-hr-diagram",
+          },
+          {
+            prompt: "Where do giants sit on the diagram, and what does that imply?",
+            options: [
+              "Up and right, so they must be enormous",
+              "Down and right, so they must be both cool and unusually small",
+              "Up and left, so they must be the hottest stars anywhere on the diagram",
+              "Along the middle of the band, so they are ordinary stars seen close up",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Cool but very luminous. A cool surface emits relatively little light per unit area, so producing that much total light requires a great deal of surface.",
+            sourceLessonSlug: "reading-a-star-the-hr-diagram",
+          },
+          {
+            prompt: "Where do white dwarfs sit, and what does that imply?",
+            options: [
+              "Up and left, so they must be enormous and extremely hot at once",
+              "Down and right, so they must be cool and near the end of their lives",
+              "Down and left, so they must be tiny",
+              "Off the diagram entirely, since their brightness cannot be measured",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Hot but faint, so they must be tiny. Surface temperature and total light output together constrain the size.",
+            sourceLessonSlug: "reading-a-star-the-hr-diagram",
+          },
+          {
+            prompt: "How did the structure of the HR diagram come about?",
+            options: [
+              "It emerged from plotting measurements, and then had to be explained",
+              "It was predicted by a theory of stellar structure and later confirmed",
+              "It was drawn to organize the classification scheme already in use",
+              "It was assembled from several separate catalogs that happened to agree",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Nobody designed it. A pattern in data was taken seriously as a fact needing explanation, and the explanation turned out to be about time.",
+            sourceLessonSlug: "reading-a-star-the-hr-diagram",
+          },
+          {
+            prompt: "What is the HR diagram actually a picture of?",
+            options: [
+              "A catalog of the kinds of star that the universe contains",
+              "A population at different stages of life",
+              "A sequence showing how one star changes over a human lifetime",
+              "A map of where stars of each type are found within the galaxy",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Not a catalog of kinds of star: a snapshot of a population at different stages of life. The explanation for the structure turned out to be stellar evolution.",
+            sourceLessonSlug: "reading-a-star-the-hr-diagram",
+          },
+          {
+            prompt: "How does the HR diagram break the deadlock from lesson 3?",
+            options: [
+              "It measures distance directly, without any reference to brightness",
+              "It removes the need to know intrinsic brightness at all",
+              "Its position gives you intrinsic brightness",
+              "It shows which stars are close enough for parallax to work on them",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Work out where a star sits on the diagram from its spectrum alone and you can read off its intrinsic brightness. Compare that with how bright it appears and you have its distance.",
+            sourceLessonSlug: "reading-a-star-the-hr-diagram",
+          },
+          {
+            prompt: "What had to be established before the diagram's vertical axis could mean anything?",
+            options: [
+              "The distances of stars, by parallax",
+              "The chemical composition of a large enough sample of stars",
+              "The classification sequence that sorts spectra into ordered types",
+              "The rate at which a star of a given mass consumes its hydrogen",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The vertical axis is intrinsic brightness, which had to be established using stars whose distances were known by parallax. The rung is only as good as the calibration underneath it.",
+            sourceLessonSlug: "reading-a-star-the-hr-diagram",
+          },
+          {
+            prompt: "What does the lesson mean by saying the ladder is not a metaphor?",
+            options: [
+              "That the rungs are named in the order they were historically discovered",
+              "Each rung is literally built on the one below",
+              "That the rungs reach progressively further out into the universe",
+              "That climbing it requires the same effort at every level",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Each rung is literally built on the one below it, which is why the reliability of any rung depends entirely on the calibration underneath it.",
+            sourceLessonSlug: "reading-a-star-the-hr-diagram",
+          },
+          {
+            prompt: "A star is cool at the surface and enormously luminous. Where is it on the diagram?",
+            options: [
+              "Among the white dwarfs, down and to the left of the main sequence",
+              "In the giant region, up and to the right",
+              "At the cool end of the main sequence, down and to the right",
+              "Nowhere; that combination does not occur among observed stars",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It must be very large, because a cool surface emits relatively little light per unit area, so that much total light needs an enormous amount of surface. That puts it up and to the right, among the giants.",
+            sourceLessonSlug: "reading-a-star-the-hr-diagram",
+          },
+        ],
+      },
+    },
     // ── Part 3 ─────────────────────────────────────────────────────────────────────────────────
     {
       slug: "redshift-and-an-expanding-universe",
