@@ -57,6 +57,19 @@ const POOL_TOLERANCE = 0.9;
  * say who and when, so a later pass does not "fix" it.
  */
 const SPEC_EXCEPTIONS: Record<string, string> = {
+  // BAM, 2026-08-23. Three courses closed in the wave-1 assessment pass whose sections are SHORT,
+  // so the pool rule's floor of 40 binds instead of its density half. Broadcasting's sections run
+  // 600-726 words, how-to-research 712-869, off-grid-survival 546-933. Forty questions on 600 words
+  // is one per fifteen words, which is precisely the trivia the density rule exists to prevent, and
+  // padding to reach it would also walk straight into the length-tell guard. Each section was sized
+  // at its own density target instead, every lesson in them is assessed, and the gap is deliberate.
+  // Same decision, same reasoning, as well-movement-longevity below.
+  "broadcasting-break-in":
+    "BAM, 2026-08-23: sections run 600-726 words, so the floor of 40 binds rather than the density rule. Sized at density; every lesson is assessed. Padding to 40 would be trivia.",
+  "how-to-research":
+    "BAM, 2026-08-23: sections run 712-869 words, so the floor of 40 binds rather than the density rule. Sized at density; every lesson is assessed. Padding to 40 would be trivia.",
+  "off-grid-survival":
+    "BAM, 2026-08-23: sections run 546-933 words, so the floor of 40 binds rather than the density rule. Sized at density; every lesson is assessed. Padding to 40 would be trivia.",
   "well-movement-longevity":
     "BAM, 2026-08-20: four of five sections run 484-996 words, so the floor of 40 binds instead of the density rule. Offered drop-the-floor / merge / leave-the-gap; he chose to leave the gap and let the sections run smaller. Padding them would be exactly the trivia the rule exists to avoid.",
 };
