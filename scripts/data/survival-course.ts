@@ -1603,7 +1603,7 @@ A graded check on handling human waste when plumbing fails, and on the handwashi
             ],
             correctIndex: 0,
             explanation:
-              "Use an alcohol-based hand sanitizer of at least 60 percent alcohol when clean water is not available. Soap and clean water remain the first choice.",
+              "Use an alcohol-based hand sanitizer of at least 60 percent alcohol when clean water is not available. Soap and clean water are still preferred whenever you have them.",
             sourceLessonSlug: "hygiene-greywater-disease",
           },
           {
@@ -1709,6 +1709,155 @@ Federal Emergency Management Agency. (2024). *Ready.gov: Build a kit.* U.S. Depa
           answer: "Attempting an advanced procedure they have only read about. Recognition and the decision to call for help are within reach, but definitive treatment requires training.",
         },
       ],
+    },
+
+    // ─────────────────────────────────────────────────────────────────────────
+    // SECTION 7 QUIZ
+    // ─────────────────────────────────────────────────────────────────────────
+    {
+      slug: "quiz-first-aid",
+      title: "Section 7 quiz · First Aid",
+      section: "Section 7 · First Aid",
+      body: `${SAFETY}
+
+A graded check on the one first aid decision a reader can safely make: recognize the emergency, call for help, and give only the care you are trained to give. It also checks scene safety and the kit you build before anything happens. Each answer links back to the lesson that teaches it. Passing this is *not* training.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is first aid, as this lesson defines it?",
+            options: [
+              "A legal obligation every adult bystander carries at the scene of an injury",
+              "Immediate care given before professional help arrives",
+              "The definitive treatment a patient receives once an ambulance crew takes over",
+              "A certificate that authorizes a layperson to perform advanced procedures",
+            ],
+            correctIndex: 1,
+            explanation:
+              "First aid is the immediate care given before professional help arrives, and it genuinely saves lives when it is performed by someone trained. The lesson is blunt that reading about it is not the same as being trained in it.",
+            sourceLessonSlug: "first-aid-know-your-limits",
+          },
+          {
+            prompt: "What does this lesson call the most dangerous first aid mistake a layperson makes?",
+            options: [
+              "Waiting for the dispatcher to stop speaking before starting any care at all",
+              "Calling emergency services before checking whether the person is breathing",
+              "Trying a procedure they have only read about",
+              "Buying a pre-packed kit instead of assembling one from a published list",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Attempting an advanced procedure known only from reading is the mistake that hurts people. Recognizing an emergency and deciding to call for help are within anyone's reach; definitive care is not.",
+            sourceLessonSlug: "first-aid-know-your-limits",
+          },
+          {
+            prompt: "What is the safe posture the lesson recommends when you are untrained?",
+            options: [
+              "Call emergency services first",
+              "Attempt the procedure anyway, on the reasoning that delay is the greater harm",
+              "Move the person to a car and drive to the nearest hospital yourself",
+              "Wait quietly nearby until someone with training happens to reach the scene",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Call emergency services first, give only the care you are trained and equipped to give, and follow the dispatcher's instructions. This course teaches that decision, and deliberately teaches no procedures.",
+            sourceLessonSlug: "first-aid-know-your-limits",
+          },
+          {
+            prompt: "Where does the lesson send you for hands-on first aid, CPR, and AED training?",
+            options: [
+              "The National Weather Service, which runs the all-hazards radio network",
+              "The Environmental Protection Agency, which sets drinking water standards",
+              "The Department of Agriculture, which publishes the food safety rules",
+              "The American Red Cross",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The American Red Cross offers in-person and blended courses in first aid, CPR, and AED use, which the lesson names as the correct way to gain these skills. The other three agencies appear in this course for weather, water, and food, never for first aid.",
+            sourceLessonSlug: "first-aid-know-your-limits",
+          },
+          {
+            prompt: "The lesson lists what belongs in your knowledge base once you are trained. Which item is on it?",
+            options: [
+              "Setting a broken bone with a splint improvised from your kit materials",
+              "Recognizing an emergency and activating 911",
+              "Deciding which of several injured people should be treated and which not",
+              "Choosing and administering medication from your household supply",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The list is recognizing an emergency and activating 911, the basics of CPR and AED use, controlling severe bleeding, and recognizing shock, stroke, heart attack, and the temperature emergencies from Section 3. Every one of them is learned hands-on, and none of the wrong answers here is taught anywhere in this course.",
+            sourceLessonSlug: "first-aid-know-your-limits",
+          },
+          {
+            prompt: "What does the Red Cross order 'scene, then patient' tell you to do first?",
+            options: [
+              "Ask the injured person for their name and their medical history in order",
+              "Photograph the scene so responders can see it the way you found it",
+              "Check that the scene is safe",
+              "Check whether the injured person is breathing and has a pulse you can find",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Check the scene before the patient, and use protection like gloves, then check the person and call for help. An injured helper helps no one, which is the entire reason for the order.",
+            sourceLessonSlug: "first-aid-kit-and-scene-safety",
+          },
+          {
+            prompt: "Which hazards does the lesson name when it asks whether a scene is safe to approach?",
+            options: [
+              "Fire, live wires, traffic, and unstable structures",
+              "Onlookers who may crowd in, film the incident, and share it before you finish",
+              "Poor light and cold weather, which slow down anything attempted outdoors",
+              "The distance to the nearest hospital and how long an ambulance will take",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Fire, live wires, traffic, an unstable structure, or an ongoing threat. Those are the conditions that turn one patient into two, which is why they are checked before anyone steps in.",
+            sourceLessonSlug: "first-aid-kit-and-scene-safety",
+          },
+          {
+            prompt: "How does the lesson tell you to build a first aid kit?",
+            options: [
+              "From whatever the nearest pharmacy happens to stock the day you shop",
+              "By copying the contents of the kit your workplace keeps in its break room",
+              "Around one large trauma dressing, since severe bleeding is the worst case",
+              "To the Red Cross recommended contents list",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Build to the published Red Cross list: assorted bandages and dressings, gauze, adhesive tape, antiseptic, gloves, a breathing barrier, scissors, tweezers, an emergency blanket, and a first aid guide, among others.",
+            sourceLessonSlug: "first-aid-kit-and-scene-safety",
+          },
+          {
+            prompt: "Beyond the standard supplies, what does the lesson say a complete kit has to carry?",
+            options: [
+              "A printed copy of the emergency management plan for your own county",
+              "A several-day supply of your essential medications",
+              "Enough drinking water for the household to last a three-day outage",
+              "A hand-crank radio tuned in advance to your nearest weather frequency",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Add a several-day supply of essential medications plus copies of prescriptions and medical information. Ready.gov flags medications and medical supplies as part of a complete kit. Water and a radio matter too, but they belong to other lessons and other parts of the kit.",
+            sourceLessonSlug: "first-aid-kit-and-scene-safety",
+          },
+          {
+            prompt: "What upkeep does the lesson ask of a first aid kit once it is assembled?",
+            options: [
+              "Replace the whole kit every year whether or not anything has been used",
+              "Keep it sealed in a container that is opened only during a real emergency",
+              "Check the expiration dates twice a year",
+              "Store it in one fixed place so nobody in the household has to go looking",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Check expiration dates, and set a calendar reminder so it happens twice a year. The lesson also asks for two kits, one at home and one in the car, which is why the single-fixed-place habit is the wrong instinct here.",
+            sourceLessonSlug: "first-aid-kit-and-scene-safety",
+          },
+        ],
+      },
     },
 
     // ─────────────────────────────────────────────────────────────────────────
