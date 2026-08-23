@@ -1405,8 +1405,12 @@ That's it. You will not catch every fake: **nobody can, and no tool can; detecti
       slug: "ai-l2-detecting-ai-quiz",
       title: "12 · Check your understanding",
       section: "Putting it together",
+      // Doubles as the "Putting it together" section quiz and as the course final. Sized as the
+      // final (40 serving 10), which is well above that section's own density target of 10 but
+      // squarely at density for the 3,000-word course it closes.
       quiz: {
-        passingScore: 70,
+        passingScore: 80,
+        questionsPerAttempt: 10,
         // Options shuffle per attempt so a fixed answer position cannot be gamed;
         // scoring is by identity, so no answer changes (src/lib/quiz.ts).
         shuffleOptions: true,
