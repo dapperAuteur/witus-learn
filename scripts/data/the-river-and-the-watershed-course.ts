@@ -2254,8 +2254,13 @@ U.S. Environmental Protection Agency. (n.d.). *Nonpoint source pollution*. https
       slug: "check-the-watershed",
       title: "14 · Knowledge check: how a river works",
       section: "Part 4 · Doing it yourself",
+      body: `The course's final check, and the Part 4 section check at the same time: what an expedition's photographs can prove and what its readings can only ask, who actually decides what happens to a river, and what the capstone expects of you.
+
+Ten questions are drawn from a bank of forty, so a retake is a different exam. Each answer links back to the lesson that teaches it.`,
       quiz: {
-        passingScore: 70,
+        passingScore: 80,
+        questionsPerAttempt: 10,
+        shuffleOptions: true,
         questions: [
           {
             prompt: "A town paves much of its watershed. Residents report worse flooding and a creek that now runs dry in late summer. What single mechanism explains both?",
@@ -2334,6 +2339,451 @@ U.S. Environmental Protection Agency. (n.d.). *Nonpoint source pollution*. https
             explanation:
               "Mussels are stationary and long-lived, so a bed records conditions over decades. Missing recruitment points to something that stopped reproduction, and because many species' larvae must attach to a specific host fish, the cause can be a lost fish population rather than water chemistry.",
             sourceLessonSlug: "life-in-the-river",
+          },
+
+          // Pool expansion to the Tier-0 final spec. The six above reach five lessons; the
+          // thirty-four below close Part 4, whose own three lessons the bank did not reach.
+          {
+            prompt: "What is field observation from an expedition good at?",
+            options: [
+              "Features you can see and photograph",
+              "Chemistry, since a hand instrument reads what a gauge network cannot",
+              "Long-term trends, since the trip covers the whole length of a system",
+              "Comparisons between places, since one team uses one consistent method",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Cut banks, point bars, meanders, braided reaches, oxbows, confluences, levees, revetments and locks are all visible and photographable, and the eye is a perfectly good instrument for them.",
+            sourceLessonSlug: "reading-the-expedition",
+          },
+          {
+            prompt: "What does a photograph of a raw undercut bank opposite a sand slope directly demonstrate?",
+            options: [
+              "That the river is carrying more sediment than it can move",
+              "That the reach has been engineered to hold the channel in place",
+              "That the river is eroding faster than it did before the trip",
+              "A cut bank and a point bar",
+            ],
+            correctIndex: 3,
+            explanation:
+              "It is a direct observation of the lesson 5 mechanism: faster water eroding the outside of a bend, slower water depositing on the inside.",
+            sourceLessonSlug: "reading-the-expedition",
+          },
+          {
+            prompt: "What can a single trip along a whole system produce that a fixed gauge cannot?",
+            options: [
+              "A continuous impression of how the river changes along its length",
+              "A record of how one place changes across a full year of seasons",
+              "A measurement of discharge at points where no gauge is installed",
+              "A comparison against the same river measured in a previous decade",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Where it widens, slows, silts up, gets warmer, gets busier. A gauge sees one place through time; a trip sees the whole length at one time.",
+            sourceLessonSlug: "reading-the-expedition",
+          },
+          {
+            prompt: "What does the lesson mean by the human river?",
+            options: [
+              "The communities whose drinking water is drawn from the channel",
+              "Barge traffic, riprap, outfalls, and industry on the bank",
+              "The history of who built the structures the team passes",
+              "The people the team meets and interviews along the route",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Barge traffic, riprap, outfalls, industry on the bank, and towns turned toward or away from the water. All of it is visible and photographable.",
+            sourceLessonSlug: "reading-the-expedition",
+          },
+          {
+            prompt: "What is expedition observation NOT good at?",
+            options: [
+              "Recording features that are visible from the water itself",
+              "Point measurements as evidence about a river",
+              "Noticing where the character of a river changes along its course",
+              "Documenting how people on the bank use and relate to the water",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A water temperature taken at 2pm at one bank describes that spot at that moment, and comparing it with a dawn reading midstream three hundred miles away says almost nothing.",
+            sourceLessonSlug: "reading-the-expedition",
+          },
+          {
+            prompt: "Why does comparing those two readings say so little?",
+            options: [
+              "Because a handheld instrument is less accurate than a fixed gauge",
+              "Because the two points are too far apart to belong to the same river",
+              "Place, time of day, weather, and method all changed at once",
+              "Because a temperature reading tells you nothing useful about a river",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Everything varied together, so nothing can be attributed to any one of them. That is not a criticism of field data, it is the lesson 8 point arriving again.",
+            sourceLessonSlug: "reading-the-expedition",
+          },
+          {
+            prompt: "Structurally, what does a single trip down a river produce?",
+            options: [
+              "A time series, since readings are taken over many consecutive days",
+              "A transect, not a time series",
+              "A survey, since every point along the route is visited in turn",
+              "A baseline, against which later trips can be directly compared",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A single trip is by definition a single pass, so it shows how the river changes along its length rather than how any one place changes over time.",
+            sourceLessonSlug: "reading-the-expedition",
+          },
+          {
+            prompt: "How does the lesson say expedition material should be treated?",
+            options: [
+              "As measurement, provided the method is documented carefully",
+              "As anecdote, with no evidential weight of any kind",
+              "As a supplement to the gauge network, filling in its gaps",
+              "As illustration and as questions",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Use photographs as evidence of features, which they are excellent for, and use readings as prompts rather than findings.",
+            sourceLessonSlug: "reading-the-expedition",
+          },
+          {
+            prompt: "The water was noticeably warmer below the town. What is that, according to the lesson?",
+            options: [
+              "A question worth taking to a gauge record",
+              "A finding, since the observation was made directly on the water",
+              "An error, since a handheld reading cannot detect a difference that small",
+              "A confirmation of what the impairment listing for that reach already says",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A reading is a prompt, not a finding. The next move is the gauge record, not the conclusion.",
+            sourceLessonSlug: "reading-the-expedition",
+          },
+          {
+            prompt: "A field reading disagrees with the gauge network. What is the interesting move?",
+            options: [
+              "Deciding which of the two instruments is more likely to be correct",
+              "Discarding the field reading, since the gauge has the longer record",
+              "Asking what differed",
+              "Repeating the field reading until it agrees with the published value",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The interesting move is asking what differed between the two, not deciding who is right. Time of day, position in the channel, weather, and method are all candidates.",
+            sourceLessonSlug: "reading-the-expedition",
+          },
+          {
+            prompt: "Which question does the lesson's four-step routine ask about anything numeric from a single reading?",
+            options: [
+              "Whether it agrees with what the course has already taught",
+              "Whether it was recorded to enough decimal places to be useful",
+              "Whether the instrument had been calibrated before the trip began",
+              "What would settle the suggestion it merely makes",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The routine runs: what was measured and how, what does it demonstrate directly, what does it merely suggest, and what would settle the suggestion. Usually a gauge record, a repeat visit, or a published dataset.",
+            sourceLessonSlug: "reading-the-expedition",
+          },
+          {
+            prompt: "An expedition reports warmer water below a town than above it, from two readings four hours apart. Why is that not yet evidence?",
+            options: [
+              "Because two readings can never establish a difference of any kind",
+              "The comparison confounds location with time of day",
+              "Because the team had no permit to sample within the town's boundary",
+              "Because river temperature does not vary enough over four hours to matter",
+            ],
+            correctIndex: 1,
+            explanation:
+              "River temperature changes substantially through the day, so the readings differ in time as well as place. It is a good question, and answering it needs simultaneous readings or a gauge record covering both points.",
+            sourceLessonSlug: "reading-the-expedition",
+          },
+          {
+            prompt: "What is the main federal statute governing what happens to a river's water?",
+            options: [
+              "The Clean Water Act",
+              "The Rivers and Harbors Act, which governs navigation on the main channel",
+              "The National Environmental Policy Act, which requires impact statements",
+              "The Safe Drinking Water Act, which sets limits at the point of supply",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two of its mechanisms matter for this course: permits for discharges from a pipe, and the water-quality standards and impaired-waters process.",
+            sourceLessonSlug: "who-decides-what-happens-to-the-river",
+          },
+          {
+            prompt: "What does the permit mechanism address?",
+            options: [
+              "Any activity that changes the land cover of the surrounding watershed",
+              "Withdrawals of water for irrigation and municipal supply",
+              "Construction of any structure within the mapped floodplain",
+              "Discharges from a pipe",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Point sources need permits with limits attached. This mechanism worked well against the problem it was designed for.",
+            sourceLessonSlug: "who-decides-what-happens-to-the-river",
+          },
+          {
+            prompt: "Why is rivers catching fire a historical reference rather than a current event?",
+            options: [
+              "Because the industries responsible have since moved out of the basin",
+              "Because monitoring now detects the conditions long before they build up",
+              "Because the point-source permit mechanism worked",
+              "Because the fires were always local incidents rather than a general problem",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Permits with limits, attached to identifiable pipes and enforceable against their owners, addressed the problem they were designed for.",
+            sourceLessonSlug: "who-decides-what-happens-to-the-river",
+          },
+          {
+            prompt: "What is a TMDL?",
+            options: [
+              "A permit issued to a specific discharger with numeric limits attached",
+              "A budget for how much of a pollutant a water body can receive",
+              "A federal standard that every state's waters must meet identically",
+              "A monitoring schedule setting how often a water body must be sampled",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The total maximum daily load: how much of a pollutant a water body can receive and still meet its standard, divided among sources.",
+            sourceLessonSlug: "who-decides-what-happens-to-the-river",
+          },
+          {
+            prompt: "Who sets the water-quality standards a TMDL is measured against?",
+            options: [
+              "The Army Corps of Engineers, as operator of the works on the river",
+              "The basin bodies that coordinate across state borders",
+              "States",
+              "Local government, since it controls the land use that produces the load",
+            ],
+            correctIndex: 2,
+            explanation:
+              "States set standards for their waters, identify waters that fail them, and are required to develop a TMDL for those waters.",
+            sourceLessonSlug: "who-decides-what-happens-to-the-river",
+          },
+          {
+            prompt: "What is the gap the lesson wants you to understand?",
+            options: [
+              "A budget is not an enforcement mechanism",
+              "A standard set by a state cannot bind a source in another state",
+              "A permit expires before its limits have had time to take effect",
+              "A monitoring program cannot detect a load small enough per source",
+            ],
+            correctIndex: 0,
+            explanation:
+              "For point sources the budget flows into permits, which are enforceable. For nonpoint sources there is generally no permit for it to flow into.",
+            sourceLessonSlug: "who-decides-what-happens-to-the-river",
+          },
+          {
+            prompt: "How is agricultural runoff largely addressed?",
+            options: [
+              "Through permits issued to each farm above a certain acreage",
+              "Through voluntary programs and incentives",
+              "Through state standards enforced directly against landowners",
+              "Through federal purchase of the land nearest to the waterways",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It is nonpoint, so there is generally no permit to attach a budget to, and the remedy runs through voluntary programs and incentives rather than mandates.",
+            sourceLessonSlug: "who-decides-what-happens-to-the-river",
+          },
+          {
+            prompt: "Is the enforcement gap a hidden scandal?",
+            options: [
+              "Yes, and it was concealed when the statute was drafted",
+              "Yes, since the agencies involved have never acknowledged it",
+              "It is disputed, and the lesson declines to take a position on it",
+              "No; it is the visible design",
+            ],
+            correctIndex: 3,
+            explanation:
+              "It is the visible design, and it is why the nutrient problem persists while point-source pollution improved dramatically.",
+            sourceLessonSlug: "who-decides-what-happens-to-the-river",
+          },
+          {
+            prompt: "What does the Army Corps of Engineers do in this structure?",
+            options: [
+              "Builds and operates navigation and flood-control works",
+              "Sets the water-quality standards that the states then apply",
+              "Issues the permits that point-source dischargers operate under",
+              "Coordinates the goals that the basin bodies agree between states",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The Corps builds and operates the navigation and flood-control works, which is the physical infrastructure lesson 7 describes.",
+            sourceLessonSlug: "who-decides-what-happens-to-the-river",
+          },
+          {
+            prompt: "What do interstate and basin bodies such as the Hypoxia Task Force generally produce?",
+            options: [
+              "Permits binding on the dischargers within their member states",
+              "Goals rather than rules",
+              "Standards that override the ones individual states have set",
+              "Budgets that each member state is legally required to meet",
+            ],
+            correctIndex: 1,
+            explanation:
+              "They coordinate across borders and generally set goals rather than rules, which is a real function and a limited one.",
+            sourceLessonSlug: "who-decides-what-happens-to-the-river",
+          },
+          {
+            prompt: "What does local government decide that matters most for this course?",
+            options: [
+              "Which stretches of river are open to recreational use",
+              "How often the local water body is monitored and by whom",
+              "Land use",
+              "Which structures may be built within the channel itself",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Local government decides land use, which is what actually determines the infiltration in lesson 2 and therefore the shape of the hydrograph in lesson 3.",
+            sourceLessonSlug: "who-decides-what-happens-to-the-river",
+          },
+          {
+            prompt: "What authority do tribal nations hold over water?",
+            options: [
+              "Sovereign authority over their own waters, and often treaty rights beyond",
+              "An advisory role in the standards the surrounding state sets",
+              "The same authority as a local government within reservation boundaries",
+              "Authority delegated to them by the federal permitting agency",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Sovereign authority over their own waters and, in many cases, treaty-reserved rights that reach beyond reservation boundaries. The lesson is explicit that this is not a footnote.",
+            sourceLessonSlug: "who-decides-what-happens-to-the-river",
+          },
+          {
+            prompt: "Why is a governance lesson in a science course at all?",
+            options: [
+              "Because the statutes define the measurements the course has taught",
+              "Because a learner cannot read a gauge record without knowing who runs it",
+              "Because the capstone requires citing a regulatory source",
+              "Because the science alone determines nothing",
+            ],
+            correctIndex: 3,
+            explanation:
+              "A watershed is a physical system embedded in a jurisdictional one, and the boundaries do not line up: watersheds cross state lines, and a river's problems are basin-scale while nearly all authority is not.",
+            sourceLessonSlug: "who-decides-what-happens-to-the-river",
+          },
+          {
+            prompt: "What does the capstone ask you to produce?",
+            options: [
+              "A description of the watershed you live in, from public data",
+              "A set of readings taken from the river nearest to where you live",
+              "A comparison of two watersheds with contrasting land cover",
+              "A proposal for reducing the nutrient load in your own basin",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Describe the watershed you live in using public data, and state plainly what you can and cannot conclude from it, in roughly 500 to 900 words.",
+            sourceLessonSlug: "capstone-characterise-your-watershed",
+          },
+          {
+            prompt: "What equipment does the capstone require?",
+            options: [
+              "A thermometer and a turbidity tube, which are inexpensive to obtain",
+              "A test kit covering the parameters in the lesson 8 table",
+              "None; everything you need is free and online",
+              "Access to a laboratory that will process one water sample",
+            ],
+            correctIndex: 2,
+            explanation:
+              "No test kit and no fieldwork. Everything you need is free and online.",
+            sourceLessonSlug: "capstone-characterise-your-watershed",
+          },
+          {
+            prompt: "What does the capstone tell you NOT to do with the gauge record?",
+            options: [
+              "Cite it, since the interpretation should stand on its own",
+              "Compute anything",
+              "Compare it with a neighboring watershed's record",
+              "Describe its seasonal highs and lows in the submission",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Report what the gauge measures and describe the pattern, interpreting the shape using lesson 3. Do not compute anything.",
+            sourceLessonSlug: "capstone-characterise-your-watershed",
+          },
+          {
+            prompt: "What connection does the land-cover section ask you to make?",
+            options: [
+              "Between land cover and the impairment listings for the same reach",
+              "Between land cover and the structures built on the river",
+              "Between land cover and the population of the surrounding towns",
+              "What the land cover predicts about the hydrograph, and whether it holds",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Describe the land cover, then connect it: what does farmland, forest, urban, or a mixture predict about the hydrograph you just described, and does the prediction hold.",
+            sourceLessonSlug: "capstone-characterise-your-watershed",
+          },
+          {
+            prompt: "What should you say if nothing in your watershed is listed as impaired?",
+            options: [
+              "Say so, and say what that does and does not mean",
+              "Choose a neighboring watershed that does have a listing",
+              "Leave the section out, since there is nothing to report",
+              "Assume the water meets its standards and describe it as healthy",
+            ],
+            correctIndex: 0,
+            explanation:
+              "An absent listing can mean the water meets its standards or that nobody has assessed it. Saying which you can tell, and which you cannot, is the assignment.",
+            sourceLessonSlug: "capstone-characterise-your-watershed",
+          },
+          {
+            prompt: "What does the capstone call its most important section?",
+            options: [
+              "The gauge record, since it is the only quantitative evidence available",
+              "What you cannot conclude, and what would settle it",
+              "The structure and its downstream consequence",
+              "The naming and placing of the watershed within its larger basin",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Naming what you could not determine is the skill, and it is what the assignment is assessed on above everything else.",
+            sourceLessonSlug: "capstone-characterise-your-watershed",
+          },
+          {
+            prompt: "How many things you could not determine must you name?",
+            options: [
+              "One, chosen as the most consequential gap you encountered",
+              "Two, one about the water and one about the land",
+              "At least three",
+              "As many as the data happened to leave open, with no minimum",
+            ],
+            correctIndex: 2,
+            explanation:
+              "At least three genuine gaps: a gap in the gauge record, a parameter nobody measures locally, a question the impairment listing does not answer. For each, name what would settle it.",
+            sourceLessonSlug: "capstone-characterise-your-watershed",
+          },
+          {
+            prompt: "Is a watershed with sparse data and a plain description a poor result?",
+            options: [
+              "Yes, since the assignment cannot be completed without a usable record",
+              "Yes, unless a neighboring watershed's data can be substituted for it",
+              "It depends on whether any water body in it has been listed as impaired",
+              "No; it is a normal result, and reporting it honestly earns full credit",
+            ],
+            correctIndex: 3,
+            explanation:
+              "You are not assessed on whether your watershed turned out to be interesting or troubled. You are assessed on whether the public data was actually consulted and cited, and on naming what you could not determine.",
+            sourceLessonSlug: "capstone-characterise-your-watershed",
+          },
+          {
+            prompt: "What does the capstone's one rule say?",
+            options: [
+              "Do not assert what you did not check",
+              "Cite every source in the format the agency itself publishes it in",
+              "Use only data published within the last five years",
+              "Describe the watershed as it is now rather than as it once was",
+            ],
+            correctIndex: 0,
+            explanation:
+              "I could not find a gauge with more than a few years of record is a finding. Writing as though you read a record you did not read is the failure.",
+            sourceLessonSlug: "capstone-characterise-your-watershed",
           },
         ],
       },
