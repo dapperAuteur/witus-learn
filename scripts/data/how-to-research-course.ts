@@ -1206,6 +1206,8 @@ The failure mode to watch for is a piece of work that is **technically accurate 
       title: "10 · Knowledge check: truth and harm",
       section: "Section 4 · Minimizing harm",
       quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
         shuffleOptions: true,
         questions: [
           {
@@ -1263,6 +1265,255 @@ The failure mode to watch for is a piece of work that is **technically accurate 
             explanation:
               "A hedge with no check attached is one nobody will ever clear: it ships and stays forever because nothing records that it is open. Private notes and extra hedges do not create the durable, separate record that gets the question answered.",
             sourceLessonSlug: "verified-and-flagged",
+          },
+
+          // Pool expansion so this section's own two lessons are covered rather than sampled.
+          {
+            prompt: "What three properties does consent have to have?",
+            options: [
+              "Informed, specific, and revocable in practice",
+              "Written, witnessed, and dated at the time it is given",
+              "Voluntary, unpaid, and given before any recording begins",
+              "Explicit, permanent, and covering every foreseeable future use",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Consent and fair representation must be Met unless your work genuinely contains no identifiable people.",
+            sourceLessonSlug: "consent-and-representation",
+          },
+          {
+            prompt: "What does informed consent require the person to have understood?",
+            options: [
+              "The questions you intend to ask before the recording starts",
+              "What it is for, where it will appear, who will see it, that it may persist",
+              "How the material will be edited before anyone else sees it",
+              "Their legal right to withdraw the material after publication",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Can I record this is not informed consent. Can I record this for a course that will be published online and may be paid for is.",
+            sourceLessonSlug: "consent-and-representation",
+          },
+          {
+            prompt: "What does specific mean, in consent?",
+            options: [
+              "That the person named exactly which passages may be used",
+              "That the consent covers a stated period rather than indefinitely",
+              "Consent to one use is not consent to all uses",
+              "That the person agreed to a specific interviewer rather than a team",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Agreeing to an interview for a written piece is not agreement to appear in a film. A new medium and a new audience is a new use, and it needs fresh consent.",
+            sourceLessonSlug: "consent-and-representation",
+          },
+          {
+            prompt: "What does the lesson say to decide in advance and in writing?",
+            options: [
+              "Which parts of the material you will publish and which you will hold",
+              "Whether the person will be paid for their participation",
+              "How long the recordings will be retained after publication",
+              "What you will do when someone changes their mind",
+            ],
+            correctIndex: 3,
+            explanation:
+              "You are not always legally obliged to honor a change of mind. Deciding in the moment favors whoever wants the material most, which is why the decision belongs before the moment arrives.",
+            sourceLessonSlug: "consent-and-representation",
+          },
+          {
+            prompt: "What does the lesson mean by log it?",
+            options: [
+              "Record who, when, what for, and in what form",
+              "Keep the recording itself in an archive that outlives the project",
+              "File the consent with the platform before publishing anything",
+              "Note the consent in the piece itself, where the reader can see it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A consent you cannot evidence is one you will eventually be asked to prove and cannot.",
+            sourceLessonSlug: "consent-and-representation",
+          },
+          {
+            prompt: "Somebody declines. What happens next?",
+            options: [
+              "You ask once more, in case the first refusal was a misunderstanding",
+              "That is the end",
+              "You use the material without naming them",
+              "You publish and note that they declined to comment",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Not a negotiation, not a softer version, and not anonymized use unless that is exactly what they agreed to. The lesson says this is broken constantly, usually by someone who has decided the story matters more than the person in it.",
+            sourceLessonSlug: "consent-and-representation",
+          },
+          {
+            prompt: "What does fair representation cover that consent does not?",
+            options: [
+              "Whether the person was compensated for the time they gave you",
+              "Whether the material was edited faithfully to the recording",
+              "Whether the person's own account is given priority over others",
+              "Whether what you made would be recognizable to them",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Consent covers whether you may use someone's words. Fairness covers whether they would say that is not what I meant, or that is not what I am like.",
+            sourceLessonSlug: "consent-and-representation",
+          },
+          {
+            prompt: "What is the difference between an unflattering portrayal and an unfair one?",
+            options: [
+              "An unfair one is built by selection, so the subject would not recognize it",
+              "An unflattering one is opinion and an unfair one is factually wrong",
+              "An unfair one was published without the subject seeing it first",
+              "An unflattering one is unavoidable and an unfair one is deliberate",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Unflattering true things are part of honest work. The one quote out of two hours, the photograph taken mid-blink, and the anecdote with its context removed are something else.",
+            sourceLessonSlug: "consent-and-representation",
+          },
+          {
+            prompt: "What does the lesson say about people in a dependent relationship, in crisis, or in custody?",
+            options: [
+              "Their consent cannot be used at all under this criterion",
+              "Their consent must be obtained in writing rather than verbally",
+              "No is expensive for them, so a yes carries less weight",
+              "A guardian or advocate must consent alongside them",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Which means you should require more of yourself, not less. Minors are the separate case: they need a guardian's consent as well as their own agreement.",
+            sourceLessonSlug: "consent-and-representation",
+          },
+          {
+            prompt: "What does the fidelity lesson say a translation is?",
+            options: [
+              "A claim",
+              "A courtesy to a reader who does not speak the language",
+              "An interpretation, which no reader should treat as exact",
+              "A secondary source, since somebody has processed the original",
+            ],
+            correctIndex: 0,
+            explanation:
+              "She said X asserts that X is what she said, and if your translation is loose you have put words in a real person's mouth in public.",
+            sourceLessonSlug: "cultural-and-linguistic-fidelity",
+          },
+          {
+            prompt: "What does a translation that carries meaning require?",
+            options: [
+              "A second machine translation, to compare the two outputs",
+              "A note giving the original alongside the rendered version",
+              "A check by someone fluent, ideally a native speaker of the variety spoken",
+              "Approval from the person quoted before it can be published",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Machine translation is a fine first pass and a poor final one, especially with idiom, register, humor, and anything said obliquely on purpose.",
+            sourceLessonSlug: "cultural-and-linguistic-fidelity",
+          },
+          {
+            prompt: "What do you do when you cannot get a translation checked?",
+            options: [
+              "Paraphrase rather than quote, so nothing is attributed as speech",
+              "Say so, plainly, in the work",
+              "Leave the passage in the original and let the reader decide",
+              "Hold the material until a checker becomes available",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Translated by the author; not independently checked is a normal, honorable sentence, and it lets the reader weigh the quote accordingly.",
+            sourceLessonSlug: "cultural-and-linguistic-fidelity",
+          },
+          {
+            prompt: "What is the common framing failure this criterion catches?",
+            options: [
+              "Hostility toward a community's practices, expressed indirectly",
+              "Using a group's own terms without explaining them to outsiders",
+              "Quoting a community's members selectively to support a thesis",
+              "Explaining a group's practice using a framework from outside it",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Applied so naturally that you never notice you chose it. A ceremony described purely as economics. A belief described purely as psychology. A survival strategy described as a quirk.",
+            sourceLessonSlug: "cultural-and-linguistic-fidelity",
+          },
+          {
+            prompt: "What does the lesson call the failure mode to watch for?",
+            options: [
+              "Work that is technically accurate and unrecognizable to the people in it",
+              "Work that is sympathetic in tone and inaccurate in its details",
+              "Work that quotes a community without ever naming its members",
+              "Work that names a framework it never actually applies",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Every framework may contain something true, and every one can produce an account that is accurate in its parts and wrong as a whole.",
+            sourceLessonSlug: "cultural-and-linguistic-fidelity",
+          },
+          {
+            prompt: "What does the lesson say to do with your framework?",
+            options: [
+              "Choose the one most widely used in the field and stay consistent",
+              "Avoid frameworks entirely, and report only what you observed",
+              "Name it, instead of hiding it",
+              "Test it against a second framework before you commit to it",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Read as an economic exchange, this looks like is honest. Silently doing it is not.",
+            sourceLessonSlug: "cultural-and-linguistic-fidelity",
+          },
+          {
+            prompt: "What should you do with a reader-from-inside who says that is not how we would put it?",
+            options: [
+              "Take it seriously",
+              "Note it as one view among several and publish as drafted",
+              "Ask them to supply the wording they would prefer instead",
+              "Weigh it against the accuracy of the underlying facts",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Get a read from someone inside before you publish, and take that response seriously. Where accounts differ, say they differ; you do not have to adjudicate everything.",
+            sourceLessonSlug: "cultural-and-linguistic-fidelity",
+          },
+          {
+            prompt: "When is a machine translation acceptable as the final version?",
+            options: [
+              "When the source language is one the tool handles well",
+              "When a fluent reader has skimmed it and raised no objection",
+              "Never, under this criterion",
+              "When nothing depends on the meaning",
+            ],
+            correctIndex: 3,
+            explanation:
+              "If it carries meaning, especially a quote from a real person, it needs a fluent human check or an explicit note that it did not get one.",
+            sourceLessonSlug: "cultural-and-linguistic-fidelity",
+          },
+          {
+            prompt: "Which of these does the lesson list among what to actually do?",
+            options: [
+              "Ask people how they describe the thing, and use their words",
+              "Avoid quoting anyone whose language you do not speak",
+              "Have every passage reviewed by an academic in the relevant field",
+              "Publish the original recording alongside your account of it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Alongside naming your framework, getting a read from inside, and saying where accounts differ rather than adjudicating between them.",
+            sourceLessonSlug: "cultural-and-linguistic-fidelity",
+          },
+          {
+            prompt: "Who does the fidelity lesson say is most likely to fail this criterion?",
+            options: [
+              "Researchers working outside their own academic field",
+              "People who are careful, polite, and well intentioned",
+              "Writers under deadline pressure from an editor",
+              "Anyone relying on a translator they did not choose",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The failure is not hostility. It is a framework chosen so naturally that the choosing never registers as a choice.",
+            sourceLessonSlug: "cultural-and-linguistic-fidelity",
           },
         ],
       },
