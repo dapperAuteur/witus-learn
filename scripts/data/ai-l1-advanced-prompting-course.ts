@@ -95,6 +95,267 @@ You don't need all five every time. But when an answer disappoints, the fix is a
       },
     },
 
+    {
+      slug: "quiz-why-structure-beats-wording",
+      title: "Section 1 knowledge check · Why structure beats wording",
+      section: "Why structure beats wording",
+      body: `A graded check on what a prompt actually is, on the four pieces of the frame, and on diagnosing which piece a weak prompt is missing. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is a prompt, in this lesson's terms?",
+            options: [
+              "A command the model is obliged to follow exactly as written",
+              "The context the model reasons from",
+              "A setting that changes how the model was originally trained",
+              "A phrase whose precise wording unlocks a hidden capability",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It is just text you give the model to steer its prediction. That reframing is what kills the search for magic words: change the context and you change the answer.",
+            sourceLessonSlug: "what-a-prompt-really-is",
+          },
+          {
+            prompt: "Why does this lesson say hunting for magic words is wasted effort?",
+            options: [
+              "Models are retrained often enough that any phrase stops working",
+              "Providers filter out phrases that get shared too widely online",
+              "Magic words add no context",
+              "A long prompt is truncated before the model ever reads all of it",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The model answers from the context it was given. A clever phrase that supplies no audience, goal, length or format has changed nothing about what it knows.",
+            sourceLessonSlug: "what-a-prompt-really-is",
+          },
+          {
+            prompt: "A short, vague prompt leaves the model guessing. What does the lesson say about those guesses?",
+            options: [
+              "They are drawn from the most common answer in its training data",
+              "They default to the most cautious answer available to the model",
+              "They are plausible, not correct",
+              "They are flagged in the output, so you know which parts were guessed",
+            ],
+            correctIndex: 2,
+            explanation:
+              "It will guess your audience, goal, length and format, and the guess will read well. Plausible is the model's whole specialty and is not the same as right.",
+            sourceLessonSlug: "what-a-prompt-really-is",
+          },
+          {
+            prompt: "What do the OpenAI and Anthropic prompting guides both come down to?",
+            options: [
+              "Clarity, context, and a demonstration",
+              "Longer prompts, more polite phrasing, and repeated instructions",
+              "A named role, a word limit, and a request for citations every time",
+              "More examples, a higher setting, and a second model to review",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Be clear and specific, give the model context and constraints, and show it what good looks like. Everything else in the course is a way of doing those three well.",
+            sourceLessonSlug: "what-a-prompt-really-is",
+          },
+          {
+            prompt: "The strong example asks for a 150-word explainer for a general adult reader, ending on one takeaway. What makes it strong?",
+            options: [
+              "It uses vocabulary the model encountered often during training",
+              "It asks for less work than the weak version of the same prompt",
+              "It names a topic narrow enough to have only one right answer",
+              "It supplies structure",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Audience, length, format and a precise task, all stated. None of the words in it are clever; every one of them removes a guess.",
+            sourceLessonSlug: "what-a-prompt-really-is",
+          },
+          {
+            prompt: "The editor example ends with \"Don't rewrite them yet.\" What is that instruction doing?",
+            options: [
+              "Bounding the task",
+              "Saving the model effort, so the answer comes back more quickly",
+              "Reserving the rewrite for a model better suited to editing work",
+              "Signaling that the draft is already close to finished",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It names one action, critique, and rules out the other, rewriting. Without it the model does both and you cannot tell which weaknesses it actually found.",
+            sourceLessonSlug: "what-a-prompt-really-is",
+          },
+          {
+            prompt: "What does the lesson say happens when you change the context you give a model?",
+            options: [
+              "You reset the conversation the model has been tracking so far",
+              "You force the model to reason step by step through the request",
+              "You change the answer",
+              "You override any role the model was assigned earlier on",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The prompt is the context the model reasons from, so context and answer move together. That is why adding a missing piece works and rephrasing usually does not.",
+            sourceLessonSlug: "what-a-prompt-really-is",
+          },
+          {
+            prompt: "What does Role set, according to this lesson?",
+            options: [
+              "The subject-matter knowledge the model is allowed to draw on",
+              "The voice and the bar",
+              "The length and the structure the finished answer will take",
+              "The order in which the model works through the request",
+            ],
+            correctIndex: 1,
+            explanation:
+              "\"A patient statistics tutor\" and \"a skeptical peer reviewer\" pull different vocabulary, different depth, and a different standard for what counts as good enough.",
+            sourceLessonSlug: "role-context-task-format",
+          },
+          {
+            prompt: "Why is Context the piece where accuracy is usually won or lost?",
+            options: [
+              "It is the only part of a prompt the model reads word for word",
+              "Pasted material grounds the answer",
+              "It is weighted more heavily than the other pieces of the frame",
+              "It decides which of its training sources the model will consult",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Pasting the actual article, email or data is far stronger than trusting the model's memory of it, and memory is exactly where facts go wrong.",
+            sourceLessonSlug: "role-context-task-format",
+          },
+          {
+            prompt: "What makes a good Task?",
+            options: [
+              "A list of everything you would like the answer to accomplish",
+              "A description of why the work matters to you personally",
+              "One clear verb",
+              "A restatement of the role in the form of an instruction",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Summarize, compare, critique, rewrite, list the risks. One precise verb beats a pile of vague hopes, because the model can only aim at one target at a time.",
+            sourceLessonSlug: "role-context-task-format",
+          },
+          {
+            prompt: "Which piece of the frame covers length, structure, and tone?",
+            options: [
+              "Format",
+              "Context, which carries the audience the answer is written for",
+              "Role, since the persona you choose decides how the answer reads",
+              "Task, since the verb you choose implies how long the answer runs",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Format is the shape of the output: five bullets in plain English, or a table with columns Claim, Evidence and Confidence.",
+            sourceLessonSlug: "role-context-task-format",
+          },
+          {
+            prompt: "What order does the lesson recommend for the pieces of the frame?",
+            options: [
+              "Task first, then role, then any material the answer needs",
+              "Format first, so that every later piece is written to fit it",
+              "Context first, then format, then role, and the task last",
+              "Role, context, task, format",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Then examples, if the shape is finicky. The order puts the grounding material in front of the instruction that acts on it.",
+            sourceLessonSlug: "role-context-task-format",
+          },
+          {
+            prompt: "An answer disappoints you. Where does the lesson say the fix almost always is?",
+            options: [
+              "A missing piece of the frame",
+              "A model too small for the difficulty of what you asked",
+              "A prompt long enough that the earliest instructions were lost",
+              "An ambiguity in the wording that the right synonym would resolve",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Most often the missing piece is context. Diagnosing which piece is absent is a faster path than rewording, and it tells you something you can reuse.",
+            sourceLessonSlug: "role-context-task-format",
+          },
+          {
+            prompt: "Do you need all five pieces of the frame in every prompt?",
+            options: [
+              "Yes, since leaving one out makes the others harder to interpret",
+              "No",
+              "Yes, because the published guides describe the five as one unit",
+              "Only when the answer will be published rather than kept private",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The frame is a diagnostic checklist, not a form to fill in. Its value shows up when an answer is wrong and you need to know what to add.",
+            sourceLessonSlug: "role-context-task-format",
+          },
+          {
+            prompt: "How does Google's People + AI Guidebook frame the work of prompting?",
+            options: [
+              "Training a collaborator through repeated rounds of correction",
+              "Translating a human goal into the model's own internal language",
+              "Constraining a system until only one possible output remains",
+              "Designing a handoff",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The handoff between the person and the system. The clearer you are about goal, inputs, and the form of a good result, the better the collaboration works.",
+            sourceLessonSlug: "role-context-task-format",
+          },
+          {
+            prompt: "\"Make this better\" is typed with nothing pasted in. Which piece of the frame is missing?",
+            options: [
+              "Format, since no length or structure has been requested",
+              "Role, since no voice has been set for the reply",
+              "Context",
+              "Examples, since no sample of a better version was shown",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The model cannot see what \"this\" is. Give it the actual material and the situation rather than relying on its memory of your document.",
+            sourceLessonSlug: "practice-the-frame",
+          },
+          {
+            prompt: "You want a reply that sounds like a kind, patient tutor rather than a generic bot. Which piece sets that?",
+            options: [
+              "Context, by describing the learner the answer is written for",
+              "Examples, by showing a passage written in that same manner",
+              "Task, by asking the model to teach rather than to summarize",
+              "Role",
+            ],
+            correctIndex: 3,
+            explanation:
+              "A role such as \"You are a patient tutor\" sets the voice, the depth, and the bar of the answer, all from one clause at the top of the prompt.",
+            sourceLessonSlug: "practice-the-frame",
+          },
+          {
+            prompt: "\"Tell me about this report\" is too open. What does the drill say it needs?",
+            options: [
+              "A precise task",
+              "A role, since no expertise has been assigned to the answer",
+              "A format, since no length or structure has been requested",
+              "A constraint, since nothing limits what may be included",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It never names the one action. Summarize it, compare it to last quarter, critique its method: each of those is answerable and \"tell me about\" is not.",
+            sourceLessonSlug: "practice-the-frame",
+          },
+          {
+            prompt: "\"Exactly five plain-English bullets, no jargon\" sets which piece of the frame?",
+            options: [
+              "Task, since it says what the model is being asked to produce",
+              "Context, since it describes the reader's tolerance for jargon",
+              "Role, since plain English implies a non-expert speaker",
+              "Format",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Length, structure and tone in one clause. Format is the easiest constraint to add and the one people most often leave out.",
+            sourceLessonSlug: "practice-the-frame",
+          },
+        ],
+      },
+    },
+
     // ── Section 2 · Showing the model what good looks like ────────────────────
     {
       slug: "examples-few-shot",
