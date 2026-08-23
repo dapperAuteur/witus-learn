@@ -545,5 +545,553 @@ Pauli Murray Center for History and Social Justice. (n.d.). *Who is Pauli Murray
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 2 — The Matthew effect: credit runs uphill, toward eminence
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "merton-and-the-matthew-effect",
+      title: "5 · Merton names the first mechanism",
+      section: "Section 2 · The Matthew effect",
+      body: `In January 1968 the sociologist Robert K. Merton published a paper in *Science* that gave this whole subject its first named mechanism (Merton, 1968).
+
+**The claim.** Merton described the Matthew effect as the accruing of greater increments of recognition for particular scientific contributions to scientists of considerable repute, and the withholding of such recognition from scientists who have not yet made their mark (Merton, 1968, p. 58). Read it twice, because it is doing two things at once. Credit flows *toward* the already eminent, and it is *withheld* from the not yet known. Those are not the same event and they can happen in the same room on the same afternoon.
+
+**Where the name comes from.** The Gospel of Matthew carries a line, at 13:12 and again at 25:29, whose sense is that to whoever has, more will be given, and from whoever has not, even what they have will be taken away. Merton titled the effect for it. The choice matters for teaching, because it makes the mechanism memorable in one sentence and because it warns you that the pattern was noticed long before anyone measured it.
+
+**The two situations where it bites hardest.** First, **collaboration**: when a well known and a little known researcher publish together, the well known one is remembered as the author of the work. Second, **independent multiple discovery**: when two people reach the same result separately, the credit tends to settle on whichever of them was already eminent. Both are ordinary situations. Neither requires anyone to behave badly.
+
+**The forty-first chair.** Merton borrowed an image from the French writer Arsene Houssaye, who in 1855 wrote about the writers the Academie francaise had no room for. The Academie has forty seats, so its "forty-first chair" is occupied by everyone excellent enough to belong and unlucky enough to arrive when the seats were full. The names usually listed for that chair include Descartes, Pascal, Rousseau, Diderot, Flaubert, Zola and Proust. The point is not that the Academie erred forty times. The point is that a format with forty slots produces a forty-first chair automatically, which is the format cap from lesson 1 doing its work.
+
+**Merton's own verdict, which is more complicated than the summary.** He argued that the effect is dysfunctional for the individual scientist penalized early in a career, and at the same time arguably functional for the communication system of science, because attaching a known name to a result is one way an overloaded field decides what to read (Merton, 1968). That is not a defense of the outcome for the person. It is a reason the practice survives, and a mechanism that has a use is far harder to remove than one that has none.
+
+:::reveal State the Matthew effect in Merton's terms, and name the two distinct things it does. ||| It is the accruing of greater increments of recognition for particular contributions to scientists of considerable repute, and the withholding of such recognition from scientists who have not yet made their mark. Credit flows toward the eminent AND is withheld from the unknown.
+
+:::reveal What is the forty-first chair, and what does it illustrate about credit? ||| Houssaye's 1855 image for the writers the Academie francaise's forty seats had no room for. It illustrates that a format cap produces exclusion automatically, without anyone deciding to exclude a particular person.
+
+:::reveal Why does Merton's claim that the effect is partly functional make it harder to remove? ||| Because a practice with a use survives criticism. Attaching a known name to a result is one way an overloaded field triages what to read, so the mechanism is doing a job for the field even while it penalizes the individual.
+
+## Vocabulary
+- **Matthew effect**: credit accruing to the already eminent and being withheld from the not yet known, named by Merton in 1968.
+- **Independent multiple discovery**: two or more people reaching the same result separately, a situation in which the credit tends to settle on whoever was already eminent.
+- **The forty-first chair**: Houssaye's image, borrowed by Merton, for those excluded by a fixed number of seats rather than by a judgment about them.
+- **Functional for the field**: Merton's argument that using a known name as a filter helps an overloaded discipline decide what to read, whatever it costs the individual.
+
+## Sources
+Merton, R. K. (1968). The Matthew effect in science. *Science, 159*(3810), 56-63. https://doi.org/10.1126/science.159.3810.56`,
+    },
+    {
+      slug: "the-footnote-inside-the-paper",
+      title: "6 · The paper about credit that misassigned credit",
+      section: "Section 2 · The Matthew effect",
+      body: `Twenty years after the 1968 paper, Merton returned to the subject in *Isis* and added something about his own work (Merton, 1988).
+
+**What he said.** He had drawn on Harriet Zuckerman's interview and other research materials so heavily that the 1968 paper should have appeared under joint authorship (Merton, 1988). Zuckerman had interviewed Nobel laureates for her own study, and those interviews are where much of the paper's evidence came from. The paper that named the mechanism was itself an instance of it, and the correction arrived two decades late, from the person who had benefited.
+
+Teach that squarely rather than as an irony. It shows three things at once: the mechanism operates on people who understand it, a correction is possible, and a correction taking twenty years leaves twenty years of citations pointing at one name.
+
+**Then somebody measured it.** Bol, de Vaan and van de Rijt (2018) used every review score and funding decision in a large Dutch early-career grant scheme they describe as a two billion euro program. The design is the useful part. Applicants who scored *just above* the funding threshold and applicants who scored *just below* it are, on the evidence of the scores themselves, near identical. The only systematic difference between them is the grant, so any later gap has to come from the grant rather than from the talent.
+
+**The result.** Winners just above the threshold accumulated more than twice as much funding over the following eight years as non winners with near identical scores just below it (Bol et al., 2018). Two findings inside that matter more than the headline. The gap was driven partly by non winners **ceasing to compete**. And the authors reported no evidence that winners' improved chances came from the achievements the first grant paid for, so the money worked as an asset for getting more money.
+
+**Does it replicate?** A 2025 replication using 109,624 funded and unfunded applications across 14 programs at six North American and European funders reports that the Matthew effect replicated, held across funders and specifications, and generalized to the whole population, while a separate claim in this literature, that an early setback later benefits those who survive it, did not hold up robustly and is better explained by who chooses to reapply (Traag et al., 2025). Note the honest shape of that: one finding survived and one did not, and a course reporting only the survivor would sell you a cleaner field than exists. That study is an eLife reviewed preprint rather than a version of record, so treat the citation as provisional.
+
+:::reveal What did Merton say in 1988 about the authorship of his own 1968 paper? ||| That he had drawn on Harriet Zuckerman's interview and other research materials so heavily that the paper should have appeared under joint authorship. The paper naming the mechanism was an instance of it, corrected twenty years later.
+
+:::reveal Explain the design Bol and colleagues used, and why it supports a causal reading. ||| They compared applicants scoring just above a funding threshold with applicants scoring just below it. On the scores themselves the two groups are near identical, so the grant is the only systematic difference, and a later gap between them is attributable to the grant rather than to talent.
+
+:::reveal Name the two findings inside the Bol result that matter more than the headline figure. ||| The gap was driven partly by non winners ceasing to compete for later funding. And there was no evidence that winners' improved later chances came from what the first grant enabled, so the money itself acted as the asset.
+
+## Vocabulary
+- **Regression discontinuity**: comparing cases just above and just below a cutoff, where the cutoff is the only systematic difference, so a later gap can be read as caused by it.
+- **Participation mechanism**: the part of an advantage produced by the losers dropping out rather than by the winners performing better.
+- **Reviewed preprint**: a version posted with peer reviews attached but not yet a final version of record, which is a reason to cite it provisionally.
+- **Replication study**: a re-test of a published finding on new data, whose value includes reporting which claims did NOT survive.
+
+## Sources
+Bol, T., de Vaan, M., & van de Rijt, A. (2018). The Matthew effect in science funding. *Proceedings of the National Academy of Sciences, 115*(19), 4887-4890. https://doi.org/10.1073/pnas.1719557115
+
+Merton, R. K. (1988). The Matthew effect in science, II: Cumulative advantage and the symbolism of intellectual property. *Isis, 79*(4), 606-623. https://doi.org/10.1086/354848
+
+Traag, V., Brady, E., Vincent-Lamarre, P., Bidel, F., Lopes-Bento, C., Andersen, J. P., & Bloch, C. (2025). *The Matthew effect and early-career setbacks in research funding: A replication study* (eLife Reviewed Preprint 109042). https://doi.org/10.7554/eLife.109042.1`,
+    },
+    {
+      slug: "the-eminent-name-absorbs-the-story",
+      title: "7 · Malone, Walker, and a story that ran uphill",
+      section: "Section 2 · The Matthew effect",
+      body: `The Matthew effect is usually taught inside science. It works the same way on a business story, and the clearest American case is a live dispute, so this lesson gives you the disagreement rather than a verdict.
+
+**What both sides agree on.** Annie Turnbo, later Annie Turnbo Malone, was born in Metropolis, Illinois, on 9 August 1869 and died in Chicago on 10 May 1957. She developed a hair treatment around the turn of the century, moved the business to St. Louis in 1902 for the larger market, and expanded nationally after the 1904 World's Fair. In 1918 she established Poro College in St. Louis, a training school that also held her manufacturing and business operations and served as a gathering place for the neighborhood (State Historical Society of Missouri, n.d.). Both sides also agree that Sarah Breedlove, who became Madam C. J. Walker, sold Malone's Poro products in St. Louis and in Denver in 1905 and 1906, before her marriage to Charles Joseph Walker (Bundles, n.d.).
+
+**What is contested, and who says what.** The popular version is that Malone trained Walker and that Walker took the formula. A'Lelia Bundles, Walker's biographer and her great great granddaughter, disputes both halves: she writes that Walker was introduced to hair care in the 1890s by her brothers, who were barbers in St. Louis, and that the petrolatum and sulfur preparation at issue appears in medical texts as early as the 1700s, so neither woman originated it (Bundles, n.d.). Bundles also disputes the widely repeated fourteen million dollar figure for Malone's fortune as lacking contemporaneous documentation. Weigh that as you would any interested source: Bundles represents the Walker estate, which is a reason to read her evidence closely rather than to discount it, and what she offers is company records rather than assertion.
+
+**Where the State Historical Society of Missouri stands.** Its account calls Walker Malone's former employee and says Malone's legacy has largely been overshadowed by Walker's success (State Historical Society of Missouri, n.d.). That is a narrower claim than theft, and it is the one this course teaches: not that a formula was stolen, but that a story ran uphill toward the more famous name.
+
+**Why that is the Matthew effect and not a scandal.** Nobody had to take anything. Walker became the household name, and once a name is the household name every retelling routes through it. Malone appears in the popular story as a supporting character in Walker's biography, or, in the correction that overshoots, as the victim of a theft the documents do not establish. Both are the same mechanism working on memory rather than on a paper.
+
+**One warning about dates.** Sources differ on whether the Poro complex opened in 1917 or 1918. This course follows the State Historical Society of Missouri and says 1918. A one year disagreement about a landmark building previews Section 5: the record for these two businesses is not equally thick, and that asymmetry is itself a finding.
+
+:::reveal Which parts of the Malone and Walker story do the disputing sides actually agree on? ||| That Malone founded the business, moved it to St. Louis in 1902 and established Poro College there in 1918, and that Walker sold Malone's Poro products in St. Louis and Denver in 1905 and 1906.
+
+:::reveal What exactly does A'Lelia Bundles dispute, and what does she offer instead? ||| That Malone trained Walker and that Walker took the formula. She writes that Walker learned hair care in the 1890s from her brothers, who were St. Louis barbers, and that the petrolatum and sulfur preparation appears in medical texts as early as the 1700s, so neither woman originated it. She also disputes the fourteen million dollar figure for Malone's fortune as undocumented.
+
+:::reveal Why is "a story ran uphill" a more defensible claim here than "a formula was stolen"? ||| Because the overshadowing is documented, including by the State Historical Society of Missouri, while the theft is not established by the records either side has produced. The mechanism explains the retelling without requiring anyone to have taken anything.
+
+## Vocabulary
+- **Poro College**: the St. Louis training school, factory and community building Malone established in 1918, which is the load-bearing document trail for her business.
+- **Interested source**: one with a stake in the outcome, such as a descendant or an estate, which is a reason to examine the evidence offered rather than to discount the source.
+- **Overshadowing**: the documented claim that one figure's story has absorbed another's, which is weaker and better supported than a claim of theft.
+- **Documentation asymmetry**: two comparable subjects whose surviving records differ in thickness, so the better documented one looks more real.
+
+## Sources
+Bundles, A. (n.d.). *The facts about Madam C. J. Walker and Annie Malone*. https://aleliabundles.com/the-facts-about-madam-c-j-walker-and-annie-malone/
+
+State Historical Society of Missouri. (n.d.). *Annie Turnbo Malone*. Historic Missourians. https://historicmissourians.shsmo.org/annie-turnbo-malone/`,
+    },
+    {
+      slug: "quiz-matthew-effect",
+      title: "8 · Knowledge check: the Matthew effect",
+      section: "Section 2 · The Matthew effect",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "Who named the Matthew effect, and in what year and journal?",
+            options: ["Merton, 1968, in Science", "Margaret Rossiter, in 1993, in the journal Social Studies of Science", "Harriet Zuckerman, in 1977, in her study of American Nobel laureates", "Derek de Solla Price, in 1965, in a paper on networks of scientific papers"],
+            correctIndex: 0,
+            explanation: "Robert K. Merton, in Science 159(3810), 56-63, published in January 1968.",
+            sourceLessonSlug: "merton-and-the-matthew-effect",
+          },
+          {
+            prompt: "Merton's definition of the Matthew effect does two things at once. They are:",
+            options: ["Credit accrues to the eminent and is withheld from the unknown", "Credit is delayed for everyone and then awarded to whoever is still working in the field", "Credit is transferred from the junior researcher to the senior one who supervised the work", "Credit is split evenly among collaborators and then re-concentrated by later citation practice"],
+            correctIndex: 0,
+            explanation: "Greater increments of recognition accrue to scientists of considerable repute, and such recognition is withheld from those who have not yet made their mark.",
+            sourceLessonSlug: "merton-and-the-matthew-effect",
+          },
+          {
+            prompt: "Merton's phrase for who receives the greater increments of recognition is:",
+            options: ["Scientists of considerable repute", "Investigators holding a permanent appointment at a doctorate-granting research university", "Researchers whose prior work has been cited above the median rate for their subfield", "Authors listed first on a paper, regardless of how much of the work they actually did"],
+            correctIndex: 0,
+            explanation: "And the recognition is withheld from scientists who have not yet made their mark. Both halves are in the same sentence (Merton, 1968, p. 58).",
+            sourceLessonSlug: "merton-and-the-matthew-effect",
+          },
+          {
+            prompt: "Where does the name of the effect come from?",
+            options: ["A line in the Gospel of Matthew", "The surname of the first researcher Merton interviewed for the 1968 study", "A nineteenth century essay by Matthew Arnold on the distribution of literary reputation", "The Matthew Commission, an early twentieth century inquiry into scientific prize-giving"],
+            correctIndex: 0,
+            explanation: "The line appears at Matthew 13:12 and again at 25:29: to whoever has, more will be given, and from whoever has not, even what they have will be taken away.",
+            sourceLessonSlug: "merton-and-the-matthew-effect",
+          },
+          {
+            prompt: "The two situations where the Matthew effect bites hardest are:",
+            options: ["Collaboration and independent multiple discovery", "Peer review and the awarding of tenure at an institution with a fixed number of positions", "Conference invitations and the selection of keynote speakers by program committees", "Textbook writing and the compilation of course syllabuses by departmental committees"],
+            correctIndex: 0,
+            explanation: "When a well known and a little known researcher publish together, and when two people reach the same result separately. Both are ordinary situations requiring nobody to behave badly.",
+            sourceLessonSlug: "merton-and-the-matthew-effect",
+          },
+          {
+            prompt: "Independent multiple discovery means:",
+            options: ["Two people reach the same result separately", "One researcher makes several unrelated discoveries over the course of a single career", "A discovery is announced by one group and then confirmed by a second group replicating it", "A finding is published simultaneously in several journals to establish priority beyond dispute"],
+            correctIndex: 0,
+            explanation: "And the credit tends to settle on whichever of them was already eminent, which is the Matthew effect operating without anyone taking anything.",
+            sourceLessonSlug: "merton-and-the-matthew-effect",
+          },
+          {
+            prompt: "The forty-first chair is an image borrowed from:",
+            options: ["Arsene Houssaye, writing in 1855", "Alexis de Tocqueville's account of the French academies in Democracy in America", "The Royal Society's nineteenth century debates about limiting the number of fellows", "Merton's own earlier work on the sociology of science, where he first proposed the term"],
+            correctIndex: 0,
+            explanation: "Houssaye wrote about the writers the Academie francaise's forty seats had no room for, and Merton borrowed the image for the 1968 paper.",
+            sourceLessonSlug: "merton-and-the-matthew-effect",
+          },
+          {
+            prompt: "How many seats does the Academie francaise have?",
+            options: ["Forty", "Fifty, with ten reserved for foreign members elected by the standing membership", "An unfixed number, set each year by the academy's governing council before elections", "Thirty six, a number chosen to match the number of departments in metropolitan France"],
+            correctIndex: 0,
+            explanation: "Which is why a forty-first chair exists at all: a format with forty slots produces exclusion automatically.",
+            sourceLessonSlug: "merton-and-the-matthew-effect",
+          },
+          {
+            prompt: "What does the forty-first chair illustrate about exclusion?",
+            options: ["A format cap excludes without any decision about a person", "That selection committees consistently prefer established figures over promising newcomers", "That academies eventually admit everyone worthy, merely later than those people deserved", "That excluded figures are remembered better than admitted ones, because the exclusion is notable"],
+            correctIndex: 0,
+            explanation: "The point is not that the Academie erred forty times. It is that a fixed number of slots produces a forty-first chair automatically.",
+            sourceLessonSlug: "merton-and-the-matthew-effect",
+          },
+          {
+            prompt: "Merton argued the Matthew effect was dysfunctional for whom?",
+            options: ["The individual scientist penalized early in a career", "The eminent scientist, who becomes overloaded with attributions for work others performed", "The journals, which lose readers once audiences learn to read only famous author names", "The funding agencies, whose portfolios concentrate in a small number of laboratories"],
+            correctIndex: 0,
+            explanation: "And at the same time arguably functional for the communication system of science, which is why the practice survives.",
+            sourceLessonSlug: "merton-and-the-matthew-effect",
+          },
+          {
+            prompt: "In what sense did Merton call the effect functional?",
+            options: ["A known name helps an overloaded field triage what to read", "It rewards the scientists most likely to convert additional resources into further discoveries", "It concentrates prizes, which keeps the number of contested attributions manageably small", "It gives junior researchers a clear target to work toward as they build their own reputations"],
+            correctIndex: 0,
+            explanation: "Not a defense of the outcome for the individual. It is a reason the mechanism is hard to remove: it is doing a job for the field.",
+            sourceLessonSlug: "merton-and-the-matthew-effect",
+          },
+          {
+            prompt: "Why does a mechanism that has a use resist removal?",
+            options: ["Something depends on it working", "Because the people it benefits are by definition the ones with the power to protect it", "Because removing it would require changing the format caps, which are set by statute", "Because no alternative has ever been proposed that would perform the same filtering job"],
+            correctIndex: 0,
+            explanation: "A mechanism doing a job for the field is far harder to remove than one that has none, whatever it costs the individual.",
+            sourceLessonSlug: "merton-and-the-matthew-effect",
+          },
+          {
+            prompt: "The Matthew effect predicts that a joint paper by a famous and an unknown researcher will be:",
+            options: ["Remembered as the famous one's work", "Cited less than either author's solo work, because readers distrust uneven collaborations", "Attributed to whichever author is listed first, following the journal's ordering convention", "Split evenly in memory, since the author line records both names with equal prominence"],
+            correctIndex: 0,
+            explanation: "That is the collaboration case, one of the two situations Merton identified as where the effect bites hardest.",
+            sourceLessonSlug: "merton-and-the-matthew-effect",
+          },
+          {
+            prompt: "Which of these is NOT part of Merton's 1968 claim as this lesson states it?",
+            options: ["That the eminent scientist acted deliberately", "That recognition accrues in greater increments to scientists of considerable repute", "That recognition is withheld from scientists who have not yet made their mark", "That the effect is dysfunctional for a scientist penalized early in a career"],
+            correctIndex: 0,
+            explanation: "Nothing in the mechanism requires anyone to behave badly. That is precisely what makes it repeat.",
+            sourceLessonSlug: "merton-and-the-matthew-effect",
+          },
+          {
+            prompt: "The Gospel line behind the effect's name appears at which two places in Matthew?",
+            options: ["13:12 and 25:29", "5:3 and 6:24, in the Sermon on the Mount and the passage about serving two masters", "7:7 and 19:24, in the passage on asking and the one about the eye of a needle", "22:21 and 28:19, in the passages on rendering to Caesar and on going to all nations"],
+            correctIndex: 0,
+            explanation: "Merton titled the effect for the line, which warns you the pattern was noticed long before anyone measured it.",
+            sourceLessonSlug: "merton-and-the-matthew-effect",
+          },
+          {
+            prompt: "This lesson says the forty-first chair connects back to which idea from lesson 1?",
+            options: ["The format cap", "The four currencies, since an academy seat is a form of institutional memory", "The rationing decision, which is made only when contributors outnumber the available slots", "The distinction between doing the work and being named for it, which the academy formalizes"],
+            correctIndex: 0,
+            explanation: "A format with forty slots produces a forty-first chair automatically, which is the format cap doing its work in a different setting.",
+            sourceLessonSlug: "merton-and-the-matthew-effect",
+          },
+          {
+            prompt: "Names usually listed as occupying the forty-first chair include:",
+            options: ["Descartes, Pascal, Rousseau and Proust", "Voltaire, Racine, Corneille and Victor Hugo, all of whom served terms as academicians", "Marie Curie, Henri Poincare and Louis Pasteur, none of whom were writers by profession", "Merton himself, along with the other sociologists excluded from the French academies"],
+            correctIndex: 0,
+            explanation: "Along with Diderot, Flaubert and Zola. The usual lists name writers excellent enough to belong who arrived when the seats were full.",
+            sourceLessonSlug: "merton-and-the-matthew-effect",
+          },
+          {
+            prompt: "Read carefully: withholding recognition from the unknown and granting it to the eminent are:",
+            options: ["Two separate events in one mechanism", "The same event described from the perspectives of the two people involved in it", "Sequential stages, with the withholding always preceding the granting by several years", "Alternative outcomes, only one of which can occur in any given case of collaboration"],
+            correctIndex: 0,
+            explanation: "They are not the same event and they can happen in the same room on the same afternoon, which is why the definition names both.",
+            sourceLessonSlug: "merton-and-the-matthew-effect",
+          },
+          {
+            prompt: "The Matthew effect was named in which decade?",
+            options: ["The 1960s", "The 1990s, alongside the naming of the Matilda effect by a historian of science", "The 1980s, in the follow-up paper that revisited the original argument in Isis", "The 1930s, in the earliest sociological studies of scientific reward systems"],
+            correctIndex: 0,
+            explanation: "January 1968. The Matilda effect was named a quarter century later, in 1993, and was named partly in reference to it.",
+            sourceLessonSlug: "merton-and-the-matthew-effect",
+          },
+          {
+            prompt: "In 1988 Merton said his 1968 paper should have appeared:",
+            options: ["Under joint authorship", "In a sociology journal rather than in a general science journal like Science", "With a formal acknowledgement of the Nobel laureates who agreed to be interviewed", "Under a different title, because the biblical reference had obscured the argument"],
+            correctIndex: 0,
+            explanation: "He had drawn on Harriet Zuckerman's interview and other research materials so heavily that joint authorship was warranted (Merton, 1988).",
+            sourceLessonSlug: "the-footnote-inside-the-paper",
+          },
+          {
+            prompt: "Whose research materials did Merton say the 1968 paper relied on?",
+            options: ["Harriet Zuckerman's", "Margaret Rossiter's, whose archival work on women in American science he had read in draft", "Derek de Solla Price's, whose citation data supplied the paper's quantitative backbone", "The Science editorial staff's, who had commissioned a survey of laureates for the issue"],
+            correctIndex: 0,
+            explanation: "Zuckerman had interviewed Nobel laureates for her own study, and those interviews are where much of the paper's evidence came from.",
+            sourceLessonSlug: "the-footnote-inside-the-paper",
+          },
+          {
+            prompt: "How long after the 1968 paper did Merton's acknowledgment appear?",
+            options: ["Twenty years", "Two years, in a correction printed by Science in the volume following publication", "Forty years, in a memoir published near the end of Merton's life", "Five years, when the paper was reprinted in a collected volume of his essays"],
+            correctIndex: 0,
+            explanation: "It appeared in Isis in 1988, and twenty years of citations had already accumulated pointing at one name.",
+            sourceLessonSlug: "the-footnote-inside-the-paper",
+          },
+          {
+            prompt: "This lesson says the Merton and Zuckerman case shows three things. One of them is:",
+            options: ["The mechanism operates on people who understand it", "That an acknowledgment in a later paper carries the same weight as an author line", "That interview-based research is more vulnerable to misattribution than quantitative work", "That journals of the period had no procedure for adding an author after publication"],
+            correctIndex: 0,
+            explanation: "The other two: a correction is possible, and a correction taking twenty years leaves twenty years of citations pointing at one name.",
+            sourceLessonSlug: "the-footnote-inside-the-paper",
+          },
+          {
+            prompt: "Bol, de Vaan and van de Rijt (2018) studied funding decisions in:",
+            options: ["A Dutch early-career grant program", "The United States National Institutes of Health's investigator-initiated award portfolio", "The European Research Council's starting grants across all twenty seven member states", "A consortium of private foundations funding biomedical research in North America"],
+            correctIndex: 0,
+            explanation: "They describe it as a two billion euro program, and used every review score and funding decision in it.",
+            sourceLessonSlug: "the-footnote-inside-the-paper",
+          },
+          {
+            prompt: "The comparison at the heart of the Bol design is between applicants:",
+            options: ["Just above and just below the funding threshold", "Who applied early in their careers and those who applied after obtaining a permanent post", "Who received the largest awards and those who received the smallest awards in the scheme", "Working in laboratory disciplines and those working in theoretical or computational fields"],
+            correctIndex: 0,
+            explanation: "On the evidence of the scores themselves the two groups are near identical, so the grant is the only systematic difference between them.",
+            sourceLessonSlug: "the-footnote-inside-the-paper",
+          },
+          {
+            prompt: "Why does the just-above versus just-below comparison support a causal reading?",
+            options: ["The grant is the only systematic difference", "Because the sample is large enough that random variation between the groups cancels out", "Because reviewers cannot see the threshold, so their scores are unaffected by where it falls", "Because both groups were followed for the same length of time under the same conditions"],
+            correctIndex: 0,
+            explanation: "Near identical scores mean near identical assessed quality, so any later gap has to come from the grant rather than from the talent.",
+            sourceLessonSlug: "the-footnote-inside-the-paper",
+          },
+          {
+            prompt: "What did the winners just above the threshold accumulate over the following eight years?",
+            options: ["More than twice as much funding", "About thirty percent more funding, a gap that narrowed steadily after the fourth year", "Roughly the same funding, but far more citations and invitations to speak at conferences", "A permanent professorship at nearly double the rate, with no measurable funding difference"],
+            correctIndex: 0,
+            explanation: "Compared with non winners whose review scores fell just below the same threshold (Bol et al., 2018).",
+            sourceLessonSlug: "the-footnote-inside-the-paper",
+          },
+          {
+            prompt: "Part of the funding gap was driven by non winners:",
+            options: ["Ceasing to compete", "Leaving research entirely within two years of the rejection they received", "Moving to institutions with weaker administrative support for grant applications", "Applying to smaller schemes whose maximum award sizes were substantially lower"],
+            correctIndex: 0,
+            explanation: "A participation mechanism: part of the advantage came from the losers dropping out rather than from the winners performing better.",
+            sourceLessonSlug: "the-footnote-inside-the-paper",
+          },
+          {
+            prompt: "What did Bol and colleagues report about the source of the winners' later advantage?",
+            options: ["No evidence it came from what the grant enabled", "That it came almost entirely from the publications the first grant made possible", "That it disappeared once they controlled for the applicant's institution and discipline", "That it was strongest among applicants whose scores were furthest above the threshold"],
+            correctIndex: 0,
+            explanation: "Which means early funding worked as an asset for getting later funding, more or less directly, rather than through the achievements it paid for.",
+            sourceLessonSlug: "the-footnote-inside-the-paper",
+          },
+          {
+            prompt: "The 2025 replication study covered how many applications?",
+            options: ["109,624", "About 3,660, the same sample the original Dutch study had analyzed", "Roughly 19.9 million, drawn from five decades of published papers and patents", "Just under 500,000, covering every national funder in the European Research Area"],
+            correctIndex: 0,
+            explanation: "Funded and unfunded applications across 14 programs at six North American and European funders (Traag et al., 2025).",
+            sourceLessonSlug: "the-footnote-inside-the-paper",
+          },
+          {
+            prompt: "What did the 2025 replication find about the Matthew effect itself?",
+            options: ["It replicated and generalized", "It held only in the original Dutch data and vanished at the other five funders", "It reversed direction, with non winners outperforming winners after the sixth year", "It could not be tested, because the other funders do not record numerical review scores"],
+            correctIndex: 0,
+            explanation: "Robust across funders and model specifications, and generalizing to the whole population rather than only to cases near the threshold.",
+            sourceLessonSlug: "the-footnote-inside-the-paper",
+          },
+          {
+            prompt: "Which claim did the 2025 replication find did NOT hold up robustly?",
+            options: ["That an early setback later benefits survivors", "That grant winners accumulate more funding than near-identical non winners", "That review scores near a funding threshold are effectively indistinguishable", "That funding decisions differ systematically between European and North American funders"],
+            correctIndex: 0,
+            explanation: "The authors report it is better explained by selection into reapplying: unfunded applicants with high impact are simply more likely to try again.",
+            sourceLessonSlug: "the-footnote-inside-the-paper",
+          },
+          {
+            prompt: "Why does this lesson insist on reporting the finding that did NOT survive?",
+            options: ["Otherwise the field looks cleaner than it is", "Because a failed replication is stronger evidence than a successful one in this literature", "Because the setback claim is the one most often repeated in popular science writing", "Because the replication's authors asked that both results be cited together whenever used"],
+            correctIndex: 0,
+            explanation: "A course reporting only the survivor would sell you a tidier science than exists, which is the same failure as closing a dispute by assertion.",
+            sourceLessonSlug: "the-footnote-inside-the-paper",
+          },
+          {
+            prompt: "Why is the 2025 replication cited provisionally here?",
+            options: ["It is a reviewed preprint, not a version of record", "Because its sample is drawn from funders that do not publish their review criteria", "Because its authors are the same team that produced the original 2018 finding", "Because it has not yet been cited by other researchers working on the same question"],
+            correctIndex: 0,
+            explanation: "A reviewed preprint carries its peer reviews but is not the final published version, which is a reason to check before repeating its numbers.",
+            sourceLessonSlug: "the-footnote-inside-the-paper",
+          },
+          {
+            prompt: "A participation mechanism, as this lesson defines it, is:",
+            options: ["Advantage produced by losers dropping out", "The requirement that an applicant reapply within a fixed window to remain eligible", "The tendency of review panels to favor applicants who have applied to them before", "The share of a funding gap attributable to differences in how groups spend their awards"],
+            correctIndex: 0,
+            explanation: "Rather than by winners performing better. It is why the Bol result is about competition behavior as much as about money.",
+            sourceLessonSlug: "the-footnote-inside-the-paper",
+          },
+          {
+            prompt: "Regression discontinuity, as used here, means comparing cases:",
+            options: ["Just either side of a cutoff", "Before and after a policy change, using the change as a natural experiment", "Matched on every observable characteristic except the outcome being measured", "Randomly assigned to treatment and control by the researchers running the study"],
+            correctIndex: 0,
+            explanation: "The cutoff is the only systematic difference between the groups, so a later gap can be read as caused by crossing it.",
+            sourceLessonSlug: "the-footnote-inside-the-paper",
+          },
+          {
+            prompt: "The Merton and Zuckerman episode is best described as:",
+            options: ["The mechanism operating inside the paper that named it", "An early example of the authorship criteria that journals later formalized in writing", "A dispute between two researchers that was eventually settled by their institution", "A case where the credit was correctly assigned and later challenged without cause"],
+            correctIndex: 0,
+            explanation: "Which is why the lesson teaches it squarely rather than as an irony: it shows the effect reaches people who understand it perfectly well.",
+            sourceLessonSlug: "the-footnote-inside-the-paper",
+          },
+          {
+            prompt: "Annie Turnbo Malone moved her business to St. Louis in which year?",
+            options: ["1902", "1918, at the same time she opened the Poro College complex in the Ville", "1905, the year Sarah Breedlove began selling Poro products in that city", "1869, the year of her birth, when her family relocated from Metropolis, Illinois"],
+            correctIndex: 0,
+            explanation: "For the larger market. The company expanded nationally after the 1904 World's Fair (State Historical Society of Missouri, n.d.).",
+            sourceLessonSlug: "the-eminent-name-absorbs-the-story",
+          },
+          {
+            prompt: "Poro College, as this course dates it, was established in:",
+            options: ["1918", "1902, when Malone first arrived in St. Louis with the business", "1904, to serve visitors drawn to the city by the World's Fair that year", "1927, using the proceeds of the settlement that followed Malone's divorce"],
+            correctIndex: 0,
+            explanation: "Following the State Historical Society of Missouri. Some sources say 1917, and this course names the disagreement rather than hiding it.",
+            sourceLessonSlug: "the-eminent-name-absorbs-the-story",
+          },
+          {
+            prompt: "What did the Poro College building contain?",
+            options: ["A training school, manufacturing and business operations", "Only classrooms, with manufacturing kept at a separate plant elsewhere in Missouri", "A department store selling other manufacturers' products alongside Malone's own line", "A residential hotel operated as a separate business from the hair care company"],
+            correctIndex: 0,
+            explanation: "It also served as a gathering place for the neighborhood, which is part of why it is the load-bearing document trail for her business.",
+            sourceLessonSlug: "the-eminent-name-absorbs-the-story",
+          },
+          {
+            prompt: "What do BOTH sides of the Malone and Walker dispute agree on?",
+            options: ["Walker sold Poro products in 1905 and 1906", "That Malone personally trained Walker in the treatment before she left for Denver", "That the two women shared a formula developed jointly during their time in St. Louis", "That Walker's company records were destroyed, leaving only Malone's side documented"],
+            correctIndex: 0,
+            explanation: "In St. Louis and in Denver, before her marriage to Charles Joseph Walker. Bundles states this as fact and so does the State Historical Society.",
+            sourceLessonSlug: "the-eminent-name-absorbs-the-story",
+          },
+          {
+            prompt: "A'Lelia Bundles is:",
+            options: ["Walker's biographer and great great granddaughter", "A historian at the State Historical Society of Missouri who catalogued the Poro records", "The archivist who assembled the Malone papers after Poro College closed in St. Louis", "An independent scholar with no family connection to either of the two businesses"],
+            correctIndex: 0,
+            explanation: "She also represents the Walker estate, which the lesson discloses so you can weigh her as an interested source.",
+            sourceLessonSlug: "the-eminent-name-absorbs-the-story",
+          },
+          {
+            prompt: "Bundles says Walker was first introduced to hair care by:",
+            options: ["Her brothers, who were St. Louis barbers", "Annie Turnbo Malone, during her first months as a Poro sales agent in Missouri", "A Denver pharmacist who helped her adapt an existing preparation for commercial sale", "Her first husband, who had worked in the trade before their marriage in the 1880s"],
+            correctIndex: 0,
+            explanation: "In the 1890s, which on her account puts Walker's exposure to the trade before any contact with Poro.",
+            sourceLessonSlug: "the-eminent-name-absorbs-the-story",
+          },
+          {
+            prompt: "What does Bundles say about the petrolatum and sulfur preparation?",
+            options: ["It appears in medical texts as early as the 1700s", "That Malone patented it in Illinois before either woman began selling commercially", "That the two versions differed enough chemically that neither could have copied the other", "That no surviving sample of either product exists, so the comparison cannot be made"],
+            correctIndex: 0,
+            explanation: "Her conclusion is that neither woman originated the recipe, which undercuts the theft framing from underneath rather than denying the contact.",
+            sourceLessonSlug: "the-eminent-name-absorbs-the-story",
+          },
+          {
+            prompt: "The fourteen million dollar figure for Malone's fortune is treated here as:",
+            options: ["Disputed for lack of contemporaneous documentation", "An established figure drawn from the company's surviving tax filings for the 1920s", "A conservative estimate, since Poro's overseas sales were never counted in the total", "Irrelevant, because personal wealth has no bearing on any question about credit"],
+            correctIndex: 0,
+            explanation: "Bundles disputes it on documentary grounds. The course reports the dispute and names who holds the position rather than printing the number as fact.",
+            sourceLessonSlug: "the-eminent-name-absorbs-the-story",
+          },
+          {
+            prompt: "How does this lesson say an interested source should be handled?",
+            options: ["Read the evidence offered, closely", "Set aside, because a family connection makes an account unusable as history", "Balanced against an equally interested source on the other side of the question", "Accepted, since a descendant has access to records no outside scholar can reach"],
+            correctIndex: 0,
+            explanation: "Bundles represents the Walker estate, which is a reason to examine what she offers, which is company records rather than assertion.",
+            sourceLessonSlug: "the-eminent-name-absorbs-the-story",
+          },
+          {
+            prompt: "How does the State Historical Society of Missouri describe Walker's relation to Malone?",
+            options: ["As her former employee", "As her business partner during the years the company operated out of St. Louis", "As her student, trained at Poro College before founding a competing enterprise", "As an unrelated competitor whose products entered the market independently"],
+            correctIndex: 0,
+            explanation: "And it says Malone's legacy has largely been overshadowed by Walker's success, which is a narrower claim than theft.",
+            sourceLessonSlug: "the-eminent-name-absorbs-the-story",
+          },
+          {
+            prompt: "The claim this course actually teaches about Malone and Walker is that:",
+            options: ["A story ran uphill toward the more famous name", "A formula was taken and the documentary record proves it beyond reasonable doubt", "Both women independently invented the same preparation within a few years of each other", "The dispute cannot be discussed responsibly, so the course omits both women entirely"],
+            correctIndex: 0,
+            explanation: "Overshadowing is documented, including by a state historical society. Theft is not established by the records either side has produced.",
+            sourceLessonSlug: "the-eminent-name-absorbs-the-story",
+          },
+          {
+            prompt: "Why is this a Matthew effect rather than a scandal?",
+            options: ["Nobody had to take anything for it to happen", "Because the two businesses competed openly and neither concealed anything from the other", "Because the credit was eventually reassigned correctly once historians examined the records", "Because both women ended up equally famous, so no lasting advantage was gained by either"],
+            correctIndex: 0,
+            explanation: "Once a name is the household name, every retelling routes through it. The mechanism works on memory here rather than on a paper.",
+            sourceLessonSlug: "the-eminent-name-absorbs-the-story",
+          },
+          {
+            prompt: "The lesson names two opposite distortions of the Malone and Walker story. They are:",
+            options: ["Malone as a footnote, and Malone as the victim of a proven theft", "Walker as an inventor, and Walker as a saleswoman who never developed a product", "Both women as inventors, and both women as marketers who invented nothing at all", "Malone as the wealthier woman, and Walker as the more commercially successful one"],
+            correctIndex: 0,
+            explanation: "A supporting character in Walker's biography, or the victim of a theft the documents do not establish. Both are the same mechanism working on memory.",
+            sourceLessonSlug: "the-eminent-name-absorbs-the-story",
+          },
+          {
+            prompt: "Annie Turnbo Malone was born and died in which years?",
+            options: ["1869 and 1957", "1867 and 1919, the same span as her better known contemporary in the trade", "1875 and 1946, the year the St. Louis orphans home was renamed for her", "1880 and 1927, the year of the divorce settlement that reduced her holdings"],
+            correctIndex: 0,
+            explanation: "Born in Metropolis, Illinois on 9 August 1869, died in Chicago on 10 May 1957 (State Historical Society of Missouri, n.d.).",
+            sourceLessonSlug: "the-eminent-name-absorbs-the-story",
+          },
+          {
+            prompt: "What does the 1917 versus 1918 disagreement about Poro College preview?",
+            options: ["Section 5, on unequal records", "Section 4, on how authorship conventions decide who appears on a document", "Section 6, on the instruments available for correcting a record after the fact", "Section 3, on how a woman's contribution is routed to a male colleague instead"],
+            correctIndex: 0,
+            explanation: "The record for these two businesses is not equally thick, and that asymmetry is itself a finding rather than a nuisance.",
+            sourceLessonSlug: "the-eminent-name-absorbs-the-story",
+          },
+          {
+            prompt: "Documentation asymmetry means:",
+            options: ["Comparable subjects whose surviving records differ in thickness", "A record kept in two places whose copies disagree about a date or a figure", "The gap between what an institution recorded and what it later chose to publish", "A dispute in which only one side has been willing to open its archives to scholars"],
+            correctIndex: 0,
+            explanation: "And the better documented subject looks more real, which is a bias in the reader rather than a fact about the past.",
+            sourceLessonSlug: "the-eminent-name-absorbs-the-story",
+          },
+          {
+            prompt: "This course prints 1918 for Poro College and then does what?",
+            options: ["Names the sources that say 1917", "Removes the date from the quiz, since a contested figure should never be assessed", "Averages the two dates and reports the result as approximately the end of 1917", "Cites only the state historical society, so the reader never encounters the alternative"],
+            correctIndex: 0,
+            explanation: "Following the State Historical Society of Missouri while saying that other sources differ, which is rule two applied to a small factual disagreement.",
+            sourceLessonSlug: "the-eminent-name-absorbs-the-story",
+          },
+          {
+            prompt: "Malone's company expanded nationally after which event?",
+            options: ["The 1904 World's Fair", "The opening of Poro College, which drew agents from across the country to train", "The 1927 divorce settlement, which forced a restructuring of the sales organization", "Walker's departure for Denver, which opened western territory to Poro's own agents"],
+            correctIndex: 0,
+            explanation: "The positive reception at the fair is the documented turning point in the business's national growth.",
+            sourceLessonSlug: "the-eminent-name-absorbs-the-story",
+          },
+          {
+            prompt: "The Matthew effect applies to business history in this lesson because:",
+            options: ["Retellings route through the better known name", "Businesses compete for customers the way scientists compete for citations and prizes", "The wealthier of two founders can afford to commission the histories that get written", "Commercial records are kept to different standards than scientific ones, so credit shifts"],
+            correctIndex: 0,
+            explanation: "The mechanism is not confined to science. It operates wherever a story has to be told through a name.",
+            sourceLessonSlug: "the-eminent-name-absorbs-the-story",
+          },
+          {
+            prompt: "Merton's 1988 acknowledgment appeared in which journal?",
+            options: ["Isis", "Science, in the same journal that had published the original 1968 paper", "Social Studies of Science, where the Matilda effect was named five years later", "The Proceedings of the National Academy of Sciences, alongside the funding study"],
+            correctIndex: 0,
+            explanation: "Isis 79(4), 606-623, under the title The Matthew Effect in Science, II: Cumulative Advantage and the Symbolism of Intellectual Property.",
+            sourceLessonSlug: "the-footnote-inside-the-paper",
+          },
+          {
+            prompt: "Zuckerman's interviews, which the 1968 paper drew on, were with:",
+            options: ["Nobel laureates", "Graduate students at the beginning of their research careers in the United States", "Journal editors responsible for deciding which submissions were sent out for review", "Members of the Academie francaise, whose forty seats supplied the paper's central image"],
+            correctIndex: 0,
+            explanation: "Collected for her own study, and the source of much of the 1968 paper's evidence, which is why Merton later said joint authorship was warranted.",
+            sourceLessonSlug: "the-footnote-inside-the-paper",
+          },
+          {
+            prompt: "Taking the Bol and Traag results together, the fairest summary is:",
+            options: ["The funding advantage is real and replicates", "Both the funding advantage and the early-setback benefit are firmly established", "Neither result survived scrutiny once larger multi-funder data became available", "The advantage exists only in the Netherlands, where the original data were collected"],
+            correctIndex: 0,
+            explanation: "The Matthew effect held across six funders and 14 programs. The separate early-setback claim did not, and is better explained by who reapplies.",
+            sourceLessonSlug: "the-footnote-inside-the-paper",
+          },
+          {
+            prompt: "Merton's 1968 paper appeared in which volume and issue of Science?",
+            options: ["159(3810)", "115(19), the same issue that later carried the Dutch funding study", "79(4), which is the volume in which his follow-up essay appeared two decades later", "23(2), matching the volume in which the Matilda effect was named in 1993"],
+            correctIndex: 0,
+            explanation: "Science 159(3810), 56-63, published in January 1968. The definition quoted in this course sits on page 58.",
+            sourceLessonSlug: "merton-and-the-matthew-effect",
+          },
+          {
+            prompt: "Malone's business first grew out of a product she developed:",
+            options: ["Around the turn of the twentieth century", "During the First World War, when wartime shortages created demand for a substitute", "In the 1880s, while still living in Metropolis, Illinois with her family", "After opening Poro College, using formulations worked out by her teaching staff"],
+            correctIndex: 0,
+            explanation: "A hair treatment, developed before the 1902 move to St. Louis and before the 1904 World's Fair that carried the company nationally.",
+            sourceLessonSlug: "the-eminent-name-absorbs-the-story",
+          },
+          {
+            prompt: "The Traag replication attributes the apparent early-setback benefit to:",
+            options: ["Selection into who reapplies", "A coding error in the original study's treatment of applicants near the threshold", "Differences between American and European funders in how rejections are communicated", "The larger sample, which detected an effect the original study had been too small to see"],
+            correctIndex: 0,
+            explanation: "Unfunded applicants with high citation impact are simply more likely to try again, which produces the appearance of a benefit without a causal one.",
+            sourceLessonSlug: "the-footnote-inside-the-paper",
+          },
+        ],
+      },
+    },
   ],
 };
