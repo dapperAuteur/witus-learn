@@ -38,6 +38,162 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
       "body": "# Module 0, Start Here, Lesson 4: How to Get the Most From Each Lesson\n\nGoal: By the end of this lesson you can use the four study habits that make this course stick: recall, daily logging, short spaced lessons, and the weekly experiment.\n\n## Quick recall\n Last time we covered picking your device and where to log. Two quick ones.\nOne: do you need an expensive tracker to take this course? No. Any tracker works, and even just your phone works.\nTwo: where do your four core numbers go each day? Into the CentenarianOS metrics page, logged daily.\n\n## Why this matters\n Here is something most people get wrong about studying. They reread the lesson, feel like they know it, then blank a week later. Researchers tested this. People who quiz themselves remember far more than people who reread the same material. The rereaders feel more confident, but they actually know less. That gap is the whole reason this course is built the way it is.\n\n## The idea\n Every lesson opens by asking you about the last one. Two questions, a pause, then the answer. That is not filler. Pulling a fact out of your own head, even when you get it wrong, burns it in deeper than reading it again. This is called testing yourself, or retrieval practice. So when I ask those two questions, do not skip ahead. Try to answer out loud first. The struggle is the point.\n\nThree more habits do the rest of the work. First, the lessons are short, about six to eight minutes, with one idea each. Your memory can only hold a few new things at once, so small bites stick better than long ones. Second, you spread them out instead of cramming. A little today, a little tomorrow beats one long sitting. Third, each module ends with a quiz, and each week has one assignment that uses your own logged data.\n\nAim to understand the quiz, not to memorize it. If you get a question wrong, read why. The wrong answers teach you the most. And the weekly experiment is where this gets real. You will compare your own numbers, like your resting heart rate or your steps, against what you learn. Your data is the lab.\n\n## Picture it\n Think of it like learning a song on guitar. Rereading the lesson is like watching someone else play it. Feels easy, teaches you little. Testing yourself is picking up the guitar and fumbling through the chords. Slower, harder, and the only thing that ever makes your fingers remember. Each short lesson is one chord. The weekly experiment is playing the whole song with your own hands.\n\n## Watch out\n Here is the trap. People treat the recall questions as a quiz they might fail, so they skip them and just listen. That feels efficient. It is the opposite. Skipping recall is like watching the guitar video again instead of touching the strings. You also do not need to log perfectly. People quit because they miss two days and feel like they blew it. You did not. Just log again today. Messy daily logging beats perfect logging that you abandon.\n\n## Quick check\n Quick check. You finish a lesson and it did not quite land. What should you do? Listen to it again, then try the recall questions without peeking. Re-listening plus self-testing fixes a shaky lesson far better than pushing ahead and hoping it clicks later.\n\n## Key Takeaways\n- Testing yourself beats rereading. Always try to answer the recall questions out loud before hearing the answer, even if you get them wrong.\n- Lessons are short, about six to eight minutes, with one idea each, because your memory holds only a few new things at once.\n- Spread lessons out over days instead of cramming, and log your four core numbers daily even if some days are messy.\n- Each module ends with a quiz: aim to understand it, not memorize it, and read why wrong answers are wrong.\n- Each week has one assignment that uses your own logged data, so do the experiments instead of just listening."
     },
     {
+      "slug": "m0-quiz",
+      "title": "Module 0: Start Here, Knowledge Check",
+      "section": "Module 0: Start Here",
+      "quiz": {
+        "passingScore": 80,
+        "questionsPerAttempt": 5,
+        "shuffleOptions": true,
+        "questions": [
+          {
+            "prompt": "Which four numbers does this course teach you to read?",
+            "options": [
+              "Resting heart rate, steps, sleep, and active minutes",
+              "Blood pressure, cholesterol, blood sugar, and body mass index from a clinic",
+              "Calories burned, floors climbed, stress score, and blood oxygen saturation",
+              "Weight, waist measurement, body fat percentage, and daily water intake"
+            ],
+            "correctIndex": 0,
+            "explanation": "Those four are the whole foundation, and your tracker already collects every one of them. The other lists are either clinic measurements this course never asks for, or the less trustworthy device numbers it teaches you to treat as rough hints.",
+            "sourceLessonSlug": "m0-l1-welcome-and-how-this-course-works"
+          },
+          {
+            "prompt": "How long does the daily log take, according to the welcome lesson?",
+            "options": [
+              "About fifteen minutes, once every optional metric has been filled in",
+              "Under thirty seconds",
+              "Roughly an hour a week, done in one sitting on a Sunday evening",
+              "As long as it takes to sync every app on your phone to the tracker"
+            ],
+            "correctIndex": 1,
+            "explanation": "The form is deliberately fast, under thirty seconds a day, because the daily habit is the point. A log that took fifteen minutes or a weekly catch-up session is exactly the kind of friction that makes people stop.",
+            "sourceLessonSlug": "m0-l1-welcome-and-how-this-course-works"
+          },
+          {
+            "prompt": "What does the welcome lesson say the goal is, instead of a perfect score?",
+            "options": [
+              "Hitting ten thousand steps every single day without ever missing one",
+              "Matching the resting heart rate of a trained endurance athlete",
+              "Reading your own trend and nudging it",
+              "Beating the average numbers of other people using the same tracker"
+            ],
+            "correctIndex": 2,
+            "explanation": "A number that is slowly improving beats a perfect number you faked or stressed over. The course says outright that you do not need an athlete's resting heart rate or ten thousand steps a day, and that this is not a leaderboard.",
+            "sourceLessonSlug": "m0-l1-welcome-and-how-this-course-works"
+          },
+          {
+            "prompt": "Your watch says you slept seven and a half hours last night. What is that?",
+            "options": [
+              "Analytics, because the watch compared it against your earlier nights",
+              "A baseline, because a single night sets the normal you measure against",
+              "A trend, because sleep is always reported as a rolling average",
+              "A metric"
+            ],
+            "correctIndex": 3,
+            "explanation": "It is one number from one night, a single snapshot, which is the definition of a metric. It only becomes analytics when you line up several nights, spot a pattern, and decide to change something because of it.",
+            "sourceLessonSlug": "m0-l2-metrics-vs-analytics"
+          },
+          {
+            "prompt": "What is analytics, as this course defines it?",
+            "options": [
+              "Reading numbers together over time",
+              "The single reading your device shows you at one particular moment",
+              "The software inside the tracker that turns sensor data into numbers",
+              "A clinical report a doctor produces after reviewing your wearable data"
+            ],
+            "correctIndex": 0,
+            "explanation": "Analytics is reading your metrics together over time to find a pattern and decide what to change. A metric is the what; analytics is the how and the why, and it is the reason the course asks you to log every day.",
+            "sourceLessonSlug": "m0-l2-metrics-vs-analytics"
+          },
+          {
+            "prompt": "What does the lesson say a single day's number mostly is?",
+            "options": [
+              "A verdict on whether the habit you started is working or failing",
+              "Noise",
+              "The most honest reading you get, before averaging distorts it",
+              "Proof of a pattern, as long as the device is a well-tested brand"
+            ],
+            "correctIndex": 1,
+            "explanation": "Your numbers bounce around day to day, and that bouncing is normal. One reading is not a verdict; the pattern over a week or a month is the real signal.",
+            "sourceLessonSlug": "m0-l2-metrics-vs-analytics"
+          },
+          {
+            "prompt": "Which three devices did the Stanford study find had less than five percent error on steps and heart rate?",
+            "options": [
+              "The Oura Ring, the WHOOP band, and any modern smartphone pedometer",
+              "Only chest-strap monitors and clinical-grade ambulatory heart monitors",
+              "Fitbit, Garmin, and Apple Watch",
+              "All seven of the devices the researchers put through the tests"
+            ],
+            "correctIndex": 2,
+            "explanation": "Shcherbina and colleagues (2017) tested seven devices and found three under five percent error on step counting and heart rate: the Fitbit, the Garmin, and the Apple Watch. The lesson still says not to go buy one, because the best tracker is the one you already have.",
+            "sourceLessonSlug": "m0-l3-pick-your-device-and-where-to-log-it"
+          },
+          {
+            "prompt": "Why does the course have you type your numbers in by hand each day?",
+            "options": [
+              "Because no consumer tracker can export its data to another application",
+              "Because automatic syncing rounds the numbers and loses the decimals",
+              "Because the metrics page cannot accept data from a device directly",
+              "Typing them makes you read them"
+            ],
+            "correctIndex": 3,
+            "explanation": "When you enter your own resting heart rate you look at it and notice it. Doing it by hand each day builds the habit of reading your own data, which is the whole point of the course.",
+            "sourceLessonSlug": "m0-l3-pick-your-device-and-where-to-log-it"
+          },
+          {
+            "prompt": "You own no smartwatch and no ring. Can you start this course today?",
+            "options": [
+              "Yes, your phone counts steps",
+              "No, the course requires one of the three devices Stanford validated",
+              "Only after you buy a device that measures resting heart rate at night",
+              "Only once you have logged a week of readings taken at a clinic instead"
+            ],
+            "correctIndex": 0,
+            "explanation": "Your phone counts steps and has been doing it all along, and you log your numbers by hand on the metrics page. Waiting for the perfect setup is named as the trap that stops people starting at all.",
+            "sourceLessonSlug": "m0-l3-pick-your-device-and-where-to-log-it"
+          },
+          {
+            "prompt": "What did researchers find about rereading a lesson versus quizzing yourself on it?",
+            "options": [
+              "Rereading builds deeper memory, though it feels harder at the time",
+              "The two work equally well as long as the sessions are spread out",
+              "Quizzing yourself wins",
+              "Rereading works better for facts and quizzing works better for skills"
+            ],
+            "correctIndex": 2,
+            "explanation": "People who quiz themselves remember far more than people who reread. The rereaders feel more confident and actually know less, which is why every lesson opens with recall questions you should try to answer out loud.",
+            "sourceLessonSlug": "m0-l4-how-to-get-the-most-from-each-lesson"
+          },
+          {
+            "prompt": "Why are the lessons short, about six to eight minutes each?",
+            "options": [
+              "Because audio files longer than ten minutes will not stream reliably",
+              "Memory holds few new things at once",
+              "Because a shorter lesson leaves more room for the weekly assignment",
+              "Because most people listen while walking and stop after eight minutes"
+            ],
+            "correctIndex": 1,
+            "explanation": "One idea per lesson, in small bites, because your memory can only hold a few new things at once. The same reasoning is why the course asks you to spread lessons across days instead of cramming.",
+            "sourceLessonSlug": "m0-l4-how-to-get-the-most-from-each-lesson"
+          },
+          {
+            "prompt": "What does the lesson tell you to do when you get a quiz question wrong?",
+            "options": [
+              "Read why it was wrong",
+              "Retake the whole quiz immediately until you score a hundred percent",
+              "Memorize the correct choice so that question cannot catch you again",
+              "Skip ahead to the next module and come back at the end of the course"
+            ],
+            "correctIndex": 0,
+            "explanation": "Aim to understand the quiz rather than memorize it: the wrong answers teach you the most, so reading why one is wrong is the point of taking it.",
+            "sourceLessonSlug": "m0-l4-how-to-get-the-most-from-each-lesson"
+          }
+        ]
+      }
+    },
+    {
       "slug": "m1-l1-your-body-s-dashboard-what-health-metrics-are",
       "title": "Your Body's Dashboard: What Health Metrics Are",
       "section": "Module 1: Foundations of Health Metrics",
@@ -97,6 +253,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
       "section": "Module 1: Foundations of Health Metrics",
       "quiz": {
         "passingScore": 80,
+        "questionsPerAttempt": 8,
+        "shuffleOptions": true,
         "questions": [
           {
             "prompt": "What is the best way to think about a health metric, based on this module?",
@@ -217,6 +375,78 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "correctIndex": 1,
             "explanation": "Sleep efficiency dropping below eighty percent is a red flag, since most healthy people stay above ninety percent. A single odd morning is normal noise, not a red flag, matching a population average is not a warning sign at all, and a small day-to-day step dip is far short of the sharp activity drop lasting more than three days that the lesson flags.\n\nReference: (Reed & Sacco, 2016)",
             "sourceLessonSlug": "m1-l8-interpreting-your-first-week-baseline-and-red-flags"
+          },
+          {
+            "prompt": "In the research review this module cites, how many more steps a day did people using an app or a tracker take?",
+            "options": [
+              "About four hundred, which the authors called a negligible difference",
+              "About eighteen hundred",
+              "About ten thousand, the target the marketing slogan made famous",
+              "About twelve thousand more on weekends and none at all on weekdays"
+            ],
+            "correctIndex": 1,
+            "explanation": "Laranjo and colleagues (2020) found roughly eighteen hundred more steps a day among app and tracker users. The size of that number is the point: nobody did a boot camp, they just saw their own data and moved a little more.",
+            "sourceLessonSlug": "m1-l7-the-science-why-small-data-guided-changes-compound"
+          },
+          {
+            "prompt": "Which tracker number should you lean on when acting on your data, and which should you treat as a rough hint?",
+            "options": [
+              "Lean on the calorie number, and treat the step count as a rough hint",
+              "Lean on heart rate, and treat both steps and calories as rough hints",
+              "Treat all three the same, since their errors cancel each other out",
+              "Lean on steps, doubt calories"
+            ],
+            "correctIndex": 3,
+            "explanation": "Fuller and colleagues (2020) found steps off by less than two percent on good devices, heart rate in the middle, and the energy or calorie number often off by more than thirty percent. Lean on the reliable numbers when you decide what to change.",
+            "sourceLessonSlug": "m1-l7-the-science-why-small-data-guided-changes-compound"
+          },
+          {
+            "prompt": "What does the research reward, according to this module?",
+            "options": [
+              "Small steady moves, repeated",
+              "A dramatic overhaul sustained hard for the first two or three weeks",
+              "Hitting every daily target without missing a single day of the month",
+              "Any change at all, as long as it is large enough to feel difficult"
+            ],
+            "correctIndex": 0,
+            "explanation": "The mistake the lesson names is going all in, hating it, and quitting within two weeks. The research rewards the small move repeated over months, which is why the savings-account picture is used for it.",
+            "sourceLessonSlug": "m1-l7-the-science-why-small-data-guided-changes-compound"
+          },
+          {
+            "prompt": "Where did the famous ten thousand step target come from?",
+            "options": [
+              "The US Physical Activity Guidelines published by federal researchers",
+              "The National Sleep Foundation's companion movement recommendation",
+              "A marketing slogan from Japan",
+              "A meta-analysis of fifteen international cohorts of older adults"
+            ],
+            "correctIndex": 2,
+            "explanation": "Ten thousand was a marketing slogan, not science. The actual evidence has the benefit leveling off well below it, around six thousand to eight thousand steps for older adults (Paluch et al., 2022).",
+            "sourceLessonSlug": "m1-l9-module-1-review-foundations-of-health-metrics"
+          },
+          {
+            "prompt": "What change in resting heart rate does the Module 1 review name as a red flag?",
+            "options": [
+              "More than ten beats above baseline",
+              "Any morning reading that lands above sixty beats per minute at all",
+              "A drop of five beats or more sustained across a full week of mornings",
+              "Any single reading that differs from yesterday's by two beats or more"
+            ],
+            "correctIndex": 0,
+            "explanation": "The red flag is a resting heart rate more than ten beats above your own baseline and staying there. Some swing is normal: about one in five adults had a week with a ten-beat move, and personal baselines differ a lot (Quer et al., 2020).",
+            "sourceLessonSlug": "m1-l9-module-1-review-foundations-of-health-metrics"
+          },
+          {
+            "prompt": "What sleep efficiency level does the review treat as the low end of normal?",
+            "options": [
+              "Ninety-five percent, the level a healthy adult should reach nightly",
+              "Sixty percent, below which a clinician should be consulted at once",
+              "Eighty percent",
+              "There is no threshold, because efficiency varies too much to judge"
+            ],
+            "correctIndex": 2,
+            "explanation": "Reed and Sacco (2016) treat about eighty percent as the low end of normal, which is why the review lists sleep efficiency below eighty percent as a red flag worth a closer look.",
+            "sourceLessonSlug": "m1-l9-module-1-review-foundations-of-health-metrics"
           }
         ]
       }
@@ -278,6 +508,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
         // Options shuffle per attempt so a fixed answer position cannot be gamed;
         // scoring is by identity, so no answer changes (src/lib/quiz.ts).
         shuffleOptions: true,
+        "questionsPerAttempt": 8,
         "questions": [
           {
             "prompt": "Which number on your tracker is the most accurate, with an error under about two percent in good devices?",
@@ -390,6 +621,78 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "correctIndex": 1,
             "explanation": "The study of more than ninety two thousand adults found that about one in five had a week where resting heart rate jumped ten beats or more, and they were healthy. About one in fifty is far too low and understates the normal day to day bounce. About half overstates it, since the finding was roughly twenty percent, not fifty percent.\n\nReference: (Quer et al., 2020)",
             "sourceLessonSlug": "m2-l7-data-variability-and-trends"
+          },
+          {
+            "prompt": "What does a hub app such as Apple Health or Google Fit actually do?",
+            "options": [
+              "It measures your steps and heart rate using the phone's own sensors",
+              "It shows what device apps send it",
+              "It replaces the device app, so you can uninstall the tracker's software",
+              "It corrects the errors in each device's readings before displaying them"
+            ],
+            "correctIndex": 1,
+            "explanation": "The hub is a gatherer, not a sensor. It only displays what the device apps feed it, which is why an empty hub almost always means a sharing switch was never turned on rather than a broken app.",
+            "sourceLessonSlug": "m2-l5-apps-and-the-data-ecosystem"
+          },
+          {
+            "prompt": "Your hub still shows no sleep data after a week, though your ring tracked sleep every night. What is the likely reason?",
+            "options": [
+              "The hub only keeps fourteen days of history before deleting the rest",
+              "Sleep can only reach a hub from a wrist device, never from a ring",
+              "Sharing is off in the ring's app",
+              "The ring has to be paired to a second phone before a hub can read it"
+            ],
+            "correctIndex": 2,
+            "explanation": "Open the ring's own app, find where it connects to Apple Health or Google Fit, and turn every sharing switch on. Until that connection exists the hub has nothing to display.",
+            "sourceLessonSlug": "m2-l5-apps-and-the-data-ecosystem"
+          },
+          {
+            "prompt": "Why does the lesson tell you to find your app's export button today, before you need it?",
+            "options": [
+              "So your history moves with you",
+              "Because the hub deletes anything you have not exported within a month",
+              "Because export is the only way to share your numbers with a buddy",
+              "Because the course requires you to upload a data file before Module 3"
+            ],
+            "correctIndex": 0,
+            "explanation": "Your data is yours. If you switch phones or brands later, the export is how years of history come with you instead of vanishing, and the time to find that button is before you are in a hurry.",
+            "sourceLessonSlug": "m2-l5-apps-and-the-data-ecosystem"
+          },
+          {
+            "prompt": "How should you set your first daily step goal?",
+            "options": [
+              "At ten thousand, the number most trackers set as their default",
+              "At double your current average, so the goal is genuinely demanding",
+              "At whatever the device suggests once you enter your height and weight",
+              "A little above what you do now"
+            ],
+            "correctIndex": 3,
+            "explanation": "If you walk four thousand steps, aim for about five thousand. A goal you can hit keeps you wearing the device; a goal you miss every day is how a tracker ends up in a drawer.",
+            "sourceLessonSlug": "m2-l6-setting-up-your-device-and-a-baseline-protocol"
+          },
+          {
+            "prompt": "What is a baseline week, and what do you change during it?",
+            "options": [
+              "A normal week, change nothing",
+              "A week of your hardest training, so you learn your true upper limit",
+              "A week where you change one habit each day to find which one matters",
+              "A week of clinic measurements taken before you first put the tracker on"
+            ],
+            "correctIndex": 0,
+            "explanation": "Wear the device for seven days and change nothing: no new diet, no new workout, same bedtime. It is the step people skip and the one that makes everything measured afterward mean something.",
+            "sourceLessonSlug": "m2-l6-setting-up-your-device-and-a-baseline-protocol"
+          },
+          {
+            "prompt": "Why does the setup lesson insist on a baseline before you change anything?",
+            "options": [
+              "Because the device needs seven days of data before it will calibrate",
+              "Because the course grades your first assignment on the baseline week",
+              "Without it, noise looks like progress",
+              "Because trackers under-report steps until they have learned your gait"
+            ],
+            "correctIndex": 2,
+            "explanation": "Your normal numbers swing on their own: about one in five adults had a week where resting heart rate jumped ten beats or more with no illness behind it (Quer et al., 2020). Without knowing your own swing, you cannot tell a real change from that jitter.",
+            "sourceLessonSlug": "m2-l6-setting-up-your-device-and-a-baseline-protocol"
           }
         ]
       }
@@ -454,6 +757,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
       "section": "Module 3: Data Analytics Basics",
       "quiz": {
         "passingScore": 80,
+        "questionsPerAttempt": 8,
+        "shuffleOptions": true,
         "questions": [
           {
             "prompt": "An N-of-1 study is best described as which of the following?",
@@ -555,6 +860,102 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "correctIndex": 1,
             "explanation": "Correct: Steps are the most accurate common metric, with under about two percent error in good devices, while calories burned can be off by more than thirty percent, so calories make a poor main number. Option 1 is wrong because resting heart rate is reasonably trustworthy at rest, not the least accurate. Option 3 is wrong because total sleep hours are measured fairly reliably. Option 4 is wrong because steps are the most accurate, not the least.\n\nReference: (Fuller et al., 2020)",
             "sourceLessonSlug": "m3-l7-designing-your-personal-health-dashboard"
+          },
+          {
+            "prompt": "Two of your metrics rise and fall together across the month. What has that shown you?",
+            "options": [
+              "That one of them is reliably causing the other one to change",
+              "They tend to move together",
+              "That a hidden third factor has been ruled out by the comparison",
+              "That the pattern will hold up if you go on to test it deliberately"
+            ],
+            "correctIndex": 1,
+            "explanation": "Correlation is only that two numbers travel in the same direction, or in opposite directions, across your days. It is a real and useful thing to notice, and it is the only thing a tracker can ever show you.",
+            "sourceLessonSlug": "m3-l6-correlation-and-the-causation-trap"
+          },
+          {
+            "prompt": "Which of these is one of the three reasons the lesson gives for why correlation is not causation?",
+            "options": [
+              "Trackers round their readings, which invents patterns that are not real",
+              "Two metrics measured by the same device can never be compared at all",
+              "Correlation is only valid once you have more than ninety days of data",
+              "A third thing could drive both"
+            ],
+            "correctIndex": 3,
+            "explanation": "The three reasons are that the direction could be backwards, that a hidden third thing could drive both, and that it could be plain chance. A relaxing day off raising your steps and your sleep at once is the classic third-thing case.",
+            "sourceLessonSlug": "m3-l6-correlation-and-the-causation-trap"
+          },
+          {
+            "prompt": "How does the lesson tell you to hold a pattern you have spotted in your own data?",
+            "options": [
+              "As a question, not an answer",
+              "As a firm conclusion, so you commit to the change and follow through",
+              "As a finding you can share as proven, at least for your own body",
+              "As a percentage, since a number sounds more convincing than a sentence"
+            ],
+            "correctIndex": 0,
+            "explanation": "Say it the careful way: on days I walk more, my sleep tends to be better, and I do not yet know why. That keeps the useful clue and drops the false certainty, and it points you at what is worth testing.",
+            "sourceLessonSlug": "m3-l6-correlation-and-the-causation-trap"
+          },
+          {
+            "prompt": "What is an N-of-1 trial?",
+            "options": [
+              "A trial that compares one night of your data against one other night",
+              "A study with one person in it",
+              "A study in which one variable is measured and all others are ignored",
+              "A clinical trial with one control group and one treatment group in it"
+            ],
+            "correctIndex": 1,
+            "explanation": "The N is the number of people, and here it is one: you. You are the only subject and your own comparison group, which is what makes the baseline period so important.",
+            "sourceLessonSlug": "m3-l8-running-a-simple-sleep-experiment"
+          },
+          {
+            "prompt": "How many things do you change in a clean personal experiment?",
+            "options": [
+              "Three, so you can compare which of them moved the number the most",
+              "As many as you can sustain, since more changes give a bigger effect",
+              "Two, one you expect to help and one you expect to do nothing at all",
+              "One"
+            ],
+            "correctIndex": 3,
+            "explanation": "Change one variable only. Taking magnesium, going to bed an hour earlier, and turning off your phone in the same week gives you a better night and no idea which change earned it.",
+            "sourceLessonSlug": "m3-l8-running-a-simple-sleep-experiment"
+          },
+          {
+            "prompt": "Why does a sleep experiment need a full week before and a full week after?",
+            "options": [
+              "Sleep bounces around night to night",
+              "Because devices need seven days to calibrate their sleep staging",
+              "Because the tracker deletes anything older than fourteen days of data",
+              "Because a week is the shortest period the metrics page will average"
+            ],
+            "correctIndex": 0,
+            "explanation": "Try a change for one night, sleep well, and you have learned nothing: sleep varies on its own. Comparing two stretches of nights rather than two single nights is what stops one lucky night fooling you.",
+            "sourceLessonSlug": "m3-l8-running-a-simple-sleep-experiment"
+          },
+          {
+            "prompt": "Which two tracker numbers does the Module 3 review say to trust most?",
+            "options": [
+              "Calories burned and active minutes, since both come from one sensor",
+              "Sleep stages and blood oxygen, which are measured directly overnight",
+              "Steps and resting heart rate",
+              "Whichever two your particular device happens to report with no gaps"
+            ],
+            "correctIndex": 2,
+            "explanation": "Steps are the most accurate thing your device measures, usually under about two percent error, and resting heart rate is reasonably good when taken at rest (Fuller et al., 2020; Germini et al., 2022).",
+            "sourceLessonSlug": "m3-l9-module-3-review-data-analytics-basics"
+          },
+          {
+            "prompt": "What is the difference between your baseline and your normal range?",
+            "options": [
+              "Baseline is typical, range is the band",
+              "The baseline is a published guideline and the range comes from your data",
+              "The baseline is measured in a clinic and the range comes from a device",
+              "The baseline covers one day and the range covers a full calendar year"
+            ],
+            "correctIndex": 0,
+            "explanation": "Your baseline is your own typical number over a calm stretch of days; your normal range is the band your number bounces inside on an ordinary day. A reading only means something when it lands clearly outside that band.",
+            "sourceLessonSlug": "m3-l9-module-3-review-data-analytics-basics"
           }
         ]
       }
@@ -721,6 +1122,42 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "correctIndex": 2,
             "explanation": "Correct: no effect is information, not failure; you adjust one variable and retest because the first try is rarely the final answer. Wrong: quitting after one try goes against the lesson, which says the first experiment is the start of a conversation with your body. Wrong: stacking several changes at once breaks the one-variable rule, so you could not tell which change mattered.",
             "sourceLessonSlug": "m4-l6-analyzing-results-and-iterating"
+          },
+          {
+            "prompt": "What three things make an N-of-1 experiment valid?",
+            "options": [
+              "A control group, a randomized order, and a blinded observer scoring it",
+              "One variable, a baseline, repetition",
+              "A full month of data, a doctor's review, and a validated device model",
+              "Three variables measured at once so their interactions can be compared"
+            ],
+            "correctIndex": 1,
+            "explanation": "Davidson and colleagues (2021) give the recipe as one variable changed, a quiet baseline period measured first, and the change repeated. Change more than one thing and you will not know what caused the result.",
+            "sourceLessonSlug": "m4-l7-module-4-review-n-of-1-experiments-with-intensity-minutes"
+          },
+          {
+            "prompt": "Why does this module build its experiment around intensity minutes rather than another metric?",
+            "options": [
+              "They tie most strongly to a longer life",
+              "They are the number a tracker measures with the smallest error margin",
+              "They are the only metric a phone alone can record without a watch",
+              "They change fastest, so one week is enough to detect a difference"
+            ],
+            "correctIndex": 0,
+            "explanation": "The PURE study followed more than one hundred thirty thousand people across seventeen countries and found more movement linked to clearly lower risk of death and heart disease (Lear et al., 2017). Steps, not intensity minutes, are the most accurate number.",
+            "sourceLessonSlug": "m4-l7-module-4-review-n-of-1-experiments-with-intensity-minutes"
+          },
+          {
+            "prompt": "What happens to your device's heart rate accuracy as the effort gets harder?",
+            "options": [
+              "It improves, because a stronger pulse is easier for the sensor to read",
+              "It stays the same, since the sensor samples at a fixed rate throughout",
+              "It gets worse",
+              "It overtakes steps in accuracy once you cross into the hard zone"
+            ],
+            "correctIndex": 2,
+            "explanation": "In one set of Fitbit tests, agreement with a true heart rate reading ranged from twenty-six percent up to ninety-two percent and got worse as intensity rose (Feehan et al., 2018), so give the number some grace in your hard zone.",
+            "sourceLessonSlug": "m4-l7-module-4-review-n-of-1-experiments-with-intensity-minutes"
           }
         ]
       }
@@ -907,6 +1344,150 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "correctIndex": 1,
             "explanation": "In pooled older-adult data, a faster usual walking speed predicted longer survival. A higher step count is a different metric and is not what the walking-speed finding measured. A lower resting heart rate is also a separate signal; the study tied walking speed to how long people lived, not to their heart rate.\n\nReference: (Studenski et al., 2011)",
             "sourceLessonSlug": "m5-l7-the-century-plan-part-1-priorities-by-decade"
+          },
+          {
+            "prompt": "How many metrics does the multi-variable lesson say to read together?",
+            "options": [
+              "Ten or more, so no possible interaction between them is ever missed",
+              "Two, because a third number always introduces a confusing contradiction",
+              "Three",
+              "As many as your device records, reviewed one at a time every morning"
+            ],
+            "correctIndex": 2,
+            "explanation": "Keep it to three, not ten. Three numbers you already trust say more as a group than any one of them says alone, and a longer list is the wall of charts you stop reading.",
+            "sourceLessonSlug": "m5-l6-multi-variable-pattern-recognition"
+          },
+          {
+            "prompt": "Which three metrics does the lesson pick to read as a group?",
+            "options": [
+              "Sleep, steps, and resting heart rate",
+              "Calories burned, active minutes, and overnight blood oxygen saturation",
+              "Sleep stages, stress score, and the readiness rating the device gives",
+              "Weight, waist measurement, and the number of floors climbed each day"
+            ],
+            "correctIndex": 0,
+            "explanation": "These three are the ones the device measures well and they talk to each other: a short night often shows up as a higher resting heart rate the next morning and fewer steps that day.",
+            "sourceLessonSlug": "m5-l6-multi-variable-pattern-recognition"
+          },
+          {
+            "prompt": "What is the one question to ask each morning when you read those three numbers together?",
+            "options": [
+              "Which of the three has moved furthest from its published guideline?",
+              "Which single number is worst today, and what will I do to fix it?",
+              "Has any one of them broken its record since I started tracking?",
+              "Do they agree or disagree?"
+            ],
+            "correctIndex": 3,
+            "explanation": "Agreement is signal. If two or three point the same way, ask why; if only one moved, that is usually the normal day-to-day wiggle and you wait another day.",
+            "sourceLessonSlug": "m5-l6-multi-variable-pattern-recognition"
+          },
+          {
+            "prompt": "What are the three parts of a Century Plan roadmap?",
+            "options": [
+              "A ten-year budget, a training schedule, and a list of medical screenings",
+              "Track now, protect now, next shift",
+              "One goal for every decade you expect to live, all written out in advance",
+              "A weekly trigger, a daily logging habit, and a monthly review meeting"
+            ],
+            "correctIndex": 1,
+            "explanation": "One short page: two or three numbers you track now, one plain sentence about what you protect now, and one line naming what changes in roughly ten years.",
+            "sourceLessonSlug": "m5-l8-the-century-plan-part-2-your-lifetime-roadmap"
+          },
+          {
+            "prompt": "What does the roadmap lesson say about a plan you never revise?",
+            "options": [
+              "It is the strongest kind, because consistency is what makes a plan work",
+              "It should still be followed until the decade it was written for ends",
+              "It only fails if it names numbers your device cannot actually measure",
+              "That is the broken one"
+            ],
+            "correctIndex": 3,
+            "explanation": "The plan is meant to be rewritten every few years, folding to the next section of the map. Trying to detail your nineties from your forties is what freezes people into quitting.",
+            "sourceLessonSlug": "m5-l8-the-century-plan-part-2-your-lifetime-roadmap"
+          },
+          {
+            "prompt": "What are the three ways other people help you keep tracking?",
+            "options": [
+              "Accountability, a buddy, and example",
+              "Competition, public leaderboards, and a paid coach checking your data",
+              "Group workouts, a shared spreadsheet, and a monthly weigh-in meeting",
+              "Encouragement, financial stakes, and a signed contract with a friend"
+            ],
+            "correctIndex": 0,
+            "explanation": "Accountability keeps the habit awake, a buddy who also tracks pulls you back when you slip, and teaching someone else forces you to make your own routine clear. Social support has a real if modest link to staying active (Scarapicchia et al., 2017).",
+            "sourceLessonSlug": "m5-l9-community-and-health-leadership"
+          },
+          {
+            "prompt": "What does the community lesson say about broadcasting your numbers to strangers online?",
+            "options": [
+              "It is the strongest form of accountability the research has measured",
+              "It works as long as you share only your steps and never your sleep",
+              "It can backfire",
+              "It is required before a peer accountability partnership counts as one"
+            ],
+            "correctIndex": 2,
+            "explanation": "Comparison with strangers can make you feel worse and quit faster. You need one or two people who actually know you and check in, not a crowd.",
+            "sourceLessonSlug": "m5-l9-community-and-health-leadership"
+          },
+          {
+            "prompt": "How many goals and how many habits does a Health Blueprint commit to?",
+            "options": [
+              "Ten goals and five habits, one for each week of the whole course",
+              "One goal for each of the four core metrics, and no habits at all",
+              "As many as fit on the page, provided every one of them is specific",
+              "Three goals and one habit"
+            ],
+            "correctIndex": 3,
+            "explanation": "Three ninety-day goals, each specific, and exactly one habit you will not drop. A blueprint with ten goals is one nobody follows, and if it does not fit on a page you cut until it does.",
+            "sourceLessonSlug": "m5-l10-the-capstone-my-health-blueprint"
+          },
+          {
+            "prompt": "What are the four parts of a Health Blueprint, in the order you build them?",
+            "options": [
+              "Choose a device, log a week, run an experiment, then share it publicly",
+              "Pull data, summarize, set goals, pick a habit",
+              "Set a target, buy the equipment, book a check-up, then schedule reviews",
+              "Write a mission, list your obstacles, plan your rewards, then find a coach"
+            ],
+            "correctIndex": 1,
+            "explanation": "Pull three or four numbers you trust from your five weeks, write one or two plain sentences on what changed, set three specific ninety-day goals, then name the single habit you will keep.",
+            "sourceLessonSlug": "m5-l10-the-capstone-my-health-blueprint"
+          },
+          {
+            "prompt": "How far ahead does a Health Blueprint plan?",
+            "options": [
+              "A full calendar year, reviewed at the end of every third month",
+              "The rest of your life, revised only when a decade priority shifts",
+              "Ninety days",
+              "Five weeks, matching the length of the course that produced it"
+            ],
+            "correctIndex": 2,
+            "explanation": "The blueprint sets three goals for the next ninety days, a quarter of a year. That horizon is short enough to be specific and long enough for a step target like seven thousand a day to become a habit (Paluch et al., 2021).",
+            "sourceLessonSlug": "m5-l10-the-capstone-my-health-blueprint"
+          },
+          {
+            "prompt": "What is the Module 5 review's rule for one, two, and three off weeks in a row?",
+            "options": [
+              "Keep going, look, then adjust",
+              "Stop tracking, restart the baseline, and then repeat the whole module",
+              "Adjust at once, then wait a month before you look at the data again",
+              "Ignore all three, since anything under a month is always simple noise"
+            ],
+            "correctIndex": 0,
+            "explanation": "One off week, keep going. Two off weeks, look for what changed. Three off weeks, adjust your plan or get help. It is the practical version of telling signal from noise.",
+            "sourceLessonSlug": "m5-l11-module-5-review-long-term-trends-and-sustainable-systems"
+          },
+          {
+            "prompt": "What does the review mean by resilience, your master health signal?",
+            "options": [
+              "The highest workload you can sustain before your heart rate plateaus",
+              "How fast your body bounces back",
+              "The share of nights you reach the recommended seven to nine hours",
+              "How long you hold a habit before a busy week finally interrupts it"
+            ],
+            "correctIndex": 1,
+            "explanation": "After a hard workout, a bad night, or a stressful week, how quickly does your resting heart rate settle and your energy return? Judge your own bounce-back, since personal baselines differ a lot (Quer et al., 2020).",
+            "sourceLessonSlug": "m5-l11-module-5-review-long-term-trends-and-sustainable-systems"
           }
         ]
       }

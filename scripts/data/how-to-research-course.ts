@@ -95,6 +95,332 @@ Because you can fail a rubric, and failing is how you learn where your habits ar
       ],
     },
 
+    {
+      slug: "quiz-the-problem-and-the-instrument",
+      title: "Section 1 knowledge check · The problem, and the instrument",
+      section: "Section 1 · The problem, and the instrument",
+      body: `A graded check on the four ways careful people still get it wrong, and on the rubric your work will actually be scored against. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Who does most bad research, according to this lesson?",
+            options: [
+              "People who never noticed the moment they stopped checking",
+              "People who set out to mislead a reader about what they found",
+              "People working too fast to consult more than one source",
+              "People without the training to evaluate what they are reading",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Most bad research is not done by liars. It is done by people who were interested, worked hard, and stopped checking without noticing.",
+            sourceLessonSlug: "why-research-fails",
+          },
+          {
+            prompt: "What is the tell that you were looking for confirmation rather than evidence?",
+            options: [
+              "You spent longer searching than you had planned to",
+              "You can remember what you found but not what would have changed your mind",
+              "You ended up agreeing with the first source you happened to read",
+              "You could not find anyone who disagreed with your conclusion",
+            ],
+            correctIndex: 1,
+            explanation:
+              "You form a view early and every search after that is shaped to support it. The missing memory of a disconfirming condition is what gives it away.",
+            sourceLessonSlug: "why-research-fails",
+          },
+          {
+            prompt: "What is a single account, in this lesson's terms?",
+            options: [
+              "Evidence, weaker than two but still evidence of the fact",
+              "Unusable, since nothing can be established from one source",
+              "A claim",
+              "A starting point, which becomes a fact once it is written down",
+            ],
+            correctIndex: 2,
+            explanation:
+              "It might be right. You do not yet know, and reporting it as though you do transfers your uncertainty to your reader without telling them.",
+            sourceLessonSlug: "why-research-fails",
+          },
+          {
+            prompt: "What does the lesson call five results that all trace back to one wire story?",
+            options: [
+              "Weak corroboration, since a wire service is a reliable origin",
+              "A consensus, since five outlets chose to carry the same claim",
+              "A verification chain, which is what following citations produces",
+              "One source wearing five coats",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Repetition is not corroboration. Following the links is what turns an overwhelming-feeling set of results back into the one source it actually is.",
+            sourceLessonSlug: "why-research-fails",
+          },
+          {
+            prompt: "Which failure does the lesson say this course cares about most?",
+            options: [
+              "Asserting what you merely believe",
+              "Inventing a source that does not exist",
+              "Citing a source that says the opposite of what you claim",
+              "Publishing before the research is finished",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Not inventing and not lying. Just writing the sentence without the hedge because the hedge felt awkward, so the reader has no way to tell which sentences were checked. It is the one that matters most because it is invisible.",
+            sourceLessonSlug: "why-research-fails",
+          },
+          {
+            prompt: "What is the course asking you to be, if not certain?",
+            options: [
+              "Thorough, so that nothing relevant was left unread",
+              "Impartial, so that no view of your own reaches the page",
+              "Legible",
+              "Cautious, so that no claim is made beyond what is proven",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Certainty is rare and pretending to it is the failure. Legible means a reader can see which claims are sourced, which are corroborated, which are still open, and what you did about it.",
+            sourceLessonSlug: "why-research-fails",
+          },
+          {
+            prompt: "Somebody sends you five links that all say the same thing. What is the first question?",
+            options: [
+              "Which of the five is the most reputable publication",
+              "Whether any of the five contradicts the others in detail",
+              "How recently each of the five was published",
+              "Where did each one get it",
+            ],
+            correctIndex: 3,
+            explanation:
+              "If they all trace to one original, you have one source, not five. Reputation and recency do not multiply a single origin into several.",
+            sourceLessonSlug: "why-research-fails",
+          },
+          {
+            prompt: "What is the difference between being uncertain and being unreliable?",
+            options: [
+              "An unreliable writer hides uncertainty; a reliable one states it",
+              "An uncertain writer has not finished the work; an unreliable one has not started it",
+              "Uncertainty is about the evidence; unreliability is about the writing",
+              "An unreliable writer is wrong more often than an uncertain one is",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Stating it lets the reader weigh the claim properly. Hiding it hands them a confidence you do not have.",
+            sourceLessonSlug: "why-research-fails",
+          },
+          {
+            prompt: "Why does the lesson say a vague question can never correct you?",
+            options: [
+              "Because nobody will bother to check work that is not specific",
+              "It cannot be answered, so it cannot be answered wrongly",
+              "Because a vague question attracts sources that are equally vague",
+              "Because a reader cannot tell what you were trying to establish",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Nothing you find can ever count as an answer, so nothing you find can ever count as a correction either. That is why everything downstream inherits the question's shape.",
+            sourceLessonSlug: "why-research-fails",
+          },
+          {
+            prompt: "What does this course use instead of a list of virtues?",
+            options: [
+              "A published code of ethics from a professional body",
+              "A checklist run over each piece of work before it is published",
+              "A sequence of exercises graded by a reviewer at each stage",
+              "The Trusted Documentation Rubric",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Be curious, be skeptical, be fair are all true and useless the moment you have to decide whether a specific paragraph is good enough to publish. The rubric is the instrument reviewers on this platform actually score submitted work against.",
+            sourceLessonSlug: "the-instrument",
+          },
+          {
+            prompt: "How many criteria does the rubric have, and how are they grouped?",
+            options: [
+              "Eight criteria, grouped under five pillars",
+              "Five criteria, grouped under three pillars",
+              "Ten criteria, grouped in pairs by the stage of the work",
+              "Eight criteria, ungrouped, applied in the order they are listed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Eight criteria under five pillars: planning, seek truth, minimize harm, accountable, act independently, and craft.",
+            sourceLessonSlug: "the-instrument",
+          },
+          {
+            prompt: "Which two criteria may be scored merely Developing?",
+            options: [
+              "Sourced and corroborated, and verified and flagged",
+              "Transparent, and disclosure of interests",
+              "Consent and fair representation, and cultural fidelity",
+              "Focused question, and craft for the medium",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Everything else on the rubric must be Met, or, for two criteria only, genuinely not applicable.",
+            sourceLessonSlug: "the-instrument",
+          },
+          {
+            prompt: "Under which pillar does the focused question sit?",
+            options: [
+              "Planning",
+              "Seek truth, alongside sourcing and verification",
+              "Accountable, since the question is what you are held to",
+              "Craft, since the question shapes the finished form",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Planning, and its bar is Developing, which is why it is the criterion the course opens the practical work with rather than one of the hard gates.",
+            sourceLessonSlug: "the-instrument",
+          },
+          {
+            prompt: "Which pillar holds sourced and corroborated?",
+            options: [
+              "Planning, since sourcing is decided when the question is framed",
+              "Seek truth",
+              "Accountable, since sourcing is what a reader checks you on",
+              "Act independently, since sources determine your independence",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Seek truth, along with verified and flagged. Both must be Met, with no not-applicable option.",
+            sourceLessonSlug: "the-instrument",
+          },
+          {
+            prompt: "Under which pillar does disclosure of interests sit?",
+            options: [
+              "Minimize harm, since an undisclosed interest can harm a reader",
+              "Accountable, alongside the transparency criterion",
+              "Seek truth, since an interest can distort what you find",
+              "Act independently",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Act independently is its own pillar, and disclosure of interests is the criterion under it. Transparent is the one under accountable.",
+            sourceLessonSlug: "the-instrument",
+          },
+          {
+            prompt: "Which criterion sits under two pillars at once?",
+            options: [
+              "Cultural and linguistic fidelity",
+              "Transparent, which serves both accountability and truth",
+              "Consent and fair representation, under harm and independence",
+              "Craft for the medium, under planning and craft",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Fidelity is listed under seek truth and minimize harm together, because getting someone's words and world wrong is both an accuracy failure and a harm.",
+            sourceLessonSlug: "the-instrument",
+          },
+          {
+            prompt: "Why can craft be merely Developing while sourcing must be Met?",
+            options: [
+              "Because craft is subjective and sourcing can be checked objectively",
+              "Because craft improves with practice and sourcing does not",
+              "Craft failures are visible to the reader and sourcing failures are not",
+              "Because a reviewer scores craft last, after the harder criteria",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A rough, plain, unpolished piece whose claims are sourced and whose uncertainties are flagged will pass. A beautiful one that asserts things nobody checked will not. The ordering is deliberate.",
+            sourceLessonSlug: "the-instrument",
+          },
+          {
+            prompt: "Which two criteria allow a score of not applicable?",
+            options: [
+              "Focused question and craft for the medium, which are Developing bars",
+              "Consent and fair representation, and cultural and linguistic fidelity",
+              "Transparent and disclosure of interests, where nothing is at stake",
+              "Any criterion, if the work's scope does not reach it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "If your work has no identifiable people, consent genuinely does not apply. If it involves no other language or culture, fidelity does not apply. Nothing else can be waived.",
+            sourceLessonSlug: "the-instrument",
+          },
+          {
+            prompt: "How does the lesson describe a not-applicable score?",
+            options: [
+              "A neutral result that neither helps nor harms the overall score",
+              "A default for any criterion a reviewer cannot evaluate",
+              "A claim you should be prepared to defend",
+              "An option available only when a reviewer agrees in advance",
+            ],
+            correctIndex: 2,
+            explanation:
+              "It is a claim about your work, not a way out, and you should expect to justify it.",
+            sourceLessonSlug: "the-instrument",
+          },
+          {
+            prompt: "Why does the course teach a rubric rather than a philosophy?",
+            options: [
+              "Because you can fail a rubric",
+              "Because a rubric is faster to teach than a philosophy is",
+              "Because philosophies differ between fields and rubrics do not",
+              "Because a rubric can be applied without understanding it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Failing is how you learn where your habits are weak. A philosophy you can agree with all day without changing anything you do.",
+            sourceLessonSlug: "the-instrument",
+          },
+          {
+            prompt: "What does the lesson say you will have done with the rubric by the end of the course?",
+            options: [
+              "Memorized its eight criteria and the pillar each belongs to",
+              "Been scored against it by two independent reviewers",
+              "Met it eight times, and used it once on your own work",
+              "Compared it against the professional codes it was built from",
+            ],
+            correctIndex: 2,
+            explanation:
+              "One criterion per lesson, then the capstone applies the whole instrument to work of your own.",
+            sourceLessonSlug: "the-instrument",
+          },
+          {
+            prompt: "What is wrong with advice like be curious, be skeptical, be fair?",
+            options: [
+              "It is contested, since different fields define each one differently",
+              "It is too demanding for anyone at the beginning of the work",
+              "It describes attitudes rather than the checks that produce them",
+              "It is useless the moment you have to judge a specific paragraph",
+            ],
+            correctIndex: 3,
+            explanation:
+              "All of it is true. None of it helps you decide whether the paragraph in front of you is good enough to publish, which is the decision that actually arrives.",
+            sourceLessonSlug: "the-instrument",
+          },
+          {
+            prompt: "What does the lesson mean by saying every search after an early view is shaped?",
+            options: [
+              "Shaped to find support for the view you already formed",
+              "Shaped by the search engine's own ranking of your earlier queries",
+              "Shaped by the vocabulary the first source you read happened to use",
+              "Shaped toward newer material, which tends to agree with itself",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That is what looking for confirmation instead of evidence means, and the reason it is hard to catch is that the searching itself feels like diligence.",
+            sourceLessonSlug: "why-research-fails",
+          },
+          {
+            prompt: "What happens when you report a single account as though it were settled?",
+            options: [
+              "The claim becomes harder to correct once it is in print",
+              "You transfer your uncertainty to your reader without telling them",
+              "You take on responsibility for the source's own errors",
+              "You make the claim harder for another researcher to trace",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The uncertainty does not disappear when you leave it out of the sentence. It moves to the reader, who now cannot see it.",
+            sourceLessonSlug: "why-research-fails",
+          },
+        ],
+      },
+    },
+
     // ── Section 2 ────────────────────────────────────────────────────────────────────────────────
     {
       slug: "the-focused-question",
@@ -172,6 +498,8 @@ For these, there is exactly one acceptable move: **read it from the system that 
       title: "5 · Knowledge check: asking and finding",
       section: "Section 2 · Asking, and finding",
       quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
         shuffleOptions: true,
         questions: [
           {
@@ -226,6 +554,216 @@ For these, there is exactly one acceptable move: **read it from the system that 
             correctIndex: 1,
             explanation:
               "The agency owns the value, so only the agency can state it, and it can change without notice. Recording the date is what lets a later reader judge whether it is still current.",
+            sourceLessonSlug: "what-a-source-is",
+          },
+
+          // Pool expansion so the section's own two lessons are covered rather than sampled.
+          {
+            prompt: "Why is the focused question the first rubric criterion?",
+            options: [
+              "Because a reviewer scores it before reading any of the work",
+              "Everything downstream inherits its shape",
+              "Because it is the only criterion you can complete before research begins",
+              "Because its bar is Developing, so it is the easiest to satisfy first",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A vague question cannot be answered, so it cannot be answered wrongly, so nothing you find can ever correct you.",
+            sourceLessonSlug: "the-focused-question",
+          },
+          {
+            prompt: "What is wrong with the history of the river as a research question?",
+            options: [
+              "It covers too long a period to be researched in one project",
+              "It names no sources that a reader could go and check",
+              "It is a subject, not a question",
+              "It is not interesting enough to sustain a reader's attention",
+            ],
+            correctIndex: 2,
+            explanation:
+              "There is no finding that would count as an answer, which means there is no finding that could count as a correction either.",
+            sourceLessonSlug: "the-focused-question",
+          },
+          {
+            prompt: "What is the single test for whether a question is focused enough?",
+            options: [
+              "Can you say what evidence would prove you wrong",
+              "Can you answer it from the sources you have already found",
+              "Can you state it in a single sentence without a subordinate clause",
+              "Would somebody who knows the subject find it worth asking",
+            ],
+            correctIndex: 0,
+            explanation:
+              "If nothing could prove you wrong, it is a topic and not yet a question. The test is not whether it is interesting.",
+            sourceLessonSlug: "the-focused-question",
+          },
+          {
+            prompt: "Why does a narrower question usually produce a bigger piece of work?",
+            options: [
+              "Because a narrow question takes longer to research than a broad one",
+              "Because narrow questions require primary sources and broad ones do not",
+              "Because a reader will read further into a subject they already know",
+              "Specific questions attract specific evidence",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Why did the town move produces a paragraph of generalities. The three-blocks-east version produces council minutes, a highway plan, named people, and an argument.",
+            sourceLessonSlug: "the-focused-question",
+          },
+          {
+            prompt: "Where do good research questions usually come from?",
+            options: [
+              "A gap rather than a topic",
+              "A subject you already know enough about to work in quickly",
+              "A survey of what has already been published in the field",
+              "A request from someone who needs the answer for their own work",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Something you were told that does not fit something else you were told. A number everybody repeats and nobody sources. A date that is oddly precise. A person who appears in one account and vanishes from the next.",
+            sourceLessonSlug: "the-focused-question",
+          },
+          {
+            prompt: "Why does the lesson tell you to write the question down before you start looking?",
+            options: [
+              "So a reviewer can see the question was set before the evidence was found",
+              "So you can check your drift against it once everything seems relevant",
+              "So it can be quoted at the top of the finished piece unchanged",
+              "So you do not repeat searches you have already run once",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Deep in material, everything looks relevant. The written question is what you measure that feeling against.",
+            sourceLessonSlug: "the-focused-question",
+          },
+          {
+            prompt: "What is a source, in this lesson's definition?",
+            options: [
+              "A publication with editorial standards you have reason to trust",
+              "Any document you can cite in a form a reader could follow",
+              "A thing that has a relationship to the fact",
+              "The earliest place a claim can be shown to have appeared",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Not a place I read it. The relationship to the fact is what sorts sources into primary, secondary, and tertiary.",
+            sourceLessonSlug: "what-a-source-is",
+          },
+          {
+            prompt: "What makes a record primary?",
+            options: [
+              "It was made by someone with direct access, at the time",
+              "It has not been quoted or summarized by anyone else yet",
+              "It was produced by an official body rather than a private person",
+              "It is the earliest surviving account of the event in question",
+            ],
+            correctIndex: 0,
+            explanation:
+              "As part of the event itself: a statute, a court filing, a census return, a ship's manifest, a letter, an interview with a participant, a dataset published by the agency that collected it.",
+            sourceLessonSlug: "what-a-source-is",
+          },
+          {
+            prompt: "What is a secondary source?",
+            options: [
+              "Any source that was not written by a participant in the events",
+              "A source whose claims you have not yet been able to verify",
+              "A summary of other summaries, one step further from the record",
+              "Someone read primary material and wrote about it",
+            ],
+            correctIndex: 3,
+            explanation:
+              "A history book, a journal article, a news report. Secondary work is where you learn what questions have already been asked, and skipping it wastes months.",
+            sourceLessonSlug: "what-a-source-is",
+          },
+          {
+            prompt: "What is a tertiary source?",
+            options: [
+              "A source with no identifiable author at all",
+              "Someone read secondary material and summarized it",
+              "A source that has been translated from another language",
+              "A source published without any citations of its own",
+            ],
+            correctIndex: 1,
+            explanation:
+              "An encyclopedia entry, a syllabus, and most of what a search engine puts at the top.",
+            sourceLessonSlug: "what-a-source-is",
+          },
+          {
+            prompt: "What is the rule about a claim that matters?",
+            options: [
+              "It gets traced to primary material, or it gets marked unverified",
+              "It gets at least two secondary sources supporting it",
+              "It gets removed unless a primary source can be produced",
+              "It gets stated with a hedge until better evidence appears",
+            ],
+            correctIndex: 0,
+            explanation:
+              "None of the three source categories is disgraceful. The rule is about what happens to a load-bearing claim that never reaches primary material.",
+            sourceLessonSlug: "what-a-source-is",
+          },
+          {
+            prompt: "What does the lesson say you will discover by following citations four or five times?",
+            options: [
+              "That most secondary sources cite more carefully than expected",
+              "That primary material is harder to obtain than it first appears",
+              "That confident claims often trace to nothing, or to a misreading",
+              "That the same handful of primary sources underlies most fields",
+            ],
+            correctIndex: 2,
+            explanation:
+              "To nothing, or to a source that says something slightly different, or to a source that says the opposite and was misread once in 1974 and copied ever since. That experience does more for your judgment than any amount of advice.",
+            sourceLessonSlug: "what-a-source-is",
+          },
+          {
+            prompt: "Which category of fact must you never reason your way to?",
+            options: [
+              "A claim about a named living person",
+              "A number that appears in more than one published source",
+              "Anything you learned from a tertiary source",
+              "A value owned by an external system",
+            ],
+            correctIndex: 3,
+            explanation:
+              "A price, a statute's current text, an agency's requirement, a company's terms, a model number. There is exactly one acceptable move for these.",
+            sourceLessonSlug: "what-a-source-is",
+          },
+          {
+            prompt: "What is that one acceptable move?",
+            options: [
+              "Read it from the system that owns it, and record the date you read it",
+              "Find two published sources that agree on the current value",
+              "Cite the most recent authoritative summary you can locate",
+              "State the last value you can confirm and flag it as possibly stale",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Not what it was last year, not what it probably is, not what a summary says it is. These change without announcement, and a confident wrong number is worse than an admitted gap.",
+            sourceLessonSlug: "what-a-source-is",
+          },
+          {
+            prompt: "A news article states a striking statistic with no citation. What do you do?",
+            options: [
+              "Repeat it with the outlet named, so the reader can judge the source",
+              "Treat it as unverified and go looking for whoever produced the number",
+              "Compare it with similar figures elsewhere and use the most common one",
+              "Contact the outlet and use the figure if they stand by it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "And if you cannot find them, say so rather than repeating it. Naming the outlet does not turn an unsourced number into a sourced one.",
+            sourceLessonSlug: "what-a-source-is",
+          },
+          {
+            prompt: "Why is a price handled differently from a historical fact?",
+            options: [
+              "Because a price can be checked more easily than a historical claim",
+              "Because commercial values fall outside the scope of academic citation",
+              "It is owned by an external system and changes without notice",
+              "Because prices vary by region, so no single value is ever correct",
+            ],
+            correctIndex: 2,
+            explanation:
+              "So it must be read from that system and dated, never inferred. A historical fact does not move once it has happened; a fee schedule does.",
             sourceLessonSlug: "what-a-source-is",
           },
         ],
@@ -314,6 +852,280 @@ You do not need this platform's version. You need **a version**: a file, a page,
       ],
     },
 
+    {
+      slug: "quiz-seeking-truth",
+      title: "Section 3 knowledge check · Seeking truth",
+      section: "Section 3 · Seeking truth",
+      body: `A graded check on the two rubric criteria that must be Met and cannot be waived: sourcing with real independence behind it, and flagging that goes somewhere durable instead of dying in a sentence. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What does sourced mean, in this criterion?",
+            options: [
+              "Every central claim ties to something a reader could go and check",
+              "Every claim in the work can be traced to a primary record",
+              "Every source used appears in the bibliography at the end",
+              "Every claim carries the name of the person who told you it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Not I read this somewhere. A named, findable thing. That is the first half of a criterion people routinely do while believing they have done both.",
+            sourceLessonSlug: "sourced-and-corroborated",
+          },
+          {
+            prompt: "What does corroborated add to sourced?",
+            options: [
+              "That the source has been checked for accuracy by its own publisher",
+              "That the claim appears in a primary record as well as a secondary one",
+              "Support from more than one independent source",
+              "That a second researcher has reviewed the citation you used",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Independence is the word doing the work, and it is a higher bar than it sounds.",
+            sourceLessonSlug: "sourced-and-corroborated",
+          },
+          {
+            prompt: "When are two sources independent?",
+            options: [
+              "When they were published by unrelated organizations",
+              "When they reached the same conclusion by different methods",
+              "When neither cites the other anywhere in its text",
+              "Neither got it from the other, and neither from a common third place",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Checking it is mostly mechanical: follow each source's own citation and see where they land.",
+            sourceLessonSlug: "sourced-and-corroborated",
+          },
+          {
+            prompt: "What is the syndication chain?",
+            options: [
+              "Many outlets, one wire service",
+              "Many articles, one organization's announcement",
+              "Many quotes, one person repeating something they read",
+              "A cites B, B cites C, and C cites A",
+            ],
+            correctIndex: 0,
+            explanation:
+              "All four options here are dependence patterns the lesson names. The syndication chain is the wire-service one; the others are the press-release echo, the single expert, and the circular citation.",
+            sourceLessonSlug: "sourced-and-corroborated",
+          },
+          {
+            prompt: "What is the press-release echo?",
+            options: [
+              "A single expert quoted in many places, repeating what they read",
+              "Many articles, one organization's announcement",
+              "A wire story carried by outlets that never contact the source",
+              "A citation loop where each source points at the next in a circle",
+            ],
+            correctIndex: 1,
+            explanation:
+              "One announcement, many articles that look like independent reporting until you follow them back.",
+            sourceLessonSlug: "sourced-and-corroborated",
+          },
+          {
+            prompt: "What is the circular citation?",
+            options: [
+              "A source that cites itself in a later, revised edition",
+              "A claim repeated so often that its origin can no longer be found",
+              "A cites B, B cites C, and C cites A",
+              "A summary that cites the article summarizing it",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The lesson notes it happens more than seems possible, which is exactly why following each citation to where it actually lands is worth the time.",
+            sourceLessonSlug: "sourced-and-corroborated",
+          },
+          {
+            prompt: "Which claims does the criterion require you to corroborate?",
+            options: [
+              "All of them, without exception",
+              "Any claim a reader is likely to find surprising",
+              "Any claim you could not verify at first attempt",
+              "The load-bearing ones",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The ones your conclusion rests on, the ones that would change a reader's mind, the ones about a named person, and any number you are asking anyone to act on. Pretending all of them need it leads to work nobody finishes.",
+            sourceLessonSlug: "sourced-and-corroborated",
+          },
+          {
+            prompt: "What may rest on a single decent source?",
+            options: [
+              "Color and context, as long as you have not dressed it up",
+              "Any claim that no reader is likely to challenge",
+              "Anything the work does not draw a conclusion from directly",
+              "Nothing; a single source is never sufficient under this criterion",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The condition matters as much as the permission. A single-sourced detail presented as though it were established is the failure this criterion exists to catch.",
+            sourceLessonSlug: "sourced-and-corroborated",
+          },
+          {
+            prompt: "There is one record and there will never be another. What is the correct move?",
+            options: [
+              "Drop the claim, since it cannot meet the corroboration bar",
+              "Assert it, since a single record is the best evidence available",
+              "Say what you have: one source, its kind, and what would confirm it",
+              "Hedge the sentence so the reader knows to treat it cautiously",
+            ],
+            correctIndex: 2,
+            explanation:
+              "That is a normal condition of real research rather than a failure, and the sentence costs you nothing and buys the reader everything. A hedge alone is not the same as naming what would confirm it.",
+            sourceLessonSlug: "sourced-and-corroborated",
+          },
+          {
+            prompt: "What does the easy half of verification consist of?",
+            options: [
+              "Looking again, slowly, at the thing you already have",
+              "Finding a second source that agrees with the first",
+              "Asking the person quoted whether the quote is accurate",
+              "Running the claim past someone who knows the subject",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Does the quote say what you say it says, in context. Does the photograph show what the caption claims. Does the number match the table. Does the date survive a calendar check. Most verification is not clever.",
+            sourceLessonSlug: "verified-and-flagged",
+          },
+          {
+            prompt: "Which of these is on the verification list?",
+            options: [
+              "Whether the source has been cited approvingly by other researchers",
+              "Whether a person still holds the title you gave them, today",
+              "Whether the claim is consistent with what the field generally believes",
+              "Whether the source would be accepted by a court of law",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Titles go stale quietly. It sits alongside checking quotes in context, captions against images, numbers against tables, and dates against a calendar.",
+            sourceLessonSlug: "verified-and-flagged",
+          },
+          {
+            prompt: "What does it mean to flag something?",
+            options: [
+              "To mark a claim for a reviewer's attention before publication",
+              "To attach a hedge to any sentence you are not fully sure of",
+              "To remove a claim from the text until it can be established",
+              "To tell the reader precisely where the floor gets thin",
+            ],
+            correctIndex: 3,
+            explanation:
+              "One source reports X; we could not confirm it. The figure is widely repeated but we could not find its origin. The family's account and the official record disagree about the date, and both are given here.",
+            sourceLessonSlug: "verified-and-flagged",
+          },
+          {
+            prompt: "Why do writers resist flagging?",
+            options: [
+              "Because it lengthens a piece that is already at its word limit",
+              "Because editors remove flags as a matter of house style",
+              "It looks like they failed",
+              "Because a flagged claim is more likely to be challenged in public",
+            ],
+            correctIndex: 2,
+            explanation:
+              "It is the opposite. Flagging is a promise, not an apology, and the lesson calls the resistance the reason almost nobody does it well.",
+            sourceLessonSlug: "verified-and-flagged",
+          },
+          {
+            prompt: "What does the lesson call an unflagged uncertainty?",
+            options: [
+              "A lie of confidence",
+              "A gap that a careful reader will notice on their own",
+              "An acceptable simplification, provided the claim is true",
+              "A failure of craft rather than of sourcing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "And it is undetectable, which is precisely what makes it serious. A visible mistake can be caught and corrected by a reader; an unflagged uncertainty never gets caught at all.",
+            sourceLessonSlug: "verified-and-flagged",
+          },
+          {
+            prompt: "Why is a flag that lives only in a sentence not enough?",
+            options: [
+              "Because a reader may skim past the sentence carrying it",
+              "Because an editor may cut the hedge for length before publication",
+              "Because it does not say what would settle the question",
+              "It ships and stays there forever, because nothing records that it is open",
+            ],
+            correctIndex: 3,
+            explanation:
+              "There is no list, nothing records whether anyone looked, and the next person to touch the piece assumes it was already checked.",
+            sourceLessonSlug: "verified-and-flagged",
+          },
+          {
+            prompt: "What does a real list of open questions record?",
+            options: [
+              "What is claimed, what is unestablished, what would settle it, where to look",
+              "Every source consulted, whether or not it produced a usable claim",
+              "The reviewer assigned to each outstanding question and their deadline",
+              "The date each question was raised and how long it has been open",
+            ],
+            correctIndex: 0,
+            explanation:
+              "When one gets answered, the text changes and the entry is deleted. The list shrinking is the measure of progress.",
+            sourceLessonSlug: "verified-and-flagged",
+          },
+          {
+            prompt: "Does the lesson require this platform's particular version of that list?",
+            options: [
+              "Yes, since the platform's reviewers score against it directly",
+              "No; you need a version, durable and separate from the prose",
+              "Yes, for any work that will be submitted for the credential",
+              "No, provided every uncertainty appears somewhere in the text",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A file, a page, a document, anything durable and separate from the prose. The rule is what matters, not the implementation.",
+            sourceLessonSlug: "verified-and-flagged",
+          },
+          {
+            prompt: "State the rule about hedges.",
+            options: [
+              "A hedge belongs in the text, never only in the notes",
+              "A hedge should name the source that would resolve it",
+              "A hedge with no check attached is a hedge nobody will ever clear",
+              "A hedge is a temporary measure and should not survive publication",
+            ],
+            correctIndex: 2,
+            explanation:
+              "It is the sentence the whole criterion turns on, and it is why the flag has to land somewhere durable rather than in the prose alone.",
+            sourceLessonSlug: "verified-and-flagged",
+          },
+          {
+            prompt: "Which rubric pillar do both of this section's criteria belong to?",
+            options: [
+              "Seek truth",
+              "Accountable, since both are about what a reader can check",
+              "Planning, since both are decided before the research begins",
+              "Act independently, since both protect against outside pressure",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Sourced and corroborated, and verified and flagged, both sit under seek truth, and both must be Met with no not-applicable option.",
+            sourceLessonSlug: "sourced-and-corroborated",
+          },
+          {
+            prompt: "What is the single expert pattern?",
+            options: [
+              "An expert whose field is adjacent to, rather than inside, the question",
+              "An expert cited without their qualifications being stated",
+              "An expert who declines to be quoted, so the claim goes unattributed",
+              "Many quotes, one person, sometimes repeating something they read",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The count of appearances looks like breadth. It is one voice, and that voice may itself be relaying a claim from somewhere else.",
+            sourceLessonSlug: "sourced-and-corroborated",
+          },
+        ],
+      },
+    },
+
     // ── Section 4 ────────────────────────────────────────────────────────────────────────────────
     {
       slug: "consent-and-representation",
@@ -394,6 +1206,8 @@ The failure mode to watch for is a piece of work that is **technically accurate 
       title: "10 · Knowledge check: truth and harm",
       section: "Section 4 · Minimizing harm",
       quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
         shuffleOptions: true,
         questions: [
           {
@@ -451,6 +1265,255 @@ The failure mode to watch for is a piece of work that is **technically accurate 
             explanation:
               "A hedge with no check attached is one nobody will ever clear: it ships and stays forever because nothing records that it is open. Private notes and extra hedges do not create the durable, separate record that gets the question answered.",
             sourceLessonSlug: "verified-and-flagged",
+          },
+
+          // Pool expansion so this section's own two lessons are covered rather than sampled.
+          {
+            prompt: "What three properties does consent have to have?",
+            options: [
+              "Informed, specific, and revocable in practice",
+              "Written, witnessed, and dated at the time it is given",
+              "Voluntary, unpaid, and given before any recording begins",
+              "Explicit, permanent, and covering every foreseeable future use",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Consent and fair representation must be Met unless your work genuinely contains no identifiable people.",
+            sourceLessonSlug: "consent-and-representation",
+          },
+          {
+            prompt: "What does informed consent require the person to have understood?",
+            options: [
+              "The questions you intend to ask before the recording starts",
+              "What it is for, where it will appear, who will see it, that it may persist",
+              "How the material will be edited before anyone else sees it",
+              "Their legal right to withdraw the material after publication",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Can I record this is not informed consent. Can I record this for a course that will be published online and may be paid for is.",
+            sourceLessonSlug: "consent-and-representation",
+          },
+          {
+            prompt: "What does specific mean, in consent?",
+            options: [
+              "That the person named exactly which passages may be used",
+              "That the consent covers a stated period rather than indefinitely",
+              "Consent to one use is not consent to all uses",
+              "That the person agreed to a specific interviewer rather than a team",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Agreeing to an interview for a written piece is not agreement to appear in a film. A new medium and a new audience is a new use, and it needs fresh consent.",
+            sourceLessonSlug: "consent-and-representation",
+          },
+          {
+            prompt: "What does the lesson say to decide in advance and in writing?",
+            options: [
+              "Which parts of the material you will publish and which you will hold",
+              "Whether the person will be paid for their participation",
+              "How long the recordings will be retained after publication",
+              "What you will do when someone changes their mind",
+            ],
+            correctIndex: 3,
+            explanation:
+              "You are not always legally obliged to honor a change of mind. Deciding in the moment favors whoever wants the material most, which is why the decision belongs before the moment arrives.",
+            sourceLessonSlug: "consent-and-representation",
+          },
+          {
+            prompt: "What does the lesson mean by log it?",
+            options: [
+              "Record who, when, what for, and in what form",
+              "Keep the recording itself in an archive that outlives the project",
+              "File the consent with the platform before publishing anything",
+              "Note the consent in the piece itself, where the reader can see it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A consent you cannot evidence is one you will eventually be asked to prove and cannot.",
+            sourceLessonSlug: "consent-and-representation",
+          },
+          {
+            prompt: "Somebody declines. What happens next?",
+            options: [
+              "You ask once more, in case the first refusal was a misunderstanding",
+              "That is the end",
+              "You use the material without naming them",
+              "You publish and note that they declined to comment",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Not a negotiation, not a softer version, and not anonymized use unless that is exactly what they agreed to. The lesson says this is broken constantly, usually by someone who has decided the story matters more than the person in it.",
+            sourceLessonSlug: "consent-and-representation",
+          },
+          {
+            prompt: "What does fair representation cover that consent does not?",
+            options: [
+              "Whether the person was compensated for the time they gave you",
+              "Whether the material was edited faithfully to the recording",
+              "Whether the person's own account is given priority over others",
+              "Whether what you made would be recognizable to them",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Consent covers whether you may use someone's words. Fairness covers whether they would say that is not what I meant, or that is not what I am like.",
+            sourceLessonSlug: "consent-and-representation",
+          },
+          {
+            prompt: "What is the difference between an unflattering portrayal and an unfair one?",
+            options: [
+              "An unfair one is built by selection, so the subject would not recognize it",
+              "An unflattering one is opinion and an unfair one is factually wrong",
+              "An unfair one was published without the subject seeing it first",
+              "An unflattering one is unavoidable and an unfair one is deliberate",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Unflattering true things are part of honest work. The one quote out of two hours, the photograph taken mid-blink, and the anecdote with its context removed are something else.",
+            sourceLessonSlug: "consent-and-representation",
+          },
+          {
+            prompt: "What does the lesson say about people in a dependent relationship, in crisis, or in custody?",
+            options: [
+              "Their consent cannot be used at all under this criterion",
+              "Their consent must be obtained in writing rather than verbally",
+              "No is expensive for them, so a yes carries less weight",
+              "A guardian or advocate must consent alongside them",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Which means you should require more of yourself, not less. Minors are the separate case: they need a guardian's consent as well as their own agreement.",
+            sourceLessonSlug: "consent-and-representation",
+          },
+          {
+            prompt: "What does the fidelity lesson say a translation is?",
+            options: [
+              "A claim",
+              "A courtesy to a reader who does not speak the language",
+              "An interpretation, which no reader should treat as exact",
+              "A secondary source, since somebody has processed the original",
+            ],
+            correctIndex: 0,
+            explanation:
+              "She said X asserts that X is what she said, and if your translation is loose you have put words in a real person's mouth in public.",
+            sourceLessonSlug: "cultural-and-linguistic-fidelity",
+          },
+          {
+            prompt: "What does a translation that carries meaning require?",
+            options: [
+              "A second machine translation, to compare the two outputs",
+              "A note giving the original alongside the rendered version",
+              "A check by someone fluent, ideally a native speaker of the variety spoken",
+              "Approval from the person quoted before it can be published",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Machine translation is a fine first pass and a poor final one, especially with idiom, register, humor, and anything said obliquely on purpose.",
+            sourceLessonSlug: "cultural-and-linguistic-fidelity",
+          },
+          {
+            prompt: "What do you do when you cannot get a translation checked?",
+            options: [
+              "Paraphrase rather than quote, so nothing is attributed as speech",
+              "Say so, plainly, in the work",
+              "Leave the passage in the original and let the reader decide",
+              "Hold the material until a checker becomes available",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Translated by the author; not independently checked is a normal, honorable sentence, and it lets the reader weigh the quote accordingly.",
+            sourceLessonSlug: "cultural-and-linguistic-fidelity",
+          },
+          {
+            prompt: "What is the common framing failure this criterion catches?",
+            options: [
+              "Hostility toward a community's practices, expressed indirectly",
+              "Using a group's own terms without explaining them to outsiders",
+              "Quoting a community's members selectively to support a thesis",
+              "Explaining a group's practice using a framework from outside it",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Applied so naturally that you never notice you chose it. A ceremony described purely as economics. A belief described purely as psychology. A survival strategy described as a quirk.",
+            sourceLessonSlug: "cultural-and-linguistic-fidelity",
+          },
+          {
+            prompt: "What does the lesson call the failure mode to watch for?",
+            options: [
+              "Work that is technically accurate and unrecognizable to the people in it",
+              "Work that is sympathetic in tone and inaccurate in its details",
+              "Work that quotes a community without ever naming its members",
+              "Work that names a framework it never actually applies",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Every framework may contain something true, and every one can produce an account that is accurate in its parts and wrong as a whole.",
+            sourceLessonSlug: "cultural-and-linguistic-fidelity",
+          },
+          {
+            prompt: "What does the lesson say to do with your framework?",
+            options: [
+              "Choose the one most widely used in the field and stay consistent",
+              "Avoid frameworks entirely, and report only what you observed",
+              "Name it, instead of hiding it",
+              "Test it against a second framework before you commit to it",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Read as an economic exchange, this looks like is honest. Silently doing it is not.",
+            sourceLessonSlug: "cultural-and-linguistic-fidelity",
+          },
+          {
+            prompt: "What should you do with a reader-from-inside who says that is not how we would put it?",
+            options: [
+              "Take it seriously",
+              "Note it as one view among several and publish as drafted",
+              "Ask them to supply the wording they would prefer instead",
+              "Weigh it against the accuracy of the underlying facts",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Get a read from someone inside before you publish, and take that response seriously. Where accounts differ, say they differ; you do not have to adjudicate everything.",
+            sourceLessonSlug: "cultural-and-linguistic-fidelity",
+          },
+          {
+            prompt: "When is a machine translation acceptable as the final version?",
+            options: [
+              "When the source language is one the tool handles well",
+              "When a fluent reader has skimmed it and raised no objection",
+              "Never, under this criterion",
+              "When nothing depends on the meaning",
+            ],
+            correctIndex: 3,
+            explanation:
+              "If it carries meaning, especially a quote from a real person, it needs a fluent human check or an explicit note that it did not get one.",
+            sourceLessonSlug: "cultural-and-linguistic-fidelity",
+          },
+          {
+            prompt: "Which of these does the lesson list among what to actually do?",
+            options: [
+              "Ask people how they describe the thing, and use their words",
+              "Avoid quoting anyone whose language you do not speak",
+              "Have every passage reviewed by an academic in the relevant field",
+              "Publish the original recording alongside your account of it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Alongside naming your framework, getting a read from inside, and saying where accounts differ rather than adjudicating between them.",
+            sourceLessonSlug: "cultural-and-linguistic-fidelity",
+          },
+          {
+            prompt: "Who does the fidelity lesson say is most likely to fail this criterion?",
+            options: [
+              "Researchers working outside their own academic field",
+              "People who are careful, polite, and well intentioned",
+              "Writers under deadline pressure from an editor",
+              "Anyone relying on a translator they did not choose",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The failure is not hostility. It is a framework chosen so naturally that the choosing never registers as a choice.",
+            sourceLessonSlug: "cultural-and-linguistic-fidelity",
           },
         ],
       },
@@ -527,6 +1590,267 @@ Then get on with the work.
             "Disclosure exists so the reader can weigh the work themselves. Your own objectivity is the thing you are least able to assess.",
         },
       ],
+    },
+
+    {
+      slug: "quiz-being-accountable",
+      title: "Section 5 knowledge check · Being accountable",
+      section: "Section 5 · Being accountable",
+      body: `A graded check on the criterion that makes every other one checkable by somebody else, and on the one that asks what you stand to gain. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What does the transparency criterion do for the rest of the rubric?",
+            options: [
+              "It makes every other criterion checkable by somebody else",
+              "It replaces the need to corroborate claims that are fully cited",
+              "It sets the format the other criteria are documented in",
+              "It is the only criterion a reviewer scores without reading the work",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the most mechanical criterion in the rubric and the one that lets a reader go and look, which is what makes sourcing, verification, and the rest verifiable at all.",
+            sourceLessonSlug: "transparent",
+          },
+          {
+            prompt: "What property does the citation format actually have to create?",
+            options: [
+              "Consistency, so every entry can be parsed the same way",
+              "That a reader can go and look",
+              "Compliance with the style guide the platform has adopted",
+              "Completeness, so no source consulted is left out",
+            ],
+            correctIndex: 1,
+            explanation:
+              "On this platform that means APA 7 in-line plus a Sources section, but the format matters far less than the property.",
+            sourceLessonSlug: "transparent",
+          },
+          {
+            prompt: "What should you cite?",
+            options: [
+              "The canonical work in the field, whether or not you read it",
+              "Both the summary and the original it draws on",
+              "Only primary material, with secondary reading left uncited",
+              "What you actually used",
+            ],
+            correctIndex: 3,
+            explanation:
+              "If you used a summary, cite the summary. Inflating a bibliography is a small dishonesty that quietly misrepresents how well established your claims are.",
+            sourceLessonSlug: "transparent",
+          },
+          {
+            prompt: "Why cite the summary you actually read rather than the original it summarizes?",
+            options: [
+              "Because the summary is easier for a reader to obtain and check",
+              "Because the original may have been revised since the summary appeared",
+              "Citing what you did not read misrepresents how well established the claim is",
+              "Because a summary carries the interpretation your claim depends on",
+            ],
+            correctIndex: 2,
+            explanation:
+              "It also sends the reader somewhere your understanding did not come from, which is a second problem on top of the first.",
+            sourceLessonSlug: "transparent",
+          },
+          {
+            prompt: "What has to accompany anything that can change?",
+            options: [
+              "The date you accessed it",
+              "A note that the value may since have been revised",
+              "An archived copy of the page as it appeared to you",
+              "A second source confirming the same value independently",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Web pages, agency schedules, statutes, prices. Without a date, a reader who finds something different cannot tell whether you were wrong or the world moved.",
+            sourceLessonSlug: "transparent",
+          },
+          {
+            prompt: "Which two reflexes does the lesson tell you to resist after publishing something wrong?",
+            options: [
+              "The lengthy apology and the detailed explanation of the error",
+              "Republishing the piece, and leaving the original version online",
+              "The quiet fix and the silent deletion",
+              "Correcting immediately, and waiting for a reader to notice first",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Both leave a reader who saw the original with no way to know it changed, and both destroy the record of what was claimed.",
+            sourceLessonSlug: "transparent",
+          },
+          {
+            prompt: "What three parts does a correction that works have?",
+            options: [
+              "An acknowledgment, an apology, and a commitment to do better",
+              "The claim, the source that disproved it, and the reader who found it",
+              "The original text, the revised text, and the reason for the change",
+              "What was wrong, what is right, and when it changed",
+            ],
+            correctIndex: 3,
+            explanation:
+              "That is all. No lengthy apology, no defensiveness, no explanation of how understandable the error was.",
+            sourceLessonSlug: "transparent",
+          },
+          {
+            prompt: "What effect does correcting consistently have on the rest of your work?",
+            options: [
+              "It makes the rest more credible, not less",
+              "It has no effect on how readers judge the unrelated work",
+              "It draws attention to errors that would otherwise pass unnoticed",
+              "It slows the pace at which you can publish new material",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A body of work with visible corrections is one where errors get found. A body of work with none is either perfect or unexamined, and readers can tell which is likelier.",
+            sourceLessonSlug: "transparent",
+          },
+          {
+            prompt: "What does the lesson say about publishing something wrong?",
+            options: [
+              "It reflects a failure of the verification step earlier in the process",
+              "It is avoidable if every claim is corroborated before publication",
+              "You will do it, and everyone who publishes enough does",
+              "It should trigger a review of every claim in the same piece",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Which is why corrections are described as a practice rather than an embarrassment.",
+            sourceLessonSlug: "transparent",
+          },
+          {
+            prompt: "State the disclosure criterion in a sentence.",
+            options: [
+              "Disclose any payment received in connection with the work",
+              "Disclose any source that asked to remain unnamed",
+              "Disclose the methods used to gather every central claim",
+              "Tell the reader anything that could reasonably be thought to bias the work",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Funding, employment, a relationship with someone in the piece, a financial stake in an outcome, a product you own, a gift, a free trip, a review unit you kept.",
+            sourceLessonSlug: "disclosure-of-interests",
+          },
+          {
+            prompt: "What is the mistake almost everyone makes about disclosure?",
+            options: [
+              "Treating it as a legal requirement rather than an ethical one",
+              "Asking whether they were actually influenced",
+              "Assuming a disclosure has to name a monetary amount",
+              "Disclosing so much that the reader stops reading the disclosures",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It did not affect my judgment may be entirely true and is not the question.",
+            sourceLessonSlug: "disclosure-of-interests",
+          },
+          {
+            prompt: "What is the actual test?",
+            options: [
+              "Whether a reasonable reader would want to know",
+              "Whether the interest is material enough to change a conclusion",
+              "Whether disclosing it would embarrass anyone named in the piece",
+              "Whether an editor would require it under house policy",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Disclosure exists so the reader can weigh the work themselves, rather than trusting your self-assessment of your own objectivity, which is the one assessment you are least able to make.",
+            sourceLessonSlug: "disclosure-of-interests",
+          },
+          {
+            prompt: "In the platform's own worked example, what is the conflict?",
+            options: [
+              "A course recommends a tool owned by the same person who owns the platform",
+              "A course is funded by the manufacturer of the equipment it teaches",
+              "An instructor holds shares in a company named in the lessons",
+              "A reviewer scored work submitted by someone they had worked with",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The Imaging and Drone Services course teaches WanderLearn as its primary tour-publishing tool, and WanderLearn is owned by the same person who owns this platform.",
+            sourceLessonSlug: "disclosure-of-interests",
+          },
+          {
+            prompt: "Where is that disclosure required to appear?",
+            options: [
+              "In the platform's terms of service, which every learner accepts",
+              "In a footer note carried on every page of the course",
+              "In the lesson, at the point of recommendation",
+              "In the course description, before a learner enrolls",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Where a learner deciding what tool to buy will actually see it. The comparison section is also written to be genuinely useful to someone who picks a competitor.",
+            sourceLessonSlug: "disclosure-of-interests",
+          },
+          {
+            prompt: "Why does the course use its own conflict as the teaching example?",
+            options: [
+              "Because no other example was available at the time of writing",
+              "Because platform policy requires the conflict to be repeated in each course",
+              "Because the conflict is the clearest one in the industry",
+              "Because it is easy to teach disclosure with somebody else's conflict",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The lesson says the choice is deliberate for exactly that reason.",
+            sourceLessonSlug: "disclosure-of-interests",
+          },
+          {
+            prompt: "How should a disclosure be written?",
+            options: [
+              "Plainly and early, in the same place as the claim it affects",
+              "In full detail, so a reader can assess the size of the interest",
+              "At the end, so it does not distract from the work itself",
+              "In the same register as the rest of the piece, so it reads naturally",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One or two sentences. No performance of agonized soul-searching, which reads as a bid for credit rather than information. Then get on with the work.",
+            sourceLessonSlug: "disclosure-of-interests",
+          },
+          {
+            prompt: "Which of these is an example of the plain disclosure the lesson wants?",
+            options: [
+              "The author has considered whether this relationship affected the work",
+              "The platform recommending this tool also owns it",
+              "Readers should be aware that commercial relationships exist in this field",
+              "Some of the products discussed were provided by their manufacturers",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Alongside this work was funded by X and the author previously worked for Y. Specific, short, and placed where the claim it affects is made.",
+            sourceLessonSlug: "disclosure-of-interests",
+          },
+          {
+            prompt: "Which rubric pillar does disclosure of interests belong to?",
+            options: [
+              "Accountable, alongside transparency",
+              "Minimize harm, since an undisclosed interest can mislead",
+              "Act independently",
+              "Seek truth, since an interest distorts what you look for",
+            ],
+            correctIndex: 2,
+            explanation:
+              "It is the only criterion under act independently, and it must be Met. Transparent is the criterion under accountable.",
+            sourceLessonSlug: "disclosure-of-interests",
+          },
+          {
+            prompt: "What does the lesson call the bibliography?",
+            options: [
+              "The deliverable",
+              "A courtesy to readers who want to go further",
+              "The last thing to assemble, once the writing is finished",
+              "A record for reviewers rather than for readers",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Every substantive claim carries an in-line citation, and the work ends with a full list of sources. That list is not an appendix to the work; it is part of what the work is.",
+            sourceLessonSlug: "transparent",
+          },
+        ],
+      },
     },
 
     // ── Section 6 ────────────────────────────────────────────────────────────────────────────────
@@ -670,6 +1994,546 @@ Everything else in this course is technique. That one is character, and it is th
 - International Federation of Library Associations and Institutions. (2017). *How to spot fake news*. https://www.ifla.org/publications/node/11174
 
 Note on this list: it is deliberately short and every entry was consulted directly. Per lesson 11, a bibliography states what the work actually used rather than what it might have.`,
+    },
+
+    // ── Final ────────────────────────────────────────────────────────────────────────────────────
+    // The last quiz in the course, so it is the final under the Tier-0 spec: pools 40, serves 10,
+    // passes at 80. It is also the Section 6 check, so its bank covers that section's own three
+    // lessons rather than sampling the course at large.
+    {
+      slug: "quiz-craft-ai-and-your-own-work",
+      title: "16 · Final assessment · Craft, AI, and your own work",
+      section: "Section 6 · Craft, AI, and your own work",
+      body: `The course's final check, and the Section 6 check at the same time: choosing a form on purpose, using an AI assistant without laundering its mistakes, and what the capstone actually earns you.
+
+Ten questions are drawn from a bank of forty, so a retake is a different exam. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 10,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is the bar for craft for the medium?",
+            options: [
+              "Developing",
+              "Met, like every criterion under seek truth and minimize harm",
+              "Met, unless the work is in a medium the rubric does not cover",
+              "Not applicable for written work, and Met for everything else",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Which tells you where it sits in the ordering: competence matters, but not more than truth.",
+            sourceLessonSlug: "craft-and-choosing-the-medium",
+          },
+          {
+            prompt: "What question does the lesson say sits upstream of craft?",
+            options: [
+              "How much time the finished form will take to produce",
+              "Which form this should be at all",
+              "Who the audience for the finished work is going to be",
+              "Whether the work needs to be published at all",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Most people never choose. They make the thing they always make.",
+            sourceLessonSlug: "craft-and-choosing-the-medium",
+          },
+          {
+            prompt: "What does writing carry better than any other form?",
+            options: [
+              "The specific and the physical: a condition, a place, a face",
+              "Process and time, and things a person does rather than describes",
+              "Voice, and what a transcript loses",
+              "Argument and evidence",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Complexity, qualification, citation, a claim that needs three conditions attached. Choose prose when the thinking is the point.",
+            sourceLessonSlug: "craft-and-choosing-the-medium",
+          },
+          {
+            prompt: "What does audio carry?",
+            options: [
+              "Voice, and what a transcript loses",
+              "Argument and evidence, in a form easier to follow than prose",
+              "Proof, since a recording cannot be edited without trace",
+              "Process and time, as something unfolds across a sequence",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Hesitation, warmth, the pause before a hard answer. Choose it when how something was said matters as much as what was said.",
+            sourceLessonSlug: "craft-and-choosing-the-medium",
+          },
+          {
+            prompt: "What does photography carry?",
+            options: [
+              "Process and time, since a sequence shows change",
+              "The specific and the physical",
+              "Proof, since an image records what was actually there",
+              "Argument, since an image can be read many ways at once",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A condition, a place, a face, a scale you cannot convey in a sentence.",
+            sourceLessonSlug: "craft-and-choosing-the-medium",
+          },
+          {
+            prompt: "What does film carry?",
+            options: [
+              "Voice, more completely than audio alone can manage",
+              "Evidence, since a camera records more than a note-taker can",
+              "The specific and the physical, in motion rather than still",
+              "Process and time",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Something unfolding, something changing, something a person does rather than describes.",
+            sourceLessonSlug: "craft-and-choosing-the-medium",
+          },
+          {
+            prompt: "What does the lesson say about records and archives?",
+            options: [
+              "They persuade nobody on their own and settle arguments permanently",
+              "They persuade a general reader more reliably than any other form",
+              "They belong in an appendix rather than in the work itself",
+              "They are the only form that satisfies the sourcing criterion",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They carry proof. Both halves of that sentence matter: they will not move a reader by themselves, and they end the argument for good.",
+            sourceLessonSlug: "craft-and-choosing-the-medium",
+          },
+          {
+            prompt: "What is the one question to ask before choosing a richer medium?",
+            options: [
+              "Whether you have the skills to execute it competently",
+              "Whether the audience for it is larger than the audience for prose",
+              "What does this story do that a written version could not",
+              "Whether the material was gathered in a form that suits it",
+            ],
+            correctIndex: 2,
+            explanation:
+              "If you cannot answer, write it. Prose is cheaper, faster, easier to correct and easier to cite, and choosing a richer medium without a reason usually costs you rigor without buying anything.",
+            sourceLessonSlug: "craft-and-choosing-the-medium",
+          },
+          {
+            prompt: "What kind of failure is choosing the wrong medium?",
+            options: [
+              "A craft failure, since the result is judged on its execution",
+              "A planning failure that shows up as a craft failure",
+              "A sourcing failure, since the evidence no longer fits the form",
+              "Not a failure at all, since any form can carry any material",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Which is why it is worth deciding on purpose rather than defaulting to the thing you always make.",
+            sourceLessonSlug: "craft-and-choosing-the-medium",
+          },
+          {
+            prompt: "Why does the rubric let craft sit at Developing when sourcing must be Met?",
+            options: [
+              "Because craft improves with practice and sourcing habits do not",
+              "Because a reviewer scores craft after the harder criteria",
+              "Because craft is a matter of taste and sourcing is a matter of fact",
+              "Craft failures are visible to the reader and sourcing failures are not",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The invisible one carries the higher bar. It is the same argument the instrument lesson made, arriving from the craft side.",
+            sourceLessonSlug: "craft-and-choosing-the-medium",
+          },
+          {
+            prompt: "What does the AI lesson say the real danger is?",
+            options: [
+              "Laundering",
+              "Fabrication, since the tools invent facts that sound plausible",
+              "Dependence, since your own judgment weakens with use",
+              "Disclosure, since readers object to AI involvement in research",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Not that it invents things: it does, and you will learn to expect that. The danger is a claim entering your work with no source and getting written in your confident voice.",
+            sourceLessonSlug: "researching-with-ai",
+          },
+          {
+            prompt: "What does laundering mean here?",
+            options: [
+              "Rewriting AI output so its origin is no longer detectable in style",
+              "Passing a claim through several tools until one confirms it",
+              "A claim washed clean of its origin, so nobody can tell it was unchecked",
+              "Attributing an AI-supplied claim to a source that did not make it",
+            ],
+            correctIndex: 2,
+            explanation:
+              "By the time you review the draft you cannot remember whether you checked it or the machine simply said it. That is a sourcing failure with no fingerprints, and it will pass a casual read.",
+            sourceLessonSlug: "researching-with-ai",
+          },
+          {
+            prompt: "Which of these is on the lesson's list of what AI tools are genuinely good at?",
+            options: [
+              "Supplying facts that are too obscure to find by searching",
+              "Criticizing your draft's reasoning",
+              "Deciding which of two conflicting sources is more reliable",
+              "Confirming whether a citation you already have is accurate",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Along with orienting you in an unfamiliar field, generating candidate questions, suggesting what kind of record might exist, and summarizing something you already have.",
+            sourceLessonSlug: "researching-with-ai",
+          },
+          {
+            prompt: "What do all the good uses have in common?",
+            options: [
+              "None of them is tell me a fact I will publish",
+              "All of them happen before the research proper begins",
+              "All of them produce output you can cite directly",
+              "None of them requires you to describe your project in detail",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Orienting, generating, suggesting, summarizing, criticizing. Every one of them operates on material you already have or on the shape of the work rather than on its content.",
+            sourceLessonSlug: "researching-with-ai",
+          },
+          {
+            prompt: "State the rule for AI-supplied claims.",
+            options: [
+              "Nothing enters your work as a claim until you have verified it",
+              "Nothing enters your work unless the tool supplied a citation with it",
+              "Nothing enters your work without a note saying where it came from",
+              "Nothing enters your work that you could not have found yourself",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Verified against a source you can cite. Not it sounded right, and not it gave a very specific citation, which is exactly what a fabricated citation looks like.",
+            sourceLessonSlug: "researching-with-ai",
+          },
+          {
+            prompt: "What does verified mean, for an AI-supplied citation?",
+            options: [
+              "The tool repeated the same citation when asked a second time",
+              "You found the source, it exists, and it says what you were told",
+              "The journal and the author both turn out to be real",
+              "A search returns results consistent with the claim",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Fabricated references are frequently plausible: real journal, real author, real-sounding title, wrong or nonexistent article. A citation you did not open is not a citation.",
+            sourceLessonSlug: "researching-with-ai",
+          },
+          {
+            prompt: "Where should AI output live?",
+            options: [
+              "In a comment alongside the draft text it relates to",
+              "In the draft, marked with a formatting style you can search for",
+              "In the bibliography, flagged as unverified until it is checked",
+              "In a separate place from your draft",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The laundering happens at the moment of copy and paste, when unverified text acquires the authority of your own prose. If it lives in a different file until it is checked, that moment does not arrive by accident.",
+            sourceLessonSlug: "researching-with-ai",
+          },
+          {
+            prompt: "Why is a specific, plausible citation from an AI not reassuring?",
+            options: [
+              "Because specificity is easier to generate than accuracy",
+              "Because the tool cannot access the sources it names",
+              "Fabricated citations are usually plausible by construction",
+              "Because a specific citation is harder for a reader to check",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A citation you have not opened tells you nothing, whatever it looks like.",
+            sourceLessonSlug: "researching-with-ai",
+          },
+          {
+            prompt: "When does AI use have to be disclosed?",
+            options: [
+              "If it did substantial work in your research or drafting",
+              "Whenever any part of the work passed through such a tool",
+              "Only when the tool supplied a claim that survived into the text",
+              "Only where the publisher's own policy requires it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It falls under the same test as any other interest: a reasonable reader would want to know.",
+            sourceLessonSlug: "researching-with-ai",
+          },
+          {
+            prompt: "What kind of failure is laundering, in rubric terms?",
+            options: [
+              "A craft failure, since the prose disguises its own origin",
+              "A transparency failure, since the source list is incomplete",
+              "A disclosure failure, since the tool's involvement is hidden",
+              "A sourcing failure with no fingerprints",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The lesson names it that way precisely because the absence of evidence is what makes it dangerous: nothing in the finished text shows that the claim was never checked.",
+            sourceLessonSlug: "researching-with-ai",
+          },
+          {
+            prompt: "What kind of question does the capstone ask you to pick?",
+            options: [
+              "A question nobody in your field has attempted before",
+              "A real question you can answer with what you can reach",
+              "A question that will take a full season of work to settle",
+              "A question drawn from the examples used earlier in the course",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A local decision, a family account you have never checked, a claim in your field everyone repeats, a place that changed. Small is good. Answerable is essential.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "How many criteria must the capstone satisfy?",
+            options: [
+              "All eight",
+              "The five that carry a Met bar, with the rest optional",
+              "As many as the medium you chose in lesson 13 makes applicable",
+              "Six, since two may always be scored not applicable",
+            ],
+            correctIndex: 0,
+            explanation:
+              "All eight, in the medium you chose on purpose. Two of them may be genuinely not applicable, and you have to be able to say why.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "What does the capstone ask you to do with the rubric before anyone else sees the work?",
+            options: [
+              "Send it to a reviewer for an informal read against the criteria",
+              "Check that each criterion has been addressed somewhere in the text",
+              "Score yourself against it, honestly",
+              "Rewrite anything that would not clearly reach the bar",
+            ],
+            correctIndex: 2,
+            explanation:
+              "And where you scored yourself below the bar, write one line about why. Self-attestation is step one of the endorsement path.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "What does submitting the capstone actually do?",
+            options: [
+              "Places your project in review",
+              "Awards the Trusted Documentation credential on completion",
+              "Sends the work to two reviewers who have already been assigned",
+              "Publishes the work to the platform for anyone to read",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That is a status, not a result. It means the work is complete enough to be looked at by other people.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "Does finishing this course award you a credential?",
+            options: [
+              "Yes, once the capstone has been submitted and self-attested",
+              "Yes, provisionally, pending review within a set period",
+              "Only for learners who scored above the bar on every criterion",
+              "No",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The Trusted Documentation credential requires your own attestation plus endorsement from at least two reviewers who read the work and score it against the same eight criteria.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "How many reviewers must endorse the work?",
+            options: [
+              "One, provided they score every criterion",
+              "At least two, scoring independently",
+              "Three, so that a disagreement can be resolved by majority",
+              "As many as the platform assigns, which varies by medium",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Two or more reviewers score it independently, and every must-be-Met criterion has to be Met or genuinely not applicable.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "What does the lesson say about being scored below the bar?",
+            options: [
+              "That outcome is normal, and the notes are worth more than a pass",
+              "It means the work should be withdrawn rather than revised",
+              "It is rare, since the course prepares you for each criterion",
+              "It bars a resubmission until the next review cycle opens",
+            ],
+            correctIndex: 0,
+            explanation:
+              "If it falls short you get the scores and the notes, and you may revise and resubmit.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "Why is the course explicit that finishing does not earn the credential?",
+            options: [
+              "Because the reviewers are volunteers whose availability varies",
+              "Because a credential requires a fee the course does not include",
+              "Otherwise it would assert a claim nobody verified",
+              "Because the platform has no authority to issue credentials itself",
+            ],
+            correctIndex: 2,
+            explanation:
+              "In the exact place it spent fourteen lessons telling you not to. The reason should be familiar by the time you reach it.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "What is step one of the endorsement path?",
+            options: [
+              "You submit, and self-attest against the rubric",
+              "Two reviewers are assigned and given access to the work",
+              "The platform checks the work against the must-be-Met criteria",
+              "You choose the medium the work will be submitted in",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Then the work enters review and becomes visible to reviewers, two or more score it independently, every must-be-Met criterion has to be Met or genuinely not applicable, and a shortfall returns scores and notes for revision.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "What does the capstone ask for under verified and flagged?",
+            options: [
+              "Quotes, numbers and dates re-checked, and uncertainties listed separately",
+              "A note confirming that every claim was checked at least twice",
+              "A statement of which claims you were unable to verify at all",
+              "A list of the sources that were consulted but not ultimately used",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Every uncertainty stated in the text, and listed separately with what would settle it. The list is the part that makes the flag real.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "What does the capstone ask for under transparent?",
+            options: [
+              "A note on which sources were primary and which secondary",
+              "A statement of the method used to gather each central claim",
+              "In-line citations and a full source list, with access dates",
+              "A record of how long the research took from start to finish",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Access dates on anything that can change, which is the rule from the transparency lesson applied to your own work.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "What is the one habit the lesson says to keep if you keep nothing else?",
+            options: [
+              "Trace every claim that matters back to primary material",
+              "Ask what evidence would prove you wrong before you begin",
+              "Correct publicly, and record what changed and when",
+              "Write down what you do not know, where somebody else can see it",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Everything else in the course is technique. That one is character, and it is the only part that keeps working when nobody is checking.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "Which medium should the capstone be produced in?",
+            options: [
+              "Whichever you chose on purpose in the craft lesson",
+              "Writing, since it is easiest to cite and to correct",
+              "Whichever the reviewers on the platform score most often",
+              "Whichever best suits the material you happened to gather",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Craft for the medium asks that the work be competently made and made in a form you chose deliberately rather than by default.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "What does the capstone say about consent, for anyone identifiable?",
+            options: [
+              "It must be obtained, logged, and honored",
+              "It must be obtained in writing and attached to the submission",
+              "It may be waived where the person is a public figure",
+              "It must be obtained again once the work is complete",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Or genuinely not applicable, and you can say why. The same applies to cultural and linguistic fidelity, and to nothing else on the rubric.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "What does the capstone's source list demonstrate about the course's own practice?",
+            options: [
+              "That a short list is preferable to a long one in any bibliography",
+              "That every entry was consulted directly, as lesson 11 requires",
+              "That the four cited bodies endorse the rubric the course teaches",
+              "That the rubric was assembled from those four documents alone",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The list is deliberately short, and the note under it says so: a bibliography states what the work actually used rather than what it might have.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "What does the capstone want stated at the top of the work?",
+            options: [
+              "The medium you chose and the reason you chose it",
+              "The disclosure of any interest a reader would want to know about",
+              "The sources you expect to rely on most heavily",
+              "The focused question, narrow enough that you could be proved wrong",
+            ],
+            correctIndex: 3,
+            explanation:
+              "It is the first criterion for the same reason it was the first lesson of the practical work: everything downstream inherits its shape.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "Where does the lesson say to go for depth on a particular medium?",
+            options: [
+              "The platform's courses on documentary, oral history, news, and civic work",
+              "The professional bodies whose codes the rubric was assembled from",
+              "The reviewers, who advise on medium as part of their notes",
+              "Nowhere; this course is the complete treatment of each form",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The craft lesson is the hub; those courses are the depth.",
+            sourceLessonSlug: "craft-and-choosing-the-medium",
+          },
+          {
+            prompt: "Why does the lesson say prose is the default worth beating?",
+            options: [
+              "Because a written piece reaches a larger audience than any other form",
+              "It is cheaper, faster, easier to correct and easier to cite",
+              "Because the rubric was written with written work in mind",
+              "Because most researchers are better at writing than at anything else",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Choosing a richer medium without a reason usually costs you rigor without buying anything, which is why the question is what a written version could not do.",
+            sourceLessonSlug: "craft-and-choosing-the-medium",
+          },
+          {
+            prompt: "What happens if the capstone falls short at review?",
+            options: [
+              "You get the scores and the notes, and you may revise and resubmit",
+              "The submission is closed and a new project must be started",
+              "A third reviewer is brought in to settle the outcome",
+              "The work is returned without scores, to avoid discouraging revision",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That outcome is normal, and the lesson says the notes you get back are worth more than a pass.",
+            sourceLessonSlug: "capstone-and-what-happens-next",
+          },
+          {
+            prompt: "What does the AI lesson say about the moment of copy and paste?",
+            options: [
+              "It is where a citation most often gets separated from its claim",
+              "It is where the tool's own phrasing survives into your prose",
+              "It is where unverified text acquires the authority of your own prose",
+              "It is where a draft stops being yours and becomes a collaboration",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Which is why keeping the output in a separate file until it is checked means the moment never arrives by accident.",
+            sourceLessonSlug: "researching-with-ai",
+          },
+        ],
+      },
     },
   ],
 };
