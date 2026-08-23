@@ -435,9 +435,27 @@ function tidy(md: string): string {
 // generator emits (ECS, NASM, speedway); the title is passed where one is available.
 const REGULAR_QUIZ_MAX = 10;
 const isExamTitle = (title?: string) => /final|exam|comprehensive|midterm/i.test(title ?? "");
+
+/**
+ * The house rule is that a regular quiz shows a learner no more than ten questions. This used to be
+ * implemented by SLICING the bank to ten and throwing the rest away at generation time.
+ *
+ * That was destroying content for no benefit, and recovering the CNC quizzes made it obvious: the
+ * chapter banks average about 33 questions, so two thirds of them were being deleted, and the
+ * lessons those questions covered then showed up in `pnpm audit:course` as never assessed.
+ *
+ * The cap is ALREADY enforced where it actually matters. `MAX_QUESTIONS_PER_ATTEMPT` in
+ * src/lib/quiz.ts is applied at the SERVING seam, for every quiz in the app, with no per-course
+ * opt-in: a bank of 33 serves a random 10 and the next attempt draws a fresh 10. So keeping the
+ * whole bank changes nothing a learner sees in one sitting, and improves everything else, because a
+ * retake stops being the same exam and more of the chapter is actually covered.
+ *
+ * The function now only sets `questionsPerAttempt` where the author did not, which is the honest
+ * way to say "show ten of these".
+ */
 function capQuiz(quiz: QuizContent, title?: string): QuizContent {
   if (isExamTitle(title) || quiz.questions.length <= REGULAR_QUIZ_MAX) return quiz;
-  return { ...quiz, questions: quiz.questions.slice(0, REGULAR_QUIZ_MAX) };
+  return { ...quiz, questionsPerAttempt: quiz.questionsPerAttempt ?? REGULAR_QUIZ_MAX };
 }
 
 // ── source lessons ────────────────────────────────────────────────────────────
@@ -488,6 +506,58 @@ function convertCentosQuiz(c: CentosQuiz): QuizContent {
       };
     }),
   };
+}
+
+/**
+ * NASM CNC chapter quizzes. The source gives the correct answer as TEXT plus a `verdict` block from
+ * a prior review pass, not as an index, so the index is recovered by matching the text against the
+ * options and cross-checked against `verdict.index` when one is present.
+ *
+ * WHAT IS SKIPPED, and why each one would be a defect rather than a question:
+ *  - `isFigureDependent` / `needsImage`: the question refers to a diagram this course does not ship,
+ *    so a learner would be asked about something they cannot see.
+ *  - `verdict.agree === false`: the review pass disagreed with the stated answer. Importing a
+ *    question whose own reviewer thinks it is wrong would be worse than having no question.
+ *  - an answer text that matches no option, or matches more than one: the mapping is ambiguous and a
+ *    wrong `correctIndex` marks correct answers wrong, which is the most damaging bug a quiz has.
+ */
+interface CncSourceQuestion {
+  qid?: string;
+  question?: string;
+  options?: string[];
+  correctAnswerText?: string;
+  explanation?: string;
+  citation?: string;
+  needsImage?: boolean;
+  verdict?: { agree?: boolean; confidence?: string; index?: number; isFigureDependent?: boolean };
+}
+
+function convertCncQuiz(src: CncSourceQuestion[]): QuizContent {
+  const questions: QuizContent["questions"] = [];
+  for (const q of src) {
+    const options = (q.options ?? []).map((o) => deDash(String(o)));
+    const prompt = deDash(String(q.question ?? "")).trim();
+    if (!prompt || options.length < 2) continue;
+    if (q.needsImage || q.verdict?.isFigureDependent) continue;
+    if (q.verdict?.agree === false) continue;
+
+    const want = String(q.correctAnswerText ?? "").trim();
+    const matches = options
+      .map((o, i) => (o.trim() === deDash(want).trim() ? i : -1))
+      .filter((i) => i >= 0);
+    let idx = matches.length === 1 ? matches[0] : -1;
+    // Fall back to the reviewer's index only when it agrees with an existing option slot.
+    if (idx < 0 && typeof q.verdict?.index === "number" && options[q.verdict.index] != null) {
+      idx = q.verdict.index;
+    }
+    if (idx < 0) continue;
+
+    const explanation = q.citation
+      ? `${deDash(q.explanation ?? "")}\n\nReference: ${q.citation}`.trim()
+      : q.explanation && deDash(q.explanation);
+    questions.push({ prompt, options, correctIndex: idx, explanation });
+  }
+  return { passingScore: 80, shuffleOptions: true, questions };
 }
 
 // ECS quizzes use a witus-shaped schema already: {question, options:string[],
@@ -817,7 +887,11 @@ function buildNasmCnc(): AuthoredCourse {
   const lessons: AuthoredLesson[] = [];
   for (const f of files) {
     const raw = JSON.parse(readFileSync(join(dir, f), "utf-8")) as
-      | { module?: { title?: string; order?: number }; lessons?: { n: number; title: string; lessonMarkdown: string }[] }
+      | {
+          module?: { title?: string; order?: number };
+          lessons?: { n: number; title: string; lessonMarkdown: string }[];
+          quiz?: { questions?: CncSourceQuestion[] };
+        }
       | { n: number; title: string; lessonMarkdown: string }[];
     const order = parseInt(f.replace(/\D+/g, ""), 10);
     const section = (Array.isArray(raw) ? undefined : raw.module?.title) ?? `Chapter ${order}`;
@@ -831,6 +905,21 @@ function buildNasmCnc(): AuthoredCourse {
         title: l.title,
         section,
         body,
+      });
+    }
+
+    // The chapter's quiz. This was being DROPPED: the CNC course shipped 167 teaching lessons and
+    // zero questions, which `pnpm audit:course` counted as 167 lessons nobody ever assesses, the
+    // single largest content gap in the catalog. The questions were in the source the whole time.
+    const sourceQuiz = Array.isArray(raw) ? undefined : raw.quiz?.questions;
+    const converted = convertCncQuiz(sourceQuiz ?? []);
+    if (converted.questions.length) {
+      const title = `${section}, Knowledge Check`;
+      lessons.push({
+        slug: `ch${order}-quiz`,
+        title,
+        section,
+        quiz: withSources(capQuiz(converted, title), lessons, section),
       });
     }
   }
