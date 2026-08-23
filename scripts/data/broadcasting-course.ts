@@ -133,6 +133,491 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
     },
 
     // ─────────────────────────────────────────────────────────────────────────
+    // SECTION 1 QUIZ
+    // ─────────────────────────────────────────────────────────────────────────
+    {
+      slug: "quiz-landscape-and-roles",
+      title: "Section 1 quiz · The landscape & roles",
+      section: "Section 1 · The landscape & roles",
+      body: `A graded check on who does what on a broadcast crew, what the labor data actually says about where the jobs are, and why the utility technician's rope work is a hireable skill rather than a chore. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Is broadcasting one job?",
+            options: [
+              "No, it is a crew",
+              "Yes, though the title changes depending on the size of the market",
+              "Yes for live sports, though news divides the work between two people",
+              "Only in small markets, where one person covers every technical role",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A single sports telecast is made by on-air talent, a producer and director, camera and AV operators, a broadcast engineer, editors, and social and stream operators, with a utility technician underneath all of them.",
+            sourceLessonSlug: "landscape-and-roles",
+          },
+          {
+            prompt: "Which role does the lesson call the entry role most people overlook?",
+            options: [
+              "The broadcast engineer, who keeps the signal alive through the show",
+              "The graphics operator, who builds every score and lower-third on screen",
+              "The utility technician",
+              "The editor, who cuts the highlights that air after the game ends",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Almost nobody starts on-air. Utility is the general-support role underneath every other department, and it is the classic way in.",
+            sourceLessonSlug: "landscape-and-roles",
+          },
+          {
+            prompt: "Why does knowing the roles matter to someone breaking in?",
+            options: [
+              "Because a crew expects a newcomer to name every position on sight",
+              "It tells you which door to knock on first",
+              "Because pay scales are set separately for each named position",
+              "Because the union you join depends on which role you first work in",
+            ],
+            correctIndex: 1,
+            explanation:
+              "You start by being useful to the crew, and useful has a shape you can learn. Most first doors are technical support, not the microphone.",
+            sourceLessonSlug: "landscape-and-roles",
+          },
+          {
+            prompt: "Under which Bureau of Labor Statistics category do announcers, hosts, and commentators fall?",
+            options: [
+              "Producers and directors, since they shape the show as it airs",
+              "Broadcast, sound, and video technicians, since they operate a microphone",
+              "Film and video editors and camera operators",
+              "Announcers and DJs",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Play-by-play and color commentators are classified under announcers and DJs, which is also the category whose outlook the next lesson calls the most competitive.",
+            sourceLessonSlug: "landscape-and-roles",
+          },
+          {
+            prompt: "What do the producer and director decide?",
+            options: [
+              "Which equipment the truck carries to a given event",
+              "What the audience sees and hears, and when",
+              "How the signal is compressed before it leaves the building",
+              "Which members of the crew are called for the next event",
+            ],
+            correctIndex: 1,
+            explanation:
+              "They decide the content and the timing of the show, which is what the producers and directors classification covers.",
+            sourceLessonSlug: "landscape-and-roles",
+          },
+          {
+            prompt: "What does a broadcast engineer do?",
+            options: [
+              "Designs the graphics package the show uses through a season",
+              "Negotiates the rights that let a network carry a given event",
+              "Sets up, operates, and maintains the equipment that captures and transmits",
+              "Directs the camera operators from a position on the sideline",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The engineer keeps the signal alive: setting up, operating, and maintaining the gear that captures and transmits it.",
+            sourceLessonSlug: "landscape-and-roles",
+          },
+          {
+            prompt: "Which organization does the lesson name as the broadcast engineer's professional home?",
+            options: [
+              "The Society of Broadcast Engineers",
+              "The National Association of Broadcasters, the industry's trade association",
+              "The Federal Communications Commission, which licenses the stations",
+              "The Bureau of Labor Statistics, which classifies the occupation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The SBE is the engineer's professional home. The NAB is the industry association, the FCC is the regulator, and the BLS is the statistical agency, all of which appear elsewhere in this course.",
+            sourceLessonSlug: "landscape-and-roles",
+          },
+          {
+            prompt: "What does the editor do?",
+            options: [
+              "Reviews the script before the anchor reads it on air",
+              "Assembles footage into highlights, packages, and replays",
+              "Approves which stories make the show's rundown that night",
+              "Checks the broadcast against the station's regulatory obligations",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Editors assemble footage into highlights, packages, and replays, and they are classified alongside camera operators.",
+            sourceLessonSlug: "landscape-and-roles",
+          },
+          {
+            prompt: "What does social and stream operations do?",
+            options: [
+              "Writes the posts a station publishes about its own programming",
+              "Buys the advertising that runs alongside the online feed",
+              "Manages the relationships with the platforms that carry the show",
+              "Encodes, captions, and distributes the show online",
+            ],
+            correctIndex: 3,
+            explanation:
+              "It is a fast-growing slice of the crew, and the reason is straightforward: audiences are moving to streaming.",
+            sourceLessonSlug: "landscape-and-roles",
+          },
+          {
+            prompt: "What does the utility technician actually do?",
+            options: [
+              "Pulls and dresses cable, rigs gear, and helps every department",
+              "Operates a second camera when the main operator needs relief",
+              "Keeps the inventory of equipment loaded on and off the truck",
+              "Monitors the outgoing signal for faults during the broadcast",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Pulling and dressing cable, rigging and de-rigging gear, taping runs, and helping every other department. It is where you prove reliability.",
+            sourceLessonSlug: "landscape-and-roles",
+          },
+          {
+            prompt: "In the sideline example, what does the utility tech do after running the camera cable?",
+            options: [
+              "Reports the cable run to the engineer so it can be logged",
+              "Returns to the truck to await the next instruction from the director",
+              "Secures the slack so nobody trips, and stands by to move with the shot",
+              "Tests the signal at the camera end before handing over the connector",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Do that flawlessly for a season and the crew learns your name, which is how the next job finds you.",
+            sourceLessonSlug: "landscape-and-roles",
+          },
+          {
+            prompt: "What does the lesson ask you to circle on your list of the seven roles?",
+            options: [
+              "The role with the highest median pay in the labor data",
+              "The role you would most like to be doing in ten years",
+              "The role your existing skills already come closest to matching",
+              "The utility-technician line, as your likely first job",
+            ],
+            correctIndex: 3,
+            explanation:
+              "List the seven roles, write one thing beside each that you could learn in the next month, and circle utility. That is where you are most likely to start.",
+            sourceLessonSlug: "landscape-and-roles",
+          },
+          {
+            prompt: "What does the lesson mean by saying almost nobody starts on-air?",
+            options: [
+              "You start by being useful to the crew",
+              "That on-air roles require a degree the technical roles do not",
+              "That stations promote from within and never hire talent externally",
+              "That on-air work is unpaid until a performer builds an audience",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Useful has a shape you can learn, and most first doors into the industry are technical support rather than the microphone.",
+            sourceLessonSlug: "landscape-and-roles",
+          },
+          {
+            prompt: "Which publication carries median pay and 10-year job-growth projections for broadcasting roles?",
+            options: [
+              "The Occupational Outlook Handbook",
+              "The National Association of Broadcasters career guide",
+              "The Society of Broadcast Engineers certification handbook",
+              "The Federal Communications Commission's annual industry report",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The OOH is published by the U.S. Bureau of Labor Statistics and is the most authoritative free labor-market source in the country.",
+            sourceLessonSlug: "pay-and-outlook",
+          },
+          {
+            prompt: "How does the lesson tell you to read the Occupational Outlook Handbook?",
+            options: [
+              "As a guarantee of what a given role will pay in your own area",
+              "The way an investor reads a prospectus",
+              "As a ranking, taking whichever role sits at the top of it",
+              "As a historical record rather than as a guide to the future",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Before you invest years, look at the data. It tells you which roles are growing, which are flat, and roughly what to expect in pay.",
+            sourceLessonSlug: "pay-and-outlook",
+          },
+          {
+            prompt: "What is the projected employment growth for broadcast, sound, and video technicians?",
+            options: [
+              "Declining, as automation removes positions from the control room",
+              "Little or no change over the projection period",
+              "Faster than average",
+              "Too varied between markets for the handbook to project at all",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Faster than average through 2033, largely because content and streaming keep expanding.",
+            sourceLessonSlug: "pay-and-outlook",
+          },
+          {
+            prompt: "Why does the handbook expect technician employment to grow?",
+            options: [
+              "Because the existing workforce is approaching retirement age",
+              "Because stations are bringing outsourced technical work back in house",
+              "Because regulation now requires more technical staff per broadcast",
+              "Content and streaming keep expanding",
+            ],
+            correctIndex: 3,
+            explanation:
+              "More content going to more places needs more people to capture, move, and distribute the signal.",
+            sourceLessonSlug: "pay-and-outlook",
+          },
+          {
+            prompt: "What is the projected growth for producers and directors?",
+            options: [
+              "About as fast as average",
+              "Faster than average, matching the technical roles below them",
+              "Little or no change, since each show needs only one of each",
+              "Declining, as more shows are produced by smaller crews",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Producers and directors are projected to grow about as fast as average, and they carry the highest median of the four roles the lesson lists.",
+            sourceLessonSlug: "pay-and-outlook",
+          },
+          {
+            prompt: "What is the projected growth for announcers and DJs?",
+            options: [
+              "Faster than average, driven by the growth of podcasting",
+              "Little or no change",
+              "About as fast as average, in line with production roles",
+              "Growing in sports specifically while declining in news",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Little or no change overall, which is why the lesson calls on-air the most competitive door in the industry.",
+            sourceLessonSlug: "pay-and-outlook",
+          },
+          {
+            prompt: "Which of the four roles the lesson lists carries the highest median pay?",
+            options: [
+              "Announcers and DJs, since the on-air role is the most visible",
+              "Broadcast, sound, and video technicians, since demand is growing fastest",
+              "Film and video editors and camera operators, since the skills are specialized",
+              "Producers and directors",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Producers and directors carry the highest of the four medians, and announcers and DJs the lowest, which is the opposite of what most people entering the field expect.",
+            sourceLessonSlug: "pay-and-outlook",
+          },
+          {
+            prompt: "What does the lesson say before you quote any of its pay figures?",
+            options: [
+              "Confirm the current number on the source page for your role and area",
+              "Adjust the national median for the cost of living where you live",
+              "Add the value of the benefits a staff position normally carries",
+              "Check whether the role is unionized in the market you are applying to",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The figures are national medians and shift each year. The lesson is explicit that they are a labeled snapshot, not a promise.",
+            sourceLessonSlug: "pay-and-outlook",
+          },
+          {
+            prompt: "In the lesson's example, what plan does the learner arrive at after reading the handbook?",
+            options: [
+              "Abandon on-air work, since the projections make it unrealistic",
+              "Apply to both roles at once and take whichever offer arrives first",
+              "Start technical to get in the building, and pursue on-air on the side",
+              "Move to a larger market where announcing positions are more numerous",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The technical role pays more at the median and is growing, while announcing is flat and hyper-competitive. Starting technical is a data-driven plan rather than a compromise.",
+            sourceLessonSlug: "pay-and-outlook",
+          },
+          {
+            prompt: "What does the practical exercise ask you to compare between two roles?",
+            options: [
+              "Median pay, projected growth, and typical entry-level education",
+              "The number of openings currently advertised in your own area",
+              "The equipment each role would require you to buy for yourself",
+              "The size of the union local that represents each of the two",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Open the handbook pages for two roles you like, note those three figures, and pick the role with the best growth-to-competition ratio as your first target.",
+            sourceLessonSlug: "pay-and-outlook",
+          },
+          {
+            prompt: "Why does the lesson call the labor data worth checking before you commit?",
+            options: [
+              "Because a hiring manager will ask you to recite the figures",
+              "Because the projections determine which roles a station may advertise",
+              "Because the handbook lists every employer hiring in your area",
+              "So you set realistic goals and can talk credibly to a hiring manager",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The handbook is the most authoritative free labor-market source available, and knowing what it says is both a planning tool and a credibility signal in a conversation.",
+            sourceLessonSlug: "pay-and-outlook",
+          },
+          {
+            prompt: "What do you NOT need in order to be a utility technician?",
+            options: [
+              "A demo reel",
+              "The ability to work safely around cable and rigging",
+              "Willingness to arrive before the rest of the crew does",
+              "A reputation for turning up when you said you would",
+            ],
+            correctIndex: 0,
+            explanation:
+              "You do not need a reel; you need to be reliable, safe, and fast. The other three are exactly what the role does require.",
+            sourceLessonSlug: "utility-technician-and-rigging",
+          },
+          {
+            prompt: "What do you need instead?",
+            options: [
+              "A certification from the engineers' professional body",
+              "To be reliable, safe, and fast",
+              "Prior credits on at least one televised event",
+              "Your own set of tools and rigging hardware",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Reliability, safety, and speed. Those are what a crew lead is judging on a rig, and they are what earn the next call.",
+            sourceLessonSlug: "utility-technician-and-rigging",
+          },
+          {
+            prompt: "Why is knot and rigging skill a genuinely hireable competency here?",
+            options: [
+              "Because a certificate in rigging raises the day rate a freelancer can ask",
+              "Because insurance rules require a certified rigger on every crew",
+              "The work involves securing gear, tying off cable, and rigging on truss",
+              "Because rope work is the only part of the job that cannot be taught fast",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Camera cables, mic stands, banners, backdrops, and lighting all get secured with rope, straps, and ties. A tech who can throw a clean, quick-release hitch and coil cable so it runs free is worth more than one who leaves a tangled, unsafe mess.",
+            sourceLessonSlug: "utility-technician-and-rigging",
+          },
+          {
+            prompt: "Which knot does the lesson describe as a fixed loop that will not slip?",
+            options: [
+              "The clove hitch, which wraps around a rail without a loop",
+              "The bowline",
+              "The trucker's hitch, which pulls a line tight against a fixed point",
+              "The round turn and two half-hitches, which holds under a steady pull",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The bowline is the fixed loop that will not slip. The others in this question all appear in the lesson too, doing different jobs.",
+            sourceLessonSlug: "utility-technician-and-rigging",
+          },
+          {
+            prompt: "Which knots does the lesson name for securing to a rail or truss?",
+            options: [
+              "The bowline and the trucker's hitch, tied in sequence on the same line",
+              "Any knot that can be untied quickly when the set is struck",
+              "The clove hitch, and the round turn and two half-hitches",
+              "A simple overhand knot backed up with gaffer tape",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Those two are the securing-to-a-rail knots. The bowline is the fixed loop and the trucker's hitch is for tensioning a run.",
+            sourceLessonSlug: "utility-technician-and-rigging",
+          },
+          {
+            prompt: "Which knot does the lesson name for tensioning a run?",
+            options: [
+              "The trucker's hitch",
+              "The bowline, which holds its loop size under load",
+              "The clove hitch, which tightens as the line is pulled",
+              "The round turn and two half-hitches, which resists slipping",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The trucker's hitch is the tensioning knot in the set of four the lesson asks you to learn to muscle memory.",
+            sourceLessonSlug: "utility-technician-and-rigging",
+          },
+          {
+            prompt: "Why does the way you coil a cable matter?",
+            options: [
+              "Because a neat coil takes less room in the truck at the end of the night",
+              "Because coiling protects the connectors from damage in transit",
+              "Because the coil's direction affects the signal the cable carries",
+              "So it pays out without kinking",
+            ],
+            correctIndex: 3,
+            explanation:
+              "A cable coiled so it runs free is the difference between a run that goes out clean and one that snags in the middle of a live show.",
+            sourceLessonSlug: "utility-technician-and-rigging",
+          },
+          {
+            prompt: "Which companion course does this lesson send you to for the rope work?",
+            options: [
+              "Knot-Tying and Rope Work",
+              "Off-Grid and Emergency Survival, which covers securing loads",
+              "A rigging certification offered through the engineers' professional body",
+              "The section on game-day rigging later in this same course",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The companion Knot-Tying and Rope Work course on Learn.WitUS teaches the four knots and the safe coiling that make you valuable on a rig-and-strike crew.",
+            sourceLessonSlug: "utility-technician-and-rigging",
+          },
+          {
+            prompt: "In the rain-delay example, which knot re-secures the loose camera cable on the truss?",
+            options: [
+              "A bowline, tied around the truss and left slack",
+              "A trucker's hitch, pulling the cable taut against the rail",
+              "A round turn and two half-hitches",
+              "A clove hitch backed up with a second clove hitch",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The tech re-secures the cable with a round turn and two half-hitches, coils the excess out of the walkway, and tapes the last run. The show comes back with nothing to trip over.",
+            sourceLessonSlug: "utility-technician-and-rigging",
+          },
+          {
+            prompt: "What two qualities does the lesson say both count on a live crew?",
+            options: [
+              "Speed and cleanliness",
+              "Accuracy and patience, in that order of importance",
+              "Strength and stamina, since the work is physical",
+              "Independence and initiative, since nobody has time to supervise",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Time yourself on the drills. A live crew is judging both how fast you work and how clean the result is.",
+            sourceLessonSlug: "utility-technician-and-rigging",
+          },
+          {
+            prompt: "What does the lesson call the quiet competence that gets a utility tech invited back?",
+            options: [
+              "Knowing every position on the crew by name before the first call",
+              "Volunteering for extra shifts when the schedule is short-handed",
+              "Being able to step into a camera operator's place when needed",
+              "Fixing the problem so the show returns with nothing to trip over",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The rain-delay example is the whole argument: the work nobody notices, done properly, is what earns the next call.",
+            sourceLessonSlug: "utility-technician-and-rigging",
+          },
+          {
+            prompt: "What does the lesson say a rookie who can only tape is worth, next to one who can rig?",
+            options: [
+              "Less, since rigging skill makes you immediately more useful",
+              "The same, since both are supervised on their first few calls",
+              "More, since taping is faster than tying under time pressure",
+              "It depends entirely on how early each of them arrives",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Bring real knot and rigging skill to a broadcast crew and you are immediately more useful than a rookie who can only tape.",
+            sourceLessonSlug: "utility-technician-and-rigging",
+          },
+        ],
+      },
+    },
+
+    // ─────────────────────────────────────────────────────────────────────────
     // SECTION 2: Your calling card
     // ─────────────────────────────────────────────────────────────────────────
     {
