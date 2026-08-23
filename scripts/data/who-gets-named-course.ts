@@ -2715,5 +2715,536 @@ Smithsonian American Art Museum. (n.d.). *Selma Burke*. https://americanart.si.e
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 6 — How a correction actually happens, and what it reaches
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "anatomy-of-a-correction",
+      title: "21 · Who corrects a record, and with what",
+      section: "Section 6 · How a correction happens",
+      body: `Corrections are not one thing. They are made by five kinds of actor using six or seven instruments, and each instrument reaches a different part of the problem. Knowing which is which is the difference between an effective demand and a satisfying gesture.
+
+**Five actors, with different powers.** The **person** can state a claim, publish a memoir, give an interview. It is the fastest route and the weakest in the record, because it is self-interested by construction, which is why Burke's contemporaneous objection persuaded institutions but never the Mint. The **family** has something the person often does not: standing to negotiate and standing to sue, which is the entire mechanism of the Lacks agreements. A **scholar or biographer** produces the document later actors cite; Rossiter, Bundles and Colvin's biographer Phillip Hoose all function this way. An **institution** can rename, appoint, hang a portrait, award a degree, or change a catalog record. A **court or legislature** is the only actor that can vacate a legal record.
+
+**The instruments, and what each one can actually touch.** An **erratum or retraction** reaches the publication itself, and only while the venue still exists and the record is still live. An **eponym change** reaches every future utterance of a name and never the original document. An **honor**, meaning a portrait, a degree, an appointment, a building, reaches institutional memory and never authorship. A **catalog or archival change** reaches Trouillot's assembly moment, so everything retrieved downstream inherits it, which is why the Smithsonian American Art Museum's record does more work in the Burke case than any statement Burke made. A **negotiated agreement** reaches future conduct. A **court order** reaches the legal record. A **settlement** reaches the parties and nobody else.
+
+**Two structural facts that explain most of what follows.** First, **a correction arrives through whichever instrument is available, not whichever is appropriate.** Nobody chose to honor Vivien Thomas with a portrait instead of an author line; the author line was not reopenable and the portrait was. Second, and following from it, **the available instrument is usually the one furthest from the original harm.** A degree is not a byline. A rename is not a citation. A confidential settlement is not an admission.
+
+**And the timing is not random either.** Look at the intervals this course has already counted: twenty seven years, thirty two, sixty six, seventy eight. Corrections cluster around the moment when the last person who could be embarrassed has retired or died, and around anniversaries, which are cheap. That is not cynicism, it is a pattern with dates attached, and it predicts when to expect the next one.
+
+:::reveal Name the five kinds of actor who make corrections and one power each has. ||| The person, who can state a claim but is self-interested by construction. The family, which has standing to negotiate and to sue. A scholar, who produces the document later actors cite. An institution, which can rename, appoint, honor or change a catalog record. A court or legislature, the only actor that can vacate a legal record.
+
+:::reveal Which instrument reaches Trouillot's assembly moment, and why does that matter? ||| A catalog or archival record change, because everything retrieved downstream inherits it. That is why a museum's catalog line does more work in the Burke case than anything Burke herself said.
+
+:::reveal State the two structural facts about how corrections arrive. ||| A correction comes through whichever instrument is available rather than whichever is appropriate. And the available instrument is usually the one furthest from the original harm: a degree is not a byline, a rename is not a citation.
+
+## Vocabulary
+- **Erratum**: a published correction to a live publication, the only instrument that reaches the original document, and useless once the venue or the record is closed.
+- **Eponym change**: renaming a thing to add a contributor, which reaches all future usage and never the original record.
+- **Standing**: the legal position that lets a person or family negotiate or sue, which the contributor themselves often does not have.
+- **Available instrument**: the tool that actually exists in a given case, which usually sits further from the original harm than the appropriate one would.
+
+## Sources
+Trouillot, M.-R. (1995). *Silencing the past: Power and the production of history*. Beacon Press.`,
+    },
+    {
+      slug: "claudette-colvin-and-the-choice-not-to-name",
+      title: "22 · Claudette Colvin, and the decision not to use a name",
+      section: "Section 6 · How a correction happens",
+      body: `Every mechanism so far has been something that happens to a name. This one is a decision somebody makes about a name, on purpose, for reasons that can be defensible and costly at the same time.
+
+**What happened.** Claudette Colvin was born on 5 September 1939. On 2 March 1955, aged fifteen, she refused to give up her seat to a white woman on a segregated Montgomery bus, nine months before Rosa Parks did the same thing. She was charged with disturbing the peace, violating the segregation ordinance, and assaulting a police officer. Her lawyer, Fred Gray, got the first two charges dismissed on appeal. The assault charge stayed, and she was given probation and a fine.
+
+**The decision.** Montgomery's civil rights leadership considered building a campaign around her case and did not. Her biographer Phillip Hoose told the *New York Times* in 2009 that they worried they could not win with her, and described the words used about her at the time, mouthy, emotional, feisty, against the way Rosa Parks was seen, as stolid, calm and unflappable. Note what that is evidence of and what it is not: it is a biographer's account of the reasoning, given decades later, and this course reports it as that rather than as the leadership's own recorded minutes.
+
+**Why the decision was not stupid.** A campaign choosing a plaintiff is choosing who will be cross-examined, photographed, and attacked in the press for years. That is a strategic judgment, and the same instrument is taught in the sibling course on the NAACP's litigation. A movement that picks badly loses the case and the people it was for.
+
+**And why it still cost her the credit.** The bus segregation ordinance was not struck down by the boycott. It was struck down in *Browder v. Gayle*, a federal case with four women as plaintiffs, in which Colvin was one and a central witness. The district court ruled on 4 June 1956 and the Supreme Court affirmed on 13 November 1956. So Colvin is in the case that actually won, and out of the story that is actually told, and both of those are true at once because a campaign made a decision about a name.
+
+**The correction, sixty six years later.** In October 2021 Colvin petitioned to have her juvenile record expunged, because the assault conviction was still on it. Judge Calvin Williams of the Montgomery County juvenile court signed the order on 24 November 2021, and it was granted that December. She was eighty two. She died in January 2026, aged eighty six; sources give slightly different days for her death and this course does not pick one.
+
+**What the expungement was and was not.** It was a court order, which means it reached the one thing only a court can reach: the legal record. It did not put her in the story. Nothing in that order touches the moment of retrospective significance, which is where the credit actually went missing.
+
+:::reveal What was Colvin charged with, and which charge survived appeal? ||| Disturbing the peace, violating the segregation ordinance, and assaulting a police officer. Fred Gray got the first two dismissed on appeal; the assault charge stayed, with probation and a fine.
+
+:::reveal Why is the decision not to build a campaign around Colvin described as defensible? ||| Because choosing a plaintiff is choosing who will be cross-examined, photographed and attacked in the press for years, and a campaign that picks badly loses the case and the people it was for. It is a strategic instrument, not a slight.
+
+:::reveal What did Colvin's 2021 expungement reach, and what did it leave untouched? ||| It was a court order, so it reached the legal record, which only a court can reach. It did not reach retrospective significance, which is where the credit went missing, so it did not put her in the story.
+
+## Vocabulary
+- **Plaintiff selection**: a campaign's strategic choice of whose case to litigate, which decides who is named and who is not.
+- **Browder v. Gayle**: the 1956 federal case, with four women as plaintiffs, that actually struck down Montgomery bus segregation.
+- **Expungement**: a court order destroying a legal record, the one correction instrument reserved to a court.
+- **Biographer's account**: a reconstruction of reasoning given decades later, which is evidence about the reasoning and not a record of it.
+
+## Sources
+Equal Justice Initiative. (n.d.). *EJI remembers civil rights pioneer Claudette Colvin*. https://eji.org/news/eji-remembers-civil-rights-pioneer-claudette-colvin/
+
+Smithsonian Magazine. (n.d.). *Months before Rosa Parks made headlines, Claudette Colvin refused to give up her seat for a white woman on a segregated bus*. https://www.smithsonianmag.com/smart-news/months-before-rosa-parks-made-headlines-claudette-colvin-refused-to-give-up-her-seat-for-a-white-woman-on-a-segregated-bus-180988009/`,
+    },
+    {
+      slug: "what-a-correction-cannot-repair",
+      title: "23 · The ledger, and the check you can run yourself",
+      section: "Section 6 · How a correction happens",
+      body: `Put the six cases in one column and the years in another, and the shape of the whole subject shows up at once.
+
+| Case | First public act | Correction, and what kind | Interval |
+| --- | --- | --- | --- |
+| Vivien Thomas | 1944 operation | 1971 portrait; 1976 honorary degree and faculty post | 27 and 32 years |
+| Pauli Murray | 1944 seminar paper | 1971 names on the Reed brief, an author's own choice | 27 years |
+| Henrietta Lacks | 1951 biopsy | 1973 name restored; 2013 access agreement; 2023 settlement | 22, 62 and 72 years |
+| Claudette Colvin | 1955 arrest | 2021 expungement, a court order | 66 years |
+| Annie Turnbo Malone | business from 1902 | no correction; a live dispute | none |
+| Selma Burke | 1946 dime | no correction; a museum record and a live dispute | none |
+
+**What a correction repairs.** The record going forward, which is real. A reader's default, which is what a catalog line or a rename actually changes. Sometimes money, in the two cases here where somebody had standing to sue or to negotiate.
+
+**What it does not repair.** The career, which is the compounding the Matthew effect was describing: a name missing from a 1945 paper is missing from every citation of that paper for eighty years, and no 1976 degree pays that back. The original document, which cannot be reopened. And the choice the person would have made with the credit at the time, which is the part nobody can even estimate.
+
+**One warning, because this course is itself an instance.** Attention to corrections obeys the same rule as attention to anything else: it flows toward the cases that are already known. Six people are named here because their cases are documented well enough to teach. The mechanisms in this course predict that the great majority of comparable cases left no retrievable trace at all, and a reader who finishes with six names and a feeling of completion has learned the opposite of the argument.
+
+**The check, in five questions.** Run it on any credit claim, including one you agree with.
+
+1. **Which document was supposed to record this?** An author line, an inventor declaration, a court file, an accession record. If there is no such document, say so before going further.
+2. **What did that document's rule actually decide?** Naming, ownership, both, neither. It never decided who did the work.
+3. **Is the gap isolated or surrounded?** Corroboration nearby means a record problem; silence all around often means an absence.
+4. **Who is claiming, and what is their interest?** Not to discount them. To know which part of their evidence to read closely.
+5. **What would settle it, and does that thing exist?** If nothing would, the honest answer is that the claim is serious and unproven, and you say that instead of picking.
+
+:::reveal Which two of the six cases have no correction at all, and what do they have instead? ||| Annie Turnbo Malone and Selma Burke. Each has a live dispute, and Burke additionally has a museum catalog record that credits her while the official attribution does not.
+
+:::reveal Name the three things a correction cannot repair. ||| The career, because the missing name is missing from every citation of that paper for decades and no later honor pays that back. The original document, which cannot be reopened. And the choice the person would have made with the credit at the time.
+
+:::reveal Give the five questions of the check, in order. ||| Which document was supposed to record this? What did that document's rule actually decide? Is the gap isolated or surrounded by more silence? Who is claiming, and what is their interest? And what would settle it, and does that thing exist?
+
+## Vocabulary
+- **Compounding**: the Matthew effect measured over time, where a name missing from one document is missing from everything that cites it afterward.
+- **Reader's default**: the version a person arrives at without investigating, which a catalog line or a rename can change and a memoir usually cannot.
+- **Survivorship in corrections**: the tendency for attention to reach only the cases already documented, which this course is itself an instance of.
+- **Serious and unproven**: the correct verdict when no available evidence would settle a claim, and the alternative to picking a side.
+
+## Sources
+Merton, R. K. (1968). The Matthew effect in science. *Science, 159*(3810), 56-63. https://doi.org/10.1126/science.159.3810.56
+
+Trouillot, M.-R. (1995). *Silencing the past: Power and the production of history*. Beacon Press.`,
+    },
+    {
+      slug: "quiz-how-corrections-happen",
+      title: "24 · Knowledge check: how a correction happens",
+      section: "Section 6 · How a correction happens",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "How many kinds of actor make corrections, in this lesson's account?",
+            options: ["Five", "Three, namely the person affected, an institution, and a court of competent jurisdiction", "Seven, matching the number of distinct instruments the lesson goes on to describe", "Two, since only institutions and courts have the authority to change a public record"],
+            correctIndex: 0,
+            explanation: "The person, the family, a scholar or biographer, an institution, and a court or legislature.",
+            sourceLessonSlug: "anatomy-of-a-correction",
+          },
+          {
+            prompt: "Why is a correction made by the person themselves the weakest in the record?",
+            options: ["It is self-interested by construction", "Because it is usually made too long after the events to be reliable evidence", "Because a person cannot publish in a venue an institution would treat as citable", "Because the law gives no weight to an uncorroborated statement about one's own work"],
+            correctIndex: 0,
+            explanation: "It is also the fastest route, which is why Burke's objection persuaded institutions and never moved the Mint.",
+            sourceLessonSlug: "anatomy-of-a-correction",
+          },
+          {
+            prompt: "What does a family have that the contributor often does not?",
+            options: ["Standing to negotiate and to sue", "Access to private papers that the contributor destroyed during their lifetime", "Immunity from the accusation of self-interest when they press a claim publicly", "The ability to compel an institution to reopen a closed publication record"],
+            correctIndex: 0,
+            explanation: "Which is the entire mechanism behind the Lacks agreements and the 2023 settlement.",
+            sourceLessonSlug: "anatomy-of-a-correction",
+          },
+          {
+            prompt: "What is a scholar or biographer's function in a correction?",
+            options: ["Producing the document later actors cite", "Persuading the institution directly, since scholars carry standing that families lack", "Locating physical evidence that the participants themselves were unaware of", "Adjudicating between the competing claims once both sides have been heard"],
+            correctIndex: 0,
+            explanation: "Rossiter, Bundles and Colvin's biographer Phillip Hoose all work this way.",
+            sourceLessonSlug: "anatomy-of-a-correction",
+          },
+          {
+            prompt: "Which actor is the only one able to vacate a legal record?",
+            options: ["A court or legislature", "An institution, acting through its own governing board and general counsel", "The family, provided every surviving descendant joins the petition", "A scholar, by publishing a finding that the record was created in error"],
+            correctIndex: 0,
+            explanation: "Which is why Colvin's 2021 expungement took a judge and could not have come from any other actor in this list.",
+            sourceLessonSlug: "anatomy-of-a-correction",
+          },
+          {
+            prompt: "Which instrument reaches the original publication itself?",
+            options: ["An erratum or retraction", "An eponym change, which alters how the work is named in every later citation", "A catalog record change, which propagates to everything retrieved downstream", "An honorary degree, which the awarding institution records permanently"],
+            correctIndex: 0,
+            explanation: "And only while the venue still exists and the record is still live, which is why it was never available to Vivien Thomas.",
+            sourceLessonSlug: "anatomy-of-a-correction",
+          },
+          {
+            prompt: "An eponym change reaches:",
+            options: ["Every future utterance, and never the original document", "The original document, by amending the author line retroactively", "Only the institution that adopts it, with no effect on wider usage", "The legal record, since a procedure's name is registered with a regulator"],
+            correctIndex: 0,
+            explanation: "Which is exactly the trade the Blalock-Thomas-Taussig rename makes: all future usage, and nothing in the 1945 paper.",
+            sourceLessonSlug: "anatomy-of-a-correction",
+          },
+          {
+            prompt: "An honor such as a portrait, degree or appointment reaches:",
+            options: ["Institutional memory, and never authorship", "Authorship, by establishing the recipient as a member of the faculty retrospectively", "The legal record, since an honorary degree is recorded in a public register", "Fact retrieval, because researchers search award lists before searching archives"],
+            correctIndex: 0,
+            explanation: "It is the fourth currency from lesson 1, and it is a different currency from the one that went missing.",
+            sourceLessonSlug: "anatomy-of-a-correction",
+          },
+          {
+            prompt: "A catalog or archival record change reaches which of Trouillot's moments?",
+            options: ["Assembly", "Creation, since the catalog entry becomes a new primary source about the work", "Retrospective significance, because cataloguers decide what is worth describing", "None of them, since a catalog is a finding aid rather than part of the record"],
+            correctIndex: 0,
+            explanation: "So everything retrieved downstream inherits it, which is why a museum's record does more work in the Burke case than Burke's own statements did.",
+            sourceLessonSlug: "anatomy-of-a-correction",
+          },
+          {
+            prompt: "A settlement reaches:",
+            options: ["The parties and nobody else", "Every comparable claimant, by establishing the value of a similar claim", "The public record, since the terms must be filed with the court that approved it", "Future conduct across an industry, which is why companies resist settling at all"],
+            correctIndex: 0,
+            explanation: "A confidential settlement with no ruling on the merits creates no precedent, whatever it did for the people who signed it.",
+            sourceLessonSlug: "anatomy-of-a-correction",
+          },
+          {
+            prompt: "The first structural fact about corrections is that they arrive through:",
+            options: ["Whichever instrument is available", "The actor with the strongest claim to authority over the original record", "The fastest route, which is why most corrections come from the person affected", "A negotiated process in which all interested parties agree on the remedy"],
+            correctIndex: 0,
+            explanation: "Not whichever is appropriate. Nobody chose a portrait over an author line for Thomas; the author line was not reopenable and the portrait was.",
+            sourceLessonSlug: "anatomy-of-a-correction",
+          },
+          {
+            prompt: "The second structural fact is that the available instrument is usually:",
+            options: ["The one furthest from the original harm", "The cheapest one, since institutions optimize for cost when correcting a record", "Controlled by the institution that caused the harm in the first place", "Unavailable to the person affected, who must always work through an intermediary"],
+            correctIndex: 0,
+            explanation: "A degree is not a byline, a rename is not a citation, and a confidential settlement is not an admission.",
+            sourceLessonSlug: "anatomy-of-a-correction",
+          },
+          {
+            prompt: "This lesson says corrections cluster around:",
+            options: ["Retirements, deaths, and anniversaries", "Court terms, since litigation drives most institutional acknowledgments", "Leadership changes, when a new administration reviews its predecessor's record", "Funding cycles, because an institution needs a budget line to act on a claim"],
+            correctIndex: 0,
+            explanation: "Around the moment the last person who could be embarrassed has gone, and around anniversaries, which are cheap. It is a pattern with dates attached.",
+            sourceLessonSlug: "anatomy-of-a-correction",
+          },
+          {
+            prompt: "Standing, as this lesson uses the term, means:",
+            options: ["The legal position that lets someone negotiate or sue", "The reputation an institution has for correcting its own historical record", "A scholar's authority to be cited by later writers on the same subject", "The formal recognition an eponym confers on a named contributor"],
+            correctIndex: 0,
+            explanation: "The contributor themselves often does not have it, which is why so many corrections in this field come through families.",
+            sourceLessonSlug: "anatomy-of-a-correction",
+          },
+          {
+            prompt: "Why was an erratum never available in the Vivien Thomas case?",
+            options: ["A 1945 author line cannot be reopened", "Because JAMA's editorial policy at the time forbade adding authors after acceptance", "Because Thomas himself never requested one during his lifetime", "Because the operation was reported at a medical society meeting rather than in print"],
+            correctIndex: 0,
+            explanation: "The record is closed, which forces the correction into instruments that reach institutional memory instead.",
+            sourceLessonSlug: "anatomy-of-a-correction",
+          },
+          {
+            prompt: "Claudette Colvin was born on:",
+            options: ["5 September 1939", "20 November 1910, the same year as Vivien Thomas and Pauli Murray", "2 March 1955, the date this course associates with her arrest instead", "9 August 1869, matching the founder of the Poro business in St. Louis"],
+            correctIndex: 0,
+            explanation: "She was fifteen at the time of the March 1955 arrest.",
+            sourceLessonSlug: "claudette-colvin-and-the-choice-not-to-name",
+          },
+          {
+            prompt: "The Colvin arrest took place on:",
+            options: ["2 March 1955", "1 December 1955, the date of the more widely reported Montgomery arrest", "4 June 1956, when the federal district court ruled in Browder v. Gayle", "24 November 2021, when a judge signed the order expunging her record"],
+            correctIndex: 0,
+            explanation: "Nine months before Rosa Parks did the same thing on the same city's buses.",
+            sourceLessonSlug: "claudette-colvin-and-the-choice-not-to-name",
+          },
+          {
+            prompt: "What was Colvin charged with?",
+            options: ["Disturbing the peace, segregation, and assaulting an officer", "Trespass and refusal to obey a lawful order, both misdemeanors under city code", "Only violation of the segregation ordinance, which carried a fine and no probation", "Conspiracy to organize an illegal boycott of a public transportation system"],
+            correctIndex: 0,
+            explanation: "Fred Gray got the first two dismissed on appeal. The assault charge stayed, with probation and a fine.",
+            sourceLessonSlug: "claudette-colvin-and-the-choice-not-to-name",
+          },
+          {
+            prompt: "Which charge survived Colvin's appeal?",
+            options: ["Assaulting a police officer", "Disturbing the peace, which carried the probation term she served", "Violating the segregation ordinance, which the appeal court declined to review", "All three, which is why the record required an expungement sixty six years later"],
+            correctIndex: 0,
+            explanation: "That surviving conviction is the specific thing the 2021 expungement destroyed.",
+            sourceLessonSlug: "claudette-colvin-and-the-choice-not-to-name",
+          },
+          {
+            prompt: "Who was Colvin's lawyer?",
+            options: ["Fred Gray", "Thurgood Marshall, directing the NAACP legal department at the time", "Spottswood Robinson, who had taught the Howard seminar a decade earlier", "Calvin Williams, the judge who later signed her expungement order"],
+            correctIndex: 0,
+            explanation: "He got two of the three charges dismissed on appeal and later brought the federal case.",
+            sourceLessonSlug: "claudette-colvin-and-the-choice-not-to-name",
+          },
+          {
+            prompt: "What does this course cite as the source for the leadership's reasoning about Colvin?",
+            options: ["Her biographer, speaking to a newspaper in 2009", "The Montgomery Improvement Association's own contemporaneous meeting minutes", "Colvin's testimony in Browder v. Gayle, where she was asked about the decision", "An Equal Justice Initiative investigation of the boycott's organizing records"],
+            correctIndex: 0,
+            explanation: "Phillip Hoose told the New York Times that they worried they could not win with her. The lesson reports that as a biographer's account, not as minutes.",
+            sourceLessonSlug: "claudette-colvin-and-the-choice-not-to-name",
+          },
+          {
+            prompt: "Why does the lesson call the decision not to center Colvin defensible?",
+            options: ["Choosing a plaintiff means choosing who gets attacked for years", "Because her conviction for assault would have been raised against the whole campaign", "Because a juvenile plaintiff could not have brought a federal constitutional claim", "Because the leadership had already committed to a different legal strategy entirely"],
+            correctIndex: 0,
+            explanation: "It is a strategic instrument, taught in the sibling course on the NAACP's litigation, and a campaign that picks badly loses the case and the people it was for.",
+            sourceLessonSlug: "claudette-colvin-and-the-choice-not-to-name",
+          },
+          {
+            prompt: "Which case actually struck down Montgomery bus segregation?",
+            options: ["Browder v. Gayle", "Brown v. Board of Education, which the Montgomery courts applied to buses", "Reed v. Reed, the brief on which Ginsburg named Murray and Kenyon", "Plessy v. Ferguson, which was overruled directly in the Montgomery litigation"],
+            correctIndex: 0,
+            explanation: "A federal case with four women as plaintiffs, in which Colvin was one and a central witness. The boycott did not strike the ordinance down.",
+            sourceLessonSlug: "claudette-colvin-and-the-choice-not-to-name",
+          },
+          {
+            prompt: "The Browder v. Gayle district court ruling came on:",
+            options: ["4 June 1956", "13 November 1956, which is the date of the Supreme Court's affirmance", "2 March 1955, the same day as the arrest that began the litigation", "1 December 1955, when the Montgomery bus boycott itself began"],
+            correctIndex: 0,
+            explanation: "The Supreme Court affirmed on 13 November 1956, five months later.",
+            sourceLessonSlug: "claudette-colvin-and-the-choice-not-to-name",
+          },
+          {
+            prompt: "How many plaintiffs did Browder v. Gayle have?",
+            options: ["Four women", "One, Aurelia Browder, with the others appearing only as witnesses", "Twelve, drawn from every Montgomery neighborhood served by the bus lines", "Two, in a case deliberately kept small so it could move quickly through the courts"],
+            correctIndex: 0,
+            explanation: "Colvin was one of them and a central witness, which is why she is in the case that won and out of the story that is told.",
+            sourceLessonSlug: "claudette-colvin-and-the-choice-not-to-name",
+          },
+          {
+            prompt: "When did Colvin petition to have her juvenile record expunged?",
+            options: ["October 2021", "November 2021, the month the order was signed by the court", "1956, immediately after the Supreme Court affirmed in Browder v. Gayle", "2009, when her biographer published the account of the leadership's decision"],
+            correctIndex: 0,
+            explanation: "The order was signed on 24 November 2021 and granted that December, when she was eighty two.",
+            sourceLessonSlug: "claudette-colvin-and-the-choice-not-to-name",
+          },
+          {
+            prompt: "Which judge signed Colvin's expungement order?",
+            options: ["Calvin Williams", "Fred Gray, who had represented her at the original trial in 1955", "Frank Johnson, who had sat on the Browder v. Gayle district panel", "The order was signed by the clerk of the court rather than by a judge"],
+            correctIndex: 0,
+            explanation: "Of the Montgomery County juvenile court, on 24 November 2021.",
+            sourceLessonSlug: "claudette-colvin-and-the-choice-not-to-name",
+          },
+          {
+            prompt: "How does this course handle the date of Colvin's death?",
+            options: ["It gives the month and year and declines to pick a day", "It follows the earliest published report and notes no disagreement exists", "It omits the death entirely, since it postdates the events the course teaches", "It gives both candidate dates in the reference list and neither in the lesson"],
+            correctIndex: 0,
+            explanation: "She died in January 2026, aged eighty six, and sources give slightly different days, so the lesson reports the disagreement instead of choosing.",
+            sourceLessonSlug: "claudette-colvin-and-the-choice-not-to-name",
+          },
+          {
+            prompt: "What did the expungement reach?",
+            options: ["The legal record", "The historical record, by requiring archives to add her to accounts of the boycott", "Institutional memory, since Montgomery renamed a public building in her honor", "Retrospective significance, which is where the credit had gone missing"],
+            correctIndex: 0,
+            explanation: "A court order reaches the one thing only a court can reach. It did not put her in the story.",
+            sourceLessonSlug: "claudette-colvin-and-the-choice-not-to-name",
+          },
+          {
+            prompt: "The Colvin case adds which mechanism to this course?",
+            options: ["A deliberate decision not to use a name", "A misattribution of her contribution to a more eminent colleague", "The disappearance of a name into a corporate assignee's ownership", "The substitution of a false name in the place of a true one"],
+            correctIndex: 0,
+            explanation: "Every other mechanism here is something that happens to a name. This one is a choice somebody makes about a name, on purpose.",
+            sourceLessonSlug: "claudette-colvin-and-the-choice-not-to-name",
+          },
+          {
+            prompt: "Colvin's age at the time of the arrest was:",
+            options: ["Fifteen", "Eighteen, which is why she was tried in the adult rather than the juvenile court", "Twenty two, the same age at which she later testified in the federal case", "Eighty two, which is her age at the time of the expungement instead"],
+            correctIndex: 0,
+            explanation: "Which is also why the record that survived was a juvenile record, and why an expungement was the available instrument in 2021.",
+            sourceLessonSlug: "claudette-colvin-and-the-choice-not-to-name",
+          },
+          {
+            prompt: "The words Hoose reported being used about Colvin were contrasted with descriptions of Rosa Parks as:",
+            options: ["Stolid, calm and unflappable", "Educated, professional and well connected within the Montgomery community", "Older, married and therefore harder for the local press to attack in public", "Experienced in organizing, having worked with the NAACP for over a decade"],
+            correctIndex: 0,
+            explanation: "Against mouthy, emotional and feisty for Colvin. The lesson reports this as a biographer's decades-later account of the reasoning.",
+            sourceLessonSlug: "claudette-colvin-and-the-choice-not-to-name",
+          },
+          {
+            prompt: "In the course's ledger, which case shows an interval of 66 years?",
+            options: ["Claudette Colvin", "Vivien Thomas, from the 1944 operation to the portrait ceremony", "Henrietta Lacks, from the 1951 biopsy to the NIH access agreement", "Pauli Murray, from the 1944 seminar paper to the Reed v. Reed brief"],
+            correctIndex: 0,
+            explanation: "1955 arrest to 2021 expungement. Thomas is 27 and 32 years, Murray 27, and Lacks 22, 62 and 72.",
+            sourceLessonSlug: "what-a-correction-cannot-repair",
+          },
+          {
+            prompt: "Which two cases in the ledger have no correction at all?",
+            options: ["Annie Turnbo Malone and Selma Burke", "Selma Burke and Claudette Colvin, both of whose claims remain disputed", "Henrietta Lacks and Annie Turnbo Malone, neither of whom left surviving records", "Vivien Thomas and Pauli Murray, whose author lines were never reopened"],
+            correctIndex: 0,
+            explanation: "Each has a live dispute instead. Burke additionally has a museum catalog record crediting her while the official attribution does not.",
+            sourceLessonSlug: "what-a-correction-cannot-repair",
+          },
+          {
+            prompt: "The intervals in the Lacks row of the ledger are:",
+            options: ["22, 62 and 72 years", "27 and 32 years, matching the two corrections in the Thomas row", "66 years, from the taking of the cells to the confidential settlement", "None, because the case is still in litigation and no correction has landed"],
+            correctIndex: 0,
+            explanation: "1951 to the 1973 name restoration, the 2013 access agreement, and the 2023 settlement.",
+            sourceLessonSlug: "what-a-correction-cannot-repair",
+          },
+          {
+            prompt: "Which of these does a correction genuinely repair?",
+            options: ["The record going forward", "The compounding of citations that accumulated while the name was missing", "The career the person would have had if they had been named at the time", "The original document, once an institution formally acknowledges the error"],
+            correctIndex: 0,
+            explanation: "Along with a reader's default, and sometimes money where somebody had standing to sue or negotiate.",
+            sourceLessonSlug: "what-a-correction-cannot-repair",
+          },
+          {
+            prompt: "Why does a later honor not repay a missing author line?",
+            options: ["The citations compounded for decades without the name", "Because an honorary degree carries no professional standing in the field", "Because institutions award honors only after the recipient has stopped working", "Because the honor is granted by a different body than the one that published"],
+            correctIndex: 0,
+            explanation: "That compounding is what the Matthew effect was describing in the first place, and no 1976 degree pays back eighty years of it.",
+            sourceLessonSlug: "what-a-correction-cannot-repair",
+          },
+          {
+            prompt: "Which of the following does this lesson say nobody can even estimate?",
+            options: ["What the person would have done with the credit at the time", "How many comparable cases left no retrievable trace in any archive", "How long an institution will take to act once a claim is made public", "Whether a settlement's confidential terms were adequate compensation"],
+            correctIndex: 0,
+            explanation: "The career and the original document are at least describable losses. The counterfactual choice is not.",
+            sourceLessonSlug: "what-a-correction-cannot-repair",
+          },
+          {
+            prompt: "This course warns that attention to corrections obeys which rule?",
+            options: ["It flows toward cases that are already known", "It follows the severity of the original harm rather than the fame of the case", "It concentrates on cases where a family survives to press the claim", "It arrives only once an institution has been publicly embarrassed"],
+            correctIndex: 0,
+            explanation: "The same rule as attention to anything else, which makes this course itself an instance of the mechanism it teaches.",
+            sourceLessonSlug: "what-a-correction-cannot-repair",
+          },
+          {
+            prompt: "A reader who finishes this course with six names and a sense of completion has:",
+            options: ["Learned the opposite of the argument", "Understood the mechanisms but missed the chronology connecting them", "Retained the cases the course considers most important to remember", "Met the course's stated objective, which is to teach six documented cases"],
+            correctIndex: 0,
+            explanation: "The mechanisms predict that the great majority of comparable cases left no retrievable trace at all.",
+            sourceLessonSlug: "what-a-correction-cannot-repair",
+          },
+          {
+            prompt: "The first question of the check is:",
+            options: ["Which document was supposed to record this?", "Who is making the claim, and what interest do they have in its outcome?", "Is the gap in the record isolated, or is it surrounded by further silence?", "What evidence would settle this question, and does that evidence exist?"],
+            correctIndex: 0,
+            explanation: "An author line, an inventor declaration, a court file, an accession record. If no such document exists, say so before going further.",
+            sourceLessonSlug: "what-a-correction-cannot-repair",
+          },
+          {
+            prompt: "The second question of the check asks what the document's rule:",
+            options: ["Actually decided", "Was intended to achieve when the institution first adopted it", "Requires of a contributor who wishes to challenge an omission", "Says about who may amend the record after publication"],
+            correctIndex: 0,
+            explanation: "Naming, ownership, both, or neither. It never decided who did the work.",
+            sourceLessonSlug: "what-a-correction-cannot-repair",
+          },
+          {
+            prompt: "The third question of the check concerns whether the gap is:",
+            options: ["Isolated or surrounded", "Recent or historical, since older records are held to a different standard", "Documented in more than one archive holding comparable material", "Explained by any surviving statement from the institution involved"],
+            correctIndex: 0,
+            explanation: "Corroboration nearby means a record problem. Silence all around often means an absence.",
+            sourceLessonSlug: "what-a-correction-cannot-repair",
+          },
+          {
+            prompt: "Asking who is claiming and what their interest is serves to:",
+            options: ["Show which part of their evidence to read closely", "Establish whether the claim can be admitted as evidence at all", "Discount claims made by descendants and estates on principle", "Rank competing claims by the credibility of the people making them"],
+            correctIndex: 0,
+            explanation: "Not to discount them. It is the same handling the course gave A'Lelia Bundles in Section 2.",
+            sourceLessonSlug: "what-a-correction-cannot-repair",
+          },
+          {
+            prompt: "If nothing would settle a claim, the honest answer is that it is:",
+            options: ["Serious and unproven", "Most likely false, since an unfalsifiable claim carries no evidentiary weight", "A matter of interpretation on which reasonable readers may simply differ", "Best omitted, since a course cannot responsibly teach an unresolvable dispute"],
+            correctIndex: 0,
+            explanation: "And you say that instead of picking, which is rule two from Section 1 applied at the end of the check.",
+            sourceLessonSlug: "what-a-correction-cannot-repair",
+          },
+          {
+            prompt: "Compounding, as this lesson defines it, is:",
+            options: ["The Matthew effect measured over time", "The accumulation of separate corrections into a single institutional acknowledgment", "The combination of the Matthew and Matilda effects operating on one person", "The growth in the number of contributors falling below the authorship bar"],
+            correctIndex: 0,
+            explanation: "A name missing from one document is missing from everything that cites it afterward, for as long as the document is cited.",
+            sourceLessonSlug: "what-a-correction-cannot-repair",
+          },
+          {
+            prompt: "A reader's default is best changed by:",
+            options: ["A catalog line or a rename", "A memoir, since a first-person account is the most persuasive form of evidence", "A confidential settlement, which signals that the claim had merit", "A court order, which carries more authority than any other instrument"],
+            correctIndex: 0,
+            explanation: "The version a person arrives at without investigating is set by what they retrieve, which is why the assembly moment matters most.",
+            sourceLessonSlug: "what-a-correction-cannot-repair",
+          },
+          {
+            prompt: "In the ledger, Pauli Murray's correction is distinctive because it was made by:",
+            options: ["Another author, by choice", "A court, which vacated the record of the original seminar decision", "An institution, which named a residential college and a historic site", "The family, which negotiated recognition decades after Murray's death"],
+            correctIndex: 0,
+            explanation: "Ginsburg put Murray's and Kenyon's names on the Reed brief in 1971, which nobody required her to do.",
+            sourceLessonSlug: "what-a-correction-cannot-repair",
+          },
+          {
+            prompt: "Which correction instrument did the Lacks case use that no other case here did?",
+            options: ["A negotiated agreement about future conduct", "An eponym change adopted by hospitals in more than one country", "An honorary degree awarded by the institution that held the record", "A published erratum correcting the original paper's author line"],
+            correctIndex: 0,
+            explanation: "The 2013 controlled-access arrangement governs how HeLa genomic data may be used going forward, which is a different kind of reach than an honor or an order.",
+            sourceLessonSlug: "anatomy-of-a-correction",
+          },
+          {
+            prompt: "Why does the lesson say Burke's contemporaneous objection persuaded institutions but not the Mint?",
+            options: ["A person's own claim is self-interested by construction", "Because the Mint had already destroyed the design records by the time she objected", "Because she raised it too late, after the coin had been in circulation for years", "Because museums accept artist statements as evidence and federal agencies cannot"],
+            correctIndex: 0,
+            explanation: "It is the fastest instrument and the weakest in the record, which is the general limit on corrections made by the person affected.",
+            sourceLessonSlug: "anatomy-of-a-correction",
+          },
+          {
+            prompt: "Which pair of instruments reaches future conduct rather than a past record?",
+            options: ["A negotiated agreement and an eponym change", "An erratum and a court order, both of which alter what is already written", "An honorary degree and a portrait, both of which record a past contribution", "A catalog change and a settlement, both of which are retrospective in effect"],
+            correctIndex: 0,
+            explanation: "An agreement governs what people may do next; a rename governs what everyone will say next. Neither touches the original document.",
+            sourceLessonSlug: "anatomy-of-a-correction",
+          },
+          {
+            prompt: "The reason a correction usually cannot be the appropriate remedy is that:",
+            options: ["Only some instruments still exist by the time anyone acts", "Institutions prefer symbolic gestures to remedies with financial consequences", "The person affected is rarely alive to say which remedy they would want", "Appropriate remedies would require admitting fault, which lawyers prevent"],
+            correctIndex: 0,
+            explanation: "An erratum needs a live record; standing needs a surviving claimant; a court order needs a legal record to vacate.",
+            sourceLessonSlug: "anatomy-of-a-correction",
+          },
+          {
+            prompt: "In the ledger, Vivien Thomas's two intervals are:",
+            options: ["27 and 32 years", "22 and 62 years, matching two of the three Lacks intervals", "66 years, the single interval recorded for the Colvin case", "None, because his case is one of the two with no correction at all"],
+            correctIndex: 0,
+            explanation: "From the 1944 operation to the 1971 portrait, and to the 1976 honorary degree and faculty post.",
+            sourceLessonSlug: "what-a-correction-cannot-repair",
+          },
+          {
+            prompt: "Colvin is described as being in the case that won and out of the story that is told because:",
+            options: ["Both are true, and a campaign's decision produced both", "The federal court sealed the plaintiffs' names when it issued its ruling", "She withdrew from the litigation before the Supreme Court affirmed the ruling", "Her testimony was given in closed session and never entered the public record"],
+            correctIndex: 0,
+            explanation: "She was a plaintiff and a central witness in Browder v. Gayle, and the campaign had already chosen a different name to build the public story around.",
+            sourceLessonSlug: "claudette-colvin-and-the-choice-not-to-name",
+          },
+          {
+            prompt: "The instrument the Ontario children's hospitals used in February 2024 was:",
+            options: ["An eponym change", "A court order vacating the original attribution of the procedure", "A negotiated agreement with the Thomas family about future use", "A catalog record change in their institutional archives"],
+            correctIndex: 0,
+            explanation: "Which reaches every future utterance of the procedure's name and leaves the 1945 paper exactly as it was.",
+            sourceLessonSlug: "anatomy-of-a-correction",
+          },
+          {
+            prompt: "Survivorship in corrections, as the final lesson names it, means:",
+            options: ["Attention reaches only the cases already documented", "Only claims pressed by a surviving family member are ever acted upon", "Corrections are made only where the person lived long enough to see them", "Institutions correct only those records that survived in their own archives"],
+            correctIndex: 0,
+            explanation: "Which makes any list of corrected cases, including this course's six, a biased sample of the underlying problem.",
+            sourceLessonSlug: "what-a-correction-cannot-repair",
+          },
+          {
+            prompt: "What is the fifth and last question of the check?",
+            options: ["What would settle it, and does that thing exist?", "Which institution has the authority to make the correction you are seeking?", "How long have comparable corrections taken in similar documented cases?", "Whether the claim has been repeated by enough independent sources to be safe"],
+            correctIndex: 0,
+            explanation: "If nothing would settle it, the honest answer is that the claim is serious and unproven, and you say that rather than picking.",
+            sourceLessonSlug: "what-a-correction-cannot-repair",
+          },
+          {
+            prompt: "The Malone row of the ledger records her business as beginning in:",
+            options: ["1902", "1918, when the Poro College complex was established in St. Louis", "1869, the year of her birth in Metropolis, Illinois", "1946, when the St. Louis orphans home was renamed for her"],
+            correctIndex: 0,
+            explanation: "The move to St. Louis. Her row has no correction and a live dispute instead.",
+            sourceLessonSlug: "what-a-correction-cannot-repair",
+          },
+        ],
+      },
+    },
   ],
 };
