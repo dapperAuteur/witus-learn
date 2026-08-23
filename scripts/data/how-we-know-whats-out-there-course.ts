@@ -2313,8 +2313,13 @@ NASA. (n.d.). *Dark matter: What we know and how we know it*. https://science.na
       slug: "check-the-ladder",
       title: "15 · Knowledge check: the chain of inference",
       section: "Part 3 · The whole thing",
+      body: `The course's final check, and the Part 3 section check at the same time: redshift and what expansion does not mean, the disagreement nobody has resolved, where the atoms in your hand were assembled, and why dark matter is a different kind of claim from a parallax distance.
+
+Ten questions are drawn from a bank of sixty-two, so a retake is a different exam. Each answer links back to the lesson that teaches it.`,
       quiz: {
-        passingScore: 70,
+        passingScore: 80,
+        questionsPerAttempt: 10,
+        shuffleOptions: true,
         questions: [
           {
             prompt: "Why was it essential that Leavitt studied variable stars in the Magellanic Clouds specifically?",
@@ -2393,6 +2398,673 @@ NASA. (n.d.). *Dark matter: What we know and how we know it*. https://science.na
             explanation:
               "Both are well supported, and in different ways. Parallax measures an angle. Dark matter names a gap between the gravity we infer and the matter we can see, believed because several independent observations require extra mass and the alternatives fit worse.",
             sourceLessonSlug: "vera-rubin-and-the-stuff-we-cannot-see",
+          },
+
+          // Pool expansion to the Tier-0 final spec. The six above reached five lessons; the
+          // fifty-six below reach every lesson in Part 3, including the capstone, so the bank a
+          // learner is drawn against covers the section it closes rather than a sample of it.
+          {
+            prompt: "What does a spectrum's line pattern displaced toward longer wavelengths mean?",
+            options: [
+              "That the star contains an element not present in the laboratory sample",
+              "The light has been stretched",
+              "That the instrument recorded the spectrum at the wrong exposure",
+              "That the star's surface is cooler than the pattern would otherwise suggest",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The pattern's spacing is fixed by physics, so the whole pattern sitting at longer wavelengths means something stretched the light on its way here.",
+            sourceLessonSlug: "redshift-and-an-expanding-universe",
+          },
+          {
+            prompt: "What do nearly all distant galaxies show?",
+            options: [
+              "A redshift",
+              "A blueshift, which is why the sky appears to be closing in around us",
+              "No shift at all, once their own rotation has been corrected for",
+              "A shift that changes direction depending on which way you look",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Look at distant galaxies and nearly all of them show light shifted toward longer wavelengths.",
+            sourceLessonSlug: "redshift-and-an-expanding-universe",
+          },
+          {
+            prompt: "How does redshift relate to distance?",
+            options: [
+              "The further away a galaxy is, the larger the shift",
+              "The shift is the same for every galaxy beyond a certain distance",
+              "Nearer galaxies show larger shifts, because their motion is easier to detect",
+              "The two are unrelated, which is why distance needs a separate ladder",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The further away a galaxy is, the larger the shift. That relationship between distance and redshift is the observational foundation of modern cosmology.",
+            sourceLessonSlug: "redshift-and-an-expanding-universe",
+          },
+          {
+            prompt: "What does expansion NOT mean?",
+            options: [
+              "That the distances between things are increasing in every direction",
+              "That light traveling through space gets stretched along the way",
+              "Galaxies flying outward from a central point",
+              "That every observer anywhere sees distant galaxies receding from them",
+            ],
+            correctIndex: 2,
+            explanation:
+              "There is no such point and we are not near it. The other three statements are what expansion does mean, which is why this is where almost every popular account goes wrong.",
+            sourceLessonSlug: "redshift-and-an-expanding-universe",
+          },
+          {
+            prompt: "What does expansion actually mean?",
+            options: [
+              "That the universe is acquiring new space at its outer boundary",
+              "The distances between things are increasing everywhere",
+              "That galaxies are moving faster the longer the universe has existed",
+              "That space is thinning out as the same matter spreads through more of it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Space itself is expanding, so the distances between things increase everywhere, and light traveling through it gets stretched along the way.",
+            sourceLessonSlug: "redshift-and-an-expanding-universe",
+          },
+          {
+            prompt: "Why does the question where was the center have no location as an answer?",
+            options: [
+              "Because the center lies outside the part of the universe we can observe",
+              "Because the earliest galaxies have moved too far to be traced back",
+              "Because the center is a moment in time rather than a place",
+              "Every observer anywhere sees the same recession",
+            ],
+            correctIndex: 3,
+            explanation:
+              "If every observer anywhere sees distant galaxies receding, no observation singles out a location. The question assumes a kind of expansion that is not the kind happening.",
+            sourceLessonSlug: "redshift-and-an-expanding-universe",
+          },
+          {
+            prompt: "What does the balloon analogy get right?",
+            options: [
+              "No dot is the center, and the surface has no edge",
+              "The balloon is being inflated from a single point where the air enters",
+              "The dots grow larger as the balloon expands, just as galaxies do",
+              "The balloon eventually reaches a size at which it stops expanding",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Every dot moves away from every other dot, no dot is the center, and the surface has no edge. Like every analogy it breaks if pushed, but the part it gets right is the part people get wrong.",
+            sourceLessonSlug: "redshift-and-an-expanding-universe",
+          },
+          {
+            prompt: "Who published the distance-redshift relationship first, and when?",
+            options: [
+              "Hubble, in 1929, in the paper the law is usually named after",
+              "Leavitt, in 1912, in the circular reporting the Magellanic Cloud variables",
+              "Lemaître, in 1927",
+              "Bessel, in 1838, alongside the first measurement of a stellar parallax",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Georges Lemaître published the relationship, with an estimate of the rate, in 1927, two years before Hubble's 1929 paper.",
+            sourceLessonSlug: "redshift-and-an-expanding-universe",
+          },
+          {
+            prompt: "Why was Lemaître's paper largely missed at the time?",
+            options: [
+              "It was published in French",
+              "It appeared after Hubble's own result had already been circulated",
+              "It contained no estimate of the rate, only the relationship in principle",
+              "It was published in a journal that suspended distribution that year",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It appeared in a French-language journal that the English-speaking astronomical community largely did not read. It did include an estimate of the rate.",
+            sourceLessonSlug: "redshift-and-an-expanding-universe",
+          },
+          {
+            prompt: "What name does the International Astronomical Union recommend, and this course use?",
+            options: [
+              "Hubble's law, since Hubble's paper is the one the field actually read",
+              "The Hubble-Lemaître law",
+              "Lemaître's law, since he published the relationship first by two years",
+              "The expansion relation, avoiding either name entirely",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The IAU has recommended the Hubble-Lemaître law, and this course uses it.",
+            sourceLessonSlug: "redshift-and-an-expanding-universe",
+          },
+          {
+            prompt: "What does the naming episode illustrate?",
+            options: [
+              "That priority disputes are usually settled by the earliest publication date",
+              "That a result travels faster when it comes with a numerical estimate",
+              "That scientific bodies revise names whenever new evidence appears",
+              "Who gets remembered depends on where you published",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Who gets remembered depends heavily on what language you published in, which journal, and who was reading. The physics does not care. The naming does, and the naming is what most people learn.",
+            sourceLessonSlug: "redshift-and-an-expanding-universe",
+          },
+          {
+            prompt: "Someone insists the expansion must have a center because everything recedes from us. What is wrong with that?",
+            options: [
+              "It assumes objects are flying outward through space from a point",
+              "It confuses the redshift of a galaxy with the motion of its individual stars",
+              "It assumes our own galaxy is stationary when it is in fact moving",
+              "It treats an observation of nearby galaxies as if it held for distant ones",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Space itself is expanding everywhere, so every observer anywhere sees the same recession. Seeing galaxies recede in all directions is what anyone would see, from anywhere.",
+            sourceLessonSlug: "redshift-and-an-expanding-universe",
+          },
+          {
+            prompt: "What are the two broad families of method for measuring the expansion rate?",
+            options: [
+              "Optical measurements and radio measurements of the same galaxies",
+              "Climbing the ladder, or predicting from the early universe",
+              "Ground-based observation and space-based observation above the atmosphere",
+              "Measuring nearby galaxies and measuring the most distant ones reachable",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Build it up from nearby by climbing the ladder, or take detailed measurements of the light left over from the early universe, fit the standard cosmological model, and derive what the present-day rate should be.",
+            sourceLessonSlug: "the-hubble-tension",
+          },
+          {
+            prompt: "What does the ladder-based method read the expansion rate off?",
+            options: [
+              "The temperature of the light left over from the early universe",
+              "The rate at which the most distant galaxies are losing brightness",
+              "The relationship between distance and redshift",
+              "The difference between the ages of the oldest and youngest stars",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Parallax, then variable stars, then standard candles, and then the expansion rate is read off the relationship between distance and redshift.",
+            sourceLessonSlug: "the-hubble-tension",
+          },
+          {
+            prompt: "What does the early-universe method work from?",
+            options: [
+              "The light left over from the early universe",
+              "The oldest stars that can still be individually resolved in our galaxy",
+              "The abundance of heavy elements in the most distant visible galaxies",
+              "The observed rate at which new galaxies form in the present day",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It takes detailed measurements of that light, fits the standard cosmological model to them, and derives what the present-day expansion rate should be.",
+            sourceLessonSlug: "the-hubble-tension",
+          },
+          {
+            prompt: "How do the two measured values compare?",
+            options: [
+              "They agree closely once the uncertainties are properly accounted for",
+              "The early-universe value comes out higher than the ladder value",
+              "The ladder value comes out higher",
+              "They disagree in different directions depending on which galaxies are used",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The ladder-based value comes out higher than the early-universe value, and the gap has not closed as the measurements have improved.",
+            sourceLessonSlug: "the-hubble-tension",
+          },
+          {
+            prompt: "What happened to the disagreement as both measurements became more precise?",
+            options: [
+              "It closed, leaving only a difference within the combined uncertainty",
+              "It sharpened",
+              "It stayed exactly where it was, since neither uncertainty actually shrank",
+              "It reversed, with the early-universe value overtaking the ladder value",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Improving precision sharpened the disagreement, because the uncertainties shrank while the values did not converge.",
+            sourceLessonSlug: "the-hubble-tension",
+          },
+          {
+            prompt: "Why is that pattern significant?",
+            options: [
+              "Random noise would have made the values converge",
+              "It shows that one of the two teams has been revising its own numbers",
+              "It means the expansion rate itself must be changing over time",
+              "It proves the standard cosmological model has to be abandoned",
+            ],
+            correctIndex: 0,
+            explanation:
+              "If the gap were caused by random measurement noise, tighter measurements would tend to converge. Instead the uncertainties shrank while the values stayed apart, which points at a systematic error or at something missing from the model.",
+            sourceLessonSlug: "the-hubble-tension",
+          },
+          {
+            prompt: "Which of these is one of the three candidate explanations for the tension?",
+            options: [
+              "That the two teams are measuring genuinely different quantities",
+              "That the expansion rate varies from one part of the sky to another",
+              "That the redshift of distant galaxies has been misidentified",
+              "That the cosmological model is incomplete",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The three are an unrecognized systematic error somewhere on the ladder, an unrecognized systematic error in the early-universe analysis, or the cosmological model being incomplete so the prediction rests on an assumption that is not quite right.",
+            sourceLessonSlug: "the-hubble-tension",
+          },
+          {
+            prompt: "Which of the three explanations is currently established?",
+            options: [
+              "The ladder error, since calibration is the field's known weak point",
+              "The early-universe error, since that analysis rests on a single model",
+              "None; nobody knows which",
+              "The incomplete model, which is why new physics is now assumed",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Nobody knows which. The lesson is emphatic that this is not a crisis and not embarrassing: it is what the frontier looks like from the inside.",
+            sourceLessonSlug: "the-hubble-tension",
+          },
+          {
+            prompt: "What accidental lesson does most science education teach, according to this lesson?",
+            options: [
+              "That disagreement means somebody is doing it wrong",
+              "That every result is provisional and none of it can be relied on",
+              "That the most recent measurement always supersedes the earlier ones",
+              "That scientists rarely check each other's work in practice",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Presenting only settled results teaches that science is a body of facts, and that disagreement means somebody erred. Two well-executed measurements of the same quantity that do not agree is the corrective.",
+            sourceLessonSlug: "the-hubble-tension",
+          },
+          {
+            prompt: "What does the lesson say the tension actually shows a learner?",
+            options: [
+              "That cosmology is less reliable than the rest of astronomy",
+              "That the distance ladder should be replaced by early-universe methods",
+              "What the frontier looks like from the inside",
+              "That precision matters more than accuracy in modern measurement",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The lesson calls it the best thing in the course: a learner who understands it understands something most popular science coverage never conveys.",
+            sourceLessonSlug: "the-hubble-tension",
+          },
+          {
+            prompt: "What four things should accompany any quoted value for the expansion rate?",
+            options: [
+              "A value, an uncertainty, a method, and a date",
+              "A value, a source, a research group, and a rival figure to compare",
+              "A value, a range, an instrument, and the number of observations behind it",
+              "A value, a confidence level, a peer reviewer, and a publication venue",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A value, an uncertainty, a method, and a date. A single confident figure with none of those is not a measurement being reported; it is a fact being asserted.",
+            sourceLessonSlug: "the-hubble-tension",
+          },
+          {
+            prompt: "Why does this course deliberately not print a current value for the expansion rate?",
+            options: [
+              "Because the two methods disagree and no single value would be honest",
+              "The values are actively revised",
+              "Because the figure depends on units the course has not introduced",
+              "Because quoting it would require choosing between two research groups",
+            ],
+            correctIndex: 1,
+            explanation:
+              "They are actively revised, and a course is a poor place for a number that moves. Go to a current source, and note which method produced the figure you find.",
+            sourceLessonSlug: "the-hubble-tension",
+          },
+          {
+            prompt: "What was the early universe overwhelmingly made of?",
+            options: [
+              "Carbon and oxygen, which later became the basis of everything living",
+              "Iron, the endpoint of fusion and therefore the most stable element",
+              "A roughly even mixture of every element now found on the periodic table",
+              "Hydrogen and helium",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Hydrogen and helium and very little else, which is why the carbon, oxygen, nitrogen, calcium and iron in your body needed something to make them.",
+            sourceLessonSlug: "what-stars-make",
+          },
+          {
+            prompt: "What holds a star up against its own gravity for most of its life?",
+            options: [
+              "The energy released by fusing hydrogen into helium",
+              "The pressure of the surrounding interstellar gas pressing inward equally",
+              "Its rotation, which throws material outward as fast as gravity pulls in",
+              "The magnetic field generated by the circulation of its outer layers",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A star spends most of its life fusing hydrogen into helium in its core, and the energy released is what holds it up.",
+            sourceLessonSlug: "what-stars-make",
+          },
+          {
+            prompt: "What happens when the core hydrogen runs low?",
+            options: [
+              "The star cools smoothly and settles into a stable smaller form",
+              "The core contracts and gets hotter",
+              "The outer layers collapse inward all at once without warning",
+              "Fusion stops entirely and the star begins to fade over a few years",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The core contracts, gets hotter, and heavier elements begin to fuse: helium into carbon, and onward through progressively heavier elements in the most massive stars.",
+            sourceLessonSlug: "what-stars-make",
+          },
+          {
+            prompt: "Up to roughly which element does that process build?",
+            options: [
+              "Carbon, past which the core is no longer hot enough to continue",
+              "Iron",
+              "Uranium, the heaviest element found in any natural setting",
+              "Helium, since nothing heavier fuses inside an ordinary star",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The process builds elements up to around iron. Past that, something else is required.",
+            sourceLessonSlug: "what-stars-make",
+          },
+          {
+            prompt: "Why does element-building essentially stop at iron?",
+            options: [
+              "Because iron nuclei are too large to collide at any achievable speed",
+              "Because the core has run out of the lighter fuel needed to keep going",
+              "Fusing past iron no longer releases net energy",
+              "Because iron settles to the very center where fusion cannot reach it",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Past iron, fusion consumes energy rather than releasing it, so it cannot sustain the outward pressure holding the star up.",
+            sourceLessonSlug: "what-stars-make",
+          },
+          {
+            prompt: "Where do elements heavier than iron come from?",
+            options: [
+              "The cores of the very largest stars, given enough time",
+              "The gas clouds between stars, where slow reactions accumulate them",
+              "The extreme conditions of stellar death",
+              "The early universe, which produced them before the first stars formed",
+            ],
+            correctIndex: 2,
+            explanation:
+              "They require the extreme conditions of stellar death, including supernovae and the collision of dense stellar remnants.",
+            sourceLessonSlug: "what-stars-make",
+          },
+          {
+            prompt: "Which events have now been observed with both light and gravitational waves?",
+            options: [
+              "Collisions of dense stellar remnants",
+              "The formation of new stars inside collapsing clouds of gas",
+              "The moment a star's core first begins to fuse helium into carbon",
+              "The passage of a galaxy's outer material through a neighboring galaxy",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The collision of dense stellar remnants, one of the events that produces elements heavier than iron, has been observed with both light and gravitational waves.",
+            sourceLessonSlug: "what-stars-make",
+          },
+          {
+            prompt: "What happens to the elements a star builds?",
+            options: [
+              "They stay locked in the remnant the star leaves behind",
+              "They are thrown out and mixed into gas that forms new stars",
+              "They are consumed again as the star cycles through further fusion stages",
+              "They sink to the center and are permanently removed from circulation",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The material is thrown out and mixed into the gas that later forms new stars and planets. The atoms in your hand were assembled inside stars and released when those stars ended.",
+            sourceLessonSlug: "what-stars-make",
+          },
+          {
+            prompt: "What does laboratory nuclear physics contribute to the evidence chain here?",
+            options: [
+              "A measurement of how much of each element a galaxy actually contains",
+              "A direct observation of fusion happening inside a star's core",
+              "Which reactions occur at which temperatures",
+              "The distance to the explosions in which heavy elements are produced",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Laboratory nuclear physics tells us which reactions occur at which temperatures and what they produce. Spectra tell us what stars are made of, models combine the two, and observed abundances test the result.",
+            sourceLessonSlug: "what-stars-make",
+          },
+          {
+            prompt: "What does the lesson say the shape of a well-supported claim is?",
+            options: [
+              "One decisive experiment that no competing explanation can account for",
+              "A result reproduced by the same method in several different laboratories",
+              "A prediction made before the observation that later confirmed it",
+              "Several different ways of being wrong that would have to fail together",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Not one decisive experiment, but several roughly independent lines that agree, so that fooling everyone would require them all to fail in the same direction.",
+            sourceLessonSlug: "what-stars-make",
+          },
+          {
+            prompt: "How do things orbiting a central mass normally behave as you go further out?",
+            options: [
+              "They move more slowly",
+              "They move faster, because they have further to travel in each orbit",
+              "They move at the same speed regardless of how far out they are",
+              "They move erratically, since the central mass no longer dominates",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The outer planets travel more slowly than the inner ones, because gravity weakens with distance. A galaxy with most of its visible matter toward the middle ought to behave the same way.",
+            sourceLessonSlug: "vera-rubin-and-the-stuff-we-cannot-see",
+          },
+          {
+            prompt: "Who did Vera Rubin work with on the galaxy rotation measurements?",
+            options: [
+              "Edwin Hubble, whose earlier work on distant galaxies she was extending",
+              "Kent Ford",
+              "Annie Jump Cannon, whose classification made the spectra readable",
+              "Georges Lemaître, who supplied the cosmological model behind the work",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Rubin worked with Kent Ford, measuring how fast material orbits at different distances from the centers of spiral galaxies.",
+            sourceLessonSlug: "vera-rubin-and-the-stuff-we-cannot-see",
+          },
+          {
+            prompt: "What did they use to read the orbital motion?",
+            options: [
+              "Repeated photographs taken years apart, showing the material shift",
+              "The changing brightness of stars as they passed behind the galaxy's disk",
+              "Spectra",
+              "The angle each galaxy's disk presents to us as it turns",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Spectra: the same displaced line patterns that measure motion toward or away from us, applied to material at different distances from a galaxy's center.",
+            sourceLessonSlug: "vera-rubin-and-the-stuff-we-cannot-see",
+          },
+          {
+            prompt: "What did the outer regions of the galaxies turn out to do?",
+            options: [
+              "They kept moving at roughly the same speed far out",
+              "They slowed down faster than the visible matter predicted they would",
+              "They moved in the opposite direction from the inner regions",
+              "They showed no measurable motion at all beyond a certain radius",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They were not slowing down as expected. The result has been reproduced across many galaxies and is now one of the most robust observations in astronomy.",
+            sourceLessonSlug: "vera-rubin-and-the-stuff-we-cannot-see",
+          },
+          {
+            prompt: "What does orbital speed at a given radius depend on?",
+            options: [
+              "The brightness of the material at that radius, which traces its mass",
+              "How much mass is inside the orbit",
+              "The total mass of the galaxy, wherever in it that mass happens to sit",
+              "The age of the galaxy, since older systems have had time to settle",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Orbital speed depends on how much mass lies inside the orbit, which is why material at the edge moving too fast is a statement about mass and not about the material itself.",
+            sourceLessonSlug: "vera-rubin-and-the-stuff-we-cannot-see",
+          },
+          {
+            prompt: "What two possibilities does the rotation result force?",
+            options: [
+              "Either the measurements are wrong or the galaxies are not in equilibrium",
+              "Either the galaxies are much closer than assumed or much further away",
+              "Either the spectra were misread or the model of gravity is out of date",
+              "Either there is unseen mass, or gravity behaves differently at those scales",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Much more mass than we can see, distributed differently from the light, or gravity not behaving as expected at those scales. The first is the mainstream option and the unseen mass is called dark matter.",
+            sourceLessonSlug: "vera-rubin-and-the-stuff-we-cannot-see",
+          },
+          {
+            prompt: "Which other independent line of evidence points the same way?",
+            options: [
+              "The way galaxy clusters bend light passing through them",
+              "The rate at which the most distant galaxies are receding from us",
+              "The abundance of heavy elements in the outer parts of spiral galaxies",
+              "The disagreement between the two measurements of the expansion rate",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Galaxy clusters bending light that passes through them is one of the other independent lines requiring extra mass, which is part of why the unseen-mass option is the mainstream one.",
+            sourceLessonSlug: "vera-rubin-and-the-stuff-we-cannot-see",
+          },
+          {
+            prompt: "What, precisely, is dark matter?",
+            options: [
+              "A particle that has been detected but not yet fully characterized",
+              "A name for a discrepancy",
+              "A form of gravity that operates only at galactic distances",
+              "The matter in a galaxy that is too faint for current instruments to see",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It is not a substance anybody has detected directly. It is a name for the gap between the gravity we infer and the matter we can see, believed because several independent observations require extra mass and the alternatives fit worse.",
+            sourceLessonSlug: "vera-rubin-and-the-stuff-we-cannot-see",
+          },
+          {
+            prompt: "What was Rubin herself clear about?",
+            options: [
+              "That the data showed something was missing, not what it was",
+              "That the missing mass would eventually be found to be ordinary matter",
+              "That the accepted theory of gravity would have to be replaced",
+              "That the result would not hold up outside the galaxies she measured",
+            ],
+            correctIndex: 0,
+            explanation:
+              "She was clear that the data showed something was missing, not what the missing thing was. The lesson calls that distinction the discipline.",
+            sourceLessonSlug: "vera-rubin-and-the-stuff-we-cannot-see",
+          },
+          {
+            prompt: "What does the course say a learner finishing it should be able to do with those two kinds of claim?",
+            options: [
+              "Rank them, so the geometric measurement is trusted over the inference",
+              "Set aside the inference until the missing substance has been detected",
+              "Say why they are supported differently",
+              "Treat both as provisional until a single method can confirm them both",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Not one is true and one is not. Both are well supported, but one is a geometric measurement and the other is the best current explanation of a persistent anomaly, and knowing which kind of claim you are holding is the entire skill this course teaches.",
+            sourceLessonSlug: "vera-rubin-and-the-stuff-we-cannot-see",
+          },
+          {
+            prompt: "What does the capstone ask you to find?",
+            options: [
+              "A published paper whose method you can reproduce from the description",
+              "A number in a popular astronomy article",
+              "An error in a widely circulated claim about the size of the universe",
+              "A disagreement between two sources reporting the same measurement",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A distance, an age, a mass, a temperature, or a composition, from a news story, a mission press release, a magazine feature, or a museum caption. It must be real and you must link it.",
+            sourceLessonSlug: "capstone-trace-a-number-down-the-ladder",
+          },
+          {
+            prompt: "What does the capstone want you to do when the trail goes cold?",
+            options: [
+              "Substitute the nearest comparable measurement you were able to find",
+              "Choose a different number and start the exercise again from the beginning",
+              "Say where and why",
+              "Estimate the missing step from what the surrounding rungs would require",
+            ],
+            correctIndex: 2,
+            explanation:
+              "You will not always get to the bottom. The article cites no source and I could not identify the survey is a real result, and saying so is what the assignment asks for.",
+            sourceLessonSlug: "capstone-trace-a-number-down-the-ladder",
+          },
+          {
+            prompt: "What does the capstone mean by naming the weakest link?",
+            options: [
+              "The step you would least like to be wrong",
+              "The rung of the ladder that reaches the shortest distance",
+              "The source in the chain that is hardest for a reader to access",
+              "The measurement with the largest published uncertainty attached to it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Which step would you least like to be wrong, and why. The assignment notes it is often a calibration rather than a measurement.",
+            sourceLessonSlug: "capstone-trace-a-number-down-the-ladder",
+          },
+          {
+            prompt: "What is usually missing from a popular astronomy number?",
+            options: [
+              "The name of the instrument that produced the original observation",
+              "The identity of the research group that published it",
+              "Its uncertainty and its date",
+              "A comparison against the same quantity measured a different way",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Almost every popular number is printed without its uncertainty and without its date, and part of the assignment is saying what should have accompanied it.",
+            sourceLessonSlug: "capstone-trace-a-number-down-the-ladder",
+          },
+          {
+            prompt: "What three kinds of claim does the capstone ask you to distinguish?",
+            options: [
+              "Observed, calculated, and predicted",
+              "Published, unpublished, and disputed",
+              "Geometric, model-dependent, and best explanation",
+              "Direct, indirect, and analogical",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A geometric measurement, a model-dependent inference, or a best explanation of an anomaly. All three are legitimate, and confusing them is the failure this course exists to prevent.",
+            sourceLessonSlug: "capstone-trace-a-number-down-the-ladder",
+          },
+          {
+            prompt: "Does the capstone require you to find an error to earn full credit?",
+            options: [
+              "No",
+              "Yes, since tracing a chain that holds up demonstrates nothing",
+              "Only if the number came from a press release rather than a paper",
+              "Only when the article gives no source for the figure it prints",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Most popular astronomy numbers are roughly right, and correctly concluding that a number is well supported, with the chain shown, is a full-credit answer.",
+            sourceLessonSlug: "capstone-trace-a-number-down-the-ladder",
+          },
+          {
+            prompt: "What is the capstone's one rule, carried over from lesson 2?",
+            options: [
+              "Cite every source in the same format the article itself used",
+              "Do not assert what you cannot support",
+              "Trace at least three rungs before drawing any conclusion",
+              "Prefer a primary source to a secondary one wherever both exist",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The same rule the course applied to the flattering story about Banneker. If you could not find the original measurement, write that, and never write a sentence implying you read a paper you did not read.",
+            sourceLessonSlug: "capstone-trace-a-number-down-the-ladder",
           },
         ],
       },
