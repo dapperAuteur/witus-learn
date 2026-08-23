@@ -2475,14 +2475,20 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
     },
 
     // ─────────────────────────────────────────────────────────────────────────
-    // QUIZ: final graded gate (passingScore 70)
+    // QUIZ: final graded gate. Tier-0 spec: pools 40, serves 10, passes at 80.
+    // It doubles as the Section 7 check, so its bank reaches that section's own lessons.
     // ─────────────────────────────────────────────────────────────────────────
     {
       slug: "broadcasting-final-quiz",
       title: "17 · Final quiz: break into broadcasting",
       section: "Section 7 · Getting hired",
+      body: `The course's final check, and the Section 7 check at the same time: how people actually break in through internships and day-calling, the unions and professional bodies that turn gigs into a career, and the crew vocabulary from the drill before this one.
+
+Ten questions are drawn from a bank of forty, so a retake is a different exam. Each answer links back to the lesson that teaches it.`,
       quiz: {
-        passingScore: 70,
+        passingScore: 80,
+        questionsPerAttempt: 10,
+        shuffleOptions: true,
         questions: [
           {
             prompt:
@@ -2621,6 +2627,412 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
             explanation:
               "Careers are built from credits: internships and freelance/day-call gigs (often starting in utility or camera) plus networking through unions and organizations like the SBE and NAB.",
             sourceLessonSlug: "unions-networking-first-job",
+          },
+
+          // Pool expansion to the Tier-0 final spec. The ten above reach ten lessons; the thirty
+          // below close Section 7, whose own lessons the bank barely reached.
+          {
+            prompt: "What is almost nobody's first broadcasting job?",
+            options: [
+              "A freelance day call on a local sports crew",
+              "An internship at a station or a production company",
+              "A staff position",
+              "A volunteer shift streaming a school or community event",
+            ],
+            correctIndex: 2,
+            explanation:
+              "You break in through internships, freelancing and day-calling, and stringing together credits until you have a resume and a network. The other three are how it actually starts.",
+            sourceLessonSlug: "internships-and-freelancing",
+          },
+          {
+            prompt: "What is day-calling?",
+            options: [
+              "Getting hired per event",
+              "Phoning production companies each morning to ask for work",
+              "Working a fixed shift that covers whatever the station needs",
+              "Being kept on retainer for a season by a single employer",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Freelancing per event is common for camera, utility, and technical roles, and it is how most crews are filled on a given Saturday.",
+            sourceLessonSlug: "internships-and-freelancing",
+          },
+          {
+            prompt: "What do employers actually hire?",
+            options: [
+              "The most specialized skill set available at the day rate offered",
+              "The candidate with the strongest formal qualification on paper",
+              "Whoever the crew lead worked with most recently",
+              "Proof of reliability",
+            ],
+            correctIndex: 3,
+            explanation:
+              "And reliability is proven one gig at a time. A season of local freelance utility or camera work beats a degree with no credits when a truck needs hands next Saturday.",
+            sourceLessonSlug: "internships-and-freelancing",
+          },
+          {
+            prompt: "How does the lesson tell you to treat an internship?",
+            options: [
+              "As a months-long interview",
+              "As a course of study, with the learning as the whole return",
+              "As a stopgap while you apply for paid positions elsewhere",
+              "As a credential to list rather than a relationship to build",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Station, sports team, and production-company internships are the classic entry, and the way you work through one is what decides whether it leads anywhere.",
+            sourceLessonSlug: "internships-and-freelancing",
+          },
+          {
+            prompt: "What does the lesson tell you to say yes to when registering with crewing services?",
+            options: [
+              "Only the calls that match the role you are aiming at long term",
+              "Utility, camera-assist, and audio-utility calls",
+              "Whatever pays the highest day rate on offer that week",
+              "Only calls at venues within a short distance of home",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Register with local production companies and crewing services and take those calls. Show up early, work safe, coil clean.",
+            sourceLessonSlug: "internships-and-freelancing",
+          },
+          {
+            prompt: "Why does the lesson recommend starting local and small-market?",
+            options: [
+              "Because larger markets require a union card before you can work",
+              "Because small markets pay comparably once travel is accounted for",
+              "Because the competition there is limited to local candidates",
+              "You touch every role fast",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Small markets and local sports let you get your hands on everything quickly, and the labor data notes that many broadcast and technical workers start in smaller markets and move up.",
+            sourceLessonSlug: "internships-and-freelancing",
+          },
+          {
+            prompt: "What do volunteer reps give you?",
+            options: [
+              "Real credits and reel material now",
+              "A reference from an employer who paid you for the work",
+              "Access to the equipment that a paid crew would not let you touch",
+              "Priority consideration when a paid position opens at the same venue",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Community access, school sports, and church or event streaming produce credits and footage immediately, which is what the reel and the resume need.",
+            sourceLessonSlug: "internships-and-freelancing",
+          },
+          {
+            prompt: "What does the two-sentence introduction email contain?",
+            options: [
+              "Your availability, your day rate, and the equipment you own",
+              "A link to your reel and nothing else, so it gets watched",
+              "Who you are, what you can do, and that you will take any call",
+              "A summary of your training and where you completed it",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Name the gear and skills, including rigging and knots for utility, and say you will take any call to prove it.",
+            sourceLessonSlug: "internships-and-freelancing",
+          },
+          {
+            prompt: "In the lesson's example, how does the student end up first-call for a camera-assist opening?",
+            options: [
+              "By completing a certification the network required for the role",
+              "By applying directly when the position was advertised publicly",
+              "By moving to a larger market where more openings existed",
+              "By interning, joining the freelance list, and working a dozen games",
+            ],
+            correctIndex: 3,
+            explanation:
+              "A staff path built entirely from credits: one summer internship, a place on the freelance utility list, a season of day calls, then the opening.",
+            sourceLessonSlug: "internships-and-freelancing",
+          },
+          {
+            prompt: "What does the practical exercise in this lesson ask you to list?",
+            options: [
+              "Three internships and three local production companies or crewing services",
+              "Three roles you could realistically be hired into this season",
+              "Three pieces of equipment you would need to buy to take a call",
+              "Three people already working in the industry who could refer you",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Six contacts to reach this month, plus the two-sentence email drafted and ready to send to each.",
+            sourceLessonSlug: "internships-and-freelancing",
+          },
+          {
+            prompt: "What does the lesson mean by stringing together credits?",
+            options: [
+              "Building a resume and a network one gig at a time",
+              "Listing every production you have observed as well as worked on",
+              "Combining several part-time roles into a full-time income",
+              "Collecting written references from each crew lead you work under",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Internships, freelance day calls, and volunteer reps accumulate until you have both a resume and the relationships that produce the next call.",
+            sourceLessonSlug: "internships-and-freelancing",
+          },
+          {
+            prompt: "What three things does the lesson say shape a broadcasting career?",
+            options: [
+              "Talent, timing, and the market you happen to start in",
+              "Networking, unions, and professional bodies",
+              "Education, certification, and the equipment you can operate",
+              "Reel, resume, and the portfolio that hosts them both",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Who knows your work, the unions that represent much of the technical and crew workforce, and bodies like the SBE and the NAB.",
+            sourceLessonSlug: "unions-networking-first-job",
+          },
+          {
+            prompt: "What does IATSE represent?",
+            options: [
+              "Broadcast technicians at some networks and stations specifically",
+              "The engineers who hold certification through a professional body",
+              "The industry's employers rather than its workforce",
+              "Many crew, camera, and technical roles across live events and production",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The International Alliance of Theatrical Stage Employees covers a broad span of live-event and production crew work.",
+            sourceLessonSlug: "unions-networking-first-job",
+          },
+          {
+            prompt: "What does NABET-CWA represent?",
+            options: [
+              "Broadcast technicians and related workers at some networks and stations",
+              "Camera and stage crew across theatrical and live-event production",
+              "On-air talent negotiating contracts with networks",
+              "The stations themselves, in dealings with federal regulators",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The National Association of Broadcast Employees and Technicians, part of the Communications Workers of America.",
+            sourceLessonSlug: "unions-networking-first-job",
+          },
+          {
+            prompt: "What is the SBE?",
+            options: [
+              "The federal body that licenses stations and manages spectrum",
+              "The union representing camera and utility crew in larger markets",
+              "The Society of Broadcast Engineers: certification and a professional network",
+              "The industry association whose annual convention is a hiring venue",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Certification, education, and a professional network for engineers and technicians, with local chapters that are worth attending.",
+            sourceLessonSlug: "unions-networking-first-job",
+          },
+          {
+            prompt: "What is the NAB?",
+            options: [
+              "A union representing broadcast technicians at network stations",
+              "The certifying body for broadcast engineers and technicians",
+              "The federal agency setting closed-captioning requirements",
+              "The industry association, whose convention is a major networking venue",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The National Association of Broadcasters. Its annual convention and career resources are among the places the lesson tells you to show up.",
+            sourceLessonSlug: "unions-networking-first-job",
+          },
+          {
+            prompt: "What does the lesson say about union representation in broadcasting?",
+            options: [
+              "It varies by employer, market, and role",
+              "It is universal above a certain market size",
+              "It applies to technical roles and never to on-air ones",
+              "It has been declining steadily and can now be disregarded",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Confirm the specifics for a given job with that employer or local rather than assuming. The lesson says to treat the list of organizations as a map, not a rule.",
+            sourceLessonSlug: "unions-networking-first-job",
+          },
+          {
+            prompt: "What does the lesson call your best marketing?",
+            options: [
+              "A portfolio link that a producer can open in one click",
+              "A crew lead who wants you back",
+              "A membership in the professional body for your role",
+              "A reel that has been watched by people who hire",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Be excellent on small gigs. That is the networking advice that comes before any of the rest of it.",
+            sourceLessonSlug: "unions-networking-first-job",
+          },
+          {
+            prompt: "What does showing up to the rooms mean in practice?",
+            options: [
+              "Attending every event the venue you want to work at hosts",
+              "Visiting stations in person rather than emailing them",
+              "Local sports, station events, SBE chapters, and NAB resources",
+              "Being present in the control room whenever you are not needed elsewhere",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The point of each is the same: get near the people who hire, in places where being near them is normal.",
+            sourceLessonSlug: "unions-networking-first-job",
+          },
+          {
+            prompt: "What keeps you top of mind for the next call?",
+            options: [
+              "Checking in with the crewing service every week for availability",
+              "Posting the work you did on the gig to your own social feeds",
+              "Asking the crew lead directly when the next event is scheduled",
+              "A short, specific thank-you after a gig",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Short and specific. Keeping in touch is the third of the lesson's three networking rules, after being excellent on small gigs and showing up to the rooms.",
+            sourceLessonSlug: "unions-networking-first-job",
+          },
+          {
+            prompt: "In the lesson's example, how does the freelance utility tech get referred to a station?",
+            options: [
+              "By meeting a chief engineer at their local SBE chapter",
+              "By applying through the union local that represented the station",
+              "By sending their reel to every station within the region",
+              "By working a game at that station's own venue as a day caller",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They mention their rigging and RF-cable experience, and get referred to a station that needs a technician. Hired on a relationship, backed by real credits.",
+            sourceLessonSlug: "unions-networking-first-job",
+          },
+          {
+            prompt: "What does the practical exercise ask you to do with one organization?",
+            options: [
+              "Join it, since membership is what makes the network usable",
+              "Compare its dues against the day rate its members command",
+              "Find its site or local chapter and note one concrete next step",
+              "Ask it to introduce you to an employer in your market",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A meeting to attend, a resource to read, or a membership to consider, put on your calendar. Then send one thank-you note to someone you have already worked with.",
+            sourceLessonSlug: "unions-networking-first-job",
+          },
+          {
+            prompt: "What is the lesson's closing argument about how careers get built here?",
+            options: [
+              "Talent is what separates the people who last from those who do not",
+              "The path is unpredictable, so take whatever opportunity appears",
+              "A formal qualification opens doors that experience alone will not",
+              "Nobody hands you the microphone; you get in by being the reliable one",
+            ],
+            correctIndex: 3,
+            explanation:
+              "You get in by being the person who can pull cable, tie a clean knot, light an interview, and cut a switcher. Every skill in this course is a door, and the technical ones are propped open widest.",
+            sourceLessonSlug: "unions-networking-first-job",
+          },
+          {
+            prompt: "Why does the lesson say to understand the union landscape early?",
+            options: [
+              "It tells you how pay, scheduling, and advancement really work",
+              "Because you cannot accept a day call without a card in most markets",
+              "Because dues are deducted from your first paycheck automatically",
+              "Because the union assigns crew to each production in a market",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Many broadcast, live-event, and technical roles are union or union-adjacent in larger markets, and knowing that also tells you where to build relationships.",
+            sourceLessonSlug: "unions-networking-first-job",
+          },
+          {
+            prompt: "What is the vocabulary drill in this course actually a drill on?",
+            options: [
+              "The abbreviations used on a call sheet before a broadcast",
+              "The terms a broadcast crew uses every day",
+              "The formal job titles the labor statistics use for each role",
+              "The equipment names a hiring manager will search a resume for",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A quick fill-in on the everyday crew vocabulary, where the right idea with a small spelling slip still counts as close.",
+            sourceLessonSlug: "broadcasting-exercise",
+          },
+          {
+            prompt: "In the drill, which term answers the clue about the general-support entry role?",
+            options: [
+              "Camera assistant",
+              "Broadcast technician",
+              "Utility technician",
+              "Stage manager",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Pulls and dresses cable, rigs gear, and helps every department. Its cable, rigging, and knot work links straight to the companion Knot-Tying and Rope Work course.",
+            sourceLessonSlug: "broadcasting-exercise",
+          },
+          {
+            prompt: "In the drill, what is the other name the clue accepts for the video switcher?",
+            options: [
+              "Vision mixer",
+              "Production mixer, which is the audio equivalent of the same device",
+              "Router, which is what distributes each source around the facility",
+              "Control surface, which is the panel the technical director touches",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Switcher and vision mixer are the same device: the thing that cuts, dissolves, and keys between sources on the director's call.",
+            sourceLessonSlug: "broadcasting-exercise",
+          },
+          {
+            prompt: "In the drill, which chain does the term signal flow describe?",
+            options: [
+              "Camera to lens to recorder to editor to broadcast",
+              "Encoder to protocol to platform to viewer",
+              "Producer to director to technical director to operator",
+              "Source to mixer or switcher, to recorder or transmitter, to audience",
+            ],
+            correctIndex: 3,
+            explanation:
+              "It is the crew's core mental model, and you troubleshoot a live failure by walking that chain until you find the dead link.",
+            sourceLessonSlug: "broadcasting-exercise",
+          },
+          {
+            prompt: "In the drill, which federal agency does the clue about spectrum and captioning point to?",
+            options: [
+              "The Federal Communications Commission",
+              "The Bureau of Labor Statistics, which classifies broadcasting occupations",
+              "The National Association of Broadcasters, which represents the industry",
+              "The Society of Broadcast Engineers, which certifies technical staff",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The FCC licenses broadcast stations, manages spectrum, and sets rules including closed captioning for TV programming.",
+            sourceLessonSlug: "broadcasting-exercise",
+          },
+          {
+            prompt: "In the drill, which term answers the clue about the announcer's pre-built cheat sheet?",
+            options: [
+              "Rundown, which sets the order of the show's segments",
+              "Spotting board",
+              "Shot sheet, which lists what each camera is assigned to cover",
+              "Scorebug, which carries the live score on screen",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Rosters, numbers, name pronunciations, and storylines, so the announcer can identify a player instantly and add context on the fly.",
+            sourceLessonSlug: "broadcasting-exercise",
+          },
+          {
+            prompt: "What does the drill say about a small spelling slip?",
+            options: [
+              "It is marked wrong, since exact terminology is the point of a drill",
+              "It is accepted only for the terms that have more than one spelling",
+              "The right idea with a small spelling slip counts as close",
+              "It is flagged for review rather than scored either way",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The drill is testing whether you hold the vocabulary, not whether you can spell it under pressure.",
+            sourceLessonSlug: "broadcasting-exercise",
           },
         ],
       },
