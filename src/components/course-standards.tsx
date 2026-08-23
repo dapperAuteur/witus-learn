@@ -19,7 +19,7 @@ export function CourseStandards({ courseSlug }: { courseSlug: string }) {
   if (courseStandards.total === 0) return null;
 
   return (
-    <details className="mt-4 rounded-lg border border-neutral-200 dark:border-neutral-800">
+    <details className="group mt-4 rounded-lg border border-neutral-200 dark:border-neutral-800">
       <summary className="flex min-h-11 cursor-pointer list-none items-center gap-2 px-4 text-sm font-medium pointer-coarse:min-h-12">
         <span aria-hidden="true">🎓</span>
         <span>
@@ -28,7 +28,11 @@ export function CourseStandards({ courseSlug }: { courseSlug: string }) {
           <strong>{courseStandards.jurisdictions.length}</strong>{" "}
           {courseStandards.jurisdictions.length === 1 ? "jurisdiction" : "jurisdictions"}
         </span>
-        <span className="ml-auto text-xs text-neutral-500">show</span>
+        {/* The affordance has to change when the card opens, or it tells the reader to do the thing
+            they just did. Same CSS-only pattern as /admin/future: no state, no JS, and the native
+            <summary> still announces expanded/collapsed to a screen reader. */}
+        <span className="ml-auto text-xs text-neutral-500 group-open:hidden">show</span>
+        <span className="ml-auto hidden text-xs text-neutral-500 group-open:inline">hide</span>
       </summary>
       <div className="px-4 pb-4">
         <ul className="mt-2 flex flex-wrap gap-2">
