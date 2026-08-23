@@ -104,6 +104,217 @@ American Red Cross. (2024). *Survival kit supplies.* https://www.redcross.org/ge
       ],
     },
 
+    {
+      slug: "quiz-preparedness-mindset",
+      title: "Section 1 quiz · Preparedness Mindset",
+      section: "Section 1 · Preparedness Mindset",
+      body: `${SAFETY}
+
+A graded check on what this course is and is not, the rule of 3s and the ordering it gives you, and the plan-and-kit pair federal guidance asks every household to build. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What does this course say it is NOT?",
+            options: [
+              "A field manual or medical advice",
+              "A cited orientation built from public government and Red Cross sources",
+              "A guide to what to learn and where to verify it before an emergency",
+              "An argument for treating the official agencies as the authority",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is not a field manual, not medical advice, and not a license to attempt risky procedures. The other three options describe what the course says it IS.",
+            sourceLessonSlug: "welcome-and-safety",
+          },
+          {
+            prompt: "Why does the course insist every claim trace to a named official source?",
+            options: [
+              "Because copyright rules require attribution for preparedness advice",
+              "Rumors spread fast in an emergency",
+              "Because federal agencies require citation before republishing guidance",
+              "Because APA formatting is the standard across all trade publishing",
+            ],
+            correctIndex: 1,
+            explanation:
+              "In an emergency, rumors and confident-sounding folklore spread fast. Tracing every claim to a named, checkable, official source is the habit the course drills.",
+            sourceLessonSlug: "welcome-and-safety",
+          },
+          {
+            prompt: "How does the course treat popular trade books on off-grid living?",
+            options: [
+              "As equivalent to Ready.gov when the author has real field experience",
+              "As the primary source, with the agencies used only for verification",
+              "Topic maps, not official guidance",
+              "As unusable, because commercial publishers cannot be cited at all",
+            ],
+            correctIndex: 2,
+            explanation:
+              "They can be useful as topic maps, but they are copyrighted opinion. Where a life is on the line, prefer the official authorities.",
+            sourceLessonSlug: "welcome-and-safety",
+          },
+          {
+            prompt: "Which sources does the course tell you to prefer where a life is on the line?",
+            options: [
+              "Whichever preparedness author has the most documented field experience",
+              "The most recent trade book, since guidance changes over time",
+              "Online preparedness forums, where practitioners share what works",
+              "Ready.gov, the Red Cross, and the CDC",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Ready.gov, the American Red Cross, the CDC, the EPA, the USDA, and the National Weather Service. The course names those agencies, not itself, as the authority.",
+            sourceLessonSlug: "welcome-and-safety",
+          },
+          {
+            prompt: "What does the course mean when it says preparedness is a verb?",
+            options: [
+              "Do the action each section names",
+              "Read every section twice before you attempt any of the actions",
+              "Memorize the official guidance so you can recall it under stress",
+              "Rehearse the emergency itself rather than assembling any supplies",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Read a section, then do the practical action it names: build the kit, fill the water containers, draft the plan.",
+            sourceLessonSlug: "welcome-and-safety",
+          },
+          {
+            prompt: "What is the rule of 3s actually for?",
+            options: [
+              "Guaranteeing how long a healthy adult survives without each thing",
+              "Sequencing what to solve first",
+              "Calculating how much water and food a household needs to store",
+              "Deciding when to evacuate rather than shelter in place at home",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Its real value is ordering. The numbers are rough rules of thumb, not medical guarantees, and individual limits vary widely with health, temperature, and exertion.",
+            sourceLessonSlug: "rule-of-threes-and-priorities",
+          },
+          {
+            prompt: "In the rule of 3s, roughly how long can a person go without water?",
+            options: [
+              "About three hours, the same limit the rule gives for shelter",
+              "About three weeks, the same limit the rule gives for food",
+              "About three days",
+              "About three minutes, the limit the rule gives for breathable air",
+            ],
+            correctIndex: 2,
+            explanation:
+              "About 3 minutes without breathable air, about 3 hours without shelter in a harsh environment, about 3 days without water, and about 3 weeks without food.",
+            sourceLessonSlug: "rule-of-threes-and-priorities",
+          },
+          {
+            prompt: "What order does the rule of 3s put the priorities in?",
+            options: [
+              "Food, water, shelter, and air, since food takes longest to gather",
+              "Water, food, shelter, and air, the order of the storage guidance",
+              "Shelter, air, food, and water, the order of the Ready.gov kit list",
+              "Air, shelter, water, food",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Secure air and immediate danger, then protect core body temperature, then water, then food. That ordering is the whole point of the memory aid.",
+            sourceLessonSlug: "rule-of-threes-and-priorities",
+          },
+          {
+            prompt: "What mistake does this lesson say people routinely make?",
+            options: [
+              "Evacuating when official guidance says to shelter in place instead",
+              "Trusting a rule of thumb as a medical guarantee about survival time",
+              "Stockpiling food, ignoring water",
+              "Buying a generator before they have a family communication plan",
+            ],
+            correctIndex: 2,
+            explanation:
+              "People routinely invert the order, stockpiling food while ignoring shelter and water. Food is the three-week priority, which is exactly why it is tempting to over-invest in.",
+            sourceLessonSlug: "rule-of-threes-and-priorities",
+          },
+          {
+            prompt: "How does the lesson describe the rule's time limits?",
+            options: [
+              "Rough rules of thumb, not guarantees",
+              "Medical thresholds validated in controlled laboratory studies",
+              "Federal standards published by FEMA for household planning",
+              "Averages that hold for healthy adults in temperate conditions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They are rough rules of thumb, not medical guarantees, because individual limits vary widely with health, temperature, and exertion.",
+            sourceLessonSlug: "rule-of-threes-and-priorities",
+          },
+          {
+            prompt: "What two artifacts is preparedness made of?",
+            options: [
+              "A stockpile and a generator sized to the household's critical loads",
+              "A plan and a kit",
+              "An evacuation route and an out-of-town contact holding the copies",
+              "A written inventory and a rotation schedule for everything stored",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A plan (who does what, where you meet, how you communicate, how you evacuate) and a kit (the supplies to get through the first stretch on your own).",
+            sourceLessonSlug: "make-a-plan-and-kit",
+          },
+          {
+            prompt: "How much water does Ready.gov advise storing?",
+            options: [
+              "Two gallons per person per day, doubled for children and for pets",
+              "Five gallons per household per day, regardless of household size",
+              "A gallon per person per day",
+              "As much as fits, since no official minimum has ever been published",
+            ],
+            correctIndex: 2,
+            explanation:
+              "At least one gallon of water per person per day, covering drinking and basic sanitation. Section 2 goes into storage and treatment in depth.",
+            sourceLessonSlug: "make-a-plan-and-kit",
+          },
+          {
+            prompt: "How long a home water supply does Ready.gov advise, versus for evacuation?",
+            options: [
+              "Three days at home and two weeks for an evacuation planned ahead",
+              "One week for both, since the same containers serve either case",
+              "Thirty days at home, the standard for any off-grid household",
+              "Two weeks at home, three days to go",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Ready.gov advises a minimum of three days for evacuation and two weeks at home. The evacuation figure is smaller because you have to carry it.",
+            sourceLessonSlug: "make-a-plan-and-kit",
+          },
+          {
+            prompt: "Which of these does federal guidance list in a basic disaster supplies kit?",
+            options: [
+              "A hand-crank radio and a whistle",
+              "A pressure canner and tested recipes for preserving low-acid foods",
+              "A portable generator with at least twenty feet of extension cord",
+              "A signal mirror and a supply of chemical water disinfectant tablets",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The basic kit includes water and food for several days, a battery or hand-crank radio, a flashlight, a first aid kit, extra batteries, a whistle, a dust mask, sanitation supplies, a wrench or pliers, a manual can opener, local maps, and backup phone power.",
+            sourceLessonSlug: "make-a-plan-and-kit",
+          },
+          {
+            prompt: "What does Ready.gov say a household plan must account for?",
+            options: [
+              "The maximum number of days a local shelter could house the family",
+              "The specific needs of its members",
+              "The wattage of every appliance the household expects to keep running",
+              "The exact contents of the kit, itemized and priced for insurance",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The plan should account for children, older adults, people with disabilities, and pets, and the household should practice it rather than just write it.",
+            sourceLessonSlug: "make-a-plan-and-kit",
+          },
+        ],
+      },
+    },
+
     // ─────────────────────────────────────────────────────────────────────────
     // SECTION 2: Water
     // ─────────────────────────────────────────────────────────────────────────
