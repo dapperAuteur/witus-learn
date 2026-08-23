@@ -1583,6 +1583,552 @@ Space Telescope Science Institute. (n.d.). *The extragalactic distance scale*. h
               "It must be very large, because a cool surface emits relatively little light per unit area, so that much total light needs an enormous amount of surface. That puts it up and to the right, among the giants.",
             sourceLessonSlug: "reading-a-star-the-hr-diagram",
           },
+          {
+            prompt: "What work did the Harvard Computers actually do?",
+            options: [
+              "They operated the observatory's telescopes through the night in shifts",
+              "They performed the arithmetic behind the observatory's published almanacs",
+              "Sorted an enormous number of stellar spectra, one at a time",
+              "They maintained the photographic plates and the chemicals used to develop them",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Somebody had to look at an enormous number of stellar spectra on photographic plates and sort them. That work is what the classification system underneath the HR diagram rests on.",
+            sourceLessonSlug: "the-harvard-computers",
+          },
+          {
+            prompt: "What did the word computer mean at Harvard College Observatory?",
+            options: [
+              "A person who computes",
+              "A mechanical calculating engine of the kind then coming into use",
+              "A junior astronomer serving an apprenticeship before being given a telescope",
+              "A clerk who copied published figures from one catalog into another",
+            ],
+            correctIndex: 0,
+            explanation:
+              "At the time a computer was a person who computes. The group employed to examine the plates were called computers in exactly that sense.",
+            sourceLessonSlug: "the-harvard-computers",
+          },
+          {
+            prompt: "How did Williamina Fleming come to the work?",
+            options: [
+              "She was recruited from a British observatory that was closing down",
+              "She answered an advertisement the observatory placed in a Boston paper",
+              "She began as a domestic employee in the director's household",
+              "She arrived as a graduate student and stayed on when no post opened up",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Fleming began as a domestic employee in the director's household, was put to work on the plates, and went on to classify many thousands of stellar spectra.",
+            sourceLessonSlug: "the-harvard-computers",
+          },
+          {
+            prompt: "What position did Fleming eventually hold?",
+            options: [
+              "Director of the observatory, after the previous director retired",
+              "In charge of the plate collection",
+              "Professor of astronomy at the college the observatory belonged to",
+              "Editor of the catalog series the observatory published each year",
+            ],
+            correctIndex: 1,
+            explanation:
+              "She classified many thousands of stellar spectra and was placed in charge of the plate collection.",
+            sourceLessonSlug: "the-harvard-computers",
+          },
+          {
+            prompt: "What did Annie Jump Cannon do?",
+            options: [
+              "She discovered the relationship between a variable star's period and its brightness",
+              "She reorganized the classification into the sequence still used",
+              "She established the first reliable parallax for a star outside the solar system",
+              "She proved that stars are made overwhelmingly of hydrogen and helium",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Cannon reorganized the classification into the sequence that is still in use, and applied it to a catalog of enormous scale. The other three achievements in this question belong to Leavitt, Bessel, and Payne.",
+            sourceLessonSlug: "the-harvard-computers",
+          },
+          {
+            prompt: "Which of the Harvard Computers is the subject of the next lesson?",
+            options: [
+              "Williamina Fleming, who was placed in charge of the plate collection",
+              "Annie Jump Cannon, whose classification sequence is still in use",
+              "Cecilia Payne, whose thesis settled what the stars are made of",
+              "Henrietta Swan Leavitt",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Leavitt's period-luminosity work is the next lesson, and it becomes rung two of the ladder.",
+            sourceLessonSlug: "the-harvard-computers",
+          },
+          {
+            prompt: "How were the Harvard Computers paid?",
+            options: [
+              "A fraction of what a man in comparable work earned",
+              "At the same rate as the observatory's junior male staff, unusually for the era",
+              "By the plate, so that a fast worker could out-earn a salaried astronomer",
+              "Not at all, since the positions were treated as unpaid apprenticeships",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They were paid a fraction of what a man in comparable work earned, and credit for the resulting catalogs frequently attached to the observatory's director instead.",
+            sourceLessonSlug: "the-harvard-computers",
+          },
+          {
+            prompt: "Where did credit for the resulting catalogs frequently go?",
+            options: [
+              "To the individual computer who had classified the most plates that year",
+              "To the college, which published them without naming anyone at all",
+              "To the observatory's director",
+              "To the instrument makers who had built the plate cameras",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Credit frequently attached to the observatory's director. That is part of why the labor arrangement is not a footnote to the astronomy.",
+            sourceLessonSlug: "the-harvard-computers",
+          },
+          {
+            prompt: "Why were several of the computers available so cheaply?",
+            options: [
+              "Because the observatory was one of very few employers in the area",
+              "Because the work required no training that a school could not provide",
+              "Because the plates could be examined at home, in unpaid hours",
+              "The careers their education pointed toward were closed to them",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Several were college-educated in an era when the career their education pointed toward was closed to them, which is exactly why they were available so cheaply.",
+            sourceLessonSlug: "the-harvard-computers",
+          },
+          {
+            prompt: "What is the lesson's argument that the pay arrangement was structural to the science?",
+            options: [
+              "The scale of the result depended on the labor being cheap",
+              "The workers were more careful because they could not afford to be dismissed",
+              "The low cost let the observatory buy better instruments with the savings",
+              "The arrangement kept the project going for longer than a grant would have",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A project requiring painstaking examination of hundreds of thousands of spectra was affordable because the labor was underpaid, and it was underpaid because of who was doing it.",
+            sourceLessonSlug: "the-harvard-computers",
+          },
+          {
+            prompt: "What two statements does the lesson insist on holding at once?",
+            options: [
+              "That the catalog is genuine and the arrangement was exploitative",
+              "That the work was skilled and that the workers were nonetheless amateurs",
+              "That the results were correct and that the classification was later replaced",
+              "That the pay was low and that the observatory could not have paid more",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The catalog is a genuine achievement, the arrangement that produced it was exploitative, and both statements have to be held at once. The lesson calls that an uncomfortable sentence and a true one.",
+            sourceLessonSlug: "the-harvard-computers",
+          },
+          {
+            prompt: "Why is the 1890s plate collection still consulted?",
+            options: [
+              "Because the classification sequence can only be checked against originals",
+              "Because the plates record fainter objects than modern instruments reach",
+              "It measures a sky that no longer exists",
+              "Because the observatory has never finished cataloging what is on them",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A photographic plate from the 1890s is a measurement of a sky that no longer exists and cannot be re-observed. Cannon's classification sequence also survives, and is still taught and used.",
+            sourceLessonSlug: "the-harvard-computers",
+          },
+          {
+            prompt: "What do the pulsing variable stars in Leavitt's work do?",
+            options: [
+              "They brighten and dim on a regular cycle",
+              "They flare once and then fade over the following weeks",
+              "They change color without changing how much light they put out",
+              "They disappear behind a companion star at predictable intervals",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They brighten and dim on a regular cycle taking days or weeks, and they do it reliably enough to time with a stopwatch.",
+            sourceLessonSlug: "rung-two-leavitts-yardstick",
+          },
+          {
+            prompt: "What did Leavitt notice about those stars?",
+            options: [
+              "The bluer ones cycled faster than the redder ones did",
+              "The ones nearer the center of the cloud cycled more regularly",
+              "The ones taking longer to cycle were brighter",
+              "The brighter ones changed by a larger fraction of their total light",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Period predicted brightness: the stars that took longer to complete a cycle were the brighter ones. That relationship is what broke the deadlock from lesson 3.",
+            sourceLessonSlug: "rung-two-leavitts-yardstick",
+          },
+          {
+            prompt: "Why did it matter that her variable stars were in the Magellanic Clouds?",
+            options: [
+              "They are all at roughly the same distance",
+              "The clouds lie far enough from the galactic plane that no dust dims them",
+              "The clouds hold the only variables slow enough to be timed accurately",
+              "Harvard's plates covered the southern sky better than the northern sky",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Everyone in a distant city is roughly equally far from you even though the city has width. Within such a group, differences in apparent brightness are differences in actual brightness.",
+            sourceLessonSlug: "rung-two-leavitts-yardstick",
+          },
+          {
+            prompt: "What does normally comparing the brightness of two stars tell you about their intrinsic brightness?",
+            options: [
+              "Everything, provided both are observed with the same instrument",
+              "Nothing, because you do not know their distances",
+              "Enough to rank them, though not to put a number on either",
+              "Only whether they belong to the same class on the diagram",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Nothing at all, because you do not know their distances. That is the deadlock, and choosing a sample at a common distance is what dissolves it.",
+            sourceLessonSlug: "rung-two-leavitts-yardstick",
+          },
+          {
+            prompt: "Where does the lesson say the insight in Leavitt's work lies?",
+            options: [
+              "In the arithmetic, which extracted a clean law from very noisy readings",
+              "In the instrument, which resolved cycles nobody else could time",
+              "In the choice of sample",
+              "In the decision to publish before the relation had been calibrated",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The lesson calls it a beautiful piece of reasoning and says the insight is in the choice of sample, not in the arithmetic.",
+            sourceLessonSlug: "rung-two-leavitts-yardstick",
+          },
+          {
+            prompt: "Once you accept that period predicts intrinsic brightness, how do you get a distance?",
+            options: [
+              "Time the cycle, then compare true brightness with apparent",
+              "Measure the angle the star shifts over six months of the earth's orbit",
+              "Compare its color against a star of the same type at a known distance",
+              "Count how many cycles it completes before its brightness begins to drift",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Find one of these stars anywhere, time its cycle, infer how bright it truly is, compare with how bright it looks, and the difference is the distance.",
+            sourceLessonSlug: "rung-two-leavitts-yardstick",
+          },
+          {
+            prompt: "What did the period-luminosity relation make answerable?",
+            options: [
+              "The composition of stars too faint for their spectra to be recorded",
+              "The age of the universe, read directly off the oldest variables found",
+              "Whether other galaxies exist at all",
+              "Why stars of the same mass can differ so much in surface temperature",
+            ],
+            correctIndex: 2,
+            explanation:
+              "It reaches vastly further than parallax, which is how the scale of the galaxy, and then the question of whether other galaxies exist at all, became answerable.",
+            sourceLessonSlug: "rung-two-leavitts-yardstick",
+          },
+          {
+            prompt: "Why did the relation still have to be calibrated?",
+            options: [
+              "Because different variable stars follow slightly different relations",
+              "Because the period drifts over the decades a star is observed",
+              "Knowing longer means brighter does not tell you how bright",
+              "Because apparent brightness cannot be measured on a photographic plate",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Knowing that longer period means brighter does not by itself tell you how bright. Pinning that required stars of this type whose distances were known by other means, which ultimately traces back to parallax.",
+            sourceLessonSlug: "rung-two-leavitts-yardstick",
+          },
+          {
+            prompt: "Why does this course leave the Nobel Prize anecdote about Leavitt out?",
+            options: [
+              "It is usually told inaccurately, and it is pending a check",
+              "Because prizes are outside the scope of a course about measurement",
+              "Because the nomination was withdrawn before it was ever submitted",
+              "Because the story originated with people hostile to her reputation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The story is usually told inaccurately, so the course leaves it out pending a check against primary sources.",
+            sourceLessonSlug: "rung-two-leavitts-yardstick",
+          },
+          {
+            prompt: "What is the lesson's other objection to introducing Leavitt through that prize?",
+            options: [
+              "It makes the prize the measure of the work",
+              "It implies she worked alone rather than inside a large classification project",
+              "It suggests the relation was recognized sooner than it actually was",
+              "It puts a Swedish committee at the center of an American discovery",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The period-luminosity relation is one of the load-bearing results in astronomy. Introducing its discoverer through a prize she did not receive makes the prize the measure of the work, which the lesson calls slightly insulting.",
+            sourceLessonSlug: "rung-two-leavitts-yardstick",
+          },
+          {
+            prompt: "Why do variable stars alone not reach far enough?",
+            options: [
+              "Because their cycles become too slow to time at great distance",
+              "Because they are not found outside our own galaxy at all",
+              "Because their period-luminosity relation breaks down beyond a certain range",
+              "You need something visible at much greater distance",
+            ],
+            correctIndex: 3,
+            explanation:
+              "To measure across the observable universe you need something visible from much further away, which in practice means something violent.",
+            sourceLessonSlug: "rung-three-standard-candles",
+          },
+          {
+            prompt: "What is a standard candle?",
+            options: [
+              "An object whose intrinsic brightness you believe you know",
+              "An object at a distance already fixed by an independent measurement",
+              "A star whose brightness never varies over the period it is observed",
+              "A reference lamp carried aboard the instrument to calibrate the readings",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Any object whose intrinsic brightness you believe you know independently. Believe you know is doing real work in that sentence.",
+            sourceLessonSlug: "rung-three-standard-candles",
+          },
+          {
+            prompt: "Why do certain exploding stars serve as standard candles?",
+            options: [
+              "Because they occur often enough to be found in every galaxy each year",
+              "Their peak brightness falls within a narrow range",
+              "Because their light is unaffected by dust along the line of sight",
+              "Because their spectra identify them without any risk of confusion",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Their peak brightness falls within a narrow range that can be tightened further by studying how the brightness rises and falls, and they are briefly bright enough to be seen across enormous distances.",
+            sourceLessonSlug: "rung-three-standard-candles",
+          },
+          {
+            prompt: "What tightens the estimate of an exploding star's peak brightness?",
+            options: [
+              "The color of the light at the moment the explosion is first detected",
+              "The number of similar explosions previously seen in the same galaxy",
+              "How the brightness rises and falls",
+              "The distance to the nearest variable star in the same field of view",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Studying the shape of the rise and fall narrows the range the peak brightness falls within, which is what makes the rung usable rather than merely suggestive.",
+            sourceLessonSlug: "rung-three-standard-candles",
+          },
+          {
+            prompt: "What calibrates rung two, the period-luminosity variables?",
+            options: [
+              "Geometry alone, in the same way that parallax is anchored",
+              "Rung one, parallax",
+              "Rung three, the standard-candle explosions above it",
+              "Nothing; it is independently anchored to a laboratory measurement",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Rung two is calibrated by rung one. Reading down that column is the point of the table: parallax is anchored by geometry, and every rung after it is anchored by the rung below.",
+            sourceLessonSlug: "rung-three-standard-candles",
+          },
+          {
+            prompt: "What calibrates rung four, redshift and expansion?",
+            options: [
+              "Geometry alone, since redshift is measured directly from a spectrum",
+              "Rung one, since parallax underlies everything in the end",
+              "Rung three, the standard-candle explosions",
+              "Nothing; the top rung is fixed by theory rather than by measurement",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Rung four is calibrated by rung three, which is calibrated by rung two, which is calibrated by parallax. No rung above the first is independently anchored to reality.",
+            sourceLessonSlug: "rung-three-standard-candles",
+          },
+          {
+            prompt: "What happens to an error low down on the ladder?",
+            options: [
+              "It propagates upward, and it does so silently",
+              "It is caught by the next rung, since each one re-derives the last",
+              "It stays where it is, since each rung is measured independently",
+              "It cancels out, since the rungs overlap in the ranges they cover",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It propagates upward through everything built on it, and silently, because each rung individually still looks internally consistent.",
+            sourceLessonSlug: "rung-three-standard-candles",
+          },
+          {
+            prompt: "Why does the lesson say the ladder's structure is not a scandal?",
+            options: [
+              "Because the field knows, and there are cross-checks",
+              "Because the errors involved are too small to affect any published result",
+              "Because the lowest rung has been remeasured often enough to be certain",
+              "Because no conclusion in cosmology actually depends on the upper rungs",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Calibration is an active, argued-about area of research precisely because everyone understands what depends on it, and where two rungs overlap in range they can be compared against each other.",
+            sourceLessonSlug: "rung-three-standard-candles",
+          },
+          {
+            prompt: "Why is agreement between independent methods strong evidence?",
+            options: [
+              "Because the methods were designed to be checked against each other",
+              "Because two measurements are always more precise than one",
+              "They fail in different ways",
+              "Because a method only counts as independent once it has been confirmed",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Agreement between methods that fail in different ways is genuinely strong evidence, which is why cross-checks matter more than repetition of the same method.",
+            sourceLessonSlug: "rung-three-standard-candles",
+          },
+          {
+            prompt: "What does the lesson say an honest description of a large cosmic distance looks like?",
+            options: [
+              "A number, an uncertainty, and a list of assumptions",
+              "A range wide enough that no future measurement will fall outside it",
+              "A number, given to no more digits than the weakest rung supports",
+              "A comparison against a distance already known by a different method",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Not a number on its own. It is a number, an uncertainty, and a list of what it assumes.",
+            sourceLessonSlug: "rung-three-standard-candles",
+          },
+          {
+            prompt: "A calibration error is found in the period-luminosity relation. Which distances are affected?",
+            options: [
+              "Only the galaxies where those particular variable stars were observed",
+              "All astronomical distances, parallax included, since the tools are shared",
+              "Only measurements taken before the error entered the calibration",
+              "That rung and every rung above it",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Every distance measured with that rung, and every distance on every rung above it, since those are calibrated on this one. Parallax is the exception, because it is anchored in geometry rather than against another rung.",
+            sourceLessonSlug: "rung-three-standard-candles",
+          },
+          {
+            prompt: "What does the size of the finger's apparent jump depend on?",
+            options: [
+              "How far away it is",
+              "How much light is falling on it from the surrounding room",
+              "How far apart your two eyes happen to be set in your head",
+              "How complicated the background it is being seen against happens to be",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The jump gets smaller the further away the finger is, which is the entire principle. The spacing of your eyes sets the baseline, and for stars the baseline becomes the width of the earth's orbit.",
+            sourceLessonSlug: "rung-one-parallax",
+          },
+          {
+            prompt: "What does the lesson call the single most productive discovery in the history of astronomy?",
+            options: [
+              "The invention of the photographic plate, which made the sky recordable",
+              "The dark lines in a spectrum",
+              "The realization that the earth moves around the sun rather than the reverse",
+              "The first measurement of a stellar parallax, which fixed the scale of the sky",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The absorption lines, because each element absorbs at its own wavelengths and the pattern is therefore a fingerprint of what the light passed through.",
+            sourceLessonSlug: "light-itself",
+          },
+          {
+            prompt: "What does the strength of the absorption lines tell you, and with what caveat?",
+            options: [
+              "The abundance of each element, directly and without correction",
+              "The distance to the star, provided its temperature is known separately",
+              "Temperature and pressure conditions, with care",
+              "The age of the star, since older stars show progressively stronger lines",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Line strength carries information about temperature and pressure conditions, and the phrase with care is doing real work: reading abundance straight off line strength is precisely the mistake Payne's thesis corrected.",
+            sourceLessonSlug: "light-itself",
+          },
+          {
+            prompt: "How soon was Payne's hydrogen result accepted?",
+            options: [
+              "Immediately, since the physics behind the correction was already accepted",
+              "A few years later",
+              "Not until decades afterward, once space-based instruments confirmed it",
+              "Never fully, since the field still treats the abundances as provisional",
+            ],
+            correctIndex: 1,
+            explanation:
+              "She reached the correct conclusion, the published thesis hedged it, and the result was accepted a few years later. That gap is why the lesson says self-correction describes the long run rather than any particular year.",
+            sourceLessonSlug: "cecilia-payne-and-what-stars-are-made-of",
+          },
+          {
+            prompt: "Besides the main sequence, how many populations sit off the band on the HR diagram?",
+            options: [
+              "Two",
+              "One, made up of the stars that have finished fusing and are cooling",
+              "Four, one for each of the main stages a star passes through in its life",
+              "None; everything falls on the band once the axes are drawn correctly",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two smaller populations sit off the diagonal band: giants up and to the right, white dwarfs down and to the left.",
+            sourceLessonSlug: "reading-a-star-the-hr-diagram",
+          },
+          {
+            prompt: "When did the plate-classification work at Harvard College Observatory begin?",
+            options: [
+              "In the 1920s, at the same time as Payne's thesis work",
+              "In the 1950s, once the plate archive had grown too large to ignore",
+              "The late nineteenth century",
+              "In the 1830s, alongside the first successful parallax measurement",
+            ],
+            correctIndex: 2,
+            explanation:
+              "From the late nineteenth century onward, which is why a plate from the 1890s is now a record of a sky that no longer exists.",
+            sourceLessonSlug: "the-harvard-computers",
+          },
+          {
+            prompt: "How long does one of Leavitt's variable stars take to complete a cycle?",
+            options: [
+              "Seconds, which is why the timing had to be done photographically",
+              "Days or weeks",
+              "Months, which is why the Harvard plate archive was essential to the work",
+              "Years, so a single observer could only ever record part of one cycle",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Days or weeks, and reliably enough to time with a stopwatch. That is what makes the period a measurable quantity rather than an estimate.",
+            sourceLessonSlug: "rung-two-leavitts-yardstick",
+          },
+          {
+            prompt: "Why does reaching across the observable universe mean, in practice, something violent?",
+            options: [
+              "Because only an explosion is bright enough to be seen that far",
+              "Because a violent event leaves a remnant that can be measured afterward",
+              "Because explosions happen at a known rate that can be counted",
+              "Because a sudden event is easier to time than a slowly varying one",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Pulsing variable stars reach far and not far enough. You need something visible at much greater distance, which in practice means an exploding star bright enough to be seen briefly across enormous distances.",
+            sourceLessonSlug: "rung-three-standard-candles",
+          },
+          {
+            prompt: "What calibrates rung one, parallax?",
+            options: [
+              "The period-luminosity relation, once it has been independently pinned",
+              "A laboratory standard carried aboard the observing instrument",
+              "Geometry alone",
+              "The HR diagram, whose vertical axis fixes the brightness scale",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Geometry alone, which is what makes parallax the anchor. Every rung above it is calibrated on the rung below, and none of them is independently anchored to reality.",
+            sourceLessonSlug: "rung-three-standard-candles",
+          },
         ],
       },
     },
