@@ -498,6 +498,8 @@ For these, there is exactly one acceptable move: **read it from the system that 
       title: "5 · Knowledge check: asking and finding",
       section: "Section 2 · Asking, and finding",
       quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
         shuffleOptions: true,
         questions: [
           {
@@ -552,6 +554,216 @@ For these, there is exactly one acceptable move: **read it from the system that 
             correctIndex: 1,
             explanation:
               "The agency owns the value, so only the agency can state it, and it can change without notice. Recording the date is what lets a later reader judge whether it is still current.",
+            sourceLessonSlug: "what-a-source-is",
+          },
+
+          // Pool expansion so the section's own two lessons are covered rather than sampled.
+          {
+            prompt: "Why is the focused question the first rubric criterion?",
+            options: [
+              "Because a reviewer scores it before reading any of the work",
+              "Everything downstream inherits its shape",
+              "Because it is the only criterion you can complete before research begins",
+              "Because its bar is Developing, so it is the easiest to satisfy first",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A vague question cannot be answered, so it cannot be answered wrongly, so nothing you find can ever correct you.",
+            sourceLessonSlug: "the-focused-question",
+          },
+          {
+            prompt: "What is wrong with the history of the river as a research question?",
+            options: [
+              "It covers too long a period to be researched in one project",
+              "It names no sources that a reader could go and check",
+              "It is a subject, not a question",
+              "It is not interesting enough to sustain a reader's attention",
+            ],
+            correctIndex: 2,
+            explanation:
+              "There is no finding that would count as an answer, which means there is no finding that could count as a correction either.",
+            sourceLessonSlug: "the-focused-question",
+          },
+          {
+            prompt: "What is the single test for whether a question is focused enough?",
+            options: [
+              "Can you say what evidence would prove you wrong",
+              "Can you answer it from the sources you have already found",
+              "Can you state it in a single sentence without a subordinate clause",
+              "Would somebody who knows the subject find it worth asking",
+            ],
+            correctIndex: 0,
+            explanation:
+              "If nothing could prove you wrong, it is a topic and not yet a question. The test is not whether it is interesting.",
+            sourceLessonSlug: "the-focused-question",
+          },
+          {
+            prompt: "Why does a narrower question usually produce a bigger piece of work?",
+            options: [
+              "Because a narrow question takes longer to research than a broad one",
+              "Because narrow questions require primary sources and broad ones do not",
+              "Because a reader will read further into a subject they already know",
+              "Specific questions attract specific evidence",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Why did the town move produces a paragraph of generalities. The three-blocks-east version produces council minutes, a highway plan, named people, and an argument.",
+            sourceLessonSlug: "the-focused-question",
+          },
+          {
+            prompt: "Where do good research questions usually come from?",
+            options: [
+              "A gap rather than a topic",
+              "A subject you already know enough about to work in quickly",
+              "A survey of what has already been published in the field",
+              "A request from someone who needs the answer for their own work",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Something you were told that does not fit something else you were told. A number everybody repeats and nobody sources. A date that is oddly precise. A person who appears in one account and vanishes from the next.",
+            sourceLessonSlug: "the-focused-question",
+          },
+          {
+            prompt: "Why does the lesson tell you to write the question down before you start looking?",
+            options: [
+              "So a reviewer can see the question was set before the evidence was found",
+              "So you can check your drift against it once everything seems relevant",
+              "So it can be quoted at the top of the finished piece unchanged",
+              "So you do not repeat searches you have already run once",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Deep in material, everything looks relevant. The written question is what you measure that feeling against.",
+            sourceLessonSlug: "the-focused-question",
+          },
+          {
+            prompt: "What is a source, in this lesson's definition?",
+            options: [
+              "A publication with editorial standards you have reason to trust",
+              "Any document you can cite in a form a reader could follow",
+              "A thing that has a relationship to the fact",
+              "The earliest place a claim can be shown to have appeared",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Not a place I read it. The relationship to the fact is what sorts sources into primary, secondary, and tertiary.",
+            sourceLessonSlug: "what-a-source-is",
+          },
+          {
+            prompt: "What makes a record primary?",
+            options: [
+              "It was made by someone with direct access, at the time",
+              "It has not been quoted or summarized by anyone else yet",
+              "It was produced by an official body rather than a private person",
+              "It is the earliest surviving account of the event in question",
+            ],
+            correctIndex: 0,
+            explanation:
+              "As part of the event itself: a statute, a court filing, a census return, a ship's manifest, a letter, an interview with a participant, a dataset published by the agency that collected it.",
+            sourceLessonSlug: "what-a-source-is",
+          },
+          {
+            prompt: "What is a secondary source?",
+            options: [
+              "Any source that was not written by a participant in the events",
+              "A source whose claims you have not yet been able to verify",
+              "A summary of other summaries, one step further from the record",
+              "Someone read primary material and wrote about it",
+            ],
+            correctIndex: 3,
+            explanation:
+              "A history book, a journal article, a news report. Secondary work is where you learn what questions have already been asked, and skipping it wastes months.",
+            sourceLessonSlug: "what-a-source-is",
+          },
+          {
+            prompt: "What is a tertiary source?",
+            options: [
+              "A source with no identifiable author at all",
+              "Someone read secondary material and summarized it",
+              "A source that has been translated from another language",
+              "A source published without any citations of its own",
+            ],
+            correctIndex: 1,
+            explanation:
+              "An encyclopedia entry, a syllabus, and most of what a search engine puts at the top.",
+            sourceLessonSlug: "what-a-source-is",
+          },
+          {
+            prompt: "What is the rule about a claim that matters?",
+            options: [
+              "It gets traced to primary material, or it gets marked unverified",
+              "It gets at least two secondary sources supporting it",
+              "It gets removed unless a primary source can be produced",
+              "It gets stated with a hedge until better evidence appears",
+            ],
+            correctIndex: 0,
+            explanation:
+              "None of the three source categories is disgraceful. The rule is about what happens to a load-bearing claim that never reaches primary material.",
+            sourceLessonSlug: "what-a-source-is",
+          },
+          {
+            prompt: "What does the lesson say you will discover by following citations four or five times?",
+            options: [
+              "That most secondary sources cite more carefully than expected",
+              "That primary material is harder to obtain than it first appears",
+              "That confident claims often trace to nothing, or to a misreading",
+              "That the same handful of primary sources underlies most fields",
+            ],
+            correctIndex: 2,
+            explanation:
+              "To nothing, or to a source that says something slightly different, or to a source that says the opposite and was misread once in 1974 and copied ever since. That experience does more for your judgment than any amount of advice.",
+            sourceLessonSlug: "what-a-source-is",
+          },
+          {
+            prompt: "Which category of fact must you never reason your way to?",
+            options: [
+              "A claim about a named living person",
+              "A number that appears in more than one published source",
+              "Anything you learned from a tertiary source",
+              "A value owned by an external system",
+            ],
+            correctIndex: 3,
+            explanation:
+              "A price, a statute's current text, an agency's requirement, a company's terms, a model number. There is exactly one acceptable move for these.",
+            sourceLessonSlug: "what-a-source-is",
+          },
+          {
+            prompt: "What is that one acceptable move?",
+            options: [
+              "Read it from the system that owns it, and record the date you read it",
+              "Find two published sources that agree on the current value",
+              "Cite the most recent authoritative summary you can locate",
+              "State the last value you can confirm and flag it as possibly stale",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Not what it was last year, not what it probably is, not what a summary says it is. These change without announcement, and a confident wrong number is worse than an admitted gap.",
+            sourceLessonSlug: "what-a-source-is",
+          },
+          {
+            prompt: "A news article states a striking statistic with no citation. What do you do?",
+            options: [
+              "Repeat it with the outlet named, so the reader can judge the source",
+              "Treat it as unverified and go looking for whoever produced the number",
+              "Compare it with similar figures elsewhere and use the most common one",
+              "Contact the outlet and use the figure if they stand by it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "And if you cannot find them, say so rather than repeating it. Naming the outlet does not turn an unsourced number into a sourced one.",
+            sourceLessonSlug: "what-a-source-is",
+          },
+          {
+            prompt: "Why is a price handled differently from a historical fact?",
+            options: [
+              "Because a price can be checked more easily than a historical claim",
+              "Because commercial values fall outside the scope of academic citation",
+              "It is owned by an external system and changes without notice",
+              "Because prices vary by region, so no single value is ever correct",
+            ],
+            correctIndex: 2,
+            explanation:
+              "So it must be read from that system and dated, never inferred. A historical fact does not move once it has happened; a fee schedule does.",
             sourceLessonSlug: "what-a-source-is",
           },
         ],
