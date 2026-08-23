@@ -1550,6 +1550,604 @@ U.S. Fish and Wildlife Service. (n.d.). *Freshwater mussels of the United States
 
 U.S. Geological Survey. (n.d.). *Invasive carp research*. https://www.usgs.gov/`,
     },
+    {
+      slug: "check-what-is-in-the-water",
+      title: "Part 3 knowledge check · What is in the water",
+      section: "Part 3 · What is in the water",
+      body: `A graded check on what each water-quality measure does and does not report, on the four ordinary steps that produce a low-oxygen zone at the mouth of a river, on the route nitrogen takes from a field to the Gulf, and on why what lives in a river tells you more than a single reading does. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What does the lesson say about the question is this water clean?",
+            options: [
+              "It has no single measurement behind it",
+              "It is answered by dissolved oxygen, which covers the rest indirectly",
+              "It can only be settled by a laboratory rather than a field instrument",
+              "It is a legal question rather than a scientific one in most jurisdictions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Several different things get measured, and each answers something different. That is why the lesson is a table rather than a number.",
+            sourceLessonSlug: "reading-water-quality",
+          },
+          {
+            prompt: "What does water temperature indicate?",
+            options: [
+              "How much sediment the water is currently able to carry",
+              "Warm water holds less oxygen, and species have limits",
+              "Whether the water came from groundwater or from surface runoff",
+              "The rate at which bacteria in the water are reproducing",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Temperature matters because warm water holds less oxygen and because species have thermal limits. It tells you nothing about what is dissolved.",
+            sourceLessonSlug: "reading-water-quality",
+          },
+          {
+            prompt: "What does turbidity measure?",
+            options: [
+              "The total quantity of dissolved material the water is carrying",
+              "The rate at which suspended material settles out of the water",
+              "How cloudy the water is",
+              "The depth to which a diver can see under normal conditions",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Turbidity is cloudiness, which indicates suspended sediment and how much light reaches plants.",
+            sourceLessonSlug: "reading-water-quality",
+          },
+          {
+            prompt: "What does turbidity not tell you?",
+            options: [
+              "How much light is reaching the plants growing in the channel",
+              "How much suspended sediment the water is carrying at that point",
+              "Whether the particles are harmful",
+              "Whether the reading was taken during or after a storm",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A turbidity reading says how cloudy the water is. Whether the particles suspended in it are harmful is a different question entirely.",
+            sourceLessonSlug: "reading-water-quality",
+          },
+          {
+            prompt: "What does a dissolved oxygen reading not tell you?",
+            options: [
+              "Whether animals are able to live in that water",
+              "Why it is high or low",
+              "How much oxygen was available at the moment of sampling",
+              "Whether the water is warm enough to hold less oxygen than usual",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It tells you whether animals can breathe there. The cause, whether heat, decomposition, or the time of day, is not in the number.",
+            sourceLessonSlug: "reading-water-quality",
+          },
+          {
+            prompt: "What does conductivity indicate?",
+            options: [
+              "Total dissolved salts and ions",
+              "The presence of metals specifically, rather than salts in general",
+              "How quickly the water is moving past the measuring point",
+              "The acidity of the water on the same scale that pH reports",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Conductivity is the water's ability to carry a current, which indicates the total dissolved salts and ions present. It does not tell you which ions.",
+            sourceLessonSlug: "reading-water-quality",
+          },
+          {
+            prompt: "What do bacterial indicators signal, and what do they leave open?",
+            options: [
+              "The total bacterial population, but not whether any of it is active",
+              "The presence of a specific disease, but not how much of it is there",
+              "Sewage or animal waste, but not which pathogens are present",
+              "The chemical conditions bacteria prefer, but not whether they are there",
+            ],
+            correctIndex: 2,
+            explanation:
+              "They are markers of fecal contamination and a genuine safety signal. Which pathogens are actually present is a separate question the indicator does not answer.",
+            sourceLessonSlug: "reading-water-quality",
+          },
+          {
+            prompt: "What does a nutrient concentration reading not tell you?",
+            options: [
+              "Whether fertilizer, sewage, or feedlot input is reaching the water",
+              "How much nitrate and phosphorus is present at that point",
+              "Whether a bloom will follow",
+              "Whether the concentration is higher than it was a year ago",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Nutrient readings indicate fertilizer, sewage, or feedlot input. Whether an algal bloom actually follows is not something the concentration alone decides.",
+            sourceLessonSlug: "reading-water-quality",
+          },
+          {
+            prompt: "What is the general rule the table is built to teach?",
+            options: [
+              "Every measurement is an indicator, not a verdict",
+              "The more measures you take, the closer you get to a single answer",
+              "Chemical measures are more reliable than biological observations",
+              "Continuous instruments are always preferable to hand-collected samples",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Read the last column of the table again. A single reading tells you about one property, at one place, at one moment.",
+            sourceLessonSlug: "reading-water-quality",
+          },
+          {
+            prompt: "How much can two samples from the same spot differ?",
+            options: [
+              "Very little, since a river's chemistry is set by its watershed",
+              "Completely, if one follows heavy rain and one a week of dry weather",
+              "Only by the amount the instrument's own precision allows",
+              "Only across seasons, since day-to-day variation is negligible",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Rivers vary enormously by hour, by season, and by storm. A sample taken the day after heavy rain can differ completely from one a week into a dry spell, with nothing changed except the weather.",
+            sourceLessonSlug: "reading-water-quality",
+          },
+          {
+            prompt: "What actually tells you about a river?",
+            options: [
+              "A single sample taken under conditions typical for the season",
+              "The measure that shows the greatest departure from its normal range",
+              "A series",
+              "A comparison against a river of similar size in the same region",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A single sample is a snapshot. A series is what describes a river, which is the seam where this course hands off to the course about collecting one honestly.",
+            sourceLessonSlug: "reading-water-quality",
+          },
+          {
+            prompt: "A river's dissolved oxygen reads low. Which of these is one of the quite different explanations the lesson offers?",
+            options: [
+              "The reading may have been taken before dawn",
+              "The channel may be too narrow at that point for the water to aerate",
+              "The instrument may need recalibrating against a laboratory standard",
+              "The water may be carrying more sediment than oxygen can pass through",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Aquatic plants consume oxygen at night and produce it by day. The other candidates are simply warm water, which holds less, and decomposition consuming it. A single measurement cannot distinguish them.",
+            sourceLessonSlug: "reading-water-quality",
+          },
+          {
+            prompt: "Where is the water with too little oxygen for most animals to survive?",
+            options: [
+              "Behind the locks and dams on the upper river, where flow is slack",
+              "In the tile drains, before the water has reached an open ditch",
+              "In the oxbow lakes cut off from the main channel",
+              "At the mouth of the Mississippi, in the Gulf of Mexico",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The affected area varies from year to year and is measured by survey each summer.",
+            sourceLessonSlug: "why-the-oxygen-runs-out",
+          },
+          {
+            prompt: "How is the extent of the low-oxygen zone established each year?",
+            options: [
+              "By survey each summer",
+              "By modeling it from the nitrogen load measured upstream",
+              "By continuous readings from a permanent network of moored sensors",
+              "By counting fish kills reported along the affected coastline",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is measured by survey each summer, which is why the reported area varies from one year to the next.",
+            sourceLessonSlug: "why-the-oxygen-runs-out",
+          },
+          {
+            prompt: "What usually limits algal growth?",
+            options: [
+              "Temperature, which sets how fast the cells can divide",
+              "Nutrients",
+              "Light, which is reduced by the sediment the river carries",
+              "Predation by the animals that graze on algae in open water",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Nutrients are usually the limiting factor, so supplying them lets algae multiply enormously. That is step two of the four.",
+            sourceLessonSlug: "why-the-oxygen-runs-out",
+          },
+          {
+            prompt: "What happens after the algae bloom?",
+            options: [
+              "It persists through the summer, shading the water below it",
+              "It is grazed down by fish, transferring the nutrients up the food web",
+              "The bloom dies and the dead material sinks",
+              "It drifts out to sea, where the nutrients are diluted harmlessly",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Algae are short-lived. The dead material sinks, and step four is what happens to it on the way down and at the bottom.",
+            sourceLessonSlug: "why-the-oxygen-runs-out",
+          },
+          {
+            prompt: "What actually consumes the oxygen?",
+            options: [
+              "The algae themselves, which respire faster than they photosynthesize",
+              "Bacteria decomposing the sinking material",
+              "The fish that move in to feed on the bloom while it lasts",
+              "The salt water below, which holds less oxygen than fresh water does",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Bacteria break down the sinking material and use dissolved oxygen doing it. Enough material, and the oxygen near the bottom is drawn down faster than it can be replaced.",
+            sourceLessonSlug: "why-the-oxygen-runs-out",
+          },
+          {
+            prompt: "Why does oxygen not simply mix back in from the surface?",
+            options: [
+              "Because the surface itself has been stripped of oxygen by the bloom",
+              "Because the water is too deep for surface mixing to reach the bottom",
+              "Because the current carries the surface water away before it can mix",
+              "Stratification",
+            ],
+            correctIndex: 3,
+            explanation:
+              "A layer of warmer fresh water sits on top of colder saltier water and the two do not readily mix, so the bottom layer is cut off from the atmosphere while decomposition continues below it.",
+            sourceLessonSlug: "why-the-oxygen-runs-out",
+          },
+          {
+            prompt: "What makes the two layers resist mixing?",
+            options: [
+              "Fresh water and warm water are both less dense",
+              "The salt in the lower layer forms a physical barrier to exchange",
+              "The river's current runs in the opposite direction to the sea's",
+              "Suspended sediment settles into a layer between the two",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Fresh water is less dense than salt water and warm water is less dense than cold, so where a big river discharges into the sea in summer the lighter water floats on the heavier.",
+            sourceLessonSlug: "why-the-oxygen-runs-out",
+          },
+          {
+            prompt: "Why can a large storm reduce the low-oxygen zone temporarily?",
+            options: [
+              "It dilutes the nutrients that the river has been delivering",
+              "It flushes the dead algal material out into deeper water",
+              "It mixes the water column",
+              "It cools the surface layer so that it can hold more oxygen",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Breaking the stratification lets the bottom layer contact oxygenated water again. That is also why the zone is seasonal and worst in summer.",
+            sourceLessonSlug: "why-the-oxygen-runs-out",
+          },
+          {
+            prompt: "Is the low-oxygen zone caused by a discharge event?",
+            options: [
+              "No; it is ordinary agriculture and ordinary decomposition at basin scale",
+              "Yes, though the responsible discharge has never been identified",
+              "Yes, by the combined outfalls of the cities along the lower river",
+              "Partly; a spill starts it and agriculture sustains it through the summer",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Nothing in the sequence is a discharge event, which is exactly why it is hard: there is no pipe to close and no single actor to hold responsible.",
+            sourceLessonSlug: "why-the-oxygen-runs-out",
+          },
+          {
+            prompt: "Which course does this lesson hand the argument off to?",
+            options: [
+              "Locks, Dams and Barges, which covers who built the structures involved",
+              "What the River Carries, on harm with no author",
+              "The capstone, which asks you to describe your own watershed instead",
+              "The expedition course on how to collect a series of readings honestly",
+            ],
+            correctIndex: 1,
+            explanation:
+              "What to do about harm with no author is the subject of What the River Carries in the River Expedition series. This lesson gives the mechanism; that course takes the argument, and neither repeats the other.",
+            sourceLessonSlug: "why-the-oxygen-runs-out",
+          },
+          {
+            prompt: "Where do the nutrients in the previous lesson mostly come from?",
+            options: [
+              "Municipal sewage treatment plants along the length of the river",
+              "Farmland",
+              "Industrial discharge permitted under existing water regulations",
+              "Natural weathering of the soils across the basin",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Mostly from farmland, and the route from field to Gulf is worth following because it explains why the problem resists the obvious fixes.",
+            sourceLessonSlug: "a-thousand-miles-of-nitrogen",
+          },
+          {
+            prompt: "Why does nitrogen in the nitrate form travel with water rather than staying put?",
+            options: [
+              "Because it binds to soil particles that wash away in heavy rain",
+              "Because it is lighter than the surrounding soil and floats to the surface",
+              "It is highly soluble",
+              "Because crops release it back into the soil after they are harvested",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Nitrate is highly soluble, so rain moves it. Crops take up much of the fertilizer applied and some remains in the soil, and what remains travels.",
+            sourceLessonSlug: "a-thousand-miles-of-nitrogen",
+          },
+          {
+            prompt: "What is tile drainage?",
+            options: [
+              "A surface ditch dug along the low edge of a field to carry water off",
+              "A layer of clay laid under a field to stop water sinking further",
+              "A pump system that lifts standing water off saturated ground",
+              "Perforated pipe buried below the field",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Large areas of the Midwest are drained by perforated pipe buried below the field, installed to make wet ground farmable.",
+            sourceLessonSlug: "a-thousand-miles-of-nitrogen",
+          },
+          {
+            prompt: "What does tile drainage do to nitrogen's journey?",
+            options: [
+              "It creates a fast, direct path from the soil to a ditch",
+              "It holds the water underground long enough for the soil to filter it",
+              "It spreads the water sideways so no single ditch receives too much",
+              "It removes the nitrogen chemically before the water leaves the field",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It works, and it also bypasses the slow filtering that would otherwise occur. Ditches feed streams, streams feed rivers, and the watershed does what a watershed does.",
+            sourceLessonSlug: "a-thousand-miles-of-nitrogen",
+          },
+          {
+            prompt: "Why can no single state solve the nutrient problem?",
+            options: [
+              "Because the affected water lies outside every state's jurisdiction",
+              "The scale is a basin",
+              "Because the practices involved are regulated only at federal level",
+              "Because measuring the contribution of one state is not yet possible",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The scale of the problem is an entire basin, so no state can solve it alone. That is the first of four structural features that make it hard.",
+            sourceLessonSlug: "a-thousand-miles-of-nitrogen",
+          },
+          {
+            prompt: "What does the lesson say about the contribution of any individual farm?",
+            options: [
+              "It is large enough that a handful of farms account for most of the load",
+              "It varies so much between farms that no general statement is possible",
+              "It cannot be measured with the instruments currently available",
+              "It is tiny, and the aggregate is the problem",
+            ],
+            correctIndex: 3,
+            explanation:
+              "No individual decision is unreasonable, and the aggregate is the problem. That structure is what makes the harm authorless.",
+            sourceLessonSlug: "a-thousand-miles-of-nitrogen",
+          },
+          {
+            prompt: "Why is the delay between changing practice and seeing results politically discouraging?",
+            options: [
+              "Nitrogen already in soil and groundwater keeps arriving for years",
+              "Because the measurements are only published several years afterward",
+              "Because the improvement shows up downstream rather than locally",
+              "Because the river's own variability hides any change for a decade",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A farm that improves today shows results in the water much later, because groundwater travels slowly and today's water partly reflects decisions made long ago. A genuine improvement can look like no improvement for a long time.",
+            sourceLessonSlug: "a-thousand-miles-of-nitrogen",
+          },
+          {
+            prompt: "Where do the costs and the benefits of changing practice land?",
+            options: [
+              "Both upstream, on the farms that make the change themselves",
+              "Both downstream, where the water quality actually improves",
+              "The cost upstream and the benefit a thousand miles downstream",
+              "The cost on the public purse and the benefit on private landowners",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The benefit falls on people the upstream farmer will never meet. The lesson calls that the whole difficulty, and says plainly that it is not a science problem.",
+            sourceLessonSlug: "a-thousand-miles-of-nitrogen",
+          },
+          {
+            prompt: "Which of these is among the practices known to reduce nutrient loss?",
+            options: [
+              "Deepening the tile drains so that water spends longer underground",
+              "Cover crops and buffer strips along waterways",
+              "Switching the basin's fields to crops that require no fertilizer at all",
+              "Building settling ponds at the mouth of the river",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Cover crops, wetland restoration, buffer strips along waterways, more precise fertilizer timing and placement, and treating drainage before it reaches a ditch are all known and demonstrated.",
+            sourceLessonSlug: "a-thousand-miles-of-nitrogen",
+          },
+          {
+            prompt: "What does the lesson say the obstacle is?",
+            options: [
+              "Knowledge, since the effective practices are still being identified",
+              "Measurement, since nobody can attribute the load to a given field",
+              "Adoption at basin scale",
+              "Technology, since the equipment needed is not yet widely available",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The obstacle is not knowledge. It is adoption at basin scale, which is a question of cost, of who bears it, and of policy. A course that stopped at we know what to do would be misleading by omission.",
+            sourceLessonSlug: "a-thousand-miles-of-nitrogen",
+          },
+          {
+            prompt: "Why can what lives in a river tell you more than a single chemical reading?",
+            options: [
+              "Organisms integrate conditions over their whole lives",
+              "Because biological surveys are repeated more often than chemical ones",
+              "Because organisms respond to contaminants no instrument can detect",
+              "Because a species list is cheaper to collect than a laboratory analysis",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A chemical reading covers the instant you sampled. An organism has been living through everything that happened before you arrived.",
+            sourceLessonSlug: "life-in-the-river",
+          },
+          {
+            prompt: "How does the lesson describe the conservation status of freshwater mussels?",
+            options: [
+              "Stable, though their range has contracted over the last century",
+              "Recovering, following the water-quality improvements of recent decades",
+              "Unknown, since no comprehensive survey has ever been attempted",
+              "Among the most endangered groups of animals in North America",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Among the most endangered groups of animals in North America, in a continent that has an unusually rich variety of them.",
+            sourceLessonSlug: "life-in-the-river",
+          },
+          {
+            prompt: "What does the lesson call a dense mussel bed?",
+            options: [
+              "A refuge that shelters juvenile fish from predators",
+              "Water-treatment infrastructure that nobody built",
+              "A sediment trap that stabilizes the bed of the channel",
+              "A record of the river's chemistry laid down layer by layer",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A mussel bed pulls particles from the water continuously, which is genuine water treatment happening without anyone having installed it.",
+            sourceLessonSlug: "life-in-the-river",
+          },
+          {
+            prompt: "What makes a mussel bed a record of conditions over time?",
+            options: [
+              "Its shells accumulate chemical traces of everything the water carried",
+              "The bed grows outward at a steady and measurable rate each year",
+              "The mussels are stationary and long-lived",
+              "Each generation settles in a distinct layer that can be dated",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A mussel cannot leave when conditions worsen, and it can live for decades. So a bed's presence, absence, or age structure records conditions over a long stretch of time.",
+            sourceLessonSlug: "life-in-the-river",
+          },
+          {
+            prompt: "What does a bed of only old mussels and no young ones tell you?",
+            options: [
+              "That the population is being harvested faster than it can replace itself",
+              "That the water has stopped being suitable for reproduction",
+              "That an older generation outcompeted its own young for space",
+              "That a recent flood scoured the smaller animals out of the bed",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Conditions were suitable when the older animals settled and something has since prevented successful reproduction. No single sample would show that.",
+            sourceLessonSlug: "life-in-the-river",
+          },
+          {
+            prompt: "What do the larvae of many mussel species require?",
+            options: [
+              "A stretch of gravel bed shallow enough for light to reach them",
+              "A period of low flow lasting several weeks after they are released",
+              "A supply of plankton dense enough to sustain them while they drift",
+              "To attach to a specific fish in order to develop",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Which means a mussel population depends on a fish population, and anything that blocks that fish can end the mussels upstream without touching the mussels directly.",
+            sourceLessonSlug: "life-in-the-river",
+          },
+          {
+            prompt: "How can a dam end a mussel population without affecting the mussels directly?",
+            options: [
+              "By removing the host fish the larvae depend on",
+              "By trapping the sediment the mussels filter out of the water",
+              "By raising the water temperature above what the mussels tolerate",
+              "By altering the chemistry of the water released downstream",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Blocking the host fish ends recruitment while every adult mussel upstream is still alive and the water still tests clean.",
+            sourceLessonSlug: "life-in-the-river",
+          },
+          {
+            prompt: "What does a dam without effective passage do to migrating fish?",
+            options: [
+              "It delays their journey, so spawning happens later in the season",
+              "It concentrates them below the structure, where they are easier to catch",
+              "It removes access to spawning habitat entirely",
+              "It forces them to spawn in the reservoir rather than in the river",
+            ],
+            correctIndex: 2,
+            explanation:
+              "It does not merely inconvenience them. The population above or below is cut off from where it has to go to reproduce.",
+            sourceLessonSlug: "life-in-the-river",
+          },
+          {
+            prompt: "How can the water quality read fine while the fishery has collapsed?",
+            options: [
+              "Because water-quality tests do not measure anything fish depend on",
+              "Because a collapse takes years to appear in the chemistry",
+              "Because fish populations respond to fishing pressure, not to water",
+              "Connectivity is a separate requirement from chemistry",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Water quality is one requirement. Connectivity is another, and a river is a network before it is a chemistry.",
+            sourceLessonSlug: "life-in-the-river",
+          },
+          {
+            prompt: "What do the introduced carp species consume?",
+            options: [
+              "Plankton at the base of the food web",
+              "The eggs of the native fish they compete with directly",
+              "The freshwater mussels that filter the same water",
+              "Aquatic plants, which they strip from the shallows of the channel",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They consume plankton at the base of the food web and can reach very high densities, which changes what is available to native species.",
+            sourceLessonSlug: "life-in-the-river",
+          },
+          {
+            prompt: "Where is much of the current carp management effort aimed?",
+            options: [
+              "At restoring the native species already displaced in the lower basin",
+              "At preventing spread into the Great Lakes",
+              "At harvesting the population down to a level the food web can carry",
+              "At breeding a variety that cannot reproduce in open water",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Several introduced carp species have spread widely through the basin, and much of the management effort is aimed at keeping them out of the Great Lakes.",
+            sourceLessonSlug: "life-in-the-river",
+          },
+          {
+            prompt: "What does a pH reading indicate, and what does it leave out?",
+            options: [
+              "Chemical conditions, but not any one substance's concentration",
+              "The concentration of acid, but not of anything alkaline",
+              "The total dissolved material, but not which ions make it up",
+              "How stressful the water is for fish, but not for invertebrates",
+            ],
+            correctIndex: 0,
+            explanation:
+              "pH reports whether the water is acid or alkaline, which indicates chemical conditions and stress on organisms. It says nothing about the concentration of any specific substance.",
+            sourceLessonSlug: "reading-water-quality",
+          },
+          {
+            prompt: "What does the lesson tell you to do before buying a test kit?",
+            options: [
+              "Take a series of samples so you know what the river's normal range is",
+              "Find out what is already being measured on your own river",
+              "Confirm which measures your state's regulators will actually accept",
+              "Choose one measure and learn it thoroughly before adding others",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Both the Geological Survey gauge network and the EPA publish water-quality data, and some gauges report continuously. Check what already exists before you spend anything.",
+            sourceLessonSlug: "reading-water-quality",
+          },
+        ],
+      },
+    },
     // ── Part 4 ─────────────────────────────────────────────────────────────────────────────────
     {
       slug: "reading-the-expedition",
