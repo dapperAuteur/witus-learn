@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { normalizeForMatch, quoteStillResolves } from "@/lib/annotations";
+import { noteSearchSource, normalizeForMatch, quoteStillResolves } from "@/lib/annotations";
 
 // The orphan rule (plans/61 §2): whether a quote still resolves is recomputed against the current
 // lesson body, whitespace-insensitively but case-exactly, and is never persisted. These tests pin
@@ -37,5 +37,37 @@ describe("quoteStillResolves", () => {
 
   it("does not resolve any quote against a missing body", () => {
     expect(quoteStillResolves(null, "anything")).toBe(false);
+  });
+});
+
+// Note search returns four kinds of hit (plans/61 §4) and every one of them has to say whose note
+// it is. The DB half of this lives in tests/isolation/notes.db.test.ts; these run everywhere,
+// because mislabelling a shared note as the viewer's own is a privacy bug, not a cosmetic one.
+describe("noteSearchSource", () => {
+  const me = "user-me";
+  const other = "user-other";
+
+  it("labels the viewer's own personal note as theirs", () => {
+    expect(noteSearchSource({ kind: "personal", authorId: me }, me, me)).toBe("mine");
+  });
+
+  it("never labels someone else's personal note as the viewer's own", () => {
+    // Only a share row can put this note in the results, so 'shared' is the only honest label.
+    expect(noteSearchSource({ kind: "personal", authorId: other }, me, me)).toBe("shared");
+  });
+
+  it("separates a note the viewer sent from one their teacher sent them", () => {
+    expect(noteSearchSource({ kind: "teacher", authorId: me }, me, me)).toBe("sent");
+    expect(noteSearchSource({ kind: "teacher", authorId: other }, me, me)).toBe("teacher");
+  });
+
+  it("attributes the teaching half to the account, not to a child being acted as", () => {
+    const child = "user-child";
+    // A parent acting as their managed child: the child's notes are "mine" for this viewer,
+    // and a note the PARENT sent as a teacher stays labelled as the parent's own sending.
+    expect(noteSearchSource({ kind: "personal", authorId: child }, child, me)).toBe("mine");
+    expect(noteSearchSource({ kind: "teacher", authorId: me }, child, me)).toBe("sent");
+    // A different teacher's note is still just a teacher note.
+    expect(noteSearchSource({ kind: "teacher", authorId: other }, child, me)).toBe("teacher");
   });
 });

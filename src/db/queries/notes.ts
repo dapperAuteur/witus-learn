@@ -22,6 +22,8 @@ import {
 //     un-narrowed (no recipient rows) or narrowed to include them.
 //   - A guardian's view of teacher-sent notes is gated by isGuardianOf in the route, never here
 //     by accident: guardians NEVER see a student's personal notes through any query in this file.
+//   - Search is the same four rules, not a fifth one. searchNotesInCourse re-states them inline
+//     rather than calling the list queries, so a rule added above must be added there too.
 
 /** A note plus the display name of its author (for teacher notes and shared notes). */
 export interface NoteWithAuthor extends LessonNote {
@@ -429,15 +431,33 @@ export async function listTeacherNotesSentToStudent(
 
 // ── Note search (plans/61 §4) ────────────────────────────────────────────────
 
-/** Search the viewer's OWN notes in a course (body + quoted text), newest first. Teacher-sent
- *  notes visible to the viewer match too. Scope rules are the whole security surface: nothing
- *  outside (own ∪ visible-to-me) can ever match, and everything stays inside the tenant. */
+/** Search the notes a viewer may see in one course (body + quoted text), newest first.
+ *
+ *  Scope rules are the whole security surface (plans/61 §4), and they are audience-shaped rather
+ *  than role-shaped, because one person is usually both:
+ *
+ *    - a learner searches their OWN notes, plus teacher notes sent to them;
+ *    - a teacher ALSO searches notes students shared with them, plus notes they sent.
+ *
+ *  Two ids, deliberately. `viewerId` is the active learner (a parent acting as a managed child is
+ *  that child here), so "my notes" follows the act-as chokepoint. `accountId` is the signed-in
+ *  account, so the teaching half (shares addressed to me, notes I sent) is never inherited by a
+ *  child being acted as. Nothing outside (own ∪ sent-to-me ∪ shared-with-me ∪ sent-by-me) can
+ *  match, and everything stays inside the tenant.
+ */
 export async function searchNotesInCourse(
   tenantId: string,
   viewerId: string,
+  accountId: string,
   courseId: string,
   query: string,
-): Promise<(LessonNote & { lessonTitle: string | null; lessonSlug: string | null })[]> {
+): Promise<
+  (LessonNote & {
+    lessonTitle: string | null;
+    lessonSlug: string | null;
+    authorName: string | null;
+  })[]
+> {
   const q = `%${query.replaceAll("%", "\\%").replaceAll("_", "\\_")}%`;
   const textMatches = or(ilike(lessonNotes.body, q), ilike(lessonNotes.quote, q));
   const mine = and(eq(lessonNotes.authorId, viewerId), eq(lessonNotes.kind, "personal"));
@@ -477,21 +497,45 @@ export async function searchNotesInCourse(
     isMember,
     or(hasNoRecipients, isRecipient),
   );
+  // The teaching half. A share row IS the consent, so it is the only thing that can put another
+  // person's personal note in these results, and withdrawing the share removes the note from
+  // search in the same breath that it removes it from the lesson.
+  const sharedWithMe = exists(
+    db
+      .select({ one: sql`1` })
+      .from(lessonNoteShares)
+      .where(
+        and(
+          eq(lessonNoteShares.noteId, lessonNotes.id),
+          eq(lessonNoteShares.teacherUserId, accountId),
+          eq(lessonNoteShares.tenantId, tenantId),
+        ),
+      ),
+  );
+  // A teacher OWNS a cohort rather than belonging to it, so their own sent notes never satisfy
+  // `sentToMe`. Without this clause a teacher cannot find what they themselves wrote.
+  const sentByMe = and(eq(lessonNotes.kind, "teacher"), eq(lessonNotes.authorId, accountId));
   const rows = await db
-    .select({ note: lessonNotes, lessonTitle: lessons.title, lessonSlug: lessons.slug })
+    .select({ note: lessonNotes, lessonTitle: lessons.title, lessonSlug: lessons.slug, authorName })
     .from(lessonNotes)
+    .innerJoin(users, eq(users.id, lessonNotes.authorId))
     .leftJoin(lessons, eq(lessons.id, lessonNotes.lessonId))
     .where(
       and(
         eq(lessonNotes.tenantId, tenantId),
         eq(lessonNotes.courseId, courseId),
         textMatches,
-        or(mine, sentToMe),
+        or(mine, sentToMe, sharedWithMe, sentByMe),
       ),
     )
     .orderBy(desc(lessonNotes.createdAt))
     .limit(50);
-  return rows.map((r) => ({ ...r.note, lessonTitle: r.lessonTitle, lessonSlug: r.lessonSlug }));
+  return rows.map((r) => ({
+    ...r.note,
+    lessonTitle: r.lessonTitle,
+    lessonSlug: r.lessonSlug,
+    authorName: r.authorName,
+  }));
 }
 
 // ── Anchoring support ────────────────────────────────────────────────────────
