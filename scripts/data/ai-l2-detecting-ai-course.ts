@@ -1031,6 +1031,266 @@ Notice every step is **provenance and corroboration** (origin, source, independe
 - Stanford Civic Online Reasoning / Digital Inquiry Group. Teaching Lateral Reading. https://cor.inquirygroup.org/curriculum/collections/teaching-lateral-reading/`,
     },
     {
+      slug: "quiz-the-two-sided-problem",
+      title: "Section 4 knowledge check · The two-sided problem",
+      section: "The two-sided problem",
+      body: `A graded check on the liar's dividend, on why fearmongering makes it worse, and on the six-step workflow verification desks use. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is the liar's dividend?",
+            options: [
+              "The profit made by selling tools that generate deepfakes",
+              "Real evidence dismissed as fake",
+              "The advantage a fake holds over the truth in a fast feed",
+              "The cost of proving a piece of genuine media is authentic",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Once everybody knows deepfakes exist, someone caught on genuine video can simply say it was generated. The possibility does the work; no actual fake is needed.",
+            sourceLessonSlug: "the-liars-dividend",
+          },
+          {
+            prompt: "Which direction does the liar's dividend run, compared with the rest of the course?",
+            options: [
+              "The same one, since both involve media that misleads",
+              "The opposite one",
+              "Neither, since it concerns text rather than images",
+              "Both at once, since a denial is itself a kind of fake",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Every other lesson defends against a fake passed off as real. This one defends against something real being passed off as a fake.",
+            sourceLessonSlug: "the-liars-dividend",
+          },
+          {
+            prompt: "What makes the liar's dividend stronger?",
+            options: [
+              "The falling cost of generating convincing footage",
+              "The number of platforms that refuse to label content",
+              "Fear of deepfakes",
+              "The speed at which a clip can reach a large audience",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The more the public dreads fakes, the more readily a denial is believed. The excuse is powered by the alarm rather than by the technology.",
+            sourceLessonSlug: "the-liars-dividend",
+          },
+          {
+            prompt: "What do WITNESS and researchers warn may be the larger long-term danger?",
+            options: [
+              "Believing fakes about people with no way to respond",
+              "Losing the ability to produce evidence a court will accept",
+              "The volume of synthetic content overwhelming moderation",
+              "Disbelieving the truth",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Not that we believe fakes, but that shared reality erodes until nothing can be trusted. A world where no evidence lands is worse than one with some bad evidence in it.",
+            sourceLessonSlug: "the-liars-dividend",
+          },
+          {
+            prompt: "Why does this course refuse to fearmonger?",
+            options: [
+              "It hands out the dividend",
+              "It makes people abandon verification tools entirely",
+              "It draws attention to techniques criminals had not tried",
+              "It discourages platforms from labeling generated content",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A message of \"anything could be fake\" trains people to dismiss authentic evidence too. Reflexive cynicism is not the goal; calibrated trust is.",
+            sourceLessonSlug: "the-liars-dividend",
+          },
+          {
+            prompt: "What does the lesson say \"I'm not sure yet\" is?",
+            options: [
+              "A verdict that is at least honest about its uncertainty",
+              "A verification step",
+              "A reason to withhold judgment permanently",
+              "An admission that the available tools were not enough",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Skepticism without nihilism. Not knowing yet is a stage of the process, and treating it as a conclusion is how the shrug replaces the check.",
+            sourceLessonSlug: "the-liars-dividend",
+          },
+          {
+            prompt: "What is the answer to \"it could be fake\", per this lesson?",
+            options: [
+              "Treat it as unproven and move on to something else",
+              "Run it through more than one detection tool",
+              "Check provenance",
+              "Wait for a reputable outlet to make the call for you",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The possibility of fakery is where the work starts, not where it ends. Shrugging is the response the liar's dividend is counting on.",
+            sourceLessonSlug: "the-liars-dividend",
+          },
+          {
+            prompt: "What does the lesson say about the claim that something is fake?",
+            options: [
+              "It needs evidence too",
+              "It is safer than calling something real by mistake",
+              "It is justified whenever provenance cannot be traced",
+              "It requires less support than a claim of authenticity",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Dismissing real footage is a claim like any other. Letting \"it's probably a deepfake\" pass unsupported is what makes the excuse work.",
+            sourceLessonSlug: "the-liars-dividend",
+          },
+          {
+            prompt: "What can corroboration do besides expose fakes?",
+            options: [
+              "Establish who first published a piece of media",
+              "Show which platform stripped a file's metadata",
+              "Measure how widely a claim has already spread",
+              "Confirm something is genuine",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Independent sources, credentials and original-source tracing all cut both ways. The durable skill defends against believing a fake and against disbelieving the truth.",
+            sourceLessonSlug: "the-liars-dividend",
+          },
+          {
+            prompt: "What does step one of the newsroom workflow look for?",
+            options: [
+              "The version with the highest engagement figures",
+              "The earliest version",
+              "The copy still carrying intact metadata from the camera",
+              "The account with the largest following that posted it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Reverse-image-search the frames, search keywords and dates, trace the post upstream. Everything downstream of the original has been through other hands.",
+            sourceLessonSlug: "how-newsrooms-verify",
+          },
+          {
+            prompt: "Why does the earliest copy matter so much?",
+            options: [
+              "It carries the real context",
+              "It is the only version a platform will preserve",
+              "It is the copy that detection tools handle most reliably",
+              "It is the version least likely to have been compressed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Later reposts strip the context away, often innocently. The caption that reached you may have been attached several hands after the event.",
+            sourceLessonSlug: "how-newsrooms-verify",
+          },
+          {
+            prompt: "What does step two try to do?",
+            options: [
+              "Establish which country the upload came from",
+              "Confirm that the account is not automated",
+              "Reach the person who posted it",
+              "Determine how long the account has existed",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Identify and contact the source. A person who can be reached can be asked what they saw, which is evidence no analysis of the file produces.",
+            sourceLessonSlug: "how-newsrooms-verify",
+          },
+          {
+            prompt: "What does the lesson call an uploader who will not or cannot be identified?",
+            options: [
+              "A reason to weight the clip lower but still use it",
+              "Common enough that it carries little information",
+              "Grounds for treating the media as generated",
+              "A major red flag",
+            ],
+            correctIndex: 3,
+            explanation:
+              "It is not proof of anything, and it removes the accountability that made the first provenance question worth asking.",
+            sourceLessonSlug: "how-newsrooms-verify",
+          },
+          {
+            prompt: "What do verification desks trust?",
+            options: [
+              "A chain of sources",
+              "The outlet with the strongest record on that subject",
+              "The first professional newsroom to report the event",
+              "A detector score that a second detector agrees with",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Not one viral clip, however compelling. Independent reputable outlets reporting the same event is what step three is asking for.",
+            sourceLessonSlug: "how-newsrooms-verify",
+          },
+          {
+            prompt: "What does step four check the media against?",
+            options: [
+              "The generation patterns that known models tend to leave",
+              "Other footage of the same event from other angles",
+              "The world",
+              "The account's previous posts about the same subject",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Internal consistency against reality. Does what the clip shows match the time and place it claims, on facts that were true independently of the clip?",
+            sourceLessonSlug: "how-newsrooms-verify",
+          },
+          {
+            prompt: "Which details does step four name?",
+            options: [
+              "Frame rate, color depth, and compression artifacts",
+              "Weather, shadows, signage",
+              "Camera height, lens distortion, and focal length",
+              "Audio levels, background noise, and room reverb",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Along with license plates, language and landmarks. Every item is a fact about the claimed time and place that can be checked somewhere else.",
+            sourceLessonSlug: "how-newsrooms-verify",
+          },
+          {
+            prompt: "Why does the lesson insist step four is not artifact-hunting?",
+            options: [
+              "It comes after the provenance steps rather than before them",
+              "It is carried out by a team rather than by one person",
+              "It relies on published records rather than on observation",
+              "It works on a flawless render",
+            ],
+            correctIndex: 3,
+            explanation:
+              "A perfect render of a street can still show the wrong weather for that date. You are checking the claim against the world, not the file against a flaw list.",
+            sourceLessonSlug: "how-newsrooms-verify",
+          },
+          {
+            prompt: "How does step five say to treat detector scores, credentials and metadata?",
+            options: [
+              "As the final word once two separate tools agree",
+              "Evidence to weigh",
+              "As a first filter, run before the provenance work begins",
+              "As optional, since provenance answers the question alone",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Inputs, never verdicts. Detectors collapse toward chance on real-world content, so a score is one piece of evidence among several.",
+            sourceLessonSlug: "how-newsrooms-verify",
+          },
+          {
+            prompt: "What is the professional default when a clip cannot be confirmed?",
+            options: [
+              "Publish it with a prominent unverified label attached",
+              "Wait for another outlet to take the risk first",
+              "Report the account to the platform for review",
+              "Do not amplify it",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Unverified is an honest and publishable state. Do not spread what you cannot stand behind is the rule that makes the other five steps mean something.",
+            sourceLessonSlug: "how-newsrooms-verify",
+          },
+        ],
+      },
+    },
+    {
       slug: "before-you-share",
       recallContent: [
         { prompt: "Name three steps in a newsroom's verification workflow.", answer: "Find the earliest or original version, identify and contact the source, and read laterally for independent corroboration (then check internal consistency against the real world)." },
