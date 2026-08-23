@@ -526,7 +526,12 @@ header — attachment download, no caching.
 The `/admin` landing is a consolidated dashboard: headline tenant-scoped counts (learners, active
 enrollments, courses published with the unvetted remainder, completions, open problem reports,
 leads; the owner also sees new curriculum feedback, media awaiting review, and upcoming live
-sessions), each linking to its surface, above the full tool grid. `/admin/settings` self-serve
+sessions), each linking to its surface, above the full tool grid. "Open problem reports" counts
+everything not yet `closed`, so a row parked at `triaged` still shows in that number. On
+`/admin/reports` itself, every row off `new` now displays the reason recorded against it (the
+`--note` that `pnpm reports:triage` requires, stored in `problem_reports.resolution` by migration
+0058), and a row off `new` with no reason recorded says so rather than looking settled: closing a
+report without saying why stops the next person from ever looking again. `/admin/settings` self-serve
 flags now also include **Learning paths** (`flags.paths`) and **Lead funnel** (`flags.leadFunnel`)
 alongside the existing set. Deployment-identity flags (`recruiting`, `surface`, `aiProvider`,
 `ecosystemSso`, `firstParty`) stay deliberately out of self-serve.
