@@ -1020,6 +1020,217 @@ America's Poison Centers. (2024). *Poison Help: 1-800-222-1222.* https://poisonc
       ],
     },
 
+    {
+      slug: "quiz-food",
+      title: "Section 4 quiz · Food",
+      section: "Section 4 · Food",
+      body: `${SAFETY}
+
+A graded check on emergency food storage and outage food safety, the acid rule that decides a canning method, and why this course teaches foraging caution instead of plant identifications. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Why does the course call food the lowest-priority immediate need?",
+            options: [
+              "Because most households already keep more than a week of it",
+              "Because it can be foraged once the other three needs are secured",
+              "It is the three-week priority",
+              "Because federal guidance leaves food out of the basic supplies kit",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The rule of 3s puts food last, at roughly three weeks, which is exactly why it is tempting to over-invest in food and under-invest in water and shelter.",
+            sourceLessonSlug: "food-storage-and-safety",
+          },
+          {
+            prompt: "What kind of food does federal guidance say to store?",
+            options: [
+              "Frozen meals, because a full freezer holds temperature the longest",
+              "Whatever your household eats now, rotated through the refrigerator",
+              "Bulk staples that need long cooking, since fuel is easy to store",
+              "Non-perishable, needing little or no cooking",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Store a several-day supply of non-perishable food that needs little or no cooking, water, or refrigeration, choosing items your household will actually eat, and rotate by date.",
+            sourceLessonSlug: "food-storage-and-safety",
+          },
+          {
+            prompt: "During a power outage, how long does the USDA say a full freezer holds a safe temperature?",
+            options: [
+              "About 48 hours",
+              "About 4 hours, the same figure the USDA gives for a refrigerator",
+              "About a week, provided the freezer is not opened even once",
+              "About 12 hours, halved again if the freezer is only partly full",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A refrigerator holds safe temperature about 4 hours and a full freezer about 48 hours, or 24 if it is half full. Keep the doors closed.",
+            sourceLessonSlug: "food-storage-and-safety",
+          },
+          {
+            prompt: "When must perishable food be discarded after an outage?",
+            options: [
+              "As soon as the power has been out for more than a single hour",
+              "Above 40 degrees for over 2 hours",
+              "Only once it develops an off smell or an obviously changed texture",
+              "Whenever the freezer contents have thawed but still feel cold",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Discard perishable food held above 40 degrees Fahrenheit for more than 2 hours. You cannot rely on smell or taste to judge safety.",
+            sourceLessonSlug: "food-storage-and-safety",
+          },
+          {
+            prompt: "What is the USDA's rule when you are unsure whether outage food is safe?",
+            options: [
+              "Cook it thoroughly, since heat resolves most spoilage questions",
+              "Taste a small amount and judge from there before serving it",
+              "When in doubt, throw it out",
+              "Refreeze it and use it first once the power has been restored",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Smell and taste cannot tell you whether food is safe, which is why the rule is absolute. An appliance thermometer lets you verify temperature rather than guess.",
+            sourceLessonSlug: "food-storage-and-safety",
+          },
+          {
+            prompt: "How does food preservation actually work?",
+            options: [
+              "By sealing food so completely that no microbe can ever reach it",
+              "By adding preservatives that microbes are unable to digest",
+              "By lowering the food's temperature below the point microbes survive",
+              "It removes what microbes need",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Preservation extends food by removing what microbes need: water, the right temperature, or a hospitable pH. Canning, freezing, and drying are the main home methods.",
+            sourceLessonSlug: "food-preservation-basics",
+          },
+          {
+            prompt: "Which foods must be processed in a pressure canner?",
+            options: [
+              "Low-acid foods",
+              "High-acid foods such as most fruits and properly acidified pickles",
+              "Any food that will be stored for longer than one full calendar year",
+              "Only meats, since vegetables can safely use a boiling-water bath",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Most vegetables, meats, poultry, and fish are low-acid and must be pressure canned. High-acid foods are the ones a boiling-water bath can safely handle.",
+            sourceLessonSlug: "food-preservation-basics",
+          },
+          {
+            prompt: "Why must low-acid food go in a pressure canner rather than a boiling-water bath?",
+            options: [
+              "Because a water bath cannot hold a steady temperature for long",
+              "Only pressure reaches botulism-killing heat",
+              "Because low-acid food takes longer to heat all the way through",
+              "Because the jars would float and seal unevenly in an open bath",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Only pressure canning reaches the temperature needed to destroy Clostridium botulinum spores. Using the wrong method for low-acid food risks fatal botulism.",
+            sourceLessonSlug: "food-preservation-basics",
+          },
+          {
+            prompt: "Which foods can a boiling-water bath safely handle?",
+            options: [
+              "Any food, as long as the processing time is doubled for safety",
+              "Meats and poultry, which are cooked through before they are jarred",
+              "High-acid foods",
+              "Vegetables, provided they are blanched before they go in the jar",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A boiling-water bath is safe only for high-acid foods: most fruits and properly acidified pickles. Everything low-acid needs pressure.",
+            sourceLessonSlug: "food-preservation-basics",
+          },
+          {
+            prompt: "What does this lesson deliberately give you instead of a recipe?",
+            options: [
+              "A warning that home canning should never be attempted by anyone",
+              "A list of the equipment to buy before you attempt any preserving",
+              "A comparison of canning against freezing and drying by cost",
+              "A decision rule and an authority",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Acid level picks the method, and the USDA and Cooperative Extension tested recipes give the times and pressures, which depend on the food, jar size, and altitude.",
+            sourceLessonSlug: "food-preservation-basics",
+          },
+          {
+            prompt: "Why does the foraging lesson teach caution instead of plant identifications?",
+            options: [
+              "Toxic species closely resemble edible ones",
+              "Because foraging is illegal on most public land in the United States",
+              "Because the plants that grow near a shelter site are rarely edible",
+              "Because identification requires equipment most households lack",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Misidentification of wild mushrooms and plants causes serious poisonings every year, and food is the roughly three-week priority, so foraging is unnecessary risk in almost any short-term emergency.",
+            sourceLessonSlug: "foraging-safety-principles",
+          },
+          {
+            prompt: "What is the first principle of foraging safety?",
+            options: [
+              "Eat only a small test portion and wait several hours before more",
+              "Positive identification, or do not eat it",
+              "Prefer plants growing well away from roads and any industrial site",
+              "Cook everything thoroughly, which neutralizes most plant toxins",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Uncertainty means no. That rule comes first because many toxic species closely resemble edible ones and some are lethal.",
+            sourceLessonSlug: "foraging-safety-principles",
+          },
+          {
+            prompt: "Where does the lesson say to learn foraging?",
+            options: [
+              "From a current regional field guide with photographs of look-alikes",
+              "From an online community that specializes in your own region",
+              "In person, from qualified local experts",
+              "From the CDC's published lists of commonly confused wild species",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Learn in person from a botanist, a mycological society, or a Cooperative Extension office, for your own region. A memorized list is not a substitute.",
+            sourceLessonSlug: "foraging-safety-principles",
+          },
+          {
+            prompt: "An animal has been eating a plant. Does that make it safe for you?",
+            options: [
+              "Yes, provided the animal is a mammal rather than a bird or insect",
+              "Yes, as long as you watch it for several hours with no ill effect",
+              "Only for the parts of the plant the animal was observed eating",
+              "No",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The lesson names this explicitly: animals ate it does not mean it is safe for humans. Beware look-alikes, and get positive expert identification.",
+            sourceLessonSlug: "foraging-safety-principles",
+          },
+          {
+            prompt: "If poisoning is suspected in the United States, who do you contact?",
+            options: [
+              "Poison Control, 1-800-222-1222",
+              "The nearest Cooperative Extension office, which identifies specimens",
+              "The CDC's public inquiry line, which routes to a regional toxicologist",
+              "A mycological society member, who can identify the species by photo",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Contact Poison Control or emergency services immediately. The other organizations teach identification; none of them handles an active poisoning.",
+            sourceLessonSlug: "foraging-safety-principles",
+          },
+        ],
+      },
+    },
+
     // ─────────────────────────────────────────────────────────────────────────
     // SECTION 5: Off-grid power
     // ─────────────────────────────────────────────────────────────────────────
