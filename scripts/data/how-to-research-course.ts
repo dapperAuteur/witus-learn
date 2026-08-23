@@ -1592,6 +1592,267 @@ Then get on with the work.
       ],
     },
 
+    {
+      slug: "quiz-being-accountable",
+      title: "Section 5 knowledge check · Being accountable",
+      section: "Section 5 · Being accountable",
+      body: `A graded check on the criterion that makes every other one checkable by somebody else, and on the one that asks what you stand to gain. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What does the transparency criterion do for the rest of the rubric?",
+            options: [
+              "It makes every other criterion checkable by somebody else",
+              "It replaces the need to corroborate claims that are fully cited",
+              "It sets the format the other criteria are documented in",
+              "It is the only criterion a reviewer scores without reading the work",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the most mechanical criterion in the rubric and the one that lets a reader go and look, which is what makes sourcing, verification, and the rest verifiable at all.",
+            sourceLessonSlug: "transparent",
+          },
+          {
+            prompt: "What property does the citation format actually have to create?",
+            options: [
+              "Consistency, so every entry can be parsed the same way",
+              "That a reader can go and look",
+              "Compliance with the style guide the platform has adopted",
+              "Completeness, so no source consulted is left out",
+            ],
+            correctIndex: 1,
+            explanation:
+              "On this platform that means APA 7 in-line plus a Sources section, but the format matters far less than the property.",
+            sourceLessonSlug: "transparent",
+          },
+          {
+            prompt: "What should you cite?",
+            options: [
+              "The canonical work in the field, whether or not you read it",
+              "Both the summary and the original it draws on",
+              "Only primary material, with secondary reading left uncited",
+              "What you actually used",
+            ],
+            correctIndex: 3,
+            explanation:
+              "If you used a summary, cite the summary. Inflating a bibliography is a small dishonesty that quietly misrepresents how well established your claims are.",
+            sourceLessonSlug: "transparent",
+          },
+          {
+            prompt: "Why cite the summary you actually read rather than the original it summarizes?",
+            options: [
+              "Because the summary is easier for a reader to obtain and check",
+              "Because the original may have been revised since the summary appeared",
+              "Citing what you did not read misrepresents how well established the claim is",
+              "Because a summary carries the interpretation your claim depends on",
+            ],
+            correctIndex: 2,
+            explanation:
+              "It also sends the reader somewhere your understanding did not come from, which is a second problem on top of the first.",
+            sourceLessonSlug: "transparent",
+          },
+          {
+            prompt: "What has to accompany anything that can change?",
+            options: [
+              "The date you accessed it",
+              "A note that the value may since have been revised",
+              "An archived copy of the page as it appeared to you",
+              "A second source confirming the same value independently",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Web pages, agency schedules, statutes, prices. Without a date, a reader who finds something different cannot tell whether you were wrong or the world moved.",
+            sourceLessonSlug: "transparent",
+          },
+          {
+            prompt: "Which two reflexes does the lesson tell you to resist after publishing something wrong?",
+            options: [
+              "The lengthy apology and the detailed explanation of the error",
+              "Republishing the piece, and leaving the original version online",
+              "The quiet fix and the silent deletion",
+              "Correcting immediately, and waiting for a reader to notice first",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Both leave a reader who saw the original with no way to know it changed, and both destroy the record of what was claimed.",
+            sourceLessonSlug: "transparent",
+          },
+          {
+            prompt: "What three parts does a correction that works have?",
+            options: [
+              "An acknowledgment, an apology, and a commitment to do better",
+              "The claim, the source that disproved it, and the reader who found it",
+              "The original text, the revised text, and the reason for the change",
+              "What was wrong, what is right, and when it changed",
+            ],
+            correctIndex: 3,
+            explanation:
+              "That is all. No lengthy apology, no defensiveness, no explanation of how understandable the error was.",
+            sourceLessonSlug: "transparent",
+          },
+          {
+            prompt: "What effect does correcting consistently have on the rest of your work?",
+            options: [
+              "It makes the rest more credible, not less",
+              "It has no effect on how readers judge the unrelated work",
+              "It draws attention to errors that would otherwise pass unnoticed",
+              "It slows the pace at which you can publish new material",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A body of work with visible corrections is one where errors get found. A body of work with none is either perfect or unexamined, and readers can tell which is likelier.",
+            sourceLessonSlug: "transparent",
+          },
+          {
+            prompt: "What does the lesson say about publishing something wrong?",
+            options: [
+              "It reflects a failure of the verification step earlier in the process",
+              "It is avoidable if every claim is corroborated before publication",
+              "You will do it, and everyone who publishes enough does",
+              "It should trigger a review of every claim in the same piece",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Which is why corrections are described as a practice rather than an embarrassment.",
+            sourceLessonSlug: "transparent",
+          },
+          {
+            prompt: "State the disclosure criterion in a sentence.",
+            options: [
+              "Disclose any payment received in connection with the work",
+              "Disclose any source that asked to remain unnamed",
+              "Disclose the methods used to gather every central claim",
+              "Tell the reader anything that could reasonably be thought to bias the work",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Funding, employment, a relationship with someone in the piece, a financial stake in an outcome, a product you own, a gift, a free trip, a review unit you kept.",
+            sourceLessonSlug: "disclosure-of-interests",
+          },
+          {
+            prompt: "What is the mistake almost everyone makes about disclosure?",
+            options: [
+              "Treating it as a legal requirement rather than an ethical one",
+              "Asking whether they were actually influenced",
+              "Assuming a disclosure has to name a monetary amount",
+              "Disclosing so much that the reader stops reading the disclosures",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It did not affect my judgment may be entirely true and is not the question.",
+            sourceLessonSlug: "disclosure-of-interests",
+          },
+          {
+            prompt: "What is the actual test?",
+            options: [
+              "Whether a reasonable reader would want to know",
+              "Whether the interest is material enough to change a conclusion",
+              "Whether disclosing it would embarrass anyone named in the piece",
+              "Whether an editor would require it under house policy",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Disclosure exists so the reader can weigh the work themselves, rather than trusting your self-assessment of your own objectivity, which is the one assessment you are least able to make.",
+            sourceLessonSlug: "disclosure-of-interests",
+          },
+          {
+            prompt: "In the platform's own worked example, what is the conflict?",
+            options: [
+              "A course recommends a tool owned by the same person who owns the platform",
+              "A course is funded by the manufacturer of the equipment it teaches",
+              "An instructor holds shares in a company named in the lessons",
+              "A reviewer scored work submitted by someone they had worked with",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The Imaging and Drone Services course teaches WanderLearn as its primary tour-publishing tool, and WanderLearn is owned by the same person who owns this platform.",
+            sourceLessonSlug: "disclosure-of-interests",
+          },
+          {
+            prompt: "Where is that disclosure required to appear?",
+            options: [
+              "In the platform's terms of service, which every learner accepts",
+              "In a footer note carried on every page of the course",
+              "In the lesson, at the point of recommendation",
+              "In the course description, before a learner enrolls",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Where a learner deciding what tool to buy will actually see it. The comparison section is also written to be genuinely useful to someone who picks a competitor.",
+            sourceLessonSlug: "disclosure-of-interests",
+          },
+          {
+            prompt: "Why does the course use its own conflict as the teaching example?",
+            options: [
+              "Because no other example was available at the time of writing",
+              "Because platform policy requires the conflict to be repeated in each course",
+              "Because the conflict is the clearest one in the industry",
+              "Because it is easy to teach disclosure with somebody else's conflict",
+            ],
+            correctIndex: 3,
+            explanation:
+              "The lesson says the choice is deliberate for exactly that reason.",
+            sourceLessonSlug: "disclosure-of-interests",
+          },
+          {
+            prompt: "How should a disclosure be written?",
+            options: [
+              "Plainly and early, in the same place as the claim it affects",
+              "In full detail, so a reader can assess the size of the interest",
+              "At the end, so it does not distract from the work itself",
+              "In the same register as the rest of the piece, so it reads naturally",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One or two sentences. No performance of agonized soul-searching, which reads as a bid for credit rather than information. Then get on with the work.",
+            sourceLessonSlug: "disclosure-of-interests",
+          },
+          {
+            prompt: "Which of these is an example of the plain disclosure the lesson wants?",
+            options: [
+              "The author has considered whether this relationship affected the work",
+              "The platform recommending this tool also owns it",
+              "Readers should be aware that commercial relationships exist in this field",
+              "Some of the products discussed were provided by their manufacturers",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Alongside this work was funded by X and the author previously worked for Y. Specific, short, and placed where the claim it affects is made.",
+            sourceLessonSlug: "disclosure-of-interests",
+          },
+          {
+            prompt: "Which rubric pillar does disclosure of interests belong to?",
+            options: [
+              "Accountable, alongside transparency",
+              "Minimize harm, since an undisclosed interest can mislead",
+              "Act independently",
+              "Seek truth, since an interest distorts what you look for",
+            ],
+            correctIndex: 2,
+            explanation:
+              "It is the only criterion under act independently, and it must be Met. Transparent is the criterion under accountable.",
+            sourceLessonSlug: "disclosure-of-interests",
+          },
+          {
+            prompt: "What does the lesson call the bibliography?",
+            options: [
+              "The deliverable",
+              "A courtesy to readers who want to go further",
+              "The last thing to assemble, once the writing is finished",
+              "A record for reviewers rather than for readers",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Every substantive claim carries an in-line citation, and the work ends with a full list of sources. That list is not an appendix to the work; it is part of what the work is.",
+            sourceLessonSlug: "transparent",
+          },
+        ],
+      },
+    },
+
     // ── Section 6 ────────────────────────────────────────────────────────────────────────────────
     {
       slug: "craft-and-choosing-the-medium",
