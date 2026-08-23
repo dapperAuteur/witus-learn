@@ -1921,6 +1921,155 @@ Federal Emergency Management Agency. (2024). *Ready.gov: Build a kit.* U.S. Depa
     },
 
     // ─────────────────────────────────────────────────────────────────────────
+    // SECTION 8 QUIZ
+    // ─────────────────────────────────────────────────────────────────────────
+    {
+      slug: "quiz-communications-and-signaling",
+      title: "Section 8 quiz · Communications & Signaling",
+      section: "Section 8 · Communications & Signaling",
+      body: `${SAFETY}
+
+A graded check on how official warnings reach you, what a watch and a warning each mean, and the household plan and signaling habits that get you found when help is delayed. Each answer links back to the lesson that teaches it.`,
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Which two public systems does the lesson name for pushing official warnings to you?",
+            options: [
+              "NOAA Weather Radio and the network of local outdoor warning sirens",
+              "The Emergency Alert System and Wireless Emergency Alerts",
+              "Local news broadcasts and the social media accounts of city agencies",
+              "The National Guard call tree and the county reverse-911 phone system",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The Emergency Alert System reaches broadcast media, and Wireless Emergency Alerts reach capable mobile phones. Both carry short official messages about imminent threats, from severe weather through evacuation orders.",
+            sourceLessonSlug: "emergency-alerts-and-radios",
+          },
+          {
+            prompt: "What kind of message do EAS and WEA carry?",
+            options: [
+              "Detailed recovery instructions issued once the immediate danger has passed",
+              "Short official messages about imminent threats",
+              "Routine daily forecasts that let you plan around the coming week's weather",
+              "Requests for volunteers that local emergency managers send after an event",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Short, official messages about imminent threats, ranging from severe weather to evacuation orders. They are alerts, not forecasts and not recovery guidance.",
+            sourceLessonSlug: "emergency-alerts-and-radios",
+          },
+          {
+            prompt: "What is NOAA Weather Radio All Hazards?",
+            options: [
+              "A subscription weather service that texts your phone when a storm nears",
+              "A volunteer band of amateur operators who relay reports between counties",
+              "A nationwide broadcast network run by the National Weather Service",
+              "A federal database of past storms that forecasters use to model new ones",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The National Weather Service operates it as a nationwide network broadcasting official weather and other emergency information continuously. That is why it is worth a receiver of its own.",
+            sourceLessonSlug: "emergency-alerts-and-radios",
+          },
+          {
+            prompt: "Why does the lesson want a battery or hand-crank NOAA Weather Radio receiver in your kit?",
+            options: [
+              "It reaches you when the power and the internet are down",
+              "It is the only device legally permitted to receive an evacuation order",
+              "It broadcasts your position to responders so a search team can find you",
+              "It carries alerts several hours earlier than any phone or television does",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Information is a survival resource, and a receiver you can power yourself keeps it flowing when the grid and the network do not. Note that a weather radio only receives; it does not transmit anything about you.",
+            sourceLessonSlug: "emergency-alerts-and-radios",
+          },
+          {
+            prompt: "In National Weather Service language, what does a watch mean?",
+            options: [
+              "The hazard has been confirmed on the ground by a trained storm spotter",
+              "Conditions are possible, so prepare",
+              "The hazard is happening now and you should already be taking shelter",
+              "An event has ended and the agency is watching for a second round of it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A watch means conditions are possible, so it is time to prepare. That is the half people get wrong, because a watch is easy to hear as nothing is happening.",
+            sourceLessonSlug: "emergency-alerts-and-radios",
+          },
+          {
+            prompt: "In the same language, what does a warning mean?",
+            options: [
+              "Forecasters have raised their confidence but the timing is still unclear",
+              "The hazard is happening or imminent, so act now",
+              "Conditions could develop later in the day if the forecast holds together",
+              "Local officials have opened shelters and are asking people to move to them",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A warning means the hazard is happening or imminent, so act now. The lesson asks you to make sure everyone in the household knows the difference, because the two words are one syllable apart and a world apart in what they ask of you.",
+            sourceLessonSlug: "emergency-alerts-and-radios",
+          },
+          {
+            prompt: "Why does a family communication plan name an out-of-town contact?",
+            options: [
+              "Because emergency managers can reach a distant number faster than a local one",
+              "Because a relative outside the area can drive in with supplies when roads reopen",
+              "Long-distance lines and texts often work when local ones are jammed",
+              "Because insurance claims require a witness who was not affected by the event",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Everyone in a struck area calls at once, so local circuits jam while long-distance lines and texts often still get through. One agreed out-of-town number lets a scattered household check in through a single point.",
+            sourceLessonSlug: "communication-plan-and-signaling",
+          },
+          {
+            prompt: "Why does the lesson say texting often succeeds when a call fails?",
+            options: [
+              "Because carriers give text messages priority over voice during a disaster",
+              "Because a text is stored and delivered by a different company's equipment",
+              "It uses less bandwidth",
+              "Because a phone can send a text on a battery level too low to place a call",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A text needs far less bandwidth than a voice call, so it can slip through a network that is too congested to carry conversation. The lesson also asks you to keep a written copy of key numbers, because phones die.",
+            sourceLessonSlug: "communication-plan-and-signaling",
+          },
+          {
+            prompt: "If you are stranded and it is safe where you are, what does the lesson advise?",
+            options: [
+              "Walk toward the nearest road, since a moving person covers more ground",
+              "Stay put",
+              "Head downhill until you reach running water and then follow it out",
+              "Split the group so more than one direction can be searched at the same time",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The goal is to be found, and a stationary person is easier to locate. Stay put when it is safe to, make yourself visible and audible, and use signals rescuers recognize.",
+            sourceLessonSlug: "communication-plan-and-signaling",
+          },
+          {
+            prompt: "Why does Ready.gov put a whistle in the basic kit?",
+            options: [
+              "Because rescuers are trained to answer a whistle before any other signal",
+              "Because it doubles as a compass and a fire striker in most kit versions",
+              "It carries farther than your voice and costs little energy",
+              "Because sound travels through smoke and fog that would hide a bright marker",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A whistle carries farther than shouting and takes almost nothing out of you, which matters when you may be signaling for a long time. Signal mirrors, bright materials, and lights extend visibility alongside it, and three of anything, three whistle blasts or three fires, is a widely recognized distress signal.",
+            sourceLessonSlug: "communication-plan-and-signaling",
+          },
+        ],
+      },
+    },
+
+    // ─────────────────────────────────────────────────────────────────────────
     // EXERCISE: fill-in production drill
     // ─────────────────────────────────────────────────────────────────────────
     {
