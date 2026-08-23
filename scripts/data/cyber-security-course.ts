@@ -869,6 +869,383 @@ Everything here is for defense and for systems you own or are authorized to test
               "MITRE ATLAS is the AI-systems counterpart to ATT&CK, and the lesson pairs it with the OWASP ML and LLM Top 10 when you threat-model a pipeline end to end.",
             sourceLessonSlug: "securing-and-attacking-ai",
           },
+          {
+            prompt: "What does GRC stand for on the cybersecurity career map?",
+            options: [
+              "Governance, risk, and compliance",
+              "General response coordination, the on-call rotation for incidents",
+              "Guided remediation of controls, the audit follow-up workstream",
+              "Global regulatory certification, the standard for cross-border data",
+            ],
+            correctIndex: 0,
+            explanation:
+              "GRC is one of the directions you can move after the SOC, alongside incident response, threat hunting, penetration testing, and cloud security.",
+            sourceLessonSlug: "orientation-career-map",
+          },
+          {
+            prompt: "In the lesson's example, a user logs in from two countries an hour apart. What does the SOC analyst do?",
+            options: [
+              "Escalates it straight to the penetration testing team for a retest",
+              "Investigates, then locks the account",
+              "Waits for a second alert before spending any time on the account",
+              "Opens a compliance finding and assigns it to the governance team",
+            ],
+            correctIndex: 1,
+            explanation:
+              "They investigate, decide it is a compromised account, and lock it. The lesson offers that as what the job looks like on most days.",
+            sourceLessonSlug: "orientation-career-map",
+          },
+          {
+            prompt: "Which port does SSH usually listen on?",
+            options: [
+              "Port 80, which also carries unencrypted web page requests",
+              "Port 443, shared with HTTPS so the traffic looks the same",
+              "22",
+              "Port 53, the port that name lookups travel over instead",
+            ],
+            correctIndex: 2,
+            explanation:
+              "SSH is 22, HTTP is 80, and HTTPS is 443. Those three are the ones the lesson asks you to know by heart, because firewall rules and port scans assume them.",
+            sourceLessonSlug: "how-the-internet-works",
+          },
+          {
+            prompt: "Which three commands does the networking lab ask you to run against a site?",
+            options: [
+              "netstat, ss, and last, against the host you are investigating",
+              "chmod, grep, and less, on the log file the server has written",
+              "sha256sum, openssl, and the browser's own certificate viewer",
+              "ping, nslookup, traceroute",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Run ping, nslookup (or dig), and tracert or traceroute against a site you own or a public one, and note what each reveals. The other command sets belong to the operating system and cryptography labs.",
+            sourceLessonSlug: "how-the-internet-works",
+          },
+          {
+            prompt: "What does confidentiality protect?",
+            options: [
+              "Only the right people see it",
+              "That the data has not been tampered with since it was written",
+              "That the data is there and reachable at the moment it is needed",
+              "That every access to the data is written to an immutable log",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Confidentiality is who may see it, integrity is that it has not been tampered with, and availability is that it is there when needed. Those are the three the triad names.",
+            sourceLessonSlug: "cia-triad-fundamentals",
+          },
+          {
+            prompt: "Which control does this lesson name as the defense for availability against ransomware?",
+            options: [
+              "Encryption, which keeps the stolen copy unreadable to the attacker",
+              "Backups",
+              "Multi-factor authentication on every administrator account",
+              "Segmentation between the file servers and the workstations",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Backups defend availability and encryption defends confidentiality. The other two options are real controls, but they answer different problems than getting your files back.",
+            sourceLessonSlug: "cia-triad-fundamentals",
+          },
+          {
+            prompt: "Which three permissions does the operating systems lesson list?",
+            options: [
+              "Owner, group, and the access control list attached to the file",
+              "Create, delete, and modify, granted separately for each directory",
+              "Read, write, execute",
+              "Login, sudo, and root, which are the three privilege levels",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Read, write, and execute are the permission bits, which is why chmod is on the lab command list alongside ls, cd, cat, grep, ps, and less.",
+            sourceLessonSlug: "os-and-command-line",
+          },
+          {
+            prompt: "What does the operating systems lab ask you to install, and where?",
+            options: [
+              "A SIEM on your own laptop, fed by the logs from your home router",
+              "Kali directly onto the machine you use every day, dual-booted",
+              "A Windows Server evaluation copy on the company test network",
+              "Linux in a VM",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Install Linux in a virtual machine, for example VirtualBox with Ubuntu or Kali, and practice the basic commands there. Keeping it in a VM is the same isolation habit the home lab lesson insists on later.",
+            sourceLessonSlug: "os-and-command-line",
+          },
+          {
+            prompt: "What do most real breaches involving cryptography come down to?",
+            options: [
+              "Crypto used wrong",
+              "An algorithm researchers have finally managed to break outright",
+              "Keys too short for the computing power now available to attackers",
+              "A certificate authority issuing a certificate to the wrong party",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Crypto underpins HTTPS, password storage, and secure messaging, and the failures are almost always in how it is used rather than in the mathematics being broken.",
+            sourceLessonSlug: "cryptography-essentials",
+          },
+          {
+            prompt: "What does the cryptography lab have you observe when you hash a string?",
+            options: [
+              "The hash grows longer each time another character is added",
+              "One character rewrites the whole hash",
+              "Two similar strings produce two similar hashes you can compare",
+              "The same string produces a different hash on every single run",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Hash a string with sha256sum, change one character, and the entire output changes. That is what makes a hash useful for verifying integrity.",
+            sourceLessonSlug: "cryptography-essentials",
+          },
+          {
+            prompt: "What is a VPN, in this lesson's terms?",
+            options: [
+              "A separate physical network reserved for sensitive systems only",
+              "A rule set deciding which traffic may cross a network boundary",
+              "An encrypted tunnel",
+              "A monitored zone between the internet and the internal network",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The lesson's network controls are firewalls (allow and deny rules), segmentation (separating sensitive systems), VPNs (encrypted tunnels), and IDS or IPS. The other options describe segmentation, a firewall, and a DMZ.",
+            sourceLessonSlug: "network-defense",
+          },
+          {
+            prompt: "What rule does the network defense lab ask you to write on your VM's host firewall?",
+            options: [
+              "Allow all outbound traffic and deny anything that is encrypted",
+              "Allow HTTP and HTTPS while denying every remote shell session",
+              "Allow traffic from one subnet and deny all the other segments",
+              "Allow SSH, deny other inbound",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Inspect the host firewall, allow SSH, deny everything else inbound, and explain why. Writing the justification is the part that turns the rule into understanding.",
+            sourceLessonSlug: "network-defense",
+          },
+          {
+            prompt: "Which of these does the lesson list as social engineering?",
+            options: [
+              "Pretexting",
+              "Cross-site scripting injected into a page the browser then runs",
+              "A trojan disguised as a legitimate installer the user downloads",
+              "An exploit that delivers a payload against an unpatched service",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Social engineering covers phishing and pretexting, which attack the human. Cross-site scripting is an application attack and a trojan is malware, the other two big categories.",
+            sourceLessonSlug: "threats-and-attacks",
+          },
+          {
+            prompt: "What does knowing the attacker's playbook tell a defender?",
+            options: [
+              "Which certification to pursue next on the career map they drew",
+              "Where to put defenses, and what to watch",
+              "How to obtain authorization for a test without a scope document",
+              "Which of the OWASP Top 10 entries the vendor has already fixed",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Understanding attacks tells you where the defenses belong and what to look for in the logs. That is the reason a defensive course teaches the attacker's categories at all.",
+            sourceLessonSlug: "threats-and-attacks",
+          },
+          {
+            prompt: "What does RBAC stand for?",
+            options: [
+              "Rule-based authentication chaining, the order factors get checked",
+              "Reduced blast area containment, the scope a single breach reaches",
+              "Role-based access control",
+              "Remote browser access channel, the way admins reach a console",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Role-based access control is how least privilege is usually implemented: access follows the role rather than the individual, alongside single sign-on and multi-factor authentication.",
+            sourceLessonSlug: "identity-and-access",
+          },
+          {
+            prompt: "What does this lesson mean by strong authentication?",
+            options: [
+              "Rotating every password on a fixed thirty-day schedule forever",
+              "Requiring a different security question for each separate account",
+              "Disabling password login entirely and relying on certificates alone",
+              "Long passphrases and a password manager",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Long passphrases plus a password manager, then multi-factor authentication on top, then least privilege behind it. Forced rotation and security questions are not part of the lesson's advice.",
+            sourceLessonSlug: "identity-and-access",
+          },
+          {
+            prompt: "What does the SIEM flag in the blue team lesson's worked example?",
+            options: [
+              "Failed logins, then one success",
+              "A single administrator account created outside of business hours",
+              "An outbound transfer far larger than the daily historical average",
+              "A device scanning every internal host on a hospital's network",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A hundred failed logins then one success on an admin account. The analyst contains the account, checks what it touched, and writes it up.",
+            sourceLessonSlug: "blue-team-defense",
+          },
+          {
+            prompt: "When you triage a sample alert in the blue team lab, what must you justify?",
+            options: [
+              "Which MITRE ATT&CK technique the alert maps onto most closely",
+              "True or false positive, from the logs",
+              "Whether the affected host should be rebuilt or simply patched",
+              "How much the incident is likely to cost the business per hour",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Decide true versus false positive and justify the call from the logs. That decision, made confidently and repeatedly, is the entry-level job.",
+            sourceLessonSlug: "blue-team-defense",
+          },
+          {
+            prompt: "What is the lesson's worked example of a penetration test done properly?",
+            options: [
+              "A tester scans a public host, finds a flaw, and publishes it online",
+              "A researcher tests a vendor's product without telling the vendor",
+              "Scope signed, bug reported, then fixed",
+              "An employee tests the company network on their own initiative",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A company hires a tester, signs a scope document, the tester finds an unpatched server and reports it, and the company fixes it before a criminal does. Every other option is missing the authorization.",
+            sourceLessonSlug: "ethical-hacking-and-lab",
+          },
+          {
+            prompt: "What kind of environment does the lesson say a home lab has to be?",
+            options: [
+              "A spare physical machine plugged into the household router",
+              "A cloud account with a public IP so the tools can reach real targets",
+              "The same machine you use for work, with a separate user account",
+              "Isolated VMs",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Build the lab from isolated virtual machines, and practice on platforms designed for it. Anything reachable from outside the lab is outside the authorization you have.",
+            sourceLessonSlug: "ethical-hacking-and-lab",
+          },
+          {
+            prompt: "What three things does the course say employers hire on?",
+            options: [
+              "Certifications, a portfolio, interview readiness",
+              "A degree, a professional network, and a list of target employers",
+              "A resume, a cover letter template, and a set of recommendations",
+              "A specialization, a mentor, and a salary target for the first year",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Employers hire on evidence: a certification such as Security+, a portfolio of documented labs and write-ups, and the ability to talk about them in an interview.",
+            sourceLessonSlug: "get-the-job",
+          },
+          {
+            prompt: "What does the course tell you to do once you are in the field?",
+            options: [
+              "Stop studying until the first certification comes up for renewal",
+              "Pick a specialization and go deep",
+              "Move to the red team, since offense is where the pay increases",
+              "Repeat the whole path with a second, unrelated certification track",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Choose a lane, whether blue team, pentesting, cloud, or GRC, and go deep. The field rewards continuous learning rather than a single finished checklist.",
+            sourceLessonSlug: "get-the-job",
+          },
+          {
+            prompt: "Why does the course call security a natural fit for machine learning?",
+            options: [
+              "Because attacks follow rules that can be written down exactly",
+              "Because analysts can label every single event before a model sees it",
+              "It produces enormous data",
+              "Because the same attack repeats identically across every company",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Logs, network flows, malware samples, and alerts give models an enormous amount to learn from. The volume is also why a SOC cannot hand-inspect everything.",
+            sourceLessonSlug: "ai-ml-foundations-for-security",
+          },
+          {
+            prompt: "What is the practical exercise in the machine learning foundations lesson?",
+            options: [
+              "Build a SIEM rule set from the logs your own laptop generates",
+              "Fine-tune a large language model on a corpus of incident reports",
+              "Compare two commercial detectors on the same captured traffic",
+              "Train a classifier on phishing URLs",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Train a simple classifier on a public phishing-URL dataset in a notebook, then measure precision and recall on held-out data, which is how the base-rate problem stops being abstract.",
+            sourceLessonSlug: "ai-ml-foundations-for-security",
+          },
+          {
+            prompt: "How does malware classification look at a file?",
+            options: [
+              "Static features and sandbox behavior",
+              "Only the file's hash, checked against a list of known-bad hashes",
+              "Only what the file does once it is executed on a real machine",
+              "The reputation of the sender who delivered it into the network",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Models use static features such as structure and strings, plus dynamic behavior, meaning what the file does when it is run in a sandbox. Sender reputation belongs to the phishing classifier instead.",
+            sourceLessonSlug: "ml-powered-defense",
+          },
+          {
+            prompt: "What does an anomaly-based intrusion detection system learn?",
+            options: [
+              "The signatures of every known attack the vendor has published",
+              "A baseline of normal traffic",
+              "The permissions each account holds across the whole directory",
+              "The wording features that separate phishing mail from real mail",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It learns what normal looks like and flags deviations, such as unusual east-west movement. In the lesson's example, a compromised hospital device scanning internal hosts at three in the morning is the deviation.",
+            sourceLessonSlug: "ml-powered-defense",
+          },
+          {
+            prompt: "What is an adversarial example?",
+            options: [
+              "A training record the attacker inserted to plant a backdoor",
+              "A query designed to reconstruct the model's own training data",
+              "An input crafted to fool a model",
+              "A malware sample reshaped so a detector never sees it at all",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A tiny perturbation that makes a malware classifier say benign. The other options describe data poisoning, model inversion, and evasion, which are the other attack classes in the same list.",
+            sourceLessonSlug: "securing-and-attacking-ai",
+          },
+          {
+            prompt: "What is model extraction?",
+            options: [
+              "Corrupting the training set so the model learns the attacker's rule",
+              "Crafting a tiny perturbation that flips the model's own verdict",
+              "Hiding instructions in input so an assistant ignores its rules",
+              "Stealing the model itself",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Extraction steals the model, and the paired attack, inversion, reconstructs its training data through its outputs. Both work through the model's ordinary responses.",
+            sourceLessonSlug: "securing-and-attacking-ai",
+          },
+          {
+            prompt: "What does the lesson call the fast-growing specialty of securing AI systems?",
+            options: [
+              "MLSecOps",
+              "AIOps, the practice of running operations with model assistance",
+              "Blue teaming for models, a subdiscipline of incident response",
+              "Adversarial governance, the audit track for machine learning",
+            ],
+            correctIndex: 0,
+            explanation:
+              "MLSecOps, also called AI security engineering. The lesson pairs it with the other direction, using AI to defend, where LLM copilots triage alerts and bring their own risks.",
+            sourceLessonSlug: "securing-and-attacking-ai",
+          },
         ],
       },
     },
