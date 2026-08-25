@@ -301,5 +301,346 @@ The Brownies' Book. (1921). Statement of ownership, management, etc. *The Browni
 
 Rossiter, M. W. (1993). The Matthew Matilda effect in science. *Social Studies of Science, 23*(2), 325-341. https://doi.org/10.1177/030631293023002004`,
     },
+
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3 — The claims that do not survive the record
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "jrf-the-life-in-one-primary-note",
+      title: "7 · A life, read off one primary note",
+      section: "Section 3 · The claims that do not survive the record",
+      body: `The November 1919 issue of *The Crisis* announced its new hire in about ninety words. Those ninety words are the best single document about Fauset's education that exists, because her employer printed them while she was sitting in the office and would have seen them.
+
+> Miss Jessie Redmon Fauset joined THE CRISIS staff last month as Literary Editor. She has for many years been a contributor to our pages. She was born in Philadelphia, educated in the public schools, holding the alumnae scholarship in the High School for Girls, and afterward took her Bachelor's degree at Cornell, where she gained the Phi Beta Kappa key. She has studied in Paris and at the University of Pennsylvania, holding a University scholarship, and took her Master's degree there last June. Formerly Miss Fauset taught Latin and French in the Dunbar High School, D. C. (The Crisis, 1919)
+
+**Read it as a document rather than as a paragraph.** Six checkable claims come out of it. She won a scholarship at the Philadelphia High School for Girls. She took a bachelor's degree at Cornell. She was elected to Phi Beta Kappa. She studied in Paris. She took a master's degree at the University of Pennsylvania, on a University scholarship, in June 1919, four months before she started. She taught Latin and French at Dunbar High School in Washington.
+
+**Two of those repay attention.** The master's degree is dated precisely by "last June", which settles a date some later accounts give as much later. And the Latin and French matter: this is a classicist and a linguist, not a general woman of letters, which is worth holding on to when Section 5 asks what her fiction was trying to do.
+
+**One of them disagrees with almost every modern account.** The note says she was born in Philadelphia. Modern reference works generally place her birth in Camden County, New Jersey, in April 1882, with the family moving to Philadelphia. Both cannot be right, and this course prints neither as settled. The disagreement is filed as an open question rather than resolved by choosing whichever source is more convenient.
+
+**Do not assume the contemporaneous source wins.** That instinct is usually good and it is not a rule. A staff note is written fast, from what somebody remembered or was told, for readers who did not care about a county line, and "born in Philadelphia" is what a Philadelphian says. A modern biographer working from census returns and municipal records may well have better evidence about a birth than a magazine had about a colleague. Recency is not authority and neither is proximity. What settles a birthplace is a birth record.
+
+**The general move.** When a contemporaneous document and a modern account disagree, the useful question is not which source you trust, it is which source was in a position to know this particular fact. A magazine knew her titles and her degrees, because she told them. It had no reason to know which side of the Delaware she was born on.
+
+:::reveal Name three things the 1919 staff note establishes about Fauset's education. ||| A scholarship at the Philadelphia High School for Girls, a bachelor's degree from Cornell with election to Phi Beta Kappa, study in Paris, and a University of Pennsylvania master's taken in June 1919. She had also taught Latin and French at Dunbar High School.
+
+:::reveal What does the 1919 note say about her birthplace, how does that conflict with modern accounts, and what does the course do about it? ||| The note says Philadelphia; modern reference works generally say Camden County, New Jersey. The course prints neither as settled and files the disagreement as an open question.
+
+:::reveal Why is "the contemporaneous source wins" a bad general rule here? ||| Because proximity is not the same as being in a position to know. The magazine knew her degrees because she told them, and had no reason to know which side of a state line she was born on. A later biographer with census and municipal records may have the better evidence about a birth.
+
+## Vocabulary
+- **Staff note**: a short in-house announcement of a hire, written quickly, which is excellent evidence of titles and dates and weak evidence of anything nobody in the office needed to check.
+- **In a position to know**: the test of whether a given source had access to the specific fact at issue, which matters more than whether it is old or new.
+- **Alumnae scholarship**: an award funded by a school's former students, here the one that carried Fauset through the Philadelphia High School for Girls.
+- **Open question**: a disagreement the course states and refuses to resolve, recorded so that somebody with the right record can close it later.
+
+## Sources
+The Crisis. (1919, November). News note announcing Fauset's appointment. *The Crisis, 19*(1), whole no. 109. https://archive.org/details/sim_crisis_the-crisis_1919-11_19_1
+
+Academy of American Poets. (n.d.). *About Jessie Redmon Fauset*. https://poets.org/poet/jessie-redmon-fauset`,
+    },
+    {
+      slug: "jrf-the-first-that-was-not",
+      title: "8 · The first that was not a first",
+      section: "Section 3 · The claims that do not survive the record",
+      body: `A sentence you meet almost immediately when reading about Fauset is that she was the first Black woman elected to Phi Beta Kappa. It is a good sentence. It is repeated widely. It is not true, and the organisation that would know said so in print.
+
+**The correction, in the society's own magazine.** Writing in *The Key Reporter* in 2005, the historian Stephanie Y. Evans reported that Mary Annette Anderson was inducted into Phi Beta Kappa in 1899 at Middlebury College in Vermont, and that "this honor was granted prior to that of Jessie Redmon Fauset, who until recently was believed to be the first African-American woman" member, at Cornell in 1905 (Evans, 2005). Evans credits Caldwell Titcomb's 2001 survey in the *Journal of Blacks in Higher Education* with clearing away a set of related misconceptions.
+
+**Note what the correction leaves standing.** Fauset was elected to Phi Beta Kappa. She was elected in 1905, at Cornell. Those are still true, still remarkable in 1905, and still exactly what the 1919 staff note recorded. What fails is only the ordinal, the word "first".
+
+**Why a false ordinal is more dangerous than a missing one.** An ordinal is the most checkable kind of claim there is: it is refuted by producing one earlier case. So it is the claim an opponent goes after, and when it falls it takes the credibility of the surrounding true material with it. A reader who catches one wrong first stops trusting the rest of the paragraph, which in this case is entirely sound.
+
+**The failure was also nobody's dishonesty.** Phi Beta Kappa does not record members by race, so nobody had a list to check against. The claim survived because it was plausible, useful and unfalsifiable in practice until a historian did the archival work. That is the ordinary way a false first persists: not by lying, but by nobody being in a position to check.
+
+**The test to run on any ordinal, in four questions.** *First at what exactly*: elected, or graduated, or admitted? *First where*: at one institution, in one state, or anywhere? *Says who*: the awarding body, or a profile written from a press release? *And who is the runner-up*: a first with no named second behind it has usually never been checked at all.
+
+**What this course does with it.** It teaches the corrected version. Fauset was elected to Phi Beta Kappa at Cornell in 1905, among the earliest African American women so elected, and not the first. That sentence is duller and nobody can take it away from her.
+
+:::reveal Who was elected to Phi Beta Kappa before Fauset, where, and in what year? ||| Mary Annette Anderson, at Middlebury College in Vermont, in 1899, six years before Fauset's election at Cornell in 1905.
+
+:::reveal What survives the correction, and what fails? ||| Her election to Phi Beta Kappa at Cornell in 1905 survives and is still notable. Only the ordinal fails: she was not the first African American woman elected.
+
+:::reveal Give the four questions this lesson uses to test any claim that someone was first. ||| First at what exactly, first in what geographic or institutional scope, on whose authority, and who is the named runner-up. A first with no named second has usually never been checked.
+
+## Vocabulary
+- **Ordinal claim**: an assertion that someone was first, second or only, refuted by producing a single earlier case, which makes it the most attackable claim in any profile.
+- **Unfalsifiable in practice**: a claim nobody can check because the necessary records are not kept, which is how a plausible error survives for decades.
+- **Runner-up test**: asking who came second, since an unchecked first usually has nobody behind it.
+- **Collateral discredit**: the loss of trust in true statements that happen to stand next to a false one.
+
+## Sources
+Evans, S. Y. (2005, Winter). Mary Annette Anderson: The first African-American woman in Phi Beta Kappa. *The Key Reporter, 70*(2). https://www.keyreporter.org/Media/Default/PdfArchives/Winter%202005.pdf
+
+Titcomb, C. (2001, October). The earliest Black members of Phi Beta Kappa. *The Journal of Blacks in Higher Education*.`,
+    },
+    {
+      slug: "jrf-titles-that-disagree",
+      title: "9 · When the sources disagree about her job title",
+      section: "Section 3 · The claims that do not survive the record",
+      body: `Sources call Fauset two different things. Most say literary editor. Langston Hughes, twice, calls her the managing editor. Encyclopedias sometimes print both in one paragraph without noticing. This looks like sloppiness and is actually a solved problem, and solving it teaches something general.
+
+**What the documents say, publication by publication.** At *The Crisis*, the masthead reads Literary Editor, every month, from November 1919 to April 1926. At *The Brownies' Book*, the children's magazine run out of the same circle, the cover page reads Literary Editor across 1920 and Managing Editor across 1921 (The Brownies' Book, 1921).
+
+**And a legal filing settles the second one.** United States periodicals were required to publish an annual statement of ownership naming publisher, editor, managing editor, business manager and owners. In *The Brownies' Book* the 1920 statement names Du Bois as managing editor. The 1921 statement names Jessie Redmon Fauset. That is a compelled disclosure rather than a courtesy line, which makes it the strongest documentary form her authority ever took.
+
+**So both titles are correct, for different jobs.** She was literary editor of *The Crisis* throughout, and managing editor of *The Brownies' Book* in 1921. Hughes was not wrong so much as compressed. He was writing in 1940 about the period when he was submitting to both, and the magazine where he first dealt with her by name was the one where managing editor was exactly her title.
+
+**The general rule this case demonstrates.** When two sources give a person two different titles, the first hypothesis should be that they are describing two different jobs, or the same job at two different times, and not that one of them is wrong. Careers move. Titles change. A profile that has to pick one word for a whole life will pick the more impressive one, or the more recent one, and either way it flattens a real sequence into a label.
+
+**Why it matters here specifically.** The distinction is not cosmetic. Literary editor names the acquiring function this course is about, choosing what runs. Managing editor names running the operation, which is a different job with different evidence attached. Getting the labels right is what lets you say precisely which kind of invisible work is being claimed, instead of gesturing at editorial work in general and hoping the reader fills it in.
+
+**Two things the record does not tell us.** Why the title at the children's magazine changed between 1920 and 1921, and whether the change reflected more authority or only more work. The filings record the outcome, never the negotiation.
+
+:::reveal What title did each publication give Fauset, and in which years? ||| The Crisis called her Literary Editor from November 1919 to April 1926. The Brownies' Book called her Literary Editor in 1920 and Managing Editor in 1921.
+
+:::reveal What kind of document settles the Brownies' Book title, and why is it strong evidence? ||| The annual statement of ownership, a filing United States periodicals were legally required to publish. It is a compelled disclosure rather than a courtesy credit, so it is harder to inflate.
+
+:::reveal What should be your first hypothesis when two sources give a person two different job titles? ||| That they are describing two different jobs, or the same job at two different times, rather than that one of them is simply wrong. Careers move and titles change.
+
+## Vocabulary
+- **Statement of ownership**: the annual disclosure a periodical was required to publish naming its publisher, editor, managing editor, business manager and owners.
+- **Managing editor**: the editor who runs the operation and the schedule, as distinct from the one who chooses the literary content.
+- **Compelled disclosure**: information published because the law requires it, which is generally harder to inflate than a voluntary credit.
+- **Flattening**: reducing a sequence of roles held over time to one label, which is what a short profile is forced to do.
+
+## Sources
+The Brownies' Book. (1921). Mastheads and statement of ownership, volume 2. DuBois and Dill. https://archive.org/details/the-brownies-book
+
+Hughes, L. (1940). *The big sea: An autobiography*. Alfred A. Knopf. https://pressbooks.library.torontomu.ca/thebigsea/chapter/haunted-ship/
+
+The Crisis. (1919, November). Masthead. *The Crisis, 19*(1), whole no. 109. https://archive.org/details/sim_crisis_the-crisis_1919-11_19_1`,
+    },
+
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 4 — How the credit for a movement travels
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "jrf-the-civic-club-dinner",
+      title: "10 · The dinner in her honour, and the book it turned into",
+      section: "Section 4 · How the credit for a movement travels",
+      body: `In March 1924 a dinner was held in New York for Jessie Fauset, to mark her first novel. It is often called the coming-out party of the Harlem Renaissance. What happened next is the clearest single illustration this course has of how credit moves, and both halves of it are documented in *The Crisis* itself.
+
+**Half one: the guest list, printed in her own magazine.** The May 1924 issue reported it in three sentences (The Crisis, 1924a):
+
+> A dinner to Jessie Fauset and the younger writers was given by the Writers' Guild at the Civic Club, New York. Among the speakers were Carl Van Doren, Alain Locke, Walter White, Charles S. Johnson, James Weldon Johnson and Dr. Du Bois. Poems were read by Countée Cullen and Gwendolyn Bennett.
+
+Read that carefully. Six speakers are named. All six are men. The honoree is the first word of the notice and is not among them. This is a fact about the notice and not proof that she was silent, and the distinction matters: a news column lists who was notable, not who spoke. But if the record of an evening held for you does not record you speaking, the record has already begun doing the thing this course is about.
+
+**One thing the notice does establish about her standing.** The poem Gwendolyn Bennett read that night was "To Usward", and when *The Crisis* printed it in the same issue it carried a dedication: "Especially dedicated to Jessie Fauset upon the event of her novel, 'There is Confusion'" (Bennett, 1924). Her peers knew exactly whose evening it was.
+
+**Half two: what the evening produced, in Du Bois's own words.** Reviewing Alain Locke's anthology *The New Negro* in January 1926, Du Bois described the chain (Du Bois, 1926b):
+
+> it happened last year that the editor of The Survey was sitting next to Mr. A. G. Dill, our business manager, at a dinner given to Miss Fauset in honor of the appearance of her novel, "There Is Confusion". The editor looked at the company with interest and Mr. Dill began to tell him who they were. It occurred to the editor of The Survey that here was material for a Survey Graphic; still he hesitated ... But he took one step which saved the day: He got a colored man to edit that number of the Graphic, Alain Locke.
+
+**Follow it to the end.** The dinner for Fauset's novel put a white magazine editor in a room. The room produced a special issue. The special issue was expanded into a book. The book was *The New Negro*, the anthology that named and defined the movement, and the name on its spine is Alain Locke's.
+
+**Nobody did anything wrong in that chain.** Locke edited the anthology and deserved the credit for editing it. Du Bois wrote the account himself and named the dinner and named Fauset in it. The mechanism does not require a villain. It requires only that the occasion be a woman's book and the durable object be a man's anthology, and the format do the rest.
+
+:::reveal Who spoke at the Civic Club dinner according to The Crisis, and who is missing from that list? ||| Carl Van Doren, Alain Locke, Walter White, Charles S. Johnson, James Weldon Johnson and Du Bois, with poems read by Countee Cullen and Gwendolyn Bennett. The honoree, Fauset, is not listed among the speakers.
+
+:::reveal Trace the chain Du Bois describes from the dinner to The New Negro. ||| The Survey's editor sat next to the Crisis business manager at the dinner, decided the company was material for a Survey Graphic issue, and hired Alain Locke to edit that issue. It was then expanded into the book The New Negro, under Locke's name.
+
+:::reveal Why does this lesson say the chain needs no villain? ||| Because every participant behaved reasonably. Locke edited the anthology and earned that credit, and Du Bois recorded the dinner and named Fauset. The outcome comes from the occasion being a woman's novel and the durable object being a man's book.
+
+## Vocabulary
+- **The New Negro**: Alain Locke's 1925 anthology, expanded from a special issue of Survey Graphic, which became the movement's defining book.
+- **Survey Graphic**: the general-interest magazine whose 1925 Harlem number supplied the material Locke's anthology was built from.
+- **Durable object**: the thing that survives an occasion and carries a name, such as a book, as opposed to the evening that produced it.
+- **Occasion versus artifact**: the distinction between the event credited to one person and the lasting object credited to another.
+
+## Sources
+Bennett, G. (1924, May). To usward. *The Crisis, 28*(1), whole no. 163. https://archive.org/details/sim_crisis_the-crisis_1924-05_28_1
+
+Du Bois, W. E. B. (1926b, January). The Browsing Reader: The New Negro. *The Crisis, 31*(3). https://archive.org/details/sim_crisis_the-crisis_1926-01_31_3
+
+The Crisis. (1924a, May). The Horizon. *The Crisis, 28*(1), whole no. 163. https://archive.org/details/sim_crisis_the-crisis_1924-05_28_1`,
+    },
+    {
+      slug: "jrf-matthew-and-matilda-here",
+      title: "11 · Two mechanisms, applied to this case",
+      section: "Section 4 · How the credit for a movement travels",
+      body: `Section 1 named the Matthew effect and the Matilda effect. This lesson does the work of applying them, because a mechanism you cannot apply to a specific case is decoration.
+
+**The Matthew effect, stated precisely.** Merton's 1968 argument is that in collaborative work, recognition accrues disproportionately to the participant who already has the greater reputation, and that the effect compounds: today's extra credit buys tomorrow's greater eminence, which buys more credit again (Merton, 1968). The important part is that it needs no intent. It is what happens when observers, with limited attention, attach a collaboration to the name they already recognise.
+
+**Applied here.** In March 1924, Alain Locke was a Harvard doctorate, a Rhodes Scholar and a Howard professor. Du Bois was the most famous Black intellectual in America. Fauset was a magazine's literary editor with one novel out that month. When a room full of that company produced an anthology, the credit had somewhere obvious to go, and it went there. Locke's edited volume is the object a syllabus can assign; the dinner that seeded it is a sentence in a review.
+
+**The Matilda effect, stated precisely.** Rossiter's 1993 argument is the companion: women's contributions are systematically under-recognised, and the recognition frequently transfers to a male colleague working nearby (Rossiter, 1993). Rossiter names it after Matilda Joslyn Gage, who made the observation in the nineteenth century about women whose work was credited to men.
+
+**Applied here.** The transfer target is not hypothetical. It is the standard shape of the sentence: *Du Bois's Crisis published Langston Hughes.* That sentence is true, and the person who read the poem and said yes was Fauset. The magazine's possessive belongs to the man whose name conducted it, and the acquiring editor's decision is absorbed into the institution he is identified with. This course has already met the objection in Section 2, and the objection does not change the sentence people write.
+
+**What the two effects do together.** They are not additive so much as sequential. The Matilda effect strips the contribution from the woman who made it. The Matthew effect decides where it lands, which is on whoever in the room is already the most eminent. Fauset supplies the unusual case where both steps are documented rather than inferred, because the magazine printed a masthead and Du Bois printed an account.
+
+**The honest limit, again.** A mechanism explains a pattern. It does not prove that any particular sentence about Locke or Du Bois was a theft, and this course never argues from the pattern down to an individual's motive. What it argues is that the outcome was predictable from the structure, which is a different and more useful claim.
+
+:::reveal State the Matthew effect precisely, and say why it needs no intent. ||| Recognition in collaborative work accrues disproportionately to the participant who already has the greater reputation, and compounds over time. It needs no intent because it is what observers with limited attention do: attach the work to the name they already know.
+
+:::reveal How do the two effects operate in sequence rather than simply adding up? ||| The Matilda effect strips the contribution from the woman who made it. The Matthew effect then determines where it lands, which is on whoever present is already most eminent.
+
+:::reveal What is the honest limit on what a mechanism proves? ||| It explains a pattern across many cases and does not establish anything about a particular person's motive. A claim about an individual has to rest on that individual's own documents.
+
+## Vocabulary
+- **Compounding recognition**: Merton's observation that credit received now raises eminence, which attracts more credit later, so early advantage widens.
+- **Transfer target**: the person a stripped contribution is reassigned to, which the Matilda effect predicts will be a male colleague nearby.
+- **Matilda Joslyn Gage**: the nineteenth-century writer whose observation about women's work being credited to men gives Rossiter's effect its name.
+- **Pattern versus motive**: the rule that a documented tendency across many cases licenses no conclusion about why one person acted.
+
+## Sources
+Merton, R. K. (1968). The Matthew effect in science. *Science, 159*(3810), 56-63. https://doi.org/10.1126/science.159.3810.56
+
+Rossiter, M. W. (1993). The Matthew Matilda effect in science. *Social Studies of Science, 23*(2), 325-341. https://doi.org/10.1177/030631293023002004`,
+    },
+    {
+      slug: "jrf-the-rooms-she-kept",
+      title: "12 · The rooms she kept, and why rooms leave no record",
+      section: "Section 4 · How the credit for a movement travels",
+      body: `The last piece of the editorial job is the one with the least paperwork of all. An editor puts writers in a room with each other, and with the people who can publish and pay them. Fauset ran such rooms for years, and the only real description of them comes from a guest.
+
+**Hughes's account of her apartment.** In *The Big Sea*, in a chapter about Harlem parties, he sets hers against the others (Hughes, 1940):
+
+> At Miss Fauset's, a good time was shared by talking literature and reading poetry aloud and perhaps enjoying some conversation in French. White people were seldom present there unless they were very distinguished white people, because Jessie Fauset did not feel like opening her home to mere sightseers, or faddists momentarily in love with Negro life.
+
+**Read that as a description of work rather than of hospitality.** Three decisions are visible in it. She set the activity: reading work aloud, in company, which is how writers get useful criticism. She set the language: French, which selected for a particular kind of education and signalled who the room was for. And she controlled admission, excluding what Hughes calls sightseers, which is a deliberate defence of the writers in the room against being an attraction.
+
+**That is curation, and it has consequences you can name.** A room like that produces introductions, comparisons, rivalries, and the specific knowledge of who is working on what. Hughes's own first meeting with the magazine came through a Fauset invitation to lunch, which is the same behaviour on a smaller scale.
+
+**And it leaves no record at all.** No guest list, no minutes, no byline, nothing filed with the post office. It survives here only because one guest wrote a memoir sixteen years later and happened to describe it. Change one thing, take away Hughes's book, and this entire category of her work vanishes without trace.
+
+**Which is the point worth carrying out of this section.** The invisibility of editorial labour is not one problem, it is a gradient. Selection at least leaves a contents page you can compare against a masthead. Solicitation leaves a letter if someone kept it. Convening leaves nothing whatsoever, and it is frequently the part that compounds most, because a network keeps producing long after the convener has stopped.
+
+**The methodological consequence.** When you cannot find evidence of a kind of work, the honest inference is about the record and not about the work. Absence of evidence for convening is exactly what convening looks like in an archive. That is not licence to assert it happened; it is a reason to say clearly which of your claims rest on documents and which rest on one memoir.
+
+:::reveal Name the three editorial decisions visible in Hughes's description of Fauset's apartment. ||| She set the activity, reading work aloud in company; she set the language, with conversation in French; and she controlled admission, keeping out people she considered sightseers.
+
+:::reveal Why does the course call the invisibility of editorial labour a gradient rather than a single problem? ||| Because the kinds of work leave different amounts of trace. Selection leaves a contents page, solicitation leaves a letter if anyone kept it, and convening leaves nothing at all.
+
+:::reveal What is the honest inference when you find no evidence that convening work happened? ||| That the record does not capture that kind of work, which is not the same as licence to assert it did happen. The right response is to say which claims rest on documents and which rest on a single memoir.
+
+## Vocabulary
+- **Convening**: bringing writers together with each other and with publishers, the part of editorial work that compounds and leaves no document.
+- **Curation**: shaping what happens in a room by choosing the activity, the language and who is admitted.
+- **Gradient of invisibility**: the observation that different editorial tasks leave very different amounts of evidence, from a printed contents page down to nothing.
+- **Single-source claim**: an assertion resting on one account, which should be labelled as such rather than blended with documented material.
+
+## Sources
+Hughes, L. (1940). *The big sea: An autobiography*. Alfred A. Knopf. https://pressbooks.library.torontomu.ca/thebigsea/chapter/parties/`,
+    },
+
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 5 — The control case: she had a byline too
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "jrf-four-novels",
+      title: "13 · Four novels, and a first one that sold",
+      section: "Section 5 · The control case: she had a byline too",
+      body: `Everything so far has been about work with no byline. Now the control case, which is the reason this course can be trusted on the rest: Fauset published four novels under her own name, and one of them was a commercial success, and she is still barely read.
+
+**The four books.** *There Is Confusion* (New York: Boni and Liveright, 1924). *Plum Bun: A Novel Without a Moral* (London: Elkin Mathews and Marrot, 1928; New York: Frederick A. Stokes, 1929). *The Chinaberry Tree: A Novel of American Life* (New York: Frederick A. Stokes, 1931). *Comedy: American Style* (New York: Frederick A. Stokes, 1933).
+
+**Note the trap in the second one.** *Plum Bun* is given as 1928 in some places and 1929 in others, and both are right, because the London edition preceded the New York one. A course that printed one year without the city would be making a false sentence out of true parts. When a book has two first editions, the year is not a fact on its own.
+
+**The first novel did well, and *The Crisis* recorded it as it happened.** In September 1924 the magazine noted that the book "came out in April" and "has gone into a second edition in America and is now going to have an English printing", by Chapman and Hall of London (The Crisis, 1924b). By November 1924 it reported the novel "is in its third American and first English edition and is being translated into German at Vienna" (The Crisis, 1924c).
+
+**That is a specific, checkable correction to a lazy story.** The convenient version of Fauset says her fiction was ignored. Three American printings in seven months, a British edition and a German translation in progress is not being ignored. Whatever happened to her reputation happened after the sales, not instead of them.
+
+**What her fiction was actually attempting, in her own words.** In 1926 *The Crisis* ran a symposium asking artists whether publishers could be criticised for refusing novels about educated Black characters on the ground that such characters were "no different from white folk and therefore not interesting". Fauset answered that they could, and blamed publishers for holding an idea fixed: "they persist in considering only certain types of Negroes interesting and if an author presents a variant they fear that the public either won't believe in it or won't 'stand for it'" (Fauset, 1926). She added that Black readers had to buy the books they asked for, because "Most best sellers are not born, they're made."
+
+**So she knew exactly which fight she was in,** and she was writing the novels she thought the fight required: educated, professional, middle-class Black characters, presented as ordinary. Section 14 asks what that decision cost her, and it is not a simple answer.
+
+:::reveal Why is "Plum Bun was published in 1928" an incomplete claim? ||| Because the novel had two first editions, London in 1928 and New York in 1929. Without the city the year is not a fact on its own, and either year alone can be made to look wrong.
+
+:::reveal What did The Crisis report about the commercial performance of There Is Confusion? ||| That it came out in April 1924, reached a second American edition by September and a third by November, had an English edition from Chapman and Hall, and was being translated into German at Vienna.
+
+:::reveal In the 1926 symposium, whom did Fauset blame for the narrowness of what got published, and what did she say readers had to do? ||| Publishers, for persisting in treating only certain types of Black characters as interesting and fearing the public would not accept a variant. She said Black readers had to buy the books they were asking for, because best sellers are made rather than born.
+
+## Vocabulary
+- **Two first editions**: a book published separately in two countries, which makes an unqualified publication year ambiguous rather than wrong.
+- **Impression or printing**: a fresh run of an existing edition, which is evidence of demand rather than of revision.
+- **Symposium**: a magazine feature putting the same set of questions to many respondents, which preserves each answer in the respondent's own words.
+- **The variant**: Fauset's word for a character who departs from what publishers expected of Black fiction, which she argued they refused on commercial grounds.
+
+## Sources
+Fauset, J. R. (1926, June). The Negro in art: How shall he be portrayed, a symposium. *The Crisis, 32*(2), whole no. 188. https://archive.org/details/sim_crisis_the-crisis_1926-06_32_2
+
+The Crisis. (1924b, September). The Looking Glass. *The Crisis, 28*(5), whole no. 167. https://archive.org/details/sim_crisis_the-crisis_1924-09_28_5
+
+The Crisis. (1924c, November). Miss Fauset. *The Crisis, 29*(1), whole no. 169. https://archive.org/details/sim_crisis_the-crisis_1924-11_29_1`,
+    },
+    {
+      slug: "jrf-invisibility-has-two-causes",
+      title: "14 · Invisibility has more than one cause",
+      section: "Section 5 · The control case: she had a byline too",
+      body: `Here is the tidy story this course refuses. Fauset was erased, and that explains everything about her reputation. It is a good story and its own evidence defeats it: she had a byline, four times, on books one of which sold well, and she is still not much read. A byline did not save her. So something else is running too, and the honest work is separating the causes.
+
+**Cause one: under-credit as an editor.** This is the argument of Sections 1 to 4, and it stands. The acquiring job leaves no byline, the convening job leaves nothing at all, and the credit for a movement travelled to the most eminent name in the room. That is a structural claim about a format, and nothing in this section touches it.
+
+**Cause two: her fiction went out of fashion, and there is contemporaneous evidence of exactly how.** In June 1925 *The Crisis* noted that a critic on the *Chicago Tribune* had faulted *There Is Confusion* on the ground that it did not catch "that essential something which makes the Negro what he is" (The Crisis, 1925). That is the objection in its purest form, printed while the book was still new: her characters were held to be insufficiently Black because they were educated and professional.
+
+**And the same objection appears in Hughes, from the other direction.** Writing about the reception of his own poems, Hughes observed that Black critics and intellectuals "wanted to put their best foot forward" and that "Jessie Fauset's novels they loved, because they were always about the educated Negro" (Hughes, 1940). So the taste that made her novels beloved by one audience is the same feature that made them dismissible to another, and both judgements are about subject matter rather than about craft.
+
+**Why this matters for the argument rather than merely complicating it.** The two causes are genuinely different in kind. Under-crediting an editor is a fact about a format that has no slot. Falling out of literary fashion is a fact about changing taste, and it happens to men, to white writers, and to people nobody ever discriminated against. Collapsing the two makes the strong claim carry the weak one.
+
+**Are they connected? Probably, and the course does not overstate it.** It is reasonable to suspect that a woman writing about middle-class domestic life was measured against a standard of authenticity applied more harshly to her than to a man writing about the same class. That is a real argument, made by scholars, and it is an interpretation rather than a document. This course marks it as such.
+
+**What can be said flatly.** Her editorial work was under-credited for structural reasons this course has documented. Her fiction lost its audience for reasons of taste that are also documented, in 1925, in her own magazine. Those are two findings, and the course reports two.
+
+:::reveal What is the tidy story this lesson refuses, and what piece of evidence defeats it? ||| That erasure explains Fauset's whole reputation. Her four bylined novels defeat it, because she had the credit a byline gives and is still barely read.
+
+:::reveal What was the Chicago Tribune objection to There Is Confusion, and why does it matter that it is contemporaneous? ||| That the novel did not catch "that essential something which makes the Negro what he is". It matters because it shows the objection to her subject matter was being made in 1925, while the book was new, rather than invented by later critics.
+
+:::reveal How are the two causes different in kind? ||| Under-crediting an editor is a fact about a format with no byline slot. Losing literary fashion is a fact about changing taste, and it happens to writers nobody ever discriminated against. Collapsing them makes the strong claim carry the weak one.
+
+## Vocabulary
+- **Control case**: an instance where the suspected cause is absent, used to test whether that cause explains the outcome. Here, her bylined novels.
+- **Authenticity standard**: the demand that a writer's characters represent what an audience considers typical of a group, used in 1925 against Fauset's educated characters.
+- **Cause separation**: distinguishing two explanations that produce a similar outcome, so that evidence for one is not silently used to support the other.
+- **Interpretation**: a scholarly reading of why something happened, which is legitimate and is not a document, and should be labelled.
+
+## Sources
+Hughes, L. (1940). *The big sea: An autobiography*. Alfred A. Knopf. https://pressbooks.library.torontomu.ca/thebigsea/chapter/poetry/
+
+The Crisis. (1925, June). The Looking Glass. *The Crisis, 30*(2), whole no. 176. https://archive.org/details/sim_crisis_the-crisis_1925-06_30_2`,
+    },
+    {
+      slug: "jrf-run-the-check",
+      title: "15 · Run the check yourself, and what this course refuses to assert",
+      section: "Section 5 · The control case: she had a byline too",
+      body: `The point of a case study is a procedure you can run on the next one. Here is the whole method this course used, in five steps, followed by an honest list of what it could not settle.
+
+**Step one: find the periodical, not the profile.** Where a magazine is digitized, the masthead answers questions no biography bothers with. Six years and seven months came out of turning pages, and it took less time than reading three encyclopedia entries that all say 1919 to 1926.
+
+**Step two: separate appeared from acquired.** Ask of every name in the list whether you have evidence of a decision or only evidence of a contents page. For Fauset, Hughes is documented in his own memoir and most of the others are not, and saying so is the finding rather than a weakness in it.
+
+**Step three: read the quotation in its original, with its neighbours.** Paraphrase strengthens claims in a predictable direction. The Hughes passage names three people, says "so-called", and sits beside a paragraph giving the superlative to somebody else.
+
+**Step four: test every ordinal before repeating it.** First at what, first where, on whose authority, and who is the named runner-up. The Phi Beta Kappa claim failed on the fourth question, and the true version that survived is still worth printing.
+
+**Step five: look for the control case.** Ask what the suspected cause predicts, then find the instance where the cause is absent. Fauset's bylined novels are that instance, and they force a second explanation into the account.
+
+**Now the refusals. This course does not assert any of the following.** That Fauset was the first African American woman elected to Phi Beta Kappa: Phi Beta Kappa's own magazine says otherwise. That she acquired Countee Cullen, Jean Toomer, Claude McKay or Nella Larsen: the record shows they appeared, not who chose them. That she was silent at the Civic Club dinner: the notice does not list her among the speakers, which is not the same claim. That she was born in a particular place: her employer's 1919 note and modern reference works disagree. That Du Bois overruled her, or that he did not: nobody has produced a document either way. Each of those is filed as an open question rather than resolved by tone.
+
+**Why refusing is the load-bearing part.** A course about a person whose contribution was overstated by others cannot fix that by overstating in the opposite direction. The strongest sentence available about Fauset is the one that survives being checked, and this course would rather be corrected than repeated.
+
+:::reveal Give the five steps of the method this course used. ||| Find the periodical rather than the profile; separate appeared from acquired; read the quotation in its original with its neighbours; test every ordinal on four questions; and look for the control case where the suspected cause is absent.
+
+:::reveal Name three claims this course explicitly refuses to assert. ||| That she was the first African American woman in Phi Beta Kappa, that she personally acquired Cullen, Toomer, McKay or Larsen, that she was silent at the Civic Club dinner, that her birthplace is settled, or that Du Bois did or did not overrule her.
+
+:::reveal Why can a course about an understated contribution not correct the record by overstating? ||| Because the inflated version collapses the first time anyone checks it, and takes the verified material standing beside it down as well. The durable sentence is the one that survives checking.
+
+## Vocabulary
+- **Procedure**: a repeatable sequence of checks, which is what a case study is for, as distinct from a set of facts about one person.
+- **Refusal**: a claim the course declines to make, stated out loud so a reader knows the gap is deliberate rather than an oversight.
+- **Filed question**: an unsettled point recorded where somebody with the right archive can close it, instead of left as a caveat nobody acts on.
+- **Correctable over repeatable**: preferring a claim that can be checked and fixed to one that travels well and cannot.
+
+## Sources
+Evans, S. Y. (2005, Winter). Mary Annette Anderson: The first African-American woman in Phi Beta Kappa. *The Key Reporter, 70*(2). https://www.keyreporter.org/Media/Default/PdfArchives/Winter%202005.pdf
+
+Hughes, L. (1940). *The big sea: An autobiography*. Alfred A. Knopf. https://pressbooks.library.torontomu.ca/thebigsea/
+
+The Crisis. (1926, May). Opinion: Miss Fauset. *The Crisis, 32*(1), whole no. 187. https://archive.org/details/sim_crisis_the-crisis_1926-05_32_1`,
+    },
   ],
 };
