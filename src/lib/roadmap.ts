@@ -110,6 +110,42 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   Mapped to two \`catalog.*\` Common Core history-literacy claims. Five hedges filed as **source
   checks** in \`src/lib/research-checks.ts\`. **NOT in \`STAGED_COURSES\`**, so \`pnpm gen:citations\`
   is a later step.
+- 🔧 **Shirley Graham Wrote the Opera First** (\`content/didwork-shirley-graham\`, Culture & History,
+  **DIDWORK-S3**; NO migration, **re-run \`pnpm seed:courses\`**). The third course in the Did the
+  Work series and the first single-subject one, because the defect it corrects is an **ordering**
+  defect. Every short account of Shirley Graham Du Bois reaches for the 1951 marriage to W. E. B.
+  Du Bois inside its first three sentences, and once that fact is in front, twenty-five years of
+  independent work reads as prologue. So the course runs in the order she MADE things (opera,
+  theatre, books, organizing) and the wedding does not arrive until **lesson 15 of 25**. A learner
+  meets the composer before the wife.
+  18 teaching lessons, 7 quizzes, **444 pooled questions** (77/70/67/64/56/67 serving 5, plus a
+  42-question final serving 10), all at 80 to pass and shuffled, with
+  \`pnpm audit:course shirley-graham --spec\` clean and the always-pick-longest strategy scoring 0%.
+  **The refusals are the content, not the footnotes.** Four widely repeated details about the 1932
+  Cleveland premiere are taught AS errors: the Great Lakes Exposition (it opened in 1936), "the
+  Governor of Ohio" in the audience (Newton D. Baker was a mayor and a war secretary and was never
+  governor; Ohio's was George White), the 10,000/15,000 audience split (TIME, contemporaneously,
+  puts ~15,000 at the premiere itself), and an NBC broadcast (no 1932 evidence; *Track Thirteen* in
+  1940 genuinely was NBC, and the attribution migrated). The bare "first opera by a Black woman" is
+  downgraded to the width the sources carry, because the Schlesinger Library, which owns the score,
+  says "perhaps the first" and a bare first-ever asserts a global absence in a record nobody kept.
+  The **invented-dialogue charge** against her biographies is taught as genuinely contested: Horace
+  Cayton and Saunders Redding named on one side, Horne's own "a bit unfair" defence and her
+  documented archive work on the other, Bettina Aptheker's defence with her interest declared, and
+  the honest admission that **no published scholar names a specific invented line**.
+  **BAM's Indianapolis lead: two ties verified, one refused.** Her father the Rev. David A. Graham
+  pastored **Bethel A.M.E.** (Vermont and Toledo) from ~autumn 1896 to 1900, and from **1940 to late
+  1941/42 she was director of adult activities at the Phyllis Wheatley YWCA**, 653 N. West Street, a
+  few blocks OFF Indiana Avenue, where the local press credits her as producer/director at **Crispus
+  Attucks** (1 Nov 1940) and director of *H.M.S. Pinafore* (July 1941). Cross-links
+  \`indiana-avenue-a-district-and-what-replaced-it\`. **Refused:** the swimming-pool editorial at 13
+  is **Colorado Springs**, not Indianapolis (Horne places it there; the Indianapolis version is
+  chronologically impossible), and the course teaches that error rather than repeating it. Mapped to
+  the two \`catalog.*\` literacy claims. **Eleven** source checks filed at \`/admin/research\`,
+  including the one nobody in the literature has addressed: the 1916 A.M.E. encyclopaedia dates her
+  father's marriage to Etta Bell to **November 1905**, which cannot stand beside an 1896 birth to
+  that mother. Citations staged AFTER seeding (the extractor reads the DB). BAM sets price + vetted
+  state in the admin UI.
 - ✅ **The Negro Leagues: Who Owned the Game** (\`content/negro-leagues\`, Culture & History; NO
   migration, **re-run \`pnpm seed:courses\`**). BAM's note asked for the story of the Negro Leagues,
   starting with baseball and branching to other sports, connected to Indianapolis and the Madam C. J.

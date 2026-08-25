@@ -225,6 +225,7 @@ import { THE_MOORS_COURSE } from "./data/the-moors-course";
 import { WHO_GETS_THE_CREDIT_COURSE } from "./data/who-gets-the-credit-course";
 import { HISTORY_OF_BATHING_COURSE } from "./data/history-of-bathing-course";
 import { WHO_GETS_NAMED_COURSE } from "./data/who-gets-named-course";
+import { SHIRLEY_GRAHAM_COURSE } from "./data/shirley-graham-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -1979,6 +1980,41 @@ async function main() {
       seriesOrder: 3,
       seriesCode: "DIDWORK",
       seriesPosition: "S2",
+      seriesTrack: "She Did the Work",
+    },
+    // Shirley Graham Wrote the Opera First - She Did the Work, wave 2, DIDWORK-S3. The third course
+    // in the series and the first SINGLE-SUBJECT one: she-took-the-seat and naacp-learned-to-win are
+    // both deliberately built as cohorts, and this one is built as a chronology, because the defect
+    // it corrects is an ORDERING defect. Every short account of Shirley Graham Du Bois reaches for
+    // the 1951 marriage to W. E. B. Du Bois in its first three sentences, and once that is in front,
+    // twenty-five years of independent work reads as prologue. So the course runs in the order she
+    // MADE things and the wedding does not arrive until lesson 15 of 25.
+    //
+    // The refusals are the content, not the footnotes. The unqualified "first opera by a Black
+    // woman" is downgraded to the width the sources actually carry (the Schlesinger Library, which
+    // owns the score, says "perhaps the first"). Four widely repeated details about the 1932
+    // premiere are named as wrong: the Great Lakes Exposition (opened 1936), "the Governor of Ohio"
+    // in the audience (Newton D. Baker was a mayor and a war secretary, never governor), the
+    // 10,000/15,000 audience split (TIME puts ~15,000 at the premiere itself), and an NBC broadcast
+    // (no contemporaneous evidence; Track Thirteen in 1940 really was NBC). The invented-dialogue
+    // charge against her biographies is taught as CONTESTED, with Cayton and Redding on one side and
+    // Horne's own defence on the other, plus the honest admission that no published scholar names a
+    // specific invented line. BAM's Indianapolis lead produced two VERIFIED ties (her father
+    // pastored Bethel A.M.E. from ~autumn 1896 to 1900; she was director of adult activities at the
+    // PHYLLIS Wheatley YWCA, 653 N. West St, a few blocks OFF Indiana Avenue, 1940 to late 1941/42,
+    // with contemporaneous press credits at Crispus Attucks and for H.M.S. Pinafore) and one
+    // REFUSED (the swimming-pool editorial at 13 is Colorado Springs, and the Indianapolis version
+    // is chronologically impossible). Eleven unresolved questions are filed in
+    // src/lib/research-checks.ts. NO migration - pnpm seed:courses.
+    {
+      slug: "shirley-graham",
+      course: SHIRLEY_GRAHAM_COURSE,
+      category: "Culture & History",
+      seriesSlug: "did-the-work",
+      seriesTitle: "Did the Work",
+      seriesOrder: 4,
+      seriesCode: "DIDWORK",
+      seriesPosition: "S3",
       seriesTrack: "She Did the Work",
     },
   ]) {

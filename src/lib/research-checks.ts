@@ -1540,6 +1540,284 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Carolyn Wedin Sylvander (1981), and Deborah E. McDowell's introductions to the Beacon Press reissues",
     ],
   },
+  // ── Shirley Graham Wrote the Opera First (DIDWORK-S3) ─────────────────────────────────────────
+  // Nine hedges, all of them written into lessons rather than left implicit. The pattern worth
+  // noticing: this subject shaved years off her own age in print, so the ordinary trick of
+  // preferring the earliest source fails on her, and several of these can only be closed by a
+  // registry, a transcript or a page image.
+  {
+    key: "sg-tomtom-broadcast",
+    course: "shirley-graham",
+    lesson: "sg-tom-tom",
+    quote:
+      "The NBC attribution traces to weak sources, and her radio play Track Thirteen really was an NBC broadcast in 1940, which is an easy thing to slide backwards onto the opera. Unverified, so not taught.",
+    title: "Tom-Tom: was the 1932 premiere broadcast on radio at all?",
+    severity: "medium",
+    question:
+      "Was any performance of Shirley Graham's opera Tom-Tom, at Cleveland Municipal Stadium on 30 June 1932 or later that season, carried on radio? If so, by which station or network, on what date, and what is the evidence?",
+    claim:
+      "Lesson 3 states that TIME's contemporaneous account mentions no broadcast, names the NBC claim as unverified, and suggests it migrated from her 1940 radio play Track Thirteen, which genuinely was an NBC broadcast. The course teaches the absence of evidence rather than a denial.",
+    stakes:
+      "The broadcast is one of the four premiere details the course publicly refuses to print, and lesson 3 is the course's worked example of how a retelling accretes false detail. If a broadcast IS documented, the course is teaching a real fact as a myth, which is the worst possible failure for a lesson about verification. If it is not, the refusal should stay and the reasoning is confirmed.",
+    needs: [
+      "A contemporaneous listing, log or newspaper radio page for late June or early July 1932 in Cleveland",
+      "The station's call letters, and whether any relay was local, regional or national",
+      "If nothing exists, a statement of where you looked, so the negative is recorded rather than reasserted",
+    ],
+    where: [
+      "Cleveland Plain Dealer radio listings for 29 June to 10 July 1932, on microfilm or in a newspaper database",
+      "The NBC History Files at the Library of Congress and the NBC collection at the Wisconsin Historical Society",
+      "The Encyclopedia of Cleveland History's Stadium Opera entry and whatever it cites",
+    ],
+  },
+  {
+    key: "sg-tomtom-second-night",
+    course: "shirley-graham",
+    lesson: "sg-tom-tom",
+    quote:
+      "The combined figure above twenty five thousand is repeated everywhere, but the contemporary account puts about fifteen thousand at the premiere itself. The split is not settled and this course does not print it.",
+    title: "Tom-Tom: how many performances, on what dates, and what were the attendances?",
+    severity: "medium",
+    question:
+      "How many performances did Tom-Tom receive in the 1932 Stadium Opera season, on which dates, and what attendance figure is recorded for each? The modern account gives 10,000 at the first and 15,000 at the second; TIME on 11 July 1932 puts nearly 15,000 at the performance it calls the first.",
+    claim:
+      "Lesson 3 gives 30 June 1932 as the premiere and TIME's roughly fifteen thousand for that night, states that the modern 10,000 / 15,000 split is incompatible with the contemporaneous report, and prints neither the split nor a combined total.",
+    stakes:
+      "The 'more than 25,000' figure is the single most repeated fact about this opera and appears on the Harvard Gazette, Oberlin's own site and the Schlesinger Library's pages. If it is right, the course is being over cautious about a well documented number. If the dates or the split are wrong, a great many institutional pages are propagating one error, which is worth saying in print.",
+    needs: [
+      "The exact dates of every 1932 Tom-Tom performance",
+      "A contemporaneous attendance figure for each, with the source that reported it",
+      "Whether the 10,000 figure has any 1932 source at all, or first appears in a later retelling",
+    ],
+    where: [
+      "Cleveland Plain Dealer and Cleveland Press for 29 June to 11 July 1932",
+      "The Cleveland Public Library's Cleveland Digital Public Library and its Stadium Opera holdings",
+      "Sarah Schmalenberger's 2006 Black Music Research Journal article, which worked the score and the season",
+    ],
+  },
+  {
+    key: "sg-sorbonne-record",
+    course: "shirley-graham",
+    lesson: "sg-training",
+    quote:
+      "Hold that one loosely: no account names a registration record, and the caution is earned by the next lesson.",
+    title: "Did Shirley Graham actually enrol at the Sorbonne?",
+    severity: "medium",
+    question:
+      "Is there any registration record, transcript, certificate or contemporaneous document placing Shirley Graham as a student at the Sorbonne, or at any named Paris institution, between December 1926 and about 1930? Or does the claim rest entirely on her own later accounts?",
+    claim:
+      "Lesson 2 says she was in France from December 1926 and reported studying music composition there, usually given as the Sorbonne, and states that no account names a registration record, so it is a repeated self report rather than a documented fact.",
+    stakes:
+      "Every biography of her carries the Sorbonne. If it is documented, the course is casting doubt on a real credential, which is unfair to a woman whose credentials were already discounted in her lifetime. If it is not, the hedge is correct and worth keeping, because this is a subject who demonstrably adjusted her own record and the course says so elsewhere.",
+    needs: [
+      "A registration or inscription record naming her, with the year and the faculty",
+      "Or an explicit statement from a scholar who looked and found nothing",
+      "The name of the actual institution, since the Sorbonne of that period covered several distinct faculties and music was not obviously among them",
+    ],
+    where: [
+      "Her papers at the Schlesinger Library, Radcliffe Institute (MC 476)",
+      "Gerald Horne's Race Woman and its notes on the Paris years",
+      "Archives nationales and the Sorbonne's own registers for the later 1920s",
+    ],
+  },
+  {
+    key: "sg-messner-award-year",
+    course: "shirley-graham",
+    lesson: "sg-the-prize",
+    quote:
+      "Neither the book nor Horne dates the judging, and it was a manuscript competition, so a 1946 decision with a 1947 publication is plausible and unproven.",
+    title: "What year was the Julian Messner Award announced?",
+    severity: "low",
+    question:
+      "In what year was the Julian Messner Award for the best book combating intolerance in America announced to Shirley Graham for the manuscript published in 1947 as There Was Once a Slave?",
+    claim:
+      "Lesson 10 states the award, its value, its judges and the size of the competition from the book's own copyright page, and deliberately prints NO year, saying that the honest form is 'won the Julian Messner Award; published 1947'.",
+    stakes:
+      "Low, but the whole lesson is about getting prize records right, so a course that then leaves a date blank should be able to say either what the date is or that it was looked for and not found. Some sources give 1946, which would be consistent with a manuscript competition, and no source seen so far cites anything for it.",
+    needs: [
+      "A trade press announcement with a date, most likely in Publishers Weekly",
+      "Or the terms of the competition, which would say whether the award was announced on submission or on publication",
+    ],
+    where: [
+      "Publishers Weekly for 1946 and 1947",
+      "New York Times book pages for the announcement of the award",
+      "The Julian Messner imprint records, if any survive with its corporate successors",
+    ],
+  },
+  {
+    key: "sg-marriage-date",
+    course: "shirley-graham",
+    lesson: "sg-february-1951",
+    quote:
+      "First, a variant wedding date of 14 February circulates. It comes from a reference entry that also gives her birth year as 1907 and her age at death as 69, both demonstrably wrong, so this course prints 27 February and files a source check.",
+    title: "Was the Du Bois wedding on 14 or 27 February 1951?",
+    severity: "medium",
+    question:
+      "On what date did W. E. B. Du Bois and Shirley Graham marry? A New York City or New York State marriage record would settle it outright.",
+    claim:
+      "Lesson 15 prints 27 February 1951, sourced to an item recording the ceremony held with the W. E. B. Du Bois papers at UMass Amherst, and rejects the 14 February variant because its source also gets her birth year and her age at death wrong.",
+    stakes:
+      "The whole lesson is built on a dated sequence: indictment 9 February, arraignment 16 February, wedding, trial 18 November. The argument that they did NOT marry on the eve of the trial survives either date, but a course that teaches chronological precision cannot itself be loose about the one date at its centre.",
+    needs: [
+      "A New York marriage licence or certificate number and date",
+      "Or a contemporaneous newspaper notice of the ceremony",
+      "Confirmation of what the UMass item actually is: a certificate, a photograph, a letter, or a later note",
+    ],
+    where: [
+      "New York City Municipal Archives marriage index for 1951",
+      "The W. E. B. Du Bois papers (MS 312) at UMass Amherst, and the Credo digital repository",
+      "New York Times and New York Amsterdam News for late February and early March 1951",
+    ],
+  },
+  {
+    key: "sg-ghana-citizenship-date",
+    course: "shirley-graham",
+    lesson: "sg-citizenship-coup",
+    quote:
+      "So this course prints no settled date and files a source check against the FBI file and the State Department record.",
+    title: "When did Shirley Graham Du Bois change her citizenship, and by which act?",
+    severity: "high",
+    question:
+      "When did Shirley Graham Du Bois acquire Ghanaian citizenship, and separately, when and by what act did she cease to be a United States citizen? One account gives 1961; another cites a Justice Department memorandum of 10 October 1963 recording that the American embassy at Accra reported on 4 October 1963 that she had renounced under section 349(a)(6) of the Immigration and Nationality Act of 1952.",
+    claim:
+      "Lesson 22 prints NO date. It gives both candidate accounts, notes that the 1961 version coincides with her arrival year and that the more specific 1963 version comes from a journalist writing in an article that misstates her death year, and files this check instead of choosing.",
+    stakes:
+      "The highest severity in this course. 'In 1961 both renounced US citizenship and became Ghanaian citizens' is one of the most repeated sentences about this couple and the course calls it wrong in both halves. If the 1963 renunciation is confirmed, the course should print it and say so plainly. If 1961 turns out to be right after all, a whole lesson's argument about contaminating dates needs rewriting.",
+    needs: [
+      "A Certificate of Loss of Nationality, or the State Department record of one, with a date",
+      "The Ghanaian certificate of citizenship or the Ministry of the Interior letter for HER, as exists for him dated 16 February 1963",
+      "The Justice Department memorandum of 10 October 1963 itself, rather than a report of it",
+    ],
+    where: [
+      "Her FBI file, obtainable under the Freedom of Information Act",
+      "State Department records at the National Archives, Record Group 59, on loss of nationality",
+      "Her papers at the Schlesinger Library and the Du Bois papers at UMass Amherst",
+    ],
+  },
+  {
+    key: "sg-ghana-local-content",
+    course: "shirley-graham",
+    lesson: "sg-ghana-television",
+    quote:
+      "The share of locally made programming is reported at eighty five per cent in one place and seventy five per cent in another. Both figures circulate, they cannot both be right, and a source check is filed rather than a number chosen.",
+    title: "What share of Ghana Television's output was locally produced under Graham Du Bois?",
+    severity: "low",
+    question:
+      "What proportion of Ghana Television's programming was produced in Ghana during Shirley Graham Du Bois's directorship, from 31 July 1965 to February 1966, and what is the primary source for the figure?",
+    claim:
+      "Lesson 21 states that programming was produced in Ghana to an unusually high degree and prints no percentage, naming the conflict between the 85 and 75 per cent figures in circulation.",
+    stakes:
+      "Low on its own, but the figure is the main quantitative claim about what she actually achieved in the job, and it is the sort of number that gets repeated forever once a course prints it. A wrong one would also undercut a lesson that spends its length correcting other people's numbers.",
+    needs: [
+      "A primary figure from the broadcaster's own reporting or from a Ghanaian government publication of 1965 or 1966",
+      "The definition being measured: hours, titles, or schedule share, since the three give different answers",
+    ],
+    where: [
+      "Ghana Broadcasting Corporation archives in Accra",
+      "Jennifer Blaylock's work on Ghanaian television and its citations",
+      "Contemporary Ghanaian press for 1965 and 1966",
+    ],
+  },
+  {
+    key: "sg-mccarthy-subpoena",
+    course: "shirley-graham",
+    lesson: "sg-the-file",
+    quote:
+      "Whether she appeared before McCarthy's subcommittee on 15 July 1953 is unsettled, and a source check is filed against the Senate's own executive session transcripts, unsealed in 2003.",
+    title: "Did Shirley Graham appear before McCarthy's subcommittee on 15 July 1953?",
+    severity: "medium",
+    question:
+      "Did Shirley Graham appear before the Senate Permanent Subcommittee on Investigations on 15 July 1953, as the subpoena of 25 June 1953 required? If she did, what did she say, and did she invoke any privilege?",
+    claim:
+      "Lesson 17 documents the subpoena and its date, corrects the widespread claim that she testified before HUAC by pointing out that McCarthy chaired a SENATE body, notes she was named on a 1948 HUAC list of fronts, and says no evidence has been located that she testified before HUAC at all.",
+    stakes:
+      "The HUAC claim is repeated almost everywhere, and this lesson's correction of it is only worth making if the course can also say what DID happen. Leaving the appearance unresolved is honest and incomplete, and the transcripts to settle it were unsealed in 2003, so this is closeable by anyone willing to read them.",
+    needs: [
+      "The executive session transcript for 15 July 1953, or confirmation that no session took place that day",
+      "Whether she appeared at all, and under what name, since she was then Shirley Graham Du Bois",
+      "Any contemporaneous press report of an appearance",
+    ],
+    where: [
+      "Executive Sessions of the Senate Permanent Subcommittee on Investigations, 83rd Congress, published by the Government Printing Office in 2003",
+      "Her FBI file, which is likely to record any appearance",
+      "New York Times and Washington Post for mid July 1953",
+    ],
+  },
+  {
+    key: "sg-death-date",
+    course: "shirley-graham",
+    lesson: "sg-ledger",
+    quote:
+      "Horne gives 1 April, which may be the memorial rather than the death, so a check is filed.",
+    title: "Did Shirley Graham Du Bois die on 27 March or 1 April 1977?",
+    severity: "low",
+    question:
+      "On what date did Shirley Graham Du Bois die in Beijing, and what is the 1 April date that Horne gives? Is it the memorial service, the announcement, or a genuinely different account of the death?",
+    claim:
+      "Lesson 23 prints 27 March 1977, breast cancer, aged 80, and says Horne gives 1 April, which may be the memorial rather than the death.",
+    stakes:
+      "Low in isolation, but this course makes a point of the fact that a syndicated reference entry gets her age at death wrong, and a course that says so should be able to state the date without a hedge of its own. It is also a question with a documentary answer somewhere.",
+    needs: [
+      "A death certificate or a Chinese official record",
+      "The date of the Babaoshan memorial service, which would explain the discrepancy if it is 1 April",
+      "The date and wording of the New York Times obituary",
+    ],
+    where: [
+      "New York Times and Xinhua reports for late March and early April 1977",
+      "Gerald Horne's Race Woman and its source for 1 April",
+      "Her papers at the Schlesinger Library, and David Graham Du Bois's own papers",
+    ],
+  },
+  {
+    key: "sg-etta-bell-marriage",
+    course: "shirley-graham",
+    lesson: "sg-training",
+    quote:
+      "Those two facts cannot both stand beside an 1896 birth. A source check is filed.",
+    title: "Etta Bell married David A. Graham in 1905, so who was Shirley Graham's mother?",
+    severity: "high",
+    question:
+      "The 1916 Centennial Encyclopaedia of the A.M.E. Church states that the Reverend David A. Graham married Elizabeth Etta Bell in St. Paul, Minnesota, in November 1905. The Schlesinger Library names Elizabeth Etta (Bell) Graham as Shirley Graham's mother, and dates her birth to approximately November 1896. Which of those is wrong?",
+    claim:
+      "Lesson 2 prints 11 November 1896 in Indianapolis, names the contradiction openly, says no scholar appears to have addressed it, and files this check rather than choosing a resolution.",
+    stakes:
+      "High, and it is the strongest existing reason to doubt the 1896 date, which this course prints as fact and builds several arguments on: the nineteen year gap to the marriage, her age of 35 at the Tom-Tom premiere against TIME's 25, and her age at every later milestone. If the 1905 marriage is right and Etta Bell is her mother, the 1907 birth year that a syndicated reference entry gives becomes much harder to dismiss, and a section of this course needs rewriting.",
+    needs: [
+      "An Indiana birth record for Lola Shirley Graham, or the 1900 census image for the Graham household",
+      "A Minnesota marriage record for David A. Graham and Elizabeth Etta Bell, with its actual date",
+      "Whether the 1916 encyclopaedia's 1905 is a typographical error for 1895, which would resolve everything",
+    ],
+    where: [
+      "Indiana State Department of Health vital records, and Indianapolis city directories for 1896 to 1900",
+      "Minnesota Historical Society marriage records for Ramsey County",
+      "The 1900 United States Census, searching the Graham household wherever David A. Graham was then posted",
+    ],
+  },
+  {
+    key: "sg-horne-quotations",
+    course: "shirley-graham",
+    lesson: "sg-fictionalized",
+    quote:
+      "Her biographies were, in Horne's words, at times criticized sharply for their inclusion of imagined dialogue, and he lists fictionalized dialogue and shimmering prose among her trademarks (Horne, 2000).",
+    title: "Confirm the Race Woman quotations and page numbers against a print copy",
+    severity: "medium",
+    question:
+      "Do the phrases this course attributes to Gerald Horne's Race Woman appear as quoted, and on which pages? Specifically: 'criticized sharply for their inclusion of imagined dialogue'; 'fictionalized dialogue and shimmering prose'; the sentence connecting her invented dialogue to her having created and unmade details of her own life; 'a bit unfair'; and the Cayton and Redding review citations.",
+    claim:
+      "Section 3 quotes and closely paraphrases Race Woman throughout, and cites it as Horne, G. (2000), New York University Press, WITHOUT page numbers, because the wording was read from a digitized copy whose pagination this pass could not confirm.",
+    stakes:
+      "This is the section where the course judges its own subject's documentation standards, so it is the one place where a loose citation would be self refuting. A missing page number is a lesser fault than a wrong one, which is why none are printed, but a cited quotation in a published course should carry a page a reader can turn to. Also confirm the edition year: most sources give 2000, at least one gives 2002.",
+    needs: [
+      "Page numbers for each quoted phrase, from a print or properly paginated copy",
+      "The correct publication year and edition of Race Woman",
+      "The full citations for the Horace Cayton (Chicago Sun, 13 April 1947) and Saunders Redding (Philadelphia Afro-American, 31 August 1946) reviews as Horne gives them",
+    ],
+    where: [
+      "A library copy of Horne, G., Race Woman: The Lives of Shirley Graham Du Bois, New York University Press",
+      "The NYU Press catalogue record for the edition and year",
+      "The reviews themselves, in the Chicago Sun and Philadelphia Afro-American for those dates",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
