@@ -100,6 +100,53 @@ Error tracking (Sentry SDK, inert until `SENTRY_DSN` is set, every event through
 `beforeSend` scrubber) is described under [Status](#status) above and in the
 [Health check](#health-check-apihealth) section. The rest of the observability story:
 
+### Verifying a deployment can actually report its errors
+
+```bash
+pnpm verify:observability https://learn.witus.online          # one target
+pnpm verify:observability https://learn.witus.online https://bettervice.club
+pnpm verify:observability --env-file ../other-app/.env.local https://other-app.example
+```
+
+**Use it after a deploy, after any header or CSP change, and any time the error dashboard has been
+suspiciously quiet.** Wiring browser error reporting into an app has three failure modes that look
+identical from the outside, and two of them are invisible from the inside as well: the browser DSN
+never reached the build; the DSN is there but the site's CSP forbids the ingest origin, so the
+browser drops every report before it leaves the page while the *server* side keeps reporting
+normally and the dashboard looks healthy; or the app cannot reach its database. Against a deployed
+URL the script asserts four things and exits non-zero if any of them is not established:
+
+| Check | What a pass means |
+| --- | --- |
+| `dsn-in-client-bundle` | The exact configured DSN string is present in the served HTML or in one of that page's own JS chunks. This is the only direct evidence the browser SDK will initialise at all. |
+| `csp-allows-ingest` | Every enforced `Content-Security-Policy` on the response permits the ingest envelope endpoint, following the spec's `connect-src` then `default-src` fallback. Report-only policies are printed but never counted either way, since they cannot block. |
+| `ingest-host-resolves` | The DSN's hostname resolves in DNS. Catches a mistyped region or a stale vendor domain, which the other two checks cannot see because they both derive from that same string. |
+| `health-endpoint` | `/api/health` returns 200, with JSON that **affirms** health. |
+
+Three properties are load-bearing, and none of them should be "simplified" later:
+
+- **"Could not determine" reports as NOT verified.** Every check answers pass / fail / unknown and
+  only a pass counts. A 200 that returns HTML, or JSON with no recognised health field, is `unknown`
+  and fails the run. A harness that reports green when it could not actually look is worse than no
+  harness, and this is the failure class that produced false-healthy signals three times.
+- **No DSN is hardcoded.** It is read from `--dsn`, `--env-file`, the environment, or a `.env*` file
+  in the working directory, and **the source is printed on every run**. There is deliberately no
+  fallback value: with no DSN, the DSN and CSP checks report `unknown` and the run fails. The first
+  live run showed why this matters, since this deployment's DSN points at Better Stack's
+  Sentry-compatible ingest rather than at `sentry.io`. The ingest origin is always *derived* from
+  whichever DSN is found.
+- **Read-only.** GET requests only, only against the URL you name, and it never sends a test event,
+  so running it costs no error quota and pollutes no project.
+
+**Not in `pnpm lint`, on purpose:** it makes network calls, and a guard that fails on bad wifi is a
+guard people learn to bypass. It is a post-deploy tool, not a commit gate. It also cannot prove that
+events are *accepted* (only that they can be sent), that a route-specific chunk it never fetched
+carries the init (pass `--page <route>` to widen), or that the project behind the DSN is enabled and
+under quota. Other flags: `--health-path`, `--max-chunks`, `--timeout`, `--show-dsn`, `--json`.
+Its judgment lives in pure functions in
+[scripts/lib/observability-checks.ts](scripts/lib/observability-checks.ts), pinned by
+[tests/verify-observability.test.ts](tests/verify-observability.test.ts).
+
 ### Distributed tracing
 
 Traces go to **Honeycomb** over OTLP via `@vercel/otel` ([otel.config.ts](otel.config.ts), loaded
@@ -296,12 +343,21 @@ owner of a cohort they belong to), revocably — never a bulk toggle, never stud
 teacher attaches a note to a lesson for a cohort or a subset of it (one `audience` model), which
 renders in those students' panels on that lesson: **content, not messaging** — no notification,
 no inbox, no email. Guardians see teacher-sent notes on the family report; a child's own notes
-stay private unless the child shares them. Notes are searchable per course and exportable as
-markdown with quoted passages and lesson links (`/api/courses/[id]/notes/export`).
+stay private unless the child shares them. Notes are exportable as markdown with quoted passages
+and lesson links (`/api/courses/[id]/notes/export`).
+
+**Note search covers the four visibility rules, not just "mine"** (plans/61 §4). A learner's
+search returns their own notes plus teacher notes sent to them; a teacher's search *also* returns
+notes students shared with them and notes they sent, which neither learner rule can reach because
+a teacher owns a cohort rather than belonging to it. Every hit says whose note it is, and the box
+states its own scope in words rather than implying it. The two ids are kept apart on purpose: own
+notes follow the active learner (so acting as a managed child searches that child's notes), the
+teaching half follows the signed-in account (so a child being acted as never inherits it).
 
 All queries live in [src/db/queries/notes.ts](src/db/queries/notes.ts) behind the scoped DAL;
 `tests/isolation/notes.db.test.ts` pins the visibility rules (cross-tenant, cross-author,
-unshared-note, and recipient-narrowing leakage all fail the suite).
+unshared-note, recipient-narrowing, teacher-search, and guardian-view leakage all fail the suite,
+including the one that matters most: a student's personal note never reaches their guardian).
 ## In-app recording: audio and video
 
 In-app lesson recording captures **video as well as audio**: 720p front-camera capture with a
@@ -443,6 +499,10 @@ pnpm check:series-codes    # course codes (STORY-00) are legal and do not lie ab
 pnpm check:page-reachability  # ratchet. No public page is a menu orphan or rides the default OG card.
 ```
 
+One check is deliberately **outside** that list: `pnpm verify:observability <url>` runs against a
+DEPLOYED url rather than the working tree, so it makes network calls and must never gate a commit.
+See [Verifying a deployment can actually report its errors](#verifying-a-deployment-can-actually-report-its-errors).
+
 The two quiz-integrity guards and the assessment-fit guard all cover the **deterministic** half of
 their question. Their semantic halves are advisory buttons on a course's instructor tools,
 deliberately NOT build gates, because an LLM verdict is non-deterministic and must never be able to
@@ -526,7 +586,12 @@ header — attachment download, no caching.
 The `/admin` landing is a consolidated dashboard: headline tenant-scoped counts (learners, active
 enrollments, courses published with the unvetted remainder, completions, open problem reports,
 leads; the owner also sees new curriculum feedback, media awaiting review, and upcoming live
-sessions), each linking to its surface, above the full tool grid. `/admin/settings` self-serve
+sessions), each linking to its surface, above the full tool grid. "Open problem reports" counts
+everything not yet `closed`, so a row parked at `triaged` still shows in that number. On
+`/admin/reports` itself, every row off `new` now displays the reason recorded against it (the
+`--note` that `pnpm reports:triage` requires, stored in `problem_reports.resolution` by migration
+0058), and a row off `new` with no reason recorded says so rather than looking settled: closing a
+report without saying why stops the next person from ever looking again. `/admin/settings` self-serve
 flags now also include **Learning paths** (`flags.paths`) and **Lead funnel** (`flags.leadFunnel`)
 alongside the existing set. Deployment-identity flags (`recruiting`, `surface`, `aiProvider`,
 `ecosystemSso`, `firstParty`) stay deliberately out of self-serve.

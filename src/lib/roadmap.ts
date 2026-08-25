@@ -5,6 +5,147 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- ✅ **Observability verification harness** (\`feat/verify-observability-harness\`; no migration, tooling
+  only). \`pnpm verify:observability <url>\` asks one question about a DEPLOYED site: can it actually
+  report its own errors, or is it dropping them silently? Four read-only checks, GET requests only,
+  never sending a test event: (1) the exact configured DSN is present in the served HTML or one of
+  that page's own JS chunks, the only direct evidence the browser SDK initialises at all; (2) every
+  enforced CSP permits the ingest envelope endpoint, following the spec's \`connect-src\` then
+  \`default-src\` fallback, because a policy like \`connect-src 'self' data:\` drops 100% of
+  browser-side reports while the SERVER side keeps reporting and the dashboard looks healthy;
+  (3) the ingest host resolves, which catches a mistyped region the other two cannot see since both
+  derive from that same string; (4) \`/api/health\` returns 200 AND a payload that affirms health.
+  **Three-valued on purpose:** pass, fail, or "could not determine", and only pass counts, so a 200
+  serving HTML fails instead of reading as green. This rollout produced false-healthy signals three
+  times, and a harness that reports green on something it could not look at is worse than none.
+  **No DSN is hardcoded**; it is read from \`--dsn\`, \`--env-file\`, the environment or a \`.env*\`
+  file and the source is printed on every run. The first live run justified that: this deployment's
+  DSN points at **Better Stack's** Sentry-compatible ingest, not \`sentry.io\`, so a guessed vendor
+  origin would have verified a fiction. Deliberately NOT in \`pnpm lint\` (network calls must never
+  gate a commit). Judgment isolated as pure predicates in \`scripts/lib/observability-checks.ts\`,
+  24 tests.
+- 🔧 **Who Gets Named** (\`content/credit-who-gets-named\`, Culture & History, **CREDIT-00**; NO
+  migration, **re-run \`pnpm seed:courses\`**). The mechanisms course from BAM's own vetting note
+  (\`plans/chat/did-the-work-vetting.md\` §4): credit is assigned by mechanisms, the mechanisms are
+  documentable, and people appear as **evidence for a mechanism** rather than as a parade of
+  profiles. Same move that made \`naacp-learned-to-win\` work with four instruments instead of four
+  biographies. Six mechanisms, one per section: the **Matthew effect** (Merton, 1968), the
+  **Matilda effect** (Rossiter, 1993), **authorship convention** (the four ICMJE criteria, the
+  acknowledgement line, CRediT's fourteen roles), the **inventorship-versus-ownership split** in
+  patent law (35 U.S.C. 115 and 261, Stanford v. Roche), the **archive's silences** (Trouillot's
+  four moments), and **how a correction actually happens**. 6 sections, 18 teaching lessons, 6
+  section quizzes (55/62/60/62/59/58 serving 5) and a 40-question final serving 10, for **396
+  pooled questions**, 53 reveal cards, and **zero findings** from
+  \`pnpm audit:course who-gets-named --spec\`.
+  **This recodes its sibling.** \`who-gets-the-credit\` becomes **CREDIT-01** in the same series,
+  because \`check-series-codes\` rule 8 fails a "00" that is the only course in its series. The 00
+  deliberately does not re-teach any patent material: it teaches only the one distinction the
+  general case needs (a patent keeps the inventor's name and moves the money, which is the opposite
+  of what an author line does) and cross-links to 01 for the assignment clause, the legal history
+  and the eleven verified patent numbers.
+  **Two rules are load-bearing and stated in lesson 3.** An identity claim requires a public
+  self-statement with a citation, and where none exists the person is taught for their work with no
+  identity claim attached. **No living person in the course carries an identity claim**; the only
+  one in the whole file is Pauli Murray's, sourced to Murray's own papers via the Pauli Murray
+  Center, whose pronoun practice (s/he, their, they/them) the course follows and names out loud.
+  And a contested claim is taught as contested with the holders of each position named.
+  **Three live disputes are left open on purpose:** whether Annie Turnbo Malone trained Madam C. J.
+  Walker (A'Lelia Bundles's documentary case against the popular account, with her interest as the
+  Walker estate's representative disclosed), the size of Malone's reported fortune, and whether the
+  Roosevelt dime derives from Selma Burke's plaque (the U.S. Mint and Sinnock against Burke, the
+  Smithsonian American Art Museum and FDR's son). The Burke lesson exists precisely because it never
+  resolved: every other case in the course eventually acquired a portrait, a degree, an agreement,
+  an expungement or a rename, and a course that taught only those would leave a reader expecting an
+  ending.
+  **Claims refused rather than repeated:** the widely told ten dollar wager between Murray and
+  Spottswood Robinson (traces only to Murray's own recollection), any motive for the "Helen Lane"
+  substitution in the HeLa literature, the outcomes of Lacks litigation still moving, and a single
+  day for Claudette Colvin's death in January 2026, where published reports disagree. Six hedges
+  are filed as **source checks** in \`src/lib/research-checks.ts\` rather than left as prose.
+  Mapped to \`catalog.cited-primary-secondary-synthesis\` and \`catalog.test-a-historical-claim\`
+  (CCSS RH.11-12.9 and RH.11-12.8). Deliberately **not** in \`STAGED_COURSES\` yet, so
+  \`pnpm gen:citations\` is a later decision.
+- ✅ **The Editor of The Crisis** (\`content/didwork-jessie-fauset\`, Culture & History; NO
+  migration, **re-run \`pnpm seed:courses\`**). **DIDWORK-S2**, the second course on the She Did the
+  Work track after \`she-took-the-seat\` (S1), and the strongest single evidence case in it.
+  **Jessie Redmon Fauset taught as one argument, not as a biography.** She was literary editor of
+  *The Crisis* from October 1919 to April 1926, took the first poem Langston Hughes published
+  outside his high school magazine, and ran Cullen, Toomer, Spencer, Georgia Douglas Johnson,
+  Bontemps and Bennett. The movement is remembered by name and she is remembered as staff, which is
+  the **Matthew effect** (Merton, 1968) and the **Matilda effect** (Rossiter, 1993) documented
+  operating on one person at once. So the course teaches **editorial labour as labour**: what an
+  acquiring editor does, why none of it leaves a byline, and how credit for a movement lands on
+  whoever signed the poems.
+  **Built from primary sources read directly.** The digitized *Crisis* was read issue by issue,
+  1919 to 1927, and the masthead settles what every secondary account rounds off: she joined in
+  **October 1919** (the November issue says "last month"), first masthead November 1919, last as
+  Literary Editor **April 1926**, moved to Contributing Editor by Du Bois's own May 1926 Opinion
+  column, last masthead of any kind **February 1927**. **Six years seven months**, not the "seven
+  years" his farewell rounded to and every later account inherited. *The Brownies' Book* mastheads
+  and its **postal ownership filings** dissolve the literary-editor versus managing-editor
+  confusion: both titles are true, of different publications, and the 1921 filing names her.
+  **The Hughes quotation is printed verbatim and then taken apart.** *The Big Sea* was read in full.
+  The passage names **three** people, says "**so-called** New Negro literature", and sits directly
+  after a paragraph giving **Charles S. Johnson** the superlative. The course prints the harder
+  version because the inflated one collapses the first time anyone opens the book.
+  **The Civic Club dinner is the credit mechanism in one documented chain.** The May 1924 Horizon
+  notice names six speakers, all men, and does not list the honoree; Du Bois's own January 1926
+  review then traces the evening through the *Survey Graphic* Harlem number to **Locke's *The New
+  Negro***. The occasion was a woman's novel; the durable object is a man's anthology.
+  **Claims named and REFUSED rather than repeated:** the "first Black woman in Phi Beta Kappa"
+  ordinal (Phi Beta Kappa's own magazine reports **Mary Annette Anderson, Middlebury, 1899**); any
+  acquisition claim for **Cullen, Toomer, McKay or Larsen** (they appeared, the record does not say
+  who chose them); that she was **silent** at the dinner (the notice omits her from the speakers,
+  which is a fact about the notice); her **birthplace** (the 1919 staff note says Philadelphia,
+  modern accounts say Camden County); and any verdict on **Du Bois overruling her**. Robert Bone's
+  1958 verdict is deliberately **not quoted**, because this pass could not read his wording, and a
+  paraphrase presented as a quotation in a course about quotation drift would be self-refuting.
+  **The control case is why it can be trusted.** Four bylined novels, and *The Crisis*'s own 1924
+  reports of a **third American printing inside seven months** plus an English edition from Chapman
+  and Hall and a German translation at Vienna. A byline did not save her, so the course separates
+  under-credit as an editor from loss of literary fashion, the second documented by the **1925
+  Chicago Tribune objection** that the novel missed "that essential something".
+  5 sections, 15 teaching lessons, 5 section quizzes (60/63/59/60/60, serving 5) and a 40-question
+  final serving 10, **322 pooled questions**, **zero findings** from \`pnpm audit:course --spec\`.
+  Mapped to two \`catalog.*\` Common Core history-literacy claims. Five hedges filed as **source
+  checks** in \`src/lib/research-checks.ts\`. **NOT in \`STAGED_COURSES\`**, so \`pnpm gen:citations\`
+  is a later step.
+- 🔧 **Shirley Graham Wrote the Opera First** (\`content/didwork-shirley-graham\`, Culture & History,
+  **DIDWORK-S3**; NO migration, **re-run \`pnpm seed:courses\`**). The third course in the Did the
+  Work series and the first single-subject one, because the defect it corrects is an **ordering**
+  defect. Every short account of Shirley Graham Du Bois reaches for the 1951 marriage to W. E. B.
+  Du Bois inside its first three sentences, and once that fact is in front, twenty-five years of
+  independent work reads as prologue. So the course runs in the order she MADE things (opera,
+  theatre, books, organizing) and the wedding does not arrive until **lesson 15 of 25**. A learner
+  meets the composer before the wife.
+  18 teaching lessons, 7 quizzes, **444 pooled questions** (77/70/67/64/56/67 serving 5, plus a
+  42-question final serving 10), all at 80 to pass and shuffled, with
+  \`pnpm audit:course shirley-graham --spec\` clean and the always-pick-longest strategy scoring 0%.
+  **The refusals are the content, not the footnotes.** Four widely repeated details about the 1932
+  Cleveland premiere are taught AS errors: the Great Lakes Exposition (it opened in 1936), "the
+  Governor of Ohio" in the audience (Newton D. Baker was a mayor and a war secretary and was never
+  governor; Ohio's was George White), the 10,000/15,000 audience split (TIME, contemporaneously,
+  puts ~15,000 at the premiere itself), and an NBC broadcast (no 1932 evidence; *Track Thirteen* in
+  1940 genuinely was NBC, and the attribution migrated). The bare "first opera by a Black woman" is
+  downgraded to the width the sources carry, because the Schlesinger Library, which owns the score,
+  says "perhaps the first" and a bare first-ever asserts a global absence in a record nobody kept.
+  The **invented-dialogue charge** against her biographies is taught as genuinely contested: Horace
+  Cayton and Saunders Redding named on one side, Horne's own "a bit unfair" defence and her
+  documented archive work on the other, Bettina Aptheker's defence with her interest declared, and
+  the honest admission that **no published scholar names a specific invented line**.
+  **BAM's Indianapolis lead: two ties verified, one refused.** Her father the Rev. David A. Graham
+  pastored **Bethel A.M.E.** (Vermont and Toledo) from ~autumn 1896 to 1900, and from **1940 to late
+  1941/42 she was director of adult activities at the Phyllis Wheatley YWCA**, 653 N. West Street, a
+  few blocks OFF Indiana Avenue, where the local press credits her as producer/director at **Crispus
+  Attucks** (1 Nov 1940) and director of *H.M.S. Pinafore* (July 1941). Cross-links
+  \`indiana-avenue-a-district-and-what-replaced-it\`. **Refused:** the swimming-pool editorial at 13
+  is **Colorado Springs**, not Indianapolis (Horne places it there; the Indianapolis version is
+  chronologically impossible), and the course teaches that error rather than repeating it. Mapped to
+  the two \`catalog.*\` literacy claims. **Eleven** source checks filed at \`/admin/research\`,
+  including the one nobody in the literature has addressed: the 1916 A.M.E. encyclopaedia dates her
+  father's marriage to Etta Bell to **November 1905**, which cannot stand beside an 1896 birth to
+  that mother. Citations staged AFTER seeding (the extractor reads the DB). BAM sets price + vetted
+  state in the admin UI.
 - ✅ **The Negro Leagues: Who Owned the Game** (\`content/negro-leagues\`, Culture & History; NO
   migration, **re-run \`pnpm seed:courses\`**). BAM's note asked for the story of the Negro Leagues,
   starting with baseball and branching to other sports, connected to Indianapolis and the Madam C. J.
@@ -204,6 +345,15 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   teacher-sent notes on the family report, per-course note search, and markdown export. The
   visibility rules live in src/db/queries/notes.ts and are pinned by
   tests/isolation/notes.db.test.ts.
+- ✅ **Note search finds a teacher's half too** (\`feat/notes-annotations-finish\`, no migration):
+  search shipped covering only what a LEARNER can see, so a teacher searching a course got their
+  own private notes and nothing else. Notes students shared with them and notes they sent were
+  reachable only by remembering which lesson they were written on, which is exactly what a search
+  box exists to avoid. Both are now in scope (plans/61 §4), the two ids are kept apart so the
+  teaching half follows the signed-in account rather than a managed child being acted as, and
+  every hit is labelled with whose note it is. Withdrawing a share removes the note from search in
+  the same breath as from the lesson; the isolation suite pins both that and the rule that a
+  student's personal note never reaches their guardian.
 - ✅ **In-course text search** (\`feat/course-search\`, plans/61 §5, build-order step 2): a search box
   on the course page ("Search this course") for enrolled learners, editors, and invited auditors.
   Searches the PUBLISHED lessons of that one course: titles, body prose, \`:::reveal\` self-checks

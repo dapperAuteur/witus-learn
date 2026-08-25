@@ -26,6 +26,7 @@ import { FOOTBALL_COURSE } from "./data/football-course";
 import { BROADCASTING_COURSE } from "./data/broadcasting-course";
 import { VOICE_ACTING_COURSE } from "./data/voice-acting-course";
 import { SHE_TOOK_THE_SEAT_COURSE } from "./data/she-took-the-seat-course";
+import { EDITOR_OF_THE_CRISIS_COURSE } from "./data/editor-of-the-crisis-course";
 import { NAACP_LEARNED_TO_WIN_COURSE } from "./data/naacp-learned-to-win-course";
 import { ACTING_COURSE } from "./data/acting-course";
 import { GOLF_COURSE } from "./data/golf-course";
@@ -223,6 +224,8 @@ import { TRAINING_THE_COLONIZER_COURSE } from "./data/training-the-colonizer-cou
 import { THE_MOORS_COURSE } from "./data/the-moors-course";
 import { WHO_GETS_THE_CREDIT_COURSE } from "./data/who-gets-the-credit-course";
 import { HISTORY_OF_BATHING_COURSE } from "./data/history-of-bathing-course";
+import { WHO_GETS_NAMED_COURSE } from "./data/who-gets-named-course";
+import { SHIRLEY_GRAHAM_COURSE } from "./data/shirley-graham-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -1895,7 +1898,34 @@ async function main() {
     // Unresolvable hedges are filed in src/lib/research-checks.ts, not left as prose.
     // 5 sections · 15 teaching lessons · 5 section quizzes (52/50/51/49/54, serving 5) · 1 final
     // (40 serving 10) = 296 questions. NO migration — pnpm seed:courses.
-    { slug: "who-gets-the-credit", course: WHO_GETS_THE_CREDIT_COURSE, category: "Culture & History" },
+    // CREDIT series (BAM's brief, plans/chat/did-the-work-vetting.md §4). "Who Gets Named" is the
+    // 00 because it teaches the MECHANISMS that assign credit in general (Matthew effect, Matilda
+    // effect, authorship convention, the inventorship/ownership split, archival silence, and the
+    // anatomy of a correction); "Who Gets the Credit" is 01 because it is the deep application of
+    // one of those mechanisms to one system, the U.S. patent record. The 00 deliberately does NOT
+    // re-teach the patent material: it teaches only the inventorship-is-not-ownership distinction
+    // the general case needs and cross-links here for the rest. Recoding was not optional once the
+    // 00 existed: `check-series-codes` rule 8 fails a "00" that is the only course in its series.
+    {
+      slug: "who-gets-named",
+      course: WHO_GETS_NAMED_COURSE,
+      category: "Culture & History",
+      seriesSlug: "credit",
+      seriesTitle: "Credit: Who Gets Named",
+      seriesOrder: 1,
+      seriesCode: "CREDIT",
+      seriesPosition: "00",
+    },
+    {
+      slug: "who-gets-the-credit",
+      course: WHO_GETS_THE_CREDIT_COURSE,
+      category: "Culture & History",
+      seriesSlug: "credit",
+      seriesTitle: "Credit: Who Gets Named",
+      seriesOrder: 2,
+      seriesCode: "CREDIT",
+      seriesPosition: "01",
+    },
     // Clean: A Global History of Bathing and Soap (Culture & History). Organized by tradition, not
     // as a ladder: Indus Great Bath, Rome (oil+strigil, no soap), the hammam and hard soap
     // (Aleppo/Nablus), Japan (misogi + Buddhist merit), the Finnish sauna, the Mesoamerican
@@ -1907,6 +1937,86 @@ async function main() {
     // (Great Bath) and UNESCO ICH (Nabulsi soap 2024, Finnish sauna 2020). 8 sections ·
     // 16 teaching lessons · 8 quizzes (15-question banks) · 1 exercise. NO migration — pnpm seed:courses.
     { slug: "history-of-bathing", course: HISTORY_OF_BATHING_COURSE, category: "Culture & History" },
+    // The Editor of The Crisis - She Did the Work, wave 2. DIDWORK-S2, the second course on the S
+    // track after `she-took-the-seat` (S1). Jessie Redmon Fauset taught as ONE ARGUMENT about
+    // editorial labour rather than as a biography: what an acquiring editor does, why none of it
+    // leaves a byline, and how credit for a movement lands on whoever signed the poems. It is the
+    // strongest single evidence case in the track because the Matthew effect (Merton, 1968) and the
+    // Matilda effect (Rossiter, 1993) are documented operating on the same person at once.
+    //
+    // BUILT FROM PRIMARY SOURCES READ DIRECTLY, not summarised from secondary accounts. The
+    // digitized Crisis, issue by issue 1919-1927, settles the tenure every account rounds off:
+    // she joined in OCTOBER 1919 (the November issue says "last month"), first masthead November
+    // 1919, last as Literary Editor April 1926, moved to Contributing Editor by Du Bois's own May
+    // 1926 Opinion column, last masthead of any kind February 1927. Six years seven months, not the
+    // "seven years" Du Bois's farewell rounded to and every later account inherited. The Brownies'
+    // Book mastheads and its POSTAL OWNERSHIP FILINGS settle the literary-editor versus
+    // managing-editor confusion (both true, different publications, and the 1921 filing names her).
+    // The Big Sea was read in full: the "midwife" passage is quoted verbatim, and the course shows
+    // what the paraphrase drops (three names, "so-called", and the preceding paragraph giving
+    // Charles S. Johnson the superlative).
+    //
+    // CLAIMS NAMED AND REFUSED rather than repeated: the "first Black woman in Phi Beta Kappa"
+    // ordinal (Phi Beta Kappa's own magazine reports Mary Annette Anderson, Middlebury, 1899); any
+    // acquisition claim for Cullen, Toomer, McKay or Larsen (they appeared, the record does not say
+    // who chose them); that she was silent at the Civic Club dinner (the notice omits her from the
+    // speakers, which is a fact about the notice); her birthplace (the 1919 staff note says
+    // Philadelphia, modern accounts say Camden County); and any verdict on Du Bois overruling her.
+    // Five hedges are filed in src/lib/research-checks.ts rather than left as prose.
+    //
+    // THE CONTROL CASE is the reason it can be trusted: four bylined novels, and The Crisis's own
+    // 1924 reports of a THIRD American printing inside seven months plus an English edition and a
+    // German translation. So a byline did not save her, and the course separates under-credit as an
+    // editor from loss of literary fashion, the latter documented by the 1925 Chicago Tribune
+    // objection that the novel missed "that essential something".
+    // 5 sections, 15 teaching lessons, 5 section quizzes (60/63/59/60/60, serving 5) and a final
+    // (40 serving 10). NO migration - pnpm seed:courses.
+    {
+      slug: "the-editor-of-the-crisis",
+      course: EDITOR_OF_THE_CRISIS_COURSE,
+      category: "Culture & History",
+      seriesSlug: "did-the-work",
+      seriesTitle: "Did the Work",
+      seriesOrder: 3,
+      seriesCode: "DIDWORK",
+      seriesPosition: "S2",
+      seriesTrack: "She Did the Work",
+    },
+    // Shirley Graham Wrote the Opera First - She Did the Work, wave 2, DIDWORK-S3. The third course
+    // in the series and the first SINGLE-SUBJECT one: she-took-the-seat and naacp-learned-to-win are
+    // both deliberately built as cohorts, and this one is built as a chronology, because the defect
+    // it corrects is an ORDERING defect. Every short account of Shirley Graham Du Bois reaches for
+    // the 1951 marriage to W. E. B. Du Bois in its first three sentences, and once that is in front,
+    // twenty-five years of independent work reads as prologue. So the course runs in the order she
+    // MADE things and the wedding does not arrive until lesson 15 of 25.
+    //
+    // The refusals are the content, not the footnotes. The unqualified "first opera by a Black
+    // woman" is downgraded to the width the sources actually carry (the Schlesinger Library, which
+    // owns the score, says "perhaps the first"). Four widely repeated details about the 1932
+    // premiere are named as wrong: the Great Lakes Exposition (opened 1936), "the Governor of Ohio"
+    // in the audience (Newton D. Baker was a mayor and a war secretary, never governor), the
+    // 10,000/15,000 audience split (TIME puts ~15,000 at the premiere itself), and an NBC broadcast
+    // (no contemporaneous evidence; Track Thirteen in 1940 really was NBC). The invented-dialogue
+    // charge against her biographies is taught as CONTESTED, with Cayton and Redding on one side and
+    // Horne's own defence on the other, plus the honest admission that no published scholar names a
+    // specific invented line. BAM's Indianapolis lead produced two VERIFIED ties (her father
+    // pastored Bethel A.M.E. from ~autumn 1896 to 1900; she was director of adult activities at the
+    // PHYLLIS Wheatley YWCA, 653 N. West St, a few blocks OFF Indiana Avenue, 1940 to late 1941/42,
+    // with contemporaneous press credits at Crispus Attucks and for H.M.S. Pinafore) and one
+    // REFUSED (the swimming-pool editorial at 13 is Colorado Springs, and the Indianapolis version
+    // is chronologically impossible). Eleven unresolved questions are filed in
+    // src/lib/research-checks.ts. NO migration - pnpm seed:courses.
+    {
+      slug: "shirley-graham",
+      course: SHIRLEY_GRAHAM_COURSE,
+      category: "Culture & History",
+      seriesSlug: "did-the-work",
+      seriesTitle: "Did the Work",
+      seriesOrder: 4,
+      seriesCode: "DIDWORK",
+      seriesPosition: "S3",
+      seriesTrack: "She Did the Work",
+    },
   ]) {
     await seedAuthoredCourse(db, {
       tenantId: learnWitus,

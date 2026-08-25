@@ -335,8 +335,11 @@ export class ScopedDb {
     return listTeacherNotesSentToStudent(this.tenantId, studentUserId);
   }
 
-  searchNotesInCourse(viewerId: string, courseId: string, query: string) {
-    return searchNotesInCourse(this.tenantId, viewerId, courseId, query);
+  /** `viewerId` is the active learner (own notes), `accountId` the signed-in account (the
+   *  teaching half: shares addressed to me, notes I sent). Passing the same id for both is
+   *  correct for anyone who is not acting as a managed child. */
+  searchNotesInCourse(viewerId: string, accountId: string, courseId: string, query: string) {
+    return searchNotesInCourse(this.tenantId, viewerId, accountId, courseId, query);
   }
 
   getLessonBodyText(lessonId: string) {

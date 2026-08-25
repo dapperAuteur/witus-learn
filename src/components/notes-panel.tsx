@@ -54,6 +54,10 @@ interface SearchResult {
   lessonTitle: string | null;
   lessonSlug: string | null;
   kind: "personal" | "teacher";
+  /** Which visibility rule put this hit in the results, so it can be labelled rather than
+   *  silently presented as the viewer's own writing. */
+  source: "mine" | "teacher" | "shared" | "sent";
+  authorName: string | null;
   body: string;
   quote: string | null;
 }
@@ -233,7 +237,7 @@ export function NotesPanel({
         </div>
       ) : null}
 
-      <NoteSearch courseId={courseId} base={base} />
+      <NoteSearch courseId={courseId} base={base} teaches={myCohorts.length > 0} />
     </section>
   );
 }
@@ -631,7 +635,33 @@ function TeacherCompose({
 
 // ── Search across the course's notes (plans/61 step 5) ────────────────────────
 
-function NoteSearch({ courseId, base }: { courseId: string; base: string }) {
+/** Says whose note a hit is. An unlabelled result reads as the viewer's own writing, which is
+ *  exactly the confusion this feature cannot afford, so only "mine" goes unlabelled. */
+function sourceLabel(r: SearchResult): string {
+  switch (r.source) {
+    case "teacher":
+      return `From ${r.authorName ?? "your teacher"} · `;
+    case "shared":
+      return `${r.authorName ?? "A student"} shared this with you · `;
+    case "sent":
+      return "You sent this to a class · ";
+    default:
+      return "";
+  }
+}
+
+function NoteSearch({
+  courseId,
+  base,
+  teaches,
+}: {
+  courseId: string;
+  base: string;
+  /** The viewer owns at least one class, so their results also cover notes students shared with
+   *  them and notes they sent. The scope is stated in words either way: a search box that says
+   *  "my notes" while returning someone else's is the same broken promise as one that hides them. */
+  teaches: boolean;
+}) {
   const [q, setQ] = useState("");
   const [results, setResults] = useState<SearchResult[] | null>(null);
   const [searching, setSearching] = useState(false);
@@ -655,7 +685,7 @@ function NoteSearch({ courseId, base }: { courseId: string; base: string }) {
     <div className="mt-6">
       <form onSubmit={search} className="flex flex-wrap items-center gap-2">
         <label htmlFor="note-search" className="text-xs font-semibold uppercase tracking-wide text-neutral-400">
-          Search my notes in this course
+          Search notes in this course
         </label>
         <input
           id="note-search"
@@ -675,6 +705,11 @@ function NoteSearch({ courseId, base }: { courseId: string; base: string }) {
           {searching ? "Searching…" : "Search"}
         </button>
       </form>
+      <p className="mt-1 text-xs text-neutral-500">
+        {teaches
+          ? "Your own notes, notes your teacher sent you, notes students shared with you, and notes you sent to your classes."
+          : "Your own notes and notes your teacher sent you. Nobody else's notes are searchable."}
+      </p>
       <div aria-live="polite">
         {results !== null ? (
           results.length === 0 ? (
@@ -690,7 +725,7 @@ function NoteSearch({ courseId, base }: { courseId: string; base: string }) {
                   ) : null}
                   <p className="whitespace-pre-wrap wrap-break-word">{r.body}</p>
                   <p className="mt-1 text-xs text-neutral-500">
-                    {r.kind === "teacher" ? "From your teacher · " : ""}
+                    {sourceLabel(r)}
                     {r.lessonSlug ? (
                       <Link href={`${base}/lesson/${r.lessonSlug}`} className="underline hover:no-underline" style={{ color: "var(--accent)" }}>
                         {r.lessonTitle ?? "Open lesson"}

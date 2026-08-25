@@ -4066,6 +4066,14 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // verified patent documents and the secondary scholarship (James, Fouché, Swanson) into one
       // account of how invention credit is established and lost.
       "who-gets-the-credit",
+      // Who Gets Named (CREDIT-00) integrates primary documents (Merton 1968, Rossiter 1993, Gage's
+      // 1883 North American Review essay, the ICMJE authorship criteria, the CRediT/NISO taxonomy,
+      // 35 U.S.C. 115 and 261 with Stanford v. Roche, the Nobel Foundation statutes, the Pauli
+      // Murray Center's own account of Murray's papers) with measured secondary studies (Bol et
+      // al. 2018, Lincoln et al. 2012, Wuchty et al. 2007) and with Trouillot's account of archival
+      // silence, into one coherent explanation of how credit is assigned, and it foregrounds where
+      // its sources disagree rather than smoothing them.
+      "who-gets-named",
       // Culture and migration
       "great-migration-and-the-world",
       "hoodoo-tradition-of-resistance",
@@ -4110,6 +4118,19 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // papers and the case reporters from Murray through Brown into one account of a single
       // forty-five-year campaign.
       "naacp-learned-to-win",
+      // She Did the Work, wave 2. Integrates the digitized Crisis read issue by issue 1919-1927
+      // (mastheads, the November 1919 appointment note, the May 1924 Civic Club notice, Du Bois's
+      // January 1926 review and his May 1926 farewell), The Brownies' Book mastheads and its postal
+      // ownership filings, Langston Hughes's The Big Sea, and the secondary literature on credit
+      // (Merton 1968, Rossiter 1993) into one account of editorial labour and where its credit went.
+      "the-editor-of-the-crisis",
+      // She Did the Work, wave 2. Integrates archival finding aids (Schlesinger MC 476, the UMass
+      // Du Bois papers), contemporaneous press (TIME 1932, the Indianapolis Recorder and Times
+      // 1940-41), a denominational reference work (the 1916 A.M.E. Centennial Encyclopaedia), the
+      // Encyclopedia of Cleveland History, a Supreme Court opinion and the scholarly literature
+      // (Horne, Schmalenberger, Caplan, Blaylock, Dossett, Perkins) into one chronological account
+      // of a composer's whole working life.
+      "shirley-graham",
     ],
     lessons: [
       "2 · How we know: reading a record the enslavers wrote",
@@ -4187,6 +4208,13 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // repeated claims against the documentary record, and lesson 19 hands the learner a
       // seven-step method for testing any invention claim against patents and publications.
       "who-gets-the-credit",
+      // Who Gets Named states the corroborate-or-hold-open discipline as a rule in its third lesson
+      // and then runs it on three live disputes: whether Annie Turnbo Malone trained Madam C. J.
+      // Walker (Bundles's documentary case against the popular account), the size of Malone's
+      // reported fortune, and whether the Roosevelt dime derives from Selma Burke's plaque (the
+      // U.S. Mint and Sinnock against Burke, the Smithsonian American Art Museum and FDR's son).
+      // None is closed by assertion; each is taught with the holders of both positions named.
+      "who-gets-named",
       // Government-forms method course: test a government action against its enabling document
       // (did this body have the power?), the same corroborate-or-challenge move.
       "who-has-the-power",
@@ -4219,6 +4247,24 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // secondary accounts disagree about what the figure counts, and withholds the Dyer bill's
       // House tally because published accounts give 230 and 231, saying so both times.
       "naacp-learned-to-win",
+      // She Did the Work, wave 2. This claim IS the course's method. Lesson 3 downgrades the most
+      // repeated quotation about its own subject against the original text; lesson 8 corrects the
+      // "first Black woman in Phi Beta Kappa" ordinal against Phi Beta Kappa's own magazine and
+      // hands the learner a four-question ordinal test; lesson 5 refuses four acquisition claims the
+      // record does not support; lesson 15 lists every claim the course declines to assert and why.
+      "the-editor-of-the-crisis",
+      // She Did the Work, wave 2. This claim is the spine of the course rather than one section of
+      // it. Lesson 3 downgrades four widely repeated details about the 1932 opera premiere against
+      // a contemporaneous report and names the fifth, the bare "first opera by a Black woman"
+      // superlative, as an unprovable global-absence claim, restated at its narrowest in lesson 23.
+      // Lesson 6 corrects a published local article's address for the Indianapolis YWCA. Lesson 10
+      // corrects a prize record against the awarding body's own list. Lesson 11 holds the
+      // invented-dialogue charge against her biographies as genuinely CONTESTED, with the named
+      // 1946-47 reviewers on one side, Horne's own defence on the other, Aptheker's defence with
+      // its interest declared, and the admission that no scholar names a worked example. Lesson 13
+      // kills an attributed motive by chronology; lesson 22 prints no citizenship date because two
+      // accounts conflict. Eleven unresolved questions are filed in src/lib/research-checks.ts.
+      "shirley-graham",
     ],
     lessons: [
       "3 · The test: four questions before you draw an edge",

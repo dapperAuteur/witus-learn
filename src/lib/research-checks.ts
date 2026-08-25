@@ -1255,6 +1255,569 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Any systematic review or meta-analysis, which would settle the question faster than individual trials",
     ],
   },
+  // ── Who Gets Named (CREDIT-00) ────────────────────────────────────────────────────────────────
+  // Six hedges the course states in its own prose. Each one is a sentence in a lesson that says
+  // out loud that this could not be settled, which is only useful once it is filed here.
+  {
+    key: "credit00-murray-robinson-wager",
+    course: "who-gets-named",
+    lesson: "pauli-murray-the-argument-before-the-case",
+    quote:
+      "It traces to Murray's own recollection rather than to a contemporaneous record, so it is flagged here and filed as an open question rather than printed as fact.",
+    title: "Pauli Murray: is the ten dollar wager with Spottswood Robinson documented anywhere?",
+    severity: "medium",
+    question:
+      "Is there a contemporaneous record (a letter, a class record, a newspaper item, a paper in the Murray or Robinson papers) of Murray betting Spottswood Robinson ten dollars in 1944 that Plessy would fall within twenty five years, and of Robinson paying it in the 1960s? Or does every published account trace back to Murray's own later memoir?",
+    claim:
+      "The lesson names the story as widely repeated, says it traces to Murray's own recollection rather than a contemporaneous record, and explicitly declines to assert it.",
+    stakes:
+      "It is the single most repeated anecdote about Murray and it is the kind of detail a reader will quote in an argument. If a primary record exists the lesson should print it, because it dates the moment the argument was taken seriously. If none exists, the current refusal is right and should stay, and the course has a worked example of a beloved story that cannot be sourced.",
+    needs: [
+      "Either a citation to a contemporaneous document, with the archive, collection and folder",
+      "Or a statement from an archivist that the story appears only in Murray's own retrospective account",
+      "The page of Murray's autobiography where Murray tells it, so the lesson can attribute it precisely",
+    ],
+    where: [
+      "The Pauli Murray Papers at the Schlesinger Library, Radcliffe Institute, Harvard",
+      "The Spottswood W. Robinson III papers, and the Howard University School of Law archives",
+      "The Pauli Murray Center for History and Social Justice, which answers research questions",
+    ],
+  },
+  {
+    key: "credit00-traag-version-of-record",
+    course: "who-gets-named",
+    lesson: "the-footnote-inside-the-paper",
+    quote:
+      "That study is an eLife reviewed preprint rather than a version of record, so treat the citation as provisional.",
+    title: "Matthew effect replication: has the Traag et al. study reached a version of record?",
+    severity: "medium",
+    question:
+      "Has 'The Matthew effect and early-career setbacks in research funding: a replication study' (Traag, Brady, Vincent-Lamarre, Bidel, Lopes-Bento, Andersen and Bloch, eLife Reviewed Preprint 109042, posted 13 October 2025) since been published as a version of record, and did any of its numbers change? Specifically the 109,624 applications, the 14 programs and the six funders.",
+    claim:
+      "The lesson reports that the Matthew effect replicated and generalized while the early-career-setback claim did not, cites the reviewed preprint, and tells the learner to treat the citation as provisional.",
+    stakes:
+      "This is the only measured replication in the course and the lesson leans on it to teach that reporting the finding which did NOT survive is part of honest citation. If the numbers moved between preprint and final version, a course that teaches source discipline would be quoting stale figures, which is the exact failure it warns against.",
+    needs: [
+      "The final citation if one exists: journal, volume, pages, DOI and year",
+      "Confirmation of the three figures (109,624 applications, 14 programs, six funders) in that version",
+      "Whether the conclusion about the early-career-setback claim is unchanged",
+    ],
+    where: [
+      "eLife's page for Reviewed Preprint 109042, which links any later version",
+      "The DOI 10.7554/eLife.109042 and its version history",
+      "The corresponding author's institutional page at Leiden CWTS",
+    ],
+  },
+  {
+    key: "credit00-hela-pseudonym-origin",
+    course: "who-gets-named",
+    lesson: "henrietta-lacks-and-the-substituted-name",
+    quote:
+      "Who introduced the false name, and why, is not settled by the record, and this course does not guess.",
+    title: "HeLa: who first published the name Helen Lane, and in what document?",
+    severity: "medium",
+    question:
+      "What is the earliest published appearance of 'Helen Lane' or 'Helen Larson' as the source of the HeLa cell line, and is there any documentary evidence of who introduced the substitution and why?",
+    claim:
+      "The lesson states that for roughly two decades the line was attributed in print to a person who did not exist, that the substitution ended with a 1973 query in Nature, and that who introduced the false name is not settled by the record.",
+    stakes:
+      "The substituted name is the load-bearing example in the archive-silences section, where the course argues that a plausible wrong answer is worse than a blank space because it stops the question being asked. Naming the earliest source would turn a general claim into a dated one. Guessing at a motive would be exactly the assertion the course forbids.",
+    needs: [
+      "The earliest citation using the false name, with journal, year and page",
+      "The 1973 Nature item that recovered the real name, with its full citation",
+      "Any archival evidence about who introduced the pseudonym, or a scholar's statement that none exists",
+    ],
+    where: [
+      "The Johns Hopkins Medicine Henrietta Lacks pages and the university's own archives",
+      "Nature's 1973 volumes, searching for the query that obtained her name",
+      "Hannah Landecker's and Rebecca Skloot's published notes, which cite the early literature directly",
+    ],
+  },
+  {
+    key: "credit00-poro-college-year",
+    course: "who-gets-named",
+    lesson: "the-eminent-name-absorbs-the-story",
+    quote:
+      "Sources differ on whether the Poro complex opened in 1917 or 1918. This course follows the State Historical Society of Missouri and says 1918.",
+    title: "Poro College: did the St. Louis complex open in 1917 or 1918?",
+    severity: "low",
+    question:
+      "What year did Annie Turnbo Malone's Poro College complex at 4300 St. Ferdinand Avenue actually open, according to a contemporaneous source such as a city directory, a building permit, a deed, or the St. Louis Argus?",
+    claim:
+      "The lesson says 1918, following the State Historical Society of Missouri, and tells the reader other sources say 1917.",
+    stakes:
+      "Low on its own, and the lesson already reports the disagreement rather than hiding it. It matters because this course uses the Malone record as its example of documentation asymmetry, so a settled date from a contemporaneous St. Louis source would strengthen exactly the claim the lesson makes about which records survive.",
+    needs: [
+      "A contemporaneous document naming the opening year, with its archive and date",
+      "Whether 1917 refers to the school's founding and 1918 to the building, which would explain both",
+      "The citation for whichever source settles it",
+    ],
+    where: [
+      "The Missouri Historical Society and the St. Louis city building permit records",
+      "The St. Louis Argus, searched around 1917 and 1918",
+      "The City of St. Louis page on the site of Poro College, and the National Register nomination if one exists",
+    ],
+  },
+  {
+    key: "credit00-colvin-death-date",
+    course: "who-gets-named",
+    lesson: "claudette-colvin-and-the-choice-not-to-name",
+    quote:
+      "She died in January 2026, aged eighty six; sources give slightly different days for her death and this course does not pick one.",
+    title: "Claudette Colvin: what is the correct date of death?",
+    severity: "medium",
+    question:
+      "On what date did Claudette Colvin die? Published reports in January 2026 give 13 and 14 January, and at least one account pairs 14 January with a day of the week that does not match it.",
+    claim:
+      "The lesson gives the month and year, states her age as eighty six, and says outright that sources disagree on the day.",
+    stakes:
+      "A date of death is exactly the kind of fact a reader assumes a cited course has right, and Colvin is one of the six people the course is built on. It is also a live example of the course's own rule: report the disagreement rather than picking. Once a family statement or an obituary of record settles it, the lesson should carry the day.",
+    needs: [
+      "The date given by the family, a funeral home notice, or an obituary of record",
+      "The place of death, if the family has stated one",
+      "The citation, so the lesson can attribute the date rather than assert it",
+    ],
+    where: [
+      "A family statement, or the funeral home's published notice",
+      "The New York Times or Associated Press obituary, which usually names its source for the date",
+      "The Equal Justice Initiative and the National Museum of African American History and Culture, both of which published remembrances",
+    ],
+  },
+  {
+    key: "credit00-states-laws-imprint-year",
+    course: "who-gets-named",
+    lesson: "pauli-murray-the-argument-before-the-case",
+    quote:
+      "The imprint reads 1950 and library catalogs record it as 1950, corrected to 1951, and the Pauli Murray Center dates it 1951.",
+    title: "States' Laws on Race and Color: 1950 or 1951?",
+    severity: "low",
+    question:
+      "Was Pauli Murray's States' Laws on Race and Color actually issued in 1950 or 1951? Library catalogs record the imprint as 1950 with a bracketed correction to 1951, and secondary accounts use both years and occasionally 1948.",
+    claim:
+      "The lesson reports the disagreement rather than choosing, naming the imprint, the catalog correction, and the Pauli Murray Center's date.",
+    stakes:
+      "Small in itself, and the lesson is already honest about it. Worth closing because the book is the single most cited thing Murray produced and the course quotes Thurgood Marshall's description of it, so a reader chasing the citation should land on the right year the first time.",
+    needs: [
+      "The actual issue date, from the publisher's records or a contemporaneous review",
+      "Why library catalogs bracket the correction, which usually indicates a known imprint error",
+      "Whether any 1948 edition or precursor compilation exists, which would explain the third date",
+    ],
+    where: [
+      "The HathiTrust and Library of Congress catalog records, including their notes fields",
+      "The American Political Science Review's contemporaneous notice of the book, which carries its own date",
+      "The archives of the Woman's Division of Christian Service of the Methodist Church, the publisher",
+    ],
+  },
+
+  // ── The Editor of The Crisis (DIDWORK-S2) ─────────────────────────────────────────────────────
+  {
+    key: "jrf-birthplace",
+    course: "the-editor-of-the-crisis",
+    lesson: "jrf-the-life-in-one-primary-note",
+    quote:
+      "The note says she was born in Philadelphia. Modern reference works generally place her birth in Camden County, New Jersey, in April 1882, with the family moving to Philadelphia. Both cannot be right, and this course prints neither as settled.",
+    title: "Fauset: was she born in Philadelphia or in Camden County, New Jersey?",
+    severity: "medium",
+    question:
+      "Where was Jessie Redmon Fauset born? Her employer's own staff note in The Crisis for November 1919 says Philadelphia. Most modern reference works say Camden County, New Jersey (variously Fredericksville, Snow Hill, or what is now Lawnside). What does a primary vital or census record show?",
+    claim:
+      "The course quotes the 1919 note verbatim, states the disagreement, prints neither version as settled, and uses the case to teach that proximity is not the same as being in a position to know.",
+    stakes:
+      "Low stakes for the argument and high stakes for the course's credibility, because this is the lesson in which the course tells a learner how to handle exactly this kind of disagreement. If a birth record settles it, the lesson gets a real answer instead of a worked example, and the example can be replaced with one that is genuinely open.",
+    needs: [
+      "A primary record: a birth or baptismal record, or the earliest census entry naming her, with the enumeration district",
+      "What that record gives as the place of birth, quoted",
+      "If New Jersey, which municipality, and what it is called today",
+      "Whether Carolyn Wedin Sylvander's biography cites a primary record for its date and place, and which one",
+    ],
+    where: [
+      "New Jersey State Archives vital records, and Camden County municipal records for Lawnside",
+      "The 1900 United States federal census, which should name her in the household",
+      "Carolyn Wedin Sylvander, Jessie Redmon Fauset, Black American Writer (1981), and its notes",
+    ],
+  },
+  {
+    key: "jrf-acquisitions-beyond-hughes",
+    course: "the-editor-of-the-crisis",
+    lesson: "jrf-acquired-versus-published",
+    quote:
+      "Countee Cullen, Jean Toomer, Anne Spencer, Georgia Douglas Johnson, Arna Bontemps and Gwendolyn Bennett all appear in The Crisis while she ran the literary pages ... Whether she solicited a given poem, or Du Bois handed it to her, or it arrived unsolicited and she said yes, is a question the contents page cannot answer.",
+    title: "Fauset: is there correspondence documenting any acquisition besides Hughes?",
+    severity: "high",
+    question:
+      "Does surviving correspondence document Fauset soliciting, accepting or editing a specific piece by any writer other than Langston Hughes? Name the writer, the piece, the date, and the repository and collection where the letter sits.",
+    claim:
+      "The course teaches Hughes as the one fully documented acquisition, on his own account in The Big Sea, and states plainly that for every other name the record shows appearance during her tenure and not who chose the piece.",
+    stakes:
+      "This is the course's central evidentiary claim and the thing that separates it from the secondary literature, which conflates appeared with acquired. If letters exist in the Du Bois papers at Massachusetts or in the Cullen, Toomer or Bennett collections, the course is understating her documented record and should be corrected. If they do not, the refusal is the finding and should be stated even more firmly.",
+    needs: [
+      "For each documented case: the writer, the specific piece, the date, and the archive, collection and box or folder",
+      "A quoted sentence from the letter showing the editorial act, not merely that the two corresponded",
+      "Whether any marked typescript survives showing her revisions to a submitted piece",
+      "Whether the W. E. B. Du Bois Papers include Crisis editorial correspondence distinguishing her decisions from his",
+    ],
+    where: [
+      "W. E. B. Du Bois Papers, Special Collections and University Archives, University of Massachusetts Amherst (digitised finding aid and images)",
+      "Countee Cullen Papers, Amistad Research Center; Jean Toomer Papers, Beinecke Library, Yale",
+      "Gwendolyn Bennett Papers, Schomburg Center; Langston Hughes Papers, Beinecke Library",
+    ],
+  },
+  {
+    key: "jrf-civic-club-what-she-said",
+    course: "the-editor-of-the-crisis",
+    lesson: "jrf-the-civic-club-dinner",
+    quote:
+      "This is a fact about the notice and not proof that she was silent, and the distinction matters: a news column lists who was notable, not who spoke.",
+    title: "Civic Club dinner, March 1924: did Fauset speak, and what is the source?",
+    severity: "medium",
+    question:
+      "Did Jessie Fauset address the Civic Club dinner held in her honour on or about 21 March 1924, and what is the primary evidence? Contemporary press accounts, the Writers' Guild's own record, or a participant's letter would all count. Separately: is the widely repeated account that Alain Locke as master of ceremonies marginalised her at her own event traceable to a specific document?",
+    claim:
+      "The course quotes the May 1924 Crisis notice, observes that it names six male speakers and does not list the honoree among them, and explicitly refuses the stronger claim that she was silenced. It attributes no motive to Locke.",
+    stakes:
+      "The dinner is the course's central illustration and the point where an author is most tempted to overreach. David Levering Lewis's When Harlem Was in Vogue is the standard account and is often cited for a 1933 Fauset letter to Locke about the evening. This pass could not read that letter, so the course teaches only what the contemporaneous notice supports. If the letter is real and quotable, the lesson can say considerably more and should. If it is not, the refusal is correct and worth stating.",
+    needs: [
+      "Any contemporaneous account naming who spoke, from Opportunity, the New York Age, the Amsterdam News or the Survey",
+      "The 1933 Fauset letter to Locke, if it exists: its repository, its date, and the passage about the dinner quoted verbatim",
+      "The page reference in Lewis (1981) for the account of Locke's handling of the evening, and the source Lewis himself cites",
+      "Whether the Writers' Guild left any minutes or programme for the evening",
+    ],
+    where: [
+      "Alain Locke Papers, Moorland-Spingarn Research Center, Howard University",
+      "Opportunity for April and May 1924, and the Black weekly press for late March 1924",
+      "David Levering Lewis, When Harlem Was in Vogue (1981), and its notes",
+    ],
+  },
+  {
+    key: "jrf-du-bois-editorial-control",
+    course: "the-editor-of-the-crisis",
+    lesson: "jrf-whose-magazine-was-it",
+    quote:
+      "Nobody has produced a document showing Du Bois overruling her on a specific poem, and nobody has produced one showing her overruling him.",
+    title: "The Crisis: is there a document showing who decided a specific literary acceptance?",
+    severity: "medium",
+    question:
+      "Does any surviving document show W. E. B. Du Bois and Jessie Fauset disagreeing about, or separately deciding, a specific submission to The Crisis between October 1919 and April 1926? An office memorandum, a marked submission, or a letter to a contributor would settle it in either direction.",
+    claim:
+      "The course states that her authority over the literary pages is documented in title, in a legal filing and in her employer's own farewell, and that it was exercised inside an editorial line another person set. It calls the question serious, documented on both sides, and unresolved.",
+    stakes:
+      "This is the strongest objection to the course's thesis and the course answers it by holding it open. Holding a question open is only honest if nobody has in fact closed it. If a document exists in either direction and the course did not find it, the lesson is presenting a settled matter as contested, which is the mirror of the error the catalogue's rules exist to prevent.",
+    needs: [
+      "Any document naming a specific piece and who decided it, with repository and collection",
+      "Whether Crisis office files for 1919 to 1926 survive anywhere as a body, or only as scattered correspondence",
+      "Whether any scholar has published on the division of editorial labour at The Crisis in these years, and what they concluded",
+      "Fauset's own account, if she left one, of how much latitude the post carried",
+    ],
+    where: [
+      "W. E. B. Du Bois Papers, University of Massachusetts Amherst, correspondence 1919-1926",
+      "NAACP Records, Manuscript Division, Library of Congress, for the magazine's administrative files",
+      "Carolyn Wedin Sylvander (1981) and Cheryl A. Wall, Women of the Harlem Renaissance (1995)",
+    ],
+  },
+  {
+    key: "jrf-chinaberry-tree-foreword",
+    course: "the-editor-of-the-crisis",
+    lesson: "jrf-four-novels",
+    quote:
+      "Section 13 lists the four novels and their publishers and says nothing about the circumstances in which any of them was accepted.",
+    title: "The Chinaberry Tree: is the story about the publisher's reader's report documented?",
+    severity: "low",
+    question:
+      "Is there a documented source for the widely repeated account that Frederick A. Stokes required a foreword by the white novelist Zona Gale for The Chinaberry Tree (1931), on the ground that a reader had objected that no such Black people existed? The report is often quoted as saying there \"ain't no such colored people as these\". What is the primary source, and is the quotation accurate?",
+    claim:
+      "The course says nothing about it. Section 13 gives the four novels, their publishers and their dates, and Section 14 documents the reception problem from a 1925 Chicago Tribune objection reported in The Crisis rather than from this anecdote.",
+    stakes:
+      "If documented, this is the single sharpest illustration in the whole subject of the mechanism Fauset herself described in the 1926 Crisis symposium, that publishers refused the variant on commercial grounds. It would strengthen Section 14 considerably. It is omitted for now precisely because the quotation circulates without a primary attribution, and a fabricated-sounding quotation in a course about quotation drift would be self-refuting.",
+    needs: [
+      "The primary source for the reader's report or the publisher's requirement, quoted, with a repository",
+      "Whether Zona Gale's foreword itself, in the 1931 first edition, says anything about why it was written",
+      "Whether Fauset described the episode in correspondence or in an interview, and where",
+      "Confirmation of the exact wording, since the version in circulation may be a paraphrase",
+    ],
+    where: [
+      "The 1931 Frederick A. Stokes first edition of The Chinaberry Tree, read for Gale's foreword",
+      "Zona Gale Papers, Wisconsin Historical Society",
+      "Carolyn Wedin Sylvander (1981), and Deborah E. McDowell's introductions to the Beacon Press reissues",
+    ],
+  },
+  // ── Shirley Graham Wrote the Opera First (DIDWORK-S3) ─────────────────────────────────────────
+  // Nine hedges, all of them written into lessons rather than left implicit. The pattern worth
+  // noticing: this subject shaved years off her own age in print, so the ordinary trick of
+  // preferring the earliest source fails on her, and several of these can only be closed by a
+  // registry, a transcript or a page image.
+  {
+    key: "sg-tomtom-broadcast",
+    course: "shirley-graham",
+    lesson: "sg-tom-tom",
+    quote:
+      "The NBC attribution traces to weak sources, and her radio play Track Thirteen really was an NBC broadcast in 1940, which is an easy thing to slide backwards onto the opera. Unverified, so not taught.",
+    title: "Tom-Tom: was the 1932 premiere broadcast on radio at all?",
+    severity: "medium",
+    question:
+      "Was any performance of Shirley Graham's opera Tom-Tom, at Cleveland Municipal Stadium on 30 June 1932 or later that season, carried on radio? If so, by which station or network, on what date, and what is the evidence?",
+    claim:
+      "Lesson 3 states that TIME's contemporaneous account mentions no broadcast, names the NBC claim as unverified, and suggests it migrated from her 1940 radio play Track Thirteen, which genuinely was an NBC broadcast. The course teaches the absence of evidence rather than a denial.",
+    stakes:
+      "The broadcast is one of the four premiere details the course publicly refuses to print, and lesson 3 is the course's worked example of how a retelling accretes false detail. If a broadcast IS documented, the course is teaching a real fact as a myth, which is the worst possible failure for a lesson about verification. If it is not, the refusal should stay and the reasoning is confirmed.",
+    needs: [
+      "A contemporaneous listing, log or newspaper radio page for late June or early July 1932 in Cleveland",
+      "The station's call letters, and whether any relay was local, regional or national",
+      "If nothing exists, a statement of where you looked, so the negative is recorded rather than reasserted",
+    ],
+    where: [
+      "Cleveland Plain Dealer radio listings for 29 June to 10 July 1932, on microfilm or in a newspaper database",
+      "The NBC History Files at the Library of Congress and the NBC collection at the Wisconsin Historical Society",
+      "The Encyclopedia of Cleveland History's Stadium Opera entry and whatever it cites",
+    ],
+  },
+  {
+    key: "sg-tomtom-second-night",
+    course: "shirley-graham",
+    lesson: "sg-tom-tom",
+    quote:
+      "The combined figure above twenty five thousand is repeated everywhere, but the contemporary account puts about fifteen thousand at the premiere itself. The split is not settled and this course does not print it.",
+    title: "Tom-Tom: how many performances, on what dates, and what were the attendances?",
+    severity: "medium",
+    question:
+      "How many performances did Tom-Tom receive in the 1932 Stadium Opera season, on which dates, and what attendance figure is recorded for each? The modern account gives 10,000 at the first and 15,000 at the second; TIME on 11 July 1932 puts nearly 15,000 at the performance it calls the first.",
+    claim:
+      "Lesson 3 gives 30 June 1932 as the premiere and TIME's roughly fifteen thousand for that night, states that the modern 10,000 / 15,000 split is incompatible with the contemporaneous report, and prints neither the split nor a combined total.",
+    stakes:
+      "The 'more than 25,000' figure is the single most repeated fact about this opera and appears on the Harvard Gazette, Oberlin's own site and the Schlesinger Library's pages. If it is right, the course is being over cautious about a well documented number. If the dates or the split are wrong, a great many institutional pages are propagating one error, which is worth saying in print.",
+    needs: [
+      "The exact dates of every 1932 Tom-Tom performance",
+      "A contemporaneous attendance figure for each, with the source that reported it",
+      "Whether the 10,000 figure has any 1932 source at all, or first appears in a later retelling",
+    ],
+    where: [
+      "Cleveland Plain Dealer and Cleveland Press for 29 June to 11 July 1932",
+      "The Cleveland Public Library's Cleveland Digital Public Library and its Stadium Opera holdings",
+      "Sarah Schmalenberger's 2006 Black Music Research Journal article, which worked the score and the season",
+    ],
+  },
+  {
+    key: "sg-sorbonne-record",
+    course: "shirley-graham",
+    lesson: "sg-training",
+    quote:
+      "Hold that one loosely: no account names a registration record, and the caution is earned by the next lesson.",
+    title: "Did Shirley Graham actually enrol at the Sorbonne?",
+    severity: "medium",
+    question:
+      "Is there any registration record, transcript, certificate or contemporaneous document placing Shirley Graham as a student at the Sorbonne, or at any named Paris institution, between December 1926 and about 1930? Or does the claim rest entirely on her own later accounts?",
+    claim:
+      "Lesson 2 says she was in France from December 1926 and reported studying music composition there, usually given as the Sorbonne, and states that no account names a registration record, so it is a repeated self report rather than a documented fact.",
+    stakes:
+      "Every biography of her carries the Sorbonne. If it is documented, the course is casting doubt on a real credential, which is unfair to a woman whose credentials were already discounted in her lifetime. If it is not, the hedge is correct and worth keeping, because this is a subject who demonstrably adjusted her own record and the course says so elsewhere.",
+    needs: [
+      "A registration or inscription record naming her, with the year and the faculty",
+      "Or an explicit statement from a scholar who looked and found nothing",
+      "The name of the actual institution, since the Sorbonne of that period covered several distinct faculties and music was not obviously among them",
+    ],
+    where: [
+      "Her papers at the Schlesinger Library, Radcliffe Institute (MC 476)",
+      "Gerald Horne's Race Woman and its notes on the Paris years",
+      "Archives nationales and the Sorbonne's own registers for the later 1920s",
+    ],
+  },
+  {
+    key: "sg-messner-award-year",
+    course: "shirley-graham",
+    lesson: "sg-the-prize",
+    quote:
+      "Neither the book nor Horne dates the judging, and it was a manuscript competition, so a 1946 decision with a 1947 publication is plausible and unproven.",
+    title: "What year was the Julian Messner Award announced?",
+    severity: "low",
+    question:
+      "In what year was the Julian Messner Award for the best book combating intolerance in America announced to Shirley Graham for the manuscript published in 1947 as There Was Once a Slave?",
+    claim:
+      "Lesson 10 states the award, its value, its judges and the size of the competition from the book's own copyright page, and deliberately prints NO year, saying that the honest form is 'won the Julian Messner Award; published 1947'.",
+    stakes:
+      "Low, but the whole lesson is about getting prize records right, so a course that then leaves a date blank should be able to say either what the date is or that it was looked for and not found. Some sources give 1946, which would be consistent with a manuscript competition, and no source seen so far cites anything for it.",
+    needs: [
+      "A trade press announcement with a date, most likely in Publishers Weekly",
+      "Or the terms of the competition, which would say whether the award was announced on submission or on publication",
+    ],
+    where: [
+      "Publishers Weekly for 1946 and 1947",
+      "New York Times book pages for the announcement of the award",
+      "The Julian Messner imprint records, if any survive with its corporate successors",
+    ],
+  },
+  {
+    key: "sg-marriage-date",
+    course: "shirley-graham",
+    lesson: "sg-february-1951",
+    quote:
+      "First, a variant wedding date of 14 February circulates. It comes from a reference entry that also gives her birth year as 1907 and her age at death as 69, both demonstrably wrong, so this course prints 27 February and files a source check.",
+    title: "Was the Du Bois wedding on 14 or 27 February 1951?",
+    severity: "medium",
+    question:
+      "On what date did W. E. B. Du Bois and Shirley Graham marry? A New York City or New York State marriage record would settle it outright.",
+    claim:
+      "Lesson 15 prints 27 February 1951, sourced to an item recording the ceremony held with the W. E. B. Du Bois papers at UMass Amherst, and rejects the 14 February variant because its source also gets her birth year and her age at death wrong.",
+    stakes:
+      "The whole lesson is built on a dated sequence: indictment 9 February, arraignment 16 February, wedding, trial 18 November. The argument that they did NOT marry on the eve of the trial survives either date, but a course that teaches chronological precision cannot itself be loose about the one date at its centre.",
+    needs: [
+      "A New York marriage licence or certificate number and date",
+      "Or a contemporaneous newspaper notice of the ceremony",
+      "Confirmation of what the UMass item actually is: a certificate, a photograph, a letter, or a later note",
+    ],
+    where: [
+      "New York City Municipal Archives marriage index for 1951",
+      "The W. E. B. Du Bois papers (MS 312) at UMass Amherst, and the Credo digital repository",
+      "New York Times and New York Amsterdam News for late February and early March 1951",
+    ],
+  },
+  {
+    key: "sg-ghana-citizenship-date",
+    course: "shirley-graham",
+    lesson: "sg-citizenship-coup",
+    quote:
+      "So this course prints no settled date and files a source check against the FBI file and the State Department record.",
+    title: "When did Shirley Graham Du Bois change her citizenship, and by which act?",
+    severity: "high",
+    question:
+      "When did Shirley Graham Du Bois acquire Ghanaian citizenship, and separately, when and by what act did she cease to be a United States citizen? One account gives 1961; another cites a Justice Department memorandum of 10 October 1963 recording that the American embassy at Accra reported on 4 October 1963 that she had renounced under section 349(a)(6) of the Immigration and Nationality Act of 1952.",
+    claim:
+      "Lesson 22 prints NO date. It gives both candidate accounts, notes that the 1961 version coincides with her arrival year and that the more specific 1963 version comes from a journalist writing in an article that misstates her death year, and files this check instead of choosing.",
+    stakes:
+      "The highest severity in this course. 'In 1961 both renounced US citizenship and became Ghanaian citizens' is one of the most repeated sentences about this couple and the course calls it wrong in both halves. If the 1963 renunciation is confirmed, the course should print it and say so plainly. If 1961 turns out to be right after all, a whole lesson's argument about contaminating dates needs rewriting.",
+    needs: [
+      "A Certificate of Loss of Nationality, or the State Department record of one, with a date",
+      "The Ghanaian certificate of citizenship or the Ministry of the Interior letter for HER, as exists for him dated 16 February 1963",
+      "The Justice Department memorandum of 10 October 1963 itself, rather than a report of it",
+    ],
+    where: [
+      "Her FBI file, obtainable under the Freedom of Information Act",
+      "State Department records at the National Archives, Record Group 59, on loss of nationality",
+      "Her papers at the Schlesinger Library and the Du Bois papers at UMass Amherst",
+    ],
+  },
+  {
+    key: "sg-ghana-local-content",
+    course: "shirley-graham",
+    lesson: "sg-ghana-television",
+    quote:
+      "The share of locally made programming is reported at eighty five per cent in one place and seventy five per cent in another. Both figures circulate, they cannot both be right, and a source check is filed rather than a number chosen.",
+    title: "What share of Ghana Television's output was locally produced under Graham Du Bois?",
+    severity: "low",
+    question:
+      "What proportion of Ghana Television's programming was produced in Ghana during Shirley Graham Du Bois's directorship, from 31 July 1965 to February 1966, and what is the primary source for the figure?",
+    claim:
+      "Lesson 21 states that programming was produced in Ghana to an unusually high degree and prints no percentage, naming the conflict between the 85 and 75 per cent figures in circulation.",
+    stakes:
+      "Low on its own, but the figure is the main quantitative claim about what she actually achieved in the job, and it is the sort of number that gets repeated forever once a course prints it. A wrong one would also undercut a lesson that spends its length correcting other people's numbers.",
+    needs: [
+      "A primary figure from the broadcaster's own reporting or from a Ghanaian government publication of 1965 or 1966",
+      "The definition being measured: hours, titles, or schedule share, since the three give different answers",
+    ],
+    where: [
+      "Ghana Broadcasting Corporation archives in Accra",
+      "Jennifer Blaylock's work on Ghanaian television and its citations",
+      "Contemporary Ghanaian press for 1965 and 1966",
+    ],
+  },
+  {
+    key: "sg-mccarthy-subpoena",
+    course: "shirley-graham",
+    lesson: "sg-the-file",
+    quote:
+      "Whether she appeared before McCarthy's subcommittee on 15 July 1953 is unsettled, and a source check is filed against the Senate's own executive session transcripts, unsealed in 2003.",
+    title: "Did Shirley Graham appear before McCarthy's subcommittee on 15 July 1953?",
+    severity: "medium",
+    question:
+      "Did Shirley Graham appear before the Senate Permanent Subcommittee on Investigations on 15 July 1953, as the subpoena of 25 June 1953 required? If she did, what did she say, and did she invoke any privilege?",
+    claim:
+      "Lesson 17 documents the subpoena and its date, corrects the widespread claim that she testified before HUAC by pointing out that McCarthy chaired a SENATE body, notes she was named on a 1948 HUAC list of fronts, and says no evidence has been located that she testified before HUAC at all.",
+    stakes:
+      "The HUAC claim is repeated almost everywhere, and this lesson's correction of it is only worth making if the course can also say what DID happen. Leaving the appearance unresolved is honest and incomplete, and the transcripts to settle it were unsealed in 2003, so this is closeable by anyone willing to read them.",
+    needs: [
+      "The executive session transcript for 15 July 1953, or confirmation that no session took place that day",
+      "Whether she appeared at all, and under what name, since she was then Shirley Graham Du Bois",
+      "Any contemporaneous press report of an appearance",
+    ],
+    where: [
+      "Executive Sessions of the Senate Permanent Subcommittee on Investigations, 83rd Congress, published by the Government Printing Office in 2003",
+      "Her FBI file, which is likely to record any appearance",
+      "New York Times and Washington Post for mid July 1953",
+    ],
+  },
+  {
+    key: "sg-death-date",
+    course: "shirley-graham",
+    lesson: "sg-ledger",
+    quote:
+      "Horne gives 1 April, which may be the memorial rather than the death, so a check is filed.",
+    title: "Did Shirley Graham Du Bois die on 27 March or 1 April 1977?",
+    severity: "low",
+    question:
+      "On what date did Shirley Graham Du Bois die in Beijing, and what is the 1 April date that Horne gives? Is it the memorial service, the announcement, or a genuinely different account of the death?",
+    claim:
+      "Lesson 23 prints 27 March 1977, breast cancer, aged 80, and says Horne gives 1 April, which may be the memorial rather than the death.",
+    stakes:
+      "Low in isolation, but this course makes a point of the fact that a syndicated reference entry gets her age at death wrong, and a course that says so should be able to state the date without a hedge of its own. It is also a question with a documentary answer somewhere.",
+    needs: [
+      "A death certificate or a Chinese official record",
+      "The date of the Babaoshan memorial service, which would explain the discrepancy if it is 1 April",
+      "The date and wording of the New York Times obituary",
+    ],
+    where: [
+      "New York Times and Xinhua reports for late March and early April 1977",
+      "Gerald Horne's Race Woman and its source for 1 April",
+      "Her papers at the Schlesinger Library, and David Graham Du Bois's own papers",
+    ],
+  },
+  {
+    key: "sg-etta-bell-marriage",
+    course: "shirley-graham",
+    lesson: "sg-training",
+    quote:
+      "Those two facts cannot both stand beside an 1896 birth. A source check is filed.",
+    title: "Etta Bell married David A. Graham in 1905, so who was Shirley Graham's mother?",
+    severity: "high",
+    question:
+      "The 1916 Centennial Encyclopaedia of the A.M.E. Church states that the Reverend David A. Graham married Elizabeth Etta Bell in St. Paul, Minnesota, in November 1905. The Schlesinger Library names Elizabeth Etta (Bell) Graham as Shirley Graham's mother, and dates her birth to approximately November 1896. Which of those is wrong?",
+    claim:
+      "Lesson 2 prints 11 November 1896 in Indianapolis, names the contradiction openly, says no scholar appears to have addressed it, and files this check rather than choosing a resolution.",
+    stakes:
+      "High, and it is the strongest existing reason to doubt the 1896 date, which this course prints as fact and builds several arguments on: the nineteen year gap to the marriage, her age of 35 at the Tom-Tom premiere against TIME's 25, and her age at every later milestone. If the 1905 marriage is right and Etta Bell is her mother, the 1907 birth year that a syndicated reference entry gives becomes much harder to dismiss, and a section of this course needs rewriting.",
+    needs: [
+      "An Indiana birth record for Lola Shirley Graham, or the 1900 census image for the Graham household",
+      "A Minnesota marriage record for David A. Graham and Elizabeth Etta Bell, with its actual date",
+      "Whether the 1916 encyclopaedia's 1905 is a typographical error for 1895, which would resolve everything",
+    ],
+    where: [
+      "Indiana State Department of Health vital records, and Indianapolis city directories for 1896 to 1900",
+      "Minnesota Historical Society marriage records for Ramsey County",
+      "The 1900 United States Census, searching the Graham household wherever David A. Graham was then posted",
+    ],
+  },
+  {
+    key: "sg-horne-quotations",
+    course: "shirley-graham",
+    lesson: "sg-fictionalized",
+    quote:
+      "Her biographies were, in Horne's words, at times criticized sharply for their inclusion of imagined dialogue, and he lists fictionalized dialogue and shimmering prose among her trademarks (Horne, 2000).",
+    title: "Confirm the Race Woman quotations and page numbers against a print copy",
+    severity: "medium",
+    question:
+      "Do the phrases this course attributes to Gerald Horne's Race Woman appear as quoted, and on which pages? Specifically: 'criticized sharply for their inclusion of imagined dialogue'; 'fictionalized dialogue and shimmering prose'; the sentence connecting her invented dialogue to her having created and unmade details of her own life; 'a bit unfair'; and the Cayton and Redding review citations.",
+    claim:
+      "Section 3 quotes and closely paraphrases Race Woman throughout, and cites it as Horne, G. (2000), New York University Press, WITHOUT page numbers, because the wording was read from a digitized copy whose pagination this pass could not confirm.",
+    stakes:
+      "This is the section where the course judges its own subject's documentation standards, so it is the one place where a loose citation would be self refuting. A missing page number is a lesser fault than a wrong one, which is why none are printed, but a cited quotation in a published course should carry a page a reader can turn to. Also confirm the edition year: most sources give 2000, at least one gives 2002.",
+    needs: [
+      "Page numbers for each quoted phrase, from a print or properly paginated copy",
+      "The correct publication year and edition of Race Woman",
+      "The full citations for the Horace Cayton (Chicago Sun, 13 April 1947) and Saunders Redding (Philadelphia Afro-American, 31 August 1946) reviews as Horne gives them",
+    ],
+    where: [
+      "A library copy of Horne, G., Race Woman: The Lives of Shirley Graham Du Bois, New York University Press",
+      "The NYU Press catalogue record for the edition and year",
+      "The reviews themselves, in the Chicago Sun and Philadelphia Afro-American for those dates",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {

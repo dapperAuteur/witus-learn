@@ -10,6 +10,8 @@ export interface TriageReport {
   email: string | null;
   status: string;
   createdAt: string;
+  /** Why the row left `new`, recorded by `pnpm reports:triage --note` (migration 0058). */
+  resolution: string | null;
 }
 
 const STATUSES = ["new", "triaged", "closed"] as const;
@@ -151,6 +153,27 @@ export function ReportsTriage({ reports }: { reports: TriageReport[] }) {
                 {r.email ? <span className="break-all">· {r.email}</span> : null}
               </div>
               <p className="whitespace-pre-wrap text-sm">{r.message}</p>
+              {/* The recorded reason, which is the whole point of storing one: a row that left
+                  `new` with no reason stops anyone looking again and says nothing about whether it
+                  was fixed, already shipped, declined or duplicated. Showing it here is what makes
+                  `pnpm reports:triage --note` visible to a human instead of write-only, and a row
+                  off `new` with nothing recorded now reads as the gap it is. */}
+              {r.status !== "new" ? (
+                <p className="mt-2 border-l-2 border-neutral-300 pl-3 text-xs text-neutral-600 dark:border-neutral-700 dark:text-neutral-400">
+                  {r.resolution ? (
+                    <>
+                      <span className="font-medium">Why: </span>
+                      <span className="whitespace-pre-wrap">{r.resolution}</span>
+                    </>
+                  ) : (
+                    <span className="italic">
+                      No reason recorded. Close it again with{" "}
+                      <code className="not-italic">pnpm reports:triage {r.id.slice(0, 8)} --status …</code>{" "}
+                      so the next person knows why.
+                    </span>
+                  )}
+                </p>
+              ) : null}
               <div className="mt-2 flex gap-1 text-xs">
                 {STATUSES.map((s) => (
                   <button
