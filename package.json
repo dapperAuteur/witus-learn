@@ -19,6 +19,7 @@
     "check:quiz-balance": "tsx scripts/check-quiz-balance.ts",
     "check:longest-option": "tsx scripts/check-longest-option.ts",
     "check:page-reachability": "tsx scripts/check-page-reachability.ts",
+    "verify:observability": "tsx scripts/verify-observability.ts",
     "typecheck": "next typegen && tsc --noEmit",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "tsx --env-file=.env.local scripts/migrate.ts",

@@ -100,6 +100,53 @@ Error tracking (Sentry SDK, inert until `SENTRY_DSN` is set, every event through
 `beforeSend` scrubber) is described under [Status](#status) above and in the
 [Health check](#health-check-apihealth) section. The rest of the observability story:
 
+### Verifying a deployment can actually report its errors
+
+```bash
+pnpm verify:observability https://learn.witus.online          # one target
+pnpm verify:observability https://learn.witus.online https://bettervice.club
+pnpm verify:observability --env-file ../other-app/.env.local https://other-app.example
+```
+
+**Use it after a deploy, after any header or CSP change, and any time the error dashboard has been
+suspiciously quiet.** Wiring browser error reporting into an app has three failure modes that look
+identical from the outside, and two of them are invisible from the inside as well: the browser DSN
+never reached the build; the DSN is there but the site's CSP forbids the ingest origin, so the
+browser drops every report before it leaves the page while the *server* side keeps reporting
+normally and the dashboard looks healthy; or the app cannot reach its database. Against a deployed
+URL the script asserts four things and exits non-zero if any of them is not established:
+
+| Check | What a pass means |
+| --- | --- |
+| `dsn-in-client-bundle` | The exact configured DSN string is present in the served HTML or in one of that page's own JS chunks. This is the only direct evidence the browser SDK will initialise at all. |
+| `csp-allows-ingest` | Every enforced `Content-Security-Policy` on the response permits the ingest envelope endpoint, following the spec's `connect-src` then `default-src` fallback. Report-only policies are printed but never counted either way, since they cannot block. |
+| `ingest-host-resolves` | The DSN's hostname resolves in DNS. Catches a mistyped region or a stale vendor domain, which the other two checks cannot see because they both derive from that same string. |
+| `health-endpoint` | `/api/health` returns 200, with JSON that **affirms** health. |
+
+Three properties are load-bearing, and none of them should be "simplified" later:
+
+- **"Could not determine" reports as NOT verified.** Every check answers pass / fail / unknown and
+  only a pass counts. A 200 that returns HTML, or JSON with no recognised health field, is `unknown`
+  and fails the run. A harness that reports green when it could not actually look is worse than no
+  harness, and this is the failure class that produced false-healthy signals three times.
+- **No DSN is hardcoded.** It is read from `--dsn`, `--env-file`, the environment, or a `.env*` file
+  in the working directory, and **the source is printed on every run**. There is deliberately no
+  fallback value: with no DSN, the DSN and CSP checks report `unknown` and the run fails. The first
+  live run showed why this matters, since this deployment's DSN points at Better Stack's
+  Sentry-compatible ingest rather than at `sentry.io`. The ingest origin is always *derived* from
+  whichever DSN is found.
+- **Read-only.** GET requests only, only against the URL you name, and it never sends a test event,
+  so running it costs no error quota and pollutes no project.
+
+**Not in `pnpm lint`, on purpose:** it makes network calls, and a guard that fails on bad wifi is a
+guard people learn to bypass. It is a post-deploy tool, not a commit gate. It also cannot prove that
+events are *accepted* (only that they can be sent), that a route-specific chunk it never fetched
+carries the init (pass `--page <route>` to widen), or that the project behind the DSN is enabled and
+under quota. Other flags: `--health-path`, `--max-chunks`, `--timeout`, `--show-dsn`, `--json`.
+Its judgment lives in pure functions in
+[scripts/lib/observability-checks.ts](scripts/lib/observability-checks.ts), pinned by
+[tests/verify-observability.test.ts](tests/verify-observability.test.ts).
+
 ### Distributed tracing
 
 Traces go to **Honeycomb** over OTLP via `@vercel/otel` ([otel.config.ts](otel.config.ts), loaded
@@ -451,6 +498,10 @@ pnpm check:series-codes    # course codes (STORY-00) are legal and do not lie ab
                            #   every code that exists was written under the rule.
 pnpm check:page-reachability  # ratchet. No public page is a menu orphan or rides the default OG card.
 ```
+
+One check is deliberately **outside** that list: `pnpm verify:observability <url>` runs against a
+DEPLOYED url rather than the working tree, so it makes network calls and must never gate a commit.
+See [Verifying a deployment can actually report its errors](#verifying-a-deployment-can-actually-report-its-errors).
 
 The two quiz-integrity guards and the assessment-fit guard all cover the **deterministic** half of
 their question. Their semantic halves are advisory buttons on a course's instructor tools,
