@@ -4110,6 +4110,13 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // papers and the case reporters from Murray through Brown into one account of a single
       // forty-five-year campaign.
       "naacp-learned-to-win",
+      // She Did the Work, wave 2. Integrates archival finding aids (Schlesinger MC 476, the UMass
+      // Du Bois papers), contemporaneous press (TIME 1932, the Indianapolis Recorder and Times
+      // 1940-41), a denominational reference work (the 1916 A.M.E. Centennial Encyclopaedia), the
+      // Encyclopedia of Cleveland History, a Supreme Court opinion and the scholarly literature
+      // (Horne, Schmalenberger, Caplan, Blaylock, Dossett, Perkins) into one chronological account
+      // of a composer's whole working life.
+      "shirley-graham",
     ],
     lessons: [
       "2 · How we know: reading a record the enslavers wrote",
@@ -4219,6 +4226,18 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // secondary accounts disagree about what the figure counts, and withholds the Dyer bill's
       // House tally because published accounts give 230 and 231, saying so both times.
       "naacp-learned-to-win",
+      // She Did the Work, wave 2. This claim is the spine of the course rather than one section of
+      // it. Lesson 3 downgrades four widely repeated details about the 1932 opera premiere against
+      // a contemporaneous report and names the fifth, the bare "first opera by a Black woman"
+      // superlative, as an unprovable global-absence claim, restated at its narrowest in lesson 23.
+      // Lesson 6 corrects a published local article's address for the Indianapolis YWCA. Lesson 10
+      // corrects a prize record against the awarding body's own list. Lesson 11 holds the
+      // invented-dialogue charge against her biographies as genuinely CONTESTED, with the named
+      // 1946-47 reviewers on one side, Horne's own defence on the other, Aptheker's defence with
+      // its interest declared, and the admission that no scholar names a worked example. Lesson 13
+      // kills an attributed motive by chronology; lesson 22 prints no citizenship date because two
+      // accounts conflict. Eleven unresolved questions are filed in src/lib/research-checks.ts.
+      "shirley-graham",
     ],
     lessons: [
       "3 · The test: four questions before you draw an edge",

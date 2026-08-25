@@ -1925,8 +1925,13 @@ async function main() {
     // (no contemporaneous evidence; Track Thirteen in 1940 really was NBC). The invented-dialogue
     // charge against her biographies is taught as CONTESTED, with Cayton and Redding on one side and
     // Horne's own defence on the other, plus the honest admission that no published scholar names a
-    // specific invented line. Nine unresolved questions are filed in src/lib/research-checks.ts.
-    // NO migration - pnpm seed:courses.
+    // specific invented line. BAM's Indianapolis lead produced two VERIFIED ties (her father
+    // pastored Bethel A.M.E. from ~autumn 1896 to 1900; she was director of adult activities at the
+    // PHYLLIS Wheatley YWCA, 653 N. West St, a few blocks OFF Indiana Avenue, 1940 to late 1941/42,
+    // with contemporaneous press credits at Crispus Attucks and for H.M.S. Pinafore) and one
+    // REFUSED (the swimming-pool editorial at 13 is Colorado Springs, and the Indianapolis version
+    // is chronologically impossible). Eleven unresolved questions are filed in
+    // src/lib/research-checks.ts. NO migration - pnpm seed:courses.
     {
       slug: "shirley-graham",
       course: SHIRLEY_GRAHAM_COURSE,
