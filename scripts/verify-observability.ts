@@ -23,8 +23,8 @@ import {
  *   pnpm verify:observability https://learn.witus.online https://bettervice.club
  *   pnpm verify:observability --env-file ../flashlearn-ai/.env.local https://flashlearn.ai
  *
- * WHY IT EXISTS. Wiring Sentry into an app has three failure modes that all look identical from the
- * outside, and two of them are invisible from the inside as well:
+ * WHY IT EXISTS. Wiring browser error reporting into an app has three failure modes that look
+ * identical from the outside, and two of them are invisible from the inside as well:
  *
  *   1. The browser DSN never made it into the build (the env var is missing in the deploy
  *      environment, or is set for Preview but not Production). The SDK is inert, the app looks fine,
@@ -45,15 +45,22 @@ import {
  * really look would be worse than no harness. Whenever this script cannot determine something, it
  * says so, names the reason, and exits non-zero.
  *
- * NOTHING IS GUESSED THAT SOMEONE ELSE OWNS. The DSN belongs to Sentry, and the ingest origin is
- * derived from it, so both are read from configuration (a `--dsn` flag, the environment, or a
- * `.env*` file) and the source is printed on every run. There is NO built-in fallback DSN: a
- * hardcoded one would let this script verify a fiction, which is the exact failure the
- * authoritative-values rule in CLAUDE.md exists to prevent. With no DSN available, the DSN and CSP
- * checks report "unknown" and the run fails.
+ * NOTHING IS GUESSED THAT SOMEONE ELSE OWNS. The DSN is owned by the error-reporting vendor, and
+ * the ingest origin is DERIVED from whichever DSN is actually found (it is the DSN's own origin),
+ * never assumed from a vendor name. Both are read from configuration (a `--dsn` flag, the
+ * environment, or a `.env*` file) and the source is printed on every run. There is NO built-in
+ * fallback DSN: a hardcoded one would let this script verify a fiction, which is the exact failure
+ * the authoritative-values rule in CLAUDE.md exists to prevent. With no DSN available, the DSN and
+ * CSP checks report "unknown" and the run fails.
+ *
+ * That is not hypothetical. The first live run of this script against learn.witus.online found a
+ * DSN pointing at `s2646803.eu-central-1a.betterstackdata.com`, because this ecosystem ingests
+ * through BETTER STACK's Sentry-compatible endpoint rather than through sentry.io. A harness that
+ * had hardcoded `*.ingest.sentry.io` would have reported a confident, wrong answer. The DSN grammar
+ * is Sentry's; the host is whatever the DSN says it is, and this script only ever reads it.
  *
  * READ-ONLY OVER THE NETWORK. GET requests only, and only against the deployment named on the
- * command line. It never POSTs, never sends a test event, and never touches Sentry's API, so
+ * command line. It never POSTs, never sends a test event, and never touches the vendor's API, so
  * running it a hundred times costs no error quota and pollutes no project. The one thing it asks of
  * the outside world is a DNS lookup of the ingest hostname, which catches the DSN whose region or
  * org id is a typo (a typo the other checks would happily call green, since the string is present
@@ -107,7 +114,7 @@ function usage(message?: string): never {
       "  --show-dsn          print the DSN in full",
       "  --json              machine-readable output",
       "",
-      "Read-only: GET requests only. Never sends a test event to Sentry.",
+      "Read-only: GET requests only. Never sends a test event to the error-reporting project.",
     ].join("\n"),
   );
   process.exit(2);
@@ -182,7 +189,7 @@ function resolveDsn(opts: Options): DsnResolution {
       return {
         dsn: null,
         source: null,
-        reason: `the value found in ${source} is not a valid Sentry DSN (expected https://<publicKey>@<host>/<projectId>)`,
+        reason: `the value found in ${source} is not a valid DSN (expected https://<publicKey>@<host>/<projectId>)`,
       };
     }
     return { dsn: parsed, source, warning };
@@ -219,7 +226,7 @@ function resolveDsn(opts: Options): DsnResolution {
     dsn: null,
     source: null,
     reason:
-      `no Sentry DSN could be found. Looked at: ${attempts.join(", ")}. ` +
+      `no DSN could be found. Looked at: ${attempts.join(", ")}. ` +
       "Pass --dsn, or --env-file <path>, or run from a directory whose .env.local sets " +
       "NEXT_PUBLIC_SENTRY_DSN. This script ships no default DSN on purpose: a guessed one would " +
       "verify a value nobody owns.",
@@ -404,7 +411,7 @@ async function checkDsnInBundle(
     verdict: "fail",
     detail:
       `the DSN is NOT in the client bundle: scanned ${fetched} chunk(s) from ${pages.length} page(s) and the HTML, no match. ` +
-      "The browser SDK is inert, so no browser-side error has ever reached Sentry. Most likely NEXT_PUBLIC_SENTRY_DSN " +
+      "The browser SDK is inert, so no browser-side error has ever been reported. Most likely NEXT_PUBLIC_SENTRY_DSN " +
       "is unset in the deployed environment, or was set after the last build (env changes need a redeploy). " +
       "If the client init lives in a route-specific chunk, re-run with --page <that route> before concluding.",
     notes,
@@ -412,7 +419,7 @@ async function checkDsnInBundle(
 }
 
 /**
- * CHECK 2. Does the site's CSP permit the Sentry ingest origin?
+ * CHECK 2. Does the site's CSP permit the ingest origin the DSN names?
  *
  * The header is read from the response the browser would actually get, plus any `<meta>` policy in
  * the document, because both are enforced. Report-only policies are listed as information and never
@@ -462,7 +469,7 @@ function checkCsp(dsn: ParsedDsn, pages: PageFetch[]): Check {
  * Cheap, and it closes a real hole: checks 1 and 2 both derive from the SAME configured string, so a
  * DSN with a typo'd org id or the wrong region ("ingest.de" instead of "ingest.us") passes both
  * while every event in production goes nowhere. A DNS lookup is the least invasive way to ask
- * whether that host is real. It is a lookup only: no HTTP request is made to Sentry.
+ * whether that host is real. It is a lookup only: no HTTP request is made to the vendor.
  */
 async function checkIngestResolves(dsn: ParsedDsn): Promise<Check> {
   const name = "ingest-host-resolves";
