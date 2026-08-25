@@ -223,6 +223,7 @@ import { TRAINING_THE_COLONIZER_COURSE } from "./data/training-the-colonizer-cou
 import { THE_MOORS_COURSE } from "./data/the-moors-course";
 import { WHO_GETS_THE_CREDIT_COURSE } from "./data/who-gets-the-credit-course";
 import { HISTORY_OF_BATHING_COURSE } from "./data/history-of-bathing-course";
+import { WHO_GETS_NAMED_COURSE } from "./data/who-gets-named-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -1895,7 +1896,34 @@ async function main() {
     // Unresolvable hedges are filed in src/lib/research-checks.ts, not left as prose.
     // 5 sections · 15 teaching lessons · 5 section quizzes (52/50/51/49/54, serving 5) · 1 final
     // (40 serving 10) = 296 questions. NO migration — pnpm seed:courses.
-    { slug: "who-gets-the-credit", course: WHO_GETS_THE_CREDIT_COURSE, category: "Culture & History" },
+    // CREDIT series (BAM's brief, plans/chat/did-the-work-vetting.md §4). "Who Gets Named" is the
+    // 00 because it teaches the MECHANISMS that assign credit in general (Matthew effect, Matilda
+    // effect, authorship convention, the inventorship/ownership split, archival silence, and the
+    // anatomy of a correction); "Who Gets the Credit" is 01 because it is the deep application of
+    // one of those mechanisms to one system, the U.S. patent record. The 00 deliberately does NOT
+    // re-teach the patent material: it teaches only the inventorship-is-not-ownership distinction
+    // the general case needs and cross-links here for the rest. Recoding was not optional once the
+    // 00 existed: `check-series-codes` rule 8 fails a "00" that is the only course in its series.
+    {
+      slug: "who-gets-named",
+      course: WHO_GETS_NAMED_COURSE,
+      category: "Culture & History",
+      seriesSlug: "credit",
+      seriesTitle: "Credit: Who Gets Named",
+      seriesOrder: 1,
+      seriesCode: "CREDIT",
+      seriesPosition: "00",
+    },
+    {
+      slug: "who-gets-the-credit",
+      course: WHO_GETS_THE_CREDIT_COURSE,
+      category: "Culture & History",
+      seriesSlug: "credit",
+      seriesTitle: "Credit: Who Gets Named",
+      seriesOrder: 2,
+      seriesCode: "CREDIT",
+      seriesPosition: "01",
+    },
     // Clean: A Global History of Bathing and Soap (Culture & History). Organized by tradition, not
     // as a ladder: Indus Great Bath, Rome (oil+strigil, no soap), the hammam and hard soap
     // (Aleppo/Nablus), Japan (misogi + Buddhist merit), the Finnish sauna, the Mesoamerican

@@ -1255,6 +1255,159 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Any systematic review or meta-analysis, which would settle the question faster than individual trials",
     ],
   },
+  // ── Who Gets Named (CREDIT-00) ────────────────────────────────────────────────────────────────
+  // Six hedges the course states in its own prose. Each one is a sentence in a lesson that says
+  // out loud that this could not be settled, which is only useful once it is filed here.
+  {
+    key: "credit00-murray-robinson-wager",
+    course: "who-gets-named",
+    lesson: "pauli-murray-the-argument-before-the-case",
+    quote:
+      "It traces to Murray's own recollection rather than to a contemporaneous record, so it is flagged here and filed as an open question rather than printed as fact.",
+    title: "Pauli Murray: is the ten dollar wager with Spottswood Robinson documented anywhere?",
+    severity: "medium",
+    question:
+      "Is there a contemporaneous record (a letter, a class record, a newspaper item, a paper in the Murray or Robinson papers) of Murray betting Spottswood Robinson ten dollars in 1944 that Plessy would fall within twenty five years, and of Robinson paying it in the 1960s? Or does every published account trace back to Murray's own later memoir?",
+    claim:
+      "The lesson names the story as widely repeated, says it traces to Murray's own recollection rather than a contemporaneous record, and explicitly declines to assert it.",
+    stakes:
+      "It is the single most repeated anecdote about Murray and it is the kind of detail a reader will quote in an argument. If a primary record exists the lesson should print it, because it dates the moment the argument was taken seriously. If none exists, the current refusal is right and should stay, and the course has a worked example of a beloved story that cannot be sourced.",
+    needs: [
+      "Either a citation to a contemporaneous document, with the archive, collection and folder",
+      "Or a statement from an archivist that the story appears only in Murray's own retrospective account",
+      "The page of Murray's autobiography where Murray tells it, so the lesson can attribute it precisely",
+    ],
+    where: [
+      "The Pauli Murray Papers at the Schlesinger Library, Radcliffe Institute, Harvard",
+      "The Spottswood W. Robinson III papers, and the Howard University School of Law archives",
+      "The Pauli Murray Center for History and Social Justice, which answers research questions",
+    ],
+  },
+  {
+    key: "credit00-traag-version-of-record",
+    course: "who-gets-named",
+    lesson: "the-footnote-inside-the-paper",
+    quote:
+      "That study is an eLife reviewed preprint rather than a version of record, so treat the citation as provisional.",
+    title: "Matthew effect replication: has the Traag et al. study reached a version of record?",
+    severity: "medium",
+    question:
+      "Has 'The Matthew effect and early-career setbacks in research funding: a replication study' (Traag, Brady, Vincent-Lamarre, Bidel, Lopes-Bento, Andersen and Bloch, eLife Reviewed Preprint 109042, posted 13 October 2025) since been published as a version of record, and did any of its numbers change? Specifically the 109,624 applications, the 14 programs and the six funders.",
+    claim:
+      "The lesson reports that the Matthew effect replicated and generalized while the early-career-setback claim did not, cites the reviewed preprint, and tells the learner to treat the citation as provisional.",
+    stakes:
+      "This is the only measured replication in the course and the lesson leans on it to teach that reporting the finding which did NOT survive is part of honest citation. If the numbers moved between preprint and final version, a course that teaches source discipline would be quoting stale figures, which is the exact failure it warns against.",
+    needs: [
+      "The final citation if one exists: journal, volume, pages, DOI and year",
+      "Confirmation of the three figures (109,624 applications, 14 programs, six funders) in that version",
+      "Whether the conclusion about the early-career-setback claim is unchanged",
+    ],
+    where: [
+      "eLife's page for Reviewed Preprint 109042, which links any later version",
+      "The DOI 10.7554/eLife.109042 and its version history",
+      "The corresponding author's institutional page at Leiden CWTS",
+    ],
+  },
+  {
+    key: "credit00-hela-pseudonym-origin",
+    course: "who-gets-named",
+    lesson: "henrietta-lacks-and-the-substituted-name",
+    quote:
+      "Who introduced the false name, and why, is not settled by the record, and this course does not guess.",
+    title: "HeLa: who first published the name Helen Lane, and in what document?",
+    severity: "medium",
+    question:
+      "What is the earliest published appearance of 'Helen Lane' or 'Helen Larson' as the source of the HeLa cell line, and is there any documentary evidence of who introduced the substitution and why?",
+    claim:
+      "The lesson states that for roughly two decades the line was attributed in print to a person who did not exist, that the substitution ended with a 1973 query in Nature, and that who introduced the false name is not settled by the record.",
+    stakes:
+      "The substituted name is the load-bearing example in the archive-silences section, where the course argues that a plausible wrong answer is worse than a blank space because it stops the question being asked. Naming the earliest source would turn a general claim into a dated one. Guessing at a motive would be exactly the assertion the course forbids.",
+    needs: [
+      "The earliest citation using the false name, with journal, year and page",
+      "The 1973 Nature item that recovered the real name, with its full citation",
+      "Any archival evidence about who introduced the pseudonym, or a scholar's statement that none exists",
+    ],
+    where: [
+      "The Johns Hopkins Medicine Henrietta Lacks pages and the university's own archives",
+      "Nature's 1973 volumes, searching for the query that obtained her name",
+      "Hannah Landecker's and Rebecca Skloot's published notes, which cite the early literature directly",
+    ],
+  },
+  {
+    key: "credit00-poro-college-year",
+    course: "who-gets-named",
+    lesson: "the-eminent-name-absorbs-the-story",
+    quote:
+      "Sources differ on whether the Poro complex opened in 1917 or 1918. This course follows the State Historical Society of Missouri and says 1918.",
+    title: "Poro College: did the St. Louis complex open in 1917 or 1918?",
+    severity: "low",
+    question:
+      "What year did Annie Turnbo Malone's Poro College complex at 4300 St. Ferdinand Avenue actually open, according to a contemporaneous source such as a city directory, a building permit, a deed, or the St. Louis Argus?",
+    claim:
+      "The lesson says 1918, following the State Historical Society of Missouri, and tells the reader other sources say 1917.",
+    stakes:
+      "Low on its own, and the lesson already reports the disagreement rather than hiding it. It matters because this course uses the Malone record as its example of documentation asymmetry, so a settled date from a contemporaneous St. Louis source would strengthen exactly the claim the lesson makes about which records survive.",
+    needs: [
+      "A contemporaneous document naming the opening year, with its archive and date",
+      "Whether 1917 refers to the school's founding and 1918 to the building, which would explain both",
+      "The citation for whichever source settles it",
+    ],
+    where: [
+      "The Missouri Historical Society and the St. Louis city building permit records",
+      "The St. Louis Argus, searched around 1917 and 1918",
+      "The City of St. Louis page on the site of Poro College, and the National Register nomination if one exists",
+    ],
+  },
+  {
+    key: "credit00-colvin-death-date",
+    course: "who-gets-named",
+    lesson: "claudette-colvin-and-the-choice-not-to-name",
+    quote:
+      "She died in January 2026, aged eighty six; sources give slightly different days for her death and this course does not pick one.",
+    title: "Claudette Colvin: what is the correct date of death?",
+    severity: "medium",
+    question:
+      "On what date did Claudette Colvin die? Published reports in January 2026 give 13 and 14 January, and at least one account pairs 14 January with a day of the week that does not match it.",
+    claim:
+      "The lesson gives the month and year, states her age as eighty six, and says outright that sources disagree on the day.",
+    stakes:
+      "A date of death is exactly the kind of fact a reader assumes a cited course has right, and Colvin is one of the six people the course is built on. It is also a live example of the course's own rule: report the disagreement rather than picking. Once a family statement or an obituary of record settles it, the lesson should carry the day.",
+    needs: [
+      "The date given by the family, a funeral home notice, or an obituary of record",
+      "The place of death, if the family has stated one",
+      "The citation, so the lesson can attribute the date rather than assert it",
+    ],
+    where: [
+      "A family statement, or the funeral home's published notice",
+      "The New York Times or Associated Press obituary, which usually names its source for the date",
+      "The Equal Justice Initiative and the National Museum of African American History and Culture, both of which published remembrances",
+    ],
+  },
+  {
+    key: "credit00-states-laws-imprint-year",
+    course: "who-gets-named",
+    lesson: "pauli-murray-the-argument-before-the-case",
+    quote:
+      "The imprint reads 1950 and library catalogs record it as 1950, corrected to 1951, and the Pauli Murray Center dates it 1951.",
+    title: "States' Laws on Race and Color: 1950 or 1951?",
+    severity: "low",
+    question:
+      "Was Pauli Murray's States' Laws on Race and Color actually issued in 1950 or 1951? Library catalogs record the imprint as 1950 with a bracketed correction to 1951, and secondary accounts use both years and occasionally 1948.",
+    claim:
+      "The lesson reports the disagreement rather than choosing, naming the imprint, the catalog correction, and the Pauli Murray Center's date.",
+    stakes:
+      "Small in itself, and the lesson is already honest about it. Worth closing because the book is the single most cited thing Murray produced and the course quotes Thurgood Marshall's description of it, so a reader chasing the citation should land on the right year the first time.",
+    needs: [
+      "The actual issue date, from the publisher's records or a contemporaneous review",
+      "Why library catalogs bracket the correction, which usually indicates a known imprint error",
+      "Whether any 1948 edition or precursor compilation exists, which would explain the third date",
+    ],
+    where: [
+      "The HathiTrust and Library of Congress catalog records, including their notes fields",
+      "The American Political Science Review's contemporaneous notice of the book, which carries its own date",
+      "The archives of the Woman's Division of Christian Service of the Methodist Church, the publisher",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {

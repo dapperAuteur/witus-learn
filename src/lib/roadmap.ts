@@ -24,6 +24,47 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   origin would have verified a fiction. Deliberately NOT in \`pnpm lint\` (network calls must never
   gate a commit). Judgment isolated as pure predicates in \`scripts/lib/observability-checks.ts\`,
   24 tests.
+- 🔧 **Who Gets Named** (\`content/credit-who-gets-named\`, Culture & History, **CREDIT-00**; NO
+  migration, **re-run \`pnpm seed:courses\`**). The mechanisms course from BAM's own vetting note
+  (\`plans/chat/did-the-work-vetting.md\` §4): credit is assigned by mechanisms, the mechanisms are
+  documentable, and people appear as **evidence for a mechanism** rather than as a parade of
+  profiles. Same move that made \`naacp-learned-to-win\` work with four instruments instead of four
+  biographies. Six mechanisms, one per section: the **Matthew effect** (Merton, 1968), the
+  **Matilda effect** (Rossiter, 1993), **authorship convention** (the four ICMJE criteria, the
+  acknowledgement line, CRediT's fourteen roles), the **inventorship-versus-ownership split** in
+  patent law (35 U.S.C. 115 and 261, Stanford v. Roche), the **archive's silences** (Trouillot's
+  four moments), and **how a correction actually happens**. 6 sections, 18 teaching lessons, 6
+  section quizzes (55/62/60/62/59/58 serving 5) and a 40-question final serving 10, for **396
+  pooled questions**, 53 reveal cards, and **zero findings** from
+  \`pnpm audit:course who-gets-named --spec\`.
+  **This recodes its sibling.** \`who-gets-the-credit\` becomes **CREDIT-01** in the same series,
+  because \`check-series-codes\` rule 8 fails a "00" that is the only course in its series. The 00
+  deliberately does not re-teach any patent material: it teaches only the one distinction the
+  general case needs (a patent keeps the inventor's name and moves the money, which is the opposite
+  of what an author line does) and cross-links to 01 for the assignment clause, the legal history
+  and the eleven verified patent numbers.
+  **Two rules are load-bearing and stated in lesson 3.** An identity claim requires a public
+  self-statement with a citation, and where none exists the person is taught for their work with no
+  identity claim attached. **No living person in the course carries an identity claim**; the only
+  one in the whole file is Pauli Murray's, sourced to Murray's own papers via the Pauli Murray
+  Center, whose pronoun practice (s/he, their, they/them) the course follows and names out loud.
+  And a contested claim is taught as contested with the holders of each position named.
+  **Three live disputes are left open on purpose:** whether Annie Turnbo Malone trained Madam C. J.
+  Walker (A'Lelia Bundles's documentary case against the popular account, with her interest as the
+  Walker estate's representative disclosed), the size of Malone's reported fortune, and whether the
+  Roosevelt dime derives from Selma Burke's plaque (the U.S. Mint and Sinnock against Burke, the
+  Smithsonian American Art Museum and FDR's son). The Burke lesson exists precisely because it never
+  resolved: every other case in the course eventually acquired a portrait, a degree, an agreement,
+  an expungement or a rename, and a course that taught only those would leave a reader expecting an
+  ending.
+  **Claims refused rather than repeated:** the widely told ten dollar wager between Murray and
+  Spottswood Robinson (traces only to Murray's own recollection), any motive for the "Helen Lane"
+  substitution in the HeLa literature, the outcomes of Lacks litigation still moving, and a single
+  day for Claudette Colvin's death in January 2026, where published reports disagree. Six hedges
+  are filed as **source checks** in \`src/lib/research-checks.ts\` rather than left as prose.
+  Mapped to \`catalog.cited-primary-secondary-synthesis\` and \`catalog.test-a-historical-claim\`
+  (CCSS RH.11-12.9 and RH.11-12.8). Deliberately **not** in \`STAGED_COURSES\` yet, so
+  \`pnpm gen:citations\` is a later decision.
 - ✅ **The Negro Leagues: Who Owned the Game** (\`content/negro-leagues\`, Culture & History; NO
   migration, **re-run \`pnpm seed:courses\`**). BAM's note asked for the story of the Negro Leagues,
   starting with baseball and branching to other sports, connected to Indianapolis and the Madam C. J.
