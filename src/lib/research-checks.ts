@@ -1408,6 +1408,138 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "The archives of the Woman's Division of Christian Service of the Methodist Church, the publisher",
     ],
   },
+
+  // ── The Editor of The Crisis (DIDWORK-S2) ─────────────────────────────────────────────────────
+  {
+    key: "jrf-birthplace",
+    course: "the-editor-of-the-crisis",
+    lesson: "jrf-the-life-in-one-primary-note",
+    quote:
+      "The note says she was born in Philadelphia. Modern reference works generally place her birth in Camden County, New Jersey, in April 1882, with the family moving to Philadelphia. Both cannot be right, and this course prints neither as settled.",
+    title: "Fauset: was she born in Philadelphia or in Camden County, New Jersey?",
+    severity: "medium",
+    question:
+      "Where was Jessie Redmon Fauset born? Her employer's own staff note in The Crisis for November 1919 says Philadelphia. Most modern reference works say Camden County, New Jersey (variously Fredericksville, Snow Hill, or what is now Lawnside). What does a primary vital or census record show?",
+    claim:
+      "The course quotes the 1919 note verbatim, states the disagreement, prints neither version as settled, and uses the case to teach that proximity is not the same as being in a position to know.",
+    stakes:
+      "Low stakes for the argument and high stakes for the course's credibility, because this is the lesson in which the course tells a learner how to handle exactly this kind of disagreement. If a birth record settles it, the lesson gets a real answer instead of a worked example, and the example can be replaced with one that is genuinely open.",
+    needs: [
+      "A primary record: a birth or baptismal record, or the earliest census entry naming her, with the enumeration district",
+      "What that record gives as the place of birth, quoted",
+      "If New Jersey, which municipality, and what it is called today",
+      "Whether Carolyn Wedin Sylvander's biography cites a primary record for its date and place, and which one",
+    ],
+    where: [
+      "New Jersey State Archives vital records, and Camden County municipal records for Lawnside",
+      "The 1900 United States federal census, which should name her in the household",
+      "Carolyn Wedin Sylvander, Jessie Redmon Fauset, Black American Writer (1981), and its notes",
+    ],
+  },
+  {
+    key: "jrf-acquisitions-beyond-hughes",
+    course: "the-editor-of-the-crisis",
+    lesson: "jrf-acquired-versus-published",
+    quote:
+      "Countee Cullen, Jean Toomer, Anne Spencer, Georgia Douglas Johnson, Arna Bontemps and Gwendolyn Bennett all appear in The Crisis while she ran the literary pages ... Whether she solicited a given poem, or Du Bois handed it to her, or it arrived unsolicited and she said yes, is a question the contents page cannot answer.",
+    title: "Fauset: is there correspondence documenting any acquisition besides Hughes?",
+    severity: "high",
+    question:
+      "Does surviving correspondence document Fauset soliciting, accepting or editing a specific piece by any writer other than Langston Hughes? Name the writer, the piece, the date, and the repository and collection where the letter sits.",
+    claim:
+      "The course teaches Hughes as the one fully documented acquisition, on his own account in The Big Sea, and states plainly that for every other name the record shows appearance during her tenure and not who chose the piece.",
+    stakes:
+      "This is the course's central evidentiary claim and the thing that separates it from the secondary literature, which conflates appeared with acquired. If letters exist in the Du Bois papers at Massachusetts or in the Cullen, Toomer or Bennett collections, the course is understating her documented record and should be corrected. If they do not, the refusal is the finding and should be stated even more firmly.",
+    needs: [
+      "For each documented case: the writer, the specific piece, the date, and the archive, collection and box or folder",
+      "A quoted sentence from the letter showing the editorial act, not merely that the two corresponded",
+      "Whether any marked typescript survives showing her revisions to a submitted piece",
+      "Whether the W. E. B. Du Bois Papers include Crisis editorial correspondence distinguishing her decisions from his",
+    ],
+    where: [
+      "W. E. B. Du Bois Papers, Special Collections and University Archives, University of Massachusetts Amherst (digitised finding aid and images)",
+      "Countee Cullen Papers, Amistad Research Center; Jean Toomer Papers, Beinecke Library, Yale",
+      "Gwendolyn Bennett Papers, Schomburg Center; Langston Hughes Papers, Beinecke Library",
+    ],
+  },
+  {
+    key: "jrf-civic-club-what-she-said",
+    course: "the-editor-of-the-crisis",
+    lesson: "jrf-the-civic-club-dinner",
+    quote:
+      "This is a fact about the notice and not proof that she was silent, and the distinction matters: a news column lists who was notable, not who spoke.",
+    title: "Civic Club dinner, March 1924: did Fauset speak, and what is the source?",
+    severity: "medium",
+    question:
+      "Did Jessie Fauset address the Civic Club dinner held in her honour on or about 21 March 1924, and what is the primary evidence? Contemporary press accounts, the Writers' Guild's own record, or a participant's letter would all count. Separately: is the widely repeated account that Alain Locke as master of ceremonies marginalised her at her own event traceable to a specific document?",
+    claim:
+      "The course quotes the May 1924 Crisis notice, observes that it names six male speakers and does not list the honoree among them, and explicitly refuses the stronger claim that she was silenced. It attributes no motive to Locke.",
+    stakes:
+      "The dinner is the course's central illustration and the point where an author is most tempted to overreach. David Levering Lewis's When Harlem Was in Vogue is the standard account and is often cited for a 1933 Fauset letter to Locke about the evening. This pass could not read that letter, so the course teaches only what the contemporaneous notice supports. If the letter is real and quotable, the lesson can say considerably more and should. If it is not, the refusal is correct and worth stating.",
+    needs: [
+      "Any contemporaneous account naming who spoke, from Opportunity, the New York Age, the Amsterdam News or the Survey",
+      "The 1933 Fauset letter to Locke, if it exists: its repository, its date, and the passage about the dinner quoted verbatim",
+      "The page reference in Lewis (1981) for the account of Locke's handling of the evening, and the source Lewis himself cites",
+      "Whether the Writers' Guild left any minutes or programme for the evening",
+    ],
+    where: [
+      "Alain Locke Papers, Moorland-Spingarn Research Center, Howard University",
+      "Opportunity for April and May 1924, and the Black weekly press for late March 1924",
+      "David Levering Lewis, When Harlem Was in Vogue (1981), and its notes",
+    ],
+  },
+  {
+    key: "jrf-du-bois-editorial-control",
+    course: "the-editor-of-the-crisis",
+    lesson: "jrf-whose-magazine-was-it",
+    quote:
+      "Nobody has produced a document showing Du Bois overruling her on a specific poem, and nobody has produced one showing her overruling him.",
+    title: "The Crisis: is there a document showing who decided a specific literary acceptance?",
+    severity: "medium",
+    question:
+      "Does any surviving document show W. E. B. Du Bois and Jessie Fauset disagreeing about, or separately deciding, a specific submission to The Crisis between October 1919 and April 1926? An office memorandum, a marked submission, or a letter to a contributor would settle it in either direction.",
+    claim:
+      "The course states that her authority over the literary pages is documented in title, in a legal filing and in her employer's own farewell, and that it was exercised inside an editorial line another person set. It calls the question serious, documented on both sides, and unresolved.",
+    stakes:
+      "This is the strongest objection to the course's thesis and the course answers it by holding it open. Holding a question open is only honest if nobody has in fact closed it. If a document exists in either direction and the course did not find it, the lesson is presenting a settled matter as contested, which is the mirror of the error the catalogue's rules exist to prevent.",
+    needs: [
+      "Any document naming a specific piece and who decided it, with repository and collection",
+      "Whether Crisis office files for 1919 to 1926 survive anywhere as a body, or only as scattered correspondence",
+      "Whether any scholar has published on the division of editorial labour at The Crisis in these years, and what they concluded",
+      "Fauset's own account, if she left one, of how much latitude the post carried",
+    ],
+    where: [
+      "W. E. B. Du Bois Papers, University of Massachusetts Amherst, correspondence 1919-1926",
+      "NAACP Records, Manuscript Division, Library of Congress, for the magazine's administrative files",
+      "Carolyn Wedin Sylvander (1981) and Cheryl A. Wall, Women of the Harlem Renaissance (1995)",
+    ],
+  },
+  {
+    key: "jrf-chinaberry-tree-foreword",
+    course: "the-editor-of-the-crisis",
+    lesson: "jrf-four-novels",
+    quote:
+      "Section 13 lists the four novels and their publishers and says nothing about the circumstances in which any of them was accepted.",
+    title: "The Chinaberry Tree: is the story about the publisher's reader's report documented?",
+    severity: "low",
+    question:
+      "Is there a documented source for the widely repeated account that Frederick A. Stokes required a foreword by the white novelist Zona Gale for The Chinaberry Tree (1931), on the ground that a reader had objected that no such Black people existed? The report is often quoted as saying there \"ain't no such colored people as these\". What is the primary source, and is the quotation accurate?",
+    claim:
+      "The course says nothing about it. Section 13 gives the four novels, their publishers and their dates, and Section 14 documents the reception problem from a 1925 Chicago Tribune objection reported in The Crisis rather than from this anecdote.",
+    stakes:
+      "If documented, this is the single sharpest illustration in the whole subject of the mechanism Fauset herself described in the 1926 Crisis symposium, that publishers refused the variant on commercial grounds. It would strengthen Section 14 considerably. It is omitted for now precisely because the quotation circulates without a primary attribution, and a fabricated-sounding quotation in a course about quotation drift would be self-refuting.",
+    needs: [
+      "The primary source for the reader's report or the publisher's requirement, quoted, with a repository",
+      "Whether Zona Gale's foreword itself, in the 1931 first edition, says anything about why it was written",
+      "Whether Fauset described the episode in correspondence or in an interview, and where",
+      "Confirmation of the exact wording, since the version in circulation may be a paraphrase",
+    ],
+    where: [
+      "The 1931 Frederick A. Stokes first edition of The Chinaberry Tree, read for Gale's foreword",
+      "Zona Gale Papers, Wisconsin Historical Society",
+      "Carolyn Wedin Sylvander (1981), and Deborah E. McDowell's introductions to the Beacon Press reissues",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {

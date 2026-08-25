@@ -26,6 +26,7 @@ import { FOOTBALL_COURSE } from "./data/football-course";
 import { BROADCASTING_COURSE } from "./data/broadcasting-course";
 import { VOICE_ACTING_COURSE } from "./data/voice-acting-course";
 import { SHE_TOOK_THE_SEAT_COURSE } from "./data/she-took-the-seat-course";
+import { EDITOR_OF_THE_CRISIS_COURSE } from "./data/editor-of-the-crisis-course";
 import { NAACP_LEARNED_TO_WIN_COURSE } from "./data/naacp-learned-to-win-course";
 import { ACTING_COURSE } from "./data/acting-course";
 import { GOLF_COURSE } from "./data/golf-course";
@@ -1935,6 +1936,51 @@ async function main() {
     // (Great Bath) and UNESCO ICH (Nabulsi soap 2024, Finnish sauna 2020). 8 sections ·
     // 16 teaching lessons · 8 quizzes (15-question banks) · 1 exercise. NO migration — pnpm seed:courses.
     { slug: "history-of-bathing", course: HISTORY_OF_BATHING_COURSE, category: "Culture & History" },
+    // The Editor of The Crisis - She Did the Work, wave 2. DIDWORK-S2, the second course on the S
+    // track after `she-took-the-seat` (S1). Jessie Redmon Fauset taught as ONE ARGUMENT about
+    // editorial labour rather than as a biography: what an acquiring editor does, why none of it
+    // leaves a byline, and how credit for a movement lands on whoever signed the poems. It is the
+    // strongest single evidence case in the track because the Matthew effect (Merton, 1968) and the
+    // Matilda effect (Rossiter, 1993) are documented operating on the same person at once.
+    //
+    // BUILT FROM PRIMARY SOURCES READ DIRECTLY, not summarised from secondary accounts. The
+    // digitized Crisis, issue by issue 1919-1927, settles the tenure every account rounds off:
+    // she joined in OCTOBER 1919 (the November issue says "last month"), first masthead November
+    // 1919, last as Literary Editor April 1926, moved to Contributing Editor by Du Bois's own May
+    // 1926 Opinion column, last masthead of any kind February 1927. Six years seven months, not the
+    // "seven years" Du Bois's farewell rounded to and every later account inherited. The Brownies'
+    // Book mastheads and its POSTAL OWNERSHIP FILINGS settle the literary-editor versus
+    // managing-editor confusion (both true, different publications, and the 1921 filing names her).
+    // The Big Sea was read in full: the "midwife" passage is quoted verbatim, and the course shows
+    // what the paraphrase drops (three names, "so-called", and the preceding paragraph giving
+    // Charles S. Johnson the superlative).
+    //
+    // CLAIMS NAMED AND REFUSED rather than repeated: the "first Black woman in Phi Beta Kappa"
+    // ordinal (Phi Beta Kappa's own magazine reports Mary Annette Anderson, Middlebury, 1899); any
+    // acquisition claim for Cullen, Toomer, McKay or Larsen (they appeared, the record does not say
+    // who chose them); that she was silent at the Civic Club dinner (the notice omits her from the
+    // speakers, which is a fact about the notice); her birthplace (the 1919 staff note says
+    // Philadelphia, modern accounts say Camden County); and any verdict on Du Bois overruling her.
+    // Five hedges are filed in src/lib/research-checks.ts rather than left as prose.
+    //
+    // THE CONTROL CASE is the reason it can be trusted: four bylined novels, and The Crisis's own
+    // 1924 reports of a THIRD American printing inside seven months plus an English edition and a
+    // German translation. So a byline did not save her, and the course separates under-credit as an
+    // editor from loss of literary fashion, the latter documented by the 1925 Chicago Tribune
+    // objection that the novel missed "that essential something".
+    // 5 sections, 15 teaching lessons, 5 section quizzes (60/63/59/60/60, serving 5) and a final
+    // (40 serving 10). NO migration - pnpm seed:courses.
+    {
+      slug: "the-editor-of-the-crisis",
+      course: EDITOR_OF_THE_CRISIS_COURSE,
+      category: "Culture & History",
+      seriesSlug: "did-the-work",
+      seriesTitle: "Did the Work",
+      seriesOrder: 3,
+      seriesCode: "DIDWORK",
+      seriesPosition: "S2",
+      seriesTrack: "She Did the Work",
+    },
   ]) {
     await seedAuthoredCourse(db, {
       tenantId: learnWitus,

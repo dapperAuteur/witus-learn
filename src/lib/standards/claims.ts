@@ -4118,6 +4118,12 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // papers and the case reporters from Murray through Brown into one account of a single
       // forty-five-year campaign.
       "naacp-learned-to-win",
+      // She Did the Work, wave 2. Integrates the digitized Crisis read issue by issue 1919-1927
+      // (mastheads, the November 1919 appointment note, the May 1924 Civic Club notice, Du Bois's
+      // January 1926 review and his May 1926 farewell), The Brownies' Book mastheads and its postal
+      // ownership filings, Langston Hughes's The Big Sea, and the secondary literature on credit
+      // (Merton 1968, Rossiter 1993) into one account of editorial labour and where its credit went.
+      "the-editor-of-the-crisis",
     ],
     lessons: [
       "2 · How we know: reading a record the enslavers wrote",
@@ -4234,6 +4240,12 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // secondary accounts disagree about what the figure counts, and withholds the Dyer bill's
       // House tally because published accounts give 230 and 231, saying so both times.
       "naacp-learned-to-win",
+      // She Did the Work, wave 2. This claim IS the course's method. Lesson 3 downgrades the most
+      // repeated quotation about its own subject against the original text; lesson 8 corrects the
+      // "first Black woman in Phi Beta Kappa" ordinal against Phi Beta Kappa's own magazine and
+      // hands the learner a four-question ordinal test; lesson 5 refuses four acquisition claims the
+      // record does not support; lesson 15 lists every claim the course declines to assert and why.
+      "the-editor-of-the-crisis",
     ],
     lessons: [
       "3 · The test: four questions before you draw an edge",

@@ -65,6 +65,51 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   Mapped to \`catalog.cited-primary-secondary-synthesis\` and \`catalog.test-a-historical-claim\`
   (CCSS RH.11-12.9 and RH.11-12.8). Deliberately **not** in \`STAGED_COURSES\` yet, so
   \`pnpm gen:citations\` is a later decision.
+- ✅ **The Editor of The Crisis** (\`content/didwork-jessie-fauset\`, Culture & History; NO
+  migration, **re-run \`pnpm seed:courses\`**). **DIDWORK-S2**, the second course on the She Did the
+  Work track after \`she-took-the-seat\` (S1), and the strongest single evidence case in it.
+  **Jessie Redmon Fauset taught as one argument, not as a biography.** She was literary editor of
+  *The Crisis* from October 1919 to April 1926, took the first poem Langston Hughes published
+  outside his high school magazine, and ran Cullen, Toomer, Spencer, Georgia Douglas Johnson,
+  Bontemps and Bennett. The movement is remembered by name and she is remembered as staff, which is
+  the **Matthew effect** (Merton, 1968) and the **Matilda effect** (Rossiter, 1993) documented
+  operating on one person at once. So the course teaches **editorial labour as labour**: what an
+  acquiring editor does, why none of it leaves a byline, and how credit for a movement lands on
+  whoever signed the poems.
+  **Built from primary sources read directly.** The digitized *Crisis* was read issue by issue,
+  1919 to 1927, and the masthead settles what every secondary account rounds off: she joined in
+  **October 1919** (the November issue says "last month"), first masthead November 1919, last as
+  Literary Editor **April 1926**, moved to Contributing Editor by Du Bois's own May 1926 Opinion
+  column, last masthead of any kind **February 1927**. **Six years seven months**, not the "seven
+  years" his farewell rounded to and every later account inherited. *The Brownies' Book* mastheads
+  and its **postal ownership filings** dissolve the literary-editor versus managing-editor
+  confusion: both titles are true, of different publications, and the 1921 filing names her.
+  **The Hughes quotation is printed verbatim and then taken apart.** *The Big Sea* was read in full.
+  The passage names **three** people, says "**so-called** New Negro literature", and sits directly
+  after a paragraph giving **Charles S. Johnson** the superlative. The course prints the harder
+  version because the inflated one collapses the first time anyone opens the book.
+  **The Civic Club dinner is the credit mechanism in one documented chain.** The May 1924 Horizon
+  notice names six speakers, all men, and does not list the honoree; Du Bois's own January 1926
+  review then traces the evening through the *Survey Graphic* Harlem number to **Locke's *The New
+  Negro***. The occasion was a woman's novel; the durable object is a man's anthology.
+  **Claims named and REFUSED rather than repeated:** the "first Black woman in Phi Beta Kappa"
+  ordinal (Phi Beta Kappa's own magazine reports **Mary Annette Anderson, Middlebury, 1899**); any
+  acquisition claim for **Cullen, Toomer, McKay or Larsen** (they appeared, the record does not say
+  who chose them); that she was **silent** at the dinner (the notice omits her from the speakers,
+  which is a fact about the notice); her **birthplace** (the 1919 staff note says Philadelphia,
+  modern accounts say Camden County); and any verdict on **Du Bois overruling her**. Robert Bone's
+  1958 verdict is deliberately **not quoted**, because this pass could not read his wording, and a
+  paraphrase presented as a quotation in a course about quotation drift would be self-refuting.
+  **The control case is why it can be trusted.** Four bylined novels, and *The Crisis*'s own 1924
+  reports of a **third American printing inside seven months** plus an English edition from Chapman
+  and Hall and a German translation at Vienna. A byline did not save her, so the course separates
+  under-credit as an editor from loss of literary fashion, the second documented by the **1925
+  Chicago Tribune objection** that the novel missed "that essential something".
+  5 sections, 15 teaching lessons, 5 section quizzes (60/63/59/60/60, serving 5) and a 40-question
+  final serving 10, **322 pooled questions**, **zero findings** from \`pnpm audit:course --spec\`.
+  Mapped to two \`catalog.*\` Common Core history-literacy claims. Five hedges filed as **source
+  checks** in \`src/lib/research-checks.ts\`. **NOT in \`STAGED_COURSES\`**, so \`pnpm gen:citations\`
+  is a later step.
 - ✅ **The Negro Leagues: Who Owned the Game** (\`content/negro-leagues\`, Culture & History; NO
   migration, **re-run \`pnpm seed:courses\`**). BAM's note asked for the story of the Negro Leagues,
   starting with baseball and branching to other sports, connected to Indianapolis and the Madam C. J.
