@@ -5,6 +5,25 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- ✅ **Observability verification harness** (\`feat/verify-observability-harness\`; no migration, tooling
+  only). \`pnpm verify:observability <url>\` asks one question about a DEPLOYED site: can it actually
+  report its own errors, or is it dropping them silently? Four read-only checks, GET requests only,
+  never sending a test event: (1) the exact configured DSN is present in the served HTML or one of
+  that page's own JS chunks, the only direct evidence the browser SDK initialises at all; (2) every
+  enforced CSP permits the ingest envelope endpoint, following the spec's \`connect-src\` then
+  \`default-src\` fallback, because a policy like \`connect-src 'self' data:\` drops 100% of
+  browser-side reports while the SERVER side keeps reporting and the dashboard looks healthy;
+  (3) the ingest host resolves, which catches a mistyped region the other two cannot see since both
+  derive from that same string; (4) \`/api/health\` returns 200 AND a payload that affirms health.
+  **Three-valued on purpose:** pass, fail, or "could not determine", and only pass counts, so a 200
+  serving HTML fails instead of reading as green. This rollout produced false-healthy signals three
+  times, and a harness that reports green on something it could not look at is worse than none.
+  **No DSN is hardcoded**; it is read from \`--dsn\`, \`--env-file\`, the environment or a \`.env*\`
+  file and the source is printed on every run. The first live run justified that: this deployment's
+  DSN points at **Better Stack's** Sentry-compatible ingest, not \`sentry.io\`, so a guessed vendor
+  origin would have verified a fiction. Deliberately NOT in \`pnpm lint\` (network calls must never
+  gate a commit). Judgment isolated as pure predicates in \`scripts/lib/observability-checks.ts\`,
+  24 tests.
 - ✅ **The Negro Leagues: Who Owned the Game** (\`content/negro-leagues\`, Culture & History; NO
   migration, **re-run \`pnpm seed:courses\`**). BAM's note asked for the story of the Negro Leagues,
   starting with baseball and branching to other sports, connected to Indianapolis and the Madam C. J.
