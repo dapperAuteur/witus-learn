@@ -467,9 +467,15 @@ function checkCsp(dsn: ParsedDsn, pages: PageFetch[]): Check {
  * CHECK 3. Does the ingest hostname exist?
  *
  * Cheap, and it closes a real hole: checks 1 and 2 both derive from the SAME configured string, so a
- * DSN with a typo'd org id or the wrong region ("ingest.de" instead of "ingest.us") passes both
- * while every event in production goes nowhere. A DNS lookup is the least invasive way to ask
- * whether that host is real. It is a lookup only: no HTTP request is made to the vendor.
+ * DSN naming a host that does not exist passes both of them while every event in production goes
+ * nowhere. A DNS lookup is the least invasive way to ask whether that host is real, and it is a
+ * lookup only: no HTTP request is made to the vendor.
+ *
+ * BE CLEAR ABOUT ITS REACH, because a check people over-trust is its own hazard. Ingest providers
+ * wildcard their DNS, so `o9999999.ingest.us.sentry.io` resolves whether or not org 9999999 exists.
+ * This catches a wrong or misspelled HOST (a bad region, a stale vendor domain, a mangled DSN); it
+ * does NOT prove the org or the project behind it exists, is enabled, or is under quota. Proving
+ * that would mean sending an event, which this harness will not do.
  */
 async function checkIngestResolves(dsn: ParsedDsn): Promise<Check> {
   const name = "ingest-host-resolves";
@@ -485,7 +491,7 @@ async function checkIngestResolves(dsn: ParsedDsn): Promise<Check> {
       return {
         name,
         verdict: "fail",
-        detail: `${dsn.host} does not resolve, so the configured DSN points at a host that does not exist (check the org id and the region in the DSN)`,
+        detail: `${dsn.host} does not resolve, so the configured DSN names a host that does not exist (check the ingest host in the DSN: a mistyped region or a stale vendor domain looks exactly like this)`,
       };
     }
     return {
@@ -587,7 +593,10 @@ async function main(): Promise<void> {
       checks.push(checkCsp(resolution.dsn, pages));
       checks.push(await checkIngestResolves(resolution.dsn));
     } else {
-      const detail = `cannot be checked: ${resolution.reason}`;
+      // The full reason is printed once in the header (and carried in --json as dsnReason), so the
+      // per-check line stays short. What it must never do is soften: three "not known" rows and a
+      // non-zero exit, not a hedge that reads like a pass.
+      const detail = "cannot be checked: no DSN could be determined (see the DSN source line above)";
       checks.push({ name: "dsn-in-client-bundle", verdict: "unknown", detail });
       checks.push({
         name: "csp-allows-ingest",
@@ -614,6 +623,7 @@ async function main(): Promise<void> {
         {
           verified,
           dsnSource: resolution.dsn ? resolution.source : null,
+          dsnReason: resolution.dsn ? null : resolution.reason,
           ingestOrigin: resolution.dsn ? resolution.dsn.ingestOrigin : null,
           totals: { passed, failed, unknown },
           targets: report.map((r) => ({
