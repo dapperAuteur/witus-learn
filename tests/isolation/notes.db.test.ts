@@ -162,9 +162,146 @@ describe.skipIf(!HAS_DB)("lesson notes are tenant- and author-scoped", () => {
 
   it("searches only the viewer's own notes, inside the tenant", async () => {
     const { searchNotesInCourse } = await import("@/db/queries/notes");
-    const own = await searchNotesInCourse(bvcId, authorId, courseId, "isolation test");
+    const own = await searchNotesInCourse(bvcId, authorId, authorId, courseId, "isolation test");
     expect(own.map((r) => r.id)).toContain(noteId);
-    expect(await searchNotesInCourse(bvcId, teacherId, courseId, "isolation test")).toHaveLength(0);
-    expect(await searchNotesInCourse(acmeId, authorId, courseId, "isolation test")).toHaveLength(0);
+    expect(
+      await searchNotesInCourse(bvcId, teacherId, teacherId, courseId, "isolation test"),
+    ).toHaveLength(0);
+    expect(
+      await searchNotesInCourse(acmeId, authorId, authorId, courseId, "isolation test"),
+    ).toHaveLength(0);
+  });
+
+  // plans/61 §4: "A teacher searches notes shared with them, plus notes they sent." A teacher OWNS
+  // a cohort rather than belonging to it, so neither arrives through the learner clauses.
+  it("lets a teacher search notes shared with them, and stops once the share is withdrawn", async () => {
+    const { searchNotesInCourse, shareNoteWithTeacher, unshareNote } = await import(
+      "@/db/queries/notes"
+    );
+    const find = (tenantId: string) =>
+      searchNotesInCourse(tenantId, teacherId, teacherId, courseId, "isolation test").then((r) =>
+        r.map((n) => n.id),
+      );
+
+    expect(await find(bvcId)).not.toContain(noteId);
+    expect(await shareNoteWithTeacher(bvcId, authorId, noteId, teacherId)).toBe(true);
+    expect(await find(bvcId)).toContain(noteId);
+    // The share is tenant-scoped: the same teacher under Acme still finds nothing.
+    expect(await find(acmeId)).toHaveLength(0);
+    // And the acting-as split holds: the share is addressed to the ACCOUNT, so a viewer who is
+    // only "acting as" the teacher's learner id never inherits it.
+    const asSomeoneElse = await searchNotesInCourse(
+      bvcId,
+      teacherId,
+      authorId,
+      courseId,
+      "isolation test",
+    );
+    expect(asSomeoneElse.map((n) => n.id)).not.toContain(noteId);
+
+    expect(await unshareNote(bvcId, authorId, noteId, teacherId)).toBe(true);
+    expect(await find(bvcId)).not.toContain(noteId);
+  });
+
+  it("lets a teacher search the notes they sent, and never leaks them across tenants", async () => {
+    const { db } = await import("@/db/client");
+    const { cohortMembers, cohorts } = await import("@/db/schema");
+    const { eq } = await import("drizzle-orm");
+    const { createTeacherNote, searchNotesInCourse } = await import("@/db/queries/notes");
+
+    const [cohort] = await db
+      .insert(cohorts)
+      .values({ tenantId: bvcId, ownerId: teacherId, name: `iso-notes-search-${stamp}` })
+      .returning();
+    try {
+      await db
+        .insert(cohortMembers)
+        .values({ tenantId: bvcId, cohortId: cohort.id, userId: authorId });
+      const sent = await createTeacherNote({
+        tenantId: bvcId,
+        courseId,
+        lessonId,
+        authorId: teacherId,
+        cohortId: cohort.id,
+        body: "iso search sent note",
+      });
+
+      const forTeacher = await searchNotesInCourse(
+        bvcId,
+        teacherId,
+        teacherId,
+        courseId,
+        "iso search sent",
+      );
+      expect(forTeacher.map((n) => n.id)).toContain(sent.id);
+      // The member sees it as a teacher note; a non-member does not.
+      const forMember = await searchNotesInCourse(
+        bvcId,
+        authorId,
+        authorId,
+        courseId,
+        "iso search sent",
+      );
+      expect(forMember.map((n) => n.id)).toContain(sent.id);
+      expect(
+        await searchNotesInCourse(acmeId, teacherId, teacherId, courseId, "iso search sent"),
+      ).toHaveLength(0);
+    } finally {
+      await db.delete(cohorts).where(eq(cohorts.id, cohort.id));
+    }
+  });
+
+  // plans/61 §0: a student's private note stays private FROM THEIR GUARDIAN. The family report's
+  // gate is isGuardianOf, but the query behind it is the thing that must never carry a personal
+  // note, because a widened query would leak through a correct gate.
+  it("never puts a student's personal note in the guardian view", async () => {
+    const { db } = await import("@/db/client");
+    const { cohortMembers, cohorts, guardians, users } = await import("@/db/schema");
+    const { eq } = await import("drizzle-orm");
+    const { isGuardianOf } = await import("@/db/queries/family");
+    const { createTeacherNote, listTeacherNotesSentToStudent } = await import("@/db/queries/notes");
+
+    const guardianId = `iso-note-guardian-${stamp}`;
+    await db
+      .insert(users)
+      .values({ id: guardianId, email: `${guardianId}@isolation.test`, name: "Iso Guardian" });
+    const [cohort] = await db
+      .insert(cohorts)
+      .values({ tenantId: bvcId, ownerId: teacherId, name: `iso-notes-guardian-${stamp}` })
+      .returning();
+    try {
+      await db.insert(guardians).values({
+        tenantId: bvcId,
+        guardianUserId: guardianId,
+        studentUserId: authorId,
+      });
+      // The gate the family report applies before it reads anything.
+      expect(await isGuardianOf(bvcId, guardianId, authorId)).toBe(true);
+      expect(await isGuardianOf(acmeId, guardianId, authorId)).toBe(false);
+      await db
+        .insert(cohortMembers)
+        .values({ tenantId: bvcId, cohortId: cohort.id, userId: authorId });
+      const sent = await createTeacherNote({
+        tenantId: bvcId,
+        courseId,
+        lessonId,
+        authorId: teacherId,
+        cohortId: cohort.id,
+        body: "iso guardian-visible teacher note",
+      });
+
+      const visible = await listTeacherNotesSentToStudent(bvcId, authorId);
+      const ids = visible.map((n) => n.id);
+      // The teacher's note is what a guardian is entitled to see.
+      expect(ids).toContain(sent.id);
+      // The child's own note is not, and no row in the result is a personal note at all.
+      expect(ids).not.toContain(noteId);
+      expect(visible.every((n) => n.kind === "teacher")).toBe(true);
+      // Cross-tenant, the guardian view is empty like every other read.
+      expect(await listTeacherNotesSentToStudent(acmeId, authorId)).toHaveLength(0);
+    } finally {
+      await db.delete(cohorts).where(eq(cohorts.id, cohort.id));
+      await db.delete(users).where(eq(users.id, guardianId));
+    }
   });
 });

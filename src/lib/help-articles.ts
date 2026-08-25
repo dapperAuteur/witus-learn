@@ -422,8 +422,9 @@ switch anywhere.
   was attached to has changed", never deleted.
 - **Share with teacher…** on a note shares that one note with a teacher (an owner of a class
   they belong to). They can unshare at any time, and the note says in words who can see it.
-- **Search my notes** finds their notes and highlights across the whole course, and **Download my
-  notes (.md)** exports them with the quoted passages and lesson links.
+- **Search notes in this course** finds their own notes and highlights, plus any note a teacher
+  sent them, across the whole course. Nobody else's notes are searchable, and the box says so.
+  **Download my notes (.md)** exports their own with the quoted passages and lesson links.
 
 **For teachers:**
 
@@ -433,6 +434,9 @@ switch anywhere.
   notification, and it never leaves the lesson page.
 - Notes students shared with you appear under **Shared with you by students** on the lesson they
   wrote them on. A student can withdraw a share at any time.
+- The same search box finds them across the whole course, along with the notes you sent your
+  classes, so you do not have to remember which lesson a student was writing on. Each result says
+  whose note it is. A withdrawn share disappears from your search the moment it is withdrawn.
 
 **For guardians:** the Family report (/family → report) shows notes a teacher sent their child.
 A child's own notes stay private to the child unless the child shares them, and the report says

@@ -204,6 +204,15 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   teacher-sent notes on the family report, per-course note search, and markdown export. The
   visibility rules live in src/db/queries/notes.ts and are pinned by
   tests/isolation/notes.db.test.ts.
+- ✅ **Note search finds a teacher's half too** (\`feat/notes-annotations-finish\`, no migration):
+  search shipped covering only what a LEARNER can see, so a teacher searching a course got their
+  own private notes and nothing else. Notes students shared with them and notes they sent were
+  reachable only by remembering which lesson they were written on, which is exactly what a search
+  box exists to avoid. Both are now in scope (plans/61 §4), the two ids are kept apart so the
+  teaching half follows the signed-in account rather than a managed child being acted as, and
+  every hit is labelled with whose note it is. Withdrawing a share removes the note from search in
+  the same breath as from the lesson; the isolation suite pins both that and the rule that a
+  student's personal note never reaches their guardian.
 - ✅ **In-course text search** (\`feat/course-search\`, plans/61 §5, build-order step 2): a search box
   on the course page ("Search this course") for enrolled learners, editors, and invited auditors.
   Searches the PUBLISHED lessons of that one course: titles, body prose, \`:::reveal\` self-checks

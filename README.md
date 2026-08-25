@@ -296,12 +296,21 @@ owner of a cohort they belong to), revocably — never a bulk toggle, never stud
 teacher attaches a note to a lesson for a cohort or a subset of it (one `audience` model), which
 renders in those students' panels on that lesson: **content, not messaging** — no notification,
 no inbox, no email. Guardians see teacher-sent notes on the family report; a child's own notes
-stay private unless the child shares them. Notes are searchable per course and exportable as
-markdown with quoted passages and lesson links (`/api/courses/[id]/notes/export`).
+stay private unless the child shares them. Notes are exportable as markdown with quoted passages
+and lesson links (`/api/courses/[id]/notes/export`).
+
+**Note search covers the four visibility rules, not just "mine"** (plans/61 §4). A learner's
+search returns their own notes plus teacher notes sent to them; a teacher's search *also* returns
+notes students shared with them and notes they sent, which neither learner rule can reach because
+a teacher owns a cohort rather than belonging to it. Every hit says whose note it is, and the box
+states its own scope in words rather than implying it. The two ids are kept apart on purpose: own
+notes follow the active learner (so acting as a managed child searches that child's notes), the
+teaching half follows the signed-in account (so a child being acted as never inherits it).
 
 All queries live in [src/db/queries/notes.ts](src/db/queries/notes.ts) behind the scoped DAL;
 `tests/isolation/notes.db.test.ts` pins the visibility rules (cross-tenant, cross-author,
-unshared-note, and recipient-narrowing leakage all fail the suite).
+unshared-note, recipient-narrowing, teacher-search, and guardian-view leakage all fail the suite,
+including the one that matters most: a student's personal note never reaches their guardian).
 ## In-app recording: audio and video
 
 In-app lesson recording captures **video as well as audio**: 720p front-camera capture with a

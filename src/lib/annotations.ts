@@ -20,6 +20,28 @@ export function quoteStillResolves(bodyText: string | null | undefined, quote: s
   return normalizeForMatch(bodyText).includes(normalizeForMatch(quote));
 }
 
+/** Which visibility rule put a note into a search result (plans/61 §4). The four are exhaustive:
+ *  the SQL in src/db/queries/notes.ts admits nothing else. */
+export type NoteSearchSource = "mine" | "teacher" | "shared" | "sent";
+
+/**
+ * Label a search hit by WHOSE note it is. Pure, and separate from the route, because getting it
+ * wrong is a privacy-shaped bug rather than a cosmetic one: an unlabelled hit reads as the
+ * viewer's own writing, and a note a student shared must never be presented that way.
+ *
+ * `viewerId` is the active learner (own notes follow the act-as chokepoint); `accountId` is the
+ * signed-in account (the teaching half). They differ only when a parent is acting as a managed
+ * child, and then the teaching half must NOT be attributed to the child.
+ */
+export function noteSearchSource(
+  note: { kind: string; authorId: string },
+  viewerId: string,
+  accountId: string,
+): NoteSearchSource {
+  if (note.kind === "teacher") return note.authorId === accountId ? "sent" : "teacher";
+  return note.authorId === viewerId ? "mine" : "shared";
+}
+
 /** Field caps, enforced in the API and mirrored in the composer UI. */
 export const NOTE_BODY_MAX = 8000;
 export const NOTE_QUOTE_MAX = 1000;
