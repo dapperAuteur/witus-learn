@@ -361,6 +361,341 @@ Horne, G. (2000). *Race woman: The lives of Shirley Graham Du Bois*. New York Un
 
 Aptheker, B. (2019, March 11). *Shirley Graham Du Bois's biographical writings*. African American Intellectual History Society. https://www.aaihs.org/shirley-graham-du-boiss-biographical-writings/`,
     },
+    // ── Section 4 ──────────────────────────────────────────────────────────────────────────────
+    {
+      slug: "sg-fort-huachuca",
+      title: "13 · Fort Huachuca, and the job she lost for doing it",
+      section: "Section 4 · The organizer, 1942 to 1951",
+      body: `In 1942 she took a wartime post as a YWCA and USO director at Fort Huachuca, Arizona, the Army installation where the segregated Black infantry divisions trained. She was dismissed for fighting discrimination against Black soldiers there (Horne & Stevens, 2009).
+
+**A note on what this course will not repeat.** A widely reproduced summary adds a specific body count to the trouble at the post. It comes from the same entry that seats a governor of Ohio at her opera, and this course does not print a number it can only get from a source it has already caught. The documented core is enough: she took the soldiers' side against the post, and it cost her the job.
+
+**She went straight to the NAACP.** She arrived in New York in 1943 as an assistant field director. The organization was in the middle of the largest growth in its history, from roughly forty thousand members in 1940 to four hundred thousand by 1945, and she thought a million was reachable. She raised more than seven thousand dollars in 1943 alone (Horne & Stevens, 2009).
+
+**Then she quit, and the reason is not what the summaries assume.** She stayed about a year and resigned, and Horne and Stevens are explicit that the decision was not the apparent result of an ideological pull toward Communism. Her stated reason was the urge to do creative work. The next year she published her first book.
+
+**Two errors this lesson exists to prevent.**
+
+1. **She was not pushed out of the NAACP.** She resigned, for a reason she gave at the time, in a year when she was one of its more effective fundraisers.
+2. **Do not merge that resignation with the Du Bois rupture.** W. E. B. Du Bois was ousted from the NAACP in 1948, five years later. She attacked the association publicly for it, calling the ouster a brazen act of sheer persecution that showed the archaic and anti democratic character of the NAACP's structure (quoted in Horne & Stevens, 2009). That is a different event, with different people, and collapsing the two produces a tidy story in which she left the NAACP because of him, which is exactly backwards in time.
+
+**The general lesson.** When a woman's departure from an institution is later attributed to a man she had not yet married, check the dates before you accept the explanation. Chronology is the cheapest correction available and almost nobody runs it.
+
+:::reveal What ended Shirley Graham's wartime USO post, and where did she go next? ||| She was dismissed from Fort Huachuca for fighting discrimination against Black soldiers, and went to New York in 1943 as an assistant field director of the NAACP.
+
+:::reveal Was she forced out of the NAACP, and what reason did she give for leaving? ||| No. She resigned after about a year, and the stated reason was the urge to do creative work, not an ideological turn.
+
+:::reveal Why does the lesson insist on separating her 1944 resignation from the 1948 Du Bois ouster? ||| They are five years and different people apart. Merging them produces a story in which she left the NAACP because of a man she had not yet married, which reverses the chronology.
+
+## Vocabulary
+- **USO**: the United Service Organizations, which ran welfare and recreation services for American troops, staffed in part through the YWCA.
+- **Fort Huachuca**: the Arizona Army post where the segregated Black infantry divisions trained during the Second World War.
+- **Assistant field director**: an NAACP staff role covering organizing and fundraising in the branches, distinct from national office.
+- **Chronology check**: testing an explanation by asking whether its cause happened before its effect, the cheapest correction in historical writing.
+
+## Sources
+Horne, G. (2000). *Race woman: The lives of Shirley Graham Du Bois*. New York University Press.
+
+Horne, G., & Stevens, M. (2009). Shirley Graham Du Bois: Portrait of the Black woman artist as a revolutionary. In D. F. Gore, J. Theoharis, & K. Woodard (Eds.), *Want to start a revolution? Radical women in the Black freedom struggle* (pp. 95-114). New York University Press.`,
+    },
+    {
+      slug: "sg-the-left",
+      title: "14 · Where she actually stood, without a single label",
+      section: "Section 4 · The organizer, 1942 to 1951",
+      body: `Her politics get compressed into one word, and the word is usually chosen by whoever is doing the compressing. Here is the record, in pieces, because the pieces do not reduce.
+
+**Electoral, 1948.** She and Du Bois both backed Henry Wallace's Progressive Party, and she played a leading role at its July 1948 nominating convention in Philadelphia. This is a person who, in the same decade, worked for the NAACP and campaigned for a third party against the Democratic incumbent.
+
+**Anticolonial.** She was active in the Council on African Affairs, founded by Paul Robeson in 1937 and led by the late 1940s by Du Bois with Alphaeus Hunton. Note the verb. No source found for this course gives her an office or a title in the Council, so it says active and associated, never officer. That distinction is the same one lesson 5 made about the Federal Theatre, and it is the discipline that keeps a corrective course honest.
+
+**Peace.** The Peace Information Center is the organization at the centre of the 1951 prosecution in the next lesson. She was not a defendant. She organized the defence.
+
+**Black women's organizing.** In 1951 she co founded the Sojourners for Truth and Justice with Eslanda Robeson and Louise Thompson Patterson, a radical Black women's organization whose Call to Negro Women is dated 29 September 1951 and drew more than a hundred and thirty women from fourteen states within two weeks (Horne & Stevens, 2009).
+
+**The Communist Party question, held open on purpose.** In a spring 1945 letter she wrote that two years earlier she had had the good fortune of becoming a member of the Communist Party. Peter V. Cacchione, a Communist member of the New York City Council, wrote to Earl Browder that she had joined about two years before. An FBI memorandum of 29 June 1950 records the informant Louis Budenz saying she was represented to him as a staunch Party member. Against that, a standard reference encyclopedia states she never joined and was instead a self described proud apologist for Communism, the phrase her *New York Times* obituary used. Horne treats her as a member while recording that her own son was not certain beyond a shadow of a doubt, and that she was never forthcoming about it.
+
+**What this course concludes.** The strongest evidence is her own 1945 sentence, and it is good evidence. But "card carrying Communist" as a permanent label fails on the rest of the record: she broke with the American party over the Sino Soviet split, and in 1970 she disavowed those ties to get back into the United States. A label that has to be true for fifty years is the wrong tool for a person who kept moving.
+
+:::reveal What is the strongest evidence that Graham joined the Communist Party, and what is the strongest evidence against a permanent label? ||| Her own spring 1945 letter saying she had joined two years earlier, corroborated by Peter Cacchione's letter to Earl Browder. Against the label: she broke with the American party over the Sino Soviet split and disavowed the ties in 1970 to regain US entry.
+
+:::reveal Why does this course say she was "active in" the Council on African Affairs rather than an officer of it? ||| Because no source gives her an office or title there, and inventing one in her favour would repeat the error the course exists to correct.
+
+:::reveal Which organization did she co found in 1951, with whom, and what triggered it? ||| The Sojourners for Truth and Justice, with Eslanda Robeson and Louise Thompson Patterson, organized in response to the government's prosecution of W. E. B. Du Bois.
+
+## Vocabulary
+- **Progressive Party**: Henry Wallace's 1948 third party campaign, which drew Black and left support away from the Democratic ticket.
+- **Council on African Affairs**: the anticolonial organization founded by Paul Robeson in 1937, later led by W. E. B. Du Bois with Alphaeus Hunton.
+- **Sojourners for Truth and Justice**: the radical Black women's organization founded in 1951, active for about two years.
+- **Static label**: a single political word applied across decades, which fails on anyone whose positions changed, and hers did.
+
+## Sources
+Horne, G. (2000). *Race woman: The lives of Shirley Graham Du Bois*. New York University Press.
+
+Horne, G., & Stevens, M. (2009). Shirley Graham Du Bois: Portrait of the Black woman artist as a revolutionary. In D. F. Gore, J. Theoharis, & K. Woodard (Eds.), *Want to start a revolution? Radical women in the Black freedom struggle* (pp. 95-114). New York University Press.
+
+Stabile, C. A. (n.d.). *Graham, Shirley*. The Broadcast 41, University of Oregon. https://broadcast41.uoregon.edu/biography/graham-shirley`,
+    },
+    {
+      slug: "sg-february-1951",
+      title: "15 · February 1951: an indictment, an arraignment, and a wedding",
+      section: "Section 4 · The organizer, 1942 to 1951",
+      body: `This is the fifteenth lesson of twenty five, and it is where the marriage arrives. Look at what she had already done before you read the month.
+
+**The month, in order.**
+- **9 February 1951.** W. E. B. Du Bois and other officers of the Peace Information Center are indicted for failing to register as agents of a foreign principal under the Foreign Agents Registration Act.
+- **16 February 1951.** He is arraigned in federal court in Washington, searched, fingerprinted and briefly handcuffed. He turned 83 that same month.
+- **27 February 1951.** They marry in New York. The date comes from an item in the W. E. B. Du Bois papers at UMass Amherst that records the ceremony.
+- **18 November 1951.** The trial opens after a defence postponement, and ends in acquittal from the bench when the judge holds the government produced no evidence of the Center's Soviet ties.
+
+**Two corrections the sequence forces.** First, a variant wedding date of 14 February circulates. It comes from a reference entry that also gives her birth year as 1907 and her age at death as 69, both demonstrably wrong, so this course prints 27 February and files a source check. Second, and more common, they did not marry "on the eve of the trial." They married eighteen days after the indictment and about nine months before the trial began.
+
+**Why they married then.** Her son David Du Bois later told *Essence* that the wedding was timed so that, come what may, she would have unimpeded access to him. That is spousal access to a man who might go to prison. It is not, and no source claims it is, about a spouse's privilege not to testify.
+
+**What she did next.** She organized. The Sojourners for Truth and Justice grew directly out of the campaign against this prosecution, and Du Bois published his own account of the affair the following year as *In Battle for Peace: The Story of My 83rd Birthday*, with comment by Shirley Graham.
+
+**Notice that last detail, because it is this course in miniature.** Her writing about the case exists, and it exists **inside his book**, under a byline that describes it as comment. She had eight published books of her own by then. The most durable placement of her prose about the most public event of that year is an appendage to his.
+
+:::reveal Put the four February and November 1951 events in order with their dates. ||| Indictment 9 February, arraignment 16 February, marriage 27 February, trial opening 18 November followed by acquittal from the bench.
+
+:::reveal Why is "they married on the eve of the trial" wrong? ||| The trial began about nine months later, on 18 November 1951. The wedding came eighteen days after the indictment.
+
+:::reveal What reason did David Du Bois give for the timing of the marriage? ||| That it was timed so his mother would have unimpeded access to Du Bois whatever happened, meaning spousal access if he were imprisoned. Not testimonial privilege.
+
+:::reveal In what form did Shirley Graham's own writing about the 1951 case reach print, and why does this course point at it? ||| As comment inside W. E. B. Du Bois's book In Battle for Peace. She had eight books of her own by then, and her prose on that year's biggest event survives as an appendage to his.
+
+## Vocabulary
+- **Foreign Agents Registration Act**: the 1938 statute requiring agents of foreign principals to register, the law the 1951 indictment charged.
+- **Arraignment**: the court appearance at which a defendant is formally charged and enters a plea, distinct from the trial.
+- **Acquittal from the bench**: a judge ending a case for want of evidence rather than sending it to a jury, which is what happened in November 1951.
+- **Placement**: where a piece of writing physically appears, which decides how it is cited and remembered independent of its quality.
+
+## Sources
+Du Bois, W. E. B. (1952). *In battle for peace: The story of my 83rd birthday* (with comment by Shirley Graham). Masses & Mainstream.
+
+Horne, G., & Stevens, M. (2009). Shirley Graham Du Bois: Portrait of the Black woman artist as a revolutionary. In D. F. Gore, J. Theoharis, & K. Woodard (Eds.), *Want to start a revolution? Radical women in the Black freedom struggle* (pp. 95-114). New York University Press.
+
+University of Massachusetts Amherst Libraries. (n.d.). *W. E. B. Du Bois papers, 1803-1999* (MS 312). Special Collections and University Archives. http://findingaids.library.umass.edu/ead/mums312`,
+    },
+    // ── Section 5 ──────────────────────────────────────────────────────────────────────────────
+    {
+      slug: "sg-the-file",
+      title: "17 · What a blacklist actually costs, in contracts",
+      section: "Section 5 · What the state did, 1950 to 1961",
+      body: `Surveillance is usually taught as an atmosphere. It is more useful taught as an itemised bill, and in her case the bill survives.
+
+**June 1950, two things at once.** *Red Channels*, the pamphlet naming broadcast industry figures as Communist affiliated, was published, and she was in it. In the same month the informant Louis Budenz told the FBI she was a secret Communist, opening roughly twenty five years of surveillance (Stabile, n.d.).
+
+**What that cost, item by item.** Demands that her books be withdrawn from schools and libraries in Scarsdale, New York. Five publishers rejecting her Anne Royall novel with no criticism of the manuscript offered. A book tour for her Benjamin Banneker biography cancelled with no explanation given (Stabile, n.d.). Notice the shape. Nothing here is a prosecution and nothing is appealable. It is a set of private decisions by private parties, each individually deniable, that together end a working writer's access to the market.
+
+**The file.** On 3 October 1950 J. Edgar Hoover directed the New York field office to investigate her in order to decide whether her name belonged in the Security Index. The FBI accumulated over two thousand pages on her, separate from the far larger file on Du Bois, and cultivated the couple's friends and employees as potential informants (Stabile, n.d.).
+
+**Now a correction that is repeated almost everywhere.** She is often said to have testified before the House Committee on Un American Activities. On 25 June 1953 she received a subpoena signed by Joseph McCarthy to appear on 15 July 1953. McCarthy chaired the **Senate** Permanent Subcommittee on Investigations, which is a different body in a different chamber. She had separately appeared on a 1948 HUAC list of Communist fronts, which is probably where the confusion starts, and being named on a list is not testifying. No evidence has been located that she testified before HUAC at all. Whether she appeared before McCarthy's subcommittee on 15 July 1953 is unsettled, and a source check is filed against the Senate's own executive session transcripts, unsealed in 2003.
+
+**The transferable point.** When you read that somebody was blacklisted, ask what it cost in nameable transactions. A cancelled tour, a withdrawn title, five silent rejections. Those are checkable and they are what actually happened to a career, while atmosphere is not something anyone can verify or compensate.
+
+:::reveal Name three specific, documented costs of the blacklist to Graham's writing career. ||| Demands to withdraw her books from Scarsdale schools and libraries, five publishers rejecting her Anne Royall novel without criticising the manuscript, and a cancelled book tour for her Benjamin Banneker biography.
+
+:::reveal What is the standard error about her and HUAC, and what actually happened? ||| She is often said to have testified before HUAC. She was named on a 1948 HUAC list of fronts, and in 1953 was subpoenaed by Joseph McCarthy's Senate Permanent Subcommittee on Investigations, a different body. No evidence has been found that she testified before HUAC.
+
+:::reveal Why does this lesson insist on itemising a blacklist rather than describing a climate? ||| Because private, individually deniable decisions are what actually ended her market access, and they are checkable in a way that atmosphere is not.
+
+## Vocabulary
+- **Red Channels**: the June 1950 pamphlet listing broadcast figures alleged to have Communist affiliations, which functioned as an industry blacklist.
+- **Security Index**: the FBI's list of people to be detained in a national emergency, which is what the 1950 Hoover memorandum was assessing her for.
+- **Permanent Subcommittee on Investigations**: the Senate body Joseph McCarthy chaired, frequently confused with the House Committee on Un American Activities.
+- **Deniable sanction**: a private decision, such as cancelling a tour, that damages a career while leaving nothing to appeal against.
+
+## Sources
+Horne, G. (2000). *Race woman: The lives of Shirley Graham Du Bois*. New York University Press.
+
+Stabile, C. A. (n.d.). *Graham, Shirley*. The Broadcast 41, University of Oregon. https://broadcast41.uoregon.edu/biography/graham-shirley`,
+    },
+    {
+      slug: "sg-passport",
+      title: "18 · Three different doors, and why sources keep confusing them",
+      section: "Section 5 · What the state did, 1950 to 1961",
+      body: `Three separate things happened to her ability to cross a border, in three different decades, under three different mechanisms. Almost every short account blurs at least two of them, so learn them apart.
+
+**Door one: the passport, through most of the 1950s.** Both hers and Du Bois's passports were withheld for most of the decade, which confined them to domestic affairs (Horne & Stevens, 2009). Applications to attend a peace conference in Brazil were denied around 1952. Her son David was separately refused a passport because of her activities, which is worth pausing on: the sanction reached a person who had done nothing.
+
+**When it lifted.** Their passports were restored in 1958, the year the Supreme Court held in *Kent v. Dulles* that Congress had not authorised the Secretary of State to withhold a passport on the basis of a citizen's beliefs and associations.
+
+**Door two: renunciation, 1963.** That is a different act entirely, done by the citizen rather than to them, before a diplomatic officer, and it is section 6's material.
+
+**Door three: a visa, 1970.** By 1970 she was a foreign national, so the question was no longer whether the United States would let a citizen leave but whether it would let a foreigner in. On 5 May 1970 the Justice Department denied her entry under the McCarran Walter Act, overruling the State Department, on the ground that she had been associated with more than thirty organizations on the Attorney General's list of subversive groups. On 16 August 1970, after public pressure, the decision was reversed and the Immigration and Naturalization Service concurred in the State Department's recommendation. She visited in 1971 and again in 1975.
+
+**Why the confusion matters.** A sentence like "the United States took away her citizenship" is false in all three cases. In the 1950s she kept her citizenship and lost her mobility. In 1963 she gave up the citizenship herself. In 1970 she was refused a visa and then granted one. Each is a different actor, a different legal instrument and a different remedy, and a reader who cannot tell them apart cannot evaluate any claim about what was done to her.
+
+:::reveal What happened to Graham's passport in the 1950s, and when did it change? ||| It was withheld for most of the decade, confining her to domestic work. It was restored in 1958, the year of Kent v. Dulles.
+
+:::reveal What did the Supreme Court hold in Kent v. Dulles? ||| That Congress had not authorised the Secretary of State to withhold a passport because of a citizen's beliefs and associations.
+
+:::reveal Distinguish the three border mechanisms in one sentence each. ||| A 1950s passport denial kept a citizen from leaving; a 1963 renunciation was an act she performed herself before a diplomatic officer; a 1970 visa denial and reversal governed whether a foreign national could enter.
+
+## Vocabulary
+- **Passport denial**: withholding a citizen's travel document, which restricts departure without touching citizenship.
+- **Kent v. Dulles**: the 1958 Supreme Court decision holding that Congress had not authorised passport denial over beliefs and associations.
+- **Renunciation**: the formal act by which a citizen gives up nationality before a diplomatic or consular officer.
+- **McCarran Walter Act**: the 1952 immigration statute under which her 1970 entry was first refused on association grounds.
+
+## Sources
+Horne, G., & Stevens, M. (2009). Shirley Graham Du Bois: Portrait of the Black woman artist as a revolutionary. In D. F. Gore, J. Theoharis, & K. Woodard (Eds.), *Want to start a revolution? Radical women in the Black freedom struggle* (pp. 95-114). New York University Press.
+
+*Kent v. Dulles*, 357 U.S. 116 (1958). https://supreme.justia.com/cases/federal/us/357/116/
+
+Stabile, C. A. (n.d.). *Graham, Shirley*. The Broadcast 41, University of Oregon. https://broadcast41.uoregon.edu/biography/graham-shirley`,
+    },
+    {
+      slug: "sg-leaving",
+      title: "19 · Freedomways, the invitation, and leaving in 1961",
+      section: "Section 5 · What the state did, 1950 to 1961",
+      body: `In the spring of 1961 a new quarterly appeared, and she was its first editor. By the autumn she had left the country.
+
+**Freedomways.** Founded in 1961, it became the central journal of the Black left for a quarter of a century. Shirley Graham Du Bois was its first editor, and she resigned the post when she moved to Ghana later that same year. Esther Cooper Jackson then edited it until it closed in 1985.
+
+**Get the tense right.** A flat sentence like "she became the editor of *Freedomways*" implies she ran it. She held the chair for months, in its first year. That is a real and worth stating fact, and it is a smaller one than the sentence suggests. This course has spent five sections objecting to claims that shrink her; the same discipline forbids one that inflates her.
+
+**What she did keep doing.** She shaped the journal's internationalism from Accra, soliciting work from Tom Mboya, Oliver Tambo and Julius Nyerere. She later fell out with Esther Cooper Jackson after Du Bois's death, when the journal ran Roy Wilkins on Du Bois and would not take her own choice, Malcolm X (Horne & Stevens, 2009). She published her own account of the 1966 Ghanaian coup there in 1966.
+
+**Why they left.** Kwame Nkrumah invited W. E. B. Du Bois to Ghana to direct the *Encyclopedia Africana*. They arrived in Accra in October 1961. She was 64.
+
+**Two things that invitation was not.** It was not an offer to her, and the encyclopedia was not her project. Du Bois directed it until his death in August 1963, after which Alphaeus Hunton, who had come to Ghana in 1962, ran the secretariat until the 1966 coup. No source found for this course gives her a title or a function on the encyclopedia. If you want to know what was hers in Ghana, the answer is in the next section, and it is a bigger answer than the encyclopedia would have been.
+
+**And a date to distrust.** Several summaries say that in 1961 both of them renounced American citizenship and became Ghanaian citizens. Neither half of that is right for 1961, and section 6 works the actual sequence, which is messier and more interesting.
+
+:::reveal What position did Graham hold at Freedomways, and for how long? ||| First editor, from the journal's founding in spring 1961 until she resigned to move to Ghana later that year. Esther Cooper Jackson then edited it until 1985.
+
+:::reveal Whose project was the Encyclopedia Africana, and who ran it after 1963? ||| W. E. B. Du Bois directed it until his death in August 1963; Alphaeus Hunton then ran the secretariat until the 1966 coup. No source gives Shirley Graham Du Bois a role on it.
+
+:::reveal Why does the lesson correct an overstatement about her Freedomways role? ||| Because the discipline that forbids claims which shrink her also forbids claims that inflate her. She held the chair for months, not for the journal's run.
+
+## Vocabulary
+- **Freedomways**: the quarterly founded in 1961 that became the central journal of the Black left, published until 1985.
+- **Encyclopedia Africana**: the projected multi volume reference work on Africa and the diaspora that Nkrumah invited Du Bois to Ghana to direct.
+- **Secretariat**: the working office of a large project, in this case the body Alphaeus Hunton ran after Du Bois's death.
+- **Tenseless claim**: a statement of a role with no dates attached, which quietly implies a longer tenure than the record supports.
+
+## Sources
+Horne, G., & Stevens, M. (2009). Shirley Graham Du Bois: Portrait of the Black woman artist as a revolutionary. In D. F. Gore, J. Theoharis, & K. Woodard (Eds.), *Want to start a revolution? Radical women in the Black freedom struggle* (pp. 95-114). New York University Press.
+
+Du Bois, S. G. (1966). What happened in Ghana? The inside story. *Freedomways*, Spring 1966, 201-223.
+
+Schlesinger Library, Radcliffe Institute. (n.d.). *Papers of Shirley Graham Du Bois, 1865-1998 (inclusive), 1905-1975 (bulk)*. Harvard University. https://hollisarchives.lib.harvard.edu/repositories/8/resources/5016`,
+    },
+    // ── Section 6 ──────────────────────────────────────────────────────────────────────────────
+    {
+      slug: "sg-ghana-television",
+      title: "21 · What was actually hers in Ghana: a television service",
+      section: "Section 6 · Ghana, Cairo, Beijing, 1961 to 1977",
+      body: `Ask what she built in Ghana and the answer is not the encyclopedia. It is a national broadcaster, and she was appointed to build it at 67.
+
+**The appointment.** She became director of Ghana Television on 1 February 1964 (Gipson, 2024). The media historian Jennifer Blaylock calls her Ghana Television's first director, credits her with devising it as an anticolonial and pan African indigenous television system, and notes she was likely the first Black woman to head a national station (Blaylock, 2022).
+
+**A name to get right.** Many accounts call her director of television for the Ghana Broadcasting Corporation. The broadcaster did not carry that name during her tenure. It became the Ghana Broadcasting Corporation under a National Liberation Council decree in 1968, two years after she left. Before that it was the Ghana Broadcasting Service. Writing "GBC" onto 1964 is a small anachronism that quietly backdates an institution.
+
+**Eighteen months of building, then a launch.** Ghana Television began broadcasting on 31 July 1965, after months of test transmissions, with facilities built by Marconi. Nkrumah's inauguration speech was recorded and survives (Nkrumah, 1965). Her appointment came about a year and a half before the first broadcast, which is the actual job: a director appointed that far ahead is not presenting programmes, she is designing a system.
+
+**Three decisions with her name on them.** The service would carry no advertising, on the stated ground that its primary function was not to serve big business. Programming would be produced in Ghana to an unusually high degree. And she brokered a supply agreement with the Japanese manufacturer Sanyo, displacing Philips of the Netherlands, the colonial era supplier of televisions to Ghana (Horne & Stevens, 2009).
+
+**One number this course will not print.** The share of locally made programming is reported at eighty five per cent in one place and seventy five per cent in another. Both figures circulate, they cannot both be right, and a source check is filed rather than a number chosen.
+
+**Her own account of the purpose**, from her papers: the television being planned would be a channel for education, for increased understanding, and for developing and unifying the peoples of Africa (quoted in Gipson, 2024).
+
+:::reveal What was Shirley Graham Du Bois's documented role in Ghana, with dates? ||| Director of Ghana Television, appointed 1 February 1964, in post until the February 1966 coup. The service began broadcasting on 31 July 1965.
+
+:::reveal Why is "director of television for the Ghana Broadcasting Corporation" an inaccurate description of her job? ||| The broadcaster only took that name under a 1968 decree, two years after she left. During her tenure it was the Ghana Broadcasting Service.
+
+:::reveal Name two structural decisions attributed to her at Ghana Television. ||| No advertising, on the ground that the service was not there to serve big business, and a supply deal with Sanyo of Japan that displaced Philips, the colonial era supplier.
+
+## Vocabulary
+- **Ghana Television**: the national television service that began broadcasting on 31 July 1965, with her as its first director.
+- **Anachronism**: applying a later name, title or institution to an earlier period, as "Ghana Broadcasting Corporation" does to 1964.
+- **Test transmission**: a broadcast made to prove the network before a public launch, which is why a service exists technically before it exists publicly.
+- **Supply agreement**: the contract deciding which manufacturer's receivers a country buys, which is an industrial policy decision as much as a technical one.
+
+## Sources
+Blaylock, J. (2022). The mother, the mistress, and the cover girls: Ghana Broadcasting Corporation and the coloniality of gender. *Feminist Media Histories, 8*(1), 102-133. https://doi.org/10.1525/fmh.2022.8.1.102
+
+Gipson, N. (2024, February 29). *In her own right: Shirley Graham Du Bois in Ghana*. Welfare Citizenship and Intersectional Feminism, University of Bristol. https://wcif.blogs.bristol.ac.uk/2024/02/29/in-her-own-right-shirley-graham-du-bois-in-ghana/
+
+Horne, G., & Stevens, M. (2009). Shirley Graham Du Bois: Portrait of the Black woman artist as a revolutionary. In D. F. Gore, J. Theoharis, & K. Woodard (Eds.), *Want to start a revolution? Radical women in the Black freedom struggle* (pp. 95-114). New York University Press.
+
+Nkrumah, K. (1965). *Inauguration of Ghana Television Service* [Speech]. Internet Archive. https://archive.org/details/inaugurationofghanatelevisionservice_20200416`,
+    },
+    {
+      slug: "sg-citizenship-coup",
+      title: "22 · Citizenship, the coup, and what the record will not settle",
+      section: "Section 6 · Ghana, Cairo, Beijing, 1961 to 1977",
+      body: `Two citizenship stories run through these years. One is reasonably documented. The other is not, and this lesson is about refusing to pretend otherwise.
+
+**His, first, because it is the clearer one.** The United States refused to renew W. E. B. Du Bois's passport in early 1963. He became a Ghanaian citizen, and the Du Bois papers at UMass Amherst hold a letter from Ghana's Ministry of the Interior dated 16 February 1963 enclosing his certificate of citizenship. He died in Accra on 27 August 1963.
+
+**A distinction that is constantly collapsed.** Acquiring a foreign nationality and formally renouncing American citizenship before a consular officer are two different legal acts, and doing the first does not perform the second. Many accounts say Du Bois renounced his American citizenship. This course says he became a Ghanaian citizen after the United States refused to renew his passport, and stops there, because that is what the document shows.
+
+**Hers, which is genuinely unsettled.** Some sources put her Ghanaian citizenship in 1961, alongside his, which is also the year they arrived, and an arrival year is exactly the kind of date that contaminates a citizenship claim. A different account cites a Justice Department memorandum of 10 October 1963 recording that the American embassy at Accra had advised on 4 October 1963 that she had renounced her United States citizenship under section 349(a)(6) of the Immigration and Nationality Act of 1952, the formal renunciation provision, and on 5 October that she intended to apply for an American visa on a Ghanaian passport. That version is more specific and cites the right statute. It also comes from a journalist rather than a scholar, in an article that misstates her death year. **So this course prints no settled date and files a source check** against the FBI file and the State Department record.
+
+**The coup.** On the morning of 24 February 1966 the Ghanaian military deposed Nkrumah. She was placed under house arrest and removed from the television directorship. She was 69, and had run the service for two years. She published her own account that spring as "What Happened in Ghana? The Inside Story" in *Freedomways*, which makes her a participant and a primary source on the same event.
+
+**Then the second exile.** Not straight to Egypt, as summaries have it. She went to Tanzania, where she took citizenship, and then to Cairo in 1967, where her son David was working as a journalist. Cairo was her base for the rest of her life. Her citizenship chain therefore runs United States, then Ghana, then Tanzania, and she died a Tanzanian citizen (Horne & Stevens, 2009).
+
+:::reveal What does the documentary record show about W. E. B. Du Bois's citizenship, and what does it not show? ||| It shows a 16 February 1963 letter from Ghana's Ministry of the Interior enclosing his certificate of Ghanaian citizenship. It does not show that he formally renounced American citizenship, which is a separate legal act.
+
+:::reveal Why does this course print no date for Shirley Graham Du Bois's own change of citizenship? ||| Because the two candidate accounts conflict. The 1961 version matches her arrival year, and the more specific October 1963 version rests on a journalist's citation of a Justice Department memorandum in an article that gets her death year wrong.
+
+:::reveal Trace her citizenship chain and say where she went after the 1966 coup. ||| United States, then Ghana, then Tanzania, where she took citizenship after the coup, before settling in Cairo in 1967. She died a Tanzanian citizen.
+
+## Vocabulary
+- **Certificate of citizenship**: the document a state issues to record a grant of nationality, which is the primary evidence for such a claim.
+- **Section 349(a)(6)**: the provision of the Immigration and Nationality Act of 1952 covering formal renunciation before a diplomatic or consular officer abroad.
+- **Contaminating date**: a nearby, memorable year, such as an arrival, that gets substituted for the year actually being asked about.
+- **Participant source**: an account written by someone inside the event, which is both the best available detail and an interested witness.
+
+## Sources
+Du Bois, S. G. (1966). What happened in Ghana? The inside story. *Freedomways*, Spring 1966, 201-223.
+
+Horne, G., & Stevens, M. (2009). Shirley Graham Du Bois: Portrait of the Black woman artist as a revolutionary. In D. F. Gore, J. Theoharis, & K. Woodard (Eds.), *Want to start a revolution? Radical women in the Black freedom struggle* (pp. 95-114). New York University Press.
+
+University of Massachusetts Amherst Libraries. (n.d.). *W. E. B. Du Bois papers, 1803-1999* (MS 312). Special Collections and University Archives. http://findingaids.library.umass.edu/ead/mums312`,
+    },
+    {
+      slug: "sg-ledger",
+      title: "23 · The ledger, the bargain, and how to write her first sentence",
+      section: "Section 6 · Ghana, Cairo, Beijing, 1961 to 1977",
+      body: `The last years contain the hardest fact in the course, so take it before the summary.
+
+**The bargain of 1970.** The Justice Department refused her entry to the United States on 5 May 1970 under the McCarran Walter Act, citing her association with more than thirty listed organizations, and overruled the State Department to do it. Public pressure reversed the decision on 16 August. What is usually left out is the price. Horne and Stevens record that she pragmatically, perhaps even willingly, disavowed her ties to the American Communist Party in order to regain entry; that the campaign for her return included Roy Wilkins, whom she had attacked for decades; and that on the tour she spoke as a nationalist about Africa and Afrocentrism rather than about class or socialism (Horne & Stevens, 2009). That single passage ruins both the saintly version and the dismissive one, which is why it belongs in the course.
+
+**What the visits produced.** She came in 1971 and again in 1975, lectured, taught briefly at the University of Massachusetts Amherst and at Harvard, took an honorary doctorate from UMass in 1973, and negotiated the sale of the Du Bois papers to that university the same year. She died in Beijing on 27 March 1977 of breast cancer, aged 80. Horne gives 1 April, which may be the memorial rather than the death, so a check is filed. A memorial service was held at Babaoshan Revolutionary Cemetery, and her ashes were later brought to Accra by her son and interred at the W. E. B. Du Bois Memorial Centre.
+
+**The ledger.** One opera professionally staged in 1932. Five plays produced between 1938 and 1941, one of them published. Thirteen books between 1944 and 1978. A Federal Theatre unit run. A year of NAACP fundraising. A women's organization co founded. A journal edited. A national television service built and directed.
+
+**The superlative, finally, at the narrowest width the evidence allows.** Careful scholars hedge it and press summaries do not. Caplan writes of the first opera by an African American woman to be produced by a major company in the United States. Schmalenberger writes of the first Black American woman to compose an opera for a major professional organization. The Schlesinger Library, which owns the score, says one of the first, perhaps the first. The reason for the hedge is not modesty. A bare claim of "the first ever" asserts a global absence, and the record of Black women composers before 1932 is precisely the record nobody kept, so absence of evidence there is weak evidence of absence. The honest sentence is: the earliest known opera by a Black American woman to receive a large scale professional staging in the United States.
+
+**So write her first sentence.** It has to name a trade, a work, and a date before it names anybody else. Something like: Shirley Graham Du Bois was a composer, playwright and biographer whose opera was staged in a Cleveland stadium in 1932, who ran a Federal Theatre unit and published thirteen books, and who directed Ghana's first television service. The marriage can go in the second sentence. It has waited nineteen years already.
+
+:::reveal What did Graham Du Bois give up in order to re enter the United States in 1970? ||| She disavowed her ties to the American Communist Party, was championed by Roy Wilkins whom she had long attacked, and spoke on the tour as a nationalist about Africa rather than about class or socialism.
+
+:::reveal State the narrowest defensible version of the Tom-Tom superlative, and say why the hedge is required. ||| The earliest known opera by a Black American woman to receive a large scale professional staging in the United States. A bare "first ever" asserts a global absence, and the record of Black women composers before 1932 is the record nobody kept.
+
+:::reveal What must her first sentence contain before it names anyone else? ||| A trade, a work and a date: composer, playwright and biographer; an opera staged in a Cleveland stadium; 1932.
+
+:::reveal Where is she buried, and where was her memorial held? ||| The memorial service was at Babaoshan Revolutionary Cemetery in Beijing; her ashes were later taken to Accra by her son and interred at the W. E. B. Du Bois Memorial Centre.
+
+## Vocabulary
+- **McCarran Walter Act**: the 1952 immigration law under which her 1970 entry was first refused on association grounds.
+- **Ledger**: the plain list of finished work, which is the unit this course measures a career in.
+- **Global absence claim**: a superlative asserting that nothing earlier exists anywhere, which is unprovable when the relevant record was never kept.
+- **Narrowest true version**: the most limited form of a claim that every source will support, which is the form a careful writer publishes.
+
+## Sources
+Caplan, L. (2025). *Dreaming in ensemble: How Black artists transformed American opera*. Harvard University Press.
+
+Horne, G., & Stevens, M. (2009). Shirley Graham Du Bois: Portrait of the Black woman artist as a revolutionary. In D. F. Gore, J. Theoharis, & K. Woodard (Eds.), *Want to start a revolution? Radical women in the Black freedom struggle* (pp. 95-114). New York University Press.
+
+Schmalenberger, S. (2006). Debuting her political voice: The lost opera of Shirley Graham. *Black Music Research Journal, 26*(1), 39-87.
+
+Schlesinger Library, Radcliffe Institute. (n.d.). *Papers of Shirley Graham Du Bois, 1865-1998 (inclusive), 1905-1975 (bulk)*. Harvard University. https://hollisarchives.lib.harvard.edu/repositories/8/resources/5016`,
+    },
     // NEXT_SECTION_ANCHOR
   ],
 };
