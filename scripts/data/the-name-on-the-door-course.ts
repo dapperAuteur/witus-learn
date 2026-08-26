@@ -2305,6 +2305,134 @@ University Archives and Records Center. (n.d.). *Julian Francis Abele*. Universi
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 5 — Inside the firm, and around it
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "sklarek-in-production",
+      title: "17 · Sklarek, and the job with no credit line",
+      section: "Section 5 · Inside the firm, and around it",
+      body: `Norma Merrick Sklarek graduated from Columbia's school of architecture in 1950, applied to nineteen firms and was rejected by all of them. She was licensed in New York in 1954, on her first attempt at the examination, and the Beverly Willis Architecture Foundation's Pioneering Women of American Architecture records her as the first African American woman licensed in that state. In 1959 she became the first African American woman member of the American Institute of Architects, and in 1962 the first Black woman licensed in California (Beverly Willis Architecture Foundation, n.d.-a).
+
+**Then she spent twenty years at Gruen Associates in Los Angeles and rose to director of architecture,** responsible for hiring and overseeing staff architects and for coordinating the technical side of the California Mart, Fox Plaza, the Pacific Design Center, San Bernardino City Hall and the United States Embassy in Tokyo.
+
+**And here is the sentence that puts her in this course.** "Like many women architects in corporate firms, for most of her career Sklarek served as a project manager rather than design architect, although she is credited, with Cesar Pelli, as design architect on the U.S. Embassy in Tokyo" (Beverly Willis Architecture Foundation, n.d.-a).
+
+Project manager. That is the role that turns a design into a building, and it is the role with no public credit line anywhere.
+
+**Her son described the work in a way no credit format can hold.** "She would make it real. What kind of concrete. What kind of nuts and bolts. What kind of glass. She was in production, and she would tell you production was the real work" (quoted in Beverly Willis Architecture Foundation, n.d.-a).
+
+**A former AIA president says out loud why she was kept there.** Marshall Purnell, quoted in her Los Angeles Times obituary, said that she was more than capable of designing large projects, but "it was unheard of to have an African American female who was registered as an architect. You didn't trot that person out in front of your clients and say, 'This is the person designing your project.'"
+
+Read that as a description of routing, from someone who later led the profession's own institute. The design role was the client-facing one. The production role was not. Which one she was given had nothing to do with which one she could do.
+
+**In 1980 two things happened.** She became the first African American woman elected to the AIA College of Fellows, and she joined Welton Becket Associates as a vice president, where she was responsible for Terminal One at Los Angeles International Airport, a fifty million dollar project she completed before the 1984 Olympic Games. Look at how that building appears in her own foundation's list of works: "Terminal One at the Los Angeles International Airport, Los Angeles, 1984, Welton Becket Associates" (Beverly Willis Architecture Foundation, n.d.-a). The firm is the credit. She is the person who was responsible.
+
+**Then she put her name on a door.** In 1985 she co-founded Siegel Sklarek Diamond with Margot Siegel and Katherine Diamond, at the time the largest woman-owned architectural firm in the United States, and the foundation records her as the first African American woman to co-own an architectural practice. She left after four years, because the partners could not win commissions for large-scale projects and she missed the work.
+
+That last fact is the one to keep. Getting your name on the door does not, by itself, get you the buildings.
+
+:::reveal What role did Sklarek hold for most of her career, and what is unusual about it from a credit point of view? ||| Project manager rather than design architect, which is the role that turns a design into a building and has no public credit line anywhere.
+
+:::reveal How does Sklarek's own foundation list Terminal One at LAX, and what does that show? ||| As a 1984 building by Welton Becket Associates. The firm is the credit line, while she was the person responsible for delivering it.
+
+:::reveal Why did Sklarek leave the firm that carried her own name? ||| Because she and her partners could not win commissions for large-scale projects, and she missed the income and the challenges those brought.
+
+## Vocabulary
+- **Project manager**: the role that carries a design into construction, coordinating the technical work, and which no public credit format names.
+- **Director of architecture**: Sklarek's position at Gruen Associates, covering hiring, staff supervision and the technical coordination of major projects.
+- **College of Fellows**: the AIA's honorific body, to which Sklarek was elected in 1980.
+- **Production**: the phase in which materials, details and assemblies are resolved, which Sklarek's son quotes her as calling the real work.
+
+## Sources
+Beverly Willis Architecture Foundation. (n.d.-a). *Norma Merrick Sklarek*. Pioneering Women of American Architecture. https://pioneeringwomen.bwaf.org/norma-merrick-sklarek/`,
+    },
+    {
+      slug: "greene-and-brown",
+      title: "18 · Greene, Brown, and a record that is genuinely thin",
+      section: "Section 5 · Inside the firm, and around it",
+      body: `Beverly Loraine Greene was licensed in Illinois on 28 December 1942, certificate number 3002, at the age of twenty six (Beverly Willis Architecture Foundation, n.d.-b).
+
+**Notice what kind of fact that is.** Not a press report, not a recollection. A dated entry with a certificate number, which is the licensing board's own record. When this course says a first claim needs the issuing institution, that is what it means. The Beverly Willis Architecture Foundation's project states that Greene was the first African American woman to be licensed as an architect in the United States, and its own entry on Sklarek phrases the same claim as "believed to be" the first, so this course reports both the claim and the certificate number and lets you see the difference between them.
+
+**Her career then runs straight through the mechanism.** Degrees from the University of Illinois in 1936 and 1937 and a master's from Columbia in 1945. Work for the Chicago Housing Authority on the Ida B. Wells Homes. In 1944 she applied to the Metropolitan Life Insurance Company, which was planning an eight thousand unit housing complex in Lower Manhattan, and which was planning to bar Black residents from living in it. She expected not to be hired. She was one of the first architects hired (Beverly Willis Architecture Foundation, n.d.-b).
+
+**And then look at how her best known buildings are credited.** Her foundation's own list of works names them like this: the Grosse Pointe Public Library, 1951, Marcel Breuer, architect. The New York University buildings at University Heights, 1956, Marcel Breuer, architect. The UNESCO headquarters Secretariat and Conference Hall in Paris, 1954 to 1957, Marcel Breuer, architect. She worked at Marcel Breuer and Associates from 1952 until her death in 1957, at forty one.
+
+The credit line names Breuer. That is not a scandal and it is not an accident. It is the convention from Section 1, still running, thirty years after Trumbauer.
+
+**Georgia Louise Harris Brown is the second case, and the sharpest.** Born in Topeka in 1918, she took a bachelor of science in architecture at the University of Kansas in 1944, having also taken evening classes at the Illinois Institute of Technology under Mies van der Rohe. She was licensed in Illinois in 1949, and the foundation records her as the second African American woman licensed as an architect in the United States (Beverly Willis Architecture Foundation, n.d.-c).
+
+**That year she joined Frank J. Kornacker Associates, the structural engineers Mies used,** where between 1949 and 1953 she was the only professional woman. There she developed the structural calculations for Mies's Promontory Apartments and for 860 Lake Shore Drive.
+
+**860 Lake Shore Drive is one of the most published buildings of the twentieth century.** The foundation's list of works records her contribution to it in the form the record actually takes: 860 Lake Shore Drive, Chicago, Mies van der Rohe, 1948 to 1951, structural calculations. And it states the general position plainly: she "was rarely credited as the designer in publications about these works. (Generally, it was the engineering firms that received the credit.)" (Beverly Willis Architecture Foundation, n.d.-c).
+
+Two layers of the same convention stacked on each other. The building is credited to the design architect. The engineering is credited to the engineering firm. The person inside the engineering firm is credited nowhere. She left for Brazil in 1953.
+
+**Now the honest statement, and this course is not going to dress it up.** Greene in 1942 and Brown in 1949 are, as far as the documented record goes, close to the whole list of Black women licensed as architects in the United States before Sklarek's New York registration in 1954. Three women. That is the finding. Padding it out with people whose licensure cannot be documented would make the section look fuller and would make it false.
+
+:::reveal What makes Greene's 1942 licence an unusually strong piece of evidence for a first claim? ||| It is a dated licensing board record with a certificate number, number 3002, rather than a press report or a recollection.
+
+:::reveal How does Greene's own foundation list the UNESCO headquarters she worked on, and what does that show? ||| As Marcel Breuer, architect, 1954 to 1957, which is the firm-and-principal convention still operating decades after the Trumbauer office.
+
+:::reveal What two layers of credit convention sat between Georgia Louise Harris Brown and 860 Lake Shore Drive? ||| The building is credited to the design architect, Mies van der Rohe, and the engineering to the engineering firm, so the person inside the engineering firm appears nowhere.
+
+## Vocabulary
+- **Certificate number**: the identifier a licensing board assigns to a registration, which turns a claim about a licence into a checkable record.
+- **Structural calculations**: the engineering work that establishes whether a designed structure will stand, credited to the engineering firm rather than to the person who performed it.
+- **Stuyvesant Town**: the Lower Manhattan housing complex Greene was hired to work on, which its developer planned to bar Black residents from.
+- **Thin record**: a documented list so short that the shortness is itself the finding, and which must not be padded to look fuller.
+
+## Sources
+Beverly Willis Architecture Foundation. (n.d.-a). *Norma Merrick Sklarek*. Pioneering Women of American Architecture. https://pioneeringwomen.bwaf.org/norma-merrick-sklarek/
+
+Beverly Willis Architecture Foundation. (n.d.-b). *Beverly Lorraine Greene*. Pioneering Women of American Architecture. https://pioneeringwomen.bwaf.org/beverly-lorraine-greene/
+
+Beverly Willis Architecture Foundation. (n.d.-c). *Georgia Louise Harris Brown*. Pioneering Women of American Architecture. https://pioneeringwomen.bwaf.org/georgia-louise-harris-brown/`,
+    },
+    {
+      slug: "a-door-of-your-own",
+      title: "19 · A door of your own, and a school instead",
+      section: "Section 5 · Inside the firm, and around it",
+      body: `If the problem is that the credit belongs to whoever owns the firm, one answer is obvious: own the firm.
+
+**Paul Revere Williams did exactly that.** Born in Los Angeles in 1894 and orphaned by the age of four, he was appointed to the first Los Angeles City Planning Commission in 1920, became a certified architect the following year, and opened his own practice in 1923 (Los Angeles Conservancy, n.d.). The Getty Research Institute, announcing the acquisition of his archive, states the firsts in one line: "he was the first African American member of the American Institute of Architects (AIA), its first African American Fellow, and ultimately its first African American Gold Medalist" (Getty Research Institute, 2020). The Los Angeles Conservancy dates the fellowship to 1957, and the AIA's own recipient list shows the Gold Medal going to Paul Revere Williams in 2017, thirty seven years after his death (American Institute of Architects, n.d.-b). Neither source gives a year for his AIA membership, so this course does not print one.
+
+**Owning the door did not remove the conditions of the room.** The Getty writes that "He learned to draw upside down in order to sketch for clients from across the table", and that "He toured construction sites with hands clasped behind his back because he was not sure every person would want to shake a Black man's hand" (Getty Research Institute, 2020). This course prints those as the Getty states them and adds one qualification: it could not locate Williams saying either thing in his own published words, and has filed the question rather than treating an institutional retelling as a first-hand account.
+
+**There is also a correction inside the Getty's announcement, and it belongs in this course.** "Although many believe that Williams' archive was destroyed in a fire during the 1992 Los Angeles civil unrest, in truth primarily business records were lost then. Most of the extensive archive was in a different location and is in excellent condition" (Getty Research Institute, 2020). Roughly thirty five thousand plans and ten thousand original drawings survive, kept for decades by his granddaughter Karen Elyse Hudson and now held jointly by the Getty and the USC School of Architecture.
+
+That is the counterfactual to everything Section 3 described. His name was on the practice, and his papers survived. Which is why we can say what he designed.
+
+**The second answer is stranger and older: build the school.** Robert Robinson Taylor enrolled at MIT in 1888 and graduated with the class of 1892. MIT's own Black History Project states the claim with a hedge this course keeps: he "was the first known black student to attend and graduate from MIT", and "is also considered to be the first accredited, academically trained African-American architect" (MIT Black History Project, n.d.). Booker T. Washington recruited him to Tuskegee Institute, where he spent a forty year career and designed most of the campus.
+
+**And the campus was built by the students.** The National Park Service, in its lesson materials for the Tuskegee Institute National Historic Site, quotes Clarence G. Williams on Taylor's first building, Science Hall, completed in 1893: "It was constructed entirely by students, using bricks made also by students under Taylor's supervision" (National Park Service, n.d.). The plaque on the building today, now Thrasher Hall, says it more briefly: "Thrasher Hall, renovated in 1983, was built in 1893 by teachers and students using brick they made."
+
+**Now read that as a credit question, because it is one.** A building at Tuskegee is credited to Tuskegee. The designer was on the faculty. The builders were the students, and the bricks came out of the ground they were standing on. Nobody's name is on any of it in the way a firm's name goes on a commission, and the thing that survived is not a credit line. It is a school with an architecture programme in it, which Tuskegee named after Taylor in 2010.
+
+:::reveal Which three firsts does the Getty Research Institute attribute to Paul Revere Williams? ||| First African American member of the American Institute of Architects, its first African American Fellow, and its first African American Gold Medalist.
+
+:::reveal What does the Getty correct about the fate of Williams's archive? ||| That it was destroyed in a 1992 fire. Primarily business records were lost, and most of the archive was elsewhere and survives in excellent condition.
+
+:::reveal Who built the first building Robert R. Taylor designed at Tuskegee, and from what? ||| The students, entirely, using bricks the students had made themselves under his supervision.
+
+## Vocabulary
+- **Principal of your own firm**: the position that puts a person's own name on the credit line, which Williams reached by opening a practice in 1923.
+- **AIA Gold Medal**: the institute's highest annual honour, awarded to Williams in 2017, thirty seven years after his death.
+- **Institutional retelling**: a fact stated by an institution that is not itself the first-hand source, which this course prints with the distinction visible.
+- **Thrasher Hall**: Taylor's Science Hall of 1893 at Tuskegee, built entirely by students from bricks they made.
+
+## Sources
+American Institute of Architects. (n.d.-b). *Gold Medal*. https://www.aia.org/design-excellence/awards/gold-medal
+
+Getty Research Institute. (2020, June 30). *Archive of architect Paul Revere Williams jointly acquired by USC and Getty*. J. Paul Getty Trust. https://www.getty.edu/news/architect-paul-revere-williams-archive-acquired-usc-getty/
+
+Los Angeles Conservancy. (n.d.). *Paul R. Williams*. https://www.laconservancy.org/learn/architect-biographies/paul-r-williams/
+
+MIT Black History Project. (n.d.). *Robert R. Taylor, 1892*. Massachusetts Institute of Technology. https://www.blackhistory.mit.edu/archive/robert-r-taylor-1892
+
+National Park Service. (n.d.). *One brick at a time: Robert R. Taylor's architectural vision for Tuskegee Institute*. U.S. Department of the Interior. https://www.nps.gov/articles/000/one-brick-at-a-time-robert-r-taylor-s-architectural-vision-for-tuskegee-institute.htm`,
+    },
     // APPEND-HERE
   ],
 };
