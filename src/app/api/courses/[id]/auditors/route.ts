@@ -1,28 +1,16 @@
 import { z } from "zod";
-import { apiContext, errorJson, isTenantAdmin, json } from "@/lib/api";
+import { apiContext, errorJson, json } from "@/lib/api";
 import { sendCourseAuditInviteEmail } from "@/lib/emails";
 import { getSiteUrl } from "@/lib/site-url";
-import { isPlatformOwner } from "@/lib/session";
+import { canManageCourseReviewers } from "@/lib/course-reviewers";
 
 type Params = { params: Promise<{ id: string }> };
 
 const Body = z.object({ email: z.string().email() });
 
-/**
- * Who may hand out an audit grant: the platform owner, the course's OWN instructor, or a tenant
- * admin of the school that owns the course. Deliberately narrower than "any instructor", for the
- * same reason a cohort's invites belong to its own owner: an audit grant opens a closed course.
- */
-async function canManageAuditors(
-  session: Awaited<ReturnType<typeof apiContext>>["session"],
-  tenantId: string,
-  instructorId: string,
-): Promise<boolean> {
-  if (!session) return false;
-  if (session.user.id === instructorId) return true;
-  if (await isPlatformOwner(session.user.id)) return true;
-  return isTenantAdmin(session, tenantId);
-}
+// Who may hand out an audit grant now lives in src/lib/course-reviewers.ts, shared with the
+// self-nomination approval route so the two paths into the same privilege cannot drift apart.
+const canManageAuditors = canManageCourseReviewers;
 
 // GET /api/courses/[id]/auditors — list this course's auditors (owner / its instructor / admin).
 export async function GET(_req: Request, { params }: Params) {

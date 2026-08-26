@@ -28,3 +28,4 @@ export * from "./library";
 export * from "./media-assets";
 export * from "./notes";
 export * from "./overrides";
+export * from "./interest";
