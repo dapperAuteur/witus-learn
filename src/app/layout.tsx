@@ -44,7 +44,7 @@ export async function generateViewport(): Promise<Viewport> {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-white text-neutral-900 antialiased dark:bg-neutral-950 dark:text-neutral-100">
+      <body className="min-h-screen text-neutral-900 antialiased dark:text-neutral-100">
         {/* No-FOUC: apply the saved (or system) theme before the page paints. */}
         <script
           dangerouslySetInnerHTML={{
