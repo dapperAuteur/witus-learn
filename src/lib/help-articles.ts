@@ -189,6 +189,14 @@ whether learners get the lessons or a coming-soon page.`,
       "review",
       "reviewer",
       "invite",
+      "beta",
+      "beta student",
+      "beta tester",
+      "subject matter expert",
+      "sme",
+      "volunteer",
+      "credentials",
+      "phone",
     ],
     body: `# Vetting a course
 
@@ -203,6 +211,9 @@ A course that has **not** been vetted shows learners a **"Coming soon" page** in
 - **Anyone already enrolled keeps full access**, and so do you (the instructor) and the platform owner.
   Un-vetting a course never locks out someone who is already studying it, including anyone who paid.
 - Visitors can leave an email on the **"Get notified when this course opens"** form.
+- Under that, **"Want to help this course open?"** opens a longer form where a visitor can offer to
+  **test the course** before it opens or to **vet it as a subject matter expert**. That is a
+  request, not access: see *People who put their hand up* below.
 
 There is deliberately **no expected date** on that page. A missed date is worse than no date.
 
@@ -298,7 +309,40 @@ A reviewer can read **every lesson of that one course**, and nothing else. In pa
   normal audience, and the reviewer is an ordinary visitor again.
 
 **Remove** next to a name revokes access, and it takes effect immediately. If someone loses their
-link, invite the same address again, that mints a fresh link and replaces the old one.`,
+link, invite the same address again, that mints a fresh link and replaces the old one.
+
+## People who put their hand up
+
+Inviting a reviewer is one direction. The other is people volunteering, and that panel sits just
+above the invite box on the same page: **"People who put their hand up"**.
+
+On the public "Coming soon" page of any course you have not vetted, a visitor can offer one of three
+things: **to take the course** when it opens, **to test it** before it opens, or **to vet it as a
+subject matter expert**. They give a name and an email address, and optionally a phone number and a
+few lines about their background.
+
+**Nobody who fills that form in gets any access.** It records a request with your name on it, and
+nothing happens until you decide:
+
+- **Approve and invite** on a tester or an expert sends them exactly the read-only review invite
+  described above, with all the same limits: one course, read-only, nothing recorded. They still have
+  to open the link, so an approval they never act on grants nothing either.
+- **Mark reviewed** on someone who only wants to take the course records that you saw it. It grants
+  nothing, because there is nothing to grant: they are already on the notify-me list.
+- **Decline** closes it. Re-submitting the form does not reopen a declined request.
+
+Approving somebody never enrolls them. If you want a tester to go through the course as a real
+learner, enroll them deliberately, and know that their quiz scores will then count in your
+statistics, which is exactly why the review grant does not.
+
+**Phone numbers and backgrounds are shown on that panel and nowhere else.** They are not on the
+course page, not in the leads CSV, not in any email, and not in the WitUS Inbox mirror. The form
+says so to the person filling it in, so please keep that promise: they are contact details you were
+given in confidence, for this one course.
+
+The Inbox does get a notification for every submission, saying who put their hand up, in which
+capacity, on which course, and linking back to this panel. It does not carry the phone number or the
+background.`,
   },
   {
     slug: "quick-recall",
