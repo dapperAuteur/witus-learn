@@ -2557,5 +2557,511 @@ Studio Museum in Harlem. (n.d.-b). *Emma Amos*. https://www.studiomuseum.org/art
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 6 — The transferable shape, and what a correction looks like
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-same-shape-everywhere",
+      title: "21 · The same shape everywhere",
+      section: "Section 6 · The shape, the corrections, and the refusals",
+      body: `The print shop is the clearest example of this mechanism, not the only one. Here is the test, in three conditions, so you can find it yourself.
+
+**Condition one: a format cap on the public surface.** The place the public looks has fewer slots than the work had contributors. A print margin holds one signature. A book cover holds one name. A film poster holds a handful. A record sleeve holds the artist.
+
+**Condition two: the credit exists somewhere with a smaller readership.** Not destroyed, relocated, exactly as in Section 2. A liner note, an end crawl, a contract, a union filing, a masthead, an archived documentation sheet. When you find the second document, you have found the case.
+
+**Condition three: the unnamed role is the technically demanding one, and it succeeds invisibly.** From Section 3: expertise whose achievement is the absence of variation has nothing to point at.
+
+**Now run the test on five other industries.** In each, the description below is about the FORMAT, not about any individual's history, which is the only kind of claim a shape like this licenses.
+
+- **Session musicians.** The record is credited to the named artist. The players appear, if anywhere, in liner notes and in the contracting paperwork.
+- **Ghostwriters.** The byline belongs to the credited author by contract. The writer's credit exists, and it exists in the contract.
+- **Film colourists.** The name appears in the end crawl, never on the poster, and the work succeeds when the grade is invisible.
+- **Translators.** The cover has historically carried the author. The next lesson shows a prize that changed exactly this.
+- **Test kitchens.** A recipe is credited to the publication. The developers are named on a masthead, if at all.
+
+**What the test buys you.** It tells you which question to ask. If all three conditions hold, stop looking for a villain: you are looking at a format, and the productive questions are the two from Section 1, who is routed into the unnamed role, and what they built instead. If condition two fails, and no second document exists anywhere, you have something different and worse, which CREDIT-00 covers as archival silence.
+
+**And the limit, restated because it is the thing people get wrong.** The shape explains a pattern. It never licenses a claim about a particular named person, and any sentence beginning "so obviously the real author of that record was" has left the evidence behind.
+
+:::reveal State the three conditions that identify this mechanism in any industry. ||| A format cap on the public surface, a credit that exists in a second document with a smaller readership, and an unnamed role that is technically demanding and succeeds invisibly.
+
+:::reveal What follows if condition two fails and no second document exists anywhere? ||| You are not looking at a relocated credit but at archival silence, which CREDIT-00 treats as a different and worse problem.
+
+:::reveal Why can this shape never license a claim about a particular person? ||| Because it explains a pattern across many cases, and a pattern does not license an inference down to any single one. A claim about a person needs that person's own documents.
+
+## Vocabulary
+- **The three conditions**: a format cap on the public surface, a relocated credit in a low readership document, and an invisibly successful technical role.
+- **Liner note**: the small print credit on a record release, a standard example of a document with far fewer readers than the work itself.
+- **End crawl**: the scrolling list of film credits, which carries names the poster has no room for.
+- **Archival silence**: from CREDIT-00, the case where no second document exists at all, which is recovery rather than publication.
+
+## Sources
+Tamarind Institute. (n.d.-a). *Process*. University of New Mexico. https://tamarind.unm.edu/about/process/`,
+    },
+    {
+      slug: "two-corrections-that-happened",
+      title: "22 · Two corrections that actually happened",
+      section: "Section 6 · The shape, the corrections, and the refusals",
+      body: `Credit conventions do change. Two of them changed recently enough that you can read the rules yourself, and both changed in the same way, which is the lesson.
+
+**Correction one: the International Booker Prize.** The Booker Prizes state that the prize "recognises the vital work of translation, with the £50,000 prize money divided equally between the author and the translator" (Booker Prize Foundation, n.d.). From the 2027 prize the fund doubles to £100,000, still split equally between author and translator, and the shortlist awards are likewise divided (Booker Prize Foundation, n.d.).
+
+Read what that does. It does not praise translators. It does not encourage publishers to be generous. It makes the translator a **co-recipient by rule**, which means the credit is now enforced by the same document that decides who gets the money.
+
+**Correction two: the Recording Academy's Album Of The Year rule.** For the 2022 Grammy Awards the Academy updated the category so that "all credited artists (including featured artists), songwriters of new material, producers, recording engineers, mixers, and mastering engineers are eligible to be GRAMMY nominees and recipients". Previously those contributors "were required to be credited with at least 33 percent or more of playing time" (Recording Academy, 2021).
+
+Read that one too. Under the old rule an engineer who worked on two tracks of a twelve track album was ineligible: a threshold, which is a format cap wearing a percentage. The correction removed the threshold. Nothing about the engineering changed; the slot count did.
+
+**The pattern, which is the whole point of putting these two side by side.** Neither correction worked by telling a better story about undervalued people. Each rewrote a RULE about slots, in a document that governs an outcome people care about. CREDIT-00 teaches the anatomy of a correction in general; this is what it looks like in a medium.
+
+**What corrections cannot do, and this matters for how you read the rest of this course.** Both changes are prospective. No translator who published before the rule becomes a co-recipient retroactively, and no engineer picks up a nomination for a 2015 album. A correction fixes the format going forward. It does not reissue the past, which is why the responses in Sections 4 and 5, building a room, a rule, an archive, an object and a portfolio, were never merely second best. For everybody already inside the convention, they were the only thing available.
+
+:::reveal How does the International Booker Prize divide its money, and why is that a structural change rather than a gesture? ||| Equally between author and translator. It makes the translator a co-recipient by rule, so the credit is enforced by the same document that decides the money.
+
+:::reveal What did the Recording Academy's Album Of The Year rule require before the change, and what replaced it? ||| Contributors had to be credited with at least 33 percent or more of playing time. The updated rule makes all credited artists, songwriters of new material, producers, recording engineers, mixers and mastering engineers eligible.
+
+:::reveal What can a credit correction never do? ||| Work backwards. Both changes are prospective, so nobody who published or recorded before the rule gains the credit retroactively.
+
+## Vocabulary
+- **Co-recipient by rule**: a credit enforced by the document that assigns an outcome, such as prize money, rather than left to anyone's goodwill.
+- **Threshold**: a percentage requirement that functions as a format cap, such as the old 33 percent playing time rule for Album Of The Year.
+- **Prospective correction**: a rule change that applies from now on and does not restore credit for work already published.
+- **Anatomy of a correction**: from CREDIT-00, the general account of who corrects a credit, how long it takes, and what it can repair.
+
+## Sources
+Booker Prize Foundation. (n.d.). *The International Booker Prize*. https://thebookerprizes.com/international-booker-prize
+
+Recording Academy. (2021, May 26). *The Recording Academy releases updated rules and guidelines for the 2022 GRAMMY Awards show*. https://www.grammy.com/news/2022-grammys-updated-rules-guidelines-recording-academy`,
+    },
+    {
+      slug: "what-this-course-refused",
+      title: "23 · What this course refused to print",
+      section: "Section 6 · The shape, the corrections, and the refusals",
+      body: `A course about credit that hid its own uncertainty would be arguing against itself. Here is the ledger.
+
+**Verified against an institutional source, and therefore printed.** That Blackburn was hired in 1957 as the first master printer at Universal Limited Art Editions, and that he printed the first seventy-nine editions for that workshop: both stated by the Library of Congress in its Blackburn exhibition. That Emma Amos was the only woman admitted to Spiral: stated by the Studio Museum in Harlem. Superlatives get checked before they get printed, and these two survived the check.
+
+**Reported as contested, because the sources genuinely disagree.** The Printmaking Workshop's founding year: the Library of Congress says 1948 and the workshop's own successor at the Elizabeth Foundation for the Arts says late winter 1947. The year Charles White joined the Otis faculty: the college says 1964, the LACMA retrospective literature says 1965. In each case both positions are named and neither is chosen.
+
+**Tested and NOT printed, which is the part that takes discipline.** Three claims were available, attractive, widely repeated, and left out.
+
+1. **That Charles White was the first Black faculty member at Otis.** Repeated in a good deal of coverage. Otis College's own page does not say it, and a first claim needs the issuing institution.
+2. **A specific price for AfriCOBRA's poster prints.** A dollar figure circulates. No institutional source this course could reach states it, so the lesson says affordably priced and stocked in Black-owned businesses, which the Studio Museum does state.
+3. **The exact year Emma Amos joined Spiral.** The Studio Museum says 1964; other accounts say 1963. The course follows the museum and leaves the discrepancy open rather than presenting one date as settled.
+
+**Why a refusal is a feature.** Every unverified detail you print is a hostage. When it is corrected, and someone always corrects it, the correction discredits the verified material standing next to it. That is the same argument the course made in Section 1 about the theft framing, applied to itself.
+
+**And the standing caution, which is where this course ends.** Six people carry the evidence here, and the mechanism itself predicts that most comparable technicians left no retrievable trace at all: no exhibition, no successor foundation, no museum page. Six names and a feeling of completeness is the opposite of the argument. The right conclusion is that you have just read the documented tail of something much larger, and the tool you should keep is the three condition test, not the six names.
+
+:::reveal Which two superlative claims did this course verify and print, and against which institutions? ||| That Blackburn was ULAE's first master printer and printed its first seventy-nine editions, against the Library of Congress; and that Emma Amos was the only woman admitted to Spiral, against the Studio Museum in Harlem.
+
+:::reveal Name the three claims this course tested and refused to print, and say why each was left out. ||| That Charles White was the first Black faculty member at Otis, because the college's own page does not say it; a specific price for AfriCOBRA's prints, because no reachable institutional source states a figure; and a settled year for Amos joining Spiral, because the sources conflict.
+
+:::reveal Why is printing an unverified detail described as taking a hostage? ||| Because when it is corrected, and it will be, the correction discredits the verified material standing next to it.
+
+## Vocabulary
+- **Refusal**: a claim a course could have printed and deliberately did not, because the evidence for it did not meet the standard.
+- **Hostage claim**: an unverified detail whose eventual correction damages the credibility of the verified material around it.
+- **The documented tail**: the small, recoverable fraction of cases that left institutional records, which is all any course like this can show.
+- **Open question**: an unresolved point recorded in writing so that somebody can close it later, rather than smoothed over in prose.
+
+## Sources
+Library of Congress. (2003d). *Overview*. In *Creative space: Fifty years of Robert Blackburn's Printmaking Workshop* [Exhibition]. https://www.loc.gov/exhibits/blackburn/blackburn-overview.html
+
+Otis College of Art and Design. (n.d.). *Charles White*. Otis College LibGuides. https://otis.libguides.com/people/charles_white
+
+Studio Museum in Harlem. (n.d.-b). *Emma Amos*. https://www.studiomuseum.org/artists/emma-amos`,
+    },
+    {
+      slug: "quiz-shape-and-corrections",
+      title: "24 · Knowledge check: the shape and the corrections",
+      section: "Section 6 · The shape, the corrections, and the refusals",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "The first of the three conditions is a format cap on:",
+            options: ["The public surface", "The number of people a workshop may employ on any single edition", "The proportion of an award's prize money any one recipient may collect", "The length of time a credit remains attached to a work after publication"],
+            correctIndex: 0,
+            explanation: "The place the public looks has fewer slots than the work had contributors.",
+            sourceLessonSlug: "the-same-shape-everywhere",
+          },
+          {
+            prompt: "The second condition is that the credit exists:",
+            options: ["Somewhere with a smaller readership", "Only in the memory of the people who worked on the project together", "In a form the uncredited person can enforce through a professional body", "In a public register maintained by the relevant industry association"],
+            correctIndex: 0,
+            explanation: "Not destroyed, relocated: a liner note, an end crawl, a contract, a masthead, an archived documentation sheet.",
+            sourceLessonSlug: "the-same-shape-everywhere",
+          },
+          {
+            prompt: "The third condition is that the unnamed role is:",
+            options: ["Technically demanding and invisibly successful", "Filled by people who entered the industry later than the named contributors", "Paid an hourly rate rather than a share of the work's eventual proceeds", "Performed by more than one person, so no single name could be printed"],
+            correctIndex: 0,
+            explanation: "Expertise whose achievement is the absence of variation has nothing for an observer to point at.",
+            sourceLessonSlug: "the-same-shape-everywhere",
+          },
+          {
+            prompt: "In the session musician case, where do the players appear if anywhere?",
+            options: ["Liner notes and contracting paperwork", "On the sleeve, beneath the name of the credited recording artist", "In the recording studio's own archive of session tapes and take sheets", "In the register maintained by the performing rights society for the release"],
+            correctIndex: 0,
+            explanation: "The record itself is credited to the named artist, which is the format cap.",
+            sourceLessonSlug: "the-same-shape-everywhere",
+          },
+          {
+            prompt: "In the ghostwriting case, where does the writer's credit exist?",
+            options: ["In the contract", "Nowhere at all, which makes it a case of archival silence instead", "On the copyright page, in smaller type beneath the credited author", "In the publisher's catalogue, which lists everyone who worked on a title"],
+            correctIndex: 0,
+            explanation: "The byline belongs to the credited author by contract, and the contract is the second document.",
+            sourceLessonSlug: "the-same-shape-everywhere",
+          },
+          {
+            prompt: "A film colourist's name appears where?",
+            options: ["The end crawl", "The poster, alongside the director of photography's screen credit", "The distributor's press kit, which lists the full technical crew", "Nowhere, since colour grading is treated as part of post production"],
+            correctIndex: 0,
+            explanation: "Never on the poster, and the work succeeds when the grade is invisible, which is condition three.",
+            sourceLessonSlug: "the-same-shape-everywhere",
+          },
+          {
+            prompt: "In the test kitchen case, a recipe is credited to:",
+            options: ["The publication", "The chef who first served the dish in a professional restaurant kitchen", "The photographer, whose name appears alongside the image of the dish", "The editor who commissioned it, under the magazine's contributor policy"],
+            correctIndex: 0,
+            explanation: "The developers are named on a masthead, if at all.",
+            sourceLessonSlug: "the-same-shape-everywhere",
+          },
+          {
+            prompt: "The lesson stresses that its five parallel descriptions are about:",
+            options: ["The format", "The individuals who have been harmed in each of the five industries", "The historical origins of each convention in the nineteenth century", "The legal remedies available to an uncredited worker in each field"],
+            correctIndex: 0,
+            explanation: "Not about any individual's history, which is the only kind of claim a shape like this licenses.",
+            sourceLessonSlug: "the-same-shape-everywhere",
+          },
+          {
+            prompt: "If all three conditions hold, the lesson says you should stop:",
+            options: ["Looking for a villain", "Reading the primary sources, since the outcome is already determined", "Naming the people involved, because a format is impersonal by definition", "Comparing the case to other industries, which will only confuse the analysis"],
+            correctIndex: 0,
+            explanation: "You are looking at a format, and the productive questions are who is routed into the role and what they built instead.",
+            sourceLessonSlug: "the-same-shape-everywhere",
+          },
+          {
+            prompt: "If condition two fails and no second document exists anywhere, you have:",
+            options: ["Archival silence", "A stronger case, since the absence of a record proves deliberate suppression", "A convention that has already been corrected, leaving nothing left to find", "An individual injustice, which can be investigated through personal testimony"],
+            correctIndex: 0,
+            explanation: "Which CREDIT-00 covers, and which is a different and worse problem: recovery rather than publication.",
+            sourceLessonSlug: "the-same-shape-everywhere",
+          },
+          {
+            prompt: "Which sentence has left the evidence behind, according to this lesson?",
+            options: ["\"So obviously the real author of that record was...\"", "\"All three conditions hold in this case, so the credit is probably relocated\"", "\"The end crawl carries names that the poster has no room to display\"", "\"This role is uncredited for everyone who performs it, whoever they are\""],
+            correctIndex: 0,
+            explanation: "The shape explains a pattern and never licenses a claim about a particular named person.",
+            sourceLessonSlug: "the-same-shape-everywhere",
+          },
+          {
+            prompt: "A \"liner note\" is offered as a standard example of:",
+            options: ["A document with far fewer readers than the work", "A format cap, since only a fixed number of names will fit on the sleeve", "An enforceable credit, because record companies are bound to print it", "A public register of everyone who contributed to a musical recording"],
+            correctIndex: 0,
+            explanation: "Which is exactly the printmaking documentation sheet problem in another industry.",
+            sourceLessonSlug: "the-same-shape-everywhere",
+          },
+          {
+            prompt: "How does the International Booker Prize divide its money?",
+            options: ["Equally between author and translator", "Two thirds to the author and one third to the translator of the winning book", "Entirely to the author, with a separate smaller award made to the translator", "According to the judges' assessment of each party's contribution to the book"],
+            correctIndex: 0,
+            explanation: "The Booker Prizes say the prize recognises the vital work of translation and divides the money equally.",
+            sourceLessonSlug: "two-corrections-that-happened",
+          },
+          {
+            prompt: "From the 2027 prize, the International Booker fund:",
+            options: ["Doubles to £100,000, still split equally", "Is replaced by a single award to the author, with translators recognised separately", "Falls to £25,000 per recipient, so the total remains unchanged from before", "Becomes divisible at the judges' discretion between the two recipients"],
+            correctIndex: 0,
+            explanation: "The shortlist awards are likewise divided between author and translator.",
+            sourceLessonSlug: "two-corrections-that-happened",
+          },
+          {
+            prompt: "The Booker change is structural rather than a gesture because it makes the translator:",
+            options: ["A co-recipient by rule", "The subject of an annual publicity campaign run alongside the prize", "Eligible for a separate translation prize administered by the same foundation", "Entitled to have their name printed on the cover of the winning edition"],
+            correctIndex: 0,
+            explanation: "The credit is enforced by the same document that decides who gets the money.",
+            sourceLessonSlug: "two-corrections-that-happened",
+          },
+          {
+            prompt: "For the 2022 Grammy Awards, who became eligible as Album Of The Year nominees?",
+            options: ["All credited artists, songwriters, producers, engineers, mixers and mastering engineers", "Only the credited recording artist and the album's executive producer", "Any contributor named anywhere in the album's published liner notes", "Songwriters alone, in a change intended to recognise composition specifically"],
+            correctIndex: 0,
+            explanation: "Featured artists are included, and the songwriters must have contributed new material.",
+            sourceLessonSlug: "two-corrections-that-happened",
+          },
+          {
+            prompt: "What did the previous Album Of The Year rule require?",
+            options: ["At least 33 percent of playing time", "That a contributor work on the album's opening and closing tracks", "That the contributor be a voting member of the Recording Academy", "That the album be credited to no more than three principal artists"],
+            correctIndex: 0,
+            explanation: "A threshold, which is a format cap wearing a percentage.",
+            sourceLessonSlug: "two-corrections-that-happened",
+          },
+          {
+            prompt: "Under the old Grammy rule, an engineer who worked on two tracks of a twelve track album was:",
+            options: ["Ineligible", "Eligible, but only if the album's producer nominated them personally", "Credited as a recipient without being counted among the nominees", "Required to share a single nomination with the album's other engineers"],
+            correctIndex: 0,
+            explanation: "Two of twelve falls under 33 percent, so the correction removed the threshold rather than changing the work.",
+            sourceLessonSlug: "two-corrections-that-happened",
+          },
+          {
+            prompt: "What changed about the engineering when the Grammy rule changed?",
+            options: ["Nothing", "The standard of technical documentation required for a nomination", "The share of an album an engineer was expected to work on in practice", "The definition of mixing, which was separated from mastering for the first time"],
+            correctIndex: 0,
+            explanation: "The slot count changed. That is the whole mechanism.",
+            sourceLessonSlug: "two-corrections-that-happened",
+          },
+          {
+            prompt: "What do both corrections have in common?",
+            options: ["Each rewrote a rule about slots", "Each followed a public campaign by the affected workers in that industry", "Each was imposed by legislation rather than adopted by the institution itself", "Each restored credit to people whose earlier work had gone unrecognised"],
+            correctIndex: 0,
+            explanation: "In a document that governs an outcome people care about, rather than by telling a better story.",
+            sourceLessonSlug: "two-corrections-that-happened",
+          },
+          {
+            prompt: "Neither correction worked by:",
+            options: ["Telling a better story about undervalued people", "Amending the document that decides who receives an award", "Removing a numerical threshold from an eligibility requirement", "Naming a second party as an equal recipient of prize money"],
+            correctIndex: 0,
+            explanation: "Which is the point of putting the two side by side: both are rule changes, not persuasion campaigns.",
+            sourceLessonSlug: "two-corrections-that-happened",
+          },
+          {
+            prompt: "Both corrections are prospective, meaning:",
+            options: ["They do not reissue the past", "They take effect only once every affected institution has adopted them", "They apply to work in progress but not to work already commissioned", "They will be reviewed after a fixed period and may then be withdrawn"],
+            correctIndex: 0,
+            explanation: "No translator becomes a co-recipient retroactively and no engineer picks up a nomination for a 2015 album.",
+            sourceLessonSlug: "two-corrections-that-happened",
+          },
+          {
+            prompt: "Because corrections are prospective, the responses in Sections 4 and 5 were:",
+            options: ["The only thing available", "An inferior substitute for the rule changes that eventually arrived", "Unnecessary, since the conventions were going to be corrected anyway", "Motivated by a belief that no correction would ever be possible at all"],
+            correctIndex: 0,
+            explanation: "For everybody already inside the convention, building a room, a rule, an archive, an object or a portfolio was never merely second best.",
+            sourceLessonSlug: "two-corrections-that-happened",
+          },
+          {
+            prompt: "A \"threshold\" is described here as a format cap wearing:",
+            options: ["A percentage", "A signature, since it is applied by the person who approves the work", "A contract, because the requirement is agreed rather than imposed", "A deadline, since eligibility depends on when the work was completed"],
+            correctIndex: 0,
+            explanation: "The old 33 percent playing time rule is the example.",
+            sourceLessonSlug: "two-corrections-that-happened",
+          },
+          {
+            prompt: "Which two claims did this course verify against an institution and then print?",
+            options: ["The seventy-nine editions and Amos as Spiral's only woman", "The Printmaking Workshop's founding year and White's Otis start year", "White as the first Black faculty member at Otis and AfriCOBRA's print price", "The 33 percent Grammy threshold and the International Booker prize amount"],
+            correctIndex: 0,
+            explanation: "The first against the Library of Congress, the second against the Studio Museum in Harlem.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Which two claims does this course report as contested rather than settled?",
+            options: ["The workshop's founding year and White's Otis start year", "The number of ULAE editions and the size of Catlett's linocut series", "The date Spiral dissolved and the year AfriCOBRA was formed in Chicago", "Tamarind's founding year and the year Blackburn received his MacArthur"],
+            correctIndex: 0,
+            explanation: "1948 against late winter 1947, and 1964 against 1965. Both positions named, neither chosen.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Why is the claim that White was the first Black faculty member at Otis left out?",
+            options: ["The college's own page does not say it", "Because the LACMA retrospective literature explicitly contradicts the claim", "Because the course avoids all claims about individuals in a living institution", "Because his start year is disputed, so no first claim could be dated reliably"],
+            correctIndex: 0,
+            explanation: "A first claim needs the issuing institution, however widely the claim is repeated elsewhere.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Why does the course avoid a specific price for AfriCOBRA's prints?",
+            options: ["No institutional source it could reach states a figure", "Because the price varied so widely between outlets that no figure is meaningful", "Because the group's own records of its sales were destroyed in the 1970s", "Because the collective sold its prints for whatever a buyer could afford"],
+            correctIndex: 0,
+            explanation: "So the lesson says affordably priced and stocked in Black-owned businesses, which the Studio Museum does state.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "The course leaves which detail about Emma Amos open?",
+            options: ["The exact year she joined Spiral", "Whether she was in fact the only woman admitted to the collective", "Which of her media she trained in first, printmaking or painting", "Whether Hale Woodruff or Romare Bearden invited her into the group"],
+            correctIndex: 0,
+            explanation: "The Studio Museum says 1964 and other accounts say 1963. The course follows the museum and leaves the discrepancy open.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "An unverified printed detail is called a hostage because:",
+            options: ["Its correction discredits the verified material beside it", "It cannot be removed once learners have committed it to memory", "It commits the author to defending a position they no longer hold", "It prevents any later researcher from investigating the question again"],
+            correctIndex: 0,
+            explanation: "The same argument the course made in Section 1 about the theft framing, applied to itself.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "How many people carry the evidence in this course?",
+            options: ["Six", "Twelve, one for each of the industries and institutions it examines", "Three, being Blackburn, Catlett and Burroughs, with the others as context", "Seventy-nine, matching the editions Blackburn printed at the Long Island workshop"],
+            correctIndex: 0,
+            explanation: "And the mechanism predicts most comparable technicians left no retrievable trace at all.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "What does the course say six names and a feeling of completeness amounts to?",
+            options: ["The opposite of the argument", "Sufficient coverage, since each name demonstrates a distinct response", "An unavoidable limitation of any course built from museum sources", "Evidence that the convention affected fewer people than is often assumed"],
+            correctIndex: 0,
+            explanation: "You have read the documented tail of something much larger.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "What does the course say you should keep, rather than the six names?",
+            options: ["The three condition test", "The chronology of American printmaking from 1937 to the present day", "The list of institutions whose archives hold printmaking documentation", "The distinction between lithography, screenprinting and relief processes"],
+            correctIndex: 0,
+            explanation: "Because it works on cases the record never preserved, which the names cannot.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "\"The documented tail\" refers to:",
+            options: ["The small fraction of cases that left institutional records", "The end crawl of a film, where the technical credits are finally listed", "The archived documentation sheets a workshop accumulates over its history", "The last impressions of an edition, pulled once the surface has begun to fail"],
+            correctIndex: 0,
+            explanation: "Which is all any course like this one can show.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "An \"open question\" is defined as an unresolved point that is:",
+            options: ["Recorded in writing so somebody can close it later", "Left out of the course entirely until the evidence improves", "Presented to learners as a matter of personal interpretation", "Settled provisionally, with a note that the answer may change"],
+            correctIndex: 0,
+            explanation: "Rather than smoothed over in prose, because a hedge nobody wrote down is a hedge nobody will ever clear.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "A \"refusal\", in this course's vocabulary, is a claim that:",
+            options: ["Could have been printed and deliberately was not", "Has been shown to be false by a published institutional correction", "Concerns a living person and therefore requires their own statement", "Falls outside the subject matter the course set out to cover"],
+            correctIndex: 0,
+            explanation: "Because the evidence for it did not meet the standard, not because it was uninteresting.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Where does the Booker Prize's own wording locate the value it recognises?",
+            options: ["The vital work of translation", "The commercial contribution translated fiction makes to British publishing", "The difficulty of finding qualified translators for less widely spoken languages", "The right of a translator to be named on the cover of a published book"],
+            correctIndex: 0,
+            explanation: "Which is why the money is divided equally rather than awarded and then shared informally.",
+            sourceLessonSlug: "two-corrections-that-happened",
+          },
+          {
+            prompt: "The Grammy correction is dated to:",
+            options: ["2021, for the 2022 awards", "2020, in the Academy's first annual disclosure of its rules and guidelines", "2017, when producers and engineers were first made eligible in the category", "2004, when a Lifetime Achievement Award was given to a group of session players"],
+            correctIndex: 0,
+            explanation: "The Recording Academy announced the updated rules and guidelines in May 2021.",
+            sourceLessonSlug: "two-corrections-that-happened",
+          },
+          {
+            prompt: "Which of these is NOT one of the three conditions?",
+            options: ["The uncredited person belongs to a historically excluded group", "The public surface has fewer slots than the work had contributors", "The credit exists in a second document with a smaller readership", "The unnamed role is technically demanding and succeeds invisibly"],
+            correctIndex: 0,
+            explanation: "The conditions describe a format. Who ends up in the unnamed role is the separate routing question.",
+            sourceLessonSlug: "the-same-shape-everywhere",
+          },
+          {
+            prompt: "The print shop is described in this section as:",
+            options: ["The clearest example, not the only one", "The only industry in which the mechanism has ever been documented", "The most recent case, since the other five conventions predate it", "The hardest case, because printmaking keeps unusually poor records"],
+            correctIndex: 0,
+            explanation: "Which is why the section converts it into a three condition test you can run yourself.",
+            sourceLessonSlug: "the-same-shape-everywhere",
+          },
+          {
+            prompt: "The Booker's shortlist awards are:",
+            options: ["Also divided between author and translator", "Paid entirely to the author, with the translator recognised at the ceremony", "Held back until the winner is announced and then redistributed", "Awarded only to books whose translators are named on the cover"],
+            correctIndex: 0,
+            explanation: "Which makes the rule consistent from shortlist through to the winning title.",
+            sourceLessonSlug: "two-corrections-that-happened",
+          },
+          {
+            prompt: "\"Anatomy of a correction\" is a concept borrowed from:",
+            options: ["CREDIT-00", "The Tamarind Institute's account of its own founding decisions", "The Library of Congress exhibition on Blackburn's Printmaking Workshop", "The Recording Academy's published rules and guidelines document"],
+            correctIndex: 0,
+            explanation: "This section shows what that general account looks like inside a medium.",
+            sourceLessonSlug: "two-corrections-that-happened",
+          },
+          {
+            prompt: "The lesson on refusals argues that a course about credit which hid its uncertainty would be:",
+            options: ["Arguing against itself", "Easier to teach, at the cost of some accuracy in the details", "Following the normal practice of introductory survey courses", "Indistinguishable from the museum sources it draws its material from"],
+            correctIndex: 0,
+            explanation: "Which is why the ledger of what was printed, contested and refused is a lesson rather than a footnote.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Superlatives in this course are:",
+            options: ["Checked before they are printed", "Avoided altogether, since no superlative can be fully verified", "Printed with a hedge attached, so the reader can judge for themselves", "Accepted when two independent secondary sources agree on the wording"],
+            correctIndex: 0,
+            explanation: "The first master printer claim and the only woman claim both survived that check.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Which document type is named as the second document in the film case?",
+            options: ["The end crawl", "The distributor's contract with the post production facility", "The union filing recording who worked on which reel of the picture", "The archived colour grading notes retained by the laboratory"],
+            correctIndex: 0,
+            explanation: "It carries names the poster has no room for, which is condition two exactly.",
+            sourceLessonSlug: "the-same-shape-everywhere",
+          },
+          {
+            prompt: "The productive questions once a format is identified are the two from:",
+            options: ["Section 1", "Section 2, about whether a credit was destroyed or merely relocated", "Section 4, about which of the three responses a person should choose", "Section 6, about which corrections have already been made in that industry"],
+            correctIndex: 0,
+            explanation: "Who is routed into the unnamed role, and what the people in it built instead.",
+            sourceLessonSlug: "the-same-shape-everywhere",
+          },
+          {
+            prompt: "This course's final instruction to the learner is to keep:",
+            options: ["A test, not a list of names", "A record of every unverified claim encountered in other histories", "The six biographies, which are the most transferable part of the material", "The distinction between a signature and a chop, which travels to any medium"],
+            correctIndex: 0,
+            explanation: "Because the three condition test works on cases the record never preserved.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "The translator parallel is followed in the next lesson by a prize that changed:",
+            options: ["Exactly that convention", "The way translated books are marketed to English language readers", "The eligibility rules for books first published outside the United Kingdom", "The number of translators who may share a single shortlisted nomination"],
+            correctIndex: 0,
+            explanation: "The International Booker Prize divides its money equally between author and translator.",
+            sourceLessonSlug: "the-same-shape-everywhere",
+          },
+          {
+            prompt: "A \"prospective correction\" is a rule change that:",
+            options: ["Applies from now on", "Takes effect only after a transitional period agreed with the industry", "Can be reversed if the institution later decides it was a mistake", "Requires the affected parties to apply individually for the new credit"],
+            correctIndex: 0,
+            explanation: "It does not restore credit for work already published, which is its central limitation.",
+            sourceLessonSlug: "two-corrections-that-happened",
+          },
+          {
+            prompt: "The lesson describes the Recording Academy change as removing:",
+            options: ["The threshold", "The requirement that nominees be voting members of the Academy", "The limit on how many people may share a single award statuette", "The distinction between recording engineers and mastering engineers"],
+            correctIndex: 0,
+            explanation: "Nothing about the engineering changed; the slot count did.",
+            sourceLessonSlug: "two-corrections-that-happened",
+          },
+          {
+            prompt: "A \"co-recipient by rule\" differs from an acknowledged helper because the credit is:",
+            options: ["Enforced by the document that assigns the outcome", "Announced publicly at the same ceremony as the main award", "Recorded in the institution's archive rather than in its published rules", "Granted automatically to everyone named in the published work"],
+            correctIndex: 0,
+            explanation: "Rather than left to anyone's goodwill, which is what makes the Booker rule a structural change.",
+            sourceLessonSlug: "two-corrections-that-happened",
+          },
+          {
+            prompt: "Section 6 argues the print shop case is worth generalising because its mechanism is:",
+            options: ["A property of the medium", "The oldest documented credit convention in any creative industry", "Enforced by an institution that also governs the other five industries", "Unique enough that no other field's conventions closely resemble it"],
+            correctIndex: 0,
+            explanation: "Rather than of a society, which is why the same three conditions appear in five unrelated fields.",
+            sourceLessonSlug: "the-same-shape-everywhere",
+          },
+          {
+            prompt: "The refusals lesson exists because the alternative would leave the course:",
+            options: ["Holding hostages", "Shorter than the assessment specification requires it to be", "Unable to cite any institutional source for its central claims", "Inconsistent with the way CREDIT-00 handles contested material"],
+            correctIndex: 0,
+            explanation: "Every unverified detail printed is one, and its eventual correction damages everything standing next to it.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Which is the correct order of the three conditions as the lesson states them?",
+            options: ["Format cap, relocated credit, invisible expertise", "Invisible expertise, format cap, relocated credit, in ascending order of importance", "Relocated credit, invisible expertise, format cap, matching the order of the sections", "Format cap, invisible expertise, archival silence, which is the diagnostic sequence"],
+            correctIndex: 0,
+            explanation: "A cap on the public surface, a credit in a low readership document, and a technically demanding role that succeeds invisibly.",
+            sourceLessonSlug: "the-same-shape-everywhere",
+          },
+        ],
+      },
+    },
   ],
 };
