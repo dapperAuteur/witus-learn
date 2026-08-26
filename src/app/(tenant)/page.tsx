@@ -212,7 +212,7 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
                   className="rounded-lg border border-neutral-200 p-5 transition-colors hover:border-current focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-800"
                 >
                   <span className="font-semibold">{c.name}</span>
-                  <p className="mt-1 text-sm text-neutral-500">
+                  <p className="mt-1 text-sm text-neutral-600">
                     {n} course{n === 1 ? "" : "s"} →
                   </p>
                 </Link>
@@ -233,7 +233,7 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
         </section>
       ) : null}
 
-      {courses.length === 0 ? <p className="text-neutral-500">No courses yet.</p> : null}
+      {courses.length === 0 ? <p className="text-neutral-600">No courses yet.</p> : null}
     </main>
   );
 }

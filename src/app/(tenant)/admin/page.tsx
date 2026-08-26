@@ -39,12 +39,12 @@ export default async function AdminHome() {
   return (
     <div className="py-10">
       <h1 className="text-2xl font-bold">Admin</h1>
-      <p className="mt-1 text-sm text-neutral-500">
+      <p className="mt-1 text-sm text-neutral-600">
         {owner ? "Platform operator console." : `Manage ${tenant.name}.`}
       </p>
 
       <section aria-labelledby="admin-at-a-glance" className="mt-6">
-        <h2 id="admin-at-a-glance" className="text-sm font-semibold uppercase tracking-wide text-neutral-500">
+        <h2 id="admin-at-a-glance" className="text-sm font-semibold uppercase tracking-wide text-neutral-600">
           At a glance
         </h2>
         <ul className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-3">
@@ -59,7 +59,7 @@ export default async function AdminHome() {
                   {t.value}
                 </span>
                 <span className="mt-0.5 block text-sm font-medium">{t.label}</span>
-                {t.hint ? <span className="mt-0.5 block text-xs text-neutral-500">{t.hint}</span> : null}
+                {t.hint ? <span className="mt-0.5 block text-xs text-neutral-600">{t.hint}</span> : null}
               </Link>
             </li>
           ))}
@@ -67,7 +67,7 @@ export default async function AdminHome() {
       </section>
 
       <section aria-labelledby="admin-all-tools" className="mt-8">
-        <h2 id="admin-all-tools" className="text-sm font-semibold uppercase tracking-wide text-neutral-500">
+        <h2 id="admin-all-tools" className="text-sm font-semibold uppercase tracking-wide text-neutral-600">
           All tools
         </h2>
         <div className="mt-3 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -80,7 +80,7 @@ export default async function AdminHome() {
               <h3 className="font-semibold" style={{ color: "var(--accent)" }}>
                 <span aria-hidden>{c.icon}</span> {c.title}
               </h3>
-              <p className="mt-1 text-sm text-neutral-500">{c.desc}</p>
+              <p className="mt-1 text-sm text-neutral-600">{c.desc}</p>
             </Link>
           ))}
         </div>

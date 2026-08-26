@@ -132,7 +132,7 @@ export function ExploreGlobe({ markers }: { markers: GlobeMarker[] }) {
           <button type="button" onClick={() => { setZoom((z) => Math.min(MAX_Z, z * 1.3)); setSpinning(false); }} aria-label="Zoom in" className="h-8 w-8 rounded-md border border-neutral-300 text-lg leading-none dark:border-neutral-700">
             +
           </button>
-          <span className="ml-1 text-xs text-neutral-500">
+          <span className="ml-1 text-xs text-neutral-600">
             {shown.length} of {markers.length} places · zoom in for more
           </span>
         </div>
@@ -214,13 +214,13 @@ export function ExploreGlobe({ markers }: { markers: GlobeMarker[] }) {
             </Link>
           </div>
         ) : (
-          <p className="mt-2 text-sm text-neutral-500">Drag to rotate, scroll or use + / − to zoom. Tap a point, or pick from the list.</p>
+          <p className="mt-2 text-sm text-neutral-600">Drag to rotate, scroll or use + / − to zoom. Tap a point, or pick from the list.</p>
         )}
       </div>
 
       {/* Real text list: the accessibility affordance AND the no-JS / offline fallback. */}
       <nav aria-label="Places our courses are about" className="lg:border-l lg:border-neutral-200 lg:pl-6 lg:dark:border-neutral-800">
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">Every place</h2>
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-600">Every place</h2>
         <ul className="mt-2 space-y-1 text-sm">
           {markers.map((m) => (
             <li key={m.id}>

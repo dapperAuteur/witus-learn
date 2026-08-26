@@ -153,7 +153,7 @@ export function DomainsAdmin({
           </button>
         </div>
         {err ? <p className="text-sm text-red-600">{err}</p> : null}
-        <p className="text-xs text-neutral-500">
+        <p className="text-xs text-neutral-600">
           A <code>&lt;name&gt;.learn.witus.online</code> subdomain goes live immediately, no DNS
           needed. {" "}
           {hasVercelDomains
@@ -167,10 +167,10 @@ export function DomainsAdmin({
         {tenants.map((t) => (
           <div key={t.id} className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
             <h3 className="font-semibold">
-              {t.name} <span className="text-sm font-normal text-neutral-500">/{t.slug}</span>
+              {t.name} <span className="text-sm font-normal text-neutral-600">/{t.slug}</span>
             </h3>
             {t.domains.length === 0 ? (
-              <p className="mt-2 text-sm text-neutral-500">No domains mapped.</p>
+              <p className="mt-2 text-sm text-neutral-600">No domains mapped.</p>
             ) : (
               <ul className="mt-2 divide-y divide-neutral-200 dark:divide-neutral-800">
                 {t.domains.map((d) => {
@@ -227,7 +227,7 @@ export function DomainsAdmin({
                           ) : null}
                           {hi.records?.length ? (
                             <div className="mt-2">
-                              <p className="text-xs text-neutral-500">
+                              <p className="text-xs text-neutral-600">
                                 Add a record at your DNS provider (click a value to copy).{" "}
                                 {hi.records.length > 1 ? "An apex domain works with EITHER the A or the CNAME, " : ""}
                                 use whatever your host (e.g. Vercel) shows for this domain.
@@ -252,7 +252,7 @@ export function DomainsAdmin({
                           ) : null}
                           {hi.verification?.length ? (
                             <div className="mt-3">
-                              <p className="text-xs text-neutral-500">Vercel also asks for:</p>
+                              <p className="text-xs text-neutral-600">Vercel also asks for:</p>
                               <div className="mt-1 overflow-x-auto">
                                 <table className="w-full text-xs">
                                   <tbody className="font-mono">

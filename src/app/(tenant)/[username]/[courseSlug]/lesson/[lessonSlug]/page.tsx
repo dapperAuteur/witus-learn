@@ -156,10 +156,10 @@ export default async function LessonPage({ params }: Params) {
       <div className="sticky top-(--site-header-h) z-10 border-b border-neutral-200 bg-white/90 backdrop-blur dark:border-neutral-800 dark:bg-neutral-950/90">
         <div className="mx-auto max-w-6xl px-4 py-3">
           <div className="flex items-center justify-between gap-3 text-sm">
-            <Link href={base} className="flex min-w-0 items-center gap-2 font-medium text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100">
+            <Link href={base} className="flex min-w-0 items-center gap-2 font-medium text-neutral-600 hover:text-neutral-900 dark:hover:text-neutral-100">
               <span aria-hidden>←</span> <span className="truncate">{view.course.title}</span>
             </Link>
-            <span className="shrink-0 font-medium tabular-nums text-neutral-500">
+            <span className="shrink-0 font-medium tabular-nums text-neutral-600">
               Lesson {position} of {total}
             </span>
           </div>
@@ -223,7 +223,7 @@ export default async function LessonPage({ params }: Params) {
                     <details key={mod.id} open={hasCurrent}>
                       <summary className="flex cursor-pointer list-none items-center justify-between gap-2 rounded-md px-2 py-1.5 font-medium hover:bg-neutral-50 dark:hover:bg-neutral-900">
                         <span className="min-w-0 truncate">{mod.title}</span>
-                        <span className="shrink-0 text-xs tabular-nums text-neutral-500">
+                        <span className="shrink-0 text-xs tabular-nums text-neutral-600">
                           {doneCount}/{modLessons.length}
                         </span>
                       </summary>
@@ -339,7 +339,7 @@ export default async function LessonPage({ params }: Params) {
 
       {crossroads.length > 0 ? (
         <section className="mt-10">
-          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-500">
+          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-600">
             Where to next?
           </h2>
           <div className="grid gap-3 sm:grid-cols-2">
@@ -360,7 +360,7 @@ export default async function LessonPage({ params }: Params) {
       ) : null}
 
       {alsoDiscussed.length > 0 ? (
-        <p className="mt-6 text-sm text-neutral-500">
+        <p className="mt-6 text-sm text-neutral-600">
           Also discussed in other courses:{" "}
           {alsoDiscussed.map((e, i) => (
             <span key={e.slug}>

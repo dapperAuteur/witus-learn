@@ -159,7 +159,7 @@ export function CourseInterestForm({
             placeholder="you@example.com"
             className={inputClass}
           />
-          <p id={`${id}-email-hint`} className="mt-1 text-xs text-neutral-500">
+          <p id={`${id}-email-hint`} className="mt-1 text-xs text-neutral-600">
             How we reply, and how a review invitation would reach you.
           </p>
         </div>
@@ -167,7 +167,7 @@ export function CourseInterestForm({
 
       <div className="mt-3">
         <label htmlFor={`${id}-phone`} className="block text-sm font-medium">
-          Phone number <span className="font-normal text-neutral-500">(optional)</span>
+          Phone number <span className="font-normal text-neutral-600">(optional)</span>
         </label>
         <input
           id={`${id}-phone`}
@@ -181,7 +181,7 @@ export function CourseInterestForm({
           aria-describedby={`${id}-phone-hint`}
           className={inputClass}
         />
-        <p id={`${id}-phone-hint`} className="mt-1 text-xs text-neutral-500">
+        <p id={`${id}-phone-hint`} className="mt-1 text-xs text-neutral-600">
           {PHONE_HINT}
         </p>
       </div>
@@ -189,7 +189,7 @@ export function CourseInterestForm({
       <div className="mt-3">
         <label htmlFor={`${id}-credentials`} className="block text-sm font-medium">
           {wantsBackground ? "Your background" : "Anything else"}{" "}
-          <span className="font-normal text-neutral-500">(optional)</span>
+          <span className="font-normal text-neutral-600">(optional)</span>
         </label>
         <textarea
           id={`${id}-credentials`}
@@ -201,7 +201,7 @@ export function CourseInterestForm({
           aria-describedby={`${id}-credentials-hint`}
           className="mt-1 w-full rounded-md border border-neutral-300 px-3 py-2 focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700 dark:bg-neutral-900"
         />
-        <p id={`${id}-credentials-hint`} className="mt-1 text-xs text-neutral-500">
+        <p id={`${id}-credentials-hint`} className="mt-1 text-xs text-neutral-600">
           {wantsBackground
             ? "Qualifications, licences, publications, years in the field: whatever tells the instructor how to weigh your notes."
             : "Anything you want the instructor to know."}

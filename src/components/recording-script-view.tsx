@@ -276,7 +276,7 @@ function Teleprompter({
         <button type="button" onClick={onExit} className="min-h-9 rounded-md border border-neutral-600 px-3">
           Exit (Esc)
         </button>
-        <span className="hidden text-xs text-neutral-500 sm:inline">
+        <span className="hidden text-xs text-neutral-600 sm:inline">
           Space = play/pause · ↑/↓ = speed · click text = play/pause
         </span>
       </div>

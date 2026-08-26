@@ -29,7 +29,7 @@ export default async function InstructorProfilePage({ params }: Params) {
   const promotions = await listActivePromotions(tenant.id);
   return (
     <main className="mx-auto max-w-5xl px-4 py-10">
-      <Link href="/instructors" className="text-sm text-neutral-500 hover:underline">
+      <Link href="/instructors" className="text-sm text-neutral-600 hover:underline">
         ← All instructors
       </Link>
       <div className="mt-4 flex items-center gap-4">
@@ -39,7 +39,7 @@ export default async function InstructorProfilePage({ params }: Params) {
         ) : null}
         <div>
           <h1 className="text-3xl font-bold">{profile.displayName ?? profile.username}</h1>
-          {profile.username ? <p className="text-sm text-neutral-500">@{profile.username}</p> : null}
+          {profile.username ? <p className="text-sm text-neutral-600">@{profile.username}</p> : null}
         </div>
       </div>
       {profile.bio ? (

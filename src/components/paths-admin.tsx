@@ -101,12 +101,12 @@ function PathRow({ path, courses }: { path: Path; courses: Course[] }) {
     <div className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
       <div className="flex items-center justify-between">
         <h3 className="font-semibold">
-          {path.title} <span className="text-sm font-normal text-neutral-500">/{path.slug}</span>
+          {path.title} <span className="text-sm font-normal text-neutral-600">/{path.slug}</span>
         </h3>
         <button type="button" disabled={busy} onClick={del} className="text-sm text-red-600">Delete</button>
       </div>
       <div className="mt-3 space-y-1 text-sm">
-        {courses.length === 0 ? <p className="text-neutral-500">No courses on this school yet.</p> : null}
+        {courses.length === 0 ? <p className="text-neutral-600">No courses on this school yet.</p> : null}
         {courses.map((c) => (
           <label key={c.id} className="flex items-center gap-2">
             <input type="checkbox" checked={checked.has(c.id)} onChange={() => toggle(c.id)} /> {c.title}

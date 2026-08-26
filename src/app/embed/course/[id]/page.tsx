@@ -40,7 +40,7 @@ export default async function EmbedCoursePage({ params }: Params) {
 
   return (
     <main className="mx-auto max-w-2xl p-6">
-      <p className="text-xs font-medium uppercase tracking-wide text-neutral-500">{tenant.name}</p>
+      <p className="text-xs font-medium uppercase tracking-wide text-neutral-600">{tenant.name}</p>
       <h1 className="mt-1 text-xl font-bold">{course.title}</h1>
       {course.description ? (
         <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">{course.description}</p>
@@ -55,12 +55,12 @@ export default async function EmbedCoursePage({ params }: Params) {
             >
               <span className="text-neutral-400">{i + 1}.</span>
               <span className="flex-1">{l.title}</span>
-              <span className="text-xs text-neutral-500">{l.lessonType}</span>
+              <span className="text-xs text-neutral-600">{l.lessonType}</span>
             </li>
           ))}
         </ol>
       ) : (
-        <p className="mt-6 text-sm text-neutral-500">No published lessons yet.</p>
+        <p className="mt-6 text-sm text-neutral-600">No published lessons yet.</p>
       )}
 
       <a

@@ -93,7 +93,7 @@ export default async function StandardsMatrixPage() {
         <EmptyState brand={brand} />
       ) : (
         <>
-          <p className="mt-2 text-sm text-neutral-500">
+          <p className="mt-2 text-sm text-neutral-600">
             {stateCount} state{stateCount === 1 ? "" : "s"} mapped so far.
           </p>
           <StandardsMatrix rows={rows} brand={brand} />

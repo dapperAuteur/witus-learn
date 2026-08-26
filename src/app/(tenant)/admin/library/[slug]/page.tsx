@@ -43,7 +43,7 @@ export default async function AdminLibraryDocumentPage({
               Download PDF{size ? ` (${size})` : ""}
             </a>
           ) : null}
-          <span className="text-xs text-neutral-500">
+          <span className="text-xs text-neutral-600">
             Updated {dateFmt.format(doc.updatedAt)} UTC
           </span>
         </div>

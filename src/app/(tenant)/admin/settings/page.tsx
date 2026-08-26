@@ -34,11 +34,11 @@ export default async function SettingsPage() {
 
   return (
     <main className="max-w-2xl py-10">
-      <Link href="/admin" className="text-sm text-neutral-500 hover:underline">
+      <Link href="/admin" className="text-sm text-neutral-600 hover:underline">
         ← Admin
       </Link>
       <h1 className="mt-3 text-2xl font-bold">Brand settings</h1>
-      <p className="mt-1 text-sm text-neutral-500">
+      <p className="mt-1 text-sm text-neutral-600">
         Branding and features for {tenant.name}. Changes apply on next load.
       </p>
       <BrandPreviewCard tenant={tenant} />
@@ -69,7 +69,7 @@ function BrandPreviewCard({ tenant }: { tenant: Awaited<ReturnType<typeof requir
         )}
         <div className="min-w-0">
           <p className="truncate font-semibold">{tenant.theme.wordmark ?? brandName(tenant)}</p>
-          {tenant.tagline ? <p className="truncate text-sm text-neutral-500">{tenant.tagline}</p> : null}
+          {tenant.tagline ? <p className="truncate text-sm text-neutral-600">{tenant.tagline}</p> : null}
         </div>
         <span className="ml-auto flex-none rounded-full px-3 py-1 text-xs font-semibold" style={{ backgroundColor: accent, color: accentFg }}>
           Saved brand

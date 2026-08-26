@@ -126,7 +126,7 @@ export function LanguagesMap({
           <div className="flex flex-wrap items-center gap-2">
             <span className="h-3 w-3 rounded-full" style={{ backgroundColor: sel.color }} />
             <h3 className="font-semibold">{sel.name}</h3>
-            <span className="text-sm text-neutral-500">· originates in {sel.origin.name}</span>
+            <span className="text-sm text-neutral-600">· originates in {sel.origin.name}</span>
           </div>
           <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">{sel.spread}</p>
           {courseHrefs?.[sel.slug] ? (
@@ -138,11 +138,11 @@ export function LanguagesMap({
               Start the {sel.name} course →
             </a>
           ) : (
-            <p className="mt-3 text-sm text-neutral-500">Course coming soon.</p>
+            <p className="mt-3 text-sm text-neutral-600">Course coming soon.</p>
           )}
         </div>
       ) : (
-        <p className="mt-4 text-sm text-neutral-500">
+        <p className="mt-4 text-sm text-neutral-600">
           Select a language to see how it spread and to start its course.
         </p>
       )}

@@ -151,11 +151,11 @@ export function CourseAdminTools({
         >
           {pending === "fit" ? "Checking fit…" : "Audit assessment fit"}
         </button>
-        <span className="text-neutral-500">Navigation:</span>
+        <span className="text-neutral-600">Navigation:</span>
         {modeBtn("linear", "Linear")}
         {modeBtn("cyoa", "CYOA")}
       </div>
-      <p className="mt-2 text-xs text-neutral-500">
+      <p className="mt-2 text-xs text-neutral-600">
         CYOA crossroads appear on the lesson player once the mode is CYOA and embeddings are
         generated (needs a Gemini key). Publishing re-indexes automatically; re-index by hand after
         editing lessons on an already-published course. &ldquo;Audit reveals&rdquo; asks the AI
@@ -185,7 +185,7 @@ export function CourseAdminTools({
               <ul className="mt-2 space-y-2">
                 {audit.flagged.map((f, i) => (
                   <li key={i} className="rounded border border-amber-200 bg-amber-50 p-2 dark:border-amber-900/50 dark:bg-amber-900/20">
-                    <p className="text-xs font-semibold text-neutral-500">{f.lessonTitle}</p>
+                    <p className="text-xs font-semibold text-neutral-600">{f.lessonTitle}</p>
                     <p className="mt-0.5">
                       <span className="font-medium">Q:</span> {f.question}
                     </p>
@@ -199,7 +199,7 @@ export function CourseAdminTools({
             </>
           )}
           {audit.truncated ? (
-            <p className="mt-2 text-xs text-neutral-500">
+            <p className="mt-2 text-xs text-neutral-600">
               Stopped early to keep the check fast; run again after fixing these to audit the rest.
             </p>
           ) : null}
@@ -220,7 +220,7 @@ export function CourseAdminTools({
               <ul className="mt-2 space-y-2">
                 {fit.flagged.map((f, i) => (
                   <li key={i} className="rounded border border-amber-200 bg-amber-50 p-2 dark:border-amber-900/50 dark:bg-amber-900/20">
-                    <p className="text-xs font-semibold text-neutral-500">{f.lessonTitle}</p>
+                    <p className="text-xs font-semibold text-neutral-600">{f.lessonTitle}</p>
                     <p className="mt-0.5">
                       Uses <span className="font-medium">{f.widget}</span>
                       {f.suggested && f.suggested !== "none" ? (
@@ -236,7 +236,7 @@ export function CourseAdminTools({
             </>
           )}
           {fit.truncated ? (
-            <p className="mt-2 text-xs text-neutral-500">
+            <p className="mt-2 text-xs text-neutral-600">
               Stopped early to keep the check fast; run again after fixing these to check the rest.
             </p>
           ) : null}

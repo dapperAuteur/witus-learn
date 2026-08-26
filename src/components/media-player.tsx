@@ -191,7 +191,7 @@ export function MediaPlayer({
       )}
 
       {resumedFrom != null ? (
-        <p role="status" className="flex flex-wrap items-center gap-2 text-sm text-neutral-500">
+        <p role="status" className="flex flex-wrap items-center gap-2 text-sm text-neutral-600">
           <span>
             Picking up where you left off, <span className="tabular-nums">{fmt(resumedFrom)}</span>.
           </span>

@@ -37,7 +37,7 @@ export default async function FeedbackQueuePage() {
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
-      <Link href="/teach" className="text-sm text-neutral-500 hover:underline">
+      <Link href="/teach" className="text-sm text-neutral-600 hover:underline">
         ← Your courses
       </Link>
       <h1 className="mt-4 text-2xl font-bold">Curriculum feedback</h1>

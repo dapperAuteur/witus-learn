@@ -80,14 +80,14 @@ export function CourseInterestPanel({
           </span>
         ) : null}
       </h2>
-      <p className="mt-1 text-sm text-neutral-500">
+      <p className="mt-1 text-sm text-neutral-600">
         Visitors who asked to take this course, to test it before it opens, or to vet it as a
         subject matter expert. Nobody here has any access yet. Approving a tester or an expert sends
         them a read-only review invite: they can read every lesson while this course is still
         &ldquo;Coming soon&rdquo;, and they cannot enroll, earn a certificate, or record any
         progress, so this course&apos;s statistics keep measuring learners only.
       </p>
-      <p className="mt-2 text-sm text-neutral-500">
+      <p className="mt-2 text-sm text-neutral-600">
         Phone numbers and backgrounds below were given to you in confidence. They are shown on this
         page and nowhere else: not on the course page, not in any export, not in any email.
       </p>
@@ -97,13 +97,13 @@ export function CourseInterestPanel({
         grants exist. Said here because "I changed my mind" is the obvious next question after
         approving somebody.
       */}
-      <p className="mt-2 text-sm text-neutral-500">
+      <p className="mt-2 text-sm text-neutral-600">
         Changed your mind about someone you approved? Remove them from{" "}
         <strong>Invite someone to review this course</strong>, just below. That is what actually
         takes their access away, and it applies on their next click.
       </p>
       {!isUnvetted ? (
-        <p className="mt-2 text-sm text-neutral-500">
+        <p className="mt-2 text-sm text-neutral-600">
           This course is vetted, so its lessons are open anyway and the public form is no longer
           shown. Approving someone now changes nothing about what they can read.
         </p>
@@ -123,14 +123,14 @@ export function CourseInterestPanel({
               : `Email is not configured, so send this link to ${lastLink.email} yourself:`}
           </p>
           <p className="mt-1 break-all font-mono text-xs">{lastLink.url}</p>
-          <p className="mt-1 text-neutral-500">
+          <p className="mt-1 text-neutral-600">
             Shown once. They still have to open it: an invite that is never accepted grants nothing.
           </p>
         </div>
       ) : null}
 
       {rows.length === 0 ? (
-        <p className="mt-3 text-sm text-neutral-500">Nobody has put their hand up yet.</p>
+        <p className="mt-3 text-sm text-neutral-600">Nobody has put their hand up yet.</p>
       ) : (
         <ul className="mt-3 divide-y divide-neutral-100 dark:divide-neutral-800/60">
           {rows.map((r) => (
@@ -157,11 +157,11 @@ export function CourseInterestPanel({
                     ) : null}
                   </p>
                   {r.phoneRaw && r.phoneRaw !== r.phone ? (
-                    <p className="mt-0.5 text-xs text-neutral-500">
+                    <p className="mt-0.5 text-xs text-neutral-600">
                       As typed: <span className="font-mono">{r.phoneRaw}</span>
                     </p>
                   ) : null}
-                  <p className="mt-0.5 text-xs text-neutral-500">
+                  <p className="mt-0.5 text-xs text-neutral-600">
                     asked {fmt(r.createdAt)}
                     {r.status !== "pending" && r.decidedAt
                       ? `, ${r.status} ${fmt(r.decidedAt)}`
@@ -191,7 +191,7 @@ export function CourseInterestPanel({
                     </button>
                   </div>
                 ) : (
-                  <span className="shrink-0 text-xs text-neutral-500">{r.status}</span>
+                  <span className="shrink-0 text-xs text-neutral-600">{r.status}</span>
                 )}
               </div>
               {r.credentials ? (

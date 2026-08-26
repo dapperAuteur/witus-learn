@@ -109,7 +109,7 @@ export default async function ResearchChecksPage() {
         </Link>
         , holds every source cited by a staged course.
       </p>
-      <p className="mt-2 text-xs text-neutral-500 dark:text-neutral-400">
+      <p className="mt-2 text-xs text-neutral-600 dark:text-neutral-400">
         A check cannot be closed without saying what you found. A check marked verified with nothing
         written down is worse than an open one, because it stops anyone looking again.
       </p>

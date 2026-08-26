@@ -95,9 +95,9 @@ function Item({
 
       {item.hint && verdict == null ? (
         showHint ? (
-          <p className="mt-1 text-xs text-neutral-500">Hint: {item.hint}</p>
+          <p className="mt-1 text-xs text-neutral-600">Hint: {item.hint}</p>
         ) : (
-          <button type="button" onClick={() => setShowHint(true)} className="mt-1 text-xs underline text-neutral-500">
+          <button type="button" onClick={() => setShowHint(true)} className="mt-1 text-xs underline text-neutral-600">
             Need a hint?
           </button>
         )
@@ -125,10 +125,10 @@ function Item({
       ) : null}
 
       {verdict && verdict !== "incorrect" && item.explanation ? (
-        <p className="mt-1 text-xs text-neutral-500">{item.explanation}</p>
+        <p className="mt-1 text-xs text-neutral-600">{item.explanation}</p>
       ) : null}
       {verdict === "incorrect" && revealed && item.explanation ? (
-        <p className="mt-1 text-xs text-neutral-500">{item.explanation}</p>
+        <p className="mt-1 text-xs text-neutral-600">{item.explanation}</p>
       ) : null}
     </li>
   );

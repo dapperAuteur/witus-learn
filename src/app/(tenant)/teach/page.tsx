@@ -122,7 +122,7 @@ export default async function TeachPage({
       </form>
 
       {courses.length === 0 ? (
-        <p className="mt-8 rounded-xl border border-dashed border-neutral-300 px-4 py-6 text-center text-neutral-500 dark:border-neutral-700">
+        <p className="mt-8 rounded-xl border border-dashed border-neutral-300 px-4 py-6 text-center text-neutral-600 dark:border-neutral-700">
           No courses yet.
         </p>
       ) : (

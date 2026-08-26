@@ -18,9 +18,9 @@ export default async function EditProfilePage() {
 
   return (
     <main className="mx-auto max-w-2xl px-4 py-10">
-      <Link href="/teach" className="text-sm text-neutral-500 hover:underline">← Your courses</Link>
+      <Link href="/teach" className="text-sm text-neutral-600 hover:underline">← Your courses</Link>
       <h1 className="mt-4 text-2xl font-bold">Edit your profile</h1>
-      <p className="mt-1 text-sm text-neutral-500">
+      <p className="mt-1 text-sm text-neutral-600">
         {profile.username
           ? <>This appears on your public instructor page (<code>/instructors/{profile.username}</code>).</>
           : "Your public instructor page activates once you create your first course."}

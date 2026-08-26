@@ -76,13 +76,13 @@ export function CourseAuditorsPanel({
   return (
     <section className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
       <h2 className="font-semibold">Invite someone to review this course</h2>
-      <p className="mt-1 text-sm text-neutral-500">
+      <p className="mt-1 text-sm text-neutral-600">
         A reviewer can read every lesson of this course while it is still &ldquo;Coming soon&rdquo;.
         They cannot enroll, earn a certificate, or record any progress, and their quiz answers are
         never counted, so this course&apos;s statistics keep measuring learners only.
       </p>
       {!isUnvetted ? (
-        <p className="mt-2 text-sm text-neutral-500">
+        <p className="mt-2 text-sm text-neutral-600">
           This course is vetted, so its lessons are open anyway. A review invite only changes what
           someone sees while a course is still unvetted.
         </p>
@@ -123,21 +123,21 @@ export function CourseAuditorsPanel({
             {notEmailed ? "Email is not configured, so send this link yourself:" : "Invite link (also emailed):"}
           </p>
           <p className="mt-1 break-all font-mono text-xs">{lastLink}</p>
-          <p className="mt-1 text-neutral-500">
+          <p className="mt-1 text-neutral-600">
             Shown once. If it is lost, invite the same address again for a fresh link.
           </p>
         </div>
       ) : null}
 
       {rows.length === 0 ? (
-        <p className="mt-3 text-sm text-neutral-500">Nobody is reviewing this course yet.</p>
+        <p className="mt-3 text-sm text-neutral-600">Nobody is reviewing this course yet.</p>
       ) : (
         <ul className="mt-3 divide-y divide-neutral-100 dark:divide-neutral-800/60">
           {rows.map((r) => (
             <li key={r.id} className="flex flex-wrap items-center justify-between gap-2 py-2 text-sm">
               <span className="min-w-0 break-all">
                 {r.email}
-                <span className="ml-2 text-neutral-500">
+                <span className="ml-2 text-neutral-600">
                   {r.acceptedAt ? `accepted ${fmt(r.acceptedAt)}` : `invited ${fmt(r.invitedAt)}, not accepted yet`}
                 </span>
               </span>

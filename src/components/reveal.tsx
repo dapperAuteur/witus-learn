@@ -30,7 +30,7 @@ export function Reveal({
   const [show, setShow] = useState(false);
   return (
     <div className="my-4 rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
-      <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500">Check yourself</p>
+      <p className="text-xs font-semibold uppercase tracking-wide text-neutral-600">Check yourself</p>
       <p className="mt-1">{question}</p>
       {show ? (
         <RevealAnswerPanel
@@ -80,7 +80,7 @@ export function RevealAnswerPanel({
       {inLesson && canTrack ? (
         <RevealGrade courseId={courseId as string} lessonId={lessonId as string} question={question} />
       ) : inLesson ? (
-        <p className="mt-3 text-xs text-neutral-500">
+        <p className="mt-3 text-xs text-neutral-600">
           <Link href="/login" className="underline">
             Sign in
           </Link>{" "}
@@ -146,7 +146,7 @@ export function RevealGrade({
     return (
       <p role="status" className="mt-3 text-sm font-medium" style={{ color: graded ? "var(--accent)" : undefined }}>
         {graded ? "Nice, logged as recalled." : "Logged, review this one before the quiz."}
-        {queued ? <span className="font-normal text-neutral-500"> Saved offline; it&apos;ll sync when you&apos;re back online.</span> : null}
+        {queued ? <span className="font-normal text-neutral-600"> Saved offline; it&apos;ll sync when you&apos;re back online.</span> : null}
       </p>
     );
   }
@@ -154,7 +154,7 @@ export function RevealGrade({
   return (
     <div className="mt-3 text-sm">
       <div className="flex flex-wrap items-center gap-2">
-        <span className="text-neutral-500">Did you get it?</span>
+        <span className="text-neutral-600">Did you get it?</span>
         <button
           type="button"
           onClick={() => void grade(true)}

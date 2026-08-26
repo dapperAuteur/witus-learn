@@ -111,7 +111,7 @@ export function AnnounceManager({
           Hide already-announced
         </label>
         <div>
-          <label htmlFor="scheduleAt" className="block text-xs text-neutral-500">
+          <label htmlFor="scheduleAt" className="block text-xs text-neutral-600">
             Schedule (optional)
           </label>
           <input
@@ -155,7 +155,7 @@ export function AnnounceManager({
 
       <ul className="divide-y divide-neutral-200 rounded-lg border border-neutral-200 dark:divide-neutral-800 dark:border-neutral-800">
         {visible.length === 0 ? (
-          <li className="p-4 text-sm text-neutral-500">No courses to show.</li>
+          <li className="p-4 text-sm text-neutral-600">No courses to show.</li>
         ) : (
           visible.map((r) => (
             <li key={r.id} className="flex items-center gap-3 p-3">
@@ -174,7 +174,7 @@ export function AnnounceManager({
               <span className="min-w-0 flex-1 truncate font-medium">
                 {r.title}
                 {!r.isPublished ? (
-                  <span className="ml-2 rounded bg-neutral-100 px-1.5 py-0.5 text-xs text-neutral-500 dark:bg-neutral-800">
+                  <span className="ml-2 rounded bg-neutral-100 px-1.5 py-0.5 text-xs text-neutral-600 dark:bg-neutral-800">
                     draft
                   </span>
                 ) : null}

@@ -215,7 +215,7 @@ export function AnnotationLayer({
           className="absolute z-20 w-72 max-w-[calc(100vw-2rem)] -translate-x-1/2 rounded-lg border border-neutral-200 bg-white p-3 shadow-lg dark:border-neutral-700 dark:bg-neutral-900"
           style={{ top: pending.top, left: pending.left }}
         >
-          <blockquote className="max-h-16 overflow-hidden border-l-2 pl-2 text-xs italic text-neutral-500" style={{ borderColor: "var(--accent)" }}>
+          <blockquote className="max-h-16 overflow-hidden border-l-2 pl-2 text-xs italic text-neutral-600" style={{ borderColor: "var(--accent)" }}>
             {pending.quote}
           </blockquote>
           <label htmlFor="annotation-draft" className="sr-only">
@@ -247,7 +247,7 @@ export function AnnotationLayer({
                 setComposerOpen(false);
                 setPending(null);
               }}
-              className="inline-flex min-h-11 items-center text-sm text-neutral-500 underline pointer-coarse:min-h-12"
+              className="inline-flex min-h-11 items-center text-sm text-neutral-600 underline pointer-coarse:min-h-12"
             >
               Cancel
             </button>

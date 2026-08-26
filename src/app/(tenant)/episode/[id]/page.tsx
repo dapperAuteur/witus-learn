@@ -57,7 +57,7 @@ export default async function EpisodePage({ params }: Params) {
         ) : null}
 
         {sources.length > 0 ? (
-          <p className="mt-6 text-sm text-neutral-500">
+          <p className="mt-6 text-sm text-neutral-600">
             ✓ {sources.length} cited source{sources.length === 1 ? "" : "s"}
             {verified > 0 ? ` (${verified} verified)` : ""}, every claim tied to a source.
           </p>
@@ -73,7 +73,7 @@ export default async function EpisodePage({ params }: Params) {
               Start this episode →
             </Link>
           ) : (
-            <p className="text-neutral-500">This episode is coming soon.</p>
+            <p className="text-neutral-600">This episode is coming soon.</p>
           )}
         </div>
       </div>

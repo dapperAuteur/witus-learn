@@ -140,7 +140,7 @@ export function SalesAdmin({
         className="rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900"
       >
         <h3 className="font-semibold">New sale</h3>
-        <p className="mt-1 text-sm text-neutral-500">
+        <p className="mt-1 text-sm text-neutral-600">
           A price cut with <strong>no code to type</strong>: everyone sees the new price on the
           course or bundle page. Leave the end date empty to run it until you end it.
         </p>
@@ -161,7 +161,7 @@ export function SalesAdmin({
           </label>
 
           <label className="text-sm font-medium" htmlFor={`${ids}-slug`}>
-            Public page address <span className="font-normal text-neutral-500">(optional)</span>
+            Public page address <span className="font-normal text-neutral-600">(optional)</span>
             <input
               id={`${ids}-slug`}
               value={slug}
@@ -171,7 +171,7 @@ export function SalesAdmin({
               placeholder="back-to-school"
               className={field}
             />
-            <span className="mt-1 block text-xs font-normal text-neutral-500">
+            <span className="mt-1 block text-xs font-normal text-neutral-600">
               Leave blank for no page. With a slug the sale gets a shareable page at{" "}
               <code>/sale/{slug || "your-slug"}</code> and is listed on <code>/sale</code>.
             </span>
@@ -304,7 +304,7 @@ export function SalesAdmin({
           ) : null}
         </p>
 
-        <p className="mt-1 text-xs text-neutral-500">
+        <p className="mt-1 text-xs text-neutral-600">
           A sale on one course beats a school-wide sale on the same course; otherwise the biggest
           discount wins. Sales never apply to subscriptions, and never make an already-free course
           cost anything. Promo codes still work alongside these.
@@ -328,7 +328,7 @@ export function SalesAdmin({
                   <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
                   <div className="min-w-0">
                     <span className="font-semibold">{s.name}</span>
-                    <span className="ml-2 text-sm text-neutral-500">
+                    <span className="ml-2 text-sm text-neutral-600">
                       {describeSale(s.kind, s.value)} ·{" "}
                       {s.scope === "courses"
                         ? `campaign, ${s.courseIds?.length ?? 0} course${(s.courseIds?.length ?? 0) === 1 ? "" : "s"}`
@@ -383,7 +383,7 @@ export function SalesAdmin({
                                     ? `Remove ${courses.find((c) => c.id === cid)?.title ?? "course"} from ${s.name}`
                                     : `Put ${courses.find((c) => c.id === cid)?.title ?? "course"} back into ${s.name}`
                                 }
-                                className="min-h-11 rounded-full px-2 text-neutral-500 hover:text-neutral-900 focus-visible:outline-2 focus-visible:outline-offset-2 dark:hover:text-neutral-100"
+                                className="min-h-11 rounded-full px-2 text-neutral-600 hover:text-neutral-900 focus-visible:outline-2 focus-visible:outline-offset-2 dark:hover:text-neutral-100"
                               >
                                 &times;
                               </button>
@@ -391,7 +391,7 @@ export function SalesAdmin({
                           ))}
                         </ul>
                       ) : (
-                        <p className="text-sm text-neutral-500">
+                        <p className="text-sm text-neutral-600">
                           {s.scope === "courses"
                             ? "No courses in this campaign yet. Add them as they are vetted."
                             : "No exceptions. This sale currently covers every course."}
@@ -427,7 +427,7 @@ export function SalesAdmin({
       })}
 
       {sales.length === 0 ? (
-        <p className="text-sm text-neutral-500">No sales yet.</p>
+        <p className="text-sm text-neutral-600">No sales yet.</p>
       ) : null}
     </div>
   );

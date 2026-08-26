@@ -32,7 +32,7 @@ export default async function CommandsPage() {
       {OPERATOR_COMMANDS.map((group) => (
         <section key={group.title} className="mt-8">
           <h2 className="text-lg font-semibold">{group.title}</h2>
-          {group.blurb ? <p className="mt-1 text-sm text-neutral-500">{group.blurb}</p> : null}
+          {group.blurb ? <p className="mt-1 text-sm text-neutral-600">{group.blurb}</p> : null}
           <ul className="mt-3 space-y-3">
             {group.commands.map((c) => (
               <li key={c.cmd} className="rounded-lg border border-neutral-200 p-3 dark:border-neutral-800">

@@ -28,7 +28,7 @@ export default async function ReviewQueuePage() {
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
-      <Link href="/field-log" className="text-sm text-neutral-500 hover:underline">← My Field Log</Link>
+      <Link href="/field-log" className="text-sm text-neutral-600 hover:underline">← My Field Log</Link>
       <h1 className="mt-1 text-2xl font-bold">Peer review</h1>
       <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
         Review a peer&apos;s project against the Trusted Documentation Rubric. Trust pillars must be
@@ -48,7 +48,7 @@ export default async function ReviewQueuePage() {
                 className="block rounded-lg border border-neutral-200 p-4 hover:border-neutral-300 dark:border-neutral-800 dark:hover:border-neutral-700"
               >
                 <div className="font-semibold">{p.title}</div>
-                <div className="mt-1 flex flex-wrap gap-2 text-xs text-neutral-500">
+                <div className="mt-1 flex flex-wrap gap-2 text-xs text-neutral-600">
                   {p.medium ? <span className="rounded bg-neutral-100 px-2 py-0.5 dark:bg-neutral-800">{p.medium}</span> : null}
                   {p.subjectTag ? <span className="rounded bg-neutral-100 px-2 py-0.5 dark:bg-neutral-800">{p.subjectTag}</span> : null}
                   {p.subject ? <span className="truncate">· {p.subject}</span> : null}

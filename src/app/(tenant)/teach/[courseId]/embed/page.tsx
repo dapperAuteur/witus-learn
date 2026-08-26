@@ -43,7 +43,7 @@ export default async function EmbedSnippetPage({ params }: { params: Promise<{ c
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
-      <Link href={courseHref} className="text-sm text-neutral-500 hover:underline">
+      <Link href={courseHref} className="text-sm text-neutral-600 hover:underline">
         ← Manage course
       </Link>
 
@@ -105,7 +105,7 @@ export default async function EmbedSnippetPage({ params }: { params: Promise<{ c
         </section>
       ) : null}
 
-      <p className="mt-8 text-xs text-neutral-500">
+      <p className="mt-8 text-xs text-neutral-600">
         Looking for a deeper integration (another app reading your catalog as JSON)? That is the
         API-key path; see the help article &quot;Embed your courses in another app&quot; under
         /help.

@@ -82,11 +82,11 @@ export function StreamSettings({
         </label>
 
         {savedSrc ? (
-          <p className="text-xs text-neutral-500">
+          <p className="text-xs text-neutral-600">
             Saved embed source: <span className="font-mono">{savedSrc}</span>
           </p>
         ) : (
-          <p className="text-xs text-neutral-500">No embed saved yet.</p>
+          <p className="text-xs text-neutral-600">No embed saved yet.</p>
         )}
 
         <div className="flex items-center gap-3">

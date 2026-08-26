@@ -96,10 +96,10 @@ export default async function FutureWorkPage() {
         return (
           <section key={kind} className="mt-10">
             <h2 className="text-xl font-semibold">{title}</h2>
-            <p className="mt-1 text-sm text-neutral-500">{blurb}</p>
+            <p className="mt-1 text-sm text-neutral-600">{blurb}</p>
 
             {groups.length === 0 ? (
-              <p className="mt-4 rounded-lg border border-dashed border-neutral-300 p-4 text-sm text-neutral-500 dark:border-neutral-700">
+              <p className="mt-4 rounded-lg border border-dashed border-neutral-300 p-4 text-sm text-neutral-600 dark:border-neutral-700">
                 None yet.
               </p>
             ) : null}
@@ -114,7 +114,7 @@ export default async function FutureWorkPage() {
                 open ancestor carrying `.group` would flip every card's label. */}
             {groups.map((group, groupIdx) => (
               <details key={group.title} open={kindIdx === 0 && groupIdx === 0} className="group/fw mt-6">
-                <summary className="flex min-h-11 cursor-pointer list-none items-center gap-2 rounded-md text-sm font-semibold uppercase tracking-wide text-neutral-500 focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-12">
+                <summary className="flex min-h-11 cursor-pointer list-none items-center gap-2 rounded-md text-sm font-semibold uppercase tracking-wide text-neutral-600 focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-12">
                   <span aria-hidden className="text-xs transition-transform group-open/fw:rotate-90">
                     ▸
                   </span>
@@ -144,7 +144,7 @@ export default async function FutureWorkPage() {
                             queue as an open idea. One proposal can produce several courses. */}
                         {item.courseSlugs && item.courseSlugs.length > 0 ? (
                           <p className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm">
-                            <span className="text-neutral-500">Built:</span>
+                            <span className="text-neutral-600">Built:</span>
                             {item.courseSlugs.map((slug) => (
                               <Link key={slug} href={`/bam/${slug}`} className="underline underline-offset-2" style={{ color: "var(--accent)" }}>
                                 {slug}
@@ -167,7 +167,7 @@ export default async function FutureWorkPage() {
                         </details>
 
                         {itemNotes.length > 0 ? (
-                          <p className="mt-3 text-xs text-neutral-500">
+                          <p className="mt-3 text-xs text-neutral-600">
                             {itemNotes.length} note{itemNotes.length === 1 ? "" : "s"}
                             {open > 0 ? ` · ${open} open` : ""}
                           </p>

@@ -17,7 +17,7 @@ export function LegalPage({
   return (
     <main className="mx-auto max-w-3xl px-4 py-12">
       <h1 className="text-3xl font-bold">{title}</h1>
-      <p className="mt-2 text-sm text-neutral-500">{brandName(tenant)}</p>
+      <p className="mt-2 text-sm text-neutral-600">{brandName(tenant)}</p>
       <div className="mt-6 space-y-4 text-neutral-700 dark:text-neutral-300">
         {children ?? (
           <p>This content is managed per tenant and will be published before launch.</p>

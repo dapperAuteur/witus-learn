@@ -50,7 +50,7 @@ export default async function AdminLibraryPage() {
                       {doc.description}
                     </span>
                   ) : null}
-                  <span className="mt-1 block text-xs text-neutral-500">
+                  <span className="mt-1 block text-xs text-neutral-600">
                     Updated {dateFmt.format(doc.updatedAt)}
                   </span>
                 </Link>

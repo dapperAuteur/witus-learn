@@ -189,7 +189,7 @@ export function TeacherCatalog({
         ))}
       </div>
 
-      <div className="mt-2 flex items-center gap-3 text-xs text-neutral-500">
+      <div className="mt-2 flex items-center gap-3 text-xs text-neutral-600">
         <span>{filtered.length} shown</span>
         <button type="button" onClick={selectAllShown} className="underline">Select all shown</button>
         {selected.size > 0 ? (
@@ -244,7 +244,7 @@ export function TeacherCatalog({
             </>
           ) : null}
           <span className="flex items-center gap-1">
-            <span className="text-sm text-neutral-500">$</span>
+            <span className="text-sm text-neutral-600">$</span>
             <input
               type="number"
               min={0}
@@ -271,7 +271,7 @@ export function TeacherCatalog({
 
       <ul className="mt-4 space-y-2">
         {filtered.length === 0 ? (
-          <li className="rounded-xl border border-dashed border-neutral-300 px-4 py-6 text-center text-neutral-500 dark:border-neutral-700">
+          <li className="rounded-xl border border-dashed border-neutral-300 px-4 py-6 text-center text-neutral-600 dark:border-neutral-700">
             No courses match.
           </li>
         ) : (
@@ -291,10 +291,10 @@ export function TeacherCatalog({
                   {c.title}
                 </Link>
                 {c.instructorLabel ? (
-                  <span className="truncate text-xs text-neutral-500">instructor: {c.instructorLabel}</span>
+                  <span className="truncate text-xs text-neutral-600">instructor: {c.instructorLabel}</span>
                 ) : null}
               </span>
-              <span className="shrink-0 text-xs text-neutral-500">{priceLabel(c)}</span>
+              <span className="shrink-0 text-xs text-neutral-600">{priceLabel(c)}</span>
               {c.visibility === "private" ? (
                 <span className="shrink-0 rounded-full bg-purple-100 px-2 py-0.5 text-xs text-purple-800 dark:bg-purple-900 dark:text-purple-200">🔒</span>
               ) : null}

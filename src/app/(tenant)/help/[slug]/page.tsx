@@ -39,7 +39,7 @@ export default async function HelpArticlePage({ params }: Params) {
         <details className="mt-8 rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
           <summary className="cursor-pointer text-sm font-medium">
             Video tutorial script
-            <span className="ml-2 text-xs font-normal text-neutral-500">
+            <span className="ml-2 text-xs font-normal text-neutral-600">
               {script.status === "ready"
                 ? `${script.steps.length} steps${script.estimatedMinutes ? ` · about ${script.estimatedMinutes} min` : ""}`
                 : "not written yet"}
@@ -57,7 +57,7 @@ export default async function HelpArticlePage({ params }: Params) {
               ))}
             </ol>
           ) : (
-            <p className="mt-3 text-sm text-neutral-500">
+            <p className="mt-3 text-sm text-neutral-600">
               Nobody has written the narration for this one yet. It is listed here so the gap is
               visible rather than forgotten; an invented script would read as approved copy.
             </p>

@@ -70,7 +70,7 @@ export function StreamTargets({ initial }: { initial: StreamTarget[] }) {
 
       <form onSubmit={save} className="mt-4 space-y-4">
         {targets.length === 0 ? (
-          <p className="text-sm text-neutral-500">No targets yet. Add one below.</p>
+          <p className="text-sm text-neutral-600">No targets yet. Add one below.</p>
         ) : null}
 
         {targets.map((t, i) => (

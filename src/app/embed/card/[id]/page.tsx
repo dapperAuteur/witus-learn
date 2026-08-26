@@ -65,7 +65,7 @@ export default async function EmbedCardPage({ params }: Params) {
   return (
     <main className="mx-auto flex min-h-dvh max-w-md flex-col p-5" style={style}>
       <span className="mb-3 h-1.5 w-12 rounded" style={{ backgroundColor: "var(--accent, #111)" }} />
-      <p className="text-xs font-medium uppercase tracking-wide text-neutral-500">{tenant.name}</p>
+      <p className="text-xs font-medium uppercase tracking-wide text-neutral-600">{tenant.name}</p>
       <h1 className="mt-1 text-lg font-bold">{course.title}</h1>
       {course.description ? (
         <p className="mt-2 line-clamp-3 text-sm text-neutral-600 dark:text-neutral-400">

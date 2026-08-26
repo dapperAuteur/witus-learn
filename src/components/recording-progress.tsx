@@ -86,7 +86,7 @@ export function RecordingProgress({
           </li>
         ))}
       </ul>
-      <p className="mt-2 text-xs text-neutral-500">
+      <p className="mt-2 text-xs text-neutral-600">
         Record each lesson right here (audio or video), or tick it if you recorded elsewhere.
         Recordings are saved on your device first and upload when you’re online, nothing is lost if
         you lose connection, and nothing is published automatically. Your progress persists across

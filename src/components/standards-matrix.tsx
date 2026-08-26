@@ -322,7 +322,7 @@ export function StandardsMatrix({ rows, brand }: { rows: MatrixRow[]; brand: str
           placeholder="Standard code, standard text, course, state, or subject…"
           className="mt-2 min-h-11 w-full rounded-md border border-neutral-300 bg-white px-3 py-2 text-base focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700 dark:bg-neutral-900 pointer-coarse:min-h-12"
         />
-        <p className="mt-1 text-xs text-neutral-500">
+        <p className="mt-1 text-xs text-neutral-600">
           Forgiving of typos and partial terms. Every word you type must match somewhere in the row.
         </p>
 
@@ -375,7 +375,7 @@ export function StandardsMatrix({ rows, brand }: { rows: MatrixRow[]; brand: str
 
         {/* Course (single select — the list can be long) */}
         <div className="mt-4">
-          <label htmlFor="matrix-course" className="block text-xs font-semibold uppercase tracking-widest text-neutral-500">
+          <label htmlFor="matrix-course" className="block text-xs font-semibold uppercase tracking-widest text-neutral-600">
             Course
           </label>
           <select
@@ -410,7 +410,7 @@ export function StandardsMatrix({ rows, brand }: { rows: MatrixRow[]; brand: str
           standard{rollups.standards === 1 ? "" : "s"} · <strong style={accent}>{rollups.courses}</strong>{" "}
           course{rollups.courses === 1 ? "" : "s"} · <strong style={accent}>{rollups.states}</strong> state
           {rollups.states === 1 ? "" : "s"}
-          {anyFilter ? <span className="text-neutral-500"> (of {rows.length} total)</span> : null}
+          {anyFilter ? <span className="text-neutral-600"> (of {rows.length} total)</span> : null}
         </p>
 
         <div className="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2">
@@ -436,7 +436,7 @@ export function StandardsMatrix({ rows, brand }: { rows: MatrixRow[]; brand: str
                   </button>
                 </li>
               ))}
-              {rollups.perCourse.length === 0 ? <li className="px-2 text-neutral-500">No courses match.</li> : null}
+              {rollups.perCourse.length === 0 ? <li className="px-2 text-neutral-600">No courses match.</li> : null}
             </ul>
           </details>
 
@@ -462,7 +462,7 @@ export function StandardsMatrix({ rows, brand }: { rows: MatrixRow[]; brand: str
                   </button>
                 </li>
               ))}
-              {rollups.perState.length === 0 ? <li className="px-2 text-neutral-500">No states match.</li> : null}
+              {rollups.perState.length === 0 ? <li className="px-2 text-neutral-600">No states match.</li> : null}
             </ul>
           </details>
         </div>
@@ -602,15 +602,15 @@ export function StandardsMatrix({ rows, brand }: { rows: MatrixRow[]; brand: str
                   ) : null}
                   <dl className="mt-3 space-y-1 text-sm">
                     <div className="flex gap-2">
-                      <dt className="w-24 shrink-0 text-neutral-500">Subject</dt>
+                      <dt className="w-24 shrink-0 text-neutral-600">Subject</dt>
                       <dd>{r.subject}</dd>
                     </div>
                     <div className="flex gap-2">
-                      <dt className="w-24 shrink-0 text-neutral-500">Framework</dt>
+                      <dt className="w-24 shrink-0 text-neutral-600">Framework</dt>
                       <dd className="min-w-0 wrap-break-word">{r.frameworkName}</dd>
                     </div>
                     <div className="flex gap-2">
-                      <dt className="w-24 shrink-0 text-neutral-500">Course</dt>
+                      <dt className="w-24 shrink-0 text-neutral-600">Course</dt>
                       <dd className="min-w-0">
                         <Link href={`/course/${r.course.id}`} className={textLink}>
                           {r.course.title}
@@ -640,7 +640,7 @@ export function StandardsMatrix({ rows, brand }: { rows: MatrixRow[]; brand: str
 function FilterGroup({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <div className="mt-4">
-      <h3 className="text-xs font-semibold uppercase tracking-widest text-neutral-500">{label}</h3>
+      <h3 className="text-xs font-semibold uppercase tracking-widest text-neutral-600">{label}</h3>
       <div className="mt-2 flex flex-wrap gap-2">{children}</div>
     </div>
   );

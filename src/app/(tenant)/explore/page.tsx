@@ -304,7 +304,7 @@ export default async function ExplorePage() {
         </p>
         <div className="mt-5 min-w-0">
           {pins.length === 0 ? (
-            <p className="text-neutral-500">The map dataset has not been seeded yet.</p>
+            <p className="text-neutral-600">The map dataset has not been seeded yet.</p>
           ) : (
             <MapTabs commodities={pins} belts={belts} />
           )}
@@ -564,7 +564,7 @@ export default async function ExplorePage() {
           </p>
         </div>
 
-        <h3 className="mt-6 text-sm font-semibold uppercase tracking-widest text-neutral-500">
+        <h3 className="mt-6 text-sm font-semibold uppercase tracking-widest text-neutral-600">
           Sources
         </h3>
         <ul className="mt-2 max-w-2xl space-y-2 text-sm text-neutral-600 dark:text-neutral-400">

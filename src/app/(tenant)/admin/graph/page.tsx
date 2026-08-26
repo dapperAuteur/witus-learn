@@ -142,7 +142,7 @@ export default async function ConnectionGraphPage({
         </p>
       ) : null}
 
-      <p className="mt-3 text-xs text-neutral-500 dark:text-neutral-400">
+      <p className="mt-3 text-xs text-neutral-600 dark:text-neutral-400">
         Prerequisite links are live from the database. Entity links come from{" "}
         <code>src/lib/entities.ts</code>, which is code, so they change on{" "}
         <strong className="font-semibold">deploy</strong>, not when a course is saved. Semantic
@@ -171,7 +171,7 @@ export default async function ConnectionGraphPage({
                 </optgroup>
               ))}
             </select>
-            <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+            <p className="mt-1 text-xs text-neutral-600 dark:text-neutral-400">
               The number is how many other courses it touches. Type to jump to a title.
             </p>
           </div>
@@ -184,7 +184,7 @@ export default async function ConnectionGraphPage({
               <option value="ego">One course and its neighbors</option>
               <option value="catalog">Whole catalog, clustered by category</option>
             </select>
-            <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+            <p className="mt-1 text-xs text-neutral-600 dark:text-neutral-400">
               The whole-catalog view clusters by category rather than scattering{" "}
               {graph.report.totalCourses} nodes into a hairball.
             </p>
@@ -275,7 +275,7 @@ export default async function ConnectionGraphPage({
           ))}
         </ul>
 
-        <p className="mt-3 text-xs text-neutral-500 dark:text-neutral-400">
+        <p className="mt-3 text-xs text-neutral-600 dark:text-neutral-400">
           Semantic (CYOA) neighbors, the fourth ring in the plan, are not drawn. Two reasons, both
           honest: the similarity match is lesson-grained, so turning it into a course-to-course line
           needs a rollup rule (highest single match? a count above a threshold?) whose choice is

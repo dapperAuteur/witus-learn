@@ -44,7 +44,7 @@ export default function HelpPage() {
       <div className="mt-6">
         <HelpSearch entries={entries} />
       </div>
-      <p className="mt-8 text-sm text-neutral-500">
+      <p className="mt-8 text-sm text-neutral-600">
         Can&apos;t find it?{" "}
         <Link href="/teach" className="underline" style={{ color: "var(--accent)" }}>
           Go to Teach

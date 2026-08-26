@@ -132,7 +132,7 @@ export function LessonsManager({ courseId, lessons }: { courseId: string; lesson
       <h2 className="font-semibold">Lessons</h2>
 
       <ul className="mt-3 divide-y divide-neutral-200 dark:divide-neutral-800">
-        {sorted.length === 0 ? <li className="py-3 text-sm text-neutral-500">No lessons yet.</li> : null}
+        {sorted.length === 0 ? <li className="py-3 text-sm text-neutral-600">No lessons yet.</li> : null}
         {sorted.map((l, i) => (
           <li key={l.id} className="py-3">
             <div className="flex flex-wrap items-center gap-2">
@@ -151,9 +151,9 @@ export function LessonsManager({ courseId, lessons }: { courseId: string; lesson
               {l.isPublished ? (
                 <span className="text-xs text-green-700 dark:text-green-400">published</span>
               ) : (
-                <span className="text-xs text-neutral-500">draft</span>
+                <span className="text-xs text-neutral-600">draft</span>
               )}
-              {l.isFreePreview ? <span className="text-xs text-neutral-500">· free preview</span> : null}
+              {l.isFreePreview ? <span className="text-xs text-neutral-600">· free preview</span> : null}
 
               <div className="ml-auto flex flex-wrap items-center gap-1 text-sm">
                 <button type="button" disabled={busy || i === 0} onClick={() => move(i, -1)} className="min-h-11 min-w-11 rounded disabled:opacity-30 focus-visible:outline-2 focus-visible:outline-offset-2" aria-label="Move up">↑</button>
@@ -241,10 +241,10 @@ function LessonEditor({
         <div className="space-y-2 rounded-md border border-neutral-200 p-2 dark:border-neutral-800">
           <div className="flex flex-wrap items-center gap-2">
             <CloudinaryUpload onUploaded={setContentUrl} accept={accept} />
-            <span className="text-xs text-neutral-500">or paste a URL (a file, YouTube/Vimeo, Google Slides):</span>
+            <span className="text-xs text-neutral-600">or paste a URL (a file, YouTube/Vimeo, Google Slides):</span>
           </div>
           <input value={contentUrl} onChange={(e) => setContentUrl(e.target.value)} placeholder="https://…" className="min-h-9 w-full rounded-md border border-neutral-300 px-3 text-sm dark:border-neutral-700 dark:bg-neutral-900" />
-          {contentUrl ? <p className="truncate text-xs text-neutral-500">Media: {contentUrl}</p> : null}
+          {contentUrl ? <p className="truncate text-xs text-neutral-600">Media: {contentUrl}</p> : null}
 
           <div className="border-t border-neutral-200 pt-2 dark:border-neutral-800">
             <label className="flex flex-wrap items-center gap-2 text-sm">
@@ -258,7 +258,7 @@ function LessonEditor({
                 }}
                 className="text-xs"
               />
-              <span className="text-xs text-neutral-500">
+              <span className="text-xs text-neutral-600">
                 {transcript.length ? `${transcript.length} lines loaded` : "builds a follow-along transcript + chapters"}
               </span>
             </label>
@@ -285,7 +285,7 @@ function LessonEditor({
           </button>
         </div>
         {recall.length === 0 ? (
-          <p className="mt-1 text-xs text-neutral-500">
+          <p className="mt-1 text-xs text-neutral-600">
             Optional. Add question/answer pairs; learners test themselves before the quiz.
           </p>
         ) : (

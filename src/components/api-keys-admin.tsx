@@ -129,14 +129,14 @@ export function ApiKeysAdmin({ keys }: { keys: ApiKeyRow[] }) {
       <div className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
         <h3 className="font-semibold">Active keys</h3>
         {active.length === 0 ? (
-          <p className="mt-2 text-sm text-neutral-500">No active keys.</p>
+          <p className="mt-2 text-sm text-neutral-600">No active keys.</p>
         ) : (
           <ul className="mt-2 divide-y divide-neutral-200 dark:divide-neutral-800">
             {active.map((k) => (
               <li key={k.id} className="flex flex-wrap items-center gap-2 py-2 text-sm">
                 <span className="font-medium">{k.name}</span>
-                <span className="font-mono text-xs text-neutral-500">{k.keyPrefix}…</span>
-                <span className="text-xs text-neutral-500">last used: {fmt(k.lastUsedAt)}</span>
+                <span className="font-mono text-xs text-neutral-600">{k.keyPrefix}…</span>
+                <span className="text-xs text-neutral-600">last used: {fmt(k.lastUsedAt)}</span>
                 <button
                   type="button"
                   disabled={busy}
@@ -153,10 +153,10 @@ export function ApiKeysAdmin({ keys }: { keys: ApiKeyRow[] }) {
 
       {revoked.length > 0 ? (
         <div className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
-          <h3 className="font-semibold text-neutral-500">Revoked</h3>
+          <h3 className="font-semibold text-neutral-600">Revoked</h3>
           <ul className="mt-2 divide-y divide-neutral-200 dark:divide-neutral-800">
             {revoked.map((k) => (
-              <li key={k.id} className="py-2 text-sm text-neutral-500">
+              <li key={k.id} className="py-2 text-sm text-neutral-600">
                 <span className="font-medium">{k.name}</span>{" "}
                 <span className="font-mono text-xs">{k.keyPrefix}…</span>, revoked {fmt(k.revokedAt)}
               </li>

@@ -53,7 +53,7 @@ export function EpisodeExplorer({ pins }: { pins: MapPin[] }) {
         return (
           <div key={g.season ?? "none"}>
             {showHeadings && g.season != null ? (
-              <h3 className="text-sm font-semibold uppercase tracking-widest text-neutral-500">
+              <h3 className="text-sm font-semibold uppercase tracking-widest text-neutral-600">
                 Season {g.season}
               </h3>
             ) : null}
@@ -85,7 +85,7 @@ export function EpisodeExplorer({ pins }: { pins: MapPin[] }) {
                       />
                       <span className="font-medium">{c.name}</span>
                       {c.geo ? (
-                        <span className="text-neutral-500 dark:text-neutral-400">· {c.geo}</span>
+                        <span className="text-neutral-600 dark:text-neutral-400">· {c.geo}</span>
                       ) : null}
                     </button>
                   </li>

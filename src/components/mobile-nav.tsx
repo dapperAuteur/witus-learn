@@ -104,7 +104,7 @@ export function MobileNav({
     if (sectionItems.length === 0 && !trailing) return null;
     return (
       <li className="mt-2 border-t border-neutral-200 pt-2 dark:border-neutral-800">
-        <p className="px-3 pb-1 text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+        <p className="px-3 pb-1 text-xs font-semibold uppercase tracking-wide text-neutral-600 dark:text-neutral-400">
           {heading}
         </p>
         <ul>

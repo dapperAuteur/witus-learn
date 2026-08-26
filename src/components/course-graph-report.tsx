@@ -42,7 +42,7 @@ function Th({ children }: { children: React.ReactNode }) {
 
 function HeadRow({ children }: { children: React.ReactNode }) {
   return (
-    <tr className="border-b border-neutral-200 text-left text-neutral-500 dark:border-neutral-800">
+    <tr className="border-b border-neutral-200 text-left text-neutral-600 dark:border-neutral-800">
       {children}
     </tr>
   );
@@ -57,7 +57,7 @@ function BodyRow({ children }: { children: React.ReactNode }) {
 }
 
 function Empty({ children }: { children: React.ReactNode }) {
-  return <p className="mt-3 text-sm text-neutral-500 dark:text-neutral-400">{children}</p>;
+  return <p className="mt-3 text-sm text-neutral-600 dark:text-neutral-400">{children}</p>;
 }
 
 export function CourseGraphReport({
@@ -129,7 +129,7 @@ export function CourseGraphReport({
           </details>
         )}
         {report.unpublishedOrphanCount > 0 ? (
-          <p className="mt-3 text-xs text-neutral-500 dark:text-neutral-400">
+          <p className="mt-3 text-xs text-neutral-600 dark:text-neutral-400">
             Plus {report.unpublishedOrphanCount} unpublished courses with no connections, not listed:
             a draft is allowed to stand alone.
           </p>
@@ -377,7 +377,7 @@ export function CourseGraphReport({
             <ul className="mt-2 space-y-1 text-sm">
               {graph.edges.map((e, i) => (
                 <li key={`${e.kind}-${e.from}-${e.to}-${e.entitySlug ?? i}`}>
-                  <span className="text-neutral-500 dark:text-neutral-400">
+                  <span className="text-neutral-600 dark:text-neutral-400">
                     {EDGE_KIND_LABEL[e.kind]}:
                   </span>{" "}
                   {e.label}

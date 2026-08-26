@@ -231,7 +231,7 @@ export default async function CourseBySlugPage({ params }: Params) {
           {done ? <span className="text-base text-green-600 dark:text-green-400">✓</span> : typeIcon(lesson.lessonType)}
         </span>
         <div className="min-w-0 flex-1">
-          <span className={`block truncate font-medium ${access.open ? "" : "text-neutral-500"}`}>
+          <span className={`block truncate font-medium ${access.open ? "" : "text-neutral-600"}`}>
             {n}. {lesson.title}
           </span>
           <span className="text-xs capitalize text-neutral-400">{lesson.lessonType.replace("_", " ")}</span>
@@ -325,7 +325,7 @@ export default async function CourseBySlugPage({ params }: Params) {
       {/* A civics course's real index is the state map (or the Civics catalog slice), not the
           whole catalog: arriving from /civics and having no way back was reported 2026-08-18. */}
       <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
-        <Link href="/" className="text-sm text-neutral-500 hover:underline">
+        <Link href="/" className="text-sm text-neutral-600 hover:underline">
           ← Back to catalog
         </Link>
         {civicsBack ? (
@@ -339,7 +339,7 @@ export default async function CourseBySlugPage({ params }: Params) {
         ) : null}
       </div>
       {course.seriesTitle || seasonMeta ? (
-        <p className="mt-6 text-xs uppercase tracking-wide text-neutral-500">
+        <p className="mt-6 text-xs uppercase tracking-wide text-neutral-600">
           {/* The series name LINKS to its page: a learner who reads "part of X" should be able to
               go see X (BAM 2026-08-18). Series with no slug (older rows) stay plain text. */}
           {course.seriesTitle ? (
@@ -361,7 +361,7 @@ export default async function CourseBySlugPage({ params }: Params) {
           <ShareButton title={course.title} text={course.description ?? undefined} label="Share course" courseId={course.id} />
         ) : null}
       </div>
-      <p className="mt-1 text-sm text-neutral-500">
+      <p className="mt-1 text-sm text-neutral-600">
         by{" "}
         <Link href={`/instructors/${username}`} className="hover:underline">
           {username}
@@ -402,7 +402,7 @@ export default async function CourseBySlugPage({ params }: Params) {
           className="mt-4 rounded-lg border border-neutral-200 bg-neutral-50 p-4 text-sm dark:border-neutral-800 dark:bg-neutral-900"
         >
           <p className="font-medium">Also available in a bundle</p>
-          <p className="mt-1 text-xs text-neutral-500">
+          <p className="mt-1 text-xs text-neutral-600">
             Buying the bundle enrolls you in this course and everything else in it.
           </p>
           <ul className="mt-2 space-y-2">
@@ -418,7 +418,7 @@ export default async function CourseBySlugPage({ params }: Params) {
                   </Link>
                   {/* PriceTag, not a raw price: a bundle on sale must show the struck list price
                       here too, or the aside contradicts the bundle page it links to. */}
-                  <span className="text-neutral-500">
+                  <span className="text-neutral-600">
                     {" · "}
                     <PriceTag view={bundleView} />
                     {b.priceType === "subscription" ? " subscription" : ""}
@@ -453,7 +453,7 @@ export default async function CourseBySlugPage({ params }: Params) {
               <Link href={`/paths/${p.slug}`} className="underline" style={{ color: "var(--accent)" }}>
                 {p.title}
               </Link>{" "}
-              <span className="font-normal text-neutral-500">(recommended order)</span>
+              <span className="font-normal text-neutral-600">(recommended order)</span>
             </p>
             <ol className="mt-2 list-decimal space-y-0.5 pl-5 text-neutral-600 dark:text-neutral-400">
               {p.courses.map((c) => (
@@ -484,7 +484,7 @@ export default async function CourseBySlugPage({ params }: Params) {
               {resumingInProgress ? "Continue where you left off" : "Next up"}
             </p>
             <p className="mt-0.5 truncate text-lg font-bold">{resumeLesson.title}</p>
-            <p className="mt-0.5 text-sm text-neutral-500">
+            <p className="mt-0.5 text-sm text-neutral-600">
               Lesson {numberOf(resumeLesson)} of {lessons.length}
             </p>
           </div>
@@ -502,7 +502,7 @@ export default async function CourseBySlugPage({ params }: Params) {
         <div className="mt-5 rounded-xl border border-neutral-200 p-4 dark:border-neutral-800">
           <div className="flex items-center justify-between text-sm">
             <span className="font-medium">{percent === 100 ? "Completed 🎉" : "Your progress"}</span>
-            <span className="tabular-nums text-neutral-500">
+            <span className="tabular-nums text-neutral-600">
               {completedCount} of {lessons.length} lessons
             </span>
           </div>
@@ -596,7 +596,7 @@ export default async function CourseBySlugPage({ params }: Params) {
                     {s.title}
                   </span>
                   {s.scheduledAt && !s.isLive ? (
-                    <span className="text-xs text-neutral-500">{new Date(s.scheduledAt).toLocaleString()}</span>
+                    <span className="text-xs text-neutral-600">{new Date(s.scheduledAt).toLocaleString()}</span>
                   ) : null}
                 </div>
                 {s.isLive && s.playbackUrl ? (
@@ -634,7 +634,7 @@ export default async function CourseBySlugPage({ params }: Params) {
         <OfflineDownloadAllButton />
       </div>
       {lessons.length === 0 ? (
-        <p className="text-neutral-500">No lessons yet.</p>
+        <p className="text-neutral-600">No lessons yet.</p>
       ) : view.modules.length > 0 ? (
         <div className="space-y-3">
           {(() => {
@@ -674,7 +674,7 @@ export default async function CourseBySlugPage({ params }: Params) {
                         .filter((p) => savablePaths.has(p))}
                     />
                     <span className="min-w-0 flex-1 truncate">{mod.title}</span>
-                    <span className="shrink-0 text-xs tabular-nums text-neutral-500">
+                    <span className="shrink-0 text-xs tabular-nums text-neutral-600">
                       {complete ? "✓ " : ""}
                       {doneCount}/{modLessons.length}
                     </span>

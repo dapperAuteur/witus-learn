@@ -88,7 +88,7 @@ export function TenantSettingsForm({ initial }: { initial: TenantSettings }) {
 
       <section className="rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900">
         <h2 className="font-semibold">Identity &amp; images</h2>
-        <p className="mt-1 text-xs text-neutral-500">
+        <p className="mt-1 text-xs text-neutral-600">
           Leave a field empty to use the platform default. Image URLs must start with https://.
         </p>
         <div className="mt-3 grid gap-3">
@@ -96,12 +96,12 @@ export function TenantSettingsForm({ initial }: { initial: TenantSettings }) {
             <label className="text-sm font-medium">
               Wordmark
               <input className={`mt-1 ${field}`} value={s.wordmark} maxLength={80} onChange={(e) => set("wordmark", e.target.value)} placeholder={s.name} />
-              <span className="mt-1 block text-xs font-normal text-neutral-500">The text shown in the site header (defaults to the name).</span>
+              <span className="mt-1 block text-xs font-normal text-neutral-600">The text shown in the site header (defaults to the name).</span>
             </label>
             <label className="text-sm font-medium">
               Short name
               <input className={`mt-1 ${field}`} value={s.shortName} maxLength={30} onChange={(e) => set("shortName", e.target.value)} placeholder={s.name} />
-              <span className="mt-1 block text-xs font-normal text-neutral-500">Under the app icon when learners install the school as an app.</span>
+              <span className="mt-1 block text-xs font-normal text-neutral-600">Under the app icon when learners install the school as an app.</span>
             </label>
           </div>
           <label className="text-sm font-medium">
@@ -115,7 +115,7 @@ export function TenantSettingsForm({ initial }: { initial: TenantSettings }) {
                 </button>
               ) : null}
             </div>
-            <span className="mt-1 block text-xs font-normal text-neutral-500">Tints the browser chrome and the installed-app splash screen.</span>
+            <span className="mt-1 block text-xs font-normal text-neutral-600">Tints the browser chrome and the installed-app splash screen.</span>
           </label>
           <ImageUrlField label="Logo URL" value={s.logoUrl} onChange={(v) => set("logoUrl", v)} hint="Square PNG, at least 512x512. Used as the installed-app icon and in search-engine data." previewClass="h-16 w-16 rounded-lg object-contain" />
           <ImageUrlField label="Favicon URL" value={s.faviconUrl} onChange={(v) => set("faviconUrl", v)} hint="Small square icon for the browser tab." previewClass="h-8 w-8 object-contain" />
@@ -173,7 +173,7 @@ function ImageUrlField({ label, value, onChange, hint, previewClass }: { label: 
         maxLength={500}
         onChange={(e) => onChange(e.target.value)}
       />
-      <span className="mt-1 block text-xs font-normal text-neutral-500">{hint}</span>
+      <span className="mt-1 block text-xs font-normal text-neutral-600">{hint}</span>
       {previewable ? (
         // eslint-disable-next-line @next/next/no-img-element -- arbitrary external https URL, previewed as-is
         <img src={value} alt={`${label} preview`} loading="lazy" className={`mt-2 border border-neutral-200 bg-white dark:border-neutral-800 ${previewClass}`} />
@@ -187,7 +187,7 @@ function Toggle({ label, checked, onChange, hint }: { label: string; checked: bo
     <label className="flex items-start justify-between gap-4 text-sm font-medium">
       <span>
         {label}
-        {hint ? <span className="block text-xs font-normal text-neutral-500">{hint}</span> : null}
+        {hint ? <span className="block text-xs font-normal text-neutral-600">{hint}</span> : null}
       </span>
       <input type="checkbox" checked={checked} onChange={(e) => onChange(e.target.checked)} className="mt-1 h-5 w-5 shrink-0" />
     </label>

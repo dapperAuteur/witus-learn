@@ -25,7 +25,7 @@ function StatTile({ label, value, hint }: { label: string; value: string; hint?:
       <div aria-hidden="true" className="text-2xl font-extrabold tabular-nums">
         {value}
       </div>
-      <div aria-hidden="true" className="mt-1 text-xs font-semibold uppercase tracking-wide text-neutral-500">
+      <div aria-hidden="true" className="mt-1 text-xs font-semibold uppercase tracking-wide text-neutral-600">
         {label}
       </div>
       {hint ? (
@@ -120,7 +120,7 @@ export default async function DashboardPage() {
           "review again" spaced-recall list. Covers BOTH the inline :::reveal checks and the
           recall cards, since both grade into recall_attempts. */}
       <section aria-label="Check-yourself history" className="mt-8">
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">Check-yourself history</h2>
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-600">Check-yourself history</h2>
         <RecallHistoryView history={recallHistory} />
       </section>
 
@@ -129,12 +129,12 @@ export default async function DashboardPage() {
           <div className="rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900">
             <div className="flex items-center justify-between">
               <h2 className="text-xs font-semibold uppercase tracking-wide text-neutral-400">Level {level}</h2>
-              <span className="text-xs font-medium tabular-nums text-neutral-500">{xp.toLocaleString()} XP</span>
+              <span className="text-xs font-medium tabular-nums text-neutral-600">{xp.toLocaleString()} XP</span>
             </div>
             <div className="mt-3">
               <ProgressBar percent={(xpIntoLevel / xpForLevel) * 100} />
             </div>
-            <p className="mt-2 text-xs text-neutral-500">
+            <p className="mt-2 text-xs text-neutral-600">
               {xpForLevel - xpIntoLevel} XP to level {level + 1}
             </p>
           </div>
@@ -152,7 +152,7 @@ export default async function DashboardPage() {
                     <span className="text-2xl" aria-hidden>
                       {b.icon}
                     </span>
-                    <span className="w-14 text-[10px] leading-tight text-neutral-500">{b.label}</span>
+                    <span className="w-14 text-[10px] leading-tight text-neutral-600">{b.label}</span>
                   </li>
                 ))}
               </ul>
@@ -164,10 +164,10 @@ export default async function DashboardPage() {
       <section className="mt-8">
         {adjustments.length > 0 ? (
           <section aria-label="Teacher adjustments to your record" className="mb-8">
-            <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-600">
               Adjustments
             </h2>
-            <p className="mt-1 text-xs text-neutral-500">
+            <p className="mt-1 text-xs text-neutral-600">
               A teacher adjusted these values. Your recorded attempts are unchanged and both
               values are shown wherever your grades appear.
             </p>
@@ -180,7 +180,7 @@ export default async function DashboardPage() {
                     : a.kind === "course_complete"
                       ? "course marked complete (display only)"
                       : "lesson marked complete"}
-                  <span className="block text-xs text-neutral-500">
+                  <span className="block text-xs text-neutral-600">
                     {a.createdAt.toISOString().slice(0, 10)} · {a.reason}
                   </span>
                 </li>
@@ -188,9 +188,9 @@ export default async function DashboardPage() {
             </ul>
           </section>
         ) : null}
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">Credentials</h2>
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-600">Credentials</h2>
         {stats.credentials.length === 0 ? (
-          <p className="mt-2 text-sm text-neutral-500">Finish a course to earn your first credential.</p>
+          <p className="mt-2 text-sm text-neutral-600">Finish a course to earn your first credential.</p>
         ) : (
           <ul className="mt-3 space-y-2">
             {stats.credentials.map((c) => (
@@ -200,7 +200,7 @@ export default async function DashboardPage() {
                   className="flex items-center justify-between gap-3 rounded-xl border border-neutral-200 bg-white p-4 hover:border-current dark:border-neutral-800 dark:bg-neutral-900"
                 >
                   <span className="font-medium">{c.courseTitle}</span>
-                  <span className="shrink-0 text-xs text-neutral-500">
+                  <span className="shrink-0 text-xs text-neutral-600">
                     {c.completedAt.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
                   </span>
                 </Link>
@@ -211,8 +211,8 @@ export default async function DashboardPage() {
 
         {startedSpecializations.length > 0 ? (
           <div className="mt-6">
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">Specializations</h3>
-            <p className="mt-1 text-xs text-neutral-500">
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-600">Specializations</h3>
+            <p className="mt-1 text-xs text-neutral-600">
               A specialization is earned here by completing all of its courses. It is a record on
               this site, not an external certification or license.
             </p>
@@ -230,12 +230,12 @@ export default async function DashboardPage() {
                         {s.earnedAt.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
                       </span>
                     ) : (
-                      <span className="shrink-0 text-xs font-medium tabular-nums text-neutral-500">
+                      <span className="shrink-0 text-xs font-medium tabular-nums text-neutral-600">
                         {s.completedCount} of {s.courses.length} courses
                       </span>
                     )}
                   </div>
-                  <p className="mt-1 text-xs text-neutral-500">{s.description}</p>
+                  <p className="mt-1 text-xs text-neutral-600">{s.description}</p>
                   <ul className="mt-2 space-y-1 text-sm">
                     {s.courses.map((c) => (
                       <li key={c.courseSlug} className="flex items-center gap-2">
@@ -245,14 +245,14 @@ export default async function DashboardPage() {
                             {c.title}
                           </Link>
                         ) : (
-                          <span className="text-neutral-500">{c.title}</span>
+                          <span className="text-neutral-600">{c.title}</span>
                         )}
                         <span className="sr-only">{c.completed ? "completed" : "not completed yet"}</span>
                       </li>
                     ))}
                   </ul>
                   {!s.earned ? (
-                    <p className="mt-2 text-xs text-neutral-500">
+                    <p className="mt-2 text-xs text-neutral-600">
                       Still to finish: {s.remaining.map((c) => c.title).join(", ")}
                     </p>
                   ) : null}
@@ -267,14 +267,14 @@ export default async function DashboardPage() {
           precached so it still works with no network. This card reads the browser's own caches
           client-side, so it never adds a server round-trip to the dashboard. */}
       <section className="mt-8">
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">Downloads</h2>
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-600">Downloads</h2>
         <OfflineDownloadsSummary />
       </section>
 
       <section className="mt-8">
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">Manage your profile</h2>
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-600">Manage your profile</h2>
         {learner?.isChild ? (
-          <p className="mt-1 text-xs text-neutral-500">
+          <p className="mt-1 text-xs text-neutral-600">
             This is your account, {learner.name ?? "the learner above"} is a managed profile.
           </p>
         ) : null}

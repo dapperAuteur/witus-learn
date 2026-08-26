@@ -174,7 +174,7 @@ export function LessonPlayer({
           {embed ? (
             <MediaEmbed src={embed.src} title={lesson.title} />
           ) : (
-            <p className="text-neutral-500">
+            <p className="text-neutral-600">
               This lesson type ({lesson.lessonType}) has no media yet.
             </p>
           )}
@@ -209,7 +209,7 @@ function MediaEmbed({ src, title }: { src: string; title: string }) {
 }
 
 function Empty() {
-  return <p className="text-neutral-500">No media for this lesson yet.</p>;
+  return <p className="text-neutral-600">No media for this lesson yet.</p>;
 }
 
 function Chapters({ value }: { value: unknown }) {

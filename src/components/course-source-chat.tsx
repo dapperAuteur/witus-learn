@@ -67,7 +67,7 @@ export function CourseSourceChat({ courseId, courseTitle }: { courseId: string; 
         <div className="mt-4 space-y-3">
           <div className="whitespace-pre-wrap rounded-md bg-neutral-50 p-3 text-sm dark:bg-neutral-900">{result.answer}</div>
           {result.citations.length ? (
-            <details className="text-xs text-neutral-500">
+            <details className="text-xs text-neutral-600">
               <summary className="cursor-pointer">Sources used ({result.citations.length})</summary>
               <ol className="mt-2 space-y-1">
                 {result.citations.map((c) => (

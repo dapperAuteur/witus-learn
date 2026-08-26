@@ -48,7 +48,7 @@ export default async function OperatorOverviewPage() {
         ← Admin
       </Link>
       <h1 className="mt-4 text-2xl font-bold">Operator overview</h1>
-      <p className="mt-1 text-sm text-neutral-500">
+      <p className="mt-1 text-sm text-neutral-600">
         Cross-cutting signals for {sdb.tenant.name}, open reports, curriculum feedback, recent
         activity, and whether this database is up to date.
       </p>
@@ -96,14 +96,14 @@ export default async function OperatorOverviewPage() {
             {openReportsCount}
           </div>
           {recentReports.length === 0 ? (
-            <p className="mt-3 text-sm text-neutral-500">No reports yet.</p>
+            <p className="mt-3 text-sm text-neutral-600">No reports yet.</p>
           ) : (
             <ul className="mt-3 divide-y divide-neutral-100 text-sm dark:divide-neutral-800/60">
               {recentReports.map((r) => (
                 <li key={r.id} className="py-2">
                   <div className="flex items-center justify-between gap-2">
                     <span className="font-medium capitalize">{r.kind}</span>
-                    <span className="text-xs text-neutral-500">{fmtDateTime(r.createdAt)}</span>
+                    <span className="text-xs text-neutral-600">{fmtDateTime(r.createdAt)}</span>
                   </div>
                   <p className="mt-0.5 truncate text-neutral-600 dark:text-neutral-400">{r.message}</p>
                 </li>
@@ -122,17 +122,17 @@ export default async function OperatorOverviewPage() {
           </div>
           <div className="mt-1 text-3xl font-bold" style={{ color: "var(--accent)" }}>
             {openFeedbackCount}
-            <span className="ml-1 text-sm font-normal text-neutral-500">new</span>
+            <span className="ml-1 text-sm font-normal text-neutral-600">new</span>
           </div>
           {recentFeedback.length === 0 ? (
-            <p className="mt-3 text-sm text-neutral-500">No feedback yet.</p>
+            <p className="mt-3 text-sm text-neutral-600">No feedback yet.</p>
           ) : (
             <ul className="mt-3 divide-y divide-neutral-100 text-sm dark:divide-neutral-800/60">
               {recentFeedback.map((f) => (
                 <li key={f.id} className="py-2">
                   <div className="flex items-center justify-between gap-2">
                     <span className="font-medium">{f.courseTitle}</span>
-                    <span className="text-xs text-neutral-500">{fmtDateTime(f.createdAt)}</span>
+                    <span className="text-xs text-neutral-600">{fmtDateTime(f.createdAt)}</span>
                   </div>
                   <p className="mt-0.5 truncate text-neutral-600 dark:text-neutral-400">{f.body}</p>
                 </li>
@@ -153,13 +153,13 @@ export default async function OperatorOverviewPage() {
             {leadsCount}
           </div>
           {recentLeads.length === 0 ? (
-            <p className="mt-3 text-sm text-neutral-500">No leads yet.</p>
+            <p className="mt-3 text-sm text-neutral-600">No leads yet.</p>
           ) : (
             <ul className="mt-3 divide-y divide-neutral-100 text-sm dark:divide-neutral-800/60">
               {recentLeads.map((l) => (
                 <li key={l.id} className="flex items-center justify-between gap-2 py-2">
                   <span className="truncate font-mono">{l.email}</span>
-                  <span className="whitespace-nowrap text-xs text-neutral-500">{fmtDateTime(l.createdAt)}</span>
+                  <span className="whitespace-nowrap text-xs text-neutral-600">{fmtDateTime(l.createdAt)}</span>
                 </li>
               ))}
             </ul>
@@ -175,14 +175,14 @@ export default async function OperatorOverviewPage() {
             </Link>
           </div>
           {recentEnrollments.length === 0 ? (
-            <p className="mt-3 text-sm text-neutral-500">No enrollments yet.</p>
+            <p className="mt-3 text-sm text-neutral-600">No enrollments yet.</p>
           ) : (
             <ul className="mt-3 divide-y divide-neutral-100 text-sm dark:divide-neutral-800/60">
               {recentEnrollments.map((e) => (
                 <li key={e.id} className="py-2">
                   <div className="flex items-center justify-between gap-2">
                     <span className="font-medium">{e.userName || e.userEmail.split("@")[0]}</span>
-                    <span className="text-xs text-neutral-500">{fmtDateTime(e.enrolledAt)}</span>
+                    <span className="text-xs text-neutral-600">{fmtDateTime(e.enrolledAt)}</span>
                   </div>
                   <p className="mt-0.5 truncate text-neutral-600 dark:text-neutral-400">{e.courseTitle}</p>
                 </li>

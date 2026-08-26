@@ -6,16 +6,16 @@ export function LinkUsagePanel({ rows }: { rows: LinkUsageRow[] }) {
   return (
     <section className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
       <h2 className="font-semibold">Link usage</h2>
-      <p className="mt-1 text-sm text-neutral-500">
+      <p className="mt-1 text-sm text-neutral-600">
         Outbound-link clicks in this course (counts only, no per-learner tracking).
       </p>
       {rows.length === 0 ? (
-        <p className="mt-3 text-sm text-neutral-500">No clicks recorded yet.</p>
+        <p className="mt-3 text-sm text-neutral-600">No clicks recorded yet.</p>
       ) : (
         <div className="mt-3 overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b border-neutral-200 text-left text-neutral-500 dark:border-neutral-800">
+              <tr className="border-b border-neutral-200 text-left text-neutral-600 dark:border-neutral-800">
                 <th className="py-2 pr-3 font-medium">Link</th>
                 <th className="py-2 pr-3 font-medium">Where</th>
                 <th className="py-2 pr-3 font-medium">Clicks</th>

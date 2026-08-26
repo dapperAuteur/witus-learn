@@ -20,7 +20,7 @@ export default async function CohortsPage() {
   return (
     <main className="max-w-2xl py-10">
       <h1 className="text-2xl font-bold">Cohorts</h1>
-      <p className="mt-1 text-sm text-neutral-500">
+      <p className="mt-1 text-sm text-neutral-600">
         Your private classes for {tenant.name}. Invite students by email, they land on{" "}
         <Link href="/live" className="underline">
           /live
@@ -38,13 +38,13 @@ export default async function CohortsPage() {
             <Link href={`/cohorts/${c.id}`} className="font-medium hover:underline">
               {c.name}
             </Link>
-            <p className="text-sm text-neutral-500">
+            <p className="text-sm text-neutral-600">
               {c.memberCount} {c.memberCount === 1 ? "student" : "students"}
             </p>
           </li>
         ))}
         {cohorts.length === 0 ? (
-          <li className="py-3 text-sm text-neutral-500">No cohorts yet, create your first class above.</li>
+          <li className="py-3 text-sm text-neutral-600">No cohorts yet, create your first class above.</li>
         ) : null}
       </ul>
     </main>

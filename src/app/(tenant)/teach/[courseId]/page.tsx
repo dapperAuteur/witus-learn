@@ -94,7 +94,7 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
       <div className="flex items-center justify-between">
-        <Link href="/teach" className="text-sm text-neutral-500 hover:underline">
+        <Link href="/teach" className="text-sm text-neutral-600 hover:underline">
           ← Your courses
         </Link>
         <div className="flex items-center gap-4 text-sm">
@@ -193,16 +193,16 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
 
         <section className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
           <h2 className="font-semibold">Recall accuracy</h2>
-          <p className="mt-1 text-sm text-neutral-500">
+          <p className="mt-1 text-sm text-neutral-600">
             How often learners self-report getting a Quick-recall prompt right, in the lesson,
             your signal for whether it&apos;s sticking in class vs only at quiz time.
           </p>
           {recallStats.accuracy === null ? (
-            <p className="mt-2 text-sm text-neutral-500">No recall attempts yet.</p>
+            <p className="mt-2 text-sm text-neutral-600">No recall attempts yet.</p>
           ) : (
             <p className="mt-2 text-sm">
               <span className="text-2xl font-bold" style={{ color: "var(--accent)" }}>{recallStats.accuracy}%</span>{" "}
-              recalled correctly <span className="text-neutral-500">({recallStats.gotIt}/{recallStats.attempts} attempts)</span>
+              recalled correctly <span className="text-neutral-600">({recallStats.gotIt}/{recallStats.attempts} attempts)</span>
             </p>
           )}
         </section>

@@ -146,7 +146,7 @@ export function QuizPlayer({
   return (
     <form onSubmit={submit} className="space-y-6">
       {rotating ? (
-        <p className="text-sm text-neutral-500">
+        <p className="text-sm text-neutral-600">
           Showing {served.length} of {total} questions, retries draw a fresh set.
         </p>
       ) : null}

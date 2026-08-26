@@ -18,7 +18,7 @@ export interface GradableSubmission {
 // PATCHes the submission and marks it graded.
 export function SubmissionsGrader({ courseId, items }: { courseId: string; items: GradableSubmission[] }) {
   if (items.length === 0) {
-    return <p className="mt-6 text-neutral-500">No submissions yet.</p>;
+    return <p className="mt-6 text-neutral-600">No submissions yet.</p>;
   }
   return (
     <ul className="mt-6 space-y-4">
@@ -55,7 +55,7 @@ function SubmissionRow({ courseId, s }: { courseId: string; s: GradableSubmissio
     <li className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
       <div className="flex flex-wrap items-center gap-2 text-sm">
         <span className="font-medium">{s.lessonTitle}</span>
-        <span className="text-neutral-500">· {s.userId.slice(0, 8)}</span>
+        <span className="text-neutral-600">· {s.userId.slice(0, 8)}</span>
         <span
           className={`rounded-full px-2 py-0.5 text-xs ${
             s.status === "graded"

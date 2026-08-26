@@ -139,7 +139,7 @@ export default async function AdminMediaPage() {
         )}
       </div>
 
-      <p className="mt-4 text-xs text-neutral-500 dark:text-neutral-400">
+      <p className="mt-4 text-xs text-neutral-600 dark:text-neutral-400">
         A rejection cannot be saved without a note, and media whose rights are not established cannot
         be approved at all. Both rules exist for the reason the citation board does: a decision with
         nothing written behind it stops the next person from acting on it, and a rejected image whose

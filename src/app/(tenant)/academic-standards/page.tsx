@@ -833,7 +833,7 @@ function StateView({
                 </blockquote>
 
                 <div className="mt-4">
-                  <h4 className="text-xs font-semibold uppercase tracking-widest text-neutral-500">
+                  <h4 className="text-xs font-semibold uppercase tracking-widest text-neutral-600">
                     Covered by
                   </h4>
                   <ul className="mt-2 flex flex-wrap gap-2">
@@ -895,7 +895,7 @@ function StateView({
 
           {subjects.length > 1 ? (
             <div className="mt-5">
-              <h3 className="text-xs font-semibold uppercase tracking-widest text-neutral-500">
+              <h3 className="text-xs font-semibold uppercase tracking-widest text-neutral-600">
                 Subject
               </h3>
               <ul className="mt-2 flex flex-wrap gap-2">

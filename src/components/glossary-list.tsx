@@ -36,14 +36,14 @@ export function GlossaryList({ terms }: { terms: Term[] }) {
       ) : null}
 
       {filtered.length === 0 ? (
-        <p className="text-sm text-neutral-500">No terms match &ldquo;{q}&rdquo;.</p>
+        <p className="text-sm text-neutral-600">No terms match &ldquo;{q}&rdquo;.</p>
       ) : (
         <dl className="grid gap-x-6 gap-y-3 sm:grid-cols-2">
           {visible.map((g) => (
             <div key={g.id}>
               <dt className="font-semibold">
                 {g.term}
-                {g.phonetic ? <span className="ml-2 font-normal italic text-neutral-500">{g.phonetic}</span> : null}
+                {g.phonetic ? <span className="ml-2 font-normal italic text-neutral-600">{g.phonetic}</span> : null}
               </dt>
               <dd className="whitespace-pre-wrap text-sm text-neutral-700 dark:text-neutral-300">{g.definition}</dd>
             </div>

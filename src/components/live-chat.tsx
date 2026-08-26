@@ -99,7 +99,7 @@ export function LiveChat({ signedIn, canModerate }: { signedIn: boolean; canMode
                 <p className="whitespace-pre-wrap break-words">{m.body}</p>
               </div>
             ))}
-            {messages.length === 0 ? <p className="text-neutral-500">No messages yet. Say hi 👋</p> : null}
+            {messages.length === 0 ? <p className="text-neutral-600">No messages yet. Say hi 👋</p> : null}
           </div>
           <form onSubmit={send} className="mt-3 flex items-center gap-2">
             <input value={input} onChange={(e) => setInput(e.target.value)} maxLength={500} placeholder="Message the class…" className={field} aria-label="Message" />

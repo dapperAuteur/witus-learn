@@ -96,7 +96,7 @@ export function ComingSoonPanel({
         />
       </details>
 
-      <p className="mt-3 text-sm text-neutral-500">
+      <p className="mt-3 text-sm text-neutral-600">
         Already studying this course? Sign in and it will open as usual.
       </p>
     </section>
@@ -146,7 +146,7 @@ export function ComingSoonCourseFace({
           }),
         }}
       />
-      <Link href="/" className="text-sm text-neutral-500 hover:underline">
+      <Link href="/" className="text-sm text-neutral-600 hover:underline">
         ← Back to catalog
       </Link>
       <div className="mt-6 flex items-start justify-between gap-3">
@@ -158,7 +158,7 @@ export function ComingSoonCourseFace({
           courseId={courseId}
         />
       </div>
-      <p className="mt-1 text-sm text-neutral-500">
+      <p className="mt-1 text-sm text-neutral-600">
         by{" "}
         <Link href={`/instructors/${username}`} className="hover:underline">
           {username}

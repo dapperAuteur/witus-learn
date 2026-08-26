@@ -40,7 +40,7 @@ export default async function FamilyReportPage({ params }: { params: Promise<{ c
       }`}</style>
 
       <div className="mb-4 flex items-center justify-between print:hidden">
-        <Link href="/family" className="text-sm text-neutral-500 hover:underline">
+        <Link href="/family" className="text-sm text-neutral-600 hover:underline">
           Back to family
         </Link>
         <PrintButton />
@@ -92,7 +92,7 @@ export default async function FamilyReportPage({ params }: { params: Promise<{ c
             ))}
             {rows.length === 0 ? (
               <tr>
-                <td colSpan={4} className="py-3 text-neutral-500">
+                <td colSpan={4} className="py-3 text-neutral-600">
                   Not enrolled in any courses yet.
                 </td>
               </tr>
@@ -104,7 +104,7 @@ export default async function FamilyReportPage({ params }: { params: Promise<{ c
         {teacherNotes.length > 0 ? (
           <section className="mt-8" aria-label="Notes from teachers">
             <h2 className="text-lg font-semibold">Notes from teachers</h2>
-            <p className="mt-1 text-xs text-neutral-500">
+            <p className="mt-1 text-xs text-neutral-600">
               What a teacher attached to a lesson for {childName}. Your child&rsquo;s own notes are
               private to them unless they share them.
             </p>
@@ -112,12 +112,12 @@ export default async function FamilyReportPage({ params }: { params: Promise<{ c
               {teacherNotes.map((n) => (
                 <li key={n.id} className="rounded-lg border border-neutral-200 p-3 text-sm dark:border-neutral-800">
                   {n.quote ? (
-                    <blockquote className="mb-1 border-l-2 border-neutral-300 pl-2 text-xs italic text-neutral-500">
+                    <blockquote className="mb-1 border-l-2 border-neutral-300 pl-2 text-xs italic text-neutral-600">
                       {n.quote}
                     </blockquote>
                   ) : null}
                   <p className="whitespace-pre-wrap wrap-break-word">{n.body}</p>
-                  <p className="mt-1 text-xs text-neutral-500">
+                  <p className="mt-1 text-xs text-neutral-600">
                     {n.authorName ?? "A teacher"}
                     {n.lessonTitle ? ` · on "${n.lessonTitle}"` : ""} ·{" "}
                     {n.createdAt.toISOString().slice(0, 10)}

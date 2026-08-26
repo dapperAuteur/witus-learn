@@ -49,10 +49,10 @@ export function HelpSearch({ entries }: { entries: HelpEntry[] }) {
         aria-label="Search help articles"
         className="min-h-11 w-full rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900"
       />
-      <p className="mt-2 text-xs text-neutral-500">{count} article{count === 1 ? "" : "s"}</p>
+      <p className="mt-2 text-xs text-neutral-600">{count} article{count === 1 ? "" : "s"}</p>
 
       {count === 0 ? (
-        <p className="mt-6 text-neutral-500">No help articles match “{query}”.</p>
+        <p className="mt-6 text-neutral-600">No help articles match “{query}”.</p>
       ) : (
         <div className="mt-4 space-y-6">
           {groups.map(([category, list]) => (

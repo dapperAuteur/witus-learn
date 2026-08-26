@@ -127,7 +127,7 @@ export function NotesPanel({
   return (
     <section aria-label="Your notes on this lesson" className="mt-10">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">My notes</h2>
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-600">My notes</h2>
         <a
           href={`/api/courses/${courseId}/notes/export`}
           className="text-xs underline hover:no-underline"
@@ -136,7 +136,7 @@ export function NotesPanel({
           Download my notes for this course (.md)
         </a>
       </div>
-      <p className="mt-1 text-xs text-neutral-500">
+      <p className="mt-1 text-xs text-neutral-600">
         Notes are private to you unless you choose to share one with your teacher.
       </p>
 
@@ -165,7 +165,7 @@ export function NotesPanel({
               >
                 {n.quote ? <NoteQuote quote={n.quote} resolves={n.resolves} /> : null}
                 <p className="whitespace-pre-wrap wrap-break-word">{n.body}</p>
-                <p className="mt-1 text-xs text-neutral-500">
+                <p className="mt-1 text-xs text-neutral-600">
                   {n.authorName ?? "Your teacher"} · visible to you and your guardians
                 </p>
               </li>
@@ -196,7 +196,7 @@ export function NotesPanel({
               <li key={n.id} className="rounded-lg border border-neutral-200 p-3 text-sm dark:border-neutral-800">
                 {n.quote ? <NoteQuote quote={n.quote} resolves={n.resolves} /> : null}
                 <p className="whitespace-pre-wrap wrap-break-word">{n.body}</p>
-                <div className="mt-2 flex flex-wrap items-center gap-x-3 text-xs text-neutral-500">
+                <div className="mt-2 flex flex-wrap items-center gap-x-3 text-xs text-neutral-600">
                   <span>
                     To {n.cohortName ?? "your class"}
                     {n.recipientCount > 0 ? ` (${n.recipientCount} selected member${n.recipientCount === 1 ? "" : "s"})` : " (everyone)"}
@@ -228,7 +228,7 @@ export function NotesPanel({
               <li key={n.id} className="rounded-lg border border-neutral-200 p-3 text-sm dark:border-neutral-800">
                 {n.quote ? <NoteQuote quote={n.quote} resolves={n.resolves} /> : null}
                 <p className="whitespace-pre-wrap wrap-break-word">{n.body}</p>
-                <p className="mt-1 text-xs text-neutral-500">
+                <p className="mt-1 text-xs text-neutral-600">
                   {n.authorName ?? "A student"} shared this with you. They can withdraw it at any time.
                 </p>
               </li>
@@ -323,7 +323,7 @@ function OwnNotes({
                   <button
                     type="button"
                     onClick={() => setEditingId(null)}
-                    className="inline-flex min-h-11 items-center text-sm text-neutral-500 underline pointer-coarse:min-h-12"
+                    className="inline-flex min-h-11 items-center text-sm text-neutral-600 underline pointer-coarse:min-h-12"
                   >
                     Cancel
                   </button>
@@ -332,7 +332,7 @@ function OwnNotes({
             ) : (
               <>
                 <p className="whitespace-pre-wrap wrap-break-word">{n.body}</p>
-                <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-neutral-500">
+                <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-neutral-600">
                   <ShareState note={n} call={call} notify={notify} />
                   <button
                     type="button"
@@ -549,7 +549,7 @@ function TeacherCompose({
   return (
     <details className="mt-6 rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
       <summary className="cursor-pointer text-sm font-medium">Send a note to your class</summary>
-      <p className="mt-2 text-xs text-neutral-500">
+      <p className="mt-2 text-xs text-neutral-600">
         The note appears on this lesson for the students you choose (and the guardians of kid
         accounts). It is not an email and sends no notification.
       </p>
@@ -582,9 +582,9 @@ function TeacherCompose({
         </label>
         {narrow && cohort ? (
           <fieldset className="rounded-md border border-neutral-200 p-2 dark:border-neutral-800">
-            <legend className="px-1 text-xs text-neutral-500">Choose students</legend>
+            <legend className="px-1 text-xs text-neutral-600">Choose students</legend>
             {cohort.members.length === 0 ? (
-              <p className="text-xs text-neutral-500">This class has no members yet.</p>
+              <p className="text-xs text-neutral-600">This class has no members yet.</p>
             ) : (
               <ul className="grid gap-1 sm:grid-cols-2">
                 {cohort.members.map((m) => (
@@ -705,7 +705,7 @@ function NoteSearch({
           {searching ? "Searching…" : "Search"}
         </button>
       </form>
-      <p className="mt-1 text-xs text-neutral-500">
+      <p className="mt-1 text-xs text-neutral-600">
         {teaches
           ? "Your own notes, notes your teacher sent you, notes students shared with you, and notes you sent to your classes."
           : "Your own notes and notes your teacher sent you. Nobody else's notes are searchable."}
@@ -713,18 +713,18 @@ function NoteSearch({
       <div aria-live="polite">
         {results !== null ? (
           results.length === 0 ? (
-            <p className="mt-2 text-sm text-neutral-500">No matching notes in this course.</p>
+            <p className="mt-2 text-sm text-neutral-600">No matching notes in this course.</p>
           ) : (
             <ul className="mt-2 space-y-2">
               {results.map((r) => (
                 <li key={r.id} className="rounded-lg border border-neutral-200 p-3 text-sm dark:border-neutral-800">
                   {r.quote ? (
-                    <blockquote className="mb-1 border-l-2 pl-2 text-xs italic text-neutral-500" style={{ borderColor: "var(--accent)" }}>
+                    <blockquote className="mb-1 border-l-2 pl-2 text-xs italic text-neutral-600" style={{ borderColor: "var(--accent)" }}>
                       {r.quote}
                     </blockquote>
                   ) : null}
                   <p className="whitespace-pre-wrap wrap-break-word">{r.body}</p>
-                  <p className="mt-1 text-xs text-neutral-500">
+                  <p className="mt-1 text-xs text-neutral-600">
                     {sourceLabel(r)}
                     {r.lessonSlug ? (
                       <Link href={`${base}/lesson/${r.lessonSlug}`} className="underline hover:no-underline" style={{ color: "var(--accent)" }}>
@@ -749,7 +749,7 @@ function NoteSearch({
 function NoteQuote({ quote, resolves }: { quote: string; resolves?: boolean }) {
   return (
     <div className="mb-2">
-      <blockquote className="border-l-2 pl-2 text-xs italic text-neutral-500" style={{ borderColor: "var(--accent)" }}>
+      <blockquote className="border-l-2 pl-2 text-xs italic text-neutral-600" style={{ borderColor: "var(--accent)" }}>
         {quote}
       </blockquote>
       {resolves === false ? (

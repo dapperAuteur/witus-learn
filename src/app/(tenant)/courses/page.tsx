@@ -131,7 +131,7 @@ export default async function CoursesPage({ searchParams }: { searchParams: Sear
         </nav>
       ) : null}
 
-      <p className="mb-3 text-sm text-neutral-500">
+      <p className="mb-3 text-sm text-neutral-600">
         {courses.length} course{courses.length === 1 ? "" : "s"}
         {sp.category ? ` in ${sp.category}` : ""}
         {sp.q ? ` matching “${sp.q}”` : ""}
@@ -147,7 +147,7 @@ export default async function CoursesPage({ searchParams }: { searchParams: Sear
                 <Link href={`/e/${e.slug}`} className="font-medium hover:underline">
                   {e.name}
                 </Link>{" "}
-                <span className="text-neutral-500">
+                <span className="text-neutral-600">
                   · {e.kind} · appears in {e.count} courses
                 </span>
               </li>
@@ -166,12 +166,12 @@ export default async function CoursesPage({ searchParams }: { searchParams: Sear
         </a>
       ) : null}
       {isEditor && courses.some((c) => !c.isPublished || c.visibility === "private") ? (
-        <p className="mb-3 text-xs text-neutral-500">
+        <p className="mb-3 text-xs text-neutral-600">
           Courses marked below are hidden from learners, only you (and editors) see them here.
         </p>
       ) : null}
       {courses.length === 0 ? (
-        <p className="text-neutral-500">No courses found. <Link href="/courses" className="underline">Clear filters</Link>.</p>
+        <p className="text-neutral-600">No courses found. <Link href="/courses" className="underline">Clear filters</Link>.</p>
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {courses.map((c) => {

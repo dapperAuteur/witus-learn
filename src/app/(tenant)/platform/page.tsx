@@ -133,7 +133,7 @@ export default async function PlatformPage() {
           {PLATFORM_PLANS.map((p) => (
             <div key={p.name} className="rounded-lg border border-neutral-200 p-6 dark:border-neutral-800">
               <h3 className="font-semibold">{p.name}</h3>
-              <p className="text-sm text-neutral-500">{p.forWhom}</p>
+              <p className="text-sm text-neutral-600">{p.forWhom}</p>
               <p className="mt-3 text-2xl font-bold" style={{ color: "var(--accent)" }}>
                 {displayPrice(p.price)}
               </p>

@@ -93,7 +93,7 @@ export function SaveOfflineButton({
           <button
             type="button"
             onClick={remove}
-            className="min-h-8 text-xs text-neutral-500 underline focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-11"
+            className="min-h-8 text-xs text-neutral-600 underline focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-11"
           >
             remove
           </button>
@@ -102,7 +102,7 @@ export function SaveOfflineButton({
           {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
           <a
             href="/downloads"
-            className="min-h-8 text-xs text-neutral-500 underline focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-11"
+            className="min-h-8 text-xs text-neutral-600 underline focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-11"
           >
             manage downloads
           </a>
@@ -118,7 +118,7 @@ export function SaveOfflineButton({
             {state === "saving" ? "Saving…" : "⬇ Save for offline"}
           </button>
           {next ? (
-            <p className="mt-1 text-xs text-neutral-500">Also saves the next lesson, so you can keep going offline.</p>
+            <p className="mt-1 text-xs text-neutral-600">Also saves the next lesson, so you can keep going offline.</p>
           ) : null}
         </div>
       )}

@@ -169,7 +169,7 @@ export function ReportProblem({ defaultEmail }: { defaultEmail?: string }) {
                     <button
                       type="button"
                       onClick={() => discard(item.id)}
-                      className="inline-flex min-h-11 items-center text-neutral-500 underline pointer-coarse:min-h-12"
+                      className="inline-flex min-h-11 items-center text-neutral-600 underline pointer-coarse:min-h-12"
                     >
                       Discard
                     </button>
@@ -234,7 +234,7 @@ export function ReportProblem({ defaultEmail }: { defaultEmail?: string }) {
             <p role="status" className="mt-1 text-xs text-red-600 dark:text-red-400">{error}</p>
           ) : null}
           {!online ? (
-            <p className="mt-1 text-xs text-neutral-500">
+            <p className="mt-1 text-xs text-neutral-600">
               You&rsquo;re offline. Reports are held here and sent automatically when you reconnect.
             </p>
           ) : null}

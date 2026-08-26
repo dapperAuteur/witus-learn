@@ -184,7 +184,7 @@ export function PricingContactForm() {
         <div className="sm:col-span-1">
           <label htmlFor={`${id}-students`} className={labelClass}>
             How many students?{" "}
-            <span className="font-normal text-neutral-500">(optional)</span>
+            <span className="font-normal text-neutral-600">(optional)</span>
           </label>
           <input
             id={`${id}-students`}
@@ -197,7 +197,7 @@ export function PricingContactForm() {
             aria-describedby={describedBy("students", `${id}-students-hint`)}
             className={field}
           />
-          <p id={`${id}-students-hint`} className="mt-1 text-xs text-neutral-500">
+          <p id={`${id}-students-hint`} className="mt-1 text-xs text-neutral-600">
             One child or a whole district, both are fine.
           </p>
           {errors.students ? (
@@ -209,7 +209,7 @@ export function PricingContactForm() {
 
         <div className="sm:col-span-2">
           <label htmlFor={`${id}-message`} className={labelClass}>
-            Anything we should know? <span className="font-normal text-neutral-500">(optional)</span>
+            Anything we should know? <span className="font-normal text-neutral-600">(optional)</span>
           </label>
           <textarea
             id={`${id}-message`}
@@ -244,7 +244,7 @@ export function PricingContactForm() {
       >
         {state === "sending" ? "Sending…" : "Ask about pricing"}
       </button>
-      <p className="mt-3 text-xs text-neutral-500">
+      <p className="mt-3 text-xs text-neutral-600">
         We use your email to answer you. That&apos;s it.
       </p>
     </form>

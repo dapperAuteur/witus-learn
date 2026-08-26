@@ -125,7 +125,7 @@ export function CurriculumFeedback({ courseId, lessonId }: { courseId: string; l
                 <button
                   type="button"
                   onClick={() => discard(item.id)}
-                  className="inline-flex min-h-11 items-center text-xs text-neutral-500 underline pointer-coarse:min-h-12"
+                  className="inline-flex min-h-11 items-center text-xs text-neutral-600 underline pointer-coarse:min-h-12"
                 >
                   Discard
                 </button>
@@ -182,7 +182,7 @@ export function CurriculumFeedback({ courseId, lessonId }: { courseId: string; l
           ) : null}
         </div>
         {!online ? (
-          <p className="text-xs text-neutral-500">
+          <p className="text-xs text-neutral-600">
             You&rsquo;re offline. Your note is held on this device and sent automatically when you
             reconnect, you can keep writing.
           </p>

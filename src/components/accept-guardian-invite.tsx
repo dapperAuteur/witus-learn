@@ -45,7 +45,7 @@ export function AcceptGuardianInvite({ token }: { token: string }) {
   }, [token]);
 
   if (status === "accepting") {
-    return <p className="text-neutral-500">Linking your account…</p>;
+    return <p className="text-neutral-600">Linking your account…</p>;
   }
 
   if (status === "error") {
@@ -54,7 +54,7 @@ export function AcceptGuardianInvite({ token }: { token: string }) {
         <p role="alert" className="text-amber-700 dark:text-amber-400">
           {message}
         </p>
-        <p className="mt-2 text-sm text-neutral-500">
+        <p className="mt-2 text-sm text-neutral-600">
           Ask the teacher for a fresh invite, or{" "}
           <Link href="/" className="underline">
             head back home

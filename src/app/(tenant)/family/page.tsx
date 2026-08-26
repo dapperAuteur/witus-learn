@@ -67,7 +67,7 @@ export default async function FamilyPage() {
   return (
     <main className="max-w-2xl py-10">
       <h1 className="text-2xl font-bold">Family</h1>
-      <p className="mt-1 text-sm text-neutral-500">
+      <p className="mt-1 text-sm text-neutral-600">
         A read-only view of your linked children&apos;s progress, grades, credentials, and live-class
         attendance.
       </p>
@@ -77,7 +77,7 @@ export default async function FamilyPage() {
       </div>
 
       {views.length === 0 ? (
-        <p className="mt-8 text-sm text-neutral-500">
+        <p className="mt-8 text-sm text-neutral-600">
           No children yet. Add one above if they&apos;re too young for email, or ask your teacher to
           send a parent invite from their cohort roster if they already have their own account.
         </p>
@@ -104,15 +104,15 @@ export default async function FamilyPage() {
               </div>
 
               <div className="mt-4">
-                <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">Course progress</h3>
+                <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-600">Course progress</h3>
                 {child.coursePercent.length === 0 ? (
-                  <p className="mt-1 text-sm text-neutral-500">Not enrolled in any courses yet.</p>
+                  <p className="mt-1 text-sm text-neutral-600">Not enrolled in any courses yet.</p>
                 ) : (
                   <ul className="mt-2 space-y-1 text-sm">
                     {child.coursePercent.map((c) => (
                       <li key={c.title} className="flex items-center justify-between gap-3">
                         <span>{c.title}</span>
-                        <span className="text-neutral-500">{c.percent}%</span>
+                        <span className="text-neutral-600">{c.percent}%</span>
                       </li>
                     ))}
                   </ul>
@@ -120,16 +120,16 @@ export default async function FamilyPage() {
               </div>
 
               <div className="mt-4">
-                <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">Grades</h3>
+                <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-600">Grades</h3>
                 <p className="mt-1 text-sm">
                   Recall accuracy: {child.recallAccuracy}% · Quiz average: {child.quizAvg}%
                 </p>
               </div>
 
               <div className="mt-4">
-                <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">Credentials</h3>
+                <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-600">Credentials</h3>
                 {child.credentials.length === 0 ? (
-                  <p className="mt-1 text-sm text-neutral-500">No completed courses yet.</p>
+                  <p className="mt-1 text-sm text-neutral-600">No completed courses yet.</p>
                 ) : (
                   <ul className="mt-2 space-y-1 text-sm">
                     {child.credentials.map((c) => (
@@ -141,10 +141,10 @@ export default async function FamilyPage() {
                 )}
                 {child.specializations.length > 0 ? (
                   <div className="mt-3">
-                    <h4 className="text-xs font-semibold uppercase tracking-wide text-neutral-500">
+                    <h4 className="text-xs font-semibold uppercase tracking-wide text-neutral-600">
                       Specializations
                     </h4>
-                    <p className="mt-0.5 text-xs text-neutral-500">
+                    <p className="mt-0.5 text-xs text-neutral-600">
                       Earned by completing every course in a track. A record on this site, not an
                       external certification.
                     </p>
@@ -160,9 +160,9 @@ export default async function FamilyPage() {
               </div>
 
               <div className="mt-4">
-                <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">Live-class attendance</h3>
+                <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-600">Live-class attendance</h3>
                 {child.attendance.length === 0 ? (
-                  <p className="mt-1 text-sm text-neutral-500">No live-class attendance recorded yet.</p>
+                  <p className="mt-1 text-sm text-neutral-600">No live-class attendance recorded yet.</p>
                 ) : (
                   <ul className="mt-2 space-y-1 text-sm">
                     {child.attendance.map((a) => (

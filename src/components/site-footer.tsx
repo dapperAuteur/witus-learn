@@ -9,7 +9,7 @@ export function SiteFooter({ tenant }: { tenant: TenantRecord }) {
   const { legal } = tenant;
   return (
     <footer className="mt-12 border-t border-neutral-200 dark:border-neutral-800">
-      <div className="mx-auto flex max-w-5xl flex-col gap-2 px-4 py-6 text-sm text-neutral-500 sm:flex-row sm:items-center sm:justify-between">
+      <div className="mx-auto flex max-w-5xl flex-col gap-2 px-4 py-6 text-sm text-neutral-600 sm:flex-row sm:items-center sm:justify-between">
         <p>
           © {brandName(tenant)}
         </p>
@@ -58,7 +58,7 @@ export function SiteFooter({ tenant }: { tenant: TenantRecord }) {
       <div className="mx-auto max-w-5xl px-4 pb-6">
         {/* WCAG AA 4.5:1 for 12px text: neutral-500 on white = 4.74:1, dark neutral-400
             on the #0a0a0a page bg = 7.66:1. The old -400/-600 pair sat at ~2.6:1. */}
-        <p className="text-xs text-neutral-500 dark:text-neutral-400">{DISCLAIMER_SHORT}</p>
+        <p className="text-xs text-neutral-600 dark:text-neutral-400">{DISCLAIMER_SHORT}</p>
       </div>
     </footer>
   );

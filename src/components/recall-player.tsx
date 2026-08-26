@@ -22,7 +22,7 @@ export function RecallPlayer({
   if (items.length === 0) return null;
   return (
     <section className="my-6 rounded-lg border border-neutral-200 p-4 dark:border-neutral-800" aria-label="Quick recall">
-      <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">Quick recall</h2>
+      <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-600">Quick recall</h2>
       <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
         Try to answer from memory first, then reveal and grade yourself. Testing yourself here makes
         it stick better than re-reading.
@@ -75,7 +75,7 @@ function RecallCard({
           <p className="text-neutral-700 dark:text-neutral-300">{item.answer}</p>
           {graded === null ? (
             <div className="mt-3 flex flex-wrap items-center gap-2 text-sm">
-              <span className="text-neutral-500">Did you get it?</span>
+              <span className="text-neutral-600">Did you get it?</span>
               <button
                 type="button"
                 onClick={() => grade(true)}

@@ -80,21 +80,21 @@ export function MarketingAdmin({ initial }: { initial: PromoView[] }) {
             {busy ? "Creating…" : "Create"}
           </button>
         </div>
-        <p className="mt-2 text-xs text-neutral-500">Brand-wide, applies to all this school&apos;s courses. Mirrors a Stripe coupon when Stripe is configured.</p>
+        <p className="mt-2 text-xs text-neutral-600">Brand-wide, applies to all this school&apos;s courses. Mirrors a Stripe coupon when Stripe is configured.</p>
         {error ? <p className="mt-2 text-sm text-red-600">{error}</p> : null}
       </form>
 
       <div>
         <h2 className="text-xs font-semibold uppercase tracking-wide text-neutral-400">Active codes</h2>
         {promos.length === 0 ? (
-          <p className="mt-2 text-sm text-neutral-500">No promo codes yet.</p>
+          <p className="mt-2 text-sm text-neutral-600">No promo codes yet.</p>
         ) : (
           <ul className="mt-2 space-y-2">
             {promos.map((p) => (
               <li key={p.code} className="flex items-center justify-between gap-3 rounded-xl border border-neutral-200 px-4 py-3 dark:border-neutral-800">
                 <div>
                   <span className="font-mono font-semibold">{p.code}</span>
-                  <span className="ml-3 text-sm text-neutral-500">
+                  <span className="ml-3 text-sm text-neutral-600">
                     {p.discountPercent}% off · {p.courseId ? "one course" : "brand-wide"}
                     {p.maxUses ? ` · max ${p.maxUses}` : ""}
                     {p.expiresAt ? ` · expires ${new Date(p.expiresAt).toLocaleDateString()}` : ""}
