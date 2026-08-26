@@ -611,6 +611,120 @@ University Archives and Records Center. (n.d.). *Julian Francis Abele*. Universi
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 2 — The second gate: the licence
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "where-licensure-came-from",
+      title: "5 · Where licensure came from",
+      section: "Section 2 · The second gate: the licence",
+      body: `Before 1897, in the United States, anyone could call themselves an architect and design a building for other people to stand inside.
+
+**That is not a rhetorical flourish. It is NCARB's own account of the period.** The National Council of Architectural Registration Boards, writing its own centennial history, says that as buildings grew taller and more ambitious, "With no qualifications required to practice, inexperienced or incompetent individuals could, and often frequently did, design and build structures that led to catastrophic building failures" (NCARB, n.d.-a).
+
+**The failures were specific and they killed people.** On 30 December 1903, Chicago's Iroquois Theater caught fire during a matinee and over six hundred people died, many of them children, in a building whose emergency exits had difficult locks, whose fire escapes were incomplete and whose doors opened inward. In January 1922, twenty six inches of snow accumulated on the roof of the Knickerbocker Theater in Washington, D.C.; the roof collapsed, killing ninety eight people and injuring one hundred and thirty three, and investigation found that the roof support had not been properly designed (NCARB, n.d.-a).
+
+**Getting a law passed took thirteen years and four attempts.** Architects from the Midwest and South formed the Western Association of Architects in 1884, frustrated by the pace of the AIA, and by the group's second meeting in 1885 the Chicago architect Dankmar Adler had drafted a model bill. Illinois architects put versions of it forward in 1887, 1889 and 1895 and lost each time. In 1897 it passed, and "On July 1, 1897, Illinois became the first U.S. state to require licensing for architects" (NCARB, n.d.-a).
+
+**Then it spread, unevenly.** California and New Jersey established architectural regulation boards in 1901 and 1902. New York tried in 1901, in 1905 and in 1909 before finally succeeding in 1915. By 1911 it was clear that boards were adopting different standards, and the effort to make them uniform produced NCARB in 1919 (NCARB, n.d.-a).
+
+**Say the honest thing about this, because the temptation is to say the other one.** Architectural licensure is real public safety regulation with a real body count behind it. A course that presented it as a guild trick invented to keep people out would be making exactly the mistake this course spent Section 1 refusing to make. The Iroquois Theater is not a metaphor.
+
+**And a gate that protects the public is still a gate.** From 1897 forward, in one state after another, a public authority decides who may seal a drawing. That authority is administered by people, applying requirements that run through schools and through employers, and it arrives on top of a society that had already sorted who got into which school and who got hired by which firm.
+
+The timing makes the point by itself. **Robert R. Taylor graduated from MIT in 1892**, five years before any American state licensed an architect at all (MIT Black History Project, n.d.). The first Black man to be academically trained as an architect in this country finished his degree in a profession that had no licence to withhold from him. The gate arrived afterwards.
+
+:::reveal Which state was the first to require a licence to practise architecture, and when did the requirement take effect? ||| Illinois, on 1 July 1897, after bills drafted from Dankmar Adler's model had failed in 1887, 1889 and 1895.
+
+:::reveal Name the two building disasters NCARB cites in its own account of why licensure was demanded. ||| The Iroquois Theater fire in Chicago on 30 December 1903, which killed over six hundred people, and the Knickerbocker Theater roof collapse in Washington, D.C. in January 1922, which killed ninety eight.
+
+:::reveal Why does this course refuse to describe licensure as a guild trick? ||| Because it is real public safety regulation with a documented body count behind it, and misdescribing it would be the same error as calling the firm convention a racial rule.
+
+## Vocabulary
+- **Licensure**: a state's requirement that a person be registered before practising a regulated profession, which in architecture governs who may seal drawings.
+- **Registration board**: the state body that administers licensure, sets or applies the requirements, and decides individual applications.
+- **NCARB**: the National Council of Architectural Registration Boards, formed in 1919 to help state boards adopt uniform standards.
+- **Western Association of Architects**: the 1884 group of Midwestern and Southern architects that first pushed for licensing laws and drafted the model bill.
+
+## Sources
+MIT Black History Project. (n.d.). *Robert R. Taylor, 1892*. Massachusetts Institute of Technology. https://www.blackhistory.mit.edu/archive/robert-r-taylor-1892
+
+NCARB. (n.d.-a). *Beginning of licensure*. National Council of Architectural Registration Boards. https://centennial.ncarb.org/beginning-of-licensure/`,
+    },
+    {
+      slug: "what-a-licence-gates",
+      title: "6 · What a licence gates, and who administers it",
+      section: "Section 2 · The second gate: the licence",
+      body: `A licence is not one gate. It is a sequence of them, and each one is administered by somebody who can say no.
+
+**The modern path has three parts: education, experience and examination.** NCARB reports how long the whole thing takes, and the figure alone tells you it is a sequence rather than a test. The average candidate who completed the path to licensure in 2024 needed well over a decade to do it, and NCARB reports that average separately by race and by gender because the number moves depending on who you are (NCARB, n.d.-b).
+
+**The experience requirement is the one that runs through somebody else's hiring decision.** You cannot document paid architectural experience without a firm that will employ you. That is a gate the statute does not describe, because the statute does not have to: it simply requires the experience, and leaves the supply of it to a private market.
+
+**Norma Merrick Sklarek is the documented case, and the documentation is her own.** After graduating from Columbia in 1950 she applied to nineteen firms and was rejected by all of them. Her account of what was happening is careful rather than sweeping: "They weren't hiring women or African Americans, and I didn't know which it was [working against me]" (Beverly Willis Architecture Foundation, n.d.-a). She took a civil service job as a junior draftsperson at the City of New York's Department of Public Works instead, and sat the New York licensing examination in 1954, passing it on her first attempt.
+
+**John S. Chase is the case where the education gate is dated to the week.** The Texas State Historical Association records that Chase earned a bachelor of science in architecture at Hampton University in 1948, and that "In 1950 he became the first African American to enroll in the University of Texas at Austin School of Architecture. He graduated in 1952." Then comes a sentence that is a hiring gate stated as fact: "Unable to find a job at White firms and not ready to return to his native Maryland, in 1952 Chase relocated to Houston where he began his professional career." He established his own practice there, and the Handbook of Texas records that "He was the first African American licensed to practice architecture in Texas" (Texas State Historical Association, n.d.).
+
+**Notice what this course does not print about Chase.** Several accounts add a vivid procedural detail, that he petitioned the Texas Board of Architectural Examiners to waive an internship requirement he could not satisfy because no firm would employ him, and give a month for his licence. The state historical association's entry does not say it, and this course's rule is that a specific claim about what a licensing board did needs the board or an equivalent record. So the detail is filed as an open question rather than printed, and the verified fact stands on its own: a man who could not get hired opened his own office and was licensed anyway.
+
+**Put the two gates side by side.** The firm convention decides whose name appears on a finished building. Licensure decides who may take legal responsibility for it. Neither one asks about race in its own text. Both of them run through institutions that were, in the period this course covers, making decisions about race constantly.
+
+:::reveal What are the three parts of the modern path to an architectural licence? ||| Education, experience and examination, taken in sequence and administered separately.
+
+:::reveal Which of those three runs through a private hiring decision, and why does that matter? ||| The experience requirement, because documented paid architectural experience requires a firm willing to employ you, and the statute leaves that supply to a private market.
+
+:::reveal How many firms rejected Norma Merrick Sklarek after she graduated from Columbia, and how did she describe the reason? ||| Nineteen, and she said they were not hiring women or African Americans and she did not know which was working against her.
+
+## Vocabulary
+- **Experience requirement**: the documented period of supervised practice a licensure candidate must complete, which depends on being hired.
+- **Examination**: the licensing examination a candidate must pass before a board will register them.
+- **Board of architectural examiners**: the state body that receives applications, applies the requirements and decides who is registered.
+- **Handbook of Texas**: the Texas State Historical Association's reference work, the institutional source this course uses for Chase.
+
+## Sources
+Beverly Willis Architecture Foundation. (n.d.-a). *Norma Merrick Sklarek*. Pioneering Women of American Architecture. https://pioneeringwomen.bwaf.org/norma-merrick-sklarek/
+
+NCARB. (n.d.-b). *NCARB by the numbers 2025: Demographics*. National Council of Architectural Registration Boards. https://www.ncarb.org/nbtn2025/demographics
+
+Texas State Historical Association. (n.d.). *Chase, John Saunders*. Handbook of Texas. https://www.tshaonline.org/handbook/entries/chase-john-saunders`,
+    },
+    {
+      slug: "counting-who-is-in-the-room",
+      title: "7 · Counting who is in the room",
+      section: "Section 2 · The second gate: the licence",
+      body: `If the argument of this course is about routing, then the routing has to be measurable. It is, and the measurement comes with instructions.
+
+**Start with the current figure and date it.** In its 2025 edition, reporting 2024 data, NCARB states that "Asian and Latino architects continue to make up 7% each of the total architect population, with Black or African American architects representing another 2%", and adds that "While most underrepresented demographic groups have seen slight increases over the past 5 years, Black or African American representation has remained unchanged" (NCARB, n.d.-b).
+
+**Two percent, flat for five years, in a country where the profession's own diversity numbers are otherwise moving.** That is the finding, and the flatness is the part worth sitting with, because it means the pipeline improvements the profession reports have not yet shown up here.
+
+**The path takes longer too.** NCARB reports that the average Asian candidate who completed the path in 2024 took 11.7 years, roughly a year faster than the average white candidate, and that "Black candidates took the longest at approximately 14.5 years" (NCARB, n.d.-b). NCARB attaches its own caution to that figure: the sample sizes for underrepresented groups are much smaller, so their averages fluctuate more from year to year.
+
+**Read the method, not just the number.** NCARB says plainly: "NCARB uses the NCARB Certificate holder population as an approximation for the architect population" (NCARB, n.d.-b). A Certificate is a specific NCARB credential that architects obtain mainly to make it easier to get licensed in additional states. It is a very good proxy and it is a proxy. A course that quoted the two percent without that sentence would be handing you a number with its instructions torn off.
+
+**Counting this at all took a private project, and the reason is a methodological one.** Bradford C. Grant and Dennis Alan Mann began the Directory of African American Architects in November 1991, in their words, "to account for and identify all of the African Americans who were professionally licensed as architects", because they "suspected at that time that even the estimated numbers that we came across in various publications were greatly exaggerated" (Grant & Mann, n.d.).
+
+Their explanation of why the obvious source would not do is the sharpest sentence in this lesson. Federal labor statistics, they write, "fail to specify whether or not someone who is employed in the field of architecture is licensed to practice architecture", so the published figures counted "licensed architects, interns, technicians, and even designer/builders" together (Grant & Mann, n.d.). If your question is who may sign, a count of everyone who works in an architecture office answers a different question.
+
+**And the directory's own account of women is thin on purpose.** Its introduction states that "African American women enjoy even less representation in practice; we list only eighty four women in the current directory" (Grant & Mann, n.d.). That figure belongs to whichever edition of the introduction you are reading, and the page carries no date, so this course reports the sentence and does not treat the number as current. The thinness is the finding. Padding it would be the failure.
+
+:::reveal What proportion of the total architect population did NCARB report as Black or African American in its 2025 edition, and what had happened to that proportion over five years? ||| Two percent, and it had remained unchanged while most other underrepresented groups saw slight increases.
+
+:::reveal What population does NCARB use as an approximation for the architect population, and why does that matter? ||| Its Certificate holder population, which is a good proxy rather than a census, so the figure should always be quoted with its method attached.
+
+:::reveal Why did Grant and Mann say federal labor statistics could not answer their question? ||| Because those statistics do not distinguish licensed architects from interns, technicians and designer-builders, so they answer who works in architecture rather than who may sign.
+
+## Vocabulary
+- **NCARB Certificate**: a credential architects obtain mainly to ease licensure in additional states, and the population NCARB uses to approximate the architect population.
+- **Candidate**: someone on the path to licensure who has not yet completed it, counted separately from licensed architects.
+- **Time to licensure**: NCARB's measure of how long candidates take to complete the whole path, reported separately by race and gender.
+- **Directory of African American Architects**: the independent count Grant and Mann began in 1991 because published estimates were unreliable and federal statistics measured something else.
+
+## Sources
+Grant, B. C., & Mann, D. A. (n.d.). *Directory of African American Architects: Introduction*. Directories of Diverse Architects and Designers. https://ddad.info/insights/directory-introduction
+
+NCARB. (n.d.-b). *NCARB by the numbers 2025: Demographics*. National Council of Architectural Registration Boards. https://www.ncarb.org/nbtn2025/demographics`,
+    },
     // APPEND-HERE
   ],
 };
