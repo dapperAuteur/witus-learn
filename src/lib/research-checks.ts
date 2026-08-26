@@ -1818,6 +1818,107 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "The reviews themselves, in the Chicago Sun and Philadelphia Afro-American for those dates",
     ],
   },
+  // ── Who Signs the Print (CREDIT-02) ───────────────────────────────────────────────────────────
+  {
+    key: "wsp-printmaking-workshop-founding-year",
+    course: "who-signs-the-print",
+    lesson: "the-founding-year-problem",
+    quote:
+      "Until one of those is on the table this stays open, and this course files it as an open question rather than resolving it in prose.",
+    title: "Did the Printmaking Workshop open in late 1947 or in 1948?",
+    severity: "medium",
+    question:
+      "Which year did Robert Blackburn open the Printmaking Workshop? The Library of Congress exhibition says he acquired his own lithographic press by late 1947 and opened his own studio in Chelsea in 1948, and the MacArthur Foundation's 1992 fellowship page also says 1948. The workshop's own successor, the Robert Blackburn Printmaking Workshop at the Elizabeth Foundation for the Arts, says he decided in late winter 1947 and opened on 17th Street.",
+    claim:
+      "Lesson 11 of the course teaches this as a genuine disagreement. It names both positions and both institutions, explains that the two may be marking different events in one continuous process (press acquired, then studio opened), and deliberately does NOT choose. Every quiz item on the topic asks the learner to report the disagreement rather than to give a year.",
+    stakes:
+      "Low for the argument and high for the course's own credibility rule, which is that a contested claim is taught as contested. If a dated primary document settles it, the lesson should say so and name the document rather than continuing to present an answered question as open. Note also that two of the three sources now on the 1948 side (Library of Congress, MacArthur Foundation) are not independent of each other if both drew on the same 2003 exhibition research.",
+    needs: [
+      "A dated primary document: a lease or rent receipt for the Chelsea or 17th Street premises, a dated invoice or bill of sale for the lithographic press, a contemporaneous letter, or a New York City directory listing",
+      "Whether the Library of Congress's Printmaking Workshop Records finding aid states a founding date, and which",
+      "Whether the workshop's successor can say what evidence its late winter 1947 date rests on",
+    ],
+    where: [
+      "Library of Congress Manuscript Division, Printmaking Workshop Records finding aid",
+      "The Robert Blackburn Printmaking Workshop at the Elizabeth Foundation for the Arts, which holds or knows the institutional memory",
+      "New York City directories and Manhattan property records for 1947 and 1948",
+    ],
+  },
+  {
+    key: "wsp-charles-white-otis-appointment",
+    course: "who-signs-the-print",
+    lesson: "teaching-with-no-format",
+    quote:
+      "Otis College's own account says he joined the faculty in 1964. Literature connected with the 2019 LACMA retrospective gives 1965.",
+    title: "When did Charles White join the Otis faculty, and was he its first Black faculty member?",
+    severity: "medium",
+    question:
+      "Two questions, both needing Otis College itself. First, did Charles White join the Otis Art Institute faculty in 1964 or 1965? The college's own LibGuide says 1964; coverage connected with the 2019 LACMA retrospective says 1965. Second, is the widely repeated claim that he was the school's first Black faculty member true, and does Otis state it anywhere in its own words?",
+    claim:
+      "The lesson reports the year as contested, names both positions, and picks neither. It deliberately does NOT print the first-Black-faculty-member claim at all, on the rule that a first claim needs the issuing institution. The lesson says so out loud, so a learner knows the omission is a decision.",
+    stakes:
+      "Medium. The year changes nothing about the argument and the course says so, but the first claim does matter: it is repeated constantly, it would be a genuinely notable fact, and printing it unverified is exactly the hostage this course warns against in its own final lesson. If Otis confirms it, the lesson should carry it with the citation. If Otis cannot, the refusal should stay and the reason should stay visible.",
+    needs: [
+      "The year of White's faculty appointment, from an Otis College personnel record, catalogue, or an archivist's written statement",
+      "Whether Otis College will state in its own words that he was the first Black member of its faculty, and on what evidence",
+      "If the first claim is true, the exact wording Otis uses, so the course can quote rather than paraphrase",
+    ],
+    where: [
+      "Otis College of Art and Design archives and library, which maintain the LibGuide that currently says 1964",
+      "The Charles White: A Retrospective catalogue (Museum of Modern Art / LACMA, 2018 to 2019), whose chronology should be dated and sourced",
+      "The Charles White Archives, which handle the estate's records",
+    ],
+  },
+  {
+    key: "wsp-emma-amos-spiral-year",
+    course: "who-signs-the-print",
+    lesson: "the-only-woman-in-the-room",
+    quote:
+      "One detail does remain unsettled: some accounts date her joining to 1963 rather than 1964, and this course follows the Studio Museum's 1964 while filing the discrepancy as an open question rather than smoothing it over.",
+    title: "Did Emma Amos join Spiral in 1963 or 1964?",
+    severity: "low",
+    question:
+      "In which year did Emma Amos become a member of Spiral? The Studio Museum in Harlem says 1964, tying the invitation to her master's study at New York University under Hale Woodruff. Several other accounts say 1963, the year the collective was co-founded. Which is right, and is there a contemporaneous record of Spiral's membership?",
+    claim:
+      "The lesson follows the Studio Museum and prints 1964, states in the lesson body that other accounts say 1963, and does not present the year as settled. The separate and more important claim, that she was the only woman admitted to the group, IS printed, verified against the Studio Museum.",
+    stakes:
+      "Low. Nothing in the argument turns on the year, and the load bearing claim (only woman admitted, member until the 1965 dissolution) is verified independently. It is filed because the course's rule is that an unresolved point gets written down rather than smoothed over, and because a reader who checks will find the conflict and should find the course already acknowledging it.",
+    needs: [
+      "A contemporaneous record of Spiral's membership, such as a meeting note, the 1965 First Group Showing catalogue, or correspondence",
+      "Amos's own account of the year, from her oral history or published interviews",
+      "Whether any account distinguishes the year she was invited from the year she began attending",
+    ],
+    where: [
+      "The Studio Museum in Harlem, which mounted a Spiral exhibition and holds research on the group",
+      "Emma Amos's 2011 oral history and the Georgia Museum of Art's Emma Amos: Color Odyssey catalogue",
+      "Archives of American Art, for the papers of Spiral members including Bearden, Alston and Woodruff",
+    ],
+  },
+  {
+    key: "wsp-africobra-print-price",
+    course: "who-signs-the-print",
+    lesson: "cheap-multiple-and-portable",
+    quote:
+      "A dollar figure circulates. No institutional source this course could reach states it, so the lesson says affordably priced and stocked in Black-owned businesses, which the Studio Museum does state.",
+    title: "What did AfriCOBRA actually charge for its poster prints?",
+    severity: "low",
+    question:
+      "Did AfriCOBRA sell its poster prints at a fixed price, and if so what was it? A figure of ten dollars circulates widely in secondary writing. Is it stated anywhere by the artists themselves, by a museum, or in a contemporaneous document, and did it apply to all the group's prints or to a particular edition or exhibition?",
+    claim:
+      "The lesson prints no price at all. It says the works were affordably priced and stocked in Black-owned businesses, which is the Studio Museum in Harlem's own wording, and the dollar figure is deliberately omitted as unverified.",
+    stakes:
+      "Low, but the detail is the single most vivid thing in the lesson and it would make the argument concrete: a price is what turns 'affordable' from an adjective into evidence about who could own the work. Worth closing precisely because it is the kind of detail a course is tempted to print on the strength of repetition alone.",
+    needs: [
+      "A price stated by an AfriCOBRA member in a published interview or in Barbara Jones-Hogu's 1973 essay on the group's history, philosophy and aesthetics",
+      "Or a museum wall text, catalogue entry or object record that states a price and gives its source",
+      "The scope of the figure: all prints, or one portfolio, or one exhibition",
+    ],
+    where: [
+      "Barbara Jones-Hogu, 'The History, Philosophy and Aesthetics of AfriCOBRA', and any reprint of it",
+      "The DePaul Art Museum, which mounted a Jones-Hogu exhibition, and the Smart Museum of Art at the University of Chicago",
+      "Smithsonian American Art Museum and Studio Museum in Harlem object records for AfriCOBRA prints",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
