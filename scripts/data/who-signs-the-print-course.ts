@@ -531,5 +531,518 @@ Tamarind Institute. (n.d.-a). *Process*. University of New Mexico. https://tamar
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 2 — Where the printer's credit actually lives
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-chop-that-carries-no-name",
+      title: "5 · The chop, a mark that carries no name",
+      section: "Section 2 · Where the printer's credit actually lives",
+      body: `The printer's credit was not abolished. It was moved somewhere the public does not read, and the first of those places is a small blind embossing in the paper.
+
+**What a chop is.** Tamarind defines chop marks as "identifying symbols of the print studio and/or the printer that are often embossed in the paper (or they may be stamped in ink on the back of the print)" (Tamarind Institute, n.d.-a). Blind embossing means the shape is pressed into the sheet with no ink at all, so you see it by tilting the paper against the light. Tamarind's own shop chop is an alchemist's symbol for stone, and it has appeared on lithographs made there since 1960.
+
+**Where the practice was formalised, and why that matters.** Tamarind Lithography Workshop opened in the summer of 1960 on Tamarind Avenue in Los Angeles, founded by the artist June Wayne with support from the Ford Foundation, because there was almost nobody left in the country who could print at a professional standard. Wayne later compared lithography's position to the whooping crane's: "In all the world there were only thirty-six cranes left, and in the United States there were no master printers able to work with the creative spectrum of our artists" (Adams, n.d.). Wayne directed the workshop from 1960 to 1970, after which Clinton Adams re-established it at the University of New Mexico as a research centre and archive.
+
+**Read Tamarind's founding decision closely, because it is the pivot of this whole section.** Adams wrote: "With an eye to the loose (and at times corrupt) practices of the past, we would fully record and document every edition that we printed; and, in recognition of the printer's important role in their making, we would affix both the workshop chop (or blindstamp) and the printer's individual chop, to every proof or impression" (Adams, n.d.). Two chops, not one: the shop and the individual who did the work. Adams adds that these practices "have subsequently been adopted in most American workshops".
+
+**So this is a deliberate correction, made inside the medium, in 1960.** It did not overturn the signature convention and it was never intended to. It added a second, parallel record that assigns individual credit, and put it on the sheet.
+
+**And then look at what the correction can and cannot do.** The chop is a shape. It is not a name. To turn a printer's chop into a person you need a reference work that maps marks to people, and almost nobody outside the trade owns one. A credit you can only decode with a specialist book is a real credit and an invisible one at the same time, which is why the chop belongs in this section rather than in the section about corrections that worked.
+
+:::reveal What is a chop, and how does blind embossing differ from a printed mark? ||| A chop is an identifying symbol of the print studio or the printer. Blind embossing presses the shape into the paper with no ink, so it is visible only when the sheet is tilted against the light.
+
+:::reveal What did Tamarind decide in 1960 about printer credit, and how many chops does that decision put on a sheet? ||| That every edition would be fully documented and that both the workshop chop and the individual printer's chop would be affixed to every proof or impression. Two chops.
+
+:::reveal Why is a chop still a limited form of credit even though it names the individual printer? ||| Because it is a shape rather than a name, and decoding it into a person requires a specialist reference work that almost nobody outside the trade owns.
+
+## Vocabulary
+- **Chop**: an identifying symbol of a print studio or an individual printer, embossed into the sheet or stamped in ink on its back.
+- **Blind embossing**: an impression pressed into paper without ink, legible only when the sheet is tilted against a light source.
+- **Shop chop**: the workshop's own mark, distinct from the separate mark belonging to the printer who pulled the edition.
+- **Parallel record**: a second credit channel added alongside a convention rather than replacing it, which is what Tamarind built in 1960.
+
+## Sources
+Adams, C. (n.d.). *An informed energy*. Tamarind Institute, University of New Mexico. https://tamarind.unm.edu/informed-energy/
+
+Tamarind Institute. (n.d.-a). *Process*. University of New Mexico. https://tamarind.unm.edu/about/process/
+
+Tamarind Institute. (n.d.-b). *History*. University of New Mexico. https://tamarind.unm.edu/about/history/`,
+    },
+    {
+      slug: "the-documentation-sheet",
+      title: "6 · The documentation sheet nobody reads",
+      section: "Section 2 · Where the printer's credit actually lives",
+      body: `The second place the printer's credit lives is a piece of paper that never leaves the building with the print.
+
+**What it is.** Tamarind describes it plainly: "Complete documentation is prepared for each edition, capturing all of the details related to the edition and the steps involved in its making. This documentation is signed by the artist and the printer" (Tamarind Institute, n.d.-a). It records the surfaces used, the number of runs, the inks, the paper, the sizes of the edition and of every category of proof, the dates, and who did what.
+
+**Signed by the artist and the printer.** Both names, in full, on the record that establishes what the edition actually is. That sentence is the whole point of this lesson. The printer is not merely credited in the archive: the printer is a signatory to the document that defines the work.
+
+**This is what CREDIT-00 calls a load bearing document,** and it behaves exactly as that course predicts. The credit was assigned. It was assigned in writing. It was assigned in a document that decides a real question, which is what the edition consists of. And the assignment is invisible to the public because the document travels to an archive and a registrar rather than to a wall.
+
+**Where it goes.** At Tamarind an edition comprises all the numbered prints, the artist's proofs, the bon a tirer, and three impressions retained for the Tamarind archives, which are housed at the University of New Mexico Art Museum (Tamarind Institute, n.d.-a). The documentation follows that archive copy. Anyone can in principle consult it. Almost nobody ever does, because a viewer who wants to know who made a print looks at the print.
+
+**The generalisable finding.** When a credit convention appears to erase somebody, ask first whether the credit was actually destroyed or merely relocated to a document with a smaller readership. These are completely different problems with completely different fixes. If the record is gone, the work is historical recovery. If the record exists in a registrar's file, the work is publication: move the name from a document nobody reads to a surface people look at. The second problem is far more common and far more tractable, and you will see it again in every industry in Section 6.
+
+**A caution about what the sheet does not do.** A documentation sheet is evidence of participation, not a ranking. It will tell you the printer's name and it will not tell you who solved the hard problem, because no format records that. When you meet someone claiming a documentation sheet proves an uncredited person was the true author, that is a claim the document cannot support.
+
+:::reveal Who signs a Tamarind edition's documentation, and what does the document record? ||| The artist and the printer both sign it. It records every detail of the edition and the steps in its making, including surfaces, runs, inks, paper, proof categories and dates.
+
+:::reveal What is the practical difference between a credit that was destroyed and a credit that was relocated? ||| A destroyed credit needs historical recovery. A relocated one needs publication, which means moving the existing name from a document with a small readership onto a surface people actually look at.
+
+:::reveal What can a documentation sheet not tell you? ||| Who solved the hard problem. It is evidence of participation, not a ranking of contribution, and no format in the medium records the latter.
+
+## Vocabulary
+- **Documentation sheet**: the record prepared for each edition describing its making in full, signed by both the artist and the printer.
+- **Load bearing document**: from CREDIT-00, the record that actually assigns a credit and settles a real question about the work.
+- **Relocated credit**: a credit that still exists in writing but sits in a document with a far smaller readership than the work itself.
+- **Registrar**: the archival function that keeps an institution's records of what an object is and how it came to be.
+
+## Sources
+Tamarind Institute. (n.d.-a). *Process*. University of New Mexico. https://tamarind.unm.edu/about/process/`,
+    },
+    {
+      slug: "the-bon-a-tirer",
+      title: "7 · What the printer owns instead",
+      section: "Section 2 · Where the printer's credit actually lives",
+      body: `There is one impression of every edition that is not for sale, is not numbered, and does not belong to the artist. It belongs to the printer, and understanding why tells you what a master printer's job really is.
+
+**The bon a tirer.** The phrase is French for good to pull. It is the proof the artist and printer agree on as the standard: this is what the edition will look like. Every subsequent impression is matched to it. At Tamarind, an edition comprises the numbered prints, the artist's proofs, "the bon a tirer, which belongs to the printer", and three impressions for the archives (Tamarind Institute, n.d.-a).
+
+**Sit with that ownership rule for a moment.** The single sheet that defines the standard of the entire edition is the printer's property. Not because the printer is being thanked, but because the printer is the person who has to hit that standard forty more times, and needs the reference in hand while doing it. The custom is functional, and it happens to be an exact statement of the division of labour: the artist owns the approval, the printer owns the standard.
+
+**What this reveals about the skill.** The hard part of editioning is not making one beautiful sheet. It is making the fortieth sheet indistinguishable from the first, across hours, as the stone dries differently, as the ink stiffens, as the paper's moisture changes. The bon a tirer exists because consistency is the discipline, and consistency is invisible by definition. Nobody looks at an edition and admires the fact that none of the impressions differ.
+
+**Which is a general law worth writing down.** Expertise whose success looks like the absence of variation is the hardest expertise to credit, because there is nothing to point at. This is the same reason a film colourist, a mastering engineer and a simultaneous interpreter are hard to credit: when they succeed, you notice nothing.
+
+**And it completes the picture of the printer's credit.** It exists in three forms and none of them is legible to a viewer. A wordless chop pressed into the sheet. A signature on a documentation sheet held in an archive. And a single unsold proof kept in the shop. That is not erasure. It is a credit system built for the people inside the trade, functioning perfectly for them, and completely opaque to everyone else. Every remaining section of this course is about people who understood that and built something outward facing instead.
+
+:::reveal What is the bon a tirer, and who owns it? ||| The proof the artist and printer agree defines the standard for the edition, literally good to pull. Every later impression is matched to it, and at Tamarind it belongs to the printer.
+
+:::reveal Why is consistency the hardest part of a printer's skill to credit? ||| Because success looks like the absence of variation, so there is nothing to point at. Nobody admires an edition for the fact that its impressions do not differ.
+
+:::reveal Name the three forms the printer's credit takes, and say what they have in common. ||| A wordless chop on the sheet, a signature on an archived documentation sheet, and the unsold bon a tirer kept in the shop. None of the three is legible to a viewer.
+
+## Vocabulary
+- **Bon a tirer**: the approved proof that sets the standard the whole edition must match, French for good to pull, and at Tamarind the printer's property.
+- **Artist's proof**: an impression outside the numbered edition, conventionally retained by the artist.
+- **Editioning**: the work of producing an edition in which every impression matches the agreed standard.
+- **Invisible-when-successful**: the property of expertise whose achievement is the absence of variation, which makes it structurally hard to credit.
+
+## Sources
+Tamarind Institute. (n.d.-a). *Process*. University of New Mexico. https://tamarind.unm.edu/about/process/`,
+    },
+    {
+      slug: "quiz-where-the-credit-lives",
+      title: "8 · Knowledge check: chop, sheet and proof",
+      section: "Section 2 · Where the printer's credit actually lives",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "Tamarind defines a chop mark as an identifying symbol of:",
+            options: ["The print studio or the printer", "The publisher who financed the edition and holds the right to distribute it", "The collector who first acquired the impression from the issuing workshop", "The museum that accessioned the sheet, applied at the point of registration"],
+            correctIndex: 0,
+            explanation: "Often embossed in the paper, or stamped in ink on the back of the print.",
+            sourceLessonSlug: "the-chop-that-carries-no-name",
+          },
+          {
+            prompt: "Blind embossing means the mark is made:",
+            options: ["Without ink", "With a pale ink chosen to sit just below the visual threshold of ordinary lighting", "On the reverse of the sheet, so it never interferes with the printed image itself", "Before the image is printed, so the paper takes the ink differently in that area"],
+            correctIndex: 0,
+            explanation: "The shape is pressed into the sheet, so you see it by tilting the paper against the light.",
+            sourceLessonSlug: "the-chop-that-carries-no-name",
+          },
+          {
+            prompt: "Tamarind's own shop chop is:",
+            options: ["An alchemist's symbol for stone", "The initials of the current master printer set inside a circular border", "A stylised tamarind tree, changed each decade to date the impressions", "The seal of the University of New Mexico, added after the workshop relocated"],
+            correctIndex: 0,
+            explanation: "It has appeared on lithographs made at Tamarind since 1960.",
+            sourceLessonSlug: "the-chop-that-carries-no-name",
+          },
+          {
+            prompt: "Tamarind Lithography Workshop opened in:",
+            options: ["Los Angeles, in 1960", "Albuquerque, in 1970, as a research centre attached to a university art museum", "New York, in 1957, alongside the founding of Universal Limited Art Editions", "Chicago, in 1948, as a training programme for printers displaced from Europe"],
+            correctIndex: 0,
+            explanation: "In the summer of 1960, on Tamarind Avenue. It moved to the University of New Mexico later.",
+            sourceLessonSlug: "the-chop-that-carries-no-name",
+          },
+          {
+            prompt: "Who founded Tamarind?",
+            options: ["June Wayne", "Clinton Adams, who also served as its director for its first decade of operation", "Tatyana Grosman, who had already founded a lithographic workshop on Long Island", "The Ford Foundation, which appointed a working artist to run it on the foundation's behalf"],
+            correctIndex: 0,
+            explanation: "The artist June Wayne, with support from the Ford Foundation, and she directed it from 1960 to 1970.",
+            sourceLessonSlug: "the-chop-that-carries-no-name",
+          },
+          {
+            prompt: "Which body supported Tamarind's founding?",
+            options: ["The Ford Foundation", "The National Endowment for the Arts, in its first year of grantmaking to workshops", "The Works Progress Administration, continuing its Depression era art programmes", "The University of New Mexico, which funded the workshop before it relocated there"],
+            correctIndex: 0,
+            explanation: "Wayne began the workshop with Ford Foundation support.",
+            sourceLessonSlug: "the-chop-that-carries-no-name",
+          },
+          {
+            prompt: "June Wayne compared the state of lithography in the United States to:",
+            options: ["The whooping crane", "The hand press, which had been replaced by offset machinery within a single generation", "A language with no remaining native speakers and no written grammar to reconstruct it", "A guild whose members had emigrated and left no apprentices behind in the country"],
+            correctIndex: 0,
+            explanation: "She said there were only thirty-six cranes left in all the world, and no American master printers able to work with the creative spectrum of the country's artists.",
+            sourceLessonSlug: "the-chop-that-carries-no-name",
+          },
+          {
+            prompt: "The problem Tamarind was founded to solve was a shortage of:",
+            options: ["Master printers", "Lithographic limestone, which had become unobtainable after the Second World War", "Artists interested in working in print rather than in painting or in sculpture", "Buyers, since the American market for editioned prints had collapsed in the 1950s"],
+            correctIndex: 0,
+            explanation: "Wayne's crane comparison names exactly that: no printers in the United States able to work with the range of the country's artists.",
+            sourceLessonSlug: "the-chop-that-carries-no-name",
+          },
+          {
+            prompt: "Who re-established Tamarind at the University of New Mexico?",
+            options: ["Clinton Adams", "June Wayne, who moved with the workshop and continued to direct it there", "Will Barnet, who had trained a generation of printers at the Art Students League", "Robert Blackburn, after he left Universal Limited Art Editions in 1963"],
+            correctIndex: 0,
+            explanation: "Adams became director in 1970 and established it as a research centre and archive at the university.",
+            sourceLessonSlug: "the-chop-that-carries-no-name",
+          },
+          {
+            prompt: "Adams says Tamarind's documentation decision was taken with an eye to what?",
+            options: ["The loose and at times corrupt practices of the past", "The forthcoming revision of American copyright law affecting works of visual art", "The demands of European collectors who would not buy an undocumented edition", "The risk that a workshop's own printers might later claim authorship of an image"],
+            correctIndex: 0,
+            explanation: "His sentence names those past practices as the reason for full documentation and for two chops on every sheet.",
+            sourceLessonSlug: "the-chop-that-carries-no-name",
+          },
+          {
+            prompt: "How many chops did Tamarind resolve to affix to every proof or impression?",
+            options: ["Two", "One, combining the workshop's symbol and the printer's initials into a single stamp", "Three, adding the artist's own mark alongside those of the workshop and the printer", "None on the front, since all identifying marks were to be stamped on the reverse"],
+            correctIndex: 0,
+            explanation: "The workshop chop and the printer's individual chop, in recognition of the printer's important role.",
+            sourceLessonSlug: "the-chop-that-carries-no-name",
+          },
+          {
+            prompt: "Adams reports that Tamarind's documentation and chop practices were subsequently:",
+            options: ["Adopted in most American workshops", "Abandoned within a decade as too costly for workshops without foundation funding", "Made compulsory for any workshop selling editions across a state line in the US", "Rejected by the print trade, which preferred the older single signature convention"],
+            correctIndex: 0,
+            explanation: "Which is why the practice you can check on a modern American print traces back to a 1960 decision.",
+            sourceLessonSlug: "the-chop-that-carries-no-name",
+          },
+          {
+            prompt: "Tamarind's 1960 decision related to the signature convention how?",
+            options: ["It ran alongside it", "It replaced it, so that Tamarind editions carry a printer's signature instead of the artist's", "It banned artist signatures on any impression the printer had not personally approved", "It restricted the artist's signature to the archive copies retained by the workshop"],
+            correctIndex: 0,
+            explanation: "It added a second, parallel record assigning individual credit, and never tried to overturn the older convention.",
+            sourceLessonSlug: "the-chop-that-carries-no-name",
+          },
+          {
+            prompt: "The central limitation of a chop as a credit is that it is:",
+            options: ["A shape, not a name", "Applied only to impressions the workshop intends to sell rather than to archive", "Easily forged, since an embossing die can be reproduced from a photograph", "Removed by conservators during treatment, so it rarely survives a century"],
+            correctIndex: 0,
+            explanation: "Turning a printer's chop into a person needs a reference work mapping marks to people, which almost nobody outside the trade owns.",
+            sourceLessonSlug: "the-chop-that-carries-no-name",
+          },
+          {
+            prompt: "A credit that can only be decoded with a specialist reference work is described as:",
+            options: ["Real and invisible at once", "Legally sufficient, which is why the practice has never needed further reform", "Equivalent to no credit at all, so the chop is dismissed as a purely decorative mark", "Superior to a printed name, because it cannot be misspelled or transcribed wrongly"],
+            correctIndex: 0,
+            explanation: "Which is why the chop sits in this section rather than in the section about corrections that worked.",
+            sourceLessonSlug: "the-chop-that-carries-no-name",
+          },
+          {
+            prompt: "A \"parallel record\", as this course uses the term, is:",
+            options: ["A second credit channel added beside a convention", "A duplicate documentation sheet held by the artist as well as by the workshop", "A photographic record of every impression, kept in case of a later dispute", "An identical edition printed from a second surface as insurance against damage"],
+            correctIndex: 0,
+            explanation: "Added rather than substituted, which is exactly what Tamarind built in 1960.",
+            sourceLessonSlug: "the-chop-that-carries-no-name",
+          },
+          {
+            prompt: "How long has Tamarind's shop chop appeared on lithographs made there?",
+            options: ["Since 1960", "Since 1970, when the workshop was re-established at the University of New Mexico", "Since 1948, following the practice of the earliest American cooperative print shops", "Since the mid 1980s, when the printer training programme was formally accredited"],
+            correctIndex: 0,
+            explanation: "From the workshop's opening, which is what makes the practice checkable across its whole history.",
+            sourceLessonSlug: "the-chop-that-carries-no-name",
+          },
+          {
+            prompt: "Tamarind prepares complete documentation for:",
+            options: ["Each edition", "Each artist, covering every project that artist undertakes at the workshop", "Each calendar year, summarising the workshop's total output for the archive", "Each impression individually, so that no two sheets share a documentation record"],
+            correctIndex: 0,
+            explanation: "Capturing all the details of the edition and the steps involved in its making.",
+            sourceLessonSlug: "the-documentation-sheet",
+          },
+          {
+            prompt: "Who signs the documentation for a Tamarind edition?",
+            options: ["The artist and the printer", "The artist alone, in parallel with the signature applied to each numbered impression", "The workshop director, on behalf of everyone who worked on the project", "The registrar of the archive that will hold the retained impressions afterwards"],
+            correctIndex: 0,
+            explanation: "Both names, in full, on the record that establishes what the edition actually is.",
+            sourceLessonSlug: "the-documentation-sheet",
+          },
+          {
+            prompt: "The documentation sheet is an example of what concept from CREDIT-00?",
+            options: ["A load bearing document", "The Matthew effect, which sends accumulated credit toward whoever is already eminent", "A format cap, since the sheet has a fixed number of lines available for names", "Institutional memory, because the archive is what preserves it over the long run"],
+            correctIndex: 0,
+            explanation: "The record that actually assigns the credit and settles a real question about the work.",
+            sourceLessonSlug: "the-documentation-sheet",
+          },
+          {
+            prompt: "The real question a documentation sheet settles is:",
+            options: ["What the edition consists of", "Whether the artist has been paid the agreed fee for the project by the publisher", "How the edition should be priced when it reaches dealers and secondary buyers", "Which impressions may be described as original prints rather than as reproductions"],
+            correctIndex: 0,
+            explanation: "Which is what makes it load bearing rather than ceremonial.",
+            sourceLessonSlug: "the-documentation-sheet",
+          },
+          {
+            prompt: "Why is the credit on a documentation sheet invisible to the public?",
+            options: ["The document goes to an archive", "Because the printer's name is recorded only by an internal reference code rather than in full", "Because workshops treat their documentation as commercially confidential trade material", "Because the sheet is destroyed once the edition sells out and the surface is effaced"],
+            correctIndex: 0,
+            explanation: "It travels to an archive and a registrar rather than to a wall, and a viewer who wants to know who made a print looks at the print.",
+            sourceLessonSlug: "the-documentation-sheet",
+          },
+          {
+            prompt: "At Tamarind, how many impressions of an edition are retained for the archives?",
+            options: ["Three", "One, matching the single copy legal deposit practice used for published books", "Ten percent of the edition, rounded up to the nearest whole impression", "None, because the archive holds only the documentation rather than any printed sheets"],
+            correctIndex: 0,
+            explanation: "An edition comprises the numbered prints, the artist's proofs, the bon a tirer, and three impressions for the archives.",
+            sourceLessonSlug: "the-documentation-sheet",
+          },
+          {
+            prompt: "The Tamarind archives are housed at:",
+            options: ["The University of New Mexico Art Museum", "The Library of Congress Prints and Photographs Division, alongside the Blackburn papers", "The Ford Foundation's own collection, as a condition of the original founding grant", "The Los Angeles County Museum of Art, near the workshop's original Tamarind Avenue site"],
+            correctIndex: 0,
+            explanation: "Which is where the documentation follows the retained impressions.",
+            sourceLessonSlug: "the-documentation-sheet",
+          },
+          {
+            prompt: "The lesson's generalisable test asks whether a credit was destroyed or:",
+            options: ["Relocated", "Contested, in the sense that two parties claimed it and neither could prove the claim", "Delayed, meaning it will appear once the relevant scholarship has been published", "Waived, because the person entitled to it chose not to assert it at the time"],
+            correctIndex: 0,
+            explanation: "Two completely different problems with completely different fixes.",
+            sourceLessonSlug: "the-documentation-sheet",
+          },
+          {
+            prompt: "If a credit record is genuinely gone, the work required is:",
+            options: ["Historical recovery", "Publication, which means moving an existing name onto a surface people actually look at", "Arbitration between the parties who each claim to have performed the uncredited work", "Amendment of the original document by the institution that first issued it"],
+            correctIndex: 0,
+            explanation: "Recovery is the harder and rarer case. Relocation is the common one, and it is fixed by publication.",
+            sourceLessonSlug: "the-documentation-sheet",
+          },
+          {
+            prompt: "If a credit sits in a registrar's file, the work required is:",
+            options: ["Publication", "Litigation, since the holder of the file has no obligation to release its contents", "Reconstruction from secondary sources, because internal files are rarely reliable", "Nothing, because a written record is by definition already a sufficient public credit"],
+            correctIndex: 0,
+            explanation: "Move the name from a document nobody reads to a surface people look at. Far more common and far more tractable.",
+            sourceLessonSlug: "the-documentation-sheet",
+          },
+          {
+            prompt: "A documentation sheet is evidence of participation but not of:",
+            options: ["Ranking", "Payment, which is recorded separately in the workshop's commercial ledgers", "Date, since the sheet is completed only after the whole edition has been pulled", "Authenticity, which is established instead by the chop embossed into each sheet"],
+            correctIndex: 0,
+            explanation: "It will tell you the printer's name and it will not tell you who solved the hard problem, because no format records that.",
+            sourceLessonSlug: "the-documentation-sheet",
+          },
+          {
+            prompt: "Someone claiming a documentation sheet proves an uncredited person was the true author is making a claim the document:",
+            options: ["Cannot support", "Supports only if the artist's signature is missing from the same sheet", "Supports fully, since both parties signed it as equals under the workshop's rules", "Can support only once a court has admitted it as evidence in a contested case"],
+            correctIndex: 0,
+            explanation: "The sheet records who took part, not who contributed most.",
+            sourceLessonSlug: "the-documentation-sheet",
+          },
+          {
+            prompt: "Among the details a documentation sheet records are:",
+            options: ["Surfaces, runs, inks and paper", "The names of every collector who purchased an impression from the edition", "The exhibition history of the image in the five years following its publication", "The insurance valuation assigned to each impression at the time of its release"],
+            correctIndex: 0,
+            explanation: "Plus the sizes of the edition and every category of proof, the dates, and who did what.",
+            sourceLessonSlug: "the-documentation-sheet",
+          },
+          {
+            prompt: "\"Bon a tirer\" translates as:",
+            options: ["Good to pull", "Good to sell, marking the first impression cleared for commercial release", "Good for the artist, denoting the proof reserved outside the numbered edition", "Good in principle, a provisional approval subject to a later final inspection"],
+            correctIndex: 0,
+            explanation: "It is the proof the artist and printer agree on as the standard the edition will match.",
+            sourceLessonSlug: "the-bon-a-tirer",
+          },
+          {
+            prompt: "At Tamarind, the bon a tirer belongs to:",
+            options: ["The printer", "The artist, alongside the artist's proofs held outside the numbered edition", "The archive, as one of the three impressions retained by the university museum", "The publisher, who uses it to settle disputes with dealers about print quality"],
+            correctIndex: 0,
+            explanation: "Not as a thank you, but because the printer has to hit that standard for the rest of the run and needs the reference in hand.",
+            sourceLessonSlug: "the-bon-a-tirer",
+          },
+          {
+            prompt: "The lesson summarises the division of labour as: the artist owns the approval and the printer owns:",
+            options: ["The standard", "The surface, since the stone or plate remains workshop property after the run", "The copyright in the technical solutions developed during the collaboration", "The edition size, which the printer sets according to what the surface can bear"],
+            correctIndex: 0,
+            explanation: "An exact statement of who is responsible for what, expressed as a custom about who keeps which sheet.",
+            sourceLessonSlug: "the-bon-a-tirer",
+          },
+          {
+            prompt: "The hard part of editioning, according to this lesson, is:",
+            options: ["Making the fortieth sheet match the first", "Producing a single impression of exceptional beauty that the artist will accept", "Persuading the artist to approve a proof before the printing surface deteriorates", "Choosing a paper that will survive a century without discolouring or becoming brittle"],
+            correctIndex: 0,
+            explanation: "Across hours, as the stone dries differently, the ink stiffens, and the paper's moisture changes.",
+            sourceLessonSlug: "the-bon-a-tirer",
+          },
+          {
+            prompt: "Which of these changes during a long print run and threatens consistency?",
+            options: ["The paper's moisture", "The edition size, which the printer adjusts as impressions are rejected for faults", "The chop, which wears down and prints less deeply as more sheets are embossed", "The documentation sheet, which is amended each time a proof is set aside"],
+            correctIndex: 0,
+            explanation: "Along with the stone drying differently and the ink stiffening, which is why the bon a tirer must stay to hand.",
+            sourceLessonSlug: "the-bon-a-tirer",
+          },
+          {
+            prompt: "Why is consistency structurally hard to credit?",
+            options: ["Success looks like the absence of variation", "Because consistency is measured only after the edition has been dispersed to buyers", "Because it is the artist rather than the printer who defines what consistent means", "Because no workshop keeps records precise enough to demonstrate that it was achieved"],
+            correctIndex: 0,
+            explanation: "There is nothing to point at. Nobody looks at an edition and admires the fact that none of the impressions differ.",
+            sourceLessonSlug: "the-bon-a-tirer",
+          },
+          {
+            prompt: "Which other roles does this lesson name as hard to credit for the same reason?",
+            options: ["Colourist, mastering engineer, interpreter", "Curator, registrar and conservator, the three roles that handle a print after it is sold", "Publisher, dealer and auctioneer, who between them determine what an edition is worth", "Papermaker, ink manufacturer and press builder, who supply the printer's materials"],
+            correctIndex: 0,
+            explanation: "A film colourist, a mastering engineer and a simultaneous interpreter all succeed by making you notice nothing.",
+            sourceLessonSlug: "the-bon-a-tirer",
+          },
+          {
+            prompt: "The three forms the printer's credit takes are the chop, the documentation sheet, and:",
+            options: ["The bon a tirer", "The artist's proof, which is set aside for the printer at the end of the run", "The workshop's exhibition label, which lists everyone who worked on the project", "The archive impression retained by the university museum on the printer's behalf"],
+            correctIndex: 0,
+            explanation: "A wordless chop, a signature in an archive, and a single unsold proof kept in the shop.",
+            sourceLessonSlug: "the-bon-a-tirer",
+          },
+          {
+            prompt: "What do all three forms of the printer's credit have in common?",
+            options: ["None is legible to a viewer", "All three are applied only after the artist has approved the finished edition", "All three were introduced by Tamarind and are unknown outside American workshops", "All three are legally enforceable, unlike the artist's signature in the margin"],
+            correctIndex: 0,
+            explanation: "Which is not erasure. It is a credit system built for people inside the trade, opaque to everyone else.",
+            sourceLessonSlug: "the-bon-a-tirer",
+          },
+          {
+            prompt: "The course describes the printer's credit system as functioning:",
+            options: ["Perfectly, for insiders", "Badly, because workshops routinely fail to complete their own documentation", "Only since 1960, when the first such records were created anywhere in the world", "Identically to the author line, which also records contribution in an archive"],
+            correctIndex: 0,
+            explanation: "It works exactly as designed for people in the trade, and is completely opaque to everyone outside it.",
+            sourceLessonSlug: "the-bon-a-tirer",
+          },
+          {
+            prompt: "An \"artist's proof\" is:",
+            options: ["An impression outside the numbered edition", "The proof that sets the standard every other impression must be matched against", "A trial pull taken before the artist has approved any part of the image", "The impression the artist signs first, which then becomes number one of the edition"],
+            correctIndex: 0,
+            explanation: "Conventionally retained by the artist, and counted separately from the numbered edition.",
+            sourceLessonSlug: "the-bon-a-tirer",
+          },
+          {
+            prompt: "\"Editioning\" is the work of producing an edition in which every impression:",
+            options: ["Matches the agreed standard", "Carries the artist's signature and the workshop's chop in the correct positions", "Is documented individually on its own record before it leaves the workshop", "Differs slightly, so that each sheet is unique and can be priced accordingly"],
+            correctIndex: 0,
+            explanation: "Which is the discipline the bon a tirer exists to serve.",
+            sourceLessonSlug: "the-bon-a-tirer",
+          },
+          {
+            prompt: "The bon a tirer is described as:",
+            options: ["Not for sale and not numbered", "The most valuable impression in any edition, and therefore sold first", "Numbered as zero, so that it sits at the head of the sequence in a catalogue", "One of the three archive copies, and therefore not available to the printer at all"],
+            correctIndex: 0,
+            explanation: "And it does not belong to the artist. At Tamarind it is the printer's.",
+            sourceLessonSlug: "the-bon-a-tirer",
+          },
+          {
+            prompt: "The reason the printer keeps the bon a tirer is described as:",
+            options: ["Functional", "Ceremonial, marking the completion of the collaboration between the two parties", "Contractual, because workshop agreements require the printer to retain one impression", "Financial, since the proof is the printer's only compensation for the edition"],
+            correctIndex: 0,
+            explanation: "The printer needs the reference in hand while matching the rest of the run to it.",
+            sourceLessonSlug: "the-bon-a-tirer",
+          },
+          {
+            prompt: "Every section of this course after Section 2 is about people who did what?",
+            options: ["Built something outward facing", "Campaigned to change the signature convention through professional associations", "Documented their own contributions in workshop records for later researchers", "Refused to print for artists who would not credit them on the finished sheet"],
+            correctIndex: 0,
+            explanation: "Having understood that the printer's credit system is complete, functional, and invisible outside the trade.",
+            sourceLessonSlug: "the-bon-a-tirer",
+          },
+          {
+            prompt: "A chop may alternatively be applied how, rather than embossed?",
+            options: ["Stamped in ink on the back", "Written in pencil beside the artist's signature in the lower margin", "Printed as part of the image itself, using an additional run through the press", "Perforated through the sheet, in the manner of a library ownership mark"],
+            correctIndex: 0,
+            explanation: "Tamarind's definition allows for either an embossing or an ink stamp on the reverse.",
+            sourceLessonSlug: "the-chop-that-carries-no-name",
+          },
+          {
+            prompt: "June Wayne directed Tamarind during which years?",
+            options: ["1960 to 1970", "1948 to 1960, before handing the workshop to a university based successor", "1957 to 1963, the same span Robert Blackburn spent at Universal Limited Art Editions", "1970 to 1992, when the workshop's printer training programme reached its present form"],
+            correctIndex: 0,
+            explanation: "Clinton Adams became director in 1970 and re-established the workshop at the University of New Mexico.",
+            sourceLessonSlug: "the-chop-that-carries-no-name",
+          },
+          {
+            prompt: "Adams describes Tamarind's new practices as being adopted where?",
+            options: ["In most American workshops", "In European workshops first, and only later in the United States", "Nowhere else, since the practices depended on Tamarind's foundation funding", "In museums rather than workshops, as an accessioning rather than a printing standard"],
+            correctIndex: 0,
+            explanation: "Which is what turned one workshop's founding decision into a general convention of the American trade.",
+            sourceLessonSlug: "the-chop-that-carries-no-name",
+          },
+          {
+            prompt: "Wayne's crane comparison functions in this lesson as evidence that:",
+            options: ["The skill itself was nearly extinct", "The print market had collapsed and could not support professional workshops", "Lithography was technically obsolete and had been replaced by newer processes", "American artists had lost interest in editioned work in favour of unique objects"],
+            correctIndex: 0,
+            explanation: "There were no master printers in the United States able to work with the creative spectrum of the country's artists.",
+            sourceLessonSlug: "the-chop-that-carries-no-name",
+          },
+          {
+            prompt: "The section's overall finding about the printer's credit is that it was:",
+            options: ["Moved, not abolished", "Never created, because no workshop recorded who printed what before 1960", "Abolished deliberately by publishers who wanted a single name on each edition", "Left to the discretion of individual artists, some of whom credited their printers"],
+            correctIndex: 0,
+            explanation: "Moved to places the public does not read: a wordless chop, an archived sheet, and an unsold proof.",
+            sourceLessonSlug: "the-chop-that-carries-no-name",
+          },
+          {
+            prompt: "A viewer who wants to know who made a print will characteristically:",
+            options: ["Look at the print", "Request the edition's documentation from the workshop that published it", "Consult a published reference work mapping chop marks to individual printers", "Contact the archive holding the retained impressions and ask for the record"],
+            correctIndex: 0,
+            explanation: "Which is exactly why a credit that lives in an archive is functionally invisible however complete it is.",
+            sourceLessonSlug: "the-documentation-sheet",
+          },
+          {
+            prompt: "A \"registrar\", in the vocabulary of this section, is:",
+            options: ["The function that keeps records of what an object is", "The workshop employee who operates the press under the master printer's direction", "The official who assigns edition numbers to impressions as they are pulled", "The dealer who maintains the ownership history of a print as it changes hands"],
+            correctIndex: 0,
+            explanation: "And how it came to be, which is where a relocated credit typically ends up.",
+            sourceLessonSlug: "the-documentation-sheet",
+          },
+          {
+            prompt: "\"Invisible-when-successful\" describes expertise whose achievement is:",
+            options: ["The absence of variation", "So technically advanced that only other practitioners can evaluate it", "Recorded in a document that the general public has no right to consult", "Performed before the work is begun, so no trace of it survives in the object"],
+            correctIndex: 0,
+            explanation: "Which makes it structurally hard to credit, because there is nothing for an observer to point at.",
+            sourceLessonSlug: "the-bon-a-tirer",
+          },
+          {
+            prompt: "Tamarind's approach to editions was designed in contrast to earlier practices Adams calls:",
+            options: ["Loose and at times corrupt", "Undocumented, but honest, and adequate for the smaller editions of the period", "Legally sound but commercially naive, which is why the workshops did not survive", "European, and therefore unsuited to the scale of American artistic production"],
+            correctIndex: 0,
+            explanation: "His phrasing, and the stated reason for full documentation plus two chops on every proof or impression.",
+            sourceLessonSlug: "the-chop-that-carries-no-name",
+          },
+          {
+            prompt: "The documentation sheet travels with which part of the edition?",
+            options: ["The archive copy", "Each numbered impression, folded into the backing board when it is framed", "The bon a tirer, since that is the impression the record describes most precisely", "None of it, because the sheet is retained separately by the workshop's own office"],
+            correctIndex: 0,
+            explanation: "It follows the impressions retained for the archives, where anyone can in principle consult it and almost nobody ever does.",
+            sourceLessonSlug: "the-documentation-sheet",
+          },
+          {
+            prompt: "The claim that the printer is a signatory to the document defining the work means the printer is:",
+            options: ["Not merely credited in the archive", "Legally a co-author of the image for the purposes of copyright registration", "Entitled to a share of the proceeds from every impression that is later sold", "Able to veto the release of the edition if the artist's approval seems premature"],
+            correctIndex: 0,
+            explanation: "The printer signs the record that establishes what the edition actually is, which is a stronger position than being listed in it.",
+            sourceLessonSlug: "the-documentation-sheet",
+          },
+          {
+            prompt: "Which pairing correctly matches a credit form to where it is kept?",
+            options: ["Bon a tirer, kept in the shop", "Chop, kept in the university art museum archive alongside the retained impressions", "Documentation sheet, kept by the collector who buys the first numbered impression", "Artist's proof, kept by the printer as the reference standard for the whole run"],
+            correctIndex: 0,
+            explanation: "The chop is on the sheet, the documentation is in the archive, and the bon a tirer stays with the printer.",
+            sourceLessonSlug: "the-bon-a-tirer",
+          },
+        ],
+      },
+    },
   ],
 };
