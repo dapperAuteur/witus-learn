@@ -142,6 +142,53 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   \`pnpm audit:course who-signs-the-print --spec\`. Mapped to
   \`catalog.cited-primary-secondary-synthesis\` and \`catalog.test-a-historical-claim\` (CCSS
   RH.11-12.9 and RH.11-12.8). Deliberately **not** in \`STAGED_COURSES\` yet, matching CREDIT-00.
+- 🔧 **The Name on the Door** (\`content/credit-architecture\`, Culture & History, **CREDIT-03**; NO
+  migration, **re-run \`pnpm seed:courses\`**). The second **discipline** course in the CREDIT
+  series, from \`plans/future-courses/08-black-creator-series-research.md\` §6, which called the
+  Julian Abele myth-correction "a gift". **The spine: a building is credited to a FIRM, and a firm
+  is named after whoever owns it.** An employee designer appears nowhere the public can see, because
+  firm practice was that only the principal signed. **Licensure adds a second gate:** you cannot be
+  the architect of record without a licence, and the education and paid-experience steps behind that
+  licence run through admissions offices and hiring decisions.
+  **Kept honest the same way CREDIT-02 was.** The firm convention applied to every employee, and the
+  course proves it from its own sources rather than asserting it: Howell Lewis Shay led the
+  Philadelphia Museum of Art inside the Trumbauer office for years and is nobody's public credit
+  either, and the designer who finished **Irvine Auditorium** is so far outside the record that the
+  one colleague who remembered him could describe his face and not recall his name. So the racial
+  question is not who was robbed. It is **who got routed into permanent employee status, and what
+  licensure did on top of that**, and Section 2 answers it with dated numbers.
+  **The 1942 AIA application is the course's best single document.** Forty years into his career and
+  four years after taking over the office, Julian Abele could list as his own work only his sister's
+  house and the Duke buildings that followed Trumbauer's death. The **Cameron Indoor Stadium**
+  drawings are the earliest recorded to carry his name beside the firm's, and they date from after
+  the principal died: the convention ran out of a principal rather than bending.
+  **Verified then printed:** the 1909 promotion and the 1938 succession (Penn's University Archives
+  and Duke University Libraries), the no-signature practice and the 1942 application (Cohen/Hidden
+  City, with the year corroborated by Penn and Duke), the Cameron drawings (NCSU Libraries),
+  **Beverly Loraine Greene's Illinois licence of 28 December 1942 under certificate 3002** and
+  Sklarek's 1954/1959/1962/1980 firsts (Beverly Willis Architecture Foundation), and NCARB's **two
+  percent** (2024 data) quoted with NCARB's own Certificate-holder method note attached.
+  **Reported as contested:** 1909 against 1908 for the promotion; **1987 against 1988 against 1989**
+  for Duke's first portrait, where a single university's own pages disagree; whether Abele ever
+  visited Durham; and Irvine Auditorium, where Penn's website says yes and Dreck Wilson plus a 1983
+  archivist's letter say no. **Tested and refused:** the Ecole des Beaux-Arts attendance (Cohen and
+  Penn independently report no record), the sole-architect claim for the Philadelphia Museum of Art,
+  the internship-waiver account of John S. Chase's Texas licence, a year for Paul Revere Williams's
+  AIA membership, the upside-down drawing as a first-hand account, a live count from the Directory of
+  African American Architects, and the title of the 1974 book Cohen quotes but does not name. Six
+  open questions filed in \`src/lib/research-checks.ts\`.
+  **Women carry a third of the course and the record needed no padding:** Norma Merrick Sklarek
+  (twenty years as a project manager, LAX Terminal One credited to Welton Becket Associates),
+  Beverly Loraine Greene (whose UNESCO work is credited "Marcel Breuer, architect") and Georgia
+  Louise Harris Brown (structural calculations for 860 Lake Shore Drive, credited to Mies). The
+  course then says plainly that those three are close to the whole documented list before 1954, and
+  that **the thinness is the finding**.
+  6 sections, 18 teaching lessons, 6 section quizzes (60/61/64/60/70/72 serving 5) and a 43-question
+  final serving 10, for **430 pooled questions**, 52 reveal cards, and **zero findings** from
+  \`pnpm audit:course the-name-on-the-door --spec\`. Mapped to
+  \`catalog.cited-primary-secondary-synthesis\` and \`catalog.test-a-historical-claim\` (CCSS
+  RH.11-12.9 and RH.11-12.8, 30 standards across 15 jurisdictions). Deliberately **not** in
+  \`STAGED_COURSES\` yet, matching CREDIT-00 and CREDIT-02.
 - ✅ **The Editor of The Crisis** (\`content/didwork-jessie-fauset\`, Culture & History; NO
   migration, **re-run \`pnpm seed:courses\`**). **DIDWORK-S2**, the second course on the She Did the
   Work track after \`she-took-the-seat\` (S1), and the strongest single evidence case in it.
