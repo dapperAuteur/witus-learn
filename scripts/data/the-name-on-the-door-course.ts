@@ -1756,6 +1756,123 @@ University Archives and Records Center. (n.d.). *Julian Francis Abele*. Universi
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 4 — The myths, and why the documented version is better
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-servant-myth",
+      title: "13 · The servant myth",
+      section: "Section 4 · The myths, and why the documented version is better",
+      body: `A 1974 book about the great houses of Newport, Rhode Island contains this sentence, which Amy Cohen quotes and calls an absurd assertion:
+
+"The story goes that Trumbauer was frequently intoxicated, and so he left most of his work on these houses to be done by Julian Abele, his gifted black servant" (Cohen, 2019).
+
+**Take it apart, because one clause of it is true.** Trumbauer, Cohen writes, "was known to overindulge and eventually died of cirrhosis of the liver". So the drinking is real. Everything the sentence builds on top of the drinking is not.
+
+**Servant is the load bearing error.** Abele held three architectural qualifications, had worked professionally throughout his degree, and was the firm's chief designer. The man who employed him "never had formal training" (Cohen, 2019). Cohen's summary inverts the whole story in one line: "Thus, the extremely well-prepared Abele served as the firm's chief designer for decades."
+
+**Notice what the myth had to do to be told at all.** To make Abele responsible for the work, the teller had to remove Trumbauer from the room with a bottle, and to explain Abele's presence in the room he had to be a servant. The version of events on offer is one where the trained Black professional cannot simply be a trained Black professional doing the job he was hired for. He has to be a domestic who turned out to be gifted, filling in for a drunk. Nothing in that story requires anybody to admit that a firm hired the best designer available and paid him to design.
+
+**And here is the part that matters most for this course: some of the myths flatter him.** Cohen says so directly: "some of these Abele myths, it pains me to say, actually give Abele too much credit." The next lesson is entirely about those, and about how uncomfortable it is to correct a story downward when the person in it was genuinely wronged.
+
+**Cohen ends her article with a quotation from Carter G. Woodson** about the purpose of what became African American History Month, and this course takes it as a working rule: "There should be no indulgence in undue eulogy of the Negro. The case of the Negro is well taken care of when it is shown how he has influenced the development of civilization" (Woodson, as quoted in Cohen, 2019).
+
+**One point of method before you go on.** This course reports the 1974 book exactly as Cohen describes it: a 1974 book about elaborate Newport mansions. She does not name it, so neither does this course. Naming a book on inference, in order to make a citation look complete, is the same class of error as the myth itself.
+
+:::reveal Which clause of the "gifted black servant" sentence is factually supported, and which is not? ||| Trumbauer's drinking is supported, since Cohen records that he was known to overindulge and died of cirrhosis. The claim that Abele was his servant is not: Abele held three architectural qualifications and was the firm's chief designer.
+
+:::reveal What did the myth have to do to Trumbauer in order to give Abele the work? ||| Remove him from the room by making him drunk, because the story could not accommodate a trained Black professional simply doing the job he was hired to do.
+
+:::reveal Why does this course decline to name the 1974 book? ||| Because Cohen does not name it, and identifying it by inference to make a citation look complete would be the same class of error as the myth.
+
+## Vocabulary
+- **Undue eulogy**: Woodson's term for praise that exceeds the record, which this course treats as a failure rather than a kindness.
+- **Load bearing error**: the single false claim a myth cannot survive without, here the word servant.
+- **Flattering myth**: a false claim that increases rather than decreases a subject's standing, and which is therefore harder to correct.
+- **Citation by inference**: naming a source you have deduced rather than seen, which this course refuses.
+
+## Sources
+Cohen, A. (2019, May 23). *Unraveling myths about Philly's pioneering African American architect*. Hidden City Philadelphia. https://hiddencityphila.org/2019/05/unraveling-myths-about-phillys-pioneering-african-american-architect/`,
+    },
+    {
+      slug: "too-much-credit",
+      title: "14 · Too much credit",
+      section: "Section 4 · The myths, and why the documented version is better",
+      body: `Beginning in the 1970s and continuing through the 1990s, articles in Philadelphia's local African American press said that Julian Abele designed the Philadelphia Museum of Art. Cohen's verdict is that calling him the architect of the museum "is an oversimplification" (Cohen, 2019).
+
+**What the record actually holds.** The design and construction of the museum took decades and was, in Cohen's words, "a not always harmonious collaboration between the Trumbauer firm and the firm of Zantzinger and Borie". Drawing on research by the historian David Brownlee and by Abele's biographer Dreck Wilson, Cohen reports that Abele "certainly did numerous initial designs for the building", that "For a number of years, though, Howell Lewis Shay, another Trumbauer designer, took the lead within the firm", and that "Toward the end of the project, Abele stepped back in."
+
+**Then the sentence that costs something to write:** "Although he surely played a role in creating this glorious building, neither Abele, nor any one individual, deserves the singular title: architect of the Philadelphia Museum of Art" (Cohen, 2019).
+
+**The second over-claim is Irvine Auditorium at Penn.** The university's own website credits the building to Abele. Wilson disputes it, arguing that Abele's preferred material was limestone and that he would not have designed a red brick building. The 1983 letter from Penn archivist Francis James Dallet, summarising his interview with the former Trumbauer employee Valentine Burkhart Lee, is more specific still: Lee "remembers specifically that the finished design was one of the few big commissions not finished by Abele", and that it went to an older man from the City Architect's office (Cohen, 2019).
+
+**Both of these corrections reduce what Abele is credited with, and both were made by people working to secure his reputation.** That combination is the thing to take away. A historian who spent years establishing that a Black architect's work had been systematically unrecorded then published an article whose largest section takes two buildings away from him. That is what a correction looks like when the person making it is loyal to the record rather than to the story.
+
+**The practical reason to do it that way is that an over-claim is a hostage.** Say publicly that Abele designed the Philadelphia Museum of Art and you have handed anyone who wants to dismiss the subject a citation to Brownlee, a name to raise, and a reason to treat the rest of your account as advocacy. The 1942 AIA application is unassailable. "He designed the museum" is not, and if the two travel together, the second one drags the first down.
+
+**The general test, which this course keeps reusing.** Before you print a claim, ask what a well informed opponent would say. If the answer is a specific correction with a source behind it, you do not have a claim yet. You have a liability.
+
+:::reveal What is Cohen's verdict on the claim that Abele was the architect of the Philadelphia Museum of Art? ||| That it is an oversimplification, and that neither Abele nor any one individual deserves the singular title, because the building was a decades-long collaboration between two firms.
+
+:::reveal Who took the lead on the museum inside the Trumbauer firm for a number of years? ||| Howell Lewis Shay, another Trumbauer designer, with Abele doing numerous initial designs and stepping back in toward the end.
+
+:::reveal Why is an over-claim described here as a hostage? ||| Because a well informed opponent can correct it with a source, and when it falls it drags the verified claims standing next to it down too.
+
+## Vocabulary
+- **Over-claim**: a credit larger than the evidence supports, which is a liability rather than an asset to the case it is meant to help.
+- **Zantzinger and Borie**: the second architectural firm on the Philadelphia Museum of Art, whose collaboration with Trumbauer's office ran for decades.
+- **Singular title**: the framing this course rejects, in which one building has exactly one architect regardless of how it was produced.
+- **Loyal to the record**: correcting a claim downward when the evidence requires it, even about a person you are working to establish.
+
+## Sources
+Cohen, A. (2019, May 23). *Unraveling myths about Philly's pioneering African American architect*. Hidden City Philadelphia. https://hiddencityphila.org/2019/05/unraveling-myths-about-phillys-pioneering-african-american-architect/`,
+    },
+    {
+      slug: "the-school-that-is-not-there",
+      title: "15 · The school that is not there, and the trip nobody can settle",
+      section: "Section 4 · The myths, and why the documented version is better",
+      body: `The most repeated fact about Julian Abele's training has no record behind it.
+
+**The story, as a 1975 book tells it.** Cohen quotes *Twilight of Splendor*: "Trumbauer ... made arrangements for him to take the entrance examination in Paris that fall. Abele passed. He then spent the next four years as a student in the ateliers of the school, supported entirely by Trumbauer. One may assume that Trumbauer enjoyed some measure of paternal gratification when Able was awarded the B.S. diplome d'architecte in the winter of 1905-1906."
+
+**The correction, from two institutions independently.** Cohen: "there is no record of Abele ever attending, much less graduating from, the Ecole des Beaux Arts." The University of Pennsylvania's archives, writing about their own graduate, say the same thing without prompting: "There is no record of his study at l'Ecole des Beaux-Arts in Paris, which is sometimes reported, although French architecture would be his lifelong passion" (University Archives and Records Center, n.d.).
+
+**Two separate institutions reporting an absence is about as strong as an absence gets.** It is not proof that he never attended. It is the reason nobody may print that he did.
+
+**What is true, and is easy to confuse with it.** Abele did spend time in Paris. He was an avid Francophile and married a French woman. Penn's archives record that he "immersed himself in the Beaux Arts style as a student and remained committed to this system of architecture". A style is not a school. He worked in the manner the school taught, which he could learn at Penn, whose own architecture teaching was built on it.
+
+**Cohen offers one explanation and labels it as a guess:** "Perhaps Trumbauer and Abele, each for their own reasons, were happy to maintain the story of the former's generosity and the latter's virtuosity." Perhaps. That word is doing exactly the work it should.
+
+**The second unsettled question is whether Abele ever visited Duke.** Here both sides have something:
+
+- **For a visit.** A 2005 Smithsonian article by Susan Tifft reports that in the early 1960s John H. Wheeler, a prominent Black banker in Durham, told George Esser, then executive director of the North Carolina Fund, that he recalled Abele visiting the campus during construction; and that in a 1989 interview Henry Magaziner, son of Abele's friend and Penn classmate Louis Magaziner, recalled Abele telling him that a Durham hotel had refused him a room during a trip to the university while accommodating his white associate (Cohen, 2019).
+- **Against a visit.** Abele's family says he would not travel to the segregated South, having decided after a Jim Crow railway journey years earlier never to suffer that again. His colleague Valentine Lee, who himself travelled repeatedly between Philadelphia and Durham, said of Abele that "his talents were needed and best utilized in the home office" (Cohen, 2019).
+
+**Every institution that has looked at it declines to close it.** Cohen gives her own view and flags it as a view: "My hunch is that Abele did not take the risk of visiting a place where he would be unwelcome and treated poorly, but the mystery remains unresolved." Duke University Libraries writes that it is generally accepted he did not travel to Durham or the segregated South, while noting that some evidence exists to suggest he may have visited. The NCSU dictionary concludes that with no significant personal papers or firm records extant, the question appears unanswerable.
+
+A hunch labelled as a hunch is honest. A hunch printed as a fact is how the servant story got started.
+
+:::reveal What do Cohen and Penn's archives independently say about the claim that Abele studied at the Ecole des Beaux-Arts? ||| That there is no record of it. Cohen says no record of him ever attending or graduating, and Penn says there is no record of his study there, though it is sometimes reported.
+
+:::reveal What is true about Abele and France, and why is it easy to confuse with the school claim? ||| He spent time in Paris, was an avid Francophile and married a French woman, and he worked in the Beaux Arts style, which he was taught at Penn. A style is not a school.
+
+:::reveal Name one piece of evidence on each side of the question of whether Abele visited Durham. ||| For: a 2005 Smithsonian article reports two second-hand accounts, one from a Durham banker and one from a friend's son. Against: his family said he would not travel to the segregated South, and his colleague Valentine Lee said his talents were best used in the home office.
+
+## Vocabulary
+- **Absence of record**: two independent institutions reporting that no evidence exists, which is the strongest form an absence takes and still not proof of a negative.
+- **Beaux Arts style**: the system of architectural composition Abele was taught and worked in, which is separate from attendance at the Paris school of that name.
+- **Second-hand account**: testimony recorded from someone repeating what another person said, which is evidence and is not a record.
+- **Labelled guess**: an inference published with a word like perhaps or hunch attached, which is how an honest writer keeps speculation out of the factual record.
+
+## Sources
+Cohen, A. (2019, May 23). *Unraveling myths about Philly's pioneering African American architect*. Hidden City Philadelphia. https://hiddencityphila.org/2019/05/unraveling-myths-about-phillys-pioneering-african-american-architect/
+
+Duke University Libraries. (n.d.). *Julian Abele (1881-1950)*. Duke University. https://library.duke.edu/rubenstein/uarchives/history/articles/abele
+
+North Carolina Architects and Builders. (n.d.). *Abele, Julian Francis (1881-1950)*. NCSU Libraries. https://ncarchitects.lib.ncsu.edu/people/P000277
+
+University Archives and Records Center. (n.d.). *Julian Francis Abele*. University of Pennsylvania. https://archives.upenn.edu/exhibits/penn-people/biography/julian-francis-abele/`,
+    },
     // APPEND-HERE
   ],
 };
