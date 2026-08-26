@@ -19,6 +19,15 @@ import {
   revokeCourseAuditor,
 } from "@/db/queries/course-auditors";
 import {
+  countCourseInterestByCapacity,
+  countPendingCourseInterest,
+  decideCourseInterest,
+  getCourseInterest,
+  listCourseInterest,
+  upsertCourseInterest,
+} from "@/db/queries/course-interest";
+import type { NormalizedInterestInput } from "@/lib/course-interest";
+import {
   getMediaAsset,
   listMediaAssets,
   setMediaAssetStatus,
@@ -215,6 +224,51 @@ export class ScopedDb {
   /** Is this person an ACCEPTED auditor of this course, in this tenant? */
   isCourseAuditor(input: { courseId: string; userId: string | null; email: string | null }) {
     return isCourseAuditor({ tenantId: this.tenantId, ...input });
+  }
+
+  // ── Self-nominated course interest (the public "I want to help" form) ──────
+  // REQUESTS, never grants. A row here opens nothing until a human approves it, and approval mints
+  // the EXISTING auditor grant above rather than a second mechanism (src/lib/course-interest.ts).
+  // Every method bakes in tenant_id, so no route can read a stranger's phone number or credentials,
+  // or decide a request, outside its own school.
+
+  /** Every request on one of THIS tenant's courses. Carries PII: owner-gate the caller. */
+  listCourseInterest(courseId: string) {
+    return listCourseInterest(this.tenantId, courseId);
+  }
+
+  /** One request, or undefined for an id that is not this tenant's (the route then 404s). */
+  getCourseInterest(courseId: string, requestId: string) {
+    return getCourseInterest(this.tenantId, courseId, requestId);
+  }
+
+  /** Record a self-nomination. Always lands as `pending`; status is never taken from a body. */
+  addCourseInterest(input: {
+    courseId: string;
+    userId: string | null;
+    request: NormalizedInterestInput;
+  }) {
+    return upsertCourseInterest({ tenantId: this.tenantId, ...input });
+  }
+
+  /** Approve or decline. An id from another school updates nothing and returns undefined. */
+  decideCourseInterest(input: {
+    courseId: string;
+    requestId: string;
+    status: "approved" | "declined";
+    decidedBy: string;
+  }) {
+    return decideCourseInterest({ tenantId: this.tenantId, ...input });
+  }
+
+  /** How many requests on this course still need a human. For the /teach panel heading. */
+  countPendingCourseInterest(courseId: string) {
+    return countPendingCourseInterest(this.tenantId, courseId);
+  }
+
+  /** learner / beta / expert tallies for one course. */
+  countCourseInterestByCapacity(courseId: string) {
+    return countCourseInterestByCapacity(this.tenantId, courseId);
   }
 
   // ── Media verification (/admin/media) ──────────────────────────────────────

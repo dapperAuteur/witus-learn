@@ -5,6 +5,45 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- ✅ **Self-nominated course interest, and vetting by volunteers**
+  (\`feat/course-interest-and-vetting\`, **migration 0059**, run \`pnpm db:migrate:prod\`). Invite-to-audit
+  had one direction: the owner invites someone they trust. This is the other one. On an unvetted
+  course's public "Coming soon" page, under the notify-me box, a visitor can put their hand up in one
+  of three capacities: **take** the course when it opens, **test** it before it opens, or **vet** it
+  as a **subject matter expert**, with an optional phone number and an optional few lines of
+  background.
+  **The load-bearing decision is that a self-nomination is a REQUEST, not access.** A
+  \`course_interest_requests\` row lands \`pending\` and grants nothing at all. Only a human decision on
+  the course's own \`/teach\` page turns a beta/expert request into the **existing**
+  \`course_auditors\` grant, minted through the **existing** invite path, so there is no second grant
+  mechanism to audit and the grant's own rules (one course, one tenant, read-only, and a pending
+  invite still opening nothing) apply unchanged. If anyone on the internet could type "I am an
+  expert" and be handed a grant that opens a closed course, the grant would be worth nothing.
+  Approving an interested learner mints **nothing** (they asked to be told when it opens, not to read
+  it early), and **no capacity ever auto-enrolls anybody**: a tester counted as a learner would
+  corrupt exactly the statistics the quiz-integrity rule protects. One permission gate,
+  \`src/lib/course-reviewers.ts\`, now guards inviting, revoking **and** approving, so widening one
+  widens all three; the auditors suite asserts it at the definition instead of once per route.
+  **Signed-out visitors may submit**, because a subject matter expert has no reason to hold an
+  account on a school whose course they were asked to check. So the route is treated as hostile the
+  way \`/api/course-notify\` already is: tenant from the request host, server-side Zod with hard
+  length caps, a honeypot, a per-IP **and** a per-address sliding window, a unique key on
+  (tenant, course, email) so a re-submit updates one row, and an acknowledgement identical whatever
+  happened, so it cannot be used to probe whether an address has applied or been declined. A decided
+  row is never reopened by re-submitting.
+  **PII is owner-only and structurally contained.** Phone and background live in their own table
+  rather than in \`leads.inquiries\` precisely because \`leads\` feeds the CSV export and the campaign
+  audience; they are serialized in exactly one function, rendered on exactly one login-gated panel,
+  and appear on no public page, no OG card, the sitemap, or any email. Every submission does notify
+  the WitUS Inbox (\`learn-course-interest:<capacity>\`, so all three read apart at a glance), carrying
+  who, which capacity, which course, \`phone_provided\`/\`credentials_provided\` booleans and a link
+  back to the owner's panel, **never the values**; the row is written before the notification, so a
+  failed or unconfigured webhook cannot lose a signup. The form says all of this in visible copy, and
+  the isolation suite pins the sentences.
+  **Phone is international**: no country assumed and none preselected, no parsing dependency added,
+  and a deliberately loose normaliser that stores E.164 alongside exactly what was typed. The single
+  rejection is a non-empty phone field with no digits in it, because a strict pattern here silently
+  refuses real people. 32 new isolation tests.
 - ✅ **Observability verification harness** (\`feat/verify-observability-harness\`; no migration, tooling
   only). \`pnpm verify:observability <url>\` asks one question about a DEPLOYED site: can it actually
   report its own errors, or is it dropping them silently? Four read-only checks, GET requests only,

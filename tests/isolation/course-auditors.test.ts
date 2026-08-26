@@ -252,12 +252,23 @@ describe("the grant is tenant-scoped end to end", () => {
   });
 
   it("the manage endpoints are owner / course-instructor / tenant-admin only", () => {
+    // The gate moved into src/lib/course-reviewers.ts when self-nomination shipped, because
+    // approving a self-nominated reviewer mints exactly this grant and the two paths must not
+    // drift apart. Same three identities, now asserted once at the definition and once per route.
+    const gate = src("src/lib/course-reviewers.ts");
+    expect(gate).toContain("session.user.id === instructorId");
+    expect(gate).toContain("isPlatformOwner");
+    expect(gate).toContain("isTenantAdmin");
+
     const route = src("src/app/api/courses/[id]/auditors/route.ts");
-    expect(route).toContain("canManageAuditors");
+    expect(route).toContain("canManageCourseReviewers");
     expect(route).toContain("sdb.getCourseById(id)");
-    expect(route).toContain("isPlatformOwner");
-    expect(route).toContain("isTenantAdmin");
     expect(route).toContain('errorJson("Forbidden", 403)');
+
+    // Revoking is the same privilege as granting, so it reads the same gate.
+    const revoke = src("src/app/api/courses/[id]/auditors/[auditorId]/route.ts");
+    expect(revoke).toContain("canManageCourseReviewers");
+    expect(revoke).toContain('errorJson("Forbidden", 403)');
     // The live token is a bearer credential: minted once, never re-listed. (Comments are stripped
     // first: the code must not READ a.token, but it is welcome to explain why.)
     const listFn = route

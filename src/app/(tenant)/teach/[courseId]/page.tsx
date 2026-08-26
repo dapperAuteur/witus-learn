@@ -16,6 +16,8 @@ import { CourseSettingsForm } from "@/components/course-settings-form";
 import { LessonsManager } from "@/components/lessons-manager";
 import { LinkUsagePanel } from "@/components/link-usage-panel";
 import { CourseAuditorsPanel } from "@/components/course-auditors-panel";
+import { CourseInterestPanel } from "@/components/course-interest-panel";
+import { serializeForOwner } from "@/lib/course-interest";
 
 export const metadata: Metadata = { title: "Manage course" };
 
@@ -46,6 +48,7 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
     modules,
     waiting,
     auditors,
+    interest,
     enrolledNow,
   ] = await Promise.all([
       listLessons(courseId),
@@ -59,6 +62,11 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
       isUnvetted(course) ? countCourseNotifySignups(sdb.tenantId, courseId) : Promise.resolve(0),
       // Invite-to-audit grants (plans/52 section 5), read through the tenant-scoped DAL.
       sdb.listCourseAuditors(courseId),
+      // Self-nominations. Carries the volunteered phone numbers and backgrounds, which is why it is
+      // read only here: this page is already gated to the owner / this course's instructor / a
+      // tenant admin by the canEditCourse check above, and the rows go through serializeForOwner,
+      // which re-checks the tenant on every one of them.
+      sdb.listCourseInterest(courseId),
       // Active enrollments, shown in the price-change confirmation: the number of learners a
       // free-to-paid switch is being made in front of.
       countActiveEnrollments(courseId),
@@ -198,6 +206,14 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             </p>
           )}
         </section>
+
+        <CourseInterestPanel
+          courseId={course.id}
+          isUnvetted={isUnvetted(course)}
+          initial={interest
+            .map((r) => serializeForOwner(r, sdb.tenantId))
+            .filter((r): r is NonNullable<typeof r> => r !== null)}
+        />
 
         <CourseAuditorsPanel
           courseId={course.id}
