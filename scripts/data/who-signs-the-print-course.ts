@@ -1540,5 +1540,505 @@ Robert Blackburn Printmaking Workshop. (n.d.). *History*. Elizabeth Foundation f
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 4 — The response: build the room
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "build-the-room",
+      title: "13 · Build the room",
+      section: "Section 4 · Three things built instead",
+      body: `You cannot argue your way onto the front of somebody else's print. Blackburn did not try. He built the place the prints get made.
+
+**What the workshop was.** From 1963 he ran his own Manhattan shop full time, providing an open graphics studio for artists of diverse social and economic backgrounds, ethnicities, styles and levels of expertise (Library of Congress, 2003c). The Library of Congress describes it as "renowned for its open, informal, and accommodating atmosphere", and says that through it Blackburn "has been teacher and friend to thousands of artists as master printer, technical advisor, fund raiser, diplomat, catalyst, and instigator" (Library of Congress, 2003d).
+
+**Where the design came from.** Recall the sentence from Section 3: the Harlem Community Art Center, the free WPA programme where Blackburn learned lithography, "became a model for Blackburn's own workshop years later" (Library of Congress, 2003a). The response to the convention was to reproduce the institution that had let him in.
+
+**What incorporation did.** In 1971 the Printmaking Workshop became a non-profit corporation with four stated purposes: to maintain creative and artistic quality, to support and encourage innovation, to create opportunities for Third World and minority artists, and to foster public appreciation of the fine art print (Library of Congress, 2003d). Read that as a credit strategy and it is a precise one. It does not ask the convention to name printers. It changes who gets to be the artist.
+
+**What the response eventually collected.** In 1992 Blackburn received a MacArthur Fellowship as "an educator and a printmaker" who "provided generations of artists with the chance to develop their talents" (MacArthur Foundation, 1992). Note what that citation names. Not the seventy-nine ULAE editions. The room.
+
+**And the room outlived him.** The EFA Robert Blackburn Printmaking Workshop opened in 2005 as a programme of the Elizabeth Foundation for the Arts, a cooperative print workspace continuing his model of affordable access (Robert Blackburn Printmaking Workshop, n.d.).
+
+**The general lesson.** A credit convention that cannot be argued with can still be routed around, and building infrastructure is the durable route. Infrastructure accumulates institutional memory, which is the fourth currency in CREDIT-00 and the only one that keeps paying out after the person stops working.
+
+:::reveal What did the Library of Congress say the Harlem Community Art Center became for Blackburn, and why does that matter here? ||| A model for his own workshop years later. His response to the convention was to reproduce the institution that had first let him in.
+
+:::reveal What did Blackburn's MacArthur Fellowship citation name him for? ||| Being an educator and printmaker who gave generations of artists the chance to develop their talents. It named the room, not the seventy-nine ULAE editions.
+
+## Vocabulary
+- **Open workshop**: a print studio offering access to artists regardless of background, expertise or means, which is the model Blackburn built and the EFA continues.
+- **Non-profit incorporation**: the 1971 step that fixed the workshop's four purposes in a legal document rather than leaving them as a founder's habit.
+- **Routing around a convention**: responding to an unchangeable credit rule by building something it does not govern, instead of contesting the rule itself.
+- **Institutional memory**: from CREDIT-00, the currency of buildings, prizes and programmes, which continues paying out after a person stops working.
+
+## Sources
+Library of Congress. (2003a). *Milieu: The Harlem Community Art Center and the WPA*. In *Creative space: Fifty years of Robert Blackburn's Printmaking Workshop* [Exhibition]. https://www.loc.gov/exhibits/blackburn/blackburn-milieu.html
+
+Library of Congress. (2003c). *A graphics explosion*. In *Creative space: Fifty years of Robert Blackburn's Printmaking Workshop* [Exhibition]. https://www.loc.gov/exhibits/blackburn/blackburn-graphics.html
+
+Library of Congress. (2003d). *Overview*. In *Creative space: Fifty years of Robert Blackburn's Printmaking Workshop* [Exhibition]. https://www.loc.gov/exhibits/blackburn/blackburn-overview.html
+
+MacArthur Foundation. (1992). *Robert H. Blackburn*. https://www.macfound.org/fellows/class-of-1992/robert-h-blackburn
+
+Robert Blackburn Printmaking Workshop. (n.d.). *History*. Elizabeth Foundation for the Arts. https://www.rbpmw-efanyc.org/about`,
+    },
+    {
+      slug: "write-it-into-the-statutes",
+      title: "14 · Write it into the statutes",
+      section: "Section 4 · Three things built instead",
+      body: `Elizabeth Catlett's answer to the same problem was structural in a stricter sense. She joined a workshop whose founding rules had already redefined authorship.
+
+**The workshop.** The Taller de Grafica Popular, the People's Graphic Arts Workshop in Mexico City, was established in 1937 by Leopoldo Mendez, Luis Arenal and Pablo O'Higgins. Catlett went to Mexico City in 1946, and produced her series of fifteen linocuts titled The Negro Woman there, dated 1947 and later retitled The Black Woman (Pennsylvania Academy of the Fine Arts, n.d.).
+
+**Now read the constitution.** The workshop's foundational statutes permitted, in the words of the art historian Natalia de la Rosa, "both individual as well as collective authorship, a distribution of copies among the members, as well as quotas, profits, rules and regulations" (de la Rosa, 2021). That single clause is the answer this lesson exists to show you. A print convention that recognises only one author per sheet is a default, not a law of nature, and a workshop is free to write a different one into its own rules.
+
+**And the working method matched the rules.** O'Higgins described the reasoning: "Our main interest is contact with the people and popular organizations. We would not achieve this without collective work, work that includes discussion, criticism, and self-criticism" (quoted in de la Rosa, 2021). Members criticised each other's work in progress. Catlett took part in the workshop's Graphic Assembly discussions in 1954, and later supported the founding of the National Union of Mexican Women in 1964 (de la Rosa, 2021).
+
+**Compare the two responses so far.** Blackburn built a room that let more people become the named artist, leaving the naming convention itself untouched. The Taller changed the naming convention inside its own walls, by statute, before anyone arrived. Both work. They are different levers: one is access, the other is rules.
+
+**The linocut choice is part of the answer too.** Linoleum is cheap, needs no press bed the size of a lithographic stone, and a relief block can be cut and printed with minimal equipment. A medium with a low entry cost is a medium a collective can actually run, and Section 5 develops that argument in full.
+
+**The honest limit.** Collective authorship solves the credit question for the people inside the collective. It does nothing for a technician working in a shop that has not adopted it, which is most shops. A rule you write for yourself binds only you.
+
+:::reveal What did the Taller de Grafica Popular's foundational statutes permit that a conventional print shop does not? ||| Both individual and collective authorship, along with a distribution of copies among members, quotas, profits, and rules and regulations.
+
+:::reveal How do Blackburn's response and the Taller's response differ as levers? ||| Blackburn built access, letting more people become the named artist while leaving the convention intact. The Taller changed the rule itself, by statute, inside its own walls.
+
+:::reveal What is the honest limit of the collective answer? ||| It solves the credit question only for people inside the collective. A rule a workshop writes for itself binds only that workshop, and most shops have not adopted it.
+
+## Vocabulary
+- **Taller de Grafica Popular**: the People's Graphic Arts Workshop founded in Mexico City in 1937, whose statutes permitted collective as well as individual authorship.
+- **Collective authorship**: a credit rule under which a work is attributed to the group rather than to a single named maker.
+- **Linocut**: a relief print cut into linoleum, cheap in materials and equipment, which is what makes it workable for a collective.
+- **The Negro Woman**: Catlett's series of fifteen linocuts made at the Taller, dated 1947 and later retitled The Black Woman.
+
+## Sources
+de la Rosa, N. (2021, November 11). *The Taller de Grafica Popular: Collectivity, popular prints and transient muralism*. Afterall. https://www.afterall.org/articles/the-taller-de-grafica-popular-collectivity-popular-prints-and-transient-muralism/
+
+Pennsylvania Academy of the Fine Arts. (n.d.). *Elizabeth Catlett, I am the Negro Woman (1947)*. https://www.pafa.org/museum/collection/item/i-am-negro-woman`,
+    },
+    {
+      slug: "found-the-museum",
+      title: "15 · Found the museum",
+      section: "Section 4 · Three things built instead",
+      body: `The third response goes after the currency that outlasts all the others. Margaret Taylor-Burroughs was a printmaker who worked for decades in linoleum block, and she built an institution to hold the record.
+
+**She had already done it once.** The South Side Community Art Center in Chicago was formally established in 1940 with funds from the Works Progress Administration, by artists including Burroughs, Eldzier Cortor, Bernard Goss, Charles White, William Carter, Joseph Kersey and Archibald Motley, who were members of the Arts Craft Guild and organised themselves to pursue funding (South Side Community Art Center, n.d.). The centre notes that of more than a hundred community art centres the WPA established, it is the only one that remains open.
+
+**Then she did it again, in her own house.** The museum now called the DuSable Black History Museum and Education Center was founded in 1961 by Dr. Margaret Taylor Burroughs and Charles Burroughs on the ground floor of their home on Chicago's South Side, under the name the Ebony Museum of Negro History and Art. The museum describes itself as the nation's first independent museum celebrating Black culture, and records Burroughs's pride that it was "the only one that grew out of the indigenous Black community" (DuSable Black History Museum and Education Center, n.d.).
+
+**Why a museum is the strongest of the three answers, and also the slowest.** CREDIT-00 defines institutional memory as the currency of the building, the prize, the plaque, the thing a stranger encounters fifty years later without anyone explaining it. A workshop makes new named artists. A collective rewrites the rule for its own members. A museum decides what future strangers will find, which is the only one of the three that keeps operating after everyone involved is dead. It is also the one that takes decades to pay, requires continuous funding, and dies quietly if either fails.
+
+**The pattern across all three responses.** Notice that none of these people spent their effort arguing that the print signature convention should be amended. Each of them built a thing that the convention does not govern: a room, a rule, an archive. That is what people do when a format cap is not negotiable, and it is a far better predictor of what you will find in the record than any story about protest.
+
+**The WPA thread, which is the quiet argument of this whole section.** Blackburn learned lithography at a WPA sponsored art centre in Harlem. Burroughs and Charles White helped found one in Chicago with WPA money. Public arts funding did not name anybody on a print. It put the people in this course in rooms where the medium was available, which is a different and more durable kind of credit.
+
+:::reveal What was the DuSable Museum originally called, who founded it, when, and where? ||| The Ebony Museum of Negro History and Art, founded in 1961 by Dr. Margaret Taylor Burroughs and Charles Burroughs on the ground floor of their home on Chicago's South Side.
+
+:::reveal Why is founding a museum both the strongest and the slowest of the three responses in this section? ||| It decides what strangers find long after everyone involved is dead, which no workshop or collective rule does. But it takes decades to pay, needs continuous funding, and fails quietly if the funding stops.
+
+:::reveal What does the South Side Community Art Center say distinguishes it among WPA community art centres? ||| Of more than a hundred the Works Progress Administration established, it is the only one that remains open.
+
+## Vocabulary
+- **South Side Community Art Center**: the Chicago art centre established in 1940 with WPA funds by a group including Burroughs and Charles White, and the only WPA community art centre still open.
+- **Ebony Museum of Negro History and Art**: the original name of the institution founded by the Burroughses in 1961, now the DuSable Black History Museum and Education Center.
+- **Arts Craft Guild**: the Chicago artists' group whose members organised the funding effort behind the South Side Community Art Center.
+- **Durable credit**: recognition lodged in an institution rather than on an object, which continues to operate after its founders stop working.
+
+## Sources
+DuSable Black History Museum and Education Center. (n.d.). *About us*. https://dusablemuseum.org/about-us/
+
+South Side Community Art Center. (n.d.). *Building legacy*. https://sscartcenter.org/about-us/building-legacy/`,
+    },
+    {
+      slug: "quiz-things-built-instead",
+      title: "16 · Knowledge check: room, rule, archive",
+      section: "Section 4 · Three things built instead",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "Blackburn's response to the signature convention was to:",
+            options: ["Build the place the prints get made", "Campaign for a rule change through the professional bodies of the American print trade", "Refuse further commissions until publishers agreed to print his name on the sheet", "Publish a written account of his ULAE work so the record would exist somewhere"],
+            correctIndex: 0,
+            explanation: "You cannot argue your way onto the front of somebody else's print, so he did not try.",
+            sourceLessonSlug: "build-the-room",
+          },
+          {
+            prompt: "From 1963, Blackburn's Manhattan shop offered access to artists of diverse:",
+            options: ["Backgrounds, ethnicities, styles and expertise", "Nationalities, provided they held a formal qualification in a printmaking medium", "Disciplines, but only those already represented by a New York commercial gallery", "Ages, as part of a youth programme funded by the city's arts department"],
+            correctIndex: 0,
+            explanation: "The Library of Congress records exactly that range: social and economic backgrounds, ethnicities, styles and levels of expertise.",
+            sourceLessonSlug: "build-the-room",
+          },
+          {
+            prompt: "The Library of Congress calls the Printmaking Workshop renowned for its:",
+            options: ["Open, informal and accommodating atmosphere", "Technical rigour, which exceeded the standards of every commercial workshop of its era", "Archive of documentation sheets, which recorded every edition it produced from 1948", "Financial independence, since it never accepted grant funding from any outside body"],
+            correctIndex: 0,
+            explanation: "The same passage calls Blackburn teacher and friend to thousands of artists.",
+            sourceLessonSlug: "build-the-room",
+          },
+          {
+            prompt: "Which roles does the Library of Congress list Blackburn as playing at the workshop?",
+            options: ["Master printer, advisor, fund raiser, diplomat, catalyst, instigator", "Director, curator, registrar and archivist, in the manner of a small museum staff", "Publisher, dealer and agent for the artists whose editions the workshop issued", "Instructor and examiner, certifying printers on completion of an apprenticeship"],
+            correctIndex: 0,
+            explanation: "Technical advisor is the second in that list, and the point of the list is how little of it is printing.",
+            sourceLessonSlug: "build-the-room",
+          },
+          {
+            prompt: "The model for Blackburn's own workshop was:",
+            options: ["The Harlem Community Art Center", "Universal Limited Art Editions, where he had spent six years as master printer", "The Taller de Grafica Popular, which he had visited during his fellowship in Europe", "Tamarind, whose documentation practices he adopted after it opened in 1960"],
+            correctIndex: 0,
+            explanation: "The free WPA programme where he learned lithography. His response was to reproduce the institution that let him in.",
+            sourceLessonSlug: "build-the-room",
+          },
+          {
+            prompt: "The 1971 incorporation is best read as a credit strategy because it:",
+            options: ["Changes who gets to be the artist", "Requires the workshop to print the name of its master printer on every edition", "Transfers ownership of the workshop's archive to a public institution for safekeeping", "Establishes a certification that would let printers claim professional standing elsewhere"],
+            correctIndex: 0,
+            explanation: "It does not ask the convention to name printers. It creates opportunities for people to occupy the named role.",
+            sourceLessonSlug: "build-the-room",
+          },
+          {
+            prompt: "In what year did Blackburn receive a MacArthur Fellowship?",
+            options: ["1992", "1971, the year the Printmaking Workshop became a non-profit corporation", "2003, the year of his death and of the Library of Congress exhibition", "1957, when he was appointed first master printer at Universal Limited Art Editions"],
+            correctIndex: 0,
+            explanation: "The foundation describes him as an educator and a printmaker.",
+            sourceLessonSlug: "build-the-room",
+          },
+          {
+            prompt: "The MacArthur citation credits Blackburn with:",
+            options: ["Giving generations of artists the chance to develop", "Printing the first seventy-nine editions published by Universal Limited Art Editions", "Inventing the documentation practices later adopted across American workshops", "Establishing the first certification programme for professional collaborative printers"],
+            correctIndex: 0,
+            explanation: "It names the room, not the ULAE editions, which is the point of the lesson.",
+            sourceLessonSlug: "build-the-room",
+          },
+          {
+            prompt: "The EFA Robert Blackburn Printmaking Workshop opened in:",
+            options: ["2005", "1971, at the moment the original workshop incorporated as a non-profit", "1948, which the Library of Congress gives as the original founding year", "2003, immediately after Blackburn's death, as a memorial to his teaching"],
+            correctIndex: 0,
+            explanation: "As a programme of the Elizabeth Foundation for the Arts, continuing the model of affordable cooperative access.",
+            sourceLessonSlug: "build-the-room",
+          },
+          {
+            prompt: "The general lesson of this response is that an unarguable convention can still be:",
+            options: ["Routed around", "Repealed, if enough practitioners in a medium petition together for the change", "Ignored, since no institution actually enforces the print signature convention", "Reversed in law, which is what the 1971 incorporation was designed to achieve"],
+            correctIndex: 0,
+            explanation: "Building infrastructure is the durable route, because infrastructure accumulates institutional memory.",
+            sourceLessonSlug: "build-the-room",
+          },
+          {
+            prompt: "Institutional memory is described as the only currency that:",
+            options: ["Keeps paying after the person stops working", "Can be transferred to another person during the holder's own lifetime", "Requires no documentation, since a building speaks for itself to any visitor", "Is recognised by every credit system rather than by one medium in particular"],
+            correctIndex: 0,
+            explanation: "It is the fourth currency in CREDIT-00, and the reason infrastructure is the durable route.",
+            sourceLessonSlug: "build-the-room",
+          },
+          {
+            prompt: "The Taller de Grafica Popular was established in Mexico City in:",
+            options: ["1937", "1946, the year Elizabeth Catlett arrived in Mexico City to work there", "1961, the same year the Ebony Museum opened on Chicago's South Side", "1954, the year of the Graphic Assembly discussions Catlett took part in"],
+            correctIndex: 0,
+            explanation: "By Leopoldo Mendez, Luis Arenal and Pablo O'Higgins.",
+            sourceLessonSlug: "write-it-into-the-statutes",
+          },
+          {
+            prompt: "Who founded the Taller de Grafica Popular?",
+            options: ["Mendez, Arenal and O'Higgins", "Elizabeth Catlett and Charles White, both of whom worked there in the 1940s", "Jose Guadalupe Posada, whose broadside illustrations the workshop later took up", "The National Union of Mexican Women, whose founding Catlett supported in 1964"],
+            correctIndex: 0,
+            explanation: "Leopoldo Mendez, Luis Arenal and Pablo O'Higgins, in 1937.",
+            sourceLessonSlug: "write-it-into-the-statutes",
+          },
+          {
+            prompt: "The Taller's foundational statutes permitted authorship that was:",
+            options: ["Individual or collective", "Anonymous only, so that no member's name appeared on any print produced there", "Assigned by the workshop's director according to who had contributed most", "Reserved to founding members, with guests credited as assistants on the sheet"],
+            correctIndex: 0,
+            explanation: "Along with a distribution of copies among members, quotas, profits, and rules and regulations.",
+            sourceLessonSlug: "write-it-into-the-statutes",
+          },
+          {
+            prompt: "The statutes clause matters because it shows the one-author convention is:",
+            options: ["A default, not a law of nature", "Enforced by Mexican law but not by law in the United States", "Applicable only to lithography, and never to relief media such as linocut", "Impossible to change without the agreement of the entire international print trade"],
+            correctIndex: 0,
+            explanation: "A workshop is free to write a different rule into its own constitution, and this one did.",
+            sourceLessonSlug: "write-it-into-the-statutes",
+          },
+          {
+            prompt: "Pablo O'Higgins said collective work necessarily includes discussion, criticism and:",
+            options: ["Self-criticism", "Arbitration by an elected officer whenever two members disagree about a print", "Compensation, since members shared the proceeds of every edition they produced", "Publication, because a print that is not distributed serves no popular purpose"],
+            correctIndex: 0,
+            explanation: "He tied it to the workshop's stated interest in contact with the people and with popular organizations.",
+            sourceLessonSlug: "write-it-into-the-statutes",
+          },
+          {
+            prompt: "When did Elizabeth Catlett go to Mexico City?",
+            options: ["1946", "1937, the year the Taller de Grafica Popular was established there", "1954, in order to attend the workshop's Graphic Assembly discussions", "1964, when she supported the founding of the National Union of Mexican Women"],
+            correctIndex: 0,
+            explanation: "She produced The Negro Woman at the Taller, a series dated 1947.",
+            sourceLessonSlug: "write-it-into-the-statutes",
+          },
+          {
+            prompt: "How many prints are in Catlett's The Negro Woman series?",
+            options: ["Fifteen", "Seventy-nine, matching the number of editions Blackburn printed at ULAE", "Twenty, the size of the edition in which the series was reprinted decades later", "Forty, one for each of the artists who worked at the Taller during her first year"],
+            correctIndex: 0,
+            explanation: "Fifteen linocuts, dated 1947 and later retitled The Black Woman.",
+            sourceLessonSlug: "write-it-into-the-statutes",
+          },
+          {
+            prompt: "The Negro Woman series was later retitled:",
+            options: ["The Black Woman", "The Graphic Assembly, after the workshop discussions it grew out of", "Sharecropper, after its single best known image, held by several museums", "I Am, in a shortened form the artist preferred in her later exhibitions"],
+            correctIndex: 0,
+            explanation: "The change reflected shifts in the language and politics of the intervening decades.",
+            sourceLessonSlug: "write-it-into-the-statutes",
+          },
+          {
+            prompt: "Catlett's series was made in which medium?",
+            options: ["Linocut", "Colour lithography, printed from limestone at the workshop's own press", "Screenprint, the medium AfriCOBRA would later choose for the same reasons", "Intaglio etching, worked on copper plates and printed on dampened paper"],
+            correctIndex: 0,
+            explanation: "A relief print cut into linoleum, which is cheap in both materials and equipment.",
+            sourceLessonSlug: "write-it-into-the-statutes",
+          },
+          {
+            prompt: "Why does the linocut choice fit a collective?",
+            options: ["Low entry cost", "It produces larger editions than any other printmaking medium in existence", "It requires several people to operate, which enforces collaboration by necessity", "It cannot be signed, so the question of individual authorship does not arise"],
+            correctIndex: 0,
+            explanation: "Linoleum is cheap, needs no bed the size of a lithographic stone, and can be cut and printed with minimal equipment.",
+            sourceLessonSlug: "write-it-into-the-statutes",
+          },
+          {
+            prompt: "The lever Blackburn used and the lever the Taller used are best described as:",
+            options: ["Access and rules", "Publicity and litigation, applied to the same convention from two directions", "Training and certification, both aimed at professionalising the printer's role", "Funding and legislation, one private and the other governmental in character"],
+            correctIndex: 0,
+            explanation: "Blackburn built access and left the convention intact. The Taller changed the rule itself, by statute, inside its own walls.",
+            sourceLessonSlug: "write-it-into-the-statutes",
+          },
+          {
+            prompt: "The honest limit of the collective answer is that a rule a workshop writes:",
+            options: ["Binds only that workshop", "Expires whenever the founding members leave the collective for other work", "Cannot be enforced without a registry of collectively authored editions", "Applies only to prints the collective sells rather than to those it exhibits"],
+            correctIndex: 0,
+            explanation: "It does nothing for a technician in a shop that has not adopted it, which is most shops.",
+            sourceLessonSlug: "write-it-into-the-statutes",
+          },
+          {
+            prompt: "In which year did Catlett take part in the Taller's Graphic Assembly discussions?",
+            options: ["1954", "1937, when the workshop's foundational statutes were first agreed", "1947, the year her linocut series was completed at the workshop", "1964, alongside the founding of the National Union of Mexican Women"],
+            correctIndex: 0,
+            explanation: "She later supported the founding of the National Union of Mexican Women, in 1964.",
+            sourceLessonSlug: "write-it-into-the-statutes",
+          },
+          {
+            prompt: "The South Side Community Art Center was formally established in:",
+            options: ["1940", "1961, on the ground floor of the Burroughs family home in Chicago", "1937, in parallel with the founding of the Taller in Mexico City", "1948, the year Margaret Burroughs completed her graduate study in Chicago"],
+            correctIndex: 0,
+            explanation: "With funds from the Works Progress Administration, by a group of artists from the Arts Craft Guild.",
+            sourceLessonSlug: "found-the-museum",
+          },
+          {
+            prompt: "Which of these artists is named among the South Side Community Art Center's founders?",
+            options: ["Charles White", "Robert Blackburn, who had learned lithography at a comparable centre in Harlem", "Elizabeth Catlett, who was then working at the Taller de Grafica Popular", "Barbara Jones-Hogu, who would later found AfriCOBRA in the same city"],
+            correctIndex: 0,
+            explanation: "The centre's own account names Burroughs, Cortor, Goss, White, Carter, Kersey and Motley.",
+            sourceLessonSlug: "found-the-museum",
+          },
+          {
+            prompt: "What distinction does the South Side Community Art Center claim?",
+            options: ["It is the only WPA art centre still open", "It was the first American art centre to admit Black artists on equal terms", "It held the first exhibition of Elizabeth Catlett's Negro Woman linocuts", "It received the largest single Works Progress Administration arts grant awarded"],
+            correctIndex: 0,
+            explanation: "Of more than a hundred community art centres the WPA established.",
+            sourceLessonSlug: "found-the-museum",
+          },
+          {
+            prompt: "Which group's members organised the funding effort behind that centre?",
+            options: ["The Arts Craft Guild", "The Works Progress Administration's own Federal Art Project committee", "The board of the Art Institute of Chicago, which sponsored the application", "The Harlem Arts Workshop, which had already run a comparable centre in New York"],
+            correctIndex: 0,
+            explanation: "The founding artists were members of the Arts Craft Guild and organised themselves to discuss funding efforts.",
+            sourceLessonSlug: "found-the-museum",
+          },
+          {
+            prompt: "The DuSable museum was founded in:",
+            options: ["1961", "1940, with funds from the Works Progress Administration in Chicago", "1971, matching the incorporation of Blackburn's Printmaking Workshop", "1948, when its founder completed her graduate studies at the Art Institute"],
+            correctIndex: 0,
+            explanation: "By Dr. Margaret Taylor Burroughs and Charles Burroughs, on the ground floor of their home.",
+            sourceLessonSlug: "found-the-museum",
+          },
+          {
+            prompt: "The museum's original name was:",
+            options: ["The Ebony Museum of Negro History and Art", "The South Side Community Art Center, before it moved into its own building", "The Arts Craft Guild Collection of Negro History, held on the family's ground floor", "The DuSable Black History Museum and Education Center, which it has always been"],
+            correctIndex: 0,
+            explanation: "It is now the DuSable Black History Museum and Education Center.",
+            sourceLessonSlug: "found-the-museum",
+          },
+          {
+            prompt: "Where did the museum begin?",
+            options: ["On the ground floor of the founders' home", "In a disused WPA art centre building on Chicago's South Side", "In a wing of the Art Institute of Chicago set aside for the collection", "In rented premises above a Black owned bookshop in the Bronzeville district"],
+            correctIndex: 0,
+            explanation: "Which is what the museum's phrase about growing out of the indigenous Black community refers to.",
+            sourceLessonSlug: "found-the-museum",
+          },
+          {
+            prompt: "The museum describes itself as the nation's first independent museum that:",
+            options: ["Celebrates Black culture", "Was founded and operated entirely by women without any outside funding at all", "Charged no admission fee, in order to reach visitors of every economic background", "Combined a collection with a school, teaching art history to local schoolchildren"],
+            correctIndex: 0,
+            explanation: "And records Burroughs's pride that it was the only one to grow out of the indigenous Black community.",
+            sourceLessonSlug: "found-the-museum",
+          },
+          {
+            prompt: "Margaret Taylor-Burroughs's own printmaking practice was chiefly in:",
+            options: ["Linoleum block", "Colour lithography, printed from stone in the manner Blackburn taught at ULAE", "Screenprinting, the medium her Chicago contemporaries in AfriCOBRA later adopted", "Intaglio, which she studied during a period of work in Mexico City in the 1950s"],
+            correctIndex: 0,
+            explanation: "She worked in it for decades, which is why she belongs in a printmaking course rather than only in a museum history.",
+            sourceLessonSlug: "found-the-museum",
+          },
+          {
+            prompt: "Why is founding a museum the strongest of the three responses?",
+            options: ["It decides what strangers find later", "It is the only one that carries legal weight in a dispute over attribution", "It is the cheapest to establish, since a private home can serve as the premises", "It produces new named artists faster than either a workshop or a collective can"],
+            correctIndex: 0,
+            explanation: "The only one of the three that keeps operating after everyone involved is dead.",
+            sourceLessonSlug: "found-the-museum",
+          },
+          {
+            prompt: "Why is it also the slowest?",
+            options: ["It takes decades to pay and needs continuous funding", "It cannot open until the founders have assembled a collection of national importance", "It requires the consent of an existing institution before it can accession any object", "It depends on a generation of scholars being trained before its holdings can be used"],
+            correctIndex: 0,
+            explanation: "And it dies quietly if either the time or the funding fails.",
+            sourceLessonSlug: "found-the-museum",
+          },
+          {
+            prompt: "What did none of the three responses in this section involve?",
+            options: ["Arguing that the signature convention be amended", "Building an institution that the existing convention does not govern at all", "Using a medium chosen partly for how cheap it was to work in and to distribute", "Drawing on public funding from Depression era federal arts programmes"],
+            correctIndex: 0,
+            explanation: "Each built a thing the convention does not govern: a room, a rule, an archive.",
+            sourceLessonSlug: "found-the-museum",
+          },
+          {
+            prompt: "The quiet WPA thread running through this section is that public arts funding:",
+            options: ["Put people in rooms where the medium was available", "Required every funded workshop to credit its printers by name on each edition", "Paid printers directly, which made the signature convention economically irrelevant", "Founded the museums that later collected the work of the artists it had trained"],
+            correctIndex: 0,
+            explanation: "It named nobody on a print, and it is a different and more durable kind of credit.",
+            sourceLessonSlug: "found-the-museum",
+          },
+          {
+            prompt: "Blackburn, Burroughs and White share which biographical fact in this section?",
+            options: ["A WPA sponsored art centre", "Membership of the Taller de Grafica Popular during the 1940s and 1950s", "A MacArthur Fellowship awarded for teaching rather than for their own work", "Founding an independent museum in the city where they had trained as artists"],
+            correctIndex: 0,
+            explanation: "Blackburn learned lithography at one in Harlem; Burroughs and White helped found one in Chicago.",
+            sourceLessonSlug: "found-the-museum",
+          },
+          {
+            prompt: "\"Routing around a convention\" means responding to an unchangeable credit rule by:",
+            options: ["Building something it does not govern", "Persuading the people who apply it to make an exception in a particular case", "Documenting every violation of it until the accumulated record forces a change", "Withdrawing from the medium entirely and working where the rule does not apply"],
+            correctIndex: 0,
+            explanation: "Instead of contesting the rule itself, which is what all three responses in this section have in common.",
+            sourceLessonSlug: "build-the-room",
+          },
+          {
+            prompt: "\"Durable credit\" is defined as recognition lodged in:",
+            options: ["An institution rather than on an object", "A legal document rather than in a museum's published catalogue", "The memory of colleagues, which outlasts any physical record of the work", "A medium that resists deterioration, so the object itself survives longer"],
+            correctIndex: 0,
+            explanation: "Which is why it continues to operate after its founders stop working.",
+            sourceLessonSlug: "found-the-museum",
+          },
+          {
+            prompt: "An \"open workshop\" in this course means a print studio offering access regardless of:",
+            options: ["Background, expertise or means", "Whether the artist intends to publish an edition at the end of the project", "Whether the work is figurative or abstract, which older workshops used to police", "Whether the artist has been recommended by an existing member of the studio"],
+            correctIndex: 0,
+            explanation: "Which is the model Blackburn built and the Elizabeth Foundation for the Arts continues.",
+            sourceLessonSlug: "build-the-room",
+          },
+          {
+            prompt: "The 1971 non-profit incorporation mattered because it put the workshop's purposes:",
+            options: ["In a legal document", "Under the supervision of the Library of Congress, which then held its records", "Beyond the reach of the founder, who could no longer change them at will", "Into the hands of the artists who used it, who elected the board thereafter"],
+            correctIndex: 0,
+            explanation: "Rather than leaving them as a founder's habit, which is what makes them checkable today.",
+            sourceLessonSlug: "build-the-room",
+          },
+          {
+            prompt: "\"Collective authorship\" attributes a work to:",
+            options: ["The group", "Whichever member of the group physically pulled the impressions from the press", "The workshop's founders, in perpetuity, regardless of who made a given print", "Nobody, since a collectively made print is treated as an anonymous object"],
+            correctIndex: 0,
+            explanation: "Rather than to a single named maker, which is the rule the Taller's statutes permitted.",
+            sourceLessonSlug: "write-it-into-the-statutes",
+          },
+          {
+            prompt: "The three things built instead of an argument are:",
+            options: ["A room, a rule, an archive", "A press, a portfolio and a printer's certification programme", "A magazine, a prize and a public exhibition programme for unnamed technicians", "A union, a contract and a registry of every American master printer working"],
+            correctIndex: 0,
+            explanation: "Blackburn's workshop, the Taller's statutes, and the Burroughses' museum.",
+            sourceLessonSlug: "found-the-museum",
+          },
+          {
+            prompt: "The Taller's workshop name translates as:",
+            options: ["The People's Graphic Arts Workshop", "The Popular Front Print Collective, reflecting its founders' political commitments", "The Mexican Academy of Graphic Art, a training body attached to a university", "The Workshop of Graphic Art, a short lived New York project of the late 1940s"],
+            correctIndex: 0,
+            explanation: "Taller de Grafica Popular, in Mexico City, founded in 1937.",
+            sourceLessonSlug: "write-it-into-the-statutes",
+          },
+          {
+            prompt: "O'Higgins tied collective working method to the workshop's interest in contact with:",
+            options: ["The people and popular organizations", "The international print market, which the workshop needed in order to survive", "Museums, whose collections would eventually preserve the workshop's output", "Other collectives abroad, including the workshops then operating in the United States"],
+            correctIndex: 0,
+            explanation: "His stated reasoning for why collective work was necessary rather than optional.",
+            sourceLessonSlug: "write-it-into-the-statutes",
+          },
+          {
+            prompt: "Section 4's answer to the build question from Section 1 is that people build things the convention:",
+            options: ["Does not govern", "Cannot afford to oppose once they have become large enough to matter", "Has always permitted, which is why the responses were uncontroversial at the time", "Will eventually adopt, since every successful workaround becomes a new standard"],
+            correctIndex: 0,
+            explanation: "Which is a far better predictor of what you will find in the record than any story about protest.",
+            sourceLessonSlug: "found-the-museum",
+          },
+          {
+            prompt: "The Library of Congress phrase for what Blackburn was to thousands of artists is:",
+            options: ["Teacher and friend", "Employer and patron, since the workshop paid for the materials they used", "Publisher and dealer, issuing their editions under the workshop's own imprint", "Examiner and referee, deciding which artists were ready to edition their work"],
+            correctIndex: 0,
+            explanation: "Followed by the list beginning master printer and ending instigator.",
+            sourceLessonSlug: "build-the-room",
+          },
+          {
+            prompt: "Which of the four 1971 purposes is the one this lesson calls a credit strategy?",
+            options: ["Creating opportunities for Third World and minority artists", "Maintaining creative and artistic quality across every edition the workshop issued", "Supporting and encouraging innovation in the technical development of lithography", "Fostering public appreciation of the fine art print as a collectible medium"],
+            correctIndex: 0,
+            explanation: "It changes who occupies the named role rather than asking the convention to name printers.",
+            sourceLessonSlug: "build-the-room",
+          },
+          {
+            prompt: "Catlett later supported the founding of which organisation?",
+            options: ["The National Union of Mexican Women", "The Taller de Grafica Popular, alongside Mendez, Arenal and O'Higgins", "The South Side Community Art Center, with Burroughs and Charles White", "AfriCOBRA, the Chicago collective formed at the end of the 1960s"],
+            correctIndex: 0,
+            explanation: "In 1964, a decade after taking part in the workshop's Graphic Assembly discussions.",
+            sourceLessonSlug: "write-it-into-the-statutes",
+          },
+          {
+            prompt: "The lesson's phrase for what the Taller did before anyone arrived is that it changed the naming convention:",
+            options: ["By statute", "By custom, which the members enforced informally among themselves", "By negotiation with the Mexican government, which funded the workshop", "By example, publishing collectively authored portfolios that others then imitated"],
+            correctIndex: 0,
+            explanation: "The foundational statutes permitted collective authorship, which is a rule rather than a practice.",
+            sourceLessonSlug: "write-it-into-the-statutes",
+          },
+          {
+            prompt: "Which response leaves the print signature convention completely untouched?",
+            options: ["Blackburn's open workshop", "The Taller's statutes, which applied only to prints published outside Mexico", "The DuSable museum, which was founded to display prints rather than to make them", "None of the three, since each was explicitly designed to alter the convention"],
+            correctIndex: 0,
+            explanation: "It lets more people become the named artist without asking the convention to change at all.",
+            sourceLessonSlug: "write-it-into-the-statutes",
+          },
+          {
+            prompt: "The DuSable's own account of Burroughs's pride concerns the museum having:",
+            options: ["Grown out of the indigenous Black community", "Survived longer than any comparable institution founded in the same decade", "Been assembled entirely from works donated by artists she knew personally", "Opened without any assistance from a foundation or a municipal government"],
+            correctIndex: 0,
+            explanation: "The museum quotes that as what distinguished it from other institutions of its kind.",
+            sourceLessonSlug: "found-the-museum",
+          },
+          {
+            prompt: "The section's comparison of the three answers ranks the museum as strongest on which axis?",
+            options: ["Longevity", "Cost, since a home based museum requires almost no capital to establish", "Reach, because a museum can serve more artists at once than any workshop", "Speed, in that a collection can be assembled faster than a workshop can be equipped"],
+            correctIndex: 0,
+            explanation: "It decides what future strangers find, which is the definition of institutional memory.",
+            sourceLessonSlug: "found-the-museum",
+          },
+        ],
+      },
+    },
   ],
 };
