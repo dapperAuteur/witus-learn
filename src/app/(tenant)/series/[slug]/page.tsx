@@ -130,7 +130,7 @@ export default async function SeriesPage({ params }: { params: Promise<{ slug: s
               return (
                 <li
                   key={course.id}
-                  className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800"
+                  className="relative rounded-lg border border-neutral-200 p-4 transition-colors hover:bg-neutral-50 focus-within:outline-2 focus-within:outline-offset-2 dark:border-neutral-800 dark:hover:bg-neutral-900"
                 >
                   <div className="flex flex-wrap items-baseline gap-2">
                     <span className="rounded bg-neutral-100 px-2 py-0.5 font-mono text-xs font-semibold text-neutral-700 dark:bg-neutral-800 dark:text-neutral-300">
@@ -145,7 +145,7 @@ export default async function SeriesPage({ params }: { params: Promise<{ slug: s
                   <h3 className="mt-2 text-lg font-semibold">
                     <Link
                       href={`/course/${course.id}`}
-                      className="underline-offset-2 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
+                      className="underline-offset-2 after:absolute after:inset-0 after:content-[''] hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
                     >
                       {course.title}
                     </Link>

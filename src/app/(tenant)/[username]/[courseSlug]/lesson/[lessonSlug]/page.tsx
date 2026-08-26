@@ -28,6 +28,14 @@ import { isDirectMediaFile } from "@/lib/media";
 import { brandName } from "@/lib/branding";
 import { ogImageUrl } from "@/lib/og";
 
+// Reported 2026-08-26: "pages don't maintain complete status when I revisit page to review."
+// The completion IS persisted (lesson_progress.completed_at was set in prod for the reported
+// lesson), and MarkCompleteButton already calls router.refresh(), so the write path and the read
+// path are both fine. What the learner saw was a CACHED render of a page whose entire body is
+// per-learner: completedLessonIds, gating, notes, recall. Navigating away and back could serve a
+// payload rendered before the completion. This page has no cacheable form, so it says so.
+export const dynamic = "force-dynamic";
+
 type Params = {
   params: Promise<{ username: string; courseSlug: string; lessonSlug: string }>;
 };
