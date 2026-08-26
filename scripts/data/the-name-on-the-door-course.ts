@@ -2937,6 +2937,150 @@ National Park Service. (n.d.). *One brick at a time: Robert R. Taylor's architec
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 6 — The shape, the corrections, and what this course refused
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-same-shape-elsewhere",
+      title: "21 · The same shape elsewhere",
+      section: "Section 6 · The shape, the corrections, and what this course refused",
+      body: `Architecture is not special. It is just unusually well documented. Here is the shape, stated as three conditions you can check against any field in about a minute.
+
+1. **The credited unit is an entity rather than a person.** A firm, a label, a studio, a practice, a house.
+2. **The individual credit, where it exists at all, lives in a document the public never reads.** A sealed drawing set. A membership application. A personnel file. A calculation package.
+3. **A licence or an equivalent gate controls who may occupy the named role,** and the gate runs through institutions that decide who gets in.
+
+**Where all three hold, expect a category of expert people the public cannot name.** Where only some hold, the shape is weaker and the remedy is different. Run it and see.
+
+**Law firms: three out of three.** A case is reported as advised by a firm. The individual's name is on a filing, which is a document read by a court and almost nobody else. Admission to the bar is a licence with an education gate, an examination and a character review. Ask a member of the public who wrote a famous brief and you will get a firm name or a partner's name, in that order.
+
+**Structural and civil engineering: three out of three,** and Georgia Louise Harris Brown's career is the proof already in this course. The building goes to the design architect, the engineering to the engineering firm, and the person who ran the calculations goes nowhere. The professional engineer's stamp is the same kind of licensed act as an architect's seal.
+
+**Advertising and design: two out of three.** The agency is the credited unit and the individual credit lives in an internal creative-credits list, but there is no licence. That difference matters more than it looks. With no licensing gate, the invisibility is entirely a matter of contract and norm, which means it can be changed by contract and norm, and does not require a state to act.
+
+**Restaurant kitchens: mostly one out of three.** The restaurant and the chef whose name is on it are the credited unit. There is usually no protected title and no licence to cook. So the remedy here is neither statutory nor contractual. It is simply whether the person at the top chooses to name the people who cook.
+
+**Film crews: the exception that proves the rule.** Film built a credit format with room for hundreds of names, negotiated by unions and guilds, with an arbitration process when a credit is disputed. Condition one fails on purpose, because the format was deliberately enlarged. That is what it looks like when a field decides to change the number of slots.
+
+**Two cautions before you use this.**
+
+First, counting the conditions tells you the shape of the invisibility. It does not tell you **who is inside the category.** That is a separate and entirely empirical question, and answering it needs the sort of counting Section 2 did: a population, a method, and a date on the number.
+
+Second, a field with all three conditions is not thereby wicked. Licensure exists because roofs fall on people. The firm convention exists because somebody has to hold the liability. The right complaint is almost never "this convention should not exist". It is "this convention has a predictable side effect, the side effect lands unevenly, and here is the count".
+
+:::reveal What are the three conditions that together produce a category of expert people the public cannot name? ||| The credited unit is an entity rather than a person; the individual credit lives in a document nobody reads; and a licence or equivalent gate controls who may occupy the named role.
+
+:::reveal Which condition does advertising and design fail, and why does that change the remedy? ||| There is no licence, so the invisibility is a matter of contract and norm rather than statute, and can be changed by contract and norm without a state acting.
+
+:::reveal Why is a film crew's credit roll the exception that proves the rule? ||| Because the field deliberately enlarged the number of slots, negotiating a credit format with room for hundreds of names and an arbitration process when a credit is disputed.
+
+## Vocabulary
+- **Credited unit**: whatever a field's public attribution names, which may be a firm, a label, a studio or a person.
+- **Unread document**: the place an individual credit survives when the public format has no room for it, such as a sealed drawing set or a membership application.
+- **Licensed act**: something only a registered professional may lawfully do, such as sealing drawings or filing certain court papers.
+- **Slot change**: enlarging a credit format so it can hold more names, which is what a credited-crew system does and what an award rule change does.
+
+## Sources
+Beverly Willis Architecture Foundation. (n.d.-c). *Georgia Louise Harris Brown*. Pioneering Women of American Architecture. https://pioneeringwomen.bwaf.org/georgia-louise-harris-brown/
+
+Cal. Bus. & Prof. Code § 5536.1. (n.d.). California Legislative Information. https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=5536.1`,
+    },
+    {
+      slug: "corrections-that-happened",
+      title: "22 · Corrections that actually happened",
+      section: "Section 6 · The shape, the corrections, and what this course refused",
+      body: `Three corrections, all documented by the institutions that made them, and all of them changing something physical or procedural rather than issuing a statement.
+
+**One: a student wrote a letter, and a campus changed its stone.** In 1986, students protesting Duke's investment in companies doing business with apartheid South Africa built shanties in front of the Chapel. A student wrote to the campus paper complaining that the ugliness of the shanties "violates our rights as students to a beautiful campus". Susan Cook, a Duke student and Abele's great grand-niece, replied that her great grand-uncle, as an African American and the designer of the campus, would not have objected to the shanties, since he was himself "a victim of apartheid" in his own country. Duke University Libraries writes that "This letter finally brought the architect's name to the attention of the student body and others" (Duke University Libraries, n.d.).
+
+**What followed, and a date this course cannot settle.** A commissioned portrait of Abele was unveiled and hung in the foyer of the Allen Building, the first portrait of a Black person at Duke. Duke University Libraries dates it to 1987, Duke Today's own coverage says 1988, and the NCSU Libraries entry gives 21 April 1989. Three institutional accounts, three years. This course reports the disagreement and does not choose.
+
+In 2016 the main quadrangle of West Campus was renamed Abele Quad. Then, in what Duke reported in January 2019, a cornerstone on Duke Chapel was engraved to honour the contributions of Abele **and** Horace Trumbauer, a permanent stone marker went up on the quad, and a bronze plaque went inside the chapel. The dean of Duke Chapel, Luke A. Powery, described it this way: "The architectural creativity of Julian Abele is one of the foundational stones of this university, so having his name, along with Horace Trumbauer's, on a foundational stone of Duke Chapel is fitting" (Duke Today, 2019).
+
+**Note what that correction did not do.** It did not take Trumbauer's name off. It added a name. The format grew by one.
+
+**Two: an archive got read.** In 2020, Harvard mounted a display of ephemera in Widener honouring Abele's role in the library, "a contribution that until recently had largely gone unacknowledged" (Harvard Gazette, 2020). The evidence was not new. The July 1912 letters had been in the Harvard University Archives the whole time. Somebody went and looked.
+
+**Three: a credit rule was rewritten.** The American Institute of Architects states the eligibility for its highest annual honour like this: "The Gold Medal is open to a single individual or two individuals, (living or deceased), who through their collaborative efforts over time have created a singular body of distinguished architectural work" (American Institute of Architects, n.d.-b). Its own recipient list shows the 2016 medal going to Robert Venturi and Denise Scott Brown together, and the 2017 medal going to Paul Revere Williams, who died in 1980.
+
+A format that once held one living name now holds two names of any status. That is a slot change, and it is the same move CREDIT-02 documents in two other award systems. This course prints the rule and not a date for its adoption, because the AIA's page states the rule and not its history.
+
+**And two institutional responses worth knowing.** After Whitney M. Young Jr. addressed the AIA's 1968 national convention, the delegates passed Resolution 10, creating a national scholarship programme for members of "disadvantaged minority groups for the purpose of the study of architecture", and Resolution 13, calling on architects to "take a positive stand and become personally involved in the issues of our day" (American Institute of Architects, n.d.-c). The institute's Code of Ethics was later revised to ban discrimination on the basis of race, sex, creed or national origin in 1970, disability in 1977, and against members of the LGBT community in 1992.
+
+Three years after the speech, Black architects meeting during the AIA National Convention in Detroit resolved to organise, and met again on 12 November 1971 in Nassau. That is the founding of the National Organization of Minority Architects. NOMA's own history page names fourteen people present at those founding meetings, which is worth knowing, because the number usually repeated is twelve (NOMA, n.d.).
+
+:::reveal What did Susan Cook's 1986 letter to the Duke student paper accomplish? ||| It brought Julian Abele's name to the attention of the student body and others, in reply to a complaint that anti-apartheid shanties spoiled the campus.
+
+:::reveal What is notable about the way Duke Chapel's cornerstone was engraved? ||| It carries both Abele's name and Horace Trumbauer's. The correction added a name rather than replacing one.
+
+:::reveal How does the AIA's own rule describe who is eligible for the Gold Medal? ||| A single individual or two individuals, living or deceased, who through their collaborative efforts over time have created a singular body of distinguished architectural work.
+
+## Vocabulary
+- **Abele Quad**: the main quadrangle of Duke's West Campus, renamed in 2016 and given a permanent stone marker reported in January 2019.
+- **Resolution 10 and Resolution 13**: the two measures AIA delegates passed at the 1968 convention, creating a scholarship programme and calling for personal involvement in the issues of the day.
+- **NOMA**: the National Organization of Minority Architects, founded by architects who met during the 1971 AIA convention in Detroit and again in Nassau that November.
+- **Additive correction**: a fix that enlarges a credit format rather than swapping one name for another, as Duke's cornerstone and the AIA's Gold Medal rule both do.
+
+## Sources
+American Institute of Architects. (n.d.-b). *Gold Medal*. https://www.aia.org/design-excellence/awards/gold-medal
+
+American Institute of Architects. (n.d.-c). *50 years of Whitney M. Young Jr.'s historic 1968 AIA speech*. https://www.aia.org/resource-center/commemorating-50-years
+
+Duke Today. (2019, January 10). *Julian Abele's legacy set in stone in quad plaque and chapel cornerstone*. Duke University. https://today.duke.edu/2019/01/julian-abeles-legacy-set-stone-quad-plaque-and-chapel-cornerstone
+
+Duke University Libraries. (n.d.). *Julian Abele (1881-1950)*. Duke University. https://library.duke.edu/rubenstein/uarchives/history/articles/abele
+
+Harvard Gazette. (2020, February 26). *Recognizing architect Julian Abele's contributions to Harvard*. Harvard University. https://news.harvard.edu/gazette/story/2020/02/recognizing-architect-julian-abeles-contributions-to-harvard/
+
+NOMA. (n.d.). *History*. National Organization of Minority Architects. https://www.noma.net/history/`,
+    },
+    {
+      slug: "what-this-course-refused",
+      title: "23 · What this course refused to print",
+      section: "Section 6 · The shape, the corrections, and what this course refused",
+      body: `A course that only tells you what it knows is hiding half its work. Here is the ledger.
+
+**Verified against an institution, then printed.** That Abele became chief designer at Trumbauer and took over the office after 1938, from Penn's University Archives and Duke University Libraries. That employees at the firm did not sign, and that his 1942 AIA application listed only his sister's house and the Duke work, from Cohen, with the 1942 year corroborated separately by Penn and Duke. That the Cameron Indoor Stadium drawings are the earliest recorded to carry his name beside the firm's, from the NCSU Libraries. That Beverly Loraine Greene was licensed in Illinois on 28 December 1942 under certificate number 3002, and that Norma Merrick Sklarek was licensed in New York in 1954, joined the AIA in 1959, was licensed in California in 1962 and was elected to the College of Fellows in 1980, from the Beverly Willis Architecture Foundation. That Black or African American architects were two percent of the architect population in NCARB's 2024 data, quoted with NCARB's own note about how that population is approximated.
+
+**Reported as contested, with both positions named.** Whether Abele became chief designer in 1909 or 1908. Whether the first Duke portrait was unveiled in 1987, 1988 or 1989. Whether Abele ever visited the Duke site. Whether Irvine Auditorium is his, where Penn's website says yes and Dreck Wilson and a 1983 archivist's letter say no.
+
+**Tested and refused.**
+
+- **That Abele studied at the Ecole des Beaux-Arts.** Cohen and Penn's archives independently report no record. The story appears in a 1975 book and is repeated constantly. It is not printed here.
+- **That Abele was the architect of the Philadelphia Museum of Art.** Cohen, drawing on Brownlee and Wilson, calls it an oversimplification and says no one individual holds the title.
+- **The internship-waiver account of John S. Chase's Texas licence,** and the month it was issued. The Texas State Historical Association's entry does not carry either, and a claim about what a licensing board did needs the board.
+- **A year for Paul Revere Williams's AIA membership.** The Getty states the first without a date, and the Los Angeles Conservancy dates only the fellowship.
+- **Williams drawing upside down as his own account.** It is printed as the Getty states it, and this course did not find him saying it in his own published words.
+- **A current count from the Directory of African American Architects.** Its introduction carries no date, so the figure in it is reported as a sentence rather than as today's number.
+- **The title of the 1974 book** that called Abele a servant. Cohen does not name it, and naming it by inference would be the same error the myth is.
+
+**Now the caution, and it is the most important paragraph in the course.** Five or six people, and a feeling that the subject has been covered, is the opposite of what the argument predicts. If the firm convention erased the name of a man who designed a landmark auditorium so thoroughly that his own colleague could not recall it, then it erased thousands of people whose names no institution ever wrote down. The people in this course are here because a university archive, a state board, a scholarly project or a historian happened to record them. That is a survivorship list, not a population.
+
+**One sentence to take away.** The next time you read "designed by", ask what kind of thing the name is: a person, a firm, or the person the firm was named after.
+
+:::reveal Name two claims this course tested and refused to print, and say why. ||| That Abele attended the Ecole des Beaux-Arts, because Cohen and Penn's archives independently report no record; and that he was the architect of the Philadelphia Museum of Art, because Cohen, drawing on Brownlee and Wilson, says no one individual holds that title.
+
+:::reveal Why is a list of five or six named people the opposite of this course's argument? ||| Because the mechanism predicts that most employee designers left no retrievable trace, so the people who can be named are a survivorship list rather than a population.
+
+:::reveal What is the one question to ask the next time you read that a building was designed by somebody? ||| What kind of thing the name is: a person, a firm, or the person the firm was named after.
+
+## Vocabulary
+- **Ledger**: the explicit account a course gives of what it verified, what it reported as contested, and what it refused to print.
+- **Survivorship list**: a set of names that exists because somebody recorded them, which must not be mistaken for the population it came from.
+- **Refusal**: a claim left unprinted because the evidence will not carry it, stated openly so a reader knows the omission was a decision.
+- **Corroboration**: confirming a fact against a second independent institution, which this course did for the 1942 AIA year and the 1909 promotion.
+
+## Sources
+Beverly Willis Architecture Foundation. (n.d.-b). *Beverly Lorraine Greene*. Pioneering Women of American Architecture. https://pioneeringwomen.bwaf.org/beverly-lorraine-greene/
+
+Cohen, A. (2019, May 23). *Unraveling myths about Philly's pioneering African American architect*. Hidden City Philadelphia. https://hiddencityphila.org/2019/05/unraveling-myths-about-phillys-pioneering-african-american-architect/
+
+Getty Research Institute. (2020, June 30). *Archive of architect Paul Revere Williams jointly acquired by USC and Getty*. J. Paul Getty Trust. https://www.getty.edu/news/architect-paul-revere-williams-archive-acquired-usc-getty/
+
+NCARB. (n.d.-b). *NCARB by the numbers 2025: Demographics*. National Council of Architectural Registration Boards. https://www.ncarb.org/nbtn2025/demographics
+
+Texas State Historical Association. (n.d.). *Chase, John Saunders*. Handbook of Texas. https://www.tshaonline.org/handbook/entries/chase-john-saunders`,
+    },
     // APPEND-HERE
   ],
 };
