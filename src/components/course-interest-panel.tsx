@@ -91,6 +91,17 @@ export function CourseInterestPanel({
         Phone numbers and backgrounds below were given to you in confidence. They are shown on this
         page and nowhere else: not on the course page, not in any export, not in any email.
       </p>
+      {/*
+        Deciding again does not take a grant back, and pretending otherwise would be worse than
+        saying nothing: revoking lives on the reviewer list, which is the one place that knows which
+        grants exist. Said here because "I changed my mind" is the obvious next question after
+        approving somebody.
+      */}
+      <p className="mt-2 text-sm text-neutral-500">
+        Changed your mind about someone you approved? Remove them from{" "}
+        <strong>Invite someone to review this course</strong>, just below. That is what actually
+        takes their access away, and it applies on their next click.
+      </p>
       {!isUnvetted ? (
         <p className="mt-2 text-sm text-neutral-500">
           This course is vetted, so its lessons are open anyway and the public form is no longer

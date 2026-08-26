@@ -331,6 +331,10 @@ nothing happens until you decide:
   nothing, because there is nothing to grant: they are already on the notify-me list.
 - **Decline** closes it. Re-submitting the form does not reopen a declined request.
 
+**Changed your mind about someone you approved?** Deciding again does not take the grant back. Use
+**Remove** on the reviewer list just below the panel, which is what actually revokes access, and it
+applies on their next click.
+
 Approving somebody never enrolls them. If you want a tester to go through the course as a real
 learner, enroll them deliberately, and know that their quiz scores will then count in your
 statistics, which is exactly why the review grant does not.
