@@ -1919,6 +1919,157 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Smithsonian American Art Museum and Studio Museum in Harlem object records for AfriCOBRA prints",
     ],
   },
+  // ── The Name on the Door (CREDIT-03) ──────────────────────────────────────────────────────────
+  {
+    key: "notd-abele-chief-designer-year",
+    course: "the-name-on-the-door",
+    lesson: "abele-and-the-office",
+    quote:
+      "Nothing in the argument turns on the year. The course's rule is that an unresolved conflict between institutional sources gets written down rather than smoothed over.",
+    title: "Did Julian Abele become Trumbauer's chief designer in 1909 or 1908?",
+    severity: "low",
+    question:
+      "In which year was Julian Francis Abele promoted to chief designer of Horace Trumbauer's office? The University of Pennsylvania's University Archives and Records Center says he advanced to the position in 1909, and Duke University Libraries independently says 1909. The NCSU Libraries' North Carolina Architects and Builders entry says Trumbauer brought him into the firm in 1906 and promoted him to chief designer in 1908.",
+    claim:
+      "Lesson 9 reports the disagreement, names all three institutions, states that nothing in the argument turns on the year, and deliberately does not choose. Every quiz item on the topic asks the learner to report the disagreement rather than to give a single year.",
+    stakes:
+      "Low for the argument and high for the course's own credibility rule, which is that a contested claim is taught as contested. If a dated employment record settles it, the lesson should say so and name the document rather than continuing to present an answered question as open. Note also that Penn and Duke may not be independent of each other if both drew on the same biographical research.",
+    needs: [
+      "A dated primary document: a payroll or personnel record from the Trumbauer office, a contemporaneous city directory or professional register listing his title, or dated correspondence in which he is described as chief designer",
+      "Whether Dreck Spurlock Wilson's African American Architects: A Biographical Dictionary 1865-1945 gives a year, and what evidence it cites for it",
+      "Whether the NCSU entry's 1908 rests on a source Penn and Duke did not consult, or on a transcription slip",
+    ],
+    where: [
+      "University of Pennsylvania University Archives and Records Center, which holds Abele material and wrote the 1909 biography",
+      "The Athenaeum of Philadelphia, which holds Trumbauer office drawings and interview files",
+      "Duke University's Julian Abele reference collection in the Rubenstein Library",
+    ],
+  },
+  {
+    key: "notd-duke-portrait-year",
+    course: "the-name-on-the-door",
+    lesson: "corrections-that-happened",
+    quote:
+      "Three institutional accounts, three years. This course reports the disagreement and does not choose.",
+    title: "When was Duke's first portrait of Julian Abele unveiled: 1987, 1988 or 1989?",
+    severity: "low",
+    question:
+      "In which year was the commissioned portrait of Julian Abele first unveiled and hung in the foyer of Duke's Allen Building? Duke University Libraries says the Black Graduate and Professional Student Association unveiled it in 1987. Duke Today's own coverage of the 2016 quad naming says 1988. The NCSU Libraries entry gives a precise date of 21 April 1989.",
+    claim:
+      "Lesson 22 reports all three years, names the institution behind each, and does not choose. It uses the disagreement as an example of the same discipline the course applies to Abele's promotion year.",
+    stakes:
+      "Low for the argument and useful as a teaching example, because it is a case where a single university's own publications disagree with each other about an event on its own campus within living memory. If Duke can date the unveiling from an event programme or a campus newspaper report, the lesson should carry the date and name the document, and keep the disagreement only as a footnote about how quickly an institutional record diverges.",
+    needs: [
+      "A dated event programme, press release, or Duke Chronicle report of the unveiling",
+      "Whether the 1989 date in the NCSU entry refers to a second event, such as a formal dedication following an earlier unveiling",
+      "Whether the Black Graduate and Professional Student Association's own records date the first Julian Abele Awards banquet, which the accounts tie to the portrait",
+    ],
+    where: [
+      "Duke University Archives in the David M. Rubenstein Rare Book and Manuscript Library",
+      "The Duke Chronicle's digitised archive for the years 1987 to 1989",
+      "Duke's Office of Institutional Equity or the Black Graduate and Professional Student Association's own records",
+    ],
+  },
+  {
+    key: "notd-chase-texas-licence",
+    course: "the-name-on-the-door",
+    lesson: "what-a-licence-gates",
+    quote:
+      "The state historical association's entry does not say it, and this course's rule is that a specific claim about what a licensing board did needs the board or an equivalent record.",
+    title: "How and when exactly was John S. Chase licensed in Texas?",
+    severity: "medium",
+    question:
+      "What is the documented record of John Saunders Chase's Texas architectural registration? Several accounts say he petitioned the Texas Board of Architectural Examiners to waive an internship requirement he could not satisfy because no white firm would employ him, and give July 1954 as the month of licensure. The Texas State Historical Association's Handbook of Texas entry states only that he was the first African American licensed to practice architecture in Texas, with no month and no procedural detail.",
+    claim:
+      "Lesson 6 prints the Handbook of Texas facts (Hampton degree in 1948, first African American to enrol at UT Austin's architecture school in 1950, graduated 1952, could not find work at white firms, opened his own practice, first African American licensed in Texas) and deliberately does NOT print the waiver petition or the month. The lesson says out loud that the omission is a decision.",
+    stakes:
+      "Medium. The waiver detail, if documented, would be the single sharpest illustration in the whole course of how the experience requirement operates as a gate, because it would show a board being asked to set aside a requirement the market had made impossible to meet. Printing it unverified is exactly the hostage the course warns against in lesson 14. If the board's records confirm it, the lesson should carry it with the citation; if they cannot, the refusal should stay and the reason should stay visible.",
+    needs: [
+      "The Texas Board of Architectural Examiners' registration record for Chase: the date of registration and the certificate or registration number",
+      "Any board minute, correspondence or docket entry recording a petition to waive an internship or experience requirement",
+      "If the waiver account originates in an interview or a memoir, the exact wording and where it was published",
+    ],
+    where: [
+      "The Texas Board of Architectural Examiners, and its records held by the Texas State Library and Archives Commission",
+      "The John S. Chase papers and the Chase family, and the University of Texas at Austin's Alexander Architectural Archives",
+      "Texas Southern University, where Chase taught from 1952, and the Houston chapter of the American Institute of Architects",
+    ],
+  },
+  {
+    key: "notd-williams-aia-membership-year",
+    course: "the-name-on-the-door",
+    lesson: "a-door-of-your-own",
+    quote:
+      "Neither source gives a year for his AIA membership, so this course does not print one.",
+    title: "In what year did Paul Revere Williams become a member of the AIA?",
+    severity: "low",
+    question:
+      "In what year did Paul Revere Williams join the American Institute of Architects, and does the institute itself state that he was its first African American member? The Getty Research Institute states the first without a year. The Los Angeles Conservancy dates his fellowship to 1957 and gives no year for ordinary membership. A year of 1923 circulates widely, but that is also the year he opened his own practice, which is the kind of coincidence that suggests a conflation.",
+    claim:
+      "Lesson 19 prints the three firsts exactly as the Getty states them, with no year attached to the membership, and says in the lesson that neither source gives one. The 1957 fellowship and the 2017 Gold Medal are printed with their sources.",
+    stakes:
+      "Low for the argument and worth closing because it is a first claim about a named institution, which is the category this course holds to the highest standard. A widely repeated year that turns out to be the year he opened his office would be a small, checkable, and embarrassing error to have printed.",
+    needs: [
+      "The AIA's own record of Williams's election to membership, with the year",
+      "Whether the AIA will state in its own words that he was its first African American member, and on what evidence",
+      "The correct year of his election to the College of Fellows, to confirm the Conservancy's 1957",
+    ],
+    where: [
+      "The American Institute of Architects' membership and College of Fellows records in Washington, D.C.",
+      "The Getty Research Institute and the USC School of Architecture, joint holders of the Paul Revere Williams archive",
+      "Karen Elyse Hudson's published work on her grandfather, which draws on family papers",
+    ],
+  },
+  {
+    key: "notd-williams-upside-down-drawing",
+    course: "the-name-on-the-door",
+    lesson: "a-door-of-your-own",
+    quote:
+      "It could not locate Williams saying either thing in his own published words, and has filed the question rather than treating an institutional retelling as a first-hand account.",
+    title: "Did Paul Revere Williams describe drawing upside down in his own words?",
+    severity: "low",
+    question:
+      "Is there a first-hand statement by Paul Revere Williams that he learned to draw upside down so that white clients could sit across the table from him rather than beside him, and that he toured construction sites with his hands clasped behind his back? The Getty Research Institute states both as fact in its 2020 archive announcement. Does the underlying account come from Williams himself, for example his 1937 essay in The American Magazine, or from family recollection?",
+    claim:
+      "Lesson 19 prints both details as the Getty states them, attributes them to the Getty by name, and adds explicitly that the course could not locate Williams saying either in his own published words. It does not present them as first-hand testimony.",
+    stakes:
+      "Low. The detail is true in the sense that an institution holding his archive prints it, and this course says so. But it is one of the most repeated anecdotes in American architectural history and the kind that becomes unfalsifiable through repetition, exactly like the Abele servant story. If Williams wrote it himself, the lesson should quote him instead of the retelling. If the account traces only to family recollection, saying so makes it stronger rather than weaker.",
+    needs: [
+      "The full text of Paul R. Williams, 'I Am a Negro', The American Magazine, July 1937, and whether either detail appears in it",
+      "Whether Karen Elyse Hudson's books cite a source for the upside-down drawing, and what it is",
+      "Whether the Getty can say what source its own announcement drew on",
+    ],
+    where: [
+      "The Paul Revere Williams archive at the Getty Research Institute and the USC School of Architecture",
+      "Bound volumes of The American Magazine for July 1937, held by major research libraries",
+      "Karen Elyse Hudson's published biographies of Williams",
+    ],
+  },
+  {
+    key: "notd-daaa-current-count",
+    course: "the-name-on-the-door",
+    lesson: "counting-who-is-in-the-room",
+    quote:
+      "That figure belongs to whichever edition of the introduction you are reading, and the page carries no date, so this course reports the sentence and does not treat the number as current.",
+    title: "What is the current, dated count in the Directory of African American Architects?",
+    severity: "medium",
+    question:
+      "How many licensed African American architects does the Directory of African American Architects currently list, how many of them are women, and as of what date? The directory's published introduction states that it lists only eighty four women, but the page carries no date and the directory has since moved to the Directories of Diverse Architects and Designers under NOMA, whose own site says the data is a combination of the old and new databases during a migration.",
+    claim:
+      "Lesson 7 quotes the introduction's sentence about eighty four women, states explicitly that the page is undated and that the number is therefore not treated as current, and carries no live total from the directory at all. The dated figure the lesson relies on is NCARB's two percent from its 2025 edition reporting 2024 data.",
+    stakes:
+      "Medium. The whole point of that lesson is that a count is only usable with a method and a date attached, so the course would be violating its own rule if it printed a live number it could not date. A dated figure from the directory's maintainers, especially the women's count, would let the lesson show two independent measurements of the same population rather than one.",
+    needs: [
+      "A current total of licensed African American architects in the directory, with the date the count was taken",
+      "The current count of women, with its date",
+      "Whether the migration to the new database is complete, and whether the pre-migration and post-migration counts are comparable",
+    ],
+    where: [
+      "The Directories of Diverse Architects and Designers, a project of the National Organization of Minority Architects",
+      "Bradford C. Grant and Dennis Alan Mann, the founders, and the University of Cincinnati's School of Architecture and Interior Design",
+      "NOMA's national office, which now stewards the directory",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {

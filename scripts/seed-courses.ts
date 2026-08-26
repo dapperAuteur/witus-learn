@@ -227,6 +227,7 @@ import { HISTORY_OF_BATHING_COURSE } from "./data/history-of-bathing-course";
 import { WHO_GETS_NAMED_COURSE } from "./data/who-gets-named-course";
 import { SHIRLEY_GRAHAM_COURSE } from "./data/shirley-graham-course";
 import { WHO_SIGNS_THE_PRINT_COURSE } from "./data/who-signs-the-print-course";
+import { THE_NAME_ON_THE_DOOR_COURSE } from "./data/the-name-on-the-door-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -2059,6 +2060,47 @@ async function main() {
       seriesOrder: 3,
       seriesCode: "CREDIT",
       seriesPosition: "02",
+    },
+    // The Name on the Door (CREDIT-03, Culture & History). The second DISCIPLINE course in the
+    // series, from plans/future-courses/08-black-creator-series-research.md §6 ("Architecture").
+    // Spine: a building is credited to a FIRM, a firm is named after whoever owns it, and firm
+    // practice was that only the principal signed, so an employee designer appears nowhere the
+    // public can see. LICENSURE adds a second gate: no licence, no architect of record.
+    //
+    // Kept honest the same way CREDIT-02 was. The firm convention applied to every employee, and
+    // the course proves it from its own sources: Howell Lewis Shay led the Philadelphia Museum of
+    // Art inside the Trumbauer office for years and is nobody's public credit either, and the
+    // designer who finished Irvine Auditorium is so far outside the record that the one colleague
+    // who remembered him could not recall his name. So the racial question is not "who was robbed"
+    // but "who was routed into permanent employee status, and what did licensure do on top".
+    //
+    // VERIFIED then printed: Abele as chief designer from 1909 and running the office after
+    // Trumbauer's 1938 death (Penn University Archives, Duke University Libraries); the
+    // no-signature practice and the 1942 AIA application listing only his sister's house and the
+    // Duke work (Cohen/Hidden City, with the 1942 year corroborated by Penn and Duke); the Cameron
+    // Indoor Stadium drawings as the earliest to carry his name (NCSU Libraries); Beverly Loraine
+    // Greene's Illinois licence of 28 December 1942, certificate 3002, and Sklarek's 1954/1959/
+    // 1962/1980 firsts (Beverly Willis Architecture Foundation); NCARB's two percent (2024 data),
+    // quoted with NCARB's own Certificate-holder caveat.
+    // REPORTED AS CONTESTED: 1909 vs 1908 for the promotion; 1987 vs 1988 vs 1989 for Duke's first
+    // portrait; whether Abele ever visited Durham; Irvine Auditorium (Penn's site vs Dreck Wilson).
+    // TESTED AND REFUSED: the Ecole des Beaux-Arts attendance, the sole-architect claim for the
+    // Philadelphia Museum of Art, the internship-waiver account of John S. Chase's Texas licence, a
+    // year for Paul Revere Williams's AIA membership, the upside-down drawing as a first-hand
+    // account, a live count from the Directory of African American Architects, and the title of the
+    // 1974 book Cohen quotes but does not name. Six open questions are filed in
+    // src/lib/research-checks.ts. 6 sections · 18 teaching lessons · 6 section quizzes
+    // (60/61/64/60/70/72, serving 5) · 1 final (42 serving 10) = 430 questions.
+    // NO migration — pnpm seed:courses.
+    {
+      slug: "the-name-on-the-door",
+      course: THE_NAME_ON_THE_DOOR_COURSE,
+      category: "Culture & History",
+      seriesSlug: "credit",
+      seriesTitle: "Credit: Who Gets Named",
+      seriesOrder: 4,
+      seriesCode: "CREDIT",
+      seriesPosition: "03",
     },
   ]) {
     await seedAuthoredCourse(db, {

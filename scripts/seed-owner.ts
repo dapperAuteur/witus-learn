@@ -44,7 +44,7 @@ async function main() {
       displayName: "BAM",
       isPlatformOwner: true,
       bio: "Brand Anthony McDonald (BAM), founder and instructor across the WitUS schools.",
-      links: { website: "https://brandanthonymcdonald.com", custom: [] },
+      links: { website: "https://i.brandanthonymcdonald.com/portfolio", custom: [] },
     })
     .onConflictDoUpdate({
       target: schema.userProfiles.userId,

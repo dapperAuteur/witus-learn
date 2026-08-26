@@ -4085,6 +4085,21 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // is entirely about two institutions dating the same founding differently, and lesson 23 is a
       // ledger of what was verified, what is contested, and what was refused.
       "who-signs-the-print",
+      // The Name on the Door (CREDIT-03) integrates a primary statute (California Business and
+      // Professions Code section 5536.1 on signing and stamping), the AIA's own contract-document
+      // instructions on the design architect and architect of record split, NCARB's centennial
+      // history of licensure and its NCARB by the Numbers 2025 demographics with the method note
+      // attached, primary correspondence held by the Harvard University Archives (the July 1912
+      // Trumbauer and Coolidge letters), institutional biographies (Penn's University Archives,
+      // Duke University Libraries, the NCSU Libraries architects dictionary, the MIT Black History
+      // Project, the Getty Research Institute, the National Park Service, the Texas State
+      // Historical Association) and secondary scholarship (Amy Cohen's account of Brownlee and
+      // Dreck Wilson, the Beverly Willis Architecture Foundation's documented entries) into one
+      // account of how architectural credit is assigned. It foregrounds where its sources disagree
+      // rather than smoothing them: lesson 9 reports two institutions dating one promotion
+      // differently, lesson 22 reports three dating one portrait differently, and lesson 23 is a
+      // ledger of what was verified, what is contested and what was refused.
+      "the-name-on-the-door",
       // Culture and migration
       "great-migration-and-the-world",
       "hoodoo-tradition-of-resistance",
@@ -4235,6 +4250,19 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // is a ledger of three widely repeated claims tested and left unprinted, with the reason for
       // each, alongside two dates reported as contested with both institutions named.
       "who-signs-the-print",
+      // The Name on the Door runs all three moves of this claim. It DOWNGRADES the popular framing
+      // in lesson 3 (the firm convention withheld a signature from every employee, and two other
+      // Trumbauer designers are equally missing from the public record, one of them so completely
+      // that the colleague who remembered him could not recall his name). It CORROBORATES its dated
+      // claims against issuing institutions before printing them (Penn's University Archives and
+      // Duke University Libraries on the 1909 promotion and the 1938 succession, both of those plus
+      // Cohen on the 1942 AIA admission, the Beverly Willis Architecture Foundation on Greene's
+      // Illinois certificate number 3002, NCARB on the two percent figure). And it CUTS what the
+      // evidence will not carry: lessons 14, 15 and 23 correct the Philadelphia Museum of Art and
+      // Irvine Auditorium attributions downward, refuse the Ecole des Beaux-Arts claim on two
+      // independent reports of no record, and list every other claim tested and left unprinted with
+      // the reason for each.
+      "the-name-on-the-door",
       // Government-forms method course: test a government action against its enabling document
       // (did this body have the power?), the same corroborate-or-challenge move.
       "who-has-the-power",
