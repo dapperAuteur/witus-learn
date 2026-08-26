@@ -2040,5 +2040,522 @@ South Side Community Art Center. (n.d.). *Building legacy*. https://sscartcenter
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 5 — The medium itself as a strategy
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "cheap-multiple-and-portable",
+      title: "17 · Cheap, multiple and portable",
+      section: "Section 5 · The medium itself as a strategy",
+      body: `Choosing a medium is a decision about who will ever see the work. AfriCOBRA made that decision deliberately, and the person who made it possible was a printmaker.
+
+**The collective.** AfriCOBRA, the African Commune of Bad Relevant Artists, was formed in Chicago in 1968. The Smithsonian American Art Museum records that its members set out to express the central ideas of the Black Power movement, self-determination, unity and Black pride, and believed "their art should be uplifting, highlighting the beautiful and heroic aspects of African American experience, and should be easy for ordinary people to understand" (Smithsonian American Art Museum, n.d.-a). Its aesthetic is described as simplified forms, vivid colours, and strong, often competing, patterns.
+
+**Read that mission as a distribution problem.** Art that must be easy for ordinary people to understand is useless if ordinary people never encounter it. A painting hangs in one place. A print exists in many places at once, and the Studio Museum in Harlem states the consequence plainly: "As an inexpensive and quickly produced medium, screenprints hold a long history of amplifying social critique", and AfriCOBRA's works "were affordably priced and stocked in Black-owned businesses" (Studio Museum in Harlem, 2023).
+
+**The person who made it a real option.** Barbara Jones-Hogu, 1938 to 2017, studied etching, lithography, screenprinting, wood engraving and woodblock printing at the School of the Art Institute of Chicago and at the Institute of Design at the Illinois Institute of Technology (Studio Museum in Harlem, n.d.-a). The Studio Museum notes that at the founding she was thirty and still enrolled in her master's programme, and was "the only trained printmaker of the group" (Studio Museum in Harlem, 2023). Her training, it says, helped establish the AfriCOBRA aesthetic, with works such as Unite becoming emblematic of the group.
+
+Her particular contribution is precisely a credit and legibility decision: the Smithsonian American Art Museum singles out "the incorporation of words into her images to make their meaning perfectly clear" (Smithsonian American Art Museum, n.d.-a). Its own copy of Unite is a screenprint dated 1971, in which strong silhouettes, limited colours and bold lettering print the message and make it palpable at once.
+
+**The general point, and it is the sharpest in the course.** The other responses in this course changed the room, the rule or the archive. This one changed the OBJECT. A cheap multiple that lives in a bookshop is a different kind of credit from a signed impression in a collector's flat file: it reaches more people, it is harder to lose, and it does not require any institution's permission. The medium was the strategy.
+
+:::reveal What was AfriCOBRA, when and where was it formed, and what did its members believe their art should be? ||| The African Commune of Bad Relevant Artists, formed in Chicago in 1968. Its members believed their art should be uplifting, should highlight the beautiful and heroic in African American experience, and should be easy for ordinary people to understand.
+
+:::reveal Why does a mission to be understood by ordinary people push a group toward printmaking? ||| Because a painting hangs in one place while a print exists in many at once. Screenprints are inexpensive and quickly produced, and AfriCOBRA's were affordably priced and stocked in Black-owned businesses.
+
+:::reveal What does the Smithsonian American Art Museum single out as Barbara Jones-Hogu's key contribution? ||| The incorporation of words into her images to make their meaning perfectly clear.
+
+## Vocabulary
+- **AfriCOBRA**: the African Commune of Bad Relevant Artists, formed in Chicago in 1968, whose aesthetic used simplified forms, vivid colours and competing patterns.
+- **Screenprint**: a stencil based print process, inexpensive and quick, which is what made affordable multiples practical for the collective.
+- **Multiple**: a work that exists in many identical copies at once, and therefore in many places at once.
+- **Distribution problem**: the question of who will ever encounter a work, which a medium choice answers before any question of content does.
+
+## Sources
+Smithsonian American Art Museum. (n.d.-a). *Oh Freedom! Barbara Jones-Hogu*. https://americanart.si.edu/education/oh-freedom/barbara-jones-hogu
+
+Studio Museum in Harlem. (n.d.-a). *Barbara Jones-Hogu*. https://www.studiomuseum.org/artists/barbara-jones-hogu
+
+Studio Museum in Harlem. (2023). *One people unite*. Studio Magazine. https://www.studiomuseum.org/magazine/one-people-unite`,
+    },
+    {
+      slug: "teaching-with-no-format",
+      title: "18 · Teaching, an output with no format at all",
+      section: "Section 5 · The medium itself as a strategy",
+      body: `Every credit form in this course so far has a slot somewhere: a signature line, a chop, a documentation sheet, a wall label. Teaching has none of them, and it may be the largest output any of these people produced.
+
+**Charles White was a printmaker before he was a teacher.** He studied at the Art Institute of Chicago, the Art Students League in New York, and the Taller de Grafica Popular in Mexico, and he taught at the WPA Southside Community Art Center in Chicago. In 1948 he printed at the Workshop of Graphic Art, a short lived, politically motivated project that produced two portfolios, Yes, the People in 1948 and Negro USA in 1949 (Library of Congress, 2003b).
+
+**And he sits inside this course's own case.** The Library of Congress records that during the same period Blackburn printed We Have Been Believers, dated 1949, among other images for White, "who considered Blackburn to be his primary printer in New York" (Library of Congress, 2003b). One of the two names on that collaboration is on the print.
+
+**Then the classroom.** White joined the faculty of what is now Otis College of Art and Design, eventually became Chair of the Drawing Department, and taught there until his death in 1979. His students included Alonzo Davis, David Hammons and Kerry James Marshall (Otis College of Art and Design, n.d.).
+
+**The date is contested and this course will not pick one.** Otis College's own account says he joined the faculty in 1964. Literature connected with the 2019 LACMA retrospective gives 1965. The gap is a single year and it changes nothing about the argument, which is exactly why it is worth flagging: the discipline is to report the disagreement even when the stakes are low, because a writer who rounds off a small disagreement will round off a large one. This course also declines to print the widely repeated claim that White was the first Black faculty member at Otis, because the college's own page does not say it, and a "first" claim needs the issuing institution.
+
+**Now the mechanism.** Consider what a teacher's output actually is: other people's careers. There is no line for it on a print, no chop, no documentation sheet, no accession record, and no format cap to ration it, because there is no format at all. That sounds like freedom and it is the opposite: an output with no format is an output with no record, and a contribution with no record cannot be verified, cited, ranked, or contested. It survives only as testimony from the people who received it.
+
+Which is why this course can tell you three of White's students by name and cannot tell you what he taught them. The evidence for teaching is inherently thin, and the honest move is to say so rather than to inflate a list of famous names into a measured influence.
+
+:::reveal Where did Charles White train, and what does the Library of Congress record about his printer in New York? ||| He studied at the Art Institute of Chicago, the Art Students League and the Taller de Grafica Popular, and taught at the WPA Southside Community Art Center. He considered Robert Blackburn his primary printer in New York.
+
+:::reveal Why does an output with no format end up with no record, and what does that cost? ||| Because a record needs a slot to sit in. Without one there is nothing to verify, cite, rank or contest, so the contribution survives only as testimony from the people who received it.
+
+:::reveal What two claims about White's Otis appointment does this course refuse to settle or print? ||| The year he joined, because Otis says 1964 and the LACMA retrospective literature says 1965; and that he was the first Black faculty member there, because the college's own page does not say it.
+
+## Vocabulary
+- **Otis College of Art and Design**: the Los Angeles art school, formerly the Otis Art Institute, where Charles White taught until his death in 1979.
+- **Output with no format**: a contribution such as teaching, for which no credit slot exists anywhere, and which therefore leaves no record to verify or contest.
+- **Testimony**: the recollection of people who received a contribution, which is the only surviving evidence for an output with no format.
+- **A first claim**: an assertion that someone was the first to do something, which this catalog prints only when the issuing institution states it.
+
+## Sources
+Library of Congress. (2003b). *Founding the Printmaking Workshop*. In *Creative space: Fifty years of Robert Blackburn's Printmaking Workshop* [Exhibition]. https://www.loc.gov/exhibits/blackburn/blackburn-founding.html
+
+Otis College of Art and Design. (n.d.). *Charles White*. Otis College LibGuides. https://otis.libguides.com/people/charles_white`,
+    },
+    {
+      slug: "the-only-woman-in-the-room",
+      title: "19 · The only woman in the room",
+      section: "Section 5 · The medium itself as a strategy",
+      body: `Emma Amos, 1937 to 2020, was a painter, printmaker and weaver. The printmaking came first, and it is what put her in the room this lesson is named after.
+
+**The training.** Amos earned her BA from Antioch College and a diploma in etching from the London Central School of Art, completed in 1959 while she was in her fourth year at Antioch. Her first solo exhibition, in 1960, was of prints (Studio Museum in Harlem, n.d.-b; Culture Type, 2020).
+
+**The room.** Spiral was a collective of Black artists co-founded in New York in 1963, whose members included Romare Bearden, Charles Alston and Norman Lewis. In 1964, while Amos was pursuing a master's degree at New York University, Hale Woodruff, one of her professors there, invited her to join. The Studio Museum in Harlem states the fact this lesson had to check before printing: "She was the youngest artist and only woman admitted to the group and remained a member until the dissolution of the collective in 1965" (Studio Museum in Harlem, n.d.-b).
+
+**On the word only.** This course tested that word against an institutional source before using it, because unverified superlatives are the most common failure in this genre and the easiest to correct in public. The Studio Museum states it directly and the claim stands. One detail does remain unsettled: some accounts date her joining to 1963 rather than 1964, and this course follows the Studio Museum's 1964 while filing the discrepancy as an open question rather than smoothing it over.
+
+**What being the only one is evidence of, and what it is not.** It is a fact about the composition of a room, which is to say about who was invited. It is not a fact about the woman in it, and it is not a distinction. Reading it as an achievement inverts the finding: a group of fifteen with one woman in it has told you something about the fourteen. Section 1's routing question applies exactly here, one level up from the press: who gets invited into the room where reputations are assembled.
+
+**And the medium did the inviting.** Amos arrived carrying a printmaking training and an exhibition record made of prints. A portfolio of editioned work is portable, reproducible and inspectable in a way a body of paintings is not. It is a credential you can put on a table. That is the fifth strategy in this course, and it is the smallest and the most personally available: not a room, a rule, an archive, or a cheap multiple, but a body of work in a medium that travels.
+
+:::reveal Where did Emma Amos train in printmaking, and what was her first solo exhibition made of? ||| She took a diploma in etching at the London Central School of Art, completed in 1959 during her fourth year at Antioch College. Her first solo exhibition, in 1960, was of prints.
+
+:::reveal What does the Studio Museum in Harlem say about Amos's position within Spiral? ||| That she was the youngest artist and only woman admitted to the group, and remained a member until the collective dissolved in 1965.
+
+:::reveal Being the only woman in a group is evidence about what, and about what not? ||| It is evidence about the composition of the room and about who was invited. It is not evidence about the woman, and it is not a distinction.
+
+## Vocabulary
+- **Spiral**: the collective of Black artists co-founded in New York in 1963, which dissolved in 1965, and whose only woman member was Emma Amos.
+- **Superlative claim**: a statement that someone was the only or the first, which this course verifies against an institutional source before printing.
+- **Portable credential**: a body of editioned work that can be carried, inspected and left behind, which a body of paintings cannot.
+- **Composition of a room**: who was invited into a group, which is what an only-woman fact actually measures.
+
+## Sources
+Culture Type. (2020, May 22). *Emma Amos, 83, a dynamic painter, masterful colorist, and member of Spiral collective, has died*. https://www.culturetype.com/2020/05/22/emma-amos-83-a-dynamic-painter-masterful-colorist-and-member-of-spiral-collective-has-died/
+
+Studio Museum in Harlem. (n.d.-b). *Emma Amos*. https://www.studiomuseum.org/artists/emma-amos`,
+    },
+    {
+      slug: "quiz-medium-as-strategy",
+      title: "20 · Knowledge check: the medium as a strategy",
+      section: "Section 5 · The medium itself as a strategy",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "AfriCOBRA stands for:",
+            options: ["African Commune of Bad Relevant Artists", "African Collective for Bold Radical Art, formed in New York at the end of the 1960s", "Artists for Black Cooperative Regional Advancement, a Chicago funding organisation", "African Committee on Black Representation in the Arts, a national advocacy group"],
+            correctIndex: 0,
+            explanation: "Formed in Chicago in 1968.",
+            sourceLessonSlug: "cheap-multiple-and-portable",
+          },
+          {
+            prompt: "AfriCOBRA was formed in:",
+            options: ["Chicago, in 1968", "New York, in 1963, alongside the collective known as Spiral", "Mexico City, in 1937, as a successor to an earlier graphic workshop", "Los Angeles, in 1965, around the faculty of the Otis Art Institute"],
+            correctIndex: 0,
+            explanation: "The Smithsonian American Art Museum records the city and the year.",
+            sourceLessonSlug: "cheap-multiple-and-portable",
+          },
+          {
+            prompt: "Which ideas did AfriCOBRA set out to express?",
+            options: ["Self-determination, unity and Black pride", "The technical possibilities of colour lithography as a fine art medium", "The case for collective authorship as a replacement for the signature convention", "The need for federal arts funding to replace the programmes ended after the WPA"],
+            correctIndex: 0,
+            explanation: "The central ideas of the Black Power movement, in the Smithsonian's summary.",
+            sourceLessonSlug: "cheap-multiple-and-portable",
+          },
+          {
+            prompt: "AfriCOBRA members believed their art should be easy for whom to understand?",
+            options: ["Ordinary people", "Museum curators, who would decide whether the work entered public collections", "Other artists, so that the aesthetic could be reproduced by the next generation", "Schoolchildren, since the group's programme was primarily educational in aim"],
+            correctIndex: 0,
+            explanation: "And uplifting, highlighting the beautiful and heroic aspects of African American experience.",
+            sourceLessonSlug: "cheap-multiple-and-portable",
+          },
+          {
+            prompt: "The AfriCOBRA aesthetic is described as using:",
+            options: ["Simplified forms, vivid colours, competing patterns", "Muted tones and loose brushwork derived from mid century American abstraction", "Photographic imagery reproduced at large scale in black and white on cheap paper", "Fine hatching and tonal modelling in the tradition of European reproductive engraving"],
+            correctIndex: 0,
+            explanation: "The strong and often competing patterns are part of the Smithsonian's description.",
+            sourceLessonSlug: "cheap-multiple-and-portable",
+          },
+          {
+            prompt: "The lesson reframes AfriCOBRA's mission as which kind of problem?",
+            options: ["A distribution problem", "A funding problem, since collective work requires shared premises and equipment", "A training problem, since few members had studied any printmaking medium", "A legal problem, because collective authorship was untested in American law"],
+            correctIndex: 0,
+            explanation: "Art that must be understood by ordinary people is useless if ordinary people never encounter it.",
+            sourceLessonSlug: "cheap-multiple-and-portable",
+          },
+          {
+            prompt: "The advantage of a print over a painting, in this argument, is that a print:",
+            options: ["Exists in many places at once", "Retains its value better on the secondary market over long periods", "Can be produced without any specialist equipment or trained assistance", "Is legally exempt from the signature conventions that govern unique works"],
+            correctIndex: 0,
+            explanation: "A painting hangs in one place, which settles who will ever see it.",
+            sourceLessonSlug: "cheap-multiple-and-portable",
+          },
+          {
+            prompt: "The Studio Museum in Harlem describes screenprints as:",
+            options: ["Inexpensive and quickly produced", "The most technically demanding of all the fine art printmaking processes", "A medium that reached American workshops only after the 1960s graphics boom", "Unsuitable for editioning, since each pull differs slightly from the last"],
+            correctIndex: 0,
+            explanation: "With a long history of amplifying social critique.",
+            sourceLessonSlug: "cheap-multiple-and-portable",
+          },
+          {
+            prompt: "Where were AfriCOBRA's works stocked?",
+            options: ["Black-owned businesses", "Municipal libraries across Chicago's South and West Side neighbourhoods", "Commercial galleries in New York, which handled the group's distribution", "University art museums, which purchased complete sets of each edition"],
+            correctIndex: 0,
+            explanation: "And they were affordably priced, which is the same decision expressed as a sales channel.",
+            sourceLessonSlug: "cheap-multiple-and-portable",
+          },
+          {
+            prompt: "Barbara Jones-Hogu's dates are:",
+            options: ["1938 to 2017", "1937 to 2020, which are Emma Amos's dates rather than hers", "1920 to 2003, the same span as the master printer Robert Blackburn", "1918 to 1979, matching the printmaker and teacher Charles White"],
+            correctIndex: 0,
+            explanation: "The Studio Museum in Harlem records them on her artist page.",
+            sourceLessonSlug: "cheap-multiple-and-portable",
+          },
+          {
+            prompt: "Where did Jones-Hogu study printmaking?",
+            options: ["The Art Institute of Chicago and the Institute of Design", "The London Central School of Art, where she took a diploma in etching", "The Taller de Grafica Popular, during a period of work in Mexico City", "The Art Students League in New York, on a scholarship after high school"],
+            correctIndex: 0,
+            explanation: "At the School of the Art Institute of Chicago and the Institute of Design at the Illinois Institute of Technology.",
+            sourceLessonSlug: "cheap-multiple-and-portable",
+          },
+          {
+            prompt: "Which processes did Jones-Hogu study?",
+            options: ["Etching, lithography, screenprinting, wood engraving, woodblock", "Only screenprinting, which is why the collective adopted it exclusively", "Colour lithography and intaglio, the two media taught at Tamarind Institute", "Linocut and relief printing, which she learned from Elizabeth Catlett in Mexico"],
+            correctIndex: 0,
+            explanation: "The breadth is the point: she was the group's only trained printmaker.",
+            sourceLessonSlug: "cheap-multiple-and-portable",
+          },
+          {
+            prompt: "At AfriCOBRA's founding, Jones-Hogu was:",
+            options: ["Thirty and still in her master's programme", "The group's oldest member and its only holder of a doctoral degree", "Employed as a master printer at a commercial workshop in Chicago", "Teaching at the Otis Art Institute alongside the painter Charles White"],
+            correctIndex: 0,
+            explanation: "The Studio Museum notes both facts alongside her being the only trained printmaker of the group.",
+            sourceLessonSlug: "cheap-multiple-and-portable",
+          },
+          {
+            prompt: "The Smithsonian American Art Museum singles out which contribution of Jones-Hogu's?",
+            options: ["Incorporating words into her images", "Introducing screenprinting to the collective, which had previously worked in relief", "Designing the AfriCOBRA chop that appears embossed on the group's editions", "Negotiating the shop placements through which the group's prints were sold"],
+            correctIndex: 0,
+            explanation: "To make their meaning perfectly clear, which is a legibility decision as much as an aesthetic one.",
+            sourceLessonSlug: "cheap-multiple-and-portable",
+          },
+          {
+            prompt: "The Smithsonian American Art Museum's copy of Unite is:",
+            options: ["A screenprint dated 1971", "A linocut dated 1947, from the series later retitled The Black Woman", "A lithograph printed by Robert Blackburn at his Chelsea studio in 1949", "An etching made during the artist's master's programme in Chicago"],
+            correctIndex: 0,
+            explanation: "Strong silhouettes, limited colours and bold lettering, printing the message and making it palpable at once.",
+            sourceLessonSlug: "cheap-multiple-and-portable",
+          },
+          {
+            prompt: "What did this response change that the earlier three did not?",
+            options: ["The object", "The convention, by writing collective authorship into a workshop's statutes", "The archive, by founding an institution to hold the record permanently", "The room, by opening a print studio to artists regardless of their background"],
+            correctIndex: 0,
+            explanation: "Blackburn changed the room, the Taller the rule, Burroughs the archive. AfriCOBRA changed the thing itself.",
+            sourceLessonSlug: "cheap-multiple-and-portable",
+          },
+          {
+            prompt: "A cheap multiple in a bookshop differs from a signed impression in a collector's flat file because it:",
+            options: ["Needs nobody's permission", "Is worth more per sheet over a long enough period of time", "Carries the printer's chop rather than the artist's written signature", "Is protected by copyright in a way a unique impression is not"],
+            correctIndex: 0,
+            explanation: "It also reaches more people and is harder to lose. The medium was the strategy.",
+            sourceLessonSlug: "cheap-multiple-and-portable",
+          },
+          {
+            prompt: "Where did Charles White study, among other places?",
+            options: ["The Taller de Grafica Popular", "Tamarind Lithography Workshop, in the years after it opened in Los Angeles", "Universal Limited Art Editions, under the workshop's first master printer", "The London Central School of Art, where he took a diploma in etching"],
+            correctIndex: 0,
+            explanation: "Along with the Art Institute of Chicago and the Art Students League in New York.",
+            sourceLessonSlug: "teaching-with-no-format",
+          },
+          {
+            prompt: "Which two portfolios did the Workshop of Graphic Art produce?",
+            options: ["Yes, the People and Negro USA", "The Negro Woman and I Am the Black Woman, the two titles of one series", "Unite and One People Unite, the two emblematic AfriCOBRA screenprints", "Creative Space and An Informed Energy, the exhibition and history publications"],
+            correctIndex: 0,
+            explanation: "Dated 1948 and 1949. White printed there in 1948, at a short lived and politically motivated project.",
+            sourceLessonSlug: "teaching-with-no-format",
+          },
+          {
+            prompt: "Whom did Charles White consider his primary printer in New York?",
+            options: ["Robert Blackburn", "Will Barnet, his fellow member of the Art Students League faculty", "Elizabeth Catlett, whom he had worked alongside at the Taller in Mexico", "Antonio Frasconi, who also printed at the Workshop of Graphic Art in the 1940s"],
+            correctIndex: 0,
+            explanation: "The Library of Congress records it, and names We Have Been Believers of 1949 among the images Blackburn printed for him.",
+            sourceLessonSlug: "teaching-with-no-format",
+          },
+          {
+            prompt: "Whose name appears on the print of We Have Been Believers?",
+            options: ["White's", "Blackburn's, since he was the master printer responsible for the edition", "Both names, since the Workshop of Graphic Art used a two chop convention", "The Library of Congress, which holds the impression in its collection"],
+            correctIndex: 0,
+            explanation: "One of the two names on that collaboration is on the print, which puts this course's own case inside the lesson.",
+            sourceLessonSlug: "teaching-with-no-format",
+          },
+          {
+            prompt: "Charles White taught at Otis until:",
+            options: ["His death in 1979", "1965, when he left to establish his own workshop in Los Angeles", "1971, the year he was appointed Chair of the Drawing Department", "1992, when he received a MacArthur Fellowship for his work as an educator"],
+            correctIndex: 0,
+            explanation: "He also became Chair of the Drawing Department during his time there.",
+            sourceLessonSlug: "teaching-with-no-format",
+          },
+          {
+            prompt: "Which of these was a student of Charles White at Otis?",
+            options: ["Kerry James Marshall", "Barbara Jones-Hogu, who studied printmaking in Chicago rather than in Los Angeles", "Emma Amos, who was pursuing a master's degree at New York University", "Robert Blackburn, who had learned lithography in Harlem before the war"],
+            correctIndex: 0,
+            explanation: "Otis names Alonzo Davis, David Hammons and Kerry James Marshall.",
+            sourceLessonSlug: "teaching-with-no-format",
+          },
+          {
+            prompt: "What year does Otis College's own account give for White joining the faculty?",
+            options: ["1964", "1965, which is the date given in literature connected with the LACMA retrospective", "1940, the year he helped found the South Side Community Art Center in Chicago", "1948, when he printed the Yes, the People portfolio at the Workshop of Graphic Art"],
+            correctIndex: 0,
+            explanation: "The retrospective literature says 1965, and this course reports the disagreement rather than picking one.",
+            sourceLessonSlug: "teaching-with-no-format",
+          },
+          {
+            prompt: "Why does the course flag a one year disagreement that changes nothing?",
+            options: ["A writer who rounds off a small gap will round off a large one", "Because the year determines which students could have studied with him", "Because Otis and LACMA have each published corrections to their own accounts", "Because the difference bears on whether he was the first Black faculty member"],
+            correctIndex: 0,
+            explanation: "The discipline is to report the disagreement even when the stakes are low.",
+            sourceLessonSlug: "teaching-with-no-format",
+          },
+          {
+            prompt: "Which widely repeated claim about White does this course decline to print?",
+            options: ["That he was the first Black faculty member at Otis", "That he studied at the Taller de Grafica Popular during the 1940s", "That Robert Blackburn was his primary printer in New York", "That he taught David Hammons and Kerry James Marshall at Otis"],
+            correctIndex: 0,
+            explanation: "The college's own page does not say it, and a first claim needs the issuing institution.",
+            sourceLessonSlug: "teaching-with-no-format",
+          },
+          {
+            prompt: "A teacher's actual output is described in this lesson as:",
+            options: ["Other people's careers", "A body of demonstration works produced in front of the class", "The curriculum, which survives in an institution's published records", "The reputation of the department, which outlasts any individual instructor"],
+            correctIndex: 0,
+            explanation: "And there is no line for it on a print, no chop, no documentation sheet and no accession record.",
+            sourceLessonSlug: "teaching-with-no-format",
+          },
+          {
+            prompt: "Having no format cap sounds like freedom but is the opposite because:",
+            options: ["No format means no record", "An uncapped credit is divided among too many people to mean anything", "Teaching is unpaid, so the absence of a limit has no practical consequence", "Institutions fill an unlimited slot with names chosen for their prestige"],
+            correctIndex: 0,
+            explanation: "A contribution with no record cannot be verified, cited, ranked or contested.",
+            sourceLessonSlug: "teaching-with-no-format",
+          },
+          {
+            prompt: "What is the only surviving evidence for an output with no format?",
+            options: ["Testimony", "The employment records of the institution where the teaching took place", "The published work of the students, read as evidence of what they were taught", "Nothing, which is why this course does not attempt to assess teaching at all"],
+            correctIndex: 0,
+            explanation: "The recollection of the people who received it, which is inherently thin evidence.",
+            sourceLessonSlug: "teaching-with-no-format",
+          },
+          {
+            prompt: "The lesson says this course can name three of White's students but cannot say:",
+            options: ["What he taught them", "Whether they completed their degrees at the college he taught in", "How many years each of them spent studying under his instruction", "Which of them he considered the most promising of the three"],
+            correctIndex: 0,
+            explanation: "The honest move is to say so rather than inflate a list of famous names into a measured influence.",
+            sourceLessonSlug: "teaching-with-no-format",
+          },
+          {
+            prompt: "Emma Amos's dates are:",
+            options: ["1937 to 2020", "1938 to 2017, the dates of the AfriCOBRA founder Barbara Jones-Hogu", "1917 to 2010, matching the founder of the museum now called the DuSable", "1920 to 2003, the span of the master printer at Universal Limited Art Editions"],
+            correctIndex: 0,
+            explanation: "She was a painter, printmaker and weaver, and the printmaking came first.",
+            sourceLessonSlug: "the-only-woman-in-the-room",
+          },
+          {
+            prompt: "Where did Amos take her diploma in etching?",
+            options: ["The London Central School of Art", "Antioch College, where she also completed her undergraduate degree", "New York University, during the master's programme she began in the 1960s", "The Art Institute of Chicago, alongside the members of the Arts Craft Guild"],
+            correctIndex: 0,
+            explanation: "Completed in 1959, during her fourth year at Antioch College, where she took her BA.",
+            sourceLessonSlug: "the-only-woman-in-the-room",
+          },
+          {
+            prompt: "Amos's first solo exhibition, in 1960, consisted of:",
+            options: ["Prints", "Woven textiles, the third of the three media she is known for working in", "Paintings, which she had begun making during her time at Antioch College", "Drawings made during her diploma year at the school in London"],
+            correctIndex: 0,
+            explanation: "Which is what makes the print portfolio the credential that carried her into the room.",
+            sourceLessonSlug: "the-only-woman-in-the-room",
+          },
+          {
+            prompt: "Spiral was co-founded in New York in:",
+            options: ["1963", "1968, the same year AfriCOBRA was formed in the city of Chicago", "1937, the year the Taller de Grafica Popular was established in Mexico", "1948, alongside the opening of Blackburn's own studio in Chelsea"],
+            correctIndex: 0,
+            explanation: "It dissolved in 1965, so its whole existence spans about two years.",
+            sourceLessonSlug: "the-only-woman-in-the-room",
+          },
+          {
+            prompt: "Which artists are named as members of Spiral in this lesson?",
+            options: ["Bearden, Alston and Lewis", "Catlett, Burroughs and White, the three Chicago and Mexico printmakers", "Mendez, Arenal and O'Higgins, the founders of the Mexican workshop", "Rivers, Hartigan and Frankenthaler, whose editions Blackburn printed at ULAE"],
+            correctIndex: 0,
+            explanation: "Romare Bearden, Charles Alston and Norman Lewis, among a larger membership.",
+            sourceLessonSlug: "the-only-woman-in-the-room",
+          },
+          {
+            prompt: "Who invited Amos to join Spiral?",
+            options: ["Hale Woodruff", "Romare Bearden, who had co-founded the collective the previous year", "Charles Alston, who had also mentored Robert Blackburn in Harlem", "Norman Lewis, the member whose work was closest to hers in style"],
+            correctIndex: 0,
+            explanation: "One of her professors at New York University, where she was pursuing a master's degree.",
+            sourceLessonSlug: "the-only-woman-in-the-room",
+          },
+          {
+            prompt: "The Studio Museum in Harlem says Amos was the youngest artist and:",
+            options: ["The only woman admitted to the group", "The only member who worked primarily as a printmaker rather than a painter", "The last member to join before the collective dissolved two years later", "The only member who had trained outside the United States before joining"],
+            correctIndex: 0,
+            explanation: "She remained a member until the dissolution of the collective in 1965.",
+            sourceLessonSlug: "the-only-woman-in-the-room",
+          },
+          {
+            prompt: "Why did this course test the word \"only\" before printing it?",
+            options: ["Unverified superlatives are the easiest claims to correct in public", "Because the Studio Museum's account contradicts every other published source", "Because the word implies an exclusion that the collective's records deny", "Because superlatives are prohibited outright in this catalog's content policy"],
+            correctIndex: 0,
+            explanation: "The Studio Museum states it directly, so the claim stands. The verification is what makes printing it safe.",
+            sourceLessonSlug: "the-only-woman-in-the-room",
+          },
+          {
+            prompt: "Which detail about Amos and Spiral does this course leave unsettled?",
+            options: ["The year she joined", "Whether Woodruff or Bearden extended the invitation to her", "Whether she remained a member until the group dissolved", "Whether she was the youngest as well as the only woman"],
+            correctIndex: 0,
+            explanation: "The Studio Museum says 1964 and some accounts say 1963. The course follows 1964 and files the discrepancy.",
+            sourceLessonSlug: "the-only-woman-in-the-room",
+          },
+          {
+            prompt: "Being the only woman in a group of fifteen tells you something about:",
+            options: ["The fourteen", "The one, whose achievement in being admitted the fact records", "The medium, which had excluded women from professional training", "Nothing verifiable, since group composition is a matter of chance"],
+            correctIndex: 0,
+            explanation: "It is a fact about who was invited, which is the routing question one level up from the press.",
+            sourceLessonSlug: "the-only-woman-in-the-room",
+          },
+          {
+            prompt: "Reading only-woman status as an achievement does what to the finding?",
+            options: ["Inverts it", "Strengthens it, by drawing attention to the individual rather than the group", "Leaves it unchanged, since both readings rest on the same documented fact", "Makes it unverifiable, because achievement is a judgment rather than a record"],
+            correctIndex: 0,
+            explanation: "It is a fact about the composition of a room, not a distinction conferred on the person in it.",
+            sourceLessonSlug: "the-only-woman-in-the-room",
+          },
+          {
+            prompt: "Why is a print portfolio a stronger credential than a body of paintings?",
+            options: ["It is portable, reproducible and inspectable", "It demonstrates technical training that painting cannot demonstrate at all", "It can be authenticated by a workshop chop, which a painting never carries", "It is cheaper to produce, so a young artist can make more of it faster"],
+            correctIndex: 0,
+            explanation: "It is a credential you can put on a table, which is the fifth strategy in this course.",
+            sourceLessonSlug: "the-only-woman-in-the-room",
+          },
+          {
+            prompt: "The fifth strategy is described as the smallest and the most:",
+            options: ["Personally available", "Expensive, since it requires access to a fully equipped print workshop", "Recent, since it depends on the twentieth century graphics boom to work", "Collective, because a portfolio is assembled from the work of many hands"],
+            correctIndex: 0,
+            explanation: "Not a room, a rule, an archive or a cheap multiple, but a body of work in a medium that travels.",
+            sourceLessonSlug: "the-only-woman-in-the-room",
+          },
+          {
+            prompt: "A \"multiple\", in this section's vocabulary, is a work that exists:",
+            options: ["In many identical copies at once", "In more than one medium, such as a painting and a print of the same image", "In an edition large enough that no individual impression is separately numbered", "Outside any collection, because it was distributed rather than sold"],
+            correctIndex: 0,
+            explanation: "And therefore in many places at once, which is what makes it a distribution strategy.",
+            sourceLessonSlug: "cheap-multiple-and-portable",
+          },
+          {
+            prompt: "A \"distribution problem\" is a question about:",
+            options: ["Who will ever encounter a work", "How an edition is priced relative to comparable work in the same market", "Which dealer holds the right to sell a workshop's editions in a given region", "How many impressions a printing surface can bear before it degrades"],
+            correctIndex: 0,
+            explanation: "A medium choice answers it before any question of content does.",
+            sourceLessonSlug: "cheap-multiple-and-portable",
+          },
+          {
+            prompt: "\"A first claim\" is printed in this catalog only when:",
+            options: ["The issuing institution states it", "Two or more independent published sources agree on the wording", "No published source contradicts it after a reasonable search", "The person concerned made the claim publicly during their own lifetime"],
+            correctIndex: 0,
+            explanation: "Which is why the claim about White at Otis is left out of this course.",
+            sourceLessonSlug: "teaching-with-no-format",
+          },
+          {
+            prompt: "\"Composition of a room\" is what an only-woman fact actually measures, meaning:",
+            options: ["Who was invited", "How many people the group could physically accommodate at its meetings", "Which media the group's members worked in and which they excluded", "How long the group survived before its internal disagreements ended it"],
+            correctIndex: 0,
+            explanation: "Which is why the finding is about the group rather than about the individual.",
+            sourceLessonSlug: "the-only-woman-in-the-room",
+          },
+          {
+            prompt: "Charles White taught at which WPA institution in Chicago?",
+            options: ["The Southside Community Art Center", "The Harlem Community Art Center, where Blackburn had learned lithography", "The Institute of Design at the Illinois Institute of Technology", "The Ebony Museum of Negro History and Art, on Chicago's South Side"],
+            correctIndex: 0,
+            explanation: "The same centre he had helped found in 1940 with Margaret Taylor-Burroughs and others.",
+            sourceLessonSlug: "teaching-with-no-format",
+          },
+          {
+            prompt: "The Workshop of Graphic Art is described as:",
+            options: ["Short lived and politically motivated", "The largest commercial print publisher operating in New York after the war", "A cooperative that later became the Robert Blackburn Printmaking Workshop", "A training programme established with support from the Ford Foundation"],
+            correctIndex: 0,
+            explanation: "It produced two portfolios, Yes, the People in 1948 and Negro USA in 1949.",
+            sourceLessonSlug: "teaching-with-no-format",
+          },
+          {
+            prompt: "\"Testimony\" is defined here as:",
+            options: ["The recollection of people who received a contribution", "A sworn statement given in support of an attribution dispute", "A published account written by the person who made the contribution", "An institution's official record of who worked there and in what years"],
+            correctIndex: 0,
+            explanation: "It is the only surviving evidence for an output that has no format anywhere.",
+            sourceLessonSlug: "teaching-with-no-format",
+          },
+          {
+            prompt: "A \"superlative claim\" is one asserting that someone was:",
+            options: ["The only or the first", "The most influential figure working in a medium at a given time", "Better trained than their contemporaries in the same discipline", "Responsible for a change that would not have happened otherwise"],
+            correctIndex: 0,
+            explanation: "This course verifies such a claim against an institutional source before printing it.",
+            sourceLessonSlug: "the-only-woman-in-the-room",
+          },
+          {
+            prompt: "\"Screenprint\" is described in this section as which kind of process?",
+            options: ["Stencil based", "Relief based, cut into a block and printed from the raised surface", "Planographic, printed from a flat stone treated chemically", "Intaglio, printed from lines incised below the surface of a plate"],
+            correctIndex: 0,
+            explanation: "Inexpensive and quick, which is what made affordable multiples practical for AfriCOBRA.",
+            sourceLessonSlug: "cheap-multiple-and-portable",
+          },
+          {
+            prompt: "Spiral dissolved in which year?",
+            options: ["1965", "1968, when several of its members helped form AfriCOBRA in Chicago", "1963, within months of the collective first being convened in New York", "1971, at the same moment Blackburn's workshop incorporated as a non-profit"],
+            correctIndex: 0,
+            explanation: "Amos remained a member until then.",
+            sourceLessonSlug: "the-only-woman-in-the-room",
+          },
+          {
+            prompt: "Section 5's overall claim is that a medium choice is a decision about:",
+            options: ["Who will ever see the work", "Which technical skills an artist will need to acquire in order to make it", "Whether the artist or the printer will be named on the finished sheet", "How long the object will survive under normal conditions of storage"],
+            correctIndex: 0,
+            explanation: "Which is what makes the medium itself a credit and access strategy rather than a neutral choice.",
+            sourceLessonSlug: "cheap-multiple-and-portable",
+          },
+          {
+            prompt: "\"Portable credential\" means a body of editioned work that can be:",
+            options: ["Carried, inspected and left behind", "Reproduced by anyone who obtains the original printing surface", "Valued precisely, because comparable impressions have sold at auction", "Exhibited without the artist being present to explain the intention"],
+            correctIndex: 0,
+            explanation: "Which a body of paintings cannot, and which is how a print portfolio functions as an entry ticket.",
+            sourceLessonSlug: "the-only-woman-in-the-room",
+          },
+          {
+            prompt: "Which of the five strategies in this course is the one an individual can use alone, today?",
+            options: ["Building a portable body of work", "Founding a museum that will hold the record for future strangers", "Writing collective authorship into a workshop's foundational statutes", "Opening a print studio with affordable access for artists of any background"],
+            correctIndex: 0,
+            explanation: "The smallest and the most personally available of the five, and the one Amos arrived with.",
+            sourceLessonSlug: "the-only-woman-in-the-room",
+          },
+          {
+            prompt: "The Studio Museum credits Jones-Hogu's printmaking training with helping establish what?",
+            options: ["The AfriCOBRA aesthetic", "The pricing structure that kept the group's prints affordable to buyers", "The screenprinting facility at the Institute of Design in Chicago", "The collective's practice of exhibiting only in Black-owned businesses"],
+            correctIndex: 0,
+            explanation: "With works such as Unite becoming emblematic of the group's output.",
+            sourceLessonSlug: "cheap-multiple-and-portable",
+          },
+        ],
+      },
+    },
   ],
 };
