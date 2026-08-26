@@ -1,5 +1,5 @@
-import { apiContext, errorJson, isTenantAdmin, json } from "@/lib/api";
-import { isPlatformOwner } from "@/lib/session";
+import { apiContext, errorJson, json } from "@/lib/api";
+import { canManageCourseReviewers } from "@/lib/course-reviewers";
 
 type Params = { params: Promise<{ id: string; auditorId: string }> };
 
@@ -12,11 +12,11 @@ export async function DELETE(_req: Request, { params }: Params) {
 
   const course = await sdb.getCourseById(id);
   if (!course) return errorJson("Not found", 404);
-  const allowed =
-    session.user.id === course.instructorId ||
-    (await isPlatformOwner(session.user.id)) ||
-    (await isTenantAdmin(session, sdb.tenantId));
-  if (!allowed) return errorJson("Forbidden", 403);
+  // Same gate as minting a grant (src/lib/course-reviewers.ts): whoever may hand one out is
+  // whoever may take it back, and there is one definition of that for both.
+  if (!(await canManageCourseReviewers(session, sdb.tenantId, course.instructorId))) {
+    return errorJson("Forbidden", 403);
+  }
 
   // Scoped by tenant AND course, so an id from another school (or another course) deletes nothing
   // and reports the same "not found" a made-up id would.

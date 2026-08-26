@@ -8,9 +8,9 @@ type Params = { params: Promise<{ id: string }> };
 
 const Body = z.object({ email: z.string().email() });
 
-// Who may hand out an audit grant now lives in src/lib/course-reviewers.ts, shared with the
-// self-nomination approval route so the two paths into the same privilege cannot drift apart.
-const canManageAuditors = canManageCourseReviewers;
+// Who may hand out an audit grant now lives in src/lib/course-reviewers.ts (canManageCourseReviewers),
+// shared with the self-nomination approval route so the two paths into the same privilege cannot
+// drift apart: widening one widens both, and the isolation suite asserts every route uses it.
 
 // GET /api/courses/[id]/auditors — list this course's auditors (owner / its instructor / admin).
 export async function GET(_req: Request, { params }: Params) {
@@ -20,7 +20,7 @@ export async function GET(_req: Request, { params }: Params) {
 
   const course = await sdb.getCourseById(id);
   if (!course) return errorJson("Not found", 404);
-  if (!(await canManageAuditors(session, sdb.tenantId, course.instructorId))) {
+  if (!(await canManageCourseReviewers(session, sdb.tenantId, course.instructorId))) {
     return errorJson("Forbidden", 403);
   }
 
@@ -47,7 +47,7 @@ export async function POST(req: Request, { params }: Params) {
 
   const course = await sdb.getCourseById(id);
   if (!course) return errorJson("Not found", 404);
-  if (!(await canManageAuditors(session, sdb.tenantId, course.instructorId))) {
+  if (!(await canManageCourseReviewers(session, sdb.tenantId, course.instructorId))) {
     return errorJson("Forbidden", 403);
   }
 
