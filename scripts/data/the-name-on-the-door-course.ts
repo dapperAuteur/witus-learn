@@ -71,7 +71,7 @@ export const THE_NAME_ON_THE_DOOR_COURSE: AuthoredCourse = {
       section: "Section 1 · The credited unit is a firm",
       body: `Three buildings, three cities, one credit line.
 
-Harry Elkins Widener Memorial Library at Harvard, finished in 1915. The central branch of the Free Library of Philadelphia. The original campus of Duke University in Durham, North Carolina. Look up who designed any of them and you will find the same answer: **Horace Trumbauer**.
+Harry Elkins Widener Memorial Library at Harvard, dedicated on Commencement Day in 1915 (Harvard University Archives, n.d.). The central branch of the Free Library of Philadelphia. The original campus of Duke University in Durham, North Carolina. Look up who designed any of them and you will find the same answer: **Horace Trumbauer**.
 
 **That answer names a firm, not a hand.** Trumbauer started his own practice in Philadelphia in 1890 and ran it until his death in 1938 (North Carolina Architects and Builders, n.d.). A firm carries the name of whoever owns it, which means an architectural credit line is, at bottom, an ownership statement wearing the clothes of an authorship statement. Nothing about the convention promises that the person named drew anything.
 
@@ -99,6 +99,8 @@ That gap is where this whole course lives. It is not a gap anyone opened on purp
 Cohen, A. (2019, May 23). *Unraveling myths about Philly's pioneering African American architect*. Hidden City Philadelphia. https://hiddencityphila.org/2019/05/unraveling-myths-about-phillys-pioneering-african-american-architect/
 
 Harvard Gazette. (2020, February 26). *Recognizing architect Julian Abele's contributions to Harvard*. Harvard University. https://news.harvard.edu/gazette/story/2020/02/recognizing-architect-julian-abeles-contributions-to-harvard/
+
+Harvard University Archives. (n.d.). *Widener Library*. Harvard Library. https://guides.library.harvard.edu/hua/Widener_Library
 
 North Carolina Architects and Builders. (n.d.). *Abele, Julian Francis (1881-1950)*. NCSU Libraries. https://ncarchitects.lib.ncsu.edu/people/P000277`,
     },
@@ -266,10 +268,10 @@ University Archives and Records Center. (n.d.). *Julian Francis Abele*. Universi
             sourceLessonSlug: "the-credited-unit-is-a-firm",
           },
           {
-            prompt: "Widener Library at Harvard was finished in:",
+            prompt: "Widener Library at Harvard was dedicated in:",
             options: ["1915", "1912, the year the commission was agreed between the client and the firm", "1920, after a delay caused by American entry into the First World War", "1938, in the same year Horace Trumbauer died and the office changed hands"],
             correctIndex: 0,
-            explanation: "The commission was being settled in 1912 and the building was finished three years later.",
+            explanation: "On Commencement Day, three years after the commission was being settled in 1912.",
             sourceLessonSlug: "the-credited-unit-is-a-firm",
           },
           {
@@ -588,10 +590,10 @@ University Archives and Records Center. (n.d.). *Julian Francis Abele*. Universi
             sourceLessonSlug: "the-convention-did-not-check-race",
           },
           {
-            prompt: "The Trumbauer firm's work included mansions in Newport and New York because the practice specialised in:",
-            options: ["Houses for great wealth", "Public libraries commissioned by municipal authorities across the eastern seaboard", "University campuses planned as complete architectural ensembles from the outset", "Commercial office towers built with the new steel framing methods of the period"],
+            prompt: "How long did Coolidge take to reply to Trumbauer's July 1912 letter?",
+            options: ["Six days", "Three weeks, after consulting the university's building committee", "The same afternoon, by telegram from Cambridge to Philadelphia", "Two months, once the firm had submitted a revised set of plans"],
             correctIndex: 0,
-            explanation: "The firm built Gilded Age houses, which is how it came to know the client who funded Duke.",
+            explanation: "And the reply told Trumbauer there was no need to travel, because the plan was already agreed.",
             sourceLessonSlug: "the-credited-unit-is-a-firm",
           },
           {
@@ -1425,10 +1427,10 @@ University Archives and Records Center. (n.d.). *Julian Francis Abele*. Universi
             sourceLessonSlug: "abele-and-the-office",
           },
           {
-            prompt: "The two Duke campuses the Trumbauer office built opened in:",
-            options: ["1927 and 1930", "1924 and 1926, immediately after the Duke Endowment was established", "1938 and 1939, the years around the principal's death", "1892 and 1902, when Trinity College first moved to Durham"],
+            prompt: "Which Harvard building appears in Penn's list of the Trumbauer office's work outside Philadelphia?",
+            options: ["The Widener Memorial Library", "Memorial Hall, the university's Civil War memorial building", "The Fogg Museum, built during the same decade", "Sever Hall, in Harvard Yard"],
             correctIndex: 0,
-            explanation: "The Georgian East Campus first, then the Gothic West Campus three years later.",
+            explanation: "Alongside mansions in Newport and New York and the campuses of Duke University.",
             sourceLessonSlug: "abele-and-the-office",
           },
           {
@@ -1733,17 +1735,17 @@ University Archives and Records Center. (n.d.). *Julian Francis Abele*. Universi
             sourceLessonSlug: "the-1942-application",
           },
           {
-            prompt: "Abele's Duke work included a Gothic chapel and the building now known as:",
-            options: ["Cameron Indoor Stadium", "Baldwin Auditorium, the domed focal point of the Georgian campus", "The Rubenstein Library, where his portrait now hangs", "The Allen Building, which was still unfinished when he died"],
+            prompt: "Whose mansion, named in Penn's list of the firm's work, was Whitemarsh Hall?",
+            options: ["Edward Stotesbury's", "James Buchanan Duke's, before the university commission", "Horace Trumbauer's own, outside Philadelphia", "Harry Elkins Widener's, built by his mother as a memorial"],
             correctIndex: 0,
-            explanation: "Its drawings are also the earliest recorded to carry his name beside the firm's.",
+            explanation: "One of a number of mansions the office built, alongside its libraries and museums.",
             sourceLessonSlug: "abele-and-the-office",
           },
           {
-            prompt: "The Trumbauer office's largest commission and its only one in the South was:",
-            options: ["Duke University", "Widener Library at Harvard, which took three years to complete", "Whitemarsh Hall, the Stotesbury mansion outside Philadelphia", "The Philadelphia Museum of Art, built over several decades"],
+            prompt: "Which of these Philadelphia buildings is listed among the Trumbauer office's work?",
+            options: ["The Land Title Building", "Independence Hall, restored by the firm during the 1920s", "The Wanamaker department store on Market Street", "Boathouse Row's clubhouses along the Schuylkill River"],
             correctIndex: 0,
-            explanation: "Two adjacent campuses in Durham, opening in 1927 and 1930.",
+            explanation: "Alongside the Philadelphia Museum of Art, the Free Library's central branch and Whitemarsh Hall.",
             sourceLessonSlug: "abele-and-the-office",
           },
           {
@@ -2142,10 +2144,10 @@ University Archives and Records Center. (n.d.). *Julian Francis Abele*. Universi
             sourceLessonSlug: "too-much-credit",
           },
           {
-            prompt: "Cohen directs readers wanting the museum's full design history to:",
-            options: ["Brownlee's book", "The Athenaeum of Philadelphia's collection of presentation prints", "The museum's own published centenary history", "Penn's University Archives and Records Center"],
+            prompt: "Where in the museum project's timeline did Abele step back in?",
+            options: ["Toward the end", "At the outset, before any other designer had been assigned to it", "Only after Trumbauer's death, when he took over the office", "Never, according to the research Cohen relies on"],
             correctIndex: 0,
-            explanation: "David Brownlee's Building the City Beautiful, for what she calls the nitty gritty details.",
+            explanation: "He did numerous initial designs, Shay led for years, and Abele returned near the close of the project.",
             sourceLessonSlug: "too-much-credit",
           },
           {
@@ -2893,10 +2895,10 @@ National Park Service. (n.d.). *One brick at a time: Robert R. Taylor's architec
             sourceLessonSlug: "a-door-of-your-own",
           },
           {
-            prompt: "Sklarek's twenty years at Gruen Associates began in:",
-            options: ["1960", "1955, when she was offered a position at Skidmore, Owings and Merrill", "1962, the year she was licensed in California", "1980, when she was elected to the College of Fellows"],
+            prompt: "How long did Sklarek stay at Gruen Associates?",
+            options: ["Twenty years", "Four years, before founding a practice of her own", "Five years, before moving to Welton Becket Associates", "Two years, long enough to qualify for a California licence"],
             correctIndex: 0,
-            explanation: "After five years at Skidmore, Owings and Merrill in New York.",
+            explanation: "Rising from a staff position to director of architecture over that period.",
             sourceLessonSlug: "sklarek-in-production",
           },
           {
@@ -2914,17 +2916,17 @@ National Park Service. (n.d.). *One brick at a time: Robert R. Taylor's architec
             sourceLessonSlug: "greene-and-brown",
           },
           {
-            prompt: "Sklarek taught evening architecture courses in New York while working at:",
-            options: ["Skidmore, Owings and Merrill", "Gruen Associates, before relocating to Los Angeles", "Welton Becket Associates, as a vice president of the firm", "The City of New York's Department of Public Works"],
+            prompt: "Sklarek's responsibilities as director of architecture included:",
+            options: ["Hiring and overseeing staff architects", "Setting the fees the firm charged for each new commission", "Approving the firm's design concepts before they reached the client", "Representing the firm at the state licensing board's hearings"],
             correctIndex: 0,
-            explanation: "She joined that firm in 1955 and stayed five years before moving west.",
+            explanation: "Alongside coordinating the technical side of the firm's major projects.",
             sourceLessonSlug: "sklarek-in-production",
           },
           {
-            prompt: "What did the Getty call Williams in announcing the archive acquisition?",
-            options: ["The most significant African American architect of the 20th century", "The first architect of any background to practise in Los Angeles", "The most published American residential designer of the interwar years", "A designer whose reputation had been overstated by later writers"],
+            prompt: "Roughly how many original drawings, alongside the plans, survive in the Williams archive?",
+            options: ["Ten thousand", "Two hundred, mostly presentation renderings for his residential clients", "Thirty five thousand, matching the number of plans", "None, since only the plans escaped the 1992 fire"],
             correctIndex: 0,
-            explanation: "The archive documents a career spanning nearly six decades and over three thousand projects.",
+            explanation: "Together with about thirty five thousand plans, kept for decades by his granddaughter.",
             sourceLessonSlug: "a-door-of-your-own",
           },
           {
