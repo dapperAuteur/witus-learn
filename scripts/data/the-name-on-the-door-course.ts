@@ -1164,6 +1164,138 @@ NCARB. (n.d.-b). *NCARB by the numbers 2025: Demographics*. National Council of 
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3 — Julian Abele, and the office that signed one name
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "abele-and-the-office",
+      title: "9 · Abele, and the office he never left",
+      section: "Section 3 · Julian Abele, and the office that signed one name",
+      body: `Julian Francis Abele was born in Philadelphia on 30 April 1881, the youngest of eight children, and through his mother he was a descendant of the Reverend Absalom Jones, founder of the Free African Society and of St Thomas Episcopal Church (University Archives and Records Center, n.d.).
+
+**He was, by any measure, the most thoroughly trained person in the story.** He went to the Institute for Colored Youth, then Brown Preparatory School, then the Pennsylvania Museum School of Industrial Art. He enrolled at the University of Pennsylvania in 1898 and took a B.A. in architecture in 1902, and Penn's own archives describe him as the first African American graduate of what is now its School of Design. He also earned a certificate from the Pennsylvania Academy of the Fine Arts (Cohen, 2019; University Archives and Records Center, n.d.).
+
+**And he worked the entire time.** Penn records that Abele spent all four undergraduate years employed as a designer at the Louis Hickman architectural firm, fitting the job around afternoon and evening classes, while collecting a string of student prizes and serving as president of the Architectural Society.
+
+**Horace Trumbauer hired him immediately.** Penn's biography adds a hedge worth keeping: Trumbauer "is said to have helped to finance the young architect's three years European travel and study" (University Archives and Records Center, n.d.). Said to have. Section 4 is about what happened to that sentence when other people retold it.
+
+**He returned to Philadelphia and to the Trumbauer firm in 1906, and never worked anywhere else.** Penn puts it flatly: "He spent his entire professional life with this large, nationally known firm, advancing to the position of chief designer in 1909 and taking over the office after Trumbauer's death in 1938."
+
+**One date in that sentence is contested, and this course reports the disagreement rather than choosing.** Penn's archives and Duke University Libraries both say Abele became chief designer in **1909**. The NCSU Libraries' dictionary of North Carolina architects says Trumbauer "brought Abele into the firm in 1906 and promoted him to chief designer in **1908**" (North Carolina Architects and Builders, n.d.). Nothing in the argument turns on the year. The course's rule is that an unresolved conflict between institutional sources gets written down rather than smoothed over.
+
+**What the firm produced under that arrangement is the reason anyone cares.** The Trumbauer office designed the Philadelphia Museum of Art, the central branch of the Free Library of Philadelphia, the Land Title Building, and Whitemarsh Hall for Edward Stotesbury. At Penn it produced Irvine Auditorium, the Dunning Coaches Center and the President's House. Outside Philadelphia it produced the Widener Memorial Library at Harvard, mansions in Newport and New York, and the English Gothic and Georgian campuses of Duke University (University Archives and Records Center, n.d.). Cohen records that Abele designed thirty nine buildings for the Durham campus.
+
+**After 1938 the name on the door did not change.** Duke University Libraries records that "He led the firm with William O. Frank following Trumbauer's death in 1938" (Duke University Libraries, n.d.). The NCSU entry names the successor practice: the Office of Horace Trumbauer, and offers the reason without dressing it up, that the depth of the Great Depression was not a good moment to change the identity and the name of an established firm.
+
+So the man who ran the office spent twelve more years working under a dead man's name. That is not a metaphor. That is what the letterhead said.
+
+:::reveal What did Penn's archives say about Abele's whole professional life, and what is the significant thing about it? ||| He spent all of it with one firm, Horace Trumbauer's, advancing to chief designer and eventually taking over the office, so his name never appeared on a practice of his own.
+
+:::reveal Which institutions disagree about the year Abele became chief designer, and what do they say? ||| Penn's University Archives and Duke University Libraries say 1909; the NCSU Libraries' North Carolina architects dictionary says 1908.
+
+:::reveal What happened to the firm's name after Trumbauer died in 1938? ||| Nothing. It continued as the Office of Horace Trumbauer, and Abele led it with William O. Frank until his own death in 1950.
+
+## Vocabulary
+- **Chief designer**: the senior design role inside a firm, responsible for the office's design output without owning the practice or its name.
+- **Institute for Colored Youth**: the Philadelphia school Abele attended, where his aunt taught drawing and steered him toward architecture.
+- **Office of Horace Trumbauer**: the successor practice after 1938, which kept the dead principal's name while Abele led it.
+- **Contested date**: a fact on which institutional sources disagree, which this course reports as a disagreement rather than resolving by preference.
+
+## Sources
+Cohen, A. (2019, May 23). *Unraveling myths about Philly's pioneering African American architect*. Hidden City Philadelphia. https://hiddencityphila.org/2019/05/unraveling-myths-about-phillys-pioneering-african-american-architect/
+
+Duke University Libraries. (n.d.). *Julian Abele (1881-1950)*. Duke University. https://library.duke.edu/rubenstein/uarchives/history/articles/abele
+
+North Carolina Architects and Builders. (n.d.). *Abele, Julian Francis (1881-1950)*. NCSU Libraries. https://ncarchitects.lib.ncsu.edu/people/P000277
+
+University Archives and Records Center. (n.d.). *Julian Francis Abele*. University of Pennsylvania. https://archives.upenn.edu/exhibits/penn-people/biography/julian-francis-abele/`,
+    },
+    {
+      slug: "the-1942-application",
+      title: "10 · The 1942 application",
+      section: "Section 3 · Julian Abele, and the office that signed one name",
+      body: `This is the lesson the whole course was built to reach, and it turns on a single ordinary document.
+
+**First, the practice, in Cohen's words.** "As was common practice, employees at the Trumbauer firm did not sign their work. The only name to appear on the drawings and blueprints of the vast majority of projects in which Abele was involved was that of Horace Trumbauer" (Cohen, 2019). Cohen adds a sentence people tend to skip: "Abele did not overtly bristle at this policy."
+
+**Now the document.** In 1942, forty years into his career and four years after he had taken over the firm, Julian Abele applied for membership of the American Institute of Architects. An application of that kind asks what you have designed. Cohen records what he was able to answer: "the only buildings he listed as his own were a house he designed for his sister and the Duke University buildings he worked on after Trumbauer's death" (Cohen, 2019).
+
+**Read that as a measurement, because that is what it is.** Here is a man who had been chief designer of a nationally known office for more than three decades. Ask him, in writing, on a form, to list his own work, and the answer is one house and the buildings that happened after the principal died. Not because he was modest, and not because somebody suppressed the list. Because the convention had not left him a document to point at.
+
+That is what a format cap does when nobody intervenes. CREDIT-00 names the mechanism in general; this is the cleanest single instance of it anywhere in the catalog, because the consequence is not a feeling or an inference. It is a form, with a short list on it.
+
+**Two institutions confirm the year and add the reason.** Duke University Libraries: "It was not until 1942 that Julian Abele was admitted as a member of the American Institute of Architects" (Duke University Libraries, n.d.). Penn's archives put the racial half plainly: "Racial prejudices deterred him from visiting the Duke University campus he designed and delayed his admission to the American Institute of Architects until 1942" (University Archives and Records Center, n.d.).
+
+**Then, after 1938, his name reaches a drawing.** The NCSU Libraries entry records the exact moment: "The architectural drawings for the Indoor Stadium are the earliest to have 'Office of Horace Trumbauer, Julian Abele, Architect,' on them" (North Carolina Architects and Builders, n.d.). The building is now Cameron Indoor Stadium, and the drawings date from after Trumbauer's death. The convention did not bend for him. It ran out of a principal.
+
+**One more sentence, and it needs handling with care.** Duke University Libraries reports that while discussing his work Abele said: "The lines are all Mr. Trumbauer's, but the shadows are all mine" (Duke University Libraries, n.d.). It is widely quoted, and this course prints it as Duke's library reports it: an attributed statement, without a dated document behind it that this course could examine. If it is his, it is the sharpest description of an employee designer's position anyone has produced. Either way the 1942 form says the same thing, and the form is a record.
+
+:::reveal What could Julian Abele list as his own work when he applied to the AIA in 1942? ||| A house he had designed for his sister, and the Duke University buildings he worked on after Trumbauer's death.
+
+:::reveal Which drawings are the earliest known to carry Abele's name alongside the firm's, and what does their date tell you? ||| The drawings for the Indoor Stadium at Duke, now Cameron Indoor Stadium, which date from after Trumbauer's death in 1938, so the convention ended with the principal rather than bending for the employee.
+
+:::reveal Why is the 1942 application better evidence than the popular story about Abele? ||| Because it is a document that measures the consequence of the convention directly, rather than a claim about somebody's intentions that a reader has to take on trust.
+
+## Vocabulary
+- **Format cap**: from CREDIT-00, the hard limit a medium places on how many names it can display, which forces a rationing decision.
+- **Membership application**: the AIA form on which a candidate lists their own work, and the document that measures what the convention left Abele able to claim.
+- **Attributed statement**: a quotation an institution reports without a dated document behind it, printed here as attribution rather than as a verified quotation.
+- **Cameron Indoor Stadium**: the Duke building whose drawings are the earliest recorded to carry Abele's name beside the firm's.
+
+## Sources
+Cohen, A. (2019, May 23). *Unraveling myths about Philly's pioneering African American architect*. Hidden City Philadelphia. https://hiddencityphila.org/2019/05/unraveling-myths-about-phillys-pioneering-african-american-architect/
+
+Duke University Libraries. (n.d.). *Julian Abele (1881-1950)*. Duke University. https://library.duke.edu/rubenstein/uarchives/history/articles/abele
+
+North Carolina Architects and Builders. (n.d.). *Abele, Julian Francis (1881-1950)*. NCSU Libraries. https://ncarchitects.lib.ncsu.edu/people/P000277
+
+University Archives and Records Center. (n.d.). *Julian Francis Abele*. University of Pennsylvania. https://archives.upenn.edu/exhibits/penn-people/biography/julian-francis-abele/`,
+    },
+    {
+      slug: "what-the-record-can-show",
+      title: "11 · What the record can show, and what it cannot",
+      section: "Section 3 · Julian Abele, and the office that signed one name",
+      body: `The correct response to an erased credit is not to invent a restored one. It is to work building by building and say, for each, what the evidence will carry.
+
+**Some buildings can be confidently assigned.** Penn's archives are unusually direct about the difficulty and about the exception: "As in any large firm, assigning design credit to individuals is difficult. Abele undoubtably helped to shape all the work that passed through the office, but was not the designer of every project. Among the important buildings that can be confidently assigned to him is the Free Library of Philadelphia, whose design he personally presented to the client and to the city's design review panel" (University Archives and Records Center, n.d.).
+
+That is what good evidence looks like: not a signature, but a recorded act. He stood in front of the client and the review panel with the design.
+
+**Some buildings have a paper trail that names him without crediting him.** Widener is the case. The July 1912 letters in the Harvard University Archives put him in the room, and Harvard's associate librarian for public services, Kate Donovan, states the inference carefully: "We know that Abele's role as chief designer for the firm meant he had an important role in helping design the building" (Harvard Gazette, 2020). Donovan also names the obstacle in the same breath: "he rarely signed any of his early designs."
+
+**And here is the nuance that keeps this course honest.** The convention was not absolute. Cohen's article carries an image caption noting that prints of the Philadelphia Museum of Art "include the signatures of Horace Trumbauer and Julian Abele", while adding that "many other architects should be cited for the final design" (Cohen, 2019). So his name is on some drawings. Cohen's general statement is about "the vast majority" of projects, not all of them, and a course that flattened that into "his name never appeared on anything" would be doing to the evidence exactly what the myths do.
+
+**Some things the record simply cannot show, and that is a finding rather than a gap to fill.** Cohen: "As far as we know, Abele did not keep a diary, and only limited correspondence of the Trumbauer firm remains" (Cohen, 2019). No diary. Limited firm papers. The NCSU entry reaches the same conclusion about the Durham question from the other side, noting that with no significant personal papers or official firm records extant, the question appears unanswerable.
+
+**So the honest position is per building, and it has three settings.**
+
+1. **Confidently assigned**, where a recorded act ties a person to a design. The Free Library.
+2. **Named in the record without a design credit**, where correspondence or a drawing puts a person on the project and the share is not recoverable. Widener, and the Philadelphia Museum of Art.
+3. **Unrecoverable**, where the papers do not exist. Most of the office's output, for every employee in it.
+
+"He designed everything Trumbauer signed" is as wrong as "he designed nothing." Both replace an archive with a wish, and CREDIT-00 has a name for what happens when you do: the silence in the record starts being read as a statement about the world rather than as a statement about the record.
+
+:::reveal Which Trumbauer building do Penn's archives say can be confidently assigned to Abele, and on what evidence? ||| The Free Library of Philadelphia, because he personally presented its design to the client and to the city's design review panel.
+
+:::reveal Is it true that Abele's name never appeared on any drawings? ||| No. Cohen notes that prints of the Philadelphia Museum of Art carry both Trumbauer's and Abele's signatures. The claim about single-name drawings applies to the vast majority of projects, not to all of them.
+
+:::reveal What two absences does Cohen give as the reason so much about Abele is unrecoverable? ||| He appears to have kept no diary, and only limited correspondence of the Trumbauer firm survives.
+
+## Vocabulary
+- **Confidently assigned**: a design credit supported by a recorded act, such as personally presenting a scheme to a client and a review panel.
+- **Design review panel**: the municipal body that reviewed a public building's design, and before which Abele presented the Free Library.
+- **Archival silence**: from CREDIT-00, the absence of a record, which describes the archive rather than the world and must not be read as evidence of nothing having happened.
+- **Per-building position**: the discipline of stating, building by building, whether a credit is confidently assigned, merely evidenced, or unrecoverable.
+
+## Sources
+Cohen, A. (2019, May 23). *Unraveling myths about Philly's pioneering African American architect*. Hidden City Philadelphia. https://hiddencityphila.org/2019/05/unraveling-myths-about-phillys-pioneering-african-american-architect/
+
+Harvard Gazette. (2020, February 26). *Recognizing architect Julian Abele's contributions to Harvard*. Harvard University. https://news.harvard.edu/gazette/story/2020/02/recognizing-architect-julian-abeles-contributions-to-harvard/
+
+North Carolina Architects and Builders. (n.d.). *Abele, Julian Francis (1881-1950)*. NCSU Libraries. https://ncarchitects.lib.ncsu.edu/people/P000277
+
+University Archives and Records Center. (n.d.). *Julian Francis Abele*. University of Pennsylvania. https://archives.upenn.edu/exhibits/penn-people/biography/julian-francis-abele/`,
+    },
     // APPEND-HERE
   ],
 };
