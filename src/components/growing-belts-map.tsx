@@ -123,7 +123,7 @@ export function GrowingBeltsMap({ belts }: { belts: MapBelt[] }) {
       </div>
 
       <div className="mt-4 flex items-center justify-between">
-        <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500">Commodities</p>
+        <p className="text-xs font-semibold uppercase tracking-wide text-neutral-600">Commodities</p>
         <button
           type="button"
           onClick={allShown ? resetToThree : showAll}
@@ -140,7 +140,7 @@ export function GrowingBeltsMap({ belts }: { belts: MapBelt[] }) {
           if (group.length === 0) return null;
           return (
             <div key={season}>
-              <p className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-neutral-500">
+              <p className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-neutral-600">
                 Season {season}
               </p>
               <div className="flex flex-wrap gap-2 text-xs">

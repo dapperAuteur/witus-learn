@@ -200,7 +200,7 @@ export function FutureWorkNotes({ itemKey, initial }: { itemKey: string; initial
               <p className={`whitespace-pre-wrap wrap-break-word ${n.status === "done" ? "text-neutral-400 line-through dark:text-neutral-600" : ""}`}>
                 {n.body}
               </p>
-              <div className="mt-2 flex flex-wrap items-center gap-3 text-xs text-neutral-500">
+              <div className="mt-2 flex flex-wrap items-center gap-3 text-xs text-neutral-600">
                 <time dateTime={n.createdAt}>{fmt(n.createdAt)}</time>
                 {/* Offline, this is disabled rather than optimistically flipped: the PATCH can't be
                     queued safely, and a toggle that silently reverts on reload is a lie. */}
@@ -240,7 +240,7 @@ export function FutureWorkNotes({ itemKey, initial }: { itemKey: string; initial
                 <button
                   type="button"
                   onClick={() => discard(item.id)}
-                  className="inline-flex min-h-11 items-center text-neutral-500 underline pointer-coarse:min-h-12"
+                  className="inline-flex min-h-11 items-center text-neutral-600 underline pointer-coarse:min-h-12"
                 >
                   Discard
                 </button>
@@ -279,7 +279,7 @@ export function FutureWorkNotes({ itemKey, initial }: { itemKey: string; initial
         ) : null}
       </div>
       {!online ? (
-        <p className="mt-2 text-xs text-neutral-500">
+        <p className="mt-2 text-xs text-neutral-600">
           You&rsquo;re offline. Notes are held on this device and sent automatically when you
           reconnect, you can keep writing.
         </p>

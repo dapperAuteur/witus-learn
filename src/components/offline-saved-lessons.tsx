@@ -37,7 +37,7 @@ export function OfflineSavedLessons() {
 
   if (total === 0) {
     return (
-      <p className="mt-6 text-sm text-neutral-500" role="status">
+      <p className="mt-6 text-sm text-neutral-600" role="status">
         You haven&rsquo;t saved any lessons for offline yet. Next time you&rsquo;re online, open a
         course, tick the lessons you want, and tap &ldquo;Download selected&rdquo; so they&rsquo;re
         here when you need them.
@@ -47,7 +47,7 @@ export function OfflineSavedLessons() {
 
   return (
     <div className="mt-6 w-full max-w-sm text-left" role="status">
-      <h2 className="text-xs font-semibold uppercase tracking-wide text-neutral-500">
+      <h2 className="text-xs font-semibold uppercase tracking-wide text-neutral-600">
         Available offline ({total})
       </h2>
       <ul className="mt-2 space-y-1 text-sm">
@@ -59,7 +59,7 @@ export function OfflineSavedLessons() {
             <a href={entry.pagePath} className="underline underline-offset-2" style={{ color: "var(--accent, #111)" }}>
               {entry.lessonTitle}
             </a>
-            <span className="block truncate text-xs text-neutral-500">{entry.courseTitle}</span>
+            <span className="block truncate text-xs text-neutral-600">{entry.courseTitle}</span>
           </li>
         ))}
         {/* Saved standalone pages (today: the owner's /admin/future board). Listed here too — the
@@ -71,7 +71,7 @@ export function OfflineSavedLessons() {
               {page.pageTitle}
             </a>
             {page.pageSummary ? (
-              <span className="block truncate text-xs text-neutral-500">{page.pageSummary}</span>
+              <span className="block truncate text-xs text-neutral-600">{page.pageSummary}</span>
             ) : null}
           </li>
         ))}

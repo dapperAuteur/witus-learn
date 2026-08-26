@@ -36,7 +36,7 @@ export default async function AdminBundlesPage() {
       </p>
 
       {bundles.length === 0 ? (
-        <p className="mt-8 text-neutral-500">
+        <p className="mt-8 text-neutral-600">
           No bundles yet. Run <code>pnpm seed:bundles</code> after the migration to create the proposed
           set.
         </p>
@@ -58,7 +58,7 @@ export default async function AdminBundlesPage() {
                     {b.title}
                   </Link>
                 </td>
-                <td className="py-2 pr-3 text-neutral-500">{counts[i].length}</td>
+                <td className="py-2 pr-3 text-neutral-600">{counts[i].length}</td>
                 <td className="py-2 pr-3 whitespace-nowrap">{priceLabel(b.price, b.priceType)}</td>
                 <td className="py-2 pr-3">
                   <span

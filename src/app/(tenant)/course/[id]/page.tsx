@@ -20,14 +20,14 @@ export default async function CourseByIdRedirect({ params }: { params: Promise<{
   // Fallback: instructor has no username yet (rare). Show a minimal page.
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
-      <Link href="/" className="text-sm text-neutral-500 hover:underline">
+      <Link href="/" className="text-sm text-neutral-600 hover:underline">
         ← Back to catalog
       </Link>
       <h1 className="mt-6 text-3xl font-bold">{course.title}</h1>
       {course.description ? (
         <p className="mt-4 text-neutral-700 dark:text-neutral-300">{course.description}</p>
       ) : null}
-      <p className="mt-6 text-sm text-neutral-500">
+      <p className="mt-6 text-sm text-neutral-600">
         This course&apos;s public page is being set up.
       </p>
     </main>

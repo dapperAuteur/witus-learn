@@ -97,14 +97,14 @@ export function CategoryManager({ categories }: { categories: ManagedCategory[] 
       </form>
       {err ? <p className="mb-2 text-sm text-red-600">{err}</p> : null}
       {rows.length === 0 ? (
-        <p className="text-neutral-500">No categories yet.</p>
+        <p className="text-neutral-600">No categories yet.</p>
       ) : (
         <ul className="divide-y divide-neutral-200 rounded-lg border border-neutral-200 dark:divide-neutral-800 dark:border-neutral-800">
           {rows.map((c) => (
             <li key={c.id} className="flex flex-wrap items-center justify-between gap-3 p-3">
               <span className="font-medium">{c.name}</span>
               <span className="flex flex-wrap items-center gap-3 text-sm">
-                <label className="flex items-center gap-1.5 text-xs text-neutral-500">
+                <label className="flex items-center gap-1.5 text-xs text-neutral-600">
                   Cross-promo
                   <select
                     value={c.ecosystemProductSlug ?? ""}

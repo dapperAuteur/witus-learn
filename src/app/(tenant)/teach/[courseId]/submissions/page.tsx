@@ -36,7 +36,7 @@ export default async function SubmissionsPage({ params }: { params: Promise<{ co
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
-      <Link href={`/teach/${course.slug ?? course.id}`} className="text-sm text-neutral-500 hover:underline">
+      <Link href={`/teach/${course.slug ?? course.id}`} className="text-sm text-neutral-600 hover:underline">
         ← Manage {course.title}
       </Link>
       <h1 className="mt-4 text-2xl font-bold">Assignment submissions</h1>

@@ -66,7 +66,7 @@ export default async function TptPlanPage() {
           <tbody>
             {items.map((i) => (
               <tr key={i.order} className="border-b border-neutral-200 align-top dark:border-neutral-800">
-                <td className="py-3 pr-3 text-neutral-500">{i.order}</td>
+                <td className="py-3 pr-3 text-neutral-600">{i.order}</td>
                 <td className="py-3 pr-3">
                   <div className="font-medium">{i.title}</div>
                   <div className="mt-1 text-xs text-neutral-600 dark:text-neutral-400">
@@ -75,7 +75,7 @@ export default async function TptPlanPage() {
                     </span>{" "}
                     · {i.rationale}
                   </div>
-                  <div className="mt-1 text-xs text-neutral-500">Leads to: {i.crossSell}</div>
+                  <div className="mt-1 text-xs text-neutral-600">Leads to: {i.crossSell}</div>
                   {i.packetDir ? (
                     <div className="mt-1 flex flex-wrap items-center gap-2 text-xs">
                       <Link
@@ -104,7 +104,7 @@ export default async function TptPlanPage() {
         </table>
       </div>
 
-      <p className="mt-6 text-xs text-neutral-500">
+      <p className="mt-6 text-xs text-neutral-600">
         Every listing description points back to the full cited, standards-aligned course at
         Learn.WitUS.Online. The packet is the taste; the platform is the meal. No figure here is a
         promise about sales.

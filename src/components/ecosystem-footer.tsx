@@ -29,7 +29,7 @@ export function EcosystemFooter({ tenant }: { tenant: TenantRecord }) {
         <div className="flex flex-col gap-10 sm:flex-row sm:items-start sm:justify-between">
           <div>
             <p className="font-semibold text-neutral-900 dark:text-white">{brandName(tenant)}</p>
-            <p className="mt-1 text-neutral-500">
+            <p className="mt-1 text-neutral-600">
               A B4C LLC /{" "}
               <a
                 href="https://awesomewebstore.com"
@@ -113,7 +113,7 @@ export function EcosystemFooter({ tenant }: { tenant: TenantRecord }) {
         </div>
 
         {tenant.flags.recruiting ? (
-          <p className="text-neutral-500">
+          <p className="text-neutral-600">
             <Link href="/platform" className={linkClasses}>
               About this platform
             </Link>
@@ -124,10 +124,10 @@ export function EcosystemFooter({ tenant }: { tenant: TenantRecord }) {
           </p>
         ) : null}
 
-        <p className="text-neutral-500">© {brandName(tenant)}</p>
+        <p className="text-neutral-600">© {brandName(tenant)}</p>
         {/* WCAG AA 4.5:1 for 12px text: neutral-500 on white = 4.74:1, dark neutral-400
             on the #0a0a0a page bg = 7.66:1. The old -400/-600 pair sat at ~2.6:1. */}
-        <p className="text-xs text-neutral-500 dark:text-neutral-400">{DISCLAIMER_SHORT}</p>
+        <p className="text-xs text-neutral-600 dark:text-neutral-400">{DISCLAIMER_SHORT}</p>
       </div>
     </footer>
   );
@@ -154,7 +154,7 @@ function RiseWellnessCallout() {
         >
           Rise Wellness of Indiana
         </h2>
-        <p className="mt-0.5 text-xs text-neutral-500">
+        <p className="mt-0.5 text-xs text-neutral-600">
           Independent mental health provider · Not affiliated with WitUS
         </p>
       </header>
@@ -168,7 +168,7 @@ function RiseWellnessCallout() {
 
       <div className="mt-4 grid gap-4 sm:grid-cols-2">
         <div className="space-y-1">
-          <p className="text-[11px] font-semibold uppercase tracking-wide text-neutral-500">
+          <p className="text-[11px] font-semibold uppercase tracking-wide text-neutral-600">
             Services
           </p>
           <ul className="space-y-0.5 text-xs text-neutral-600 dark:text-neutral-300">
@@ -183,7 +183,7 @@ function RiseWellnessCallout() {
         </div>
 
         <div className="space-y-1">
-          <p className="text-[11px] font-semibold uppercase tracking-wide text-neutral-500">
+          <p className="text-[11px] font-semibold uppercase tracking-wide text-neutral-600">
             Visit or call
           </p>
           <address className="not-italic text-xs leading-relaxed text-neutral-600 dark:text-neutral-300">
@@ -231,7 +231,7 @@ function RiseWellnessCallout() {
         </div>
       </div>
 
-      <blockquote className="mt-4 border-l-2 pl-3 text-xs italic text-neutral-500" style={{ borderColor: "var(--accent)" }}>
+      <blockquote className="mt-4 border-l-2 pl-3 text-xs italic text-neutral-600" style={{ borderColor: "var(--accent)" }}>
         &ldquo;At Rise Wellness, we believe everyone has the capacity to rise
         above challenges and live a fulfilling, healthy life. Our care is
         guided by the belief that healing is personal, holistic, and rooted
@@ -239,7 +239,7 @@ function RiseWellnessCallout() {
         {/* neutral-500 (not -400) so the 12px attribution meets WCAG AA 4.5:1 on the
             bg-neutral-50 card (#737373 on #fafafa = 4.54:1) — same shade as the quote
             around it. dark:-400 keeps the dark side passing (7.31:1 on the dark card). */}
-        <span className="mt-1 block not-italic text-neutral-500 dark:text-neutral-400">
+        <span className="mt-1 block not-italic text-neutral-600 dark:text-neutral-400">
           Rise Wellness of Indiana
         </span>
       </blockquote>
@@ -247,7 +247,7 @@ function RiseWellnessCallout() {
       {/* === NON-NEGOTIABLE DISCLAIMER ===
            Edit ONLY the app name token. Don't paraphrase. Don't trim.
            Don't reorder. This was vetted with the partner. */}
-      <p className="mt-4 text-[11px] leading-relaxed text-neutral-500">
+      <p className="mt-4 text-[11px] leading-relaxed text-neutral-600">
         Rise Wellness of Indiana is an independent organization. They are
         not affiliated with, employed by, or endorsed by WitUS,
         CentenarianOS, B4C LLC, AwesomeWebStore.com, or Anthony McDonald.

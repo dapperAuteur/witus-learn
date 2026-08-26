@@ -87,7 +87,7 @@ export function KidSignIn() {
       {step === "code" ? (
         <form onSubmit={submitCode}>
           <h1 className="text-2xl font-bold">Hi! What&apos;s your class code?</h1>
-          <p className="mt-1 text-sm text-neutral-500">Ask your teacher or grown-up.</p>
+          <p className="mt-1 text-sm text-neutral-600">Ask your teacher or grown-up.</p>
           <label htmlFor="class-code" className="sr-only">
             Class code
           </label>

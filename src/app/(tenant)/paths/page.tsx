@@ -36,7 +36,7 @@ export default async function PathsPage() {
       <h1 className="text-3xl font-bold">Learning paths</h1>
       <p className="mt-2 text-neutral-600 dark:text-neutral-400">Follow a track of courses in order.</p>
       {paths.length === 0 ? (
-        <p className="mt-6 text-neutral-500">No paths yet.</p>
+        <p className="mt-6 text-neutral-600">No paths yet.</p>
       ) : (
         <div className="mt-6 grid gap-4 sm:grid-cols-2">
           {paths.map((p) => (

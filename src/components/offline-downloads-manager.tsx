@@ -63,7 +63,7 @@ function savedAgo(ms: number): string {
 
 /** A destructive control sized for thumbs (44px on coarse pointers, the repo's pointer-coarse idiom). */
 const REMOVE_BTN =
-  "inline-flex min-h-8 shrink-0 items-center rounded-md px-2 text-xs text-neutral-500 underline hover:text-red-600 focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-50 pointer-coarse:min-h-11 pointer-coarse:px-3";
+  "inline-flex min-h-8 shrink-0 items-center rounded-md px-2 text-xs text-neutral-600 underline hover:text-red-600 focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-50 pointer-coarse:min-h-11 pointer-coarse:px-3";
 
 type Course = {
   courseHref: string;
@@ -283,7 +283,7 @@ export function OfflineDownloadsManager() {
             {pages.length > 0 ? ` · ${pages.length} page${pages.length === 1 ? "" : "s"}` : ""}
           </p>
           {storage ? (
-            <p className="mt-0.5 text-xs text-neutral-500">
+            <p className="mt-0.5 text-xs text-neutral-600">
               {/* navigator.storage.estimate() is ORIGIN-wide — it counts everything this site has
                   stored, not only your lessons, so the copy says "this site", not "your lessons". */}
               {formatBytes(storage.usage)} used by this site on your device
@@ -304,7 +304,7 @@ export function OfflineDownloadsManager() {
       </div>
 
       {nothing ? (
-        <p role="status" className="mt-6 text-sm text-neutral-500">
+        <p role="status" className="mt-6 text-sm text-neutral-600">
           You haven&rsquo;t saved anything for offline yet. Open a course while you&rsquo;re online,
           tick the lessons you want, and tap &ldquo;Download selected&rdquo; they&rsquo;ll be here
           when the network isn&rsquo;t.
@@ -331,7 +331,7 @@ export function OfflineDownloadsManager() {
                 <a href={course.courseHref} className="font-medium underline underline-offset-2">
                   {course.courseTitle}
                 </a>
-                <p className="text-xs text-neutral-500">
+                <p className="text-xs text-neutral-600">
                   {course.lessons.length} lesson{course.lessons.length === 1 ? "" : "s"}
                 </p>
               </div>
@@ -365,7 +365,7 @@ export function OfflineDownloadsManager() {
                 <div key={section.title ?? "__flat"} className="px-4 py-3">
                   {section.title ? (
                     <div className="flex flex-wrap items-center justify-between gap-2">
-                      <h3 className="min-w-0 text-xs font-semibold uppercase tracking-wide text-neutral-500">
+                      <h3 className="min-w-0 text-xs font-semibold uppercase tracking-wide text-neutral-600">
                         {section.title}
                       </h3>
                       <button
@@ -429,7 +429,7 @@ export function OfflineDownloadsManager() {
                     <a href={page.pagePath} className="font-medium underline underline-offset-2">
                       {page.pageTitle}
                     </a>
-                    <p className="text-xs text-neutral-500">
+                    <p className="text-xs text-neutral-600">
                       {page.pageSummary ? `${page.pageSummary} · ` : ""}
                       {savedAgo(page.savedAt)}
                     </p>
@@ -467,7 +467,7 @@ export function OfflineDownloadsManager() {
               Remove all of these
             </button>
           </div>
-          <p className="mt-1 text-xs text-neutral-500">
+          <p className="mt-1 text-xs text-neutral-600">
             These pages are on your device but we couldn&rsquo;t match them to a course, usually
             because they were saved by an older version of the app, or the record of them was
             cleared. They still work offline; remove them if you don&rsquo;t need them.
@@ -501,7 +501,7 @@ export function OfflineDownloadsManager() {
               Remove all of these
             </button>
           </div>
-          <p className="mt-1 text-xs text-neutral-500">
+          <p className="mt-1 text-xs text-neutral-600">
             Audio or video files still on your device that no saved lesson uses any more. Removing
             them frees space and won&rsquo;t affect the lessons listed above.
           </p>
@@ -552,14 +552,14 @@ function OfflineDiagnostics({ savedPages, usage }: { savedPages: number; usage: 
       <dl className="space-y-1 px-4 pb-4 text-sm">
         {rows.map((row) => (
           <div key={row.label} className="flex items-center justify-between gap-3">
-            <dt className="text-neutral-500">{row.label}</dt>
+            <dt className="text-neutral-600">{row.label}</dt>
             <dd className={`tabular-nums ${row.bad ? "font-medium text-amber-700 dark:text-amber-500" : ""}`}>
               {ready === null ? "…" : row.value}
             </dd>
           </div>
         ))}
       </dl>
-      <p className="px-4 pb-4 text-xs text-neutral-500">
+      <p className="px-4 pb-4 text-xs text-neutral-600">
         If &ldquo;Serving offline pages&rdquo; says No, saved lessons will NOT open without a
         connection, reload this page to start the offline worker, then try again.
       </p>
@@ -610,7 +610,7 @@ export function OfflineDownloadsSummary() {
     >
       <span>
         <span className="font-medium">Offline downloads</span>
-        <span className="block text-xs text-neutral-500">
+        <span className="block text-xs text-neutral-600">
           {count === null
             ? "See and remove what you've saved for offline"
             : count === 0

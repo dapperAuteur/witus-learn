@@ -78,13 +78,13 @@ export default async function DemoPage() {
             >
               Launch the demo school →
             </a>
-            <p className="mt-3 text-sm text-neutral-500">
+            <p className="mt-3 text-sm text-neutral-600">
               Then click <strong>&ldquo;Try the demo&rdquo;</strong> on the Acme sign-in page to sign
               in as the demo teacher.
             </p>
           </>
         ) : (
-          <p className="rounded-lg border border-neutral-200 px-4 py-6 text-neutral-500 dark:border-neutral-800">
+          <p className="rounded-lg border border-neutral-200 px-4 py-6 text-neutral-600 dark:border-neutral-800">
             The demo school isn&apos;t published yet, check back soon.
           </p>
         )}

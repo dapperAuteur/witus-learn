@@ -120,7 +120,7 @@ export default async function SeriesPage({ params }: { params: Promise<{ slug: s
 
       {series.groups.map((group) => (
         <section key={`${group.kind}:${group.letter ?? ""}`} className="mt-8">
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-600">
             {group.kind === "track" ? `${group.label} track` : group.label}
           </h2>
           <ol className="mt-3 space-y-4">
@@ -151,7 +151,7 @@ export default async function SeriesPage({ params }: { params: Promise<{ slug: s
                     </Link>
                   </h3>
                   {note ? (
-                    <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">{note}</p>
+                    <p className="mt-1 text-xs text-neutral-600 dark:text-neutral-400">{note}</p>
                   ) : null}
                   {course.description ? (
                     <p className="mt-1 line-clamp-3 text-sm text-neutral-700 dark:text-neutral-300">

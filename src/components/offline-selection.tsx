@@ -296,7 +296,7 @@ function ManageDownloadsLink() {
     // eslint-disable-next-line @next/next/no-html-link-for-pages
     <a
       href="/downloads"
-      className="inline-flex min-h-8 items-center text-xs text-neutral-500 underline focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-11 dark:text-neutral-400"
+      className="inline-flex min-h-8 items-center text-xs text-neutral-600 underline focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-11 dark:text-neutral-400"
     >
       Manage downloads
     </a>

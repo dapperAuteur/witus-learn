@@ -53,7 +53,7 @@ export default async function LoginPage({ searchParams }: { searchParams: Search
             {brandName(tenant)}
           </p>
           <h1 className="mt-1 text-2xl font-bold">Sign in</h1>
-          <p className="mt-1 text-sm text-neutral-500">No password, we email you a one-time link.</p>
+          <p className="mt-1 text-sm text-neutral-600">No password, we email you a one-time link.</p>
           <div className="mt-6">
             <MagicLinkForm callbackURL={callbackURL} />
           </div>
@@ -69,7 +69,7 @@ export default async function LoginPage({ searchParams }: { searchParams: Search
               <DemoLoginButton />
             </div>
           ) : null}
-          <p className="mt-6 text-center text-sm text-neutral-500">
+          <p className="mt-6 text-center text-sm text-neutral-600">
             <Link href="/kids" className="font-medium underline" style={{ color: "var(--accent)" }}>
               I&apos;m a student
             </Link>

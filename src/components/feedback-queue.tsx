@@ -39,7 +39,7 @@ export function FeedbackQueue({ items }: { items: FeedbackItem[] }) {
   }
 
   if (items.length === 0) {
-    return <p className="mt-6 text-neutral-500">No feedback yet.</p>;
+    return <p className="mt-6 text-neutral-600">No feedback yet.</p>;
   }
 
   return (
@@ -53,7 +53,7 @@ export function FeedbackQueue({ items }: { items: FeedbackItem[] }) {
             <span className={`rounded-full px-2 py-0.5 text-xs ${STATUS_STYLE[f.status] ?? ""}`}>
               {f.status}
             </span>
-            <Link href={`/teach/${f.courseId}`} className="text-neutral-500 hover:underline">
+            <Link href={`/teach/${f.courseId}`} className="text-neutral-600 hover:underline">
               {f.courseTitle} · {f.lessonTitle}
             </Link>
             <span className="ml-auto text-xs text-neutral-400">{f.when}</span>

@@ -51,7 +51,7 @@ export function AssignmentSubmit({
           ) : null}
         </div>
       ) : initial ? (
-        <p className="mt-2 text-sm text-neutral-500">Submitted. Awaiting grading. You can revise and resubmit below.</p>
+        <p className="mt-2 text-sm text-neutral-600">Submitted. Awaiting grading. You can revise and resubmit below.</p>
       ) : null}
 
       <form onSubmit={submit} className="mt-3 space-y-3">

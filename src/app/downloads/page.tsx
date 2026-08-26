@@ -24,7 +24,7 @@ export default function DownloadsPage() {
       {/* Real <a> (not next/link): offline, we want a hard navigation the service worker can
           answer from cache — a client-side RSC fetch would just fail. */}
       {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
-      <a href="/" className="text-sm text-neutral-500 hover:underline">
+      <a href="/" className="text-sm text-neutral-600 hover:underline">
         ← Back
       </a>
       <h1 className="mt-6 text-2xl font-bold">Your downloads</h1>

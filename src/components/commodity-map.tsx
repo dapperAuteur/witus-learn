@@ -110,7 +110,7 @@ export function CommodityMap({ commodities }: { commodities: MapPin[] }) {
           className="mt-4 bg-white dark:bg-neutral-900"
         />
       ) : (
-        <p className="mt-3 text-sm text-neutral-500">
+        <p className="mt-3 text-sm text-neutral-600">
           Tap a pin to read what that episode is about.
         </p>
       )}

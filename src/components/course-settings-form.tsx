@@ -223,7 +223,7 @@ export function CourseSettingsForm({
               <option key={o.userId} value={o.userId}>{instructorLabel(o)}</option>
             ))}
           </select>
-          <p className="mt-1 text-xs text-neutral-500">
+          <p className="mt-1 text-xs text-neutral-600">
             Reassigns who owns, edits, and records this course. It moves to their dashboard and its
             public URL changes to <code>/their-username/…</code>. You keep access as an admin.
           </p>
@@ -232,7 +232,7 @@ export function CourseSettingsForm({
 
       <fieldset className="rounded-md border border-neutral-200 p-3 dark:border-neutral-800">
         <legend className="px-1 text-sm font-medium">Related WitUS tools (cross-promotion)</legend>
-        <p className="text-xs text-neutral-500">
+        <p className="text-xs text-neutral-600">
           Optionally surface up to 3 sibling apps as a small labeled card on this course page.
           Off by default; only shown on WitUS-branded domains.
         </p>
@@ -294,7 +294,7 @@ export function CourseSettingsForm({
           ) : null}
           {v.priceType !== "free" ? (
             <div className="flex items-center gap-2">
-              <span className="text-neutral-500">$</span>
+              <span className="text-neutral-600">$</span>
               <input
                 type="number"
                 min={0}
@@ -308,7 +308,7 @@ export function CourseSettingsForm({
           ) : null}
         </div>
         {v.priceType !== "free" && v.price > 0 ? (
-          <p className="mt-2 text-xs text-neutral-500">
+          <p className="mt-2 text-xs text-neutral-600">
             You keep about <strong>${estimatedNet(v.price).toFixed(2)}</strong> per sale (after an estimated{" "}
             ${estimatedFee(v.price).toFixed(2)} processor fee, actual varies by card/region).
           </p>

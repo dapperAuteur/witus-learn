@@ -66,7 +66,7 @@ export function AnnouncementComposer({ brand, courses }: { brand: string; course
   return (
     <div className="rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900">
       <h3 className="font-semibold">Compose announcement</h3>
-      <p className="mt-1 text-sm text-neutral-500">
+      <p className="mt-1 text-sm text-neutral-600">
         Drafts a new-course email from the course&apos;s real title and description. Nothing sends
         from here: copy it (or open it in your email app) and send it through your own email tool
         for now.
@@ -135,7 +135,7 @@ export function AnnouncementComposer({ brand, courses }: { brand: string; course
         </button>
       </div>
 
-      <p aria-live="polite" className="mt-2 min-h-5 text-sm text-neutral-500">
+      <p aria-live="polite" className="mt-2 min-h-5 text-sm text-neutral-600">
         {status}
       </p>
     </div>

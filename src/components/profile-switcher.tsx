@@ -37,7 +37,7 @@ export function ProfileSwitcher({
 
   return (
     <label className="flex items-center gap-1.5 text-sm">
-      <span className="hidden text-neutral-500 sm:inline">Studying as</span>
+      <span className="hidden text-neutral-600 sm:inline">Studying as</span>
       <select
         value={currentId ?? ""}
         disabled={pending}

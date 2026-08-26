@@ -34,7 +34,7 @@ export default async function CohortReportPage({ params }: { params: Promise<{ i
       }`}</style>
 
       <div className="mb-4 flex items-center justify-between print:hidden">
-        <a href={`/cohorts/${cohort.id}`} className="text-sm text-neutral-500 hover:underline">
+        <a href={`/cohorts/${cohort.id}`} className="text-sm text-neutral-600 hover:underline">
           Back to cohort
         </a>
         <PrintButton />
@@ -95,7 +95,7 @@ export default async function CohortReportPage({ params }: { params: Promise<{ i
             ))}
             {rows.length === 0 ? (
               <tr>
-                <td colSpan={6} className="py-3 text-neutral-500">
+                <td colSpan={6} className="py-3 text-neutral-600">
                   No enrolled students yet.
                 </td>
               </tr>

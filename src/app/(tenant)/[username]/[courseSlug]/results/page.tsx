@@ -109,30 +109,30 @@ export default async function CourseResultsPage({ params }: Params) {
       </div>
 
       <section className="mt-6 rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">Quick recall</h2>
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-600">Quick recall</h2>
         {recall.accuracy === null ? (
-          <p className="mt-2 text-sm text-neutral-500">No recall attempts yet.</p>
+          <p className="mt-2 text-sm text-neutral-600">No recall attempts yet.</p>
         ) : (
           <p className="mt-2">
             <span className="text-2xl font-bold" style={{ color: "var(--accent)" }}>{recall.accuracy}%</span>{" "}
-            recalled correctly <span className="text-neutral-500">({recall.gotIt}/{recall.attempts} attempts)</span>
+            recalled correctly <span className="text-neutral-600">({recall.gotIt}/{recall.attempts} attempts)</span>
           </p>
         )}
       </section>
 
       {courseAvg !== null ? (
         <section className="mt-6 rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">By subject</h2>
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-600">By subject</h2>
           <p className="mt-2">
             <span className="text-2xl font-bold" style={{ color: "var(--accent)" }}>{courseAvg}%</span>{" "}
-            course average <span className="text-neutral-500">({coursePassed}/{latests.length} quizzes passed)</span>
+            course average <span className="text-neutral-600">({coursePassed}/{latests.length} quizzes passed)</span>
           </p>
           {moduleRollups.length > 1 ? (
             <ul className="mt-3 space-y-1 text-sm">
               {moduleRollups.map((m) => (
                 <li key={m.title} className="flex items-center justify-between gap-3">
                   <span className="min-w-0 flex-1 truncate">{m.title}</span>
-                  <span className="shrink-0 text-neutral-500">
+                  <span className="shrink-0 text-neutral-600">
                     {m.passed}/{m.count} passed ·{" "}
                     <span className={m.avg >= 80 ? "text-green-700 dark:text-green-400" : m.avg >= 50 ? "text-amber-600" : "text-red-600"}>{m.avg}%</span>
                   </span>
@@ -144,9 +144,9 @@ export default async function CourseResultsPage({ params }: Params) {
       ) : null}
 
       <section className="mt-6">
-        <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-500">Quizzes over time</h2>
+        <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-600">Quizzes over time</h2>
         {byLesson.size === 0 ? (
-          <p className="text-sm text-neutral-500">No quiz attempts yet. Take a quiz and your scores show up here.</p>
+          <p className="text-sm text-neutral-600">No quiz attempts yet. Take a quiz and your scores show up here.</p>
         ) : (
           <div className="space-y-6">
             {[...byLesson.entries()].map(([lessonId, list]) => {
@@ -189,7 +189,7 @@ export default async function CourseResultsPage({ params }: Params) {
                 <article key={lessonId} className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
                   <div className="flex flex-wrap items-baseline justify-between gap-2">
                     <h3 className="font-semibold">{title}</h3>
-                    <span className="text-sm text-neutral-500">
+                    <span className="text-sm text-neutral-600">
                       {list.length} attempt{list.length === 1 ? "" : "s"} · best {best}% · latest {latest.score}%
                       {latest.passed ? " · passed" : ""}
                     </span>
@@ -204,7 +204,7 @@ export default async function CourseResultsPage({ params }: Params) {
                   <ol className="mt-3 space-y-1 text-sm">
                     {list.map((a) => (
                       <li key={a.id} className="flex items-center justify-between gap-3">
-                        <span className="text-neutral-500">{a.createdAt.toLocaleDateString()} {a.createdAt.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}</span>
+                        <span className="text-neutral-600">{a.createdAt.toLocaleDateString()} {a.createdAt.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}</span>
                         <span className={a.passed ? "text-green-700 dark:text-green-400" : "text-red-600"}>
                           {a.correct}/{a.total} ({a.score}%)
                         </span>
@@ -214,7 +214,7 @@ export default async function CourseResultsPage({ params }: Params) {
 
                   {perQ.size > 0 ? (
                     <div className="mt-4">
-                      <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500">By question</p>
+                      <p className="text-xs font-semibold uppercase tracking-wide text-neutral-600">By question</p>
                       <ul className="mt-2 space-y-1 text-sm">
                         {[...perQ.entries()]
                           .sort((a, b) => (orderByKey.get(a[0]) ?? 999) - (orderByKey.get(b[0]) ?? 999))
@@ -235,7 +235,7 @@ export default async function CourseResultsPage({ params }: Params) {
 
                   {latest.responses?.length ? (
                     <details className="mt-4">
-                      <summary className="cursor-pointer text-xs font-semibold uppercase tracking-wide text-neutral-500">
+                      <summary className="cursor-pointer text-xs font-semibold uppercase tracking-wide text-neutral-600">
                         Review your answers · latest attempt ({latest.createdAt.toLocaleDateString()})
                       </summary>
                       <ol className="mt-2 space-y-2 text-sm">
@@ -256,7 +256,7 @@ export default async function CourseResultsPage({ params }: Params) {
                               {!r.correct ? (
                                 <p className="mt-0.5 text-neutral-700 dark:text-neutral-300">Correct answer: {answer}</p>
                               ) : null}
-                              {q.explanation ? <p className="mt-1 text-xs text-neutral-500">{q.explanation}</p> : null}
+                              {q.explanation ? <p className="mt-1 text-xs text-neutral-600">{q.explanation}</p> : null}
                             </li>
                           );
                         })}

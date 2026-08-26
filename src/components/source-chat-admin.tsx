@@ -148,7 +148,7 @@ export function SourceChatAdmin({ courses }: { courses: { id: string; title: str
 
       <section className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
         <h2 className="font-semibold">Test chat</h2>
-        <p className="mt-1 text-xs text-neutral-500">Runs with the unsaved config above, so you can tune before saving.</p>
+        <p className="mt-1 text-xs text-neutral-600">Runs with the unsaved config above, so you can tune before saving.</p>
         <textarea value={question} onChange={(e) => setQuestion(e.target.value)} rows={2} placeholder="Ask a question about this course's sources…" className={`mt-2 ${field}`} />
         <button type="button" onClick={ask} disabled={asking || !question.trim()} className="mt-2 min-h-9 rounded-md border border-neutral-300 px-4 text-sm font-medium disabled:opacity-60 dark:border-neutral-700">
           {asking ? "Thinking…" : "Ask"}
@@ -157,11 +157,11 @@ export function SourceChatAdmin({ courses }: { courses: { id: string; title: str
         {result ? (
           <div className="mt-4 space-y-3">
             <div className="whitespace-pre-wrap rounded-md bg-neutral-50 p-3 text-sm dark:bg-neutral-900">{result.answer}</div>
-            <div className="text-xs text-neutral-500">
+            <div className="text-xs text-neutral-600">
               {result.usedChunks} chunk(s) retrieved · agents: {result.agents.join(", ") || "-"}
             </div>
             {result.citations.length ? (
-              <ol className="space-y-1 text-xs text-neutral-500">
+              <ol className="space-y-1 text-xs text-neutral-600">
                 {result.citations.map((c) => (
                   <li key={c.n}>[{c.n}] <span className="font-medium">{c.kind}</span>{c.title ? ` · ${c.title}` : ""}: {c.snippet}…</li>
                 ))}

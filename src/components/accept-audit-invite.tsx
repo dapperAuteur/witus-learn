@@ -54,7 +54,7 @@ export function AcceptAuditInvite({ token }: { token: string }) {
     };
   }, [token]);
 
-  if (status === "accepting") return <p className="text-neutral-500">Opening the course…</p>;
+  if (status === "accepting") return <p className="text-neutral-600">Opening the course…</p>;
 
   if (status === "error" || !accepted) {
     return (
@@ -62,7 +62,7 @@ export function AcceptAuditInvite({ token }: { token: string }) {
         <p role="alert" className="text-amber-700 dark:text-amber-400">
           {message ?? "This invite link isn't valid."}
         </p>
-        <p className="mt-2 text-sm text-neutral-500">
+        <p className="mt-2 text-sm text-neutral-600">
           Ask whoever invited you for a fresh link, or{" "}
           <Link href="/" className="underline">
             head back home

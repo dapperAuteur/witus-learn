@@ -131,7 +131,7 @@ export function DocumentarianTracker({ initial }: { initial: TrackerState }) {
                       onChange={() => toggle(it.id)}
                       className="mt-1 h-4 w-4 shrink-0"
                     />
-                    <span className={`text-sm ${state.done ? "text-neutral-500 line-through" : ""}`}>
+                    <span className={`text-sm ${state.done ? "text-neutral-600 line-through" : ""}`}>
                       {it.label}
                     </span>
                   </label>
@@ -164,13 +164,13 @@ export function DocumentarianTracker({ initial }: { initial: TrackerState }) {
               .reverse()
               .map((c, i) => (
                 <li key={`${c.at}-${i}`} className="rounded-md bg-neutral-50 p-3 text-sm dark:bg-neutral-900">
-                  <div className="text-xs text-neutral-500">{new Date(c.at).toLocaleString()}</div>
+                  <div className="text-xs text-neutral-600">{new Date(c.at).toLocaleString()}</div>
                   <div className="mt-1 whitespace-pre-wrap">{c.text}</div>
                 </li>
               ))}
           </ul>
         ) : (
-          <p className="mt-3 text-sm text-neutral-500">No comments yet.</p>
+          <p className="mt-3 text-sm text-neutral-600">No comments yet.</p>
         )}
         <div className="mt-3 space-y-2">
           <textarea

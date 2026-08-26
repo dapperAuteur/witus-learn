@@ -58,7 +58,7 @@ export function CampaignComposer({
               <option value="enrolled">Enrolled learners ({audience.enrolled})</option>
             </select>
           </label>
-          <p className="text-xs text-neutral-500">This draft would reach <strong>{count}</strong> {aud}.</p>
+          <p className="text-xs text-neutral-600">This draft would reach <strong>{count}</strong> {aud}.</p>
           <label className="block text-sm font-medium">
             Subject
             <input value={subject} onChange={(e) => setSubject(e.target.value)} maxLength={200} className={`mt-1 ${field}`} />
@@ -86,11 +86,11 @@ export function CampaignComposer({
               <li key={c.id} className="flex items-center justify-between gap-3 rounded-xl border border-neutral-200 px-4 py-3 dark:border-neutral-800">
                 <div className="min-w-0">
                   <span className="block truncate font-medium">{c.subject}</span>
-                  <span className="text-xs text-neutral-500">
+                  <span className="text-xs text-neutral-600">
                     {c.audience} · {c.status} · {new Date(c.createdAt).toLocaleDateString()}
                   </span>
                 </div>
-                <span className="shrink-0 rounded-full bg-neutral-100 px-2 py-0.5 text-xs text-neutral-500 dark:bg-neutral-800">{c.status}</span>
+                <span className="shrink-0 rounded-full bg-neutral-100 px-2 py-0.5 text-xs text-neutral-600 dark:bg-neutral-800">{c.status}</span>
               </li>
             ))}
           </ul>

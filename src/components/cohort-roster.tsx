@@ -73,7 +73,7 @@ function GuardianInvite({ cohortId, studentUserId }: { cohortId: string; student
 
   if (!open) {
     return (
-      <button type="button" onClick={() => setOpen(true)} className="text-xs text-neutral-500 hover:underline">
+      <button type="button" onClick={() => setOpen(true)} className="text-xs text-neutral-600 hover:underline">
         Invite a parent/guardian
       </button>
     );
@@ -146,7 +146,7 @@ function PendingInviteRow({ cohortId, invite }: { cohortId: string; invite: Pend
       <div className="flex items-center justify-between gap-3">
         <span className="min-w-0 break-words">
           {invite.email}
-          <span className="ml-2 text-xs text-neutral-500">invited {invite.invitedAt}</span>
+          <span className="ml-2 text-xs text-neutral-600">invited {invite.invitedAt}</span>
         </span>
         <button
           type="button"
@@ -270,7 +270,7 @@ export function CohortRoster({
       {pendingInvites.length > 0 ? (
         <div>
           <h2 className="font-semibold">Pending invites</h2>
-          <p className="mt-1 text-xs text-neutral-500">
+          <p className="mt-1 text-xs text-neutral-600">
             Sent but not accepted yet. Resend re-delivers the same link, so anything already
             shared keeps working.
           </p>
@@ -303,7 +303,7 @@ export function CohortRoster({
               </div>
             </li>
           ))}
-          {members.length === 0 ? <li className="py-2 text-sm text-neutral-500">No students yet, invite one above.</li> : null}
+          {members.length === 0 ? <li className="py-2 text-sm text-neutral-600">No students yet, invite one above.</li> : null}
         </ul>
       </div>
     </div>

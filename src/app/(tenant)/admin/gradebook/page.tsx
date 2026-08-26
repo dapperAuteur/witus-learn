@@ -35,13 +35,13 @@ export default async function AdminGradebookPage() {
       </div>
 
       {rows.length === 0 ? (
-        <p className="mt-6 text-sm text-neutral-500">
+        <p className="mt-6 text-sm text-neutral-600">
           No learners yet. Learners appear here once someone enrolls in a course or joins a cohort.
         </p>
       ) : (
         <div className="mt-6 overflow-x-auto rounded-lg border border-neutral-200 dark:border-neutral-800">
           <table className="w-full min-w-[40rem] text-left text-sm">
-            <thead className="border-b border-neutral-200 text-xs uppercase tracking-wide text-neutral-500 dark:border-neutral-800">
+            <thead className="border-b border-neutral-200 text-xs uppercase tracking-wide text-neutral-600 dark:border-neutral-800">
               <tr>
                 <th scope="col" className="px-3 py-2">Student</th>
                 <th scope="col" className="px-3 py-2">Email</th>

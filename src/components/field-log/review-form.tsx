@@ -83,7 +83,7 @@ export function ReviewForm({
             <div className="flex flex-wrap items-center justify-between gap-2">
               <div>
                 <span className="text-sm font-medium">{c.label}</span>
-                {c.bar === "met" ? <span className="ml-2 text-xs text-red-600 dark:text-red-400">must be Met</span> : <span className="ml-2 text-xs text-neutral-500">developing OK</span>}
+                {c.bar === "met" ? <span className="ml-2 text-xs text-red-600 dark:text-red-400">must be Met</span> : <span className="ml-2 text-xs text-neutral-600">developing OK</span>}
               </div>
               <select value={criteria[c.id] ?? "developing"} onChange={(e) => setCriteria((p) => ({ ...p, [c.id]: e.target.value as RubricScore }))} className={field}>
                 {RUBRIC_SCORES.filter((s) => c.naAllowed || s.v !== "na").map((s) => (
@@ -91,7 +91,7 @@ export function ReviewForm({
                 ))}
               </select>
             </div>
-            <p className="mt-1 text-xs text-neutral-500">{c.hint}</p>
+            <p className="mt-1 text-xs text-neutral-600">{c.hint}</p>
           </li>
         ))}
       </ul>

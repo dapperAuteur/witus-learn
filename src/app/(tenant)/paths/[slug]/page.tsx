@@ -32,7 +32,7 @@ export default async function PathPage({ params }: Params) {
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
-      <Link href="/paths" className="text-sm text-neutral-500 hover:underline">
+      <Link href="/paths" className="text-sm text-neutral-600 hover:underline">
         ← Learning paths
       </Link>
       <h1 className="mt-4 text-3xl font-bold">{data.path.title}</h1>
@@ -50,7 +50,7 @@ export default async function PathPage({ params }: Params) {
               <strong>{pathStandards.jurisdictions.length}</strong>{" "}
               {pathStandards.jurisdictions.length === 1 ? "jurisdiction" : "jurisdictions"}
             </span>
-            <span className="ml-auto text-xs text-neutral-500">show</span>
+            <span className="ml-auto text-xs text-neutral-600">show</span>
           </summary>
           <div className="px-4 pb-4">
             <ul className="mt-2 flex flex-wrap gap-2">
@@ -61,7 +61,7 @@ export default async function PathPage({ params }: Params) {
                     className="inline-flex items-center gap-1 rounded-full border border-neutral-300 px-3 py-1 text-xs hover:underline dark:border-neutral-700"
                   >
                     {j.jurisdiction}
-                    <span className="text-neutral-500">{j.count}</span>
+                    <span className="text-neutral-600">{j.count}</span>
                   </Link>
                 </li>
               ))}
@@ -78,7 +78,7 @@ export default async function PathPage({ params }: Params) {
       ) : null}
 
       <ol className="mt-6 space-y-3">
-        {courses.length === 0 ? <li className="text-neutral-500">No courses in this path yet.</li> : null}
+        {courses.length === 0 ? <li className="text-neutral-600">No courses in this path yet.</li> : null}
         {courses.map((c, i) => (
           <li key={c.id}>
             <Link href={`/course/${c.id}`} className="flex items-start gap-3 rounded-lg border border-neutral-200 p-4 hover:border-current dark:border-neutral-800">

@@ -65,7 +65,7 @@ export default async function LivePage() {
 
       {liveNow.length === 0 && streamSrc ? (
         <section className="mt-8">
-          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-500">Stream</h2>
+          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-600">Stream</h2>
           <LivePlayer url={streamSrc} title={`${brandName(sdb.tenant)} stream`} sandbox />
         </section>
       ) : null}
@@ -96,13 +96,13 @@ export default async function LivePage() {
 
       {upcoming.length > 0 ? (
         <section className="mt-8">
-          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-500">Upcoming</h2>
+          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-600">Upcoming</h2>
           <ul className="divide-y divide-neutral-200 dark:divide-neutral-800">
             {upcoming.map((s) => (
               <li key={s.id} className="py-3">
                 <p className="font-medium">{s.title}</p>
                 {s.scheduledAt ? (
-                  <p className="text-sm text-neutral-500">{new Date(s.scheduledAt).toLocaleString()}</p>
+                  <p className="text-sm text-neutral-600">{new Date(s.scheduledAt).toLocaleString()}</p>
                 ) : null}
                 {s.description ? <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">{s.description}</p> : null}
               </li>
@@ -113,7 +113,7 @@ export default async function LivePage() {
 
       {recordings.length > 0 ? (
         <section className="mt-8">
-          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-500">Recordings</h2>
+          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-600">Recordings</h2>
           <div className="space-y-6">
             {recordings.map((s) => (
               <article key={s.id}>
@@ -125,7 +125,7 @@ export default async function LivePage() {
         </section>
       ) : null}
 
-      {visible.length === 0 ? <p className="mt-8 text-neutral-500">No live classes yet. Check back soon.</p> : null}
+      {visible.length === 0 ? <p className="mt-8 text-neutral-600">No live classes yet. Check back soon.</p> : null}
     </main>
   );
 }

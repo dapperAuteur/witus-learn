@@ -9,10 +9,11 @@
   color-scheme: light dark;
   /* Page background. Warm off-white rather than pure #fff: this app is read for long
      stretches, and #fff is the highest-glare surface there is. White cards and panels
-     now separate from the page on their own, without a border. The .dark peer is
+     now separate from the page on their own, without a border. Stepped down from #faf9f7 on
+     2026-08-26: that first value was too close to white to do the job. The .dark peer is
      neutral-950, matching what the body class used to hardcode. Change it HERE, not in
      layout.tsx, so both themes stay in one place. */
-  --page-bg: #faf9f7;
+  --page-bg: #f0ede6;
   /* Height of the sticky site header — the offset for anything that must stick BELOW it
      (the lesson page's progress sub-header, the admin sidebar). Static fallback for the
      normal one-row bar: 2.75rem tallest nav item (min-h-11) + 1.5rem py-3 + 1px border-b.

@@ -128,7 +128,7 @@ export function GradeAdjust({
           {error}
         </p>
       ) : null}
-      <p className="mt-2 text-neutral-500">
+      <p className="mt-2 text-neutral-600">
         The student&rsquo;s recorded attempt is never changed; reports show your adjustment with
         your name and reason, and the student sees both values.
       </p>

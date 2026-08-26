@@ -13,7 +13,7 @@ export function RelatedTools({ slugs, courseId }: { slugs: string[]; courseId: s
 
   return (
     <section className="mt-10 rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
-      <h2 className="text-xs font-semibold uppercase tracking-wide text-neutral-500">Related WitUS tools</h2>
+      <h2 className="text-xs font-semibold uppercase tracking-wide text-neutral-600">Related WitUS tools</h2>
       <ul className="mt-3 space-y-3">
         {products.map((p) => (
           <li key={p.slug}>

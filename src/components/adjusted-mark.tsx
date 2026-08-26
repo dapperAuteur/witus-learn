@@ -13,7 +13,7 @@ export function AdjustedMark({ label, reason }: { label: string; reason: string 
         >
           {label}
         </summary>
-        <span className="mt-1 block max-w-60 text-xs text-neutral-500">{reason}</span>
+        <span className="mt-1 block max-w-60 text-xs text-neutral-600">{reason}</span>
       </details>
     </span>
   );

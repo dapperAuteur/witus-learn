@@ -78,7 +78,7 @@ export function NewProject() {
           >
             {saving ? "Creating…" : "Create project"}
           </button>
-          <button type="button" onClick={() => setOpen(false)} className="text-sm text-neutral-500 hover:underline">
+          <button type="button" onClick={() => setOpen(false)} className="text-sm text-neutral-600 hover:underline">
             Cancel
           </button>
         </div>

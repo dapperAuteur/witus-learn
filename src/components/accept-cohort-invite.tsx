@@ -42,7 +42,7 @@ export function AcceptCohortInvite({ token }: { token: string }) {
   }, [token]);
 
   if (status === "accepting") {
-    return <p className="text-neutral-500">Joining your class…</p>;
+    return <p className="text-neutral-600">Joining your class…</p>;
   }
 
   if (status === "error") {
@@ -51,7 +51,7 @@ export function AcceptCohortInvite({ token }: { token: string }) {
         <p role="alert" className="text-amber-700 dark:text-amber-400">
           {message}
         </p>
-        <p className="mt-2 text-sm text-neutral-500">
+        <p className="mt-2 text-sm text-neutral-600">
           Ask your instructor for a fresh invite, or{" "}
           <Link href="/" className="underline">
             head back home

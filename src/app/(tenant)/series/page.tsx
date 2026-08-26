@@ -70,7 +70,7 @@ export default async function SeriesIndexPage() {
                     {s.code}
                   </span>
                 ) : null}
-                <span className="text-xs uppercase tracking-wide text-neutral-500">
+                <span className="text-xs uppercase tracking-wide text-neutral-600">
                   {s.courseCount} {s.courseCount === 1 ? "course" : "courses"}
                 </span>
               </div>
@@ -105,7 +105,7 @@ export default async function SeriesIndexPage() {
                 </p>
               )}
               {s.hasCapstone ? (
-                <p className="mt-1 text-sm text-neutral-500 dark:text-neutral-400">
+                <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
                   Ends with a capstone that uses everything before it.
                 </p>
               ) : null}

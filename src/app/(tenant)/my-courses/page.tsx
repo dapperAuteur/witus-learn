@@ -51,7 +51,7 @@ export default async function MyCoursesPage() {
         </Link>
       </div>
       {courses.length === 0 ? (
-        <p className="mt-3 text-neutral-500">
+        <p className="mt-3 text-neutral-600">
           You are not enrolled in any courses yet.{" "}
           <Link href="/?view=catalog" className="underline" style={{ color: "var(--accent)" }}>
             Browse the catalog
@@ -62,7 +62,7 @@ export default async function MyCoursesPage() {
         <div className="mt-6 space-y-10">
           {groups.map((g) => (
             <section key={g.key}>
-              <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-500">
+              <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-600">
                 {g.title} · {g.items.length}
               </h2>
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

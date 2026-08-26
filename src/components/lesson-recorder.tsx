@@ -430,7 +430,7 @@ export function LessonRecorder({
             {formatSeconds(elapsed)}
             {paused ? " · paused" : ""}
           </span>
-          <span className="text-xs text-neutral-500">
+          <span className="text-xs text-neutral-600">
             {formatBytes(bytes)}
             {parts > 0 ? ` · part ${parts + 1}` : ""}
           </span>
@@ -444,14 +444,14 @@ export function LessonRecorder({
                 stream={previewStream}
                 className="max-h-40 w-full max-w-xs rounded-lg border border-neutral-300 dark:border-neutral-700"
               />
-              <p className="mt-1 max-w-xs text-xs text-neutral-500">
+              <p className="mt-1 max-w-xs text-xs text-neutral-600">
                 Mirrored preview only, the saved video isn’t flipped. Keep this preview right next to
                 your camera so your eyes stay near the lens.
               </p>
             </div>
           ) : null}
           {mode === "video" ? (
-            <p className="w-full text-xs text-neutral-500">
+            <p className="w-full text-xs text-neutral-600">
               Saved on this device while you record; uploads to this lesson when you stop. Nothing is
               published automatically.
             </p>
@@ -460,13 +460,13 @@ export function LessonRecorder({
       ) : null}
 
       {parts > 0 && status !== "recording" && status !== "idle" ? (
-        <span className="w-full text-xs text-neutral-500">
+        <span className="w-full text-xs text-neutral-600">
           Long recording, split into {parts} parts, uploaded and played back in order.
         </span>
       ) : null}
 
-      {status === "local" ? <span className="text-neutral-500">Recorded, preparing upload…</span> : null}
-      {status === "uploading" ? <span className="text-neutral-500">Uploading… {progress}%</span> : null}
+      {status === "local" ? <span className="text-neutral-600">Recorded, preparing upload…</span> : null}
+      {status === "uploading" ? <span className="text-neutral-600">Uploading… {progress}%</span> : null}
       {status === "offline" ? (
         <>
           <span className="text-amber-600">Saved locally, waiting to upload when you’re back online.</span>

@@ -105,7 +105,7 @@ export function CourseNotifyForm({
           {error}
         </p>
       ) : null}
-      <p className="mt-2 text-xs text-neutral-500">
+      <p className="mt-2 text-xs text-neutral-600">
         One email when it opens. Nothing else.
       </p>
     </form>

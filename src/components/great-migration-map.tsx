@@ -367,7 +367,7 @@ export function GreatMigrationMap({ initialFocus }: { initialFocus?: string }) {
                   "min-h-9 rounded-t-md px-3 py-1.5 text-sm font-medium transition-colors " +
                   (activeTab === key
                     ? "border-b-2 border-red-600 text-red-700 dark:text-red-400"
-                    : "text-neutral-500 hover:text-neutral-800 dark:hover:text-neutral-200")
+                    : "text-neutral-600 hover:text-neutral-800 dark:hover:text-neutral-200")
                 }
               >
                 {selected.tabs[key].label}
@@ -383,12 +383,12 @@ export function GreatMigrationMap({ initialFocus }: { initialFocus?: string }) {
             <p className="font-semibold">{selected.tabs[activeTab].title}</p>
             <p className="mt-1 text-sm text-neutral-700 dark:text-neutral-300">{selected.tabs[activeTab].body}</p>
             {selected.tabs[activeTab].source ? (
-              <p className="mt-2 text-xs text-neutral-500 dark:text-neutral-500">Source: {selected.tabs[activeTab].source}</p>
+              <p className="mt-2 text-xs text-neutral-600 dark:text-neutral-500">Source: {selected.tabs[activeTab].source}</p>
             ) : null}
           </div>
         </div>
       ) : (
-        <p className="mt-4 text-sm text-neutral-500">
+        <p className="mt-4 text-sm text-neutral-600">
           Select a marker (Chicago, Harlem, Detroit, or Vanport) to open its story, event, figure, and art.
         </p>
       )}

@@ -37,7 +37,7 @@ export function DemoLoginButton() {
       >
         {pending ? "Signing you in…" : "Try the demo"}
       </button>
-      <p className="mt-2 text-center text-xs text-neutral-500">
+      <p className="mt-2 text-center text-xs text-neutral-600">
         Explore every feature with a shared demo account. Data resets nightly.
       </p>
       {error ? (

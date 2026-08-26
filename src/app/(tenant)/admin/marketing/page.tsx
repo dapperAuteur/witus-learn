@@ -79,11 +79,11 @@ export default async function MarketingPage() {
 
   return (
     <main className="max-w-3xl py-10">
-      <Link href="/admin" className="text-sm text-neutral-500 hover:underline">
+      <Link href="/admin" className="text-sm text-neutral-600 hover:underline">
         ← Admin
       </Link>
       <h1 className="mt-3 text-2xl font-bold">Marketing</h1>
-      <p className="mt-1 text-sm text-neutral-500">
+      <p className="mt-1 text-sm text-neutral-600">
         Every marketing lever for {brand} in one place: who is interested, what to announce, and the
         codes and drafts to act on it.
       </p>
@@ -95,7 +95,7 @@ export default async function MarketingPage() {
         <div className="mt-3 grid gap-3 sm:grid-cols-3">
           <div className={card}>
             <p className="text-2xl font-bold">{interest.leads.length}</p>
-            <p className="text-sm text-neutral-500">
+            <p className="text-sm text-neutral-600">
               Captured leads{interest.truncated ? " (first 1000)" : ""}
             </p>
             <Link href="/admin/leads" className="mt-1 inline-block text-sm hover:underline" style={{ color: "var(--accent)" }}>
@@ -105,13 +105,13 @@ export default async function MarketingPage() {
           <div className={card}>
             <p className="text-sm font-semibold">Top demand</p>
             {topDemand.length === 0 ? (
-              <p className="mt-1 text-sm text-neutral-500">No course-specific interest yet.</p>
+              <p className="mt-1 text-sm text-neutral-600">No course-specific interest yet.</p>
             ) : (
               <ul className="mt-1 space-y-1 text-sm">
                 {topDemand.map((d) => (
                   <li key={d.key} className="flex justify-between gap-2">
                     <span className="truncate">{d.label}</span>
-                    <span className="shrink-0 text-neutral-500">{d.leads} waiting</span>
+                    <span className="shrink-0 text-neutral-600">{d.leads} waiting</span>
                   </li>
                 ))}
               </ul>
@@ -119,7 +119,7 @@ export default async function MarketingPage() {
           </div>
           <div className={card}>
             <p className="text-2xl font-bold">{shares.total}</p>
-            <p className="text-sm text-neutral-500">
+            <p className="text-sm text-neutral-600">
               Shares from the in-app share buttons
               {topChannels.length > 0
                 ? ` (${topChannels.map((c) => `${c.channel} ${c.count}`).join(", ")})`
@@ -134,12 +134,12 @@ export default async function MarketingPage() {
           Course announcements
         </h2>
         {unannounced.length === 0 ? (
-          <p className="mt-1 text-sm text-neutral-500">
+          <p className="mt-1 text-sm text-neutral-600">
             Every published course has been announced. New courses appear here when they publish.
           </p>
         ) : (
           <div className="mt-1">
-            <p className="text-sm text-neutral-500">
+            <p className="text-sm text-neutral-600">
               {unannounced.length} of {published.length} published course
               {published.length === 1 ? "" : "s"} not announced yet
               {hasOutbox
@@ -183,7 +183,7 @@ export default async function MarketingPage() {
         <h2 id="mkt-sales" className="text-lg font-bold">
           Sales and promotions
         </h2>
-        <p className="mt-1 text-sm text-neutral-500">
+        <p className="mt-1 text-sm text-neutral-600">
           Discounts that need <strong>no code</strong>. The course or bundle page shows the old price
           struck through beside the new one, and checkout charges the new price. The list price you
           set on the course is never overwritten, so a sale always ends cleanly.
@@ -197,7 +197,7 @@ export default async function MarketingPage() {
         <h2 id="mkt-campaigns" className="text-lg font-bold">
           Email campaigns
         </h2>
-        <p className="mt-1 text-sm text-neutral-500">
+        <p className="mt-1 text-sm text-neutral-600">
           Compose and save drafts now. <strong>Sending is disabled</strong> until the audience,
           consent and unsubscribe rules are signed off; the open decisions are listed in{" "}
           <code>docs-notes-admin-marketing.md</code>. Until then, send saved drafts through your own

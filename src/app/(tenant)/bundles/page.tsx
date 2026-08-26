@@ -34,7 +34,7 @@ export default async function BundlesIndexPage() {
       </p>
 
       {bundles.length === 0 ? (
-        <p className="mt-8 text-neutral-500">No bundles are available yet.</p>
+        <p className="mt-8 text-neutral-600">No bundles are available yet.</p>
       ) : (
         <ul className="mt-6 grid gap-4 sm:grid-cols-2">
           {bundles.map((b) => (

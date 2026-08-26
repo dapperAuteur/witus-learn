@@ -58,7 +58,7 @@ export function ProfileEditForm({
       <div>
         <label className="text-sm font-medium" htmlFor="pf-bio">Bio</label>
         <textarea id="pf-bio" value={bio} onChange={(e) => { setBio(e.target.value); setState("idle"); }} rows={4} maxLength={2000} className="mt-1 w-full rounded-md border border-neutral-300 px-3 py-2 dark:border-neutral-700 dark:bg-neutral-900" />
-        <p className="mt-1 text-xs text-neutral-500">Shown on your public instructor page.</p>
+        <p className="mt-1 text-xs text-neutral-600">Shown on your public instructor page.</p>
       </div>
 
       <div>

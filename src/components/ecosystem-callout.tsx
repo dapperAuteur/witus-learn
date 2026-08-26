@@ -22,7 +22,7 @@ export function EcosystemCallout({
 
   return (
     <aside className="my-5 rounded-lg border border-neutral-200 bg-neutral-50 p-4 dark:border-neutral-800 dark:bg-neutral-900/60">
-      <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500">Related WitUS tool</p>
+      <p className="text-xs font-semibold uppercase tracking-wide text-neutral-600">Related WitUS tool</p>
       <a
         href={href}
         target="_blank"

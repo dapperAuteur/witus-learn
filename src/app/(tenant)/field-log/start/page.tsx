@@ -53,7 +53,7 @@ export default async function StartProjectPage({ searchParams }: SP) {
         <StartProjectButton templateKey={template.key} defaultTitle={titleParam || template.title} />
       </div>
       <p className="mt-4 text-sm">
-        <Link href="/field-log" className="text-neutral-500 hover:underline">Cancel</Link>
+        <Link href="/field-log" className="text-neutral-600 hover:underline">Cancel</Link>
       </p>
     </main>
   );

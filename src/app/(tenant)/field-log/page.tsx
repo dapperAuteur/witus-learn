@@ -79,7 +79,7 @@ export default async function FieldLogPage() {
       {projects.length === 0 ? (
         <div className="mt-8 rounded-lg border border-dashed border-neutral-300 p-8 text-center dark:border-neutral-700">
           <p className="text-neutral-600 dark:text-neutral-400">No projects yet.</p>
-          <p className="mt-1 text-sm text-neutral-500">Start one from a template to begin.</p>
+          <p className="mt-1 text-sm text-neutral-600">Start one from a template to begin.</p>
         </div>
       ) : (
         <ul className="mt-6 space-y-3">
@@ -96,9 +96,9 @@ export default async function FieldLogPage() {
                       {p.title}
                       {earnedIds.has(p.id) ? <span className="ml-2 text-xs text-emerald-600 dark:text-emerald-400" title="Credential earned">🎖</span> : null}
                     </span>
-                    <span className="text-xs text-neutral-500">{total ? `${done}/${total}` : "-"}</span>
+                    <span className="text-xs text-neutral-600">{total ? `${done}/${total}` : "-"}</span>
                   </div>
-                  <div className="mt-1 flex flex-wrap gap-2 text-xs text-neutral-500">
+                  <div className="mt-1 flex flex-wrap gap-2 text-xs text-neutral-600">
                     {p.medium ? <span className="rounded bg-neutral-100 px-2 py-0.5 dark:bg-neutral-800">{p.medium}</span> : null}
                     {p.subjectTag ? <span className="rounded bg-neutral-100 px-2 py-0.5 dark:bg-neutral-800">{p.subjectTag}</span> : null}
                     <span className="rounded bg-neutral-100 px-2 py-0.5 dark:bg-neutral-800">{p.status}</span>

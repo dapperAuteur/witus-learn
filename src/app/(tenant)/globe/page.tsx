@@ -51,7 +51,7 @@ export default async function GlobePage() {
       </p>
 
       {markers.length === 0 ? (
-        <p className="mt-8 text-neutral-500">No place-based courses are published yet.</p>
+        <p className="mt-8 text-neutral-600">No place-based courses are published yet.</p>
       ) : (
         <div className="mt-6">
           <ExploreGlobe markers={markers} />

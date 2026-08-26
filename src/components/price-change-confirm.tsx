@@ -75,7 +75,7 @@ export function PriceChangeConfirm({
           <li key={c.courseId} className="rounded-md border border-neutral-200 p-3 dark:border-neutral-800">
             <p className="font-semibold">{c.title}</p>
             <p className="mt-0.5 text-sm">
-              <span className="text-neutral-500">{c.fromLabel}</span>
+              <span className="text-neutral-600">{c.fromLabel}</span>
               <span aria-hidden="true"> &rarr; </span>
               <span className="sr-only"> changes to </span>
               <strong>{c.toLabel}</strong>

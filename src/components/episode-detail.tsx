@@ -87,11 +87,11 @@ export function EpisodeDetail({
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0">
           {pin.episodeLabel ? (
-            <p className="text-xs uppercase tracking-wide text-neutral-500">{pin.episodeLabel}</p>
+            <p className="text-xs uppercase tracking-wide text-neutral-600">{pin.episodeLabel}</p>
           ) : null}
           <h3 className="text-lg font-semibold wrap-break-word">{pin.name}</h3>
           {pin.geo ? (
-            <p className="text-sm text-neutral-500 wrap-break-word">{pin.geo}</p>
+            <p className="text-sm text-neutral-600 wrap-break-word">{pin.geo}</p>
           ) : null}
         </div>
         <button

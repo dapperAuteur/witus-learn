@@ -53,14 +53,14 @@ export default async function BundlePage({ params }: Params) {
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
-      <Link href="/bundles" className="text-sm text-neutral-500 hover:underline">
+      <Link href="/bundles" className="text-sm text-neutral-600 hover:underline">
         ← Bundles
       </Link>
       <h1 className="mt-4 text-3xl font-bold">{bundle.title}</h1>
       {bundle.description ? (
         <p className="mt-2 text-neutral-600 dark:text-neutral-400">{bundle.description}</p>
       ) : null}
-      <p className="mt-3 text-sm text-neutral-500">
+      <p className="mt-3 text-sm text-neutral-600">
         {courses.length} course{courses.length === 1 ? "" : "s"}, one purchase, enrolls you in all of them.
       </p>
 

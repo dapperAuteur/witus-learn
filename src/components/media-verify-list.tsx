@@ -196,7 +196,7 @@ function MediaCard({ row, onDecided }: { row: MediaAssetRow; onDecided: (next: M
           <dt className="font-medium">Alt text</dt>
           <dd className="text-neutral-700 dark:text-neutral-300">
             {row.alt ?? (
-              <span className="text-neutral-500 dark:text-neutral-400">
+              <span className="text-neutral-600 dark:text-neutral-400">
                 None. An image with no alt text is invisible to a screen reader.
               </span>
             )}
@@ -205,7 +205,7 @@ function MediaCard({ row, onDecided }: { row: MediaAssetRow; onDecided: (next: M
         <div>
           <dt className="font-medium">Caption</dt>
           <dd className="text-neutral-700 dark:text-neutral-300">
-            {row.caption ?? <span className="text-neutral-500 dark:text-neutral-400">None</span>}
+            {row.caption ?? <span className="text-neutral-600 dark:text-neutral-400">None</span>}
           </dd>
         </div>
         <div>
@@ -268,9 +268,9 @@ function MediaCard({ row, onDecided }: { row: MediaAssetRow; onDecided: (next: M
           {saving === "rejected" ? "Saving…" : "Reject"}
         </button>
         {saved ? (
-          <span className="text-xs text-neutral-500 dark:text-neutral-400">Saved</span>
+          <span className="text-xs text-neutral-600 dark:text-neutral-400">Saved</span>
         ) : row.reviewedAt ? (
-          <span className="text-xs text-neutral-500 dark:text-neutral-400">
+          <span className="text-xs text-neutral-600 dark:text-neutral-400">
             Last reviewed {new Date(row.reviewedAt).toLocaleString("en-US")}
           </span>
         ) : null}

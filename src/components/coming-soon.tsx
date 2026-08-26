@@ -18,7 +18,7 @@ export function ComingSoon({ tenant }: { tenant: TenantRecord }) {
         <span className="h-2 w-2 rounded-full" style={{ backgroundColor: "var(--accent)" }} />
         Launching soon
       </p>
-      <p className="mt-6 max-w-md text-sm text-neutral-500">
+      <p className="mt-6 max-w-md text-sm text-neutral-600">
         This school is being prepared. Check back soon.
       </p>
       <LeadCapture source="coming-soon" label="Notify me" />

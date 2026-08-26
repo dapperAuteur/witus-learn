@@ -120,7 +120,7 @@ export default async function PricingPage() {
                 <span className={`inline-block rounded-full px-2 py-0.5 text-xs font-medium ${TIER_CLS[t.tier]}`}>
                   {t.label}
                 </span>
-                <span className="text-xs text-neutral-500">
+                <span className="text-xs text-neutral-600">
                   {countByTier.find((c) => c.tier === t.tier)?.n ?? 0} courses
                 </span>
               </div>
@@ -163,7 +163,7 @@ export default async function PricingPage() {
             <div key={b.slug} className="rounded-lg border border-neutral-200 p-5 dark:border-neutral-800">
               <div className="flex flex-wrap items-baseline justify-between gap-2">
                 <h3 className="font-semibold">{b.title}</h3>
-                <span className="text-sm text-neutral-500">
+                <span className="text-sm text-neutral-600">
                   {b.plannedUntilComplete && b.known !== b.total ? (
                     <span className="mr-2 rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-900/40 dark:text-amber-300">
                       planned
@@ -277,7 +277,7 @@ export default async function PricingPage() {
                   {c.price === null ? "n/a" : `$${c.price}`}
                 </span>
               </div>
-              <p className="mt-1 text-xs text-neutral-500">
+              <p className="mt-1 text-xs text-neutral-600">
                 {c.kind} · gathered {c.gatheredOn}
                 {c.priceNote ? ` · ${c.priceNote}` : ""}
                 {c.needsVerification ? (
@@ -302,7 +302,7 @@ export default async function PricingPage() {
                   <dd className="mt-1 text-xs text-neutral-600 dark:text-neutral-400">{c.different}</dd>
                 </div>
               </dl>
-              <p className="mt-2 text-xs text-neutral-500">
+              <p className="mt-2 text-xs text-neutral-600">
                 Anchors: {c.anchors.join(", ")}
               </p>
             </div>
@@ -310,7 +310,7 @@ export default async function PricingPage() {
         </div>
       </section>
 
-      <p className="mt-6 text-xs text-neutral-500">
+      <p className="mt-6 text-xs text-neutral-600">
         Course prices you save here take effect on the next checkout. Bundle prices above are still
         proposals: the app cannot yet sell a bundle. Competitor prices are dated snapshots, not
         facts. No number is a promise about revenue.

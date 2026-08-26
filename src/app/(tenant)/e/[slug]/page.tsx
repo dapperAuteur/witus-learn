@@ -49,7 +49,7 @@ export default async function EntityPage({ params }: Params) {
       </p>
       <h1 className="mt-1 text-3xl font-bold">{entity.name}</h1>
       <p className="mt-2 text-neutral-600 dark:text-neutral-400">{entity.description}</p>
-      <p className="mt-3 text-sm text-neutral-500">
+      <p className="mt-3 text-sm text-neutral-600">
         {links.length === 1
           ? "Covered in this course:"
           : `Covered across ${links.length} courses, each from its own angle:`}

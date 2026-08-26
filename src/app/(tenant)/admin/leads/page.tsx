@@ -73,9 +73,9 @@ function DemandBoard({
 }) {
   return (
     <section className={card}>
-      <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">{heading}</h3>
+      <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-600">{heading}</h3>
       {counts.length === 0 ? (
-        <p className="mt-2 text-sm text-neutral-500">{emptyNote}</p>
+        <p className="mt-2 text-sm text-neutral-600">{emptyNote}</p>
       ) : (
         <ul className="mt-2 space-y-1">
           {counts.slice(0, 12).map((c) => {
@@ -300,7 +300,7 @@ export default async function LeadsPage({ searchParams }: { searchParams: Search
       ) : null}
 
       {rows.length === 0 ? (
-        <p className="mt-6 text-neutral-500">
+        <p className="mt-6 text-neutral-600">
           {leads.length === 0
             ? "No leads yet."
             : "Nobody matches this filter. Try clearing one of the filters above."}
@@ -311,7 +311,7 @@ export default async function LeadsPage({ searchParams }: { searchParams: Search
             <li key={l.email} className="py-3 text-sm">
               <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1">
                 <span className="break-all font-mono">{l.email}</span>
-                <span className="whitespace-nowrap text-neutral-500">
+                <span className="whitespace-nowrap text-neutral-600">
                   {l.createdAt.toLocaleDateString()}
                 </span>
               </div>
@@ -324,7 +324,7 @@ export default async function LeadsPage({ searchParams }: { searchParams: Search
                   key={`${l.email}-${i}`}
                   className="mt-2 rounded-lg border border-neutral-200 p-3 dark:border-neutral-800"
                 >
-                  <p className="text-xs text-neutral-500">
+                  <p className="text-xs text-neutral-600">
                     {[
                       sourceLabel(q.source),
                       q.role ? (ROLE_LABELS[q.role] ?? q.role) : null,
@@ -347,9 +347,9 @@ export default async function LeadsPage({ searchParams }: { searchParams: Search
                       {q.message}
                     </p>
                   ) : q.implicit ? (
-                    <p className="mt-1.5 text-neutral-500">Email signup, no question asked.</p>
+                    <p className="mt-1.5 text-neutral-600">Email signup, no question asked.</p>
                   ) : (
-                    <p className="mt-1.5 text-neutral-500">No message.</p>
+                    <p className="mt-1.5 text-neutral-600">No message.</p>
                   )}
                   <a
                     href={`mailto:${l.email}?subject=${encodeURIComponent(

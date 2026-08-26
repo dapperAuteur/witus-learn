@@ -46,14 +46,14 @@ export default async function AdminDashboardPage() {
         {tiles.map((t) => (
           <div key={t.label} className="rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900">
             <div className="text-3xl font-bold" style={{ color: "var(--accent)" }}>{t.value}</div>
-            <div className="mt-1 text-sm text-neutral-500">{t.label}</div>
+            <div className="mt-1 text-sm text-neutral-600">{t.label}</div>
             {t.hint ? <div className="text-xs text-neutral-400">{t.hint}</div> : null}
           </div>
         ))}
       </div>
 
       <h2 className="mt-10 text-lg font-semibold">Learners</h2>
-      <p className="mt-1 text-sm text-neutral-500">
+      <p className="mt-1 text-sm text-neutral-600">
         {learners.length === 0
           ? "No enrollments yet."
           : `${learners.length} learner${learners.length === 1 ? "" : "s"}, most recently active first.`}
@@ -63,7 +63,7 @@ export default async function AdminDashboardPage() {
         <div className="mt-4 overflow-x-auto rounded-lg border border-neutral-200 dark:border-neutral-800">
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b border-neutral-200 text-left text-neutral-500 dark:border-neutral-800">
+              <tr className="border-b border-neutral-200 text-left text-neutral-600 dark:border-neutral-800">
                 <th className="p-3 font-medium">Learner</th>
                 <th className="p-3 font-medium">Enrollments</th>
                 <th className="p-3 font-medium">Completions</th>
@@ -76,7 +76,7 @@ export default async function AdminDashboardPage() {
                 <tr key={l.userId} className="border-b border-neutral-100 last:border-0 dark:border-neutral-800/60">
                   <td className="p-3">
                     <div className="font-medium">{l.name || l.email.split("@")[0]}</div>
-                    <div className="text-xs text-neutral-500">{l.email}</div>
+                    <div className="text-xs text-neutral-600">{l.email}</div>
                   </td>
                   <td className="p-3 tabular-nums">{l.enrollments}</td>
                   <td className="p-3 tabular-nums">{l.completions}</td>

@@ -50,7 +50,7 @@ export function CourseCard({
       {seriesHref ? (
         <Link
           href={seriesHref}
-          className="mb-1 self-start text-xs font-medium text-neutral-500 underline-offset-2 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
+          className="mb-1 self-start text-xs font-medium text-neutral-600 underline-offset-2 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
         >
           See the whole path
         </Link>
@@ -61,7 +61,7 @@ export function CourseCard({
       >
         <span className="mb-3 h-1.5 w-12 rounded" style={{ backgroundColor: "var(--accent)" }} />
         {code || meta ? (
-          <p className="flex flex-wrap items-center gap-2 text-xs uppercase tracking-wide text-neutral-500">
+          <p className="flex flex-wrap items-center gap-2 text-xs uppercase tracking-wide text-neutral-600">
             {code ? (
               <span className="rounded bg-neutral-100 px-1.5 py-0.5 font-mono font-semibold tracking-normal text-neutral-700 dark:bg-neutral-800 dark:text-neutral-300">
                 {code}
@@ -80,7 +80,7 @@ export function CourseCard({
         {progress != null ? (
           <div>
             <ProgressBar percent={progress} className="h-1.5" />
-            <p className="mt-1.5 text-xs font-medium text-neutral-500">
+            <p className="mt-1.5 text-xs font-medium text-neutral-600">
               {progress >= 100 ? "Completed ✓" : `${progress}% complete`}
             </p>
           </div>

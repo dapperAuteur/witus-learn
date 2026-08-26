@@ -43,11 +43,11 @@ export default async function CohortRosterPage({ params }: { params: Promise<{ i
 
   return (
     <main className="max-w-2xl py-10">
-      <Link href="/cohorts" className="text-sm text-neutral-500 hover:underline">
+      <Link href="/cohorts" className="text-sm text-neutral-600 hover:underline">
         ← Cohorts
       </Link>
       <h1 className="mt-3 text-2xl font-bold">{cohort.name}</h1>
-      <p className="mt-1 text-sm text-neutral-500">
+      <p className="mt-1 text-sm text-neutral-600">
         {members.length} {members.length === 1 ? "student" : "students"} ·{" "}
         <Link href="/live" className="underline">
           Go to /live

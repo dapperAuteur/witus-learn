@@ -80,11 +80,11 @@ export function CourseSearch({ courseId, basePath }: { courseId: string; basePat
         autoComplete="off"
         className="mt-2 w-full min-h-11 rounded-md border border-neutral-300 px-3 py-2 text-sm focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700 dark:bg-neutral-900 pointer-coarse:min-h-12"
       />
-      <p className="mt-1 text-xs text-neutral-500">
+      <p className="mt-1 text-xs text-neutral-600">
         Searches lesson text, self-checks, and image descriptions (alt text, captions, credits).
       </p>
 
-      <p role="status" aria-live="polite" className="mt-2 min-h-5 text-sm text-neutral-500">
+      <p role="status" aria-live="polite" className="mt-2 min-h-5 text-sm text-neutral-600">
         {state === "searching"
           ? "Searching…"
           : state === "error"
@@ -106,7 +106,7 @@ export function CourseSearch({ courseId, basePath }: { courseId: string; basePat
               >
                 <span className="block text-sm font-medium">{r.title}</span>
                 {r.kind !== "title" ? (
-                  <span className="mt-0.5 block text-xs text-neutral-500">
+                  <span className="mt-0.5 block text-xs text-neutral-600">
                     {kindPrefix(r.kind)}
                     {r.snippet}
                   </span>

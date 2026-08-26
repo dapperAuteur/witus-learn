@@ -85,7 +85,7 @@ export function TptPacketView({
         >
           Download PDF
         </button>
-        <p className="text-xs text-neutral-500">
+        <p className="text-xs text-neutral-600">
           Opens your browser&apos;s print dialog, choose &ldquo;Save as PDF&rdquo;. Edits below apply
           to the PDF; &ldquo;Save to file&rdquo; also writes them back to the packet.
         </p>
@@ -137,7 +137,7 @@ export function TptPacketView({
           </section>
         ))}
 
-        <footer className="mt-8 border-t pt-3 text-xs text-neutral-500" style={{ borderColor: "var(--accent)" }}>
+        <footer className="mt-8 border-t pt-3 text-xs text-neutral-600" style={{ borderColor: "var(--accent)" }}>
           Learn.WitUS.Online · Every packet points back to the full cited, standards-aligned course.
         </footer>
       </article>

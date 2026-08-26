@@ -56,7 +56,7 @@ export default async function CivicsStatesPage() {
 
       {available.length ? (
         <div className="mt-6">
-          <h2 className="text-xs font-semibold uppercase tracking-wide text-neutral-500">Available now</h2>
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-neutral-600">Available now</h2>
           <ul className="mt-2 flex flex-wrap gap-2">
             {available.map(([name, link]) => (
               <li key={name}>
@@ -72,7 +72,7 @@ export default async function CivicsStatesPage() {
           </ul>
         </div>
       ) : (
-        <p className="mt-6 text-sm text-neutral-500">
+        <p className="mt-6 text-sm text-neutral-600">
           Per-state courses are coming soon, the national civics courses are available in the catalog now.
         </p>
       )}

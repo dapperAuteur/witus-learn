@@ -31,8 +31,8 @@ export function CourseStandards({ courseSlug }: { courseSlug: string }) {
         {/* The affordance has to change when the card opens, or it tells the reader to do the thing
             they just did. Same CSS-only pattern as /admin/future: no state, no JS, and the native
             <summary> still announces expanded/collapsed to a screen reader. */}
-        <span className="ml-auto text-xs text-neutral-500 group-open:hidden">show</span>
-        <span className="ml-auto hidden text-xs text-neutral-500 group-open:inline">hide</span>
+        <span className="ml-auto text-xs text-neutral-600 group-open:hidden">show</span>
+        <span className="ml-auto hidden text-xs text-neutral-600 group-open:inline">hide</span>
       </summary>
       <div className="px-4 pb-4">
         <ul className="mt-2 flex flex-wrap gap-2">
@@ -43,7 +43,7 @@ export function CourseStandards({ courseSlug }: { courseSlug: string }) {
                 className="inline-flex items-center gap-1 rounded-full border border-neutral-300 px-3 py-1 text-xs hover:underline dark:border-neutral-700"
               >
                 {j.jurisdiction}
-                <span className="text-neutral-500">{j.count}</span>
+                <span className="text-neutral-600">{j.count}</span>
               </Link>
             </li>
           ))}

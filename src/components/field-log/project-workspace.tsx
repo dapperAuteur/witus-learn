@@ -208,9 +208,9 @@ export function ProjectWorkspace({
     <section aria-label="Project workspace">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
-          <Link href="/field-log" className="text-sm text-neutral-500 hover:underline">← My Field Log</Link>
+          <Link href="/field-log" className="text-sm text-neutral-600 hover:underline">← My Field Log</Link>
           <h1 className="text-2xl font-bold">{project.title}</h1>
-          <p className="mt-1 text-xs text-neutral-500">
+          <p className="mt-1 text-xs text-neutral-600">
             {project.status} · {project.visibility}
             {project.selfAttestedAt ? " · self-attested" : ""}
           </p>
@@ -261,7 +261,7 @@ export function ProjectWorkspace({
             key={t.key}
             type="button"
             onClick={() => setTab(t.key)}
-            className={`min-h-9 px-3 text-sm ${tab === t.key ? "border-b-2 font-semibold" : "text-neutral-500"}`}
+            className={`min-h-9 px-3 text-sm ${tab === t.key ? "border-b-2 font-semibold" : "text-neutral-600"}`}
             style={tab === t.key ? { borderColor: "var(--accent)" } : undefined}
           >
             {t.label}
@@ -296,11 +296,11 @@ function ReviewsTab({ reviews, project }: { reviews: ProjectReview[]; project: D
         <p>
           Endorsements: <strong>{endorsements}/{CREDENTIAL_ENDORSEMENTS_REQUIRED}</strong> · self-attested: <strong>{selfAttested ? "yes" : "no"}</strong>
         </p>
-        <p className={`mt-1 ${meets ? "text-emerald-600 dark:text-emerald-400" : "text-neutral-500"}`}>
+        <p className={`mt-1 ${meets ? "text-emerald-600 dark:text-emerald-400" : "text-neutral-600"}`}>
           {meets ? "✓ Meets the credential bar" : "Not yet, needs self-attest + 2 endorsements."}
         </p>
         {project.visibility === "private" ? (
-          <p className="mt-1 text-xs text-neutral-500">Use “Self-attest &amp; request review” above to open this to peer reviewers.</p>
+          <p className="mt-1 text-xs text-neutral-600">Use “Self-attest &amp; request review” above to open this to peer reviewers.</p>
         ) : null}
       </div>
       <ul className="space-y-2">
@@ -310,12 +310,12 @@ function ReviewsTab({ reviews, project }: { reviews: ProjectReview[]; project: D
               <span className={`font-medium ${r.verdict === "endorse" ? "text-emerald-600 dark:text-emerald-400" : "text-amber-600 dark:text-amber-400"}`}>
                 {r.verdict === "endorse" ? "Endorsed" : "Needs revision"}
               </span>
-              <span className="text-xs text-neutral-500">{new Date(r.createdAt).toLocaleDateString()}</span>
+              <span className="text-xs text-neutral-600">{new Date(r.createdAt).toLocaleDateString()}</span>
             </div>
             {r.body ? <p className="mt-1 whitespace-pre-wrap text-neutral-600 dark:text-neutral-400">{r.body}</p> : null}
           </li>
         ))}
-        {reviews.length === 0 ? <li className="text-sm text-neutral-500">No reviews yet.</li> : null}
+        {reviews.length === 0 ? <li className="text-sm text-neutral-600">No reviews yet.</li> : null}
       </ul>
     </div>
   );
@@ -342,7 +342,7 @@ function ChecklistTab({
               <li key={it.id}>
                 <label className="flex items-start gap-2 text-sm">
                   <input type="checkbox" checked={it.done} onChange={() => onToggle(si, ii)} className="mt-1 h-4 w-4" />
-                  <span className={it.done ? "text-neutral-500 line-through" : ""}>{itemLabel(stage.key, it.id)}</span>
+                  <span className={it.done ? "text-neutral-600 line-through" : ""}>{itemLabel(stage.key, it.id)}</span>
                 </label>
                 <input
                   value={it.note}
@@ -414,14 +414,14 @@ function LegsTab({
           <li key={leg.id} className="rounded-md border border-neutral-200 p-3 text-sm dark:border-neutral-800">
             <div className="font-medium">
               {chainMode ? `${i + 1}. ` : ""}{leg.name}
-              {leg.siteType ? <span className="ml-2 text-xs text-neutral-500">{leg.siteType}</span> : null}
+              {leg.siteType ? <span className="ml-2 text-xs text-neutral-600">{leg.siteType}</span> : null}
             </div>
-            <div className="text-xs text-neutral-500">
+            <div className="text-xs text-neutral-600">
               {leg.locationLabel ?? ""}{leg.startDate ? ` · ${leg.startDate}` : ""}{leg.visited ? " · visited" : ""}
             </div>
           </li>
         ))}
-        {legs.length === 0 ? <li className="text-sm text-neutral-500">No legs yet.</li> : null}
+        {legs.length === 0 ? <li className="text-sm text-neutral-600">No legs yet.</li> : null}
       </ol>
 
       <form onSubmit={submit} className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
@@ -530,7 +530,7 @@ function CapturesTab({
 
       <div className="overflow-x-auto">
         <table className="w-full text-left text-sm">
-          <thead className="text-xs text-neutral-500">
+          <thead className="text-xs text-neutral-600">
             <tr>
               <th className="py-1 pr-3">Subject</th>
               {ledger ? <th className="py-1 pr-3">Consent</th> : <th className="py-1 pr-3">Kind</th>}
@@ -542,11 +542,11 @@ function CapturesTab({
               <tr key={r.id} className="border-t border-neutral-100 dark:border-neutral-800">
                 <td className="py-1 pr-3">{r.subject || <span className="text-neutral-400">-</span>}{r.pending ? <span className="ml-2 text-xs text-amber-600">pending</span> : null}</td>
                 <td className="py-1 pr-3">{ledger ? r.consentStatus : r.kind}</td>
-                <td className="py-1 pr-3 text-xs text-neutral-500">{r.createdAt ? new Date(r.createdAt).toLocaleString() : "-"}</td>
+                <td className="py-1 pr-3 text-xs text-neutral-600">{r.createdAt ? new Date(r.createdAt).toLocaleString() : "-"}</td>
               </tr>
             ))}
             {rows.length === 0 ? (
-              <tr><td colSpan={3} className="py-2 text-neutral-500">No captures yet.</td></tr>
+              <tr><td colSpan={3} className="py-2 text-neutral-600">No captures yet.</td></tr>
             ) : null}
           </tbody>
         </table>
@@ -579,11 +579,11 @@ function JournalTab({ comments, onAdd }: { comments: ProjectComment[]; onAdd: (b
       <ul className="space-y-2">
         {comments.map((c) => (
           <li key={c.id} className="rounded-md bg-neutral-50 p-3 text-sm dark:bg-neutral-900">
-            <div className="text-xs text-neutral-500">{new Date(c.createdAt).toLocaleString()}</div>
+            <div className="text-xs text-neutral-600">{new Date(c.createdAt).toLocaleString()}</div>
             <div className="mt-1 whitespace-pre-wrap">{c.body}</div>
           </li>
         ))}
-        {comments.length === 0 ? <li className="text-sm text-neutral-500">No notes yet.</li> : null}
+        {comments.length === 0 ? <li className="text-sm text-neutral-600">No notes yet.</li> : null}
       </ul>
     </div>
   );

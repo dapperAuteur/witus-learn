@@ -360,10 +360,10 @@ export function PricingManager({ rows, hasStripe = true }: { rows: PricingRow[];
               {bulkBusy ? "Working..." : "Apply proposed price to selected"}
             </button>
 
-            <span className="text-sm text-neutral-500">or set them all to:</span>
+            <span className="text-sm text-neutral-600">or set them all to:</span>
 
             <div>
-              <label htmlFor="bulk-type" className="block text-xs font-medium text-neutral-500">
+              <label htmlFor="bulk-type" className="block text-xs font-medium text-neutral-600">
                 Type
               </label>
               <select
@@ -380,7 +380,7 @@ export function PricingManager({ rows, hasStripe = true }: { rows: PricingRow[];
 
             {bulkType !== "free" ? (
               <div>
-                <label htmlFor="bulk-price" className="block text-xs font-medium text-neutral-500">
+                <label htmlFor="bulk-price" className="block text-xs font-medium text-neutral-600">
                   Price (USD)
                 </label>
                 <input
@@ -398,7 +398,7 @@ export function PricingManager({ rows, hasStripe = true }: { rows: PricingRow[];
 
             {bulkType === "subscription" ? (
               <div>
-                <label htmlFor="bulk-interval" className="block text-xs font-medium text-neutral-500">
+                <label htmlFor="bulk-interval" className="block text-xs font-medium text-neutral-600">
                   Interval
                 </label>
                 <select
@@ -480,14 +480,14 @@ export function PricingManager({ rows, hasStripe = true }: { rows: PricingRow[];
                     >
                       {r.title}
                     </Link>
-                    <div className="text-xs text-neutral-500">
+                    <div className="text-xs text-neutral-600">
                       now {money(Number(d.savedPrice), d.savedType, d.savedInterval)}
                       {" · "}
                       <span className="tabular-nums">{r.enrollmentCount}</span> enrolled
                     </div>
                   </td>
 
-                  <td className="py-2 pr-3 whitespace-nowrap text-neutral-500">{r.category}</td>
+                  <td className="py-2 pr-3 whitespace-nowrap text-neutral-600">{r.category}</td>
 
                   <td className="py-2 pr-3">
                     <div className="flex flex-wrap items-center gap-2">

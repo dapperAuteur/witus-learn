@@ -51,7 +51,7 @@ export function LearnerDashboardView({
       <div className="flex items-end justify-between gap-4">
         <div>
           <h1 className="text-2xl font-extrabold tracking-tight">Welcome back, {name}</h1>
-          <p className="mt-0.5 text-sm text-neutral-500">
+          <p className="mt-0.5 text-sm text-neutral-600">
             {resume
               ? remaining > 0
                 ? `You're ${remaining} lesson${remaining === 1 ? "" : "s"} from finishing ${resume.course.title}.`
@@ -84,10 +84,10 @@ export function LearnerDashboardView({
                 <div className="min-w-0 flex-1">
                   <div className="text-xs font-semibold uppercase tracking-wide text-neutral-400">Continue</div>
                   <div className="mt-0.5 truncate text-lg font-bold">{next ? next.title : resume.course.title}</div>
-                  <div className="mt-1 text-sm text-neutral-500">{resume.course.title}</div>
+                  <div className="mt-1 text-sm text-neutral-600">{resume.course.title}</div>
                   <div className="mt-3 flex items-center gap-3">
                     <ProgressBar percent={resume.percent} className="flex-1" />
-                    <span className="text-xs font-medium tabular-nums text-neutral-500">
+                    <span className="text-xs font-medium tabular-nums text-neutral-600">
                       {resume.completed} of {resume.total}
                     </span>
                   </div>
@@ -121,7 +121,7 @@ export function LearnerDashboardView({
                         {icon(l.lessonType)}
                       </span>
                       <span className="flex-1 text-sm font-medium">{l.title}</span>
-                      <span className="rounded-full bg-neutral-100 px-2 py-0.5 text-xs text-neutral-500 dark:bg-neutral-800">
+                      <span className="rounded-full bg-neutral-100 px-2 py-0.5 text-xs text-neutral-600 dark:bg-neutral-800">
                         {l.lessonType}
                       </span>
                     </Link>
@@ -159,12 +159,12 @@ export function LearnerDashboardView({
             <div className="rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900">
               <div className="flex items-center justify-between">
                 <div className="text-xs font-semibold uppercase tracking-wide text-neutral-400">Level {level}</div>
-                <div className="text-xs font-medium tabular-nums text-neutral-500">{xp.toLocaleString()} XP</div>
+                <div className="text-xs font-medium tabular-nums text-neutral-600">{xp.toLocaleString()} XP</div>
               </div>
               <div className="mt-3">
                 <ProgressBar percent={(xpIntoLevel / xpForLevel) * 100} />
               </div>
-              <p className="mt-2 text-xs text-neutral-500">
+              <p className="mt-2 text-xs text-neutral-600">
                 {xpForLevel - xpIntoLevel} XP to level {level + 1}
               </p>
             </div>
@@ -178,7 +178,7 @@ export function LearnerDashboardView({
               </div>
               <p className="mt-3 text-sm">
                 <strong className="tabular-nums">{week.reduce((s, d) => s + d.count, 0)}</strong>{" "}
-                <span className="text-neutral-500">lessons completed</span>
+                <span className="text-neutral-600">lessons completed</span>
               </p>
             </div>
           ) : null}
@@ -189,7 +189,7 @@ export function LearnerDashboardView({
               <div className="mt-2 text-4xl font-extrabold text-orange-500 tabular-nums">
                 {streak} <span aria-hidden>🔥</span>
               </div>
-              <p className="mt-1 text-xs text-neutral-500">
+              <p className="mt-1 text-xs text-neutral-600">
                 {streak === 0 ? "Complete a lesson today to start one." : `Best: ${bestStreak} day${bestStreak === 1 ? "" : "s"}`}
               </p>
             </div>
@@ -208,7 +208,7 @@ export function LearnerDashboardView({
                     <span className="text-2xl" aria-hidden>
                       {b.icon}
                     </span>
-                    <span className="w-14 text-[10px] leading-tight text-neutral-500">{b.label}</span>
+                    <span className="w-14 text-[10px] leading-tight text-neutral-600">{b.label}</span>
                   </li>
                 ))}
               </ul>
@@ -229,7 +229,7 @@ export function LearnerDashboardView({
                     >
                       <span className="w-5 shrink-0 text-center tabular-nums text-neutral-400">{i + 1}</span>
                       <span className="flex-1 truncate">{me ? "You" : row.name}</span>
-                      <span className="tabular-nums text-neutral-500">{row.count}</span>
+                      <span className="tabular-nums text-neutral-600">{row.count}</span>
                     </li>
                   );
                 })}
@@ -244,7 +244,7 @@ export function LearnerDashboardView({
                 <div>
                   <div className="text-xs font-semibold uppercase tracking-wide text-neutral-400">Next milestone</div>
                   <p className="mt-0.5 text-sm font-semibold">Finish {resume.course.title}</p>
-                  <p className="text-xs text-neutral-500">{remaining} lesson{remaining === 1 ? "" : "s"} to your certificate.</p>
+                  <p className="text-xs text-neutral-600">{remaining} lesson{remaining === 1 ? "" : "s"} to your certificate.</p>
                 </div>
               </div>
             </div>

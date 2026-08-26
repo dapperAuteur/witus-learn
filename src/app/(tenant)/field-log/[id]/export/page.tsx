@@ -24,10 +24,10 @@ export default async function FieldLogExportPage({ params }: Params) {
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
       <div className="flex items-center justify-between gap-3 print:hidden">
-        <Link href={`/field-log/${id}`} className="text-sm text-neutral-500 hover:underline">← Back to project</Link>
+        <Link href={`/field-log/${id}`} className="text-sm text-neutral-600 hover:underline">← Back to project</Link>
         <PrintButton />
       </div>
-      <p className="mt-2 text-xs text-neutral-500 print:hidden">
+      <p className="mt-2 text-xs text-neutral-600 print:hidden">
         Tip: choose “Save as PDF” as the destination to keep a PDF copy. You own this record.
       </p>
 
@@ -44,7 +44,7 @@ export default async function FieldLogExportPage({ params }: Params) {
               {l.name}{l.siteType ? ` (${l.siteType})` : ""}{l.locationLabel ? `, ${l.locationLabel}` : ""}{l.startDate ? ` · ${l.startDate}` : ""}
             </li>
           ))}
-          {legs.length === 0 ? <li className="list-none text-neutral-500">None.</li> : null}
+          {legs.length === 0 ? <li className="list-none text-neutral-600">None.</li> : null}
         </ol>
       </section>
 
@@ -52,7 +52,7 @@ export default async function FieldLogExportPage({ params }: Params) {
         <h2 className="font-semibold">Consent ledger</h2>
         <div className="mt-2 overflow-x-auto">
           <table className="w-full text-left text-sm">
-            <thead className="text-xs text-neutral-500">
+            <thead className="text-xs text-neutral-600">
               <tr><th className="py-1 pr-3">Subject</th><th className="py-1 pr-3">Consent</th><th className="py-1 pr-3">Minor</th><th className="py-1 pr-3">When</th></tr>
             </thead>
             <tbody>
@@ -61,10 +61,10 @@ export default async function FieldLogExportPage({ params }: Params) {
                   <td className="py-1 pr-3">{c.subject ?? "-"}</td>
                   <td className="py-1 pr-3">{c.consentStatus}</td>
                   <td className="py-1 pr-3">{c.involvesMinor ? "yes" : ""}</td>
-                  <td className="py-1 pr-3 text-xs text-neutral-500 whitespace-nowrap">{new Date(c.createdAt).toLocaleDateString()}</td>
+                  <td className="py-1 pr-3 text-xs text-neutral-600 whitespace-nowrap">{new Date(c.createdAt).toLocaleDateString()}</td>
                 </tr>
               ))}
-              {captures.length === 0 ? <tr><td colSpan={4} className="py-2 text-neutral-500">No captures.</td></tr> : null}
+              {captures.length === 0 ? <tr><td colSpan={4} className="py-2 text-neutral-600">No captures.</td></tr> : null}
             </tbody>
           </table>
         </div>
@@ -76,7 +76,7 @@ export default async function FieldLogExportPage({ params }: Params) {
           {captures.filter((c) => c.storageUrl).map((c) => (
             <li key={c.id} className="break-all">{c.subject ? `${c.subject}: ` : ""}{c.storageUrl}</li>
           ))}
-          {captures.every((c) => !c.storageUrl) ? <li className="text-neutral-500">No media links.</li> : null}
+          {captures.every((c) => !c.storageUrl) ? <li className="text-neutral-600">No media links.</li> : null}
         </ul>
       </section>
     </main>

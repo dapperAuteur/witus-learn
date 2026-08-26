@@ -68,7 +68,7 @@ export function SentenceEvaluator({ courseId }: { courseId: string }) {
   return (
     <form onSubmit={submit} className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
       <h3 className="font-semibold">Check your own sentence</h3>
-      <p className="mt-1 text-sm text-neutral-500">
+      <p className="mt-1 text-sm text-neutral-600">
         Write a sentence using this lesson&apos;s grammar and the coach will check it, correct it, and
         point you to the rule.
       </p>
@@ -95,7 +95,7 @@ export function SentenceEvaluator({ courseId }: { courseId: string }) {
         <div className="mt-3 rounded-md bg-neutral-50 p-3 text-sm dark:bg-neutral-900">
           <Markdown>{feedback}</Markdown>
           {lessons.length ? (
-            <p className="mt-2 text-xs text-neutral-500">Based on: {lessons.join(", ")}</p>
+            <p className="mt-2 text-xs text-neutral-600">Based on: {lessons.join(", ")}</p>
           ) : null}
         </div>
       ) : null}

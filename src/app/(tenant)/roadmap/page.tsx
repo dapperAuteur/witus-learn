@@ -74,7 +74,7 @@ export default async function RoadmapPage() {
                 </span>
                 {meta.label}
               </h2>
-              <p className="text-sm text-neutral-500">{meta.blurb}</p>
+              <p className="text-sm text-neutral-600">{meta.blurb}</p>
             </div>
             <ul className="mt-5 grid gap-4 sm:grid-cols-2">
               {items.map((item) => (

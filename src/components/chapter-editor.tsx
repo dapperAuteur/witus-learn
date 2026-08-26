@@ -43,7 +43,7 @@ export function ChapterEditor({
         </div>
       </div>
       {value.length === 0 ? (
-        <p className="text-xs text-neutral-500">
+        <p className="text-xs text-neutral-600">
           No chapters. Upload an .srt to auto-generate them, or add one manually.
         </p>
       ) : (

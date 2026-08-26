@@ -131,7 +131,7 @@ export function LiveAdmin({
           </select>
         </label>
         {courseId ? (
-          <p className="text-xs text-neutral-500">
+          <p className="text-xs text-neutral-600">
             The course belongs to this school, so it only attaches here, other selected schools get the session without a course link.
           </p>
         ) : null}
@@ -154,7 +154,7 @@ export function LiveAdmin({
       <div>
         <h2 className="font-semibold">This school&apos;s sessions</h2>
         {sessions.length === 0 ? (
-          <p className="mt-2 text-sm text-neutral-500">None yet.</p>
+          <p className="mt-2 text-sm text-neutral-600">None yet.</p>
         ) : (
           <ul className="mt-3 space-y-3">
             {sessions.map((s) => (
@@ -184,8 +184,8 @@ function ManageRow({
       <div className="flex flex-wrap items-center gap-2">
         <span className="font-medium">{s.title}</span>
         {s.isLive ? <span className="rounded-full bg-red-100 px-2 py-0.5 text-xs text-red-700 dark:bg-red-900 dark:text-red-200">live</span> : null}
-        <span className="text-xs text-neutral-500">{s.visibility}</span>
-        {s.courseTitle ? <span className="text-xs text-neutral-500">· 📚 {s.courseTitle}</span> : null}
+        <span className="text-xs text-neutral-600">{s.visibility}</span>
+        {s.courseTitle ? <span className="text-xs text-neutral-600">· 📚 {s.courseTitle}</span> : null}
         <div className="ml-auto flex gap-2">
           <button type="button" disabled={busy} onClick={() => onPatch(s.id, { isLive: !s.isLive })} className="min-h-11 rounded border border-neutral-300 px-3 focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700">
             {s.isLive ? "End" : "Go live"}

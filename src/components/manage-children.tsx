@@ -81,7 +81,7 @@ export function ManageChildren({ initialChildren }: { initialChildren: ManagedCh
   return (
     <section className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
       <h2 className="text-lg font-semibold">Manage children</h2>
-      <p className="mt-1 text-sm text-neutral-500">
+      <p className="mt-1 text-sm text-neutral-600">
         For young kids without their own email, add a profile, then &quot;study as&quot; it to browse
         and complete courses on their behalf. Their progress shows up below just like a linked child.
       </p>
@@ -123,7 +123,7 @@ export function ManageChildren({ initialChildren }: { initialChildren: ManagedCh
               <div className="flex items-center justify-between gap-3">
                 <div>
                   <span>{c.displayName}</span>
-                  <span className="ml-2 text-xs text-neutral-500">
+                  <span className="ml-2 text-xs text-neutral-600">
                     {c.avatarKey ? `${KID_AVATARS.find((a) => a.key === c.avatarKey)?.emoji ?? ""} ` : ""}
                     {LOGIN_METHOD_LABEL[c.loginMethod] ?? c.loginMethod}
                   </span>
@@ -215,7 +215,7 @@ function ChildLoginSettings({
   return (
     <form onSubmit={save} className="mt-3 space-y-3 border-t border-neutral-200 pt-3 dark:border-neutral-800">
       <fieldset>
-        <legend className="text-xs font-semibold uppercase tracking-wide text-neutral-500">
+        <legend className="text-xs font-semibold uppercase tracking-wide text-neutral-600">
           How does {child.displayName} sign in?
         </legend>
         <div className="mt-2 flex flex-wrap gap-3 text-sm">
@@ -241,7 +241,7 @@ function ChildLoginSettings({
       {method === "avatar_pin" ? (
         <>
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500">Avatar</p>
+            <p className="text-xs font-semibold uppercase tracking-wide text-neutral-600">Avatar</p>
             <div className="mt-2 grid grid-cols-5 gap-1.5 sm:grid-cols-8">
               {KID_AVATARS.map((a) => (
                 <button
@@ -264,7 +264,7 @@ function ChildLoginSettings({
           </div>
 
           <div>
-            <label htmlFor={`pin-${child.userId}`} className="text-xs font-semibold uppercase tracking-wide text-neutral-500">
+            <label htmlFor={`pin-${child.userId}`} className="text-xs font-semibold uppercase tracking-wide text-neutral-600">
               New PIN (4-6 digits)
             </label>
             <input
@@ -281,7 +281,7 @@ function ChildLoginSettings({
           </div>
 
           <div>
-            <label htmlFor={`cohort-${child.userId}`} className="text-xs font-semibold uppercase tracking-wide text-neutral-500">
+            <label htmlFor={`cohort-${child.userId}`} className="text-xs font-semibold uppercase tracking-wide text-neutral-600">
               Class (for the class code)
             </label>
             <select

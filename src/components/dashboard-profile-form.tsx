@@ -34,7 +34,7 @@ export function DashboardProfileForm() {
   }, []);
 
   if (state === "loading") {
-    return <p className="text-sm text-neutral-500">Loading your profile…</p>;
+    return <p className="text-sm text-neutral-600">Loading your profile…</p>;
   }
   if (state === "error" || !profile) {
     return <p className="text-sm text-red-600">Could not load your profile. Try refreshing the page.</p>;

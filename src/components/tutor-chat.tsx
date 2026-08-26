@@ -65,7 +65,7 @@ export function TutorChat({ courseId, courseTitle }: { courseId: string; courseT
   return (
     <section className="mt-10 rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
       <h2 className="text-lg font-semibold">Ask the course tutor</h2>
-      <p className="mt-1 text-sm text-neutral-500">
+      <p className="mt-1 text-sm text-neutral-600">
         Grounded only in this course&apos;s material. It won&apos;t make things up.
       </p>
       <form onSubmit={ask} className="mt-3 flex flex-col gap-2 sm:flex-row">
@@ -92,7 +92,7 @@ export function TutorChat({ courseId, courseTitle }: { courseId: string; courseT
         <div role="status" className="mt-4">
           <p className="whitespace-pre-wrap text-neutral-800 dark:text-neutral-200">{answer}</p>
           {used.length > 0 ? (
-            <p className="mt-2 text-xs text-neutral-500">Based on: {used.join(", ")}</p>
+            <p className="mt-2 text-xs text-neutral-600">Based on: {used.join(", ")}</p>
           ) : null}
         </div>
       ) : null}

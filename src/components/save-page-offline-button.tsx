@@ -83,7 +83,7 @@ export function SavePageOfflineButton({
           <p className="text-sm font-medium text-green-700 dark:text-green-400">
             ✓ Saved to this device, this page opens with no connection
           </p>
-          <p className="mt-1 text-xs text-neutral-500">
+          <p className="mt-1 text-xs text-neutral-600">
             Every proposal on it, as it reads right now. Save it again after new proposals land to
             refresh the copy. Notes you write offline are queued and sent when you reconnect.
           </p>
@@ -91,7 +91,7 @@ export function SavePageOfflineButton({
             <button
               type="button"
               onClick={() => void remove()}
-              className="inline-flex min-h-8 items-center text-neutral-500 underline focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-11"
+              className="inline-flex min-h-8 items-center text-neutral-600 underline focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-11"
             >
               Remove from this device
             </button>
@@ -100,7 +100,7 @@ export function SavePageOfflineButton({
             {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
             <a
               href="/downloads"
-              className="inline-flex min-h-8 items-center text-neutral-500 underline focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-11"
+              className="inline-flex min-h-8 items-center text-neutral-600 underline focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-11"
             >
               Manage downloads
             </a>
@@ -119,7 +119,7 @@ export function SavePageOfflineButton({
           {/* The honest disclosure. This is an admin page: saying "saved for offline" without
               saying WHAT gets stored, and WHERE, would be the lie. */}
           {meta.sensitive ? (
-            <p className="mt-2 max-w-prose text-xs text-neutral-500">
+            <p className="mt-2 max-w-prose text-xs text-neutral-600">
               Read the proposals on a plane. This stores a copy of this page,{" "}
               <strong className="font-medium">including the notes on it</strong>, in this
               browser&rsquo;s storage on this device, where it isn&rsquo;t behind a password.

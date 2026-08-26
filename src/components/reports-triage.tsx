@@ -131,7 +131,7 @@ export function ReportsTriage({ reports }: { reports: TriageReport[] }) {
       ) : null}
 
       {visible.length === 0 ? (
-        <p className="text-neutral-500">No reports.</p>
+        <p className="text-neutral-600">No reports.</p>
       ) : (
         <ul className="space-y-3">
           {visible.map((r) => (
@@ -139,7 +139,7 @@ export function ReportsTriage({ reports }: { reports: TriageReport[] }) {
               key={r.id}
               className={`rounded-lg border p-4 dark:border-neutral-800 ${selected.has(r.id) ? "border-current" : "border-neutral-200"}`}
             >
-              <div className="mb-1 flex flex-wrap items-center gap-2 text-xs text-neutral-500">
+              <div className="mb-1 flex flex-wrap items-center gap-2 text-xs text-neutral-600">
                 <input
                   type="checkbox"
                   checked={selected.has(r.id)}

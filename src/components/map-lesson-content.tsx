@@ -344,7 +344,7 @@ export function MapLessonContent({ content }: { content: MapContent }) {
       ) : (
         // US topology still loading (the world atlas is bundled, so this only shows for a US map).
         <div
-          className="flex aspect-8/5 w-full items-center justify-center rounded-lg bg-slate-50 text-sm text-neutral-500"
+          className="flex aspect-8/5 w-full items-center justify-center rounded-lg bg-slate-50 text-sm text-neutral-600"
           role="status"
         >
           Loading map...
@@ -366,12 +366,12 @@ export function MapLessonContent({ content }: { content: MapContent }) {
         <div className="mt-3 rounded-lg border border-neutral-200 p-3 text-sm dark:border-neutral-800">
           <p className="font-semibold">
             {active.title}
-            {hasYear(active) ? <span className="ml-2 text-xs font-normal text-neutral-500">{active.year}</span> : null}
+            {hasYear(active) ? <span className="ml-2 text-xs font-normal text-neutral-600">{active.year}</span> : null}
           </p>
           {active.description ? <p className="mt-1 text-neutral-600 dark:text-neutral-400">{active.description}</p> : null}
         </div>
       ) : (content.markers?.length ?? 0) > 0 ? (
-        <p className="mt-2 text-sm text-neutral-500">
+        <p className="mt-2 text-sm text-neutral-600">
           Tap a point on the map for details.{timed ? " Scrub or play the year to watch them appear." : ""}
         </p>
       ) : null}
