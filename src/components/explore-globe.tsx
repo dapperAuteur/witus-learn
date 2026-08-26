@@ -91,7 +91,11 @@ export function ExploreGlobe({ markers }: { markers: GlobeMarker[] }) {
   // Which markers render: within the density tier, within the year brush (undated always pass), and
   // (on the globe) on the near hemisphere.
   const shown = markers.filter((m) => {
-    if (m.tier > threshold) return false;
+    // A DATED pin bypasses the density tier while a year brush is on screen. Without this the
+    // brush looks broken: the default zoom allows tier 1 only, and just one of the dated pins is
+    // tier 1, so dragging the year changed nothing a viewer could see. The brush exists to reveal
+    // dated pins over time, so the pins it governs have to be reachable at the zoom it ships at.
+    if (m.tier > threshold && !(timed && typeof m.year === "number")) return false;
     if (typeof m.year === "number" && m.year > asOf) return false;
     if (flat) return true;
     return geoDistance([m.lng, m.lat], center) <= Math.PI / 2;
