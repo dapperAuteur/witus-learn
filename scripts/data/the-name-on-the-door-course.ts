@@ -2295,6 +2295,13 @@ University Archives and Records Center. (n.d.). *Julian Francis Abele*. Universi
             explanation: "Working in the Beaux Arts manner does not put anyone in the ateliers of the Paris school.",
             sourceLessonSlug: "the-school-that-is-not-there",
           },
+          {
+            prompt: "Taken together, the corrections in this section move Abele's credit:",
+            options: ["Down on two buildings", "Up on every project the Trumbauer office undertook after 1909", "Sideways, reassigning it from the firm to the individual designers", "Nowhere, since none of them is supported by an institutional source"],
+            correctIndex: 0,
+            explanation: "The museum and Irvine Auditorium both come off the list, and the documented mechanism stays.",
+            sourceLessonSlug: "too-much-credit",
+          },
         ],
       },
     },
