@@ -35,7 +35,7 @@ export function ThemeToggle() {
     return () => mq.removeEventListener("change", onChange);
   }, [theme]);
 
-  if (theme === null) return <span className="inline-block h-8 w-8" aria-hidden />;
+  if (theme === null) return <span className="inline-block h-8 w-8 min-h-11 min-w-11" aria-hidden />;
 
   function cycle() {
     const next = NEXT[theme as Theme];
@@ -51,7 +51,7 @@ export function ThemeToggle() {
       onClick={cycle}
       title={`Theme: ${label} (click to change)`}
       aria-label={`Theme: ${label}. Click to change.`}
-      className="grid h-8 w-8 place-items-center rounded-md border border-neutral-200 text-base hover:bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700 dark:hover:bg-neutral-800"
+      className="grid h-8 w-8 min-h-11 min-w-11 place-items-center rounded-md border border-neutral-200 text-base hover:bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-11 pointer-coarse:min-w-11 dark:border-neutral-700 dark:hover:bg-neutral-800"
     >
       <span aria-hidden>{ICON[theme]}</span>
     </button>

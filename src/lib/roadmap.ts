@@ -5,6 +5,45 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- ✅ **Self-nominated course interest, and vetting by volunteers**
+  (\`feat/course-interest-and-vetting\`, **migration 0059**, run \`pnpm db:migrate:prod\`). Invite-to-audit
+  had one direction: the owner invites someone they trust. This is the other one. On an unvetted
+  course's public "Coming soon" page, under the notify-me box, a visitor can put their hand up in one
+  of three capacities: **take** the course when it opens, **test** it before it opens, or **vet** it
+  as a **subject matter expert**, with an optional phone number and an optional few lines of
+  background.
+  **The load-bearing decision is that a self-nomination is a REQUEST, not access.** A
+  \`course_interest_requests\` row lands \`pending\` and grants nothing at all. Only a human decision on
+  the course's own \`/teach\` page turns a beta/expert request into the **existing**
+  \`course_auditors\` grant, minted through the **existing** invite path, so there is no second grant
+  mechanism to audit and the grant's own rules (one course, one tenant, read-only, and a pending
+  invite still opening nothing) apply unchanged. If anyone on the internet could type "I am an
+  expert" and be handed a grant that opens a closed course, the grant would be worth nothing.
+  Approving an interested learner mints **nothing** (they asked to be told when it opens, not to read
+  it early), and **no capacity ever auto-enrolls anybody**: a tester counted as a learner would
+  corrupt exactly the statistics the quiz-integrity rule protects. One permission gate,
+  \`src/lib/course-reviewers.ts\`, now guards inviting, revoking **and** approving, so widening one
+  widens all three; the auditors suite asserts it at the definition instead of once per route.
+  **Signed-out visitors may submit**, because a subject matter expert has no reason to hold an
+  account on a school whose course they were asked to check. So the route is treated as hostile the
+  way \`/api/course-notify\` already is: tenant from the request host, server-side Zod with hard
+  length caps, a honeypot, a per-IP **and** a per-address sliding window, a unique key on
+  (tenant, course, email) so a re-submit updates one row, and an acknowledgement identical whatever
+  happened, so it cannot be used to probe whether an address has applied or been declined. A decided
+  row is never reopened by re-submitting.
+  **PII is owner-only and structurally contained.** Phone and background live in their own table
+  rather than in \`leads.inquiries\` precisely because \`leads\` feeds the CSV export and the campaign
+  audience; they are serialized in exactly one function, rendered on exactly one login-gated panel,
+  and appear on no public page, no OG card, the sitemap, or any email. Every submission does notify
+  the WitUS Inbox (\`learn-course-interest:<capacity>\`, so all three read apart at a glance), carrying
+  who, which capacity, which course, \`phone_provided\`/\`credentials_provided\` booleans and a link
+  back to the owner's panel, **never the values**; the row is written before the notification, so a
+  failed or unconfigured webhook cannot lose a signup. The form says all of this in visible copy, and
+  the isolation suite pins the sentences.
+  **Phone is international**: no country assumed and none preselected, no parsing dependency added,
+  and a deliberately loose normaliser that stores E.164 alongside exactly what was typed. The single
+  rejection is a non-empty phone field with no digits in it, because a strict pattern here silently
+  refuses real people. 32 new isolation tests.
 - ✅ **Observability verification harness** (\`feat/verify-observability-harness\`; no migration, tooling
   only). \`pnpm verify:observability <url>\` asks one question about a DEPLOYED site: can it actually
   report its own errors, or is it dropping them silently? Four read-only checks, GET requests only,
@@ -65,6 +104,44 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   Mapped to \`catalog.cited-primary-secondary-synthesis\` and \`catalog.test-a-historical-claim\`
   (CCSS RH.11-12.9 and RH.11-12.8). Deliberately **not** in \`STAGED_COURSES\` yet, so
   \`pnpm gen:citations\` is a later decision.
+- 🔧 **Who Signs the Print** (\`content/credit-printmaking\`, Culture & History, **CREDIT-02**; NO
+  migration, **re-run \`pnpm seed:courses\`**). The first **discipline** course in the CREDIT series,
+  from \`plans/future-courses/08-black-creator-series-research.md\` §5, which surveyed eleven
+  disciplines and named printmaking the one to build first. **The spine: in a print shop the artist
+  signs and the master printer does not, and that applies to every master printer.** It is a
+  convention of the MEDIUM, not a racial rule, which is exactly what makes it worth teaching: the
+  format manufactures a category of invisible expertise, and the honest question is who gets routed
+  into that category and what they build once they are there. A version of this course that called
+  it theft would be **factually wrong and correctable in public** by anyone holding a print
+  catalogue, and lesson 3 says so out loud. That also makes it the **most transferable mechanism in
+  the catalog**: Section 6 turns it into a three-condition test (a format cap on the public surface,
+  a credit relocated to a low-readership document, a technically demanding role that succeeds
+  invisibly) and runs it on session musicians, ghostwriters, film colourists, translators and test
+  kitchens.
+  **Section 2 is the part nobody teaches:** the printer's credit was not abolished, it was moved.
+  It lives in a wordless embossed **chop**, in a **documentation sheet signed by artist and printer**
+  and then filed in an archive, and in the **bon a tirer**, the standard proof that belongs to the
+  printer. Tamarind Institute's 1960 founding decision to affix both the workshop chop and the
+  printer's individual chop is quoted verbatim from Clinton Adams.
+  **Six people carry the evidence, one response each**, not six biographies: Robert Blackburn (an
+  open workshop), Elizabeth Catlett (the Taller de Grafica Popular's statutes, which permitted
+  collective authorship), Margaret Taylor-Burroughs (the Ebony Museum, now the DuSable), AfriCOBRA
+  and Barbara Jones-Hogu (a cheap, multiple, distributable medium), Charles White (teaching, the one
+  output with no credit format at all) and Emma Amos (a print portfolio as a portable credential).
+  **Four of the six are women and the record needed no padding.**
+  **Verified then printed:** Blackburn hired in 1957 as ULAE's first master printer, and the first
+  **seventy-nine editions**, both from the Library of Congress "Creative Space" exhibition; and Emma
+  Amos as the **only woman admitted to Spiral**, from the Studio Museum in Harlem. **Reported as
+  contested:** the Printmaking Workshop's founding year (Library of Congress 1948 against the
+  workshop's own successor at EFA, late winter 1947) and Charles White's Otis start year (Otis 1964
+  against the LACMA retrospective literature's 1965). **Tested and refused:** White as Otis's first
+  Black faculty member, a dollar price for AfriCOBRA's poster prints, and a settled year for Amos
+  joining Spiral. Four open questions filed in \`src/lib/research-checks.ts\`.
+  6 sections, 18 teaching lessons, 6 section quizzes (53/57/54/54/57/54 serving 5) and a 42-question
+  final serving 10, for **371 pooled questions**, 49 reveal cards, and **zero findings** from
+  \`pnpm audit:course who-signs-the-print --spec\`. Mapped to
+  \`catalog.cited-primary-secondary-synthesis\` and \`catalog.test-a-historical-claim\` (CCSS
+  RH.11-12.9 and RH.11-12.8). Deliberately **not** in \`STAGED_COURSES\` yet, matching CREDIT-00.
 - ✅ **The Editor of The Crisis** (\`content/didwork-jessie-fauset\`, Culture & History; NO
   migration, **re-run \`pnpm seed:courses\`**). **DIDWORK-S2**, the second course on the She Did the
   Work track after \`she-took-the-seat\` (S1), and the strongest single evidence case in it.

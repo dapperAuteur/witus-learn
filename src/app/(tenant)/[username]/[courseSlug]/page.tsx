@@ -100,6 +100,7 @@ export default async function CourseBySlugPage({ params }: Params) {
         courseSlug={courseSlug}
         brand={brandName(view.tenant)}
         defaultEmail={view.session?.user.email}
+        defaultName={view.session?.user.name ?? undefined}
       />
     );
   }

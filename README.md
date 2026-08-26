@@ -271,6 +271,32 @@ nothing; accepting does. Grants are per tenant and per course. Auditors are **re
 enrolling, no certificate, no progress, and **no recorded quiz or recall attempts**, so a reviewer
 never moves the course's statistics. See [src/lib/auditors.ts](src/lib/auditors.ts).
 
+**Self-nomination** (`course_interest_requests`): the other direction. On an unvetted course's public
+landing page, under the notify-me box, a visitor can offer to **take** the course, to **test** it
+before it opens, or to **vet** it as a subject matter expert, giving a name, an email, and optionally
+an international phone number and a few lines of background. Signed-out visitors may submit (an
+expert has no reason to hold an account here); the route is treated as hostile input the way
+`/api/course-notify` is: tenant from the host, server-side Zod, a honeypot, per-IP **and**
+per-address sliding windows, and a unique key on `(tenant, course, email)` so a re-submit updates one
+row.
+
+**A self-nomination is a REQUEST, never a grant.** It lands `pending` and opens nothing. Only a human
+decision on the course's own `/teach` page turns a beta/expert request into the **existing**
+`course_auditors` grant, through the existing invite path, so there is no second grant mechanism to
+audit; approving an interested learner mints nothing, and no capacity ever auto-enrolls anyone. One
+gate, [src/lib/course-reviewers.ts](src/lib/course-reviewers.ts), guards inviting, revoking, and
+approving, so widening one widens all three. The rules are pure in
+[src/lib/course-interest.ts](src/lib/course-interest.ts) and pinned by
+[tests/isolation/course-interest.test.ts](tests/isolation/course-interest.test.ts).
+
+**PII:** phone and background are readable only by the platform owner, the course's own instructor,
+and the school's admins, on the `/teach` panel. Its own table, not `leads.inquiries`, precisely so
+the marketing CSV export and the campaign audience cannot reach them; one serializer
+(`serializeForOwner`); never on a public page, an OG card, the sitemap, an email, or the Inbox
+mirror. Every submission does notify the WitUS Inbox (`learn-course-interest:<capacity>`), carrying
+who, which capacity, which course, `phone_provided` / `credentials_provided` booleans and a link back
+to the owner's panel, never the values themselves. The form says all of this in visible copy.
+
 Discovery surfaces (catalog, home, search, category counts, instructor pages, **sitemap**) include
 unvetted courses, badged; lesson-routing surfaces (cross-course CYOA, the api-v1 lesson reads)
 exclude them. The whole decision lives in one pure module,

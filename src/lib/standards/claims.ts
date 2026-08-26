@@ -4074,6 +4074,17 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // silence, into one coherent explanation of how credit is assigned, and it foregrounds where
       // its sources disagree rather than smoothing them.
       "who-gets-named",
+      // Who Signs the Print (CREDIT-02) integrates institutional primary sources (the Library of
+      // Congress "Creative Space" exhibition, Tamarind Institute's own process and history pages
+      // and Clinton Adams's account of its 1960 documentation decision, the Victoria and Albert
+      // Museum on the pencil signature, PAFA on Catlett's linocut series, the Studio Museum in
+      // Harlem, the Smithsonian American Art Museum, the DuSable museum, the South Side Community
+      // Art Center, and the Booker Prizes' and Recording Academy's own published rules) with
+      // secondary scholarship (de la Rosa on the Taller de Grafica Popular) into one account of how
+      // a medium's credit convention works. It notes discrepancies as a matter of method: lesson 11
+      // is entirely about two institutions dating the same founding differently, and lesson 23 is a
+      // ledger of what was verified, what is contested, and what was refused.
+      "who-signs-the-print",
       // Culture and migration
       "great-migration-and-the-world",
       "hoodoo-tradition-of-resistance",
@@ -4215,6 +4226,15 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // U.S. Mint and Sinnock against Burke, the Smithsonian American Art Museum and FDR's son).
       // None is closed by assertion; each is taught with the holders of both positions named.
       "who-gets-named",
+      // Who Signs the Print runs all three moves of this claim explicitly. It DOWNGRADES the
+      // popular framing in lesson 3 (the printer's credit was not stolen, because the convention
+      // withholds a signature from every master printer). It CORROBORATES its two superlatives
+      // against the issuing institutions before printing them (the Library of Congress on the ULAE
+      // appointment and the seventy-nine editions, the Studio Museum in Harlem on Emma Amos being
+      // the only woman admitted to Spiral). And it CUTS what the evidence will not carry: lesson 23
+      // is a ledger of three widely repeated claims tested and left unprinted, with the reason for
+      // each, alongside two dates reported as contested with both institutions named.
+      "who-signs-the-print",
       // Government-forms method course: test a government action against its enabling document
       // (did this body have the power?), the same corroborate-or-challenge move.
       "who-has-the-power",

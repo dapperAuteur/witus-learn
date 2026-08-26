@@ -226,6 +226,7 @@ import { WHO_GETS_THE_CREDIT_COURSE } from "./data/who-gets-the-credit-course";
 import { HISTORY_OF_BATHING_COURSE } from "./data/history-of-bathing-course";
 import { WHO_GETS_NAMED_COURSE } from "./data/who-gets-named-course";
 import { SHIRLEY_GRAHAM_COURSE } from "./data/shirley-graham-course";
+import { WHO_SIGNS_THE_PRINT_COURSE } from "./data/who-signs-the-print-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -2016,6 +2017,48 @@ async function main() {
       seriesCode: "DIDWORK",
       seriesPosition: "S3",
       seriesTrack: "She Did the Work",
+    },
+    // Who Signs the Print — CREDIT-02, the first DISCIPLINE course in the CREDIT series (source
+    // brief: plans/future-courses/08-black-creator-series-research.md §5, which surveyed eleven
+    // disciplines and recommended printmaking be built first). CREDIT-00 teaches the general
+    // mechanisms and CREDIT-01 the patent system; this one takes ONE medium's credit convention end
+    // to end.
+    //
+    // THE SPINE, and the reason it is not a survey: in a print shop the artist signs and the master
+    // printer does not, AND THAT APPLIES TO EVERY MASTER PRINTER. It is a convention of the medium,
+    // not a racial rule, so the honest question is who gets routed into the unnamed technical
+    // category and what they build once they are there. Framing Blackburn as a theft victim would be
+    // factually wrong and correctable in public by anyone holding a print catalogue, and the lesson
+    // `everyone-is-unsigned` says so out loud. That also makes it the most TRANSFERABLE mechanism in
+    // the catalog: Section 6 turns it into a three condition test and runs it on session musicians,
+    // ghostwriters, film colourists, translators and test kitchens.
+    //
+    // Six people carry the evidence, each for one response rather than as a biography: Blackburn
+    // (the open workshop), Catlett (the Taller de Grafica Popular's statutes, which permitted
+    // collective authorship), Margaret Taylor-Burroughs (the Ebony Museum, now the DuSable),
+    // AfriCOBRA and Barbara Jones-Hogu (a cheap, multiple, distributable medium), Charles White
+    // (teaching, an output with no credit format at all) and Emma Amos (a print portfolio as a
+    // portable credential). Four of the six are women and the record needed no padding.
+    //
+    // VERIFIED then printed: the ULAE first-master-printer appointment and the first seventy-nine
+    // editions (Library of Congress, "Creative Space"), and Amos as the only woman admitted to
+    // Spiral (Studio Museum in Harlem). REPORTED AS CONTESTED: the Printmaking Workshop's founding
+    // year (Library of Congress 1948 vs the workshop's own successor at EFA, late winter 1947) and
+    // Charles White's Otis start year (Otis 1964 vs the LACMA retrospective literature 1965).
+    // TESTED AND REFUSED: White as Otis's first Black faculty member, a dollar price for AfriCOBRA's
+    // poster prints, and a settled year for Amos joining Spiral. Four open questions are filed in
+    // src/lib/research-checks.ts. 6 sections · 18 teaching lessons · 6 section quizzes
+    // (53/57/54/54/57/54, serving 5) · 1 final (42 serving 10) = 371 questions.
+    // NO migration — pnpm seed:courses.
+    {
+      slug: "who-signs-the-print",
+      course: WHO_SIGNS_THE_PRINT_COURSE,
+      category: "Culture & History",
+      seriesSlug: "credit",
+      seriesTitle: "Credit: Who Gets Named",
+      seriesOrder: 3,
+      seriesCode: "CREDIT",
+      seriesPosition: "02",
     },
   ]) {
     await seedAuthoredCourse(db, {

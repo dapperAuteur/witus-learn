@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CourseInterestForm } from "./course-interest-form";
 import { CourseNotifyForm } from "./course-notify-form";
 import { CourseStandards } from "./course-standards";
 import { ShareButton } from "./share-button";
@@ -40,11 +41,13 @@ export function ComingSoonPanel({
   brand,
   courseId,
   defaultEmail,
+  defaultName,
 }: {
   brand: string;
   courseId: string;
   /** Prefill for a signed-in visitor who is not enrolled (still editable). */
   defaultEmail?: string;
+  defaultName?: string;
 }) {
   return (
     <section
@@ -64,6 +67,35 @@ export function ComingSoonPanel({
         listed with it. Enrollment opens when the review is finished.
       </p>
       <CourseNotifyForm courseId={courseId} defaultEmail={defaultEmail} />
+
+      {/*
+        The one-field notify box above stays exactly as it was, because for most visitors the
+        address IS the whole value and every extra field costs signups. This is the longer road for
+        the smaller number of people who want to do more than wait: test the course, or vet it.
+        Collapsed so it costs the first group nothing, and open to a keyboard and a screen reader
+        without any JavaScript of ours.
+
+        Nothing in here grants anything. It records a request the instructor decides on.
+      */}
+      <details className="mt-6 border-t border-neutral-200 pt-4 dark:border-neutral-800">
+        <summary className="min-h-11 cursor-pointer list-none text-sm font-medium focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-12">
+          <span style={{ color: "var(--accent)" }}>
+            Want to help this course open? Test it, or vet it &rarr;
+          </span>
+        </summary>
+        <h3 className="mt-3 text-base font-semibold">Put your name in</h3>
+        <p className="mt-1 text-sm text-neutral-700 dark:text-neutral-300">
+          A course is checked against its sources before it opens. If you want to read it early and
+          send notes, or you know this subject well enough to check the claims, say so here. The
+          instructor decides who reviews their own course, so this is a request, not a login.
+        </p>
+        <CourseInterestForm
+          courseId={courseId}
+          defaultEmail={defaultEmail}
+          defaultName={defaultName}
+        />
+      </details>
+
       <p className="mt-3 text-sm text-neutral-500">
         Already studying this course? Sign in and it will open as usual.
       </p>
@@ -87,6 +119,7 @@ export function ComingSoonCourseFace({
   courseSlug,
   brand,
   defaultEmail,
+  defaultName,
 }: {
   courseId: string;
   title: string;
@@ -96,6 +129,7 @@ export function ComingSoonCourseFace({
   courseSlug: string;
   brand: string;
   defaultEmail?: string;
+  defaultName?: string;
 }) {
   const summary = description ?? `${title}, a course on ${brand}.`;
   return (
@@ -134,7 +168,12 @@ export function ComingSoonCourseFace({
         <p className="mt-4 text-neutral-700 dark:text-neutral-300">{description}</p>
       ) : null}
       <CourseStandards courseSlug={courseSlug} />
-      <ComingSoonPanel brand={brand} courseId={courseId} defaultEmail={defaultEmail} />
+      <ComingSoonPanel
+        brand={brand}
+        courseId={courseId}
+        defaultEmail={defaultEmail}
+        defaultName={defaultName}
+      />
     </main>
   );
 }

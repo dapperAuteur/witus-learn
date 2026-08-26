@@ -7,6 +7,12 @@
 
 :root {
   color-scheme: light dark;
+  /* Page background. Warm off-white rather than pure #fff: this app is read for long
+     stretches, and #fff is the highest-glare surface there is. White cards and panels
+     now separate from the page on their own, without a border. The .dark peer is
+     neutral-950, matching what the body class used to hardcode. Change it HERE, not in
+     layout.tsx, so both themes stay in one place. */
+  --page-bg: #faf9f7;
   /* Height of the sticky site header — the offset for anything that must stick BELOW it
      (the lesson page's progress sub-header, the admin sidebar). Static fallback for the
      normal one-row bar: 2.75rem tallest nav item (min-h-11) + 1.5rem py-3 + 1px border-b.
@@ -15,7 +21,12 @@
   --site-header-h: calc(4.25rem + 1px);
 }
 
+.dark {
+  --page-bg: #0a0a0a;
+}
+
 body {
+  background-color: var(--page-bg);
   font-family:
     ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
