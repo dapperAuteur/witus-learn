@@ -1044,5 +1044,501 @@ Tamarind Institute. (n.d.-a). *Process*. University of New Mexico. https://tamar
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3 — Robert Blackburn, the case
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "blackburn-learns-the-stone",
+      title: "9 · Blackburn learns the stone",
+      section: "Section 3 · Robert Blackburn, the case",
+      body: `Robert Blackburn was born in Summit, New Jersey, in 1920 and died in New York City in 2003. He grew up in Harlem, and the way he entered printmaking is itself a fact about how credit gets routed.
+
+**He learned lithography in a free public programme.** From the age of thirteen he made and studied art at the 135th Street Branch of the New York Public Library and at the Harlem YMCA. At DeWitt Clinton High School he contributed artwork, stories and poetry to the school literary magazine, The Magpie. He took part in the Harlem Arts Workshop, the Uptown Art Laboratory, and the Harlem arts salon known as 306. The Library of Congress states plainly where the medium came from: "Lithography classes offered at the WPA-sponsored Harlem Community Art Center introduced him to the art of printmaking" (Library of Congress, 2003a).
+
+**The people in that room matter.** The Harlem Community Art Center was initiated by the sculptor Augusta Savage and the artist and writer Gwendolyn Bennett. Blackburn's lithography teacher there was Riva Helfond. His colleagues in this period included Romare Bearden, Ernest Crichlow, Roy DeCarava and Jacob Lawrence, and he was mentored by Charles Alston, Savage and James Lesesne Wells (Library of Congress, 2003a). The Library of Congress makes one further observation that this course will pick up in Section 4: the centre "became a model for Blackburn's own workshop years later".
+
+**Then the standard training, and the pattern that follows it.** After graduating high school in 1940 he attended the Art Students League in New York on scholarship until 1943, where he worked with the painter and printmaker Will Barnet, who became a lifelong friend. For four years he freelanced as a graphic artist for institutions including the Harmon Foundation, the China Institute of America and Associated American Artists (Library of Congress, 2003b).
+
+**Notice what that biography is made of.** A free WPA class, a public library, a high school magazine, a scholarship, and four years of freelance graphic work for other people's institutions. Every step is a place where somebody else's name is on the door. None of them is a place where an unknown young artist accumulates a signature of his own.
+
+**The routing question from Section 1 is now answerable in his case.** He entered the medium through its technical door, learned to print at a professional standard early, and became useful to other artists at exactly the moment when American publishers needed somebody who could do it. That is not a story about anyone's malice. It is a description of how a person ends up in the unnamed category.
+
+:::reveal Where did Blackburn first learn lithography, and who initiated that institution? ||| At the WPA-sponsored Harlem Community Art Center, which was initiated by Augusta Savage and Gwendolyn Bennett. His lithography teacher there was Riva Helfond.
+
+:::reveal Who did Blackburn meet at the Art Students League who became a lifelong friend and collaborator? ||| The painter and printmaker Will Barnet. Blackburn attended the League on scholarship from 1940 to 1943.
+
+## Vocabulary
+- **Harlem Community Art Center**: the WPA sponsored centre where Blackburn was introduced to printmaking, initiated by Augusta Savage and Gwendolyn Bennett.
+- **WPA**: the Works Progress Administration, the Depression era federal programme that funded the art centres and classes named in this lesson.
+- **Art Students League**: the New York art school Blackburn attended on scholarship from 1940 to 1943, where he met Will Barnet.
+- **Technical door**: the entry route into a medium through its craft rather than through its authorship, which is where the routing question from Section 1 begins.
+
+## Sources
+Library of Congress. (2003a). *Milieu: The Harlem Community Art Center and the WPA*. In *Creative space: Fifty years of Robert Blackburn's Printmaking Workshop* [Exhibition]. https://www.loc.gov/exhibits/blackburn/blackburn-milieu.html
+
+Library of Congress. (2003b). *Founding the Printmaking Workshop*. In *Creative space: Fifty years of Robert Blackburn's Printmaking Workshop* [Exhibition]. https://www.loc.gov/exhibits/blackburn/blackburn-founding.html`,
+    },
+    {
+      slug: "the-first-seventy-nine",
+      title: "10 · The first seventy-nine editions",
+      section: "Section 3 · Robert Blackburn, the case",
+      body: `This is the artifact the whole course turns on, and it is checkable in one place.
+
+**The appointment.** Blackburn spent 1953 and 1954 in Europe, mostly in Paris, on a John Hay Whitney Traveling Fellowship. After he returned, the Library of Congress records, "he was hired in 1957 as the first master printer at Universal Limited Art Editions (ULAE), the lithographic venture founded by Tatyana and Maurice Grosman, based in West Islip, Long Island" (Library of Congress, 2003c). He held the post from 1957 to 1963.
+
+**The number.** The Library of Congress states it directly: "He printed the first seventy-nine editions for the seminal workshop, setting the standard by which ULAE exerted a powerful influence on modernist printmaking in America" (Library of Congress, 2003d). Seventy-nine editions, all of them the output of one pair of hands at the press.
+
+**The artists.** At ULAE he printed for Larry Rivers, Grace Hartigan, Helen Frankenthaler, Robert Rauschenberg, Jim Dine and Jasper Johns. And the Library of Congress adds the sentence that makes this a case about authorship rather than about labour: "In most cases, he taught the artists how to make lithographs, sharing his sensibility of the medium and his approach to the stone" (Library of Congress, 2003c). The same source says his own fluency with the medium "contributed to the new look of these works", the look that went on to define the American graphics boom.
+
+**Now apply the convention from Section 1.** Those editions were published under the names of the artists who drew them, and every impression carried the artist's signature, because that is what the convention requires of every workshop and every printer. Blackburn's name is not on the front of a single one.
+
+**And now say precisely what this does and does not prove.** It does NOT prove that anyone stole anything, and the course said so in Section 1. What it proves is sharper. It proves that the run of editions which set the technical standard for American modernist printmaking, taught its most famous practitioners the medium, and shaped what the resulting prints look like, was produced by a person whose name appears on none of them, because the format had one slot and the convention had already decided whose name went in it.
+
+That is the mechanism working exactly as designed, on the most consequential possible case, with a number attached that you can go and verify.
+
+:::reveal What post did Blackburn take in 1957, at which workshop, founded by whom? ||| First master printer at Universal Limited Art Editions, the lithographic venture founded by Tatyana and Maurice Grosman at West Islip on Long Island. He held it until 1963.
+
+:::reveal How many editions did Blackburn print for ULAE, and what does the Library of Congress say that run accomplished? ||| The first seventy-nine. It set the standard by which ULAE exerted a powerful influence on modernist printmaking in America.
+
+:::reveal What does the seventy-nine editions figure prove, and what does it NOT prove? ||| It proves that the run which set the standard for American modernist printmaking was made by someone named on none of it. It does not prove theft, because the convention withholds a signature from every printer.
+
+## Vocabulary
+- **Universal Limited Art Editions (ULAE)**: the lithographic publishing workshop founded by Tatyana and Maurice Grosman at West Islip, Long Island, where Blackburn was the first master printer.
+- **John Hay Whitney Traveling Fellowship**: the award that took Blackburn to Europe, mostly Paris, in 1953 and 1954.
+- **Graphics boom**: the surge in American fine art printmaking from the late 1950s onward, whose look the Library of Congress credits Blackburn's fluency with helping to form.
+- **Consequential case**: an instance chosen because the mechanism operating on it changed the field, which is what makes the seventy-nine editions the strongest evidence in this course.
+
+## Sources
+Library of Congress. (2003c). *A graphics explosion*. In *Creative space: Fifty years of Robert Blackburn's Printmaking Workshop* [Exhibition]. https://www.loc.gov/exhibits/blackburn/blackburn-graphics.html
+
+Library of Congress. (2003d). *Overview*. In *Creative space: Fifty years of Robert Blackburn's Printmaking Workshop* [Exhibition]. https://www.loc.gov/exhibits/blackburn/blackburn-overview.html`,
+    },
+    {
+      slug: "the-founding-year-problem",
+      title: "11 · A founding year that will not settle",
+      section: "Section 3 · Robert Blackburn, the case",
+      body: `Blackburn's own workshop has two founding years in circulation, and this course is not going to pick one for you. Here is the disagreement, both sides named, and what it teaches.
+
+**Position one: 1948, held by the Library of Congress.** Its exhibition overview says Blackburn "changed the course of American art through his graphic work and the Printmaking Workshop, which he founded in New York City in 1948", and adds that "in 1948, he opened his own studio, the Printmaking Workshop, launching the oldest and largest non-profit print workshop in the United States" (Library of Congress, 2003d). Its founding page is more specific still, and this is the sentence that explains the whole dispute: "By late 1947, he had acquired his own lithographic press. In 1948, he opened his own studio in Chelsea, printing for artists and encouraging his friends to experiment in lithography" (Library of Congress, 2003b).
+
+**Position two: 1947, held by the workshop's own successor.** The Robert Blackburn Printmaking Workshop, now a programme of the Elizabeth Foundation for the Arts, dates the decision to late winter 1947 and places the shop on 17th Street (Robert Blackburn Printmaking Workshop, n.d.).
+
+**Why both can be honest.** They are answering slightly different questions. If founding means acquiring the press and beginning to print, late 1947 is right. If founding means opening a studio that other artists could come to, 1948 is right. There is no lie here and there may be no error either: there is a continuous process being reported by two institutions who each drew the line at a different event.
+
+**What NOT to do with it.** Do not average them. Do not quietly pick the one that reads better. Do not cite only the source that agrees with you, which is the most common and least visible way a history goes wrong. Report the disagreement, name who holds each position, and say what would settle it.
+
+**What would settle it.** A dated primary document: a lease or rent receipt for the studio premises, a dated invoice for the press, a contemporaneous letter, or a listing in a city directory. Until one of those is on the table this stays open, and this course files it as an open question rather than resolving it in prose.
+
+**One thing both sides agree on, and it matters more than the year.** In 1971 the Printmaking Workshop became a non-profit corporation, with a mission the Library of Congress records as maintaining creative and artistic quality, supporting and encouraging innovation, creating opportunities for Third World and minority artists, and fostering public appreciation of the fine art print (Library of Congress, 2003d). The founding year is contested. What the thing was for is not.
+
+:::reveal Name the two positions on the Printmaking Workshop's founding year and who holds each. ||| The Library of Congress says 1948, when Blackburn opened his own studio in Chelsea. The Robert Blackburn Printmaking Workshop, now a programme of the Elizabeth Foundation for the Arts, says late winter 1947.
+
+:::reveal Why can both dates be honest rather than one being an error? ||| Because they mark different events in one continuous process: acquiring the press and beginning to print in late 1947, and opening a studio other artists could come to in 1948.
+
+:::reveal What kind of evidence would actually settle the founding year? ||| A dated primary document: a lease or rent receipt for the premises, a dated invoice for the press, a contemporaneous letter, or a city directory listing.
+
+## Vocabulary
+- **Contested claim**: a factual question on which credible sources genuinely disagree, which this catalog teaches as a disagreement rather than resolving by assertion.
+- **Founding event**: the specific act a source treats as the beginning of an institution, which differs between sources and produces apparently conflicting dates.
+- **Primary document**: a record made at the time by a participant, such as a lease, invoice, letter or directory listing, which is what a date dispute needs.
+- **Selective citation**: quoting only the source that supports your preferred answer, the most common and least visible way a history goes wrong.
+
+## Sources
+Library of Congress. (2003b). *Founding the Printmaking Workshop*. In *Creative space: Fifty years of Robert Blackburn's Printmaking Workshop* [Exhibition]. https://www.loc.gov/exhibits/blackburn/blackburn-founding.html
+
+Library of Congress. (2003d). *Overview*. In *Creative space: Fifty years of Robert Blackburn's Printmaking Workshop* [Exhibition]. https://www.loc.gov/exhibits/blackburn/blackburn-overview.html
+
+Robert Blackburn Printmaking Workshop. (n.d.). *History*. Elizabeth Foundation for the Arts. https://www.rbpmw-efanyc.org/about`,
+    },
+    {
+      slug: "quiz-blackburn",
+      title: "12 · Knowledge check: Blackburn and the record",
+      section: "Section 3 · Robert Blackburn, the case",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "Robert Blackburn's dates are:",
+            options: ["1920 to 2003", "1918 to 1979, the same span as the painter and printmaker Charles White", "1917 to 2010, matching the founder of the museum now called the DuSable", "1937 to 2020, which places him a full generation after the Harlem Renaissance"],
+            correctIndex: 0,
+            explanation: "Born in Summit, New Jersey, in 1920; died in New York City in 2003.",
+            sourceLessonSlug: "blackburn-learns-the-stone",
+          },
+          {
+            prompt: "Where was Blackburn born?",
+            options: ["Summit, New Jersey", "Harlem, in the New York City neighbourhood where he later grew up and studied", "West Islip, Long Island, the village where Universal Limited Art Editions was based", "Chicago, where he would later train alongside members of the Southside Art Center"],
+            correctIndex: 0,
+            explanation: "He was born in New Jersey and grew up in Harlem, which is where he entered printmaking.",
+            sourceLessonSlug: "blackburn-learns-the-stone",
+          },
+          {
+            prompt: "According to the Library of Congress, what introduced Blackburn to printmaking?",
+            options: ["Lithography classes at the Harlem Community Art Center", "A commercial apprenticeship at a Manhattan lithographic printing company in the 1930s", "A course at the Art Students League taught by the painter and printmaker Will Barnet", "An assignment from the Harmon Foundation requiring him to produce editioned work"],
+            correctIndex: 0,
+            explanation: "The centre was sponsored by the WPA, and its classes are where the medium reached him.",
+            sourceLessonSlug: "blackburn-learns-the-stone",
+          },
+          {
+            prompt: "Who initiated the Harlem Community Art Center?",
+            options: ["Augusta Savage and Gwendolyn Bennett", "Charles Alston and James Lesesne Wells, both of whom mentored Blackburn there", "The Harmon Foundation, as part of its programme of support for Black artists", "Romare Bearden and Jacob Lawrence, who were among Blackburn's colleagues in the period"],
+            correctIndex: 0,
+            explanation: "The sculptor Augusta Savage and the artist and writer Gwendolyn Bennett.",
+            sourceLessonSlug: "blackburn-learns-the-stone",
+          },
+          {
+            prompt: "Who taught Blackburn lithography at the Harlem Community Art Center?",
+            options: ["Riva Helfond", "Will Barnet, whom he later credited as a vital supporter of the Printmaking Workshop", "Charles Alston, who had absorbed the lessons of the Mexican muralists in the 1930s", "John Von Wicht, who had worked at a lithographic printing company after arriving in New York"],
+            correctIndex: 0,
+            explanation: "Helfond was his lithography teacher there; Barnet and Von Wicht became supporters of the workshop later.",
+            sourceLessonSlug: "blackburn-learns-the-stone",
+          },
+          {
+            prompt: "The Library of Congress says the Harlem Community Art Center became what for Blackburn?",
+            options: ["A model for his own workshop", "The venue for his first solo exhibition of lithographs, held shortly after the war", "The employer that paid him a salary throughout his years at the Art Students League", "The archive that received his early drawings when the WPA programmes were wound up"],
+            correctIndex: 0,
+            explanation: "A model for his own workshop years later, which is the thread Section 4 picks up.",
+            sourceLessonSlug: "blackburn-learns-the-stone",
+          },
+          {
+            prompt: "From what age did Blackburn make and study art at the 135th Street Branch library and the Harlem YMCA?",
+            options: ["Thirteen", "Seventeen, immediately after he graduated from DeWitt Clinton High School", "Twenty, when he began his scholarship at the Art Students League in New York", "Nine, which is when the WPA first opened its art programmes to school age children"],
+            correctIndex: 0,
+            explanation: "The Library of Congress records his study at both institutions from age thirteen.",
+            sourceLessonSlug: "blackburn-learns-the-stone",
+          },
+          {
+            prompt: "The Magpie was:",
+            options: ["His high school's literary magazine", "The Harlem arts salon better known by its street number, 306", "The printmaking cooperative Blackburn joined after leaving the Art Students League", "The journal in which his colour lithographs with Will Barnet were later featured"],
+            correctIndex: 0,
+            explanation: "At DeWitt Clinton High School he contributed artwork, stories and poetry to it.",
+            sourceLessonSlug: "blackburn-learns-the-stone",
+          },
+          {
+            prompt: "Blackburn attended the Art Students League on scholarship during which years?",
+            options: ["1940 to 1943", "1936 to 1940, before he graduated from DeWitt Clinton High School in Harlem", "1953 and 1954, the years he also spent travelling in Europe on a fellowship", "1957 to 1963, in parallel with his appointment at Universal Limited Art Editions"],
+            correctIndex: 0,
+            explanation: "Following his high school graduation in 1940, until 1943.",
+            sourceLessonSlug: "blackburn-learns-the-stone",
+          },
+          {
+            prompt: "Which of these institutions did Blackburn freelance for as a graphic artist?",
+            options: ["The Harmon Foundation", "The Works Progress Administration, which had employed him as a teenager in Harlem", "Universal Limited Art Editions, several years before he was hired as its master printer", "The Library of Congress, which commissioned lithographs for its national print exhibitions"],
+            correctIndex: 0,
+            explanation: "Along with the China Institute of America and Associated American Artists, across four years.",
+            sourceLessonSlug: "blackburn-learns-the-stone",
+          },
+          {
+            prompt: "Which colleagues from Blackburn's Harlem period does the Library of Congress name?",
+            options: ["Bearden, Crichlow, DeCarava and Lawrence", "Rivers, Hartigan, Frankenthaler and Rauschenberg, whose editions he later printed", "Catlett, Burroughs, Jones-Hogu and Amos, the four women taught later in this course", "Wayne, Adams, Grosman and Barnet, the workshop founders of the following decades"],
+            correctIndex: 0,
+            explanation: "Romare Bearden, Ernest Crichlow, Roy DeCarava and Jacob Lawrence.",
+            sourceLessonSlug: "blackburn-learns-the-stone",
+          },
+          {
+            prompt: "The lesson's point about Blackburn's early biography is that every step was:",
+            options: ["Somewhere with somebody else's name on the door", "Unusually well documented, which is why his case can be reconstructed at all", "Funded by a private foundation rather than by any federal or municipal programme", "Chosen deliberately by Blackburn to keep his own authorship out of public view"],
+            correctIndex: 0,
+            explanation: "A free WPA class, a public library, a high school magazine, a scholarship, and freelance work for other people's institutions.",
+            sourceLessonSlug: "blackburn-learns-the-stone",
+          },
+          {
+            prompt: "The lesson answers the routing question by saying Blackburn entered the medium through:",
+            options: ["Its technical door", "A dealer who took him on before he had completed any formal training at all", "An academy that admitted him on the strength of his drawings rather than his prints", "A commission from a publisher who needed images rather than technical assistance"],
+            correctIndex: 0,
+            explanation: "He learned to print at a professional standard early and became useful to other artists exactly when publishers needed that.",
+            sourceLessonSlug: "blackburn-learns-the-stone",
+          },
+          {
+            prompt: "The lesson insists that Blackburn's route into the unnamed category is not a story about:",
+            options: ["Anyone's malice", "Poverty, since his family were able to support his training throughout the 1930s", "Talent, because his own lithographs were never exhibited during his working life", "The WPA, whose programmes played no part in how he learned the medium"],
+            correctIndex: 0,
+            explanation: "It is a description of how a person ends up in the unnamed category, which is the routing question from Section 1.",
+            sourceLessonSlug: "blackburn-learns-the-stone",
+          },
+          {
+            prompt: "Blackburn spent 1953 and 1954 in Europe on which award?",
+            options: ["A John Hay Whitney Traveling Fellowship", "A Julius Rosenwald Fellowship, the award that took Elizabeth Catlett to Mexico City", "A Ford Foundation grant of the kind that later established Tamarind in Los Angeles", "A MacArthur Fellowship, which he would not in fact receive until much later in life"],
+            correctIndex: 0,
+            explanation: "Mostly in Paris. He returned to New York and was hired at ULAE shortly afterwards.",
+            sourceLessonSlug: "the-first-seventy-nine",
+          },
+          {
+            prompt: "In what year was Blackburn hired at Universal Limited Art Editions?",
+            options: ["1957", "1948, the year the Library of Congress dates the founding of his own studio", "1963, the year he began operating his Manhattan workshop full time instead", "1960, the same summer that Tamarind Lithography Workshop opened in Los Angeles"],
+            correctIndex: 0,
+            explanation: "He held the post of first master printer there from 1957 to 1963.",
+            sourceLessonSlug: "the-first-seventy-nine",
+          },
+          {
+            prompt: "What was Blackburn's title at ULAE?",
+            options: ["First master printer", "Artistic director, with responsibility for choosing which artists the workshop published", "Studio manager, supervising a team of printers who executed the editions themselves", "Artist in residence, producing his own editions alongside the workshop's published ones"],
+            correctIndex: 0,
+            explanation: "The Library of Congress records the appointment in exactly those words.",
+            sourceLessonSlug: "the-first-seventy-nine",
+          },
+          {
+            prompt: "ULAE was founded by:",
+            options: ["Tatyana and Maurice Grosman", "June Wayne, with financial support from the Ford Foundation", "Robert Blackburn and Will Barnet, working together after the war", "Clinton Adams, who later moved the operation to the University of New Mexico"],
+            correctIndex: 0,
+            explanation: "The lithographic venture was based at West Islip on Long Island.",
+            sourceLessonSlug: "the-first-seventy-nine",
+          },
+          {
+            prompt: "Where was ULAE based?",
+            options: ["West Islip, Long Island", "Chelsea, in Manhattan, a few blocks from the studio Blackburn opened himself", "Albuquerque, in affiliation with the College of Fine Arts at a state university", "Los Angeles, on the avenue from which the workshop took its name"],
+            correctIndex: 0,
+            explanation: "Blackburn commuted to the Grosmans' Long Island venture for the six years he held the post.",
+            sourceLessonSlug: "the-first-seventy-nine",
+          },
+          {
+            prompt: "How many ULAE editions did Blackburn print?",
+            options: ["The first seventy-nine", "The first thirty-six, a figure taken from June Wayne's whooping crane comparison", "All of them between 1957 and 1963, a number the Library of Congress does not state", "Nine, each of them for a different artist working at the workshop in its first year"],
+            correctIndex: 0,
+            explanation: "The Library of Congress states the figure directly in its exhibition overview.",
+            sourceLessonSlug: "the-first-seventy-nine",
+          },
+          {
+            prompt: "What does the Library of Congress say that run of editions accomplished?",
+            options: ["It set the standard by which ULAE influenced American modernist printmaking", "It made ULAE the largest publisher of editioned prints anywhere in the United States", "It established the practice of embossing a printer's chop on every American edition", "It proved that a single printer could produce an edition without any artist present"],
+            correctIndex: 0,
+            explanation: "Which is why this is the strongest possible case for the mechanism: the unnamed work shaped the whole field.",
+            sourceLessonSlug: "the-first-seventy-nine",
+          },
+          {
+            prompt: "Which artists did Blackburn print for at ULAE?",
+            options: ["Rivers, Hartigan, Frankenthaler, Rauschenberg, Dine and Johns", "Bearden, Crichlow, DeCarava and Lawrence, his colleagues from the Harlem years", "Catlett and White, both of whom he had printed for earlier in his Chelsea studio", "Barnet and Von Wicht, the two artists most closely associated with his own workshop"],
+            correctIndex: 0,
+            explanation: "An emerging generation whose prints defined the American graphics boom.",
+            sourceLessonSlug: "the-first-seventy-nine",
+          },
+          {
+            prompt: "The Library of Congress says that in most cases Blackburn did what for the ULAE artists?",
+            options: ["Taught them how to make lithographs", "Selected the images from their existing paintings that would work best in print", "Negotiated the terms on which the Grosmans would publish their editions", "Signed the impressions on their behalf when they were unavailable at the workshop"],
+            correctIndex: 0,
+            explanation: "Sharing his sensibility of the medium and his approach to the stone, which makes this a case about authorship rather than labour.",
+            sourceLessonSlug: "the-first-seventy-nine",
+          },
+          {
+            prompt: "Blackburn's fluency with lithography is credited with contributing to what?",
+            options: ["The new look of the ULAE works", "The invention of the documentation sheet as a standard American workshop practice", "The decision by ULAE to publish exclusively in colour rather than in black and white", "The survival of stone lithography at a time when no American workshop still used it"],
+            correctIndex: 0,
+            explanation: "The look that went on to define the American graphics boom of the following decade.",
+            sourceLessonSlug: "the-first-seventy-nine",
+          },
+          {
+            prompt: "Whose signature appears on the seventy-nine ULAE editions?",
+            options: ["The artist who drew each one", "Blackburn's, in the capacity of master printer for the whole run", "Both the artist's and Blackburn's, since ULAE followed the two chop convention", "Nobody's, because the editions were published anonymously by the Grosmans"],
+            correctIndex: 0,
+            explanation: "The convention requires it of every workshop and every printer, so Blackburn's name is on the front of none of them.",
+            sourceLessonSlug: "the-first-seventy-nine",
+          },
+          {
+            prompt: "The seventy-nine editions figure proves what, precisely?",
+            options: ["The unnamed work shaped the whole field", "That Blackburn was denied a signature he had contractually been promised", "That ULAE published more editions in its first years than any comparable workshop", "That the Grosmans concealed their printer's identity from buyers and from critics"],
+            correctIndex: 0,
+            explanation: "The run that set the standard, taught the famous practitioners, and shaped the look, made by a person named on none of it.",
+            sourceLessonSlug: "the-first-seventy-nine",
+          },
+          {
+            prompt: "The mechanism described in this lesson is the format having:",
+            options: ["One slot", "No record at all of who worked on a given edition of prints", "A rule requiring the publisher rather than the printer to be named on the sheet", "A preference for whichever contributor was already the better known of the two"],
+            correctIndex: 0,
+            explanation: "One slot, and a convention that had already decided whose name went in it.",
+            sourceLessonSlug: "the-first-seventy-nine",
+          },
+          {
+            prompt: "The Library of Congress dates the founding of the Printmaking Workshop to:",
+            options: ["1948", "1947, when Blackburn acquired his own lithographic press in New York", "1971, when the operation was incorporated as a non-profit corporation", "2005, when the Elizabeth Foundation for the Arts opened the current workshop"],
+            correctIndex: 0,
+            explanation: "Its overview says he founded it in New York City in 1948, opening his own studio that year.",
+            sourceLessonSlug: "the-founding-year-problem",
+          },
+          {
+            prompt: "The workshop's own successor organisation dates the founding to:",
+            options: ["Late winter 1947", "The summer of 1960, matching the opening of Tamarind in Los Angeles", "1943, immediately after Blackburn left the Art Students League", "1963, when Blackburn began running the Manhattan shop full time"],
+            correctIndex: 0,
+            explanation: "The Robert Blackburn Printmaking Workshop, a programme of the Elizabeth Foundation for the Arts, places the shop on 17th Street.",
+            sourceLessonSlug: "the-founding-year-problem",
+          },
+          {
+            prompt: "According to the Library of Congress, what had Blackburn acquired by late 1947?",
+            options: ["His own lithographic press", "A lease on the Chelsea premises where the studio would eventually open", "A commission from Associated American Artists to produce an editioned portfolio", "An intaglio press abandoned by Atelier 17 when that workshop returned to Europe"],
+            correctIndex: 0,
+            explanation: "That sentence is what explains the whole dispute: the press came in late 1947, the studio opened in 1948.",
+            sourceLessonSlug: "the-founding-year-problem",
+          },
+          {
+            prompt: "Why can both founding dates be honest?",
+            options: ["They mark different events in one process", "Because one source is describing the workshop and the other the non-profit corporation", "Because the calendar year was reckoned differently by the two institutions involved", "Because one source is reporting the American date and the other the European one"],
+            correctIndex: 0,
+            explanation: "Acquiring the press and beginning to print, versus opening a studio other artists could come to.",
+            sourceLessonSlug: "the-founding-year-problem",
+          },
+          {
+            prompt: "Which of these does this course forbid doing with a contested date?",
+            options: ["Averaging the two", "Reporting both, with the name of the institution that holds each position", "Filing it as an open question with a statement of what evidence would close it", "Saying in the lesson itself that the sources genuinely disagree about the year"],
+            correctIndex: 0,
+            explanation: "Along with quietly picking the one that reads better, and citing only the source that agrees with you.",
+            sourceLessonSlug: "the-founding-year-problem",
+          },
+          {
+            prompt: "\"Selective citation\" is described as:",
+            options: ["The least visible way a history goes wrong", "A legitimate editorial choice when one source is clearly more authoritative", "The practice of citing a source for a claim it does not actually make anywhere", "Quoting a source accurately but omitting the page number so it cannot be checked"],
+            correctIndex: 0,
+            explanation: "Quoting only the source that supports your preferred answer, which leaves no visible trace in the finished text.",
+            sourceLessonSlug: "the-founding-year-problem",
+          },
+          {
+            prompt: "What kind of evidence would settle the founding year?",
+            options: ["A dated primary document", "A statement from the Elizabeth Foundation for the Arts confirming its preferred date", "A published biography written by someone who knew Blackburn during the 1940s", "A consensus reached between the Library of Congress and the current workshop"],
+            correctIndex: 0,
+            explanation: "A lease or rent receipt, a dated invoice for the press, a contemporaneous letter, or a city directory listing.",
+            sourceLessonSlug: "the-founding-year-problem",
+          },
+          {
+            prompt: "Where does the Library of Congress place Blackburn's own studio?",
+            options: ["Chelsea", "West Islip, Long Island, alongside the workshop run by the Grosmans", "Harlem, near the community art centre where he had first learned lithography", "Albuquerque, in affiliation with the College of Fine Arts at the state university"],
+            correctIndex: 0,
+            explanation: "The successor organisation places the shop on 17th Street, which is in the same district of Manhattan.",
+            sourceLessonSlug: "the-founding-year-problem",
+          },
+          {
+            prompt: "In what year did the Printmaking Workshop become a non-profit corporation?",
+            options: ["1971", "1948, the year the Library of Congress dates its founding as a studio", "2005, when the Elizabeth Foundation for the Arts opened the current shop", "1963, when Blackburn left ULAE to run the Manhattan operation full time"],
+            correctIndex: 0,
+            explanation: "This is the date both sides of the founding year dispute agree on.",
+            sourceLessonSlug: "the-founding-year-problem",
+          },
+          {
+            prompt: "Which was part of the 1971 non-profit mission as the Library of Congress records it?",
+            options: ["Creating opportunities for Third World and minority artists", "Certifying master printers through a formal two semester training programme", "Publishing a reference work mapping American printers' chop marks to their names", "Establishing an archive of American editions at a university art museum"],
+            correctIndex: 0,
+            explanation: "Along with maintaining creative and artistic quality, encouraging innovation, and fostering public appreciation of the fine art print.",
+            sourceLessonSlug: "the-founding-year-problem",
+          },
+          {
+            prompt: "The lesson says the founding year is contested but what is not?",
+            options: ["What the workshop was for", "Who founded it, since both sources name Blackburn without qualification", "Where it was located, since both sources place it in the same city block", "When it closed, which both sources date to the beginning of the 2000s"],
+            correctIndex: 0,
+            explanation: "The 1971 mission language settles the purpose even while the date stays open.",
+            sourceLessonSlug: "the-founding-year-problem",
+          },
+          {
+            prompt: "This course handles the unresolved founding year by:",
+            options: ["Filing it as an open question", "Choosing the Library of Congress date, as the more authoritative institution", "Choosing the workshop's own date, since an institution knows its own history", "Omitting any date, so that no learner ever encounters the disagreement at all"],
+            correctIndex: 0,
+            explanation: "Rather than resolving it in prose. A hedge with no filed check is a hedge nobody will ever clear.",
+            sourceLessonSlug: "the-founding-year-problem",
+          },
+          {
+            prompt: "The Robert Blackburn Printmaking Workshop is now a programme of:",
+            options: ["The Elizabeth Foundation for the Arts", "The Library of Congress Prints and Photographs Division", "Universal Limited Art Editions, which absorbed it after Blackburn's death", "The University of New Mexico College of Fine Arts, alongside Tamarind"],
+            correctIndex: 0,
+            explanation: "Which is why the successor organisation's own history page is a party to the founding year dispute.",
+            sourceLessonSlug: "the-founding-year-problem",
+          },
+          {
+            prompt: "A \"founding event\" is defined in this section as:",
+            options: ["The act a source treats as the beginning", "The first exhibition an institution mounts after opening its doors", "The moment an organisation is granted non-profit status by the tax authorities", "The date the founder first stated publicly that the institution existed"],
+            correctIndex: 0,
+            explanation: "Different sources pick different acts, which is what produces apparently conflicting dates.",
+            sourceLessonSlug: "the-founding-year-problem",
+          },
+          {
+            prompt: "Blackburn left ULAE in which year, and to do what?",
+            options: ["1963, to run his own workshop full time", "1971, to incorporate the Printmaking Workshop as a non-profit corporation", "1957, to take up the John Hay Whitney Traveling Fellowship in Paris", "1948, to open his own studio in Chelsea and print for other artists there"],
+            correctIndex: 0,
+            explanation: "He began operating his Manhattan workshop full time in 1963, providing an open studio for artists of diverse backgrounds.",
+            sourceLessonSlug: "the-first-seventy-nine",
+          },
+          {
+            prompt: "The Library of Congress describes the Printmaking Workshop as the oldest and largest what?",
+            options: ["Non-profit print workshop in the United States", "Collection of American editioned prints held outside a federal institution", "Training programme for professional collaborative printers anywhere in the world", "Continuously operating lithographic publisher in the state of New York"],
+            correctIndex: 0,
+            explanation: "In the sentence that also dates its opening to 1948.",
+            sourceLessonSlug: "the-founding-year-problem",
+          },
+          {
+            prompt: "The \"consequential case\" idea means an example is chosen because:",
+            options: ["The mechanism operating on it changed the field", "Its documents survive in an institutional archive that anyone may consult", "The person involved was more talented than others in the same position", "It is the earliest recorded instance of the mechanism anywhere in the record"],
+            correctIndex: 0,
+            explanation: "Which is what makes the seventy-nine editions the strongest evidence in this course.",
+            sourceLessonSlug: "the-first-seventy-nine",
+          },
+          {
+            prompt: "Section 3's overall argument about Blackburn is that his case demonstrates:",
+            options: ["The mechanism working as designed", "An exception to the convention, which ULAE applied more strictly than other workshops", "A deliberate decision by named individuals to withhold credit from one printer", "That the convention had already begun to break down by the end of the 1950s"],
+            correctIndex: 0,
+            explanation: "On the most consequential possible case, with a number attached that you can go and verify.",
+            sourceLessonSlug: "the-first-seventy-nine",
+          },
+          {
+            prompt: "A \"primary document\", as this section defines it, is a record made:",
+            options: ["At the time, by a participant", "By an institution after reviewing all the available secondary literature", "By a historian working directly from the surviving objects rather than from texts", "By a court, and therefore admissible as evidence in a later dispute over dates"],
+            correctIndex: 0,
+            explanation: "A lease, an invoice, a letter, a directory listing. Which is what a date dispute needs and what this one lacks.",
+            sourceLessonSlug: "the-founding-year-problem",
+          },
+          {
+            prompt: "Section 3 rests almost entirely on which institutional source?",
+            options: ["A Library of Congress exhibition", "The Elizabeth Foundation for the Arts, which now runs the workshop in his name", "The Tamarind Institute archive at the University of New Mexico Art Museum", "The Studio Museum in Harlem, which holds the largest collection of his prints"],
+            correctIndex: 0,
+            explanation: "Creative Space: Fifty Years of Robert Blackburn's Printmaking Workshop, whose pages carry every date and figure in this section.",
+            sourceLessonSlug: "the-first-seventy-nine",
+          },
+          {
+            prompt: "The Harlem arts salon Blackburn took part in was known as:",
+            options: ["306", "The Magpie, after the literary magazine at DeWitt Clinton High School", "Atelier 17, the Parisian studio that spent the war years in New York", "The Uptown Art Laboratory, which was in fact a separate programme he also joined"],
+            correctIndex: 0,
+            explanation: "He also participated in the Harlem Arts Workshop and the Uptown Art Laboratory, which were distinct from the salon.",
+            sourceLessonSlug: "blackburn-learns-the-stone",
+          },
+          {
+            prompt: "\"Contested claim\" means a question on which:",
+            options: ["Credible sources genuinely disagree", "One source is known to be wrong but continues to be cited by others", "No source has yet said anything, so the answer must be inferred from context", "The disagreement concerns interpretation rather than any matter of fact"],
+            correctIndex: 0,
+            explanation: "This catalog teaches such a question as a disagreement rather than resolving it by assertion.",
+            sourceLessonSlug: "the-founding-year-problem",
+          },
+          {
+            prompt: "The most important thing the founding year dispute teaches is a method for:",
+            options: ["Reporting a disagreement instead of resolving it", "Deciding which of two institutions is generally the more reliable", "Recovering a date from indirect evidence when no primary record survives", "Persuading two institutions to align their published accounts of an event"],
+            correctIndex: 0,
+            explanation: "Name both positions, name who holds each, and state what would settle it.",
+            sourceLessonSlug: "the-founding-year-problem",
+          },
+          {
+            prompt: "Blackburn's Manhattan workshop after 1963 is described as providing what?",
+            options: ["An open graphics studio", "A commercial publishing operation issuing editions under its own imprint", "A certification programme for printers modelled on the Tamarind curriculum", "A private studio in which he worked alone on his own colour abstractions"],
+            correctIndex: 0,
+            explanation: "For artists of diverse social and economic backgrounds, ethnicities, styles and levels of expertise.",
+            sourceLessonSlug: "the-first-seventy-nine",
+          },
+          {
+            prompt: "The Section 3 evidence is strong specifically because it is:",
+            options: ["Checkable in one place", "Drawn from oral history rather than from institutional publications", "Uncontested, with no disagreement anywhere in the sources it relies on", "Recent enough that the participants can still be interviewed about it"],
+            correctIndex: 0,
+            explanation: "One Library of Congress exhibition carries the appointment, the number, the artists and the teaching claim.",
+            sourceLessonSlug: "the-first-seventy-nine",
+          },
+          {
+            prompt: "Blackburn's title of first master printer means he was first at:",
+            options: ["ULAE", "Any American workshop, since no such role existed before 1957", "Tamarind, where the master printer certification later took its name", "The Printmaking Workshop, once it incorporated as a non-profit in 1971"],
+            correctIndex: 0,
+            explanation: "The claim is specific to that workshop, and this course does not widen it beyond what the source says.",
+            sourceLessonSlug: "the-first-seventy-nine",
+          },
+          {
+            prompt: "The 1971 mission's phrase about public appreciation concerned:",
+            options: ["The fine art print", "The careers of the printers who worked at the shop over its history", "The Harlem institutions that had trained the workshop's founder as a teenager", "The archive of documentation sheets the workshop had accumulated since 1948"],
+            correctIndex: 0,
+            explanation: "Fostering public appreciation of the fine art print was one of the four stated purposes.",
+            sourceLessonSlug: "the-founding-year-problem",
+          },
+        ],
+      },
+    },
   ],
 };
