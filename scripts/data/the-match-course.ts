@@ -2577,5 +2577,680 @@ Lee, J. M., Jr., & Keys, S. W. (2013, September). *Land-grant but unequal: State
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 5 — Counting it, and arguing about the count
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "sixteen-letters",
+      title: "17 · Sixteen letters",
+      section: "Section 5 · Counting it, and arguing about the count",
+      body: `On 18 September 2023 the Secretary of Education and the Secretary of Agriculture sent the same letter, with one number changed, to sixteen governors.
+
+**USDA's own press release states the headline** as "the over $12 billion disparity in funding between land-grant Historically Black Colleges and Universities (HBCUs) and their non-HBCU land-grant peers in their states" (U.S. Department of Agriculture [USDA], 2023).
+
+**Sixteen letters, eighteen states, and the release closes the arithmetic itself:** "There are HBCU land-grant institutions in 18 states; however, Delaware and Ohio have equitably funded their respective universities" (USDA, 2023). So the two states that did not get a letter are named, and the reason is given.
+
+**The method, in the letters' own words:** "Using readily available data from the National Center for Education Statistics (NCES) Integrated Postsecondary Education Survey (IPEDS) that ranges from 1987 to 2020, we calculated the amount that these institutions would have received if their state funding per student were equal to that of 1862 institutions" (Cardona & Vilsack, 2023).
+
+**Here is every figure, taken from the letter rather than from coverage of it** (Cardona & Vilsack, 2023). Press reporting disagreed about which institution had the largest gap, and the letters settle it:
+
+| State | 1890 institution | Amount |
+| --- | --- | --- |
+| Tennessee | Tennessee State University | $2,147,784,704 |
+| North Carolina | North Carolina A&T State University | $2,079,934,848 |
+| Florida | Florida Agricultural and Mechanical University | $1,973,081,216 |
+| Texas | Prairie View A&M University | $1,135,496,704 |
+| Louisiana | Southern University and A&M College | $1,126,149,248 |
+| West Virginia | West Virginia State University | $852,622,464 |
+| Georgia | Fort Valley State University | $603,156,480 |
+| Alabama | Alabama A&M University | $527,280,064 |
+| South Carolina | South Carolina State University | $469,956,832 |
+| Oklahoma | Langston University | $418,986,272 |
+| Missouri | Lincoln University | $361,569,760 |
+| Arkansas | University of Arkansas at Pine Bluff | $330,935,712 |
+| Maryland | University of Maryland Eastern Shore | $321,181,312 |
+| Virginia | Virginia State University | $277,544,416 |
+| Mississippi | Alcorn State University | $257,807,216 |
+| Kentucky | Kentucky State University | $172,135,168 |
+
+**Now add them up, because that is the exercise.** The sixteen figures sum to **$13,055,622,416**. USDA's release says "over $12 billion", which is true of that sum. Press coverage said "$13 billion", which is the same sum rounded the other way. **Both are defensible and neither is a different measurement**, and you can settle in five minutes an apparent discrepancy that has been repeated in print for three years.
+
+**Two details in the letters worth noticing.** Alabama's letter names **only Alabama A&M**, against Auburn University, and does not reach Tuskegee, because Tuskegee is private and a state-appropriations comparison has nothing to compare. And the letters do not simply demand money: they suggest "a substantial state allocation toward the 1890 deficit combined with a forward-looking budget commitment for a two-to-one match of federal land-grant funding", and say expressly that "it is not necessary to reduce funding to other institutions" (Cardona & Vilsack, 2023).
+
+**The sentence that tells you what the letters were for:** "This is a situation that clearly predates all of us. However, it is a problem that we can work together to solve. In fact, it is our hope that we can collaborate to avoid burdensome and costly litigation that has occurred in several states" (Cardona & Vilsack, 2023).
+
+:::reveal How many governors received a letter, how many states hold an 1890 institution, and how does the difference resolve? ||| Sixteen letters against eighteen states, because USDA's release says Delaware and Ohio had funded their institutions equitably.
+
+:::reveal What did the departments actually calculate? ||| What each 1890 institution would have received between 1987 and 2020 if its state funding per student had equalled that of the state's 1862 institution.
+
+:::reveal What do the sixteen published figures add up to? ||| $13,055,622,416, which is consistent both with USDA's over $12 billion and with the $13 billion that appeared in press coverage.
+
+## Vocabulary
+- **Per-student state funding**: state appropriations divided by enrollment, the unit the 2023 analysis used to compare two institutions of very different size.
+- **Counterfactual**: the amount an institution would have received under a stated alternative rule, which is what the letters compute rather than a sum anyone was billed.
+- **IPEDS**: the Integrated Postsecondary Education Data System, the federal collection the departments drew their state-funding and enrollment data from.
+- **Two-to-one match**: the forward-looking budget commitment the letters suggest alongside a one-time allocation, meaning two state dollars for each federal land-grant dollar.
+
+## Sources
+Cardona, M., & Vilsack, T. J. (2023, September 18). *Letters to state governors regarding 1890 land-grant institutions* [Letters]. U.S. Department of Education. https://sites.ed.gov/whhbcu/files/2023/09/Secretary-letter-1890.pdf
+
+U.S. Department of Agriculture. (2023, September 18). *Secretaries of Education, Agriculture call on governors to equitably fund land-grant HBCUs* (Release No. 0188.23). https://www.usda.gov/about-usda/news/press-releases/2023/09/18/secretaries-education-agriculture-call-governors-equitably-fund-land-grant-hbcus`,
+    },
+    {
+      slug: "the-objection-named",
+      title: "18 · The objection, named",
+      section: "Section 5 · Counting it, and arguing about the count",
+      body: `A course that presents the $12 billion as a settled debt is doing advocacy. The objection to the method is real, it has been made by named officials in writing, and you should be able to state it before you decide what you think.
+
+**Start with the structure of the calculation.** The departments took each state's per-student appropriation to its **1862** institution, applied that rate to the **1890** institution's enrollment, and summed the difference across 1987 to 2020. Everything follows from that one modelling choice.
+
+**So the strongest general objection is not political.** A research-intensive flagship with a medical school, a veterinary school and a doctoral research enterprise has a legitimately higher cost per student than a smaller teaching-focused institution. To the extent that is true, part of the computed gap measures **what the two institutions do** rather than how they were treated. That is a real argument and it has to be answered rather than dismissed.
+
+**Two named officials made narrower and more checkable versions of it.**
+
+**Virginia.** Secretary of Education **Aimee Rogstad Guidera** replied to Cardona and Vilsack in a letter dated 4 October 2023. Her claim is factual rather than rhetorical: "Based on reliable data from state-maintained finance, accounting and education systems, the Commonwealth has funded VSU well above Virginia Tech on a per student basis in aggregate, since 1994", noting that 1994 is when the state began holding reliable college data (Spitalniak, 2023). She also argued that IPEDS has "well-documented" problems that prevent it collecting quality student-level data, citing a 2016 Institute for Higher Education Policy report finding the database "can not flexibly adapt as data needs evolve and doesn't accurately represent all enrolled students, especially those that are part time and low income" (Spitalniak, 2023). **Note what that dispute actually is: two datasets, one federal and one state, disagreeing about the same appropriations.** That is settleable, and it is the right kind of argument to be having.
+
+**Kentucky.** **David Givens**, president pro tempore of the state Senate, told WLEX-TV in September that Kentucky State University is overfunded when measured by metrics such as full-time equivalent students: "My initial reaction to the letter was to be perplexed. Knowing what we did in the last budget and prior budgets, knowing that we have met or exceeded every budget recommendation from both Republican and Democratic governors as it relates to KSU" (Spitalniak, 2023). **His objection is a denominator objection.** Headcount and full-time equivalent enrollment are different numbers, and per-student figures move when you change which one you divide by.
+
+**And named officials pushed the other way, in the same reporting.** Georgia Representatives Sandra Scott, Viola Davis and Kim Schofield threatened legal action over the $603 million gap at Fort Valley State. Oklahoma Senator George Young said of Langston's $419 million that "this 'oversight' has been well publicized and investigated. It is time to correct it", and Representative Jason Lowe said "clearly, Democrats and Republicans have failed this great institution". Mississippi Representative Alyce Clarke said of Alcorn State that "MSU is not to blame for receiving the funding it has received over the years to grow and prosper. However, it is unfair to Alcorn State students when their institution did not receive the same equity in funding" (Spitalniak, 2023).
+
+**One state had already done its own arithmetic.** A 2021 Tennessee study found that Tennessee State University "may have missed out on up to $544 million in state funding" (Spitalniak, 2023). That is a state government's own figure, produced before the federal letters, and it is smaller than the federal one for the same institution by a factor of about four. **Both numbers can be honestly produced, because they are answering different questions over different periods.**
+
+**Now the move this whole course is built to make.** The per-student argument can be had forever, because it rests on a model. **The matching argument cannot**, because it rests on whether a state paid a statutory obligation, and USDA publishes the answer by institution every year. So: **use the letters as the current chapter, and build on the match.**
+
+:::reveal What is the structural objection to the 2023 calculation? ||| That applying the flagship's per-student appropriation to the 1890 institution's enrollment may partly measure the difference in what the two institutions do rather than how they were treated.
+
+:::reveal What kind of dispute is Virginia's objection, at bottom? ||| A dispute between two datasets, federal IPEDS and the state's own finance and accounting systems, about the same appropriations, which is settleable.
+
+:::reveal Why does this course build on the match rather than on the $12 billion? ||| Because the per-student figure rests on a model that can be argued with, while whether a state met a statutory match is published by institution every year.
+
+## Vocabulary
+- **Mission mix**: the difference in what institutions do, such as running medical and veterinary schools, which can raise legitimate cost per student and so confound a per-student comparison.
+- **Denominator objection**: an argument that a per-student figure is wrong because the wrong enrollment measure was used, such as headcount rather than full-time equivalent.
+- **Full-time equivalent**: an enrollment measure that converts part-time students into fractions of a full-time one, which usually produces a smaller number than headcount.
+- **Settleable dispute**: a disagreement that could be resolved by examining the underlying records, as distinct from one that turns on a value judgment.
+
+## Sources
+Spitalniak, L. (2023, October 10). *Lawmakers press state leaders on land-grant HBCU funding gaps*. Higher Ed Dive. https://www.highereddive.com/news/lawmakers-react-hbcu-funding-disparities-biden/696035/`,
+    },
+    {
+      slug: "a-remedy-without-money",
+      title: "19 · A remedy that arrives without money",
+      section: "Section 5 · Counting it, and arguing about the count",
+      body: `A course that stopped at 2023 would imply that a remedy arrived. Here is what actually happened next, dated, and with the parts this course could not read marked as unread.
+
+**In March 2026, USDA and the Council of 1890 University Presidents signed a memorandum of understanding.** West Virginia State University, one of the nineteen and therefore a party, dates the signing to **5 March 2026** and describes the agreement as establishing "a joint Task Force comprised of agency heads appointed by Secretary Rollins and 1890 Presidents", which is "mandated to meet at least twice a year" (West Virginia State University, 2026). The same announcement describes commitments on workforce development, personnel exchange between the department and the institutions, and USDA liaisons providing regional support to farmers, ranchers and foresters, and aligns the agreement with Executive Order 14283.
+
+**Inside Higher Ed's account adds the context that makes it legible.** Harry L. Williams, chief executive of the Thurgood Marshall College Fund, told the publication that USDA has signed agreements of this kind "since Ronald Reagan, often at the start of a new administration" (Inside Higher Ed, 2026). Felecia M. Nave of the 1890 Universities Foundation said the agreement "builds on prior efforts while placing a stronger emphasis on ensuring that our work is not just symbolic, but truly actionable", and West Virginia State's president Ericke S. Cage described it as a forum to raise issues (Inside Higher Ed, 2026).
+
+**What this course can say, and what it cannot.** Neither the signing institutions' own announcements nor the trade-press reporting names a dollar figure in the agreement, and the reporting frames it as a partnership and access commitment rather than an appropriation. **This course did not read the memorandum itself**, so it does not tell you what the text does or does not contain. That gap is filed as an open source check rather than papered over, because the difference between "the reporting names no money" and "the document contains no money" is exactly the kind of difference this catalog exists to keep visible.
+
+**Here is the shape of the thing, though, and it is the honest ending.** In September 2023, two federal secretaries put a documented number in front of sixteen governors. In March 2026, the outcome visible in the public record is a task force that meets twice a year. **The distance between those two sentences is the lesson.**
+
+**And this is the fourth time you have watched the same move in one statute family.** A benefit is created. A class is excluded. A separate, smaller channel is built. The channel is permitted to go unmatched by the party obliged to fund it, and the remedy, when it comes, is sized against somebody else's number or arrives without a number at all:
+
+| Where | The move |
+| --- | --- |
+| 1890 | Separate maintenance deemed compliance, with the state writing the division |
+| 1887 to 1977 | Not eligible for the capacity grants that made the other system powerful |
+| 1977 onward | A remedy sized as a percentage of the other class's appropriation |
+| Today | A waiver only one class may receive, and a match only one class is allowed to miss |
+
+**Once you can see the move, you can see it outside this subject**, and that is what this course is finally for. When you meet a benefit with a separate channel attached, ask three questions. Who is obliged to fund the channel? What happens to them if they do not? And who publishes the answer?
+
+:::reveal What did the March 2026 memorandum of understanding establish, according to a signing institution's own announcement? ||| A joint task force of USDA agency heads and 1890 presidents, mandated to meet at least twice a year, alongside commitments on workforce development, personnel exchange and USDA liaisons.
+
+:::reveal Why does this course refuse to say the memorandum contains no money? ||| Because it did not read the document, only the parties' announcements and the reporting, and the difference between the reporting naming no money and the text containing none is exactly what should stay visible.
+
+:::reveal What three questions does this course leave you with for any benefit with a separate channel attached? ||| Who is obliged to fund the channel, what happens to them if they do not, and who publishes the answer.
+
+## Vocabulary
+- **Memorandum of understanding**: an agreement recording intentions and structures for cooperation, which may carry no appropriation and no enforceable obligation to spend.
+- **Task force**: the standing body of agency officials and institutional heads the 2026 agreement establishes, with a stated meeting frequency and no stated budget.
+- **The move**: this course's name for the recurring design pattern of creating a benefit, excluding a class, building a smaller separate channel, and permitting that channel to go unfunded.
+- **Unread document**: a source a course knows exists and has not examined, which must be labelled as such rather than characterised from coverage.
+
+## Sources
+Inside Higher Ed. (2026, March 19). *Historically Black land-grants celebrate USDA agreement*. https://www.insidehighered.com/news/government/politics-elections/2026/03/19/historically-black-land-grants-celebrate-usda
+
+West Virginia State University. (2026). *USDA and Council of 1890 Universities sign landmark agreement to advance agricultural excellence and federal equity*. https://wvstateu.edu/news/usda-and-council-of-1890-universities-sign-landmark-agreement-to-advance-agricultural-excellence-and-federal-equity/`,
+    },
+    {
+      slug: "quiz-counting-it",
+      title: "20 · Knowledge check: counting it",
+      section: "Section 5 · Counting it, and arguing about the count",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "On what date did the two federal secretaries send their letters to governors?",
+            options: ["18 September 2023", "10 October 2023, the date of the trade-press round-up of reactions", "4 October 2023, the date of Virginia's reply", "5 March 2026, the date of the USDA memorandum of understanding"],
+            correctIndex: 0,
+            explanation: "USDA release 0188.23, dated 18 September 2023, announced the letters the same day they were sent.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "How many governors received a letter?",
+            options: ["16", "18, one for each state holding an 1890 institution", "19, one for each 1890 institution", "50, since the analysis covered every state"],
+            correctIndex: 0,
+            explanation: "Sixteen letters, and USDA's release names all sixteen governors and their states.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "Which two states holding an 1890 institution did not receive a letter?",
+            options: ["Delaware and Ohio", "Alabama and Tennessee, whose institutions had already sued", "Maryland and Virginia, whose figures were the smallest", "Missouri and Kentucky, which had already commissioned their own studies"],
+            correctIndex: 0,
+            explanation: "USDA's release says both had equitably funded their respective universities.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "What figure does USDA's own press release give?",
+            options: ["Over $12 billion", "Exactly $13 billion, the sum of the sixteen letters", "$13,055,622,416, computed from the letters", "$56,627,199, the 2013 policy brief's combined shortfall"],
+            correctIndex: 0,
+            explanation: "The release says over $12 billion, which is the official wording for a sum that is in fact just over thirteen.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "What do the sixteen published letter figures add up to?",
+            options: ["$13,055,622,416", "$12,000,000,000, exactly matching the press release", "$544 million, matching Tennessee's own 2021 study", "$56,627,200, the corrected 2013 shortfall total"],
+            correctIndex: 0,
+            explanation: "Adding the sixteen figures settles an apparent discrepancy that has been repeated in print for years.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "How does the sum of the letters reconcile the over $12 billion and $13 billion figures?",
+            options: ["Both describe the same sum", "It shows the press figure was a different calculation", "It shows the official figure excluded two states", "It shows neither figure can be reproduced from the letters"],
+            correctIndex: 0,
+            explanation: "Over $12 billion is true of $13.06 billion, and $13 billion is that same sum rounded the other way.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "Which state's 1890 institution carries the largest figure in the letters?",
+            options: ["Tennessee", "North Carolina, whose figure is just over $2 billion", "Florida, whose figure approaches $2 billion", "Texas, whose figure exceeds $1.1 billion"],
+            correctIndex: 0,
+            explanation: "Tennessee State University at $2,147,784,704, narrowly ahead of North Carolina A&T.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "Which state's 1890 institution carries the smallest figure?",
+            options: ["Kentucky", "Mississippi, whose figure is just under $258 million", "Virginia, whose figure is just under $278 million", "Maryland, whose figure is just over $321 million"],
+            correctIndex: 0,
+            explanation: "Kentucky State University at $172,135,168, which is the bottom of the range the press release gives.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "What range does the press release give for the figures across the sixteen states?",
+            options: ["$172 million to $2.1 billion", "$56 million to $12 billion, covering both federal analyses", "$361 million to $2.1 billion, excluding the smallest three", "$544 million to $2.1 billion, matching Tennessee's own study at the low end"],
+            correctIndex: 0,
+            explanation: "The range runs from Kentucky State at the bottom to Tennessee State at the top.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "Which data system did the departments use?",
+            options: ["IPEDS", "The Census of Agriculture published by NASS", "The annual USDA capacity and matching report required in 2018", "State budget documents obtained by records request"],
+            correctIndex: 0,
+            explanation: "The NCES Integrated Postsecondary Education Data System, covering 1987 to 2020.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "What period does the 2023 analysis cover?",
+            options: ["1987 to 2020", "2010 to 2012, the period the APLU brief examined", "1890 to 2020, the whole life of the institutions", "1977 to 2023, from NARETPA to the letters"],
+            correctIndex: 0,
+            explanation: "Thirty-three years of IPEDS data, which the letters describe as the last thirty years.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "What exactly did the departments calculate?",
+            options: ["A counterfactual per-student amount", "The unpaid balance of the statutory one-to-one match", "The value of land the 1890 institutions never received", "The federal capacity funding withheld between 1887 and 1977"],
+            correctIndex: 0,
+            explanation: "What each institution would have received if its state funding per student had equalled that of the 1862 institution.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "Which Alabama institution does the Alabama letter name?",
+            options: ["Alabama A&M University", "Tuskegee University, the state's other 1890 institution", "Both of Alabama's 1890 institutions, with separate figures", "Auburn University, as the recipient of the excess funding"],
+            correctIndex: 0,
+            explanation: "Only Alabama A&M, compared against Auburn, because a state-appropriations comparison has nothing to compare for a private university.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "Why does the Alabama letter not reach Tuskegee?",
+            options: ["Tuskegee is private", "Tuskegee lost its 1890 designation before 1987", "Tuskegee's figure was reported in a separate letter to the legislature", "Alabama had already funded Tuskegee equitably"],
+            correctIndex: 0,
+            explanation: "A comparison of state appropriations per student has no state appropriation to measure at a private institution.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "What forward-looking commitment do the letters suggest alongside a one-time allocation?",
+            options: ["A two-to-one match of federal land-grant funding", "A permanent transfer of the 1862 institution's research budget", "An annual audit of the state's higher education appropriations", "A constitutional amendment protecting the institution's funding"],
+            correctIndex: 0,
+            explanation: "The letters suggest a substantial state allocation toward the deficit plus a budget commitment for a two-to-one match.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "What do the letters say expressly about other institutions' funding?",
+            options: ["It need not be reduced", "It should be frozen until the gap is closed", "It should be redirected to the 1890 institution over five years", "It falls outside the departments' authority to discuss"],
+            correctIndex: 0,
+            explanation: "The letters say it is not necessary to reduce funding to other institutions, or the institution's own general fund allocation.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "What outcome do the letters say the secretaries hope to avoid?",
+            options: ["Litigation", "A congressional hearing on state higher-education funding", "A reduction in the states' federal capacity allotments", "The loss of the institutions' land-grant designation"],
+            correctIndex: 0,
+            explanation: "The letters say they hope to collaborate to avoid burdensome and costly litigation that has occurred in several states.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "What is the release number of USDA's 2023 announcement?",
+            options: ["0188.23", "IF11847, which is the CRS product number", "3000-PB1, which is the APLU brief's report number", "113-79, which is the 2014 farm bill's public law number"],
+            correctIndex: 0,
+            explanation: "Release No. 0188.23, dated 18 September 2023.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "What does this course say a learner should take per-institution figures from?",
+            options: ["The letter", "Whichever news outlet reported the figure first", "The press release, which lists them all by state", "The 2013 policy brief, which is the earlier count"],
+            correctIndex: 0,
+            explanation: "Press reporting disagreed about which institution had the largest gap; the letters settle it and the press release gives only the range.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "What is the single modelling choice everything in the 2023 analysis follows from?",
+            options: ["Applying the 1862 per-student rate", "Choosing 1987 as the start year of the series", "Excluding private institutions from the comparison", "Using state rather than federal appropriations"],
+            correctIndex: 0,
+            explanation: "The flagship's per-student appropriation applied to the 1890 institution's enrollment is the assumption the whole figure rests on.",
+            sourceLessonSlug: "the-objection-named",
+          },
+          {
+            prompt: "What is the strongest general objection to that choice?",
+            options: ["Mission mix", "That IPEDS data begins only in 1987", "That state appropriations are not the largest source of institutional revenue", "That the comparison ignores federal capacity funding entirely"],
+            correctIndex: 0,
+            explanation: "A flagship with medical and veterinary schools has legitimately higher cost per student, so part of the gap may measure what the institutions do.",
+            sourceLessonSlug: "the-objection-named",
+          },
+          {
+            prompt: "Who replied for Virginia, and in what capacity?",
+            options: ["Aimee Rogstad Guidera, Secretary of Education", "Glenn Youngkin, the governor, in a public statement", "The president of Virginia State University, on the institution's behalf", "David Givens, president pro tempore of the state Senate"],
+            correctIndex: 0,
+            explanation: "Guidera replied to Cardona and Vilsack in a letter dated 4 October 2023.",
+            sourceLessonSlug: "the-objection-named",
+          },
+          {
+            prompt: "What does Virginia's reply claim about VSU and Virginia Tech since 1994?",
+            options: ["VSU was funded above Virginia Tech per student", "Both institutions were funded identically per student", "Virginia Tech was funded above VSU, but by less than the federal figure", "The state holds no data that would allow a comparison"],
+            correctIndex: 0,
+            explanation: "Guidera says state-maintained finance and accounting systems show the Commonwealth funded VSU well above Virginia Tech per student in aggregate since 1994.",
+            sourceLessonSlug: "the-objection-named",
+          },
+          {
+            prompt: "Why does Virginia's reply name 1994 specifically?",
+            options: ["Reliable state college data begins then", "It is the year the tribal colleges received land-grant status", "It is the year the federal analysis was originally commissioned", "It is the year Virginia State University last received a state capital appropriation"],
+            correctIndex: 0,
+            explanation: "Guidera says that is when the state began having reliable college data.",
+            sourceLessonSlug: "the-objection-named",
+          },
+          {
+            prompt: "What report does Virginia's reply cite against IPEDS?",
+            options: ["A 2016 Institute for Higher Education Policy report", "A 2012 Government Accountability Office audit of federal data collection", "A 2021 Tennessee state study of its own land-grant funding", "The 2013 APLU policy brief on state matching funds"],
+            correctIndex: 0,
+            explanation: "The cited finding is that the database cannot adapt as data needs evolve and misrepresents part-time and low-income students.",
+            sourceLessonSlug: "the-objection-named",
+          },
+          {
+            prompt: "What kind of dispute does this course say Virginia's objection actually is?",
+            options: ["Two datasets about the same appropriations", "A disagreement about what counts as equitable funding", "A constitutional question about state sovereignty", "A dispute about which institution is the real flagship"],
+            correctIndex: 0,
+            explanation: "Federal IPEDS against the state's own finance systems, which is settleable and the right kind of argument to be having.",
+            sourceLessonSlug: "the-objection-named",
+          },
+          {
+            prompt: "Who made Kentucky's objection?",
+            options: ["David Givens, Senate president pro tempore", "Andy Beshear, the governor who received the letter", "The president of Kentucky State University", "Aimee Rogstad Guidera, speaking for a neighbouring state"],
+            correctIndex: 0,
+            explanation: "Givens told WLEX-TV in September 2023 that KSU is overfunded on full-time equivalent metrics.",
+            sourceLessonSlug: "the-objection-named",
+          },
+          {
+            prompt: "What kind of objection is Kentucky's, in this course's terms?",
+            options: ["A denominator objection", "A data-integrity objection about IPEDS collection", "A jurisdictional objection about federal authority", "A timing objection about the start year of the series"],
+            correctIndex: 0,
+            explanation: "Headcount and full-time equivalent enrollment are different numbers, and per-student figures move when the denominator changes.",
+            sourceLessonSlug: "the-objection-named",
+          },
+          {
+            prompt: "Which enrollment measure did Kentucky's objection prefer?",
+            options: ["Full-time equivalent", "Headcount, including all part-time students", "First-time full-time freshmen only", "Degrees awarded rather than students enrolled"],
+            correctIndex: 0,
+            explanation: "Full-time equivalent converts part-time students into fractions, which usually gives a smaller denominator than headcount.",
+            sourceLessonSlug: "the-objection-named",
+          },
+          {
+            prompt: "Which three Georgia legislators threatened legal action over the Fort Valley State gap?",
+            options: ["Scott, Davis and Schofield", "Young, Lowe and Clarke", "Givens, Guidera and Parson", "Cardona, Vilsack and Rollins"],
+            correctIndex: 0,
+            explanation: "Representatives Sandra Scott, Viola Davis and Kim Schofield, over the $603 million figure.",
+            sourceLessonSlug: "the-objection-named",
+          },
+          {
+            prompt: "Which Oklahoma legislator said the oversight had been well publicized and investigated?",
+            options: ["Senator George Young", "Representative Jason Lowe, who said both parties had failed the institution", "Representative Alyce Clarke, speaking about Alcorn State", "Senate President Pro Tempore David Givens"],
+            correctIndex: 0,
+            explanation: "Young was speaking about Langston University's $419 million figure.",
+            sourceLessonSlug: "the-objection-named",
+          },
+          {
+            prompt: "What did Mississippi Representative Alyce Clarke say about Mississippi State University?",
+            options: ["It is not to blame", "It should return part of its appropriation to Alcorn State", "It had misreported its own enrollment to IPEDS", "It had been underfunded on the same measure"],
+            correctIndex: 0,
+            explanation: "She said MSU is not to blame for the funding it received, and that the unfairness falls on Alcorn State's students.",
+            sourceLessonSlug: "the-objection-named",
+          },
+          {
+            prompt: "What did Tennessee's own 2021 study find about Tennessee State University?",
+            options: ["It may have missed out on up to $544 million", "It had been funded above its 1862 peer since 1994", "It was owed exactly the amount the federal letter later named", "It could not be compared with any other institution in the state"],
+            correctIndex: 0,
+            explanation: "A state government's own figure, produced before the federal letters and about four times smaller for the same institution.",
+            sourceLessonSlug: "the-objection-named",
+          },
+          {
+            prompt: "How does this course explain the gap between Tennessee's $544 million and the federal $2.1 billion?",
+            options: ["Different questions over different periods", "One of the two studies made an arithmetic error", "The state study excluded federal capacity funding", "The federal figure includes the statutory match shortfall"],
+            correctIndex: 0,
+            explanation: "Both numbers can be honestly produced, because they are not measuring the same thing.",
+            sourceLessonSlug: "the-objection-named",
+          },
+          {
+            prompt: "What does this course say a course does if it presents the $12 billion as a settled debt?",
+            options: ["Advocacy", "A public service to the institutions concerned", "A correct reading of a federal finding", "An error of arithmetic rather than of judgment"],
+            correctIndex: 0,
+            explanation: "The objection is real, has been made in writing by named officials, and has to be stated before a learner decides.",
+            sourceLessonSlug: "the-objection-named",
+          },
+          {
+            prompt: "Which argument does this course say can be had forever?",
+            options: ["The per-student one", "The one about whether a state met its statutory match", "The one about which institutions hold 1890 status", "The one about whether the 1890 Act granted land"],
+            correctIndex: 0,
+            explanation: "It rests on a model, whereas the match rests on whether a state paid an obligation USDA publishes annually.",
+            sourceLessonSlug: "the-objection-named",
+          },
+          {
+            prompt: "On what date does West Virginia State University say the USDA agreement was signed?",
+            options: ["5 March 2026", "19 March 2026, the date of the trade-press report", "18 September 2023, the date of the federal letters", "20 October 1994, the date of the tribal college designation"],
+            correctIndex: 0,
+            explanation: "The date comes from a signing institution's own announcement, which makes it a party's account rather than a summary.",
+            sourceLessonSlug: "a-remedy-without-money",
+          },
+          {
+            prompt: "Who signed the 2026 agreement with USDA?",
+            options: ["The Council of 1890 University Presidents", "The Association of Public and Land-grant Universities", "The sixteen governors who received the 2023 letters", "The Thurgood Marshall College Fund"],
+            correctIndex: 0,
+            explanation: "USDA and the Council of 1890 University Presidents, per the signing institutions' announcements.",
+            sourceLessonSlug: "a-remedy-without-money",
+          },
+          {
+            prompt: "What does the 2026 agreement establish, per the signing institution's announcement?",
+            options: ["A joint task force", "A new capacity grant programme for the 1890 institutions", "A federal fund to close the state funding gaps", "A binding schedule of state matching payments"],
+            correctIndex: 0,
+            explanation: "A joint task force of agency heads and 1890 presidents, mandated to meet at least twice a year.",
+            sourceLessonSlug: "a-remedy-without-money",
+          },
+          {
+            prompt: "How often is that task force mandated to meet?",
+            options: ["At least twice a year", "Quarterly, in each of the four USDA regions", "Once each Congress, before the farm bill is drafted", "Whenever the Secretary of Agriculture convenes it"],
+            correctIndex: 0,
+            explanation: "At least twice a year, per the announcement, with no stated budget attached.",
+            sourceLessonSlug: "a-remedy-without-money",
+          },
+          {
+            prompt: "Which executive order does the signing institution's announcement align the agreement with?",
+            options: ["Executive Order 14283", "Executive Order 9066", "Executive Order 10730", "Executive Order 11246"],
+            correctIndex: 0,
+            explanation: "Described in the announcement as the White House initiative to promote excellence and innovation at HBCUs.",
+            sourceLessonSlug: "a-remedy-without-money",
+          },
+          {
+            prompt: "What did Harry L. Williams of the Thurgood Marshall College Fund say about agreements of this kind?",
+            options: ["USDA has signed them since Reagan", "That this was the first such agreement in the department's history", "That previous versions had all carried appropriations", "That the 1890 institutions had declined to sign earlier ones"],
+            correctIndex: 0,
+            explanation: "He told Inside Higher Ed they have been signed since Ronald Reagan, often at the start of a new administration.",
+            sourceLessonSlug: "a-remedy-without-money",
+          },
+          {
+            prompt: "What did Felecia M. Nave of the 1890 Universities Foundation emphasise about the agreement?",
+            options: ["That the work be actionable rather than symbolic", "That it would close the funding gap within a decade", "That it superseded the 2023 letters", "That it required no action from the states"],
+            correctIndex: 0,
+            explanation: "She said it builds on prior efforts while placing a stronger emphasis on the work not being merely symbolic.",
+            sourceLessonSlug: "a-remedy-without-money",
+          },
+          {
+            prompt: "What does this course say it did NOT do with the 2026 memorandum?",
+            options: ["Read it", "Report its signing date", "Name the parties to it", "Describe the task force it establishes"],
+            correctIndex: 0,
+            explanation: "It worked from the parties' announcements and the reporting, and says so rather than characterising a text it has not seen.",
+            sourceLessonSlug: "a-remedy-without-money",
+          },
+          {
+            prompt: "What distinction does this course insist on keeping visible about the memorandum?",
+            options: ["Reporting names no money against the text containing none", "A signed agreement against a proposed one", "A federal action against a state action", "A task force against a working group"],
+            correctIndex: 0,
+            explanation: "The gap is filed as an open source check rather than papered over with a confident sentence.",
+            sourceLessonSlug: "a-remedy-without-money",
+          },
+          {
+            prompt: "How does this course describe the distance between September 2023 and March 2026?",
+            options: ["The lesson", "An administrative delay of no particular significance", "Evidence that the states have complied", "Proof that the federal analysis was withdrawn"],
+            correctIndex: 0,
+            explanation: "A documented number put in front of sixteen governors, and, in the public record, a task force that meets twice a year.",
+            sourceLessonSlug: "a-remedy-without-money",
+          },
+          {
+            prompt: "How many times does this course say you have watched the same design move by the end?",
+            options: ["Four", "Once, in the 1890 proviso", "Two, in 1890 and 1977", "Nine, once for each institution that took a waiver"],
+            correctIndex: 0,
+            explanation: "The 1890 proviso, the ineligibility, the remedy sized as a fraction, and the waiver only one class may receive.",
+            sourceLessonSlug: "a-remedy-without-money",
+          },
+          {
+            prompt: "What are the three questions this course leaves a learner with?",
+            options: ["Who funds it, what if they do not, who publishes", "Who wrote it, who signed it, who benefits", "How much, how long, how often", "Which statute, which agency, which court"],
+            correctIndex: 0,
+            explanation: "Who is obliged to fund the separate channel, what happens to them if they do not, and who publishes the answer.",
+            sourceLessonSlug: "a-remedy-without-money",
+          },
+          {
+            prompt: "Why would stopping this course at 2023 be dishonest?",
+            options: ["It would imply a remedy arrived", "It would omit the 2013 policy brief that preceded it", "It would exclude the states that were not sent letters", "It would rest the course on a contested figure"],
+            correctIndex: 0,
+            explanation: "The visible outcome three years later is a task force, and a course that ends on the letters implies otherwise.",
+            sourceLessonSlug: "a-remedy-without-money",
+          },
+          {
+            prompt: "Which of these is the clearest example of the design move as this course names it?",
+            options: ["A separate channel nobody is compelled to fund", "A competitive grant awarded by peer review", "A statute that names one institution by name", "A data system with documented collection problems"],
+            correctIndex: 0,
+            explanation: "A benefit created, a class excluded, a smaller separate channel built, and that channel permitted to go unmatched.",
+            sourceLessonSlug: "a-remedy-without-money",
+          },
+          {
+            prompt: "What is the reported figure for the gap between Virginia Tech and Virginia State?",
+            options: ["Roughly $275 million", "Roughly $603 million, the Georgia figure", "Roughly $419 million, the Oklahoma figure", "Roughly $544 million, Tennessee's own study figure"],
+            correctIndex: 0,
+            explanation: "Higher Ed Dive reports roughly $275 million over a thirty-year period, against the letter's $277,544,416.",
+            sourceLessonSlug: "the-objection-named",
+          },
+          {
+            prompt: "What did Missouri lawmakers propose in response to the Lincoln University figure?",
+            options: ["A study of the funding history", "Immediate payment of the full amount named in the letter", "A constitutional amendment protecting the institution", "Litigation against the Department of Education"],
+            correctIndex: 0,
+            explanation: "A bipartisan push to analyse the state's history of underfunding Lincoln, inspired by Tennessee's 2021 study.",
+            sourceLessonSlug: "the-objection-named",
+          },
+          {
+            prompt: "What is the reported per-student funding gap for Langston University?",
+            options: ["Almost $419 million", "Almost $362 million, which is Lincoln University's figure", "Almost $258 million, which is Alcorn State's figure", "Just over $172 million, which is Kentucky State's figure"],
+            correctIndex: 0,
+            explanation: "Langston's letter figure is $418,986,272, against Oklahoma State University.",
+            sourceLessonSlug: "the-objection-named",
+          },
+          {
+            prompt: "Which figure did the letters give for Lincoln University in Missouri?",
+            options: ["$361,569,760", "$418,986,272, which is Langston University's figure", "$321,181,312, which is the Maryland figure", "$277,544,416, which is the Virginia figure"],
+            correctIndex: 0,
+            explanation: "Reported in coverage as almost $362 million, against the University of Missouri.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "What figure did the letters give for Fort Valley State University?",
+            options: ["$603,156,480", "$469,956,832, which is South Carolina State's figure", "$852,622,464, which is West Virginia State's figure", "$330,935,712, which is the Arkansas figure"],
+            correctIndex: 0,
+            explanation: "The Georgia figure, over which three state representatives threatened legal action.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "Which institution does the letter compare Alabama A&M against?",
+            options: ["Auburn University", "The University of Alabama at Tuscaloosa", "Tuskegee University, the state's other 1890 institution", "Alabama State University"],
+            correctIndex: 0,
+            explanation: "Auburn is the state's original 1862 land-grant institution, which is what makes it the comparator.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "Which institution does the Missouri letter name as the 1862 comparator?",
+            options: ["The University of Missouri", "Missouri State University", "Missouri University of Science and Technology", "Lincoln University, compared against its own earlier funding"],
+            correctIndex: 0,
+            explanation: "The University of Missouri at Columbia is the state's 1862 land-grant institution.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "Which institution does the Oklahoma letter name as the 1862 comparator?",
+            options: ["Oklahoma State University", "The University of Oklahoma", "The University of Central Oklahoma", "Langston University, compared with its peer institutions nationally"],
+            correctIndex: 0,
+            explanation: "Oklahoma State University is the state's original land-grant institution.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "What did the letters ask governors' budget offices to do?",
+            options: ["Examine the data together", "Certify the figures within ten days", "Submit a remediation plan to the departments", "Suspend appropriations pending a federal audit"],
+            correctIndex: 0,
+            explanation: "The departments offered to work with each state's budget office and to host a workshop examining the funding data.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "Where should a learner go to check a per-institution 2023 figure?",
+            options: ["The published letters", "The 2013 APLU policy brief", "The CRS In Focus on the 1890 institutions", "The annual USDA capacity and matching report"],
+            correctIndex: 0,
+            explanation: "All sixteen letters were published as one document, and every figure in this course's table comes from it.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "What is the safest single-sentence description of the $12 billion figure?",
+            options: ["A modelled counterfactual over 33 years", "The unpaid balance of a statutory obligation", "A judgment entered against sixteen states", "An estimate of federal funding withheld since 1887"],
+            correctIndex: 0,
+            explanation: "It is what the institutions would have received under a stated alternative funding rule, not a sum anyone was billed.",
+            sourceLessonSlug: "the-objection-named",
+          },
+          {
+            prompt: "Which of these does NOT depend on the per-student model?",
+            options: ["Whether a state met its statutory match", "The size of each state's computed gap", "The ranking of the sixteen states by gap", "The total across all sixteen states"],
+            correctIndex: 0,
+            explanation: "The match is a yes-or-no question about a statutory obligation, and USDA publishes the answer by institution.",
+            sourceLessonSlug: "the-objection-named",
+          },
+          {
+            prompt: "What does this course recommend doing with the 2023 letters in an argument?",
+            options: ["Treat them as the current chapter", "Lead with them, since they carry the largest figure", "Omit them, since the method is contested", "Present them as the settled legal position"],
+            correctIndex: 0,
+            explanation: "Build on the match, which cannot be modelled away, and use the letters as the current chapter of the same story.",
+            sourceLessonSlug: "the-objection-named",
+          },
+          {
+            prompt: "How many of the sixteen letter figures exceed one billion dollars?",
+            options: ["Five", "Two, Tennessee and North Carolina", "Nine, matching the FY2020 waiver count", "Sixteen, all of them"],
+            correctIndex: 0,
+            explanation: "Tennessee, North Carolina, Florida, Texas and Louisiana, which a learner can confirm by reading the table.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "Which figure did the letters give for West Virginia State University?",
+            options: ["$852,622,464", "$603,156,480, which is the Georgia figure", "$469,956,832, which is South Carolina State's figure", "$527,280,064, which is Alabama A&M's figure"],
+            correctIndex: 0,
+            explanation: "West Virginia's figure is the sixth largest of the sixteen.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "Which figure did the letters give for the University of Maryland Eastern Shore?",
+            options: ["$321,181,312", "$277,544,416, which is Virginia State's figure", "$330,935,712, which is the Arkansas figure", "$257,807,216, which is Alcorn State's figure"],
+            correctIndex: 0,
+            explanation: "Maryland's figure sits between the Arkansas and Virginia figures in the table.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "What does this course say the letters are, in relation to the whole argument?",
+            options: ["A chapter, not the spine", "The strongest evidence available on the subject", "A restatement of the 2013 policy brief", "A legal finding binding on the sixteen states"],
+            correctIndex: 0,
+            explanation: "The statutory match is the spine because it survives every objection the per-student model has to answer.",
+            sourceLessonSlug: "the-objection-named",
+          },
+          {
+            prompt: "What did Oklahoma Representative Jason Lowe say about responsibility for the gap?",
+            options: ["Both parties failed the institution", "That the federal analysis had overstated the shortfall", "That the state had already begun closing the gap", "That the comparison institution was wrongly chosen"],
+            correctIndex: 0,
+            explanation: "He said clearly, Democrats and Republicans have failed this great institution.",
+            sourceLessonSlug: "the-objection-named",
+          },
+          {
+            prompt: "What does the phrase readily available data in the letters signal about the method?",
+            options: ["It uses an existing public collection", "It relies on records obtained by subpoena from the states", "It draws on a survey conducted specially for the letters", "It uses institutional accounts rather than state appropriations"],
+            correctIndex: 0,
+            explanation: "IPEDS is a standing federal collection, which is both the method's convenience and the target of Virginia's objection.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "Which is a fair statement of what a learner can verify about the 2023 total without trusting anybody?",
+            options: ["The sixteen published figures sum", "That the per-student method is sound", "That each state actually owes the amount named", "That the IPEDS data is accurate for every year"],
+            correctIndex: 0,
+            explanation: "The arithmetic is checkable; the model behind each figure is the part that has to be argued about.",
+            sourceLessonSlug: "sixteen-letters",
+          },
+          {
+            prompt: "Which trade publication carried the round-up of state reactions this course cites?",
+            options: ["Higher Ed Dive", "The Congressional Record", "The Federal Register", "The Chronicle of Agricultural Policy"],
+            correctIndex: 0,
+            explanation: "Laura Spitalniak's 10 October 2023 report, which carries both the objections and the calls for action by name.",
+            sourceLessonSlug: "the-objection-named",
+          },
+          {
+            prompt: "What does the 2026 agreement commit USDA to explore regarding institutional staff?",
+            options: ["Personnel exchange", "Direct federal salary support for extension agents", "A hiring freeze at the 1862 institutions", "Tenure protections for 1890 faculty"],
+            correctIndex: 0,
+            explanation: "The announcement describes institutional capacity-building through personnel exchange agreements alongside the task force.",
+            sourceLessonSlug: "a-remedy-without-money",
+          },
+          {
+            prompt: "Who do the USDA liaisons in the 2026 agreement provide support to?",
+            options: ["Farmers, ranchers and foresters", "State legislative budget committees", "The Council of 1890 University Presidents only", "Students applying for federal scholarships"],
+            correctIndex: 0,
+            explanation: "The announcement describes regional support and technical assistance to farmers, ranchers and foresters.",
+            sourceLessonSlug: "a-remedy-without-money",
+          },
+          {
+            prompt: "Which West Virginia State University official is quoted on the 2026 agreement?",
+            options: ["President Ericke S. Cage", "Secretary of Education Aimee Rogstad Guidera", "Senate President Pro Tempore David Givens", "Thurgood Marshall College Fund chief Harry L. Williams"],
+            correctIndex: 0,
+            explanation: "Cage described it as a forum for raising issues, in the trade-press account this course cites.",
+            sourceLessonSlug: "a-remedy-without-money",
+          },
+          {
+            prompt: "What is the correct way to describe a document a course knows exists and has not examined?",
+            options: ["Unread", "Unavailable", "Disputed", "Superseded"],
+            correctIndex: 0,
+            explanation: "Labelling it as unread is what keeps a course from characterising a text from coverage of it.",
+            sourceLessonSlug: "a-remedy-without-money",
+          },
+        ],
+      },
+    },
   ],
 };
