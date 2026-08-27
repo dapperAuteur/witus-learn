@@ -744,6 +744,51 @@ Farm Service Agency. (1996, April 15). Farm Service Agency county committees; Fa
       },
     },
     // ══════════════════════════════════════════════════════════════════════
+    // SECTION 4 — Title
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "land-that-passes-without-a-will",
+      title: "13 · Land that passes without a will",
+      section: "Section 4 · Title",
+      body: `Sections 1 to 3 were about getting money and about counting who was left. This section is about a way of losing land in which **nobody is denied anything**, because the loss happens through ordinary property law working exactly as written.
+
+**Start with the event: somebody dies without a will.** When a landowner dies intestate, the land does not vanish and it does not go to the state. It passes to the heirs under that state's law of intestate succession, and they take it as **tenants in common**. The Uniform Law Commission puts the sequence plainly:
+
+> "If a landowner dies intestate, the real estate passes to the landowner's heirs as tenants-in-common under state law. Tenants-in-common are vulnerable because any individual tenant can force a partition." (Uniform Law Commission, n.d.)
+
+**What a tenancy in common actually is.** Each co-tenant owns an undivided fractional interest in the whole parcel, not a marked-off piece of it. A one-sixth interest is not six acres out of thirty-six. It is a sixth of every square foot. Every co-tenant has the right to possess and use all of it, and none of them can point at a corner and call it theirs alone.
+
+**Now run it for two more generations.** Three children each take a third. Each of them has four children, so twelve grandchildren hold twelfths. Those twelve have thirty children between them, and the parcel is now owned by dozens of people in fractions with large denominators, some of whom have never seen it, some of whom live a thousand miles away, and some of whom do not know they own anything. **Nobody did anything wrong. Nobody sold. The title simply fragmented, because that is what intestacy plus time does to a co-tenancy.**
+
+**Why this belongs in a course about federal farm programmes.** Because of Section 1's gate. A federal farm programme is delivered to a **farm**, identified in the agency's records, and the person applying has to be able to show they control it. On land with dozens of undocumented co-owners, the person actually farming may have farmed it for forty years and still be unable to produce the paperwork the office asks for. **The loan they cannot get is the loan Section 2's committee never had to deny**, because the application never became complete.
+
+Congress addressed exactly that problem in 2018, which tells you it was real. Section 12615 of the Agriculture Improvement Act of 2018 created a list of documents that a farm operator on heirs property may use to obtain a farm number, codified at **7 U.S.C. § 6622b**. The list includes a court order or a recorder's certification in states that have adopted the uniform act, "a fully executed, unrecorded tenancy-in-common agreement", the operator's "tax return ... for each of the 5 years preceding" the application, and plain "self-certification that the farm operator has control of the land" (P.L. 115-334 § 12615). **Read that as a diagnosis.** Congress would not have enumerated five substitutes for a deed if the deed had been available.
+
+**And the same shape recurs after a disaster.** A programme that pays a landowner asks who the landowner is. When the answer is thirty-one people, some unlocatable, the payment waits. Lesson 1 said timing is the whole game; a title problem is a timing problem with no clock you can see.
+
+**One boundary this course keeps.** Heirs property is not a Black institution and is not unique to Black families. It arises anywhere people die without wills and land stays in a family, and it is well documented in Appalachia, in the Southwest and among Native Hawaiian landholders. What is specific is the combination: a population historically served badly by the legal profession, discouraged from probate courts, holding land bought at great cost, in states whose partition law made a fragmented co-tenancy fragile. **The instrument is general; the exposure was not.**
+
+**What makes the co-tenancy fragile is one sentence of ordinary law, and Lesson 14 is about that sentence.**
+
+:::reveal What happens to land when the owner dies without a will? ||| It passes to the heirs under state intestate succession law, and they hold it together as tenants in common.
+
+:::reveal What does owning a one-sixth interest as a tenant in common actually mean? ||| An undivided sixth of the whole parcel, not six acres out of thirty-six, with a right to possess and use all of it.
+
+:::reveal Why does a fragmented title block access to federal farm programmes? ||| Because a programme is delivered to a farm whose operator must document control of it, and the operator of heirs property often cannot, so the application never becomes complete.
+
+## Vocabulary
+- **Intestate**: dying without a valid will, so state succession law rather than the owner's instructions determines who takes the property.
+- **Tenancy in common**: co-ownership in which each holder has an undivided fractional interest in the whole parcel and a right to possess all of it.
+- **Undivided interest**: a share of the whole rather than a marked-off piece, which is why no co-tenant can point at part of the land and call it exclusively theirs.
+- **Heirs property**: land held by co-tenants who inherited it, typically without probate and without a written agreement among them.
+- **Farm number**: the identifier under which a farm's records are kept at the county office, and the practical precondition for applying to most federal farm programmes.
+
+## Sources
+Agriculture Improvement Act of 2018, Pub. L. No. 115-334, § 12615, 132 Stat. 4490 (codified at 7 U.S.C. § 6622b). https://www.govinfo.gov/content/pkg/PLAW-115publ334/html/PLAW-115publ334.htm
+
+Uniform Law Commission. (n.d.). *Partition of Heirs Property Act*. https://www.uniformlaws.org/acts/catalog/current/p`,
+    },
+    // ══════════════════════════════════════════════════════════════════════
     // SECTION 5 — Pigford
     // ══════════════════════════════════════════════════════════════════════
     {
@@ -1442,6 +1487,148 @@ Cowan, T., & Feder, J. (2013, May 29). *The Pigford cases: USDA settlement of di
           },
         ],
       },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 6 — What came after
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-criticism-in-both-directions",
+      title: "21 · The criticism, in both directions, with everyone named",
+      section: "Section 6 · What came after",
+      body: `Pigford is argued about, and the arguments run in opposite directions. This lesson states both, names everyone, and separates what an audit **found** from what an audit **said could happen**. That distinction is the point of the lesson and it is the most transferable skill in this course.
+
+**The criticism from the claimants' side comes first, because it is usually left out.** CRS records contemporaneous objections from within the class: to the structure of the settlement itself, to the very large number of late filers who never got a determination, and to reported deficiencies in the representation claimants received from class counsel (Cowan & Feder, 2013). Lesson 18's trade explains the first of those: a capped payment on the low-proof track means a farmer who lost a large operation and a farmer who lost a small one were paid identically.
+
+**Now the official audit, which is narrower than its reputation.** On **7 December 2012** the Government Accountability Office published **GAO-13-69R, *Civil Rights: Additional Actions in Pigford II Claims Process Could Reduce Risk of Improper Determinations***, a report mandated by section 201 of the Claims Resolution Act of 2010. Its central finding, verbatim:
+
+> "In general, the internal control design provides reasonable assurance that fraudulent or otherwise invalid claims could be identified and denied; however, certain weaknesses in the control design could expose the claims process to risk of improper determinations." (GAO, 2012, p. 3)
+
+**Read the grammar.** The design "provides reasonable assurance." The weaknesses "could expose" the process "to risk." Nothing in that sentence says fraud occurred. It says a control system had gaps through which an improper determination might pass, which is what an internal-controls audit is for and is a different exercise from investigating claims.
+
+**GAO said so itself, in a footnote that is the single most important line in the whole dispute:**
+
+> "Our review did not include an examination of fraud perpetrated on claimants. According to the settlement's court-appointed Ombudsman, however, all complaints of fraud his office has received pertain to fraud perpetrated on, not by, claimants." (GAO, 2012, enclosure I, n. 7)
+
+**And GAO tested claims.** It drew a random sample of 150 from the 37,275 submitted as of 4 June 2012 and reported: "We found no exceptions in our testing of these claims", with 95 per cent confidence that the actual error rate was at or below 2 per cent (GAO, 2012, n. 21).
+
+**One number from that report travels badly and needs its footnote attached.** GAO reports that as of 23 October 2012 the reviewers had identified about **3,180 claims with potential fraud concerns**, referred onward. GAO's own note immediately qualifies it: "some perceived patterns may not in fact be fraudulent and instead may result from appropriate circumstances. For example, similarities across claims may be attributable to a single individual assisting several claimants in completing their claim forms" (GAO, 2012, n. 15). **That is a suspicion count from a pattern check, not a finding.** If you meet it without the footnote, you have met half a fact.
+
+**Do not confuse it with the earlier report.** **GAO-06-469R, *Pigford Settlement: The Role of the Court-Appointed Monitor***, dated 17 March 2006, is a different document about a different question: how the monitor conducted outreach and how many claims she directed for reexamination. GAO-13-69R cites it in its own footnotes.
+
+**Now the fraud allegation, which this course would have said nothing about if it could not be traced.** The rule set before authoring began was that it appears only with a named source, in a named venue, on named evidence, with named rebuttals. All four are available, so here they are.
+
+**The venue with the strongest record is the floor of the House of Representatives.** On **29 November 2010**, Representative **Steve King** of Iowa held a special order titled "Pigford Farms and Discrimination", printed at *Congressional Record*, vol. 156, no. 153, pp. H7635 to H7641. He described an unnamed source who "believed were a minimum of 75 percent fraudulent" and said he was "completely convinced" the matter "has far more fraud in it than it has legitimate claims" (156 Cong. Rec. H7637, H7641, 2010). Representative **Michele Bachmann** of Minnesota spoke within the same special order and said "The numbers just bespeak obvious fraud in this situation" (156 Cong. Rec. H7640, 2010). **Attribute those two speakers separately.** The passage most often quoted as King's is Bachmann's.
+
+**The second venue is a newspaper.** **Sharon LaFraniere**, "Farm Loan Bias Claims, Often Unsupported, Cost U.S. Millions", *The New York Times*, 25 April 2013, run in print the next day under the alternate headline "Federal Spigot Flows as Farmers Claim Bias". It reported internal objections from career lawyers and agency officials, most unnamed, with **J. Michael Kelly**, USDA's retired associate general counsel, on the record.
+
+**The evidence, sorted honestly, is of three kinds.** Unnamed private sources, for the 75 per cent figure. An arithmetic inference: roughly 94,000 claims against census counts of 18,000 to 33,000 Black farm operators. And, for the newspaper, internal documents plus interviews.
+
+**The middle one is the checkable one, and CRS rebutted it before the article ran.** In the same report that supplies every figure in Lesson 19, CRS explains that census definitions of farm, farm operator and farm owner changed over the period, that the class reached people who "attempted to farm" and therefore were never counted, and that "the number of claims filed cannot be viewed as an accurate representation of the number of awards that have been or will be made under the two settlements" (Cowan & Feder, 2013, p. 9). Nearly a third of Track A claims in Pigford I were denied. That is the arithmetic answer to the arithmetic argument.
+
+**The rebuttals, named.** Secretary **Tom Vilsack**, interviewed by CBS News on 30 December 2010, said that of the 17,000 to 18,000 cases adjudicated in the first settlement, only three had been found marginally questionable (Condon, 2010). **Susan A. Schneider**, professor of law and director of the agricultural and food law programme at the University of Arkansas, published a point-by-point response on 1 May 2013 noting, among other things, that 31 per cent of eligible Track A claimants were denied (Schneider, 2013). **John W. Boyd Jr.**, president of the National Black Farmers Association, and **Tony West**, then Acting Associate Attorney General, both responded publicly in May 2013 (Tinuoye, 2013).
+
+**And here is the bottom line, stated as carefully as the record allows.** No government audit, inspector general report or prosecution that this course could locate ever found that the Pigford settlements were characterised by fraud. GAO found control weaknesses that **could permit** improper determinations, tested 150 claims and found no exceptions, explicitly did not examine claimant fraud, and recorded that the court's own Ombudsman had received fraud complaints only about fraud committed **against** claimants. This course searched for a substantiating audit or prosecution and did not find one, which is not the same sentence as "none exists", and it is the sentence the evidence supports.
+
+:::reveal What did GAO-13-69R actually find about the Pigford II claims process? ||| That the internal control design generally provides reasonable assurance, but that certain weaknesses could expose the process to risk of improper determinations.
+
+:::reveal Why is the figure of about 3,180 claims with potential fraud concerns not a finding of fraud? ||| Because GAO's own note says some perceived patterns may not be fraudulent, giving as an example one person helping several claimants fill in their forms.
+
+:::reveal What did the court-appointed Ombudsman report about the fraud complaints his office received? ||| That all of them concerned fraud perpetrated on claimants rather than by them.
+
+## Vocabulary
+- **Internal control design**: the set of checks built into a process to catch invalid results, which an audit can assess without ever examining whether any particular result was wrong.
+- **Risk of improper determination**: the possibility that a gap in controls lets a wrong decision through, which is a statement about a system rather than about any decision.
+- **Suspicion count**: a tally of items flagged by a pattern check for further review, which becomes a finding only after adjudication.
+- **Special order**: floor time reserved by a member of the House for extended remarks, printed in full in the Congressional Record.
+- **Not found, as against does not exist**: the honest way to report an exhaustive but bounded search, which leaves the question open rather than closing it by assertion.
+
+## Sources
+Condon, S. (2010, December 30). *Steve King says Congress will investigate "reparations"*. CBS News. https://www.cbsnews.com/news/steve-king-says-congress-will-investigate-reparations/
+
+Cowan, T., & Feder, J. (2013, May 29). *The Pigford cases: USDA settlement of discrimination suits by Black farmers* (CRS Report No. RS20430). Congressional Research Service. https://www.everycrsreport.com/reports/RS20430.html
+
+LaFraniere, S. (2013, April 25). Farm loan bias claims, often unsupported, cost U.S. millions. *The New York Times*. https://www.nytimes.com/2013/04/26/us/farm-loan-bias-claims-often-unsupported-cost-us-millions.html
+
+Pigford farms and discrimination, 156 Cong. Rec. H7635-H7641 (2010) (statements of Rep. King and Rep. Bachmann). https://www.govinfo.gov/content/pkg/CREC-2010-11-29/html/CREC-2010-11-29-pt1-PgH7635.htm
+
+Schneider, S. A. (2013, May 1). *Discrimination at USDA: Response to New York Times*. Agricultural Law. https://aglaw.blogspot.com/2013/05/discrimination-at-usda-response-to-new.html
+
+Tinuoye, K. (2013, May 6). *US officials, black farmers defend USDA settlement after critical New York Times story*. TheGrio. https://thegrio.com/2013/05/06/u-s-officials-black-farmers-defend-u-s-d-a-settlement/
+
+U.S. Government Accountability Office. (2006, March 17). *Pigford settlement: The role of the court-appointed monitor* (GAO-06-469R). https://www.gao.gov/products/gao-06-469r
+
+U.S. Government Accountability Office. (2012, December 7). *Civil rights: Additional actions in Pigford II claims process could reduce risk of improper determinations* (GAO-13-69R). https://www.gao.gov/products/gao-13-69r`,
+    },
+    {
+      slug: "the-race-neutral-rewrite",
+      title: "22 · A remedy named the class, was enjoined, and was rewritten without it",
+      section: "Section 6 · What came after",
+      body: `The last chapter is recent enough to date every sentence, and it is the cleanest illustration in this course of a rule that shows up everywhere: **what a statute may say about who it is for is a separate question from what it does.**
+
+**Step one: Congress wrote a remedy that named the class.** Section 1005 of the American Rescue Plan Act of 2021 (P.L. 117-2) appropriated "such sums as may be necessary" and directed:
+
+> "The Secretary shall provide a payment in an amount up to 120 percent of the outstanding indebtedness of each socially disadvantaged farmer or rancher as of January 1, 2021, to pay off the loan directly or to the socially disadvantaged farmer or rancher (or a combination of both)" (P.L. 117-2 § 1005)
+
+Two details worth having right. The appropriation was open ended rather than a fixed sum, so the widely repeated "four billion dollar programme" is an estimate rather than a statutory number. And "socially disadvantaged farmer or rancher" took its meaning from **7 U.S.C. § 2279(a)**, which, like § 2003 in Lesson 2, names no race at all: it means a member of "a group whose members have been subjected to racial or ethnic prejudice because of their identity as members of a group without regard to their individual qualities" (7 U.S.C. § 2279, n.d.).
+
+**The statute did not name races. The implementing notice did.** USDA's Notice of Funds Availability at 86 Fed. Reg. 28329 (26 May 2021) listed the qualifying groups: American Indians or Alaskan Natives, Asians, Blacks or African Americans, Native Hawaiians or other Pacific Islanders, and Hispanics or Latinos, with other groups possible case by case. **That is the seam a challenge attaches to,** and it is worth noticing that the operative racial classification lived in an agency notice rather than in the Act.
+
+**Step two: four federal courts stopped it within a month.** Get the sequence right, because it is often told wrong.
+
+| Date, 2021 | Court | Case | What issued |
+| --- | --- | --- | --- |
+| 10 June | E.D. Wis. | *Faust v. Vilsack* | A **temporary restraining order**, later dissolved on 6 July |
+| 23 June | M.D. Fla. | *Wynn v. Vilsack* | The first **preliminary injunction**, and it was **nationwide** |
+| 1 July | N.D. Tex. | *Miller v. Vilsack* | Class certification **and** an injunction against using race |
+| 8 July | W.D. Tenn. | *Holman v. Vilsack* | A preliminary injunction |
+
+**Faust came first but was a TRO, not an injunction**, and the same court dissolved it on 6 July because it was "no longer needed to preserve the status quo". The first preliminary injunction, and the nationwide one, was **Wynn**, reported at 545 F. Supp. 3d 1271, where Judge Marcia Morales Howard enjoined the defendants from "issuing any payments, loan assistance, or debt relief pursuant to Section 1005(a)(2)" and wrote that the court "proceeds with great caution in determining that an injunction that will have nationwide effect is warranted" and that it "has never gone so far as to issue such an injunction" (*Wynn v. Vilsack*, 2021).
+
+***Miller* did something different and the difference matters.** Judge Reed C. O'Connor certified nationwide classes and enjoined USDA "from discriminating on account of race or ethnicity in administering section 1005", including any "criterion that is intended to serve as a proxy for race or ethnicity" (*Miller v. Vilsack*, 2021). **Wynn froze the money; Miller barred the criterion.** Those are two different remedies against the same statute.
+
+**Step three: it was never litigated to judgment. It was repealed.** Section 22008 of the Inflation Reduction Act of 2022 (P.L. 117-169) is one sentence: "Section 1005 of the American Rescue Plan Act of 2021 (7 U.S.C. 1921 note; Public Law 117-2) is repealed." No court ever ruled finally on the merits, and the Sixth Circuit later described a thirteen-month injunction. This course found no official document reporting any § 1005 debt relief actually disbursed.
+
+**Step four: the replacement, written without the class.** Section 22007 of the same Act rewrote a different ARPA provision, and the operative text now sits at ARPA § 1006(e):
+
+> "there is appropriated to the Secretary of Agriculture for fiscal year 2022 ... $2,200,000,000 for a program to provide financial assistance, including the cost of any financial assistance, to farmers, ranchers, or forest landowners determined to have experienced discrimination prior to January 1, 2021, in Department of Agriculture farm lending programs, under which the amount of financial assistance provided to a recipient may be not more than $500,000" (P.L. 117-169 § 22007)
+
+**Read who is eligible: anyone who experienced discrimination in USDA farm lending before 2021.** Not anyone of any particular race. The eligibility condition is an **experience**, not an identity. Search the provision and the words race, Black, minority and socially disadvantaged do not appear in the assistance criterion. Two nearby subsections of the same section do use the word racial, for an equity commission, and Hispanic, for Hispanic-serving institutions, so the honest formulation is that **the assistance provision is facially race neutral**, not that the section never mentions race.
+
+**What it did.** The Discrimination Financial Assistance Program took applications from **7 July 2023 to 17 January 2024**, and USDA announced decisions on **31 July 2024**: "over 43,000 individuals", in all fifty states, the District of Columbia, Puerto Rico, the U.S. Virgin Islands and American Samoa. Over 23,000 who had a farming or ranching operation received between $10,000 and $500,000, averaging nearly $82,000; over 20,000 who "planned to have a farming or ranching operation" but reported being unable to because they could not get a USDA loan received between $3,500 and $6,000, averaging $5,000 (USDA, 2024). USDA reported about $2 billion in awards against the $2.2 billion appropriated; the statute allows the cost of delivering the assistance to be paid from the same appropriation, and this course found no document itemising the difference, so it does not print one.
+
+**That second group of recipients is the whole course arriving at once.** Twenty thousand people who never farmed, because a loan was refused. Lesson 17's phrase "or attempted to farm" describes the same people. Section 1's credit-elsewhere test explains why the refusal was final.
+
+**And here is the shape to carry away.** WARRANT-01 showed a benefit created, a class excluded, a separate channel built, and that channel made conditional on a payment by the party that had excluded them. **This is the same shape at the remedy end:** a remedy that named the injured class was stopped, and the remedy that survived had to describe the injury instead of the class. Whether that is a loss or a discipline is a judgment. That it is the same move, a hundred and thirty years after the 1890 Act's "equitably divided" proviso, is a fact you can check in two statutes.
+
+:::reveal Which case issued the first nationwide preliminary injunction against ARPA section 1005, and when? ||| Wynn v. Vilsack in the Middle District of Florida, on 23 June 2021.
+
+:::reveal How did the Miller injunction differ from the Wynn injunction? ||| Wynn froze the payments; Miller certified classes and barred USDA from using race, ethnicity or any proxy for them in administering the section.
+
+:::reveal What is the eligibility condition under the replacement programme? ||| Having experienced discrimination in USDA farm lending before 1 January 2021, which is an experience rather than an identity.
+
+## Vocabulary
+- **Temporary restraining order**: a short emergency order preserving the status quo until the court can rule on a preliminary injunction, which is a different and lesser thing than the injunction itself.
+- **Nationwide injunction**: relief that binds the government as to everyone rather than only as to the plaintiff before the court, which the Wynn court granted while saying it had never done so before.
+- **Facially race neutral**: written so that no racial classification appears on the face of the provision, whatever the pattern of who is eligible in practice.
+- **Notice of Funds Availability**: the agency notice announcing how a programme will operate, which is where section 1005's list of qualifying racial and ethnic groups actually appeared.
+- **Repeal rather than judgment**: the end of a statute by later legislation before any court decides its validity, which leaves the legal question open.
+
+## Sources
+7 U.S.C. § 2279. (n.d.). *Outreach and assistance for socially disadvantaged farmers and ranchers and veteran farmers and ranchers*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title7-section2279&num=0&edition=prelim
+
+American Rescue Plan Act of 2021, Pub. L. No. 117-2, 135 Stat. 4. https://www.govinfo.gov/content/pkg/PLAW-117publ2/html/PLAW-117publ2.htm
+
+Farm Service Agency. (2021, May 26). Notice of funds availability; American Rescue Plan Act of 2021 section 1005 loan payment. *Federal Register, 86*, 28329. https://www.federalregister.gov/documents/2021/05/26/2021-11155/notice-of-funds-availability-american-rescue-plan-act-of-2021-section-1005-loan-payment-arpa
+
+*Holman v. Vilsack*, 117 F.4th 906 (6th Cir. 2024). https://www.opn.ca6.uscourts.gov/opinions.pdf/24a0223p-06.pdf
+
+Inflation Reduction Act of 2022, Pub. L. No. 117-169, 136 Stat. 1818. https://www.govinfo.gov/content/pkg/PLAW-117publ169/html/PLAW-117publ169.htm
+
+*Miller v. Vilsack*, No. 4:21-cv-00595-O (N.D. Tex. July 1, 2021) (order certifying classes and granting preliminary injunction). https://storage.courtlistener.com/recap/gov.uscourts.txnd.347284/gov.uscourts.txnd.347284.60.0.pdf
+
+U.S. Department of Agriculture. (2024, July 31). *Biden-Harris administration issues financial assistance to more than 43,000 farmers, ranchers, and forest landowners* [Press release]. Internet Archive. https://web.archive.org/web/20250113144152/https://www.usda.gov/about-usda/news/press-releases/2024/07/31/biden-harris-administration-issues-financial-assistance-more-43000-farmers-ranchers-and-forest
+
+*Wynn v. Vilsack*, 545 F. Supp. 3d 1271 (M.D. Fla. 2021). https://storage.courtlistener.com/recap/gov.uscourts.flmd.390177/gov.uscourts.flmd.390177.41.0.pdf`,
     },
   ],
 };
