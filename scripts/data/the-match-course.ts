@@ -1924,5 +1924,658 @@ Congressional Research Service. (2021, June 15). *1890 land-grant universities: 
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 4 — The match
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-state-shall-provide",
+      title: "13 · The state shall provide",
+      section: "Section 4 · The match",
+      body: `The match is the centre of this course, so read the sentence that creates it and pay attention to its subject.
+
+**7 U.S.C. § 3222d(c)**, headed "Matching formula":
+
+> "Notwithstanding any other provision of this subchapter, the State shall provide equal matching funds from non-Federal sources." (7 U.S.C. § 3222d, n.d.)
+
+**The State shall provide.** Not the institution. Not the Department of Agriculture. The obligation runs to the state government, and the same section defines an eligible institution as "a college eligible to receive funds under the Act of August 30, 1890 ..., including Tuskegee University", covering the extension and research formula funds distributed under §§ 3221 and 3222.
+
+**Now the sentence almost nobody quotes, at § 3222d(f)(1):**
+
+> "Federal funds that are not matched by a State in accordance with subsection (c) for a fiscal year shall be redistributed by the Secretary to eligible institutions whose States have satisfied the matching funds requirement for that fiscal year." (7 U.S.C. § 3222d, n.d.)
+
+**Trace who wins and who loses when a state does not pay.**
+
+| Party | What happens |
+| --- | --- |
+| The 1890 institution in the state that did not match | Loses the unmatched federal money |
+| The state that did not match | Pays nothing, and forfeits nothing of its own |
+| 1890 institutions in states that did match | Receive the redistributed money |
+| The federal Treasury | Spends the same total either way |
+
+**So the money does not go back to Washington. It goes sideways, to another state's historically Black land-grant university.** The design was presumably meant to give a state a reason to pay, since it can watch its money leave. What it does in practice is convert one state's decision into another state's windfall, and neither of them is the institution that was supposed to get it.
+
+**The sector's own association is emphatic about where the responsibility sits, and this course quotes it because it cuts against an easy reading.** APLU wrote in 2013 that "the one-to-one matching inequity that is being experienced by 1890 land-grant institutions is not in any way caused be [sic] the federal government or the U.S. Department of Agriculture. In fact, Congress established the matching requirement so that all land-grant institutions would receive one-to-one matching funds from their respective state" (Lee & Keys, 2013, p. 6).
+
+**Take that seriously rather than reading past it.** The organisation representing land-grant universities, writing a brief whose whole purpose is to complain about the shortfall, says the federal government did not cause it. **The withholding party is the state.** A course that blamed USDA here would be picking the wrong defendant, and its own strongest source would say so.
+
+**One more line from the same page, because it names the choice an institution actually faces:** where a state does not meet the obligation, the arrangement requires "these institutions to apply for a waiver of the one-to-one match requirement or forfeit their funding" (Lee & Keys, 2013, p. 6). Apply, or forfeit. Hold that. The next lesson is about the waiver.
+
+:::reveal Who does 7 U.S.C. § 3222d(c) say shall provide the equal matching funds? ||| The state. The obligation runs to the state government, not to the institution and not to the Department of Agriculture.
+
+:::reveal What happens to federal capacity funds a state does not match? ||| They are redistributed to eligible institutions whose states did satisfy the matching requirement, so the money moves to another state's 1890 institution.
+
+:::reveal What does APLU say about whether the federal government caused the matching shortfall? ||| That it is not in any way caused by the federal government or USDA, because Congress established the match so that all land-grant institutions would receive matching funds from their own state.
+
+## Vocabulary
+- **Matching formula**: the statutory rule at § 3222d(c) requiring the state to put up an equal amount from non-federal sources before the federal capacity dollar is paid.
+- **Redistribution**: the rule at § 3222d(f) that moves unmatched federal money to institutions in states that did match, so the loss lands on the institution rather than on the state.
+- **Eligible institution**: the statutory term for a college eligible under the 1890 Act, including Tuskegee University by name.
+- **Forfeit**: what an institution does with unmatched federal money if it neither obtains a waiver nor receives the state's contribution.
+
+## Sources
+7 U.S.C. § 3222d. (n.d.). *Matching funds requirement for research and extension activities at eligible institutions*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title7-section3222d&num=0&edition=prelim
+
+Lee, J. M., Jr., & Keys, S. W. (2013, September). *Land-grant but unequal: State one-to-one match funding for 1890 land-grant universities* (Policy Brief No. 3000-PB1). Association of Public and Land-grant Universities. https://www.aplu.org/wp-content/uploads/land-grant-but-unequal-state-one-to-one-match-funding-for-1890-land-grant-universities.pdf`,
+    },
+    {
+      slug: "the-waiver-only-one-side-gets",
+      title: "14 · The waiver only one side gets",
+      section: "Section 4 · The match",
+      body: `Two sentences in the CRS In Focus do more work than every dollar estimate in this course put together, because they need no model, no assumption and no inference.
+
+> "Current law permits USDA to waive up to 50% of the matching requirements for 1890 Institutions if the state is unlikely to provide sufficient funds. **The law does not permit waivers for most 1862 Institutions.** Currently, all states meet the matching requirements for their 1862 Institutions. In contrast, **in FY2020, nine 1890 Institutions received matching fund waivers** for either research or extension capacity grants or both grant types." (Congressional Research Service [CRS], 2021, p. 2)
+
+**An asymmetry written into statute, and observed in practice, in a congressional document.** That is the strongest fact in this whole subject, and it is stronger than any headline dollar figure, because a dollar figure can be argued with and a statutory permission cannot.
+
+**Here is the waiver itself, at 7 U.S.C. § 3222d(d):**
+
+> "Notwithstanding subsection (f), the Secretary may waive the matching funds requirement under subsection (c) above the 50 percent level for any fiscal year for an eligible institution of a State if the Secretary determines that the State will be unlikely to satisfy the matching requirement." (7 U.S.C. § 3222d, n.d.)
+
+**Read the drafting precisely, because CRS's plain-English version compresses it.** The Secretary may waive the requirement *above the 50 per cent level*. So the state must always put up at least half, and only the top half is waivable. CRS's "up to 50%" and the statute's "above the 50 percent level" describe the same rule from opposite ends, and APLU says the same thing a third way: USDA "still requires 1890 land-grant institutions to come up with at least 50 percent of the match" (Lee & Keys, 2013, p. 6).
+
+**Now the word "most", because it is doing real work.** The 1862 side has a matching rule too, at 7 U.S.C. § 361c(d), and it has teeth: if a state fails to match, "the Secretary of Agriculture shall withhold from payment to the State" the difference, and shall reapportion the withheld amount "among the States satisfying the matching requirement for that fiscal year" (7 U.S.C. § 361c, n.d.). Same machinery as the 1890 side.
+
+**But there is exactly one waiver on the 1862 side, and it does not reach any state.** Section 361c(d)(4) sets a 50 per cent requirement instead of one-to-one for "the insular areas of the Commonwealth of Puerto Rico, Guam, and the Virgin Islands of the United States and the District of Columbia", and lets the Secretary waive even that "if the Secretary determines that the government of the insular area or the District of Columbia will be unlikely to meet the matching requirement for the fiscal year" (7 U.S.C. § 361c, n.d.).
+
+**So "most 1862 Institutions" carries four jurisdictions, none of them a state.** Put the two side by side:
+
+| | 1862 institutions | 1890 institutions |
+| --- | --- | --- |
+| Match required | One-to-one | One-to-one |
+| Waiver available | Only for three insular areas and D.C. | For any eligible institution, above the 50% level |
+| Unmatched money | Withheld and reapportioned | Redistributed to institutions in matching states |
+| Observed, per CRS | All states meet it | Nine institutions took waivers in FY2020 |
+
+**And CRS says out loud what the waiver does.** "Although waivers for matching funds allow for federal funding of 1890 Institutions without complete state funding support, they open funding disparities between 1890 and 1862 Institutions" (CRS, 2021, p. 2). A waiver is a mercy and a permission at the same time. It keeps money reaching an institution whose state will not pay, and it removes the consequence that would otherwise fall on the state.
+
+**Since 2018, the waivers have names attached.** Section 7116 of the 2018 farm bill (7 U.S.C. § 2207d) requires USDA to report annually on capacity funding allocations and non-federal matching by institution and by programme, and CRS notes that "these reports publicly identify institutions that received waivers for particular capacity grant programs" (CRS, 2021, p. 2). CRS also notes the limit of that transparency: the reports "do not distinguish between state appropriations and funds provided by other nonfederal sources", so a match met by the university itself reads the same as one met by the legislature.
+
+:::reveal What does the law permit for 1890 institutions that it does not permit for most 1862 institutions? ||| A waiver of the matching requirement, which USDA may grant above the 50 per cent level when a state is unlikely to provide sufficient funds.
+
+:::reveal Which 1862 jurisdictions can receive a matching waiver? ||| Puerto Rico, Guam, the U.S. Virgin Islands and the District of Columbia, which is what the word most in the CRS sentence carries.
+
+:::reveal What does CRS say waivers do to the gap between the two systems? ||| They allow federal funding to reach 1890 institutions without complete state support, and in doing so they open funding disparities between the 1890 and 1862 institutions.
+
+## Vocabulary
+- **Waiver**: an agency's release of a statutory requirement, here limited to the portion of the 1890 match above fifty per cent and conditioned on a finding about the state.
+- **Above the 50 percent level**: the statute's own boundary on the waiver, meaning the state must always provide at least half of the required match.
+- **Withhold and reapportion**: the 1862 consequence for a state that does not match, which moves money to states that did.
+- **Transparency requirement**: the 2018 farm bill provision requiring USDA to publish allocations and matching by institution and programme, which is what makes waivers publicly nameable.
+
+## Sources
+7 U.S.C. § 361c. (n.d.). *Authorization of appropriations and allotments of grants*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title7-section361c&num=0&edition=prelim
+
+7 U.S.C. § 3222d. (n.d.). *Matching funds requirement for research and extension activities at eligible institutions*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title7-section3222d&num=0&edition=prelim
+
+Congressional Research Service. (2021, June 15). *1890 land-grant universities: Background and selected issues* (In Focus No. IF11847, Version 10). https://www.congress.gov/crs-product/IF11847
+
+Lee, J. M., Jr., & Keys, S. W. (2013, September). *Land-grant but unequal: State one-to-one match funding for 1890 land-grant universities* (Policy Brief No. 3000-PB1). Association of Public and Land-grant Universities. https://www.aplu.org/wp-content/uploads/land-grant-but-unequal-state-one-to-one-match-funding-for-1890-land-grant-universities.pdf`,
+    },
+    {
+      slug: "counting-it-in-2013",
+      title: "15 · Counting it in 2013",
+      section: "Section 4 · The match",
+      body: `Before the federal letters of 2023, the land-grant universities' own association counted the shortfall itself. Its brief is short, its figures are exact, and its arithmetic is worth checking.
+
+**Lee, J. M., Jr., & Keys, S. W. (2013, September).** *Land-grant but unequal: State one-to-one match funding for 1890 land-grant universities.* APLU Policy Brief 3000-PB1.
+
+**The findings, in the brief's own numbers, for 2010 to 2012** (Lee & Keys, 2013, pp. 1, 8):
+
+| Measure | Figure |
+| --- | --- |
+| 1890 institutions not receiving 100% of the match | 61.2%, which the brief states as 11 out of 18 |
+| Extension funding not received | $31,828,918 |
+| Research funding not received | $24,798,282 |
+| Combined, as the brief prints it | $56,627,199 |
+
+**Eighteen, not nineteen, because the brief predates Central State University's 2014 designation.** That is a good reminder that a count has a date on it.
+
+**Now add the two component figures yourself.** $31,828,918 plus $24,798,282 is **$56,627,200**. The brief prints $56,627,199, one dollar lower. That is a rounding artifact rather than a scandal, and it is worth a minute of your time for exactly one reason: **it proves the habit works.** The published total and the published components are both in front of you, they can be reconciled with a calculator, and you now know something about the document that no summary of it will ever tell you.
+
+**The brief also disagrees with itself in a smaller way.** Its highlights box says "61 percent" and its body says "61.2 percent (11 out of 18)" (Lee & Keys, 2013, pp. 1, 8). Quote one, say which, and do not blend them into "about 61 per cent of the roughly 18".
+
+**Two cautions the brief states about its own numbers**, and they are the reason to trust it more rather than less. First, "in some cases though institutions may not have received a waiver, the match comes from general funds instead of a specific line-item", so the absence of a waiver does not prove a legislature appropriated the match. Second, the brief says it "is also not clear if the remaining eight states where 1890 institutions have not applied for a waiver are also losing millions of dollars", because many do not have a specific line item to check (Lee & Keys, 2013, p. 8). **A source that tells you what it cannot see is a better source, not a weaker one.**
+
+**Now the contrast this course exists to draw, and the other course you should read next.** The Schoolhouse Network teaches a matching grant too: the Rosenwald Fund offered money that only existed once other money appeared first, from four named columns, one of which was the local Black community in cash, land, materials and labour. **That was private philanthropy setting a condition on itself and on a community that had no obligation to anybody.** The match in this course is the mirror image. It is public money a state is obliged by federal statute to provide, and the shortfall is not a community failing to raise its share. It is a legislature declining to pay one.
+
+**Read the two together and you have the whole shape of the period:** communities taxed for schools they could not attend, raising a private match anyway, in states that were not paying a public one they had agreed to.
+
+:::reveal What share of 1890 institutions did APLU find were not receiving the full match from 2010 to 2012? ||| 61.2 per cent, which the brief states as 11 out of 18, and its highlights box rounds to 61 per cent.
+
+:::reveal What do the brief's two component shortfall figures add up to, and what does it print? ||| They add to $56,627,200 and the brief prints $56,627,199, a one-dollar rounding artifact you can find with a calculator.
+
+:::reveal How does the Rosenwald match differ from the 1890 match? ||| Rosenwald was private philanthropy conditioning its own money on contributions a community had no obligation to make; the 1890 match is public money a state was obliged by statute to provide.
+
+## Vocabulary
+- **Policy brief**: a short advocacy document by an interested organisation, which can carry exact figures and still need checking, as this one does.
+- **Line item**: a specifically identified appropriation in a state budget, whose absence is what made APLU unable to see whether some states were short.
+- **Component and total**: the published parts of a figure and the published sum, which should reconcile and here differ by a dollar.
+- **Challenge grant**: the private matching model The Schoolhouse Network teaches, where a donor's money exists only once other named contributions appear.
+
+## Sources
+Lee, J. M., Jr., & Keys, S. W. (2013, September). *Land-grant but unequal: State one-to-one match funding for 1890 land-grant universities* (Policy Brief No. 3000-PB1). Association of Public and Land-grant Universities. https://www.aplu.org/wp-content/uploads/land-grant-but-unequal-state-one-to-one-match-funding-for-1890-land-grant-universities.pdf`,
+    },
+    {
+      slug: "quiz-the-match",
+      title: "16 · Knowledge check: the match",
+      section: "Section 4 · The match",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "Who does 7 U.S.C. § 3222d(c) say shall provide the equal matching funds?",
+            options: ["The state", "The eligible institution, out of its own tuition and endowment income", "The Secretary of Agriculture, from unobligated balances in the capacity accounts", "Any non-federal donor the institution can persuade to contribute"],
+            correctIndex: 0,
+            explanation: "The subject of the sentence is the State, which is why the withholding party in this story is a legislature.",
+            sourceLessonSlug: "the-state-shall-provide",
+          },
+          {
+            prompt: "From what kind of sources must the match come?",
+            options: ["Non-federal", "Federal, from a second agency other than the Department of Agriculture", "State general revenue only, excluding institutional funds", "Private philanthropy, excluding any government appropriation"],
+            correctIndex: 0,
+            explanation: "Equal matching funds from non-federal sources, which can include the university itself or another non-federal entity.",
+            sourceLessonSlug: "the-state-shall-provide",
+          },
+          {
+            prompt: "What does § 3222d(f) do with federal funds a state fails to match?",
+            options: ["Redistributes them", "Returns them to the Treasury as unobligated balances", "Holds them for the institution until the state appropriates the match", "Converts them into competitive grant authority for the same institution"],
+            correctIndex: 0,
+            explanation: "The Secretary redistributes them to eligible institutions whose states did satisfy the matching requirement that year.",
+            sourceLessonSlug: "the-state-shall-provide",
+          },
+          {
+            prompt: "Where does unmatched 1890 capacity money end up?",
+            options: ["At another state's 1890 institution", "Back in the federal Treasury as a lapsed appropriation", "In an escrow account carried forward to the following fiscal year", "At the 1862 institution in the same state"],
+            correctIndex: 0,
+            explanation: "The money goes sideways, to eligible institutions in states that met the requirement.",
+            sourceLessonSlug: "the-state-shall-provide",
+          },
+          {
+            prompt: "In the redistribution mechanism, which party forfeits nothing of its own?",
+            options: ["The state that did not match", "The institution whose state did not match", "The institution that receives the redistributed money", "The federal Treasury, which spends more as a result"],
+            correctIndex: 0,
+            explanation: "The institution loses the money, another institution gains it, and the state pays nothing either way.",
+            sourceLessonSlug: "the-state-shall-provide",
+          },
+          {
+            prompt: "How does the federal Treasury's total outlay change when a state fails to match?",
+            options: ["It does not", "It falls by the amount the state withheld", "It rises, since the shortfall is made up federally", "It depends on whether the institution obtained a waiver"],
+            correctIndex: 0,
+            explanation: "The same total is spent either way; only the destination changes.",
+            sourceLessonSlug: "the-state-shall-provide",
+          },
+          {
+            prompt: "What does APLU say about the federal government's responsibility for the matching shortfall?",
+            options: ["It did not cause it", "That USDA's waiver policy is the direct cause of state underfunding", "That Congress set the match too high for most states to meet", "That the Department of Education rather than USDA bears responsibility"],
+            correctIndex: 0,
+            explanation: "The association writes that the inequity is not in any way caused by the federal government or USDA.",
+            sourceLessonSlug: "the-state-shall-provide",
+          },
+          {
+            prompt: "Why does this course quote APLU on that point specifically?",
+            options: ["It cuts against an easy reading", "Because APLU is the only source with access to the underlying data", "Because CRS declines to say who is responsible", "Because the letters of 2023 make the same argument"],
+            correctIndex: 0,
+            explanation: "The organisation complaining about the shortfall says the federal government did not cause it, and blaming USDA would pick the wrong defendant.",
+            sourceLessonSlug: "the-state-shall-provide",
+          },
+          {
+            prompt: "According to APLU, what choice does an institution face when its state does not meet the obligation?",
+            options: ["Apply for a waiver or forfeit", "Sue the state or accept the reduced allocation", "Raise the match from tuition or close the programme", "Appeal to Congress or wait for the next farm bill"],
+            correctIndex: 0,
+            explanation: "Apply for a waiver of the one-to-one match requirement, or forfeit the funding.",
+            sourceLessonSlug: "the-state-shall-provide",
+          },
+          {
+            prompt: "Which two capacity grants does the § 3222d matching requirement cover?",
+            options: ["The formula funds under §§ 3221 and 3222", "The Hatch Act and Smith-Lever allotments", "The facilities grant and the scholarships programme", "The Centers of Excellence and the capacity building grants"],
+            correctIndex: 0,
+            explanation: "The section defines formula funds as the allocations distributed under sections 3221 and 3222, meaning extension and Evans-Allen.",
+            sourceLessonSlug: "the-state-shall-provide",
+          },
+          {
+            prompt: "How does § 3222d define an eligible institution?",
+            options: ["A college eligible under the 1890 Act, including Tuskegee", "Any historically Black college or university offering an agriculture degree", "Any land-grant institution receiving formula funds of any kind", "An institution designated as such by its own state legislature"],
+            correctIndex: 0,
+            explanation: "The definition names Tuskegee expressly, for the reason Section 2 gave.",
+            sourceLessonSlug: "the-state-shall-provide",
+          },
+          {
+            prompt: "Which two CRS sentences does this course call the strongest fact in the subject?",
+            options: ["The waiver asymmetry and the FY2020 count", "The 82 per cent share and the blank 1994 cell", "The Hatch date and the Smith-Lever date", "The enrollment totals and the capacity funding totals"],
+            correctIndex: 0,
+            explanation: "A statutory permission one side has and the other lacks, plus what actually happened in one named year.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "How many 1890 institutions received matching fund waivers in FY2020?",
+            options: ["Nine", "Nineteen, meaning every institution in the group", "Eleven, matching the count in the 2013 policy brief", "Sixteen, matching the number of governors who received letters in 2023"],
+            correctIndex: 0,
+            explanation: "Nine received waivers for research or extension capacity grants or both, in the year CRS reports.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "What does CRS say about states meeting the match for their 1862 institutions?",
+            options: ["All of them do", "About two thirds of them do", "Only the states without an 1890 institution do", "The reports do not permit an answer"],
+            correctIndex: 0,
+            explanation: "Currently all states meet the matching requirements for their 1862 institutions, which is the other half of the contrast.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "At what level does § 3222d(d) permit the Secretary to waive the match?",
+            options: ["Above the 50 percent level", "In full, at the Secretary's discretion", "Up to 75 per cent for institutions in states with no line item", "Only where the state has appropriated nothing at all"],
+            correctIndex: 0,
+            explanation: "The state must always provide at least half, and only the portion above that is waivable.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "What finding must the Secretary make before granting the waiver?",
+            options: ["That the state is unlikely to satisfy the requirement", "That the institution has exhausted its own non-federal sources", "That the shortfall would force the institution to close a programme", "That the state has failed to match in each of the three preceding years"],
+            correctIndex: 0,
+            explanation: "The determination is about the state's likely behaviour, not about the institution's need.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "How do CRS's up to 50 per cent and the statute's above the 50 percent level relate?",
+            options: ["They describe the same rule", "They contradict each other, and CRS is in error", "They apply to research and extension respectively", "They applied before and after the 2008 farm bill respectively"],
+            correctIndex: 0,
+            explanation: "One states what may be waived and the other states what must remain, and APLU says the same thing a third way.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "What does the 1862 matching rule at § 361c(d) require the Secretary to do when a state fails to match?",
+            options: ["Withhold the difference", "Grant a waiver on the institution's application", "Pay the full allotment and recover it the following year", "Refer the state to the Comptroller General for audit"],
+            correctIndex: 0,
+            explanation: "Withhold from payment to the state an amount equal to the difference, then reapportion it.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "What does § 361c(d) do with amounts withheld from a non-matching state?",
+            options: ["Reapportions them among matching states", "Returns them to the Treasury at the end of the fiscal year", "Holds them for that state's experiment station for two years", "Transfers them to the 1890 capacity accounts"],
+            correctIndex: 0,
+            explanation: "The same withhold-and-move machinery exists on both sides; the difference is the waiver.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "Which jurisdictions does the only 1862 matching waiver reach?",
+            options: ["Three insular areas and D.C.", "Every state whose legislature meets biennially rather than annually", "The eighteen states holding an 1890 institution", "Any state whose 1862 institution enrolls fewer than ten thousand students"],
+            correctIndex: 0,
+            explanation: "Puerto Rico, Guam, the U.S. Virgin Islands and the District of Columbia, which is what the word most carries.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "What matching level does § 361c(d)(4) set for those insular areas and D.C.?",
+            options: ["50 per cent", "One-to-one, the same as every other 1862 recipient", "Twenty per cent, matching the 1890 extension floor", "None; they are exempt from matching entirely"],
+            correctIndex: 0,
+            explanation: "Fifty per cent of the formula funds distributed to each of them, and the Secretary may waive even that.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "Beginning with which fiscal year does that insular-area matching provision apply?",
+            options: ["2003", "1998, when the 1890 matching section was added", "2008, when the appropriation floors were raised", "2018, when the reporting requirement was enacted"],
+            correctIndex: 0,
+            explanation: "The statute makes it effective beginning for fiscal year 2003.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "What does CRS say waivers do, besides letting federal money reach the institution?",
+            options: ["Open funding disparities", "Trigger an automatic review of the state's appropriation", "Reduce the institution's allocation in the following year", "Transfer the matching obligation to the university itself"],
+            correctIndex: 0,
+            explanation: "They allow federal funding without complete state support, and in doing so open disparities between the 1890 and 1862 institutions.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "How does this course describe what a waiver is at the same time as being a mercy?",
+            options: ["A permission", "An audit finding against the state", "A loan repayable from future appropriations", "A penalty on the receiving institution"],
+            correctIndex: 0,
+            explanation: "It keeps money flowing to the institution and removes the consequence that would otherwise fall on the state.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "Which farm bill section created the annual reporting requirement on capacity funding and matching?",
+            options: ["Section 7116 of the 2018 farm bill", "Section 7129 of the 2014 farm bill, which designated Central State University", "Section 1449 of NARETPA, which created the matching requirement", "Section 7402 of the 2008 farm bill, which raised the appropriation floors"],
+            correctIndex: 0,
+            explanation: "Codified at 7 U.S.C. § 2207d, it requires reporting by institution and by grant programme.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "What do those annual reports publicly identify?",
+            options: ["Institutions that received waivers", "The names of legislators who voted against the state match", "The specific research projects each capacity grant funded", "The amount each state would owe under a per-student calculation"],
+            correctIndex: 0,
+            explanation: "The reports identify institutions that received waivers for particular capacity grant programmes.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "What limit does CRS note on the transparency those reports provide?",
+            options: ["They do not separate state from other non-federal money", "They are published only every five years, with the farm bill", "They omit the 1890 institutions in states that granted no waiver", "They report totals without breaking figures out by institution"],
+            correctIndex: 0,
+            explanation: "A match met by the university itself reads the same in the report as one appropriated by the legislature.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "Why does this course say a statutory permission is stronger evidence than a dollar estimate?",
+            options: ["It cannot be argued with", "Because dollar estimates are usually calculated incorrectly", "Because statutes are more recent than the estimates built on them", "Because Congress publishes statutes and agencies publish estimates"],
+            correctIndex: 0,
+            explanation: "An estimate rests on a model somebody can dispute; a permission written into law rests on nothing but the text.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "Who wrote the 2013 APLU policy brief on state matching?",
+            options: ["Lee and Keys", "Cardona and Vilsack, the two federal secretaries", "Croft and Bickell, the CRS analysts", "Lee and Ahtone, the land-grab universities reporters"],
+            correctIndex: 0,
+            explanation: "John Michael Lee, Jr. and Samaad Wes Keys, published as APLU Policy Brief 3000-PB1 in September 2013.",
+            sourceLessonSlug: "counting-it-in-2013",
+          },
+          {
+            prompt: "What period does the APLU brief's shortfall analysis cover?",
+            options: ["2010 to 2012", "1987 to 2020, the range used in the 2023 federal letters", "1977 to 2008, between the two settings of the appropriation floors", "2003 to 2013, the decade before publication"],
+            correctIndex: 0,
+            explanation: "Three years, which is a much shorter window than the thirty-three-year range the 2023 letters use.",
+            sourceLessonSlug: "counting-it-in-2013",
+          },
+          {
+            prompt: "What extension shortfall does the APLU brief report?",
+            options: ["$31,828,918", "$24,798,282, which is the research figure", "$56,627,199, which is the combined figure", "$13,055,622,416, the sum of the 2023 letter figures"],
+            correctIndex: 0,
+            explanation: "Extension is the larger of the two components in the brief.",
+            sourceLessonSlug: "counting-it-in-2013",
+          },
+          {
+            prompt: "What research shortfall does the APLU brief report?",
+            options: ["$24,798,282", "$31,828,918, which is the extension figure", "$56,627,200, the sum of the two components", "$172,135,168, the smallest figure in the 2023 letters"],
+            correctIndex: 0,
+            explanation: "Research is the smaller component, and the two together are what the brief's combined figure sums.",
+            sourceLessonSlug: "counting-it-in-2013",
+          },
+          {
+            prompt: "What combined shortfall does the brief print?",
+            options: ["$56,627,199", "$56,627,200, which is what its own components add to", "$31,828,918, which is the extension component", "$24,798,282, which is the research component"],
+            correctIndex: 0,
+            explanation: "The printed total is one dollar below what its two published components sum to.",
+            sourceLessonSlug: "counting-it-in-2013",
+          },
+          {
+            prompt: "What do the brief's two component figures actually add up to?",
+            options: ["$56,627,200", "$56,627,199, exactly as the brief prints it", "$57,000,000, the round figure the highlights box uses", "$56,626,199, a thousand dollars lower than the printed total"],
+            correctIndex: 0,
+            explanation: "One dollar above the printed total, which is a rounding artifact and a demonstration that the habit works.",
+            sourceLessonSlug: "counting-it-in-2013",
+          },
+          {
+            prompt: "Why does this course spend a paragraph on a one-dollar discrepancy?",
+            options: ["It proves the habit works", "Because it casts doubt on every other figure in the brief", "Because federal grant accounting requires exact reconciliation", "Because the brief has been corrected in a later edition"],
+            correctIndex: 0,
+            explanation: "The total and the components are both on the page, they reconcile with a calculator, and no summary would ever tell you.",
+            sourceLessonSlug: "counting-it-in-2013",
+          },
+          {
+            prompt: "What share of 1890 institutions did the brief find were not receiving the full match?",
+            options: ["61.2 per cent", "50 per cent, matching the statutory waiver level", "82 per cent, matching the 1862 share of capacity funding", "100 per cent, since every institution applied for a waiver"],
+            correctIndex: 0,
+            explanation: "11 out of 18 in the brief's body, which its highlights box rounds to 61 per cent.",
+            sourceLessonSlug: "counting-it-in-2013",
+          },
+          {
+            prompt: "How many institutions does the 2013 brief count in total, and why?",
+            options: ["18, before Central State was designated", "19, the count CRS reports for 2021", "16, matching the letters sent in 2023", "17, excluding Tuskegee as a private institution"],
+            correctIndex: 0,
+            explanation: "The brief predates the 2014 farm bill, which is why a count needs its date attached.",
+            sourceLessonSlug: "counting-it-in-2013",
+          },
+          {
+            prompt: "What does the brief say about a match met from general funds rather than a line item?",
+            options: ["The absence of a waiver proves nothing", "That such a match does not satisfy the statutory requirement", "That USDA counts it at half its nominal value", "That it is the most common way states meet the obligation"],
+            correctIndex: 0,
+            explanation: "An institution may not have received a waiver and still not have had a specific appropriation, which is what the brief cannot see.",
+            sourceLessonSlug: "counting-it-in-2013",
+          },
+          {
+            prompt: "What does APLU say it cannot tell about the remaining eight states?",
+            options: ["Whether they are also short", "Whether their institutions applied for waivers at all", "Whether their appropriations were made in the correct fiscal year", "Whether their 1862 institutions were also underfunded"],
+            correctIndex: 0,
+            explanation: "Many do not have a specific line item, so the brief cannot see whether those states are also losing millions.",
+            sourceLessonSlug: "counting-it-in-2013",
+          },
+          {
+            prompt: "How does this course treat a source that states what it cannot see?",
+            options: ["As stronger for saying so", "As too incomplete to cite in a course of this kind", "As requiring corroboration from a second advocacy organisation", "As evidence that the underlying data is unavailable to anyone"],
+            correctIndex: 0,
+            explanation: "A source that tells you what it cannot see is a better source, not a weaker one.",
+            sourceLessonSlug: "counting-it-in-2013",
+          },
+          {
+            prompt: "Which shipped course is the contrast pair for the matching idea?",
+            options: ["The Schoolhouse Network", "Tribal Nations and Governance, which teaches the trust responsibility", "The Name on the Door, which teaches architectural credit", "Cooperatives, which teaches the Rural Electrification Act"],
+            correctIndex: 0,
+            explanation: "Rosenwald's challenge grant is the private mirror of the public match this course teaches.",
+            sourceLessonSlug: "counting-it-in-2013",
+          },
+          {
+            prompt: "What kind of money was the Rosenwald match?",
+            options: ["Private philanthropy", "A federal capacity grant distributed by formula", "A state appropriation required by statute", "A county tax levy earmarked for school construction"],
+            correctIndex: 0,
+            explanation: "A private fund conditioning its own money on contributions from named sources, including the local Black community.",
+            sourceLessonSlug: "counting-it-in-2013",
+          },
+          {
+            prompt: "What is the essential difference between the Rosenwald match and the 1890 match?",
+            options: ["Obligation", "The size of the sums involved in each case", "The decade in which each arrangement operated", "Whether the recipient was a school or a university"],
+            correctIndex: 0,
+            explanation: "One is a community raising a share it had no duty to raise; the other is a legislature declining to pay one it had agreed to.",
+            sourceLessonSlug: "counting-it-in-2013",
+          },
+          {
+            prompt: "What does this course say reading the two matching stories together gives you?",
+            options: ["The shape of the period", "A method for estimating the total value of withheld funds", "A reason to treat philanthropic and public funding as equivalent", "Grounds for concluding that private matching worked better"],
+            correctIndex: 0,
+            explanation: "Communities taxed for schools they could not attend, raising a private match anyway, in states not paying a public one.",
+            sourceLessonSlug: "counting-it-in-2013",
+          },
+          {
+            prompt: "In the redistribution mechanism, what did the design presumably intend?",
+            options: ["To give a state a reason to pay", "To reduce total federal spending on the programme", "To concentrate capacity funding in the strongest institutions", "To let the Secretary choose which institutions to favour"],
+            correctIndex: 0,
+            explanation: "A state can watch its money leave, though in practice this converts one state's decision into another state's windfall.",
+            sourceLessonSlug: "the-state-shall-provide",
+          },
+          {
+            prompt: "Which section of the U.S. Code carries the 1890 matching requirement?",
+            options: ["7 U.S.C. § 3222d", "7 U.S.C. § 361c, which carries the Hatch Act allotment rules", "7 U.S.C. § 323, the separate-but-equal proviso", "7 U.S.C. § 2207d, the annual reporting requirement"],
+            correctIndex: 0,
+            explanation: "Section 3222d, added by Public Law 105-185 in 1998, carries the matching formula, the waiver and the redistribution rule.",
+            sourceLessonSlug: "the-state-shall-provide",
+          },
+          {
+            prompt: "Which section of the U.S. Code carries the 1862 matching and withholding rules?",
+            options: ["7 U.S.C. § 361c", "7 U.S.C. § 3222d, which carries the 1890 matching requirement", "7 U.S.C. § 3221, the 1890 extension capacity grant", "7 U.S.C. § 304, the investment provision of the 1862 Act"],
+            correctIndex: 0,
+            explanation: "Section 361c carries the allotments, the matching requirement, the withholding rule and the single insular-area waiver.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "What is the same on both sides of the match comparison?",
+            options: ["A one-to-one requirement", "The availability of a waiver to any institution", "The number of institutions in each group", "The share of capacity funding each group receives"],
+            correctIndex: 0,
+            explanation: "Both systems require a dollar for a dollar; the difference is what happens when a state does not pay it.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "What is different on the two sides of the match comparison?",
+            options: ["Who may be excused", "The proportion of the match that must be non-federal", "The agency that administers the capacity grants", "The requirement that the institution file a plan of work"],
+            correctIndex: 0,
+            explanation: "A waiver exists for any 1890 institution and for only four 1862 jurisdictions, none of them a state.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "What is the correct name for what an institution does when it neither obtains a waiver nor receives the state's match?",
+            options: ["Forfeit", "Appeal", "Defer", "Reallocate"],
+            correctIndex: 0,
+            explanation: "APLU's own phrasing is apply for a waiver of the one-to-one match requirement or forfeit their funding.",
+            sourceLessonSlug: "the-state-shall-provide",
+          },
+          {
+            prompt: "How should the APLU brief's two different percentage figures be handled?",
+            options: ["Quote one and say which", "Average them and report the midpoint", "Prefer the highlights box, which is the summary of record", "Report neither, since the brief contradicts itself"],
+            correctIndex: 0,
+            explanation: "The body says 61.2 per cent as 11 out of 18 and the highlights box rounds to 61, so blending them invents a third figure.",
+            sourceLessonSlug: "counting-it-in-2013",
+          },
+          {
+            prompt: "Which of the four Rosenwald budget columns does this course name as the community's own share?",
+            options: ["Cash, land, materials and labour", "The county tax levy raised for the purpose", "The Fund's capped grant per new schoolhouse", "The contribution required of local white residents"],
+            correctIndex: 0,
+            explanation: "The community's contribution was made in cash, land, materials and labour valued in dollars.",
+            sourceLessonSlug: "counting-it-in-2013",
+          },
+          {
+            prompt: "What section number of NARETPA is the 1890 matching requirement?",
+            options: ["§ 1449", "§ 1444, which authorizes the extension capacity grant", "§ 1445, the Evans-Allen research capacity grant", "§ 1447, the 1890 Facilities Grant Program"],
+            correctIndex: 0,
+            explanation: "Section 1449, added to NARETPA by Public Law 105-185 in 1998 and codified at 7 U.S.C. § 3222d.",
+            sourceLessonSlug: "the-state-shall-provide",
+          },
+          {
+            prompt: "What may an eligible institution use the matching funds for, under § 3222d(e)?",
+            options: ["Research, extension and education activities", "Only the specific projects named in its plan of work", "Facilities and equipment, but not personnel costs", "Any purpose the state legislature designates"],
+            correctIndex: 0,
+            explanation: "Under terms the Secretary establishes, for agricultural research, extension and education activities.",
+            sourceLessonSlug: "the-state-shall-provide",
+          },
+          {
+            prompt: "What does the word notwithstanding do at the start of § 3222d(d)?",
+            options: ["Overrides the redistribution rule", "Limits the waiver to fiscal years after 2003", "Requires the Secretary to consult the state legislature first", "Restricts the waiver to research rather than extension grants"],
+            correctIndex: 0,
+            explanation: "The waiver operates notwithstanding subsection (f), which is the provision that would otherwise redistribute the money.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "Which is the correct order of what happens to an unmatched federal capacity dollar in the 1890 system?",
+            options: ["Waiver considered, then redistribution", "Redistribution first, then a waiver application", "Withholding from the state, then reapportionment", "Return to the Treasury, then reappropriation by Congress"],
+            correctIndex: 0,
+            explanation: "The waiver operates notwithstanding the redistribution rule, so it is the step that can prevent the money moving.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "Why can a course not read a state's appropriation directly out of the annual USDA report?",
+            options: ["It does not separate the sources", "Because the report is exempt from public disclosure", "Because it aggregates all nineteen institutions into one figure", "Because it covers only the years since 2018"],
+            correctIndex: 0,
+            explanation: "CRS notes the reports do not distinguish between state appropriations and funds provided by other non-federal sources.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "What did the 2013 brief's Figure 2 map?",
+            options: ["Matching status by state", "The location of every 1890 institution's experiment station", "The rural population share used in the extension formula", "State appropriations per student at each institution"],
+            correctIndex: 0,
+            explanation: "It maps whether each state provided the full one-to-one match, including the case of a state matching for only one of its 1890 institutions.",
+            sourceLessonSlug: "counting-it-in-2013",
+          },
+          {
+            prompt: "What does APLU say USDA still requires of the 1890 institutions?",
+            options: ["At least 50 per cent of the match", "A plan of work approved before any waiver is granted", "Repayment of previously waived amounts once a state resumes matching", "An annual audit of all non-federal contributions"],
+            correctIndex: 0,
+            explanation: "Which is the same rule the statute states as a waiver available only above the 50 per cent level.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "In one sentence, what is the asymmetry this section teaches?",
+            options: ["Only one side may be short", "Only one side receives federal capacity funding", "Only one side is required to provide a match", "Only one side is subject to an annual reporting requirement"],
+            correctIndex: 0,
+            explanation: "The same statute, the same one-to-one match, two classes of institution, and a waiver available to only one of them.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "What was added to the U.S. Code in 1998 that this section turns on?",
+            options: ["The 1890 matching section", "The Smith-Lever extension appropriation", "The transparency reporting requirement", "The designation of Central State University"],
+            correctIndex: 0,
+            explanation: "Section 1449 of NARETPA, added by Public Law 105-185 on 23 June 1998, carries the formula, the waiver and the redistribution rule.",
+            sourceLessonSlug: "the-state-shall-provide",
+          },
+          {
+            prompt: "Which document would tell a learner which institutions took a waiver in a given year?",
+            options: ["The annual USDA capacity and matching report", "The Congressional Research Service In Focus on the 1890 institutions", "The APLU policy brief on state one-to-one matching", "The letters the federal secretaries sent to governors in 2023"],
+            correctIndex: 0,
+            explanation: "The report required by section 7116 of the 2018 farm bill publicly identifies institutions receiving waivers by programme.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "How many jurisdictions does the phrase most 1862 Institutions leave out?",
+            options: ["Four", "Nineteen, one for each 1890 institution", "Sixteen, matching the 2023 letters", "None; the phrase is a hedge with no content"],
+            correctIndex: 0,
+            explanation: "Puerto Rico, Guam, the U.S. Virgin Islands and the District of Columbia, which is why the sentence says most rather than all.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "What kind of evidence is a count of waivers granted in a named fiscal year?",
+            options: ["Observed practice", "A statutory permission", "A modelled estimate", "An advocacy figure"],
+            correctIndex: 0,
+            explanation: "CRS pairs the permission written into law with what actually happened in FY2020, which is why the pair is so hard to argue with.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "Which party in this story does the statute never excuse?",
+            options: ["The state, below fifty per cent", "The institution, from filing a plan of work", "The Secretary, from making the required determination", "Congress, from appropriating the statutory floor"],
+            correctIndex: 0,
+            explanation: "The waiver reaches only the portion above fifty per cent, so half the match is never waivable.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "What year's data does the CRS waiver count come from?",
+            options: ["FY2020", "FY2021, the year the individual programme appropriations are given for", "2013, the year of the APLU policy brief", "2020 to 2023, averaged across the period"],
+            correctIndex: 0,
+            explanation: "Nine 1890 institutions received matching fund waivers in FY2020, as CRS reports.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "Whose behaviour does the waiver determination turn on?",
+            options: ["The state's", "The institution's, and how hard it has tried to raise the match", "The Secretary's predecessor's, through a standing policy", "Congress's, through the level of the appropriation"],
+            correctIndex: 0,
+            explanation: "The Secretary decides whether the state will be unlikely to satisfy the matching requirement.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "What does this course say happens to a state's obligation when its 1890 institution obtains a waiver?",
+            options: ["The consequence is removed", "The obligation transfers to the following fiscal year", "The state must repay the waived amount within three years", "The state loses its own 1862 allotment by the same amount"],
+            correctIndex: 0,
+            explanation: "The waiver keeps money reaching the institution and takes away the pressure the redistribution rule would otherwise apply.",
+            sourceLessonSlug: "the-waiver-only-one-side-gets",
+          },
+          {
+            prompt: "Which is true of both the 2013 APLU count and the CRS waiver count?",
+            options: ["Each carries a date", "Each covers the same three-year period", "Each was produced by a federal agency", "Each counts nineteen institutions"],
+            correctIndex: 0,
+            explanation: "APLU counted 2010 to 2012 across 18 institutions and CRS counted FY2020 across 19, which is why neither figure travels without its date.",
+            sourceLessonSlug: "counting-it-in-2013",
+          },
+          {
+            prompt: "What did the 2013 brief say about states meeting the match for their 1862 institutions?",
+            options: ["All of them were", "About half of them were", "The brief did not examine the 1862 side", "Only the states without an 1890 institution were"],
+            correctIndex: 0,
+            explanation: "The brief says all states are meeting the one-to-one requirement for their 1862 institutions while the majority do not for the 1890s, which is the same contrast CRS reports eight years later.",
+            sourceLessonSlug: "counting-it-in-2013",
+          },
+        ],
+      },
+    },
   ],
 };
