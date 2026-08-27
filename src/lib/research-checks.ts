@@ -2070,6 +2070,107 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "NOMA's national office, which now stewards the directory",
     ],
   },
+  // ── Written by Himself (CREDIT-W1) ────────────────────────────────────────────────────────────
+  {
+    key: "wbh-malcolm-x-first-printing-year",
+    course: "written-by-himself",
+    lesson: "as-told-to-in-the-modern-trade",
+    quote:
+      "The book is generally dated 1965, and the Internet Archive copy is catalogued as Grove Press, 1966, which is the kind of first-printing-versus-later-printing discrepancy this catalog reports instead of choosing.",
+    title: "Is the Grove Press Autobiography of Malcolm X first printing 1965 or 1966?",
+    severity: "low",
+    question:
+      "What year does the FIRST Grove Press printing of The Autobiography of Malcolm X carry on its title page, and does that first printing carry the same credit line as later ones? The book is almost universally dated 1965. The copy digitised at the Internet Archive, which this course read for the title-page wording, is catalogued as Grove Press, 1966. Both can be true if the archived copy is a later printing, but the course has not seen a first printing.",
+    claim:
+      "Lesson 21 reports the discrepancy in one sentence, states that it is a first-printing-versus-later-printing question, and does not choose a year. The load-bearing claim in that lesson is the title-page PHRASE, which the archived copy carries, not the year.",
+    stakes:
+      "Low for the argument and real for the course's own method, since the lesson is specifically about a credit line being remembered inaccurately. If the first printing carries a different credit line from the copy this course read, the lesson's correction would need rewriting rather than dating.",
+    needs: [
+      "The title-page year and the credit-line wording of a verified first Grove Press printing",
+      "A national library catalogue record (Library of Congress or British Library) giving the first-publication year and the statement of responsibility as printed",
+      "Whether any printing carries the phrase \"as told to Alex Haley\" on the title page rather than on the jacket or cover",
+    ],
+    where: [
+      "The Library of Congress catalogue record for the first Grove Press edition",
+      "Grove Atlantic, the successor to Grove Press, which may hold printing records",
+      "A rare-book dealer's collation of a verified first printing, which describes the title page in detail",
+    ],
+  },
+  {
+    key: "wbh-yellin-1981-pagination",
+    course: "written-by-himself",
+    lesson: "how-yellin-settled-it",
+    quote:
+      "In 1981, Yellin published \"Written by Herself: Harriet Jacobs's Slave Narrative\" in the journal American Literature.",
+    title: "Confirm the volume, issue, pages and stable link for Yellin's 1981 article",
+    severity: "low",
+    question:
+      "What are the exact volume, issue, page range and DOI or JSTOR stable URL for Jean Fagan Yellin's 1981 article \"Written by Herself: Harriet Jacobs's Slave Narrative\" in American Literature? Secondary listings agree on volume 53, November 1981, pages 479-486, but the course could not open the journal's own record or a JSTOR page to confirm the issue number, the pagination or a stable identifier, so the citation is printed without a URL.",
+    claim:
+      "Lesson 18 cites Yellin (1981), American Literature, 53(3), 479-486, with no URL, and states the year and journal in the body. Nothing in the argument depends on the page range; the load-bearing facts are the year, the journal and that the article preceded the 1987 edition.",
+    stakes:
+      "Low for the teaching and material for the citation list, because this catalog's rule is a DOI or stable URL wherever one exists. A confirmed identifier would let a reader check the article rather than take the course's word for it, which is exactly the standard the course teaches.",
+    needs: [
+      "The issue number, exact page range, and DOI or JSTOR stable URL from Duke University Press or JSTOR",
+      "Whether the article title uses \"Jacobs'\" or \"Jacobs's\" as printed in the journal",
+      "Whether an open-access version exists that could be linked instead",
+    ],
+    where: [
+      "Duke University Press, which publishes American Literature",
+      "JSTOR's record for American Literature volume 53",
+      "Any university library's catalogue record for the bound volume",
+    ],
+  },
+  {
+    key: "wbh-fisher-1881-imprint",
+    course: "written-by-himself",
+    lesson: "dictated-and-unattributed",
+    quote:
+      "San Francisco, 1881. What Mrs. Fisher Knows About Old Southern Cooking, Soups, Pickles, Preserves, Etc., by Mrs. Abby Fisher, late of Mobile, Alabama.",
+    title: "Which printing office issued Abby Fisher's 1881 cookbook?",
+    severity: "low",
+    question:
+      "What imprint appears on the title page of the first edition of What Mrs. Fisher Knows About Old Southern Cooking? The full-text copy at the Internet Archive that this course read gives \"Mills's Co-operative Printing Office, 420, 424 & 430 Montgomery Street\". A number of accounts of the book instead name the Women's Co-operative Printing Office of San Francisco. The two may be the same firm under different names, successive firms, or two different issues.",
+    claim:
+      "Lesson 15 names neither printer. It gives only the city and year, cites the Internet Archive full text, and rests its argument on the Preface and Apology and on the reference-list heading, neither of which is affected by the imprint question.",
+    stakes:
+      "Low for the argument and worth settling for accuracy, because the Women's Co-operative Printing Office is frequently mentioned as part of the book's significance, and if that attribution is wrong it is being repeated widely. If the two names belong to one firm, saying so would let the lesson name it.",
+    needs: [
+      "The imprint as printed on a verified first-edition title page",
+      "Whether Mills's Co-operative Printing Office and the Women's Co-operative Printing Office were the same business, successive businesses, or unrelated",
+      "Whether more than one 1881 issue exists with different imprints",
+    ],
+    where: [
+      "The Library of Congress rare book record for the 1881 edition",
+      "The California Historical Society and the San Francisco Public Library's California collection",
+      "Michigan State University Libraries' Feeding America digital cookbook collection, which holds the title",
+    ],
+  },
+  {
+    key: "wbh-keckley-authorship-doubt-history",
+    course: "written-by-himself",
+    lesson: "keckley-doubted-and-punished",
+    quote:
+      "Behind the Scenes was edited by the journalist James Redpath, and there has long been argument about how much of the book is his.",
+    title: "What is the documented history of doubt about Elizabeth Keckley's authorship?",
+    severity: "medium",
+    question:
+      "Who publicly questioned Elizabeth Keckley's authorship of Behind the Scenes, when, and on what grounds, and who answered them? This course found second-hand reports of a 1935 Washington Star article by David Barbee attributing the book to Jane Swisshelm and questioning whether Keckley existed at all, answered by John E. Washington in They Knew Lincoln (1942). Neither could be confirmed against a source the course could open, so neither is printed.",
+    claim:
+      "Lesson 19 says only what Documenting the American South says: that there is speculation about the level of involvement of Keckley's editor James Redpath, and that verifiable facts in the book have affirmed its authenticity. It names no earlier doubter and prints no proportion of the text.",
+    stakes:
+      "Medium. If the 1935 attempt is real, it is the strongest documented case in this entire course of a Black woman's authorship being denied outright rather than merely doubted, and answered by a named Black scholar seven years later. That is a correction with the same shape as the Jacobs case and it currently sits unprinted because it could not be verified.",
+    needs: [
+      "The Washington Star article of 11 November 1935, its author, and exactly what it claimed",
+      "The passage in John E. Washington's They Knew Lincoln (1942) that answers it, with a page reference",
+      "Jennifer Fleischner's scholarly position on Redpath's role, quoted rather than summarised, from Mrs. Lincoln and Mrs. Keckly",
+    ],
+    where: [
+      "The Washington Star's microfilm run, held by the District of Columbia Public Library and the Library of Congress",
+      "They Knew Lincoln (1942), reissued by Oxford University Press with a scholarly introduction",
+      "Jennifer Fleischner's Mrs. Lincoln and Mrs. Keckly, the scholarly anchor for the authorship question",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {

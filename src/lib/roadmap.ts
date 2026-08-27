@@ -1,5 +1,5 @@
 // The internal roadmap, committed so it renders in-app at /admin/roadmap (platform
-// owner). Keep it current as work lands — see the CLAUDE.md docs-maintenance rule.
+// owner). Keep it current as work lands ,  see the CLAUDE.md docs-maintenance rule.
 // Status keys: ✅ done · 🔧 in branch · 🟡 next · ⚪ backlog · ❓ needs decision.
 
 export const ROADMAP = `# Learn.WitUS, Roadmap
@@ -142,6 +142,63 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   \`pnpm audit:course who-signs-the-print --spec\`. Mapped to
   \`catalog.cited-primary-secondary-synthesis\` and \`catalog.test-a-historical-claim\` (CCSS
   RH.11-12.9 and RH.11-12.8). Deliberately **not** in \`STAGED_COURSES\` yet, matching CREDIT-00.
+- 🔧 **Written by Himself** (\`content/credit-ghostwriting\`, Culture & History, **CREDIT-W1**; NO
+  migration, **re-run \`pnpm seed:courses\`**). The **first course on the lettered W track** (W · The
+  written record) inside the CREDIT series, from
+  \`plans/future-courses/2026-08-25-12-black-writers-research.md\` §1, which called ghostwriting the
+  strongest first build in the whole writing file. A letter is a promise the track is independent:
+  **W1 can be taken straight after CREDIT-00**, in any order relative to 01, 02 and 03.
+  **The spine: a byline is a term in an agreement, and the title page is where the agreement shows.**
+  In a ghostwriting arrangement the writer's name is absent **by design** and the writer is paid for
+  exactly that, so the missing name is the **deliverable**, not a wrong.
+  **Kept honest the same way CREDIT-02 and CREDIT-03 were, and the course says so out loud.** Every
+  ghostwriter is unnamed, so framing ghostwriting as theft would be factually wrong and correctable
+  in public by anyone holding a publishing contract. This is the **third time** the series has run
+  the move (the master printer who does not sign, the employee designer who is not on the door, the
+  ghost), and the course names the recurrence rather than pretending the pattern is new. The sharper
+  questions, which it actually asks, are **who ends up inside the contract, who ends up outside it,
+  and what a byline pays that a fee does not**.
+  **The entire evidence base is free, digitised and out of copyright**, so the course carries zero
+  image-rights or licensing cost, and every core document was read directly. **Phillis Wheatley's
+  1773 Poems is the best single artifact in the catalog**: an attestation signed by **eighteen**
+  Boston men, certifying that she wrote her own poems, is bound into the book's own front matter, and
+  the publisher's note on the same page concedes that readers would otherwise disbelieve the title
+  page. The last signature is "Mr. John Wheatley, **her Master**". Douglass answered the same
+  disbelief from the other direction, in his subtitle, and **Garrison's 1845 preface names employing
+  some one else and rules it out**, which is a document in the history of ghostwriting.
+  **Four of the strongest documents are books by Black women whose authorship was disputed, so women
+  are the argument here rather than an addendum**, and the course says that in those words. **Harriet
+  Jacobs is the model correction the whole series needed:** Lydia Maria Child disclaimed authorship
+  *in print* in 1861 ("both the ideas and the language are her own") and the book was read as Child's
+  for about a century anyway, because a pseudonym cannot be catalogued and attribution drifts to the
+  most legible name on the page. Jean Fagan Yellin restored it from **Jacobs's own letters**, in an
+  **American Literature** article (1981) and a **Harvard University Press edition** (1987), which are
+  two different jobs: one persuades scholars, the other changes the catalogue.
+  **Verified then printed:** the attestation's wording and all eighteen names, checked against two
+  independent transcriptions that agree; Garrison's preface of 1 May 1845 and Wendell Phillips's
+  letter of 22 April 1845; the 1855 title page and James McCune Smith's introduction; David Wilson's
+  signed editor's preface of May 1853; Child's 1861 introduction; Keckley's 1868 preface and the
+  career it cost her; Fisher's 1881 Preface and Apology; the Library of Congress's 2017 acquisition
+  of Omar ibn Said's 1831 Arabic manuscript; and 17 U.S.C. 101 and 302(c), which define anonymous and
+  pseudonymous works and contain **a procedure for a name arriving late**.
+  **Tested and refused, seven of them, with a ledger lesson that prints all seven:** that
+  ghostwriting is a theft; the in-person interrogation of Wheatley by the eighteen signers
+  (Revolutionary Spaces reports it as speculation and unlikely); that Abby Fisher dictated her book
+  to the nine friends named in its front matter (**refuted against the book itself**: that list sits
+  under a heading about referring readers to friends by permission, so it is a reference list); a
+  proportion of *Twelve Years a Slave* attributable to David Wilson; a proportion of *Behind the
+  Scenes* attributable to James Redpath; **any** modern ghostwriting attribution resting on inference,
+  which is why the course has no list of who ghostwrote what and says why at length; and a count or
+  demographic profile of the trade, because nobody holds that register. **Reported as contested:** the
+  Grove Press *Autobiography of Malcolm X*, whose title page says "**with the assistance of** Alex
+  Haley" rather than the "as told to" everyone repeats, and whose printing year is catalogued 1966
+  against the usual 1965. Four open questions filed in \`src/lib/research-checks.ts\`.
+  6 sections, 18 teaching lessons, 6 section quizzes (63/63/57/62/67/68 serving 5) and a 43-question
+  final serving 10, for **423 pooled questions**, 36 reveal cards, and **zero findings** from
+  \`pnpm audit:course written-by-himself --spec\`. Mapped to
+  \`catalog.cited-primary-secondary-synthesis\` and \`catalog.test-a-historical-claim\` (CCSS
+  RH.11-12.9 and RH.11-12.8, 30 standards across 15 jurisdictions). Deliberately **not** in
+  \`STAGED_COURSES\` yet, matching CREDIT-00, CREDIT-02 and CREDIT-03.
 - 🔧 **The Name on the Door** (\`content/credit-architecture\`, Culture & History, **CREDIT-03**; NO
   migration, **re-run \`pnpm seed:courses\`**). The second **discipline** course in the CREDIT
   series, from \`plans/future-courses/08-black-creator-series-research.md\` §6, which called the

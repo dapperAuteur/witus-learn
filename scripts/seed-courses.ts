@@ -228,6 +228,7 @@ import { WHO_GETS_NAMED_COURSE } from "./data/who-gets-named-course";
 import { SHIRLEY_GRAHAM_COURSE } from "./data/shirley-graham-course";
 import { WHO_SIGNS_THE_PRINT_COURSE } from "./data/who-signs-the-print-course";
 import { THE_NAME_ON_THE_DOOR_COURSE } from "./data/the-name-on-the-door-course";
+import { WRITTEN_BY_HIMSELF_COURSE } from "./data/written-by-himself-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -2101,6 +2102,52 @@ async function main() {
       seriesOrder: 4,
       seriesCode: "CREDIT",
       seriesPosition: "03",
+    },
+    // Written by Himself — CREDIT-W1, the first course on the lettered W (the written record) track
+    // inside the CREDIT series. Source brief:
+    // plans/future-courses/2026-08-25-12-black-writers-research.md §1, which called ghostwriting the
+    // strongest first build in the whole writing file and recommended the spine below.
+    //
+    // THE SPINE: a byline is a term in an agreement, and the title page is where the agreement
+    // shows. In a ghostwriting arrangement the writer's name is absent BY DESIGN and the writer is
+    // paid for exactly that, so the missing name is the deliverable rather than a wrong.
+    //
+    // Kept honest the same way CREDIT-02 and CREDIT-03 were, and the course says so out loud in
+    // `not-a-theft-a-sale`: every ghostwriter is unnamed, so framing ghostwriting as theft would be
+    // factually wrong and correctable in public by anyone holding a publishing contract. The
+    // sharper questions are who ends up inside the contract, who ends up outside it, and what a
+    // byline pays that a fee does not. This is the third time the series has run the move (the
+    // master printer, the employee designer, the ghost), and the course names the recurrence rather
+    // than pretending the pattern is new.
+    //
+    // A LETTERED POSITION REQUIRES seriesTrack (check-series-codes rule), and the letter is a
+    // promise that the track is independent: W1 can be taken straight after CREDIT-00.
+    //
+    // The whole evidence base is free, digitised and out of copyright, so this course carries zero
+    // image-rights or licensing cost, and every core document was read directly rather than
+    // summarised: Wheatley 1773 and the eighteen-signature attestation bound into its own front
+    // matter (verified twice, DocSouth and Project Gutenberg, which agree on wording and names),
+    // Douglass 1845 with Garrison's 1 May 1845 preface and Wendell Phillips's 22 April 1845 letter,
+    // Northup 1853 "edited by David Wilson", Jacobs 1861 whose editor's introduction says in print
+    // that the ideas and language are the author's own, Keckley 1868, Omar ibn Said's 1831 Arabic
+    // manuscript at the Library of Congress, and Fisher 1881. Four of the strongest documents are
+    // books by Black women whose authorship was disputed, so women are the argument here rather
+    // than an addendum, and the course says that in those words.
+    //
+    // THE MODEL CORRECTION is Harriet Jacobs: misattributed for roughly a century, restored by Jean
+    // Fagan Yellin from Jacobs's own letters, settled by a dated article and a dated scholarly
+    // edition. That is CREDIT-00 Section 6 with a real case attached.
+    // NO migration — pnpm seed:courses.
+    {
+      slug: "written-by-himself",
+      course: WRITTEN_BY_HIMSELF_COURSE,
+      category: "Culture & History",
+      seriesSlug: "credit",
+      seriesTitle: "Credit: Who Gets Named",
+      seriesOrder: 5,
+      seriesCode: "CREDIT",
+      seriesPosition: "W1",
+      seriesTrack: "W · The written record",
     },
   ]) {
     await seedAuthoredCourse(db, {

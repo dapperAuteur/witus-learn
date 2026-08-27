@@ -1,8 +1,8 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { Ref, SyntheticEvent } from "react";
-import { playableAudioSrc, type Chapter, type TranscriptSegment } from "@/lib/media";
+import { playableAudioSrc, toWebVtt, type Chapter, type TranscriptSegment } from "@/lib/media";
 
 function fmt(s?: number): string {
   if (s == null) return "";
@@ -45,6 +45,16 @@ export function MediaPlayer({
   resumeAt?: number;
 }) {
   const ref = useRef<HTMLMediaElement | null>(null);
+
+  const vtt = useMemo(() => toWebVtt(transcript), [transcript]);
+  // Captions. The transcript already carries timings, so the same data becomes a real <track> on
+  // the video instead of only prose underneath it. A data: URL rather than a blob keeps this a pure
+  // computation: no state, no effect, no object URL to revoke, and it renders identically on the
+  // server and the client. Null when nothing is timed, so the <track> is omitted rather than empty.
+  const captionUrl = useMemo(
+    () => (vtt ? `data:text/vtt;charset=utf-8,${encodeURIComponent(vtt)}` : null),
+    [vtt],
+  );
   const [time, setTime] = useState(0);
   const [resumedFrom, setResumedFrom] = useState<number | null>(null);
 
@@ -185,7 +195,17 @@ export function MediaPlayer({
   return (
     <div className="space-y-4">
       {kind === "video" ? (
-        <video ref={ref as Ref<HTMLVideoElement>} className="w-full rounded-lg" poster={poster} src={src} {...mediaProps} />
+        <video
+          ref={ref as Ref<HTMLVideoElement>}
+          className="w-full rounded-lg"
+          poster={poster}
+          src={src}
+          {...mediaProps}
+        >
+          {captionUrl ? (
+            <track kind="captions" src={captionUrl} srcLang="en" label="English" default />
+          ) : null}
+        </video>
       ) : (
         <audio ref={ref as Ref<HTMLAudioElement>} className="w-full" src={playableAudioSrc(src)} {...mediaProps} />
       )}

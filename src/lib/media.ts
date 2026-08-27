@@ -120,3 +120,39 @@ export function toEmbed(url: string): Embed | null {
     return null;
   }
 }
+
+/**
+ * A WebVTT cue file built from transcript segments that already carry timings.
+ *
+ * Reported 2026-08-26 and confirmed: MediaPlayer rendered a bare <video> with no
+ * <track>, so a synced transcript sat beside the player while the video itself shipped
+ * zero captions. A transcript below a video is not a caption track: it is not on the
+ * video, it does not follow playback for a screen-reader user, and it is invisible to
+ * a viewer who needs captions in the player. Segments with no start time are skipped
+ * rather than guessed, because a mistimed caption is worse than an absent one.
+ *
+ * Returns null when nothing is timed, so a caller can omit the <track> entirely.
+ */
+export function toWebVtt(segments: TranscriptSegment[]): string | null {
+  const timed = segments.filter((s) => typeof s.start === "number");
+  if (timed.length === 0) return null;
+  const stamp = (sec: number): string => {
+    const h = Math.floor(sec / 3600);
+    const m = Math.floor((sec % 3600) / 60);
+    const s2 = Math.floor(sec % 60);
+    const ms = Math.round((sec - Math.floor(sec)) * 1000);
+    const p = (n: number, w = 2) => String(n).padStart(w, "0");
+    return `${p(h)}:${p(m)}:${p(s2)}.${p(ms, 3)}`;
+  };
+  const cues: string[] = ["WEBVTT", ""];
+  timed.forEach((seg, i) => {
+    const start = seg.start as number;
+    // No end time: run to the next cue, or three seconds, so a cue is never zero-length.
+    const nextStart = timed[i + 1]?.start;
+    const end = typeof seg.end === "number" ? seg.end : typeof nextStart === "number" ? nextStart : start + 3;
+    if (end <= start) return;
+    const text = seg.speaker ? `<v ${seg.speaker}>${seg.text}` : seg.text;
+    cues.push(String(i + 1), `${stamp(start)} --> ${stamp(end)}`, text, "");
+  });
+  return cues.length > 2 ? cues.join("\n") : null;
+}

@@ -4100,6 +4100,24 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // differently, lesson 22 reports three dating one portrait differently, and lesson 23 is a
       // ledger of what was verified, what is contested and what was refused.
       "the-name-on-the-door",
+      // Written by Himself (CREDIT-W1) integrates a primary statute (17 U.S.C. 101 and 302(c) on
+      // anonymous works, pseudonymous works and the procedure by which a later-revealed identity
+      // changes the copyright term) and the U.S. Copyright Office's own public-records description
+      // with seven out-of-copyright PRIMARY TEXTS read directly rather than summarised: the
+      // eighteen-signature attestation bound into Wheatley's 1773 Poems, Garrison's 1845 preface
+      // and Wendell Phillips's 1845 letter in Douglass's Narrative, the 1855 My Bondage and My
+      // Freedom title page and James McCune Smith's introduction, David Wilson's signed editor's
+      // preface to Northup's 1853 narrative, Lydia Maria Child's 1861 introduction to Jacobs's
+      // Incidents, Keckley's 1868 preface, and Abby Fisher's 1881 Preface and Apology. Those sit
+      // alongside institutional secondary sources (the Massachusetts Historical Society on the
+      // failed 1772 Boston proposal and on Wheatley's letter to David Wooster, Revolutionary
+      // Spaces on the examination question, Documenting the American South on Keckley and Redpath,
+      // the UNC Libraries research guide on the Omar ibn Said translation history, the University
+      // of Rochester finding aid for the Post family papers) and scholarship (Yellin 1981). It
+      // foregrounds where its sources disagree rather than smoothing them: lesson 21 reports a
+      // printing-year discrepancy, and lesson 23 is a ledger of what was verified, what is
+      // contested and what was refused.
+      "written-by-himself",
       // Culture and migration
       "great-migration-and-the-world",
       "hoodoo-tradition-of-resistance",
@@ -4263,6 +4281,23 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // independent reports of no record, and list every other claim tested and left unprinted with
       // the reason for each.
       "the-name-on-the-door",
+      // Written by Himself runs all three moves of this claim. It DOWNGRADES the popular framing in
+      // lesson 2 (every ghostwriter is unnamed by agreement and paid for that absence, so the theft
+      // framing is factually wrong and correctable by anyone holding a publishing contract). It
+      // CORROBORATES before printing: the Wheatley attestation's wording and all eighteen names
+      // were checked against two independent transcriptions that agree, and the Malcolm X title
+      // page was read from a catalogued copy rather than from the phrase everyone repeats. And it
+      // CUTS what the evidence will not carry, at length: lesson 7 refuses the in-person
+      // interrogation of Wheatley on Revolutionary Spaces' report that it is speculation and
+      // unlikely; lesson 15 refuses the nine-transcribers claim about Abby Fisher against the
+      // book's own heading, which shows the nine to be a reference list; lessons 13 and 19 refuse
+      // to assign a proportion of the text to David Wilson or to James Redpath because the sources
+      // disagree or do not measure; lesson 21 corrects the remembered "as told to" credit down to
+      // the "with the assistance of" the title page carries and reports a printing-year
+      // disagreement without choosing; lesson 22 refuses every modern attribution resting on
+      // inference and states what documentary evidence would settle one; and lesson 23 is a ledger
+      // of all seven refusals with the reason for each.
+      "written-by-himself",
       // Government-forms method course: test a government action against its enabling document
       // (did this body have the power?), the same corroborate-or-challenge move.
       "who-has-the-power",
