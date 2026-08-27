@@ -230,6 +230,7 @@ import { WHO_SIGNS_THE_PRINT_COURSE } from "./data/who-signs-the-print-course";
 import { THE_NAME_ON_THE_DOOR_COURSE } from "./data/the-name-on-the-door-course";
 import { WRITTEN_BY_HIMSELF_COURSE } from "./data/written-by-himself-course";
 import { THE_MATCH_COURSE } from "./data/the-match-course";
+import { TERRITORIES_COURSE } from "./data/territories-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -2204,6 +2205,53 @@ async function main() {
       seriesOrder: 1,
       seriesCode: "WARRANT",
       seriesPosition: "01",
+    },
+    // Not a State — the US territories, the District, and the representation none of them has.
+    // BAM's ask, verbatim: "add course on US territories and places like Puerto Rico that arent
+    // states and dont have representation in Congress or House". Civics, the deepest shelf here.
+    //
+    // WHY IT IS NOT IN `land-warrant`, DECIDED ON THE MERITS AND NOT BY DEFAULT. WARRANT's spine is
+    // a FUNDING mechanism: a federal benefit is created, a class is excluded, a separate and smaller
+    // channel is built for the excluded class, and that channel is then permitted to go unmatched.
+    // That mechanism genuinely appears in this material once, and Section 5 teaches it and names
+    // WARRANT out loud: Congress wrote SSI in 1972 for "the 50 States and the District of Columbia",
+    // left Puerto Rico on the older AABD block grant, and by 2021 an AABD recipient there drew an
+    // average of $82 a month against $574 for the average SSI recipient (Vaello Madero, Sotomayor,
+    // J., dissenting). That is the WARRANT move exactly, and it is taught as such.
+    //
+    // But it is EVIDENCE here rather than the spine, and three things say so:
+    //   1. THE MECHANISM IS JUDICIAL, NOT FISCAL. The Insular Cases created a category of PLACE, and
+    //      everything downstream (no vote, no Senator, no elector, a national who is not a citizen,
+    //      an unelected board over an elected government) follows from the status rather than from
+    //      any appropriation. Remove every dollar figure from this course and the argument stands.
+    //   2. NO SMALLER CHANNEL IS BUILT FOR THE THING WITHHELD. WARRANT's fourth beat is a channel
+    //      that is then underfunded. Here the withheld good is the vote, and a non-voting delegate
+    //      is not an underfunded programme, it is a seat. Nobody declines to fund a delegate.
+    //   3. THE SERIES HAS ALREADY DECLARED ITS SHAPE. WARRANT-01 through 03 and 99 are one argument
+    //      about land, agriculture and race-based exclusion from the land-grant and USDA systems.
+    //      Adding a territories course would make the code mean "unequal federal treatment in
+    //      general", which is not a spine, and would displace a course the series has promised.
+    // So: stands alone, cross-links hard. The opening lesson is 7 U.S.C. § 361c(d)(4), which THE
+    // MATCH found and this course verified independently on uscode.house.gov: the only waiver of
+    // the 1862 match reaches Puerto Rico, Guam, the Virgin Islands and DC, which are exactly the
+    // members of the Hatch Act's own definition of "State" (7 U.S.C. § 361a) that are not states.
+    //
+    // ALSO DELIBERATELY NOT `tribal-nations-governance`. Section 6 gives that boundary one careful
+    // lesson and refuses to blur it: tribal nations are pre-existing sovereigns in a
+    // government-to-government relationship, territorial status is a question about places acquired
+    // by treaty, purchase and cession, and the comparison that IS honest is that both doctrines were
+    // built in the same decades out of the same plenary-power reasoning.
+    //
+    // CONTESTED THINGS ARE TAUGHT AS CONTESTED, WITH BOTH SIDES NAMED. In Fitisemanu the parties
+    // opposing citizenship for American Samoans included the American Samoa Government and the
+    // territory's own member of Congress; the course states that, states the plaintiffs' position,
+    // states the 1930 history that cuts the other way, and adjudicates nothing. Puerto Rico's
+    // plebiscites are reported from the State Elections Commission's own certified files with the
+    // blank ballots, the boycotts and the turnout attached. NO migration - pnpm seed:courses.
+    {
+      slug: "territories-and-representation",
+      course: TERRITORIES_COURSE,
+      category: "Civics",
     },
   ]) {
     await seedAuthoredCourse(db, {

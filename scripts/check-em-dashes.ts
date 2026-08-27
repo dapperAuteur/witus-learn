@@ -33,6 +33,12 @@ const EXCLUDE_DIRS = [
   // trackedFiles() reads `git ls-files`, and started failing the moment it was committed. Worth
   // remembering when adding any future generated artifact that carries quoted text.
   join("src", "lib", "citation-content"),
+  // Verbatim LESSON SENTENCES, generated from the database by `pnpm gen:cross-links`: the sentence
+  // each cross-course mention sits in, quoted so the owner can judge the link without opening the
+  // lesson. Same reason as the citations above. It is a quotation of the lesson as it stands, and
+  // "fixing" a dash here would make the board show something the lesson does not say, which is the
+  // one property a quotation has to have. The dash belongs to the lesson and is fixed there.
+  join("src", "lib", "cross-link-content"),
   join("src", "db", "migrations"),
   join("node_modules"),
   join(".next"),

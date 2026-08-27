@@ -63,6 +63,7 @@ export const ADMIN_NAV: AdminNavItem[] = [
   { href: "/admin/downloads", title: "Downloads", desc: "Branded PDFs you can hand to someone outside the platform.", icon: "📄", ownerOnly: true },
   { href: "/admin/ebooks", title: "Ebooks", desc: "Marketing ebooks, private until you approve them; then a free download on their landing page.", icon: "📘", ownerOnly: true },
   { href: "/admin/citations", title: "Citations", desc: "Every source cited by a staged course: does it exist, resolve, and say what the lesson claims?", icon: "📚", ownerOnly: true },
+  { href: "/admin/cross-links", title: "Cross-course links", desc: "Where one course mentions another: approve the mention as a link before any learner sees it.", icon: "🔗", ownerOnly: true },
   { href: "/admin/media", title: "Media verification", desc: "Preview every uploaded image, video, audio file and document, check its rights, approve or reject it before the course is live.", icon: "🖼️", ownerOnly: true },
   { href: "/admin/tpt-plan", title: "Teachers Pay Teachers plan", desc: "Which packets to post, in what order and at what price, to optimize sales.", icon: "🛒", ownerOnly: true },
   { href: "/admin/pricing", title: "Proposed pricing", desc: "Fair, competitive price recommendations for every course, current vs proposed.", icon: "💵", ownerOnly: true },

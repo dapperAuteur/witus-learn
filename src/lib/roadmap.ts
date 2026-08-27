@@ -5,6 +5,27 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- 🔧 **Cross-course links, approved before a learner sees them**
+  (\`feat/cross-link-approvals\`, **migration 0060**, run \`pnpm db:migrate:prod\`). \`pnpm cross-links\`
+  finds where one course talks about another and does not link to it; whether two courses SHOULD link
+  is a judgment call, so the finding is now a candidate on a new owner board, **/admin/cross-links**,
+  and nothing renders to a learner until BAM approves that exact mention. Approved links appear as a
+  short **Related courses** list under the lesson; **the lesson body is never edited**, which is what
+  makes a link revocable, per-school, and reviewable at all.
+  **A rejected candidate is not an unreviewed one.** Two tables, following \`ebook_approvals\`:
+  \`cross_link_approvals\` holds a row ONLY when approved, so absence is the default and the default is
+  that nothing renders, and a rejection is its own row in \`cross_link_dismissals\`. The asymmetry is
+  the argument: forgetting the dismissals table shows a decided candidate in the queue again (visible,
+  safe), while forgetting a \`decision = 'approved'\` filter would publish a rejected link (invisible).
+  A decision flips rather than stacking, and undoing deletes both rows.
+  **Each card quotes the sentence the mention sits in**, checked against the live lesson on every
+  render, because a decision made blind closes the item and nobody looks again.
+  **Candidates come from the DATABASE** via \`pnpm gen:cross-links\` into a committed registry, the same
+  choice \`pnpm gen:citations\` made: a source-file reader silently misses about a third of the library,
+  which is survivable in a report and not in a review queue. **The registry ships empty until that
+  command is run**, and the board says so. Isolation: a decision is per tenant, and every approved
+  target is re-resolved through the scoped course lookup, so a course this school does not host,
+  holds unpublished, or holds twice at one slug renders nothing at all.
 - ✅ **Self-nominated course interest, and vetting by volunteers**
   (\`feat/course-interest-and-vetting\`, **migration 0059**, run \`pnpm db:migrate:prod\`). Invite-to-audit
   had one direction: the owner invites someone they trust. This is the other one. On an unvetted
@@ -63,6 +84,80 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   origin would have verified a fiction. Deliberately NOT in \`pnpm lint\` (network calls must never
   gate a commit). Judgment isolated as pure predicates in \`scripts/lib/observability-checks.ts\`,
   24 tests.
+- 🔧 **Not a State** (\`content/territories-and-representation\`, **Civics**, standalone; NO
+  migration, **re-run \`pnpm seed:courses\`**). BAM's ask: a course on the US territories and places
+  like Puerto Rico that are not states and have no representation in Congress. **The organizing
+  question is legal status, not a tour of five islands:** what IS a place under United States
+  sovereignty that is not a state, and how did it get that status?
+  **It opens on a provision The Match found and this course verified independently on
+  uscode.house.gov:** 7 U.S.C. 361c(d)(4), headed "Exception for insular areas and the District of
+  Columbia", halves the Hatch Act match for Puerto Rico, Guam, the Virgin Islands and DC and lets
+  the Secretary waive even that. Read 7 U.S.C. 361a and the reason is plain: those four are exactly
+  the members of the statute's own definition of "State" that are not states. The category is
+  sitting in a farm bill, before anyone has to be persuaded of anything.
+  **Deliberately NOT in the \`land-warrant\` series, argued on the merits in the seed comment.**
+  WARRANT's spine is a FUNDING channel, and that mechanism does appear here once: SSI was written in
+  1972 for "the 50 States and the District of Columbia", Puerto Rico was left on the pre-1972 AABD
+  block grant, and by 2021 an AABD recipient there drew an average of **\$82 a month against \$574**
+  for the average SSI recipient. Section 5 teaches exactly that and names The Match. But it is
+  EVIDENCE, not the spine: this course's mechanism is JUDICIAL and about status, no smaller channel
+  is built for the thing actually withheld (a non-voting delegate is a seat, not an underfunded
+  program), and folding it in would make WARRANT mean "unequal federal treatment in general".
+  **Every primary document was read directly.** Downes v. Bidwell (oranges from San Juan and a
+  \$659.35 duty; Brown's "alien races" and "Anglo-Saxon principles"; White's incorporation theory and
+  the "absolutely unfit to receive" reasoning under it; Harlan on the "occult meaning" of
+  incorporation) and Balzac ("it is locality that is determinative ... not the status of the people
+  who live in it"), both still good law. The Vaello Madero SLIP OPINION in full, for Kavanaugh's
+  holding, Sotomayor's dissent and Gorsuch's concurrence ("a rotten foundation", "rest instead on
+  racial stereotypes", the three 1899 Harvard Law Review authors named). The published Fitisemanu
+  opinion from govinfo. The House Rules and Manual for Rule III cl. 3(a) and the Michel v. Anderson
+  premise that the Delegates' vote is lawful BECAUSE the automatic revote renders it "merely
+  symbolic". PROMESA at 48 U.S.C. 2121, 2141 and 2142(e)(3), where a budget the unelected Board
+  writes is "deemed to be approved by the Governor and the Legislature". And the Census Bureau's own
+  apportionment table.
+  **The arithmetic is the course's own and takes five minutes to redo:** Puerto Rico's 3,285,874
+  exceeded **21 states** in 2020, DC's 689,545 exceeded 2, and the five territories plus DC come to
+  **4,313,440**, more than lived in Oregon. Then the figure that cuts against it: the Bureau's 2022
+  post-enumeration survey found the island **overcounted by 5.7 percent**, about 174,000 people, so
+  adjusted it exceeds nineteen states rather than twenty-one. Printed anyway.
+  **Contested material taught as contested, with the holders of each position named.** AMERICAN SAMOA
+  is the sharpest case and is not written as a denial-of-rights story: three American Samoans living
+  in Utah sued for citizenship and won below, and the parties who appealed included **the American
+  Samoa Government and the territory's own member of Congress**, who called it "citizenship by
+  judicial fiat". The lesson states what is being protected concretely (matai, the upper house,
+  more than 90 percent communal land, the 50 percent ancestry rule at Am. Samoa Code Ann. 37.0204),
+  then puts the evidence BOTH ways: the 2007 status report at p. 64 finding anti-citizenship
+  attitudes strong, the same report at p. 65 on Samoans elsewhere seeking citizenship, the 1930
+  commission whose citizenship bill passed the Senate and died in the House, and H.R. 1208 of the
+  116th Congress, in which the same delegate who intervened proposed easing naturalization AND a
+  referendum on automatic citizenship. It adjudicates nothing. PUERTO RICAN STATUS is built on the
+  CRS report BAM supplied (**R44721, updated 6 June 2024**, named in the lesson because that version
+  predates the November 2024 vote), with every result carrying the thing that makes it argue: the
+  2012 blank-ballot fight, the 2017 boycott and its **23 percent turnout** beside the 97.2 percent,
+  the 2020 electorate that chose statehood and defeated its own pro-statehood legislature the same
+  day, and 2024 from the Elections Commission's certified file at **58.6 percent of votes cast and
+  49.1 percent of all ballots**, with neither called the answer.
+  **A whole lesson refuses to conflate this with tribal sovereignty**, which
+  \`tribal-nations-governance\` owns: a pre-existing sovereign retaining unceded powers is not a
+  place asking to be brought inside the Constitution. The one honest comparison is a matter of
+  record rather than analogy, and Gorsuch's concurrence supplies it by citing the study whose title
+  names Indians, aliens and territories together as the origins of plenary power.
+  **Tested and refused, seven of them, printed in a ledger lesson:** a United States Reports page for
+  any of the three modern cases (docket number and decision date used instead), a count of American
+  Samoan nationals, any averaging of what American Samoans want, calling the 2024 plebiscite
+  decisive, the 1846 retrocession of the District's Virginia portion, a count of people the Insular
+  Cases currently affect, and a third freely associated state that one CRS sentence appears to name
+  in error. Three open questions filed in \`src/lib/research-checks.ts\`.
+  6 sections, 18 teaching lessons, 6 section quizzes (80/74/78/77/79/86 serving 5) and a 50-question
+  final serving 10, for **524 pooled questions**, 54 reveal cards, and **zero findings** from
+  \`pnpm audit:course territories-and-representation --spec\`. Standards: three new claims
+  (\`civics.territorial-status-doctrine\`, \`civics.territorial-representation\`,
+  \`civics.citizenship-limited-and-expanded\`) mapped to **Michigan C6.1.2 (full) and C6.1.3
+  (partial)**, whose verbatim text names the District, Guam, Puerto Rico, the Northern Marianas, the
+  Virgin Islands and American Samoa. Both codes had been REJECTED in the July 2026 Michigan pass on
+  the ground that no course taught this material; that rejection is now recorded as superseded rather
+  than deleted. C6.1.3 stays partial because it also names tribal governments, which this course
+  declines to teach. Deliberately **not** in \`STAGED_COURSES\` yet, matching The Match.
 - 🔧 **The Match** (\`content/the-match-1890-institutions\`, **Civics**, **WARRANT-01**; NO migration,
   **re-run \`pnpm seed:courses\`**). The first course in a NEW series, from the research file
   \`plans/future-courses/land-and-schools/2026-08-27-01-land-grants-hbcus-farm-programs.md\`, which

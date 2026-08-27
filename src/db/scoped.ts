@@ -37,10 +37,19 @@ import {
 } from "@/db/queries/media-assets";
 import { listTenantPrerequisiteEdges } from "@/db/queries/prerequisites";
 import {
+  listCourseLocations,
   listLessonBodies,
   listLessonLocations,
   type LessonBodyRef,
 } from "@/db/queries/lesson-locations";
+import {
+  approveCrossLink,
+  dismissCrossLink,
+  listApprovedCrossLinkTargets,
+  listCrossLinkDecisions,
+  resetCrossLink,
+  type CrossLinkTriple,
+} from "@/db/queries/cross-links";
 import { listPublishedLessonSearchRows } from "@/db/queries/course-search";
 import {
   bundleBelongsToTenant,
@@ -310,6 +319,44 @@ export class ScopedDb {
   /** Bodies of specific lessons, for this tenant, so a board can quote the prose around an item. */
   listLessonBodies(refs: readonly LessonBodyRef[]) {
     return listLessonBodies(this.tenantId, refs);
+  }
+
+  /** The named courses, for this tenant, for addressing an approved cross-link's target. */
+  listCourseLocations(courseSlugs: readonly string[]) {
+    return listCourseLocations(this.tenantId, courseSlugs);
+  }
+
+  // ── Cross-course links (/admin/cross-links) ────────────────────────────────
+  // The candidate list is a committed registry (src/lib/cross-links.ts) and is global; the DECISION
+  // is per tenant and lives here. A school never inherits another school's approvals, and the
+  // approved target is resolved through listCourseLocations above, so a link is only ever offered
+  // to a course this same tenant actually hosts.
+
+  /** Every cross-link decision this tenant has made, for the owner's review board. */
+  listCrossLinkDecisions() {
+    return listCrossLinkDecisions(this.tenantId);
+  }
+
+  /** The approved target course slugs for one lesson. Absence means not approved. */
+  listApprovedCrossLinkTargets(sourceCourseSlug: string, sourceLessonSlug: string) {
+    return listApprovedCrossLinkTargets(this.tenantId, sourceCourseSlug, sourceLessonSlug);
+  }
+
+  approveCrossLink(v: { triple: CrossLinkTriple; approvedBy: string | null; note: string | null }) {
+    return approveCrossLink({ tenantId: this.tenantId, ...v });
+  }
+
+  dismissCrossLink(v: {
+    triple: CrossLinkTriple;
+    dismissedBy: string | null;
+    reason: string | null;
+  }) {
+    return dismissCrossLink({ tenantId: this.tenantId, ...v });
+  }
+
+  /** Back to unreviewed: both rows deleted, so the candidate returns to the queue. */
+  resetCrossLink(triple: CrossLinkTriple) {
+    return resetCrossLink(this.tenantId, triple);
   }
 
   // ── In-course search (plans/61 §5) ─────────────────────────────────────────
