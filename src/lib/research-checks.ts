@@ -2325,6 +2325,76 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "The American Indian Higher Education Consortium's member list",
     ],
   },
+  {
+    key: "territories-us-reports-citations",
+    course: "territories-and-representation",
+    lesson: "reading-it-yourself",
+    quote:
+      "The citations here therefore use docket number and decision date, which are exact.",
+    title: "United States Reports volume and page for the three modern cases",
+    severity: "low",
+    question:
+      "What are the official United States Reports citations (volume and starting page) for United States v. Vaello Madero (No. 20-303, decided 21 April 2022), Financial Oversight and Management Board for Puerto Rico v. Aurelius Investment, LLC (No. 18-1334, decided 1 June 2020), and the Federal Reporter citation for Fitisemanu v. United States (10th Cir., filed 15 June 2021)?",
+    claim:
+      "The course cites all three by docket number and decision date, and says in its ledger of refusals that no verified reporter page was found in the sources consulted.",
+    stakes:
+      "Low, because a docket number plus a decision date identifies a case exactly and every source URL in the course resolves. But an educator quoting the course in a brief or a syllabus will want the reporter citation, and a guessed page is worse than none.",
+    needs: [
+      "Volume and starting page for each, from a bound reporter or a source that prints the official citation",
+      "The source consulted, so the course can cite it",
+    ],
+    where: [
+      "A law library's bound United States Reports, or a Bluebook-accurate database",
+      "The Supreme Court's own preliminary print, once issued for the relevant term",
+      "The Federal Reporter for the Tenth Circuit opinion",
+    ],
+  },
+  {
+    key: "territories-crs-freely-associated-states",
+    course: "territories-and-representation",
+    lesson: "reading-it-yourself",
+    quote:
+      "the middle name appears to be a slip, so this course names only the two it can verify and points you at the sentence",
+    title: "CRS R44721 names a third freely associated state that may be a slip",
+    severity: "low",
+    question:
+      "In CRS report R44721 (updated 6 June 2024), the sentence explaining free association names the Federated States of Micronesia, the Republic of Micronesia, and the Republic of Palau. Is the middle name an error for the Republic of the Marshall Islands, and has CRS corrected it in a later version?",
+    claim:
+      "The course names only the Federated States of Micronesia and Palau, states that the third name appears to be a slip, and does not assert what the report meant to say.",
+    stakes:
+      "Low, and it is a source-quality note rather than a claim the course rests on. Worth closing because the course teaches learners to check sources against each other, and this is the worked example.",
+    needs: [
+      "Whether a later version of R44721 prints a different third name",
+      "Confirmation of which three states currently hold Compacts of Free Association with the United States, from a primary source",
+    ],
+    where: [
+      "A newer version of R44721 on crsreports.congress.gov",
+      "The Department of the Interior's Office of Insular Affairs, which administers the Compacts",
+    ],
+  },
+  {
+    key: "territories-house-rule-current-congress",
+    course: "territories-and-representation",
+    lesson: "a-seat-without-a-vote",
+    quote:
+      "Check the current rules package before relying on it: this is exactly the kind of value that can change every two years without anyone announcing it.",
+    title: "Do Delegates still vote in the Committee of the Whole in the current Congress?",
+    severity: "medium",
+    question:
+      "As of today, does clause 3(a) of Rule III still give Delegates and the Resident Commissioner the powers of Members in the Committee of the Whole, and does clause 6(h) of Rule XVIII still require an automatic revote when their votes are decisive? Which Congress's rules package is currently in force, and did it amend either rule?",
+    claim:
+      "The course states the privilege was granted in the 103rd Congress, revoked in the 104th, reinstated in the 110th, revoked in the 112th and reinstated in the 116th, and that H. Res. 5 of the 119th Congress adopted the 118th Congress's rules without amending either rule.",
+    stakes:
+      "Medium and recurring. This privilege has flipped five times since 1993, always in the opening rules package of a new Congress, so the sentence goes stale on a predictable schedule rather than at random. A course that teaches the wrong answer here teaches a learner that a delegate has a vote they do not have.",
+    needs: [
+      "The rules resolution of the current Congress, and whether its amendments touch Rule III or Rule XVIII clause 6",
+      "The current edition of the House Rules and Manual, if one has been published for this Congress",
+    ],
+    where: [
+      "rules.house.gov, for the rules of the current Congress",
+      "govinfo.gov, for the House Rules and Manual (HMAN) of the current Congress and for the rules resolution as engrossed",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
