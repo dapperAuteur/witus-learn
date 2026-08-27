@@ -70,6 +70,12 @@ export interface Citation {
  */
 export const STAGED_COURSES: string[] = [
   // Newly created, never reviewed by anyone
+  "the-match",
+  "written-by-himself",
+  "territories-and-representation",
+  "who-signs-the-print",
+  "the-name-on-the-door",
+  "who-gets-named",
   "voice-acting",
   "well-orientation-scope",
   "well-coaching-psychology",
