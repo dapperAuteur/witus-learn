@@ -235,9 +235,7 @@ export default async function CrossLinksPage() {
                     sourceLessonSlug={c.sourceLessonSlug}
                     targetCourseSlug={c.targetCourseSlug}
                     initialState={state}
-                    initialNote={
-                      (approvals.get(key)?.note ?? dismissals.get(key)?.reason ?? "") as string
-                    }
+                    initialNote={approvals.get(key)?.note ?? dismissals.get(key)?.reason ?? ""}
                     targetIsLinkable={Boolean(target.href)}
                   />
 
