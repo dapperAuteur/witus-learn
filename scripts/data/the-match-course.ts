@@ -719,5 +719,618 @@ Congressional Research Service. (2021, June 15). *1890 land-grant universities: 
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 2 — The sentence
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-proviso",
+      title: "5 · The proviso, and who gets to write the split",
+      section: "Section 2 · The sentence",
+      body: `The heading the U.S. Code puts over this section is **"Racial discrimination by colleges restricted."** Read the section, then read the heading again.
+
+**7 U.S.C. § 323**, from the Act of August 30, 1890, in the text in effect on 26 August 2026:
+
+> "No money shall be paid out under this subchapter to any State or Territory for the support or maintenance of a college where a distinction of race or color is made in the admission of students, but the establishment and maintenance of such colleges separately for white and colored students shall be held to be a compliance with the provisions of said sections if the funds received in such State or Territory be equitably divided as hereinafter set forth: Provided, That in any State in which there has been one college established in pursuance of subchapter I of this chapter, and also in which an educational institution of like character has been established, or may be hereafter established, and is on August 30, 1890, aided by such State from its own revenue, for the education of colored students in agriculture and the mechanic arts, however named or styled, or whether or not it has received money prior to August 30, 1890, under said subchapter I, the legislature of such State may propose and report to the Secretary of Agriculture a just and equitable division of the fund to be received under this subchapter between one college for white students and one institution for colored students established as aforesaid, which shall be divided into two parts and paid accordingly." (7 U.S.C. § 323, n.d.)
+
+**Three things are happening in that sentence and they are worth separating.**
+
+**One: the prohibition is real.** Federal money may not go to a college that discriminates in admissions. In 1890, that is not nothing.
+
+**Two: the exception swallows it.** Maintaining separate colleges "shall be held to be a compliance", conditioned only on the funds being "equitably divided". A state did not have to admit anyone. It had to divide a sum.
+
+**Three, and this is the one to carry for the rest of the course: the state legislature writes the division.** The statute says "the legislature of such State may propose and report to the Secretary of Agriculture a just and equitable division". The party that had refused to admit Black students to the existing college is handed the pen that decides what the second institution is worth. **That allocation of authority, from 1890, is the ancestor of every argument in Sections 4 and 5.**
+
+**On the phrase "separate but equal".** It is not in this statute. The statute says "equitably divided" and "of like character", and CRS paraphrases the provision as deeming compliant those states "that created separate institutions 'of like character' for White and non-White students" (Congressional Research Service [CRS], 2021, p. 1). The quotation marks in the CRS sentence are doing honest work: the phrase is the statute's own, and you can find it in the proviso above.
+
+**On the chronology, stated exactly.** The Supreme Court adopted the separate-but-equal doctrine in **Plessy v. Ferguson**, 163 U.S. 537, decided in 1896. The Act of August 30, 1890 is six years earlier. So the structure was written into federal higher-education funding before the Court blessed it in constitutional law. That is a claim about a date, and you can check both dates in an afternoon.
+
+**One more detail that repays attention.** The proviso reaches an institution "however named or styled", and one "established, or may be hereafter established". Congress was writing for institutions that did not exist yet, in states that had not yet decided to create them.
+
+:::reveal Under § 323, what makes a state compliant even though it maintains separate colleges? ||| Dividing the funds equitably between them. The statute says the establishment and maintenance of separate colleges shall be held to be a compliance if the funds are equitably divided.
+
+:::reveal Who does the statute say may propose the division of the fund, and to whom? ||| The legislature of the state, which proposes and reports a just and equitable division to the Secretary of Agriculture.
+
+:::reveal Is the phrase "separate but equal" in the 1890 Act? ||| No. The statute's own words are "equitably divided" and "of like character", and the Supreme Court adopted the separate-but-equal doctrine six years later in Plessy v. Ferguson.
+
+## Vocabulary
+- **Proviso**: the clause beginning "Provided, That" which carves an exception or a condition out of the rule the sentence just stated, and which in § 323 does most of the work.
+- **Of like character**: the statute's phrase for the second institution a state could establish for Black students, and the phrase CRS quotes rather than paraphrases.
+- **Equitably divided**: the only condition the statute places on a state that chooses separate institutions, and a standard the state legislature itself proposes.
+- **Compliance**: the legal finding that a state has met the Act's admissions condition, which the proviso lets a state reach without admitting anybody.
+
+## Sources
+7 U.S.C. § 323. (n.d.). *Racial discrimination by colleges restricted*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title7-section323&num=0&edition=prelim
+
+Congressional Research Service. (2021, June 15). *1890 land-grant universities: Background and selected issues* (In Focus No. IF11847, Version 10). https://www.congress.gov/crs-product/IF11847
+
+Plessy v. Ferguson, 163 U.S. 537 (1896).`,
+    },
+    {
+      slug: "cash-not-land",
+      title: "6 · Cash, not land",
+      section: "Section 2 · The sentence",
+      body: `Here is the single fact that reframes everything people assume about the 1890 institutions, and it is sitting in a chapter heading.
+
+**Subchapter I of chapter 13 of Title 7 is headed "COLLEGE-AID LAND APPROPRIATION."** That is the 1862 Act: land, sold, invested, spent forever.
+
+**Subchapter II is headed "COLLEGE-AID ANNUAL APPROPRIATION."** That is the 1890 Act. Not land. An annual payment.
+
+**7 U.S.C. § 322**, the operative section, in its current text:
+
+> "There is annually appropriated, out of any money in the Treasury not otherwise appropriated, to be paid as provided in section 324 of this title, to each State and Territory for the more complete endowment and maintenance of colleges for the benefit of agriculture and the mechanic arts established in accordance with the provisions of subchapter I of this chapter, $50,000 to be applied only to instruction in food and agricultural sciences, and to the facilities for such instruction." (7 U.S.C. § 322, n.d.)
+
+**So the 1890 Act granted money, not acreage.** The amount was originally $25,000 and the Act of March 4, 1907 substituted $50,000. The phrase "food and agricultural sciences" is not original either: it was substituted in 1981 for a longer nineteenth-century list of subjects.
+
+**What that means for a phrase you will hear constantly.** An 1890 institution genuinely is a land-grant institution: it holds that status in federal law and CRS lists these nineteen universities as part of the land-grant university system (CRS, 2021). But **the 1890 institutions were never given an endowment of land.** So "land-grant HBCU" is exactly true about legal status and quietly misleading about where the money came from, and a learner who assumes the two systems started with comparable endowments has misread the century.
+
+**The comparison, laid out:**
+
+| | 1862 institutions | 1890 institutions |
+| --- | --- | --- |
+| What the Act granted | Public land, or scrip for it | An annual cash appropriation |
+| Code subchapter heading | College-Aid Land Appropriation | College-Aid Annual Appropriation |
+| What the state was left holding | A perpetual fund it invests | A yearly payment it divides |
+| Who decides the split | Not applicable, one college | The state legislature, under § 323 |
+
+**One statutory note this course reports and does not interpret.** The U.S. Code carries a note under § 322 recording Public Law 103-330, title VII, § 724, of 30 September 1994, which provided that "No funds shall be available in fiscal year 1995 and thereafter for payments under the Act of August 30, 1890 and the tenth and eleventh paragraphs under the heading 'Emergency Appropriations' of the Act of March 4, 1907 (7 U.S.C. 321 et seq.)" (7 U.S.C. § 322, n.d.). That is what the note says. What it did in practice to the institutions, and how it sits beside the capacity grants Section 3 covers, is a question this course has filed rather than answered, because guessing at it would be worse than leaving the gap visible.
+
+:::reveal What did the 1890 Act grant, and what did the 1862 Act grant? ||| The 1890 Act granted an annual cash appropriation; the 1862 Act granted public land or scrip for it.
+
+:::reveal What are the two U.S. Code subchapter headings that carry this distinction? ||| College-Aid Land Appropriation for the 1862 subchapter and College-Aid Annual Appropriation for the 1890 one.
+
+:::reveal In what sense is "land-grant HBCU" accurate, and in what sense is it misleading? ||| Accurate about legal status, since these institutions hold land-grant status in federal law, and misleading about endowment, since they were never granted land.
+
+## Vocabulary
+- **Annual appropriation**: money Congress provides year by year out of the Treasury, which is a different kind of promise from a one-time grant of an asset.
+- **More complete endowment**: the 1890 Act's own phrase for what its payment was for, which is a claim about topping up the 1862 endowment rather than creating a second one.
+- **Statutory note**: an enacted provision printed alongside a Code section rather than inside it, which carries the same legal force and is easy to miss.
+- **Codified text**: the U.S. Code's current version of a statute, which may differ in wording from the Statutes at Large original because of later amendments.
+
+## Sources
+7 U.S.C. § 322. (n.d.). *Annual appropriation*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title7-section322&num=0&edition=prelim
+
+Congressional Research Service. (2021, June 15). *1890 land-grant universities: Background and selected issues* (In Focus No. IF11847, Version 10). https://www.congress.gov/crs-product/IF11847`,
+    },
+    {
+      slug: "the-roster-still-changes",
+      title: "7 · The roster, and the fact that it still changes",
+      section: "Section 2 · The sentence",
+      body: `People treat the land-grant roster as settled history. It is a list maintained by statute, and it changed within the last twelve years.
+
+**The counts, from CRS as of June 2021** (CRS, 2021, p. 1 and Table 1):
+
+| Type | Institutions | Undergraduates | Graduate students |
+| --- | --- | --- | --- |
+| 1862 | 57 | 1,534,525 | 446,014 |
+| 1890 | 19 | 89,544 | 14,734 |
+| 1994 | 35 | 23,481 | 273 |
+
+**Nineteen institutions in eighteen states.** The arithmetic works because **Alabama has two**, Alabama A&M University and Tuskegee University, and CRS notes that "for funding purposes, Alabama's two 1890 Institutions ... are treated as though they are located in separate states" (CRS, 2021, p. 1).
+
+**Tuskegee is private, and it is an 1890 land-grant institution.** That combination confuses people reliably, and the statute explains it: Tuskegee does not qualify under the 1890 Act, so Congress writes it in by name. The extension capacity grant is codified under the heading **"Extension at 1890 land-grant colleges, including Tuskegee University"**, and the matching-funds section defines an eligible institution as "a college eligible to receive funds under the Act of August 30, 1890 ... including Tuskegee University" (7 U.S.C. § 3221, n.d.; 7 U.S.C. § 3222d, n.d.). **When a statute names one institution, that is worth noticing.** It usually means the general rule does not reach it.
+
+**The nineteenth arrived in 2014.** Section 7129 of the Agricultural Act of 2014 (Pub. L. 113-79, 7 February 2014) is titled "Designation of Central State University as 1890 institution", and provides that "any provision of a Federal law relating to colleges and universities eligible to receive funds under the Act of August 30, 1890 ..., including Tuskegee University, shall apply to Central State University" (Agricultural Act of 2014, § 7129).
+
+**And read subsection (b) before you call that a happy ending.** The same section provides that "notwithstanding the designation under subsection (a), for fiscal years 2014 and 2015, Central State University shall not be eligible to receive formula funds" under the 1890 research and extension capacity grants, Smith-Lever 3(d), the Renewable Resources Extension Act, or McIntire-Stennis (Agricultural Act of 2014, § 7129(b)). **Designated, and expressly barred from the capacity money for two years.**
+
+**One thing this course will not tell you: the current number of 1994 institutions.** CRS reported 35 as of June 2021. The statutory definition list printed as a note to 7 U.S.C. § 301 has been amended repeatedly, including by the 2014 and 2018 farm bills, and as it currently stands it names 36 colleges (7 U.S.C. § 301, n.d.). Those two numbers are counting slightly different things at different dates, and a course that picked whichever one it preferred would be doing the thing this catalog exists to stop. **Cite the count with the source and the date attached, every time, or do not cite it.**
+
+:::reveal How can there be nineteen 1890 institutions in eighteen states? ||| Alabama holds two, Alabama A&M and Tuskegee, and for funding purposes they are treated as though they were in separate states.
+
+:::reveal Why do the 1890 funding statutes name Tuskegee University explicitly? ||| Because Tuskegee is private and does not qualify under the general terms of the 1890 Act, so Congress writes it in by name.
+
+:::reveal What did section 7129 of the 2014 farm bill do, and what did its second subsection do? ||| It designated Central State University as an 1890 institution, and then barred it from receiving 1890 formula funds for fiscal years 2014 and 2015.
+
+## Vocabulary
+- **Roster**: the list of institutions holding a given land-grant status, maintained by statute rather than by custom, and therefore amendable.
+- **Formula funds**: another name for capacity grants, and the specific money Central State was designated into and then barred from for two years.
+- **Designation**: the statutory act of extending an existing status to a named institution, used here because the institution could not reach the status under the general rule.
+- **McIntire-Stennis**: the cooperative forestry research programme named in the 2014 restriction, listed here because the restriction reached beyond the two obvious capacity grants.
+
+## Sources
+7 U.S.C. § 301. (n.d.). *Land grant aid of colleges* [including the Equity in Educational Land-Grant Status Act of 1994 note]. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title7-section301&num=0&edition=prelim
+
+7 U.S.C. § 3221. (n.d.). *Extension at 1890 land-grant colleges, including Tuskegee University*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title7-section3221&num=0&edition=prelim
+
+7 U.S.C. § 3222d. (n.d.). *Matching funds requirement for research and extension activities at eligible institutions*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title7-section3222d&num=0&edition=prelim
+
+Agricultural Act of 2014, Pub. L. No. 113-79, § 7129, 128 Stat. 649 (2014). https://www.govinfo.gov/content/pkg/PLAW-113publ79/html/PLAW-113publ79.htm
+
+Congressional Research Service. (2021, June 15). *1890 land-grant universities: Background and selected issues* (In Focus No. IF11847, Version 10). https://www.congress.gov/crs-product/IF11847`,
+    },
+    {
+      slug: "quiz-the-sentence",
+      title: "8 · Knowledge check: the sentence",
+      section: "Section 2 · The sentence",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What heading does the U.S. Code put over 7 U.S.C. § 323?",
+            options: ["Racial discrimination by colleges restricted", "Equitable division of funds between colleges for white and colored students", "Conditions on the annual appropriation to agricultural and mechanical colleges", "Compliance of the several states with the college-aid appropriation"],
+            correctIndex: 0,
+            explanation: "The heading says restricted, and the proviso underneath it is what permits the separate colleges.",
+            sourceLessonSlug: "the-proviso",
+          },
+          {
+            prompt: "Under § 323, no money may be paid to a state for a college that makes a distinction of race or color in what?",
+            options: ["The admission of students", "The appointment of faculty and the composition of its governing board", "The award of scholarships funded from the state's own revenue", "The selection of students for its agricultural experiment station"],
+            correctIndex: 0,
+            explanation: "The prohibition reaches admissions only, which is narrower than it first sounds.",
+            sourceLessonSlug: "the-proviso",
+          },
+          {
+            prompt: "What single condition does § 323 attach to a state that maintains separate colleges?",
+            options: ["The funds are equitably divided", "The two colleges offer identical courses of instruction in agriculture and the mechanic arts", "The second institution is accredited by the same body as the first within five years", "The Secretary of Agriculture personally inspects both institutions each year"],
+            correctIndex: 0,
+            explanation: "Separate maintenance is held to be a compliance if the funds received are equitably divided.",
+            sourceLessonSlug: "the-proviso",
+          },
+          {
+            prompt: "Who does § 323 say may propose the division of the fund?",
+            options: ["The state legislature", "The Secretary of Agriculture, after consulting both institutions' presidents", "The board of trustees of the existing 1862 college in that state", "A joint commission of the two institutions appointed by the governor"],
+            correctIndex: 0,
+            explanation: "The legislature proposes and reports a just and equitable division to the Secretary of Agriculture.",
+            sourceLessonSlug: "the-proviso",
+          },
+          {
+            prompt: "Why does this course call the allocation of that authority the ancestor of the later arguments?",
+            options: ["The state writes the split", "Because the Secretary of Agriculture was given no role in the process at all", "Because the statute set the split at a fixed percentage that has never been revised", "Because Congress reserved the right to overturn any division it considered unjust"],
+            correctIndex: 0,
+            explanation: "The party that had refused to admit Black students to the existing college decides what the second institution is worth.",
+            sourceLessonSlug: "the-proviso",
+          },
+          {
+            prompt: "Does the phrase separate but equal appear in the 1890 Act?",
+            options: ["No", "Yes, in the proviso, immediately before the words equitably divided", "Yes, but only in the section heading rather than in the operative text", "Yes, in an amendment added by the Act of March 4, 1907"],
+            correctIndex: 0,
+            explanation: "The statute's own words are equitably divided and of like character; the doctrine got its name six years later.",
+            sourceLessonSlug: "the-proviso",
+          },
+          {
+            prompt: "Which phrase in § 323 does CRS quote rather than paraphrase when describing the second institution?",
+            options: ["Of like character", "Separately for white and colored students", "However named or styled", "Aided by such State from its own revenue"],
+            correctIndex: 0,
+            explanation: "CRS puts of like character in quotation marks precisely because the phrase is statutory.",
+            sourceLessonSlug: "the-proviso",
+          },
+          {
+            prompt: "In what year was Plessy v. Ferguson decided?",
+            options: ["1896", "1890, the same year Congress passed the Second Morrill Act", "1883, the year the investment provision of the 1862 Act was amended", "1907, the year the annual appropriation was raised to $50,000"],
+            correctIndex: 0,
+            explanation: "163 U.S. 537, decided in 1896, which is six years after the Act of August 30, 1890.",
+            sourceLessonSlug: "the-proviso",
+          },
+          {
+            prompt: "What is the Statutes at Large citation for the 1890 Act?",
+            options: ["26 Stat. 417", "12 Stat. 503, the page carrying the original land grant", "108 Stat. 4048, the page carrying the 1994 land-grant status provisions", "128 Stat. 649, the first page of the Agricultural Act of 2014"],
+            correctIndex: 0,
+            explanation: "Act of August 30, 1890, ch. 841, § 1, 26 Stat. 417, as the Code's source credit records.",
+            sourceLessonSlug: "the-proviso",
+          },
+          {
+            prompt: "The proviso reaches an institution described as established, or as what?",
+            options: ["May be hereafter established", "Chartered by the state before the Civil War and continuously operated since", "Recognised by the Secretary of the Interior as an agricultural college", "Operating a farm of not less than two hundred acres"],
+            correctIndex: 0,
+            explanation: "Congress was writing for institutions that did not yet exist in states that had not yet decided to create them.",
+            sourceLessonSlug: "the-proviso",
+          },
+          {
+            prompt: "The proviso applies to an institution aided by the state from what source, as of 30 August 1890?",
+            options: ["Its own revenue", "The proceeds of the state's original 1862 land grant, held in the perpetual fund", "Federal appropriations already received under the first Morrill Act", "Private endowments raised by the institution's founders and alumni"],
+            correctIndex: 0,
+            explanation: "Aided by such State from its own revenue, for the education of colored students in agriculture and the mechanic arts.",
+            sourceLessonSlug: "the-proviso",
+          },
+          {
+            prompt: "What phrase in the proviso covers institutions whatever they happened to call themselves?",
+            options: ["However named or styled", "Of like character, or its equivalent under state law", "Whether or not it has received money prior to August 30, 1890", "Established as aforesaid, in the state's own judgment"],
+            correctIndex: 0,
+            explanation: "However named or styled, which kept the proviso from turning on a title.",
+            sourceLessonSlug: "the-proviso",
+          },
+          {
+            prompt: "Into how many parts does § 323 say the fund shall be divided in a state using the proviso?",
+            options: ["Two", "Three, adding a share for the state's agricultural experiment station", "As many parts as the state maintains separate institutions", "One, with the second institution paid from the state's own revenue instead"],
+            correctIndex: 0,
+            explanation: "Two parts, between one college for white students and one institution for colored students, paid accordingly.",
+            sourceLessonSlug: "the-proviso",
+          },
+          {
+            prompt: "What is the honest way to state the 1890 Act's relation to Plessy?",
+            options: ["The structure came first", "The Act codified the holding in Plessy within six years of the decision", "The Act was struck down in Plessy and re-enacted in amended form", "The Act and the decision were unrelated, since one concerns transport and the other education"],
+            correctIndex: 0,
+            explanation: "The funding structure was enacted in 1890 and the Court adopted the doctrine in 1896, which is a claim about two checkable dates.",
+            sourceLessonSlug: "the-proviso",
+          },
+          {
+            prompt: "How does this course describe what the exception in § 323 does to the prohibition in the same sentence?",
+            options: ["It swallows it", "It narrows it to states that had already established a second institution", "It suspends it for a period of ten years from the date of enactment", "It transfers enforcement of it from the Secretary to the federal courts"],
+            correctIndex: 0,
+            explanation: "A state did not have to admit anyone; it had to divide a sum.",
+            sourceLessonSlug: "the-proviso",
+          },
+          {
+            prompt: "What is the heading of U.S. Code Subchapter II of chapter 13 of Title 7?",
+            options: ["College-aid annual appropriation", "College-aid land appropriation, the same heading as Subchapter I", "Racial discrimination by colleges restricted", "Agricultural experiment stations and extension work"],
+            correctIndex: 0,
+            explanation: "Annual, against Subchapter I's land, and the difference between the two headings is the whole lesson.",
+            sourceLessonSlug: "cash-not-land",
+          },
+          {
+            prompt: "What did the 1890 Act grant to the states?",
+            options: ["An annual cash appropriation", "Thirty thousand acres for each senator and representative, on the 1890 apportionment", "Land scrip locatable on unappropriated federal land in the western territories", "A perpetual fund whose capital was to remain forever undiminished"],
+            correctIndex: 0,
+            explanation: "Money out of the Treasury, paid annually, which is why the 1890 institutions never received a land endowment.",
+            sourceLessonSlug: "cash-not-land",
+          },
+          {
+            prompt: "What is the current annual figure named in 7 U.S.C. § 322?",
+            options: ["$50,000", "$25,000, the amount originally set by the 1890 Act and never changed", "$3,000,000, the floor written into the extension capacity grant", "$124 million, the annual capacity funding the 1890 institutions received in FY2020"],
+            correctIndex: 0,
+            explanation: "The Act of March 4, 1907 substituted $50,000 for the original $25,000.",
+            sourceLessonSlug: "cash-not-land",
+          },
+          {
+            prompt: "What was the original annual amount under the 1890 Act?",
+            options: ["$25,000", "$50,000, reduced to $25,000 during the retrenchment of the 1890s", "$15,000, rising by $1,000 a year to a ceiling of $25,000", "There was no fixed amount; Congress appropriated what it chose each year"],
+            correctIndex: 0,
+            explanation: "The 1907 Act substituted $50,000 for $25,000 and inserted the proviso about preparing instructors.",
+            sourceLessonSlug: "cash-not-land",
+          },
+          {
+            prompt: "The phrase food and agricultural sciences entered § 322 in which year's amendment?",
+            options: ["1981", "1890, as part of the original enactment of the Second Morrill Act", "1907, when the annual amount was doubled", "1994, when payments under the section were discontinued"],
+            correctIndex: 0,
+            explanation: "The 1981 amendment substituted it for a longer nineteenth-century list of subjects.",
+            sourceLessonSlug: "cash-not-land",
+          },
+          {
+            prompt: "In what sense is the phrase land-grant HBCU accurate?",
+            options: ["Legal status", "Endowment, since those institutions received acreage under the 1890 Act", "Campus location, since the campuses sit on former federal public domain", "Curriculum, since the institutions teach agriculture and the mechanic arts"],
+            correctIndex: 0,
+            explanation: "Land-grant is a status in federal law, and the 1890 institutions genuinely hold it.",
+            sourceLessonSlug: "cash-not-land",
+          },
+          {
+            prompt: "In what sense is the phrase land-grant HBCU misleading?",
+            options: ["Endowment", "Legal status, since the designation is informal rather than statutory", "Eligibility, since those institutions cannot receive federal agricultural funds", "Governance, since the institutions are not answerable to their state legislatures"],
+            correctIndex: 0,
+            explanation: "The 1890 institutions were never given an endowment of land, so the phrase implies a starting position they never had.",
+            sourceLessonSlug: "cash-not-land",
+          },
+          {
+            prompt: "The § 322 appropriation is directed to colleges established under which subchapter?",
+            options: ["Subchapter I", "Subchapter II, the subchapter the section itself sits in", "Subchapter VI of chapter 64, which carries the 1890 capacity grants", "Whichever subchapter the state legislature designates in its plan"],
+            correctIndex: 0,
+            explanation: "The money goes to colleges established under the 1862 subchapter, and § 323 is what splits it in a segregating state.",
+            sourceLessonSlug: "cash-not-land",
+          },
+          {
+            prompt: "The 1890 Act's payment is described in § 322 as being for what?",
+            options: ["More complete endowment and maintenance", "The construction of dormitories, libraries and laboratory buildings", "The purchase of additional farmland adjoining each college", "Scholarships for students unable to pay the college's tuition"],
+            correctIndex: 0,
+            explanation: "More complete endowment and maintenance, which frames the money as topping up the 1862 endowment rather than creating a second one.",
+            sourceLessonSlug: "cash-not-land",
+          },
+          {
+            prompt: "What does the statutory note under § 322 record about fiscal year 1995 and after?",
+            options: ["No funds available for those payments", "That the annual amount was raised from $50,000 to $250,000 per state", "That payments were transferred from the Secretary of Agriculture to the Secretary of Education", "That the payments were made permanent and indefinite in amount"],
+            correctIndex: 0,
+            explanation: "Public Law 103-330 § 724 provided that no funds shall be available in FY1995 and thereafter for payments under the Act of August 30, 1890.",
+            sourceLessonSlug: "cash-not-land",
+          },
+          {
+            prompt: "How does this course treat that 1994 statutory note?",
+            options: ["Reports it without interpreting it", "Presents it as proof that federal support for the 1890 institutions ended in 1995", "Omits it, on the grounds that a note carries no legal force", "Treats it as an error in the Code that the Law Revision Counsel has since acknowledged"],
+            correctIndex: 0,
+            explanation: "What it did in practice is filed as an open question rather than guessed at, because a guess would be worse than a visible gap.",
+            sourceLessonSlug: "cash-not-land",
+          },
+          {
+            prompt: "According to CRS, how many 1862 institutions are there?",
+            options: ["57", "19, matching the number of historically Black land-grant institutions", "35, matching the number of tribal land-grant institutions", "52, the number of institutions the Morrill Act investigation identified as beneficiaries"],
+            correctIndex: 0,
+            explanation: "CRS gives 57 original land-grant universities, 19 in the 1890 group and 35 in the 1994 group as of June 2021.",
+            sourceLessonSlug: "the-roster-still-changes",
+          },
+          {
+            prompt: "According to CRS, how many 1890 institutions are there?",
+            options: ["19", "18, the number named in the 2013 policy brief on state matching funds", "16, the number of governors who received the 2023 federal letters", "57, matching the count of original land-grant universities"],
+            correctIndex: 0,
+            explanation: "Nineteen, in eighteen states, because Alabama holds two of them.",
+            sourceLessonSlug: "the-roster-still-changes",
+          },
+          {
+            prompt: "How many states hold an 1890 institution?",
+            options: ["18", "19, one for each institution in the group", "16, matching the number of governors who received the 2023 letters", "50, since every state was required to designate one"],
+            correctIndex: 0,
+            explanation: "Nineteen institutions in eighteen states, and the arithmetic works because of Alabama.",
+            sourceLessonSlug: "the-roster-still-changes",
+          },
+          {
+            prompt: "Which state holds two 1890 institutions?",
+            options: ["Alabama", "Louisiana, which holds both Southern University and Grambling State University", "North Carolina, which holds North Carolina A&T and Elizabeth City State", "Ohio, which holds both Central State University and Wilberforce University"],
+            correctIndex: 0,
+            explanation: "Alabama A&M University and Tuskegee University, which for funding purposes are treated as though in separate states.",
+            sourceLessonSlug: "the-roster-still-changes",
+          },
+          {
+            prompt: "How does CRS say Alabama's two 1890 institutions are treated for funding purposes?",
+            options: ["As though in separate states", "As a single institution splitting one state allocation between two campuses", "As one 1890 institution and one 1862 institution respectively", "As institutions of a territory rather than of a state"],
+            correctIndex: 0,
+            explanation: "Treating them as separate states is what keeps the per-state formula workable with two institutions in one state.",
+            sourceLessonSlug: "the-roster-still-changes",
+          },
+          {
+            prompt: "What is unusual about Tuskegee University's position in the land-grant system?",
+            options: ["It is private", "It is the only 1890 institution located outside the states of the former Confederacy", "It holds both 1862 and 1890 status simultaneously", "It receives capacity funding directly rather than through its state"],
+            correctIndex: 0,
+            explanation: "A private university holding 1890 land-grant status, which is why the statutes have to name it.",
+            sourceLessonSlug: "the-roster-still-changes",
+          },
+          {
+            prompt: "Why do the 1890 funding statutes name Tuskegee University by name?",
+            options: ["It does not qualify generally", "Because Congress wished to honour Booker T. Washington's founding of the institution", "Because it is the largest of the 1890 institutions by enrollment", "Because Alabama's legislature declined to include it in the state's own division of funds"],
+            correctIndex: 0,
+            explanation: "When a statute names one institution, it usually means the general rule does not reach it.",
+            sourceLessonSlug: "the-roster-still-changes",
+          },
+          {
+            prompt: "What is the heading of 7 U.S.C. § 3221?",
+            options: ["Extension at 1890 land-grant colleges, including Tuskegee University", "Matching funds requirement for research and extension activities at eligible institutions", "Racial discrimination by colleges restricted", "Authorization of appropriations and allotments of grants"],
+            correctIndex: 0,
+            explanation: "The heading names Tuskegee, which is a visible trace of the drafting problem the institution's private status creates.",
+            sourceLessonSlug: "the-roster-still-changes",
+          },
+          {
+            prompt: "Which statute designated Central State University as an 1890 institution?",
+            options: ["The Agricultural Act of 2014", "The National Agricultural Research, Extension, and Teaching Policy Act of 1977", "The Equity in Educational Land-Grant Status Act of 1994", "The Agriculture Improvement Act of 2018"],
+            correctIndex: 0,
+            explanation: "Section 7129 of Pub. L. 113-79, signed 7 February 2014, which is why a 2013 brief lists eighteen institutions and a 2021 CRS lists nineteen.",
+            sourceLessonSlug: "the-roster-still-changes",
+          },
+          {
+            prompt: "In which state is Central State University?",
+            options: ["Ohio", "Delaware, the other state the 2023 letters found had funded equitably", "West Virginia, whose 1890 institution is West Virginia State University", "Missouri, whose 1890 institution is Lincoln University"],
+            correctIndex: 0,
+            explanation: "Ohio, and Ohio is one of the two states the 2023 federal letters did not go to.",
+            sourceLessonSlug: "the-roster-still-changes",
+          },
+          {
+            prompt: "What did subsection (b) of the 2014 designation do to Central State University?",
+            options: ["Barred it from formula funds for two years", "Required it to raise a private endowment matching the federal designation", "Limited its designation to research grants and excluded extension permanently", "Made the designation conditional on approval by the Ohio legislature"],
+            correctIndex: 0,
+            explanation: "For fiscal years 2014 and 2015 it could not receive the 1890 capacity grants, Smith-Lever 3(d), the Renewable Resources Extension Act or McIntire-Stennis.",
+            sourceLessonSlug: "the-roster-still-changes",
+          },
+          {
+            prompt: "Which of these programmes was named in Central State's two-year funding restriction?",
+            options: ["McIntire-Stennis", "The Hatch Act experiment station allotment", "The 1890 Facilities Grant Program", "The USDA/1890 National Scholars Program"],
+            correctIndex: 0,
+            explanation: "The restriction reached beyond the two obvious capacity grants to Smith-Lever 3(d), the Renewable Resources Extension Act and McIntire-Stennis cooperative forestry.",
+            sourceLessonSlug: "the-roster-still-changes",
+          },
+          {
+            prompt: "What is the section number of the Central State designation in the 2014 farm bill?",
+            options: ["7129", "7116, which carries the annual reporting requirement on capacity funding and matching", "1449, the matching-funds section of the 1977 policy act", "532, the definition of a 1994 institution"],
+            correctIndex: 0,
+            explanation: "Section 7129 of Pub. L. 113-79, printed in the Code as a note to 7 U.S.C. § 321.",
+            sourceLessonSlug: "the-roster-still-changes",
+          },
+          {
+            prompt: "What count does this course decline to state for the 1994 institutions?",
+            options: ["The current one", "The number CRS reported in June 2021", "The number named in the original 1994 statute", "The number of states those institutions are located in"],
+            correctIndex: 0,
+            explanation: "CRS reported 35 as of June 2021 and the current statutory list names 36, so the count is cited with its source and date or not at all.",
+            sourceLessonSlug: "the-roster-still-changes",
+          },
+          {
+            prompt: "How many colleges does the statutory definition list of 1994 institutions currently name?",
+            options: ["36", "29, the number designated when the Act was passed in 1994", "35, the figure CRS reported as of June 2021", "19, matching the number of 1890 institutions"],
+            correctIndex: 0,
+            explanation: "The list printed as a note to 7 U.S.C. § 301 has been amended repeatedly and as it stands names 36 colleges.",
+            sourceLessonSlug: "the-roster-still-changes",
+          },
+          {
+            prompt: "What is the rule this course states about citing an institution count?",
+            options: ["Attach the source and the date", "Prefer the higher figure, since counts of this kind are always understated", "Use only figures published by the Congressional Research Service", "Round to the nearest five so that changes do not falsify the text"],
+            correctIndex: 0,
+            explanation: "Two sources counting slightly different things at different dates will disagree, and picking a preferred one is the failure to avoid.",
+            sourceLessonSlug: "the-roster-still-changes",
+          },
+          {
+            prompt: "According to CRS Table 1, how many undergraduates were enrolled at the 1890 institutions?",
+            options: ["89,544", "1,534,525, the figure for the 1862 institutions", "23,481, the figure for the 1994 institutions", "446,014, the graduate figure for the 1862 institutions"],
+            correctIndex: 0,
+            explanation: "The table is drawn from NCES IPEDS twelve-month enrollment data for 2019 to 2020.",
+            sourceLessonSlug: "the-roster-still-changes",
+          },
+          {
+            prompt: "According to CRS Table 1, how many graduate students were enrolled at the 1994 institutions?",
+            options: ["273", "14,734, the graduate figure for the 1890 institutions", "23,481, the undergraduate figure for the 1994 institutions", "446,014, the graduate figure for the 1862 institutions"],
+            correctIndex: 0,
+            explanation: "273 graduate students across all 35 institutions, against 446,014 at the 1862 institutions.",
+            sourceLessonSlug: "the-roster-still-changes",
+          },
+          {
+            prompt: "Which data source does CRS cite for the enrollment figures in its table?",
+            options: ["NCES IPEDS", "The Census of Agriculture published by the National Agricultural Statistics Service", "The National Institute of Food and Agriculture's annual plan of work filings", "Enrollment returns submitted by the institutions directly to the Secretary of Agriculture"],
+            correctIndex: 0,
+            explanation: "Twelve-month 2019 to 2020 enrollment data from the National Center for Education Statistics Integrated Postsecondary Education Data System.",
+            sourceLessonSlug: "the-roster-still-changes",
+          },
+          {
+            prompt: "The land-grant roster is best described as which of these?",
+            options: ["A list maintained by statute", "A historical record fixed by the two Morrill Acts and unchanged since 1890", "An administrative designation the Secretary of Agriculture may grant or withdraw", "A membership list maintained by the association of public and land-grant universities"],
+            correctIndex: 0,
+            explanation: "It is amendable, and it was amended within the last twelve years.",
+            sourceLessonSlug: "the-roster-still-changes",
+          },
+          {
+            prompt: "Why does a 2013 policy brief count eighteen 1890 institutions while a 2021 CRS document counts nineteen?",
+            options: ["Central State was added in 2014", "Because the 2013 brief excluded Tuskegee as a private institution", "Because two institutions merged between the two publication dates", "Because the 2021 document counts campuses rather than universities"],
+            correctIndex: 0,
+            explanation: "The roster changed between the two documents, which is exactly why a count needs its date attached.",
+            sourceLessonSlug: "the-roster-still-changes",
+          },
+          {
+            prompt: "How does § 322's own text describe the source of the money it appropriates?",
+            options: ["Any money in the Treasury not otherwise appropriated", "The proceeds of sales of the public domain in the western territories", "Receipts from customs duties on imported agricultural products", "The interest accruing on each state's 1862 perpetual fund"],
+            correctIndex: 0,
+            explanation: "That standing phrase is what makes it an appropriation rather than a grant of an asset.",
+            sourceLessonSlug: "cash-not-land",
+          },
+          {
+            prompt: "What does § 322 say the money may be applied to only?",
+            options: ["Instruction and its facilities", "The purchase and improvement of land for the college's demonstration farm", "The salaries of the college's president and its board of trustees", "Any purpose the state legislature designates in its biennial budget"],
+            correctIndex: 0,
+            explanation: "Applied only to instruction in food and agricultural sciences, and to the facilities for such instruction.",
+            sourceLessonSlug: "cash-not-land",
+          },
+          {
+            prompt: "What proviso did the Act of March 4, 1907 insert into § 322?",
+            options: ["Preparing instructors", "A requirement that states match the appropriation dollar for dollar", "An exemption for states maintaining separate colleges", "A ceiling on how much could be spent on facilities in any one year"],
+            correctIndex: 0,
+            explanation: "The colleges may use a portion of the money for courses specially preparing instructors to teach the subject.",
+            sourceLessonSlug: "cash-not-land",
+          },
+          {
+            prompt: "Which of these is the correct reading of the two Morrill Acts side by side?",
+            options: ["One granted land, the other money", "Both granted land, in different quantities and at different dates", "Both granted money, with the 1890 amount indexed to the 1862 acreage", "One granted money and the other granted a matching requirement"],
+            correctIndex: 0,
+            explanation: "That difference is preserved in the U.S. Code's own subchapter headings and is the reason the endowments were never comparable.",
+            sourceLessonSlug: "cash-not-land",
+          },
+          {
+            prompt: "The word restricted in the heading of § 323 sits over a provision that in practice does what?",
+            options: ["Permits separate institutions", "Bars any state maintaining segregated colleges from receiving the appropriation", "Requires desegregation of the existing college within ten years", "Leaves the admissions question entirely to the Secretary of Agriculture"],
+            correctIndex: 0,
+            explanation: "The prohibition on discriminatory admissions is real, and the proviso underneath it makes separate maintenance a compliance.",
+            sourceLessonSlug: "the-proviso",
+          },
+          {
+            prompt: "What must a state have already had, for the § 323 proviso to be available to it?",
+            options: ["A college established under Subchapter I", "Two colleges of like character, one for each group of students", "A state constitutional provision requiring separate schools", "An agricultural experiment station funded under the Hatch Act"],
+            correctIndex: 0,
+            explanation: "The proviso opens with any State in which there has been one college established in pursuance of subchapter I of this chapter.",
+            sourceLessonSlug: "the-proviso",
+          },
+          {
+            prompt: "Does the § 323 proviso require the second institution to have received Morrill money before 1890?",
+            options: ["No", "Yes, and continuously for at least five years before the Act", "Yes, unless the state legislature certifies otherwise to the Secretary", "The statute is silent, so the Secretary decided it case by case"],
+            correctIndex: 0,
+            explanation: "The proviso expressly reaches an institution whether or not it has received money prior to August 30, 1890.",
+            sourceLessonSlug: "the-proviso",
+          },
+          {
+            prompt: "What officer does § 323 name as the recipient of the state's proposed division?",
+            options: ["The Secretary of Agriculture", "The Secretary of the Interior, who administered the original land grants", "The Commissioner of Education in the Department of the Interior", "The Comptroller of the Treasury, who certified the payments"],
+            correctIndex: 0,
+            explanation: "The current text names the Secretary of Agriculture, following the transfer-of-functions notes the Code records.",
+            sourceLessonSlug: "the-proviso",
+          },
+          {
+            prompt: "How does the CRS summary describe what the Morrill Act of 1890 did about admissions?",
+            options: ["Prohibited racial discrimination", "Required each state to admit Black students to its existing land-grant college", "Left admissions entirely to the discretion of each institution's trustees", "Conditioned the appropriation on the desegregation of the state's public schools"],
+            correctIndex: 0,
+            explanation: "CRS says it provided funding and prohibited racial discrimination in student admissions for recipient institutions, then notes the compliance provision.",
+            sourceLessonSlug: "the-proviso",
+          },
+          {
+            prompt: "What does the U.S. Code's codification note say about § 322 and § 323?",
+            options: ["Both come from section 1 of the 1890 Act", "They come from two different statutes enacted six years apart", "Section 323 was added by amendment in 1907", "Section 322 was repealed and re-enacted in 1981"],
+            correctIndex: 0,
+            explanation: "Section 322 is based on part of section 1 of the Act of August 30, 1890, and the remainder of that section is classified to § 323.",
+            sourceLessonSlug: "cash-not-land",
+          },
+          {
+            prompt: "A state using the § 323 proviso divides which fund between its two institutions?",
+            options: ["The annual appropriation", "The perpetual fund created from the 1862 land sales", "The Hatch Act allotment to its agricultural experiment station", "Its own general-revenue appropriation for higher education"],
+            correctIndex: 0,
+            explanation: "The fund to be received under this subchapter is the § 322 annual appropriation, not the 1862 endowment.",
+            sourceLessonSlug: "the-proviso",
+          },
+          {
+            prompt: "What does this course say a learner has misread if they assume the two systems started with comparable endowments?",
+            options: ["The century", "The distinction between capacity grants and competitive grants", "The difference between a state and a territory under the Acts", "The role of the Secretary of Agriculture in approving the division"],
+            correctIndex: 0,
+            explanation: "The 1890 institutions were never given an endowment of land, so their starting position was never comparable.",
+            sourceLessonSlug: "cash-not-land",
+          },
+          {
+            prompt: "How many 1890 institutions did the Alabama arithmetic require CRS to explain?",
+            options: ["Two in one state", "One in two states, split across a shared campus", "Three, counting Tuskegee's separate extension programme", "None, since Alabama's institutions are counted as territories"],
+            correctIndex: 0,
+            explanation: "Nineteen institutions in eighteen states only reconciles because Alabama A&M and Tuskegee are both in Alabama.",
+            sourceLessonSlug: "the-roster-still-changes",
+          },
+          {
+            prompt: "Which document type does this course say is the right way to settle whether a roster has changed?",
+            options: ["The amending statute", "A press release from the institution that was added", "An encyclopedia entry citing the institution's founding date", "The association of public and land-grant universities' membership list"],
+            correctIndex: 0,
+            explanation: "Section 7129 of the 2014 farm bill is what settles Central State, and it is three sentences long.",
+            sourceLessonSlug: "the-roster-still-changes",
+          },
+          {
+            prompt: "What does the phrase designated and then barred describe in this course?",
+            options: ["Central State in 2014 and 2015", "Tuskegee's position under the 1890 Act before Congress named it", "The 1994 institutions' access to research capacity funding", "Alabama A&M's treatment under the per-state funding formula"],
+            correctIndex: 0,
+            explanation: "The same section that designated Central State expressly withheld the formula funds for two fiscal years.",
+            sourceLessonSlug: "the-roster-still-changes",
+          },
+          {
+            prompt: "Which two words separate the U.S. Code headings over the 1862 and the 1890 subchapters?",
+            options: ["Land and annual", "College and university", "Aid and grant", "Appropriation and endowment"],
+            correctIndex: 0,
+            explanation: "College-Aid Land Appropriation against College-Aid Annual Appropriation, and everything else in the two headings is identical.",
+            sourceLessonSlug: "cash-not-land",
+          },
+          {
+            prompt: "What kind of promise is an annual appropriation, compared with a grant of an asset?",
+            options: ["A yearly one", "A permanent one, since appropriations may not be reduced once enacted", "An identical one, since both are enforceable against the Treasury indefinitely", "A conditional one, since an asset grant carries no purpose restriction"],
+            correctIndex: 0,
+            explanation: "An asset once granted stays granted; an annual payment depends on Congress providing it each year, which is what the 1994 note shows.",
+            sourceLessonSlug: "cash-not-land",
+          },
+          {
+            prompt: "What did the 1907 Act do to the amount in § 322?",
+            options: ["Doubled it", "Halved it, as a wartime economy measure", "Indexed it to the number of students enrolled at each college", "Left it unchanged while adding the instruction-only restriction"],
+            correctIndex: 0,
+            explanation: "It substituted $50,000 for $25,000, and that $50,000 is still the figure printed in the section today.",
+            sourceLessonSlug: "cash-not-land",
+          },
+          {
+            prompt: "Under § 323, what does a state have to divide rather than do?",
+            options: ["A sum", "Its agricultural experiment station between two campuses", "Its congressional delegation's acreage entitlement", "Its extension staff between the two institutions"],
+            correctIndex: 0,
+            explanation: "A state did not have to admit anyone; it had to divide a sum equitably and report the division.",
+            sourceLessonSlug: "the-proviso",
+          },
+        ],
+      },
+    },
   ],
 };
