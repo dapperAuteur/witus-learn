@@ -2894,5 +2894,742 @@ U.S. Const. art. I, § 8, cl. 17. National Archives. https://www.archives.gov/fo
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 5 — What the difference costs, and who decides
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "ssi-and-the-separate-channel",
+      title: "17 · The separate channel, and one man's $28,081",
+      section: "Section 5 · What the difference costs, and who decides",
+      body: `Jose Luis Vaello Madero was born in Puerto Rico in 1954. He moved to New York in 1985. In 2012, while living there and after a serious illness, he began receiving Supplemental Security Income. About a year later he moved back to Puerto Rico, and the payments kept arriving by direct deposit.
+
+In June 2016, approaching his sixty-second birthday, he walked into a Social Security office in Puerto Rico to apply for retirement benefits. The Administration learned where he lived. Within two months it cut his SSI to zero, backdated to August 2013, and sent him a letter explaining that he had been **"outside of the United States"** while living in Puerto Rico. In 2017 the United States sued him for the $28,081 it said he had wrongly received (Vaello Madero, 2022, Sotomayor, J., dissenting, slip op. at 3).
+
+**Here is the statute that produced that letter.** SSI, enacted in 1972, pays a guaranteed minimum income to people over sixty-five, blind or disabled. To be eligible a person must be a "resident of the United States", and the statute defines that as **the 50 States and the District of Columbia**. A later statute added the Northern Mariana Islands. Puerto Rico was not added (Vaello Madero, 2022, slip op. at 3).
+
+**And here is the part that should sound familiar from a completely different course in this catalog.** Congress did not simply leave Puerto Rico with nothing. It left the island on the older program SSI had replaced everywhere else: Aid to the Aged, Blind, and Disabled, a capped block grant that predates 1972. The Court's own description is that the federal government provides assistance in Puerto Rico "through a different benefits program, one that is funded in part by the Federal Government and in part by Puerto Rico" (Vaello Madero, 2022, slip op. at 3).
+
+**A federal benefit is created. A class is excluded. A separate and smaller channel is built for the excluded class. Then the smaller channel is allowed to stay smaller.** That is the exact spine of another course here, *The Match*, which follows the same move through the land-grant statutes. If you want that mechanism taught properly, take that course. This lesson only needs you to notice that the same move appears here, and to see the size of the gap.
+
+Justice Sotomayor put numbers on it, from the Resident Commissioner's brief:
+
+| | Puerto Rico, AABD | The states, SSI |
+| --- | --- | --- |
+| People enrolled | 34,224 in 2021 | not applicable |
+| Estimated eligible if SSI applied | over 300,000 (GAO estimate, 2011) | not applicable |
+| Average monthly benefit | $82 | $574 in fiscal year 2020 |
+
+(Vaello Madero, 2022, Sotomayor, J., dissenting, slip op. at 3)
+
+**The Supreme Court held for the government, 8 to 1.** Justice Kavanaugh's opinion rests on the Territory Clause and on rational-basis review:
+
+> "The question presented is whether the equal-protection component of the Fifth Amendment's Due Process Clause requires Congress to make Supplemental Security Income benefits available to residents of Puerto Rico to the same extent that Congress makes those benefits available to residents of the States. In light of the text of the Constitution, longstanding historical practice, and this Court's precedents, the answer is no." (Vaello Madero, 2022, slip op. at 1)
+
+The rational basis was the tax treatment from Section 4: because residents of Puerto Rico are exempt from most federal income, gift, estate and excise taxes, Congress may likewise distinguish them for SSI (Vaello Madero, 2022, slip op. at 1). Note what that reasoning does and does not cover. It works for Puerto Rico. It does not work for the District, which pays the tax and has no exemption.
+
+**Justice Sotomayor dissented alone:** "there is no rational basis for Congress to treat needy citizens living anywhere in the United States so differently from others" (Vaello Madero, 2022, Sotomayor, J., dissenting, slip op. at 1).
+
+**And Justice Gorsuch concurred in the judgment while attacking the ground it stood on,** which is the concurrence Section 2 quoted at length. Both sides in the case had accepted that equal protection applies in Puerto Rico, so the Court never had to decide whether the Insular Cases were right. Gorsuch joined anyway, and wrote that he hoped the day would come soon when the Court overruled them (Vaello Madero, 2022, Gorsuch, J., concurring, slip op. at 9 to 10).
+
+**One sentence to carry out of this lesson.** A federal agency told a United States citizen, in writing, that he was outside of the United States while standing on American soil, and the Supreme Court held that this was constitutional.
+
+:::reveal What did the Social Security Administration tell Vaello Madero in its letter? ||| That he was outside of the United States while he was living in Puerto Rico.
+
+:::reveal Which jurisdictions does the SSI statute define as the United States for eligibility? ||| The 50 states and the District of Columbia, with the Northern Mariana Islands added by a later statute.
+
+:::reveal What rational basis did the Court accept for excluding Puerto Rico residents from SSI? ||| That residents of Puerto Rico are exempt from most federal income, gift, estate and excise taxes.
+
+## Vocabulary
+- **Supplemental Security Income**: the 1972 federal program paying a guaranteed minimum income to the aged, blind and disabled, funded entirely from federal funds and administered federally.
+- **Aid to the Aged, Blind, and Disabled**: the older, capped, jointly funded program SSI replaced in the states and which Congress left in place in Puerto Rico.
+- **Block grant**: a capped payment to a government that then sets its own eligibility rules and benefit levels, which is why the average benefit can diverge so far from SSI's.
+- **Rational-basis review**: the most deferential standard of equal-protection review, under which a classification survives if any legitimate reason supports it.
+- **Concurrence in the judgment**: agreeing with the outcome while rejecting the reasoning, which is what Justice Gorsuch did to the Insular Cases here.
+
+## Sources
+*United States v. Vaello Madero*, No. 20-303 (U.S. Apr. 21, 2022) (slip op.). Supreme Court of the United States. https://www.supremecourt.gov/opinions/21pdf/20-303_6khn.pdf`,
+    },
+    {
+      slug: "promesa-and-the-board",
+      title: "18 · An unelected board over an elected government",
+      section: "Section 5 · What the difference costs, and who decides",
+      body: `In 2016 Congress did something to Puerto Rico that it has never done to a state, and it did it in a statute whose acronym means "promise".
+
+**PROMESA**, the Puerto Rico Oversight, Management, and Economic Stability Act, was enacted on 30 June 2016 as Public Law 114-187, 130 Stat. 550 (48 U.S.C. § 2101, n.d.). Its stated purpose is narrow: "to provide a method for a covered territory to achieve fiscal responsibility and access to capital markets" (48 U.S.C. § 2121, n.d.).
+
+**What it created.** A Financial Oversight and Management Board of seven voting members appointed by the President. Six come from lists submitted by named congressional leaders, and the statute is explicit about what that buys:
+
+> "With respect to the appointment of a Board member in Category A, B, C, D, or E, such an appointment shall be by and with the advice and consent of the Senate, unless the President appoints an individual from a list, as provided in this subsection, in which case no Senate confirmation is required." (48 U.S.C. § 2121, n.d.)
+
+The seventh is at the President's discretion. And:
+
+> "The Governor, or the Governor's designee, shall be an ex officio member of the Oversight Board without voting rights." (48 U.S.C. § 2121, n.d.)
+
+**Read those two provisions together.** The only member of the Board the people of Puerto Rico elected is the one who cannot vote on it.
+
+**What the Board can do.** Under 48 U.S.C. § 2141 the Governor submits a proposed Fiscal Plan on the Board's timetable, and if the Governor's plan does not meet the statute's requirements "the Oversight Board shall develop and submit to the Governor and the Legislature a Fiscal Plan" of its own (48 U.S.C. § 2141, n.d.). Budgets work the same way, and § 2142 supplies the sentence that settles who governs. When the Board develops a Territory Budget because the elected branches have not produced a compliant one, that budget is "deemed to be approved by the Governor and the Legislature" and is "in full force and effect beginning on the first day of the applicable fiscal year" (48 U.S.C. § 2142(e)(3), n.d.).
+
+**Deemed to be approved.** An unelected body writes a budget, and the statute declares that the elected government approved it.
+
+**The Board's status was challenged, and the challenge failed in a way that matters for this course.** In *Financial Oversight and Management Board for Puerto Rico v. Aurelius Investment, LLC*, decided 1 June 2020, creditors argued that Board members are "Officers of the United States" who must be confirmed by the Senate. Justice Breyer's opinion for the Court held otherwise: "The Board members are not 'Officers of the United States' [and] the Appointments Clause does not dictate how the Board's members must be selected", because "The Board's members have primarily local powers and duties" (Aurelius Investment, 2020). PROMESA itself says the Board is an entity within the territorial government and "shall not be considered to be a department, agency, establishment, or instrumentality of the Federal Government" (48 U.S.C. § 2121, n.d.).
+
+**So the Board is local enough to escape the Senate and federal enough to override the legislature.** That is not a rhetorical flourish, it is the combination the statute and the holding produce together.
+
+The Court also declined the invitation to revisit the doctrine: "We need not consider the request by some of the parties that we overrule the much-criticized 'Insular Cases' and their progeny" (Aurelius Investment, 2020).
+
+**The case for the Board, stated fairly, because it is not nothing.** Puerto Rico entered 2016 owing debts it could not pay and with no access to municipal bankruptcy, and the reason is a definitional carve-out of exactly the kind Section 1 taught you to look for. The Bankruptcy Code says: "The term 'State' includes the District of Columbia and Puerto Rico, except for the purpose of defining who may be a debtor under chapter 9 of this title" (11 U.S.C. § 101, n.d.). A state's municipalities may restructure under chapter 9. Puerto Rico's could not. PROMESA supplied a restructuring process that did not otherwise exist, along with the oversight its drafters treated as the price of it, and people who defend the statute argue that without a federal mechanism the island's creditors would have fought it out in court while services collapsed.
+
+**The objection, stated just as plainly.** A body that no voter in Puerto Rico chose can override the budget of a government that every voter in Puerto Rico chose, and the constitutional reason it may do so is that Puerto Rico is a territory. **Congress has never imposed this on a state, and under the Territory Clause it does not have to explain why not.**
+
+:::reveal When was PROMESA enacted, and what is its public law number? ||| 30 June 2016, as Public Law 114-187.
+
+:::reveal Which member of the Oversight Board is elected by the people of Puerto Rico, and what can that member do? ||| The Governor or the Governor's designee, who sits ex officio without voting rights.
+
+:::reveal What does 48 U.S.C. § 2142(e)(3) say about a budget the Board writes itself? ||| That it is deemed to be approved by the Governor and the Legislature and is in full force and effect from the first day of the fiscal year.
+
+## Vocabulary
+- **PROMESA**: the 2016 statute creating a fiscal oversight structure for a covered territory, codified at 48 U.S.C. § 2101 and following.
+- **Financial Oversight and Management Board**: the seven-member body appointed by the President that certifies fiscal plans and budgets for Puerto Rico.
+- **Ex officio without voting rights**: the Governor's seat on that Board, which is presence without power and the only elected seat on it.
+- **Deemed approved**: the statutory device by which a Board-written budget takes effect as though the elected government had passed it.
+- **Appointments Clause**: the constitutional provision requiring Senate confirmation for Officers of the United States, which Aurelius held does not reach these Board members because their duties are primarily local.
+
+## Sources
+11 U.S.C. § 101. (n.d.). *Definitions*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title11-section101&num=0&edition=prelim
+
+48 U.S.C. § 2101. (n.d.). *Short title*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title48-section2101&num=0&edition=prelim
+
+48 U.S.C. § 2121. (n.d.). *Financial Oversight and Management Board*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title48-section2121&num=0&edition=prelim
+
+48 U.S.C. § 2141. (n.d.). *Approval of Fiscal Plans*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title48-section2141&num=0&edition=prelim
+
+48 U.S.C. § 2142. (n.d.). *Approval of Budgets*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title48-section2142&num=0&edition=prelim
+
+*Financial Oversight and Management Board for Puerto Rico v. Aurelius Investment, LLC*, No. 18-1334 (U.S. June 1, 2020). Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/supremecourt/text/18-1334`,
+    },
+    {
+      slug: "counting-the-people",
+      title: "19 · Counting the people, and checking the count",
+      section: "Section 5 · What the difference costs, and who decides",
+      body: `Abstractions about status get concrete fast when you put a number beside them. Here are the numbers, where each comes from, and one important reason to distrust one of them.
+
+**The 2020 Census, from the Census Bureau's own apportionment table** (U.S. Census Bureau, 2021b) and its Island Areas release (U.S. Census Bureau, 2021c):
+
+| Jurisdiction | 2020 Census population |
+| --- | --- |
+| Puerto Rico | 3,285,874 |
+| District of Columbia | 689,545 |
+| Guam | 153,836 |
+| U.S. Virgin Islands | 87,146 |
+| American Samoa | 49,710 |
+| Northern Mariana Islands | 47,329 |
+
+**Now do the arithmetic yourself, because it is the point of the lesson and it takes five minutes.**
+
+**One.** Sort the fifty states by their 2020 resident population and count how many fall below Puerto Rico's 3,285,874. The answer is **twenty-one**. Utah, at 3,271,616, is the largest of them; the smallest state above Puerto Rico is Connecticut at 3,605,944. So a jurisdiction with more people than twenty-one states has no senator, no vote on final passage in the House, and no vote for President.
+
+**Two.** Do the same for the District's 689,545. It is larger than **two** states, Vermont at 643,077 and Wyoming at 576,851. Each of those states has two senators, a voting Representative and three electors. The District has three electors and a Delegate who may not vote on passage.
+
+**Three.** Add the five territories and the District together: 3,285,874 plus 689,545 plus 153,836 plus 87,146 plus 49,710 plus 47,329 comes to **4,313,440**. That is more people than lived in Oregon in 2020, and larger than the population of twenty-four states.
+
+**Four, the one that keeps the lesson honest.** The four island areas together come to 338,021, which is why the Census Bureau's own release describes them as "just under 339,000" (U.S. Census Bureau, 2021c). If your addition disagrees with a published figure, do the addition again before you assume the publisher is wrong.
+
+**And now the caveat, which matters more than any of the totals.** In August 2022 the Census Bureau published the results of its post-enumeration survey for Puerto Rico and reported that **the 2020 Census overcounted the island's population by 5.7 percent, roughly 174,000 people** (U.S. Census Bureau, 2022). The official count is still 3,285,874, because a census count is not revised by a coverage estimate. But the Bureau's own best evidence is that the real figure was lower.
+
+**Does that change the conclusion?** Subtract 174,000 and Puerto Rico is at roughly 3.11 million, which still exceeds nineteen states rather than twenty-one. **The argument survives the correction, and a course that did not tell you about the correction would not deserve to be believed on the parts you cannot check.**
+
+**Three habits to take from this lesson.**
+
+- **State the year with every population figure.** These are 2020 Census counts, published in 2021 and 2022. Puerto Rico's population fell 11.8 percent between 2010 and 2020, so a figure without a year is nearly useless here (U.S. Census Bureau, 2021a).
+- **Distinguish a count from an estimate.** The decennial count is the official number. The post-enumeration survey is the Bureau's measurement of how wrong the count was. Both are real and they are not the same kind of thing.
+- **Report the number that cuts against you.** The overcount is the only figure in this lesson that weakens its own argument, which is exactly why it belongs here.
+
+:::reveal How many states had fewer residents than Puerto Rico in the 2020 Census? ||| Twenty-one, with Utah the largest of them and Connecticut the smallest state above Puerto Rico.
+
+:::reveal What did the Census Bureau's post-enumeration survey find about Puerto Rico's 2020 count? ||| That it overcounted the population by 5.7 percent, roughly 174,000 people.
+
+:::reveal What do the five territories and the District come to together, and how does that compare with a state? ||| 4,313,440, which is more people than lived in Oregon in 2020.
+
+## Vocabulary
+- **Decennial census**: the constitutionally required count taken every ten years, whose result is the official population and is not revised afterward.
+- **Post-enumeration survey**: an independent survey the Census Bureau runs to measure how far the census over or undercounted, published separately and after the count.
+- **Net coverage error**: the survey's estimate of that gap, reported for Puerto Rico as a 5.7 percent overcount for 2020.
+- **Apportionment population**: the count used to distribute House seats, which includes the fifty states and excludes the District and Puerto Rico entirely.
+- **Island areas**: the Census Bureau's term for American Samoa, Guam, the Northern Marianas and the Virgin Islands, which it counts separately from the fifty states and Puerto Rico.
+
+## Sources
+U.S. Census Bureau. (2021a, August 25). *Puerto Rico population declined 11.8% from 2010 to 2020*. https://www.census.gov/library/stories/state-by-state/puerto-rico.html
+
+U.S. Census Bureau. (2021b). *Table 2. Resident population for the 50 states, the District of Columbia, and Puerto Rico: 2020 census*. https://www2.census.gov/programs-surveys/decennial/2020/data/apportionment/apportionment-2020-table02.pdf
+
+U.S. Census Bureau. (2021c, October 28). *First 2020 Census United States island areas data released today*. https://census.gov/library/stories/2021/10/first-2020-census-united-states-island-areas-data-released-today.html
+
+U.S. Census Bureau. (2022, August 16). *2020 post-enumeration survey results: Puerto Rico*. https://census.gov/newsroom/press-releases/2022/2020-post-enumeration-survey-results-puerto-rico.html`,
+    },
+    {
+      slug: "quiz-what-the-difference-costs",
+      title: "20 · Knowledge check: what the difference costs",
+      section: "Section 5 · What the difference costs, and who decides",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What did the Social Security Administration's letter tell Jose Luis Vaello Madero?",
+            options: ["That he was outside of the United States", "That he had failed to report a change of address within the required period", "That his disability no longer met the statutory definition for eligibility", "That his benefits would continue at a reduced rate under a territorial program"],
+            correctIndex: 0,
+            explanation: "He was living in Puerto Rico at the time, and the Court held that treating him that way was constitutional.",
+            sourceLessonSlug: "ssi-and-the-separate-channel",
+          },
+          {
+            prompt: "How much did the United States sue Vaello Madero to recover?",
+            options: ["$28,081", "$659.35, the same figure disputed in the 1901 customs case about oranges", "$174,000, the size of the census overcount later reported for the island", "$82 for each month he had received benefits while resident in Puerto Rico"],
+            correctIndex: 0,
+            explanation: "The government sought that sum plus interest, costs and attorney's fees after backdating the termination to August 2013.",
+            sourceLessonSlug: "ssi-and-the-separate-channel",
+          },
+          {
+            prompt: "In what year was the Supplemental Security Income program enacted?",
+            options: ["1972", "1935, as part of the original Social Security Act signed that year", "1996, in the welfare reform legislation of that Congress", "1917, the same year Puerto Ricans were granted United States citizenship"],
+            correctIndex: 0,
+            explanation: "It replaced the older joint federal and state programs in the states and left Puerto Rico on the program it replaced.",
+            sourceLessonSlug: "ssi-and-the-separate-channel",
+          },
+          {
+            prompt: "How does the SSI statute define a 'resident of the United States'?",
+            options: ["The 50 States and the District of Columbia", "Every place under United States sovereignty, including the outlying possessions", "The 50 States, the District of Columbia and every organized territory", "Any place whose residents pay federal income tax on locally earned income"],
+            correctIndex: 0,
+            explanation: "A later statute added the Northern Mariana Islands, and Puerto Rico was never added.",
+            sourceLessonSlug: "ssi-and-the-separate-channel",
+          },
+          {
+            prompt: "Which territory was later added to the SSI program by statute?",
+            options: ["The Northern Mariana Islands", "Puerto Rico, in the same legislation that created the oversight board", "Guam, at the same time its residents were made citizens in 1950", "American Samoa, whose residents are nationals rather than citizens"],
+            correctIndex: 0,
+            explanation: "The Court noted the addition in a note following 48 U.S.C. § 1801, which is why the exclusion is not simply a rule about territories.",
+            sourceLessonSlug: "ssi-and-the-separate-channel",
+          },
+          {
+            prompt: "What program did Congress leave in place in Puerto Rico instead of SSI?",
+            options: ["Aid to the Aged, Blind, and Disabled", "Temporary Assistance for Needy Families, funded by an annual block grant", "The Nutrition Assistance Program administered by the territorial government", "Social Security retirement insurance, which Puerto Rico residents already received"],
+            correctIndex: 0,
+            explanation: "It is the older, capped, jointly funded program that SSI had replaced everywhere else in 1972.",
+            sourceLessonSlug: "ssi-and-the-separate-channel",
+          },
+          {
+            prompt: "How did the Supreme Court describe the assistance available in Puerto Rico?",
+            options: ["A different program funded in part federally and in part by Puerto Rico", "An identical program administered by the territorial government under contract", "A temporary substitute that Congress intended to replace within five years", "A program with no federal funding at all beyond administrative support"],
+            correctIndex: 0,
+            explanation: "That description is the shape of a separate and smaller channel built for an excluded class.",
+            sourceLessonSlug: "ssi-and-the-separate-channel",
+          },
+          {
+            prompt: "Which other course in this catalog teaches the same underlying mechanism?",
+            options: ["The Match", "Tribal Nations and the Government-to-Government Relationship", "State versus Federal Power and the Division of Authority", "How a Bill Becomes Law in the Federal Congress"],
+            correctIndex: 0,
+            explanation: "It follows the same move through the land-grant statutes: a benefit created, a class excluded, a smaller channel built and then left smaller.",
+            sourceLessonSlug: "ssi-and-the-separate-channel",
+          },
+          {
+            prompt: "What was the average monthly AABD benefit in Puerto Rico in 2021, according to the dissent?",
+            options: ["$82", "$574, the same figure the average SSI recipient received nationally", "$733, the low end of the payments Vaello Madero had been receiving", "$1,382, the amount a two-person household would have received in a state"],
+            correctIndex: 0,
+            explanation: "The comparison figure was $574 for the average SSI recipient in fiscal year 2020, which is the gap the dissent was pointing at.",
+            sourceLessonSlug: "ssi-and-the-separate-channel",
+          },
+          {
+            prompt: "How many Puerto Rico residents were enrolled in AABD in 2021?",
+            options: ["34,224", "over 300,000, the number a federal agency estimated would qualify for SSI", "3,285,874, the island's total population in the 2020 Census", "153,836, the population recorded for the territory of Guam"],
+            correctIndex: 0,
+            explanation: "A 2011 estimate put the number who would have qualified for SSI at over 300,000, which is roughly nine times as many.",
+            sourceLessonSlug: "ssi-and-the-separate-channel",
+          },
+          {
+            prompt: "How did the Supreme Court answer the question presented in Vaello Madero?",
+            options: ["No", "Yes, and it ordered SSI extended to residents of Puerto Rico", "It declined to answer and dismissed the case as improvidently granted", "It held that the question was committed to the political branches and unreviewable"],
+            correctIndex: 0,
+            explanation: "The Court said the equal-protection component of the Fifth Amendment does not require Congress to extend SSI to residents of Puerto Rico.",
+            sourceLessonSlug: "ssi-and-the-separate-channel",
+          },
+          {
+            prompt: "What rational basis did the Court accept for the exclusion?",
+            options: ["Puerto Rico residents are exempt from most federal taxes", "Puerto Rico has its own constitution approved by Congress in 1952", "Puerto Rico elects a Resident Commissioner rather than a voting Representative", "Puerto Rico had entered a fiscal crisis that made federal payments impractical"],
+            correctIndex: 0,
+            explanation: "The opinion names income, gift, estate and excise taxes, and that reasoning has no application to the District of Columbia.",
+            sourceLessonSlug: "ssi-and-the-separate-channel",
+          },
+          {
+            prompt: "Why does the Vaello Madero tax rationale not extend to the District of Columbia?",
+            options: ["District residents pay federal income tax with no exemption", "The District was expressly excluded from the Court's holding in that case", "The District is governed under Article IV rather than under Article I", "District residents already receive SSI under a separate territorial program"],
+            correctIndex: 0,
+            explanation: "26 U.S.C. § 933 covers Puerto Rico source income and no equivalent provision exists for the District.",
+            sourceLessonSlug: "ssi-and-the-separate-channel",
+          },
+          {
+            prompt: "Which justice dissented in Vaello Madero?",
+            options: ["Justice Sotomayor", "Justice Gorsuch, who would have overruled the Insular Cases outright", "Justice Kavanaugh, who wrote separately from the Court's opinion", "Justice Thomas, who concurred only in the judgment of the Court"],
+            correctIndex: 0,
+            explanation: "She wrote that there is no rational basis for treating needy citizens living anywhere in the United States so differently from others.",
+            sourceLessonSlug: "ssi-and-the-separate-channel",
+          },
+          {
+            prompt: "Why did the Court in Vaello Madero not have to decide whether the Insular Cases were right?",
+            options: ["Both sides accepted that equal protection applies in Puerto Rico", "The parties had settled the constitutional claim before oral argument", "The lower court had already overruled the Insular Cases in its opinion", "Congress had repealed the statutory basis for the doctrine in 2016"],
+            correctIndex: 0,
+            explanation: "That shared premise is why Justice Gorsuch joined the Court's opinion while urging that the cases be overruled in an appropriate case.",
+            sourceLessonSlug: "ssi-and-the-separate-channel",
+          },
+          {
+            prompt: "What is rational-basis review?",
+            options: ["The most deferential standard of equal-protection review", "A rule requiring the government to prove a compelling interest for a classification", "A standard applied only to classifications drawn on the basis of race", "A procedural test for deciding whether a court has jurisdiction over a claim"],
+            correctIndex: 0,
+            explanation: "A classification survives if any legitimate reason supports it, which is why the tax argument was enough for the majority.",
+            sourceLessonSlug: "ssi-and-the-separate-channel",
+          },
+          {
+            prompt: "What is a block grant, in the AABD context?",
+            options: ["A capped payment to a government that sets its own benefit levels", "A federal payment matched dollar for dollar by the receiving jurisdiction", "A competitive award made to the applicant with the strongest proposal", "A direct payment from the federal treasury to an individual beneficiary"],
+            correctIndex: 0,
+            explanation: "The cap and the local rule-setting are why the average benefit can diverge so far from SSI's uniform federal payment.",
+            sourceLessonSlug: "ssi-and-the-separate-channel",
+          },
+          {
+            prompt: "What does PROMESA stand for?",
+            options: ["The Puerto Rico Oversight, Management, and Economic Stability Act", "The Public Reorganization of Municipal Emergency Systems Act", "The Program for Restructuring Obligations of Municipalities and States Act", "The Puerto Rico Municipal Economic Security and Assistance Act"],
+            correctIndex: 0,
+            explanation: "It was enacted on 30 June 2016 as Public Law 114-187 and is codified at 48 U.S.C. § 2101 and following.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "When was PROMESA enacted?",
+            options: ["30 June 2016", "24 March 1976, when Congress approved the Northern Marianas Covenant", "2 March 1917, the same date the Resident Commissioner's term was set", "1 June 2020, the day the Supreme Court decided the Aurelius case"],
+            correctIndex: 0,
+            explanation: "The source credit reads Public Law 114-187, 130 Stat. 550.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "What is the stated purpose of the Oversight Board under 48 U.S.C. § 2121?",
+            options: ["Fiscal responsibility and access to capital markets", "The eventual admission of the territory to the Union as a state", "The transfer of the territory's debts to the federal treasury", "The supervision of elections and the certification of their results"],
+            correctIndex: 0,
+            explanation: "The statute's purpose clause is narrow, which is part of why the Court treated the Board's duties as primarily local.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "How many voting members does the Oversight Board have?",
+            options: ["Seven", "Nine, of whom three must be residents of Puerto Rico", "Five, appointed for staggered terms of six years each", "Eleven, including the Governor and the Resident Commissioner"],
+            correctIndex: 0,
+            explanation: "All seven are appointed by the President, six of them from lists submitted by named congressional leaders.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "When is Senate confirmation NOT required for an Oversight Board member?",
+            options: ["When the President appoints from a submitted list", "When the appointee is a resident of Puerto Rico at the time of appointment", "When the appointment is made during a recess of the Senate", "When the Governor of Puerto Rico consents to the appointment in writing"],
+            correctIndex: 0,
+            explanation: "The statute says such an appointment requires advice and consent unless the President appoints an individual from a list, in which case no confirmation is required.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "What is the Governor of Puerto Rico's position on the Oversight Board?",
+            options: ["An ex officio member without voting rights", "The chair of the Board, with a casting vote in the event of a tie", "A voting member appointed for the duration of the Governor's term", "Excluded entirely, with no seat or standing before the Board"],
+            correctIndex: 0,
+            explanation: "The only member the people of Puerto Rico elected is the one who cannot vote on it.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "Under 48 U.S.C. § 2141, what happens if the Governor's Fiscal Plan does not meet the statute's requirements?",
+            options: ["The Board develops and submits a Fiscal Plan of its own", "The territory reverts to the previous year's plan until a new one is agreed", "The Secretary of the Treasury appoints a receiver for the territory's finances", "The plan takes effect anyway and the Board may object within thirty days"],
+            correctIndex: 0,
+            explanation: "The Board submits its plan to the Governor and the Legislature, which is the first half of the mechanism.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "What does 48 U.S.C. § 2142(e)(3) say about a Territory Budget the Board develops?",
+            options: ["It is deemed to be approved by the Governor and the Legislature", "It must be ratified by the territorial legislature within sixty days", "It takes effect only if Congress passes a joint resolution approving it", "It applies only to the portion of the budget funded by federal grants"],
+            correctIndex: 0,
+            explanation: "It is also in full force and effect beginning on the first day of the applicable fiscal year.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "What is striking about the phrase 'deemed to be approved'?",
+            options: ["An unelected body writes it and the statute says the elected one approved it", "It requires the Governor to sign the budget before it can take effect", "It gives the Legislature a further year to amend the Board's figures", "It applies only in a fiscal year when the territory is in default"],
+            correctIndex: 0,
+            explanation: "The device removes the elected branches from a decision while recording their approval of it.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "What did the creditors argue in the Aurelius case?",
+            options: ["That Board members are Officers of the United States needing confirmation", "That PROMESA violated the Contracts Clause of Article I of the Constitution", "That the Territory Clause does not authorize any federal oversight body", "That the Board had exceeded its statutory authority in certifying a fiscal plan"],
+            correctIndex: 0,
+            explanation: "The claim was under the Appointments Clause, and it failed because the Court found the Board's duties primarily local.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "How did the Supreme Court rule in Aurelius?",
+            options: ["Board members are not Officers of the United States", "Board members must be confirmed by the Senate before taking office", "The Board is unconstitutional and its certifications are void", "The question is nonjusticiable and belongs to Congress alone"],
+            correctIndex: 0,
+            explanation: "Justice Breyer wrote that the Appointments Clause does not dictate how the Board's members must be selected.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "What reasoning did the Court give for that conclusion?",
+            options: ["The Board's members have primarily local powers and duties", "The Board's members serve without compensation from the federal treasury", "The Board was created by the territory's own legislature rather than Congress", "The Board's decisions are always subject to review in the federal courts"],
+            correctIndex: 0,
+            explanation: "PROMESA itself says the Board is an entity within the territorial government and not a federal department, agency or instrumentality.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "What does this course call the combination the statute and the holding produce?",
+            options: ["Local enough to escape the Senate, federal enough to override the legislature", "A body with no real power over the territory's elected institutions", "A temporary arrangement that expires when the territory balances its budget", "An advisory panel whose recommendations the Governor may accept or reject"],
+            correctIndex: 0,
+            explanation: "The escape from the Appointments Clause rests on locality, and the override of the budget rests on the statute.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "What did the Court say in Aurelius about the Insular Cases?",
+            options: ["It need not consider the request to overrule them", "It overruled them and directed lower courts to disregard their reasoning", "It reaffirmed them as the governing law of the unincorporated territories", "It extended them for the first time to questions of federal appointments"],
+            correctIndex: 0,
+            explanation: "The same opinion added that whatever their continued validity it would not extend them in those cases.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "Why could Puerto Rico's municipalities not use chapter 9 bankruptcy?",
+            options: ["The Bankruptcy Code's definition of State carves Puerto Rico out", "Because the territory had never enacted a local municipal insolvency statute", "Because PROMESA repealed chapter 9 for every territory in 2016", "Because the Supreme Court held the territory ineligible in the Aurelius case"],
+            correctIndex: 0,
+            explanation: "11 U.S.C. § 101 says State includes the District of Columbia and Puerto Rico except for the purpose of defining who may be a debtor under chapter 9.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "What kind of provision is the chapter 9 exclusion, in this course's terms?",
+            options: ["A definitional carve-out", "A constitutional limitation arising from the Territory Clause", "A judicial doctrine developed in the Insular Cases after 1901", "A treaty obligation carried over from the 1898 peace settlement"],
+            correctIndex: 0,
+            explanation: "It is exactly the shape Section 1 taught: a statute defines a term for its own purposes and a territory falls outside it.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "What is the case for the Oversight Board, as this course states it?",
+            options: ["It supplied a restructuring process that did not otherwise exist", "It guaranteed the territory's debts with the full faith and credit of the United States", "It replaced an elected government that had been found guilty of fraud", "It was requested by a referendum of Puerto Rico's voters in 2016"],
+            correctIndex: 0,
+            explanation: "Defenders argue that without a federal mechanism creditors would have fought it out in court while services collapsed.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "What is the objection to the Oversight Board, as this course states it?",
+            options: ["A body no voter chose can override a government every voter chose", "The Board's members are paid more than the elected officials they supervise", "The Board has no authority to certify a fiscal plan under the Territory Clause", "The Board must obtain the Governor's consent before acting on any budget"],
+            correctIndex: 0,
+            explanation: "The constitutional reason it may do so is that Puerto Rico is a territory, and Congress has never imposed the arrangement on a state.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "What was Puerto Rico's population in the 2020 Census?",
+            options: ["3,285,874", "3,111,874, the figure after adjusting for the reported overcount", "3,725,789, the figure recorded in the 2010 Census", "4,313,440, the combined total for the territories and the District"],
+            correctIndex: 0,
+            explanation: "It is the official count and it is not revised by the Bureau's later coverage estimate.",
+            sourceLessonSlug: "counting-the-people",
+          },
+          {
+            prompt: "What was the District of Columbia's population in the 2020 Census?",
+            options: ["689,545", "576,851, the figure recorded for the state of Wyoming", "643,077, the figure recorded for the state of Vermont", "733,391, the figure recorded for the state of Alaska"],
+            correctIndex: 0,
+            explanation: "That is larger than two states, each of which has two senators, a voting Representative and three electors.",
+            sourceLessonSlug: "counting-the-people",
+          },
+          {
+            prompt: "Which two states had fewer residents than the District in 2020?",
+            options: ["Vermont and Wyoming", "Alaska and North Dakota, the two smallest states in the northern tier", "Wyoming and Alaska, the two least densely populated states in the Union", "South Dakota and Delaware, at 886,667 and 989,948 respectively"],
+            correctIndex: 0,
+            explanation: "Vermont counted 643,077 and Wyoming 576,851, against the District's 689,545.",
+            sourceLessonSlug: "counting-the-people",
+          },
+          {
+            prompt: "How many states had fewer residents than Puerto Rico in 2020?",
+            options: ["Twenty-one", "Nineteen, the figure that results after adjusting for the census overcount", "Twenty-four, the number smaller than the combined territorial population", "Two, the same number that fall below the District of Columbia"],
+            correctIndex: 0,
+            explanation: "Utah at 3,271,616 is the largest of them and Connecticut at 3,605,944 is the smallest state above Puerto Rico.",
+            sourceLessonSlug: "counting-the-people",
+          },
+          {
+            prompt: "What was Guam's population in the 2020 Census?",
+            options: ["153,836", "87,146, the figure recorded for the United States Virgin Islands", "49,710, the figure recorded for American Samoa", "47,329, the figure recorded for the Northern Mariana Islands"],
+            correctIndex: 0,
+            explanation: "It is the largest of the four island areas the Census Bureau counts separately from the states and Puerto Rico.",
+            sourceLessonSlug: "counting-the-people",
+          },
+          {
+            prompt: "What was American Samoa's population in the 2020 Census?",
+            options: ["49,710", "47,329, the figure recorded for the Northern Mariana Islands", "87,146, the figure recorded for the United States Virgin Islands", "153,836, the figure recorded for the territory of Guam"],
+            correctIndex: 0,
+            explanation: "It is the place whose residents are nationals rather than citizens at birth, which is Section 3's subject.",
+            sourceLessonSlug: "counting-the-people",
+          },
+          {
+            prompt: "What do the four island areas total in the 2020 Census?",
+            options: ["338,021", "4,313,440, the total for the territories and the District combined", "689,545, the same figure recorded for the District of Columbia", "3,285,874, the same figure recorded for Puerto Rico alone"],
+            correctIndex: 0,
+            explanation: "The Census Bureau's own release describes the combined figure as just under 339,000, which is a useful check on your addition.",
+            sourceLessonSlug: "counting-the-people",
+          },
+          {
+            prompt: "What do the five territories and the District come to together?",
+            options: ["4,313,440", "3,285,874, which is Puerto Rico's share of the total", "338,021, which is the four island areas added together", "4,237,256, which is the 2020 population of the state of Oregon"],
+            correctIndex: 0,
+            explanation: "That is more people than lived in Oregon in 2020 and larger than the population of twenty-four states.",
+            sourceLessonSlug: "counting-the-people",
+          },
+          {
+            prompt: "Which state does the combined territorial and District population exceed?",
+            options: ["Oregon", "Kentucky, which counted 4,505,836 residents in the 2020 Census", "Louisiana, which counted 4,657,757 residents in the 2020 Census", "South Carolina, which counted 5,118,425 residents in the 2020 Census"],
+            correctIndex: 0,
+            explanation: "Oregon counted 4,237,256, which is below the combined figure of 4,313,440.",
+            sourceLessonSlug: "counting-the-people",
+          },
+          {
+            prompt: "What did the Census Bureau's post-enumeration survey report for Puerto Rico?",
+            options: ["A 5.7 percent overcount, roughly 174,000 people", "A 5.7 percent undercount, meaning the true population was higher", "That the count was accurate within the survey's margin of error", "That no post-enumeration survey was conducted for the island"],
+            correctIndex: 0,
+            explanation: "It was released on 16 August 2022, and the official count was not revised because a coverage estimate does not change a census count.",
+            sourceLessonSlug: "counting-the-people",
+          },
+          {
+            prompt: "Does the reported overcount change this course's argument?",
+            options: ["No, Puerto Rico still exceeds nineteen states", "Yes, Puerto Rico falls below every state once the adjustment is made", "Yes, because the official count is revised downward by the Bureau", "No, because the Bureau withdrew the survey result the following year"],
+            correctIndex: 0,
+            explanation: "Roughly 3.11 million still exceeds nineteen states rather than twenty-one, and the course reports the correction anyway.",
+            sourceLessonSlug: "counting-the-people",
+          },
+          {
+            prompt: "Why does this lesson report a figure that weakens its own argument?",
+            options: ["Because a course that hid it would not deserve to be believed elsewhere", "Because the Census Bureau requires the disclosure in any republication", "Because the overcount makes the comparison with the states more favorable", "Because the official count has been formally withdrawn and replaced"],
+            correctIndex: 0,
+            explanation: "The overcount is the only figure in the lesson that cuts against its conclusion, which is exactly why it belongs there.",
+            sourceLessonSlug: "counting-the-people",
+          },
+          {
+            prompt: "What is the difference between a census count and a post-enumeration survey?",
+            options: ["One is the official number and the other measures how wrong it was", "One is taken every ten years and the other is taken every five", "One covers the states and the other covers the territories only", "One is conducted by the Census Bureau and the other by the Congress"],
+            correctIndex: 0,
+            explanation: "Both are real and they are not the same kind of thing, which is why the official figure stands while the coverage estimate exists.",
+            sourceLessonSlug: "counting-the-people",
+          },
+          {
+            prompt: "By how much did Puerto Rico's population change between 2010 and 2020?",
+            options: ["It fell 11.8 percent", "It rose 11.8 percent, the fastest growth of any United States jurisdiction", "It fell 5.7 percent, the same figure as the reported census overcount", "It remained within one percent of its 2010 level throughout the decade"],
+            correctIndex: 0,
+            explanation: "That is why a population figure for this island without a year attached is nearly useless.",
+            sourceLessonSlug: "counting-the-people",
+          },
+          {
+            prompt: "Which jurisdictions does the 2020 apportionment population exclude?",
+            options: ["The District of Columbia and Puerto Rico", "The four island areas, which the Bureau counts in a separate release", "Alaska and Hawaii, which are counted separately from the continental states", "Every jurisdiction that does not elect a voting member of the House"],
+            correctIndex: 0,
+            explanation: "Apportionment distributes House seats among the fifty states, so neither has any share in it.",
+            sourceLessonSlug: "counting-the-people",
+          },
+          {
+            prompt: "What habit does this lesson recommend for every population figure?",
+            options: ["State the year", "Round to the nearest ten thousand to avoid a false sense of precision", "Use an estimate rather than a count wherever one is available", "Cite the highest published figure so the comparison is conservative"],
+            correctIndex: 0,
+            explanation: "These are 2020 Census counts published in 2021 and 2022, and the island's population moved 11.8 percent in the preceding decade.",
+            sourceLessonSlug: "counting-the-people",
+          },
+          {
+            prompt: "What should you do if your own addition disagrees with a published total?",
+            options: ["Do the addition again before assuming the publisher is wrong", "Publish your figure and note the discrepancy without resolving it", "Adopt the published figure without checking your own arithmetic", "Discard both figures as unreliable and use an estimate instead"],
+            correctIndex: 0,
+            explanation: "The four island areas sum to 338,021, which is what the Bureau means by just under 339,000.",
+            sourceLessonSlug: "counting-the-people",
+          },
+          {
+            prompt: "What is 'net coverage error'?",
+            options: ["The survey's estimate of how far a census over or undercounted", "The number of households that failed to return a census form", "The margin by which an apportionment calculation may be adjusted", "The difference between a decennial count and the following year's estimate"],
+            correctIndex: 0,
+            explanation: "For Puerto Rico in 2020 the Bureau reported it as a 5.7 percent overcount.",
+            sourceLessonSlug: "counting-the-people",
+          },
+          {
+            prompt: "Which of these is the correct order of the territories by 2020 population, largest first?",
+            options: ["Puerto Rico, Guam, the Virgin Islands, American Samoa, the Northern Marianas", "Puerto Rico, the Virgin Islands, Guam, the Northern Marianas, American Samoa", "Guam, Puerto Rico, American Samoa, the Virgin Islands, the Northern Marianas", "Puerto Rico, Guam, American Samoa, the Northern Marianas, the Virgin Islands"],
+            correctIndex: 0,
+            explanation: "3,285,874 then 153,836 then 87,146 then 49,710 then 47,329, with American Samoa just ahead of the Northern Marianas.",
+            sourceLessonSlug: "counting-the-people",
+          },
+          {
+            prompt: "What did the Aurelius Court say PROMESA itself provides about the Board's status?",
+            options: ["It is an entity within the territorial government", "It is an independent agency of the federal executive branch", "It is a court of the United States established under Article III", "It is a joint body of Congress and the territorial legislature"],
+            correctIndex: 0,
+            explanation: "The statute adds that the Board shall not be considered a department, agency, establishment or instrumentality of the Federal Government.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "Which body appoints every member of the Oversight Board?",
+            options: ["The President", "The Governor of Puerto Rico, from lists supplied by the legislature", "The Senate, by a two-thirds vote of the members present", "The Secretary of the Treasury, acting under the Territory Clause"],
+            correctIndex: 0,
+            explanation: "Six come from lists submitted by named congressional leaders and one is at the President's discretion.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "What is the Appointments Clause?",
+            options: ["The provision requiring Senate confirmation for Officers of the United States", "The provision authorizing Congress to make needful rules for the territories", "The provision giving the President power to fill vacancies during a recess", "The provision requiring that all federal officers be citizens at birth"],
+            correctIndex: 0,
+            explanation: "Aurelius held it does not reach these Board members, because their powers and duties are primarily local.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "What did the Court decline to do in Aurelius, at some parties' request?",
+            options: ["Overrule the Insular Cases", "Strike down PROMESA as beyond the Territory Clause power", "Order the Board's members submitted for Senate confirmation", "Extend chapter 9 bankruptcy eligibility to Puerto Rico's municipalities"],
+            correctIndex: 0,
+            explanation: "It said it need not consider the request and would not extend those much-criticized cases in any event.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "Which of these has Congress never done to a state?",
+            options: ["Placed an unelected board over its budget", "Required it to match federal research funds dollar for dollar", "Excluded it from a federal benefits program by statutory definition", "Reviewed and disapproved an act of its legislature within thirty days"],
+            correctIndex: 0,
+            explanation: "The constitutional reason it may do so for Puerto Rico is the Territory Clause, and under that clause it need not explain the difference.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "What is the one sentence this course asks you to carry out of the SSI lesson?",
+            options: ["A citizen was told in writing he was outside the United States, constitutionally", "A citizen was denied benefits because he had failed to file a change of address", "A citizen recovered his benefits after the Supreme Court ruled in his favor", "A citizen was made a national rather than a citizen by an act of Congress"],
+            correctIndex: 0,
+            explanation: "He was standing on American soil in Puerto Rico when the agency wrote it, and the Court held the exclusion constitutional.",
+            sourceLessonSlug: "ssi-and-the-separate-channel",
+          },
+          {
+            prompt: "How does the SSI exclusion resemble the mechanism in The Match?",
+            options: ["A benefit is created, a class excluded, a smaller channel built and left smaller", "A federal grant is offered and the recipient declines to accept the conditions", "A court invents a doctrine and Congress codifies it in a later statute", "A territory is admitted to a definition and then removed from it by amendment"],
+            correctIndex: 0,
+            explanation: "SSI in 1972 for the states and the District, AABD left in place in Puerto Rico, at $82 against $574 a month.",
+            sourceLessonSlug: "ssi-and-the-separate-channel",
+          },
+          {
+            prompt: "Why does this course say the SSI material is evidence rather than its spine?",
+            options: ["Its argument stands even with every dollar figure removed", "Because the Supreme Court decided the case on statutory rather than constitutional grounds", "Because the figures come from a brief rather than from an agency report", "Because Congress has since extended SSI to residents of Puerto Rico"],
+            correctIndex: 0,
+            explanation: "The course's mechanism is a doctrine about status, and the benefits gap is one consequence of it rather than its cause.",
+            sourceLessonSlug: "ssi-and-the-separate-channel",
+          },
+          {
+            prompt: "Which court decided the Aurelius case, and when?",
+            options: ["The Supreme Court, on 1 June 2020", "The First Circuit, on 15 February 2019, in the decision that was appealed", "The Tenth Circuit, on 15 June 2021, in the same term as Fitisemanu", "The Supreme Court, on 21 April 2022, alongside Vaello Madero"],
+            correctIndex: 0,
+            explanation: "Justice Breyer wrote for the Court, reversing and remanding the First Circuit's judgment.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "What does 'ex officio without voting rights' mean in practice on this Board?",
+            options: ["Presence without power", "A vote that counts only when the Board is otherwise evenly divided", "A right to attend meetings only when invited by the Board's chair", "A seat that rotates annually among the territory's elected officials"],
+            correctIndex: 0,
+            explanation: "It is the Governor's seat, and it is the only elected seat on a body that can override the Governor's budget.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "Which statute section supplies the Board's power over budgets?",
+            options: ["48 U.S.C. § 2142", "48 U.S.C. § 2121, which establishes the Board and its membership", "48 U.S.C. § 2101, which contains the statute's short title", "11 U.S.C. § 101, which defines State for the Bankruptcy Code"],
+            correctIndex: 0,
+            explanation: "Section 2141 covers fiscal plans and § 2142 covers budgets, including the deemed-approval provision.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "Which of these best describes what the Vaello Madero majority relied on?",
+            options: ["The Territory Clause and rational-basis review", "The Citizenship Clause of the Fourteenth Amendment", "The Appointments Clause and the separation of powers", "The Uniformity Clause of Article I, Section 8"],
+            correctIndex: 0,
+            explanation: "The opinion cites the text of the Constitution, longstanding historical practice and the Court's precedents.",
+            sourceLessonSlug: "ssi-and-the-separate-channel",
+          },
+          {
+            prompt: "Which figure in the SSI comparison came from a 2011 federal estimate?",
+            options: ["The number who would have qualified for SSI in Puerto Rico", "The average monthly AABD benefit paid on the island", "The number actually enrolled in AABD in the year 2021", "The average monthly SSI benefit paid in fiscal year 2020"],
+            correctIndex: 0,
+            explanation: "The estimate was over 300,000, against 34,224 actually enrolled a decade later.",
+            sourceLessonSlug: "ssi-and-the-separate-channel",
+          },
+          {
+            prompt: "What happened to Vaello Madero's benefits after the agency learned where he lived?",
+            options: ["They were cut to zero and backdated to 2013", "They were reduced to the territorial AABD rate of $82 a month", "They continued until the Supreme Court decided the case in 2022", "They were suspended pending an appeal to an administrative law judge"],
+            correctIndex: 0,
+            explanation: "The retroactive termination is what produced the $28,081 the government later sued to recover.",
+            sourceLessonSlug: "ssi-and-the-separate-channel",
+          },
+          {
+            prompt: "In what year did Vaello Madero begin receiving SSI, and where?",
+            options: ["2012, in New York", "1985, in New York, immediately after he moved there from the island", "2013, in Puerto Rico, after he had returned to live there", "2016, in Puerto Rico, when he applied for retirement benefits"],
+            correctIndex: 0,
+            explanation: "He was living in New York and had suffered a serious illness, and he moved back to Puerto Rico about a year later.",
+            sourceLessonSlug: "ssi-and-the-separate-channel",
+          },
+          {
+            prompt: "What makes the SSI definition of the United States notable in this course?",
+            options: ["It is another statute drawing its own list of places", "It is the only federal statute that uses a geographic definition at all", "It follows the Constitution's own definition of the United States", "It was written by the Social Security Administration rather than Congress"],
+            correctIndex: 0,
+            explanation: "The Hatch Act, the immigration statutes, the Bankruptcy Code and SSI each draw a different list, which is the pattern this course tracks.",
+            sourceLessonSlug: "ssi-and-the-separate-channel",
+          },
+          {
+            prompt: "Which of these is a fair way to describe PROMESA's acronym against its content?",
+            options: ["The acronym means promise and the statute creates an oversight board", "The acronym is drawn from the Spanish name of the territory's legislature", "The acronym was chosen by the government of Puerto Rico in 2016", "The acronym refers to the promise of eventual statehood for the island"],
+            correctIndex: 0,
+            explanation: "The full title is the Puerto Rico Oversight, Management, and Economic Stability Act, enacted as Public Law 114-187.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "Which section of the Bankruptcy Code contains the carve-out that mattered here?",
+            options: ["11 U.S.C. § 101", "48 U.S.C. § 2121, which establishes the Oversight Board", "26 U.S.C. § 933, which exempts Puerto Rico source income", "7 U.S.C. § 361a, which defines State for the Hatch Act"],
+            correctIndex: 0,
+            explanation: "Its definition of State includes Puerto Rico except for the purpose of defining who may be a debtor under chapter 9.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "What is the honest summary of the Board debate this course offers?",
+            options: ["A real problem, a real remedy, and a real democratic cost", "A manufactured crisis with no basis in the territory's actual finances", "A settled question that the Supreme Court resolved in 2020 for good", "A dispute about accounting standards rather than about self-government"],
+            correctIndex: 0,
+            explanation: "The debt and the bankruptcy exclusion were real, and so is the fact that no voter in Puerto Rico chose the body that can override its budget.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "How many of the Oversight Board's seven members come from congressional lists?",
+            options: ["Six", "All seven, with no discretion left to the President at all", "Three, with the remaining four confirmed by the Senate in the usual way", "None, because the President selects every member without any list"],
+            correctIndex: 0,
+            explanation: "The seventh is at the President's discretion, and appointing from a list is what removes the need for Senate confirmation.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "What happens to a Board-developed budget on the first day of the fiscal year?",
+            options: ["It is in full force and effect", "It goes to the Legislature for a ratifying vote within thirty days", "It takes effect only for the portion of spending funded federally", "It lapses unless the Governor signs it before the year begins"],
+            correctIndex: 0,
+            explanation: "The statute pairs that with the deeming provision, so the budget both takes effect and counts as approved by the elected branches.",
+            sourceLessonSlug: "promesa-and-the-board",
+          },
+          {
+            prompt: "Which of these figures is an official count rather than an estimate?",
+            options: ["Puerto Rico's 3,285,874 in the 2020 Census", "The 5.7 percent net coverage error reported in 2022", "The 174,000 people the coverage estimate covers", "The over 300,000 Puerto Rico residents who would have qualified for SSI"],
+            correctIndex: 0,
+            explanation: "A census count is the official number and a coverage estimate measures how wrong it was without replacing it.",
+            sourceLessonSlug: "counting-the-people",
+          },
+          {
+            prompt: "Which state is the largest of those Puerto Rico exceeded in 2020?",
+            options: ["Utah", "Connecticut, at 3,605,944, the smallest state above Puerto Rico", "Iowa, at 3,190,369, the second largest of the states below it", "Nevada, at 3,104,614, the third largest of the states below it"],
+            correctIndex: 0,
+            explanation: "Utah counted 3,271,616, just under Puerto Rico's 3,285,874.",
+            sourceLessonSlug: "counting-the-people",
+          },
+          {
+            prompt: "What did the Court say Congress must do when structuring benefits for the territories?",
+            options: ["Make policy judgments accounting for national and local considerations", "Provide benefits identical to those available in the several states", "Obtain the consent of each territory's legislature before legislating", "Consult the Oversight Board before extending any program to a territory"],
+            correctIndex: 0,
+            explanation: "The majority framed the Territory Clause as affording broad authority to legislate differently for the territories than for the states.",
+            sourceLessonSlug: "ssi-and-the-separate-channel",
+          },
+          {
+            prompt: "Which taxes does the Vaello Madero opinion say Puerto Rico residents generally do pay?",
+            options: ["Social Security, Medicare and unemployment taxes", "Federal estate and gift taxes on property held anywhere in the world", "Federal excise taxes on fuel and on manufactured tobacco products", "Federal income tax on all income from whatever source derived"],
+            correctIndex: 0,
+            explanation: "The opinion notes they are eligible for Social Security and Medicare, which is why the tax rationale covers some programs and not others.",
+            sourceLessonSlug: "ssi-and-the-separate-channel",
+          },
+        ],
+      },
+    },
   ],
 };
