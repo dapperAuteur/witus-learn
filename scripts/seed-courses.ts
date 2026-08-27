@@ -229,6 +229,7 @@ import { SHIRLEY_GRAHAM_COURSE } from "./data/shirley-graham-course";
 import { WHO_SIGNS_THE_PRINT_COURSE } from "./data/who-signs-the-print-course";
 import { THE_NAME_ON_THE_DOOR_COURSE } from "./data/the-name-on-the-door-course";
 import { WRITTEN_BY_HIMSELF_COURSE } from "./data/written-by-himself-course";
+import { THE_MATCH_COURSE } from "./data/the-match-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -2148,6 +2149,61 @@ async function main() {
       seriesCode: "CREDIT",
       seriesPosition: "W1",
       seriesTrack: "W · The written record",
+    },
+    // The Match — WARRANT-01, the FIRST course in a new series (Civics). Source brief:
+    // plans/future-courses/land-and-schools/2026-08-27-01-land-grants-hbcus-farm-programs.md, which
+    // found the whole Morrill mechanism missing from a 226-course catalog (zero occurrences of
+    // "Morrill", "Pigford", "Homestead Act", "heirs property" or "Federation of Southern
+    // Cooperatives" in scripts/data/) and recommended this as the first build.
+    //
+    // THE SPINE: a federal benefit is created, a class is excluded, a separate and smaller channel
+    // is built for the excluded class, and that channel is then permitted to go unmatched by the
+    // party obliged to fund it. The move recurs four times inside one statute family.
+    //
+    // WHY A SERIES, AND WHY THIS IS 01 RATHER THAN 00. The brief's central judgment is that the
+    // three items BAM filed (land-grant universities, HBCUs, farm programs) really are one
+    // mechanism but must NOT be one course, because the Indigenous-dispossession half and the
+    // Black-exclusion half are two injuries with two rightful narrators and a single course
+    // inevitably subordinates one. A series code is the artifact that makes that decision legible
+    // to a learner: WARRANT says "siblings on one spine", where a single sprawling course would say
+    // "one of these is a subsection of the other". The declared shape:
+    //   WARRANT-01  The Match (this course)      the 1890 institutions and the withheld state match
+    //   WARRANT-02  The County Committee         USDA farm programs, credit, eligibility, Pigford
+    //   WARRANT-03  Eleven Million Acres         the 1862 endowment, parcel by parcel
+    //   WARRANT-99  Who the System Was For       the 1862/1890/1994 comparison, taken last
+    // NUMBERED, NOT LETTERED, on purpose. A letter promises independent tracks takeable in any
+    // order, and 99 is a synthesis that genuinely depends on the three before it, so the path is
+    // not a set of parallel tracks. And there is deliberately NO "00": every term this course needs
+    // is defined inside it, and a vocabulary course that re-teaches "capacity grant" before anyone
+    // has met one would be filler with a badge on it.
+    //
+    // ORDER 02 BEFORE 03 is the brief's non-obvious call and this file keeps it: 02 is entirely
+    // about United States conduct and can be written responsibly now, while 03 should wait for the
+    // review arrangement in the brief's section 7.3 and is better approached with two shipped
+    // siblings than with a pitch.
+    //
+    // SECTION 7.3 IS OBEYED IN LESSON 2 even though WARRANT-03 has not shipped: the course carries
+    // its own statement that the 1862 endowment was land taken from Indigenous nations, cites Lee
+    // and Ahtone, states their counts AS their counts, and hands off to tribal-nations-governance
+    // rather than re-teaching allotment.
+    //
+    // EVERY PRIMARY DOCUMENT READ DIRECTLY: 7 U.S.C. 301/302/304 (the grant, the scrip, the
+    // perpetual fund), 322/323 (the 1890 Act's CASH appropriation and the separate-but-equal
+    // proviso), 3221 and 3222d (the match and the waiver), 361c (the Hatch allotment and the only
+    // 1862 waiver, which reaches four jurisdictions and is what CRS's word "most" carries), CRS
+    // IF11847 version 10, the sixteen Cardona/Vilsack letters of 18 September 2023 as published,
+    // USDA release 0188.23, and APLU brief 3000-PB1. The sixteen letters sum to $13,055,622,416,
+    // computed here, which reconciles the official "over $12 billion" with the "$13 billion" in
+    // press coverage. NO migration - pnpm seed:courses.
+    {
+      slug: "the-match",
+      course: THE_MATCH_COURSE,
+      category: "Civics",
+      seriesSlug: "land-warrant",
+      seriesTitle: "The Land Warrant",
+      seriesOrder: 1,
+      seriesCode: "WARRANT",
+      seriesPosition: "01",
     },
   ]) {
     await seedAuthoredCourse(db, {
