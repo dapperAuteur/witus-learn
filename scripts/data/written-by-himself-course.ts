@@ -2393,5 +2393,655 @@ Fisher, A. (1881). *What Mrs. Fisher knows about old Southern cooking, soups, pi
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 5 — The correction
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "linda-brent-and-the-editor",
+      title: "17 · Linda Brent and the editor",
+      section: "Section 5 · The correction",
+      body: `Boston, 1861. A book is published for its author, and its title page reads:
+
+> INCIDENTS IN THE LIFE OF A SLAVE GIRL.
+> WRITTEN BY HERSELF.
+> ...
+> EDITED BY L. MARIA CHILD.
+> BOSTON: PUBLISHED FOR THE AUTHOR. 1861.
+
+**Three of this course's mechanisms are on that page at once**, which is why Lesson 3 used it as the stacking example.
+
+1. **A subtitle claim.** "Written by Herself", the Douglass formula, sixteen years on.
+2. **A pseudonym.** The author's preface is signed **LINDA BRENT**. The real author, Harriet Jacobs, had escaped enslavement in North Carolina, and naming herself was not a neutral act.
+3. **An editor's name**, in the position and typeface of a credit: **Edited by L. Maria Child**.
+
+**Now read what Child herself wrote in her introduction**, because it is the most important paragraph in this section:
+
+> "At her request, I have revised her manuscript; but such changes as I have made have been mainly for purposes of condensation and orderly arrangement."
+
+> "With trifling exceptions, both the ideas and the language are her own. I pruned excrescences a little, but otherwise I had no reason for changing her lively and dramatic way of telling her own story."
+
+**Child disclaimed authorship in print, in the book, in 1861, in about as plain a sentence as the English language allows.** "Both the ideas and the language are her own." She describes her own work as condensation, arrangement and light pruning. She names the author's manner and says she saw no reason to change it.
+
+**And for roughly the next century, the book was widely read as Child's.**
+
+That is the fact this whole section exists to explain, and it should be genuinely surprising. Nobody forged anything. The disclaimer was not hidden in a rare edition, it was in the front matter of the book. The author's own subtitle said she wrote it herself. And it did not hold.
+
+**Why not? Four things stacked, and each is a mechanism this course has already named.**
+
+- **The author's name was not on the book.** "Linda Brent" is a pseudonym, so there was no real name for a catalogue, a bibliography or a reader to attach the work to. An author who cannot be indexed cannot be credited.
+- **A real, famous name WAS on the book**, in a credit position. Lydia Maria Child was a well-known white writer and editor. Given one indexable name and one unindexable one, the record takes the indexable one.
+- **The subtitle claim was doing exactly the work Section 3 described**, which means it was already a signal of contested authorship rather than a settled fact.
+- **The disclaimer's placement worked against it.** A statement inside an introduction is easy to skip, easy to discount as modesty, and impossible to see from a catalogue record.
+
+**Notice what this is not.** It is not a theft, not a ghostwriting contract, and not a forgery. It is an **attribution drifting to the most legible name on the page**, which is a failure mode of the record rather than an act by any person. That makes it far more common than theft and much harder to notice.
+
+**And notice which of the four shapes it began as.** Child was an authenticator: a well-known white abolitionist lending standing to a book whose author would otherwise not be believed. Over a century, the authenticator's name was mistaken for the author's. Lesson 3 warned that this exact confusion happens. Here is the case.
+
+:::reveal What does Lydia Maria Child say in her introduction about the ideas and the language of the book? ||| That with trifling exceptions both the ideas and the language are the author's own, and that her own work was condensation, orderly arrangement and a little pruning.
+
+:::reveal Why did the misattribution hold despite a printed disclaimer and a "Written by Herself" subtitle? ||| Because the real author's name was not on the book at all, a famous editor's name was, and an attribution drifts to the most legible name on the page.
+
+## Vocabulary
+- **Pseudonym**: a false name printed as the author's, which protects the writer and also leaves nothing for a catalogue or bibliography to index.
+- **Legibility**: how easily a name can be recognised, indexed and looked up, which determines where an attribution drifts when a record is ambiguous.
+- **Attribution drift**: the movement of credit toward the most recognisable name associated with a work, without anyone intending or committing a theft.
+- **Disclaimer**: a printed statement by an editor limiting their own role, which is only as effective as its position on the page makes it.
+
+## Sources
+Jacobs, H. A. (1861). *Incidents in the life of a slave girl. Written by herself* (L. M. Child, Ed.). Published for the Author. https://docsouth.unc.edu/fpn/jacobs/jacobs.html`,
+    },
+    {
+      slug: "how-yellin-settled-it",
+      title: "18 · How Yellin settled it",
+      section: "Section 5 · The correction",
+      body: `A misattribution does not correct itself. Somebody has to do it, with documents, and then publish the result somewhere that catalogues will follow.
+
+**The scholar is Jean Fagan Yellin.** The correction has a method, a date and an outcome, and this course teaches it as a worked example rather than as a story about a hero.
+
+**The method: go to the author's own letters.**
+
+*Incidents* is a book whose author is hidden behind a pseudonym. But Harriet Jacobs wrote letters under her own name, and letters survive in the papers of the people she wrote to. The most important of those correspondents was **Amy Post**, the Rochester abolitionist, whose family papers are held at the **University of Rochester** (University of Rochester Libraries, n.d.). Jacobs's letters there are not literary artifacts. They are working correspondence, in which a woman discusses writing the book that would become *Incidents*.
+
+**That is the whole move, and it is worth stating as a general rule.** When a book's title page cannot tell you who wrote it, the answer is usually not on the title page of anything else. It is in the paperwork around the writing: letters, contracts, receipts, diaries, an editor's correspondence file. **The record of the writing outlives the record of the credit**, if anyone kept it.
+
+**The dates: 1981 and 1987.**
+
+- In **1981**, Yellin published "Written by Herself: Harriet Jacobs's Slave Narrative" in the journal *American Literature*. That is the argument entering the scholarly record where it can be checked and contested.
+- In **1987**, Harvard University Press published *Incidents in the Life of a Slave Girl, Written by Herself*, edited by Yellin, with Jacobs named as the author. That is the correction entering the **catalogue**, which is the part that actually changes what a library, a bookseller and a student see.
+
+**Two dates, two different jobs, and both are necessary.** An article persuades scholars. An edition changes the record. A correction that stops after the article is a correction that most readers will never encounter, because most readers meet a book through a catalogue entry rather than through a journal.
+
+**What it cost.** Yellin's authentication work ran over years, not weeks, and it drew on more than one archive: the Post family papers, state and local historical societies, and North Carolina records relating to the families involved. That is the honest scale of a correction, and it is why so few of them happen. The evidence for an unrecorded author is nobody's job to assemble, and assembling it is slow.
+
+**Map this onto CREDIT-00's anatomy of a correction**, which this course does not re-teach and does use:
+
+| Stage | In this case |
+| --- | --- |
+| A claim is doubted | Authorship read as Child's, or as fiction |
+| A named person takes it up | Jean Fagan Yellin |
+| Documents are produced | Jacobs's own letters, principally the Post family papers |
+| The argument is published | *American Literature*, 1981 |
+| The record is changed | Harvard University Press edition, 1987 |
+
+**And now the part this course insists on.** Jacobs had already told the truth. She put "Written by Herself" on her own title page in 1861. Her editor confirmed it in print on the next page. **The correction in 1987 did not discover anything the book had not said.** It supplied the one thing the book could not supply for itself: a real name, attached to documents, in a place the catalogue would copy.
+
+That is what a correction actually is. Not a revelation. **An indexable name, backed by evidence, published where records are made.**
+
+:::reveal What documentary base did Yellin's authentication of Jacobs rest on? ||| Jacobs's own letters written under her own name, principally in the Amy Post family papers at the University of Rochester, alongside other archival records.
+
+:::reveal Why are both 1981 and 1987 necessary to the correction? ||| The 1981 article puts the argument into the scholarly record where it can be checked; the 1987 Harvard edition puts the corrected authorship into the catalogue, which is what most readers actually meet.
+
+## Vocabulary
+- **Authentication**: assembling documentary evidence that a named person wrote a particular work, which is what Yellin's research did for Jacobs.
+- **The record of the writing**: letters, contracts and working papers around a book's composition, which frequently outlive the record of who was credited.
+- **Scholarly edition**: a re-publication with an established attribution and apparatus, which is the step that moves a correction into library catalogues.
+- **Indexable name**: a real name a catalogue can carry, which is the thing a pseudonymous author cannot supply and a correction must.
+
+## Sources
+University of Rochester Libraries. (n.d.). *Isaac and Amy Post family papers* [Finding aid]. Rare Books, Special Collections, and Preservation. https://archives.lib.rochester.edu/repositories/2/resources/968
+
+Yellin, J. F. (1981). Written by herself: Harriet Jacobs's slave narrative. *American Literature, 53*(3), 479-486.
+
+Jacobs, H. A. (1861). *Incidents in the life of a slave girl. Written by herself* (L. M. Child, Ed.). Published for the Author. https://docsouth.unc.edu/fpn/jacobs/jacobs.html`,
+    },
+    {
+      slug: "keckley-doubted-and-punished",
+      title: "19 · Doubted and punished at once",
+      section: "Section 5 · The correction",
+      body: `New York, 1868. The title page:
+
+> BEHIND THE SCENES.
+> BY ELIZABETH KECKLEY,
+> FORMERLY A SLAVE, BUT MORE RECENTLY MODISTE, AND FRIEND TO MRS. ABRAHAM LINCOLN.
+> OR, THIRTY YEARS A SLAVE, AND FOUR YEARS IN THE WHITE HOUSE.
+>
+> New York: G. W. Carleton & Co., Publishers. M DCCC LXVIII.
+
+**No pseudonym. No "written by herself". No editor's name.** After Wheatley's eighteen signatures, Douglass's three guarantees and Jacobs's pseudonym, Elizabeth Keckley put her own name on the front of a book about the President's household and let it stand.
+
+**This is the case where both of this course's mechanisms run on one person at the same time**, which makes her the single richest subject in it.
+
+**Mechanism one: the byline was punished.**
+
+Keckley wrote, in her own preface, that she had "acceded to the importunities of my friends," that "everything I have written is strictly true; much has been omitted, but nothing has been exaggerated," and that if she had betrayed confidence "it has been to place Mrs. Lincoln in a better light before the world" (Keckley, 1868). Documenting the American South records that her purposes were "partly to help Mrs. Lincoln financially and partly to counter criticism of Mrs. Lincoln" (Documenting the American South, n.d.).
+
+The result was not what she intended. In that summary's words: "Keckley did not foresee the overwhelming public disapproval for publishing personal details about Mrs. Lincoln and White House private life; it led to the end of her dressmaking career as well as condemnation from the Lincoln family" (Documenting the American South, n.d.).
+
+**Read that against Section 1's claim that a byline pays.** It does, and this is the other side of the same ledger. A byline is exposure as well as an asset, and what it pays depends on who is allowed to have written a book about whom. Keckley had built a business on discretion and she spent it. The dressmaking career ended. She later taught at Wilberforce University, and she died in 1907 in a home for destitute women that she had helped to establish.
+
+**Mechanism two: the authorship was doubted anyway.**
+
+Behind the Scenes was edited by the journalist James Redpath, and there has long been argument about how much of the book is his. Documenting the American South puts the current position carefully and this course quotes it rather than improving on it: there is "speculation about the level of involvement of Keckley's editor, James Redpath," and "the verifiable facts in *Behind the Scenes* have affirmed the text's authenticity" (Documenting the American South, n.d.).
+
+**So: her authorship was doubted, and her authorship was punished.** The doubt did not protect her from the punishment, and the punishment did not settle the doubt. She paid the full price of the byline and received a discounted version of the credit.
+
+**What this course refuses to do with the Redpath question.** It does not report a proportion. It does not name Redpath as the writer, and it does not declare the question closed in either direction. The record says an editor was involved and does not measure him, and inventing a measurement would be exactly the error this course spends six sections teaching people to catch. **Where the record does not name the writer of a passage, the honest output is that the record does not name the writer.**
+
+**Set the three women of this section side by side and the argument of the whole course is visible in one table:**
+
+| | Name on the book | Outcome |
+| --- | --- | --- |
+| Wheatley, 1773 | Hers, propped by eighteen signatures | Byline paid: reputation, advocates, manumission, income |
+| Jacobs, 1861 | A pseudonym, beside a famous editor's | Credit drifted to the editor for about a century |
+| Keckley, 1868 | Hers, unqualified | Career ended, and authorship still questioned |
+
+**Four of the strongest documents in this course are books by Black women whose authorship was disputed**, and that is not an addendum to the argument. It is the argument. The question "who ends up bylined" has a different answer depending on who is asking to be believed, and these three books are the evidence.
+
+:::reveal What did publishing Behind the Scenes cost Elizabeth Keckley? ||| Her dressmaking career ended and she was condemned by the Lincoln family, after public disapproval of a book she had written partly to help Mrs. Lincoln.
+
+:::reveal What is this course's position on how much of Behind the Scenes James Redpath wrote? ||| That the record says an editor was involved and does not measure him, so the course reports the speculation and refuses to supply a proportion.
+
+## Vocabulary
+- **Modiste**: a dressmaker, the trade named on Keckley's own title page and the business the book's publication destroyed.
+- **Exposure**: the cost side of a byline, in which being named attaches a person to a book's consequences as well as its credit.
+- **Unmeasured editorial involvement**: an editor whose participation is documented but whose share of the text no source quantifies, which this course reports rather than estimates.
+- **Discounted credit**: authorship that is formally held but not fully believed, which is what a persistent doubt produces even without a rival claimant.
+
+## Sources
+Documenting the American South. (n.d.). *Summary of Behind the Scenes, or, Thirty years a slave, and four years in the White House*. University of North Carolina at Chapel Hill. https://docsouth.unc.edu/neh/keckley/summary.html
+
+Keckley, E. (1868). *Behind the scenes, or, Thirty years a slave, and four years in the White House*. G. W. Carleton & Co. https://docsouth.unc.edu/neh/keckley/keckley.html`,
+    },
+    {
+      slug: "quiz-the-correction",
+      title: "20 · Knowledge check: the correction",
+      section: "Section 5 · The correction",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "How is the author's preface to Incidents in the Life of a Slave Girl signed?",
+            options: ["Linda Brent", "Harriet A. Jacobs, of Edenton in the state of North Carolina", "A Woman of North Carolina, the phrase also quoted on the title page", "L. Maria Child, who prepared the manuscript for publication in Boston"],
+            correctIndex: 0,
+            explanation: "A pseudonym, adopted because naming herself was not a neutral act for an escaped woman.",
+            sourceLessonSlug: "linda-brent-and-the-editor",
+          },
+          {
+            prompt: "Whose name appears on the 1861 title page in an editor's credit position?",
+            options: ["L. Maria Child", "Amy Post, the Rochester abolitionist who encouraged the writing", "Jean Fagan Yellin, in the Harvard University Press scholarly edition", "William Lloyd Garrison, as he had for the 1845 Douglass narrative"],
+            correctIndex: 0,
+            explanation: "Edited by L. Maria Child, a well-known white writer, printed in a credit position and typeface.",
+            sourceLessonSlug: "linda-brent-and-the-editor",
+          },
+          {
+            prompt: "Which three mechanisms sit on the 1861 title page at once?",
+            options: ["A subtitle claim, a pseudonym and an editor's name", "A ghostwriting contract, an attestation and a translator's note", "A dedication, a subscription list and a certificate of authorship", "An amanuensis credit, a copyright notice and a publisher's guarantee"],
+            correctIndex: 0,
+            explanation: "Which is why Lesson 3 used this book as the stacking example.",
+            sourceLessonSlug: "linda-brent-and-the-editor",
+          },
+          {
+            prompt: "What does Child say about the ideas and language of the book?",
+            options: ["They are the author's own", "That she supplied the language and the author supplied the incidents", "That the two women had composed the narrative jointly over several years", "That she declined to alter anything, including obvious errors of grammar"],
+            correctIndex: 0,
+            explanation: "With trifling exceptions, in a sentence printed in the book in 1861.",
+            sourceLessonSlug: "linda-brent-and-the-editor",
+          },
+          {
+            prompt: "How does Child describe her own work on the manuscript?",
+            options: ["Condensation and orderly arrangement", "A thorough rewriting undertaken at the author's explicit request", "The addition of historical context the author could not have supplied", "The removal of passages likely to expose the author to legal danger"],
+            correctIndex: 0,
+            explanation: "She adds that she pruned excrescences a little and had no reason to change the author's way of telling it.",
+            sourceLessonSlug: "linda-brent-and-the-editor",
+          },
+          {
+            prompt: "Despite that printed disclaimer, how was the book widely read for about a century?",
+            options: ["As Child's", "As an anonymous work with no attributable author at all", "As a collaboration credited equally to both women on the title page", "As a translation of an earlier narrative published in Britain"],
+            correctIndex: 0,
+            explanation: "Which is the fact the whole section exists to explain, and it should be genuinely surprising.",
+            sourceLessonSlug: "linda-brent-and-the-editor",
+          },
+          {
+            prompt: "What does this course call the movement of credit toward the most recognisable name?",
+            options: ["Attribution drift", "Ghostwriting, since the true author's name never reaches the reader", "The Matilda effect, which CREDIT-00 teaches as a general mechanism", "Authentication, since a famous name is being used to support a book"],
+            correctIndex: 0,
+            explanation: "A failure mode of the record rather than an act by any person, which makes it common and hard to notice.",
+            sourceLessonSlug: "linda-brent-and-the-editor",
+          },
+          {
+            prompt: "Why could a catalogue not carry the real author's name in 1861?",
+            options: ["The book gave a pseudonym", "Because catalogues did not record authors of narratives of this kind", "Because the publisher had registered the copyright in Child's name", "Because the author had no legal identity while she remained a fugitive"],
+            correctIndex: 0,
+            explanation: "An author who cannot be indexed cannot be credited, whatever the subtitle claims.",
+            sourceLessonSlug: "linda-brent-and-the-editor",
+          },
+          {
+            prompt: "Why did the placement of Child's disclaimer work against it?",
+            options: ["An introduction is easy to skip and invisible to a catalogue", "Because it appeared only in the second and later printings of the book", "Because it was printed in smaller type than the rest of the front matter", "Because it contradicted the claim made on the book's own title page"],
+            correctIndex: 0,
+            explanation: "It is also easy to discount as modesty, which a title-page claim is not.",
+            sourceLessonSlug: "linda-brent-and-the-editor",
+          },
+          {
+            prompt: "In this course's four shapes, what was Child originally?",
+            options: ["An authenticator", "A ghost, since her writing was never acknowledged in the book", "An amanuensis, since Jacobs dictated the narrative to her", "An as-told-to collaborator sharing the credit with the subject"],
+            correctIndex: 0,
+            explanation: "A well-known white abolitionist lending standing to a book whose author would not be believed.",
+            sourceLessonSlug: "linda-brent-and-the-editor",
+          },
+          {
+            prompt: "Which confusion did Lesson 3 warn about, and which this case demonstrates?",
+            options: ["An authenticator mistaken for the author", "A ghost mistaken for an as-told-to collaborator", "A translator mistaken for the original author of a text", "A subtitle claim mistaken for a publisher's guarantee"],
+            correctIndex: 0,
+            explanation: "Over a century the editor's name was read as the name of the person who wrote the book.",
+            sourceLessonSlug: "linda-brent-and-the-editor",
+          },
+          {
+            prompt: "Is the Jacobs misattribution a theft, in this course's terms?",
+            options: ["No", "Yes, since a white editor took credit for a Black woman's book", "Yes, since the publisher knowingly printed a misleading title page", "The question cannot be answered from the surviving documents"],
+            correctIndex: 0,
+            explanation: "Nobody forged anything; the attribution drifted to the most legible name on the page.",
+            sourceLessonSlug: "linda-brent-and-the-editor",
+          },
+          {
+            prompt: "Which scholar established Harriet Jacobs's authorship?",
+            options: ["Jean Fagan Yellin", "Lydia Maria Child, in a later statement correcting her own introduction", "Amy Post, who published the correspondence in her own lifetime", "Harvard University Press, which commissioned the research directly"],
+            correctIndex: 0,
+            explanation: "The course teaches it as a worked example of a correction rather than as a story about a hero.",
+            sourceLessonSlug: "how-yellin-settled-it",
+          },
+          {
+            prompt: "What documents did the authentication rest on?",
+            options: ["Jacobs's own letters", "The publisher's contract file for the 1861 Boston edition", "Child's editorial correspondence with the Boston printing house", "A diary kept by Jacobs during her years of concealment in North Carolina"],
+            correctIndex: 0,
+            explanation: "Written under her own name, principally in the Post family papers, alongside other archives.",
+            sourceLessonSlug: "how-yellin-settled-it",
+          },
+          {
+            prompt: "Whose family papers were the most important single source?",
+            options: ["Amy Post's", "Frederick Douglass's, at the newspaper office he ran in Rochester", "Harriet Beecher Stowe's, held with her literary manuscripts", "Lydia Maria Child's, deposited after her death in Boston"],
+            correctIndex: 0,
+            explanation: "Held at the University of Rochester, and containing working correspondence rather than literary artifacts.",
+            sourceLessonSlug: "how-yellin-settled-it",
+          },
+          {
+            prompt: "Which repository holds the Isaac and Amy Post family papers?",
+            options: ["The University of Rochester", "The North Carolina State Archives, with the Horniblow records", "The Massachusetts Historical Society, in Boston", "Harvard University Library, alongside the 1987 edition's research files"],
+            correctIndex: 0,
+            explanation: "In its Rare Books, Special Collections and Preservation department.",
+            sourceLessonSlug: "how-yellin-settled-it",
+          },
+          {
+            prompt: "What general rule does this lesson draw about hidden authorship?",
+            options: ["The record of the writing outlives the record of the credit", "A pseudonymous book can never be attributed with confidence", "Only a publisher's archive can settle who wrote a nineteenth-century book", "A subtitle claim is sufficient evidence of authorship if it is contemporaneous"],
+            correctIndex: 0,
+            explanation: "The answer is in the paperwork around the writing: letters, contracts, receipts, diaries, editorial files.",
+            sourceLessonSlug: "how-yellin-settled-it",
+          },
+          {
+            prompt: "In what year did Yellin publish the article in American Literature?",
+            options: ["1981", "1987, in the same year as the Harvard University Press edition", "1861, contemporaneously with the book it concerns", "2004, following the publication of the Harriet Jacobs family papers"],
+            correctIndex: 0,
+            explanation: "Which is the argument entering the scholarly record where it can be checked and contested.",
+            sourceLessonSlug: "how-yellin-settled-it",
+          },
+          {
+            prompt: "In what year did Harvard University Press publish the edition Yellin edited?",
+            options: ["1987", "1981, alongside the article that made the case", "1973, two centuries after the Wheatley attestation", "1861, as a simultaneous American and British issue"],
+            correctIndex: 0,
+            explanation: "That is the correction entering the catalogue, which is what a library, a bookseller and a student see.",
+            sourceLessonSlug: "how-yellin-settled-it",
+          },
+          {
+            prompt: "Why are both the article and the edition necessary?",
+            options: ["One persuades scholars, the other changes the record", "Because a journal will not accept an argument without a companion edition", "Because copyright in the corrected attribution vests only on republication", "Because the two were addressed to American and British audiences separately"],
+            correctIndex: 0,
+            explanation: "Most readers meet a book through a catalogue entry rather than through a journal.",
+            sourceLessonSlug: "how-yellin-settled-it",
+          },
+          {
+            prompt: "What does this lesson say is the honest scale of a correction?",
+            options: ["Years and several archives", "A single afternoon in the right special-collections reading room", "A letter to the publisher requesting a change to the title page", "An entry in a bibliography, which catalogues then copy automatically"],
+            correctIndex: 0,
+            explanation: "Which is why so few corrections happen: assembling the evidence is nobody's job and it is slow.",
+            sourceLessonSlug: "how-yellin-settled-it",
+          },
+          {
+            prompt: "In the section's table of the anatomy of a correction, what is the final stage?",
+            options: ["The record is changed", "The argument is published in a peer-reviewed journal", "Documents are produced from an archive holding the author's letters", "A named person takes up the doubted claim and begins the research"],
+            correctIndex: 0,
+            explanation: "The 1987 Harvard edition, which is the step catalogues follow.",
+            sourceLessonSlug: "how-yellin-settled-it",
+          },
+          {
+            prompt: "What did the 1987 correction NOT do?",
+            options: ["Discover something the book had not said", "Change the name a library catalogue carries for the work", "Attach documentary evidence to the author's real name", "Enter the corrected attribution into the scholarly record"],
+            correctIndex: 0,
+            explanation: "Jacobs had said Written by Herself in 1861 and Child had confirmed it on the next page.",
+            sourceLessonSlug: "how-yellin-settled-it",
+          },
+          {
+            prompt: "How does this lesson define a correction?",
+            options: ["An indexable name, backed by evidence, published where records are made", "A public retraction issued by the institution that made the original error", "The discovery of a document nobody had previously known to exist", "A scholarly consensus reached without any single person's intervention"],
+            correctIndex: 0,
+            explanation: "Not a revelation, which is why the 1861 book's own statements were not enough on their own.",
+            sourceLessonSlug: "how-yellin-settled-it",
+          },
+          {
+            prompt: "Which course owns the general anatomy of a correction that this lesson maps onto?",
+            options: ["CREDIT-00", "CREDIT-01, through its account of the United States patent record", "CREDIT-02, through the founding-year disagreement between two institutions", "CREDIT-03, through the three dates given for one portrait unveiling"],
+            correctIndex: 0,
+            explanation: "This course uses the anatomy rather than re-teaching it, and supplies a real case.",
+            sourceLessonSlug: "how-yellin-settled-it",
+          },
+          {
+            prompt: "What appears on the 1868 title page of Behind the Scenes after the author's name?",
+            options: ["Formerly a slave, but more recently modiste", "Written by herself, in the formula Douglass had established", "Edited by James Redpath, of the New York publishing trade", "Published for the author, at her own expense and risk"],
+            correctIndex: 0,
+            explanation: "And friend to Mrs. Abraham Lincoln, which is the credential the book was sold on.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+          {
+            prompt: "What does the 1868 title page NOT carry?",
+            options: ["A pseudonym or a subtitle claim", "The publisher's name and the place of publication", "The author's own name in the principal author position", "A description of the author's former trade and connections"],
+            correctIndex: 0,
+            explanation: "Keckley put her own name on the front of the book and let it stand.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+          {
+            prompt: "Who published Behind the Scenes?",
+            options: ["G. W. Carleton & Co.", "Derby and Miller of Auburn, New York, as with Twelve Years a Slave", "Published for the Author, without a commercial imprint on the page", "Miller, Orton and Mulligan, the publisher of My Bondage and My Freedom"],
+            correctIndex: 0,
+            explanation: "In New York, in 1868, with the year set on the title page in roman numerals.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+          {
+            prompt: "What does Keckley say in her preface about exaggeration?",
+            options: ["Nothing has been exaggerated", "That some incidents have been heightened for the sake of the narrative", "That her editor cautioned her against exaggeration and she accepted it", "That readers should allow for the failings of memory after many years"],
+            correctIndex: 0,
+            explanation: "She writes that everything she has written is strictly true and much has been omitted.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+          {
+            prompt: "According to Documenting the American South, what were Keckley's stated purposes?",
+            options: ["To help Mrs. Lincoln financially and counter criticism of her", "To establish her own reputation as a writer independent of her trade", "To correct the published accounts of the President's assassination", "To raise funds for the home for destitute women she had helped found"],
+            correctIndex: 0,
+            explanation: "Which makes the reception of the book a straightforward failure of her own intentions.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+          {
+            prompt: "What did publishing the book cost Keckley professionally?",
+            options: ["Her dressmaking career", "The copyright in her own text, which passed to her editor", "The friendship of the abolitionist community in Washington", "Her position at Wilberforce University, from which she was dismissed"],
+            correctIndex: 0,
+            explanation: "Along with condemnation from the Lincoln family, after overwhelming public disapproval.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+          {
+            prompt: "What had Keckley's business been built on, in this lesson's reading?",
+            options: ["Discretion", "Exclusive access to imported fabrics unavailable to her competitors", "A federal contract to supply uniforms during the years of the war", "The patronage of a single client whose custom she could not replace"],
+            correctIndex: 0,
+            explanation: "And she spent it, which is why the byline was exposure as well as an asset.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+          {
+            prompt: "Who edited Behind the Scenes?",
+            options: ["James Redpath", "L. Maria Child, who had edited Incidents seven years earlier", "David Wilson, the lawyer who had prepared Northup's narrative", "John E. Washington, whose own book appeared much later"],
+            correctIndex: 0,
+            explanation: "A journalist, whose level of involvement Documenting the American South calls a matter of speculation.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+          {
+            prompt: "How does Documenting the American South describe the text's authenticity?",
+            options: ["Verifiable facts have affirmed it", "It cannot be established without the manuscript, which does not survive", "It is disputed by every scholar who has examined the book closely", "It rests entirely on the author's own assurances in her preface"],
+            correctIndex: 0,
+            explanation: "The same source calls Redpath's level of involvement speculation, and the course quotes both.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+          {
+            prompt: "What does this course refuse to supply about Redpath?",
+            options: ["A proportion of the text", "The fact that he edited the book, which is not documented", "His occupation, which no source records with any certainty", "Any mention of him at all, since the allegation rests on rumour"],
+            correctIndex: 0,
+            explanation: "The record says an editor was involved and does not measure him, so inventing a measurement is the error.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+          {
+            prompt: "What is the honest output when the record does not name the writer of a passage?",
+            options: ["That the record does not name the writer", "The most probable candidate, clearly marked as a probability", "The named editor, since an editor is the default writer of a memoir", "No statement at all, since an unresolved question should be omitted"],
+            correctIndex: 0,
+            explanation: "It is the rule this course spends six sections teaching people to apply.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+          {
+            prompt: "Why is Keckley the richest subject in this course?",
+            options: ["Both mechanisms ran on her at once", "Because her book is the only one whose manuscript survives complete", "Because she is the only author here who was never enslaved as a child", "Because she published without any editor, publisher or intermediary"],
+            correctIndex: 0,
+            explanation: "Her authorship was doubted, and her authorship was punished, and neither settled the other.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+          {
+            prompt: "In the section's closing table, what was the outcome for Wheatley?",
+            options: ["The byline paid", "The credit drifted to her publisher within a generation", "Her career ended and her authorship was still questioned", "Her authorship was corrected by a scholar a century later"],
+            correctIndex: 0,
+            explanation: "Reputation, advocates, manumission and an income she describes as entirely her own.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+          {
+            prompt: "In that table, what was the outcome for Jacobs?",
+            options: ["Credit drifted to the editor for about a century", "Her career ended and the Lincoln family condemned her", "Her byline produced a manumission and a transatlantic reputation", "Her authorship was never doubted because of her subtitle claim"],
+            correctIndex: 0,
+            explanation: "A pseudonym beside a famous editor's name, and the record took the indexable one.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+          {
+            prompt: "What does this course say about the four disputed books by Black women in it?",
+            options: ["They are the argument, not an addendum", "They are illustrative examples supporting a case made elsewhere", "They are the exceptions that prove the convention applied evenly", "They were selected to balance a body of evidence otherwise made of men"],
+            correctIndex: 0,
+            explanation: "Who ends up bylined has a different answer depending on who is asking to be believed.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+          {
+            prompt: "Keckley spent her final years in:",
+            options: ["A home for destitute women she had helped establish", "The household of the Lincoln family, restored to their favour", "Wilberforce University, where she continued to teach until her death", "New York, working for the publisher that had issued her book"],
+            correctIndex: 0,
+            explanation: "She died there in 1907, having earlier taught at Wilberforce University.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+          {
+            prompt: "How does Keckley's preface anticipate criticism?",
+            options: ["She asks that her explanation be read and weighed first", "She names the critics she expects and answers each in turn", "She states that criticism would prove the book's accuracy", "She attributes any offence to the decisions of her editor"],
+            correctIndex: 0,
+            explanation: "She writes that in writing as she has done she is well aware she has invited criticism.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+          {
+            prompt: "What does Keckley say about betraying confidence?",
+            options: ["It was to place Mrs. Lincoln in a better light", "That she betrayed no confidence, since nothing private was published", "That her editor removed the passages most likely to give offence", "That any confidence was released by the events she describes"],
+            correctIndex: 0,
+            explanation: "Which is why the reception of the book was a failure of her own stated intentions.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+          {
+            prompt: "What is a discounted credit, in this lesson's terms?",
+            options: ["Authorship formally held but not fully believed", "A collaborator credit set below the subject's name on a title page", "A royalty reduced because an editor shared in preparing the manuscript", "An attribution withdrawn by a publisher after the first printing"],
+            correctIndex: 0,
+            explanation: "Which is what a persistent doubt produces even without a rival claimant.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+          {
+            prompt: "The Jacobs case shows that a printed disclaimer is only as strong as:",
+            options: ["Its position on the page", "The reputation of the person who wrote it", "The number of editions in which it is reprinted", "The legal force a publisher is willing to give it"],
+            correctIndex: 0,
+            explanation: "Child's sentence was plain, was in the book, and was skipped for about a century.",
+            sourceLessonSlug: "linda-brent-and-the-editor",
+          },
+          {
+            prompt: "What did Jacobs risk by naming herself?",
+            options: ["She had escaped enslavement", "The loss of her publisher, who required anonymity by contract", "A libel action by the families described in the narrative", "Her position with the abolitionist societies that supported her"],
+            correctIndex: 0,
+            explanation: "Which is why the pseudonym was protective, and also why nothing indexable reached a catalogue.",
+            sourceLessonSlug: "linda-brent-and-the-editor",
+          },
+          {
+            prompt: "How many years separate Douglass's subtitle formula from Jacobs's use of it?",
+            options: ["Sixteen", "Thirty-two, spanning the whole period of the narrative genre", "Eight, which is why the two books are usually discussed together", "Forty-one, which is why the formula had lost its force by 1861"],
+            correctIndex: 0,
+            explanation: "1845 and 1861, and by then the phrase was a convention of the genre.",
+            sourceLessonSlug: "linda-brent-and-the-editor",
+          },
+          {
+            prompt: "Where was Incidents in the Life of a Slave Girl published?",
+            options: ["Boston, for the author", "New York, by G. W. Carleton and Company", "London, by a publisher of religious and antislavery works", "Rochester, at the press associated with Frederick Douglass's paper"],
+            correctIndex: 0,
+            explanation: "Published for the Author, in 1861, with Child named as editor.",
+            sourceLessonSlug: "linda-brent-and-the-editor",
+          },
+          {
+            prompt: "What kind of correspondence did Yellin find in the Post papers?",
+            options: ["Working letters about writing the book", "Literary drafts of chapters later printed in Incidents", "Contracts between Jacobs and her Boston publisher", "Letters from Child describing her editorial changes"],
+            correctIndex: 0,
+            explanation: "Not literary artifacts: a woman discussing the writing of what became Incidents.",
+            sourceLessonSlug: "how-yellin-settled-it",
+          },
+          {
+            prompt: "Besides the Post papers, what other kinds of records did the authentication draw on?",
+            options: ["State and local historical societies and North Carolina records", "The publisher's ledgers and the printer's surviving proof sheets", "Federal census returns for the years between 1840 and 1870 only", "The private papers of Lydia Maria Child and Harriet Beecher Stowe"],
+            correctIndex: 0,
+            explanation: "Which is why the work took years rather than weeks.",
+            sourceLessonSlug: "how-yellin-settled-it",
+          },
+          {
+            prompt: "What is the one thing the 1861 book could not supply for itself?",
+            options: ["A real name attached to documents", "A statement that the author had written it herself", "An editor's confirmation that the language was the author's", "A publisher willing to issue it under the author's own direction"],
+            correctIndex: 0,
+            explanation: "In a place the catalogue would copy, which is what the 1987 edition finally provided.",
+            sourceLessonSlug: "how-yellin-settled-it",
+          },
+          {
+            prompt: "Which stage of a correction does a journal article accomplish?",
+            options: ["Entering the scholarly record where it can be contested", "Changing what a library catalogue records as the work's author", "Producing the documents on which the argument will rest", "Persuading the original publisher to reissue the corrected book"],
+            correctIndex: 0,
+            explanation: "The catalogue change requires the edition, which is the separate 1987 step.",
+            sourceLessonSlug: "how-yellin-settled-it",
+          },
+          {
+            prompt: "In which journal did the 1981 article appear?",
+            options: ["American Literature", "The Journal of Negro History, in its final decade of publication", "The William and Mary Quarterly, in a special issue on slavery", "The New England Quarterly, alongside other work on Boston printing"],
+            correctIndex: 0,
+            explanation: "Under the title Written by Herself, borrowing Jacobs's own subtitle for the argument.",
+            sourceLessonSlug: "how-yellin-settled-it",
+          },
+          {
+            prompt: "What is notable about the title Yellin gave her 1981 article?",
+            options: ["It is the book's own subtitle", "It names the editor whose attribution she was displacing", "It borrows the phrase Douglass had used in 1845 rather than Jacobs's", "It states the pseudonym under which the book had been catalogued"],
+            correctIndex: 0,
+            explanation: "Written by Herself is what the 1861 title page had said all along.",
+            sourceLessonSlug: "how-yellin-settled-it",
+          },
+          {
+            prompt: "Which best describes the relationship between Keckley's doubt and Keckley's punishment?",
+            options: ["Neither resolved the other", "The doubt caused the punishment by exposing her to ridicule", "The punishment settled the doubt by confirming she had written it", "The doubt protected her, since a disputed book drew less attention"],
+            correctIndex: 0,
+            explanation: "She paid the full price of the byline and received a discounted version of the credit.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+          {
+            prompt: "What is a modiste?",
+            options: ["A dressmaker", "A lady's companion attached to a household in a paid capacity", "A seamstress employed by a commercial workshop rather than privately", "A milliner specialising in hats rather than in gowns and dresses"],
+            correctIndex: 0,
+            explanation: "The trade named on Keckley's own title page, and the business the book destroyed.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+          {
+            prompt: "What does the Keckley case add to Section 1's claim that a byline pays?",
+            options: ["The other side of the same ledger", "A counterexample showing that bylines never pay for a memoirist", "A demonstration that a fee is always safer than a share of royalties", "Proof that a byline pays only when an editor is also credited"],
+            correctIndex: 0,
+            explanation: "A byline is exposure as well as an asset, and what it pays depends on who may write about whom.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+          {
+            prompt: "After leaving dressmaking, where did Keckley teach?",
+            options: ["Wilberforce University", "Howard University, in the years after its foundation in Washington", "Hampton Institute, in the department of domestic economy", "Oberlin College, at the invitation of its abolitionist trustees"],
+            correctIndex: 0,
+            explanation: "She left Washington in 1892, and declining health later forced her return.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+          {
+            prompt: "Which of these three books carries no editor's name on its title page?",
+            options: ["Behind the Scenes", "Incidents in the Life of a Slave Girl, published for the author", "Twelve Years a Slave, issued by Derby and Miller at Auburn", "Poems on Various Subjects, printed for Archibald Bell in London"],
+            correctIndex: 0,
+            explanation: "Redpath's involvement is documented elsewhere, and it is not on the page.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+          {
+            prompt: "What did Jacobs put on her own title page that Keckley did not?",
+            options: ["A subtitle claim", "Her own real name in the principal author position", "The name of the publisher who issued the volume", "A description of her former condition and trade"],
+            correctIndex: 0,
+            explanation: "Written by Herself, in Douglass's formula, alongside a pseudonym and an editor's name.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+          {
+            prompt: "The three outcomes in the section's table differ most according to:",
+            options: ["Whose name the record could index", "Which decade of the nineteenth century each book appeared in", "Whether the book was published in Britain or the United States", "Whether the author had been enslaved at the time of publication"],
+            correctIndex: 0,
+            explanation: "A propped name, an unindexable pseudonym beside a famous editor, and an unqualified name that was punished.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+          {
+            prompt: "Why does this course quote Documenting the American South rather than paraphrasing it on Redpath?",
+            options: ["The hedge is the substance", "Because paraphrase would infringe the institution's rights in the summary", "Because no other institution has published a view on the question", "Because the summary is the only surviving account of Redpath's role"],
+            correctIndex: 0,
+            explanation: "Speculation about his involvement, and verifiable facts affirming the text's authenticity, are both load-bearing.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+          {
+            prompt: "What made Jacobs's book indexable after 1987?",
+            options: ["A real author's name in a scholarly edition", "The removal of the pseudonym from the reprinted text", "The addition of a certificate of authorship to the front matter", "A decision by the Library of Congress to recatalogue the 1861 printing"],
+            correctIndex: 0,
+            explanation: "Which is the whole practical content of a correction, once the evidence exists.",
+            sourceLessonSlug: "how-yellin-settled-it",
+          },
+          {
+            prompt: "Which is the best short statement of why corrections are rare?",
+            options: ["Assembling the evidence is nobody's job", "Publishers refuse to reissue books with corrected attributions", "Archives restrict access to the papers that would settle the questions", "Scholars have no professional incentive to reattribute an old book"],
+            correctIndex: 0,
+            explanation: "The evidence for an unrecorded author is slow to assemble and belongs to no one's role.",
+            sourceLessonSlug: "how-yellin-settled-it",
+          },
+          {
+            prompt: "What did Child say she had no reason to change?",
+            options: ["The author's way of telling her own story", "The order of the chapters as the author had first arranged them", "The names of the people and places described in the narrative", "The claim on the title page that the book was written by herself"],
+            correctIndex: 0,
+            explanation: "She calls it lively and dramatic, which is a description of an author's manner rather than a claim on it.",
+            sourceLessonSlug: "linda-brent-and-the-editor",
+          },
+          {
+            prompt: "Given one indexable name and one unindexable name on a book, the record takes:",
+            options: ["The indexable one", "Neither, and catalogues the work as anonymous until the question is settled", "Both, recording the work under a joint authorship entry", "The one printed in the larger typeface on the title page"],
+            correctIndex: 0,
+            explanation: "Which is the mechanism of attribution drift, and it requires nobody to act badly.",
+            sourceLessonSlug: "linda-brent-and-the-editor",
+          },
+          {
+            prompt: "What did Keckley have that Jacobs did not, on the evidence of the two title pages?",
+            options: ["Her own name on the book", "An editor named in a credit position on the title page", "A subtitle claiming the book was written by herself", "A publisher willing to issue the book at its own expense"],
+            correctIndex: 0,
+            explanation: "And it did not spare her the doubt, which is why the two cases belong in one section.",
+            sourceLessonSlug: "keckley-doubted-and-punished",
+          },
+        ],
+      },
+    },
   ],
 };
