@@ -49,6 +49,20 @@ export function researchGroupSummary(counts: ReviewCounts): string {
 }
 
 /**
+ * Summary text for a course on /admin/cross-links.
+ * "8 mentions, 3 to review" · "8 mentions, all decided".
+ *
+ * "to review" rather than "unapproved", because the queue holds three states and only one of them is
+ * work: approved and dismissed are both DONE, and calling a dismissed candidate unapproved would put
+ * a decision already made back into the count the owner is trying to drive to zero.
+ */
+export function crossLinkGroupSummary(counts: ReviewCounts): string {
+  if (counts.total === 0) return "no mentions found";
+  const items = plural(counts.total, "mention", "mentions");
+  return counts.open === 0 ? `${items}, all decided` : `${items}, ${counts.open} to review`;
+}
+
+/**
  * Whether a group starts expanded.
  *
  * Only when it is the ONLY group on the page and it still has open work: a one-course board that
