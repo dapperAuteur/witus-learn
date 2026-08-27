@@ -1243,5 +1243,572 @@ Revolutionary Spaces. (n.d.). *How Phillis Wheatley might have obtained the appr
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3 — The claim in the subtitle
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "written-by-himself-the-subtitle",
+      title: "9 · Written by Himself",
+      section: "Section 3 · The claim in the subtitle",
+      body: `Boston, 1845. A book comes off the press at the Anti-Slavery Office, No. 25 Cornhill. Here is its title page, in the order the type sets it:
+
+> NARRATIVE
+> OF THE
+> LIFE
+> OF
+> FREDERICK DOUGLASS,
+> AN
+> AMERICAN SLAVE.
+>
+> WRITTEN BY HIMSELF.
+
+**Stop at the last line, because that line is not a description. It is a claim, and it is being made in a place normally reserved for information.**
+
+A title page tells you what the book is called, who wrote it, who printed it, where and when. "Written by Himself" is none of those things. It is an assertion about the process that produced the manuscript, and no other kind of book needed it. A book of sermons by a Boston minister did not say "written by himself" on its title page. It did not have to.
+
+**So the subtitle is doing the work Wheatley's certificate did, from the opposite direction.** Wheatley's book answered anticipated disbelief by importing eighteen other names. Douglass's book answers the same anticipated disbelief by making the claim himself, in his own typography, before anyone else can speak.
+
+That is a real difference and it is worth naming precisely:
+
+| | Wheatley, 1773 | Douglass, 1845 |
+| --- | --- | --- |
+| Who makes the authorship claim | Eighteen signatories | The author, in the subtitle |
+| Where it sits | A certificate in the front matter | The title page itself |
+| Whose credibility is spent | Theirs | His |
+| What it concedes | That she would not be believed | That he would not be believed |
+
+**Both concede the same thing.** Neither book could simply put a name on a cover and let it stand. Seventy-two years apart, in two countries, the same defect in the reading public required the same category of remedy.
+
+**The phrase became a convention, which is how you know the problem was general.** Once "Written by Himself" was on the market, the formula spread across the genre. *Incidents in the Life of a Slave Girl* (1861) carries **Written by Herself** on its title page in the same position. A phrase only becomes a formula when a great many books need the same thing said.
+
+**And here is the part that makes it a credit story rather than only a publishing story.** Douglass put the claim where the byline goes. He did not put it in a preface, where an author's own protest counts for less, and he did not leave it to be settled later by scholars. He annexed the authorship question to the title page, which is the page a library catalogues from, a bookseller shelves from and a reader trusts.
+
+**In this course's terms, he moved a contested claim from the weakest position on the page to the strongest one.** That is a strategy, not an accident, and Section 6 will show a modern version of the same move: a collaborator's name on the cover rather than in the acknowledgements.
+
+:::reveal Why is "Written by Himself" not an ordinary piece of title-page information? ||| Because it is an assertion about how the manuscript was produced, made in a place reserved for the book's name, author, printer, place and year, and no unquestioned author's book needed it.
+
+:::reveal What did Douglass do differently from Wheatley's publisher, given the same anticipated disbelief? ||| He made the authorship claim himself, on the title page, instead of importing other people's signatures into the front matter.
+
+## Vocabulary
+- **Subtitle claim**: an assertion about a book's origin placed on its title page, where readers, cataloguers and booksellers treat the page as reliable information.
+- **Genre convention**: a formula that spreads across many books because many books face the same problem, as "written by himself" and "written by herself" did.
+- **Anticipated disbelief**: the expectation, built into a book's design, that readers will doubt its stated author.
+- **Annexation**: attaching a contested claim to the strongest available position on the page rather than leaving it to a preface or to later scholarship.
+
+## Sources
+Douglass, F. (1845). *Narrative of the life of Frederick Douglass, an American slave. Written by himself*. Anti-Slavery Office. https://docsouth.unc.edu/neh/douglass/douglass.html
+
+Jacobs, H. A. (1861). *Incidents in the life of a slave girl. Written by herself* (L. M. Child, Ed.). Published for the Author. https://docsouth.unc.edu/fpn/jacobs/jacobs.html`,
+    },
+    {
+      slug: "the-prefaces-that-authenticate",
+      title: "10 · The prefaces that authenticate",
+      section: "Section 3 · The claim in the subtitle",
+      body: `The subtitle was not the end of it. Before a reader of the 1845 *Narrative* reaches Douglass's first sentence, they pass two other men.
+
+**First, a preface signed "WM. LLOYD GARRISON. BOSTON, May 1, 1845."** Garrison was the most prominent white abolitionist in the United States, and his name on the front of the book was worth money and reach. He uses it to say this:
+
+> "Mr. DOUGLASS has very properly chosen to write his own Narrative, in his own style, and according to the best of his ability, rather than to employ some one else. It is, therefore, entirely his own production."
+
+**Read that sentence as a document in the history of ghostwriting, because that is what it is.** Garrison names the alternative explicitly: *rather than to employ some one else*. Employing someone else was, in 1845, a normal and available way to produce a book like this. It was so normal that the most famous abolitionist in the country thought it worth telling readers that this particular author had not done it.
+
+He then vouches for the contents:
+
+> "I am confident that it is essentially true in all its statements; that nothing has been set down in malice, nothing exaggerated, nothing drawn from the imagination."
+
+**Second, a letter from Wendell Phillips, dated Boston, 22 April 1845.** Phillips vouches from the other direction, on personal knowledge:
+
+> "Again, we have known you long, and can put the most entire confidence in your truth, candor, and sincerity."
+
+And he names, in the same letter, the risk the book creates for its author:
+
+> "In all the broad lands which the Constitution of the United States overshadows, there is no single spot,--however narrow or desolate,--where a fugitive slave can plant himself and say, 'I am safe.'"
+
+> "You, perhaps, may tell your story in safety, endeared as you are to so many warm hearts by rare gifts, and a still rarer devotion of them to the service of others."
+
+**So the 1845 book carries three separate authorship guarantees**: the author's own claim in the subtitle, a preface from Garrison, and a letter from Phillips. That is a lot of scaffolding for a book by a man who was, by then, one of the best-known speakers in the country.
+
+**And it is the Wheatley mechanism again, in a different format.** Names of higher social standing are added to a book so that the author's own name will be believed. In 1773 they were signatures on a certificate. In 1845 they are a preface and a letter, and they are longer, warmer and more literary. **The genre changed. The function did not.**
+
+**Do not read this as Garrison and Phillips taking anything from Douglass.** They are not claiming authorship, they explicitly disclaim it, and Garrison's sentence goes out of its way to give Douglass the whole of it. That is precisely why the front matter is such good evidence: the mechanism does not require anyone to behave badly. It requires only that a certain author's name be insufficient on its own, and it survives everybody's good intentions.
+
+**The cost is subtler than theft and it is still a cost.** Every page of vouching is a page in which the author is the subject of other people's assurances rather than the source of his own authority. A reader arrives at Douglass's first sentence having already been told, twice, that he can be trusted. That framing is doing something to the reading, and Douglass appears to have thought so too, which is the next lesson.
+
+:::reveal What alternative does Garrison name and rule out in his preface, and why does that matter to this course? ||| Employing someone else to write the narrative. It matters because it shows that a ghostwritten version was a normal, available option in 1845, normal enough to be worth denying in print.
+
+:::reveal How many separate authorship guarantees does the 1845 Narrative carry, and what are they? ||| Three: the subtitle "Written by Himself", Garrison's preface of 1 May 1845, and Wendell Phillips's letter of 22 April 1845.
+
+## Vocabulary
+- **Vouching**: the act of a third party lending their credibility to an author, in a preface or letter, so that the author's own account will be accepted.
+- **Prefatory letter**: a letter to the author printed in the front matter, which authenticates while appearing to be private correspondence.
+- **Scaffolding**: the accumulated apparatus of guarantees around a text, which supports the book and also frames how it is read.
+- **Function versus format**: the distinction between what a piece of front matter does and the literary shape it takes, which is how an attestation and a warm preface can be the same mechanism.
+
+## Sources
+Douglass, F. (1845). *Narrative of the life of Frederick Douglass, an American slave. Written by himself*. Anti-Slavery Office. https://docsouth.unc.edu/neh/douglass/douglass.html`,
+    },
+    {
+      slug: "who-introduces-the-second-book",
+      title: "11 · Who introduces the second book",
+      section: "Section 3 · The claim in the subtitle",
+      body: `Ten years later Douglass published the story again, longer, under a new title. The 1855 title page reads:
+
+> MY BONDAGE AND MY FREEDOM.
+> Part I.--Life as a Slave. Part II.--Life as a Freeman.
+> By FREDERICK DOUGLASS.
+> WITH AN INTRODUCTION.
+> BY DR. JAMES M'CUNE SMITH.
+>
+> MILLER, ORTON & MULLIGAN.
+> New York: 25 Park Row.--Auburn: 107 Genesee-st. 1855.
+
+**Compare the two front matters and the whole lesson is in the difference.**
+
+- 1845: a preface by William Lloyd Garrison and a letter from Wendell Phillips.
+- 1855: an introduction by James McCune Smith, a Black physician, who writes as, in his own words, "the son of a self-emancipated bond-woman," and who introduces Douglass with pride as his brother.
+
+**The apparatus did not disappear. The apparatus changed hands.**
+
+That is a genuinely different thing from removing it, and this course will not overstate it. The 1855 book still opens with somebody else introducing the author. What changed is who that somebody is, and therefore what kind of credibility is being borrowed. In 1845 the borrowed credibility was white and institutional. In 1855 it is Black, professional and kin.
+
+**Notice also what the 1855 title page dropped.** "Written by Himself" is not on it. By 1855 Douglass did not need to argue on the title page that he had written his own book. The 1845 subtitle had done its job, and the author's name alone was, at last, sufficient information.
+
+**Put the three title pages of this section side by side and you can read a career as a sequence of credit decisions:**
+
+| Year | Book | Authorship apparatus |
+| --- | --- | --- |
+| 1845 | Narrative of the Life | Subtitle claim, plus a white preface and a white prefatory letter |
+| 1855 | My Bondage and My Freedom | No subtitle claim; introduction by a Black physician |
+
+**This is what a correction looks like when the author is alive to make it.** Douglass did not petition anyone, sue anyone or wait for a scholar. He published again, and he chose the front matter. Most people in this course did not get that option, which is exactly why Section 5 exists: when the author cannot correct the record, somebody else has to, decades or a century later, out of the surviving documents.
+
+**One boundary this course keeps.** CREDIT-00 owns the general anatomy of a correction, and this course does not re-teach it. What Section 3 adds is the narrow observation that **the front matter is a lever**, and an author with enough standing can pull it themselves. What Section 5 adds is what happens when nobody can.
+
+:::reveal Who wrote the introduction to My Bondage and My Freedom, and how does he describe himself? ||| Dr. James McCune Smith, a Black physician, who writes as the son of a self-emancipated bond-woman and introduces Douglass with pride as his brother.
+
+:::reveal What did the 1855 title page drop, and what does that tell you? ||| The subtitle claim "Written by Himself", which tells you the 1845 claim had done its work and Douglass's name alone was by then sufficient.
+
+## Vocabulary
+- **Apparatus**: the front-matter machinery of prefaces, introductions and letters that surrounds a text and vouches for it.
+- **Borrowed credibility**: the standing a third party lends an author, which always comes from somewhere and therefore always says something about who is trusted.
+- **Front matter as a lever**: the idea that an author with enough standing can change how their book is framed by choosing who introduces it.
+- **Self-correction**: a correction made by the author while alive, by republishing on different terms, rather than by a later scholar working from documents.
+
+## Sources
+Douglass, F. (1855). *My bondage and my freedom* (J. M. Smith, Intro.). Miller, Orton & Mulligan. https://docsouth.unc.edu/neh/douglass55/douglass55.html
+
+Douglass, F. (1845). *Narrative of the life of Frederick Douglass, an American slave. Written by himself*. Anti-Slavery Office. https://docsouth.unc.edu/neh/douglass/douglass.html`,
+    },
+    {
+      slug: "quiz-the-subtitle",
+      title: "12 · Knowledge check: the claim in the subtitle",
+      section: "Section 3 · The claim in the subtitle",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What is the last line of the 1845 Narrative's title page?",
+            options: ["Written by Himself", "Published at the Anti-Slavery Office, No. 25 Cornhill, Boston", "With a preface by William Lloyd Garrison and a letter from Wendell Phillips", "Narrative of the Life of Frederick Douglass, an American Slave, Part the First"],
+            correctIndex: 0,
+            explanation: "It sits where a title page normally carries information, and it is an assertion instead.",
+            sourceLessonSlug: "written-by-himself-the-subtitle",
+          },
+          {
+            prompt: "Where was the 1845 Narrative published?",
+            options: ["Boston", "London, by a bookseller of Aldgate specialising in religious works", "New York, at 25 Park Row, by Miller, Orton and Mulligan", "Rochester, at the office of the newspaper Douglass later edited"],
+            correctIndex: 0,
+            explanation: "At the Anti-Slavery Office, No. 25 Cornhill, in 1845.",
+            sourceLessonSlug: "written-by-himself-the-subtitle",
+          },
+          {
+            prompt: "Why did no book of sermons by a Boston minister carry the phrase \"written by himself\"?",
+            options: ["Nobody doubted it", "Because clergy were forbidden by custom from making claims on a title page", "Because the phrase was reserved by printers for first-person narrative works", "Because sermons were published anonymously as a matter of denominational practice"],
+            correctIndex: 0,
+            explanation: "The phrase is a remedy for anticipated disbelief, and an unquestioned author needs no remedy.",
+            sourceLessonSlug: "written-by-himself-the-subtitle",
+          },
+          {
+            prompt: "Who makes the authorship claim in Wheatley's 1773 book, and who makes it in Douglass's 1845 book?",
+            options: ["Eighteen signatories, then the author", "The publisher in both cases, though in different positions in the front matter", "The author in both cases, though only Douglass placed it on the title page", "A patron in 1773 and an abolitionist society in 1845, both in prefatory letters"],
+            correctIndex: 0,
+            explanation: "Wheatley's book imports other names; Douglass makes the claim himself before anyone else can speak.",
+            sourceLessonSlug: "written-by-himself-the-subtitle",
+          },
+          {
+            prompt: "What do the Wheatley certificate and the Douglass subtitle both concede?",
+            options: ["That the author would not be believed", "That the manuscript had been substantially revised before publication", "That the author had received assistance in preparing the text for the press", "That the publisher had doubts about the commercial prospects of the book"],
+            correctIndex: 0,
+            explanation: "Neither book could put a name on a cover and let it stand, seventy-two years apart.",
+            sourceLessonSlug: "written-by-himself-the-subtitle",
+          },
+          {
+            prompt: "Whose credibility is spent by Wheatley's remedy, and whose by Douglass's?",
+            options: ["The signers', then his own", "The publisher's in both cases, since he arranged the front matter", "The patron's in both cases, since patronage was what carried each book", "Neither author's, since the guarantees came entirely from third parties"],
+            correctIndex: 0,
+            explanation: "That is the precise difference between importing eighteen names and making the claim yourself.",
+            sourceLessonSlug: "written-by-himself-the-subtitle",
+          },
+          {
+            prompt: "Which 1861 book carries the same formula in the same position?",
+            options: ["Incidents in the Life of a Slave Girl", "Behind the Scenes, by a woman formerly a slave and later a modiste", "Twelve Years a Slave, the narrative of a kidnapped citizen of New York", "My Bondage and My Freedom, in its second and enlarged American edition"],
+            correctIndex: 0,
+            explanation: "Its title page reads Written by Herself, which is how you know the problem was general.",
+            sourceLessonSlug: "written-by-himself-the-subtitle",
+          },
+          {
+            prompt: "When does a phrase become a formula, on this lesson's account?",
+            options: ["When many books need the same thing said", "When a publisher registers it as a trademark for a series of titles", "When a printer adopts it as a house style across an entire imprint", "When a genre's leading author uses it in three successive books"],
+            correctIndex: 0,
+            explanation: "Which is why the spread of written by himself and written by herself is evidence about readers.",
+            sourceLessonSlug: "written-by-himself-the-subtitle",
+          },
+          {
+            prompt: "Why does putting the claim on the title page matter more than putting it in a preface?",
+            options: ["It is the page catalogues and shelves trust", "Because a preface can be removed from later printings without the author's consent", "Because a title page is legally binding on the publisher and a preface is not", "Because prefaces were rarely read by nineteenth-century purchasers of narratives"],
+            correctIndex: 0,
+            explanation: "A library catalogues from it, a bookseller shelves from it, and a reader trusts it.",
+            sourceLessonSlug: "written-by-himself-the-subtitle",
+          },
+          {
+            prompt: "In this course's terms, what did Douglass do with the authorship question?",
+            options: ["Moved it to the strongest position on the page", "Delegated it to two prominent abolitionists who could vouch more persuasively", "Deferred it to later scholarship, which he expected would settle the matter", "Removed it entirely, publishing the narrative with no authorship claim at all"],
+            correctIndex: 0,
+            explanation: "A strategy rather than an accident, and Section 6 shows a modern version of the same move.",
+            sourceLessonSlug: "written-by-himself-the-subtitle",
+          },
+          {
+            prompt: "How is Garrison's preface signed and dated?",
+            options: ["Boston, May 1, 1845", "Boston, April 22, 1845, the same date as Wendell Phillips's letter", "New York, September 1855, in the enlarged edition of the narrative", "Lynn, Massachusetts, 1844, before the manuscript went to the printer"],
+            correctIndex: 0,
+            explanation: "Phillips's letter carries the earlier date of 22 April 1845.",
+            sourceLessonSlug: "the-prefaces-that-authenticate",
+          },
+          {
+            prompt: "What alternative does Garrison explicitly name and rule out?",
+            options: ["Employing some one else", "Publishing the narrative anonymously for the author's own safety", "Allowing the Anti-Slavery Society to prepare the manuscript for the press", "Serialising the account in a newspaper before issuing it as a volume"],
+            correctIndex: 0,
+            explanation: "Which shows a ghostwritten version was a normal, available option in 1845.",
+            sourceLessonSlug: "the-prefaces-that-authenticate",
+          },
+          {
+            prompt: "How does Garrison characterise the Narrative's authorship?",
+            options: ["Entirely his own production", "A collaboration between the author and the officers of the Anti-Slavery Office", "A faithful transcription of lectures the author had delivered on the circuit", "An account prepared from the author's dictation by a member of the society"],
+            correctIndex: 0,
+            explanation: "He says Douglass very properly chose to write it himself, in his own style.",
+            sourceLessonSlug: "the-prefaces-that-authenticate",
+          },
+          {
+            prompt: "What does Garrison say about malice, exaggeration and imagination?",
+            options: ["Nothing has been set down from any of them", "That a reader should allow for all three in any narrative of this kind", "That the author was cautioned against all three before writing began", "That the society had removed all three from the manuscript before printing"],
+            correctIndex: 0,
+            explanation: "He states he is confident the narrative is essentially true in all its statements.",
+            sourceLessonSlug: "the-prefaces-that-authenticate",
+          },
+          {
+            prompt: "On what basis does Wendell Phillips vouch for Douglass?",
+            options: ["Long personal acquaintance", "A comparison of the manuscript against the society's own records of his lectures", "A sworn statement obtained from persons who had known him in Maryland", "The corroboration of the account by two other fugitives then living in Boston"],
+            correctIndex: 0,
+            explanation: "He writes that we have known you long, and can put the most entire confidence in your truth, candor and sincerity.",
+            sourceLessonSlug: "the-prefaces-that-authenticate",
+          },
+          {
+            prompt: "What danger does Phillips's letter name?",
+            options: ["No spot in the United States is safe for a fugitive", "That the book would be suppressed by the federal post office before distribution", "That the author's family remaining in Maryland would be punished for the book", "That the abolitionist societies would be prosecuted for publishing the narrative"],
+            correctIndex: 0,
+            explanation: "He writes that in all the broad lands the Constitution overshadows there is no single spot where a fugitive slave can say I am safe.",
+            sourceLessonSlug: "the-prefaces-that-authenticate",
+          },
+          {
+            prompt: "How many separate authorship guarantees does the 1845 Narrative carry?",
+            options: ["Three", "One, the subtitle, since the two prefatory pieces concern the truth of the contents", "Five, counting the publisher's imprint and the copyright notice as guarantees", "Two, since Garrison's preface and Phillips's letter form a single apparatus"],
+            correctIndex: 0,
+            explanation: "The subtitle claim, Garrison's preface and Phillips's letter.",
+            sourceLessonSlug: "the-prefaces-that-authenticate",
+          },
+          {
+            prompt: "How does the 1845 front matter relate to Wheatley's 1773 attestation?",
+            options: ["Same function, different format", "Same format, since both are certificates signed by several men of standing", "No relation, since one concerns poetry and the other concerns a life narrative", "Opposite functions, since one adds a name and the other removes one"],
+            correctIndex: 0,
+            explanation: "Names of higher social standing are added so the author's own name will be believed.",
+            sourceLessonSlug: "the-prefaces-that-authenticate",
+          },
+          {
+            prompt: "Do Garrison and Phillips claim any part of the authorship?",
+            options: ["No, they disclaim it", "Yes, Garrison describes himself as having prepared the text for the press", "Yes, Phillips describes the narrative as written jointly with the author", "The front matter is silent, which is what makes the question unresolvable"],
+            correctIndex: 0,
+            explanation: "Garrison's sentence goes out of its way to give Douglass the whole of it.",
+            sourceLessonSlug: "the-prefaces-that-authenticate",
+          },
+          {
+            prompt: "Why is the 1845 front matter such good evidence for this course?",
+            options: ["The mechanism survives good intentions", "Because it records a dispute between the author and his publishers", "Because it is the only nineteenth-century preface to name a ghostwriter", "Because it was written after the author had already become widely believed"],
+            correctIndex: 0,
+            explanation: "Nobody behaves badly, and it still requires that the author's name be insufficient on its own.",
+            sourceLessonSlug: "the-prefaces-that-authenticate",
+          },
+          {
+            prompt: "What cost does this lesson attribute to the vouching apparatus?",
+            options: ["The author becomes the subject of other people's assurances", "The author loses the copyright in the narrative to the sponsoring society", "The author must share the proceeds with the writers of the front matter", "The author is prevented from republishing the work in any other form"],
+            correctIndex: 0,
+            explanation: "A reader arrives at the first sentence having already been told twice that he can be trusted.",
+            sourceLessonSlug: "the-prefaces-that-authenticate",
+          },
+          {
+            prompt: "In what year did Douglass publish My Bondage and My Freedom?",
+            options: ["1855", "1845, simultaneously with the shorter Narrative of the Life", "1861, in the same year as Incidents in the Life of a Slave Girl", "1881, more than three decades after the first narrative appeared"],
+            correctIndex: 0,
+            explanation: "Ten years after the Narrative, longer and under a new title.",
+            sourceLessonSlug: "who-introduces-the-second-book",
+          },
+          {
+            prompt: "Who wrote the introduction to My Bondage and My Freedom?",
+            options: ["Dr. James McCune Smith", "William Lloyd Garrison, as he had for the 1845 Narrative", "Wendell Phillips, expanding the letter he had written ten years earlier", "Douglass himself, under the title An Introduction by the Author"],
+            correctIndex: 0,
+            explanation: "A Black physician, named on the title page as the author of the introduction.",
+            sourceLessonSlug: "who-introduces-the-second-book",
+          },
+          {
+            prompt: "How does McCune Smith describe himself in that introduction?",
+            options: ["The son of a self-emancipated bond-woman", "A physician of New York with thirty years of practice among the free population", "An officer of the American Anti-Slavery Society charged with the book's publication", "A former fellow labourer on the newspaper the author had lately established"],
+            correctIndex: 0,
+            explanation: "And he introduces Douglass with pride as his brother.",
+            sourceLessonSlug: "who-introduces-the-second-book",
+          },
+          {
+            prompt: "What happened to the front-matter apparatus between 1845 and 1855?",
+            options: ["It changed hands", "It disappeared, leaving the 1855 volume with no introduction of any kind", "It doubled, with four separate guarantees appearing in the later edition", "It moved to the back of the book, after the appendix of speeches and letters"],
+            correctIndex: 0,
+            explanation: "The 1855 book still opens with somebody else introducing the author; who that somebody is changed.",
+            sourceLessonSlug: "who-introduces-the-second-book",
+          },
+          {
+            prompt: "What kind of credibility was borrowed in 1845, and what kind in 1855?",
+            options: ["White and institutional, then Black and professional", "Religious in both years, but Congregational in 1845 and Methodist in 1855", "Commercial in 1845 and academic in 1855, reflecting the change of publisher", "Political in both years, though shifting from Massachusetts to New York figures"],
+            correctIndex: 0,
+            explanation: "Borrowed credibility always comes from somewhere, so it always says something about who is trusted.",
+            sourceLessonSlug: "who-introduces-the-second-book",
+          },
+          {
+            prompt: "What did the 1855 title page drop?",
+            options: ["The subtitle claim", "The author's name, which appeared only on the spine of that edition", "The publisher's imprint, which was moved to the reverse of the title leaf", "The description of the book as a narrative, replaced by the word autobiography"],
+            correctIndex: 0,
+            explanation: "By 1855 Douglass did not need to argue on his title page that he had written his own book.",
+            sourceLessonSlug: "who-introduces-the-second-book",
+          },
+          {
+            prompt: "How did Douglass correct his own record, on this lesson's account?",
+            options: ["He published again and chose the front matter", "He petitioned the publisher to withdraw the earlier edition from sale", "He sued the writers of the 1845 front matter for misrepresenting his role", "He waited for a scholar to establish his authorship from surviving letters"],
+            correctIndex: 0,
+            explanation: "Most people in this course did not have that option, which is why Section 5 exists.",
+            sourceLessonSlug: "who-introduces-the-second-book",
+          },
+          {
+            prompt: "Which course owns the general anatomy of a correction?",
+            options: ["CREDIT-00", "This course, which teaches it through the Douglass republication of 1855", "CREDIT-02, which follows a workshop convention rather than an individual case", "CREDIT-03, which reports three institutions disagreeing about a single date"],
+            correctIndex: 0,
+            explanation: "Who Gets Named teaches it as a general mechanism, and this course adds the front matter as a lever.",
+            sourceLessonSlug: "who-introduces-the-second-book",
+          },
+          {
+            prompt: "Who published My Bondage and My Freedom?",
+            options: ["Miller, Orton & Mulligan", "The Anti-Slavery Office at No. 25 Cornhill in Boston, as before", "Derby and Miller of Auburn, who also issued Twelve Years a Slave", "Published for the Author, without any commercial imprint on the title page"],
+            correctIndex: 0,
+            explanation: "With addresses at 25 Park Row, New York, and 107 Genesee Street, Auburn.",
+            sourceLessonSlug: "who-introduces-the-second-book",
+          },
+          {
+            prompt: "How is My Bondage and My Freedom divided on its title page?",
+            options: ["Life as a Slave and Life as a Freeman", "Childhood, Bondage, Escape and Public Life, in four numbered parts", "A narrative section and an appendix of speeches delivered in Great Britain", "Two volumes, issued separately by the New York and Auburn offices"],
+            correctIndex: 0,
+            explanation: "Part I and Part II, which is itself a statement about what the book is for.",
+            sourceLessonSlug: "who-introduces-the-second-book",
+          },
+          {
+            prompt: "What narrow observation does Section 3 add to CREDIT-00's account of corrections?",
+            options: ["The front matter is a lever", "That corrections are always made by the author rather than by later scholars", "That a correction requires a publisher willing to withdraw the earlier edition", "That an author's second book always supersedes the first in library catalogues"],
+            correctIndex: 0,
+            explanation: "An author with enough standing can pull it themselves, which most people in this course could not.",
+            sourceLessonSlug: "who-introduces-the-second-book",
+          },
+          {
+            prompt: "The 1845 title page's structure shows the authorship claim placed:",
+            options: ["Below the author's name", "Above the title, as a running head on every page of the volume", "Inside Garrison's preface rather than anywhere on the title page", "On the reverse of the title leaf, alongside the copyright notice"],
+            correctIndex: 0,
+            explanation: "It is the last line of the title page, after Frederick Douglass, an American Slave.",
+            sourceLessonSlug: "written-by-himself-the-subtitle",
+          },
+          {
+            prompt: "What does a title page conventionally tell a reader?",
+            options: ["Name, author, printer, place, year", "The author's qualifications and the circumstances under which the book was composed", "The book's subject, its intended audience and the price at which it is offered", "Who financed the printing and what share of the proceeds each party receives"],
+            correctIndex: 0,
+            explanation: "Which is why an assertion about how the manuscript was produced stands out there.",
+            sourceLessonSlug: "written-by-himself-the-subtitle",
+          },
+          {
+            prompt: "The 1845 and 1773 remedies differ in direction. Douglass's runs:",
+            options: ["Outward from the author", "Inward from a patron who supplied the necessary standing", "Through a publisher who assumed the claim on the author's behalf", "Through a court, which certified the authorship before publication"],
+            correctIndex: 0,
+            explanation: "He makes the claim himself, in his own typography, before anyone else can speak.",
+            sourceLessonSlug: "written-by-himself-the-subtitle",
+          },
+          {
+            prompt: "What does the spread of the formula across the genre demonstrate?",
+            options: ["The doubt was general, not personal", "That publishers copied each other's title pages without regard to content", "That the phrase had become a legal requirement for narratives of this kind", "That authors in the genre were competing for the same small body of readers"],
+            correctIndex: 0,
+            explanation: "A phrase only becomes a formula when a great many books need the same thing said.",
+            sourceLessonSlug: "written-by-himself-the-subtitle",
+          },
+          {
+            prompt: "Garrison's standing in 1845 was worth what to the book?",
+            options: ["Money and reach", "Legal protection against a suit for libel by the author's former enslaver", "A guaranteed review in every abolitionist newspaper in the northern states", "An exemption from the postal restrictions then applied to antislavery matter"],
+            correctIndex: 0,
+            explanation: "He was the most prominent white abolitionist in the country, and he used the name to vouch.",
+            sourceLessonSlug: "the-prefaces-that-authenticate",
+          },
+          {
+            prompt: "Phillips's letter suggests Douglass may tell his story in safety because of:",
+            options: ["Rare gifts and devotion to others", "A private arrangement with his former enslaver in the state of Maryland", "The protection of the Massachusetts courts, which had ruled in his favour", "The distance between Boston and the jurisdiction from which he had fled"],
+            correctIndex: 0,
+            explanation: "He writes that Douglass is endeared to many warm hearts by rare gifts and a still rarer devotion of them.",
+            sourceLessonSlug: "the-prefaces-that-authenticate",
+          },
+          {
+            prompt: "What is the relationship this lesson draws between format and function?",
+            options: ["The genre changed and the function did not", "The function changed while the certificate format was retained unaltered", "Both changed, which is why the 1845 apparatus cannot be compared with 1773", "Neither changed, since a prefatory letter is simply a certificate in prose"],
+            correctIndex: 0,
+            explanation: "Signatures on a certificate in 1773; a warm preface and a letter in 1845; the same work done.",
+            sourceLessonSlug: "the-prefaces-that-authenticate",
+          },
+          {
+            prompt: "Which is the correct order of the 1845 front matter as a reader meets it?",
+            options: ["Title page, Garrison, Phillips, narrative", "Narrative, Garrison, Phillips, appendix of speeches and letters", "Garrison, title page, narrative, Phillips as a closing endorsement", "Phillips, Garrison, title page, narrative, in order of the dates on each"],
+            correctIndex: 0,
+            explanation: "Two men stand between the title page and Douglass's first sentence.",
+            sourceLessonSlug: "the-prefaces-that-authenticate",
+          },
+          {
+            prompt: "Phillips's letter is dated earlier than Garrison's preface by:",
+            options: ["Nine days", "Six months, since Phillips wrote before the manuscript was complete", "A year, since the letter had been written for an earlier abandoned edition", "One day, which is why the two pieces read as a single coordinated apparatus"],
+            correctIndex: 0,
+            explanation: "22 April 1845 against 1 May 1845, both from Boston.",
+            sourceLessonSlug: "the-prefaces-that-authenticate",
+          },
+          {
+            prompt: "This course's reading of Garrison's preface treats it primarily as:",
+            options: ["Evidence about the ghostwriting trade", "A literary essay on the merits of the narrative that follows it", "A legal disclaimer protecting the society from responsibility for the contents", "A private letter that the publisher printed without the writer's permission"],
+            correctIndex: 0,
+            explanation: "It names employing someone else as the thing Douglass chose not to do.",
+            sourceLessonSlug: "the-prefaces-that-authenticate",
+          },
+          {
+            prompt: "What is the strongest reason not to call the 1855 change a removal of the apparatus?",
+            options: ["Somebody still introduces the author", "Because the 1845 preface was reprinted at the back of the later edition", "Because McCune Smith's introduction is longer than Garrison's preface was", "Because the publisher rather than the author selected the new introducer"],
+            correctIndex: 0,
+            explanation: "What changed is who that somebody is, and therefore what kind of credibility is borrowed.",
+            sourceLessonSlug: "who-introduces-the-second-book",
+          },
+          {
+            prompt: "In the section's table, what is listed under the 1845 authorship apparatus?",
+            options: ["Subtitle claim, white preface, white prefatory letter", "Subtitle claim alone, since the prefatory pieces concern only the contents", "An introduction by a Black physician and no subtitle claim of any kind", "A certificate signed by eighteen men of standing, as in the 1773 volume"],
+            correctIndex: 0,
+            explanation: "The 1855 row carries no subtitle claim and an introduction by James McCune Smith.",
+            sourceLessonSlug: "who-introduces-the-second-book",
+          },
+          {
+            prompt: "What does Section 5 of this course take up that Section 3 does not?",
+            options: ["What happens when nobody can correct the record", "The modern collaborator credit ladder in present-tense trade publishing", "The certificate bound into a book's own front matter in the eighteenth century", "The fidelity question raised when a named author dictated rather than wrote"],
+            correctIndex: 0,
+            explanation: "Douglass corrected his own record by republishing; most people in this course could not.",
+            sourceLessonSlug: "who-introduces-the-second-book",
+          },
+          {
+            prompt: "How does this course describe a career read across three title pages?",
+            options: ["A sequence of credit decisions", "A steady decline in the author's control over his own publications", "An accident of which publishers happened to be available in each decade", "A record of disputes between the author and his abolitionist sponsors"],
+            correctIndex: 0,
+            explanation: "What the subtitle says, who writes the front matter, and what gets dropped.",
+            sourceLessonSlug: "who-introduces-the-second-book",
+          },
+          {
+            prompt: "The phrase \"Written by Herself\" appears on the title page of which book in this course?",
+            options: ["Incidents in the Life of a Slave Girl", "Behind the Scenes, published in New York by G. W. Carleton in 1868", "What Mrs. Fisher Knows About Old Southern Cooking, published in 1881", "Poems on Various Subjects, Religious and Moral, published in London in 1773"],
+            correctIndex: 0,
+            explanation: "In the same position Douglass's formula occupies, sixteen years later.",
+            sourceLessonSlug: "written-by-himself-the-subtitle",
+          },
+          {
+            prompt: "What makes the subtitle a strategy rather than an accident?",
+            options: ["It occupies the page a reader trusts most", "It repeats a phrase the publisher had used on every previous title in the series", "It was required by the Anti-Slavery Office before the book could be printed", "It was added at the printer's suggestion after the front matter was set in type"],
+            correctIndex: 0,
+            explanation: "He moved a contested claim from the weakest position on the page to the strongest one.",
+            sourceLessonSlug: "written-by-himself-the-subtitle",
+          },
+          {
+            prompt: "Douglass was, by 1845, already:",
+            options: ["A well-known speaker", "A newspaper editor with a national circulation behind him", "A licensed minister in the African Methodist Episcopal connection", "An officer of the Massachusetts Anti-Slavery Society with a salary"],
+            correctIndex: 0,
+            explanation: "Which is why three separate authorship guarantees is a striking amount of scaffolding.",
+            sourceLessonSlug: "the-prefaces-that-authenticate",
+          },
+          {
+            prompt: "Which mechanism from Lesson 3 do the 1845 prefaces illustrate?",
+            options: ["The authenticator", "The ghost proper, since two other writers appear before the author does", "The amanuensis, since the narrative had first been delivered as lectures", "The as-told-to, since Garrison and Phillips are named alongside the author"],
+            correctIndex: 0,
+            explanation: "A second and third name are added so the author's own name will be believed.",
+            sourceLessonSlug: "the-prefaces-that-authenticate",
+          },
+          {
+            prompt: "The 1855 introduction is written by someone Douglass would have regarded as:",
+            options: ["A peer", "A patron whose social standing exceeded his own by a wide margin", "An employer, since Smith directed the society that financed the book", "A stranger, engaged by the publisher without consulting the author"],
+            correctIndex: 0,
+            explanation: "Smith introduces him with pride as his brother, which is a different relation from vouching.",
+            sourceLessonSlug: "who-introduces-the-second-book",
+          },
+          {
+            prompt: "What is the honest limit this lesson puts on the 1855 change?",
+            options: ["The apparatus did not disappear", "The change was made by the publisher rather than by the author himself", "The introduction was added only in later printings of the 1855 edition", "The subtitle claim was retained on the spine even after leaving the title page"],
+            correctIndex: 0,
+            explanation: "This course will not overstate it: the book still opens with somebody else introducing the author.",
+            sourceLessonSlug: "who-introduces-the-second-book",
+          },
+          {
+            prompt: "The phrase in Garrison's preface most useful to this course is:",
+            options: ["Rather than to employ some one else", "Nothing has been set down in malice, nothing exaggerated", "I am confident that it is essentially true in all its statements", "In his own style, and according to the best of his ability"],
+            correctIndex: 0,
+            explanation: "It names the ghostwriting alternative as a live option, which is why the denial was worth printing.",
+            sourceLessonSlug: "the-prefaces-that-authenticate",
+          },
+          {
+            prompt: "What position does Section 6 revisit as a modern version of Douglass's move?",
+            options: ["A collaborator's name on the cover", "A certificate of authorship bound into a book's own front matter", "A pseudonym adopted by an author for reasons of personal safety", "An editor's name printed on a title page beneath the author's own"],
+            correctIndex: 0,
+            explanation: "Rather than in the acknowledgements, which is the same annexation to a stronger position.",
+            sourceLessonSlug: "written-by-himself-the-subtitle",
+          },
+          {
+            prompt: "Why does this lesson say the 1845 apparatus frames the reading?",
+            options: ["The reader is told twice to trust him first", "Because Garrison's preface summarises the narrative before the reader reaches it", "Because Phillips's letter instructs readers to disregard any contrary account", "Because the front matter is longer than the first three chapters combined"],
+            correctIndex: 0,
+            explanation: "The author becomes the subject of other people's assurances rather than the source of his own authority.",
+            sourceLessonSlug: "the-prefaces-that-authenticate",
+          },
+          {
+            prompt: "Two courses in this catalog now use the front matter of a single book as primary evidence. Which page do both read?",
+            options: ["The title page", "The copyright page, where the registration and the deposit are recorded", "The subscription list, which names everyone who paid for the book in advance", "The dedication, which names the patron who made the publication possible"],
+            correctIndex: 0,
+            explanation: "It is where the publishing arrangement becomes visible, which is this course's whole method.",
+            sourceLessonSlug: "written-by-himself-the-subtitle",
+          },
+          {
+            prompt: "What does the 1855 title page name immediately after the author?",
+            options: ["The writer of the introduction", "The two abolitionists whose front matter had introduced the 1845 volume", "The claim that the book was written by himself, retained from the first edition", "The society under whose auspices the enlarged narrative had been prepared"],
+            correctIndex: 0,
+            explanation: "With an introduction by Dr. James McCune Smith, printed on the title page rather than buried inside.",
+            sourceLessonSlug: "who-introduces-the-second-book",
+          },
+        ],
+      },
+    },
   ],
 };
