@@ -1810,5 +1810,581 @@ Douglass, F. (1845). *Narrative of the life of Frederick Douglass, an American s
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 4 — When someone else holds the pen
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-editor-who-signed-the-preface",
+      title: "13 · The editor who signed the preface",
+      section: "Section 4 · When someone else holds the pen",
+      body: `Eight years after Douglass, a different kind of book. The 1853 title page:
+
+> TWELVE YEARS A SLAVE.
+> Narrative of Solomon Northup, a Citizen of New-York, Kidnapped in Washington City in 1841, and Rescued in 1853.
+>
+> AUBURN: DERBY AND MILLER.
+> BUFFALO: DERBY, ORTON AND MULLIGAN.
+> LONDON: SAMPSON LOW, SON & COMPANY, 47 LUDGATE HILL. 1853.
+
+**No "written by himself" here.** Northup did not write this book with his own hand. He told it, and a white lawyer from Whitehall, New York named **David Wilson** wrote it down and put his own name on an editor's preface.
+
+**This is the amanuensis, and the question it raises is not credit. It is fidelity.**
+
+Wilson is named. He is not hiding, he is not a ghost, and nobody has to reconstruct his role from letters a century later, because he described it himself in the front matter and signed it: "DAVID WILSON. WHITEHALL, N. Y., May, 1853."
+
+**Here is what he says he did.** He "commenced the preparation of the following narrative" and extended it to its present length in order, in his own phrase, "to present all the facts which have been communicated to him." The story, he writes, was received "from his lips" (Wilson, 1853).
+
+**And here is what he offers as his quality control**, which is the interesting part:
+
+- He says he "had an opportunity of detecting any contradiction or discrepancy," which is a claim about method: he heard the account more than once.
+- He reports that Northup "has invariably repeated the same story without deviating in the slightest particular," which is a consistency test.
+- He records that Northup went over the manuscript and corrected it.
+
+**Take that seriously and take it sceptically at the same time, because both are correct.**
+
+Taking it seriously: this is a great deal more than most amanuensis arrangements offer. Wilson is disclosing his method, in print, at the time, and inviting the reader to weigh it. An account that says "the subject reviewed and corrected the manuscript" is doing something a modern editor would recognise as a fact check.
+
+Taking it sceptically: **every one of those assurances is Wilson's.** The consistency test was run by Wilson. The report that Northup corrected the manuscript is Wilson's report. There is no separate document in the front matter in which Northup says what he thought of the result. The person whose fidelity is at stake is the one supplying all the evidence about it.
+
+**That is the amanuensis problem in one paragraph**, and it does not require Wilson to have been dishonest. He may have been scrupulous. The structure is the same either way: a book in the first person, produced by a second person, in which the second person is also the only source for how faithfully it was done.
+
+**Note what this course does NOT say.** It does not say Wilson stole the book, it does not say Northup was ghostwritten, and it does not put a number on how much of the language is Wilson's. Scholars have measured Wilson's hand and have not agreed, and this course reports the disagreement rather than picking a side it cannot defend. What is settled and printable is the structure: a dictated narrative, a named editor, a signed preface, and every assurance about fidelity coming from the same pen that did the writing.
+
+:::reveal In the 1853 book, who is named as editor and how does he describe obtaining the narrative? ||| David Wilson, a lawyer of Whitehall, New York, who says in his signed editor's preface that the story was received from Northup's lips.
+
+:::reveal Why is Wilson's set of assurances about fidelity structurally weak, even if he was scrupulous? ||| Because every one of them is his own: he ran the consistency test and he reports that Northup corrected the manuscript, and no separate statement from Northup appears in the front matter.
+
+## Vocabulary
+- **Editor's preface**: a signed statement in the front matter in which an editor describes their own role in producing the text.
+- **Fidelity**: the degree to which a written narrative reproduces what a speaker actually said, which is the central question in an amanuensis arrangement.
+- **Consistency test**: hearing an account repeatedly and checking it for contradictions, which Wilson claims as his method.
+- **Self-supplied assurance**: an assurance about a process that comes only from the person who ran the process, which is weak evidence regardless of their honesty.
+
+## Sources
+Northup, S. (1853). *Twelve years a slave* (D. Wilson, Ed.). Derby and Miller. https://docsouth.unc.edu/fpn/northup/northup.html`,
+    },
+    {
+      slug: "written-in-arabic",
+      title: "14 · Written in Arabic, read in translation",
+      section: "Section 4 · When someone else holds the pen",
+      body: `In 1831, in North Carolina, an enslaved West African scholar named **Omar ibn Said** wrote his autobiography. He wrote it himself, in his own hand, and he wrote it **in Arabic**.
+
+**That single fact rearranges every category in this course.** He is not a ghost, because his name is on the manuscript. He is not an as-told-to, because nobody took dictation. He is not an authenticated author in the Wheatley sense, because there is no certificate. And yet almost nobody who has ever encountered his life story has read what he wrote. They have read somebody's translation of it.
+
+**Translation is the amanuensis problem moved one step outward.** In an amanuensis arrangement, a second person converts speech into writing and may change it. In a translation, a second person converts one written language into another and may change it. The author's name stays on the book in both cases, and in both cases the reader is holding somebody else's sentences.
+
+**The translation history here is long enough to see the problem clearly.** The University of North Carolina's research guide to Omar ibn Said materials lays it out: the text was first translated by **Alexander Cotheal in 1848**, then retranslated by **J. F. Jameson** for publication in the *American Historical Review* in **1925**. A modern scholarly edition by **Ala Alryyes**, *A Muslim American Slave* (2011), prints the English facing facsimile pages of the Arabic. And in **2023**, Mbaye Lo and Carl W. Ernst published *I Cannot Write My Life*, which the guide describes as offering "fresh and accurate translations of Omar's eighteen surviving writings" and correcting "many distortions" (University of North Carolina at Chapel Hill, n.d.).
+
+**Read that last phrase again.** A 2023 scholarly edition says the existing translations contained distortions worth correcting. That is not a small housekeeping note. It means that for large parts of the period between 1831 and 2023, readers who thought they were reading Omar ibn Said were reading something else, and had no way to know which parts.
+
+**The manuscript itself is now checkable, which is the good news and the reason this is teachable at all.** The original was acquired by the Library of Congress in 2017 and has been digitised (University of North Carolina at Chapel Hill, n.d.; Library of Congress, n.d.). Anyone who reads Arabic can now compare a translation against the page. Before 2017 that was a scholar's privilege; now it is a link.
+
+**Here is the credit lesson, and it is a hard one.** Omar ibn Said did everything the other authors in this course had to fight for. He wrote it himself, unaided, in his own hand, in a language he commanded. The record still did not deliver his words to readers, because the barrier was not a byline at all. It was **language**, and the people who bridged that gap were doing the amanuensis's job whether or not anybody called them that.
+
+**So a name on a manuscript is necessary and not sufficient.** Between the author and the reader there can be a transcriber, an editor, a translator, or all three, and each of them is a place where the text can change. The title page records none of that. Checking it means going to the manuscript, which is exactly why the 2017 acquisition and digitisation matter more than they sound.
+
+:::reveal What did Omar ibn Said do in 1831, and why does it not fit the ghost, as-told-to or authenticator categories? ||| He wrote his own autobiography in his own hand in Arabic, so no name was removed, nobody took dictation, and no certificate was needed.
+
+:::reveal What does the 2023 edition by Lo and Ernst claim about earlier translations of his writings? ||| That it offers fresh and accurate translations of his eighteen surviving writings and corrects many distortions in what had been available before.
+
+## Vocabulary
+- **Translation as intermediation**: the step in which a second person converts a text between languages, which can alter it while the author's name stays on the book.
+- **Facing-page edition**: a scholarly format that prints the translation opposite a facsimile of the original, so a reader can check one against the other.
+- **Distortion**: a change introduced in transmission, which is what the 2023 edition says it corrects in earlier translations of these writings.
+- **Digitisation as accountability**: making an original manuscript publicly viewable, which converts checking a translation from a scholar's privilege into a link.
+
+## Sources
+Library of Congress. (n.d.). *Omar Ibn Said collection*. https://www.loc.gov/collections/omar-ibn-said-collection/
+
+University of North Carolina at Chapel Hill. (n.d.). *Other resources: Omar ibn Said materials at Wilson Special Collections Library*. UNC Libraries. https://guides.lib.unc.edu/omar-ibn-said/other-resources`,
+    },
+    {
+      slug: "dictated-and-unattributed",
+      title: "15 · Dictated, and the record does not say by whom",
+      section: "Section 4 · When someone else holds the pen",
+      body: `San Francisco, 1881. *What Mrs. Fisher Knows About Old Southern Cooking, Soups, Pickles, Preserves, Etc.*, by **Mrs. Abby Fisher**, late of Mobile, Alabama.
+
+**The front matter states the whole arrangement in the author's own voice.** Her "Preface and Apology" is worth reading closely, because it does something no other book in this course does: it explains the production problem before the recipes start.
+
+> "The publication of a book on my knowledge and experience of Southern Cooking, Pickle and Jelly Making, has been frequently asked of me by my lady friends and patrons in San Francisco and Oakland, and also by ladies of Sacramento during the State Fair in 1879. Not being able to read or write myself, and my husband also having been without the advantages of an education (upon whom would devolve the writing of the book at my dictation) caused me to doubt whether I would be able to present a work that would give perfect satisfaction." (Fisher, 1881)
+
+She goes on: "after due consideration, I concluded to bring forward a book of my knowledge, based on an experience of upwards of thirty-five years." It is signed "MRS. ABBY FISHER, Late of Mobile, Ala."
+
+**Three things in that passage matter for this course.**
+
+1. **The demand came first.** She was asked for the book by her customers, repeatedly, and by name, at the 1879 State Fair. The expertise was already established and already public.
+2. **She names the obstacle exactly, and it is not talent.** She could not read or write, and neither could the person who would have taken the dictation.
+3. **She states her own qualification in her own sentence**: thirty-five years of practice. Not a certificate signed by other people. Her own count of her own years.
+
+**Now the thing the record does not do.** The book does not say who actually wrote it down.
+
+The preface says the writing "would devolve" on her husband, in a clause explaining her doubts. It does not say he did it. No transcriber is named anywhere in the front matter as the person who held the pen.
+
+**And this is where a widely repeated modern claim fails on contact with the book itself.** It is often said that Fisher dictated the book to nine friends, who are named in the front matter. There IS a list of nine names in the front matter, and it is not that. Its heading reads: **"I take pleasure in referring, by permission, to the following of my friends, namely:"** That is a reference list. Those nine people are vouching for her, which is the Wheatley mechanism again in a commercial register, and the book never says they wrote anything.
+
+**So this course does not print the nine-transcribers claim, and the reason is the lesson.** The record does not name the writer. That absence is not a hole in the research. It is a finding, and it is the most common finding in this entire subject. Most of the people who have held the pen for somebody else's book are not recorded anywhere, and the correct thing to write about them is that the record does not name them.
+
+**Compare the three books in this section and the pattern is clean:**
+
+| Book | Author's role | Writer's identity |
+| --- | --- | --- |
+| Northup, 1853 | Spoke it | Named, and he signed a preface describing his method |
+| Omar ibn Said, 1831 | Wrote it himself, in Arabic | Translators named, and the translations are now contested |
+| Fisher, 1881 | Spoke it | Not named |
+
+**One of those three is the normal case.** It is the third one.
+
+:::reveal What obstacle does Fisher name in her preface, and how does she describe her qualification? ||| That she could not read or write and neither could her husband, on whom the writing would devolve; her qualification is an experience of upwards of thirty-five years.
+
+:::reveal What do the nine names in Fisher's front matter actually represent, and what claim does that refute? ||| They are people she refers readers to by permission, a reference list rather than transcribers, which refutes the widely repeated claim that she dictated the book to nine friends.
+
+## Vocabulary
+- **Preface and Apology**: Fisher's own front-matter statement, which explains the book's production problem in her voice before the recipes begin.
+- **Reference list**: a front-matter list of people who permit an author to refer readers to them, which vouches for the author and records nothing about authorship.
+- **Unrecorded amanuensis**: a person who wrote down another's words and whose identity the book never states, which is the most common case in this subject.
+- **Absence as a finding**: treating the record's silence about who held the pen as a result to be reported rather than a gap to be filled by inference.
+
+## Sources
+Fisher, A. (1881). *What Mrs. Fisher knows about old Southern cooking, soups, pickles, preserves, etc*. [Full text]. Internet Archive. https://archive.org/stream/whatmrsfisherkno00fishrich/whatmrsfisherkno00fishrich_djvu.txt`,
+    },
+    {
+      slug: "quiz-holding-the-pen",
+      title: "16 · Knowledge check: when someone else holds the pen",
+      section: "Section 4 · When someone else holds the pen",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "Who is named as editor of Twelve Years a Slave?",
+            options: ["David Wilson", "Lydia Maria Child, who had edited several narratives of this kind", "Derby and Miller of Auburn, who issued the volume under their own imprint", "Henry B. Northup, the lawyer who secured Solomon Northup's release in 1853"],
+            correctIndex: 0,
+            explanation: "A lawyer of Whitehall, New York, who signed the editor's preface in May 1853.",
+            sourceLessonSlug: "the-editor-who-signed-the-preface",
+          },
+          {
+            prompt: "How does Wilson say he received the narrative?",
+            options: ["From Northup's lips", "From a manuscript Northup had prepared during his years in Louisiana", "From depositions taken before a magistrate at the time of the rescue", "From the correspondence of the men who arranged Northup's release"],
+            correctIndex: 0,
+            explanation: "It is a dictated narrative, which makes Wilson an amanuensis rather than a ghost.",
+            sourceLessonSlug: "the-editor-who-signed-the-preface",
+          },
+          {
+            prompt: "What phrase does the 1853 title page NOT contain?",
+            options: ["Written by himself", "Kidnapped in Washington City in 1841, and rescued in 1853", "Narrative of Solomon Northup, a citizen of New-York", "Auburn: Derby and Miller; Buffalo: Derby, Orton and Mulligan"],
+            correctIndex: 0,
+            explanation: "Northup told the book rather than writing it, and the title page does not pretend otherwise.",
+            sourceLessonSlug: "the-editor-who-signed-the-preface",
+          },
+          {
+            prompt: "How is Wilson's editor's preface signed and dated?",
+            options: ["Whitehall, N. Y., May, 1853", "Boston, May 1, 1853, in the manner of the abolitionist prefaces", "Auburn, N. Y., January 1854, after the first printing had sold out", "New-York, December 1852, before the narrative was complete"],
+            correctIndex: 0,
+            explanation: "He is not hiding, and nobody has to reconstruct his role from letters a century later.",
+            sourceLessonSlug: "the-editor-who-signed-the-preface",
+          },
+          {
+            prompt: "In an amanuensis arrangement, what is the central question?",
+            options: ["Fidelity", "Which of the two parties owns the copyright in the finished manuscript", "Whether the transcriber's name should appear above or below the speaker's", "How large a share of the proceeds the transcriber is entitled to receive"],
+            correctIndex: 0,
+            explanation: "How much the transcriber changed, and in whose interest, rather than whose name is larger.",
+            sourceLessonSlug: "the-editor-who-signed-the-preface",
+          },
+          {
+            prompt: "What consistency test does Wilson report?",
+            options: ["Northup repeated the same story without deviating", "Three witnesses independently corroborated the account before publication", "The narrative was compared against court records filed in Washington City", "The manuscript was checked against newspaper reports of the 1853 rescue"],
+            correctIndex: 0,
+            explanation: "He also says he had an opportunity of detecting any contradiction or discrepancy.",
+            sourceLessonSlug: "the-editor-who-signed-the-preface",
+          },
+          {
+            prompt: "What is structurally weak about Wilson's assurances, on this lesson's reading?",
+            options: ["They all come from him", "They were written years after the narrative was first published", "They contradict the account given on the book's own title page", "They were required by the publisher rather than offered voluntarily"],
+            correctIndex: 0,
+            explanation: "No separate statement from Northup about the result appears anywhere in the front matter.",
+            sourceLessonSlug: "the-editor-who-signed-the-preface",
+          },
+          {
+            prompt: "Does this course say Wilson was dishonest?",
+            options: ["No", "Yes, on the evidence of the discrepancies scholars have measured", "Yes, because he claimed authorship of the narrative in his own preface", "It says the question cannot be raised, since the front matter settles it"],
+            correctIndex: 0,
+            explanation: "The structure is the same whether or not he was scrupulous, which is what makes it teachable.",
+            sourceLessonSlug: "the-editor-who-signed-the-preface",
+          },
+          {
+            prompt: "What does this course refuse to put a number on?",
+            options: ["How much of the language is Wilson's", "How many times Wilson heard Northup tell the story before writing", "How many copies of the 1853 edition were printed in Auburn and Buffalo", "How long Wilson took to prepare the narrative for the press"],
+            correctIndex: 0,
+            explanation: "Scholars have measured his hand and disagreed, so the course reports the disagreement.",
+            sourceLessonSlug: "the-editor-who-signed-the-preface",
+          },
+          {
+            prompt: "What does Wilson say about Northup and the manuscript?",
+            options: ["Northup went over it and corrected it", "Northup declined to read it, having no wish to revisit the events", "Northup approved it only after two chapters had been struck out", "Northup dictated it a second time when the first draft was lost"],
+            correctIndex: 0,
+            explanation: "Which a modern editor would recognise as a fact check, and which is still Wilson's own report.",
+            sourceLessonSlug: "the-editor-who-signed-the-preface",
+          },
+          {
+            prompt: "What is settled and printable about the Northup arrangement?",
+            options: ["The structure", "The exact proportion of the text attributable to each of the two men", "Wilson's motive for undertaking the preparation of the narrative", "Northup's private opinion of the finished book as published"],
+            correctIndex: 0,
+            explanation: "A dictated narrative, a named editor, a signed preface, and every fidelity assurance from one pen.",
+            sourceLessonSlug: "the-editor-who-signed-the-preface",
+          },
+          {
+            prompt: "In what language did Omar ibn Said write his 1831 autobiography?",
+            options: ["Arabic", "English, learned during his years of enslavement in North Carolina", "Wolof, transliterated into the Arabic script he had been taught as a scholar", "French, the language of the traders through whom he had been sold"],
+            correctIndex: 0,
+            explanation: "In his own hand, unaided, in a language he commanded as a West African scholar.",
+            sourceLessonSlug: "written-in-arabic",
+          },
+          {
+            prompt: "Why does Omar ibn Said fit none of the ghost, as-told-to or authenticator categories?",
+            options: ["He wrote it himself with no intermediary", "Because the manuscript carries no name of any kind on its opening leaf", "Because it was never published in his lifetime and so had no title page", "Because it was written outside the United States and its law did not apply"],
+            correctIndex: 0,
+            explanation: "No name was removed, nobody took dictation, and no certificate was required.",
+            sourceLessonSlug: "written-in-arabic",
+          },
+          {
+            prompt: "How does this lesson describe translation in relation to the amanuensis problem?",
+            options: ["The same problem moved one step outward", "A different problem entirely, since a translator never claims authorship", "A solution to it, since a written original can always be checked afterwards", "An unrelated question, since translation is governed by its own body of law"],
+            correctIndex: 0,
+            explanation: "A second person converts the text and may change it, while the author's name stays on the book.",
+            sourceLessonSlug: "written-in-arabic",
+          },
+          {
+            prompt: "Who produced the first translation of the autobiography, and in what year?",
+            options: ["Alexander Cotheal, 1848", "J. F. Jameson, 1925, for the American Historical Review", "Ala Alryyes, 2011, in a facing-page scholarly edition", "Mbaye Lo and Carl W. Ernst, 2023, in I Cannot Write My Life"],
+            correctIndex: 0,
+            explanation: "The UNC research guide lays out the sequence from Cotheal through to the 2023 edition.",
+            sourceLessonSlug: "written-in-arabic",
+          },
+          {
+            prompt: "Where was J. F. Jameson's retranslation published?",
+            options: ["The American Historical Review", "The Journal of Negro History, in its first decade of publication", "The Library of Congress Quarterly Journal of Current Acquisitions", "The North Carolina Historical Review, in its inaugural volume"],
+            correctIndex: 0,
+            explanation: "In 1925, nearly eighty years after Cotheal's first attempt.",
+            sourceLessonSlug: "written-in-arabic",
+          },
+          {
+            prompt: "What does Ala Alryyes's 2011 edition print alongside the English?",
+            options: ["Facsimile pages of the Arabic", "A transcription of the Arabic in modern printed characters only", "The 1848 and 1925 translations, so readers can compare all three", "A commentary by the Library of Congress on the manuscript's provenance"],
+            correctIndex: 0,
+            explanation: "A facing-page edition lets a reader check the translation against the original leaf.",
+            sourceLessonSlug: "written-in-arabic",
+          },
+          {
+            prompt: "What does the 2023 volume by Lo and Ernst say it does?",
+            options: ["Corrects many distortions", "Publishes the eighteen surviving writings in Arabic for the first time", "Establishes the date of the autobiography as 1831 rather than 1836", "Identifies the copyist who prepared the manuscript for its first owner"],
+            correctIndex: 0,
+            explanation: "It offers fresh and accurate translations of his eighteen surviving writings, per the UNC guide.",
+            sourceLessonSlug: "written-in-arabic",
+          },
+          {
+            prompt: "What follows from a 2023 edition claiming to correct earlier distortions?",
+            options: ["Readers before it could not know what was altered", "That the Arabic manuscript itself must have been altered at some point", "That the 1848 and 1925 translators were working from a different text", "That the autobiography should be treated as a work of disputed authorship"],
+            correctIndex: 0,
+            explanation: "For much of the period between 1831 and 2023 they were reading something other than what he wrote.",
+            sourceLessonSlug: "written-in-arabic",
+          },
+          {
+            prompt: "In what year did the Library of Congress acquire the original manuscript?",
+            options: ["2017", "1925, at the time of Jameson's retranslation for the AHR", "2011, when the facing-page scholarly edition was published", "1848, from the estate of the man who commissioned Cotheal's translation"],
+            correctIndex: 0,
+            explanation: "It has since been digitised, which converts checking a translation into a link.",
+            sourceLessonSlug: "written-in-arabic",
+          },
+          {
+            prompt: "What was the barrier between Omar ibn Said and his readers?",
+            options: ["Language", "A publisher who refused to issue the text under his own name", "A certificate of authorship that no Boston signatory would provide", "A contract assigning his manuscript to the family that held him"],
+            correctIndex: 0,
+            explanation: "He did everything the other authors had to fight for, and the record still did not deliver his words.",
+            sourceLessonSlug: "written-in-arabic",
+          },
+          {
+            prompt: "What does this lesson conclude about a name on a manuscript?",
+            options: ["Necessary and not sufficient", "Sufficient, provided the manuscript survives in the author's own hand", "Irrelevant once a scholarly translation has been published and accepted", "Decisive, since a title page records every hand that touched the text"],
+            correctIndex: 0,
+            explanation: "A transcriber, an editor or a translator can stand between author and reader, and the title page records none of it.",
+            sourceLessonSlug: "written-in-arabic",
+          },
+          {
+            prompt: "Why does the 2017 acquisition matter more than it sounds?",
+            options: ["Checking a translation stopped being a scholar's privilege", "Because the Library of Congress commissioned a new translation on acquiring it", "Because it established for the first time that the manuscript was authentic", "Because it transferred the copyright in the text into the public domain"],
+            correctIndex: 0,
+            explanation: "Anyone who reads Arabic can now compare a translation against the digitised page.",
+            sourceLessonSlug: "written-in-arabic",
+          },
+          {
+            prompt: "In what year and city was Abby Fisher's book published?",
+            options: ["San Francisco, 1881", "Mobile, Alabama, 1879, after the state fair at which she was asked for it", "Oakland, California, 1885, in an enlarged second edition", "Sacramento, 1879, immediately following the State Fair of that year"],
+            correctIndex: 0,
+            explanation: "By an author who signs herself Mrs. Abby Fisher, late of Mobile, Ala.",
+            sourceLessonSlug: "dictated-and-unattributed",
+          },
+          {
+            prompt: "What does Fisher's preface say about her own literacy?",
+            options: ["She could not read or write", "That she had learned to read but never to write with confidence", "That she wrote the recipes herself and had them corrected by a friend", "That she had been taught to read by the ladies who later requested the book"],
+            correctIndex: 0,
+            explanation: "And she adds that her husband was also without the advantages of an education.",
+            sourceLessonSlug: "dictated-and-unattributed",
+          },
+          {
+            prompt: "Who does Fisher's preface say the writing would devolve upon?",
+            options: ["Her husband", "The nine friends whose names appear in the front matter of the book", "The printing office, whose compositors would set it from her speech", "The ladies of Sacramento who had asked for the book at the State Fair"],
+            correctIndex: 0,
+            explanation: "In a clause explaining her doubts, and the preface never says that he did it.",
+            sourceLessonSlug: "dictated-and-unattributed",
+          },
+          {
+            prompt: "How does Fisher state her own qualification?",
+            options: ["Upwards of thirty-five years of experience", "A certificate awarded to her at the Sacramento State Fair of 1879", "The endorsement of the nine friends listed in the book's front matter", "Her training in the kitchens of Mobile before she came to California"],
+            correctIndex: 0,
+            explanation: "Her own count of her own years, rather than a certificate signed by other people.",
+            sourceLessonSlug: "dictated-and-unattributed",
+          },
+          {
+            prompt: "Where and when was Fisher asked for the book, according to her preface?",
+            options: ["By patrons in San Francisco and Oakland, and at the 1879 State Fair", "By a publisher who approached her after tasting her preserves at a fair", "By a women's printing co-operative that specialised in domestic manuals", "By the ladies of Mobile, before she left Alabama for California"],
+            correctIndex: 0,
+            explanation: "The demand came first, and the expertise was already established and already public.",
+            sourceLessonSlug: "dictated-and-unattributed",
+          },
+          {
+            prompt: "What is the heading over the list of nine names in Fisher's front matter?",
+            options: ["I take pleasure in referring, by permission, to the following of my friends", "The following persons assisted in taking down the receipts at my dictation", "Subscribers to this work, whose advance orders made its publication possible", "Certificate of the undersigned as to the authorship of the following pages"],
+            correctIndex: 0,
+            explanation: "It is a reference list, and the book never says those nine wrote anything.",
+            sourceLessonSlug: "dictated-and-unattributed",
+          },
+          {
+            prompt: "Which widely repeated claim does the book itself refute?",
+            options: ["That she dictated it to nine friends", "That she could read but not write when the book was prepared", "That the book was published without her knowledge or consent", "That she had never worked as a cook before arriving in California"],
+            correctIndex: 0,
+            explanation: "The nine are people she refers readers to by permission, which is vouching rather than transcription.",
+            sourceLessonSlug: "dictated-and-unattributed",
+          },
+          {
+            prompt: "The nine-name reference list is an example of which mechanism?",
+            options: ["The authenticator", "The as-told-to, since the nine appear in a subordinate credit position", "The ghost proper, since the nine are unnamed as writers of the text", "The amanuensis, since the nine took down what the author dictated"],
+            correctIndex: 0,
+            explanation: "The Wheatley mechanism in a commercial register: other people vouching for the author.",
+            sourceLessonSlug: "dictated-and-unattributed",
+          },
+          {
+            prompt: "What does the Fisher book never state?",
+            options: ["Who held the pen", "How long she had worked as a cook before the book was made", "Where the author had lived before settling in San Francisco", "Who had asked her repeatedly to publish her knowledge"],
+            correctIndex: 0,
+            explanation: "No transcriber is named anywhere in the front matter as the person who did the writing.",
+            sourceLessonSlug: "dictated-and-unattributed",
+          },
+          {
+            prompt: "How does this course treat the silence about who wrote Fisher's book down?",
+            options: ["As a finding", "As a gap to be closed by the most probable inference available", "As evidence that no transcriber was involved and she wrote it herself", "As a reason to exclude the book from the course's evidence base"],
+            correctIndex: 0,
+            explanation: "It is the most common finding in this subject, and the correct thing to write is that the record does not name them.",
+            sourceLessonSlug: "dictated-and-unattributed",
+          },
+          {
+            prompt: "In the section's comparison table, which book names its writer?",
+            options: ["Northup, 1853", "Fisher, 1881, which lists nine names in its own front matter", "Omar ibn Said, 1831, whose translators are named on the manuscript", "All three, which is what makes the section's comparison possible"],
+            correctIndex: 0,
+            explanation: "Wilson is named and signed a preface describing his method; Fisher's writer is not named.",
+            sourceLessonSlug: "dictated-and-unattributed",
+          },
+          {
+            prompt: "Which of the three cases in this section is the normal one?",
+            options: ["The unnamed writer", "The named editor who signs a preface describing his own method", "The author who wrote unaided and whose translators are all recorded", "None of them, since each is unusual enough to have survived in the record"],
+            correctIndex: 0,
+            explanation: "Most people who have held the pen for somebody else's book are not recorded anywhere.",
+            sourceLessonSlug: "dictated-and-unattributed",
+          },
+          {
+            prompt: "What is the first thing Fisher's preface establishes?",
+            options: ["That customers asked her for the book", "That she had obtained the assistance of nine friends in preparing it", "That her husband would be taking down the recipes at her dictation", "That she had been enslaved in Alabama before coming to California"],
+            correctIndex: 0,
+            explanation: "Repeatedly, by name, and at the 1879 State Fair, so the expertise was already public.",
+            sourceLessonSlug: "dictated-and-unattributed",
+          },
+          {
+            prompt: "Wilson's disclosure of his method is, on this lesson's reading:",
+            options: ["More than most amanuensis arrangements offer", "The standard practice of the period for narratives of this kind", "A legal requirement imposed on editors by the publishers of the day", "An unusual concealment, since most editors named their sources fully"],
+            correctIndex: 0,
+            explanation: "He describes it in print, at the time, and invites the reader to weigh it.",
+            sourceLessonSlug: "the-editor-who-signed-the-preface",
+          },
+          {
+            prompt: "Where was Twelve Years a Slave published in Britain?",
+            options: ["London, at 47 Ludgate Hill", "Edinburgh, by the same house that had issued Douglass's narrative", "Manchester, through the antislavery committee that funded the printing", "It was not published in Britain until the twentieth century"],
+            correctIndex: 0,
+            explanation: "By Sampson Low, Son & Company, alongside the Auburn and Buffalo imprints.",
+            sourceLessonSlug: "the-editor-who-signed-the-preface",
+          },
+          {
+            prompt: "What did Wilson say he was trying to present?",
+            options: ["All the facts communicated to him", "A narrative shorter than the one Northup had originally dictated", "An account that would satisfy the legal requirements of a deposition", "A version suitable for readers unfamiliar with the American South"],
+            correctIndex: 0,
+            explanation: "Which is how he explains extending the narrative to its present length.",
+            sourceLessonSlug: "the-editor-who-signed-the-preface",
+          },
+          {
+            prompt: "How many surviving writings by Omar ibn Said does the 2023 edition translate?",
+            options: ["Eighteen", "One, the 1831 autobiography, which is the only text known to survive", "Forty-two, matching the number of items in the Library of Congress collection", "Three, the autobiography and two letters written in the same decade"],
+            correctIndex: 0,
+            explanation: "The UNC guide describes it as offering fresh and accurate translations of all eighteen.",
+            sourceLessonSlug: "written-in-arabic",
+          },
+          {
+            prompt: "What does a facing-page edition make possible?",
+            options: ["Checking the translation against the original", "Publishing a text whose original manuscript has been lost", "Establishing which of two competing translations came first", "Registering a copyright in the translation separately from the original"],
+            correctIndex: 0,
+            explanation: "Which is the same accountability move as digitising the manuscript, at the scale of a book.",
+            sourceLessonSlug: "written-in-arabic",
+          },
+          {
+            prompt: "Which institution holds the original Omar ibn Said manuscript?",
+            options: ["The Library of Congress", "The Wilson Special Collections Library at UNC-Chapel Hill", "The Massachusetts Historical Society, with its other manuscript holdings", "The North Carolina State Archives, in the county where he was enslaved"],
+            correctIndex: 0,
+            explanation: "The UNC guide states plainly that Wilson Special Collections does not hold the original.",
+            sourceLessonSlug: "written-in-arabic",
+          },
+          {
+            prompt: "The three books in Section 4 differ most sharply in:",
+            options: ["Whether the writer is identified", "The century in which each of them was first published", "Whether the named author had been enslaved before publication", "Whether the book was published commercially or by subscription"],
+            correctIndex: 0,
+            explanation: "Named and self-describing, named but contested, and not named at all.",
+            sourceLessonSlug: "dictated-and-unattributed",
+          },
+          {
+            prompt: "What kind of expertise does Fisher's preface establish before the recipes begin?",
+            options: ["Practical, and already in demand", "Academic, based on formal instruction received in Mobile", "Commercial, derived from the ownership of a restaurant in San Francisco", "Literary, since she had published receipts in newspapers for many years"],
+            correctIndex: 0,
+            explanation: "Customers had asked her for the book repeatedly, and she counts thirty-five years of practice.",
+            sourceLessonSlug: "dictated-and-unattributed",
+          },
+          {
+            prompt: "What does Fisher say the book will be?",
+            options: ["A complete instructor", "A record of the receipts used in the households where she had served", "A memoir of her years in Mobile as much as a manual of cookery", "A collection assembled by her friends from her spoken instructions"],
+            correctIndex: 0,
+            explanation: "So that a child can understand it and learn the art of cooking, in her own words.",
+            sourceLessonSlug: "dictated-and-unattributed",
+          },
+          {
+            prompt: "What makes Wilson's preface unusually good evidence?",
+            options: ["He described his own role and signed it", "It was written by Northup and printed over Wilson's name", "It was corroborated by a second editor named in the same volume", "It was published separately from the narrative and can be dated exactly"],
+            correctIndex: 0,
+            explanation: "Nobody has to reconstruct his role from letters a century later, which is rare in this subject.",
+            sourceLessonSlug: "the-editor-who-signed-the-preface",
+          },
+          {
+            prompt: "This course reports the scholarly disagreement about Wilson because:",
+            options: ["It cannot defend a side it has not settled", "The disagreement is more interesting than the narrative itself", "The scholars involved are named in the book's own front matter", "Reporting disagreement is required by the copyright statute"],
+            correctIndex: 0,
+            explanation: "Scholars have measured his hand and have not agreed, so the course does not pick.",
+            sourceLessonSlug: "the-editor-who-signed-the-preface",
+          },
+          {
+            prompt: "In 1831 Omar ibn Said was living in:",
+            options: ["North Carolina", "Charleston, South Carolina, where he had first been landed", "Senegal, from which the manuscript was later carried to America", "Washington City, in the household of a federal official"],
+            correctIndex: 0,
+            explanation: "Where he wrote the autobiography himself, in Arabic, in his own hand.",
+            sourceLessonSlug: "written-in-arabic",
+          },
+          {
+            prompt: "How does this course describe the effect of digitisation on accountability?",
+            options: ["It turns a privilege into a link", "It removes the need for any further scholarly translation of the text", "It transfers responsibility for accuracy from the translator to the reader", "It settles disputes about a manuscript's authorship without further work"],
+            correctIndex: 0,
+            explanation: "Before 2017 comparing a translation to the page was a scholar's privilege.",
+            sourceLessonSlug: "written-in-arabic",
+          },
+          {
+            prompt: "Which is the correct order of translations of Omar ibn Said's autobiography?",
+            options: ["Cotheal, Jameson, Alryyes, Lo and Ernst", "Jameson, Cotheal, Lo and Ernst, Alryyes", "Alryyes, Cotheal, Jameson, Lo and Ernst", "Lo and Ernst, Alryyes, Jameson, Cotheal"],
+            correctIndex: 0,
+            explanation: "1848, 1925, 2011 and 2023, as the UNC research guide sets them out.",
+            sourceLessonSlug: "written-in-arabic",
+          },
+          {
+            prompt: "The Fisher case shows a reference list being mistaken for:",
+            options: ["A list of transcribers", "A subscription list of advance purchasers of the book", "A certificate of authorship in the manner of the Wheatley attestation", "A table of contents for the sections of receipts that follow"],
+            correctIndex: 0,
+            explanation: "Nine names under a heading about referring readers to friends, by permission.",
+            sourceLessonSlug: "dictated-and-unattributed",
+          },
+          {
+            prompt: "What does this course do when the record does not name a writer?",
+            options: ["Says so", "Names the most likely candidate and marks the attribution as probable", "Omits the case, since an unattributed book cannot illustrate a credit rule", "Treats the named editor of a comparable book as the presumed writer"],
+            correctIndex: 0,
+            explanation: "The absence is a finding, and it is the most common finding in this entire subject.",
+            sourceLessonSlug: "dictated-and-unattributed",
+          },
+          {
+            prompt: "What did Wilson claim gave him the chance to detect discrepancies?",
+            options: ["Hearing the account more than once", "Access to the court records generated by Northup's rescue", "Correspondence with people who had known Northup in New York", "A written statement Northup had prepared before their first meeting"],
+            correctIndex: 0,
+            explanation: "It is a claim about method, and it is also the only source for how the method went.",
+            sourceLessonSlug: "the-editor-who-signed-the-preface",
+          },
+          {
+            prompt: "Fisher signs her preface as:",
+            options: ["Mrs. Abby Fisher, Late of Mobile, Ala.", "Abby Fisher, Cook, of San Francisco and Oakland, California", "Mrs. A. Fisher, by the hand of her husband, at her dictation", "The Author, whose name appears on the title page of this work"],
+            correctIndex: 0,
+            explanation: "Her own name and her own place of origin, with no transcriber's name attached.",
+            sourceLessonSlug: "dictated-and-unattributed",
+          },
+          {
+            prompt: "Why does this course include Omar ibn Said in a section about someone else holding the pen?",
+            options: ["A translator is an intermediary too", "Because scholars dispute whether he wrote the manuscript himself", "Because the manuscript was taken down by a member of the household", "Because the Library of Congress lists it as a dictated narrative"],
+            correctIndex: 0,
+            explanation: "The author's name stays on the book and the reader still holds somebody else's sentences.",
+            sourceLessonSlug: "written-in-arabic",
+          },
+          {
+            prompt: "What did Fisher doubt, according to her preface?",
+            options: ["Whether the book would give perfect satisfaction", "Whether her recipes would be understood outside the American South", "Whether a printing office would agree to set the book from dictation", "Whether her patrons' interest would last long enough to sell an edition"],
+            correctIndex: 0,
+            explanation: "Because neither she nor the person who would write it down could read or write.",
+            sourceLessonSlug: "dictated-and-unattributed",
+          },
+          {
+            prompt: "What does the Northup title page state about the years 1841 and 1853?",
+            options: ["Kidnapped in the first, rescued in the second", "That the narrative was dictated over the twelve years between them", "That the author was resident in New York throughout both years", "That Derby and Miller acquired the rights in the earlier of the two"],
+            correctIndex: 0,
+            explanation: "The title page carries the whole arc of the case, and no authorship claim at all.",
+            sourceLessonSlug: "the-editor-who-signed-the-preface",
+          },
+          {
+            prompt: "What separates the amanuensis from the ghost in the Northup case specifically?",
+            options: ["Wilson is named on the book", "Wilson was paid a fee rather than a share of the royalty", "Wilson wrote from documents rather than from spoken dictation", "Wilson claimed the copyright in the narrative for himself"],
+            correctIndex: 0,
+            explanation: "A ghost's name is absent by agreement; Wilson signed a preface in the front matter.",
+            sourceLessonSlug: "the-editor-who-signed-the-preface",
+          },
+          {
+            prompt: "The lesson says Omar ibn Said did what the other authors had to fight for. What was that?",
+            options: ["He wrote it himself, unaided", "He secured a publisher willing to print under his own name", "He obtained a certificate of authorship from men of standing", "He kept the copyright in his own work after publication"],
+            correctIndex: 0,
+            explanation: "And the record still did not deliver his words, because the barrier was language.",
+            sourceLessonSlug: "written-in-arabic",
+          },
+          {
+            prompt: "Which is the strongest single reason to distrust an unchecked translation of a manuscript?",
+            options: ["Nothing on the page records what changed", "Translators are rarely qualified in the source language", "Translations are usually made from copies rather than originals", "A translation is not protected by copyright in its own right"],
+            correctIndex: 0,
+            explanation: "The title page records neither transcriber, editor nor translator, so checking means going to the manuscript.",
+            sourceLessonSlug: "written-in-arabic",
+          },
+          {
+            prompt: "What did Fisher's book require that a literate author's would not?",
+            options: ["A second person to hold the pen", "A certificate signed by patrons attesting to her competence", "A publisher willing to accept a manuscript in an unfamiliar hand", "A translator to render her spoken instructions into standard English"],
+            correctIndex: 0,
+            explanation: "And that person is nowhere named, which is the section's closing point.",
+            sourceLessonSlug: "dictated-and-unattributed",
+          },
+        ],
+      },
+    },
   ],
 };
