@@ -212,6 +212,35 @@ export function inTextCitationExcerpt(
   return excerpt || null;
 }
 
+/**
+ * The sentence in this lesson that `pattern` matches, or null when it matches nothing.
+ *
+ * The cross-link board's half of the excerpt feature: the owner is asked whether a mention of
+ * another course should become a link, and the only thing that answers it is the sentence the
+ * mention sits in. The MATCH decides the sentence, so the caller passes the same pattern the
+ * detector used (src/lib/cross-link-detect.ts) rather than a phrase re-searched under different
+ * rules: a case-sensitive title match followed by a case-insensitive re-search would happily quote
+ * an earlier lowercase sentence that is not the mention at all.
+ *
+ * The bibliography is stripped first, like every other function here, so a course title appearing in
+ * a `## Sources` entry produces no sentence and therefore no candidate. That is the right answer: a
+ * reference list is not a pointer to another course.
+ *
+ * `pattern` must not carry the global flag; a lastIndex that survives between calls would silently
+ * skip matches.
+ */
+export function excerptForPattern(
+  body: string | null | undefined,
+  pattern: RegExp,
+): string | null {
+  if (!body) return null;
+  const prose = stripSourcesBlock(body);
+  const m = prose.match(pattern);
+  if (!m || m.index === undefined) return null;
+  const excerpt = sentenceAt(prose, m.index, m[0].length);
+  return excerpt || null;
+}
+
 export interface SurroundingProse {
   /** The prose paragraph immediately before the match, when there is one. */
   before: string | null;
