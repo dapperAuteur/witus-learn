@@ -68,7 +68,8 @@
     "tutorial:record": "playwright test --config playwright.tutorial.config.ts",
     "tutorial:docs": "node scripts/tutorial-video/gen-docs.mjs",
     "tutorial:video": "node scripts/tutorial-video/compose.mjs",
-    "test": "vitest run"
+    "test": "vitest run",
+    "cross-links": "tsx scripts/find-cross-links.ts"
   },
   "dependencies": {
     "@langchain/anthropic": "^1.4.0",
