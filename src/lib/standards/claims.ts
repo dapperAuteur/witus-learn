@@ -426,6 +426,46 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "US Constitution 101, Lesson 7 · Federalism: state and federal power",
     ],
   },
+  // ══ Territories, the District, and the reach of citizenship ═════════════════
+  // Analyzed against the lessons of `territories-and-representation` (Not a State), which is
+  // built entirely on primary federal documents. These three claims are deliberately narrow:
+  // the course teaches the STATUS question and the REPRESENTATION question, and it explicitly
+  // refuses to teach tribal sovereignty, which `tribal-nations-governance` owns.
+  {
+    id: "civics.territorial-status-doctrine",
+    claim:
+      "Teaches the legal status of a place under U.S. sovereignty that is not a state: the Territory Clause, the Insular Cases, and the incorporated/unincorporated distinction, with the criticism of that doctrine attributed by name.",
+    courseSlugs: ["territories-and-representation"],
+    lessons: [
+      "Not a State, Lesson 2 · The clause that governs, and the default it replaced",
+      "Not a State, Lesson 5 · Downes v. Bidwell, and a word the Constitution never uses",
+      "Not a State, Lesson 6 · Balzac, and the right that did not follow",
+      "Not a State, Lesson 7 · The critics, by name, and the defense they answer",
+    ],
+  },
+  {
+    id: "civics.territorial-representation",
+    claim:
+      "Compares rights and representation among people living in states, territories and the federal District: non-voting Delegates and the Resident Commissioner, no Senate representation at all, and presidential electors only for the District under the Twenty-Third Amendment.",
+    courseSlugs: ["territories-and-representation"],
+    lessons: [
+      "Not a State, Lesson 13 · A seat without a vote",
+      "Not a State, Lesson 14 · No electors, and the amendment that made one exception",
+      "Not a State, Lesson 15 · The District is different, and the difference cuts both ways",
+    ],
+  },
+  {
+    id: "civics.citizenship-limited-and-expanded",
+    claim:
+      "Traces how the United States has limited and expanded citizenship over time by statute and by amendment, including the national-but-not-citizen status of people born in American Samoa and the litigation over it.",
+    courseSlugs: ["territories-and-representation"],
+    lessons: [
+      "Not a State, Lesson 3 · How each one arrived",
+      "Not a State, Lesson 9 · Nationals, but not citizens",
+      "Not a State, Lesson 10 · Fitisemanu, and who stood on which side",
+      "Not a State, Lesson 11 · Fa'a Samoa, and a choice nobody else gets to make",
+    ],
+  },
   {
     id: "civics.federalism-why-split-power",
     claim: "Teaches federalism and why power is divided, with the founding cases.",

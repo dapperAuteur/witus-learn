@@ -174,6 +174,24 @@ export const JURISDICTION: JurisdictionFile = {
           note: "The 14th Amendment, citizenship through birth and through parents, and naturalization eligibility step by step are taught directly.",
         },
         {
+          code: "C6.1.2",
+          text: "Explain how the United States has limited and expanded citizenship over time.",
+          claimIds: ["civics.citizenship-limited-and-expanded"],
+          coverage: "full",
+          note: "The standard's own examples are legislation and constitutional amendments, and both are the substance of the lessons: citizenship conferred on Puerto Rico in 1917, the Virgin Islands in 1927 and 1932, Guam in 1950 and the Northern Marianas by the 1976 Covenant, never conferred on American Samoa, and the Fourteenth Amendment question litigated in Fitisemanu v. United States.",
+        },
+        {
+          code: "C6.1.3",
+          text: "Compare and contrast rights and representation among U.S. people and citizens living in states, territories, federal districts, and on tribally governed land.",
+          claimIds: [
+            "civics.territorial-representation",
+            "civics.territorial-status-doctrine",
+            "civics.citizenship-limited-and-expanded",
+          ],
+          coverage: "partial",
+          note: "Near-1:1 on the standard's own named examples for states, territories and the federal district: the District of Columbia, Guam, Puerto Rico, the Northern Mariana Islands, the U.S. Virgin Islands and American Samoa are each taught by name, with the Delegates, the Resident Commissioner's four-year term, the Senate's total absence, and the Twenty-Third Amendment's capped electors. PARTIAL because the standard also names TRIBAL GOVERNMENTS, and this course deliberately refuses to teach tribal sovereignty, handing it to `tribal-nations-governance` and giving the comparison one careful lesson instead of a claim.",
+        },
+        {
           code: "C6.2.1",
           text: "Using examples, explain the rights and responsibilities of U.S. citizens as well all people living in the United States.",
           claimIds: ["civics.citizenship-responsibilities", "civics.jury-service", "civics.voter-registration", "civics.mi-elections"],
@@ -213,6 +231,10 @@ export const JURISDICTION: JurisdictionFile = {
       body: "The catalog's commodity, colonial, labor, civil-rights, and Cold-War history and its commodity economics WOULD map to Michigan's high-school World History (WHG), U.S. History (USHG), Economics (E), and Geography (G) strands, as they do in other states. But those strands sit in the 2019 document's multi-column, era-based layout, and the PDF's subset-font encoding makes clean verbatim transcription of that layout unreliable. Our rule is verbatim-or-nothing, so we mapped the High School Civics strand (which decoded cleanly and was verified) this pass and DEFER the other social-studies strands rather than risk citing text we cannot cleanly verify.",
     },
     {
+      heading: "C6.1.2 and C6.1.3 were rejected in July 2026 and are now CLAIMED, because the catalog changed.",
+      body: "The 2026-07-18 pass rejected both on the ground that no course genuinely taught the expansion of citizenship or territorial representation. That was true then. `territories-and-representation` (Not a State) shipped afterward and teaches exactly this material from primary federal sources, so both codes are now claimed: C6.1.2 in full, C6.1.3 as PARTIAL because its named examples include tribal governments, which that course deliberately declines to teach. The rejection is recorded here rather than deleted, so the change is visible.",
+    },
+    {
       heading: "Tribal governments (C3.2.3, C3.2.4).",
       body: "Michigan's C3.2 cluster names tribal governments and tribal sovereignty (C3.2.4 is entirely about it). Michigan Civics teaches Michigan's state and local structure but not tribal governments, so C3.2.3 is claimed as partial and C3.2.4 is not claimed. The gap is in the course, not the standards.",
     },
@@ -222,7 +244,7 @@ export const JURISDICTION: JurisdictionFile = {
     },
     {
       heading: "The federal-heavy and political-science civics standards we checked and rejected.",
-      body: "C1.1.1-1.1.4 (political philosophy and systems of government), C2.1.1-2.1.3 (the founding debates and origins as named content), C2.2.1-2.2.3 (the Democratic Values ↔ Constitutional Principles pairing), C3.1.6 (federal revenue and expenditure), C3.3.1-3.3.6 (interest groups, parties, public opinion, campaigns, NGOs, and media types — our media literacy is consumer protection, not political-media analysis), all of C4 (the Bill of Rights and civil-rights case lists — touched only through Know Your Rights, a thin overlap), all of C5 (U.S. foreign policy and international institutions), C6.1.2/6.1.3 (the expansion of citizenship and territorial/tribal representation), C6.3.1 (civic dispositions as a named concept), and C6.4.1/6.4.2 (the pursuit of Democratic Values and a survey of civil disobedience and social movements) — the courses do not genuinely teach these, so we do not claim them.",
+      body: "C1.1.1-1.1.4 (political philosophy and systems of government), C2.1.1-2.1.3 (the founding debates and origins as named content), C2.2.1-2.2.3 (the Democratic Values ↔ Constitutional Principles pairing), C3.1.6 (federal revenue and expenditure), C3.3.1-3.3.6 (interest groups, parties, public opinion, campaigns, NGOs, and media types — our media literacy is consumer protection, not political-media analysis), all of C4 (the Bill of Rights and civil-rights case lists — touched only through Know Your Rights, a thin overlap), all of C5 (U.S. foreign policy and international institutions), C6.3.1 (civic dispositions as a named concept), and C6.4.1/6.4.2 (the pursuit of Democratic Values and a survey of civil disobedience and social movements) — the courses do not genuinely teach these, so we do not claim them.",
     },
   ],
 };
