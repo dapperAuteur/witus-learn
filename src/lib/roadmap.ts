@@ -63,6 +63,72 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   origin would have verified a fiction. Deliberately NOT in \`pnpm lint\` (network calls must never
   gate a commit). Judgment isolated as pure predicates in \`scripts/lib/observability-checks.ts\`,
   24 tests.
+- 🔧 **The Match** (\`content/the-match-1890-institutions\`, **Civics**, **WARRANT-01**; NO migration,
+  **re-run \`pnpm seed:courses\`**). The first course in a NEW series, from the research file
+  \`plans/future-courses/land-and-schools/2026-08-27-01-land-grants-hbcus-farm-programs.md\`, which
+  found the entire Morrill mechanism missing from a 226-course catalog: zero occurrences of
+  "Morrill", "Pigford", "Homestead Act", "heirs property" or "Federation of Southern Cooperatives"
+  anywhere in \`scripts/data/\`, and two incidental HBCU mentions, both in sports biography.
+  **The spine, and the reason it is a series rather than one course:** a federal benefit is created,
+  a class is excluded, a separate and smaller channel is built for the excluded class, and that
+  channel is then permitted to go unmatched by the party obliged to fund it. The move recurs four
+  times inside ONE statute family. The research file's central judgment is that the
+  Indigenous-dispossession half and the Black-exclusion half are two injuries with two rightful
+  narrators, so a single course would inevitably subordinate one. **The series code is the artifact
+  that makes that decision legible:** WARRANT-01 The Match, **WARRANT-02** The County Committee
+  (farm credit and the county committee), **WARRANT-03** Eleven Million Acres (the 1862 endowment,
+  parcel by parcel, and it waits for a review arrangement), **WARRANT-99** Who the System Was For
+  (the three-tier comparison, takeable only last). Numbered rather than lettered because a letter
+  promises independent tracks and 99 genuinely depends on the three before it; deliberately **no
+  00**, because every term is defined inside the course and a vocabulary course would be filler.
+  **The course leads with the STATUTORY asymmetry, not the headline dollar figure**, and that was the
+  research file's most important instruction. The two sentences it is built on are in a three-page
+  public-domain CRS In Focus: **"The 1890 Institutions were not eligible for these grants"** (Hatch
+  1887 and Smith-Lever 1914, until NARETPA in 1977, which is 90 years of research money and 63 of
+  extension money), and **"The law does not permit waivers for most 1862 Institutions ... in FY2020,
+  nine 1890 Institutions received matching fund waivers"**. Neither needs a model to be true.
+  **Every primary document was read directly, not summarised.** 7 U.S.C. 301, 302 and 304 (the
+  thirty-thousand-acres formula, the scrip rule that explains why eastern endowments were paid for
+  with western land, the perpetual fund and the "industrial classes"); 7 U.S.C. 322 and 323, where
+  the U.S. Code's own subchapter headings carry the whole finding, **College-Aid LAND Appropriation
+  against College-Aid ANNUAL Appropriation**, so the 1890 Act granted \\$25,000 a year (raised to
+  \\$50,000 in 1907) and never an acre; 7 U.S.C. 3222d, whose subsection (c) puts the obligation on
+  **the State** and whose subsection (f) redistributes unmatched money to institutions in states that
+  DID pay, so the legislature forfeits nothing and its own institution loses everything; and
+  **7 U.S.C. 361c(d)(4)**, which is what CRS's word "most" carries: the only 1862 matching waiver
+  reaches Puerto Rico, Guam, the U.S. Virgin Islands and D.C., **none of them a state**.
+  **Two original pieces of arithmetic, both checkable in five minutes.** All sixteen Cardona/Vilsack
+  letters of 18 September 2023 were downloaded as published and read, which settles the coverage
+  drift about the largest gap (Tennessee State at \\$2,147,784,704, narrowly ahead of North Carolina
+  A&T) and, summed, gives **\\$13,055,622,416**, reconciling USDA's official "over \\$12 billion"
+  with the "\\$13 billion" in press coverage. And the 2013 APLU brief's two shortfall components add
+  to \\$56,627,200 against its printed \\$56,627,199.
+  **Contested material taught as contested, with both sides named.** The per-student method is stated
+  as a model, the mission-mix objection is put fairly, and the two named officials who disputed it in
+  writing are quoted: Virginia's Secretary of Education **Aimee Rogstad Guidera** on IPEDS and the
+  state's own accounting, and Kentucky Senate President Pro Tempore **David Givens** on full-time
+  equivalent denominators. Legislators pushing the other way are named too. Tennessee's own 2021
+  study is four times smaller than the federal figure for the same institution and both are honest.
+  **Section 7.3 of the research file is obeyed in Lesson 2 even though WARRANT-03 has not shipped:**
+  the course states in its own terms that the 1862 endowment was land taken from Indigenous nations,
+  cites Lee and Ahtone, states their counts AS counts ("nearly 250 tribes, bands and communities"
+  named in cessions is not a count of the 574 recognised nations), and hands off to
+  \`tribal-nations-governance\` without re-teaching allotment.
+  **Tested and refused, nine of them, with a ledger lesson that prints all nine:** any acreage figure
+  for Black farmland (owned against operated is the whole story and the census table was not read for
+  either), the 1920 operator count, **Pigford in every form** including a hard gate on the fraud
+  allegation, any per-institution 2023 figure taken from coverage, a tribal affiliation for Tristan
+  Ahtone, a current count of 1994 institutions (CRS says 35 as of June 2021, the statutory list names
+  36), the contents of the 2026 memorandum, and the 1994 endowment mechanism. Six open questions
+  filed in \`src/lib/research-checks.ts\`.
+  6 sections, 18 teaching lessons, 6 section quizzes (70/66/63/70/75/74 serving 5) and a 66-question
+  final serving 10, for **484 pooled questions**, 54 reveal cards, and **zero findings** from
+  \`pnpm audit:course the-match --spec\`. Mapped to \`catalog.cited-primary-secondary-synthesis\`,
+  \`catalog.test-a-historical-claim\` and a new content claim,
+  \`history.separate-but-equal-in-public-funding\`, referenced from Indiana's USH.2.5 (the
+  development of separate-but-equal policy) and Arkansas's H.4.AAH.5 (the establishment of
+  historically Black colleges and universities): **32 standards across 17 jurisdictions**.
+  Deliberately **not** in \`STAGED_COURSES\` yet, matching the CREDIT courses.
 - 🔧 **Who Gets Named** (\`content/credit-who-gets-named\`, Culture & History, **CREDIT-00**; NO
   migration, **re-run \`pnpm seed:courses\`**). The mechanisms course from BAM's own vetting note
   (\`plans/chat/did-the-work-vetting.md\` §4): credit is assigned by mechanisms, the mechanisms are

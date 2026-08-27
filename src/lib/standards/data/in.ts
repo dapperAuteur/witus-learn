@@ -375,9 +375,12 @@ export const JURISDICTION: JurisdictionFile = {
         {
           code: "USH.2.5",
           text: "Analyze the development of “separate but equal” policies culminating in the Plessy v. Ferguson (1896) case. Explain the historical significance of the denial of African American rights in the South and the effects of these policies in future years. (E)",
-          claimIds: ["history.jim-crow-and-long-shadow"],
+          claimIds: [
+            "history.jim-crow-and-long-shadow",
+            "history.separate-but-equal-in-public-funding",
+          ],
           coverage: "partial",
-          note: "Partial: the standard's second sentence — the denial of African American rights in the South and its effects in future years — is the course's core, taught for twelve lessons. The first sentence's case-law development culminating in Plessy is referenced, not analyzed case by case.",
+          note: "Partial: the standard's second sentence — the denial of African American rights in the South and its effects in future years — is the course's core, taught for twelve lessons, and The Match adds the first sentence's development half from the statute side: 7 U.S.C. § 323, enacted in 1890, deemed a state compliant if it maintained separate colleges and divided the funds equitably, six years before the Supreme Court adopted the doctrine, with the effects in future years traced through the funding record to the present. The case-law development culminating in Plessy is still referenced rather than analyzed case by case.",
         },
         {
           code: "USH.3.4",

@@ -2171,6 +2171,160 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Jennifer Fleischner's Mrs. Lincoln and Mrs. Keckly, the scholarly anchor for the authorship question",
     ],
   },
+  // ── The Match (WARRANT-01) ────────────────────────────────────────────────────────────────────
+  {
+    key: "match-1890-annual-appropriation-ended-1995",
+    course: "the-match",
+    lesson: "cash-not-land",
+    quote:
+      "That is what the note says. What it did in practice to the institutions, and how it sits beside the capacity grants Section 3 covers, is a question this course has filed rather than answered",
+    title: "What did the 1994 provision ending payments under the Act of August 30, 1890 actually do?",
+    severity: "medium",
+    question:
+      "Public Law 103-330, title VII, section 724 (30 September 1994) provided that no funds shall be available in fiscal year 1995 and thereafter for payments under the Act of August 30, 1890 and the tenth and eleventh paragraphs of the 1907 Act (7 U.S.C. 321 et seq.). What happened in practice? Were the 1890 Act's annual $50,000 payments genuinely discontinued from FY1995, were they folded into another appropriation line, and did the change affect the 1890 institutions, the 1862 institutions, or both?",
+    claim:
+      "Lesson 6 quotes the statutory note verbatim, says that is what the note says, and explicitly declines to interpret it. No consequence is asserted anywhere in the course.",
+    stakes:
+      "Medium. If the payments simply ended, that is a materially interesting fact about the 1890 Act's own money that sits directly on this course's spine and is currently unsaid. If they were folded into a successor line, a reader who found the note independently would reasonably assume the course had missed something. Either way the gap is visible and unexplained.",
+    needs: [
+      "What Congress intended by P.L. 103-330 sec. 724, from the appropriations report language for FY1995",
+      "Whether payments under 7 U.S.C. 322 appear in any appropriations act after FY1994, and if not, whether a successor line replaced them",
+      "Whether the change reached the 1890 institutions' share under 7 U.S.C. 323, the 1862 colleges, or both",
+    ],
+    where: [
+      "The FY1995 Agriculture appropriations act (P.L. 103-330) and its committee reports, on congress.gov",
+      "CRS reports on land-grant university funding, particularly R45897 on the land-grant system",
+      "USDA NIFA budget justifications for FY1994 and FY1995",
+    ],
+  },
+  {
+    key: "match-2026-usda-1890-mou-text",
+    course: "the-match",
+    lesson: "a-remedy-without-money",
+    quote:
+      "This course did not read the memorandum itself, so it does not tell you what the text does or does not contain.",
+    title: "What does the March 2026 USDA / Council of 1890 Universities memorandum actually say?",
+    severity: "medium",
+    question:
+      "Obtain the text of the memorandum of understanding signed by USDA and the Council of 1890 University Presidents in March 2026. Confirm its exact signing date, the signatories by name and title, and whether the document itself carries any dollar figure, appropriation, funding commitment or measurable target.",
+    claim:
+      "Lesson 19 dates the signing to 5 March 2026 on West Virginia State University's own announcement, describes the task force and the meeting frequency from that announcement, and says explicitly that neither the parties' announcements nor the trade press names a dollar figure. It does not characterise the text.",
+    stakes:
+      "Medium. This is the course's closing lesson and its honest ending depends on the distinction between the reporting naming no money and the document containing none. If the memorandum does carry a commitment, the closing lesson understates what happened; if it does not, the lesson can say so directly instead of hedging.",
+    needs: [
+      "A copy of the memorandum, or USDA's own release describing it",
+      "The exact signing date, confirmed against a USDA source rather than a signatory institution's account",
+      "Whether the text names any dollar figure, appropriation or measurable target",
+      "Whether the claim that USDA has signed such agreements since the Reagan administration can be documented with at least two prior examples and their dates",
+    ],
+    where: [
+      "USDA's newsroom and its Office of Partnerships and Public Engagement (usda.gov returns HTTP 403 to automated fetches, so a browser or a records request may be needed)",
+      "The 1890 Universities Foundation and the Council of 1890 University Presidents",
+      "Any of the nineteen institutions' government relations offices",
+    ],
+  },
+  {
+    key: "match-black-farmland-owned-vs-operated-1920",
+    course: "the-match",
+    lesson: "what-this-course-refused",
+    quote:
+      "This course has not read the underlying census table for either, so it prints neither as its own claim",
+    title: "What are the 1920 census figures for Black-operated and Black-owned farmland, from the table?",
+    severity: "high",
+    question:
+      "Read the 1920 Census of Agriculture directly and record two separate figures: acres in farms OPERATED by Black farmers, and acres OWNED by Black farmers, each with the volume, table and page. A figure of 41.4 million acres operated circulates attributed to USDA's Economic Research Service, and a figure of roughly 15 million acres circulates as an ownership figure. Neither has been read off a census table here.",
+    claim:
+      "Lesson 22 names both circulating figures, says they measure different things, and refuses to print either as the course's own claim. No acreage figure appears anywhere else in the course.",
+    stakes:
+      "High, and it blocks WARRANT-02. The operated-against-owned distinction is the whole story of Black land loss, and the farm-programs course cannot be written until both numbers are read off a table rather than inherited. Printing the wrong unit would be a substantive error an agricultural historian would correct in public.",
+    needs: [
+      "Acres operated by Black farmers in 1920, with volume, table and page",
+      "Acres owned by Black farmers in 1920, with volume, table and page",
+      "The census's own definition of operator in 1920, and how it differs from the producer definition used in recent censuses",
+      "The ERS chart's underlying table reference for the 41.4 million acre figure",
+    ],
+    where: [
+      "The Cornell University agcensus digital archive, which hosts the historical Census of Agriculture volumes",
+      "USDA Economic Research Service chart notes for the 2022 Census of Agriculture",
+      "USDA NASS methodology documentation on the operator and producer definitions",
+    ],
+  },
+  {
+    key: "match-1994-endowment-mechanism",
+    course: "the-match",
+    lesson: "three-tiers-in-one-row",
+    quote:
+      "It does not narrate the 1994 institutions' own story, their endowment arrangements, or what tribal colleges do",
+    title: "What is the 1994 institutions' endowment mechanism, and do they receive only the interest?",
+    severity: "low",
+    question:
+      "The Equity in Educational Land-Grant Status Act of 1994 created an endowment arrangement for the 1994 institutions. What amount did Congress authorize, is the principal held by the Treasury with only the income distributed, and what has the annual distribution been in recent years?",
+    claim:
+      "Lesson 11 says nothing about the endowment. It reports only the CRS Table 1 row, whose 1994 capacity-funding cell is blank because no comparable programmes exist, and says explicitly that the endowment arrangement is not this course's material.",
+    stakes:
+      "Low for this course, which deliberately declines to narrate it, but the figure is exactly the kind of round number that circulates without provenance and it will be load-bearing for WARRANT-99, where the three tiers are compared directly.",
+    needs: [
+      "The authorized amount and the statutory mechanism, from the Act as codified in the note to 7 U.S.C. 301",
+      "Whether the institutions receive income only, and how the distribution is calculated",
+      "The most recent annual distribution total, from the agency's own published letters",
+    ],
+    where: [
+      "USDA NIFA's Tribal College Endowment Program distribution letters, which are published as PDFs",
+      "The Equity in Educational Land-Grant Status Act of 1994, Pub. L. 103-382, tit. V, pt. C",
+      "The American Indian Higher Education Consortium",
+    ],
+  },
+  {
+    key: "match-annual-capacity-and-match-report",
+    course: "the-match",
+    lesson: "do-it-yourself",
+    quote:
+      "Section 7116 of the 2018 farm bill, codified at 7 U.S.C. § 2207d, requires USDA to report annually on federal capacity funding allocations and non-federal matching funds by institution and by grant programme",
+    title: "Where is the annual capacity-funding-and-match report published, and what is the latest one?",
+    severity: "high",
+    question:
+      "Locate the report 7 U.S.C. 2207d requires USDA to publish annually. What is its stable URL or publication route, which fiscal year does the most recent edition cover, and which institutions does it identify as having received matching fund waivers in that year?",
+    claim:
+      "Lesson 21's exercise tells a learner to pull this report and names the statute that requires it, but deliberately asserts no URL, because the repo's authoritative-values rule forbids presenting a guessed external location as correct. The course's only waiver count is CRS's FY2020 figure of nine institutions.",
+    stakes:
+      "High. This is the artifact the course's closing exercise depends on, and a learner who cannot find it cannot do the exercise. It is also the only way to update the FY2020 waiver count, which is now several years old and is the course's most-cited observed fact.",
+    needs: [
+      "The stable publication location of the report, confirmed by opening it",
+      "The most recent fiscal year covered",
+      "The institutions identified as receiving waivers in that year, by programme",
+      "Whether the report format still matches what CRS described in 2021",
+    ],
+    where: [
+      "USDA NIFA, which administers the capacity grants",
+      "7 U.S.C. 2207d and section 7116 of the Agriculture Improvement Act of 2018 for the statutory description",
+      "A congressional office, if the report is transmitted rather than posted",
+    ],
+  },
+  {
+    key: "match-1994-institution-count",
+    course: "the-match",
+    lesson: "the-roster-still-changes",
+    quote:
+      "Those two numbers are counting slightly different things at different dates, and a course that picked whichever one it preferred would be doing the thing this catalog exists to stop.",
+    title: "How many 1994 land-grant institutions are there today, and what explains 35 against 36?",
+    severity: "low",
+    question:
+      "CRS reported 35 in June 2021. The statutory definition list printed as a note to 7 U.S.C. 301 currently names 36 colleges. Which is the operative count today, and what accounts for the difference: an institution named in statute but not currently operating or accredited, an amendment after CRS published, or two different definitions of eligibility?",
+    claim:
+      "Lesson 7 reports both numbers with their sources and dates, states that they count slightly different things, and refuses to give a current count. Lesson 11 repeats CRS's 35 with the June 2021 date attached.",
+    stakes:
+      "Low, because the course already refuses the count rather than asserting one. Worth closing anyway: the difference is probably instructive about how a statutory roster and an agency list diverge, which is a point this course makes twice about the 1890 group and could make with evidence about the 1994 group.",
+    needs: [
+      "The agency's current published list of 1994 institutions, with its date",
+      "The statutory list as most recently amended, with the amending public law",
+      "The reason for any difference between them",
+    ],
+    where: [
+      "USDA NIFA's land-grant institution lists",
+      "The note to 7 U.S.C. 301 on uscode.house.gov",
+      "The American Indian Higher Education Consortium's member list",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {

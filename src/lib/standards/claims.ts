@@ -2544,6 +2544,27 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     ],
   },
   {
+    id: "history.separate-but-equal-in-public-funding",
+    claim:
+      "Teaches the development of separate-but-equal policy as a funding instrument, including the federal statute that deemed segregated colleges compliant six years before Plessy and the establishment of the historically Black land-grant colleges it produced.",
+    courseSlugs: ["the-match"],
+    lessons: [
+      // 7 U.S.C. 323 quoted in full: the admissions prohibition, the proviso that makes separate
+      // maintenance a compliance if the funds are "equitably divided", and the fact that the state
+      // legislature proposes the division. Dated against Plessy v. Ferguson, 163 U.S. 537 (1896).
+      "5 · The proviso, and who gets to write the split",
+      // What the 1890 Act actually granted (an annual cash appropriation, not land), which is why
+      // the institutions it produced never received a comparable endowment.
+      "6 · Cash, not land",
+      // The institutions themselves: 19 in 18 states, Alabama's two, Tuskegee as a private
+      // land-grant named in the statutes, and Central State added by the 2014 farm bill.
+      "7 · The roster, and the fact that it still changes",
+      // The consequence the policy produced in funding terms: ineligible for the Hatch and
+      // Smith-Lever capacity grants from 1887 and 1914 until 1977.
+      "9 · Not eligible for these grants",
+    ],
+  },
+  {
     id: "history.harlem-renaissance-black-press",
     claim: "Teaches the Harlem Renaissance, the New Negro, and the Black press as an engine of the Migration.",
     courseSlugs: ["great-migration"],
@@ -4118,6 +4139,12 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // printing-year discrepancy, and lesson 23 is a ledger of what was verified, what is
       // contested and what was refused.
       "written-by-himself",
+      // Builds its account of the 1890 land-grant funding mechanism from primary statutory text
+      // (7 U.S.C. 301, 302, 304, 322, 323, 3221, 3222d, 361c and the Agricultural Act of 2014
+      // sec. 7129) integrated with a congressional analysis (CRS IF11847), a set of federal letters
+      // read as published, an agency press release, and an interested association's own policy
+      // brief, and it names where those sources disagree rather than smoothing them.
+      "the-match",
       // Culture and migration
       "great-migration-and-the-world",
       "hoodoo-tradition-of-resistance",
@@ -4298,6 +4325,14 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // inference and states what documentary evidence would settle one; and lesson 23 is a ledger
       // of all seven refusals with the reason for each.
       "written-by-himself",
+      // Tests published claims against their own sources throughout and prints the ledger: lesson 9
+      // corrects an association brief's "83 years after Smith-Lever" by computing 1977 minus 1914;
+      // lesson 15 reconciles that brief's printed total against its own two components; lesson 17
+      // resolves a disagreement between two outlets by reading all sixteen published letters and
+      // summing them; lesson 18 states the methodological objection to the federal analysis with
+      // the objecting officials named and quoted; and lesson 22 is a ledger of nine claims the
+      // course tested and refused to print, each with the evidence that would settle it.
+      "the-match",
       // Government-forms method course: test a government action against its enabling document
       // (did this body have the power?), the same corroborate-or-challenge move.
       "who-has-the-power",
