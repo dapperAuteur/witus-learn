@@ -3043,5 +3043,643 @@ Keckley, E. (1868). *Behind the scenes, or, Thirty years a slave, and four years
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 6 — The trade now, and who ends up ghostwriting
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "as-told-to-in-the-modern-trade",
+      title: "21 · The rung on the ladder",
+      section: "Section 6 · The trade now, and who ends up ghostwriting",
+      body: `Everything so far has been out of copyright. Now the present tense, and the first thing to notice is that the mechanism did not go anywhere. It got a vocabulary.
+
+**Modern publishing has a credit ladder, and the rungs have names.** From the top:
+
+| Rung | What it says | What the writer gets |
+| --- | --- | --- |
+| Joint byline: "A and B" | Two authors | Full credit, indexed under both |
+| "with B" | A collaborator | Named on the cover, usually smaller |
+| "as told to B" | A collaborator who wrote it | Named, and the arrangement disclosed |
+| "with the assistance of B" | Assistance, unspecified | Named, scope undefined |
+| Acknowledgements | Thanks | A line inside the book |
+| Nothing | A ghost | A fee |
+
+**Every one of those is a real position and the differences are not cosmetic.** A name on a cover is indexed by a catalogue; a name in the acknowledgements is not. A name in a catalogue is searchable forever; a line of thanks is findable only by someone already holding the book. That is the same legibility argument that decided the Jacobs case, running in the present.
+
+**Now a worked example, and it contains a correction.**
+
+*The Autobiography of Malcolm X* is the most widely known collaboration in American publishing, and almost everyone repeats its credit line as **"as told to Alex Haley."** The Internet Archive's copy of the Grove Press edition is catalogued from its own title page as: **"The autobiography of Malcolm X; with the assistance of Alex Haley"** (Internet Archive, n.d.).
+
+**That is a different rung.** "As told to" describes the arrangement: this person spoke, that person wrote. "With the assistance of" describes a contribution of unspecified scope. Between them sits a real question about what the book says Haley did, and the popular version has quietly promoted the credit to a clearer rung than the title page granted.
+
+**This course reports the title page.** Not because the distinction is precious, but because it is the exact error the whole course is about: a credit line remembered as tidier than it was. If a phrase this famous drifts, phrases nobody is watching drift further.
+
+**One honest wrinkle, reported rather than smoothed.** The book is generally dated 1965, and the Internet Archive copy is catalogued as Grove Press, 1966, which is the kind of first-printing-versus-later-printing discrepancy this catalog reports instead of choosing. It is filed as an open question.
+
+**What the modern ladder adds that the nineteenth century did not have.** The rungs are **named**, which makes credit gradable. In 1861 you could not say what position Child occupied except by reading her introduction. Today a reader can look at a cover and say which rung a collaborator is on, compare it against another book, and notice when the same person is on a lower rung than their contribution suggests.
+
+**And that is the useful skill, so make it explicit.** When you pick up a collaborative book, ask three questions in order:
+
+1. **Is there a second name at all?** If not, either one person wrote it or a ghost was paid.
+2. **Where is it?** Cover, title page, copyright page, acknowledgements. Each is a different amount of permanence.
+3. **What connecting word?** "And", "with", "as told to", "assistance of". The word is the disclosure.
+
+:::reveal According to the Internet Archive's catalogued copy, what phrase does the title page of the Grove Press Autobiography of Malcolm X carry? ||| With the assistance of Alex Haley, which is a different rung from the "as told to Alex Haley" that is almost always repeated.
+
+:::reveal Why does a name on a cover differ in kind from a name in the acknowledgements? ||| A cover name is indexed by catalogues and searchable forever; a line of thanks is findable only by someone already holding the book.
+
+## Vocabulary
+- **Credit ladder**: the ranked, named positions a collaborator can occupy in modern publishing, from a joint byline down to nothing.
+- **Connecting word**: the term joining two names on a book ("and", "with", "as told to"), which is the actual disclosure of the arrangement.
+- **Gradable credit**: credit that can be compared between books because the positions have standard names, which the nineteenth century lacked.
+- **Credit promotion**: the drift by which a remembered credit line becomes tidier or higher than the one actually printed.
+
+## Sources
+Internet Archive. (n.d.). *The autobiography of Malcolm X; with the assistance of Alex Haley* [Catalogue record]. https://archive.org/details/autobiographyofm00xmal`,
+    },
+    {
+      slug: "what-the-record-does-not-name",
+      title: "22 · What the record does not name",
+      section: "Section 6 · The trade now, and who ends up ghostwriting",
+      body: `Here is the point in a ghostwriting course where you expect a list. Which famous book was really written by whom. This course does not have one, and the refusal is the lesson rather than a gap in the research.
+
+**The reason is simple and it is the same reason Section 4 would not measure David Wilson's hand.** Most modern ghostwriting attributions in public circulation rest on inference: a stylistic impression, an unnamed source, a publishing rumour, a writer's schedule that happens to line up with a book. **None of that is evidence of who wrote a manuscript**, and a course that repeated it would be doing exactly what it spends six sections training people to catch.
+
+**And the incentives run the wrong way.** A ghostwriting arrangement is normally covered by a confidentiality term, which means the people who could confirm it are contractually silent and the people who are free to speculate know least. A field where the informed are silent and the uninformed are loud produces a lot of confident wrong answers.
+
+**So the discipline is to ask what would actually settle it.** Four things would, and they are all documentary:
+
+1. **The book's own front matter.** An acknowledgements page naming a collaborator, or a copyright page, is a statement the publisher stands behind. This is why Section 6 opened with the ladder: reading the page is the first move, not the last resort.
+2. **The copyright registration.** United States copyright records are public, and the Copyright Office maintains searchable systems covering registrations from 1978 to the present, along with historical records reaching back to 1790 (U.S. Copyright Office, n.d.). A registration names an author and a claimant. It will not tell you who typed the sentences, and it will tell you what was formally asserted, by whom, and when.
+3. **The writer's own statement**, once they are free to make one. This is the most common way a real attribution becomes public, and it is worth more than any amount of stylistic analysis because it comes from a party to the agreement.
+4. **The contract**, which almost never surfaces, and which is the only document that settles the question completely.
+
+**Now recall Lesson 1, because the statute anticipated this exact situation.** Under 17 U.S.C. § 302(c), if the identity of the author of an anonymous or pseudonymous work is revealed in the registration records, the copyright term switches to the life-of-the-author basis. **The law provides a channel for a name to arrive late, and the channel is a public record.** That is the mechanism by which a hidden authorship can become a documented one without anybody speculating.
+
+**What this course prints instead of a list.**
+
+- Where a collaborator is named on the book, this course reads the rung and says what the page says.
+- Where the record does not name a writer, this course says **the record does not name the writer**, and treats that as a finding about the arrangement rather than a hole in the reporting.
+- Where a claim is contested, it names who holds each position and does not adjudicate from a distance.
+
+**And here is why that is not a cop-out.** The interesting fact about modern ghostwriting is not the identity of any individual ghost. It is the **shape of the whole trade**: that a large share of the books on a bestseller list were written by people whose names are not on them, that this is contractually normal, and that the arrangement is nearly invisible to the reading public. **You do not need a single name to establish any of that**, and a list of names would obscure it, because it would turn a structural fact into gossip about individuals.
+
+**The structural question is the one worth carrying out of this course**, and the last lesson asks it directly.
+
+:::reveal Why does this course refuse to publish a list of who ghostwrote which modern book? ||| Because most such attributions rest on inference, unnamed sources and stylistic impression, none of which is evidence of who wrote a manuscript.
+
+:::reveal Name two documentary things that would actually settle a ghostwriting attribution. ||| The book's own front matter or copyright page, the public copyright registration, the writer's own statement once free to make it, or the contract itself.
+
+## Vocabulary
+- **Inference-based attribution**: a claim about who wrote a book resting on style, timing or rumour rather than on a document, which this course does not print.
+- **Confidentiality term**: the contractual clause that silences the people best placed to confirm a ghostwriting arrangement.
+- **Copyright registration**: a public record naming an author and a claimant, which documents what was formally asserted and by whom.
+- **Structural fact**: a finding about how a whole trade is arranged, which does not require identifying any individual and which a list of names would obscure.
+
+## Sources
+Copyright Act of 1976, 17 U.S.C. § 302(c) (duration; revelation of identity). https://www.law.cornell.edu/uscode/text/17/302
+
+U.S. Copyright Office. (n.d.). *Public records*. https://www.copyright.gov/public-records/`,
+    },
+    {
+      slug: "who-ends-up-ghostwriting",
+      title: "23 · Who ends up ghostwriting",
+      section: "Section 6 · The trade now, and who ends up ghostwriting",
+      body: `The question this course has been building toward, stated plainly: **who ends up ghostwriting, and who ends up bylined?**
+
+**Start by conceding what the evidence will not carry.** This course cannot give you a demographic breakdown of the ghostwriting trade, because the trade is confidential by design and nobody holds that register. Anyone who quotes you a percentage is estimating. That is not a rhetorical hedge, it is the finding: **an occupation defined by contractual invisibility cannot be counted**, and being uncountable is itself a disadvantage, because you cannot argue about a pay gap in a workforce that has no published size.
+
+**But the eight books in this course do carry an argument, and it is this.**
+
+Every author here had to solve a problem that an unquestioned author does not have. Wheatley needed eighteen signatures. Douglass needed a subtitle, a preface and a letter. Jacobs needed a pseudonym for safety and a famous editor for standing, and paid for both by losing her name for a century. Keckley took the byline unqualified and lost her livelihood. Northup's book was written by his editor. Fisher's was written by somebody nobody recorded. Omar ibn Said wrote his own and reached readers only through translations that a 2023 edition says needed correcting.
+
+**Eight books, eight different arrangements, one constant: the byline was not simply available.** It had to be bought, propped, argued for, risked, or done without. That is what "who ends up ghostwriting" looks like when you can actually see the paperwork.
+
+**Now the mechanism, stated so it transfers.** A byline is granted by whoever is buying, and it is granted on a judgment about **whose name sells and whose name is believed**. Those two judgments are where every pattern in this course comes from. They explain Bell's certificate, Garrison's preface, the drift toward Child, and the modern decision to put a celebrity's name on a book somebody else wrote. Nobody in that chain has to hold a bad opinion. They only have to make a commercial estimate of what a name is worth, in a market that has its own history.
+
+**Which is why the fix is never "be fairer to ghosts."** The ghost was paid what was agreed. The fix, where there is one, is at the point where the rung is assigned:
+
+- **Name the collaborator on the cover** rather than in the acknowledgements, which converts a thank-you into a catalogue entry.
+- **Use the accurate connecting word.** "As told to" and "with the assistance of" describe different work, and choosing the honest one costs nothing.
+- **Let the writer speak later.** A confidentiality term that never expires makes a permanent record of nothing.
+
+**The ledger: what this course tested and refused to print.**
+
+- **That ghostwriting is a theft.** Refused. Every ghostwriter is unnamed by agreement and paid for it, exactly as every master printer is unsigned (CREDIT-02) and every employee designer is off the door (CREDIT-03). This is the third time the series has made this correction.
+- **An in-person interrogation of Phillis Wheatley by the eighteen signers.** Refused. Revolutionary Spaces reports it as speculation and reports current scholarship as finding it unlikely.
+- **That Abby Fisher dictated her book to the nine friends named in its front matter.** Refused against the book itself. That list sits under a heading about referring readers to friends by permission. It is a reference list.
+- **A proportion of Twelve Years a Slave attributable to David Wilson.** Refused. Scholars have measured his hand and disagreed.
+- **A proportion of Behind the Scenes attributable to James Redpath.** Refused. Documenting the American South calls his level of involvement speculation and says verifiable facts have affirmed the text's authenticity, and this course quotes both rather than improving on either.
+- **Any modern ghostwriting attribution resting on inference.** Refused, and Lesson 22 explains why at length.
+- **A count or demographic profile of the ghostwriting trade.** Refused. Nobody holds that register.
+
+**What this course does claim**, and every item is checkable in a free digitised source: that the attestation is bound into Wheatley's 1773 front matter and carries eighteen names; that Garrison's 1845 preface names employing someone else and rules it out; that Child disclaimed authorship in print in 1861 and the book was read as hers anyway; that Yellin corrected it from Jacobs's own letters, in 1981 and 1987; that Keckley's career ended over her byline; and that the title page of the Grove Press *Autobiography of Malcolm X* says "with the assistance of."
+
+**Go and read a title page.** That is the whole method, and it has not changed in two hundred and fifty years.
+
+:::reveal Why can this course not give a demographic profile of the ghostwriting trade, and why is that itself a finding? ||| Because the trade is confidential by design and nobody holds that register, and an occupation that cannot be counted cannot argue about its own pay or composition.
+
+:::reveal What is the one constant across all eight books in this course? ||| The byline was never simply available: it had to be bought, propped, argued for, risked, or done without.
+
+## Vocabulary
+- **Contractual invisibility**: the condition of a trade whose practitioners are unnamed by agreement, which makes the workforce uncountable and therefore hard to argue about.
+- **Whose name sells and whose name is believed**: the two commercial judgments that assign a byline, and the source of every pattern this course documents.
+- **Rung assignment**: the moment at which a publisher decides where a collaborator's name goes, which is the point where a credit outcome is actually set.
+- **The ledger**: a course's published list of claims it tested and declined to print, with the reason for each.
+
+## Sources
+Documenting the American South. (n.d.). *Summary of Behind the Scenes, or, Thirty years a slave, and four years in the White House*. University of North Carolina at Chapel Hill. https://docsouth.unc.edu/neh/keckley/summary.html
+
+Revolutionary Spaces. (n.d.). *How Phillis Wheatley might have obtained the approval of eighteen prominent white men of Boston to publish her book of poetry*. https://revolutionaryspaces.org/explore/exhibits/imagining-the-age-of-phillis/how-phillis-wheatley-might-have-obtained-the-approval-of-eighteen-prominent-white-men-of-boston-to-publish-her-book-of-poetry/
+
+University of North Carolina at Chapel Hill. (n.d.). *Other resources: Omar ibn Said materials at Wilson Special Collections Library*. UNC Libraries. https://guides.lib.unc.edu/omar-ibn-said/other-resources`,
+    },
+    {
+      slug: "quiz-the-trade-now",
+      title: "24 · Knowledge check: the trade now",
+      section: "Section 6 · The trade now, and who ends up ghostwriting",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What sits at the bottom of the modern credit ladder?",
+            options: ["Nothing, and a fee", "A line of thanks printed inside the acknowledgements", "The phrase with the assistance of, printed on the title page", "A joint byline in which both names appear in the same size type"],
+            correctIndex: 0,
+            explanation: "That is the ghost: no name anywhere, and payment instead.",
+            sourceLessonSlug: "as-told-to-in-the-modern-trade",
+          },
+          {
+            prompt: "What does a cover credit give a collaborator that an acknowledgement does not?",
+            options: ["A catalogue entry", "A larger share of the royalties earned by the finished book", "Legal standing to prevent the book being revised without consent", "The right to be consulted about later editions and translations"],
+            correctIndex: 0,
+            explanation: "A catalogue entry is searchable forever; a line of thanks is findable only by someone holding the book.",
+            sourceLessonSlug: "as-told-to-in-the-modern-trade",
+          },
+          {
+            prompt: "Which rung does the phrase \"as told to\" describe?",
+            options: ["A collaborator who wrote it, with the arrangement disclosed", "Two authors of equal standing indexed under both their names", "An assistant whose contribution is deliberately left unspecified", "A subject who wrote the book without any collaborator at all"],
+            correctIndex: 0,
+            explanation: "This person spoke and that person wrote, which is the arrangement stated on the page.",
+            sourceLessonSlug: "as-told-to-in-the-modern-trade",
+          },
+          {
+            prompt: "What phrase does the title page of the Grove Press Autobiography of Malcolm X carry?",
+            options: ["With the assistance of Alex Haley", "As told to Alex Haley, in the standard collaboration formula", "By Malcolm X and Alex Haley, in a joint byline of equal weight", "Edited by Alex Haley, with an introduction by M. S. Handler"],
+            correctIndex: 0,
+            explanation: "The Internet Archive's copy is catalogued from that title page, and it is a different rung from the remembered one.",
+            sourceLessonSlug: "as-told-to-in-the-modern-trade",
+          },
+          {
+            prompt: "How does \"with the assistance of\" differ from \"as told to\"?",
+            options: ["It leaves the scope unspecified", "It places the collaborator above the subject on the title page", "It indicates the collaborator held the copyright in the finished text", "It is used only when the subject is deceased at the time of publication"],
+            correctIndex: 0,
+            explanation: "As told to describes the arrangement; assistance describes a contribution of undefined size.",
+            sourceLessonSlug: "as-told-to-in-the-modern-trade",
+          },
+          {
+            prompt: "What does this course call the drift by which a remembered credit becomes tidier than the printed one?",
+            options: ["Credit promotion", "Attribution drift, the same mechanism that operated on the Jacobs book", "Ghostwriting, since the actual arrangement is concealed from readers", "Authentication, since the tidier version is easier for readers to accept"],
+            correctIndex: 0,
+            explanation: "If a phrase this famous drifts, phrases nobody is watching drift further.",
+            sourceLessonSlug: "as-told-to-in-the-modern-trade",
+          },
+          {
+            prompt: "What discrepancy does this lesson report rather than resolve?",
+            options: ["The book's year, 1965 against a copy catalogued 1966", "Whether Haley wrote the epilogue or the introduction to the volume", "Whether the publisher was Grove Press or another New York house", "Whether the title page names Haley at all in the first printing"],
+            correctIndex: 0,
+            explanation: "A first-printing against later-printing question, filed as an open question rather than chosen.",
+            sourceLessonSlug: "as-told-to-in-the-modern-trade",
+          },
+          {
+            prompt: "What does the modern ladder add that the nineteenth century lacked?",
+            options: ["Named rungs, which make credit gradable", "A legal requirement that every contributor be identified in print", "A trade body that adjudicates disputes between authors and collaborators", "A public register recording every collaboration agreement in the industry"],
+            correctIndex: 0,
+            explanation: "In 1861 you could not say what position Child occupied except by reading her introduction.",
+            sourceLessonSlug: "as-told-to-in-the-modern-trade",
+          },
+          {
+            prompt: "What is the first of the three questions to ask of a collaborative book?",
+            options: ["Is there a second name at all", "Which of the two people contributed the larger share of the text", "Whether the publisher discloses the terms of the collaboration agreement", "How the royalties were divided between the subject and the collaborator"],
+            correctIndex: 0,
+            explanation: "If there is not, either one person wrote it or a ghost was paid.",
+            sourceLessonSlug: "as-told-to-in-the-modern-trade",
+          },
+          {
+            prompt: "In the three questions, what is the connecting word treated as?",
+            options: ["The disclosure", "A stylistic choice made by the publisher's design department", "A legal term of art with a defined meaning in publishing contracts", "An indication of the order in which the two people were engaged"],
+            correctIndex: 0,
+            explanation: "And, with, as told to, assistance of: each states a different arrangement.",
+            sourceLessonSlug: "as-told-to-in-the-modern-trade",
+          },
+          {
+            prompt: "Which locations does the second question distinguish between?",
+            options: ["Cover, title page, copyright page, acknowledgements", "Hardcover, paperback, book-club and export editions of one title", "The publisher's catalogue, the trade press and the library record", "The dust jacket flap, the spine and the back-cover description"],
+            correctIndex: 0,
+            explanation: "Each is a different amount of permanence for a collaborator's name.",
+            sourceLessonSlug: "as-told-to-in-the-modern-trade",
+          },
+          {
+            prompt: "Which argument from the Jacobs case runs again in the modern ladder?",
+            options: ["Legibility", "Authentication, since a famous name still vouches for an unknown one", "Fidelity, since the collaborator may change what the subject said", "Manumission, since a byline can change an author's legal standing"],
+            correctIndex: 0,
+            explanation: "A name a catalogue can carry outlasts a name only a reader of the book will ever see.",
+            sourceLessonSlug: "as-told-to-in-the-modern-trade",
+          },
+          {
+            prompt: "Why does this course not publish a list of who ghostwrote which modern book?",
+            options: ["Such attributions rest on inference", "Because publishers would bring legal action against any such list", "Because ghostwriters have asked the catalog not to identify them", "Because the question is settled and a list would teach nothing new"],
+            correctIndex: 0,
+            explanation: "Style, timing, unnamed sources and rumour are not evidence of who wrote a manuscript.",
+            sourceLessonSlug: "what-the-record-does-not-name",
+          },
+          {
+            prompt: "Why do the incentives in ghostwriting run the wrong way for public knowledge?",
+            options: ["The informed are contractually silent", "Because publishers pay more for books whose authorship is disputed", "Because collaborators are legally barred from ever discussing their work", "Because readers prefer the version of a book with a single author's name"],
+            correctIndex: 0,
+            explanation: "A field where the informed are silent and the uninformed are loud produces confident wrong answers.",
+            sourceLessonSlug: "what-the-record-does-not-name",
+          },
+          {
+            prompt: "Which of these would actually settle a ghostwriting attribution?",
+            options: ["The contract", "A close stylistic comparison against the named author's other work", "The publisher's willingness to confirm or deny it when asked directly", "The collaborator's presence in the same city during the writing period"],
+            correctIndex: 0,
+            explanation: "It almost never surfaces, and it is the only document that settles the question completely.",
+            sourceLessonSlug: "what-the-record-does-not-name",
+          },
+          {
+            prompt: "What does a copyright registration name?",
+            options: ["An author and a claimant", "Every person who contributed text to the registered work", "The number of hours each contributor worked on the manuscript", "The terms on which the parties agreed to divide the royalties"],
+            correctIndex: 0,
+            explanation: "It records what was formally asserted, by whom and when, not who typed the sentences.",
+            sourceLessonSlug: "what-the-record-does-not-name",
+          },
+          {
+            prompt: "What period do the Copyright Office's searchable systems cover, per its public records page?",
+            options: ["1978 to the present, plus historical records reaching back to 1790", "Only registrations made since the Copyright Act of 1976 took effect", "Only works published in the United States after the year 2000", "Nothing before 1945, since earlier records were never digitised"],
+            correctIndex: 0,
+            explanation: "Which makes a formal authorship assertion a public and checkable fact.",
+            sourceLessonSlug: "what-the-record-does-not-name",
+          },
+          {
+            prompt: "Which statutory provision gives a hidden authorship a route into the public record?",
+            options: ["17 U.S.C. § 302(c)", "17 U.S.C. § 101's definition of a work made for hire", "The Visual Artists Rights Act's provisions on attribution", "The Lanham Act's prohibition on false designation of origin"],
+            correctIndex: 0,
+            explanation: "If the identity is revealed in the registration records, the term switches to the life-of-the-author basis.",
+            sourceLessonSlug: "what-the-record-does-not-name",
+          },
+          {
+            prompt: "Which source is the most valuable for a real modern attribution becoming public?",
+            options: ["The writer's own statement", "A journalist's reconstruction from publishing-industry sources", "A textual analysis comparing the book against the named author's speech", "A publisher's off-the-record confirmation given to a trade publication"],
+            correctIndex: 0,
+            explanation: "It comes from a party to the agreement, which no amount of stylistic analysis can match.",
+            sourceLessonSlug: "what-the-record-does-not-name",
+          },
+          {
+            prompt: "What does this course print where the record does not name a writer?",
+            options: ["That the record does not name the writer", "The most probable candidate, flagged clearly as an estimate", "Nothing at all, omitting the book from the course entirely", "The named editor, treated as the presumed author by default"],
+            correctIndex: 0,
+            explanation: "It is a finding about the arrangement rather than a hole in the reporting.",
+            sourceLessonSlug: "what-the-record-does-not-name",
+          },
+          {
+            prompt: "What does this lesson call the genuinely interesting fact about modern ghostwriting?",
+            options: ["The shape of the whole trade", "The identity of the writers behind the largest political memoirs", "The proportion of a ghostwritten manuscript that survives editing", "The difference in fees paid to named and unnamed collaborators"],
+            correctIndex: 0,
+            explanation: "That it is contractually normal and nearly invisible to readers, which needs no individual names.",
+            sourceLessonSlug: "what-the-record-does-not-name",
+          },
+          {
+            prompt: "Why would a list of names obscure the structural fact?",
+            options: ["It turns a structural fact into gossip about individuals", "Because most of the names on such a list would be inaccurate", "Because publishers would respond by concealing collaborations further", "Because the individuals named would have grounds to demand a retraction"],
+            correctIndex: 0,
+            explanation: "You do not need a single name to establish how the trade is arranged.",
+            sourceLessonSlug: "what-the-record-does-not-name",
+          },
+          {
+            prompt: "Which is the first move when assessing a collaborative book, per this lesson?",
+            options: ["Read the book's own front matter", "Search the publishing trade press for reports of a collaboration", "Compare the prose against the named author's known writing", "Ask the publisher to confirm who prepared the manuscript"],
+            correctIndex: 0,
+            explanation: "An acknowledgements page or copyright page is a statement the publisher stands behind.",
+            sourceLessonSlug: "what-the-record-does-not-name",
+          },
+          {
+            prompt: "What silences the people best placed to confirm a ghostwriting arrangement?",
+            options: ["A confidentiality term", "A statutory bar on disclosing authorship of a registered work", "A publishing convention forbidding collaborators from giving interviews", "The loss of copyright that would follow any public acknowledgement"],
+            correctIndex: 0,
+            explanation: "Which is why the informed are quiet and the speculation comes from people who know least.",
+            sourceLessonSlug: "what-the-record-does-not-name",
+          },
+          {
+            prompt: "Why can this course not give a demographic profile of the ghostwriting trade?",
+            options: ["Nobody holds that register", "Because the relevant surveys are held privately by publishing houses", "Because the profile changes too quickly for any figure to stay accurate", "Because copyright records deliberately omit collaborators' identities"],
+            correctIndex: 0,
+            explanation: "The trade is confidential by design, so anyone quoting a percentage is estimating.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "Why is being uncountable itself a disadvantage for a workforce?",
+            options: ["You cannot argue about a pay gap in a workforce with no published size", "Because uncounted workers are excluded from statutory employment protections", "Because publishers set fees by reference to the published size of the trade", "Because an uncounted occupation cannot register a professional association"],
+            correctIndex: 0,
+            explanation: "An occupation defined by contractual invisibility cannot be counted, and the finding is the invisibility.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "What is the constant across all eight books in this course?",
+            options: ["The byline was never simply available", "Every author was enslaved at the time their book was published", "Every book required a certificate signed by people of higher standing", "Every author eventually recovered full credit during their own lifetime"],
+            correctIndex: 0,
+            explanation: "It had to be bought, propped, argued for, risked, or done without.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "On what two judgments is a byline granted, per this lesson?",
+            options: ["Whose name sells and whose name is believed", "How much the writer was paid and how long the work took", "Whether the writer is under contract and whether they hold copyright", "The length of the manuscript and the size of the intended print run"],
+            correctIndex: 0,
+            explanation: "Those two commercial estimates are where every pattern in this course comes from.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "Does the mechanism require anyone in the chain to hold a bad opinion?",
+            options: ["No", "Yes, since a decision about whose name sells is a judgment about people", "Yes, since publishers deliberately conceal collaborators from readers", "The question cannot be answered without seeing the contracts involved"],
+            correctIndex: 0,
+            explanation: "They need only make a commercial estimate of what a name is worth, in a market with its own history.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "Why is the fix never \"be fairer to ghosts\"?",
+            options: ["The ghost was paid what was agreed", "Because ghostwriters earn more than named collaborators on the same book", "Because fairness is not a standard any publishing contract can enforce", "Because ghostwriters choose anonymity and would refuse a named credit"],
+            correctIndex: 0,
+            explanation: "The fix is at the point where the rung is assigned, not after the fee is paid.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "Which of these is one of the three fixes this lesson proposes?",
+            options: ["Name the collaborator on the cover", "Require every ghostwriter to register as a joint author", "Set a minimum fee for unnamed collaboration on a trade book", "Publish an annual register of every ghostwriting agreement signed"],
+            correctIndex: 0,
+            explanation: "It converts a thank-you into a catalogue entry, which is the legibility argument again.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "What does the lesson say a never-expiring confidentiality term produces?",
+            options: ["A permanent record of nothing", "A higher fee, since permanent silence is worth more to a client", "A stronger copyright, since the work stays formally anonymous", "A legal presumption that the named author wrote the book"],
+            correctIndex: 0,
+            explanation: "Letting the writer speak later is the third of the three fixes.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "In the ledger, what is the first claim tested and refused?",
+            options: ["That ghostwriting is a theft", "That Phillis Wheatley was interrogated in person by eighteen men", "That Abby Fisher dictated her book to nine named friends", "That a proportion of Twelve Years a Slave can be assigned to Wilson"],
+            correctIndex: 0,
+            explanation: "The third time the series has made this correction, after the master printer and the employee designer.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "Which claim did the course refuse against the book itself rather than against a secondary source?",
+            options: ["The nine transcribers of Abby Fisher's cookbook", "The in-person interrogation of Phillis Wheatley in Boston", "The proportion of Behind the Scenes written by James Redpath", "The demographic profile of the modern ghostwriting trade"],
+            correctIndex: 0,
+            explanation: "The list sits under a heading about referring readers to friends by permission, so it is a reference list.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "Why did the course refuse to assign a proportion of Twelve Years a Slave to David Wilson?",
+            options: ["Scholars have measured his hand and disagreed", "Because Wilson's editor's preface expressly forbids such an estimate", "Because the manuscript does not survive in any form that permits it", "Because the question was settled by a scholarly edition in the 1960s"],
+            correctIndex: 0,
+            explanation: "The course reports the disagreement rather than picking a side it cannot defend.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "How does the course handle the Redpath question in its ledger?",
+            options: ["It quotes both of DocSouth's statements without improving on either", "It adopts the position that Redpath wrote most of the book", "It concludes the question is settled in Keckley's favour and closes it", "It omits the question, since no institution has taken a public position"],
+            correctIndex: 0,
+            explanation: "Speculation about his involvement, and verifiable facts affirming the text's authenticity, both stand.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "Which of these does the course positively claim, as checkable in a free digitised source?",
+            options: ["Garrison's 1845 preface names employing someone else and rules it out", "That Alex Haley wrote the majority of the Autobiography of Malcolm X", "That James Redpath wrote roughly half of Behind the Scenes in 1868", "That Abby Fisher's husband took down the recipes at her dictation"],
+            correctIndex: 0,
+            explanation: "Every item on the claims list can be checked in a digitised copy of the book it comes from.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "What did Wheatley need that an unquestioned author would not?",
+            options: ["Eighteen signatures", "A pseudonym to protect her from recapture after publication", "A translator to render her poems into the language of publication", "An amanuensis, since she could not write in the language she was published in"],
+            correctIndex: 0,
+            explanation: "Each of the eight authors had to solve a problem an unquestioned author does not have.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "What did Jacobs pay for the pseudonym and the famous editor?",
+            options: ["Her name for a century", "Her freedom, which the publisher made conditional on anonymity", "The copyright in the narrative, which passed to Lydia Maria Child", "Her livelihood, which ended when the book's authorship was disputed"],
+            correctIndex: 0,
+            explanation: "She needed the pseudonym for safety and the editor for standing, and lost the credit to the second.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "What is the whole method this course closes on?",
+            options: ["Go and read a title page", "Search the copyright registration record before trusting any byline", "Assume a collaborator wherever a memoir reads too fluently", "Wait for a scholarly edition before crediting any nineteenth-century book"],
+            correctIndex: 0,
+            explanation: "It has not changed in two hundred and fifty years.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "Which two courses does the ledger name as having made the same correction before?",
+            options: ["CREDIT-02 and CREDIT-03", "CREDIT-00 and CREDIT-01, which established the series vocabulary", "CREDIT-01 and CREDIT-02, on the patent record and the print shop", "CREDIT-00 and CREDIT-03, on archival silence and licensure"],
+            correctIndex: 0,
+            explanation: "Every master printer is unsigned and every employee designer is off the door, exactly as every ghost is unnamed.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "What does choosing the accurate connecting word cost a publisher?",
+            options: ["Nothing", "A share of the royalties otherwise payable to the named author", "A delay while the collaboration agreement is renegotiated", "The right to market the book under a single recognisable name"],
+            correctIndex: 0,
+            explanation: "As told to and with the assistance of describe different work, and the honest one is free.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "Omar ibn Said's problem, in the ledger's summary, was that:",
+            options: ["He reached readers only through translations later said to need correcting", "He could not write, so a member of the household took the manuscript down", "His name was removed from the manuscript by the family that held him", "No publisher would issue an autobiography written by an enslaved man"],
+            correctIndex: 0,
+            explanation: "He wrote his own, unaided, and the barrier between him and readers was language.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "What happened to Keckley in the ledger's one-line summary?",
+            options: ["She took the byline unqualified and lost her livelihood", "Her authorship was corrected by a scholar working from her letters", "She published under a pseudonym and was credited only a century later", "She was named on the cover in a subordinate collaboration credit"],
+            correctIndex: 0,
+            explanation: "And her authorship was doubted anyway, which is why she is the richest subject here.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "The lesson says a percentage for the ghostwriting trade would be:",
+            options: ["An estimate", "A trade secret protected by the publishers who hold it", "Available from the Copyright Office's public registration records", "Reliable, since collaboration agreements are filed with a trade body"],
+            correctIndex: 0,
+            explanation: "Nobody holds the register, because the arrangement is confidential by design.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "Which rung sits directly above the acknowledgements on the ladder?",
+            options: ["With the assistance of", "A joint byline naming both people as authors of the book", "As told to, which discloses the arrangement in full", "Nothing, since the acknowledgements are the lowest named position"],
+            correctIndex: 0,
+            explanation: "Named on the cover, with the scope of the contribution left undefined.",
+            sourceLessonSlug: "as-told-to-in-the-modern-trade",
+          },
+          {
+            prompt: "Which rung sits at the top of the ladder?",
+            options: ["A joint byline", "The phrase as told to, which discloses the whole arrangement", "A credit on the copyright page naming a second claimant", "An introduction written and signed by the collaborator"],
+            correctIndex: 0,
+            explanation: "Two authors, indexed under both names, which is full credit.",
+            sourceLessonSlug: "as-told-to-in-the-modern-trade",
+          },
+          {
+            prompt: "What is the practical value of named rungs?",
+            options: ["A reader can compare one book against another", "A publisher is legally bound to the position it prints", "A collaborator's fee is fixed by the rung they are placed on", "A catalogue automatically indexes every named contributor equally"],
+            correctIndex: 0,
+            explanation: "And notice when the same person is on a lower rung than their contribution suggests.",
+            sourceLessonSlug: "as-told-to-in-the-modern-trade",
+          },
+          {
+            prompt: "Why does this course report the Malcolm X title page rather than the remembered phrase?",
+            options: ["It is the exact error the course is about", "Because the remembered phrase is offensive to the collaborator's family", "Because the publisher has asked for the printed wording to be used", "Because catalogues have recently corrected the record to match it"],
+            correctIndex: 0,
+            explanation: "A credit line remembered as tidier than it was, in the most famous collaboration in American publishing.",
+            sourceLessonSlug: "as-told-to-in-the-modern-trade",
+          },
+          {
+            prompt: "The mechanism this course studies, in the present tense, has:",
+            options: ["A vocabulary it did not have before", "Disappeared, since modern contracts require full disclosure", "Been replaced by joint bylines across the whole trade", "Become a matter of public record through copyright registration"],
+            correctIndex: 0,
+            explanation: "It did not go anywhere; it got named rungs.",
+            sourceLessonSlug: "as-told-to-in-the-modern-trade",
+          },
+          {
+            prompt: "What kind of document is an acknowledgements page, in this lesson's terms?",
+            options: ["A statement the publisher stands behind", "An informal courtesy with no evidentiary value whatever", "A legal instrument assigning a share of the copyright", "A record filed with the Copyright Office alongside the registration"],
+            correctIndex: 0,
+            explanation: "Which is why reading the page is the first move rather than the last resort.",
+            sourceLessonSlug: "what-the-record-does-not-name",
+          },
+          {
+            prompt: "A registration will NOT tell you:",
+            options: ["Who typed the sentences", "Who was named as the author of the registered work", "Who was named as the claimant of the copyright", "When the registration was made"],
+            correctIndex: 0,
+            explanation: "It records a formal assertion, which is a different thing from a record of the writing.",
+            sourceLessonSlug: "what-the-record-does-not-name",
+          },
+          {
+            prompt: "Section 4 refused to measure David Wilson for the same reason Section 6 refuses a list. What is it?",
+            options: ["Inference is not evidence of who wrote a manuscript", "Both questions were settled by scholars before this course was written", "Both subjects are protected by confidentiality terms still in force", "Neither book survives in a form that would permit a measurement"],
+            correctIndex: 0,
+            explanation: "A course that repeated inference would be doing what it trains people to catch.",
+            sourceLessonSlug: "what-the-record-does-not-name",
+          },
+          {
+            prompt: "How does the course treat a contested modern claim?",
+            options: ["Names who holds each position and does not adjudicate from a distance", "Adopts the position held by the more reputable of the two sources", "Omits it, since a contested claim cannot be taught responsibly", "Reports it as settled once a majority of scholars have agreed"],
+            correctIndex: 0,
+            explanation: "The same discipline applied to the Redpath and Wilson questions in earlier sections.",
+            sourceLessonSlug: "what-the-record-does-not-name",
+          },
+          {
+            prompt: "What did Douglass need, in the ledger's summary of the eight books?",
+            options: ["A subtitle, a preface and a letter", "Eighteen signatures from men of standing in his own town", "A pseudonym, because naming himself would have been unsafe", "A translator, because he published outside his own language"],
+            correctIndex: 0,
+            explanation: "Three separate authorship guarantees, for a man already among the best-known speakers in the country.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "Northup's entry in the ledger reads:",
+            options: ["His book was written by his editor", "His authorship was doubted and later restored by a scholar", "His name was removed from the book by agreement with the publisher", "He wrote it himself and was disbelieved by his contemporaries"],
+            correctIndex: 0,
+            explanation: "A dictated narrative, a named editor, and a signed preface disclosing the method.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "Fisher's entry in the ledger reads:",
+            options: ["Her book was written by somebody nobody recorded", "She dictated her book to the nine friends named in its front matter", "She wrote the book herself despite being unable to read", "Her authorship was disputed and settled by a scholarly edition"],
+            correctIndex: 0,
+            explanation: "The record does not name who held the pen, and that absence is the finding.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "What is the ledger, as this course uses the term?",
+            options: ["A published list of claims tested and declined, with reasons", "An index of every source consulted in preparing the course", "A record of the corrections made to the course since publication", "A summary of the arguments other scholars have made on the subject"],
+            correctIndex: 0,
+            explanation: "It is how a course shows its work on the things it decided not to say.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "Where, per this lesson, is a credit outcome actually set?",
+            options: ["At the moment the rung is assigned", "At the moment the fee is negotiated between the parties", "At the moment the copyright registration is filed with the Office", "At the moment the catalogue record is created by a library"],
+            correctIndex: 0,
+            explanation: "Which is why the fixes all concern the cover, the connecting word and the confidentiality term.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "What is the honest concession this final lesson opens with?",
+            options: ["The evidence will not support a profile of the trade", "The course's earlier refusals were more cautious than necessary", "The nineteenth-century cases cannot be compared with modern ones", "The credit ladder is a convention rather than a documented practice"],
+            correctIndex: 0,
+            explanation: "And the concession is itself the finding, because invisibility is what makes counting impossible.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "How many books does the course say carry its closing argument?",
+            options: ["Eight", "Four, all of them by Black women whose authorship was disputed", "Three, the ones examined in the section on the correction", "Eighteen, one for each signature on the Wheatley attestation"],
+            correctIndex: 0,
+            explanation: "Eight books, eight different arrangements, and one constant.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "What does the course say about the market in which name judgments are made?",
+            options: ["It has its own history", "It is efficient, so a name's price reflects its true commercial value", "It is regulated, so a publisher's discretion is narrower than it appears", "It is recent, so the patterns in this course do not apply to it"],
+            correctIndex: 0,
+            explanation: "Which is how a commercial estimate reproduces a pattern nobody in the chain intends.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "Which document type does the course say almost never surfaces?",
+            options: ["The contract", "The copyright registration for a collaborative work", "The publisher's acknowledgements page for a ghostwritten book", "The writer's own later statement about the arrangement"],
+            correctIndex: 0,
+            explanation: "And it is the only one that would settle a ghostwriting question completely.",
+            sourceLessonSlug: "what-the-record-does-not-name",
+          },
+          {
+            prompt: "What makes the modern arrangement nearly invisible to readers?",
+            options: ["It is contractually normal and nothing on the book discloses it", "Publishers are prohibited by law from naming a paid collaborator", "Catalogues deliberately omit collaborators from their author fields", "Readers have no way to obtain the front matter of a modern book"],
+            correctIndex: 0,
+            explanation: "Which is the structural fact worth carrying out of the course.",
+            sourceLessonSlug: "what-the-record-does-not-name",
+          },
+          {
+            prompt: "The three fixes proposed in the final lesson all operate on:",
+            options: ["Disclosure", "The fee paid to the unnamed writer of a trade book", "The copyright term applicable to an anonymous work", "The publisher's obligation to register the work formally"],
+            correctIndex: 0,
+            explanation: "The cover position, the connecting word, and whether the writer may ever speak.",
+            sourceLessonSlug: "who-ends-up-ghostwriting",
+          },
+          {
+            prompt: "In the ladder table, what does a collaborator get on the \"with B\" rung?",
+            options: ["A cover name, usually smaller", "A separate entry in the catalogue under their own name only", "A share of the copyright registered alongside the named author's", "A signed statement in the front matter describing their contribution"],
+            correctIndex: 0,
+            explanation: "Named on the cover, below the subject, which is still a catalogue-visible position.",
+            sourceLessonSlug: "as-told-to-in-the-modern-trade",
+          },
+          {
+            prompt: "What does this course do with the 1965 against 1966 dating question?",
+            options: ["Files it as an open question", "Adopts 1965, which is the year most sources give", "Adopts 1966, since that is the catalogued copy it read", "Omits the book, since the discrepancy cannot be resolved"],
+            correctIndex: 0,
+            explanation: "The same discipline the earlier sections applied to disagreements between institutions.",
+            sourceLessonSlug: "as-told-to-in-the-modern-trade",
+          },
+          {
+            prompt: "Why is reading the front matter described as the first move rather than the last resort?",
+            options: ["It is the disclosure the publisher already made", "Because front matter is the only evidence a court will accept", "Because the copyright registration is not available to the public", "Because a collaborator is legally required to appear in it"],
+            correctIndex: 0,
+            explanation: "An acknowledgements or copyright page is a statement the publisher stands behind.",
+            sourceLessonSlug: "what-the-record-does-not-name",
+          },
+        ],
+      },
+    },
   ],
 };
