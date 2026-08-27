@@ -656,6 +656,790 @@ Farm Service Agency. (1996, April 15). Farm Service Agency county committees; Fa
             explanation: "The credit committees were not elected at all before 1994, so an argument built on elections has to establish which body and which period it is talking about.",
             sourceLessonSlug: "two-committee-systems",
           },
+          {
+            prompt: "Under 7 U.S.C. § 1941(a)(1), what must an operating loan applicant be or become?",
+            options: ["The operator of not larger than a family farm", "The owner of at least eighty acres of tillable land held free of any prior mortgage", "A member in good standing of a producer cooperative chartered under state law", "A participant in the federal crop insurance programme for the three preceding crop years"],
+            correctIndex: 0,
+            explanation: "The operating-loan section mirrors the ownership section on this point, requiring the applicant to be or become the operator of not larger than a family farm.",
+            sourceLessonSlug: "unable-to-obtain-credit-elsewhere",
+          },
+          {
+            prompt: "What does the experience condition for direct loans require the Secretary to determine?",
+            options: ["That there is a reasonable prospect of success", "That the applicant has completed a formal course of instruction at a land-grant institution", "That the applicant has never previously defaulted on any obligation to the federal government", "That the applicant's projected yields exceed the county average for the preceding five years"],
+            correctIndex: 0,
+            explanation: "The statute asks for training or farming experience sufficient to assure reasonable prospects of success in the proposed farming operations.",
+            sourceLessonSlug: "unable-to-obtain-credit-elsewhere",
+          },
+          {
+            prompt: "How does the statute treat a gap in an applicant's farming history when weighing experience?",
+            options: ["It counts all experience without regard to the lapse", "It disregards any experience earned more than ten years before the date of application", "It requires the applicant to restart the three-year clock after any interruption of a full crop year", "It permits the county committee to decide case by case whether a lapse is disqualifying"],
+            correctIndex: 0,
+            explanation: "The statute directs that all farming experience be taken into consideration, without regard to any lapse between farming experiences.",
+            sourceLessonSlug: "unable-to-obtain-credit-elsewhere",
+          },
+          {
+            prompt: "Which of these best describes the population the eligibility rules together select?",
+            options: ["Small operators with no alternatives", "Established commercial growers seeking a cheaper rate than their existing bank offers", "Absentee landowners renting acreage to tenants under cash-rent arrangements", "Corporate farming entities too large for conventional agricultural credit markets"],
+            correctIndex: 0,
+            explanation: "The family-farm cap points the programme downward and the credit-elsewhere test admits only applicants other lenders have refused.",
+            sourceLessonSlug: "unable-to-obtain-credit-elsewhere",
+          },
+          {
+            prompt: "Which is a purpose 7 U.S.C. § 1942(a) names that is not an input cost?",
+            options: ["Paying loan closing costs", "Purchasing an additional quarter section of adjacent pasture to expand the herd", "Making a charitable contribution to a rural hospital serving the borrower's county", "Refinancing a residential mortgage on property unconnected with the farming operation"],
+            correctIndex: 0,
+            explanation: "Closing costs appear on the enumerated list alongside inputs, land and water development, borrower training and family subsistence.",
+            sourceLessonSlug: "timing-is-the-whole-game",
+          },
+          {
+            prompt: "What kind of event, besides a natural disaster, can make emergency loans available under § 1961?",
+            options: ["A quarantine imposed by the Secretary", "A collapse in the market price of the borrower's principal commodity below cost of production", "The failure of the borrower's local bank or agricultural credit association during the crop year", "A determination by the county committee that the borrower's operating loan was wrongly denied"],
+            correctIndex: 0,
+            explanation: "The section names a quarantine under the Plant Protection Act or the animal quarantine laws alongside natural disasters and presidential declarations.",
+            sourceLessonSlug: "timing-is-the-whole-game",
+          },
+          {
+            prompt: "May a farmer in a county next to a designated one apply for an emergency loan?",
+            options: ["Yes, if substantially affected", "No, because the statute limits eligibility strictly to the county named in the designation", "Only with the written consent of the state committee in both counties concerned", "Only if the farmer holds an existing federal loan in the designated county as well"],
+            correctIndex: 0,
+            explanation: "The statute allows applications from contiguous counties where operations were substantially affected by the same event.",
+            sourceLessonSlug: "timing-is-the-whole-game",
+          },
+          {
+            prompt: "Does 7 U.S.C. § 1961 set a numerical loss threshold for substantial effect?",
+            options: ["No", "Yes, a loss of at least thirty per cent of normal production for the affected commodity", "Yes, a loss of at least half the operation's gross receipts in the preceding crop year", "Yes, a loss equal to the outstanding balance of the applicant's existing federal loans"],
+            correctIndex: 0,
+            explanation: "The statute uses substantially affected without defining a number, leaving the judgment to the designation process.",
+            sourceLessonSlug: "timing-is-the-whole-game",
+          },
+          {
+            prompt: "Which duty of the modern county committee touches how the county is districted?",
+            options: ["Recommending local administrative area boundaries", "Redrawing the county's precinct lines for state and federal elections every ten years", "Approving the annexation of farmland into a neighbouring municipality's tax base", "Assigning farm numbers to newly purchased tracts within the county's jurisdiction"],
+            correctIndex: 0,
+            explanation: "CRS lists recommending and reviewing local administrative area boundaries among the committee's published duties.",
+            sourceLessonSlug: "two-committee-systems",
+          },
+          {
+            prompt: "Which duty of the modern county committee is aimed at socially disadvantaged farmers specifically?",
+            options: ["Directing outreach activities", "Reserving a fixed share of programme payments for members of socially disadvantaged groups", "Reviewing every denial issued to a socially disadvantaged applicant in the preceding year", "Appointing an additional adviser drawn from a community-based organisation in the county"],
+            correctIndex: 0,
+            explanation: "The duty list includes directing outreach to inform socially disadvantaged farmers of programmes and of the county committee election process.",
+            sourceLessonSlug: "two-committee-systems",
+          },
+          {
+            prompt: "Under 16 U.S.C. § 590h(b)(5), what must the Secretary do when committees are combined or consolidated?",
+            options: ["Maintain socially disadvantaged representation", "Hold a fresh election in every affected county within ninety days of the consolidation", "Reduce the combined committee to the statutory minimum of three members", "Transfer the combined committee's eligibility functions to the state committee"],
+            correctIndex: 0,
+            explanation: "The statute directs the Secretary to develop procedures to maintain representation of socially disadvantaged farmers and ranchers on combined or consolidated committees.",
+            sourceLessonSlug: "two-committee-systems",
+          },
+          {
+            prompt: "Which is the correct sequence for the credit committees?",
+            options: ["Created, abolished in 1994, work moved to elected committees", "Created in 1935, made elective in 1994, and abolished by the 2008 farm bill", "Created in 1994 by the reorganisation act and still seated administratively today", "Created in 1935, merged with the state committees in 1995, and never restored"],
+            correctIndex: 0,
+            explanation: "FmHA committees predated the reorganisation, were abolished by section 227 of P.L. 103-354, and their eligibility work passed to the elected FSA committees.",
+            sourceLessonSlug: "two-committee-systems",
+          },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 5 — Pigford
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "what-pigford-claimed",
+      title: "17 · What was claimed, and the half everybody forgets",
+      section: "Section 5 · Pigford",
+      body: `In August 1997 two suits were filed against the United States Department of Agriculture by Black farmers: **Pigford v. Glickman** and **Brewington v. Glickman** (Cowan & Feder, 2013, p. 2). They became the largest civil rights settlement in the department's history, and almost everything people repeat about them is half the story.
+
+**Here is the claim, in the Congressional Research Service's own summary:**
+
+> "The suit claimed that the agency had discriminated against black farmers on the basis of race and failed to investigate or properly respond to complaints from 1983 to 1997." (Cowan & Feder, 2013, p. ii)
+
+**Read the second half.** The allegation was not only that loans were denied. It was that **the complaint machinery itself did not work**. That is a claim about the remedy rather than about the injury, and it is the reason the case could not be resolved the ordinary way. If an agency's internal civil rights process functions, a person wronged by that agency exhausts it and, failing that, goes to court on the record it produced. If the process does not function, there is no record, no exhaustion, and no ordinary route. Every unusual feature of what follows, including the low proof standard in Lesson 18, follows from that second half of the claim.
+
+**Two class definitions circulate, and they are not the same.** This trips up careful people, so here are both, from the same CRS report.
+
+**The certification order, 9 October 1998:** the court certified as a class "black farmers who filed discrimination complaints against the USDA between January 1983 and February 21, 1997" (Cowan & Feder, 2013, p. 3).
+
+**The consent decree's eligibility test**, which the parties negotiated afterwards and which is the one that actually governed who could claim:
+
+> "an eligible recipient is an African American who (1) farmed or attempted to farm between January 1, 1981, and December 31, 1996, (2) applied to USDA for farm credit or program benefits and believes that he or she was discriminated against by the USDA on the basis of race, and (3) made a complaint against the USDA on or before July 1, 1997." (Cowan & Feder, 2013, p. 3)
+
+**So the complaint deadline moved from 21 February to 1 July 1997**, and the decree added a farming window the certification order did not have. Both texts are real and both are quoted accurately in the wild, which is exactly how two people arguing about "the class" can both be citing the record and still disagree.
+
+**And notice the words "or attempted to farm".** They are load-bearing, and Section 6 comes back to them. A person who applied for a farm ownership loan, was refused, and therefore never farmed is inside this class. That person was never counted as a farmer by anybody, because they never got to be one. Any argument that compares the number of claimants against a census count of farms has to deal with that phrase before it means anything.
+
+**The decree was approved on 14 April 1999 by Judge Paul L. Friedman** of the United States District Court for the District of Columbia, and the reported decision is *Pigford v. Glickman*, 185 F.R.D. 82 (D.D.C. 1999) (Cowan & Feder, 2013, p. ii, n. 1). CRS prints the docket as No. 97-1978, with Brewington as No. 98-1693.
+
+**Why this belongs in this course rather than in a legal-history course.** Everything in Sections 1 to 4 describes a machine: a lender of last resort, a local committee, a title requirement, a calendar. Pigford is what happens when somebody finally puts that machine on trial, and the trial's own design tells you what the participants believed they could prove. Keep the machine in view while you read the settlement.
+
+:::reveal What two things did the Pigford suit allege? ||| Racial discrimination in USDA programmes, and a failure to investigate or properly respond to complaints, from 1983 to 1997.
+
+:::reveal Why does the second allegation change what remedy was possible? ||| Because a complaint process that did not function leaves no record to exhaust and no ordinary route to court, which is why the settlement had to build its own claims machinery.
+
+:::reveal What does the phrase "or attempted to farm" do to the class? ||| It includes people who were refused credit and therefore never farmed, so the class is larger than any count of actual farms.
+
+## Vocabulary
+- **Consent decree**: a settlement entered as a court order, so its terms are enforceable by the court rather than resting on the parties' good faith.
+- **Class certification**: the court's ruling that a group sharing common questions may sue as one, which fixes who is inside the case before any settlement is negotiated.
+- **Exhaustion**: the ordinary requirement that a person use an agency's internal process before going to court, which presupposes that the internal process works.
+- **Attempted to farm**: the consent decree's own phrase, which brings people refused credit before they could start into the class of eligible claimants.
+
+## Sources
+Cowan, T., & Feder, J. (2013, May 29). *The Pigford cases: USDA settlement of discrimination suits by Black farmers* (CRS Report No. RS20430). Congressional Research Service. https://www.everycrsreport.com/reports/RS20430.html`,
+    },
+    {
+      slug: "track-a-and-track-b",
+      title: "18 · Two tracks, and the trade written into them",
+      section: "Section 5 · Pigford",
+      body: `The consent decree gave a claimant a choice between two routes, and the choice is the most instructive thing in the whole settlement. **A proof standard was traded against a payment**, in both directions, on purpose.
+
+**Track A: the lower bar, the fixed price.**
+
+> "The most widely used option, Track A, provides a monetary settlement of $50,000 plus relief in the form of loan forgiveness and offsets of tax liability. Track A claimants had to present substantial evidence (i.e., a reasonable basis for finding that discrimination happened)" (Cowan & Feder, 2013, p. 3)
+
+**"Substantial evidence" is a real legal standard and a low one.** CRS glosses it as a reasonable basis for finding that discrimination happened. It is not proof. It is enough material that a reasonable person could conclude it. In exchange for that low bar, the payment was fixed: fifty thousand dollars, the same for a claimant who lost forty acres and a claimant who lost four hundred.
+
+**But Track A was not a form you signed.** The decree required four elements, and the fourth is the one that did most of the work:
+
+> "the loan was denied, provided late, approved for a lesser amount than requested, encumbered by restrictive conditions, or USDA failed to provide appropriate loan service, and such treatment was less favorable than that accorded specifically identified, similarly situated white farmers" (Cowan & Feder, 2013, p. 4)
+
+**"Specifically identified, similarly situated white farmers."** A claimant had to name a comparator: a particular neighbour, in a particular year, who was situated like them and treated better. That is a demanding thing to produce twenty years after the fact, and it is why the denial rate you meet in Lesson 19 is not small.
+
+**Note also the second verb in the list: "provided late".** Section 1 said a loan that arrives after planting bought nothing. The decree agreed with Section 1. Lateness is enumerated as an injury alongside outright denial.
+
+**Track B: the higher bar, the tailored payment.**
+
+> "Track B claimants had to prove their claims and actual damages by a preponderance of the evidence (i.e., it is more likely than not that their claims are valid). The documentation to support such a claim and the amount of relief were reviewed by a third party arbitrator, who makes a binding decision." (Cowan & Feder, 2013, p. 4)
+
+**Preponderance is the ordinary civil standard**: more likely than not. A Track B claimant had to prove both the discrimination and the actual damages, put the documentation in front of an arbitrator, and accept a binding result. In exchange, the payment was not capped at fifty thousand. It was whatever the arbitrator found the damages to be.
+
+**Now read the trade in both directions, because this is where most arguments about Pigford actually live.**
+
+- **Somebody who thinks the settlement paid too easily** is objecting to Track A: a low standard of proof, they say, invites claims that would not survive scrutiny.
+- **Somebody who thinks the settlement short-changed the class** is objecting to the same trade from the other end: a farmer who lost a four-hundred-acre operation and could prove it got the same fifty thousand dollars as everyone else unless they could carry a full civil case, alone, decades later, with records the agency itself had not kept.
+
+**Both objections are about one design decision.** You cannot have a low standard of proof and an uncapped payment in the same track without accepting a great deal of risk on the public's side; you cannot have a high standard of proof and expect a scattered, elderly, under-documented class to meet it. The decree chose to offer both and let each claimant pick. Whether that was the right call is a judgment. That it was a deliberate trade is a fact, and it is visible in four sentences of a public document.
+
+**Who actually ran it.** The decree named institutions, not the department: **Poorman-Douglas Corporation** as facilitator, **JAMS-Endispute, Inc.** as adjudicator, **Michael Lewis of ADR Associates** as arbitrator, and **Randi Roth** as court-appointed monitor (Cowan & Feder, 2013, p. 4). A monitor reporting to the court, rather than an office reporting to the Secretary, is the structural answer to the second half of the claim in Lesson 17.
+
+:::reveal What standard of proof did Track A require, and what did it pay? ||| Substantial evidence, meaning a reasonable basis for finding that discrimination happened, in exchange for a fixed payment of $50,000 plus loan forgiveness and tax offsets.
+
+:::reveal What comparator did a Track A claimant have to identify? ||| A specifically identified, similarly situated white farmer who received more favourable treatment.
+
+:::reveal Why do the two commonest criticisms of Pigford both attack the same design choice? ||| Because the trade of a low proof standard against a capped payment can be attacked either as too easy to claim or as too small for a large loss.
+
+## Vocabulary
+- **Substantial evidence**: a reasonable basis for finding that something happened, which is a lower standard than proof and the one Track A used.
+- **Preponderance of the evidence**: the ordinary civil standard, meaning more likely than not, which Track B required for both liability and damages.
+- **Comparator**: the specifically identified, similarly situated white farmer a Track A claimant had to name to show less favourable treatment.
+- **Arbitrator**: the third party who reviewed Track B documentation and issued a binding decision on damages.
+- **Court-appointed monitor**: an officer reporting to the court rather than to the agency, whose existence answers the allegation that the agency's own complaint process had failed.
+
+## Sources
+Cowan, T., & Feder, J. (2013, May 29). *The Pigford cases: USDA settlement of discrimination suits by Black farmers* (CRS Report No. RS20430). Congressional Research Service. https://www.everycrsreport.com/reports/RS20430.html`,
+    },
+    {
+      slug: "what-was-decided-and-paid",
+      title: "19 · What was decided, what was paid, and the late filers",
+      section: "Section 5 · Pigford",
+      body: `Now the numbers, with their date attached, because a settlement's figures change as it runs and a figure without an as-of date is a rumour.
+
+**The cumulative figures below are as of 31 December 2011, and they come from the final Court Monitor Report published on 1 April 2012** (Cowan & Feder, 2013, p. 6).
+
+| Measure | Figure |
+| --- | --- |
+| Claimants found eligible to participate | approximately 22,721 |
+| Chose Track A | approximately 22,552 |
+| Prevailed on Track A | approximately 15,645, which CRS gives as 69% |
+| Denied on Track A | 6,906, which CRS gives as 31% |
+| Chose Track B | approximately 169 |
+| Prevailed or settled on Track B | approximately 104, which CRS gives as 62% |
+| Claims subject to a petition for reexamination | approximately 5,848 |
+| Reexaminations the Monitor directed | approximately 2,941, which CRS gives as 50% |
+| Total relief, cash plus estimated tax payments plus debt relief | approximately $1.06 billion, printed as $1,058,577,198 |
+
+**Three things to take from that table before anything else.**
+
+**First, nearly a third of Track A claims were denied.** 6,906 people who filed under the low standard of proof did not get paid. Whatever else the process was, it was not automatic, and the comparator requirement from Lesson 18 is the likeliest reason why.
+
+**Second, only 169 people out of more than twenty-two thousand chose Track B.** Under one per cent. That tells you how realistic the higher-proof route was for this class, decades after the events, with the agency's own records gone.
+
+**Third, the report disagrees with itself by one claim, and this course says so rather than smoothing it.** CRS's narrative says approximately 22,552 claimants chose Track A as of 31 December 2011. CRS's own Table 1, captioned as final as of 16 February 2012, prints **22,551** Track A decisions. Two figures, one report, different as-of dates, one claim apart. It changes nothing and it is worth noticing, because a source that is off by one in a place you can check is a source you now know how to read.
+
+**Do the arithmetic yourself, because it reconciles.** CRS's Table 1 breaks Track A relief into five lines: $770,050,000 in $50,000 cash awards, $1,656,000 in $3,000 non-credit awards, $43,715,385 in debt relief, $192,512,500 in IRS payments for Track A claimants, and $7,793,610 in IRS payments on the debt relief. Add them: **$1,015,727,495**, which is exactly the total CRS prints. The table is internally consistent and you can prove it with a calculator in two minutes.
+
+**Then do the subtraction, which CRS does not do for you.** The overall figure is $1,058,577,198 and Track A accounts for $1,015,727,495, leaving **$42,849,703**. CRS prints no Track B total, so this residual is a computation rather than a reported figure and it may contain items the Track A table does not break out. Taken at face value and divided among the 104 prevailing Track B claimants, it averages about **$412,000 each**, which is more than eight times the Track A payment. **State it as what it is:** an inference from two published totals, not a number CRS reports, and it shows what the higher proof standard bought the people who could carry it.
+
+**Pigford II, because thousands of people were late.** Far more people sought to claim than the decree's deadline allowed, so Congress reopened the door. **Section 14012 of the 2008 farm bill (P.L. 110-246)** let late filers petition for a determination on the merits, and the claims were consolidated as ***In re Black Farmers Discrimination Litigation***, 820 F. Supp. 2d 78 (D.D.C. 2011).
+
+- Settlement announced **18 February 2010** by Attorney General Holder and Secretary Vilsack, at **$1.25 billion**.
+- The farm bill had provided **$100 million**. The remaining **$1.15 billion** came from the **Claims Resolution Act of 2010 (P.L. 111-291)**, signed **8 December 2010**.
+- Final court approval **27 October 2011**; the filing window ran **14 November 2011 to 11 May 2012**.
+- Payment options mirrored the original with a higher ceiling on the harder route: fast-track payments of up to $50,000 plus debt relief, or a longer process for damages of up to **$250,000** (Cowan & Feder, 2013, p. 8). **That $250,000 belongs to Pigford II, not to Pigford I**, where the tailored Track B payment carried no such published cap.
+
+**And the volume:** "approximately 89,000 claim forms were mailed out. Nearly 40,000 of them ultimately were filed. Of those, approximately 34,000 were deemed complete, timely, and eligible" (Cowan & Feder, 2013, p. 8). CRS's preliminary estimate was that 17,000 to 19,000 Track A claims would be positively adjudicated, "a rate of approximately 50%-56%", against 69% in the first case (Cowan & Feder, 2013, p. 9).
+
+**Hold that gap between forms mailed and claims paid.** It is the whole subject of Lesson 21.
+
+:::reveal As of 31 December 2011, how many Pigford I claimants were found eligible, and how many prevailed on Track A? ||| About 22,721 were eligible, and about 15,645 prevailed on Track A, which CRS gives as 69%.
+
+:::reveal Why is the small number of Track B claimants informative? ||| Because fewer than one per cent chose the higher proof standard, which shows how unrealistic a full damages case was for this class decades after the events.
+
+:::reveal Where did the $1.15 billion for the Pigford II settlement come from? ||| The Claims Resolution Act of 2010, P.L. 111-291, signed 8 December 2010, on top of $100 million already provided by the 2008 farm bill.
+
+## Vocabulary
+- **As-of date**: the date a cumulative figure was measured, without which a settlement statistic cannot be compared with any other.
+- **Court Monitor Report**: the periodic public accounting filed by the settlement's court-appointed monitor, and the source of the cumulative Pigford I figures.
+- **Petition for reexamination**: a claimant's request that the monitor direct a second look at a decision, granted in about half the cases where it was sought.
+- **Late filer**: a person who missed the consent decree's deadline and therefore never received a decision on the merits, whom the 2008 farm bill allowed to petition for one.
+- **Residual**: a figure obtained by subtracting one published total from another, which is an inference rather than a reported number and must be labelled as such.
+
+## Sources
+Cowan, T., & Feder, J. (2013, May 29). *The Pigford cases: USDA settlement of discrimination suits by Black farmers* (CRS Report No. RS20430). Congressional Research Service. https://www.everycrsreport.com/reports/RS20430.html`,
+    },
+    {
+      slug: "quiz-pigford",
+      title: "20 · Knowledge check: Pigford",
+      section: "Section 5 · Pigford",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "In what month and year were the first two Pigford suits filed?",
+            options: ["August 1997", "April 1999, the same month in which the consent decree was approved by the court", "October 1998, immediately after the district court certified the class of Black farmers", "February 1997, on the deadline that the certification order later used as its cutoff"],
+            correctIndex: 0,
+            explanation: "Litigation began in August 1997 with two suits, Pigford v. Glickman and Brewington v. Glickman.",
+            sourceLessonSlug: "what-pigford-claimed",
+          },
+          {
+            prompt: "What was the name of the companion case filed alongside Pigford v. Glickman?",
+            options: ["Brewington v. Glickman", "In re Black Farmers Discrimination Litigation, later consolidated in the same district court", "Keepseagle v. Vilsack, brought on behalf of Native American farmers and ranchers", "Love v. Vilsack, brought on behalf of women farmers denied credit in the same period"],
+            correctIndex: 0,
+            explanation: "CRS names the two August 1997 suits as Pigford v. Glickman and Brewington v. Glickman.",
+            sourceLessonSlug: "what-pigford-claimed",
+          },
+          {
+            prompt: "Besides discrimination in programmes, what did the suit allege USDA had done?",
+            options: ["Failed to investigate or respond to complaints", "Destroyed the loan files of every applicant denied credit in the affected period", "Refused to publish the racial composition of its county committees as the statute required", "Diverted appropriated loan funds from the counties with the largest Black farm populations"],
+            correctIndex: 0,
+            explanation: "CRS states the suit claimed discrimination on the basis of race and a failure to investigate or properly respond to complaints from 1983 to 1997.",
+            sourceLessonSlug: "what-pigford-claimed",
+          },
+          {
+            prompt: "Why does the complaint-process allegation change what remedy was possible?",
+            options: ["There was no record to exhaust", "Because a failed complaint process automatically doubles the damages a court may award", "Because it moved the case from federal court to the Department's own administrative appeals board", "Because it required the court to appoint a special master before certifying any class"],
+            correctIndex: 0,
+            explanation: "Exhaustion presupposes a working internal process, so a broken one leaves no record and no ordinary route, which is why the settlement built its own claims machinery.",
+            sourceLessonSlug: "what-pigford-claimed",
+          },
+          {
+            prompt: "What period did the discrimination allegation cover?",
+            options: ["1983 to 1997", "1981 to 1996, matching the farming window written into the consent decree", "1978 to 1999, running from the census the Commission on Civil Rights used to the decree", "1964 to 1997, running from the Civil Rights Act to the filing of the first complaint"],
+            correctIndex: 0,
+            explanation: "CRS states the failure to investigate or properly respond to complaints ran from 1983 to 1997.",
+            sourceLessonSlug: "what-pigford-claimed",
+          },
+          {
+            prompt: "On what date did the court certify the class?",
+            options: ["9 October 1998", "14 April 1999, when the presiding judge approved the negotiated consent decree", "21 February 1997, the cutoff the certification order itself used for filed complaints", "18 February 2010, when the second settlement was announced by two cabinet officers"],
+            correctIndex: 0,
+            explanation: "CRS records the certification ruling on 9 October 1998, more than a year after filing.",
+            sourceLessonSlug: "what-pigford-claimed",
+          },
+          {
+            prompt: "The certification order's class was defined by complaints filed between which dates?",
+            options: ["January 1983 and 21 February 1997", "1 January 1981 and 31 December 1996, the window the consent decree used for farming", "1 January 1983 and 1 July 1997, the deadline that governed the settlement itself", "9 October 1988 and 9 October 1998, the ten years preceding the certification ruling"],
+            correctIndex: 0,
+            explanation: "The order certified Black farmers who filed discrimination complaints against USDA between January 1983 and 21 February 1997.",
+            sourceLessonSlug: "what-pigford-claimed",
+          },
+          {
+            prompt: "Under the consent decree, by what date must an eligible claimant have complained to USDA?",
+            options: ["1 July 1997", "21 February 1997, the same cutoff the earlier certification order had used", "31 December 1996, the end of the farming window the decree also specified", "9 October 1998, the date on which the district court certified the class"],
+            correctIndex: 0,
+            explanation: "The decree's third element requires a complaint made against USDA on or before 1 July 1997, which is a later date than the certification order's.",
+            sourceLessonSlug: "what-pigford-claimed",
+          },
+          {
+            prompt: "What farming window does the consent decree specify?",
+            options: ["1 January 1981 to 31 December 1996", "January 1983 to 21 February 1997, matching the class certification order exactly", "1 January 1978 to 31 December 1997, spanning the two census years CRS cites", "The whole period during which the claimant held an outstanding federal farm loan"],
+            correctIndex: 0,
+            explanation: "An eligible recipient must have farmed or attempted to farm between 1 January 1981 and 31 December 1996.",
+            sourceLessonSlug: "what-pigford-claimed",
+          },
+          {
+            prompt: "Which phrase in the consent decree brings people who never farmed into the class?",
+            options: ["Or attempted to farm", "Believes that he or she was discriminated against on the basis of race", "Applied to USDA for farm credit or program benefits during the covered period", "Made a complaint against the USDA on or before the stated deadline"],
+            correctIndex: 0,
+            explanation: "Someone refused credit before they could start is inside the class, which matters for any comparison against a count of farms.",
+            sourceLessonSlug: "what-pigford-claimed",
+          },
+          {
+            prompt: "Who approved the Pigford consent decree, and when?",
+            options: ["Judge Paul L. Friedman, 14 April 1999", "The Secretary of Agriculture, acting under delegated settlement authority in April 1999", "A three-judge panel of the D.C. Circuit sitting on an expedited appeal in October 1998", "The Attorney General and the Secretary of Agriculture jointly, in February 2010"],
+            correctIndex: 0,
+            explanation: "Judge Paul L. Friedman of the U.S. District Court for the District of Columbia approved the decree on 14 April 1999.",
+            sourceLessonSlug: "what-pigford-claimed",
+          },
+          {
+            prompt: "Why do two different class definitions circulate for the same case?",
+            options: ["The parties redefined the class at settlement", "Because two separate courts certified overlapping classes in different judicial districts", "Because the certification order was vacated on appeal and replaced with a narrower one", "Because CRS printed one definition and the court's own opinion printed a contradictory one"],
+            correctIndex: 0,
+            explanation: "The October 1998 certification order and the negotiated consent decree state the class differently, so both texts are accurate and they do not match.",
+            sourceLessonSlug: "what-pigford-claimed",
+          },
+          {
+            prompt: "Which reported decision does CRS cite for the Pigford consent decree?",
+            options: ["185 F.R.D. 82 (D.D.C. 1999)", "820 F. Supp. 2d 78 (D.D.C. 2011), the decision approving the second settlement", "163 U.S. 537 (1896), the case that adopted the separate but equal doctrine", "122 Stat. 1651 (2008), the statutory provision reopening the claims for late filers"],
+            correctIndex: 0,
+            explanation: "Pigford v. Glickman, 185 F.R.D. 82 (D.D.C. 1999) is the reported decision CRS gives.",
+            sourceLessonSlug: "what-pigford-claimed",
+          },
+          {
+            prompt: "What did Track A pay a prevailing claimant?",
+            options: ["$50,000 plus loan forgiveness and tax offsets", "The full appraised value of the land the claimant lost, as determined by an independent appraiser", "Whatever an arbitrator found the claimant's actual damages to be after reviewing documents", "A share of the total settlement fund proportional to the acreage the claimant had farmed"],
+            correctIndex: 0,
+            explanation: "Track A was a fixed monetary settlement of $50,000 plus loan forgiveness and offsets of tax liability.",
+            sourceLessonSlug: "track-a-and-track-b",
+          },
+          {
+            prompt: "What standard of proof did Track A require?",
+            options: ["Substantial evidence", "Preponderance of the evidence, meaning that the claim is more likely than not to be valid", "Clear and convincing evidence, the intermediate standard used in civil fraud cases", "Proof beyond a reasonable doubt, the standard applied in criminal prosecutions"],
+            correctIndex: 0,
+            explanation: "CRS glosses substantial evidence as a reasonable basis for finding that discrimination happened, which is lower than proof.",
+            sourceLessonSlug: "track-a-and-track-b",
+          },
+          {
+            prompt: "How does CRS gloss the substantial evidence standard?",
+            options: ["A reasonable basis for finding it happened", "Documentary proof sufficient to withstand cross examination by government counsel", "Testimony from at least two witnesses with personal knowledge of the events alleged", "A written finding by the agency's own civil rights office that a violation occurred"],
+            correctIndex: 0,
+            explanation: "The parenthetical in the report reads: a reasonable basis for finding that discrimination happened.",
+            sourceLessonSlug: "track-a-and-track-b",
+          },
+          {
+            prompt: "What comparator did a Track A claimant have to produce?",
+            options: ["A specifically identified, similarly situated white farmer", "A written statement from the county committee acknowledging that the decision was wrong", "Loan records from at least three neighbouring counties showing a different approval pattern", "An expert report estimating the claimant's losses over the whole period of the class"],
+            correctIndex: 0,
+            explanation: "The decree required that the treatment be less favourable than that accorded specifically identified, similarly situated white farmers.",
+            sourceLessonSlug: "track-a-and-track-b",
+          },
+          {
+            prompt: "Which of these is enumerated in the decree as an injury alongside outright denial?",
+            options: ["A loan provided late", "A loan repaid in full ahead of schedule at the borrower's own election", "A loan made by a commercial lender rather than directly by the department", "A loan whose interest rate exceeded the rate charged on guaranteed loans that year"],
+            correctIndex: 0,
+            explanation: "The decree lists denied, provided late, approved for a lesser amount, encumbered by restrictive conditions, or a failure to provide appropriate loan service.",
+            sourceLessonSlug: "track-a-and-track-b",
+          },
+          {
+            prompt: "Why does the inclusion of lateness as an injury matter to this course?",
+            options: ["It matches the crop calendar", "It shows that the decree treated interest charges as the principal measure of harm", "It proves that the county committee rather than the county office caused the delays", "It made every claimant automatically eligible regardless of the outcome of their application"],
+            correctIndex: 0,
+            explanation: "Section 1 established that money arriving after planting buys nothing, and the decree enumerates provided late as an injury in its own right.",
+            sourceLessonSlug: "track-a-and-track-b",
+          },
+          {
+            prompt: "What standard of proof did Track B require?",
+            options: ["Preponderance of the evidence", "Substantial evidence, meaning a reasonable basis for finding that discrimination happened", "Clear and convincing evidence, reviewed by a panel rather than by a single arbitrator", "An admission of liability by the department before any damages could be assessed"],
+            correctIndex: 0,
+            explanation: "Track B required proof of both the claim and actual damages by a preponderance, meaning more likely than not.",
+            sourceLessonSlug: "track-a-and-track-b",
+          },
+          {
+            prompt: "Who decided a Track B claim, and was the decision reviewable?",
+            options: ["An arbitrator, and the decision was binding", "The court itself, subject to appeal to the District of Columbia Circuit as of right", "The court-appointed monitor, subject to reconsideration on the claimant's petition", "The Secretary of Agriculture, subject to review by the department's civil rights office"],
+            correctIndex: 0,
+            explanation: "A third party arbitrator reviewed the documentation and the amount of relief and made a binding decision.",
+            sourceLessonSlug: "track-a-and-track-b",
+          },
+          {
+            prompt: "What did a Track B claimant have to prove, beyond the discrimination itself?",
+            options: ["Actual damages", "That the department had acted with intent rather than through indifference or error", "That no other lender in the community would have extended comparable credit", "That the claimant had exhausted the department's internal appeals before filing suit"],
+            correctIndex: 0,
+            explanation: "Track B required proof of the claims and of actual damages by a preponderance of the evidence.",
+            sourceLessonSlug: "track-a-and-track-b",
+          },
+          {
+            prompt: "How is the two-track design best described?",
+            options: ["A proof standard traded against a payment", "A geographic split, with Track A for the South and Track B for the rest of the country", "A chronological split, with Track A for earlier complaints and Track B for later ones", "A split by loan type, with Track A for operating loans and Track B for ownership loans"],
+            correctIndex: 0,
+            explanation: "A low standard of proof came with a capped payment, and a high standard came with a tailored one, which is the trade every later argument turns on.",
+            sourceLessonSlug: "track-a-and-track-b",
+          },
+          {
+            prompt: "Someone who argues the settlement paid too easily is objecting to what?",
+            options: ["The low proof standard on Track A", "The binding arbitration that closed off any appeal from a Track B determination", "The requirement that a claimant name a similarly situated white farmer as a comparator", "The decision to fund the second settlement through a separate appropriations act"],
+            correctIndex: 0,
+            explanation: "That criticism attacks the substantial evidence standard as an invitation to claims that would not survive closer scrutiny.",
+            sourceLessonSlug: "track-a-and-track-b",
+          },
+          {
+            prompt: "Someone who argues the settlement short-changed the class is objecting to what?",
+            options: ["The capped Track A payment", "The absence of any comparator requirement in the Track A elements as written", "The court's decision to certify a class at all rather than try the claims individually", "The department's refusal to concede liability in the text of the consent decree"],
+            correctIndex: 0,
+            explanation: "A large loss and a small loss were paid the same $50,000 unless the claimant could carry a full damages case decades later.",
+            sourceLessonSlug: "track-a-and-track-b",
+          },
+          {
+            prompt: "Which organisation served as facilitator under the consent decree?",
+            options: ["Poorman-Douglas Corporation", "JAMS-Endispute, Inc., which served instead as the adjudicator of Track A claims", "ADR Associates, whose Michael Lewis served as the settlement's arbitrator", "The Farm Service Agency's own civil rights office, operating under court supervision"],
+            correctIndex: 0,
+            explanation: "CRS names Poorman-Douglas Corporation as facilitator, JAMS-Endispute as adjudicator, Michael Lewis of ADR Associates as arbitrator and Randi Roth as monitor.",
+            sourceLessonSlug: "track-a-and-track-b",
+          },
+          {
+            prompt: "Who served as the court-appointed monitor?",
+            options: ["Randi Roth", "Michael Lewis, who served instead as the arbitrator for Track B determinations", "Judge Paul L. Friedman, who retained the monitoring function personally", "The Inspector General of the Department of Agriculture, reporting to the Secretary"],
+            correctIndex: 0,
+            explanation: "Randi Roth was the court-appointed monitor, an officer reporting to the court rather than to the department.",
+            sourceLessonSlug: "track-a-and-track-b",
+          },
+          {
+            prompt: "Why does a court-appointed monitor answer the second half of the Pigford claim?",
+            options: ["It reports to the court, not the agency", "Because a monitor may impose civil penalties on the agency for each violation found", "Because a monitor replaces the agency's own staff in making eligibility determinations", "Because a monitor's findings are admissible as evidence in any subsequent litigation"],
+            correctIndex: 0,
+            explanation: "The allegation was that the agency's own complaint machinery had failed, so oversight was placed outside the agency.",
+            sourceLessonSlug: "track-a-and-track-b",
+          },
+          {
+            prompt: "As of 31 December 2011, approximately how many claimants were found eligible in Pigford I?",
+            options: ["22,721", "94,000, which is the number of claims and late-filing requests eventually presented", "15,645, which is instead the number who prevailed on the lower-proof track", "34,000, which is the number deemed complete and timely in the second settlement"],
+            correctIndex: 0,
+            explanation: "CRS reports approximately 22,721 claimants found eligible to participate in the claims process.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "How many Pigford I claimants prevailed on Track A?",
+            options: ["About 15,645", "About 22,552, which is instead the number who chose Track A rather than Track B", "About 6,906, which is instead the number of Track A claims that were denied", "About 17,000 to 19,000, which is a preliminary estimate for the second settlement"],
+            correctIndex: 0,
+            explanation: "CRS gives approximately 15,645 successful Track A claims, a rate of 69%.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "What share of Track A claims were denied in Pigford I?",
+            options: ["31%", "About 5%, which is the share the court monitor later directed for reexamination", "About 50%, matching the share of reexamination petitions the monitor granted", "None, because every claimant meeting the class definition received the fixed payment"],
+            correctIndex: 0,
+            explanation: "6,906 Track A claims were denied, which CRS gives as 31%, so the process was not automatic.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "How many claimants chose Track B in Pigford I?",
+            options: ["About 169", "About 2,941, matching the number of reexaminations the court monitor directed", "About 5,848, matching the number of petitions for reexamination that were filed", "About 22,552, which is instead the number who chose the fixed-payment route"],
+            correctIndex: 0,
+            explanation: "Approximately 169 claimants chose Track B, fewer than one per cent of those eligible.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "What does the tiny Track B uptake tell you?",
+            options: ["The higher proof standard was unrealistic for this class", "That most claimants preferred binding arbitration to an administrative determination", "That the department discouraged Track B filings by refusing to release loan records", "That Track B was closed to anyone who had already been denied on the other track"],
+            correctIndex: 0,
+            explanation: "Fewer than one per cent chose the route requiring proof of damages by a preponderance, decades after the events and with records gone.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "What was the approximate total relief provided in Pigford I?",
+            options: ["$1.06 billion", "$1.25 billion, which is instead the amount of the second settlement announced in 2010", "$1.15 billion, which is instead the sum appropriated by the Claims Resolution Act", "$2.2 billion, the figure Congress later appropriated for a race-neutral successor programme"],
+            correctIndex: 0,
+            explanation: "CRS prints approximately $1.06 billion, or $1,058,577,198, in cash relief, estimated tax payments and debt relief.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "What internal inconsistency does the CRS report contain about Track A?",
+            options: ["Its narrative and its table differ by one claim", "Its narrative gives a 69% success rate and its table implies a rate above ninety per cent", "Its summary names the wrong judge as the officer who approved the consent decree", "Its table omits the debt relief line from the total it prints for Track A relief"],
+            correctIndex: 0,
+            explanation: "The narrative gives about 22,552 choosing Track A as of 31 December 2011 and Table 1 prints 22,551 decisions as of 16 February 2012.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "Why does this course print the one-claim discrepancy rather than pick a figure?",
+            options: ["A checkable error teaches you how to read the source", "Because the discrepancy materially changes the reported success rate on Track A", "Because CRS reports are not public domain and must be quoted exactly as printed", "Because the court monitor never resolved which of the two counts was correct"],
+            correctIndex: 0,
+            explanation: "A source that is off by one where you can check it is a source you now know how to handle everywhere else.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "The five lines of CRS Table 1 add to what total for Track A relief?",
+            options: ["$1,015,727,495", "$1,058,577,198, which is instead the overall total for both tracks combined", "$770,050,000, which is instead the cash awards line taken on its own", "$192,512,500, which is instead the IRS payments made for Track A claimants"],
+            correctIndex: 0,
+            explanation: "The cash awards, non-credit awards, debt relief and two IRS lines sum exactly to the printed Track A total, so the table reconciles.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "What does subtracting the Track A total from the overall total leave?",
+            options: ["About $42.8 million", "About $770 million, the value of the fixed cash awards made under the lower standard", "About $250,000, the ceiling later placed on the higher-proof route in the second case", "Nothing, because the Track A total and the overall total are the same figure"],
+            correctIndex: 0,
+            explanation: "$1,058,577,198 minus $1,015,727,495 leaves $42,849,703, a residual this course computed rather than a figure CRS reports.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "How should the roughly $412,000 average implied for prevailing Track B claimants be described?",
+            options: ["An inference from two published totals", "A figure CRS reports directly in its table of settlement statistics", "The statutory maximum award available to a Track B claimant under the decree", "The amount the arbitrator awarded in the median Track B determination"],
+            correctIndex: 0,
+            explanation: "CRS prints no Track B total, so the average comes from a residual and may include items the Track A table does not break out.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "What does the implied Track B average show about the two tracks?",
+            options: ["The higher standard bought a much larger payment", "That the two tracks paid claimants roughly the same amount in practice", "That Track B claimants received less on average than Track A claimants did", "That the arbitrator was bound by the same $50,000 ceiling that governed Track A"],
+            correctIndex: 0,
+            explanation: "The residual implies an average many times the Track A payment, which is what proving actual damages was worth to those who could do it.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "How many claims were the subject of a petition for reexamination in Pigford I?",
+            options: ["About 5,848", "About 2,941, which is instead the number of reexaminations the monitor directed", "About 6,906, which is instead the number of Track A claims that were denied", "About 169, which is instead the number of claimants who chose the higher-proof track"],
+            correctIndex: 0,
+            explanation: "About 5,848 claims drew a petition, and the monitor directed reexamination in about 2,941 of them, which CRS gives as 50%.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "Which statutory provision let Pigford late filers seek a determination on the merits?",
+            options: ["Section 14012 of the 2008 farm bill", "Section 22007 of the Inflation Reduction Act of 2022, which funded a later programme", "Section 1005 of the American Rescue Plan Act of 2021, later repealed by Congress", "Section 227 of the 1994 reorganisation act, which abolished the FmHA county committees"],
+            correctIndex: 0,
+            explanation: "P.L. 110-246 section 14012 allowed late filers to petition for a merits determination, and the claims were consolidated as In re Black Farmers Discrimination Litigation.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "Under what case name were the Pigford II claims consolidated?",
+            options: ["In re Black Farmers Discrimination Litigation", "Pigford v. Glickman, refiled in the same court under the original docket number", "Brewington v. Glickman, the companion case filed alongside the original suit", "Keepseagle v. Vilsack, which resolved claims brought by Native American producers"],
+            correctIndex: 0,
+            explanation: "The consolidated case is reported at 820 F. Supp. 2d 78 (D.D.C. 2011).",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "What was the announced value of the Pigford II settlement?",
+            options: ["$1.25 billion", "$1.06 billion, which is instead the total relief eventually provided in the first case", "$1.15 billion, which is instead the portion supplied by a later appropriations act", "$100 million, which is instead the portion the 2008 farm bill had already provided"],
+            correctIndex: 0,
+            explanation: "The settlement announced on 18 February 2010 was for $1.25 billion, of which $100 million came from the farm bill.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "Which statute supplied the remaining $1.15 billion for Pigford II?",
+            options: ["The Claims Resolution Act of 2010", "The Food, Conservation and Energy Act of 2008, which had already provided $100 million", "The American Rescue Plan Act of 2021, whose farm loan provision was later enjoined", "The Department of Agriculture Reorganization Act of 1994, which created the agency"],
+            correctIndex: 0,
+            explanation: "P.L. 111-291, signed 8 December 2010, appropriated the balance of the settlement.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "On what date was the Claims Resolution Act of 2010 signed?",
+            options: ["8 December 2010", "18 February 2010, the date the settlement itself was publicly announced", "27 October 2011, the date the court gave the settlement its final approval", "11 May 2012, the date on which the claim filing window finally closed"],
+            correctIndex: 0,
+            explanation: "CRS records the signature on 8 December 2010, roughly ten months after the settlement was announced.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "Approximately how many Pigford II claim forms were mailed out?",
+            options: ["89,000", "40,000, which is instead the number of forms that were ultimately filed", "34,000, which is instead the number deemed complete, timely and eligible", "22,721, which is instead the number found eligible in the first settlement"],
+            correctIndex: 0,
+            explanation: "About 89,000 forms were mailed, nearly 40,000 were filed, and about 34,000 were complete, timely and eligible.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "How many Pigford II claims were deemed complete, timely and eligible?",
+            options: ["About 34,000", "About 89,000, which is instead the number of claim forms that were mailed out", "About 17,000 to 19,000, which is instead the preliminary estimate of successful claims", "About 22,552, which is instead the number who chose Track A in the first settlement"],
+            correctIndex: 0,
+            explanation: "Nearly 40,000 forms were filed and approximately 34,000 of those were complete, timely and eligible.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "What success rate did CRS preliminarily estimate for Pigford II Track A claims?",
+            options: ["About 50% to 56%", "About 69%, the same rate the first settlement's Track A claims achieved", "About 31%, matching the denial rate recorded in the first settlement", "About 62%, matching the rate at which Track B claimants prevailed earlier"],
+            correctIndex: 0,
+            explanation: "CRS estimated 17,000 to 19,000 positive adjudications out of the eligible claims, a rate below the 69% achieved in Pigford I.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "Which figure belongs to Pigford II rather than to Pigford I?",
+            options: ["The $250,000 damages ceiling", "The $50,000 fixed payment available on the lower-proof track in both settlements", "The requirement to name a specifically identified, similarly situated white farmer", "The appointment of a court monitor reporting to the district court rather than the agency"],
+            correctIndex: 0,
+            explanation: "The longer process in Pigford II carried damages of up to $250,000; Pigford I's tailored Track B payment had no such published cap.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "When did the Pigford II filing window run?",
+            options: ["14 November 2011 to 11 May 2012", "1 January 1981 to 31 December 1996, matching the first decree's farming window", "18 February 2010 to 8 December 2010, between the announcement and the appropriation", "14 April 1999 to 1 July 1999, the ninety days following approval of the first decree"],
+            correctIndex: 0,
+            explanation: "Final court approval came on 27 October 2011 and the window ran from 14 November 2011 to 11 May 2012.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "Why is an as-of date essential to every Pigford figure?",
+            options: ["The cumulative totals moved while the process ran", "Because the settlement's terms were renegotiated at the end of each calendar year", "Because CRS revised its methodology between versions of the same report", "Because the court sealed the underlying data until the litigation was fully concluded"],
+            correctIndex: 0,
+            explanation: "A settlement's counts and totals change as claims are adjudicated, so a figure without a date cannot be compared with any other.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "Which two cabinet-level officials announced the Pigford II settlement?",
+            options: ["The Attorney General and the Secretary of Agriculture", "The Secretary of Agriculture and the Secretary of Education, as in the 1890 letters", "The Attorney General and the Secretary of the Treasury, which funded the payments", "The Secretary of Agriculture alone, with the Department of Justice declining comment"],
+            correctIndex: 0,
+            explanation: "CRS records the announcement by Attorney General Holder and Secretary Vilsack on 18 February 2010.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "What is the source of the cumulative Pigford I figures CRS prints?",
+            options: ["The final Court Monitor Report", "The Department of Agriculture's annual civil rights report to Congress", "The Government Accountability Office's audit of the claims administrator", "The claims administrator's sworn declaration filed with the district court in 1999"],
+            correctIndex: 0,
+            explanation: "CRS attributes the 31 December 2011 data to the final Court Monitor Report published on 1 April 2012.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "Which is the correct order of events?",
+            options: ["Filing, certification, decree, farm bill, second settlement", "Certification, filing, second settlement, decree, farm bill provision for late filers", "Decree, filing, certification, second settlement, appropriation of the settlement funds", "Farm bill provision, filing, certification, decree, and finally the second settlement"],
+            correctIndex: 0,
+            explanation: "Filed August 1997, certified October 1998, decree approved April 1999, late filers reopened by the 2008 farm bill, second settlement announced February 2010.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "Which best describes what a claimant gave up by choosing Track A?",
+            options: ["Any payment above the fixed amount", "The right to have a neutral third party review the claim at all", "The ability to include loan forgiveness or tax offsets in the relief received", "The chance to have the decision reexamined at the monitor's direction"],
+            correctIndex: 0,
+            explanation: "The fixed $50,000 was the same whatever the size of the loss, which is the price of the lower standard of proof.",
+            sourceLessonSlug: "track-a-and-track-b",
+          },
+          {
+            prompt: "Which best describes what a claimant took on by choosing Track B?",
+            options: ["The burden of proving actual damages", "The obligation to accept whatever the department's civil rights office determined", "A waiver of any loan forgiveness that would otherwise have accompanied an award", "The requirement to identify at least three similarly situated white farmers by name"],
+            correctIndex: 0,
+            explanation: "Track B required proving both the claim and actual damages by a preponderance, before a binding arbitrator.",
+            sourceLessonSlug: "track-a-and-track-b",
+          },
+          {
+            prompt: "What does the 31% Track A denial rate rule out?",
+            options: ["That the process paid everyone who filed", "That any claimant was required to name a comparator to obtain relief", "That the settlement's payments were funded from appropriated rather than settlement money", "That the court appointed a monitor to oversee the adjudication of claims"],
+            correctIndex: 0,
+            explanation: "Nearly a third of Track A claimants were denied, so a low standard of proof was not the same thing as an automatic payment.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "Which of these is NOT something the consent decree enumerated as an injury?",
+            options: ["A loan repaid early by the borrower", "A loan approved for a lesser amount than the applicant had requested", "A loan encumbered by restrictive conditions the applicant had not sought", "A failure by the department to provide appropriate loan servicing"],
+            correctIndex: 0,
+            explanation: "The enumerated injuries are denial, lateness, a reduced amount, restrictive conditions and a failure to service the loan.",
+            sourceLessonSlug: "track-a-and-track-b",
+          },
+          {
+            prompt: "How does the certification order's cutoff compare with the consent decree's?",
+            options: ["The decree's is later", "The decree's is earlier, ending in February rather than in July of the same year", "They are identical, since the decree simply adopted the certified class unchanged", "The decree removed any complaint deadline and relied on the farming window alone"],
+            correctIndex: 0,
+            explanation: "Certification used 21 February 1997 and the decree used 1 July 1997, which is why both dates appear in accurate accounts.",
+            sourceLessonSlug: "what-pigford-claimed",
+          },
+          {
+            prompt: "What did the Pigford settlements require the department to concede?",
+            options: ["Nothing about liability", "That every claimant within the class had been discriminated against as a matter of law", "That its county committees had violated the Equal Credit Opportunity Act in each affected year", "That its internal civil rights office had failed to process complaints for fourteen years"],
+            correctIndex: 0,
+            explanation: "A consent decree resolves claims without an adjudication of liability, which is why later disputes about what the settlement proved are possible at all.",
+            sourceLessonSlug: "what-pigford-claimed",
+          },
+          {
+            prompt: "Which pairing of settlement and funding source is correct?",
+            options: ["Pigford II, the Claims Resolution Act of 2010", "Pigford I, the Inflation Reduction Act of 2022, which funded the earlier consent decree", "Pigford II, the 1994 reorganisation act, which had reserved money for future claims", "Pigford I, the 2008 farm bill, which appropriated the whole of the first settlement"],
+            correctIndex: 0,
+            explanation: "Pigford II drew $100 million from the 2008 farm bill and $1.15 billion from the Claims Resolution Act of 2010.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "Why did Congress have to act at all for Pigford II to happen?",
+            options: ["Thousands of claimants had missed the deadline", "Because the consent decree expired by its own terms ten years after approval", "Because the district court lacked jurisdiction over claims arising before 1983", "Because the first settlement had exhausted the department's litigation authority"],
+            correctIndex: 0,
+            explanation: "Late filers had never received a determination on the merits, and section 14012 of the 2008 farm bill let them petition for one.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "What is the relationship between claims filed and awards made?",
+            options: ["They are different numbers", "They are the same, since every filed claim produced an award under the decree", "Awards always exceed filings, because a single claim may cover several farmers", "Filings are irrelevant once the settlement's total dollar value has been fixed"],
+            correctIndex: 0,
+            explanation: "Nearly a third of Track A claims were denied in Pigford I, so the count of claims filed is not a count of awards made.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "Which is the correct description of the Pigford I Track B ceiling?",
+            options: ["There was no published cap", "It was fixed at $50,000, the same as the amount available on the other track", "It was fixed at $250,000, the figure that governed the second settlement", "It was fixed at the appraised value of the land the claimant had lost"],
+            correctIndex: 0,
+            explanation: "Pigford I's Track B paid a larger, tailored amount; the $250,000 ceiling belongs to the second settlement.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "Why is the phrase attempted to farm relevant to counting arguments?",
+            options: ["Claimants need never have appeared in any farm count", "Because it limited the class to people who filed a complaint before February 1997", "Because it required each claimant to hold a farm number issued by a county office", "Because it excluded tenants and sharecroppers who did not own the land they worked"],
+            correctIndex: 0,
+            explanation: "Someone refused credit before they could start was never counted as a farmer, so comparing claimants against farm counts needs that phrase handled first.",
+            sourceLessonSlug: "what-pigford-claimed",
+          },
+          {
+            prompt: "What proportion of reexamination petitions did the monitor grant?",
+            options: ["About half", "All of them, since the decree made reexamination available as of right on request", "About a tenth, reflecting the narrow grounds on which reexamination was available", "None, because the monitor's authority was limited to reporting rather than directing"],
+            correctIndex: 0,
+            explanation: "About 5,848 claims drew a petition and the monitor directed reexamination in about 2,941, which CRS gives as 50%.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "Which document number identifies the CRS report on the Pigford cases?",
+            options: ["RS20430", "R40179, the report describing the composition and duties of Farm Service Agency committees", "IF11847, the report on the funding of the 1890 land-grant institutions", "GAO-13-69R, the audit of internal controls in the second settlement's claims process"],
+            correctIndex: 0,
+            explanation: "CRS Report RS20430, by Cowan and Feder, is the standing public-domain summary of both settlements.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "Which statement about the two Pigford settlements is accurate?",
+            options: ["The second had a lower estimated success rate", "The second was funded entirely by the 2008 farm bill with no further appropriation", "The second used a higher standard of proof on its fast-track option than the first did", "The second was decided by the same arbitrator who had handled the first settlement"],
+            correctIndex: 0,
+            explanation: "CRS estimated 50% to 56% for Pigford II Track A claims against 69% in Pigford I.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "What is the best reason to keep the machine from Sections 1 to 4 in view while reading the settlement?",
+            options: ["The decree's injuries name that machine's failure modes", "Because the settlement replaced the county committee system with a national review board", "Because the decree required every claimant to have served on a county committee", "Because the litigation suspended the credit-elsewhere test for the duration of the class period"],
+            correctIndex: 0,
+            explanation: "Denial, lateness, reduced amounts, restrictive conditions and poor servicing are exactly the ways a local credit gate can fail an applicant.",
+            sourceLessonSlug: "track-a-and-track-b",
+          },
+          {
+            prompt: "On what date did the court give final approval to the Pigford II settlement?",
+            options: ["27 October 2011", "18 February 2010, the date the settlement was announced by two cabinet officers", "8 December 2010, the date the appropriating statute was signed into law", "14 April 1999, the date the original consent decree received the court's approval"],
+            correctIndex: 0,
+            explanation: "Final approval came on 27 October 2011, after which the filing window opened in November.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "What portion of the Pigford II settlement had already been provided before the appropriation?",
+            options: ["$100 million", "$1.15 billion, which is instead the portion the Claims Resolution Act supplied", "$1.25 billion, which is instead the announced value of the whole settlement", "$1.06 billion, which is instead the total relief provided in the first settlement"],
+            correctIndex: 0,
+            explanation: "The 2008 farm bill had provided $100 million in mandatory spending toward the eventual settlement.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "Which line in the CRS Track A table is largest?",
+            options: ["The $50,000 cash awards", "The IRS payments made on behalf of Track A claimants for their tax liability", "The debt relief provided by cancelling outstanding federal farm loan balances", "The $3,000 non-credit awards paid to claimants whose claims did not involve loans"],
+            correctIndex: 0,
+            explanation: "The cash awards line is $770,050,000, far larger than the $192,512,500 in IRS payments or the $43,715,385 in debt relief.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "What did the $3,000 line in the Track A table cover?",
+            options: ["Non-credit awards", "The administrative fee charged to each claimant by the settlement facilitator", "The cost of obtaining certified copies of loan records from the county office", "The interest accrued on payments delayed beyond the decree's own deadline"],
+            correctIndex: 0,
+            explanation: "CRS's table records $1,656,000 in $3,000 non-credit awards alongside the larger $50,000 cash award line.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "Why did the decree place tax payments inside the relief rather than leaving them to claimants?",
+            options: ["The award itself created a tax liability", "Because the Internal Revenue Service was a named party to the consent decree", "Because claimants were barred by statute from filing returns during the class period", "Because the decree converted the payments into tax credits rather than cash awards"],
+            correctIndex: 0,
+            explanation: "Track A relief expressly included offsets of tax liability, and the table carries separate IRS payment lines for the awards and for the debt relief.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "What is the honest way to describe the Pigford I Track B outcome for the 65 who did not prevail?",
+            options: ["They received nothing on that route", "They were automatically transferred to the fixed-payment route and paid $50,000", "They were entitled to a rehearing before a different arbitrator on request", "They received a reduced award scaled to the strength of their documentation"],
+            correctIndex: 0,
+            explanation: "About 104 of about 169 Track B claimants prevailed or settled, and the arbitrator's decision was binding.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
         ],
       },
     },
