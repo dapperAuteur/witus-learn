@@ -29,7 +29,7 @@ import type { AuthoredCourse } from "./authored-course";
 // spine, and would displace one of the four courses that series has already declared. So it stands
 // alone and cross-links hard.
 //
-// EVERY PRIMARY DOCUMENT IN THIS FILE WAS READ DIRECTLY, not summarised from search results:
+// EVERY PRIMARY DOCUMENT IN THIS FILE WAS READ DIRECTLY, not summarized from search results:
 //   · 7 U.S.C. § 361a and § 361c(d), read on uscode.house.gov. The § 361c(d)(4) exception is the
 //     opening hook and it was verified before it was used: the four jurisdictions it names are
 //     exactly the members of § 361a's definition of "State" that are not states.
@@ -65,7 +65,7 @@ import type { AuthoredCourse } from "./authored-course";
 //     ballots, boycotts and turnout are part of the record, and a bare percentage misleads.
 //   · THE INSULAR CASES. Taught as the law that they are, with the criticism attached and its
 //     critics named (Gorsuch, Sotomayor, Judge Torruella, the Fitisemanu panel itself), and with
-//     the cultural-protection defence stated in the words of the people who make it.
+//     the cultural-protection defense stated in the words of the people who make it.
 //
 // House style: `section` on every lesson; flush-left single-line `:::reveal q ||| a`; a
 // `## Vocabulary` block of 3-6 lesson-specific terms; APA 7 `## Sources` with a stable URL wherever
@@ -307,7 +307,7 @@ Hold that word, **incorporated**. It is doing enormous work, it appears nowhere 
           },
           {
             prompt: "Under 7 U.S.C. § 361c(d)(2), what does the Secretary do when a State fails to provide its match?",
-            options: ["Withholds the difference", "Refers the shortfall to the Department of Justice for collection with interest", "Suspends the State's experiment station from the federal research programme for a year", "Requires the State to submit a corrective plan of work before the next fiscal year"],
+            options: ["Withholds the difference", "Refers the shortfall to the Department of Justice for collection with interest", "Suspends the State's experiment station from the federal research program for a year", "Requires the State to submit a corrective plan of work before the next fiscal year"],
             correctIndex: 0,
             explanation: "The statute withholds an amount equal to the gap between the full allotment and the matching funds actually provided.",
             sourceLessonSlug: "the-waiver-that-names-four-places",
@@ -580,7 +580,7 @@ Hold that word, **incorporated**. It is doing enormous work, it appears nowhere 
           },
           {
             prompt: "What preceded the Northern Marianas Covenant?",
-            options: ["A United Nations trusteeship", "A period of direct rule by the United States Navy under an executive order", "Administration by the Philippines under a treaty of mutual defence", "A plebiscite in which the islands rejected statehood by a two-thirds margin"],
+            options: ["A United Nations trusteeship", "A period of direct rule by the United States Navy under an executive order", "Administration by the Philippines under a treaty of mutual defense", "A plebiscite in which the islands rejected statehood by a two-thirds margin"],
             correctIndex: 0,
             explanation: "The trusteeship is why the Commonwealth's entry was negotiated text rather than a transfer between two other governments.",
             sourceLessonSlug: "how-each-one-arrived",
@@ -650,7 +650,7 @@ Hold that word, **incorporated**. It is doing enormous work, it appears nowhere 
           },
           {
             prompt: "Which of these describes the first camp in the 1898 constitutional debate?",
-            options: ["That republican traditions barred governing colonies", "That the acquisitions should be sold back to Spain at the price paid for them", "That the Constitution applied only to territories with an organised legislature", "That the new possessions should be admitted as states within a fixed term of years"],
+            options: ["That republican traditions barred governing colonies", "That the acquisitions should be sold back to Spain at the price paid for them", "That the Constitution applied only to territories with an organized legislature", "That the new possessions should be admitted as states within a fixed term of years"],
             correctIndex: 0,
             explanation: "Justice Gorsuch describes them as arguing that the United States could not govern distant possessions as subservient colonies without regard to the Constitution.",
             sourceLessonSlug: "the-clause-that-governs",
@@ -865,7 +865,7 @@ Three years later a majority adopted White's theory in *Dorr v. United States* (
       section: "Section 2 · The Insular Cases",
       body: `Twenty-one years after the oranges, the doctrine met a harder test, and it held.
 
-Jesus M. Balzac edited a daily newspaper in Arecibo called *El Baluarte*. In 1918 he was prosecuted for criminal libel over two articles, published on 16 and 23 April. He demanded a jury trial. Puerto Rico's own code did not provide one for a misdemeanour, so he argued that the Sixth Amendment did, because by then he was a United States citizen: the Jones Act of 1917 had made the people of Puerto Rico citizens five years before his appeal reached Washington.
+Jesus M. Balzac edited a daily newspaper in Arecibo called *El Baluarte*. In 1918 he was prosecuted for criminal libel over two articles, published on 16 and 23 April. He demanded a jury trial. Puerto Rico's own code did not provide one for a misdemeanor, so he argued that the Sixth Amendment did, because by then he was a United States citizen: the Jones Act of 1917 had made the people of Puerto Rico citizens five years before his appeal reached Washington.
 
 **The Court, through Chief Justice Taft, said no on both halves of the argument.**
 
@@ -877,7 +877,7 @@ On the second half, the Court drew the line that has bothered people ever since:
 
 Read that twice. **A citizen of the United States in San Juan and a citizen of the United States in Ohio had different constitutional rights in a courtroom, and the reason was where the courtroom was.**
 
-The Court then explained why a jury was not owed. "The jury system needs citizens trained to the exercise of the reponsibilities of jurors. In common-law countries centuries of tradition have prepared a conception of the impartial attitude jurors must assume" (Balzac v. Porto Rico, 1922). Justice Gorsuch summarised how the opinion applied that reasoning: on the Court's account Puerto Rico's localities included "compact and ancient communities" that had not yet developed the "impartial attitude" or "conscious duty of participation" the "Anglo-Saxon" jury trial required (Vaello Madero, 2022, Gorsuch, J., concurring, slip op. at 5).
+The Court then explained why a jury was not owed. "The jury system needs citizens trained to the exercise of the reponsibilities of jurors. In common-law countries centuries of tradition have prepared a conception of the impartial attitude jurors must assume" (Balzac v. Porto Rico, 1922). Justice Gorsuch summarized how the opinion applied that reasoning: on the Court's account Puerto Rico's localities included "compact and ancient communities" that had not yet developed the "impartial attitude" or "conscious duty of participation" the "Anglo-Saxon" jury trial required (Vaello Madero, 2022, Gorsuch, J., concurring, slip op. at 5).
 
 **Three consequences to carry forward.**
 
@@ -896,7 +896,7 @@ The Court then explained why a jury was not owed. "The jury system needs citizen
 ## Vocabulary
 - **Jones Act of 1917**: the statute that conferred United States citizenship on the people of Puerto Rico, and which the Court held did not incorporate the island.
 - **Locality rule**: the Balzac principle that the place, rather than the citizenship of the person, decides which constitutional procedures apply.
-- **Criminal libel**: the offence Balzac was charged with, a misdemeanour under the island's code for which local law provided no jury.
+- **Criminal libel**: the offence Balzac was charged with, a misdemeanor under the island's code for which local law provided no jury.
 - **Clear statement**: the requirement, drawn from Balzac, that incorporation not be assumed and that Congress say so if it means it.
 - **Good law**: a decision that has never been overruled and that lower courts remain bound to apply, which both Downes and Balzac still are.
 
@@ -909,9 +909,9 @@ The Court then explained why a jury was not owed. "The jury system needs citizen
     },
     {
       slug: "the-critics-by-name",
-      title: "7 · The critics, by name, and the defence they answer",
+      title: "7 · The critics, by name, and the defense they answer",
       section: "Section 2 · The Insular Cases",
-      body: `A course can say "these cases are criticised" and teach nothing. Here is who says what, in their own words, so you can weigh it.
+      body: `A course can say "these cases are criticized" and teach nothing. Here is who says what, in their own words, so you can weigh it.
 
 **Justice Gorsuch, concurring in *United States v. Vaello Madero* (2022).** He opens without hedging:
 
@@ -927,7 +927,7 @@ He closes: "the time has come to recognize that the Insular Cases rest on a rott
 
 **And the Tenth Circuit panel that ruled AGAINST extending citizenship** said much the same about the cases it was applying. Its opinion calls the Insular Cases "disreputable to modern eyes" in purpose and reasoning, notes that the Court "repeatedly voiced concern that native inhabitants of the unincorporated territories were simply unfit for the American constitutional regime", and quotes both White's "absolutely unfit to receive it" and Brown's "differences of race" (Fitisemanu v. United States, 2021). **You can think the doctrine is shameful and still think a court is not the body to undo it. That is the actual live disagreement, and it is not the one most summaries describe.**
 
-**Now the defence, stated fairly, because it is held by people with a real stake.** A modern argument says the unincorporated status has become protective: it is what lets a territory keep legal arrangements that would not survive uniform constitutional scrutiny, such as communal land tenure and hereditary chieftaincy in American Samoa. The Tenth Circuit took this seriously and it is a large part of why the case came out as it did.
+**Now the defense, stated fairly, because it is held by people with a real stake.** A modern argument says the unincorporated status has become protective: it is what lets a territory keep legal arrangements that would not survive uniform constitutional scrutiny, such as communal land tenure and hereditary chieftaincy in American Samoa. The Tenth Circuit took this seriously and it is a large part of why the case came out as it did.
 
 Justice Gorsuch answered that argument directly, and it is worth having both halves. He noted the "amicus briefs from the Governor of Puerto Rico, territorial advocacy groups, and the U. S. Virgin Islands expressing vehement disagreement with the Insular Cases", and wrote that "recent attempts to repurpose the Insular Cases merely drape the worst of their logic in new garb", because "the Constitution's restraints on federal power do not turn on a court's unschooled assessment of a Territory's local customs" (Vaello Madero, 2022, Gorsuch, J., concurring, slip op. at 9 n.4).
 
@@ -937,7 +937,7 @@ Justice Gorsuch answered that argument directly, and it is worth having both hal
 
 :::reveal Who wrote the 1899 Harvard Law Review articles Justice Gorsuch names as the doctrine's intellectual source? ||| Christopher Langdell, James Bradley Thayer and Abbott Lawrence Lowell.
 
-:::reveal What is the modern defence of unincorporated status, and how did Justice Gorsuch answer it? ||| That the status protects local arrangements a uniform Constitution would disturb; he answered that repurposing the cases drapes the worst of their logic in new garb.
+:::reveal What is the modern defense of unincorporated status, and how did Justice Gorsuch answer it? ||| That the status protects local arrangements a uniform Constitution would disturb; he answered that repurposing the cases drapes the worst of their logic in new garb.
 
 ## Vocabulary
 - **Concurrence**: an opinion by a justice who agrees with the Court's result but writes separately, which is how the sharpest criticism of the Insular Cases reached the pages of the United States Reports.
@@ -961,7 +961,7 @@ Justice Gorsuch answered that argument directly, and it is worth having both hal
         questionsPerAttempt: 5,
         questions: [
           {
-            prompt: "What goods were at the centre of Downes v. Bidwell?",
+            prompt: "What goods were at the center of Downes v. Bidwell?",
             options: ["Oranges", "Refined sugar shipped from Ponce to Baltimore in the spring of 1900", "Cigars manufactured in Havana and landed at the port of New Orleans", "Coffee carried from Guam to San Francisco under the terms of the Foraker Act"],
             correctIndex: 0,
             explanation: "The record describes oranges consigned to the plaintiff at New York and brought from the port of San Juan in November 1900.",
@@ -1004,7 +1004,7 @@ Justice Gorsuch answered that argument directly, and it is worth having both hal
           },
           {
             prompt: "What did Justice Brown say about islands inhabited by what he called alien races?",
-            options: ["That government on Anglo-Saxon principles might be impossible", "That their inhabitants should be naturalised individually rather than collectively by statute", "That Congress should govern them through the treaty power rather than under Article IV", "That the Constitution applied there but the courts could not enforce it for a generation"],
+            options: ["That government on Anglo-Saxon principles might be impossible", "That their inhabitants should be naturalized individually rather than collectively by statute", "That Congress should govern them through the treaty power rather than under Article IV", "That the Constitution applied there but the courts could not enforce it for a generation"],
             correctIndex: 0,
             explanation: "He wrote that the administration of government and justice, according to Anglo-Saxon principles, may for a time be impossible.",
             sourceLessonSlug: "downes-v-bidwell",
@@ -1053,7 +1053,7 @@ Justice Gorsuch answered that argument directly, and it is worth having both hal
           },
           {
             prompt: "What did Justice Harlan say the Court was grafting onto republican institutions?",
-            options: ["A colonial system such as exists under monarchical governments", "A doctrine of implied powers wider than anything the framers had contemplated", "A rule of construction that would eventually swallow the Tenth Amendment whole", "A distinction between the rights of citizens and the rights of naturalised persons"],
+            options: ["A colonial system such as exists under monarchical governments", "A doctrine of implied powers wider than anything the framers had contemplated", "A rule of construction that would eventually swallow the Tenth Amendment whole", "A distinction between the rights of citizens and the rights of naturalized persons"],
             correctIndex: 0,
             explanation: "He dissented in the Insular Cases year after year, and his objection was that the Constitution contains no such system.",
             sourceLessonSlug: "downes-v-bidwell",
@@ -1074,7 +1074,7 @@ Justice Gorsuch answered that argument directly, and it is worth having both hal
           },
           {
             prompt: "Where in the Constitution does the word 'incorporated' appear, as a description of a territory?",
-            options: ["Nowhere", "In Article IV, Section 3, Clause 2, immediately after the words needful Rules", "In Article I, Section 8, Clause 17, in the passage about the seat of government", "In the Fourteenth Amendment, in the clause about persons born or naturalised"],
+            options: ["Nowhere", "In Article IV, Section 3, Clause 2, immediately after the words needful Rules", "In Article I, Section 8, Clause 17, in the passage about the seat of government", "In the Fourteenth Amendment, in the clause about persons born or naturalized"],
             correctIndex: 0,
             explanation: "That absence is why Justice Harlan called the idea occult and why Justice Gorsuch says the cases have no foundation in the document.",
             sourceLessonSlug: "downes-v-bidwell",
@@ -1097,14 +1097,14 @@ Justice Gorsuch answered that argument directly, and it is worth having both hal
             prompt: "What was Balzac charged with?",
             options: ["Criminal libel", "Sedition against the government of the United States during wartime", "Failure to pay the duties imposed on imports under the Foraker Act", "Publishing an unlicensed newspaper in violation of a territorial ordinance"],
             correctIndex: 0,
-            explanation: "The charges rested on two articles published on 16 and 23 April 1918, and the offence was a misdemeanour under the island's code.",
+            explanation: "The charges rested on two articles published on 16 and 23 April 1918, and the offence was a misdemeanor under the island's code.",
             sourceLessonSlug: "balzac-and-the-jury",
           },
           {
             prompt: "What did Balzac demand that local law did not give him?",
             options: ["A jury trial", "A translation of the proceedings into Spanish at the government's expense", "A transfer of his case to a federal district court sitting in the mainland", "An appeal directly to the Supreme Court without passing through a lower court"],
             correctIndex: 0,
-            explanation: "The island's code provided no jury for a misdemeanour, so he argued that the Sixth Amendment supplied one.",
+            explanation: "The island's code provided no jury for a misdemeanor, so he argued that the Sixth Amendment supplied one.",
             sourceLessonSlug: "balzac-and-the-jury",
           },
           {
@@ -1158,7 +1158,7 @@ Justice Gorsuch answered that argument directly, and it is worth having both hal
           },
           {
             prompt: "How did Justice Gorsuch open his concurrence in Vaello Madero?",
-            options: ["By saying it is past time to acknowledge the gravity of the error", "By explaining why the Court should leave the Insular Cases undisturbed for now", "By recounting the history of the Supplemental Security Income programme since 1972", "By setting out the equal protection test the majority had applied to the statute"],
+            options: ["By saying it is past time to acknowledge the gravity of the error", "By explaining why the Court should leave the Insular Cases undisturbed for now", "By recounting the history of the Supplemental Security Income program since 1972", "By setting out the equal protection test the majority had applied to the statute"],
             correctIndex: 0,
             explanation: "He wrote that the cases have no foundation in the Constitution and rest instead on racial stereotypes, and that they deserve no place in our law.",
             sourceLessonSlug: "the-critics-by-name",
@@ -1193,9 +1193,9 @@ Justice Gorsuch answered that argument directly, and it is worth having both hal
           },
           {
             prompt: "What did Justice Sotomayor's dissent in Vaello Madero attack?",
-            options: ["The outcome for the citizens excluded from the programme", "The Insular Cases themselves, which she said should be overruled that day", "The Court's jurisdiction to hear an appeal from the First Circuit at all", "The government's decision to sue a benefits recipient for repayment"],
+            options: ["The outcome for the citizens excluded from the program", "The Insular Cases themselves, which she said should be overruled that day", "The Court's jurisdiction to hear an appeal from the First Circuit at all", "The government's decision to sue a benefits recipient for repayment"],
             correctIndex: 0,
-            explanation: "She wrote that excluding millions of citizens resident in Puerto Rico from the programme fails even the deferential test the Court applied.",
+            explanation: "She wrote that excluding millions of citizens resident in Puerto Rico from the program fails even the deferential test the Court applied.",
             sourceLessonSlug: "the-critics-by-name",
           },
           {
@@ -1256,16 +1256,16 @@ Justice Gorsuch answered that argument directly, and it is worth having both hal
           },
           {
             prompt: "What was social Darwinism, in the context Justice Gorsuch invokes it?",
-            options: ["A doctrine ranking peoples by supposed evolutionary fitness", "A school of economics arguing that colonies must pay for their own administration", "A method of statutory interpretation favouring the intentions of the enacting Congress", "A theory of international law holding that conquest transfers legal obligations"],
+            options: ["A doctrine ranking peoples by supposed evolutionary fitness", "A school of economics arguing that colonies must pay for their own administration", "A method of statutory interpretation favoring the intentions of the enacting Congress", "A theory of international law holding that conquest transfers legal obligations"],
             correctIndex: 0,
             explanation: "He names it as one of the intellectual supports for the Insular Cases, alongside the academic work of the period and ugly racial stereotypes.",
             sourceLessonSlug: "the-critics-by-name",
           },
           {
-            prompt: "Why does this course quote the critics at length rather than summarising them?",
-            options: ["So the criticism can be weighed rather than taken on trust", "Because the opinions are too long to summarise accurately in a single lesson", "Because paraphrasing a judicial opinion is forbidden by the Court's own rules", "Because the critics disagree with each other about almost every point of law"],
+            prompt: "Why does this course quote the critics at length rather than summarizing them?",
+            options: ["So the criticism can be weighed rather than taken on trust", "Because the opinions are too long to summarize accurately in a single lesson", "Because paraphrasing a judicial opinion is forbidden by the Court's own rules", "Because the critics disagree with each other about almost every point of law"],
             correctIndex: 0,
-            explanation: "Saying that cases are criticised teaches nothing; naming who says what, in their own words, lets a learner judge it.",
+            explanation: "Saying that cases are criticized teaches nothing; naming who says what, in their own words, lets a learner judge it.",
             sourceLessonSlug: "the-critics-by-name",
           },
           {
@@ -1284,7 +1284,7 @@ Justice Gorsuch answered that argument directly, and it is worth having both hal
           },
           {
             prompt: "After Balzac, what did a litigant in an unincorporated territory practically need in order to rely on a constitutional limit?",
-            options: ["A clear statement from Congress", "A ruling from the territory's own supreme court applying the provision locally", "Proof that the provision had been in force at the moment of acquisition", "A certificate from the Secretary of the Interior that the territory was organised"],
+            options: ["A clear statement from Congress", "A ruling from the territory's own supreme court applying the provision locally", "Proof that the provision had been in force at the moment of acquisition", "A certificate from the Secretary of the Interior that the territory was organized"],
             correctIndex: 0,
             explanation: "Very few limits could be relied on without one, which is what the doctrine amounted to in practice.",
             sourceLessonSlug: "balzac-and-the-jury",
@@ -1333,7 +1333,7 @@ Justice Gorsuch answered that argument directly, and it is worth having both hal
           },
           {
             prompt: "According to the 1899 argument Justice Gorsuch quotes, to whom were such rules said to be applicable?",
-            options: ["Only a people whose evolution had been consonant with our own", "Only the inhabitants of territories contiguous to the continental United States", "Only persons who had been naturalised under an Act of the Congress", "Only residents of territories that had been organised by an organic act"],
+            options: ["Only a people whose evolution had been consonant with our own", "Only the inhabitants of territories contiguous to the continental United States", "Only persons who had been naturalized under an Act of the Congress", "Only residents of territories that had been organized by an organic act"],
             correctIndex: 0,
             explanation: "That phrasing is quoted directly in the concurrence, and it is why the criticism is specifically about race rather than about drafting.",
             sourceLessonSlug: "the-critics-by-name",
@@ -1368,7 +1368,7 @@ Justice Gorsuch answered that argument directly, and it is worth having both hal
           },
           {
             prompt: "What did Justice White call Puerto Rico, in the sense relevant to the revenue clauses?",
-            options: ["Foreign to the United States", "A state in all but name pending action by the Congress of the United States", "An organised territory entitled to the same treatment as the western territories", "A dependency of Spain until the treaty of cession had been fully executed"],
+            options: ["Foreign to the United States", "A state in all but name pending action by the Congress of the United States", "An organized territory entitled to the same treatment as the western territories", "A dependency of Spain until the treaty of cession had been fully executed"],
             correctIndex: 0,
             explanation: "He reached that conclusion because Congress had not, in his view, done enough to indicate an intention to incorporate the island.",
             sourceLessonSlug: "downes-v-bidwell",
@@ -1382,7 +1382,7 @@ Justice Gorsuch answered that argument directly, and it is worth having both hal
           },
           {
             prompt: "Which pair of words does the Downes holding turn on?",
-            options: ["Belonging to, and part of", "Organised and unorganised, as applied to a territory of the United States", "Foreign and domestic, as those words are used in the tariff schedules", "Citizen and national, as those words are used in the immigration statutes"],
+            options: ["Belonging to, and part of", "Organized and unorganised, as applied to a territory of the United States", "Foreign and domestic, as those words are used in the tariff schedules", "Citizen and national, as those words are used in the immigration statutes"],
             correctIndex: 0,
             explanation: "The island belongs to the United States and is not part of it, and an entire doctrine was built in the gap between the two phrases.",
             sourceLessonSlug: "downes-v-bidwell",
@@ -1396,7 +1396,7 @@ Justice Gorsuch answered that argument directly, and it is worth having both hal
           },
           {
             prompt: "How does the Fitisemanu opinion complicate the claim that criticism of the Insular Cases predicts how a case comes out?",
-            options: ["The panel criticised the cases and still ruled against the plaintiffs", "The panel praised the cases and still ruled in favour of the plaintiffs", "The panel refused to apply the cases and decided on statutory grounds instead", "The panel certified the question to the Supreme Court without deciding it"],
+            options: ["The panel criticized the cases and still ruled against the plaintiffs", "The panel praised the cases and still ruled in favor of the plaintiffs", "The panel refused to apply the cases and decided on statutory grounds instead", "The panel certified the question to the Supreme Court without deciding it"],
             correctIndex: 0,
             explanation: "Believing a doctrine is shameful and believing a court should be the one to undo it are two different positions.",
             sourceLessonSlug: "the-critics-by-name",
@@ -1477,6 +1477,716 @@ Justice Gorsuch answered that argument directly, and it is worth having both hal
             correctIndex: 0,
             explanation: "Two leading opinions in a fractured case reached one result by different roads, and the theory that survived was not the one that decided the case.",
             sourceLessonSlug: "downes-v-bidwell",
+          },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3 — American Samoa
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "nationals-but-not-citizens",
+      title: "9 · Nationals, but not citizens",
+      section: "Section 3 · American Samoa",
+      body: `There is a status in American law between citizen and foreigner, tens of thousands of people hold it, and almost nobody outside American Samoa knows it exists.
+
+Start with the section heading, because it says the whole thing: **8 U.S.C. § 1408, "Nationals but not citizens of the United States at birth."** Its first paragraph:
+
+> "Unless otherwise provided in section 1401 of this title, the following shall be nationals, but not citizens, of the United States at birth: (1) A person born in an outlying possession of the United States on or after the date of formal acquisition of such possession" (8 U.S.C. § 1408, n.d.)
+
+**Everything turns on one defined phrase, and the definition is short.** At 8 U.S.C. § 1101(a)(29): "The term 'outlying possessions of the United States' means American Samoa and Swains Island" (8 U.S.C. § 1101, n.d.).
+
+That is the entire list. **American Samoa is the only inhabited place in this course whose people are not citizens at birth, and the statute reaches it by defining it as something other than the United States.**
+
+**Read the neighboring definitions in the same section and the mechanism becomes visible.**
+
+| Definition in 8 U.S.C. § 1101(a) | What it covers |
+| --- | --- |
+| (a)(29) outlying possessions | American Samoa and Swains Island |
+| (a)(36) "State" | includes the District of Columbia, Puerto Rico, Guam, the Virgin Islands and the Northern Mariana Islands |
+| (a)(38) "United States", geographically | the continental United States, Alaska, Hawaii, Puerto Rico, Guam, the Virgin Islands and the Northern Mariana Islands |
+
+Look at what is in the second and third rows and what is not. Four territories and the District are inside the immigration statute's "United States". American Samoa is not. Recall Section 1: in the **Hatch Act**, "State" reaches Puerto Rico, Guam and the Virgin Islands but not American Samoa or the Northern Marianas. **The lists are different in different statutes, they are drawn by Congress, and American Samoa is the place most often left off.**
+
+**So what does a United States national actually have, and lack?** The Tenth Circuit set it out with the statutory citations attached, in a case brought by three American Samoans living in Utah (Fitisemanu v. United States, 2021).
+
+A national is, in the court's words, "entitled to work and travel freely in the United States and receive certain advantages in the naturalization process" (Fitisemanu v. United States, 2021). One of those advantages is in the Code: under 8 U.S.C. § 1436 a person "not a citizen who owes permanent allegiance to the United States" may become a resident of a state and naturalize, and time spent in an outlying possession counts toward the residence and physical-presence requirements (8 U.S.C. § 1436, n.d.).
+
+A national may not:
+
+- **Vote**, in the state where they live. The court cited Utah's constitution and election code for the plaintiffs' own case.
+- **Run for federal or state office.** Article I, Section 2 and Article II, Section 1 require citizenship for the House and the presidency.
+- **Serve on a federal jury**, under 28 U.S.C. § 1865(b)(1).
+- **Serve as a commissioned military officer**, under 10 U.S.C. § 532(a)(1).
+
+**Hold that last one against a fact from the same opinion.** The panel noted that "American Samoans have particularly high enlistment rates in the American military" (Fitisemanu v. United States, 2021). A person may enlist, deploy, and be killed in uniform, and may not be commissioned as an officer in the force they serve in, because of the definition in § 1101(a)(29).
+
+**None of this is an oversight and none of it is automatic.** Congress made the people of Guam citizens in 1950 and the people of the Virgin Islands citizens in stages in 1927 and 1932. It has never done so for American Samoa. The next two lessons are about what happened when three people asked a court to do it instead, and about why the answer is much less obvious than it looks.
+
+:::reveal What does 8 U.S.C. § 1408 call people born in an outlying possession? ||| Nationals, but not citizens, of the United States at birth.
+
+:::reveal What does the immigration statute define as the outlying possessions of the United States? ||| American Samoa and Swains Island, and nothing else.
+
+:::reveal Name two things a United States national may not do that a citizen may. ||| Vote in the state where they live, and serve on a federal jury; they also may not run for federal or state office or be commissioned as a military officer.
+
+## Vocabulary
+- **United States national**: a person who owes permanent allegiance to the United States and is not a citizen, which at birth today means a person born in American Samoa or Swains Island.
+- **Outlying possession**: the immigration statute's term for a place outside its geographic definition of the United States, defined at 8 U.S.C. § 1101(a)(29) as American Samoa and Swains Island.
+- **Citizenship at birth**: citizenship acquired by the fact of birth in a place or to particular parents, rather than by application, which is what § 1408 withholds.
+- **Naturalization**: the process by which a non-citizen becomes a citizen, made shorter for nationals by 8 U.S.C. § 1436 but still an application rather than a birthright.
+- **Permanent allegiance**: the obligation a national owes the United States, which is the legal hinge that makes a national something other than a foreigner.
+
+## Sources
+8 U.S.C. § 1101. (n.d.). *Definitions*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title8-section1101&num=0&edition=prelim
+
+8 U.S.C. § 1408. (n.d.). *Nationals but not citizens of the United States at birth*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title8-section1408&num=0&edition=prelim
+
+8 U.S.C. § 1436. (n.d.). *Nationals but not citizens; residence within outlying possessions*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title8-section1436&num=0&edition=prelim
+
+*Fitisemanu v. United States*, Nos. 20-4017 & 20-4019 (10th Cir. June 15, 2021). U.S. Government Publishing Office. https://www.govinfo.gov/content/pkg/USCOURTS-ca10-20-04017/pdf/USCOURTS-ca10-20-04017-0.pdf`,
+    },
+    {
+      slug: "fitisemanu-and-who-opposed-it",
+      title: "10 · Fitisemanu, and who stood on which side",
+      section: "Section 3 · American Samoa",
+      body: `This is the lesson most accounts of this subject get wrong, and the error is not about the law. It is about who was in the room.
+
+**The plaintiffs.** John Fitisemanu, Pale Tuli and Rosavita Tuli, joined by the Southern Utah Pacific Islander Coalition. All three were born in American Samoa and live in Utah. Because § 1408 makes them nationals rather than citizens, they cannot vote where they live, cannot run for office, cannot sit on a federal jury and cannot be commissioned as officers (Fitisemanu v. United States, 2021). They sued for a declaration that the Fourteenth Amendment's Citizenship Clause already makes them citizens: "All persons born or naturalized in the United States, and subject to the jurisdiction thereof, are citizens of the United States and of the State wherein they reside."
+
+**They won in the district court in Utah.** The judgment was appealed.
+
+**Now read the caption of the appeal, because it is the fact that changes the story.** The appellants were the United States, the Department of State and two of its officers. And alongside them, as **Intervenor Defendants-Appellants**, were "THE HONORABLE AUMUA AMATA; AMERICAN SAMOA GOVERNMENT" (Fitisemanu v. United States, 2021).
+
+**The government of American Samoa and American Samoa's own member of Congress intervened against the American Samoans who were suing for citizenship.** Their argument, in the panel's words, was that "not only is the current arrangement constitutional, but that imposition of birthright citizenship would be against their people's will and would risk upending certain core traditional practices" (Fitisemanu v. United States, 2021). They called what the plaintiffs sought "citizenship by judicial fiat".
+
+**The Tenth Circuit reversed** on 15 June 2021. Judge Lucero wrote for the panel:
+
+> "It is evident that the wishes of the territory's democratically elected representatives, who remind us that their people have not formed a consensus in favor of American citizenship and urge us not to impose citizenship on an unwilling people from a courthouse thousands of miles away, have not been taken into adequate consideration. Such consideration properly falls under the purview of Congress." (Fitisemanu v. United States, 2021)
+
+Note what the holding is and is not. It is **not** that American Samoans may not be citizens. It is that the Citizenship Clause does not make them citizens automatically, that Congress has the preeminent role, and that a court should not act over the stated objection of the territory's elected government.
+
+**Chief Judge Tymkovich concurred**, and his opinion is worth knowing because it is the honest version of "we cannot tell". He started from text, structure and history rather than from the Insular Cases, and concluded that "the precise geographic scope of the Citizenship Clause cannot be divined from the text and constitutional structure", and that the historical evidence, much of it floor statements by individual legislators, did not resolve it either. He also flagged that at ratification the United States had no material overseas possessions, so "the territories" in 1868 meant the contiguous ones (Fitisemanu v. United States, 2021, Tymkovich, C.J., concurring).
+
+**Judge Bacharach dissented**, opening with a line from Justice Brandeis that "the only title in our democracy superior to that of President is the title of citizen". His central objection was evidentiary: there was, he wrote, a "dearth of evidence reflecting opposition to U.S. citizenship", and the majority had let a claim about consent do work the record did not support (Fitisemanu v. United States, 2021, Bacharach, J., dissenting).
+
+**The Supreme Court declined to hear it.** On the docket for No. 21-1394 the entry for 17 October 2022 reads, in full, "Petition DENIED." (Supreme Court of the United States, n.d.). The Tenth Circuit's judgment stands, and the D.C. Circuit had reached the same result in *Tuaua v. United States* in 2015.
+
+**So the shape of the disagreement is this, and it is not left against right.** Three American Samoans want citizenship. American Samoa's elected government does not want a court to grant it. A judge who called the governing precedent disreputable ruled for the territory's government. A judge who dissented said the consent claim was not proved. The next lesson is about what the territory's government says it is protecting, and it is not nothing.
+
+:::reveal Who were the intervenor defendants opposing the plaintiffs in Fitisemanu? ||| The American Samoa Government and the Honorable Aumua Amata, the territory's own member of Congress.
+
+:::reveal What did the Tenth Circuit hold, precisely? ||| That the Citizenship Clause does not itself extend birthright citizenship to American Samoa, and that the question falls under Congress's purview rather than a court's.
+
+:::reveal What happened when the plaintiffs asked the Supreme Court to take the case? ||| The docket for No. 21-1394 records that on 17 October 2022 the petition was denied.
+
+## Vocabulary
+- **Citizenship Clause**: the first sentence of the Fourteenth Amendment, which makes all persons born or naturalized in the United States and subject to its jurisdiction citizens, and whose geographic reach is the question in this case.
+- **Intervenor**: a party who is not originally sued but joins a case because the outcome will affect it, which is how the American Samoa Government entered on the side opposing the plaintiffs.
+- **Summary judgment**: a ruling on the law without a trial, which is what the plaintiffs won in the district court and lost on appeal.
+- **Certiorari**: the discretionary review the Supreme Court grants or denies; a denial decides nothing about the merits and leaves the lower court's judgment in place.
+- **Citizenship by judicial fiat**: the intervenors' own phrase for what they opposed, which is a claim about who should decide rather than about what the answer should be.
+
+## Sources
+*Fitisemanu v. United States*, Nos. 20-4017 & 20-4019 (10th Cir. June 15, 2021). U.S. Government Publishing Office. https://www.govinfo.gov/content/pkg/USCOURTS-ca10-20-04017/pdf/USCOURTS-ca10-20-04017-0.pdf
+
+Supreme Court of the United States. (n.d.). *Docket for 21-1394, Fitisemanu v. United States*. https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/21-1394.html`,
+    },
+    {
+      slug: "faa-samoa-and-the-choice",
+      title: "11 · Fa'a Samoa, and a choice nobody else gets to make",
+      section: "Section 3 · American Samoa",
+      body: `The intervenors said citizenship could endanger something. This lesson is about what, stated concretely, and then about the evidence on both sides of whether American Samoans want it.
+
+**What fa'a Samoa is, in the Tenth Circuit's description.** Social life is organized around large extended families called **'aiga**, each led by **matai**, holders of hereditary chieftain titles. The matai regulate village life and "are the only individuals permitted to serve in the upper house of the American Samoan legislature". Land is held collectively: "more than 90% of American Samoan land belong[s] to the 'aiga rather than to any one individual." And there are, in the court's words, "racial restrictions on land ownership requiring landowners to be at least 50% American Samoan", under the territory's own code at Am. Samoa Code Ann. § 37.0204 (Fitisemanu v. United States, 2021).
+
+**Now line those up against the Constitution and the problem is obvious.** A legislative chamber reserved to hereditary title-holders is hard to square with equal protection. A blood-quantum rule for landholding is a racial classification. Communal ownership sits awkwardly beside the Takings Clause. The panel put it plainly: "Intervenors worry that these and other traditional elements of the American Samoan culture could run afoul of constitutional protections should the plaintiffs in this case prevail" (Fitisemanu v. United States, 2021).
+
+**That worry is a live claim and not a rhetorical one, and it is also not obviously right.** Nothing in the Citizenship Clause repeals a land statute, and rights litigation would still have to be brought and won case by case. What is true is that the doctrinal shield the territory currently relies on is the same doctrine Justice Gorsuch calls rotten. **Whether that shield is worth keeping is the question, and the people it shields are the ones answering it.**
+
+**The evidence on what American Samoans actually want is thin, and it points both ways. Here is all of it the court had.**
+
+**Against citizenship.** The elected government intervened to oppose it. A study the territory itself commissioned, the Future Political Status Study Committee's *Final Report* of January 2007, found at page 64 that "Public views expressed to the Commission indicate the anti-citizenship attitude remain[s] strong" (as quoted in Fitisemanu v. United States, 2021). The panel concluded that the representatives' position "appears to be a reliable expression of their people's attitude".
+
+**For citizenship, from the same record.** When American Samoans first learned they were not considered citizens, the panel notes, **many advocated for it**: the effort produced the American Samoan Commission in 1930, which recommended that Congress grant citizenship, and "The United States Senate passed legislation to this effect, but the effort failed in the House" (Fitisemanu v. United States, 2021). The same 2007 report observed at page 65 that "some" American Samoans living elsewhere in the United States had "recommended that American Samoa change to a political status which guarantees U.S. citizenship" (as quoted in Fitisemanu, Bacharach, J., dissenting). Judge Bacharach called the record a "dearth of evidence reflecting opposition".
+
+**And the fact that resolves the caricature.** The same delegate who intervened against the lawsuit has repeatedly introduced bills in Congress to make citizenship easier to get. H.R. 1208 in the 116th Congress, introduced by Mrs. Radewagen of American Samoa on 13 February 2019, would waive the English and civics examinations for nationals who have lived in a state or outlying possession continuously since birth, and would authorize a referendum asking American Samoans whether nationals should receive automatic citizenship (H.R. 1208, 2019). Judge Bacharach cited that bill and two others in his dissent.
+
+**So the position being defended is not "American Samoans should not be citizens." It is closer to "this should be decided in American Samoa and in Congress, and not by a federal court in Utah."** Reasonable people hold the other view, including three American Samoans who went to court to say so and a federal judge who agreed with them.
+
+**A course can honestly report all of that. It cannot honestly resolve it, and this one does not.** What you should carry out of this section is the structure of the disagreement: a status that denies rights, a defense of that status made by the people it applies to, and a real dispute about whether that defense reflects what those people want. Anyone who tells you this one is simple has left out a party.
+
+:::reveal What share of land in American Samoa is held communally, and by whom? ||| More than ninety percent, held by the 'aiga rather than by any individual.
+
+:::reveal Give one piece of evidence on each side of what American Samoans want. ||| Against: the 2007 status report found anti-citizenship attitudes remained strong. For: the 1930 American Samoan Commission asked Congress for citizenship and the Senate passed a bill that died in the House.
+
+:::reveal What did the same delegate who intervened against the lawsuit do in Congress? ||| Introduced bills to ease naturalization for American Samoan nationals and to authorize a referendum on automatic citizenship.
+
+## Vocabulary
+- **Fa'a Samoa**: the Samoan way, the body of custom and practice the intervenors argued would be at risk, including the matai system and communal land.
+- **'Aiga**: the large extended family that is the basic unit of Samoan social organization and the holder of most land in the territory.
+- **Matai**: a holder of a hereditary chieftain title, who regulates village life and alone may sit in the upper house of the territory's legislature.
+- **Communal land**: land held by an 'aiga rather than an individual, which in American Samoa covers more than nine tenths of the territory.
+- **Blood quantum rule**: a legal requirement expressed as a fraction of ancestry, here the territory's rule that a landowner be at least half American Samoan.
+
+## Sources
+*Fitisemanu v. United States*, Nos. 20-4017 & 20-4019 (10th Cir. June 15, 2021). U.S. Government Publishing Office. https://www.govinfo.gov/content/pkg/USCOURTS-ca10-20-04017/pdf/USCOURTS-ca10-20-04017-0.pdf
+
+H.R. 1208, 116th Cong. (2019). U.S. Government Publishing Office. https://www.govinfo.gov/content/pkg/BILLS-116hr1208ih/html/BILLS-116hr1208ih.htm`,
+    },
+    {
+      slug: "quiz-american-samoa",
+      title: "12 · Knowledge check: American Samoa",
+      section: "Section 3 · American Samoa",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What is the heading of 8 U.S.C. § 1408?",
+            options: ["Nationals but not citizens of the United States at birth", "Persons living in and born in the outlying possessions of the United States", "Citizenship of persons born in unincorporated territories after formal acquisition", "Allegiance and residence requirements for inhabitants of ceded island territories"],
+            correctIndex: 0,
+            explanation: "The heading states the status directly, and the first paragraph applies it to anyone born in an outlying possession after its formal acquisition.",
+            sourceLessonSlug: "nationals-but-not-citizens",
+          },
+          {
+            prompt: "What does 8 U.S.C. § 1101(a)(29) define as the outlying possessions of the United States?",
+            options: ["American Samoa and Swains Island", "American Samoa, Guam and the Commonwealth of the Northern Mariana Islands", "Every unincorporated territory that has not been granted an organic act by Congress", "Puerto Rico, Guam, the Virgin Islands and any island held for military purposes"],
+            correctIndex: 0,
+            explanation: "That is the entire list, and it is the definition that makes § 1408 reach American Samoa and nowhere else inhabited.",
+            sourceLessonSlug: "nationals-but-not-citizens",
+          },
+          {
+            prompt: "Which place is left out of the immigration statute's geographic definition of the 'United States'?",
+            options: ["American Samoa", "The Commonwealth of the Northern Mariana Islands, which entered by covenant in 1976", "The District of Columbia, which is a federal district rather than a state", "The United States Virgin Islands, which were purchased rather than ceded"],
+            correctIndex: 0,
+            explanation: "Section 1101(a)(38) names the continental United States, Alaska, Hawaii, Puerto Rico, Guam, the Virgin Islands and the Northern Marianas, and stops there.",
+            sourceLessonSlug: "nationals-but-not-citizens",
+          },
+          {
+            prompt: "Which jurisdictions does 8 U.S.C. § 1101(a)(36) include in the term 'State'?",
+            options: ["The District, Puerto Rico, Guam, the Virgin Islands and the Northern Marianas", "Only the fifty states, with the territories addressed by separate definitions elsewhere", "Every place under United States sovereignty, including the outlying possessions", "The fifty states and American Samoa, but not the District of Columbia"],
+            correctIndex: 0,
+            explanation: "American Samoa is absent from this list too, which is the pattern the whole section is about.",
+            sourceLessonSlug: "nationals-but-not-citizens",
+          },
+          {
+            prompt: "How do the Hatch Act and the immigration statute compare on which places count?",
+            options: ["Their lists differ, and American Samoa is left off both", "Both use the same list, drawn from the Territory Clause of the Constitution", "The Hatch Act list is longer because it includes the outlying possessions", "The immigration list is the narrower one because it excludes the District"],
+            correctIndex: 0,
+            explanation: "The Hatch Act reaches Puerto Rico, Guam and the Virgin Islands; the immigration statute adds the Northern Marianas; neither reaches American Samoa.",
+            sourceLessonSlug: "nationals-but-not-citizens",
+          },
+          {
+            prompt: "Under 8 U.S.C. § 1436, what may a national who owes permanent allegiance do?",
+            options: ["Become a resident of a state and naturalize", "Vote in federal elections while continuing to reside in an outlying possession", "Be commissioned as an officer after five years of continuous military service", "Claim citizenship automatically after ten years of residence in any state"],
+            correctIndex: 0,
+            explanation: "Time spent in an outlying possession counts toward the residence and physical-presence requirements, which shortens the road without making it a birthright.",
+            sourceLessonSlug: "nationals-but-not-citizens",
+          },
+          {
+            prompt: "Which of these may a United States national NOT do?",
+            options: ["Serve on a federal jury", "Live and work anywhere in the United States without any immigration restriction", "Travel freely between American Samoa and the continental United States", "Apply for naturalization with credit for time spent in an outlying possession"],
+            correctIndex: 0,
+            explanation: "The bar is in 28 U.S.C. § 1865(b)(1), one of four disabilities the Tenth Circuit listed with its statutory citation.",
+            sourceLessonSlug: "nationals-but-not-citizens",
+          },
+          {
+            prompt: "Under 10 U.S.C. § 532(a)(1), what is closed to a United States national?",
+            options: ["A commission as a military officer", "Enlistment in any branch of the armed forces of the United States", "Service in a National Guard unit organized under state authority", "Employment as a civilian in any department of the federal government"],
+            correctIndex: 0,
+            explanation: "A national may enlist and deploy, and the same opinion records that American Samoans have particularly high enlistment rates.",
+            sourceLessonSlug: "nationals-but-not-citizens",
+          },
+          {
+            prompt: "What did the Tenth Circuit note about American Samoan military service?",
+            options: ["Particularly high enlistment rates", "That enlistment is barred to nationals under the same statute that bars commissions", "That service in the armed forces confers citizenship automatically after discharge", "That the territory supplies more officers per capita than any state in the Union"],
+            correctIndex: 0,
+            explanation: "It sits beside the officer bar in the same opinion, which is what makes the pairing worth stopping on.",
+            sourceLessonSlug: "nationals-but-not-citizens",
+          },
+          {
+            prompt: "Which body has made the people of other territories citizens, and when it chose to?",
+            options: ["Congress", "The Supreme Court, applying the Citizenship Clause to each territory in turn", "The President, by proclamation under the Territory Clause of Article IV", "Each territorial legislature, by adopting its own citizenship ordinance"],
+            correctIndex: 0,
+            explanation: "Guam in 1950 and the Virgin Islands in 1927 and 1932, and it has never taken that step for American Samoa.",
+            sourceLessonSlug: "nationals-but-not-citizens",
+          },
+          {
+            prompt: "What is 'permanent allegiance', in this context?",
+            options: ["The obligation a national owes the United States", "A pledge taken by an applicant at the conclusion of a naturalization ceremony", "The duty of a territory's government to enforce federal law within its borders", "A treaty commitment given by the traditional leaders who signed a deed of cession"],
+            correctIndex: 0,
+            explanation: "It is the legal hinge that makes a national something other than a foreigner, and 8 U.S.C. § 1436 uses the phrase.",
+            sourceLessonSlug: "nationals-but-not-citizens",
+          },
+          {
+            prompt: "What is the difference between citizenship at birth and naturalization?",
+            options: ["One follows from the birth itself, the other requires an application", "One is granted by Congress and the other by the Supreme Court on petition", "One may be revoked by statute and the other may not be revoked at all", "One applies in the states and the other applies only in the territories"],
+            correctIndex: 0,
+            explanation: "Section 1408 withholds the first from people born in an outlying possession, and § 1436 makes the second somewhat easier for them.",
+            sourceLessonSlug: "nationals-but-not-citizens",
+          },
+          {
+            prompt: "Who were the three individual plaintiffs in Fitisemanu?",
+            options: ["John Fitisemanu, Pale Tuli and Rosavita Tuli", "Three residents of American Samoa who had never left the territory", "Three matai title-holders bringing suit on behalf of their extended families", "Three members of the American Samoan legislature acting in their official capacity"],
+            correctIndex: 0,
+            explanation: "All three were born in American Samoa and live in Utah, joined by the Southern Utah Pacific Islander Coalition.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "Where do the Fitisemanu plaintiffs live?",
+            options: ["Utah", "American Samoa, in villages governed by the traditional matai system", "The District of Columbia, where the litigation was originally filed", "Hawaii, the nearest state to the territory where they were born"],
+            correctIndex: 0,
+            explanation: "That is why the case is about voting: as nationals they cannot vote in the state where they actually live.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "What did the plaintiffs ask the court to declare?",
+            options: ["That the Citizenship Clause already makes them citizens", "That Congress must pass a statute conferring citizenship within a fixed period", "That the Insular Cases be overruled and the territory admitted as a state", "That American Samoa be reclassified as an incorporated territory by the court"],
+            correctIndex: 0,
+            explanation: "Their claim rested on the Fourteenth Amendment's first sentence, not on any request for new legislation.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "What happened in the district court in Utah?",
+            options: ["The plaintiffs won", "The case was dismissed for lack of standing before reaching the merits", "The court certified the constitutional question directly to the Supreme Court", "The court ruled for the government and the plaintiffs appealed to the Tenth Circuit"],
+            correctIndex: 0,
+            explanation: "They were granted summary judgment, and it was that judgment the federal government and the intervenors appealed.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "Who intervened on the side opposing the plaintiffs?",
+            options: ["The American Samoa Government and the territory's member of Congress", "The governments of Guam and the Commonwealth of the Northern Mariana Islands", "The American Civil Liberties Union and the Virgin Islands Bar Association", "The State of Utah, whose election code the plaintiffs had challenged"],
+            correctIndex: 0,
+            explanation: "The caption lists the Honorable Aumua Amata and the American Samoa Government as intervenor defendants-appellants.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "What was the intervenors' argument?",
+            options: ["That imposed citizenship would be against their people's will", "That the plaintiffs had abandoned their claim by moving away from the territory", "That the Fourteenth Amendment had never been ratified by the territorial legislature", "That citizenship should be conferred but only after a treaty with New Zealand"],
+            correctIndex: 0,
+            explanation: "They added that it would risk upending core traditional practices, and called what was sought citizenship by judicial fiat.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "What phrase did the intervenors use for what they opposed?",
+            options: ["Citizenship by judicial fiat", "An unconstitutional taking of communal property without just compensation", "A violation of the deeds of cession signed in 1900 and 1904 by the chiefs", "An impermissible extension of the Insular Cases beyond their original reasoning"],
+            correctIndex: 0,
+            explanation: "It is a claim about who should decide the question rather than a claim about what the answer should be.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "Who wrote the opinion for the Tenth Circuit panel?",
+            options: ["Judge Lucero", "Chief Judge Tymkovich, who also filed a separate concurring opinion", "Judge Bacharach, whose reasoning the other two judges joined in full", "The panel issued an unsigned opinion without identifying its author"],
+            correctIndex: 0,
+            explanation: "Tymkovich concurred separately and Bacharach dissented, so all three judges wrote.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "What did Judge Lucero say had not been taken into adequate consideration?",
+            options: ["The wishes of the territory's elected representatives", "The military service records of the three individual plaintiffs", "The 1929 statute by which Congress accepted the deeds of cession", "The number of American Samoans already naturalized under § 1436"],
+            correctIndex: 0,
+            explanation: "The opinion says they urged the court not to impose citizenship on an unwilling people from a courthouse thousands of miles away.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "Where did the panel say consideration of the territory's wishes properly falls?",
+            options: ["Under the purview of Congress", "With the Supreme Court, on a petition for a writ of certiorari", "With the President, acting through the Department of the Interior", "With the American Samoan judiciary, applying the territory's own constitution"],
+            correctIndex: 0,
+            explanation: "That is why the case is about who decides as much as it is about what the Citizenship Clause means.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "What did the Tenth Circuit's holding NOT say?",
+            options: ["That American Samoans may not become citizens", "That the Citizenship Clause does not itself extend birthright citizenship there", "That Congress plays the preeminent role in citizenship for unincorporated lands", "That prevailing circumstances in the territory bear on the reach of the Clause"],
+            correctIndex: 0,
+            explanation: "The holding is about the automatic operation of the Clause and about which branch decides, not about whether citizenship is permissible.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "What did Chief Judge Tymkovich conclude about the constitutional text and structure?",
+            options: ["They cannot settle the Clause's geographic scope", "They clearly extend the Clause to every place under United States sovereignty", "They confine the Clause to the states and exclude the District of Columbia", "They require a court to defer to the Insular Cases before consulting the text"],
+            correctIndex: 0,
+            explanation: "He reached the Insular Cases only after finding that text, structure and history did not resolve the question.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "What weakness did Chief Judge Tymkovich identify in the historical evidence for the plaintiffs?",
+            options: ["Much of it consisted of floor statements by individual legislators", "It rested entirely on decisions of state courts rather than federal ones", "It came from a period after the Fourteenth Amendment had been ratified", "It had been introduced too late in the litigation to be considered on appeal"],
+            correctIndex: 0,
+            explanation: "He noted such statements rank among the least illuminating forms of legislative history, and that in 1868 the United States had no material overseas possessions.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "Which justice did Judge Bacharach quote in the opening of his dissent?",
+            options: ["Justice Brandeis", "Justice Harlan, who had dissented in every one of the Insular Cases", "Chief Justice Taft, who wrote the Court's opinion in the 1922 jury case", "Justice Gorsuch, whose concurrence came a year after this dissent was filed"],
+            correctIndex: 0,
+            explanation: "The line is that the only title in our democracy superior to that of President is the title of citizen.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "What was Judge Bacharach's central objection to the majority's reasoning?",
+            options: ["The record showed a dearth of evidence of opposition", "The majority had applied the Insular Cases when it should have overruled them", "The majority had no jurisdiction to hear an appeal from a summary judgment", "The majority had ignored the territory's own constitution and its bill of rights"],
+            correctIndex: 0,
+            explanation: "His complaint was evidentiary: the consent claim was doing work the record did not support.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "What did the Supreme Court do with the petition in Fitisemanu?",
+            options: ["Denied it", "Granted it and set the case for argument in the October 2022 term", "Vacated the judgment and remanded for reconsideration in light of Vaello Madero", "Dismissed it as improvidently granted after hearing oral argument"],
+            correctIndex: 0,
+            explanation: "The docket entry for 17 October 2022 in No. 21-1394 reads, in full, Petition DENIED.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "What does a denial of certiorari decide?",
+            options: ["Nothing about the merits", "That the lower court's reasoning is approved by a majority of the justices", "That the constitutional question may not be raised again in any circuit", "That the case must be reheard by the full court of appeals sitting en banc"],
+            correctIndex: 0,
+            explanation: "It leaves the Tenth Circuit's judgment in place without endorsing it, which is why the question remains open in principle.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "Which earlier case had reached the same result as Fitisemanu?",
+            options: ["Tuaua v. United States", "Balzac v. Porto Rico, decided by the Supreme Court in 1922", "Dorr v. United States, in which a majority adopted the incorporation theory", "Loughborough v. Blake, the 1820 decision about taxation of the District"],
+            correctIndex: 0,
+            explanation: "The D.C. Circuit decided it in 2015, so two federal appellate courts have now declined to extend the Clause to American Samoa.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "What is an intervenor?",
+            options: ["A party who joins a case because the outcome will affect it", "A lawyer appointed by a court to argue a position no party has taken", "A witness whose testimony is compelled by subpoena in a civil action", "A non-party who files a brief but takes no position on the outcome"],
+            correctIndex: 0,
+            explanation: "It is how the American Samoa Government entered the case on the side opposing the American Samoan plaintiffs.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "What is the first sentence of the Fourteenth Amendment that the plaintiffs relied on called?",
+            options: ["The Citizenship Clause", "The Privileges or Immunities Clause of the Fourteenth Amendment", "The Equal Protection Clause, which reaches persons rather than citizens", "The Due Process Clause, whose equal protection component the Court applies"],
+            correctIndex: 0,
+            explanation: "It makes all persons born or naturalized in the United States and subject to its jurisdiction citizens, and its geographic reach was the question.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "What is 'aiga, in American Samoa?",
+            options: ["A large extended family", "A village council composed of elected representatives from each household", "A parcel of land registered in the name of a single individual owner", "A ceremonial gathering at which chieftain titles are conferred by vote"],
+            correctIndex: 0,
+            explanation: "It is the basic unit of Samoan social organization, led by matai and holding most of the territory's land.",
+            sourceLessonSlug: "faa-samoa-and-the-choice",
+          },
+          {
+            prompt: "What is a matai?",
+            options: ["A holder of a hereditary chieftain title", "An elected magistrate who presides over the territory's district courts", "An officer of the federal government appointed by the Secretary of the Interior", "A registered owner of communal land under the territory's land code"],
+            correctIndex: 0,
+            explanation: "Matai regulate village life and are the only individuals permitted to serve in the upper house of the territory's legislature.",
+            sourceLessonSlug: "faa-samoa-and-the-choice",
+          },
+          {
+            prompt: "Who alone may serve in the upper house of the American Samoan legislature?",
+            options: ["Matai", "Any registered voter who has resided in the territory for five years", "Citizens of the United States residing permanently in American Samoa", "Members chosen by the Secretary of the Interior from a territorial list"],
+            correctIndex: 0,
+            explanation: "That restriction is one of the traditional arrangements the intervenors argued could not survive uniform constitutional scrutiny.",
+            sourceLessonSlug: "faa-samoa-and-the-choice",
+          },
+          {
+            prompt: "What proportion of American Samoan land is held communally?",
+            options: ["More than ninety percent", "Roughly half, with the remainder held by the territorial government", "About a quarter, mostly in the villages of the Manu'a island group", "None, because the deeds of cession transferred all land to the United States"],
+            correctIndex: 0,
+            explanation: "The Tenth Circuit put it as more than 90% belonging to the 'aiga rather than to any one individual.",
+            sourceLessonSlug: "faa-samoa-and-the-choice",
+          },
+          {
+            prompt: "What does Am. Samoa Code Ann. § 37.0204 require of a landowner?",
+            options: ["At least fifty percent American Samoan ancestry", "Residence in the territory for at least ten consecutive years before purchase", "Membership in an 'aiga whose matai has consented to the transfer in writing", "United States citizenship acquired by naturalization rather than at birth"],
+            correctIndex: 0,
+            explanation: "The Tenth Circuit described it as a racial restriction on land ownership, which is exactly why the intervenors feared constitutional scrutiny.",
+            sourceLessonSlug: "faa-samoa-and-the-choice",
+          },
+          {
+            prompt: "Which constitutional provisions did the intervenors fear traditional practices would run afoul of?",
+            options: ["Equal protection, takings and establishment", "The Uniformity Clause and the Import-Export Clause of Article I", "The Territory Clause and the clause admitting new states to the Union", "The Sixth Amendment jury guarantee and the Seventh Amendment civil jury"],
+            correctIndex: 0,
+            explanation: "A chamber reserved to hereditary title-holders, a blood-quantum land rule and communal ownership each sit awkwardly beside one of them.",
+            sourceLessonSlug: "faa-samoa-and-the-choice",
+          },
+          {
+            prompt: "What does this course say about whether the intervenors' worry is obviously correct?",
+            options: ["It is a live claim but not obviously right", "It is settled law that citizenship would void the territory's land code", "It has been rejected by every court that has considered it since 2015", "It was abandoned by the intervenors before the appeal was argued"],
+            correctIndex: 0,
+            explanation: "Nothing in the Citizenship Clause repeals a land statute, and rights litigation would still have to be brought and won case by case.",
+            sourceLessonSlug: "faa-samoa-and-the-choice",
+          },
+          {
+            prompt: "What did the 2007 Future Political Status Study Committee report find at page 64?",
+            options: ["That anti-citizenship attitudes remained strong", "That a clear majority of residents favored immediate admission as a state", "That the territory's land code would survive the extension of citizenship", "That no view on citizenship could be discerned from the public consultations"],
+            correctIndex: 0,
+            explanation: "The panel relied on it as evidence that the elected representatives' position reflected their people's attitude.",
+            sourceLessonSlug: "faa-samoa-and-the-choice",
+          },
+          {
+            prompt: "What did the same 2007 report observe at page 65?",
+            options: ["That some American Samoans elsewhere wanted a status guaranteeing citizenship", "That the matai system would have to be abolished before statehood could be sought", "That the territory's population had grown in every decade since the cession", "That the United Nations had recommended a status referendum within five years"],
+            correctIndex: 0,
+            explanation: "Judge Bacharach cited it, which is why the same document appears on both sides of this question.",
+            sourceLessonSlug: "faa-samoa-and-the-choice",
+          },
+          {
+            prompt: "What happened when American Samoans first learned they were not considered citizens?",
+            options: ["Many advocated for citizenship", "The territorial government petitioned for independence from the United States", "The traditional leaders asked Congress to rescind the deeds of cession", "The question was left untouched until the litigation of the present century"],
+            correctIndex: 0,
+            explanation: "The effort produced the American Samoan Commission in 1930, which recommended that Congress grant citizenship.",
+            sourceLessonSlug: "faa-samoa-and-the-choice",
+          },
+          {
+            prompt: "What became of the 1930 Commission's recommendation?",
+            options: ["The Senate passed a bill and the House did not", "Congress enacted it and citizenship took effect in the following year", "The President vetoed the bill and the veto was sustained in both chambers", "The Supreme Court held the proposal unconstitutional before it was voted on"],
+            correctIndex: 0,
+            explanation: "The Tenth Circuit records that the Senate passed legislation to that effect but the effort failed in the House.",
+            sourceLessonSlug: "faa-samoa-and-the-choice",
+          },
+          {
+            prompt: "What has the delegate who intervened against the lawsuit also done in Congress?",
+            options: ["Introduced bills making citizenship easier to obtain", "Sponsored a resolution asking the Supreme Court to overrule the Insular Cases", "Voted against every appropriation for the territory's own government", "Petitioned the Secretary of the Interior to revoke the territory's land code"],
+            correctIndex: 0,
+            explanation: "Judge Bacharach cited three such bills, and the one from 2019 would also authorize a referendum on automatic citizenship.",
+            sourceLessonSlug: "faa-samoa-and-the-choice",
+          },
+          {
+            prompt: "What would H.R. 1208 of the 116th Congress waive for qualifying nationals?",
+            options: ["The English and civics examinations", "The requirement of continuous residence in a state before naturalizing", "The oath of allegiance ordinarily taken at a naturalization ceremony", "The filing fee charged for an application for naturalization"],
+            correctIndex: 0,
+            explanation: "It applies to nationals who have resided continuously in a state or outlying possession from birth to the approval of the application.",
+            sourceLessonSlug: "faa-samoa-and-the-choice",
+          },
+          {
+            prompt: "What else would that 2019 bill authorize?",
+            options: ["A referendum on whether nationals should receive automatic citizenship", "A federal commission to redraw the territory's land ownership rules", "A grant to fund the territory's participation in presidential elections", "A transfer of the territory's administration from Interior to the State Department"],
+            correctIndex: 0,
+            explanation: "That is the fact that makes the caricature collapse: the same person opposed a court deciding and proposed letting American Samoans decide.",
+            sourceLessonSlug: "faa-samoa-and-the-choice",
+          },
+          {
+            prompt: "How does this course characterize the position the intervenors were defending?",
+            options: ["That the decision belongs in American Samoa and in Congress", "That American Samoans should never become citizens under any circumstances", "That the Insular Cases were correctly decided and should be extended", "That the territory should seek independence rather than any closer union"],
+            correctIndex: 0,
+            explanation: "It is a claim about the forum and the process, and reasonable people including the plaintiffs and a federal judge hold the other view.",
+            sourceLessonSlug: "faa-samoa-and-the-choice",
+          },
+          {
+            prompt: "What does this course refuse to do about the American Samoa dispute?",
+            options: ["Resolve it", "Report the evidence that cuts against the territory's elected government", "Name the parties who intervened on the side opposing the plaintiffs", "State the disabilities that attach to national status under federal law"],
+            correctIndex: 0,
+            explanation: "It reports the structure of the disagreement and the evidence on both sides, and says that anyone who calls this simple has left out a party.",
+            sourceLessonSlug: "faa-samoa-and-the-choice",
+          },
+          {
+            prompt: "What is the doctrinal awkwardness in the protective argument, as this course states it?",
+            options: ["The shield is the same doctrine a sitting justice calls rotten", "The shield only operates in territories that have citizenship at birth", "The shield was created by Congress and may be withdrawn without notice", "The shield has already been abolished by the Supreme Court in Aurelius"],
+            correctIndex: 0,
+            explanation: "Unincorporated status is what keeps uniform constitutional scrutiny at bay, and it is the Insular Cases that supply it.",
+            sourceLessonSlug: "faa-samoa-and-the-choice",
+          },
+          {
+            prompt: "Which of these is a fair description of the Fitisemanu plaintiffs' complaint?",
+            options: ["They cannot vote where they live", "They were denied entry to the United States at a port of arrival", "They were taxed by the federal government without any representation", "They were refused permission to purchase communal land in the territory"],
+            correctIndex: 0,
+            explanation: "Non-citizen nationals resident in a state cannot vote there, cannot run for office, cannot sit on a federal jury and cannot be commissioned.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "Why is the caption of the Fitisemanu appeal worth reading carefully?",
+            options: ["It shows the territory's own institutions opposing the plaintiffs", "It lists every amicus curiae who filed in support of the federal government", "It records the date on which the deeds of cession were accepted by Congress", "It names the Supreme Court justices who later voted to deny certiorari"],
+            correctIndex: 0,
+            explanation: "Reading the case without the intervenors produces exactly the wrong story about who wants what.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "What did the panel say about whether the representatives' position reflected their people's views?",
+            options: ["That it appeared to be a reliable expression of it", "That it was contradicted by every survey conducted in the territory since 1930", "That the question was irrelevant because Congress alone may confer citizenship", "That the record contained no evidence about public opinion in either direction"],
+            correctIndex: 0,
+            explanation: "That judgment rested on limited evidence, and it is precisely the point the dissent attacked.",
+            sourceLessonSlug: "faa-samoa-and-the-choice",
+          },
+          {
+            prompt: "Which document did BOTH the majority and the dissent draw on in Fitisemanu?",
+            options: ["The 2007 Future Political Status Study Committee report", "The Immigration and Nationality Act's definition of outlying possessions", "The deeds of cession signed by Samoan leaders in 1900 and 1904", "The Covenant establishing the Commonwealth of the Northern Mariana Islands"],
+            correctIndex: 0,
+            explanation: "The majority quoted page 64 on anti-citizenship attitudes and the dissent quoted page 65 on Samoans elsewhere seeking citizenship.",
+            sourceLessonSlug: "faa-samoa-and-the-choice",
+          },
+          {
+            prompt: "Under the American Samoan constitution, what does the territory recognize?",
+            options: ["Freedom of speech, freedom of religion and due process", "A right to vote in United States presidential elections from the territory", "A guarantee of jury trial in every criminal prosecution brought locally", "An entitlement to two voting members in the United States House"],
+            correctIndex: 0,
+            explanation: "The Tenth Circuit noted these among other basic civil rights in the territory's own bill of rights, alongside the traditional structures.",
+            sourceLessonSlug: "faa-samoa-and-the-choice",
+          },
+          {
+            prompt: "What is a blood quantum rule?",
+            options: ["A legal requirement expressed as a fraction of ancestry", "A rule limiting how much land a single family may hold at one time", "A test of residence measured in continuous years within a territory", "A restriction on marriage between residents and non-residents of a territory"],
+            correctIndex: 0,
+            explanation: "American Samoa's is the requirement that a landowner be at least half American Samoan, at § 37.0204 of the territory's code.",
+            sourceLessonSlug: "faa-samoa-and-the-choice",
+          },
+          {
+            prompt: "Which of these is NOT one of the four disabilities the Tenth Circuit listed for nationals?",
+            options: ["Inability to hold a job in the private sector in any state", "Inability to vote in the state where the person resides", "Inability to run for federal or for state elective office", "Inability to be commissioned as a military officer"],
+            correctIndex: 0,
+            explanation: "The court said nationals are entitled to work and travel freely in the United States, so employment is not among the bars.",
+            sourceLessonSlug: "nationals-but-not-citizens",
+          },
+          {
+            prompt: "Why does § 1408 reach American Samoa rather than Guam?",
+            options: ["Because only American Samoa is an outlying possession", "Because Guam was acquired by treaty and American Samoa by deed of cession", "Because Guam has an organic act and American Samoa has never had one", "Because Guam's population is larger than American Samoa's population"],
+            correctIndex: 0,
+            explanation: "Section 1101(a)(29) names American Samoa and Swains Island, and Guam appears instead in the definitions of State and United States.",
+            sourceLessonSlug: "nationals-but-not-citizens",
+          },
+          {
+            prompt: "What is the practical effect of being outside the immigration statute's definition of the United States?",
+            options: ["Birth there does not produce citizenship under that statute", "Residents may not enter the continental United States without a visa", "The territory's laws are not subject to review in the federal courts", "The territory may not send any representative to the Congress at all"],
+            correctIndex: 0,
+            explanation: "It is a definitional exclusion doing the work, which is why the whole question can be changed by an Act of Congress.",
+            sourceLessonSlug: "nationals-but-not-citizens",
+          },
+          {
+            prompt: "How does this course describe the amount of evidence about American Samoan public opinion?",
+            options: ["Thin, and pointing both ways", "Extensive, and uniformly against the extension of citizenship", "Extensive, and uniformly in favor of the extension of citizenship", "Nonexistent, because no survey has ever been conducted in the territory"],
+            correctIndex: 0,
+            explanation: "The 2007 report, the 1930 Commission history and the delegate's own bills are read together rather than selectively.",
+            sourceLessonSlug: "faa-samoa-and-the-choice",
+          },
+          {
+            prompt: "What did the plaintiffs' status prevent them from doing in the armed forces?",
+            options: ["Holding a commission", "Enlisting in any branch of the service at any rank whatsoever", "Serving outside the boundaries of the United States and its possessions", "Receiving veterans benefits after an honorable discharge from service"],
+            correctIndex: 0,
+            explanation: "The bar is in 10 U.S.C. § 532(a)(1), and it sits beside the panel's note about high enlistment rates.",
+            sourceLessonSlug: "nationals-but-not-citizens",
+          },
+          {
+            prompt: "In which year did the Tenth Circuit decide Fitisemanu?",
+            options: ["2021", "2015, the same year the D.C. Circuit decided the parallel case", "2022, the year the Supreme Court denied the petition for certiorari", "2019, the year the delegate introduced her naturalization bill"],
+            correctIndex: 0,
+            explanation: "The opinion was filed on 15 June 2021, and the Supreme Court denied review the following year.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "What kind of judgment did the plaintiffs win below and lose on appeal?",
+            options: ["Summary judgment", "A jury verdict returned after a trial in the District of Utah", "A consent decree agreed to by the federal government before trial", "A preliminary injunction pending resolution of the constitutional question"],
+            correctIndex: 0,
+            explanation: "It is a ruling on the law without a trial, which is what the appeal reversed.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "Which statute would have to change for people born in American Samoa to be citizens at birth by legislation?",
+            options: ["The immigration statute's definitions and § 1408", "The Territory Clause of Article IV of the United States Constitution", "The Act of 1929 by which Congress accepted the deeds of cession", "The Hatch Act's definition of a State at 7 U.S.C. § 361a"],
+            correctIndex: 0,
+            explanation: "Congress did exactly that kind of thing for Guam and the Virgin Islands, which is why the question is legislative as well as judicial.",
+            sourceLessonSlug: "nationals-but-not-citizens",
+          },
+          {
+            prompt: "How should a careful reader describe American Samoans' relationship to their status?",
+            options: ["Divided, with real disagreement among them", "Uniformly opposed to citizenship and satisfied with the present arrangement", "Uniformly in favor of citizenship and blocked only by the federal courts", "Indifferent, because the status makes no practical difference to daily life"],
+            correctIndex: 0,
+            explanation: "Three of them sued for citizenship, their elected government opposed a court granting it, and their delegate proposed a referendum on it.",
+            sourceLessonSlug: "faa-samoa-and-the-choice",
+          },
+          {
+            prompt: "Which of these is the strongest single fact against reading Fitisemanu as a straightforward denial of rights?",
+            options: ["The territory's own government asked the court to rule that way", "The Supreme Court denied certiorari without any recorded dissent", "The panel described the Insular Cases as disreputable to modern eyes", "The plaintiffs had moved away from the territory before filing suit"],
+            correctIndex: 0,
+            explanation: "The parties opposing the American Samoan plaintiffs included the American Samoa Government and the territory's member of Congress.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "What is the relationship between the 1930 effort and the 2007 report?",
+            options: ["They record opinion at two different times and point differently", "They were produced by the same commission twenty-seven years apart", "Both concluded that American Samoans opposed United States citizenship", "Both were rejected by Congress without any recorded floor vote"],
+            correctIndex: 0,
+            explanation: "In 1930 a Samoan commission asked for citizenship; in 2007 a Samoan study found anti-citizenship attitudes strong, and the course reports both.",
+            sourceLessonSlug: "faa-samoa-and-the-choice",
+          },
+          {
+            prompt: "Why does the course say that the Citizenship Clause would not automatically repeal the territory's land code?",
+            options: ["Because rights litigation would still have to be brought and won", "Because the Constitution exempts communal property from all federal scrutiny", "Because the territory's code was approved by Congress in the 1929 statute", "Because the Insular Cases would continue to apply to land questions only"],
+            correctIndex: 0,
+            explanation: "The worry is real without being a certainty, and the course says so rather than picking whichever version fits a conclusion.",
+            sourceLessonSlug: "faa-samoa-and-the-choice",
+          },
+          {
+            prompt: "Which of these best captures the disabilities of national status in one sentence?",
+            options: ["Free to live and work here, unable to vote or hold office", "Unable to enter the United States without a visa issued in advance", "Entitled to all constitutional rights except the right to a jury trial", "Treated as a foreign national for every purpose of federal law"],
+            correctIndex: 0,
+            explanation: "The Tenth Circuit's own summary pairs free movement and work with the loss of the vote, office, federal juries and a commission.",
+            sourceLessonSlug: "nationals-but-not-citizens",
+          },
+          {
+            prompt: "What did the deeds-of-cession statute do about citizenship, as Section 1 established?",
+            options: ["Nothing", "Conferred it on all inhabitants as of the date of acceptance in 1929", "Conferred it only on those born after the acceptance of the cessions", "Delegated the question to the Secretary of the Interior by regulation"],
+            correctIndex: 0,
+            explanation: "48 U.S.C. § 1661 accepts the cessions and provides for government, and Congress has never added the citizenship step.",
+            sourceLessonSlug: "nationals-but-not-citizens",
+          },
+          {
+            prompt: "Which of these describes the Southern Utah Pacific Islander Coalition's role?",
+            options: ["It was a plaintiff alongside the three individuals", "It filed an amicus brief supporting the American Samoa Government", "It intervened on the side of the federal government on appeal", "It was the state agency that had refused to register the plaintiffs to vote"],
+            correctIndex: 0,
+            explanation: "The caption lists it with John Fitisemanu, Pale Tuli and Rosavita Tuli as plaintiffs-appellees.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "Why does the course pair the officer bar with the enlistment rate?",
+            options: ["Because the same status permits the service and forbids the rank", "Because both figures come from the Census Bureau's 2020 count", "Because the enlistment rate is what persuaded the panel to rule as it did", "Because Congress cited both when it accepted the deeds of cession"],
+            correctIndex: 0,
+            explanation: "A person may enlist, deploy and be killed in uniform and may not be commissioned in the force they serve in.",
+            sourceLessonSlug: "nationals-but-not-citizens",
+          },
+          {
+            prompt: "What would you need to know before saying that American Samoans want or do not want citizenship?",
+            options: ["Which American Samoans, and on what evidence", "Only the position of the territory's elected representatives in Congress", "Only the result of the most recent federal court decision on the question", "Only whether the territory's land code would survive constitutional review"],
+            correctIndex: 0,
+            explanation: "The record contains a 1930 commission asking for it, a 2007 study finding opposition, three plaintiffs suing for it and a delegate proposing a referendum.",
+            sourceLessonSlug: "faa-samoa-and-the-choice",
+          },
+          {
+            prompt: "What does the phrase 'from a courthouse thousands of miles away' refer to?",
+            options: ["The intervenors' objection to a Utah court deciding their status", "The distance between American Samoa and the Supreme Court in Washington", "The location of the Tenth Circuit's chambers relative to the territory", "The plaintiffs' argument that distance should not affect constitutional rights"],
+            correctIndex: 0,
+            explanation: "The panel quoted the elected representatives urging it not to impose citizenship on an unwilling people from such a courthouse.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "Which court decided Tuaua v. United States?",
+            options: ["The D.C. Circuit", "The Tenth Circuit, sitting in Denver five years before Fitisemanu", "The Supreme Court of the United States, on a writ of certiorari", "The High Court of American Samoa, applying the territory's constitution"],
+            correctIndex: 0,
+            explanation: "It reached the same result in 2015, so two federal appellate courts have declined to extend the Citizenship Clause to American Samoa.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "What did Chief Judge Tymkovich say the United States lacked at the time the Fourteenth Amendment was ratified?",
+            options: ["Material overseas possessions", "A statute defining who counted as a national of the United States", "Any federal court with jurisdiction over territorial disputes", "A settled practice of admitting territories as states of the Union"],
+            correctIndex: 0,
+            explanation: "So references to the territories in 1868 pointed at the contiguous ones, which is why he thought the historical evidence did not resolve the case.",
+            sourceLessonSlug: "fitisemanu-and-who-opposed-it",
+          },
+          {
+            prompt: "What is the single defined phrase that decides American Samoa's citizenship status?",
+            options: ["Outlying possession", "Unincorporated territory, as that term is used in the Insular Cases", "Insular area, as that term appears in the agricultural statutes", "Covered territory, as that term is used in the Puerto Rico oversight law"],
+            correctIndex: 0,
+            explanation: "Section 1408 turns entirely on it, and § 1101(a)(29) defines it as American Samoa and Swains Island.",
+            sourceLessonSlug: "nationals-but-not-citizens",
+          },
+          {
+            prompt: "Which island is named alongside American Samoa in the outlying-possessions definition?",
+            options: ["Swains Island", "Palmyra Atoll, the only remaining incorporated territory of the United States", "Wake Island, administered by the Department of the Air Force", "Navassa Island, claimed under the nineteenth-century guano legislation"],
+            correctIndex: 0,
+            explanation: "The definition at 8 U.S.C. § 1101(a)(29) names exactly those two places and nothing else.",
+            sourceLessonSlug: "nationals-but-not-citizens",
+          },
+          {
+            prompt: "What makes American Samoa unique among the inhabited places in this course?",
+            options: ["Its people are not citizens at birth", "It is the only one whose land was purchased rather than ceded by treaty", "It is the only one without any elected legislature of its own", "It is the only one that sends no representative at all to Congress"],
+            correctIndex: 0,
+            explanation: "Congress conferred citizenship on Puerto Rico, Guam, the Virgin Islands and the Northern Marianas, and has never done so here.",
+            sourceLessonSlug: "nationals-but-not-citizens",
           },
         ],
       },
