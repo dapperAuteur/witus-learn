@@ -1332,5 +1332,597 @@ Congressional Research Service. (2021, June 15). *1890 land-grant universities: 
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3 — Ninety years
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "not-eligible-for-these-grants",
+      title: "9 · Not eligible for these grants",
+      section: "Section 3 · Ninety years",
+      body: `This is the sentence. If you remember one thing from this course, remember where to find it, because it is three pages into a free congressional document and it requires no inference at all.
+
+> "Shortly after the 1862 Institutions were established as LGUs, Congress enacted legislation to provide them with annual capacity grants for research (Hatch Act of 1887, 7 U.S.C. §361a et seq.) and capacity grants for extension in 1914 (Smith-Lever Act, 7 U.S.C. §341 et seq.). **The 1890 Institutions were not eligible for these grants.** Congress first authorized annual capacity grants specifically for research and extension at the 1890 Institutions in the National Agricultural Research, Education, and Teaching Policy Act of 1977 (NARETPA)." (Congressional Research Service [CRS], 2021, p. 2)
+
+**Now do the subtraction, because the subtraction is the argument.**
+
+| Capacity grant | 1862 institutions | 1890 institutions | Gap |
+| --- | --- | --- | --- |
+| Research | Hatch Act, 1887 | NARETPA, 1977 | 90 years |
+| Extension | Smith-Lever Act, 1914 | NARETPA, 1977 | 63 years |
+
+**Ninety years of research money. Sixty-three years of extension money.** Not underfunded. Not eligible.
+
+**Recall from Section 1 what capacity money actually buys**, because "ninety years of funding" understates it. Capacity money is annual and formula-driven, so it hires people onto careers, keeps equipment running, and accumulates the long data series and the track record that go on to win competitive grants. An institution that has had it since 1887 is not simply richer than one that got it in 1977. It has ninety additional years of compounding capability, and the compounding is the point.
+
+**A warning about a source you will meet, and a habit it should teach you.** The Association of Public and Land-grant Universities published a policy brief on exactly this subject in 2013. Its account of the gap says the Evans-Allen Act was "established in 1977 (90 years after the Hatch Act of 1887)", which is correct, and then in the same paragraph calls the 1977 statute "The National Agriculture Research, Extension and Teaching Act of **1997**" and says it was "established **83 years** after the Smith-Lever Act of 1914" (Lee & Keys, 2013, p. 5).
+
+**Both of those are wrong, and they are wrong together.** 1977 minus 1914 is 63, not 83. The "1997" beside it is a typo for 1977, and the likeliest reading is that the year error and the arithmetic error are the same mistake happening twice. This is the land-grant universities' own association, writing about its own members, and it still needs checking.
+
+**So the habit: take the statutory dates from the statute or from CRS, and do the arithmetic yourself.** Every date in the table above is in a document you can open, and a subtraction is not a citation you have to trust.
+
+**One cross-link worth following.** The Name on the Door teaches Robert R. Taylor at Tuskegee, and the buildings students made the bricks for. This course is the answer to a question that course does not ask: **why an institution like Tuskegee existed to be built at all**, and why its research arm spent its first eighty-seven years ineligible for the money that made a land-grant university a research university.
+
+:::reveal What is the CRS sentence that carries this course? ||| The 1890 Institutions were not eligible for these grants, meaning the Hatch Act research capacity grants and the Smith-Lever extension capacity grants.
+
+:::reveal How long was the research gap, and how long the extension gap? ||| Ninety years for research, from 1887 to 1977, and sixty-three years for extension, from 1914 to 1977.
+
+:::reveal What two errors sit in one sentence of the 2013 APLU brief? ||| It prints 1997 for the 1977 statute and says extension arrived 83 years after 1914 when the correct figure is 63.
+
+## Vocabulary
+- **Ineligible**: not entitled to apply, which is a different and stronger condition than applying and receiving too little.
+- **Compounding capability**: the staff, equipment, data series and track record an institution accumulates from annual funding, which is why a ninety-year gap is not a ninety-year cash difference.
+- **NARETPA**: the National Agricultural Research, Extension, and Teaching Policy Act of 1977, the first statute to authorize annual research and extension capacity grants for the 1890 institutions.
+- **Doing the subtraction**: the habit this lesson teaches, of taking statutory dates from a primary source and computing the interval rather than repeating a published interval.
+
+## Sources
+Congressional Research Service. (2021, June 15). *1890 land-grant universities: Background and selected issues* (In Focus No. IF11847, Version 10). https://www.congress.gov/crs-product/IF11847
+
+Lee, J. M., Jr., & Keys, S. W. (2013, September). *Land-grant but unequal: State one-to-one match funding for 1890 land-grant universities* (Policy Brief No. 3000-PB1). Association of Public and Land-grant Universities. https://www.aplu.org/wp-content/uploads/land-grant-but-unequal-state-one-to-one-match-funding-for-1890-land-grant-universities.pdf`,
+    },
+    {
+      slug: "a-remedy-written-as-a-fraction",
+      title: "10 · A remedy written as a fraction",
+      section: "Section 3 · Ninety years",
+      body: `When the remedy finally arrived in 1977, look at how Congress sized it. Not in dollars. **As a percentage of what the other class of institution was getting.**
+
+**CRS states it plainly:** "NARETPA originally required these appropriations to equal not less than 15% (research) and 4% (extension) of the capacity grant appropriations for 1862 Institutions. The 2008 farm bill (P.L. 110-246) increased these requirements to 30% (research) and 20% (extension)" (CRS, 2021, p. 2).
+
+**Read the extension floor again: four per cent.** For thirty-one years, from 1977 until the 2008 farm bill, the statutory minimum for extension at the nineteen 1890 institutions was four per cent of what the 1862 institutions received.
+
+**And you can read the current floor in the statute itself**, at 7 U.S.C. § 3221(a)(2):
+
+> "Beginning with fiscal year 2003, there shall be appropriated under this section for each fiscal year an amount that is not less than 20 percent of the total appropriations for such year under the Act of May 8, 1914 ... and related acts pertaining to cooperative extension work at the land-grant institutions identified in the Act of May 8, 1914" (7 U.S.C. § 3221, n.d.).
+
+**A floor expressed as a fraction of somebody else's appropriation is a permanent statement about relative size.** It does not say what the work costs. It says what share of another institution's funding this institution may not fall below. That is a different kind of promise, and it is the third time this course has met the same design move.
+
+**The three 1890 capacity grants, as CRS lists them**, with the enacted FY2021 appropriations it reports:
+
+| Programme | Authority | Match required | FY2021 |
+| --- | --- | --- | --- |
+| Extension capacity grants | NARETPA § 1444, 7 U.S.C. § 3221 | One-to-one, waivable up to 50% | $62 million |
+| Research capacity grants (Evans-Allen) | NARETPA § 1445, 7 U.S.C. § 3222 | One-to-one, waivable up to 50% | $73 million |
+| 1890 Facilities Grant Program | NARETPA § 1447, 7 U.S.C. § 3222b | **None** | $21.5 million |
+
+**Notice the third row.** The facilities grant requires no match, which tells you the match is a policy choice Congress makes programme by programme rather than a fixed feature of federal money.
+
+**How the extension money is actually split among the nineteen** is also in the statute, and it is worth seeing because it explains why per-institution amounts differ so much. After 4 per cent goes to the agency for administration, 20 per cent is allotted in equal shares, 40 per cent by the rural population of each institution's state, and the balance by farm population, both from the last decennial census. And once again, "the allotments to Tuskegee University and Alabama Agricultural and Mechanical University shall be determined as if each institution were in a separate State" (7 U.S.C. § 3221, n.d.).
+
+**One measured figure from the sector's own brief.** Writing in 2013, APLU reported that the 1890 institutions "currently receive about 21 percent of Hatch Act funding through the Evans-Allen Act" (Lee & Keys, 2013, p. 5), against a statutory research floor that had been 30 per cent since 2008. Take that as APLU's figure rather than as a settled one, and note that a floor and an outturn are two different measurements.
+
+:::reveal How did NARETPA originally size the 1890 appropriations? ||| As percentages of the 1862 capacity grant appropriations: not less than 15 per cent for research and 4 per cent for extension.
+
+:::reveal What did the 2008 farm bill do to those floors? ||| Raised them to 30 per cent for research and 20 per cent for extension.
+
+:::reveal Which of the three 1890 capacity grants requires no non-federal match? ||| The 1890 Facilities Grant Program, which shows that the match is a choice Congress makes programme by programme.
+
+## Vocabulary
+- **Statutory floor**: a minimum appropriation Congress writes into law, which here is expressed as a share of another class of institution's funding rather than as a dollar amount.
+- **Evans-Allen**: the research capacity grant for the 1890 institutions, authorized by NARETPA § 1445 and codified at 7 U.S.C. § 3222.
+- **Allotment formula**: the statutory rule dividing a capacity appropriation among eligible institutions, which here uses equal shares, rural population and farm population.
+- **Outturn**: what a programme actually received in a given year, which is a different measurement from the floor below which it may not fall.
+
+## Sources
+7 U.S.C. § 3221. (n.d.). *Extension at 1890 land-grant colleges, including Tuskegee University*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title7-section3221&num=0&edition=prelim
+
+Congressional Research Service. (2021, June 15). *1890 land-grant universities: Background and selected issues* (In Focus No. IF11847, Version 10). https://www.congress.gov/crs-product/IF11847
+
+Lee, J. M., Jr., & Keys, S. W. (2013, September). *Land-grant but unequal: State one-to-one match funding for 1890 land-grant universities* (Policy Brief No. 3000-PB1). Association of Public and Land-grant Universities. https://www.aplu.org/wp-content/uploads/land-grant-but-unequal-state-one-to-one-match-funding-for-1890-land-grant-universities.pdf`,
+    },
+    {
+      slug: "three-tiers-in-one-row",
+      title: "11 · Three tiers in one row",
+      section: "Section 3 · Ninety years",
+      body: `In 1994, Congress made tribal colleges land-grant institutions. **The Equity in Educational Land-Grant Status Act of 1994** is part C of title V of Public Law 103-382, enacted 20 October 1994 and printed at 108 Stat. 4048. Section 533 provides that "1994 Institutions shall be considered land-grant colleges established for the benefit of agriculture and the mechanic arts", and section 532 defines the category by listing the colleges by name (7 U.S.C. § 301, n.d., statutory note).
+
+**A definition by list is worth pausing on.** It means the category is not a test anyone can satisfy. It is a roster, amended by Congress, exactly as Section 2 found for the 1890 group. The list has been amended by several farm bills since, most recently in the statute as printed by the 2014 and 2018 Acts.
+
+**Now put the three tiers in one row, using the table CRS built for Congress** (CRS, 2021, Table 1). This is FY2020 enacted appropriations for the research and extension capacity programmes:
+
+| | 1862 | 1890 | 1994 |
+| --- | --- | --- | --- |
+| Institutions | 57 | 19 | 35 |
+| Federal capacity funding, research and extension | $574 million | $124 million | (blank) |
+| Share of that funding | 82% | 18% | 0% |
+
+**The blank is not a rounding artifact and it is not zero dollars misprinted.** CRS's own source note explains it: the funding totals include capacity programmes for the 1862 institutions (Hatch, Smith-Lever 3(b) and 3(c)) and for the 1890 institutions (Evans-Allen, NARETPA § 1444), and for the 1994 institutions, "no comparable programs" (CRS, 2021, Table 1 note).
+
+**Three tiers, one row, in a document written for members of Congress.** A course does not need to editorialise that.
+
+**Two sentences this course will put next to each other and then stop.** The 1862 institutions were endowed with land taken from Indigenous nations, as Lesson 2 stated and cited. The institutions run by those nations were admitted to the same land-grant system 132 years later, and the cell for their share of research and extension capacity funding is blank because no comparable programme exists.
+
+**What this course does not do with that.** It does not narrate the 1994 institutions' own story, their endowment arrangements, or what tribal colleges do, because that is not this course's material and asserting it from a summary would be exactly the failure this catalog is built to avoid. **Tribal Nations and Governance** owns Indigenous governance. The land itself belongs to WARRANT-03. This lesson's job is to show you the row and tell you where the three numbers come from.
+
+**And the honest caution on the counts, again.** The 35 is CRS's figure as of June 2021. Section 2 showed that the statutory list currently names 36 colleges. Cite the number with the source and the date, or do not cite the number.
+
+:::reveal What is the short title of the 1994 statute, and what public law is it part of? ||| The Equity in Educational Land-Grant Status Act of 1994, part C of title V of Public Law 103-382, enacted 20 October 1994.
+
+:::reveal Why is the 1994 column of the CRS capacity-funding table blank? ||| Because there are no comparable capacity programmes for those institutions, which is what the table's own source note says.
+
+:::reveal What are the three shares of federal research and extension capacity funding CRS reports for 2020? ||| 82 per cent to the 1862 institutions, 18 per cent to the 1890 institutions, and 0 per cent to the 1994 institutions.
+
+## Vocabulary
+- **1994 institutions**: the tribal colleges given land-grant status by the Equity in Educational Land-Grant Status Act of 1994, defined in the statute by a list of names.
+- **Definition by list**: a statutory category that names its members rather than stating a test, so membership changes only when Congress amends the list.
+- **No comparable programs**: the CRS table's own explanation for the blank cell, meaning the absence of an equivalent capacity grant rather than an appropriation of zero.
+- **Enacted appropriations**: the amounts Congress actually provided in a given year's appropriations act, which is what CRS's table reports for FY2020.
+
+## Sources
+7 U.S.C. § 301. (n.d.). *Land grant aid of colleges* [including the Equity in Educational Land-Grant Status Act of 1994, Pub. L. No. 103-382, tit. V, pt. C, 108 Stat. 4048, as a statutory note]. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title7-section301&num=0&edition=prelim
+
+Congressional Research Service. (2021, June 15). *1890 land-grant universities: Background and selected issues* (In Focus No. IF11847, Version 10). https://www.congress.gov/crs-product/IF11847`,
+    },
+    {
+      slug: "quiz-ninety-years",
+      title: "12 · Knowledge check: ninety years",
+      section: "Section 3 · Ninety years",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What does CRS say about the 1890 institutions and the Hatch and Smith-Lever capacity grants?",
+            options: ["They were not eligible", "They received a reduced allotment set at fifteen per cent of the 1862 share", "They received the grants only in states that had divided the funds equitably", "They were eligible but rarely applied, since few had experiment stations"],
+            correctIndex: 0,
+            explanation: "Not eligible is a stronger and different condition from applying and receiving too little.",
+            sourceLessonSlug: "not-eligible-for-these-grants",
+          },
+          {
+            prompt: "In what year did Congress first authorize annual research and extension capacity grants for the 1890 institutions?",
+            options: ["1977", "1890, in the Second Morrill Act that created the institutions", "1914, alongside the creation of the Cooperative Extension Service", "2008, when the appropriation floors were raised in the farm bill"],
+            correctIndex: 0,
+            explanation: "The National Agricultural Research, Extension, and Teaching Policy Act of 1977, as CRS states.",
+            sourceLessonSlug: "not-eligible-for-these-grants",
+          },
+          {
+            prompt: "How long was the research capacity gap between the 1862 and the 1890 institutions?",
+            options: ["90 years", "63 years, which is the interval that applies to extension rather than research", "83 years, the figure the 2013 policy brief prints", "31 years, the interval between the 1977 floors and their 2008 increase"],
+            correctIndex: 0,
+            explanation: "Hatch in 1887 to NARETPA in 1977 is ninety years.",
+            sourceLessonSlug: "not-eligible-for-these-grants",
+          },
+          {
+            prompt: "How long was the extension capacity gap?",
+            options: ["63 years", "90 years, which is the interval that applies to research rather than extension", "83 years, the figure the 2013 policy brief prints", "20 years, matching the statutory extension floor set in 2008"],
+            correctIndex: 0,
+            explanation: "Smith-Lever in 1914 to NARETPA in 1977 is sixty-three years, and 83 is an error a published brief repeats.",
+            sourceLessonSlug: "not-eligible-for-these-grants",
+          },
+          {
+            prompt: "What two errors sit in the same sentence of the 2013 APLU brief?",
+            options: ["1997 for 1977, and 83 for 63", "1887 for 1877, and 90 for 63", "1914 for 1917, and 20 for 30", "1977 for 1997, and 61 for 51"],
+            correctIndex: 0,
+            explanation: "The year typo and the arithmetic error are most likely the same mistake happening twice.",
+            sourceLessonSlug: "not-eligible-for-these-grants",
+          },
+          {
+            prompt: "Which part of the 2013 APLU brief's account of the gap is arithmetically correct?",
+            options: ["Ninety years after Hatch", "Eighty-three years after Smith-Lever", "The 1997 date it gives for NARETPA", "Its statement that extension arrived before research"],
+            correctIndex: 0,
+            explanation: "1977 minus 1887 really is 90; it is the Smith-Lever half of the same paragraph that fails.",
+            sourceLessonSlug: "not-eligible-for-these-grants",
+          },
+          {
+            prompt: "What habit does this course draw out of the APLU error?",
+            options: ["Do the subtraction yourself", "Prefer association publications to congressional ones on funding questions", "Cite only the most recent version of any published brief", "Treat any figure repeated by two sources as corroborated"],
+            correctIndex: 0,
+            explanation: "Every date is in a document you can open, and a subtraction is not a citation you have to trust.",
+            sourceLessonSlug: "not-eligible-for-these-grants",
+          },
+          {
+            prompt: "Why does this course say ninety years of funding understates the gap?",
+            options: ["Capacity money compounds", "Because inflation over the period was higher than the appropriations growth", "Because the 1890 institutions also lost their annual appropriation in 1995", "Because the Hatch Act appropriation was larger per institution than Evans-Allen"],
+            correctIndex: 0,
+            explanation: "Annual formula money buys careers, equipment, long data series and the track record that wins competitive grants.",
+            sourceLessonSlug: "not-eligible-for-these-grants",
+          },
+          {
+            prompt: "Which shipped course does this one cross-link to at Tuskegee's buildings?",
+            options: ["The Name on the Door", "The Schoolhouse Network, which teaches community-financed school construction", "Cooperatives, which teaches the Rural Electrification Act", "Tribal Nations and Governance, which teaches allotment and the trust responsibility"],
+            correctIndex: 0,
+            explanation: "That course teaches Robert R. Taylor and the buildings students made the bricks for; this one explains why the institution existed to be built.",
+            sourceLessonSlug: "not-eligible-for-these-grants",
+          },
+          {
+            prompt: "What does NARETPA stand for?",
+            options: ["National Agricultural Research, Extension, and Teaching Policy Act", "National Agricultural Resources, Education and Technical Preparation Act", "National Agriculture Research, Endowment and Training Programs Act", "National Association for Rural Extension, Teaching and Public Agriculture"],
+            correctIndex: 0,
+            explanation: "The 1977 statute, Pub. L. 95-113, Title XIV, which first authorized 1890 capacity grants.",
+            sourceLessonSlug: "not-eligible-for-these-grants",
+          },
+          {
+            prompt: "How did NARETPA originally size the 1890 research appropriation?",
+            options: ["Not less than 15% of the 1862 figure", "As a fixed dollar amount adjusted annually for inflation", "At whatever level the Secretary of Agriculture determined each year", "In proportion to the enrollment of each 1890 institution"],
+            correctIndex: 0,
+            explanation: "Fifteen per cent for research, and four per cent for extension, of the 1862 capacity grant appropriations.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "What was NARETPA's original extension floor?",
+            options: ["4%", "15%, the same figure it set for research", "20%, the level set in 2008", "30%, the level set in 2008 for research"],
+            correctIndex: 0,
+            explanation: "Four per cent of the 1862 extension capacity appropriations, and it stayed there for thirty-one years.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "Which statute raised the 1890 appropriation floors?",
+            options: ["The 2008 farm bill", "The Agricultural Act of 2014, which also designated Central State University", "The Agriculture Improvement Act of 2018, which added the reporting requirement", "The Equity in Educational Land-Grant Status Act of 1994"],
+            correctIndex: 0,
+            explanation: "Public Law 110-246 raised research to 30 per cent and extension to 20 per cent.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "What are the current statutory floors for the 1890 appropriations?",
+            options: ["30% research, 20% extension", "15% research, 4% extension, unchanged since 1977", "50% for both, matching the waiver ceiling", "21% research and no floor for extension"],
+            correctIndex: 0,
+            explanation: "Raised from the original 15 and 4 by the 2008 farm bill.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "How long did the four per cent extension floor stand?",
+            options: ["31 years", "63 years, matching the extension eligibility gap", "90 years, matching the research eligibility gap", "10 years, until the 1987 farm bill revised it"],
+            correctIndex: 0,
+            explanation: "From 1977 until the 2008 farm bill raised it to twenty per cent.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "What does 7 U.S.C. § 3221(a)(2) express the extension minimum as?",
+            options: ["A percentage of the Smith-Lever appropriation", "A fixed dollar amount specified for each fiscal year", "A share of the state's own extension appropriation", "A multiple of the institution's prior-year allotment"],
+            correctIndex: 0,
+            explanation: "Not less than 20 per cent of the total appropriations under the Act of May 8, 1914, excluding Smith-Lever section 3(d).",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "Beginning with which fiscal year does the twenty per cent extension floor apply?",
+            options: ["2003", "1977, the year NARETPA was enacted", "2008, the year the farm bill raised the floors", "2018, the year the reporting requirement was added"],
+            correctIndex: 0,
+            explanation: "The statute says beginning with fiscal year 2003, which is earlier than the 2008 statute that set the twenty per cent level.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "What does this course say a floor expressed as a fraction of another institution's appropriation is?",
+            options: ["A statement about relative size", "A guarantee that funding will rise with the cost of the work", "An accounting convention with no policy content", "A temporary measure that lapses when the appropriation changes"],
+            correctIndex: 0,
+            explanation: "It does not say what the work costs; it says what share of somebody else's funding this institution may not fall below.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "Which authority carries the 1890 extension capacity grant?",
+            options: ["NARETPA § 1444, 7 U.S.C. § 3221", "NARETPA § 1445, 7 U.S.C. § 3222, which carries research", "NARETPA § 1447, 7 U.S.C. § 3222b, which carries facilities", "Smith-Lever section 3(d), 7 U.S.C. § 343(d)"],
+            correctIndex: 0,
+            explanation: "Section 1444 is extension and section 1445, the Evans-Allen Act, is research.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "Which authority carries the 1890 research capacity grant?",
+            options: ["The Evans-Allen Act", "The Hatch Act of 1887, which the 1890 institutions became eligible for in 1977", "The 1890 Facilities Grant Program", "Smith-Lever section 3(b), which funds cooperative extension work"],
+            correctIndex: 0,
+            explanation: "Evans-Allen is NARETPA section 1445, codified at 7 U.S.C. § 3222.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "Which of the three 1890 capacity grants requires no match?",
+            options: ["The facilities grant", "The Evans-Allen research capacity grant", "The extension capacity grant under section 1444", "None of them; all three require a one-to-one match"],
+            correctIndex: 0,
+            explanation: "The 1890 Facilities Grant Program under NARETPA section 1447 requires no matching funds.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "What does the facilities grant's lack of a match requirement demonstrate?",
+            options: ["The match is a policy choice", "That facilities spending is exempt from federal cost-sharing rules generally", "That the 1890 institutions were excused from matching after 2008", "That capacity grants never carry conditions of any kind"],
+            correctIndex: 0,
+            explanation: "Congress attaches or omits a match programme by programme, so a match is a decision rather than a fixed feature of federal money.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "What FY2021 appropriation does CRS report for the 1890 research capacity grant?",
+            options: ["$73 million", "$62 million, which is the extension figure", "$21.5 million, which is the facilities figure", "$124 million, which is the FY2020 total for research and extension together"],
+            correctIndex: 0,
+            explanation: "Evans-Allen received $73 million and extension $62 million in the enacted FY2021 appropriations CRS reports.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "What FY2021 appropriation does CRS report for the 1890 extension capacity grant?",
+            options: ["$62 million", "$73 million, which is the Evans-Allen research figure", "$25 million, the amount the 2018 farm bill authorizes for facilities", "$574 million, the FY2020 figure for the 1862 institutions"],
+            correctIndex: 0,
+            explanation: "Extension under section 1444 received $62 million in FY2021.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "In the extension allotment formula, what share goes to the agency for administration?",
+            options: ["4%", "20%, the same share allotted in equal proportions among institutions", "40%, matching the share allotted by rural population", "None; the statute forbids administrative deductions"],
+            correctIndex: 0,
+            explanation: "Four per cent of the total goes to the agency for administrative, technical and coordinating services.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "In that formula, what share is allotted among eligible institutions in equal proportions?",
+            options: ["20%", "40%, which is the share allotted by rural population instead", "4%, which is the agency's administrative share", "The whole balance, after the agency's share is removed"],
+            correctIndex: 0,
+            explanation: "Twenty per cent in equal proportions, forty per cent by rural population, and the balance by farm population.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "Which population measure carries the forty per cent share of the extension allotment?",
+            options: ["Rural population", "Farm population, which carries the balance instead", "Total state population as of the last decennial census", "Enrollment at the eligible institution"],
+            correctIndex: 0,
+            explanation: "Forty per cent by rural population and the balance by farm population, both from the last preceding decennial census.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "How does the extension statute treat Tuskegee and Alabama A&M in computing allotments?",
+            options: ["As if in separate states", "As a single institution sharing one allotment", "As a territory rather than a state", "By enrollment share within Alabama's single allotment"],
+            correctIndex: 0,
+            explanation: "The same rule CRS describes for funding purposes generally is written into the allotment computation itself.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "What share of Hatch Act funding did APLU report the 1890 institutions were receiving through Evans-Allen in 2013?",
+            options: ["About 21%", "About 30%, matching the statutory floor set in 2008", "About 15%, matching the original 1977 floor", "About 82%, matching the 1862 share of capacity funding"],
+            correctIndex: 0,
+            explanation: "APLU's own figure, reported against a statutory research floor that had been 30 per cent since 2008.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "What is the difference between a floor and an outturn?",
+            options: ["A minimum against an actual amount", "A federal figure against a state figure", "A research figure against an extension figure", "An authorized amount against an appropriated one"],
+            correctIndex: 0,
+            explanation: "A floor is what a programme may not fall below; an outturn is what it actually received in a year.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "When did the Equity in Educational Land-Grant Status Act of 1994 become law?",
+            options: ["20 October 1994", "7 February 2014, the date of the farm bill that added Central State University", "30 August 1890, the date of the Second Morrill Act", "20 December 2018, the date of the most recent farm bill"],
+            correctIndex: 0,
+            explanation: "Part C of title V of Public Law 103-382, printed at 108 Stat. 4048.",
+            sourceLessonSlug: "three-tiers-in-one-row",
+          },
+          {
+            prompt: "What public law carries the 1994 land-grant status provisions?",
+            options: ["Pub. L. 103-382", "Pub. L. 95-113, which carries NARETPA", "Pub. L. 110-246, the 2008 farm bill", "Pub. L. 113-79, the Agricultural Act of 2014"],
+            correctIndex: 0,
+            explanation: "Title V, part C of Public Law 103-382, enacted 20 October 1994.",
+            sourceLessonSlug: "three-tiers-in-one-row",
+          },
+          {
+            prompt: "How does the 1994 statute define a 1994 institution?",
+            options: ["By listing the colleges", "By a test any accredited tribal college may satisfy on application", "By reference to the Bureau of Indian Education's own roster", "By delegating the determination to the Secretary of Agriculture"],
+            correctIndex: 0,
+            explanation: "A definition by list means the category changes only when Congress amends the list.",
+            sourceLessonSlug: "three-tiers-in-one-row",
+          },
+          {
+            prompt: "What status does section 533 of the 1994 statute confer?",
+            options: ["Land-grant college status", "Eligibility for the Hatch Act experiment station allotment", "A share of the 1890 extension capacity appropriation", "An exemption from all federal matching requirements"],
+            correctIndex: 0,
+            explanation: "1994 institutions shall be considered land-grant colleges established for the benefit of agriculture and the mechanic arts.",
+            sourceLessonSlug: "three-tiers-in-one-row",
+          },
+          {
+            prompt: "In CRS's FY2020 table, how much federal research and extension capacity funding went to the 1862 institutions?",
+            options: ["$574 million", "$124 million, which is the 1890 figure", "$73 million, the FY2021 Evans-Allen appropriation", "$13 billion, the sum of the 2023 state funding gaps"],
+            correctIndex: 0,
+            explanation: "$574 million against $124 million for the 1890 institutions, from enacted FY2020 appropriations.",
+            sourceLessonSlug: "three-tiers-in-one-row",
+          },
+          {
+            prompt: "In that table, how much went to the 1890 institutions?",
+            options: ["$124 million", "$574 million, which is the 1862 figure", "$62 million, the FY2021 extension appropriation alone", "Nothing, which is the 1994 institutions' position"],
+            correctIndex: 0,
+            explanation: "$124 million, or eighteen per cent of the research and extension capacity funding in that year.",
+            sourceLessonSlug: "three-tiers-in-one-row",
+          },
+          {
+            prompt: "What appears in the 1994 column of the CRS capacity-funding table?",
+            options: ["A blank", "Zero dollars, recorded as an appropriation of nil", "The same figure as the 1890 column, since the programmes are shared", "A footnote referring the reader to a separate tribal college table"],
+            correctIndex: 0,
+            explanation: "A blank, explained by the source note as no comparable programs rather than as an appropriation of zero.",
+            sourceLessonSlug: "three-tiers-in-one-row",
+          },
+          {
+            prompt: "How does the CRS table's source note explain the 1994 blank?",
+            options: ["No comparable programs", "Data not yet reported by the institutions for that fiscal year", "Amounts too small to display at the table's level of rounding", "Funding provided under a different appropriations act"],
+            correctIndex: 0,
+            explanation: "The note lists the included programmes for the 1862 and 1890 groups and says no comparable programs exist for the 1994 group.",
+            sourceLessonSlug: "three-tiers-in-one-row",
+          },
+          {
+            prompt: "What percentage of research and extension capacity funding did the 1862 institutions receive in 2020?",
+            options: ["82%", "18%, which is the 1890 share", "30%, the statutory research floor for the 1890 institutions", "57%, matching the number of 1862 institutions"],
+            correctIndex: 0,
+            explanation: "Eighty-two per cent to the 1862 institutions, eighteen to the 1890 institutions, zero to the 1994 institutions.",
+            sourceLessonSlug: "three-tiers-in-one-row",
+          },
+          {
+            prompt: "How many years separate the 1862 land grant from the 1994 designation of tribal colleges?",
+            options: ["132", "90, matching the research capacity gap for the 1890 institutions", "104, the interval between the two Morrill Acts and NARETPA", "63, matching the extension capacity gap"],
+            correctIndex: 0,
+            explanation: "The institutions run by the nations whose land endowed the system were admitted to it 132 years later.",
+            sourceLessonSlug: "three-tiers-in-one-row",
+          },
+          {
+            prompt: "What does this course decline to narrate about the 1994 institutions?",
+            options: ["Their own story", "The statute that gave them land-grant status", "The CRS table row that reports their capacity funding", "The date the 1994 Act became law"],
+            correctIndex: 0,
+            explanation: "Their endowment arrangements and what tribal colleges do are not this course's material, and asserting them from a summary would be the failure the catalog exists to avoid.",
+            sourceLessonSlug: "three-tiers-in-one-row",
+          },
+          {
+            prompt: "Which course does this lesson hand Indigenous governance back to?",
+            options: ["Tribal Nations and Governance", "The Name on the Door, which teaches architectural credit at Tuskegee", "Cooperatives, which teaches rural credit and the co-op form", "The Schoolhouse Network, which teaches community-financed schoolbuilding"],
+            correctIndex: 0,
+            explanation: "That course owns Indigenous governance, and the land itself belongs to WARRANT-03.",
+            sourceLessonSlug: "three-tiers-in-one-row",
+          },
+          {
+            prompt: "Why is a definition by list worth pausing on?",
+            options: ["The category is not a test", "Because a list is easier for institutions to challenge in court", "Because it means the Secretary may add institutions at any time", "Because lists in statutes are never amended once enacted"],
+            correctIndex: 0,
+            explanation: "Membership is a roster amended by Congress, exactly as Section 2 found for the 1890 group.",
+            sourceLessonSlug: "three-tiers-in-one-row",
+          },
+          {
+            prompt: "Which two farm bills does this course name as having amended the 1994 institution list as printed?",
+            options: ["2014 and 2018", "1977 and 2008, when the appropriation floors were set and raised", "1890 and 1994, the two designating statutes", "2002 and 2023, the years of the letters and the reporting requirement"],
+            correctIndex: 0,
+            explanation: "The statutory note records amendments through the 2014 and 2018 Acts among others.",
+            sourceLessonSlug: "three-tiers-in-one-row",
+          },
+          {
+            prompt: "What is the CRS-reported count of 1994 institutions, and as of when?",
+            options: ["35, as of June 2021", "36, as of the current statutory list", "29, as of the Act's enactment in 1994", "19, matching the number of 1890 institutions"],
+            correctIndex: 0,
+            explanation: "35 is CRS's June 2021 figure; the statutory list currently names 36, which is why the date has to travel with the number.",
+            sourceLessonSlug: "three-tiers-in-one-row",
+          },
+          {
+            prompt: "Which capacity programmes does the CRS table include for the 1862 institutions?",
+            options: ["Hatch and Smith-Lever 3(b) and 3(c)", "Evans-Allen and NARETPA section 1444", "The 1890 Facilities Grant Program and McIntire-Stennis", "Smith-Lever section 3(d) and the Renewable Resources Extension Act"],
+            correctIndex: 0,
+            explanation: "The note names Hatch and Smith-Lever 3(b) and 3(c) for the 1862 group and Evans-Allen plus NARETPA section 1444 for the 1890 group.",
+            sourceLessonSlug: "three-tiers-in-one-row",
+          },
+          {
+            prompt: "Which capacity programmes does that table include for the 1890 institutions?",
+            options: ["Evans-Allen and NARETPA § 1444", "Hatch and Smith-Lever 3(b) and 3(c)", "The 1890 Facilities Grant Program and the Centers of Excellence", "The Scholarships for Students at 1890 Institutions provision"],
+            correctIndex: 0,
+            explanation: "Only the two capacity grants, which is why the facilities and competitive programmes do not appear in that row.",
+            sourceLessonSlug: "three-tiers-in-one-row",
+          },
+          {
+            prompt: "Which fiscal year's enacted appropriations does the CRS funding table report?",
+            options: ["FY2020", "FY2021, the year the individual programme figures are given for", "FY2003, the first year the twenty per cent extension floor applied", "FY2018, the year the reporting requirement was enacted"],
+            correctIndex: 0,
+            explanation: "The table draws on enacted FY2020 appropriations, while the programme-by-programme figures elsewhere in the document are FY2021.",
+            sourceLessonSlug: "three-tiers-in-one-row",
+          },
+          {
+            prompt: "What does this course say it does with the two sentences it puts next to each other about 1862 and 1994?",
+            options: ["Stops", "Draws the policy conclusion it thinks a reader should reach", "Argues that the 1994 designation settled the 1862 question", "Treats them as too speculative to state at all"],
+            correctIndex: 0,
+            explanation: "The row is in a congressional document, and a course does not need to editorialise it.",
+            sourceLessonSlug: "three-tiers-in-one-row",
+          },
+          {
+            prompt: "Which is the stronger evidence for this course's argument, and why?",
+            options: ["The ineligibility, because it needs no inference", "The 2023 dollar figure, because it is the most recent measurement", "The 1994 blank cell, because it applies to the largest group of institutions", "The APLU brief, because it comes from the universities themselves"],
+            correctIndex: 0,
+            explanation: "One sentence in a congressional document establishes it, where a per-student model has to be defended against a mission-mix objection.",
+            sourceLessonSlug: "not-eligible-for-these-grants",
+          },
+          {
+            prompt: "In what document does the not-eligible sentence appear?",
+            options: ["A CRS In Focus", "A Government Accountability Office audit of the Department of Agriculture", "A policy brief by the association of public and land-grant universities", "A letter from two federal secretaries to sixteen governors"],
+            correctIndex: 0,
+            explanation: "A three-page Congressional Research Service In Focus, which is public domain and free to download.",
+            sourceLessonSlug: "not-eligible-for-these-grants",
+          },
+          {
+            prompt: "What kind of thing is the 1977 remedy sized against?",
+            options: ["Another class of institution's appropriation", "The measured cost of running an experiment station", "The enrollment of the receiving institutions", "The acreage of the original 1862 land grants"],
+            correctIndex: 0,
+            explanation: "Percentages of the 1862 capacity grant appropriations, which is a statement about relative size rather than about cost.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "How many times has this course now met the same design move by the end of Section 3?",
+            options: ["Three", "Once, in the 1890 Act's proviso", "Five, counting each capacity programme separately", "Twice, in 1890 and in 1994"],
+            correctIndex: 0,
+            explanation: "The 1890 proviso, the ineligibility, and the remedy written as a fraction of somebody else's appropriation.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "Which exclusion does the § 3221(a)(2) calculation make from the Smith-Lever total?",
+            options: ["Section 3(d) amounts", "Amounts appropriated for the agricultural experiment stations", "Any amounts provided as non-federal matching funds", "Appropriations for the 1994 institutions"],
+            correctIndex: 0,
+            explanation: "The statute says the total appropriations shall not include amounts made available under section 3(d) of that Act.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "What is the public law citation for NARETPA?",
+            options: ["Pub. L. 95-113, Title XIV", "Pub. L. 103-382, title V, part C", "Pub. L. 110-246, title VII", "Pub. L. 115-334, title VII"],
+            correctIndex: 0,
+            explanation: "CRS gives NARETPA as Pub. L. 95-113, Title XIV, which authorizes the three 1890 capacity grants.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "What does the 1890 Facilities Grant Program pay for?",
+            options: ["Facilities and equipment", "Salaries for extension agents in rural counties", "Scholarships for students in food and agricultural sciences", "Competitive research projects selected by peer review"],
+            correctIndex: 0,
+            explanation: "Acquiring and improving agricultural and food science facilities and equipment, with no matching funds required.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "What FY2021 appropriation does CRS report for the 1890 Facilities Grant Program?",
+            options: ["$21.5 million", "$25 million, which is the amount the 2018 farm bill authorizes", "$62 million, the extension capacity figure", "$40 million, the authorization covering all of 7 U.S.C. § 3152"],
+            correctIndex: 0,
+            explanation: "The 2018 farm bill authorizes $25 million annually and the enacted FY2021 appropriation was $21.5 million.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "Which of these is NOT one of the three 1890 capacity grants CRS lists?",
+            options: ["The Hatch Act allotment", "The extension capacity grant under NARETPA § 1444", "The Evans-Allen research capacity grant", "The 1890 Facilities Grant Program"],
+            correctIndex: 0,
+            explanation: "Hatch is the 1862 research capacity grant, and the 1890 institutions were never eligible for it.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "How does this course describe the relationship between the not-eligible sentence and the argument built on it?",
+            options: ["No inference is required", "The sentence supports the argument only when combined with enrollment data", "The sentence is contested by the institutions it describes", "The sentence is a paraphrase that the underlying statutes do not support"],
+            correctIndex: 0,
+            explanation: "It is a statement of fact in a congressional document about who could and could not apply.",
+            sourceLessonSlug: "not-eligible-for-these-grants",
+          },
+          {
+            prompt: "What does the phrase not simply richer mean in this lesson?",
+            options: ["The gap is capability, not cash", "The 1862 institutions also hold larger private endowments", "The comparison should be made per student rather than in total", "The 1890 institutions receive more from other federal programmes"],
+            correctIndex: 0,
+            explanation: "Ninety extra years of people, equipment, data series and track record is a different kind of advantage from a larger balance.",
+            sourceLessonSlug: "not-eligible-for-these-grants",
+          },
+          {
+            prompt: "Which two 1890 programmes did the 2013 APLU brief's comparison turn on?",
+            options: ["Evans-Allen and extension", "The facilities grant and the scholarships programme", "The Centers of Excellence and the capacity building grants", "The USDA/1890 National Scholars Program and Smith-Lever 3(d)"],
+            correctIndex: 0,
+            explanation: "The brief measured state matching for extension and Evans-Allen research funding, the two matched capacity grants.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "What is the safest way to report the APLU 21 per cent figure?",
+            options: ["As APLU's figure, dated", "As the current statutory floor for research funding", "As a Congressional Research Service finding", "As an average across the whole period since 1977"],
+            correctIndex: 0,
+            explanation: "It is an association's measurement published in 2013, and a floor and an outturn are two different things.",
+            sourceLessonSlug: "a-remedy-written-as-a-fraction",
+          },
+          {
+            prompt: "Why does this course put the FY2020 shares in a single row?",
+            options: ["Three tiers become visible at once", "Because CRS presents them only as a running total", "Because the shares are the only figures in the document that are not contested", "Because a row is easier to render on a phone than a chart"],
+            correctIndex: 0,
+            explanation: "Eighty-two, eighteen and zero per cent side by side, in a document written for members of Congress.",
+            sourceLessonSlug: "three-tiers-in-one-row",
+          },
+        ],
+      },
+    },
   ],
 };
