@@ -21,7 +21,7 @@
     "cross-links": "tsx scripts/find-cross-links.ts",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "tsx --env-file=.env.local scripts/migrate.ts",
-    "db:migrate:prod": "tsx scripts/migrate.ts",
+    "db:migrate:prod": "tsx --env-file=.env.prod scripts/migrate.ts",
     "db:push": "drizzle-kit push",
     "db:studio": "drizzle-kit studio",
     "dev": "next dev --webpack -p 3040",

@@ -11,7 +11,7 @@ const connectionString = resolveDbUrl(true);
 if (!connectionString || connectionString.includes("placeholder")) {
   const isProd = process.env.npm_lifecycle_event === "db:migrate:prod";
   const hint = isProd
-    ? "Set DATABASE_URL (or DATABASE_URL_UNPOOLED) in your shell, `pnpm db:migrate:prod` does not auto-load any .env file."
+    ? "Set DATABASE_URL (or DATABASE_URL_UNPOOLED) in .env.prod, which `pnpm db:migrate:prod` loads."
     : "Put a real Neon connection string in .env.local.";
   console.error(`DATABASE_URL is not set. ${hint}`);
   process.exit(1);
