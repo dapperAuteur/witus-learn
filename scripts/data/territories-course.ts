@@ -3631,5 +3631,790 @@ U.S. Census Bureau. (2022, August 16). *2020 post-enumeration survey results: Pu
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 6 — The status question, and reading it yourself
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-status-question",
+      title: "21 · The status question, and why the percentages argue",
+      section: "Section 6 · The status question, and reading it yourself",
+      body: `Puerto Rico has voted on its status seven times. Statehood has led in the four most recent votes. **Anyone who tells you that settles it, in either direction, is skipping the part of the record that makes it complicated.**
+
+This lesson leans on one document for the first three votes: **Congressional Research Service report R44721, updated 6 June 2024.** CRS writes for Congress, is required to be non-partisan, and is public domain, so every sentence below can be checked by anyone. **That version predates the November 2024 plebiscite,** which is why the 2024 figures below come from the Puerto Rico State Elections Commission's own certified results file instead.
+
+**First, the options, as Congress understands them.** CRS lists the choices that have appeared on ballots and in bills: **statehood**, **independence**, **sovereignty in free association with the United States**, and **the current territorial status** (sometimes called commonwealth). Free association and independence both "would entail Puerto Rico becoming an independent country"; free association "suggests an ongoing, mutually negotiated relationship in which the United States might continue to provide some benefits or services", as it does today with several western Pacific nations (Congressional Research Service, 2024, p. 10). A fifth option, **enhanced commonwealth**, has been pressed for decades; the Justice Department determined in 2017 that it "remained inconsistent with the U.S. Constitution" (Congressional Research Service, 2024, p. 8).
+
+**2012.** Two questions. About **54.0%** answered no to the first, on keeping the current status. On the second, about **61.2%** chose statehood. Then the dispute, in the report's own words: "Debate focused on whether almost 500,000 blank answers on the second question should be included in the total, thereby affecting whether any option received a majority." The territorial legislature passed a concurrent resolution, supported by the incoming Governor, contending that the results were "inconclusive" (Congressional Research Service, 2024, p. 8). **A blank ballot is a choice too, and where you put it changes the headline.**
+
+**2017.** The ballot was rewritten twice. The original had only statehood and free association/independence, and the law "specified that only ballots marking one of those options would be counted", which the report identifies as a direct response to the 2012 blank-ballot fight. The Justice Department declined to certify the federal funds Congress had appropriated for a plebiscite, so a third option, the current territorial status, was added. DOJ never formally responded to the change before voting day. **The Independence Party then announced it would boycott, as did the Popular Democratic Party and other groups** (Congressional Research Service, 2024, pp. 10 to 13).
+
+Result: **97.2% statehood, 1.5% free association or independence, 1.3% current territorial status.** And: **turnout was 23%, about 518,000 of 2.3 million registered voters** (Congressional Research Service, 2024, p. 14). Quote the 97.2% without the 23% and you have told a lie with a true number.
+
+**2020.** One question: should Puerto Rico be immediately admitted as a state. **About 52.5% yes, 47.5% no, on turnout of about 52.2%, roughly 1.2 million of 2.4 million registered voters** (Congressional Research Service, 2024, p. 14). A real turnout and a narrow margin. And on the same day, voters elected a pro-statehood Governor, reelected a pro-statehood Resident Commissioner, **and defeated the pro-statehood majority in their own legislature** (Congressional Research Service, 2024, p. 14). Electorates are allowed to be ambivalent.
+
+**2024.** From the Elections Commission's certified island-wide file, dated 11 February 2025 (Comision Estatal de Elecciones de Puerto Rico, 2025):
+
+| | Votes |
+| --- | --- |
+| Statehood | 620,782 |
+| Sovereignty in free association with the United States | 313,259 |
+| Independence | 125,171 |
+| Blank ballots | 181,243 |
+| Overvoted ballots | 23,610 |
+| Total ballots | 1,264,065 |
+| Registered voters in reported voting places | 1,987,317 |
+| Turnout | 63.61% |
+
+**Now do the arithmetic, because this is the whole lesson.** The three options drew 1,059,212 votes between them. Statehood's 620,782 is **58.6% of votes cast on the question**. It is **49.1% of all ballots**. Both figures are true. They are not the same figure, and the difference is 181,243 blank ballots and 23,610 overvotes. There was no current-status option on this ballot.
+
+**The two arguments, as CRS states them.** "Statehood supporters generally argue that statehood has been victorious in multiple recent plebiscites, while opponents counter that previous plebiscite methods have predetermined the statehood outcome, that participation was insufficient, or both" (Congressional Research Service, 2024, p. 14).
+
+**And Congress has not acted.** In December 2022 the House passed H.R. 8393, the Puerto Rico Status Act, by 233 to 191; it would have put independence, sovereignty in free association, and statehood on a ballot, with no status-quo option. The Senate did not take it up. A competing Senate bill would have added a commonwealth option and required a Government Accountability Office study of "readiness for statehood" first (Congressional Research Service, 2024, pp. 15 to 18). Under the Territory Clause, Congress may change the status by statute whenever it chooses, and it may also do nothing indefinitely, which is what it has done.
+
+**So what does the record support?** That a plurality or narrow majority of those who vote prefer statehood, that the size of that preference depends heavily on how the question is asked, that participation has ranged from 23% to 63.6%, and that the island's own parties do not agree on whether any of these votes was legitimate. **Anyone who compresses that into one sentence is selling something.**
+
+:::reveal What was the turnout in the 2017 plebiscite, and why does it matter? ||| About 23 percent, because the Independence Party, the Popular Democratic Party and other groups boycotted, so the 97.2 percent for statehood describes a small and self-selected electorate.
+
+:::reveal What was the dispute about the 2012 result? ||| Whether almost 500,000 blank answers on the second question should count in the total, which determines whether any option reached a majority.
+
+:::reveal In the 2024 plebiscite, what were statehood's two defensible percentages? ||| 58.6 percent of votes cast on the question, and 49.1 percent of all ballots.
+
+## Vocabulary
+- **Plebiscite**: a popular vote on a question of status, which Puerto Rico may hold with or without congressional authorization and which binds nobody by itself.
+- **Free association**: independence combined with a negotiated ongoing relationship with the United States, an option distinct from both statehood and plain independence.
+- **Enhanced commonwealth**: a long-proposed status the Justice Department concluded in 2017 remained inconsistent with the Constitution.
+- **Blank ballot**: a ballot returned without a choice on a question, treated by some as a protest vote to be counted in the denominator and by others as an abstention to be excluded.
+- **Turnout**: the share of registered voters who cast ballots, without which a percentage for any option describes an unknown fraction of the electorate.
+
+## Sources
+Comision Estatal de Elecciones de Puerto Rico. (2025, February 11). *Plebiscito: Resultados isla* [Certified island-wide plebiscite results]. https://elecciones2024.ceepur.org/Escrutinio_General_123/data/PLEBISCITO_Resumen.xml
+
+Congressional Research Service. (2024, June 6). *Political status of Puerto Rico: Brief background and recent developments for Congress* (Report No. R44721). https://crsreports.congress.gov/product/pdf/R/R44721`,
+    },
+    {
+      slug: "not-the-same-as-tribal-sovereignty",
+      title: "22 · Not the same as tribal sovereignty, and where they touch",
+      section: "Section 6 · The status question, and reading it yourself",
+      body: `Two subjects get run together constantly, and the confusion costs both of them their meaning. This lesson draws the line once, carefully, and then names the one place where the comparison is genuinely informative.
+
+**They are different questions about different things.**
+
+| | Territorial status | Tribal sovereignty |
+| --- | --- | --- |
+| What is at issue | A place under United States sovereignty | A political community that governs itself |
+| How the relationship began | Treaty of cession, purchase, deed, or covenant transferring a place | Treaties between the United States and nations already governing themselves |
+| Governing clause | Article IV, Section 3, Clause 2 | Treaties and the Indian Commerce Clause, among others |
+| Core claim | That the Constitution should apply, and that the place should have a vote | That a pre-existing sovereign retains powers it never gave up |
+
+**Read the second column again, because it is the part people flatten.** A tribal nation is not asking to be admitted to something. Its claim runs the other way: it was a sovereign before the United States existed, it entered into treaties as a sovereign, and it retains the powers it did not cede. **That is not the territorial argument at all.** Puerto Rico is not asserting that it was a nation the United States made a treaty with. It is asserting that a place governed by the United States should have the Constitution and a vote.
+
+**This catalog treats them separately on purpose.** Indigenous sovereignty is the subject of **Tribal Nations and Governance**, which does it properly and at length. Nothing in this course should be read as a summary of that one.
+
+**Citizenship shows how differently the two ran.** Congress made people born in the United States to a member of a tribe citizens at birth, and the statute that now carries the rule adds a protective clause: citizenship "shall not in any manner impair or otherwise affect the right of such person to tribal or other property" (8 U.S.C. § 1401, n.d.). **Congress anticipated the objection Section 3 of this course spent a whole lesson on, and wrote an answer to it into the statute.** Whether such a clause would satisfy the intervenors in *Fitisemanu* is not something this course can tell you, and it is a question worth putting to them rather than answering for them.
+
+**Now the place where the comparison is real, and it is a matter of record rather than analogy.** The two doctrines were built in the same decades, out of the same idea: that the federal government holds powers over certain peoples that are not found in the constitutional text and are largely unreviewable. Lawyers call it **plenary power**. It is not a coincidence that it was invented for Indian affairs, immigration and the territories at roughly the same time by roughly the same Court.
+
+The link is not this course's invention. Justice Gorsuch's concurrence in *Vaello Madero* cites Sarah Cleveland's study of exactly that convergence, whose title names all three at once: *Powers Inherent in Sovereignty: Indians, Aliens, Territories, and the Nineteenth Century Origins of Plenary Power Over Foreign Affairs* (Vaello Madero, 2022, Gorsuch, J., concurring, slip op. at 7). And the language bleeds across in the cases themselves: Justice Brown's opinion in *Downes* reached for "scattered bodies of native Indians" while explaining which territories the Constitution should reach (Downes v. Bidwell, 1901, at 282).
+
+**So the honest statement is narrow and it is worth getting exactly right.** The Insular Cases and the plenary-power Indian law cases share an intellectual origin and a habit of mind. They do not share a legal question, a claimant, or a remedy. **A course that says "it is the same thing" is wrong, and a course that says "they have nothing to do with each other" is also wrong.**
+
+**One last complication to hold rather than resolve.** These categories describe overlapping people. Chamorros in Guam and the Northern Marianas, and Samoans in American Samoa, are Indigenous peoples living in unincorporated territories, so their situation raises both sets of questions at once without merging them. That is a reason to keep the two frameworks distinct, not a reason to pick one.
+
+:::reveal What is the core claim in tribal sovereignty, and how does it differ from the territorial claim? ||| That a pre-existing sovereign retains powers it never ceded, where the territorial claim is that a place the United States governs should have the Constitution and a vote.
+
+:::reveal What protective clause did Congress attach to citizenship for people born to a member of a tribe? ||| That the grant shall not in any manner impair or otherwise affect that person's right to tribal or other property.
+
+:::reveal What do the Insular Cases and the plenary-power Indian law cases genuinely share? ||| An intellectual origin in the same period and the same idea of unreviewable federal power, rather than a legal question, a claimant or a remedy.
+
+## Vocabulary
+- **Plenary power**: the doctrine that Congress holds broad and largely unreviewable authority over certain subjects, developed for Indian affairs, immigration and the territories in the same era.
+- **Government-to-government relationship**: the framework describing dealings between the United States and tribal nations, resting on treaties with sovereigns that already existed.
+- **Indian Commerce Clause**: the constitutional provision giving Congress power to regulate commerce with the Indian tribes, one of the textual anchors of federal Indian law.
+- **Pre-existing sovereign**: a nation that governed itself before the United States existed and did not surrender the powers it never ceded, which is the claim territorial status does not make.
+- **Overlapping categories**: the fact that Indigenous peoples live in unincorporated territories, so that both frameworks can apply to the same community without becoming one framework.
+
+## Sources
+8 U.S.C. § 1401. (n.d.). *Nationals and citizens of United States at birth*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title8-section1401&num=0&edition=prelim
+
+*Downes v. Bidwell*, 182 U.S. 244 (1901). Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/supremecourt/text/182/244
+
+*United States v. Vaello Madero*, No. 20-303 (U.S. Apr. 21, 2022) (slip op.) (Gorsuch, J., concurring). Supreme Court of the United States. https://www.supremecourt.gov/opinions/21pdf/20-303_6khn.pdf`,
+    },
+    {
+      slug: "reading-it-yourself",
+      title: "23 · Reading it yourself, and what this course refused to print",
+      section: "Section 6 · The status question, and reading it yourself",
+      body: `Every factual claim in this course came from a document you can open. Here is where they live, and then the list of things this course tested and would not print.
+
+**The five sources that carry almost all of it.**
+
+| Where | What it settles | How to use it |
+| --- | --- | --- |
+| **uscode.house.gov** | Statutory text, currently in force | Search the section number. Read the definitions section first, always |
+| **supremecourt.gov** | Slip opinions, and the docket for any case | Opinions under Opinions of the Court by term; dockets by number, which is how the Fitisemanu denial was confirmed |
+| **govinfo.gov** | Federal court opinions as filed, bills, the House rules manual | Search the case name; published circuit opinions appear as USCOURTS packages |
+| **census.gov** | Population, and the Bureau's own estimate of its error | Take the decennial count and then look for the post-enumeration survey |
+| **crsreports.congress.gov** | Congress's own non-partisan briefing on a contested question | Check the "Updated" date on the cover. These are revised |
+
+**A research exercise worth doing.** Pick any statute that matters to you and find its definitions section. Then ask a single question: **does it include Puerto Rico, Guam, the Virgin Islands, the Northern Marianas, American Samoa, the District, all of them, or some of them?** This course found five different answers in five statutes:
+
+- **7 U.S.C. § 361a** (Hatch Act): the states including the District, Puerto Rico, Guam and the Virgin Islands.
+- **8 U.S.C. § 1101(a)(38)** (immigration): everything except American Samoa and Swains Island.
+- **11 U.S.C. § 101(52)** (bankruptcy): includes Puerto Rico, except for who may file under chapter 9.
+- **42 U.S.C. § 1382c** (SSI): the 50 states and the District, plus the Northern Marianas by a later statute.
+- **26 U.S.C. § 933** (tax): a special exclusion for Puerto Rico source income and no equivalent for the District.
+
+**Five statutes, five lists, one Congress.** That is not sloppiness. It is what it looks like when a category exists and no general rule governs it.
+
+**Now the ledger. These are things this course tested and refused to state,** because a course that only tells you what it found is not telling you how much to trust it.
+
+- **A United States Reports volume and page for *Vaello Madero*, *Aurelius* or *Fitisemanu*.** The slip opinions and the published circuit opinion were read in full, and none of the sources consulted supplied a verified reporter page. The citations here therefore use docket number and decision date, which are exact.
+- **The number of American Samoans who hold national status.** American Samoa counted 49,710 residents in 2020, but nationals also live in the states and some residents are citizens by parentage, so no figure was defensible. The course says "tens of thousands".
+- **What American Samoans want.** The 2007 status report, the 1930 commission, the *Fitisemanu* plaintiffs and the delegate's own bills point in different directions. The course reports all four and declines to average them.
+- **Any characterization of the 2024 plebiscite as decisive.** Statehood took 58.6% of votes cast on the question and 49.1% of all ballots. Both are printed; neither is called the answer.
+- **The 1846 retrocession of the District's Virginia portion.** True as far as this course knows, and no primary text was read for it, so it was cut rather than asserted.
+- **A count of how many people the Insular Cases currently affect.** It depends entirely on which holding you mean, and no source consulted supplied one that survived scrutiny.
+- **A third freely associated state named in one CRS sentence.** The report lists the Federated States of Micronesia, "the Republic of Micronesia", and Palau; the middle name appears to be a slip, so this course names only the two it can verify and points you at the sentence.
+
+**And one thing this course states plainly, because the evidence supports it.** No part of this arrangement is an accident. Every list was drafted, every exclusion was voted on, and every one of them can be changed by the same body that wrote it. The Territory Clause sets no deadline, which means the current arrangement continues by decision and not by inertia.
+
+**What to do with that is not a civics question, and this course does not answer it.** What a civics course owes you is the ability to check any sentence in it, disagree with its author, and be right. Every citation here was chosen so that you can.
+
+:::reveal Which section of a statute should you read first when asking whether it covers a territory? ||| The definitions section, because each statute defines terms like State and United States for its own purposes.
+
+:::reveal Why does this course cite cases by docket number and decision date rather than by a reporter page? ||| Because no verified United States Reports page was found for them in the sources consulted, and an exact citation is better than a guessed one.
+
+:::reveal What does the existence of five different statutory lists tell you? ||| That the category is real and no general rule governs it, so each statute decides for itself which non-state jurisdictions it covers.
+
+## Vocabulary
+- **Slip opinion**: the first published version of a court's opinion, issued before the bound reporter volume and citable by docket number and date.
+- **Docket**: the official record of filings and orders in a case, which is where a denial of certiorari can be confirmed exactly.
+- **Definitions section**: the part of a statute that fixes what its terms mean for its own purposes, and the first place to look in this subject.
+- **Ledger of refusals**: a published list of claims an author tested and declined to make, which is what lets a reader calibrate trust in the claims that remain.
+- **Public domain source**: a document anyone may quote and republish freely, which is why federal statutes, opinions, census releases and CRS reports carry this course.
+
+## Sources
+7 U.S.C. § 361a. (n.d.). *Definitions*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title7-section361a&num=0&edition=prelim
+
+11 U.S.C. § 101. (n.d.). *Definitions*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title11-section101&num=0&edition=prelim
+
+Congressional Research Service. (2024, June 6). *Political status of Puerto Rico: Brief background and recent developments for Congress* (Report No. R44721). https://crsreports.congress.gov/product/pdf/R/R44721
+
+U.S. Census Bureau. (2022, August 16). *2020 post-enumeration survey results: Puerto Rico*. https://census.gov/newsroom/press-releases/2022/2020-post-enumeration-survey-results-puerto-rico.html`,
+    },
+    {
+      slug: "quiz-the-status-question",
+      title: "24 · Knowledge check: the status question",
+      section: "Section 6 · The status question, and reading it yourself",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "How many times has Puerto Rico voted on its political status?",
+            options: ["Seven", "Three, all of them held since the fiscal oversight board was created", "Twelve, once in every general election since the Second World War", "Once, in the plebiscite held alongside the general election of 2020"],
+            correctIndex: 0,
+            explanation: "The votes were held in 1967, 1993, 1998, 2012, 2017, 2020 and 2024, and statehood has led in the four most recent.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "Which document does this lesson lean on for the 2012, 2017 and 2020 votes?",
+            options: ["A Congressional Research Service report", "A press release issued by the Government of Puerto Rico", "A Supreme Court opinion reviewing the plebiscite results", "A study commissioned by the New Progressive Party"],
+            correctIndex: 0,
+            explanation: "Report R44721, updated 6 June 2024, which is written for Congress, required to be non-partisan, and in the public domain.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "Why does this lesson use a different source for the 2024 figures?",
+            options: ["The CRS version used predates the November 2024 plebiscite", "The Congressional Research Service does not report election results", "The 2024 results have never been certified by any official body", "The report was withdrawn after the 2024 plebiscite was held"],
+            correctIndex: 0,
+            explanation: "That version is dated 6 June 2024, so the figures come from the Puerto Rico State Elections Commission's own certified results file instead.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "Which status options does CRS list as having appeared on ballots and in bills?",
+            options: ["Statehood, independence, free association and the current status", "Statehood and independence only, since no other option is constitutional", "Statehood, commonwealth and trusteeship under the United Nations", "Statehood, independence and admission as part of an existing state"],
+            correctIndex: 0,
+            explanation: "Enhanced commonwealth has also been pressed for decades, and the Justice Department concluded in 2017 that it remained inconsistent with the Constitution.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What does free association entail, according to the CRS report?",
+            options: ["Puerto Rico becoming an independent country with a negotiated relationship", "Puerto Rico remaining a territory with expanded local self-government", "Puerto Rico being admitted as a state with a special tax arrangement", "Puerto Rico joining an existing state as a new county or parish"],
+            correctIndex: 0,
+            explanation: "Both free association and independence would make Puerto Rico independent; free association suggests an ongoing, mutually negotiated relationship.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What did the Justice Department conclude in 2017 about enhanced commonwealth?",
+            options: ["That it remained inconsistent with the Constitution", "That it was the only option Congress could lawfully offer on a ballot", "That it required approval by two thirds of the territorial legislature", "That it had already been adopted by the plebiscite of 2012"],
+            correctIndex: 0,
+            explanation: "The conclusion also bears on the conditions Congress attached to the plebiscite education funds it appropriated for fiscal year 2014.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What did the 2012 plebiscite ask?",
+            options: ["Two questions, on the current status and on a preferred alternative", "One question, on whether Puerto Rico should be admitted as a state", "Three questions, on statehood, independence and free association", "One question, on whether to convene a status convention"],
+            correctIndex: 0,
+            explanation: "Voters answered the second question regardless of how they had answered the first, which is part of why the result was argued about.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "How did voters answer the first question in 2012?",
+            options: ["About 54.0 percent said no to keeping the current status", "About 61.2 percent said yes to keeping the current status", "About 97.2 percent said no to keeping the current status", "The question was struck from the ballot before voting day"],
+            correctIndex: 0,
+            explanation: "The 61.2 percent figure belongs to the second question, where it was the share choosing statehood.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What share chose statehood on the second question in 2012?",
+            options: ["About 61.2 percent", "About 54.0 percent, the same figure recorded on the first question", "About 97.2 percent, the figure recorded in the following plebiscite", "About 52.5 percent, the figure recorded in the plebiscite of 2020"],
+            correctIndex: 0,
+            explanation: "Whether that amounted to a majority of anything depends on how nearly 500,000 blank answers are treated.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What was the controversy about the 2012 result?",
+            options: ["Whether almost 500,000 blank answers should be in the total", "Whether the ballot had been printed in both Spanish and English", "Whether voters outside Puerto Rico should have been allowed to vote", "Whether the Justice Department had approved the ballot in advance"],
+            correctIndex: 0,
+            explanation: "Including them changes whether any option received a majority, which is exactly what the dispute was about.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What did the territorial legislature say about the 2012 results?",
+            options: ["That they were inconclusive", "That they bound Congress to admit Puerto Rico as a state", "That they should be set aside because turnout was under a quarter", "That they required a runoff between the top two options"],
+            correctIndex: 0,
+            explanation: "The concurrent resolution was supported by the incoming Governor, who had been elected on the same day as the plebiscite.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What did the original 2017 ballot law say about which ballots would be counted?",
+            options: ["Only those marking statehood or free association and independence", "Only those cast by voters registered before the previous general election", "Only those counted at precincts reporting on the night of the vote", "Only those marking the current territorial status option"],
+            correctIndex: 0,
+            explanation: "The report identifies that rule as a direct response to the blank-ballot controversy of 2012.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "Why was the 2017 ballot amended?",
+            options: ["The Justice Department declined to certify the federal plebiscite funds", "The territorial supreme court held the original ballot unconstitutional", "The Independence Party petitioned successfully for a third option", "The Oversight Board refused to release funding for the original ballot"],
+            correctIndex: 0,
+            explanation: "A third option, the current territorial status, was added, and the department never formally responded to the change before voting day.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "Which parties announced a boycott of the 2017 plebiscite?",
+            options: ["The Independence Party and the Popular Democratic Party", "The New Progressive Party and the Independence Party", "All three major parties, which is why turnout fell below a quarter", "No party boycotted, and the low turnout had other causes entirely"],
+            correctIndex: 0,
+            explanation: "Some other nonparty groups joined them, after the current territorial status option was added to the amended ballot.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What share chose statehood in the 2017 plebiscite?",
+            options: ["97.2 percent", "61.2 percent, the same share recorded on the second 2012 question", "52.5 percent, the share recorded in the plebiscite of 2020", "58.6 percent, the share recorded in the plebiscite of 2024"],
+            correctIndex: 0,
+            explanation: "Free association or independence took 1.5 percent and the current territorial status took 1.3 percent.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What was the turnout in the 2017 plebiscite?",
+            options: ["23 percent", "52.2 percent, the figure recorded in the plebiscite of 2020", "63.61 percent, the figure recorded in the plebiscite of 2024", "97.2 percent, matching the share that chose statehood"],
+            correctIndex: 0,
+            explanation: "About 518,000 of 2.3 million registered voters, which is why the 97.2 percent figure means very little on its own.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What does this lesson say about quoting the 2017 statehood figure without the turnout?",
+            options: ["It tells a lie with a true number", "It is acceptable because the percentage was certified by the commission", "It overstates opposition to statehood rather than support for it", "It is the standard practice of the Congressional Research Service"],
+            correctIndex: 0,
+            explanation: "The 97.2 percent describes a small and self-selected electorate produced by a boycott.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What did the 2020 plebiscite ask?",
+            options: ["Whether Puerto Rico should be immediately admitted as a state", "Which of three non-territorial options voters preferred", "Whether voters wished to maintain the current political status", "Whether to convene a constitutional convention on status"],
+            correctIndex: 0,
+            explanation: "It was a single yes-or-no ballot question, which is a different instrument from the multi-option ballots that preceded it.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What was the result of the 2020 plebiscite?",
+            options: ["About 52.5 percent yes against 47.5 percent no", "About 97.2 percent yes against 1.5 percent no", "About 61.2 percent yes against 38.8 percent no", "About 58.6 percent yes against 41.4 percent no"],
+            correctIndex: 0,
+            explanation: "It was a narrow margin on a real turnout, which makes it the least disputed of the recent votes on participation grounds.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What was the turnout in the 2020 plebiscite?",
+            options: ["About 52.2 percent", "About 23 percent, matching the turnout in the previous plebiscite", "About 63.61 percent, matching the turnout in the following plebiscite", "About 99.5 percent of precincts, which is not a turnout figure at all"],
+            correctIndex: 0,
+            explanation: "Roughly 1.2 million of 2.4 million registered voters, against 23 percent three years earlier.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What else did Puerto Rico's voters do on the same day as the 2020 plebiscite?",
+            options: ["Defeated the pro-statehood majority in their own legislature", "Elected a Governor who campaigned against statehood outright", "Voted to abolish the office of Resident Commissioner", "Approved a new constitution for the territory by referendum"],
+            correctIndex: 0,
+            explanation: "They also elected a pro-statehood Governor and reelected a pro-statehood Resident Commissioner, which is what makes the result hard to compress.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "How many votes did statehood receive in the certified 2024 results?",
+            options: ["620,782", "313,259, which was the total for sovereignty in free association", "1,264,065, which was the total number of ballots cast", "181,243, which was the number of blank ballots recorded"],
+            correctIndex: 0,
+            explanation: "The three options together drew 1,059,212 votes, out of 1,264,065 ballots cast.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "Which option came second in the 2024 plebiscite?",
+            options: ["Sovereignty in free association with the United States", "Independence, which drew more than twice the free association total", "The current territorial status, which was not on the 2024 ballot", "Blank ballots, which outnumbered every named option on the ballot"],
+            correctIndex: 0,
+            explanation: "It drew 313,259 votes against 125,171 for independence.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "How many blank ballots were recorded in the 2024 plebiscite?",
+            options: ["181,243", "23,610, which is the number of overvoted ballots recorded", "125,171, which is the number of votes for independence", "almost 500,000, the figure disputed after the 2012 plebiscite"],
+            correctIndex: 0,
+            explanation: "Together with 23,610 overvoted ballots, that is the gap between statehood's two defensible percentages.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What was statehood's share of votes cast on the 2024 question?",
+            options: ["58.6 percent", "49.1 percent, which is its share of all ballots rather than of votes cast", "63.61 percent, which is the turnout rather than any option's share", "52.5 percent, which is the figure from the 2020 plebiscite"],
+            correctIndex: 0,
+            explanation: "620,782 divided by the 1,059,212 votes the three options drew between them.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What was statehood's share of all ballots cast in 2024?",
+            options: ["49.1 percent", "58.6 percent, which is its share of votes cast on the question", "61.2 percent, the share it took on the second 2012 question", "97.2 percent, the share it took in the 2017 plebiscite"],
+            correctIndex: 0,
+            explanation: "620,782 divided by 1,264,065 total ballots, and both figures are true of the same election.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What was the turnout in the 2024 plebiscite?",
+            options: ["63.61 percent", "52.2 percent, matching the turnout in the 2020 plebiscite", "23 percent, matching the turnout in the 2017 plebiscite", "49.1 percent, which is a vote share rather than a turnout"],
+            correctIndex: 0,
+            explanation: "1,264,065 ballots against 1,987,317 registered voters in reported voting places.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "Which option was absent from the 2024 ballot?",
+            options: ["The current territorial status", "Sovereignty in free association with the United States", "Independence, which was reserved for a possible runoff", "Statehood, which the 2020 vote was treated as having settled"],
+            correctIndex: 0,
+            explanation: "That absence is one reason the percentages need reading carefully rather than quoting.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "How does CRS state the statehood supporters' argument?",
+            options: ["That statehood has won multiple recent plebiscites", "That the Territory Clause obliges Congress to admit Puerto Rico", "That the United Nations requires decolonization by a fixed date", "That the Insular Cases must be overruled before status can change"],
+            correctIndex: 0,
+            explanation: "The report states both sides in the same paragraph, which is the discipline this lesson borrows.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "How does CRS state the opponents' argument?",
+            options: ["That the methods predetermined the outcome or participation was insufficient", "That statehood would be unconstitutional under the Territory Clause", "That only the Justice Department may certify a plebiscite result", "That the island's population is too small for admission as a state"],
+            correctIndex: 0,
+            explanation: "Or both, in the report's own phrasing, which is why turnout and ballot design are the recurring points of attack.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What happened to H.R. 8393, the Puerto Rico Status Act, in December 2022?",
+            options: ["The House passed it 233 to 191 and the Senate did not take it up", "It was signed into law and authorized a plebiscite for November 2023", "It was defeated in the House on a near party-line vote", "It was withdrawn by its sponsor before it reached the floor"],
+            correctIndex: 0,
+            explanation: "It would have put independence, sovereignty in free association and statehood on a ballot, with no status-quo option.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "How did the competing Senate status bill differ from the House-passed bill?",
+            options: ["It added a commonwealth option and a readiness study", "It would have admitted Puerto Rico as a state without any plebiscite", "It removed the statehood option from the ballot entirely", "It transferred the decision to the Oversight Board created by PROMESA"],
+            correctIndex: 0,
+            explanation: "The study by the Government Accountability Office would have examined readiness for statehood, including whether a stable majority existed.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "Under the Territory Clause, what may Congress do about status?",
+            options: ["Change it by statute whenever it chooses, or do nothing indefinitely", "Change it only after a plebiscite it has authorized in advance", "Change it only with the consent of the territorial legislature", "Nothing, because status may be changed only by constitutional amendment"],
+            correctIndex: 0,
+            explanation: "Puerto Rico may also hold status votes without congressional preapproval, and it has.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What does this lesson say the record actually supports?",
+            options: ["Support that depends heavily on how the question is asked", "A settled and consistent majority for statehood across all seven votes", "A settled and consistent majority against statehood across all seven votes", "That no conclusion can be drawn from any of the seven votes"],
+            correctIndex: 0,
+            explanation: "Participation has ranged from 23 percent to 63.61 percent, and the island's parties do not agree that any of the votes was legitimate.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What is a plebiscite, in this context?",
+            options: ["A popular vote on status that binds nobody by itself", "A vote of Congress admitting a territory to the Union", "A referendum required by the Territory Clause every ten years", "A ballot question certified in advance by the Justice Department"],
+            correctIndex: 0,
+            explanation: "Puerto Rico may hold one with or without congressional authorization, and Congress is not obliged to act on the result.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "Why does a blank ballot matter so much in this subject?",
+            options: ["Where you put it changes whether an option reached a majority", "Because blank ballots are counted as votes for the status quo by law", "Because the Justice Department requires them to be excluded", "Because a blank ballot invalidates the entire precinct's returns"],
+            correctIndex: 0,
+            explanation: "Almost 500,000 of them are why the 2012 result was called inconclusive by the territory's own legislature.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What is the core claim of tribal sovereignty?",
+            options: ["That a pre-existing sovereign retains powers it never ceded", "That a place the United States governs should have the Constitution", "That a territory should be admitted to the Union as a state", "That Congress must grant citizenship before self-government is possible"],
+            correctIndex: 0,
+            explanation: "It runs in the opposite direction from the territorial claim, which asks to be brought inside rather than to have retained what it never gave up.",
+            sourceLessonSlug: "not-the-same-as-tribal-sovereignty",
+          },
+          {
+            prompt: "How did the relationship between the United States and tribal nations begin, in the terms this lesson uses?",
+            options: ["Treaties with nations already governing themselves", "A treaty of cession transferring a place from a European power", "A deed signed by traditional leaders and accepted by Congress", "A covenant negotiated after a United Nations trusteeship"],
+            correctIndex: 0,
+            explanation: "That is what makes it a government-to-government relationship rather than a question about the status of a place.",
+            sourceLessonSlug: "not-the-same-as-tribal-sovereignty",
+          },
+          {
+            prompt: "Which clause governs territorial status, as against the clauses anchoring federal Indian law?",
+            options: ["Article IV, Section 3, Clause 2", "The Indian Commerce Clause of Article I, Section 8", "The Citizenship Clause of the Fourteenth Amendment", "The Appointments Clause of Article II, Section 2"],
+            correctIndex: 0,
+            explanation: "Federal Indian law rests on treaties and the Indian Commerce Clause among others, which is a different textual foundation.",
+            sourceLessonSlug: "not-the-same-as-tribal-sovereignty",
+          },
+          {
+            prompt: "Which course in this catalog owns the subject of Indigenous sovereignty?",
+            options: ["Tribal Nations and Governance", "This course, which covers it in Section 6", "The Match, which covers the land-grant statutes", "US Constitution 101, which covers the amendments"],
+            correctIndex: 0,
+            explanation: "Nothing in this course should be read as a summary of that one, which treats the subject properly and at length.",
+            sourceLessonSlug: "not-the-same-as-tribal-sovereignty",
+          },
+          {
+            prompt: "What protective clause accompanies citizenship under 8 U.S.C. § 1401(b)?",
+            options: ["That it shall not impair the person's right to tribal or other property", "That it may be renounced within six months of the person's eighteenth birthday", "That it applies only to persons resident on a reservation at birth", "That it requires the consent of the tribe before it takes effect"],
+            correctIndex: 0,
+            explanation: "Congress anticipated the property objection and wrote an answer to it into the statute itself.",
+            sourceLessonSlug: "not-the-same-as-tribal-sovereignty",
+          },
+          {
+            prompt: "What does this lesson say about whether such a clause would satisfy the Fitisemanu intervenors?",
+            options: ["It is a question to put to them rather than answer for them", "That it plainly would, which is why the objection was misconceived", "That it plainly would not, because land tenure is not property", "That the Tenth Circuit already decided the question in 2021"],
+            correctIndex: 0,
+            explanation: "The course refuses to answer on their behalf, which is the same discipline Section 3 applied.",
+            sourceLessonSlug: "not-the-same-as-tribal-sovereignty",
+          },
+          {
+            prompt: "What is plenary power, as this lesson uses the term?",
+            options: ["Broad federal authority not found in the text and largely unreviewable", "The power of a territorial legislature over purely local subjects", "The authority of the Supreme Court to overrule its own precedents", "The power of Congress to admit new states to the Union"],
+            correctIndex: 0,
+            explanation: "It was developed for Indian affairs, immigration and the territories in the same period by roughly the same Court.",
+            sourceLessonSlug: "not-the-same-as-tribal-sovereignty",
+          },
+          {
+            prompt: "What evidence does this lesson give that the plenary-power link is not its own invention?",
+            options: ["Justice Gorsuch's concurrence cites a study naming all three subjects", "The Supreme Court has held the two doctrines to be legally identical", "Congress said so when it accepted the deeds of cession in 1929", "The Tenth Circuit relied on federal Indian law in deciding Fitisemanu"],
+            correctIndex: 0,
+            explanation: "The study's title names Indians, aliens and territories together as nineteenth-century origins of plenary power.",
+            sourceLessonSlug: "not-the-same-as-tribal-sovereignty",
+          },
+          {
+            prompt: "Which phrase from Downes v. Bidwell shows the language bleeding across the two subjects?",
+            options: ["Scattered bodies of native Indians", "Appurtenant and belonging to the United States", "Absolutely unfit to receive them", "A false step at this time might be fatal"],
+            correctIndex: 0,
+            explanation: "Justice Brown reached for it while explaining which territories the Constitution should reach.",
+            sourceLessonSlug: "not-the-same-as-tribal-sovereignty",
+          },
+          {
+            prompt: "What is the honest statement about the two doctrines this lesson insists on?",
+            options: ["They share an origin and a habit of mind, not a legal question", "They are the same doctrine applied to two different populations", "They have nothing whatever to do with each other historically", "They were merged by the Supreme Court in the Insular Cases"],
+            correctIndex: 0,
+            explanation: "Saying they are the same thing is wrong, and saying they are unrelated is also wrong.",
+            sourceLessonSlug: "not-the-same-as-tribal-sovereignty",
+          },
+          {
+            prompt: "Why does this lesson mention Chamorros and Samoans at the end?",
+            options: ["Because the two frameworks can apply to the same community", "Because their tribal status has been recognized by federal statute", "Because they are the only Indigenous peoples in United States territories", "Because their communities have been admitted to the Union as states"],
+            correctIndex: 0,
+            explanation: "That overlap is a reason to keep the two frameworks distinct rather than a reason to pick one.",
+            sourceLessonSlug: "not-the-same-as-tribal-sovereignty",
+          },
+          {
+            prompt: "Which website settles what a statute currently says?",
+            options: ["uscode.house.gov", "supremecourt.gov, which publishes the Court's slip opinions", "census.gov, which publishes population counts and coverage estimates", "crsreports.congress.gov, which publishes briefings for Congress"],
+            correctIndex: 0,
+            explanation: "The Office of the Law Revision Counsel maintains the Code there, and the advice is to read the definitions section first.",
+            sourceLessonSlug: "reading-it-yourself",
+          },
+          {
+            prompt: "Where was the denial of certiorari in Fitisemanu confirmed?",
+            options: ["On the Supreme Court's own docket for the case", "In the Tenth Circuit's published opinion of June 2021", "In a Congressional Research Service report on territorial status", "In the Federal Register notice for the October 2022 term"],
+            correctIndex: 0,
+            explanation: "Dockets are searchable by number on supremecourt.gov, and the entry for 17 October 2022 reads Petition DENIED.",
+            sourceLessonSlug: "reading-it-yourself",
+          },
+          {
+            prompt: "What should you check on the cover of a CRS report?",
+            options: ["The Updated date, because they are revised", "The name of the requesting Member of Congress", "The classification marking at the foot of each page", "The number of pages, which indicates how thorough it is"],
+            correctIndex: 0,
+            explanation: "A claim sourced to an older version and presented as current is the characteristic failure with these documents.",
+            sourceLessonSlug: "reading-it-yourself",
+          },
+          {
+            prompt: "What research exercise does this lesson recommend?",
+            options: ["Find a statute's definitions section and see which places it covers", "Count the number of times a territory is named in the Federal Register", "Compare the population of each territory with the smallest state", "Read every Supreme Court opinion citing the Insular Cases in order"],
+            correctIndex: 0,
+            explanation: "The course found five different answers in five statutes, which is the point of the exercise.",
+            sourceLessonSlug: "reading-it-yourself",
+          },
+          {
+            prompt: "How does the bankruptcy statute treat Puerto Rico?",
+            options: ["It includes it, except for who may file under chapter 9", "It excludes it entirely from every definition in the Code", "It treats it as a state for all purposes without qualification", "It leaves the question to the territorial legislature to decide"],
+            correctIndex: 0,
+            explanation: "That single exception is what left the island without access to municipal restructuring before PROMESA.",
+            sourceLessonSlug: "reading-it-yourself",
+          },
+          {
+            prompt: "How does the SSI statute define the United States?",
+            options: ["The 50 states and the District, with the Northern Marianas added later", "Every jurisdiction under United States sovereignty without exception", "The 50 states only, excluding the District of Columbia as well", "Every place whose residents pay federal income tax on local earnings"],
+            correctIndex: 0,
+            explanation: "It is one of five different lists this course found, drawn by one Congress across five statutes.",
+            sourceLessonSlug: "reading-it-yourself",
+          },
+          {
+            prompt: "What does the existence of five different statutory lists demonstrate?",
+            options: ["A real category governed by no general rule", "Careless drafting that Congress has since corrected by amendment", "That the Supreme Court has never defined the term territory", "That the Territory Clause requires a separate list in each statute"],
+            correctIndex: 0,
+            explanation: "Each statute decides for itself which non-state jurisdictions it covers, which is what the definitions exercise reveals.",
+            sourceLessonSlug: "reading-it-yourself",
+          },
+          {
+            prompt: "Why does this course cite cases by docket number and decision date?",
+            options: ["No verified reporter page was found in the sources consulted", "Because slip opinions may not be cited by volume under Court rules", "Because docket numbers are more stable than reporter citations", "Because the cases have not yet been published in any reporter"],
+            correctIndex: 0,
+            explanation: "An exact citation is better than a guessed one, and the docket number and date are both verifiable.",
+            sourceLessonSlug: "reading-it-yourself",
+          },
+          {
+            prompt: "Why does the course say 'tens of thousands' rather than a figure for American Samoan nationals?",
+            options: ["Nationals also live in the states and some residents are citizens", "Because the Census Bureau does not count American Samoa at all", "Because the number is classified by the Department of the Interior", "Because the figure changes too rapidly to be worth stating"],
+            correctIndex: 0,
+            explanation: "American Samoa counted 49,710 residents in 2020, but that is not the same as the number who hold national status.",
+            sourceLessonSlug: "reading-it-yourself",
+          },
+          {
+            prompt: "Why did the course cut the claim about the District's Virginia portion?",
+            options: ["No primary text for it was read", "It was found to be false on examination of the Statutes at Large", "It was irrelevant to any argument the course makes anywhere", "The Census Bureau declined to confirm the boundary change"],
+            correctIndex: 0,
+            explanation: "It was cut rather than asserted, which is the same rule applied to every other item in the ledger.",
+            sourceLessonSlug: "reading-it-yourself",
+          },
+          {
+            prompt: "What did the course notice about a CRS sentence naming freely associated states?",
+            options: ["One of the three names appears to be a slip", "That the list omitted the Federated States of Micronesia", "That the report contradicted itself about their independence", "That the sentence had been removed from the current version"],
+            correctIndex: 0,
+            explanation: "The course names only the two it can verify and points the reader at the sentence rather than repeating the apparent error.",
+            sourceLessonSlug: "reading-it-yourself",
+          },
+          {
+            prompt: "What does the course refuse to call the 2024 plebiscite?",
+            options: ["Decisive", "Certified, since the Elections Commission published the results", "Contested, since no party has challenged the count itself", "Comparable to the plebiscites held before the year 2012"],
+            correctIndex: 0,
+            explanation: "Statehood took 58.6 percent of votes cast and 49.1 percent of all ballots, and both are printed without either being called the answer.",
+            sourceLessonSlug: "reading-it-yourself",
+          },
+          {
+            prompt: "What is a ledger of refusals, and why does this course print one?",
+            options: ["A list of tested claims the author declined to make, to calibrate trust", "A record of every source the author was unable to obtain access to", "A list of corrections issued after the course was first published", "An index of claims that other courses in the catalog dispute"],
+            correctIndex: 0,
+            explanation: "A course that only tells you what it found is not telling you how much to trust it.",
+            sourceLessonSlug: "reading-it-yourself",
+          },
+          {
+            prompt: "What does the course state plainly at the end, on the evidence?",
+            options: ["The arrangement continues by decision, not by inertia", "The arrangement is required by the text of the Constitution", "The arrangement will end automatically after a fixed period", "The arrangement was imposed by treaty and cannot be changed"],
+            correctIndex: 0,
+            explanation: "Every list was drafted and every exclusion voted on, and the same body that wrote them can change them.",
+            sourceLessonSlug: "reading-it-yourself",
+          },
+          {
+            prompt: "What does the course say a civics course owes its reader?",
+            options: ["The ability to check any sentence, disagree, and be right", "A clear recommendation on which status option to support", "A guarantee that every source will remain online indefinitely", "A summary short enough to be repeated without checking"],
+            correctIndex: 0,
+            explanation: "Every citation was chosen so that a learner can do exactly that.",
+            sourceLessonSlug: "reading-it-yourself",
+          },
+          {
+            prompt: "Which site publishes federal circuit court opinions as filed?",
+            options: ["govinfo.gov", "uscode.house.gov, which publishes the United States Code", "census.gov, which publishes the decennial count and its estimates", "crsreports.congress.gov, which publishes reports for Congress"],
+            correctIndex: 0,
+            explanation: "Published circuit opinions appear there as USCOURTS packages, which is how the Fitisemanu opinion was read for this course.",
+            sourceLessonSlug: "reading-it-yourself",
+          },
+          {
+            prompt: "What two things should you take from census.gov, in this lesson's advice?",
+            options: ["The decennial count and the post-enumeration survey", "The apportionment table and the list of congressional districts", "The population estimate and the projection for the coming decade", "The count for the states and the separate count for the District"],
+            correctIndex: 0,
+            explanation: "The count is the official number and the survey is the Bureau's own estimate of how wrong the count was.",
+            sourceLessonSlug: "reading-it-yourself",
+          },
+          {
+            prompt: "Which of the five sources settles a contested political question for Congress in a non-partisan form?",
+            options: ["crsreports.congress.gov", "supremecourt.gov, which publishes opinions and dockets", "govinfo.gov, which publishes bills and court opinions", "uscode.house.gov, which publishes the statutes in force"],
+            correctIndex: 0,
+            explanation: "CRS writes for Congress, is required to be non-partisan, and its products are in the public domain.",
+            sourceLessonSlug: "reading-it-yourself",
+          },
+          {
+            prompt: "Why is it significant that CRS reports are public domain?",
+            options: ["Anyone may quote them and check every quotation", "They are the only documents a court will accept as authority", "They are updated automatically whenever the underlying law changes", "They may be cited without any attribution to their author"],
+            correctIndex: 0,
+            explanation: "That is why this course leans on one for the contested status question rather than on any advocate's account.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What did Congress appropriate $2.5 million for in the fiscal year 2014 omnibus?",
+            options: ["Voter education and a plebiscite on Puerto Rico's status", "A Government Accountability Office study of readiness for statehood", "The administration of the Financial Oversight and Management Board", "Compensation for AABD recipients excluded from SSI in Puerto Rico"],
+            correctIndex: 0,
+            explanation: "The conditions attached appear to exclude the enhanced commonwealth option, and the funds remained unexpended.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What happened to those plebiscite education funds?",
+            options: ["They remained unexpended", "They were spent on the 2017 plebiscite after the ballot was amended", "They were rescinded by Congress in the following appropriations act", "They were transferred to the Oversight Board created in 2016"],
+            correctIndex: 0,
+            explanation: "The Justice Department declined to certify them for the 2017 plebiscite, which is why that ballot was rewritten.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "Which of these is a fair one-sentence summary of the status record?",
+            options: ["Statehood leads among those who vote, by a margin the question shapes", "Statehood has been rejected in every plebiscite since the year 2012", "Independence has grown steadily and now leads among younger voters", "The island's parties agree on the meaning of the recent results"],
+            correctIndex: 0,
+            explanation: "Participation ranged from 23 percent to 63.61 percent and ballot design differed in every vote, which is why the margin moves.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What is the relationship between a plebiscite result and congressional action?",
+            options: ["A plebiscite binds nobody and Congress may act or not act", "A majority for statehood obliges Congress to admit the territory", "Congress must schedule a vote within one year of any plebiscite", "Only a plebiscite Congress authorized in advance has any legal effect"],
+            correctIndex: 0,
+            explanation: "Congress may change status by statute whenever it chooses, and it has done nothing since the House vote of December 2022.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "Which body certified the 2024 plebiscite results this course reports?",
+            options: ["The Puerto Rico State Elections Commission", "The Congressional Research Service in report R44721", "The Financial Oversight and Management Board for Puerto Rico", "The Department of Justice, which certified the ballot in advance"],
+            correctIndex: 0,
+            explanation: "Its island-wide results file is dated 11 February 2025, well after the November 2024 vote.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What is the version date of the CRS report this course relies on?",
+            options: ["6 June 2024", "11 February 2025, matching the certified election results file", "15 December 2022, the day the House passed the status bill", "17 October 2022, the day certiorari was denied in Fitisemanu"],
+            correctIndex: 0,
+            explanation: "That date is why the report covers the 2012, 2017 and 2020 votes and not the one held in November 2024.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "How many votes did the three options draw between them in 2024?",
+            options: ["1,059,212", "1,264,065, which is the total number of ballots cast", "1,987,317, which is the number of registered voters", "620,782, which is the number of votes for statehood alone"],
+            correctIndex: 0,
+            explanation: "That figure is the denominator for the 58.6 percent, and the total ballots figure is the denominator for the 49.1 percent.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What does the phrase 'overvoted ballots' mean in the certified results?",
+            options: ["Ballots marking more choices than the question allowed", "Ballots cast by voters who had already voted elsewhere", "Ballots counted twice by the electronic tabulation system", "Ballots cast after the polls had officially closed"],
+            correctIndex: 0,
+            explanation: "There were 23,610 of them in 2024, alongside 181,243 blank ballots and no null ballots recorded.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "Which statement about the Territory Clause and time is accurate?",
+            options: ["It sets no deadline, so the current arrangement continues by decision", "It requires Congress to resolve a territory's status within ten years", "It automatically converts a territory to a state after a century", "It obliges Congress to hold a plebiscite after every decennial census"],
+            correctIndex: 0,
+            explanation: "Every list was drafted and every exclusion voted on, and inertia is not the reason any of it persists.",
+            sourceLessonSlug: "reading-it-yourself",
+          },
+          {
+            prompt: "What did the House-passed status bill omit from its proposed ballot?",
+            options: ["An option for maintaining the status quo", "An option for sovereignty in free association with the United States", "An option for independence from the United States", "An option for statehood, which had already won in 2020"],
+            correctIndex: 0,
+            explanation: "The competing Senate bill would have added a commonwealth option, which is one of the ways the two proposals differed.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "Which of these is the best reason to read the definitions section of a statute first?",
+            options: ["It decides whether the statute reaches a territory at all", "It lists the penalties the statute imposes for a violation", "It names the agency responsible for enforcing the statute", "It states the date on which the statute takes effect"],
+            correctIndex: 0,
+            explanation: "Five statutes in this course draw five different lists, and each list is in a definitions section.",
+            sourceLessonSlug: "reading-it-yourself",
+          },
+          {
+            prompt: "What is a slip opinion?",
+            options: ["A court's opinion as first published, before the bound reporter", "A summary of an opinion prepared by the Reporter of Decisions", "An opinion issued without argument on an emergency application", "A dissent circulated before the majority opinion is finalized"],
+            correctIndex: 0,
+            explanation: "It is citable by docket number and date, which is how this course cites the opinions it read.",
+            sourceLessonSlug: "reading-it-yourself",
+          },
+          {
+            prompt: "In which years were Puerto Rico's four most recent status votes held?",
+            options: ["2012, 2017, 2020 and 2024", "1967, 1993, 1998 and 2012, before the fiscal crisis began", "2016, 2018, 2020 and 2022, aligned with each general election", "2020, 2021, 2022 and 2024, once in each year after PROMESA"],
+            correctIndex: 0,
+            explanation: "Statehood led in all four, on ballots that asked materially different questions and drew very different turnout.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What is the difference between the 2017 and 2020 ballots that most affects how the results read?",
+            options: ["One had three options and a boycott, the other a single question and real turnout", "One was certified by the Justice Department and the other was not", "One counted blank ballots in the total and the other discarded them", "One was authorized by Congress and the other was held without approval"],
+            correctIndex: 0,
+            explanation: "97.2 percent on 23 percent turnout and 52.5 percent on 52.2 percent turnout are not comparable numbers.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "Which body may admit Puerto Rico as a state?",
+            options: ["Congress", "The Supreme Court, by overruling the Insular Cases in an appropriate case", "The President, by proclamation following a majority in a plebiscite", "The Puerto Rico State Elections Commission, by certifying a result"],
+            correctIndex: 0,
+            explanation: "Under the Territory Clause it may change status by statute, and no plebiscite obliges it to do so.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What did the House-passed status bill propose if no option won a majority?",
+            options: ["A runoff between the two options with the most votes", "Automatic adoption of the option with the most votes cast", "A second plebiscite with the status quo added to the ballot", "Referral of the question to the Financial Oversight and Management Board"],
+            correctIndex: 0,
+            explanation: "The bill set a plebiscite date and a later runoff date, and the Senate never took the measure up.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "What is the practical warning this course draws from the two 2024 percentages?",
+            options: ["A percentage is meaningless without its denominator", "Certified results should be treated with the same caution as estimates", "Blank ballots should always be counted as votes against the leading option", "A plebiscite with a turnout above sixty percent settles the question"],
+            correctIndex: 0,
+            explanation: "58.6 percent and 49.1 percent describe the same votes, and only the denominator differs.",
+            sourceLessonSlug: "the-status-question",
+          },
+          {
+            prompt: "Which framework does a claim about retained sovereignty belong to?",
+            options: ["Tribal sovereignty", "Territorial status under Article IV of the Constitution", "The Insular Cases and the incorporation doctrine", "The Twenty-Third Amendment and presidential electors"],
+            correctIndex: 0,
+            explanation: "The territorial claim asks to be brought inside the Constitution; the tribal claim asserts powers that were never surrendered.",
+            sourceLessonSlug: "not-the-same-as-tribal-sovereignty",
+          },
+          {
+            prompt: "What mistake does this course warn against most directly in the tribal comparison?",
+            options: ["Treating two different legal questions as one", "Assuming that tribal nations wish to be admitted as states", "Believing the Insular Cases apply to reservations as well as territories", "Reading the Indian Commerce Clause as a source of territorial power"],
+            correctIndex: 0,
+            explanation: "The doctrines share an origin and a habit of mind, and they do not share a claimant, a question or a remedy.",
+            sourceLessonSlug: "not-the-same-as-tribal-sovereignty",
+          },
+          {
+            prompt: "Which of these best describes what this course asks a learner to be able to do?",
+            options: ["Check any sentence in it and disagree with it correctly", "Recite the holding of each Insular Case from memory", "Advocate for a particular status option in Puerto Rico", "Predict how the Supreme Court will rule on the next petition"],
+            correctIndex: 0,
+            explanation: "Every citation was chosen so that a reader can verify it, which is what a civics course owes its reader.",
+            sourceLessonSlug: "reading-it-yourself",
+          },
+        ],
+      },
+    },
   ],
 };
