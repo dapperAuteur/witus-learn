@@ -649,5 +649,599 @@ Jacobs, H. A. (1861). *Incidents in the life of a slave girl. Written by herself
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 2 — The certificate bound into the book
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-book-that-needed-a-certificate",
+      title: "5 · The book that needed a certificate",
+      section: "Section 2 · The certificate bound into the book",
+      body: `In 1773 a London bookseller named Archibald Bell, of Aldgate, printed a small volume called *Poems on Various Subjects, Religious and Moral*. The name on the title page is **Phillis Wheatley**. She was about twenty, she had been enslaved in Boston since she was a child, and she was still enslaved when the book went to press.
+
+**The book did not come out in Boston, and that is the first fact worth holding.** A volume of her poems was proposed in Boston in 1772 and the venture failed. The Massachusetts Historical Society, which holds Wheatley material, puts it flatly: her "debut volume of poetry was first proposed in 1772, but this early venture was unsuccessful" (Massachusetts Historical Society, n.d.). The subscriptions did not come in. A poet with a local reputation, in the town where she lived, could not raise a book.
+
+**So the manuscript crossed the Atlantic.** It was published in London in 1773, dedicated to Selina Hastings, Countess of Huntingdon, whose patronage carried real weight in the evangelical world Bell's list served. Wheatley herself sailed for England in May 1773. The book appeared in September, and she had already returned to Boston (Massachusetts Historical Society, n.d.).
+
+**Now the thing that makes this book the best single artifact in this catalog.** Bound into the front matter, before the poems, is a page of prose signed by eighteen men. It is not a preface, not an introduction, and not a blurb. It is a **certificate**, and what it certifies is that the woman named on the title page wrote the poems inside.
+
+The publisher explains why it is there, in his own words, on the same page:
+
+> "AS it has been repeatedly suggested to the Publisher, by Persons, who have seen the Manuscript, that Numbers would be ready to suspect they were not really the Writings of PHILLIS, he has procured the following Attestation, from the most respectable Characters in Boston, that none might have the least Ground for disputing their Original."
+
+Read what that sentence concedes. The publisher expects readers to disbelieve the title page. Not to dislike the poems. To disbelieve that a Black woman wrote them. So he goes and gets signatures.
+
+**This is the authenticator mechanism from Lesson 3, in its purest and earliest form in this course.** Her name IS on the book. Her name is not enough. A second layer of names is added, and the added names belong to people whose word was assumed to be worth more than hers.
+
+**Compare it to the ghost and the difference becomes obvious.** A ghostwriter's name is taken off a book because a client paid for its removal, and the ghost banks the fee. Wheatley's name is on her book and is propped up from underneath by eighteen other names, and nobody paid her for the propping. One transaction removes a name that was sold. The other adds names because a name is doubted. Same book trade, opposite directions, and if you merge them you cannot explain either.
+
+**One housekeeping note this catalog owes itself.** Elsewhere in the library, the course \`shirley-graham\` records that Shirley Graham published *The Story of Phillis Wheatley* in 1949, and that the Indianapolis YWCA branch where Graham worked spelled the name **Phyllis**, which is not how the poet spelled it. This course keeps the poet's own spelling: **Phillis Wheatley**.
+
+:::reveal What happened to the Boston proposal for Wheatley's book, and where was it published instead? ||| The 1772 Boston venture was unsuccessful, so the book was published in London in 1773 by Archibald Bell and dedicated to the Countess of Huntingdon.
+
+:::reveal In the publisher's own words, why is the attestation in the book at all? ||| Because persons who had seen the manuscript repeatedly suggested that numbers would be ready to suspect the poems were not really the writings of Phillis.
+
+## Vocabulary
+- **Front matter**: the pages before a book's main text, including title page, dedication, preface and any certificate, which is where a publishing arrangement is documented.
+- **Attestation**: here, the signed page in Wheatley's 1773 volume in which eighteen Boston men certify that she wrote the poems.
+- **Subscription**: the eighteenth-century practice of financing a book by collecting advance commitments from buyers before printing.
+- **Patronage**: the backing of a socially powerful person, such as the Countess of Huntingdon, which could carry a book into a market its author could not reach.
+
+## Sources
+Massachusetts Historical Society. (n.d.). *Phillis Wheatley*. The End of Slavery in Massachusetts. https://www.masshist.org/features/endofslavery/wheatley
+
+Wheatley, P. (1773). *Poems on various subjects, religious and moral*. A. Bell. https://docsouth.unc.edu/neh/wheatley/wheatley.html`,
+    },
+    {
+      slug: "to-the-publick",
+      title: "6 · To the Publick, and the eighteen names",
+      section: "Section 2 · The certificate bound into the book",
+      body: `Here is the whole certificate. It is short, and every clause in it is doing work.
+
+> "WE whose Names are under-written, do assure the World, that the POEMS specified in the following Page, were (as we verily believe) written by Phillis, a young Negro Girl, who was but a few Years since, brought an uncultivated Barbarian from Africa, and has ever since been, and now is, under the Disadvantage of serving as a Slave in a Family in this Town. She has been examined by some of the best Judges, and is thought qualified to write them."
+
+**Take it clause by clause, because the hedges are the tell.**
+
+- **"do assure the World"** is the format of a guarantee, not of a review. They are not saying the poems are good. They are saying the poems are hers.
+- **"(as we verily believe)"** is a hedge, and it is inside a document whose entire purpose is to remove doubt. A certificate that certifies belief rather than knowledge is a weaker instrument than it looks.
+- **"a young Negro Girl"** and **"an uncultivated Barbarian from Africa"** state the grounds of the doubt in the act of dispelling it. The certificate is necessary because of exactly what it says about her.
+- **"under the Disadvantage of serving as a Slave"** is the only word the document spends on her legal condition, and it is "disadvantage".
+- **"She has been examined by some of the best Judges, and is thought qualified to write them."** Note the passive voice, twice. Examined by whom is not stated. Thought qualified by whom is not stated. The next lesson is about that sentence.
+
+**Now the names.** Eighteen of them, and their ranks matter more than their identities:
+
+| Group | Count | Who |
+| --- | --- | --- |
+| Provincial executive | 2 | Thomas Hutchinson, Governor; Andrew Oliver, Lieutenant Governor |
+| Styled "The Hon." | 5 | Including James Bowdoin and Harrison Gray |
+| Styled "Esq." | 3 | Including John Hancock |
+| Clergy | 7 | Including Mather Byles and Samuel Cooper |
+| The household | 1 | "Mr. John Wheatley, her Master" |
+
+**That last line is the one to sit with.** The final signature on the document certifying that Phillis Wheatley wrote her own poems belongs to the man who legally owned her, and the book prints his relation to her as his credential: *her Master*. The person best placed to know is identified by the fact that he held her as property.
+
+**And look at what the top of the list is.** The sitting governor of the province of Massachusetts Bay and his lieutenant governor signed a note about a book of poems. That is not literary criticism. It is the deployment of civil authority as evidence, and it tells you what kind of doubt was being answered: not a question about poetry, a question about capacity.
+
+**So the credit document and the book are the same object.** In every other case this course examines, you have to go somewhere else to find the paperwork: to a contract, a letter file, an archive, a scholar's footnote. Here the paperwork is bound in. You can hold the doubt and the answer to it in one hand, in the order the reader was meant to meet them: publisher's note, certificate, eighteen names, then the poems.
+
+**One more thing the certificate quietly proves.** Somebody thought this was a marketing asset. Bell put it at the front, in the position a publisher reserves for whatever will most help a book sell. The signatures were not a private reassurance to a nervous printer. They were part of the product.
+
+:::reveal What hedge sits inside the attestation, and why is it striking? ||| The phrase "(as we verily believe)", which certifies belief rather than knowledge, inside a document whose entire purpose was to remove doubt.
+
+:::reveal How is the eighteenth signer identified in the book, and why does that matter? ||| As "Mr. John Wheatley, her Master": the man who legally owned her is credentialed by that ownership, and it is the closing signature on the certificate of her authorship.
+
+## Vocabulary
+- **Certificate of authorship**: a signed third-party statement that a named person wrote a named work, functioning as evidence rather than as criticism.
+- **Hedge**: a qualifying phrase such as "as we verily believe" that reduces a statement from knowledge to belief.
+- **Provincial executive**: in colonial Massachusetts Bay, the governor and lieutenant governor, whose signatures on this page put civil authority behind a literary claim.
+- **Marketing asset**: material a publisher places in the front matter because it is expected to help the book sell, which is where Bell placed the attestation.
+
+## Sources
+Wheatley, P. (1773). *Poems on various subjects, religious and moral*. A. Bell. https://docsouth.unc.edu/neh/wheatley/wheatley.html
+
+Wheatley, P. (1773). *Poems on various subjects, religious and moral* [Transcription]. Project Gutenberg. https://www.gutenberg.org/files/409/409-h/409-h.htm`,
+    },
+    {
+      slug: "what-the-examination-was-and-was-not",
+      title: "7 · What the examination was, and was not",
+      section: "Section 2 · The certificate bound into the book",
+      body: `There is a scene people picture when they hear about the Wheatley attestation. A room in Boston. A girl standing before eighteen powerful men. Questions fired at her. A verdict delivered.
+
+**This course does not print that scene, because the record does not carry it.**
+
+Revolutionary Spaces, the organisation that operates the Old State House and the Old South Meeting House in Boston, addresses the point directly in its own exhibit material. "The attestation has fueled speculation in some quarters that Wheatley was subjected to an in-person, all-male inquisition. However, more recent scholarship theorizes that her poems indeed may have undergone a reading examination by 'the best Judges who think them worth of the Publick View' in February 1772 as part of a publication proposal to secure subscribers, but it is unlikely Phillis Wheatley herself was interrogated" (Revolutionary Spaces, n.d.).
+
+**Read the shape of that carefully, because it is a model of what this course does with a good story.**
+
+- What the document says: "She has been examined by some of the best Judges." Passive, undated, unattributed.
+- What is likely: the **poems** were read, in connection with the 1772 subscription proposal.
+- What is speculation: an in-person interrogation of Wheatley herself.
+- What is unlikely, on the current scholarship: that interrogation.
+
+**Notice that the story loses nothing it needed.** The argument of this section never rested on a dramatic scene. It rests on a printed certificate, eighteen signatures, and a publisher's admission that readers would otherwise disbelieve the title page. That is enough, and it has the advantage of being documented.
+
+**A course that added the interrogation would be trading a checkable fact for an uncheckable image**, and it would be doing it in exactly the place where its own credibility is the subject. If you are going to teach people to read a title page sceptically, you cannot dramatise your own evidence.
+
+**Now the other half of this lesson: what the book bought her.**
+
+On 18 October 1773, back in Boston, Wheatley wrote to David Wooster. The letter is at the Massachusetts Historical Society, and two sentences in it settle the question of what a byline is worth.
+
+> "Since my return to America my Master, has at the desire of my friends in England given me my freedom."
+
+> "I am now upon my own footing and whatever I get by this is entirely mine, & it is the Chief I have to depend upon."
+
+**That is the byline-pays argument in the author's own words, in 1773.** Her manumission followed the London trip and, on her own account, came at the urging of her English friends. The book did not merely carry her name. The book moved her legal status, and then it became the chief thing she had to depend on financially, because whatever she got by it was **entirely hers**.
+
+Hold that against a ghostwriting fee. A fee is a number, once. Wheatley's byline produced a transatlantic reputation, a patron, a set of English advocates who applied pressure, a manumission, and an income stream she describes as her own property. None of that is available to a name that does not appear.
+
+**And hold it against the certificate too.** The eighteen signatures were the price of admission. She got the byline, and the byline paid; she also had to be vouched for by the governor of the province and by the man who owned her in order to receive it. Both things are true, and a course that reports only one of them is telling half a story.
+
+:::reveal What does the current scholarship, as Revolutionary Spaces reports it, say about an in-person examination of Wheatley? ||| That it is speculation and unlikely; what probably happened is that her poems underwent a reading examination in connection with the 1772 subscription proposal.
+
+:::reveal In her letter of 18 October 1773, how does Wheatley describe what the book means to her financially? ||| She says she is now upon her own footing, that whatever she gets by it is entirely hers, and that it is the chief thing she has to depend upon.
+
+## Vocabulary
+- **Speculation**: a plausible reconstruction that no document supports, which this course reports as speculation rather than printing as narrative.
+- **Manumission**: the act by which an enslaver frees an enslaved person, which in Wheatley's case followed her London trip and, on her account, English pressure.
+- **Reading examination**: an assessment of a manuscript rather than of its author, which is what the scholarship suggests the attestation's "examined" refers to.
+- **Documented versus dramatised**: the distinction between what a record states and the scene a reader supplies around it.
+
+## Sources
+Massachusetts Historical Society. (n.d.). *Letter from Phillis Wheatley to David Wooster, 18 October 1773*. https://www.masshist.org/database/viewer.php?item_id=771&pid=3
+
+Revolutionary Spaces. (n.d.). *How Phillis Wheatley might have obtained the approval of eighteen prominent white men of Boston to publish her book of poetry*. https://revolutionaryspaces.org/explore/exhibits/imagining-the-age-of-phillis/how-phillis-wheatley-might-have-obtained-the-approval-of-eighteen-prominent-white-men-of-boston-to-publish-her-book-of-poetry/`,
+    },
+    {
+      slug: "quiz-the-certificate",
+      title: "8 · Knowledge check: the certificate",
+      section: "Section 2 · The certificate bound into the book",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "Where was Phillis Wheatley's Poems on Various Subjects first published?",
+            options: ["London", "Boston, by subscription raised among her local admirers in 1772", "Philadelphia, where the evangelical printing trade was strongest", "Newport, Rhode Island, through the shipping connections of her enslaver"],
+            correctIndex: 0,
+            explanation: "The 1772 Boston venture was unsuccessful, so the manuscript crossed the Atlantic.",
+            sourceLessonSlug: "the-book-that-needed-a-certificate",
+          },
+          {
+            prompt: "Who printed the 1773 volume?",
+            options: ["Archibald Bell", "The Countess of Huntingdon's own private press at her chapel", "The publisher of the Boston Censor, which had carried the subscription notices", "John Wheatley, who financed the printing on his enslaved poet's behalf"],
+            correctIndex: 0,
+            explanation: "A bookseller of Aldgate, London, whose list served the evangelical market the dedication reached.",
+            sourceLessonSlug: "the-book-that-needed-a-certificate",
+          },
+          {
+            prompt: "To whom is the 1773 volume dedicated?",
+            options: ["The Countess of Huntingdon", "Thomas Hutchinson, the sitting governor of the province of Massachusetts Bay", "Susanna Wheatley, who had taught the poet to read and write in Boston", "The eighteen signers of the attestation printed in the book's front matter"],
+            correctIndex: 0,
+            explanation: "Selina Hastings, whose patronage carried real weight in the evangelical world Bell's list served.",
+            sourceLessonSlug: "the-book-that-needed-a-certificate",
+          },
+          {
+            prompt: "What does the Massachusetts Historical Society say about the 1772 proposal?",
+            options: ["It was unsuccessful", "It produced enough subscribers but was blocked by the colonial censor", "It was withdrawn when a London publisher offered better terms in the autumn", "It succeeded, and the London edition was simply a second printing of it"],
+            correctIndex: 0,
+            explanation: "A poet with a local reputation could not raise a book in the town where she lived.",
+            sourceLessonSlug: "the-book-that-needed-a-certificate",
+          },
+          {
+            prompt: "What was Wheatley's legal status when the book went to press?",
+            options: ["Still enslaved", "Free, having been manumitted before the manuscript left Boston in 1772", "Indentured to Archibald Bell for the duration of the printing", "Free in England but still enslaved under the law of Massachusetts Bay"],
+            correctIndex: 0,
+            explanation: "Her manumission came after her return from London, which is Lesson 7's evidence.",
+            sourceLessonSlug: "the-book-that-needed-a-certificate",
+          },
+          {
+            prompt: "What kind of document is bound into the front matter of the 1773 Poems?",
+            options: ["A certificate", "A dedication written by the poet to her English patron", "A critical preface assessing the literary merit of the poems", "A subscription list naming everyone who had paid in advance"],
+            correctIndex: 0,
+            explanation: "It certifies that the woman named on the title page wrote the poems inside.",
+            sourceLessonSlug: "the-book-that-needed-a-certificate",
+          },
+          {
+            prompt: "In the publisher's own note, what did persons who had seen the manuscript repeatedly suggest?",
+            options: ["That numbers would suspect the poems were not really hers", "That the poems required substantial revision before they could be sold in London", "That the book would sell better with an English rather than an American author", "That the dedication should be moved ahead of the certificate in the front matter"],
+            correctIndex: 0,
+            explanation: "So Bell procured the attestation so that none might have the least ground for disputing their original.",
+            sourceLessonSlug: "the-book-that-needed-a-certificate",
+          },
+          {
+            prompt: "Which of the four shapes from Lesson 3 does the Wheatley attestation illustrate?",
+            options: ["The authenticator", "The ghost proper, since eighteen men effectively stand in for the author", "The amanuensis, since the poems were taken down by someone in the household", "The as-told-to, since the signers appear in a subordinate slot on the page"],
+            correctIndex: 0,
+            explanation: "Her name is on the book and is not enough, so a second layer of names is added.",
+            sourceLessonSlug: "the-book-that-needed-a-certificate",
+          },
+          {
+            prompt: "How does the Wheatley case run opposite to a ghostwriting arrangement?",
+            options: ["Names are added rather than removed", "The author is paid a fee rather than receiving a share of the royalties", "The publisher rather than the author selected the name on the title page", "The certificate transfers the copyright from the author to the signers"],
+            correctIndex: 0,
+            explanation: "One transaction removes a name that was sold; the other props up a name that is doubted.",
+            sourceLessonSlug: "the-book-that-needed-a-certificate",
+          },
+          {
+            prompt: "Which spelling of the poet's name does this catalog use?",
+            options: ["Phillis", "Phyllis, following the Indianapolis YWCA branch's own letterhead", "Both, since eighteenth-century printers used the two interchangeably", "Philis, as it appears in the surviving manuscript of her earliest poems"],
+            correctIndex: 0,
+            explanation: "Her own spelling, and the one Shirley Graham used in her 1949 book about her.",
+            sourceLessonSlug: "the-book-that-needed-a-certificate",
+          },
+          {
+            prompt: "In which month did Wheatley sail for England, and in which did the book appear?",
+            options: ["May and September 1773", "March 1772 and December 1772, before the subscription attempt collapsed", "June 1773 and June 1774, after a year of delays at the Aldgate press", "January 1773 and March 1773, both before the Boston proposal was withdrawn"],
+            correctIndex: 0,
+            explanation: "She had already returned to Boston by the time the volume was published.",
+            sourceLessonSlug: "the-book-that-needed-a-certificate",
+          },
+          {
+            prompt: "What makes this book unusual among the cases in this course?",
+            options: ["The credit document is bound into it", "It is the only case in which the writer was paid a fee rather than a royalty", "It is the only book in the course whose author's name was later removed", "It is the only case where a publisher rather than an author sought the credit"],
+            correctIndex: 0,
+            explanation: "Everywhere else the paperwork sits in a contract, a letter file or a scholar's footnote.",
+            sourceLessonSlug: "the-book-that-needed-a-certificate",
+          },
+          {
+            prompt: "The publisher's note concedes that readers were expected to disbelieve:",
+            options: ["The title page", "The dedication to a countess by an enslaved American poet", "The claim that the poems had been examined by competent judges", "The publisher's own account of how the manuscript reached London"],
+            correctIndex: 0,
+            explanation: "Not to dislike the poems, but to doubt that a Black woman wrote them.",
+            sourceLessonSlug: "the-book-that-needed-a-certificate",
+          },
+          {
+            prompt: "How does the attestation open?",
+            options: ["WE whose Names are under-written", "TO the candid and impartial Readers of these Poems", "BE it known to all persons whom these presents may concern", "THE undersigned, having examined the bearer, do hereby declare"],
+            correctIndex: 0,
+            explanation: "The format of a guarantee, and the signature block is the substance of the document.",
+            sourceLessonSlug: "to-the-publick",
+          },
+          {
+            prompt: "What does the attestation assure the world about the poems?",
+            options: ["That Phillis wrote them", "That they are original compositions of considerable literary merit", "That they were composed without assistance from anyone in the Wheatley household", "That they had been reviewed and approved by the clergy of the province"],
+            correctIndex: 0,
+            explanation: "It is a guarantee of authorship rather than a review, and it says nothing about quality.",
+            sourceLessonSlug: "to-the-publick",
+          },
+          {
+            prompt: "Which hedge appears inside the attestation?",
+            options: ["As we verily believe", "So far as the evidence before us can be made to reach", "To the best of our knowledge and after due and careful enquiry", "Subject to such correction as further information may hereafter supply"],
+            correctIndex: 0,
+            explanation: "A certificate that certifies belief rather than knowledge is a weaker instrument than it looks.",
+            sourceLessonSlug: "to-the-publick",
+          },
+          {
+            prompt: "How many men signed the attestation?",
+            options: ["Eighteen", "Twelve, of whom seven were clergymen of the town of Boston", "Twenty-four, including the members of the governor's council then sitting", "Nine, all of them related to the Wheatley family by blood or by marriage"],
+            correctIndex: 0,
+            explanation: "Two provincial executives, five styled Hon., three Esq., seven clergy, and John Wheatley.",
+            sourceLessonSlug: "to-the-publick",
+          },
+          {
+            prompt: "Who are the two highest-ranking signatories?",
+            options: ["The governor and lieutenant governor", "The president of Harvard College and the senior pastor of the Old South", "The speaker of the provincial assembly and the chief justice of the province", "The treasurer of the province and the collector of customs for the port"],
+            correctIndex: 0,
+            explanation: "Thomas Hutchinson and Andrew Oliver, which is civil authority deployed as evidence about a book of poems.",
+            sourceLessonSlug: "to-the-publick",
+          },
+          {
+            prompt: "How is the eighteenth signer identified in the printed book?",
+            options: ["Mr. John Wheatley, her Master", "Mr. John Wheatley, of Boston, merchant and owner of the London Packet", "Mr. John Wheatley, in whose family the said Phillis has been instructed", "Mr. John Wheatley, guardian and next friend of the said young person"],
+            correctIndex: 0,
+            explanation: "The person best placed to know is credentialed by the fact that he held her as property.",
+            sourceLessonSlug: "to-the-publick",
+          },
+          {
+            prompt: "What voice does the attestation use for the examination clause?",
+            options: ["Passive", "Conditional, since the signers were reporting only what they had been told", "First person plural, naming each judge who took part in the assessment", "Imperative, instructing the reader to accept the finding without further enquiry"],
+            correctIndex: 0,
+            explanation: "Examined by whom is not stated, and thought qualified by whom is not stated.",
+            sourceLessonSlug: "to-the-publick",
+          },
+          {
+            prompt: "Which phrase does the attestation use for Wheatley's arrival from Africa?",
+            options: ["An uncultivated Barbarian", "A child of tender years lately imported into this province", "A native of Gambia, brought hither in the vessel of a Boston merchant", "One wholly untaught in the letters or the manners of a Christian country"],
+            correctIndex: 0,
+            explanation: "The certificate states the grounds of the doubt in the act of dispelling it.",
+            sourceLessonSlug: "to-the-publick",
+          },
+          {
+            prompt: "What single word does the attestation spend on Wheatley's legal condition?",
+            options: ["Disadvantage", "Bondage, which the signers describe as a misfortune of her circumstances", "Servitude, a term the signers use twice in the course of the certificate", "Captivity, from which the poems are said to be a remarkable deliverance"],
+            correctIndex: 0,
+            explanation: "She is described as under the disadvantage of serving as a slave in a family in this town.",
+            sourceLessonSlug: "to-the-publick",
+          },
+          {
+            prompt: "Where in the book did Bell place the attestation?",
+            options: ["At the front", "At the back, after the poems and before the list of subscribers", "Inside the dedication, so it would be read as part of the patron's endorsement", "On the title page itself, alongside the imprint and the year of publication"],
+            correctIndex: 0,
+            explanation: "In the position a publisher reserves for whatever will most help a book sell, which makes it part of the product.",
+            sourceLessonSlug: "to-the-publick",
+          },
+          {
+            prompt: "How many of the eighteen signers were clergymen?",
+            options: ["Seven", "Three, all of them pastors of congregations in the town of Boston", "Eleven, which made the clergy an absolute majority of the signature block", "None, since the certificate was deliberately confined to civil authorities"],
+            correctIndex: 0,
+            explanation: "Including Mather Byles and Samuel Cooper, alongside two provincial executives and eight laymen.",
+            sourceLessonSlug: "to-the-publick",
+          },
+          {
+            prompt: "What does the attestation claim about the poems' quality?",
+            options: ["Nothing", "That they equal the productions of any English poet of the same age", "That they show a genius the signers had not expected from such a source", "That they are fit for publication on grounds of both piety and elegance"],
+            correctIndex: 0,
+            explanation: "It is a guarantee of authorship rather than a review, which is why it functions as evidence.",
+            sourceLessonSlug: "to-the-publick",
+          },
+          {
+            prompt: "In this course's terms, what kind of doubt were the eighteen signatures answering?",
+            options: ["A doubt about capacity", "A doubt about whether the poems had been printed accurately from the manuscript", "A doubt about whether the Countess of Huntingdon had really granted her patronage", "A doubt about whether the London edition was authorised by the Boston proposers"],
+            correctIndex: 0,
+            explanation: "Not a question about poetry, which is why civil authority rather than literary authority was deployed.",
+            sourceLessonSlug: "to-the-publick",
+          },
+          {
+            prompt: "Which scene does this course refuse to print?",
+            options: ["An in-person interrogation of Wheatley", "The signing of the attestation at the Old State House in Boston", "Wheatley's presentation to the Countess of Huntingdon in London", "The failure of the subscription campaign at a public meeting in Boston"],
+            correctIndex: 0,
+            explanation: "Revolutionary Spaces calls it speculation and reports the current scholarship as finding it unlikely.",
+            sourceLessonSlug: "what-the-examination-was-and-was-not",
+          },
+          {
+            prompt: "What does recent scholarship, as Revolutionary Spaces reports it, think was examined?",
+            options: ["The poems", "Wheatley herself, in a session recorded in the Boston town records", "The manuscript's handwriting, compared against samples of her known hand", "The subscription proposal, which the judges rejected as commercially unsound"],
+            correctIndex: 0,
+            explanation: "A reading examination in February 1772, in connection with the subscription proposal.",
+            sourceLessonSlug: "what-the-examination-was-and-was-not",
+          },
+          {
+            prompt: "Which organisation's exhibit material this lesson quotes on the examination question:",
+            options: ["Revolutionary Spaces", "The Massachusetts Historical Society, which holds Wheatley's manuscript letters", "Documenting the American South, which hosts the digitised text of the Poems", "The Library of Congress, whose catalogue supplies the standard entry for the book"],
+            correctIndex: 0,
+            explanation: "The organisation that operates the Old State House and the Old South Meeting House in Boston.",
+            sourceLessonSlug: "what-the-examination-was-and-was-not",
+          },
+          {
+            prompt: "Why does the section's argument survive the refusal of the interrogation scene?",
+            options: ["It never rested on the scene", "Because the scene is replaced by an equally dramatic account from a different source", "Because the certificate itself describes the interrogation in sufficient detail", "Because the signers' private correspondence supplies what the printed record omits"],
+            correctIndex: 0,
+            explanation: "It rests on a printed certificate, eighteen signatures and a publisher's admission, all of them documented.",
+            sourceLessonSlug: "what-the-examination-was-and-was-not",
+          },
+          {
+            prompt: "What would a course be trading if it added the interrogation scene?",
+            options: ["A checkable fact for an uncheckable image", "A primary source for a secondary source of comparable reliability", "A contested claim for a settled one supported by better documentation", "A dry recitation for a narrative that makes the same point more memorably"],
+            correctIndex: 0,
+            explanation: "And doing it in exactly the place where the course's own credibility is the subject.",
+            sourceLessonSlug: "what-the-examination-was-and-was-not",
+          },
+          {
+            prompt: "To whom did Wheatley write on 18 October 1773?",
+            options: ["David Wooster", "Selina Hastings, Countess of Huntingdon, thanking her for the dedication", "Archibald Bell, complaining that no copies had yet reached Boston", "Thomas Hutchinson, requesting a second attestation for the American edition"],
+            correctIndex: 0,
+            explanation: "The letter is held by the Massachusetts Historical Society and describes both her freedom and her finances.",
+            sourceLessonSlug: "what-the-examination-was-and-was-not",
+          },
+          {
+            prompt: "In that letter, how does Wheatley account for her manumission?",
+            options: ["At the desire of her friends in England", "As a provision in the will of the man who had held her as property", "As a condition Archibald Bell attached to publishing the volume in London", "As a decision of the Massachusetts courts following her return from England"],
+            correctIndex: 0,
+            explanation: "She writes that since her return to America her master has given her her freedom at their desire.",
+            sourceLessonSlug: "what-the-examination-was-and-was-not",
+          },
+          {
+            prompt: "What does Wheatley say about the money the book brings in?",
+            options: ["It is entirely hers", "That it is divided between herself and the London publisher by agreement", "That it must first repay the cost of her passage to England and back", "That it belongs to the Wheatley household until the instrument is executed"],
+            correctIndex: 0,
+            explanation: "She is now upon her own footing, and it is the chief thing she has to depend upon.",
+            sourceLessonSlug: "what-the-examination-was-and-was-not",
+          },
+          {
+            prompt: "What does the Wooster letter demonstrate about a byline?",
+            options: ["It pays after the fee is spent", "That a byline is worth less than a fee when the author has no legal standing", "That authorship confers copyright automatically even on an enslaved author", "That a publisher must account to the author for every copy sold abroad"],
+            correctIndex: 0,
+            explanation: "The book produced a reputation, a patron, advocates, a manumission and an income she calls her own.",
+            sourceLessonSlug: "what-the-examination-was-and-was-not",
+          },
+          {
+            prompt: "How does this lesson describe the relationship between the certificate and the byline?",
+            options: ["The signatures were the price of admission", "The signatures replaced the byline entirely in the eyes of English readers", "The byline was granted only after the signers had approved the finished book", "The certificate was added years later, once the byline had proved profitable"],
+            correctIndex: 0,
+            explanation: "She got the byline, and the byline paid; she also had to be vouched for to receive it.",
+            sourceLessonSlug: "what-the-examination-was-and-was-not",
+          },
+          {
+            prompt: "Which is the honest way to report both halves of the Wheatley case?",
+            options: ["Both are true at once", "Report the manumission and treat the certificate as a formality of the trade", "Report the certificate and treat the manumission as unconnected to the book", "Report neither, since the two cannot be reconciled from the surviving record"],
+            correctIndex: 0,
+            explanation: "A course that reports only one of them is telling half a story.",
+            sourceLessonSlug: "what-the-examination-was-and-was-not",
+          },
+          {
+            prompt: "The attestation's examination clause is undated. What does the scholarship supply?",
+            options: ["February 1772", "September 1773, immediately before the London edition was published", "October 1773, at the time of Wheatley's letter to David Wooster", "May 1773, on the eve of her departure for England from Boston"],
+            correctIndex: 0,
+            explanation: "Which places the reading in the failed subscription campaign rather than in the London publication.",
+            sourceLessonSlug: "what-the-examination-was-and-was-not",
+          },
+          {
+            prompt: "What did the certificate cost Wheatley that a fee never costs a ghostwriter?",
+            options: ["Being vouched for", "A share of the London edition's proceeds, paid to the signers as their fee", "The right to publish anything further without the same signatures attached", "Her manumission, which the signers made conditional on the book's success"],
+            correctIndex: 0,
+            explanation: "By the governor of the province and by the man who owned her, in order to receive a byline.",
+            sourceLessonSlug: "what-the-examination-was-and-was-not",
+          },
+          {
+            prompt: "What kind of statement is \"She has been examined by some of the best Judges\"?",
+            options: ["Undated and unattributed", "A dated finding recorded in the minutes of a Boston town meeting", "A quotation from the publisher's correspondence with Archibald Bell", "A summary of testimony given under oath before the provincial council"],
+            correctIndex: 0,
+            explanation: "Passive twice over, which is why a later reader had to guess and the guess became a scene.",
+            sourceLessonSlug: "what-the-examination-was-and-was-not",
+          },
+          {
+            prompt: "In what year was Wheatley freed, on the evidence of her own letter?",
+            options: ["1773", "1772, before the subscription proposals were published in Boston", "1778, at the time of her marriage and the end of the Wheatley household", "1775, after the outbreak of the war closed the transatlantic book trade"],
+            correctIndex: 0,
+            explanation: "Shortly after her return from London, on her own account at the desire of her English friends.",
+            sourceLessonSlug: "what-the-examination-was-and-was-not",
+          },
+          {
+            prompt: "What is the general rule this lesson models for the rest of the course?",
+            options: ["Report what the record carries", "Prefer the vivid version when both versions are equally well supported", "Treat a widely repeated story as settled unless a scholar has refuted it", "Omit any claim that a modern institution has described as speculation"],
+            correctIndex: 0,
+            explanation: "State what the document says, what is likely, what is speculation, and which is which.",
+            sourceLessonSlug: "what-the-examination-was-and-was-not",
+          },
+          {
+            prompt: "Wheatley's English advocates mattered because they:",
+            options: ["Applied pressure", "Paid Archibald Bell to print the volume at their own expense", "Signed a second attestation for the benefit of English readers", "Purchased the entire first printing to guarantee its commercial success"],
+            correctIndex: 0,
+            explanation: "On her own account the manumission came at their desire, after her return to America.",
+            sourceLessonSlug: "what-the-examination-was-and-was-not",
+          },
+          {
+            prompt: "Which document does this course treat as the strongest evidence about the examination?",
+            options: ["The attestation's own sentence", "A memoir written by one of the eighteen signers late in his life", "A newspaper report of the session published in the Boston Censor", "The manuscript minutes of the meeting, preserved in the Wheatley family papers"],
+            correctIndex: 0,
+            explanation: "It is undated, passive and unattributed, and that is the whole of the documentary basis.",
+            sourceLessonSlug: "what-the-examination-was-and-was-not",
+          },
+          {
+            prompt: "How old was Wheatley, approximately, when the volume was printed?",
+            options: ["About twenty", "About thirty-five, after a long apprenticeship in the Boston printing trade", "About fourteen, which is why the signers were unwilling to certify more firmly", "About forty-five, having published in Boston newspapers for over two decades"],
+            correctIndex: 0,
+            explanation: "She had been enslaved in Boston since childhood and was still enslaved when the book went to press.",
+            sourceLessonSlug: "the-book-that-needed-a-certificate",
+          },
+          {
+            prompt: "What did the failed Boston attempt prove about her local standing?",
+            options: ["A reputation did not raise a book", "That her poems were unknown in Boston before the London edition appeared", "That the Boston printers refused on principle to publish an enslaved author", "That the colonial censor had suppressed the subscription notices as seditious"],
+            correctIndex: 0,
+            explanation: "She had a local reputation as a poet and the subscriptions still did not come in.",
+            sourceLessonSlug: "the-book-that-needed-a-certificate",
+          },
+          {
+            prompt: "What is the reader's intended order of encounter in the 1773 volume?",
+            options: ["Publisher's note, certificate, names, poems", "Poems first, with the certificate reserved for the end as a closing guarantee", "Dedication, subscription list, poems, and the certificate as an appendix", "Certificate, dedication, publisher's note, and only then the title page itself"],
+            correctIndex: 0,
+            explanation: "The doubt and the answer to it sit in one hand, in the order Bell arranged them.",
+            sourceLessonSlug: "to-the-publick",
+          },
+          {
+            prompt: "Why does this course say the signatures were not a private reassurance to a nervous printer?",
+            options: ["They were placed where a publisher puts selling material", "Because Bell said in his note that he had been forced to obtain them", "Because the signers were paid for their names out of the book's proceeds", "Because the certificate was reprinted in every subsequent London edition"],
+            correctIndex: 0,
+            explanation: "Front matter is the position reserved for whatever will most help a book sell.",
+            sourceLessonSlug: "to-the-publick",
+          },
+          {
+            prompt: "The attestation's structure shows the signers guaranteeing:",
+            options: ["Authorship, not merit", "Merit, not authorship, since the poems' origin was never seriously doubted", "Both equally, in two separate clauses of the same certified statement", "Neither, since the document only records that an examination took place"],
+            correctIndex: 0,
+            explanation: "They assure the world the poems were written by Phillis, and say nothing about how good they are.",
+            sourceLessonSlug: "to-the-publick",
+          },
+          {
+            prompt: "What is the significance of a governor signing a note about a book of poems?",
+            options: ["Civil authority used as evidence", "It shows the province formally licensed books before they could be printed", "It shows the governor held a personal literary interest in the poet's work", "It shows the attestation was a legal instrument enforceable in the courts"],
+            correctIndex: 0,
+            explanation: "Which tells you the doubt being answered was about capacity rather than about poetry.",
+            sourceLessonSlug: "to-the-publick",
+          },
+          {
+            prompt: "Two independent transcriptions were used to verify the attestation for this course. They agree on:",
+            options: ["The wording and the names", "The date on which the certificate was signed in Boston", "The identity of the judges who conducted the examination", "The number of subscribers the Boston proposal actually secured"],
+            correctIndex: 0,
+            explanation: "Documenting the American South and the Project Gutenberg transcription of the 1773 volume.",
+            sourceLessonSlug: "to-the-publick",
+          },
+          {
+            prompt: "What does the phrase \"and is thought qualified to write them\" leave unstated?",
+            options: ["Who thought so", "Whether the poems were considered fit for publication at all", "Whether the examination concerned poetry or prose composition", "Whether the judges had read the manuscript in its entirety"],
+            correctIndex: 0,
+            explanation: "The passive voice appears twice in one sentence, and both agents are missing.",
+            sourceLessonSlug: "to-the-publick",
+          },
+          {
+            prompt: "Which best describes Bell's list, as this lesson characterises it?",
+            options: ["Religious books", "Political pamphlets aimed at the American market during the imperial crisis", "Scientific and antiquarian titles issued for subscription among London societies", "Fashionable poetry and drama sold through the West End booksellers"],
+            correctIndex: 0,
+            explanation: "Which is why the Countess of Huntingdon's evangelical patronage was worth so much to the book.",
+            sourceLessonSlug: "the-book-that-needed-a-certificate",
+          },
+          {
+            prompt: "The certificate is described in this course as which kind of evidence?",
+            options: ["Primary", "Secondary, since the signers relied on what the Wheatley household told them", "Circumstantial, since it concerns the manuscript rather than the printed book", "Hearsay, since none of the eighteen signers had read the poems themselves"],
+            correctIndex: 0,
+            explanation: "It is bound into the book it certifies, which is what makes the object unusual.",
+            sourceLessonSlug: "the-book-that-needed-a-certificate",
+          },
+          {
+            prompt: "Why does the course call this book the best single artifact in its catalog?",
+            options: ["The doubt and the answer are in one object", "Because it is the oldest book any course in the catalog cites directly", "Because it is the only eighteenth-century text available in a free digitised copy", "Because the poet's own manuscript survives alongside the printed edition"],
+            correctIndex: 0,
+            explanation: "Elsewhere the paperwork sits in a contract, a letter file, an archive or a scholar's footnote.",
+            sourceLessonSlug: "the-book-that-needed-a-certificate",
+          },
+          {
+            prompt: "What did the manumission instrument secure, on Wheatley's own account?",
+            options: ["Her and her property", "The right to publish a second volume without further attestation", "A pension payable from the Wheatley estate after her enslaver's death", "Passage back to England should conditions in Boston become unsafe"],
+            correctIndex: 0,
+            explanation: "She writes that the instrument is drawn so as to secure her and her property from the executors and administrators.",
+            sourceLessonSlug: "what-the-examination-was-and-was-not",
+          },
+          {
+            prompt: "Which repository holds the 18 October 1773 letter?",
+            options: ["The Massachusetts Historical Society", "The Library of Congress African and Middle Eastern Division in Washington", "The University of North Carolina's Wilson Special Collections Library", "The British Library, which received it with Archibald Bell's business papers"],
+            correctIndex: 0,
+            explanation: "Which also digitised it, so the sentences quoted in this lesson can be checked directly.",
+            sourceLessonSlug: "what-the-examination-was-and-was-not",
+          },
+          {
+            prompt: "What does the phrase \"upon my own footing\" tell a reader about Wheatley's position in late 1773?",
+            options: ["She was newly free and self-supporting", "She had secured a permanent annuity from her English patrons", "She had been taken into the Wheatley family as a paid household member", "She had signed a publishing agreement giving her a share of English sales"],
+            correctIndex: 0,
+            explanation: "And the book was the chief thing she had to depend upon, which is the byline as income.",
+            sourceLessonSlug: "what-the-examination-was-and-was-not",
+          },
+          {
+            prompt: "The course's treatment of the examination is an example of teaching:",
+            options: ["An absence as a finding", "A contested claim by choosing the better-supported side and stating it plainly", "A settled fact that later scholarship has confirmed from a second document", "A dramatic reconstruction as an aid to memory rather than as evidence"],
+            correctIndex: 0,
+            explanation: "The record does not carry the scene, and saying so is the lesson rather than a gap in it.",
+            sourceLessonSlug: "what-the-examination-was-and-was-not",
+          },
+          {
+            prompt: "How many signature groups does the lesson's table divide the eighteen into?",
+            options: ["Five", "Two, separating the civil authorities from the clergy of the town", "Nine, pairing each signer with the family connection that explains his presence", "Three, ranked by the weight their names would have carried with English readers"],
+            correctIndex: 0,
+            explanation: "Provincial executive, Hon., Esq., clergy, and the household, which is John Wheatley alone.",
+            sourceLessonSlug: "to-the-publick",
+          },
+          {
+            prompt: "Which of these is NOT something the attestation does?",
+            options: ["Assess the poems as literature", "Assure the world the poems were written by Phillis", "State that she was brought from Africa a few years earlier", "Note that she was serving as a slave in a family in the town"],
+            correctIndex: 0,
+            explanation: "It is a guarantee of authorship, and it never says whether the signers thought the poems any good.",
+            sourceLessonSlug: "to-the-publick",
+          },
+          {
+            prompt: "What did the London route give the book that Boston could not?",
+            options: ["A publisher and a patron", "A copyright registration enforceable throughout the British empire", "A larger printing than any American press was then capable of producing", "An exemption from the provincial licensing rules that governed Boston printers"],
+            correctIndex: 0,
+            explanation: "Archibald Bell agreed to print it, and the Countess of Huntingdon allowed the dedication.",
+            sourceLessonSlug: "the-book-that-needed-a-certificate",
+          },
+          {
+            prompt: "The lesson says a fee is a number once. What did Wheatley's byline produce instead?",
+            options: ["A reputation, advocates and an income", "A permanent salary paid by her English patron for the rest of her life", "A partnership in Archibald Bell's bookselling business at Aldgate", "A seat among the eighteen signers on any future certificate of this kind"],
+            correctIndex: 0,
+            explanation: "Along with a manumission she attributes to the pressure of her friends in England.",
+            sourceLessonSlug: "what-the-examination-was-and-was-not",
+          },
+        ],
+      },
+    },
   ],
 };
