@@ -21,25 +21,14 @@
 // so titles shorter than MIN_TITLE_WORDS words, and titles that are common English phrases, are
 // skipped rather than reported. This is deliberately a REPORT, never a lint gate: whether two
 // courses should link is a judgment call, and per CLAUDE.md a judgment call must not block a commit.
-import { readFileSync } from "node:fs";
+import { detectMentions, eligibleTargets } from "../src/lib/cross-link-detect";
 import { allSeedEntries, loadCourse, type SeedEntry } from "./lib/seed-registry";
 
-/** A title shorter than this is too generic to match on without drowning the report in noise. */
-const MIN_TITLE_WORDS = 2;
-
-// A SINGLE-WORD slug like "acting" or "tennis" is an ordinary English word, and substring-matching it
-// reports every "acting on" and "interacting" in the catalog. Measured on the first run: single-word
-// slugs produced most of the noise and none of the useful hits. So a slug is matched only when it is
-// multi-part (contains a hyphen), and then only on a word boundary. Titles are unaffected, since a
-// two-word-minimum title is already specific.
-function slugIsDistinctive(slug: string): boolean {
-  return slug.includes("-");
-}
-
-function mentionsSlug(haystack: string, slug: string): boolean {
-  if (!slugIsDistinctive(slug)) return false;
-  return new RegExp(`(^|[^a-z0-9-])${slug}([^a-z0-9-]|$)`).test(haystack);
-}
+// The RULES (what counts as a mention, what counts as an already-made link) live in
+// src/lib/cross-link-detect.ts, shared with `pnpm gen:cross-links`, which builds the owner's
+// approval queue at /admin/cross-links from the same definitions. Two producers with two slightly
+// different ideas of "a mention" would give the owner a queue that disagrees with this report, and
+// neither would be wrong enough for anyone to notice.
 
 interface Mention {
   from: string;
@@ -51,11 +40,6 @@ interface Mention {
 
 function lessonText(lesson: { content?: string; body?: string }): string {
   return String(lesson.content ?? lesson.body ?? "");
-}
-
-/** Every markdown link target in the text, lowercased. */
-function linkTargets(text: string): string {
-  return (text.match(/\]\(([^)]*)\)/g) ?? []).join(" ").toLowerCase();
 }
 
 async function main() {
@@ -78,32 +62,19 @@ async function main() {
     });
   }
 
-  const targets = loaded
-    .filter((c) => c.title.trim().split(/\s+/).length >= MIN_TITLE_WORDS)
-    .map((c) => ({ slug: c.entry.slug, title: c.title }));
+  const targets = eligibleTargets(loaded.map((c) => ({ slug: c.entry.slug, title: c.title })));
 
   const mentions: Mention[] = [];
   for (const source of loaded) {
     if (only && source.entry.slug !== only) continue;
     for (const lesson of source.lessons) {
-      const lower = lesson.text.toLowerCase();
-      const links = linkTargets(lesson.text);
-      for (const t of targets) {
-        if (t.slug === source.entry.slug) continue;
-        if (links.includes(t.slug)) continue; // already linked somewhere in this lesson
-        // Case-SENSITIVE on the title. A title like "The Match" is ordinary English, and matching
-        // it case-insensitively reported every tennis and football lesson that said "the match".
-        // Prose referring to another course capitalises its name; prose using the same words as
-        // words does not. Measured: this alone removed 40 false pairs and cost no real one.
-        const byTitle = lesson.text.includes(t.title);
-        const bySlug = mentionsSlug(lower, t.slug);
-        if (!byTitle && !bySlug) continue;
+      for (const m of detectMentions(lesson.text, source.entry.slug, targets)) {
         mentions.push({
           from: source.entry.slug,
           fromLesson: lesson.slug,
-          to: t.slug,
-          toTitle: t.title,
-          via: byTitle ? "title" : "slug",
+          to: m.targetSlug,
+          toTitle: m.targetTitle,
+          via: m.via,
         });
       }
     }

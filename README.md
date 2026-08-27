@@ -798,6 +798,55 @@ the auditor's grant, so it cannot widen it. Covered by
 [tests/isolation/review-context.test.ts](tests/isolation/review-context.test.ts) and
 [lesson-locations.db.test.ts](tests/isolation/lesson-locations.db.test.ts). No migration.
 
+## Cross-course links, approved before they render (`/admin/cross-links`)
+
+The catalog is past 200 courses and its value is increasingly in the connections: the architecture
+course teaches Robert R. Taylor at Tuskegee, the construction research names the McKissack contract
+at the same field, and a learner on either page has no way to reach the other. `pnpm cross-links`
+finds those mechanically. Whether two courses **should** link is a judgment call, so a finding is a
+candidate, not a link.
+
+**Owner-approved, one mention at a time.** `/admin/cross-links` groups candidates by the course doing
+the mentioning, collapsed like the other review boards, and each card shows the target course, the
+lesson the mention sits in, and **the sentence itself**. That sentence is the feature: judging
+"does this course mean the Who Gets Named course, or is that phrase ordinary English here" is
+impossible from two slugs and trivial from one sentence, and a decision made blind is worse than no
+decision because it closes the item and nobody looks again. The sentence is re-checked against the
+live lesson on every render, so a candidate whose prose has been rewritten says so instead of being
+approved on evidence that is gone.
+
+**Approved links render as a short "Related courses" list under the lesson.** The lesson body is
+never edited. That is the whole point of the links being data: an edit is not reviewable, revocable,
+or per-school, and a link that lives in the prose cannot be withdrawn without a content change.
+
+**A rejected candidate is not an unreviewed one.** Two tables, following `ebook_approvals`:
+`cross_link_approvals` holds a row **only when the link is approved**, so absence is the default and
+the default is that nothing renders; a rejection is its own row in `cross_link_dismissals`. The
+asymmetry is the argument. Forgetting to consult the dismissals table shows a decided candidate in
+the owner's queue again, which is visible and safe; forgetting a `decision = 'approved'` filter would
+publish a rejected link, which is invisible. A decision **flips** (approving deletes any dismissal
+and vice versa), so no reader ever needs a precedence rule, and undoing deletes both rows, which is
+the only path back to "nobody has looked at this".
+
+**Where the candidates come from.** `pnpm gen:cross-links` reads `lessons.text_content` from the
+**database** and writes the committed registry `src/lib/cross-link-content/cross-links.ts`, the same
+split and the same reason as `pnpm gen:citations`: BVC episodes come from gitignored CSVs, the health
+courses are generated, FAA and the languages have their own seeders, so a source-file reader silently
+covers about two thirds of the library. That is survivable in a developer report and not in a review
+queue, which looks finished when you reach the bottom of it. The registry ships **empty** until that
+command is run; the board says so rather than looking like a queue with no work left. The matching
+rules are shared by the report and the generator ([src/lib/cross-link-detect.ts](src/lib/cross-link-detect.ts))
+so the two cannot drift.
+
+**Isolation.** A decision is per tenant, so one school never inherits another's links. On top of
+that, every approved target is resolved through `ScopedDb.listCourseLocations` at render time: a
+course this school does not host, holds unpublished, or holds twice at one slug (`courses.slug` is
+unique per instructor, not per tenant) renders **nothing at all**, not a 404 and not an explanation,
+because the learner never knew a candidate existed. The API validates the triple against the registry
+before writing, so a POST cannot mint a link between two courses no lesson mentions. Covered by
+[tests/isolation/cross-links.test.ts](tests/isolation/cross-links.test.ts) and
+[cross-links.db.test.ts](tests/isolation/cross-links.db.test.ts). **Migration 0060.**
+
 ## Connection graph (`/admin/graph`)
 
 Owner-only view of how the catalog hangs together, answering the two questions scrolling a

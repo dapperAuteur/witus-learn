@@ -69,7 +69,8 @@
     "tutorial:docs": "node scripts/tutorial-video/gen-docs.mjs",
     "tutorial:video": "node scripts/tutorial-video/compose.mjs",
     "test": "vitest run",
-    "cross-links": "tsx scripts/find-cross-links.ts"
+    "cross-links": "tsx scripts/find-cross-links.ts",
+    "gen:cross-links": "tsx --env-file=.env.local scripts/gen-cross-links.ts"
   },
   "dependencies": {
     "@langchain/anthropic": "^1.4.0",

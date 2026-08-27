@@ -146,6 +146,7 @@ export const TUTORIAL_SCRIPTS: TutorialScript[] = [
   placeholder("in-course-search", "Searching inside a course"),
   placeholder("learner-feedback-and-reports", "Learner feedback and problem reports"),
   placeholder("sharing-and-cross-promotion", "Sharing and cross-promotion"),
+  placeholder("cross-course-links", "When your lesson names another course"),
   placeholder("streaming-and-multistream", "Streaming and multistream"),
   placeholder("quizzes-rotation-and-images", "Quizzes, rotation, and images"),
   placeholder("images-and-quick-recall", "Images and quick recall"),
