@@ -2191,5 +2191,708 @@ H.R. 1208, 116th Cong. (2019). U.S. Government Publishing Office. https://www.go
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 4 — The vote that is not there
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "a-seat-without-a-vote",
+      title: "13 · A seat without a vote",
+      section: "Section 4 · The vote that is not there",
+      body: `Every inhabited territory and the District send someone to the House of Representatives. None of them sends a Member.
+
+**Six offices, five statutes and one Act of 1917.** The House's own manual records how each was created (Rules of the House of Representatives, 118th Cong., Rule III, § 675):
+
+| Jurisdiction | Office | Established by |
+| --- | --- | --- |
+| District of Columbia | Delegate | Public Law 91-405 (84 Stat. 845) |
+| Guam | Delegate | Public Law 92-271 (86 Stat. 118) |
+| U.S. Virgin Islands | Delegate | Public Law 92-271 (86 Stat. 118) |
+| American Samoa | Delegate | Public Law 95-556 (92 Stat. 2078), first filled in 1980 |
+| Northern Mariana Islands | Delegate | Public Law 110-229 (122 Stat. 868) |
+| Puerto Rico | Resident Commissioner | Act of 2 March 1917 (39 Stat. 963), with a four-year term |
+
+Puerto Rico's office is the odd one, and it is odd in a way worth noticing: 48 U.S.C. § 891 says the qualified electors "shall choose a Resident Commissioner to the United States at each general election, whose term of office shall be four years" (48 U.S.C. § 891, n.d.). Four years, not two. Every Delegate serves a two-year term like a Member.
+
+**What these six can do is more than most people assume.** Under Rule III, clause 3(a):
+
+> "In a Committee of the Whole House on the State of the Union, each Delegate and the Resident Commissioner shall possess the same powers and privileges as Members of the House. Each Delegate and the Resident Commissioner shall be elected to serve on standing committees in the same manner as Members and shall possess in such committees the same powers and privileges as the other members of the committee." (Rules of the House of Representatives, 118th Cong., Rule III, cl. 3(a))
+
+So they sit on committees, and they vote there, on the same terms as anyone else. On the floor a Delegate may debate, call a Member to order, make any motion a Member may make except the motion to reconsider, raise a point of order, and be appointed a teller. One has even moved an impeachment (Rules of the House of Representatives, 118th Cong., Rule III, § 675).
+
+**And then the line.** In the manual's own words: "the law forbids a Delegate to vote". Not on final passage, not on anything the House itself decides.
+
+**The Committee of the Whole vote is real and, by design, cannot decide anything.** Under clause 6(h) of Rule XVIII, a question resolved in the Committee of the Whole "by a margin within which the votes of Delegates and the Resident Commissioner were decisive" is immediately reconsidered in the House, where they cannot vote (Rules of the House of Representatives, 118th Cong., Rule III, § 675). When that arrangement was challenged, the D.C. Circuit upheld it in *Michel v. Anderson* on the premise that the immediate revote "rendered their votes merely symbolic and not an investment of true legislative power" (as stated in Rules of the House of Representatives, 118th Cong., Rule III, § 675). **A court had to find the vote meaningless in order to find it lawful.**
+
+**The privilege also switches on and off with each Congress, and that is itself a fact about this subject.** The manual records the sequence: granted in the 103rd Congress in 1993, revoked in the 104th in 1995, reinstated in the 110th in 2007, revoked in the 112th in 2011, reinstated in the 116th in 2019. The 119th Congress adopted the rules of the 118th, and its rules resolution amends neither Rule III nor clause 6 of Rule XVIII (H.R. Res. 5, 2025). So the Committee of the Whole vote stands as this is written. **Check the current rules package before relying on it: this is exactly the kind of value that can change every two years without anyone announcing it.**
+
+**One more disability, small and revealing.** A discharge petition, the device that forces a bill out of a hostile committee, "may not be signed by a Delegate or the Resident Commissioner, even by unanimous consent", because "a majority of the total membership of the House" is read to mean 218 Members and they are not counted in it (Rules of the House of Representatives, 118th Cong., Rule III, § 675).
+
+**And the Senate is simply absent from this lesson,** because there is nothing to describe. Article I, Section 3 says "The Senate of the United States shall be composed of two Senators from each State", and the Seventeenth Amendment repeats the formula with the senators elected by the people of the state (U.S. Const. art. I, § 3, cl. 1; U.S. Const. amend. XVII). No state, no senator. There is no delegate equivalent, no committee seat, no symbolic vote. **For several million people the entire upper chamber does not exist.**
+
+:::reveal What is the term of Puerto Rico's Resident Commissioner, and how does it differ from a Delegate's? ||| Four years, where every Delegate serves two.
+
+:::reveal Where may a Delegate vote, and where may a Delegate not? ||| In standing committees and in the Committee of the Whole, but not in the House itself, where the law forbids a Delegate to vote.
+
+:::reveal On what premise did the D.C. Circuit uphold the Delegates' Committee of the Whole vote? ||| That the immediate revote whenever their votes were decisive rendered those votes merely symbolic and not an investment of true legislative power.
+
+## Vocabulary
+- **Delegate**: a non-voting member of the House elected by a territory or the District, holding committee rights and no vote in the House itself.
+- **Resident Commissioner**: Puerto Rico's equivalent office, created in 1917 and unique in carrying a four-year term.
+- **Committee of the Whole**: the House sitting under a different set of procedures to consider legislation, and the only floor setting in which a Delegate may cast a vote.
+- **Automatic revote**: the rule requiring a question to be put again in the House whenever the Delegates' votes were decisive in the Committee of the Whole, which is what makes their vote lawful and what makes it symbolic.
+- **Discharge petition**: the signature device that forces a bill out of committee, whose threshold of 218 excludes Delegates and the Resident Commissioner entirely.
+
+## Sources
+48 U.S.C. § 891. (n.d.). *Resident Commissioner; election*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title48-section891&num=0&edition=prelim
+
+H.R. Res. 5, 119th Cong. (2025). *Adopting the Rules of the House of Representatives for the One Hundred Nineteenth Congress*. U.S. Government Publishing Office. https://www.govinfo.gov/content/pkg/BILLS-119hres5eh/html/BILLS-119hres5eh.htm
+
+*Rules of the House of Representatives*, 118th Cong., Rule III (H. Doc. 117-161). U.S. Government Publishing Office. https://www.govinfo.gov/content/pkg/HMAN-118/html/HMAN-118-pg401.htm
+
+U.S. Const. art. I, § 3, cl. 1; U.S. Const. amend. XVII. National Archives. https://www.archives.gov/founding-docs/constitution-transcript`,
+    },
+    {
+      slug: "no-electors",
+      title: "14 · No electors, and the amendment that made one exception",
+      section: "Section 4 · The vote that is not there",
+      body: `Americans in the territories do not vote for President. The reason is one clause, and it is not about them at all.
+
+**Article II, Section 1, Clause 2:**
+
+> "Each State shall appoint, in such Manner as the Legislature thereof may direct, a Number of Electors, equal to the whole Number of Senators and Representatives to which the State may be entitled in the Congress" (U.S. Const. art. II, § 1, cl. 2)
+
+**Each State.** The President is not elected by the people of the United States directly. The President is elected by electors that states appoint. A place that is not a state appoints none, and no statute can supply any, because both the number and the source are fixed in the constitutional text.
+
+**Which is exactly why the District needed an amendment, and got one.** The Twenty-Third Amendment, passed by Congress on 16 June 1960 and ratified on 29 March 1961:
+
+> "The District constituting the seat of Government of the United States shall appoint in such manner as the Congress may direct: A number of electors of President and Vice President equal to the whole number of Senators and Representatives in Congress to which the District would be entitled if it were a State, but in no event more than the least populous State" (U.S. Const. amend. XXIII, § 1)
+
+Read the last clause twice. **The District's electoral votes are capped at whatever the smallest state has**, which has meant three for the entire life of the amendment. Even the remedy was written with a ceiling on it.
+
+**No parallel amendment exists for any territory.** Puerto Rico, Guam, the Virgin Islands, American Samoa and the Northern Marianas appoint no electors, and the number of people that covers is not small. Puerto Rico alone counted 3,285,874 residents in the 2020 Census (U.S. Census Bureau, 2021a), more people than live in twenty-one states, and not one of them casts a vote for President from home.
+
+**Three things people routinely get wrong here, worth fixing now.**
+
+**One: this is about residence, not about citizenship or ancestry.** A citizen born in San Juan who moves to Orlando registers and votes for President like any other Floridian. A citizen born in Ohio who moves to San Juan stops voting for President. **The person did not change. The place did.** That is the Balzac principle from Section 2, still running a century later.
+
+**Two: presidential primaries are not the general election.** The territories do send delegates to the parties' nominating conventions. A party convention is a private organizational process, not the constitutional election, and a convention delegate is not an elector under Article II. Confusing the two makes the arrangement look far more representative than it is.
+
+**Three: the Delegate in the House and the elector under Article II are different creatures,** made by different instruments and doing different jobs. Congress created the Delegates by ordinary statute, which means Congress could alter them tomorrow. Congress cannot create an elector by statute for anyone, which is why the District's three votes required amending the Constitution and why no territory has any.
+
+**So the ledger for a resident of a territory, as it stands.** No senator. One member of the House who may vote in committee and not on passage. No vote for President. The number of federal officials any of them helps choose who may vote on the floor of anything is zero.
+
+:::reveal Under Article II, who appoints presidential electors? ||| Each State, in the manner its legislature directs, so a place that is not a state appoints none.
+
+:::reveal What does the Twenty-Third Amendment cap the District's electors at? ||| No more than the least populous state has, which has meant three throughout the amendment's life.
+
+:::reveal What happens to a citizen's presidential vote when they move from a state to Puerto Rico? ||| They stop voting for President, because the entitlement follows the place of residence rather than the person.
+
+## Vocabulary
+- **Elector**: a person appointed by a state under Article II to cast one of the votes that actually elects the President, and an office no territory can hold.
+- **Twenty-Third Amendment**: the 1961 amendment giving the District presidential electors, capped at the number held by the least populous state.
+- **Nominating convention**: a political party's own process for choosing a presidential candidate, which territories do take part in and which is not the constitutional election.
+- **Residence rule**: the practical effect of Article II, that the ability to vote for President attaches to where a citizen lives rather than to the citizen.
+- **Statutory versus constitutional office**: the Delegates exist because Congress passed laws and could be changed by law, while electors exist only by constitutional text and cannot be created by statute.
+
+## Sources
+U.S. Census Bureau. (2021a, August 25). *Puerto Rico population declined 11.8% from 2010 to 2020*. https://www.census.gov/library/stories/state-by-state/puerto-rico.html
+
+U.S. Const. amend. XXIII. National Archives. https://www.archives.gov/founding-docs/amendments-11-27
+
+U.S. Const. art. II, § 1, cl. 2. National Archives. https://www.archives.gov/founding-docs/constitution-transcript`,
+    },
+    {
+      slug: "the-district-is-different",
+      title: "15 · The District is different, and the difference cuts both ways",
+      section: "Section 4 · The vote that is not there",
+      body: `It is tempting to file the District of Columbia under "same problem, smaller island". It is a different problem, and the differences run in both directions.
+
+**Different clause.** The territories are governed under Article IV. The District is governed under Article I, Section 8, Clause 17, which gives Congress power "To exercise exclusive Legislation in all Cases whatsoever, over such District" (U.S. Const. art. I, § 8, cl. 17). "In all Cases whatsoever" is stronger language than "needful Rules and Regulations", and it is a power over a place the Constitution itself calls into being rather than over property the United States happens to hold.
+
+**Different constitutional status for the people.** Nobody argues that the District is unincorporated or that the Constitution reaches it only in part. In 1820, in *Loughborough v. Blake*, Chief Justice Marshall applied the requirement of uniform duties to a tax on the District without hesitation. The Insular Cases are not about the District at all, which is why its residents have never had to argue about whether they are owed a jury.
+
+**Different tax position, and this is the difference that produces the slogan.** A bona fide resident of Puerto Rico generally excludes Puerto Rico source income from federal gross income under 26 U.S.C. § 933, which exempts it "from taxation under this subtitle", with an express carve-out for pay received "for services performed as an employee of the United States or any agency thereof" (26 U.S.C. § 933, n.d.). **No such provision exists for the District.** A District resident pays federal income tax on the same terms as a resident of Maryland and has no vote on the floor of either chamber. That is the literal content of "taxation without representation", and it is why the District's argument and Puerto Rico's argument are not the same argument. In *Vaello Madero* the Supreme Court treated the territories' lighter federal tax treatment as a rational basis for treating them differently in a benefits program, which is the subject of the next section. That reasoning has no purchase in the District.
+
+**Different presidential vote.** The District has three electors under the Twenty-Third Amendment. The territories have none.
+
+**Same absence in Congress.** The District has a Delegate, created by Public Law 91-405, with exactly the powers the previous lesson described and no vote in the House. It has no senator either.
+
+**And one thing the District has that no territory has: an elected local government whose every act Congress reviews.** The Home Rule Act created the Council, and D.C. Code § 1-206.02 sets the terms. An act of the Council takes effect "upon the expiration of the 30-calendar-day period (excluding Saturdays, Sundays, and holidays)" unless "there has been enacted into law a joint resolution disapproving such act", with a 60-day period for amendments to criminal law (D.C. Code § 1-206.02, n.d.). The same section forbids the Council to legislate on a list of subjects, among them the organization of the courts, building heights above the limits in force in 1973, and anything "which is not restricted in its application exclusively in or to the District".
+
+**Hold both halves of that together, because it is the honest summary.** The District governs itself more than a territory does in some respects and less in others. It elects a council and a mayor whose laws a body its residents cannot vote for may undo inside thirty days. That is not the territories' problem, which is a doctrine about which parts of the Constitution apply at all. It is a different problem: full constitutional status, full federal taxation, and a legislature on probation.
+
+**The reason to teach them together is not that they are the same.** It is that both are answers to the question this course opened with, and both were produced by the same silence in the two clauses of Section 1. Neither clause says how long, neither promises a vote, and neither says what happens to the people in the meantime.
+
+:::reveal Which constitutional clause governs the District, and how is its language stronger than the Territory Clause? ||| Article I, Section 8, Clause 17, which grants exclusive Legislation in all Cases whatsoever rather than needful Rules and Regulations.
+
+:::reveal What is the tax difference between a District resident and a bona fide resident of Puerto Rico? ||| The District resident pays federal income tax on the same terms as anyone in a state, while 26 U.S.C. § 933 exempts Puerto Rico source income for a bona fide resident.
+
+:::reveal How long does Congress have to disapprove an act of the D.C. Council, and what is the longer period? ||| Thirty calendar days excluding weekends and holidays, and sixty days for amendments to criminal law.
+
+## Vocabulary
+- **Home Rule Act**: the statute creating the District's elected Council and Mayor, subject to the congressional review the same law preserves.
+- **Congressional review period**: the window during which an act of the D.C. Council may be undone by a joint resolution of disapproval enacted into law.
+- **Bona fide resident**: the tax status that triggers the Puerto Rico source income exclusion in 26 U.S.C. § 933, and the reason the territories' tax position differs from the District's.
+- **Joint resolution of disapproval**: the instrument by which Congress nullifies a District act, which must be enacted into law like any other measure.
+- **Taxation without representation**: in the District's case a literal description, since its residents are subject to the federal income tax and elect nobody who may vote on it.
+
+## Sources
+26 U.S.C. § 933. (n.d.). *Income from sources within Puerto Rico*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section933&num=0&edition=prelim
+
+D.C. Code § 1-206.02. (n.d.). *Limitations on the Council*. Council of the District of Columbia. https://code.dccouncil.gov/us/dc/council/code/sections/1-206.02
+
+U.S. Const. art. I, § 8, cl. 17. National Archives. https://www.archives.gov/founding-docs/constitution-transcript`,
+    },
+    {
+      slug: "quiz-the-vote-that-is-not-there",
+      title: "16 · Knowledge check: the vote that is not there",
+      section: "Section 4 · The vote that is not there",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What office does Puerto Rico send to the House of Representatives?",
+            options: ["A Resident Commissioner", "A Delegate, on the same terms as Guam and the Virgin Islands", "Two Representatives apportioned by population under the decennial census", "An observer appointed by the Governor rather than elected by the voters"],
+            correctIndex: 0,
+            explanation: "The office was created by the Act of 2 March 1917 and is the only one of the six that carries a four-year term.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "How long is the Resident Commissioner's term?",
+            options: ["Four years", "Two years, the same as every other member of the House of Representatives", "Six years, matching the term of a United States senator", "One year, renewable by the territorial legislature without a general election"],
+            correctIndex: 0,
+            explanation: "48 U.S.C. § 891 sets it at four years from the third of January following the general election.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "Which statute established the office of Delegate from the District of Columbia?",
+            options: ["Public Law 91-405", "Public Law 92-271, which also created the Guam and Virgin Islands offices", "Public Law 110-229, which created the Northern Marianas office", "The Act of 2 March 1917, which created the Resident Commissioner"],
+            correctIndex: 0,
+            explanation: "The House manual records it at 84 Stat. 845, separate from the statutes that created the territorial delegates.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "Which single statute created the Delegate offices for both Guam and the Virgin Islands?",
+            options: ["Public Law 92-271", "Public Law 95-556, which also created the American Samoa office in 1978", "Public Law 91-405, which had created the District's office two years earlier", "The Organic Act of Guam, enacted on 1 August 1950"],
+            correctIndex: 0,
+            explanation: "The House manual cites it at 86 Stat. 118 for both territories.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "When was American Samoa's Delegate office first filled?",
+            options: ["1980", "1972, when the Guam and Virgin Islands offices were first filled", "1929, when Congress accepted the deeds of cession", "2008, the year the Northern Marianas office was created"],
+            correctIndex: 0,
+            explanation: "Public Law 95-556 created the office and the manual records that it was first filled at the general federal election of 1980.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "Which territory's Delegate office is the most recently created of the six?",
+            options: ["The Northern Mariana Islands", "American Samoa, whose office dates from Public Law 95-556", "Guam, whose office was created alongside the Virgin Islands", "The District of Columbia, whose office dates from Public Law 91-405"],
+            correctIndex: 0,
+            explanation: "Public Law 110-229, at 122 Stat. 868, created it, more than three decades after the Covenant took effect.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "Under Rule III, clause 3(a), what powers does a Delegate have in standing committees?",
+            options: ["The same as other members of the committee", "Debate only, with no ability to vote on any question before the committee", "A vote that counts only if the committee chair certifies it in advance", "Observer status, with a right to file written views but not to attend markups"],
+            correctIndex: 0,
+            explanation: "The rule says they are elected to serve on standing committees in the same manner as Members and hold the same powers and privileges there.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "In which floor setting may a Delegate cast a vote?",
+            options: ["The Committee of the Whole", "On final passage of a bill after the Committee of the Whole rises", "On a motion to recommit a bill with instructions to a standing committee", "On the election of the Speaker at the opening of a new Congress"],
+            correctIndex: 0,
+            explanation: "Rule III, clause 3(a) gives Delegates the same powers and privileges as Members there, and only there.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "What does the House manual say the law does about a Delegate voting in the House itself?",
+            options: ["It forbids it", "It permits it whenever the Speaker grants unanimous consent in advance", "It permits it on procedural questions but not on the passage of legislation", "It leaves the question to each Congress to settle in its own rules package"],
+            correctIndex: 0,
+            explanation: "The manual's phrasing is that the law forbids a Delegate to vote, which is separate from what the House rules allow in committee.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "What happens under clause 6(h) of Rule XVIII when Delegates' votes are decisive?",
+            options: ["The question is immediately reconsidered in the House", "The vote stands, and the Speaker records the margin in the Congressional Record", "The Committee of the Whole adjourns until the following legislative day", "The bill is returned to the standing committee that reported it"],
+            correctIndex: 0,
+            explanation: "The revote takes place in the House, where Delegates and the Resident Commissioner may not vote at all.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "On what premise did the D.C. Circuit uphold the Delegates' Committee of the Whole vote in Michel v. Anderson?",
+            options: ["That the votes were merely symbolic", "That the Constitution permits Congress to enlarge the House by statute", "That the territories had consented to the arrangement through their legislatures", "That the Speaker retained discretion to disregard any decisive delegate vote"],
+            correctIndex: 0,
+            explanation: "The immediate revote meant the votes were not an investment of true legislative power, and that is what made them lawful.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "What is the striking feature of the Michel v. Anderson reasoning?",
+            options: ["The vote had to be meaningless in order to be lawful", "The court held that Delegates were Members for every constitutional purpose", "The court required Congress to grant the Delegates a vote on final passage", "The court struck the rule down and the House reinstated it by resolution"],
+            correctIndex: 0,
+            explanation: "The lawfulness of the privilege rested on the automatic revote draining it of effect.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "In which Congress was the Delegates' Committee of the Whole vote first granted?",
+            options: ["The 103rd", "The 91st, when the District's Delegate office was first created by statute", "The 116th, when the privilege was most recently reinstated by the House", "The 110th, when it was reinstated after a twelve-year absence"],
+            correctIndex: 0,
+            explanation: "It came in 1993, was revoked in 1995, reinstated in 2007, revoked in 2011 and reinstated in 2019.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "What does the on-and-off history of the Committee of the Whole vote tell a reader?",
+            options: ["It is a rules privilege that each Congress may withdraw", "It is a constitutional right that survives changes in the House rules", "It has been settled law since the office of Delegate was first created", "It applies only to the Resident Commissioner and never to the Delegates"],
+            correctIndex: 0,
+            explanation: "Granted in 1993, revoked in 1995, reinstated in 2007, revoked in 2011 and reinstated in 2019, so the current rules package has to be checked.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "What did the 119th Congress do about Rule III and clause 6 of Rule XVIII?",
+            options: ["It adopted the previous Congress's rules without amending either", "It repealed the Committee of the Whole vote for Delegates once again", "It extended the Committee of the Whole vote to votes on final passage", "It abolished the office of Resident Commissioner and created a Delegate instead"],
+            correctIndex: 0,
+            explanation: "H. Res. 5 adopts the 118th Congress's rules with amendments listed elsewhere, and neither of these rules is among them.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "Which motion may a Delegate NOT make on the floor of the House?",
+            options: ["The motion to reconsider", "A point of order against a bill being considered out of order", "A motion to adjourn at the close of the legislative day", "A motion that any other Member of the House is entitled to make"],
+            correctIndex: 0,
+            explanation: "The manual records that a Delegate may make any motion a Member may make except that one.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "Why may a Delegate not sign a discharge petition?",
+            options: ["The threshold of 218 counts only Members", "Because a discharge petition may only be signed by members of the committee involved", "Because the Speaker must approve every signature before it is recorded", "Because the rule was repealed for Delegates in the 112th Congress and never restored"],
+            correctIndex: 0,
+            explanation: "A majority of the total membership of the House is construed as 218 Members, not including Delegates or the Resident Commissioner.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "How many senators do the territories and the District have between them?",
+            options: ["None", "One each, seated without a vote in the same manner as a House Delegate", "Two, shared among the five territories on a rotating four-year basis", "Three, matching the number of electors the District casts for President"],
+            correctIndex: 0,
+            explanation: "Article I, Section 3 composes the Senate of two senators from each State, and there is no delegate equivalent in that chamber.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "How does Article I, Section 3 compose the Senate?",
+            options: ["Two Senators from each State", "One Senator for every million residents counted in the decennial census", "Two Senators from each State and one from each organized territory", "A number of Senators fixed by Congress from time to time by statute"],
+            correctIndex: 0,
+            explanation: "The Seventeenth Amendment repeats the formula and changes only who elects them, so no state means no senator.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "What did the Seventeenth Amendment change about the Senate?",
+            options: ["Who elects the senators", "The number of senators allotted to each state of the Union", "The length of a senator's term of office in the upper chamber", "Whether territories could be represented in the Senate at all"],
+            correctIndex: 0,
+            explanation: "It moved the choice from state legislatures to the people of each state and left the two-per-state formula untouched.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "Under Article II, Section 1, Clause 2, who appoints presidential electors?",
+            options: ["Each State", "The people of the United States, voting directly for President and Vice President", "The Congress, by joint resolution following each decennial census", "Each State and each organized territory of the United States"],
+            correctIndex: 0,
+            explanation: "The clause names the states and fixes the number by the size of each state's congressional delegation.",
+            sourceLessonSlug: "no-electors",
+          },
+          {
+            prompt: "How many electors does Article II give a territory?",
+            options: ["None", "One for each Delegate the territory sends to the House of Representatives", "A number equal to the least populous state, as with the District", "A number set by Congress in the statute creating the territory's government"],
+            correctIndex: 0,
+            explanation: "The clause runs to states only, and no statute can supply an elector because both the number and the source are constitutional.",
+            sourceLessonSlug: "no-electors",
+          },
+          {
+            prompt: "When was the Twenty-Third Amendment ratified?",
+            options: ["1961", "1973, the year Congress passed the District of Columbia Home Rule Act", "1913, the same year the Seventeenth Amendment took effect", "1917, the year Congress conferred citizenship on Puerto Rico"],
+            correctIndex: 0,
+            explanation: "Congress passed it on 16 June 1960 and it was ratified on 29 March 1961.",
+            sourceLessonSlug: "no-electors",
+          },
+          {
+            prompt: "What ceiling does the Twenty-Third Amendment place on the District's electors?",
+            options: ["No more than the least populous state", "No more than half the number a state of similar population would receive", "No more than three, stated as a fixed number in the text of the amendment", "No more than the number of Delegates the District elects to the House"],
+            correctIndex: 0,
+            explanation: "The text caps it at the least populous state's number, which has meant three for the whole life of the amendment.",
+            sourceLessonSlug: "no-electors",
+          },
+          {
+            prompt: "How does the Twenty-Third Amendment describe the manner of appointing the District's electors?",
+            options: ["In such manner as the Congress may direct", "In such manner as the Council of the District of Columbia may direct", "By popular vote of the qualified electors resident in the District", "By the President, with the advice and consent of the Senate"],
+            correctIndex: 0,
+            explanation: "The text hands the manner to Congress, which is the same body the District cannot vote for.",
+            sourceLessonSlug: "no-electors",
+          },
+          {
+            prompt: "What was Puerto Rico's population in the 2020 Census?",
+            options: ["3,285,874", "1,264,065, the number of ballots cast in its most recent status vote", "689,545, the figure recorded for the District of Columbia", "153,836, the figure recorded for the territory of Guam"],
+            correctIndex: 0,
+            explanation: "The Census Bureau reported it alongside a decline of 11.8 percent from the 2010 count.",
+            sourceLessonSlug: "no-electors",
+          },
+          {
+            prompt: "What happens to a citizen who moves from Ohio to San Juan?",
+            options: ["They stop voting for President", "They keep voting for President by absentee ballot in their former state", "They lose United States citizenship after one year of continuous residence", "They gain a vote for the Resident Commissioner and keep their presidential vote"],
+            correctIndex: 0,
+            explanation: "The entitlement attaches to the place of residence rather than to the person, which is the Balzac principle still operating.",
+            sourceLessonSlug: "no-electors",
+          },
+          {
+            prompt: "What happens to a citizen who moves from San Juan to Orlando?",
+            options: ["They register and vote for President like any other Floridian", "They must apply for naturalization before they may register to vote", "They keep voting in Puerto Rico's elections for Resident Commissioner", "They must wait one full presidential cycle before becoming eligible"],
+            correctIndex: 0,
+            explanation: "Nothing about the person changed, which is the cleanest demonstration that the rule is about place.",
+            sourceLessonSlug: "no-electors",
+          },
+          {
+            prompt: "Do the territories take part in presidential nominating conventions?",
+            options: ["Yes, and a convention is not the constitutional election", "No, because party rules exclude jurisdictions without electoral votes", "Yes, and their convention delegates are counted as electors under Article II", "Only Puerto Rico does, because of the four-year term of its Resident Commissioner"],
+            correctIndex: 0,
+            explanation: "A party convention is a private organizational process, and confusing it with the general election makes the arrangement look more representative than it is.",
+            sourceLessonSlug: "no-electors",
+          },
+          {
+            prompt: "What is the key difference between a Delegate and an elector, in how each exists?",
+            options: ["One is created by statute and the other only by the Constitution", "One is elected by voters and the other is appointed by the President", "One serves two years and the other serves for a single presidential term", "One may vote in committee and the other may vote on final passage"],
+            correctIndex: 0,
+            explanation: "Congress could alter the Delegates tomorrow and cannot create an elector for anyone, which is why the District's three votes needed an amendment.",
+            sourceLessonSlug: "no-electors",
+          },
+          {
+            prompt: "How many federal officials with a floor vote does a territorial resident help choose?",
+            options: ["None", "One, the Delegate who represents the territory in the House", "Two, the Delegate and the territory's own governor", "Three, matching the electors the District casts for President"],
+            correctIndex: 0,
+            explanation: "No senator, a House member who cannot vote on passage, and no presidential elector.",
+            sourceLessonSlug: "no-electors",
+          },
+          {
+            prompt: "Which article governs the District of Columbia?",
+            options: ["Article I", "Article IV, the same article that governs the territories of the United States", "Article II, because the seat of government houses the executive branch", "Article III, because the District contains the federal courts of the nation"],
+            correctIndex: 0,
+            explanation: "Section 8, Clause 17 of Article I, which is a different source of power from the Territory Clause.",
+            sourceLessonSlug: "the-district-is-different",
+          },
+          {
+            prompt: "How does the District Clause's language compare with the Territory Clause's?",
+            options: ["It is stronger, granting legislation in all Cases whatsoever", "It is weaker, requiring the consent of the District's residents before legislating", "It is identical, using the same words needful Rules and Regulations", "It is narrower, applying only to the erection of forts and arsenals"],
+            correctIndex: 0,
+            explanation: "The Territory Clause grants power to make all needful Rules and Regulations, which is not the same phrase at all.",
+            sourceLessonSlug: "the-district-is-different",
+          },
+          {
+            prompt: "Is the District an unincorporated territory?",
+            options: ["No, and nobody argues that it is", "Yes, and the Insular Cases apply to it in the same way they apply to Guam", "Yes, but only for the purposes of the revenue clauses of the Constitution", "The question has never been decided by any federal court since 1820"],
+            correctIndex: 0,
+            explanation: "The Insular Cases are not about the District, and Loughborough v. Blake applied the uniformity requirement there in 1820 without hesitation.",
+            sourceLessonSlug: "the-district-is-different",
+          },
+          {
+            prompt: "What does 26 U.S.C. § 933 do?",
+            options: ["Exempts Puerto Rico source income of a bona fide resident", "Exempts every resident of every United States territory from federal income tax", "Imposes a special federal excise tax on goods shipped from Puerto Rico", "Requires Puerto Rico to match federal benefits spending dollar for dollar"],
+            correctIndex: 0,
+            explanation: "It excludes that income from gross income, with an express carve-out for pay earned as an employee of the United States or its agencies.",
+            sourceLessonSlug: "the-district-is-different",
+          },
+          {
+            prompt: "Which income does 26 U.S.C. § 933 expressly refuse to exempt?",
+            options: ["Pay for services performed as an employee of the United States", "Investment income earned from securities issued outside the territory", "Rental income from property located anywhere in the fifty states", "Pension income received from a former employer on the mainland"],
+            correctIndex: 0,
+            explanation: "The carve-out is written into the section, which is why the exemption is narrower than the common summary of it.",
+            sourceLessonSlug: "the-district-is-different",
+          },
+          {
+            prompt: "How does a District resident's federal income tax position compare with a Maryland resident's?",
+            options: ["It is the same", "It is lighter, because the District is not a state of the Union", "It is heavier, because the District pays a supplemental federal levy", "It depends on whether the resident works for the federal government"],
+            correctIndex: 0,
+            explanation: "No provision exempts District income, which is what makes taxation without representation a literal description there.",
+            sourceLessonSlug: "the-district-is-different",
+          },
+          {
+            prompt: "Why does the Vaello Madero tax rationale have no purchase in the District?",
+            options: ["District residents are not exempt from federal income tax", "District residents already elect three members with full voting rights", "The Supreme Court expressly excluded the District from that decision", "The District is governed under Article IV rather than under Article I"],
+            correctIndex: 0,
+            explanation: "The Court treated the territories' lighter federal tax treatment as a rational basis for different benefits treatment, and the District has no such treatment.",
+            sourceLessonSlug: "the-district-is-different",
+          },
+          {
+            prompt: "How long does an act of the D.C. Council normally wait before taking effect?",
+            options: ["Thirty calendar days excluding weekends and holidays", "Ninety days from the date the Mayor signs it into local law", "Until Congress passes a joint resolution expressly approving it", "Until the next regular session of Congress convenes in January"],
+            correctIndex: 0,
+            explanation: "It takes effect at the end of that period unless a joint resolution disapproving it has been enacted into law.",
+            sourceLessonSlug: "the-district-is-different",
+          },
+          {
+            prompt: "What is the longer congressional review period under D.C. Code § 1-206.02?",
+            options: ["Sixty days, for amendments to criminal law", "One hundred and twenty days, for any act affecting the District's budget", "Forty-five days, for acts concerning the organization of the local courts", "Thirty legislative days, for acts affecting the height of buildings"],
+            correctIndex: 0,
+            explanation: "Criminal-law amendments get the longer window, which is a distinct provision from the ordinary thirty-day rule.",
+            sourceLessonSlug: "the-district-is-different",
+          },
+          {
+            prompt: "Which of these may the D.C. Council NOT legislate about?",
+            options: ["The organization of the courts", "The licensing of businesses operating within the boundaries of the District", "The salaries paid to employees of the District government", "The hours during which District public schools must remain open"],
+            correctIndex: 0,
+            explanation: "That subject sits on the list of limitations in D.C. Code § 1-206.02, alongside building heights and matters not restricted exclusively to the District.",
+            sourceLessonSlug: "the-district-is-different",
+          },
+          {
+            prompt: "What instrument does Congress use to nullify an act of the D.C. Council?",
+            options: ["A joint resolution of disapproval enacted into law", "A concurrent resolution adopted by both chambers without presentment", "An order of the Speaker of the House transmitted to the Mayor", "A ruling of the federal district court for the District of Columbia"],
+            correctIndex: 0,
+            explanation: "It must be enacted into law like any other measure, which is why the review is a real but demanding check.",
+            sourceLessonSlug: "the-district-is-different",
+          },
+          {
+            prompt: "What does the District have that no territory has?",
+            options: ["Presidential electors", "A Delegate in the House of Representatives with committee voting rights", "An elected legislature of its own with power over local matters", "Residents who are citizens of the United States at birth"],
+            correctIndex: 0,
+            explanation: "Three of them, under the Twenty-Third Amendment, and the territories have none.",
+            sourceLessonSlug: "the-district-is-different",
+          },
+          {
+            prompt: "What do the District and the territories have in common in Congress?",
+            options: ["A House member who cannot vote on passage and no senator", "A Resident Commissioner elected to a four-year term of office", "Two senators seated without a vote on the floor of the chamber", "Presidential electors capped at the number held by the smallest state"],
+            correctIndex: 0,
+            explanation: "The District's Delegate was created by Public Law 91-405 and holds exactly the powers the territorial Delegates hold.",
+            sourceLessonSlug: "the-district-is-different",
+          },
+          {
+            prompt: "How does this course summarize the District's position against a territory's?",
+            options: ["More self-government in some respects and less in others", "Identical in every respect except the three presidential electors", "Strictly better, because the Insular Cases do not apply to the District", "Strictly worse, because Congress may legislate for it in all cases whatsoever"],
+            correctIndex: 0,
+            explanation: "It elects a council and a mayor whose laws a body its residents cannot vote for may undo within thirty days.",
+            sourceLessonSlug: "the-district-is-different",
+          },
+          {
+            prompt: "Why does this course teach the District alongside the territories?",
+            options: ["Both answer the same question left open by two silent clauses", "Because the Supreme Court has treated them identically since 1901", "Because both were acquired from foreign powers by treaty in 1898", "Because both are governed under Article IV of the Constitution"],
+            correctIndex: 0,
+            explanation: "Neither the Territory Clause nor the District Clause says how long, promises a vote, or says what happens to the people in the meantime.",
+            sourceLessonSlug: "the-district-is-different",
+          },
+          {
+            prompt: "What is a bona fide resident, for the purposes of the Puerto Rico income exclusion?",
+            options: ["Someone who is a resident of Puerto Rico for an entire taxable year", "Anyone born in Puerto Rico, whether or not they still live there", "Anyone holding property in Puerto Rico worth more than a statutory minimum", "Anyone employed by the government of Puerto Rico in any capacity"],
+            correctIndex: 0,
+            explanation: "26 U.S.C. § 933 also reaches citizens who were bona fide residents for at least two years before changing residence away from the island.",
+            sourceLessonSlug: "the-district-is-different",
+          },
+          {
+            prompt: "Which of these is the accurate reading of 'taxation without representation' in the District?",
+            options: ["A literal description of its residents' position", "A slogan with no legal content that the courts have consistently rejected", "A description that applies equally to residents of Puerto Rico and Guam", "A reference to the local taxes the Council imposes without congressional approval"],
+            correctIndex: 0,
+            explanation: "They pay the federal income tax on the same terms as anyone in a state and elect nobody who may vote on the floor of either chamber.",
+            sourceLessonSlug: "the-district-is-different",
+          },
+          {
+            prompt: "Which case applied the uniformity requirement to a tax on the District?",
+            options: ["Loughborough v. Blake", "Downes v. Bidwell, decided a century later on a shipment of oranges", "Michel v. Anderson, in which the D.C. Circuit upheld the Delegates' vote", "Balzac v. Porto Rico, which concerned a criminal libel prosecution"],
+            correctIndex: 0,
+            explanation: "Chief Justice Marshall decided it in 1820, long before the Insular Cases invented the incorporated and unincorporated distinction.",
+            sourceLessonSlug: "the-district-is-different",
+          },
+          {
+            prompt: "Which of these does a Delegate share with a Member of the House?",
+            options: ["The ability to be appointed a teller", "The ability to vote on the final passage of a bill on the House floor", "The ability to sign a discharge petition to force a bill out of committee", "The ability to be counted toward the 218 that makes a majority of the House"],
+            correctIndex: 0,
+            explanation: "The manual lists debate, calling a Member to order, points of order and service as a teller among the powers a Delegate holds.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "Which is the correct statement about the six non-voting offices?",
+            options: ["All were created by statute except the Resident Commissioner's four-year term", "All were created by constitutional amendment after the Civil War", "All were created by a single Act of Congress passed in 1972", "All carry two-year terms and identical powers under the House rules"],
+            correctIndex: 0,
+            explanation: "Five public laws created the Delegates and the Act of 2 March 1917 created the Resident Commissioner, uniquely with a four-year term.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "What did the Act of 17 May 1932 change?",
+            options: ["The spelling of Puerto Rico in federal law", "The term of the Resident Commissioner from two years to four", "The status of Puerto Rico from a territory to a commonwealth", "The number of Delegates the territories could send to the House"],
+            correctIndex: 0,
+            explanation: "It replaced the older spelling Porto Rico, which is why a 1922 Supreme Court case carries the older name in its caption.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "Which chamber has no mechanism at all for territorial representation?",
+            options: ["The Senate", "The House of Representatives, which seats no territorial members", "The Committee of the Whole, which excludes Delegates from every vote", "The Electoral College, which seats three District electors"],
+            correctIndex: 0,
+            explanation: "There is no delegate equivalent, no committee seat and no symbolic vote in the Senate.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "Why can Congress not fix the presidential-vote problem by statute?",
+            options: ["Article II fixes both the number of electors and their source", "Because the Twenty-Third Amendment forbids Congress to legislate on electors", "Because the Supreme Court held the question to be a political one in 1901", "Because the territories have declined every offer of electoral votes"],
+            correctIndex: 0,
+            explanation: "That is precisely why the District's three votes required amending the Constitution rather than passing a law.",
+            sourceLessonSlug: "no-electors",
+          },
+          {
+            prompt: "What does the phrase 'even the remedy was written with a ceiling on it' refer to?",
+            options: ["The Twenty-Third Amendment's cap at the least populous state", "The thirty-day congressional review period for acts of the D.C. Council", "The four-year term of the Resident Commissioner from Puerto Rico", "The automatic revote whenever a Delegate's vote proves decisive"],
+            correctIndex: 0,
+            explanation: "The District would be entitled to more electors on population alone, and the text forbids it.",
+            sourceLessonSlug: "no-electors",
+          },
+          {
+            prompt: "What did Article II tie the number of a state's electors to?",
+            options: ["The size of its congressional delegation", "The population recorded in the most recent decennial census", "The land area of the state as surveyed at the time of admission", "The number of counties or parishes the state has organized"],
+            correctIndex: 0,
+            explanation: "Senators plus Representatives, which is why a place with neither has none.",
+            sourceLessonSlug: "no-electors",
+          },
+          {
+            prompt: "How many states does Puerto Rico's 2020 population exceed?",
+            options: ["Twenty-one", "Five, all of them in the mountain west of the continental United States", "Thirty-four, more than two thirds of the states of the Union", "None, because every state is larger than any territory"],
+            correctIndex: 0,
+            explanation: "The comparison comes straight from the Census Bureau's own apportionment table, and none of those residents votes for President.",
+            sourceLessonSlug: "no-electors",
+          },
+          {
+            prompt: "Which of these best states why the Senate is absent from this section's discussion?",
+            options: ["There is nothing to describe", "Because the Senate's rules on territorial representation change every Congress", "Because territorial senators serve without a vote in the same way Delegates do", "Because the Seventeenth Amendment removed territorial representation in 1913"],
+            correctIndex: 0,
+            explanation: "No state means no senator, and unlike the House there is not even a symbolic seat to explain.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "What does the Home Rule Act give the District?",
+            options: ["An elected Council and Mayor", "Two senators and a voting member of the House of Representatives", "Exemption from federal income tax for its bona fide residents", "The power to legislate on any subject without congressional review"],
+            correctIndex: 0,
+            explanation: "It also preserves the congressional review that lets a joint resolution undo any act the Council passes.",
+            sourceLessonSlug: "the-district-is-different",
+          },
+          {
+            prompt: "Which subject does D.C. Code § 1-206.02 place beyond the Council's reach because of its effect outside the District?",
+            options: ["Any act not restricted exclusively in or to the District", "Any act imposing a local sales tax on retail transactions", "Any act creating a new agency of the District government", "Any act setting the salaries of District school teachers"],
+            correctIndex: 0,
+            explanation: "The section also names the functions or property of the United States, which is a broad limit on what local self-government can reach.",
+            sourceLessonSlug: "the-district-is-different",
+          },
+          {
+            prompt: "Which is true of building heights in the District?",
+            options: ["The Council may not exceed the limits in force in 1973", "The Council sets them freely under the Home Rule Act", "They are fixed by the Twenty-Third Amendment and cannot be altered", "They are set by the Secretary of the Interior under the Territory Clause"],
+            correctIndex: 0,
+            explanation: "It is one of the enumerated subjects the Home Rule Act keeps out of the Council's hands.",
+            sourceLessonSlug: "the-district-is-different",
+          },
+          {
+            prompt: "How should you describe what the Committee of the Whole is?",
+            options: ["The House sitting under a different set of procedures", "A standing committee with jurisdiction over territorial affairs", "A joint body of the House and Senate that considers appropriations", "A panel of Delegates that meets separately from the House itself"],
+            correctIndex: 0,
+            explanation: "It is the only floor setting in which a Delegate may cast a vote, and the automatic revote is what keeps that vote from deciding anything.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "What does 'the law forbids a Delegate to vote' distinguish itself from?",
+            options: ["What the House rules allow in committee", "What the Constitution requires of every member of the House", "What the Supreme Court held in Michel v. Anderson about symbolic votes", "What each territory's own organic act says about its representation"],
+            correctIndex: 0,
+            explanation: "The statutory bar applies to voting in the House, and the committee and Committee of the Whole privileges come from the House rules instead.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "In which Congress was the Committee of the Whole vote most recently reinstated?",
+            options: ["The 116th", "The 110th, which had reinstated it after the 104th Congress revoked it", "The 119th, which restored it after a repeal in the previous Congress", "The 103rd, which granted it for the first time in 1993"],
+            correctIndex: 0,
+            explanation: "It came back in 2019 after being revoked in 2011, and the two Congresses since have left it in place.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "What should a careful reader do before relying on the Delegates' current voting rights?",
+            options: ["Check the current Congress's rules package", "Consult the Insular Cases for the governing constitutional rule", "Read the organic act of the territory the Delegate represents", "Look up the Delegate's committee assignments for the session"],
+            correctIndex: 0,
+            explanation: "The privilege has been granted and withdrawn five times since 1993, so it is exactly the kind of value that goes stale.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "Which of these is a fair description of what a Delegate can accomplish?",
+            options: ["Shape a bill in committee and not decide it on the floor", "Cast the deciding vote on final passage when the House is narrowly divided", "Force a bill out of a hostile committee by signing a discharge petition", "Vote for the Speaker at the opening of each new Congress"],
+            correctIndex: 0,
+            explanation: "Committee voting rights are real legislative power, and the House floor is where the line falls.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "Which two documents does this course rely on for the current state of the House rules?",
+            options: ["The 118th Congress manual and the 119th Congress rules resolution", "The Constitution and the Supreme Court's opinion in Michel v. Anderson", "The organic acts of Guam and the Northern Mariana Islands", "The Home Rule Act and the D.C. Code's limitations section"],
+            correctIndex: 0,
+            explanation: "The manual supplies the rule text and history, and the resolution shows which rules the current Congress amended.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "Why is the Puerto Rico income exclusion narrower than its usual summary?",
+            options: ["Federal employment pay is expressly carved out of it", "It applies only in years when the territory runs a budget surplus", "It applies only to residents who were born on the island", "It expires automatically at the end of each ten-year period"],
+            correctIndex: 0,
+            explanation: "The section excludes amounts received for services performed as an employee of the United States or any agency of it.",
+            sourceLessonSlug: "the-district-is-different",
+          },
+          {
+            prompt: "Which of these does the District NOT have?",
+            options: ["A senator", "An elected Mayor chosen by the residents of the District", "Three electors for President and Vice President", "A Delegate who may vote in the Committee of the Whole"],
+            correctIndex: 0,
+            explanation: "Article I, Section 3 composes the Senate of two senators from each State, and the District is not one.",
+            sourceLessonSlug: "the-district-is-different",
+          },
+          {
+            prompt: "Which phrase from the District Clause is quoted most often in this course?",
+            options: ["Exclusive Legislation in all Cases whatsoever", "Needful Rules and Regulations respecting the Territory", "Appurtenant and belonging to the United States", "Nationals but not citizens of the United States at birth"],
+            correctIndex: 0,
+            explanation: "It is the language that makes the District's governance a stronger federal power than the Territory Clause supplies.",
+            sourceLessonSlug: "the-district-is-different",
+          },
+          {
+            prompt: "What is the practical result of the automatic revote rule?",
+            options: ["A Delegate's vote never changes an outcome", "A Delegate's vote is counted twice in the House journal", "A Delegate's vote is recorded but not published in the Record", "A Delegate's vote may be cast only with the Speaker's permission"],
+            correctIndex: 0,
+            explanation: "Whenever it would have been decisive, the question is put again in the House where the Delegate cannot vote at all.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "Which of these would require a constitutional amendment rather than a statute?",
+            options: ["Giving Guam a vote for President", "Giving Guam's Delegate a vote in the Committee of the Whole", "Extending the Resident Commissioner's term to six years", "Creating a second Delegate seat for the Northern Mariana Islands"],
+            correctIndex: 0,
+            explanation: "Article II fixes both the number of electors and their source, which is why the District's three votes needed the Twenty-Third Amendment.",
+            sourceLessonSlug: "no-electors",
+          },
+          {
+            prompt: "Under Rule III, how are Delegates placed on standing committees?",
+            options: ["They are elected to them in the same manner as Members", "They are appointed by the Speaker without a vote of the House", "They are assigned by the chair of each committee at the start of a session", "They sit ex officio on the committees with jurisdiction over their territory"],
+            correctIndex: 0,
+            explanation: "The rule uses the phrase in the same manner as Members, and gives them the same powers there as any other committee member.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "What did an earlier House practice say about Delegates voting in committee?",
+            options: ["They did not vote", "They voted only on questions affecting their own territory", "They voted but their votes were subject to an automatic revote", "They chaired committees but were barred from voting on any question"],
+            correctIndex: 0,
+            explanation: "The manual records that under an earlier practice Delegates did not vote in committee, though it notes this had not always been so.",
+            sourceLessonSlug: "a-seat-without-a-vote",
+          },
+          {
+            prompt: "Which body creates and could abolish the office of Delegate?",
+            options: ["Congress", "The Supreme Court, by overruling the Insular Cases", "Each territory's own legislature, by local enactment", "The President, by executive order under the Territory Clause"],
+            correctIndex: 0,
+            explanation: "Each office rests on a public law, which is what makes the Delegates statutory rather than constitutional creations.",
+            sourceLessonSlug: "no-electors",
+          },
+          {
+            prompt: "What is the relationship between the Twenty-Third Amendment and the territories?",
+            options: ["It applies only to the District and gives them nothing", "It gives each territory electors equal to its congressional delegation", "It gives the territories electors only in presidential election years", "It was ratified specifically to cover Puerto Rico and the District together"],
+            correctIndex: 0,
+            explanation: "Its text names the District constituting the seat of Government, and no parallel amendment exists for any territory.",
+            sourceLessonSlug: "no-electors",
+          },
+          {
+            prompt: "How does this course describe the District's elected government under the Home Rule Act?",
+            options: ["A legislature whose laws a body it cannot vote for may undo", "A legislature with the same powers as any state legislature in the Union", "A purely advisory body whose acts require congressional approval to take effect", "A body appointed by the President with the advice and consent of the Senate"],
+            correctIndex: 0,
+            explanation: "The review window is thirty calendar days excluding weekends and holidays, and sixty for criminal-law amendments.",
+            sourceLessonSlug: "the-district-is-different",
+          },
+        ],
+      },
+    },
   ],
 };
