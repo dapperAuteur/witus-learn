@@ -10,6 +10,18 @@ export interface ExerciseItem {
   answer: string;
   /** Other fully-correct answers (regional variants, synonyms). */
   accept?: string[];
+  /**
+   * Set on an item whose diacritics CARRY MEANING, so a diacritic-only difference grades
+   * "incorrect" rather than "close".
+   *
+   * The default is right for Spanish, French and Portuguese, where an accent is spelling and a
+   * near-miss deserves "close, polish the spelling". It is WRONG for a tonal orthography. In Ewe,
+   * Twi and Igbo the tone mark is not decoration on a word, it is part of which word this is, so
+   * grading a wrong tone as "close" tells a learner they nearly had it when they in fact wrote a
+   * different word. Opt in per item, the same way `computedAnswer` opts out of the closed-set
+   * fill-in rule, rather than flipping a default that 4 shipped language courses rely on.
+   */
+  diacriticsAreMeaningful?: boolean;
   /** Optional nudge shown on request before answering. */
   hint?: string;
   /** Shown after checking — the rule / why. */
@@ -48,6 +60,8 @@ const fold = (s: string) =>
 export function checkExerciseAnswer(item: ExerciseItem, input: string): ExerciseVerdict {
   const candidates = [item.answer, ...(item.accept ?? [])];
   if (candidates.some((c) => norm(c) === norm(input))) return "correct";
+  // On a tonal item the fold would erase the very thing being tested, so it is not consulted.
+  if (item.diacriticsAreMeaningful) return "incorrect";
   if (input.trim() && candidates.some((c) => fold(c) === fold(input))) return "close";
   return "incorrect";
 }
