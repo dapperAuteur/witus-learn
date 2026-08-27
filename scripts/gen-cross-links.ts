@@ -1,4 +1,4 @@
-// gen:cross-links — regenerate the COMMITTED cross-link candidate registry from the lessons in the
+// gen:cross-links: regenerate the COMMITTED cross-link candidate registry from the lessons in the
 // DATABASE, so the owner's approval queue at /admin/cross-links has something to review.
 //
 //   pnpm gen:cross-links               # every course in the database
