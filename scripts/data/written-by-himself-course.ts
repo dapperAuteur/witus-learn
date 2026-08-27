@@ -2383,6 +2383,13 @@ Fisher, A. (1881). *What Mrs. Fisher knows about old Southern cooking, soups, pi
             explanation: "And that person is nowhere named, which is the section's closing point.",
             sourceLessonSlug: "dictated-and-unattributed",
           },
+          {
+            prompt: "What kind of book is Fisher's, in the terms of this section?",
+            options: ["A dictated book with an unnamed writer", "A ghostwritten book whose writer signed a confidentiality agreement", "An as-told-to, since the nine friends are named on its opening page", "An authenticated book, since the reference list certifies its authorship"],
+            correctIndex: 0,
+            explanation: "She spoke it, somebody wrote it, and the front matter never says who.",
+            sourceLessonSlug: "dictated-and-unattributed",
+          },
         ],
       },
     },
