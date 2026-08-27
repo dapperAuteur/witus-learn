@@ -443,9 +443,13 @@ export const JURISDICTION: JurisdictionFile = {
         {
           code: "H.4.AAH.5",
           text: "Analyze various experiences and responses to challenges of African American men and women from post-Reconstruction through the Jim Crow time period and early 20th century: art and entertainment (e.g., Harlem Renaissance), education (e.g., rising literacy rates, establishment of historically black colleges and universities, Booker T. Washington, W.E.B. Du Bois, Joseph Albert Booker), entrepreneurship (e.g., Samuel T. Wilcox, Robert Gordon, Annie Malone, Frederick and Charles Patterson, Maggie Lena Walker, Madam C. J. Walker), religion (e.g., growth of African Methodist Episcopal denomination [AME] and establishment of National Baptist Convention), political organizations and affiliations, segregation and discrimination (e.g., Jim Crow laws, Plessy vs. Ferguson, \"sundown towns\").",
-          claimIds: ["history.jim-crow-and-long-shadow", "history.harlem-renaissance-black-press"],
+          claimIds: [
+            "history.jim-crow-and-long-shadow",
+            "history.harlem-renaissance-black-press",
+            "history.separate-but-equal-in-public-funding",
+          ],
           coverage: "partial",
-          note: "Partial: two of the standard's threads are taught deeply — segregation and discrimination (the Jim Crow South as what people fled, and its long shadow) and art (the Harlem Renaissance and the New Negro). Education, entrepreneurship, and religion, with their named figures, are not taught.",
+          note: "Partial: three of the standard's threads are taught. Segregation and discrimination (the Jim Crow South as what people fled, and its long shadow) and art (the Harlem Renaissance and the New Negro) are taught in depth, and the education thread's named element \"establishment of historically black colleges and universities\" is taught in The Match from the statute that produced the land-grant HBCUs, including the University of Arkansas at Pine Bluff. Entrepreneurship, religion, and the individual figures the standard names are not taught.",
         },
         {
           code: "H.5.AAH.1",
