@@ -153,7 +153,7 @@ That proviso is why an endowment collected in Ithaca or New Brunswick was paid f
 
 The 1862 institutions were endowed with land taken from Indigenous nations. That is not background to the story this course tells, it is a second and different injury, with a different injured party, a different legal footing, and a different remedy. Its footing is treaty rights, sovereignty and the federal trust responsibility, not civil rights and equal protection. Its remedies are argued in terms of land, treaty enforcement and government-to-government obligation. The people who get to decide how that story is told are the nations themselves.
 
-So this course names it, cites it, and hands it off rather than absorbing it. **It does not become this course's argument.** Making Indigenous dispossession the prologue to a course about Black exclusion would turn a sovereign nation's land into a plot device, and this catalog has already decided, twice, not to do that. What happened to the remaining Indigenous land base after 1887, including allotment, the Dawes Act, the Indian Reorganization Act and the trust responsibility, belongs to **Tribal Nations and Governance**, which teaches it properly. What was done with the land already taken, parcel by parcel, belongs to WARRANT-03, and that course requires a review arrangement this one does not.
+So this course names it, cites it, and hands it off rather than absorbing it. **It does not become this course's argument.** Making Indigenous dispossession the prologue to a course about Black exclusion would turn a sovereign nation's land into a plot device, and this catalog has already decided, twice, not to do that. What happened to the remaining Indigenous land base after 1887, including allotment, the Dawes Act, the Indian Reorganization Act and the trust responsibility, belongs to **Tribal Nations and Indigenous Governance**, which teaches it properly. What was done with the land already taken, parcel by parcel, belongs to WARRANT-03, and that course requires a review arrangement this one does not.
 
 **One consequence you should carry forward.** In 1994 Congress made tribal colleges land-grant institutions. Section 3 comes back to that, and to the fact that the institutions run by the nations whose land endowed the system were admitted to it 132 years later.
 
@@ -161,7 +161,7 @@ So this course names it, cites it, and hands it off rather than absorbing it. **
 
 :::reveal Why does this course refuse to make Indigenous dispossession its organising argument? ||| Because it is a different injury with a different injured party, legal footing and remedy, and subordinating it to another story would reduce a sovereign nation's land to a plot device.
 
-:::reveal Which shipped course owns allotment, the Dawes Act and the trust responsibility? ||| Tribal Nations and Governance. This course links to it and re-teaches none of it.
+:::reveal Which shipped course owns allotment, the Dawes Act and the trust responsibility? ||| Tribal Nations and Indigenous Governance. This course links to it and re-teaches none of it.
 
 ## Vocabulary
 - **Public domain**: land held by the federal government and available for disposal, which in the 1862 Act's case had been acquired from Indigenous nations by cession, seizure and purchase.
@@ -438,7 +438,7 @@ Congressional Research Service. (2021, June 15). *1890 land-grant universities: 
           },
           {
             prompt: "Which shipped course does this one hand off to for allotment, the Dawes Act and the trust responsibility?",
-            options: ["Tribal Nations and Governance", "The Schoolhouse Network, which teaches community-financed school construction in the same period", "The Name on the Door, which teaches architectural credit and licensure", "Cooperatives, which teaches the Rural Electrification Act and the co-op form"],
+            options: ["Tribal Nations and Indigenous Governance", "The Schoolhouse Network, which teaches community-financed school construction in the same period", "The Name on the Door, which teaches architectural credit and licensure", "Cooperatives, which teaches the Rural Electrification Act and the co-op form"],
             correctIndex: 0,
             explanation: "That course owns Indigenous governance and the post-1887 land base, and this one re-teaches none of it.",
             sourceLessonSlug: "whose-land-it-was",
@@ -704,7 +704,7 @@ Congressional Research Service. (2021, June 15). *1890 land-grant universities: 
           },
           {
             prompt: "Which course does this one name as the future home of the parcel-level land story?",
-            options: ["WARRANT-03", "Tribal Nations and Governance, which already carries allotment and the trust responsibility", "The Schoolhouse Network, which teaches matching funds in a private philanthropy", "The Name on the Door, which teaches Tuskegee's buildings and who signed for them"],
+            options: ["WARRANT-03", "Tribal Nations and Indigenous Governance, which already carries allotment and the trust responsibility", "The Schoolhouse Network, which teaches matching funds in a private philanthropy", "The Name on the Door, which teaches Tuskegee's buildings and who signed for them"],
             correctIndex: 0,
             explanation: "The third course on this spine, which requires a review arrangement that this course does not.",
             sourceLessonSlug: "whose-land-it-was",
@@ -1450,7 +1450,7 @@ Lee, J. M., Jr., & Keys, S. W. (2013, September). *Land-grant but unequal: State
 
 **Two sentences this course will put next to each other and then stop.** The 1862 institutions were endowed with land taken from Indigenous nations, as Lesson 2 stated and cited. The institutions run by those nations were admitted to the same land-grant system 132 years later, and the cell for their share of research and extension capacity funding is blank because no comparable programme exists.
 
-**What this course does not do with that.** It does not narrate the 1994 institutions' own story, their endowment arrangements, or what tribal colleges do, because that is not this course's material and asserting it from a summary would be exactly the failure this catalog is built to avoid. **Tribal Nations and Governance** owns Indigenous governance. The land itself belongs to WARRANT-03. This lesson's job is to show you the row and tell you where the three numbers come from.
+**What this course does not do with that.** It does not narrate the 1994 institutions' own story, their endowment arrangements, or what tribal colleges do, because that is not this course's material and asserting it from a summary would be exactly the failure this catalog is built to avoid. **Tribal Nations and Indigenous Governance** owns Indigenous governance. The land itself belongs to WARRANT-03. This lesson's job is to show you the row and tell you where the three numbers come from.
 
 **And the honest caution on the counts, again.** The 35 is CRS's figure as of June 2021. Section 2 showed that the statutory list currently names 36 colleges. Cite the number with the source and the date, or do not cite the number.
 
@@ -1538,7 +1538,7 @@ Congressional Research Service. (2021, June 15). *1890 land-grant universities: 
           },
           {
             prompt: "Which shipped course does this one cross-link to at Tuskegee's buildings?",
-            options: ["The Name on the Door", "The Schoolhouse Network, which teaches community-financed school construction", "Cooperatives, which teaches the Rural Electrification Act", "Tribal Nations and Governance, which teaches allotment and the trust responsibility"],
+            options: ["The Name on the Door", "The Schoolhouse Network, which teaches community-financed school construction", "Cooperatives, which teaches the Rural Electrification Act", "Tribal Nations and Indigenous Governance, which teaches allotment and the trust responsibility"],
             correctIndex: 0,
             explanation: "That course teaches Robert R. Taylor and the buildings students made the bricks for; this one explains why the institution existed to be built.",
             sourceLessonSlug: "not-eligible-for-these-grants",
@@ -1769,7 +1769,7 @@ Congressional Research Service. (2021, June 15). *1890 land-grant universities: 
           },
           {
             prompt: "Which course does this lesson hand Indigenous governance back to?",
-            options: ["Tribal Nations and Governance", "The Name on the Door, which teaches architectural credit at Tuskegee", "Cooperatives, which teaches rural credit and the co-op form", "The Schoolhouse Network, which teaches community-financed schoolbuilding"],
+            options: ["Tribal Nations and Indigenous Governance", "The Name on the Door, which teaches architectural credit at Tuskegee", "Cooperatives, which teaches rural credit and the co-op form", "The Schoolhouse Network, which teaches community-financed schoolbuilding"],
             correctIndex: 0,
             explanation: "That course owns Indigenous governance, and the land itself belongs to WARRANT-03.",
             sourceLessonSlug: "three-tiers-in-one-row",
@@ -2366,7 +2366,7 @@ Lee, J. M., Jr., & Keys, S. W. (2013, September). *Land-grant but unequal: State
           },
           {
             prompt: "Which shipped course is the contrast pair for the matching idea?",
-            options: ["The Schoolhouse Network", "Tribal Nations and Governance, which teaches the trust responsibility", "The Name on the Door, which teaches architectural credit", "Cooperatives, which teaches the Rural Electrification Act"],
+            options: ["The Schoolhouse Network", "Tribal Nations and Indigenous Governance, which teaches the trust responsibility", "The Name on the Door, which teaches architectural credit", "Cooperatives, which teaches the Rural Electrification Act"],
             correctIndex: 0,
             explanation: "Rosenwald's challenge grant is the private mirror of the public match this course teaches.",
             sourceLessonSlug: "counting-it-in-2013",
@@ -3248,6 +3248,674 @@ West Virginia State University. (2026). *USDA and Council of 1890 Universities s
             correctIndex: 0,
             explanation: "Labelling it as unread is what keeps a course from characterising a text from coverage of it.",
             sourceLessonSlug: "a-remedy-without-money",
+          },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 6 — Reading it yourself
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "do-it-yourself",
+      title: "21 · Do it yourself",
+      section: "Section 6 · Reading it yourself",
+      body: `Everything in this course was read out of documents anyone can open. Here is the sequence, applied to your own state, and it takes an evening.
+
+**Step 1. Find the two institutions.** Every state has at least one 1862 land-grant institution. Eighteen states also have an 1890 institution, and Alabama has two of them. CRS gives the counts and the map; USDA's National Institute of Food and Agriculture maintains the current institution lists. **Write down both names before you look at any number**, because the whole analysis is a comparison and you need to know what is being compared.
+
+**Step 2. Read the statute that governs the money.** Two sections do most of the work and neither is long:
+
+- **7 U.S.C. § 3222d**, the 1890 matching requirement, the waiver, and the redistribution rule.
+- **7 U.S.C. § 361c**, the 1862 allotment, the withholding rule, and the one waiver that reaches only Puerto Rico, Guam, the U.S. Virgin Islands and the District of Columbia.
+
+**Step 3. Pull the report Congress requires.** Section 7116 of the 2018 farm bill, codified at **7 U.S.C. § 2207d**, requires USDA to report annually on federal capacity funding allocations and non-federal matching funds **by institution and by grant programme**, and CRS confirms that "these reports publicly identify institutions that received waivers for particular capacity grant programs" (Congressional Research Service [CRS], 2021, p. 2). That is the artifact. It is published because a statute says it must be.
+
+**The question you are answering is small and exact: did my state match this year, or did its 1890 institution take a waiver?**
+
+**Step 4. Read the report's limit before you read its numbers.** CRS warns that the reports "do not distinguish between state appropriations and funds provided by other nonfederal sources" (CRS, 2021, p. 2). So a match met by the university out of its own funds looks identical to one appropriated by the legislature. **You can prove a shortfall from this report. You cannot prove a legislature paid.** Say which one you found.
+
+**Step 5. If your state is one of the sixteen, read its letter.** All sixteen were published as a single document and the figure for your state is in the fourth paragraph of your governor's letter. Then ask the follow-up nobody asks: **what has the legislature appropriated since 2023?** The letters are three years old. Whether anything happened is a state budget question with a public answer.
+
+**Step 6. Do the arithmetic that is yours to do.** Add the sixteen letter figures. Add the two components of the 2013 APLU shortfall. Subtract 1914 from 1977. Every one of those took this course under a minute and each one settled something a published source had got wrong or reported two ways.
+
+**What you should end up holding.** Two institution names, one statutory answer about who may be excused from the match, one published answer about what happened in your state's most recent reported year, and a dollar figure you can source to a letter rather than to a headline. **That is a stronger position than most people who argue about this subject in public ever reach.**
+
+:::reveal Which statute requires USDA to publish capacity funding and matching by institution every year? ||| Section 7116 of the 2018 farm bill, codified at 7 U.S.C. § 2207d, which is why the waivers are publicly nameable.
+
+:::reveal What can the annual report prove, and what can it not prove? ||| It can prove a shortfall, but not that a legislature paid, because it does not separate state appropriations from other non-federal sources.
+
+:::reveal What is the follow-up question this course says nobody asks about the 2023 letters? ||| What the legislature has appropriated since, because the letters are three years old and the answer is a public state budget question.
+
+## Vocabulary
+- **Artifact**: a specific published document a claim can be checked against, as distinct from a summary of the claim.
+- **Institution list**: the current roster of land-grant institutions by type, maintained by the agency rather than reconstructed from history.
+- **Reported year**: the fiscal year the most recent published capacity and matching report covers, which is what any statement about current practice has to be pinned to.
+- **Source to a letter**: this course's standard for a per-state figure, meaning taken from the document itself and not from coverage of it.
+
+## Sources
+Cardona, M., & Vilsack, T. J. (2023, September 18). *Letters to state governors regarding 1890 land-grant institutions* [Letters]. U.S. Department of Education. https://sites.ed.gov/whhbcu/files/2023/09/Secretary-letter-1890.pdf
+
+Congressional Research Service. (2021, June 15). *1890 land-grant universities: Background and selected issues* (In Focus No. IF11847, Version 10). https://www.congress.gov/crs-product/IF11847
+
+Lee, J. M., Jr., & Keys, S. W. (2013, September). *Land-grant but unequal: State one-to-one match funding for 1890 land-grant universities* (Policy Brief No. 3000-PB1). Association of Public and Land-grant Universities. https://www.aplu.org/wp-content/uploads/land-grant-but-unequal-state-one-to-one-match-funding-for-1890-land-grant-universities.pdf`,
+    },
+    {
+      slug: "what-this-course-refused",
+      title: "22 · What this course tested and refused to print",
+      section: "Section 6 · Reading it yourself",
+      body: `A course that only tells you what it found is showing you half its work. Here is the other half: nine things this course could have said, and did not, with the reason each time.
+
+**1. Any acreage figure for Black-owned farmland.** You will meet a figure of roughly fifteen million acres, and a different figure of 41.4 million acres attributed to USDA's Economic Research Service for 1920. **They are not versions of the same number.** One is land **owned** and the other is land **operated**, and in 1920 Black farm operators were heavily tenants and sharecroppers rather than owners, so the two measurements diverge enormously. This course has not read the underlying census table for either, so it prints neither as its own claim, and it will not build an argument on a figure whose unit it cannot state. **Operated and owned is the whole story, and anyone who repeats one without saying which has not checked.**
+
+**2. A count of Black farm operators in 1920.** A very precise-looking figure circulates. Precision is not provenance. This course has not opened the census volume, so it does not print the count.
+
+**3. Anything at all about Pigford v. Glickman.** The USDA discrimination litigation belongs to WARRANT-02, where it can be taught with the settlement's own structure and both directions of criticism. And there is a hard rule attached to it: **a widely circulated allegation of fraud in the Pigford claims process may not be reproduced in any form** unless it can be traced to a named source, in a named venue, on stated evidence, with the responses named. Repeating an unsourced fraud allegation about Black claimants would be a serious failure, and half a treatment is worse than none.
+
+**4. Per-institution 2023 figures taken from news coverage.** Two reputable outlets disagreed about which institution had the largest gap. Rather than pick one, this course downloaded the letters and read all sixteen. Tennessee State is the largest at $2,147,784,704, North Carolina A&T second at $2,079,934,848, and both outlets were reporting real numbers about different states.
+
+**5. A tribal affiliation for Tristan Ahtone.** The byline on the investigation does not state one, and this course does not infer an affiliation for anybody, ever.
+
+**6. A current count of 1994 institutions.** CRS reports 35 as of June 2021 and the statutory list currently names 36. Two sources counting slightly different things at different dates disagree, so the number travels with its source and its date or it does not travel.
+
+**7. What the March 2026 memorandum's text contains.** This course read the parties' announcements and the trade press. It did not read the memorandum. It says so.
+
+**8. The 1994 institutions' endowment arrangement.** A figure for the authorising amount and a claim that the institutions receive only the interest circulate widely. Neither has been checked here against the agency's own distribution documents, so neither is printed.
+
+**9. APLU's "83 years after Smith-Lever".** Not refused so much as corrected: 1977 minus 1914 is 63, and the brief prints its own year of enactment wrong in the same sentence.
+
+**And one thing this course reported without interpreting.** The U.S. Code carries a note recording that no funds were available from fiscal year 1995 onward for payments under the Act of August 30, 1890. That is what the note says. What it did to the institutions, and how it fits beside the capacity grants, is filed as an open question rather than guessed at.
+
+**Why the ledger exists.** Every item above is something a confident sentence could have covered, and every confident sentence would have made this course feel more complete and be less true. **The refusals are not the footnotes of the argument. They are the reason to believe the rest of it.**
+
+:::reveal Why does this course print no acreage figure for Black-owned farmland? ||| Because the circulating figures measure different things, land owned against land operated, and this course has not read the underlying census table for either.
+
+:::reveal What is the hard rule this course states about the Pigford fraud allegation? ||| It may not be reproduced in any form unless traced to a named source in a named venue on stated evidence, with the responses named.
+
+:::reveal How did this course settle which 2023 letter figure was the largest? ||| By downloading the published letters and reading all sixteen, rather than choosing between two news outlets that disagreed.
+
+## Vocabulary
+- **Operated against owned**: two different measurements of farmland, the first counting land a farmer works and the second land a farmer holds title to, which diverge sharply where tenancy is common.
+- **Provenance**: where a figure actually came from, which a precise-looking number does not supply on its own.
+- **Hard gate**: a claim a course may not make at all until a stated evidentiary condition is met, as distinct from one it may hedge.
+- **Ledger of refusals**: the explicit list of claims a course tested and declined to print, which is what makes the printed claims checkable rather than merely confident.
+
+## Sources
+Cardona, M., & Vilsack, T. J. (2023, September 18). *Letters to state governors regarding 1890 land-grant institutions* [Letters]. U.S. Department of Education. https://sites.ed.gov/whhbcu/files/2023/09/Secretary-letter-1890.pdf
+
+Congressional Research Service. (2021, June 15). *1890 land-grant universities: Background and selected issues* (In Focus No. IF11847, Version 10). https://www.congress.gov/crs-product/IF11847
+
+Lee, R., & Ahtone, T. (2020, March 30). *Land-grab universities: Expropriated Indigenous land is the foundation of the land-grant university system*. High Country News. https://www.hcn.org/issues/52-4/indigenous-affairs-education-land-grab-universities/`,
+    },
+    {
+      slug: "the-same-shape-elsewhere",
+      title: "23 · The same shape elsewhere",
+      section: "Section 6 · Reading it yourself",
+      body: `The reason to learn one funding mechanism thoroughly is that it makes the next one legible in about ten minutes. Here is the transferable form, and where to take it next.
+
+**The move, stated so it works outside agriculture.** A benefit is created for a class. Some people are excluded from it. A separate, smaller channel is built for the excluded class. **And then the channel is made conditional on a payment by the party that did the excluding.** The conditionality is the part that looks neutral and is not, because a condition on a channel only one group uses is a condition on one group.
+
+**Three questions, and they are answerable about almost any programme:**
+
+1. **Who is obliged to fund the separate channel?** In this course, the state, at 7 U.S.C. § 3222d(c).
+2. **What happens to them if they do not?** Nothing. The money moves to another state's institution under § 3222d(f), or the requirement is waived above fifty per cent under § 3222d(d).
+3. **Who publishes the answer?** USDA, annually, by institution and programme, because 7 U.S.C. § 2207d says it must.
+
+**A programme where all three answers are good is a programme you can trust. A programme where the third answer is nobody is one you cannot evaluate at all.**
+
+**Where to take this next, inside this catalog.**
+
+- **The Schoolhouse Network.** The same word, matching, in the opposite hands. The Rosenwald Fund made a grant that existed only once other named contributions appeared, one of which was the local Black community's own cash, land, materials and labour. **Read it against this course and the contrast does the teaching:** a community with no obligation raising its share, in states not paying one they had agreed to.
+- **The Name on the Door.** Robert R. Taylor at Tuskegee, and the buildings students made the bricks for. That course asks who gets named on a building. This course answers a question it does not ask: **why an institution like Tuskegee existed to be built.**
+- **Tribal Nations and Indigenous Governance.** Allotment, the Indian Reorganization Act, treaties as supreme law, and the trust responsibility. Lesson 2 of this course names the taking that the 1862 endowment monetised and stops there on purpose. That course is where the governance story is told properly.
+- **Cooperatives.** The Rural Electrification Act of 1936 and the loans that let farmers build the electric systems private utilities would not build. **Run the three questions on it and you get a different answer to the first one:** nobody was obliged, so the members did it themselves. Same countryside, same decades, a different design.
+
+**Where this series goes.** This is WARRANT-01. **WARRANT-02, The County Committee**, takes the same federal government met as a lender rather than a school: farm credit, eligibility, the three-person county committee that decided, and the litigation that followed. **WARRANT-03, Eleven Million Acres**, is the 1862 endowment traced parcel by parcel, and it will not be written without the review arrangement Lesson 2 pointed at. **WARRANT-99, Who the System Was For**, puts all three tiers on one page and can only be written once the other three exist, because a comparison is the one place none of the three stories has to be subordinate to another.
+
+**One last thing, and it is the whole course in a sentence.** The strongest fact here was never a dollar figure. It was a permission: **the law lets one class of institution be short, and does not let the other.** That sentence is in a three-page congressional document, it cost nothing to read, and now you know where it is.
+
+:::reveal State the transferable move in one sentence. ||| A benefit is created, a class is excluded, a separate smaller channel is built for them, and that channel is made conditional on a payment by the party that did the excluding.
+
+:::reveal What does it mean when the answer to "who publishes the answer" is nobody? ||| That the programme cannot be evaluated at all, which is a worse position than finding out it is underfunded.
+
+:::reveal Which course in this series can only be written after the other three, and why? ||| WARRANT-99, because a comparison is the only place none of the three stories has to be subordinate to another.
+
+## Vocabulary
+- **Conditionality**: the requirement that somebody else pay before a benefit is delivered, which looks neutral and is not when only one group's channel carries it.
+- **The three questions**: who is obliged to fund the separate channel, what happens if they do not, and who publishes the answer.
+- **Contrast pair**: two courses teaching the same mechanism from opposite sides, which is how this catalog handles a word like matching that means different things in private and public hands.
+- **Series spine**: the single mechanism that holds a group of courses together, which here is the separate channel and the payment it is made conditional on.
+
+## Sources
+7 U.S.C. § 3222d. (n.d.). *Matching funds requirement for research and extension activities at eligible institutions*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title7-section3222d&num=0&edition=prelim
+
+Congressional Research Service. (2021, June 15). *1890 land-grant universities: Background and selected issues* (In Focus No. IF11847, Version 10). https://www.congress.gov/crs-product/IF11847`,
+    },
+    {
+      slug: "quiz-reading-it-yourself",
+      title: "24 · Knowledge check: reading it yourself",
+      section: "Section 6 · Reading it yourself",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What is the first step this course gives for checking your own state?",
+            options: ["Name both institutions", "Download the most recent annual matching report", "Read the letter your governor received in 2023", "Compute the per-student appropriation from state budget documents"],
+            correctIndex: 0,
+            explanation: "The whole analysis is a comparison, so you need to know what is being compared before you look at a number.",
+            sourceLessonSlug: "do-it-yourself",
+          },
+          {
+            prompt: "Which two U.S. Code sections does this course say do most of the work on the money?",
+            options: ["§ 3222d and § 361c", "§ 301 and § 304, the 1862 grant and investment provisions", "§ 322 and § 323, the 1890 appropriation and proviso", "§ 3221 and § 3222, the two 1890 capacity grants"],
+            correctIndex: 0,
+            explanation: "The 1890 matching requirement with its waiver, and the 1862 allotment with its withholding rule and single narrow waiver.",
+            sourceLessonSlug: "do-it-yourself",
+          },
+          {
+            prompt: "Which section of the U.S. Code carries the annual reporting requirement?",
+            options: ["7 U.S.C. § 2207d", "7 U.S.C. § 3222d, which carries the matching requirement", "7 U.S.C. § 323, the separate-but-equal proviso", "7 U.S.C. § 361c, the Hatch Act allotment section"],
+            correctIndex: 0,
+            explanation: "Enacted as section 7116 of the 2018 farm bill, and it is why the waiver information exists publicly at all.",
+            sourceLessonSlug: "do-it-yourself",
+          },
+          {
+            prompt: "What does the annual report break its figures down by?",
+            options: ["Institution and grant programme", "State and fiscal year only", "Programme and congressional district", "Institution type, without naming individual institutions"],
+            correctIndex: 0,
+            explanation: "By institution and by grant programme, which is what makes an individual waiver visible.",
+            sourceLessonSlug: "do-it-yourself",
+          },
+          {
+            prompt: "What is the small exact question the exercise answers?",
+            options: ["Did my state match, or did the institution take a waiver", "How much has my state underfunded its 1890 institution since 1987", "Which institution in the country has the largest funding gap", "Whether my state's 1862 institution is overfunded per student"],
+            correctIndex: 0,
+            explanation: "A yes-or-no question about a statutory obligation, with a published answer.",
+            sourceLessonSlug: "do-it-yourself",
+          },
+          {
+            prompt: "What can the annual capacity and matching report NOT prove?",
+            options: ["That a legislature paid", "That an institution received a waiver", "How much federal capacity funding an institution received", "Which grant programme a waiver applied to"],
+            correctIndex: 0,
+            explanation: "It does not separate state appropriations from other non-federal sources, so a match met by the university reads the same.",
+            sourceLessonSlug: "do-it-yourself",
+          },
+          {
+            prompt: "Where in a 2023 letter does the state's dollar figure appear?",
+            options: ["In the paragraph describing the calculation", "In a table appended to the letter", "In the opening salutation to the governor", "Only in the accompanying press release"],
+            correctIndex: 0,
+            explanation: "The figure sits inside the paragraph that describes the IPEDS calculation, which is why the method and the number travel together.",
+            sourceLessonSlug: "do-it-yourself",
+          },
+          {
+            prompt: "What follow-up does this course say nobody asks about the letters?",
+            options: ["What the legislature appropriated since", "Whether the institutions endorsed the figures", "Whether the two departments had authority to send them", "How the sixteen states were chosen"],
+            correctIndex: 0,
+            explanation: "The letters are three years old and whether anything happened is a public state budget question.",
+            sourceLessonSlug: "do-it-yourself",
+          },
+          {
+            prompt: "Which three pieces of arithmetic does this course say are the learner's to do?",
+            options: ["The letters, the APLU components, and 1977 minus 1914", "The per-student rates, the enrollment totals, and the waiver count", "The acreage totals, the parcel counts, and the cession counts", "The FY2020 shares, the FY2021 appropriations, and the statutory floors"],
+            correctIndex: 0,
+            explanation: "Each took under a minute and each settled something a published source had got wrong or reported two ways.",
+            sourceLessonSlug: "do-it-yourself",
+          },
+          {
+            prompt: "What does this course say a learner should end up holding?",
+            options: ["A figure sourced to a letter", "A legal opinion on the state's liability", "An estimate of the national total", "A position on whether the per-student method is correct"],
+            correctIndex: 0,
+            explanation: "Two institution names, one statutory answer, one published answer for the reported year, and a figure from a document rather than a headline.",
+            sourceLessonSlug: "do-it-yourself",
+          },
+          {
+            prompt: "Why does this course print no acreage figure for Black-owned farmland?",
+            options: ["Owned and operated are different measurements", "Because the subject belongs to a different catalog entirely", "Because the census stopped recording the figure after 1920", "Because the sources agree and the figure adds nothing"],
+            correctIndex: 0,
+            explanation: "The circulating figures measure different things and this course has read the underlying census table for neither.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Which measurement is larger for 1920 Black farmers, and why?",
+            options: ["Operated, because many were tenants", "Owned, because ownership included land not under cultivation", "They are identical, since operators were counted as owners", "Neither; the two figures are alternative estimates of the same quantity"],
+            correctIndex: 0,
+            explanation: "Black farm operators in 1920 were heavily tenants and sharecroppers, so land worked far exceeded land held in title.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "What does this course say about a very precise-looking count of 1920 Black farm operators?",
+            options: ["Precision is not provenance", "Precision indicates the figure was read from a census table", "The figure is accurate but belongs in a different course", "The figure has been superseded by later recounts"],
+            correctIndex: 0,
+            explanation: "This course has not opened the census volume, so it does not print the count regardless of how exact it looks.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Why does this course say nothing about Pigford v. Glickman?",
+            options: ["It belongs to WARRANT-02", "Because the litigation record is sealed", "Because the case was decided against the claimants", "Because it concerns farm credit rather than land-grant funding exclusively"],
+            correctIndex: 0,
+            explanation: "It can be taught properly there with the settlement's structure and both directions of criticism, and half a treatment is worse than none.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "What condition must be met before any course in this catalog may reproduce the Pigford fraud allegation?",
+            options: ["Named source, venue, evidence and responses", "Corroboration by at least three news outlets", "A finding of fact by a federal court", "Approval by the course's subject matter reviewer"],
+            correctIndex: 0,
+            explanation: "Repeating an unsourced fraud allegation about Black claimants would be a serious failure, so the gate is absolute.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "How did this course resolve the disagreement between two outlets about the largest 2023 figure?",
+            options: ["It read all sixteen letters", "It cited both outlets and left the question open", "It used the press release's stated range instead", "It preferred the outlet with the earlier publication date"],
+            correctIndex: 0,
+            explanation: "Both outlets were reporting real numbers about different states, and the letters settle the ranking.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Which institution has the largest figure in the 2023 letters, and which the second largest?",
+            options: ["Tennessee State, then North Carolina A&T", "North Carolina A&T, then Florida A&M", "Florida A&M, then Tennessee State", "Prairie View A&M, then Southern University"],
+            correctIndex: 0,
+            explanation: "$2,147,784,704 and $2,079,934,848 respectively, which is why coverage that named either was reporting something real.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "What does this course refuse to state about the reporters behind the land-grab universities investigation?",
+            options: ["A tribal affiliation", "The publication that carried the work", "The records the database was built from", "The licence the dataset was released under"],
+            correctIndex: 0,
+            explanation: "The byline does not state one, and this course does not infer an affiliation for anybody.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Why does this course print no current count of 1994 institutions?",
+            options: ["Two sources disagree at different dates", "Because the category was abolished by a later farm bill", "Because the institutions decline to be counted", "Because CRS has withdrawn the figure it published"],
+            correctIndex: 0,
+            explanation: "CRS reports 35 as of June 2021 and the statutory list currently names 36, so the number travels with its source and date or not at all.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "What does this course say it did not do with the March 2026 memorandum?",
+            options: ["Read it", "Report its date", "Identify its parties", "Describe its task force"],
+            correctIndex: 0,
+            explanation: "It worked from the parties' announcements and the trade press, and labels the document as unread.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Why does this course print nothing about the 1994 institutions' endowment arrangement?",
+            options: ["Unchecked against the agency's own documents", "Because the arrangement was repealed in 2018", "Because the amounts are too small to be meaningful", "Because it duplicates material in another course"],
+            correctIndex: 0,
+            explanation: "A circulating authorising figure and an interest-only claim have not been checked here against the agency's distribution documents.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "How does this course treat the APLU 83-years figure?",
+            options: ["Corrected to 63", "Reproduced with a note that sources vary", "Omitted entirely, without explanation", "Accepted, since the association is closest to the data"],
+            correctIndex: 0,
+            explanation: "1977 minus 1914 is 63, and the brief prints its own year of enactment wrong in the same sentence.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Which item did this course report without interpreting?",
+            options: ["The 1994 note on payments under the 1890 Act", "The FY2020 count of matching fund waivers", "The 2008 increase in the appropriation floors", "The designation of Central State University"],
+            correctIndex: 0,
+            explanation: "What the note did to the institutions in practice is filed as an open question rather than guessed at.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "What does this course say the refusals are, in relation to the argument?",
+            options: ["The reason to believe the rest", "An appendix of interest only to specialists", "Evidence that the subject is too contested to teach", "A list of topics reserved for a later course"],
+            correctIndex: 0,
+            explanation: "Every confident sentence omitted would have made the course feel more complete and be less true.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "State the transferable move this course teaches.",
+            options: ["A separate channel made conditional on the excluder's payment", "A benefit reduced by the same proportion for every recipient", "A statute that names an institution to bring it inside a general rule", "An agency that publishes less than a statute requires it to"],
+            correctIndex: 0,
+            explanation: "The conditionality looks neutral and is not, because a condition on a channel only one group uses is a condition on one group.",
+            sourceLessonSlug: "the-same-shape-elsewhere",
+          },
+          {
+            prompt: "What is the first of the three transferable questions?",
+            options: ["Who is obliged to fund the channel", "How large is the gap in dollars", "When was the channel created", "Which agency administers the programme"],
+            correctIndex: 0,
+            explanation: "In this course the answer is the state, at 7 U.S.C. § 3222d(c).",
+            sourceLessonSlug: "the-same-shape-elsewhere",
+          },
+          {
+            prompt: "What is the second of the three questions?",
+            options: ["What happens to them if they do not", "Who benefits from the shortfall", "How the appropriation is divided among institutions", "Whether the programme has ever been audited"],
+            correctIndex: 0,
+            explanation: "Here the answer is nothing: the money moves elsewhere or the requirement is waived above fifty per cent.",
+            sourceLessonSlug: "the-same-shape-elsewhere",
+          },
+          {
+            prompt: "What is the third question, and why does this course call it decisive?",
+            options: ["Who publishes the answer, since nobody means no evaluation", "How much is at stake, since small programmes deserve less attention", "Who wrote the statute, since drafting reveals intent", "Which party controlled Congress, since that predicts the outcome"],
+            correctIndex: 0,
+            explanation: "A programme whose answer to the third question is nobody cannot be evaluated at all, which is worse than finding it underfunded.",
+            sourceLessonSlug: "the-same-shape-elsewhere",
+          },
+          {
+            prompt: "What answer does this course say the Rural Electrification Act gives to the first question?",
+            options: ["Nobody, so the members did it themselves", "The states, on a one-to-one matching basis", "The private utilities, under a federal service obligation", "The counties, out of local property tax revenue"],
+            correctIndex: 0,
+            explanation: "Same countryside, same decades, a different design, which is why Cooperatives is the useful companion.",
+            sourceLessonSlug: "the-same-shape-elsewhere",
+          },
+          {
+            prompt: "What does The Schoolhouse Network teach that makes it this course's contrast pair?",
+            options: ["A private match", "The same statutory obligation from the states' point of view", "The exclusion of Black students from land-grant colleges", "The county-level delivery of agricultural extension"],
+            correctIndex: 0,
+            explanation: "A fund whose grant existed only once other named contributions appeared, including the community's own cash, land, materials and labour.",
+            sourceLessonSlug: "the-same-shape-elsewhere",
+          },
+          {
+            prompt: "What question does The Name on the Door ask that this course answers a prior version of?",
+            options: ["Who gets named on a building", "How a state divides a federal appropriation", "Which institutions hold land-grant status", "What a capacity grant funds"],
+            correctIndex: 0,
+            explanation: "That course asks who is credited; this one explains why an institution like Tuskegee existed to be built at all.",
+            sourceLessonSlug: "the-same-shape-elsewhere",
+          },
+          {
+            prompt: "What is WARRANT-02 about?",
+            options: ["Farm credit and the county committee", "The 1862 endowment traced parcel by parcel", "A comparison of all three land-grant tiers", "Architectural credit and professional licensure"],
+            correctIndex: 0,
+            explanation: "The same federal government met as a lender rather than as a school, and the litigation that followed.",
+            sourceLessonSlug: "the-same-shape-elsewhere",
+          },
+          {
+            prompt: "What is WARRANT-03 about, and what does it require first?",
+            options: ["The 1862 endowment, and a review arrangement", "The tribal colleges, and access to agency distribution letters", "The farm programmes, and the Pigford dockets", "The comparison of the three tiers, and the other courses shipping"],
+            correctIndex: 0,
+            explanation: "Eleven Million Acres traces the parcels, and Lesson 2 pointed at the review that must precede it.",
+            sourceLessonSlug: "the-same-shape-elsewhere",
+          },
+          {
+            prompt: "Why can WARRANT-99 only be written last?",
+            options: ["A comparison subordinates nobody", "Because its data will not exist until the others are seeded", "Because a capstone must be numbered after every other course", "Because it depends on legislation expected in the next farm bill"],
+            correctIndex: 0,
+            explanation: "In a comparison none of the three stories has to be subordinate to another, which is what makes it safe to write there and nowhere else.",
+            sourceLessonSlug: "the-same-shape-elsewhere",
+          },
+          {
+            prompt: "What does this course say the strongest fact in the subject was never?",
+            options: ["A dollar figure", "A statutory permission", "A published count of waivers", "A congressional document"],
+            correctIndex: 0,
+            explanation: "The strongest fact is a permission: the law lets one class of institution be short and does not let the other.",
+            sourceLessonSlug: "the-same-shape-elsewhere",
+          },
+          {
+            prompt: "Which course does Lesson 2 of this one hand the governance story to?",
+            options: ["Tribal Nations and Indigenous Governance", "Cooperatives, which teaches rural credit and the co-op form", "The Schoolhouse Network, which teaches community-financed schoolbuilding", "The Name on the Door, which teaches credit and licensure"],
+            correctIndex: 0,
+            explanation: "That course carries allotment, the Indian Reorganization Act, treaties as supreme law and the trust responsibility.",
+            sourceLessonSlug: "the-same-shape-elsewhere",
+          },
+          {
+            prompt: "How many states have at least one 1862 land-grant institution?",
+            options: ["Every state", "Only the thirty-four that existed in 1862", "The eighteen that also hold an 1890 institution", "The twenty-four western states where the parcels lay"],
+            correctIndex: 0,
+            explanation: "Which is why the exercise begins by naming both institutions, since every learner has at least one to name.",
+            sourceLessonSlug: "do-it-yourself",
+          },
+          {
+            prompt: "Which agency maintains the current land-grant institution lists?",
+            options: ["NIFA", "The National Center for Education Statistics", "The Association of Public and Land-grant Universities", "The Congressional Research Service"],
+            correctIndex: 0,
+            explanation: "The National Institute of Food and Agriculture inside USDA, which also administers the capacity grants.",
+            sourceLessonSlug: "do-it-yourself",
+          },
+          {
+            prompt: "What makes the annual matching report exist at all?",
+            options: ["A statute requires it", "An agency policy adopted voluntarily in 2018", "A settlement agreement with the 1890 institutions", "A condition attached to each year's appropriation"],
+            correctIndex: 0,
+            explanation: "Section 7116 of the 2018 farm bill requires the publication, which is why the waivers are nameable.",
+            sourceLessonSlug: "do-it-yourself",
+          },
+          {
+            prompt: "What does this course say about the position a learner reaches after this exercise?",
+            options: ["Stronger than most public arguers reach", "Sufficient to establish legal liability", "Equivalent to what the federal analysis produced", "Enough to settle the per-student methodological dispute"],
+            correctIndex: 0,
+            explanation: "Two names, one statutory answer, one published answer for the reported year, and a figure sourced to a document.",
+            sourceLessonSlug: "do-it-yourself",
+          },
+          {
+            prompt: "Which of these is a hard gate rather than a hedge?",
+            options: ["The Pigford fraud allegation", "The current count of 1994 institutions", "The 41.4 million acre figure", "The contents of the 2026 memorandum"],
+            correctIndex: 0,
+            explanation: "A hard gate is a claim a course may not make at all until a stated evidentiary condition is met.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "How many claims does the ledger lesson list as refused?",
+            options: ["Nine", "Three, matching the three questions the course ends on", "Sixteen, one for each 2023 letter", "Four, matching the four appearances of the design move"],
+            correctIndex: 0,
+            explanation: "Nine refusals plus one item reported without interpretation.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "What does the word conditionality name in this course's final lesson?",
+            options: ["Requiring somebody else to pay first", "Limiting a grant to a specified purpose", "Making a designation subject to periodic renewal", "Tying an appropriation to an annual report"],
+            correctIndex: 0,
+            explanation: "It looks neutral and is not, because a condition on a channel only one group uses is a condition on one group.",
+            sourceLessonSlug: "the-same-shape-elsewhere",
+          },
+          {
+            prompt: "What did the Rosenwald model require of the local Black community?",
+            options: ["Cash, land, materials and labour", "A binding pledge of future property tax revenue", "Matching funds equal to the county's contribution", "A written commitment from the state legislature"],
+            correctIndex: 0,
+            explanation: "Contributions valued in dollars, from a community that had no obligation to anyone to make them.",
+            sourceLessonSlug: "the-same-shape-elsewhere",
+          },
+          {
+            prompt: "Where does the exercise say to read the limit of a source?",
+            options: ["Before reading its numbers", "After computing the state's total gap", "Only if the numbers appear implausible", "Once the state's own accounts have been obtained"],
+            correctIndex: 0,
+            explanation: "Knowing that the report cannot separate state money from other non-federal money changes what any figure in it means.",
+            sourceLessonSlug: "do-it-yourself",
+          },
+          {
+            prompt: "Which of these is the correct order of the exercise's first three steps?",
+            options: ["Name the institutions, read the statute, pull the report", "Pull the report, name the institutions, read the letter", "Read the letter, compute the gap, check the statute", "Check the statute, compute the gap, name the institutions"],
+            correctIndex: 0,
+            explanation: "The comparison comes first, the rule second, and the published outcome third.",
+            sourceLessonSlug: "do-it-yourself",
+          },
+          {
+            prompt: "What is the difference between refusing a claim and hedging it?",
+            options: ["A refusal prints nothing", "A hedge requires a named source and a refusal does not", "A refusal applies only to figures and a hedge only to quotations", "There is none; the terms are used interchangeably here"],
+            correctIndex: 0,
+            explanation: "A hedged claim still appears with a caveat; a refused claim does not appear, and the ledger says why.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Why is a course that only reports its findings showing half its work?",
+            options: ["The refusals make the findings checkable", "Because findings without a bibliography cannot be verified", "Because a reader cannot tell which findings are recent", "Because published sources rarely agree with one another"],
+            correctIndex: 0,
+            explanation: "The refusals are the reason to believe the rest, not the footnotes of the argument.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Which document does this course say cost nothing to read and carries its strongest sentence?",
+            options: ["A three-page CRS In Focus", "A forty-eight page set of federal letters", "A sixteen-page association policy brief", "A one-thousand page farm bill"],
+            correctIndex: 0,
+            explanation: "IF11847 is public domain, three pages long, and carries both the ineligibility sentence and the waiver asymmetry.",
+            sourceLessonSlug: "the-same-shape-elsewhere",
+          },
+          {
+            prompt: "In one phrase, what does this course finally teach a learner to do?",
+            options: ["Read the instrument", "Estimate the size of a funding gap", "Compare institutions on a per-student basis", "Track a state appropriation through a legislature"],
+            correctIndex: 0,
+            explanation: "Every figure in the course came out of a document, and the three questions are how you interrogate the next one.",
+            sourceLessonSlug: "the-same-shape-elsewhere",
+          },
+          {
+            prompt: "Which of the four cross-linked courses gives a different answer to the first transferable question?",
+            options: ["Cooperatives", "The Schoolhouse Network", "The Name on the Door", "Tribal Nations and Indigenous Governance"],
+            correctIndex: 0,
+            explanation: "Nobody was obliged to build the rural electric systems, so the members did it themselves.",
+            sourceLessonSlug: "the-same-shape-elsewhere",
+          },
+          {
+            prompt: "What does this course say about a figure whose unit cannot be stated?",
+            options: ["It will not build an argument on it", "It may be used if two sources agree on it", "It should be reported with a range attached", "It belongs in the vocabulary block rather than the body"],
+            correctIndex: 0,
+            explanation: "Operated and owned are the example, and anyone repeating one without saying which has not checked.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Which is a fair summary of the series spine this course belongs to?",
+            options: ["A separate channel and the payment it turns on", "The history of American public higher education", "The federal government's relationship with agriculture", "The legal status of historically Black colleges"],
+            correctIndex: 0,
+            explanation: "That single mechanism is what holds WARRANT-01 through WARRANT-99 together rather than a shared subject matter.",
+            sourceLessonSlug: "the-same-shape-elsewhere",
+          },
+          {
+            prompt: "What kind of programme does this course say you can trust?",
+            options: ["One where all three answers are good", "One with the largest annual appropriation", "One administered by a single federal agency", "One whose statute has never been amended"],
+            correctIndex: 0,
+            explanation: "A clear funder, a real consequence for not funding, and somebody publishing the outcome.",
+            sourceLessonSlug: "the-same-shape-elsewhere",
+          },
+          {
+            prompt: "What is the worst of the three answers to get?",
+            options: ["Nobody publishes it", "The obligation falls on a state", "The consequence for not paying is nothing", "The channel serves only one group"],
+            correctIndex: 0,
+            explanation: "Without publication the programme cannot be evaluated at all, which is worse than discovering it is underfunded.",
+            sourceLessonSlug: "the-same-shape-elsewhere",
+          },
+          {
+            prompt: "Which of these did this course NOT read directly?",
+            options: ["The 2026 memorandum of understanding", "The sixteen 2023 letters", "The CRS In Focus on the 1890 institutions", "The APLU policy brief on state matching"],
+            correctIndex: 0,
+            explanation: "It read the parties' announcements and the trade press instead, and labels the document unread.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "What does this course recommend writing down before looking at any number?",
+            options: ["Both institution names", "The state's total higher education budget", "The most recent fiscal year with published data", "The names of the legislators on the budget committee"],
+            correctIndex: 0,
+            explanation: "The analysis is a comparison, so you need to know what is being compared first.",
+            sourceLessonSlug: "do-it-yourself",
+          },
+          {
+            prompt: "Which four jurisdictions can receive the only 1862 matching waiver, as the exercise restates?",
+            options: ["Puerto Rico, Guam, the U.S. Virgin Islands and D.C.", "Alabama, Louisiana, Mississippi and Georgia", "Delaware, Ohio, Maryland and Virginia", "American Samoa, the Northern Marianas, Guam and Puerto Rico"],
+            correctIndex: 0,
+            explanation: "None of them is a state, which is what makes CRS's word most precise rather than vague.",
+            sourceLessonSlug: "do-it-yourself",
+          },
+          {
+            prompt: "What does this course call the item it reported without interpreting?",
+            options: ["An open question", "A hard gate", "A contested claim", "A corrected figure"],
+            correctIndex: 0,
+            explanation: "The 1994 note on payments under the 1890 Act is filed as an open question rather than guessed at.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "How long does this course say the whole state-level exercise takes?",
+            options: ["An evening", "A full semester of directed research", "About ten minutes, once the report is located", "Several months, given the records requests involved"],
+            correctIndex: 0,
+            explanation: "Everything in the course was read out of documents anyone can open, and the sequence is six steps long.",
+            sourceLessonSlug: "do-it-yourself",
+          },
+          {
+            prompt: "What is the point of learning one funding mechanism thoroughly?",
+            options: ["The next one becomes legible quickly", "It qualifies a learner to advise institutions professionally", "It removes the need to read statutes in future", "It settles the policy question the mechanism raises"],
+            correctIndex: 0,
+            explanation: "The three questions transfer, which is why the final lesson runs them on a different programme in a different decade.",
+            sourceLessonSlug: "the-same-shape-elsewhere",
+          },
+          {
+            prompt: "Which two things does the exercise say a learner can source to a document rather than a headline?",
+            options: ["A waiver outcome and a dollar figure", "A per-student rate and an enrollment count", "A statutory floor and an appropriation total", "An institution's founding date and its designation year"],
+            correctIndex: 0,
+            explanation: "The waiver comes from the annual report and the figure comes from the letter itself.",
+            sourceLessonSlug: "do-it-yourself",
+          },
+          {
+            prompt: "Why does this course insist a count travel with its date?",
+            options: ["Rosters are amended", "Because federal agencies revise figures without notice", "Because counts published before 2000 are unreliable", "Because different agencies use incompatible definitions of an institution"],
+            correctIndex: 0,
+            explanation: "Central State University joined the 1890 roster in 2014 and the 1994 list has been amended repeatedly.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "What single sentence does this course offer as its whole argument compressed?",
+            options: ["The law lets one class be short", "The states owe more than twelve billion dollars", "The 1890 institutions were never granted land", "Capacity funding compounds over ninety years"],
+            correctIndex: 0,
+            explanation: "A permission written into statute, observed in practice, in a document that cost nothing to read.",
+            sourceLessonSlug: "the-same-shape-elsewhere",
+          },
+          {
+            prompt: "Why does this course say a condition on a channel is not neutral?",
+            options: ["Only one group uses the channel", "Because conditions are always harder to meet than they appear", "Because federal agencies apply conditions inconsistently", "Because the condition was added later than the benefit itself"],
+            correctIndex: 0,
+            explanation: "A condition attached to a channel only one group uses is a condition on that group, however neutral its wording.",
+            sourceLessonSlug: "the-same-shape-elsewhere",
+          },
+          {
+            prompt: "What does the exercise say to do with the 2013 shortfall figures?",
+            options: ["Add the two components", "Adjust them for inflation to the current year", "Compare them with the 2023 letter figures directly", "Divide them across the eighteen institutions equally"],
+            correctIndex: 0,
+            explanation: "Adding the extension and research components reconciles against the printed total to within a dollar.",
+            sourceLessonSlug: "do-it-yourself",
+          },
+          {
+            prompt: "What kind of question is whether your state matched this year?",
+            options: ["Yes or no", "An estimate requiring a model", "A matter of statutory interpretation", "A question only the institution can answer"],
+            correctIndex: 0,
+            explanation: "That is why the match is the spine and the per-student figure is a chapter.",
+            sourceLessonSlug: "do-it-yourself",
+          },
+          {
+            prompt: "What is the reason this course gives for teaching operated against owned at all?",
+            options: ["The distinction is the story", "Because the acreage figures are central to the argument", "Because the census has never published either measure clearly", "Because the two figures are both wrong"],
+            correctIndex: 0,
+            explanation: "A tenant works land they do not hold, so the two measurements diverge and a figure without its unit means nothing.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "What does this course say about half a treatment of a contested subject?",
+            options: ["It is worse than none", "It is acceptable if the omissions are listed", "It is the standard approach for a survey course", "It is required when the sources conflict"],
+            correctIndex: 0,
+            explanation: "Which is why Pigford waits for the course that can teach the settlement's structure and both directions of criticism.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Which of these is the exercise's final step?",
+            options: ["Do the arithmetic that is yours", "Contact the state budget office", "File a public records request", "Compare your state with a neighbouring one"],
+            correctIndex: 0,
+            explanation: "Adding the letters, adding the APLU components and subtracting 1914 from 1977 each settled something a source had reported wrong.",
+            sourceLessonSlug: "do-it-yourself",
+          },
+          {
+            prompt: "What does this course mean by an artifact?",
+            options: ["A published document a claim checks against", "A historical object held by an institution", "A statistical anomaly in a published series", "A statute that has been superseded but not repealed"],
+            correctIndex: 0,
+            explanation: "The annual capacity and matching report is the artifact the state-level exercise depends on.",
+            sourceLessonSlug: "do-it-yourself",
+          },
+          {
+            prompt: "Which is the correct description of what this course did with press coverage of the 2023 letters?",
+            options: ["Used it for reactions, not for figures", "Used it for figures, since the letters were not public", "Avoided it entirely as unreliable", "Preferred it to the press release on the total"],
+            correctIndex: 0,
+            explanation: "Named reactions came from the trade press; every dollar figure came from the letters themselves.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "What would a reader be entitled to conclude if this course had printed a fifteen-million-acre figure without a unit?",
+            options: ["That it had not checked", "That the figure was drawn from the 1920 census", "That ownership and operation had been reconciled", "That the figure was the consensus of the field"],
+            correctIndex: 0,
+            explanation: "Anyone who repeats one of the two measurements without saying which has not opened the underlying table.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Which lesson of this course is the one that would be dishonest to omit if WARRANT-03 never ships?",
+            options: ["Lesson 2", "Lesson 11, on the three-tier funding table", "Lesson 22, the ledger of refusals", "Lesson 23, on the transferable move"],
+            correctIndex: 0,
+            explanation: "Neither course's honesty may depend on the other existing, so this one carries its own statement of the other injury.",
+            sourceLessonSlug: "the-same-shape-elsewhere",
           },
         ],
       },
