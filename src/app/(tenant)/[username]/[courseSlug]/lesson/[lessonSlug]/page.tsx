@@ -162,16 +162,28 @@ export default async function LessonPage({ params }: Params) {
   const crossLinkSource =
     view.course.slug && lesson.slug ? { course: view.course.slug, lesson: lesson.slug } : null;
   if (access.open && crossLinkSource) {
-    const approvedTargets = await listApprovedCrossLinkTargets(
-      view.tenant.id,
-      crossLinkSource.course,
-      crossLinkSource.lesson,
-    );
-    if (approvedTargets.length > 0) {
-      relatedCourses = relatedCourseLinks(
-        approvedTargets,
-        buildCrossLinkTargets(await listCourseLocations(view.tenant.id, approvedTargets)),
+    // A LEARNER'S LESSON MUST NOT DEPEND ON THIS FEATURE BEING MIGRATED. Related courses are an
+    // extra affordance at the bottom of the page; the lesson is the product. If the approvals table
+    // is missing, because main was merged before `pnpm db:migrate:prod` ran, an unguarded read here
+    // would 500 EVERY lesson for EVERY learner on the way to rendering an optional list. The cost of
+    // the failure is wildly out of proportion to what is being fetched, so it degrades to "no
+    // approved links" instead. The admin board is deliberately NOT wrapped this way: there a failure
+    // should surface, because the person looking at it is the person who can run the migration.
+    try {
+      const approvedTargets = await listApprovedCrossLinkTargets(
+        view.tenant.id,
+        crossLinkSource.course,
+        crossLinkSource.lesson,
       );
+      if (approvedTargets.length > 0) {
+        relatedCourses = relatedCourseLinks(
+          approvedTargets,
+          buildCrossLinkTargets(await listCourseLocations(view.tenant.id, approvedTargets)),
+        );
+      }
+    } catch (err) {
+      // Logged, not swallowed silently: a persistent error here is a real bug worth seeing.
+      console.error("cross-links: could not resolve related courses for this lesson", err);
     }
   }
 
