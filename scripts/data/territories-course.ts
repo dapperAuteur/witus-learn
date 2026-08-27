@@ -39,7 +39,7 @@ import type { AuthoredCourse } from "./authored-course";
 //   · 48 U.S.C. §§ 1661, 1801, 2101, 2121, 2141, 2142, read on uscode.house.gov.
 //   · Downes v. Bidwell, 182 U.S. 244 (1901) and Balzac v. Porto Rico, 258 U.S. 298 (1922), read
 //     on Cornell's Legal Information Institute.
-//   · United States v. Vaello Madero, 596 U.S. 159 (2022), the SLIP OPINION from supremecourt.gov,
+//   · United States v. Vaello Madero, No. 20-303 (U.S. Apr. 21, 2022), the SLIP OPINION from supremecourt.gov,
 //     read in full: the Kavanaugh majority, the Gorsuch concurrence, the Sotomayor dissent.
 //   · Fitisemanu v. United States, Nos. 20-4017 & 20-4019 (10th Cir. June 15, 2021), the PUBLISHED
 //     opinion as filed, downloaded from govinfo.gov and read in full: Lucero for the panel,
@@ -187,7 +187,7 @@ U.S. Const. art. I, § 8, cl. 17. National Archives. https://www.archives.gov/fo
 
 U.S. Const. art. IV, § 3, cl. 2. National Archives. https://www.archives.gov/founding-docs/constitution-transcript
 
-*United States v. Vaello Madero*, 596 U.S. 159 (2022) (Gorsuch, J., concurring). Supreme Court of the United States. https://www.supremecourt.gov/opinions/21pdf/20-303_6khn.pdf`,
+*United States v. Vaello Madero*, No. 20-303 (U.S. Apr. 21, 2022) (slip op.) (Gorsuch, J., concurring). Supreme Court of the United States. https://www.supremecourt.gov/opinions/21pdf/20-303_6khn.pdf`,
     },
     {
       slug: "how-each-one-arrived",
@@ -238,7 +238,7 @@ Hold that word, **incorporated**. It is doing enormous work, it appears nowhere 
 
 48 U.S.C. § 1801. (n.d.). *Approval of Covenant to Establish a Commonwealth of the Northern Mariana Islands in Political Union with the United States of America*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title48-section1801&num=0&edition=prelim
 
-*United States v. Vaello Madero*, 596 U.S. 159 (2022) (Gorsuch, J., concurring). Supreme Court of the United States. https://www.supremecourt.gov/opinions/21pdf/20-303_6khn.pdf`,
+*United States v. Vaello Madero*, No. 20-303 (U.S. Apr. 21, 2022) (slip op.) (Gorsuch, J., concurring). Supreme Court of the United States. https://www.supremecourt.gov/opinions/21pdf/20-303_6khn.pdf`,
     },
     {
       slug: "quiz-a-category-the-law-made",
@@ -454,7 +454,7 @@ Hold that word, **incorporated**. It is doing enormous work, it appears nowhere 
           },
           {
             prompt: "What kind of case produced the doctrine this course is about?",
-            options: ["A tax case", "A criminal appeal brought by a newspaper editor convicted of criminal libel", "A habeas corpus petition filed by a detainee held outside the United States", "A land dispute between a territorial government and the Department of the Interior"],
+            options: ["A tax case", "A challenge to a territorial legislature's power to redraw its own districts", "A habeas corpus petition filed by a detainee held outside the United States", "A land dispute between a territorial government and the Department of the Interior"],
             correctIndex: 0,
             explanation: "The first Insular Case was a dispute over duties on goods brought from Puerto Rico, which is how the constitutional question arrived.",
             sourceLessonSlug: "the-clause-that-governs",
@@ -808,6 +808,675 @@ Hold that word, **incorporated**. It is doing enormous work, it appears nowhere 
             correctIndex: 0,
             explanation: "Article IV, Section 3, Clause 2 for the territories and Article I, Section 8, Clause 17 for the District, which is why their positions differ.",
             sourceLessonSlug: "the-clause-that-governs",
+          },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 2 — The Insular Cases
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "downes-v-bidwell",
+      title: "5 · Downes v. Bidwell, and a word the Constitution never uses",
+      section: "Section 2 · The Insular Cases",
+      body: `The case that built the category was about fruit.
+
+In November 1900 a merchant shipped "oranges consigned to the plaintiff at New York, and brought thither from the port of San Juan in the island of Porto Rico" (Downes v. Bidwell, 1901). The New York customs collector charged duty on them under the Foraker Act, which Congress had passed that April to erect a civil government on the island and to tax goods moving to and from it. The bill came to **$659.35**. The importer paid it and sued, on the ground that the Constitution says "all Duties, Imposts and Excises shall be uniform throughout the United States" and Puerto Rico was now inside the United States.
+
+**The Court had to decide a prior question before it could decide the tax question: does the Constitution apply in Puerto Rico at all?** It fractured. No opinion commanded a majority, and the two leading opinions reached the same result by different roads. That is why the doctrine is strange: it was assembled out of pieces.
+
+**Justice Brown's opinion** took the direct route. Applying the Constitution made sense, he wrote, in "contiguous territor[ies] inhabited only by people of the same race, or by scattered bodies of native Indians", but not in islands "inhabited by alien races, differing from us in religion, customs, laws, methods of taxation, and modes of thought", where "the administration of government and justice, according to Anglo-Saxon principles, may for a time be impossible" (Downes v. Bidwell, 1901, at 282, 287). The Constitution would reach Puerto Rico if and when Congress said so.
+
+Brown also named the stake out loud. "A false step at this time might be fatal to the development of . . . the American Empire" (Downes v. Bidwell, 1901, at 286, as quoted in Fitisemanu v. United States, 2021).
+
+**Justice White's concurrence** supplied the machinery that survived. He argued that the Constitution's application depended on "the situation of the territory and its relations to the United States" (Downes v. Bidwell, 1901, at 293). Congress could **incorporate** a territory into the United States, expressly or by clear implication, and in an incorporated territory the Constitution applied fully. Where Congress had not, only "fundamental" guarantees reached inside. Puerto Rico, on his account, remained "foreign to the United States" in the relevant sense because Congress had not indicated an intention to incorporate it.
+
+Do not let the tidier language hide what White was arguing. He rested the distinction on a claimed national right to acquire and exploit "an unknown island, peopled with an uncivilized race . . . for commercial and strategic reasons", a right that "could not be practically exercised if the result would be to endow" full constitutional protection "on those absolutely unfit to receive [them]" (Downes v. Bidwell, 1901, at 306).
+
+**The holding, in the Court's own words:** "the island of Porto Rico is a territory appurtenant and belonging to the United States, but not a part of the United States within the revenue clauses of the Constitution" (Downes v. Bidwell, 1901). Belonging to, and not part of. The duty stood.
+
+**The dissenters said in 1901 what critics say now.** Chief Justice Fuller was astonished that Congress could keep a territory "like a disembodied shade, in an intermediate state of ambiguous existence for an indefinite period". Justice Harlan wrote that the Court was "engraft[ing] upon our republican institutions a colonial system such as exists under monarchical governments", and he could not find White's middle ground anywhere in the document: "I am constrained to say that this idea of 'incorporation' has some occult meaning which my mind does not apprehend" (Downes v. Bidwell, 1901, at 372, 380, 391, as quoted in Vaello Madero, 2022, Gorsuch, J., concurring, slip op. at 4).
+
+Three years later a majority adopted White's theory in *Dorr v. United States* (Vaello Madero, 2022, Gorsuch, J., concurring, slip op. at 4). The word **incorporated** entered American constitutional law and has never left it, and it appears nowhere in the Constitution.
+
+:::reveal What was actually being shipped in Downes v. Bidwell, and what was the duty? ||| Oranges from San Juan to New York, on which the collector charged $659.35.
+
+:::reveal State the Downes holding in the Court's own phrasing. ||| That Puerto Rico is a territory appurtenant and belonging to the United States, but not a part of the United States within the revenue clauses of the Constitution.
+
+:::reveal What did Justice Harlan say about the idea of incorporation? ||| That it has some occult meaning which his mind did not apprehend, because he could find it nowhere in the Constitution.
+
+## Vocabulary
+- **Insular Cases**: the line of Supreme Court decisions beginning in 1901 that sorted United States territories into incorporated and unincorporated, and held that the Constitution reaches the second kind only in part.
+- **Incorporation (territorial)**: Justice White's concept that Congress may bring a territory inside the Constitution's full reach, expressly or by clear implication, and that until it does only some guarantees apply.
+- **Uniformity Clause**: Article I, Section 8, Clause 1, requiring that duties, imposts and excises be uniform throughout the United States, which is the provision the importer invoked.
+- **Foraker Act**: the 1900 statute that created a civil government for Puerto Rico and imposed the duties challenged in this case.
+- **Fundamental right (Insular sense)**: in this doctrine, a constitutional guarantee held to apply even in an unincorporated territory, with no test in the Constitution for deciding which guarantees qualify.
+
+## Sources
+*Downes v. Bidwell*, 182 U.S. 244 (1901). Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/supremecourt/text/182/244
+
+*Fitisemanu v. United States*, Nos. 20-4017 & 20-4019 (10th Cir. June 15, 2021). U.S. Government Publishing Office. https://www.govinfo.gov/content/pkg/USCOURTS-ca10-20-04017/pdf/USCOURTS-ca10-20-04017-0.pdf
+
+*United States v. Vaello Madero*, No. 20-303 (U.S. Apr. 21, 2022) (slip op.) (Gorsuch, J., concurring). Supreme Court of the United States. https://www.supremecourt.gov/opinions/21pdf/20-303_6khn.pdf`,
+    },
+    {
+      slug: "balzac-and-the-jury",
+      title: "6 · Balzac, and the right that did not follow",
+      section: "Section 2 · The Insular Cases",
+      body: `Twenty-one years after the oranges, the doctrine met a harder test, and it held.
+
+Jesus M. Balzac edited a daily newspaper in Arecibo called *El Baluarte*. In 1918 he was prosecuted for criminal libel over two articles, published on 16 and 23 April. He demanded a jury trial. Puerto Rico's own code did not provide one for a misdemeanour, so he argued that the Sixth Amendment did, because by then he was a United States citizen: the Jones Act of 1917 had made the people of Puerto Rico citizens five years before his appeal reached Washington.
+
+**The Court, through Chief Justice Taft, said no on both halves of the argument.**
+
+On the first half, the citizenship did not change the island's status. Nothing in the 1917 Act declared an intention to incorporate Puerto Rico, and the Court would not infer one: "We cannot find any intention to depart from this policy in making Porto Ricans American citizens, explained as this is by the desire to put them as individuals on an exact equality with citizens from the American homeland" (Balzac v. Porto Rico, 1922). Citizenship attached to persons. Incorporation attached to places, and Congress had not done it.
+
+On the second half, the Court drew the line that has bothered people ever since:
+
+> "It is locality that is determinative of the application of the Constitution, in such matters as judicial procedure, and not the status of the people who live in it." (Balzac v. Porto Rico, 1922)
+
+Read that twice. **A citizen of the United States in San Juan and a citizen of the United States in Ohio had different constitutional rights in a courtroom, and the reason was where the courtroom was.**
+
+The Court then explained why a jury was not owed. "The jury system needs citizens trained to the exercise of the reponsibilities of jurors. In common-law countries centuries of tradition have prepared a conception of the impartial attitude jurors must assume" (Balzac v. Porto Rico, 1922). Justice Gorsuch summarised how the opinion applied that reasoning: on the Court's account Puerto Rico's localities included "compact and ancient communities" that had not yet developed the "impartial attitude" or "conscious duty of participation" the "Anglo-Saxon" jury trial required (Vaello Madero, 2022, Gorsuch, J., concurring, slip op. at 5).
+
+**Three consequences to carry forward.**
+
+**One, the doctrine got its shape here.** *Downes* said the Constitution does not apply in full. *Balzac* said even a right as central as trial by jury does not qualify as fundamental for these purposes. After *Balzac*, the practical rule was that very few constitutional limits could be relied on in an unincorporated territory without a clear statement from Congress.
+
+**Two, the case is still good law.** Neither *Downes* nor *Balzac* has been overruled. In 2020, when parties in a Puerto Rico case asked the Supreme Court to overrule the Insular Cases, the Court declined to reach the question and added that "whatever their continued validity we will not extend them in these cases" (Financial Oversight and Management Board for Puerto Rico v. Aurelius Investment, LLC, 2020). Not extended, not overruled, still there.
+
+**Three, this is why citizenship is not the end of the argument.** It is tempting to think the whole problem would dissolve if Congress simply made everyone a citizen. *Balzac* is the case that says otherwise, in terms: locality is determinative, not the status of the people who live in it. Section 3 is about the one place where Congress has not even taken that step.
+
+:::reveal What was Balzac prosecuted for, and what did he demand? ||| Criminal libel over two articles in his Arecibo newspaper, and he demanded a jury trial under the Sixth Amendment.
+
+:::reveal What did Balzac hold about the effect of the 1917 grant of citizenship? ||| That it did not incorporate Puerto Rico, because the Court would not infer an intention to incorporate that Congress had not declared.
+
+:::reveal Quote the principle Balzac used to decide whose constitutional rights apply where. ||| It is locality that is determinative of the application of the Constitution, in such matters as judicial procedure, and not the status of the people who live in it.
+
+## Vocabulary
+- **Jones Act of 1917**: the statute that conferred United States citizenship on the people of Puerto Rico, and which the Court held did not incorporate the island.
+- **Locality rule**: the Balzac principle that the place, rather than the citizenship of the person, decides which constitutional procedures apply.
+- **Criminal libel**: the offence Balzac was charged with, a misdemeanour under the island's code for which local law provided no jury.
+- **Clear statement**: the requirement, drawn from Balzac, that incorporation not be assumed and that Congress say so if it means it.
+- **Good law**: a decision that has never been overruled and that lower courts remain bound to apply, which both Downes and Balzac still are.
+
+## Sources
+*Balzac v. Porto Rico*, 258 U.S. 298 (1922). Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/supremecourt/text/258/298
+
+*Financial Oversight and Management Board for Puerto Rico v. Aurelius Investment, LLC*, No. 18-1334 (U.S. June 1, 2020). Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/supremecourt/text/18-1334
+
+*United States v. Vaello Madero*, No. 20-303 (U.S. Apr. 21, 2022) (slip op.) (Gorsuch, J., concurring). Supreme Court of the United States. https://www.supremecourt.gov/opinions/21pdf/20-303_6khn.pdf`,
+    },
+    {
+      slug: "the-critics-by-name",
+      title: "7 · The critics, by name, and the defence they answer",
+      section: "Section 2 · The Insular Cases",
+      body: `A course can say "these cases are criticised" and teach nothing. Here is who says what, in their own words, so you can weigh it.
+
+**Justice Gorsuch, concurring in *United States v. Vaello Madero* (2022).** He opens without hedging:
+
+> "A century ago in the Insular Cases, this Court held that the federal government could rule Puerto Rico and other Territories largely without regard to the Constitution. It is past time to acknowledge the gravity of this error and admit what we know to be true: The Insular Cases have no foundation in the Constitution and rest instead on racial stereotypes. They deserve no place in our law." (Vaello Madero, 2022, Gorsuch, J., concurring, slip op. at 1)
+
+He is specific about the source. "The Insular Cases can claim support in academic work of the period, ugly racial stereotypes, and the theories of social Darwinists. But they have no home in our Constitution or its original understanding" (slip op. at 5). And he names the academics: Christopher Langdell, James Bradley Thayer and Abbott Lawrence Lowell, whose 1899 *Harvard Law Review* articles argued that constitutional limits "do not apply" to possessions acquired by conquest or cession and "are inapplicable except among a people whose social and political evolution has been consonant with our own" (slip op. at 2).
+
+He closes: "the time has come to recognize that the Insular Cases rest on a rotten foundation. And I hope the day comes soon when the Court squarely overrules them" (slip op. at 10).
+
+**Justice Sotomayor, dissenting in the same case,** attacks a different target, the outcome rather than the doctrine: "Congress' decision to exclude millions of U.S. citizens who reside in Puerto Rico from the SSI program fails even this deferential test", and she calls the result "irrational and antithetical to the very nature of the SSI program and the equal protection of citizens guaranteed by the Constitution" (Vaello Madero, 2022, Sotomayor, J., dissenting, slip op. at 1).
+
+**Judge Juan Torruella of the First Circuit,** who spent a judicial career on this, described the Insular Cases as "anchored on theories of dubious legal or historical validity, contrived by academics interested in promoting an expansionist agenda" (Igartua de la Rosa v. United States, 2005, Torruella, J., dissenting, as quoted in Fitisemanu v. United States, 2021).
+
+**And the Tenth Circuit panel that ruled AGAINST extending citizenship** said much the same about the cases it was applying. Its opinion calls the Insular Cases "disreputable to modern eyes" in purpose and reasoning, notes that the Court "repeatedly voiced concern that native inhabitants of the unincorporated territories were simply unfit for the American constitutional regime", and quotes both White's "absolutely unfit to receive it" and Brown's "differences of race" (Fitisemanu v. United States, 2021). **You can think the doctrine is shameful and still think a court is not the body to undo it. That is the actual live disagreement, and it is not the one most summaries describe.**
+
+**Now the defence, stated fairly, because it is held by people with a real stake.** A modern argument says the unincorporated status has become protective: it is what lets a territory keep legal arrangements that would not survive uniform constitutional scrutiny, such as communal land tenure and hereditary chieftaincy in American Samoa. The Tenth Circuit took this seriously and it is a large part of why the case came out as it did.
+
+Justice Gorsuch answered that argument directly, and it is worth having both halves. He noted the "amicus briefs from the Governor of Puerto Rico, territorial advocacy groups, and the U. S. Virgin Islands expressing vehement disagreement with the Insular Cases", and wrote that "recent attempts to repurpose the Insular Cases merely drape the worst of their logic in new garb", because "the Constitution's restraints on federal power do not turn on a court's unschooled assessment of a Territory's local customs" (Vaello Madero, 2022, Gorsuch, J., concurring, slip op. at 9 n.4).
+
+**What no responsible summary should do is collapse this into one axis.** There is a disagreement about the doctrine, a disagreement about who should fix it, and a disagreement about what fixing it would do to particular places. Section 3 is where all three collide in one case.
+
+:::reveal What did Justice Gorsuch say the Insular Cases rest on, in place of the Constitution? ||| Racial stereotypes, along with the academic work of the period and the theories of social Darwinists.
+
+:::reveal Who wrote the 1899 Harvard Law Review articles Justice Gorsuch names as the doctrine's intellectual source? ||| Christopher Langdell, James Bradley Thayer and Abbott Lawrence Lowell.
+
+:::reveal What is the modern defence of unincorporated status, and how did Justice Gorsuch answer it? ||| That the status protects local arrangements a uniform Constitution would disturb; he answered that repurposing the cases drapes the worst of their logic in new garb.
+
+## Vocabulary
+- **Concurrence**: an opinion by a justice who agrees with the Court's result but writes separately, which is how the sharpest criticism of the Insular Cases reached the pages of the United States Reports.
+- **Social Darwinism**: the late nineteenth-century doctrine ranking peoples by supposed evolutionary fitness, named by Justice Gorsuch as one of the intellectual supports for the Insular Cases.
+- **Amicus brief**: a filing by a non-party with an interest in the outcome, which is how territorial governments and advocacy groups put their positions before the Court in these cases.
+- **The protective argument**: the modern claim that unincorporated status shields local legal arrangements from uniform constitutional scrutiny.
+- **Judicial versus legislative repair**: the live disagreement about whether a court should overturn the doctrine or Congress should legislate around it, which cuts across agreement that the doctrine is wrong.
+
+## Sources
+*Fitisemanu v. United States*, Nos. 20-4017 & 20-4019 (10th Cir. June 15, 2021). U.S. Government Publishing Office. https://www.govinfo.gov/content/pkg/USCOURTS-ca10-20-04017/pdf/USCOURTS-ca10-20-04017-0.pdf
+
+*United States v. Vaello Madero*, No. 20-303 (U.S. Apr. 21, 2022) (slip op.) (Gorsuch, J., concurring; Sotomayor, J., dissenting). Supreme Court of the United States. https://www.supremecourt.gov/opinions/21pdf/20-303_6khn.pdf`,
+    },
+    {
+      slug: "quiz-the-insular-cases",
+      title: "8 · Knowledge check: the Insular Cases",
+      section: "Section 2 · The Insular Cases",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What goods were at the centre of Downes v. Bidwell?",
+            options: ["Oranges", "Refined sugar shipped from Ponce to Baltimore in the spring of 1900", "Cigars manufactured in Havana and landed at the port of New Orleans", "Coffee carried from Guam to San Francisco under the terms of the Foraker Act"],
+            correctIndex: 0,
+            explanation: "The record describes oranges consigned to the plaintiff at New York and brought from the port of San Juan in November 1900.",
+            sourceLessonSlug: "downes-v-bidwell",
+          },
+          {
+            prompt: "What duty amount did the collector charge on that shipment?",
+            options: ["$659.35", "$1,250.00, the standard rate then applied to fruit from a foreign port", "$28,081, the sum later disputed in a twenty-first century benefits case", "$25,000,000, the price paid for a different island group in 1917"],
+            correctIndex: 0,
+            explanation: "The importer paid it and sued, which is how a fruit invoice became the founding case of an entire constitutional doctrine.",
+            sourceLessonSlug: "downes-v-bidwell",
+          },
+          {
+            prompt: "Which constitutional provision did the importer invoke?",
+            options: ["The Uniformity Clause", "The Privileges and Immunities Clause of Article IV, Section 2", "The Commerce Clause, in its provision about commerce among the several states", "The Import-Export Clause forbidding states to lay duties on imports"],
+            correctIndex: 0,
+            explanation: "Article I, Section 8, Clause 1 requires that duties, imposts and excises be uniform throughout the United States.",
+            sourceLessonSlug: "downes-v-bidwell",
+          },
+          {
+            prompt: "What prior question did the Court have to answer before it could decide the tax question?",
+            options: ["Whether the Constitution applied in Puerto Rico at all", "Whether the Foraker Act had been properly presented to the President for signature", "Whether a customs collector may be sued in his personal rather than official capacity", "Whether Puerto Rico's own courts had jurisdiction over a shipment landed in New York"],
+            correctIndex: 0,
+            explanation: "The uniformity requirement only bites if Puerto Rico is inside the United States for that purpose, so the status question came first.",
+            sourceLessonSlug: "downes-v-bidwell",
+          },
+          {
+            prompt: "How did the Court divide in Downes v. Bidwell?",
+            options: ["It fractured, with no opinion commanding a majority", "It was unanimous, with a single opinion joined by every sitting justice", "It split five to four with one clear majority opinion and one clear dissent", "It issued a short unsigned order without any opinion explaining the result"],
+            correctIndex: 0,
+            explanation: "The two leading opinions reached the same result by different routes, which is why the doctrine was assembled out of pieces.",
+            sourceLessonSlug: "downes-v-bidwell",
+          },
+          {
+            prompt: "In Justice Brown's opinion, where did applying the Constitution make sense?",
+            options: ["In contiguous territories inhabited by people of the same race", "In any territory whose legislature had petitioned Congress for admission as a state", "In territories where a federal court had already been established and staffed", "In territories acquired by purchase rather than by conquest or by cession"],
+            correctIndex: 0,
+            explanation: "His phrasing was contiguous territories inhabited only by people of the same race, or by scattered bodies of native Indians.",
+            sourceLessonSlug: "downes-v-bidwell",
+          },
+          {
+            prompt: "What did Justice Brown say about islands inhabited by what he called alien races?",
+            options: ["That government on Anglo-Saxon principles might be impossible", "That their inhabitants should be naturalised individually rather than collectively by statute", "That Congress should govern them through the treaty power rather than under Article IV", "That the Constitution applied there but the courts could not enforce it for a generation"],
+            correctIndex: 0,
+            explanation: "He wrote that the administration of government and justice, according to Anglo-Saxon principles, may for a time be impossible.",
+            sourceLessonSlug: "downes-v-bidwell",
+          },
+          {
+            prompt: "What did Justice Brown say a false step at that time might be fatal to?",
+            options: ["The development of the American Empire", "The credit of the United States in the markets of Europe and the Far East", "The prospect of admitting Hawaii and Alaska to the Union as states", "The settlement of the peace terms Spain had signed in December 1898"],
+            correctIndex: 0,
+            explanation: "The phrase appears in his opinion and the Tenth Circuit quoted it in 2021 while describing the purpose of the Insular Cases as disreputable.",
+            sourceLessonSlug: "downes-v-bidwell",
+          },
+          {
+            prompt: "What did Justice White say the Constitution's application depended on?",
+            options: ["The situation of the territory and its relations to the United States", "Whether the territory's population had reached sixty thousand free inhabitants", "Whether the President had appointed a governor for the territory by that date", "Whether the treaty of acquisition had been ratified by a two-thirds Senate vote"],
+            correctIndex: 0,
+            explanation: "That formulation is where the incorporated and unincorporated distinction begins, and it is his own phrase.",
+            sourceLessonSlug: "downes-v-bidwell",
+          },
+          {
+            prompt: "On Justice White's theory, what reaches an unincorporated territory?",
+            options: ["Only the fundamental parts of the Constitution", "Every provision of the Constitution except those Congress has expressly suspended", "Only the provisions the territorial legislature has adopted by its own enactment", "Only the provisions that were in force at the moment the territory was acquired"],
+            correctIndex: 0,
+            explanation: "The Constitution never says which guarantees are fundamental, which is the gap critics have pointed at ever since.",
+            sourceLessonSlug: "downes-v-bidwell",
+          },
+          {
+            prompt: "What claimed national right did Justice White rest the distinction on?",
+            options: ["A right to acquire and exploit newly acquired islands", "A right to raise revenue from the possessions to pay the costs of the recent war", "A right to exclude the inhabitants of a possession from entry into the United States", "A right to garrison any acquired territory without the consent of its inhabitants"],
+            correctIndex: 0,
+            explanation: "He wrote of a right that could not be practically exercised if it endowed full constitutional protection on those he called absolutely unfit to receive it.",
+            sourceLessonSlug: "downes-v-bidwell",
+          },
+          {
+            prompt: "State the Downes holding in the Court's own phrasing.",
+            options: ["Appurtenant and belonging to, but not a part of, the United States", "Fully within the United States for all purposes except the raising of federal revenue", "A foreign country for tariff purposes and a domestic jurisdiction for all other purposes", "A state in every constitutional sense except representation in the federal Congress"],
+            correctIndex: 0,
+            explanation: "The opinion says the island is a territory appurtenant and belonging to the United States, but not a part of it within the revenue clauses.",
+            sourceLessonSlug: "downes-v-bidwell",
+          },
+          {
+            prompt: "What did Chief Justice Fuller say Congress could do to a territory under the Court's reasoning?",
+            options: ["Keep it like a disembodied shade in an ambiguous existence", "Sell it to a foreign power without the consent of the people who lived there", "Tax it without limit while denying its residents access to the federal courts", "Deny its inhabitants any nationality at all until it chose to grant them one"],
+            correctIndex: 0,
+            explanation: "His phrase was an intermediate state of ambiguous existence for an indefinite period, and it has aged into an accurate description.",
+            sourceLessonSlug: "downes-v-bidwell",
+          },
+          {
+            prompt: "What did Justice Harlan say the Court was grafting onto republican institutions?",
+            options: ["A colonial system such as exists under monarchical governments", "A doctrine of implied powers wider than anything the framers had contemplated", "A rule of construction that would eventually swallow the Tenth Amendment whole", "A distinction between the rights of citizens and the rights of naturalised persons"],
+            correctIndex: 0,
+            explanation: "He dissented in the Insular Cases year after year, and his objection was that the Constitution contains no such system.",
+            sourceLessonSlug: "downes-v-bidwell",
+          },
+          {
+            prompt: "What did Justice Harlan say about the idea of incorporation?",
+            options: ["That it had some occult meaning his mind did not apprehend", "That it belonged in a statute rather than in a judicial opinion of the Supreme Court", "That it should be limited to territories acquired before the ratification of the Constitution", "That it would be workable if Congress were required to declare it within ten years"],
+            correctIndex: 0,
+            explanation: "He could find the concept nowhere in the Constitution's terms, which remains the central objection to it.",
+            sourceLessonSlug: "downes-v-bidwell",
+          },
+          {
+            prompt: "In which later case did a majority of the Court adopt Justice White's incorporation theory?",
+            options: ["Dorr v. United States", "Balzac v. Porto Rico, decided in 1922 on a criminal libel appeal from Arecibo", "Thompson v. Utah, decided in the same year as the Spanish-American War", "Loughborough v. Blake, the 1820 case about a tax levied on the District"],
+            correctIndex: 0,
+            explanation: "It was decided in 1904, three years after Downes, and it is where the fractured opinions became a rule.",
+            sourceLessonSlug: "downes-v-bidwell",
+          },
+          {
+            prompt: "Where in the Constitution does the word 'incorporated' appear, as a description of a territory?",
+            options: ["Nowhere", "In Article IV, Section 3, Clause 2, immediately after the words needful Rules", "In Article I, Section 8, Clause 17, in the passage about the seat of government", "In the Fourteenth Amendment, in the clause about persons born or naturalised"],
+            correctIndex: 0,
+            explanation: "That absence is why Justice Harlan called the idea occult and why Justice Gorsuch says the cases have no foundation in the document.",
+            sourceLessonSlug: "downes-v-bidwell",
+          },
+          {
+            prompt: "What was the Foraker Act?",
+            options: ["The 1900 statute creating a civil government for Puerto Rico", "The 1917 statute conferring United States citizenship on the people of Puerto Rico", "The 1950 statute establishing an organic government for the island of Guam", "The 1976 statute approving a covenant with the Northern Mariana Islands"],
+            correctIndex: 0,
+            explanation: "It also imposed the duties on goods moving to and from the island, which is what the importer challenged.",
+            sourceLessonSlug: "downes-v-bidwell",
+          },
+          {
+            prompt: "What was Jesus M. Balzac's occupation?",
+            options: ["Newspaper editor", "Customs broker handling shipments between San Juan and New York", "Member of the Puerto Rican legislature elected under the Jones Act", "Lawyer representing the government of Puerto Rico in criminal matters"],
+            correctIndex: 0,
+            explanation: "He edited a daily called El Baluarte in Arecibo, and the prosecution arose out of two articles he published in 1918.",
+            sourceLessonSlug: "balzac-and-the-jury",
+          },
+          {
+            prompt: "What was Balzac charged with?",
+            options: ["Criminal libel", "Sedition against the government of the United States during wartime", "Failure to pay the duties imposed on imports under the Foraker Act", "Publishing an unlicensed newspaper in violation of a territorial ordinance"],
+            correctIndex: 0,
+            explanation: "The charges rested on two articles published on 16 and 23 April 1918, and the offence was a misdemeanour under the island's code.",
+            sourceLessonSlug: "balzac-and-the-jury",
+          },
+          {
+            prompt: "What did Balzac demand that local law did not give him?",
+            options: ["A jury trial", "A translation of the proceedings into Spanish at the government's expense", "A transfer of his case to a federal district court sitting in the mainland", "An appeal directly to the Supreme Court without passing through a lower court"],
+            correctIndex: 0,
+            explanation: "The island's code provided no jury for a misdemeanour, so he argued that the Sixth Amendment supplied one.",
+            sourceLessonSlug: "balzac-and-the-jury",
+          },
+          {
+            prompt: "Who delivered the opinion of the Court in Balzac v. Porto Rico?",
+            options: ["Chief Justice Taft", "Justice Brown, who had written the leading opinion in the 1901 tax case", "Justice White, whose incorporation theory the opinion applied to the facts", "Justice Harlan, who had dissented in every one of the earlier Insular Cases"],
+            correctIndex: 0,
+            explanation: "The opinion is his, and it is the case that carried the doctrine into the era after Puerto Ricans became citizens.",
+            sourceLessonSlug: "balzac-and-the-jury",
+          },
+          {
+            prompt: "What did Balzac hold about the effect of the 1917 grant of citizenship?",
+            options: ["It did not incorporate Puerto Rico", "It incorporated Puerto Rico but left the jury guarantee to the territorial legislature", "It incorporated Puerto Rico only for the purposes of the revenue and tariff clauses", "It made Puerto Rico a state for every purpose except representation in Congress"],
+            correctIndex: 0,
+            explanation: "The Court would not infer an intention to incorporate that Congress had not declared, and read the citizenship as putting individuals on an equality instead.",
+            sourceLessonSlug: "balzac-and-the-jury",
+          },
+          {
+            prompt: "According to Balzac, what determines which constitutional procedures apply?",
+            options: ["Locality", "The citizenship status of the person standing trial in the particular case", "The seriousness of the offence charged, measured by the maximum sentence", "Whether the territory has an organic act passed by the Congress of the United States"],
+            correctIndex: 0,
+            explanation: "The Court said it is locality that is determinative of the application of the Constitution, not the status of the people who live in it.",
+            sourceLessonSlug: "balzac-and-the-jury",
+          },
+          {
+            prompt: "What reason did the Court give for holding that the jury guarantee did not reach Puerto Rico?",
+            options: ["That the jury system needs citizens trained to a juror's responsibilities", "That the island's criminal code already provided an equivalent procedure before a panel of judges", "That the Sixth Amendment by its terms applies only in the several states and not elsewhere", "That the defendant had waived the right by publishing the articles under his own name"],
+            correctIndex: 0,
+            explanation: "The opinion reasoned that centuries of tradition in common-law countries had prepared a conception of the impartial attitude jurors must assume.",
+            sourceLessonSlug: "balzac-and-the-jury",
+          },
+          {
+            prompt: "What is the status of Downes and Balzac today?",
+            options: ["Both are still good law", "Both were overruled by the Supreme Court in the Puerto Rico oversight case of 2020", "Downes was overruled in 1957 and Balzac was narrowed to criminal cases only", "Both were superseded by statute when Congress conferred citizenship in 1917"],
+            correctIndex: 0,
+            explanation: "Neither has been overruled, and lower courts still feel bound to apply their terms.",
+            sourceLessonSlug: "balzac-and-the-jury",
+          },
+          {
+            prompt: "What did the Supreme Court say about the Insular Cases in the 2020 Aurelius decision?",
+            options: ["It would not extend them", "It overruled them in full and directed lower courts to disregard their reasoning", "It reaffirmed them expressly as the governing law of the unincorporated territories", "It held that they had been superseded by the Territory Clause as originally understood"],
+            correctIndex: 0,
+            explanation: "The Court declined to reach the request to overrule them and said that whatever their continued validity it would not extend them in those cases.",
+            sourceLessonSlug: "balzac-and-the-jury",
+          },
+          {
+            prompt: "Why does Balzac matter for anyone who thinks citizenship would solve the problem?",
+            options: ["Because it says the place decides, not the person", "Because it holds that citizenship may be revoked once a territory is incorporated", "Because it requires Congress to confer citizenship before it may impose any tax", "Because it makes territorial status depend on the number of citizens resident there"],
+            correctIndex: 0,
+            explanation: "Puerto Ricans were already citizens when the Court decided the case, and the jury right still did not follow.",
+            sourceLessonSlug: "balzac-and-the-jury",
+          },
+          {
+            prompt: "How did Justice Gorsuch open his concurrence in Vaello Madero?",
+            options: ["By saying it is past time to acknowledge the gravity of the error", "By explaining why the Court should leave the Insular Cases undisturbed for now", "By recounting the history of the Supplemental Security Income programme since 1972", "By setting out the equal protection test the majority had applied to the statute"],
+            correctIndex: 0,
+            explanation: "He wrote that the cases have no foundation in the Constitution and rest instead on racial stereotypes, and that they deserve no place in our law.",
+            sourceLessonSlug: "the-critics-by-name",
+          },
+          {
+            prompt: "What did Justice Gorsuch say the Insular Cases rest on, in place of the Constitution?",
+            options: ["Racial stereotypes", "A misreading of the Articles of Confederation carried forward by inertia", "An emergency wartime power that lapsed with the peace treaty of December 1898", "A line of English colonial precedents the framers had deliberately rejected"],
+            correctIndex: 0,
+            explanation: "His full phrasing adds the academic work of the period and the theories of social Darwinists, and denies the cases any home in the Constitution.",
+            sourceLessonSlug: "the-critics-by-name",
+          },
+          {
+            prompt: "Which phrase did Justice Gorsuch use to describe the foundation of the Insular Cases?",
+            options: ["A rotten foundation", "A necessary compromise between empire and republic that has outlived its usefulness", "A workable rule of construction that later courts have applied too broadly", "An unwritten understanding shared by the framers of the Fourteenth Amendment"],
+            correctIndex: 0,
+            explanation: "He added that he hoped the day would come soon when the Court squarely overrules them.",
+            sourceLessonSlug: "the-critics-by-name",
+          },
+          {
+            prompt: "Which three academics does Justice Gorsuch name as the doctrine's intellectual source?",
+            options: ["Langdell, Thayer and Lowell", "Story, Cooley and Kent, whose treatises the Court had relied on since the 1830s", "Holmes, Pound and Cardozo, writing in the first decades of the twentieth century", "Marshall, Taney and Field, all of them sitting justices rather than professors"],
+            correctIndex: 0,
+            explanation: "Their 1899 articles in one law review argued that constitutional limits do not apply to possessions acquired by conquest or cession.",
+            sourceLessonSlug: "the-critics-by-name",
+          },
+          {
+            prompt: "In which publication did the three named academics make their 1899 argument?",
+            options: ["The Harvard Law Review", "The Congressional Record of the Fifty-Fifth Congress, second session", "The annual report of the Secretary of War on the new possessions", "The proceedings of the American Society of International Law"],
+            correctIndex: 0,
+            explanation: "Justice Gorsuch traces the doctrine to a series of articles there, and quotes each of the three.",
+            sourceLessonSlug: "the-critics-by-name",
+          },
+          {
+            prompt: "What did Justice Sotomayor's dissent in Vaello Madero attack?",
+            options: ["The outcome for the citizens excluded from the programme", "The Insular Cases themselves, which she said should be overruled that day", "The Court's jurisdiction to hear an appeal from the First Circuit at all", "The government's decision to sue a benefits recipient for repayment"],
+            correctIndex: 0,
+            explanation: "She wrote that excluding millions of citizens resident in Puerto Rico from the programme fails even the deferential test the Court applied.",
+            sourceLessonSlug: "the-critics-by-name",
+          },
+          {
+            prompt: "How did Judge Torruella of the First Circuit describe the Insular Cases?",
+            options: ["Anchored on theories of dubious legal or historical validity", "A necessary accommodation between the demands of empire and the text of the charter", "A settled body of law that only a constitutional amendment could properly disturb", "A misapplication of the Fourteenth Amendment to places outside the several states"],
+            correctIndex: 0,
+            explanation: "He added that they were contrived by academics interested in promoting an expansionist agenda, and the Tenth Circuit quoted him.",
+            sourceLessonSlug: "the-critics-by-name",
+          },
+          {
+            prompt: "What did the Tenth Circuit panel in Fitisemanu say about the cases it was applying?",
+            options: ["That their purpose and reasoning are disreputable to modern eyes", "That they were correctly decided and should be extended to citizenship questions", "That they had been implicitly overruled and the panel was free to disregard them", "That they applied only to revenue questions and not to any question of personal status"],
+            correctIndex: 0,
+            explanation: "The same opinion notes that the Court repeatedly voiced concern that native inhabitants were unfit for the American constitutional regime.",
+            sourceLessonSlug: "the-critics-by-name",
+          },
+          {
+            prompt: "What is the live disagreement that most summaries of this subject miss?",
+            options: ["Whether a court or Congress should undo the doctrine", "Whether the Insular Cases were racist in their reasoning or merely in their result", "Whether Downes or Balzac is the more important of the two decisions", "Whether the Constitution contains the word incorporated anywhere in its text"],
+            correctIndex: 0,
+            explanation: "A judge can think the doctrine shameful and still think a court is the wrong body to undo it, which is exactly what happened in Fitisemanu.",
+            sourceLessonSlug: "the-critics-by-name",
+          },
+          {
+            prompt: "What is the modern protective argument for unincorporated status?",
+            options: ["That it shields local arrangements from uniform constitutional scrutiny", "That it guarantees a territory a larger share of federal formula funds each year", "That it prevents Congress from imposing federal taxes on territorial residents", "That it preserves a territory's right to a plebiscite whenever it requests one"],
+            correctIndex: 0,
+            explanation: "Communal land tenure and hereditary chieftaincy in American Samoa are the examples the Tenth Circuit took seriously.",
+            sourceLessonSlug: "the-critics-by-name",
+          },
+          {
+            prompt: "How did Justice Gorsuch answer the protective argument?",
+            options: ["That it drapes the worst of the old logic in new garb", "That the territories should be admitted as states before the question can arise", "That the argument is correct but belongs before Congress rather than a court", "That the Court had already accepted it in the 2020 Puerto Rico oversight case"],
+            correctIndex: 0,
+            explanation: "He wrote that constitutional restraints do not turn on a court's unschooled assessment of a territory's local customs.",
+            sourceLessonSlug: "the-critics-by-name",
+          },
+          {
+            prompt: "Which parties filed briefs expressing disagreement with the Insular Cases, in Justice Gorsuch's account?",
+            options: ["The Governor of Puerto Rico and the U.S. Virgin Islands", "The American Samoa Government and the territory's member of Congress", "The Attorney General of the United States and the Social Security Administration", "The National Governors Association and the Council of State Governments"],
+            correctIndex: 0,
+            explanation: "He lists them alongside territorial advocacy groups, which is why the protective argument cannot be described as the territorial position.",
+            sourceLessonSlug: "the-critics-by-name",
+          },
+          {
+            prompt: "What is a concurrence?",
+            options: ["An opinion agreeing with the result but written separately", "An opinion joined by every justice who heard argument in the case", "A dissent filed after the Court has announced its judgment from the bench", "A brief filed by a party who is not directly involved in the litigation"],
+            correctIndex: 0,
+            explanation: "It is how the sharpest criticism of the Insular Cases reached the United States Reports without changing the outcome of the case.",
+            sourceLessonSlug: "the-critics-by-name",
+          },
+          {
+            prompt: "What is an amicus brief?",
+            options: ["A filing by a non-party with an interest in the outcome", "A summary of the case prepared for the justices by the Reporter of Decisions", "A brief filed by the losing party asking for rehearing before the full court", "The written record of oral argument transcribed by the Court's own reporters"],
+            correctIndex: 0,
+            explanation: "It is the mechanism by which territorial governments and advocacy groups placed their positions before the Court in these cases.",
+            sourceLessonSlug: "the-critics-by-name",
+          },
+          {
+            prompt: "What was social Darwinism, in the context Justice Gorsuch invokes it?",
+            options: ["A doctrine ranking peoples by supposed evolutionary fitness", "A school of economics arguing that colonies must pay for their own administration", "A method of statutory interpretation favouring the intentions of the enacting Congress", "A theory of international law holding that conquest transfers legal obligations"],
+            correctIndex: 0,
+            explanation: "He names it as one of the intellectual supports for the Insular Cases, alongside the academic work of the period and ugly racial stereotypes.",
+            sourceLessonSlug: "the-critics-by-name",
+          },
+          {
+            prompt: "Why does this course quote the critics at length rather than summarising them?",
+            options: ["So the criticism can be weighed rather than taken on trust", "Because the opinions are too long to summarise accurately in a single lesson", "Because paraphrasing a judicial opinion is forbidden by the Court's own rules", "Because the critics disagree with each other about almost every point of law"],
+            correctIndex: 0,
+            explanation: "Saying that cases are criticised teaches nothing; naming who says what, in their own words, lets a learner judge it.",
+            sourceLessonSlug: "the-critics-by-name",
+          },
+          {
+            prompt: "What is a 'fundamental' right in the Insular Cases sense?",
+            options: ["A guarantee held to apply even in an unincorporated territory", "A right listed in the first eight amendments to the Constitution of the United States", "A right the territorial legislature has adopted into its own local code of laws", "A right the Supreme Court has enforced against a state under the Fourteenth Amendment"],
+            correctIndex: 0,
+            explanation: "The Constitution supplies no test for deciding which guarantees qualify, which is a large part of the objection to the doctrine.",
+            sourceLessonSlug: "downes-v-bidwell",
+          },
+          {
+            prompt: "What did the Court in Balzac say the citizenship grant was explained by?",
+            options: ["A desire to put Puerto Ricans on an equality as individuals", "A need to raise troops for the war then being fought in Europe", "An intention to prepare the island for admission to the Union as a state", "A treaty obligation the United States had assumed toward Spain in 1898"],
+            correctIndex: 0,
+            explanation: "The opinion reads the 1917 Act as putting persons on an exact equality with citizens from the American homeland, not as changing the island's status.",
+            sourceLessonSlug: "balzac-and-the-jury",
+          },
+          {
+            prompt: "After Balzac, what did a litigant in an unincorporated territory practically need in order to rely on a constitutional limit?",
+            options: ["A clear statement from Congress", "A ruling from the territory's own supreme court applying the provision locally", "Proof that the provision had been in force at the moment of acquisition", "A certificate from the Secretary of the Interior that the territory was organised"],
+            correctIndex: 0,
+            explanation: "Very few limits could be relied on without one, which is what the doctrine amounted to in practice.",
+            sourceLessonSlug: "balzac-and-the-jury",
+          },
+          {
+            prompt: "In what year was Balzac v. Porto Rico decided?",
+            options: ["1922", "1904, in the decision that first adopted the incorporation theory for a majority", "1901, alongside the other cases arising out of the Foraker Act duties", "1957, when a plurality of the Court first admitted discomfort with the doctrine"],
+            correctIndex: 0,
+            explanation: "It came twenty-one years after Downes and five years after Congress conferred citizenship.",
+            sourceLessonSlug: "balzac-and-the-jury",
+          },
+          {
+            prompt: "Which of these did the Downes dissenters and the modern critics both object to?",
+            options: ["That incorporation appears nowhere in the Constitution", "That the duties charged on Puerto Rican goods were set at too high a rate", "That the Court had decided a tax case without hearing full oral argument", "That Congress rather than the Court should have written the tariff schedule"],
+            correctIndex: 0,
+            explanation: "Justice Harlan called it occult in 1901 and Justice Gorsuch said the cases have no foundation in the Constitution in 2022, and it is the same objection.",
+            sourceLessonSlug: "the-critics-by-name",
+          },
+          {
+            prompt: "What does it mean to say the Insular Cases were 'assembled out of pieces'?",
+            options: ["No single opinion in Downes commanded a majority of the Court", "The doctrine was written by Congress and later adopted by the Supreme Court", "Each of the cases addressed a different territory under a different statute", "The cases were decided over eight decades by justices who never sat together"],
+            correctIndex: 0,
+            explanation: "Two leading opinions reached the same result by different routes and a later case picked one of them, which is how the rule emerged.",
+            sourceLessonSlug: "downes-v-bidwell",
+          },
+          {
+            prompt: "Which of these is the most accurate description of what Downes decided about the duty?",
+            options: ["The duty stood", "The duty was refunded to the importer with interest from the date of payment", "The duty was upheld only for shipments made before the Foraker Act took effect", "The duty was struck down but Congress was invited to re-enact it in a new form"],
+            correctIndex: 0,
+            explanation: "Because Puerto Rico was held not to be part of the United States within the revenue clauses, the uniformity requirement did not reach the case.",
+            sourceLessonSlug: "downes-v-bidwell",
+          },
+          {
+            prompt: "Which best describes the relationship between Downes and Balzac?",
+            options: ["Downes said not in full, Balzac said not even a jury", "Downes concerned criminal procedure and Balzac concerned duties on imported goods", "Balzac overruled Downes and substituted a narrower rule about revenue clauses", "Both were decided on the same day by the same divided Court in 1901"],
+            correctIndex: 0,
+            explanation: "The first held the Constitution does not apply in full and the second held that even trial by jury is not fundamental enough for these purposes.",
+            sourceLessonSlug: "balzac-and-the-jury",
+          },
+          {
+            prompt: "What did the 1899 academic articles say about constitutional limitations in acquired possessions?",
+            options: ["That they do not apply", "That they apply immediately but may be suspended for a term of years by Congress", "That they apply only to persons who were citizens before the acquisition occurred", "That they apply in full but are enforceable only in the courts of the possession"],
+            correctIndex: 0,
+            explanation: "One of the three wrote that possessions acquired by conquest or cession do not become a part of the United States and that constitutional limitations do not apply.",
+            sourceLessonSlug: "the-critics-by-name",
+          },
+          {
+            prompt: "According to the 1899 argument Justice Gorsuch quotes, to whom were such rules said to be applicable?",
+            options: ["Only a people whose evolution had been consonant with our own", "Only the inhabitants of territories contiguous to the continental United States", "Only persons who had been naturalised under an Act of the Congress", "Only residents of territories that had been organised by an organic act"],
+            correctIndex: 0,
+            explanation: "That phrasing is quoted directly in the concurrence, and it is why the criticism is specifically about race rather than about drafting.",
+            sourceLessonSlug: "the-critics-by-name",
+          },
+          {
+            prompt: "What does it mean that a decision is 'good law'?",
+            options: ["It has not been overruled and lower courts must apply it", "It was decided unanimously and therefore carries extra weight as precedent", "It has been codified by Congress into a statute of the United States", "It was correct when decided and remains morally defensible today"],
+            correctIndex: 0,
+            explanation: "Downes and Balzac are both good law in exactly this sense, which is why criticism from the bench has not yet changed any outcome.",
+            sourceLessonSlug: "balzac-and-the-jury",
+          },
+          {
+            prompt: "Why did the Court in Balzac refuse to infer that Congress had incorporated Puerto Rico?",
+            options: ["Because the 1917 Act declared no such purpose", "Because the island's own legislature had voted against incorporation in 1916", "Because the Treaty of Paris expressly reserved the question to the President", "Because incorporation may only occur when a territory is admitted as a state"],
+            correctIndex: 0,
+            explanation: "The Court treated incorporation as something Congress must say rather than something a court may find between the lines.",
+            sourceLessonSlug: "balzac-and-the-jury",
+          },
+          {
+            prompt: "What was the practical situation Balzac produced for two American citizens?",
+            options: ["Different courtroom rights depending on where the courtroom was", "Different tax obligations depending on where the citizen earned the income", "Different citizenship depending on whether a parent had been born on the mainland", "Different voting rights depending on whether the citizen was registered to a party"],
+            correctIndex: 0,
+            explanation: "The locality rule is exactly that: the place decides, and the status of the people who live in it does not.",
+            sourceLessonSlug: "balzac-and-the-jury",
+          },
+          {
+            prompt: "Which of these is NOT something Justice Gorsuch attributes to the Insular Cases?",
+            options: ["A basis in the original understanding of the Constitution", "Support in the academic work of the period around the Spanish-American War", "Reliance on ugly racial stereotypes about the inhabitants of the new possessions", "A debt to the theories of social Darwinists writing in the same decades"],
+            correctIndex: 0,
+            explanation: "He says exactly the opposite: that the cases have no home in our Constitution or its original understanding.",
+            sourceLessonSlug: "the-critics-by-name",
+          },
+          {
+            prompt: "What did Justice White call Puerto Rico, in the sense relevant to the revenue clauses?",
+            options: ["Foreign to the United States", "A state in all but name pending action by the Congress of the United States", "An organised territory entitled to the same treatment as the western territories", "A dependency of Spain until the treaty of cession had been fully executed"],
+            correctIndex: 0,
+            explanation: "He reached that conclusion because Congress had not, in his view, done enough to indicate an intention to incorporate the island.",
+            sourceLessonSlug: "downes-v-bidwell",
+          },
+          {
+            prompt: "Why is it misleading to call the Insular Cases a single decision?",
+            options: ["They are a line of decisions beginning in 1901", "They were all decided in the same term by the same nine justices of the Court", "They were consolidated into one appeal and decided in a single written opinion", "They were a set of advisory opinions requested by the Congress of the United States"],
+            correctIndex: 0,
+            explanation: "Downes, Dorr, Mankichi and Balzac are separate cases, and the doctrine took its final shape across them.",
+            sourceLessonSlug: "downes-v-bidwell",
+          },
+          {
+            prompt: "Which pair of words does the Downes holding turn on?",
+            options: ["Belonging to, and part of", "Organised and unorganised, as applied to a territory of the United States", "Foreign and domestic, as those words are used in the tariff schedules", "Citizen and national, as those words are used in the immigration statutes"],
+            correctIndex: 0,
+            explanation: "The island belongs to the United States and is not part of it, and an entire doctrine was built in the gap between the two phrases.",
+            sourceLessonSlug: "downes-v-bidwell",
+          },
+          {
+            prompt: "What did Justice Gorsuch say he hoped would happen to the Insular Cases?",
+            options: ["That the Court would squarely overrule them soon", "That Congress would codify them so that lower courts would apply them consistently", "That the Court would confine them to revenue cases and leave the rest undisturbed", "That the territories would be admitted as states so the question would be moot"],
+            correctIndex: 0,
+            explanation: "He joined the Court's opinion because no party asked for it in that case, while saying the day for overruling should come soon.",
+            sourceLessonSlug: "the-critics-by-name",
+          },
+          {
+            prompt: "How does the Fitisemanu opinion complicate the claim that criticism of the Insular Cases predicts how a case comes out?",
+            options: ["The panel criticised the cases and still ruled against the plaintiffs", "The panel praised the cases and still ruled in favour of the plaintiffs", "The panel refused to apply the cases and decided on statutory grounds instead", "The panel certified the question to the Supreme Court without deciding it"],
+            correctIndex: 0,
+            explanation: "Believing a doctrine is shameful and believing a court should be the one to undo it are two different positions.",
+            sourceLessonSlug: "the-critics-by-name",
+          },
+          {
+            prompt: "Which of these best captures the Insular Cases' effect on constitutional geography?",
+            options: ["Some American soil is inside the Constitution and some is not", "Every American possession is inside the Constitution once Congress taxes it", "The Constitution reaches every place the United States governs, at the same depth", "Constitutional rights follow the citizen wherever the citizen happens to travel"],
+            correctIndex: 0,
+            explanation: "That is the practical content of the incorporated and unincorporated distinction, and it is why the atoll and the island compare so badly.",
+            sourceLessonSlug: "downes-v-bidwell",
+          },
+          {
+            prompt: "What did Justice Gorsuch call the attempts to justify the Insular Cases as protective of local culture?",
+            options: ["Revisionist", "Persuasive, though not sufficient to save the cases from being overruled", "Consistent with the original understanding of the Territory Clause", "The position of the territorial governments that had appeared before the Court"],
+            correctIndex: 0,
+            explanation: "He described them in a footnote as a revisionist account and said the amicus briefs from territorial governments pointed the other way.",
+            sourceLessonSlug: "the-critics-by-name",
+          },
+          {
+            prompt: "Which of these is a fair statement about the Insular Cases and race?",
+            options: ["A sitting justice has written that they rest on racial stereotypes", "The opinions avoided any discussion of race and rested purely on revenue law", "The racial reasoning appeared only in the dissents and not in the controlling opinions", "The Court has formally repudiated the racial reasoning while keeping the result"],
+            correctIndex: 0,
+            explanation: "The language is in the opinions themselves, and Justice Gorsuch quoted it back at length in 2022.",
+            sourceLessonSlug: "the-critics-by-name",
+          },
+          {
+            prompt: "What kind of court was Fitisemanu decided in?",
+            options: ["A federal court of appeals", "The Supreme Court of the United States, on a writ of certiorari", "The Supreme Court of American Samoa, applying the territory's own constitution", "A federal district court in Utah, whose judgment became final without appeal"],
+            correctIndex: 0,
+            explanation: "It was the Tenth Circuit, sitting on appeal from a district court in Utah, and its opinion applied rather than overruled the Insular Cases.",
+            sourceLessonSlug: "the-critics-by-name",
+          },
+          {
+            prompt: "In Balzac, what did the Court say about the tradition behind the jury system?",
+            options: ["That centuries of tradition prepared a conception of the juror's attitude", "That the jury system was too expensive to administer in a small island territory", "That the jury system had been abolished in Puerto Rico by the Spanish authorities", "That the jury system would be introduced once the island's literacy rate improved"],
+            correctIndex: 0,
+            explanation: "The opinion used that tradition to reason that the guarantee was not fundamental for purposes of the doctrine.",
+            sourceLessonSlug: "balzac-and-the-jury",
+          },
+          {
+            prompt: "How many years separate Downes from Balzac?",
+            options: ["Twenty-one", "Five, the interval between the Foraker Act and the Jones Act of 1917", "Fifty, the interval between the Treaty of Paris and the Organic Act of Guam", "Three, the interval between Downes and the case that adopted incorporation"],
+            correctIndex: 0,
+            explanation: "1901 to 1922, and in between Congress made the people of the island citizens, which is what made the second case a real test.",
+            sourceLessonSlug: "balzac-and-the-jury",
+          },
+          {
+            prompt: "Which is the strongest evidence that the protective argument is not simply 'the territorial position'?",
+            options: ["Territorial governments filed briefs against the Insular Cases", "The Supreme Court has never received a brief from any territorial government", "The Tenth Circuit rejected the protective argument in its 2021 opinion", "Congress has legislated to abolish the incorporated and unincorporated distinction"],
+            correctIndex: 0,
+            explanation: "The Governor of Puerto Rico, the Virgin Islands and territorial advocacy groups expressed vehement disagreement with the cases, on the record.",
+            sourceLessonSlug: "the-critics-by-name",
+          },
+          {
+            prompt: "Which court decided Downes v. Bidwell?",
+            options: ["The Supreme Court of the United States", "The United States Court of Appeals for the First Circuit, sitting in Boston", "The United States Circuit Court for the Southern District of New York", "The Supreme Court of Puerto Rico, whose judgment was then affirmed on appeal"],
+            correctIndex: 0,
+            explanation: "It reached the Court from a suit against the New York customs collector, and the fractured opinions are all in the United States Reports.",
+            sourceLessonSlug: "downes-v-bidwell",
+          },
+          {
+            prompt: "What did the Foraker Act tax?",
+            options: ["Goods moving to and from Puerto Rico", "Property owned by residents of the island above a fixed assessed value", "Wages earned by federal employees stationed in the new possessions", "Vessels registered in Puerto Rico and calling at continental ports"],
+            correctIndex: 0,
+            explanation: "That is what made the case a revenue dispute and what put the uniformity requirement in issue.",
+            sourceLessonSlug: "downes-v-bidwell",
+          },
+          {
+            prompt: "What did Balzac argue supplied him a jury when local law did not?",
+            options: ["The Sixth Amendment", "The Jones Act of 1917, which he read as guaranteeing criminal procedure", "The Foraker Act, which had established the island's court system in 1900", "The Treaty of Paris, under which Spain had preserved existing legal rights"],
+            correctIndex: 0,
+            explanation: "He had become a citizen by then, and the Court's answer was that the citizenship did not carry the guarantee to the island.",
+            sourceLessonSlug: "balzac-and-the-jury",
+          },
+          {
+            prompt: "Why does this course say the Insular Cases produced a 'strange' doctrine?",
+            options: ["It was built from opinions that did not agree with each other", "It was written by Congress and never reviewed by any federal court", "It applied to only one territory and was never extended to any other", "It was adopted unanimously and then repudiated within a single decade"],
+            correctIndex: 0,
+            explanation: "Two leading opinions in a fractured case reached one result by different roads, and the theory that survived was not the one that decided the case.",
+            sourceLessonSlug: "downes-v-bidwell",
           },
         ],
       },
