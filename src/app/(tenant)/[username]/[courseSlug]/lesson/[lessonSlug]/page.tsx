@@ -18,6 +18,13 @@ import { getSubmission } from "@/db/queries/assignments";
 import { buildCrossroads } from "@/lib/crossroads";
 import { entitiesInLesson } from "@/lib/entities";
 import { listCourses } from "@/db/queries/catalog";
+import { listApprovedCrossLinkTargets } from "@/db/queries/cross-links";
+import { listCourseLocations } from "@/db/queries/lesson-locations";
+import {
+  buildCrossLinkTargets,
+  relatedCourseLinks,
+  type RelatedCourseLink,
+} from "@/lib/cross-links";
 import { hasAgeConsentCookie } from "@/lib/age-gate";
 import { AgeGate } from "@/components/age-gate";
 import { MetricsTrackerCta } from "@/components/metrics-tracker-cta";
@@ -138,6 +145,36 @@ export default async function LessonPage({ params }: Params) {
   // "Also discussed in" (plans/45 Part 3): entities this lesson names that ALSO appear in other
   // courses. Tenant-scoped, and only when the tenant has at least two courses covering the entity, so
   // the connection is real for this school. Only runs when the body actually names an entity.
+  // Approved cross-course links (/admin/cross-links). The owner approved this exact mention, in this
+  // lesson, pointing at that course; nothing renders from a candidate nobody decided on, and the
+  // lesson's own prose is never touched, which is the point of the links being data.
+  //
+  // TWO scoped reads, and only when there is at least one approval. The first is keyed on
+  // (tenant, course slug, lesson slug) and cannot see another school's decisions; the second resolves
+  // the target inside THIS tenant, so an approved link to a course this school does not host, holds
+  // unpublished, or holds twice under two instructors renders NOTHING. Show nothing rather than a
+  // 404: the learner never knew a candidate existed, so there is nothing to explain to them.
+  //
+  // Both slugs come from the RESOLVED rows, never from the URL segments: the segments are what the
+  // visitor typed, and an approval is recorded against the course and lesson the app actually found.
+  // Either being null (both columns are nullable) means there is nothing to key on, so nothing runs.
+  let relatedCourses: RelatedCourseLink[] = [];
+  const crossLinkSource =
+    view.course.slug && lesson.slug ? { course: view.course.slug, lesson: lesson.slug } : null;
+  if (access.open && crossLinkSource) {
+    const approvedTargets = await listApprovedCrossLinkTargets(
+      view.tenant.id,
+      crossLinkSource.course,
+      crossLinkSource.lesson,
+    );
+    if (approvedTargets.length > 0) {
+      relatedCourses = relatedCourseLinks(
+        approvedTargets,
+        buildCrossLinkTargets(await listCourseLocations(view.tenant.id, approvedTargets)),
+      );
+    }
+  }
+
   const namedEntities = access.open ? entitiesInLesson(lesson.textContent) : [];
   let alsoDiscussed: { slug: string; name: string }[] = [];
   if (namedEntities.length > 0) {
@@ -356,6 +393,38 @@ export default async function LessonPage({ params }: Params) {
               </Link>
             ))}
           </div>
+        </section>
+      ) : null}
+
+      {/* Approved cross-course links. Modest on purpose: a short list under the lesson, not a
+          rewrite of its prose. The mention stays exactly as the author wrote it and the link sits
+          beside it as data, which is what makes it reviewable at /admin/cross-links in the first
+          place. An empty list renders nothing at all, including the heading. */}
+      {relatedCourses.length > 0 ? (
+        <section className="mt-8" aria-labelledby="related-courses-heading">
+          <h2
+            id="related-courses-heading"
+            className="mb-2 text-sm font-semibold tracking-wide text-neutral-600 uppercase"
+          >
+            Related courses
+          </h2>
+          <p className="text-sm text-neutral-600 dark:text-neutral-400">
+            This lesson mentions {relatedCourses.length === 1 ? "another course" : "other courses"} on
+            this site.
+          </p>
+          <ul className="mt-2 space-y-1">
+            {relatedCourses.map((r) => (
+              <li key={r.courseSlug}>
+                <Link
+                  href={r.href}
+                  className="inline-flex min-h-11 items-center text-sm underline hover:no-underline focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-12"
+                  style={{ color: "var(--accent)" }}
+                >
+                  {r.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </section>
       ) : null}
 
