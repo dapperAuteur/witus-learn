@@ -5,6 +5,27 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- 🔧 **Cross-course links, approved before a learner sees them**
+  (\`feat/cross-link-approvals\`, **migration 0060**, run \`pnpm db:migrate:prod\`). \`pnpm cross-links\`
+  finds where one course talks about another and does not link to it; whether two courses SHOULD link
+  is a judgment call, so the finding is now a candidate on a new owner board, **/admin/cross-links**,
+  and nothing renders to a learner until BAM approves that exact mention. Approved links appear as a
+  short **Related courses** list under the lesson; **the lesson body is never edited**, which is what
+  makes a link revocable, per-school, and reviewable at all.
+  **A rejected candidate is not an unreviewed one.** Two tables, following \`ebook_approvals\`:
+  \`cross_link_approvals\` holds a row ONLY when approved, so absence is the default and the default is
+  that nothing renders, and a rejection is its own row in \`cross_link_dismissals\`. The asymmetry is
+  the argument: forgetting the dismissals table shows a decided candidate in the queue again (visible,
+  safe), while forgetting a \`decision = 'approved'\` filter would publish a rejected link (invisible).
+  A decision flips rather than stacking, and undoing deletes both rows.
+  **Each card quotes the sentence the mention sits in**, checked against the live lesson on every
+  render, because a decision made blind closes the item and nobody looks again.
+  **Candidates come from the DATABASE** via \`pnpm gen:cross-links\` into a committed registry, the same
+  choice \`pnpm gen:citations\` made: a source-file reader silently misses about a third of the library,
+  which is survivable in a report and not in a review queue. **The registry ships empty until that
+  command is run**, and the board says so. Isolation: a decision is per tenant, and every approved
+  target is re-resolved through the scoped course lookup, so a course this school does not host,
+  holds unpublished, or holds twice at one slug renders nothing at all.
 - ✅ **Self-nominated course interest, and vetting by volunteers**
   (\`feat/course-interest-and-vetting\`, **migration 0059**, run \`pnpm db:migrate:prod\`). Invite-to-audit
   had one direction: the owner invites someone they trust. This is the other one. On an unvetted

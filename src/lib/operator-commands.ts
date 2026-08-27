@@ -66,6 +66,8 @@ export const OPERATOR_COMMANDS: CommandGroup[] = [
       { cmd: "pnpm reveal:convert <course…>", desc: "Convert a course's \"Check yourself\" prompts to :::reveal, reusing each lesson's answer from the next lesson's matching recall cards. Dry-run by default; add --write. Prompts with no clear recall match are left for manual authoring. Reseed after (pnpm seed:courses).", impact: "read" },
       { cmd: "pnpm srt:transcript", desc: "Convert an .srt caption file into a lesson's synced transcript_content.", impact: "read" },
       { cmd: "pnpm course:script", desc: "Export a course to a flat teleprompter script (for recording).", impact: "read" },
+      { cmd: "pnpm cross-links", desc: "Report where one course talks about another and does not link to it, read from the committed course files. A REPORT, not a gate. Flags: --course <slug> · --json.", impact: "read" },
+      { cmd: "pnpm gen:cross-links", desc: "Rebuild the committed cross-link candidate registry (src/lib/cross-link-content/*) from the lessons in the DATABASE, then commit the result. This is what fills the approval queue at /admin/cross-links; nothing renders to a learner until you approve a candidate there. Flags: --dry-run · --course <slug>.", impact: "read" },
       { cmd: "pnpm gen:future-work", desc: "Regenerate the committed Future classes & features content (src/lib/future-work-content/*) from the local plans/future-courses/ notes. Run after editing those notes, then commit the result, /admin/future never reads plans/ at runtime.", impact: "read" },
     ],
   },

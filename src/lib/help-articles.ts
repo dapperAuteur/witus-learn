@@ -546,6 +546,32 @@ server received it.`,
 - **Link usage**, the course page shows how often outbound links get clicked (counts only).`,
   },
   {
+    slug: "cross-course-links",
+    title: "When your lesson names another course",
+    category: "Growth",
+    keywords: ["cross link", "related courses", "mention", "link", "another course", "approval"],
+    body: `# When your lesson names another course
+
+Write about another course by name and **nothing links automatically**. A tool finds the mention and
+puts it in the school owner's review queue (\`/admin/cross-links\`); once they approve it, a short
+**Related courses** list appears under that lesson, pointing at the other course.
+
+## Why it works that way
+
+Whether two courses should link is a judgment call. "The Match" is a course title and also an
+ordinary English phrase, so an automatic link would sometimes send a learner somewhere the lesson
+never meant. The reviewer sees the sentence your mention sits in and decides from that.
+
+## What it means for you
+
+- **Your lesson text is never edited.** The link is data attached to the lesson, so it can be added
+  or withdrawn without touching a word you wrote.
+- **Want the link now?** Just write it yourself as an ordinary markdown link. A mention that already
+  links is not offered as a candidate.
+- **A link only shows if this school hosts the other course**, published, with an instructor profile.
+  If it does not, nothing renders. Learners never see a dead end.`,
+  },
+  {
     slug: "marketing-tools",
     title: "Marketing: promo codes, announcements, and demand",
     category: "Growth",
