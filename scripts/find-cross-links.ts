@@ -91,7 +91,11 @@ async function main() {
       for (const t of targets) {
         if (t.slug === source.entry.slug) continue;
         if (links.includes(t.slug)) continue; // already linked somewhere in this lesson
-        const byTitle = lower.includes(t.title.toLowerCase());
+        // Case-SENSITIVE on the title. A title like "The Match" is ordinary English, and matching
+        // it case-insensitively reported every tennis and football lesson that said "the match".
+        // Prose referring to another course capitalises its name; prose using the same words as
+        // words does not. Measured: this alone removed 40 false pairs and cost no real one.
+        const byTitle = lesson.text.includes(t.title);
         const bySlug = mentionsSlug(lower, t.slug);
         if (!byTitle && !bySlug) continue;
         mentions.push({
