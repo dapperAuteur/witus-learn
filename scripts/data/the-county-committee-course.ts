@@ -30,6 +30,35 @@ import type { AuthoredCourse } from "./authored-course";
 //   · CRS R40179, "Farm Service Agency Committees: In Brief", updated 29 January 2021 (Canada),
 //     read in full: the 1935 authority, the 1994 merger, the 2002 and 2008 socially-disadvantaged
 //     provisions, the 3-to-11 membership, and the modern committee's published duty list.
+//   · P.L. 117-2 sec. 1005, P.L. 117-169 secs. 22007 and 22008, and P.L. 115-334 secs. 5104 and
+//     12615, read as enrolled on govinfo.gov, plus 7 U.S.C. 2279(a) and the NOFA at 86 Fed. Reg.
+//     28329 in which USDA, not Congress, named the five racial and ethnic groups.
+//   · The filed orders themselves in Wynn (M.D. Fla., 23 June 2021) and Miller (N.D. Tex., 1 July
+//     2021) from the RECAP archive, and Holman v. Vilsack, 117 F.4th 906 (6th Cir. 2024), which
+//     recites the chronology authoritatively.
+//   · The Uniform Partition of Heirs Property Act as approved in 2010, sections 2, 4, 6 to 10.
+//
+// THE CENSUS SECTION IS THE PART THAT DID NOT EXIST BEFORE. Two scanned 1920 volumes and one 1930
+// volume were rendered and read page by page, because they carry no text layer:
+//   · Fourteenth Census, Volume V, ch. V, Table 4 and Table 5, p. 298: 925,708 Negro farm operators
+//     (owners 218,612, managers 2,026, tenants 705,070, which sum exactly) on 41,432,182 acres.
+//     Both repeat at Tables 16 and 17, pp. 311 and 313, so each figure has two printings.
+//   · Volume V, ch. IV, Table 1, p. 189: the colored tenure/acreage table, and the ONLY place
+//     acreage is crossed with tenure. Colored means Negro plus Indian plus Japanese plus Chinese:
+//     949,889 operators on 44,944,521 acres. Negroes were 97.5% of colored operators but 92.2% of
+//     colored acreage, so a Negro operator count and a colored acreage figure never belong together.
+//   · Volume V, Appendix A, p. 911, the enumerator's General Farm Schedule: ACRES OWNED WAS NEVER
+//     ASKED. Tenure is four yes/no questions and acreage is captured once, split only by land USE.
+//     The only other use of "owned" on the schedule asks for DOLLARS of debt. So the widely quoted
+//     "14 to 16 million acres owned" is the COLORED bracket (14,005,208 "Owning entire farm" to
+//     16,704,192 for all colored owner-operated land), and its top end overstates ownership by an
+//     unknown share of the part owners' 2,698,984 acres.
+//   · Hall, "The Negro Farmer in the United States" (1933, a THIRTIETH-census publication, not a
+//     1920 monograph, which does not exist), Table 26, p. 40: 1920 Negro owners 13,948,512 acres,
+//     tenants 27,077,582, managers 406,088, summing exactly to 41,432,182. That is a CEILING, and
+//     the slippage is visible in Hall himself: his section heading reads "Loss of owned land" while
+//     his sentences beneath read "the land operated by owners".
+//   · Cornell's agcensus archive is RETIRED (404, redirects to USDA NASS). Do not cite it.
 //
 // THE HARD GATES FROM THE BRIEF, AND HOW THIS FILE HONOURS THEM. They are recorded here so a later
 // editor cannot soften one without seeing that it was a decision.
@@ -56,7 +85,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const THE_COUNTY_COMMITTEE_COURSE: AuthoredCourse = {
   title: "The County Committee",
   description:
-    "PLACEHOLDER",
+    "Federal farm programmes are national money handed out by three people who live down the road. This course teaches the mechanism from the statutes up, and it starts before any of it is about race, with a calendar. A farmer spends in spring and is paid in autumn, so a loan that arrives late is a loan that was denied, and every mechanism that follows is one that can spend time. Then the eligibility test, which changes what a refusal means: to borrow from the United States Department of Agriculture an applicant must be unable to obtain sufficient credit elsewhere at reasonable rates and terms in their own community. The federal farm lender is by statute the lender of last resort, so there is no next lender, and a denial ends the search instead of redirecting it. Two committee systems then sat in every county with almost the same name, and telling them apart is where careful people go wrong: the conservation and price-support committees created by the 1935 Act were elected by producers, and the Farmers Home Administration credit committees were not. A federal civil rights commission described the second kind in 1982 in one paragraph this course reads as a machine: three individuals residing in the county, at least two of them farmers, determining both eligibility and the limits of credit, nominated by the county supervisor and appointed by the state director. The same report counted who sat on those committees, printed a disclaimer that numbers alone do not prove discrimination, and contradicted itself about Tennessee in a way this course shows you rather than resolves. Section three settles a question its sibling course refused to answer, by opening the 1920 census: 925,708 Black farm operators on 41,432,182 acres, three quarters of them tenants, and acres owned never collected at all, because the enumerator's schedule never asked. Then title, where a family can lose land with nobody refusing it anything, because any one co-tenant can force the sale of everything. Then Pigford, taught as a designed settlement in which a standard of proof was traded against a payment, with the numbers, their dates, and an arithmetic check anyone can run. And finally what came after: an audit that found control weaknesses rather than fraud, a fraud allegation stated only because its source, venue, evidence and rebuttals can all be named, and a race-conscious remedy that was enjoined and rewritten so that eligibility turned on an experience rather than an identity. The course ends with a ledger of what it refused to print and three questions you can run on any programme in the country.",
   lessons: [
     // ══════════════════════════════════════════════════════════════════════
     // SECTION 1 — The lender of last resort
@@ -2939,6 +2968,41 @@ Uniform Law Commission. (n.d.). *Partition of Heirs Property Act*. https://www.u
             explanation: "The partition mechanism runs on general property law, and the credit gate and the title problem feed each other without any decision about the family being made.",
             sourceLessonSlug: "the-partition-sale",
           },
+          {
+            prompt: "In which month and year did the Uniform Law Commission approve the act?",
+            options: ["July 2010", "October 2010, when the printed text carries its publication date", "December 2018, when Congress first referred to it in a farm bill", "March 2011, when the first state legislature enacted it"],
+            correctIndex: 0,
+            explanation: "It was approved and recommended for enactment in all the states at the Commission's annual meeting in Chicago in July 2010.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "What must a court do with the appraised value even when nobody objects to it?",
+            options: ["Hold a valuation hearing", "Order a second appraisal by a different licensed appraiser", "Enter the value as a final judgment without further proceedings", "Refer the valuation to the co-tenants for a majority vote"],
+            correctIndex: 0,
+            explanation: "The act directs the court to hold the hearing regardless, which prevents an unopposed low valuation from standing unexamined.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "Which of the act's provisions most directly answers the unlocatable co-tenant problem?",
+            options: ["The sign posted on the property", "The forty-five day window for electing to buy out an interest", "The pro rata allocation among multiple electing co-tenants", "The requirement of a commercially reasonable open-market sale"],
+            correctIndex: 0,
+            explanation: "The person actually working the land sees a sign in the field, which a legal advertisement in a county newspaper does not reach.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "Why is a fragmented co-tenancy fragile under traditional partition law?",
+            options: ["Any co-tenant can reach the whole parcel", "Because a co-tenancy expires automatically after three generations", "Because unrecorded interests are void against a purchaser for value", "Because the county may sell the parcel for unpaid taxes without notice"],
+            correctIndex: 0,
+            explanation: "The right to force partition belongs to every co-tenant regardless of share size, and it reaches the entire parcel rather than the petitioner's fraction.",
+            sourceLessonSlug: "the-partition-sale",
+          },
+          {
+            prompt: "What does the section 12615 list allow in place of a recorded deed?",
+            options: ["Documents showing control rather than title", "An affidavit of adverse possession filed with the county", "A federal court judgment quieting title in the operator", "A survey identifying the operator's exclusive acreage"],
+            correctIndex: 0,
+            explanation: "Tax returns, an unrecorded tenancy-in-common agreement and self-certification of control are all acceptable, which is why the list reads as a diagnosis.",
+            sourceLessonSlug: "land-that-passes-without-a-will",
+          },
         ],
       },
     },
@@ -3783,6 +3847,1084 @@ Inflation Reduction Act of 2022, Pub. L. No. 117-169, 136 Stat. 1818. https://ww
 U.S. Department of Agriculture. (2024, July 31). *Biden-Harris administration issues financial assistance to more than 43,000 farmers, ranchers, and forest landowners* [Press release]. Internet Archive. https://web.archive.org/web/20250113144152/https://www.usda.gov/about-usda/news/press-releases/2024/07/31/biden-harris-administration-issues-financial-assistance-more-43000-farmers-ranchers-and-forest
 
 *Wynn v. Vilsack*, 545 F. Supp. 3d 1271 (M.D. Fla. 2021). https://storage.courtlistener.com/recap/gov.uscourts.flmd.390177/gov.uscourts.flmd.390177.41.0.pdf`,
+    },
+    {
+      slug: "what-this-course-refused",
+      title: "23 · What this course refused, and where to take it next",
+      section: "Section 6 · What came after",
+      body: `A course that only tells you what it found is showing you half its work. Here is the other half, and then where to go.
+
+**1. Any bare acreage figure for Black-owned farmland in 1920.** Lesson 9 explains why: the census never asked. The 14 to 16 million acre bracket is a **colored** figure, its top end overstates ownership by an unknown amount, and it is usually printed beside a **Negro** operator count. The 13,948,512 acre figure is a ceiling on land operated by owners. **This course prints those with their units and their limits attached, and prints no single number as the answer**, because there is no single number and saying so is the finding.
+
+**2. A current count of states that have adopted the Uniform Partition of Heirs Property Act.** The Uniform Law Commission publishes it inside an interactive dashboard this course could not read, and the secondary counts disagree with one another and count different things. A stale number presented as current would be exactly the error this catalog exists to avoid. Lesson 15 tells you where to look and to record the date you looked.
+
+**3. Any dollar figure for section 1005 debt relief actually disbursed.** Nothing moved between the first restraining order and the repeal, and no official document reporting a disbursed amount was found. **Found, not proven absent.**
+
+**4. An itemisation of the roughly two hundred million dollar gap** between the $2.2 billion appropriated for the discrimination assistance programme and the about $2 billion USDA reported paying out. The statute permits the cost of delivering the assistance to be paid from the same appropriation, and there the trail ends. The course states both figures and the statutory reason they can differ, and invents no breakdown.
+
+**5. Any claim that a government audit substantiated fraud in the Pigford settlements.** Lesson 21 sets out what was searched and what was found, and says plainly that "not found" is not the same sentence as "does not exist".
+
+**6. The 93.3 per cent figure for Tennessee's committee losses**, except as a stated contradiction. The published table's arithmetic supports 83.3, the Findings section still prints 93.3, and there are two printings. **Refusing to pick silently is the point.**
+
+**7. Any inference from the 1979 to 1980 committee composition data about anybody's intent.** The Commission declined that inference in writing and this course honours the refusal, including where it would be convenient not to.
+
+**8. A characterisation of what any court would have held about section 1005.** It was repealed rather than litigated to judgment. Four preliminary rulings are not a merits holding, and this course does not turn them into one.
+
+**And two things this course computed rather than inherited.** The five lines of the Pigford Track A table sum exactly to the total CRS prints, which anyone can check. The residual against the overall total implies roughly $412,000 per prevailing Track B claimant, and Lesson 19 labels that an inference from two published figures rather than a reported number.
+
+**Why the ledger exists.** Every item above is something a confident sentence could have covered, and every confident sentence would have made this course feel more complete and be less true. **The refusals are not the footnotes of the argument. They are the reason to believe the rest of it.**
+
+## Where to take this next, inside this catalog
+
+- **The Match (WARRANT-01)** is this course's sibling and the place to go next, or first. It teaches the same move as a funding formula: Congress endows a system of colleges, a class is excluded from them, a separate and smaller system is built, and that system is then made conditional on a state match the law lets the state be excused from. **Read the two together and the shape is unmistakable.** WARRANT-01 also carries a ledger of what it refused, and the first two items on it are the 1920 acreage and operator figures. **Section 3 of this course is the answer to WARRANT-01's first refusal, arrived at the way the ledger said it would have to be: by opening the volume.**
+- **Cooperatives.** The Rural Electrification Act of 1936 and the loans that let farmers build the electric systems private utilities would not build. Same countryside, same decades, a different design: nobody was obliged, so the members did it themselves. **Run this course's three questions on it and the answers come out differently, which is the point of running them.**
+- **The Great Migration** and **The Great Migration and the World.** Those courses own the leaving. This one owns the ledger the leaving was calculated against, and Lesson 9's finding that three quarters of Black farm operators in 1920 were tenants is the arithmetic behind a decision millions of people made.
+- **Genealogy for Yourself and Your Community** and **Tracing a Person Through Records.** Deeds, probate files and the county recorder are the instruments Section 4 is about. If your family holds land in common, those courses teach the records that will tell you who else is on the title.
+- **Financing Without Access** and **What They Built.** Capital formation when institutions will not lend. This course is the mirror case, where the lender is the federal government and the answer is still no.
+- **Your own state's civics course.** Intestate succession and partition are state law. The uniform act is adopted state by state. **Section 4 has a different ending in every state, and yours is knowable.**
+
+## The three questions, portable
+
+WARRANT-01 ends with three questions about a funding formula. Here are this course's three, about a delivered benefit, and they work on almost any programme:
+
+1. **Who decides, and how did they get there?** Elected, appointed, or hired. Three people in a county, or a national formula.
+2. **What is the applicant's alternative if the answer is no?** If the eligibility rule already established there is none, the decision is final in a way an ordinary refusal is not.
+3. **What record survives the decision?** If the answer is nothing, the programme cannot be audited, defended, or corrected, and nobody will ever be able to settle an argument about it.
+
+**A programme with good answers to all three is one you can trust. A programme whose answer to the third is nothing is one nobody can evaluate, in either direction.** That is the transferable thing here, and it costs nothing to ask.
+
+:::reveal Why does this course print no single figure for Black-owned farmland in 1920? ||| Because the census never collected acres owned, so what exists is a colored bracket and an owner-operated ceiling, each with its own unit and limit.
+
+:::reveal What is the difference between "not found" and "does not exist" in Lesson 21's conclusion? ||| The first reports the result of a bounded search and leaves the question open; the second is an assertion the evidence does not support.
+
+:::reveal State this course's three portable questions. ||| Who decides and how did they get there, what is the applicant's alternative if the answer is no, and what record survives the decision.
+
+## Vocabulary
+- **Ledger of refusals**: the explicit list of claims a course tested and declined to print, which is what makes the printed claims checkable rather than merely confident.
+- **Bounded search**: an investigation whose scope is stated, so that finding nothing reports a result rather than proving a negative.
+- **Merits holding**: a court's final ruling on whether a law is valid, as distinct from a preliminary order preserving the position while a case proceeds.
+- **Portable question**: a test that can be run on a programme the asker has never studied, because it asks about structure rather than about content.
+
+## Sources
+Cowan, T., & Feder, J. (2013, May 29). *The Pigford cases: USDA settlement of discrimination suits by Black farmers* (CRS Report No. RS20430). Congressional Research Service. https://www.everycrsreport.com/reports/RS20430.html
+
+U.S. Bureau of the Census. (1922). *Fourteenth census of the United States taken in the year 1920, Volume V: Agriculture, general report and analytical tables* (Chapter V, Farm statistics by race, nativity, and sex of farmer). U.S. Government Printing Office. https://www2.census.gov/library/publications/decennial/1920/volume-5/06229676v5ch04.pdf
+
+U.S. Commission on Civil Rights. (1982, February). *The decline of Black farming in America*. U.S. Government Printing Office. https://www.usccr.gov/files/historical/1982/82-018.pdf`,
+    },
+    {
+      slug: "quiz-what-came-after",
+      title: "24 · Knowledge check: what came after",
+      section: "Section 6 · What came after",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "Which criticism of the Pigford settlement came from within the class?",
+            options: ["That the structure short-changed larger losses", "That the standard of proof was too low to keep out invalid claims", "That the court appointed a monitor rather than leaving oversight to the agency", "That the settlement was funded by appropriation rather than from agency accounts"],
+            correctIndex: 0,
+            explanation: "CRS records objections to the settlement's structure, to the number of late filers who never got a determination, and to reported deficiencies in class counsel's representation.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "Which report number identifies the December 2012 audit of the Pigford II claims process?",
+            options: ["GAO-13-69R", "GAO-06-469R, which concerns the role of the court-appointed monitor", "RS20430, which is the standing CRS summary of both settlements", "R40179, which describes the composition of Farm Service Agency committees"],
+            correctIndex: 0,
+            explanation: "GAO-13-69R was published on 7 December 2012 under a mandate in section 201 of the Claims Resolution Act of 2010.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "What is the exact subject of GAO-06-469R?",
+            options: ["The role of the court-appointed monitor", "Internal controls in the second settlement's claims process", "The Department of Agriculture's civil rights complaint backlog", "The composition of Farmers Home Administration county committees"],
+            correctIndex: 0,
+            explanation: "It is a 2006 report about the Pigford I monitor's outreach and reexaminations, and GAO-13-69R cites it in its own footnotes.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "What did GAO-13-69R say the internal control design provides?",
+            options: ["Reasonable assurance, with certain weaknesses", "Conclusive protection against every category of invalid claim", "No meaningful protection, since claims were adjudicated on the claimant's word", "A guarantee that no improper determination had been made to date"],
+            correctIndex: 0,
+            explanation: "The finding is that the design generally provides reasonable assurance while certain weaknesses could expose the process to risk of improper determinations.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "What does the phrase could expose the process to risk actually assert?",
+            options: ["That a gap exists through which an error might pass", "That errors did in fact pass through the identified gaps", "That the claims process was suspended pending remediation", "That the auditors found a specific number of improper payments"],
+            correctIndex: 0,
+            explanation: "It is a statement about a control system rather than about any particular decision, which is what an internal-controls audit is for.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "What did GAO explicitly say its review did not include?",
+            options: ["An examination of fraud perpetrated on claimants", "Any review of the claims administrator's control design", "Any testing of individual claims submitted to the process", "Any assessment of whether the settlement's terms were lawful"],
+            correctIndex: 0,
+            explanation: "A footnote in enclosure I states the review did not examine fraud perpetrated on claimants, and reports the Ombudsman's finding about the complaints his office received.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "What did the court-appointed Ombudsman report about the fraud complaints received?",
+            options: ["All concerned fraud perpetrated on claimants", "All concerned fraud perpetrated by claimants against the government", "None had been received during the period of the audit", "They were evenly divided between the two directions"],
+            correctIndex: 0,
+            explanation: "GAO records the Ombudsman as saying every complaint his office received pertained to fraud perpetrated on, not by, claimants.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "How many claims did GAO test, and what did it find?",
+            options: ["150 claims, with no exceptions", "3,180 claims, of which about half showed irregularities", "37,275 claims, which is the whole population submitted at that point", "None, since the audit examined only the design of the controls"],
+            correctIndex: 0,
+            explanation: "GAO drew a random sample of 150 from the 37,275 submitted as of 4 June 2012 and found no exceptions.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "What confidence statement did GAO attach to its sample result?",
+            options: ["95 per cent confidence that the error rate was at or below 2 per cent", "99 per cent confidence that no fraudulent claim had been paid", "90 per cent confidence that the error rate exceeded 10 per cent", "No confidence statement, since the sample was chosen judgmentally"],
+            correctIndex: 0,
+            explanation: "Because the sample was random, GAO could express its result as a confidence interval on the actual error rate.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "What does the figure of about 3,180 claims represent?",
+            options: ["Claims flagged for potential fraud concerns", "Claims adjudicated as fraudulent by the claims administrator", "Claims referred to the Department of Justice for prosecution", "Claims denied because the claimant missed the filing deadline"],
+            correctIndex: 0,
+            explanation: "They were identified by reviewers and referred to the parties, and GAO's own note says some perceived patterns may not be fraudulent at all.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "What innocent explanation does GAO's footnote give for similarities across claims?",
+            options: ["One person helping several claimants fill in forms", "A single family operating several farms under different names", "A software error duplicating entries in the claims database", "Claimants copying language from a published sample claim form"],
+            correctIndex: 0,
+            explanation: "GAO records that similarities may be attributable to a single individual assisting several claimants in completing their claim forms.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "Under what authority was GAO-13-69R produced?",
+            options: ["A mandate in the Claims Resolution Act of 2010", "A request from the plaintiffs' counsel in the consolidated litigation", "A referral from the Department of Agriculture's Inspector General", "The Comptroller General's own initiative, with no external request"],
+            correctIndex: 0,
+            explanation: "The report is addressed to congressional committees as a mandated report under section 201 of that Act.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "Which member of Congress held the special order titled Pigford Farms and Discrimination?",
+            options: ["Rep. Steve King of Iowa", "Rep. Michele Bachmann of Minnesota, who spoke within the same special order", "Rep. John Boyd of Virginia, who founded the National Black Farmers Association", "Sen. Tom Vilsack of Iowa, before his appointment as Secretary of Agriculture"],
+            correctIndex: 0,
+            explanation: "The special order was held on 29 November 2010 and is printed at 156 Cong. Rec. H7635 to H7641.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "On what date was that special order held?",
+            options: ["29 November 2010", "8 December 2010, when the appropriating statute was signed into law", "25 April 2013, when the newspaper investigation was published", "7 December 2012, when the audit of the claims process appeared"],
+            correctIndex: 0,
+            explanation: "The Congressional Record prints it at volume 156, number 153, for 29 November 2010.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "Where was the 75 per cent fraud figure said to come from?",
+            options: ["An unnamed source who believed it", "An audit conducted by the Department of Agriculture's Inspector General", "A statistical sample drawn by the Government Accountability Office", "The claims administrator's own report to the district court"],
+            correctIndex: 0,
+            explanation: "The figure rested on one unnamed individual's belief, extrapolated by the speaker, and no document was ever produced for it.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "Which speaker said the numbers just bespeak obvious fraud in this situation?",
+            options: ["Rep. Michele Bachmann", "Rep. Steve King, who held the special order in which the remark was made", "The Secretary of Agriculture, in a radio interview the following month", "The author of the 2013 newspaper investigation, quoting a source"],
+            correctIndex: 0,
+            explanation: "Bachmann spoke within King's special order, and the passage most often attributed to King is hers.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "Why does the lesson insist on separating the two speakers?",
+            options: ["The most-quoted passage is misattributed", "Because only one of them was a member of the Agriculture Committee", "Because the Congressional Record does not identify who was speaking", "Because one spoke on the floor and the other in a committee hearing"],
+            correctIndex: 0,
+            explanation: "A quotation attributed to the wrong member is an error of the same kind the rest of the course is about.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "Who wrote the April 2013 New York Times investigation?",
+            options: ["Sharon LaFraniere", "J. Michael Kelly, the retired associate general counsel quoted in it", "Susan A. Schneider, who published a response to it the following month", "Tadlock Cowan, one of the authors of the standing CRS report"],
+            correctIndex: 0,
+            explanation: "The article carried her sole byline, with contributors credited for reporting and research.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "What was the article's published headline?",
+            options: ["Farm Loan Bias Claims, Often Unsupported, Cost U.S. Millions", "Numbers Alone Do Not Prove Discrimination at the Department of Agriculture", "The County Committee: How Three People Decided a Farmer's Year", "Land-Grab Universities: Expropriated Indigenous Land and the Land-Grant System"],
+            correctIndex: 0,
+            explanation: "That is the headline on the page, and the print edition carried an alternate reading Federal Spigot Flows as Farmers Claim Bias.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "Which named source spoke on the record in that investigation?",
+            options: ["J. Michael Kelly", "Tony West, then Acting Associate Attorney General", "John W. Boyd Jr. of the National Black Farmers Association", "Randi Roth, the court-appointed monitor in the first settlement"],
+            correctIndex: 0,
+            explanation: "Kelly, who retired as USDA's associate general counsel, is quoted by name; the other officials in the piece are unnamed.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "What are the three kinds of evidence the fraud allegation rested on?",
+            options: ["Unnamed sources, a counting inference, and internal documents", "Court findings, agency admissions, and sworn testimony", "Statistical sampling, forensic accounting, and criminal indictments", "Inspector General audits, prosecutions, and settlement disclosures"],
+            correctIndex: 0,
+            explanation: "The 75 per cent figure rested on unnamed sources, the claim-count argument on an inference, and the newspaper on documents plus mostly unnamed interviews.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "What was the arithmetic inference at the centre of the allegation?",
+            options: ["Roughly 94,000 claims against 18,000 to 33,000 counted Black farm operators", "A payout of $1.06 billion against an appropriation of only $100 million", "A denial rate of 31 per cent against an expected rate of 5 per cent", "A settlement of $1.25 billion against 22,721 eligible claimants"],
+            correctIndex: 0,
+            explanation: "The argument was that there were far more claimants than the census ever counted Black farm operators.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "Which source rebutted the counting argument before the newspaper article appeared?",
+            options: ["The Congressional Research Service", "The Government Accountability Office, in its December 2012 audit", "The Department of Agriculture's Office of Inspector General", "The court-appointed monitor, in her final report of April 2012"],
+            correctIndex: 0,
+            explanation: "CRS RS20430 explains the changing census definitions, the reach of the class, and that claims filed are not awards made.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "Which three points does the CRS rebuttal make?",
+            options: ["Definitions changed, the class reached non-farmers, filings are not awards", "The audit found no fraud, the monitor agreed, and the court approved the settlement", "The class was certified twice, the deadline moved, and the class was redefined", "The payments were capped, the arbitrator was neutral, and the reviews were multiple"],
+            correctIndex: 0,
+            explanation: "Census definitions of farm, farm operator and farm owner changed; the class reached people who attempted to farm; and nearly a third of Track A claims were denied.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "What did Secretary Vilsack say about questionable cases in the first settlement?",
+            options: ["Only three of 17,000 to 18,000 adjudicated cases were marginally questionable", "That about a quarter of the adjudicated cases showed signs of irregularity", "That the Department could not evaluate the claims because it lacked the records", "That the Department had referred several thousand cases for prosecution"],
+            correctIndex: 0,
+            explanation: "He said so in a CBS News interview published on 30 December 2010.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "Who is Susan A. Schneider?",
+            options: ["A law professor who published a point-by-point response", "A Congressional Research Service analyst who co-wrote the standing report", "The court-appointed monitor in the first Pigford settlement", "A Government Accountability Office director who signed the 2012 audit"],
+            correctIndex: 0,
+            explanation: "She directs the agricultural and food law programme at the University of Arkansas and responded to the investigation on 1 May 2013.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "Which figure did Schneider's response emphasise?",
+            options: ["That 31 per cent of eligible Track A claimants were denied", "That only 104 claimants ever prevailed on the higher-proof track", "That the settlement totalled $1.06 billion rather than $1.25 billion", "That the class period ran for fourteen years rather than four"],
+            correctIndex: 0,
+            explanation: "The denial rate is the direct answer to any suggestion that the process paid whoever filed.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "Which two other people responded publicly in May 2013?",
+            options: ["John W. Boyd Jr. and Tony West", "Paul L. Friedman and Randi Roth", "Tom Vilsack and Michael Lewis", "Sharon LaFraniere and J. Michael Kelly"],
+            correctIndex: 0,
+            explanation: "Boyd is president of the National Black Farmers Association and West was then Acting Associate Attorney General.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "What did this course find when it searched for a substantiating audit or prosecution?",
+            options: ["It found none, and says so as a search result", "It found an Inspector General report substantiating widespread fraud", "It found several prosecutions but no convictions", "It did not search, because the question was outside its scope"],
+            correctIndex: 0,
+            explanation: "The lesson reports a bounded search that turned up nothing, and states that this is not the same sentence as saying none exists.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "What distinction does Lesson 21 call the most transferable skill in the course?",
+            options: ["Between what an audit found and what it said could happen", "Between a preliminary injunction and a temporary restraining order", "Between land operated and land owned in a census table", "Between an elected committee and an appointed one"],
+            correctIndex: 0,
+            explanation: "A control weakness that could permit an improper determination is a different claim from a finding that improper determinations occurred.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "Which programme did section 1005 of the American Rescue Plan Act create?",
+            options: ["Payments of up to 120 per cent of outstanding farm loan debt", "A relending programme for families holding land as tenants in common", "A financial assistance fund for anyone who experienced lending discrimination", "A capacity grant for the 1890 land-grant institutions and their extension work"],
+            correctIndex: 0,
+            explanation: "The section directed payments of up to 120 per cent of each socially disadvantaged farmer's outstanding indebtedness as of 1 January 2021.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "How much did section 1005 appropriate?",
+            options: ["Such sums as may be necessary", "Exactly four billion dollars, the figure most commonly reported", "Two point two billion dollars, matching the later successor programme", "One point two five billion dollars, matching the second Pigford settlement"],
+            correctIndex: 0,
+            explanation: "The appropriation was open ended, so the widely repeated four billion dollar figure is an estimate rather than a statutory number.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "Which loans did section 1005 cover, besides Farm Service Agency direct and guaranteed loans?",
+            options: ["Commodity Credit Corporation farm storage facility loans", "Federally guaranteed rural housing mortgages held by farm families", "Small Business Administration disaster loans made to agricultural producers", "Rural Electrification Administration loans made to farmer cooperatives"],
+            correctIndex: 0,
+            explanation: "The definition of farm loan reaches both FSA subtitle A, B and C loans and CCC farm storage facility loans.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "Where did section 1005 take its definition of socially disadvantaged farmer or rancher?",
+            options: ["From 7 U.S.C. § 2279(a)", "From 7 U.S.C. § 2003(e), the target participation rate provision", "From the implementing notice USDA published in the Federal Register", "From the consent decree entered in the first Pigford settlement"],
+            correctIndex: 0,
+            explanation: "That section defines a socially disadvantaged group without naming any race, in language matching § 2003.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "Where did the list of qualifying racial and ethnic groups actually appear?",
+            options: ["In USDA's Notice of Funds Availability", "In the text of section 1005 as enacted by Congress", "In the definition at 7 U.S.C. § 2279(a) as amended in 2021", "In the preliminary injunction issued by the Florida district court"],
+            correctIndex: 0,
+            explanation: "The notice at 86 Fed. Reg. 28329, published 26 May 2021, listed the groups; the statute named none.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "Why does it matter that the racial list was in the notice rather than the statute?",
+            options: ["It identifies the seam a legal challenge attaches to", "It means the list had no legal effect on eligibility at all", "It means Congress never intended the programme to reach any specific group", "It means the courts lacked jurisdiction to review the classification"],
+            correctIndex: 0,
+            explanation: "The operative racial classification lived in an agency document, which is where the challenge was aimed.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "What did the Eastern District of Wisconsin issue on 10 June 2021?",
+            options: ["A temporary restraining order", "The first nationwide preliminary injunction against the programme", "An order certifying two nationwide classes of plaintiffs", "A final judgment holding section 1005 unconstitutional"],
+            correctIndex: 0,
+            explanation: "Faust produced a TRO, which the same court dissolved on 6 July as no longer needed to preserve the status quo.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "Which case issued the first preliminary injunction, and was it nationwide?",
+            options: ["Wynn v. Vilsack, on 23 June 2021, and it was nationwide", "Faust v. Vilsack, on 10 June 2021, and it was limited to Wisconsin", "Miller v. Vilsack, on 1 July 2021, and it was limited to two certified classes", "Holman v. Vilsack, on 8 July 2021, and it was limited to Tennessee"],
+            correctIndex: 0,
+            explanation: "The Middle District of Florida enjoined the issuing of any payments, loan assistance or debt relief under section 1005(a)(2).",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "What did the Wynn court say about issuing an injunction of nationwide effect?",
+            options: ["That it proceeded with great caution and had never gone so far before", "That nationwide relief was the routine remedy in constitutional challenges", "That it lacked authority to limit the injunction to the plaintiff before it", "That the government had consented to nationwide relief in its filings"],
+            correctIndex: 0,
+            explanation: "The order records the court exploring narrower options and finding none that would maintain the status quo.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "What did the Northern District of Texas do on 1 July 2021?",
+            options: ["Certified classes and enjoined the use of race", "Dissolved the restraining order the Wisconsin court had entered", "Held section 1005 unconstitutional on the merits after a full trial", "Ordered USDA to pay the plaintiffs' claims under the programme"],
+            correctIndex: 0,
+            explanation: "Miller certified two Rule 23(b)(2) classes and barred discrimination on account of race or ethnicity, including any proxy for them.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "How do the Wynn and Miller remedies differ?",
+            options: ["Wynn froze the money and Miller barred the criterion", "Wynn barred the criterion and Miller froze the money", "Both froze the money, but only Miller reached beyond its own district", "Both barred the criterion, but only Wynn certified a class"],
+            correctIndex: 0,
+            explanation: "One enjoined payments under the section; the other enjoined the use of race or any proxy in administering it.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "Which court issued a preliminary injunction on 8 July 2021?",
+            options: ["The Western District of Tennessee, in Holman", "The Middle District of Florida, in Wynn", "The Eastern District of Wisconsin, in Faust", "The Northern District of Texas, in Miller"],
+            correctIndex: 0,
+            explanation: "Holman was the fourth of the four rulings and came a week after the Texas order.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "What ended section 1005?",
+            options: ["A one-sentence repeal in the Inflation Reduction Act", "A final judgment of the Sixth Circuit holding it unconstitutional", "The expiry of its appropriation at the end of fiscal year 2021", "A settlement between the government and the class plaintiffs"],
+            correctIndex: 0,
+            explanation: "Section 22008 of P.L. 117-169 repealed it outright, so no court ever ruled on the merits.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "How long did the Sixth Circuit later describe the injunction as lasting?",
+            options: ["Thirteen months", "Six weeks, between the first order and the dissolution of the restraining order", "Three years, until the successor programme announced its awards", "Two crop years, from the appropriation to the repeal"],
+            correctIndex: 0,
+            explanation: "The court described a thirteen-month injunction spanning the period from the first orders to the repeal.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "How much section 1005 debt relief was actually disbursed?",
+            options: ["No official document reporting any was found", "About two billion dollars, matching the successor programme", "About one hundred million dollars, released before the first injunction", "About 120 per cent of the outstanding debt of every eligible borrower"],
+            correctIndex: 0,
+            explanation: "The programme was frozen from the outset and stayed frozen until repeal, and the course reports finding no disbursement figure.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "Which section of the Inflation Reduction Act created the successor programme?",
+            options: ["Section 22007", "Section 22008, which instead repealed the earlier provision", "Section 1005, which is the provision that was repealed", "Section 14012, which reopened the Pigford claims for late filers"],
+            correctIndex: 0,
+            explanation: "Section 22007 rewrote ARPA section 1006, and the operative assistance language now sits at ARPA section 1006(e).",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "How much did the successor programme appropriate?",
+            options: ["$2,200,000,000", "$1,250,000,000, which is instead the second Pigford settlement", "$1,150,000,000, which is instead the Claims Resolution Act appropriation", "Such sums as may be necessary, as in the repealed provision"],
+            correctIndex: 0,
+            explanation: "The provision appropriates $2.2 billion for fiscal year 2022, available until 30 September 2031.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "What is the eligibility condition under the successor programme?",
+            options: ["Having experienced discrimination in USDA farm lending before 2021", "Membership in a socially disadvantaged group as defined at 7 U.S.C. § 2279(a)", "Holding an outstanding direct or guaranteed farm loan as of 1 January 2021", "Having filed a claim in one of the two earlier Pigford settlements"],
+            correctIndex: 0,
+            explanation: "The condition is an experience rather than an identity, which is what makes the provision facially race neutral.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "What is the maximum assistance an individual recipient could receive?",
+            options: ["$500,000", "$250,000, which is instead the ceiling in the second Pigford settlement", "$50,000, which is instead the fixed payment on the lower-proof track", "120 per cent of the recipient's outstanding farm loan indebtedness"],
+            correctIndex: 0,
+            explanation: "The statute caps assistance at not more than $500,000 per recipient, as determined appropriate to the consequences experienced.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "Who administers the successor programme, under the statute?",
+            options: ["One or more qualified nongovernmental entities", "The Farm Service Agency's county committees in each affected county", "A special master appointed by the district court in the Pigford litigation", "The Department of Agriculture's Office of the Inspector General"],
+            correctIndex: 0,
+            explanation: "The statute requires administration through qualified nongovernmental entities selected by the Secretary, subject to standards the Secretary sets.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "What is the careful way to describe the successor provision's treatment of race?",
+            options: ["The assistance provision is facially race neutral", "The whole section contains no reference to race of any kind", "The section names five racial and ethnic groups as eligible", "The section defers the racial classification to an agency notice"],
+            correctIndex: 0,
+            explanation: "Nearby subsections mention racial equity for an equity commission and Hispanic-serving institutions, so the precise claim is about the assistance criterion.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "When did the successor programme accept applications?",
+            options: ["7 July 2023 to 17 January 2024", "14 November 2011 to 11 May 2012, matching the second Pigford window", "1 January 2021 to 31 December 2021, the year of the appropriation", "26 May 2021 to 1 July 2021, between the notice and the injunction"],
+            correctIndex: 0,
+            explanation: "The window opened in July 2023, was extended, and closed on 17 January 2024, with decisions announced that July.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "When were the successor programme's decisions announced?",
+            options: ["31 July 2024", "17 January 2024, the day the application window closed", "16 August 2022, the day the Inflation Reduction Act was signed", "30 September 2031, the date to which the appropriation remains available"],
+            correctIndex: 0,
+            explanation: "USDA announced all decisions and awards on 31 July 2024, roughly a year after the window opened.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "How many individuals received assistance under the successor programme?",
+            options: ["Over 43,000", "About 22,721, matching the eligible class in the first Pigford settlement", "About 34,000, matching the complete and timely claims in the second", "About 32,653, matching the count of Black-operated farms in 2022"],
+            correctIndex: 0,
+            explanation: "USDA reported over 43,000 recipients across all fifty states, the District of Columbia, Puerto Rico, the U.S. Virgin Islands and American Samoa.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "What did recipients who had a farming or ranching operation receive?",
+            options: ["Between $10,000 and $500,000, averaging nearly $82,000", "Between $3,500 and $6,000, averaging $5,000", "A flat $50,000 plus loan forgiveness and tax offsets", "120 per cent of their outstanding indebtedness as of January 2021"],
+            correctIndex: 0,
+            explanation: "Over 23,000 recipients in that group received amounts in that range, with the lower range reserved for those who never got to farm.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "What did recipients who had planned to farm but could not receive?",
+            options: ["Between $3,500 and $6,000, averaging $5,000", "Between $10,000 and $500,000, averaging nearly $82,000", "Nothing, since the programme reached only active operations", "The same amount as operating recipients, with no distinction drawn"],
+            correctIndex: 0,
+            explanation: "Over 20,000 recipients reported being unable to farm because they could not get a USDA loan, and received amounts in that lower range.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "Why does the second group of recipients matter to this course?",
+            options: ["They are the people a refused loan stopped from ever farming", "They show that the programme reached beyond agriculture entirely", "They prove that the county committees were still operating in 2023", "They demonstrate that the earlier settlements had already paid everyone"],
+            correctIndex: 0,
+            explanation: "Lesson 17's phrase or attempted to farm describes the same people, and Section 1's credit-elsewhere test explains why the refusal was final.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "How does the course describe the gap between $2.2 billion appropriated and about $2 billion awarded?",
+            options: ["Delivery costs may be paid from the same appropriation", "The remainder was returned to the Treasury as unspent budget authority", "The remainder was transferred to the Heirs' Property Relending Program", "The two figures are inconsistent and one of them must be wrong"],
+            correctIndex: 0,
+            explanation: "The statute appropriates for the programme including the cost of any financial assistance, and no itemisation of the difference was found.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "What structural shape does Lesson 22 identify?",
+            options: ["A remedy naming the class was stopped and the survivor described the injury", "A benefit created nationally and administered by three people in a county", "A title fragmenting across generations until any co-tenant could force a sale", "A statistical series broken by a change in the unit being counted"],
+            correctIndex: 0,
+            explanation: "It is the WARRANT move at the remedy end, and it echoes the 1890 Act's equitably divided proviso a hundred and thirty years later.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "Why does this course refuse to say how a court would have ruled on section 1005?",
+            options: ["It was repealed rather than litigated to judgment", "Because the injunctions were sealed and their reasoning is unknown", "Because four different courts reached four incompatible conclusions", "Because the Sixth Circuit vacated all the earlier rulings on appeal"],
+            correctIndex: 0,
+            explanation: "Four preliminary rulings are not a merits holding, and the course declines to convert them into one.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Which is the first item on this course's ledger of refusals?",
+            options: ["A bare acreage figure for Black-owned farmland in 1920", "A current count of states adopting the Uniform Partition of Heirs Property Act", "A dollar figure for section 1005 debt relief actually disbursed", "A claim that any audit substantiated fraud in the Pigford settlements"],
+            correctIndex: 0,
+            explanation: "The census never asked, so what exists is a colored bracket and an owner-operated ceiling, each printed with its unit and its limit.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Why does the course refuse a current UPHPA adoption count?",
+            options: ["The authoritative source could not be read and the others disagree", "Because the count is published only in a subscription legal database", "Because adoption is a matter of federal rather than state law", "Because the Uniform Law Commission has stopped tracking enactments"],
+            correctIndex: 0,
+            explanation: "The Commission publishes it inside a dashboard the course could not read, and secondary counts differ and count different things.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "What does the course say about the Tennessee committee figure?",
+            options: ["It uses 83.3 and states the contradiction rather than picking silently", "It uses 93.3, following the report's own Findings section", "It refuses to print either figure, since the report is unreliable", "It averages the two figures, since neither printing can be preferred"],
+            correctIndex: 0,
+            explanation: "The published table's arithmetic supports 83.3, the Findings still print 93.3, and there are two printings.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Which computation does the course claim as its own rather than inheriting?",
+            options: ["The residual implying about $412,000 per prevailing Track B claimant", "The 96.5 per cent decline in Black-operated farms since 1920", "The 39.8 per cent one-year fall in Black committee membership", "The 76 per cent tenant share among 1920 Black farm operators"],
+            correctIndex: 0,
+            explanation: "CRS prints no Track B total, so the average comes from subtracting one published figure from another and is labelled an inference.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Which sibling course does this one point at first?",
+            options: ["The Match, which teaches the same move as a funding formula", "Cooperatives, which teaches the Rural Electrification Act and the co-op form", "The Great Migration, which teaches why people left the rural South", "Tracing a Person Through Records, which teaches deeds and probate files"],
+            correctIndex: 0,
+            explanation: "The two courses teach one mechanism in two forms, and Section 3 here answers the first refusal on that course's own ledger.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "What relationship does this course have to The Match's ledger?",
+            options: ["Section 3 answers its first refusal by opening the volume", "It repeats the same refusal, since neither course could read the tables", "It contradicts that ledger by printing the figure that course declined", "It has no relationship, since the two courses share no material"],
+            correctIndex: 0,
+            explanation: "That course refused the 1920 acreage and operator figures for want of the table; this course read the table and prints what it actually contains.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Which course does this one name as the opposite design in the same countryside?",
+            options: ["Cooperatives", "The Schoolhouse Network, which teaches privately matched community funds", "Financing Without Access, which teaches capital formation without banks", "Tribal Nations and Indigenous Governance, which teaches treaty land"],
+            correctIndex: 0,
+            explanation: "The Rural Electrification Act put loans behind systems the members built themselves, because nobody was obliged to build them.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "How does this course divide its subject from the migration courses?",
+            options: ["They own the leaving and this one owns the ledger", "They own the ledger and this one owns the leaving", "They cover the North and this one covers the South", "They cover the twentieth century and this one covers the nineteenth"],
+            correctIndex: 0,
+            explanation: "Lesson 9's finding that three quarters of Black farm operators were tenants is the arithmetic behind the decision those courses describe.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Which courses does this one recommend for the records skills Section 4 needs?",
+            options: ["Genealogy for Yourself and Your Community, and Tracing a Person Through Records", "The Match and Cooperatives, which cover federal statutes and rural credit", "The Great Migration and its companion course on the wider world", "Financing Without Access and What They Built, on capital formation"],
+            correctIndex: 0,
+            explanation: "Deeds, probate files and the county recorder are the instruments a family holding land in common has to read.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Why does the course send learners to their own state's civics course?",
+            options: ["Intestate succession and partition are state law", "Because federal farm programmes are administered by state legislatures", "Because the uniform act binds every state once a majority adopt it", "Because county committee elections are governed by state election codes"],
+            correctIndex: 0,
+            explanation: "Section 4 has a different ending in every state, and the state code is where that ending is written.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "What is the first of this course's three portable questions?",
+            options: ["Who decides, and how did they get there", "What record survives the decision that was made", "What is the applicant's alternative if the answer is no", "How much money does the programme have available"],
+            correctIndex: 0,
+            explanation: "Elected, appointed or hired; three people in a county, or a national formula, is where the analysis starts.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "What is the second portable question?",
+            options: ["What is the applicant's alternative if the answer is no", "Who decides, and how did they get there in the first place", "What record survives the decision the programme made", "Which statute created the programme and in what year"],
+            correctIndex: 0,
+            explanation: "Where eligibility already established there is no other lender, a refusal is final in a way an ordinary refusal is not.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "What is the third portable question?",
+            options: ["What record survives the decision", "How large is the programme's annual appropriation", "How many people apply in a typical year", "Whether the deciding body meets more than once a month"],
+            correctIndex: 0,
+            explanation: "If the answer is nothing, the programme cannot be audited, defended or corrected, and no argument about it can ever be settled.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "What does an answer of nothing to the third question mean?",
+            options: ["Nobody can evaluate the programme in either direction", "The programme is presumptively unlawful under federal record-keeping rules", "The programme must be administered by a nongovernmental entity instead", "The applicant may appeal directly to the Secretary of Agriculture"],
+            correctIndex: 0,
+            explanation: "This is the same point Lesson 7 made about the absence of appropriate reliable data, and it disables critics and defenders alike.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Why does this course print a ledger of refusals at all?",
+            options: ["The refusals are the reason to believe the rest", "Because the guards in the build require a ledger in every course", "Because the refused items will be added in a later revision", "Because a course must disclose the sources it was unable to purchase"],
+            correctIndex: 0,
+            explanation: "Every item could have been covered by a confident sentence that would have made the course feel more complete and be less true.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Which item on the ledger concerns a figure the course prints only with its limits?",
+            options: ["The 1920 acreage figures", "The number of states adopting the uniform partition act", "The amount of section 1005 debt relief actually disbursed", "The itemisation of the successor programme's delivery costs"],
+            correctIndex: 0,
+            explanation: "The colored bracket and the owner-operated ceiling are printed with their units and limits attached, rather than as one answer.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "What is the correct relationship between the two Pigford criticisms?",
+            options: ["They point in opposite directions", "They make the same objection from different institutional positions", "One is documented and the other was never made by anybody", "Both were rejected by the court before the settlement was approved"],
+            correctIndex: 0,
+            explanation: "One says the process paid too easily and the other says it failed the people it was for, and both attack the same design decision.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "Which sequence of the section 1005 litigation is correct?",
+            options: ["Faust TRO, Wynn injunction, Miller class and injunction, Holman injunction", "Wynn TRO, Faust injunction, Holman class and injunction, Miller injunction", "Miller injunction, Faust TRO, Wynn injunction, Holman class certification", "Holman TRO, Miller injunction, Wynn class certification, Faust injunction"],
+            correctIndex: 0,
+            explanation: "10 June, 23 June, 1 July and 8 July 2021, in that order, across four different district courts.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "What is the difference between a temporary restraining order and a preliminary injunction?",
+            options: ["The order is a short emergency measure pending the injunction ruling", "The order binds nationwide while the injunction binds only the parties", "The order is issued after trial and the injunction before it", "The order requires a bond and the injunction does not"],
+            correctIndex: 0,
+            explanation: "Faust's TRO preserved the status quo until the court could rule, and was dissolved once it was no longer needed.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "How does the successor programme's design echo the 1890 Act?",
+            options: ["Both describe a condition rather than naming the class", "Both grant land rather than cash to the institutions they fund", "Both require a state to match the federal contribution dollar for dollar", "Both were repealed before any court ruled on their validity"],
+            correctIndex: 0,
+            explanation: "The equitably divided proviso and the experienced discrimination condition both put the arrangement in terms other than the class it was for.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "Which is the honest summary of what the record supports about Pigford fraud?",
+            options: ["Allegations were made and named; no audit substantiated them", "An audit substantiated widespread fraud in both settlements", "The allegations were fabricated and no evidence of any kind was offered", "The question was never raised in any official or public venue"],
+            correctIndex: 0,
+            explanation: "The allegations are on the record with named speakers and venues, and the only audit of the process examined controls and found no exceptions in its sample.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "What was the standing rule under which Lesson 21 was written?",
+            options: ["Say nothing unless source, venue, evidence and rebuttals are all named", "Report the allegation and omit the rebuttals, which are a matter of opinion", "Report only the audit findings and omit the political statements entirely", "Report whichever side the preponderance of published coverage supports"],
+            correctIndex: 0,
+            explanation: "All four elements are on the record, so the lesson states all four rather than saying nothing.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "What did USDA object to in GAO's draft, according to the audit?",
+            options: ["The phrase describing a history of discrimination", "The sample size GAO used in testing individual claims", "The recommendation to identify duplicate claims across settlements", "The publication of the number of claims flagged for fraud concerns"],
+            correctIndex: 0,
+            explanation: "USDA asked GAO to insert the word alleged, and GAO declined, attributing the phrase to the judicial opinions approving both settlements.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "Why is USDA's objection an interesting data point?",
+            options: ["It shows the agency minimising liability rather than alleging fraud", "It shows the agency endorsing the fraud allegation in an official document", "It shows the agency disputing the number of claims that had been paid", "It shows the agency asking GAO to widen the scope of the audit"],
+            correctIndex: 0,
+            explanation: "The department's own on-the-record posture was about its liability, which cuts differently from the fraud narrative.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "Which is a fair description of what Section 6 does?",
+            options: ["States both criticisms, names everyone, and separates found from could", "Adjudicates the dispute in favour of the settlement's defenders", "Omits the fraud allegation because it could not be sourced", "Treats the audit's control findings as findings of fraud"],
+            correctIndex: 0,
+            explanation: "The section reports the claimants' criticism, the audit's actual findings, the named allegations, and the named rebuttals.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "What did GAO recommend at the end of its 2012 audit?",
+            options: ["Procedures for prior judgments, and full implementation of the design", "Suspension of all payments until every flagged claim had been adjudicated", "Referral of the flagged claims to the Department of Justice for prosecution", "Replacement of the claims administrator with a court-appointed special master"],
+            correctIndex: 0,
+            explanation: "GAO asked the claims administrator to document procedures for identifying claimants with prior judgments, and the parties to implement the remaining controls.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "Why did GAO say some control weaknesses could not be fixed?",
+            options: ["The settlement required claims to be judged on the claimant's own submission", "Because the court had sealed the underlying loan records", "Because the claims administrator lacked authority to reject any claim", "Because the appropriation did not fund any verification work"],
+            correctIndex: 0,
+            explanation: "By the settlement's terms most claims had to be evaluated on the information the claimant submitted, so the adjudicator could not independently verify it.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "What is the correct statutory chain for the successor programme's operative text?",
+            options: ["IRA section 22007 amended ARPA section 1006, and the language sits at 1006(e)", "IRA section 22007 stands alone and contains the assistance language directly", "IRA section 22008 created the programme after repealing the earlier one", "ARPA section 1005 was amended rather than repealed, and now reads race neutrally"],
+            correctIndex: 0,
+            explanation: "Section 22007 is amendatory, so citing it alone as the source of the quoted language is imprecise.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "Which two nearby uses of racial or ethnic terms appear in the same IRA section?",
+            options: ["An equity commission and Hispanic-serving institutions", "A list of five qualifying racial groups and a socially disadvantaged definition", "A set-aside for tribal colleges and a preference for 1890 institutions", "A reference to the Pigford class and to the Keepseagle settlement"],
+            correctIndex: 0,
+            explanation: "One subsection funds an equity commission to address racial equity, and another names Hispanic-serving institutions for research grants; neither is a DFAP eligibility criterion.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "Until when does the successor programme's appropriation remain available?",
+            options: ["30 September 2031", "31 December 2024, the year the awards were announced", "17 January 2024, the date the application window closed", "1 January 2021, the cutoff for the discrimination the programme addresses"],
+            correctIndex: 0,
+            explanation: "The provision appropriates the funds for fiscal year 2022 to remain available until 30 September 2031.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "Which is the accurate way to state the outcome of the section 1005 litigation?",
+            options: ["Four preliminary rulings, no merits judgment, then repeal", "Four final judgments holding the provision unconstitutional", "One nationwide judgment on the merits, later affirmed on appeal", "A settlement in which the government agreed to withdraw the programme"],
+            correctIndex: 0,
+            explanation: "A TRO and three preliminary injunctions froze the programme, and Congress repealed it before any court reached the merits.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // FINAL ASSESSMENT
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "final-the-county-committee",
+      title: "25 · Final assessment",
+      section: "Final assessment",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 10,
+        questions: [
+          {
+            prompt: "What makes timing the decisive term of an agricultural loan?",
+            options: ["Inputs are bought before the crop is sold", "Federal interest rates are reset at the start of each crop year", "The county committee may only meet during the planting season", "Loan applications expire automatically after ninety days"],
+            correctIndex: 0,
+            explanation: "Money that arrives after planting cannot buy the crop it was needed for, at any rate.",
+            sourceLessonSlug: "timing-is-the-whole-game",
+          },
+          {
+            prompt: "Which statute enumerates the purposes of a direct operating loan?",
+            options: ["7 U.S.C. § 1942", "7 U.S.C. § 1922, which instead sets ownership loan eligibility conditions", "16 U.S.C. § 590h, which instead establishes the committee structure", "7 U.S.C. § 2003, which instead sets target participation rates"],
+            correctIndex: 0,
+            explanation: "Section 1942(a) runs from equipment and inputs through to family subsistence.",
+            sourceLessonSlug: "timing-is-the-whole-game",
+          },
+          {
+            prompt: "What must a federal farm loan applicant be unable to do?",
+            options: ["Obtain sufficient credit elsewhere", "Repay any existing federal obligation of any kind", "Demonstrate three consecutive years of positive net farm income", "Obtain a written guarantee from a licensed commercial lender"],
+            correctIndex: 0,
+            explanation: "The credit-elsewhere test at 7 U.S.C. §§ 1922 and 1941 makes the federal lender the lender of last resort.",
+            sourceLessonSlug: "unable-to-obtain-credit-elsewhere",
+          },
+          {
+            prompt: "Why is a federal farm loan denial final in a way a bank denial is not?",
+            options: ["Eligibility already established there is no other lender", "Because a denial bars reapplication for a full crop year", "Because a denial accelerates every other federal loan the applicant holds", "Because the applicant forfeits their farm number on denial"],
+            correctIndex: 0,
+            explanation: "The credit-elsewhere test admits only applicants other lenders have refused, so the refusal ends the search rather than redirecting it.",
+            sourceLessonSlug: "unable-to-obtain-credit-elsewhere",
+          },
+          {
+            prompt: "How are county committees chosen under 16 U.S.C. § 590h(b)(5)?",
+            options: ["Elected by agricultural producers", "Appointed by the Secretary from a congressional nominee list", "Selected by the County Executive Director from among eligible voters", "Chosen by the state committee from the previous year's applicants"],
+            correctIndex: 0,
+            explanation: "State committees are appointed by the Secretary; county committees are elected by the producers who participate in programmes in the area.",
+            sourceLessonSlug: "two-committee-systems",
+          },
+          {
+            prompt: "What did section 227 of P.L. 103-354 do?",
+            options: ["Abolished the FmHA county committees", "Created the Farm Service Agency out of three predecessor units", "Established target participation rates for socially disadvantaged farmers", "Reopened the Pigford claims process for late filers"],
+            correctIndex: 0,
+            explanation: "It repealed 7 U.S.C. § 1982 and part of § 1983, and USDA recorded the change in the Federal Register in 1996.",
+            sourceLessonSlug: "two-committee-systems",
+          },
+          {
+            prompt: "Which eligibility test did the 1994 reorganisation drop?",
+            options: ["Character, industry, and ability", "Inability to obtain sufficient credit elsewhere in the community", "Being or becoming the operator of not larger than a family farm", "United States citizenship of the applicant"],
+            correctIndex: 0,
+            explanation: "USDA's 1996 notice lists it among the requirements the new committees would not carry over.",
+            sourceLessonSlug: "two-committee-systems",
+          },
+          {
+            prompt: "How many members did an FmHA county committee have, and how many were farmers?",
+            options: ["Three, at least two of them farmers", "Five, at least three of them farmers, appointed by the state director", "Eleven, with no requirement that any of them farm", "Three, none of whom could farm in the county they served"],
+            correctIndex: 0,
+            explanation: "The Commission on Civil Rights quotes USDA's own description of three residents of the county, at least two of them farmers.",
+            sourceLessonSlug: "three-people-in-the-county",
+          },
+          {
+            prompt: "What two things did the FmHA county committee determine?",
+            options: ["Eligibility and the limits of credit", "The interest rate and the term of repayment", "The disaster designation and the payment rate", "The appraised value and the required insurance"],
+            correctIndex: 0,
+            explanation: "Both, which is why an approval for less than requested still decided a farmer's year.",
+            sourceLessonSlug: "three-people-in-the-county",
+          },
+          {
+            prompt: "How did FmHA county committee members reach their seats?",
+            options: ["Nominated by county supervisors, appointed by state directors", "Elected by the producers of the county on an annual ballot", "Appointed by the governor from a list submitted by extension staff", "Selected by lot from among borrowers with active loan files"],
+            correctIndex: 0,
+            explanation: "The chain ran down from the agency, so nobody in it faced a vote, unlike the 1935 Act committees in the same counties.",
+            sourceLessonSlug: "three-people-in-the-county",
+          },
+          {
+            prompt: "How did Black FmHA county committee membership change between 1979 and 1980?",
+            options: ["From 427 to 257 while total membership rose", "From 257 to 427 while total membership fell", "From 328 to 173, which are the national totals", "It did not change, though the total membership grew"],
+            correctIndex: 0,
+            explanation: "Total membership rose from 5,863 to 5,966 over the same year, so a shrinking programme does not explain the decline.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "How many states does the Commission's committee membership table cover?",
+            options: ["Nine", "Fifty, since the table reports national membership by state", "Sixteen, matching the states that later received land-grant letters", "Eleven, the states of the former Confederacy"],
+            correctIndex: 0,
+            explanation: "Its rows sum to 328 and 173 against national totals of 427 and 257, so it is regional rather than national.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "Which Tennessee figure does the published table's arithmetic support?",
+            options: ["83.3 per cent", "93.3 per cent, which the report's Findings section prints", "93.9 per cent, which a fall from 33 to 2 would produce", "60.7 per cent, which the table records for another state"],
+            correctIndex: 0,
+            explanation: "12 to 2 is an exact 83.33 per cent fall, and the report's Findings still print 93.3, so the source contradicts itself.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "What did the Commission say about what participation rates prove?",
+            options: ["Numbers alone do not prove discrimination", "That a sustained gap establishes a presumption the agency must rebut", "That the rates proved discrimination in FmHA farm lending programmes", "That participation rates are the only reliable measure of programme fairness"],
+            correctIndex: 0,
+            explanation: "The report says the comparison does not indicate the presence or absence of discrimination, and cites a lack of appropriate reliable data.",
+            sourceLessonSlug: "numbers-alone-do-not-prove-discrimination",
+          },
+          {
+            prompt: "Which four things move a claim from a gap to a conclusion?",
+            options: ["Comparator, decision record, mechanism, authoritative finding", "Sample size, significance test, replication, peer review", "Complaint, investigation, hearing, appeal", "Statute, regulation, guidance, notice"],
+            correctIndex: 0,
+            explanation: "None of them is a bigger gap, and the settlement in Section 5 required the first of them from every claimant.",
+            sourceLessonSlug: "numbers-alone-do-not-prove-discrimination",
+          },
+          {
+            prompt: "How many Black farm operators did the 1920 census report?",
+            options: ["925,708", "949,889, which is the colored operator count in the same census", "893,370, which is the corresponding figure for 1910", "925,710, which is the Commission's own restatement of it"],
+            correctIndex: 0,
+            explanation: "Volume V, chapter V, Table 4 at page 298 gives it, with owners, managers and tenants summing exactly to the total.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "How many acres did Black farm operators operate in 1920?",
+            options: ["41,432,182", "44,944,521, which is the colored acreage in the same census", "13,948,512, which is a later back-reported owner figure", "16,704,192, which is colored owner-operated land"],
+            correctIndex: 0,
+            explanation: "Table 5 at page 298 gives it, alongside 27,928,900 acres of improved land.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "Why can acres owned not be read from the 1920 census?",
+            options: ["The schedule never asked", "The Bureau published the figure for white operators only", "The returns were destroyed before publication", "The figure sits in an unpublished archival appendix"],
+            correctIndex: 0,
+            explanation: "Tenure was captured as yes-or-no questions and acreage once, split only by land use, so a part owner's owned and rented acres were never separated.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "What does the 1920 census mean by colored?",
+            options: ["Negro plus Indian plus Japanese plus Chinese", "Negro operators in the southern states only", "Any operator who was not a native-born white citizen", "Any operator recorded as a tenant rather than an owner"],
+            correctIndex: 0,
+            explanation: "Chapter IV's colored totals therefore exceed chapter V's Negro totals, and the two are not interchangeable.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "What share of Black farm operators in 1920 were tenants?",
+            options: ["About seventy-six per cent", "About a quarter, with owners the largest single class", "About half, split evenly with owners", "About ninety-five per cent, including managers"],
+            correctIndex: 0,
+            explanation: "705,070 tenants out of 925,708 operators, which is why an operated-acreage figure is mostly a figure about other people's land.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "Where does the circulating 14 to 16 million acre figure come from?",
+            options: ["The colored ownership bracket", "The Negro owner-operated acreage back-reported for 1920", "An estimate published by the Commission on Civil Rights", "The improved acreage within Black-operated farms"],
+            correctIndex: 0,
+            explanation: "It runs from the colored full-owner floor of 14,005,208 to the colored owner-operated ceiling of 16,704,192, and is usually printed beside a Negro operator count.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "Why is 13,948,512 acres a ceiling rather than a measurement?",
+            options: ["It counts land in farms operated by owners", "It was estimated rather than enumerated", "It covers the southern states only", "It was published thirteen years after the census"],
+            correctIndex: 0,
+            explanation: "A part owner's farm includes rented ground, and the source's own sentences say operated by owners even where its heading says owned.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "How many operators per farm did the 1997 census collect?",
+            options: ["One", "Three, matching the maximum adopted in 2002", "Four, matching the current producer maximum", "As many as each farm reported"],
+            correctIndex: 0,
+            explanation: "That is why the 1997 count of 18,451 is simultaneously a farm count and an operator count.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "What changed in the 2002 census?",
+            options: ["Up to three operators per farm were collected", "The term operator was replaced by producer", "Race was recorded by observation rather than self-identification", "Farms below ten thousand dollars in sales were excluded"],
+            correctIndex: 0,
+            explanation: "Once a farm could report more than one operator, farms and operators stopped being the same number and the series broke.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "Which 2022 figure is the farm count?",
+            options: ["32,653", "46,738, which counts producers alone or in combination", "41,807, which counts Black-alone producers", "5,323,654, which counts acres operated"],
+            correctIndex: 0,
+            explanation: "The commonly quoted figure of about 32,700 is a count of farms with a Black producer, not a count of farmers.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "What is the decline in Black-operated farms from 1920 to 2022?",
+            options: ["About 96.5 per cent", "About 94.9 per cent, comparing farms against producers", "About 93.8 per cent, which is the 1920 to 1978 figure", "About 56.4 per cent, which is the white-operated decline"],
+            correctIndex: 0,
+            explanation: "About 925,710 farms in 1920 against 32,653 in 2022, comparing farms to farms.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "Why is the rise from 18,451 in 1997 to 32,653 in 2022 not a recovery?",
+            options: ["The unit and the method both changed", "Because the later figure counts acres rather than farms", "Because 1997 was an anomalously low year", "Because the 2022 figure includes part-time operations"],
+            correctIndex: 0,
+            explanation: "The unit moved from operator to producer, the per-farm maximum rose twice, and coverage adjustment restated the 1997 national total upward by 15.9 per cent.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "What rate of loss did the Commission's 1982 forecast compound?",
+            options: ["Fifty-seven per cent per decade", "Thirty-nine point eight per cent per year", "Ninety-four per cent over the whole period since 1920", "Fifty-six point four per cent, the white-operated rate"],
+            correctIndex: 0,
+            explanation: "The sentence before the prediction gives the preceding decade's decline in Black-operated farms, two and a half times the white rate.",
+            sourceLessonSlug: "the-1982-prediction",
+          },
+          {
+            prompt: "Does the Commission's report define the end of the next decade?",
+            options: ["No", "Yes, as 1990, in its Findings section", "Yes, as 1999, in its opening chapter", "Yes, as the year of the next agricultural census"],
+            correctIndex: 0,
+            explanation: "The phrase appears three times and is defined nowhere, so any target year is an inference and must be labelled as one.",
+            sourceLessonSlug: "the-1982-prediction",
+          },
+          {
+            prompt: "How does the 1982 prediction fare against the 1997 census?",
+            options: ["It overshot, since 18,451 is well above 10,000", "It was almost exactly right, within a few hundred farms", "It undershot, since the count fell below 10,000", "It cannot be graded, since 1997 published no racial breakdown"],
+            correctIndex: 0,
+            explanation: "A 57 per cent decadal rate did not continue, and the Commission's own conditional phrasing was doing real work.",
+            sourceLessonSlug: "the-1982-prediction",
+          },
+          {
+            prompt: "What happens to land when its owner dies without a will?",
+            options: ["It passes to the heirs as tenants in common", "It escheats to the state until an heir petitions to reclaim it", "It vests in the eldest surviving child as trustee for the others", "It is sold by the county with the proceeds held for the heirs"],
+            correctIndex: 0,
+            explanation: "State intestate succession distributes the interest and the heirs hold undivided fractional shares of the whole parcel.",
+            sourceLessonSlug: "land-that-passes-without-a-will",
+          },
+          {
+            prompt: "Who may force a partition of a parcel held in common?",
+            options: ["Any single co-tenant", "Only a majority of the co-tenants acting together", "Only a co-tenant holding at least a fifth of the interests", "Only a co-tenant who inherited rather than purchased"],
+            correctIndex: 0,
+            explanation: "The right descends from the principle that no co-owner should be trapped, and it reaches the whole parcel rather than the petitioner's share.",
+            sourceLessonSlug: "the-partition-sale",
+          },
+          {
+            prompt: "How does a speculator acquire standing to force a sale?",
+            options: ["By buying a small fractional interest", "By purchasing the county's delinquent tax lien", "By recording an adverse possession claim", "By obtaining a court order voiding the co-tenancy"],
+            correctIndex: 0,
+            explanation: "A fractional interest is cheap because it cannot be used or resold alone, and it carries the full right to petition for partition.",
+            sourceLessonSlug: "the-partition-sale",
+          },
+          {
+            prompt: "What does the uniform act's appraisal provision forbid?",
+            options: ["Discounting for fractional ownership", "Any appraisal by a person licensed in another state", "Valuing improvements separately from the land itself", "Appraisals conducted more than thirty days before the hearing"],
+            correctIndex: 0,
+            explanation: "The property must be valued assuming sole ownership of the fee simple estate, which removes the gap the speculator's return depended on.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "Is adoption of the uniform act a condition of any federal eligibility?",
+            options: ["No", "Yes, a farm number cannot issue in a non-adopting state", "Yes, the relending programme is closed to borrowers in non-adopting states", "Yes, disaster payments on heirs property require an adopting state's order"],
+            correctIndex: 0,
+            explanation: "Adoption unlocks two documentation routes and one lender preference; the tenancy-in-common agreement, tax returns and self-certification remain available everywhere.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "What did the Pigford suit allege besides discrimination in programmes?",
+            options: ["A failure to investigate or respond to complaints", "Destruction of the loan files of denied applicants", "Diversion of appropriated funds between counties", "Refusal to publish committee composition by race"],
+            correctIndex: 0,
+            explanation: "That second half is why the case could not be resolved through ordinary exhaustion, and why the settlement built its own machinery.",
+            sourceLessonSlug: "what-pigford-claimed",
+          },
+          {
+            prompt: "What did Track A require and pay?",
+            options: ["Substantial evidence, for a fixed $50,000 plus relief", "Preponderance of the evidence, for a tailored award", "Clear and convincing evidence, for up to $250,000", "No evidence at all, for a flat payment to every class member"],
+            correctIndex: 0,
+            explanation: "The lower standard came with a capped payment, and the higher standard on Track B came with a tailored one.",
+            sourceLessonSlug: "track-a-and-track-b",
+          },
+          {
+            prompt: "What comparator did a Track A claimant have to identify?",
+            options: ["A specifically identified, similarly situated white farmer", "Two other Black farmers denied credit in the same year", "A committee member who had voted against the application", "A commercial lender who had also refused the applicant"],
+            correctIndex: 0,
+            explanation: "Producing that comparator decades later is why the Track A denial rate reached 31 per cent.",
+            sourceLessonSlug: "track-a-and-track-b",
+          },
+          {
+            prompt: "How many Pigford I claimants prevailed on Track A, and at what rate?",
+            options: ["About 15,645, which CRS gives as 69 per cent", "About 22,721, which is instead the number found eligible", "About 6,906, which is instead the number denied", "About 104, which is instead the number prevailing on Track B"],
+            correctIndex: 0,
+            explanation: "As of 31 December 2011, per the final Court Monitor Report published on 1 April 2012.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "What was the approximate total relief in Pigford I?",
+            options: ["$1.06 billion", "$1.25 billion, which is instead the second settlement", "$1.15 billion, which is instead a later appropriation", "$2.2 billion, which is instead a later programme"],
+            correctIndex: 0,
+            explanation: "CRS prints $1,058,577,198 in cash relief, estimated tax payments and debt relief.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "Which statute supplied $1.15 billion for the second settlement?",
+            options: ["The Claims Resolution Act of 2010", "The Food, Conservation and Energy Act of 2008", "The American Rescue Plan Act of 2021", "The Department of Agriculture Reorganization Act of 1994"],
+            correctIndex: 0,
+            explanation: "P.L. 111-291, signed 8 December 2010, supplied the balance of the $1.25 billion.",
+            sourceLessonSlug: "what-was-decided-and-paid",
+          },
+          {
+            prompt: "What did GAO-13-69R find about the Pigford II claims process?",
+            options: ["Reasonable assurance, with weaknesses that could allow improper determinations", "That widespread fraud had occurred and payments should be suspended", "That the process had no internal controls of any kind", "That every flagged claim had been improperly approved"],
+            correctIndex: 0,
+            explanation: "It is a statement about a control system, not a finding about any particular decision, and GAO tested 150 claims and found no exceptions.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "What did the court-appointed Ombudsman report about fraud complaints?",
+            options: ["All concerned fraud perpetrated on claimants", "All concerned fraud perpetrated by claimants", "None had been received at all", "They were split evenly between the two directions"],
+            correctIndex: 0,
+            explanation: "GAO records this in the same footnote in which it says its review did not examine claimant fraud.",
+            sourceLessonSlug: "the-criticism-in-both-directions",
+          },
+          {
+            prompt: "Which case issued the first nationwide preliminary injunction against ARPA section 1005?",
+            options: ["Wynn v. Vilsack, on 23 June 2021", "Faust v. Vilsack, on 10 June 2021", "Miller v. Vilsack, on 1 July 2021", "Holman v. Vilsack, on 8 July 2021"],
+            correctIndex: 0,
+            explanation: "Faust came first but issued a temporary restraining order, which the same court dissolved on 6 July.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "How did section 1005 end?",
+            options: ["It was repealed by the Inflation Reduction Act", "It was struck down on the merits by a federal appellate court", "Its appropriation lapsed at the end of fiscal year 2021", "It was withdrawn by the Secretary under settlement terms"],
+            correctIndex: 0,
+            explanation: "Section 22008 of P.L. 117-169 repealed it in one sentence, so no court ever reached the merits.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "What is the eligibility condition under the successor programme?",
+            options: ["Having experienced discrimination in USDA farm lending before 2021", "Membership in one of five named racial or ethnic groups", "Holding an outstanding farm loan as of 1 January 2021", "Having filed a claim in one of the Pigford settlements"],
+            correctIndex: 0,
+            explanation: "The condition is an experience rather than an identity, which is what makes the assistance provision facially race neutral.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "How many people received assistance under that programme, and when was it announced?",
+            options: ["Over 43,000, announced 31 July 2024", "About 34,000, announced 27 October 2011", "About 22,721, announced 14 April 1999", "About 32,653, announced 17 January 2024"],
+            correctIndex: 0,
+            explanation: "Over 23,000 had a farming operation and over 20,000 had planned to farm but reported being unable to get a USDA loan.",
+            sourceLessonSlug: "the-race-neutral-rewrite",
+          },
+          {
+            prompt: "Why does this course print no single figure for Black-owned farmland in 1920?",
+            options: ["The census never collected acres owned", "Because the figure is disputed among historians", "Because the relevant volume could not be obtained", "Because the figure is proprietary to a private database"],
+            correctIndex: 0,
+            explanation: "What exists is a colored bracket and an owner-operated ceiling, each printed with its unit and its limit.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "What are this course's three portable questions?",
+            options: ["Who decides, what is the alternative, what record survives", "How much, how soon, and at what rate of interest", "Who applied, who was approved, and in what proportion", "Which statute, which agency, and which fiscal year"],
+            correctIndex: 0,
+            explanation: "They ask about structure rather than content, so they can be run on a programme the asker has never studied.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+          {
+            prompt: "Which sibling course teaches the same mechanism as a funding formula?",
+            options: ["The Match", "Cooperatives, on the Rural Electrification Act", "The Great Migration, on the rural South", "Financing Without Access, on capital formation"],
+            correctIndex: 0,
+            explanation: "A benefit is created, a class is excluded, a separate smaller channel is built, and that channel is made conditional on a payment by the party that excluded them.",
+            sourceLessonSlug: "what-this-course-refused",
+          },
+        ],
+      },
     },
   ],
 };
