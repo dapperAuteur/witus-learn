@@ -323,7 +323,7 @@ export const JURISDICTION: JurisdictionFile = {
       fetchedOn: "2026-08-28",
       sourceUrl: LA_SS_SOURCE,
       adoption:
-        "Louisiana files personal financial literacy inside its required High School Civics course, as standard C.14 with five lettered sub-parts running from career earning potential through applying financial data, the benefits and risks of credit, comparing financial services across institutions, and creating a budget. MONEY-01 (`credit-decisions`) reaches part of C.14.c and none of the rest, so Louisiana carries one partial claim and no full one. Re-read 2026-08-28 from the LDOE PDF, whose footer at that date read \"Updated 7/10/2026\" — the freshest publisher document of the nine jurisdictions re-fetched this pass.",
+        "Louisiana files personal financial literacy inside its required High School Civics course, as standard C.14 with five lettered sub-parts running from career earning potential through applying financial data, the benefits and risks of credit, comparing financial services across institutions, and creating a budget. MONEY-01 (`credit-decisions`) reaches part of C.14.c and MONEY-03 (`cash-flow-timing`) part of C.14.b, so Louisiana carries two partial claims and no full one. The C.14 stem is not claimed, and C.14.e, creating a budget, is a deliberate refusal rather than a gap. Re-read 2026-08-28 from the LDOE PDF, whose footer at that date read \"Updated 7/10/2026\" — the freshest publisher document of the nine jurisdictions re-fetched this pass.",
       standards: [
         {
           code: "C.14.c",
@@ -336,6 +336,21 @@ export const JURISDICTION: JurisdictionFile = {
           ],
           coverage: "partial",
           note: "Partial, on the standard's trailing clause. Benefits and risks are squarely taught: the benefit is the timing gap credit is bought to close, and the risks are what the course spends most of its length on, namely the record a decision is made from, how long each adverse item may be reported, what a scoring model does with the file, and what a refusal must disclose. NOT covered: examining the VARIOUS USES of credit. The course does not survey mortgage, auto, card or installment products, and those belong to MONEY-04 and MONEY-06. A teacher planning against C.14.c gets the benefits-and-risks half and will have to supply the product survey.",
+        },
+        // — Added 2026-08-28 when MONEY-03 (`cash-flow-timing`) shipped. Two of the four real-life
+        //   situations C.14.b names are now taught; two are not, and C.14.e, creating a budget,
+        //   remains the sub-part this catalog will not claim at all.
+        {
+          code: "C.14.b",
+          text: "Apply given financial data to real life situations such as balancing a checking account, reading bank and credit card statements, purchasing major goods, and avoiding consumer fraud.",
+          claimIds: [
+            "money.account-reconciliation-and-posting",
+            "money.funds-availability-schedule",
+            "money.payment-methods-and-clearing",
+            "money.deposit-timing-disclosures-and-recourse",
+          ],
+          coverage: "partial",
+          note: "Partial, and the split runs cleanly through the standard's own list of four situations. TAUGHT: balancing a checking account, and reading a BANK statement. Both are worked from the rules that produce the numbers rather than as a clerical drill, which is what makes the standard's verb, applying given financial data, do real work. A learner separates the date a deposit lands from the date it becomes usable (12 CFR 229.10, 229.12, 229.13 and the cut-off hour at 229.19(a)), separates authorisation from posting from settlement, finds the account agreement's own definitions of available and ledger balance, identifies each preauthorized debit and its stop-payment window (12 CFR 1005.10), and reads the overdraft and returned-item totals Truth in Savings requires on the statement (12 CFR 1030.11(a)). The capstone is that exercise done once on the learner's own documents. NOT TAUGHT: reading a CREDIT CARD statement, which belongs to MONEY-01 and MONEY-04 and is not in this course; purchasing major goods, which this course does not touch; and avoiding consumer fraud, which is MONEY-04's subject. A teacher planning against C.14.b gets the two deposit-account situations in depth and will have to supply the other two.",
         },
       ],
     },
@@ -358,6 +373,10 @@ export const JURISDICTION: JurisdictionFile = {
     {
       heading: "Civics expectations we checked and do NOT claim.",
       body: "C.8.b/c/e/f (comparing systems of government, the Enlightenment philosophers, ratification debates, and natural-rights theory), C.9.d (the executive branch's Cabinet, executive orders, and the 'bully pulpit'), C.9.g/h (constructionist interpretation by name; how governments raise and allocate revenue), C.10.d (equal protection and due process doctrine), C.11.c/g/h/i/j (political parties and interest groups; gerrymandering and turnout; the media's effect on politics — our media-literacy work is consumer protection, not political-media analysis; Louisiana's congressional redistricting), C.12.a/c/e (the policy-fields survey; U.S. interactions with other nations; post-WWII international law), and C.13.a/c/e/f (Adam Smith and the invisible hand; government-regulation perspectives; market structures and factors of production) are not genuinely taught by these courses, so we do not claim them. All of C.14 used to be rejected here too; see the entry below.",
+    },
+    {
+      heading: "Personal financial literacy (C.14) — this rejection has been superseded, in part.",
+      body: "Until 2026-08-28 this file rejected all of C.14, personal financial literacy, on the ground that the catalog taught none of it. That was accurate then and is not now, and the correction is recorded here rather than deleted so a Louisiana teacher can see what changed. Two of the five sub-parts are claimed above, both partially: C.14.c, the benefits and risks of using credit, added when MONEY-01 shipped, and C.14.b, applying given financial data, added when MONEY-03 shipped, and each carries its limit on its own entry. THE C.14 STEM IS STILL NOT CLAIMED and will not be until the catalog earns it: Louisiana's stem names income, money management, spending and credit, and savings and investing, and claiming it would promise a teacher four domains this catalog does not deliver. Three sub-parts remain unclaimed and are named so the gap stays visible. C.14.a is the relationship between education, training and career options and future earning potential, which no course here teaches. C.14.d compares financial services across institutions, and although MONEY-02 prices bank, credit union and nonbank services against each other, it was not written against this code and is not claimed for it this pass. C.14.e is creating a budget, and that one is a deliberate and probably permanent refusal rather than a backlog item: MONEY-03 states in three separate lessons that it gives no financial advice, and it teaches cash-flow TIMING precisely because budgeting has no mechanism, no decision-maker and no recourse to teach from. Nothing here is claimed before it is taught.",
     },
   ],
 };

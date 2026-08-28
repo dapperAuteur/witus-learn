@@ -367,7 +367,7 @@ export const JURISDICTION: JurisdictionFile = {
       sourceUrl:
         "https://lor2.gadoe.org/gadoe/file/718cd76e-7ea7-44a8-95bf-fd4047eb9cea/1/Social-Studies-Personal%20Finance-and-Economics-Georgia-Standards.pdf",
       adoption:
-        "Georgia's economics course (Fundamentals SSEF, Microeconomics SSEMI, Macroeconomics SSEMA, International SSEIN, Personal Finance SSEPF), course code 45.061, effective from the 2022-2023 school year. The international-trade and economic-systems standards are where the commodity curriculum lands. Two Personal Finance standards were added on 2026-08-28 when the banking course shipped; the SSEPF domain is no longer rejected wholesale, and notClaimed records which eight of the ten remain unclaimed. Re-fetched 2026-08-28 directly from the canonical lor2.gadoe.org PDF, which resolved this pass where it had refused connections in July 2026, so this framework's text is now transcribed from Georgia's own copy rather than a district mirror.",
+        "Georgia's economics course (Fundamentals SSEF, Microeconomics SSEMI, Macroeconomics SSEMA, International SSEIN, Personal Finance SSEPF), course code 45.061, effective from the 2022-2023 school year. The international-trade and economic-systems standards are where the commodity curriculum lands. Three Personal Finance standards were added on 2026-08-28, two when the banking course shipped and one (SSEPF2, for its reconciliation element only) when the cash-flow timing course did; the SSEPF domain is no longer rejected wholesale, and notClaimed records which seven of the ten remain unclaimed. Re-fetched 2026-08-28 directly from the canonical lor2.gadoe.org PDF, which resolved this pass where it had refused connections in July 2026, so this framework's text is now transcribed from Georgia's own copy rather than a district mirror.",
       standards: [
         {
           code: "SSEIN1",
@@ -393,6 +393,22 @@ export const JURISDICTION: JurisdictionFile = {
         // — Personal Finance, re-fetched 2026-08-28 when MONEY-02 shipped. The SSEPF domain was
         //   rejected wholesale until then; two of its ten standards are now genuinely reachable and
         //   the notClaimed entry records the supersession rather than being deleted.
+        // — Added 2026-08-28 when MONEY-03 (`cash-flow-timing`) shipped. ONE of SSEPF2's six
+        //   elements, and the standard's own stem is expressly NOT claimed: Georgia frames SSEPF2
+        //   as allocating income "through budgeting", and this catalog teaches no budgeting at all.
+        //   Element (e) is nevertheless an unusually exact fit, because it asks for the mechanism
+        //   (unposted transactions, weekend card activity, monthly auto-pay) rather than the habit.
+        {
+          code: "SSEPF2",
+          text: "Analyze income as a scarce resource that can be allocated effectively through budgeting.",
+          claimIds: [
+            "money.account-reconciliation-and-posting",
+            "money.payment-methods-and-clearing",
+            "money.funds-availability-schedule",
+          ],
+          coverage: "partial",
+          note: "Partial, and a teacher should read this note before planning against it, because ONE of the six elements is met and it is not the one the stem describes. THE STANDARD'S STEM IS NOT CLAIMED: MONEY-03 teaches no budgeting technique of any kind, on the record and in three separate lessons, so allocating income through budgeting is not taught here by anyone. WHAT IS TAUGHT IS ELEMENT (e), reconciling a checking account and accounting for transactions that have not been posted, and it is taught deeper than the element asks. The three examples Georgia names are each worked from their governing rule: a check, through the funds-availability schedule and the fact that a deposited credit is provisional until settlement is final (U.C.C. 4-201(a)); a weekend debit card transaction, through the definition of a business day as ten enumerated dates in 12 CFR 229.2 and through the separation of authorisation, posting and settlement into three dated events; and a monthly auto-pay, through 12 CFR 1005.10, which makes it a preauthorized electronic fund transfer carrying a three-business-day stop-payment window. The element's closing clause, how this helps avoid overdraft fees, is answered with the U.C.C. 4-303(b) permission to charge a day's items in any order, worked arithmetically, plus the 12 CFR 1030.11(a) statement totals that let a learner measure the result. NOT taught: elements (a) income types, (b) the Form 1040, (c) paystub components, (d) budget components and savings, and (f) net worth.",
+        },
         {
           code: "SSEPF3",
           text: "Explain how the financial system channels funds from savers to investors.",
@@ -480,7 +496,7 @@ export const JURISDICTION: JurisdictionFile = {
     },
     {
       heading: "Economics — most of the personal-finance course, macroeconomics, and the market-structure standards.",
-      body: "This entry used to reject the whole personal-finance domain, SSEPF1-10, on the ground that the catalog taught none of it. That changed on 2026-08-28 and the correction is recorded here rather than deleted: SSEPF3 (comparing financial institutions, and comparing cash, debit, prepaid and mobile payment) and SSEPF9 (how consumers are protected by rules and regulations) are now claimed, partially, and supersede the blanket rejection. The other eight remain unclaimed and are named so the gap stays visible: SSEPF1 (major life decisions), SSEPF2 (income and budgeting), SSEPF4 (interest rates), SSEPF5 (taxes), SSEPF6 (credit), SSEPF7 (insurance), SSEPF8 (how earnings are determined), and SSEPF10 (identity theft). Unchanged: macroeconomics (SSEMA1-3 — GDP, the Federal Reserve, fiscal policy), the microeconomic circular-flow and market-structure standards (SSEMI1, SSEMI3), the scarcity and rational-decision standards (SSEF1, SSEF2, SSEF4), and the exchange-rate standard (SSEIN2) were checked and are not taught. We claim the international-trade and economic-systems standards where the lessons land.",
+      body: "This entry used to reject the whole personal-finance domain, SSEPF1-10, on the ground that the catalog taught none of it. That changed on 2026-08-28 and the correction is recorded here rather than deleted: SSEPF3 (comparing financial institutions, and comparing cash, debit, prepaid and mobile payment), SSEPF9 (how consumers are protected by rules and regulations) and SSEPF2 (claimed for element (e) alone, reconciling a checking account and accounting for unposted transactions) are now claimed, partially, and supersede the blanket rejection. SSEPF2 deserves its caveat here as well as on its own entry: Georgia's stem is about allocating income through BUDGETING, and this catalog teaches no budgeting technique at all, so five of that standard's six elements are not taught and the stem itself is not claimed. The other seven standards remain unclaimed and are named so the gap stays visible: SSEPF1 (major life decisions), SSEPF4 (interest rates), SSEPF5 (taxes), SSEPF6 (credit), SSEPF7 (insurance), SSEPF8 (how earnings are determined), and SSEPF10 (identity theft). Unchanged: macroeconomics (SSEMA1-3 — GDP, the Federal Reserve, fiscal policy), the microeconomic circular-flow and market-structure standards (SSEMI1, SSEMI3), the scarcity and rational-decision standards (SSEF1, SSEF2, SSEF4), and the exchange-rate standard (SSEIN2) were checked and are not taught. We claim the international-trade and economic-systems standards where the lessons land.",
     },
     {
       heading: "World and U.S. history beyond the mapped standards.",
