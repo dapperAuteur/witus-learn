@@ -1918,5 +1918,597 @@ Consumer Financial Protection Bureau. (2024, December 18). *I was denied a check
         ],
       },
     },
+
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 4 — Overdraft, and where the cost lands
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "overdraft-is-a-mechanism",
+      title: "13 · Overdraft is a mechanism, and it has an on switch",
+      section: "Section 4 · Overdraft, and where the cost lands",
+      body: `An overdraft fee is not a penalty the bank is obliged to charge. It is the price of a service, and for one important class of transactions the service is one you had to switch on.
+
+**The regulation is Regulation E, 12 CFR 1005.17(b).** Before assessing a fee for paying an **ATM or one-time debit card** transaction that overdraws an account, an institution must do four things in order:
+
+1. Provide "a notice in writing, or if the consumer agrees, electronically, **segregated from all other information**, describing the institution's overdraft service";
+2. Provide "a reasonable opportunity for the consumer to affirmatively consent, or opt in, to the service for ATM and one-time debit card transactions";
+3. Obtain "the consumer's affirmative consent, or opt-in"; and
+4. Provide "confirmation of the consumer's consent in writing", including "a statement informing the consumer of the right to revoke such consent".
+
+**The word "segregated" is doing work.** The notice cannot be a clause buried in a signature packet. It has to stand apart, which is a small piece of regulatory design aimed at exactly the failure it names.
+
+**Now the boundary of the rule, which is the single most misunderstood fact about overdraft.** The opt-in covers **ATM withdrawals and one-time debit card purchases**. It does not cover a paper check. It does not cover an automated clearing house payment, which is how most rent, utility and loan payments move. It does not cover a **recurring** debit card payment, such as a subscription set up on the card.
+
+**So a person can decline overdraft coverage and still be charged an overdraft fee.** They declined it for the transactions the rule covers. The rent payment that hit on the wrong day was never inside the rule. Understanding that boundary is the difference between believing you turned something off and knowing exactly what you turned off.
+
+**Two more mechanics worth knowing, because they decide how many fees a single short day produces.** Fees are generally charged **per item**, so one morning with three transactions and a low balance is not automatically one fee. And the **order in which items are posted** during the day determines which of them overdraw. Both of these are institution practice rather than a single national rule, so the place to read them is the account disclosures from Section 1 and the account agreement, not this course.
+
+**And the fourth step of the opt-in rule is the one people forget: consent is revocable.** The confirmation the institution sends has to say so. If you opted in years ago and have not thought about it since, that is a decision you are still making.
+
+${NOT_ADVICE}
+
+**Nothing here tells you whether to opt in.** For some households, having a debit card purchase go through matters more than the fee; for others the reverse. This lesson tells you that the switch exists, what it covers, what it does not, and that it can be flipped back.
+
+:::reveal Which transactions does the Regulation E overdraft opt-in cover? ||| ATM withdrawals and one-time debit card transactions, and only those.
+
+:::reveal Name two kinds of payment the opt-in does NOT cover. ||| Paper checks and automated clearing house payments, and also recurring debit card payments.
+
+:::reveal What must the confirmation of an opt-in tell the consumer? ||| That the consent can be revoked.
+
+## Vocabulary
+- **Overdraft service**: an institution paying a transaction that would overdraw an account, and charging a fee for doing so.
+- **Opt-in**: the affirmative consent Regulation E requires before an overdraft fee may be charged on an ATM or one-time debit card transaction.
+- **Segregated notice**: the requirement that the overdraft-service description stand apart from all other information rather than sit inside a packet.
+- **Per-item fee**: the common structure in which each overdrawing transaction is charged separately, so one short day can produce several fees.
+- **Posting order**: the sequence in which a day's transactions are applied to a balance, which determines which of them overdraw.
+
+## Sources
+Consumer Financial Protection Bureau. (n.d.). *12 CFR 1005.17 - Requirements for overdraft services*. https://www.consumerfinance.gov/rules-policy/regulations/1005/17/
+
+Federal Deposit Insurance Corporation. (2024, November). *2023 FDIC national survey of unbanked and underbanked households*. https://www.fdic.gov/household-survey`,
+    },
+    {
+      slug: "the-rule-that-was-repealed",
+      title: "14 · The rule that was made, and then unmade",
+      section: "Section 4 · Overdraft, and where the cost lands",
+      body: `Here is a thing a course written in early 2025 would have got wrong, which is why this one names dates.
+
+**In December 2024 the Consumer Financial Protection Bureau finalised a rule** titled *Overdraft Lending: Very Large Financial Institutions*. **In 2025 Congress disapproved it.** Senate Joint Resolution 18 became **Public Law 119-10**, approved **9 May 2025**, and its official title is "Joint resolution disapproving the rule submitted by the Bureau of Consumer Financial Protection relating to 'Overdraft Lending: Very Large Financial Institutions'" (U.S. Government Publishing Office, n.d.).
+
+**The mechanism that did it is worth knowing on its own, because it applies far beyond banking.** The Congressional Review Act lets Congress nullify a recently finalised agency rule by joint resolution. Its consequence is unusually strong: under **5 U.S.C. 801(b)(2)**, a rule disapproved this way "may not be reissued in substantially the same form, and a new rule that is substantially the same as such a rule may not be issued, unless the reissued or new rule is specifically authorized by a law enacted after the date of the joint resolution."
+
+**Read that clause carefully.** A disapproval does not merely cancel the rule. It closes the door on the agency writing that rule again, absent a new statute. So the correct present-tense sentence about the 2024 overdraft rule is: **it is not in force, and the agency cannot reissue it in substantially the same form.**
+
+**What that leaves standing.** The Regulation E opt-in from the previous lesson is untouched: it is an older rule, and nothing here disturbed it. Institutions set their own overdraft fee amounts, and the Truth in Savings disclosure requirement from Section 1 is how you read them.
+
+**Now the money, and its own caveat.** The CFPB publishes overdraft and non-sufficient-funds fee revenue from bank call reports. Its Data Spotlight of **24 April 2024**, read on **28 August 2026**, reported that "combined reported bank overdraft/NSF fee revenue was $5.83 billion" in 2023, "a decrease of 51%, or $6.13 billion, compared to the $11.96 billion reported in 2019" (CFPB, 2024).
+
+**And then the sentence that makes the figure honest.** The same document states that the revenue "excludes overdraft/NSF revenue generated by banks with assets of $1 billion or less, which are not required to report overdraft/NSF fee revenue as a separate line item in their call report data, as well as overdraft/NSF revenue generated by all credit unions."
+
+**So $5.83 billion is a floor, not a total.** Every small bank and every credit union in the country is outside it. That is not a criticism of the CFPB, which says so plainly in its own text. It is a lesson about reading any number built from a regulatory filing: **the filing threshold defines the number**, and if you do not know the threshold you do not know what you are holding.
+
+**The pattern to carry away is the one this course keeps returning to.** A figure has a date. A rule has a status. And a total assembled from mandatory reports covers exactly the institutions the mandate reaches.
+
+:::reveal What happened to the CFPB's 2024 overdraft rule? ||| Congress disapproved it. Public Law 119-10, approved 9 May 2025, nullified it under the Congressional Review Act.
+
+:::reveal What does 5 U.S.C. 801(b)(2) prevent after a disapproval? ||| Reissuing the rule in substantially the same form, or issuing a substantially similar new one, unless a later statute specifically authorises it.
+
+:::reveal Why is the CFPB's $5.83 billion figure a floor rather than a total? ||| It excludes banks with $1 billion or less in assets, which do not report the item separately, and it excludes all credit unions.
+
+## Vocabulary
+- **Congressional Review Act**: the procedure by which Congress may nullify a recently finalised agency rule by joint resolution, with an unusually strong bar on reissuing it.
+- **Joint resolution of disapproval**: the instrument used, which becomes a public law when signed, as Public Law 119-10 did on 9 May 2025.
+- **Substantially the same form**: the statutory phrase that stops an agency reissuing a disapproved rule without new authorising legislation.
+- **Call report**: the periodic regulatory filing from which the CFPB's overdraft revenue figures are built, and whose reporting threshold defines what the figures can cover.
+- **A floor, not a total**: how to read any aggregate assembled from mandatory filings that only some institutions are required to make.
+
+## Sources
+U.S. Government Publishing Office. (n.d.). *Public Law 119-10*. https://www.govinfo.gov/app/details/PLAW-119publ10
+
+5 U.S.C. § 801. (n.d.). *Congressional review*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title5-section801&num=0&edition=prelim
+
+Consumer Financial Protection Bureau. (2024, April 24). *Overdraft/NSF revenue in 2023 down more than 50% versus pre-pandemic levels, saving consumers over $6 billion annually*. https://www.consumerfinance.gov/data-research/research-reports/data-spotlight-overdraft-nsf-revenue-in-2023-down-more-than-50-versus-pre-pandemic-levels-saving-consumers-over-6-billion-annually/`,
+    },
+    {
+      slug: "why-the-cost-lands-on-a-low-balance",
+      title: "15 · Why the cost lands where it does, and what an alternative looks like",
+      section: "Section 4 · Overdraft, and where the cost lands",
+      body: `Put the last two sections together and the shape of the problem is arithmetic rather than opinion.
+
+**A household with a comfortable balance is charged almost nothing.** The maintenance fee is waived by the balance itself. No transaction overdraws, so no per-item fee is charged. The account is genuinely free, and the person holding it will tell you honestly that banking costs them nothing.
+
+**A household whose balance runs near zero pays the same account's other price.** The maintenance fee applies in exactly the months the balance dipped. A transaction that arrives before a deposit clears triggers a per-item fee, and because fees are per item, a single bad day can produce several. The account is expensive, and it is most expensive in the worst weeks.
+
+**The mechanism that creates the bad day is timing, not overspending.** Rent is due on the first. Pay lands on the fifth. That gap is not a budgeting failure and no amount of planning removes it, because the household does not control either date. Every fee described in this section is triggered by a **sequence**, and a household with a cushion never meets the sequence at all.
+
+**This is why the survey answer in Section 2 was two answers.** 30.7 percent of unbanked households said bank account fees are too high; **29.3 percent** said they are too **unpredictable** (FDIC, 2024). Those are different complaints. A predictable cost can be planned around at any income. An unpredictable one cannot, and it is the unpredictability that makes a fee you can read off a wall look attractive by comparison. Section 5 is about the market that sells exactly that.
+
+**Now, is a different account structure possible?** Yes, and it exists, which is worth knowing because it turns an argument into a comparison.
+
+**The Bank On National Account Standards are a voluntary certification, not a law.** They are published by the **Cities for Financial Empowerment Fund**, a nonprofit, and an institution's account is certified against them only if it applies. Nothing requires any bank to offer one. Read on **28 August 2026**, the **2025-2026** standards require, among the core features:
+
+- **Minimum opening deposit**: "$25 or less".
+- **Monthly maintenance fee**: "If not waivable: $5 or less. If waivable: $10 or less; offer at least two options to waive fee entirely with a single transaction".
+- **Overdraft or Non-Sufficient Funds (NSF) Fees**: "**None**".
+- **Account Activation, Closure, Dormancy, Inactivity, and Low Balance Fees**: "None".
+- **Insured Account**: "Deposits Insured by FDIC, NCUSIF, or regulator-sanctioned equivalent" (CFE Fund, 2025).
+
+**And two of its strongly recommended features answer this course's two gates directly.** On account screening, it recommends institutions "Only deny new customers for past incidences of actual fraud". On documentation, it recommends they "Accept ITINs and government-issued IDs (e.g., municipal, consular, other government) as primary documentation for account opening" (CFE Fund, 2025).
+
+**Notice what that second recommendation implies.** Nothing in the Customer Identification Program rule from Section 1 prevented accepting an ITIN. The standard is not asking institutions to break a rule. It is asking them to stop requiring more than the rule does.
+
+**This course names the standards because they are a published document you can read, not as a recommendation.** Whether such an account exists near you, and whether it suits you, is not something this course can know.
+
+:::reveal Why is a low-balance household charged more for the same account? ||| The maintenance fee applies in the months its balance dips, and per-item overdraft fees trigger on a sequence a household with a cushion never meets.
+
+:::reveal What makes an unpredictable fee different from an expensive one? ||| A predictable cost can be planned around at any income. An unpredictable one cannot, which is why 29.3 percent gave unpredictability as a separate reason.
+
+:::reveal What do the Bank On standards say about overdraft and NSF fees? ||| None, with no grace period, warning or reversal exception.
+
+## Vocabulary
+- **Timing gap**: the interval between when money is due and when it arrives, which is what triggers overdraft rather than overspending.
+- **Per-item fee structure**: the practice of charging separately for each overdrawing transaction, so a single day can produce several fees.
+- **Bank On National Account Standards**: a voluntary certification published by the Cities for Financial Empowerment Fund setting core features for a low-cost transaction account.
+- **Certification, not regulation**: the correct status of those standards, since no institution is required to offer or apply for a certified account.
+- **Requiring more than the rule**: the gap the standards' documentation recommendation addresses, since the federal identity rule never barred an ITIN.
+
+## Sources
+Cities for Financial Empowerment Fund. (2025). *Bank On national account standards (2025-2026)*. https://joinbankon.org/
+
+Federal Deposit Insurance Corporation. (2024, November). *2023 FDIC national survey of unbanked and underbanked households*. https://www.fdic.gov/household-survey`,
+    },
+    {
+      slug: "quiz-overdraft-and-cost",
+      title: "16 · Knowledge check: the opt-in, the repeal, and the price",
+      section: "Section 4 · Overdraft, and where the cost lands",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "Which regulation sets the overdraft opt-in requirement?",
+            options: ["12 CFR 1005.17", "12 CFR 1030.4, which requires account disclosures before opening and upon request", "15 U.S.C. 1681m, which governs adverse action notices based on consumer reports", "31 CFR 1020.220, which sets the identifying information required before an account is opened"],
+            correctIndex: 0,
+            explanation: "It is part of Regulation E, and it applies before a fee may be assessed for paying an ATM or one-time debit card transaction that overdraws.",
+            sourceLessonSlug: "overdraft-is-a-mechanism",
+          },
+          {
+            prompt: "How many steps does the opt-in rule require before an overdraft fee may be charged?",
+            options: ["Four", "One, being the consumer's signature on the account agreement at opening", "Two, being a written notice followed by the consumer's consent", "Six, adding an annual reconfirmation and a written cost estimate to the four core steps"],
+            correctIndex: 0,
+            explanation: "A segregated notice, a reasonable opportunity to consent, the consent itself, and a written confirmation stating the right to revoke.",
+            sourceLessonSlug: "overdraft-is-a-mechanism",
+          },
+          {
+            prompt: "What does the rule require of the overdraft-service notice itself?",
+            options: ["That it be segregated from other information", "That it be delivered by certified post to the consumer's address of record", "That it be reviewed aloud with the consumer by a branch employee before signing", "That it disclose the institution's total overdraft revenue for the preceding year"],
+            correctIndex: 0,
+            explanation: "Segregation stops the description being buried in a signature packet, which is the failure the requirement is aimed at.",
+            sourceLessonSlug: "overdraft-is-a-mechanism",
+          },
+          {
+            prompt: "Which transactions does the opt-in cover?",
+            options: ["ATM and one-time debit card transactions", "Every transaction that can overdraw an account, including checks and automated clearing house payments", "Only paper checks presented for payment against an account with insufficient funds", "Only recurring debit card payments set up in advance with a merchant"],
+            correctIndex: 0,
+            explanation: "The rule names ATM and one-time debit card transactions, and only those.",
+            sourceLessonSlug: "overdraft-is-a-mechanism",
+          },
+          {
+            prompt: "Which of these is OUTSIDE the opt-in rule?",
+            options: ["An automated clearing house payment", "A cash withdrawal made at an automated teller machine using a debit card", "A single grocery purchase made with a debit card at the point of sale", "A one-time debit card payment made online to a merchant the consumer has not used before"],
+            correctIndex: 0,
+            explanation: "Checks, ACH payments and recurring debit card payments were never inside the rule, which is how a consumer who declined coverage can still be charged.",
+            sourceLessonSlug: "overdraft-is-a-mechanism",
+          },
+          {
+            prompt: "Can a consumer who declined overdraft coverage still be charged an overdraft fee?",
+            options: ["Yes", "No, declining the service bars any overdraft fee on the account entirely", "No, unless the institution obtains a second written consent from the consumer", "Only at an institution with more than $10 billion in consolidated assets"],
+            correctIndex: 0,
+            explanation: "They declined it for the transactions the rule covers; a rent payment moving by ACH was never inside the rule.",
+            sourceLessonSlug: "overdraft-is-a-mechanism",
+          },
+          {
+            prompt: "What must the written confirmation of an opt-in tell the consumer?",
+            options: ["That consent may be revoked", "The dollar amount of every overdraft fee the institution charged in the preceding year", "The order in which the institution posts transactions during a business day", "That the consent expires automatically after twelve months unless renewed"],
+            correctIndex: 0,
+            explanation: "The fourth step of the rule requires a statement informing the consumer of the right to revoke such consent.",
+            sourceLessonSlug: "overdraft-is-a-mechanism",
+          },
+          {
+            prompt: "Why can one short day produce more than one overdraft fee?",
+            options: ["Fees are generally charged per item", "Because federal regulation requires a separate fee for each hour the balance stays negative", "Because the institution must charge one fee for the overdraft and one for restoring the balance", "Because a single fee is charged and then doubled if the balance is not restored by close of business"],
+            correctIndex: 0,
+            explanation: "Each overdrawing transaction is charged separately, so three transactions against a low balance are not automatically one fee.",
+            sourceLessonSlug: "overdraft-is-a-mechanism",
+          },
+          {
+            prompt: "What determines which of a day's transactions overdraw an account?",
+            options: ["The posting order", "The size of each transaction, since the largest is always applied last by federal rule", "The type of merchant, since debit card purchases are always posted before other items", "The time of day the consumer authorised each transaction, recorded to the minute"],
+            correctIndex: 0,
+            explanation: "Posting order is institution practice rather than a single national rule, which is why the account disclosures and agreement are where to read it.",
+            sourceLessonSlug: "overdraft-is-a-mechanism",
+          },
+          {
+            prompt: "Where does the lesson send a learner to read their own institution's posting order and fee amounts?",
+            options: ["The account disclosures and agreement", "The Consumer Financial Protection Bureau's published overdraft data spotlight", "The Regulation E text at 12 CFR 1005.17, which sets both nationally", "The institution's quarterly call report filed with its federal supervisor"],
+            correctIndex: 0,
+            explanation: "Both are institution practice, and Truth in Savings requires the fee and the conditions under which it applies to be disclosed.",
+            sourceLessonSlug: "overdraft-is-a-mechanism",
+          },
+          {
+            prompt: "How does this lesson describe an overdraft fee?",
+            options: ["The price of a service", "A penalty federal law requires an institution to impose when an account is overdrawn", "A charge set by the Consumer Financial Protection Bureau and applied uniformly", "A recovery of the institution's actual cost of processing a returned item"],
+            correctIndex: 0,
+            explanation: "It is the price of the institution paying a transaction it did not have to pay, and for ATM and one-time debit card items the consumer had to switch the service on.",
+            sourceLessonSlug: "overdraft-is-a-mechanism",
+          },
+          {
+            prompt: "What does this course say about whether a learner should opt in?",
+            options: ["Nothing, that is not its job", "That declining is always the cheaper choice for any household over a full year", "That opting in is advisable for households whose income varies from month to month", "That the decision should be reviewed with the branch manager at least annually"],
+            correctIndex: 0,
+            explanation: "It says the switch exists, what it covers, what it does not, and that consent is revocable, which is information rather than advice.",
+            sourceLessonSlug: "overdraft-is-a-mechanism",
+          },
+          {
+            prompt: "What was the title of the CFPB rule that Congress disapproved?",
+            options: ["Overdraft Lending: Very Large Financial Institutions", "Requirements for Overdraft Services, being the Regulation E opt-in rule at 12 CFR 1005.17", "Truth in Savings: Account Disclosures for Consumer Deposit Accounts", "Prepaid Accounts Under the Electronic Fund Transfer Act and the Truth in Lending Act"],
+            correctIndex: 0,
+            explanation: "The CFPB finalised it in December 2024, and the joint resolution disapproving it names it in the resolution's own title.",
+            sourceLessonSlug: "the-rule-that-was-repealed",
+          },
+          {
+            prompt: "Which public law disapproved that rule, and when was it approved?",
+            options: ["Public Law 119-10, on 9 May 2025", "Public Law 119-18, on 26 March 2025, the date the Senate passed the resolution", "Public Law 117-2, which is the American Rescue Plan Act rather than a disapproval resolution", "Public Law 118-10, approved in December 2024 on the day the rule was finalised"],
+            correctIndex: 0,
+            explanation: "It began as Senate Joint Resolution 18 and its official title names the rule it disapproves.",
+            sourceLessonSlug: "the-rule-that-was-repealed",
+          },
+          {
+            prompt: "Which statute provides the disapproval mechanism used here?",
+            options: ["The Congressional Review Act", "The Administrative Procedure Act, under which a court may vacate a rule as arbitrary and capricious", "The Regulatory Flexibility Act, which requires agencies to consider effects on small entities", "The Paperwork Reduction Act, which governs information collections imposed by agencies"],
+            correctIndex: 0,
+            explanation: "It lets Congress nullify a recently finalised agency rule by joint resolution, and its consequence is codified at 5 U.S.C. 801.",
+            sourceLessonSlug: "the-rule-that-was-repealed",
+          },
+          {
+            prompt: "What does 5 U.S.C. 801(b)(2) forbid after a rule is disapproved?",
+            options: ["Reissuing it in substantially the same form", "Any further rulemaking by the agency on any subject for the remainder of the Congress", "Enforcement of the rule against institutions that had already begun complying with it", "Publication of the rule's text in the Federal Register or in the Code of Federal Regulations"],
+            correctIndex: 0,
+            explanation: "A substantially similar new rule is barred too, unless specifically authorised by a law enacted after the disapproval resolution.",
+            sourceLessonSlug: "the-rule-that-was-repealed",
+          },
+          {
+            prompt: "What would make it lawful for the agency to issue a substantially similar rule later?",
+            options: ["A law enacted after the disapproval", "A court order vacating the joint resolution as an unconstitutional legislative veto", "A change of administration, which resets the agency's rulemaking authority", "The passage of five years from the date the joint resolution was approved"],
+            correctIndex: 0,
+            explanation: "The statute says unless the reissued or new rule is specifically authorized by a law enacted after the date of the joint resolution.",
+            sourceLessonSlug: "the-rule-that-was-repealed",
+          },
+          {
+            prompt: "What is the correct present-tense statement about the 2024 overdraft rule?",
+            options: ["It is not in force", "It applies only to institutions with more than $10 billion in consolidated assets", "It takes effect on a delayed schedule agreed between Congress and the agency", "It is being litigated and its status will be settled by a federal appellate court"],
+            correctIndex: 0,
+            explanation: "It was nullified, and under the Congressional Review Act the agency cannot reissue it in substantially the same form without new authorising legislation.",
+            sourceLessonSlug: "the-rule-that-was-repealed",
+          },
+          {
+            prompt: "What did the disapproval leave untouched?",
+            options: ["The Regulation E opt-in", "The Truth in Savings requirement to disclose fees, which the resolution repealed alongside it", "The Fair Credit Reporting Act's adverse action notice duty, which was suspended by the same law", "Deposit insurance coverage for consumer checking accounts, which was reduced accordingly"],
+            correctIndex: 0,
+            explanation: "The opt-in is an older rule at 12 CFR 1005.17 and nothing in the disapproval disturbed it.",
+            sourceLessonSlug: "the-rule-that-was-repealed",
+          },
+          {
+            prompt: "What did the CFPB report as combined bank overdraft and NSF fee revenue for 2023?",
+            options: ["$5.83 billion", "$11.96 billion, which was the figure reported for 2019 rather than for 2023", "$6.13 billion, which was the size of the decrease rather than the level of revenue", "$7.7 billion, which was the figure reported for 2022 in an earlier data spotlight"],
+            correctIndex: 0,
+            explanation: "The Data Spotlight of 24 April 2024 describes it as a 51 percent decrease against the 2019 level.",
+            sourceLessonSlug: "the-rule-that-was-repealed",
+          },
+          {
+            prompt: "What was the reported figure for 2019, against which the 2023 number is compared?",
+            options: ["$11.96 billion", "$5.83 billion, which is the 2023 figure rather than the pre-pandemic comparison", "$6.13 billion, which is the difference between the two years rather than either level", "$2 billion, which is the reduction the CFPB attributed to eliminated NSF fees alone"],
+            correctIndex: 0,
+            explanation: "The decrease from 2019 to 2023 was $6.13 billion, or 51 percent.",
+            sourceLessonSlug: "the-rule-that-was-repealed",
+          },
+          {
+            prompt: "Which institutions are excluded from the CFPB's reported overdraft revenue figure?",
+            options: ["Small banks and all credit unions", "Institutions supervised by the Federal Reserve rather than by the FDIC", "Institutions that eliminated non-sufficient funds fees before the reporting year", "Institutions whose overdraft revenue fell by more than half against the prior year"],
+            correctIndex: 0,
+            explanation: "Banks with assets of $1 billion or less are not required to report the item as a separate line in their call reports, and credit unions are outside the series entirely.",
+            sourceLessonSlug: "the-rule-that-was-repealed",
+          },
+          {
+            prompt: "Why does that exclusion make $5.83 billion a floor?",
+            options: ["Excluded institutions also charge these fees", "Because the CFPB rounds every reported figure downward to the nearest hundred million", "Because the figure counts only fees that consumers successfully disputed and recovered", "Because the reporting year ends before the fourth quarter's fees have been collected"],
+            correctIndex: 0,
+            explanation: "The published total covers exactly the institutions the reporting mandate reaches, and every small bank and credit union sits outside it.",
+            sourceLessonSlug: "the-rule-that-was-repealed",
+          },
+          {
+            prompt: "What general lesson does the lesson draw from that caveat?",
+            options: ["The filing threshold defines the number", "That regulatory data should be treated as unreliable unless independently audited", "That agencies deliberately understate industry revenue when publishing research", "That a figure assembled from filings is always larger than the true total"],
+            correctIndex: 0,
+            explanation: "It is not a criticism of the CFPB, which says so in its own text; it is how to read any aggregate built from mandatory reports.",
+            sourceLessonSlug: "the-rule-that-was-repealed",
+          },
+          {
+            prompt: "Who sets the dollar amount of an overdraft fee now?",
+            options: ["The institution", "The Consumer Financial Protection Bureau, at the level set by its December 2024 rule", "Congress, through the joint resolution that disapproved the 2024 rule", "The FDIC, as a condition of deposit insurance for consumer transaction accounts"],
+            correctIndex: 0,
+            explanation: "With the 2024 rule nullified, the amount is the institution's, and Truth in Savings is how a consumer reads it.",
+            sourceLessonSlug: "the-rule-that-was-repealed",
+          },
+          {
+            prompt: "Why does the lesson say a course written in early 2025 would have got this wrong?",
+            options: ["The rule's status changed in May 2025", "Because the CFPB withdrew the rule voluntarily before any resolution was introduced", "Because the rule's effective date was moved forward rather than nullified", "Because the underlying statute was amended to change what the rule could cover"],
+            correctIndex: 0,
+            explanation: "It was finalised in December 2024 and disapproved by a public law approved on 9 May 2025, which is why the course names dates rather than describing rules in the present tense.",
+            sourceLessonSlug: "the-rule-that-was-repealed",
+          },
+          {
+            prompt: "Why is a comfortable balance effectively a free account?",
+            options: ["The balance waives the fee and nothing overdraws", "Because institutions are required to waive maintenance fees above a federally set threshold", "Because interest earned on a larger balance offsets every fee charged in the same month", "Because larger accounts are exempt from Truth in Savings fee disclosures entirely"],
+            correctIndex: 0,
+            explanation: "The maintenance fee waiver applies and no transaction meets the sequence that triggers a per-item fee.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "What creates the bad day that triggers overdraft fees, in this lesson's account?",
+            options: ["Timing", "Overspending relative to income across the month as a whole", "A failure to reconcile the account against the institution's own statement", "The institution reordering transactions in a way that federal regulation forbids"],
+            correctIndex: 0,
+            explanation: "Rent due on the first and pay landing on the fifth is a sequence the household controls neither end of, and no amount of planning removes it.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "Why does a household with a cushion never meet that sequence?",
+            options: ["The cushion covers the gap", "Because its institution posts transactions in a different order for larger balances", "Because it is exempt from per-item fees under the terms of its account agreement", "Because its income arrives on the first of the month rather than on the fifth"],
+            correctIndex: 0,
+            explanation: "The fee is triggered by a balance running out before a deposit clears, and a cushion means the balance does not run out.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "What share of unbanked households said bank account fees are too unpredictable?",
+            options: ["29.3 percent", "30.7 percent, which was the share saying that bank account fees are too high", "42.3 percent, which was the share citing a lack of money for a minimum balance", "33.4 percent, which was the grouped fee-and-balance share for the MAIN reason"],
+            correctIndex: 0,
+            explanation: "It is a separate survey item from fees being too high, and it got its own answer.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "Why does the lesson treat expense and unpredictability as different complaints?",
+            options: ["A predictable cost can be planned around", "Because the FDIC combines them into a single figure when reporting main reasons", "Because unpredictability affects only households whose income arrives weekly", "Because an unpredictable fee is always larger than a predictable one in practice"],
+            correctIndex: 0,
+            explanation: "That difference is what makes a fee posted on a wall attractive by comparison, which is the whole subject of the next section.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "What are the Bank On National Account Standards, in status?",
+            options: ["A voluntary certification", "A federal regulation issued by the FDIC and binding on insured depository institutions", "A model state law adopted by a majority of states for consumer transaction accounts", "A condition of federal deposit insurance for accounts held by lower-income households"],
+            correctIndex: 0,
+            explanation: "They are published by the Cities for Financial Empowerment Fund, a nonprofit, and an account is certified only if the institution applies.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "Who publishes the Bank On National Account Standards?",
+            options: ["The Cities for Financial Empowerment Fund", "The Federal Deposit Insurance Corporation, as part of its economic inclusion work", "The Consumer Financial Protection Bureau, under its authority over consumer deposit products", "The Federal Reserve Bank of St. Louis, which also hosts the programme's data hub"],
+            correctIndex: 0,
+            explanation: "It is a nonprofit, which is why the course is careful to call the standards a certification rather than a rule.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "What minimum opening deposit do the 2025-2026 standards allow?",
+            options: ["$25 or less", "$100 or less, matching the threshold most institutions apply to a basic checking account", "$5 or less, which is the standard's cap on a non-waivable monthly maintenance fee", "No opening deposit at all, since the standards prohibit any opening requirement"],
+            correctIndex: 0,
+            explanation: "It is one of the core features, read from the standards on 28 August 2026.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "What monthly maintenance fee do the standards allow if the fee is NOT waivable?",
+            options: ["$5 or less", "$10 or less, which is the cap that applies when the fee IS waivable", "$25 or less, which is the standard's cap on the minimum opening deposit", "$2 or less, which is the standard's cap on a mailed paper statement"],
+            correctIndex: 0,
+            explanation: "If the fee is waivable the cap is $10 or less, and the institution must offer at least two ways to waive it entirely with a single transaction.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "What do the standards require of a waivable monthly maintenance fee?",
+            options: ["At least two single-transaction waiver options", "That the waiver apply automatically once the balance exceeds a stated threshold", "That the institution refund the fee if the consumer requests it within thirty days", "That the fee be prorated to the number of days the balance was below the threshold"],
+            correctIndex: 0,
+            explanation: "The standard gives direct deposit with no minimum, online bill pay, and a debit card purchase as examples of qualifying single transactions.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "What do the standards say about overdraft and non-sufficient funds fees?",
+            options: ["None", "They must be capped at $5 per item, matching the CFPB's disapproved 2024 rule", "They are permitted if the consumer has affirmatively opted in under Regulation E", "They are permitted once per statement cycle and must be reversed on request"],
+            correctIndex: 0,
+            explanation: "The core-features table states none, which is the sharpest single line in the document.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "Which other fees do the standards prohibit outright?",
+            options: ["Activation, closure, dormancy, inactivity and low balance", "Out-of-network ATM fees and international transaction fees on the debit card", "Wire transfer fees and stop payment fees requested by the account holder", "Fees for replacing a lost debit card or for expedited card delivery"],
+            correctIndex: 0,
+            explanation: "They are listed together in the core-features table, which is aimed squarely at the fees that surface when an account stops being used as expected.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "What do the standards require about deposit insurance?",
+            options: ["Deposits insured by FDIC, NCUSIF or equivalent", "That the institution carry private insurance in addition to federal coverage", "That the account be excluded from insurance in exchange for the lower fee structure", "That the institution disclose the insurance status only on request from the consumer"],
+            correctIndex: 0,
+            explanation: "The standard names FDIC, NCUSIF, or a regulator-sanctioned equivalent, which ties the certification back to Section 1's insurance structure.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "What do the standards strongly recommend about account screening?",
+            options: ["Deny only for past incidences of actual fraud", "That institutions stop using screening reports entirely when opening consumer accounts", "That institutions provide the screening report to the applicant before deciding", "That institutions accept any applicant whose screening file is less than twelve months old"],
+            correctIndex: 0,
+            explanation: "It is a strongly recommended feature rather than a core one, and it answers Section 3's gate directly.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "What do the standards strongly recommend about account opening documentation?",
+            options: ["Accept ITINs and government-issued IDs", "Require two forms of photographic identification issued by a state or the federal government", "Waive identification requirements for applicants referred by a community organisation", "Accept a utility bill in place of any government-issued identification document"],
+            correctIndex: 0,
+            explanation: "It names municipal, consular and other government identification as acceptable primary documentation, which is the standard asking institutions to stop requiring more than the federal rule does.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "What does that documentation recommendation imply about the federal identity rule?",
+            options: ["It never barred an ITIN", "That it requires a driver's licence, which the standard asks institutions to waive", "That it applies only to applicants who are not U.S. persons", "That it was amended to permit consular identification after the standards were published"],
+            correctIndex: 0,
+            explanation: "The Customer Identification Program rule requires a taxpayer identification number, a category that includes an ITIN, so the standard is asking for less than institutions often require, not for a rule to be broken.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "Why does this course name the Bank On standards at all?",
+            options: ["They are a published document you can read", "Because they are the only account structure the course recommends to learners", "Because federal law requires every insured institution to offer a certified account", "Because they set the fee levels that the disapproved 2024 CFPB rule would have imposed"],
+            correctIndex: 0,
+            explanation: "Naming a readable standard turns an argument about whether a cheaper structure is possible into a comparison against a document.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "What does the course say it cannot know about a certified account?",
+            options: ["Whether one exists near you or suits you", "Whether the standards are published by a nonprofit or by a federal agency", "Whether the standards prohibit overdraft and non-sufficient funds fees", "Whether an institution must apply in order for its account to be certified"],
+            correctIndex: 0,
+            explanation: "That is the not-advice boundary: the course describes the document and declines to make the individual decision.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "In which months does a maintenance fee with a balance waiver actually apply?",
+            options: ["The months the balance dipped", "Every month, since a waiver reduces the fee rather than removing it", "Only the first month after opening, while the waiver conditions are being established", "Only in months when the account had no transactions at all"],
+            correctIndex: 0,
+            explanation: "That is the sense in which it is a price sorted by balance: it is charged in exactly the months the household could least absorb it.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "How does this lesson describe the shape of the problem?",
+            options: ["Arithmetic rather than opinion", "A matter of financial literacy that education alone can resolve", "A consequence of institutions violating the disclosure rules in Regulation DD", "An artefact of the survey's definitions rather than of any real cost difference"],
+            correctIndex: 0,
+            explanation: "The same account carries two prices, and which one a household pays follows from a sequence rather than from a judgment about it.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "What is the relationship between the Regulation E opt-in and an institution's fee amount?",
+            options: ["The rule governs consent, not price", "The rule sets a maximum fee that institutions may charge per overdrawing item", "The rule requires the fee to be proportional to the amount by which the account is overdrawn", "The rule bars any fee at all once consent has been revoked in writing"],
+            correctIndex: 0,
+            explanation: "It requires a segregated notice, consent and a revocation statement before certain fees may be charged; the amount is the institution's.",
+            sourceLessonSlug: "overdraft-is-a-mechanism",
+          },
+          {
+            prompt: "A consumer opted in five years ago and has not thought about it since. What does the lesson say?",
+            options: ["That is a decision they are still making", "That the consent lapsed automatically after twelve months and must be renewed", "That the institution must have re-obtained consent at each account anniversary", "That the consent applies only to the transactions authorised in the first year"],
+            correctIndex: 0,
+            explanation: "Consent is revocable and the confirmation had to say so, so an unrevisited opt-in remains in force by default.",
+            sourceLessonSlug: "overdraft-is-a-mechanism",
+          },
+          {
+            prompt: "Which of these does the opt-in rule NOT require?",
+            options: ["A cap on the fee amount", "A notice describing the overdraft service, segregated from all other information", "A reasonable opportunity for the consumer to affirmatively consent", "Written confirmation of the consent, stating the right to revoke it"],
+            correctIndex: 0,
+            explanation: "The rule is about consent and disclosure, not about price, which is why the disapproved 2024 rule was a separate instrument entirely.",
+            sourceLessonSlug: "overdraft-is-a-mechanism",
+          },
+          {
+            prompt: "Why does the course insist on naming dates for rules as well as for figures?",
+            options: ["A rule has a status that can change", "Because the Federal Register requires a date whenever a rule is described in writing", "Because rules expire automatically five years after they are finalised", "Because a rule's effective date determines which states it applies in"],
+            correctIndex: 0,
+            explanation: "The 2024 overdraft rule is the worked example: finalised, then nullified, so any present-tense description without a date is a liability.",
+            sourceLessonSlug: "the-rule-that-was-repealed",
+          },
+          {
+            prompt: "What does the CFPB's data spotlight measure?",
+            options: ["Reported bank overdraft and NSF fee revenue", "The number of overdraft fees charged to each household in a typical year", "The average overdraft fee amount charged across all insured institutions", "The share of consumers who have opted in to overdraft coverage under Regulation E"],
+            correctIndex: 0,
+            explanation: "It is built from call report data, which is why the reporting threshold defines what the total can include.",
+            sourceLessonSlug: "the-rule-that-was-repealed",
+          },
+          {
+            prompt: "What asset threshold determines whether a bank reports overdraft revenue as a separate line item?",
+            options: ["$1 billion", "$10 billion, the threshold that defined the very large institutions in the disapproved 2024 rule", "$250,000, matching the standard maximum deposit insurance amount per depositor", "$5.83 billion, matching the total reported revenue for the year"],
+            correctIndex: 0,
+            explanation: "Banks at or below that size are not required to report it separately, so their fees are outside the published figure.",
+            sourceLessonSlug: "the-rule-that-was-repealed",
+          },
+          {
+            prompt: "Which of these best states the not-advice boundary applied in this section?",
+            options: ["Describe the switch, do not flip it", "Recommend the option that costs the least over a twelve-month period", "Recommend opting out for any household whose balance falls below the waiver threshold", "Decline to describe the overdraft mechanism at all, since it varies by institution"],
+            correctIndex: 0,
+            explanation: "The course explains what the opt-in covers and that it is revocable, and leaves the decision entirely with the reader.",
+            sourceLessonSlug: "overdraft-is-a-mechanism",
+          },
+          {
+            prompt: "Which Section 1 requirement is the practical companion to reading an overdraft fee?",
+            options: ["Truth in Savings account disclosures", "The Customer Identification Program rule's four required data elements", "The deposit insurance structure counted per depositor, per bank, per ownership category", "The requirement that coverage be automatic when an insured institution fails"],
+            correctIndex: 0,
+            explanation: "12 CFR 1030.4(b)(4) requires both the amount and the conditions under which the fee may be imposed.",
+            sourceLessonSlug: "overdraft-is-a-mechanism",
+          },
+          {
+            prompt: "By what percentage did reported overdraft and NSF revenue fall between 2019 and 2023?",
+            options: ["51 percent", "24 percent, which was the fall from 2022 to 2023 rather than from 2019", "76 percent, which would leave revenue at roughly a quarter of the 2019 level", "13 percent, matching the share of unbanked households citing an identification problem"],
+            correctIndex: 0,
+            explanation: "A fall of $6.13 billion, from $11.96 billion to $5.83 billion in reported revenue.",
+            sourceLessonSlug: "the-rule-that-was-repealed",
+          },
+          {
+            prompt: "What is the standard's cap on a mailed paper statement?",
+            options: ["$2 or less", "$5 or less, matching the cap on a non-waivable monthly maintenance fee", "$25 or less, matching the cap on the minimum opening deposit", "No charge at all, since the standards prohibit statement fees entirely"],
+            correctIndex: 0,
+            explanation: "Free electronic statements are required, with a mailed paper statement capped at $2 or less if offered.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "How would you describe the two prices of one account, in a sentence?",
+            options: ["Free above the threshold, expensive below it", "Identical for every holder, since federal regulation forbids differential pricing", "Higher for larger balances, which cost the institution more to insure and service", "Set by the regulator at opening and fixed for the life of the account"],
+            correctIndex: 0,
+            explanation: "The waiver removes the fee above the threshold, and per-item overdraft charges concentrate below it.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "Which document does an institution's overdraft posting practice actually live in?",
+            options: ["The account agreement", "Regulation E at 12 CFR 1005.17, which sets a national posting order", "The institution's call report filed quarterly with its federal supervisor", "The Bank On National Account Standards, which set posting order for certified accounts"],
+            correctIndex: 0,
+            explanation: "Posting order is institution practice, so the agreement and the disclosures are where a consumer reads it rather than in a national rule.",
+            sourceLessonSlug: "overdraft-is-a-mechanism",
+          },
+          {
+            prompt: "What does the phrase 'reasonable opportunity to consent' add to the rule?",
+            options: ["Consent cannot be assumed from silence", "The institution may treat continued use of the account as agreement to the service", "The consumer must respond within thirty days or the opt-in takes effect automatically", "The institution may obtain consent from any joint holder on behalf of all of them"],
+            correctIndex: 0,
+            explanation: "The rule requires affirmative consent, obtained after a segregated notice, and confirmed in writing.",
+            sourceLessonSlug: "overdraft-is-a-mechanism",
+          },
+          {
+            prompt: "What connects this section to the next one on money orders and check cashing?",
+            options: ["Unpredictability", "The identity rule, which applies equally to nonbank financial service providers", "Deposit insurance, which extends to money orders bought at a check casher", "The Congressional Review Act, which also nullified a rule governing prepaid accounts"],
+            correctIndex: 0,
+            explanation: "A household that cannot forecast what an account will cost has a real reason to prefer a fee it can read off a wall before paying it.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "What functionality do the standards require of the account's card?",
+            options: ["A free debit card on a payment network", "A prepaid card issued by a third party rather than by the institution itself", "A card that works only at the institution's own automated teller machines", "A card with a monthly fee capped at the same level as the maintenance fee"],
+            correctIndex: 0,
+            explanation: "The standards require a free debit card on a network such as Visa, Mastercard or Discover, for point of sale and bill payment.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "What do the standards require where an institution does not offer free bill pay?",
+            options: ["Four free money orders or cashier's checks a month", "A waiver of the monthly maintenance fee for that account holder", "Free wire transfers up to a stated monthly dollar limit", "A referral to a nonbank bill payment service at no charge to the consumer"],
+            correctIndex: 0,
+            explanation: "The functionality section requires free bill pay if available, otherwise at least four free money orders or cashier's checks each month.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "Which two Regulation E steps come AFTER the consumer has consented?",
+            options: ["Obtaining the consent and confirming it in writing", "Providing the segregated notice and giving a reasonable opportunity to consent", "Disclosing the fee amount and disclosing the institution's posting order", "Verifying the consumer's identity and screening their deposit account history"],
+            correctIndex: 0,
+            explanation: "The four steps run notice, opportunity, consent, then written confirmation including the right to revoke.",
+            sourceLessonSlug: "overdraft-is-a-mechanism",
+          },
+        ],
+      },
+    },
   ],
 };
