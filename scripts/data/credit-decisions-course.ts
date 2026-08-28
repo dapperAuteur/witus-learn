@@ -1294,5 +1294,551 @@ Third, **you can supply the purpose yourself**. The list includes furnishing "in
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3 — The score is a model, not a fact
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "a-score-is-a-prediction",
+      title: "9 · A score is a prediction, and the statute says so",
+      section: "Section 3 · The score is a model, not a fact",
+      body: `The single most useful sentence about credit scores is in the statute, and almost nobody has read it.
+
+> "The term 'credit score' means a numerical value or a categorization derived from a statistical tool or modeling system used by a person who makes or arranges a loan to predict the likelihood of certain credit behaviors, including default" (15 U.S.C. § 1681g, n.d.)
+
+**Take that apart, because every clause is load-bearing.**
+
+**"A numerical value or a categorization."** Not a measurement. Not a grade. Not a quantity of anything that exists in the world. It is an output.
+
+**"Derived from a statistical tool or modeling system."** So there is a model, the model was built by somebody, and it could have been built differently. A model has authors and choices, and choices can be argued with in a way that a measured height cannot.
+
+**"Used by a person who makes or arranges a loan."** The model exists because a lender wants it. It is a tool for the lender's purpose, and the lender's purpose is not the same as yours. This is not a criticism, it is a description, and it explains why a score is not a report card: a report card is meant to inform the student.
+
+**"To predict the likelihood of certain credit behaviors, including default."** A prediction about a population, applied to you. The model has learned that people whose files look like yours behaved a certain way, and it assigns you the population's behaviour. Whether you will actually behave that way is not what the number says.
+
+**The consequence, and it is the one people find hardest.** A score is not a fact about you that a lender discovers. It is an opinion a model produces about a file, and different models produce different opinions from the same file. You cannot be wrong about your score, and neither can the model, because there is nothing there to be right about. What can be wrong is **the file**, which is why Section 5 is about disputes and this section is not.
+
+**What the statute makes the model tell you.** When a consumer requests a score, the agency must supply the score, along with:
+
+> "(B) The range of possible credit scores under the model used" ... "(C) All of the key factors that adversely affected the credit score of the consumer in the model used, the total number of which shall not exceed 4" ... "(D) The date on which the credit score was created" ... "(E) The name of the person or entity that provided the credit score or credit file upon which the credit score was created" (15 U.S.C. § 1681g, n.d.)
+
+**Read (B) and (E) together and the plural is undeniable.** If there were one score, there would be no need to disclose the range under *the model used*, and no need to name the entity that provided it. Congress wrote a disclosure that only makes sense in a world of many models, and the next lesson is about what that means for the sentence "my credit score is".
+
+:::reveal What does the FCRA's definition say a credit score is derived from? ||| A statistical tool or modeling system, used by a person who makes or arranges a loan.
+
+:::reveal What does a credit score predict, according to the statutory definition? ||| The likelihood of certain credit behaviors, including default.
+
+:::reveal Why does the lesson say you cannot be wrong about your score? ||| Because a score is a model's output rather than a fact about you, so there is nothing there to be right about. What can be wrong is the file.
+
+## Vocabulary
+- **Credit score**: in the statute's words, a numerical value or categorization derived from a statistical tool used by a lender to predict the likelihood of certain credit behaviors, including default.
+- **Model**: the statistical system that turns a file into a score. It has authors, it embodies choices, and a different one built on the same file returns a different number.
+- **Key factor**: one of at most four items the statute requires an agency to name as having adversely affected the score in the model used.
+- **Score range**: the span of possible values under the particular model used, which the statute requires to be disclosed alongside the score itself.
+
+## Sources
+15 U.S.C. § 1681g. (n.d.). *Disclosures to consumers*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1681g
+
+15 U.S.C. § 1681a. (n.d.). *Definitions; rules of construction*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1681a`,
+    },
+    {
+      slug: "there-is-no-single-score",
+      title: "10 · There is no such thing as your credit score",
+      section: "Section 3 · The score is a model, not a fact",
+      body: `The sentence "my credit score is" contains a hidden assumption, and the statute quietly refutes it.
+
+**The argument from the disclosure itself.** Section 1681g(f) requires an agency supplying a score to state "the range of possible credit scores under the model used" and "the name of the person or entity that provided the credit score or credit file upon which the credit score was created" (15 U.S.C. § 1681g, n.d.). **Neither disclosure would mean anything if there were one score.** A range is only worth stating when ranges differ. A provider is only worth naming when providers differ. Congress wrote a disclosure regime for a plural world because the world is plural.
+
+**Three axes of variation, all structural.**
+
+**By model.** More than one company builds scoring models, and each builds more than one, revised over time. A revision is a new model, not an update to your number: it weighs the same file differently and returns a different result. This is why a score seen in one place and a score seen in another can differ without either being wrong.
+
+**By file.** The nationwide agencies hold overlapping but not identical files, as Section 1 established. The same model run on three different files produces three different numbers, and the difference is evidence about the files rather than about you.
+
+**By purpose.** Models are built for particular decisions. A model tuned to predict default on a card is not the same instrument as one tuned to predict default on a mortgage, and a lender buys the one that fits its question.
+
+**What this course will not print, and why.** It will not print a table of current model names and version numbers, or say which model any particular kind of lender uses today. Those move, and they have moved repeatedly. **Checked 28 August 2026: this course makes no claim about which score models are in general use or which the mortgage market requires, and a reader who needs that should read it from the model publishers and the relevant federal housing regulator, with the date attached.** A table here would be a confident sentence that quietly stops being true, and a reader would have no way of knowing when.
+
+**What does not move, and is therefore worth learning.** The statutory definition. The four disclosure elements. The fact that the model reads a file, so the file is the thing you can check and correct. And the reason codes, which are the subject of the next lesson and are the only part of the whole apparatus that tells you anything actionable.
+
+**The practical form of all this.** When a number is quoted to you, the questions that resolve it are: which model, built by whom, run on which file, and on what date. Those four questions are exactly the four things the statute makes an agency disclose, which is not a coincidence.
+
+:::reveal Why do the FCRA's score-disclosure elements imply that more than one score model exists? ||| Because a range under the model used and the name of the provider would be pointless disclosures if there were only one model.
+
+:::reveal Name the three structural reasons two quoted scores can differ. ||| A different model, a different file at a different agency, or a model built for a different lending purpose.
+
+:::reveal What four questions resolve a quoted score, and where do they come from? ||| Which model, built by whom, run on which file, on what date. They are the four things the statute makes an agency disclose.
+
+## Vocabulary
+- **Model version**: a revision of a scoring model that weighs the same file differently, producing a different number without any change in the underlying record.
+- **Score provider**: the person or entity that supplied the score or the file it was built on, which the statute requires to be named in the disclosure.
+- **Plural world**: this lesson's name for the fact that models, files and purposes all vary, so a single true score does not exist to be found.
+- **Purpose-built model**: a model tuned to predict a particular behaviour on a particular product, which is why a lender buys the one that fits its own question.
+
+## Sources
+15 U.S.C. § 1681g. (n.d.). *Disclosures to consumers*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1681g
+
+15 U.S.C. § 1681a. (n.d.). *Definitions; rules of construction*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1681a`,
+    },
+    {
+      slug: "the-key-factors",
+      title: "11 · The four reasons beside the number are the useful part",
+      section: "Section 3 · The score is a model, not a fact",
+      body: `The number gets the attention. The four short phrases printed beside it are the part that says anything you can act on.
+
+**What the statute requires.** An agency supplying a score must also supply:
+
+> "All of the key factors that adversely affected the credit score of the consumer in the model used, the total number of which shall not exceed 4" (15 U.S.C. § 1681g, n.d.)
+
+**Three words in that clause do a lot of work.**
+
+**"All."** Not a selection. Every key factor that adversely affected the score, subject to the cap.
+
+**"Adversely affected."** The factors are not a description of your file in general. They are the things that pushed the number *down* in this model. A factor absent from the list is not a factor you have got right; it may simply not have hurt you in this model.
+
+**"Shall not exceed 4."** A ceiling, not a target. Fewer is permitted. And the cap is why the list reads as terse and slightly cryptic: the statute asked for the top few and got the top few.
+
+**Why the reason codes beat the number, practically.** A number tells you where you sit relative to a range you did not set. A key factor names a property of the file, and a property of the file is checkable. If a factor refers to an account, you can find the account. If it refers to a balance, you can find the balance. If it refers to something you do not recognise, **you have found a dispute**, which is Section 5.
+
+**And this is where the number's status matters.** Because a score is a model's opinion rather than a fact, arguing with the number is not a thing you can do. Arguing with the file is. The key factors are the bridge: they are the model's own statement of which parts of the file it read badly, expressed in terms of the file, which is the object with a correction procedure attached to it.
+
+**The same structure appears in the adverse action notice.** When a creditor takes adverse action based on a report, the FCRA requires it to disclose a numerical credit score it used along with certain of the section 1681g(f)(1) items (15 U.S.C. § 1681m, n.d.). So the reason codes reach you twice: once when you ask, and once when a decision goes against you. **Section 4 reads that letter line by line**, and by then you will know what half of it is.
+
+**One caution stated plainly.** The key factors do not come with instructions, they do not tell you how much any factor moved the number, and nothing in the statute promises that addressing one of them will change any future score. **This course makes no such promise either.** What the factors give you is a list of specific things in a specific record that a specific model read as adverse. That is a starting point for checking, not a plan of action.
+
+:::reveal What is the maximum number of key factors the FCRA requires an agency to disclose with a score? ||| Four. The statute sets a ceiling rather than a target, and fewer is permitted.
+
+:::reveal Why are the key factors more actionable than the score itself? ||| Because each names a property of the file, and the file is the object that can be checked and corrected.
+
+:::reveal Where else does a consumer meet the key factors, besides asking for them? ||| In an adverse action notice, where the FCRA requires a user acting on a report to disclose the score it used and certain of the same items.
+
+## Vocabulary
+- **Key factors**: the items the statute requires an agency to name as having adversely affected the score in the model used, capped at four.
+- **Reason code**: the industry name for a key factor as printed, usually a short phrase and sometimes an accompanying code.
+- **Adversely affected**: the statutory test for what belongs on the key-factor list. It names what pushed the score down, not what the file contains in general.
+- **The bridge**: this lesson's name for the key factors, because they express a model's opinion in terms of the file, which is the object a dispute procedure attaches to.
+
+## Sources
+15 U.S.C. § 1681g. (n.d.). *Disclosures to consumers*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1681g
+
+15 U.S.C. § 1681m. (n.d.). *Requirements on users of consumer reports*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1681m`,
+    },
+    {
+      slug: "quiz-the-score",
+      title: "12 · Knowledge check: the score is a model, not a fact",
+      section: "Section 3 · The score is a model, not a fact",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "In the FCRA's own definition, what is a credit score derived from?",
+            options: ["A statistical tool", "A weighted average of the balances a consumer has carried over the preceding two years", "An examiner's review of the consumer's file conducted by the agency's underwriting staff", "A survey of the lenders that have previously extended credit to the same consumer"],
+            correctIndex: 0,
+            explanation: "The statute says a statistical tool or modeling system, used by a person who makes or arranges a loan.",
+            sourceLessonSlug: "a-score-is-a-prediction",
+          },
+          {
+            prompt: "What does the statutory definition say a credit score is used to predict?",
+            options: ["The likelihood of credit behaviors", "The maximum amount of credit a consumer can afford to service from current income", "The interest rate a competing lender would offer the same consumer for the same product", "The number of months before the consumer will next apply for a new line of credit"],
+            correctIndex: 0,
+            explanation: "The definition reads to predict the likelihood of certain credit behaviors, including default.",
+            sourceLessonSlug: "a-score-is-a-prediction",
+          },
+          {
+            prompt: "Which behaviour does the statutory definition name expressly as an example?",
+            options: ["Default", "Late payment by more than thirty days on any revolving account held by the consumer", "Bankruptcy filed under any chapter of title 11 within the following twenty-four months", "Closure of an account by the consumer before the end of its stated term"],
+            correctIndex: 0,
+            explanation: "The definition reads certain credit behaviors, including default.",
+            sourceLessonSlug: "a-score-is-a-prediction",
+          },
+          {
+            prompt: "The statutory definition allows a credit score to take which two forms?",
+            options: ["A numerical value or a categorization", "A percentage or a monetary amount expressed in the currency of the transaction", "A letter grade or a percentile rank against all other consumers in the country", "A written narrative or a numerical value, at the option of the agency supplying it"],
+            correctIndex: 0,
+            explanation: "The definition opens a numerical value or a categorization derived from a statistical tool or modeling system.",
+            sourceLessonSlug: "a-score-is-a-prediction",
+          },
+          {
+            prompt: "Why does the lesson say a score is not a report card?",
+            options: ["A report card informs the student", "Because a report card is issued by a public body and a score is issued by a private company", "Because a report card covers a fixed period and a score covers the whole of a consumer's life", "Because a report card can be appealed to a higher authority and a score cannot be appealed"],
+            correctIndex: 0,
+            explanation: "The model exists because a lender wants it, and the lender's purpose is not the same as the consumer's.",
+            sourceLessonSlug: "a-score-is-a-prediction",
+          },
+          {
+            prompt: "The lesson says a model has something a measured height does not. What?",
+            options: ["Authors and choices", "A statutory range that the Bureau publishes and revises every calendar year", "A margin of error that the agency must disclose alongside the score itself", "A licence issued by the federal regulator of the lender that intends to use it"],
+            correctIndex: 0,
+            explanation: "The model was built by somebody and could have been built differently, so its choices can be argued with.",
+            sourceLessonSlug: "a-score-is-a-prediction",
+          },
+          {
+            prompt: "What does the lesson say a model actually assigns to an individual consumer?",
+            options: ["A population's behaviour", "The average of the consumer's own repayment record over the preceding seven years", "A ranking against every other applicant considered by the same lender that month", "The lender's estimate of the loss it would suffer if the consumer defaulted tomorrow"],
+            correctIndex: 0,
+            explanation: "The model learned that people whose files look like yours behaved a certain way, and applies that to you.",
+            sourceLessonSlug: "a-score-is-a-prediction",
+          },
+          {
+            prompt: "According to the lesson, what can be wrong, given that a score itself cannot be?",
+            options: ["The file", "The range the model publishes, if it differs from the range a competing model uses", "The date on which the score was created, if the agency records it incorrectly", "The lender's interpretation of the score, if it applies the wrong cutoff to the number"],
+            correctIndex: 0,
+            explanation: "A score is an opinion produced from a file, so the correctable object is the record, which is why Section 5 is about disputes.",
+            sourceLessonSlug: "a-score-is-a-prediction",
+          },
+          {
+            prompt: "When a consumer requests a score, what must the agency disclose about the model's possible values?",
+            options: ["The range", "The median score of all consumers evaluated under the same model in the same year", "The number of consumers who scored higher than the requesting consumer that month", "The statistical confidence interval around the score the model has produced"],
+            correctIndex: 0,
+            explanation: "The statute requires the range of possible credit scores under the model used.",
+            sourceLessonSlug: "a-score-is-a-prediction",
+          },
+          {
+            prompt: "Which date does the FCRA require to be disclosed with a credit score?",
+            options: ["The date the score was created", "The date the oldest item still appearing in the consumer's file was first furnished", "The date on which the model itself was last revised by the entity that built it", "The date the consumer's request for the disclosure was received by the agency"],
+            correctIndex: 0,
+            explanation: "Subparagraph (D) requires the date on which the credit score was created.",
+            sourceLessonSlug: "a-score-is-a-prediction",
+          },
+          {
+            prompt: "Which identity does the FCRA require to be disclosed alongside a score?",
+            options: ["The provider of the score or file", "The lender that most recently obtained the consumer's report from the agency", "The employee of the agency who authorised the disclosure of the score to the consumer", "The federal agency responsible for supervising the model's developer"],
+            correctIndex: 0,
+            explanation: "Subparagraph (E) requires the name of the person or entity that provided the credit score or credit file upon which the score was created.",
+            sourceLessonSlug: "a-score-is-a-prediction",
+          },
+          {
+            prompt: "What kind of instrument does the lesson say a score is, in place of a fact?",
+            options: ["An opinion about a file", "A measurement of the consumer's capacity to repay, taken at a single moment in time", "A certification issued by the agency that the consumer's file is complete and accurate", "A guarantee to the lender that losses below a stated threshold will be reimbursed"],
+            correctIndex: 0,
+            explanation: "Different models produce different opinions from the same file, which is what makes it an opinion rather than a discovery.",
+            sourceLessonSlug: "a-score-is-a-prediction",
+          },
+          {
+            prompt: "In the statutory definition, who uses the modeling system?",
+            options: ["A person who makes or arranges a loan", "The consumer reporting agency, on its own behalf and for its own commercial purposes", "The federal supervisor of the institution that furnished the underlying information", "Any person with a permissible purpose to obtain the consumer's report"],
+            correctIndex: 0,
+            explanation: "The definition ties the model to a person who makes or arranges a loan, which is why the tool serves the lender's question.",
+            sourceLessonSlug: "a-score-is-a-prediction",
+          },
+          {
+            prompt: "Which claim would the lesson treat as a category error?",
+            options: ["My score is wrong", "My file contains an account that was never opened in my name", "My file shows a judgment entered more than ten years before the date of the report", "The agency disclosed only three key factors when the statute permits four"],
+            correctIndex: 0,
+            explanation: "There is nothing in a model's output to be right or wrong about; the correctable claims are all about the record.",
+            sourceLessonSlug: "a-score-is-a-prediction",
+          },
+          {
+            prompt: "The lesson describes the statutory definition as the most useful sentence about scores for what reason?",
+            options: ["It settles what a score is", "It fixes the range within which every lawful scoring model must produce its values", "It obliges every lender to use the same model when evaluating comparable applications", "It gives the consumer a right to demand that a different model be run on the same file"],
+            correctIndex: 0,
+            explanation: "It says in law that a score is a modelled prediction, which resolves most of the confusion around the subject.",
+            sourceLessonSlug: "a-score-is-a-prediction",
+          },
+          {
+            prompt: "What hidden assumption does the lesson say the phrase my credit score contains?",
+            options: ["That there is only one", "That the consumer is entitled to see it without charge at any time they wish", "That the score was produced by the agency rather than by an outside model developer", "That the number will remain unchanged until the consumer opens a new account"],
+            correctIndex: 0,
+            explanation: "The statute's disclosure regime only makes sense in a world of many models, which is the world we are in.",
+            sourceLessonSlug: "there-is-no-single-score",
+          },
+          {
+            prompt: "Why would a required disclosure of the range be meaningless if there were one score?",
+            options: ["Ranges would never differ", "Because the range is set by regulation rather than by the entity that built the model", "Because a consumer could calculate the range from the score and the key factors alone", "Because the agency would already have disclosed the range when the file was opened"],
+            correctIndex: 0,
+            explanation: "A range is only worth stating when ranges differ, which is the lesson's argument from the statute's own text.",
+            sourceLessonSlug: "there-is-no-single-score",
+          },
+          {
+            prompt: "Which of these is one of the three axes of variation the lesson names?",
+            options: ["By model", "By region, because the agencies maintain separate files for each Federal Reserve district", "By season, because models are recalibrated at the start of every calendar quarter", "By income, because a separate model is used above and below a statutory threshold"],
+            correctIndex: 0,
+            explanation: "The three are variation by model, variation by file across the nationwide agencies, and variation by the purpose the model was built for.",
+            sourceLessonSlug: "there-is-no-single-score",
+          },
+          {
+            prompt: "What does the lesson say a revision to a scoring model is?",
+            options: ["A new model", "An adjustment applied retroactively to every score the earlier model had produced", "A correction that the developer must notify to every consumer previously scored", "A recalibration that leaves the consumer's number unchanged but shifts the range"],
+            correctIndex: 0,
+            explanation: "A revision weighs the same file differently and returns a different result, so it is not an update to your number.",
+            sourceLessonSlug: "there-is-no-single-score",
+          },
+          {
+            prompt: "Running one model on the files of three nationwide agencies produces what, and what does the difference tell you?",
+            options: ["Three numbers, about the files", "One number, because the agencies are required to synchronise their files each month", "Three numbers, about the consumer's changing behaviour over the reporting period", "Three numbers, about which agency the model's developer has contracted with"],
+            correctIndex: 0,
+            explanation: "The agencies hold overlapping but not identical files, so the spread is evidence about the records rather than about the person.",
+            sourceLessonSlug: "there-is-no-single-score",
+          },
+          {
+            prompt: "Why is a model tuned for card default not the same instrument as one tuned for mortgage default?",
+            options: ["They answer different questions", "Because federal law requires a separate model for each category of secured lending", "Because card models may use public records and mortgage models may not", "Because mortgage models are supervised by a housing regulator and card models are not"],
+            correctIndex: 0,
+            explanation: "Models are built for particular decisions, and a lender buys the one that fits its own question.",
+            sourceLessonSlug: "there-is-no-single-score",
+          },
+          {
+            prompt: "What does this course refuse to print about scoring models?",
+            options: ["Current names and versions", "The statutory definition, because it is quoted at length in the preceding lesson", "The four disclosure elements, because they vary between models and agencies", "The fact that models are built by companies rather than by a public body"],
+            correctIndex: 0,
+            explanation: "Those move, and a table here would be a confident sentence that quietly stops being true.",
+            sourceLessonSlug: "there-is-no-single-score",
+          },
+          {
+            prompt: "On what date does this course record its check of the score-model landscape?",
+            options: ["28 August 2026", "1 January 2026, the start of the year in which the course was written and reviewed", "17 July 2026, the date on which the catalog's standards data was last refreshed", "No date, because the course makes no claim about the landscape at all"],
+            correctIndex: 0,
+            explanation: "The lesson dates its own refusal, so a reader knows exactly what was and was not checked, and when.",
+            sourceLessonSlug: "there-is-no-single-score",
+          },
+          {
+            prompt: "Where does the lesson say a reader who needs current model information should go?",
+            options: ["The publishers and the federal housing regulator", "The consumer reporting agencies, which must publish the list on request each year", "The lender's own disclosure documents, which name every model it has ever purchased", "The Federal Register, in which every model revision must be noticed before use"],
+            correctIndex: 0,
+            explanation: "The lesson names the model publishers and the relevant federal housing regulator, with the date attached.",
+            sourceLessonSlug: "there-is-no-single-score",
+          },
+          {
+            prompt: "Which of these does the lesson list as something that does not move and is therefore worth learning?",
+            options: ["The statutory definition", "The number of points a late payment removes from a score under the leading model", "The cutoff a mortgage lender applies when deciding between approval and denial", "The market share held by each of the companies that build scoring models"],
+            correctIndex: 0,
+            explanation: "The definition, the four disclosure elements, the fact that the model reads a file, and the reason codes are the durable parts.",
+            sourceLessonSlug: "there-is-no-single-score",
+          },
+          {
+            prompt: "What four questions does the lesson say resolve a quoted score?",
+            options: ["Which model, whose, which file, what date", "How high, how recent, how stable, and how it compares to the national average", "Which lender, which product, which term, and which interest rate was offered", "Which agency, which furnisher, which account, and which payment was missed"],
+            correctIndex: 0,
+            explanation: "They are exactly the four things the statute makes an agency disclose, which the lesson notes is not a coincidence.",
+            sourceLessonSlug: "there-is-no-single-score",
+          },
+          {
+            prompt: "Why does the lesson say a summary table of model versions would be worse than no table?",
+            options: ["A reader cannot tell when it expired", "Because a table would breach the agencies' commercial confidentiality in their own products", "Because federal law requires any published comparison of models to be updated quarterly", "Because a table would encourage a reader to choose a lender by the model it uses"],
+            correctIndex: 0,
+            explanation: "It would be a confident sentence that quietly stops being true, with nothing to signal the moment it did.",
+            sourceLessonSlug: "there-is-no-single-score",
+          },
+          {
+            prompt: "The lesson says a spread between quoted scores is evidence about what?",
+            options: ["The files", "The consumer's reliability, since a wider spread indicates a more volatile payment record", "The models' accuracy, since the correct score is the median of the three quoted values", "The lenders' preferences, since each buys the model that flatters its own applicants"],
+            correctIndex: 0,
+            explanation: "The difference between numbers drawn from different agencies is evidence about the records rather than about the person.",
+            sourceLessonSlug: "there-is-no-single-score",
+          },
+          {
+            prompt: "How does this lesson describe the world the FCRA's score disclosure was written for?",
+            options: ["A plural world", "A world in which a single national model would eventually replace the competing ones", "A world in which consumers rather than lenders would be the models' primary customers", "A world in which every agency would maintain an identical copy of every consumer file"],
+            correctIndex: 0,
+            explanation: "Models, files and purposes all vary, so a single true score does not exist to be found.",
+            sourceLessonSlug: "there-is-no-single-score",
+          },
+          {
+            prompt: "What does the FCRA require an agency to disclose about the factors that hurt a score?",
+            options: ["All of them, capped at four", "The three that the model weighted most heavily, ranked in order of their effect", "Any factor the consumer specifically asks about, on payment of a reasonable fee", "A narrative explanation of the model's reasoning, written in plain language"],
+            correctIndex: 0,
+            explanation: "The statute requires all of the key factors that adversely affected the score in the model used, not exceeding four in total.",
+            sourceLessonSlug: "the-key-factors",
+          },
+          {
+            prompt: "What does the word all do in the key-factor clause?",
+            options: ["It forbids a selection", "It extends the disclosure to factors that improved the score as well as those that hurt it", "It requires the agency to repeat the disclosure for every model it holds a licence to", "It obliges the agency to disclose factors from the consumer's file at every other agency"],
+            correctIndex: 0,
+            explanation: "Every key factor that adversely affected the score must appear, subject only to the cap of four.",
+            sourceLessonSlug: "the-key-factors",
+          },
+          {
+            prompt: "What does adversely affected mean for what appears on the key-factor list?",
+            options: ["What pushed the number down", "What the consumer has most recently changed about the accounts held in the file", "What the model considers the most reliable single predictor across all consumers", "What the lender has told the agency it wishes to see explained to the applicant"],
+            correctIndex: 0,
+            explanation: "The list is not a general description of the file; it names what hurt the score in that model.",
+            sourceLessonSlug: "the-key-factors",
+          },
+          {
+            prompt: "Is a factor absent from the key-factor list something the consumer has got right?",
+            options: ["Not necessarily", "Yes, because the statute requires the disclosure of every factor the model considered", "Yes, because a factor that does not appear was scored as neutral by definition", "Yes, because the agency must certify that no other adverse factor exists in the file"],
+            correctIndex: 0,
+            explanation: "It may simply not have hurt the score in this model, which is a different statement from being satisfactory.",
+            sourceLessonSlug: "the-key-factors",
+          },
+          {
+            prompt: "Is four a target or a ceiling in the key-factor requirement?",
+            options: ["A ceiling", "A target, so an agency disclosing fewer than four is in breach of the requirement", "Neither, since the number is set by the model's developer rather than by the statute", "A ceiling for agencies but a target for creditors sending adverse action notices"],
+            correctIndex: 0,
+            explanation: "The statute reads shall not exceed 4, so fewer is permitted.",
+            sourceLessonSlug: "the-key-factors",
+          },
+          {
+            prompt: "Why does the lesson say the key factors read as terse and slightly cryptic?",
+            options: ["The statute asked for the top few", "Because the agencies compress them to fit the space available on a printed notice", "Because model developers treat the full wording as a trade secret and abbreviate it", "Because the statute requires them to be expressed as numeric codes rather than words"],
+            correctIndex: 0,
+            explanation: "The cap of four means the list is the top few, which is why it reads the way it does.",
+            sourceLessonSlug: "the-key-factors",
+          },
+          {
+            prompt: "Why does the lesson say a key factor beats the number, practically?",
+            options: ["It names something checkable", "It carries a statutory guarantee that addressing it will raise the score within one cycle", "It is disclosed more often than the number, which agencies supply only once a year", "It is produced by the agency rather than the model, so it is easier to dispute"],
+            correctIndex: 0,
+            explanation: "A number places you against a range you did not set; a factor names a property of the file, and the file can be found and corrected.",
+            sourceLessonSlug: "the-key-factors",
+          },
+          {
+            prompt: "What has the consumer found if a key factor refers to something they do not recognise?",
+            options: ["A dispute", "A model error, which the developer must correct within thirty days of notification", "A permissible-purpose violation by whoever pulled the report in the first place", "A stale item that the agency must delete without any further inquiry"],
+            correctIndex: 0,
+            explanation: "An unrecognised item in the file is exactly what Section 5's dispute procedure exists for.",
+            sourceLessonSlug: "the-key-factors",
+          },
+          {
+            prompt: "The lesson calls the key factors a bridge. Between what?",
+            options: ["The model's opinion and the file", "The consumer's application and the creditor's underwriting standards for that product", "The agency's disclosure and the lender's decision on the pending application", "The score's range and the cutoff the lender applies when deciding on the loan"],
+            correctIndex: 0,
+            explanation: "They express the model's opinion in terms of the file, which is the object a correction procedure attaches to.",
+            sourceLessonSlug: "the-key-factors",
+          },
+          {
+            prompt: "Under the FCRA, when else does a consumer receive score information besides on request?",
+            options: ["When a user takes adverse action", "On the anniversary of each account the consumer holds with a reporting creditor", "Whenever a permissible-purpose inquiry is made about the consumer's file", "At the close of each calendar year, in a summary the agency must mail without charge"],
+            correctIndex: 0,
+            explanation: "Section 1681m requires a user taking adverse action based on a report to disclose a numerical credit score it used and certain related items.",
+            sourceLessonSlug: "the-key-factors",
+          },
+          {
+            prompt: "What does this course refuse to promise about acting on a key factor?",
+            options: ["That any future score will change", "That the factor accurately describes the account it refers to in the consumer's file", "That the agency will disclose the same factor again if the consumer asks a second time", "That the creditor will explain the factor in the adverse action notice it sends"],
+            correctIndex: 0,
+            explanation: "Nothing in the statute promises it, the factors carry no weights or instructions, and this course makes no such promise either.",
+            sourceLessonSlug: "the-key-factors",
+          },
+          {
+            prompt: "What do the key factors give a consumer, in the lesson's own summary?",
+            options: ["A list of specific things to check", "A ranked plan of action with an estimated effect on the score for each step taken", "A guarantee that no other adverse item exists anywhere in the consumer's file", "A right to have the model re-run once the named factors have been addressed"],
+            correctIndex: 0,
+            explanation: "A starting point for checking, in a specific record, that a specific model read as adverse. Not a plan of action.",
+            sourceLessonSlug: "the-key-factors",
+          },
+          {
+            prompt: "Why is arguing with the number not a thing a consumer can do?",
+            options: ["It is an opinion, not a claim", "Because the model's developer is not a consumer reporting agency and owes no duties", "Because a score dispute must be filed with the lender rather than with the agency", "Because the statutory dispute period expires thirty days after the score is created"],
+            correctIndex: 0,
+            explanation: "A score is a model's output, so the argument has to be about the file, and the key factors are how you get there.",
+            sourceLessonSlug: "the-key-factors",
+          },
+          {
+            prompt: "Which section of the FCRA carries the four key-factor requirement?",
+            options: ["Section 1681g", "Section 1681b, which lists the circumstances under which a report may be furnished", "Section 1681i, which sets out the reinvestigation duty following a consumer dispute", "Section 1681c, which limits how long an adverse item may appear in a report"],
+            correctIndex: 0,
+            explanation: "It sits in the disclosures section, at subsection (f) on credit scores.",
+            sourceLessonSlug: "the-key-factors",
+          },
+          {
+            prompt: "How does Section 3 hand off to Section 4?",
+            options: ["The reason codes reach you twice", "By explaining that a score cutoff is the only lawful ground for taking adverse action", "By showing that the score disclosure and the adverse action notice are the same document", "By establishing that a creditor must consult the model's developer before deciding"],
+            correctIndex: 0,
+            explanation: "Once when you ask for them, and once when a decision goes against you, which is the letter Section 4 reads line by line.",
+            sourceLessonSlug: "the-key-factors",
+          },
+          {
+            prompt: "What does the lesson say the number tells a consumer that the factors do not?",
+            options: ["Where they sit in a range", "Which account in the file the model treated as the most serious problem", "How the lender intends to price the loan if the application is approved", "Whether the file contains any item older than the statutory reporting period"],
+            correctIndex: 0,
+            explanation: "It places you against a range you did not set, which is why the factors carry the actionable information.",
+            sourceLessonSlug: "the-key-factors",
+          },
+          {
+            prompt: "Which is the correct description of the relationship between file, model and score?",
+            options: ["The model reads the file and outputs the score", "The score is furnished to the agency and stored as an item in the consumer's file", "The file is assembled from scores supplied by each of the consumer's creditors", "The model and the file are maintained jointly by the agency and the lender"],
+            correctIndex: 0,
+            explanation: "That ordering is why the file is the object with a correction procedure and the score is not.",
+            sourceLessonSlug: "a-score-is-a-prediction",
+          },
+          {
+            prompt: "The statutory phrase used by a person who makes or arranges a loan tells you what about the model's purpose?",
+            options: ["It serves the lender", "That the model must be approved by the lender's federal supervisor before use", "That the consumer may specify which model the lender is required to purchase", "That the model may only be used for loans and never for insurance or employment"],
+            correctIndex: 0,
+            explanation: "It is a tool for the lender's question, which is a description rather than a criticism.",
+            sourceLessonSlug: "a-score-is-a-prediction",
+          },
+          {
+            prompt: "What is the practical reason this course spends a section on what a score is before teaching the notice?",
+            options: ["Half the notice is score information", "Because a consumer may not request an adverse action notice without quoting their score", "Because a creditor is forbidden from taking adverse action unless a score was calculated", "Because the notice is issued by the agency that built the model rather than by the creditor"],
+            correctIndex: 0,
+            explanation: "The lesson says that by Section 4 you will know what half of the letter is.",
+            sourceLessonSlug: "the-key-factors",
+          },
+          {
+            prompt: "What does the lesson mean when it says the key factors do not come with weights?",
+            options: ["They do not say how much each moved it", "They do not say which of the agencies supplied the item the factor refers to", "They do not say whether the factor will still be present at the next request", "They do not say which model version produced the factor list in question"],
+            correctIndex: 0,
+            explanation: "The disclosure names the factors and caps them at four; nothing in it quantifies their effect.",
+            sourceLessonSlug: "the-key-factors",
+          },
+          {
+            prompt: "How does the lesson describe the difference between a starting point and a plan of action?",
+            options: ["Checking versus doing", "Reading the notice versus filing the dispute within the statutory period", "Requesting the score versus requesting the whole file from every agency", "Contacting the furnisher versus contacting the consumer reporting agency"],
+            correctIndex: 0,
+            explanation: "The factors give you specific things to check in a specific record, which is not the same as telling you what to do.",
+            sourceLessonSlug: "the-key-factors",
+          },
+          {
+            prompt: "In Section 3's account, what is the only correctable object in the whole apparatus?",
+            options: ["The file", "The score, which the agency must recalculate on request after a successful dispute", "The model, which the developer must revise when a consumer identifies an error", "The lender's cutoff, which the creditor must justify in the adverse action notice"],
+            correctIndex: 0,
+            explanation: "The model produces an opinion and the number is its output; the record is the thing with a procedure attached.",
+            sourceLessonSlug: "a-score-is-a-prediction",
+          },
+          {
+            prompt: "What does the lesson say about the idea that a lender discovers your score?",
+            options: ["It is not a discovery", "It is accurate, because the score exists in the file before any lender requests it", "It is accurate for mortgage lending and inaccurate for every other kind of credit", "It is accurate once the consumer has held at least one account for twelve months"],
+            correctIndex: 0,
+            explanation: "A score is produced by running a model, so it is generated rather than found.",
+            sourceLessonSlug: "a-score-is-a-prediction",
+          },
+          {
+            prompt: "The statute requires disclosure of the range under which model?",
+            options: ["The model used", "Every model the agency holds a licence to run against the consumer's file", "The model most widely used by lenders in the consumer's own State", "The model the consumer nominates at the time of making the request"],
+            correctIndex: 0,
+            explanation: "The words are the range of possible credit scores under the model used, which ties the disclosure to the particular model.",
+            sourceLessonSlug: "a-score-is-a-prediction",
+          },
+          {
+            prompt: "Why does the lesson call the plurality of scores structural rather than accidental?",
+            options: ["Models, files and purposes all vary", "Because Congress required each agency to build and maintain its own scoring model", "Because a single model would violate the antitrust laws governing the industry", "Because the agencies deliberately withhold data from one another to differentiate"],
+            correctIndex: 0,
+            explanation: "Three independent sources of variation guarantee that no single true number exists to be found.",
+            sourceLessonSlug: "there-is-no-single-score",
+          },
+          {
+            prompt: "What would the lesson say about a claim that a particular score is the one that matters?",
+            options: ["It depends on which lender asks", "It is correct, because one model is designated by statute as the national standard", "It is correct for mortgage lending, where a single model is required by federal law", "It is meaningless, because lenders never disclose which model they have purchased"],
+            correctIndex: 0,
+            explanation: "A lender buys the model that fits its own question, so which score matters is a fact about the decision being made.",
+            sourceLessonSlug: "there-is-no-single-score",
+          },
+          {
+            prompt: "The lesson lists four durable things worth learning. Which is among them?",
+            options: ["The four disclosure elements", "The current cutoff each large lender applies to applications for unsecured credit", "The number of consumers scored under each model in the most recent calendar year", "The fee an agency may charge for supplying a score outside the free annual disclosure"],
+            correctIndex: 0,
+            explanation: "The statutory definition, the four disclosure elements, the fact that the model reads a file, and the reason codes.",
+            sourceLessonSlug: "there-is-no-single-score",
+          },
+          {
+            prompt: "Why does the lesson say the model reading a file is the useful half of the arrangement?",
+            options: ["The file is checkable", "Because the model is published in the Federal Register and can be inspected by anyone", "Because a consumer may require the agency to run a different model on the same file", "Because the file is maintained by the consumer and supplied to the agency on request"],
+            correctIndex: 0,
+            explanation: "The file is the thing you can obtain, read and correct, which is where every remedy in the course attaches.",
+            sourceLessonSlug: "there-is-no-single-score",
+          },
+          {
+            prompt: "How does the lesson characterise the relationship between a model's authors and its output?",
+            options: ["Choices produce the number", "The authors are legally responsible for any decision a lender makes using the number", "The authors must publish the weights they assign to each item in a consumer's file", "The authors are supervised by the same regulator that supervises the lender"],
+            correctIndex: 0,
+            explanation: "A model has authors and choices, and a different set of choices returns a different number from the same file.",
+            sourceLessonSlug: "a-score-is-a-prediction",
+          },
+        ],
+      },
+    },
   ],
 };
