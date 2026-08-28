@@ -2775,6 +2775,201 @@ Internal Revenue Service. (n.d.-b). *Free tax return preparation for qualifying 
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 5 — Fraud, and the line Regulation E draws
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "unauthorized-has-a-definition",
+      title: "18 · Unauthorized is a defined word, and everything depends on it",
+      section: "Section 5 · Fraud, and the line Regulation E draws",
+      body: `Two people each lose 2,000 dollars from a checking account on the same day. One gets it back within 45 days and the other does not. Nothing about them differs except one fact, and the fact is in a definition.
+
+**This is the most useful thing in this course.** Regulation E, the rule implementing the Electronic Fund Transfer Act, defines the term that the whole recovery machinery hangs on:
+
+> "Unauthorized electronic fund transfer means an electronic fund transfer from a consumer's account initiated by a person other than the consumer without actual authority to initiate the transfer and from which the consumer receives no benefit." (12 CFR § 1005.2, n.d.)
+
+**Take that apart, because every clause does work.**
+
+- **"Initiated by a person other than the consumer."** Somebody else pressed the button. If you pressed it, this clause is not satisfied and the definition is not met.
+- **"Without actual authority."** Not apparent authority, not authority the institution reasonably believed existed. Actual.
+- **"From which the consumer receives no benefit."** You got nothing out of it.
+
+**Then the three exclusions, which are where most real cases actually land.** The same paragraph says the term does not include a transfer initiated:
+
+> "(1) By a person who was furnished the access device to the consumer's account by the consumer, unless the consumer has notified the financial institution that transfers by that person are no longer authorized; (2) With fraudulent intent by the consumer or any person acting in concert with the consumer; (3) By the financial institution or its employee." (12 CFR § 1005.2, n.d.)
+
+**Exclusion (1) is the one that surprises people, and the official commentary makes its edges sharp in both directions.**
+
+Sharp against the consumer: "If a consumer furnishes an access device and grants authority to make transfers to a person (such as a family member or co-worker) who exceeds the authority given, the consumer is fully liable for the transfers unless the consumer has notified the financial institution that transfers by that person are no longer authorized" (Official Interpretations to 12 CFR pt. 1005, n.d.). **You handed over the card and the number, they went further than you meant, and the loss is yours until you tell the institution.** The notice is the switch, and nothing else flips it.
+
+Sharp in the consumer's favour: "An unauthorized EFT includes a transfer initiated by a person who obtained the access device from the consumer through fraud or robbery" (Official Interpretations to 12 CFR pt. 1005, n.d.). **Being tricked out of the device is not furnishing it.** That distinction, between handing somebody your card and having it taken from you by deception, is doing an enormous amount of work.
+
+**An access device, incidentally, is broader than a card.** The regulation defines it as "a card, code, or other means of access to a consumer's account, or any combination thereof, that may be used by the consumer to initiate electronic fund transfers" (12 CFR § 1005.2, n.d.). A card, a PIN, a login, a one-time passcode: all access devices.
+
+**Hold the definition in your head for the next lesson**, because the next lesson is what the institution owes you once it is met, and the lesson after that is what happens when it is not.
+
+:::reveal Quote the three elements of an unauthorized electronic fund transfer under 12 CFR 1005.2(m). ||| Initiated by a person other than the consumer, without actual authority, and from which the consumer receives no benefit.
+
+:::reveal If you give someone your card and PIN and they take more than you agreed, is that unauthorized? ||| No. The commentary says the consumer is fully liable unless the consumer has notified the institution that transfers by that person are no longer authorized.
+
+:::reveal Is a transfer by someone who obtained your card by fraud or robbery unauthorized? ||| Yes. The official commentary says an unauthorized transfer includes one initiated by a person who obtained the access device through fraud or robbery.
+
+:::reveal What counts as an access device? ||| A card, code, or other means of access to the account, or any combination of them, that the consumer may use to initiate electronic fund transfers.
+
+## Vocabulary
+- **Unauthorized electronic fund transfer**: the defined term at 12 CFR 1005.2(m) on which the entire error-resolution and liability machinery depends.
+- **Access device**: a card, code, or other means of access to an account, defined broadly enough to cover a PIN, a login and a passcode.
+- **Actual authority**: real permission from the consumer, as distinct from an appearance of permission the institution might have relied on.
+- **The furnishing exclusion**: 12 CFR 1005.2(m)(1), under which transfers by a person you gave the device to are not unauthorized until you tell the institution otherwise.
+
+## Sources
+12 CFR § 1005.2. (n.d.). *Definitions*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1005.2
+
+*Official interpretations, supplement I to 12 CFR part 1005*. (n.d.). Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/appendix-Supplement_I_to_part_1005`,
+    },
+    {
+      slug: "what-the-institution-owes-you",
+      title: "19 · What the institution owes you when the definition is met",
+      section: "Section 5 · Fraud, and the line Regulation E draws",
+      body: `Once a transfer is unauthorized within the meaning of the regulation, a specific machine starts, it runs on clocks, and the burden of proof is not on you.
+
+**Start with the burden, because it is the part almost nobody knows.** The statute says:
+
+> "In any action which involves a consumer's liability for an unauthorized electronic fund transfer, the burden of proof is upon the financial institution to show that the electronic fund transfer was authorized or...that the conditions of liability set forth in subsection (a) have been met." (15 U.S.C. § 1693g, n.d.)
+
+**The institution has to show it was authorized. You do not have to show it was not.** That is the opposite of what most people assume when they are told to prove they did not make a charge.
+
+**Then the liability caps, which are tiered by how fast you speak.** Under 12 CFR § 1005.6, before any liability attaches at all the institution must first have given the required disclosures about liability for unauthorized transfers, and, where an access device was involved, it must have been an accepted device with a means of identifying the authorized user (12 CFR § 1005.6, n.d.). Then:
+
+- **Timely notice.** Where the consumer notifies within two business days of learning of the loss or theft, liability may not exceed "the lesser of $50 or the amount of unauthorized transfers that occur before notice" (12 CFR § 1005.6, n.d.).
+- **Delayed notice.** Beyond that window the exposure rises, to the lesser of 500 dollars or a sum computed from the transfers in the first two business days plus those afterwards.
+- **The 60-day rule.** A consumer must report an unauthorized transfer appearing on a periodic statement "within 60 days of the financial institution's transmittal of the statement" (12 CFR § 1005.6, n.d.). Transfers after that window, which reasonable reporting would have stopped, can fall on the consumer entirely.
+- **Extenuating circumstances.** Where the delay was due to extenuating circumstances such as extended travel or hospitalisation, the periods are extended to a reasonable time.
+
+**Notice is defined generously.** It is given when the consumer takes steps reasonably necessary to inform the institution, whether or not a particular employee actually receives the information.
+
+**Then the error-resolution clocks at 12 CFR § 1005.11**, which is the part you will actually use.
+
+- **Your deadline.** The institution must comply with the section for any oral or written notice of error received "no later than 60 days after the institution sends the periodic statement" showing the transfer (12 CFR § 1005.11, n.d.). **Oral notice counts**, though the institution may require written confirmation.
+- **Ten business days.** The institution "shall investigate promptly and...shall determine whether an error occurred within 10 business days of receiving a notice of error" (12 CFR § 1005.11, n.d.).
+- **Forty-five days, with your money back in the meantime.** If it cannot finish in ten business days it may take up to 45 days, provided it "Provisionally credits the consumer's account in the amount of the alleged error (including interest where applicable) within 10 business days of receiving the error notice" (12 CFR § 1005.11, n.d.).
+
+**Read the trade in that last provision.** The institution buys more investigating time by putting the money back while it investigates. **The default is that you are not out of pocket during the investigation**, and knowing that changes the conversation you have on the telephone.
+
+**Two practical consequences worth stating flatly.** Speed matters more than eloquence: the caps step up by the calendar, not by how convincingly you explain yourself. And the periodic statement is the trigger, so an unread statement is a running clock.
+
+:::reveal Who bears the burden of proof that an electronic fund transfer was authorized? ||| The financial institution, under 15 U.S.C. 1693g(b).
+
+:::reveal Under 12 CFR 1005.6, what is the cap where the consumer gives timely notice? ||| The lesser of 50 dollars or the amount of unauthorized transfers occurring before notice.
+
+:::reveal How long does an institution have to determine whether an error occurred, and what must it do to take longer? ||| 10 business days, extendable to 45 days only if it provisionally credits the account for the alleged error within those 10 business days.
+
+:::reveal When does the 60-day reporting clock start? ||| When the institution transmits or sends the periodic statement showing the transfer.
+
+## Vocabulary
+- **Burden of proof**: the obligation, placed by 15 U.S.C. 1693g(b) on the institution, to show that a disputed transfer was authorized or that the liability conditions were met.
+- **Timely notice**: notification within two business days of learning of a loss or theft, which holds liability to the lesser of 50 dollars or the transfers before notice.
+- **Notice of error**: the oral or written report that starts the 12 CFR 1005.11 investigation, due no later than 60 days after the periodic statement is sent.
+- **Provisional credit**: the amount the institution must return to the account within 10 business days if it wants up to 45 days to investigate.
+- **Extenuating circumstances**: the ground on which the reporting periods are extended to a reasonable time, such as extended travel or hospitalisation.
+
+## Sources
+15 U.S.C. § 1693g. (n.d.). *Consumer liability*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1693g
+
+12 CFR § 1005.6. (n.d.). *Liability of consumer for unauthorized transfers*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1005.6
+
+12 CFR § 1005.11. (n.d.). *Procedures for resolving errors*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1005.11`,
+    },
+    {
+      slug: "when-you-pressed-send",
+      title: "20 · When you pressed send, the machine does not start",
+      section: "Section 5 · Fraud, and the line Regulation E draws",
+      body: `Somebody telephones. They know your name, the last four digits of your account, and the amount of a real transaction. They say your account is compromised and that you must move your money to a safe account immediately. You do it yourself, from your own device, with your own credentials.
+
+**Read the definition again.** An unauthorized electronic fund transfer is one "initiated by a person other than the consumer without actual authority" (12 CFR § 1005.2, n.d.). **You initiated it.** You had actual authority to move your own money, and you used it. The first clause fails, and when the first clause fails the whole machine from the last lesson does not start. No two-business-day cap. No 45-day provisional credit. No burden on the institution to prove authorization, because authorization is not in dispute.
+
+**That is the line, and it is the single most consequential thing in this course.** Money taken from your account WITHOUT your authorisation sits inside a federal error-resolution procedure with deadlines and a reversed burden of proof. Money you were deceived into sending YOURSELF sits outside it. **Same loss, same victim, same deception. Opposite rule.**
+
+**Be precise about where the boundary actually runs, because the last lesson gave you the tools.**
+
+- **Someone steals your card or your credentials and transfers money.** They initiated it, without actual authority. **Unauthorized.** The machine runs.
+- **Someone tricks you into giving them your card, your login, or a one-time passcode, and then they transfer the money.** They initiated it, and the commentary says an unauthorized transfer includes one by a person who obtained the access device through fraud or robbery. **Unauthorized.** The machine runs.
+- **You are tricked, and you make the transfer yourself.** You initiated it. **Not within the definition.** The machine does not run.
+
+**So the operative question in a real case is a narrow factual one: whose hands were on the transaction?** Not whether you were deceived. Not whether it was unfair. Who pressed the button, and if it was somebody else, how did they get what they used?
+
+**This is why the payment method a fraudster steers you toward is not a detail. It is the point.** The Federal Trade Commission's own reporting on 2024 data states that "consumers reported losing more money to scams where they paid with bank transfers or cryptocurrency than all other payment methods combined" (Federal Trade Commission, 2025). **Those are the two methods where the consumer performs the transfer and the money is hard to reverse**, which is exactly the combination this lesson describes. A demand that you pay by a specific method is a demand about which rulebook will apply afterwards.
+
+**None of this means nothing can be done.** An institution may reverse a payment as a matter of its own policy or a network's rules even where no statute requires it, and reporting a fraud is worthwhile regardless. But **a courtesy is not a right**, and knowing which one you are asking for changes how you ask and what you do next.
+
+**And this is not a lesson about being careless.** Impersonation works on attentive people because it borrows real details and real urgency, and the pressure to act immediately is the technique rather than an accident. **The defence that actually generalises is procedural, not attitudinal**: no legitimate institution needs a transfer completed inside the call, so ending the call and dialling the number printed on your own card costs nothing and defeats the entire structure.
+
+:::reveal Why does a transfer you were tricked into making yourself fall outside 12 CFR 1005.2(m)? ||| Because the definition requires initiation by a person other than the consumer, and you initiated it with actual authority over your own account.
+
+:::reveal What is the operative factual question in a disputed transfer? ||| Whose hands were on the transaction, and if it was somebody else, how they obtained what they used.
+
+:::reveal What did the FTC report about payment methods in 2024 data? ||| That consumers reported losing more money to scams paid by bank transfer or cryptocurrency than all other payment methods combined.
+
+:::reveal What is the procedural defence this lesson recommends over an attitudinal one? ||| End the call and dial the number printed on your own card, because no legitimate institution needs a transfer completed inside the call.
+
+## Vocabulary
+- **Induced authorisation**: a transfer the consumer performs personally after being deceived, which does not meet the definition of an unauthorized electronic fund transfer.
+- **Impersonation**: a fraud in which the caller presents as a bank, an agency or a company, borrowing real details and real urgency.
+- **Reversibility**: how easily a completed payment can be recalled, which differs sharply between payment methods and drives which method a fraudster will insist on.
+- **A courtesy against a right**: the difference between an institution choosing to reimburse and a regulation requiring it, which changes what a consumer can insist upon.
+
+## Sources
+12 CFR § 1005.2. (n.d.). *Definitions*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1005.2
+
+Federal Trade Commission. (2025, March 10). *New FTC data show a big jump in reported losses to fraud to $12.5 billion in 2024*. https://www.ftc.gov/news-events/news/press-releases/2025/03/new-ftc-data-show-big-jump-reported-losses-fraud-125-billion-2024
+
+*Official interpretations, supplement I to 12 CFR part 1005*. (n.d.). Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/appendix-Supplement_I_to_part_1005`,
+    },
+    {
+      slug: "four-instruments-four-rules",
+      title: "21 · The same loss under four different rulebooks",
+      section: "Section 5 · Fraud, and the line Regulation E draws",
+      body: `A thousand dollars leaves. What you can do about it depends almost entirely on which instrument it left through, and the four instruments are governed by four different bodies of law.
+
+**One: a credit card.** The statute caps a cardholder's liability for unauthorized use at 50 dollars, and Regulation Z repeats it: "The liability of a cardholder for unauthorized use of a credit card shall not exceed the lesser of $50 or the amount of money, property, labor, or services obtained" before the issuer is notified (12 CFR § 1026.12, n.d.). Under 15 U.S.C. § 1643(b) the **issuer** bears the burden of showing that use was authorized, or that the conditions of liability were met.
+
+**And the card carries something no other instrument does.** Under 12 CFR § 1026.12(c) a cardholder who has made a good faith attempt to resolve a dispute with the merchant may "assert against the card issuer all claims (other than tort claims) and defenses arising out of the transaction", and may withhold payment on the disputed amount without being reported delinquent (12 CFR § 1026.12, n.d.). **That is a right against your own issuer arising out of a dispute with somebody else**, and it is the strongest consumer protection in this lesson. It carries limits: the credit extended must exceed 50 dollars and the transaction must have occurred in the cardholder's state or within 100 miles of the address, unless the merchant is the issuer or is connected to it in ways the rule specifies.
+
+**Two: a debit card or another electronic fund transfer.** Regulation E, which is the whole of Section 5 so far: the 1005.2(m) definition, the 1005.6 tiers, the 1005.11 clocks, and the burden on the institution at 15 U.S.C. § 1693g(b). **Strong when the definition is met, and nothing when it is not.**
+
+**Three: a wire transfer, which is outside both.** 12 CFR § 1005.3(c)(3) excludes from the definition of an electronic fund transfer "Any transfer of funds through Fedwire or through a similar wire transfer system that is used primarily for transfers between financial institutions or between businesses" (12 CFR § 1005.3, n.d.). **A payment sent this way is not an electronic fund transfer for these purposes at all**, so the machinery of the last two lessons has nothing to attach to. Whether a sent wire can be recalled is a question of the receiving bank's cooperation and the funds still being there.
+
+**Four: cash, and instruments that behave like it.** No consumer error-resolution regime, no chargeback, no defined dispute window. Recovery, if any, comes from finding the recipient.
+
+**Set them side by side and the pattern is not subtle.** The instruments with the strongest rules are the ones where an intermediary holds the money and can be made to answer for it. The instruments with no rules are the ones where the money is simply gone. **A fraudster choosing your payment method is choosing your remedy**, and that is why an insistence on a particular method is itself the signal, more reliable than anything about the story being told.
+
+**Two other exclusions from 12 CFR § 1005.3(c) worth knowing**, because they surprise people: transfers whose primary purpose is the purchase or sale of a security or commodity regulated by the SEC or the CFTC, and certain preauthorized transfers at very small institutions, are also outside the definition (12 CFR § 1005.3, n.d.).
+
+**So the practical instruction is one sentence, and it is not advice about what to buy.** When a loss happens, the first thing to establish is which instrument moved the money, because that determines which rulebook you are in, which deadline is running, and whether anybody is obliged to answer you at all.
+
+:::reveal What is a cardholder's maximum liability for unauthorized use of a credit card, and who must prove authorization? ||| 50 dollars at most, and the issuer bears the burden of showing the use was authorized or that the liability conditions were met.
+
+:::reveal What does 12 CFR 1026.12(c) let a cardholder do? ||| Assert against the card issuer all claims other than tort claims, and defenses, arising out of the transaction, and withhold payment on the disputed amount.
+
+:::reveal Why does Regulation E not reach a wire transfer sent through Fedwire or a similar system? ||| Because 12 CFR 1005.3(c)(3) excludes such transfers from the definition of an electronic fund transfer.
+
+:::reveal What is the first thing to establish when money has been lost? ||| Which instrument moved it, because that decides which rulebook applies and which deadline is already running.
+
+## Vocabulary
+- **Chargeback right**: the cardholder's ability under 12 CFR 1026.12(c) to assert claims and defenses against the issuer arising out of a transaction with a merchant.
+- **The 50 dollar cap**: the statutory and regulatory ceiling on a cardholder's liability for unauthorized use of a credit card.
+- **Wire transfer exclusion**: 12 CFR 1005.3(c)(3), which places Fedwire and similar systems outside the definition of an electronic fund transfer.
+- **Intermediary**: the party holding the money in transit, whose presence is what makes a rule enforceable against anybody.
+
+## Sources
+15 U.S.C. § 1643. (n.d.). *Liability of holder of credit card*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1643
+
+12 CFR § 1026.12. (n.d.). *Special credit card provisions*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1026.12
+
+12 CFR § 1005.3. (n.d.). *Coverage*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1005.3
+
+15 U.S.C. § 1693g. (n.d.). *Consumer liability*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1693g`,
+    },
   ],
 };
 
