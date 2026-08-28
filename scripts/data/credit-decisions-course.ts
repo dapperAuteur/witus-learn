@@ -1840,5 +1840,669 @@ Third, **you can supply the purpose yourself**. The list includes furnishing "in
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 4 — The letter that has to say why
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "read-your-adverse-action-notice",
+      title: "13 · Read your own adverse action notice",
+      section: "Section 4 · The letter that has to say why",
+      body: `This is the centre of the course, and it is a piece of paper you can hold.
+
+When a creditor takes adverse action, federal regulation requires it to send you a document, and requires that document to tell you **why**. Not that it happened. Why.
+
+**What the statute requires.** ECOA says:
+
+> "Each applicant against whom adverse action is taken shall be entitled to a statement of reasons for such action from the creditor." (15 U.S.C. § 1691, n.d.)
+
+and then closes the obvious loophole:
+
+> "A statement of reasons meets the requirements of this section only if it contains the specific reasons for the adverse action taken." (15 U.S.C. § 1691, n.d.)
+
+**What the regulation requires, field by field.** Regulation B sets out what has to be in the notification:
+
+> "A notification given to an applicant when adverse action is taken shall be in writing and shall contain a statement of the action taken; the name and address of the creditor; a statement of the provisions of section 701(a) of the Act; the name and address of the Federal agency that administers compliance with respect to the creditor; and either: (i) A statement of specific reasons for the action taken; or (ii) A disclosure of the applicant's right to a statement of specific reasons within 30 days, if the statement is requested within 60 days of the creditor's notification." (12 CFR § 1002.9, n.d.)
+
+**Six things, then. Count them on the letter in front of you:**
+
+1. **The action taken.** What was decided.
+2. **The creditor's name and address.** Who decided.
+3. **A statement of the provisions of section 701(a).** That is the ECOA anti-discrimination notice, and the next lesson but one is about what it says.
+4. **The federal agency that administers compliance for that creditor.** Where a complaint about this creditor goes. Note that the notice names the agency, which means you do not have to work out which one.
+5. **Either the reasons themselves, or the right to ask for them.** If the letter offers the right rather than the reasons, **you have 60 days to ask** and the creditor then has 30 days to answer.
+6. And under the FCRA, if a consumer report was involved, a second set of items, which is the next lesson.
+
+**Now the sentence the entire course turns on.** Regulation B does not stop at requiring reasons. It says what a reason has to be:
+
+> "The statement of reasons for adverse action required by paragraph (a)(2)(i) of this section must be specific and indicate the principal reason(s) for the adverse action. Statements that the adverse action was based on the creditor's internal standards or policies or that the applicant, joint applicant, or similar party failed to achieve a qualifying score on the creditor's credit scoring system are insufficient." (12 CFR § 1002.9, n.d.)
+
+**Read the second sentence again.** Two specific evasions are named and forbidden. "It did not meet our internal standards" is insufficient. **"You did not reach our score cutoff" is insufficient.** The regulation anticipated exactly the two things a creditor would most like to say, and closed both.
+
+**Why that matters more than it looks.** A score cutoff is not a reason, it is a restatement of the decision. Naming the *principal reasons* forces the creditor back onto the file: the balances, the history, the length of record, the specific items the model read badly. And a reason expressed in terms of the file is a reason you can go and check, which is the whole architecture of this course.
+
+**So the letter is not a courtesy.** It is a required disclosure with a defined content standard, and it is the only point in the entire process where an institution has to explain itself to you in writing, on a timetable, in specific terms.
+
+:::reveal Under ECOA, what does a statement of reasons have to contain to satisfy the statute? ||| The specific reasons for the adverse action taken.
+
+:::reveal Which two statements does Regulation B name as insufficient reasons for adverse action? ||| That the action was based on the creditor's internal standards or policies, and that the applicant failed to achieve a qualifying score on the creditor's credit scoring system.
+
+:::reveal If a notice discloses the right to reasons rather than the reasons, what are the two deadlines? ||| The applicant has 60 days to request the statement, and the creditor then has 30 days to provide it.
+
+## Vocabulary
+- **Adverse action notice**: the written notification a creditor must give when it takes adverse action, carrying the action, the creditor's identity, the ECOA notice, the supervising agency, and either the reasons or the right to them.
+- **Statement of specific reasons**: the part of the notice that must be specific and indicate the principal reasons; a reference to internal standards or a failed score cutoff does not qualify.
+- **Principal reasons**: the leading grounds for the decision, expressed in terms a consumer can check against the file rather than as a restatement of the outcome.
+- **Section 701(a) notice**: the statement of the Equal Credit Opportunity Act's anti-discrimination provisions that Regulation B requires the notification to carry.
+
+## Sources
+15 U.S.C. § 1691. (n.d.). *Scope of prohibition*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1691
+
+12 CFR § 1002.9. (n.d.). *Notifications*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1002.9`,
+    },
+    {
+      slug: "the-second-notice-on-the-same-page",
+      title: "14 · The second notice on the same page",
+      section: "Section 4 · The letter that has to say why",
+      body: `Most people who receive one of these letters receive two notices printed as one document, required by two different statutes, and never notice the seam.
+
+**Regulation B's notice, from the last lesson, comes from ECOA.** It is about the *decision*: what was decided and on what principal reasons.
+
+**The FCRA's notice is about the report.** It is triggered by a different fact, namely that the adverse action was based in whole or in part on information in a consumer report, and it imposes four duties:
+
+> "If any person takes any adverse action with respect to any consumer that is based in whole or in part on any information contained in a consumer report, the person shall— (1) provide oral, written, or electronic notice of the adverse action to the consumer; (2) provide to the consumer written or electronic disclosure— (A) of a numerical credit score as defined in section 1681g(f)(2)(A) of this title used by such person in taking any adverse action based in whole or in part on any information in a consumer report; and (B) of the information set forth in subparagraphs (B) through (E) of section 1681g(f)(1) of this title" (15 U.S.C. § 1681m, n.d.)
+
+**Duty (2) is the payoff of Section 3.** The score, the range, the key factors capped at four, the date the score was created, and who provided it: exactly the disclosure elements you already know, arriving unrequested because a decision went against you.
+
+**Duties (3) and (4) are the ones people miss.** The user must also provide:
+
+> "(3) ... (A) the name, address, and telephone number of the consumer reporting agency (including a toll-free telephone number established by the agency if the agency compiles and maintains files on consumers on a nationwide basis) that furnished the report to the person; and (B) a statement that the consumer reporting agency did not make the decision to take the adverse action and is unable to provide the consumer the specific reasons why the adverse action was taken" (15 U.S.C. § 1681m, n.d.)
+
+> "(4) provide to the consumer an oral, written, or electronic notice of the consumer's right— (A) to obtain, under section 1681j of this title, a free copy of a consumer report on the consumer from the consumer reporting agency referred to in paragraph (3), which notice shall include an indication of the 60-day period under that section for obtaining such a copy; and (B) to dispute, under section 1681i of this title, with a consumer reporting agency the accuracy or completeness of any information in a consumer report furnished by the agency." (15 U.S.C. § 1681m, n.d.)
+
+**So the letter hands you the next two steps.** It tells you which agency's file was used, that a free copy is available on a 60-day clock, and that you may dispute what is in it. **The remedy is printed on the refusal.** Section 5 is the two steps the letter just named.
+
+**And the sentence in duty (3)(B) is worth pausing on.** The agency did not make the decision and cannot tell you why it went the way it did. The creditor decided, so the reasons come from the creditor, under Regulation B. The file comes from the agency, under the FCRA. Two institutions, two duties, one envelope, and knowing which is which tells you who to write to.
+
+**A third notice exists and is different again.** Where a creditor uses a consumer report and then grants credit on materially less favourable terms than it offers to a substantial proportion of its consumers, Regulation V requires a **risk-based pricing notice** (12 CFR § 1022.72, n.d.). That is not adverse action; you got the credit. It is the disclosure for being priced worse than the people around you, and it exists because a bad price and a refusal are the same decision expressed differently.
+
+:::reveal What fact triggers the FCRA's adverse action duties, as opposed to Regulation B's? ||| That the adverse action was based in whole or in part on information contained in a consumer report.
+
+:::reveal What must a user tell a consumer about the consumer reporting agency's role in the decision? ||| That the agency did not make the decision and is unable to provide the specific reasons why the adverse action was taken.
+
+:::reveal What triggers a risk-based pricing notice, and how does it differ from adverse action? ||| Being granted credit on materially less favourable terms than a substantial proportion of consumers get, based on a consumer report. The credit was granted, so it is not a refusal.
+
+## Vocabulary
+- **The seam**: the boundary between the Regulation B notice about the decision and the FCRA notice about the report, usually printed as one document.
+- **Free copy on a 60-day clock**: the FCRA right a user must tell the consumer about after adverse action, pointing at the agency whose report it used.
+- **Risk-based pricing notice**: the Regulation V disclosure owed when a consumer report leads to credit on materially less favourable terms than a substantial proportion of consumers receive.
+- **Material terms**: the price and conditions on which credit is granted, which the risk-based pricing rule compares against what most consumers get from that same person.
+
+## Sources
+15 U.S.C. § 1681m. (n.d.). *Requirements on users of consumer reports*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1681m
+
+12 CFR § 1022.72. (n.d.). *General requirements for risk-based pricing notices*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1022.72
+
+15 U.S.C. § 1681g. (n.d.). *Disclosures to consumers*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1681g`,
+    },
+    {
+      slug: "a-gate-that-must-state-a-standard",
+      title: "15 · A gate that has to state a standard",
+      section: "Section 4 · The letter that has to say why",
+      body: `Set the adverse action notice beside the course this catalog already published about federal farm credit, and the same machine appears at two different scales.
+
+**The government version.** *The County Committee* teaches a federal lender whose eligibility standard sat in statute. To borrow, an applicant had to be unable to obtain sufficient credit elsewhere at reasonable rates and terms in their own community, and until 1994 the statute also asked whether the applicant had **the character, industry, and ability** to carry out the proposed operations. The people applying that test were **three individuals residing in the county, at least two of them farmers**, who determined both eligibility and the limits of credit to be extended.
+
+**The consumer version.** A private lender applies a standard it wrote itself, using a model it bought, on a file assembled by a company. Nobody elected anybody. And yet the same demand is made of it: **state the principal reasons, specifically, in writing, on a timetable.**
+
+**The difference is instructive in both directions.** The federal gate had to publish its standard in advance, in a statute anyone could read, and could then apply it through neighbours. The private gate does not publish its standard at all, and is required instead to explain its application after the fact. Neither arrangement is obviously the better one. What they share is the thing worth learning: **a gate that must state something can be argued with, and a gate that need not cannot.**
+
+**Now the part of the notice that is about who you are.** Regulation B requires the notification to carry a statement of the ECOA's prohibited bases, and the regulation defines them:
+
+> "(z) Prohibited basis means race, color, religion, national origin, sex, marital status, or age (provided that the applicant has the capacity to enter into a binding contract); the fact that all or part of the applicant's income derives from any public assistance program; or the fact that the applicant has in good faith exercised any right under the Consumer Credit Protection Act or any state law upon which an exemption has been granted by the Bureau." (12 CFR § 1002.2, n.d.)
+
+The statute puts the same list in the form of a prohibition:
+
+> "It shall be unlawful for any creditor to discriminate against any applicant, with respect to any aspect of a credit transaction— (1) on the basis of race, color, religion, national origin, sex or marital status, or age (provided the applicant has the capacity to contract); (2) because all or part of the applicant's income derives from any public assistance program; or (3) because the applicant has in good faith exercised any right under this chapter." (15 U.S.C. § 1691, n.d.)
+
+**Three features of that list are easy to miss.**
+
+**"With respect to any aspect of a credit transaction."** Not just the approval. Any aspect, which reaches the terms, the pricing, the servicing and the collection.
+
+**Public assistance income is a protected source.** The statute names it separately, which tells you what practice it was written against.
+
+**Retaliation is prohibited.** Exercising a right in good faith under the Consumer Credit Protection Act, which includes the rights in this course, cannot lawfully be held against you.
+
+**Why the notice and the prohibition sit in the same envelope.** Because the statement of reasons is what makes the prohibition checkable. A refusal with no stated reason is unfalsifiable. A refusal that names its principal reasons can be compared against the file, against the reasons other applicants were given, and against the list above. **The disclosure is the enforcement mechanism**, which is exactly what the county committee's published statutory standard was too.
+
+:::reveal What eligibility test did the federal farm lender apply in statute until 1994? ||| Whether the applicant had the character, industry, and ability to carry out the proposed operations.
+
+:::reveal What is the difference between how the federal gate and the private gate handle their standards? ||| The federal gate published its standard in advance in statute; the private gate does not publish it, and must instead explain its application after the fact.
+
+:::reveal Which income source does ECOA name separately as a prohibited basis? ||| Income derived in whole or in part from any public assistance program.
+
+## Vocabulary
+- **Prohibited basis**: the list in ECOA and Regulation B of grounds on which a creditor may not discriminate in any aspect of a credit transaction.
+- **Any aspect of a credit transaction**: the statutory reach of the prohibition, covering terms, pricing, servicing and collection as well as the decision to grant.
+- **Retaliation**: adverse treatment because an applicant exercised a right in good faith under the Consumer Credit Protection Act, which the statute lists as a prohibited basis.
+- **Disclosure as enforcement**: this lesson's name for the reason the statement of reasons matters, since an unstated reason cannot be tested against the prohibition.
+
+## Sources
+15 U.S.C. § 1691. (n.d.). *Scope of prohibition*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1691
+
+12 CFR § 1002.2. (n.d.). *Definitions*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1002.2
+
+7 U.S.C. § 1922. (n.d.). *Persons eligible for real estate loans*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title7-section1922&num=0&edition=prelim
+
+Farm Service Agency. (1996, April 15). Farm Service Agency county committees; Farm Credit Programs loan eligibility determinations. *Federal Register, 61*(73), 16461-16462. https://www.govinfo.gov/content/pkg/FR-1996-04-15/html/96-9201.htm`,
+    },
+    {
+      slug: "quiz-the-notice",
+      title: "16 · Knowledge check: the letter that has to say why",
+      section: "Section 4 · The letter that has to say why",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "Under ECOA, what is an applicant against whom adverse action is taken entitled to?",
+            options: ["A statement of reasons", "A copy of every consumer report the creditor obtained during its evaluation of the file", "An interview with the officer who made the decision, on request within thirty days", "A referral to a second lender offering a comparable product on comparable terms"],
+            correctIndex: 0,
+            explanation: "The statute entitles each such applicant to a statement of reasons for the action from the creditor.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "ECOA says a statement of reasons meets the section's requirements only if it contains what?",
+            options: ["The specific reasons", "The name of every scoring model the creditor consulted while evaluating the application", "The internal policy number under which the creditor classified the application", "A calculation showing how far the applicant fell short of the creditor's threshold"],
+            correctIndex: 0,
+            explanation: "The statute closes the loophole with the words only if it contains the specific reasons for the adverse action taken.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "Regulation B requires a statement of reasons to be specific and to indicate what?",
+            options: ["The principal reasons", "The number of applicants refused for the same reason during the preceding quarter", "The identity of the consumer reporting agency that supplied the information relied on", "The point at which the applicant's file first diverged from the creditor's requirements"],
+            correctIndex: 0,
+            explanation: "The rule reads must be specific and indicate the principal reason(s) for the adverse action.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "Which statement does Regulation B expressly declare insufficient as a reason for adverse action?",
+            options: ["A failed score cutoff", "That the applicant's stated income could not be verified from the documents supplied", "That the applicant had opened four new accounts in the preceding six months", "That the applicant's file contained a collection account placed within the last year"],
+            correctIndex: 0,
+            explanation: "The rule names a failure to achieve a qualifying score on the creditor's credit scoring system as insufficient, alongside a reference to internal standards.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "What is the other evasion Regulation B names as insufficient?",
+            options: ["The creditor's internal standards", "The volume of applications the creditor received during the month in question", "The absence of a prior relationship between the creditor and the applicant", "The applicant's failure to supply a document the creditor had not requested"],
+            correctIndex: 0,
+            explanation: "Statements that the action was based on the creditor's internal standards or policies are expressly insufficient.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "Why does the lesson say a score cutoff is not a reason?",
+            options: ["It restates the decision", "Because the cutoff is set by the model's developer rather than by the creditor itself", "Because the cutoff varies by product and cannot be disclosed to an individual applicant", "Because the applicant has no way to obtain the score the creditor actually used"],
+            correctIndex: 0,
+            explanation: "Naming the principal reasons forces the creditor back onto the file, which is an object the applicant can go and check.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "Regulation B requires the adverse action notification to be in what form?",
+            options: ["In writing", "Orally, with a written confirmation to follow within ten business days of the call", "In any form the creditor chooses, provided the applicant acknowledges receipt", "By certified mail, with a return receipt retained by the creditor for two years"],
+            correctIndex: 0,
+            explanation: "The rule opens shall be in writing and then lists the contents it must carry.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "Which of these is one of the items Regulation B requires in the adverse action notification?",
+            options: ["The creditor's name and address", "The number of applications the creditor approved in the same product during that month", "The applicant's own credit file as held by each of the nationwide agencies", "A schedule of the terms on which the creditor would reconsider the application"],
+            correctIndex: 0,
+            explanation: "The rule requires a statement of the action taken, the creditor's name and address, the section 701(a) statement, the supervising agency, and the reasons or the right to them.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "Which government body's name and address must the adverse action notification carry?",
+            options: ["The federal agency supervising the creditor", "The office of the State attorney general in the applicant's own State of residence", "The federal court in whose district the creditor maintains its principal place of business", "The consumer reporting agency's federal supervisor, rather than the creditor's"],
+            correctIndex: 0,
+            explanation: "The rule requires the name and address of the Federal agency that administers compliance with respect to the creditor, so the consumer does not have to work out which one it is.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "If a notification discloses the right to reasons rather than the reasons themselves, how long does the applicant have to ask?",
+            options: ["60 days", "30 days, matching the period the creditor then has to supply the statement of reasons", "90 days, matching the period Regulation B allows after an unaccepted counteroffer", "One year, measured from the date the creditor received the completed application"],
+            correctIndex: 0,
+            explanation: "The disclosure route requires the request to be made within 60 days of the creditor's notification.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "Once an applicant requests the statement of reasons in time, how long does the creditor have?",
+            options: ["30 days", "60 days, matching the period the applicant had in which to make the request", "Ten business days, because the creditor already reached the decision it is explaining", "Until the end of the calendar quarter in which the request was received"],
+            correctIndex: 0,
+            explanation: "The rule gives the applicant a right to a statement of specific reasons within 30 days of a timely request.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "What does the lesson say the adverse action notice is, rather than a courtesy?",
+            options: ["A required disclosure", "A commercial communication that the creditor may tailor to its own marketing needs", "An offer to reconsider the application on receipt of additional documentation", "A summary of the creditor's underwriting standards prepared for the applicant"],
+            correctIndex: 0,
+            explanation: "It is a required disclosure with a defined content standard and a timetable, and the only written explanation in the whole process.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "Under ECOA, may a creditor satisfy the statement-of-reasons duty by giving the statement orally?",
+            options: ["Yes, if it confirms in writing on request", "No, the statute requires every statement of reasons to be delivered in writing in every case", "Yes, and no written confirmation may be demanded by the applicant afterwards", "Yes, but only where the creditor acted on fewer than fifty applications that year"],
+            correctIndex: 0,
+            explanation: "The statute allows an oral statement where the written notification advises the applicant of the right to have the reasons confirmed in writing on written request.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "Which anti-discrimination provision must the Regulation B notification restate?",
+            options: ["Section 701(a) of the Act", "Section 615 of the Fair Credit Reporting Act, on the duties of users of reports", "Title VII of the Civil Rights Act of 1964, on discrimination in employment", "Section 5 of the Federal Trade Commission Act, on unfair or deceptive practices"],
+            correctIndex: 0,
+            explanation: "The rule requires a statement of the provisions of section 701(a) of the Act, which is the ECOA prohibited-bases provision.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "The lesson says the regulation anticipated the two things a creditor would most like to say. What does that tell you about the rule's drafting?",
+            options: ["Both evasions were closed on purpose", "That the two statements were once permitted and were removed by later amendment", "That a creditor may still use either statement if it also supplies a score disclosure", "That the two statements are permitted for small creditors and forbidden for large ones"],
+            correctIndex: 0,
+            explanation: "Naming the internal-standards and score-cutoff evasions specifically is what makes the specificity requirement bite.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "What does the lesson say a reason expressed in terms of the file allows a consumer to do?",
+            options: ["Check it", "Compel the creditor to reverse its decision within the thirty-day statutory period", "Require the consumer reporting agency to delete the item the reason refers to", "Obtain a second decision from a different underwriter at the same institution"],
+            correctIndex: 0,
+            explanation: "That checkability is the whole architecture of this course, and it is why the principal-reasons requirement matters.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "How many items does the lesson count in the Regulation B notification, counting the FCRA additions as one?",
+            options: ["Six", "Three, since the rule groups the creditor's identity, the action and the reasons together", "Nine, because each of the ECOA prohibited bases is counted as its own item", "Four, because the supervising agency and the section 701(a) statement are optional"],
+            correctIndex: 0,
+            explanation: "The action, the creditor, the section 701(a) statement, the supervising agency, the reasons or the right to them, and the FCRA items when a report was used.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "What fact triggers the FCRA's adverse action duties on a user?",
+            options: ["The action was based on a consumer report", "The applicant requested a copy of the report before the decision was reached", "The creditor is supervised by a federal banking regulator rather than by a State one", "The applicant's score fell below the range published by the model's developer"],
+            correctIndex: 0,
+            explanation: "The duties apply where the adverse action is based in whole or in part on information contained in a consumer report.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "How many duties does 15 U.S.C. section 1681m(a) impose on a user taking adverse action?",
+            options: ["Four", "Two, namely notice of the action and disclosure of the numerical credit score used", "Six, matching the number of items Regulation B requires in its own notification", "One, namely the provision of oral, written or electronic notice of the adverse action"],
+            correctIndex: 0,
+            explanation: "Notice of the action, the score disclosure, the agency's contact details with the disclaimer, and notice of the free-copy and dispute rights.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "Which score-related items must a user disclose after adverse action based on a report?",
+            options: ["The score and the section 1681g(f)(1) items", "The range alone, since the score itself is proprietary to the model's developer", "The key factors alone, since the number would confuse an applicant who was refused", "The lender's own cutoff, so the applicant can see how far short the score fell"],
+            correctIndex: 0,
+            explanation: "The statute requires the numerical credit score used, plus the information in subparagraphs (B) through (E) of section 1681g(f)(1).",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "What must the user tell the consumer about the consumer reporting agency that furnished the report?",
+            options: ["Its name, address and telephone number", "The date on which the agency last updated the consumer's file before the report was pulled", "The fee the user paid the agency for the report on which it based its decision", "The number of other users that obtained the same report during the preceding year"],
+            correctIndex: 0,
+            explanation: "Including a toll-free number where the agency compiles and maintains files on consumers on a nationwide basis.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "What disclaimer about the agency does the FCRA require the notice to carry?",
+            options: ["It did not make the decision", "It is not liable for any inaccuracy in the information it supplied to the user", "It may not be contacted by the consumer until thirty days after the decision", "It has already been notified of the adverse action and will annotate the file"],
+            correctIndex: 0,
+            explanation: "The statement must say the agency did not make the decision and is unable to provide the specific reasons why the adverse action was taken.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "The FCRA requires notice of a right to a free copy of the report, with what period indicated?",
+            options: ["60 days", "12 months, matching the free annual disclosure available to every consumer", "30 days, matching the period an agency has to complete a reinvestigation", "90 days, matching the period Regulation B allows after an unaccepted counteroffer"],
+            correctIndex: 0,
+            explanation: "The notice must include an indication of the 60-day period under section 1681j for obtaining the copy.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "Which other FCRA right must the adverse action notice tell the consumer about?",
+            options: ["The right to dispute", "The right to require the user to reconsider the application once the file is corrected", "The right to have the agency suppress the file from all future users for twelve months", "The right to receive a written explanation from the agency of how the score was built"],
+            correctIndex: 0,
+            explanation: "The right to dispute, under section 1681i, the accuracy or completeness of any information in the report.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "The lesson says the remedy is printed where?",
+            options: ["On the refusal", "In a separate mailing the agency sends after the user notifies it of the decision", "In the terms and conditions the applicant accepted when submitting the application", "In the regulation itself, which the consumer must find and read independently"],
+            correctIndex: 0,
+            explanation: "The letter names the agency, the free copy on a 60-day clock, and the dispute right, which are Section 5's two steps.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "Knowing which institution owes which duty tells a consumer what, practically?",
+            options: ["Who to write to", "Which federal court has jurisdiction over a claim arising from the decision", "How long the creditor must retain the application file after the decision", "Which of the three nationwide agencies holds the most complete record"],
+            correctIndex: 0,
+            explanation: "The reasons come from the creditor under Regulation B; the file comes from the agency under the FCRA.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "What triggers a risk-based pricing notice under Regulation V?",
+            options: ["Materially less favourable terms", "Any use of a consumer report in connection with an application for consumer credit", "A refusal to grant credit in substantially the amount the applicant requested", "The consumer's score falling below the median for applicants of that product"],
+            correctIndex: 0,
+            explanation: "The rule applies where a consumer report leads to credit on material terms materially less favourable than the most favourable terms available to a substantial proportion of consumers from that person.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "How does a risk-based pricing notice differ from an adverse action notice?",
+            options: ["You got the credit", "It is sent by the consumer reporting agency rather than by the creditor that priced the loan", "It is required only for credit secured by residential real property rather than for all credit", "It must be delivered before the application is decided rather than afterwards"],
+            correctIndex: 0,
+            explanation: "It is the disclosure for being priced worse than the people around you, not for being refused.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "Why does the lesson say a bad price and a refusal are the same decision expressed differently?",
+            options: ["Both act on the report", "Because a consumer refused credit may always obtain it elsewhere at a higher price", "Because a creditor must choose between refusing and repricing under the same rule", "Because the statute defines a materially less favourable price as a form of adverse action"],
+            correctIndex: 0,
+            explanation: "Both outcomes follow from a consumer report, which is why the disclosure regime reaches both rather than only the refusal.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "In the Regulation V risk-based pricing rule, against what are a consumer's terms compared?",
+            options: ["The most favourable terms most consumers get", "The average terms offered by all lenders operating in the consumer's own State", "The terms the same consumer received on their most recent previous credit account", "The terms the creditor would offer to an applicant with no consumer file at all"],
+            correctIndex: 0,
+            explanation: "The comparison is to the most favourable material terms available to a substantial proportion of consumers from or through that person.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "The lesson calls the boundary between the two notices a seam. What lies on each side?",
+            options: ["The decision, and the report", "The creditor's obligations, and the applicant's obligations under the same transaction", "The federal requirements, and any additional requirements imposed by State law", "The written portion of the notice, and the portion the creditor may deliver orally"],
+            correctIndex: 0,
+            explanation: "Regulation B's notice is about the decision and its principal reasons; the FCRA's notice is about the report that fed it.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "Which purpose does the FCRA credit-score disclosure serve after adverse action, per the lesson?",
+            options: ["It arrives unrequested", "It replaces the free annual file disclosure for that twelve-month period", "It obliges the creditor to reconsider once the consumer corrects the file", "It certifies that the score was calculated by an approved model developer"],
+            correctIndex: 0,
+            explanation: "The same elements you can request in Section 3 arrive on their own because a decision went against you.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "May the FCRA's notice of the adverse action itself be given orally?",
+            options: ["Yes", "No, the statute requires the notice of the action to be in writing in every case", "Only where the user acted on fewer than one hundred and fifty applications that year", "Only where the consumer has given prior written consent to oral communication"],
+            correctIndex: 0,
+            explanation: "The first duty reads oral, written, or electronic notice of the adverse action to the consumer.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "In which form must the FCRA's score disclosure be given?",
+            options: ["Written or electronic", "Oral, written or electronic, at the user's option in the same way as the notice of action", "Written only, delivered by mail to the address the consumer supplied on the application", "In whatever form the consumer requests when applying for the credit in question"],
+            correctIndex: 0,
+            explanation: "The second duty specifies written or electronic disclosure, which is narrower than the first duty's oral option.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "What eligibility test does the sibling course report from federal farm credit statute?",
+            options: ["Character, industry, and ability", "Three years of continuous operation and a demonstrated positive net worth", "Residence in the county and endorsement by the elected conservation committee", "Ownership of at least forty acres and participation in a price support programme"],
+            correctIndex: 0,
+            explanation: "The statute asked whether the applicant had the character, industry, and ability to carry out the proposed operations, until 1994.",
+            sourceLessonSlug: "a-gate-that-must-state-a-standard",
+          },
+          {
+            prompt: "What did the federal farm applicant have to be unable to do, before borrowing?",
+            options: ["Obtain sufficient credit elsewhere", "Repay an existing obligation from the current year's expected receipts", "Secure the endorsement of two neighbouring producers in the same county", "Obtain crop insurance covering the acreage the loan would be used to plant"],
+            correctIndex: 0,
+            explanation: "The applicant had to be unable to obtain sufficient credit elsewhere at reasonable rates and terms in their own community.",
+            sourceLessonSlug: "a-gate-that-must-state-a-standard",
+          },
+          {
+            prompt: "How does the private credit gate differ from the federal farm gate on publication?",
+            options: ["It does not publish its standard", "It publishes its standard in the Federal Register before applying it to any application", "It files its standard with the consumer reporting agencies that supply its reports", "It must publish its standard on request from any applicant who has been refused"],
+            correctIndex: 0,
+            explanation: "The private gate is required instead to explain its application after the fact, through the statement of reasons.",
+            sourceLessonSlug: "a-gate-that-must-state-a-standard",
+          },
+          {
+            prompt: "What do the two gates share, in the lesson's summary?",
+            options: ["Each must state something", "Each is operated by people elected by the community the applicant lives in", "Each applies a test that Congress wrote and can amend at any time by statute", "Each gives the refused applicant a right of appeal to a federal administrative body"],
+            correctIndex: 0,
+            explanation: "A gate that must state something can be argued with, and a gate that need not cannot.",
+            sourceLessonSlug: "a-gate-that-must-state-a-standard",
+          },
+          {
+            prompt: "Which of these is a prohibited basis under ECOA?",
+            options: ["Marital status", "Length of residence at the applicant's current address as stated on the application", "The number of credit applications the applicant has submitted in the last six months", "The industry in which the applicant is employed at the time of the application"],
+            correctIndex: 0,
+            explanation: "The list runs race, colour, religion, national origin, sex or marital status, and age where the applicant has capacity to contract.",
+            sourceLessonSlug: "a-gate-that-must-state-a-standard",
+          },
+          {
+            prompt: "ECOA's prohibition reaches discrimination with respect to what?",
+            options: ["Any aspect of a credit transaction", "The decision to grant or refuse credit, and nothing beyond that decision itself", "The advertising of credit products, but not the evaluation of individual applications", "The setting of interest rates, but not the servicing or collection of the account"],
+            correctIndex: 0,
+            explanation: "The words any aspect of a credit transaction reach the terms, the pricing, the servicing and the collection.",
+            sourceLessonSlug: "a-gate-that-must-state-a-standard",
+          },
+          {
+            prompt: "Which income source does ECOA protect by name?",
+            options: ["Public assistance", "Self-employment income, where the applicant has filed returns for at least two years", "Rental income from residential property the applicant owns and lets to tenants", "Income from a pension or retirement plan sponsored by a former employer"],
+            correctIndex: 0,
+            explanation: "The statute names income derived in whole or in part from any public assistance program as its own prohibited basis.",
+            sourceLessonSlug: "a-gate-that-must-state-a-standard",
+          },
+          {
+            prompt: "ECOA's third prohibited basis protects an applicant who has done what?",
+            options: ["Exercised a right in good faith", "Filed a complaint against the creditor with the appropriate federal supervisory agency", "Refused to supply information the creditor was not entitled to request in the first place", "Obtained a copy of their own consumer report within the preceding twelve months"],
+            correctIndex: 0,
+            explanation: "The statute prohibits discrimination because the applicant has in good faith exercised any right under the chapter, which is an anti-retaliation provision.",
+            sourceLessonSlug: "a-gate-that-must-state-a-standard",
+          },
+          {
+            prompt: "The age prohibition in ECOA carries a proviso. What is it?",
+            options: ["The applicant has capacity to contract", "The applicant is at least twenty-one years of age at the time of the application", "The creditor has offered the same product to applicants of every age group", "The applicant has held a credit account for a minimum of twelve consecutive months"],
+            correctIndex: 0,
+            explanation: "The statute reads age (provided the applicant has the capacity to contract), and Regulation B renders it as capacity to enter into a binding contract.",
+            sourceLessonSlug: "a-gate-that-must-state-a-standard",
+          },
+          {
+            prompt: "Regulation B's definition of prohibited basis adds a limb the statute states differently. Which?",
+            options: ["Rights under State law where an exemption was granted", "Rights under any collective bargaining agreement covering the applicant's employment", "Rights under a municipal ordinance regulating consumer lending within the city", "Rights under a contract between the applicant and a previous creditor"],
+            correctIndex: 0,
+            explanation: "The regulation reaches good-faith exercise of any right under the Consumer Credit Protection Act or any State law on which the Bureau has granted an exemption.",
+            sourceLessonSlug: "a-gate-that-must-state-a-standard",
+          },
+          {
+            prompt: "Why does the lesson say the statement of reasons makes the prohibition checkable?",
+            options: ["An unstated reason cannot be tested", "Because the reasons must be filed with the creditor's federal supervisor each quarter", "Because a stated reason binds the creditor to reconsider if the reason turns out false", "Because the statute requires the reasons to be identical for all applicants refused"],
+            correctIndex: 0,
+            explanation: "A refusal with no stated reason is unfalsifiable; a refusal naming its principal reasons can be compared against the file and against the prohibited-bases list.",
+            sourceLessonSlug: "a-gate-that-must-state-a-standard",
+          },
+          {
+            prompt: "The lesson names the disclosure as something other than a formality. What?",
+            options: ["The enforcement mechanism", "A defence the creditor may raise if the applicant later brings a discrimination claim", "A record the consumer reporting agency retains for seven years from the decision", "A condition the creditor must satisfy before it may report the application to an agency"],
+            correctIndex: 0,
+            explanation: "The lesson makes the same point about the county committee's published statutory standard.",
+            sourceLessonSlug: "a-gate-that-must-state-a-standard",
+          },
+          {
+            prompt: "How many people sat on the federal farm credit committee, and what did they determine?",
+            options: ["Three, eligibility and credit limits", "Five, eligibility only, with credit limits set by the state director's office", "Seven, credit limits only, with eligibility determined by the county supervisor", "Nine, neither, since the committee's role was advisory to the agency's lending staff"],
+            correctIndex: 0,
+            explanation: "Three individuals residing in the county, at least two of them farmers, determined both eligibility and the limits of credit to be extended.",
+            sourceLessonSlug: "a-gate-that-must-state-a-standard",
+          },
+          {
+            prompt: "Who elected the people who decide a consumer credit application, in the private version of the gate?",
+            options: ["Nobody", "The creditor's shareholders, who appoint the underwriting committee each year", "The consumers of the product, through the creditor's published governance procedures", "The federal supervisor, which certifies each underwriter before they may decide files"],
+            correctIndex: 0,
+            explanation: "The private lender applies a standard it wrote itself using a model it bought on a file assembled by a company, and no election is involved anywhere.",
+            sourceLessonSlug: "a-gate-that-must-state-a-standard",
+          },
+          {
+            prompt: "Does the lesson claim the private arrangement is worse than the federal one?",
+            options: ["No", "Yes, because the private standard is never published while the federal one was", "Yes, because the federal gate was subject to election and the private gate is not", "Yes, because the federal statute permitted appeal and the private notice does not"],
+            correctIndex: 0,
+            explanation: "The lesson says neither arrangement is obviously the better one and draws the shared property instead.",
+            sourceLessonSlug: "a-gate-that-must-state-a-standard",
+          },
+          {
+            prompt: "The lesson describes the same machine at two scales. What is the machine?",
+            options: ["A gate that must state something", "A federal agency lending money to applicants no private lender would serve", "An eligibility test written by neighbours and applied to their own competitors", "A statistical model priced on the likelihood that an applicant will default"],
+            correctIndex: 0,
+            explanation: "One published its standard in advance and one must explain its application afterwards, but both are answerable in a way an unstated standard is not.",
+            sourceLessonSlug: "a-gate-that-must-state-a-standard",
+          },
+          {
+            prompt: "What can a stated reason be compared against, per the lesson?",
+            options: ["The file and the prohibited-bases list", "The reasons the same creditor gave to the same applicant on a previous application", "The published cutoffs of the model developer whose score the creditor purchased", "The federal supervisor's most recent examination report on that creditor"],
+            correctIndex: 0,
+            explanation: "It can also be compared against the reasons other applicants were given, which is what makes the disclosure an enforcement mechanism.",
+            sourceLessonSlug: "a-gate-that-must-state-a-standard",
+          },
+          {
+            prompt: "Which document does the course cite for the abolition of the federal farm credit committees' eligibility role?",
+            options: ["A 1996 Federal Register notice", "The Congressional Record for the debate on the 1994 reorganisation act", "A Congressional Research Service report published in January of 2021", "The Uniform Partition of Heirs Property Act as approved in the year 2010"],
+            correctIndex: 0,
+            explanation: "The Farm Service Agency recorded the change at 61 Fed. Reg. 16461, dated 15 April 1996.",
+            sourceLessonSlug: "a-gate-that-must-state-a-standard",
+          },
+          {
+            prompt: "Why does the lesson put the notice and the prohibition in the same envelope?",
+            options: ["The reasons make the prohibition testable", "Because the statute requires both to be printed on a single sheet of paper", "Because a creditor that omits either one commits the same statutory violation", "Because the applicant must sign both before the decision becomes final"],
+            correctIndex: 0,
+            explanation: "The statement of reasons is what allows the prohibition to be checked, so the two provisions do one job between them.",
+            sourceLessonSlug: "a-gate-that-must-state-a-standard",
+          },
+          {
+            prompt: "What does Regulation B's phrase must be specific rule out?",
+            options: ["A generic explanation", "An explanation given orally rather than in writing to the refused applicant", "An explanation naming more than four separate grounds for the decision", "An explanation the creditor supplies later than thirty days after the request"],
+            correctIndex: 0,
+            explanation: "The rule pairs specificity with the principal-reasons requirement, and names two generic formulations as insufficient.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "Under ECOA, a creditor may satisfy the statement-of-reasons duty in which two ways?",
+            options: ["Send them, or offer the right to them", "Publish them on its website, or supply them to the supervising federal agency", "Give them to the applicant, or give them to the consumer reporting agency it used", "State them in the application form, or state them at the time of the interview"],
+            correctIndex: 0,
+            explanation: "Either provide statements of reasons in writing as a matter of course, or give written notification disclosing the right to a statement and where to obtain it.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "Where a third party asked a creditor to extend credit to an applicant, how may the notification be made?",
+            options: ["Directly or through the third party", "Only directly, since the statute forbids delegation of the notification duty", "Only through the third party, which stands in the creditor's place for that purpose", "By publication, where the applicant's address cannot be established from the file"],
+            correctIndex: 0,
+            explanation: "The statute permits either route provided the identity of the creditor is disclosed.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "ECOA allows verbal statements or notifications for a creditor of what size?",
+            options: ["Under 150 applications a year", "Under 500 applications a year, measured across all products the creditor offers", "Under 1,000 applications a year, as determined by the creditor's own records", "Any size, provided the applicant does not request written confirmation"],
+            correctIndex: 0,
+            explanation: "The statute allows it for a creditor that did not act on more than one hundred and fifty applications during the preceding calendar year.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "What does the lesson call the only point in the process where an institution must explain itself in writing?",
+            options: ["The adverse action notice", "The risk-based pricing notice required when a consumer is priced less favourably", "The annual file disclosure the nationwide agencies must supply on request", "The reinvestigation result the agency sends after a consumer disputes an item"],
+            correctIndex: 0,
+            explanation: "It is a required disclosure with a defined content standard, on a timetable, in specific terms.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "In the two-notice structure, which institution supplies the reasons for the decision?",
+            options: ["The creditor", "The consumer reporting agency, which holds the file the decision was based on", "The model developer, which built the scoring system the creditor applied", "The federal supervisor, which reviews the creditor's decisions on complaint"],
+            correctIndex: 0,
+            explanation: "The agency did not make the decision and cannot say why it went the way it did, which the notice itself has to state.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "In the same structure, which institution supplies the file?",
+            options: ["The consumer reporting agency", "The creditor, which must retain a copy of the report for two years after deciding", "The furnisher, which supplied the items and can produce them on request", "The applicant, who must obtain and forward the report before applying"],
+            correctIndex: 0,
+            explanation: "The file comes from the agency under the FCRA, which is why the notice must name it and give its contact details.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "What does the lesson say most recipients of one of these letters fail to notice?",
+            options: ["The seam", "That the letter carries a deadline for requesting a statement of specific reasons", "That the score disclosed is not the score any other lender would have used", "That the supervising agency named on the letter is not the creditor's regulator"],
+            correctIndex: 0,
+            explanation: "Two notices required by two different statutes are printed as one document.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "Which section of the FCRA governs the free copy the adverse action notice points to?",
+            options: ["Section 1681j", "Section 1681g, the section governing what an agency must disclose on request", "Section 1681i, the section governing reinvestigation after a consumer dispute", "Section 1681b, the section listing the permissible purposes for furnishing a report"],
+            correctIndex: 0,
+            explanation: "The notice must indicate the 60-day period under section 1681j for obtaining a free copy from the agency named.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "Which section of the FCRA governs the dispute right the adverse action notice points to?",
+            options: ["Section 1681i", "Section 1681s-2, which imposes duties on the furnishers that supply the information", "Section 1681m, the same section that imposes the notice duty on the user", "Section 1681c, which limits how long an adverse item may appear in a report"],
+            correctIndex: 0,
+            explanation: "The notice must state the right to dispute, under section 1681i, the accuracy or completeness of any information in the report.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "Which statute does the risk-based pricing notice come from?",
+            options: ["The Fair Credit Reporting Act", "The Equal Credit Opportunity Act, through Regulation B's notification requirements", "The Truth in Lending Act, through Regulation Z's disclosure of the annual percentage rate", "The Real Estate Settlement Procedures Act, through the standardized loan disclosures"],
+            correctIndex: 0,
+            explanation: "It is implemented in Regulation V at 12 CFR 1022.72, which is the FCRA's implementing rule.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "The risk-based pricing rule applies to credit used primarily for which purposes?",
+            options: ["Personal, family, or household", "Commercial or agricultural, matching the scope of the farm credit programmes", "Any purpose, since the rule turns on the use of a consumer report rather than the use of the credit", "Educational or medical, the two categories the rule names by way of example"],
+            correctIndex: 0,
+            explanation: "The rule reaches credit to that consumer that is primarily for personal, family, or household purposes.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "What does Section 4's cross-course lesson add that the statutes alone do not?",
+            options: ["Scale", "A remedy the consumer can pursue in federal court against a private lender", "A definition of adverse action broader than the one Regulation B supplies", "A published list of the standards each large creditor applies to its applications"],
+            correctIndex: 0,
+            explanation: "The same demand, state your standard or state your reasons, appears at the level of a federal programme and at the level of one household's application.",
+            sourceLessonSlug: "a-gate-that-must-state-a-standard",
+          },
+          {
+            prompt: "Which fact about a creditor does the notice save the consumer from having to work out?",
+            options: ["Which federal agency supervises it", "Which consumer reporting agency holds the most complete file on the consumer", "Which scoring model the creditor purchased and applied to the application", "Which of the creditor's products the applicant would have qualified for instead"],
+            correctIndex: 0,
+            explanation: "Regulation B requires the notification to name the federal agency that administers compliance with respect to that creditor.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "What is the relationship between the score disclosure in Section 3 and the one in the adverse action notice?",
+            options: ["Same elements, different trigger", "The notice version omits the key factors, which are available only on request", "The notice version is supplied by the agency and the Section 3 version by the creditor", "The notice version covers every model the creditor holds a licence to run"],
+            correctIndex: 0,
+            explanation: "One arrives because you asked; the other arrives because a decision went against you.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "Under Regulation B, what must the notification state about the outcome itself?",
+            options: ["The action taken", "The number of days the creditor spent evaluating the completed application", "The product the applicant would have qualified for on the information supplied", "The threshold the applicant would need to reach for a future application to succeed"],
+            correctIndex: 0,
+            explanation: "A statement of the action taken heads the list of contents the rule requires.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "What does the lesson say the private lender's standard is built from?",
+            options: ["Its own rules, a bought model, a bought file", "A framework published by the federal supervisor and applied uniformly across the industry", "A test written by Congress and applied by an elected committee in the applicant's county", "A set of criteria the consumer reporting agencies publish and revise every year"],
+            correctIndex: 0,
+            explanation: "A standard it wrote itself, a model it bought, and a file assembled by a company, with no election anywhere in the chain.",
+            sourceLessonSlug: "a-gate-that-must-state-a-standard",
+          },
+          {
+            prompt: "What does the lesson identify as the useful property shared by a published standard and a required statement of reasons?",
+            options: ["Both can be argued with", "Both are enforced by the same federal agency under the same statutory scheme", "Both must be produced before the decision is made rather than after it", "Both give the applicant a right to have the decision reviewed by a second decider"],
+            correctIndex: 0,
+            explanation: "A gate that must state something can be tested against what it stated; a gate that need not cannot.",
+            sourceLessonSlug: "a-gate-that-must-state-a-standard",
+          },
+        ],
+      },
+    },
   ],
 };
