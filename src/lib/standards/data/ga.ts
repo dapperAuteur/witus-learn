@@ -390,6 +390,26 @@ export const JURISDICTION: JurisdictionFile = {
           coverage: "partial",
           note: "Partial: taught through real commodity markets — a supply shock moving world coffee prices and why inelastic demand absorbs the spike. It is not a general supply-and-demand-graph unit.",
         },
+        // — Personal Finance, SSEPF1, added 2026-08-28 when MONEY-06 (`housing-decisions`) shipped.
+        //   TRANSCRIPTION AND PROVENANCE NOTE, recorded because the two do not agree. The PDF at
+        //   this framework's sourceUrl was re-downloaded on 2026-08-28 and its page footer reads
+        //   "Social Studies Georgia Standards of Excellence / Georgia Department of Education / All
+        //   Rights Reserved / December 9, 2021", with the course header "Personal Finance and
+        //   Economics / Course Code: 45.061 effective beginning the 2022-2023 school year". The
+        //   `version` string above additionally carries an "Updated November 2, 2023" line that is
+        //   NOT printed on the document itself; it is left as the earlier pass recorded it rather
+        //   than silently rewritten, and the discrepancy is filed as a research check.
+        {
+          code: "SSEPF1",
+          text: "Analyze major life decisions using economics-based decision-making skills.",
+          claimIds: [
+            "money.rent-versus-buy-comparison",
+            "money.mortgage-mechanics-and-disclosures",
+            "money.tenancy-and-the-governing-state-law",
+          ],
+          coverage: "partial",
+          note: "Partial, and element-specific. Element (d) asks students to apply a rational decision-making model to major life choices \"like employment opportunities, renting a home vs. buying, selecting a mortgage, and buying a car\". Two of those four are the whole subject of MONEY-06: renting against buying is built as a seven-line comparison in the same units over a stated horizon with the transaction costs at both ends counted, and selecting a mortgage is taught from the federally prescribed Loan Estimate and Closing Disclosure, the six-item definition of an application that triggers them, and the good faith tolerances that decide which quoted costs may move. Employment opportunities and buying a car are not taught. NOT covered at all: elements (a), (b) and (c), which are post-high-school choices, paying for them including the HOPE scholarship, and the documents needed for the FAFSA; and element (e) on generational wealth. One honest caveat on the verb: the standard says apply a decision-making model, and this course supplies the model and the inputs but deliberately refuses to reach a rent-or-buy conclusion for any reader, so a teacher wanting students to reach and defend a decision supplies that step.",
+        },
         // — Personal Finance, re-fetched 2026-08-28 when MONEY-02 shipped. The SSEPF domain was
         //   rejected wholesale until then; two of its ten standards are now genuinely reachable and
         //   the notClaimed entry records the supersession rather than being deleted.
@@ -440,6 +460,16 @@ export const JURISDICTION: JurisdictionFile = {
           claimIds: ["money.identity-theft-remedies", "money.unauthorized-transfer-recourse"],
           coverage: "partial",
           note: "Partial, and element by element. ELEMENT (c), the steps to take after becoming a victim, is taught in full and from the statute rather than as a checklist: freezing credit histories is the security freeze at 15 U.S.C. 1681c-1(i), free of charge, placed within one business day and lifted within one hour on a telephone or online request; alerting appropriate officials is the initial fraud alert at 1681c-1(a), which one call places in all three nationwide files for at least a year, the extended alert at 1681c-1(b), and the identity theft report obtained free through the Federal Trade Commission's own site; and the course adds the block at 1681c-2, which removes information resulting from an alleged identity theft within four business days of four named items. Replacement cards and password changes are covered only as the ordinary consequence of the Regulation E notice that ends a consumer's liability. ELEMENT (b) is partly met: monitoring your credit report is taught (MONEY-01 works the free annual file disclosure at 15 U.S.C. 1681j), and the course teaches the procedural rule that defeats a telephone impersonation, but shredding, email attachments, secure networks and social-media management are not taught. NOT TAUGHT AT ALL: element (a), the sources of identity theft as a taxonomy (dumpster diving, skimming, phishing, stealing, data breaches), and element (d), investment scams such as Ponzi schemes, pump and dumps and advance-fee scams. The course teaches no securities content of any kind, and a claim on (d) would be invented.",
+        },
+        {
+          code: "SSEPF9",
+          text: "Explain ways consumers are protected by rules and regulations.",
+          claimIds: [
+            "money.fair-housing-and-valuation",
+            "money.mortgage-mechanics-and-disclosures",
+          ],
+          coverage: "partial",
+          note: "Partial, and less partial than it was. Element (a), how government agencies offer protection in banking, is taught directly and from the rules themselves: the FDIC and the NCUA on deposit and share insurance, and the CFPB's regulations on account disclosure (12 CFR 1030.4), overdraft consent (12 CFR 1005.17) and prepaid disclosure (12 CFR 1005.18). Element (b) is partly met, through the CFPB complaint route and its published response times; the Better Business Bureau and direct-to-business methods the standard names are not compared. Element (c) asks for the primary purpose of five named statutes, and three of the five are now taught. The Fair Credit Reporting Act is worked from the statute through account screening, the adverse-action notice and the dispute right. The Truth in Lending Act was added on 2026-08-28 with MONEY-06, from its own purpose clause at 15 U.S.C. 1601(a) and through the disclosures it requires on the Loan Estimate and the Closing Disclosure. And the statute Georgia's list calls \"the Equal Housing Act\" is taught as the Fair Housing Act, by that Act's own name and from 42 U.S.C. 3601, 3604 and 3605, including its coverage of appraising and its enforcement deadlines. The naming difference is Georgia's, and it is recorded here rather than papered over. STILL NOT taught: the Fair Debt Collection Practices Act, which belongs to MONEY-03, and Dodd-Frank. Investing and borrowing protection, which element (a) also names, is left to later courses.",
         },
       ],
     },
@@ -512,6 +542,10 @@ export const JURISDICTION: JurisdictionFile = {
     {
       heading: "Economics — most of the personal-finance course, macroeconomics, and the market-structure standards.",
       body: "This entry used to reject the whole personal-finance domain, SSEPF1-10, on the ground that the catalog taught none of it. That changed on 2026-08-28 and the correction is recorded here rather than deleted: SSEPF3 (comparing financial institutions, and comparing cash, debit, prepaid and mobile payment), SSEPF9 (how consumers are protected by rules and regulations), SSEPF2 (claimed for element (e) alone, reconciling a checking account and accounting for unposted transactions) and SSEPF10 (sources of and protection against identity theft, on element (c) in full and (b) in part, with (a) and (d) expressly refused on its own entry) are now claimed, partially, and supersede the blanket rejection. SSEPF9 also grew the same day, reaching the borrowing half of element (a) and the Truth in Lending Act in element (c). SSEPF2 deserves its caveat here as well as on its own entry: Georgia's stem is about allocating income through BUDGETING, and this catalog teaches no budgeting technique at all, so five of that standard's six elements are not taught and the stem itself is not claimed. The remaining standards stay unclaimed and are named so the gap stays visible: SSEPF1 (major life decisions), SSEPF4 (interest rates), SSEPF5 (taxes), SSEPF6 (credit), SSEPF7 (insurance) and SSEPF8 (investing).",
+    },
+    {
+      heading: "Economics — most of the personal-finance course, macroeconomics, and the market-structure standards.",
+      body: "This entry used to reject the whole personal-finance domain, SSEPF1-10, on the ground that the catalog taught none of it. That changed on 2026-08-28 and the correction is recorded here rather than deleted: SSEPF3 (comparing financial institutions, and comparing cash, debit, prepaid and mobile payment), SSEPF9 (how consumers are protected by rules and regulations) and, when MONEY-06 shipped the same day, SSEPF1 (major life decisions) are now claimed, partially, and supersede the blanket rejection. SSEPF9's element (c) also grew that day, from one of its five named statutes to three, and its entry says which two are still missing. The other seven remain unclaimed and are named so the gap stays visible: SSEPF2 (income and budgeting), SSEPF4 (interest rates), SSEPF5 (taxes), SSEPF6 (credit), SSEPF7 (insurance), SSEPF8 (how earnings are determined), and SSEPF10 (identity theft). Within SSEPF1 itself only element (d) is reached, and only two of the four life choices it names, so the rejection of elements (a), (b), (c) and (e) stands. Unchanged: macroeconomics (SSEMA1-3 — GDP, the Federal Reserve, fiscal policy), the microeconomic circular-flow and market-structure standards (SSEMI1, SSEMI3), the scarcity and rational-decision standards (SSEF1, SSEF2, SSEF4), and the exchange-rate standard (SSEIN2) were checked and are not taught. We claim the international-trade and economic-systems standards where the lessons land.",
     },
     {
       heading: "World and U.S. history beyond the mapped standards.",

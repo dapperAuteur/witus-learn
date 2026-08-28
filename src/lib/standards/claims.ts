@@ -5355,6 +5355,107 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "25 · Who is targeted, taken from the record rather than asserted",
     ],
   },
+  // ══ MONEY-06 · Housing: the Lease, the Loan Estimate, and the Map ═══════════
+  //
+  // WHY THESE FOUR AND NOT ONE. Housing turns up in the state personal-finance frameworks under at
+  // least three different headings: a major-purchase or decision-making standard (Georgia SSEPF1d),
+  // a rent-against-buy standard of its own (Texas §113.31(d)(19), §113.49(c)(4)(A)), and a
+  // discrimination-in-lending standard (Illinois SS.9-12.EC.FL.9). Splitting the course's teaching
+  // into four narrow claims lets each state map the part it actually asks for, instead of every
+  // state hanging off one broad claim that would then have to be described as partial everywhere.
+  //
+  // WHAT THIS COURSE DOES NOT TEACH, stated here so no later editor stretches one of these. It
+  // teaches NO budgeting and no savings plan (so it cannot back a "save for a down payment"
+  // standard), NO insurance beyond naming the fact that a lender requires it, NO investing, NO
+  // careers or income, NO macroeconomics, and no state's landlord and tenant rules as a national
+  // rule. It also gives NO ADVICE and answers no rent-or-buy question, which matters when a
+  // standard asks a student to "make" or "justify" a decision rather than to analyse one.
+  {
+    id: "money.tenancy-and-the-governing-state-law",
+    claim:
+      "Teaches the lease as the governing contract and the method for finding the state statute that supplies every term the lease leaves out.",
+    courseSlugs: ["housing-decisions"],
+    lessons: [
+      // Renting and buying set up as two contracts rather than two lifestyles, with the course's
+      // refusal to answer the rent-or-buy question stated in prose.
+      "1 · Two contracts, and a question asked badly",
+      // The four-question method: which law governs this address, what the statute requires whatever
+      // the lease says, what the lease says read against that, and what the deadline is.
+      "2 · The lease is the document, and the state supplies the rest",
+      // Worked on ONE labelled state, Arizona: A.R.S. 33-1321 on deposits and 33-1368 on the
+      // five-day notices, taught as a shape that transfers where the numbers do not.
+      "3 · The deposit, the clock, and where recourse actually lives",
+    ],
+  },
+  {
+    id: "money.mortgage-mechanics-and-disclosures",
+    claim:
+      "Teaches a mortgage as a note plus a security instrument, works an amortisation schedule by hand, and reads the federally prescribed Loan Estimate and Closing Disclosure.",
+    courseSlugs: ["housing-decisions"],
+    lessons: [
+      // The note against the security instrument, recording, term, and escrow named in RESPA's own
+      // purposes at 12 U.S.C. 2601(b)(3).
+      "5 · A mortgage is two documents, and only one of them is the loan",
+      // The four steps, run on a labelled hypothetical rate: interest, principal, new balance,
+      // repeat. No market rate is printed anywhere in the course.
+      "6 · Amortisation, and why the early payments are almost all interest",
+      // 12 CFR 1026.37(l): In 5 Years, the APR with the sentence saying it is not the interest
+      // rate, and the total interest percentage. Plus 1026.38(o) on the final form.
+      "7 · The three numbers the form is required to print, and what each one means",
+      // 12 CFR 1026.2(a)(3)(ii)'s closed six-item definition of an application, and the two Loan
+      // Estimate deadlines at 1026.19(e)(1)(iii)(A) and (B).
+      "9 · Six pieces of information, and the clock they start",
+      // The prescribed contents at 12 CFR 1026.37, headings (a) through (o) and the Loan Terms
+      // table, including the prepayment penalty and balloon payment statements.
+      "10 · Reading the Loan Estimate, box by box",
+      // 12 CFR 1026.19(f)(1)(ii)(A)'s three-business-day receipt rule, the good faith tolerances at
+      // (e)(3)(i) and (e)(3)(ii), and RESPA's kickback and unearned fee prohibitions at 2607.
+      "11 · The Closing Disclosure, and the rules that make an estimate mean something",
+    ],
+  },
+  {
+    id: "money.rent-versus-buy-comparison",
+    claim:
+      "Analyses the costs and benefits of renting against buying a home in the same units over a stated horizon, counting the transaction costs at both ends.",
+    courseSlugs: ["housing-decisions"],
+    lessons: [
+      // What each payment buys, why "renting is throwing money away" is a conclusion rather than an
+      // analysis, and which components accrue to the payer.
+      "13 · What each payment actually buys",
+      // Getting in and getting out, the Closing Disclosure as the itemised record of both, and
+      // 26 U.S.C. 121's two-of-five-years condition as evidence the decision is counted in years.
+      "14 · The costs of getting in, and the costs of getting out",
+      // The seven-line procedure, the sensitivity step, and 26 U.S.C. 163(h) taught as strictly
+      // conditional. Every figure dated; the course still answers no rent-or-buy question.
+      "15 · Build the comparison yourself, and change one assumption at a time",
+    ],
+  },
+  {
+    id: "money.fair-housing-and-valuation",
+    claim:
+      "Teaches the federal law on discrimination in housing and in the valuation of a dwelling, and the recorded racially restrictive covenant as a document that survived being disarmed.",
+    courseSlugs: ["housing-decisions"],
+    lessons: [
+      // 12 U.S.C. 3331 and 24 CFR 100.135(b): an appraisal as an estimate or opinion, and the four
+      // things Title XI requires of one.
+      "17 · What an appraisal is, and who it is actually for",
+      // 12 CFR 1002.14: a free copy of ALL appraisals and other written valuations, promptly on
+      // completion or three business days before consummation, whichever is earlier.
+      "18 · The copy you are entitled to, and the clock on it",
+      // 42 U.S.C. 3605(a), (b) and (c) and 24 CFR 100.135(a), (c) and (d), plus the 2024
+      // interagency AVM rule's nondiscrimination quality control factor.
+      "19 · Appraising is written into the statute, and so is the exception",
+      // 42 U.S.C. 3601, 3604(a), (b) and (c), ECOA at 15 U.S.C. 1691(a), and the two deadlines at
+      // 3610(a) and 3613(a).
+      "21 · One sentence of policy, and the list underneath it",
+      // Shelley v. Kraemer (1948), the University of Arizona's Mapping Racist Covenants project,
+      // and A.R.S. 33-532, 33-533 and 32-2107.01.
+      "22 · The covenant is still in the file, and a statute says what to do about it",
+      // 12 U.S.C. 2801(a) and (b): the congressional FINDING about lending and the decline of
+      // geographic areas, and the public data built on top of it.
+      "23 · Capstone: the finding Congress wrote down, and one document of your own",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
