@@ -744,6 +744,695 @@ Farm Service Agency. (1996, April 15). Farm Service Agency county committees; Fa
       },
     },
     // ══════════════════════════════════════════════════════════════════════
+    // SECTION 2 — The committee
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "three-people-in-the-county",
+      title: "5 · Three people in the county",
+      section: "Section 2 · The committee",
+      body: `In February 1982 the United States Commission on Civil Rights published a 203-page report called **The Decline of Black Farming in America**, prepared by Pamela Browning. It is public domain, the Commission still hosts it, and one paragraph in it is the reason this course has the title it has.
+
+**Here is the Farmers Home Administration county committee, in the Commission's own words, quoting USDA's own description:**
+
+> "(C)omposed of three individuals residing in the county, at least two of whom are farmers..., (t)he committee determines the eligibility of individual applicants and the limits of credit to be extended." Committee members are nominated by FmHA county supervisors and appointed by FmHA State directors. (U.S. Commission on Civil Rights, 1982, p. 92)
+
+The report restates it in its Findings:
+
+> "FmHA county committees composed of three members, at least two of whom are farmers, determine the eligibility of FmHA farm loan applicants and the limits of credit to be extended to borrowers. Committee members are nominated by FmHA county supervisors and appointed by FmHA State directors." (U.S. Commission on Civil Rights, 1982, p. 188)
+
+**Read it as a machine, one part at a time.**
+
+**Three people.** Not an office, not a panel of underwriters, not an algorithm. Three individuals, and a majority of three is two.
+
+**Residing in the county.** They live where the applicant lives. They know who the applicant is, what their father was, whose land adjoins whose, and what the church and the courthouse think of them. Local knowledge is the stated point of the design and it is also its exposure.
+
+**At least two of whom are farmers.** Now hold this against Lesson 2. The applicant has already proved that no commercial lender will serve them. They are applying for money to plant a crop. And two of the three people deciding are **in the same business in the same county**, which is to say they are the applicant's competitors for land, for labour, for a buyer's attention and, in a fixed county allocation, for the money itself. That is not an accusation. It is a description of the seating.
+
+**Determines the eligibility ... and the limits of credit.** Both. Not just whether you are in, but how much. A committee that approves you for less than you asked has not denied you and has still decided your year.
+
+**Nominated by FmHA county supervisors and appointed by FmHA State directors.** So the chain runs **downward**, not outward. Nobody in this sentence was elected by anybody. Compare Lesson 3: the conservation and price-support committees in the very same counties were **elected** by producers under the 1935 Act. Two bodies, two counties' worth of the same word, and only one of them ever faced a vote.
+
+**And now put Lesson 1 back on the table.** This body meets, considers, and decides on a calendar that does not stop. A delay is not a neutral outcome. It is one of the outcomes.
+
+**One more thing to notice, because it is the sentence the whole course turns on.** Federal money, appropriated by Congress under national statutes, arrives at a farm only after three named local people say so. **That is a federal benefit delivered through a local gate.** WARRANT-01 met that same move as a funding formula, where Congress created a benefit, excluded a class, built a smaller separate channel, and let a state decline to match it. Here the move has a face and an address. **The gate is the mechanism, and who stands at it is the question.**
+
+Lesson 6 is who stood at it, counted.
+
+:::reveal How many members did an FmHA county committee have, and how many had to be farmers? ||| Three members, at least two of whom were farmers.
+
+:::reveal What two things did the FmHA county committee determine? ||| The eligibility of individual applicants, and the limits of credit to be extended to them.
+
+:::reveal How did a person become an FmHA county committee member? ||| Nominated by the FmHA county supervisor and appointed by the FmHA State director, with no election at any stage.
+
+## Vocabulary
+- **Farmers Home Administration county committee**: the three-member local body that determined federal farm loan eligibility and credit limits until the committees were abolished in 1994.
+- **County supervisor**: the FmHA officer who nominated committee members, and the same office that processed the applications those members decided.
+- **State director**: the FmHA official who appointed county committee members, so that the appointing chain ran down from the agency rather than out to the producers.
+- **Local gate**: a body seated in the community that decides who receives a benefit created and funded nationally.
+- **Findings section**: the numbered conclusions at the end of a commission report, which restate the body's material and do not always match it word for word.
+
+## Sources
+U.S. Commission on Civil Rights. (1982, February). *The decline of Black farming in America*. U.S. Government Printing Office. https://www.usccr.gov/files/historical/1982/82-018.pdf`,
+    },
+    {
+      slug: "who-sat-on-it",
+      title: "6 · Who sat on it, counted, in a report that disagrees with itself",
+      section: "Section 2 · The committee",
+      body: `The Commission counted the committees. Here is the national paragraph, verbatim:
+
+> "In 1980, 4.3 percent of all FmHA county committee members were black, down from 7.2 percent in 1979. From 1979 to 1980, the number of black committee members dropped from 427 to 257, a 39.8 percent decline in black participation in 1 year, while total committee membership rose from 5,863 to 5,966." (U.S. Commission on Civil Rights, 1982, p. 92)
+
+**Take that apart before you feel anything about it.** Total membership went **up**, from 5,863 to 5,966. Black membership went **down**, from 427 to 257. Those two movements in one year are not the same thing as a shrinking programme, and the report's arithmetic is checkable: 257 out of 5,966 is 4.31 per cent, and 427 out of 5,863 is 7.28 per cent, so the printed 4.3 and 7.2 are right.
+
+**The state table, and what it does and does not cover.** Table 4.1 at page 93 is titled "Number of Black FmHA Committee Members (1979 and 1980)" and its source is USDA's own **Equal Opportunity Report: USDA Programs, 1980**, at pages 53 and 73 to 76. It lists **nine states**, not fifty:
+
+| State | 1979 | 1980 | Per cent change |
+| --- | --- | --- | --- |
+| Alabama | 37 | 19 | -48.6 |
+| Florida | 14 | 10 | -28.6 |
+| Georgia | 61 | 24 | -60.7 |
+| Mississippi | 48 | 21 | -56.3 |
+| North Carolina | 47 | 31 | -34.0 |
+| South Carolina | 27 | 19 | -29.6 |
+| Tennessee | 12 | 2 | -83.3 |
+| Texas | 33 | 18 | -45.5 |
+| Virginia | 49 | 29 | -40.8 |
+
+**Nine states, not the nation.** Those 1979 figures sum to 328 and the 1980 figures to 173, against national totals of 427 and 257. **Do not present Table 4.1 as a national table**, and if you ever see it reproduced as one, you have found a citation that did not open the page.
+
+**Now the part this course is obliged to tell you, and it is the best lesson in the section.** The report contradicts itself about Tennessee, in print, and there are two printings.
+
+- The edition the Commission hosts today, a Government Printing Office setting, prints Tennessee in Table 4.1 as **12 to 2**, a **83.3 per cent** loss, and its chapter text at page 94 says 83.3 as well.
+- The same edition's **Findings**, at page 188, says Tennessee lost **93.3 per cent**.
+- The earlier February 1982 typescript prints the table row as **33 to 2** with a **93.3** per cent change, which does not compute either: 33 to 2 is a fall of 93.94 per cent, and a fall of exactly 93.3 per cent would require 30 to 2.
+
+**Do the arithmetic yourself and it settles.** 12 minus 2 is 10, and 10 divided by 12 is 0.8333. **83.3 per cent is exact, and it is the figure the table in the published edition supports.** So this course uses 83.3, and says out loud that the report disagrees with itself, that a correction reached the table and the chapter but never reached the Findings, and that the two printings differ.
+
+**Why say all that instead of just printing 83.3?** Because you will meet 93.3 in the wild, cited to this report, and the person citing it will not be lying. They will be quoting page 188. **A source that contradicts itself is not a bad source. It is a source you now know how to use**, which is a different and more durable thing than a number.
+
+**Two temptations to refuse here.**
+
+**The first is to read the drop as proof of intent.** It is not. It is a count of who held seats. Lesson 7 is entirely about that boundary and the Commission draws it itself, in a sentence this course quotes in full.
+
+**The second is to read the drop as a small thing because the numbers are small.** Also wrong, in the other direction. In a nine-state region where Black farmers were concentrated, the number of Black people sitting on the bodies that determined eligibility and credit limits fell from 328 to 173 in a single year. Whatever explains it, that is the composition of the gate at the moment Lesson 8's applicants walked up to it.
+
+:::reveal What happened to total and Black FmHA county committee membership between 1979 and 1980? ||| Total membership rose from 5,863 to 5,966 while Black membership fell from 427 to 257, a decline of 39.8 per cent.
+
+:::reveal Why must Table 4.1 not be described as a national table? ||| It covers nine states, whose totals of 328 and 173 fall well short of the national 427 and 257.
+
+:::reveal Which Tennessee figure does the published table's own arithmetic support, and what should be said about the other? ||| 83.3 per cent, since 12 to 2 is an exact 83.33 per cent fall; the report's Findings section still prints 93.3, so the source contradicts itself and should be described that way.
+
+## Vocabulary
+- **Equal Opportunity Report**: USDA's own annual accounting of programme participation and staffing by race, which is where the Commission's committee figures came from.
+- **Printing**: a distinct typesetting of the same document, which can carry corrections the other does not, so two honest people may quote the same report and differ.
+- **Internal contradiction**: a disagreement between two parts of one document, which is a fact about the source rather than a reason to discard it.
+- **Composition**: who holds the seats on a deciding body, which is a count and not by itself a finding about anyone's conduct.
+
+## Sources
+U.S. Commission on Civil Rights. (1982, February). *The decline of Black farming in America*. U.S. Government Printing Office. https://www.usccr.gov/files/historical/1982/82-018.pdf
+
+U.S. Commission on Civil Rights. (1982, February). *The decline of Black farming in America* [February 1982 printing]. Education Resources Information Center (ED222604). https://files.eric.ed.gov/fulltext/ED222604.pdf`,
+    },
+    {
+      slug: "numbers-alone-do-not-prove-discrimination",
+      title: "7 · Numbers alone do not prove discrimination",
+      section: "Section 2 · The committee",
+      body: `A federal civil rights commission spent 203 pages documenting the collapse of Black farming, printed participation rates by race, and then wrote this, at page 94, in the middle of the chapter you just read:
+
+> "This comparative analysis does not suggest that specific program participation rates by blacks and whites indicate the presence or absence of racial discrimination in FmHA programs. Numbers alone do not prove discrimination. Moreover, drawing such conclusions would be difficult because of the lack of appropriate reliable data" (U.S. Commission on Civil Rights, 1982, p. 94)
+
+**Sit with how unusual that is.** The body with the most institutional incentive to draw the inference declined to draw it, in writing, on the page where the inference was most available. This course quotes that sentence verbatim because it is the standard the rest of the material has to meet, and because a learner who takes only one habit away from this course should take that one.
+
+**What a participation rate can and cannot do.**
+
+**It can establish a fact that requires explaining.** If a population holds seven per cent of the seats and then four per cent, something happened. Something always happened. The number is a genuine observation about the world.
+
+**It cannot supply the explanation.** A gap is consistent with many mechanisms. Deliberate exclusion is one. So are: fewer applicants, because people stopped applying to a body they expected to say no; office closures that removed seats unevenly; a change in how the agency counted; the shrinking of the farm population itself; the vacancy pattern of three-year staggered terms; and simple error in a hand-compiled table. **A number that is consistent with six explanations is evidence for none of them on its own.**
+
+**And the Commission names the deeper problem in the same breath: the data.** "The lack of appropriate reliable data" is not a hedge, it is a finding about the record. An agency that does not collect the right thing cannot be evaluated on it, by its critics or by its defenders. Recall from Lesson 3 that current law now requires an election report to record "the race, ethnicity, and gender of each nominee" (16 U.S.C. § 590h, n.d.). **That requirement exists because the absence of it was itself a finding.**
+
+**So what does move a claim from a gap to a conclusion?** Four things, and none of them is a bigger gap.
+
+1. **A comparator.** Two people similarly situated, treated differently, identified. This is exactly what Section 5's settlement required of every claimant on its lower-proof track, and it is why that track's denial rate is not small.
+2. **A decision record.** What was applied for, what was granted, when, and on what stated ground. A programme that keeps this can be audited; one that does not cannot be defended either.
+3. **A mechanism.** A named path by which the outcome could occur, like the one in Lesson 5: three local people, two of them competitors, deciding eligibility and credit limits on a seasonal clock.
+4. **A finding by somebody with subpoena power or the parties' agreement**, rather than by inference from a table.
+
+**Notice what that list does to this course.** It means Sections 1 to 4 establish the mechanism and the record, and only Section 5 supplies an adjudicated outcome. The order is deliberate. **Mechanism first, evidence second, conclusion only where somebody with authority actually reached one.**
+
+**And notice what it does to the opposite argument.** The same discipline that stops a table from proving discrimination also stops a table from disproving it. "Numbers alone do not prove discrimination" cuts in both directions, and a person who quotes it only when the numbers are inconvenient has not adopted the standard, they have adopted a tactic. Section 6 meets that exact pattern in a real dispute about real audit findings.
+
+**One practical habit to take out of this lesson.** When you meet a statistic in an argument, ask what would have to be true besides the number for the conclusion to follow, and then ask whether the person offering it has supplied that. Most of the time they have not, and most of the time they have not noticed.
+
+:::reveal What did the Commission say about what participation rates by race can establish? ||| That they do not indicate the presence or absence of racial discrimination, because numbers alone do not prove discrimination.
+
+:::reveal Name three explanations besides discrimination that a falling participation rate is consistent with. ||| Fewer applications, uneven office closures or seat losses, a change in how the agency counted, a shrinking farm population, staggered term vacancies, or error in a hand-compiled table.
+
+:::reveal What four things move a claim from a gap to a conclusion? ||| A comparator, a decision record, a named mechanism, and a finding by a body with subpoena power or the parties' agreement.
+
+## Vocabulary
+- **Participation rate**: the share of a programme's beneficiaries or officers drawn from a given group, which describes an outcome without explaining it.
+- **Comparator**: a similarly situated person treated differently, which is what turns an aggregate gap into an individual claim.
+- **Decision record**: the documented account of what was requested, what was granted, and on what stated ground, without which a programme can be neither audited nor defended.
+- **Mechanism**: a named path by which an outcome could actually have been produced, as distinct from the outcome itself.
+- **Cuts both ways**: the property of an evidentiary standard that it constrains the argument you like as much as the one you do not.
+
+## Sources
+16 U.S.C. § 590h. (n.d.). *Assistance to cooperators*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title16-section590h&num=0&edition=prelim
+
+U.S. Commission on Civil Rights. (1982, February). *The decline of Black farming in America*. U.S. Government Printing Office. https://www.usccr.gov/files/historical/1982/82-018.pdf`,
+    },
+    {
+      slug: "quiz-the-committee",
+      title: "8 · Knowledge check: the committee",
+      section: "Section 2 · The committee",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "Which federal body published The Decline of Black Farming in America?",
+            options: ["The U.S. Commission on Civil Rights", "The Government Accountability Office, then known as the General Accounting Office", "The Economic Research Service of the Department of Agriculture", "The Congressional Research Service, at the request of the House Agriculture Committee"],
+            correctIndex: 0,
+            explanation: "The Commission published the 203-page report in February 1982, prepared by Pamela Browning.",
+            sourceLessonSlug: "three-people-in-the-county",
+          },
+          {
+            prompt: "In what month and year was that report published?",
+            options: ["February 1982", "August 1997, the month in which the first Pigford suits were filed", "October 1994, when the reorganisation act abolished the credit committees", "December 2012, the month the Government Accountability Office reported on the claims process"],
+            correctIndex: 0,
+            explanation: "The title page dates it February 1982, and a later Government Printing Office setting carries corrections the first printing does not.",
+            sourceLessonSlug: "three-people-in-the-county",
+          },
+          {
+            prompt: "How many people sat on an FmHA county committee?",
+            options: ["Three", "Five, matching the maximum size of a state committee under the 1935 Act", "Eleven, the maximum a combined county committee may now reach", "Nine, one for each of the states covered by the Commission's own table"],
+            correctIndex: 0,
+            explanation: "The committee was composed of three individuals residing in the county, at least two of whom were farmers.",
+            sourceLessonSlug: "three-people-in-the-county",
+          },
+          {
+            prompt: "How many committee members had to be farmers?",
+            options: ["At least two", "At least one, with the remaining seats reserved for local business representatives", "All three, since the statute required agricultural experience of every member", "None, since the committee was intended to be independent of the local farm economy"],
+            correctIndex: 0,
+            explanation: "At least two of the three had to be farmers, which made a majority of the committee the applicant's competitors.",
+            sourceLessonSlug: "three-people-in-the-county",
+          },
+          {
+            prompt: "Where did FmHA county committee members have to live?",
+            options: ["In the county", "Anywhere in the state, provided they held no land in the county they served", "In an adjoining county, so that no member decided on a neighbour's application", "In the same local administrative area as at least one other member"],
+            correctIndex: 0,
+            explanation: "The description specifies three individuals residing in the county, which is the source of both the local knowledge and the exposure.",
+            sourceLessonSlug: "three-people-in-the-county",
+          },
+          {
+            prompt: "What two determinations did the FmHA county committee make?",
+            options: ["Eligibility and the limits of credit", "The interest rate and the repayment schedule for each approved application", "The appraised value of the security and the adequacy of the applicant's insurance", "Whether the county qualified for a disaster designation and how the funds were split"],
+            correctIndex: 0,
+            explanation: "The committee determined the eligibility of individual applicants and the limits of credit to be extended to borrowers.",
+            sourceLessonSlug: "three-people-in-the-county",
+          },
+          {
+            prompt: "Why does approving an applicant for less than requested still decide their year?",
+            options: ["A short loan cannot buy a full crop's inputs", "Because a reduced approval is recorded as a denial in the agency's own statistics", "Because the applicant must reapply from the beginning for the balance of the amount", "Because the committee may not revisit an amount once it has been certified"],
+            correctIndex: 0,
+            explanation: "The committee set the limits of credit as well as eligibility, and an operation financed short is an operation planted short.",
+            sourceLessonSlug: "three-people-in-the-county",
+          },
+          {
+            prompt: "Who nominated FmHA county committee members?",
+            options: ["The FmHA county supervisor", "The producers of the county, voting at an annual election in the county office", "The state's congressional delegation, from a list of eligible farmers in each county", "The Secretary of Agriculture, on the recommendation of the state committee"],
+            correctIndex: 0,
+            explanation: "County supervisors nominated and state directors appointed, so the chain ran down from the agency rather than out to the producers.",
+            sourceLessonSlug: "three-people-in-the-county",
+          },
+          {
+            prompt: "Who appointed FmHA county committee members?",
+            options: ["The FmHA State director", "The county supervisor, who both nominated and seated each member", "The Secretary of Agriculture personally, under authority delegated by statute", "The county's elected conservation committee, sitting as an appointing body"],
+            correctIndex: 0,
+            explanation: "Members were nominated by county supervisors and appointed by state directors.",
+            sourceLessonSlug: "three-people-in-the-county",
+          },
+          {
+            prompt: "What is the structural contrast between the credit committees and the 1935 Act committees?",
+            options: ["Only the 1935 Act committees faced a vote", "The credit committees were larger, with up to eleven members in consolidated counties", "The credit committees served the whole state while the others served a single county", "The credit committees met monthly while the others met only during signup windows"],
+            correctIndex: 0,
+            explanation: "Conservation and price-support committees were elected by producers; the credit committees were nominated and appointed within the agency.",
+            sourceLessonSlug: "three-people-in-the-county",
+          },
+          {
+            prompt: "Why is a majority of an FmHA county committee significant?",
+            options: ["Two of three could be the applicant's competitors", "Because a unanimous vote was required to approve any application for credit", "Because the third member held a casting vote reserved to the county supervisor", "Because the committee could not act unless all three attended in person"],
+            correctIndex: 0,
+            explanation: "At least two of three were farmers in the same county, competing for land, labour, buyers and a fixed county allocation.",
+            sourceLessonSlug: "three-people-in-the-county",
+          },
+          {
+            prompt: "Which phrase best describes what the committee system is, in this course's terms?",
+            options: ["A federal benefit delivered through a local gate", "A state benefit administered by a federally appointed board of review", "A private lending decision reviewed by a federal appeals body", "A national formula that distributes funds without any local decision"],
+            correctIndex: 0,
+            explanation: "Congress created and funded the programme and three named local people decided who inside the county received it.",
+            sourceLessonSlug: "three-people-in-the-county",
+          },
+          {
+            prompt: "What share of FmHA county committee members were Black in 1980?",
+            options: ["4.3 per cent", "7.2 per cent, which is instead the share recorded for the preceding year", "14 per cent, matching the Black share of farm operators in the 1920 census", "39.8 per cent, which is instead the size of the one-year decline in Black members"],
+            correctIndex: 0,
+            explanation: "The report gives 4.3 per cent in 1980, down from 7.2 per cent in 1979.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "What share had been Black in 1979?",
+            options: ["7.2 per cent", "4.3 per cent, which is instead the share recorded for the following year", "10.0 per cent, the target the agency had set for the end of the decade", "5.0 per cent, the midpoint between the two years the report compares"],
+            correctIndex: 0,
+            explanation: "427 of 5,863 members is 7.28 per cent, which the report prints as 7.2.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "How did the number of Black committee members change between 1979 and 1980?",
+            options: ["From 427 to 257", "From 328 to 173, which are instead the totals for the nine states in the table", "From 5,863 to 5,966, which is instead the change in total committee membership", "From 12 to 2, which is instead the change recorded for a single state"],
+            correctIndex: 0,
+            explanation: "The report gives a fall from 427 to 257, a decline of 39.8 per cent in one year.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "What happened to total committee membership over the same year?",
+            options: ["It rose from 5,863 to 5,966", "It fell from 5,966 to 5,863 as county offices were closed and consolidated", "It stayed level, since the statute fixed three members for every county", "It rose from 427 to 257 as new local administrative areas were created"],
+            correctIndex: 0,
+            explanation: "Total membership rose while Black membership fell, which is why the change is not explained by a shrinking programme.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "How large was the one-year decline in Black committee membership?",
+            options: ["39.8 per cent", "83.3 per cent, which is instead the figure for a single state in the table", "93.3 per cent, the figure the report's Findings section prints for that state", "56.4 per cent, which is instead the loss of white-operated farms since 1920"],
+            correctIndex: 0,
+            explanation: "The drop from 427 to 257 is a decline of 39.8 per cent in Black participation in one year.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "How many states does Table 4.1 cover?",
+            options: ["Nine", "Fifty, since the table reports national committee membership by state", "Sixteen, the states that would later receive the 1890 land-grant letters", "Eleven, the states of the former Confederacy plus two border states"],
+            correctIndex: 0,
+            explanation: "The table lists nine states whose totals of 328 and 173 fall short of the national 427 and 257.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "What do the nine states in Table 4.1 sum to for 1979 and 1980?",
+            options: ["328 and 173", "427 and 257, which are instead the national totals reported in the text", "5,863 and 5,966, which are instead the totals for all committee members", "Two figures the report does not print, so the table cannot be checked"],
+            correctIndex: 0,
+            explanation: "The state rows sum to 328 and 173, which is how you can tell at a glance that the table is regional rather than national.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "What is the source the Commission gives for Table 4.1?",
+            options: ["USDA's own Equal Opportunity Report for 1980", "The 1978 Census of Agriculture, volume I, part 51", "The Farmers Home Administration's annual report to the Secretary", "A survey the Commission conducted of county offices in nine states"],
+            correctIndex: 0,
+            explanation: "The table cites USDA's Equal Opportunity Report: USDA Programs, 1980, at pages 53 and 73 to 76.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "Which state in Table 4.1 shows the largest percentage decline?",
+            options: ["Tennessee", "Georgia, which fell from 61 members to 24 over the same single year", "Mississippi, which fell from 48 members to 21 over the same single year", "Alabama, which fell from 37 members to 19 over the same single year"],
+            correctIndex: 0,
+            explanation: "Tennessee fell from 12 to 2, an exact 83.3 per cent decline, which is larger than Georgia's 60.7 per cent.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "What figure does the published table's arithmetic support for Tennessee?",
+            options: ["83.3 per cent", "93.3 per cent, which the report's Findings section prints for the same state", "93.9 per cent, which is what a fall from 33 to 2 would actually produce", "60.7 per cent, which is what the table records for Georgia in the same year"],
+            correctIndex: 0,
+            explanation: "A fall from 12 to 2 is a decline of 83.33 per cent, which is exact.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "Where in the report does the contradicting 93.3 per cent figure appear?",
+            options: ["In the Findings section", "In the table itself, alongside the corrected chapter text at page 94", "In a footnote citing USDA's Equal Opportunity Report for the preceding year", "In the appendix listing the census definitions of a farm since 1900"],
+            correctIndex: 0,
+            explanation: "The correction reached Table 4.1 and the chapter text but never reached the Findings at page 188.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "What does the earlier February 1982 printing show in the Tennessee row?",
+            options: ["33 to 2, with a 93.3 per cent change", "12 to 2, with an 83.3 per cent change matching the later setting exactly", "30 to 2, which is the pair that would actually produce a 93.3 per cent fall", "No figure at all, since the row was added only in the later printing"],
+            correctIndex: 0,
+            explanation: "The earlier printing's row does not compute either, because 33 to 2 is a fall of 93.94 per cent.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "What pair of numbers would actually produce a 93.3 per cent decline?",
+            options: ["30 to 2", "33 to 2, which is the pair the earlier printing actually shows", "12 to 2, which is the pair the published edition's table shows", "37 to 19, which is the pair the table records for Alabama"],
+            correctIndex: 0,
+            explanation: "10 of 12 is 83.3 per cent and 31 of 33 is 93.9 per cent, so only 28 of 30 gives exactly 93.3.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "How should a course treat a source that contradicts itself?",
+            options: ["Use the figure the arithmetic supports and say so", "Discard the source entirely, since an internal contradiction destroys its reliability", "Print both figures without comment and let the reader choose between them", "Use whichever figure supports the argument the course is making"],
+            correctIndex: 0,
+            explanation: "Saying the report disagrees with itself, and which part the arithmetic supports, is what lets a reader handle the version they meet elsewhere.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "Why will you meet the 93.3 figure cited to this report?",
+            options: ["It is printed in the Findings section", "Because news coverage in 1982 misreported the table's Tennessee row", "Because the correction was published as an erratum that few libraries received", "Because a different federal agency published a competing figure that year"],
+            correctIndex: 0,
+            explanation: "Somebody quoting page 188 is quoting the report accurately, which is why the contradiction has to be stated rather than resolved silently.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "Which is the correct reading of the 1979 to 1980 composition change?",
+            options: ["A fact that requires explaining", "Proof that the agency deliberately removed Black members from its committees", "Evidence that Black farmers had stopped seeking committee service voluntarily", "A statistical artefact with no meaning, since the underlying numbers are small"],
+            correctIndex: 0,
+            explanation: "The count is a genuine observation about the world and is consistent with several mechanisms, so it establishes something to explain rather than the explanation.",
+            sourceLessonSlug: "numbers-alone-do-not-prove-discrimination",
+          },
+          {
+            prompt: "What did the Commission write immediately after presenting its participation rates?",
+            options: ["Numbers alone do not prove discrimination", "That the pattern established a prima facie case requiring the agency to respond", "That the data proved the presence of racial discrimination in FmHA programmes", "That the figures were too unreliable to publish and were included only for context"],
+            correctIndex: 0,
+            explanation: "The report says the comparative analysis does not indicate the presence or absence of discrimination, and that numbers alone do not prove it.",
+            sourceLessonSlug: "numbers-alone-do-not-prove-discrimination",
+          },
+          {
+            prompt: "What second reason does the Commission give for not drawing the conclusion?",
+            options: ["The lack of appropriate reliable data", "That the agency had refused to cooperate with the Commission's inquiries", "That the Commission lacked jurisdiction over Department of Agriculture programmes", "That the relevant statute of limitations had run on the years in question"],
+            correctIndex: 0,
+            explanation: "The sentence continues that drawing such conclusions would be difficult because of the lack of appropriate reliable data.",
+            sourceLessonSlug: "numbers-alone-do-not-prove-discrimination",
+          },
+          {
+            prompt: "Why is the Commission's disclaimer unusual?",
+            options: ["It refused an inference it had every incentive to draw", "Because civil rights commissions are barred by statute from reaching conclusions", "Because it contradicts the report's own Findings section on the same page", "Because it was inserted by the Department of Agriculture during review"],
+            correctIndex: 0,
+            explanation: "The body most motivated to draw the conclusion declined to, in writing, at the point where the inference was most available.",
+            sourceLessonSlug: "numbers-alone-do-not-prove-discrimination",
+          },
+          {
+            prompt: "What can a participation rate establish on its own?",
+            options: ["That something happened worth explaining", "The identity of the person responsible for the change it records", "Whether the change resulted from policy rather than from population shifts", "That the underlying data collection was accurate and complete"],
+            correctIndex: 0,
+            explanation: "It is a genuine observation about the world, and it is consistent with many mechanisms, so it establishes a question rather than an answer.",
+            sourceLessonSlug: "numbers-alone-do-not-prove-discrimination",
+          },
+          {
+            prompt: "Which of these is one of the alternative explanations the lesson lists for a falling participation rate?",
+            options: ["Fewer applications from people expecting refusal", "A statutory change requiring committees to seat members by lot", "A federal court order barring the agency from recording members by race", "A rule making committee service incompatible with holding a federal loan"],
+            correctIndex: 0,
+            explanation: "The list includes fewer applicants, uneven office closures, a change in counting, a shrinking farm population, staggered term vacancies and compilation error.",
+            sourceLessonSlug: "numbers-alone-do-not-prove-discrimination",
+          },
+          {
+            prompt: "Why is the absence of reliable data itself a finding?",
+            options: ["An agency that does not collect it cannot be evaluated on it", "Because the absence of records is presumed under federal law to indicate concealment", "Because it prevents the agency from applying the credit-elsewhere test consistently", "Because the Commission may compel production of records that were never created"],
+            correctIndex: 0,
+            explanation: "Without the right data neither critics nor defenders can establish anything, which is why current law requires the race, ethnicity and gender of each nominee to be reported.",
+            sourceLessonSlug: "numbers-alone-do-not-prove-discrimination",
+          },
+          {
+            prompt: "Which modern requirement does the lesson connect to the 1982 data finding?",
+            options: ["Reporting each nominee's race, ethnicity and gender", "The eight-hour monthly limit on county committee members' work", "The three-year term limit applying to county committee service", "The requirement that a farmer serve only where their records are kept"],
+            correctIndex: 0,
+            explanation: "16 U.S.C. § 590h(b)(5) now requires the election report to include that information, provided through voluntary self-identification.",
+            sourceLessonSlug: "numbers-alone-do-not-prove-discrimination",
+          },
+          {
+            prompt: "Which is the first of the four things that move a claim from a gap to a conclusion?",
+            options: ["A comparator", "A larger gap, sustained across more years and more counties", "A statistical significance test applied to the observed difference", "A public statement by an official acknowledging the disparity"],
+            correctIndex: 0,
+            explanation: "Two similarly situated people treated differently, identified, is the first item on the list and the one the Pigford settlement required.",
+            sourceLessonSlug: "numbers-alone-do-not-prove-discrimination",
+          },
+          {
+            prompt: "What does a decision record consist of?",
+            options: ["What was asked, what was granted, when, and on what ground", "The names and racial identification of every committee member who voted", "The total dollars a county disbursed in each programme in each fiscal year", "A transcript of the committee's deliberations kept by the county supervisor"],
+            correctIndex: 0,
+            explanation: "A programme that keeps that record can be audited, and one that does not cannot be defended either.",
+            sourceLessonSlug: "numbers-alone-do-not-prove-discrimination",
+          },
+          {
+            prompt: "Which mechanism does this course put forward for the credit outcomes it studies?",
+            options: ["Three local people deciding on a seasonal clock", "A national formula that allocated funds by state population share", "An automated credit scoring system applied uniformly across all counties", "A requirement that every applicant obtain two commercial refusals in writing"],
+            correctIndex: 0,
+            explanation: "The named path is the county committee of Lesson 5: three residents, two of them competitors, determining eligibility and credit limits against the crop calendar.",
+            sourceLessonSlug: "numbers-alone-do-not-prove-discrimination",
+          },
+          {
+            prompt: "What is the fourth item on the list, alongside comparator, record and mechanism?",
+            options: ["A finding by a body with authority or the parties' agreement", "A peer-reviewed statistical study published in an economics journal", "An admission of liability by the agency in the text of a settlement", "A vote of the county committee acknowledging that a decision was wrong"],
+            correctIndex: 0,
+            explanation: "The list ends with a finding by somebody with subpoena power or by the parties' agreement, rather than an inference from a table.",
+            sourceLessonSlug: "numbers-alone-do-not-prove-discrimination",
+          },
+          {
+            prompt: "How does the four-item list explain this course's order?",
+            options: ["Mechanism and record first, adjudicated outcome only in Section 5", "Conclusion first, with the supporting mechanism supplied afterwards", "Statistics first, with the legal material treated as background", "Litigation first, with the programme design explained in the final section"],
+            correctIndex: 0,
+            explanation: "Sections 1 to 4 establish the mechanism and the record, and only Section 5 reaches an outcome somebody with authority actually adjudicated.",
+            sourceLessonSlug: "numbers-alone-do-not-prove-discrimination",
+          },
+          {
+            prompt: "In which direction does the numbers-alone standard cut?",
+            options: ["Both", "Only against claims of discrimination, which is what the Commission intended", "Only against agency defences, since the agency controls the data", "Neither, since it is a rhetorical caution rather than an evidentiary rule"],
+            correctIndex: 0,
+            explanation: "A table cannot disprove discrimination any more than it can prove it, so quoting the standard selectively is a tactic rather than a standard.",
+            sourceLessonSlug: "numbers-alone-do-not-prove-discrimination",
+          },
+          {
+            prompt: "What practical habit does the lesson recommend when meeting a statistic in an argument?",
+            options: ["Ask what else must be true for the conclusion to follow", "Ask whether the sample size is large enough to be statistically significant", "Ask whether the source is a government agency rather than an advocacy group", "Ask whether the figure has been reproduced by at least two independent outlets"],
+            correctIndex: 0,
+            explanation: "Then ask whether the person offering it has supplied that additional thing, which most of the time they have not noticed they need.",
+            sourceLessonSlug: "numbers-alone-do-not-prove-discrimination",
+          },
+          {
+            prompt: "How many pages long is the Commission's report?",
+            options: ["203", "94, which is instead the page carrying the report's own disclaimer", "188, which is instead the page on which its Findings section begins", "1982, which is the year of publication rather than a page count"],
+            correctIndex: 0,
+            explanation: "The report runs to 203 pages, with the county committee material in chapter 4 and the findings near the end.",
+            sourceLessonSlug: "three-people-in-the-county",
+          },
+          {
+            prompt: "Who prepared the Commission's report?",
+            options: ["Pamela Browning", "Charles E. Hall, the Census Bureau's specialist in Negro statistics", "Randi Roth, who later served as the court-appointed monitor in Pigford", "Carol Canada, the Congressional Research Service librarian who wrote on FSA committees"],
+            correctIndex: 0,
+            explanation: "The Acknowledgements credit Pamela Browning with preparing the report.",
+            sourceLessonSlug: "three-people-in-the-county",
+          },
+          {
+            prompt: "Which of these describes local knowledge as the committee design intended it?",
+            options: ["The stated point of seating deciders in the county", "An accidental byproduct of the agency's staffing shortage in rural offices", "A statutory requirement imposed on the elected committees but not the credit ones", "A criterion the Commission recommended adding to the appointment process"],
+            correctIndex: 0,
+            explanation: "Residence in the county is the design's rationale, and it is simultaneously its exposure.",
+            sourceLessonSlug: "three-people-in-the-county",
+          },
+          {
+            prompt: "Why is the phrase at least two of whom are farmers load-bearing?",
+            options: ["It makes competitors a voting majority", "Because it guaranteed that a lender sat on every committee alongside the farmers", "Because it required committees to include at least one member who was not a farmer", "Because it barred landlords from serving on any committee in the county"],
+            correctIndex: 0,
+            explanation: "Two of three, in the same business in the same county, decide eligibility and credit limits for an applicant no other lender will serve.",
+            sourceLessonSlug: "three-people-in-the-county",
+          },
+          {
+            prompt: "How does Lesson 1's crop calendar interact with the committee's decision?",
+            options: ["A delay is one of the outcomes", "A delay pauses the crop year until the committee reaches a decision", "The committee must decide within five working days under the statute", "The calendar is irrelevant, since operating loans may be drawn at any time"],
+            correctIndex: 0,
+            explanation: "The committee decides on a calendar that does not stop, so time spent is a result rather than a neutral interval.",
+            sourceLessonSlug: "three-people-in-the-county",
+          },
+          {
+            prompt: "Which of these is a difference between the report's chapter text and its Findings section?",
+            options: ["The wording of the county committee description", "The number of members the committee was said to have", "The identity of the official who appointed committee members", "The source cited for the committee composition figures"],
+            correctIndex: 0,
+            explanation: "The chapter quotes USDA's own description with ellipses, while the Findings restate it in the Commission's own sentence.",
+            sourceLessonSlug: "three-people-in-the-county",
+          },
+          {
+            prompt: "What does 257 divided by 5,966 come to?",
+            options: ["About 4.3 per cent", "About 7.2 per cent, matching the figure reported for the previous year", "About 39.8 per cent, matching the one-year decline the report describes", "About 83.3 per cent, matching the largest state decline in the table"],
+            correctIndex: 0,
+            explanation: "4.31 per cent, which is exactly what the report prints, so the national figures check out on their own terms.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "Which state pair in Table 4.1 shows a decline of 60.7 per cent?",
+            options: ["Georgia, 61 to 24", "Mississippi, 48 to 21, the largest single-state loss in absolute numbers", "Virginia, 49 to 29, in a state with one of the largest starting counts", "North Carolina, 47 to 31, in a state that retained the most members"],
+            correctIndex: 0,
+            explanation: "Georgia fell from 61 members to 24, which the table records as a 60.7 per cent decline.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "Which state in Table 4.1 shows the smallest percentage decline?",
+            options: ["Florida, 14 to 10", "Texas, 33 to 18, in a state with a large and dispersed farm population", "South Carolina, 27 to 19, which retained more than two thirds of its members", "North Carolina, 47 to 31, which retained the largest absolute number"],
+            correctIndex: 0,
+            explanation: "Florida's fall of 28.6 per cent is smaller than South Carolina's 29.6 per cent, which is the next closest.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "What should you conclude if you find Table 4.1 reproduced as a national table?",
+            options: ["The citation did not open the page", "That the Commission published two versions of the same table", "That the national totals were revised after the report was printed", "That the missing states had no Black committee members to report"],
+            correctIndex: 0,
+            explanation: "Nine state rows summing to 328 and 173 cannot be the nation, whose totals the same report gives as 427 and 257.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "What is the correct response to the argument that the committee numbers are too small to matter?",
+            options: ["They are the composition of the gate", "That small numbers are always statistically significant in federal programmes", "That the numbers were larger before the report's period began", "That the Commission adjusted them upward to reflect undercounting"],
+            correctIndex: 0,
+            explanation: "In a nine-state region where Black farmers were concentrated, the seats fell from 328 to 173 in one year, and those seats decided eligibility and credit limits.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "Which of these did the Commission NOT claim about the participation rates it published?",
+            options: ["That they showed discrimination was present", "That the underlying data were not appropriate or reliable enough for conclusions", "That the comparison did not indicate the presence or absence of discrimination", "That drawing conclusions from the comparison would be difficult"],
+            correctIndex: 0,
+            explanation: "The report explicitly declined to say the rates indicated the presence or absence of racial discrimination.",
+            sourceLessonSlug: "numbers-alone-do-not-prove-discrimination",
+          },
+          {
+            prompt: "What is the relationship between the disclaimer and the settlement in Section 5?",
+            options: ["The settlement supplied the comparator the disclaimer said was missing", "The settlement adopted the Commission's figures as its own findings of fact", "The settlement was filed by the Commission on behalf of the class", "The settlement rejected the disclaimer as an obstacle to relief"],
+            correctIndex: 0,
+            explanation: "The consent decree required each claimant to name a specifically identified, similarly situated white farmer, which is the first item on the four-part list.",
+            sourceLessonSlug: "numbers-alone-do-not-prove-discrimination",
+          },
+          {
+            prompt: "Why does the appointing chain matter to how the committee behaved?",
+            options: ["Accountability ran to the agency rather than to producers", "Because appointed members served longer terms than elected ones", "Because appointed members were paid more than elected committee members", "Because appointed members could be removed only by the Secretary personally"],
+            correctIndex: 0,
+            explanation: "Nomination by the county supervisor and appointment by the state director meant nobody in the chain answered to a vote.",
+            sourceLessonSlug: "three-people-in-the-county",
+          },
+          {
+            prompt: "Which two roles did the same county office play in an application?",
+            options: ["Processing the file and nominating the deciders", "Approving the loan and appraising the security offered against it", "Setting the interest rate and certifying the applicant's acreage history", "Auditing the committee and hearing appeals from its determinations"],
+            correctIndex: 0,
+            explanation: "County supervisors nominated the committee members and their office handled the applications those members decided.",
+            sourceLessonSlug: "three-people-in-the-county",
+          },
+          {
+            prompt: "What does the phrase composition of the gate mean in this section?",
+            options: ["Who holds the seats on the deciding body", "The total amount of credit a county may extend in a year", "The statutory criteria an applicant must satisfy to be eligible", "The number of applications a committee reviews in a single meeting"],
+            correctIndex: 0,
+            explanation: "It is a count of who sat on the bodies determining eligibility and credit limits, which is a fact about the gate rather than about any decision.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "Which is the honest description of the Tennessee discrepancy's cause?",
+            options: ["A correction that reached some parts of the report and not others", "A deliberate revision by the agency during its review of the draft", "A transcription error introduced by the digitisation of the scanned pages", "A dispute between the Commission and USDA over the underlying count"],
+            correctIndex: 0,
+            explanation: "The published edition's table and chapter text carry 83.3 while its Findings still print 93.3, and the earlier printing carries a row that does not compute.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "Why does this course cite two printings of the same report?",
+            options: ["They differ, and the difference is the lesson", "Because the later printing is under copyright and the earlier one is not", "Because neither printing is complete on its own and both must be combined", "Because the Commission withdrew the first printing after publication"],
+            correctIndex: 0,
+            explanation: "One setting carries a correction the other does not, which is why two honest people can quote the same report and disagree.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "What did the Commission's disclaimer say about the direction of the inference?",
+            options: ["It covered both presence and absence of discrimination", "It covered only claims that discrimination was present", "It covered only claims that discrimination was absent", "It made no reference to discrimination at all"],
+            correctIndex: 0,
+            explanation: "The sentence says the analysis does not indicate the presence or absence of racial discrimination, which is what makes it cut both ways.",
+            sourceLessonSlug: "numbers-alone-do-not-prove-discrimination",
+          },
+          {
+            prompt: "Which of these would the four-part list count as a mechanism?",
+            options: ["A three-member local body deciding eligibility on a deadline", "A twelve-point drop in a programme's participation rate over a decade", "A statement by an advocacy organisation that the outcome was unjust", "A comparison of two states' participation rates in the same year"],
+            correctIndex: 0,
+            explanation: "A mechanism is a named path by which the outcome could actually have been produced, as distinct from the outcome itself.",
+            sourceLessonSlug: "numbers-alone-do-not-prove-discrimination",
+          },
+          {
+            prompt: "Why is a programme without a decision record undefendable as well as unauditable?",
+            options: ["There is nothing to point to when the decision is questioned", "Because federal law presumes the absence of records to be evidence of fault", "Because the county committee must reconstruct the decision from memory", "Because the applicant may then obtain relief without proving anything"],
+            correctIndex: 0,
+            explanation: "The record is what both a critic and a defender would use, so its absence disables both arguments equally.",
+            sourceLessonSlug: "numbers-alone-do-not-prove-discrimination",
+          },
+          {
+            prompt: "Which best summarises what Lesson 6 does with the committee counts?",
+            options: ["Reports them, checks them, and refuses to interpret them", "Reports them and concludes that the agency excluded Black members", "Sets them aside as unreliable because the report contradicts itself", "Extrapolates them to the whole country using the nine-state sample"],
+            correctIndex: 0,
+            explanation: "It verifies the arithmetic, corrects the regional scope, states the contradiction, and leaves the interpretation to the standard set in the next lesson.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "How does the elected FSA committee system compare on the accountability question?",
+            options: ["Its members face producers at an election", "Its members are appointed by the same state directors as the credit committees were", "Its members serve without any term limit, unlike the appointed credit committees", "Its members are nominated by the county supervisor and confirmed by the state committee"],
+            correctIndex: 0,
+            explanation: "The 1935 Act committees are elected by the agricultural producers who participate in the programmes, which the credit committees never were.",
+            sourceLessonSlug: "three-people-in-the-county",
+          },
+          {
+            prompt: "What is the best reason to read the committee description as a machine rather than a story?",
+            options: ["Each clause names a decision point", "Because the description is written in statutory rather than narrative language", "Because the Commission intended it as a technical appendix rather than a finding", "Because a machine reading avoids any conclusion about the people involved"],
+            correctIndex: 0,
+            explanation: "Three people, residing locally, two of them farmers, deciding both eligibility and amount, seated by appointment, is a sequence of design choices with consequences.",
+            sourceLessonSlug: "three-people-in-the-county",
+          },
+          {
+            prompt: "Which of these does the Commission's report NOT contain?",
+            options: ["A finding that FmHA committees intentionally excluded Black farmers", "A table of Black committee membership in nine states for 1979 and 1980", "A statement that numbers alone do not prove discrimination", "A description of how committee members were nominated and appointed"],
+            correctIndex: 0,
+            explanation: "The report presents composition data and expressly declines to say those rates indicate the presence or absence of discrimination.",
+            sourceLessonSlug: "numbers-alone-do-not-prove-discrimination",
+          },
+          {
+            prompt: "What is the standing danger in quoting an evidentiary caution like the Commission's?",
+            options: ["Applying it only to the argument you dislike", "Overstating the reliability of the data it refers to", "Treating it as a legal rule rather than a scholarly convention", "Attributing it to the agency rather than to the Commission"],
+            correctIndex: 0,
+            explanation: "A person who invokes it only when the numbers are inconvenient has adopted a tactic rather than a standard.",
+            sourceLessonSlug: "numbers-alone-do-not-prove-discrimination",
+          },
+          {
+            prompt: "Which pairing of page and content is correct for the published edition?",
+            options: ["Page 94 carries the numbers-alone disclaimer", "Page 92 carries Table 4.1 of committee membership by state", "Page 188 carries the corrected 83.3 per cent figure for Tennessee", "Page 93 carries the report's numbered Findings section"],
+            correctIndex: 0,
+            explanation: "The disclaimer is at page 94, the national paragraph at page 92, the table at page 93, and the Findings begin near page 188.",
+            sourceLessonSlug: "numbers-alone-do-not-prove-discrimination",
+          },
+          {
+            prompt: "What follows from the fact that total membership rose while Black membership fell?",
+            options: ["A shrinking programme does not explain the change", "The agency must have replaced each departing member with a white farmer", "The nine states in the table gained seats while the rest of the country lost them", "The change was entirely accounted for by consolidation of county offices"],
+            correctIndex: 0,
+            explanation: "If the number of seats grew, the loss of Black members cannot be attributed to fewer seats being available.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "What is the effect of seating deciders who know the applicant's family history?",
+            options: ["It supplies information the file does not contain", "It disqualifies the member from voting on that application under agency rules", "It requires the committee to refer the application to the state director", "It obliges the member to disclose the relationship in the written record"],
+            correctIndex: 0,
+            explanation: "Local knowledge is what the residence requirement was for, and information outside the file is exactly what a decision record cannot capture.",
+            sourceLessonSlug: "three-people-in-the-county",
+          },
+          {
+            prompt: "Which document does the Commission quote for the committee's own description?",
+            options: ["USDA's own account of the committee", "The Consolidated Farm and Rural Development Act as enacted in 1961", "A Federal Register notice published by the Farmers Home Administration", "Testimony given to the Commission by a serving county supervisor"],
+            correctIndex: 0,
+            explanation: "The chapter text reproduces the department's own description with ellipses, which is why the passage reads as a quotation within a quotation.",
+            sourceLessonSlug: "three-people-in-the-county",
+          },
+          {
+            prompt: "Which is the correct way to describe the nine-state table's coverage?",
+            options: ["Regional, and concentrated where Black farmers were", "A random sample of states drawn to represent the national picture", "The nine states in which the agency operated county committees at all", "The nine states that responded to the Commission's request for data"],
+            correctIndex: 0,
+            explanation: "The states listed are southern and border states where Black farming was concentrated, and their totals fall well short of the national figures.",
+            sourceLessonSlug: "who-sat-on-it",
+          },
+          {
+            prompt: "What would it take to explain the 1979 to 1980 change with confidence?",
+            options: ["A record of why each seat changed hands", "A larger sample of years, showing whether the pattern repeated", "A comparison against participation rates in other federal programmes", "A statement from the Commission interpreting its own table"],
+            correctIndex: 0,
+            explanation: "The count establishes something to explain, and only a decision record showing how each vacancy arose and was filled would settle the explanation.",
+            sourceLessonSlug: "numbers-alone-do-not-prove-discrimination",
+          },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
     // SECTION 4 — Title
     // ══════════════════════════════════════════════════════════════════════
     {
@@ -787,6 +1476,656 @@ Congress addressed exactly that problem in 2018, which tells you it was real. Se
 Agriculture Improvement Act of 2018, Pub. L. No. 115-334, § 12615, 132 Stat. 4490 (codified at 7 U.S.C. § 6622b). https://www.govinfo.gov/content/pkg/PLAW-115publ334/html/PLAW-115publ334.htm
 
 Uniform Law Commission. (n.d.). *Partition of Heirs Property Act*. https://www.uniformlaws.org/acts/catalog/current/p`,
+    },
+    {
+      slug: "the-partition-sale",
+      title: "14 · Any one co-tenant can force the sale of everything",
+      section: "Section 4 · Title",
+      body: `Here is the sentence of ordinary property law that turns a fragmented family title into a mechanism for losing land, and it is the reason this section exists.
+
+**Any single co-tenant can force a partition of the whole parcel.** Not their fraction. The whole thing. The right descends from the principle that no co-owner should be trapped in a co-ownership they want out of, which in most settings is sensible and humane. Applied to a parcel held by forty relatives, it means the least-connected person on the deed can start a process that ends with everybody off the land.
+
+**A court asked to partition has two ways to do it.**
+
+- **Partition in kind** divides the land physically and gives each co-tenant a piece.
+- **Partition by sale** sells the parcel and divides the money.
+
+**Under traditional law the second one wins far more often than you would expect**, because dividing farmland into forty pieces frequently produces forty pieces worth less in total than the whole was, and a court told to maximise value will order the sale.
+
+**Now add the buyer, and the mechanism is complete.** The Uniform Law Commission describes the move in its own words:
+
+> "Too often, real estate speculators acquire a small share of heirs' property in order to file a partition action and force a sale. Using this tactic, an investor can acquire the entire parcel for a price well below its fair market value and deplete a family's inherited wealth in the process." (Uniform Law Commission, n.d.)
+
+**Read the sequence slowly, because every step is lawful.**
+
+1. An investor finds a distant relative holding a small undivided interest, perhaps a fortieth, perhaps someone who did not know they held anything.
+2. The investor buys that interest, cheaply, because a fractional interest in land you cannot sell alone is worth very little on its own.
+3. The investor is now a co-tenant, and a co-tenant may petition for partition.
+4. The court, finding physical division impracticable, orders a sale.
+5. The sale is often at auction, on a short timetable, to whoever shows up, and the family that has farmed the land for a century finds out about it late or cannot outbid a buyer with cash.
+
+**Nobody was denied anything.** No committee voted. No application was refused. The family's own co-ownership, plus one purchased fortieth, was enough.
+
+**Three details make the traditional version worse than it sounds.**
+
+**The valuation.** A fractional interest bought at a discount can be leveraged into control of a whole parcel, because the fraction is priced as a fraction while the partition action reaches the entirety. The gap between those two prices is the investor's return.
+
+**The timetable.** A forced sale runs on the court's schedule, not the family's. Relatives scattered across several states, some of whom have to be located by publication, are being asked to organise money against a deadline they did not set.
+
+**The information.** A co-tenant who does not know they are a co-tenant cannot object, and notice by publication in a newspaper in the county where the land sits reaches almost nobody who moved away in 1948.
+
+**And now connect it back to Section 1, because the two mechanisms compound.** A family that cannot document control of its land cannot get the operating loan, so it farms with less capital, so it earns less, so it cannot pay the taxes or buy out a relative who wants cash, so a fractional interest ends up for sale. **Credit exclusion feeds title loss, and title loss feeds credit exclusion.** Neither one requires anybody to decide anything about the family at all.
+
+**Lesson 15 is about the model statute written to interrupt this, what it actually changes, and the honest limits on what a course may say about how widely it has been adopted.**
+
+:::reveal Which co-tenant may force a partition of an entire parcel? ||| Any single one of them, whatever the size of their undivided interest.
+
+:::reveal What are a court's two ways of partitioning land, and which tends to win for farmland? ||| Partition in kind, which divides the land physically, and partition by sale; under traditional law the sale usually wins, because forty pieces are often worth less in total than the whole.
+
+:::reveal How do credit exclusion and title loss compound each other? ||| Undocumented control blocks the loan, less capital means lower earnings, lower earnings make a buyout or a tax bill unaffordable, and a fractional interest reaches the market.
+
+## Vocabulary
+- **Partition**: the legal process by which a co-ownership is ended, either by dividing the property or by selling it and dividing the proceeds.
+- **Partition in kind**: physical division of the parcel among the co-tenants, each taking a defined piece.
+- **Partition by sale**: sale of the whole parcel with the proceeds divided by fractional share, which is what a forced sale of farmland usually becomes.
+- **Fractional interest**: an undivided share that is cheap to buy on its own but carries the full right to petition for partition of the entire parcel.
+- **Notice by publication**: service on unlocatable parties by newspaper advertisement, which satisfies a court and reaches almost none of the people it names.
+
+## Sources
+Uniform Law Commission. (n.d.). *Partition of Heirs Property Act*. https://www.uniformlaws.org/acts/catalog/current/p`,
+    },
+    {
+      slug: "the-uniform-act-and-the-farm-number",
+      title: "15 · A model statute, four protections, and a federal preference",
+      section: "Section 4 · Title",
+      body: `In July 2010 the National Conference of Commissioners on Uniform State Laws approved the **Uniform Partition of Heirs Property Act** and recommended it for enactment in all the states. A uniform act is not law anywhere until a legislature passes it, which makes this a **state civics** subject as much as a federal one, and it is why your own state's answer here may differ from your neighbour's.
+
+**What the act does not do.** It does not abolish the right to partition. A co-tenant who wants out can still get out, and a buyer of a fractional interest is still a co-tenant. **What it changes is the procedure between the petition and the sale**, and the Uniform Law Commission summarises it in one sentence:
+
+> "UPHPA provides a series of simple due process protections: notice, appraisal, right of first refusal, and if the other co-tenants choose not to exercise their right and a sale is required, a commercially reasonable sale supervised by the court to ensure all parties receive their fair share of the proceeds." (Uniform Law Commission, n.d.)
+
+**Take the four in order, because each one answers a specific failure from Lesson 14.**
+
+**1. Notice, section 4.** Where a plaintiff seeks notice by publication and the court finds the property may be heirs property, the plaintiff must post "a conspicuous sign on the property" within ten days, stating that the action has commenced and identifying the court. **A sign in the field reaches the person actually farming, which a legal advertisement does not.**
+
+**2. Appraisal, section 6.** The court "shall determine the fair market value of the property by ordering an appraisal", performed by "a disinterested real estate appraiser licensed in this state", valuing the property **"assuming sole ownership of the fee simple estate"**. That clause is the heart of the act. It forbids the fractional-interest discount, so the fortieth interest is priced at a fortieth of the whole parcel's real value rather than at what a fractional interest fetches from a distressed seller. Parties get notice of the value and thirty days to object, and the court holds a valuation hearing whether or not anyone does.
+
+**3. Right of first refusal, section 7.** "Any cotenant except a cotenant that requested partition by sale may buy all the interests of the cotenants that requested partition by sale." Electing co-tenants have forty-five days to decide, and the price is a formula rather than a negotiation: the appraised value of the whole parcel multiplied by the fractional ownership being bought. If several elect, the court allocates among them pro rata, and they get at least sixty days to pay. **So the family gets first claim on the interest the investor bought, at a price the court fixed.**
+
+**4. A preference for keeping the land, sections 8 to 10.** The court "shall order partition in kind unless" it finds that doing so would cause prejudice to the co-tenants **as a group**, and section 9 lists factors the court must weigh, including "evidence of the collective duration of ownership or possession of the property by a cotenant and one or more predecessors in title ... who are or were relatives", the use a co-tenant is making of the land, and contributions to taxes, insurance and upkeep. No single factor may be treated as decisive. If a sale is genuinely unavoidable, section 10 requires an **open-market sale** through a broker rather than a courthouse auction.
+
+**Not every family title is covered.** Section 2(5) defines heirs property by three conditions at the time of filing: no written agreement among all the co-tenants governing partition; at least one co-tenant acquired title from a relative; and either twenty per cent of the interests are held by relatives, or twenty per cent are held by one person who got title from a relative, or twenty per cent of the co-tenants are relatives. Fail any of those and ordinary state partition law applies.
+
+**The federal hook, and what it is not.** The Agriculture Improvement Act of 2018 refers to the uniform act twice, and neither reference makes enactment a condition of anything.
+
+- **Section 5104**, codified at **7 U.S.C. § 1936c**, created a relending programme through intermediaries for "projects that assist heirs with undivided ownership interests to resolve ownership and succession on farmland that has multiple owners", USDA's Heirs' Property Relending Program. The Secretary "shall give preference" to intermediaries with ten years of experience serving socially disadvantaged farmers **and** intermediaries "in States that have adopted a statute consisting of an enactment or adoption of the Uniform Partition of Heirs Property Act" (P.L. 115-334 § 5104). **The preference runs to the lender's state, not the borrower's.**
+- **Section 12615**, at **7 U.S.C. § 6622b**, is the farm-number list from Lesson 13. In a state that has adopted the act, a court order or a recorder's certification will do. In a state that has not, the tenancy-in-common agreement, the five years of tax returns and the self-certification are still available to everyone. **So enactment unlocks two extra routes; it gates nothing.**
+
+**And here is what this course will not tell you: how many states have adopted it today.** The Uniform Law Commission publishes its enactment map inside an interactive dashboard this course could not read, and the published secondary counts disagree with each other and count different things, some including states that extended similar protections to all partition actions rather than adopting the act itself. **A stale adoption count presented as current would be exactly the kind of confident wrong number this course exists to avoid.** Look it up yourself at the Commission's own site, note the date you looked, and check your own state's code, because that is the only version of this fact that is ever reliable.
+
+:::reveal What does UPHPA section 6 forbid an appraiser from doing? ||| Discounting for fractional ownership; the appraisal must value the property assuming sole ownership of the fee simple estate.
+
+:::reveal Who may exercise the right of first refusal, and at what price? ||| Any co-tenant except one who asked for a sale, at the appraised value of the whole parcel multiplied by the fractional interest being bought.
+
+:::reveal Does adopting the uniform act determine whether a farmer can obtain a farm number? ||| No. It adds two documentation routes, and the tenancy-in-common agreement, five years of tax returns and self-certification remain available in every state.
+
+## Vocabulary
+- **Uniform act**: a model statute drafted for adoption by state legislatures, which has no force anywhere until a legislature enacts it.
+- **Right of first refusal**: the entitlement of the non-selling co-tenants to buy out the interest of the co-tenant seeking a sale, at a court-determined price, before any sale to an outsider.
+- **Fee simple valuation**: appraisal of the whole property as if one person owned it outright, which removes the fractional-interest discount that made speculative buyouts profitable.
+- **Open-market sale**: a broker-conducted sale at a commercially reasonable price under court supervision, as against an auction on the courthouse steps.
+- **Heirs' Property Relending Program**: the USDA programme created in 2018 that lends through intermediaries to help families resolve ownership and succession on land held in common.
+
+## Sources
+Agriculture Improvement Act of 2018, Pub. L. No. 115-334, §§ 5104, 12615, 132 Stat. 4490 (codified at 7 U.S.C. §§ 1936c, 6622b). https://www.govinfo.gov/content/pkg/PLAW-115publ334/html/PLAW-115publ334.htm
+
+National Conference of Commissioners on Uniform State Laws. (2010). *Uniform Partition of Heirs Property Act*. Uniform Law Commission. https://www.uniformlaws.org/acts/catalog/current/p
+
+Uniform Law Commission. (n.d.). *Partition of Heirs Property Act*. https://www.uniformlaws.org/acts/catalog/current/p`,
+    },
+    {
+      slug: "quiz-title",
+      title: "16 · Knowledge check: title",
+      section: "Section 4 · Title",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What happens to land when its owner dies without a will?",
+            options: ["It passes to the heirs as tenants in common", "It escheats to the state until an heir petitions the probate court to reclaim it", "It is sold by the county and the proceeds are held in trust for any heirs who appear", "It passes to the eldest surviving child, who then holds it in trust for the other heirs"],
+            correctIndex: 0,
+            explanation: "State intestate succession law distributes the interest, and the heirs take it together as tenants in common.",
+            sourceLessonSlug: "land-that-passes-without-a-will",
+          },
+          {
+            prompt: "What does a one-sixth interest as a tenant in common give its holder?",
+            options: ["An undivided sixth of the whole parcel", "Six acres out of thirty-six, marked off by survey at the family's own election", "A right to be paid a sixth of the farm's annual income but no right to possess the land", "A reversionary interest that takes effect only when the other co-tenants die"],
+            correctIndex: 0,
+            explanation: "The interest is undivided, so it is a sixth of every square foot and carries a right to possess all of it.",
+            sourceLessonSlug: "land-that-passes-without-a-will",
+          },
+          {
+            prompt: "How does a family co-tenancy typically fragment?",
+            options: ["Successive generations inherit without wills", "The county subdivides the parcel each time it is reassessed for property tax purposes", "Co-tenants are required by statute to convey a share to each new heir at birth", "A court divides the interests every ten years to reflect changes in family size"],
+            correctIndex: 0,
+            explanation: "Each intestate death splits the shares again, so denominators grow across generations without anybody selling anything.",
+            sourceLessonSlug: "land-that-passes-without-a-will",
+          },
+          {
+            prompt: "Why does a fragmented title interfere with federal farm programmes?",
+            options: ["The operator cannot document control of the land", "Because federal law bars payments to any farm with more than one owner of record", "Because programme payments must be divided among all co-owners before disbursement", "Because a co-tenancy cannot lawfully be assigned a farm number in any state"],
+            correctIndex: 0,
+            explanation: "Programmes are delivered to a farm whose operator must show control, and the person actually farming heirs property often cannot produce that showing.",
+            sourceLessonSlug: "land-that-passes-without-a-will",
+          },
+          {
+            prompt: "Which section of the 2018 farm bill created documentation routes for heirs-property operators seeking a farm number?",
+            options: ["Section 12615", "Section 5104, which instead created the relending programme for resolving ownership", "Section 14012, which instead reopened the Pigford claims process for late filers", "Section 227, which instead abolished the appointed credit committees in the counties"],
+            correctIndex: 0,
+            explanation: "Section 12615 of P.L. 115-334, codified at 7 U.S.C. § 6622b, lists the documents that may establish eligibility for a farm number.",
+            sourceLessonSlug: "land-that-passes-without-a-will",
+          },
+          {
+            prompt: "Which of these is on the section 12615 list of acceptable documentation?",
+            options: ["Self-certification of control", "A notarised affidavit signed by every living co-tenant holding an interest in the parcel", "A title insurance policy issued by an insurer licensed in the state where the land lies", "A survey plat filed with the county recorder showing the operator's exclusive portion"],
+            correctIndex: 0,
+            explanation: "The list includes self-certification that the farm operator has control of the land, alongside a tenancy-in-common agreement and five years of tax returns.",
+            sourceLessonSlug: "land-that-passes-without-a-will",
+          },
+          {
+            prompt: "How many years of tax returns does the section 12615 list accept as documentation?",
+            options: ["Five", "Three, matching the participation requirement for a farm ownership loan", "Ten, the period over which the operator must show continuous possession", "One, since the statute is concerned only with the current crop year"],
+            correctIndex: 0,
+            explanation: "The list accepts the operator's tax return for each of the five years preceding the application.",
+            sourceLessonSlug: "land-that-passes-without-a-will",
+          },
+          {
+            prompt: "What does the existence of five statutory substitutes for a deed tell you?",
+            options: ["Deeds were often unavailable", "That Congress preferred self-certification to recorded title in all farm programmes", "That the Department had lost its own copies of the deeds during the reorganisation", "That heirs property is a federal rather than a state law category of ownership"],
+            correctIndex: 0,
+            explanation: "Congress does not enumerate substitutes for a document that people can readily produce, so the list is a diagnosis of the problem.",
+            sourceLessonSlug: "land-that-passes-without-a-will",
+          },
+          {
+            prompt: "Is heirs property unique to Black families?",
+            options: ["No", "Yes, because the category is defined by federal civil rights law", "Yes, because only families excluded from probate courts can create a co-tenancy", "Yes, because the uniform act applies only to land acquired after emancipation"],
+            correctIndex: 0,
+            explanation: "It arises wherever people die without wills and land stays in a family, and is documented in Appalachia, the Southwest and among Native Hawaiian landholders; the exposure rather than the instrument is what differed.",
+            sourceLessonSlug: "land-that-passes-without-a-will",
+          },
+          {
+            prompt: "Why does a disaster payment stall on heirs property?",
+            options: ["The programme must identify the landowner", "Because disaster payments are barred by statute on any land with a clouded title", "Because the county committee must inspect the property before any payment issues", "Because heirs property is ineligible for any programme administered by the Farm Service Agency"],
+            correctIndex: 0,
+            explanation: "A programme that pays a landowner has to establish who that is, and an answer of thirty-one people, some unlocatable, takes time the calendar does not have.",
+            sourceLessonSlug: "land-that-passes-without-a-will",
+          },
+          {
+            prompt: "Who may petition a court to partition a parcel held in common?",
+            options: ["Any single co-tenant", "Only a majority of the co-tenants acting together by written agreement", "Only a co-tenant holding at least a twenty per cent undivided interest", "Only a co-tenant who acquired their interest by inheritance rather than purchase"],
+            correctIndex: 0,
+            explanation: "Any one co-tenant may force partition of the whole parcel, whatever the size of their share.",
+            sourceLessonSlug: "the-partition-sale",
+          },
+          {
+            prompt: "What principle underlies the right to force a partition?",
+            options: ["Nobody should be trapped in a co-ownership", "That land should be consolidated into the largest economically viable units", "That a court must periodically confirm the accuracy of the county's title records", "That co-owners who do not farm the land forfeit their interests over time"],
+            correctIndex: 0,
+            explanation: "The right lets a co-owner exit, which is sensible in most settings and becomes a mechanism when the parcel is held by dozens of relatives.",
+            sourceLessonSlug: "the-partition-sale",
+          },
+          {
+            prompt: "What is partition in kind?",
+            options: ["Physical division of the land among the co-tenants", "Sale of the parcel with the proceeds divided by fractional share", "Transfer of the whole parcel to the co-tenant who has farmed it longest", "Conversion of the co-tenancy into a corporation with shares matching the fractions"],
+            correctIndex: 0,
+            explanation: "Partition in kind divides the land physically so each co-tenant takes a defined piece.",
+            sourceLessonSlug: "the-partition-sale",
+          },
+          {
+            prompt: "Why does partition by sale usually win for farmland under traditional law?",
+            options: ["The divided pieces are often worth less in total", "Because most state statutes forbid dividing agricultural land into parcels of any size", "Because a sale is the only remedy a court may order once an outside investor is a co-tenant", "Because federal farm programme rules require a single owner of record for each farm"],
+            correctIndex: 0,
+            explanation: "A court told to maximise value orders the sale when dividing a farm into many pieces would destroy value.",
+            sourceLessonSlug: "the-partition-sale",
+          },
+          {
+            prompt: "How does a speculator typically acquire standing to force a partition?",
+            options: ["By buying a small fractional interest", "By purchasing the county's tax lien on the parcel at the annual delinquency sale", "By recording an adverse possession claim after seven years of uncontested use", "By obtaining a court order declaring the existing co-tenancy invalid for want of probate"],
+            correctIndex: 0,
+            explanation: "The Uniform Law Commission describes speculators acquiring a small share in order to file a partition action and force a sale.",
+            sourceLessonSlug: "the-partition-sale",
+          },
+          {
+            prompt: "Why is a fractional interest cheap to buy?",
+            options: ["It cannot be sold or used on its own", "Because state law caps the price of any interest smaller than one tenth of a parcel", "Because the county assesses fractional interests at a reduced rate for tax purposes", "Because a fractional owner has no right to possess or use any part of the property"],
+            correctIndex: 0,
+            explanation: "An undivided share in land the buyer cannot occupy alone or resell easily fetches little, which is what makes the partition action profitable.",
+            sourceLessonSlug: "the-partition-sale",
+          },
+          {
+            prompt: "Where does the investor's return come from in a traditional forced sale?",
+            options: ["The gap between the fractional price and the whole parcel's value", "A commission paid by the court from the proceeds of the auction", "A statutory finder's fee for identifying unrecorded co-tenants of record", "The rents collected from the family during the pendency of the action"],
+            correctIndex: 0,
+            explanation: "The fraction is priced as a fraction while the partition action reaches the entirety, and the difference is the profit.",
+            sourceLessonSlug: "the-partition-sale",
+          },
+          {
+            prompt: "Why does the timetable of a forced sale disadvantage the family?",
+            options: ["It runs on the court's schedule", "Because state law requires a sale to close within thirty days of the petition", "Because relatives must all be present in the courthouse on the day of the hearing", "Because the family must post a bond equal to the appraised value before objecting"],
+            correctIndex: 0,
+            explanation: "Scattered relatives, some located only by publication, are asked to organise money against a deadline they did not set.",
+            sourceLessonSlug: "the-partition-sale",
+          },
+          {
+            prompt: "What is the practical problem with notice by publication?",
+            options: ["It reaches almost nobody who moved away", "It is prohibited in partition actions by the law of most states", "It costs more than the fractional interest the investor purchased", "It must be repeated weekly for a year before a sale may proceed"],
+            correctIndex: 0,
+            explanation: "An advertisement in a county newspaper satisfies a court and does not find a co-tenant who left in 1948.",
+            sourceLessonSlug: "the-partition-sale",
+          },
+          {
+            prompt: "How do credit exclusion and title loss reinforce each other?",
+            options: ["Undocumented control blocks credit, and thin capital forces sales", "Credit denials are recorded as liens, which cloud the title in the county records", "A federal loan denial automatically triggers a partition action by the Secretary", "Title loss disqualifies the family from applying for credit for a period of ten years"],
+            correctIndex: 0,
+            explanation: "Without capital a family cannot pay taxes or buy out a relative who wants cash, and a fractional interest reaches the market.",
+            sourceLessonSlug: "the-partition-sale",
+          },
+          {
+            prompt: "What is unusual about the partition mechanism compared with the rest of this course?",
+            options: ["Nobody has to decide anything about the family", "It requires an affirmative finding of discrimination by a federal agency", "It operates only in states that have adopted the uniform act on heirs property", "It applies exclusively to land acquired through federal homestead or land-grant programmes"],
+            correctIndex: 0,
+            explanation: "No committee votes and no application is refused; ordinary property law plus one purchased fraction is enough.",
+            sourceLessonSlug: "the-partition-sale",
+          },
+          {
+            prompt: "In what year did the Uniform Law Commission approve the Uniform Partition of Heirs Property Act?",
+            options: ["2010", "2018, in the same year Congress created the Heirs' Property Relending Program", "1994, alongside the reorganisation that created the Farm Service Agency", "1999, the year the Pigford consent decree received the court's approval"],
+            correctIndex: 0,
+            explanation: "The act was approved and recommended for enactment in all the states at the Commission's annual meeting in July 2010.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "When does a uniform act become law in a given state?",
+            options: ["When that state's legislature enacts it", "As soon as the Uniform Law Commission approves and publishes it", "When a federal statute references it in a preference or eligibility provision", "When a majority of the states have adopted it, at which point it binds the rest"],
+            correctIndex: 0,
+            explanation: "A model act has no force anywhere until a legislature passes it, which is why the answer differs from state to state.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "Does the uniform act abolish the right to force a partition?",
+            options: ["No", "Yes, for any parcel meeting the statutory definition of heirs property", "Yes, unless the petitioning co-tenant inherited rather than purchased the interest", "Yes, for ten years following the death of the last co-tenant to hold record title"],
+            correctIndex: 0,
+            explanation: "A co-tenant may still exit and a purchaser is still a co-tenant; what changes is the procedure between petition and sale.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "What are the four protections the Uniform Law Commission names?",
+            options: ["Notice, appraisal, right of first refusal, supervised sale", "Probate, survey, mediation, and a statutory right of redemption after any sale", "Registration, insurance, arbitration, and a right of appeal to the state supreme court", "Taxation, valuation, consolidation, and a preference for the largest fractional holder"],
+            correctIndex: 0,
+            explanation: "The Commission lists notice, appraisal, right of first refusal, and a commercially reasonable court-supervised sale if a sale is required.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "What does the act's notice provision require a plaintiff to do?",
+            options: ["Post a conspicuous sign on the property", "Send certified letters to every co-tenant of record at their last known address", "Publish the notice in a newspaper of general circulation in every adjoining county", "File a sworn list of all known heirs with the state department of agriculture"],
+            correctIndex: 0,
+            explanation: "Where notice by publication is sought and the court finds the property may be heirs property, a sign must be posted within ten days naming the court and the action.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "Why does posting a sign on the land matter more than a newspaper advertisement?",
+            options: ["It reaches the person actually farming", "Because a sign satisfies constitutional due process while publication does not", "Because state law charges the plaintiff for publication but not for posting", "Because the sign must remain in place until the litigation is finally concluded"],
+            correctIndex: 0,
+            explanation: "The person working the land sees a sign in the field; a legal advertisement in a county paper reaches almost nobody.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "Who performs the appraisal the act requires?",
+            options: ["A disinterested licensed real estate appraiser", "The county assessor, using the valuation already on the property tax rolls", "A panel of three co-tenants chosen by lot from among the non-selling owners", "The broker who will conduct the open-market sale if one becomes necessary"],
+            correctIndex: 0,
+            explanation: "The court appoints a disinterested real estate appraiser licensed in the state to determine fair market value.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "On what basis must the appraiser value the property?",
+            options: ["Assuming sole ownership of the fee simple estate", "At the price a fractional interest would fetch from a willing buyer in an arms-length sale", "At the county's assessed value for property tax purposes in the current year", "At the highest price offered at any auction conducted within the preceding twelve months"],
+            correctIndex: 0,
+            explanation: "That clause forbids the fractional-interest discount, which is what made speculative buyouts profitable.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "How long do parties have to object to the appraised value?",
+            options: ["Thirty days", "Ten days, matching the deadline for posting the sign on the property", "Forty-five days, matching the period allowed for electing to buy out an interest", "Sixty days, matching the minimum period allowed for paying the purchase price"],
+            correctIndex: 0,
+            explanation: "Parties receive notice of the appraised value and thirty days to object, and the court holds a valuation hearing regardless.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "Who may exercise the act's right of first refusal?",
+            options: ["Any co-tenant who did not request a sale", "Any person who has farmed the land for at least five consecutive years", "Only a co-tenant holding a majority of the undivided interests in the parcel", "Any relative of a co-tenant, whether or not they hold an interest themselves"],
+            correctIndex: 0,
+            explanation: "The act lets any co-tenant except one that requested partition by sale buy all the interests of those who did.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "How is the buyout price determined under the act?",
+            options: ["By formula from the appraised value", "By negotiation between the selling and the buying co-tenants under court supervision", "By competitive bidding among the co-tenants over a period of forty-five days", "By the price the selling co-tenant originally paid, plus interest at the statutory rate"],
+            correctIndex: 0,
+            explanation: "The price is the appraised value of the whole parcel multiplied by the fractional ownership being bought.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "How long does a co-tenant have to elect to buy out an interest?",
+            options: ["Forty-five days", "Thirty days, matching the period allowed for objecting to the appraisal", "Ten days, matching the deadline for posting notice on the property itself", "Ninety days, running from the date the court first enters the partition order"],
+            correctIndex: 0,
+            explanation: "Electing co-tenants have forty-five days to decide, and at least sixty days after that to pay.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "What happens if several co-tenants elect to buy the same interests?",
+            options: ["The court allocates among them pro rata", "The first to file with the clerk takes the whole of the offered interest", "The election fails and the court proceeds directly to an open-market sale", "The co-tenant with the largest existing interest is preferred over the others"],
+            correctIndex: 0,
+            explanation: "The act directs a pro rata allocation among the electing co-tenants.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "What does the act direct a court to order unless prejudice is shown?",
+            options: ["Partition in kind", "Partition by sale, since farmland is rarely capable of physical division", "An immediate open-market sale conducted by a licensed broker", "Dismissal of the petition where any co-tenant objects to the partition"],
+            correctIndex: 0,
+            explanation: "The court shall order partition in kind unless it finds that doing so would prejudice the co-tenants as a group.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "Prejudice under the act is measured against whom?",
+            options: ["The co-tenants as a group", "The co-tenant who filed the petition for partition by sale", "The county's tax base and the surrounding agricultural community", "The creditors holding recorded liens against any co-tenant's interest"],
+            correctIndex: 0,
+            explanation: "The standard asks whether partition in kind would prejudice the co-tenants as a group, not any one of them.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "Which factor does the act direct the court to weigh in deciding how to partition?",
+            options: ["Collective duration of ownership by relatives", "The number of years since the property was last transferred by recorded deed", "The petitioning co-tenant's stated intention to farm rather than resell the land", "The value of comparable parcels sold at auction in the county in the past year"],
+            correctIndex: 0,
+            explanation: "The act names evidence of the collective duration of ownership or possession by a co-tenant and predecessors in title who are or were relatives.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "May a court treat any single factor as decisive?",
+            options: ["No", "Yes, the collective duration of family ownership always controls the outcome", "Yes, the appraised value controls whenever it exceeds the county median", "Yes, the wishes of the co-tenant holding the largest interest control"],
+            correctIndex: 0,
+            explanation: "The act forbids treating any one factor as dispositive without weighing the totality of relevant factors and circumstances.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "If a sale is unavoidable, what kind of sale does the act require?",
+            options: ["An open-market sale through a broker", "A sealed-bid auction conducted by the clerk of the court within thirty days", "A public auction on the courthouse steps, advertised for three consecutive weeks", "A private sale to the highest-bidding co-tenant at the appraised value"],
+            correctIndex: 0,
+            explanation: "The act requires a commercially reasonable open-market sale under court supervision rather than a courthouse auction.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "Which is one of the three conditions defining heirs property under the act?",
+            options: ["No written agreement governs partition", "Every co-tenant must reside within the county in which the land is situated", "The land must have been continuously farmed for at least twenty-five years", "At least one co-tenant must hold a majority of the undivided interests"],
+            correctIndex: 0,
+            explanation: "The definition requires that no written agreement binding all co-tenants governs partition, that one acquired title from a relative, and a twenty per cent threshold.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "What is the twenty per cent threshold in the act's definition?",
+            options: ["Interests or co-tenants who are relatives", "The share of the land that must be under active cultivation at the time of filing", "The maximum share an outside investor may hold before the act ceases to apply", "The minimum share a petitioning co-tenant must hold to seek partition by sale"],
+            correctIndex: 0,
+            explanation: "Twenty per cent of the interests held by relatives, twenty per cent held by one person who acquired title from a relative, or twenty per cent of the co-tenants being relatives will each satisfy it.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "What happens if a parcel fails one of the act's definitional conditions?",
+            options: ["Ordinary state partition law applies", "The court must dismiss the petition and leave the co-tenancy undisturbed", "The federal relending programme becomes the exclusive remedy for the co-tenants", "The uniform act still applies but without the right of first refusal"],
+            correctIndex: 0,
+            explanation: "The protections attach only to property meeting the definition; otherwise the state's general partition law governs.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "What did section 5104 of the 2018 farm bill create?",
+            options: ["A relending programme through intermediaries", "A direct federal grant to families holding land in common without a written agreement", "A national registry of heirs property maintained by the Farm Service Agency", "A requirement that every state adopt the uniform act within five years"],
+            correctIndex: 0,
+            explanation: "Codified at 7 U.S.C. § 1936c, it lends to intermediaries who relend for projects helping heirs resolve ownership and succession on farmland.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "To whom does the uniform-act preference in section 5104 run?",
+            options: ["The intermediary lender's state", "The individual borrower's state of residence at the time of application", "The state in which the land subject to the partition action is physically located", "Any state that has adopted a substantially similar statute, whether or not the act itself"],
+            correctIndex: 0,
+            explanation: "The preference is given to eligible entities in states that have adopted the act, and an eligible entity is the intermediary that relends.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "What is the other preference criterion in section 5104?",
+            options: ["Ten years serving socially disadvantaged farmers", "Certification as a community development financial institution by the Treasury", "A minimum loan portfolio of ten million dollars in agricultural credit", "Written endorsement by the county committee in each county the lender serves"],
+            correctIndex: 0,
+            explanation: "The Secretary shall give preference to entities with not less than ten years of experience serving socially disadvantaged farmers and ranchers.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "Is adopting the uniform act a condition of federal eligibility for anything?",
+            options: ["No", "Yes, a farm number cannot be issued in a state that has not adopted it", "Yes, the relending programme is unavailable to borrowers in non-adopting states", "Yes, disaster payments on heirs property require an adopting state's court order"],
+            correctIndex: 0,
+            explanation: "Adoption unlocks two extra documentation routes and one lender preference; the other routes remain open in every state.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "In an adopting state, which extra documentation becomes available for a farm number?",
+            options: ["A court order or a recorder's certification", "An affidavit from the county committee attesting to the operator's control", "A statement from the state department of agriculture confirming family ownership", "A certified copy of the decedent's death certificate and the intestacy schedule"],
+            correctIndex: 0,
+            explanation: "Section 12615 accepts a court order verifying the land meets the act's definition, or a recorder's certification that the recorded owner is deceased and an heir has begun retitling.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "Why does this course refuse to print a current count of adopting states?",
+            options: ["The published counts disagree and count different things", "Because the Uniform Law Commission has never published any enactment data at all", "Because federal law prohibits reproducing state adoption records without permission", "Because the count changes weekly during every state legislative session"],
+            correctIndex: 0,
+            explanation: "The Commission's map sits in a dashboard this course could not read, and secondary counts differ, some including states that extended similar protections to all partition actions.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "What should a learner do about the adoption question instead?",
+            options: ["Check the Commission and their own state code, noting the date", "Rely on the most recent figure that appears in a national news report", "Assume adoption, since a majority of states have enacted most uniform acts", "Ask the county committee, which certifies state law for programme purposes"],
+            correctIndex: 0,
+            explanation: "A count is only reliable with the date it was read and a check against the state's own code, which is the general rule for any value another body owns.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "Why is heirs property a state civics subject as much as a federal one?",
+            options: ["Partition law is state law", "Because the federal government delegates title determinations to the county committees", "Because the uniform act applies only in states without a federal land-grant institution", "Because federal programmes are administered by state rather than county offices"],
+            correctIndex: 0,
+            explanation: "Intestate succession and partition are governed by each state's own code, so the outcome depends on which state the land sits in.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "Which best describes what the uniform act changes?",
+            options: ["The procedure between petition and sale", "The right of a co-tenant to exit a co-ownership at all", "The rules for who inherits when a landowner dies without a will", "The federal eligibility standards for farm ownership and operating loans"],
+            correctIndex: 0,
+            explanation: "The act leaves the right to partition intact and inserts notice, appraisal, buyout and sale-method protections into the process.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "How long do electing co-tenants have to pay after the court sets the price?",
+            options: ["At least sixty days", "Ten days, since the court must close the buyout before any sale may be ordered", "Thirty days, matching the objection period that followed the appraisal", "Six months, to allow time to arrange financing through a federal lender"],
+            correctIndex: 0,
+            explanation: "The act gives electing co-tenants at least sixty days to pay the allocated purchase price.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "Which is the correct relationship between the appraisal rule and the speculator's business model?",
+            options: ["The rule removes the discount the model depends on", "The rule raises the price the family must pay to keep the land", "The rule bars any outside investor from acquiring a fractional interest", "The rule requires the investor to hold the interest for five years before petitioning"],
+            correctIndex: 0,
+            explanation: "Valuing the parcel as if solely owned means the fraction is priced at its true proportion of the whole rather than at a distressed fractional price.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "What is the practical effect of the right of first refusal on the family?",
+            options: ["First claim on the investor's interest at a court-set price", "A veto over any partition petition filed by a purchaser of a fractional interest", "A right to remain in possession for ten years after any sale is completed", "A statutory loan from the federal government to fund the purchase"],
+            correctIndex: 0,
+            explanation: "The non-selling co-tenants may buy out those who asked for a sale, at the appraised value times the fractional interest.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "Which of these is NOT one of the act's four named protections?",
+            options: ["A cap on the size of any single co-tenant's interest", "Notice to co-tenants when a partition action has commenced", "An appraisal of the property's fair market value by a licensed appraiser", "A right of first refusal for co-tenants who did not seek a sale"],
+            correctIndex: 0,
+            explanation: "The four are notice, appraisal, right of first refusal and a commercially reasonable supervised sale.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "What does the phrase heirs property most precisely describe?",
+            options: ["Land held by co-tenants who inherited it without a written agreement", "Any farmland whose owner of record has been deceased for more than one year", "Property acquired under a federal homestead or land-grant programme before 1900", "Land held in trust by a state agency pending identification of the rightful heirs"],
+            correctIndex: 0,
+            explanation: "The act's definition turns on inheritance from a relative, the absence of a governing written agreement, and a twenty per cent family threshold.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "Which of these correctly pairs a farm bill section with what it created?",
+            options: ["Section 5104, the relending programme", "Section 12615, the preference for lenders in states adopting the uniform act", "Section 5104, the list of documents establishing eligibility for a farm number", "Section 12615, the requirement that courts appoint a disinterested appraiser"],
+            correctIndex: 0,
+            explanation: "Section 5104 created the relending programme at 7 U.S.C. § 1936c; section 12615 created the farm-number documentation list at 7 U.S.C. § 6622b.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "What is the significance of the act's ten-day sign-posting deadline?",
+            options: ["It runs from the court's finding that the land may be heirs property", "It gives the family ten days to file an objection to the partition petition", "It requires the sign to be removed within ten days of the sale closing", "It bars any hearing until ten days after the petition has been filed"],
+            correctIndex: 0,
+            explanation: "The plaintiff must post within ten days after the court determines the property may be heirs property, where notice by publication is sought.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "How does a valuation hearing work under the act when nobody objects?",
+            options: ["The court holds one anyway", "The appraised value becomes final without any further proceeding", "The parties must jointly stipulate to the value before the case proceeds", "The court appoints a second appraiser to confirm the first appraisal"],
+            correctIndex: 0,
+            explanation: "The act directs the court to hold a valuation hearing regardless of whether any party objects to the appraised value.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "Which is a fair summary of the act's overall design?",
+            options: ["It slows the process down and prices the land honestly", "It transfers title to whichever co-tenant has farmed the land the longest", "It converts every family co-tenancy into a corporation with transferable shares", "It removes partition actions from state courts and assigns them to a federal forum"],
+            correctIndex: 0,
+            explanation: "Notice, an undiscounted appraisal, a buyout window and an open-market sale together remove the speed and the price gap the traditional process supplied.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "Which statement about the relending programme is accurate?",
+            options: ["USDA lends to intermediaries who relend to families", "USDA lends directly to individual heirs to buy out their relatives' interests", "USDA guarantees commercial loans made to purchasers of fractional interests", "USDA acquires the disputed parcels and leases them back to the operating family"],
+            correctIndex: 0,
+            explanation: "The statute authorises loans to intermediaries such as cooperatives, credit unions and certified nonprofits, who then relend.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "What kinds of entities are eligible intermediaries under the relending programme?",
+            options: ["Cooperatives, credit unions and certified nonprofits", "State departments of agriculture and land-grant university extension services", "Commercial banks holding at least fifty million dollars in agricultural loans", "County committees acting through their county executive directors"],
+            correctIndex: 0,
+            explanation: "The statute names cooperatives, credit unions and community development financial institution certified nonprofits as eligible intermediaries.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "Why does this section belong in a course about federal farm programmes?",
+            options: ["Title determines access to every programme in it", "Because federal law governs how land passes when an owner dies intestate", "Because partition actions are heard by the same county committees that decide loans", "Because the Farm Service Agency is a party to every heirs property partition"],
+            correctIndex: 0,
+            explanation: "A programme delivered to a farm requires a documented operator, and a fragmented title is what prevents that document from existing.",
+            sourceLessonSlug: "land-that-passes-without-a-will",
+          },
+          {
+            prompt: "Which loss described in this course happens without anybody deciding anything?",
+            options: ["Loss of land through a forced partition sale", "Denial of an operating loan for lack of sufficient security", "Refusal of an emergency loan for want of an area designation", "Failure to receive a price support payment after a missed signup window"],
+            correctIndex: 0,
+            explanation: "The partition mechanism runs entirely on ordinary property law, so no committee, officer or application is involved at all.",
+            sourceLessonSlug: "the-partition-sale",
+          },
+          {
+            prompt: "What does an undivided interest prevent a co-tenant from doing?",
+            options: ["Pointing at part of the land and calling it theirs alone", "Selling their share to anyone outside the family without court approval", "Occupying or farming the property without the consent of the others", "Passing their interest to their own heirs on their death"],
+            correctIndex: 0,
+            explanation: "Each co-tenant owns a fraction of the whole and has a right to possess all of it, which is why physical division requires a partition.",
+            sourceLessonSlug: "land-that-passes-without-a-will",
+          },
+          {
+            prompt: "Which of these is the most accurate statement about probate and heirs property?",
+            options: ["Skipping probate is what leaves the title undocumented", "Probate is unavailable to co-tenants holding undivided interests in farmland", "Probate transfers title automatically to the co-tenant who farms the land", "Probate is required before a farm number may be issued in any state"],
+            correctIndex: 0,
+            explanation: "Land that passes generation after generation without probate leaves ownership real but unrecorded, which is the condition the documentation list addresses.",
+            sourceLessonSlug: "land-that-passes-without-a-will",
+          },
+          {
+            prompt: "How many statutory routes to a farm number does section 12615 provide?",
+            options: ["Five categories, one of which is open-ended", "Exactly two, both available only in states adopting the uniform act", "Three, all of which require a court order or a recorded instrument", "One, a self-certification made under penalty of perjury"],
+            correctIndex: 0,
+            explanation: "The list runs from a court order or recorder's certification through a tenancy-in-common agreement, tax returns and self-certification to any other documentation the Secretary identifies.",
+            sourceLessonSlug: "land-that-passes-without-a-will",
+          },
+          {
+            prompt: "What is the honest way to describe the relationship between race and heirs property?",
+            options: ["The instrument is general and the exposure was not", "Heirs property is a category defined by the race of the co-tenants", "Race is irrelevant, since intestacy operates identically for everyone", "The uniform act applies only to land inherited by socially disadvantaged families"],
+            correctIndex: 0,
+            explanation: "Intestacy and partition are general law; what differed was a combination of poor access to legal services, discouragement from probate courts and fragile state partition rules.",
+            sourceLessonSlug: "land-that-passes-without-a-will",
+          },
+          {
+            prompt: "In which populations besides Black families is heirs property well documented?",
+            options: ["Appalachia, the Southwest and Native Hawaiian landholders", "Only in the eleven states of the former Confederacy", "Only among families holding land granted under the Homestead Act", "Only in counties where the Farm Service Agency has closed its office"],
+            correctIndex: 0,
+            explanation: "The lesson names Appalachia, the Southwest and Native Hawaiian landholders as documented examples of the same mechanism.",
+            sourceLessonSlug: "land-that-passes-without-a-will",
+          },
+          {
+            prompt: "What is the effect of a co-tenant not knowing they hold an interest?",
+            options: ["They cannot object to a partition action", "Their interest lapses automatically after twenty years of non-use", "The court must appoint a guardian to represent their share at the sale", "The remaining co-tenants inherit their share by operation of law"],
+            correctIndex: 0,
+            explanation: "An unknowing co-tenant reached only by publication has no practical way to appear, which is what the sign-posting requirement addresses.",
+            sourceLessonSlug: "the-partition-sale",
+          },
+          {
+            prompt: "Which of the act's protections most directly addresses the courthouse auction?",
+            options: ["The open-market sale requirement", "The requirement that a sign be posted on the property within ten days", "The thirty-day window for objecting to the appraiser's valuation", "The bar on treating any single statutory factor as dispositive"],
+            correctIndex: 0,
+            explanation: "Where a sale is unavoidable the act requires a commercially reasonable broker-conducted sale under court supervision.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "Why does the act require the court to weigh contributions to taxes and upkeep?",
+            options: ["They show who has actually carried the property", "Because unpaid taxes automatically transfer title to the paying co-tenant", "Because the county assessor's records are the only reliable evidence of ownership", "Because the act bars any co-tenant in arrears from exercising a right of first refusal"],
+            correctIndex: 0,
+            explanation: "The factor list is designed to make visible the co-tenants who have maintained the land, alongside the collective duration of family ownership and current use.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "Which best states why the twenty per cent threshold exists?",
+            options: ["It limits the act to genuinely family-held land", "It caps the interest an outside investor may acquire in a covered parcel", "It sets the minimum share required to force a partition of the whole", "It determines the proportion of proceeds that must be reinvested in farmland"],
+            correctIndex: 0,
+            explanation: "The threshold makes the definition turn on family holding rather than sweeping in every co-ownership that happens to include a relative.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "What is the relationship between Lesson 13's documentation list and Lesson 15's uniform act?",
+            options: ["The list works everywhere and the act adds two routes", "The list applies only where the act has been adopted by the legislature", "The act supersedes the list wherever a state has enacted it", "The list is a federal codification of the act's own definition of heirs property"],
+            correctIndex: 0,
+            explanation: "Adoption unlocks the court-order and recorder-certification routes; the tenancy-in-common agreement, tax returns and self-certification are available regardless.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "How should a learner treat any number owned by an outside body, such as an adoption count?",
+            options: ["Read it from that body and record the date", "Take the most commonly repeated figure as sufficiently reliable", "Assume it has not changed since the last authoritative publication", "Cite a secondary source, since primary bodies rarely publish current data"],
+            correctIndex: 0,
+            explanation: "A value another organisation owns has to be read from that organisation with the date attached, or it becomes a confident wrong number.",
+            sourceLessonSlug: "the-uniform-act-and-the-farm-number",
+          },
+          {
+            prompt: "Which sentence best captures Section 4 as a whole?",
+            options: ["A family can lose land without anyone refusing it anything", "A family loses land only when a county committee denies its loan application", "Federal law now guarantees that heirs property cannot be sold without consent", "Partition sales were abolished by the 2018 farm bill in every adopting state"],
+            correctIndex: 0,
+            explanation: "The partition mechanism runs on general property law, and the credit gate and the title problem feed each other without any decision about the family being made.",
+            sourceLessonSlug: "the-partition-sale",
+          },
+        ],
+      },
     },
     // ══════════════════════════════════════════════════════════════════════
     // SECTION 5 — Pigford
