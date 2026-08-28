@@ -1870,6 +1870,574 @@ A writing, signed or similarly authenticated. Not a phone call, not an implicati
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 4 — The rails, and how fast each one runs
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "six-rails-six-clocks",
+      title: "13 · Six rails, and six different clocks",
+      section: "Section 4 · The rails, and how fast each one runs",
+      body: `"Sending money" is not one thing. It is at least six, and each one keeps time differently.
+
+**Cash** is the only one with no clock between the two people. Handing over currency is the payment. A clock only starts when the cash reaches a bank, and Section 2 gave you that rule: in person to an employee is next business day, any other way is the second (12 CFR § 229.10, n.d.).
+
+**A check** is an order to pay, not the payment. Depositing one begins a collection process between two banks, and the availability schedule governs when you may use the money while that process runs. Section 4's next lesson is entirely about what that means.
+
+**An ACH credit** is a push: the payer's bank sends money toward the payee. This is what a payroll direct deposit is. Regulation CC defines the facility:
+
+> "Automated clearinghouse or ACH means a facility that processes debit and credit transfers under rules established by a Federal Reserve Bank operating circular on automated clearinghouse items or under rules of an automated clearinghouse association." (12 CFR § 229.2, n.d.)
+
+**Read what that sentence says about where the rules live**, because it is the most useful thing in this lesson. An operating circular or an association's rulebook is not a statute and is not in the Code of Federal Regulations. So the rules that decide how fast an ACH entry moves are a different kind of document from the rules that decide what your bank owes you, and the consumer-facing protections in Section 3 come from Regulation E rather than from any rulebook.
+
+**An ACH debit** is a pull: the payee's bank reaches into the payer's account under an authorisation. Your recurring bill payments are usually these, which is why Regulation E's authorisation, stop-payment and varying-amount rules apply to them (12 CFR § 1005.10, n.d.). Note carefully that Regulation CC's next-day rule for electronic payments does **not** cover a debit, because the definition names "a wire transfer or an ACH credit transfer" (12 CFR § 229.2, n.d.).
+
+**A card transaction** is the authorisation-then-settlement pattern from the last section, and it is likewise outside that definition.
+
+**A wire** is defined in the same place, and the definition is worth reading for its shape:
+
+> "Wire transfer means an unconditional order to a bank to pay a fixed or determinable amount of money to a beneficiary upon receipt or on a day stated in the order, that is transmitted by electronic or other means through Fedwire, the Clearing House Interbank Payments System, other similar network, between banks, or on the books of a bank." (12 CFR § 229.2, n.d.)
+
+**Unconditional. Upon receipt.** A wire is not a request that something be collected; it is an instruction to pay. That is why it sits with ACH credits in the next-day availability rule.
+
+**Instant payment** is the sixth, and it is new enough that most people's intuitions predate it. The next lesson but one takes it on its own.
+
+**The single table worth carrying out of here is not a table of speeds.** It is a question: for this payment, is somebody pushing money or pulling it, and is a bank being asked to collect or being ordered to pay? Answer those two and you can predict which rules apply without memorising any speeds at all, which is fortunate, because speeds change and the categories do not.
+
+:::reveal Which two things does Regulation CC's definition of electronic payment name? ||| A wire transfer and an ACH credit transfer, and nothing else.
+
+:::reveal Where does Regulation CC say ACH rules come from? ||| A Federal Reserve Bank operating circular on automated clearinghouse items, or the rules of an automated clearinghouse association.
+
+:::reveal What two questions let you predict which rules apply to a payment? ||| Whether money is being pushed or pulled, and whether a bank is being asked to collect or ordered to pay.
+
+## Vocabulary
+- **ACH credit**: a push transfer originated by the payer's side, the form a payroll direct deposit takes.
+- **ACH debit**: a pull transfer originated by the payee's side under an authorisation, the form most recurring bill payments take.
+- **Wire transfer**: an unconditional order to a bank to pay a fixed or determinable amount to a beneficiary upon receipt or on a stated day.
+- **Operating circular**: a Federal Reserve Bank's own rulebook for a service, which is not a statute and is not published in the Code of Federal Regulations.
+
+## Sources
+12 CFR § 229.2. (n.d.). *Definitions*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/229.2
+
+12 CFR § 229.10. (n.d.). *Next-day availability*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/229.10
+
+12 CFR § 1005.10. (n.d.). *Preauthorized transfers*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1005.10`,
+    },
+    {
+      slug: "provisional-until-it-is-not",
+      title: "14 · Your deposit is a provisional credit until it is not",
+      section: "Section 4 · The rails, and how fast each one runs",
+      body: `Here is the sentence that explains the entire availability schedule, and it is not in Regulation CC. It is in the commercial code.
+
+> "Unless a contrary intent clearly appears and before the time that a settlement given by a collecting bank for an item is or becomes final, the bank, with respect to the item, is an agent or sub-agent of the owner of the item and any settlement given for the item is provisional." (U.C.C. § 4-201, n.d.)
+
+**Provisional.** When you deposit a check, the bank is not buying it from you. It is collecting it for you, as your agent, and the credit it puts in your account is a placeholder pending an event that has not happened yet. Availability, in that light, is the bank letting you spend money it has not itself received.
+
+**Which is why the exceptions in Section 2 look the way they do.** Every one of them is about the risk of that advance. A new account has no history to price the risk against. A large deposit is a large advance. A redeposited check has already failed once. Repeated overdrafts are evidence about the account. Reasonable cause to doubt collectibility is the judgement itself. Emergency conditions are the collection machinery breaking down (12 CFR § 229.13, n.d.). Read as a list of reasons to distrust an advance, the six stop looking arbitrary.
+
+**And here is the other half, which people learn the hard way.** If the item is not finally paid, the bank may:
+
+> "revoke the settlement given by it, charge back the amount of any credit given for the item to its customer's account, or obtain refund from its customer" (U.C.C. § 4-214, n.d.)
+
+**A charge-back is not a penalty and it is not a reversal of your right to the money.** It is the placeholder being removed because the event it was holding a place for did not occur. The right is conditioned on the bank returning the item or notifying its customer by its midnight deadline or within a reasonable time after learning of the dishonor (U.C.C. § 4-214, n.d.).
+
+**So availability and finality are two different clocks, and this is the most expensive confusion in the course.** Regulation CC tells you when you may **use** the money. The commercial code tells you when the money is **yours to keep**. Those questions have different answers and the second one can arrive later than the first. Funds released to you on schedule can be charged back afterwards if the item was never paid, and nothing about the schedule prevents that.
+
+**One more clock, mentioned in Section 2 and now placed properly.** Interest begins to accrue "not later than the business day on which the depositary bank receives credit for the funds" (12 CFR § 229.14, n.d.). That is a collection-side event, while availability is a customer-side one. Three clocks on a single deposit: when it earns, when you may spend it, and when it is finally yours.
+
+**What to do with this is not a strategy, because this course gives no financial advice.** It is a reading habit. When a bank tells you funds are available, that is an answer to one question and not to the other two, and knowing which question was answered is what keeps a person from being surprised twice by the same check.
+
+:::reveal In the commercial code, what is a collecting bank's settlement for a deposited item until it becomes final? ||| Provisional. The bank is acting as agent or sub-agent of the owner of the item.
+
+:::reveal What three things may a bank do if an item is not finally paid? ||| Revoke the settlement it gave, charge back the amount of any credit given to the customer's account, or obtain a refund from the customer.
+
+:::reveal Name the three clocks that run on a single check deposit. ||| When interest begins to accrue, when the funds become available to spend, and when the settlement becomes final.
+
+## Vocabulary
+- **Provisional settlement**: a credit given for an item before final payment, which may be revoked if the item is not paid.
+- **Collecting bank**: a bank handling an item for collection, acting as agent or sub-agent of the item's owner rather than as its purchaser.
+- **Charge-back**: the removal of a provisional credit when an item is not finally paid, exercised within the code's stated deadlines.
+- **Finality**: the point at which a settlement stops being provisional, which is a different moment from availability.
+
+## Sources
+U.C.C. § 4-201. (n.d.). *Status of collecting bank as agent and provisional status of credits; applicability of article; item indorsed "pay any bank"*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/ucc/4/4-201
+
+U.C.C. § 4-214. (n.d.). *Right of charge-back or refund; liability of collecting bank; return of item*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/ucc/4/4-214
+
+12 CFR § 229.13. (n.d.). *Exceptions*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/229.13
+
+12 CFR § 229.14. (n.d.). *Payment of interest*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/229.14`,
+    },
+    {
+      slug: "instant-and-irrevocable",
+      title: "15 · Instant is a different object, and irrevocability is the price",
+      section: "Section 4 · The rails, and how fast each one runs",
+      body: `Every clock in this course so far has been counted in business days, and every one of them has assumed that a day ends. One rail does not.
+
+**What it is, in the operator's own words.** The Federal Reserve's instant payment service "enables individuals and businesses to send instant payments through their depository institution accounts", and it "went live on July 20, 2023" (Board of Governors of the Federal Reserve System, n.d.). Its timekeeping is the part that matters here:
+
+> "The service has a 24-hour business day each day of the week, including weekends and holidays." (Board of Governors of the Federal Reserve System, n.d.)
+
+**Set that beside the definition you learned in Section 1.** Regulation CC's business day is a calendar day other than a weekend or one of ten named dates. This service's business day is every day. The two sentences use the same words to mean opposite things, which is exactly why defined terms are worth reading rather than assuming. Read on 28 August 2026.
+
+**The functional difference is not just speed.** The service transfers funds "in near real-time and at any time, any day of the year", processing each transaction and settling it on a gross basis rather than netting a batch at a set hour (Board of Governors of the Federal Reserve System, n.d.). Nothing waits for a window to open. There is no window.
+
+**And now the trade, which is the actual lesson.** Section 3 gave you a right: a preauthorized electronic fund transfer can be stopped by notifying the institution at least three business days before the scheduled date (12 CFR § 1005.10, n.d.). That right exists because there is an interval between agreeing to a payment and the payment happening. **A payment that settles the moment it is sent has no such interval.** Speed and the ability to change your mind are, in the payment system, two ends of the same measurement.
+
+**This is a fact about the rails, not a warning and not advice.** The course does not tell you which rail to use, and it names no service as good or bad. What it tells you is how to ask the question: before sending, is there a window during which this can still be stopped, and how long is it? That question has a different answer for a check, a preauthorized debit, a card and an instant payment, and the difference is knowable before you send rather than after.
+
+**One boundary, because this is where undated claims breed.** Which institutions offer instant payment, what limits they set, and which competing networks operate alongside the Federal Reserve's service are all things that change. This lesson dates what it says, cites the operator for the two facts it uses, and stops. **Your own institution's participation, limits and hours are a term of your own account documents**, which is the same answer this course has given about the cut-off hour and the availability policy, for the same reason.
+
+:::reveal What is the length of the instant payment service's business day? ||| Twenty-four hours, on each day of the week, including weekends and holidays.
+
+:::reveal Why does a stop-payment window exist for a preauthorized transfer and not for an instant payment? ||| Because the right depends on there being an interval between agreeing to a payment and the payment happening, and an instant payment settles as it is sent.
+
+:::reveal Where do you find your own institution's instant-payment participation, limits and hours? ||| In your own account documents, not in a general description of the service.
+
+## Vocabulary
+- **Instant payment**: a transfer processed and settled in near real time, at any hour on any day, rather than in a batch at a set window.
+- **Gross settlement**: settling each transaction individually rather than netting many of them together at a scheduled time.
+- **Irrevocability**: the property of a payment that cannot be recalled once sent, which rises as settlement time falls.
+- **Window**: the interval between committing to a payment and its becoming final, which is what a stop-payment right operates inside.
+
+## Sources
+Board of Governors of the Federal Reserve System. (n.d.). *About the FedNow Service*. https://www.federalreserve.gov/paymentsystems/fednow_about.htm
+
+12 CFR § 1005.10. (n.d.). *Preauthorized transfers*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1005.10
+
+12 CFR § 229.2. (n.d.). *Definitions*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/229.2`,
+    },
+    {
+      slug: "quiz-the-rails",
+      title: "16 · Knowledge check: the rails and their clocks",
+      section: "Section 4 · The rails, and how fast each one runs",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "Which payment method has no clock at all between the two people involved?",
+            options: ["Cash", "A check, because the payee holds a negotiable instrument from the moment it is written", "A wire transfer, because it is an unconditional order to pay upon receipt", "An instant payment, because it settles on a gross basis at any hour of any day"],
+            correctIndex: 0,
+            explanation: "Handing over currency is the payment. A clock starts only once the cash reaches a bank and the availability rules attach.",
+            sourceLessonSlug: "six-rails-six-clocks",
+          },
+          {
+            prompt: "What is a check, in the sense this lesson uses?",
+            options: ["An order to pay, not the payment", "A transfer of funds that becomes final the moment the payee accepts the instrument", "A record of a payment already made between the drawer's bank and the payee's bank", "A guarantee by the drawer's bank that funds have been reserved for the payee"],
+            correctIndex: 0,
+            explanation: "Depositing one begins a collection process between two banks, and the availability schedule governs use of the money while that process runs.",
+            sourceLessonSlug: "six-rails-six-clocks",
+          },
+          {
+            prompt: "What is an ACH credit?",
+            options: ["A push from the payer's side", "A pull initiated by the payee's bank under an authorization the consumer signed", "A reservation of funds placed against an account pending later settlement", "An unconditional order to pay a beneficiary upon receipt of the instruction"],
+            correctIndex: 0,
+            explanation: "The payer's bank sends money toward the payee, which is the form a payroll direct deposit takes.",
+            sourceLessonSlug: "six-rails-six-clocks",
+          },
+          {
+            prompt: "What is an ACH debit?",
+            options: ["A pull from the payee's side", "A push originated by the payer's bank toward the account of the intended payee", "A charge-back of a provisional credit given for an item that was not finally paid", "A settlement entry made on the books of a single bank holding both accounts"],
+            correctIndex: 0,
+            explanation: "The payee's bank reaches into the payer's account under an authorisation, which is why Regulation E's preauthorized transfer rules apply to it.",
+            sourceLessonSlug: "six-rails-six-clocks",
+          },
+          {
+            prompt: "Where does Regulation CC say ACH rules come from?",
+            options: ["An operating circular or an association's rules", "The Code of Federal Regulations, in the same part that carries the availability schedule", "The Uniform Commercial Code as enacted in the state where the originating bank sits", "A joint rulemaking issued by the federal banking agencies every five years"],
+            correctIndex: 0,
+            explanation: "The definition names a Federal Reserve Bank operating circular on automated clearinghouse items, or the rules of an automated clearinghouse association.",
+            sourceLessonSlug: "six-rails-six-clocks",
+          },
+          {
+            prompt: "Why does the lesson say the location of the ACH rules matters?",
+            options: ["They are not the rules that say what a bank owes you", "Because an operating circular may override the availability schedule in Regulation CC", "Because a rulebook published by an association is unenforceable against a consumer", "Because the rules change on a five-year cycle set by the Expedited Funds Availability Act"],
+            correctIndex: 0,
+            explanation: "The rules that decide how fast an entry moves are a different kind of document from the rules that decide a bank's duties, which come from Regulation E and Regulation CC.",
+            sourceLessonSlug: "six-rails-six-clocks",
+          },
+          {
+            prompt: "Is an ACH debit covered by Regulation CC's next-day rule for electronic payments?",
+            options: ["No", "Yes, because the definition names both debit and credit transfers processed by the facility", "Yes, but only where the debit originates at the same bank that holds the account", "Only where the debit exceeds the minimum availability amount for that banking day"],
+            correctIndex: 0,
+            explanation: "The definition names a wire transfer or an ACH credit transfer, so a debit falls outside it.",
+            sourceLessonSlug: "six-rails-six-clocks",
+          },
+          {
+            prompt: "How does Regulation CC define a wire transfer?",
+            options: ["An unconditional order to pay upon receipt or a stated day", "A batched instruction settled at a fixed hour on each business day between banks", "A request that one bank collect a stated amount from another bank on a customer's behalf", "A provisional credit given by a bank pending final settlement with the paying bank"],
+            correctIndex: 0,
+            explanation: "The definition specifies an order to pay a fixed or determinable amount to a beneficiary, transmitted through Fedwire, CHIPS, a similar network, between banks, or on the books of a bank.",
+            sourceLessonSlug: "six-rails-six-clocks",
+          },
+          {
+            prompt: "Which word in the wire-transfer definition explains why a wire gets next-day availability?",
+            options: ["Unconditional", "Electronic, because the availability rules favour transfers that avoid paper handling", "Beneficiary, because a named beneficiary removes any doubt about who is entitled", "Determinable, because a determinable amount can be verified before it is credited"],
+            correctIndex: 0,
+            explanation: "A wire is not a request that something be collected; it is an instruction to pay, which is why it sits alongside ACH credits in the rule.",
+            sourceLessonSlug: "six-rails-six-clocks",
+          },
+          {
+            prompt: "Which two networks does the wire-transfer definition name by name?",
+            options: ["Fedwire and CHIPS", "The automated clearing house and the national settlement service operated by the Reserve Banks", "The card networks and the automated clearing house association's own rulebook", "The instant payment service and the check-processing office in Cleveland"],
+            correctIndex: 0,
+            explanation: "The definition names Fedwire, the Clearing House Interbank Payments System, other similar networks, transfers between banks, and transfers on the books of a bank.",
+            sourceLessonSlug: "six-rails-six-clocks",
+          },
+          {
+            prompt: "What two questions does the lesson say let you predict which rules apply to a payment?",
+            options: ["Push or pull, and collect or pay", "How much it is for, and whether the two parties bank at the same institution", "Which day of the week it falls on, and whether that day is a federal holiday", "Whether it is recurring, and whether the payee is a business or an individual"],
+            correctIndex: 0,
+            explanation: "Answering those two predicts the applicable rules without memorising any speeds, which matters because speeds change and the categories do not.",
+            sourceLessonSlug: "six-rails-six-clocks",
+          },
+          {
+            prompt: "Which of these is NOT an electronic payment under Regulation CC's definition?",
+            options: ["A card transaction", "A wire transfer sent between two banks through the Clearing House Interbank Payments System", "An automated clearing house credit transfer originated by an employer's payroll provider", "A wire transfer made on the books of a single bank holding both of the accounts"],
+            correctIndex: 0,
+            explanation: "A card transaction follows the authorisation-then-settlement pattern and is outside a definition that names only wires and ACH credits.",
+            sourceLessonSlug: "six-rails-six-clocks",
+          },
+          {
+            prompt: "What does U.C.C. 4-201(a) say about a settlement a collecting bank gives for an item?",
+            options: ["It is provisional", "It is final at the moment the bank credits the customer's account with the amount", "It transfers ownership of the item from the customer to the collecting bank", "It binds the paying bank to honour the item when it is later presented"],
+            correctIndex: 0,
+            explanation: "Before the settlement is or becomes final, the bank is an agent or sub-agent of the owner of the item and any settlement given is provisional.",
+            sourceLessonSlug: "provisional-until-it-is-not",
+          },
+          {
+            prompt: "In what capacity does a collecting bank hold a deposited item, under U.C.C. 4-201(a)?",
+            options: ["As agent or sub-agent of the owner", "As purchaser of the item for value, having given the customer a credit in exchange", "As guarantor of the item to the customer against the risk of the drawer's dishonor", "As bailee of the item, with no authority to present it without further instruction"],
+            correctIndex: 0,
+            explanation: "The bank is collecting the item for the customer, which is why the credit it gives is a placeholder pending an event that has not happened.",
+            sourceLessonSlug: "provisional-until-it-is-not",
+          },
+          {
+            prompt: "What does this lesson say availability actually amounts to, seen through the commercial code?",
+            options: ["The bank letting you spend money it has not received", "The bank confirming that the paying bank has already settled the item in full", "The bank waiving its right to recover the amount if the item is dishonoured", "The bank converting a provisional credit into a final one on a fixed schedule"],
+            correctIndex: 0,
+            explanation: "The credit is provisional pending collection, so making funds available is an advance against an item that has not yet been finally paid.",
+            sourceLessonSlug: "provisional-until-it-is-not",
+          },
+          {
+            prompt: "What do the six Regulation CC exceptions look like when read through the provisional-credit idea?",
+            options: ["Reasons to distrust an advance", "Penalties imposed on customers whose accounts have been managed carelessly", "Categories in which the bank may charge a higher fee for handling the deposit", "Situations in which the paying bank rather than the depositary bank bears the risk"],
+            correctIndex: 0,
+            explanation: "A new account has no history, a large deposit is a large advance, a redeposited check has failed once, and so on. Read that way, the six stop looking arbitrary.",
+            sourceLessonSlug: "provisional-until-it-is-not",
+          },
+          {
+            prompt: "What three things may a bank do under U.C.C. 4-214(a) if an item is not finally paid?",
+            options: ["Revoke, charge back, or obtain refund", "Report the customer to a consumer reporting agency, close the account, or sue the drawer", "Extend the hold, invoke an exception, or notify the customer's other creditors", "Present the item again, hold the funds indefinitely, or transfer the loss to the payee"],
+            correctIndex: 0,
+            explanation: "It may revoke the settlement it gave, charge back the amount of any credit given to the customer's account, or obtain refund from its customer.",
+            sourceLessonSlug: "provisional-until-it-is-not",
+          },
+          {
+            prompt: "On what is the charge-back right conditioned?",
+            options: ["Returning the item or notifying by the deadline", "Obtaining the customer's written consent before the credit is removed from the account", "Proving that the customer knew the item would not be honoured when it was deposited", "Waiting until the availability schedule for that deposit category has fully expired"],
+            correctIndex: 0,
+            explanation: "The bank must return the item or send notification by its midnight deadline or within a reasonable time after it learns the facts.",
+            sourceLessonSlug: "provisional-until-it-is-not",
+          },
+          {
+            prompt: "How does the lesson describe a charge-back?",
+            options: ["A placeholder being removed", "A penalty assessed against the customer for depositing an item that was not honoured", "A reversal of the customer's legal right to the amount written on the instrument", "A transfer of the loss from the depositary bank to the paying bank's own customer"],
+            correctIndex: 0,
+            explanation: "The provisional credit was holding a place for an event, and the event did not occur, so the credit is removed.",
+            sourceLessonSlug: "provisional-until-it-is-not",
+          },
+          {
+            prompt: "What does this lesson call the most expensive confusion in the course?",
+            options: ["Availability against finality", "The difference between a business day and a banking day when counting a hold", "The difference between an authorisation and the settlement that follows it later", "The difference between an ACH credit and an ACH debit for a recurring payment"],
+            correctIndex: 0,
+            explanation: "Regulation CC says when money may be used; the commercial code says when it is yours to keep, and the second answer can arrive later than the first.",
+            sourceLessonSlug: "provisional-until-it-is-not",
+          },
+          {
+            prompt: "Can funds released to you on schedule be charged back afterwards?",
+            options: ["Yes, if the item was never paid", "No, because the availability schedule makes the credit final once the period expires", "No, unless the customer agreed in writing to the possibility when the account was opened", "Only if the bank invoked one of the six exceptions before making the funds available"],
+            correctIndex: 0,
+            explanation: "Nothing about the availability schedule makes a bad item good, because the two rules answer different questions.",
+            sourceLessonSlug: "provisional-until-it-is-not",
+          },
+          {
+            prompt: "Name the three clocks this lesson says run on a single check deposit.",
+            options: ["Interest, availability, finality", "Authorisation, posting, settlement, which are the three moments of a payment leaving", "Deposit, presentment, and the midnight deadline for returning the item unpaid", "Cut-off hour, banking day, and business day, which are the three counting units"],
+            correctIndex: 0,
+            explanation: "When it earns, when you may spend it, and when it is finally yours are three different questions with three different answers.",
+            sourceLessonSlug: "provisional-until-it-is-not",
+          },
+          {
+            prompt: "What kind of event is the start of interest accrual, as this lesson classifies it?",
+            options: ["A collection-side event", "A customer-side event, decided by when the customer is permitted to use the funds", "A regulatory event, fixed by the Expedited Funds Availability Act's own schedule", "A contractual event, set by the terms of the bank's own account agreement"],
+            correctIndex: 0,
+            explanation: "Interest begins not later than the business day the depositary bank receives credit for the funds, while availability is decided on the customer's side.",
+            sourceLessonSlug: "provisional-until-it-is-not",
+          },
+          {
+            prompt: "What does the lesson say the provisional-credit idea should give a reader?",
+            options: ["A reading habit", "A strategy for deciding which deposits to make and which to avoid entirely", "A basis for demanding that a bank waive its charge-back right in advance", "A method for calculating the exact day a settlement will become final"],
+            correctIndex: 0,
+            explanation: "The course gives no financial advice. Knowing which question an availability statement answers is what keeps a person from being surprised twice by one check.",
+            sourceLessonSlug: "provisional-until-it-is-not",
+          },
+          {
+            prompt: "When did the Federal Reserve's instant payment service go live?",
+            options: ["20 July 2023", "February 2010, when the Reserve Banks consolidated to a single check-processing office", "1 July 2025, when the Regulation CC dollar thresholds were most recently adjusted", "1 September 1990, the effective date printed in the availability schedule section"],
+            correctIndex: 0,
+            explanation: "The operator's own page records that date, and this course cites it and dates the reading at 28 August 2026.",
+            sourceLessonSlug: "instant-and-irrevocable",
+          },
+          {
+            prompt: "How long is the instant payment service's business day?",
+            options: ["Twenty-four hours, every day", "The same as Regulation CC's, being a calendar day other than a weekend or named date", "From the opening of the Fedwire funds service until its close on each weekday", "From the bank's cut-off hour until the same hour on the following banking day"],
+            correctIndex: 0,
+            explanation: "The service has a 24-hour business day each day of the week, including weekends and holidays.",
+            sourceLessonSlug: "instant-and-irrevocable",
+          },
+          {
+            prompt: "What does the contrast between the two definitions of business day illustrate?",
+            options: ["Defined terms must be read, not assumed", "That the instant payment service is exempt from the Expedited Funds Availability Act", "That Regulation CC's definition was amended when the service went live in 2023", "That a business day means whatever the operator of a payment system says it means"],
+            correctIndex: 0,
+            explanation: "The same two words carry opposite meanings in the two documents, which is why the course reads definitions rather than relying on ordinary usage.",
+            sourceLessonSlug: "instant-and-irrevocable",
+          },
+          {
+            prompt: "What does it mean that instant payments settle on a gross basis?",
+            options: ["Each transaction settles individually", "Each transaction is netted against the others before a single settlement is made", "Each transaction settles for the full amount without deduction of any transfer fee", "Each transaction settles only after the receiving institution confirms the beneficiary"],
+            correctIndex: 0,
+            explanation: "Nothing waits for a batch window to open, because there is no window.",
+            sourceLessonSlug: "instant-and-irrevocable",
+          },
+          {
+            prompt: "What is the trade this lesson identifies?",
+            options: ["Speed against the ability to change your mind", "Cost against reliability, since faster rails carry higher fees for the sender", "Availability against finality, since faster funds are finally settled later", "Convenience against privacy, since faster payments carry more identifying data"],
+            correctIndex: 0,
+            explanation: "A stop-payment right exists because there is an interval between agreeing to a payment and its happening. A payment that settles as it is sent has no such interval.",
+            sourceLessonSlug: "instant-and-irrevocable",
+          },
+          {
+            prompt: "Which right from Section 3 does the instant lesson set against instant settlement?",
+            options: ["The three-business-day stop payment", "The ten-day notice owed when a recurring transfer will vary in amount", "The fourteen-day window for confirming an oral stop-payment notice in writing", "The two-business-day notice that a recurring credit did or did not arrive"],
+            correctIndex: 0,
+            explanation: "That right depends on an interval existing between the agreement and the payment, which is exactly what instant settlement removes.",
+            sourceLessonSlug: "instant-and-irrevocable",
+          },
+          {
+            prompt: "What question does the lesson tell you to ask before sending a payment?",
+            options: ["Is there a window, and how long is it", "Which network will carry the payment between the two institutions involved", "Whether the receiving institution charges a fee for accepting the payment", "Whether the payment will be reported on the next periodic statement"],
+            correctIndex: 0,
+            explanation: "That question has a different answer for a check, a preauthorized debit, a card and an instant payment, and it is knowable before sending.",
+            sourceLessonSlug: "instant-and-irrevocable",
+          },
+          {
+            prompt: "Where does the course say to find your own institution's instant-payment limits and hours?",
+            options: ["Your own account documents", "The operator's published description of the service and its national participant list", "The Federal Reserve operating circular governing the automated clearing house", "The specific availability policy disclosure the bank must supply on request"],
+            correctIndex: 0,
+            explanation: "It is the same answer the course gives about the cut-off hour and the availability policy, and for the same reason.",
+            sourceLessonSlug: "instant-and-irrevocable",
+          },
+          {
+            prompt: "What does the instant lesson refuse to do?",
+            options: ["Name a service as good or bad", "Quote the operator's own description of how the service keeps time", "State the date on which the service began operating for participants", "Compare the service's business day with the one in Regulation CC"],
+            correctIndex: 0,
+            explanation: "The course does not tell a reader which rail to use. It tells them how to ask whether a window exists.",
+            sourceLessonSlug: "instant-and-irrevocable",
+          },
+          {
+            prompt: "Which of these does the instant lesson identify as changeable and therefore not asserted?",
+            options: ["Which institutions offer the service", "The number of hours in the service's business day as the operator describes it", "The date the service went live, which the operator publishes on its own page", "The fact that the service settles each transaction rather than netting a batch"],
+            correctIndex: 0,
+            explanation: "Participation, limits and competing networks all change, so the lesson dates what it says, cites the operator for two facts, and stops.",
+            sourceLessonSlug: "instant-and-irrevocable",
+          },
+          {
+            prompt: "Which rail is a payroll direct deposit?",
+            options: ["An ACH credit", "An ACH debit, because the employee's bank pulls the wages from the employer's account", "A wire transfer, because the employer orders its bank to pay a fixed amount", "An instant payment, because wages must be available on the stated payday"],
+            correctIndex: 0,
+            explanation: "The payer's side pushes the money toward the payee, which is what makes a direct deposit an electronic payment under Regulation CC.",
+            sourceLessonSlug: "six-rails-six-clocks",
+          },
+          {
+            prompt: "Which rail are most recurring bill payments?",
+            options: ["ACH debits", "ACH credits, because the payer's bank pushes the money to the biller each month", "Wire transfers, because they are unconditional orders to pay on a stated day", "Instant payments, because the biller requires funds to settle on the due date"],
+            correctIndex: 0,
+            explanation: "The payee's bank pulls under an authorisation, which is why Regulation E's preauthorized transfer rules govern them.",
+            sourceLessonSlug: "six-rails-six-clocks",
+          },
+          {
+            prompt: "Which section of this course covers what happens while a check is being collected?",
+            options: ["The provisional-credit lesson", "The lesson on the cut-off hour and when funds are considered deposited", "The lesson on instant payment and the twenty-four-hour business day", "The lesson on posting order and the arithmetic of insufficient balances"],
+            correctIndex: 0,
+            explanation: "Depositing a check begins a collection process, and the commercial code's provisional-settlement rule is what governs the credit during it.",
+            sourceLessonSlug: "six-rails-six-clocks",
+          },
+          {
+            prompt: "How does the lesson describe the categories of payment rail relative to their speeds?",
+            options: ["Categories are stable, speeds are not", "Both change often enough that neither is worth teaching in a course of this kind", "Speeds are fixed by regulation while the categories are set by private rulebooks", "Categories change with each rulebook revision while speeds are set by statute"],
+            correctIndex: 0,
+            explanation: "That is why the lesson gives two questions rather than a table of speeds.",
+            sourceLessonSlug: "six-rails-six-clocks",
+          },
+          {
+            prompt: "A customer deposits a check and spends the funds on the day they become available. The item is later dishonoured. What may happen?",
+            options: ["A charge-back", "Nothing, because the availability schedule extinguished the bank's right to recover", "The bank must pursue the drawer before it may recover anything from the depositor", "The paying bank absorbs the loss because it failed to return the item on time"],
+            correctIndex: 0,
+            explanation: "The credit was provisional. If the item is not finally paid, the bank may revoke the settlement, charge back the credit, or obtain a refund, within the code's deadlines.",
+            sourceLessonSlug: "provisional-until-it-is-not",
+          },
+          {
+            prompt: "Which of these best states why the availability schedule and the charge-back right can both be true at once?",
+            options: ["They answer different questions", "One is federal and the other is state, so the federal rule takes precedence", "The schedule applies to consumers and the charge-back right applies to businesses", "The schedule applies before an item clears and the charge-back right applies after"],
+            correctIndex: 0,
+            explanation: "One governs when funds may be used and the other governs when the settlement becomes final.",
+            sourceLessonSlug: "provisional-until-it-is-not",
+          },
+          {
+            prompt: "What is a Federal Reserve Bank operating circular, as this section uses the term?",
+            options: ["A Reserve Bank's own rulebook for a service", "A regulation issued jointly by the federal banking agencies under a statute", "A supervisory letter sent to examined institutions describing expected practices", "A published summary of the availability schedule prepared for consumers"],
+            correctIndex: 0,
+            explanation: "It is not a statute and is not published in the Code of Federal Regulations, which is precisely the point the ACH definition makes.",
+            sourceLessonSlug: "six-rails-six-clocks",
+          },
+          {
+            prompt: "Which of these payments is a bank being ordered to pay rather than asked to collect?",
+            options: ["A wire transfer", "A check deposited by its payee at a bank other than the drawee bank", "A card transaction authorised at a merchant and settled some days later", "An ACH debit pulled by a biller under a preauthorized arrangement"],
+            correctIndex: 0,
+            explanation: "The definition calls a wire an unconditional order to a bank to pay upon receipt or on a day stated in the order.",
+            sourceLessonSlug: "six-rails-six-clocks",
+          },
+          {
+            prompt: "What does the phrase \"before the time that a settlement is or becomes final\" govern in U.C.C. 4-201(a)?",
+            options: ["The period during which a credit is provisional", "The deadline by which a paying bank must return an item it has decided to dishonour", "The period during which a customer may stop payment on a check they have written", "The interval between a deposit being made and interest beginning to accrue on it"],
+            correctIndex: 0,
+            explanation: "Within that period the bank is an agent or sub-agent of the item's owner and the settlement it gave is provisional.",
+            sourceLessonSlug: "provisional-until-it-is-not",
+          },
+          {
+            prompt: "Which of the six exceptions does the provisional-credit reading describe as the judgement itself?",
+            options: ["Reasonable cause to doubt collectibility", "New accounts, because a bank judges how much history an account needs to build", "Emergency conditions, because a bank judges whether a disruption is serious enough", "Repeated overdrafts, because a bank judges whether an account's record is acceptable"],
+            correctIndex: 0,
+            explanation: "The other five turn on countable facts about the account or the item; this one is the bank's assessment of an individual item's collectibility.",
+            sourceLessonSlug: "provisional-until-it-is-not",
+          },
+          {
+            prompt: "Why does the course treat the ACH rulebook differently from Regulation E?",
+            options: ["One sets speeds, the other sets duties to you", "Because the rulebook is issued by Congress and the regulation by an agency", "Because the rulebook binds consumers directly and the regulation binds only banks", "Because the rulebook is revised annually and the regulation is revised every five years"],
+            correctIndex: 0,
+            explanation: "The consumer-facing protections in this course come from Regulation E and Regulation CC, not from any operating circular or association rulebook.",
+            sourceLessonSlug: "six-rails-six-clocks",
+          },
+          {
+            prompt: "What does the lesson mean by saying most people's intuitions about instant payment predate it?",
+            options: ["The rail is recent", "That instant payments were common long before the operator's service went live", "That consumers have long been able to stop an instant payment after sending it", "That instant payment follows the same business-day calendar as older rails"],
+            correctIndex: 0,
+            explanation: "The service went live on 20 July 2023, and its twenty-four-hour business day breaks assumptions built on rails that close overnight.",
+            sourceLessonSlug: "instant-and-irrevocable",
+          },
+          {
+            prompt: "Which of these is a fact this lesson states about the instant payment service?",
+            options: ["It settles in near real time at any hour", "It guarantees availability of funds by five in the afternoon on any business day", "It applies the same exception categories that Regulation CC applies to check holds", "It requires ten days' advance notice before a recurring payment may vary in amount"],
+            correctIndex: 0,
+            explanation: "The operator describes transfers in near real-time, at any time, any day of the year, settled on a gross basis.",
+            sourceLessonSlug: "instant-and-irrevocable",
+          },
+          {
+            prompt: "Which of these is the safest description of what this section adds to the course?",
+            options: ["Different rails, different rules", "A single ranking of payment methods by the speed at which each of them settles", "A demonstration that all electronic payments are treated identically by federal law", "A method for calculating the exact settlement date of any payment in advance"],
+            correctIndex: 0,
+            explanation: "Which rules apply depends on whether money is pushed or pulled and whether a bank is collecting or paying, not on how electronic the payment feels.",
+            sourceLessonSlug: "six-rails-six-clocks",
+          },
+          {
+            prompt: "A customer asks why their bank held a large check from a new account. Which reading makes the answer coherent?",
+            options: ["The credit was an advance", "The bank was penalising the customer for opening the account too recently", "The bank was required to hold the item until the paying bank confirmed payment", "The bank was applying the posting-order permission in the commercial code"],
+            correctIndex: 0,
+            explanation: "Both the new-account and large-deposit exceptions are about the risk of advancing funds against an item that has not been finally paid.",
+            sourceLessonSlug: "provisional-until-it-is-not",
+          },
+          {
+            prompt: "Which document does this lesson say explains the entire availability schedule, though it is not part of it?",
+            options: ["The commercial code's provisional-settlement rule", "The Expedited Funds Availability Act's five-year inflation adjustment clause", "The Federal Reserve's description of the consolidation of check-processing regions", "Regulation E's rule on notice of preauthorized credits to a consumer account"],
+            correctIndex: 0,
+            explanation: "U.C.C. 4-201(a) states that a collecting bank's settlement is provisional, which is why an availability rule has to exist at all.",
+            sourceLessonSlug: "provisional-until-it-is-not",
+          },
+          {
+            prompt: "What is the relationship between the interest clock and the availability clock on one deposit?",
+            options: ["They can start on different days", "They always start on the same day, because both are set by Regulation CC", "Interest always starts after availability, since funds must be usable to earn", "Availability always starts after interest by exactly two business days"],
+            correctIndex: 0,
+            explanation: "Interest starts when the bank receives credit for the funds, so money can be earning before it is spendable.",
+            sourceLessonSlug: "provisional-until-it-is-not",
+          },
+          {
+            prompt: "Which rail does the lesson say is outside the authorisation-then-settlement pattern?",
+            options: ["Cash", "A card transaction, which settles at the moment the merchant obtains approval", "An ACH debit, which is charged to the payer's account before it is authorised", "A wire transfer, which reserves funds before the beneficiary's bank is instructed"],
+            correctIndex: 0,
+            explanation: "Handing over currency is the payment itself, with no reservation and no later settlement between institutions.",
+            sourceLessonSlug: "six-rails-six-clocks",
+          },
+          {
+            prompt: "How many rails does this section identify?",
+            options: ["Six", "Three, being cash, check and electronic transfer of any description", "Ten, one for each category listed in Regulation CC's definitions section", "Two, being those that Regulation CC calls electronic payments and those it does not"],
+            correctIndex: 0,
+            explanation: "Cash, check, ACH credit, ACH debit, card, wire, and instant payment, with the last treated in its own lesson.",
+            sourceLessonSlug: "six-rails-six-clocks",
+          },
+          {
+            prompt: "What does the course say about the ability to stop a payment as settlement time falls?",
+            options: ["It falls with it", "It rises, because faster systems keep more detailed records of each instruction", "It is unaffected, because the stop-payment right is fixed at three business days", "It is decided by the sending institution rather than by the design of the rail"],
+            correctIndex: 0,
+            explanation: "Speed and the ability to change your mind are two ends of the same measurement in the payment system.",
+            sourceLessonSlug: "instant-and-irrevocable",
+          },
+          {
+            prompt: "Which of these does the course present as the durable half of what it says about instant payment?",
+            options: ["The operator's description of its own timekeeping", "The list of institutions currently participating in the service nationwide", "The maximum amount a participant may send in a single instant payment", "The comparison of the service with competing private instant networks"],
+            correctIndex: 0,
+            explanation: "The lesson uses two cited facts from the operator, dates the reading, and leaves participation and limits to a person's own account documents.",
+            sourceLessonSlug: "instant-and-irrevocable",
+          },
+          {
+            prompt: "Which idea from Section 1 does the instant payment lesson reach back to?",
+            options: ["The definition of a business day", "The two-hour difference between cut-off hours at branches and at machines", "The rule that deposits at a night depository count on the day of removal", "The distinction between a bill paid late and a bill left unpaid entirely"],
+            correctIndex: 0,
+            explanation: "Regulation CC's business day is a calendar day other than a weekend or ten named dates; the service's is every day, and the same words mean opposite things.",
+            sourceLessonSlug: "instant-and-irrevocable",
+          },
+          {
+            prompt: "What does the phrase \"agent or sub-agent of the owner of the item\" tell a depositor?",
+            options: ["The bank is collecting for them", "The bank has bought the item and now holds it for its own account", "The bank has guaranteed payment of the item to the depositor", "The bank may not present the item without further written instruction"],
+            correctIndex: 0,
+            explanation: "That agency relationship is why the credit is provisional and why a charge-back right exists at all.",
+            sourceLessonSlug: "provisional-until-it-is-not",
+          },
+          {
+            prompt: "A person receives an availability notice and assumes the money is now theirs to keep. Which distinction have they missed?",
+            options: ["Use against finality", "Business day against banking day when counting the availability period", "Authorisation against posting when a payment leaves the account", "Push against pull when identifying which rail carried the payment"],
+            correctIndex: 0,
+            explanation: "Availability answers when funds may be used. Finality answers when the settlement stops being provisional, and the second can come later.",
+            sourceLessonSlug: "provisional-until-it-is-not",
+          },
+          {
+            prompt: "Which of these correctly pairs a rail with the rule set that governs a consumer's protections on it?",
+            options: ["Recurring debit and Regulation E", "Payroll direct deposit and the automated clearing house association's own rulebook", "Check deposit and the Federal Reserve Bank operating circular for check services", "Wire transfer and the posting-order provision of the Uniform Commercial Code"],
+            correctIndex: 0,
+            explanation: "The authorisation, stop-payment and varying-amount rules for a preauthorized transfer come from Regulation E rather than from any rulebook.",
+            sourceLessonSlug: "six-rails-six-clocks",
+          },
+          {
+            prompt: "What is the effect of a rail having no settlement window?",
+            options: ["Nothing waits for one to open", "Payments accumulate until the operator opens the next scheduled batch window", "Institutions must net their positions before any individual payment can settle", "The availability schedule in Regulation CC applies with an extra business day"],
+            correctIndex: 0,
+            explanation: "Each transaction is processed and settled individually in near real time, at any hour on any day.",
+            sourceLessonSlug: "instant-and-irrevocable",
+          },
+        ],
+      },
+    },
     // APPEND-HERE
   ],
 };
