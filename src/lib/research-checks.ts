@@ -2816,6 +2816,163 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Any FDIC advisory or financial institution letter on prepaid and payment app balances",
     ],
   },
+
+  // ── MONEY-04 · Predatory Products, Priced ─────────────────────────────────────────────────────
+  {
+    key: "predatory-state-lending-rules-current",
+    course: "predatory-products",
+    lesson: "find-your-states-rule",
+    quote:
+      "Both statements are true right now. Neither is the national position, because there is no national position",
+    title: "Are the Florida, New York, Virginia and Georgia lending provisions still as quoted?",
+    severity: "high",
+    question:
+      "As of the date you check, do Fla. Stat. 560.404 (the 10 percent fee cap, the 500 dollar face amount, the 7-to-31-day term, the rollover ban and the 60-day grace period), N.Y. Penal Law 190.40 (criminal usury at twenty-five per centum per annum), Va. Code 6.2-2216 (36 percent simple annual on a motor vehicle title loan and its closed list of other charges) and O.C.G.A. 44-12-131 (25 percent per 30-day period for the first 90 days, 12.5 percent thereafter) still read as this course quotes them, and has any of the four been amended or repealed?",
+    claim:
+      "The course quotes all four verbatim, dates each to 28 August 2026, and uses the Florida and New York pair as its proof that there is no national rule. It prints no national rate or cap anywhere and teaches the method of finding a state's own rule instead, so a change in one of these does not invalidate the method. It does invalidate the specific worked arithmetic in Section 2, which is computed from the Florida and Georgia ceilings.",
+    stakes:
+      "State small-dollar lending statutes are the most amendment-prone material in the entire MONEY series, and this course leans on four of them to teach that the answers differ. A repealed or amended provision quoted as current would be a false statement of law shown to a learner deciding whether an offer in front of them is lawful, which is the most consequential kind of error this catalog can make.",
+    needs: [
+      "For each of the four, whether the section is still in force and whether its text has changed",
+      "The current fee cap, face-amount ceiling, term range and rollover rule in Fla. Stat. 560.404",
+      "The current rate in N.Y. Penal Law 190.40 and its offence grading",
+      "The current rate and permitted-charge list in Va. Code 6.2-2216",
+      "The current per-period ceilings in O.C.G.A. 44-12-131",
+      "The date you read each one",
+    ],
+    where: [
+      "The Florida Senate's own statute pages, flsenate.gov/Laws/Statutes",
+      "The New York State Senate's legislation pages, nysenate.gov/legislation/laws/PEN",
+      "Virginia Law, law.lis.virginia.gov, for title 6.2 chapter 22",
+      "Georgia's published code for title 44 chapter 12, and the Georgia Department of Banking and Finance",
+    ],
+  },
+  {
+    key: "predatory-sentinel-current-edition",
+    course: "predatory-products",
+    lesson: "who-is-targeted-from-the-record",
+    quote:
+      "was the most recent listed on the Commission's own report index when this course was written",
+    title: "Has the FTC published a Consumer Sentinel Network Data Book after the 2024 edition?",
+    severity: "medium",
+    question:
+      "As of the date you check, what is the most recent Consumer Sentinel Network Data Book the FTC lists on its own reports index, and what does that edition say about total reports, fraud reports, identity theft reports through IdentityTheft.gov, total reported losses, and the payment methods behind the largest reported losses? Does it still carry the caution that the data is based on unverified reports and is not a consumer survey?",
+    claim:
+      "The course states that the 2024 edition, published March 2025, was the most recent listed on the Commission's own report index when it was written on 28 August 2026, and it quotes that edition's figures with that date attached. It quotes the FTC's own caution verbatim before using any figure, and it uses the enforcement record rather than the reports as its primary evidence about who is targeted, so a newer edition changes the numbers rather than the argument.",
+    stakes:
+      "A course that names a report as the most recent when a newer one exists looks careless in exactly the place it is asking a reader to be careful about evidence. The figures themselves are secondary here, deliberately, but the claim about which edition is current is checkable and should be right.",
+    needs: [
+      "The most recent Data Book edition and its publication date, from the FTC's own reports index",
+      "That edition's totals for consumer reports, fraud reports, identity theft reports and reported losses",
+      "Whether the payment-method finding about bank transfers and cryptocurrency still holds",
+      "The exact wording of its caution about unverified reports, quoted",
+      "The date you checked",
+    ],
+    where: [
+      "ftc.gov/policy/reports, filtered to Consumer Sentinel Network",
+      "The Data Book PDF itself, for the caution and the figures",
+      "The FTC press release accompanying the current edition",
+    ],
+  },
+  {
+    key: "predatory-irs-free-preparation-thresholds",
+    course: "predatory-products",
+    lesson: "the-refund-loan-and-the-transfer",
+    quote: "89,000 dollars on the page read on **28 August 2026**",
+    title: "What are the current IRS Free File and VITA eligibility figures, and does Free File still ban RAL sales?",
+    severity: "medium",
+    question:
+      "As of the date you check, what adjusted gross income threshold applies to IRS Free File guided tax software, does Free File Fillable Forms still carry no income limit, what income figure does the VITA page state, does TCE still name people aged 60 and over, and does the Free File program still list the selling of bank products such as a refund anticipation loan among its prohibitions?",
+    claim:
+      "The course states 89,000 dollars for guided software and generally 69,000 dollars or less for VITA, both dated 28 August 2026 in the lesson, names TCE as particularly serving people aged 60 and over, and quotes the Free File prohibition on selling bank products such as a refund anticipation loan. The prohibition is the load-bearing citation, because it is the tax authority naming this course's subject and excluding it from its own free channel.",
+    stakes:
+      "The two income figures reset with the filing season, so they will be wrong within a year and the lesson dates them for exactly that reason. The prohibition is the sentence that would matter most if it changed: it is quoted as evidence that the IRS treats the product as something to keep out of a free channel, and the argument in the lesson leans on it.",
+    needs: [
+      "The current guided-software adjusted gross income threshold on the IRS Free File page",
+      "Whether Free File Fillable Forms still has no income limit",
+      "The current VITA income figure and the TCE age description",
+      "Whether the Free File benefits list still names refund anticipation loans among prohibited bank products, quoted",
+      "The date you read each page",
+    ],
+    where: [
+      "irs.gov/filing/irs-free-file-do-your-taxes-for-free",
+      "irs.gov/individuals/free-tax-return-preparation-for-qualifying-taxpayers",
+    ],
+  },
+  {
+    key: "predatory-reg-e-authority-and-parts",
+    course: "predatory-products",
+    lesson: "unauthorized-has-a-definition",
+    quote: "12 CFR part 1005",
+    title: "Is Regulation E still at 12 CFR part 1005, and are 1005.2(m), 1005.6 and 1005.11 unchanged?",
+    severity: "high",
+    question:
+      "As of the date you check, is Regulation E still codified at 12 CFR part 1005 under the same issuing authority, and do 1005.2(m), 1005.3(c), 1005.6, 1005.11 and 1005.17 still read as this course quotes them? Have the official interpretations to 1005.2(m) on a furnished access device and on a device obtained through fraud or robbery been amended? Are the corresponding Regulation Z provisions at 12 CFR 1026.2(a)(16) and 1026.12 unchanged?",
+    claim:
+      "The course quotes all of these verbatim, read on 28 August 2026, and it deliberately does not describe any agency's current footing in the present tense, for the reason MONEY-01 established and filed as its own check. The entire fifth section, which the course calls the most useful thing it teaches, is built on the 1005.2(m) definition and the machinery that attaches to it.",
+    stakes:
+      "Higher than the corresponding MONEY-01 check, because this course does not merely cite these parts, it teaches the difference between two outcomes that turn on a single definition. If a part has been redesignated the citations change even though the rights do not, and a learner sent to a rule that is not there loses the one thing this course was written to give them. If the definition or the commentary has been amended, the central lesson needs rewriting rather than renumbering.",
+    needs: [
+      "The current part number and issuing authority for Regulation E, as eCFR prints it",
+      "The current text of 1005.2(m) with its three exclusions",
+      "The current text of the official interpretations to 1005.2(m), on a furnished device and on fraud or robbery",
+      "The current liability tiers in 1005.6 and clocks in 1005.11",
+      "Whether 12 CFR 1026.2(a)(16) and 1026.12(b) and (c) are unchanged",
+      "The date you read each one",
+    ],
+    where: [
+      "eCFR, for parts 1005 and 1026 and the supplement I interpretations",
+      "The Federal Register, for any redesignation, stay or amendment",
+    ],
+  },
+  {
+    key: "predatory-mla-cap-and-coverage",
+    course: "predatory-products",
+    lesson: "one-class-congress-capped",
+    quote: "may not impose an MAPR greater than 36 percent in connection with an extension of consumer credit",
+    title: "Is the Military Lending Act cap still 36 percent, and is its coverage unchanged?",
+    severity: "medium",
+    question:
+      "As of the date you check, does 10 U.S.C. 987(b) still cap the annual percentage rate at 36 percent for covered borrowers, does 32 CFR 232.4(b) still state the same figure as an MAPR limit, are the charges 232.4(c) sweeps into the MAPR unchanged, and are the exclusions at 232.3(f) (residential mortgages, purchase-money vehicle loans, credit secured by the personal property it finances) unchanged?",
+    claim:
+      "The course quotes the statute and the rule verbatim, read on 28 August 2026, and builds a whole lesson on the fact that Congress capped this price for one named class and not for anyone else. The purchase-money exclusion is load-bearing a second time, in the title-lending lesson, because it is what separates a car loan from a loan against a car already owned.",
+    stakes:
+      "This is the course's sharpest single teaching object and it is quoted three times: in Section 1, in the title-lending lesson, and in the targeting lesson. The figure has been stable, but the Department of Defense rule's coverage has been litigated and interpreted before, and a changed exclusion would make the car-loan-against-title-loan distinction wrong rather than merely stale.",
+    needs: [
+      "The current text of 10 U.S.C. 987(b), (e) and (i)(1)",
+      "The current text of 32 CFR 232.4(b) and the charge list at 232.4(c)",
+      "The current exclusions at 32 CFR 232.3(f), quoted",
+      "The date you read each one",
+    ],
+    where: [
+      "eCFR, for 32 CFR part 232",
+      "The Office of the Law Revision Counsel or Cornell's LII, for 10 U.S.C. 987",
+      "The Federal Register, for any amendment to part 232",
+    ],
+  },
+  {
+    key: "predatory-path-act-refund-hold",
+    course: "predatory-products",
+    lesson: "a-refund-is-money-already-owed",
+    quote: "shall be made before the 15th day of the second month following",
+    title: "Does 26 U.S.C. 6402(m) still hold refunds on returns claiming the section 24(d) and section 32 credits?",
+    severity: "medium",
+    question:
+      "As of the date you check, is 26 U.S.C. 6402(m) still in force with the same date and the same two named credits, and has the IRS published anything that changes when refunds on such returns are actually issued?",
+    claim:
+      "The course quotes the subsection, names the section 24(d) and section 32 credits, and builds the whole refund-products section on the observation that federal law holds the refunds of a defined population and creates a defined window that a product is sold into. It is careful to call the hold an anti-fraud measure with a stated purpose rather than a scandal.",
+    stakes:
+      "If the hold were repealed or narrowed, the section's central mechanism would be describing a market condition that no longer exists, and the lesson's claim that the product responds to a statute rather than to chance would stop being supportable.",
+    needs: [
+      "Whether 26 U.S.C. 6402(m) is still in force and whether its date or its named credits have changed",
+      "Any IRS publication on when refunds claiming those credits are issued in the current filing season",
+      "The date you checked",
+    ],
+    where: [
+      "The Office of the Law Revision Counsel or Cornell's LII, for 26 U.S.C. 6402",
+      "irs.gov, for the current filing season's refund timing guidance",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
