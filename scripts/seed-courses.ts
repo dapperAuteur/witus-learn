@@ -232,6 +232,7 @@ import { WRITTEN_BY_HIMSELF_COURSE } from "./data/written-by-himself-course";
 import { THE_MATCH_COURSE } from "./data/the-match-course";
 import { TERRITORIES_COURSE } from "./data/territories-course";
 import { THE_COUNTY_COMMITTEE_COURSE } from "./data/the-county-committee-course";
+import { BANKING_AND_THE_UNBANKED_COURSE } from "./data/banking-and-the-unbanked-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -2295,6 +2296,44 @@ async function main() {
       seriesTitle: "The Land Warrant",
       seriesOrder: 2,
       seriesCode: "WARRANT",
+      seriesPosition: "02",
+    },
+    // MONEY-02 · "Banking, and Who Has No Bank" (Money & Property). Second course in the
+    // `personal-money` series ("Your Money, and Who Decides"), from
+    // plans/future-courses/2026-08-27-15-personal-finance-track-research.md section 4.4. Tier 0.
+    // NO migration - pnpm seed:courses.
+    //
+    // THE CATALOG HAD NO PERSONAL FINANCE AT ALL, and it said so about itself: nineteen of the
+    // fifty-one mapped jurisdictions carried a `notClaimed` entry whose stated reason was that this
+    // catalog teaches no personal finance. This course converts five of those rejections into
+    // claims (WV SS.C.38, GA SSEPF3 and SSEPF9, IL SS.EC.FL.2 and .4, TX 113.49(c)(6), WY SS12.3.4),
+    // each rewritten as SUPERSEDED rather than deleted.
+    //
+    // THE SPINE: an account is a product with a price and two gates, and both fall hardest on the
+    // smallest balances. The identity gate is 31 CFR 1020.220, which names four items and does NOT
+    // name a driver's license or a Social Security number. The second gate is the one nobody knows
+    // exists: ChexSystems and Early Warning Services are consumer reporting agencies under the Fair
+    // Credit Reporting Act, so a denied applicant holds federal rights (name of the agency, a free
+    // copy, a dispute) that the denial letter is required to tell them about.
+    //
+    // THE ALTERNATIVE-SERVICES ECONOMY IS THE SUBJECT, NOT A FOOTNOTE. Money orders, check cashing,
+    // prepaid cards and payment apps are taught as a priced market entered for reasons the FDIC
+    // itself collected, with the fee schedules dated. Credit reports and scores belong to MONEY-01
+    // and are not taught here; the credit union as an ENTITY belongs to Cooperatives.
+    //
+    // EVERY EXTERNAL FIGURE WAS READ ON 2026-08-28 AND CARRIES THAT DATE IN THE LESSON. The anchor
+    // is the 2023 FDIC National Survey (published November 2024), which is the most recent PUBLISHED
+    // edition: the survey is biennial, released in the fall of even-numbered years, and the 2025
+    // report was not out when this shipped. The course says so. The CFPB's 2024 overdraft rule is
+    // taught as NULLIFIED by Public Law 119-10 (9 May 2025), never in the present tense.
+    {
+      slug: "banking-and-the-unbanked",
+      course: BANKING_AND_THE_UNBANKED_COURSE,
+      category: "Money & Property",
+      seriesSlug: "personal-money",
+      seriesTitle: "Your Money, and Who Decides",
+      seriesOrder: 2,
+      seriesCode: "MONEY",
       seriesPosition: "02",
     },
   ]) {
