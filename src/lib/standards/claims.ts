@@ -5014,6 +5014,74 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "23 · Capstone: read your own record",
     ],
   },
+  // ══ Personal money (MONEY series) ═══════════════════════════════════════════
+  // The catalog said of itself, in nineteen jurisdiction files, that it taught no personal
+  // finance. These three claims are the first that make that sentence false, and every one of
+  // them was checked against the lesson bodies rather than the titles.
+  {
+    id: "money.consumer-deposit-accounts",
+    claim:
+      "Works a consumer deposit account from its own rules: what a deposit is, how federal deposit and share insurance is counted, and what an account costs.",
+    courseSlugs: ["banking-and-the-unbanked"],
+    lessons: [
+      // The deposit contract, the three-way insurance count (per depositor, per institution, per
+      // ownership category), the insured and not-insured product lists, and automatic coverage.
+      "1 · What a deposit account actually is",
+      // Truth in Savings 12 CFR 1030.4: disclosures before opening and on request, and the
+      // conditions under which a fee may be imposed. Minimum balance read as a price.
+      "3 · The fee schedule is a document you can demand",
+      // Regulation E 12 CFR 1005.17(b), the four-step opt-in and the transactions it does not cover.
+      "13 · Overdraft is a mechanism, and it has an on switch",
+      // The two prices of one account, and the Bank On National Account Standards as a published
+      // low-cost structure to compare against.
+      "15 · Why the cost lands where it does, and what an alternative looks like",
+    ],
+  },
+  {
+    id: "money.unbanked-and-alternative-services",
+    claim:
+      "Measures who has no bank account and why from the FDIC's own survey, and prices the nonbank services that substitute for one.",
+    courseSlugs: ["banking-and-the-unbanked"],
+    lessons: [
+      // The instrument itself: biennial, CPS supplement, and the unbanked/underbanked/fully banked
+      // definitions taught before any rate is quoted.
+      "5 · The survey that counts them, and what it counts",
+      // Figure 1.8, both columns: cited and main reasons in households' own words.
+      "6 · The reasons, in their own words",
+      // Table 1.1 and Figure 1.2: income, education, disability, race and ethnicity, and the
+      // report's finding that gaps persist at every income level.
+      "7 · The distribution is not random",
+      // Money orders and check cashing priced from USPS's own fee page and a state regulator's cap.
+      "17 · Money orders and check cashing, priced",
+      // Prepaid accounts and nonbank payment apps, with the Regulation E short form disclosure.
+      "18 · Prepaid cards and payment apps, and the disclosure on the packet",
+      // The comparison itself: predictability, availability and minimum balance, done in same units.
+      "19 · Why a reasonable person chooses the substitute",
+      // Distance as a measured fact, and teller-first access by income and education.
+      "21 · The bank desert, and who a branch closure is for",
+    ],
+  },
+  {
+    id: "money.consumer-financial-protection-mechanisms",
+    claim:
+      "Teaches the federal rules governing a consumer's dealings with a financial institution, and the recourse each one provides.",
+    courseSlugs: ["banking-and-the-unbanked"],
+    lessons: [
+      // 31 CFR 1020.220: what a bank must collect before opening, and what the rule does not say.
+      "2 · The first gate: four pieces of information",
+      // The FCRA definitions that make a deposit-screening company a consumer reporting agency.
+      "9 · The second gate: a report about you that you have never seen",
+      // 15 U.S.C. 1681m(a), and why Regulation B's statement of principal reasons does not attach
+      // to a deposit-account denial.
+      "10 · The letter that has to tell you who was consulted",
+      // 15 U.S.C. 1681j free file disclosure and 1681i reinvestigation, with their limits.
+      "11 · Getting the file, and what a dispute actually does",
+      // Public Law 119-10 and 5 U.S.C. 801(b)(2): what a disapproved rule leaves behind.
+      "14 · The rule that was made, and then unmade",
+      // The method: five documents somebody is required to produce, plus the CFPB complaint route.
+      "23 · Read your own account: what this course leaves you able to do",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));

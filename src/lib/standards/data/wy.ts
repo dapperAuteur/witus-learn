@@ -32,6 +32,9 @@
 // its column geometry and every benchmark verified to read as clean, sensible English before use.
 // Wyoming's tribal-sovereignty sub-benchmarks (the .a codes, e.g. SS12.1.1.a, SS12.1.5.a) and the
 // culture standard are published in notClaimed — this catalog does not teach them.
+// RE-FETCHED 2026-08-28 from the same WDE PDF when MONEY-02, Banking and Who Has No Bank, made
+// SS12.3.4 claimable. That benchmark had been rejected with the words "the catalog teaches no
+// financial literacy"; the rejection is rewritten as superseded rather than deleted.
 // ─────────────────────────────────────────────────────────────────────────────
 
 import { COMMON_CORE_ELA } from "../shared/common-core-ela";
@@ -73,7 +76,8 @@ export const JURISDICTION: JurisdictionFile = {
       name: "Wyoming Social Studies Content and Performance Standards",
       publisher: "Wyoming Department of Education (WDE)",
       version: "2014 with 2018 Additions · High School (Grade 12) band",
-      fetchedOn: "2026-07-19",
+      // Re-fetched 2026-08-28 from the same WDE PDF when SS12.3.4 was added.
+      fetchedOn: "2026-08-28",
       sourceUrl: WY_SS,
       adoption:
         "Wyoming's bespoke K-12 social-studies document. High-school benchmarks are coded SS12.<standard>.<benchmark> under the “Upon Graduation / Grade 12” column of a four-column grade-band table. Six content standards: (1) Citizenship, Government, and Democracy; (2) Culture and Cultural Diversity; (3) Production, Distribution, and Consumption; (4) Time, Continuity, and Change; (5) People, Places, and Environments; (6) Technology, Literacy, and Global Connections. SS12.1.5 (structures of both the U.S. and Wyoming Constitutions) is the Wyoming flagship's home. The document's Wind River / tribal-sovereignty sub-benchmarks (the .a codes) and its Culture standard are not taught by this catalog and are published in notClaimed.",
@@ -152,6 +156,20 @@ export const JURISDICTION: JurisdictionFile = {
         },
         // SS12.3.4 is NOT here. It sits in its own framework below, with its own fetch date; see
         // the comment there for why.
+        // — Added 2026-08-28 when MONEY-02 shipped. This benchmark was rejected outright in the July
+        //   2026 pass with the words "the catalog teaches no financial literacy", which was true
+        //   then; the notClaimed entry now records the supersession rather than being deleted.
+        {
+          code: "SS12.3.4",
+          text: "Explain how financial and government institutions make economic decisions (e.g., banking, investment, credit, regulation, and debt).",
+          claimIds: [
+            "money.consumer-deposit-accounts",
+            "money.consumer-financial-protection-mechanisms",
+            "money.unbanked-and-alternative-services",
+          ],
+          coverage: "partial",
+          note: "Partial, and it is the banking-and-regulation half of Wyoming's own illustrative list. HOW A FINANCIAL INSTITUTION DECIDES is taught as a mechanism rather than as a description: the identity rule it must satisfy before opening an account (31 CFR 1020.220), the deposit-screening report it consults and the federal statute that governs that report, and the fee structure it sets and must disclose. HOW A GOVERNMENT INSTITUTION DECIDES is taught from three worked cases: the FDIC and the NCUA on insurance, the CFPB writing the overdraft opt-in and prepaid disclosure rules, and Congress nullifying an agency rule under the Congressional Review Act, which is a decision about banking made by a body that is not a bank. Investment, credit and debt, the other three examples Wyoming names, are not taught here.",
+        },
         // — Standard 4: Time, Continuity, and Change (History) —
         {
           code: "SS12.4.1",

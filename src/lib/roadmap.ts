@@ -1555,6 +1555,62 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   helpers \`standardsHref\` / \`courseJurisdictions\` plus 5 isolation tests. No migration.
 
 ## Content
+- 🔧 **Banking, and Who Has No Bank** (\`content/money-02-banking\`, **Money & Property**,
+  **MONEY-02**; NO migration, **re-run \`pnpm seed:courses\`**). The second course in a NEW series,
+  \`personal-money\` ("Your Money, and Who Decides"), from
+  \`plans/future-courses/2026-08-27-15-personal-finance-track-research.md\` §4.4. MONEY-01, the
+  credit course, is authored in parallel and creates the series.
+  **The catalog had no personal finance at all, and it said so about itself.** Nineteen of the
+  fifty-one mapped jurisdictions carried a \`notClaimed\` entry whose stated reason was that this
+  catalog teaches no personal finance, and those rejections are published to teachers as loudly as
+  the claims. **This course converts five of them.** Nine standards across WV, GA, IL, TX and WY,
+  every state document re-fetched and read on 2026-08-28 before a single code was claimed, and every
+  rejection rewritten as **superseded rather than deleted**, now naming the standards still
+  unclaimed. The strongest is **TX §113.31(d)(16)(D)**, claimed in FULL: "examine the types of
+  accounts available to consumers from financial institutions and the risks, monetary costs, and
+  benefits of maintaining these accounts", which is this course's outline. Texas's standalone
+  Personal Financial Literacy elective **§113.49 gets a framework for the first time**, because until
+  now it had nothing to claim.
+  **The spine: an account is a product with a price and two gates, and both fall hardest on the
+  smallest balances.** The first gate is **31 CFR 1020.220**, which requires four things (name, date
+  of birth, address, identification number) and does NOT say driver's licence or Social Security
+  number, an ITIN being a taxpayer identification number. The FDIC's 2023 survey splits that reason
+  20.4 per cent among never-banked households against 4.8 per cent among previously banked ones, so
+  the gate falls almost entirely on people who never got in. **The second gate is the one almost
+  nobody knows exists**, and it is the lesson only this catalog would write: banks screen applicants
+  through companies like ChexSystems and Early Warning Services, those companies are **consumer
+  reporting agencies** under 15 U.S.C. 1681a(f) (which reaches credit information "or other
+  information"), check writing history is one of the five nationwide specialty categories at
+  1681a(x) by name, and a denied applicant therefore holds federal rights: the letter must name the
+  agency under 1681m(a), the file is free once every twelve months under 1681j(a)(1)(A), and
+  anything the agency cannot verify must go under 1681i(a)(5)(A).
+  **And the distinction a careful person gets wrong, which also keeps this course out of MONEY-01's
+  lane:** the right to be told the PRINCIPAL REASONS comes from Regulation B, which defines an
+  application at 12 CFR 1002.2(f) as a request for an **extension of credit**. A checking account is
+  not credit. Refused a loan and an account on the same afternoon, one person holds two different
+  sets of rights.
+  **The alternative-services economy is the subject, not a footnote.** Money orders, check cashing,
+  prepaid cards and payment apps are priced from published sources (USPS's own fee page, New York
+  DFS's Part 400.11 cap, the Regulation E prepaid short form) and the closing lesson of that section
+  refuses "people do not know better", doing the arithmetic instead: predictability, availability
+  and minimum balance decide it, and two households run identical arithmetic to opposite answers
+  because they price different risk. **The market is also shrinking**, which keeps the story honest
+  in both directions, while 66.2 per cent of unbanked households are cash only, which keeps it from
+  being triumphant.
+  **Every external figure was read on 2026-08-28 and carries that date IN the lesson**, per the
+  \`surplus-funds-basics\` posture, and not-advice is stated in prose in five separate lessons rather
+  than only in a registry. Two rules are taught as having a STATUS rather than in the present tense:
+  the CFPB's December 2024 overdraft rule was nullified by **Public Law 119-10** (9 May 2025) and
+  under **5 U.S.C. 801(b)(2)** cannot be reissued in substantially the same form; and the CFPB's own
+  $5.83bn overdraft revenue figure is a **floor**, because its published caveat excludes banks with
+  $1bn or less in assets and all credit unions. **Two things are stated as unresolved rather than
+  smoothed:** ChexSystems publishes no retention period on the pages read, and the CFPB's Ask CFPB
+  answer names two screening companies while its published list showed one.
+  6 sections, 18 teaching lessons, 6 section quizzes (66/64/69/63/72/68 serving 5) and a
+  54-question final serving 10, for **456 pooled questions**, 54 reveal cards, and **zero findings**
+  from \`pnpm audit:course banking-and-the-unbanked --spec\`. **Six research checks filed**, more
+  than any other course, which this domain makes correct rather than a smell. Deliberately **not**
+  in \`STAGED_COURSES\` yet.
 - ✅ **WELL-08 Context, Equity, and the Coaching Agreement** (\`feat/well08-context-and-equity\`,
   plans/67; PRIVATE, owner-only; **no migration**): the tenth WELL course, and the one the
   adversarial-review verification pass earned. Eight competency clusters in the 2026 NBHWC handbook

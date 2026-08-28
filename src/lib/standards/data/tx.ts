@@ -34,6 +34,13 @@
 // (texreg.sos.state.tx.us — the Secretary of State's TAC portal — has migrated to a JavaScript
 // application our tooling cannot read, so the authoritative TEA "currently in effect" PDFs were
 // used and each section's TexReg "Source" citation was checked to confirm the adopted version.)
+//
+// RE-FETCHED 2026-08-28 (ch113c.pdf again) when MONEY-02, Banking and Who Has No Bank, made the
+// first personal-finance standards claimable. Two additions in §113.31 (the Economics course's own
+// personal-financial-literacy strand at (d)(16)) and a NEW framework for §113.49, the standalone
+// Personal Financial Literacy elective, which had no framework at all because it had nothing to
+// claim. The blanket "does no personal-finance instruction" rejection is rewritten as superseded
+// rather than deleted, and it now names every statement still unclaimed.
 // ─────────────────────────────────────────────────────────────────────────────
 
 import type { JurisdictionFile } from "../types";
@@ -447,10 +454,10 @@ export const JURISDICTION: JurisdictionFile = {
       name: "TEKS for Social Studies — Economics with Emphasis on the Free Enterprise System (§113.31)",
       publisher: "Texas Education Agency (TEA) / State Board of Education (SBOE)",
       version: "One-Half Credit · Adopted 2022 · effective August 1, 2024 (19 TAC ch. 113, subch. C)",
-      fetchedOn: "2026-07-17",
+      fetchedOn: "2026-08-28",
       sourceUrl: SS_SUBCH_C,
       adoption:
-        "Texas's required Economics course is filed in the social studies department (recommended for Grade 12). The BVC series supplies three of its standards — price behavior, trade and trade barriers, and evaluating economic sources — through real commodity markets. Codes are Texas's own TEKS, transcribed verbatim.",
+        "Texas's required Economics course is filed in the social studies department (recommended for Grade 12), and it incorporates instruction in personal financial literacy by its own terms. The BVC series supplies three of its standards — price behavior, trade and trade barriers, and evaluating economic sources — through real commodity markets; two more, both in the personal-financial-literacy strand at §113.31(d)(16), were added on 2026-08-28 when the banking course shipped. Re-fetched from the TEA-published chapter PDF on that date. Codes are Texas's own TEKS, transcribed verbatim.",
       standards: [
         {
           code: "§113.31(d)(3)(B)",
@@ -476,6 +483,53 @@ export const JURISDICTION: JurisdictionFile = {
           claimIds: ["bvc.reading-ads-for-omission", "bvc.source-evaluation-modelled"],
           coverage: "partial",
           note: "Reading economic and marketing sources for bias and omission is taught throughout, and a checkable bibliography is published — but the practice is modelled by the curriculum more than assessed as student-run economic-source analysis.",
+        },
+        // — The personal-financial-literacy strand of the Economics course, re-fetched 2026-08-28
+        //   when MONEY-02 shipped. §113.31(d)(16)(D) is the closest fit to a course in this catalog
+        //   of any standard in fifty-one jurisdictions: it asks for exactly the four things the
+        //   banking course teaches, in the order it teaches them.
+        {
+          code: "§113.31(d)(16)(D)",
+          text: "examine the types of accounts available to consumers from financial institutions and the risks, monetary costs, and benefits of maintaining these accounts.",
+          claimIds: [
+            "money.consumer-deposit-accounts",
+            "money.unbanked-and-alternative-services",
+            "money.consumer-financial-protection-mechanisms",
+          ],
+          coverage: "full",
+          note: "Every element of the student expectation, from the rules rather than from a summary. The TYPES: checking, savings, money market deposit accounts and time deposits at banks and credit unions, prepaid accounts under Regulation E, and the nonbank substitutes households actually use. The RISKS: what federal deposit and share insurance covers and what it does not, why a Treasury security sits outside it, and why prepaid coverage is conditional rather than automatic. The MONETARY COSTS: the Truth in Savings disclosure a consumer may demand before opening, the minimum-balance waiver read as a price, and the overdraft opt-in and its boundary. The BENEFITS: automatic insured coverage, and the payment functions the course prices against every alternative.",
+        },
+        {
+          code: "§113.31(d)(16)(A)",
+          text: "explain the functions of financial institutions and how they affect households and businesses;",
+          claimIds: ["money.consumer-deposit-accounts", "money.unbanked-and-alternative-services"],
+          coverage: "partial",
+          note: "Partial, and it is the household half. What a bank does with a deposit, what deposit and share insurance are for, how account pricing falls on households of different balances, and what happens to a household with no account at all are all taught, with the FDIC's own survey supplying the distribution. The effect on BUSINESSES, and the capital-formation framing the surrounding knowledge-and-skills statement carries at (16)(B) and (16)(C), are not taught.",
+        },
+      ],
+    },
+
+    // ── Personal Financial Literacy §113.49 (One-Half Credit, Adopted 2016) ──
+    // NEW 2026-08-28. This whole course was rejected in the July 2026 pass with the sentence
+    // "It also does no personal-finance instruction", which was true then. One student expectation
+    // is now genuinely taught, so the framework exists rather than the course being unrepresented.
+    {
+      id: "tx-personal-financial-literacy",
+      subject: "Social Studies",
+      name: "TEKS for Social Studies — Personal Financial Literacy (§113.49)",
+      publisher: "Texas Education Agency (TEA) / State Board of Education (SBOE)",
+      version: "One-Half Credit · Adopted 2016 (19 TAC ch. 113, subch. C · August 2024 update)",
+      fetchedOn: "2026-08-28",
+      sourceUrl: SS_SUBCH_C,
+      adoption:
+        "Texas's standalone Personal Financial Literacy elective, recommended for Grades 10-12 and taught in the social studies department. Its fifteen knowledge-and-skills statements run from goal setting through credit, insurance, estate planning and paying for college, and this catalog reaches one of them. Texas states its own reading rule at §113.49(b)(7): statements containing the word \"including\" reference content that must be mastered, while those containing \"such as\" are illustrative examples. The claim below relies on that rule. Codes are Texas's own TEKS, transcribed verbatim.",
+      standards: [
+        {
+          code: "§113.49(c)(4)(C)",
+          text: "compare total costs of alternative methods of payment such as rent-to-own, store credit, installment agreements, cash, bank credit card, and debit card; and",
+          claimIds: ["money.unbanked-and-alternative-services", "money.consumer-deposit-accounts"],
+          coverage: "partial",
+          note: "Partial, and the partiality is about which methods rather than about the skill. Comparing the TOTAL cost of alternative methods of payment is the whole of the banking course's fifth section, done from published prices: a postal money order fee schedule, a state regulator's check-casher fee cap, a prepaid account's pre-acquisition short form, and the account disclosures a depository institution must provide. Because §113.49(b)(7) makes a \"such as\" list illustrative, the comparison need not use Texas's examples, and it does not: cash and debit card are covered, and prepaid cards, nonbank payment apps, money orders and check cashing stand in for the rest. Rent-to-own, store credit, installment agreements and bank credit cards are NOT taught here and belong to later courses in the same series.",
         },
       ],
     },
@@ -716,6 +770,10 @@ export const JURISDICTION: JurisdictionFile = {
     {
       heading: "Mathematics and Personal Financial Literacy — nothing.",
       body: "This catalog does no mathematics instruction, so it meets no Texas mathematics TEKS. The personal-finance half of this entry has been superseded; see the entry below.",
+    },
+    {
+      heading: "Mathematics — nothing. Personal Financial Literacy — three of many, now that banking is taught.",
+      body: "This catalog does no mathematics instruction, so it meets no Texas mathematics TEKS, and that half is unchanged. The other half used to read that the catalog does no personal-finance instruction, so neither the Personal Financial Literacy strands of Economics (§113.31(d)(15)-(20)) nor the standalone Personal Financial Literacy course (§113.49) was claimed. That changed on 2026-08-28 and the correction is recorded here rather than deleted. Now claimed: §113.31(d)(16)(D) in full (types of consumer accounts and their risks, costs and benefits), §113.31(d)(16)(A) in part (the functions of financial institutions, household half only), and §113.49(c)(4)(C) in part (comparing total costs of alternative methods of payment). Still not claimed, and named so the gap stays visible: §113.31(d)(15) (types of business ownership), (16)(B) and (16)(C) (capital formation, and interest and risk in allocating savings), (17) (investing, savings programmes, reconciling a checking account, loans, borrowing and credit scores), (18) (credit card debt, bankruptcy, insurance, charitable giving), (19) (renting against buying a home), and (20) (paying for postsecondary education). In §113.49, the other fourteen knowledge-and-skills statements are not claimed. Nothing is claimed before it is taught.",
     },
     {
       heading: "Science — Texas is NOT an NGSS state, and we did not fetch its science TEKS.",
