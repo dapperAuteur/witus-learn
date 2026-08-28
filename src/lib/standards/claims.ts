@@ -5176,23 +5176,19 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "15 · Instant is a different object, and irrevocability is the price",
     ],
   },
-  {
-    id: "money.income-timing-and-pay-frequency",
-    claim:
-      "Teaches how often wages and benefits arrive and who fixes those dates: the arithmetic of the four pay frequencies, the state statutes that set frequency and lag, and the published rule that assigns a benefit payment day.",
-    courseSlugs: ["cash-flow-timing"],
-    lessons: [
-      // 52, 26, 24 and 12; biweekly anchored to a weekday against semimonthly anchored to dates;
-      // the three-paycheck month as the same total in more pieces rather than as extra money.
-      "17 · Weekly, biweekly, semimonthly, monthly: four different years",
-      // 29 CFR 778.106 presuming a regular pay day without setting its frequency, and two worked
-      // state statutes: Cal. Lab. Code 204(a) and N.Y. Lab. Law 191(1)(a) and (1)(d).
-      "18 · Who decides how often you are paid",
-      // 20 CFR 404.1807: three birth-date brackets, three Wednesdays, and a substitution rule that
-      // moves a payment earlier, using the eleven Federal legal holidays rather than the ten dates.
-      "19 · When a benefit arrives is a rule, not a courtesy",
-    ],
-  },
+  // NO CLAIM FOR SECTION 5, AND THAT IS A RESULT RATHER THAN AN OVERSIGHT. The course's whole fifth
+  // section is income timing: the arithmetic of the four pay frequencies (52, 26, 24, 12), the state
+  // payday statutes that fix frequency and lag (29 CFR 778.106 sets a regular pay day and not its
+  // frequency; Cal. Lab. Code 204(a) and N.Y. Lab. Law 191 answer differently), and 20 CFR
+  // 404.1807's birth-date brackets for a benefit payment day. A claim was drafted for it and then
+  // DELETED, because none of the three jurisdictions whose personal-finance rejections this course
+  // converts has a standard it genuinely answers. Georgia's SSEPF2(a) is income TYPES, Texas's
+  // §113.49(c)(3) is paycheck COMPONENTS, and Louisiana's C.14.a is earning POTENTIAL; none of the
+  // three is about when income arrives or who sets that date. Attaching the section to any of them
+  // would be the widening the standards rule forbids. If a later pass fetches a jurisdiction whose
+  // strand does name income timing, the claim is easy to write back: the evidence lessons are
+  // "17 · Weekly, biweekly, semimonthly, monthly: four different years", "18 · Who decides how often
+  // you are paid", and "19 · When a benefit arrives is a rule, not a courtesy".
   {
     id: "money.deposit-timing-disclosures-and-recourse",
     claim:
