@@ -3305,9 +3305,11 @@ Lee, J. M., Jr., & Keys, S. W. (2013, September). *Land-grant but unequal: State
       section: "Section 6 · Reading it yourself",
       body: `A course that only tells you what it found is showing you half its work. Here is the other half: nine things this course could have said, and did not, with the reason each time.
 
-**1. Any acreage figure for Black-owned farmland.** You will meet a figure of roughly fifteen million acres, and a different figure of 41.4 million acres attributed to USDA's Economic Research Service for 1920. **They are not versions of the same number.** One is land **owned** and the other is land **operated**, and in 1920 Black farm operators were heavily tenants and sharecroppers rather than owners, so the two measurements diverge enormously. This course has not read the underlying census table for either, so it prints neither as its own claim, and it will not build an argument on a figure whose unit it cannot state. **Operated and owned is the whole story, and anyone who repeats one without saying which has not checked.**
+**1. Any acreage figure for Black-owned farmland.** You will meet a figure of roughly fifteen million acres, and a different figure of 41.4 million acres attributed to USDA's Economic Research Service for 1920. **They are not versions of the same number.** One is land **owned** and the other is land **operated**, and in 1920 Black farm operators were heavily tenants and sharecroppers rather than owners, so the two measurements diverge enormously. This course did not read the underlying census table for either, so it prints neither as its own claim, and it will not build an argument on a figure whose unit it cannot state. **Operated and owned is the whole story, and anyone who repeats one without saying which has not checked.**
 
-**2. A count of Black farm operators in 1920.** A very precise-looking figure circulates. Precision is not provenance. This course has not opened the census volume, so it does not print the count.
+**And this is what a ledger is for.** WARRANT-02 opened the volume, and the answer was better than either circulating figure: **acres owned was never collected.** The 1920 enumerator's schedule asked tenure as yes-or-no questions and acreage only once, split by land use, so a part owner's owned and rented ground were never separated. The fifteen million figure turns out to be a bracket for the census's **"colored"** category, which is not the same population as its **"Negro"** category. Go to that course for the tables and the page numbers.
+
+**2. A count of Black farm operators in 1920.** A very precise-looking figure circulates. Precision is not provenance. This course did not open the census volume, so it does not print the count. **WARRANT-02 did, and the circulating figure is right**: it is in Volume V, chapter V, Table 4, at page 298, and the owner, manager and tenant rows sum exactly to it.
 
 **3. Anything at all about Pigford v. Glickman.** The USDA discrimination litigation belongs to WARRANT-02, where it can be taught with the settlement's own structure and both directions of criticism. And there is a hard rule attached to it: **a widely circulated allegation of fraud in the Pigford claims process may not be reproduced in any form** unless it can be traced to a named source, in a named venue, on stated evidence, with the responses named. Repeating an unsourced fraud allegation about Black claimants would be a serious failure, and half a treatment is worse than none.
 
@@ -3327,7 +3329,7 @@ Lee, J. M., Jr., & Keys, S. W. (2013, September). *Land-grant but unequal: State
 
 **Why the ledger exists.** Every item above is something a confident sentence could have covered, and every confident sentence would have made this course feel more complete and be less true. **The refusals are not the footnotes of the argument. They are the reason to believe the rest of it.**
 
-:::reveal Why does this course print no acreage figure for Black-owned farmland? ||| Because the circulating figures measure different things, land owned against land operated, and this course has not read the underlying census table for either.
+:::reveal Why does this course print no acreage figure for Black-owned farmland? ||| Because the circulating figures measure different things, land owned against land operated, and this course did not read the underlying census table for either; WARRANT-02 later did, and found that acres owned was never collected at all.
 
 :::reveal What is the hard rule this course states about the Pigford fraud allegation? ||| It may not be reproduced in any form unless traced to a named source in a named venue on stated evidence, with the responses named.
 
@@ -3473,7 +3475,7 @@ Congressional Research Service. (2021, June 15). *1890 land-grant universities: 
             prompt: "Why does this course print no acreage figure for Black-owned farmland?",
             options: ["Owned and operated are different measurements", "Because the subject belongs to a different catalog entirely", "Because the census stopped recording the figure after 1920", "Because the sources agree and the figure adds nothing"],
             correctIndex: 0,
-            explanation: "The circulating figures measure different things and this course has read the underlying census table for neither.",
+            explanation: "The circulating figures measure different things and this course read the underlying census table for neither; WARRANT-02 read them and found acres owned was never collected.",
             sourceLessonSlug: "what-this-course-refused",
           },
           {
@@ -3487,7 +3489,7 @@ Congressional Research Service. (2021, June 15). *1890 land-grant universities: 
             prompt: "What does this course say about a very precise-looking count of 1920 Black farm operators?",
             options: ["Precision is not provenance", "Precision indicates the figure was read from a census table", "The figure is accurate but belongs in a different course", "The figure has been superseded by later recounts"],
             correctIndex: 0,
-            explanation: "This course has not opened the census volume, so it does not print the count regardless of how exact it looks.",
+            explanation: "This course did not open the census volume, so it did not print the count regardless of how exact it looked; WARRANT-02 opened it and the figure holds.",
             sourceLessonSlug: "what-this-course-refused",
           },
           {
@@ -4314,7 +4316,7 @@ Congressional Research Service. (2021, June 15). *1890 land-grant universities: 
             prompt: "Why does this course print no acreage figure for Black-owned farmland?",
             options: ["Owned and operated are different measurements", "Because the subject belongs to a different catalog", "Because the census stopped recording it after 1920", "Because every published figure agrees and adds nothing"],
             correctIndex: 0,
-            explanation: "This course has read the underlying census table for neither figure, and the difference between the two units is the whole story.",
+            explanation: "This course read the underlying census table for neither figure, and the difference between the two units is the whole story; WARRANT-02 settled it.",
             sourceLessonSlug: "what-this-course-refused",
           },
           {
