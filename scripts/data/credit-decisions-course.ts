@@ -688,5 +688,611 @@ So the shape is: you apply, a decision happens, and if the decision meets the de
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 2 — What is in the file, and who may look
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "what-may-appear-and-for-how-long",
+      title: "5 · What may appear in the file, and for how long",
+      section: "Section 2 · What is in the file, and who may look",
+      body: `The file is not a permanent record. Congress put a clock on most of it, and the clock is the part people are least likely to know they have.
+
+**The exclusion list, in the statute's own words.** The Fair Credit Reporting Act says:
+
+> "Except as authorized under subsection (b), no consumer reporting agency may make any consumer report containing any of the following items of information: (1) Cases under title 11 or under the Bankruptcy Act that, from the date of entry of the order for relief or the date of adjudication, as the case may be, antedate the report by more than 10 years. (2) Civil suits, civil judgments, and records of arrest that, from date of entry, antedate the report by more than seven years or until the governing statute of limitations has expired, whichever is the longer period. (3) Paid tax liens which, from date of payment, antedate the report by more than seven years. (4) Accounts placed for collection or charged to profit and loss which antedate the report by more than seven years. (5) Any other adverse item of information, other than records of convictions of crimes which antedates the report by more than seven years." (15 U.S.C. § 1681c, n.d.)
+
+**Read paragraph (5) twice.** It is a catch-all: *any other adverse item*, seven years. The exceptions are narrow and they are named. And note what is carved out of the seven-year rule: **records of convictions of crimes**, which the statute does not put a clock on at all.
+
+**Three details that change how the list reads.**
+
+First, **the clock starts from a stated event, not from today**. A civil judgment runs from date of entry. A paid tax lien runs from date of payment. A collection account runs from the account's own date. So the useful question about an old item is never "how long has this been on here", it is "what date is this measured from, and is that date right".
+
+Second, **the seven-year limit for civil suits and judgments runs to the longer of seven years or the expiry of the governing statute of limitations**. The statute of limitations is state law, so this is one of the places where a national summary would be wrong and the method is to find your own state's rule.
+
+Third, **paragraph (6) is about medical providers**, and it restricts the name, address and telephone number of a medical information furnisher unless the identifying details are coded so that the provider and the nature of the service cannot be inferred by anyone other than the consumer (15 U.S.C. § 1681c, n.d.). Whether particular medical debts appear at all, as opposed to how the provider is named, has moved repeatedly through both voluntary industry changes and rulemaking, so this course states the statutory text and nothing about the current practice. **Checked 28 August 2026; verify before relying on any claim about what the agencies currently report.**
+
+**Who puts the items there.** The parties supplying information are furnishers, and the Act binds them directly:
+
+> "A person shall not furnish any information relating to a consumer to any consumer reporting agency if the person knows or has reasonable cause to believe that the information is inaccurate." (15 U.S.C. § 1681s-2, n.d.)
+
+**That is a duty on the creditor, not on the agency.** It matters because the agency did not originate most of what is in your file. It bought it. Section 5 shows what happens when you dispute an item, and the answer runs back down this same chain to the furnisher.
+
+**The practical shape.** A file is a set of dated items, most of which expire, supplied by parties who are forbidden to supply what they know to be wrong. Every one of those three properties is something you can check against a copy of the file itself.
+
+:::reveal How long may a case under title 11 antedate a consumer report, under the FCRA's exclusion list? ||| Ten years, measured from the date of entry of the order for relief or the date of adjudication.
+
+:::reveal What is the FCRA's catch-all period for any other adverse item of information? ||| Seven years, with records of convictions of crimes carved out of that limit.
+
+:::reveal What does the FCRA forbid a furnisher to do? ||| Furnish information it knows, or has reasonable cause to believe, is inaccurate.
+
+## Vocabulary
+- **Exclusion list**: the FCRA's enumeration at section 1681c(a) of items a consumer reporting agency may not include in a report once they are older than a stated period.
+- **Antedate**: to precede in time. The statute measures each item from a specified event, such as date of entry or date of payment, rather than from the date of the report.
+- **Charged to profit and loss**: an account the creditor has written off as a loss, which the statute puts on the same seven-year clock as an account placed for collection.
+- **Medical information furnisher**: a supplier of medical information whose identifying details the statute restricts unless coded so the provider and service cannot be inferred.
+
+## Sources
+15 U.S.C. § 1681c. (n.d.). *Requirements relating to information contained in consumer reports*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1681c
+
+15 U.S.C. § 1681s-2. (n.d.). *Responsibilities of furnishers of information to consumer reporting agencies*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1681s-2`,
+    },
+    {
+      slug: "permissible-purpose",
+      title: "6 · Who is allowed to look, and the four words that end the list",
+      section: "Section 2 · What is in the file, and who may look",
+      body: `Anyone who wants to see your file has to have a reason the statute recognises. Not a good reason. A listed one.
+
+**The list, and how it closes.** The FCRA opens the section with a sentence that does the whole job:
+
+> "Subject to subsection (c), any consumer reporting agency may furnish a consumer report under the following circumstances and no other" (15 U.S.C. § 1681b, n.d.)
+
+**And no other.** That is a closed list, which is a different legal object from a list of examples. If a purpose is not on it, the agency may not furnish the report for that purpose, however commercially sensible the request might be.
+
+**What is on the list.** The circumstances include a court order or a grand jury subpoena; the written instructions of the consumer the report is about; and, in the paragraph that carries most ordinary business, a person the agency has reason to believe:
+
+> "(A) intends to use the information in connection with a credit transaction involving the consumer on whom the information is to be furnished and involving the extension of credit to, or review or collection of an account of, the consumer; or (B) intends to use the information for employment purposes; or (C) intends to use the information in connection with the underwriting of insurance involving the consumer; or (D) intends to use the information in connection with a determination of the consumer's eligibility for a license or other benefit granted by a governmental instrumentality required by law to consider an applicant's financial responsibility or status" (15 U.S.C. § 1681b, n.d.)
+
+The same paragraph adds a potential investor, servicer or current insurer assessing an existing credit obligation, and a residual limb for a person who "otherwise has a legitimate business need for the information" either "in connection with a business transaction that is initiated by the consumer" or "to review an account to determine whether the consumer continues to meet the terms of the account" (15 U.S.C. § 1681b, n.d.). Separate paragraphs cover child-support enforcement agencies on a certification, state plan administrators setting a support award, and the deposit and credit-union insurers acting as conservator or receiver.
+
+**Three things worth noticing, because they are counter-intuitive.**
+
+First, **a credit transaction is not the only door**. Employment and insurance underwriting are separate listed purposes, so a report may be pulled about you by parties who are not lending you anything.
+
+Second, **the legitimate-business-need limb is narrower than it sounds**. It is not "any business that would find this useful". It reaches a transaction *the consumer initiated*, or a review of an account the consumer already holds.
+
+Third, **you can supply the purpose yourself**. The list includes furnishing "in accordance with the written instructions of the consumer to whom it relates" (15 U.S.C. § 1681b, n.d.), which is the door your own request walks through.
+
+**Why the closed list is the hinge of this course.** It means the file is not public. It also means that when a party you did not expect has seen your file, the question is answerable: which listed circumstance did they claim, and did it apply. A right that resolves into a specific question is a right you can actually use.
+
+:::reveal What four words close the FCRA's list of circumstances in which a consumer report may be furnished? ||| And no other. The list is closed rather than illustrative.
+
+:::reveal Name two listed purposes that are not credit transactions. ||| Employment purposes, and the underwriting of insurance involving the consumer. A licence or benefit determination by a government instrumentality also qualifies.
+
+:::reveal How does a consumer's own request for their file fit the permissible-purpose list? ||| Through the paragraph allowing furnishing in accordance with the written instructions of the consumer to whom the report relates.
+
+## Vocabulary
+- **Permissible purpose**: one of the circumstances listed at 15 U.S.C. section 1681b(a) under which, and under no other, a consumer reporting agency may furnish a report.
+- **Closed list**: an enumeration that excludes anything not named, as opposed to a list of examples that admits similar cases.
+- **Legitimate business need**: the residual permissible purpose, limited to a transaction initiated by the consumer or a review of an account the consumer already holds.
+- **Account review**: the listed purpose under which an existing creditor may pull a report to determine whether the consumer continues to meet the terms of the account.
+
+## Sources
+15 U.S.C. § 1681b. (n.d.). *Permissible purposes of consumer reports*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1681b
+
+15 U.S.C. § 1681a. (n.d.). *Definitions; rules of construction*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1681a`,
+    },
+    {
+      slug: "the-file-that-does-not-exist",
+      title: "7 · The file that does not exist",
+      section: "Section 2 · What is in the file, and who may look",
+      body: `Everything so far assumes there is a file. For a large number of people there is not, or there is one too thin to model, and that is a different problem with a different history.
+
+**What it is, mechanically.** A scoring model is built on observed repayment behaviour. If nothing about you has been furnished, or too little has, the model has nothing to work on and returns no score rather than a bad one. **An absent file is not a clean record.** It reads to an automated decision as an absence of evidence, and an automated decision that cannot price you will usually decline you or price you as though you were the worst case it can imagine.
+
+**Who ends up there, and why it is structural.** Files are built from what furnishers report. Furnishers report accounts. So a person who has paid rent on time for twenty years, in cash, to a landlord who reports nothing, has twenty years of evidence that generates no record at all. The evidence exists. The channel that would carry it does not.
+
+**This catalog already teaches what people do about that.** *Financing Without Access* states the through-line in a sentence: **when the capital system excludes you, you invent an entity.** It teaches the fraternal benefit society, the building and loan association, the rotating savings and credit association, and the Islamic-finance instruments, and it gives the reader a procedure rather than a list: **ask which door was closed, what pool replaced it, and who bears the risk.**
+
+**Run that procedure on the thin file and it produces the whole analysis.** Which door was closed: the mainstream credit market, which cannot price an applicant it has no data about. What pool replaced it: informal lending, a rotating fund, a mutual society, a cosigner, or a product priced for people the model cannot see. Who bears the risk: in the informal case, the members themselves, which is why those institutions are governed by relationships rather than by files.
+
+**And the gate can be operated deliberately.** *The County Committee* teaches the federal farm version: three individuals residing in the county determined both eligibility and the limits of credit to be extended, and the standard they applied asked in statute whether the applicant had the character, industry, and ability to carry out the proposed operations. A gate staffed by neighbours applying a character test is a very different object from a model with no data, but they fail in the same direction, and the person on the wrong side of either one has no next lender to go to.
+
+**What this course can and cannot say about it.** It can say the mechanism, because the mechanism is documented and does not move. It cannot tell you the current share of adults with no file or a thin one, because that is a measured figure with a publication cycle and this course prints no undated numbers. If you need that figure, it comes from the agency that publishes it, with the year attached, and you should read the year.
+
+**The lesson to carry into Section 3.** The score is built from the file. So everything true about the file, including its absence, is true about the score before the model does any work at all.
+
+:::reveal Why does an absent credit file produce no score rather than a low one? ||| Because a scoring model is built on observed repayment behaviour, so with nothing furnished it has nothing to model.
+
+:::reveal What procedure does Financing Without Access give for reading any exclusion? ||| Ask which door was closed, what pool replaced it, and who bears the risk.
+
+:::reveal Why can twenty years of on-time rent produce no credit record at all? ||| Because files are built from what furnishers report, and a landlord who reports nothing supplies no channel for the evidence.
+
+## Vocabulary
+- **Thin file**: a consumer file holding too few furnished items for a scoring model to produce a result.
+- **Credit invisibility**: the condition of having no consumer file at all, which an automated decision reads as absence of evidence rather than as a good record.
+- **Furnisher channel**: the reporting relationship through which a payment history becomes a file entry; without it, the payment history exists and the record does not.
+- **Substitute institution**: the pool that forms when the mainstream channel is closed, taught at length in Financing Without Access as the fraternal society, the building and loan, and the rotating savings association.
+
+## Sources
+15 U.S.C. § 1681a. (n.d.). *Definitions; rules of construction*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1681a
+
+15 U.S.C. § 1681g. (n.d.). *Disclosures to consumers*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1681g
+
+7 U.S.C. § 1922. (n.d.). *Persons eligible for real estate loans*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title7-section1922&num=0&edition=prelim`,
+    },
+    {
+      slug: "quiz-the-file",
+      title: "8 · Knowledge check: what is in the file, and who may look",
+      section: "Section 2 · What is in the file, and who may look",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "Under the FCRA's exclusion list, how far back may a case under title 11 appear in a consumer report?",
+            options: ["10 years", "Seven years, the same period the statute applies to accounts placed for collection or charged off", "Fifteen years, because a bankruptcy is a court proceeding rather than an ordinary credit event", "Indefinitely, because the statute treats a public court record as permanently reportable"],
+            correctIndex: 0,
+            explanation: "The limit runs from the date of entry of the order for relief or the date of adjudication, as the case may be.",
+            sourceLessonSlug: "what-may-appear-and-for-how-long",
+          },
+          {
+            prompt: "What is the FCRA's catch-all limit for any other adverse item of information?",
+            options: ["Seven years", "Ten years, matching the period the statute sets for cases under title 11 or the Bankruptcy Act", "Five years, after which the agency must delete the item whether or not the consumer disputes it", "Three years, measured from the last activity the furnisher reported on the account"],
+            correctIndex: 0,
+            explanation: "Paragraph (5) is a catch-all set at seven years, and its only carve-out is records of convictions of crimes.",
+            sourceLessonSlug: "what-may-appear-and-for-how-long",
+          },
+          {
+            prompt: "Which category does the FCRA's seven-year catch-all expressly carve out?",
+            options: ["Records of criminal convictions", "Judgments entered by a federal court rather than by a court of a State or territory", "Debts owed to an agency or instrumentality of the United States government", "Items a consumer has previously disputed and which survived the agency's reinvestigation"],
+            correctIndex: 0,
+            explanation: "Paragraph (5) reads any other adverse item of information, other than records of convictions of crimes.",
+            sourceLessonSlug: "what-may-appear-and-for-how-long",
+          },
+          {
+            prompt: "From what event does the FCRA measure the reporting period for a paid tax lien?",
+            options: ["Date of payment", "The date the taxing authority first recorded the lien in the county's public records", "The date the report is furnished, counting backwards through the consumer's whole file", "The date the consumer first disputed the item with the consumer reporting agency"],
+            correctIndex: 0,
+            explanation: "Paragraph (3) sets seven years from date of payment for a paid tax lien.",
+            sourceLessonSlug: "what-may-appear-and-for-how-long",
+          },
+          {
+            prompt: "From what event does the FCRA measure the period for civil suits, civil judgments and records of arrest?",
+            options: ["Date of entry", "The date on which the underlying obligation or the alleged offence actually occurred", "The date the consumer reporting agency first received the item from a furnisher", "The date the governing statute of limitations began to run under the relevant State's law"],
+            correctIndex: 0,
+            explanation: "Paragraph (2) measures from date of entry, and runs for the longer of seven years or the expiry of the governing statute of limitations.",
+            sourceLessonSlug: "what-may-appear-and-for-how-long",
+          },
+          {
+            prompt: "For civil suits and judgments, which period does the FCRA apply when the two candidates differ?",
+            options: ["The longer period", "The shorter period, so the consumer receives the benefit of whichever clock expires first", "Seven years in every case, with the statute of limitations relevant only to enforcement", "The period the State in which the consumer resides has elected under a federal opt-in"],
+            correctIndex: 0,
+            explanation: "The statute reads more than seven years or until the governing statute of limitations has expired, whichever is the longer period.",
+            sourceLessonSlug: "what-may-appear-and-for-how-long",
+          },
+          {
+            prompt: "Why does the lesson say a national summary of the civil-judgment period would be wrong?",
+            options: ["Limitations periods are State law", "Because the federal period was repealed and each agency now sets its own retention policy", "Because judgments are reported only in the State where they were entered and nowhere else", "Because the period depends on the amount of the judgment rather than on the date of entry"],
+            correctIndex: 0,
+            explanation: "The governing statute of limitations is State law, so the method is to find your own State's rule rather than to trust a table.",
+            sourceLessonSlug: "what-may-appear-and-for-how-long",
+          },
+          {
+            prompt: "The lesson says the useful question about an old item is never how long it has been there. What is it instead?",
+            options: ["What date is it measured from", "Which of the three nationwide agencies received the item first and on what terms", "Whether the furnisher is still in business and able to answer a reinvestigation request", "How many times the consumer has already disputed the item without obtaining a deletion"],
+            correctIndex: 0,
+            explanation: "Each item runs from a stated event, so the right question is what date is this measured from, and is that date right.",
+            sourceLessonSlug: "what-may-appear-and-for-how-long",
+          },
+          {
+            prompt: "What does the FCRA restrict about a medical information furnisher that has notified the agency of its status?",
+            options: ["Its name, address and telephone number", "The dollar amount of any balance the provider reports as owed by the consumer", "The date on which the underlying medical service was supplied to the consumer", "The identity of the insurer that declined to pay the provider's original charge"],
+            correctIndex: 0,
+            explanation: "Paragraph (6) restricts those identifying details unless they are coded so the provider and the nature of the service cannot be inferred by anyone but the consumer.",
+            sourceLessonSlug: "what-may-appear-and-for-how-long",
+          },
+          {
+            prompt: "Why does this course refuse to say what the agencies currently do about medical debt generally?",
+            options: ["It has moved repeatedly", "Because the statute expressly forbids an educational publisher from describing agency practice", "Because medical debt is governed by State law and no national statement could be accurate", "Because the agencies treat their reporting policies as trade secrets and publish nothing"],
+            correctIndex: 0,
+            explanation: "Both voluntary industry changes and rulemaking have moved, so the lesson states the statutory text and dates its check at 28 August 2026.",
+            sourceLessonSlug: "what-may-appear-and-for-how-long",
+          },
+          {
+            prompt: "Which party does 15 U.S.C. section 1681s-2 bind against furnishing information it knows to be inaccurate?",
+            options: ["The furnisher", "The consumer reporting agency, which must verify each item before adding it to a file", "The user of the report, which must confirm accuracy before acting on any adverse item", "The consumer, who must correct the record before applying for any further credit"],
+            correctIndex: 0,
+            explanation: "The duty runs to the person furnishing the information, most often the creditor the consumer actually dealt with.",
+            sourceLessonSlug: "what-may-appear-and-for-how-long",
+          },
+          {
+            prompt: "What is the standard of knowledge in the furnisher's accuracy duty?",
+            options: ["Knows or has reasonable cause to believe", "Actual knowledge only, so a furnisher that merely suspects an error commits no violation", "Strict liability, so any inaccuracy is a violation whatever the furnisher knew or believed", "Gross negligence, a standard the statute defines separately in its definitions section"],
+            correctIndex: 0,
+            explanation: "The prohibition applies where the person knows or has reasonable cause to believe that the information is inaccurate.",
+            sourceLessonSlug: "what-may-appear-and-for-how-long",
+          },
+          {
+            prompt: "Why does the lesson stress that the agency did not originate most of what is in a file?",
+            options: ["It bought it", "Because the agency is legally immune from any claim arising out of a furnisher's error", "Because a consumer may only dispute an item with the party that originally created it", "Because the agency is required to identify the original creditor on the face of the report"],
+            correctIndex: 0,
+            explanation: "The chain runs back to the furnisher, which is why a dispute reaches the furnisher too, as Section 5 shows.",
+            sourceLessonSlug: "what-may-appear-and-for-how-long",
+          },
+          {
+            prompt: "The lesson summarises a file as a set of dated items with which three properties?",
+            options: ["Dated, expiring, and supplied by bound parties", "Complete, verified at the point of entry, and identical across all three nationwide agencies", "Confidential, immune from correction, and available only through a paid subscription", "Permanent, sourced from public records, and assembled without any input from creditors"],
+            correctIndex: 0,
+            explanation: "Most items expire on a stated clock, and the parties supplying them are forbidden to supply what they know to be wrong.",
+            sourceLessonSlug: "what-may-appear-and-for-how-long",
+          },
+          {
+            prompt: "What does the FCRA say about accounts placed for collection or charged to profit and loss?",
+            options: ["Seven years", "Ten years, because a charge-off is a formal accounting event comparable to a bankruptcy", "They may be reported until the debt is paid, whenever that happens to occur", "They may not be reported at all once the original creditor has sold the account"],
+            correctIndex: 0,
+            explanation: "Paragraph (4) puts them on the same seven-year clock as the statute's other ordinary adverse items.",
+            sourceLessonSlug: "what-may-appear-and-for-how-long",
+          },
+          {
+            prompt: "How does 15 U.S.C. section 1681c(a) open?",
+            options: ["No agency may make a report containing", "Every agency shall include the following items in each report it furnishes to a user", "A consumer may request the removal of the following items at any time without charge", "A furnisher shall verify the following items before supplying them to any agency"],
+            correctIndex: 0,
+            explanation: "It is a prohibition on the agency, expressed as a list of items a consumer report may not contain once they are stale.",
+            sourceLessonSlug: "what-may-appear-and-for-how-long",
+          },
+          {
+            prompt: "The lesson calls one FCRA paragraph a catch-all. Which numbered paragraph of section 1681c(a) is it?",
+            options: ["Paragraph (5)", "Paragraph (1), the one that sets the ten-year limit for cases under title 11", "Paragraph (6), the one that restricts the naming of a medical information furnisher", "Paragraph (2), the one governing civil suits, civil judgments and records of arrest"],
+            correctIndex: 0,
+            explanation: "It reaches any other adverse item of information not already named, at seven years.",
+            sourceLessonSlug: "what-may-appear-and-for-how-long",
+          },
+          {
+            prompt: "What does the lesson say the clock on most file items means for a consumer?",
+            options: ["The file is not permanent", "That a consumer may reset any item's clock by making a single payment on the account", "That an agency must notify the consumer in writing on the day each item expires", "That an expired item may still be furnished if the user certifies a legitimate business need"],
+            correctIndex: 0,
+            explanation: "Congress put a clock on most of it, and that clock is the part people are least likely to know they have.",
+            sourceLessonSlug: "what-may-appear-and-for-how-long",
+          },
+          {
+            prompt: "Which sentence in 15 U.S.C. section 1681b(a) makes the permissible-purpose list closed?",
+            options: ["And no other", "Subject to the limitations set out in the regulations prescribed by the Bureau from time to time", "Provided the user certifies its purpose in writing before the report is furnished to it", "Except where a court of competent jurisdiction has ordered otherwise in a particular case"],
+            correctIndex: 0,
+            explanation: "The opening reads under the following circumstances and no other, which excludes anything not named.",
+            sourceLessonSlug: "permissible-purpose",
+          },
+          {
+            prompt: "What is the difference between a closed list and a list of examples, as the lesson uses the terms?",
+            options: ["A closed list excludes what it omits", "A closed list may be extended by an agency, while a list of examples may be extended only by Congress", "A closed list applies to consumers, while a list of examples applies to users of the report", "A closed list is published in the statute, while a list of examples appears only in the regulation"],
+            correctIndex: 0,
+            explanation: "If a purpose is not on a closed list, the agency may not furnish for that purpose however sensible the request looks.",
+            sourceLessonSlug: "permissible-purpose",
+          },
+          {
+            prompt: "Which of these is a listed permissible purpose under 15 U.S.C. section 1681b(a)?",
+            options: ["Employment purposes", "Marketing a product the consumer has never expressed any interest in receiving", "Assessing whether a neighbour is a suitable person to admit to a residents' association", "Compiling a public directory of consumers ranked by their repayment behaviour"],
+            correctIndex: 0,
+            explanation: "The statute names use of the information for employment purposes as one of the listed circumstances.",
+            sourceLessonSlug: "permissible-purpose",
+          },
+          {
+            prompt: "Insurance appears in the permissible-purpose list in connection with what activity?",
+            options: ["Underwriting", "Paying a claim the consumer has already submitted under an existing policy", "Marketing a new policy to a consumer who has not applied for any coverage", "Investigating whether an insured consumer has misstated a material fact after a loss"],
+            correctIndex: 0,
+            explanation: "The listed purpose reaches use of the information in connection with the underwriting of insurance involving the consumer.",
+            sourceLessonSlug: "permissible-purpose",
+          },
+          {
+            prompt: "The licence-or-benefit permissible purpose applies to a governmental instrumentality only in one circumstance. Which?",
+            options: ["It is required by law to consider financial responsibility", "It has obtained the written consent of the applicant before requesting the report", "It is acting under a court order issued by a judge of a court of competent jurisdiction", "It certifies that no other source of the information is reasonably available to it"],
+            correctIndex: 0,
+            explanation: "The paragraph reaches a determination of eligibility for a licence or other benefit granted by a governmental instrumentality required by law to consider an applicant's financial responsibility or status.",
+            sourceLessonSlug: "permissible-purpose",
+          },
+          {
+            prompt: "The legitimate-business-need limb reaches a business transaction in what condition?",
+            options: ["Initiated by the consumer", "Concluded within the previous twelve months between the same two parties", "Approved in advance by the consumer reporting agency furnishing the report", "Valued above a threshold the Bureau sets by regulation each calendar year"],
+            correctIndex: 0,
+            explanation: "The residual limb reaches a business transaction that is initiated by the consumer, which is much narrower than any business that would find the report useful.",
+            sourceLessonSlug: "permissible-purpose",
+          },
+          {
+            prompt: "What is the second branch of the legitimate-business-need limb?",
+            options: ["Account review", "A collections action brought against a consumer by a party other than the original creditor", "A marketing review to decide which consumers should receive a firm offer of credit", "A background investigation into a consumer applying to rent residential property"],
+            correctIndex: 0,
+            explanation: "It permits review of an account to determine whether the consumer continues to meet the terms of the account.",
+            sourceLessonSlug: "permissible-purpose",
+          },
+          {
+            prompt: "Under which listed circumstance does a consumer's own request for their file fall?",
+            options: ["Written instructions of the consumer", "The legitimate business need limb, since obtaining a file is a transaction the consumer initiates", "The court order limb, because a consumer may compel disclosure by application to a court", "The account review limb, since the consumer is reviewing an account they already hold"],
+            correctIndex: 0,
+            explanation: "The statute permits furnishing in accordance with the written instructions of the consumer to whom the report relates.",
+            sourceLessonSlug: "permissible-purpose",
+          },
+          {
+            prompt: "Which judicial process is named in the first paragraph of the permissible-purpose list?",
+            options: ["A court order or grand jury subpoena", "A civil deposition subpoena issued by counsel in a private lawsuit between two parties", "A search warrant issued on probable cause by a magistrate judge of a federal district court", "A summons issued by a State administrative tribunal in a licensing proceeding"],
+            correctIndex: 0,
+            explanation: "The paragraph names the order of a court having jurisdiction, a grand jury subpoena, and two specific statutory subpoenas.",
+            sourceLessonSlug: "permissible-purpose",
+          },
+          {
+            prompt: "A child support enforcement agency's request under the list requires what from the requester?",
+            options: ["A certification", "A court order entered in the underlying support proceeding before the request is made", "The written consent of the parent whose report is being requested by the agency", "Payment of a statutory fee to the consumer reporting agency furnishing the report"],
+            correctIndex: 0,
+            explanation: "The paragraph requires the person making the request to certify the purpose, the establishment of parentage, and that the report will be kept confidential.",
+            sourceLessonSlug: "permissible-purpose",
+          },
+          {
+            prompt: "Which two federal insurers appear by name in the permissible-purpose list?",
+            options: ["The FDIC and the NCUA", "The Federal Reserve Board and the Office of the Comptroller of the Currency", "The Federal Housing Administration and the Government National Mortgage Association", "The Securities Investor Protection Corporation and the Pension Benefit Guaranty Corporation"],
+            correctIndex: 0,
+            explanation: "The paragraph reaches them acting as conservator, receiver or liquidating agent for an insured depository institution or insured credit union.",
+            sourceLessonSlug: "permissible-purpose",
+          },
+          {
+            prompt: "What makes the closed list the hinge of this course, according to the lesson?",
+            options: ["It turns a right into a question", "It gives the consumer a claim for damages against any user that pulls a report at all", "It requires each agency to publish a list of every party that has ever bought a report", "It obliges a user to notify the consumer in advance of every request it intends to make"],
+            correctIndex: 0,
+            explanation: "When an unexpected party has seen your file, the answerable question is which listed circumstance they claimed and whether it applied.",
+            sourceLessonSlug: "permissible-purpose",
+          },
+          {
+            prompt: "The lesson says a party wanting your file needs a reason of a particular kind. What kind?",
+            options: ["A listed one", "A commercially reasonable one, judged by the ordinary standards of the lending industry", "A written one, signed by an officer of the requesting company and retained for five years", "A recent one, arising from a transaction concluded within the previous ninety days"],
+            correctIndex: 0,
+            explanation: "Not a good reason, a listed one, because the statute closes the list rather than inviting analogy.",
+            sourceLessonSlug: "permissible-purpose",
+          },
+          {
+            prompt: "The credit-transaction permissible purpose covers extension of credit and which other activities?",
+            options: ["Review or collection of an account", "Advertising a firm offer of credit to consumers who match a preselected profile", "Reselling the report to a second lender considering the same consumer's application", "Setting the interest rate the lender will charge to all of its customers as a class"],
+            correctIndex: 0,
+            explanation: "The paragraph names a credit transaction involving the extension of credit to, or review or collection of an account of, the consumer.",
+            sourceLessonSlug: "permissible-purpose",
+          },
+          {
+            prompt: "Under the list, a potential investor or servicer may obtain a report for what purpose?",
+            options: ["Assessing an existing credit obligation", "Deciding whether to acquire the consumer reporting agency that assembled the file", "Marketing a refinancing offer to consumers whose existing loans it does not hold", "Verifying the identity of a consumer opening an account at an unrelated institution"],
+            correctIndex: 0,
+            explanation: "The paragraph reaches valuation of, or assessment of the credit or prepayment risks associated with, an existing credit obligation.",
+            sourceLessonSlug: "permissible-purpose",
+          },
+          {
+            prompt: "Does the permissible-purpose list mean a consumer report is a public record?",
+            options: ["No", "Yes, because the list includes public record information as one of its categories", "Yes, because any person may obtain one by paying the agency's published fee", "Yes, but only in the State in which the consumer reporting agency maintains its files"],
+            correctIndex: 0,
+            explanation: "A closed list of circumstances is the opposite of public availability; the file may be furnished only for a named purpose.",
+            sourceLessonSlug: "permissible-purpose",
+          },
+          {
+            prompt: "What happens to a scoring model when nothing has been furnished about a consumer?",
+            options: ["It returns no score", "It returns the lowest score in the model's published range as a conservative default", "It substitutes the average score of consumers living in the same postal district", "It is required by statute to treat the consumer as having an unblemished record"],
+            correctIndex: 0,
+            explanation: "A model built on observed repayment behaviour has nothing to work on, so it produces no result rather than a bad one.",
+            sourceLessonSlug: "the-file-that-does-not-exist",
+          },
+          {
+            prompt: "Why does the lesson say an absent file is not a clean record?",
+            options: ["It reads as absent evidence", "Because the agencies charge a fee to open a file, and an unpaid fee is itself an adverse item", "Because a consumer with no file is presumed by statute to have defaulted on a prior obligation", "Because the agencies must report the absence of a file to every user that requests one"],
+            correctIndex: 0,
+            explanation: "An automated decision that cannot price an applicant will usually decline them or price them as the worst case it can imagine.",
+            sourceLessonSlug: "the-file-that-does-not-exist",
+          },
+          {
+            prompt: "Twenty years of on-time cash rent to a non-reporting landlord produces what in a consumer file?",
+            options: ["Nothing", "A positive trade line established automatically once the tenancy passes twelve months", "A public record entry derived from the lease filed with the county recorder's office", "An inquiry record showing that the landlord checked the tenant's file at move-in"],
+            correctIndex: 0,
+            explanation: "The evidence exists and the channel that would carry it does not, because files are built from what furnishers report.",
+            sourceLessonSlug: "the-file-that-does-not-exist",
+          },
+          {
+            prompt: "What is the stated through-line of the sibling course Financing Without Access?",
+            options: ["You invent an entity", "That every excluded group eventually receives access once the market recognises its profitability", "That informal lending is always more expensive than the mainstream credit it substitutes for", "That federal regulation is the only mechanism that has ever opened a closed credit market"],
+            correctIndex: 0,
+            explanation: "Its sentence is that when the capital system excludes you, you invent an entity, and it teaches four families of them.",
+            sourceLessonSlug: "the-file-that-does-not-exist",
+          },
+          {
+            prompt: "Applying that course's procedure to the thin file, which door was closed?",
+            options: ["The mainstream credit market", "The federal disaster loan programme, which requires an area designation before it opens", "The employment market, which uses the same file for a different permissible purpose", "The deposit market, which will not open an account without a prior credit history"],
+            correctIndex: 0,
+            explanation: "It cannot price an applicant it has no data about, so the door closes without anyone deciding to close it.",
+            sourceLessonSlug: "the-file-that-does-not-exist",
+          },
+          {
+            prompt: "In the informal substitute institutions, who bears the risk?",
+            options: ["The members", "A federal insurer that guarantees each participant's contribution up to a statutory cap", "The employer of the participants, which underwrites the pool as a workplace benefit", "The State banking regulator, which stands behind chartered mutual associations"],
+            correctIndex: 0,
+            explanation: "That is why those institutions are governed by relationships rather than by files.",
+            sourceLessonSlug: "the-file-that-does-not-exist",
+          },
+          {
+            prompt: "Which eligibility standard does The County Committee report from the statute, before its repeal?",
+            options: ["Character, industry, and ability", "Sufficient collateral, adequate insurance, and a demonstrated three-year operating history", "Residence in the county, membership of a cooperative, and endorsement by two neighbours", "A minimum acreage, a minimum yield, and participation in a federal price support programme"],
+            correctIndex: 0,
+            explanation: "The test asked whether the applicant had the character, industry, and ability to carry out the proposed operations.",
+            sourceLessonSlug: "the-file-that-does-not-exist",
+          },
+          {
+            prompt: "How many individuals sat on the federal farm credit committee described in the sibling course?",
+            options: ["Three", "Seven, appointed in staggered terms so that no single year's appointments could control it", "Five, of whom at least three had to be farmers residing in an adjoining county", "Eleven, elected annually by all producers participating in any federal farm programme"],
+            correctIndex: 0,
+            explanation: "Three individuals residing in the county, at least two of them farmers, determined both eligibility and the limits of credit.",
+            sourceLessonSlug: "the-file-that-does-not-exist",
+          },
+          {
+            prompt: "What do a neighbour-staffed character gate and a model with no data have in common, according to the lesson?",
+            options: ["They fail in the same direction", "Both are prohibited by the Equal Credit Opportunity Act's list of prohibited bases", "Both require the decider to state its reasons in writing within thirty days of the decision", "Both were abolished by the same federal reorganisation act in the middle of the 1990s"],
+            correctIndex: 0,
+            explanation: "The person on the wrong side of either one has no next lender to go to.",
+            sourceLessonSlug: "the-file-that-does-not-exist",
+          },
+          {
+            prompt: "Why does this course decline to state the current share of adults with no file or a thin one?",
+            options: ["It is a dated measurement", "Because the figure is proprietary to the agencies and has never been published anywhere", "Because the definition of a thin file varies by model and no national figure can exist", "Because the statute forbids the publication of aggregate statistics drawn from consumer files"],
+            correctIndex: 0,
+            explanation: "It is a measured figure on a publication cycle, and this course prints no undated numbers.",
+            sourceLessonSlug: "the-file-that-does-not-exist",
+          },
+          {
+            prompt: "What does the lesson say is true about the score before the model does any work at all?",
+            options: ["Everything true about the file", "That the model has already assigned a provisional value based on the consumer's postcode", "That the score's range has been fixed by regulation and cannot vary between models", "That the score reflects the lender's own experience with applicants of a similar profile"],
+            correctIndex: 0,
+            explanation: "The score is built from the file, so the file's properties, including its absence, carry into the score.",
+            sourceLessonSlug: "the-file-that-does-not-exist",
+          },
+          {
+            prompt: "Which four families of substitute institution does Financing Without Access teach?",
+            options: ["Fraternal, building and loan, ROSCA, Islamic finance", "Credit unions, savings banks, payday lenders and pawnbrokers operating under State licences", "Community development banks, microfinance funds, employer advances and church collections", "Trade unions, friendly societies, burial clubs and municipal pawn offices"],
+            correctIndex: 0,
+            explanation: "It teaches the fraternal benefit society, the building and loan association, the rotating savings and credit association, and Islamic-finance instruments.",
+            sourceLessonSlug: "the-file-that-does-not-exist",
+          },
+          {
+            prompt: "What can this course say about credit invisibility, and what can it not?",
+            options: ["The mechanism, not the current share", "The current share, but not the mechanism, because mechanisms vary between scoring models", "Neither, because both are commercially confidential to the consumer reporting agencies", "Both, because the mechanism and the share are published together in the same annual report"],
+            correctIndex: 0,
+            explanation: "The mechanism is documented and does not move; the share is a measured figure with a publication cycle and a year attached.",
+            sourceLessonSlug: "the-file-that-does-not-exist",
+          },
+          {
+            prompt: "The three-part procedure this course borrows asks which door was closed, who bears the risk, and what else?",
+            options: ["What pool replaced it", "How many years passed before the closure was recognised by a federal regulator", "Which statute created the exclusion and which court later held it unconstitutional", "Whether the excluded group eventually gained access on the same terms as everyone else"],
+            correctIndex: 0,
+            explanation: "The middle question is what pool replaced the closed door, and it is what makes the analysis produce an institution rather than a grievance.",
+            sourceLessonSlug: "the-file-that-does-not-exist",
+          },
+          {
+            prompt: "The lesson says a gate can be operated deliberately. Which example does it give?",
+            options: ["The federal farm credit committee", "The underwriting department of a nationwide bank applying a published lending policy", "The consumer reporting agency deciding which furnishers it will accept data from", "The employer using a consumer report to decide between two shortlisted candidates"],
+            correctIndex: 0,
+            explanation: "Three individuals residing in the county determined eligibility and the limits of credit, under a statutory character test.",
+            sourceLessonSlug: "the-file-that-does-not-exist",
+          },
+          {
+            prompt: "Why does the lesson describe the thin-file problem as structural rather than personal?",
+            options: ["Files are built from what furnishers report", "Because the statute assigns responsibility for opening a file to the consumer rather than the agency", "Because a consumer must apply to each agency separately before any file will be created", "Because the scoring models are licensed to lenders on terms consumers cannot negotiate"],
+            correctIndex: 0,
+            explanation: "A payment history with no reporting channel produces no record however reliable the payer.",
+            sourceLessonSlug: "the-file-that-does-not-exist",
+          },
+          {
+            prompt: "What does the course say happens when an automated decision cannot price an applicant?",
+            options: ["It declines or prices for the worst case", "It refers the file to a human underwriter, who must interview the applicant in person", "It approves the application on the smallest amount the lender offers as a starter product", "It is required to obtain a second report from a different nationwide agency before deciding"],
+            correctIndex: 0,
+            explanation: "Absence of evidence is not read as good evidence, which is the whole point of the lesson.",
+            sourceLessonSlug: "the-file-that-does-not-exist",
+          },
+          {
+            prompt: "What is the difference between the evidence and the record, in the thin-file lesson?",
+            options: ["The evidence exists, the channel does not", "The evidence is oral and the record is written, so only the record can be disputed", "The evidence belongs to the consumer and the record belongs to the furnisher", "The evidence covers the present and the record covers only the preceding seven years"],
+            correctIndex: 0,
+            explanation: "Twenty years of paid rent is evidence; without a furnisher to report it, no record is created.",
+            sourceLessonSlug: "the-file-that-does-not-exist",
+          },
+          {
+            prompt: "The FCRA restricts a medical information furnisher's details unless they are handled how?",
+            options: ["Coded so nothing can be inferred", "Redacted entirely, leaving the balance and the date but no reference to any provider", "Disclosed only to the consumer and withheld from every user of the report", "Reported to the Bureau rather than to the consumer reporting agency"],
+            correctIndex: 0,
+            explanation: "The exception requires codes that do not identify, or provide information sufficient to infer, the specific provider or the nature of the services.",
+            sourceLessonSlug: "what-may-appear-and-for-how-long",
+          },
+          {
+            prompt: "In which situation does the FCRA's medical-furnisher restriction not apply?",
+            options: ["Certain insurance-business uses", "Any use by an employer evaluating an applicant for a position involving safety duties", "Any use by a lender underwriting a loan secured by residential real property", "Any use by a government agency determining eligibility for a public benefit"],
+            correctIndex: 0,
+            explanation: "The provision excepts a report provided to an insurance company for a purpose relating to the business of insurance other than property and casualty insurance.",
+            sourceLessonSlug: "what-may-appear-and-for-how-long",
+          },
+          {
+            prompt: "What does the FCRA's exclusion list say about the agency's discretion over stale items?",
+            options: ["There is none", "The agency may retain a stale item so long as it marks the item as older than seven years", "The agency may retain a stale item where the furnisher certifies the debt is still owed", "The agency may retain a stale item until the consumer requests its removal in writing"],
+            correctIndex: 0,
+            explanation: "The section is framed as a prohibition on making a report containing the listed items, subject only to the exceptions in subsection (b).",
+            sourceLessonSlug: "what-may-appear-and-for-how-long",
+          },
+          {
+            prompt: "Why is the furnisher's accuracy duty useful to a consumer even before any dispute is filed?",
+            options: ["It binds the party that created the item", "Because it requires the furnisher to notify the consumer before reporting any adverse item", "Because it obliges the furnisher to obtain the consumer's signature on each report it makes", "Because it entitles the consumer to a copy of every item the furnisher has ever supplied"],
+            correctIndex: 0,
+            explanation: "The prohibition runs against the creditor that supplied the information, not only against the agency that resold it.",
+            sourceLessonSlug: "what-may-appear-and-for-how-long",
+          },
+          {
+            prompt: "What does the permissible-purpose lesson say about a request that is commercially sensible but unlisted?",
+            options: ["It is not permitted", "It is permitted if the requester certifies the business reason in writing to the agency", "It is permitted once the agency's compliance department approves the requester's account", "It is permitted where the consumer has previously done business with the requester"],
+            correctIndex: 0,
+            explanation: "A closed list means the agency may not furnish for an unlisted purpose however sensible the request looks.",
+            sourceLessonSlug: "permissible-purpose",
+          },
+          {
+            prompt: "The lesson calls one consequence of the closed list counter-intuitive: that a report may be pulled by someone lending you nothing. Which purposes show that?",
+            options: ["Employment and insurance underwriting", "Debt collection and the enforcement of a civil judgment entered against the consumer", "Marketing and the compilation of prescreened lists of consumers meeting stated criteria", "Identity verification and the prevention of fraud in payment card transactions"],
+            correctIndex: 0,
+            explanation: "Both are separately listed purposes, so parties who are not extending you credit may lawfully see the file.",
+            sourceLessonSlug: "permissible-purpose",
+          },
+          {
+            prompt: "What does the lesson say a right that resolves into a specific question is?",
+            options: ["A right you can use", "A right that must be exercised within a statutory period or it lapses permanently", "A right enforceable only by a federal agency rather than by the consumer directly", "A right that applies to nationwide agencies but not to specialty reporting agencies"],
+            correctIndex: 0,
+            explanation: "Which listed circumstance did they claim, and did it apply, is a question a consumer can actually put and get answered.",
+            sourceLessonSlug: "permissible-purpose",
+          },
+          {
+            prompt: "The permissible-purpose list's opening phrase makes the whole section subject to another provision. Which?",
+            options: ["Subsection (c)", "Subsection (a) of section 1681c, the exclusion list governing what a report may contain", "Section 1681i, the reinvestigation provision governing disputes raised by consumers", "Section 1681m, the provision governing the duties of users taking adverse action"],
+            correctIndex: 0,
+            explanation: "The sentence opens Subject to subsection (c), which carries its own limits on furnishing for certain purposes.",
+            sourceLessonSlug: "permissible-purpose",
+          },
+          {
+            prompt: "Under the list, an agency administering a State plan may obtain a report for what use?",
+            options: ["Setting a support award", "Determining eligibility for unemployment insurance benefits after a job separation", "Verifying residence for the purpose of enrolling a child in a public school district", "Assessing whether an applicant qualifies for a State-funded housing subsidy programme"],
+            correctIndex: 0,
+            explanation: "The paragraph permits furnishing to an agency administering a State plan for use in setting an initial or modified child support award.",
+            sourceLessonSlug: "permissible-purpose",
+          },
+          {
+            prompt: "What is the practical value of knowing the exclusion periods, according to Section 2?",
+            options: ["You can check the dates", "You can require an agency to delete any item you no longer recognise as your own", "You can prevent a furnisher from reporting an account by objecting before it is opened", "You can compel a lender to disregard any item it considers when reaching its decision"],
+            correctIndex: 0,
+            explanation: "Each item runs from a stated event, so the dates on a copy of your own file are checkable facts rather than opinions.",
+            sourceLessonSlug: "what-may-appear-and-for-how-long",
+          },
+          {
+            prompt: "How does Section 2 connect the file to the score taught in Section 3?",
+            options: ["The score is built from the file", "The score replaces the file once a consumer has held credit for at least two years", "The score is furnished separately and is governed by a different federal statute entirely", "The score is supplied by the furnisher rather than derived from the assembled record"],
+            correctIndex: 0,
+            explanation: "Everything true about the file, including its absence, is true about the score before the model does any work.",
+            sourceLessonSlug: "the-file-that-does-not-exist",
+          },
+          {
+            prompt: "Which of these is NOT among the FCRA's enumerated stale-item categories in section 1681c(a)?",
+            options: ["Unpaid utility balances by name", "Cases under title 11 or under the Bankruptcy Act older than ten years from entry", "Paid tax liens older than seven years measured from the date the lien was paid", "Accounts placed for collection or charged to profit and loss older than seven years"],
+            correctIndex: 0,
+            explanation: "Utilities are not a named category; they fall under the catch-all for any other adverse item at seven years.",
+            sourceLessonSlug: "what-may-appear-and-for-how-long",
+          },
+          {
+            prompt: "What does the lesson say about the relationship between the agency and the items in your file?",
+            options: ["It resold what others reported", "It investigated and verified each item before adding it to the file it maintains", "It generated the items itself from public records held by courts and county offices", "It received the items directly from the consumer at the time each account was opened"],
+            correctIndex: 0,
+            explanation: "Most of a file is bought from furnishers, which is why the accuracy duty binds the furnisher directly.",
+            sourceLessonSlug: "what-may-appear-and-for-how-long",
+          },
+          {
+            prompt: "Which phrase from the residual permissible purpose does the lesson warn is narrower than it sounds?",
+            options: ["Legitimate business need", "Written instructions of the consumer to whom the report relates", "The underwriting of insurance involving the consumer whose report is requested", "A determination of eligibility for a licence granted by a governmental instrumentality"],
+            correctIndex: 0,
+            explanation: "It reaches a transaction the consumer initiated or a review of an account the consumer already holds, not any useful business purpose.",
+            sourceLessonSlug: "permissible-purpose",
+          },
+        ],
+      },
+    },
   ],
 };
