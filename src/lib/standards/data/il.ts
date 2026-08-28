@@ -32,7 +32,10 @@
 // from the ISBE-published PDF (isbe.net/Documents/SS-Standards-9-12.pdf), fetched 2026-07-18. The
 // PDF's plain-text layer extracted cleanly; every standard below was retrieved in full, none
 // excluded for want of exact text. The document numbers standards SS.<discipline>.<n>.9-12; we
-// cite them exactly as printed.
+// cite them exactly as printed. RE-FETCHED 2026-08-28 from the same ISBE PDF when MONEY-02
+// (Banking, and Who Has No Bank) made two of the six SS.EC.FL Financial Literacy standards
+// claimable for the first time; the old blanket rejection of that sub-strand is rewritten as
+// superseded rather than deleted, and the four still unclaimed are named individually.
 // ─────────────────────────────────────────────────────────────────────────────
 
 import { COMMON_CORE_ELA } from "../shared/common-core-ela";
@@ -43,7 +46,8 @@ const IL_SS = "https://www.isbe.net/Documents/SS-Standards-9-12.pdf";
 const IL_SS_META = {
   publisher: "Illinois State Board of Education (ISBE)",
   version: "Illinois Learning Standards for Social Science, Grades 9-12 (2017)",
-  fetchedOn: "2026-07-18",
+  // Re-fetched 2026-08-28 from the same ISBE PDF when the two SS.EC.FL claims were added.
+  fetchedOn: "2026-08-28",
   sourceUrl: IL_SS,
 } as const;
 
@@ -241,7 +245,7 @@ export const JURISDICTION: JurisdictionFile = {
       name: "Illinois Learning Standards for Social Science — Economics and Financial Literacy, High School (SS.EC)",
       ...IL_SS_META,
       adoption:
-        "The BVC series supplies the Economics strand through real commodity markets — scarcity and incentives, market regulation, trade, and globalization. Illinois's Financial Literacy sub-strand (SS.EC.FL) is not taught here; see notClaimed.",
+        "The BVC series supplies the Economics strand through real commodity markets — scarcity and incentives, market regulation, trade, and globalization. Illinois's Financial Literacy sub-strand (SS.EC.FL) was rejected wholesale until 2026-08-28, when the banking course made two of its six standards genuinely reachable; the other four are still not taught and notClaimed names each one.",
       standards: [
         {
           code: "SS.EC.1.9-12",
@@ -270,6 +274,25 @@ export const JURISDICTION: JurisdictionFile = {
           claimIds: ["bvc.commodity-trap", "bvc.colonialism-persists-today", "history.nafta-usmca-labor"],
           coverage: "full",
           note: "Globalization's effects are traced through real chains — the commodity trap that keeps producing nations poor, how colonial patterns persist, and NAFTA→USMCA's effect on labor on both sides of the border.",
+        },
+        // — Financial Literacy (SS.EC.FL), re-fetched 2026-08-28 when MONEY-02 shipped. The whole
+        //   six-standard sub-strand was rejected until then; two are now genuinely reachable.
+        {
+          code: "SS.EC.FL.2.9-12",
+          text: "Explain how to make informed financial decisions by collecting information, planning, and budgeting.",
+          claimIds: [
+            "money.consumer-financial-protection-mechanisms",
+            "money.consumer-deposit-accounts",
+          ],
+          coverage: "partial",
+          note: "Partial: the collecting-information half is the banking course's spine, and it is taught as a set of enforceable rights rather than as a habit. A learner leaves able to obtain account disclosures before opening an account and on request (12 CFR 1030.4), read a prepaid account's fees before acquiring it (12 CFR 1005.18), and obtain their own consumer file from a deposit-screening agency free once every twelve months (15 U.S.C. 1681j). Planning and budgeting are not taught here and are left to another course in the same series.",
+        },
+        {
+          code: "SS.EC.FL.4.9-12",
+          text: "Analyze costs and benefits of different credit and payment options for goods and services, the role of lenders, and interest.",
+          claimIds: ["money.unbanked-and-alternative-services", "money.consumer-deposit-accounts"],
+          coverage: "partial",
+          note: "Partial, and it is the payment half. The costs and benefits of paying by cash, debit card, prepaid card, nonbank payment app, money order and check casher are analysed against each other from published prices (a postal fee schedule, a state regulator's fee cap, and the account disclosures a bank must provide), including the non-price properties that decide the comparison: predictability, when funds become available, and whether a minimum balance applies. Credit options, the role of lenders, and interest are not taught here.",
         },
       ],
     },
@@ -359,8 +382,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "Illinois adopted the NGSS verbatim (January 2014) as its science standards, so our one honest science claim — HS-ESS3-1, partial — comes through the shared NGSS mapping with the limit stated on the entry. There is no laboratory work, investigation, or modelling in this catalog, and we will not claim more.",
     },
     {
-      heading: "Financial Literacy (SS.EC.FL) — nothing.",
-      body: "Illinois's Economics strand carries a six-standard Financial Literacy sub-strand (income strategies, budgeting, interest and inflation, credit, investing, insurance). This catalog teaches no personal finance, so it claims none of SS.EC.FL.1-6.",
+      heading: "Financial Literacy (SS.EC.FL) — two of six, now that banking is taught.",
+      body: "This entry used to say the catalog taught no personal finance and claimed none of SS.EC.FL.1-6. That is no longer true, and the correction is recorded here rather than deleted so a teacher can see what changed. As of 2026-08-28, SS.EC.FL.2 (making informed financial decisions by collecting information) and SS.EC.FL.4 (the costs and benefits of payment options) are claimed, partially, and supersede the blanket rejection. Four remain unclaimed and are named so the gap stays visible: SS.EC.FL.1 (strategies to increase income), SS.EC.FL.3 (time, interest rates and inflation on saving), SS.EC.FL.5 (risks and rates of return of diversified investments), and SS.EC.FL.6 (the costs and benefits of insurance). Nothing here claims the budgeting half of FL.2 or the credit and interest halves of FL.4, both of which belong to later courses in the same series and none of which is claimed before it is taught.",
     },
     {
       heading: "The Illinois Civics flagship's Illinois-specific structure has no Illinois code to cite.",

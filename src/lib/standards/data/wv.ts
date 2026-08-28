@@ -13,8 +13,9 @@
 //     Studies (WVBE Policy 2520.4) are West Virginia's own. The Civics course — a "culminating U.S.
 //     Studies class" and the state's civics capstone — carries standards coded SS.C.1 through SS.C.43
 //     across Civics (SS.C.1-22), Economics (SS.C.23-29), Personal Finance (SS.C.30-39), and Geography
-//     (SS.C.40-43). We map the Civics and two Economics standards the catalog genuinely reaches; the
-//     rest are rejected in notClaimed. Codes are cited exactly as printed (SS.C.1, SS.C.13, etc.).
+//     (SS.C.40-43). We map the Civics standards, two Economics standards, and (from 2026-08-28) one
+//     Personal Finance standard the catalog genuinely reaches; the rest are rejected in notClaimed.
+//     Codes are cited exactly as printed (SS.C.1, SS.C.13, etc.).
 //   · ELA — BESPOKE, NOT aliased. West Virginia adopted the Common Core in 2010 but REPEALED it in
 //     2015 (WVBE re-authored the standards; the "Next Generation" name was dropped and the CCSS
 //     numbering abandoned). West Virginia's English Language Arts standards now use West Virginia's
@@ -41,7 +42,11 @@
 // below returned HTTP 404 to automated fetches. The sourceUrl is the canonical WVDE link. Bulleted
 // sub-lists in SS.C.5 and SS.C.17 are transcribed inline with the source's "•" markers; SS.C.5's
 // final "principles" bullet is missing its closing parenthesis in the source and is transcribed as
-// printed (a source typo left untouched). PROVENANCE (ELA): transcribed VERBATIM from the West
+// printed (a source typo left untouched). RE-FETCHED 2026-08-28 from the same mirror when SS.C.38
+// was added, which is why the social-studies framework's fetchedOn now carries that date: MONEY-02
+// (Banking, and Who Has No Bank) made the first Personal Finance standard claimable, and the
+// blanket SS.C.30-39 rejection was rewritten as superseded rather than deleted.
+// PROVENANCE (ELA): transcribed VERBATIM from the West
 // Virginia English Language Arts Standards, Grades 9-12 (Grade 11 section), retrieved 2026-07-19 from
 // a byte-faithful district mirror (Marion County Schools) of the WVBE Policy 2520.1A standards; the
 // sourceUrl is the canonical WVDE ELA link.
@@ -66,7 +71,7 @@ export const JURISDICTION: JurisdictionFile = {
       publisher: WV_SS_PUBLISHER,
       version:
         "West Virginia College- and Career-Readiness Standards for Social Studies, Grades 6-12 (WVBE Policy 2520.4) · Civics course (SS.C)",
-      fetchedOn: "2026-07-19",
+      fetchedOn: "2026-08-28",
       sourceUrl: WV_SS_SOURCE,
       adoption:
         "West Virginia's Civics course is its civics capstone — a 'culminating U.S. Studies class,' with a U.S. Studies course as prerequisite. Its standards are West Virginia's own (WVBE Policy 2520.4). Two of them are explicitly state-and-local — SS.C.13 (the local, state and national judicial systems) and SS.C.20 (how state and local government impact citizens, and the structure of local government) — so, alongside SS.C.1 (participatory citizenship through community service), the West Virginia flagship's own-government content (the Constitution of 1872, the plural executive with no Lieutenant Governor, the 100-Delegate/34-Senator Legislature, the 2015 switch to nonpartisan judicial elections and the 2022 Intermediate Court of Appeals, the 55 counties) has a genuine home, mapped here. The federal-ladder standards carry the general civics claims; two Economics standards carry the catalog's commodity-price and free-market cases. Transcribed verbatim from the WVDE Social Studies resource booklet (see the file header for provenance).",
@@ -260,6 +265,19 @@ export const JURISDICTION: JurisdictionFile = {
           coverage: "partial",
           note: "Partial: the role of government in a market economy is taught through a concrete case — the U.S. sugar program's quotas, price supports, and tariffs — set against the contrast between traditional (reciprocity) and free-market economies. The course does not stage the standard's open debate as an assessed exercise.",
         },
+        // — The first Personal Finance standard this catalog can honestly claim (2026-08-28).
+        //   Until MONEY-02 shipped, the whole SS.C.30-39 strand sat in notClaimed with the words
+        //   "meets none of these standards." That entry is now rewritten as superseded, not deleted.
+        {
+          code: "SS.C.38",
+          text: "Utilize traditional and online banking services as well as examining fees, services and hidden costs of checking, savings, debit cards, Certificates of Deposit, etc.",
+          claimIds: [
+            "money.consumer-deposit-accounts",
+            "money.consumer-financial-protection-mechanisms",
+          ],
+          coverage: "partial",
+          note: "Partial, and the examining half is the strong half. Fees, services and costs of checking and savings accounts are worked from the disclosure rule that requires them (12 CFR 1030.4, before opening and on request, including the conditions under which a fee may be imposed); debit-card overdraft is taught from the Regulation E opt-in and its boundary; certificates of deposit appear as an insured time deposit; and the FDIC's own data on teller against mobile access supplies the traditional-and-online contrast. Two gaps, stated plainly: certificates of deposit are not taught as a savings instrument with a return, and 'utilize' as a hands-on exercise on a live account is beyond a self-paced course, which teaches the documents instead.",
+        },
       ],
     },
 
@@ -341,8 +359,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "Standards the catalog's civics does not genuinely teach are not claimed: SS.C.4 (collaboratively build a model to defend the American Republic — a classroom performance task), SS.C.16 (the evolution and function of the two-party system), SS.C.18 (the impact of special interest groups on public policy), and SS.C.21 (cooperation, competition, and conflict among nations — the United Nations, international treaties, terrorism). The catalog's civics is domestic structure, rights, and participation, so these are left unclaimed.",
     },
     {
-      heading: "Personal Finance (SS.C.30-39) — nothing.",
-      body: "West Virginia's Civics course carries a full Personal Finance strand (postsecondary cost, income and budgeting, workforce preparedness, bankruptcy, taxes, consumer debt, banking, and investing/insurance). This catalog teaches none of it, so it meets none of these standards.",
+      heading: "Personal Finance (SS.C.30-39) — one of ten, now that banking is taught.",
+      body: "This entry used to read that the catalog taught none of West Virginia's Personal Finance strand. That is no longer true and the correction is recorded here rather than deleted, so a teacher can see what changed. SS.C.38 (banking services, and the fees, services and hidden costs of checking, savings, debit cards and certificates of deposit) is now claimed, partially, and supersedes the old blanket rejection. The other nine remain unclaimed and are named so the gap stays visible: SS.C.30 (the cost of postsecondary education), SS.C.31 (income, lifestyle and career against education and aid decisions), SS.C.32 (careers and lifelong earning potential), SS.C.33 (workforce preparedness, resumes and interviews), SS.C.34 (the causes of bankruptcy), SS.C.35 (completing federal and state income tax forms), SS.C.36 (types of consumer debt), SS.C.37 (consumer rights, fraudulent practices and identity theft), and SS.C.39 (investments and insurance). Later courses in the same series are planned to reach several of these; none is claimed before it is taught.",
     },
     {
       heading: "Geography (SS.C.40-43) — checked, thin overlap, not claimed.",

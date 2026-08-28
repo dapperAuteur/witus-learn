@@ -32,6 +32,9 @@
 // its column geometry and every benchmark verified to read as clean, sensible English before use.
 // Wyoming's tribal-sovereignty sub-benchmarks (the .a codes, e.g. SS12.1.1.a, SS12.1.5.a) and the
 // culture standard are published in notClaimed — this catalog does not teach them.
+// RE-FETCHED 2026-08-28 from the same WDE PDF when MONEY-02, Banking and Who Has No Bank, made
+// SS12.3.4 claimable. That benchmark had been rejected with the words "the catalog teaches no
+// financial literacy"; the rejection is rewritten as superseded rather than deleted.
 // ─────────────────────────────────────────────────────────────────────────────
 
 import { COMMON_CORE_ELA } from "../shared/common-core-ela";
@@ -73,7 +76,8 @@ export const JURISDICTION: JurisdictionFile = {
       name: "Wyoming Social Studies Content and Performance Standards",
       publisher: "Wyoming Department of Education (WDE)",
       version: "2014 with 2018 Additions · High School (Grade 12) band",
-      fetchedOn: "2026-07-19",
+      // Re-fetched 2026-08-28 from the same WDE PDF when SS12.3.4 was added.
+      fetchedOn: "2026-08-28",
       sourceUrl: WY_SS,
       adoption:
         "Wyoming's bespoke K-12 social-studies document. High-school benchmarks are coded SS12.<standard>.<benchmark> under the “Upon Graduation / Grade 12” column of a four-column grade-band table. Six content standards: (1) Citizenship, Government, and Democracy; (2) Culture and Cultural Diversity; (3) Production, Distribution, and Consumption; (4) Time, Continuity, and Change; (5) People, Places, and Environments; (6) Technology, Literacy, and Global Connections. SS12.1.5 (structures of both the U.S. and Wyoming Constitutions) is the Wyoming flagship's home. The document's Wind River / tribal-sovereignty sub-benchmarks (the .a codes) and its Culture standard are not taught by this catalog and are published in notClaimed.",
@@ -149,6 +153,20 @@ export const JURISDICTION: JurisdictionFile = {
           claimIds: ["bvc.value-chain-earnings", "bvc.commodity-trap"],
           coverage: "partial",
           note: "Partial: global economic interdependence is the series' spine — who captures value along global commodity chains, and why producing regions stay poor (the commodity trap). The technology-as-driver half the standard leads with is not the focus.",
+        },
+        // — Added 2026-08-28 when MONEY-02 shipped. This benchmark was rejected outright in the July
+        //   2026 pass with the words "the catalog teaches no financial literacy", which was true
+        //   then; the notClaimed entry now records the supersession rather than being deleted.
+        {
+          code: "SS12.3.4",
+          text: "Explain how financial and government institutions make economic decisions (e.g., banking, investment, credit, regulation, and debt).",
+          claimIds: [
+            "money.consumer-deposit-accounts",
+            "money.consumer-financial-protection-mechanisms",
+            "money.unbanked-and-alternative-services",
+          ],
+          coverage: "partial",
+          note: "Partial, and it is the banking-and-regulation half of Wyoming's own illustrative list. HOW A FINANCIAL INSTITUTION DECIDES is taught as a mechanism rather than as a description: the identity rule it must satisfy before opening an account (31 CFR 1020.220), the deposit-screening report it consults and the federal statute that governs that report, and the fee structure it sets and must disclose. HOW A GOVERNMENT INSTITUTION DECIDES is taught from three worked cases: the FDIC and the NCUA on insurance, the CFPB writing the overdraft opt-in and prepaid disclosure rules, and Congress nullifying an agency rule under the Congressional Review Act, which is a decision about banking made by a body that is not a bank. Investment, credit and debt, the other three examples Wyoming names, are not taught here.",
         },
         // — Standard 4: Time, Continuity, and Change (History) —
         {
@@ -267,7 +285,7 @@ export const JURISDICTION: JurisdictionFile = {
     },
     {
       heading: "The economics and history benchmarks we checked and rejected.",
-      body: "SS12.3.4 (how financial and government institutions make economic decisions — banking, investment, credit, regulation, debt; the catalog teaches no financial literacy), SS12.3.5 (how values and beliefs influence micro/macroeconomic decisions), and SS12.4.3 (given a current event, critique the actors and hypothesize how it would have played out in another country — not this catalog's method) are not genuinely taught, so we do not claim them.",
+      body: "SS12.3.4 was on this list until 2026-08-28, rejected on the ground that the catalog taught no financial literacy. That is no longer true and the change is recorded here rather than deleted: the banking course now supplies the banking and regulation halves of that benchmark, so SS12.3.4 is claimed above, partially, and supersedes the old rejection. Its investment, credit and debt examples are still not taught. Two benchmarks remain unclaimed: SS12.3.5 (how values and beliefs influence micro/macroeconomic decisions) and SS12.4.3 (given a current event, critique the actors and hypothesize how it would have played out in another country — not this catalog's method).",
     },
     {
       heading: "SS12.5.3 and SS12.6.3 — sense of place, and digital production.",
