@@ -2816,6 +2816,164 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Any FDIC advisory or financial institution letter on prepaid and payment app balances",
     ],
   },
+
+  // ── MONEY-03 · Cash Flow, and When the Money Actually Moves ────────────────
+  {
+    key: "timing-regcc-business-day-juneteenth",
+    course: "cash-flow-timing",
+    lesson: "business-day-banking-day",
+    quote:
+      "Regulation CC's definition of a business day does not name June 19, so a day on which a bank is closed for Juneteenth is still a business day for counting an availability deadline",
+    title: "Has 12 CFR 229.2's definition of business day been amended to add June 19?",
+    severity: "high",
+    question:
+      "Open the current eCFR text of 12 CFR 229.2 in a browser and read the definition of 'business day' in full. Does its list of excluded dates include June 19, or does it still name only the ten dates (January 1, the third Monday in January, the third Monday in February, the last Monday in May, July 4, the first Monday in September, the second Monday in October, November 11, the fourth Thursday in November, December 25)? If it has been amended, name the Federal Register document that did it and its effective date.",
+    claim:
+      "The course prints the ten-date list verbatim, prints the eleven legal public holidays of 5 U.S.C. 6103(a) verbatim beside it, and states that June 19 is in the second list and not the first, checked on 28 August 2026 against the Government Publishing Office's Code of Federal Regulations title 12 text and a secondary rendering of the same section. It then draws one conclusion and no more: a day a bank is closed for Juneteenth can be a business day for counting while not being a banking day for depositing.",
+    stakes:
+      "High, because the comparison is taught twice and used as the course's headline example of why a defined term must be read rather than assumed. Section 1 builds the counting rules on it and Section 5 returns to it when the benefit-payment rule turns out to use the OTHER list. If the Board has since amended the definition, the striking fact becomes a wrong fact in the one place the course asks a learner to trust a close reading.",
+    needs: [
+      "The current eCFR text of the business-day definition at 12 CFR 229.2, read in a browser, with the date read",
+      "The eCFR 'last amended' date shown on that section",
+      "If amended, the Federal Register citation and effective date of the amendment",
+      "Whether any Board commentary or appendix to part 229 addresses Juneteenth separately",
+    ],
+    where: [
+      "ecfr.gov, title 12, part 229, section 229.2, opened in a browser (automated fetches are refused)",
+      "govinfo.gov, the annual Code of Federal Regulations edition for title 12, for a dated snapshot",
+      "federalregister.gov, searched for amendments to part 229 since 2021",
+    ],
+  },
+  {
+    key: "timing-regcc-threshold-cycle",
+    course: "cash-flow-timing",
+    lesson: "why-a-schedule-exists",
+    quote:
+      "the figures in force from 1 July 2025 were $275 for the minimum amount of a day's check deposits that must be available on the next business day, $550 for the amount that must be available for cash withdrawal, and $6,725 for the large-deposit and new-account thresholds",
+    title: "Are the Regulation CC dollar thresholds and civil-liability amounts still the 2025 figures, and when is the next adjustment?",
+    severity: "high",
+    question:
+      "Confirm, against the current regulation rather than a summary, the four figures this course prints with a date: the minimum availability amount in 12 CFR 229.10(c)(1)(vii), the cash-withdrawal amount in 229.12(d), the large-deposit and new-account threshold in 229.13, and the civil-liability amounts in 229.21(a) ($125 and $1,350 for an individual action, $672,950 for a class). Then find the date the NEXT five-year adjustment under 12 U.S.C. 4006(f) takes effect, and whether a rule making it has already been published.",
+    claim:
+      "The course prints each figure with the words 'as read on 28 August 2026' and teaches the adjustment clause itself as the reason no figure in this area should be memorised. It states that the amounts took effect on 1 July 2025 and names the prior figures ($225, $450, $5,525) so a reader can see the direction of travel.",
+    stakes:
+      "High, and it is a scheduled failure rather than a possible one. The statute guarantees these numbers will move, so the only question is whether the lesson is re-dated before or after they do. An educator planning against a stale threshold is the exact failure the course's own method-not-table rule exists to prevent, and it would be embarrassing for it to happen inside the lesson that teaches the rule.",
+    needs: [
+      "Each of the four figures as the current regulation prints them, with the section number and the date read",
+      "The effective date of the next scheduled adjustment under 12 U.S.C. 4006(f)",
+      "Whether a final rule making that adjustment has been published, and its Federal Register citation",
+      "Whether the civil-liability amounts in 229.21(a) are adjusted on the same cycle as the availability thresholds",
+    ],
+    where: [
+      "ecfr.gov, title 12, part 229, sections 229.10, 229.12, 229.13 and 229.21",
+      "federalregister.gov, searched for 'Availability of Funds and Collection of Checks threshold adjustments'",
+      "The Federal Reserve Board's press releases on Regulation CC threshold adjustments",
+    ],
+  },
+  {
+    key: "timing-ucc-4-303-state-variation",
+    course: "cash-flow-timing",
+    lesson: "any-order-convenient",
+    quote:
+      "the operative rule for you is your own state's enactment of Article 4. The section number is usually the same and the words usually are too",
+    title: "Do any states vary U.C.C. 4-303(b), or otherwise constrain posting order on consumer accounts?",
+    severity: "medium",
+    question:
+      "The course quotes the uniform text of U.C.C. 4-303(b) and tells the learner to find their own state's enactment, on the ground that the words are 'usually' the same. Is that hedge right? Identify whether any state has enacted a non-uniform version of section 4-303, and separately whether any state statute, banking regulation or attorney-general settlement constrains the order in which a bank may post consumer transactions. Name any state that does and quote the provision.",
+    claim:
+      "The course teaches the uniform text as the rule, says explicitly that the code is enacted state by state so the citation that governs an account is a state statute, and sets finding your own state's enactment as the exercise. It surveys no state and publishes no fifty-state table, by the same method-not-table rule it applies to payday statutes.",
+    stakes:
+      "Medium. The uniform text is the right thing to teach and the arithmetic that follows from it is unaffected either way. But 'usually the same' is a hedge, and if even one state has legislated a posting-order constraint for consumer accounts, that is a genuinely important exception a learner in that state should be pointed at rather than left to discover.",
+    needs: [
+      "Whether any state has a non-uniform enactment of section 4-303, and the text if so",
+      "Whether any state statute or banking rule fixes or constrains consumer posting order",
+      "Whether any state attorney-general settlement or consent order does so for a named institution",
+      "The date each item was checked",
+    ],
+    where: [
+      "The Uniform Law Commission's enactment map and state variation notes for U.C.C. Article 4",
+      "Each candidate state's own code, read on the legislature's site rather than a mirror",
+      "State banking department regulations and attorney-general press offices",
+    ],
+  },
+  {
+    key: "timing-pay-frequency-distribution",
+    course: "cash-flow-timing",
+    lesson: "four-different-years",
+    quote:
+      "it is arithmetic, and it is the most load-bearing arithmetic in this course",
+    title: "What is the current published distribution of pay-period lengths among US private establishments?",
+    severity: "low",
+    question:
+      "The Bureau of Labor Statistics publishes a Current Employment Statistics page on the length of pay periods among private establishments, giving the share paid weekly, biweekly, semimonthly and monthly. Retrieve the current figures, the reference period they describe, and the page's own publication or update date, by opening the page in a browser.",
+    claim:
+      "The course publishes NO distribution figure. It teaches the four annual counts (52, 26, 24, 12) as arithmetic, teaches the mechanism behind each schedule, and says nothing about how common any of them is. The omission is deliberate: the BLS page refused automated retrieval when the lesson was written on 28 August 2026, and the fetch-or-do-not-cite rule then forbids the number.",
+    stakes:
+      "Low, and it is an enrichment rather than a correction. Nothing in the course depends on the distribution, and the lesson stands without it. But a dated, cited sentence saying which schedule most people are actually on would make the biweekly-against-semimonthly distinction land harder for a reader trying to work out which one applies to them.",
+    needs: [
+      "The four percentages, with the reference month or period they describe",
+      "The exact title of the BLS page and its publication or last-updated date",
+      "Whether BLS states any caveat about how the figures are collected",
+      "The date you read it",
+    ],
+    where: [
+      "bls.gov/ces/publications/length-pay-period.htm, opened in a browser (automated fetches return 403)",
+      "The BLS Current Employment Statistics methods pages, for how the pay period is captured",
+      "bls.gov/opub/ted, for any Economics Daily article summarising the same data",
+    ],
+  },
+  {
+    key: "timing-ssa-derivative-beneficiary-birth-date",
+    course: "cash-flow-timing",
+    lesson: "when-a-benefit-arrives",
+    quote:
+      "Insured individuals born on the 1st through the 10th of the month will be paid on the second Wednesday of each month",
+    title: "Whose birth date sets the monthly payment day for a spouse's or child's benefit?",
+    severity: "medium",
+    question:
+      "20 CFR 404.1807 assigns a monthly payment day by reference to a date of birth, and the sentences the course quotes speak of 'insured individuals'. For a benefit paid on another person's earnings record (a spouse, a surviving spouse, a child), whose birth date governs: the beneficiary's own, or that of the worker on whose record entitlement is based? Quote the regulatory text or the agency's own published statement that settles it.",
+    claim:
+      "The lesson quotes the three bracket sentences and the weekend-and-holiday substitution sentence verbatim, and stops there. It states the rule as the regulation states it and does not address the derivative-beneficiary case in either direction, because it was not resolved verbatim when the lesson was written on 28 August 2026.",
+    stakes:
+      "Medium, and it lands on exactly the readers this lesson is written for. The point of the lesson is that a benefit date is computable a year ahead by anybody; a reader receiving a spouse's or a child's benefit who computes from the wrong birth date gets a wrong date and, worse, believes the method failed rather than that they applied it wrongly.",
+    needs: [
+      "The full current text of 20 CFR 404.1807, including any paragraph addressing benefits on another person's record",
+      "The agency's own published payment-schedule explanation and which birth date it tells beneficiaries to use",
+      "Whether any category of beneficiary is excluded from the birth-date brackets altogether",
+      "The date you read each source",
+    ],
+    where: [
+      "ecfr.gov, title 20, section 404.1807, opened in a browser",
+      "The Social Security Administration's own published schedule of benefit payment dates",
+      "The agency's programme operations manual, for the internal statement of the same rule",
+    ],
+  },
+  {
+    key: "timing-instant-payment-reach",
+    course: "cash-flow-timing",
+    lesson: "instant-and-irrevocable",
+    quote:
+      "Which institutions offer instant payment, what limits they set, and which competing networks operate alongside the Federal Reserve's service are all things that change",
+    title: "How widely available is instant payment to consumers, and what are the current participation figures?",
+    severity: "low",
+    question:
+      "The lesson uses two cited facts from the operator (the live date and the twenty-four-hour business day) and deliberately asserts nothing about reach. Retrieve, with dates: how many financial institutions currently participate in the Federal Reserve's instant payment service, whether the operator publishes a participant list, and whether it publishes any statement about typical consumer send limits. Note also whether the operator describes any competing private instant network in its own materials.",
+    claim:
+      "The lesson states only that the service went live on 20 July 2023, that it has a twenty-four-hour business day each day of the week including weekends and holidays, and that it settles in near real time on a gross basis, each cited to the operator and dated 28 August 2026. It then tells the learner that participation, limits and hours are a term of their own account documents, and stops.",
+    stakes:
+      "Low. The lesson's teaching point is the trade between settlement speed and the interval a stop-payment right needs, and that argument is unaffected by how many institutions have joined. A participation figure would make the lesson feel current, which is precisely why it needs a date attached before it goes in.",
+    needs: [
+      "The current participant count and whether a public participant list exists",
+      "Any operator statement about consumer send limits or hours of availability",
+      "Whether the operator names competing instant networks in its own published materials",
+      "The date each figure was read",
+    ],
+    where: [
+      "federalreserve.gov/paymentsystems, the instant payment service pages",
+      "The operator's own service pages for financial institutions, including any published participant list",
+      "The Federal Reserve's payments-improvement publications, for dated adoption statements",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
