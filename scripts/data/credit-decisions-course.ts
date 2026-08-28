@@ -3102,5 +3102,1006 @@ Consumer Financial Protection Bureau. (2023, August 28). *How do I get a free co
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 6 — The price, the rulemakers, and your own record
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-number-that-makes-offers-comparable",
+      title: "21 · The number that exists so two offers can be compared",
+      section: "Section 6 · The price, the rulemakers, and your own record",
+      body: `Everything so far has been about whether you get credit. This lesson is about the other half of the decision, which is what it costs, and about the one number that was invented to make that answerable.
+
+**Congress said why, in the statute's own findings.** The Truth in Lending Act's purpose is:
+
+> "to assure a meaningful disclosure of credit terms so that the consumer will be able to compare more readily the various credit terms available to him and avoid the uninformed use of credit, and to protect the consumer against inaccurate and unfair credit billing and credit card practices" (15 U.S.C. § 1601, n.d.)
+
+**"Compare more readily."** That is the whole design. The problem TILA was written against was not that credit was expensive. It was that credit was expensive in incomparable units: a fee here, a rate there, a discount for paying early, a charge folded into a price. Two offers stated in different units cannot be ranked, and an unrankable market does not discipline anyone.
+
+**The fix is a common unit, and the statute defines how to compute it.** For revolving credit, the definition is arithmetic anyone can do:
+
+> "in the case of any extension of credit under an open end credit plan, as the quotient (expressed as a percentage) of the total finance charge for the period to which it relates divided by the amount upon which the finance charge for that period is based, multiplied by the number of such periods in a year." (15 U.S.C. § 1606, n.d.)
+
+**Three steps.** Take the finance charge for one period. Divide it by the amount it was charged on. Multiply by the number of those periods in a year.
+
+**Work it.** Suppose a charge of 15 on a balance of 100 for a period, and there are 26 such periods in a year. Then 15 divided by 100 is 0.15, and 0.15 multiplied by 26 is 3.9, which expressed as a percentage is **390 percent**. The same charge described as "fifteen percent" is describing the period, not the year, and the two descriptions are 375 percentage points apart.
+
+**That is the entire trick, and it is why the annualisation matters.** A cost quoted per period sounds small in proportion to how short the period is. Annualising is what removes the period from the comparison, which is exactly what "compare more readily" requires.
+
+**The closed-end case is harder, and the statute says so.** For credit other than under an open-end plan, the rate is the nominal annual rate that yields the finance charge when applied to the unpaid balances "calculated according to the actuarial method of allocating payments made on a debt between the amount financed and the amount of the finance charge", or a simplified method the agency prescribes that keeps reasonable accuracy (15 U.S.C. § 1606, n.d.). **You are not expected to do that one by hand.** You are expected to know that it exists, that it is defined, and that the lender has to disclose its result.
+
+**Where this goes next in the series.** MONEY-04 applies this arithmetic to the products it was written for. What matters here is the connection back to the rest of the course: **the file and the score decide whether you are offered credit, and the APR is how you find out what the answer cost.** Both halves are disclosure regimes, and both exist because a market of incomparable offers is a market nobody can shop in.
+
+:::reveal In TILA's own words, what is the purpose of meaningful disclosure of credit terms? ||| So that the consumer will be able to compare more readily the various credit terms available and avoid the uninformed use of credit.
+
+:::reveal What are the three steps of the open-end annual percentage rate formula in 15 U.S.C. 1606(a)(2)? ||| Divide the period's total finance charge by the amount it was charged on, then multiply by the number of such periods in a year, expressed as a percentage.
+
+:::reveal What method does the statute name for computing the rate on credit that is not under an open-end plan? ||| The actuarial method of allocating payments between the amount financed and the finance charge, or a simplified method the agency prescribes that retains reasonable accuracy.
+
+## Vocabulary
+- **Annual percentage rate**: the cost of credit expressed as a yearly rate, defined at 15 U.S.C. section 1606 and disclosed so that two offers stated in different units can be ranked.
+- **Finance charge**: the cost of the credit for a period, which is the numerator of the open-end annual percentage rate calculation.
+- **Open-end credit plan**: revolving credit, for which the statute gives the simple quotient formula rather than the actuarial one.
+- **Actuarial method**: the closed-end computation, which allocates each payment first to accumulated finance charge and the balance to the amount financed.
+- **Annualisation**: multiplying a per-period cost by the number of periods in a year, which is what removes the period from a comparison.
+
+## Sources
+15 U.S.C. § 1601. (n.d.). *Congressional findings and declaration of purpose*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1601
+
+15 U.S.C. § 1606. (n.d.). *Determination of annual percentage rate*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1606`,
+    },
+    {
+      slug: "who-writes-the-rules",
+      title: "22 · Three layers, and only two of them hold still",
+      section: "Section 6 · The price, the rulemakers, and your own record",
+      body: `Every right in this course sits in a three-layer stack, and knowing which layer a thing lives on tells you how much to trust it next year.
+
+**Layer one, the statute.** Congress passes an Act. It is codified in the United States Code, it changes only when Congress changes it, and it is free to read.
+
+- **Fair Credit Reporting Act**, 15 U.S.C. § 1681 and following. The file, permissible purpose, the score disclosure, the dispute right, the free disclosure, the user's duties on adverse action, the furnisher's duties.
+- **Equal Credit Opportunity Act**, 15 U.S.C. § 1691 and following. The prohibited bases and the statement of reasons.
+- **Truth in Lending Act**, 15 U.S.C. § 1601 and following. Meaningful disclosure, and the annual percentage rate.
+
+**Layer two, the regulation.** An agency writes rules implementing the statute, published in the Code of Federal Regulations. Rules change more often than statutes, through a public process that leaves a record.
+
+- **Regulation B**, 12 CFR part 1002, implements ECOA. The adverse action definition and the specificity requirement.
+- **Regulation V**, 12 CFR part 1022, implements the FCRA. The risk-based pricing notice and the centralized source.
+- **Regulation Z**, 12 CFR part 1026, implements TILA.
+
+**Layer three, the agency.** Somebody administers, supervises and enforces. **This is the layer that moves, and it has moved.**
+
+**Here is what this course will and will not say about layer three.** It will say that the statutes and regulations above were in force and readable on **28 August 2026**, because it read them that day and quoted them. It will not describe any agency's authorities, funding, staffing or enforcement posture in the present tense, because those were the subject of active change and litigation through 2025 and 2026 and a sentence written today would be a sentence that stops being true without warning. **A reader who needs to know which body is currently doing what should check the agency's own site and the Federal Register, and note the date.**
+
+**Why this is not a hedge but the actual lesson.** The reason this course is built on statutes and regulations rather than on agency guidance is precisely that the bottom two layers hold still. Your right to a statement of specific reasons does not depend on who is currently supervising the creditor. Your right to a reasonable reinvestigation within thirty days does not depend on any agency's budget. **The duty runs from the creditor and the agency that holds your file, directly to you, and it is enforceable whether or not anyone is watching.**
+
+**And this is the general method, not a special case.** Whenever a source tells you what your rights are, ask which layer it is speaking from. A statute cited by section is checkable in one click. A regulation cited by part and section is checkable in one click. A summary on a company's website, or an assertion in a course like this one, is worth exactly as much as the citation under it. **That is why every lesson here carries a Sources block with a stable URL: so you can go past this course to the thing it is describing.**
+
+:::reveal Which three layers does every right in this course sit in? ||| The statute passed by Congress, the regulation implementing it, and the agency administering and enforcing it.
+
+:::reveal Which of the three layers does this course refuse to describe in the present tense, and why? ||| The agency layer, because its authorities, funding and enforcement posture were subject to active change and litigation and a present-tense sentence would stop being true without warning.
+
+:::reveal What question should you ask of any source that tells you what your rights are? ||| Which layer it is speaking from, and whether it gives a citation you can check in one click.
+
+## Vocabulary
+- **Statute**: an Act of Congress codified in the United States Code, which changes only when Congress changes it.
+- **Regulation**: an agency rule implementing a statute, published in the Code of Federal Regulations and changed through a public process that leaves a record.
+- **Regulation Z**: 12 CFR part 1026, the rule implementing the Truth in Lending Act, named here for completeness alongside Regulations B and V.
+- **The layer that moves**: this lesson's name for the agency layer, which this course dates rather than describes.
+
+## Sources
+15 U.S.C. § 1681. (n.d.). *Congressional findings and statement of purpose*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1681
+
+15 U.S.C. § 1691. (n.d.). *Scope of prohibition*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1691
+
+15 U.S.C. § 1601. (n.d.). *Congressional findings and declaration of purpose*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1601
+
+12 CFR § 1002.9. (n.d.). *Notifications*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1002.9
+
+12 CFR § 1022.72. (n.d.). *General requirements for risk-based pricing notices*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1022.72`,
+    },
+    {
+      slug: "read-your-own-record",
+      title: "23 · Capstone: read your own record",
+      section: "Section 6 · The price, the rulemakers, and your own record",
+      body: `The catalog's capstones all do the same thing: take the mechanism the course taught and run it once, on your own material. *Map Your Own Stack* has you document every government over your block. *Choose a Form Capstone* has you pick an entity and defend it. This one has you read the record institutions are reading about you.
+
+**Before anything else, the third statement of the rule this course has followed throughout.** What follows is a description of a procedure and of what the law entitles you to. **It is not financial advice, and this course does not know your circumstances.** It does not tell you whether to request anything, whether to dispute anything, or what any of it means for your money. Every step below is optional, and the only thing this course asserts is that the entitlements exist and what the statute says about them.
+
+**Part one: obtain the documents.** The FCRA entitles you to all section 1681g disclosures once in any 12-month period, without charge, from each nationwide agency and each nationwide specialty agency (15 U.S.C. § 1681j, n.d.). Regulation V requires the nationwide agencies to operate a centralized source reachable by a single website, a single toll-free number, or mail to a single address (12 CFR § 1022.136, n.d.). The address is not printed in the rule; the CFPB's own page names it, and this course read that page on 28 August 2026 (Consumer Financial Protection Bureau, 2023).
+
+**Part two: reconcile them.** Put the documents side by side and note, item by item, where they differ. **The differences are the point.** They are evidence that these are separate businesses assembled from overlapping sources, and they are the thing no single report can show you. For each item, record the four facts that matter under Section 2: what it says, who furnished it, what date it is measured from, and whether that date is inside the period section 1681c(a) allows.
+
+**Part three: read one notice properly, if you have one.** Take any adverse action notice you have received and find the six things Section 4 listed: the action, the creditor, the section 701(a) statement, the supervising agency, and either the reasons or the right to request them within 60 days. Then find the FCRA half: the score, the range, the key factors, the date, the provider, the agency's contact details with the disclaimer, and the notice of your free-copy and dispute rights. **Ask of the reasons the one question Regulation B makes askable: are these specific principal reasons, or are they a restatement of the outcome?**
+
+**Part four: know what a dispute would be, whether or not you file one.** A dispute is notice to the agency that an item's completeness or accuracy is disputed. It starts a 30-day reinvestigation from the date of receipt, free of charge, and within five business days the agency must notify whoever furnished the item, who then owes its own investigation (15 U.S.C. §§ 1681i, 1681s-2, n.d.). Inaccurate, incomplete and unverifiable produce the same outcome.
+
+**Part five: write the one-page summary.** Not for anyone else. Three headings: **what the record says about me**, **where the records disagree**, and **which items I could not verify from the documents themselves**. That third heading is the useful one, and it is the same discipline the rest of this catalog uses when it prints what it refused to print.
+
+**What you will have at the end.** Not a better score, which this course has promised you nothing about. You will have the actual documents that decisions about you are made from, a list of the places they disagree, and the knowledge of exactly which statute answers each question you still have. That is a different thing from advice, and it is the thing this course was able to give honestly.
+
+:::reveal What is the first part of this capstone, and what entitles you to do it? ||| Obtain the documents, under the FCRA's free annual file disclosure at section 1681j and the centralized source Regulation V requires.
+
+:::reveal Why does the capstone ask you to reconcile more than one report rather than read one? ||| Because the agencies are separate businesses assembled from overlapping sources, so the differences between the files are evidence no single report can show.
+
+:::reveal What are the three headings of the one-page summary? ||| What the record says about me, where the records disagree, and which items I could not verify from the documents themselves.
+
+## Vocabulary
+- **Capstone**: the catalog's pattern of closing a course by running its mechanism once on the learner's own material rather than on an example.
+- **Reconciliation**: setting two or more consumer files side by side and recording item by item where they differ.
+- **The four facts per item**: what it says, who furnished it, what date it is measured from, and whether that date is inside the period the statute allows.
+- **Could not verify**: the summary heading that records what the documents themselves did not settle, which is the same discipline the catalog applies to its own sources.
+
+## Sources
+15 U.S.C. § 1681j. (n.d.). *Charges for certain disclosures*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1681j
+
+15 U.S.C. § 1681i. (n.d.). *Procedure in case of disputed accuracy*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1681i
+
+15 U.S.C. § 1681c. (n.d.). *Requirements relating to information contained in consumer reports*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1681c
+
+12 CFR § 1002.9. (n.d.). *Notifications*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1002.9
+
+12 CFR § 1022.136. (n.d.). *Centralized source for requesting annual file disclosures from nationwide consumer reporting agencies*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1022.136
+
+Consumer Financial Protection Bureau. (2023, August 28). *How do I get a free copy of my credit reports?* https://www.consumerfinance.gov/ask-cfpb/how-do-i-get-a-copy-of-my-credit-reports-en-5/`,
+    },
+    {
+      slug: "quiz-the-price-and-the-rules",
+      title: "24 · Knowledge check: the price, the rulemakers, and your own record",
+      section: "Section 6 · The price, the rulemakers, and your own record",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "In TILA's own findings, what is meaningful disclosure of credit terms for?",
+            options: ["Comparing more readily", "Ensuring that no consumer is charged more than a rate Congress considers reasonable", "Allowing federal supervisors to monitor the pricing decisions of regulated lenders", "Standardising the paperwork lenders must retain in support of each extension of credit"],
+            correctIndex: 0,
+            explanation: "The statute says so that the consumer will be able to compare more readily the various credit terms available, and avoid the uninformed use of credit.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "What problem does the lesson say TILA was written against?",
+            options: ["Incomparable units", "Interest rates rising faster than wages during the decade the Act was passed", "Lenders refusing to disclose any price at all until an application was approved", "Consumers borrowing more than their incomes could support over a full term"],
+            correctIndex: 0,
+            explanation: "Two offers stated in different units cannot be ranked, and an unrankable market does not discipline anyone.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "For an open-end credit plan, what is the first step of the statutory annual percentage rate formula?",
+            options: ["Divide the finance charge by the amount", "Multiply the finance charge by the number of periods in the year", "Subtract the amount financed from the total of payments over the term", "Apply the actuarial method to allocate each payment between charge and principal"],
+            correctIndex: 0,
+            explanation: "The quotient of the total finance charge for the period divided by the amount on which it is based comes first.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "What is the second step of the open-end annual percentage rate formula?",
+            options: ["Multiply by periods in a year", "Divide by the number of days the balance was actually outstanding in the period", "Add any fees excluded from the finance charge to the numerator before dividing", "Compound the result over the number of periods rather than multiplying by it"],
+            correctIndex: 0,
+            explanation: "The quotient, expressed as a percentage, is multiplied by the number of such periods in a year.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "A finance charge of 15 on 100 for a period, with 26 such periods in a year, gives what annual percentage rate under the statutory formula?",
+            options: ["390 percent", "15 percent, because the charge is fifteen percent of the amount it was applied to", "26 percent, because there are twenty-six periods in the year being annualised", "41 percent, because the periodic rate must be compounded rather than multiplied"],
+            correctIndex: 0,
+            explanation: "Fifteen divided by one hundred is 0.15, multiplied by twenty-six is 3.9, expressed as a percentage 390.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "How far apart are the period figure and the annual figure in that worked example?",
+            options: ["375 percentage points", "26 percentage points, one for each period in the year being annualised", "11 percentage points, the difference between the charge and the number of periods", "They are the same figure described in two different but equivalent ways"],
+            correctIndex: 0,
+            explanation: "Fifteen percent describes the period and 390 percent describes the year, and the gap between them is 375 points.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "Why does a cost quoted per period sound small, according to the lesson?",
+            options: ["The period is short", "Because lenders are permitted to omit fees from the periodic figure they quote", "Because consumers compare it to the monthly payment rather than to the balance", "Because the statute allows the periodic rate to be rounded down to the nearest point"],
+            correctIndex: 0,
+            explanation: "It sounds small in proportion to how short the period is, and annualising is what removes the period from the comparison.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "Which method does the statute name for credit that is NOT under an open-end plan?",
+            options: ["The actuarial method", "The quotient method, applied to the longest period the plan contemplates", "The simple interest method, applied to the original amount financed throughout", "The declining balance method, applied at the end of each calendar quarter"],
+            correctIndex: 0,
+            explanation: "It allocates each payment first to accumulated finance charge and the balance to the unpaid amount financed.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "What alternative does the statute permit to the actuarial method?",
+            options: ["A simplified method the agency prescribes", "Any method the lender chooses, provided it is disclosed to the consumer in advance", "The open-end quotient formula, applied as though the term were a single period", "No alternative, since the actuarial method is mandatory for all closed-end credit"],
+            correctIndex: 0,
+            explanation: "The statute allows a method the Bureau prescribes which materially simplifies computation while retaining reasonable accuracy.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "What does the lesson say a learner is expected to know about the closed-end computation?",
+            options: ["That it exists and is defined", "How to perform it by hand for a term of up to sixty monthly payments", "That it produces a lower figure than the open-end formula on the same facts", "That it applies only where the credit is secured by residential real property"],
+            correctIndex: 0,
+            explanation: "You are not expected to compute it by hand; you are expected to know it exists, is defined, and that the lender must disclose its result.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "How does the lesson connect the annual percentage rate to the rest of the course?",
+            options: ["The file decides whether, the rate says what it cost", "The rate is one of the key factors an agency must disclose alongside a score", "The rate is the figure a creditor must state as a principal reason for adverse action", "The rate determines how long an adverse item may remain in the consumer's file"],
+            correctIndex: 0,
+            explanation: "Both halves are disclosure regimes, and both exist because a market of incomparable offers is one nobody can shop in.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "Which course in the series applies this arithmetic to the products it was written for?",
+            options: ["MONEY-04", "MONEY-02, the course on banking and the substitute market for the unbanked", "MONEY-06, the course on housing, the lease and the standardized loan forms", "MONEY-99, the series capstone that revisits every mechanism at once"],
+            correctIndex: 0,
+            explanation: "MONEY-04, Predatory Products Priced, is where the fee-to-rate conversion does its work.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "What does the lesson call the entire trick of an annualised rate?",
+            options: ["It removes the period", "It combines fees and interest into one figure that no lender may understate", "It converts a variable rate into a fixed one for the purposes of comparison", "It discounts future payments back to their value on the date of the agreement"],
+            correctIndex: 0,
+            explanation: "Removing the period from the comparison is exactly what compare more readily requires.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "The open-end formula's result is expressed how?",
+            options: ["As a percentage", "As a decimal fraction of the amount financed over the whole term", "As a monetary amount, being the total finance charge for the year", "As a ratio of the finance charge to the number of periods in the year"],
+            correctIndex: 0,
+            explanation: "The statute says the quotient, expressed as a percentage, multiplied by the number of such periods in a year.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "Which three layers does the rules lesson describe?",
+            options: ["Statute, regulation, agency", "Congress, the courts, and the States, in descending order of authority", "Federal law, State law, and the contract between the consumer and the creditor", "The creditor, the consumer reporting agency, and the model developer"],
+            correctIndex: 0,
+            explanation: "Knowing which layer a thing lives on tells you how much to trust it next year.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "Which of the three layers does the lesson say holds still?",
+            options: ["The bottom two", "All three, since a statute, a regulation and an agency are equally durable", "Only the statute, since regulations change every time an agency's leadership changes", "Only the agency, since statutes and regulations are amended more frequently"],
+            correctIndex: 0,
+            explanation: "The statute and the regulation hold still; the agency layer is the one that moves.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "Which regulation implements the Equal Credit Opportunity Act?",
+            options: ["Regulation B", "Regulation V, which also carries the risk-based pricing notice requirement", "Regulation Z, which governs the disclosure of the annual percentage rate", "Regulation X, which governs the standardized real estate settlement forms"],
+            correctIndex: 0,
+            explanation: "Regulation B is 12 CFR part 1002, and it carries the adverse action definition and the specificity requirement.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "Which regulation implements the Fair Credit Reporting Act?",
+            options: ["Regulation V", "Regulation B, which also carries the definition of a prohibited basis", "Regulation Z, which governs the determination of the annual percentage rate", "Regulation E, which governs electronic fund transfers between accounts"],
+            correctIndex: 0,
+            explanation: "Regulation V is 12 CFR part 1022, and it carries the risk-based pricing notice and the centralized source.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "Which regulation implements the Truth in Lending Act?",
+            options: ["Regulation Z", "Regulation V, which implements the consumer-reporting duties in the same title", "Regulation B, which implements the disclosure of reasons for adverse action", "Regulation F, which governs the conduct of third-party debt collectors"],
+            correctIndex: 0,
+            explanation: "Regulation Z is 12 CFR part 1026, named in the lesson alongside Regulations B and V.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "What will this course say about the agency layer?",
+            options: ["When it read the rules", "Which agency currently supervises each category of creditor in the country", "How each agency's enforcement priorities have changed since the previous year", "Which of the agency's rules are currently in force and which are stayed"],
+            correctIndex: 0,
+            explanation: "It states that the statutes and regulations were in force and readable on 28 August 2026, because it read them that day.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "Why does the lesson refuse to describe an agency's authorities in the present tense?",
+            options: ["They were actively changing", "Because agency authorities are confidential and not published in any public record", "Because a course may not discuss an agency without that agency's written consent", "Because the statute forbids third parties from characterising a federal agency's powers"],
+            correctIndex: 0,
+            explanation: "They were the subject of active change and litigation through 2025 and 2026, so a sentence written today would stop being true without warning.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "Where does the lesson send a reader who needs the current agency picture?",
+            options: ["The agency's site and the Federal Register", "The creditor's adverse action notice, which names the supervising agency", "The consumer reporting agencies, which publish their supervisors' names annually", "A commercial legal database, since federal agency status is not published free"],
+            correctIndex: 0,
+            explanation: "And it tells the reader to note the date when they look.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "What is the lesson's argument for building the course on statutes rather than on agency guidance?",
+            options: ["The bottom layers hold still", "Statutes are shorter and easier for a learner to read in full than guidance is", "Guidance is not published in a form that can be cited with a stable web address", "Guidance applies only to supervised institutions and not to every creditor"],
+            correctIndex: 0,
+            explanation: "Your right to specific principal reasons does not depend on who is currently supervising the creditor.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "In the lesson's account, from whom does the duty in these statutes run?",
+            options: ["The creditor and the agency, to you", "The federal supervisor, to the creditor, and only indirectly to the consumer", "Congress, to the agencies, which may pass the duty on at their discretion", "The consumer reporting agency, to the creditor that purchased the report"],
+            correctIndex: 0,
+            explanation: "The duty runs directly, and it is enforceable whether or not anyone is watching.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "What is the general method the lesson draws from the three-layer stack?",
+            options: ["Ask which layer a claim comes from", "Read the most recent source available and disregard anything older than a year", "Trust federal sources over State sources whenever the two appear to conflict", "Prefer a summary written for consumers over the underlying legal text"],
+            correctIndex: 0,
+            explanation: "A statute or regulation cited by section is checkable in one click; a summary is worth exactly as much as the citation under it.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "Why does every lesson in this course carry a sources block with a stable URL?",
+            options: ["So you can go past the course", "Because the catalog's citation tooling cannot index a lesson without one", "Because federal law requires an educational publisher to cite its legal sources", "Because a lesson without a source cannot be assessed by the section quiz"],
+            correctIndex: 0,
+            explanation: "So a reader can reach the thing being described rather than relying on this course's account of it.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "Which statute number carries the Fair Credit Reporting Act?",
+            options: ["15 U.S.C. 1681", "15 U.S.C. 1691, which carries the Equal Credit Opportunity Act's prohibitions", "15 U.S.C. 1601, which carries the Truth in Lending Act's findings and purpose", "12 U.S.C. 1002, which carries Regulation B's definition of adverse action"],
+            correctIndex: 0,
+            explanation: "The FCRA sits at 15 U.S.C. 1681 and following, and carries the file, permissible purpose, the score disclosure and the dispute right.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "Which statute number carries the Equal Credit Opportunity Act?",
+            options: ["15 U.S.C. 1691", "15 U.S.C. 1681, which carries the consumer-reporting and dispute provisions", "15 U.S.C. 1606, which carries the determination of the annual percentage rate", "12 U.S.C. 1022, which carries Regulation V's risk-based pricing requirements"],
+            correctIndex: 0,
+            explanation: "ECOA sits at 15 U.S.C. 1691 and following, and carries the prohibited bases and the statement of reasons.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "What does the capstone lesson do, following the catalog's pattern?",
+            options: ["Runs the mechanism on your own material", "Tests everything the course taught in a single comprehensive written examination", "Summarises the six sections so a learner can revise without rereading them", "Introduces the next course in the series and the topics it will cover"],
+            correctIndex: 0,
+            explanation: "The same pattern as Map Your Own Stack and Choose a Form Capstone elsewhere in the catalog.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "Which two catalog capstones does this one name as its models?",
+            options: ["Map Your Own Stack and Choose a Form Capstone", "The Match and The County Committee, the two courses in the land warrant series", "Financing Without Access and What They Built, the two exclusion-history courses", "Surplus Funds Basics and Cooperatives, the two courses gated on legal review"],
+            correctIndex: 0,
+            explanation: "One has you document every government over your block; the other has you pick an entity and defend it.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "What does the capstone state before anything else?",
+            options: ["That this is not financial advice", "That the exercise must be completed within thirty days of finishing the course", "That the documents obtained must be retained for seven years for later reference", "That a learner should consult the course instructor before beginning any step"],
+            correctIndex: 0,
+            explanation: "It is the third of the three prose statements of the rule, and it says every step is optional.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "What is part one of the capstone?",
+            options: ["Obtain the documents", "Write to each creditor asking for the reasons behind its most recent decision", "Calculate the annual percentage rate on every account currently held open", "Request a score from each of the nationwide agencies before reading any file"],
+            correctIndex: 0,
+            explanation: "Under the free annual file disclosure at section 1681j and the centralized source Regulation V requires.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "Why does the capstone say the differences between reports are the point?",
+            options: ["No single report can show them", "Because the statute treats any difference between two files as a reportable error", "Because a creditor must use whichever file shows the most favourable history", "Because an item appearing in only one file must be deleted from that file"],
+            correctIndex: 0,
+            explanation: "They are evidence that these are separate businesses assembled from overlapping sources.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "Which four facts does the capstone ask a learner to record for each item?",
+            options: ["What it says, who furnished it, its date, and whether the date is in range", "Its balance, its interest rate, its opening date, and its current payment status", "Its creditor, its account number, its credit limit, and its most recent payment", "Its category, its severity, its effect on the score, and its dispute history"],
+            correctIndex: 0,
+            explanation: "The fourth is whether the date is inside the period section 1681c(a) allows for that category of item.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "Which question does the capstone say Regulation B makes askable of an adverse action notice?",
+            options: ["Are these principal reasons or a restatement", "Was the notice sent within thirty days of the completed application being received", "Did the creditor obtain a report from more than one nationwide agency", "Would a different creditor have reached the same decision on the same file"],
+            correctIndex: 0,
+            explanation: "The specificity requirement is what makes that a question with an answer rather than a complaint.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "What does part four of the capstone ask a learner to know?",
+            options: ["What a dispute would be", "How to draft a dispute letter that an agency is most likely to accept", "Which of the three nationwide agencies resolves disputes most quickly", "Whether disputing an item is advisable given their own circumstances"],
+            correctIndex: 0,
+            explanation: "The lesson describes the procedure and its deadlines, whether or not the learner files anything.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "What is the third heading of the capstone's one-page summary?",
+            options: ["Which items I could not verify", "Which items I intend to dispute during the coming month", "Which creditors have obtained my report in the past twelve months", "Which accounts contribute most to the score each agency reports"],
+            correctIndex: 0,
+            explanation: "It is the same discipline the rest of the catalog uses when it prints what it refused to print.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "What does the capstone say a learner will have at the end, and what they will not?",
+            options: ["The documents, not a better score", "A dispute filed with each agency, not a resolution of any of the disputes", "A complete financial plan, not a guarantee that the plan will succeed", "An enforceable claim against a creditor, not the means to bring it"],
+            correctIndex: 0,
+            explanation: "The course promised nothing about a score; it delivers the documents, the disagreements, and the statute that answers each remaining question.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "In the capstone, who is the one-page summary written for?",
+            options: ["Nobody else", "The consumer reporting agency, as an attachment to any dispute filed", "A prospective creditor, to be supplied with a future credit application", "The federal agency named on the most recent adverse action notice received"],
+            correctIndex: 0,
+            explanation: "The lesson says not for anyone else, which is what makes the third heading honest rather than defensive.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "How does the capstone describe the difference between what it gives and advice?",
+            options: ["Entitlements exist; the decisions are yours", "Federal rules apply everywhere; State rules must be looked up separately", "Statutes are durable; agency guidance is not and should be disregarded", "Documents are evidence; scores are opinions and should be ignored entirely"],
+            correctIndex: 0,
+            explanation: "The only thing it asserts is that the entitlements exist and what the statute says about them.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "Which six items does the capstone ask a learner to find in the Regulation B half of a notice?",
+            options: ["Action, creditor, 701(a), agency, reasons or the right to them", "Score, range, key factors, date, provider, and the agency's telephone number", "Balance, limit, payment history, inquiries, public records, and personal details", "Statute, regulation, supervisor, deadline, remedy, and the address for a dispute"],
+            correctIndex: 0,
+            explanation: "Those are the contents Regulation B requires, with the 60-day request window attached to the last of them.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "Which items does the capstone ask a learner to find in the FCRA half of a notice?",
+            options: ["Score, range, factors, date, provider, agency details, rights", "The action taken, the creditor's address, and the supervising federal agency", "The annual percentage rate, the finance charge, and the total of payments", "The prohibited bases, the statement of reasons, and the request deadline"],
+            correctIndex: 0,
+            explanation: "Plus the disclaimer that the agency did not make the decision, and the free-copy and dispute rights.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "Which three outcomes does the capstone remind a learner produce the same result on a dispute?",
+            options: ["Inaccurate, incomplete, unverifiable", "Disputed, adverse, and older than the reporting period for its category", "Deleted, modified, and permanently blocked from further reporting", "Verified, corrected, and annotated with the consumer's statement of dispute"],
+            correctIndex: 0,
+            explanation: "The statute treats all three alike, which is why the consumer never has to prove a negative.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "What does the lesson mean by saying an unrankable market does not discipline anyone?",
+            options: ["Nobody can shop it", "Regulators cannot bring enforcement actions without comparable pricing data", "Lenders cannot set prices without knowing what their competitors are charging", "Consumers cannot enforce their rights without knowing the rate they were charged"],
+            correctIndex: 0,
+            explanation: "If two offers cannot be ranked, competition on price does nothing, which is the reason for a common unit.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "In the statutory open-end formula, what is the denominator?",
+            options: ["The amount the charge was based on", "The number of periods in the year over which the charge is being annualised", "The total of all payments the consumer will make over the life of the plan", "The credit limit the creditor has established for the account in question"],
+            correctIndex: 0,
+            explanation: "The formula divides the total finance charge for the period by the amount upon which that finance charge is based.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "According to the closed-end definition, how is a payment allocated under the actuarial method?",
+            options: ["First to finance charge, then to principal", "Equally between the finance charge and the amount financed on each payment date", "First to the amount financed, with any remainder applied to the finance charge", "Entirely to the amount financed until the principal is repaid in full"],
+            correctIndex: 0,
+            explanation: "A payment is applied first to the accumulated finance charge and the balance is applied to the unpaid amount financed.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "What is the second of TILA's two stated purposes in the quoted findings?",
+            options: ["Protection against unfair billing practices", "Establishment of a national ceiling on the rate any lender may charge", "Creation of a federal register of every consumer credit contract in force", "Assignment of supervisory responsibility to a single federal banking agency"],
+            correctIndex: 0,
+            explanation: "The findings name protection against inaccurate and unfair credit billing and credit card practices alongside comparability.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "The rate lesson says the annual percentage rate answers which question?",
+            options: ["What the answer cost", "Whether the applicant will be granted the credit they have applied for", "Which of the nationwide agencies supplied the report the lender relied on", "How long the creditor may report the resulting account to the agencies"],
+            correctIndex: 0,
+            explanation: "The file and the score decide whether you are offered credit; the rate is how you find out what that answer cost.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "In the three-layer stack, where is a rule published?",
+            options: ["The Code of Federal Regulations", "The United States Code, alongside the statute it implements", "The Federal Register only, which is where it remains permanently", "The agency's own website, which is the sole authoritative source"],
+            correctIndex: 0,
+            explanation: "Statutes are codified in the United States Code and regulations in the Code of Federal Regulations.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "What does the lesson say about how often each of the first two layers changes?",
+            options: ["Statutes least, regulations more", "Both change annually on a fixed schedule set by the supervising agency", "Regulations least, because they require a public process that statutes do not", "Neither changes, which is why the course was able to cite them at all"],
+            correctIndex: 0,
+            explanation: "A statute changes only when Congress changes it; a rule changes more often, through a public process that leaves a record.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "What does the lesson say a summary on a company website is worth?",
+            options: ["As much as its citation", "More than the statute, because it is written for the reader who needs it", "Nothing, because a company has an interest in the consumer's understanding", "The same as an agency publication, since both are secondary descriptions"],
+            correctIndex: 0,
+            explanation: "The same is said of an assertion in this course: worth exactly as much as the citation under it.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "Which right does the lesson use to show that enforcement does not depend on an agency's budget?",
+            options: ["The thirty-day reinvestigation", "The right to a free annual file disclosure from each nationwide agency", "The right to be told which federal agency supervises a particular creditor", "The right to add a statement of dispute to the file after a reinvestigation"],
+            correctIndex: 0,
+            explanation: "The lesson pairs it with the right to a statement of specific reasons, which likewise does not depend on who is supervising.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "Which of these is NOT one of the three statutes the rules lesson names?",
+            options: ["The Fair Debt Collection Practices Act", "The Fair Credit Reporting Act, at 15 U.S.C. 1681 and following", "The Equal Credit Opportunity Act, at 15 U.S.C. 1691 and following", "The Truth in Lending Act, at 15 U.S.C. 1601 and following"],
+            correctIndex: 0,
+            explanation: "Collections is the subject of MONEY-03; this course's stack is the FCRA, ECOA and TILA.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "How does the capstone treat the possibility that a learner has no adverse action notice?",
+            options: ["That part is conditional", "It requires the learner to apply for credit in order to generate one", "It substitutes a risk-based pricing notice, which every borrower receives", "It treats the absence of a notice as itself a violation to be reported"],
+            correctIndex: 0,
+            explanation: "The lesson says to take any adverse action notice you have received, and every step in the capstone is optional.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "What does the capstone say about the fifth part's audience?",
+            options: ["It is for the learner alone", "It is submitted to the instructor for grading against a published rubric", "It is attached to any future application as a statement of the learner's record", "It is filed with the consumer reporting agency as a statement of dispute"],
+            correctIndex: 0,
+            explanation: "Writing it for nobody else is what makes the could-not-verify heading useful rather than defensive.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "Which statutory provisions does the capstone cite for the dispute procedure?",
+            options: ["Sections 1681i and 1681s-2", "Sections 1681b and 1681c, on permissible purpose and reporting periods", "Sections 1681g and 1681m, on disclosures and the duties of users of reports", "Sections 1691 and 1601, on prohibited bases and meaningful disclosure"],
+            correctIndex: 0,
+            explanation: "The agency's reinvestigation duty and the furnisher's investigation duty respectively.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "In the capstone's framing, what is the useful heading in the summary?",
+            options: ["The one recording what could not be verified", "The one listing everything the record says, since it is the most complete", "The one comparing the score reported by each of the nationwide agencies", "The one listing every creditor that has obtained a report in the past year"],
+            correctIndex: 0,
+            explanation: "Recording what the documents did not settle is the same discipline the catalog applies to its own sourcing.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "Which two dates does the capstone attach to the source for the centralized source's address?",
+            options: ["The page's own review date and 28 August 2026", "The date the regulation was adopted and the date it took effect", "The date the statute was passed and the date it was last amended", "The date the agencies launched the source and the date it was last audited"],
+            correctIndex: 0,
+            explanation: "The course records reading the CFPB page on 28 August 2026, and the page carries its own last-reviewed date.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "What does the annualisation step do to a comparison between two offers?",
+            options: ["Puts them in the same unit", "Adds the fees that each lender is permitted to exclude from the rate", "Adjusts each for the length of time the borrower expects to hold the credit", "Discounts each for the risk that the borrower will repay the balance early"],
+            correctIndex: 0,
+            explanation: "A common unit is the entire design of the disclosure, per TILA's own findings.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "According to the lesson, in accordance with what must the annual percentage rate be determined?",
+            options: ["The regulations of the Bureau", "The lender's own published methodology, disclosed to the consumer in advance", "The accounting standards applicable to the lender's audited financial statements", "The custom of the trade in the State where the credit is extended"],
+            correctIndex: 0,
+            explanation: "The statute says the rate shall be determined in accordance with the regulations of the Bureau, which is the second layer of the stack.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "How does the rate lesson describe both halves of the credit decision?",
+            options: ["Both are disclosure regimes", "Both are enforced by the same federal agency under a single statute", "Both turn on the same consumer report supplied by the same agency", "Both are optional for the creditor unless the applicant requests them"],
+            correctIndex: 0,
+            explanation: "Whether you get credit and what it costs are each answered by a mandatory disclosure rather than by negotiation.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "What does the rules lesson say about the enforceability of these duties?",
+            options: ["They hold whether or not anyone is watching", "They lapse whenever the supervising agency's enforcement budget is reduced", "They apply only to creditors that are examined by a federal banking regulator", "They may be waived by agreement between the creditor and the consumer"],
+            correctIndex: 0,
+            explanation: "The duty runs from the creditor and the agency directly to the consumer, which is the point of building on the statute.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "Which part of the capstone is described as the exercise's evidence rather than its conclusion?",
+            options: ["The reconciliation", "The one-page summary written under three headings at the end", "The reading of a single adverse action notice field by field", "The description of what a dispute would be if one were filed"],
+            correctIndex: 0,
+            explanation: "The differences between the documents are the material; the summary only records them.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "The rate lesson's worked example uses how many periods in the year?",
+            options: ["26", "12, because the finance charge in the example is stated for a calendar month", "52, because the example describes a charge assessed on a weekly cycle", "365, because the statute requires annualisation on a daily basis"],
+            correctIndex: 0,
+            explanation: "Twenty-six periods, which multiplied by a quotient of 0.15 gives 3.9, or 390 percent.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "Which layer does the lesson say a reader can check in one click?",
+            options: ["A statute or regulation cited by section", "An agency's current enforcement posture, published on its own website", "A company's summary of a consumer's rights under the applicable statutes", "A course's assertion about what a statute means for a particular reader"],
+            correctIndex: 0,
+            explanation: "Which is why the method is to ask what layer a claim is speaking from and whether it carries a citation.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "What does the capstone say about whether a learner should request or dispute anything?",
+            options: ["It does not say", "It recommends requesting everything and disputing anything unrecognised", "It recommends waiting until an adverse action notice has been received", "It recommends consulting a licensed professional before taking any step"],
+            correctIndex: 0,
+            explanation: "It states that every step is optional and that the course does not know the reader's circumstances.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "Which section of the FCRA governs how long an item may appear, which the capstone asks a learner to check dates against?",
+            options: ["Section 1681c(a)", "Section 1681b(a), the closed list of permissible purposes for furnishing", "Section 1681j(a), the free annual file disclosure available on request", "Section 1681g(f), the credit score disclosure and its four key factors"],
+            correctIndex: 0,
+            explanation: "The exclusion list is what makes the fourth of the four per-item facts checkable.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "What is the relationship between the two disclosure regimes this course covers?",
+            options: ["One decides access, one prices it", "One is federal and one is left to the States to implement as they choose", "One binds creditors and one binds consumer reporting agencies exclusively", "One applies before the decision and one only after credit has been extended"],
+            correctIndex: 0,
+            explanation: "The file and the score govern whether credit is offered; the annual percentage rate governs what the offer costs.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "What does the course say makes a capstone honest, in the catalog's pattern?",
+            options: ["It runs on the learner's own material", "It is graded against the same standard as every section quiz in the course", "It reviews every statute the course quoted in the order they were introduced", "It requires the learner to demonstrate a measurable improvement in outcome"],
+            correctIndex: 0,
+            explanation: "Taking the mechanism the course taught and running it once, on your own record, is the pattern the catalog uses.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // FINAL ASSESSMENT — 50 questions, serving 10, passing 80
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "final-credit-decisions",
+      title: "25 · Final assessment",
+      section: "Final assessment",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 10,
+        questions: [
+          {
+            prompt: "This course's spine, in one sentence, is that a credit decision is made about what?",
+            options: ["A record you did not write", "The applicant's stated income and employment as verified by the creditor", "A negotiation between the applicant and an officer of the lending institution", "A ranking of every applicant the creditor considered during the same month"],
+            correctIndex: 0,
+            explanation: "The record is kept by a company you did not hire, and the party deciding must tell you why it decided as it did.",
+            sourceLessonSlug: "the-file-not-the-person",
+          },
+          {
+            prompt: "What is the ordinary failure this course starts from, rather than the one people assume?",
+            options: ["Timing", "Overspending on goods a household does not strictly need to buy", "Borrowing at a rate the household did not read before signing the agreement", "Holding too few accounts for a scoring model to produce a reliable result"],
+            correctIndex: 0,
+            explanation: "Money is owed on one date and arrives on another, which is two calendars that do not line up rather than a character flaw.",
+            sourceLessonSlug: "the-gap-money-falls-into",
+          },
+          {
+            prompt: "Which of the three possible responses to a completed application carries a legal definition?",
+            options: ["Adverse action", "The counteroffer, which Regulation B defines by amount and by terms offered", "The grant, which the statute defines as extension in the amount requested", "All three, each with its own notification period under Regulation B"],
+            correctIndex: 0,
+            explanation: "Rights attach to the defined term rather than to the feeling of having been turned down.",
+            sourceLessonSlug: "three-things-a-creditor-can-do",
+          },
+          {
+            prompt: "Under Regulation B, what removes a refusal from the definition of adverse action?",
+            options: ["An accepted counteroffer", "Written notice of the refusal delivered within thirty days of the application", "A referral to another lender offering the product the applicant requested", "The applicant's failure to supply a document the creditor had requested"],
+            correctIndex: 0,
+            explanation: "The rule excepts a refusal where the creditor counteroffers and the applicant uses or expressly accepts the credit offered.",
+            sourceLessonSlug: "three-things-a-creditor-can-do",
+          },
+          {
+            prompt: "Which phrases appear in the FCRA's statutory definition of a consumer report?",
+            options: ["Character and mode of living", "Net worth and total household assets as of the date of the report", "Employment stability and length of residence at the current address", "Payment capacity and projected income over the following twelve months"],
+            correctIndex: 0,
+            explanation: "The list runs credit worthiness, credit standing, credit capacity, character, general reputation, personal characteristics, or mode of living.",
+            sourceLessonSlug: "the-file-not-the-person",
+          },
+          {
+            prompt: "On what basis does the FCRA say a consumer reporting agency assembles information?",
+            options: ["For monetary fees", "Under a federal charter renewed every five years by the supervising agency", "As a public service funded by an assessment on the lenders that use reports", "At the direction of the consumer, who authorises each item before it is added"],
+            correctIndex: 0,
+            explanation: "For monetary fees, dues, or on a cooperative nonprofit basis, which is what makes the agency a business rather than a registry.",
+            sourceLessonSlug: "the-file-not-the-person",
+          },
+          {
+            prompt: "How long may a case under title 11 appear in a consumer report?",
+            options: ["10 years", "Seven years, the same period the statute sets for most other adverse items", "Indefinitely, because a bankruptcy is a matter of public court record", "Five years, after which the agency must delete it whether or not it is disputed"],
+            correctIndex: 0,
+            explanation: "Measured from the date of entry of the order for relief or the date of adjudication, as the case may be.",
+            sourceLessonSlug: "what-may-appear-and-for-how-long",
+          },
+          {
+            prompt: "What is the FCRA's catch-all reporting period for any other adverse item?",
+            options: ["Seven years", "Ten years, matching the period the statute sets for bankruptcy proceedings", "Three years, measured from the last activity the furnisher reported", "Twelve months, matching the period of the free annual file disclosure"],
+            correctIndex: 0,
+            explanation: "Its only carve-out is records of convictions of crimes, which the statute does not clock at all.",
+            sourceLessonSlug: "what-may-appear-and-for-how-long",
+          },
+          {
+            prompt: "Which four words close the FCRA's list of permissible purposes?",
+            options: ["And no other", "As the Bureau prescribes by regulation from time to time thereafter", "Or for any similar and legitimate commercial business purpose", "Subject always to the written consent of the consumer concerned"],
+            correctIndex: 0,
+            explanation: "That makes the list closed rather than illustrative, so an unlisted purpose is not permitted however sensible it looks.",
+            sourceLessonSlug: "permissible-purpose",
+          },
+          {
+            prompt: "Which of these is a listed permissible purpose that does not involve lending?",
+            options: ["Employment purposes", "Marketing a product to consumers who match a preselected demographic profile", "Compiling a public directory of consumers ranked by repayment behaviour", "Assessing a neighbour's suitability for membership of a residents' association"],
+            correctIndex: 0,
+            explanation: "Employment and insurance underwriting are separately listed, so parties lending you nothing may lawfully see the file.",
+            sourceLessonSlug: "permissible-purpose",
+          },
+          {
+            prompt: "The residual legitimate-business-need purpose reaches a business transaction in what condition?",
+            options: ["Initiated by the consumer", "Concluded within the preceding twelve months between the same parties", "Valued above a threshold set by the supervising agency each calendar year", "Approved in advance by the consumer reporting agency furnishing the report"],
+            correctIndex: 0,
+            explanation: "Or a review of an account to determine whether the consumer continues to meet its terms.",
+            sourceLessonSlug: "permissible-purpose",
+          },
+          {
+            prompt: "What does a scoring model return when nothing has been furnished about a consumer?",
+            options: ["No score", "The lowest value in the model's published range, as a conservative default", "The average score of consumers in the same postal district as the applicant", "A provisional value that the lender may override with its own judgment"],
+            correctIndex: 0,
+            explanation: "An absent file is not a clean record; a model built on observed behaviour has nothing to work on.",
+            sourceLessonSlug: "the-file-that-does-not-exist",
+          },
+          {
+            prompt: "What procedure does Financing Without Access supply for reading any exclusion?",
+            options: ["Which door, what pool, whose risk", "Which statute, which agency, and which fiscal year the exclusion began", "Who applied, who was approved, and in what proportion to the population", "How much, how soon, and at what rate of interest the substitute charged"],
+            correctIndex: 0,
+            explanation: "Ask which door was closed, what pool replaced it, and who bears the risk.",
+            sourceLessonSlug: "the-file-that-does-not-exist",
+          },
+          {
+            prompt: "In the FCRA's own words, what is a credit score derived from?",
+            options: ["A statistical tool", "The agency's review of the file conducted by its underwriting staff", "A weighted average of balances carried over the preceding two years", "A poll of the lenders that have previously extended credit to the consumer"],
+            correctIndex: 0,
+            explanation: "A numerical value or a categorization derived from a statistical tool or modeling system used by a person who makes or arranges a loan.",
+            sourceLessonSlug: "a-score-is-a-prediction",
+          },
+          {
+            prompt: "What does the statutory definition say a credit score predicts?",
+            options: ["The likelihood of credit behaviors", "The maximum amount the consumer could service from their current income", "The interest rate a competing lender would offer for the same product", "The probability that the consumer will accept the offer if it is made"],
+            correctIndex: 0,
+            explanation: "The definition names certain credit behaviors, including default, which is why a score is a prediction rather than a measurement.",
+            sourceLessonSlug: "a-score-is-a-prediction",
+          },
+          {
+            prompt: "According to the course, what can be wrong, given that a score cannot be?",
+            options: ["The file", "The model's range, if it differs from that of a competing model", "The lender's cutoff, if it is set higher than a competitor would set it", "The date the score was created, if the agency records it incorrectly"],
+            correctIndex: 0,
+            explanation: "A score is an opinion produced from a file, so the record is the object with a correction procedure attached.",
+            sourceLessonSlug: "a-score-is-a-prediction",
+          },
+          {
+            prompt: "Why do the FCRA's score-disclosure elements imply that more than one model exists?",
+            options: ["Range and provider would be pointless otherwise", "Because the statute requires each agency to build its own scoring model", "Because a single model would breach the antitrust laws governing the industry", "Because the statute names the number of models that may lawfully be used"],
+            correctIndex: 0,
+            explanation: "A range is only worth stating when ranges differ, and a provider only worth naming when providers differ.",
+            sourceLessonSlug: "there-is-no-single-score",
+          },
+          {
+            prompt: "What are the three structural reasons two quoted scores can differ?",
+            options: ["Model, file, purpose", "Season, region, and the consumer's age at the time of the request", "Income, employment, and the number of accounts currently held open", "Agency, lender, and the product the consumer has applied for"],
+            correctIndex: 0,
+            explanation: "Different models, different files at different agencies, and models built for different lending questions.",
+            sourceLessonSlug: "there-is-no-single-score",
+          },
+          {
+            prompt: "What is the maximum number of key factors the FCRA requires with a score?",
+            options: ["Four", "Three, ranked in order of the weight the model assigned to each", "Six, one for each category of information a file may contain", "There is no maximum, since the statute requires all adverse factors"],
+            correctIndex: 0,
+            explanation: "The statute requires all of the key factors that adversely affected the score, the total number of which shall not exceed 4.",
+            sourceLessonSlug: "the-key-factors",
+          },
+          {
+            prompt: "Why are the key factors more actionable than the number itself?",
+            options: ["Each names something checkable", "Each carries a statutory guarantee of the score effect from addressing it", "Each is disclosed more often than the number, which is annual only", "Each is produced by the agency rather than by the model's developer"],
+            correctIndex: 0,
+            explanation: "A factor names a property of the file, and the file can be obtained, read and corrected.",
+            sourceLessonSlug: "the-key-factors",
+          },
+          {
+            prompt: "Under ECOA, a statement of reasons satisfies the statute only if it contains what?",
+            options: ["The specific reasons", "The identity of the agency that supplied the report relied upon", "The internal policy number under which the application was classified", "The margin by which the applicant fell short of the creditor's threshold"],
+            correctIndex: 0,
+            explanation: "The statute closes the loophole with the words only if it contains the specific reasons for the adverse action taken.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "Regulation B says the statement of reasons must be specific and indicate what?",
+            options: ["The principal reasons", "The number of comparable applications refused in the same period", "The point at which the file diverged from the creditor's requirements", "The scoring model the creditor purchased and applied to the application"],
+            correctIndex: 0,
+            explanation: "The specificity and principal-reasons requirement is the sentence this whole course turns on.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "Which two statements does Regulation B name as insufficient reasons?",
+            options: ["Internal standards, and a failed score", "An unverified income, and an incomplete application form", "A recent delinquency, and a short length of credit history", "A high balance, and a large number of recent credit inquiries"],
+            correctIndex: 0,
+            explanation: "The rule anticipated the two things a creditor would most like to say and closed both.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "If a notice offers the right to reasons rather than the reasons, what are the two periods?",
+            options: ["60 days to ask, 30 to answer", "30 days to ask, 60 days for the creditor to supply the statement", "90 days to ask, with no deadline on the creditor's reply", "10 business days to ask, and the creditor must reply immediately"],
+            correctIndex: 0,
+            explanation: "The request must be made within 60 days of the notification, and the creditor then has 30 days.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "Which government body must be named in the Regulation B adverse action notification?",
+            options: ["The creditor's federal supervisor", "The federal court in whose district the creditor is incorporated", "The attorney general of the applicant's own State of residence", "The federal supervisor of the consumer reporting agency used"],
+            correctIndex: 0,
+            explanation: "The rule requires the name and address of the Federal agency that administers compliance with respect to that creditor.",
+            sourceLessonSlug: "read-your-adverse-action-notice",
+          },
+          {
+            prompt: "What fact triggers the FCRA's adverse action duties, as distinct from Regulation B's?",
+            options: ["Reliance on a consumer report", "The applicant's prior written request for a copy of the report", "The creditor being supervised by a federal rather than a State regulator", "The applicant's score falling below the model's published median"],
+            correctIndex: 0,
+            explanation: "The duties apply where the adverse action is based in whole or in part on information contained in a consumer report.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "What must a user tell a consumer about the consumer reporting agency's role?",
+            options: ["It did not make the decision", "It has already been notified and will annotate the consumer's file", "It bears no liability for any inaccuracy in the information supplied", "It may not be contacted until thirty days after the decision is made"],
+            correctIndex: 0,
+            explanation: "And that it is unable to provide the consumer the specific reasons why the adverse action was taken.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "What period must the adverse action notice indicate for obtaining a free copy of the report?",
+            options: ["60 days", "12 months, matching the free annual file disclosure entitlement", "30 days, matching the agency's reinvestigation period for a dispute", "90 days, matching the counteroffer period under Regulation B"],
+            correctIndex: 0,
+            explanation: "The notice must include an indication of the 60-day period under section 1681j for obtaining the copy.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "What triggers a risk-based pricing notice under Regulation V?",
+            options: ["Materially less favourable terms", "Any refusal to grant credit in substantially the amount requested", "Any use of a consumer report in connection with a credit application", "Any change in the terms of an existing account held by the consumer"],
+            correctIndex: 0,
+            explanation: "Compared to the most favourable material terms available to a substantial proportion of consumers from that person.",
+            sourceLessonSlug: "the-second-notice-on-the-same-page",
+          },
+          {
+            prompt: "What eligibility test did the federal farm lender apply in statute until 1994?",
+            options: ["Character, industry, and ability", "A minimum acreage and a demonstrated three-year yield history", "Residence in the county and the endorsement of two neighbours", "Collateral sufficient to secure the full amount of the loan requested"],
+            correctIndex: 0,
+            explanation: "The County Committee teaches the test, the elected body that applied it, and the notice recording its repeal.",
+            sourceLessonSlug: "a-gate-that-must-state-a-standard",
+          },
+          {
+            prompt: "What do the federal farm gate and the private credit gate share, in this course's account?",
+            options: ["Each must state something", "Each applies a test written by Congress and reviewable in federal court", "Each is operated by people elected by the community the applicant lives in", "Each gives a refused applicant an administrative right of appeal"],
+            correctIndex: 0,
+            explanation: "One published its standard in advance and one must explain its application afterwards, but a gate that must state something can be argued with.",
+            sourceLessonSlug: "a-gate-that-must-state-a-standard",
+          },
+          {
+            prompt: "ECOA's prohibition reaches discrimination with respect to what?",
+            options: ["Any aspect of a credit transaction", "The decision to grant or refuse credit, and nothing beyond that", "The advertising of credit products but not individual applications", "The interest rate charged but not the servicing of the account"],
+            correctIndex: 0,
+            explanation: "Any aspect reaches the terms, the pricing, the servicing and the collection.",
+            sourceLessonSlug: "a-gate-that-must-state-a-standard",
+          },
+          {
+            prompt: "Which income source does ECOA name separately as a prohibited basis?",
+            options: ["Public assistance", "Self-employment income where returns have been filed for two years", "Rental income from residential property the applicant owns and lets", "Pension income from a plan sponsored by a former employer"],
+            correctIndex: 0,
+            explanation: "The statute names income derived in whole or in part from any public assistance program.",
+            sourceLessonSlug: "a-gate-that-must-state-a-standard",
+          },
+          {
+            prompt: "How long does an agency have to complete a reinvestigation, and from when?",
+            options: ["30 days from receipt", "30 days from the date the consumer posted the notice of dispute", "Five business days from receipt, matching the furnisher notification", "60 days from receipt, extendable by a further 30 on written notice"],
+            correctIndex: 0,
+            explanation: "The period runs to the end of the 30-day period beginning on the date the agency receives the notice.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "Within what period must an agency notify the furnisher of a dispute?",
+            options: ["Five business days", "Thirty days, the same period allowed for the reinvestigation itself", "Ten calendar days from the date the consumer posted the notice", "Immediately, since the statute sets no period for the notification"],
+            correctIndex: 0,
+            explanation: "At the address and in the manner established with that person, which is what makes one dispute move two institutions.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "Which three findings require an agency to delete or modify a disputed item?",
+            options: ["Inaccurate, incomplete, unverifiable", "Adverse, disputed, and beyond the applicable reporting period", "Proved false, admitted false, or withdrawn by the furnisher", "Duplicated, misattributed, or drawn from a sealed public record"],
+            correctIndex: 0,
+            explanation: "Because unverifiable carries the same consequence as false, the consumer never has to prove a negative.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "What three remedies must a furnisher apply when its investigation finds an item wrong?",
+            options: ["Modify, delete, or permanently block", "Annotate, suspend, or re-verify at the next reporting cycle", "Refund, apologise, or refer the matter to its compliance team", "Notify the consumer, the agency, and its own federal supervisor"],
+            correctIndex: 0,
+            explanation: "And it must report an incomplete or inaccurate finding to the nationwide agencies, not only to the one that asked.",
+            sourceLessonSlug: "the-furnisher-has-duties-too",
+          },
+          {
+            prompt: "Why does the course call a dispute filed with the agency leverage?",
+            options: ["It compels the knowledgeable party to look", "It suspends the item from all users while the dispute remains open", "It creates a presumption that the disputed item is inaccurate", "It entitles the consumer to statutory damages for each day of delay"],
+            correctIndex: 0,
+            explanation: "The agency mostly has no independent knowledge of the item; the furnisher does, and the procedure makes it look on a clock.",
+            sourceLessonSlug: "the-furnisher-has-duties-too",
+          },
+          {
+            prompt: "What is the FCRA's floor for free file disclosures?",
+            options: ["Once in any 12-month period", "Twice a year, once in each half, on separate written requests", "Once in any 24-month period unless credit has been refused", "Unlimited, subject to identity verification at each request"],
+            correctIndex: 0,
+            explanation: "On request and without charge, from each nationwide agency and each nationwide specialty agency.",
+            sourceLessonSlug: "getting-your-own-file",
+          },
+          {
+            prompt: "What does 12 CFR 1022.136 require, and what does it NOT contain?",
+            options: ["A centralized source, but not its address", "An address for the centralized source, but no toll-free number", "A duty on each agency separately, but no joint obligation", "A fee schedule for disclosures, but no free annual entitlement"],
+            correctIndex: 0,
+            explanation: "The rule requires a single dedicated website and toll-free number without printing the address of either.",
+            sourceLessonSlug: "getting-your-own-file",
+          },
+          {
+            prompt: "Where does this course say the address of the centralized source comes from?",
+            options: ["The agency that explains the statute", "The consumer reporting agencies' own published terms of service", "The Federal Register notice authorising the centralized source", "The adverse action notice, which must name the site by law"],
+            correctIndex: 0,
+            explanation: "The CFPB's own consumer page names it, and the course prints both that page's review date and the date it was read.",
+            sourceLessonSlug: "getting-your-own-file",
+          },
+          {
+            prompt: "In TILA's own findings, what is meaningful disclosure of credit terms for?",
+            options: ["Comparing more readily", "Capping the rate that any lender may lawfully charge a consumer", "Standardising the records a lender must retain for each transaction", "Enabling supervisors to monitor lenders' pricing across the market"],
+            correctIndex: 0,
+            explanation: "So the consumer can compare more readily the various credit terms available and avoid the uninformed use of credit.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "What are the two steps of the open-end annual percentage rate formula?",
+            options: ["Divide, then multiply by periods per year", "Multiply by the term in years, then subtract the amount financed", "Compound the periodic rate, then convert the result to a percentage", "Allocate each payment to charge and principal, then solve for the rate"],
+            correctIndex: 0,
+            explanation: "The quotient of the period's finance charge over the amount it was based on, multiplied by the number of such periods in a year.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "A charge of 15 on 100 for a period, with 26 periods in a year, annualises to what?",
+            options: ["390 percent", "15 percent, since the charge is fifteen percent of the amount charged on", "26 percent, since there are twenty-six periods in the year", "41 percent, since the periodic rate must be compounded not multiplied"],
+            correctIndex: 0,
+            explanation: "Fifteen over one hundred is 0.15, multiplied by twenty-six is 3.9, expressed as a percentage 390.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "Which method does the statute name for credit not under an open-end plan?",
+            options: ["The actuarial method", "The quotient method applied to the longest period in the plan", "The simple interest method applied to the original amount financed", "The declining balance method applied at each calendar quarter end"],
+            correctIndex: 0,
+            explanation: "Each payment is applied first to accumulated finance charge and the balance to the unpaid amount financed.",
+            sourceLessonSlug: "the-number-that-makes-offers-comparable",
+          },
+          {
+            prompt: "Which three layers does every right in this course sit in?",
+            options: ["Statute, regulation, agency", "Congress, the courts, and the individual States in descending order", "Federal law, State law, and the contract between the parties", "The creditor, the reporting agency, and the model developer"],
+            correctIndex: 0,
+            explanation: "And knowing which layer a claim comes from tells you how much to trust it next year.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "Which layer does this course date rather than describe in the present tense?",
+            options: ["The agency", "The statute, which Congress may amend at any time without notice", "The regulation, which changes through a process that leaves no record", "All three, since every layer of the stack was in flux during 2026"],
+            correctIndex: 0,
+            explanation: "Its authorities, funding and enforcement posture were the subject of active change and litigation through 2025 and 2026.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "What is the course's argument for building on statutes rather than agency guidance?",
+            options: ["The bottom two layers hold still", "Statutes are shorter and easier for a learner to read in full", "Guidance cannot be cited with a stable and permanent web address", "Guidance binds only institutions that a federal agency examines"],
+            correctIndex: 0,
+            explanation: "The right to specific principal reasons does not depend on who is currently supervising the creditor.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "What are the three headings of the capstone's one-page summary?",
+            options: ["What it says, where they disagree, what I could not verify", "What I owe, what I earn, and what remains after both are counted", "What is accurate, what is inaccurate, and what I intend to dispute", "What each agency reports, what each scores, and which is highest"],
+            correctIndex: 0,
+            explanation: "The third heading is the useful one, and it is the discipline the catalog applies to its own sourcing.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "What does the capstone say a learner will have at the end?",
+            options: ["The documents and the disagreements", "A higher score at each of the three nationwide reporting agencies", "A dispute resolved in the learner's favour at every agency contacted", "A financial plan tailored to the learner's own income and obligations"],
+            correctIndex: 0,
+            explanation: "Plus the knowledge of exactly which statute answers each remaining question, which is a different thing from advice.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+        ],
+      },
+    },
   ],
 };
