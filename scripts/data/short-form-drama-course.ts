@@ -52,9 +52,9 @@ export const SHORT_FORM_DRAMA_COURSE: AuthoredCourse = {
 :::reveal Why is "a woman thinks about her childhood" an unusable premise for a ten-minute play, when it might work at ninety minutes? ||| Because it is a subject rather than a situation: it contains no pressure and nothing that has to resolve, so nothing makes minute four necessary after minute three. At ninety minutes you can afford to build a situation around a subject; at ten the situation has to be there in the premise itself. The usable version names a pressure, something like "a woman has forty minutes to decide whether to sign the papers her brother is holding," where the sentence already contains the engine.
 
 ## Sources
-- Glaspell, S. (1916). *Trifles*. Frank Shay.
-- Ives, D. (1994). *All in the timing: Fourteen plays*. Vintage Books.
-- Ball, D. (1983). *Backwards and forwards: A technical manual for reading plays*. Southern Illinois University Press.`,
+- Glaspell, S. (1916). *Trifles*. Frank Shay. https://archive.org/details/trifles00glasgoog
+- Ives, D. (1994). *All in the timing: Fourteen plays*. Vintage Books. https://lccn.loc.gov/94027357
+- Ball, D. (1983). *Backwards and forwards: A technical manual for reading plays*. Southern Illinois University Press. https://lccn.loc.gov/82019333`,
     },
     {
       slug: "sfd-single-situation",
@@ -94,8 +94,8 @@ Reliable sources of pressure, and they are ordinary:
 :::reveal Name the strongest kind of pressure for a ten-minute play and say why it works better than a deadline mentioned in dialogue. ||| A physical necessity underway on stage: something being packed, dismantled or cleaned up that will visibly be finished. It works better than a mentioned deadline because the audience can SEE the clock rather than having to remember it, so the tension is continuously present rather than dependent on a line they may have half-heard. When the box is packed, the scene is over, and everyone in the room knows it without being told again.
 
 ## Sources
-- Glaspell, S. (1916). *Trifles*. Frank Shay.
-- Ives, D. (1994). *All in the timing: Fourteen plays*. Vintage Books.`,
+- Glaspell, S. (1916). *Trifles*. Frank Shay. https://archive.org/details/trifles00glasgoog
+- Ives, D. (1994). *All in the timing: Fourteen plays*. Vintage Books. https://lccn.loc.gov/94027357`,
     },
     {
       slug: "sfd-endings",
@@ -128,8 +128,8 @@ Three shapes that work at this length:
 :::reveal Your ten-minute play ends with the phone ringing and the characters leaving. Diagnose it. ||| It is the escape ending: an outside interruption stopping the scene rather than resolving it. Nothing about the pressure has been settled, so the audience is left with an ending in the clock sense rather than in the story sense. It can only work if the interruption is what the piece was actually about, for instance if the whole scene was about waiting for that call. Otherwise the fix is to make somebody decide something, even if what they decide is to refuse.
 
 ## Sources
-- Ball, D. (1983). *Backwards and forwards: A technical manual for reading plays*. Southern Illinois University Press.
-- Ives, D. (1994). *All in the timing: Fourteen plays*. Vintage Books.`,
+- Ball, D. (1983). *Backwards and forwards: A technical manual for reading plays*. Southern Illinois University Press. https://lccn.loc.gov/82019333
+- Ives, D. (1994). *All in the timing: Fourteen plays*. Vintage Books. https://lccn.loc.gov/94027357`,
     },
     {
       slug: "sfd-quiz-1",
@@ -303,8 +303,8 @@ Three shapes that work at this length:
 :::reveal A one-act flattens around twenty minutes in. What has gone wrong structurally, and what is the fix? ||| The initial pressure has been established and fully explored, and nothing has yet complicated it, so the piece is repeating rather than developing. The fix is not to write more of the same but to change the TERMS around the halfway point: someone arrives, something is revealed, or the want turns out to be a different want than it appeared. That is exactly what the extra time over a ten-minute play buys, and a one-act that does not use it is a short play stretched.
 
 ## Sources
-- Albee, E. (1960). *The zoo story*. Coward-McCann.
-- Ball, D. (1983). *Backwards and forwards: A technical manual for reading plays*. Southern Illinois University Press.`,
+- Albee, E. (1960). *The zoo story*. Coward-McCann. https://lccn.loc.gov/60012478
+- Ball, D. (1983). *Backwards and forwards: A technical manual for reading plays*. Southern Illinois University Press. https://lccn.loc.gov/82019333`,
     },
     {
       slug: "sfd-short-video",
@@ -327,8 +327,8 @@ Three shapes that work at this length:
 :::reveal A short-form video has a strong hook, beautiful images and a strong mood, and viewers do not finish it. What is most likely missing? ||| A change. Mood and images buy the first few seconds, which is what the delivery rewards, but nothing after that makes the next moment necessary unless something is different at the end from the beginning. This is the same diagnosis as an anecdote on stage, and the platform disguises it because a strong opening produces good early metrics while people still leave before the end.
 
 ## Sources
-- Ball, D. (1983). *Backwards and forwards: A technical manual for reading plays*. Southern Illinois University Press.
-- Ives, D. (1994). *All in the timing: Fourteen plays*. Vintage Books.`,
+- Ball, D. (1983). *Backwards and forwards: A technical manual for reading plays*. Southern Illinois University Press. https://lccn.loc.gov/82019333
+- Ives, D. (1994). *All in the timing: Fourteen plays*. Vintage Books. https://lccn.loc.gov/94027357`,
     },
     {
       slug: "sfd-adaptation",
@@ -356,9 +356,9 @@ Three shapes that work at this length:
 :::reveal You are asked to expand a working ten-minute play into a one-act. What is the right move, and what is the warning attached? ||| The right move is to find the complication the short version could not afford: a second want in tension with the first, a third character who changes the dynamic, or a false resolution that then collapses. Adding scenes before and after just produces a short play with padding. The warning is that not every short piece wants to be longer: a ten-minute play that works completely is a finished thing, the pressure to expand is usually commercial, and a good short turned into a mediocre one-act is a common and avoidable loss.
 
 ## Sources
-- Albee, E. (1960). *The zoo story*. Coward-McCann.
-- Ball, D. (1983). *Backwards and forwards: A technical manual for reading plays*. Southern Illinois University Press.
-- Ives, D. (1994). *All in the timing: Fourteen plays*. Vintage Books.`,
+- Albee, E. (1960). *The zoo story*. Coward-McCann. https://lccn.loc.gov/60012478
+- Ball, D. (1983). *Backwards and forwards: A technical manual for reading plays*. Southern Illinois University Press. https://lccn.loc.gov/82019333
+- Ives, D. (1994). *All in the timing: Fourteen plays*. Vintage Books. https://lccn.loc.gov/94027357`,
     },
     {
       slug: "sfd-quiz-2",
@@ -565,11 +565,11 @@ Three shapes that work at this length:
 :::reveal Without looking back, name the four failed endings and the test that catches a back-loaded piece. ||| The blackout gag, the unearned reconciliation, the escape, and the stop. The test is to cover the last thirty seconds and ask whether it is obvious what has changed: if the change only becomes clear in the final lines, the ending is doing work the body of the play should have done, and the fix belongs earlier rather than in the ending itself.
 
 ## Sources
-- Albee, E. (1960). *The zoo story*. Coward-McCann.
-- Ball, D. (1983). *Backwards and forwards: A technical manual for reading plays*. Southern Illinois University Press.
-- Egri, L. (1946). *The art of dramatic writing*. Simon & Schuster.
-- Glaspell, S. (1916). *Trifles*. Frank Shay.
-- Ives, D. (1994). *All in the timing: Fourteen plays*. Vintage Books.`,
+- Albee, E. (1960). *The zoo story*. Coward-McCann. https://lccn.loc.gov/60012478
+- Ball, D. (1983). *Backwards and forwards: A technical manual for reading plays*. Southern Illinois University Press. https://lccn.loc.gov/82019333
+- Egri, L. (1946). *The art of dramatic writing*. Simon & Schuster. https://archive.org/details/artofdramaticwri00egririch
+- Glaspell, S. (1916). *Trifles*. Frank Shay. https://archive.org/details/trifles00glasgoog
+- Ives, D. (1994). *All in the timing: Fourteen plays*. Vintage Books. https://lccn.loc.gov/94027357`,
     },
   ],
 };
